@@ -25,15 +25,15 @@ To strictly enforce standards, robust governance mechanisms and practices must s
 
 - **Govern incident preparedness.**
 
-  - *Use tools to automate policy management, hardening measures, data protection, and identity standards.* This practice helps ensure compliance with security standards and frameworks.
+  - Use tools to automate policy management, hardening measures, data protection, and identity standards. This practice helps ensure compliance with security standards and frameworks.
 
-  - *Follow Microsoft security recommendations* to help secure existing deployments and correctly configure new deployments. This approach helps reduce misconfiguration risks.
+  - Follow Microsoft security recommendations to help secure existing deployments and correctly configure new deployments. This approach helps reduce misconfiguration risks.
 
 - **Govern incident response.**
 
-  - *Maintain your incident response plan with critical care.* Store it in a highly available and secure location, review and update it regularly, and ensure that teams use the latest version.
+  - Maintain your incident response plan with critical care. Store it in a highly available and secure location, review and update it regularly, and ensure that teams use the latest version.
 
-  - *Version control incident response training materials.* Review and update them regularly.
+  - Version control incident response training materials. Review and update them regularly.
 
 ### Azure facilitation
 
@@ -79,15 +79,15 @@ To [maintain availability](/azure/cloud-adoption-framework/secure/govern#availab
 
 - **Govern your architecture design.**
   
-  - *Strictly enforce infrastructure and application design patterns.*
-  - *Keep design standards up-to-date and secure* from unauthorized changes.
-  - *Use policies* to control resource types and deployment regions.
+  - Strictly enforce infrastructure and application design patterns.
+  - Keep design standards up-to-date and secure from unauthorized changes.
+  - Use policies to control resource types and deployment regions.
 
 - **Govern disaster recovery.**
 
-  - *Govern disaster recovery plans.* Store them in a highly available and secure location, review and update them regularly, and ensure that teams use the latest version.
+  - Govern disaster recovery plans. Store them in a highly available and secure location, review and update them regularly, and ensure that teams use the latest version.
 
-  - *Use disaster recovery drills* to improve plans and refine standards. Keep meticulous records to identify improvements and ensure compliance. Store them with the plans for organization and security.
+  - Use disaster recovery drills to improve plans and refine standards. Keep meticulous records to identify improvements and ensure compliance. Store them with the plans for organization and security.
 
 ## Sustain highly secure governance
 

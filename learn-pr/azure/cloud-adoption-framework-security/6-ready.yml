@@ -15,12 +15,12 @@ content: |
 quiz:
  title: Check your knowledge
  questions:
- - content: Which principle should be followed to grant users minimal access needed for their tasks?
+ - content: Which principle grants users minimal access needed for their tasks?
    choices:
-   - content: Role-based access control (RBAC)
+   - content: RBAC
      isCorrect: false
      explanation: Incorrect. RBAC manages access to resources based on user roles. 
-   - content: Multifactor authentication (MFA)
+   - content: MFA
      isCorrect: false
      explanation: Incorrect. MFA adds an extra layer of security by requiring multiple forms of verification.
    - content: The principle of least privilege

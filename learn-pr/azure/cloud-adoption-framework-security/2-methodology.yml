@@ -23,9 +23,9 @@ quiz:
    - content: To provide a structured approach that you can use to enhance workload security and compliance
      isCorrect: true
      explanation: Correct. The primary goal of the Secure methodology is to ensure that workloads are highly secure and compliant.
-   - content: To search a unified audit log and view user and administrator activity in your organization
+   - content: To provide a cloud-based environment that enables you to build, deploy, and manage applications
      isCorrect: false
-     explanation: Incorrect. Searching audit logs and viewing activity aren't the primary goals of the Secure methodology.
-   - content: To standardizes the process for requesting, deploying, and governing subscriptions so that application teams can deploy their workloads faster
+     explanation: Incorrect. Providing a cloud-based environment isn't the primary goal of the Secure methodology. 
+   - content: To standardize the process for requesting, deploying, and governing subscriptions so that you can deploy your workloads faster
      isCorrect: false
      explanation: Incorrect. Standardizing processes for subscriptions isn't the focus of the Secure methodology.

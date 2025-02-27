@@ -14,17 +14,18 @@ To [modernize your security posture](/azure/cloud-adoption-framework/secure/read
 
 ### Azure facilitation
 
-- **Azure landing zone accelerators** are prepackaged deployments for various workloads, such as [Azure Integration Services](/azure/cloud-adoption-framework/scenarios/app-platform/integration-services/landing-zone-accelerator), [Azure Kubernetes Service (AKS)](/azure/cloud-adoption-framework/scenarios/app-platform/aks/landing-zone-accelerator), and [Azure API Management](/azure/cloud-adoption-framework/scenarios/app-platform/api-management/landing-zone-accelerator). These accelerators help you quickly set up landing zones. For a full list, see [Modern application platform scenario](/azure/cloud-adoption-framework/scenarios/app-platform/).
+- Azure landing zone accelerators are prepackaged deployments for various workloads, such as [Azure Integration Services](/azure/cloud-adoption-framework/scenarios/app-platform/integration-services/landing-zone-accelerator), [Azure Kubernetes Service (AKS)](/azure/cloud-adoption-framework/scenarios/app-platform/aks/landing-zone-accelerator), and [Azure API Management](/azure/cloud-adoption-framework/scenarios/app-platform/api-management/landing-zone-accelerator). These accelerators help you quickly set up landing zones. For a full list, see [Modern application platform scenario](/azure/cloud-adoption-framework/scenarios/app-platform/).
 
-- **The Azure landing zones Terraform module** [automates your landing zone deployments](https://registry.terraform.io/modules/Azure/caf-enterprise-scale/azurerm/latest). To help ensure consistent and secure landing zones, deploy landing zones through your continuous integration and continuous deployment (CI/CD) pipeline.
+- [The Azure landing zones Terraform module](https://registry.terraform.io/modules/Azure/caf-enterprise-scale/azurerm/latest) automates your landing zone deployments. To help ensure consistent and secure landing zones, deploy landing zones through your continuous integration and continuous deployment (CI/CD) pipeline.
 
-- **Microsoft Entra** verifies identities, validates access conditions, checks permissions, encrypts connections, and monitors for compromise. [Microsoft Entra](/entra/fundamentals/what-is-entra) includes identity and network access products that help you incorporate a Zero Trust security strategy.
+- [Microsoft Entra](/entra/fundamentals/what-is-entra) verifies identities, validates access conditions, checks permissions, encrypts connections, and monitors for compromise. Microsoft Entra includes identity and network access products that help you incorporate a Zero Trust security strategy.
 
 ## Prepare for incidents and response
 
 After you define your strategy and plan for incident preparedness and response, you can [begin implementation](/azure/cloud-adoption-framework/secure/ready#prepare-for-incident-preparedness-and-response). Network segregation is crucial for security, whether you use a full enterprise landing zone or a simpler design.
 
 - **Design your network with segmentation and isolation** to reduce attack surfaces and contain breaches.
+
 - **Use virtual private clouds (VPCs), subnets, and security groups** to control traffic.
 
 ### Azure facilitation
@@ -47,7 +48,7 @@ Microsoft Entra Conditional Access is the Microsoft Zero Trust policy engine. It
 
 Ensure that you have [well-governed policies and standards](/azure/cloud-adoption-framework/secure/ready#prepare-for-integrity) for your data and system integrity. Define standards for the following areas.
 
-- **Data management**
+- **Data management:**
   - *Create a framework and sensitivity-label taxonomy* to define data security risk categories. Use this taxonomy to simplify data inventory, policy management, and investigation prioritization.
 
   - *Automate data verification and validation processes* to reduce the burden on data engineers and minimize human error.
@@ -56,7 +57,7 @@ Ensure that you have [well-governed policies and standards](/azure/cloud-adoptio
 
   - *Ensure that your cloud provider encrypts data at rest and data in transit by default.* Verify that services in your workloads support and are configured for strong encryption.
 
-- **System integrity design patterns**
+- **System integrity design patterns:**
   - *Design a robust security monitoring platform* to detect unauthorized changes.
 
   - *Use security information and event management (SIEM), security orchestration, automation, and response (SOAR), and threat detection tools* to identify suspicious activities and potential threats.

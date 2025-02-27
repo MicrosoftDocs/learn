@@ -19,22 +19,22 @@ Ensure that your observability platform includes thorough monitoring and intelli
 ## Manage incident preparedness and response
 
 - **Prepare for incidents.**
-  - *Implement a security information and event management (SIEM) and security orchestration, automation, and response (SOAR) solution* to enhance monitoring and respond to security incidents.
+  - Implement a security information and event management (SIEM) and security orchestration, automation, and response (SOAR) solution to enhance monitoring and respond to security incidents.
 
-  - *Scan for vulnerabilities proactively* and integrate with SIEM to consolidate security data and respond efficiently.
-  - *Implement extended detection and response (XDR)* to increase visibility into security risks and feed data into SIEM for unified monitoring and optimized security operations.
+  - Scan for vulnerabilities proactively and integrate with SIEM to consolidate security data and respond efficiently.
+  - Implement extended detection and response (XDR) to increase visibility into security risks and feed data into SIEM for unified monitoring and optimized security operations.
 
 - **Plan for incident response.**
-  - *Modernize observability* to help detect incidents detection and maintain an up-to-date incident response plan.
+  - Modernize observability to help detect incidents detection and maintain an up-to-date incident response plan.
   
-  - *Keep the incident response plan current* with threat hunting, detection engineering, and risk information like MITRE ATT&CK.
-  - *Develop and maintain incident response and disaster recovery plans.*
+  - Keep the incident response plan current with threat hunting, detection engineering, and risk information like MITRE ATT&CK.
+  - Develop and maintain incident response and disaster recovery plans.
 
 - **Incorporate business continuity and disaster recovery.**
-  - *Develop and test plans* to help ensure that your cloud environment is resilient and can quickly recover from incidents.
+  - Develop and test plans to help ensure that your cloud environment is resilient and can quickly recover from incidents.
 
-  - *Create backup and recovery strategies* to support business continuity with robust strategies.
-  - *Create workload-based recovery plans* instead of a single plan for the entire business.
+  - Create backup and recovery strategies to support business continuity with robust strategies.
+  - Create workload-based recovery plans instead of a single plan for the entire business.
 
 ### Azure facilitation
 
@@ -105,19 +105,19 @@ In addition to Defender for Cloud solutions, use the following tools:
 ### Continuous improvement strategies for confidentiality and integrity
 
 - **Confidentiality strategies:**
-  - *Analyze previous audits* to identify weaknesses and implement corrective actions for continuous improvement.
+  - Analyze previous audits to identify weaknesses and implement corrective actions for continuous improvement.
 
-  - *Employ real-time monitoring* to quickly identify and respond to threats. This practice helps ensure up-to-date security measures.
-  - *Train employees on confidentiality policies and procedures.* Focus on encryption and access controls. Include deeper training for security team members.
+  - Employ real-time monitoring to quickly identify and respond to threats. This practice helps ensure up-to-date security measures.
+  - Train employees on confidentiality policies and procedures. Focus on encryption and access controls. Include deeper training for security team members.
 
 - **Integrity strategies:**
-  - *Perform manual audits* to ensure that data governance and monitoring tools are effective.
+  - Perform manual audits to ensure that data governance and monitoring tools are effective.
 
-  - *Adopt proper data hygiene habits*:
+  - Adopt proper data hygiene habits:
     - Audit data for quality and consistency.
     - Use normalization to reduce inconsistencies.
     - Archive or purge unnecessary data.
     - Review encryption configurations regularly.
-  - *Review and test backup configurations* to ensure data validity and compliance with RTO and RPO targets.
-  - *Review access permissions regularly* to ensure that you have extensive controls.
-  - *Train employees on data and system integrity policies.* Provide deeper training for security team members. Emphasize DevOps practices to maintain data accuracy and reliability.
+  - Review and test backup configurations to ensure data validity and compliance with RTO and RPO targets.
+  - Review access permissions regularly to ensure that you have extensive controls.
+  - Train employees on data and system integrity policies. Provide deeper training for security team members. Emphasize DevOps practices to maintain data accuracy and reliability.

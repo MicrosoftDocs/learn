@@ -1,4 +1,4 @@
-This unit describes areas of security optimization to consider as you move through the [Adopt methodology](/azure/cloud-adoption-framework/secure/ready/) phase of your journey.
+This unit describes areas of security optimization to consider as you move through the [Adopt methodology](/azure/cloud-adoption-framework/secure/adopt/) phase of your journey.
 
 :::image type="content" source="../media/caf-secure-adopt.png" alt-text="Diagram that shows the Adopt phase of the Secure methodology." lightbox="../media/caf-secure-adopt.png" border="false":::
 
@@ -37,17 +37,19 @@ Effective [adoption and change management (ACM) methodologies](/azure/cloud-adop
 - [Azure Deployment Environments](/azure/deployment-environments/overview-what-is-azure-deployment-environments) create consistent app infrastructure via project-based templates. These templates help ensure security, compliance, and cost efficiency.
 
   Define deployment environments as catalog items in GitHub or Azure DevOps repositories. A catalog item consists of an IaC template and a manifest.yml file.
-- **For routine task automation, use the following services:**
 
-  - [Azure Functions](/azure/azure-functions/functions-overview) automates tasks via serverless functions with event-driven triggers.
-
-  - [Azure Automation](/azure/automation/overview) uses PowerShell and Python for operational tasks. Automation has features like run history, logging, and integration with secrets stores and source control.
-  - [Azure Update Manager](/azure/update-manager/overview) manages updates for virtual machines to help ensure compliance and schedule updates.
 - [Azure Logic Apps](/azure/logic-apps/logic-apps-overview) and [Power Automate](/power-automate/flow-types) build workflows for tasks, like approval flows or ChatOps integrations, via built-in connectors and templates.
 
 - The [built-in scaling capabilities](/azure/architecture/best-practices/auto-scaling) of Azure technologies dynamically allocate resources to match performance requirements. You can also program other services to scale automatically via APIs.
 
 - [Azure Monitor action groups](/azure/azure-monitor/alerts/action-groups) automate self-healing operations when alerts are triggered. You can define the operations via runbooks, Azure functions, or webhooks.
+
+- For routine task automation, use the following services:
+
+  - [Azure Functions](/azure/azure-functions/functions-overview) automates tasks via serverless functions with event-driven triggers.
+
+  - [Azure Automation](/azure/automation/overview) uses PowerShell and Python for operational tasks. Automation has features like run history, logging, and integration with secrets stores and source control.
+  - [Azure Update Manager](/azure/update-manager/overview) manages updates for virtual machines to help ensure compliance and schedule updates.
 
 ## Adopt incident preparedness and response
 
@@ -55,17 +57,17 @@ To align your cloud estate with business goals, develop preparedness and respons
 
 - **Threat detection and mitigation**
 
-  - *Set up alert systems* to detect unusual activities in real-time, and integrate extended detection and response (XDR) and security information and event management (SIEM) solutions.
+  - Set up alert systems to detect unusual activities in real-time, and integrate extended detection and response (XDR) and security information and event management (SIEM) solutions.
 
-  - *Identify and mitigate vulnerabilities* regularly through patch management and security updates.
+  - Identify and mitigate vulnerabilities regularly through patch management and security updates.
 
-  - *Develop and maintain an incident response plan* that has detection, analysis, and remediation steps. Automate mitigation activities to enhance efficiency and reduce human error. For example, use a runbook to automatically lock SQL connections if a SQL injection is detected.
+  - Develop and maintain an incident response plan that has detection, analysis, and remediation steps. Automate mitigation activities to enhance efficiency and reduce human error. For example, use a runbook to automatically lock SQL connections if a SQL injection is detected.
 
 - **Infrastructure and application security**
 
-  - *Integrate security checks into CI/CD pipelines* to help ensure secure development, testing, and deployment. Include static code analysis, vulnerability scanning, and compliance checks.
+  - Integrate security checks into CI/CD pipelines to help ensure secure development, testing, and deployment. Include static code analysis, vulnerability scanning, and compliance checks.
 
-  - *Deploy all infrastructure through code* to prevent misconfigurations and unauthorized deployments. Colocate IaC assets with application code, and apply the same [deployment practices](/azure/well-architected/operational-excellence/safe-deployments) as software.
+  - Deploy all infrastructure through code to prevent misconfigurations and unauthorized deployments. Colocate IaC assets with application code, and apply the same [deployment practices](/azure/well-architected/operational-excellence/safe-deployments) as software.
 
 ### Azure facilitation
 
@@ -80,10 +82,10 @@ Effectively implement and institutionalize encryption and secure access controls
 - **Implement encryption and secure access controls** to protect sensitive information. Train employees on data confidentiality and DLP policies.
 
 - **Incorporate and adopt associated standards** for encryption, such as AES-256, and access controls, such as RBAC and conditional access.
-  - *Enable encryption on data stores*, and consider managing your own keys. Use extra encryption layers when possible.
+  - Enable encryption on data stores, and consider managing your own keys. Use extra encryption layers when possible.
 
-  - *Apply RBAC, conditional access, just-in-time, and just-enough-access controls* to all data stores. Regularly review permissions and restrict write access to configuration systems.
-  - *Develop standards* to help ensure data protection. For example, encrypt sensitive emails by using Microsoft Purview Information Protection to ensure data protection during transmission.
+  - Apply RBAC, conditional access, just-in-time, and just-enough-access controls to all data stores. Regularly review permissions and restrict write access to configuration systems.
+  - Develop standards to help ensure data protection. For example, encrypt sensitive emails by using Microsoft Purview Information Protection to ensure data protection during transmission.
 
 ### Azure facilitation
 
@@ -91,31 +93,31 @@ Effectively implement and institutionalize encryption and secure access controls
 
 - [Azure encryption](/azure/security/fundamentals/encryption-overview) provides encryption for services like Azure SQL Database, Cosmos DB, and Azure Data Lake. It supports server-side and client-side encryption models.
 
+- [Azure confidential computing](/azure/confidential-computing/overview) helps protect data in use with hardware-based trusted implementation environments, which enhances data security even from cloud administrator access.
+
 - [Microsoft Entra ID](/entra/fundamentals/whatis) provides identity and access management with multifactor authentication (MFA), conditional access, and single sign-on.
 
   - [Microsoft Entra ID Protection](/entra/id-protection/overview-identity-protection) uses machine learning to identify sign-in risks and unusual behavior, which prevents identity compromise and credential theft.
 
   - [Microsoft Defender for Identity](/defender-for-identity/what-is) is a cloud-based solution for detecting and investigating advanced identity threats.
 
-- [Azure confidential computing](/azure/confidential-computing/overview) helps protect data in use with hardware-based trusted implementation environments, which enhances data security even from cloud administrator access.
-
 ## Adopt the principle of integrity
 
 Build your systems according to the standards that you developed in earlier phases to [help ensure data and system integrity](/azure/cloud-adoption-framework/secure/adopt#adopt-the-principle-of-integrity). Train engineers, administrators, and operators on the relevant protocols and procedures.
 
 - **Adopt data integrity.**
-  - *Automate data classification* when possible. Manually label documents and containers as needed. Use ready-made tools to identify sensitive information and curate data sets with expert input.
+  - Automate data classification when possible. Manually label documents and containers as needed. Use ready-made tools to identify sensitive information and curate data sets with expert input.
 
-  - *Use built-in verification features* in services like Azure Data Factory. To help ensure data integrity and store hashes to track changes, use SQL functions like `CHECKSUM` and `BINARY_CHECKSUM`.
-  - *Monitor data stores* for changes, and configure alerts for incidents that affect data integrity.
-  - *Apply backup policies across systems.* Understand and configure backup capabilities in PaaS and SaaS services, like SQL Database.
-  - *Publish application design standards* that include data integrity mechanisms, such as tracking configuration and data changes within your data schema.
+  - Use built-in verification features in services like Azure Data Factory. To help ensure data integrity and store hashes to track changes, use SQL functions like `CHECKSUM` and `BINARY_CHECKSUM`.
+  - Monitor data stores for changes, and configure alerts for incidents that affect data integrity.
+  - Apply backup policies across systems. Understand and configure backup capabilities in PaaS and SaaS services, like SQL Database.
+  - Publish application design standards that include data integrity mechanisms, such as tracking configuration and data changes within your data schema.
 
 - **Adopt system integrity.**
-  - *Use a robust monitoring solution* to automatically enroll all resources and enable alerting for incident notifications.
+  - Use a robust monitoring solution to automatically enroll all resources and enable alerting for incident notifications.
 
-  - *Deploy a system that continuously enrolls and manages configurations* for new systems.
-  - *Implement a patch management system* that automatically enrolls new systems and manages patching according to your policies, preferably by using native cloud platform tools.
+  - Deploy a system that continuously enrolls and manages configurations for new systems.
+  - Implement a patch management system that automatically enrolls new systems and manages patching according to your policies, preferably by using native cloud platform tools.
 
 ### Azure facilitation
 
