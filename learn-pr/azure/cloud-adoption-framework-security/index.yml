@@ -51,7 +51,6 @@ subjects:
 - cloud-security
 units:
 - learn.azure.cloud-adoption-framework-security.introduction
-- learn.azure.cloud-adoption-framework-security.customer-narrative
 - learn.azure.cloud-adoption-framework-security.methodology
 - learn.azure.cloud-adoption-framework-security.security-roles-responsibilities
 - learn.azure.cloud-adoption-framework-security.strategy
