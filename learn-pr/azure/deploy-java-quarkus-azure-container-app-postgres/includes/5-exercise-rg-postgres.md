@@ -94,6 +94,9 @@ echo "POSTGRES_CONNECTION_STRING_SSL=$POSTGRES_CONNECTION_STRING_SSL"
 
 Note the connection string that's returned.
 
+> [!NOTE]
+> Microsoft recommends using the most secure authentication flow available. The authentication flow described in this procedure, such as for databases, caches, messaging or AI services, requires a very high degree of trust in the application and carries risks not present in other flows. Use this flow only when more secure options, like managed identities for passwordless or keyless connections, are not viable. For local machine operations, prefer user identities for passwordless or keyless connections.
+
 ## Configure the Quarkus application to connect to the PostgreSQL database
 
 Update the `application.properties` file in the `src/main/resources` folder of the project to configure the connection string to the PostgreSQL database. To do so, set the `quarkus.datasource.jdbc.url` property to the previously output `$POSTGRES_CONNECTION_STRING_SSL` value. The `&ssl=true&sslmode=require` part of the connection string forces the driver to use SSL, a requirement for Azure Database for PostgreSQL.
