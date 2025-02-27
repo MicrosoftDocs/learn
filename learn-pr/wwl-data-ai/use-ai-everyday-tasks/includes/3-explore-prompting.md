@@ -18,9 +18,6 @@ Here are some tips to keep in mind when writing a prompt:
 - Provide some data or information for Copilot to use. This helps ground the response in the right context.
 - Let Copilot know how you want the response to be formatted. This sets clear expectations.
 
-> [!TIP]
-> To learn more about the art of prompting, review [Cooking up a great prompt: Getting the most from Copilot](https://support.microsoft.com/topic/cooking-up-a-great-prompt-getting-the-most-from-copilot-7b614306-d5aa-4b62-8509-e46674a29165?ocid=PromptGallery_SMC_Article_GetTips?azure-portal=true).
-
 ## Explore good, better, and best prompts
 
 The following table includes some everyday tasks that you could co-create with AI, and include examples of good, better, and best prompts. These examples help you understand how to create prompts to make your tasks more simple and effective.
@@ -51,6 +48,9 @@ The following table includes some prompt resources you might find helpful to get
 | **[Do more with Copilot](https://www.microsoft.com/microsoft-copilot/for-individuals/do-more-with-ai?azure-portal=true)** | A selection of use cases and examples of how AI can be applied to everyday tasks. | Explore articles grouped by categories such as daily life, AI art & creativity, general AI, learning & education, and professional life. |
 | **[Copilot prompt gallery](https://copilot.cloud.microsoft/prompts?azure-portal=true)** | A collection of prompts that you can use as inspiration. | Find example prompts that you can edit to make your own. Some editable parts are obvious, denoted by a pair of square brackets, like [topic], [file], and [your title]. But you can also edit various parts of those prompts, such as the goal, context, expectations, and source, to suit your purpose. |
 | **[Copilot scenario library](https://adoption.microsoft.com/copilot-scenario-library?azure-portal=true)** | A wide range of scenarios and prompts organized by job functions and roles | Find relevant prompts for your specific needs and industry. |
+
+> [!TIP]
+> To learn more about the art of prompting, review [Cooking up a great prompt: Getting the most from Copilot](https://support.microsoft.com/topic/cooking-up-a-great-prompt-getting-the-most-from-copilot-7b614306-d5aa-4b62-8509-e46674a29165?ocid=PromptGallery_SMC_Article_GetTips?azure-portal=true).
 
 Now that you know what it takes to craft effective prompts, try to identify tasks in your own daily routine where AI might help you save time or be more creative.
 
