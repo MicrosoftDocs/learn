@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cloud-adoption-framework-strategy.3-capture-strategic-motivation
+uid: learn.cloud-adoption-framework-strategy.mission-objectives
 metadata:
   title: Capture strategic motivation
   description: Capture strategic motivation.
@@ -10,4 +10,4 @@ metadata:
 title: Capture strategic motivation
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-capture-strategic-motivation.md)]
+  [!include[](includes/4-mission-objectives.md)]

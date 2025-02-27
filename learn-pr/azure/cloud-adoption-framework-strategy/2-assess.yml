@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-adoption-framework-strategy.assess
+metadata:
+  title: Capture strategic motivation
+  description: Capture strategic motivation.
+  ms.date: 10/10/2023
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
+title: Capture strategic motivation
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-assess.md)]

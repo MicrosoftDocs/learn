@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.cloud-adoption-framework-strategy.8-summary
+uid: learn.cloud-adoption-framework-strategy.summary
 metadata:
   title: Summary
-  description: Summary
-  ms.date: 10/10/2023
+  description: A summary of the Strategy methodology training module.
+  ms.date: 02/27/2025
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit
