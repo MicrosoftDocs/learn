@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.spring-ai-aca.7-observability
+title: Implementing Observability
+metadata:
+  title: Implementing Observability
+  description: >-
+    Learn how to implement observability in your Spring AI application
+  ms.date: 02/24/2025
+  author: gok
+  ms.author: gok
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-observability.md)]

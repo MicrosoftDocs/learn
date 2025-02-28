@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.spring-ai-aca.4-spring-ai-development
+title: Implementing Spring AI with Azure OpenAI
+metadata:
+  title: Implementing Spring AI with Azure OpenAI
+  description: >-
+    Learn how to implement a RAG application using Spring AI and Azure OpenAI
+  ms.date: 02/24/2025
+  author: gok
+  ms.author: gok
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-spring-ai-development.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.spring-ai-aca.6-testing-responses
+title: Testing AI Responses
+metadata:
+  title: Testing AI Responses
+  description: >-
+    Learn how to test and evaluate AI responses in your Spring AI application
+  ms.date: 02/24/2025
+  author: gok
+  ms.author: gok
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-testing-responses.md)]

@@ -1,0 +1,55 @@
+---
+### YamlMime:Module
+uid: learn.azure.spring-ai-aca
+metadata:
+  title: Building an AI-Powered Java App with Spring AI and Azure
+  description: >-
+    Learn how to build and deploy an AI-powered Java application using
+    Spring AI, Azure OpenAI, and Azure Container Apps with
+    PostgreSQL vector storage.
+  ms.date: 02/24/2025
+  author: gok
+  ms.author: gok
+  ms.topic: module
+  ms.custom: team=cloud_advocates
+title: Building an AI-Powered Java App with Spring AI and Azure
+summary: >-
+  Build and deploy a Java application using Spring AI with Azure OpenAI,
+  PostgreSQL vector storage, and Azure Container Apps.
+abstract: |
+  After completing this module, you'll be able to:
+  - Understand Spring AI's core abstractions and Azure OpenAI integration
+  - Create and configure Azure PostgreSQL for vector storage
+  - Implement an end-to-end AI application with Spring AI
+  - Deploy and scale your application on Azure Container Apps
+iconUrl: /training/achievements/spring-ai-aca.svg
+levels:
+  - intermediate
+roles:
+  - developer
+products:
+  - azure
+  - azure-openai
+  - azure-container-apps
+  - azure-database-postgresql
+prerequisites: |
+  - Azure subscription
+  - Basic familiarity with Java and Spring Boot
+  - Experience with Git and Maven/Gradle
+  - Java 17 or later installed
+subjects:
+  - ai-ml
+  - cloud-development
+units:
+  - learn.azure.spring-ai-aca.1-introduction
+  - learn.azure.spring-ai-aca.2-environment-setup
+  - learn.azure.spring-ai-aca.3-azure-postgresql-setup
+  - learn.azure.spring-ai-aca.4-spring-ai-development
+  - learn.azure.spring-ai-aca.5-aca-deployment
+  - learn.azure.spring-ai-aca.6-testing-responses
+  - learn.azure.spring-ai-aca.7-observability
+  - learn.azure.spring-ai-aca.8-scaling
+  - learn.azure.spring-ai-aca.9-knowledge-check
+  - learn.azure.spring-ai-aca.10-summary
+badge:
+  uid: learn.azure.spring-ai-aca.badge

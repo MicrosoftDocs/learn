@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.spring-ai-aca.9-knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: Test your knowledge of Spring AI and Azure deployment
+  ms.date: 02/24/2025
+  author: gok
+  ms.author: gok
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-knowledge-check.md)]

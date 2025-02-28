@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.spring-ai-aca.3-azure-postgresql-setup
+title: Setting Up Azure PostgreSQL with Vector Support
+metadata:
+  title: Setting Up Azure PostgreSQL with Vector Support
+  description: >-
+    Learn how to create and configure Azure Database for PostgreSQL with
+    vector storage capabilities
+  ms.date: 02/24/2025
+  author: gok
+  ms.author: gok
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-azure-postgresql-setup.md)]
