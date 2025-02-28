@@ -43687,16 +43687,6 @@
       "source_path": "learn-pr/paths/develop-dynamic-reports-microsoft-power-bi/index.md",
       "redirect_url": "/training/paths/prepare-visualize-data-power-bi/",
       "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/30-knowledge-check.md",
-      "redirect_url": "/training/modules/microsoft-defender-cloud-threat-protection/33-knowledge-check",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/31-summary.md",
-      "redirect_url": "/training/modules/microsoft-defender-cloud-threat-protection/34-summary",
-      "redirect_document_id": false
     }
    ]
 }
