@@ -5,7 +5,8 @@ metadata:
   title: Knowledge check
   description: Check your knowledge of Java on Azure Container Apps.
   author: KarlErickson
-  ms.author: hangwan
+  ms.author: karler
+  ms.reviewer: hangwan
   ms.date: 02/18/2025
   ms.topic: unit
   ms.custom:
