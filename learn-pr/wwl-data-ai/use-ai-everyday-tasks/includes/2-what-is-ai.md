@@ -11,30 +11,30 @@ People usually interact with generative AI built into a chat application. One ex
 
 ## Help with everyday tasks
 
-Copilot is a smart assistant that can simplify your daily routines by helping you with various tasks and make your life a bit easier and more organized. Whether you're looking to get creative, plan your day, or need a bit of personal assistance, AI can make your life more manageable. Let's look at some everyday examples of how you might use AI.
+Copilot is a smart assistant that can simplify your daily routines by helping you with various tasks and make your life a bit easier and more organized. Whether you're looking to get creative, plan your day, or need some personal assistance, AI can make your life more manageable. Let's look at some everyday examples of how you might use AI.
 
 ### Write creative content
 
 ![Image of a person working on a laptop.](../media/02-write-creative-content.jpg)
 
-Struggling to start a project or come up with new ideas? Whether you're drafting an email, writing a blog post, or brainstorming for a podcast, AI can give you a starting point. It offers suggestions, generates text, and can even create entire pieces of content. For example, AI can help you:
+Struggling to start a project or come up with new ideas? Whether you're drafting an email, writing a blog post, or brainstorming for a podcast, AI can give you a starting point. It offers suggestions, generates text, and can even create entire pieces of content. For example, Copilot can help you:
 
-- **Compose emails**. Quickly draft professional emails by inputting the main message and letting AI handle the rest.
+- **Compose emails**. Quickly draft professional emails by inputting the main message and letting AI create a draft.
 - **Generate blog posts**. Create engaging blog posts by providing a topic and key points, and AI generates a well-structured article.
 - **Brainstorm ideas**. Get creative ideas for your next project, whether it's a slogan, a story, or a social media post.
 
-By using AI for creative writing and content creation, you can enhance your productivity and ensure that your materials are both engaging and effective.
+By using AI for creative writing and content creation, you can enhance your productivity and ensure that your materials are engaging and effective.
 
 ### Organize and plan
 
 ![Image of a person working on a laptop.](../media/02-organize-plan.jpg)
 
-Copilot can help you stay organized and plan your activities efficiently. The copilot can provide personalized recommendations and streamline your planning process. Here are some examples:
+AI can help you stay organized and plan your activities by providing personalized recommendations and streamlining your planning process. For example, Copilot can help you:
 
 - **Plan a trip**. AI can help you organize your travel itinerary, suggest destinations, flights, and accommodations, and even recommend activities based on your preferences.
 - **Manage and organize your calendar**. AI can help you schedule appointments, set reminders, and organize your daily tasks to ensure you stay on track.
 - **Plan an event**. Whether you're organizing a business conference or a family gathering, AI can help you plan the event by suggesting venues, creating schedules, and managing guest lists. It can also provide reminders and updates to keep everything on track.
-- **Task Management**. AI can help you manage your to-do list by prioritizing tasks, setting deadlines, and providing reminders. It can also suggest ways to break down larger projects into manageable steps.
+- **Manage tasks**. AI can help you manage your to-do list by prioritizing tasks, setting deadlines, and providing reminders. It can also suggest ways to break down larger projects into manageable steps.
 
 By using AI for organizing and planning, you can save time, reduce stress, and ensure that everything runs smoothly.
 
@@ -42,7 +42,7 @@ By using AI for organizing and planning, you can save time, reduce stress, and e
 
 ![Image of a Woman looking at her mobile device.](../media/02-personal-assistant.jpg)
 
-Copilot can act as your personal assistant, helping you manage various aspects of your life. Whether you need reminders, information, or assistance with tasks, the copilot is there to support you. Some examples include:
+Copilot can act as your personal assistant and help you manage your life. Whether you need reminders, information, or assistance with tasks, AI is there to support you. For example, Copilot can help you:
 
 - **Answer questions**. Get quick answers to your questions, whether it's finding information online, checking the weather, or getting directions.
 - **Provide recommendations**. Receive personalized recommendations for movies, books, restaurants, and more based on your preferences and past choices.
@@ -52,7 +52,7 @@ With AI as your personal assistant, you can streamline your daily activities, st
 
 ## Responsible AI
 
-AI should treat everyone fairly, protect privacy, and operate transparently. This helps build trust and ensures that AI systems are used in ways that respect individuals' rights and interests. Learn about the challenges and solutions related to AI accuracy by watching this short video.
+AI should treat everyone fairly, protect privacy, and operate transparently. This helps build trust and ensures that AI systems are used in ways that respect individuals' rights and interests. In this short video, learn about some of the challenges and solutions related to AI accuracy.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=34716751-793a-45ca-a3dd-60d9cd479648]
 
