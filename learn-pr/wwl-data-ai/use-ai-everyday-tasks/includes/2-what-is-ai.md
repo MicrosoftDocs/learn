@@ -54,7 +54,7 @@ With AI as your personal assistant, you can streamline your daily activities, st
 
 AI should treat everyone fairly, protect privacy, and operate transparently. This helps build trust and ensures that AI systems are used in ways that respect individuals' rights and interests. Learn about the challenges and solutions related to AI accuracy by watching this short video.
 
-> [!VIDEO https://www.youtube.com/embed/ccjXa6LkfpQ?si=JjrR4J6rLhJWFE4k]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=34716751-793a-45ca-a3dd-60d9cd479648]
 
 As AI becomes more integrated into our daily lives, it's important to use it responsibly. Here are some ways you can help keep your AI-generated content fair, trustworthy, and beneficial to society:
 
