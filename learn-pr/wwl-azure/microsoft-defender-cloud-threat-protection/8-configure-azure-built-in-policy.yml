@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Enable configure Azure built-in policy
   description: "Enable configure Azure built-in policy"
-  ms.date: 02/12/2025
+  ms.date: 02/28/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
