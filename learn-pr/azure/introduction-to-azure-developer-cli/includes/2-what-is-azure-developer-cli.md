@@ -1,4 +1,4 @@
-The Azure Developer CLI (`azd`) is an open-source command-line tool that reduces the time it takes for you to get your application from a local development environment to Azure. `azd` provides best practice, developer-friendly commands that map to key stages in your workflow, whether you’re working in the terminal, your preferred local development environment (for example, editor or integrated development environment (IDE)), or CI/CD (continuous integration/continuous deployment) pipelines.
+The Azure Developer CLI (`azd`) is an open-source command-line tool that reduces the time it takes for you to get your application from a local development environment to Azure. `azd` provides best practice, developer-friendly commands that map to key stages in your workflow, whether you're working in the terminal, your preferred local development environment (for example, editor or integrated development environment (IDE)), or CI/CD (continuous integration/continuous deployment) pipelines.
 
 You can install `azd` locally on your machine or use it in other environments such as GitHub Codespaces. Visit the [install page](/azure/developer/azure-developer-cli/install-azd) for a full list of supported installation methods and environments. For example, to install `azd` locally on Windows or Mac, you could use one of the following commands:
 
@@ -13,6 +13,8 @@ winget install microsoft.azd
 ```bash
 brew tap azure/azd && brew install azd
 ```
+
+---
 
 The Azure Developer CLI relies on extensible templates that include everything you need to get an application up and running on Azure. These templates include reusable infrastructure as code (IaC) assets written in Bicep or Terraform and proof-of-concept application code that can be replaced with your own app code. You can search for an existing template that uses a similar technology stack to your local app as a starting point. Many of the available templates are listed in the [awesome-azd template library](https://azure.github.io/awesome-azd/). The combination of `azd` commands and templates allows you to streamline many common development workflow stages and tasks:
 
