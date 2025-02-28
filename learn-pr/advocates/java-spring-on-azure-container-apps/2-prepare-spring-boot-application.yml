@@ -5,7 +5,8 @@ metadata:
   title: Prepare Spring Boot application
   description: Learn about application readiness before deploying to Azure Container Apps.
   author: KarlErickson
-  ms.author: hangwan
+  ms.author: karler
+  ms.reviewer: hangwan
   ms.date: 02/18/2025
   ms.topic: unit
   ms.custom:

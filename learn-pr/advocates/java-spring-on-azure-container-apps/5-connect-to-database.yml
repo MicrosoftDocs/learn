@@ -5,7 +5,8 @@ metadata:
   title: Exercise - Connect to a database
   description: This unit shows you how to connect your Spring Boot application to a database on Azure Container Apps.
   author: KarlErickson
-  ms.author: hangwan
+  ms.author: karler
+  ms.reviewer: hangwan
   ms.date: 02/18/2025
   ms.topic: unit
   ms.custom:

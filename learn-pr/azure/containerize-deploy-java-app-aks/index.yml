@@ -8,7 +8,8 @@ metadata:
   description: Containerize a Java app, push the container image to Azure Container Registry, and then deploy to Azure Kubernetes Service.
   ms.date: 02/12/2025
   author: KarlErickson
-  ms.author: yoterada
+  ms.author: karler
+  ms.reviewer: yoterada
   ms.topic: module
   ms.service: azure-java
 title: Containerize and deploy a Java app to Azure

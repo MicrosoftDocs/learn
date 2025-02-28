@@ -43657,6 +43657,46 @@
       "source_path": "learn-pr/wwl-data-ai/prepare-to-develop-ai-solutions-azure/5-understand-considerations-for-responsible-ai.md",
       "redirect_url": "/training/modules/prepare-azure-ai-development/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/data-warehouse-security/index.md",
+      "redirect_url": "/azure/synapse-analytics/sql-data-warehouse/column-level-security?context=%2Fazure%2Fsynapse-analytics%2Fcontext%2Fcontext&view=azuresql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/data-warehouse-security/2-azure-dw-security-control.md",
+      "redirect_url": "/azure/synapse-analytics/sql-data-warehouse/column-level-security?context=%2Fazure%2Fsynapse-analytics%2Fcontext%2Fcontext&view=azuresql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/data-warehouse-security/1-introduction.md",
+      "redirect_url": "/azure/synapse-analytics/sql-data-warehouse/column-level-security?context=%2Fazure%2Fsynapse-analytics%2Fcontext%2Fcontext&view=azuresql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/data-warehouse-security/3-security-monitoring-and-auditing.md",
+      "redirect_url": "/azure/synapse-analytics/sql-data-warehouse/column-level-security?context=%2Fazure%2Fsynapse-analytics%2Fcontext%2Fcontext&view=azuresql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai-cert/data-warehouse-security/4-summary.md",
+      "redirect_url": "/azure/synapse-analytics/sql-data-warehouse/column-level-security?context=%2Fazure%2Fsynapse-analytics%2Fcontext%2Fcontext&view=azuresql",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/develop-dynamic-reports-microsoft-power-bi/index.md",
+      "redirect_url": "/training/paths/prepare-visualize-data-power-bi/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/30-knowledge-check.md",
+      "redirect_url": "/training/modules/microsoft-defender-cloud-threat-protection/33-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/microsoft-defender-cloud-threat-protection/31-summary.md",
+      "redirect_url": "/training/modules/microsoft-defender-cloud-threat-protection/34-summary",
+      "redirect_document_id": false
     }
-  ]
+ ]
 }
