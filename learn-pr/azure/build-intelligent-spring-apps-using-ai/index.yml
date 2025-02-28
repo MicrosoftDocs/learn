@@ -37,8 +37,8 @@ prerequisites: |
   - Experience with Git and Maven/Gradle
   - Java 17 or later installed
 subjects:
-  - ai-ml
-  - cloud-development
+  - machine-learning
+  - custom-app-development
 units:
   - learn.azure.build-intelligent-spring-apps-using-ai.1-introduction
   - learn.azure.build-intelligent-spring-apps-using-ai.2-environment-setup
