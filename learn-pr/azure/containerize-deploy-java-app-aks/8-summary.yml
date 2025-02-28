@@ -9,7 +9,8 @@ metadata:
   description: Summary.
   ms.date: 02/12/2025
   author: KarlErickson
-  ms.author: yoterada
+  ms.author: karler
+  ms.reviewer: yoterada
   ms.topic: unit
   ms.custom:
     - devx-track-java

@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/12/2025
+  ms.date: 02/28/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
@@ -14,7 +14,7 @@ metadata:
   - references_regions
 durationInMinutes: 10
 content: |
-  [!include[](includes/30-knowledge-check.md)]
+  [!include[](includes/33-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
