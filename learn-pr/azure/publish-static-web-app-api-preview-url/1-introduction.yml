@@ -6,8 +6,8 @@ metadata:
   title: Introduction
   description: Publish an Azure Static Web App
   ms.date: 12/12/2023
-  author: craigshoemaker
-  ms.author: cshoe
+  author: v1212
+  ms.author: wujia
   ms.topic: unit
   zone_pivot_groups: dev-javascript-framework
 title: Introduction
