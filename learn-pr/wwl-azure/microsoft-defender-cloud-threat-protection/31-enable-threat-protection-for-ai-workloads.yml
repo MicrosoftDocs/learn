@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-defender-cloud-threat-protection.enable-threat-protection-for-ai-workloads
+title: Enable threat protection for AI workloads in Defender for Cloud
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Enable threat protection for AI workloads in Defender for Cloud
+  description: "Enable threat protection for AI workloads in Defender for Cloud"
+  ms.date: 02/28/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - references_regions
+durationInMinutes: 10
+content: |
+  [!include[](includes/31-enable-threat-protection-for-ai-workloads.md)]
