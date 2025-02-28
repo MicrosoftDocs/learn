@@ -2,13 +2,14 @@ The Azure Developer CLI (`azd`) can provision resources in Azure using infrastru
 
 In this unit, you'll add Bicep code to your template to provision the necessary resources for your app. Previous knowledge of Bicep isn't required to complete this module. However, if you plan to work with `azd` templates extensively, it's a good idea to become familiar with at least the basics of Bicep or Terraform. Learn more about Bicep on the [Fundamentals of Bicep](/training/paths/fundamentals-bicep/) training path.
 
-The Bicep or Terraform files for your template live in the `infra` folder. The Bicep starter template you selected generated three files as a starting point:
+The Bicep or Terraform files for your template live in the `infra` folder. The `infra` folder of the Bicep starter template you selected contains the following components as a starting point:
 
 * `main.bicep` - Acts as the main entrypoint for Bicep execution and is used to define the resources that will be provisioned in Azure. The `main.bicep` file can also reference other Bicep modules (files) that allow you to extract out resource definitions into more granular, reusable files.
 * `abbreviations.json` - A JSON file that provides many helpful naming abbreviations. This file is loaded into the `main.bicep` file during execution and provides a set of consistent, logical naming prefixes for different Azure resources.
 * `main.parameters.json` - A JSON file that defines default values for important template parameters, such as the default Azure location or the environment name.
+* `core` - A subfolder that includes a variety of reusable Bicep templates you can use to generate common Azure resources by simply passing in configuration parameters.
 
-You can define and provision the required Azure resources for your app by updating the `main.bicep` file and creating more Bicep files. `Main.bicep` generally orchestrates the execution of other Bicep modules by passing parameters between them. For this example, you'll create an additional Bicep module to define the Azure App Service that will host your application.
+You can define and provision the required Azure resources for your app by updating the `main.bicep` file and creating custom Bicep files, or leveraging the templates in the `core` folder. `Main.bicep` generally orchestrates the execution of other Bicep modules by passing parameters between them. For this example, you'll create an additional minimal Bicep module to define the Azure App Service that will host your application.
 
 1. Inside of the `infra` folder of your template, create a new file called `app.bicep`.
 
@@ -46,7 +47,7 @@ You can define and provision the required Azure resources for your app by updati
       properties: {
         serverFarmId: appServicePlan.id
         siteConfig: {
-          linuxFxVersion: 'DOTNETCORE|6.0'
+          linuxFxVersion: 'DOTNETCORE|9.0'
         }
       }
         // Tag used to reference the service in the Azure.yaml file
