@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-defender-cloud-threat-protection.ai-threat-protection
+title: Defender for Cloud AI threat protection
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Defender for Cloud AI threat protection
+  description: "Defender for Cloud AI threat protection"
+  ms.date: 02/28/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - references_regions
+durationInMinutes: 7
+content: |
+  [!include[](includes/30-ai-threat-protection.md)]
