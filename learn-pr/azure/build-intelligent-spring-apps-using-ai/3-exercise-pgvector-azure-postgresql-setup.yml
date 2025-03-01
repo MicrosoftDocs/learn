@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.build-intelligent-spring-apps-using-ai.3-exercise-pgvector-azure-postgresql-setup
-title: Setup PGVector extension in Azure PostgresQL for use with Spring AI
+title: Exercise - Setup PGVector extension in Azure PostgresQL for use with Spring AI
 metadata:
   title: Exercise - Setup PGVector extension in Azure PostgresQL for use with Spring AI
   description: >-
