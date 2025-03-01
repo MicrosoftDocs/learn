@@ -41,8 +41,8 @@ subjects:
   - custom-app-development
 units:
   - learn.azure.build-intelligent-spring-apps-using-ai.1-introduction
-  - learn.azure.build-intelligent-spring-apps-using-ai.2-environment-setup
-  - learn.azure.build-intelligent-spring-apps-using-ai.3-azure-postgresql-setup
+  - learn.azure.build-intelligent-spring-apps-using-ai.2-pgvector-azure-postgresql-setup
+  - learn.azure.build-intelligent-spring-apps-using-ai.3-exercise-pgvector-azure-postgresql-setup
   - learn.azure.build-intelligent-spring-apps-using-ai.4-spring-ai-development
   - learn.azure.build-intelligent-spring-apps-using-ai.5-aca-deployment
   - learn.azure.build-intelligent-spring-apps-using-ai.6-testing-responses

@@ -1,0 +1,158 @@
+In this exercise, we will create Azure Database for PostgreSQL Flexible Server, enable `pgvector` extension and create required database structure for use with Sprin AI `VectorStore` abstraction.
+
+## Sign in to Azure via Azure CLI
+
+If you haven't already done so, sign in to Azure:
+
+```azurecli
+az login
+```
+
+## Set parameter values
+
+The following values are used in subsequent commands to create the database and required resources. Server names need to be globally unique across all of Azure so the `$RANDOM` function is used to create the server name. Change the location as appropriate for your environment.
+
+```bash
+ID=$RANDOM
+LOCATION="eastus2"
+RG="spring-ai-postgresql-rg"
+SERVER="spring-ai-postgresql-server-$ID"
+```
+
+You can limit access by specifying to the PostgreSQL server external IP appropriate IP address values for your environment. Use the public IP address of the computer you're using to restrict access to the server to only your IP address. Intialize the `start` and `end` IP values as follows:
+
+```bash
+STARTIP=$(curl -s ipinfo.io/ip)
+ENDIP=$STARTIP
+echo "Start IP: $STARTIP and End IP: $ENDIP"
+```
+
+![Note]
+!Your IP address may change and the corresponding firewall rule will need to be updated accordingly
+![Tip]
+!The above command should work in most Linux distributions and git bash. If it does not work, you can alternatively get your public IP address using [https://whatismyipaddress.com/](https://whatismyipaddress.com/)
+
+### Create a resource group
+
+Create a resource group with the following command. An Azure resource group is a logical container into which Azure resources are deployed and managed.
+
+   ```bash
+   az group create --name $RG --location $LOCATION
+   ```
+
+### Create Azure Database for PostgreSQL Server
+
+Use the following command to create a database instance for development purposes. The **burstable** tier is a cost-effective tier for workloads that do not require consistent performance.
+
+   ```bash
+   az postgres flexible-server create \
+     --name $SERVER \
+     --resource-group $RG \
+     --location $LOCATION \
+     --tier Burstable \
+     --sku-name standard_b1ms \
+     --active-directory-auth enabled \
+     --password-auth disabled \
+     --public-access $STARTIP \
+     --version 16
+   ```
+
+This command will take a few minutes to complete. Once completed, a similar output will be displayed:
+
+```json
+{
+"connectionString": "postgresql://<admin-user>:<admin-password>@<name>.postgres.database.azure.com/None?sslmode=require",
+"databaseName": null,
+"firewallName": "FirewallIPAddress_<timestamp>",
+"host": "<name>.postgres.database.azure.com",
+"id": "/subscriptions/<subscription-id>/resourceGroups/<resource-group>/providers/Microsoft.DBforPostgreSQL/flexibleServers/<name>",
+"location": "<region>",
+"password": "<admin-password>",
+"resourceGroup": "<resource-group>",
+"skuname": "<sku-name>",
+"username": "<admin-user>",
+"version": "<version>"
+}
+```
+
+Note that if you are having difficulty connecting from your IP, you use the following command to create a firewall rule to allow access to the new IP range:
+
+   ```bash
+   az postgres flexible-server firewall-rule create \
+     --rule-name allowiprange \
+     --resource-group $RG \
+     --name $SERVER \
+     --start-ip-address 0.0.0.0 \
+     --end-ip-address 255.255.255.255
+   ```
+
+Once this rule is created, you can update using `az postgres flexible-server firewall-rule update`
+
+### Grant admin access to your Azure Entra ID
+
+Run the following command to get the `object id` for your Entra ID:
+
+```bash
+USER_OBJECT_ID=$(az ad signed-in-user show --query id -o tsv | tr -d '\r')
+```
+
+Run the following command to grant admin access to your Entra ID:
+
+```bash
+az postgres flexible-server ad-admin create --server-name $SERVER -g $RG \
+   --object-id $USER_OBJECT_ID --display-name AzureAdmin
+```
+
+### Whitelist required extensions for pgvector
+
+Before we can enable extensions required by pgvector, we need to white list them using this `az` command:
+
+```bash
+az postgres flexible-server parameter set --resource-group $RG \
+   --server-name $SERVER --name azure.extensions --value vector,hstore,uuid-ossp
+```
+
+## Validate connectivity to your database
+
+Use this command to get the fully qualified host name for your database server:
+
+```bash
+DB_HOST=$(az postgres flexible-server show --resource-group $RG --name $SERVER \
+ --query fullyQualifiedDomainName --output tsv)
+```
+
+Run this command to get a token to be able to login with your Entra ID:
+
+```bash
+export PGPASSWORD="$(az account get-access-token \
+  --resource https://ossrdbms-aad.database.windows.net \
+  --query accessToken --output tsv)" 
+```
+
+Connect to database using `psql` client with this command:
+
+```bash
+psql "host=$DB_HOST port=5432 dbname=postgres user=AzureAdmin sslmode=require"
+```
+
+Example PSQL output:
+
+```bash
+psql (14.13, server 16.4)
+ WARNING: psql major version 14, server major version 16.
+         Some psql features might not work.
+ SSL connection (protocol: TLSv1.3, cipher: TLS_AES_256_GCM_SHA384, bits: 256, compression: off)
+ Type "help" for help.
+
+ postgres=>
+```
+
+## Unit Summary
+
+We now have a vector-enabled PostgreSQL database ready which will allow the following:
+
+1. Implement vector storage in our Spring application
+2. Test similarity search functionality
+3. Build our RAG implementation
+
+💡Remember: Vector similarity search is crucial for finding relevant context in our RAG application!
