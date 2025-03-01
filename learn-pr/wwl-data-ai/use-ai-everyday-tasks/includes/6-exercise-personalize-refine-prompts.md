@@ -13,14 +13,14 @@ In this module, you use Microsoft Copilot to interact with generative AI. To fol
 ## Personalize sample prompts
 To start, you practice creating personalized prompts using a few fill-in-the-blank examples. Your task is to fill in the blanks with specific details such as goals, timelines, topics, or other relevant information. This helps you create clear and effective prompts for Copilot.
 
-> [!TIP]
-> In this exercise, bracketed text indicates where you should replace the bracketed text with your own ideas. After personalizing the prompt, remove the brackets.
-
 ### Generate recommendations
 
 1. Copy the sample prompt and paste it into the chat box in [copilot.microsoft.com](https://copilot.microsoft.com?azure-portal=true).
 2. Personalize the prompt by updating the content in brackets to whatever suits you.
 3. Submit the message to Copilot.
+
+> [!IMPORTANT]
+> In this exercise, bracketed text indicates where you should replace the bracketed text with your own ideas. After personalizing the prompt, remove the brackets.
 
 **Sample prompt**:
 > Copilot, generate a list of **[10 book recommendations]** for **[summer reading]** that focus on **[self-improvement and personal growth]**.
