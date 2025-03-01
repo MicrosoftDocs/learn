@@ -21,6 +21,9 @@ Here are some tips to keep in mind when writing a prompt:
 
 The following table includes some everyday tasks that you could co-create with AI, and include examples of good, better, and best prompts. These examples help you understand how to create prompts to make your tasks more simple and effective.
 
+> [!TIP]
+> When you see text in brackets within a prompt, it indicates where you should either paste your own content or replace the bracketed text with your own ideas. After personalizing the prompt, remove the brackets. For example, you might replace **[my workout]** with **morning run** and **[upbeat and energetic]** with **relaxing and calm** to make this prompt your own.
+
 | **Task** | **Good** | **Better** | **Best** |
 |----------------|------|--------|------|
 | **Rewrite Emails** | Copilot, rewrite this email to be more formal: [email text]. | Copilot, rewrite this email to be more **formal and concise**: [email text]. | Copilot, rewrite this email to be more **formal, concise, and persuasive**: [email text]. |
