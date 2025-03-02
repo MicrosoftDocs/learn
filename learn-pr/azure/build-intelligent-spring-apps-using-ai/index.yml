@@ -44,11 +44,10 @@ units:
   - learn.azure.build-intelligent-spring-apps-using-ai.2-pgvector-azure-postgresql-setup
   - learn.azure.build-intelligent-spring-apps-using-ai.3-exercise-pgvector-azure-postgresql-setup
   - learn.azure.build-intelligent-spring-apps-using-ai.4-spring-ai-development
-  - learn.azure.build-intelligent-spring-apps-using-ai.5-aca-deployment
-  - learn.azure.build-intelligent-spring-apps-using-ai.6-testing-responses
-  - learn.azure.build-intelligent-spring-apps-using-ai.7-observability
-  - learn.azure.build-intelligent-spring-apps-using-ai.8-scaling
-  - learn.azure.build-intelligent-spring-apps-using-ai.9-knowledge-check
-  - learn.azure.build-intelligent-spring-apps-using-ai.10-summary
+  - learn.azure.build-intelligent-spring-apps-using-ai.5-exercise-spring-ai-development
+  - learn.azure.build-intelligent-spring-apps-using-ai.6-aca-deployment
+  - learn.azure.build-intelligent-spring-apps-using-ai.7-exercise-aca-deployment
+  - learn.azure.build-intelligent-spring-apps-using-ai.8-knowledge-check
+  - learn.azure.build-intelligent-spring-apps-using-ai.9-summary
 badge:
   uid: learn.azure.build-intelligent-spring-apps-using-ai.badge

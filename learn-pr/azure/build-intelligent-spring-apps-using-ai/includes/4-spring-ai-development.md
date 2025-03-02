@@ -1,243 +1,70 @@
-# Implementing Spring AI with Azure OpenAI
+In this unit, you will explore the concepts behind using the `PGVectorStore` Spring Boot Starter and OpenAI Spring Boot Starter to manage and query document embeddings in a PostgreSQL database. By the end of this unit, you will understand how to leverage these tools to enhance your applications with advanced search capabilities.
 
-Let's build our RAG (Retrieval Augmented Generation) application using Spring AI and Azure OpenAI.
+Prerequisites
+Before diving into the concepts, ensure you have a basic understanding of:
 
-## Core Components Overview
+Spring Boot framework
+PostgreSQL database
+Embeddings and vector representations
+Understanding Vector Stores
 
-```mermaid
-graph TD
-    A[ChatClient] -->|Generates Responses| B[Azure OpenAI]
-    C[EmbeddingClient] -->|Creates Embeddings| B
-    D[PostgreSQL] -->|Stores Vectors| E[Vector Search]
-    E -->|Provides Context| A
-```
+## What is a Vector Store?
 
-## Spring AI Configuration
+A vector store is a specialized database designed to store and manage high-dimensional vectors. These vectors often represent complex data such as text, images, or other multimedia content. Vector stores enable efficient similarity searches, making them ideal for applications like recommendation systems, semantic search, and more.
 
-1. **Configure Azure OpenAI in application.properties**:
-```properties
-spring.ai.azure.openai.api-key=${AZURE_OPENAI_API_KEY}
-spring.ai.azure.openai.endpoint=${AZURE_OPENAI_ENDPOINT}
-spring.ai.azure.openai.chat.model=gpt-35-turbo
-spring.ai.azure.openai.embedding.model=text-embedding-ada-002
-```
+## Why Use PGVectorStore?
 
-2. **Create ChatClient Bean**:
+PGVectorStore is a Spring Boot starter that simplifies the integration of vector storage and search capabilities into your Spring Boot applications. It leverages PostgreSQL's vector extension to store and query document embeddings efficiently.
+
+## What are Embeddings?
+
+Embeddings are dense vector representations of data. For example, in natural language processing (NLP), embeddings represent words, sentences, or documents as vectors in a high-dimensional space. These vectors capture semantic relationships, enabling advanced search and analysis.
+
+## Using Azure OpenAI EmbeddingModel
+
+Azure OpenAI provides powerful models to generate embeddings for various types of data. By integrating Azure OpenAI's Embedding Models with `PGVectorStore`, you can create and store embeddings for your documents, enabling sophisticated search capabilities.
+
+## Adding Documents to Vector Store
+
+To add documents to the vector store, you need to generate embeddings and store them along with the original content. The provided code snippet demonstrates how to use the `VectorStore` class in a Spring Boot application to store and manage documents:
+
 ```java
-@Configuration
-public class AiConfig {
-    @Bean
-    public ChatClient azureOpenAiChatClient(
-            AzureOpenAiChatProperties properties) {
-        return new AzureOpenAiChatClient(properties);
-    }
-}
+@Autowired
+private VectorStore vectorStore;
+
+List<Document> documents = List.of(
+    new Document("A vector store is a specialized database designed to store and manage high-dimensional vectors. ", Map.of("prompt", "What is Vector Store")),
+    new Document("PGVectorStore is a Spring Boot starter that simplifies the integration of vector storage and search capabilities into your Spring Boot applications.", Map.of("prompt","Why Use PGVectorStore?"))
+);
+vectorStore.add(documents);
 ```
 
-## Implementing RAG Service
+Here's a detailed explanation of how this code works:
 
-1. **EmbeddingService for Vector Generation**:
+1. First use the Spring's `@Autowired` annotation to automatically inject an instance of the `VectorStore` class into the current class.
+1. Next create a list of `Document` objects. Each `Document` object contains a string representing the content and a map of metadata. In this example, two documents are created:
+1. Finally we add the list of documents to the `vectorStore` instance. The add method of the `VectorStore` class is used to store the documents in the vector store database table, as well as generate embeddings using the specified `EmbeddingModel` in your Spring Boot configuration.
+
+## Querying Documents
+
+Once your documents are stored, you can perform similarity searches to find documents that are semantically similar to a given query. Here is a sample code to perform a similarity search using the `VectorStore` class:
+
 ```java
-@Service
-public class EmbeddingService {
-    private final EmbeddingClient embeddingClient;
-    
-    public double[] generateEmbedding(String text) {
-        Document document = new Document(text);
-        List<Double> embedding = embeddingClient.embed(document);
-        return embedding.stream()
-                       .mapToDouble(Double::doubleValue)
-                       .toArray();
-    }
-}
+List<Document> results = vectorStore.similaritySearch(
+    SearchRequest.builder()
+        .query("Spring")
+        .topK(5)
+        .build()
+);
 ```
 
-2. **ChatHistory Model**:
-```java
-public class ChatHistory {
-    private Long id;
-    private String prompt;
-    private String response;
-    private double[] embedding;
-    
-    // Getters, setters, and constructors
-}
-```
+Here's a detailed explanation for this code snippet:
 
-3. **RagService Implementation**:
-```java
-@Service
-public class RagService {
-    private final ChatClient chatClient;
-    private final EmbeddingService embeddingService;
-    private final ChatHistoryRepository repository;
-    
-    public String processQuery(String query) {
-        // 1. Generate embedding
-        double[] queryEmbedding = 
-            embeddingService.generateEmbedding(query);
-        
-        // 2. Find similar contexts
-        List<ChatHistory> similarContexts = 
-            repository.findNearestNeighbors(queryEmbedding, 3);
-        
-        // 3. Build prompt with context
-        String context = buildContext(similarContexts);
-        
-        // 4. Generate AI response
-        ChatResponse response = chatClient.call(
-            buildPrompt(query, context));
-        
-        // 5. Save interaction
-        repository.save(new ChatHistory(
-            query, 
-            response.getResult().getOutput().getContent(), 
-            queryEmbedding));
-            
-        return response.getResult().getOutput().getContent();
-    }
-}
-```
+1. The `similaritySearch` method of the `VectorStore` class is used to find documents that are similar to a given query.
+1. This code uses the builder pattern to create a `SearchRequest` object using the following components:
+    1. This `query` method sets the query string for the search. The similarity search will look for documents in the vector store that are similar to this query.
+    1. The `topK(5)` portion specifies the number of top results to return. In this case, the search should return the top 5 most similar documents.
 
-## Testing the Implementation
+## Unit Summary
 
-1. **Create a Test Query**:
-```java
-@SpringBootTest
-class RagServiceTest {
-    @Autowired
-    private RagService ragService;
-    
-    @Test
-    void testQueryProcessing() {
-        String response = ragService.processQuery(
-            "What is Spring AI?");
-        assertNotNull(response);
-    }
-}
-```
-
-## Error Handling and Logging
-
-Add comprehensive error handling:
-```java
-try {
-    // AI operations
-} catch (Exception e) {
-    log.error("Error in AI processing: {}", e.getMessage());
-    throw new AiProcessingException(
-        "Failed to process query", e);
-}
-```
-
-## Advanced AI Agent Patterns
-
-Spring AI supports sophisticated AI agent patterns like the evaluator-optimizer pattern, which uses multiple AI roles to improve content quality through iterative feedback loops.
-
-```mermaid
-graph TD
-    A[Writer Agent] -->|Generates Content| B[Content Draft]
-    B -->|Evaluates| C[Editor Agent]
-    C -->|Feedback| D{Quality Check}
-    D -->|Needs Improvement| A
-    D -->|Approved| E[Final Content]
-```
-
-### Evaluator-Optimizer Implementation
-
-The pattern uses two AI roles:
-1. Writer: Generates and refines content
-2. Editor: Evaluates quality and provides feedback
-
-Example implementation:
-```java
-@Service
-public class BlogWriterService {
-    private final ChatClient chatClient;
-    private static final int MAX_ITERATIONS = 3;
-    
-    public String generateBlogPost(String topic) {
-        // Writer: Generate initial draft
-        String initialPrompt = String.format(
-            "Write a blog post about \"%s\"", topic);
-        String draft = chatClient.call(new Prompt(initialPrompt))
-            .getResult().getOutput().getContent();
-            
-        // Enter evaluator-optimizer loop
-        int iteration = 1;
-        boolean approved = false;
-        
-        while (!approved && iteration <= MAX_ITERATIONS) {
-            // Editor: Evaluate the draft
-            String evalPrompt = String.format(
-                "Evaluate this blog post and respond with PASS " +
-                "or NEEDS_IMPROVEMENT with feedback:\n%s", draft);
-            String evaluation = chatClient.call(new Prompt(evalPrompt))
-                .getResult().getOutput().getContent();
-                
-            if (evaluation.contains("PASS")) {
-                approved = true;
-            } else {
-                // Writer: Refine based on feedback
-                String refinePrompt = String.format(
-                    "Improve this post using feedback:\n%s\n\n%s",
-                    evaluation, draft);
-                draft = chatClient.call(new Prompt(refinePrompt))
-                    .getResult().getOutput().getContent();
-            }
-            iteration++;
-        }
-        return draft;
-    }
-}
-```
-
-### Shell Command Interface
-
-Access the pattern through Spring Shell:
-```java
-@ShellComponent
-public class BlogWriterCommand {
-    @ShellMethod(key = "write-blog",
-        value = "Generate a blog post using AI writer-editor feedback loop")
-    public String writeBlog(String topic) {
-        return blogWriterService.generateBlogPost(topic);
-    }
-}
-```
-
-### Configuration
-
-Configure Azure OpenAI settings in `application.properties`:
-```properties
-spring.ai.azure.openai.api-key=${AZURE_OPENAI_API_KEY}
-spring.ai.azure.openai.endpoint=${AZURE_OPENAI_ENDPOINT}
-spring.ai.azure.openai.chat.model=gpt-35-turbo
-```
-```
-
-## Best Practices
-
-1. **Prompt Engineering**
-   - Use clear system messages
-   - Include relevant context
-   - Structure prompts consistently
-
-2. **Vector Operations**
-   - Cache embeddings when possible
-   - Use appropriate vector dimensions
-   - Implement similarity thresholds
-
-3. **Performance Optimization**
-   - Configure connection pooling
-   - Implement caching strategies
-   - Monitor API usage
-
-## Next Steps
-
-With our Spring AI implementation complete, we can:
-1. Deploy to Azure Container Apps
-2. Set up monitoring and logging
-3. Configure auto-scaling
-
-🚀 Pro tip: Test your implementation thoroughly with various query types before deployment!
+In this unit, you learned the concepts behind using `PGVectorStore` and OpenAI Spring Boot Starter to manage and query document embeddings. You explored the importance of embeddings, how to generate and store them, and how to perform similarity searches. In the next exercise, we will build a RAG Spring Boot application using these tools.

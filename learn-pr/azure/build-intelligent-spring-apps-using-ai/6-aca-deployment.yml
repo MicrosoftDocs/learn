@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-intelligent-spring-apps-using-ai.5-aca-deployment
+uid: learn.azure.build-intelligent-spring-apps-using-ai.6-aca-deployment
 title: Deploying to Azure Container Apps
 metadata:
   title: Deploying to Azure Container Apps
@@ -11,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/5-aca-deployment.md)]
+  [!include[](includes/6-aca-deployment.md)]

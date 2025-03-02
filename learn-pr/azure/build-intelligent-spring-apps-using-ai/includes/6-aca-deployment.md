@@ -1,5 +1,3 @@
-# Deploying to Azure Container Apps
-
 Let's deploy our Spring AI application to Azure Container Apps for scalable, serverless container hosting.
 
 ## Containerization

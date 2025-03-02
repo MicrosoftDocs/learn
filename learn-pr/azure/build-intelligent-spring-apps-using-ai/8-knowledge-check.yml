@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-intelligent-spring-apps-using-ai.9-knowledge-check
+uid: learn.azure.build-intelligent-spring-apps-using-ai.8-knowledge-check
 title: Knowledge Check
 metadata:
   title: Knowledge Check
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/9-knowledge-check.md)]
+  [!include[](includes/8-knowledge-check.md)]
