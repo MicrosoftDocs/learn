@@ -30,103 +30,340 @@ Before we start building our AI-powered application, let's set up our developmen
 
 3. Login to **Azure** using `az`:
 
-   ```bash
+   ```azurecli
    az login  # Log in to Azure
    ```
 
+## Install Spring Boot CLI
+
+We will need the Spring Boot CLI to create a starter project. You can install the cli using any of the options listed [here](https://docs.spring.io/spring-boot/installing.html#getting-started.installing.cli). We will install it using the `SDKMAN` option.
+
+Install `SDKMAN` using:
+
+```bash
+curl -s "https://get.sdkman.io" | bash
+```
+
+Install Spring Boot CLI using this command:
+
+```bash
+sdk install springboot
+```
+
+Type `spring` to verify it installed successfully:
+
+```bash
+spring
+```
+
+## Environment Variables Setup
+
+For this exercise we will need to some environment variables from the prior exercise. Ensure these variables are still available, and if not, recreate them from the values used previously:
+
+```bash
+echo RESOURCE_GROUP: $RESOURCE_GROUP
+echo LOCATION: $LOCATION
+```
+
+Additionally, export the following new variables needed for this lab:
+
+```bash
+OPENAI_RESOURCE_NAME=OpenAISpringAI
+```
+
 ## Deploy Azure OpenAI Models
 
-1. **Deploy Azure OpenAI Models**
-   - Deploy a chat model (e.g., gpt-35-turbo)
-   - Deploy an embedding model (e.g., text-embedding-ada-002)
+For our application, we first need to deploy one chat model (gpt-4o) and one embedding model (text-embedding-ada-002).
+To deploy these models we first need to create an Azure OpenAI resource.
 
-## Spring AI Configuration
+### Create Azure OpenAI Resource
 
-1. **Configure Azure OpenAI in application.properties**:
+We will create the Azure OpenAI resource using this Azure CLI commands:
+
+```azurecli
+az cognitiveservices account create \
+  --name $OPENAI_RESOURCE_NAME \
+  --resource-group $RESOURCE_GROUP \
+  --kind OpenAI \
+  --sku S0 \
+  --location $LOCATION \
+  --yes
+```
+
+### Deploy Azure OpenAI Chat Model
+
+We will then deploy a chat model named `gpt-4o` using this command:
+
+```azurecli
+az cognitiveservices account deployment create \
+  --name $OPENAI_RESOURCE_NAME \
+  --resource-group $RESOURCE_GROUP \
+  --deployment-name gpt-4o \
+  --model-name gpt-4o \
+  --model-version 2024-11-20 \
+  --model-format OpenAI \
+  --sku-capacity "15" \
+  --sku-name GlobalStandard
+```
+
+### Deploy Azure OpenAI Embedding model
+
+We will now deploy embedding model named `text-embedding-ada-002` using this command:
+
+```azurecli
+az cognitiveservices account deployment create \
+  --name $OPENAI_RESOURCE_NAME \
+  --resource-group $RESOURCE_GROUP \
+  --deployment-name text-embedding-ada-002 \
+  --model-name text-embedding-ada-002 \
+  --model-version 2 \
+  --model-format OpenAI \
+  --sku-capacity 120 \
+  --sku-name Standard
+```
+
+## Create Spring AI Application
+
+Use the following maven command to generate a new Spring Boot starter project with all of the dependencies needed:
+
+```bash
+spring init \
+    --groupId=com.example \
+    --artifactId=spring-ai-app \
+    --name=spring-ai-app \
+    --description="Spring AI Azure Integration" \
+    --version=0.0.1-SNAPSHOT \
+    --boot-version=3.4.3 \
+    --java-version=17 \
+    --dependencies=web,jdbc,spring-shell,spring-ai-azure-openai,spring-ai-vectordb-pgvector,postgresql \
+    --build=maven \
+    --package-name=com.example.springaiapp \
+    spring-ai-app
+```
+
+If successful, the command output should show:
+
+```bash
+Using service at https://start.spring.io
+Project extracted to '/mnt/c/Users/user/source/repos/spring-ai-app'
+```
+
+Switch directory to this path:
+
+```bash
+cd spring-ai-app
+```
+
+You can compile the application, but only skipping tests using this command:
+
+```bash
+mvn clean package -DskipTests
+```
+
+Expect to see a successful build output:
+
+```bash
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  25.392 s
+[INFO] Finished at: 2025-03-02T15:53:07-05:00
+[INFO] ------------------------------------------------------------------------
+```
+
+### Project Structure
+
+From the `spring-ai-app` directory run these commands to create new directories for new source files to be added:
+
+```bash
+mkdir -p src/mainjava/com/example/springaiapp/controller
+mkdir -p src/main/java/com/example/springaiapp/service
+mkdir -p src/main/java/com/example/springaiapp/shell
+```
+
+Inspect the code using Visual Studio Code or your favorite IDE. The starter code will include the following structure:
+
+```txt
+src/
+├── main/
+│   ├── java/
+│   │   └── com/example/springaiapp/
+│   │       ├── controller/
+│   │       ├── service/
+│   │       ├── shell/
+│   │       └── SpringAiAppApplication.java
+│   └── resources/
+│       ├── application.properties
+├── test/
+│   ├── java/
+│   │   └── com/example/springaiapp/
+│   │       └── SpringAiAppApplicationTests.java
+```
+
+### Spring AI Configuration
+
+Before we can run the application successfully, we need to add required configuration:
+
+* Azure OpenAI Endpoint
+* Azure OpenAI API Key
+* PostgreSql URL
+
+Retrieve the **Azure OpenAI Resource Endpoint** using this command:
+
+```azcli
+az cognitiveservices account show \
+  --name $OPENAI_RESOURCE_NAME \
+  --resource-group $RESOURCE_GROUP \
+  --query "properties.endpoint" \
+  --output tsv
+```
+
+Retrieve the **Azure OpenAI Resource Key** using this command:
+
+```azcli
+az cognitiveservices account keys list \
+  --name $OPENAI_RESOURCE_NAME \
+  --resource-group $RESOURCE_GROUP \
+  --query "key1" \
+  --output tsv
+```
+
+Additionally we need to provide the **PostgreSql URL**, which you can retrieve using command from prior exercise:
+
+```azcli
+az postgres flexible-server show --resource-group $RESOURCE_GROUP --name $DB_SERVER_NAME \
+ --query fullyQualifiedDomainName --output tsv
+```
+
+### Update Azure OpenAI in application.properties
+
+Locate and open the `application.properties` file in the `src/main/resources` directory and add the following properties replacing the values retrieved above:
 
 ```properties
-spring.ai.azure.openai.api-key=${AZURE_OPENAI_API_KEY}
-spring.ai.azure.openai.endpoint=${AZURE_OPENAI_ENDPOINT}
-spring.ai.azure.openai.chat.model=gpt-35-turbo
+# Azure OpenAI Configuration
+spring.ai.azure.openai.api-key=<Azure OpenAI Key>
+spring.ai.azure.openai.endpoint=<Azure OpenAI Endpoint>
+spring.ai.azure.openai.chat.model=gpt-4o
 spring.ai.azure.openai.embedding.model=text-embedding-ada-002
+
+# Database Configuration
+spring.datasource.url=jdbc:postgresql://<PostgreSql URL>
 ```
 
-2. **Create ChatClient Bean**:
-```java
-@Configuration
-public class AiConfig {
-    @Bean
-    public ChatClient azureOpenAiChatClient(
-            AzureOpenAiChatProperties properties) {
-        return new AzureOpenAiChatClient(properties);
-    }
-}
+Once this is updated, you can now run unit tests to confirm that they are passing successfully:
+
+```bash
+mvn package
 ```
 
-## Implementing RAG Service
+Expect to see unit tests passing and build success:
 
-1. **EmbeddingService for Vector Generation**:
-```java
-@Service
-public class EmbeddingService {
-    private final EmbeddingClient embeddingClient;
-    
-    public double[] generateEmbedding(String text) {
-        Document document = new Document(text);
-        List<Double> embedding = embeddingClient.embed(document);
-        return embedding.stream()
-                       .mapToDouble(Double::doubleValue)
-                       .toArray();
-    }
-}
+```bash
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 45.23 s -- in com.example.springaiapp.SpringAiAppApplicationTests
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
 ```
 
-2. **ChatHistory Model**:
-```java
-public class ChatHistory {
-    private Long id;
-    private String prompt;
-    private String response;
-    private double[] embedding;
-    
-    // Getters, setters, and constructors
-}
-```
+### Implementing RAG Service
 
-3. **RagService Implementation**:
+Within the `service` directory, create a new file name `RagService.java` with the following content:
+
 ```java
+package com.example.springaiapp.service;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.ai.chat.client.ChatClient;
+import org.springframework.ai.chat.model.ChatResponse;
+import org.springframework.ai.vectorstore.VectorStore;
+import org.springframework.ai.chat.messages.SystemMessage;
+import org.springframework.ai.chat.messages.UserMessage;
+import org.springframework.ai.vectorstore.SearchRequest;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.ai.document.Document;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+/**
+ * RAG (Retrieval Augmented Generation) Service
+ */
 @Service
 public class RagService {
+    private static final Logger logger = LoggerFactory.getLogger(RagService.class);
+    
     private final ChatClient chatClient;
-    private final EmbeddingService embeddingService;
-    private final ChatHistoryRepository repository;
+
+    @Autowired
+    VectorStore vectorStore;
+    
+    public RagService(ChatClient.Builder chatClientBuilder) {
+        this.chatClient = chatClientBuilder.build();
+    }
     
     public String processQuery(String query) {
-        // 1. Generate embedding
-        double[] queryEmbedding = 
-            embeddingService.generateEmbedding(query);
-        
-        // 2. Find similar contexts
-        List<ChatHistory> similarContexts = 
-            repository.findNearestNeighbors(queryEmbedding, 3);
-        
-        // 3. Build prompt with context
-        String context = buildContext(similarContexts);
-        
-        // 4. Generate AI response
-        ChatResponse response = chatClient.call(
-            buildPrompt(query, context));
-        
-        // 5. Save interaction
-        repository.save(new ChatHistory(
-            query, 
-            response.getResult().getOutput().getContent(), 
-            queryEmbedding));
+        try {
+            logger.debug("Processing query: {}", query);
             
-        return response.getResult().getOutput().getContent();
+            // Step 1: Find similar previous Q&As
+            List<Document> similarContexts = vectorStore.similaritySearch(
+                SearchRequest.builder().query(query)
+                    .similarityThreshold(0.8)
+                    .topK(3).build());
+            logger.debug("Found {} similar contexts", similarContexts.size());
+            
+            // Step 2: Build prompt with context from similar Q&As
+            String context = similarContexts.stream()
+                .map(ch -> String.format("Q: %s\nA: %s", 
+                    ch.getMetadata().get("prompt"), ch.getText()))
+                .collect(Collectors.joining("\n\n"));
+            logger.debug("Built context with {} characters", context.length());
+
+            String promptText = String.format("""
+                Use these previous Q&A pairs as context for answering the new question:
+                
+                Previous interactions:
+                %s
+                
+                New question: %s
+                
+                Please provide a clear and educational response.""",
+                context,
+                query
+            );
+
+            // Step 3: Generate AI response with system context
+            SystemMessage systemMessage = new SystemMessage(
+                "You are a helpful AI assistant that provides clear and educational responses."
+            );
+            UserMessage userMessage = new UserMessage(promptText);
+            
+            logger.debug("Sending prompt to Azure OpenAI");
+            ChatResponse response = chatClient.prompt().messages(List.of(systemMessage, userMessage)).call().chatResponse();
+            String answer = response.getResult().getOutput().getText();
+            logger.debug("Received response of {} characters", answer.length());
+            
+            // Step 4: Save interaction for future context
+            logger.debug("Saving interaction to vector store");
+            vectorStore.add(List.of(new Document(answer, Map.of("prompt", query))));
+            logger.debug("Successfully saved interaction");
+            
+            return answer;
+        } catch (Exception e) {
+            logger.error("Error processing query: {}", query, e);
+            String errorMessage = String.format(
+                "Error processing query: %s",
+                e.getMessage()
+            );
+            return errorMessage;
+        }
     }
 }
 ```
+
 
 ## Testing the Implementation
 
@@ -146,80 +383,6 @@ class RagServiceTest {
 }
 ```
 
-## Error Handling and Logging
-
-Add comprehensive error handling:
-```java
-try {
-    // AI operations
-} catch (Exception e) {
-    log.error("Error in AI processing: {}", e.getMessage());
-    throw new AiProcessingException(
-        "Failed to process query", e);
-}
-```
-
-## Advanced AI Agent Patterns
-
-Spring AI supports sophisticated AI agent patterns like the evaluator-optimizer pattern, which uses multiple AI roles to improve content quality through iterative feedback loops.
-
-```mermaid
-graph TD
-    A[Writer Agent] -->|Generates Content| B[Content Draft]
-    B -->|Evaluates| C[Editor Agent]
-    C -->|Feedback| D{Quality Check}
-    D -->|Needs Improvement| A
-    D -->|Approved| E[Final Content]
-```
-
-### Evaluator-Optimizer Implementation
-
-The pattern uses two AI roles:
-1. Writer: Generates and refines content
-2. Editor: Evaluates quality and provides feedback
-
-Example implementation:
-```java
-@Service
-public class BlogWriterService {
-    private final ChatClient chatClient;
-    private static final int MAX_ITERATIONS = 3;
-    
-    public String generateBlogPost(String topic) {
-        // Writer: Generate initial draft
-        String initialPrompt = String.format(
-            "Write a blog post about \"%s\"", topic);
-        String draft = chatClient.call(new Prompt(initialPrompt))
-            .getResult().getOutput().getContent();
-            
-        // Enter evaluator-optimizer loop
-        int iteration = 1;
-        boolean approved = false;
-        
-        while (!approved && iteration <= MAX_ITERATIONS) {
-            // Editor: Evaluate the draft
-            String evalPrompt = String.format(
-                "Evaluate this blog post and respond with PASS " +
-                "or NEEDS_IMPROVEMENT with feedback:\n%s", draft);
-            String evaluation = chatClient.call(new Prompt(evalPrompt))
-                .getResult().getOutput().getContent();
-                
-            if (evaluation.contains("PASS")) {
-                approved = true;
-            } else {
-                // Writer: Refine based on feedback
-                String refinePrompt = String.format(
-                    "Improve this post using feedback:\n%s\n\n%s",
-                    evaluation, draft);
-                draft = chatClient.call(new Prompt(refinePrompt))
-                    .getResult().getOutput().getContent();
-            }
-            iteration++;
-        }
-        return draft;
-    }
-}
-```
 
 ### Shell Command Interface
 
@@ -235,36 +398,10 @@ public class BlogWriterCommand {
 }
 ```
 
-### Configuration
 
-Configure Azure OpenAI settings in `application.properties`:
-```properties
-spring.ai.azure.openai.api-key=${AZURE_OPENAI_API_KEY}
-spring.ai.azure.openai.endpoint=${AZURE_OPENAI_ENDPOINT}
-spring.ai.azure.openai.chat.model=gpt-35-turbo
-```
-```
+## Unit Summary
 
-## Best Practices
-
-1. **Prompt Engineering**
-   - Use clear system messages
-   - Include relevant context
-   - Structure prompts consistently
-
-2. **Vector Operations**
-   - Cache embeddings when possible
-   - Use appropriate vector dimensions
-   - Implement similarity thresholds
-
-3. **Performance Optimization**
-   - Configure connection pooling
-   - Implement caching strategies
-   - Monitor API usage
-
-## Next Steps
-
-With our Spring AI implementation complete, we can:
+With our Spring AI implementation complete, we can next:
 1. Deploy to Azure Container Apps
 2. Set up monitoring and logging
 3. Configure auto-scaling

@@ -15,16 +15,15 @@ The following values are used in subsequent commands to create the database and 
 ```bash
 ID=$RANDOM
 LOCATION="eastus2"
-RG="spring-ai-postgresql-rg"
-SERVER="spring-ai-postgresql-server-$ID"
+RESOURCE_GROUP="spring-ai-postgresql-rg"
+DB_SERVER_NAME="spring-ai-postgresql-server-$ID"
 ```
 
 You can limit access by specifying to the PostgreSQL server external IP appropriate IP address values for your environment. Use the public IP address of the computer you're using to restrict access to the server to only your IP address. Intialize the `start` and `end` IP values as follows:
 
 ```bash
-STARTIP=$(curl -s ipinfo.io/ip)
-ENDIP=$STARTIP
-echo "Start IP: $STARTIP and End IP: $ENDIP"
+$PUBLIC_IP=$(curl -s ipinfo.io/ip)
+echo "Start IP: $$PUBLIC_IP"
 ```
 
 ![Note]
@@ -36,24 +35,24 @@ echo "Start IP: $STARTIP and End IP: $ENDIP"
 
 Create a resource group with the following command. An Azure resource group is a logical container into which Azure resources are deployed and managed.
 
-   ```bash
-   az group create --name $RG --location $LOCATION
+   ```azurecli
+   az group create --name $RESOURCE_GROUP --location $LOCATION
    ```
 
 ### Create Azure Database for PostgreSQL Server
 
 Use the following command to create a database instance for development purposes. The **burstable** tier is a cost-effective tier for workloads that do not require consistent performance.
 
-   ```bash
+   ```azurecli
    az postgres flexible-server create \
-     --name $SERVER \
-     --resource-group $RG \
+     --name $DB_SERVER_NAME \
+     --resource-group $RESOURCE_GROUP \
      --location $LOCATION \
      --tier Burstable \
      --sku-name standard_b1ms \
      --active-directory-auth enabled \
      --password-auth disabled \
-     --public-access $STARTIP \
+     --public-access $$PUBLIC_IP \
      --version 16
    ```
 
@@ -77,11 +76,11 @@ This command will take a few minutes to complete. Once completed, a similar outp
 
 Note that if you are having difficulty connecting from your IP, you use the following command to create a firewall rule to allow access to the new IP range:
 
-   ```bash
+   ```azurecli
    az postgres flexible-server firewall-rule create \
      --rule-name allowiprange \
-     --resource-group $RG \
-     --name $SERVER \
+     --resource-group $RESOURCE_GROUP \
+     --name $DB_SERVER_NAME \
      --start-ip-address 0.0.0.0 \
      --end-ip-address 255.255.255.255
    ```
@@ -98,8 +97,8 @@ USER_OBJECT_ID=$(az ad signed-in-user show --query id -o tsv | tr -d '\r')
 
 Run the following command to grant admin access to your Entra ID:
 
-```bash
-az postgres flexible-server ad-admin create --server-name $SERVER -g $RG \
+```azurecli
+az postgres flexible-server ad-admin create --server-name $DB_SERVER_NAME -g $RESOURCE_GROUP \
    --object-id $USER_OBJECT_ID --display-name AzureAdmin
 ```
 
@@ -107,9 +106,9 @@ az postgres flexible-server ad-admin create --server-name $SERVER -g $RG \
 
 Before we can enable extensions required by pgvector, we need to white list them using this `az` command:
 
-```bash
-az postgres flexible-server parameter set --resource-group $RG \
-   --server-name $SERVER --name azure.extensions --value vector,hstore,uuid-ossp
+```azurecli
+az postgres flexible-server parameter set --resource-group $RESOURCE_GROUP \
+   --server-name $DB_SERVER_NAME --name azure.extensions --value vector,hstore,uuid-ossp
 ```
 
 ## Validate connectivity to your database
@@ -117,7 +116,7 @@ az postgres flexible-server parameter set --resource-group $RG \
 Use this command to get the fully qualified host name for your database server:
 
 ```bash
-DB_HOST=$(az postgres flexible-server show --resource-group $RG --name $SERVER \
+DB_HOST=$(az postgres flexible-server show --resource-group $RESOURCE_GROUP --name $DB_SERVER_NAME \
  --query fullyQualifiedDomainName --output tsv)
 ```
 
