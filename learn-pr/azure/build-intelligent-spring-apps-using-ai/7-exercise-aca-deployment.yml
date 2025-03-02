@@ -6,8 +6,8 @@ metadata:
   description: >-
     Learn how to deploy your Spring AI application to Azure Container Apps
   ms.date: 03/02/2025
-  author: yortch
-  ms.author: yortch
+  author: jbalderas
+  ms.author: jbalderas
   ms.topic: unit
 durationInMinutes: 5
 content: |

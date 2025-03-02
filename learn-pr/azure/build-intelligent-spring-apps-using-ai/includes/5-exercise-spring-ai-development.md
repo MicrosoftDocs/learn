@@ -1,6 +1,4 @@
-# Implementing Spring AI with Azure OpenAI
-
-Let's build our RAG (Retrieval Augmented Generation) application using Spring AI and Azure OpenAI.
+In this unit we will build a RAG (Retrieval Augmented Generation) application using Spring AI, Azure OpenAI and PGVectorStore.
 
 ## Core Components Overview
 
@@ -12,9 +10,40 @@ graph TD
     E -->|Provides Context| A
 ```
 
+## Setting Up Your Development Environment
+
+Before we start building our AI-powered application, let's set up our development environment and required Azure resources.
+
+## Local Development Setup
+
+1. Confirm **Java Development Kit (JDK) 17** (or greater) is installed:
+
+   ```bash
+   java -version  # Verify Java installation
+   ```
+
+2. Confirm **Maven** is installed:
+
+   ```bash
+   mvn -version  # Verify Maven installation
+   ```
+
+3. Login to **Azure** using `az`:
+
+   ```bash
+   az login  # Log in to Azure
+   ```
+
+## Deploy Azure OpenAI Models
+
+1. **Deploy Azure OpenAI Models**
+   - Deploy a chat model (e.g., gpt-35-turbo)
+   - Deploy an embedding model (e.g., text-embedding-ada-002)
+
 ## Spring AI Configuration
 
 1. **Configure Azure OpenAI in application.properties**:
+
 ```properties
 spring.ai.azure.openai.api-key=${AZURE_OPENAI_API_KEY}
 spring.ai.azure.openai.endpoint=${AZURE_OPENAI_ENDPOINT}

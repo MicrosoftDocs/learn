@@ -6,8 +6,8 @@ metadata:
   description: >-
     Learn how to implement a RAG application using Spring AI with Azure OpenAI and PGVectorStore Spring Boot Starters.
   ms.date: 02/24/2025
-  author: yortch
-  ms.author: yortch
+  author: jbalderas
+  ms.author: jbalderas
   ms.topic: unit
 durationInMinutes: 15
 content: |

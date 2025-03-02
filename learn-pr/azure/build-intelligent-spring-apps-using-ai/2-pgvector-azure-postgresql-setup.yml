@@ -6,8 +6,8 @@ metadata:
   description: >-
     Using PGVector extension in Azure PostgreSQL to leverage Vector Search Similarity abstraction in Spring AI
   ms.date: 02/24/2025
-  author: yortch
-  ms.author: yortch
+  author: jbalderas
+  ms.author: jbalderas
   ms.topic: unit
 durationInMinutes: 5
 content: |
