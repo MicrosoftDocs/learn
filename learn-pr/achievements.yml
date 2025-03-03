@@ -5260,3 +5260,13 @@ achievements:
   title: Prepare to develop AI solutions on Azure
   summary: As an aspiring Azure AI Engineer, you should understand core concepts and principles of AI development, and the capabilities of Azure services used in AI solutions.
   iconUrl: /training/achievements/azure-develop-ai-solutions.svg
+- uid: learn.language.rust-set-up-environment.badge
+  type: badge
+  title: Set up the Rust development environment
+  summary: Learn how to set up the Rust development environment, write a program, and use the Cargo build system.
+  iconUrl: /training/achievements/rust-set-up-environment.svg 
+- uid: learn.language.rust-modules-packages-crates.badge
+  type: badge
+  title: Explore modules, packages, and third-party crates
+  summary: Learn about how to effectively use modules and how to integrate with packages and third-party crates.
+  iconUrl: /training/achievements/rust-modules-packages-crates.svg

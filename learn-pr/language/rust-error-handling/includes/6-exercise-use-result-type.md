@@ -25,7 +25,7 @@ To work on the sample code for this exercise, you have two options:
 
 ### Edit in local development environment
 
-To run this code on your local computer, write the code in a *src/main.rs* file. The file must be at the root of a Cargo project. For questions about how to set up a new Cargo project, review the [first module in this learning path][Rust-cargo].
+To run this code on your local computer, write the code in a *src/main.rs* file. The file must be at the root of a Cargo project. 
 
 ### Work in the Rust Playground
 
@@ -151,4 +151,4 @@ You can compare your code with the prepared solution in this [Rust Playground][R
 
 [RustPlay-answer]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=c76ec6ab0bca6572dda78ded96d90faa?azure-portal=true
 [RustPlay-exercise]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=218fec0300bf94b1aeb8178d9db62050?azure-portal=true
-[Rust-cargo]: /training/modules/rust-set-up-environment/5-hello-world?azure-portal=true
+
