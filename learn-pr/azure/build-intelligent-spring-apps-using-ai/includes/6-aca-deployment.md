@@ -1,117 +1,63 @@
-Let's deploy our Spring AI application to Azure Container Apps for scalable, serverless container hosting.
+In this module, you will learn how to deploy our Spring Retrieval Augmented Generation (RAG) application to Azure Container Apps. This module covers the necessary concepts and steps to containerize your application, set up Azure Container Apps, and ensure secure and scalable deployment.
 
-## Containerization
+## Azure Container Apps Concepts
 
-1. **Create Dockerfile**:
-```dockerfile
-FROM eclipse-temurin:17-jre
-WORKDIR /app
-COPY target/*.jar app.jar
-ENTRYPOINT ["java", "-jar", "app.jar"]
-```
+Azure Container Apps is a serverless platform that allows you to maintain less infrastructure and save costs while running containerized applications.
 
-2. **Build Application**:
-```bash
-mvn clean package
-```
+### Azure Container Apps environments
 
-## Azure Container Apps Setup
+A Container Apps environment is a secure boundary around one or more container apps and jobs. The Container Apps runtime manages each environment by handling OS upgrades, scale operations, failover procedures, and resource balancing. Before we can deploy an Azure Container App, we need to create an Azure Container App environment.
 
-1. **Create Container Apps Environment**:
-```bash
-az containerapp env create \
-  --name spring-ai-env \
-  --resource-group spring-ai-demo \
-  --location eastus
-```
+There are two types of Container App environments:
 
-2. **Deploy Application**:
-```bash
-az containerapp up \
-  --name spring-ai-app \
-  --resource-group spring-ai-demo \
-  --environment spring-ai-env \
-  --source . \
-  --target-port 8080 \
-  --ingress external
-```
+1. **Workload profile.** Run serverless apps with support for scale-to-zero and pay only for resources your apps use with the consumption profile. You can also run apps with customized hardware and increased cost predictability using dedicated workload profiles.
+1. **Consumption only.** Run serverless apps with support for scale-to-zero and pay only for resources your apps use.
 
-## Environment Configuration
+### Deployment Types
 
-Set environment variables:
-```bash
-az containerapp secret set \
-  --name spring-ai-app \
-  --resource-group spring-ai-demo \
-  --secrets \
-    openai-key=$AZURE_OPENAI_API_KEY \
-    db-password="YourSecurePassword123!"
+There are three primary deployment types for Azure Container Apps:
 
+1. **Deploy from Existing Image.** You can deploy a container app that uses an existing image in a public or private container registry.
+1. **Deploy from Source Code.** Deploy your application directly from your local source code repository. Using the `az container up`, the `up` command builds the container image, pushes it to a registry, and deploys the container app. It creates the registry in Azure Container Registry if you don't provide one. This command can build the image with or without a Dockerfile. If building without a Dockerfile the following languages are supported:
+
+    * .NET
+    * Node.js
+    * PHP
+    * Python
+
+1. **Deploy from a GitHub Repository.** When you use the `az containerapp up` command to deploy from a GitHub repository, it generates a GitHub Actions workflow that builds the container image, pushes it to a registry, and deploys the container app. A Dockerfile is required to build the image.
+
+### Ingress options
+
+Azure Container Apps support multiple ingress options to control how your application is accessed:
+
+1. **External Ingress.** This option exposes your container app to the internet, allowing external clients to access it. You can configure custom domains and SSL certificates for secure access.
+2. **Internal Ingress.** This option restricts access to within the virtual network, making your container app accessible only to other resources within the same network. This is useful for internal services that do not need to be exposed to the internet.
+3. **No Ingress.** If you do not need any external or internal access, you can disable ingress. This is useful for background jobs or services that do not require direct access.
+
+### Scaling
+
+Azure Container Apps provide flexible scaling options to ensure your application can handle varying loads efficiently. Here are the primary scaling options available:
+
+1. **Manual Scaling.** You can manually set the number of replicas for your container app. This option gives you full control over the scaling process, allowing you to adjust the number of instances based on your specific needs.
+1. **Automatic Scaling.** Azure Container Apps support automatic scaling based on various metrics. You can configure auto-scaling rules to automatically adjust the number of replicas based on CPU usage, memory usage, or custom metrics. This ensures your application can handle increased traffic without manual intervention.
+1. **Scale to Zero.** For serverless applications, you can configure your container app to scale down to zero instances when there is no traffic. This helps save costs by only using resources when needed.
+
+To configure scaling, you can use the Azure CLI, Azure Portal, or ARM templates. Here is an example of how to set up auto-scaling using the Azure CLI:
+
+```sh
 az containerapp update \
   --name spring-ai-app \
   --resource-group spring-ai-demo \
-  --set-env-vars \
-    AZURE_OPENAI_API_KEY=secretref:openai-key \
-    SPRING_DATASOURCE_PASSWORD=secretref:db-password
+  --min-replicas 1 \
+  --max-replicas 10 \
+  --scale-rule-name http-rule \
+  --scale-rule-type http \
+  --scale-rule-http-concurrency 50
 ```
 
-## Deployment Architecture
+In this example, the container app is configured to scale between 1 and 10 replicas based on HTTP concurrency. HTTP concurrency is set to 50, which means each replica will handle up to 50 concurrent HTTP requests before additional instances are created.
 
-```mermaid
-graph LR
-    A[Container Apps] -->|Requests| B[Spring AI App]
-    B -->|AI Queries| C[Azure OpenAI]
-    B -->|Data Storage| D[PostgreSQL]
-```
+## Unit Summary
 
-## Verify Deployment
-
-1. **Get Application URL**:
-```bash
-az containerapp show \
-  --name spring-ai-app \
-  --resource-group spring-ai-demo \
-  --query properties.configuration.ingress.fqdn
-```
-
-2. **Test Endpoint**:
-```bash
-curl -X POST https://spring-ai-app.xxx.azurecontainerapps.io/ask \
-  -H "Content-Type: application/json" \
-  -d '{"query":"What is Spring AI?"}'
-```
-
-## Cleanup
-
-Remove resources when done:
-```bash
-az group delete \
-  --name spring-ai-demo \
-  --yes --no-wait
-```
-
-## Best Practices
-
-1. **Security**
-   - Use managed identities
-   - Store secrets in Key Vault
-   - Enable HTTPS only
-
-2. **Monitoring**
-   - Set up Application Insights
-   - Configure logging
-   - Monitor resource usage
-
-3. **Scaling**
-   - Configure auto-scaling rules
-   - Set resource limits
-   - Monitor performance
-
-🔐 Remember: Always use secure secrets management in production!
-
-## Next Steps
-
-Now that your application is deployed, let's:
-1. Set up monitoring and observability
-2. Configure scaling rules
-3. Implement security best practices
+In this unit, we learned about the key concepts of Azure Container Apps, including environments, deployment types, ingress options, and scaling mechanisms. In the next exercise we will put these concepts into practice by deploying our Spring RAG application using Azure Container Apps.

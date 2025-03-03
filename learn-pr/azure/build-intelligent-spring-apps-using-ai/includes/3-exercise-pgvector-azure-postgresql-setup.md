@@ -151,7 +151,7 @@ psql (14.13, server 16.4)
 We now have a vector-enabled PostgreSQL database ready which will allow the following:
 
 1. Implement vector storage in our Spring application
-2. Test similarity search functionality
+2. Leverage similarity search functionality
 3. Build our RAG implementation
 
-💡Remember: Vector similarity search is crucial for finding relevant context in our RAG application!
+Remember: Vector similarity search is crucial for finding relevant context in our RAG application!

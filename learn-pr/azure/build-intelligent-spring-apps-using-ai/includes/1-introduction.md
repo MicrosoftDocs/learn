@@ -10,14 +10,6 @@ Spring AI provides a set of abstractions and tools that make it easy to work wit
 - **Vector storage integration**: Built-in support for vector databases, such as PGVector.
 - **Advisors API**: Encapsulates Generative AI patterns, e.g. for implementing Retrieval Augmentation (RAG).
 
-```mermaid
-graph LR
-    A[Spring Application] --> B[Spring AI]
-    B --> C[Azure OpenAI]
-    B --> D[Vector Storage]
-    D --> E[PostgreSQL]
-```
-
 ## Sample Use Cases
 
 ### RAG Implementation
@@ -52,6 +44,6 @@ Before starting this module, you should have:
 - Experience with Git and Maven/Gradle
 - An active Azure subscription
 - Java 17 or later installed
-- psql client
+- `psql` client
 
-Let's get started by setting up our development environment! 🚀
+Let's get started by setting up our development environment!
