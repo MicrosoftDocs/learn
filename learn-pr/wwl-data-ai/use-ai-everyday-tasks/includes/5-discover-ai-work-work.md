@@ -2,12 +2,21 @@ Now let's find inspiration for more complex prompts, and discover practical appl
 
 ## Explore ways to use AI at work
 
-[Microsoft 365 Copilot](https://www.microsoft.com/microsoft-365/copilot/copilot-for-work?azure-portal=true) connects with your work data across the Microsoft 365 suite, including popular applications like Teams, Word, Outlook, PowerPoint, and Excel, to elevate productivity and creativity at work. Some common examples include:
+Microsoft 365 Copilot Chat is a shared chat experience within [Microsoft 365 Copilot](https://www.microsoft.com/microsoft-365/copilot/copilot-for-work?azure-portal=true) that connects with your work data across the Microsoft 365 suite, including popular applications like Teams, Word, Outlook, PowerPoint, and Excel. Prompts are grounded in the large language model (LLM) and contextualized with users' business data and apps, surfacing the necessary information and insights from organizational data.
+
+Some common examples include:
 
 - **Outlook**: Summarize the content of a large email thread.
 - **PowerPoint**: Turn a text-heavy slide into concise bullet points for greater clarity.
 - **Word**: Rewrite a paragraph in a different tone or style.
 - **Teams**: Summarize meetings and chat threads.
+
+> [!NOTE]
+> **AI Agents**, also known as virtual assistants, are smart software tools that help you with different tasks based on what you need. Imagine having a reliable assistant who can handle things for you automatically. They can handle routine tasks like scheduling meetings, managing emails, and even giving you real-time data analysis and personalized recommendations.
+>
+> In Microsoft 365, you can now build your own agents to fit your specific needs, making your daily tasks easier and more efficient.
+>
+> To learn more, review [Introducing Copilot agents](https://support.microsoft.com/en-us/topic/introducing-copilot-agents-943e563d-602d-40fa-bdd1-dbc83f582466#:~:text=Copilot%20agents%20are%20specialized%20AI,expanding%20their%20reach%20and%20functionality.?azure-portal=true) and [Copilots & Agents](https://www.youtube.com/watch?v=oddeD2FTCyE).
 
 The real power of Microsoft 365 Copilot comes from the flow of using it across apps. There are many use cases for Copilot in Microsoft 365, including in communications, HR, legal, IT, sales, project management, market research, finance, and more. The [Copilot scenario library](https://adoption.microsoft.com/copilot-scenario-library?azure-portal=true) can help you get started.
 
@@ -27,10 +36,7 @@ In the following short video, learn how one communications manager uses Microsof
 > [!VIDEO https://www.youtube.com/embed/gOq46gEO8h8?si=tAb9kb1eWLsY3tLt]
 
 > [!NOTE]
-> **AI Agents**, also known as virtual assistants, are smart software tools that help you with different tasks based on what you need. Imagine having a reliable assistant who can handle things for you automatically. They can handle routine tasks like scheduling meetings, managing emails, and even giving you real-time data analysis and personalized recommendations.
->
-> In Microsoft 365, you can now build your own agents to fit your specific needs, making your daily tasks easier and more efficient.
->
-> To learn more, review [Introducing Copilot agents](https://support.microsoft.com/en-us/topic/introducing-copilot-agents-943e563d-602d-40fa-bdd1-dbc83f582466#:~:text=Copilot%20agents%20are%20specialized%20AI,expanding%20their%20reach%20and%20functionality.?azure-portal=true) and [Copilots & Agents](https://www.youtube.com/watch?v=oddeD2FTCyE).
+> **Build your AI habit**:
+> Now that you know what it takes to craft clear, specific, and goal-oriented prompts, try to identify tasks in your own daily routine where AI might help you save time or be more creative. Commit to a daily experiment, such as one prompt to try every day. Remember to iterate as much as you want to perfect your prompt.
 
 Now that you learned about generative AI, how to interact with it, and some ways to take your prompts further, let's practice prompting in Copilot.

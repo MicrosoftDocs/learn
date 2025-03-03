@@ -9,7 +9,7 @@ People usually interact with generative AI built into a chat application. One ex
 > [!NOTE]
 > **Behind the scenes**
 >
-> Generative AI uses **large language models (LLMs)**, which are AI systems trained on massive amounts of text to understand and generate human-like language. They are like a very intelligent autocomplete. LLMs are a type of AI model that uses **natural language processing (NLP)** techniques to work. 
+> Generative AI uses **large language models (LLMs)**, which are AI systems trained on massive amounts of text, to understand and generate human-like language. They are like a very intelligent autocomplete. LLMs are a type of AI model that uses **natural language processing (NLP)** techniques to work.
 >
 > NLP is a broader technology that helps computers understand and use human language to make things like chatbots, voice assistants, and translations work smoothly. LLMs are one powerful example of NLP in action.
 
@@ -23,7 +23,7 @@ Copilot is a smart assistant that can simplify your daily routines by helping yo
 
 Struggling to start a project or come up with new ideas? Whether you're drafting an email, writing a blog post, or brainstorming for a podcast, AI can give you a starting point. It offers suggestions, generates text, and can even create entire pieces of content. For example, Copilot can help you:
 
-- **Compose emails**. Quickly draft professional emails by inputting the main message and letting AI create a draft.
+- **Compose emails**. Quickly draft professional or personal emails by inputting the main message and letting AI create a draft.
 - **Generate blog posts**. Create engaging blog posts by providing a topic and key points, and AI generates a well-structured article.
 - **Brainstorm ideas**. Get creative ideas for your next project, whether it's a slogan, a story, or a social media post.
 
