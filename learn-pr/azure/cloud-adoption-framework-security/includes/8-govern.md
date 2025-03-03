@@ -1,6 +1,6 @@
 This unit describes areas of security optimization to consider as you move through the [Govern methodology](/azure/cloud-adoption-framework/secure/govern/) phase of your journey.
 
-:::image type="content" source="../media/caf-secure-govern.png" alt-text="Diagram that shows the Govern phase of the Secure methodology." lightbox="../media/caf-secure-govern.png" border="false":::
+:::image type="content" source="../media/caf-secure-govern.svg" alt-text="Diagram that shows the Govern phase of the Secure methodology." lightbox="../media/caf-secure-govern.svg" border="false":::
 
 Security governance aligns your business priorities with technical implementations like architecture, standards, and policies. Your governance teams oversee and monitor security to maintain and enhance your security posture.
 
