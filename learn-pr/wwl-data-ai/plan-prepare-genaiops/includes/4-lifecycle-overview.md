@@ -35,9 +35,9 @@ The GenAIOps lifecycle is complex, and anything but linear. It’s an iterative 
 
 :::image type="content" source="../media/lifecycle.png" alt-text="Diagram showing the language model lifecycle in loops.":::
 
-1. **Explore:** Where you *define* the business need, or use case, and *design* the architecture, including necessary prompts and models.
-2. **Build:** Where you *develop* the initial application and *evaluate* it iteratively to reach quality and safety targets.
-3. **Operationalize:** Where you *deploy* the application for real-world use, and *deliver* reliable and responsible service.
+- **Explore:** Where you *define* the business need, or use case, and *design* the architecture, including necessary prompts and models.
+- **Build:** Where you *develop* the initial application and *evaluate* it iteratively to reach quality and safety targets.
+- **Operationalize:** Where you *deploy* the application for real-world use, and *deliver* reliable and responsible service.
 
 Overarching all these phases is the **management loop**, which focuses on governance, security, and compliance. It's a framework that balances speed in deliverables with strict adherence to standards.
 

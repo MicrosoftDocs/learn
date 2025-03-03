@@ -8,8 +8,6 @@ Imagine the fictitious Contoso Outdoors, an enterprise retail website that sells
 
 For example, a customer can navigate to the website and search for a backpack, but find that there are many backpacks in various shapes and sizes. To understand better the type of backpack the customer still needs, they can ask for advice based on previous purchases.
 
-:::image type="content" source="../media/contoso-chat-website.png" alt-text="Screenshot of the website of Contoso Chat." lightbox="../media//contoso-chat-website.png":::
-
 To respond to the customer in real-time, Contoso Outdoors can integrate GenAI to generate an answer, which needs to be based on their own product and customer data.
 
 Let's explore the GenAIOps architecture for Contoso Outdoors.
@@ -20,19 +18,18 @@ The custom chat application is hosted in Azure Container Apps (ACA). ACA exposes
 
 Any messages in the chat window are requests. These requests are forwarded to the chat application. The application uses GenAI models and the Retrieval Augmented Generation (RAG) design pattern. It retrieves product and customer data before generating a response. The chat application interacts with Azure OpenAI models like GPT-4, Azure AI Search for product retrieval, and Cosmos DB for customer data. Finally, the system returns the generated response to the customer in the chat window.
 
+> [!Tip]
+> Learn more about this use case in the [Azure Samples repository for Contoso Chat](https://github.com/Azure-Samples/contoso-chat?tab=readme-ov-file&azure-portal=true).
+
 ## Generate product specific articles
 
 Now imagine you need to create high quality articles for your website. The articles for the Contoso Outdoors website must be well-researched and include product-specific information to engage customers effectively.
 
 To streamline this process, you can develop a creative writer app that allows any writer to generate a new article by entering key details, such as the products they want to feature.
 
-:::image type="content" source="../media/creative-writer-sample.png" alt-text="Screenshot of the start screen of Contoso Creative Writer." lightbox="../media/creative-writer-sample.png":::
-
 Once the information is submitted, the app processes it through an AI-driven agent workflow, which automates the research, writing, and refinement of the article. A writer can then review the generated article before finalizing and publishing the article to the website.
 
-:::image type="content" source="../media/creative-writer-sample-2.png" alt-text="Screenshot of the second screen of Contoso Creative Writer." lightbox="../media/creative-writer-sample-2.png":::
-
-In the debug window, users could explore the various agents that were included in the workflow to complete the task. To understand what is happening behind the scenes, let's explore the architecture for the Contoso Creative Writer app.
+To understand what is happening behind the scenes, let's explore the architecture for the Contoso Creative Writer app.
 
 :::image type="content" source="../media/creative-writer-architecture.png" alt-text="Diagram of the Contoso Creative Writer application architecture." lightbox="../media/creative-writer-architecture.png":::
 
@@ -43,3 +40,6 @@ When an authenticated user inputs the required information, the Creative Writer 
 - An **editor** agent that refines the article before presenting it to the user.
 
 Contoso Creative Writer simplifies and accelerates the content creation process by integrating these AI-powered agents, making it easier than ever to generate high-quality, product-focused articles.
+
+> [!Tip]
+> Learn more about this use case in the [Azure Samples repository for Contoso Creative Writer](https://github.com/Azure-Samples/contoso-creative-writer?tab=readme-ov-file&azure-portal=true).
