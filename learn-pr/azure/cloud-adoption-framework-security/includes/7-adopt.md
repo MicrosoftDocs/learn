@@ -1,6 +1,6 @@
 This unit describes areas of security optimization to consider as you move through the [Adopt methodology](/azure/cloud-adoption-framework/secure/adopt/) phase of your journey.
 
-:::image type="content" source="../media/caf-secure-adopt.png" alt-text="Diagram that shows the Adopt phase of the Secure methodology." lightbox="../media/caf-secure-adopt.png" border="false":::
+:::image type="content" source="../media/caf-secure-adopt.svg" alt-text="Diagram that shows the Adopt phase of the Secure methodology." lightbox="../media/caf-secure-adopt.svg" border="false":::
 
 When you implement your cloud estate and migrate workloads, establish robust security mechanisms from the start to avoid gaps later. Prioritize security during the Adopt phase to ensure consistent workloads. To prepare IT teams for cloud operations, establish well-designed policies and procedures.
 

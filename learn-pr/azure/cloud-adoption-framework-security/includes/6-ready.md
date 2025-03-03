@@ -1,6 +1,6 @@
 This unit describes areas of security optimization to consider as you move through the [Ready methodology](/azure/cloud-adoption-framework/secure/ready/) phase of your journey.
 
-:::image type="content" source="../media/caf-secure-ready.png" alt-text="Diagram that shows the Ready phase of the Secure methodology." lightbox="../media/caf-secure-ready.png" border="false":::
+:::image type="content" source="../media/caf-secure-ready.svg" alt-text="Diagram that shows the Ready phase of the Secure methodology." lightbox="../media/caf-secure-ready.svg" border="false":::
 
 The Ready phase of cloud adoption focuses on building your estate's foundation. A landing zone approach provides a secure, scalable design for large organizations. Smaller organizations might not need landing zones but can still benefit from understanding this approach to create a secure and scalable foundation.
 

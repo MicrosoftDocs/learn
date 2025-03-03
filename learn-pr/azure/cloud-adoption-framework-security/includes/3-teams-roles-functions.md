@@ -1,6 +1,6 @@
 This unit describes the [security roles required for cloud security](/azure/cloud-adoption-framework/secure/teams-roles). It also describes the functions that they perform related to cloud infrastructure and platforms. These roles help integrate security into every stage of the cloud lifecycle, from development to continuous improvement. Depending on your organization's size, individuals that perform multiple functions or specialized teams might fulfill these roles.
 
-:::image type="content" source="../media/caf-secure-teams-roles.png" alt-text="Diagram that shows the teams and roles phase of the Secure methodology." lightbox="../media/caf-secure-teams-roles.png" border="false":::
+:::image type="content" source="../media/caf-secure-teams-roles.svg" alt-text="Diagram that shows the teams and roles phase of the Secure methodology." lightbox="../media/caf-secure-teams-roles.svg" border="false":::
 
 ## Transformation of security roles
 
