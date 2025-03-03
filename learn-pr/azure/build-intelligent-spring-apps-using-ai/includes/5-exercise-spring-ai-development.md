@@ -176,6 +176,7 @@ Expect to see a successful build output:
 From the `spring-ai-app` directory run these commands to create new directories for new source files to be added:
 
 ```bash
+mkdir -p src/mainjava/com/example/springaiapp/config
 mkdir -p src/mainjava/com/example/springaiapp/controller
 mkdir -p src/main/java/com/example/springaiapp/service
 mkdir -p src/main/java/com/example/springaiapp/shell
@@ -188,6 +189,7 @@ src/
 ├── main/
 │   ├── java/
 │   │   └── com/example/springaiapp/
+│   │       ├── config/
 │   │       ├── controller/
 │   │       ├── service/
 │   │       ├── shell/
@@ -247,7 +249,11 @@ spring.ai.azure.openai.chat.model=gpt-4o
 spring.ai.azure.openai.embedding.model=text-embedding-ada-002
 
 # Database Configuration
-spring.datasource.url=jdbc:postgresql://<PostgreSql URL>
+spring.datasource.url=jdbc:postgresql://<PostgreSql URL>/postgres
+spring.datasource.username=AzureAdmin
+spring.ai.vectorstore.pgvector.initialize-schema=true
+spring.shell.interactive.enabled=true
+spring.main.web-application-type=none
 ```
 
 Once this is updated, you can now run unit tests to confirm that they are passing successfully:
@@ -307,7 +313,6 @@ public class RagService {
     public String processQuery(String query) {
         try {
             logger.debug("Processing query: {}", query);
-            
             // Step 1: Find similar previous Q&As
             List<Document> similarContexts = vectorStore.similaritySearch(
                 SearchRequest.builder().query(query)
@@ -320,7 +325,6 @@ public class RagService {
                 .map(ch -> String.format("Q: %s\nA: %s", 
                     ch.getMetadata().get("prompt"), ch.getText()))
                 .collect(Collectors.joining("\n\n"));
-            logger.debug("Built context with {} characters", context.length());
 
             String promptText = String.format("""
                 Use these previous Q&A pairs as context for answering the new question:
@@ -364,38 +368,100 @@ public class RagService {
 }
 ```
 
+Within the `config` directory, create a new file name `DataSourceConfig.java` with the following content:
 
-## Testing the Implementation
-
-1. **Create a Test Query**:
 ```java
-@SpringBootTest
-class RagServiceTest {
-    @Autowired
-    private RagService ragService;
-    
-    @Test
-    void testQueryProcessing() {
-        String response = ragService.processQuery(
-            "What is Spring AI?");
-        assertNotNull(response);
+package com.example.springaiapp.config;
+
+import com.azure.identity.DefaultAzureCredentialBuilder;
+import com.azure.identity.DefaultAzureCredential;
+import org.springframework.beans.factory.annotation.Value;
+import com.azure.core.credential.TokenRequestContext;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
+
+import javax.sql.DataSource;
+
+@Configuration
+public class DataSourceConfig {
+
+    @Value("${spring.datasource.url}")
+    private String dbUrl;
+
+    @Value("${spring.datasource.username}")
+    private String dbUsername;
+
+    @Bean
+    public DataSource dataSource() {
+        DefaultAzureCredential credential = new DefaultAzureCredentialBuilder().build();
+        String accessToken = credential.getToken(new TokenRequestContext().addScopes("https://ossrdbms-aad.database.windows.net")).block().getToken();
+        DriverManagerDataSource dataSource = new DriverManagerDataSource();
+        dataSource.setDriverClassName("org.postgresql.Driver");
+        dataSource.setUrl(dbUrl);
+        dataSource.setUsername(dbUsername);
+        dataSource.setPassword(accessToken);
+        return dataSource;
     }
 }
 ```
 
+Within the `shell` directory, create a new file name `RagDemoCommands.java` with the following content:
 
-### Shell Command Interface
-
-Access the pattern through Spring Shell:
 ```java
+package com.example.springaiapp.shell;
+
+import com.example.springaiapp.service.RagService;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.shell.standard.ShellComponent;
+import org.springframework.shell.standard.ShellMethod;
+import org.springframework.shell.standard.ShellOption;
+
+/**
+ * Console commands for the RAG (Retrieval Augmented Generation) demo.
+ */
 @ShellComponent
-public class BlogWriterCommand {
-    @ShellMethod(key = "write-blog",
-        value = "Generate a blog post using AI writer-editor feedback loop")
-    public String writeBlog(String topic) {
-        return blogWriterService.generateBlogPost(topic);
+public class RagDemoCommands {
+    @Autowired
+    private RagService ragService;
+    /**
+     * Main command to ask questions using RAG.
+     * Example: ask "What is Spring AI?"
+     */
+    @ShellMethod(key = "ask", value = "Ask a question using RAG")
+    public String ask(@ShellOption(help = "Your question") String question) {
+        return ragService.processQuery(question);
     }
 }
+```
+
+With these changes we are now ready to test the implementation by running:
+
+```bash
+mvn spring-boot:run
+```
+
+When prompted ask a question using the ask command about `PGVector`:
+
+```bash
+shell:>ask "What is PGVector?"
+PGVector is an open-source PostgreSQL extension that enables efficient storage, indexing, and querying of vector embeddings within a PostgreSQL database. 
+```
+
+Next, use the ask command to ask this question: `ask "How does QuestionAnswerAdvisor work in Apring AI?"`:
+
+```bash
+shell:>ask "How does QuestionAnswerAdvisor work in Spring AI?"
+"QuestionAnswerAdvisor" does not appear to be an officially recognized or widely known term or feature within the Spring Framework or AI ecosystem (as of my knowledge cutoff in 2023).
+```
+
+Notice how it does not know about the `QuestionAnswerAdvisor` in Spring AI yet.
+
+We will now provide additional knowledge by providing the following documents to be stored using our vector store:
+
+```java
+
 ```
 
 
