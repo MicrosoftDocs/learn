@@ -1,6 +1,8 @@
-
+Generative AI applications are rapidly evolving across multiple industries. Understanding how these applications can be deployed across different domains can help you to better design solutions that are both effective and scalable. Let's explore some use cases across various domains, highlighting the specific requirements and challenges that shape the architecture of GenAI solutions.
 
 ## Explore a retail example
+
+In retail, GenAI applications can help you to create personalized experiences by providing support to customers whenever they need it.
 
 Imagine the fictitious Contoso Outdoors, an enterprise retail website that sells hiking and camping gear to adventure-seekers. When you go on an adventure, it's essential that you bring the appropriate gear. Contoso Outdoors wants to help its customers by integrating a chat application with their website, allowing customers to ask any question they have, at any time of day.
 
