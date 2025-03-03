@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Implement Azure App Service plans
   description: "Implement Azure App Service plans"
-  ms.date: 02/25/2025
+  ms.date: 03/03/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
