@@ -5260,3 +5260,13 @@ achievements:
   title: Prepare to develop AI solutions on Azure
   summary: As an aspiring Azure AI Engineer, you should understand core concepts and principles of AI development, and the capabilities of Azure services used in AI solutions.
   iconUrl: /training/achievements/azure-develop-ai-solutions.svg
+- uid: learn.language.rust-generic-types-traits.badge
+  type: badge
+  title: Implement generic types and traits
+  summary: Understand what generic types and traits are and how to use them in Rust.
+  iconUrl: /training/achievements/rust-generic-types-traits.svg 
+- uid: learn.language.rust-error-handling.badge
+  type: badge
+  title: Handle errors in Rust
+  summary: UIn this module, you'll learn about ways to handle errors in Rust.
+  iconUrl: /training/achievements/rust-error-handling.svg 
