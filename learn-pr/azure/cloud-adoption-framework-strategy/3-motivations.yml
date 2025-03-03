@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.cloud-adoption-framework-strategy.motivations
 metadata:
-  title: Capture strategic motivation
-  description: Capture strategic motivation.
+  title: Determine Your Motivations
+  description: Learn how to determine your motivations.
   ms.date: 10/10/2023
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit
-title: Capture strategic motivation
+title: Determine your motivations
 durationInMinutes: 10
 content: |
   [!include[](includes/3-motivations.md)]
