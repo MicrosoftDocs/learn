@@ -34,11 +34,11 @@ Once the information is submitted, the app processes it through an AI-driven age
 
 In the debug window, users could explore the various agents that were included in the workflow to complete the task. To understand what is happening behind the scenes, let's explore the architecture for the Contoso Creative Writer app.
 
-:::image type="content" source="../media/creative-writer-architecture.png" alt-text="Diagram of the Contoso Chat application architecture." lightbox="../media/creative-writer-architecture.png":::
+:::image type="content" source="../media/creative-writer-architecture.png" alt-text="Diagram of the Contoso Creative Writer application architecture." lightbox="../media/creative-writer-architecture.png":::
 
 When an authenticated user inputs the required information, the Creative Writer app uses a combination of multiple agents to generate the article:
 
-- A **research** agent that uses the [Bing Grounding Tool](/azure/ai-services/agents/how-to/tools/bing-grounding?view=azure-python-preview&tabs=python&pivots=overview&azure-portal=true) in [Azure AI Agent Service](/azure/ai-services/agents/overview?view=azure-python-preview&azure-portal=true) to research the product, and uses [Azure AI Search](/products/ai-services/ai-search?azure-portal=true) to do a semantic similarity search for related products from a vector store.
+- A **research** agent that uses the [Bing Grounding Tool](/azure/ai-services/agents/how-to/tools/bing-grounding?azure-portal=true) in [Azure AI Agent Service](/azure/ai-services/agents/overview?azure-portal=true) to research the product, and uses [Azure AI Search](/products/ai-services/ai-search?azure-portal=true) to do a semantic similarity search for related products from a vector store.
 - A **writer** agent that combines the researched and retrieved product information into a helpful article.
 - An **editor** agent that refines the article before presenting it to the user.
 
