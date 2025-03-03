@@ -1,15 +1,5 @@
 In this unit we will build a RAG (Retrieval Augmented Generation) application using Spring AI, Azure OpenAI and PGVectorStore.
 
-## Core Components Overview
-
-```mermaid
-graph TD
-    A[ChatClient] -->|Generates Responses| B[Azure OpenAI]
-    C[EmbeddingClient] -->|Creates Embeddings| B
-    D[PostgreSQL] -->|Stores Vectors| E[Vector Search]
-    E -->|Provides Context| A
-```
-
 ## Setting Up Your Development Environment
 
 Before we start building our AI-powered application, let's set up our development environment and required Azure resources.
@@ -154,7 +144,7 @@ Switch directory to this path:
 cd spring-ai-app
 ```
 
-You can compile the application, but only skipping tests using this command:
+You can compile the application skipping tests using this command:
 
 ```bash
 mvn clean package -DskipTests
@@ -257,21 +247,23 @@ spring.shell.interactive.enabled=true
 spring.main.web-application-type=none
 ```
 
-Once this is updated, you can now run unit tests to confirm that they are passing successfully:
+Additionally, we need to add `azure-identity` as dependency. Open `pom.xml` and add the following lines:
 
-```bash
-mvn package
+```xml
+        <dependency>
+            <groupId>com.azure</groupId>
+            <artifactId>azure-identity</artifactId>
+            <version>1.15.3</version>
+        </dependency>
 ```
 
-Expect to see unit tests passing and build success:
+You can recompile the application to ensure the build is still successful:
 
 ```bash
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 45.23 s -- in com.example.springaiapp.SpringAiAppApplicationTests
-[INFO]
-[INFO] Results:
-[INFO]
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+mvn clean package -DskipTests
 ```
+
+Expect to see a `BUILD SUCCESS` output.
 
 ### Implementing RAG Service
 
@@ -280,28 +272,14 @@ Within the `service` directory, create a new file name `RagService.java` with th
 ```java
 package com.example.springaiapp.service;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.ai.chat.client.ChatClient;
-import org.springframework.ai.chat.model.ChatResponse;
+import org.springframework.ai.chat.client.advisor.QuestionAnswerAdvisor;
 import org.springframework.ai.vectorstore.VectorStore;
-import org.springframework.ai.chat.messages.SystemMessage;
-import org.springframework.ai.chat.messages.UserMessage;
-import org.springframework.ai.vectorstore.SearchRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.ai.document.Document;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 
-/**
- * RAG (Retrieval Augmented Generation) Service
- */
 @Service
 public class RagService {
-    private static final Logger logger = LoggerFactory.getLogger(RagService.class);
-    
     private final ChatClient chatClient;
 
     @Autowired
@@ -310,72 +288,28 @@ public class RagService {
     public RagService(ChatClient.Builder chatClientBuilder) {
         this.chatClient = chatClientBuilder.build();
     }
-    
+
     public String processQuery(String query) {
-        try {
-            logger.debug("Processing query: {}", query);
-            // Step 1: Find similar previous Q&As
-            List<Document> similarContexts = vectorStore.similaritySearch(
-                SearchRequest.builder().query(query)
-                    .similarityThreshold(0.8)
-                    .topK(3).build());
-            logger.debug("Found {} similar contexts", similarContexts.size());
-            
-            // Step 2: Build prompt with context from similar Q&As
-            String context = similarContexts.stream()
-                .map(ch -> String.format("Q: %s\nA: %s", 
-                    ch.getMetadata().get("prompt"), ch.getText()))
-                .collect(Collectors.joining("\n\n"));
-
-            String promptText = String.format("""
-                Use these previous Q&A pairs as context for answering the new question:
-                
-                Previous interactions:
-                %s
-                
-                New question: %s
-                
-                Please provide a clear and educational response.""",
-                context,
-                query
-            );
-
-            // Step 3: Generate AI response with system context
-            SystemMessage systemMessage = new SystemMessage(
-                "You are a helpful AI assistant that provides clear and educational responses."
-            );
-            UserMessage userMessage = new UserMessage(promptText);
-            
-            logger.debug("Sending prompt to Azure OpenAI");
-            ChatResponse response = chatClient.prompt().messages(List.of(systemMessage, userMessage)).call().chatResponse();
-            String answer = response.getResult().getOutput().getText();
-            logger.debug("Received response of {} characters", answer.length());
-            
-            // Step 4: Save interaction for future context
-            logger.debug("Saving interaction to vector store");
-            vectorStore.add(List.of(new Document(answer, Map.of("prompt", query))));
-            logger.debug("Successfully saved interaction");
-            
-            return answer;
-        } catch (Exception e) {
-            logger.error("Error processing query: {}", query, e);
-            String errorMessage = String.format(
-                "Error processing query: %s",
-                e.getMessage()
-            );
-            return errorMessage;
-        }
+        String answer = "";
+        answer = this.chatClient.prompt()
+            .advisors(new QuestionAnswerAdvisor(vectorStore))
+            .user(query)
+            .call()
+            .content();
+        return answer;
     }
 }
 ```
+
+In this implementation we use the Spring AI's `QuestionAnswerAdvisor` to augment the knowledge of our chat client with documents loaded in the vector store.
 
 Within the `config` directory, create a new file name `DataSourceConfig.java` with the following content:
 
 ```java
 package com.example.springaiapp.config;
 
-import com.azure.identity.DefaultAzureCredentialBuilder;
-import com.azure.identity.DefaultAzureCredential;
+import com.azure.identity.AzureCliCredential;
+import com.azure.identity.AzureCliCredentialBuilder;
 import org.springframework.beans.factory.annotation.Value;
 import com.azure.core.credential.TokenRequestContext;
 import org.springframework.context.annotation.Bean;
@@ -395,8 +329,11 @@ public class DataSourceConfig {
 
     @Bean
     public DataSource dataSource() {
-        DefaultAzureCredential credential = new DefaultAzureCredentialBuilder().build();
-        String accessToken = credential.getToken(new TokenRequestContext().addScopes("https://ossrdbms-aad.database.windows.net")).block().getToken();
+        ChainedTokenCredential credential = createChainedCredential();
+        String accessToken = credential.getToken(
+            new TokenRequestContext()
+                .addScopes("https://ossrdbms-aad.database.windows.net"))
+                .block().getToken();
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("org.postgresql.Driver");
         dataSource.setUrl(dbUrl);
@@ -406,6 +343,9 @@ public class DataSourceConfig {
     }
 }
 ```
+
+In the above implementation, we use `AzureCliCredentialBuilder` to get credentials from `az` cli to be able to authenticate to our PostgreSQL instance.
+This is suitable for development purposes. In a subsequent exercise we will update this implementation to use Managed Identities instead.
 
 Within the `shell` directory, create a new file name `RagDemoCommands.java` with the following content:
 
@@ -419,23 +359,19 @@ import org.springframework.shell.standard.ShellComponent;
 import org.springframework.shell.standard.ShellMethod;
 import org.springframework.shell.standard.ShellOption;
 
-/**
- * Console commands for the RAG (Retrieval Augmented Generation) demo.
- */
 @ShellComponent
 public class RagDemoCommands {
     @Autowired
     private RagService ragService;
-    /**
-     * Main command to ask questions using RAG.
-     * Example: ask "What is Spring AI?"
-     */
+
     @ShellMethod(key = "ask", value = "Ask a question using RAG")
     public String ask(@ShellOption(help = "Your question") String question) {
         return ragService.processQuery(question);
     }
 }
 ```
+
+This shell component will allows to test our RAG service using a command shell interface.
 
 With these changes we are now ready to test the implementation by running:
 
@@ -447,14 +383,16 @@ When prompted ask a question using the ask command about `PGVector`:
 
 ```bash
 shell:>ask "What is PGVector?"
-PGVector is an open-source PostgreSQL extension that enables efficient storage, indexing, and querying of vector embeddings within a PostgreSQL database. 
+PGVector is an open-source PostgreSQL extension that enables efficient storage, indexing, 
+and querying of vector embeddings within a PostgreSQL database. 
 ```
 
-Next, use the ask command to ask this question: `ask "How does QuestionAnswerAdvisor work in Apring AI?"`:
+Next, use the ask command to ask this question: `ask "How does QuestionAnswerAdvisor work in Spring AI?"`:
 
 ```bash
 shell:>ask "How does QuestionAnswerAdvisor work in Spring AI?"
-"QuestionAnswerAdvisor" does not appear to be an officially recognized or widely known term or feature within the Spring Framework or AI ecosystem (as of my knowledge cutoff in 2023).
+"QuestionAnswerAdvisor" does not appear to be an officially recognized or widely known term or 
+feature within the Spring Framework or AI ecosystem (as of my knowledge cutoff in 2023).
 ```
 
 Notice how it does not know about the `QuestionAnswerAdvisor` in Spring AI yet.
@@ -476,9 +414,6 @@ import org.springframework.stereotype.Service;
 
 import jakarta.annotation.PostConstruct;
 
-/**
- * Service for pre-loading documents stored using PG Vector. 
- */
 @Service
 public class DocumentService {
  
@@ -497,22 +432,31 @@ public class DocumentService {
     List<Document> documents = List.of(
         new Document("3e1a1af7-c872-4e36-9faa-fe53b9613c69",
                     """
-                    The Spring AI project aims to streamline the development of applications that incorporate artificial intelligence 
-                    functionality without unnecessary complexity. The project draws inspiration from notable Python projects, 
-                    such as LangChain and LlamaIndex, but Spring AI is not a direct port of those projects. 
-                    The project was founded with the belief that the next wave of Generative AI applications 
-                    will not be only for Python developers but will be ubiquitous across many programming languages.
+                    The Spring AI project aims to streamline the development of applications that 
+                    incorporate artificial intelligence functionality without unnecessary complexity. 
+                    The project draws inspiration from notable Python projects, such as LangChain 
+                    and LlamaIndex, but Spring AI is not a direct port of those projects. 
+                    The project was founded with the belief that the next wave of Generative AI 
+                    applications will not be only for Python developers but will be ubiquitous 
+                    across many programming languages.
                     """,
                      Map.of("prompt", "What is Spring AI?")),
         new Document("7a7c2caf-ce9c-4dcb-a543-937b76ef1098", 
                     """
-                    A vector database stores data that the AI model is unaware of. When a user question is sent to the AI model, a QuestionAnswerAdvisor queries the vector database for documents related to the user question.
-                    The response from the vector database is appended to the user text to provide context for the AI model to generate a response.
-                    Assuming you have already loaded data into a VectorStore, you can perform Retrieval Augmented Generation (RAG) by providing an instance of QuestionAnswerAdvisor to the ChatClient..
+                    A vector database stores data that the AI model is unaware of. When a user 
+                    question is sent to the AI model, a QuestionAnswerAdvisor queries the vector 
+                    database for documents related to the user question.
+                    The response from the vector database is appended to the user text to provide 
+                    context for the AI model to generate a response. Assuming you have already 
+                    loaded data into a VectorStore, you can perform Retrieval Augmented Generation 
+                    (RAG) by providing an instance of QuestionAnswerAdvisor to the ChatClient.
                     """,
-                     Map.of("prompt", "How does QuestionAnswer Advisor work?")));
+                     Map.of("prompt", "How does QuestionAnswer Advisor work?"))
+        );
 }
 ```
+
+In the code above, we create 2 new documents: one about Spring AI, and the second one explaining how `QuestionAnswerAdvisor` works.
 
 Test these changes by running:
 
@@ -520,25 +464,15 @@ Test these changes by running:
 mvn spring-boot:run
 ```
 
-Use the ask command to ask this question: `ask "How does QuestionAnswerAdvisor work in Apring AI?"`:
-
-```bash
-shell:>ask "What is Spring AI?"
-"Spring AI" is not an officially defined term or framework as of now, but it can be understood as the concept of integrating **Artificial Intelligence (AI)** capabilities into applications built using the **Spring Framework**, a popular Java-based framework for enterprise-grade application development. Here's a breakdown of what "Spring AI" could mean and its potential applications:
-```
-
-Notice how the agent now knows about `QuestionAnswerAdvisor`:
+Use the ask command to ask this question: `ask "How does QuestionAnswerAdvisor work in Spring AI?"`:
 
 ```bash
 shell:>ask "How does QuestionAnswerAdvisor work in Spring AI?"
 In the context of **Spring AI**, the **QuestionAnswerAdvisor** appears to function as a key component to enable intelligent question-and-answer workflows, especially when integrating AI models with external data sources like a **vector database**. Its primary role is to enhance the AI model's ability to generate accurate, context-aware responses by providing relevant external information that the model might not inherently "know."
 ```
 
+Notice how the agent now knows about `QuestionAnswerAdvisor`:
+
 ## Unit Summary
 
-With our Spring AI implementation complete, we can next:
-1. Deploy to Azure Container Apps
-2. Set up monitoring and logging
-3. Configure auto-scaling
-
-🚀 Pro tip: Test your implementation thoroughly with various query types before deployment!
+In this unit, we successfully built a Retrieval Augmented Generation (RAG) application using Spring AI, Azure OpenAI, and `PGVectorStore`.
