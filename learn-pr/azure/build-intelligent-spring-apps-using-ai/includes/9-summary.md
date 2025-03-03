@@ -1,16 +1,4 @@
-# Summary
-
 Congratulations! You've completed this comprehensive module on building AI-powered applications with Spring AI and Azure. Let's review what you've learned.
-
-## Key Takeaways
-
-```mermaid
-graph TD
-    A[Spring AI] -->|Core Concepts| B[ChatClient & EmbeddingClient]
-    C[Azure OpenAI] -->|Integration| D[AI Services]
-    E[PostgreSQL] -->|Vector Storage| F[Similarity Search]
-    G[Container Apps] -->|Deployment| H[Scalable Hosting]
-```
 
 ## What You've Learned
 
@@ -51,15 +39,16 @@ To continue your learning journey:
 ## Additional Resources
 
 - [Spring AI Documentation](https://docs.spring.io/spring-ai/reference/)
-- [Azure OpenAI Service](https://learn.microsoft.com/azure/cognitive-services/openai/)
-- [Azure Container Apps](https://learn.microsoft.com/azure/container-apps/)
+- [Azure OpenAI Service](/azure/cognitive-services/openai/)
+- [Azure Container Apps](/azure/container-apps/)
 - [PostgreSQL Documentation](https://www.postgresql.org/docs/)
 
 ## Cleanup
 
 Remember to clean up your Azure resources:
+
 ```bash
 az group delete --name spring-ai-demo --yes --no-wait
 ```
 
-🎉 Congratulations on completing this module! You're now ready to build sophisticated AI applications using Spring AI and Azure! 🚀
+Congratulations on completing this module! You're now ready to build sophisticated AI applications using Spring AI and Azure!

@@ -1,4 +1,4 @@
-In this unit we will build a RAG (Retrieval Augmented Generation) application using Spring AI, Azure OpenAI and PGVectorStore.
+In this unit, we build a RAG (Retrieval Augmented Generation) application using Spring AI, Azure OpenAI and PGVectorStore.
 
 ## Setting Up Your Development Environment
 
@@ -18,7 +18,7 @@ Before we start building our AI-powered application, let's set up our developmen
    mvn -version  # Verify Maven installation
    ```
 
-3. Login to **Azure** using `az`:
+3. Log in to **Azure** using `az`:
 
    ```azurecli
    az login  # Log in to Azure
@@ -26,7 +26,7 @@ Before we start building our AI-powered application, let's set up our developmen
 
 ## Install Spring Boot CLI
 
-We will need the Spring Boot CLI to create a starter project. You can install the cli using any of the options listed [here](https://docs.spring.io/spring-boot/installing.html#getting-started.installing.cli). We will install it using the `SDKMAN` option.
+We need the Spring Boot CLI to create a starter project. You can install the cli using any of the options listed [here](https://docs.spring.io/spring-boot/installing.html#getting-started.installing.cli). We can install it using the `SDKMAN` option.
 
 Install `SDKMAN` using:
 
@@ -48,7 +48,7 @@ spring
 
 ## Environment Variables Setup
 
-For this exercise we will need to some environment variables from the prior exercise. Ensure these variables are still available, and if not, recreate them from the values used previously:
+For this exercise, we need to some environment variables from the prior exercise. Ensure these variables are still available, and if not, recreate them from the values used previously:
 
 ```bash
 echo RESOURCE_GROUP: $RESOURCE_GROUP
@@ -64,11 +64,11 @@ OPENAI_RESOURCE_NAME=OpenAISpringAI
 ## Deploy Azure OpenAI Models
 
 For our application, we first need to deploy one chat model (gpt-4o) and one embedding model (text-embedding-ada-002).
-To deploy these models we first need to create an Azure OpenAI resource.
+To deploy these models, we first need to create an Azure OpenAI resource.
 
 ### Create Azure OpenAI Resource
 
-We will create the Azure OpenAI resource using this Azure CLI commands:
+We create the Azure OpenAI resource using this Azure CLI command:
 
 ```azurecli
 az cognitiveservices account create \
@@ -82,7 +82,7 @@ az cognitiveservices account create \
 
 ### Deploy Azure OpenAI Chat Model
 
-We will then deploy a chat model named `gpt-4o` using this command:
+We then deploy a chat model named `gpt-4o` using this command:
 
 ```azurecli
 az cognitiveservices account deployment create \
@@ -98,7 +98,7 @@ az cognitiveservices account deployment create \
 
 ### Deploy Azure OpenAI Embedding model
 
-We will now deploy embedding model named `text-embedding-ada-002` using this command:
+We can now deploy embedding model named `text-embedding-ada-002` using this command:
 
 ```azurecli
 az cognitiveservices account deployment create \
@@ -163,7 +163,7 @@ Expect to see a successful build output:
 
 ### Project Structure
 
-From the `spring-ai-app` directory run these commands to create new directories for new source files to be added:
+From the `spring-ai-app` directory, run these commands to create new directories for new source files to be added:
 
 ```bash
 mkdir -p src/mainjava/com/example/springaiapp/config
@@ -172,7 +172,7 @@ mkdir -p src/main/java/com/example/springaiapp/service
 mkdir -p src/main/java/com/example/springaiapp/shell
 ```
 
-Inspect the code using Visual Studio Code or your favorite IDE. The starter code will include the following structure:
+Inspect the code using Visual Studio Code or your favorite IDE. The starter code includes the following structure:
 
 ```txt
 src/
@@ -230,7 +230,7 @@ az postgres flexible-server show --resource-group $RESOURCE_GROUP --name $DB_SER
 
 ### Update Azure OpenAI in application.properties
 
-Locate and open the `application.properties` file in the `src/main/resources` directory and add the following properties replacing the values retrieved above:
+Locate and open the `application.properties` file in the `src/main/resources` directory and add the following properties replacing the values retrieved previously:
 
 ```properties
 # Azure OpenAI Configuration
@@ -257,7 +257,7 @@ Additionally, we need to add `azure-identity` as dependency. Open `pom.xml` and 
         </dependency>
 ```
 
-You can recompile the application to ensure the build is still successful:
+You can re-compile the application to ensure the build is still successful:
 
 ```bash
 mvn clean package -DskipTests
@@ -301,7 +301,7 @@ public class RagService {
 }
 ```
 
-In this implementation we use the Spring AI's `QuestionAnswerAdvisor` to augment the knowledge of our chat client with documents loaded in the vector store.
+In this implementation, we use the Spring AI's `QuestionAnswerAdvisor` to augment the knowledge of our chat client with documents loaded in the vector store.
 
 Within the `config` directory, create a new file name `DataSourceConfig.java` with the following content:
 
@@ -344,8 +344,8 @@ public class DataSourceConfig {
 }
 ```
 
-In the above implementation, we use `AzureCliCredentialBuilder` to get credentials from `az` cli to be able to authenticate to our PostgreSQL instance.
-This is suitable for development purposes. In a subsequent exercise we will update this implementation to use Managed Identities instead.
+In this implementation, we use `AzureCliCredentialBuilder` to get credentials from `az` cli to be able to authenticate to our PostgreSQL instance.
+The use of these credentials, is suitable for development purposes. In a subsequent exercise, we update this implementation to use Managed Identities instead.
 
 Within the `shell` directory, create a new file name `RagDemoCommands.java` with the following content:
 
@@ -371,9 +371,9 @@ public class RagDemoCommands {
 }
 ```
 
-This shell component will allows to test our RAG service using a command shell interface.
+This shell component allows to test our RAG service using a command shell interface.
 
-With these changes we are now ready to test the implementation by running:
+With these changes in place, we are now ready to test the implementation by running this command:
 
 ```bash
 mvn spring-boot:run
@@ -395,9 +395,9 @@ shell:>ask "How does QuestionAnswerAdvisor work in Spring AI?"
 feature within the Spring Framework or AI ecosystem (as of my knowledge cutoff in 2023).
 ```
 
-Notice how it does not know about the `QuestionAnswerAdvisor` in Spring AI yet.
+Notice how it doesn't know about the `QuestionAnswerAdvisor` in Spring AI yet.
 
-We will now provide additional knowledge by providing the following documents to be stored using our vector store:
+We now provide extra knowledge by providing the following documents to be stored using our vector store:
 
 ```java
 package com.example.springaiapp.service;
@@ -456,7 +456,7 @@ public class DocumentService {
 }
 ```
 
-In the code above, we create 2 new documents: one about Spring AI, and the second one explaining how `QuestionAnswerAdvisor` works.
+In this code, we create two new documents: one about Spring AI, and the second one explaining how `QuestionAnswerAdvisor` works.
 
 Test these changes by running:
 

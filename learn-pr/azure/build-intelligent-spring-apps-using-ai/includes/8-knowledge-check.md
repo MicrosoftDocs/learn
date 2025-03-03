@@ -1,5 +1,3 @@
-# Knowledge Check
-
 Test your understanding of Spring AI, Azure OpenAI integration, and deployment concepts.
 
 ## Question 1
@@ -57,24 +55,11 @@ Which configuration is required for Azure OpenAI integration in application.prop
 
 Explanation: Spring AI requires the API key, endpoint URL, and deployment name to properly configure Azure OpenAI integration.
 
-## Question 6
-
-Which Spring AI pattern uses multiple AI roles to improve content quality?
-
-- [ ] Chain of Responsibility
-- [x] Evaluator-Optimizer
-- [ ] Command Pattern
-- [ ] Observer Pattern
-
-Explanation: The Evaluator-Optimizer pattern uses writer and editor AI roles in a feedback loop to improve content quality.
-
 ## Next Steps
 
 Congratulations on completing the knowledge check! You should now have a solid understanding of:
+
 - Spring AI core concepts
 - Azure OpenAI integration
 - PostgreSQL vector storage
-- Azure Container Apps deployment
-- Application scaling and monitoring
-
-Ready to build your own AI-powered applications? 🚀
+- Azure Container Apps deployment and scaling

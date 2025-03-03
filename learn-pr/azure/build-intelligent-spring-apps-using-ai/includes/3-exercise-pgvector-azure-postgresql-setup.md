@@ -1,8 +1,8 @@
-In this exercise, we will create Azure Database for PostgreSQL Flexible Server, enable `pgvector` extension and create required database structure for use with Sprin AI `VectorStore` abstraction.
+In this exercise, we create Azure Database for PostgreSQL Flexible Server, enable `pgvector` extension, and create required database structure for use with Spring AI `VectorStore` abstraction.
 
 ## Sign in to Azure via Azure CLI
 
-If you haven't already done so, sign in to Azure:
+Sign in to Azure:
 
 ```azurecli
 az login
@@ -27,9 +27,9 @@ echo "Start IP: $$PUBLIC_IP"
 ```
 
 ![Note]
-!Your IP address may change and the corresponding firewall rule will need to be updated accordingly
+!The IP address may change and the corresponding firewall rule needs to be updated accordingly
 ![Tip]
-!The above command should work in most Linux distributions and git bash. If it does not work, you can alternatively get your public IP address using [https://whatismyipaddress.com/](https://whatismyipaddress.com/)
+!This command should work in most Linux distributions and git bash. If it doesn't work, you can alternatively get your public IP address using [https://whatismyipaddress.com/](https://whatismyipaddress.com/)
 
 ### Create a resource group
 
@@ -41,7 +41,7 @@ Create a resource group with the following command. An Azure resource group is a
 
 ### Create Azure Database for PostgreSQL Server
 
-Use the following command to create a database instance for development purposes. The **burstable** tier is a cost-effective tier for workloads that do not require consistent performance.
+Use the following command to create a database instance for development purposes. The **burstable** tier is a cost-effective tier for workloads that don't require consistent performance.
 
    ```azurecli
    az postgres flexible-server create \
@@ -56,7 +56,7 @@ Use the following command to create a database instance for development purposes
      --version 16
    ```
 
-This command will take a few minutes to complete. Once completed, a similar output will be displayed:
+This command takes a few minutes to complete. Once completed, a similar output is displayed:
 
 ```json
 {
@@ -74,7 +74,7 @@ This command will take a few minutes to complete. Once completed, a similar outp
 }
 ```
 
-Note that if you are having difficulty connecting from your IP, you use the following command to create a firewall rule to allow access to the new IP range:
+If you're having difficulty connecting from your IP, you can use the following command to create a firewall rule to allow access to the new IP range:
 
    ```azurecli
    az postgres flexible-server firewall-rule create \
@@ -104,7 +104,7 @@ az postgres flexible-server ad-admin create --server-name $DB_SERVER_NAME -g $RE
 
 ### Whitelist required extensions for pgvector
 
-Before we can enable extensions required by pgvector, we need to white list them using this `az` command:
+Before we can enable extensions required by pgvector, we need to allow them using this `az` command:
 
 ```azurecli
 az postgres flexible-server parameter set --resource-group $RESOURCE_GROUP \
@@ -120,7 +120,7 @@ DB_HOST=$(az postgres flexible-server show --resource-group $RESOURCE_GROUP --na
  --query fullyQualifiedDomainName --output tsv)
 ```
 
-Run this command to get a token to be able to login with your Entra ID:
+Run this command to get a token to be able to log in with your Entra ID:
 
 ```bash
 export PGPASSWORD="$(az account get-access-token \
@@ -148,10 +148,10 @@ psql (14.13, server 16.4)
 
 ## Unit Summary
 
-We now have a vector-enabled PostgreSQL database ready which will allow the following:
+We now have a vector-enabled PostgreSQL database ready with these capabilities:
 
-1. Implement vector storage in our Spring application
-2. Leverage similarity search functionality
-3. Build our RAG implementation
+1. Implements vector storage in our Spring application
+2. Applies similarity search functionality
+3. Enables our RAG implementation
 
 Remember: Vector similarity search is crucial for finding relevant context in our RAG application!

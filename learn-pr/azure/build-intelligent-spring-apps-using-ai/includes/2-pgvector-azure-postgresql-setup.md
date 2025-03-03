@@ -18,12 +18,12 @@ Key features of PGVector include:
 
 The `pgvector` extension adds an open-source vector similarity search to PostgreSQL.
 
-Before you can enable `pgvector` on your Azure Database for PostgreSQL flexible server instance, you need to add it to your allowlist as described in [how to use PostgreSQL extensions](https://learn.microsoft.com/azure/postgresql/extensions/how-to-allow-extensions#allow-extensions), and check if correctly added by running `SHOW azure.extensions;`.
+Before you can enable `pgvector` on your Azure Database for PostgreSQL flexible server instance, you need to add it to your allowlist as described in [how to use PostgreSQL extensions](/azure/postgresql/extensions/how-to-allow-extensions#allow-extensions), and check if correctly added by running `SHOW azure.extensions;`.
 
 > [!Important]
 > Notice that although all PostgreSQL community tends to refer to this extension as `pgvector`, the name of the binary and the extension itself is simply `vector`. That is the name you must use to `allowlist` it or to create it PostgreSQL via the `CREATE EXTENSION` command.
 
-Once the extension is whitelisted, you can install the extension by running the following SQL command:
+Once the extension is allowed, you can install the extension by running the following SQL command:
 
    ```sql
    CREATE EXTENSION IF NOT EXISTS vector;
@@ -50,12 +50,12 @@ graph TD
 
 ## Implementing PGVector with Spring AI
 
-Spring AI include an abstraction of `pvector` named `VectorStore`. This implementation requires 2 additional PostgreSQL extensions: `hstore` and `uuid-ossp`.
+Spring AI includes an abstraction of `pvector` named `VectorStore`. This implementation requires 2 other PostgreSQL extensions: `hstore` and `uuid-ossp`.
 
 On startup Spring Boot will install the required extensions and create the required `vector_store` table with an index if not existing.
 
 ## Unit Summary
 
-Vector Search Similarity and the PGVector extension provide powerful capabilities for building AI-powered applications that require semantic search functionality. By leveraging these tools in Azure PostgreSQL, you can efficiently store, index, and query vector embeddings, enabling advanced search and retrieval features in your applications.
+Vector Search Similarity and the PGVector extension provide powerful capabilities for building AI-powered applications that require semantic search functionality. By using these tools in Azure PostgreSQL, you can efficiently store, index, and query vector embeddings, enabling advanced search and retrieval features in your applications.
 
-In the next unit, you will perform the steps to create and configure a PosgreSQL database, enable the `pgvector` extension and create required tables for use with Spring AI.
+In the next unit, you'll perform the steps to create and configure a PosgreSQL database, enable the `pgvector` extension, and create required tables for use with Spring AI.
