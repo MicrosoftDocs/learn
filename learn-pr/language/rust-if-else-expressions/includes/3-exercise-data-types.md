@@ -187,7 +187,6 @@ Even though orders 2 and 3 are for Used cars, our `car_quality` function only re
 You can compare your program output to the solution for this exercise in this [Rust Playground][RustPlay-answer].
 
 <!-- Links -->
-<!-- [Rust-loops]: /learn/modules/rust-loop-expressions/index?azure-portal=true -->
 
 [RustPlay-answer]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=713ad42aab739f31e3a5dec8eacc56db?azure-portal=true
 
