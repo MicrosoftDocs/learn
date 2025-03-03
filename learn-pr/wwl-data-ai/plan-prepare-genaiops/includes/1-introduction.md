@@ -10,4 +10,4 @@ The emergence of generative AI applications is leading to a **paradigm shift** f
 
 To build effective GenAI solutions, developers need to select the right models, and also understand how these models fit into the broader operational framework to develop an application. The end-to-end application development of a GenAI solution is also referred to as **Large Language Model Operations** (**LLMOps**), or **GenAI Operations** (**GenAIOps**).
 
-Before going into the technical aspect of preparing a GenAIOps solution, you learn to plan an appropriate use case by exploring examples from retail, finance, and health care.
+Before going into the technical aspect of preparing a GenAIOps solution, you learn to plan an appropriate use case by exploring various examples and their architectures.

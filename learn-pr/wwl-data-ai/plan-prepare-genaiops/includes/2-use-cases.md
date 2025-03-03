@@ -1,6 +1,6 @@
-Generative AI applications are rapidly evolving across multiple industries. Understanding how these applications can be deployed across different domains can help you to better design solutions that are both effective and scalable. Let's explore some use cases across various domains, highlighting the specific requirements and challenges that shape the architecture of GenAI solutions.
+Generative AI applications are rapidly evolving across multiple industries. Understanding how these applications can be deployed across different use cases can help you to better design solutions that are both effective and scalable. Let's explore some examples, highlighting the specific requirements and challenges that shape the architecture of GenAI solutions.
 
-## Explore a retail example
+## Enhance customer support in retail
 
 In retail, GenAI applications can help you to create personalized experiences by providing support to customers whenever they need it.
 
@@ -8,11 +8,38 @@ Imagine the fictitious Contoso Outdoors, an enterprise retail website that sells
 
 For example, a customer can navigate to the website and search for a backpack, but find that there are many backpacks in various shapes and sizes. To understand better the type of backpack the customer still needs, they can ask for advice based on previous purchases.
 
-:::image type="content" source="../media/contoso-chat-website.png" alt-text="Screenshot of the website of Contoso Chat.":::
+:::image type="content" source="../media/contoso-chat-website.png" alt-text="Screenshot of the website of Contoso Chat." lightbox="../media//contoso-chat-website.png":::
 
 To respond to the customer in real-time, Contoso Outdoors can integrate GenAI to generate an answer, which needs to be based on their own product and customer data.
 
-Let's explore the GenAIOps architecture for Contoso Outdoors. The custom chat application is hosted in Azure Container Apps (ACA), exposing an API endpoint that can be accessed from authenticated third party applications, which in this case is the website where customers can sign in with their account.
+Let's explore the GenAIOps architecture for Contoso Outdoors.
 
-Any messages in the chat window are requests that are forwarded to the chat application that uses GenAI models combined with a Retrieval Augmented Generation (RAG) design pattern to retrieve product and customer data before generating a response. In this case, the chat application orchestrates interactions with Azure OpenAI models like GPT-4, Azure AI Search for product retrieval, and Cosmos DB for customer data. Finally the generated response is returned to the customer in the same chat window.
+:::image type="content" source="../media/contoso-chat-architecture.png" alt-text="Diagram of the Contoso Chat application architecture." lightbox="../media/contoso-chat-architecture.png":::
 
+The custom chat application is hosted in Azure Container Apps (ACA). ACA exposes an API endpoint. This endpoint is accessed by an authenticated application, such as the website where customers sign in.
+
+Any messages in the chat window are requests. These requests are forwarded to the chat application. The application uses GenAI models and the Retrieval Augmented Generation (RAG) design pattern. It retrieves product and customer data before generating a response. The chat application interacts with Azure OpenAI models like GPT-4, Azure AI Search for product retrieval, and Cosmos DB for customer data. Finally, the system returns the generated response to the customer in the chat window.
+
+## Generate product specific articles
+
+Now imagine you need to create high quality articles for your website. The articles for the Contoso Outdoors website must be well-researched and include product-specific information to engage customers effectively.
+
+To streamline this process, you can develop a creative writer app that allows any writer to generate a new article by entering key details, such as the products they want to feature.
+
+:::image type="content" source="../media/creative-writer-sample.png" alt-text="Screenshot of the start screen of Contoso Creative Writer." lightbox="../media/creative-writer-sample.png":::
+
+Once the information is submitted, the app processes it through an AI-driven agent workflow, which automates the research, writing, and refinement of the article. A writer can then review the generated article before finalizing and publishing the article to the website.
+
+:::image type="content" source="../media/creative-writer-sample-2.png" alt-text="Screenshot of the second screen of Contoso Creative Writer." lightbox="../media/creative-writer-sample-2.png":::
+
+In the debug window, users could explore the various agents that were included in the workflow to complete the task. To understand what is happening behind the scenes, let's explore the architecture for the Contoso Creative Writer app.
+
+:::image type="content" source="../media/creative-writer-architecture.png" alt-text="Diagram of the Contoso Chat application architecture." lightbox="../media/creative-writer-architecture.png":::
+
+When an authenticated user inputs the required information, the Creative Writer app uses a combination of multiple agents to generate the article:
+
+- A **research** agent that uses the [Bing Grounding Tool](/azure/ai-services/agents/how-to/tools/bing-grounding?view=azure-python-preview&tabs=python&pivots=overview&azure-portal=true) in [Azure AI Agent Service](/azure/ai-services/agents/overview?view=azure-python-preview&azure-portal=true) to research the product, and uses [Azure AI Search](/products/ai-services/ai-search?azure-portal=true) to do a semantic similarity search for related products from a vector store.
+- A **writer** agent that combines the researched and retrieved product information into a helpful article.
+- An **editor** agent that refines the article before presenting it to the user.
+
+Contoso Creative Writer simplifies and accelerates the content creation process by integrating these AI-powered agents, making it easier than ever to generate high-quality, product-focused articles.
