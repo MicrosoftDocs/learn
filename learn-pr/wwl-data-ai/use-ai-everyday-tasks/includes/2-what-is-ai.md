@@ -7,7 +7,11 @@ Generative AI focuses on creating new, unique content, based on the input you pr
 People usually interact with generative AI built into a chat application. One example of such an application is [Microsoft Copilot](https://copilot.microsoft.com?azure-portal=true), an AI-powered productivity tool designed to enhance your work experience by providing real-time intelligence and assistance. In other words, it's a smart tool that helps you work better by giving you quick answers and help when you need it.
 
 > [!NOTE]
-> **Behind the scenes**: Generative AI doesn't just copy or rearrange existing information; it creates something new that didn't exist before. Generative AI uses large language models (LLMs), trained on huge amounts of data, to create outputs that are similar to the data they were trained on. Some common uses of generative AI include creating natural language text using natural language processing (NLP), generating images, and writing computer code.
+> **Behind the scenes**
+>
+> Generative AI uses **large language models (LLMs)**, which are AI systems trained on massive amounts of text to understand and generate human-like language. They are like a very intelligent autocomplete. LLMs are a type of AI model that uses **natural language processing (NLP)** techniques to work. 
+>
+> NLP is a broader technology that helps computers understand and use human language to make things like chatbots, voice assistants, and translations work smoothly. LLMs are one powerful example of NLP in action.
 
 ## Help with everyday tasks
 
