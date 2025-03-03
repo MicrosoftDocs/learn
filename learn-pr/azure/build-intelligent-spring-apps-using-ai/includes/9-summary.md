@@ -1,4 +1,4 @@
-Congratulations! You've completed this comprehensive module on building AI-powered applications with Spring AI and Azure. Let's review what you've learned.
+Congratulations! You completed this comprehensive module on building AI-powered applications with Spring AI and Azure. Let's review what you've learned.
 
 ## What You've Learned
 
@@ -36,7 +36,7 @@ To continue your learning journey:
    - Azure AI community
    - Developer forums
 
-## Additional Resources
+## Learning Resources
 
 - [Spring AI Documentation](https://docs.spring.io/spring-ai/reference/)
 - [Azure OpenAI Service](/azure/cognitive-services/openai/)

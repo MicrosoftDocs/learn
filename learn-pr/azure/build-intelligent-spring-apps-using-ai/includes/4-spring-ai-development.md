@@ -1,4 +1,4 @@
-In this unit, you will explore the concepts behind using the `PGVectorStore` Spring Boot Starter and OpenAI Spring Boot Starter to manage and query document embeddings in a PostgreSQL database. By the end of this unit, you will understand how to leverage these tools to enhance your applications with advanced search capabilities.
+In this unit, you explore the concepts behind using the `PGVectorStore` Spring Boot Starter and OpenAI Spring Boot Starter to manage and query document embeddings in a PostgreSQL database. By the end of this unit, you should understand how to apply these tools to enhance your applications with advanced search capabilities.
 
 Prerequisites
 Before diving into the concepts, ensure you have a basic understanding of:
@@ -14,7 +14,7 @@ A vector store is a specialized database designed to store and manage high-dimen
 
 ## Why Use PGVectorStore?
 
-PGVectorStore is a Spring Boot starter that simplifies the integration of vector storage and search capabilities into your Spring Boot applications. It leverages PostgreSQL's vector extension to store and query document embeddings efficiently.
+PGVectorStore is a Spring Boot starter that simplifies the integration of vector storage and search capabilities into your Spring Boot applications. It uses PostgreSQL's vector extension to store and query document embeddings efficiently.
 
 ## What are Embeddings?
 
@@ -43,11 +43,11 @@ Here's a detailed explanation of how this code works:
 
 1. First use the Spring's `@Autowired` annotation to automatically inject an instance of the `VectorStore` class into the current class.
 1. Next create a list of `Document` objects. Each `Document` object contains a string representing the content and a map of metadata. In this example, two documents are created:
-1. Finally we add the list of documents to the `vectorStore` instance. The add method of the `VectorStore` class is used to store the documents in the vector store database table, as well as generate embeddings using the specified `EmbeddingModel` in your Spring Boot configuration.
+1. Finally we add the list of documents to the `vectorStore` instance. The add method of the `VectorStore` class is used to store the documents in the vector store database table, and generate embeddings using the specified `EmbeddingModel` in your Spring Boot configuration.
 
 ## Querying Documents
 
-Once your documents are stored, you can perform similarity searches to find documents that are semantically similar to a given query. Here is a sample code to perform a similarity search using the `VectorStore` class:
+Once your documents are stored, you can perform similarity searches to find documents that are semantically similar to a given query. Here's a sample code to perform a similarity search using the `VectorStore` class:
 
 ```java
 List<Document> results = vectorStore.similaritySearch(
@@ -62,9 +62,9 @@ Here's a detailed explanation for this code snippet:
 
 1. The `similaritySearch` method of the `VectorStore` class is used to find documents that are similar to a given query.
 1. This code uses the builder pattern to create a `SearchRequest` object using the following components:
-    1. This `query` method sets the query string for the search. The similarity search will look for documents in the vector store that are similar to this query.
-    1. The `topK(5)` portion specifies the number of top results to return. In this case, the search should return the top 5 most similar documents.
+    1. This `query` method sets the query string for the search. The similarity search looks for documents in the vector store that are similar to this query.
+    1. The `topK(5)` portion specifies the number of top results to return. In this case, the search should return the top five most similar documents.
 
 ## Unit Summary
 
-In this unit, you learned the concepts behind using `PGVectorStore` and OpenAI Spring Boot Starter to manage and query document embeddings. You explored the importance of embeddings, how to generate and store them, and how to perform similarity searches. In the next exercise, we will build a RAG Spring Boot application using these tools.
+In this unit, you learned the concepts behind using `PGVectorStore` and OpenAI Spring Boot Starter to manage and query document embeddings. You explored the importance of embeddings, how to generate and store them, and how to perform similarity searches. In the next exercise, we build a RAG Spring Boot application using these tools.
