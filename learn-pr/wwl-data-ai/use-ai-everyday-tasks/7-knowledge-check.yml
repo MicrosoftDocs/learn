@@ -32,10 +32,10 @@ quiz:
       explanation: "Correct. Clear, specific, and goal-oriented prompts help the AI understand exactly what you need and provide accurate and useful responses."
     - content: "Using advanced vocabulary and technical terms to enhance AI comprehension."
       isCorrect: false
-      explanation: "incorrect choice"
+      explanation: "Incorrect. While AI can process complex language, unnecessary jargon may introduce ambiguity and lead to less accurate responses."
     - content: "Trusting the AI’s first response as the best possible answer without adjustments."
       isCorrect: false
-      explanation: "incorrect choice"
+      explanation: "Incorrect. While AI can generate strong initial responses, iterating on your prompt and refining based on feedback often leads to more precise and valuable results."
   - content: "What is the purpose of using the Think Deeper feature in Microsoft Copilot?"
     choices:
     - content: "To generate lists."
