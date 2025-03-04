@@ -2,7 +2,7 @@ Now let's find inspiration for more complex prompts, and discover practical appl
 
 ## Explore ways to use AI at work
 
-Microsoft 365 Copilot Chat is a shared chat experience within [Microsoft 365 Copilot](https://www.microsoft.com/microsoft-365/copilot/copilot-for-work?azure-portal=true) that connects with your work data across the Microsoft 365 suite, including popular applications like Teams, Word, Outlook, PowerPoint, and Excel. Prompts are grounded in the large language model (LLM) and contextualized with users' business data and apps, surfacing the necessary information and insights from organizational data.
+[Microsoft 365 Copilot Chat](https://m365.cloud.microsoft/chat) is a shared chat experience within [Microsoft 365 Copilot](https://www.microsoft.com/microsoft-365/copilot/copilot-for-work?azure-portal=true) that connects with your work data across the Microsoft 365 suite, including popular applications like Teams, Word, Outlook, PowerPoint, and Excel. Prompts are grounded in the large language model (LLM) and contextualized with users' business data and apps, surfacing the necessary information and insights from organizational data. Microsoft 365 Copilot chat requires an eligible Microsoft 365 plan.
 
 Some common examples include:
 
