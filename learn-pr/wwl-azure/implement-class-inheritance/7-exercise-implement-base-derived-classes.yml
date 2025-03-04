@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-class-inheritance.exercise-implement-base-derived-classes
+title: Exercise - Implement base and derived classes
+metadata:
+  title: Exercise - Implement base and derived classes
+  description: "Exercise - Implement base and derived classes."
+  ms.date: 03/04/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-exercise-implement-base-derived-classes.md)]

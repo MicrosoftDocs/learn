@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-class-inheritance.examine-principals-inheritance
+title: Examine the principals of class inheritance
+metadata:
+  title: Examine the principals of class inheritance
+  description: "Examine the principals of class inheritance."
+  ms.date: 03/04/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-examine-principals-inheritance.md)]
