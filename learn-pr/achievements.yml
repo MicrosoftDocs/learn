@@ -5320,3 +5320,8 @@ achievements:
   title: Write automated tests
   summary: Learn about the types of testing you can do with Rust.
   iconUrl: /training/achievements/rust-automated-tests.svg
+- uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.badge
+  type: badge
+  title: Track wild polar bears with AI
+  summary: Detect and track polar bears through photos using AI, and then use Power BI to show where cameras spot polar bears.
+  iconUrl: /training/achievements/student-evangelism/build-ml-model-with-azure-stream-analytics-badge.svg
