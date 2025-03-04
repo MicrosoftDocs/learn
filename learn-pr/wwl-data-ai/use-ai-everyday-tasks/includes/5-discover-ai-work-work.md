@@ -35,8 +35,4 @@ In the following short video, learn how one communications manager uses Microsof
 
 > [!VIDEO https://www.youtube.com/embed/gOq46gEO8h8?si=tAb9kb1eWLsY3tLt]
 
-> [!NOTE]
-> **Build your AI habit**:
-> Now that you know what it takes to craft clear, specific, and goal-oriented prompts, try to identify tasks in your own daily routine where AI might help you save time or be more creative. Commit to a daily experiment, such as one prompt to try every day. Remember to iterate as much as you want to perfect your prompt.
-
 Now that you learned about generative AI, how to interact with it, and some ways to take your prompts further, let's practice prompting in Copilot.

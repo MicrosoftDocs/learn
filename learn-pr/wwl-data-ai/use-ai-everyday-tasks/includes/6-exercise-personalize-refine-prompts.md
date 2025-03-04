@@ -82,4 +82,8 @@ Iteration is a key part of creating effective AI prompts. In this step, you refi
 
 4. Review the output from Think Deeper. Consider how it compares to standard responses.
 
+> [!NOTE]
+> **Build your AI habit**:
+> Now that you know what it takes to craft clear, specific, and goal-oriented prompts, try to identify tasks in your own daily routine where AI might help you save time or be more creative. Commit to a daily experiment, such as one prompt to try every day. Remember to iterate as much as you want to perfect your prompt.
+
 Congratulations on completing the exercise! You created personalized prompts, analyzed the results, and used Think Deeper to unlock deep reasoning. Keep experimenting with different prompts in your daily tasks to see how AI can make your work easier and more efficient.
