@@ -21,29 +21,7 @@ Before we start building our AI-powered application, let's set up our developmen
 3. Log in to **Azure** using `az`:
 
    ```azurecli
-   az login  # Log in to Azure
-   ```
-
-## Install Spring Boot CLI
-
-We need the Spring Boot CLI to create a starter project. You can install the cli using any of the options listed [here](https://docs.spring.io/spring-boot/installing.html#getting-started.installing.cli). We can install it using the `SDKMAN` option.
-
-Install `SDKMAN` using:
-
-```bash
-curl -s "https://get.sdkman.io" | bash
-```
-
-Install Spring Boot CLI using this command:
-
-```bash
-sdk install springboot
-```
-
-Type `spring` to verify it installed successfully:
-
-```bash
-spring
+   az login
 ```
 
 ## Environment Variables Setup
@@ -114,28 +92,27 @@ az cognitiveservices account deployment create \
 
 ## Create Spring AI Application
 
-Use the following maven command to generate a new Spring Boot starter project with all of the dependencies needed:
+Use the following `curl` command to generate a new Spring Boot starter project with all of the dependencies needed:
 
 ```bash
-spring init \
-    --groupId=com.example \
-    --artifactId=spring-ai-app \
-    --name=spring-ai-app \
-    --description="Spring AI Azure Integration" \
-    --version=0.0.1-SNAPSHOT \
-    --boot-version=3.4.3 \
-    --java-version=17 \
-    --dependencies=web,jdbc,spring-shell,spring-ai-azure-openai,spring-ai-vectordb-pgvector,postgresql \
-    --build=maven \
-    --package-name=com.example.springaiapp \
-    spring-ai-app
+curl https://start.spring.io/starter.zip \
+    -d groupId=com.example \
+    -d artifactId=spring-ai-app \
+    -d name=spring-ai-app \
+    -d description="Spring AI Azure Integration" \
+    -d version=0.0.1-SNAPSHOT \
+    -d bootVersion=3.4.3 \
+    -d javaVersion=17 \
+    -d dependencies=web,jdbc,azure-support,spring-ai-azure-openai,spring-ai-vectordb-pgvector \
+    -d type=maven-project \
+    -d packageName=com.example.springaiapp \
+    --output spring-ai-app.zip
 ```
 
-If successful, the command output should show:
+Unzip downloaded file using commmand:
 
 ```bash
-Using service at https://start.spring.io
-Project extracted to '/mnt/c/Users/user/source/repos/spring-ai-app'
+unzip -u spring-ai-app.zip -d spring-ai-app
 ```
 
 Switch directory to this path:
@@ -166,10 +143,8 @@ Expect to see a successful build output:
 From the `spring-ai-app` directory, run these commands to create new directories for new source files to be added:
 
 ```bash
-mkdir -p src/mainjava/com/example/springaiapp/config
 mkdir -p src/mainjava/com/example/springaiapp/controller
 mkdir -p src/main/java/com/example/springaiapp/service
-mkdir -p src/main/java/com/example/springaiapp/shell
 ```
 
 Inspect the code using Visual Studio Code or your favorite IDE. The starter code includes the following structure:
@@ -179,10 +154,8 @@ src/
 ├── main/
 │   ├── java/
 │   │   └── com/example/springaiapp/
-│   │       ├── config/
 │   │       ├── controller/
 │   │       ├── service/
-│   │       ├── shell/
 │   │       └── SpringAiAppApplication.java
 │   └── resources/
 │       ├── application.properties
@@ -240,46 +213,37 @@ spring.ai.azure.openai.chat.model=gpt-4o
 spring.ai.azure.openai.embedding.model=text-embedding-ada-002
 
 # Database Configuration
-spring.datasource.url=jdbc:postgresql://<PostgreSql URL>/postgres
+spring.datasource.url=jdbc:postgresql://<PostgreSql URL>/postgres?sslmode=require
 spring.datasource.username=AzureAdmin
+spring.datasource.azure.passwordless-enabled=true
 spring.ai.vectorstore.pgvector.initialize-schema=true
-spring.shell.interactive.enabled=true
-spring.main.web-application-type=none
 ```
-
-Additionally, we need to add `azure-identity` as dependency. Open `pom.xml` and add the following lines:
-
-```xml
-        <dependency>
-            <groupId>com.azure</groupId>
-            <artifactId>azure-identity</artifactId>
-            <version>1.15.3</version>
-        </dependency>
-```
-
-You can re-compile the application to ensure the build is still successful:
-
-```bash
-mvn clean package -DskipTests
-```
-
-Expect to see a `BUILD SUCCESS` output.
 
 ### Implementing RAG Service
+
+#### Create Service
 
 Within the `service` directory, create a new file name `RagService.java` with the following content:
 
 ```java
 package com.example.springaiapp.service;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.springframework.ai.document.Document;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.ai.chat.client.ChatClient;
-import org.springframework.ai.chat.client.advisor.QuestionAnswerAdvisor;
+import org.springframework.ai.vectorstore.SearchRequest;
 import org.springframework.ai.vectorstore.VectorStore;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class RagService {
+    private static final Logger logger = LoggerFactory.getLogger(RagService.class);
+
     private final ChatClient chatClient;
 
     @Autowired
@@ -291,11 +255,27 @@ public class RagService {
 
     public String processQuery(String query) {
         String answer = "";
+        List<Document> similarContexts = vectorStore.similaritySearch(SearchRequest.builder().query(query).similarityThreshold(0.8).topK(3).build());
+        String context = similarContexts.stream()
+                .map(ch -> String.format("Q: %s\nA: %s", ch.getMetadata().get("prompt"), ch.getText()))
+                .collect(Collectors.joining("\n\n"));
+        logger.debug("Found {} similar contexts", similarContexts.size());
+        String promptText = String.format("""
+            Use these previous Q&A pairs as context for answering the new question:
+
+            Previous interactions:
+            %s
+            
+            New question: %s
+            
+            Please provide a clear and educational response.""",
+            context,
+            query
+        );
         answer = this.chatClient.prompt()
-            .advisors(new QuestionAnswerAdvisor(vectorStore))
-            .user(query)
+            .user(promptText)
             .call()
-            .content();
+            .chatResponse().getResult().getOutput().getText();
         return answer;
     }
 }
@@ -303,75 +283,33 @@ public class RagService {
 
 In this implementation, we use the Spring AI's `QuestionAnswerAdvisor` to augment the knowledge of our chat client with documents loaded in the vector store.
 
-Within the `config` directory, create a new file name `DataSourceConfig.java` with the following content:
+#### Create Controller
+
+Next, we need to expose and REST endpoint for our application. To do that, create a new file named `RagController.java` within the `controller` directory.
+Update the file with this content:
 
 ```java
-package com.example.springaiapp.config;
-
-import com.azure.identity.AzureCliCredential;
-import com.azure.identity.AzureCliCredentialBuilder;
-import org.springframework.beans.factory.annotation.Value;
-import com.azure.core.credential.TokenRequestContext;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.jdbc.datasource.DriverManagerDataSource;
-
-import javax.sql.DataSource;
-
-@Configuration
-public class DataSourceConfig {
-
-    @Value("${spring.datasource.url}")
-    private String dbUrl;
-
-    @Value("${spring.datasource.username}")
-    private String dbUsername;
-
-    @Bean
-    public DataSource dataSource() {
-        ChainedTokenCredential credential = createChainedCredential();
-        String accessToken = credential.getToken(
-            new TokenRequestContext()
-                .addScopes("https://ossrdbms-aad.database.windows.net"))
-                .block().getToken();
-        DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName("org.postgresql.Driver");
-        dataSource.setUrl(dbUrl);
-        dataSource.setUsername(dbUsername);
-        dataSource.setPassword(accessToken);
-        return dataSource;
-    }
-}
-```
-
-In this implementation, we use `AzureCliCredentialBuilder` to get credentials from `az` cli to be able to authenticate to our PostgreSQL instance.
-The use of these credentials, is suitable for development purposes. In a subsequent exercise, we update this implementation to use Managed Identities instead.
-
-Within the `shell` directory, create a new file name `RagDemoCommands.java` with the following content:
-
-```java
-package com.example.springaiapp.shell;
+package com.example.springaiapp.controller;
 
 import com.example.springaiapp.service.RagService;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.shell.standard.ShellComponent;
-import org.springframework.shell.standard.ShellMethod;
-import org.springframework.shell.standard.ShellOption;
+import org.springframework.web.bind.annotation.*;
 
-@ShellComponent
-public class RagDemoCommands {
+@RestController
+@RequestMapping("/api/rag")
+public class RagController {
+
     @Autowired
     private RagService ragService;
 
-    @ShellMethod(key = "ask", value = "Ask a question using RAG")
-    public String ask(@ShellOption(help = "Your question") String question) {
-        return ragService.processQuery(question);
+    @GetMapping
+    public String processQuery(@RequestParam String query) {
+        return ragService.processQuery(query);
     }
 }
 ```
 
-This shell component allows to test our RAG service using a command shell interface.
+#### Test application
 
 With these changes in place, we are now ready to test the implementation by running this command:
 
@@ -379,23 +317,33 @@ With these changes in place, we are now ready to test the implementation by runn
 mvn spring-boot:run
 ```
 
-When prompted ask a question using the ask command about `PGVector`:
+Test the new REST endpoint either from a browser or via `curl` command:
 
 ```bash
-shell:>ask "What is PGVector?"
+curl -G "http://localhost:8080/api/rag" --data-urlencode "query=What is PGVector?"
+```
+
+Expect to see a valid response:
+
+```bash
 PGVector is an open-source PostgreSQL extension that enables efficient storage, indexing, 
 and querying of vector embeddings within a PostgreSQL database. 
 ```
 
-Next, use the ask command to ask this question: `ask "How does QuestionAnswerAdvisor work in Spring AI?"`:
+Next, use the `curl` command to ask this question "How does QuestionAnswerAdvisor work in Spring AI?":
 
 ```bash
-shell:>ask "How does QuestionAnswerAdvisor work in Spring AI?"
-"QuestionAnswerAdvisor" does not appear to be an officially recognized or widely known term or 
-feature within the Spring Framework or AI ecosystem (as of my knowledge cutoff in 2023).
+curl -G "http://localhost:8080/api/rag" --data-urlencode "query=How does QuestionAnswerAdvisor work in Spring AI?"
 ```
 
-Notice how it doesn't know about the `QuestionAnswerAdvisor` in Spring AI yet.
+Notice that even though the answer may appear valid, there will be clues indicating that this response is a likely guess:
+
+```bash
+### 2. **What is QuestionAnswerAdvisor?**
+The **QuestionAnswerAdvisor** is likely a component or feature within Spring AI that focuses on providing AI-driven advice or responses to user queries. 
+```
+
+#### Test application with additional knowledge
 
 We now provide extra knowledge by providing the following documents to be stored using our vector store:
 
@@ -464,14 +412,18 @@ Test these changes by running:
 mvn spring-boot:run
 ```
 
-Use the ask command to ask this question: `ask "How does QuestionAnswerAdvisor work in Spring AI?"`:
+Use the `curl` command to ask this question again: "How does QuestionAnswerAdvisor work in Spring AI?":
 
 ```bash
-shell:>ask "How does QuestionAnswerAdvisor work in Spring AI?"
-In the context of **Spring AI**, the **QuestionAnswerAdvisor** appears to function as a key component to enable intelligent question-and-answer workflows, especially when integrating AI models with external data sources like a **vector database**. Its primary role is to enhance the AI model's ability to generate accurate, context-aware responses by providing relevant external information that the model might not inherently "know."
+```bash
+curl -G "http://localhost:8080/api/rag" --data-urlencode "query=How does QuestionAnswerAdvisor work in Spring AI?"
 ```
 
 Notice how the agent now knows about `QuestionAnswerAdvisor`:
+
+```bash
+In Spring AI, the **QuestionAnswerAdvisor** works as a mechanism to enable **Retrieval Augmented Generation (RAG)**, helping developers integrate advanced question-answering capabilities into their applications. 
+```
 
 ## Unit Summary
 

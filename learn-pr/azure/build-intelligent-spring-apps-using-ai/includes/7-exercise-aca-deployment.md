@@ -1,21 +1,47 @@
 In this unit we deploy our Spring AI application to Azure Container Apps for scalable and serverless container hosting.
 
-## Containerization
-
-1. **Create Dockerfile**:
-```dockerfile
-FROM eclipse-temurin:17-jre
-WORKDIR /app
-COPY target/*.jar app.jar
-ENTRYPOINT ["java", "-jar", "app.jar"]
-```
-
-2. **Build Application**:
-```bash
-mvn clean package
-```
-
 ## Azure Container Apps Setup
+
+Before we can deploy the Azure Container App, we need to run some `az` CLI commands to prepare the environment for deployment.
+
+1. Because the option to deploy via artifact is currently in preview, you need to install the Container Apps extension with `--allow-preview true` (this command may take a few minutes to complete):
+
+  ```azurecli
+  az extension add --name containerapp --upgrade --allow-preview true
+  ```
+
+1. For this exercise, we need to some environment variables from the prior exercise. Ensure these variables are still available in your terminal session, and if not, recreate them from the values used previously:
+
+  ```bash
+  echo "RESOURCE_GROUP: $RESOURCE_GROUP LOCATION: $LOCATION"
+  ```
+
+1. Next we need some new variables specific to the Container App environment, API name and the Subscription value:
+
+  ```bash
+  ENVIRONMENT="env-spring-ai-containerapps"
+  API_NAME="rag-api"
+  SUBSCRIPTION=$(az account show --query 'id' --output tsv)
+  echo "SUBSCRIPTION: $SUBSCRIPTION"
+  ```
+
+## Deploy Azure Container Application
+
+Rebuild the application to generate the deployable JAR (Java Archive) file:
+
+```bash
+mvn clean package -DskipTests
+```
+
+The `jar` file will be created within the `target` directory with this name: `spring-ai-app-0.0.1-SNAPSHOT.jar`. Take a note of that file path, proceed to deploy the application using this command:
+
+```azurecli
+az containerapp up --name $API_NAME \
+  --resource-group $RESOURCE_GROUP \
+  --location $LOCATION \
+  --environment $ENVIRONMENT \
+  --artifact ./target/spring-ai-app-0.0.1-SNAPSHOT.jar --ingress external --target-port 8080 --subscription $SUBSCRIPTION
+```
 
 1. **Create Container Apps Environment**:
 ```bash

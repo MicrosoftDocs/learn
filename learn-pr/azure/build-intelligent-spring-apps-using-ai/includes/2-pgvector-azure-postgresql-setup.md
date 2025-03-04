@@ -40,14 +40,6 @@ ORDER BY embedding <-> '[0.1,0.2,...]'::vector
 LIMIT 3;
 ```
 
-```mermaid
-graph TD
-    A[User Query] -->|Convert to Vector| B[Embedding]
-    B -->|Similarity Search| C[PostgreSQL]
-    C -->|Find Similar Q&As| D[Context]
-    D -->|Generate Response| E[AI Response]
-```
-
 ## Implementing PGVector with Spring AI
 
 Spring AI includes an abstraction of `pvector` named `VectorStore`. This implementation requires 2 other PostgreSQL extensions: `hstore` and `uuid-ossp`.

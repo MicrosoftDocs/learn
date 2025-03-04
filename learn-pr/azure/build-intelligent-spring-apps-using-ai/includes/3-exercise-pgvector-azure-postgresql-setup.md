@@ -22,7 +22,7 @@ DB_SERVER_NAME="spring-ai-postgresql-server-$ID"
 You can limit access by specifying to the PostgreSQL server external IP appropriate IP address values for your environment. Use the public IP address of the computer you're using to restrict access to the server to only your IP address. Intialize the `start` and `end` IP values as follows:
 
 ```bash
-$PUBLIC_IP=$(curl -s ipinfo.io/ip)
+PUBLIC_IP=$(curl -s ipinfo.io/ip)
 echo "Start IP: $$PUBLIC_IP"
 ```
 
@@ -51,8 +51,7 @@ Use the following command to create a database instance for development purposes
      --tier Burstable \
      --sku-name standard_b1ms \
      --active-directory-auth enabled \
-     --password-auth disabled \
-     --public-access $$PUBLIC_IP \
+     --public-access $PUBLIC_IP \
      --version 16
    ```
 
@@ -73,19 +72,6 @@ This command takes a few minutes to complete. Once completed, a similar output i
 "version": "<version>"
 }
 ```
-
-If you're having difficulty connecting from your IP, you can use the following command to create a firewall rule to allow access to the new IP range:
-
-   ```azurecli
-   az postgres flexible-server firewall-rule create \
-     --rule-name allowiprange \
-     --resource-group $RESOURCE_GROUP \
-     --name $DB_SERVER_NAME \
-     --start-ip-address 0.0.0.0 \
-     --end-ip-address 255.255.255.255
-   ```
-
-Once this rule is created, you can update using `az postgres flexible-server firewall-rule update`
 
 ### Grant admin access to your Azure Entra ID
 
@@ -116,11 +102,11 @@ az postgres flexible-server parameter set --resource-group $RESOURCE_GROUP \
 Use this command to get the fully qualified host name for your database server:
 
 ```bash
-DB_HOST=$(az postgres flexible-server show --resource-group $RESOURCE_GROUP --name $DB_SERVER_NAME \
- --query fullyQualifiedDomainName --output tsv)
+export PGHOST=$(az postgres flexible-server show --resource-group $RESOURCE_GROUP \
+  --name $DB_SERVER_NAME --query fullyQualifiedDomainName --output tsv)
 ```
 
-Run this command to get a token to be able to log in with your Entra ID:
+Run this command to get access token for your user ID:
 
 ```bash
 export PGPASSWORD="$(az account get-access-token \
@@ -131,7 +117,7 @@ export PGPASSWORD="$(az account get-access-token \
 Connect to database using `psql` client with this command:
 
 ```bash
-psql "host=$DB_HOST port=5432 dbname=postgres user=AzureAdmin sslmode=require"
+psql "host=$PGHOST dbname=postgres user=AzureAdmin sslmode=require"
 ```
 
 Example PSQL output:
@@ -143,8 +129,21 @@ psql (14.13, server 16.4)
  SSL connection (protocol: TLSv1.3, cipher: TLS_AES_256_GCM_SHA384, bits: 256, compression: off)
  Type "help" for help.
 
- postgres=>
+postgres=>
 ```
+
+If the above command times out or you're having difficulty connecting from your IP, you can use the following command to create a firewall rule to allow access to a wider IP range:
+
+   ```azurecli
+   az postgres flexible-server firewall-rule create \
+     --rule-name allowiprange \
+     --resource-group $RESOURCE_GROUP \
+     --name $DB_SERVER_NAME \
+     --start-ip-address 0.0.0.0 \
+     --end-ip-address 255.255.255.255
+   ```
+
+Once this rule is created, you can update using `az postgres flexible-server firewall-rule update`
 
 ## Unit Summary
 
@@ -153,5 +152,3 @@ We now have a vector-enabled PostgreSQL database ready with these capabilities:
 1. Implements vector storage in our Spring application
 2. Applies similarity search functionality
 3. Enables our RAG implementation
-
-Remember: Vector similarity search is crucial for finding relevant context in our RAG application!
