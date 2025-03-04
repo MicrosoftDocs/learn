@@ -18,7 +18,7 @@ The pricing tiers are grouped into three categories:
    - This tier provides network isolation on top of compute isolation to your apps. 
    - This tier provides the maximum scale-out capabilities.
 
-Here's a sample of different [plan details](/azure/app-service/overview-hosting-plans). For more information, you can use the Azure portal. Select *Create App Service Plan* and then *Explore pricing plans*. You can view either by hardware or feature capability. 
+Here's a sample of different [plan details](/azure/app-service/overview-hosting-plans). 
 
 | Feature | Free F1 | Basic B1 | Standard S1 | Premium P1V3 | 
 | --- | --- | --- | --- | --- | 
@@ -47,3 +47,18 @@ The Premium service plan is designed to provide enhanced performance for product
 ### Isolated
 
 The Isolated service plan is designed to run mission critical workloads that are required to run in a virtual network. The Isolated plan allows customers to run their applications in a private, dedicated environment in an Azure datacenter. The plan offers Dv2-series virtual machines with faster processors, SSD storage, and a double memory-to-core ratio compared to the Standard tier. The private environment used with an Isolated plan is called the App Service Environment. The plan can scale to 100 instances with more available upon request.
+
+## Task to be done: Select an App Service plan
+
+You can view the available App Service plans in the Azure portal. You can make your choice based on hardware or feature requirements. Hardware considerations include CPU, memory, and scaling instances. Feature considerations include backups, staging slots, and zone redundancy. 
+
+> [!TIP]
+> When selecting a service plan, consider both hardware and feature requirements.
+
+1. In the Azure portal search for and select **App Service plans**. 
+1. **Create** a new App Service plan. 
+1. Select **Explore pricing plans** to view the available plans.
+
+:::image type="content" source="../media/appserviceplans.gif" alt-text="Animated graphic showing how to view app service plans in the portal.":::
+
+

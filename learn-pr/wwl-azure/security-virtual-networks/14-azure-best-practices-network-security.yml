@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-virtual-networks.azure-best-practices-network-security
+title: Configure firewall settings on Azure resources
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Configure firewall settings on Azure resources
+  description: "Configure firewall settings on Azure resources"
+  ms.date: 02/25/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/14-azure-best-practices-network-security.md)]

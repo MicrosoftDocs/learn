@@ -14,7 +14,7 @@ Microsoft Fabric transforms the analytics development process by unifying tools 
 
 **Data engineers** can now ingest, transform, and load large amounts of data into OneLake and present it in whichever data store makes most sense. Data loading patterns are simplified using pipelines and architectures, such as medallion, can be easily configured using workspaces.
 
-**Data analysts** gain greater context and streamline processes, transforming data upstream with Data Factory and connecting with data more directly using DirectLake mode.
+**Data analysts** gain greater context and streamline processes, transforming data upstream with Data Factory and connecting with data more directly using Direct Lake mode.
 
 **Data scientists** Integrate native data science techniques more easily and use Power BI's interactive reporting to provide data-informed insights.
 

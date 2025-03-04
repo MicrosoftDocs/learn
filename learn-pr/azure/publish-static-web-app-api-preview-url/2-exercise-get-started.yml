@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Get started
   description: Get started by running and deploying a static web app
   ms.date: 12/12/2023
-  author: craigshoemaker
-  ms.author: cshoe
+  author: v1212
+  ms.author: wujia
   ms.topic: unit
   ms.custom: vscode-azure-extension-update-completed
   zone_pivot_groups: dev-javascript-framework

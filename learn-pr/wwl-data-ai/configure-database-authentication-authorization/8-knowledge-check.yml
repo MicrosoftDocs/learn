@@ -6,8 +6,8 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/26/2022
-  author: wwlpublish
+  ms.date: 02/25/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
@@ -22,55 +22,55 @@ quiz:
     choices:
     - content: "Kerberos"
       isCorrect: false
-      explanation: "That's incorrect. Microsoft Entra ID uses HTTPS protocols like SAML and OpenID Connect for authentication and uses OAuth for authorization."
+      explanation: "Incorrect. Microsoft Entra ID uses HTTPS protocols like SAML and OpenID Connect for authentication and uses OAuth for authorization."
     - content: "LDAP"
       isCorrect: false
-      explanation: "That's incorrect. Microsoft Entra ID uses HTTPS protocols like SAML and OpenID Connect for authentication and uses OAuth for authorization."
+      explanation: "Incorrect. Microsoft Entra ID uses HTTPS protocols like SAML and OpenID Connect for authentication and uses OAuth for authorization."
     - content: "OAuth"
       isCorrect: true
-      explanation: "That's correct. Microsoft Entra ID uses HTTPS protocols like SAML and OpenID Connect for authentication and uses OAuth for authorization."
+      explanation: "Correct. Microsoft Entra ID uses HTTPS protocols like SAML and OpenID Connect for authentication and uses OAuth for authorization."
   - content: "Which database stores the information about logins in SQL Server?"
     choices:
     - content: "master"
       isCorrect: true
-      explanation: "That's correct. Logins are stored in the master database."
+      explanation: "Correct. Logins are stored in the master database."
     - content: "model"
       isCorrect: false
-      explanation: "That's incorrect. The model database doesn't store any user or job information."
+      explanation: "Incorrect. The `model` database doesn't store any user or job information."
     - content: "msdb"
       isCorrect: false
-      explanation: "That's incorrect. The MSDB database stores data related to the SQL Server Agent."
+      explanation: "Incorrect. The `msdb` database stores data related to the SQL Server Agent."
   - content: "Which role allows users to create users within a database?"
     choices:
     - content: "db_datareader"
       isCorrect: false
-      explanation: "That's incorrect. This role only allows users to read all of the data in a given database, but not write any data."
+      explanation: "Incorrect. This role only allows users to read all of the data in a given database, but not write any data."
     - content: "db_accessadmin"
       isCorrect: true
-      explanation: "That's correct. Access admin can add users to the database and create them."
+      explanation: "Correct. Access admin can add users to the database and create them."
     - content: "db_securityadmin"
       isCorrect: false
-      explanation: "That's incorrect. The security admin role is privileged, but can't create logins and users."
+      explanation: "Incorrect. The security admin role is privileged, but can't create logins and users."
   - content: "Which permission allows the user to perform any option against a database object?"
     choices:
     - content: "Control"
       isCorrect: true
-      explanation: "That's correct. Control allows the user to drop or modify an object."
+      explanation: "Correct. Control allows the user to drop or modify an object."
     - content: "Delete"
       isCorrect: false
-      explanation: "That's incorrect. The delete permission only allows for deletion of data in a table."
+      explanation: "Incorrect. The `DELETE` permission only allows for deletion of data in a table."
     - content: "View Definition"
       isCorrect: false
-      explanation: "That's incorrect. View definition only allows the user to see the DDL for the object."
+      explanation: "Incorrect. View definition only allows the user to see the DDL for the object."
   - content: "What feature allows a user to execute a stored procedure without having permission to access the tables referenced in the stored procedure?"
     choices:
     - content: "Ownership chaining"
       isCorrect: true
-      explanation: "That's correct. Ownership chaining effectively gives the user temporary access to the objects called by the procedure."
+      explanation: "Correct. Ownership chaining effectively gives the user temporary access to the objects called by the procedure."
     - content: "Principle of least privilege"
       isCorrect: false
-      explanation: "That's incorrect. The principle of least privilege is a concept and not a functional action."
+      explanation: "Incorrect. The principle of least privilege is a concept and not a functional action."
     - content: "Granular security"
       isCorrect: false
-      explanation: "That's incorrect. Granular security would involve granting access to the procedure, but not actual manage the privileges."
+      explanation: "Incorrect. Granular security would involve granting access to the procedure, but not actual manage the privileges."
 

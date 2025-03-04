@@ -5,10 +5,11 @@ metadata:
   prefetch-feature-rollout: true
   title: Manage security controls for identity and access
   description: "This module focuses on effectively managing security controls in Microsoft Entra ID by securing identities, authentication, and authorization to protect users, groups, and external identities against threats while ensuring secure and seamless access to resources."
-  ms.date: 02/11/2025
+  ms.date: 02/26/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: azure
@@ -18,15 +19,15 @@ summary: This module focuses on effectively managing security controls in Micros
 abstract: |
   By the end of this module, participants will be able to:
 
-  - Secure user identities in Microsoft Entra ID by implementing strong authentication and access management controls.
+  -   Secure user identities in Microsoft Entra ID by implementing strong authentication and access management controls.
 
-  - Protect groups and access management by enforcing security measures to prevent unauthorized changes or misuse.
+  -   Protect groups and access management by enforcing security measures to prevent unauthorized changes or misuse.
 
-  - Manage external identities securely by defining policies that ensure confidentiality, integrity, and proper access control.
+  -   Manage external identities securely by defining policies that ensure confidentiality, integrity, and proper access control.
 
-  - Implement Microsoft Entra ID Protection to detect, investigate, and mitigate identity-related security threats.
+  -   Implement Microsoft Entra ID Protection to detect, investigate, and mitigate identity-related security threats.
 
-  - Apply Conditional Access policies to enforce security controls based on user behavior, device compliance, and contextual risks.
+  -   Apply Conditional Access policies to enforce security controls based on user behavior, device compliance, and contextual risks.
 prerequisites: None
 iconUrl: /training/achievements/generic-badge.svg
 levels:

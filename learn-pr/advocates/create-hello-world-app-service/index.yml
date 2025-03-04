@@ -6,8 +6,9 @@ metadata:
   title: Deploy a simple Java Web App to Azure App Service
   description: Learn how to create a Java web application and deploy it to Azure App Service.
   ms.date: 12/11/2024
-  ms.author: ayangupta
   author: KarlErickson
+  ms.author: karler
+  ms.reviewer: ayangupta
   ms.topic: module
   ms.custom: team=cloud_advocates, devx-track-java, devx-track-extended-java
   ms.service: azure-app-service
