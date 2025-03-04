@@ -5330,3 +5330,8 @@ achievements:
   title: Connect and deploy to Ethereum networks
   summary: Learn about and use Ethereum networks for development, testing, and production.
   iconUrl: /training/achievements/reactors/blockchain-ethereum-networks.svg
+- uid: learn.ethereum-blockchain-development.trophy
+  type: trophy
+  title: Get started with blockchain development
+  summary: This learning path introduces you to blockchain and development on the Ethereum platform. Discover what skills are necessary to learn to begin building your own blockchain networks at scale.
+  iconUrl: /training/achievements/ethereum-blockchain-development.svg
