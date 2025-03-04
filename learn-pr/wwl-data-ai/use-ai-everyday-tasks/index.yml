@@ -11,7 +11,7 @@ metadata:
   ms.service: microsoft-copilot
   ai-usage: ai-generated
 title: Use AI for everyday tasks
-summary: Dive into the world of generative AI and discover how it can simplify your daily tasks.
+summary: Dive into the world of generative AI and discover how it can simplify your daily tasks.&nbsp;Whether you're looking to simplify routine tasks or explore new ways to innovate, AI can help you achieve more.
 abstract: |
   By the end of this course, you'll be able to:
 
@@ -22,6 +22,7 @@ abstract: |
   -   Write effective prompts and find helpful resources.
 prerequisites: None
 iconUrl: /training/achievements/generic-badge.svg
+hidden: true
 levels:
 - beginner
 roles:

@@ -16,7 +16,7 @@ Some common examples include:
 >
 > In Microsoft 365, you can now build your own agents to fit your specific needs, making your daily tasks easier and more efficient.
 >
-> To learn more, review [Introducing Copilot agents](https://support.microsoft.com/en-us/topic/introducing-copilot-agents-943e563d-602d-40fa-bdd1-dbc83f582466#:~:text=Copilot%20agents%20are%20specialized%20AI,expanding%20their%20reach%20and%20functionality.?azure-portal=true) and [Copilots & Agents](https://www.youtube.com/watch?v=oddeD2FTCyE).
+> To learn more, review [Introducing Copilot agents](https://support.microsoft.com/topic/introducing-copilot-agents-943e563d-602d-40fa-bdd1-dbc83f582466#:~:text=Copilot%20agents%20are%20specialized%20AI,expanding%20their%20reach%20and%20functionality.?azure-portal=true) and [Copilots & Agents](https://www.youtube.com/watch?v=oddeD2FTCyE).
 
 The real power of Microsoft 365 Copilot comes from the flow of using it across apps. There are many use cases for Copilot in Microsoft 365, including in communications, HR, legal, IT, sales, project management, market research, finance, and more. The [Copilot scenario library](https://adoption.microsoft.com/copilot-scenario-library?azure-portal=true) can help you get started.
 

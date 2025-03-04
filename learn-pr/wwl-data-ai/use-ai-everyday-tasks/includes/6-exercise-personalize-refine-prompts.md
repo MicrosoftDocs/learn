@@ -29,7 +29,7 @@ To start, you practice creating personalized prompts using a few fill-in-the-bla
 
 The following screenshot is an example of what Copilot might generate. How does it compare to the personalized prompt that you submitted?
 
-![Screenshot Copilot with the sample prompt pasted into the chat box.](../media/05-copilot-book-prompt-results.jpg)
+![Screenshot of the Copilot-generated book list.](../media/05-copilot-book-prompt-results.jpg)
 
 > [!TIP]
 > **Iterate and expand**. Remember that you can iterate, and ask Copilot to refine the ideas,  generate more ideas, or provide more information about your list. Use Copilot's suggestions to dig deeper. For example, ask Copilot: "Can you recommend similar books by diverse authors?", or "What makes these books stand out in terms of world-building?"

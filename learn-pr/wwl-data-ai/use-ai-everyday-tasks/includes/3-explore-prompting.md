@@ -2,7 +2,7 @@ To get the best out of AI, you want to create prompts that help it give you usef
 
 ## Write effective prompts
 
-![Image of person working on a laptop.](../media/03-write-prompt.jpg)
+![Screenshot of person working on a laptop.](../media/03-write-prompt.jpg)
 
 An effective prompt should be clear, specific, contextual, and goal oriented. By incorporating these elements into your prompts, you can ensure that you get more accurate and relevant responses from AI tools. Remember, the more information and guidance you provide in your prompt, the better Copilot can assist you.
 
@@ -32,14 +32,14 @@ The following table includes some everyday tasks that you could co-create with A
 
 The following image shows the playlist Copilot generated using the "best" prompt example. Note that it's formatted as a table and includes all of the requested details for each song.  
 
-![Copilot-generated playlist of 10 songs.](../media/03-playlist.jpg)
+![Screenshot of a Copilot-generated playlist of 10 songs.](../media/03-playlist.jpg)
 
 > [!NOTE]
 > One of the best ways to effectively work with Copilot is to ask it to refine the results. When you give a prompt to an AI, the first response might not be exactly what you want. So, look at the result, think about what you want to change, and then try again with a slightly different prompt. Each time you make a change, you're getting closer to the perfect result. This is called **iterating**.
 >
 > For example, let's say you used Copilot to create a menu for a dinner party, but you forgot you need to include vegetarian options. All you need to do is ask Copilot to update the menu to include some vegetarian dishes. This way, you can keep refining your prompts until you get the perfect result.
 >
-> ![Image of person cooking in a kitchen.](../media/03-food.jpg)
+> ![Screenshot of person cooking in a kitchen.](../media/03-food.jpg)
 
 ## Find inspiration
 

@@ -19,7 +19,7 @@ Copilot is a smart assistant that can simplify your daily routines by helping yo
 
 ### Write creative content
 
-![Image of a person working on a laptop.](../media/02-write-creative-content.jpg)
+![Screenshot of a person working on a laptop.](../media/02-write-creative-content.jpg)
 
 Struggling to start a project or come up with new ideas? Whether you're drafting an email, writing a blog post, or brainstorming for a podcast, AI can give you a starting point. It offers suggestions, generates text, and can even create entire pieces of content. For example, Copilot can help you:
 
@@ -31,7 +31,7 @@ By using AI for creative writing and content creation, you can enhance your prod
 
 ### Organize and plan
 
-![Image of a person working on a laptop.](../media/02-organize-plan.jpg)
+![Screenshot of a person typing on a tablet.](../media/02-organize-plan.jpg)
 
 AI can help you stay organized and plan your activities by providing personalized recommendations and streamlining your planning process. For example, Copilot can help you:
 
@@ -44,7 +44,7 @@ By using AI for organizing and planning, you can save time, reduce stress, and e
 
 ### Get personal assistance
 
-![Image of a Woman looking at her mobile device.](../media/02-personal-assistant.jpg)
+![Screenshot of a Woman looking at her mobile device.](../media/02-personal-assistant.jpg)
 
 Copilot can act as your personal assistant and help you manage your life. Whether you need reminders, information, or assistance with tasks, AI is there to support you. For example, Copilot can help you:
 
