@@ -16,7 +16,6 @@ The goal of this module is to become familiar with the network options in the Et
 
 - [Fundamental knowledge about blockchain](/training/modules/intro-to-blockchain/?azure-portal=true)
 - [Solidity programming knowledge](/training/modules/blockchain-learning-solidity/?azure-portal=true)
-- [Ethereum smart contract knowledge](/training/modules/blockchain-solidity-ethereum-smart-contracts/?azure-portal=true)
 - Previous experience with a programming language like C, Python, or JavaScript
 - Basic knowledge of programming concepts
 - Enough familiarity with command-line tools to create new directories and install programs

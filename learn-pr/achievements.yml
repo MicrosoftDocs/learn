@@ -5320,3 +5320,13 @@ achievements:
   title: Write automated tests
   summary: Learn about the types of testing you can do with Rust.
   iconUrl: /training/achievements/rust-automated-tests.svg
+- uid: learn.reactors.blockchain-tokens.badge
+  type: badge
+  title: Create tokens using OpenZeppelin
+  summary: Learn about the significance of tokens and how they are used in blockchain.
+  iconUrl: /training/achievements/reactors/blockchain-tokens.svg
+- uid: learn.reactors.blockchain-solidity-ethereum-smart-contracts.badge
+  type: badge
+  title: Write Ethereum smart contracts by using Solidity
+  summary: Learn how to install and use tools that you can use to develop smart contracts.
+  iconUrl: /training/achievements/reactors/blockchain-solidity-ethereum-smart-contracts.svg
