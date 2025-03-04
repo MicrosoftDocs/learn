@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-prepare-genaiops.exercise
+title: Exercise - Compare language models from the model catalog
+metadata:
+  title: Exercise - Compare language models from the model catalog
+  description: Compare language models from the model catalog.
+  author: madiepev
+  ms.author: madiepev
+  ms.date: 02/21/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise.md)]
