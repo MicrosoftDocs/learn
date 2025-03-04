@@ -9,7 +9,6 @@ In the next module in this Learning Path, we explore how to iterate through data
 Visit the following links to learn more about some of the items we explored in this module:
 
 - [Get started with Rust][Get-started]
-<!-- [Create your first Rust program][Create-program] -->
 - [Learn about the classic C programming struct type][Wikipedia-C]
 - [Review algebraic data types][Wikipedia-algebraic]
 
@@ -43,7 +42,6 @@ Visit the following links to learn more about some of the items we explored in t
 <!-- Links -->
 
 [Get-started]: /training/modules/rust-get-started/?azure-portal=true
-<!-- [Create-program]: /learn/modules/rust-create-program/?azure-portal=true -->
 [Wikipedia-algebraic]: https://wikipedia.org/wiki/Algebraic_data_type?azure-portal=true
 [Wikipedia-C]: https://wikipedia.org/wiki/Struct_(C_programming_language)?azure-portal=true
 
