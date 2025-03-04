@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.plan-prepare-genaiops
+metadata:
+  title: Plan and prepare a GenAIOps solution
+  description: Learn how to plan and prepare a GenAIOps solution.
+  author: madiepev
+  ms.author: madiepev
+  ms.date: 02/21/2025
+  ms.service: azure-ai-services
+  ms.topic: module-standard-task-based
+  ms.custom: ai-learning-hub
+  ms.collection:
+    - wwl-ai-copilot
+title: Plan and prepare a GenAIOps solution
+summary: Learn how to develop chat applications with language models using a code-first development approach. By developing generative AI apps code-first, you can create robust and reproducible flows that are integral for generative AI Operations, or GenAIOps.
+abstract: |
+  By the end of this module, you're able to:
+    - Identify use cases for Generative AI applications.
+    - Select a model for your Generative AI application.
+    - Describe what GenAIOps is, and how it defines the app lifecycle.
+prerequisites: |
+  Before starting this module, you should be familiar with fundamental generative AI concepts and services in Azure. Consider completing the [Fundamentals of Generative AI](/training/modules/fundamentals-generative-ai/) module first.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles: 
+  - data-scientist
+  - ai-engineer
+products: 
+  - azure
+  - ai-services
+subjects: 
+  - cloud-computing
+  - artificial-intelligence
+  - machine-learning
+  - natural-language-processing
+units:
+- learn.wwl.plan-prepare-genaiops.introduction
+- learn.wwl.plan-prepare-genaiops.use-cases
+- learn.wwl.plan-prepare-genaiops.select-model
+- learn.wwl.plan-prepare-genaiops.lifecycle-overview
+- learn.wwl.plan-prepare-genaiops.tools-frameworks
+- learn.wwl.plan-prepare-genaiops.exercise
+- learn.wwl.plan-prepare-genaiops.knowledge-check
+- learn.wwl.plan-prepare-genaiops.summary
+badge:
+  uid: learn.wwl.plan-prepare-genaiops.badge
