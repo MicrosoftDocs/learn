@@ -1,5 +1,9 @@
 Azure VMware Solution supports attaching Network File System (NFS) datastores as a persistent storage option to expand virtual machine storage without scaling the Azure VMware Solution cluster.
 
+> [!IMPORTANT] 
+
+> Try our expanding storage with external storage using Azure NetApp files click-through demo. This demo shows how to attach an external storage solution, such as Azure NetApp Files, to an Azure VMware Solution Private Cloud, expanding the storage capacity of the Private Cloud by attaching a datastore independently of compute capacity. [Try now](https://regale.cloud/Microsoft/play/3230/expanding-storage-with-external-storage-azure-netapp-files#/0/0)
+
 To attach your NFS datastore as a persistent storage option in Azure VMware Solution, you need the following resources:
 
 - Access to an Azure subscription with an Azure VMware Solution private cloud.
