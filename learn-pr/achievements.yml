@@ -5270,3 +5270,53 @@ achievements:
   title: Explore modules, packages, and third-party crates
   summary: Learn about how to effectively use modules and how to integrate with packages and third-party crates.
   iconUrl: /training/achievements/rust-modules-packages-crates.svg
+- uid: learn.languages.rust-memory-management.badge
+  type: badge
+  title: Understand how Rust manages memory
+  summary: Discover the features that make Rust so unique - ownership and borrowing.
+  iconUrl: /training/achievements/rust-memory-management.svg
+- uid: learn.language.rust-loop-expressions.badge
+  type: badge
+  title: Use loops to iterate through data in Rust
+  summary: Explore how to use hash maps in Rust. Discover how to use loop expressions to iterate through data.
+  iconUrl: /training/achievements/rust-understand-common-concepts.svg
+- uid: learn.language.rust-introduction.badge
+  type: badge
+  title: What is Rust
+  summary: A quick introduction to Rust language features and how Rust compares with other programming languages.
+  iconUrl: /training/achievements/rust-get-started.svg
+- uid: learn.language.rust-if-else-expressions.badge
+  type: badge
+  title: Test conditions with if/else expressions in Rust
+  summary: Explore Rust compound data types like arrays and vectors. Discover how to use if/else statements to test conditions.
+  iconUrl: /training/achievements/rust-understand-common-concepts.svg 
+- uid: learn.language.rust-generic-types-traits.badge
+  type: badge
+  title: Implement generic types and traits
+  summary: Understand what generic types and traits are and how to use them in Rust.
+  iconUrl: /training/achievements/rust-generic-types-traits.svg 
+- uid: learn.language.rust-error-handling.badge
+  type: badge
+  title: Handle errors in Rust
+  summary: UIn this module, you'll learn about ways to handle errors in Rust.
+  iconUrl: /training/achievements/rust-error-handling.svg 
+- uid: learn.language.rust-create-command-line-program.badge
+  type: badge
+  title: Build a command-line to-do list program
+  summary: Create a command-line program to manage to-do list items.
+  iconUrl: /training/achievements/rust-create-command-line-program.svg
+- uid: learn.language.rust-create-program.badge
+  type: badge
+  title: Create your first Rust program
+  summary: Learn about Rust concepts, including variables, data types, and functions.
+  iconUrl: /training/achievements/rust-understand-common-concepts.svg 
+- uid: learn.languages.rust-first-steps.trophy
+  type: trophy
+  title: Take your first steps with Rust
+  summary: Interested in learning a new programming language that's growing in use and popularity? Start here! Lay the foundation of knowledge you need to build fast and effective programs in Rust.
+  iconUrl: /training/achievements/take-your-first-steps-with-rust.svg
+- uid: learn.language.rust-automated-tests.badge
+  type: badge
+  title: Write automated tests
+  summary: Learn about the types of testing you can do with Rust.
+  iconUrl: /training/achievements/rust-automated-tests.svg
