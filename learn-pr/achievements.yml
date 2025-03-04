@@ -5320,3 +5320,13 @@ achievements:
   title: Write automated tests
   summary: Learn about the types of testing you can do with Rust.
   iconUrl: /training/achievements/rust-automated-tests.svg
+- uid: learn.reactors.blockchain-learning-solidity.badge
+  type: badge
+  title: Learn how to use Solidity
+  summary: Discover how Solidity can make it easy to program smart contracts for the Ethereum blockchain platform.
+  iconUrl: /training/achievements/reactors/blockchain-learning-solidity.svg
+- uid: learn.reactors.blockchain-ethereum-networks.badge
+  type: badge
+  title: Connect and deploy to Ethereum networks
+  summary: Learn about and use Ethereum networks for development, testing, and production.
+  iconUrl: /training/achievements/reactors/blockchain-ethereum-networks.svg
