@@ -16,6 +16,10 @@ The solution architecture depicts the following configuration:
 
 - Secondary Azure VMware Solution is deployed in the secondary region.  
 
+> [!IMPORTANT] 
+
+> Try our VMware Site Recovery Manager click-through demo. This demo shows how an organization can confidently implement disaster recovery for on-premises VMware vSphere virtual machines (VMs) or Azure VMware Solution-based VMs. [Try now](https://regale.cloud/Microsoft/play/3245/vmware-site-recovery-manager-srm#/0/0)
+
 ## Deployment workflow for Azure VMware Solution
 
 To deploy Azure VMware Solution in your test environment, you must perform the following steps:

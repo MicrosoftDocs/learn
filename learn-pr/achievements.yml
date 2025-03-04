@@ -5270,3 +5270,13 @@ achievements:
   title: Create your first Rust program
   summary: Learn about Rust concepts, including variables, data types, and functions.
   iconUrl: /training/achievements/rust-understand-common-concepts.svg 
+- uid: learn.languages.rust-first-steps.trophy
+  type: trophy
+  title: Take your first steps with Rust
+  summary: Interested in learning a new programming language that's growing in use and popularity? Start here! Lay the foundation of knowledge you need to build fast and effective programs in Rust.
+  iconUrl: /training/achievements/take-your-first-steps-with-rust.svg
+- uid: learn.language.rust-automated-tests.badge
+  type: badge
+  title: Write automated tests
+  summary: Learn about the types of testing you can do with Rust.
+  iconUrl: /training/achievements/rust-automated-tests.svg

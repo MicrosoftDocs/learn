@@ -43699,6 +43699,56 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/rust-first-steps/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/rust-automated-tests/0-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/rust-automated-tests/1-unit-tests.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/rust-automated-tests/2-exercise-unit-tests.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/rust-automated-tests/3-documentation-tests.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/rust-automated-tests/4-exercise-documentation-tests.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/rust-automated-tests/5-integration-tests.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/rust-automated-tests/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/rust-automated-tests/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/rust-automated-tests/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/language/rust-create-command-line-program/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
