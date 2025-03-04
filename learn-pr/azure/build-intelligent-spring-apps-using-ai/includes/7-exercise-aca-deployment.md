@@ -1,143 +1,201 @@
 In this unit we deploy our Spring AI application to Azure Container Apps for scalable and serverless container hosting.
 
-## Azure Container Apps Setup
+## Environment Variables Setup
 
-Before we can deploy the Azure Container App, we need to run some `az` CLI commands to prepare the environment for deployment.
+Before we can deploy the Azure Container App, we need to make some changes to the `pom.xml`.
 
-1. Because the option to deploy via artifact is currently in preview, you need to install the Container Apps extension with `--allow-preview true` (this command may take a few minutes to complete):
+For this exercise, we need to some environment variables from prior exercises.
 
-  ```azurecli
-  az extension add --name containerapp --upgrade --allow-preview true
-  ```
-
-1. For this exercise, we need to some environment variables from the prior exercise. Ensure these variables are still available in your terminal session, and if not, recreate them from the values used previously:
+1. Confirm these variables are available:
 
   ```bash
+  export RESOURCE_GROUP=spring-ai-postgresql-rg
+  export LOCATION=eastus2
   echo "RESOURCE_GROUP: $RESOURCE_GROUP LOCATION: $LOCATION"
   ```
 
-1. Next we need some new variables specific to the Container App environment, API name and the Subscription value:
+1. Confirm OpenAI Key and Endpoint variables from prior exercise are available:
 
   ```bash
-  ENVIRONMENT="env-spring-ai-containerapps"
-  API_NAME="rag-api"
-  SUBSCRIPTION=$(az account show --query 'id' --output tsv)
-  echo "SUBSCRIPTION: $SUBSCRIPTION"
+  echo "Azure OpenAI Endpoint: $AZURE_OPENAI_ENDPOINT, key: $AZURE_OPENAI_API_KEY"
   ```
+
+1. Confirm `DB_SERVER_NAME` and `PGHOST` variable from prior exercise is available:
+
+  ```bash
+  echo "DB_SERVER_NAME: $DB_SERVER_NAME PGHOST: $PGHOST"
+  ```
+
+1. Export a name for the new container app:
+
+  ```bash
+  CONTAINER_APP_NAME=rag-api
+  ```
+
+1. Export the name to use as the Managed Identity for the Azure Container App:
+
+```azurecli
+MANAGED_IDENTITY_NAME=containerappusr
+```
+
+With these environment values in place, you are now ready to deploy the application into Azure Container Apps.
+
+## Create Dockerfile
+
+We will now create a `Dockerfile` that will be used to build a docker image with the application code to be used to deploy to Azure Container Apps:
+
+```txt
+# Step 1: Use microsoft JDK image with maven3 to build the application
+FROM mcr.microsoft.com/openjdk/jdk:17-mariner AS builder
+RUN tdnf install maven3 -y
+WORKDIR /app
+COPY pom.xml ./
+COPY src ./src
+RUN mvn clean package -DskipTests
+
+# Step 2: Use microsoft JDK image for the final image
+FROM mcr.microsoft.com/openjdk/jdk:17-mariner
+WORKDIR /app
+COPY --from=builder /app/target/*.jar app.jar
+ENTRYPOINT ["java", "-jar", "app.jar"]
+```
+
 
 ## Deploy Azure Container Application
 
-Rebuild the application to generate the deployable JAR (Java Archive) file:
+To deploy the application use the following command:
 
 ```bash
-mvn clean package -DskipTests
+az containerapp up --name $CONTAINER_APP_NAME \
+  --resource-group $RESOURCE_GROUP \
+  --environment $ENVIRONMENT \
+  --source . \
+  --ingress external \
+  --target-port 8080 \
+  --location $LOCATION
 ```
 
-The `jar` file will be created within the `target` directory with this name: `spring-ai-app-0.0.1-SNAPSHOT.jar`. Take a note of that file path, proceed to deploy the application using this command:
+This command will create a Container Apps Environment, new Azure Container Registry, build a container image and deploy the container app using the image as you will see from the output:
+
+To view the logs of your Azure Container App, use the following command:
 
 ```azurecli
-az containerapp up --name $API_NAME \
+az containerapp logs show \
+  --name $CONTAINER_APP_NAME \
   --resource-group $RESOURCE_GROUP \
-  --location $LOCATION \
-  --environment $ENVIRONMENT \
-  --artifact ./target/spring-ai-app-0.0.1-SNAPSHOT.jar --ingress external --target-port 8080 --subscription $SUBSCRIPTION
+  --tail 80
 ```
 
-1. **Create Container Apps Environment**:
+Inspect the logs and you will notice that the application is not starting successfully due to missing configuration values as expected:
+
+```json
+{"TimeStamp": "2025-03-04T19:04:52.7673831+00:00", "Log": "F Caused by: org.postgresql.util.PSQLException: 
+FATAL: Azure AD user token for role[AzureAdmin] is neither an AAD_AUTH_TOKENTYPE_APP_USER or an 
+AAD_AUTH_TOKENTYPE_APP_OBO token."}
+```
+
+To redeploy the application after making changes, you can use the following command:
+
 ```bash
-az containerapp env create \
-  --name spring-ai-env \
-  --resource-group spring-ai-demo \
-  --location eastus
+az containerapp update --name $CONTAINER_APP_NAME \
+  --resource-group $RESOURCE_GROUP \
+  --source .
 ```
 
-2. **Deploy Application**:
-```bash
-az containerapp up \
-  --name spring-ai-app \
-  --resource-group spring-ai-demo \
-  --environment spring-ai-env \
-  --source . \
-  --target-port 8080 \
-  --ingress external
+## Enable managed identity
+
+The Container App needs to be able to authenticate to PostgresSQL server. We will use System Assigned Managed Identities to accomplish this.
+
+To enable system-assigned managed identity for your Azure Container App, use this command:
+
+```azurecli
+az containerapp identity assign \
+  --name $CONTAINER_APP_NAME \
+  --resource-group $RESOURCE_GROUP \
+  --system-assigned
 ```
 
-## Environment Configuration
+To get the ID of the system assigned managed identity, use the following command:
 
-Set environment variables:
+```azurecli
+MANAGED_IDENTITY_ID=$(az containerapp show --name $CONTAINER_APP_NAME \
+  --resource-group $RESOURCE_GROUP --query 'identity.principalId' --output tsv | tr -d '\r')
+echo "Managed Identity ID: $MANAGED_IDENTITY_ID"
+```
+
+To authorize the managed identity of your Azure Container App to access the PostgreSQL Flexible Server instance, use the following command:
+
+```azurecli
+az postgres flexible-server ad-admin create \
+  --resource-group $RESOURCE_GROUP \
+  --server-name $DB_SERVER_NAME \
+  --display-name $MANAGED_IDENTITY_NAME \
+  --object-id $MANAGED_IDENTITY_ID \
+  --type ServicePrincipal
+```
+
+## Azure Container App Environment and Secret Configuration
+
+Create a secret for sensitive values:
+
 ```bash
 az containerapp secret set \
-  --name spring-ai-app \
-  --resource-group spring-ai-demo \
+  --name $CONTAINER_APP_NAME \
+  --resource-group $RESOURCE_GROUP \
   --secrets \
-    openai-key=$AZURE_OPENAI_API_KEY \
-    db-password="YourSecurePassword123!"
+    azure-openai-api-key=$AZURE_OPENAI_API_KEY
+```
 
+Next set environment variables:
+
+```azurecli
 az containerapp update \
-  --name spring-ai-app \
-  --resource-group spring-ai-demo \
+  --name $CONTAINER_APP_NAME \
+  --resource-group $RESOURCE_GROUP \
   --set-env-vars \
-    AZURE_OPENAI_API_KEY=secretref:openai-key \
-    SPRING_DATASOURCE_PASSWORD=secretref:db-password
+    SPRING_AI_AZURE_OPENAI_API_KEY=secretref:azure-openai-api-key \
+    SPRING_AI_AZURE_OPENAI_ENDPOINT=${AZURE_OPENAI_ENDPOINT} \
+    SPRING_DATASOURCE_USERNAME=${MANAGED_IDENTITY_NAME} \
+    SPRING_DATASOURCE_URL=jdbc:postgresql://${PGHOST}/postgres?sslmode=require \
+    SPRING_AI_VECTORSTORE_PGVECTOR_SCHEMA_NAME=containerapp
 ```
 
-## Deployment Architecture
-
-```mermaid
-graph LR
-    A[Container Apps] -->|Requests| B[Spring AI App]
-    B -->|AI Queries| C[Azure OpenAI]
-    B -->|Data Storage| D[PostgreSQL]
-```
+Note that we intentionally use a different pgvector schema name to avoid conflicts from using the same schema name with a different user.
 
 ## Verify Deployment
 
-1. **Get Application URL**:
+Get Container App URL:
+
 ```bash
-az containerapp show \
-  --name spring-ai-app \
-  --resource-group spring-ai-demo \
-  --query properties.configuration.ingress.fqdn
+URL=$(az containerapp show \
+  --name $CONTAINER_APP_NAME \
+  --resource-group $RESOURCE_GROUP \
+  --query properties.configuration.ingress.fqdn \
+  --output tsv)
 ```
 
-2. **Test Endpoint**:
+Test Endpoint:
+
 ```bash
-curl -X POST https://spring-ai-app.xxx.azurecontainerapps.io/ask \
-  -H "Content-Type: application/json" \
-  -d '{"query":"What is Spring AI?"}'
+curl -G "https://$URL/api/rag" --data-urlencode "query=How does QuestionAnswerAdvisor work in Spring AI?"
+```
+
+Expect to see a valid response:
+
+```markdown
+In the context of **Spring AI**, the **QuestionAnswerAdvisor** operates as a key component for enabling **Retrieval Augmented Generation (RAG)**, which combines user queries with external contextual data to produce accurate and relevant AI responses.
 ```
 
 ## Cleanup
 
-Remove resources when done:
+Once you are done testing, you can remove resources when done:
+
 ```bash
 az group delete \
-  --name spring-ai-demo \
+  --name $RESOURCE_GROUP \
   --yes --no-wait
 ```
 
-## Best Practices
+## Unit Summary
 
-1. **Security**
-   - Use managed identities
-   - Store secrets in Key Vault
-   - Enable HTTPS only
-
-2. **Monitoring**
-   - Set up Application Insights
-   - Configure logging
-   - Monitor resource usage
-
-3. **Scaling**
-   - Configure auto-scaling rules
-   - Set resource limits
-   - Monitor performance
-
-🔐 Remember: Always use secure secrets management in production!
-
-## Next Steps
-
-Now that your application is deployed, let's:
-1. Set up monitoring and observability
-2. Configure scaling rules
-3. Implement security best practices
+In this unit, we successfully deployed a Spring AI application to Azure Container Apps, leveraging scalable and serverless container hosting. We set up necessary environment variables, created a Dockerfile to build the application image, and deployed the container app using Azure CLI commands. We enabled managed identity for secure authentication to the PostgreSQL server and configured secrets and environment variables for the application. Finally, we verified the deployment by testing the application endpoint and learned how to clean up resources after testing.

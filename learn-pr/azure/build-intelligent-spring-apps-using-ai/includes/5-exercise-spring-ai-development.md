@@ -22,7 +22,7 @@ Before we start building our AI-powered application, let's set up our developmen
 
    ```azurecli
    az login
-```
+   ```
 
 ## Environment Variables Setup
 
@@ -177,21 +177,21 @@ Before we can run the application successfully, we need to add required configur
 Retrieve the **Azure OpenAI Resource Endpoint** using this command:
 
 ```azcli
-az cognitiveservices account show \
+AZURE_OPENAI_ENDPOINT=$(az cognitiveservices account show \
   --name $OPENAI_RESOURCE_NAME \
   --resource-group $RESOURCE_GROUP \
   --query "properties.endpoint" \
-  --output tsv
+  --output tsv | tr -d '\r')
 ```
 
 Retrieve the **Azure OpenAI Resource Key** using this command:
 
 ```azcli
-az cognitiveservices account keys list \
+AZURE_OPENAI_API_KEY=$(az cognitiveservices account keys list \
   --name $OPENAI_RESOURCE_NAME \
   --resource-group $RESOURCE_GROUP \
   --query "key1" \
-  --output tsv
+  --output tsv | tr -d '\r')
 ```
 
 Additionally we need to provide the **PostgreSql URL**, which you can retrieve using command from prior exercise:
@@ -275,7 +275,7 @@ public class RagService {
         answer = this.chatClient.prompt()
             .user(promptText)
             .call()
-            .chatResponse().getResult().getOutput().getText();
+            .content();
         return answer;
     }
 }

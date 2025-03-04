@@ -12,11 +12,6 @@ Congratulations! You completed this comprehensive module on building AI-powered 
    - PostgreSQL with pgvector
    - Container Apps deployment
 
-3. **Development Best Practices**
-   - Testing strategies
-   - Observability setup
-   - Scaling configuration
-
 ## Next Steps
 
 To continue your learning journey:
@@ -42,13 +37,5 @@ To continue your learning journey:
 - [Azure OpenAI Service](/azure/cognitive-services/openai/)
 - [Azure Container Apps](/azure/container-apps/)
 - [PostgreSQL Documentation](https://www.postgresql.org/docs/)
-
-## Cleanup
-
-Remember to clean up your Azure resources:
-
-```bash
-az group delete --name spring-ai-demo --yes --no-wait
-```
 
 Congratulations on completing this module! You're now ready to build sophisticated AI applications using Spring AI and Azure!

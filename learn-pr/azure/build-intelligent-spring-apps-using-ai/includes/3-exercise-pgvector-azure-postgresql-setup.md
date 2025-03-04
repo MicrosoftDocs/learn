@@ -26,10 +26,10 @@ PUBLIC_IP=$(curl -s ipinfo.io/ip)
 echo "Start IP: $$PUBLIC_IP"
 ```
 
-![Note]
-!The IP address may change and the corresponding firewall rule needs to be updated accordingly
-![Tip]
-!This command should work in most Linux distributions and git bash. If it doesn't work, you can alternatively get your public IP address using [https://whatismyipaddress.com/](https://whatismyipaddress.com/)
+> [!Note]
+> The IP address may change and the corresponding firewall rule needs to be updated accordingly
+> [!Tip]
+> This command should work in most Linux distributions and git bash. If it doesn't work, you can alternatively get your public IP address using [https://whatismyipaddress.com/](https://whatismyipaddress.com/)
 
 ### Create a resource group
 
@@ -73,6 +73,17 @@ This command takes a few minutes to complete. Once completed, a similar output i
 }
 ```
 
+For testing purposes only, run the following command to create a firewall rule to allow access to a wider IP range:
+
+   ```azurecli
+   az postgres flexible-server firewall-rule create \
+     --rule-name allowiprange \
+     --resource-group $RESOURCE_GROUP \
+     --name $DB_SERVER_NAME \
+     --start-ip-address 0.0.0.0 \
+     --end-ip-address 255.255.255.255
+   ```
+
 ### Grant admin access to your Azure Entra ID
 
 Run the following command to get the `object id` for your Entra ID:
@@ -85,10 +96,10 @@ Run the following command to grant admin access to your Entra ID:
 
 ```azurecli
 az postgres flexible-server ad-admin create --server-name $DB_SERVER_NAME -g $RESOURCE_GROUP \
-   --object-id $USER_OBJECT_ID --display-name AzureAdmin
+   --object-id $USER_OBJECT_ID --display-name azureuser
 ```
 
-### Whitelist required extensions for pgvector
+### Update allowlist required extensions for pgvector
 
 Before we can enable extensions required by pgvector, we need to allow them using this `az` command:
 
@@ -103,7 +114,7 @@ Use this command to get the fully qualified host name for your database server:
 
 ```bash
 export PGHOST=$(az postgres flexible-server show --resource-group $RESOURCE_GROUP \
-  --name $DB_SERVER_NAME --query fullyQualifiedDomainName --output tsv)
+  --name $DB_SERVER_NAME --query fullyQualifiedDomainName --output tsv | tr -d '\r')
 ```
 
 Run this command to get access token for your user ID:
@@ -117,7 +128,7 @@ export PGPASSWORD="$(az account get-access-token \
 Connect to database using `psql` client with this command:
 
 ```bash
-psql "host=$PGHOST dbname=postgres user=AzureAdmin sslmode=require"
+psql "host=$PGHOST dbname=postgres user=azureuser sslmode=require"
 ```
 
 Example PSQL output:
@@ -131,17 +142,6 @@ psql (14.13, server 16.4)
 
 postgres=>
 ```
-
-If the above command times out or you're having difficulty connecting from your IP, you can use the following command to create a firewall rule to allow access to a wider IP range:
-
-   ```azurecli
-   az postgres flexible-server firewall-rule create \
-     --rule-name allowiprange \
-     --resource-group $RESOURCE_GROUP \
-     --name $DB_SERVER_NAME \
-     --start-ip-address 0.0.0.0 \
-     --end-ip-address 255.255.255.255
-   ```
 
 Once this rule is created, you can update using `az postgres flexible-server firewall-rule update`
 
