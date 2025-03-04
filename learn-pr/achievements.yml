@@ -5260,6 +5260,16 @@ achievements:
   title: Prepare to develop AI solutions on Azure
   summary: As an aspiring Azure AI Engineer, you should understand core concepts and principles of AI development, and the capabilities of Azure services used in AI solutions.
   iconUrl: /training/achievements/azure-develop-ai-solutions.svg
+- uid: learn.languages.rust-memory-management.badge
+  type: badge
+  title: Understand how Rust manages memory
+  summary: Discover the features that make Rust so unique - ownership and borrowing.
+  iconUrl: /training/achievements/rust-memory-management.svg
+- uid: learn.language.rust-loop-expressions.badge
+  type: badge
+  title: Use loops to iterate through data in Rust
+  summary: Explore how to use hash maps in Rust. Discover how to use loop expressions to iterate through data.
+  iconUrl: /training/achievements/rust-understand-common-concepts.svg
 - uid: learn.language.rust-introduction.badge
   type: badge
   title: What is Rust
