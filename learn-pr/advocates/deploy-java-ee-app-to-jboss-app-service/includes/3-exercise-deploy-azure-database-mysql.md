@@ -1,16 +1,16 @@
-In this exercise, you'll create your Azure for MySQL Database instance and load it with sample data.
+In this exercise, you create your Azure Database for MySQL - Flexible Server instance and load it with sample data.
 
 ## Get the sample application and script
 
-First, clone the sample application and shell script from the GitHub repository:
+1. Clone the sample application and shell script from the GitHub repository by using the following command:
 
-```bash
-git clone https://github.com/MicrosoftDocs/mslearn-jakarta-ee-azure.git
+    ```bash
+    git clone https://github.com/MicrosoftDocs/mslearn-jakarta-ee-azure.git
+    ```
+
+Cloning the project produces the following file structure in the directory that you cloned in:
+
 ```
-
-After you clone the project, you'll see the following directories and files:
-
-```text
 ├── LICENSE
 ├── README.md
 ├── mvnw
@@ -48,12 +48,11 @@ After you clone the project, you'll see the following directories and files:
                     └── azure
                         └── samples
                             └── SampleTest.java
-21 directories, 17 files
 ```
 
 ## Sign in to Azure
 
-If you haven't already done so, sign in to Azure:
+If you haven't already done so, sign in to Azure by using the following command:
 
 ```azurecli
 az login
@@ -61,27 +60,28 @@ az login
 
 ## Set up a default installation location
 
-The commands executed by the script used in this module expect a `--location` option. You can specify a default value for this option with the following command.
+The commands executed by the script used in this module expect a `--location` option. Specify a default value for this option by using the following command, replacing `<desired-location>` with an appropriate region:
 
 ```azurecli
-az configure --defaults location=<desired location>
+az configure \
+    --defaults location=<desired-location>
 ```
 
 > [!NOTE]
-> We advise you to change to the same region for deploying your Jakarta EE application.
+> We advise you to use the same region you used for deploying your Jakarta EE application.
 
-## Create an Azure Database for MySQL instance
+## Create an Azure Database for MySQL - Flexible Server instance
 
-After you've signed in, use the project script `setup_mysql.sh` to create your Azure Database for MySQL flexible server instance. Make sure you're in the `mslearn-jakarta-ee-azure` directory.
+1. Navigate to the **mslearn-jakarta-ee-azure** directory, and use the following command to create your Azure Database for MySQL Flexible Server instance:
 
-> [!IMPORTANT]
-> Run the following command in an IPv4 environment. If your environment has a IPv6 address, this command will fail because the firewall configuration for it doesn't support IPv6 addresses yet.
+    > [!IMPORTANT]
+    > Run the following command in an IPv4 environment. If your environment has an IPv6 address, the command will fail because the firewall configuration for it doesn't support IPv6 addresses yet.
 
-```bash
-./setup_mysql.sh flexible
-```
+    ```bash
+    ./setup_mysql.sh flexible
+    ```
 
-Note the key values that appear in the output of the command. You'll use those values in later steps.
+Note the key values that appear in the output of the command. You use those values in later steps.
 
 ```text
 [INFO] -------------------------------------------------------
@@ -110,105 +110,150 @@ Note the key values that appear in the output of the command. You'll use those v
 ```
 
 > [!NOTE]
-> If an error occurs during the execution of the script, the process will stop midway. If an error occurs while 'Granting the User.Read.All, GroupMember.Read.All, and Application.Read.All permissions to the user managed identity', please log in to Azure CLI again with a user that has Azure AD administrator privileges and then re-run the script.
+> If an error occurs during the execution of the script, the process stops in the middle of the execution. If an error occurs during `Granting the User.Read.All, GroupMember.Read.All, and Application.Read.All permissions to the user managed identity`, sign in to the Azure CLI again with a user that has `Azure AD administrator` privileges and then re-run the script.
 
 ## Get data from the sample database
 
-In this module, you'll use a sample database called `world` from the official MySQL website. To get the data:
+In this module, you use a sample database called `world` from the official MySQL website. To get the data, use the following steps:
 
-1. Download the database file:
+1. Download the database file by using the following command:
 
-   ```bash
-   curl -o world-db.zip https://downloads.mysql.com/docs/world-db.zip
-   ```
+    ```bash
+    curl -o world-db.zip https://downloads.mysql.com/docs/world-db.zip
+    ```
 
-1. Unzip the database file:
+1. Unzip the database file by using the following command:
 
-   ```bash
-   unzip world-db.zip
-   ```
+    ```bash
+    unzip world-db.zip
+    ```
 
-1. Access the SQL file:
+1. Access the SQL file by using the following commands:
 
-   ```bash
-   cd world-db
-   ls -l world.sql
-   ```
- 
-   ``` output
-   -rw-r--r--  1 ******  wheel  398635  1  7 12:25 world.sql
-   ```
+    ```bash
+    cd world-db
+    ls -l world.sql
+    ```
 
-## Sign in to the MySQL database
+    The following output is typical:
 
-To connect to the MySQL flexible server, you can use one of the two methods described in the below when the MySQL flexible server was set up:
+    ```output
+    -rw-r--r--  1 ******  wheel  398635  1  7 12:25 world.sql
+    ```
 
-1. Connect to the MySQL flexible server using the mysql command:
+## Sign in to the database
 
-   Obtain the access token for the currently logged-in user and connect to the MySQL flexible server
+To sign in to the database and view the available usernames and plugins, use the following steps:
 
-   ```bash
-    mysql -h $MYSQL_SERVER_INSTANCE.mysql.database.azure.com --user CURRENT_AZ_LOGIN_USER_NAME#EXT#@CURRENT_AZ_LOGIN_USER_NAME --enable-cleartext-plugin --password=$(az account get-access-token --resource-type oss-rdbms --output tsv --query accessToken)
-   ```
+### [MySQL](#tab/mysql)
+
+1. To connect to the Azure Database for MySQL - Flexible Server instance, use the following command:
+
+    ```bash
+     mysql \
+         --host $MYSQL_SERVER_INSTANCE.mysql.database.azure.com \
+         --user CURRENT_AZ_LOGIN_USER_NAME#EXT#@CURRENT_AZ_LOGIN_USER_NAME \
+         --enable-cleartext-plugin \
+         --password=$(az account get-access-token --resource-type oss-rdbms --output tsv --query accessToken)
+    ```
 
    > [!NOTE]
-   > Starting from MySQL version 8, the default authentication plugin has been changed to caching_sha2_password. Therefore, when you try to authenticate using only the username and password with the mysql command, you will encounter the following error:
+   > Starting from MySQL version 8, the default authentication plugin is `caching_sha2_password`. Therefore, when you try to authenticate using only the username and password with the `mysql` command, you encounter the following error:
    > `ERROR 2059 (HY000): Authentication plugin 'mysql_native_password' cannot be loaded:`
-   > To address this, we create an administrative user who can access to the MySQL database by `az mysql flexible-server ad-admin create` command with the user logged in to Azure CLI when creating the MySQL DB
+   > To address this, you create an administrative user who can access to the database with the user already signed in to the database. The command you use to create this admin user is `az mysql flexible-server ad-admin create`.
 
-2. Connect to the MySQL flexible server by Azure CLI:
+### [Azure CLI](#tab/azure-cli)
 
-   If you prefer to connect using only the username and password instead of an access token, you can do so using Azure CLI as shown below.
+1. Use the following command to connect using only the username and password instead of an access token:
 
-   ```bash
-   az mysql flexible-server connect -n $MYSQL_SERVER_INSTANCE -u azureuser -p $PASSWORD --interactive
-   Password: [$PASSWORD]
-   ```
+    ```bash
+    az mysql flexible-server connect \
+        --name $MYSQL_SERVER_INSTANCE \
+        --user azureuser \
+        --interactive 
+    ```
 
-3. Confirm the available usernames and the plugins
+    When the system prompts you, enter a password.
 
-   After connecting to MySQL, you can check the available usernames and the plugins in use with the following command.
+    ```bash
+    Password:
+    ```
 
-   ```mysql
-   mysql> SELECT user, host, plugin FROM mysql.user;
-   +----------------------------------+-----------+-----------------------+
-   | user                             | host      | plugin                |
-   +----------------------------------+-----------+-----------------------+
-   | azureuser                        | %         | mysql_native_password |
-   | $CURRENT_AZ_LOGIN_USER_NAME#EXT#@| %         | aad_auth              |
-   | azure_superuser                  | 127.0.0.1 | mysql_native_password |
-   | azure_superuser                  | localhost | mysql_native_password |
-   | mysql.infoschema                 | localhost | caching_sha2_password |
-   | mysql.session                    | localhost | caching_sha2_password |
-   | mysql.sys                        | localhost | caching_sha2_password |
-   +----------------------------------+-----------+-----------------------+
-   ```
+---
+
+1. List the available usernames and plugins by using the following command:
+
+    ```sql
+    SELECT user, host, plugin FROM mysql.user;
+    ```
+
+    The following output is typical:
+
+    ```output
+    +----------------------------------+-----------+-----------------------+
+    | user                             | host      | plugin                |
+    +----------------------------------+-----------+-----------------------+
+    | azureuser                        | %         | mysql_native_password |
+    | $CURRENT_AZ_LOGIN_USER_NAME#EXT#@| %         | aad_auth              |
+    | azure_superuser                  | 127.0.0.1 | mysql_native_password |
+    | azure_superuser                  | localhost | mysql_native_password |
+    | mysql.infoschema                 | localhost | caching_sha2_password |
+    | mysql.session                    | localhost | caching_sha2_password |
+    | mysql.sys                        | localhost | caching_sha2_password |
+    +----------------------------------+-----------+-----------------------+
+    ```
 
 ## Create a database and tables for your application
 
-Run the following `Azure CLI` command to create a database and tables for your application from the script file `world.sql`:
+Use the following steps to create a database for your application and to verify its details:
 
-```azurecli
-az mysql flexible-server execute -n $MYSQL_SERVER_NAME  -u azureuser -p '$MYSQL_PASSWORD' -f "./world-db/world.sql"
-```
+1. Use the following command to create the database and tables:
 
-> [!TIP]
-> You can also use the `mysql` command to create a database and tables from script file. However it will take a long time to finish the command. Therefore, we recommend using the `az mysql flexible-server execute` command in this time.
+    ```azurecli
+    az mysql flexible-server execute \
+        --name $MYSQL_SERVER_NAME \
+        --admin-password azureuser \
+        --admin-password '$MYSQL_PASSWORD' \
+        --file-path -f "./world-db/world.sql"
+    ```
 
-## Confirm the database and tables
+    > [!TIP]
+    > You can also use the `mysql` command to create a database and tables from a script file, but that command takes a long time to complete, therefore, we recommend using `az mysql flexible-server execute`.
 
-1. Confirm that the databases and tables are in your server:
+1. Confirm that the databases and tables are in your server by using the following command:
 
    ```azurecli
-    az mysql flexible-server connect -n' $MYSQL_SERVER_NAME '-u' $MYSQL_USER '-p' $MYSQL_PASSWORD '-d world --interactive
+    az mysql flexible-server connect \
+        --name $MYSQL_SERVER_NAME \
+        --admin-user $MYSQL_USER \
+        --database-name word \
+        --interactive
+
+1. When the system prompts you, enter a password.
+
+    ```bash
     Password: [Enter the same password as $MYSQL_PASSWORD]
+    ```
+
+    The following output is typical:
+
+    ```output
     MySQL 8.0.39
     mycli 1.27.2
     Home: http://mycli.net
     Bug tracker: https://github.com/dbcli/mycli/issues
     Thanks to the contributor - Jakub Boukal
-    azureuser@MYSQL_SERVER_NAME.mysql.database.azure.com
-    (MySQL):world>show databases;
+    ```
+
+1. Use the following command to show the databases on the server:
+
+    ```sql
+    show databases;
+    ```
+
+    The following output is typical:
+
+    ```output
     +--------------------+
     | Database           |
     +--------------------+
@@ -220,11 +265,20 @@ az mysql flexible-server execute -n $MYSQL_SERVER_NAME  -u azureuser -p '$MYSQL_
     | sys                |
     | world              |
     +--------------------+
-    
+
     7 rows in set
     Time: 0.152s
-    azureuser@MYSQL_SERVER_NAME.mysql.database.azure.com
-    (MySQL):world>show tables;
+    ```
+
+1. Use the following command to list the tables in the `world` database:
+
+    ```sql
+    show tables;
+    ```
+
+    The following output is typical:
+
+    ```output
     +-----------------+
     | Tables_in_world |
     +-----------------+
@@ -232,89 +286,100 @@ az mysql flexible-server execute -n $MYSQL_SERVER_NAME  -u azureuser -p '$MYSQL_
     | country         |
     | countrylanguage |
     +-----------------+
-    
+
     3 rows in set
     Time: 0.145s
-    azureuser@MYSQL_SERVER_NAME.mysql.database.azure.com
-    (MySQL):world>
    ```
 
 ## Query the sample database
 
-Now you can view the contents of the `world` database.
+Use the following steps to view the contents of the `world` database:
 
-1. Get all the continent information:
+1. List all of the continent information by using the following command:
 
-   ```mysql
-   (MySQL):world> select distinct Continent from country ;
-   +---------------+
-   | Continent     |
-   +---------------+
-   | North America |
-   | Asia          |
-   | Africa        |
-   | Europe        |
-   | South America |
-   | Oceania       |
-   | Antarctica    |
-   +---------------+
-   ```
+    ```sql
+    select distinct Continent from country ;
+    ```
 
-1. Get country names and country codes by continent:
+    The following output is typical:
 
-   ```mysql
-   (MySQL):world> select code,name from country where Continent='Asia';
-   +------+----------------------+
-   | code | Name                 |
-   +------+----------------------+
-   | AFG  | Afghanistan          |
-   | ARE  | United Arab Emirates |
-   | ARM  | Armenia              |
-   | AZE  | Azerbaijan           |
-   | BGD  | Bangladesh           |
-   | BHR  | Bahrain              |
-   | BRN  | Brunei               |
-   | BTN  | Bhutan               |
-   | CHN  | China                |
-   | CYP  | Cyprus               |
-   | GEO  | Georgia              |
-   | HKG  | Hong Kong SAR        |
-   | IDN  | Indonesia            |
-   | IND  | India                |
-   | IRN  | Iran                 |
-   | IRQ  | Iraq                 |
-   | ISR  | Israel               |
-   | JOR  | Jordan               |
-   | JPN  | Japan                |
-   .....
-   | VNM  | Vietnam              |
-   | YEM  | Yemen                |
-   +------+----------------------+
-   51 rows in set (0.02 sec)
-   ```
+    ```output
+    +---------------+
+    | Continent     |
+    +---------------+
+    | North America |
+    | Asia          |
+    | Africa        |
+    | Europe        |
+    | South America |
+    | Oceania       |
+    | Antarctica    |
+    +---------------+
+    ```
 
-1. Get all cities that have a population greater than 1 million:
+1. List country names and country codes by continent by using the following command:
 
-   ```mysql
-   (MySQL):world> select * from city where CountryCode='JPN' AND Population > 1000000 ORDER BY Population DESC;
-   +------+---------------------+-------------+-----------+------------+
-   | ID   | Name                | CountryCode | District  | Population |
-   +------+---------------------+-------------+-----------+------------+
-   | 1532 | Tokyo               | JPN         | Tokyo-to  |    7980230 |
-   | 1533 | Jokohama [Yokohama] | JPN         | Kanagawa  |    3339594 |
-   | 1534 | Osaka               | JPN         | Osaka     |    2595674 |
-   | 1535 | Nagoya              | JPN         | Aichi     |    2154376 |
-   | 1536 | Sapporo             | JPN         | Hokkaido  |    1790886 |
-   | 1537 | Kioto               | JPN         | Kyoto     |    1461974 |
-   | 1538 | Kobe                | JPN         | Hyogo     |    1425139 |
-   | 1539 | Fukuoka             | JPN         | Fukuoka   |    1308379 |
-   | 1540 | Kawasaki            | JPN         | Kanagawa  |    1217359 |
-   | 1541 | Hiroshima           | JPN         | Hiroshima |    1119117 |
-   | 1542 | Kitakyushu          | JPN         | Fukuoka   |    1016264 |
-   +------+---------------------+-------------+-----------+------------+
-   11 rows in set (0.33 sec)
-   ```
+    ```sql
+    select code,name from country where Continent='Asia';
+    ```
+
+    ```output
+    +------+----------------------+
+    | code | Name                 |
+    +------+----------------------+
+    | AFG  | Afghanistan          |
+    | ARE  | United Arab Emirates |
+    | ARM  | Armenia              |
+    | AZE  | Azerbaijan           |
+    | BGD  | Bangladesh           |
+    | BHR  | Bahrain              |
+    | BRN  | Brunei               |
+    | BTN  | Bhutan               |
+    | CHN  | China                |
+    | CYP  | Cyprus               |
+    | GEO  | Georgia              |
+    | HKG  | Hong Kong SAR        |
+    | IDN  | Indonesia            |
+    | IND  | India                |
+    | IRN  | Iran                 |
+    | IRQ  | Iraq                 |
+    | ISR  | Israel               |
+    | JOR  | Jordan               |
+    | JPN  | Japan                |
+    .....
+    | VNM  | Vietnam              |
+    | YEM  | Yemen                |
+    +------+----------------------+
+    51 rows in set (0.02 sec)
+    ```
+
+1. List all cities that have a population greater than 1 million by using the following command:
+
+    ```sql
+    select * from city where CountryCode='JPN' AND Population > 1000000 ORDER BY Population DESC;
+    ```
+
+    The following output is typical:
+
+    ```output
+    +------+---------------------+-------------+-----------+------------+
+    | ID   | Name                | CountryCode | District  | Population |
+    +------+---------------------+-------------+-----------+------------+
+    | 1532 | Tokyo               | JPN         | Tokyo-to  |    7980230 |
+    | 1533 | Jokohama [Yokohama] | JPN         | Kanagawa  |    3339594 |
+    | 1534 | Osaka               | JPN         | Osaka     |    2595674 |
+    | 1535 | Nagoya              | JPN         | Aichi     |    2154376 |
+    | 1536 | Sapporo             | JPN         | Hokkaido  |    1790886 |
+    | 1537 | Kioto               | JPN         | Kyoto     |    1461974 |
+    | 1538 | Kobe                | JPN         | Hyogo     |    1425139 |
+    | 1539 | Fukuoka             | JPN         | Fukuoka   |    1308379 |
+    | 1540 | Kawasaki            | JPN         | Kanagawa  |    1217359 |
+    | 1541 | Hiroshima           | JPN         | Hiroshima |    1119117 |
+    | 1542 | Kitakyushu          | JPN         | Fukuoka   |    1016264 |
+    +------+---------------------+-------------+-----------+------------+
+    11 rows in set (0.33 sec)
+    ```
 
 ## Unit summary
 
-You've now completed the setup and preparation for your MySQL Server. In the next unit, you see the steps to deploy the Jakarta EE application to JBoss EAP on Azure App Service and configure it.
+You completed the setup and preparation for your Azure Database for MySQL - Flexible Server instance. The next unit introduces you to the process of deploying the Jakarta EE application to JBoss EAP on Azure App Service, along with various configuration options.
