@@ -4,7 +4,7 @@ The REST model is built on top of the HTTP protocol. A .NET Multi-platform App U
 
 ## What is the HttpClient class?
 
-`HttpClient` is a .NET class that an app can use to send HTTP requests and receive HTTP responses from a REST web service. A set of URIs identifies the resources that the web service exposes. A URI combines the address of the web service with the name of a resource available at that address.
+`HttpClient` is a .NET class that an app can use to send HTTP requests and receive HTTP responses from a REST web service. A set of Uniform Resource Identifiers (URI)s identifies the resources that the web service exposes. A URI combines the address of the web service with the name of a resource available at that address.
 
 The `HttpClient` class uses a task-based API for performance, and gives you access to information in request messages such as HTTP headers and status codes, as well as message bodies that contain the actual data being sent and received.
 
@@ -115,7 +115,7 @@ The response body of a `POST` request returns a copy of the resource that was cr
 
 You should always check and handle the status code in the response message. If this status code is in the 200 range (200, 201, 202, and so on), then the operation is considered successful, although further information might be required later.
 
-A status code in the 300 range indicates that the request might have been redirected by the web service to a different address, possibly as the result of a resource moving to a different location.
+A status code in the 300 range might indicate that the web service redirected the request to a different address, possibly as the result of a resource moving to a different location.
 
 A status code in the 400 range indicates a client or application error. For example, status code 403 means that the web service requires the user to be authenticated, but the app hasn't done so. Status code 404 occurs when the app attempts to access a resource that doesn't exist.
 

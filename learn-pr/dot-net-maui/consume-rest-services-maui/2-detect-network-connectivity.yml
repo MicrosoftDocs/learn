@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: "Which of the following is the best reason to check if you're connected to the Internet before running network code?"
+  - content: "Which of the following answers is the best reason to check if you're connected to the Internet before running network code?"
     choices:
     - content: "You don't want to waste resources by performing operations that aren't going to do anything."
       isCorrect: false
