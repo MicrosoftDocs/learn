@@ -117,7 +117,7 @@ You should always check and handle the status code in the response message. If t
 
 A status code in the 300 range might indicate that the web service redirected the request to a different address, possibly as the result of a resource moving to a different location.
 
-A status code in the 400 range indicates a client or application error. For example, status code 403 means that the web service requires the user to be authenticated, but the app hasn't done so. Status code 404 occurs when the app attempts to access a resource that doesn't exist.
+A status code in the 400 range indicates a client or application error. For example, status code 403 means that the web service requires the user to be authenticated, but the app didn't do the authentication. Status code 404 occurs when the app attempts to access a resource that doesn't exist.
 
 Status codes in the 500 range are indicative of a server-side error, such as the service being unavailable or too busy to handle the request.
 

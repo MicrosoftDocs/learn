@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: "Consume REST web services in .NET MAUI apps"
   description: "Build a .NET Multi-platform App UI (MAUI) application that consumes a REST web service by using HttpClient and performs basic CRUD operations. In the app, you detect when your device is connected to the internet to provide a good user experience and take advantage of the native networking stacks to get top performance."
-  ms.date: 10/31/2023
+  ms.date: 03/05/2025
   author: codemillmatt 
   ms.author: masoucou
   manager: coxford
