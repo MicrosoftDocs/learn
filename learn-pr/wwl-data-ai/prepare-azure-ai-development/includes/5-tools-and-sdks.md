@@ -1,4 +1,4 @@
-While you can perform many of the tasks needed to develop an AI solution directly in the Azure AI Foundry portal, developers also need to write, text, and deploy code.
+While you can perform many of the tasks needed to develop an AI solution directly in the Azure AI Foundry portal, developers also need to write, test, and deploy code.
 
 ## Development tools and environments
 
