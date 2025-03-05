@@ -4,7 +4,8 @@ title: Introduction to Azure App Service
 metadata:
   description: What is Azure App Service? Find out more in this module.
   author: KarlErickson
-  ms.author: ayangupta
+  ms.author: karler
+  ms.reviewer: ayangupta
   ms.date: 12/11/2024
   ms.topic: unit
   ms.custom: team=cloud_advocates, devx-track-java, devx-track-extended-java, linux-related-content

@@ -5,7 +5,8 @@ metadata:
   title: Exercise - Deploy Spring Boot application
   description: This unit presents the deployment of the Spring Boot application to Azure Container Apps.
   author: KarlErickson
-  ms.author: hangwan
+  ms.author: karler
+  ms.reviewer: hangwan
   ms.date: 02/18/2025
   ms.topic: unit
   ms.custom:

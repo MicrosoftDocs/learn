@@ -1,91 +1,51 @@
-Business outcomes are how we measure strategic impact. Some organizations have existing **key performance indicators (KPIs)**, which provide a measure for strategic impact. KPIs are a fine way to measure impact, but for organizations that don't already have operational KPIs and the rich analytics systems required to track that progress, **objectives and key results (OKRs)** are a more manageable approach.
+This unit describes how to define your mission and objectives. A clear mission provides direction and purpose. The objectives outline the steps that you take to achieve that mission. A mission is only valuable if you can take action on it, achieve objectives effectively, and measure the results.
 
-This unit demonstrates how to define OKRs that can measure your strategic impact.
+## Create a mission statement
 
-## Define business outcomes by using OKRs
+A mission statement helps you align your objectives and key results to your organization's overall business mission.
 
-Modern operations require modern ways to measure business outcomes, and cloud technology can help increase velocity for a business. An organization's measurement platform should support a company's outcomes and plan for growth by:
+To help you derive a statement for your business, consider these initial questions:
 
-- Providing insights to team members and groups.
-- Supporting staff to pivot quickly when outcomes don't align with strategy and expectations.
-- Offering teams a structured format, templates, sequences, and tools to help them plan for and visualize increasing velocity.
+- Why are you moving to or expanding in the cloud?
+- What are your business objectives?
+- How do you intend to measure success?
 
-## OKR overview
+Use the answers to these questions to help define your mission statement for your cloud strategy.
 
-OKRs have proven to drive alignment in complex work environments, foster innovation, and help individuals focus on what matters. Many organizations have begun to use OKRs. OKRs are based on two components: an objective and key results for that objective. An objective is the statement of intent: what is the team trying to accomplish, and why is it important? Key results are specific outcomes that track the impact of the objective:
+**Example mission statement:** "Use cloud technologies that align with our business and IT goals to empower our organization to innovate, scale, and deliver secure, high-quality services."
 
-**Objective**: Clarity and intent
+## Define objectives
 
-**Key results**: Measures of success within a quarter
+Ensure that your objectives include clear and inspiring goals that align with the mission statement. Consider the following examples:
 
-It's important to understand that OKRs are useful for measuring team outcomes rather than individual performance. Because deadlines often motivate team performance, key results are established quarterly. OKRs help teams focus on the most important tasks instead of on the volume of work at hand. To focus on critical tasks, focus on what happens in a month, a quarter, and other short-term intervals. You can have OKRs that last longer, but shorter intervals emphasize the need for OKRs that track short-term impact.
+- **Objective for security:** "Use advanced security offerings to protect your assets."
+- **Objective for compliance:** "Use advanced compliance offerings to audit your assets."
+- **Objective for datacenter modernization:** "Modernize infrastructure with reduced hardware and staffing. To upgrade the datacenter, migrate to Azure for enhanced capabilities."
 
-## OKR key principles
+To define your mission and objectives, consider the following recommendations:
 
-Here are the key principles of OKRs:
+- **Involve key stakeholders** to ensure that they understand and align with the business and departmental missions and objectives. Include problem statements that cloud adoption addresses.
 
-- **Aspire and inspire**: Teams establish their best possible results in a given quarter, focus efforts on great outcomes, and use retrospectives to learn and iterate.
+- **Define cloud adoption objectives and key results clearly,** and align them with your organization's overall mission and objectives.
 
-- **Outcome focus**: Quarterly key results provide clarity on where value is created. Being aware of where value is created helps teams and the organization drive business impacts faster.
+- **Set specific key results and key performance indicators (KPIs)** to measure progress towards objectives.
 
-- **Global and local**: Teams localize OKRs into their nouns, verbs, and numbers that enrich OKRs with the team's expertise and insights.
+- **Assign accountable roles to key results**, and review key results and KPIs periodically, preferably at least quarterly at the strategic level.
 
-- **Transparent**: OKRs, alignment, and progress are visible to everyone through OKR software, which simplifies collaboration and supports making good decisions faster.
+- **Ensure that your objectives, key results, and accountability are clear, concise, accessible and easy to understand for everyone.**
 
-## How OKRs add value to an organization
+## Measure success
 
-OKRs help create alignment and accountability within organizations, as demonstrated in the following graph:
+To understand if you're on track to meet your objectives, you must be able to effectively measure and track your key results. Establish KPIs or other ways to gauge progress on your mission and objectives.
 
-:::image type="content" source="../media/okr.png" alt-text="Graph that demonstrates how OKRs increase alignment and accountability within an organization to help it meet goals faster." border="false":::
+These metrics should provide insights into your progress against each key result and highlight areas for improvement.
 
-## Examples of OKRs
+To measure your success, use these guidelines when you define metrics.
 
-The principles of OKRs can help your organization understand how useful OKRs take form. Objectives need to inspire your company and its teams to fully understand your mission. Key results need to be specific and measurable within a quarter.
+- **Define KPIs.** Set clear metrics that you can measure against each related key result.
 
-Here are some examples of OKRs:
+- **Review regularly.** Schedule and perform regular reviews to assess progress.
 
-**Objective 1**: Be the top US provider of learning platforms to schools
+- **Be agile.** Iterate and adjust your strategy and ways to measure progress. Cloud innovation rapidly changes the technical landscape and the opportunities to apply clever solutions.
 
-**Key results**:
-
-- 45 percent of K-12 schools using our platform
-- A 12 percent increase in student engagement, as measured through internal systems
-- A 95 percent satisfaction rate from quarterly parent surveys
-
-**Objective 2**: Build a technology platform that supports every person in our business to innovate and create
-
-**Key results**:
-
-- Five new applications developed and adopted across the organization
-- Every team with at least two members using Microsoft Power Platform
-- Including new cloud technologies like data analytics and machine learning in all customer-facing applications
-
-**Objective 3**: Transform our approach from sales driven to data driven
-
-**Key results**:
-
-- Increasing pipeline coverage from 50 percent to 200 percent
-- Increasing closing rates for sales engagements by 5 percent
-- Reducing the time to close deals by 8 percent
-
-## Implement OKRs
-
-Five steps can help your organization move forward with OKRs:
-
-**Step 1: Learn**. Start exploring what OKRs can do for your business. Tune in to some of your industry peers and leaders to learn how OKRs have benefited their organizations.
-
-**Step 2: Plan**. As you begin to draft your OKRs, ensure that your sponsors contribute and are involved in the process. Work with an OKR coach to refine your OKRs.
-
-**Step 3: Launch**. Each organization launches initiatives differently. Maintain a strong communication plan, and build the OKR calibration and celebration process into your operating model.
-
-**Step 4: Drive**. To maintain rigor and focus, make sure that you're sharing outcomes and results across the organization. Sharing results and outcomes helps your teams adopt a habit of using OKRs.
-
-**Step 5: Improve**. Continue to improve, revisit, and rethink how you connect across the organization. OKRs in spreadsheets can be useful, but an organization can benefit most from everyone participating to meet objectives and gain insights from the aligned data.
-
-## Record your observations
-
-If you haven't already, download the [Cloud Adoption Framework strategy and plan template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx?azure-portal=true). Under **Business outcomes**, use the OKR principles discussed in this unit to shape your first business outcomes.
-
-## Anticipate financial considerations
-
-When migrating to the cloud, it’s important to think differently about consuming and managing your cloud resources. As you build your business case, it’s critical to understand the key principles of cloud economics and transform your mindset. Part of this transformation is discovering technical and financial flexibility, efficiencies, and capabilities that aren’t possible with your on-premises IT infrastructure. By planning short- and long-term cloud solutions and aligning them to business outcomes, you can achieve more with every dollar you invest.
+The Strategy methodology provides [example objectives and metrics](/azure/cloud-adoption-framework/strategy/mission-objectives#example-objectives-and-success-metrics). Use these example to discover ideas about how to incorporate this guidance into your scenario.
