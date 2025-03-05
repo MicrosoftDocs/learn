@@ -10,6 +10,7 @@ Natural language processing (NLP) is a type of artificial intelligence (AI) that
 - **Entity extraction**. For example, extract keywords or names from a document.
 - **Text summarization**. For example, generate a short one-paragraph summary from a multi-page document.
 - **Question answering**. For example, provide answers to questions like "What is the capital of France?"
+- **Reasoning**. For example, solve a mathematical problem.
 
 > [!Note]
 > In this module, you focus on exploring foundation models used for question answering. The foundation models you explore can be used for chat applications in which you use a language model to generate a response to a user's question.
