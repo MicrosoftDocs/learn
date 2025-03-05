@@ -27184,6 +27184,34 @@
       "redirect_url": "/training/browse/?products=azure&terms=iot"
     },
     {
+      "source_path_from_root": "/learn-pr/azure/cloud-adoption-framework-security/4-security-roles-responsibilities.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-security/1-introduction"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/cloud-adoption-framework-security/5-simplify-compliance-security.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-security/1-introduction"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/cloud-adoption-framework-security/6-simplify-security-implementation.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-security/1-introduction"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/cloud-adoption-framework-security/8-security-tools-policies.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-security/1-introduction"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/cloud-adoption-framework-security/9-summary.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-security/1-introduction"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/cloud-adoption-framework-security/2-customer-narrative.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-security/1-introduction"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/cloud-adoption-framework-security/3-methodology.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-security/1-introduction"
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-azure/monitor-troubleshoot-adt/index.md",
       "redirect_url": "/training/browse/?products=azure&terms=iot"
     },
