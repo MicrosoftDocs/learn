@@ -5325,3 +5325,18 @@ achievements:
   title: Write automated tests
   summary: Learn about the types of testing you can do with Rust.
   iconUrl: /training/achievements/rust-automated-tests.svg
+- uid: learn.nvidia.develop-custom-object-detection-models-with-nvidia-and-azure-machine-learning.trophy
+  type: trophy
+  title: Develop Custom Object Detection Models with NVIDIA and Azure Machine Learning
+  summary: Azure Machine Learning studio is a GUI-based integrated development environment for constructing and operationalizing Machine Learning workflow on Azure.  Learn how to develop custom object detection models using this service with NVIDIA GPU accelerated virtual machines.
+  iconUrl: /training/achievements/nvidia-deepstream-development-with-microsoft-azure-social.png
+- uid: learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.badge
+  type: badge
+  title: Create workspace resources for getting started with Azure Machine Learning
+  summary: In this module, you learn how to create resources for getting started with Azure Machine Learning.
+  iconUrl: /training/achievements/setup-configure-nvidia-deepstream-development.svg
+- uid: learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools.badge
+  type: badge
+  title: Create a labeled dataset using Azure Machine Learning data labeling tools
+  summary: Learn how to use Azure Machine Learning data labeling to create, manage, and monitor data labeling projects.
+  iconUrl: /training/achievements/setup-configure-nvidia-deepstream-development.svg
