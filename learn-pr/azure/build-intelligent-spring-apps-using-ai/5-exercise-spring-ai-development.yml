@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.build-intelligent-spring-apps-using-ai.5-exercise-spring-ai-development
-title: Exercise - Implementing Spring AI with Azure OpenAI and PGVectorStore
+title: Exercise - Develop RAG application with Spring AI and Azure OpenAI 
 metadata:
-  title: Exercise - Implementing Spring AI with Azure OpenAI and PGVectorStore
+  title: Exercise - Develop RAG application with Spring AI and Azure OpenAI 
   description: >-
-    Learn how to deploy a Spring AI application to Azure Container Apps.
+    Learn how to develop a Spring AI application to Azure Container Apps.
   ms.date: 03/02/2025
   author: jbalderas
   ms.author: jbalderas

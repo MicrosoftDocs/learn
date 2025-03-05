@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.build-intelligent-spring-apps-using-ai.6-aca-deployment
-title: Deploying to Azure Container Apps
+title:  Deploy Spring AI Application to Azure Container Apps
 metadata:
-  title: Deploying to Azure Container Apps
+  title:  Deploy Spring AI Application to Azure Container Apps
   description: >-
     Learn how to deploy your Spring AI application to Azure Container Apps
   ms.date: 02/24/2025

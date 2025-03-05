@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.build-intelligent-spring-apps-using-ai.4-spring-ai-development
-title: Implementing Spring AI with Azure OpenAI and PGVectorStore
+title: Develop RAG application with Spring AI and Azure OpenAI 
 metadata:
-  title: Implementing Spring AI with Azure OpenAI and PGVectorStore
+  title: Develop RAG application with Spring AI and Azure OpenAI 
   description: >-
-    Learn how to implement a RAG application using Spring AI with Azure OpenAI and PGVectorStore Spring Boot Starters.
+    Learn how to implement a RAG application using Spring AI with Azure OpenAI and VectorStore Spring Boot Starters.
   ms.date: 02/24/2025
   author: jbalderas
   ms.author: jbalderas
