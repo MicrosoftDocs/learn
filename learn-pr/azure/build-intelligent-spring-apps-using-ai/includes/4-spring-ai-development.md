@@ -1,30 +1,66 @@
-In this unit, you explore the concepts behind using the `PGVectorStore` Spring Boot Starter and OpenAI Spring Boot Starter to manage and query document embeddings in a PostgreSQL database. By the end of this unit, you should understand how to apply these tools to enhance your applications with advanced search capabilities.
-
-Prerequisites
-Before diving into the concepts, ensure you have a basic understanding of:
-
-Spring Boot framework
-PostgreSQL database
-Embeddings and vector representations
-Understanding Vector Stores
-
-## What is a Vector Store?
-
-A vector store is a specialized database designed to store and manage high-dimensional vectors. These vectors often represent complex data such as text, images, or other multimedia content. Vector stores enable efficient similarity searches, making them ideal for applications like recommendation systems, semantic search, and more.
-
-## Why Use PGVectorStore?
-
-PGVectorStore is a Spring Boot starter that simplifies the integration of vector storage and search capabilities into your Spring Boot applications. It uses PostgreSQL's vector extension to store and query document embeddings efficiently.
+In this unit, you will learn how to implement Retrieval-Augmented Generation (RAG) in a Spring Boot application using vector search similarity provided by the `pgvector` extension in a PostgreSQL database. We will introduce relevant RAG concepts such as embeddings, embedding models, and vector stores. By the end of this unit, you should understand how to apply these tools to enhance your applications with advanced search and retrieval capabilities.
 
 ## What are Embeddings?
 
-Embeddings are dense vector representations of data. For example, in natural language processing (NLP), embeddings represent words, sentences, or documents as vectors in a high-dimensional space. These vectors capture semantic relationships, enabling advanced search and analysis.
+Embeddings are dense vector representations of data. In simpler terms, embeddings are a way to convert complex data, like words or images, into a set of numbers (vectors) that a computer can easily process. In natural language processing (NLP), embeddings represent words, sentences, or documents as vectors in a high-dimensional space. This means that each word or sentence is transformed into a list of numbers. These numbers are not random; they are designed to capture the meaning and relationships between the words.
 
-## Using Azure OpenAI EmbeddingModel
+These vectors capture semantic relationships, enabling advanced search and analysis. For instance, if you search for "queen" in a database, the system can also find related terms like "king" or "royalty" because their vectors are close to each other. This makes embeddings a powerful tool for tasks like search engines, recommendation systems, and language translation.
 
-Azure OpenAI provides powerful models to generate embeddings for various types of data. By integrating Azure OpenAI's Embedding Models with `PGVectorStore`, you can create and store embeddings for your documents, enabling sophisticated search capabilities.
+## Using Azure OpenAI Embedding Models
 
-## Adding Documents to Vector Store
+Embedding models are essential tools in natural language processing (NLP) and other AI applications. They convert complex data, such as text, into dense vector representations that capture the semantic meaning of the data. These vectors can then be used for various tasks, including search, recommendation, and clustering.
+
+Azure OpenAI provides powerful embedding models that can be easily integrated into your applications. These models can generate embeddings for various types of data, enabling advanced search and retrieval capabilities. One the most commonly used text embedding model from OpenAI is the `text-embedding-ada-002` model. This model can be used for various applications, including search, clustering, and recommendation systems, due to its ability to understand and represent complex text data. When used with ChatGPT models, `text-embedding-ada-002` enhances the chatbot's ability to understand context, retrieve relevant information, and provide more accurate and contextually appropriate responses. By leveraging `text-embedding-ada-002` with ChatGPT, developers can create more intelligent and responsive applications that deliver better user experiences.
+
+## Implementing VectorStore in Spring AI
+
+The `VectorStore` is a class provided by the Spring AI `pgvector` Store Spring Boot starter. It simplifies the integration of vector storage and search capabilities into your Spring Boot applications. It uses PostgreSQL's `pgvector` extension to store and query document embeddings efficiently.
+
+You can add the `VectorStore` Spring Boot starter dependency to your project using this dependency:
+
+```xml
+<dependency>
+    <groupId>org.springframework.ai</groupId>
+    <artifactId>spring-ai-pgvector-store-spring-boot-starter</artifactId>
+</dependency>
+```
+
+On startup, the `VectorStore` will attempt to install the required database extensions and create the required `vector_store` table with an index if not existing. Optionally, you can do this manually using this SQL statements:
+
+```sql
+CREATE EXTENSION IF NOT EXISTS vector;
+CREATE EXTENSION IF NOT EXISTS hstore;
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
+CREATE TABLE IF NOT EXISTS vector_store (
+	id uuid DEFAULT uuid_generate_v4() PRIMARY KEY,
+	content text,
+	metadata json,
+	embedding vector(1536) // 1536 is the default embedding dimension
+);
+
+CREATE INDEX ON vector_store USING HNSW (embedding vector_cosine_ops);
+```
+
+The `VectorStore` also requires an `EmbeddingModel` instance to calculate embeddings for the documents. To use Azure OpenAI Embedding Model, add the following dependency to your project:
+
+```xml
+<dependency>
+	<groupId>org.springframework.ai</groupId>
+	<artifactId>spring-ai-openai-spring-boot-starter</artifactId>
+</dependency>
+```
+
+At application startup, Spring Boot will auto-configure `VectorStore` using Azure OpenAI application properties:
+
+```bash
+spring.ai.azure.openai.api-key=${AZURE_OPENAI_API_KEY}
+spring.ai.azure.openai.endpoint=${AZURE_OPENAI_ENDPOINT}
+spring.ai.azure.openai.chat.model=gpt-4o
+spring.ai.azure.openai.embedding.model=text-embedding-ada-002
+```
+
+### Adding Documents to Vector Store
 
 To add documents to the vector store, you need to generate embeddings and store them along with the original content. The provided code snippet demonstrates how to use the `VectorStore` class in a Spring Boot application to store and manage documents:
 
@@ -45,7 +81,7 @@ Here's a detailed explanation of how this code works:
 1. Next create a list of `Document` objects. Each `Document` object contains a string representing the content and a map of metadata. In this example, two documents are created:
 1. Finally we add the list of documents to the `vectorStore` instance. The add method of the `VectorStore` class is used to store the documents in the vector store database table, and generate embeddings using the specified `EmbeddingModel` in your Spring Boot configuration.
 
-## Querying Documents
+### Querying Documents
 
 Once your documents are stored, you can perform similarity searches to find documents that are semantically similar to a given query. Here's a sample code to perform a similarity search using the `VectorStore` class:
 
@@ -67,4 +103,4 @@ Here's a detailed explanation for this code snippet:
 
 ## Unit Summary
 
-In this unit, you learned the concepts behind using `PGVectorStore` and OpenAI Spring Boot Starter to manage and query document embeddings. You explored the importance of embeddings, how to generate and store them, and how to perform similarity searches. In the next exercise, we build a RAG Spring Boot application using these tools.
+In this unit, you learned the concepts behind using Spring Boot's `VectorStore` and OpenAI Spring Boot Starter to manage and query document embeddings. You explored the importance of embeddings, how to generate and store them, and how to perform similarity searches. In the next exercise, we build a RAG Spring Boot application using these tools.

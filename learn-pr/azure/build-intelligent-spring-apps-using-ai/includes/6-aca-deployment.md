@@ -40,7 +40,7 @@ Azure Container Apps support multiple ingress options to control how your applic
 Azure Container Apps provide flexible scaling options to ensure your application can handle varying loads efficiently. Here are the primary scaling options available:
 
 1. **Manual Scaling.** You can manually set the number of replicas for your container app. This option gives you full control over the scaling process, allowing you to adjust the number of instances based on your specific needs.
-1. **Automatic Scaling.** Azure Container Apps support automatic scaling based on various metrics. You can configure autoscaling rules to automatically adjust the number of replicas based on CPU usage, memory usage, or custom metrics. This capability ensures your application can handle increased traffic without manual intervention.
+1. **Automatic Scaling.** Azure Container Apps support automatic scaling based on various metrics. You can configure autoscaling rules to automatically adjust the number of replicas based on CPU usage, memory usage, or custom metrics including [`JVM` (Java Virtual Machine) metrics](/azure/container-apps/java-metrics-scale-with-keda) using KEDA (Kubernetes Event-driven Autoscaling). This capability ensures your application can handle increased traffic without manual intervention.
 1. **Scale to Zero.** For serverless applications, you can configure your container app to scale down to zero instances when there's no traffic. This helps save costs by only using resources when needed.
 
 To configure scaling, you can use the Azure CLI, Azure portal, or ARM templates. Here's an example of how to set up autoscaling using the Azure CLI:
@@ -53,7 +53,7 @@ az containerapp update \
   --max-replicas 10 \
   --scale-rule-name http-rule \
   --scale-rule-type http \
-  --scale-rule-http-concurrency 50
+  --scale-rule-http-concurrency 15
 ```
 
 In this example, the container app is configured to scale between 1 and 10 replicas based on HTTP concurrency. HTTP concurrency is set to 50, which means each replica handles up to 50 concurrent HTTP requests before more instances are created.

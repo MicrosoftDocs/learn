@@ -14,18 +14,18 @@ Spring AI provides a set of abstractions and tools that make it easy to work wit
 
 ### RAG Implementation
 
-A Retrieval Augmented Generation (RAG) application has these capabilities:
+A Retrieval Augmented Generation (RAG) application typically has these capabilities:
 
 1. Converts user questions into vector embeddings
-2. Finds similar previous Q&As using vector similarity search
-3. Uses found Q&As as context for generating responses
+2. Finds similar previous prompts and responses using vector similarity search
+3. Uses found responses as context for generating responses
 4. Stores interactions for future reference
 
 ## Why Azure OpenAI and Container Apps?
 
-- **Azure OpenAI**: Secure, scalable AI model deployment with enterprise features
-- **Azure Container Apps**: Serverless container hosting with autoscaling
-- **Azure PostgreSQL**: Managed database service with vector search capabilities
+- **Azure OpenAI**: Azure OpenAI provides a secure and scalable platform for deploying AI models with enterprise-grade features. It ensures data privacy and compliance, making it suitable for sensitive applications. Additionally, it integrates seamlessly with other Azure services for a comprehensive AI solution.
+- **Azure Container Apps**: Azure Container Apps offers a serverless environment for running containerized applications with automatic scaling based on demand. It simplifies the deployment and management of microservices, enabling developers to focus on building applications without worrying about infrastructure.
+- **Azure PostgreSQL**: Azure PostgreSQL is a fully managed database service that supports advanced features like vector search for AI applications. It provides high availability, security, and performance, making it an ideal choice for storing and querying large datasets used in AI models.
 
 ## Learning Objectives
 
@@ -35,15 +35,3 @@ After completing this module, you'll be able to:
 - Create and configure Azure PostgreSQL for vector storage
 - Implement an end-to-end AI application with Spring AI
 - Deploy and scale your application on Azure Container Apps
-
-## Prerequisites
-
-Before starting this module, you should have:
-
-- Basic familiarities with Java and Spring Boot
-- Experience with Git and Maven/Gradle
-- An active Azure subscription
-- Java 17 or later installed
-- `psql` client
-
-Let's get started by setting up our development environment!

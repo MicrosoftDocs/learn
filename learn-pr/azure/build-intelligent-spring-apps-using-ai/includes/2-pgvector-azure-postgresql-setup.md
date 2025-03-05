@@ -2,19 +2,19 @@
 
 Vector Search Similarity is a technique used to find similar items in a dataset by comparing their vector representations. Vector similarity is commonly calculated using distance metrics, such as Euclidean distance or `cosine` similarity. In the context of AI and machine learning, vector representations (or embeddings) are numerical representations of data points, such as words, images, or user queries. These vectors capture the semantic meaning of the data points, allowing for efficient similarity searches.
 
-For example, in a question-answering system, user queries can be converted into vector embeddings. These embeddings can then be compared to a database of precomputed embeddings of previous Q&As to find the most similar ones. This process is known as vector similarity search.
+For example, in a question-answering system, user queries can be converted into vector embeddings. These embeddings can then be compared to a database of precomputed embeddings of previous prompts and answers to find the most similar ones. This process is known as vector similarity search.
 
-## What is the PGVector Extension?
+## What is the pgvector Extension?
 
-**PGVector** is an extension for PostgreSQL that adds support for vector data types and operations. It allows you to store and query vector embeddings directly within a PostgreSQL database. With PGVector, you can perform efficient similarity searches using vector operations, making it an ideal choice for applications that require semantic search capabilities.
+**pgvector** is an extension for PostgreSQL that adds support for vector data types and operations. It allows you to store and query vector embeddings directly within a PostgreSQL database. With pgvector, you can perform efficient similarity searches using vector operations, making it an ideal choice for applications that require semantic search capabilities.
 
-Key features of PGVector include:
+Key features of pgvector include:
 
 - Support for vector data types
 - Efficient indexing and querying of vector data
 - Integration with PostgreSQL's existing features and extensions
 
-## PGVector Extension in Azure PostgreSQL
+## pgvector Extension in Azure PostgreSQL
 
 The `pgvector` extension adds an open-source vector similarity search to PostgreSQL.
 
@@ -29,7 +29,7 @@ Once the extension is allowed, you can install the extension by running the foll
    CREATE EXTENSION IF NOT EXISTS vector;
    ```
 
-### PGVector Operations
+### pgvector Operations
 
 The `pgvector` extension enables efficient similarity search:
 
@@ -40,7 +40,7 @@ ORDER BY embedding <-> '[0.1,0.2,...]'::vector
 LIMIT 3;
 ```
 
-## Implementing PGVector with Spring AI
+## Implementing pgvector with Spring AI
 
 Spring AI includes an abstraction of `pvector` named `VectorStore`. This implementation requires 2 other PostgreSQL extensions: `hstore` and `uuid-ossp`.
 
@@ -48,6 +48,6 @@ On startup Spring Boot will install the required extensions and create the requi
 
 ## Unit Summary
 
-Vector Search Similarity and the PGVector extension provide powerful capabilities for building AI-powered applications that require semantic search functionality. By using these tools in Azure PostgreSQL, you can efficiently store, index, and query vector embeddings, enabling advanced search and retrieval features in your applications.
+Vector Search Similarity and the `pgvector` extension provide powerful capabilities for building AI-powered applications that require semantic search functionality. By using these tools in Azure PostgreSQL, you can efficiently store, index, and query vector embeddings, enabling advanced search and retrieval features in your applications.
 
-In the next unit, you'll perform the steps to create and configure a PosgreSQL database, enable the `pgvector` extension, and create required tables for use with Spring AI.
+In the next unit, you'll perform the steps to create and configure a PostgreSQL database, enable the `pgvector` extension, and create required tables for use with Spring AI.

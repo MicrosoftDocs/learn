@@ -2,8 +2,6 @@ In this unit we deploy our Spring AI application to Azure Container Apps for sca
 
 ## Environment Variables Setup
 
-Before we can deploy the Azure Container App, we need to make some changes to the `pom.xml`.
-
 For this exercise, we need to some environment variables from prior exercises.
 
 1. Confirm these variables are available:
@@ -60,7 +58,6 @@ COPY --from=builder /app/target/*.jar app.jar
 ENTRYPOINT ["java", "-jar", "app.jar"]
 ```
 
-
 ## Deploy Azure Container Application
 
 To deploy the application use the following command:
@@ -75,7 +72,15 @@ az containerapp up --name $CONTAINER_APP_NAME \
   --location $LOCATION
 ```
 
-This command will create a Container Apps Environment, new Azure Container Registry, build a container image and deploy the container app using the image as you will see from the output:
+This command will:
+
+* Create the resource group, it not created already.
+* Create the Container Apps environment named `$ENVIRONMENT` with a Log Analytics workspace
+* Create an Azure Container Registry
+* Build the container image using the source code and `Dockerfile` specified in `--source` path, and push it to the registry
+* Create and deploy the container app named `$CONTAINER_APP_NAME` using the built container image
+* Configure `8080` as the HTTP port that the container app will listen for incoming traffic
+* Deploy the container app in the region specified in the `--location` parameter
 
 To view the logs of your Azure Container App, use the following command:
 
@@ -184,6 +189,33 @@ Expect to see a valid response:
 
 ```markdown
 In the context of **Spring AI**, the **QuestionAnswerAdvisor** operates as a key component for enabling **Retrieval Augmented Generation (RAG)**, which combines user queries with external contextual data to produce accurate and relevant AI responses.
+```
+
+Try another question that is not in our vector store:
+
+```bash
+curl -G "https://$URL/api/rag" --data-urlencode "query=What is Vector Search Similarity?"
+```
+
+Expect to see a similar valid response:
+
+```markdown
+**Vector Search Similarity** refers to the process of comparing and ranking data points (represented as vectors) based on their similarity in a multi-dimensional space. This method is commonly used in applications like information retrieval, recommendation systems, natural language processing, and computer vision.
+```
+
+## Scaling Azure Container Apps
+
+By default, your azure container app will be configured to use 0 min replicas and a HTTP scaling rule to handle 10 requests per replica. You can configure the scaling configuration using the `az containerapp update` command:
+
+```sh
+az containerapp update \
+  --name $CONTAINER_APP_NAME \
+  --resource-group $RESOURCE_GROUP \
+  --min-replicas 1 \
+  --max-replicas 10 \
+  --scale-rule-name http-scaler \
+  --scale-rule-type http \
+  --scale-rule-http-concurrency 15
 ```
 
 ## Cleanup

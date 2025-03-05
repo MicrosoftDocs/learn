@@ -147,8 +147,4 @@ Once this rule is created, you can update using `az postgres flexible-server fir
 
 ## Unit Summary
 
-We now have a vector-enabled PostgreSQL database ready with these capabilities:
-
-1. Implements vector storage in our Spring application
-2. Applies similarity search functionality
-3. Enables our RAG implementation
+We now have a vector-enabled PostgreSQL database ready that will enable vector similarity search in our RAG implementation

@@ -1,4 +1,4 @@
-In this unit, we build a RAG (Retrieval Augmented Generation) application using Spring AI, Azure OpenAI and PGVectorStore.
+In this unit, we build a RAG (Retrieval Augmented Generation) application using Spring AI, Azure OpenAI and `VectorStore` from Spring AI.
 
 ## Setting Up Your Development Environment
 
@@ -41,12 +41,11 @@ OPENAI_RESOURCE_NAME=OpenAISpringAI
 
 ## Deploy Azure OpenAI Models
 
-For our application, we first need to deploy one chat model (gpt-4o) and one embedding model (text-embedding-ada-002).
-To deploy these models, we first need to create an Azure OpenAI resource.
+For our application, we first need to deploy one chat model (gpt-4o) and one embedding model (`text-embedding-ada-002`). To deploy these models, we first need to create an Azure OpenAI resource.
 
-### Create Azure OpenAI Resource
+### Create Azure OpenAI Account
 
-We create the Azure OpenAI resource using this Azure CLI command:
+We create the Azure OpenAI account using this Azure CLI command:
 
 ```azurecli
 az cognitiveservices account create \
@@ -109,6 +108,17 @@ curl https://start.spring.io/starter.zip \
     --output spring-ai-app.zip
 ```
 
+The generated Spring Boot starter project includes the following configurations and dependencies:
+
+- **Spring Boot Version**: 3.4.3
+- **Java Version**: 17
+- **Dependencies**:
+  - `web`: Adds support for building web applications, including RESTful services using Spring MVC.
+  - `jdbc`: Provides JDBC support for database access.
+  - `azure-support`: Adds support for integrating with Azure services.
+  - `spring-ai-azure-openai`: Adds support for integrating with Azure OpenAI services.
+  - `spring-ai-vectordb-pgvector`: Adds support for using `pgvector`, a PostgreSQL extension for vector embeddings.
+
 Unzip downloaded file using commmand:
 
 ```bash
@@ -119,6 +129,17 @@ Switch directory to this path:
 
 ```bash
 cd spring-ai-app
+```
+
+We need to change the `pom.xml` file to include a dependency for password-less authentication for PostgreSQL.
+
+Open `pom.xml` file, locate the `<dependencies>` section and add the following dependency:
+
+```xml
+    <dependency>
+      <groupId>com.azure.spring</groupId>
+      <artifactId>spring-cloud-azure-starter-jdbc-postgresql</artifactId>
+    </dependency>
 ```
 
 You can compile the application skipping tests using this command:
@@ -170,31 +191,31 @@ src/
 
 Before we can run the application successfully, we need to add required configuration:
 
-* Azure OpenAI Endpoint
-* Azure OpenAI API Key
-* PostgreSql URL
+- Azure OpenAI Endpoint
+- Azure OpenAI API Key
+- PostgreSql URL
 
-Retrieve the **Azure OpenAI Resource Endpoint** using this command:
+Retrieve the **Azure OpenAI Endpoint** using this command:
 
 ```azcli
-AZURE_OPENAI_ENDPOINT=$(az cognitiveservices account show \
+export AZURE_OPENAI_ENDPOINT=$(az cognitiveservices account show \
   --name $OPENAI_RESOURCE_NAME \
   --resource-group $RESOURCE_GROUP \
   --query "properties.endpoint" \
   --output tsv | tr -d '\r')
 ```
 
-Retrieve the **Azure OpenAI Resource Key** using this command:
+Retrieve the **Azure OpenAI API Key** using this command:
 
 ```azcli
-AZURE_OPENAI_API_KEY=$(az cognitiveservices account keys list \
+export AZURE_OPENAI_API_KEY=$(az cognitiveservices account keys list \
   --name $OPENAI_RESOURCE_NAME \
   --resource-group $RESOURCE_GROUP \
   --query "key1" \
   --output tsv | tr -d '\r')
 ```
 
-Additionally we need to provide the **PostgreSql URL**, which you can retrieve using command from prior exercise:
+Additionally we need to provide the **PostgreSQL URL**, which you can retrieve using command from prior exercise:
 
 ```azcli
 az postgres flexible-server show --resource-group $RESOURCE_GROUP --name $DB_SERVER_NAME \
@@ -206,17 +227,17 @@ az postgres flexible-server show --resource-group $RESOURCE_GROUP --name $DB_SER
 Locate and open the `application.properties` file in the `src/main/resources` directory and add the following properties replacing the values retrieved previously:
 
 ```properties
-# Azure OpenAI Configuration
-spring.ai.azure.openai.api-key=<Azure OpenAI Key>
-spring.ai.azure.openai.endpoint=<Azure OpenAI Endpoint>
+spring.application.name=spring-ai-app
+spring.ai.azure.openai.api-key=${AZURE_OPENAI_API_KEY}
+spring.ai.azure.openai.endpoint=${AZURE_OPENAI_ENDPOINT}
 spring.ai.azure.openai.chat.model=gpt-4o
 spring.ai.azure.openai.embedding.model=text-embedding-ada-002
 
-# Database Configuration
-spring.datasource.url=jdbc:postgresql://<PostgreSql URL>/postgres?sslmode=require
-spring.datasource.username=AzureAdmin
+spring.datasource.url=jdbc:postgresql://${PGHOST}/postgres?sslmode=require
+spring.datasource.username=cliuser
 spring.datasource.azure.passwordless-enabled=true
 spring.ai.vectorstore.pgvector.initialize-schema=true
+spring.ai.vectorstore.pgvector.schema-name=postgres
 ```
 
 ### Implementing RAG Service
@@ -281,7 +302,11 @@ public class RagService {
 }
 ```
 
-In this implementation, we use the Spring AI's `QuestionAnswerAdvisor` to augment the knowledge of our chat client with documents loaded in the vector store.
+In the provided code we implement RAG by to generates an answer to a given query by augmenting knowledge in the model using similar contexts from the `VectorStore` as follows:
+
+1. First perform a similarity search using Spring AI's `VectorStore` with the provided `query`. The search is configured to find documents with a similarity threshold of 0.8 and to return the top 3 most similar documents.
+1. The results of the similarity search are then transformed into a formatted string that pairs the new prompt (question) with the contents from the similar found documents.
+1. Finally, the new prompt is sent to the `ChatClient`, which sends it to the Azure OpenAI model and returns the response from the model.
 
 #### Create Controller
 
@@ -320,13 +345,13 @@ mvn spring-boot:run
 Test the new REST endpoint either from a browser or via `curl` command:
 
 ```bash
-curl -G "http://localhost:8080/api/rag" --data-urlencode "query=What is PGVector?"
+curl -G "http://localhost:8080/api/rag" --data-urlencode "query=What is pgvector?"
 ```
 
 Expect to see a valid response:
 
 ```bash
-PGVector is an open-source PostgreSQL extension that enables efficient storage, indexing, 
+pgvector is an open-source PostgreSQL extension that enables efficient storage, indexing, 
 and querying of vector embeddings within a PostgreSQL database. 
 ```
 
@@ -404,7 +429,7 @@ public class DocumentService {
 }
 ```
 
-In this code, we create two new documents: one about Spring AI, and the second one explaining how `QuestionAnswerAdvisor` works.
+In this code, we create two new documents: one about Spring AI, and the second one explaining how `QuestionAnswerAdvisor` works. Note that, these documents will typically be created by  
 
 Test these changes by running:
 
@@ -427,4 +452,4 @@ In Spring AI, the **QuestionAnswerAdvisor** works as a mechanism to enable **Ret
 
 ## Unit Summary
 
-In this unit, we successfully built a Retrieval Augmented Generation (RAG) application using Spring AI, Azure OpenAI, and `PGVectorStore`.
+In this unit, we successfully built a Retrieval Augmented Generation (RAG) application using Spring AI, Azure OpenAI, and Spring AI's `VectorStore`.

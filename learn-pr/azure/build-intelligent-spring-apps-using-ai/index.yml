@@ -35,8 +35,9 @@ products:
 prerequisites: |
   - Azure subscription
   - Basic familiarity with Java and Spring Boot
-  - Experience with Git and Maven/Gradle
+  - Experience with Git and Maven
   - Java 17 or later installed
+  - psql client
 subjects:
   - machine-learning
   - custom-app-development
