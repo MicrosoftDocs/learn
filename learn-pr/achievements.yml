@@ -372,6 +372,11 @@ achievements:
   title: Explore Azure service level agreements (SLAs)
   summary: You're placing an application into a cloud-providers hardware versus on-premises.  How reliable will your solution be?
   iconUrl: /training/achievements/explore-azure-service-level-agreements.svg
+- uid: learn.wwl.get-started-openai.badge   
+  type: badge   
+  title: Get started with Azure OpenAI Service   
+  summary: This module provides engineers with the skills to begin building an Azure OpenAI Service solution.   
+  iconUrl: /training/achievements/generic-badge.svg 
 - uid: learn.wwl.examine-service-lifecycle-azure.badge
   type: badge
   title: Examine service lifecycle in Azure
