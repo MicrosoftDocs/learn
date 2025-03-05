@@ -4,7 +4,7 @@ In this unit, you learn how to implement Retrieval-Augmented Generation (RAG) in
 
 Embeddings are dense vector representations of data. In simpler terms, embeddings are a way to convert complex data, like words or images, into a set of numbers (vectors) that a computer can easily process. In natural language processing (NLP), embeddings represent words, sentences, or documents as vectors in a high-dimensional space. In these vectors, each word or sentence is represented as a list of numbers. These numbers aren't random; they're designed to capture the meaning and relationships between the words.
 
-These vectors capture semantic relationships, enabling advanced search and analysis. For instance, if you search for "queen" in a database, the system can also find related terms like "king" or "royalty" because their vectors are close to each other. This makes embeddings a powerful tool for tasks like search engines, recommendation systems, and language translation.
+These vectors capture semantic relationships, enabling advanced search and analysis. For instance, if you search for "queen" in a database, the system can also find related terms like "king" or "royalty" because their vectors are close to each other. This capability makes embeddings a powerful tool for tasks like search engines, recommendation systems, and language translation.
 
 ## Using Azure OpenAI Embedding Models
 

@@ -429,7 +429,7 @@ public class DocumentService {
 }
 ```
 
-In this code, we create two new documents: one about Spring AI, and the second one explaining how `QuestionAnswerAdvisor` works. These documents are typically created by Data Scientists in your team.
+In this code, we create two new documents: one about Spring AI, and the second one explaining how `QuestionAnswerAdvisor` works.  Data Scientists are normally responsible for creating these documents.
 
 Test these changes by running:
 

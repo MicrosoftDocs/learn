@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.build-intelligent-spring-apps-using-ai.2-pgvector-azure-postgresql-setup
-title: Set up PGVector extension in Azure PostgresQL for use with Spring AI
+title: Set up pgvector extension in Azure PostgresQL for use with Spring AI
 metadata:
-  title: Set up PGVector extension in Azure PostgresQL for use with Spring AI
+  title: Set up pgvector extension in Azure PostgresQL for use with Spring AI
   description: >-
-    Using PGVector extension in Azure PostgreSQL to apply Vector Search Similarity abstraction in Spring AI
+    Using pgvector extension in Azure PostgreSQL to apply Vector Search Similarity abstraction in Spring AI
   ms.date: 02/24/2025
   author: jbalderas
   ms.author: jbalderas
