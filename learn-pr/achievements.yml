@@ -5320,3 +5320,8 @@ achievements:
   title: Write automated tests
   summary: Learn about the types of testing you can do with Rust.
   iconUrl: /training/achievements/rust-automated-tests.svg
+- uid: learn.azure.communication-service-send-sms-console-app.badge
+  type: badge
+  title: Send an SMS message from a C# console application with Azure Communication Services
+  summary: In this module, you'll create a C# console application that sends SMS messages using a phone number provisioned via Azure Communication Services.
+  iconUrl: /training/achievements/communication-service-send-sms-console-app.svg
