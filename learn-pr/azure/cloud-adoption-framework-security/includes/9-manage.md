@@ -1,6 +1,6 @@
 This unit describes areas of security optimization to consider as you move through the [Manage methodology](/azure/cloud-adoption-framework/secure/manage/) phase of your journey.
 
-:::image type="content" source="../media/caf-secure-manage.svg" alt-text="Diagram that shows the Manage phase of the Secure methodology." lightbox="../media/caf-secure-manage.svg" border="false":::
+:::image type="content" source="../media/secure-manage.svg" alt-text="Diagram that shows the Manage phase of the Secure methodology." lightbox="../media/secure-manage.svg" border="false":::
 
 The Manage phase focuses on the ongoing operation of your cloud estate. You must maintain and strengthen your security posture continuously to successfully manage your estate.
 

@@ -1,6 +1,6 @@
 This unit describes areas of security optimization to consider as you move through the [Strategy methodology](/azure/cloud-adoption-framework/secure/strategy/) phase of your journey.
 
-:::image type="content" source="../media/caf-secure-strategy.svg" alt-text="Diagram that shows the Strategy phase of the Secure methodology." lightbox="../media/caf-secure-strategy.svg" border="false":::
+:::image type="content" source="../media/secure-strategy.svg" alt-text="Diagram that shows the Strategy phase of the Secure methodology." lightbox="../media/secure-strategy.svg" border="false":::
 
 Cloud adoption adds security complexity. Your strategy must address modern cloud challenges and integrate security into all facets of your organization. Unlike on-premises platforms, security in the cloud isn't a separate function. So you must implement security throughout your cloud adoption strategy.
 

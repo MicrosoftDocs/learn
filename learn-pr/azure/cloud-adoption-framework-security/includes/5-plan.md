@@ -1,6 +1,6 @@
 This unit describes areas of security optimization to consider as you move through the [Plan methodology](/azure/cloud-adoption-framework/secure/plan/) phase of your journey.
 
-:::image type="content" source="../media/caf-secure-plan.svg" alt-text="Diagram that shows the Plan phase of the Secure methodology." lightbox="../media/caf-secure-plan.svg" border="false":::
+:::image type="content" source="../media/secure-plan.svg" alt-text="Diagram that shows the Plan phase of the Secure methodology." lightbox="../media/secure-plan.svg" border="false":::
 
 A cloud adoption plan often has many technical challenges. You must carefully plan each step of your cloud adoption process, specifically when you update legacy workloads for cloud infrastructure. Prioritize security over performance and cost efficiency when you start your designs. This approach helps ensure that you don't introduce risks that could require you to redesign workloads later.
 
