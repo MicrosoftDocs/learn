@@ -16029,8 +16029,7 @@
     {
       "source_path_from_root": "/learn-pr/languages/python-if-elif-else/index.md",
       "redirect_url": "/training/modules/python-boolean-types"
-    },
-    // this section 
+    }, 
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-openai/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/prepare-azure-ai-development/",
@@ -16082,12 +16081,12 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-openai/includes/index.md",
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-openai/includes/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/prepare-azure-ai-development/", 
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/achievements/generic-badge.yml",
+      "source_path_from_root": "learn-pr/achievements/learn.wwl.get-started-openai.badge",
       "redirect_url": "https://learn.microsoft.com/training/modules/prepare-azure-ai-development/",
       "redirect_document_id": false
     },
