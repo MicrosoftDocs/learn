@@ -16029,6 +16029,61 @@
     {
       "source_path_from_root": "/learn-pr/languages/python-if-elif-else/index.md",
       "redirect_url": "/training/modules/python-boolean-types"
+    }, 
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-openai/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-openai/2-access-azure-openai.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-openai/3-use-azure-openai-studio.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-openai/4-types-of-models.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-openai/5-deploy-models.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-openai/6-explore-prompts.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-openai/7-use-azure-openai-playground.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-openai/8-exercise.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-openai/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-openai/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-azure-ai-development/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-openai/includes/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-azure-ai-development/", 
+      "redirect_document_id": false
     },
     {
       "source_path_from_root": "/learn-pr/languages/python-install-vscode/1-introduction.md",
