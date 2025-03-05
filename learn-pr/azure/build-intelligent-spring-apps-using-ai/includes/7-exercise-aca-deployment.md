@@ -1,4 +1,4 @@
-In this unit we deploy our Spring AI application to Azure Container Apps for scalable and serverless container hosting.
+In this unit, we deploy our Spring AI application to Azure Container Apps for scalable and serverless container hosting.
 
 ## Environment Variables Setup
 
@@ -36,11 +36,11 @@ For this exercise, we need to some environment variables from prior exercises.
 MANAGED_IDENTITY_NAME=containerappusr
 ```
 
-With these environment values in place, you are now ready to deploy the application into Azure Container Apps.
+With these environment values in place, you're now ready to deploy the application into Azure Container Apps.
 
 ## Create Dockerfile
 
-We will now create a `Dockerfile` that will be used to build a docker image with the application code to be used to deploy to Azure Container Apps:
+Next we create a `Dockerfile` that is used to build a docker image with the application code to be used to deploy to Azure Container Apps:
 
 ```txt
 # Step 1: Use microsoft JDK image with maven3 to build the application
@@ -60,7 +60,7 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 
 ## Deploy Azure Container Application
 
-To deploy the application use the following command:
+To deploy the application, use the following command:
 
 ```bash
 az containerapp up --name $CONTAINER_APP_NAME \
@@ -79,7 +79,7 @@ This command will:
 * Create an Azure Container Registry
 * Build the container image using the source code and `Dockerfile` specified in `--source` path, and push it to the registry
 * Create and deploy the container app named `$CONTAINER_APP_NAME` using the built container image
-* Configure `8080` as the HTTP port that the container app will listen for incoming traffic
+* Configure `8080` as the HTTP port that the container app listens for incoming traffic
 * Deploy the container app in the region specified in the `--location` parameter
 
 To view the logs of your Azure Container App, use the following command:
@@ -91,7 +91,7 @@ az containerapp logs show \
   --tail 80
 ```
 
-Inspect the logs and you will notice that the application is not starting successfully due to missing configuration values as expected:
+Inspect the logs and notice that the application isn't starting successfully due to missing configuration values as expected:
 
 ```json
 {"TimeStamp": "2025-03-04T19:04:52.7673831+00:00", "Log": "F Caused by: org.postgresql.util.PSQLException: 
@@ -109,7 +109,7 @@ az containerapp update --name $CONTAINER_APP_NAME \
 
 ## Enable managed identity
 
-The Container App needs to be able to authenticate to PostgresSQL server. We will use System Assigned Managed Identities to accomplish this.
+The Container App needs to be able to authenticate to PostgresSQL server. We use System Assigned Managed Identities for authentication.
 
 To enable system-assigned managed identity for your Azure Container App, use this command:
 
@@ -165,7 +165,7 @@ az containerapp update \
     SPRING_AI_VECTORSTORE_PGVECTOR_SCHEMA_NAME=containerapp
 ```
 
-Note that we intentionally use a different pgvector schema name to avoid conflicts from using the same schema name with a different user.
+We intentionally use a different `pgvector` schema name to avoid conflicts from using the same schema name with a different user.
 
 ## Verify Deployment
 
@@ -191,7 +191,7 @@ Expect to see a valid response:
 In the context of **Spring AI**, the **QuestionAnswerAdvisor** operates as a key component for enabling **Retrieval Augmented Generation (RAG)**, which combines user queries with external contextual data to produce accurate and relevant AI responses.
 ```
 
-Try another question that is not in our vector store:
+Try another question that isn't in our vector store:
 
 ```bash
 curl -G "https://$URL/api/rag" --data-urlencode "query=What is Vector Search Similarity?"
@@ -205,7 +205,7 @@ Expect to see a similar valid response:
 
 ## Scaling Azure Container Apps
 
-By default, your azure container app will be configured to use 0 min replicas and a HTTP scaling rule to handle 10 requests per replica. You can configure the scaling configuration using the `az containerapp update` command:
+By default, your Azure Container App is configured to use 0 minimum replicas and a HTTP scaling rule to handle 10 requests per replica. You can configure the scaling configuration using the `az containerapp update` command:
 
 ```sh
 az containerapp update \
@@ -220,7 +220,7 @@ az containerapp update \
 
 ## Cleanup
 
-Once you are done testing, you can remove resources when done:
+Once you're done testing, you can remove resources when done:
 
 ```bash
 az group delete \
@@ -230,4 +230,4 @@ az group delete \
 
 ## Unit Summary
 
-In this unit, we successfully deployed a Spring AI application to Azure Container Apps, leveraging scalable and serverless container hosting. We set up necessary environment variables, created a Dockerfile to build the application image, and deployed the container app using Azure CLI commands. We enabled managed identity for secure authentication to the PostgreSQL server and configured secrets and environment variables for the application. Finally, we verified the deployment by testing the application endpoint and learned how to clean up resources after testing.
+In this unit, we successfully deployed a Spring AI application to Azure Container Apps, using scalable and serverless container hosting. We set up necessary environment variables, created a Dockerfile to build the application image, and deployed the container app using Azure CLI commands. We enabled managed identity for secure authentication to the PostgreSQL server and configured secrets and environment variables for the application. Finally, we verified the deployment by testing the application endpoint and learned how to clean up resources after testing.

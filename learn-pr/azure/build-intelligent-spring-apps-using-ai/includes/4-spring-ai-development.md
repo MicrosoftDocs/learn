@@ -1,8 +1,8 @@
-In this unit, you will learn how to implement Retrieval-Augmented Generation (RAG) in a Spring Boot application using vector search similarity provided by the `pgvector` extension in a PostgreSQL database. We will introduce relevant RAG concepts such as embeddings, embedding models, and vector stores. By the end of this unit, you should understand how to apply these tools to enhance your applications with advanced search and retrieval capabilities.
+In this unit, you learn how to implement Retrieval-Augmented Generation (RAG) in a Spring Boot application using vector search similarity provided by the `pgvector` extension in a PostgreSQL database. We introduce relevant RAG concepts such as embeddings, embedding models, and vector stores. By the end of this unit, you should understand how to apply these tools to enhance your applications with advanced search and retrieval capabilities.
 
 ## What are Embeddings?
 
-Embeddings are dense vector representations of data. In simpler terms, embeddings are a way to convert complex data, like words or images, into a set of numbers (vectors) that a computer can easily process. In natural language processing (NLP), embeddings represent words, sentences, or documents as vectors in a high-dimensional space. This means that each word or sentence is transformed into a list of numbers. These numbers are not random; they are designed to capture the meaning and relationships between the words.
+Embeddings are dense vector representations of data. In simpler terms, embeddings are a way to convert complex data, like words or images, into a set of numbers (vectors) that a computer can easily process. In natural language processing (NLP), embeddings represent words, sentences, or documents as vectors in a high-dimensional space. In these vectors, each word or sentence is represented as a list of numbers. These numbers aren't random; they're designed to capture the meaning and relationships between the words.
 
 These vectors capture semantic relationships, enabling advanced search and analysis. For instance, if you search for "queen" in a database, the system can also find related terms like "king" or "royalty" because their vectors are close to each other. This makes embeddings a powerful tool for tasks like search engines, recommendation systems, and language translation.
 
@@ -10,7 +10,7 @@ These vectors capture semantic relationships, enabling advanced search and analy
 
 Embedding models are essential tools in natural language processing (NLP) and other AI applications. They convert complex data, such as text, into dense vector representations that capture the semantic meaning of the data. These vectors can then be used for various tasks, including search, recommendation, and clustering.
 
-Azure OpenAI provides powerful embedding models that can be easily integrated into your applications. These models can generate embeddings for various types of data, enabling advanced search and retrieval capabilities. One the most commonly used text embedding model from OpenAI is the `text-embedding-ada-002` model. This model can be used for various applications, including search, clustering, and recommendation systems, due to its ability to understand and represent complex text data. When used with ChatGPT models, `text-embedding-ada-002` enhances the chatbot's ability to understand context, retrieve relevant information, and provide more accurate and contextually appropriate responses. By leveraging `text-embedding-ada-002` with ChatGPT, developers can create more intelligent and responsive applications that deliver better user experiences.
+Azure OpenAI provides powerful embedding models that can be easily integrated into your applications. These models can generate embeddings for various types of data, enabling advanced search and retrieval capabilities. One the most commonly used text embedding model from OpenAI is the `text-embedding-ada-002` model. This model can be used for various applications, including search, clustering, and recommendation systems, due to its ability to understand and represent complex text data. When used with ChatGPT models, `text-embedding-ada-002` enhances the chatbot's ability to understand context, retrieve relevant information, and provide more accurate and contextually appropriate responses. By using `text-embedding-ada-002` with ChatGPT, developers can create more intelligent and responsive applications that deliver better user experiences.
 
 ## Implementing VectorStore in Spring AI
 
@@ -25,7 +25,7 @@ You can add the `VectorStore` Spring Boot starter dependency to your project usi
 </dependency>
 ```
 
-On startup, the `VectorStore` will attempt to install the required database extensions and create the required `vector_store` table with an index if not existing. Optionally, you can do this manually using this SQL statements:
+On startup, the `pgvector` Spring Boot starter attempts to install the required database extensions and create the required `vector_store` table with an index if not existing. Optionally, you can do this manually using this SQL statements:
 
 ```sql
 CREATE EXTENSION IF NOT EXISTS vector;
@@ -51,7 +51,7 @@ The `VectorStore` also requires an `EmbeddingModel` instance to calculate embedd
 </dependency>
 ```
 
-At application startup, Spring Boot will auto-configure `VectorStore` using Azure OpenAI application properties:
+At application startup, Spring Boot autoconfigures `VectorStore` using Azure OpenAI application properties:
 
 ```bash
 spring.ai.azure.openai.api-key=${AZURE_OPENAI_API_KEY}

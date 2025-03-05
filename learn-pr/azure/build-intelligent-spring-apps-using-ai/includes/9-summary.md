@@ -1,4 +1,4 @@
-Congratulations! You completed this comprehensive module on building AI-powered applications with Spring AI and Azure. Let's review what you've learned.
+Congratulations! You completed this comprehensive module on building AI-powered applications with Spring AI and Azure. Let's review what you learned.
 
 ## What You've Learned
 
@@ -17,19 +17,14 @@ Congratulations! You completed this comprehensive module on building AI-powered 
 To continue your learning journey:
 
 1. **Explore Advanced Topics**
-   - Function calling with Spring AI
-   - Advanced prompt engineering
-   - Custom model deployment
+   - [Function calling with Spring AI](https://docs.spring.io/spring-ai/reference/api/chat/functions/openai-chat-functions.html)
+   - [Implement Observability in Spring AI](https://docs.spring.io/spring-ai/reference/observability/index.html)
+   - [Custom a model with fine-tuning](/azure/ai-services/openai/how-to/fine-tuning?tabs=azure-openai)
 
-2. **Build Real Applications**
-   - Implement your own RAG system
-   - Create AI-powered services
-   - Deploy to production
-
-3. **Join the Community**
-   - Spring AI GitHub repository
-   - Azure AI community
-   - Developer forums
+1. **Join the Community**
+   - [Spring AI GitHub repository](https://github.com/spring-projects/spring-ai)
+   - Review [Awesome Spring AI](https://github.com/danvega/awesome-spring-ai) resources
+   - Review and contribute [Azure AI samples](https://github.com/Azure-Samples/azure-ai)
 
 ## Learning Resources
 

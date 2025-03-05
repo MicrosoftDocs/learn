@@ -19,7 +19,7 @@ RESOURCE_GROUP="spring-ai-postgresql-rg"
 DB_SERVER_NAME="spring-ai-postgresql-server-$ID"
 ```
 
-You can limit access by specifying to the PostgreSQL server external IP appropriate IP address values for your environment. Use the public IP address of the computer you're using to restrict access to the server to only your IP address. Intialize the `start` and `end` IP values as follows:
+You can limit access by specifying to the PostgreSQL server external IP appropriate IP address values for your environment. Use the public IP address of the computer you're using to restrict access to the server to only your IP address. Initialize the `start` and `end` IP values as follows:
 
 ```bash
 PUBLIC_IP=$(curl -s ipinfo.io/ip)
@@ -84,7 +84,7 @@ For testing purposes only, run the following command to create a firewall rule t
      --end-ip-address 255.255.255.255
    ```
 
-### Grant admin access to your Azure Entra ID
+### Grant admin access to your Entra ID
 
 Run the following command to get the `object id` for your Entra ID:
 
@@ -131,7 +131,7 @@ Connect to database using `psql` client with this command:
 psql "host=$PGHOST dbname=postgres user=azureuser sslmode=require"
 ```
 
-Example PSQL output:
+Example output from `psql`:
 
 ```bash
 psql (14.13, server 16.4)
@@ -147,4 +147,4 @@ Once this rule is created, you can update using `az postgres flexible-server fir
 
 ## Unit Summary
 
-We now have a vector-enabled PostgreSQL database ready that will enable vector similarity search in our RAG implementation
+We now have a vector-enabled PostgreSQL database ready that provides vector similarity search capabilities

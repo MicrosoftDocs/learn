@@ -24,21 +24,21 @@ quiz:
           explanation: That's not correct. While QuestionAnswerAdvisor uses vector embeddings for vector similarity search, it cannot be used directly for generating embeddings.
         - content: AIClient
           isCorrect: false
-          explanation: The AIClient is not used for generating vector embeddings.
+          explanation: The AIClient isn't used for generating vector embeddings.
     - content: What PostgreSQL extension is required for vector similarity search?
       choices:
         - content: pg_similarity
           isCorrect: false
-          explanation: That's not correct. The pg_similarity extension is not used for vector similarity search.
+          explanation: That's not correct. The pg_similarity extension isn't used for vector similarity search.
         - content: pg_trgm
           isCorrect: false
-          explanation: That's not correct. The pg_trgm extension is not used for vector similarity search.
+          explanation: That's not correct. The pg_trgm extension isn't used for vector similarity search.
         - content: pgvector
           isCorrect: true
           explanation: Correct. The pgvector extension adds vector similarity search capabilities to PostgreSQL, which is essential for implementing RAG patterns with vector embeddings.
         - content: pg_vector_ops
           isCorrect: false
-          explanation: That's not correct. The pg_vector_ops extension is not used for vector similarity search.
+          explanation: That's not correct. The pg_vector_ops extension isn't used for vector similarity search.
     - content: Which Azure Container Apps feature enables automatic scaling based on HTTP traffic?
       choices:
         - content: HTTP Scale Rules
@@ -46,38 +46,38 @@ quiz:
           explanation: Correct. HTTP Scale Rules in Azure Container Apps allow automatic scaling based on incoming HTTP request concurrency.
         - content: Traffic Manager
           isCorrect: false
-          explanation: That's not correct. Traffic Manager is not used for automatic scaling based on HTTP traffic.
+          explanation: That's not correct. Traffic Manager isn't used for automatic scaling based on HTTP traffic.
         - content: Load Balancer
           isCorrect: false
-          explanation: That's not correct. Load Balancer is not used for automatic scaling based on HTTP traffic.
+          explanation: That's not correct. Load Balancer isn't used for automatic scaling based on HTTP traffic.
         - content: Application Gateway
           isCorrect: false
-          explanation: That's not correct. Application Gateway is not used for automatic scaling based on HTTP traffic.
+          explanation: That's not correct. Application Gateway isn't used for automatic scaling based on HTTP traffic.
     - content: What is the purpose of the ChatClient in Spring AI?
       choices:
         - content: Managing database connections
           isCorrect: false
-          explanation: That's not correct. The ChatClient is not used for managing database connections.
+          explanation: That's not correct. The ChatClient isn't used for managing database connections.
         - content: Processing HTTP requests
           isCorrect: false
-          explanation: That's not correct. The ChatClient is not used for processing HTTP requests.
+          explanation: That's not correct. The ChatClient isn't used for processing HTTP requests.
         - content: Interacting with language models
           isCorrect: true
           explanation: Correct. The ChatClient is Spring AI's core abstraction for interacting with Large Language Models (LLMs) like Azure OpenAI.
         - content: Handling authentication
           isCorrect: false
-          explanation: That's not correct. The ChatClient is not used for handling authentication.
+          explanation: That's not correct. The ChatClient isn't used for handling authentication.
     - content: Which configuration is required for Azure OpenAI integration in application.properties?
       choices:
         - content: Only API key
           isCorrect: false
-          explanation: That's not correct. The API key is not sufficient for Azure OpenAI integration.
+          explanation: That's not correct. The API key isn't sufficient for Azure OpenAI integration.
         - content: Only endpoint URL
           isCorrect: false
-          explanation: That's not correct. The endpoint URL is not sufficient for Azure OpenAI integration.
+          explanation: That's not correct. The endpoint URL isn't sufficient for Azure OpenAI integration.
         - content: Only deployment name
           isCorrect: false
-          explanation: That's not correct. The deployment name is not sufficient for Azure OpenAI integration.
+          explanation: That's not correct. The deployment name isn't sufficient for Azure OpenAI integration.
         - content: API key, endpoint, and deployment name
           isCorrect: true
           explanation: Correct. Spring AI requires the API key, endpoint URL, and deployment name to properly configure Azure OpenAI integration.

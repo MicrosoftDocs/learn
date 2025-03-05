@@ -1,4 +1,4 @@
-In this unit, we build a RAG (Retrieval Augmented Generation) application using Spring AI, Azure OpenAI and `VectorStore` from Spring AI.
+In this unit, we build a RAG (Retrieval Augmented Generation) application using Spring AI, Azure OpenAI, and `VectorStore` from Spring AI.
 
 ## Setting Up Your Development Environment
 
@@ -113,13 +113,13 @@ The generated Spring Boot starter project includes the following configurations 
 - **Spring Boot Version**: 3.4.3
 - **Java Version**: 17
 - **Dependencies**:
-  - `web`: Adds support for building web applications, including RESTful services using Spring MVC.
-  - `jdbc`: Provides JDBC support for database access.
+  - `web`: Adds support for building web applications, including RESTful services using Spring MVC (Model View Controller).
+  - `jdbc`: Provides JDBC (Java Database Connectivity) support for database access.
   - `azure-support`: Adds support for integrating with Azure services.
   - `spring-ai-azure-openai`: Adds support for integrating with Azure OpenAI services.
   - `spring-ai-vectordb-pgvector`: Adds support for using `pgvector`, a PostgreSQL extension for vector embeddings.
 
-Unzip downloaded file using commmand:
+Unzip downloaded file using command:
 
 ```bash
 unzip -u spring-ai-app.zip -d spring-ai-app
@@ -302,9 +302,9 @@ public class RagService {
 }
 ```
 
-In the provided code we implement RAG by to generates an answer to a given query by augmenting knowledge in the model using similar contexts from the `VectorStore` as follows:
+In the provided code, we implement RAG by to generate an answer to a given query by augmenting knowledge in the model using similar contexts from the `VectorStore` as follows:
 
-1. First perform a similarity search using Spring AI's `VectorStore` with the provided `query`. The search is configured to find documents with a similarity threshold of 0.8 and to return the top 3 most similar documents.
+1. First perform a similarity search using Spring AI's `VectorStore` with the provided `query`. The search is configured to find documents with a similarity threshold of 0.8 and to return the top three most similar documents.
 1. The results of the similarity search are then transformed into a formatted string that pairs the new prompt (question) with the contents from the similar found documents.
 1. Finally, the new prompt is sent to the `ChatClient`, which sends it to the Azure OpenAI model and returns the response from the model.
 
@@ -336,7 +336,7 @@ public class RagController {
 
 #### Test application
 
-With these changes in place, we are now ready to test the implementation by running this command:
+With these changes in place, we're now ready to test the implementation by running this command:
 
 ```bash
 mvn spring-boot:run
@@ -361,14 +361,14 @@ Next, use the `curl` command to ask this question "How does QuestionAnswerAdviso
 curl -G "http://localhost:8080/api/rag" --data-urlencode "query=How does QuestionAnswerAdvisor work in Spring AI?"
 ```
 
-Notice that even though the answer may appear valid, there will be clues indicating that this response is a likely guess:
+Notice that even though the answer may appear valid, there are words indicating that this response is a likely guess:
 
 ```bash
 ### 2. **What is QuestionAnswerAdvisor?**
 The **QuestionAnswerAdvisor** is likely a component or feature within Spring AI that focuses on providing AI-driven advice or responses to user queries. 
 ```
 
-#### Test application with additional knowledge
+#### Test application with extra knowledge
 
 We now provide extra knowledge by providing the following documents to be stored using our vector store:
 
@@ -429,7 +429,7 @@ public class DocumentService {
 }
 ```
 
-In this code, we create two new documents: one about Spring AI, and the second one explaining how `QuestionAnswerAdvisor` works. Note that, these documents will typically be created by  
+In this code, we create two new documents: one about Spring AI, and the second one explaining how `QuestionAnswerAdvisor` works. These documents are typically created by Data Scientists in your team.
 
 Test these changes by running:
 

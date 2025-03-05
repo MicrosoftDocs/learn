@@ -7,7 +7,7 @@ Spring AI provides a set of abstractions and tools that make it easy to work wit
 - **ChatClient API**: Core abstraction for interacting with Large Language Models (LLMs).
 - **Multiple AI Model providers**: Support for all major AI Model providers, including Azure OpenAI.
 - **Embeddings**: Generate vector embeddings for semantic search.
-- **Vector storage integration**: Built-in support for vector databases, such as PGVector.
+- **Vector storage integration**: Built-in support for vector databases, such as `pgvector`.
 - **Advisors API**: Encapsulates Generative AI patterns, for example, to implement Retrieval Augmentation (RAG).
 
 ## Sample Use Cases
