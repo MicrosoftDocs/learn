@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Determine Azure Storage encryption
   description: "Determine Azure Storage encryption"
-  ms.date: 02/14/2025
+  ms.date: 03/04/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
