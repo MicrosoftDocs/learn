@@ -205,7 +205,7 @@ Expect to see a similar valid response:
 
 ## Scaling Azure Container Apps
 
-By default, your Azure Container App is configured to use zero minimum replicas and a HTTP scaling rule to handle 10 requests per replica. You can configure the scaling configuration using the `az containerapp update` command:
+By default, your Azure Container App is configured to use zero minimum replicas and an HTTP scaling rule to handle 10 requests per replica. You can configure the scaling configuration using the `az containerapp update` command:
 
 ```sh
 az containerapp update \

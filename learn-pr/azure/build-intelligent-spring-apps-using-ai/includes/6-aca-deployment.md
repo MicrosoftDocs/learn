@@ -18,7 +18,7 @@ There are two types of Container App environments:
 There are three primary deployment types for Azure Container Apps:
 
 1. **Deploy from Existing Image.** You can deploy a container app that uses an existing image in a public or private container registry.
-1. **Deploy from Source Code.** Deploy your application directly from your local source code repository. By using the `az container up` command, this command builds the container image, pushes it to a registry, and deploys the container app. It also creates the registry in Azure Container Registry if you don't provide one. This command can build the image with or without a Dockerfile. If building without a Dockerfile, the following languages are supported:
+1. **Deploy from Source Code.** Deploy your application directly from your local source code repository. The `az container up` command builds the container image, pushes it to a registry, and deploys the container app. It also creates the registry in Azure Container Registry if you don't provide one. This command can build the image with or without a Dockerfile. If building without a Dockerfile, the following languages are supported:
 
     * .NET
     * Node.js

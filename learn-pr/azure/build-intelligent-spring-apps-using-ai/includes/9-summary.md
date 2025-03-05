@@ -1,6 +1,6 @@
 Congratulations! You completed this comprehensive module on building AI-powered applications with Spring AI and Azure. Let's review what you learned.
 
-## What You've Learned
+## What You Learned
 
 1. **Spring AI Fundamentals**
    - Core abstractions and components
