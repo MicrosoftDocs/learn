@@ -31,6 +31,7 @@ To continue your learning journey:
 - [Spring AI Documentation](https://docs.spring.io/spring-ai/reference/)
 - [Azure OpenAI Service](/azure/cognitive-services/openai/)
 - [Azure Container Apps](/azure/container-apps/)
+- [Tutorial: Scale a container app with Java metrics](/azure/container-apps/java-metrics-scale-with-keda)
 - [PostgreSQL Documentation](https://www.postgresql.org/docs/)
 
 Congratulations on completing this module! You're now ready to build sophisticated AI applications using Spring AI and Azure!
