@@ -16086,11 +16086,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "learn-pr/achievements/learn.wwl.get-started-openai.badge",
-      "redirect_url": "https://learn.microsoft.com/training/modules/prepare-azure-ai-development/",
-      "redirect_document_id": false
-    },
-    {
       "source_path_from_root": "/learn-pr/languages/python-install-vscode/1-introduction.md",
       "redirect_url": "/training/modules/python-install-vscode/1-introduction"
     },
