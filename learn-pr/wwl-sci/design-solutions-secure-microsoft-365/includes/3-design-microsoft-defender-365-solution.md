@@ -3,7 +3,7 @@ Microsoft Defender XDR is a unified pre- and post-breach enterprise defense suit
 Here's a list of the different Microsoft Defender XDR products and solutions that Microsoft Defender XDR coordinates with:
 
 -   [**Microsoft Defender for Endpoint**](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
--   [**Microsoft Defender for Office 365**](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview?view=o365-worldwide)
+-   [**Microsoft Defender for Office 365**](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview)
 -   [**Microsoft Defender for Identity**](/defender-for-identity/what-is)
 -   [**Microsoft Defender for Cloud Apps**](/defender-cloud-apps/what-is-defender-for-cloud-apps)
 -   [**Microsoft Defender Vulnerability Management**](/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management)

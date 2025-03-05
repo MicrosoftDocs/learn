@@ -35,7 +35,7 @@ Though each of these services emphasizes a goal from among Protect, Detect, Inve
 
 The core of Office 365 security is EOP protection. Microsoft Defender for Office 365 P1 contains EOP in it. Defender for Office 365 P2 contains P1 and EOP. The structure is cumulative. That's why, when configuring this product, you should start with EOP and work to Defender for Office 365.
 
-Though email authentication configuration takes place in public DNS, it's important to configure this feature to help defend against spoofing. _If you have EOP,_ _**you should [configure email authentication](/microsoft-365/security/office-365-security/email-authentication-about?view=o365-worldwide)**_.
+Though email authentication configuration takes place in public DNS, it's important to configure this feature to help defend against spoofing. _If you have EOP,_ _**you should [configure email authentication](/microsoft-365/security/office-365-security/email-authentication-about)**_.
 
 If you have an Office 365 E3, or lower, you have EOP, but with the option to buy standalone Defender for Office 365 P1 through upgrade. If you have Office 365 E5, you already have Defender for Office 365 P2.
 
