@@ -197,7 +197,7 @@ If you like the proposed code updates, you can select **Accept** and continue co
 
 ![Screenshot showing suggested update from inline chat in Visual Studio Code.](../media/inline-chat-3.png)
 
-If you don't like the proposed updates, you can ask Copilot Chat to generate another suggestion by selecting the **Rerun...** icon. The Rerun icon is displayed as a circular arrow that and appears below the prompt textbox.
+If you don't like the proposed updates, you can ask Copilot Chat to generate another suggestion by selecting the **Rerun...** icon. The Rerun icon is displayed as a circular arrow that appears below the prompt textbox.
 
 If you rerun the prompt and still don't get the results you need, try updating your prompt with additional context. Copilot Chat generates better suggestions when the prompt is clear, succinct, and accurate. You can choose **Discard** to close the inline chat without making any changes.
 
