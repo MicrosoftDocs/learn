@@ -27,7 +27,7 @@ Here's an example of how the Microsoft Defender portal correlates all related al
 
 Here's an example of the list of related alerts for an incident.
 
-:::image type="content" source="../media/incident-list.png" alt-text="Screenshot showint the list of alerts for an incident." border="true":::
+:::image type="content" source="../media/incident-list.png" alt-text="Screenshot showing the list of alerts for an incident." border="true":::
 
 Here's an example of query-based hunting on top of email and endpoint raw data.
 
