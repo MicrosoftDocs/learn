@@ -28,7 +28,6 @@ subjects:
 - natural-language-processing
 modules:
 - learn.wwl.plan-prepare-genaiops
-- learn.wwl.ai-foundry-sdk
 - learn.evaluate-generative-ai-apps
 trophy:
   uid: learn.wwl.operationalize-gen-ai-apps.trophy
