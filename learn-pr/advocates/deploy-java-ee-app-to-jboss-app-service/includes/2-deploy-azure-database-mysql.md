@@ -64,26 +64,25 @@ The steps in this unit illustrate deploying an Azure Database for MySQL Flexible
 
 ## Connect and test the connection by using the Azure CLI
 
-Since MySQL 8.0, the user authentication method has changed to `caching_sha2_password`, making `mysql_native_password` authentication unavailable. Instead, you can use Azure Database for MySQL - Flexible Server to connect to your flexible server by using the `az mysql flexible-server connect` command in the Azure CLI. You can use this command to test connectivity to your database server, quickly create a basic database, and run queries directly against your server without installing **mysql.exe** or MySQL Workbench. You can also use the command in interactive mode to run multiple queries at a time.
+Since MySQL 8.0, the user authentication method has changed to `caching_sha2_password`, making `mysql_native_password` authentication unavailable. As an alternative, you can use the `az mysql flexible-server connect` command in the Azure CLI to test connectivity to your database server, quickly create a basic database, and run queries directly against your server without installing **mysql.exe** or MySQL Workbench. You can also use the command in interactive mode to run multiple queries at a time.
 
-Use the following steps to........
+Use the following steps to create a database, connect to the server, and run a query:
 
 1. Use the following command to create a database:
 
     ```azurecli
-    az mysql flexible-server db create
-        --resource-group  $MYSQL_RES_GRP_NAME \
-        --server-name $MYSQL_SERVER_NAME \
-        --database-name $newdatabase \
-        --charset utf8mb4 \
-        --collation utf8mb4_unicode_ci
+    az mysql flexible-server db create \
+            --resource-group  $MYSQL_RES_GRP_NAME \
+            --server-name $MYSQL_SERVER_NAME \
+            --database-name $newdatabase \
+            --charset utf8mb4 \
+            --collation utf8mb4_unicode_ci
     ```
 
 1. Connect to the server with interactive mode by using the following command:
 
     ```azurecli
     az mysql flexible-server connect
-        -g $MYSQL_RES_GRP_NAME
         --name $MYSQL_SERVER_NAME
         --admin-user $MYSQL_USER
         --admin-password $MYSQL_PASSWORD
@@ -91,11 +90,10 @@ Use the following steps to........
         --interactive
     ```
 
-1. Run a query from the Azure CLI:
+1. Use the following command to run a query:
 
     ```azurecli
     az mysql flexible-server execute
-        -g $MYSQL_RES_GRP_NAME
         --name $MYSQL_SERVER_NAME
         --admin-user $MYSQL_USER
         --admin-password $MYSQL_PASSWORD
