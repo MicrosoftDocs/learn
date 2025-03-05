@@ -3,7 +3,7 @@ uid: learn.dotnet-maui.consume-rest-services
 metadata:
   moduleType: standard
   title: "Consume REST web services in .NET MAUI apps"
-  description: "Consume a REST web service by using HttpClient and perform basic CRUD operations. You'll detect when your device is connected to the internet to provide a good user experience and take advantage of the native networking stacks to get top performance."
+  description: "Build a .NET Multi-platform App UI (MAUI) application that consumes a REST web service by using HttpClient and performs basic CRUD operations. In the app, you detect when your device is connected to the internet to provide a good user experience and take advantage of the native networking stacks to get top performance."
   ms.date: 10/31/2023
   author: codemillmatt 
   ms.author: masoucou
@@ -12,7 +12,7 @@ metadata:
   ms.service: dotnet-mobile
   ms.subservice: dotnet-maui
 title: Consume REST web services in .NET MAUI apps
-summary: "Consume a REST web service by using HttpClient and perform basic CRUD operations. You'll detect when your device is connected to the internet to provide a good user experience and take advantage of the native networking stacks to get top performance." 
+summary: "Build a .NET Multi-platform App UI (MAUI) application that consumes a REST web service by using HttpClient and performs basic CRUD operations. In the app, you detect when your device is connected to the internet to provide a good user experience and take advantage of the native networking stacks to get top performance."
 abstract: | 
   In this module, you will:
   - Detect if your device is connected to the internet.
