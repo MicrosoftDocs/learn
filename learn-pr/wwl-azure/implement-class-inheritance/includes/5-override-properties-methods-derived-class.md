@@ -127,7 +127,7 @@ Here is a breakdown of the code:
 
 1. In step 3, the code accesses and prints the properties and methods of the derived class instance. Since `derivedClass` is an instance of `DerivedClass`, it uses the overridden properties and methods defined in `DerivedClass`. The output reflects the values and behaviors as defined in the derived class.
 
-- In step 4, the code accesses and prints the properties and methods of the derived class instance referenced by a base class variable. For properties and methods that are overridden (`Property1` and `Method1`), the derived class implementation is used. However, for properties and methods that are hidden (`Property2` and `Method2`), the base class implementation is used. This demonstrates the difference between method overriding (using `override`) and method hiding (using `new`).
+1. In step 4, the code accesses and prints the properties and methods of the derived class instance referenced by a base class variable. For properties and methods that are overridden (`Property1` and `Method1`), the derived class implementation is used. However, for properties and methods that are hidden (`Property2` and `Method2`), the base class implementation is used. This demonstrates the difference between method overriding (using `override`) and method hiding (using `new`).
 
 ## Defining an abstract base class
 

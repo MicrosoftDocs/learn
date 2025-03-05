@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-class-inheritance
 metadata:
-  title: Implement class inheritance
-  description: "Learn how to create a class hierarchy using base and derived classes and how to hide or override members of a derived class by using 'new', 'virtual', 'abstract', and 'override' keywords."
-  ms.date: 03/04/2025
+  title: Implement Class Inheritance
+  description: "Learn how to create a class hierarchy using base and derived classes and how to hide or override members of a derived class by using `new`, `virtual`, `abstract`, and `override` keywords."
+  ms.date: 03/05/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module
@@ -12,15 +12,15 @@ metadata:
   ms.devlang: dotnet
   ai-usage: human-only
 title: Implement class inheritance
-summary: Learn how to create a class hierarchy using base and derived classes and how to hide or override members of a derived class by using 'new', 'virtual', 'abstract', and 'override' keywords.&nbsp;&nbsp;
+summary: Learn how to create a class hierarchy using base and derived classes and how to hide or override members of a derived class by using `new`, `virtual`, `abstract`, and `override` keywords.&nbsp;&nbsp;
 abstract: |
   -   Describe the principals of class inheritance.
 
   -   Configure base and derived classes.
 
-  -   Hide the members of a base class by using the 'new' keyword.
+  -   Hide the members of a base class by using the `new` keyword.
 
-  -   Override the members of a base class by using the 'virtual', 'override', and 'abstract' keywords.
+  -   Override the members of a base class by using the `virtual`, `override`, and `abstract` keywords.
 
   -   Access the members of a base class from within a derived class.
 

@@ -4,12 +4,12 @@ Imagine you're working at a non-profit company that's in the midst of a software
 
 The topics covered in this module include:
 
-- Understanding Class Inheritance and Polymorphism in C#
-- Understanding Inheritance, Member Visibility and Keywords in C#
-- Extending Derived Classes with New Members and Resolving Naming Conflicts
-- Overriding and Hiding Properties and Methods in Derived Classes in C#
-- Using the 'base' Keyword to Access Base Class Members from a Derived Class
-- Implementing Base and Derived Classes in C# - Exercise
+- Examine the principals of class inheritance.
+- Configure base and derived classes.
+- Extend a derived class with new members.
+- Override properties and methods in a derived class.
+- Access base class members from a derived class.
+- Implement base and derived classes in a C# app.
 
 After completing this module, you're able to:
 
@@ -19,6 +19,6 @@ After completing this module, you're able to:
 - Describe the use of `new` and `override` keywords in a derived class.
 - Override properties and methods in a derived class.
 - Access base class members in a derived class.
-- Implement base and derived classes in a C# program.
+- Implement base and derived classes in a C# app.
 
-By the end of this module, you have a solid understanding of class inheritance in C# and be able to implement a class hierarchy using base and derived classes.
+By the end of this module, you have a solid understanding of class inheritance in C# and you're able to implement a class hierarchy using base and derived classes.
