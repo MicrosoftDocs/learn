@@ -2,20 +2,17 @@
 uid: learn.azure.build-intelligent-spring-apps-using-ai
 metadata:
   title: Building an AI-Powered Java App with Spring AI and Azure
-  description: >-
-    Learn how to build and deploy an AI-powered Java application using
-    Spring AI, Azure OpenAI, and Azure Container Apps with
-    PostgreSQL vector storage.
+  description: Learn how to build and deploy an AI-powered Java application using Spring AI, Azure OpenAI, and Azure Container Apps with PostgreSQL vector storage.
   ms.date: 02/24/2025
-  author: gok
-  ms.author: gok
+  author: KarlErickson
+  ms.author: karler
+  ms.reviewer: jbalderas
   ms.topic: module
   ms.custom: team=cloud_advocates
   ms.service: azure-container-apps
+  ms.collection: ce-skilling-ai-copilot
 title: Building an AI-Powered Java App with Spring AI and Azure
-summary: >-
-  Build and deploy a Java application using Spring AI with Azure OpenAI,
-  PostgreSQL vector storage, and Azure Container Apps.
+summary: Build and deploy a Java application using Spring AI with Azure OpenAI, PostgreSQL vector storage, and Azure Container Apps.
 abstract: |
   After completing this module, you'll be able to:
   - Understand Spring AI's core abstractions and Azure OpenAI integration

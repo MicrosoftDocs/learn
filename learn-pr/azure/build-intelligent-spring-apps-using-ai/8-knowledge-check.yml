@@ -5,9 +5,11 @@ metadata:
   title: Knowledge Check
   description: Test your knowledge of Spring AI and Azure deployment
   ms.date: 02/24/2025
-  author: gok
-  ms.author: gok
+  author: KarlErickson
+  ms.author: karler
+  ms.reviewer: jbalderas
   ms.topic: unit
+  ms.collection: ce-skilling-ai-copilot
 durationInMinutes: 5
 quiz:
   questions:
