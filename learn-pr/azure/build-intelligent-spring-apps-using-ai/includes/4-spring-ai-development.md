@@ -46,8 +46,8 @@ The `VectorStore` also requires an `EmbeddingModel` instance to calculate embedd
 
 ```xml
 <dependency>
-	<groupId>org.springframework.ai</groupId>
-	<artifactId>spring-ai-openai-spring-boot-starter</artifactId>
+    <groupId>org.springframework.ai</groupId>
+    <artifactId>spring-ai-azure-openai-spring-boot-starter</artifactId>
 </dependency>
 ```
 
