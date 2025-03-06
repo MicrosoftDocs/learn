@@ -7,7 +7,6 @@ In this module, you'll publish and deploy an ARM64-based DeepStream container wo
 - [NVIDIA Jetson embedded device](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/?azure-portal=true) provisioned with [JetPack 4.6](https://developer.nvidia.com/jetpack-sdk-46).
 - Be familiar with container workloads and Docker.
 - Be familiar with Azure IoT Edge and Azure IoT Hub.
-- Complete the prerequisite module [Introduction to NVIDIA DeepStream Graph Composer with Azure](/training/modules/introduction-nvidia-deepstream-graph-composer-azure/?azure-portal=true).
 
 :::image type="content" source="../media/jetson-edge-device.jpg" alt-text="Screenshot that shows an NVIDIA Jetson embedded device." lightbox="../media/jetson-edge-device.jpg":::
 

@@ -1,6 +1,6 @@
 The DeepStream 6.0 `container-builder` package can build cross-platform container images. You'll need to use this capability to build a container that's compatible with the ARM64 CPU on your target NVIDIA embedded device.
 
-Complete the following steps on an x86-based host machine that has DeepStream 6.0 Graph Composer with Docker installed. The steps assume that you completed the steps described in [Set up and configure an NVIDIA DeepStream development environment](/training/modules/setup-configure-nvidia-deepstream-development/?azure-portal=true) and [Introduction to NVIDIA DeepStream Graph Composer with Azure](/training/modules/introduction-nvidia-deepstream-graph-composer-azure/?azure-portal=true).
+Complete the following steps on an x86-based host machine that has DeepStream 6.0 Graph Composer with Docker installed.
 
 1. To begin, you must install the `qemu-user-static` and `binfmt-support` packages. The packages are dependencies that are needed for cross-platform support in Docker. To perform this step, run the following commands in a terminal on the host:
 

@@ -6,7 +6,7 @@ To register an NVIDIA embedded device and configure it with an IoT Edge deployme
 
 1. NVIDIA DeepStream supports integration with Azure IoT Edge through [Azure MQTT protocol adapter libraries](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_plugin_gst-nvmsgbroker.html#azure-mqtt-protocol-adapter-libraries?azure-portal=true). The libraries extend the [Gst-nvmsbroker](https://docs.nvidia.com/metropolis/deepstream/dev-guide/text/DS_plugin_gst-nvmsgbroker.html#?azure-portal=true) plugin that is part of the DeepStream SDK. Through the Azure protocol adapter, DeepStream applications can publish messages directly to an IoT hub in Azure by using the MQTT protocol.
 
-    Complete the following steps on an x86-based host machine that has the DeepStream 6.0 Graph Composer installed. The steps assume that you've completed the steps described in the previous modules, [Set up and configure an NVIDIA DeepStream development environment](/training/modules/setup-configure-nvidia-deepstream-development/?azure-portal=true) and [Introduction to NVIDIA DeepStream Graph Composer with Azure](/training/modules/introduction-nvidia-deepstream-graph-composer-azure/?azure-portal=true).
+    Complete the following steps on an x86-based host machine that has the DeepStream 6.0 Graph Composer installed. 
 
 1. In the DeepStream Graph Composer application, select **File** > **Open Graph**. Go to */opt/nvidia/deepstream/deepstream/reference_graphs/deepstream-test4* and select the *deepstream-test4.yaml* file. Then, select **Okay**.
 
