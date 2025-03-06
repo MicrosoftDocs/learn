@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-polymorphic-behavior.explore-inheritance-based-polymorphism
+title: Explore inheritance-based polymorphism
+metadata:
+  title: Explore inheritance-based polymorphism
+  description: "Explore inheritance-based polymorphism"
+  ms.date: 03/06/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-explore-inheritance-based-polymorphism.md)]

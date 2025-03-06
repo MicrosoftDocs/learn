@@ -37,7 +37,7 @@ These environment variables are used throughout the rest of this module.
 
 Next, create a resource group:
 
-```bash
+```azurecli
 az group create \
     --name $AZ_RESOURCE_GROUP \
     --location $AZ_LOCATION
@@ -47,7 +47,15 @@ az group create \
 
 You'll now create a managed PostgreSQL server. Run the following command to create a small instance of Azure Database for PostgreSQL:
 
-```bash
+If you have never created a PostgreSQL Server before, you need to register the provider. To register the PostgreSQL provider, run the following command:
+
+```azurecli
+az provider register --namespace Microsoft.DBforPostgreSQL
+```
+
+Then, create the PostgreSQL Server.
+
+```azurecli
 az postgres flexible-server create \
     --resource-group "$AZ_RESOURCE_GROUP" \
     --location "$AZ_LOCATION" \
@@ -79,12 +87,15 @@ export POSTGRES_CONNECTION_STRING=$(
     --output tsv
 )
 
-export POSTGRES_CONNECTION_STRING_SSL="$POSTGRES_CONNECTION_STRING&ssl=true&sslmode=require"
+export POSTGRES_CONNECTION_STRING_SSL="$POSTGRES_CONNECTION_STRING&ssl=true"
 
 echo "POSTGRES_CONNECTION_STRING_SSL=$POSTGRES_CONNECTION_STRING_SSL"
 ```
 
 Note the connection string that's returned.
+
+> [!NOTE]
+> Microsoft recommends using the most secure authentication flow available. The authentication flow described in this procedure, such as for databases, caches, messaging or AI services, requires a very high degree of trust in the application and carries risks not present in other flows. Use this flow only when more secure options, like managed identities for passwordless or keyless connections, are not viable. For local machine operations, prefer user identities for passwordless or keyless connections.
 
 ## Configure the Quarkus application to connect to the PostgreSQL database
 
@@ -128,18 +139,20 @@ You should see the following output:
 
 ```json
 [
-   {
-      "description" : "Take Quarkus MS Learn",
-      "details" : "Take the MS Learn on deploying Quarkus to Azure Container Apps",
-      "done" : true,
-      "id" : 1
-   },
-   {
-      "description" : "Take Azure Container Apps MS Learn",
-      "details" : "Take the ACA Learn module",
-      "done" : false,
-      "id" : 2
-   }
+  {
+    "id": 1,
+    "description": "Take Quarkus MS Learn",
+    "details": "Take the MS Learn on deploying Quarkus to Azure Container Apps",
+    "done": true,
+    "createdAt": "2025-02-26T08:03:28.390854Z"
+  },
+  {
+    "id": 2,
+    "description": "Take Azure Container Apps MS Learn",
+    "details": "Take the ACA Learn module",
+    "done": false,
+    "createdAt": "2025-02-26T08:03:34.142249Z"
+  }
 ]
 ```
 
