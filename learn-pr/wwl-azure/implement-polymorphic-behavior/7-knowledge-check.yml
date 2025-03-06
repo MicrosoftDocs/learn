@@ -1,0 +1,80 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-polymorphic-behavior.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/06/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 4
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of using inheritance-based polymorphism in C#?"
+    choices:
+    - content: "To create a hierarchy of classes where derived classes inherit behavior and properties from a base class, allowing code to work with multiple types of objects without knowing the specific type at compile time."
+      isCorrect: true
+      explanation: "Correct. Inheritance-based polymorphism enables treating objects of derived classes as objects of the base class, allowing code to work with multiple types of objects without knowing the specific type at compile time."
+    - content: "To write code that only works with one specific type of object at compile time."
+      isCorrect: false
+      explanation: "Incorrect. Inheritance-based polymorphism allows code to work with multiple types of objects without knowing the specific type at compile time."
+    - content: "To prevent derived classes from inheriting behavior and properties from a base class."
+      isCorrect: false
+      explanation: "Incorrect. Inheritance-based polymorphism actually allows derived classes to inherit behavior and properties from a base class."
+  - content: "What is the main advantage of using interface-based polymorphism over inheritance-based polymorphism?"
+    choices:
+    - content: "It promotes code reuse by sharing common behavior across multiple classes."
+      isCorrect: false
+      explanation: "Incorrect. Sharing common behavior across multiple classes is a benefit of inheritance-based polymorphism, not interface-based."
+    - content: "It establishes a clear hierarchical relationship between classes."
+      isCorrect: false
+      explanation: "Incorrect. Establishing a clear hierarchical relationship between classes is an advantage of inheritance-based polymorphism, not interface-based."
+    - content: "It promotes loose coupling, enhances flexibility, and simplifies maintenance."
+      isCorrect: true
+      explanation: "Correct. Interface-based polymorphism promotes loose coupling, enhances flexibility, and simplifies maintenance by reducing dependencies between classes."
+  - content: "What is the main purpose of implementing polymorphism in a C# application?"
+    choices:
+    - content: "To reduce the amount of code written."
+      isCorrect: false
+      explanation: "Incorrect. While polymorphism can lead to more efficient code, its primary purpose isn't to reduce the amount of code written."
+    - content: "To allow objects of different types to be treated as objects of a common base type."
+      isCorrect: true
+      explanation: "Correct. Polymorphism in C# allows objects of different types to be treated as objects of a common base type, enhancing flexibility and maintainability."
+    - content: "To increase the complexity of the code."
+      isCorrect: false
+      explanation: "Incorrect. Polymorphism doesn't aim to increase complexity, but rather to enhance flexibility and maintainability."
+  - content: "What is the main disadvantage of using sealed classes and methods when implementing inheritance-based polymorphism in C#?"
+    choices:
+    - content: "Sealed classes and methods can't be inherited or overridden, which limits the ability to use polymorphism."
+      isCorrect: true
+      explanation: "Correct. If a class or method is sealed, it prevents further extension and customization, limiting the use of polymorphism."
+    - content: "Sealed classes and methods increase the flexibility and extensibility of the code."
+      isCorrect: false
+      explanation: "Incorrect. Sealing a class or method prevents further extension and customization, limiting flexibility."
+    - content: "Sealed classes and methods can be easily overridden, which can lead to confusion."
+      isCorrect: false
+      explanation: "Incorrect. Sealed classes and methods can't be overridden, which limits the ability to use polymorphism."
+  - content: "What is the purpose of casting in the context of inheritance-based polymorphism in C#?"
+    choices:
+    - content: "Casting is used to change the value of an object."
+      isCorrect: false
+      explanation: "Incorrect. Casting doesn't change the value of an object; it changes the type of the object."
+    - content: "Casting is used to convert an object of a derived class to another derived class."
+      isCorrect: false
+      explanation: "Incorrect. Casting is typically used to convert an object of a base class to a derived class or vice versa."
+    - content: "Casting is used to convert an object of one type to another type, often when implementing polymorphism using inheritance hierarchies."
+      isCorrect: true
+      explanation: "Correct. Casting is the process of converting an object of one type to another type, which is often used when implementing polymorphism using inheritance hierarchies."
+  - content: "In which scenario would inheritance-based polymorphism be more appropriate than interface-based polymorphism?"
+    choices:
+    - content: "When the developer needs to reduce code dependencies."
+      isCorrect: false
+      explanation: "Incorrect. Reducing code dependencies is a benefit of interface-based polymorphism."
+    - content: "When the developer needs to establish a hierarchical relationship between classes and promote code reuse."
+      isCorrect: true
+      explanation: "Correct. Inheritance-based polymorphism is beneficial when the developer needs to establish a hierarchical relationship between classes and share common behavior."
+    - content: "When the developer needs to decouple class dependencies."
+      isCorrect: false
+      explanation: "Incorrect. Decoupling class dependencies is a benefit of interface-based polymorphism."
