@@ -11,8 +11,6 @@ metadata:
 title: Accelerate cloud adoption with the Microsoft Cloud Adoption Framework for Azure
 summary: |
   Do you need a clear path forward for your cloud journey? This learning path includes best practice guidance to help you create a cloud strategy, define a cloud adoption plan, prepare your cloud environment with proper governance, and implement cloud operations in alignment with your organizational needs.  Cloud architects and IT professionals will learn and engage with the proven best practices, tools, and documentation in the Cloud Adoption Framework for Azure to build the technical knowledge needed to help your organization successfully adopt the cloud and meet business goals.
-
-  For additional learning on how to manage organizational alignment, take this learning module: [Use the Cloud Adoption Framework to manage organizational alignment](/training/modules/cloud-adoption-framework-organize/).
 prerequisites: An understanding of cloud computing is helpful, but isn't necessary.
 iconUrl: /training/achievements/cloud-adoption-framework.svg
 levels:

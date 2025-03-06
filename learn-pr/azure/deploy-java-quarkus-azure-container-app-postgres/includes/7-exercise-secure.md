@@ -4,7 +4,7 @@ In this unit, you ensure that the PostgreSQL database can be accessed only by th
 
 First, make sure you can access the PostgreSQL server by using the Azure CLI. To do that, run this command:
 
-```bash
+```azurecli
 az postgres flexible-server execute \
     --name "$AZ_POSTGRES_SERVER_NAME" \
     --database-name "$AZ_POSTGRES_DB_NAME" \
@@ -22,7 +22,7 @@ Azure Database for PostgreSQL provides security by default. Its firewall usually
 
 You can list the existing firewall rules by running this command:
 
-```bash
+```azurecli
 az postgres flexible-server firewall-rule list \
     --name "$AZ_POSTGRES_SERVER_NAME" \
     --resource-group "$AZ_RESOURCE_GROUP" \
@@ -31,16 +31,16 @@ az postgres flexible-server firewall-rule list \
 
 You should see the following output:
 
-```bash
-EndIpAddress     Name                       ResourceGroup            StartIpAddress
----------------  -------------------------  -----------------------  ----------------
-255.255.255.255  AllowAll_2023-1-3_10-20-4  rgazure-deploy-quarkus  0.0.0.0
+```output
+EndIpAddress     Name                         ResourceGroup           StartIpAddress
+---------------  ---------------------------  ----------------------  ----------------
+255.255.255.255  AllowAll_2025-2-26_16-57-40  rgazure-deploy-quarkus  0.0.0.0
 ```
 
 Notice that the range of allowed IP addresses is `0.0.0.0` through `255.255.255.255`. A firewall rule like this allows any client to access the database. To ensure that only the Quarkus application can access the database, you need to update the firewall rules of the PostgreSQL server.
 In this case, it's just a matter of removing the public rule. To remove it, run the following command:
 
-```bash
+```azurecli
 az postgres flexible-server firewall-rule delete \
     --name "$AZ_POSTGRES_SERVER_NAME" \
     --resource-group "$AZ_RESOURCE_GROUP" \
@@ -50,7 +50,7 @@ az postgres flexible-server firewall-rule delete \
 
 Now try to query the database by running a SQL statement from the CLI:
 
-```bash
+```azurecli
 az postgres flexible-server execute \
     --name "$AZ_POSTGRES_SERVER_NAME" \
     --database-name "$AZ_POSTGRES_DB_NAME" \
@@ -62,7 +62,7 @@ az postgres flexible-server execute \
 
 The call eventually times out. You should see this message:
 
-```bash
+```output
 Unable to connect to flexible server: connection to server failed: Operation timed out
 ```
 
@@ -76,7 +76,7 @@ curl https://$AZ_APP_URL/api/todos
 
 You need to configure the firewall to allow access to only the Quarkus application. You need to add a new firewall rule. To add the rule, run this command:
 
-```bash
+```azurecli
 az postgres flexible-server firewall-rule create \
     --name "$AZ_POSTGRES_SERVER_NAME" \
     --resource-group "$AZ_RESOURCE_GROUP" \
@@ -89,7 +89,7 @@ Setting the `start-ip-address` and the `end-ip-address` to `0.0.0.0` allows acce
 
 If you try to access the database from the CLI by running the following command, the attempt should fail:
 
-```bash
+```azurecli
 az postgres flexible-server execute \
     --name "$AZ_POSTGRES_SERVER_NAME" \
     --database-name "$AZ_POSTGRES_DB_NAME" \

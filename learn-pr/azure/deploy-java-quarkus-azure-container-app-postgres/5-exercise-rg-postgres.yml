@@ -6,9 +6,10 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise - Set up Azure Container Apps
   description: In this exercise, you set up the Azure Resource Group and the PostgreSQL database.
-  ms.date: 02/14/2024
-  author: agoncal
-  ms.author: antoniomanug
+  ms.date: 03/06/2025
+  author: KarlErickson
+  ms.author: karler
+  ms.reviewer: yoterada
   ms.topic: unit
   ms.custom:
     - team=devdiv
