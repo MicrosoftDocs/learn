@@ -5325,3 +5325,28 @@ achievements:
   title: Write automated tests
   summary: Learn about the types of testing you can do with Rust.
   iconUrl: /training/achievements/rust-automated-tests.svg
+- uid: learn.reactors.blockchain-tokens.badge
+  type: badge
+  title: Create tokens using OpenZeppelin
+  summary: Learn about the significance of tokens and how they are used in blockchain.
+  iconUrl: /training/achievements/reactors/blockchain-tokens.svg
+- uid: learn.reactors.blockchain-solidity-ethereum-smart-contracts.badge
+  type: badge
+  title: Write Ethereum smart contracts by using Solidity
+  summary: Learn how to install and use tools that you can use to develop smart contracts.
+  iconUrl: /training/achievements/reactors/blockchain-solidity-ethereum-smart-contracts.svg
+- uid: learn.reactors.blockchain-learning-solidity.badge
+  type: badge
+  title: Learn how to use Solidity
+  summary: Discover how Solidity can make it easy to program smart contracts for the Ethereum blockchain platform.
+  iconUrl: /training/achievements/reactors/blockchain-learning-solidity.svg
+- uid: learn.reactors.blockchain-ethereum-networks.badge
+  type: badge
+  title: Connect and deploy to Ethereum networks
+  summary: Learn about and use Ethereum networks for development, testing, and production.
+  iconUrl: /training/achievements/reactors/blockchain-ethereum-networks.svg
+- uid: learn.ethereum-blockchain-development.trophy
+  type: trophy
+  title: Get started with blockchain development
+  summary: This learning path introduces you to blockchain and development on the Ethereum platform. Discover what skills are necessary to learn to begin building your own blockchain networks at scale.
+  iconUrl: /training/achievements/ethereum-blockchain-development.svg
