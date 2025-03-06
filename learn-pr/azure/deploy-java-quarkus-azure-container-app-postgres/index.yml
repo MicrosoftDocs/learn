@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Deploy a Quarkus application to Azure Container Apps
   description: Create a Quarkus application, connect it to a PostgreSQL database, and then deploy it to Azure Container Apps.
-  ms.date: 02/26/2025
+  ms.date: 03/06/2025
   author: KarlErickson
   ms.author: karler
   ms.reviewer: yoterada
