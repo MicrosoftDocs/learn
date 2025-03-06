@@ -5355,3 +5355,18 @@ achievements:
   title: Get started with blockchain development
   summary: This learning path introduces you to blockchain and development on the Ethereum platform. Discover what skills are necessary to learn to begin building your own blockchain networks at scale.
   iconUrl: /training/achievements/ethereum-blockchain-development.svg
+- uid: learn.languages.go-first-steps.trophy
+  type: trophy
+  title: Take your first steps with Go
+  summary: Interested in learning a programming language but aren't sure where to start? Start here! Learn the basic syntax and thought processes required to build simple programs using Go.
+  iconUrl: /training/achievements/go/go-first-steps.svg
+- uid: learn.language.go-control-flow.badge
+  type: badge
+  title: Use control flows in Go
+  summary: Learn how to use control flows in Go.
+  iconUrl: /training/achievements/go/go-control-flow.svg
+- uid: learn.language.go-concurrency.badge
+  type: badge
+  title: Learn how concurrency works in Go
+  summary: Understand more about concurrency, one of the most unique features in Go.
+  iconUrl: /training/achievements/go/go-concurrency.svg
