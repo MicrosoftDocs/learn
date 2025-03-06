@@ -50,7 +50,7 @@ units:
 - learn.wwl.implement-polymorphic-behavior.implement-inheritance-based-polymorphism
 - learn.wwl.implement-polymorphic-behavior.implement-interface-based-polymorphism
 - learn.wwl.implement-polymorphic-behavior.examine-polymorphic-design-considerations
-- learn.wwl.implement-polymorphic-behavior.exercise-demonstrate-polymorphic-implementations
+- learn.wwl.implement-polymorphic-behavior.exercise-implement-polymorphism-csharp-app
 - learn.wwl.implement-polymorphic-behavior.knowledge-check
 - learn.wwl.implement-polymorphic-behavior.summary
 badge:

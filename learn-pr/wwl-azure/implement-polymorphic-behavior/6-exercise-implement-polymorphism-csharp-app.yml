@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.implement-polymorphic-behavior.exercise-demonstrate-polymorphic-implementations
+uid: learn.wwl.implement-polymorphic-behavior.exercise-implement-polymorphism-csharp-app
 title: Exercise - Implement polymorphism in a C# app
 metadata:
   title: Exercise - Implement polymorphism in a C# app
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 30
 content: |
-  [!include[](includes/6-exercise-demonstrate-polymorphic-implementations.md)]
+  [!include[](includes/6-exercise-implement-polymorphism-csharp-app.md)]
