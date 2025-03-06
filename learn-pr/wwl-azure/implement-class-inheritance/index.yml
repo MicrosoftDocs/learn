@@ -3,7 +3,7 @@ uid: learn.wwl.implement-class-inheritance
 metadata:
   title: Implement Class Inheritance
   description: "Learn how to create a class hierarchy using base and derived classes and how to hide or override members of a derived class by using `new`, `virtual`, `abstract`, and `override` keywords."
-  ms.date: 03/05/2025
+  ms.date: 03/06/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module
@@ -14,7 +14,7 @@ metadata:
 title: Implement class inheritance
 summary: Learn how to create a class hierarchy using base and derived classes and how to hide or override members of a derived class by using `new`, `virtual`, `abstract`, and `override` keywords.&nbsp;&nbsp;
 abstract: |
-  -   Describe the principals of class inheritance.
+  -   Describe the principles of class inheritance.
 
   -   Configure base and derived classes.
 
@@ -47,7 +47,7 @@ subjects:
 - custom-app-development
 units:
 - learn.wwl.implement-class-inheritance.introduction
-- learn.wwl.implement-class-inheritance.examine-principals-inheritance
+- learn.wwl.implement-class-inheritance.examine-principles-inheritance
 - learn.wwl.implement-class-inheritance.configure-base-derived-classes
 - learn.wwl.implement-class-inheritance.examine-derived-class-new-members
 - learn.wwl.implement-class-inheritance.override-properties-methods-derived-class

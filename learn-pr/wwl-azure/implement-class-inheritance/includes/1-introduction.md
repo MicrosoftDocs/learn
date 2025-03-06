@@ -4,7 +4,7 @@ Imagine you're working at a non-profit company that's in the midst of a software
 
 The topics covered in this module include:
 
-- Examine the principals of class inheritance.
+- Examine the principles of class inheritance.
 - Configure base and derived classes.
 - Extend a derived class with new members.
 - Override properties and methods in a derived class.
@@ -13,7 +13,7 @@ The topics covered in this module include:
 
 After completing this module, you're able to:
 
-- Explain the principals of class inheritance.
+- Explain the principles of class inheritance.
 - Describe the default characteristics of a derived class.
 - Control the visibility of inherited members using access modifiers and keywords like `abstract`, `virtual`, and `sealed`.
 - Describe the use of `new` and `override` keywords in a derived class.
