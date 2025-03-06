@@ -2,7 +2,7 @@ Azure role-based access control (Azure RBAC) is used to scope the level of acces
 
 Azure Machine Learning applies the same principle for authorization as other Azure resources. You use Azure role-based access control (Azure RBAC) to manage access giving users the ability to create new resources or use existing ones. Users in your Microsoft Entra ID are assigned specific roles, which grant access to resources. Azure provides both built-in roles and the ability to create custom roles for Azure Machine Learning.
 
-Default Roles
+## Default Roles ##
 
 The roles related to Azure Machine Learning workspaces are as follows.
 

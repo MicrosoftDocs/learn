@@ -14,7 +14,7 @@ Just like when users access the Azure Machine Learning workspace, Azure services
 
 Once a workspace is created with SAI identity type, it can be updated to SAI+UAI, but not back from SAI+UAI to SAI. You may assign multiple user-assigned identities to the same workspace, or even assign additional user-assigned identities in addition to a system-assigned identity.
 
-**System-assigned versus User-assigned identities**
+### System-assigned versus User-assigned identities ###
 
 Choosing between system-assigned and user-assigned identities depends on your specific needs and how your company manages Azure resources:
 
@@ -22,11 +22,9 @@ Choosing between system-assigned and user-assigned identities depends on your sp
 
 **User-assigned identities** are created independently of any specific resource and can be shared across multiple resources. This makes them highly versatile for applications that require a consistent identity across different resources, enabling easier management of permissions and access controls. User-assigned identities persist even after the resources using them are deleted, allowing for greater flexibility in redeploying and reusing identities.
 
-**User-assigned managed identity specific configuration**
+### User-assigned managed identity specific configuration ###
 
 When you create an Azure Machine Learning workspace with the default settings (Azure Storage, Azure Container Registry, and Azure Key Vault are created for you), the system-assigned managed identity is configured with appropriate permissions. If instead you change to a user-assigned identity (or if you use existing resources for Storage, Key Vault, etc.) you need to set up the following access to that account:
-
-Expand table
 
 | **Resource** | **Permission** |
 |---|---|
@@ -56,7 +54,7 @@ To assign the Azure Machine Learning workspace permissions to an Azure resource,
 
 1. Click Review + assign twice to confirm the assignment.
 
-Compute-related identities
+### Compute-related identities ###
 
 Compute-related identities are used in the following scenarios:
 
@@ -65,7 +63,7 @@ Compute-related identities are used in the following scenarios:
 
 In both cases, the default managed identity is the system-assigned managed identity or the first user-assigned managed identity for that resource. Also, both Azure Machine Learning compute clusters and Kubernetes cluster support only one system-assigned identity or multiple user-assigned identities, not both concurrently. Finally, the scenarios in this unit don't consider if you apply an identity to access resources from within the code for a submitted job. In that case, the identity from within the code is used for access.
 
-Data Storage
+### Data Storage ###
 
 When you create a datastore that uses identity-based data access, your Azure account is used to confirm you have permission to access the storage service. In the identity-based data access scenario, no authentication credentials are saved. Only the storage account information is stored in the datastore.
 
