@@ -5360,3 +5360,13 @@ achievements:
   title: Get started with blockchain development
   summary: This learning path introduces you to blockchain and development on the Ethereum platform. Discover what skills are necessary to learn to begin building your own blockchain networks at scale.
   iconUrl: /training/achievements/ethereum-blockchain-development.svg
+- uid: learn.language.go-write-test-program.badge
+  type: badge
+  title: Write and test a program in Go
+  summary: By using what you've learned about Go, write and test a complete program.
+  iconUrl: /training/achievements/go/go-write-test-program.svg
+- uid: learn.language.go-variables-functions-packages.badge
+  type: badge
+  title: Understand how to use packages, variables, and functions in Go
+  summary: Learn about the basic data types in Go and about how to declare variables, write functions, and use packages.
+  iconUrl: /training/achievements/go/go-variables-functions-packages.svg
