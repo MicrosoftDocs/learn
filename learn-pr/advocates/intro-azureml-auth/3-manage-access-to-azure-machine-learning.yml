@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-machine-learning-auth.manage-access-to-azure-machine-learning
+title: Manage access to Azure Machine Learning
+metadata:
+  title: Manage access to Azure Machine Learning
+  description: Control access to Azure Machine Learning resources.
+  ms.date: 03/06/2025
+  author: Orin-Thomas
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-manage-access-to-azure-machine-learning.md)]
