@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-azure-machine-learning-auth.authentication-between-azure-machine-learning-other-azure-services
+title: Authentication between Azure Machine Learning and other Azure services
+metadata:
+  title: Authentication between Azure Machine Learning and other Azure services
+  description: Configure access for workspaces to other Azure services.
+  ms.date: 03/06/2025
+  author: Orin-Thomas
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-authentication-between-azure-machine-learning-other-azure-services.md)]
