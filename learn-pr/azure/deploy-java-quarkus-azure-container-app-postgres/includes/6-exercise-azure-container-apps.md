@@ -107,9 +107,9 @@ caeazure-deploy-quarkus             rgazure-deploy-quarkus  eastus      Microsof
 workspace-rgazuredeployquarkuscDD3  rgazure-deploy-quarkus  eastus      Microsoft.OperationalInsights/workspaces
 ```
 
-## Verification of Deployed Quarkus　Application
+## Verify the deployed application
 
-You can now verify the deployed Quarkus application. First, you need to get the URL of the application. You can get it by running the following command:
+You can now verify the deployed application. First, you need to get the URL of the application. You can get it by running the following command:
 
 ```bash
 export AZ_APP_URL=$(
