@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-adoption-framework-strategy.cost
+metadata:
+  title: Cost Efficiency Considerations for Your Cloud Adoption Strategy
+  description: Capture strategic motivation.
+  ms.date: 10/10/2023
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
+title: Cost efficiency considerations for your cloud adoption strategy
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-inform-cost.md)]

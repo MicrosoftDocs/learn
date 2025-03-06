@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-adoption-framework-strategy.security
+metadata:
+  title: Security Considerations for Your Cloud Adoption Strategy
+  description: Capture strategic motivation.
+  ms.date: 10/10/2023
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
+title: Security considerations for your cloud adoption strategy
+durationInMinutes: 10
+content: |
+  [!include[](includes/10-inform-security.md)]

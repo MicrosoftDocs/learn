@@ -70,6 +70,13 @@ To ensure that you can broadly scale your cloud services at speed, you might nee
 
 - A **product model** is outcome-driven with continuous value delivery. Cross-functional teams take end-to-end ownership of development, operations, and governance. This approach enables responsive and scalable value delivery.
 
+|Project delivery model|Product delivery model|
+|----|----|
+| The focus is to complete tasks and deliver a finished solution.| The focus is ongoing improvements and contiuous value delivery.|
+|The outcome is based on a completed solution at a specific point in time.| The outcome is based on a continuously evolving service.|
+|Temporary project teams have a clearly defined end date.| Permanent product teams manage the lifecycle of the service.|
+|Project teams are isolated and temporary.| Cross-functional, stable product, platform, and enablement teams make up the team structure. |
+
 A product delivery model provides the following key benefits:
 
 - **Democratization and scalability**: A product delivery model makes cloud platform services easily consumable and accessible, which drives cloud adoption and maturity.
@@ -78,10 +85,26 @@ A product delivery model provides the following key benefits:
 - **Business alignment**: A product delivery model delivers continuous value, which helps technology investments align with business goals.
 - **Collaboration**: A product delivery model encourages cross-functional collaboration to drive business outcomes effectively.
 
-|Project delivery model|Product delivery model|
-|----|----|
-| The focus is to complete tasks and deliver a finished solution.| The focus is ongoing improvements and contiuous value delivery.|
-|The outcome is based on a completed solution at a specific point in time.| The outcome is based on a continuously evolving service.|
-|Temporary project teams have a clearly defined end date.| Permanent product teams manage the lifecycle of the service.|
-|Project teams are isolated and temporary.| Cross-functional, stable product, platform, and enablement teams make up the team structure. |
+A shift to the product delivery model affects your cloud adoption strategy because it redefines how you plan, implement, and maintain your cloud initiatives. This model helps ensure that cloud investments provide lasting, strategic value rather than short-term, one-off results.
 
+Recommendations:
+
+- **Assess current structures.** Evaluate your organization's existing operating model, including delivery functions, funding approaches, and team structures. Hold a leadership workshop to document current operations and identify potential benefits of a product model.
+
+- **Define a target state.** After you align strategic objectives and evaluate your cloud culture and operating model, identify the target state for transformation across architecture, operations, governance, and culture. Conduct a leadership workshop to outline necessary initiatives and programs.
+
+- **Engage stakeholders.** Ensure that key stakeholders understand and support the shift to a product delivery model, including the required cultural and operational changes.
+
+- **Set expectations.** Communicate the cultural shift towards a product mindset. Emphasize customer-centered thinking, continuous collaboration, and outcome-focused approaches.
+
+- **Plan resources.** Allocate sufficient time and resources for planning. Address gaps and establish a roadmap to transition from a project approach to a product approach.
+
+## Identify and define partner relationships
+
+You might need to rely on internal and external partners to help you implement your cloud adoption strategy and provide expertise and resources.
+
+- **Identify key partners.** Determine key partners that can help implement your strategy, including your cloud provider and providers of critical line-of-business applications and infrastructure.
+
+- **Promote integrated partnerships.** Treat your cloud provider and key independent software vendors as integrated partners who help deliver your strategy, rather than just suppliers.
+
+- **Regularly meet with partners.** Establish regular meetings with stakeholders from partner organizations to discuss their contributions to key performance indicators and key results, and explore collaboration opportunities.

@@ -1,18 +1,19 @@
 ### YamlMime:Module
 uid: learn.cloud-adoption-framework-strategy
 metadata:
-  title: Prepare for successful cloud adoption with a well-defined strategy
-  description: Success in cloud adoption depends on having a clear strategy that helps a team understand executive direction and regularly measure progress. This module helps you capture the cloud adoption strategy you need to drive your success.
+  title: Prepare for a Successful Cloud Adoption by Using the Cloud Adoption Framework
+  description: Success in cloud adoption depends on having a clear strategy that helps a team understand executive direction and regularly measure progress. This module helps you capture the cloud adoption strategy you need to drive your success. 
   ms.date: 10/10/2023
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: module
   ms.service: caf
   ms.subservice: caf-methodology-strategy
-title: Prepare for successful cloud adoption with a well-defined strategy
-summary: Success in cloud adoption depends on having a clear strategy that helps a team understand executive direction and regularly measure progress. This module helps you capture the cloud adoption strategy you need to drive your success.
+title: Prepare for successful cloud adoption by using the Cloud Adoption Framework
+summary: |
+ The Cloud Adoption Framework for Azure consists of eight methodologies. This module focuses on the Strategy methodology. It provides guidance about how to assess and improve your organization's foundation before you adopt and integrate cloud technologies. This step is premptive to the next methodology where you create an actionable plan to implement your cloud adoption strategy.
 abstract: |
-  In this module, you will:
+  In this module, you'll learn:
   - Create clarity for a corporate strategy to ensure that all team members are working toward common goals. 
   - Establish metrics to create clarity, help the team learn, and systematically work toward your organizational objectives.
   - Evaluate financial considerations to understand the value of cloud adoption.
@@ -20,7 +21,7 @@ abstract: |
   - Evaluate technical considerations to help the team prepare for successful cloud adoption projects.
 prerequisites: | 
   - A foundational understanding of cloud adoption
-  - A willingness to pursue more learning about the business and financial terminology in this module
+  - A willingness to learn more about the business and financial terminology in this module
 iconUrl: /training/achievements/cloud-adoption-framework-strategy.svg
 ratingEnabled: true
 levels:
@@ -49,7 +50,11 @@ units:
 - learn.cloud-adoption-framework-strategy.mission-objectives
 - learn.cloud-adoption-framework-strategy.team
 - learn.cloud-adoption-framework-strategy.prepare
-- learn.cloud-adoption-framework-strategy.knowledge-check
+- learn.cloud-adoption-framework-strategy.cost
+- learn.cloud-adoption-framework-strategy.ai
+- learn.cloud-adoption-framework-strategy.resiliency
+- learn.cloud-adoption-framework-strategy.security
+- learn.cloud-adoption-framework-strategy.sustainability
 - learn.cloud-adoption-framework-strategy.summary
 badge:
   uid: learn.cloud-adoption-framework-strategy.badge
