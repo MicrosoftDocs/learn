@@ -1,0 +1,57 @@
+### YamlMime:Module
+uid: learn.wwl.implement-polymorphic-behavior
+metadata:
+  title: Implement polymorphic behavior
+  description: "Learn the principles of polymorphism, how to implement polymorphic behavior by using either class inheritance or interface implementation, and how to choose between inheritance-based and interface-based approaches to polymorphism."
+  ms.date: 03/06/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: module
+  ms.service: dotnet-csharp
+  ms.subservice: fundamentals
+  ms.devlang: dotnet
+  ai-usage: human-only
+title: Implement polymorphic behavior
+summary: Learn the principles of polymorphism, how to implement polymorphic behavior by using either class inheritance or interface implementation, and how to choose between inheritance-based and interface-based&nbsp;approaches to polymorphism.
+abstract: |
+  -   Describe the principles of polymorphism.
+
+  -   Implement inheritance-based polymorphism.
+
+  -   Implement interface-based polymorphism.
+
+  -   Explain polymorphic design considerations.
+
+  -   Implement polymorphic behavior in a C# application.
+prerequisites: |
+  -   An installation of Visual Studio Code with the C# Dev Kit extension installed.
+
+  -   The ability to develop basic object-oriented program in C# that implement classes with properties and methods.
+
+  -   The ability to create interfaces&nbsp;that define a contract&nbsp;for the classes implemented by a basic&nbsp;object-oriented program written in C#.
+
+  -   The ability to create a class hierarchy by using base and derived classes.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- vs-code
+subjects:
+- app-development
+- custom-app-development
+units:
+- learn.wwl.implement-polymorphic-behavior.introduction
+- learn.wwl.implement-polymorphic-behavior.examine-principles-polymorphism
+- learn.wwl.implement-polymorphic-behavior.explore-inheritance-based-polymorphism
+- learn.wwl.implement-polymorphic-behavior.explore-interface-based-polymorphism
+- learn.wwl.implement-polymorphic-behavior.review-polymorphic-design-considerations
+- learn.wwl.implement-polymorphic-behavior.exercise-implement-polymorphism-csharp-app
+- learn.wwl.implement-polymorphic-behavior.knowledge-check
+- learn.wwl.implement-polymorphic-behavior.summary
+badge:
+  uid: learn.wwl.implement-polymorphic-behavior.badge

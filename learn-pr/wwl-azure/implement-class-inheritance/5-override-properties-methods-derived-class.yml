@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-class-inheritance.override-properties-methods-derived-class
+title: Override properties and methods in a derived class
+metadata:
+  title: Override properties and methods in a derived class
+  description: "Override properties and methods in a derived class"
+  ms.date: 03/06/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/5-override-properties-methods-derived-class.md)]

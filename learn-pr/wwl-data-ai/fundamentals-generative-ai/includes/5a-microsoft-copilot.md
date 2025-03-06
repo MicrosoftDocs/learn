@@ -52,7 +52,7 @@ These are just some examples of how you can use Microsoft 365 Copilot. There’s
 
 #### Manage IT infrastructure and security 
 
-**Copilot for Security**: Provides assistance for security professionals as the assess, mitigate, and respond to security threats.
+**Copilot for Security**: Provides assistance for security professionals as they assess, mitigate, and respond to security threats.
 
 ![Screenshot of Copilot for Security.](../media/security-copilot.png)
 

@@ -1,0 +1,31 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cloud-adoption-framework-security.manage
+title: Manage your cloud estate with enhanced security
+metadata:
+  unitType: learning-content
+  title: Manage Your Cloud Estate with Enhanced Security
+  description: Learn how to manage your cloud estate with enhanced security.
+  ms.date: 02/27/2025
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/9-manage.md)]
+quiz:
+ title: Check your knowledge
+ questions:
+ - content: Which principle should you adopt to help modernize your observability platform?
+   choices:
+   - content: Trust by default
+     isCorrect: false
+     explanation: Incorrect. Trust by default assumes that all activities are trusted unless proven otherwise, which isn't suitable for modern security practices.
+   - content: Trust by exception
+     isCorrect: true
+     explanation: Correct. Trust by exception implies that you use identity and access monitoring to detect anomalous behavior in real-time, which is essential for modern observability.
+   - content: Trust by design
+     isCorrect: false
+     explanation: Incorrect. While designing systems with security in mind is important, this principle doesn't specifically address the need to validate only when necessary, which is essential for modern observability.
+   - content: Trust by verification
+     isCorrect: false
+     explanation: Incorrect. Although verification is a key component of security, this principle doesn't fully capture the proactive and continuous nature of monitoring and validating activities required to modernize an observability platform.
