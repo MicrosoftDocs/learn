@@ -14,7 +14,6 @@ By the end of this module, you will be able to:
 ## Prerequisites
 
 - [Fundamental knowledge about blockchain](/training/modules/intro-to-blockchain/?azure-portal=true)
-- [Solidity programming knowledge](/training/modules/blockchain-learning-solidity/?azure-portal=true)
 - [Ethereum smart contract knowledge](/training/modules/blockchain-solidity-ethereum-smart-contracts/?azure-portal=true)
 - Previous experience with a programming language like C, Python, or JavaScript
 - Basic knowledge of programming concepts
