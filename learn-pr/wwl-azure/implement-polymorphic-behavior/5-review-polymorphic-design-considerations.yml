@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.implement-polymorphic-behavior.examine-polymorphic-design-considerations
+uid: learn.wwl.implement-polymorphic-behavior.review-polymorphic-design-considerations
 title: Review polymorphic design considerations
 metadata:
   title: Review polymorphic design considerations
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/5-examine-polymorphic-design-considerations.md)]
+  [!include[](includes/5-review-polymorphic-design-considerations.md)]

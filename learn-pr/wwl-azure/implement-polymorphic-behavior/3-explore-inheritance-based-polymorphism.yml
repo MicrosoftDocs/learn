@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.implement-polymorphic-behavior.implement-inheritance-based-polymorphism
+uid: learn.wwl.implement-polymorphic-behavior.explore-inheritance-based-polymorphism
 title: Explore inheritance-based polymorphism
 metadata:
   title: Explore inheritance-based polymorphism
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-implement-inheritance-based-polymorphism.md)]
+  [!include[](includes/3-explore-inheritance-based-polymorphism.md)]

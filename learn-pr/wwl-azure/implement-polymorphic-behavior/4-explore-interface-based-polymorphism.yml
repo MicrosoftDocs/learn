@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.implement-polymorphic-behavior.implement-interface-based-polymorphism
+uid: learn.wwl.implement-polymorphic-behavior.explore-interface-based-polymorphism
 title: Explore interface-based polymorphism
 metadata:
   title: Explore interface-based polymorphism
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-implement-interface-based-polymorphism.md)]
+  [!include[](includes/4-explore-interface-based-polymorphism.md)]
