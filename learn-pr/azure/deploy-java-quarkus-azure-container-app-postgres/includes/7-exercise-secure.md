@@ -31,7 +31,7 @@ az postgres flexible-server firewall-rule list \
 
 You should see the following output:
 
-```log
+```output
 EndIpAddress     Name                         ResourceGroup           StartIpAddress
 ---------------  ---------------------------  ----------------------  ----------------
 255.255.255.255  AllowAll_2025-2-26_16-57-40  rgazure-deploy-quarkus  0.0.0.0
@@ -62,7 +62,7 @@ az postgres flexible-server execute \
 
 The call eventually times out. You should see this message:
 
-```log
+```output
 Unable to connect to flexible server: connection to server failed: Operation timed out
 ```
 

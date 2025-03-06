@@ -179,7 +179,7 @@ mvnw.cmd quarkus:dev  # On Windows
 
 The Quarkus application should start and connect to your database. You should see the following output:
 
-```log
+```output
 2025-02-28 08:38:33,418 INFO  [io.qua.dat.dep.dev.DevServicesDatasourceProcessor] (build-28) Dev Services for default datasource (postgresql) started - container ID is ce37977203b0
 2025-02-28 08:38:33,421 INFO  [io.qua.hib.orm.dep.dev.HibernateOrmDevServicesProcessor] (build-6) Setting quarkus.hibernate-orm.database.generation=drop-and-create to initialize Dev Services managed database
 __  ____  __  _____   ___  __ ____  ______ 
@@ -286,7 +286,7 @@ mvnw.cmd clean test  # On Windows
 
 You should see output that looks similar to this:
 
-```log
+```output
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
