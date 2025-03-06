@@ -145,28 +145,11 @@ In this module, you use a sample database called `world` from the official MySQL
 
 To sign in to the database and view the available usernames and plugins, use the following steps:
 
-### [MySQL](#tab/mysql)
-
-1. To connect to the Azure Database for MySQL - Flexible Server instance, use the following command:
-
-    ```bash
-     mysql \
-         --host $MYSQL_SERVER_INSTANCE.mysql.database.azure.com \
-         --user CURRENT_AZ_LOGIN_USER_NAME#EXT#@CURRENT_AZ_LOGIN_USER_NAME \
-         --enable-cleartext-plugin \
-         --password=$(az account get-access-token --resource-type oss-rdbms --output tsv --query accessToken)
-    ```
-
-   > [!NOTE]
-   > Starting from MySQL version 8, the default authentication plugin is `caching_sha2_password`. Therefore, when you try to authenticate using only the username and password with the `mysql` command, you encounter the following error:
-   > `ERROR 2059 (HY000): Authentication plugin 'mysql_native_password' cannot be loaded:`
-   > To address this, you create an administrative user who can access to the database with the user already signed in to the database. The command you use to create this admin user is `az mysql flexible-server ad-admin create`.
-
 ### [Azure CLI](#tab/azure-cli)
 
-1. Use the following command to connect using only the username and password instead of an access token:
+1. Use the following command to connect using only the username and password, instead of an access token:
 
-    ```bash
+    ```azurecli
     az mysql flexible-server connect \
         --name $MYSQL_SERVER_INSTANCE \
         --user azureuser \
@@ -178,6 +161,25 @@ To sign in to the database and view the available usernames and plugins, use the
     ```bash
     Password:
     ```
+
+### [MySQL](#tab/mysql)
+
+1. The **setup_mysql.sh** script adds an admin user who can connect using the access token of the user currently signed in to the Azure CLI. Register that user as an admin user. For detailed steps, see the [`CreateUserManagedIdentity()`](https://github.com/MicrosoftDocs/mslearn-jakarta-ee-azure/blob/main/setup_mysql.sh#L145-L208) function in the [setup_mysql.sh](https://github.com/MicrosoftDocs/mslearn-jakarta-ee-azure/blob/main/setup_mysql.sh) script.
+
+1. To connect to the Azure Database for MySQL - Flexible Server instance, use the following command:
+
+    ```bash
+     mysql \
+         --host $MYSQL_SERVER_INSTANCE.mysql.database.azure.com \
+         --user CURRENT_AZ_LOGIN_USER_NAME#EXT#@CURRENT_AZ_LOGIN_USER_NAME \
+         --enable-cleartext-plugin \
+         --password=$(az account get-access-token --resource-type oss-rdbms --output tsv --query accessToken)
+    ```
+
+    > [!NOTE]
+    > Starting from MySQL version 8, the default authentication plug-in is `caching_sha2_password`. Therefore, when you try to authenticate using only the username and password with the `mysql` command, you encounter the following error:
+    > `ERROR 2059 (HY000): Authentication plugin 'mysql_native_password' cannot be loaded:`
+    > To address this, you use the `az mysql flexible-server ad-admin create` command to create an administrative user who can access the database with the user already signed in to the database.
 
 ---
 
