@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.introduction-to-azure-machine-learning-auth.authentication-between-azure-machine-learning-and-other-azure-services
+uid: learn.introduction-azure-machine-learning-auth.authentication-between-azure-machine-learning-other-azure-services
 title: Authentication between Azure Machine Learning and other Azure services
 metadata:
   title: Authentication between Azure Machine Learning and other Azure services
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-authentication-between-azure-machine-learning-and-other-azure-services.md)]
+  [!include[](includes/4-authentication-between-azure-machine-learning-other-azure-services.md)]

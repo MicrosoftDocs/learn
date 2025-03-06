@@ -2,7 +2,7 @@ Azure Machine Learning (ML) is a cloud service for managing machine learning pro
 
 An Azure Machine Learning workspace is a centralized environment for managing machine learning projects, allowing collaboration and organization of experiments, datasets, models, and deployments. The workspace provides tools for creating, training, and deploying models, along with managing compute resources and data assets. As a cloud operations professional, you need to manage Azure Machine Learning workspace authentication and authorization.
 
-Learning Objectives
+# Learning objectives #
 
 After completing this module, you'll be able to:
 

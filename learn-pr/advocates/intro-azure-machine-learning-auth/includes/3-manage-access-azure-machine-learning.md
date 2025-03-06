@@ -35,13 +35,13 @@ To assign the Azure Machine Learning Data Scientist role, perform the following 
 1. You can filter the roles by typing "Azure Machine Learning" in the search box.
 1. Select the Azure Machine Learning Data Scientist role and click Next:
 
-![Configuring an Azure Machine Learning role assignment in the Azure portal.](../media/add-ml-role-assignment.png)
+   ![Screenshot of configuring an Azure Machine Learning role assignment in the Azure portal.](../media/add-role-assignment.png)
 
 1. On the Members tab, click on the + Select members link.
 1. Look for the individual's account from Microsoft Entra ID and choose Select.
 1. Back to the Members tab, confirm the account selected is shown in the list:
 
-![Assign data scientist role in Azure portal to Azure Machine Learning workspace.](../media/add-data-scientist.png)
+   ![Screenshot of assigning data scientist role in Azure portal to Azure Machine Learning workspace.](../media/add-data-scientist.png)
 
 1. Select Review + assign twice to conclude the assignment.
 1. You can confirm the assignment on the Role assignments tab by filtering the results with the name of the individual you're looking for.

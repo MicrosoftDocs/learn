@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.introduction-to-azure-machine-learning-auth.manage-access-to-azure-machine-learning
+uid: learn.introduction-azure-machine-learning-auth.manage-access-azure-machine-learning
 title: Manage access to Azure Machine Learning
 metadata:
   title: Manage access to Azure Machine Learning
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-manage-access-to-azure-machine-learning.md)]
+  [!include[](includes/3-manage-access-azure-machine-learning.md)]

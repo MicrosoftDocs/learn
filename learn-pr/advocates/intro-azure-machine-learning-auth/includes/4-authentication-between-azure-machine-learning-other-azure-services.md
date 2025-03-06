@@ -44,7 +44,7 @@ To assign the Azure Machine Learning workspace permissions to an Azure resource,
 1. Select the Add drop-down menu and select Add role assignment.
 1. On the Role tab, search for the Storage Blob Data Contributor and select that role from the list:
 
-![Configure access to storage blob in the Azure portal.](../media/add-storage-blob.png)
+   ![Screenshot of configuring access to storage blob in the Azure portal.](../media/add-storage-blob.png)
 
 1. Select Next. 
 1. On the Members tab, select Managed identity from the Assign access to option and select the + Select members link.
@@ -52,7 +52,7 @@ To assign the Azure Machine Learning workspace permissions to an Azure resource,
 1. Select the appropriate identity and choose Select.
 1. Confirm that the selected identity is listed:
 
-![Assign a managed identity access to Azure resource.](../media/assign-access.png)
+   ![Screenshot of assigning a managed identity access to Azure resource.](../media/assign-access.png)
 
 1. Click Review + assign twice to confirm the assignment.
 

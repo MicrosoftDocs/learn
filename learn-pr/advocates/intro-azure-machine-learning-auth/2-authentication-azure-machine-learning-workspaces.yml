@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.introduction-to-azure-machine-learning-auth.authentication-for-azure-machine-learning-workspaces
+uid: learn.introduction-azure-machine-learning-auth.authentication-azure-machine-learning-workspaces
 title: Authentication for Azure Machine Learning workspaces
 metadata:
   title: Authentication for Azure Machine Learning workspaces
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-authentication-for-azure-machine-learning-workspaces.md)]
+  [!include[](includes/2-authentication-azure-machine-learning-workspaces.md)]
