@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.build-agent-with-custom-tools
+metadata:
+  title: Build an agent with custom tools
+  description: Learn how to build an agent with custom tools using the Azure AI Agent Service.
+  ms.date: 3/6/2025
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: module-standard-task-based 
+  ms.service: azure-ai-services
+title: Build an agent with custom tools
+summary: "Learn how to extend the capabilities of your agent by integrating custom tools for your agent to use."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe the benefits of using custom tools with your agent.
+    - Explore the different options for custom tools.
+    - Build an agent with custom tools using the Azure AI Agent Service.
+prerequisites: |
+  - Familiarity with Azure and the Azure portal.
+  - An understanding of generative AI. You can learn more with [Fundamentals of Generative AI](/training/modules/fundamentals-generative-ai/).
+  - It's highly recommended you have experience with the Azure AI Agent Service. You can learn more with [Develop an AI agent with Azure AI Agent Service](/training/modules/develop-ai-agent-azure/).
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - ai-engineer
+  - developer
+  - solution-architect
+  - student
+products: 
+  - azure-openai
+  - azure
+subjects: 
+  - artificial-intelligence
+units:
+- learn.wwl.build-agent-with-custom-tools.introduction
+- learn.wwl.build-agent-with-custom-tools.why-use-custom-tools
+- learn.wwl.build-agent-with-custom-tools.custom-tool-options
+- learn.wwl.build-agent-with-custom-tools.how-use-custom-tools
+- learn.wwl.build-agent-with-custom-tools.exercise
+- learn.wwl.build-agent-with-custom-tools.knowledge-check
+- learn.wwl.build-agent-with-custom-tools.summary
+badge:
+  uid: learn.wwl.build-agent-with-custom-tools.badge

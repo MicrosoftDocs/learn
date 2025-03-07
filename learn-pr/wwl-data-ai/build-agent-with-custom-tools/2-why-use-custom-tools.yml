@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-agent-with-custom-tools.why-use-custom-tools
+title: Why use customs tools
+metadata:
+  title: Why use customs tools
+  description: "Understand the benefits of using custom tools with your agent."
+  ms.date: 3/6/2025
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-why-use-custom-tools.md)]

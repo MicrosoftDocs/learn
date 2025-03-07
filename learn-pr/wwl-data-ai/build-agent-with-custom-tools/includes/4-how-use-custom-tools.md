@@ -1,0 +1,142 @@
+Custom tools in an agent can be defined in a handful of ways, depending on what works best for your scenario. You may find that your company already has Azure Functions implemented for your agent to use, or a public OpenAPI specification gives your agent the functionality you're looking for.
+
+## Agents function calling
+
+Function calling allows agents to execute predefined functions dynamically based on user input. This feature is ideal for scenarios where agents need to perform specific tasks, such as retrieving data or processing user queries, and can be done in code from within the agent. Your function may call out to other APIs to get additional information or initiate a program.
+
+### Example: Defining and using a function
+
+Start by defining a function that the agent can call. For instance, here is a fake snowfall tracking function:
+
+```python
+import json
+
+def recent_snowfall(location: str) -> str:
+    """
+    Fetches recent snowfall totals for a given location.
+    :param location: The city name.
+    :return: Snowfall details as a JSON string.
+    """
+    mock_snow_data = {"Seattle": "0 inches", "Denver": "2 inches"}
+    snow = mock_snow_data.get(location, "Data not available.")
+    return json.dumps({"location": location, "snowfall": snow})
+
+user_functions: Set[Callable[..., Any]] = {
+    recent_snowfall,
+}
+```
+
+Register the function with your agent using the Azure AI SDK:
+
+```python
+# Initialize agent toolset with user functions
+functions = FunctionTool(user_functions)
+toolset = ToolSet()
+toolset.add(functions)
+
+# Create your agent with the toolset
+agent = project_client.agents.create_agent(
+    model="gpt-4o-mini",
+    name="snowfall-agent",
+    instructions="You are a weather assistant tracking snowfall. Use the provided functions to answer questions.",
+    toolset={"functions": [recent_snowfall]}
+)
+```
+
+The agent can now call `recent_snowfall` dynamically when prompted by the user.
+
+## OpenAPI defined tools
+
+OpenAPI defined tools allow agents to interact with external APIs using standardized specifications. This approach simplifies API integration and ensures compatibility with various services. Azure AI Agent Service uses OpenAPI 3.0 specified tools.
+
+> [!TIP]
+> Currently, three authentication types are supported with OpenAPI 3.0 tools: `anonymous`, `API key` and `managed identity`.
+
+### Example: Using an OpenAPI specification
+
+1. **Prepare the OpenAPI spec**: Create a JSON file (`snowfall_openapi.json`) describing the API.
+
+    ```json
+    {
+      "openapi": "3.0.0",
+      "info": {
+        "title": "Snowfall API",
+        "version": "1.0.0"
+      },
+      "paths": {
+        "/snow": {
+          "get": {
+            "summary": "Get snowfall information",
+            "parameters": [
+              {
+                "name": "location",
+                "in": "query",
+                "required": true,
+                "schema": {
+                  "type": "string"
+                }
+              }
+            ],
+            "responses": {
+              "200": {
+                "description": "Successful response",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "type": "object",
+                      "properties": {
+                        "location": {"type": "string"},
+                        "snow": {"type": "string"}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    ```
+
+1. **Register the OpenAPI tool**:
+
+    ```python
+    from azure.ai.projects.models import OpenApiTool, OpenApiAnonymousAuthDetails
+    
+    with open("snowfall_openapi.json", "r") as f:
+        openapi_spec = json.load(f)
+    
+    auth = OpenApiAnonymousAuthDetails()
+    openapi_tool = OpenApiTool(name="snowfall_api", spec=openapi_spec, auth=auth)
+    
+    agent = project_client.agents.create_agent(
+        model="gpt-4o-mini",
+        name="openapi-agent",
+        instructions="You are a snowfall tracking assistant. Use the API to fetch snowfall data.",
+        tools=[openapi_tool]
+    )
+    ```
+
+The agent can now use the OpenAPI tool to fetch snowfall data dynamically.
+
+## Azure Functions integration
+
+Azure Functions provide serverless computing capabilities for real-time processing. This integration is ideal for event-driven workflows, enabling agents to respond to triggers such as HTTP requests or queue messages.
+
+### Example: Using Azure Functions with a queue trigger
+
+1. **Define an Azure Function**: Develop and deploy your Azure Function. In this example, imagine we have a function in our Azure subscription to fetch the snowfall for a given location.
+1. **Integrate the Azure Function with the agent**:
+
+    ```python
+    agent = project_client.agents.create_agent(
+        model="gpt-4o-mini",
+        name="function-agent",
+        instructions="You are a weather assistant. Use the Azure Function to fetch weather data.",
+        tools=TODO BASED ON LAB
+    ```
+
+The agent can now send requests to the Azure Function via a storage queue and process the results.
+
+By using one of the above methods (or a combination of these options) for implementing a custom tool, you can create powerful, flexible, and intelligent agents with Azure AI Agent Service. These integrations enable seamless interaction with external systems, real-time processing, and scalable workflows, making it easier to build custom solutions tailored to your needs.

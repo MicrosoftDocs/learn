@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-agent-with-custom-tools.{{unitName}}
+title: Summary
+metadata:
+  title: Summary
+  description: "Review the key points of using custom tools with your agent."
+  ms.date: 3/6/2025
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: azure-ai-services
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-agent-with-custom-tools.custom-tool-options
+title: Options for implementing custom tools
+metadata:
+  title: Options for implementing custom tools
+  description: "Explore the options for implementing custom tools in your agent."
+  ms.date: 3/6/2025
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: 
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-custom-tool-options.md)]
