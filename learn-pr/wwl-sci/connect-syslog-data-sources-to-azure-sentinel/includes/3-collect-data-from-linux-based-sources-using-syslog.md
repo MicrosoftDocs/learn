@@ -108,13 +108,13 @@ To install the agent on non-Azure Linux physical or virtual machines:
 
 1. Open a Web browser and navigate to the address as directed, and paste or enter the code into the form and select **Next** to sign in.
 
-1. On the **Pick an account** page, select your `administrator account` and then select **Next**. Close browser tabs when complete.
+1. On the **Pick an account** page, select your `administrator account`, and then select **Next**. Close browser tabs when complete.
 
-1. In your `Bash console` you should see an `INFO Connected machine to Azure` message.
+1. In your `Bash console`, you should see an `INFO Connected machine to Azure` message.
 
 1. Verify your non-Azure machine is connected to **Azure Arc** in the Azure portal by entering **Arc** in the `Search resources, services, and docs` search bar.
 
-1. In **Azure Arc**, scroll down the left menu to the **Infrastructure** section and select **Servers**. You should see your machine with a `Status` of **Connected**.
+1. In **Azure Arc**, scroll down the left navigation menu to the **Azure Arc resources** section and select **Machines**. You should see your machine with an `Arc agent Status` of **Connected**.
 
     :::image type="content" source="../media/03-azure-arc-connected-server.png" alt-text="Screenshot of azure Arc connected Linux servers":::
 
