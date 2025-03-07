@@ -4,11 +4,12 @@ title: Math - Making the predictable decisions with control theory
 metadata:
   title: Math - Making the predictable decisions with control theory
   description: We explain math when introducing Automated decision methods.
-  ms.date: 10/14/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
 durationInMinutes: 7
 content: |
   [!include[](includes/3-math.md)]

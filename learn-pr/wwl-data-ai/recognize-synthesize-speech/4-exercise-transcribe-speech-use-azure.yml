@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.recognize-synthesize-speech.exercise-transcribe-speech-use-azure
+title: Exercise - Explore Speech in Azure AI Foundry portal
+metadata:
+  title: Exercise - Explore Speech in Azure AI Foundry portal
+  description: "Exercise - Explore Speech in Azure AI Foundry portal"
+  ms.date: 02/06/2025
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 20
+content: |
+  [!include[](includes/4-exercise-transcribe-speech-use-azure.md)]

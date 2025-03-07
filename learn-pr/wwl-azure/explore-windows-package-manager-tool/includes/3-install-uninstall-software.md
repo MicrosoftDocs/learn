@@ -72,7 +72,7 @@ The **winget install** has additional options that can be used to help customize
 
 The following video demonstrates the process of installing software using Windows Package Manager on a Windows 10 computer.
 
- >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWLCL0]
+ >[!VIDEO https://learn-video.azurefd.net/vod/player?id=5f8a25bc-02fe-43c5-9640-c1569f2b7c0c]
 
 ## Uninstall software
 

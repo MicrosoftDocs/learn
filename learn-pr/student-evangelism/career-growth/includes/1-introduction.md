@@ -5,7 +5,7 @@ Congratulations! You've successfully launched your tech career by landing and st
 You also impressed your interviewer and hiring manager with your proficiency in "human" skills. You're a good communicator, you work well with others, and you promise to be a valuable asset to the company. You're ready to start your first day at work. What do you do next?
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Oxoy]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3db12428-d172-411c-8005-77fcd6302afc]
 > *Software engineer Eleanor Lewis describes her work as an intern.*
 
 ## Scenario: Make the most of your internship
@@ -31,4 +31,3 @@ After you've completed this module, you'll be able to:
 ## What is the main goal?
 
 By the end of this session, you'll be able to apply strategies to maximize your chances of moving easily from intern to full-time employee.
-

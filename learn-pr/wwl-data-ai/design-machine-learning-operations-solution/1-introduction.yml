@@ -2,13 +2,17 @@
 uid: learn.wwl.design-machine-learning-operations-solution.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
-  description: "Learn how to design a machine learning operations (MLOps) solution."
-  ms.date: 03/03/2023
+  description: Learn how to design a machine learning operations (MLOps) solution.
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 08/25/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.detect-analyze-faces.get-started
+title: Get started with facial analysis on Azure
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Get started with facial analysis on Azure
+  description: "Get started with facial analysis on Azure"
+  ms.date: 09/13/2024
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-face-analysis-azure.md)]

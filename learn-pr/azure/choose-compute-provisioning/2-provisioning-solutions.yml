@@ -1,14 +1,19 @@
 ### YamlMime:ModuleUnit
 uid: learn.choose-compute-provisioning.2-provisioning-solutions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Identify the provisioning solutions for Azure compute infrastructure
   description: Identify the provisioning solutions for Azure compute infrastructure
-  ms.date: 12/11/2019
-  author: jboeshart
-  ms.author: jaboes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 03/29/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+  ms.custom:
+    - devx-track-arm-template
+    - devx-track-terraform
 title: Identify the provisioning solutions for Azure compute infrastructure
 durationInMinutes: 10
 content: |
   [!include[](includes/2-provisioning-solutions.md)]
+

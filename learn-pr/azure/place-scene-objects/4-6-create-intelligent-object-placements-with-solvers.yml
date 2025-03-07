@@ -3,12 +3,11 @@ uid: learn.azure.place-scene-objects-tutorials-mrtk.4-6-create-intelligent-objec
 title: Create intelligent object placements with solvers
 metadata:
   title: Create intelligent object placements with solvers
-  description: Introduction to create intelligent object placements with solvers
-  ms.date: 09/09/2021
-  author: Sean-Kerawala
-  ms.author: sekerawa
-  ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  description: Introduction to creating intelligent object placements with solvers
+  ms.date: 11/26/2023
+  author: marlenaklein-msft
+  ms.author: marlenaklein
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/4-6-create-intelligent-object-placements-with-solvers.md)]

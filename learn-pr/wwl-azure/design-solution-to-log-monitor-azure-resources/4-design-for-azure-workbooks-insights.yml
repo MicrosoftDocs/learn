@@ -2,15 +2,16 @@
 uid: learn.wwl.design-solution-to-log-monitor-azure-resources.design-for-azure-workbooks-insights
 title: Design for Azure Workbooks and Azure insights
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for Azure Workbooks and Azure insights
   description: "Design for Azure Workbooks and Azure insights"
-  ms.date: 01/18/2023
+  ms.date: 01/06/2025
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 4
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
 content: |
   [!include[](includes/4-design-for-azure-workbooks-insights.md)]

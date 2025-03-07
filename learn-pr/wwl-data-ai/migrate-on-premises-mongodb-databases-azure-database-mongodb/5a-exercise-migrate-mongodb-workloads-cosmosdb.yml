@@ -2,14 +2,19 @@
 uid: learn.wwl.migrate-premises-mongodb-databases-azure-database-mongodb.exercise-migrate-mongodb-workloads-cosmosdb
 title: 'Exercise: Migrate MongoDB workloads to Cosmos DB'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Migrate MongoDB workloads to Cosmos DB'
   description: "Exercise: Migrate MongoDB workloads to Cosmos DB"
   ms.date: 02/03/2021
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 azureSandbox: false
 durationInMinutes: 50
 content: |
   [!include[](includes/5a-exercise-migrate-mongodb-workloads-cosmosdb.md)]
+

@@ -2,14 +2,18 @@
 uid: learn.azure.share-bicep-modules-using-private-registries.use-module-from-registry
 title: Use a module from a private registry
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Use a module from a private registry
   description: Learn how to create a Bicep file that refers to a module in your organization's registry.
-  ms.date: 03/06/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/27/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 3
 content: |
   [!include[](includes/6-use-module-from-registry.md)]
+

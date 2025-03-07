@@ -2,13 +2,16 @@
 uid: learn.wwl.run-pipelines-azure-machine-learning.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 04/17/2023
+  description: Knowledge check
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/20/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 quiz:
   questions:
@@ -34,3 +37,4 @@ quiz:
     - content: "RecurrenceTrigger"
       isCorrect: true
       explanation: "Correct. You need the RecurrenceTrigger class to create a schedule that runs at a regular interval."
+

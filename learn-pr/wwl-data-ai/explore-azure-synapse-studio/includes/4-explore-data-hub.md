@@ -13,7 +13,7 @@ The data hub provides you with the ability to interact and explore with source d
 
 3.	Expand **Tables** and **Programmability/Stored procedures**.
 
-    The **tables** listed under the SQL pool store data from multiple sources, such as SAP Hana, Twitter, Azure SQL Database, and external files copied over from an orchestration pipeline. Synapse Analytics gives us the ability to combine these data sources for analytics and reporting, all in one location.
+    The **tables** listed under the SQL pool store data from multiple sources, such as SAP Hana, X, Azure SQL Database, and external files copied over from an orchestration pipeline. Synapse Analytics gives us the ability to combine these data sources for analytics and reporting, all in one location.
 
     You will also see familiar database components, such as **stored procedures**. You can execute the stored procedures using T-SQL scripts, or execute them as part of an orchestration pipeline.
 

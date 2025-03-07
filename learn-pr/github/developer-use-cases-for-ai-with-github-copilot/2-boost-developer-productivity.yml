@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.developer-use-cases-for-ai-with-github-copilot.boost-developer-productivity
+title: Boost developer productivity with AI
+metadata:
+  title: Boost developer productivity with AI
+  description: This content is part of the "Developer Use Cases for AI with GitHub Copilot" module.
+  ms.date: 10/09/2024
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-boost-developer-productivity.md)]

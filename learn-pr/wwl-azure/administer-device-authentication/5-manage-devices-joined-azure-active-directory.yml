@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.administer-device-authentication.manage-devices-joined-azure-active-directory
-title: Manage devices joined to Azure AD
+title: Manage devices joined to Microsoft Entra ID
 metadata:
-  title: Manage devices joined to Azure AD
-  description: "This unit covers managing devices that are joined to Azure AD."
-  ms.date: 03/13/2023
+  title: Manage devices joined to Microsoft Entra ID
+  description: "This unit covers managing devices that are joined to Microsoft Entra ID."
+  ms.date: 03/22/2024
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/5-manage-devices-joined-azure-active-directory.md)]

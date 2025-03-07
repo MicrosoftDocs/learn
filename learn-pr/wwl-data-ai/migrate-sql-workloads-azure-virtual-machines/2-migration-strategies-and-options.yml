@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.migrate-sql-workloads-azure-virtual-machines.migration-strategies-and-options
+title: Review migrations strategies and tools
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Review migrations strategies and tools
+  description: "Considerations of SQL Server to Azure Virtual Machine migrations."
+  ms.date: 08/02/2024
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: unit
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-migration-strategies-and-options.md)]

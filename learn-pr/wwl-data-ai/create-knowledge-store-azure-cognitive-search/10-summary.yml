@@ -2,14 +2,18 @@
 uid: learn.wwl.create-knowledge-store-with-azure-cognitive-search.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
-  description: "Summary"
-  ms.date: 07/30/2021
-  author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Summary
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 10/24/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 durationInMinutes: 1
 content: |
   [!include[](includes/10-summary.md)]
+

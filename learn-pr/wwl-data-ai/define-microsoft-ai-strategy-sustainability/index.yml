@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.define-microsoft-ai-strategy-sustainability
+metadata:
+  title: Define a Microsoft AI strategy to create business value in sustainability
+  description: "Discover AI use cases and scenarios for sustainability. Get familiar with Microsoft AI tools and services for sustainability. Learn from real success stories."
+  ms.date: 08/13/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: module
+  ms.custom:
+  - N/A
+  - ai-learning-hub
+  ai-usage: human-only
+  ms.service: microsoft-cloud-sustainability
+title: Define a Microsoft AI strategy to create business value in sustainability
+summary: This module is designed to help sustainability professionals adopt Microsoft AI solutions. It discusses common use cases and real customer stories.
+abstract: |
+  -   Identify goals and challenges for sustainability
+
+  -   Identify opportunities for AI in sustainability
+prerequisites: |
+  -   Basic understanding of AI concepts.
+
+  -   Basic understanding of sustainability concepts.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- business-owner
+- business-user
+products:
+- azure-openai
+- mscloud-sustainability
+- industry-solutions
+units:
+- learn.wwl.define-microsoft-ai-strategy-sustainability.introduction
+- learn.wwl.define-microsoft-ai-strategy-sustainability.1b-ai-sustainability
+- learn.wwl.define-microsoft-ai-strategy-sustainability.goals-challenges-sustainability
+- learn.wwl.define-microsoft-ai-strategy-sustainability.opportunities-ai-sustainability
+- learn.wwl.define-microsoft-ai-strategy-sustainability.discover-ai-power-global-energy-transition
+- learn.wwl.define-microsoft-ai-strategy-sustainability.discover-ai-protect-natural-resources
+- learn.wwl.define-microsoft-ai-strategy-sustainability.discover-ai-enable-green-mobility
+- learn.wwl.define-microsoft-ai-strategy-sustainability.knowledge-check
+- learn.wwl.define-microsoft-ai-strategy-sustainability.summary
+badge:
+  uid: learn.wwl.define-microsoft-ai-strategy-sustainability.badge

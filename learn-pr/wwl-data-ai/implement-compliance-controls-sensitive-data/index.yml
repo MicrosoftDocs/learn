@@ -1,21 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-compliance-controls-for-sensitive-data
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement compliance controls for sensitive data
-  description: "Implement compliance controls for sensitive data"
-  ms.date: 09/02/2022
-  author: wwlpublish
+  description: Implement compliance controls for sensitive data
+  ms.date: 02/26/2025
+  author: JulianePadrao
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Implement compliance controls for sensitive data
-summary: Explore data classification capabilities and degrees of confidentiality. Implement security options to maintain private data safe, including Azure SQL auditing, Microsoft Defender for SQL, row-level security, Dynamic Data Masking and Azure SQL Database Ledger.
+summary: Explore data classification capabilities and degrees of confidentiality. Implement security options to maintain private data safe, including Azure SQL auditing, Microsoft Defender for SQL, row-level security, Dynamic Data Masking and Ledger.
 abstract: |
   After completing this module, you will be able to:
   - Plan and implement data classification in Azure SQL Database
   - Understand and configure row-level security and dynamic data masking
   - Understand the usage of Microsoft Defender for SQL
-  - Explore how Azure SQL Database Ledger works
+  - Explore how Ledger works
 prerequisites: |
   - Ability to write code in the SQL language, particular the Microsoft T-SQL dialect, at a basic level.
   - Experience creating and configuring resources using the Azure portal.
@@ -32,7 +34,7 @@ products:
 - sql-server
 subjects:
 - classification-analysis
-- database
+- databases
 - threat-protection
 units:
 - learn.wwl.implement-compliance-controls-for-sensitive-data.introduction
@@ -48,3 +50,4 @@ units:
 - learn.wwl.implement-compliance-controls-for-sensitive-data.summary
 badge:
   uid: learn.wwl.implement-compliance-controls-for-sensitive-data.badge
+

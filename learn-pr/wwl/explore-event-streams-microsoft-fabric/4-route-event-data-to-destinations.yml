@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-event-streams-microsoft-fabric.route-event-data-to-destinations
+title: Eventstream transformations
+metadata:
+  title: Eventstream transformations
+  description: "Create eventstream transformations"
+  ms.date: 12/02/2024
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-route-event-data-to-destinations.md)]

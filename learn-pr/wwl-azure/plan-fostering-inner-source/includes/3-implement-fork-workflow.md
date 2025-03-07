@@ -54,11 +54,11 @@ Also, it will isolate their changes from yours until you've had a chance to vet 
 
 ## Create the Fork
 
-1. Navigate to the repository to fork and choose fork.
-1. Specify a name and choose the project where you want the fork to be created. If the repository contains many topic branches, we recommend you fork only the default branch.
-1. Choose the ellipsis, then Fork to create the fork.
+1.  Navigate to the repository to fork and choose fork.
+2.  Specify a name and choose the project where you want the fork to be created. If the repository contains many topic branches, we recommend you fork only the default branch.
+3.  Choose the ellipsis, then Fork to create the fork.
 
-:::image type="content" source="../media/fork-fabrikam-83eccc3a.png" alt-text="Create the fork.":::
+:::image type="content" source="../media/fork-fabrikam-83eccc3a.png" alt-text="Diagram showing Create the fork.":::
 
 
 > [!NOTE]
@@ -91,7 +91,7 @@ Make and commit your changes as you normally would. When you're done with the ch
 
 Open a pull request from your fork to the upstream. All the policies required reviewers and builds will be applied in the upstream repo. Once all policies are satisfied, the PR can be completed, and the changes become a permanent part of the upstream repo.
 
-:::image type="content" source="../media/create-complete-pull-request-6e1a93dd.png" alt-text="Create and complete a PR.":::
+:::image type="content" source="../media/create-complete-pull-request-6e1a93dd.png" alt-text="Diagram showing Create and complete a PR.":::
 
 
 > [!IMPORTANT]

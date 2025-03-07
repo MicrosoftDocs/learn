@@ -3,12 +3,12 @@ uid: learn.languages.powershell-write-first.knowledge-check
 title: Knowledge check
 metadata:
   title: Check your knowledge
-  description: Review what you've learned in this module.
-  ms.date: 03/29/2023
+  description: Review what you learned in this module.
+  ms.date: 10/07/2024
   author: michaeltlombardi
   ms.author: mlombardi
-  ms.topic: interactive-tutorial
-  ms.prod: learning-languages
+  ms.topic: unit
+  ms.custom:
 durationInMinutes: 2
 quiz:
   title: Check your knowledge
@@ -17,14 +17,14 @@ quiz:
     choices:
     - content: "You run your code through a compiler as a step to outputting an executable program."
       isCorrect: false
-      explanation: "PowerShell code doesn't need to be run through a compiler as a manual step."
-    - content: "PowerShell is an interpreted language and your code will be interpreted to the computer as it runs."
+      explanation: "PowerShell code doesn't need to run through a compiler as a manual step."
+    - content: "PowerShell is an interpreted language and your code is interpreted to the computer as it runs."
       isCorrect: false
       explanation: "PowerShell isn't an interpreted language and doesn't get communicated to the computer as it runs."
     - content: "PowerShell doesn't compile at all, and the computer knows what your code says automatically."
       isCorrect: false
       explanation: "PowerShell code is compiled to something the computer can understand."
-    - content: "PowerShell code is compiled to an AST, checked for issues, and then translated again so the computer can understand it."
+    - content: "PowerShell code is compiled to an abstract syntax tree (AST), checked for issues, and then translated again so the computer can understand it."
       isCorrect: true
       explanation: "Correct!"
   - content: "Which of the following statements is true about PowerShell."
@@ -52,6 +52,6 @@ quiz:
     - content: "The string should be enclosed in single quotation marks."
       isCorrect: false
       explanation: "You can enclose strings in either single or double quotation marks."
-    - content: "Nothing is wrong with this command. It will run normally."
+    - content: "Nothing is wrong with this command. It should run normally."
       isCorrect: true
       explanation: "Correct! PowerShell's relaxed behavior allows this command to run normally."

@@ -6,8 +6,7 @@ metadata:
   ms.date: 04/25/2023
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: 'AZ-204: Develop solutions that use Azure Cosmos DB'
 prerequisites: |
   *   At least one year of experience developing scalable solutions through all phases of software development.
@@ -24,7 +23,7 @@ products:
 - azure
 - azure-cosmos-db
 subjects:
-- database
+- databases
 modules:
 - learn.wwl.explore-azure-cosmos-db
 - learn.wwl.work-with-cosmos-db

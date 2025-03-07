@@ -2,15 +2,16 @@
 uid: learn.wwl.create-composed-form-recognizer-model.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 09/22/2022
+  description: Knowledge check
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.date: 03/05/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -39,3 +40,4 @@ quiz:
     - content: "That the custom models all have the same list of fields."
       isCorrect: false
       explanation: "Incorrect. Custom models can be added to a composed model even if they have different labeled fields."
+

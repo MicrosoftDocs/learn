@@ -1,6 +1,4 @@
 
-
-
 In this exercise, you'll modify the console output from the previous exercise to achieve the specified reporting format.
 
 ## Format the console output
@@ -18,7 +16,7 @@ In this task, you'll update your code to apply the finishing touches to the repo
 
     ```
 
-    Notice that you're including `\n` at the end of the text. In the "Perform basic string formatting with C#" module, you learned that the `\n` escape character sequence will cause a new line to be created. The location of the escape sequence is important. In this case, the `\n` is at the end of the information that you want to write to the console, so the new line will be added after "Student Grade" is displayed. 
+    Notice that you're including `\n` at the end of the text. In the "Perform basic string formatting with C#" module, you learned that the `\n` escape character sequence will cause a new line to be created. The location of the escape sequence is important. In this case, the `\n` is at the end of the information that you want to write to the console, so the new line will be added after "Student Name" is displayed. 
 
 1. Create a blank code line  after the previous Console.WriteLine() statement.
 
@@ -29,7 +27,7 @@ In this task, you'll update your code to apply the finishing touches to the repo
 
     ```
 
-    Notice you're adding three tabs after the course name. The extra tab stops will allow extra space for longer course names.
+    Notice you're adding four tabs after the course name. The extra tab stops will allow extra space for longer course names.
 
 
 1. To format your output as aligned columns of text, replace the spaces between words with the `\t` escape sequence as follows:
@@ -50,7 +48,7 @@ In this task, you'll update your code to apply the finishing touches to the repo
 1. To add padding to the final GPA result output, update the code as follows:
 
     ```csharp
-    Console.WriteLine($"\nFinal GPA:\t\t\t{leadingDigit}.{trailingDigits}");
+    Console.WriteLine($"\nFinal GPA:\t\t\t {leadingDigit}.{firstDigit}{secondDigit}");
 
     ```
 
@@ -100,7 +98,8 @@ In this task, you'll run the code and verify that the output is correct.
     decimal gradePointAverage = (decimal) totalGradePoints/totalCreditHours;
 
     int leadingDigit = (int) gradePointAverage;
-    int trailingDigits = (int) (gradePointAverage * 100) - (leadingDigit * 100);
+    int firstDigit = (int) (gradePointAverage * 10 ) % 10;
+    int secondDigit = (int) (gradePointAverage * 100 ) % 10;
 
     Console.WriteLine($"Student: {studentName}\n");
     Console.WriteLine("Course\t\t\t\tGrade\tCredit Hours");
@@ -110,8 +109,8 @@ In this task, you'll run the code and verify that the output is correct.
     Console.WriteLine($"{course3Name}\t\t\t{course3Grade}\t\t{course3Credit}");
     Console.WriteLine($"{course4Name}\t{course4Grade}\t\t{course4Credit}");
     Console.WriteLine($"{course5Name}\t\t{course5Grade}\t\t{course5Credit}");
-
-    Console.WriteLine($"\nFinal GPA:\t\t\t{leadingDigit}.{trailingDigits}");
+    
+    Console.WriteLine($"\nFinal GPA:\t\t\t {leadingDigit}.{firstDigit}{secondDigit}");
     ```
 
 1. To run your code and display the formatted output, select **Run**.
@@ -133,3 +132,4 @@ In this task, you'll run the code and verify that the output is correct.
 
     If your code displays different results, you'll need to review your code to find your error and make updates. Run the code again to see if you've fixed the problem. Continue updating and running your code until your code produces the expected results.
     
+

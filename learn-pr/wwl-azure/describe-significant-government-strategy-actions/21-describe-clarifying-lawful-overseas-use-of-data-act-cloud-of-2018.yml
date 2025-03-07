@@ -2,13 +2,14 @@
 uid: learn.wwl.describe-significant-government-strategy-actions.describe-clarifying-lawful-overseas-use-of-data-act-cloud-of-2018
 title: Describe the Clarifying Lawful Overseas Use of Data (CLOUD) Act of 2018
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe the Clarifying Lawful Overseas Use of Data (CLOUD) Act of 2018
   description: "Describe the Clarifying Lawful Overseas Use of Data (CLOUD) Act of 2018"
   ms.date: 04/29/2022
   author: wwlpublish
   ms.author: jesander
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

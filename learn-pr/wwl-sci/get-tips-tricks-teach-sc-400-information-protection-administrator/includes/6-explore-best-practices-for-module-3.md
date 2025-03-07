@@ -1,5 +1,3 @@
-
-
 SC-400: Module 3 Implement data lifecycle and records management with Microsoft Purview
 
 Module 3 Overview
@@ -12,7 +10,7 @@ This module consists of three lessons:
 - Lesson 2 – Manage data retention in Microsoft 365
 - Lesson 3 – Implement records management in Microsoft 365
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWXhNL]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=037770cc-edf3-4ca0-a2be-b762faff86f9]  
 
 Module 3 Tips and Tricks
 
@@ -40,7 +38,5 @@ Module 3 Labs
 
 - Lab 3.1: [Configure retention policies](https://github.com/MicrosoftLearning/SC-400T00A-Microsoft-Information-Protection-Administrator/blob/master/Instructions/Labs/LAB_AK_03_Lab1_Ex1_retention_policies.md)
 - Lab 3.2: [Implement retention labels](https://github.com/MicrosoftLearning/SC-400T00A-Microsoft-Information-Protection-Administrator/blob/master/Instructions/Labs/LAB_AK_03_Lab1_Ex2_retention_labels.md)
-- Lab 3.3: [Configure service-based retention](https://github.com/MicrosoftLearning/SC-400T00A-Microsoft-Information-Protection-Administrator/blob/master/Instructions/Labs/LAB_AK_03_Lab1_Ex3_service_based_retention.md)
-- Lab 3.4: [Configure event-based retention](https://github.com/MicrosoftLearning/SC-400T00A-Microsoft-Information-Protection-Administrator/blob/master/Instructions/Labs/LAB_AK_03_Lab1_Ex4_event_based_retention.md)
-- Lab 3.5: [Use eDiscovery for recovery](https://github.com/MicrosoftLearning/SC-400T00A-Microsoft-Information-Protection-Administrator/blob/master/Instructions/Labs/LAB_AK_03_Lab1_Ex5_eDiscovery_recovery.md)
-- Lab 3.6: [Configure records management](https://github.com/MicrosoftLearning/SC-400T00A-Microsoft-Information-Protection-Administrator/blob/master/Instructions/Labs/LAB_AK_03_Lab1_Ex6_records_management.md)
+- Lab 3.3: [Configure service-based retention](https://github.com/MicrosoftLearning/SC-400T00A-Microsoft-Information-Protection-Administrator/blob/master/Instructions/Labs/LAB_AK_03_Lab1_Ex4_service_based_retention.md)
+- Lab 3.4: [Configure event-based retention](https://github.com/MicrosoftLearning/SC-400T00A-Microsoft-Information-Protection-Administrator/blob/master/Instructions/Labs/LAB_AK_03_Lab1_Ex3_event_based_retention.md)

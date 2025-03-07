@@ -2,15 +2,19 @@
 uid: learn.wwl.automate-machine-learning-workflows.github-actions
 title: GitHub Actions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: GitHub Actions
-  description: "GitHub Actions"
-  ms.date: 08/08/2022
+  description: GitHub Actions
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/4-github-actions.md)]
+

@@ -19,7 +19,7 @@ You can configure your pipelines in a YAML file that exists alongside your code.
 3.  Push your code to your version control repository. This action kicks off the default trigger to build and deploy and then monitor the results.
 4.  Your code is now updated, built, tested, and packaged. It can be deployed to any target.
 
-    :::image type="content" source="../media/flowchart-edit-code-yaml-1e1c3048.png" alt-text="Flowchart with edit code, edit YAML file, push to code repo, Azure Pipelines, and deploy to target.":::
+    :::image type="content" source="../media/flowchart-edit-code-yaml-1e1c3048.png" alt-text="Screenshot of Flowchart with edit code, edit YAML file, push to code repo, Azure Pipelines, and deploy to target.":::
 
 
 ## Benefits of using YAML

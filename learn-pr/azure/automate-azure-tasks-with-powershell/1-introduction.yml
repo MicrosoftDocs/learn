@@ -2,13 +2,16 @@
 uid: learn.automate-azure-tasks-with-powershell.1-introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
-  ms.date: 09/24/2018
+  ms.date: 06/07/2024
   author: mikefrobbins
   ms.author: mirobb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]
+

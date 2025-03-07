@@ -42,11 +42,11 @@ You can eliminate this administrative overhead by using managed disks. With this
 
 Aside from the performance issues we discussed earlier in this module, you might occasionally encounter storage problems with your Azure VMs. There are many common issues that you might encounter. These include:
 
-- Cannot extend an encrypted OS volume in Windows
+- Can't extend an encrypted OS volume in Windows
 
 - Errors when deleting storage resources
 
-- Your VHD is not supported when you create a VM in Azure
+- Your VHD isn't supported when you create a VM in Azure
 
 - Azure disk encryption issues
 
@@ -54,9 +54,9 @@ Aside from the performance issues we discussed earlier in this module, you might
 
 If you're using Disk Management in Windows Server, and attempt to extend your operating system volume, you might find that the **Extend Volume** option on the context menu for the disk is unavailable.
 
-This is caused because partition numbering has been incorrectly configured by Windows Server setup. Typically, the operating system volume (referred to as the *boot* partition) is assigned partition 2. Partition 1 should be assigned to the EFI System partition.
+This is caused by Windows Server setup incorrectly configuring the partition numbering. Typically, the operating system volume (referred to as the *boot* partition) is assigned partition 2. Partition 1 should be assigned to the EFI System partition.
 
-However, if you've created VMs based on a custom image that assigns partition 1 to the Boot partition, because there is no EFI System partition, you might encounter a problem when you later attempt to enable Azure Disk Encryption. When you enable disk encryption, you must create the EFI System partition, and it will be assigned the wrong partition number.
+However, if you created VMs based on a custom image that assigns partition 1 to the Boot partition, because there's no EFI System partition, you might encounter a problem when you later attempt to enable Azure Disk Encryption. When you enable disk encryption, you must create the EFI System partition, and it receives the wrong partition number.
 
 The high-level procedure to resolve this problem is:
 
@@ -80,11 +80,11 @@ You might encounter an error in an Azure Resource Manager deployment when you at
 
 The errors might include the following messages:
 
-- Failed to delete storage account 'StorageAccountName'. Error: The storage account cannot be deleted due to its artifacts being in use.
+- Failed to delete storage account 'StorageAccountName'. Error: The storage account can't be deleted due to its artifacts being in use.
 
-- Failed to delete # out of # container(s): vhds: There is currently a lease on the container and no lease ID was specified in the request.
+- Failed to delete # out of # container(s): vhds: There's currently a lease on the container and no lease ID was specified in the request.
 
-- Failed to delete # out of # blobs:BlobName.vhd: There is currently a lease on the blob and no lease ID was specified in the request.
+- Failed to delete # out of # blobs:BlobName.vhd: There's currently a lease on the blob and no lease ID was specified in the request.
 
 Azure prevents deletion of:
 
@@ -106,11 +106,11 @@ If you receive any of the listed errors, then follow this high-level guidance to
 
 If you attempt to create an Azure VM by uploading a VHD, the operation might fail, and you could receive the following message:
 
-*New-AzureRmVM : Long running operation failed with status 'Failed'.*
+*New-AzureRmVM: Long running operation failed with status 'Failed'.*
 
 *ErrorCode: InvalidVhd*
 
-*ErrorMessage: The specified cookie value in VHD footer indicates that disk 'diskname' with blob `https://xxxxxx.blob.core.windows.net/vhds/samplename.vhd` is not a supported VHD. Disk is expected to have cookie value 'conectix'.*
+*ErrorMessage: The specified cookie value in VHD footer indicates that disk 'diskname' with blob `https://xxxxxx.blob.core.windows.net/vhds/samplename.vhd` isn't a supported VHD. Disk is expected to have cookie value 'conectix'.*
 
 This can occur for two reasons:
 
@@ -141,13 +141,13 @@ It also supports both managed and unmanaged disks. If you experience problems en
 | VM size| Azure Disk Encryption isn't available on Basic, A-series VMs. It's also not available on Lsv2-series VMs.|
 | VM generation| Azure Disk Encryption isn't available on Generation 2 VMs.|
 | Memory| Azure Disk Encryption isn't available on VMs with less than 2 gigabytes (GB) of memory.|
-| Networking| To get a token to connect to your key vault, the Windows VM must be able to connect to an Azure AD endpoint, login.microsoftonline.com. To write the encryption keys to your key vault, the Windows VM must be able to connect to the key vault endpoint.|
+| Networking| To get a token to connect to your key vault, the Windows VM must be able to connect to a Microsoft Entra endpoint, login.microsoftonline.com. To write the encryption keys to your key vault, the Windows VM must be able to connect to the key vault endpoint.|
 | Group Policy| Azure Disk Encryption uses the BitLocker external key protector for Windows VMs. For domain-joined VMs, don't push any Group Policy Object (GPO) settings that enforce Trusted Platform Module (TPM) protectors. BitLocker policy on domain-joined VMs with custom GPO must include the following setting: Configure user storage of BitLocker recovery information -> Allow 256-bit recovery key. Azure Disk Encryption fails when custom GPO settings for BitLocker are incompatible. Azure Disk Encryption also fails if domain-level GPOs block the AES-CBC algorithm, which is used by BitLocker.|
 | Encryption key storage| Azure Disk Encryption requires a key vault to control and manage disk encryption keys and secrets. Your key vault and VMs must reside in the same Azure region and subscription.|
 
 ### Troubleshoot Azure Disk Encryption behind a firewall
 
-Disk encryption is managed by a VM extension in Windows Server VMs. The ability of the extension to perform required tasks can be disrupted when connectivity to your target VM is restricted by:
+A VM extension in Windows Server VMs manages disk encryption. The ability of the extension to perform required tasks can be disrupted when connectivity to your target VM is restricted by:
 
 - A firewall
 
@@ -160,12 +160,12 @@ You might encounter the following message: *Extension status not available on th
 | Restriction| Solution|
 | :--- | :--- |
 | NSG| Any NSG settings that are applied must still allow the endpoint to meet the documented network configuration prerequisites for disk encryption.|
-| Azure Key Vault behind a firewall| When encryption is being enabled with Azure AD credentials, the target VM must allow connectivity to both Azure Active Directory (Azure AD) endpoints and Key Vault endpoints.|
-| Azure Instance Metadata Service| Your VM must be able to access the Azure Instance Metadata service endpoint (`169.254.169.254`) and the virtual public IP address (`168.63.129.16`) used for communication with Azure platform resources. Proxy configurations that alter local HTTP traffic to these addresses (for example, adding an X-Forwarded-For header) are not supported.|
+| Azure Key Vault behind a firewall| When encryption is being enabled with Microsoft Entra credentials, the target VM must allow connectivity to both Microsoft Entra endpoints and Key Vault endpoints.|
+| Azure Instance Metadata Service| Your VM must be able to access the Azure Instance Metadata service endpoint (`169.254.169.254`) and the virtual public IP address (`168.63.129.16`) used for communication with Azure platform resources. Proxy configurations that alter local HTTP traffic to these addresses (for example, adding an X-Forwarded-For header) aren't supported.|
 
 ### Review encryption status
 
-The Azure portal might not display disk encryption status accurately. For example, it might display a disk as encrypted even after it has been unencrypted within the VM.
+The Azure portal might not display disk encryption status accurately. For example, it might display a disk as encrypted even after it's unencrypted within the VM.
 
 This status error can occur if you use low-level commands to directly unencrypt the disk from within the VM. However, if you use the higher level Azure Disk Encryption management commands, they:
 

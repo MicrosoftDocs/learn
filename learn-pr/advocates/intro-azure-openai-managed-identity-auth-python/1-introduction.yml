@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: introduction-azure-openai-managed-identity-authentication-python.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to using managed identity authentication for Python applications with Azure OpenAI Service.
+  ms.date: 11/11/2024
+  author: sarah-yo
+  ms.author: sayoung
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

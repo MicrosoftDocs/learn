@@ -1,25 +1,36 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-azure-storage-services
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Azure storage services
   description: "Azure storage services, tiers, redundancy options, and migration options and tools."
-  ms.date: 11/29/2022
+  ms.date: 02/03/2025
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.collection: N/A
+  ms.custom:
+  - N/A
+  ms.service: azure-architecture-center
+  ai-usage: human-only
 title: Describe Azure storage services
 summary: This module introduces you to storage in Azure, including things such as different types of storage and how a distributed infrastructure can make your data more resilient.
 abstract: |
   Upon completion of this module, you will be able to:
-  - Compare Azure storage services
-  - Describe storage tiers
-  - Describe redundancy options
-  - Describe storage account options and storage types
-  - Identify options for moving files, including AzCopy, Azure Storage Explorer, and Azure File Sync
-  - Describe migration options, including Azure Migrate and Azure Data Box
-prerequisites: |
-  * Basic familiarity with IT terms and concepts
+
+  -   Compare Azure storage services
+
+  -   Describe storage tiers
+
+  -   Describe redundancy options
+
+  -   Describe storage account options and storage types
+
+  -   Identify options for moving files, including AzCopy, Azure Storage Explorer, and Azure File Sync
+
+  -   Describe migration options, including Azure Migrate and Azure Data Box
+prerequisites: '-   Basic familiarity with IT terms and concepts'
 iconUrl: /training/achievements/describe-azure-storage-services.svg
 levels:
 - beginner

@@ -4,9 +4,9 @@ Azure Bastion provides a secure remote connection from the Azure portal to Azure
 
 You can use Azure Bastion to easily open an RDP or SSH session from the Azure portal to a VM that's not publicly exposed. Azure Bastion connects to your virtual machines over private IP. You don't have to expose RDP ports, SSH ports, or public IP addresses for your internal VMs.
 
-Because Azure Bastion is a fully managed platform as a service (PaaS) service, you don't need to apply any network security groups to the Azure Bastion subnet. But if you want additional security, you can configure your network security groups (NSGs) to allow RDP and SSH from Azure Bastion only.
+Because Azure Bastion is a fully managed platform as a service (PaaS), you don't need to apply any network security groups to the Azure Bastion subnet. However, if you want additional security, you can configure your network security groups (NSGs) to allow RDP and SSH from Azure Bastion only.
 
-Azure Bastion provides RDP and SSH connectivity to all VMs on same virtual network as the Azure Bastion subnet, or on a peered virtual network. You don't need to install an additional client, agent, or software to use Azure Bastion.
+Azure Bastion provides RDP and SSH connectivity to all VMs on same virtual network as the Azure Bastion subnet or on a peered virtual network. You don't need to install an additional client, agent, or software to use Azure Bastion.
 
 ## Connect to a VM by using Azure Bastion
 
@@ -27,7 +27,6 @@ After you deploy Azure Bastion, on the VM overview page, select **Connect** > **
 
 The following table shows how many concurrent RDP and SSH sessions each Azure Bastion resource can support, assuming normal day-to-day usage. If there are other ongoing RDP sessions or SSH sessions, these numbers might vary.
 
-
 |Resource |Limit  |
 |---------|---------|
 |Concurrent RDP connections    |   25      |
@@ -35,13 +34,13 @@ The following table shows how many concurrent RDP and SSH sessions each Azure Ba
 
 ## Features supported during connection to a VM
 
-The following table highlights some of the user-experience features that Azure Bastion supports.
+The following table highlights some of the user-experience features that Azure Bastion supports:
 
 |Feature  |Supports  |
 |---------|---------|
 |Browsers     | - Windows: Microsoft Edge browser, Microsoft Edge Chromium, or Google Chrome</br>     - Apple Mac: Google Chrome browser or Microsoft Edge Chromium      |
 |Keyboard layout in the VM    | - en-us-qwerty</br>- en-gb-qwerty</br>- de-ch-qwertz</br>- de-de-qwertz</br>- fr-be-azerty</br>- fr-fr-azerty</br>- fr-ch-qwertz</br>- hu-hu-qwertz</br>- it-it-qwerty</br>- ja-jp-qwerty</br>- pt-br-qwerty</br>- es-es-qwerty</br>- es-latam-qwerty</br>- sv-se-qwerty</br>- tr-tr-qwerty</br>          |
-|Functions within VM   | - Text copy and paste</br>- Features like file copy not currently supported        |
+|Functions within VM   | - Text copy and paste</br>- Features like file copy aren't currently supported        |
 
 ## Roles required to use Azure Bastion
 

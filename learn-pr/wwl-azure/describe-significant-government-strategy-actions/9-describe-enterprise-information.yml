@@ -2,13 +2,14 @@
 uid: learn.wwl.describe-significant-government-strategy-actions.describe-enterprise-information-technology-standard-business-ca
 title: Describe the Department of Defense's use of enterprise information technology standard business case analysis
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe the Department of Defense's use of enterprise information technology standard business case analysis
   description: "Describe the Department of Defense's use of enterprise information technology standard business case analysis"
   ms.date: 04/29/2022
   author: wwlpublish
   ms.author: jesander
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

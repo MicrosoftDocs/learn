@@ -2,15 +2,17 @@
 uid: learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
-  description: "Introduction"
-  ms.date: 05/20/2022
+  description: Introduction
   author: wwlpublish
   ms.author: tsheppard
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.date: 03/18/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
+

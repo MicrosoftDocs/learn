@@ -4,11 +4,10 @@ title: Implement Storage Replica
 metadata:
   title: Implement Storage Replica
   description: "Implement Storage Replica"
-  ms.date: 03/31/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 11
 content: |
@@ -20,10 +19,10 @@ quiz:
     choices:
     - content: "`Test-SRTopology`"
       isCorrect: false
-      explanation: "That's incorrect. This cmdlet validates prerequisites before creating a Storage Replica partnership."
+      explanation: "Incorrect. This cmdlet validates prerequisites before creating a Storage Replica partnership."
     - content: "`Remove-SRPartnership`"
       isCorrect: true
-      explanation: "That's correct. Before you can remove a replication group, you first need to run this cmdlet to remove the Storage Replica partnership that this group is part of."
+      explanation: "Correct. Before you can remove a replication group, you first need to run this cmdlet to remove the Storage Replica partnership that this group is part of."
     - content: "`Get-SRGroup`"
       isCorrect: false
-      explanation: "That's incorrect. You can run this cmdlet as part of removal of a replication group, however, first you must remove the partnership by running Remove-SRPartnership."
+      explanation: "Incorrect. You can run this cmdlet as part of removal of a replication group, however, first you must remove the partnership by running Remove-SRPartnership."

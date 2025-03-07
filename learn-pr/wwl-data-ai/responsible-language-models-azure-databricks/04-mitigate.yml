@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.responsible-language-models-azure-databricks.mitigate
+title: Mitigate issues
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Mitigate issues
+  description: "Mitigate issues"
+  ms.date: 08/23/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/04-mitigate.md)]

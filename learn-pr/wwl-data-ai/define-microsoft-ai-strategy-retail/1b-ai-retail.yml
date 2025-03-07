@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-microsoft-ai-strategy-retail.1b-ai-retail
+title: AI in retail
+metadata:
+  title: AI in retail
+  description: "AI in retail"
+  ms.date: 08/16/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/1b-ai-retail.md)]

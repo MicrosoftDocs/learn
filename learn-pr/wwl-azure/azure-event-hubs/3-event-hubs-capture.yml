@@ -2,13 +2,16 @@
 uid: learn.wwl.azure-event-hubs.explore-capture
 title: Explore Event Hubs Capture
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Event Hubs Capture
   description: "Explore Event Hubs Capture"
-  ms.date: 04/24/2023
+  ms.date: 07/17/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/3-event-hubs-capture.md)]

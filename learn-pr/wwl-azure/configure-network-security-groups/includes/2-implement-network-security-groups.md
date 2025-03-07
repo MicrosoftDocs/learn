@@ -28,6 +28,6 @@ You can assign network security groups to a subnet and create a protected screen
 
 You can assign network security groups to a network interface card (NIC).
 
-- Define network security group rules to control all traffic that flows through a NIC.
+- Define network security group rules to control all traffic that flows through a network interface.
 
 - Each network interface that exists in a subnet can have zero, or one, associated network security groups.

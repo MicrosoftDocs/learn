@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.intro-azure-openai-managed-identity-auth-javascript
+metadata:
+  ms.author: sayoung
+  author: sarah-yo
+  ms.date: 02/10/2025
+  title: Introduction to Azure OpenAI Managed Identity Authentication with JavaScript
+  description: Learn about Azure OpenAI managed identity authentication with JavaScript.
+  ms.topic: module
+  ms.collection: ce-advocates-ai-copilot
+  ms.service: azure-ai-openai
+title: Introduction to Azure OpenAI managed identity authentication with JavaScript
+summary: This module helps you understand how to use a managed identity in JavaScript apps that interact with Azure OpenAI Service.
+abstract: |
+ After you complete this module, you'll be able to:
+  - Describe the role-based access control (RBAC) roles for use in Azure OpenAI and configure role assignments.
+  - Describe the differences between using API keys and managed identities within Azure OpenAI.
+  - Configure keyless authentication to Azure OpenAI for local development for JavaScript.
+  - Configure keyless authentication to Azure OpenAI for Azure-hosted environments for JavaScript.
+prerequisites: |
+  To get the best learning experience from this module, you should have knowledge and experience with:
+  - JavaScript programming
+  - Azure OpenAI
+  - Azure RBAC roles
+  - Azure managed identities
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- introduction-azure-openai-managed-identity-authentication-javascript.introduction
+- introduction-azure-openai-managed-identity-authentication-javascript.azure-openai-rbac-roles
+- introduction-azure-openai-managed-identity-authentication-javascript.keyless-authentication-methods
+- introduction-azure-openai-managed-identity-authentication-javascript.benefits-of-using-managed-identity-for-azure-openai
+- introduction-azure-openai-managed-identity-authentication-javascript.knowledge-check
+- introduction-azure-openai-managed-identity-authentication-javascript.summary
+badge:
+  uid: introduction-azure-openai-managed-identity-authentication-javascript-badge

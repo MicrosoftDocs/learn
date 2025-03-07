@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ci-cd-workflows-pipelines-azure-databricks.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/01/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What is the primary purpose of implementing version control in Azure Databricks?"
+    choices:
+    - content: "To increase the processing speed of data pipelines."
+      isCorrect: false
+      explanation: "Incorrect. While efficient code management can indirectly improve performance, the primary purpose of version control is not to increase processing speed."
+    - content: "To enhance the visual appeal of the Databricks interface."
+      isCorrect: false
+      explanation: "Incorrect. The implementation of version control does not directly affect the visual appeal of the Databricks interface."
+    - content: "To manage code changes, collaborate with team members, and maintain the integrity of data pipelines and machine learning models."
+      isCorrect: true
+      explanation: "Correct. Implementing version control allows for effective code management, collaboration, and maintenance of data pipelines and machine learning models."
+  - content: "What is the purpose of unit testing in Azure Databricks?"
+    choices:
+    - content: "To validate individual components or functions of the codebase in isolation."
+      isCorrect: true
+      explanation: "Correct. Unit testing focuses on validating individual components or functions of the codebase in isolation."
+    - content: "To verify the interactions between different modules and services."
+      isCorrect: false
+      explanation: "Incorrect. This is the purpose of integration testing, not unit testing."
+    - content: "To simulate data ingestion, transformation, and storage."
+      isCorrect: false
+      explanation: "Incorrect. This is an example of a process that might be tested, not the purpose of unit testing."
+  - content: "What is the role of init scripts in configuration management in Azure Databricks?"
+    choices:
+    - content: "Init scripts are used to manage user access and permissions in Azure Databricks."
+      isCorrect: false
+      explanation: "Incorrect. Init scripts do not manage user access or permissions. They are used for installing necessary libraries, configuring system settings, or setting environment variables."
+    - content: "Init scripts are used to integrate Azure Databricks with version control systems like Git."
+      isCorrect: false
+      explanation: "Incorrect. Init scripts do not handle integration with version control systems. They are used for installing necessary libraries, configuring system settings, or setting environment variables."
+    - content: "Init scripts are used for installing necessary libraries, configuring system settings, or setting environment variables."
+      isCorrect: true
+      explanation: "Correct. Init scripts run on each node of the cluster before the Spark driver or worker starts, ensuring consistent cluster configurations and reducing runtime errors due to misconfigurations."
+

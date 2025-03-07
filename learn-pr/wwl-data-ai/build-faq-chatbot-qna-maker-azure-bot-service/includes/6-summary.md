@@ -1,0 +1,3 @@
+Azure AI Language's custom question answering feature enables you to define and publish a knowledge base of questions and answers with support for natural language querying. 
+
+The ability to create conversational AI solutions with Azure AI Language's custom question answering feature makes it possible for AI agents to reduce the support workload for human personnel; enabling organizations to provide user support at global scale.

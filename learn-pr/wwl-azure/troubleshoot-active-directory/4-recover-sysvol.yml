@@ -2,13 +2,14 @@
 uid: learn.wwl.troubleshoot-active-directory.recover-sysvol
 title: Recover SYSVOL
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Recover SYSVOL
   description: "Recover SYSVOL"
-  ms.date: 06/08/2022
+  ms.date: 01/10/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 8

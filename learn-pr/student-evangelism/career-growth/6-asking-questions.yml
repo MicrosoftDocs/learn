@@ -6,10 +6,9 @@ metadata:
   title: Ask the right questions. # user input: module title for browser tab and search results
   description: Ask the right questions as a new employee. # user input: a description for site search and SEO
   ms.date: 08/23/2021 
-  author: jlooper 
-  ms.author: jelooper 
-  ms.topic: interactive-tutorial # do we need ms.topic?
-  ms.prod: learning-azure
+  author: GitHubber17 
+  ms.author: chnoring 
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 3 # user input: the estimate time to complete the unit
 content: |

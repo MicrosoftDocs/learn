@@ -31,11 +31,11 @@ The following image shows a high-level view of how Azure virtual machines are ba
 
 Here are some things to review when planning backup and recovery for your virtual machines. Consider how you can use Azure virtual machine backups in the Tailwind Traders BCDR solution. 
 
-- **Consider your backup schedule**. Identify the best backup schedule for your business needs. To distribute backup traffic, consider backing up different virtual machines at different times of the day, and make sure the backup times don't overlap. Ensure your backup scheduled start time is during non-peak production application times.
+- **Consider your backup schedule**. Identify the best backup schedule for your business needs. To distribute backup traffic, consider backing up different virtual machines at different times of the day, and make sure the backup times don't overlap. Ensure your backup scheduled start time is during nonpeak production application times.
 
 - **Consider backup frequency**. Determine how frequently you need to create fresh backups. Implement both short-term (daily) and long-term (weekly) backups. If you need to take a backup outside of your scheduled via backup policy, you can use an on-demand backup. You might do on-demand backups multiple times per day when scheduled backup permits only one backup per day.
 
-- **Consider backup policies**. Create a single backup policy for a group of virtual machines that require the same schedule start time, frequency, and retention settings. You might establish a backup policy for critical virtual machines, and a separate policy for non-critical machines. 
+- **Consider backup policies**. Create a single backup policy for a group of virtual machines that require the same schedule start time, frequency, and retention settings. You might establish a backup policy for critical virtual machines, and a separate policy for noncritical machines. 
 
 - **Consider plan changes**. After you implement your backup solution, continue to monitor and review your plan. As your business requirements change, make sure to review and change your backup policies. Enable monitoring and alerting features and review the results. 
 

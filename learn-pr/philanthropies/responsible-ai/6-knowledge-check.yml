@@ -1,0 +1,56 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.explore-responsible-ai.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is a part of the responsible AI module.
+  ms.date: 01/14/2025
+  author: yoosunee
+  ms.author: anruss
+  ms.topic: unit
+durationInMinutes: 7
+quiz:
+  title: Knowledge check
+  questions:
+  - content: Which of the following best evaluates the ethical implications of AI-generated content?
+    choices:
+    - content: AI-generated content must be critically analyzed and cross-verified with multiple sources to ensure its ethical implications are thoroughly evaluated.
+      isCorrect: true
+      explanation: Correct. This answer emphasizes the importance of critically analyzing AI-generated content and cross-verifying information from multiple sources to evaluate its ethical implications.
+    - content: AI-generated content can be trusted if created by advanced algorithms.
+      isCorrect: false
+      explanation: "Incorrect: Trusting AI-generated content without critical analysis and cross-verification can lead to misinformation and ethical issues, as AI algorithms can sometimes produce biased or inaccurate content."
+    - content: The ethical implications of AI-generated content are irrelevant if the content is useful.
+      isCorrect: false
+      explanation: "Incorrect: Ignoring the ethical implications of AI-generated content, even if it's useful, can result in overlooking potential biases, inaccuracies, and ethical concerns."
+    - content: AI-generated content is inherently biased and should be avoided in all ethical evaluations.
+      isCorrect: false
+      explanation: "Incorrect: While AI-generated content can be biased, it isn't inherently so. Avoiding it entirely isn't a practical solution; instead, it should be critically analyzed and cross-verified to address any ethical concerns."
+  - content: Which of the following best assesses the ethical and security concerns associated with deepfakes?
+    choices:
+    - content: Deepfakes are harmless if they're used for entertainment purposes.
+      isCorrect: false
+      explanation: "Incorrect: Deepfakes pose ethical and security concerns, such as spreading misinformation and impersonation regardless of the purpose."
+    - content: Deepfakes must be critically assessed for their potential to spread misinformation and impersonate individuals, posing significant ethical and security concerns.
+      isCorrect: true
+      explanation: "Correct: Critically assessing deepfakes for their potential misuse in spreading misinformation and impersonation is important as it can cause significant ethical and security concerns."
+    - content: The ethical and security concerns of deepfakes are exaggerated and don't require serious consideration.
+      isCorrect: false
+      explanation: "Incorrect: Downplaying the ethical and security concerns of deepfakes can lead to serious consequences, as they can be misused to spread misinformation and impersonate individuals."
+    - content: Deepfakes are legally acceptable if they're created using advanced technology.
+      isCorrect: false
+      explanation: "Incorrect: The legal acceptability of deepfakes depends on their use and potential impact, not just the technology used to create them. They must be critically assessed for ethical and security concerns."
+  - content: Which of the following best evaluates the global human-AI interactions by analyzing key factors such as data privacy, algorithmic bias, transparency, and legal liability?
+    choices:
+    - content: Human-AI interactions are beneficial if they improve efficiency, regardless of data privacy concerns.
+      isCorrect: false
+      explanation: "Incorrect: While improving efficiency is important, ignoring data privacy concerns can lead to significant ethical and security issues."
+    - content: Algorithmic bias is the main factor that needs to be considered when evaluating human-AI interactions globally.
+      isCorrect: false
+      explanation: "Incorrect: Focusing solely on algorithmic bias overlooks other critical factors like data privacy, transparency, and legal liability, which are essential for a comprehensive evaluation."
+    - content: Evaluating global human-AI interactions requires analyzing data privacy, algorithmic bias, transparency, and legal liability to ensure ethical and secure integration.
+      isCorrect: true
+      explanation: "Correct: It's essential to analyze multiple key factors such as data privacy, algorithmic bias, transparency, and legal liability to evaluate global human-AI interactions effectively."
+    - content: Legal liability isn't a significant concern in the evaluation of human-AI interactions
+      isCorrect: false
+      explanation: "Incorrect: Legal liability is a significant concern and must be considered when evaluating human-AI interactions to ensure ethical and secure integration. Ignoring it can lead to legal and ethical complications."

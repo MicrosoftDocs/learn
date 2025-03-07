@@ -2,23 +2,30 @@
 uid: learn.wwl.create-stored-procedures-table-valued-functions
 metadata:
   title: Create stored procedures and user-defined functions
-  description: "Create stored procedures and user-defined functions"
-  ms.date: 02/02/2023
+  description: "This content is a part of Create stored procedures and user-defined functions."
+  ms.date: 03/15/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.custom:
+  - N/A
+  ms.service: sql
+  ai-usage: human-only
 title: Create stored procedures and user-defined functions
-summary: Learn how to use Stored procedures to group T-SQL statements so they can be used and reused whenever needed.  You may need to execute stored procedures that someone else has created or create your own.
+summary: Learn how to use Stored procedures to group T-SQL statements so they can be used and reused whenever needed. You may need to execute stored procedures that someone else has created or create your own.
 abstract: |
-  After completing this module, you will be able to:
-  * Return results by executing stored procedures.
-  * Pass parameters to procedures.
-  * Create simple stored procedures that encapsulate a SELECT statement.
-  * Construct and execute dynamic SQL with EXEC and sp_executesql.
-  * Create simple user-defined functions and write queries against them.
-prerequisites: |
-  Before starting this module, you should have experience of using Transact-SQL queries to retrieve and filter data from a table in a database.
+  After completing this module, you'll be able to:
+
+  -   Return results by executing stored procedures.
+
+  -   Pass parameters to procedures.
+
+  -   Create simple stored procedures that encapsulate a SELECT statement.
+
+  -   Construct and execute dynamic SQL with EXEC and sp_executesql.
+
+  -   Create simple user-defined functions and write queries against them.
+prerequisites: Before starting this module, you should have experience of using Transact-SQL queries to retrieve and filter data from a table in a database.
 iconUrl: /training/achievements/create-stored-procedures-table-functions.svg
 levels:
 - advanced

@@ -26,7 +26,7 @@ During the process, you'll:
 
 1. Save your changes to the file.
 
-1. Commit your changes, but don't push the changes yet. You'll push them soon.
+1. Commit your changes, but don't push them yet. You'll push the changes soon.
 
    ```bash
    git add .

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-fslogix.configure-cloud-cache
+title: Configure profile containers with Cloud Cache
+metadata:
+  title: Configure profile containers with Cloud Cache
+  description: "Configure profile containers with Cloud Cache"
+  ms.date: 08/27/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-configure-cloud-cache.md)]

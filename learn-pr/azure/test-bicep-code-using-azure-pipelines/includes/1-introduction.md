@@ -29,7 +29,7 @@ You should be familiar with using:
 
 To work through the exercises in the module, you'll need:
 
-- An Azure account with the ability to create resource groups, Azure Active Directory applications, and service principals.
+- An Azure account with the ability to create resource groups, Microsoft Entra applications, and service principals.
 - An Azure DevOps organization and account.
 
 You'll also need the following installed locally:

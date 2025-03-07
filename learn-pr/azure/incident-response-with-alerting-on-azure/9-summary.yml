@@ -1,14 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.incident-response-with-alerting-on-azure.9-summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
-  ms.date: 10/10/2019
-  author: cwatson-cat
-  ms.author: cwatson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/24/2024
+  author: AbbyMSFT
+  ms.author: abbyweisberg
+  ms.topic: unit
 title: Summary
 durationInMinutes: 2
 content: |
   [!include[](includes/9-summary.md)]
+

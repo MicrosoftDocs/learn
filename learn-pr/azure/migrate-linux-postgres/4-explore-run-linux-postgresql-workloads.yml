@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-linux-postgres.explore-run-linux-postgresql-workloads
+title: Explore and run Linux and PostgreSQL workloads
+metadata:
+  title: Explore and run Linux and PostgreSQL workloads
+  description: "Explore and run Linux and PostgreSQL workloads in Azure. Learn how to connect to your Linux virtual machine and your Azure Database for PostgreSQL server."
+  ms.date: 9/16/2024
+  author: asw101
+  ms.author: aawislan
+  ms.topic: unit
+durationInMinutes: 45
+content: |
+  [!include[](includes/4-explore-run-linux-postgresql-workloads.md)]

@@ -3,11 +3,11 @@ uid: learn.wwl.use-search-jobs-microsoft-sentinel
 metadata:
   title: Use Search jobs in Microsoft Sentinel
   description: "Use Search jobs in Microsoft Sentinel"
-  ms.date: 12/01/2022
+  ms.date: 03/05/2025
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: microsoft-sentinel
 title: Use Search jobs in Microsoft Sentinel
 summary: In Microsoft Sentinel, you can search across long time periods in large datasets by using a search job.
 abstract: |

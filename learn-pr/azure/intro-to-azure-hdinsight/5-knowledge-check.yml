@@ -2,14 +2,15 @@
 uid: learn.intro-to-azure-hdinsight.5-knowledge-check  
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check
-  ms.date: 10/27/2022  
+  ms.date: 04/21/2024 
   author: sreekzz
-  ms.author: v-sreiyer  
-  ms.topic: interactive-tutorial 
-  ms.prod: learning-azure
+  ms.author: v-sreeiyer  
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -67,3 +68,4 @@ quiz:
     - content: "Batch processing"
       isCorrect: true
       explanation: "Correct. Organizations use batch-processing jobs to prepare big data for further analysis."
+

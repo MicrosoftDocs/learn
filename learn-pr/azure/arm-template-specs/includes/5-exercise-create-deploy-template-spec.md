@@ -1,8 +1,8 @@
 [!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
 
-At your toy company, your team has worked with Azure for a while now, and you've created lots of templates that you use on a daily basis. You decide to take one template and create a template spec. You're starting with the template that you use to create Azure Cosmos DB accounts.
+At your toy company, your team has been working with Azure for a while now, and you created lots of templates that you use on a daily basis. You decide to take one template and create a template spec. You're starting with the template that you use to create Azure Cosmos DB accounts.
 
-Your team has decided that continuous backup needs to be configured on all of your Azure Cosmos DB accounts. So you want to include backups in the default configuration of Azure Cosmos DB accounts that are provisioned through the template spec.
+Your team decided that continuous backup needs to be configured on all of your Azure Cosmos DB accounts. So you want to include backups in the default configuration of Azure Cosmos DB accounts that are provisioned through the template spec.
 
 In this exercise, you publish the Azure Cosmos DB template as a template spec.
 
@@ -24,7 +24,7 @@ During the process, you'll:
 
 ## Create the template
 
-You start with one of the templates that your team has already created. The template deploys an Azure Cosmos DB account and configures it to enable continuous backup.
+You start with one of the templates that your team created. The template deploys an Azure Cosmos DB account and configures it to enable continuous backup.
 
 ::: zone pivot="bicepcli,biceppowershell"
 
@@ -34,7 +34,7 @@ You start with one of the templates that your team has already created. The temp
 
 1. Save the empty file so that Visual Studio Code loads the Bicep tooling.
 
-   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you saved the file. For example, you might want to create a *scripts* folder to save it in.
 
 1. Copy the following code into *main.bicep*:
 
@@ -54,7 +54,7 @@ You start with one of the templates that your team has already created. The temp
 
 1. Save the empty file so that Visual Studio Code loads the Azure Resource Manager template (ARM template) tooling.
 
-   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you saved the file. For example, you might want to create a *scripts* folder to save it in.
 
 1. Copy the following code into *azuredeploy.json*:
 
@@ -68,11 +68,11 @@ You start with one of the templates that your team has already created. The temp
 
 ## Make the parameters easier to understand
 
-When you work with template specs, it's important to consider how others will use your template. This review is especially important for parameters, because they're the main way that other people will interact with your code. The parameters in your team's template don't include descriptions or other hints about how they should be used, so you add this information here.
+When you work with template specs, it's important to consider how others use your template. This review is especially important for parameters, because they're the main way that other people interact with your code. The parameters in your team's template don't include descriptions or other hints about how they should be used, so you add this information here.
 
 ::: zone pivot="bicepcli,biceppowershell"
 
-1. Update the `location` parameter definition to add a description:
+1. Update the `location` parameter definition by adding a description:
 
    :::code language="bicep" source="code/5-template.bicep" range="1-2" highlight="1" :::
 
@@ -86,7 +86,7 @@ When you work with template specs, it's important to consider how others will us
 
 ::: zone pivot="jsoncli,jsonpowershell"
 
-1. Update the `location` parameter definition to add a description:
+1. Update the `location` parameter definition by adding a description:
 
    :::code language="json" source="code/5-template.json" range="5-11" highlight="4-6" :::
 
@@ -181,7 +181,7 @@ Publish the template spec by using this Azure CLI command in the Visual Studio C
 
 ## Deploy the template spec
 
-For simplicity, you'll deploy the template spec into the same sandbox resource group that the template spec itself is stored in. Normally, you keep template specs in a different resource group. However, the steps are the same both ways.
+For simplicity, you deploy the template spec into the same sandbox resource group that the template spec itself is stored in. Normally, you keep template specs in a different resource group. However, the steps are the same both ways.
 
 ::: zone pivot="biceppowershell,jsonpowershell"
 
@@ -211,17 +211,17 @@ For simplicity, you'll deploy the template spec into the same sandbox resource g
 1. Get the template spec version's resource ID by running the following Azure CLI command:
 
    ```azurecli
-   templateSpecVersionResourceId=$(az ts show \
-     --name ToyCosmosDBAccount \
-     --version 1.0 \
-     --query id \
-     --output tsv)
+   id=$(az ts show \ 
+    --name ToyCosmosDBAccount \
+    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
+    --version "1.0" \
+    --query "id")
    ```
 
 1. Deploy the template spec by using this Azure CLI command in the Visual Studio Code terminal:
 
    ```azurecli
-   az deployment group create --template-spec $templateSpecVersionResourceId
+   az deployment group create --template-spec $id
    ```
 
 ::: zone-end
@@ -232,7 +232,7 @@ The deployment can take a minute or two to finish.
 
 1. In your browser, go back to the Azure portal. Go to your resource group.
 
-1. Next to **Deployments**, select **1 Succeeded** to see the details of the deployment.
+1. Next to **Deployments**, select the **1 Succeeded** link to see the details of the deployment.
 
    :::image type="content" source="../media/5-deployment-succeeded.png" alt-text="Screenshot of the Azure portal interface for the resource group overview, with the deployments section showing that one succeeded." border="true":::
 
@@ -242,6 +242,6 @@ The deployment can take a minute or two to finish.
 
    Your deployment's name might look different from the one in the example.
 
-1. Select **Deployment details** to expand it. Notice that an Azure Cosmos DB account has been deployed.
+1. Select **Deployment details** to expand it. Confirm that an Azure Cosmos DB account is deployed.
 
-   :::image type="content" source="../media/5-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with three Azure Cosmos D B resources listed." border="true":::
+   :::image type="content" source="../media/5-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with three Azure Cosmos DB resources listed." border="true":::

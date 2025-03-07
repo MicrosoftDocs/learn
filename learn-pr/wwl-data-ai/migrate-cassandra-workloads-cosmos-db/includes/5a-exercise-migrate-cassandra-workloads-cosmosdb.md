@@ -37,9 +37,10 @@ The scenario for this lab concerns an ecommerce system. The customer and order d
 
     | Property  | Value  |
     |---|---|
-    | BastionHost | **Disabled** |
-    | DDoS Protection Standard  | **Disabled** |
-    | Firewall | **Disabled** |
+    | Enable Azure Bastion | **Disabled** |
+    | Enable Azure Firewall | **Disabled** |
+    | Enable Azure DDoS Network Protection  | **Disabled** |
+
 
 1. On the **Review + create** page, select **Create** and then wait for the virtual network to be created before continuing.
 

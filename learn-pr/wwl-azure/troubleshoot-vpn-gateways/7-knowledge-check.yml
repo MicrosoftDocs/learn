@@ -2,13 +2,14 @@
 uid: learn.wwl.troubleshoot-vpn-gateways.knowledge-check
 title: Knowledge Check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge Check
   description: "Knowledge Check"
-  ms.date: 03/22/2023
-  author: wwlpublish
-  ms.author: lauraalv
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/27/2023
+  author: mistoyanwork
+  ms.author: mistoyan
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/7-knowledge-check.md)]

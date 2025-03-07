@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.detect-analyze-faces.understand-face-analysis
+title: Understand facial analysis
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Understand facial analysis
+  description: "Understand facial analysis"
+  ms.date: 09/13/2024
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-what-is-face-analysis.md)]

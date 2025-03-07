@@ -1,0 +1,101 @@
+### YamlMime:Module
+uid: learn.wwl.manage-security-controls-identity-access
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Manage security controls for identity and access
+  description: "This module focuses on effectively managing security controls in Microsoft Entra ID by securing identities, authentication, and authorization to protect users, groups, and external identities against threats while ensuring secure and seamless access to resources."
+  ms.date: 02/26/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
+title: Manage security controls for identity and access
+summary: This module focuses on effectively managing security controls in Microsoft Entra ID by securing identities, authentication, and authorization to protect users, groups, and external identities against threats while ensuring secure and seamless access to resources.
+abstract: |
+  By the end of this module, participants will be able to:
+
+  -   Secure user identities in Microsoft Entra ID by implementing strong authentication and access management controls.
+
+  -   Protect groups and access management by enforcing security measures to prevent unauthorized changes or misuse.
+
+  -   Manage external identities securely by defining policies that ensure confidentiality, integrity, and proper access control.
+
+  -   Implement Microsoft Entra ID Protection to detect, investigate, and mitigate identity-related security threats.
+
+  -   Apply Conditional Access policies to enforce security controls based on user behavior, device compliance, and contextual risks.
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- security-engineer
+products:
+- azure-rbac
+- entra
+- entra-external-id
+- entra-id
+- entra-id-protection
+- entra-permissions-management
+- entra-verified-id
+subjects:
+- cloud-security
+units:
+- learn.wwl.manage-security-controls-identity-access.introduction
+- learn.wwl.manage-security-controls-identity-access.identity-management-privileged-access
+- learn.wwl.manage-security-controls-identity-access.microsoft-entra-id-overview
+- learn.wwl.manage-security-controls-identity-access.secure-microsoft-entra-users
+- learn.wwl.manage-security-controls-identity-access.create-new-user
+- learn.wwl.manage-security-controls-identity-access.secure-microsoft-entra-groups
+- learn.wwl.manage-security-controls-identity-access.recommend-when-use-external-identities
+- learn.wwl.manage-security-controls-identity-access.secure-external-microsoft-entra-identities
+- learn.wwl.manage-security-controls-identity-access.microsoft-entra-identity-protection
+- learn.wwl.manage-security-controls-identity-access.microsoft-entra-connect
+- learn.wwl.manage-security-controls-identity-access.microsoft-entra-cloud-sync
+- learn.wwl.manage-security-controls-identity-access.authentication-options
+- learn.wwl.manage-security-controls-identity-access.password-hash-synchronization-with-microsoft-entra-id
+- learn.wwl.manage-security-controls-identity-access.microsoft-entra-pass-through-authentication
+- learn.wwl.manage-security-controls-identity-access.federation-with-microsoft-entra-id
+- learn.wwl.manage-security-controls-identity-access.what-microsoft-entra-authentication
+- learn.wwl.manage-security-controls-identity-access.configure-microsoft-entra-multifactor-authentication-settings
+- learn.wwl.manage-security-controls-identity-access.kerberos-authentication
+- learn.wwl.manage-security-controls-identity-access.new-technology-local-area-network-manager
+- learn.wwl.manage-security-controls-identity-access.passwordless-authentication-options
+- learn.wwl.manage-security-controls-identity-access.passwordless-authentication
+- learn.wwl.manage-security-controls-identity-access.enforce-premises-microsoft-entra-password-protection
+- learn.wwl.manage-security-controls-identity-access.microsoft-entra-id-single-sign-on
+- learn.wwl.manage-security-controls-identity-access.configure-microsoft-entra-single-sign-on
+- learn.wwl.manage-security-controls-identity-access.integrate-applications-with-microsoft-entra-id
+- learn.wwl.manage-security-controls-identity-access.microsoft-entra-verified-id
+- learn.wwl.manage-security-controls-identity-access.configure-microsoft-entra-verified-id
+- learn.wwl.manage-security-controls-identity-access.microsoft-entra-id-authentication-verification-methods
+- learn.wwl.manage-security-controls-identity-access.azure-management-groups
+- learn.wwl.manage-security-controls-identity-access.configure-azure-role-permissions
+- learn.wwl.manage-security-controls-identity-access.azure-role-based-access-control
+- learn.wwl.manage-security-controls-identity-access.azure-built-in-roles
+- learn.wwl.manage-security-controls-identity-access.assign-azure-role-permissions
+- learn.wwl.manage-security-controls-identity-access.microsoft-entra-built-in-roles
+- learn.wwl.manage-security-controls-identity-access.built-roles-microsoft-entra-id
+- learn.wwl.manage-security-controls-identity-access.microsoft-entra-role-based-access-control
+- learn.wwl.manage-security-controls-identity-access.create-new-custom-roles-microsoft-entra-id
+- learn.wwl.manage-security-controls-identity-access.microsoft-entra-permissions-management
+- learn.wwl.manage-security-controls-identity-access.enable-microsoft-entra-permissions-management-organization
+- learn.wwl.manage-security-controls-identity-access.zero-trust-security
+- learn.wwl.manage-security-controls-identity-access.microsoft-entra-privileged-identity-management
+- learn.wwl.manage-security-controls-identity-access.configure-privileged-identity-management
+- learn.wwl.manage-security-controls-identity-access.microsoft-entra-id-governance
+- learn.wwl.manage-security-controls-identity-access.identity-lifecycle-management
+- learn.wwl.manage-security-controls-identity-access.lifecycle-workflows
+- learn.wwl.manage-security-controls-identity-access.entitlement-management
+- learn.wwl.manage-security-controls-identity-access.delegation-roles-entitlement-management
+- learn.wwl.manage-security-controls-identity-access.access-reviews
+- learn.wwl.manage-security-controls-identity-access.configure-role-management-access-reviews-microsoft-entra-id-governance
+- learn.wwl.manage-security-controls-identity-access.conditional-access
+- learn.wwl.manage-security-controls-identity-access.knowledge-check
+- learn.wwl.manage-security-controls-identity-access.summary
+badge:
+  uid: learn.wwl.manage-security-controls-identity-access.badge

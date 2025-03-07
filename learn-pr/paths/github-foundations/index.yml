@@ -1,0 +1,54 @@
+### YamlMime:LearningPath
+uid: learn.github-foundations
+metadata:
+  title: GitHub Foundations
+  description: The GitHub Foundations Learning Path is a concise and beginner-friendly journey designed to introduce you to the fundamental concepts and products of GitHub.
+  brand: github
+  ms.date: 08/21/2024
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: learning-path
+title: GitHub Foundations
+summary: |
+   The GitHub Foundations Learning Path is a concise and beginner-friendly journey designed to introduce you to the fundamental concepts and products of GitHub. You'll discover the benefits of using GitHub as a collaborative platform and explore its core features, such as repository management, commits, branches, and merging.
+
+    In this learning path, you'll:
+
+   - Gain an understanding of GitHub’s essential tools
+   - Become familiar with Git
+   - Learn about GitHub Copilot
+prerequisites: |
+ - A [GitHub](https://github.com?azure-portal=true)
+iconUrl: /training/achievements/8-learn-continuous-integration-with-github-actions.svg
+levels:
+- beginner
+- intermediate
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+- student
+products:
+- github
+subjects:
+- devops
+modules:
+- learn.student-evangelism.introduction-to-git
+- learn.github.introduction-to-github
+- learn.github.github-introduction-products
+- learn.github.configure-code-scanning
+- learn.github.introduction-to-github-copilot
+- learn.github.code-with-github-codespaces
+- learn.github.manage-work-github-projects
+- learn.github.communicate-using-markdown
+- learn.github.contribute-opensource
+- learn.github.manage-innersource-program-github
+- learn.github.maintain-secure-repository-github
+- learn.github.github-introduction-administration
+- learn.github.authenticate-authorize-user-identities-github
+- learn.github.manage-changes-pull-requests-github
+- learn.github.search-organize-repository-history-github
+- learn.github-copilot-with-python
+trophy:
+  uid: 8-learn-continuous-integration-with-github-actions.badge

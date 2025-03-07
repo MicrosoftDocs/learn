@@ -2,13 +2,15 @@
 uid: learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.exercise-manage-and-deploy-applications-on-compute-nodes
 title: Exercise - Manage and deploy applications on compute nodes
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Manage and deploy applications on compute nodes
   description: In this hands-on exercise, you'll add code to run tasks on compute nodes.
-  ms.date: 06/01/2019
+  ms.date: 02/14/2024
   author: lauradolan
-  ms.author: ladolan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: jushiman
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/9-exercise-manage-and-deploy-applications-on-compute-nodes.md)]
+

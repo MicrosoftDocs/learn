@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-generative-ai.introduction
+title: Introduction
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Introduction
+  description: Introduction to generative AI applications with examples of what generative AI can do.
+  author: sherzyang
+  ms.author: sheryang
+  ms.date: 11/26/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
+

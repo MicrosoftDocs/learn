@@ -1,20 +1,20 @@
-You use Azure Automation State Configuration to ensure that the virtual machines (VMs) in a cluster area are in a consistent state, with the same software installed and the same configurations.
+You can use Azure Automation State Configuration to ensure that the virtual machines (VMs) in a cluster area are in a consistent state, with the same software installed and the same configurations.
 
-In this unit, you learn about the features and capabilities of Azure Automation, review the declarative model of PowerShell Desired State Configuration (DSC), and explore its benefits.
+In this unit, you'll learn about Azure Automation's features and capabilities, review the declarative model of PowerShell Desired State Configuration (DSC), and explore its benefits.
 
-Azure Automation State Configuration is an Azure service built on PowerShell. It enables you to consistently deploy, reliably monitor, and automatically update the desired state of all your resources. Azure Automation provides tools to define configurations and apply them to real and virtual machines.
+Azure Automation State Configuration is an Azure service built on PowerShell. It lets you consistently deploy, reliably monitor, and automatically update the desired state of all your resources. Azure Automation provides tools to define configurations and apply them to real and virtual machines.
 
 ## Why use Azure Automation State Configuration?
 
-Manually maintaining a correct and consistent configuration for the servers that run your services can be difficult and error prone. Azure Automation State Configuration uses PowerShell DSC to help address these challenges. It centrally manages your DSC artifacts and the DSC process.
+Manually maintaining a correct and consistent configuration for the servers that run your services can be difficult and error-prone. Azure Automation State Configuration uses PowerShell DSC to help address these challenges. It centrally manages your DSC artifacts and the DSC process.
 
 Azure Automation State Configuration has a built-in pull server. You can target nodes to automatically receive configurations from this pull server, conform to the desired state, and report back on their compliance. You can target virtual or physical Windows or Linux machines, in the cloud or on-premises.
 
-You can use Azure Monitor logs to review the compliance of your nodes by configuring Azure Automation State Configuration to send this data.  
+You can use Azure Monitor logs to review your nodes' compliance by configuring Azure Automation State Configuration to send this data.  
 
 ## What is PowerShell DSC?
 
-PowerShell DSC is a declarative management platform that Azure Automation State Configuration uses to configure, deploy, and control systems. A declarative programming language separates intent (what you want to do) from execution (how you want to do it). You specify the desired state and let DSC do the work to get there. You don't have to know how to implement or deploy a feature when a DSC resource is available. Instead, you focus on the structure of your deployment.
+PowerShell DSC is a declarative management platform that Azure Automation State Configuration uses to configure, deploy, and control systems. A declarative programming language separates intent (what you want to do) from execution (how you want to do it). You specify the desired state and let DSC do the work to get there. You don't have to know how to implement or deploy a feature when a DSC resource is available. Instead, you can focus on your deployment structure.
 
 If you're already using PowerShell, you might wonder why you need DSC. Consider the following example.
 
@@ -25,9 +25,9 @@ When you want to create a share on a Windows server, you might use this PowerShe
 New-SmbShare -Name MyFileShare -Path C:\Shared -FullAccess User1 -ReadAccess User2
 ```
 
-The script is straightforward and easy to understand. However, if you use this script in production, you encounter several problems. Consider what might happen if the script runs multiple times or if `User2` already has full access rather than read only access.
+This script is straightforward and easy to understand. However, if you use this script in production, you'll encounter several problems. Consider what might happen if the script runs multiple times, or if `User2` already has full access rather than read-only access.
 
-This approach isn't *idempotent*. Idempotence describes an operation that has the same effect whether you run it once or 10,001 times. To achieve idempotence in PowerShell, you need to add logic and error handling. If the file share doesn't exist, you create it. If the share does exist, there's no need to create it. If `User2` exists but doesn't have read access, you add read access. 
+This approach isn't *idempotent*. Idempotence describes an operation that has the same effect whether you run it once or 10,001 times. To achieve idempotence in PowerShell, you need to add logic and error handling. If the file share doesn't exist, you create it. If the share does exist, there's no need to create it. If `User2` exists but doesn't have read access, you add read access.
 
 Your PowerShell script would look something like:
 
@@ -55,7 +55,7 @@ else
 }
 ```
 
-Other special cases you haven't considered might come to light only when problems arise. DSC handles unexpected cases automatically. With DSC, you describe the result rather than the process to achieve the result. 
+Other special cases you haven't considered might come to light only when problems arise. DSC handles unexpected cases automatically. With DSC, you describe the result rather than the process to achieve the result.
 
 The following DSC code snippet shows an example:
 
@@ -82,9 +82,9 @@ Configuration Create_Share
 }
 ```
 
-The previous example uses the `xSmbShare` module, which tells DSC *how* to check the state of a file share. The DSC Resource Kit has more than 80 resource modules, including one for installing an IIS site. You can find a link to the DSC Resource Kit in the Summary at the end of this lesson.
+The preceding example uses the `xSmbShare` module, which tells DSC *how* to check the state of a file share. The DSC Resource Kit has more than 100 resource modules, including one for installing an IIS site. You can find a link to the DSC Resource Kit in the Summary unit at the end of this module.
 
-You'll learn more about the structure of the PowerShell DSC code in the next unit.
+You'll learn more about the PowerShell DSC code structure in the next unit.
 
 ## What is the LCM?
 
@@ -94,7 +94,7 @@ The local configuration manager (LCM) is a component of the Windows Management F
 1. **Test**: Compares the current state of a node against the desired state by using a compiled DSC script (.mof file).
 1. **Set**: Updates the node to match the desired state described in the .mof file.
 
-You configure the LCM when you register a VM with Azure Automation.
+You'll configure the LCM when you register a VM with Azure Automation.
 
 ## Push and pull architectures in DSC
 
@@ -104,7 +104,7 @@ The LCM on each node can operate in two modes.
 
     ![Diagram showing a push architecture in DSC.](../media/2-push.png)
 
-- **Pull mode**: A *pull server* holds the configuration information. The LCM on each node polls the pull server at regular intervals, by default every 15 minutes, to get the latest configuration details. These requests are denoted as step 1 in the following diagram. In step 2, the pull server sends the details about any configuration changes back to each node.
+- **Pull mode**: A *pull server* holds the configuration information. The LCM on each node polls the pull server at regular intervals—by default, every 15 minutes—to get the latest configuration details. These requests are denoted as Step 1 in the following diagram. In Step 2, the pull server sends the details about any configuration changes back to each node.
   
     In pull mode, each node has to be registered with the pull service.
 
@@ -122,6 +122,7 @@ Azure Automation DSC is supported by Azure Cloud Services and other cloud provid
 Azure Automation DSC supports the following operating systems:
   
 - Windows
+  - Server 2022
   - Server 2019
   - Server 2016
   - Server 2012 R2
@@ -134,15 +135,15 @@ Azure Automation DSC supports the following operating systems:
 - Linux
   - The DSC Linux extension supports all the Linux distributions listed in the [PowerShell DSC documentation](/powershell/dsc/getting-started/lnxgettingstarted).
 
-PowerShell DSC is installed on all Linux machines supported by Azure Automation DSC.
+PowerShell DSC is installed on all Linux machines Azure Automation DSC supports.
 
 ## DSC requirements for Windows
 
-For Windows machines, the Azure Desired State Configuration (DSC) VM extension uses WMF to manage the versions of Windows features like Windows PowerShell DSC and Windows Remote Management (WinRM). Azure DSC supports WMF 4.0 and later. So Windows machines must run Windows Server 2008 R2 SP1, Windows 7, or later.
+For Windows machines, the Azure Desired State Configuration (DSC) VM extension uses WMF to manage Windows feature versions like Windows PowerShell DSC and Windows Remote Management (WinRM). Azure DSC supports WMF 4.0 and later, so Windows machines must run Windows Server 2008 R2 SP1, Windows 7, or later.
 
 The first time the Azure DSC extension is called, it installs an OS-compatible version of WMF on all Windows versions except Windows Server 2016 and later. Windows Server 2016 and later versions already have the latest version of WMF installed. After WMF is installed, the machine requires a restart.
 
-WinRM is enabled on machine nodes that run Windows Server 2012 or later, and Windows 7 or later.
+WinRM is enabled on machine nodes that run Windows Server 2012 or later and Windows 7 or later.
 
 Proxy support for the DSC agent is available in Windows builds 1809 and later. Proxy support is unavailable in DSC for previous versions of Windows.
 
@@ -150,7 +151,7 @@ Proxy support for the DSC agent is available in Windows builds 1809 and later. P
 
 If your nodes are located in a private network, DSC needs the following port and URLs to communicate with Azure Automation:
 
-- **Port**: Only TCP 443 is required for outbound internet access.
+- **Port**: Only TCP 443 is required for outbound internet access
 - **Global URL**:  *.azure-automation.net
 - **Global URL of US Gov Virginia**: *.azure-automation.us
 - **Agent service**: https://`<workspaceId>`.agentsvc.azure-automation.net

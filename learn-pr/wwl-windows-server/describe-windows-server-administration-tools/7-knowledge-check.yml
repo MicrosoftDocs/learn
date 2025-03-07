@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/20/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -19,32 +18,32 @@ quiz:
     choices:
     - content: "TCP 6516"
       isCorrect: true
-      explanation: "That's correct. This is the default port for the Windows Admin Center website. However, you can change it during installation or subsequently."
+      explanation: "Correct. This is the default port for the Windows Admin Center website. However, you can change it during installation or subsequently."
     - content: "TCP 80"
       isCorrect: false
-      explanation: "That's incorrect. The Windows Admin Center site doesn't use this port by default."
+      explanation: "Incorrect. The Windows Admin Center site doesn't use this port by default."
     - content: "TCP 443"
       isCorrect: false
-      explanation: "That's incorrect. The Windows Admin Center site doesn't use this port by default."
+      explanation: "Incorrect. The Windows Admin Center site doesn't use this port by default."
   - content: "An administrator has setup a standalone Windows 10 Enterprise computer in a workgroup as an administrative workstation. The administrator intends to use Windows PowerShell remoting to manage remote Windows Servers in the Contoso.com domain. The administrator is unable to establish a remote Windows PowerShell connection to the domain controller SEA-DC1. Assuming that all default settings have been applied, which of the following is the reason for this failure to connect?"
     choices:
     - content: "The administrator must enable remoting on the Windows 10 computer by running `Enable-PSremoting -force`."
       isCorrect: false
-      explanation: "That's incorrect. The Windows 10 computer is not being remotely managed and therefore doesn't need to be enabled for remoting."
+      explanation: "Incorrect. The Windows 10 computer isn't being remotely managed and therefore doesn't need to be enabled for remoting."
     - content: "The administrator must enable remoting on the Windows Server domain controller computer SEA-DC1 by running `Enable-PSremoting -force`."
       isCorrect: false
-      explanation: "That's incorrect. Windows Remote Management is automatically enabled on server computers by default."
+      explanation: "Incorrect. Windows Remote Management is automatically enabled on server computers by default."
     - content: "The administrator must add the SEA-DC1 computer as a trusted host by using the `Set-Item WSMan:localhost\\Client\\TrustedHosts -Value 'SEA-DC1.Contoso.com'` command."
       isCorrect: true
-      explanation: "That's correct. Because the Windows 10 computer is not part of the domain, Kerberos authentication cannot be used. Therefore the administrator must configure the target server as a trusted host."
+      explanation: "Correct. Because the Windows 10 computer isn't part of the domain, Kerberos authentication can't be used. Therefore the administrator must configure the target server as a trusted host."
   - content: "An administrator wants to reconfigure the properties of some users in the Marketing OU of the Contoso.com domain. The administrator decides to use Windows PowerShell. Which of the following cmdlets would the administrator use to make changes?"
     choices:
     - content: "Get-ADuser"
       isCorrect: false
-      explanation: "That's incorrect. Although the administrator might use this cmdlet to retrieve user details, this cmdlet doesn't commit changes."
+      explanation: "Incorrect. Although the administrator might use this cmdlet to retrieve user details, this cmdlet doesn't commit changes."
     - content: "Set-ADuser"
       isCorrect: true
-      explanation: "That's correct. This cmdlet is used to commit changes to the selected objects."
+      explanation: "Correct. This cmdlet is used to commit changes to the selected objects."
     - content: "New-ADuser"
       isCorrect: false
-      explanation: "That's incorrect. You'll use this cmdlet to create a new user in AD DS."
+      explanation: "Incorrect. You use this cmdlet to create a new user in AD DS."

@@ -2,13 +2,16 @@
 uid: learn.wwl.explore-azure-cosmos-db.choose-right-consistency-level
 title: Choose the right consistency level
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Choose the right consistency level
   description: "Choose the right consistency level"
-  ms.date: 04/25/2023
+  ms.date: 01/24/2025
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/5-choose-cosmos-db-consistency-level.md)]

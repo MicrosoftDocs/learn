@@ -8,7 +8,7 @@ By using the Technology Experience Score, Desktop Analytics, Log Analytics, Real
 
 - Proactively maintain device performance and health.
 - Benefit from data-driven IT management, which shows how endpoint hardware and software performance and health issues impacts end-user productivity.
-- Leverage machine learning for recommended security and configuration settings.
+- Use machine learning for recommended security and configuration settings.
 
 ## Deep Microsoft 365 Integration
 

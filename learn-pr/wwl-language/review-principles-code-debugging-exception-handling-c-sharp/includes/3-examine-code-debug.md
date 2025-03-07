@@ -2,6 +2,7 @@
 
 
 
+
 Every developer has to deal with code bugs, it's just a way of life for developers. Sometimes you can spot your bugs quickly. After all, you wrote the code, and besides, it feels good to find and fix an issue quickly. Inevitably though, there will be times when you find yourself searching for a bug that isn't so easy to spot.
 
 ## Code debugging process

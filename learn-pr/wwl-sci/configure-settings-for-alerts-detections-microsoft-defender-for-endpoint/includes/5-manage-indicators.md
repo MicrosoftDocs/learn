@@ -1,6 +1,6 @@
 Indicator of compromise (IoCs) matching is an essential feature in every endpoint protection solution. This capability gives SecOps the ability to set a list of detection indicators and for blocking (prevention and response). Create indicators that define the detection, prevention, and exclusion of entities. You can define the action to be taken, the duration for when to apply the action, and the scope of the device group to apply it to.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qLVw?rel=0]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a4469df9-4f31-4ed0-9577-8b26ac5293ad]
 
 Currently supported sources are the cloud detection engine of Defender for Endpoint, the automated investigation and remediation engine, and the endpoint prevention engine (Microsoft Defender AV).
 
@@ -157,7 +157,7 @@ It can take up to 3 hours to create and remove a certificate IoC.
 
 ### Create an indicator for certificates:
 
-1. In the Microsoft 365 Defender portal, select **Settings > Endpoints > Indicators**.
+1. In the Microsoft Defender portal, select **Settings > Endpoints > Indicators**.
 
 1. Select the Certificate tab.
 
@@ -179,7 +179,7 @@ You can also choose to upload a CSV file that defines the attributes of indicato
 
 Download the sample CSV to know the supported column attributes.
 
-1. In the Microsoft 365 Defender portal, select **Settings > Endpoints > Indicators**.
+1. In the Microsoft Defender portal, select **Settings > Endpoints > Indicators**.
 
 1. Select the tab of the entity type you'd like to import indicators for.
 
@@ -204,4 +204,3 @@ The following table shows the supported parameters.
 | rbacGroupNames| String| Comma-separated list of RBAC group names the indicator would be applied to. Optional|
 | category| String| Category of the alert. Examples include: Execution and credential access. Optional|
 | MITRE techniques| String| MITRE techniques code/id (comma separated). For more information, see Enterprise tactics. Optional It is recommended to add a value in category when a MITRE technique.|
-

@@ -9,6 +9,6 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [Deployment jobs - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/process/deployment-jobs).
- -  [What are Microservices? - Azure DevOps \| Microsoft Docs](/devops/deliver/what-are-microservices).
- -  [Design a CI/CD pipeline-using Azure DevOps - Azure Example Scenarios \| Microsoft Docs](/azure/architecture/example-scenario/apps/devops-dotnet-webapp).
+ -  [Deployment jobs - Azure Pipelines \| Microsoft Learn](/azure/devops/pipelines/process/deployment-jobs).
+ -  [What are Microservices? - Azure DevOps \| Microsoft Learn](/devops/deliver/what-are-microservices).
+ -  [Design a CI/CD pipeline-using Azure DevOps - Azure Example Scenarios \| Microsoft Learn](/azure/architecture/example-scenario/apps/devops-dotnet-webapp).

@@ -4,11 +4,10 @@ title: Exercise - Customization using parameters
 metadata:
   title: Exercise - Customization using parameters
   description: In this exercise, we learn to customize our game to make it look better and be more flexible.
-  author: softchris
-  ms.author: chnoring
+  author: CamSoper
+  ms.author: casoper
   ms.date: 03/15/2023
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/6-exercise-parameters.md)]

@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.separate-ui-and-logic-with-data-binding.3-use-data-bindings-xaml
+title: Use data bindings in XAML
+metadata:
+  title: Use data bindings in XAML
+  description: In this unit, you'll learn about how to declare and use data bindings in XAML.
+  ms.date: 02/15/2024
+  author: adegeo
+  ms.author: adegeo
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](./includes/3-use-data-bindings-xaml.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which is true of the source object in a .NET MAUI binding?"
+    choices:
+    - isCorrect: true
+      content: "It can be any type."
+      explanation: "The source object can be any type."
+    - isCorrect: false
+      content: "It must be a `BindableObject`."
+      explanation: "The source doesn't need to be a `BindableObject`."
+    - isCorrect: false
+      content: "It must be a subclass of `View`."
+      explanation: "The source doesn't need to be a `View`."
+  - content: "Which is true of the target property in .NET MAUI binding?"
+    choices:
+    - isCorrect: false
+      content: "It can be any public property."
+      explanation: "The source path can be any public property, but the target has restrictions."
+    - isCorrect: true
+      content: "It must be a `BindableProperty`."
+      explanation: "The target property must be a `BindableProperty`."
+    - isCorrect: false
+      content: "It must be a `DependencyProperty`."
+      explanation: ".NET MAUI doesn't use the type `DependencyProperty`."
+  - content: "If all the bindings on controls within a `Grid` need the same source object, what is the safest strategy to set the source object only once?"
+    choices:
+    - isCorrect: false
+      content: "Set the `Page`'s `BindingContext` property."
+      explanation: "Setting the `BindingContext` at the `Page` level might not work as intended. There might be a non-null `BindingContext` lower in the visual tree that would take precedence over the object set at the `Page` level."
+    - isCorrect: false
+      content: "Set the `Page`'s `Source` property."
+      explanation: "`Page` doesn't have a `Source` property, only bindings do."
+    - isCorrect: true
+      content: "Set the `Grid`'s `BindingContext` property."
+      explanation: "Setting the `BindingContext` on the `Grid` is the safest choice. There's no chance a different `BindingContext` will be used as the source for the bindings."

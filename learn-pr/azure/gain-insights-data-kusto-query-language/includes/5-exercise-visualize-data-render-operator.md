@@ -25,17 +25,17 @@ In this example, you'll visualize the previous query using a bar chart.
 
     :::image type="content" source="../media/5-column-chart.png" alt-text="Screenshot of query with bar chart results." lightbox="../media/5-column-chart.png":::
 
-1. Notice the legend to the right of the bar chart. Each value in the legend represents a different column of data that's been summarized by *State* in the query. Try selecting one of the values, such as *count_*, to toggle the display of this data in the bar chart. By toggling off *count_*, you remove the total count and are left with count of events that caused damage and distinct number of events. You should get a graph that looks like the following image:
+1. Notice the legend to the right of the bar chart. Each value in the legend represents a different column of data that's been summarized by *State* in the query. Try selecting one of the values, such as *count_*, to toggle displaying this data in the bar chart. By toggling off *count_*, you remove the total count and are left with count of events that caused damage and distinct number of events. You should get a graph that looks like the following image:
 
     :::image type="content" source="../media/5-column-chart-toggle.png" alt-text="Screenshot of column chart results with count_ field toggled off." lightbox="../media/5-column-chart-toggle.png":::
 
-1. Take a look at the resulting bar chart. What insights can you gain from this? You may notice, for example, that Texas had the most individual storm events, but Iowa had the highest incidence of damaging storm events.
+1. Take a look at the resulting bar chart. What insights can you gain from this? You might notice, for example, that Texas had the most individual storm events, but Iowa had the highest incidence of damaging storm events.
 
 ## Group values using the `bin()` function
 
 Until now, you've used aggregation functions to group events by *State*. Let's now look at the distribution of storms throughout the year, by grouping data by time. The time values we have in every record are the start time and end time. Let's group the event start times by week, so we can see how many storms happened each week during the year 2007.
 
-You'll use the `bin()` function, which groups values into set intervals. For example, you may have a data from every day of the year and you'd like to group these dates by week. Or, you want to group population data by age bins. The syntax of this operator is:
+You'll use the `bin()` function, which groups values into set intervals. For example, you might have data from every day of the year, and you'd like to group these dates by week. Or, you want to group population data by age bins. The syntax of this operator is:
 
 > `bin(`*value*`,`*roundTo*`)`
 
@@ -59,7 +59,7 @@ The bin value can be a number, date, or timespan. You'll aggregate the count usi
 
 ## Use the `sum` operator
 
-In the previous query, you looked at the number of storm events over time. Now let's take a look at the damage caused by these storms. For this, you'll use the `sum` aggregation function, because you want to see the total amount of damage caused in each time interval. The dataset you're working with has two columns related to damage: *DamageProperty* and *DamageCrops*.
+In the previous query, you looked at the number of storm events over time. Now let's take a look at the damage these storms caused. For this, you'll use the `sum` aggregation function, because you want to see the total amount of damage caused in each time interval. The dataset you're working with has two columns related to damage: *DamageProperty* and *DamageCrops*.
 
 In the following query, you'll first create a calculated column that adds these two damage sources together. Then, you'll create an aggregation of total damage binned by week. Finally, you'll render a column chart representing the weekly damage caused by all storms.
 

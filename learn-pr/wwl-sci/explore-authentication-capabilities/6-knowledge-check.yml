@@ -2,41 +2,42 @@
 uid: learn.wwl.explore-authentication-capabilities-of-azure-ad.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/07/2023
+  ms.date: 09/23/2024
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "After hearing of a breach at a competitor, the security team wants to improve identity security within their organization. What should they implement to provide the greatest protection to user identities?"
+  - content: "Of the authentication methods listed below, Which one represents the most secure authentication method?"
     choices:
-    - content: "Multi-factor authentication."
+    - content: "Windows Hello."
       isCorrect: true
-      explanation: "Correct. Multi-factor authentication dramatically improves the security of an identity."
-    - content: "Require security questions for all sign-ins."
+      explanation: "Correct. Of the methods listed below, Windows Hello, as a passwordless method of authentication, is the most secure."
+    - content: "Passwords."
       isCorrect: false
-      explanation: "Incorrect. Security questions can only be used during the self-service password reset (SSPR) process to confirm who you are. Security questions aren't used as an authentication method during a sign-in event."
-    - content: "Require strong passwords for all identities."
+      explanation: "Incorrect. Passwords are considered among the most insecure methods of authentication."
+    - content: "Short message service (SMS)"
       isCorrect: false
-      explanation: "Incorrect. Although strong passwords improve security, they're not as secure multi-factor authentication."
-  - content: "Which of the following additional forms of verification can be used with Azure AD Multi-Factor Authentication?"
+      explanation: "Incorrect. A passwordless authentication method, such as Windows Hello, is more secure than an SMS method of authentication, regardless of whether it's used as a primary or secondary form of authentication."
+  - content: "Which of the following additional forms of verification can be used with Microsoft Entra multifactor authentication?"
     choices:
     - content: "Microsoft Authenticator app, SMS, Voice call, FIDO2, and Windows Hello for Business"
       isCorrect: true
-      explanation: "Correct.  These are all valid forms of verification with multi-factor authentication."
+      explanation: "Correct. These are all valid forms of verification with multifactor authentication."
     - content: "Security questions, SMS, Voice call, FIDO2, and Windows Hello for Business"
       isCorrect: false
-      explanation: "Incorrect.  Security questions aren't a valid form of verification with multi-factor authentication."
+      explanation: "Incorrect. Security questions aren't a valid form of verification with multifactor authentication."
     - content: "Password spray, SMS, Voice call, FIDO2, and Windows Hello for Business"
       isCorrect: false
-      explanation: "Correct.  Password spray isn't a form of verification, it's an identity based attack."
+      explanation: "Correct. Password spray isn't a form of verification, it's an identity based attack."
   - content: "A company's IT organization has been asked to find ways to reduce IT costs, without compromising security. Which feature should they consider implementing?"
     choices:
     - content: "Self-service password reset."
@@ -48,3 +49,4 @@ quiz:
     - content: "FIDO2."
       isCorrect: false
       explanation: "Incorrect. FIDO2 may require the purchase of external keys such as a USB device, which might involve additional expense."
+

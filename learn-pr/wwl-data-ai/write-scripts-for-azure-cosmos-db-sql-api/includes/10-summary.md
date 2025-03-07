@@ -1,4 +1,4 @@
-In this module, you learned how to use the **az cosmosdb** command group and many of the SQL API relevant subgroups to create and manage resources within an Azure Cosmos DB account.
+In this module, you learned how to use the **az cosmosdb** command group and many of the NoSQL relevant subgroups to create and manage resources within an Azure Cosmos DB account.
 
 > [!TIP]
 > The Azure CLI also includes command subgroups for managing Azure Cosmos DB accounts created using other APIs.
@@ -6,7 +6,7 @@ In this module, you learned how to use the **az cosmosdb** command group and man
 Now that you have completed this module, you can:
 
 - View properties of a specific CLI command using the **--help** argument
-- Use **az cosmosdb** to create a new Azure Cosmos DB SQL API account using the CLI
+- Use **az cosmosdb** to create a new Azure Cosmos DB for NoSQL account using the CLI
 - Use **az cosmosdb create** to create databases and containers using the CLI
 - Adjust indexing policy and throughput using the CLI
 - Initiate failovers and manage failover regions using the CLI

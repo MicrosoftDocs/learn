@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-security-controls-identity-access.secure-external-microsoft-entra-identities
+title: Secure external identities
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Secure external identities
+  description: "Secure external identities"
+  ms.date: 02/26/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 15
+content: |
+  [!include[](includes/8-secure-external-microsoft-entra-identities.md)]

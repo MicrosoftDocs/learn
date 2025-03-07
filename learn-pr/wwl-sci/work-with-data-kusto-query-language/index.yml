@@ -3,11 +3,11 @@ uid: learn.wwl.work-with-data-kql
 metadata:
   title: Work with data in Microsoft Sentinel using Kusto Query Language
   description: "Work with data in Microsoft Sentinel using Kusto Query Language"
-  ms.date: 08/04/2022
+  ms.date: 02/28/2025
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: microsoft-sentinel
 title: Work with data in Microsoft Sentinel using Kusto Query Language
 summary: Learn how to use the Kusto Query Language (KQL) to manipulate string data ingested from log sources.
 abstract: |

@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.introduction-migrating-gcp-azure
+metadata:
+  title: Introduction to Migrating from Google Cloud to Microsoft Azure
+  description: "Learn how Google Cloud services and concepts map to Azure technologies and how to plan a migration."
+  ms.date: 01/16/2025
+  author: carols
+  ms.author: carols
+  ms.topic: module
+  ms.service: azure
+title: Introduction to migrating from Google Cloud to Microsoft Azure
+summary: "If you're familiar with Google Cloud and its services, the terminology in Microsoft Azure can be disorienting. The approach to common cloud problems in Azure is also different from Google Cloud's approach. In this module, learn how technologies and solutions in Google Cloud map to their equivalents in Azure."
+abstract: |
+  In this module, you will:
+  - Learn about identity and access management (IAM) in Azure compared to Google Cloud Platform (GCP).
+  - Compare governance services on GCP with Azure.
+  - Learn about the differences between GCP and Azure infrastructure as a service (IaaS) options.
+  - Compare database services in GCP with Azure.
+  - Compare event-driven architecture and messaging services in GCP and Azure.
+  - Compare Google Kubernetes Engine (GKE) and Azure Kubernetes Service (AKS).
+  - Learn where to find more information about GCP-equivalent Azure services.
+prerequisites: |
+  - Familiarity with cloud concepts
+  - Familiarity with Google Cloud
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - administrator
+  - security-engineer
+  - solution-architect
+products: 
+  - azure
+  - microsoft-defender
+  - entra-id
+subjects:
+  - architecture
+  - cloud-computing
+  - migration
+  - networking
+  - storage
+  - virtualization
+units:
+- learn.introduction-migrating-gcp-azure.introduction
+- learn.introduction-migrating-gcp-azure.compare-identity-access-management
+- learn.introduction-migrating-gcp-azure.map-governance-features
+- learn.introduction-migrating-gcp-azure.investigate-iaas-features
+- learn.introduction-migrating-gcp-azure.choose-database-solution
+- learn.introduction-migrating-gcp-azure.event-driven-architecture
+- learn.introduction-migrating-gcp-azure.compare-implementation-kubernetes
+- learn.introduction-migrating-gcp-azure.knowledge-check
+- learn.introduction-migrating-gcp-azure.summary
+badge:
+  uid: learn.introduction-migrating-gcp-azure.badge

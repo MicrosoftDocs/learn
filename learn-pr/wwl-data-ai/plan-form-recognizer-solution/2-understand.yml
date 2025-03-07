@@ -1,16 +1,20 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.plan-form-recognizer-solution.understand
-title: Understand Form Recognizer
+title: Understand AI Document Intelligence
 metadata:
-  title: Understand Form Recognizer
-  description: "Understand Form Recognizer"
-  ms.date: 09/16/2022
-  author: wwlpublish
-  ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Understand AI Document Intelligence
+  description: Understand AI Document Intelligence
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 09/04/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/2-understand.md)]
+

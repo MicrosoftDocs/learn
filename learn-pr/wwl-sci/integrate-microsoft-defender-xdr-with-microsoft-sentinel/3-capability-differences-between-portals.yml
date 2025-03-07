@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel.3-capability-differences-between-portals
+title: Explore the capability differences between Microsoft Defender XDR and Microsoft Sentinel portals
+metadata:
+  title: Explore the capability differences between Microsoft Defender XDR and Microsoft Sentinel portals
+  description: "Explore the capability differences between Microsoft Defender XDR and Microsoft Sentinel portals."
+  ms.date: 10/2/2024
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-capability-differences-between-portals.md)]

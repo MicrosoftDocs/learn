@@ -2,13 +2,14 @@
 uid: learn.health-bot-basic-bot.4-bonus-conversational-elements
 title: Bonus reading
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Bonus reading
   description: Explanation of every scenario step.
   author: Meghana-ch
   ms.author: chnoring
-  ms.date: 07/27/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/21/2023
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 3
 content: |

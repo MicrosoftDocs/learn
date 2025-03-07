@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-security-controls-identity-access.microsoft-entra-cloud-sync
+title: Microsoft Entra Cloud Sync
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Microsoft Entra Cloud Sync
+  description: "Microsoft Entra Cloud Sync"
+  ms.date: 02/26/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/11-microsoft-entra-cloud-sync.md)]

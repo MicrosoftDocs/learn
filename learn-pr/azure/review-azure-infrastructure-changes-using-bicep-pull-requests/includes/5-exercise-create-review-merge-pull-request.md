@@ -21,7 +21,7 @@ Because you can't push changes directly to your repository's main branch, you ne
 
    :::image type="content" source="../media/5-github-branches.png" alt-text="Screenshot of GitHub that shows the repository page with the link to the branch list highlighted.":::
 
-1. Next to **add-orders-queue**, select **New pull request**.
+1. Next to **add-orders-queue**, select the **More** icon (**...**), then select **New pull request**.
 
    :::image type="content" source="../media/5-github-new-pull-request.png" alt-text="Screenshot of GitHub that shows the branch list. The button for a new pull request is highlighted for the add-orders-queue branch.":::
 
@@ -74,7 +74,7 @@ Normally, a pull request is reviewed by someone other than its author. For this 
    > [!TIP]
    > Imagine that you're reviewing this for your own team. Would you make any suggestions?
 
-1. In the _main.bicep_ file that was changed, hover over line 18 and select the button with the plus sign (**+**).
+1. In the _main.bicep_ file that was changed, hover over line 18 and select the button with the **plus sign** (**+**).
 
    :::image type="content" source="../media/5-github-pull-request-review-line.png" alt-text="Screenshot of GitHub that shows changes to the main dot bicep file. The mouse is hovering over line 18, and the button for adding comments is highlighted.":::
 
@@ -85,7 +85,7 @@ Normally, a pull request is reviewed by someone other than its author. For this 
    :::image type="content" source="../media/5-github-pull-request-review-comment.png" alt-text="Screenshot of GitHub that shows the comment field, with the button for starting a review highlighted.":::
 
    > [!TIP]
-   > GitHub doesn't let you approve your own pull requests. Here, you'll comment on your pull request but won't approve it. When you work with your own team's pull requests, this is the point at which you'd approve it to indicate you're happy for it to be merged.
+   > GitHub doesn't let you approve your own pull requests. Here, you'll comment on your pull request, but won't approve it. When you work with your own team's pull requests, this is the point at which you'd approve it to indicate you're happy for it to be merged.
 
 1. Select **Finish your review**.
 
@@ -124,7 +124,7 @@ Normally, a pull request is reviewed by someone other than its author. For this 
 
    :::image type="content" source="../media/5-repos-pull-request-approve.png" alt-text="Screenshot of Azure DevOps that shows the Approve button for the pull request.":::
 
-   After you select **Approve** the **Set auto-complete** changes to **Complete**. You use that feature later in this unit.
+   After you select **Approve**, the **Set auto-complete** changes to **Complete**. You'll use that feature later in this unit.
 
 ::: zone-end
 
@@ -160,13 +160,13 @@ When you create or review a pull request, you can participate in a conversation 
 
 ::: zone pivot="github"
 
-Your website's development team has confirmed it's ready for you to send the orders to the queue. So, you're ready to complete and merge your pull request.
+Your website's development team has confirmed it's ready for you to send the orders to the queue, so you're ready to complete and merge your pull request.
 
 ::: zone-end
 
 ::: zone pivot="azurerepos"
 
-Your pull request has been approved. Your website's development team has confirmed it's ready for you to send the orders to the queue. So, you're ready to complete and merge your pull request.
+Your pull request has been approved. Your website's development team has confirmed it's ready for you to send the orders to the queue, so you're ready to complete and merge your pull request.
 
 ::: zone-end
 

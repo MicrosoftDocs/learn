@@ -14,7 +14,7 @@ Consider these characteristics of Azure Data Explorer that can help enhance your
 
 ### Things to consider when using Azure Data Explorer
 
-The following diagram shows a hybrid end-to-end monitoring solution that's integrated with Azure Sentinel and Azure Monitor. This configuration ingests streamed and batched logs from multiple sources, on-premises, or any cloud within an enterprise ecosystem. Consider how this solution could be implemented in the Tailwind Traders architecture to monitor various logs. 
+The following diagram shows a hybrid end-to-end monitoring solution integrated with Microsoft Sentinel and Azure Monitor. This configuration ingests streamed and batched logs from multiple sources, on-premises, or any cloud within an enterprise ecosystem. Consider how this solution could be implemented in the Tailwind Traders architecture to monitor various logs. 
 
 :::image type="content" source="../media/azure-data-explorer.png" alt-text="Diagram of an end-to-end monitoring solution integrated with Azure Monitor for ingesting streamed and batched logs from diverse sources." lightbox="../media/azure-data-explorer-expanded.png" border="false":::
 
@@ -26,7 +26,7 @@ The following diagram shows a hybrid end-to-end monitoring solution that's integ
 
    - Microsoft Sentinel and Azure Monitor SaaS solutions don't offer out-of-the-box support for certain scenarios like application trace logs. You can use Azure Data Explorer to provide monitoring support for all aspects and for all types of logs for Tailwind Traders.
 	  
-   - Azure Data Explorer provides greater flexibility for building quick and easy near-real-time analytics dashboards, pattern recognition, and [time series analysis](/azure/data-explorer/time-series-analysis). The tool supports granular role-based access control, [anomaly detection and forecasting](/azure/data-explorer/anomaly-detection), and [machine learning](/azure/data-explorer/machine-learning-clustering).
+   - Azure Data Explorer provides greater flexibility for building quick and easy near-real-time analytics dashboards, pattern recognition, and [time series analysis](/azure/data-explorer/time-series-analysis). The tool supports granular role-based access control, [anomaly detection and forecasting](/azure/data-explorer/anomaly-detection), and machine learning.
 	  
    - Azure Data Explorer is well integrated with ML services, such as Databricks and Azure Machine Learning. You can build models for Tailwind Traders by using other tools and services, and export ML models to Azure Data Explorer for scoring data.
 

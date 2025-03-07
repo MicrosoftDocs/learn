@@ -1,10 +1,10 @@
-In this unit, you'll use Azure Cloud Shell on the right as your Linux terminal. You can access Cloud Shell through the Azure portal or the [Cloud Shell sign-in](https://shell.azure.com). You don't have to install anything on your PC or laptop to use it.
+In this unit, you use the Azure Cloud Shell on the right-hand side as your Linux terminal. You can access Cloud Shell through the Azure portal or the [Cloud Shell sign-in](https://shell.azure.com). You don't have to install anything on your PC or laptop to use it.
 
-Here, you'll run commands that will help you learn more about PowerShell. PowerShell isn't something you learn overnight; it's learned command by command. You can speed up your learning by effectively using the core cmdlets.
+Here, you run commands that help you learn more about PowerShell. PowerShell isn't something you learn overnight; it's learned command by command. You can speed up your learning by effectively using the core cmdlets.
 
 ## Locate a command
 
-Locate commands by running the `Get-Command` cmdlet. The cmdlet helps you search all of the cmdlets installed on your system. Use flags to narrow down your search results to just the cmdlets that fit your scenario.
+Locate commands by running the `Get-Command` cmdlet. This cmdlet helps you search all of the cmdlets installed on your system. Use flags to narrow down your search results to just the cmdlets that fit your scenario.
 
 In this scenario, you're looking for a cmdlet that can help you work with files.
 

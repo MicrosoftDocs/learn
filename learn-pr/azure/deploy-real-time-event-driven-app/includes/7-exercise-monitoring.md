@@ -1,4 +1,4 @@
-Let's have a look at the metrics in Application Insights to measure the performance and identify potential bottlenecks.
+Let's have a look at the metrics in Application Insights to measure performance and identify potential bottlenecks.
 
 ## Check metrics on the Azure portal
 

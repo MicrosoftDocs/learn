@@ -2,13 +2,17 @@
 uid: learn.wwl.integrate-sql-apache-spark-pools-azure-synapse-analytics.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 06/08/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -37,3 +41,4 @@ quiz:
     - content: "Use token-based authentication."
       isCorrect: false
       explanation: "Incorrect. Currently the Azure Synapse Apache Spark to Synapse SQL connector doesn't support token-based authentication to a dedicated SQL pool that is outside of the workspace. You'll need to use SQL Authentication."
+

@@ -1,5 +1,3 @@
-
-
 SC-300: Module 5 Plan and implement an identity governance strategy
 
 Module 5 Overview
@@ -17,7 +15,7 @@ This module consists of eight lessons:
 - Lesson 7 – Configure and manage a connected organization
 - Lesson 8 – Review per-user entitlements
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWXwwd]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=1408e420-5d04-4aad-b133-b91e5e76e0e9]  
 
 Module 5 Tips and Tricks
 

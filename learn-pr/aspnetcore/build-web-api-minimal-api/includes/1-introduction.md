@@ -6,7 +6,7 @@ You're a developer on a team. As part of your job, you build and maintain many A
 
 ## What will you learn?
 
-You'll learn how to build a so-called minimal API by using ASP.NET Core and .NET 6. As part of building your API, you'll add various route constructs to handle the reading and writing of data. You'll also add Swagger to ensure you have a way to document your API.
+You'll learn how to build a so-called minimal API by using ASP.NET Core and .NET 8. As part of building your API, you'll add various route constructs to handle the reading and writing of data. You'll also add Swagger to ensure you have a way to document your API.
 
 ## What is the main goal?
 

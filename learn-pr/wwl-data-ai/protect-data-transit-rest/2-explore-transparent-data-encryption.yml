@@ -2,13 +2,14 @@
 uid: learn.wwl.protect-data-transit-at-rest.explore-transparent-data-encryption
 title: Explore Transparent Data Encryption
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Transparent Data Encryption
   description: "Explore Transparent Data Encryption"
-  ms.date: 05/06/2022
-  author: wwlpublish
+  ms.date: 2/25/2025
+  author: JulianePadrao
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

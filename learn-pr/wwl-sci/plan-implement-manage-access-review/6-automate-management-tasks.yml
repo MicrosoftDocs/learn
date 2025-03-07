@@ -4,13 +4,12 @@ title: Automate access review management tasks
 metadata:
   title: Automate access review management tasks
   description: "Automate access review management tasks"
-  ms.date: 02/07/2023
+  ms.date: 01/20/2025
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/6-automate-management-tasks.md)]

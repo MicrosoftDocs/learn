@@ -4,13 +4,12 @@ title: Plan for access reviews
 metadata:
   title: Plan for access reviews
   description: "Plan for access reviews"
-  ms.date: 02/07/2023
+  ms.date: 01/20/2025
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 18
 content: |
   [!include[](includes/2-plan-for-access-reviews.md)]

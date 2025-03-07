@@ -6,7 +6,7 @@ The load on your system can spike during weekends and holidays. The system must 
 
 Azure Event Hubs is a big data streaming platform and event ingestion service. It can receive and process millions of events per second. Data sent to an event hub can be transformed and stored by using any real-time analytics provider or batching/storage adapters. It can also be configured to scale dynamically, when required, to handle increased throughput.
 
-In this module, you'll learn how to connect Event Hubs to your app and reliably process large transaction volumes.
+In this module, you learn how to connect Event Hubs to your app and reliably process large transaction volumes.
 
 ## Learning objectives
 
@@ -15,3 +15,8 @@ In this module, you will:
 - Create an event hub using the Azure CLI.
 - Configure apps to send or receive messages through an event hub.
 - Evaluate your event hub performance using the Azure portal.
+
+## Prerequisites
+
+- Experience using [Visual Studio Code](https://code.visualstudio.com/download) to develop, build, and run C# console applications.
+- Experience using Git repositories and Git Bash. Download [Git for Windows](https://git-scm.com/downloads/win) if you don't have it already on your computer.

@@ -1,11 +1,13 @@
-Now that you understand the concept of a workload identity, you might wonder how you create one and link it to a GitHub Actions deployment workflow. This unit will show you the steps to accomplish that.
+Now that you understand the concept of a workload identity, you might wonder how you create one and link it to a GitHub Actions deployment workflow. This unit shows you the steps to accomplish that.
 
-## Create an Azure Active Directory application
+<a name='create-an-azure-active-directory-application'></a>
 
-In the previous unit, you learned that workload identities require creating an _application registration_ in Azure Active Directory (Azure AD).
+## Create a Microsoft Entra application
+
+In the preceding unit, you learned that workload identities require creating an _application registration_ in Microsoft Entra ID.
 
 > [!NOTE]
-> Creating and modifying application registrations requires you to have permissions in Azure AD. In some organizations, you might need an administrator to perform these steps for you.
+> Creating and modifying application registrations requires you to have permissions in Microsoft Entra ID. In some organizations, you might need an administrator to perform these steps for you.
 
 When you create an application registration, you need to specify a display name. The display name is a human-readable name that describes the application registration.
 
@@ -14,7 +16,7 @@ When you create an application registration, you need to specify a display name.
 
 ::: zone pivot="cli"
 
-Here's an example Azure CLI command to create a new Azure AD application:
+Here's an example Azure CLI command to create a new Microsoft Entra application:
 
 ```azurecli
 az ad app create --display-name $applicationRegistrationName
@@ -24,7 +26,7 @@ az ad app create --display-name $applicationRegistrationName
 
 ::: zone pivot="powershell"
 
-Here's an example Azure PowerShell command to create a new Azure AD application:
+Here's an example Azure PowerShell command to create a new Microsoft Entra application:
 
 ```azurepowershell
 New-AzADApplication -DisplayName $applicationRegistrationName
@@ -35,7 +37,7 @@ New-AzADApplication -DisplayName $applicationRegistrationName
 The output of the preceding command includes important pieces of information, including:
 
 - **Application ID**: The application registration has a unique identifier, often called an _application ID_ or sometimes a _client ID_. You use this identifier when your workflow needs to sign in to Azure.
-- **Object ID**: The application registration has an object ID, which is a unique identifier that Azure AD assigns. You'll see an example of how to use an object ID later in this module.
+- **Object ID**: The application registration has an object ID, which is a unique identifier that Microsoft Entra ID assigns. You'll see an example of how to use an object ID later in this module.
 
 When you create an application registration, you typically set only the display name. Azure assigns the other names and identifiers automatically.
 
@@ -44,22 +46,22 @@ When you create an application registration, you typically set only the display 
 
 ## Federated credentials
 
-When an identity needs to communicate with Azure, it signs in to Azure AD. By itself, an application registration doesn't allow a workflow or application to sign in to Azure. You need to assign some credentials first. _Federated credentials_ are one type of application credential. Unlike most credentials, federated credentials don't require you to manage any secrets like passwords or keys.
+When an identity needs to communicate with Azure, it signs in to Microsoft Entra ID. By itself, an application registration doesn't allow a workflow or application to sign in to Azure. You need to assign some credentials first. _Federated credentials_ are one type of application credential. Unlike most credentials, federated credentials don't require you to manage any secrets like passwords or keys.
 
-When you create a federated credential for a deployment workflow, you effectively tell Azure AD and GitHub to trust each other. This trust is called a _federation_.
+When you create a federated credential for a deployment workflow, you effectively tell Microsoft Entra ID and GitHub to trust each other. This trust is called a _federation_.
 
-Then, when your workflow tries to sign in, GitHub provides information about the workflow run so that Azure AD can decide whether to allow the sign-in attempt. The information that GitHub provides to Azure AD during each sign-in attempt can include the following fields:
+Then, when your workflow tries to sign in, GitHub provides information about the workflow run so that Microsoft Entra ID can decide whether to allow the sign-in attempt. The information that GitHub provides to Microsoft Entra ID during each sign-in attempt can include the following fields:
 
 - The GitHub user or organization name.
-- The name of the GitHub repository.
+- The GitHub repository name.
 - The branch of your repository that the workflow is currently running on.
 - The environment that your workflow job targets. You'll learn more about environments in a future module.
 - Whether the creation of a pull request triggered the workflow.
 
-You can configure Azure AD to allow or deny a sign-in attempt from GitHub, depending on the values of the properties listed earlier. For example, you can enforce the following policies:
+You can configure Microsoft Entra ID to allow or deny a sign-in attempt from GitHub, depending on the values of the properties listed earlier. For example, you can enforce the following policies:
 
 - _Only permit sign-in attempts when a workflow runs from a specific GitHub repository within my organization._
-- _Only permit sign-in attempts when a workflow runs from a specific GitHub repository within my organization, and the branch name is main_.
+- _Only permit sign-in attempts when a workflow runs from a specific GitHub repository within my organization and the branch name is main_.
 
 Here's an illustration of how a deployment workflow can sign in by using a workload identity and federated credential:
 
@@ -67,11 +69,11 @@ Here's an illustration of how a deployment workflow can sign in by using a workl
 
 The steps involved in the sign-in process are:
 
-1. When your workflow needs to communicate with Azure, GitHub securely contacts Azure AD to request an _access token_. GitHub provides information about the GitHub organization (`my-github-user`), the repository (`my-repo`), and the branch that the workflow is running on (`main`). It also includes your tenant ID within Azure AD, the application ID of the workflow identity's application registration, and the Azure subscription ID that your workflow wants to deploy to.
+1. When your workflow needs to communicate with Azure, GitHub securely contacts Microsoft Entra ID to request an _access token_. GitHub provides information about the GitHub organization (`my-github-user`), the repository (`my-repo`), and the branch on which the workflow is running (`main`). It also includes your tenant ID within Microsoft Entra ID, the application ID of the workflow identity's application registration, and the Azure subscription ID to which your workflow wants to deploy.
 
-1. Azure AD validates the application ID and checks whether a federated credential exists within the application for the GitHub organization, repository, and branch.
+1. Microsoft Entra ID validates the application ID and checks whether a federated credential exists within the application for the GitHub organization, repository, and branch.
 
-1. After Azure AD determines that the request is valid, it issues an access token. Your workflow uses the access token when it communicates with Azure Resource Manager.
+1. After Microsoft Entra ID determines that the request is valid, it issues an access token. Your workflow uses the access token when it communicates with Azure Resource Manager.
 
 ### Create a federated credential
 
@@ -150,7 +152,7 @@ It's a good practice to document your workload identities in a place that you an
 > - Key identifying information, like its name and application ID
 > - Its purpose
 > - Who created it, who's responsible for managing it, and who might have answers if there's a problem
-> - The permissions that it needs, and a clear justification for why it needs them
-> - What its expected lifetime is
+> - The permissions that it needs and a clear justification for why it needs them
+> - Its expected lifetime
 
 You should regularly audit your workload identities to ensure that they're still being used and that the permissions they've been assigned are still correct.

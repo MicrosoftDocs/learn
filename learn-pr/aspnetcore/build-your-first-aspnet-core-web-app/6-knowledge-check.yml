@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.build-your-first-aspnet-core-web-app.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge about creating and running an ASP.NET Core app using the .NET CLI.
+  ms.date: 9/9/2024
+  author: wadepickett
+  ms.author: wpickett
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "What do you need to install *at a minimum* to create and run ASP.NET Core apps?"
+    choices:
+    - content: "Visual Studio"
+      isCorrect: false
+      explanation: "Visual Studio is a great tool for building ASP.NET Core apps, but only the .NET SDK is required."
+    - content: "Node.js"
+      isCorrect: false
+      explanation: "Create and build ASP.NET Core apps using the .NET SDK."
+    - content: "Visual Studio Code"
+      isCorrect: false
+      explanation: "Visual Studio Code with the C# Dev Kit is a great editor for working with ASP.NET Core apps, but only the .NET SDK is required."
+    - content: ".NET SDK"
+      isCorrect: true
+      explanation: "Only the .NET SDK is needed to create, build, and run ASP.NET Core apps. Tools like Visual Studio and Visual Studio Code can then help you be much more productive."
+  - content: "What are ASP.NET Core project templates used for?"
+    choices:
+    - content: "Only for creating empty web projects."
+      isCorrect: false
+      explanation: "ASP.NET Core project templates are used to create a variety types of new ASP.NET Core projects, including web apps, APIs, and Blazor applications. Project templates provide the essential files, folders, and configurations needed to efficiently set up different types of applications."
+    - content: "To quickly create various new preconfigured projects with the files and structure needed to get started."
+      isCorrect: true
+      explanation: "ASP.NET Core project templates are used to create various new ASP.NET Core projects with the necessary files, folders, and configurations to get a project up and running efficiently."
+    - content: "They're only useful for creating console apps."
+      isCorrect: false
+      explanation: "ASP.NET Core project templates are used to create a variety types of new ASP.NET Core projects, including web apps, APIs, and Blazor applications. Project templates provide the essential files, folders, and configurations needed to efficiently set up different types of applications."
+  - content: "What .NET CLI command is used to create a new ASP.NET Core web app project from a project template?"
+    choices:
+    - content: "`dotnet new <template-name>`"
+      isCorrect: true
+      explanation: "The `dotnet new <template-name>` command is used to create a new project from a specified template in .NET CLI."
+    - content: "`dotnet create-project <template-name>`"
+      isCorrect: false
+      explanation: "The .NET CLI command for creating a new project is `dotnet new <template-name>`. The `dotnet create-project` command doesn't exist in the .NET CLI."
+    - content: "`dotnet init-project <template-name>`"
+      isCorrect: false
+      explanation: "The .NET CLI command for creating a new project is `dotnet new <template-name>`. The `dotnet init-project` command doesn't exist in the .NET CLI."
+  - content: "When should the .NET CLI command `dotnet watch` be used instead of `dotnet run`?"
+    choices:
+    - content: "When you want to debug your application with detailed logging."
+      isCorrect: false
+      explanation: "`dotnet watch` isn't used for debugging with detailed logging. It's used to watch for file changes and recompile the application during development."                         
+    - content: "When you want to run your application with a different framework version."
+      isCorrect: false
+      explanation: "`dotnet watch` isn't used for running applications with custom build configurations. It's used to watch for file changes and recompile the application during development."
+    - content: "When you want to run your application with automatic recompilation on file changes."
+      isCorrect: true
+      explanation: "`dotnet watch` is used to run your application and automatically recompile and run it when source files change. This is useful during development to see changes immediately."

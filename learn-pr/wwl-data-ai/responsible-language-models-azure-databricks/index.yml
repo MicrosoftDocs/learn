@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.responsible-language-models-azure-databricks
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Review responsible AI principles for language models in Azure Databricks
+  description: Review responsible AI principles for language models in in Azure Databricks
+  ms.date: 08/23/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: module
+  ms.service: azure
+  ai-usage: ai-assisted
+title: Review responsible AI principles for language models in Azure Databricks
+summary: When working with Large Language Models (LLMs) in Azure Databricks, it's important to understand the responsible AI principles for implementation, ethical considerations, and how to mitigate risks. Based on identified risks, learn how to implement key security tooling for language models.
+abstract: |
+  In this module, you learn how to:
+  - Describe the responsible AI principles for implementation of language models.
+  - Identify the ethical considerations for language models.
+  - Mitigate the risks associated with language models.
+  - Implement key security tooling for language models.
+prerequisites: |
+  Before starting this module, you should be familiar with Azure Databricks. Consider completing [Explore Azure Databricks](/training/modules/explore-azure-databricks?azure-portal=true) before starting this module.
+iconUrl: /learn/achievements/describe-azure-databricks.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-databricks
+units:
+- learn.wwl.responsible-language-models-azure-databricks.introduction
+- learn.wwl.responsible-language-models-azure-databricks.responsible-ai-concepts
+- learn.wwl.responsible-language-models-azure-databricks.identify
+- learn.wwl.responsible-language-models-azure-databricks.mitigate
+- learn.wwl.responsible-language-models-azure-databricks.key-security-tooling
+- learn.wwl.responsible-language-models-azure-databricks.exercise
+- learn.wwl.responsible-language-models-azure-databricks.knowledge-check
+- learn.wwl.responsible-language-models-azure-databricks.summary
+badge:
+  uid: learn.wwl.responsible-language-models-azure-databricks.badge
+

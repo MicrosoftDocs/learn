@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.java-on-azure-container-apps.6-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge of Java on Azure Container Apps.
+  author: KarlErickson
+  ms.author: karler
+  ms.reviewer: hangwan
+  ms.date: 02/18/2025
+  ms.topic: unit
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-java
+    - devx-track-extended-java
+  ms.contributors: hangwan97
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "What is the purpose of setting the environment variable `spring.profiles.active` to `postgres` in the Azure Container Apps configuration?"
+      choices:
+        - content: "It enables Azure Container Apps to automatically connect to any available PostgreSQL database instance."
+          isCorrect: false
+          explanation: "Setting `spring.profiles.active` doesn't automatically connect to any PostgreSQL database. The database connection still needs to be configured manually."
+        - content: "It activates a specific Spring profile that configures the application to use PostgreSQL instead of the default H2 database."
+          isCorrect: true
+          explanation: "This is correct. The `spring.profiles.active` variable activates the PostgreSQL configuration within the Spring application."
+        - content: "It creates a new PostgreSQL database automatically if one isn't already specified."
+          isCorrect: false
+          explanation: "This is incorrect. Setting the profile doesn't create a new PostgreSQL database."
+        - content: "It sets a default admin password for the PostgreSQL database."
+          isCorrect: false
+          explanation: "This answer is incorrect. The profile setting doesn't affect the PostgreSQL database password."
+    - content: "What benefits does enabling the Java stack in Azure Container Apps provide for your Java applications?"
+      choices:
+        - content: "Automatic memory fitting tailored for Java applications, optimizing resource usage."
+          isCorrect: false
+          explanation: "The Java stack includes automatic memory fitting, but it isn't the only benefit."
+        - content: "Access to built-in JVM metrics for tracking memory usage, garbage collection, and thread count."
+          isCorrect: false
+          explanation: "The Java stack provides JVM-level metrics that help monitor application health and performance, but it isn't the only benefit."
+        - content: "Built-in Java diagnostics tools to monitor application health and performance."
+          isCorrect: false
+          explanation: "Built-in diagnostics tools are part of the Java stack, but it isn't the only benefit."
+        - content: "All of the above."
+          isCorrect: true
+          explanation: "Correct. All of the listed features are benefits provided by the Java stack in Azure Container Apps."
+    - content: "When deploying the Spring PetClinic application on Azure Container Apps, which resource is automatically set up to enable centralized logging and monitoring for the application?"
+      choices:
+        - content: "Azure Cosmos DB"
+          isCorrect: false
+          explanation: "Incorrect. Azure Cosmos DB is a database service and isn't automatically set up for logging or monitoring in Azure Container Apps."
+        - content: "Log Analytics workspace"
+          isCorrect: true
+          explanation: "Correct. A Log Analytics workspace is automatically created during deployment to collect logs and monitor the application's performance."
+        - content: "Azure Front Door"
+          isCorrect: false
+          explanation: "Incorrect. Azure Front Door is a global load balancer, and isn't automatically created when deploying applications in Azure Container Apps."

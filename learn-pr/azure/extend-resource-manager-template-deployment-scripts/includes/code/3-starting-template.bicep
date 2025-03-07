@@ -1,7 +1,7 @@
 var storageAccountName = 'storage${uniqueString(resourceGroup().id)}'
 var storageBlobContainerName = 'config'
 
-resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
+resource storageAccount 'Microsoft.Storage/storageAccounts@2023-01-01' = {
   name: storageAccountName
   tags: {
     displayName: storageAccountName
@@ -13,6 +13,7 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
     tier: 'Standard'
   }
   properties: {
+    allowBlobPublicAccess: true
     encryption: {
       services: {
         blob: {

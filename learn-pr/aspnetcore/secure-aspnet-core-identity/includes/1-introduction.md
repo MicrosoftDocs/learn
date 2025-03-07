@@ -1,16 +1,14 @@
-This module explores using ASP.NET Core Identity to support authentication and authorization in an ASP.NET Core Razor Pages web app.
+This module explores how to use ASP.NET Core Identity to support authentication and authorization in an ASP.NET Core Razor Pages web app.
 
 > [!NOTE]
-> This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools/) and [Visual Studio Code](https://code.visualstudio.com) or [GitHub Codespaces](https://github.com/features/codespaces). After completing this module, you can apply its concepts using a development environment like Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS).
-
-## What will you be doing?
+> This module uses the [.NET CLI (command line interface)](/dotnet/core/tools/) and [Visual Studio Code](https://code.visualstudio.com) or [GitHub Codespaces](https://github.com/features/codespaces). After completing this module, you can apply its concepts using a development environment like Visual Studio (Windows), Visual Studio for Mac (macOS), or continue development using Visual Studio Code (Windows, Linux, and macOS).
 
 In this module, you will:
 
 * Configure Identity support in an existing ASP.NET Core web app.
 * Provide new user registration capabilities.
 * Extend Identity UI components.
-* Customize multi-factor login capabilities.
+* Customize multifactor sign-in capabilities.
 * Implement policy-based authorization using claims.
 * Customize and extend the underlying Identity data store.
 
@@ -24,22 +22,19 @@ In this module, you will:
 
 ## Required tools
 
-Before you start, ensure you have the following tools installed:
+It is recommended that you complete this module in [GitHub Codespaces](https://github.com/features/codespaces). No tools are required, but you need a free GitHub account.
 
-* [Visual Studio Code](https://code.visualstudio.com)
-* [.NET 6 SDK](https://dotnet.microsoft.com/download)
-* [SQL Server Express LocalDB](/sql/database-engine/configure-windows/sql-server-express-localdb)
-* [Git](https://git-scm.com/docs/gitcli)
+If you prefer to use a local development environment, you use the same Dev Container as GitHub Codespaces by installing the following tools:
 
-Alternatively, this module includes a *[.devcontainer](https://code.visualstudio.com/docs/remote/create-dev-container)* file. The *.devcontainer* file defines a container pre-configured with .NET 6 SDK, SQL Server, and the required extensions. We recommend this approach for the best experience.
-
-Using the *.devcontainer* requires only:
-
-* [Visual Studio Code](https://code.visualstudio.com) with the [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension
-* [Git](https://git-scm.com/docs/gitcli)
+* [Visual Studio Code](https://code.visualstudio.com) with the [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension.
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/), [Rancher Desktop](https://rancherdesktop.io/), or similar
 
-You can also use the *.devcontainer* without **any** local tools using [GitHub Codespaces](https://github.com/features/codespaces)([charges apply](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-codespaces#codespaces-pricing)).
+Finally, if you prefer to use no containerization, you must install the following tools:
+
+* [Visual Studio Code](https://code.visualstudio.com)
+* [.NET 8 SDK](https://dotnet.microsoft.com/download)
+* [SQL Server Express LocalDB](/sql/database-engine/configure-windows/sql-server-express-localdb)
+* [Git](https://git-scm.com/docs/gitcli)
 
 ## Get started
 

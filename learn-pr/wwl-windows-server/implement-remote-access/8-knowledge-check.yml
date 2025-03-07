@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/14/2022
+  ms.date: 04/15/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/8-knowledge-check.md)]
@@ -21,10 +20,10 @@ quiz:
     choices:
     - content: "PPTP"
       isCorrect: false
-      explanation: "That's incorrect. This is not the ideal protocol for mobile users as it doesn't support features like VPN reconnect."
+      explanation: "That's incorrect. This isn't the ideal protocol for mobile users as it doesn't support features like VPN reconnect."
     - content: "SSTP"
       isCorrect: false
-      explanation: "That's incorrect. This is not the ideal protocol for mobile users as it doesn't support features like VPN reconnect."
+      explanation: "That's incorrect. This isn't the ideal protocol for mobile users as it doesn't support features like VPN reconnect."
     - content: "IKEv2"
       isCorrect: true
       explanation: "That's correct. IKEv2 supports mobility, making it a good protocol choice for a mobile workforce."

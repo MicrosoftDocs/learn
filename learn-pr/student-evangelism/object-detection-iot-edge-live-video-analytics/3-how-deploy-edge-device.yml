@@ -2,14 +2,15 @@
 uid: learn.oxford.object-detection-lva-edge-device.how-deploy-edge-device
 title: How to deploy an IoT Edge device
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How to deploy an IoT Edge device
   description: In this section, we provide how to deploy an IoT Edge device
-  ms.date: 4/23/2021
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub
-  ms.custom: team=nextgen
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/3-how-deploy-edge-device.md)]
+

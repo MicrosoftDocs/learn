@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.intro-azure-openai-managed-identity-auth-python
+metadata:
+  ms.author: sayoung
+  author: sarah-yo
+  ms.date: 11/11/2024
+  title: Introduction to Azure OpenAI Managed Identity Authentication with Python
+  description: Learn about Azure OpenAI managed identity authentication with Python.
+  ms.topic: module
+  ms.collection: ce-advocates-ai-copilot
+  ms.service: azure-ai-openai
+title: Introduction to Azure OpenAI managed identity authentication with Python
+summary: This module helps you understand how to use a managed identity in Python apps that interact with Azure OpenAI Service.
+abstract: |
+ After you complete this module, you'll be able to:
+  - Describe the role-based access control (RBAC) roles for use in Azure OpenAI and configure role assignments.
+  - Describe the differences between using API keys and managed identities within Azure OpenAI.
+  - Configure keyless authentication to Azure OpenAI for local development for Python.
+  - Configure keyless authentication to Azure OpenAI for Azure-hosted environments for Python.
+prerequisites: |
+  To get the best learning experience from this module, you should have knowledge and experience with:
+  - Python programming
+  - Azure OpenAI
+  - Azure RBAC roles
+  - Azure managed identities
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- introduction-azure-openai-managed-identity-authentication-python.introduction
+- introduction-azure-openai-managed-identity-authentication-python.azure-openai-rbac-roles
+- introduction-azure-openai-managed-identity-authentication-python.keyless-authentication-methods
+- introduction-azure-openai-managed-identity-authentication-python.benefits-of-using-managed-identity-for-azure-openai
+- introduction-azure-openai-managed-identity-authentication-python.knowledge-check
+- introduction-azure-openai-managed-identity-authentication-python.summary
+badge:
+  uid: introduction-azure-openai-managed-identity-authentication-python-badge

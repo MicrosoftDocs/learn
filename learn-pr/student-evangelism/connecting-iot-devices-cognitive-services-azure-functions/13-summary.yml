@@ -2,14 +2,16 @@
 uid: learn.oxford.connect-iot-devices-cognitive-services-azure-func.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: In this section, we summarize the key ideas in the module and emphasize the ideas to ensure learning retention
-  ms.date: 05/05/2020
+  ms.date: 07/10/2024
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 3 # dummy number at present
 content: |
   [!include[](includes/13-summary.md)]
+

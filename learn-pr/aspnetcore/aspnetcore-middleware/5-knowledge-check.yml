@@ -1,0 +1,56 @@
+### YamlMime:ModuleUnit
+uid: learn.aspnetcore-middleware.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check for ASP.NET Core middleware.
+  ms.date: 10/02/2024
+  author: CamSoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which is a true statement about custom middleware?"
+    choices:
+    - content: "Custom middleware is always added to the request pipeline after the built-in middleware."
+      isCorrect: false
+      explanation: "Incorrect. Custom middleware can be added to the request pipeline at any point."
+    - content: "Custom middleware can't be added to the request pipeline after the built-in middleware."
+      isCorrect: false
+      explanation: "Incorrect. Custom middleware can be added to the request pipeline at any point."
+    - content: "Custom middleware can only be added to the request pipeline before the built-in middleware."
+      isCorrect: false
+      explanation: "Incorrect. Custom middleware can be added to the request pipeline at any point."
+    - content: "Custom middleware can be added anywhere in the request pipeline."
+      isCorrect: true
+      explanation: "Correct. Custom middleware can be added to the request pipeline at any point."
+  - content: "Which is true of `app.Run()`?"
+    choices:
+    - content: "`app.Run()` is terminal middleware."
+      isCorrect: false
+      explanation: "Incorrect. All of these choices are true."
+    - content: "Delegates passed to `app.Run()` don't have access to the next middleware in the pipeline."
+      isCorrect: false
+      explanation: "Incorrect. All of these choices are true."
+    - content: "`app.Run()` by itself (with no delegates) should be the last middleware in the pipeline."
+      isCorrect: false
+      explanation: "Incorrect. All of these choices are true." 
+    - content: "All of these choices are true."
+      isCorrect: true
+      explanation: "Correct. All of these choices are true."
+  - content: "Which is true of `app.Use()`?"
+    choices:
+    - content: "Delegates added with `app.Use()` may be terminal or nonterminal."
+      isCorrect: true
+      explanation: "Correct. `app.Use()` is for adding either terminal or nonterminal middleware."
+    - content: "Delegates passed to `app.Use()` don't have access to the next middleware in the pipeline."
+      isCorrect: false
+      explanation: "Incorrect. `app.Use()` delegates can access the next middleware in the pipeline."
+    - content: "`app.Use()` by itself (with no delegates) should be the last middleware in the pipeline."
+      isCorrect: false
+      explanation: "Incorrect. `app.Run()` (with no delegates) should be the last middleware in the pipeline."
+    - content: "All of these choices are true."
+      isCorrect: false
+      explanation: "Incorrect. Only the one choice is true."

@@ -1,0 +1,49 @@
+### YamlMime:LearningPath
+uid: learn.intro-to-inclusive-design-practice
+metadata:
+  title: Introduction to inclusive design in practice in collaboration with Teach Access
+  description: Welcome to Inclusive Design in Practice. In this learning path, you’ll explore essential concepts of digital accessibility to ensure websites and apps are inclusive for all users.
+  brand: m365
+  ms.date: 04/24/2024
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: learning-path
+title: Introduction to inclusive design in practice in collaboration with Teach Access
+summary: |
+   In this learning path, you’ll explore essential concepts of digital accessibility to ensure websites and apps are inclusive for all users. You'll learn guidelines and techniques for designing, developing, and testing digital products that are accessible to people with disabilities, creating a seamless experience that goes beyond compliance. By the end, you’ll be equipped to build digital experiences that are user-friendly, engaging, and accessible for everyone.
+   By the end of this learning path, you'll be able to:
+    -	Apply key techniques to support keyboard accessibility, emphasizing operability, logical focus order, clear visual indicators, and appropriate contrast.
+    -	Develop and test websites and apps with strong screen reader support, ensuring smooth interaction for blind or visually impaired users.
+    -	Assess and implement design principles related to color and contrast to enhance readability and navigation for all users.
+    -	Design and test responsive digital content using best practices to maintain accessibility across different devices and screen sizes.
+   
+    **_Disclaimer_**: The information in these modules reflects the accessibility regulations and practices current at the time of publication (2024). However, accessibility standards and best practices may evolve over time, so please consult the latest resources to ensure compliance. Users are advised to consult their organization’s accessibility requirements for current guidelines.
+   
+   **About Teach Access**
+
+    This learning path was developed through a collaborative effort between _Microsoft_ and _Teach Access_, bringing together expertise from both organizations to provide comprehensive and up-to-date accessibility education. Teach Access offers programs and resources to help equip learners with the digital accessibility skills necessary to build an inclusive world.
+     - Knowledge of the needs of people with disabilities
+     - Skills in the principles of accessible design and development, such that technology products and services are born accessible
+ 
+     The _Teach Access Curriculum Repository (TACR)_ is a free collection of open educational resources designed to support teaching accessibility across various disciplines, housed in Canvas, and encouraging contributions from educators.
+
+
+prerequisites: None
+iconUrl: /training/achievements/ageneric-trophy.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- m365
+subjects:
+- accessibility
+modules:
+- learn.cela-accessibility.develop-keyboard-accessible-products
+- learn.cela-accessibility.develop-products-with-screen-reader-support
+- learn.cela-accessibility.develop-products-with-accessible-color-contrast
+- learn.develop-accessible-resize-reflow
+- learn.cela-accessibility.accessibility-design-specs-with-annotations
+
+trophy:
+  uid: learn.intro-to-inclusive-design-practice.trophy

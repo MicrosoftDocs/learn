@@ -2,13 +2,14 @@
 uid: learn.wwl.describe-government-its-structure.describe-general-services-administration-gsa
 title: Describe the General Services Administration (GSA)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe the General Services Administration (GSA)
   description: "Describe the General Services Administration (GSA)"
   ms.date: 04/29/2022
   author: wwlpublish
   ms.author: jesander
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

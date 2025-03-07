@@ -4,49 +4,46 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/07/2023
+  ms.date: 01/18/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What do catalogs contain?"
+  - content: "What items contained within the catalogs of Microsoft Entra entitlements?"
     choices:
     - content: "Device registrations"
       isCorrect: false
-      explanation: "Incorrect. Device registrations are maintained in Azure Active Directory and Microsoft Intune."
+      explanation: "Incorrect. Device registrations are maintained in Microsoft Entra ID and Microsoft Intune."
     - content: "Resources and access packages"
       isCorrect: true
       explanation: "Correct. Catalogs are used to group related resources and access packages."
     - content: "User lists"
       isCorrect: false
-      explanation: "Incorrect. A list of user accounts is not included in a catalog."
-  - content: "How long are deleted users retained by Azure AD by default?"
+      explanation: "Incorrect. A list of user accounts isn't included in a catalog."
+  - content: "What is the default retention period for deleted users in Microsoft Entra ID?"
     choices:
     - content: "14 days"
       isCorrect: false
-      explanation: "Incorrect. Azure AD deleted user account retention can be changed. By default a deleted user is in a deleted state for 30 days. During which time they can be restored by an administrator if necessary."
+      explanation: "Incorrect. Microsoft Entra deleted user account retention can be changed. By default a deleted user is in a deleted state for 30 days. During which time an administrator can restore the account."
     - content: "30 days"
       isCorrect: true
-      explanation: "Correct. By default with Azure AD, a deleted user is in a deleted state for 30 days. During which time they can be restored by an administrator if necessary."
+      explanation: "Correct. By default with Microsoft Entra ID, a deleted user is in a deleted state for 30 days. During which time an administrator can restore the account."
     - content: "60 days"
       isCorrect: false
-      explanation: "Incorrect. Azure AD deleted user account retention can be changed. By default a deleted user is in a deleted state for 30 days. During which time they can be restored by an administrator if necessary."
-  - content: "When should access packages be used?"
+      explanation: "Incorrect. Microsoft Entra deleted user account retention can be changed. By default a deleted user is in a deleted state for 30 days. During which time an administrator can restore the account."
+  - content: "Your company intends to utilize entitlements for resource access control. What is the most typical use case for an access package in this context?"
     choices:
     - content: "To allow one organization access when collaborating on a project."
       isCorrect: false
-      explanation: "Incorrect. You need to focus on when two or more organizations are collaborating on a project. You may have multiple users from one organization which need access to another organizations resources via Azure AD B2B."
+      explanation: "Incorrect. You need to focus on when two or more organizations are collaborating on a project. You can have multiple users from one organization, which need access to another organizations resources via Microsoft Entra B2B."
     - content: "An employee requires permanent permissions to perform their job role."
       isCorrect: false
-      explanation: "Incorrect. Employees need time-limited access for a particular task. For example, you might use group-based licensing and a dynamic group to ensure all employees have an Exchange Online mailbox, and then use access packages for situations in which employees need additional access, such as to read departmental resources from another department."
+      explanation: "Incorrect. Employees need time-limited access for a particular task. For example, you might use group-based licensing and a dynamic group to ensure all employees have an Exchange Online mailbox, and then use access packages for situations in which employees need more access, such as to read departmental resources from another department."
     - content: "For access that requires the approval of an employee's manager or other designated individuals"
       isCorrect: true
-      explanation: "-Two or more organizations are collaborating on a project, and as a result, multiple users from one organization will need to be brought in via Azure AD B2B to access another organization's resources."
+      explanation: "Correct. Two or more organizations are collaborating on a project, and as a result, multiple users from one organization need to be brought in via Microsoft Entra B2B to access another organization's resources."

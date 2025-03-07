@@ -1,1 +1,0 @@
-In this module, you explored how to allow users to interact with Vue data. You started by creating a form and binding data to the form. You then set up an event handler and configured it so that a button selection would call it. You finished by adding a computed property to minimize the amount of JavaScript code required in the HTML.

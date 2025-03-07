@@ -2,13 +2,14 @@
 uid: learn.wwl.protect-data-transit-at-rest.understand-azure-key-vault
 title: Understand Azure Key Vault
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand Azure Key Vault
   description: "Understand Azure Key Vault"
-  ms.date: 05/06/2022
-  author: wwlpublish
+  ms.date: 2/25/2025
+  author: JulianePadrao
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

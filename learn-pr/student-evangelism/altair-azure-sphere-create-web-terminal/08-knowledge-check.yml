@@ -2,17 +2,18 @@
 uid: learn.student-evangelism.altair-azure-sphere-create-web-terminal.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge.
   ms.date: 11/16/2021
   author: gloveboxes
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-central
+  ms.topic: unit
   ms.custom: nextgen
 durationInMinutes: 2 
 content: |
-  Choose the best response for each question, and then select **Check your answers**.
+  Choose the best response for each question.
 quiz:
   questions:
   - content: "Which answer best describes how the Azure IoT Central application is used?"
@@ -38,3 +39,4 @@ quiz:
       isCorrect: false
       explanation: "The Altair emulator runs on Azure Sphere. Keyboard and terminal messages are routed over MQTT and via an MQTT broker to the web terminal that's running in your web browser."
  
+

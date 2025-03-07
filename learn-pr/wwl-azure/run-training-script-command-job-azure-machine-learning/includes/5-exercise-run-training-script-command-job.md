@@ -1,5 +1,3 @@
-
-
 Now, it's your chance to run a script as a command job in Azure Machine Learning.
 
 In this exercise, you will:

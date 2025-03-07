@@ -6,8 +6,8 @@ By the end of this module, you'll understand how Cloud for Everyone is Microsoft
 
 ## Learning objectives
 
-- Understand the importance of Diversity & Inclusion (D&I) for business.
-- Outline how businesses can work more effectively to drive improved outcomes and revenue potential with the creation of inclusive products and marketing assets.
+- Understand the importance of Diversity & Inclusion (D&I) for business
+- Outline how businesses can work more effectively to drive improved outcomes and revenue potential with the creation of inclusive products and marketing assets
 
 ## Prerequisites
 

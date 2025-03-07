@@ -2,37 +2,50 @@
 uid: learn.wwl.translate-text-with-translation-service.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/27/2023
+  ms.date: 09/13/2024
   author: wwlpublish
-  ms.author: gmalc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.author: sheryang
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 quiz:
+  title: ""
   questions:
-  - content: "You are developing an application that must take English input from a microphone and generate a real-time text-based transcription in Hindi. Which service should you use?"
+  - content: "What is the main function of the Azure AI Translator service?"
     choices:
-    - content: "Translator"
+    - content: "To translate spoken audio from a streaming source into text or an audio stream."
       isCorrect: false
-      explanation: "Incorrect. The Translator service can translate from a text source, but not from an audio source."
-    - content: "Speech"
+      explanation: "Incorrect. This is the function of Azure AI Speech, not Azure AI Translator."
+    - content: "To support text-to-text translation between more than 130 languages using a Neural Machine Translation model."
       isCorrect: true
-      explanation: "Correct. The Speech service can translate from audio sources to text."
-    - content: "Language"
+      explanation: "Correct. Azure AI Translator uses a Neural Machine Translation model to analyze the semantic context of the text and render a more accurate and complete translation."
+    - content: "To support multiple AI capabilities including text analysis, translation, and speech."
       isCorrect: false
-      explanation: "Incorrect. The Language service does not support translation or speech input."
-  - content: "You need to use the Translator service to translate email messages from Spanish into both English and French. What is the most efficient way to accomplish this goal?"
+      explanation: "Incorrect. Azure AI Services supports multiple AI capabilities, Azure AI Translator supports specific capabilities."
+  - content: "Your team would like to build an application that translates digital copies of books. Which Azure AI Translator capability would you use?"
     choices:
-    - content: "Make a single call to the service; specifying a \"from\" language of \"es\", a \"to\" language of \"en\", and another \"to\" language of \"fr\"."
+    - content: "Text translation"
+      isCorrect: false
+      explanation: "Incorrect. Text translation is best used for quick and accurate source-to-target text translation in real time."
+    - content: "Document translation"
       isCorrect: true
-      explanation: "Correct. You can specify a single \"from\" language and multiple \"to\" languages."
-    - content: "Make a single call to the service; specifying a \"from\" language of \"es\", and a \"to\" language of \"en-fr\"."
+      explanation: "Correct. Document translation supports the processing of multiple documents and large files."
+    - content: "Custom translation"
       isCorrect: false
-      explanation: "Incorrect. You can't combine languages in a single \"to\" parameter."
-    - content: "Make two calls to the service; one with a \"from\" language of \"es\" and a \"to\" language of \"en\", and another with a \"from\" language of \"es\" and a \"to\" language of \"fr\""
+      explanation: "Incorrect. Custom translator enables engineers to build customized neural machine translation (NMT) systems."
+  - content: "You're developing an application that must take English input from a microphone and generate a real-time audio output in Hindi. Which capability of Azure AI Speech would you use?"
+    choices:
+    - content: "Text-to-speech"
       isCorrect: false
-      explanation: "Incorrect. While this approach would work, it requires multiple calls to the service. It is not the most efficient option."
+      explanation: "Incorrect. Azure AI Speech does have text-to-speech capabilities, but you will want to use another capability."
+    - content: "Speech translation"
+      isCorrect: true
+      explanation: "Correct. Azure AI Speech can translate audio from one language into audio in another language."
+    - content: "Speech-to-text"
+      isCorrect: false
+      explanation: "Incorrect. Azure AI Speech does have speech-to-text capabilities, but you will want to use another capability."

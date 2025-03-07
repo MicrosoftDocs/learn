@@ -2,13 +2,14 @@
 uid: learn.azure.create-batch-account-using-azure-portal.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
-  description: Answer a few questions about material you've learned.
-  ms.date: 02/01/2021
-  author: prkannap
-  ms.author: prkannap
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Answer a few questions about the material you learned.
+  ms.date: 08/05/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/7-knowledge-check.md)]
@@ -27,19 +28,17 @@ quiz:
     - content: "Pools of compute nodes"
       isCorrect: true
       explanation: "Correct. Batch distributes the tasks that make up jobs across pools of compute nodes. Pools are simply a collection of virtual machines."
-
   - content: "When you create a Batch account, what are the options available to avoid public access?"
     choices:
     - content: "Batch account with Batch service pool allocation"
       isCorrect: false
-      explanation: "Incorrect. Changing the pool allocation mode for your Batch account does not inherently improve its security."
+      explanation: "Incorrect. Changing the pool allocation mode for your Batch account doesn't inherently improve its security."
     - content: "Batch account with public network access disabled"
       isCorrect: true
       explanation: "Correct. Batch accounts with public network access disabled can be used with private endpoints to disable public network access."
     - content: "Batch account with user subscription pool allocation"
       isCorrect: false
-      explanation: "Incorrect. Changing the pool allocation mode for your Batch account does not inherently improve its security."
-
+      explanation: "Incorrect. Changing the pool allocation mode for your Batch account doesn't inherently improve its security."
   - content: "Which of the following features enhances security for data on individual compute nodes?"
     choices:
     - content: "Disk encryption"
@@ -47,7 +46,8 @@ quiz:
       explanation: "Correct. Disk encryption safeguards data on a compute node's disk."
     - content: "No public IP pools"
       isCorrect: false
-      explanation: "Incorrect. Although the feature of no public IP pools enhances the security of your Batch solution, it does not affect data on individual compute nodes."
+      explanation: "Incorrect. Although the feature of no public IP pools enhances the security of your Batch solution, it doesn't affect data on individual compute nodes."
     - content: "Azure Storage"
       isCorrect: false
       explanation: "Incorrect. Azure Storage can be used as a place for storing input or output data, but it's a separate Azure service. It isn't directly tied to data on a compute node's disk."
+

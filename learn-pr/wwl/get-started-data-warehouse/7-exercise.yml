@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-data-warehouse.exercise
+title: Exercise - Analyze data in a data warehouse
+metadata:
+  title: Exercise - Analyze data in a data warehouse
+  description: "Exercise - Analyze data in a data warehouse"
+  ms.date: 01/10/2025
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-exercise.md)]

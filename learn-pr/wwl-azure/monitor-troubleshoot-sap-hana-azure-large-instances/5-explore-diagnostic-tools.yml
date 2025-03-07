@@ -2,13 +2,14 @@
 uid: learn.wwl.monitor-troubleshoot-sap-hana-azure-large-instances.explore-diagnostic-tools
 title: Explore diagnostic tools
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore diagnostic tools
   description: "Explore diagnostic tools"
   ms.date: 07/06/2022
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

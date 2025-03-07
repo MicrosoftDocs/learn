@@ -4,11 +4,10 @@ title: Define the use cases and interoperability of Data Deduplication
 metadata:
   title: Define the use cases and interoperability of Data Deduplication
   description: "Define the use cases and interoperability of Data Deduplication"
-  ms.date: 10/20/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 10

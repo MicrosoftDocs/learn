@@ -3,12 +3,11 @@ uid: learn.github.authenticate-authorize-user-identities-github.6-knowledge-chec
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Review what you've learned.
-  ms.date: 11/01/2021
+  description: Review what you learned.
+  ms.date: 04/09/2024
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 quiz:
   questions:
@@ -16,7 +15,7 @@ quiz:
       choices:
         - content: "Two-factor authentication (2FA)"
           isCorrect: false
-          explanation: "Two-Factor authentication is an additional level of security available to GitHub Enterprise accounts."
+          explanation: "Two-Factor authentication is another level of security available to GitHub Enterprise accounts."
         - content: "Time-based One-time Password (TOTP)"
           isCorrect: false
           explanation: "GitHub recommends using a cloud-based TOTP app to configure 2FA."
@@ -25,15 +24,15 @@ quiz:
           explanation: "SAML authentication is a process used to verify user identity and credentials against a known identify provider."          
         - content: "Short Message Service (SMS)"
           isCorrect: false
-          explanation: "If your users are not able to authenticate using a TOTP mobile app, they can authenticate using SMS messages."
-    - content: "You are an admin and want to enable team synchronization for your organization. What installation permissions do you need to configure team synchronization for Azure AD?"
+          explanation: "If your users aren't able to authenticate using a TOTP mobile app, they can authenticate using SMS messages."
+    - content: "You're an admin and want to enable team synchronization for your organization. What installation permissions do you need to configure team synchronization for Microsoft Entra ID?"
       choices:
         - content: "Provide the tenant URL"
           isCorrect: false
           explanation: "To enable team synchronization for Okta, you or your IdP administrator must: enable SAML SSO and SCIM for your organization using Okta, provide the tenant URL for your Okta instance, and generate a valid SSWS token with read-only admin permissions for your Okta installation as a service user."
-        - content: "Read all users’ full profiles"
+        - content: "Read all users' full profiles"
           isCorrect: true
-          explanation: "To enable team synchronization for Azure AD, the installation needs the following permissions: read all users’ full profiles, Sign in and read user profile, and read directory data."          
+          explanation: "To enable team synchronization for Microsoft Entra ID, the installation needs the following permissions: read all users' full profiles, sign in and read user profile, and read directory data."          
         - content: "Generate a valid Single Sign-on for Web Systems (SSWS) token"
           isCorrect: false
           explanation: "To enable team synchronization for Okta, you or your IdP administrator must: enable SAML SSO and SCIM for your organization using Okta, provide the tenant URL for your Okta instance, and generate a valid SSWS token with read-only admin permissions for your Okta installation as a service user."
@@ -44,7 +43,7 @@ quiz:
       choices:
         - content: "With a GitHub login"
           isCorrect: false
-          explanation: "GitHub login is a different form of authentication"
+          explanation: "GitHub login is a different form of authentication."
         - content: "With the organization credentials"
           isCorrect: false
           explanation: "Organization credentials are a different form of authentication."

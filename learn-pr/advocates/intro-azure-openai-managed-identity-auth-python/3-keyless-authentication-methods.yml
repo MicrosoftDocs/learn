@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: introduction-azure-openai-managed-identity-authentication-python.keyless-authentication-methods
+title: Keyless authentication methods
+metadata:
+  title: Keyless authentication methods
+  description: Learn about keyless authentication methods that can be used to authenticate with Azure services.
+  ms.date: 11/11/2024
+  author: sarah-yo
+  ms.author: sayoung
+  ms.topic: unit
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-keyless-authentication-methods.md)]

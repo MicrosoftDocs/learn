@@ -29,10 +29,10 @@ To understand the essence of this analysis, let us assume a serial fraction $f$ 
 
 1. _S. Chen and S. W. Schlosser (2008). [MapReduce Meets Wider Varieties of Applications](https://pdfs.semanticscholar.org/b702/96efb830d11ea047484998a8b52c20cf836b.pdf) IRP-TR-08-05, Intel Research_
 2. _M. Zaharia, A. Konwinski, A. Joseph, R. Katz, and I. Stoica (2008). [Improving MapReduce Performance in Heterogeneous Environments](https://dl.acm.org/doi/10.5555/1855741.1855744) OSDI_
-3. _Y. Solihin (2009). [Fundamentals of Parallel Computer Architecture](https://sites.google.com/site/solihinbooks/fundamentals-of-parallel-computer-architecture/slides) Solihin Books_
+3. _Y. Solihin (2009). [Fundamentals of Parallel Computer Architecture](https://books.google.com/books/about/Fundamentals_of_Parallel_Multicore_Archi.html?id=G2fmCgAAQBAJ) Solihin Books_
 
 ***
 
 [^1]: <https://pdfs.semanticscholar.org/b702/96efb830d11ea047484998a8b52c20cf836b.pdf> "S. Chen and S. W. Schlosser (2008). *MapReduce Meets Wider Varieties of Applications* IRP-TR-08-05, Intel Research"
 [^2]: <https://dl.acm.org/doi/10.5555/1855741.1855744> "M. Zaharia, A. Konwinski, A. Joseph, R. Katz, and I. Stoica (2008). *Improving MapReduce Performance in Heterogeneous Environments* OSDI"
-[^3]: <https://sites.google.com/site/solihinbooks/fundamentals-of-parallel-computer-architecture/slides> "Y. Solihin (2009). *Fundamentals of Parallel Computer Architecture* Solihin Books"
+[^3]: <https://books.google.com.sg/books/about/Fundamentals_of_Parallel_Multicore_Archi.html?id=G2fmCgAAQBAJ&redir_esc=y> "Y. Solihin (2009). *Fundamentals of Parallel Computer Architecture* Solihin Books"

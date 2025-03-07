@@ -2,15 +2,16 @@
 uid: learn.wwl.design-authentication-authorization-solutions.design-for-conditional-access
 title: Design for conditional access
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for conditional access
   description: "Design for conditional access"
-  ms.date: 03/24/2023
+  ms.date: 02/18/2025
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
 content: |
   [!include[](includes/6-design-for-conditional-access.md)]

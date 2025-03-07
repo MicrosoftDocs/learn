@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-networking-for-azure-virtual-desktop.remote-desktop-protocol-bandwidth
+title: Remote Desktop Protocol (RDP) bandwidth requirements
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Remote Desktop Protocol (RDP) bandwidth requirements
+  description: "Remote Desktop Protocol (RDP) bandwidth requirements"
+  ms.date: 08/22/2024
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-remote-desktop-protocol-bandwidth.md)]

@@ -2,13 +2,17 @@
 uid: learn.wwl.train-models-training-mlflow-jobs.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
-  description: "Learn how to use MLflow in jobs with Azure Machine Learning."
-  ms.date: 02/14/2023
+  description: Learn how to use MLflow in jobs with Azure Machine Learning.
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/20/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]
+

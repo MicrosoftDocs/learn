@@ -1,6 +1,6 @@
 ## Data systems
 
-Spreadsheets are useful for gathering and visualizing modest-sized datasets, and are an ideal solution when working individually, or collaborating with a small team. You can quickly sort, filter, and aggregate data to share ideas and insights. However, it's likely that your organization has a centralized data processing system for larger datasets, and for sharing data with the wider enterprise.
+Spreadsheets are useful for gathering and visualizing modest-sized datasets, and are an ideal solution when working individually, or collaborating with a small team. You can quickly sort, filter, and aggregate data to share ideas and insights. However, it's likely that your organization has a centralized data processing system for larger datasets, and for sharing data with the wider enterprise. 
 
 A business needs to store relational data so that it can be joined together to tell a story. For example, customers, orders, and products are all related. To analyze sales trends, you need to join a customer to an order, and an order to a product.
 

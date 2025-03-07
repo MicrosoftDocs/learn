@@ -2,13 +2,14 @@
 uid: learn.wwl.petabyte-scale-ingestion-azure-data-factory.understand-data-ingestion-security-considerations
 title: Understand data ingestion security considerations
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand data ingestion security considerations
   description: "Understand data ingestion security considerations"
   ms.date: 01/05/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 8

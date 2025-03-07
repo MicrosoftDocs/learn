@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ai-agent-fundamentals.exercise
+title: Exercise - Explore AI Agent development
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Exercise - Explore AI Agent development
+  description: Create an agent by using Azure AI Agent Service in the Azure AI Foundry portal.
+  author: wwlpublish
+  ms.author: berryivor
+  ms.date: 02/12/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise.md)]
+

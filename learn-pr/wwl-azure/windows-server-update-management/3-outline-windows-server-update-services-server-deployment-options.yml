@@ -4,11 +4,10 @@ title: Outline Windows Server Update Services server deployment options
 metadata:
   title: Outline Windows Server Update Services server deployment options
   description: "Outline Windows Server Update Services server deployment options"
-  ms.date: 06/01/2022
+  ms.date: 01/15/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

@@ -1,13 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.migrate-onpremises-workloads-azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Migrate on-premises workloads to Azure
-  description: "Migrate on-premises workloads to Azure"
+  description: Migrate on-premises workloads to Azure
   ms.date: 05/17/2021
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-migrate
 title: Migrate on-premises workloads to Azure
 summary: Enable VMs for replication by registering the Hyper-V host(s) to the Azure Migrate project. Configure Hyper-V VMs for replication, monitor, and run a test failover. After migration complete, migrated VMs should have security controls added.
 abstract: |
@@ -40,3 +42,4 @@ units:
 - learn.wwl.migrate-onpremises-workloads-azure.summary
 badge:
   uid: learn.wwl.migrate-onpremises-workloads-azure.badge
+

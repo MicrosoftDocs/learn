@@ -33,7 +33,7 @@ Go to Search in Microsoft Sentinel to enter your search criteria.
 
 1. In the Azure portal, go to Microsoft Sentinel and select the appropriate workspace.
 
-1. Under General, select Search (preview).
+1. Under General, select Search.
 
 1. In the Search box, enter the search term.
 
@@ -45,7 +45,7 @@ Go to Search in Microsoft Sentinel to enter your search criteria.
 
     When the search job starts, a notification and the job status show on the search page.
 
-1. Wait for your search job to complete. Depending on your dataset and search criteria, the search job may take a few minutes or up to 24 hours to complete. If your search job takes longer than 24 hours, it will time out. If that happens, refine your search criteria and try again.
+1. Wait for your search job to complete. Depending on your dataset and search criteria, the search job may take a few minutes or up to 24 hours to complete. If your search job takes longer than 24 hours, it times out. If that happens, refine your search criteria and try again.
 
 ## View search job results
 

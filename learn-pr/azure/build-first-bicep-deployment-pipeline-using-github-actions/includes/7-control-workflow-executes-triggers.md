@@ -4,11 +4,11 @@ You now have a working workflow that deploys your Bicep file to your Azure envir
 
 ## What is a workflow trigger?
 
-A workflow trigger is a condition that, when met, automatically runs your workflow based on rules you create. You can set triggers to run your workflow at scheduled intervals. You can also set triggers to run your workflow every time a file in your repository changes. You might choose the second option because it's a good idea to run all your tests and deployment steps every time someone changes your code.
+A workflow trigger is a condition that, when met, automatically runs your workflow based on rules you create. You can set triggers to run your workflow at scheduled intervals. You can also set triggers to run your workflow every time a file in your repository changes. You might choose the second option, because it's a good idea to run all your tests and deployment steps every time someone changes your code.
 
-If you don't use an automatic trigger, someone might make a change to a Bicep file, and even commit it and push it to the repository. But if they forget to run the workflow, there will be a difference between the resource definitions in your Bicep file and the resources that are deployed to your Azure environment. Suppose a couple more commits and pushes are made but not deployed. If someone introduces an error or misconfiguration in the Bicep file in one of these changes, it might be hard to track down the error among the multiple commits that are later deployed at once. After a while, you won't trust that your Bicep code truly represents your infrastructure, and its value is eroded.
+If you don't use an automatic trigger, someone might make a change to a Bicep file, and even commit it and push it to the repository, but if they forget to run the workflow, there will be a difference between the resource definitions in your Bicep file and the resources that are deployed to your Azure environment. Suppose a couple more commits and pushes are made, but not deployed. If someone introduces an error or misconfiguration in the Bicep file in one of these changes, it might be hard to track down the error among the multiple commits that are later deployed at once. After a while, you won't trust that your Bicep code truly represents your infrastructure, and its value is eroded.
 
-When you set up your workflow to run every time you update your files, the moment your changes are pushed, your workflow starts running. You get instant feedback on the validity of your change, and can be sure that your production environment is always up to date.
+When you set up your workflow to run every time you update your files, the moment your changes are pushed, your workflow starts running. You get instant feedback on your change's validity, and you can be sure that your production environment is always up to date.
 
 ## Push event triggers
 
@@ -58,7 +58,7 @@ on:
 
 ### Path filters
 
-Sometimes you have files in your repository that aren't related to your deployment. For example, you might have a _deploy_ folder in your repository that contains your Bicep code and a _docs_ subfolder that contains your documentation files. You want to trigger your workflow when anyone makes a change to any of the Bicep files in the _deploy_ folder. But you don't want to trigger the workflow if someone changes only a documentation file. To set up a trigger to respond to changes in a specific folder in your repository, you can use a _path filter_:
+Sometimes, you have files in your repository that aren't related to your deployment. For example, you might have a _deploy_ folder in your repository that contains your Bicep code and a _docs_ subfolder that contains your documentation files. You want to trigger your workflow when anyone makes a change to any of the Bicep files in the _deploy_ folder, but you don't want to trigger the workflow if someone only changes a documentation file. To set up a trigger to respond to changes in a specific folder in your repository, you can use a _path filter_:
 
 ```yaml
 on:
@@ -116,9 +116,9 @@ GitHub also provides webhook events, which run automatically when certain events
 
 By default, GitHub Actions allows multiple instances of your workflow to run simultaneously. This can happen when you make multiple commits to a branch within a short time, or if a previous run hasn't finished when your schedule next triggers.
 
-In some situations, having multiple concurrent runs of your workflow isn't a problem. But when you work with deployment workflows, it can be challenging to ensure that your workflow runs aren't overwriting your Azure resources or configuration in ways that you don't expect.
+In some situations, having multiple concurrent runs of your workflow isn't a problem. When you work with deployment workflows, however, it can be challenging to ensure that your workflow runs aren't overwriting your Azure resources or configuration in ways that you don't expect.
 
-To avoid these problems, you can apply _concurrency control_. Use the `concurrency` keyword, and then specify a string that's consistent across all of the runs for your workflow, which is usually a hard-coded string, like in this example:
+To avoid these problems, you can apply _concurrency control_. Use the `concurrency` keyword, then specify a string that's consistent across all of the runs for your workflow. It's usually a hard-coded string, like in this example:
 
 ```yaml
 concurrency: MyWorkflow

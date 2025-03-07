@@ -1,4 +1,3 @@
-
 In this module, you learned how to:
 
 * Explain functional differences between Azure Functions, Azure Logic Apps, and WebJobs

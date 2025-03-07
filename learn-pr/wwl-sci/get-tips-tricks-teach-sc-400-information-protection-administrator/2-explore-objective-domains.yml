@@ -2,14 +2,14 @@
 uid: learn.wwl.get-tips-tricks-teach-sc-400-information-protection-administrator.explore-objective-domains
 title: Explore objective domains
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore objective domains
   description: "Explore objective domains"
-  ms.date: 04/11/2023
+  ms.date: 11/17/2023
   author: wwlpublish
-  ms.author: Trinity Sheppard
-  ms.topic: interactive-tutorial
-  ms.prod: azure
-  ms.service: azure
+  ms.author: tsheppard
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/2-explore-objective-domains.md)]

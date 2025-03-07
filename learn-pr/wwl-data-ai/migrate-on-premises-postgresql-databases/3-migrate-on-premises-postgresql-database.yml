@@ -2,13 +2,14 @@
 uid: learn.wwl.migrate-premises-postgresql-databases-azure-database-postgresql.migrate-premises-postgresql-database-azure
 title: Migrate on-premises PostgreSQL database to Azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Migrate on-premises PostgreSQL database to Azure
   description: "Migrate on-premises PostgreSQL database to Azure"
   ms.date: 10/14/2022
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 19

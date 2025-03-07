@@ -31,7 +31,7 @@ For completing this lab, Microsoft Learn provides a free Azure sandbox in which 
     <dependency>
         <groupId>com.azure</groupId>
         <artifactId>azure-cosmos</artifactId>
-        <version>4.8.0</version>
+        <version>LATEST</version>
     </dependency>
     ```
 
@@ -208,7 +208,7 @@ In this unit, you set up the groundwork for your Azure Cosmos DB Java applicatio
     <dependency>
       <groupId>com.azure</groupId>
       <artifactId>azure-spring-data-cosmos</artifactId>
-      <version>3.24.0</version>
+      <version>LATEST</version>
     </dependency>
     ```
 

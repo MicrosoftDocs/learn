@@ -1,6 +1,6 @@
 One important step towards improving your reliability is to prevent incidents whenever possible. When you do have incidents, tracking down the problem quickly is also important. The test/release or deployment process can have a strong impact on both of these goals.
 
-In this module, you've:
+In this module, you:
 
 - Learned about what software deployment is and different kinds of deployments we might employ.
 - Discussed the significant benefits of switching from an "epic deployment" model to a "continuous deployment" model.

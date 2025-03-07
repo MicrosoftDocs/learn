@@ -1,0 +1,67 @@
+### YamlMime:Module
+uid: learn.wwl.observability-continuous-improvement
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Observability and Continuous Improvement
+  description: "Learners will discover the significance of observability in providing real-time insights into system performance and identifying inefficiencies. This module emphasizes the importance of continuous improvement through feedback loops, performance monitoring, and market analysis. Learners will explore strategies for adapting to market trends and fostering a culture of innovation within platform engineering teams."
+  ms.date: 01/14/2025
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: module-standard-task-based
+  ms.service: azure
+  ai-usage: ai-assisted
+title: Observability and Continuous Improvement
+summary: Learners will discover the significance of observability in providing real-time insights into system performance and identifying inefficiencies. This module emphasizes the importance of continuous improvement through feedback loops, performance monitoring, and market analysis. Learners will explore strategies for adapting to market trends and fostering a culture of innovation within platform engineering teams.
+abstract: |
+  -   Discover the significance of observability in providing real-time insights into system performance and identifying inefficiencies.
+  -   Understand how continuous improvement creates a feedback loop that drives platform enhancements and optimizes resources.
+  -   Learn about benchmarking and performance monitoring to track the success of the platform and identify areas for improvement.
+  -   Explore strategies for adapting to market trends and anticipating shifts in user needs or technological landscapes.
+  -   Foster a culture of innovation within platform engineering teams to continuously propose and test new ideas.
+prerequisites: |
+  -   Understanding of what DevOps is and its concepts.
+  -   Beneficial to have experience in an organization that delivers software.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - advanced
+roles:
+  - administrator
+  - ai-engineer
+  - developer
+  - devops-engineer
+  - network-engineer
+  - security-engineer
+  - solution-architect
+  - startup-founder
+products:
+  - azure
+  - azure-devops
+  - github
+subjects:
+  - app-development
+  - architecture
+  - asset-management
+  - automation
+  - cloud-computing
+  - cloud-security
+  - containers
+  - custom-app-development
+  - devops
+  - infrastructure
+  - it-management-monitoring
+  - product-lifecycle-management
+  - productivity
+  - site-reliability-engineering
+units:
+- learn.wwl.observability-continuous-improvement.introduction
+- learn.wwl.observability-continuous-improvement.importance-observability-modern-platforms
+- learn.wwl.observability-continuous-improvement.build-observability-platform-architecture
+- learn.wwl.observability-continuous-improvement.metrics-monitoring-alerts
+- learn.wwl.observability-continuous-improvement.automation-incident-detection-resolution
+- learn.wwl.observability-continuous-improvement.continuous-improvement-through-feedback-loops
+- learn.wwl.observability-continuous-improvement.implementing-real-time-monitoring-with-azure-monitor
+- learn.wwl.observability-continuous-improvement.knowledge-check
+- learn.wwl.observability-continuous-improvement.summary
+badge:
+  uid: learn.wwl.observability-continuous-improvement.badge

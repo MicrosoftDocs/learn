@@ -1,4 +1,4 @@
-Over the course of this module, you've explored the monitoring capabilities of Azure Arc-enabled servers. You learned about observability services including Azure Monitor Logs, metrics, alerts, and VM insights. These services offer improved visibility across hybrid and multicloud environments, helping customers like Tailwind Manufacturing.
+Over the course of this module, you explored the monitoring capabilities of Azure Arc-enabled servers. You learned about observability services including Azure Monitor Logs, metrics, alerts, and VM insights. These services offer improved visibility across hybrid and multicloud environments, helping customers like Tailwind Manufacturing.
 
 First, you explored ways of managing and deploying Azure observability agents. Next, you learned about onboarding to VM insights. Additionally, you learned about Azure Monitor metrics and Azure Monitor Logs. Finally, you learned about Azure Monitor’s alerting capabilities.
 

@@ -2,13 +2,14 @@
 uid: learn.wwl.protect-data-transit-at-rest.configure-server-and-database-firewall
 title: Configure server and database firewall rules
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure server and database firewall rules
   description: "Configure server and database firewall rules"
-  ms.date: 05/06/2022
-  author: wwlpublish
+  ms.date: 2/25/2025
+  author: JulianePadrao
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 4

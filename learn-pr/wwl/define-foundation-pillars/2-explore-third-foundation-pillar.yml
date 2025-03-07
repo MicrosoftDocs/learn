@@ -2,13 +2,14 @@
 uid: learn.wwl.define-foundation-pillars.explore-third-foundation-pillar
 title: Explore DevOps Architecture
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore DevOps Architecture
   description: "Explore the third foundation pillar of DevOps, architecture."
   ms.date: 09/20/2020
   author: wwlpublish
   ms.author: sallybre
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 4
 content: |

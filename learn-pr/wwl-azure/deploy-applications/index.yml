@@ -3,24 +3,35 @@ uid: learn.wwl.deploy-applications
 metadata:
   title: MD-102 Deploy and update applications
   description: "In this module, you'll master deploying applications using Intune, Configuration Manager, Group Policy, and Microsoft Store Apps. These powerful tools and techniques will equip you to manage and maintain diverse applications across your organization effectively."
-  ms.date: 04/04/2023
+  ms.date: 06/07/2024
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: windows
+  ai-usage: human-only
 title: Deploy and update applications
 summary: In this module, you'll master deploying applications using Intune, Configuration Manager, Group Policy, and Microsoft Store Apps. These powerful tools and techniques will equip you to manage and maintain diverse applications across your organization effectively.
 abstract: |
   After this module, you should be able to:
-  *   Explain how to deploy applications using Intune and Configuration Manager
-  *   Learn how to deploy applications using Group Policy
-  *   Understand Microsoft Store Apps
-  *   Learn how to deploy apps using Microsoft Store Apps
-  *   Learn how to configure Microsoft Store Apps
+
+  -   Explain how to deploy applications using Intune and Configuration Manager.
+
+  -   Learn how to deploy applications using Group Policy.
+
+  -   Understand Microsoft Store Apps.
+
+  -   Learn how to deploy apps using Microsoft Store Apps.
+
+  -   Learn how to configure Microsoft Store Apps.
 prerequisites: |
-  *   Strong technical skills installing, maintaining, and troubleshooting the Windows 11 OS or later
-  *   Strong understanding of computer networking, client security, and application concepts
-  *   Experience using Active Directory Domain Services
-iconUrl: /training/achievements/generic-badge.svg
+  -   Strong technical skills installing, maintaining, and troubleshooting the Windows 11 OS or later
+
+  -   Strong understanding of computer networking, client security, and application concepts
+
+  -   Experience using Active Directory Domain Services
+iconUrl: /training/achievements/deploy-and-update-applications.svg
 levels:
 - intermediate
 roles:

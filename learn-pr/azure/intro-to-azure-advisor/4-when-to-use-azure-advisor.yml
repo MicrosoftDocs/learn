@@ -2,14 +2,15 @@
 uid: learn.intro-to-azure-advisor.when-to-use-azure-advisor
 title: When to use Azure Advisor
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: When to use Azure Advisor
   description: Learn when to use Azure Advisor and how you can benefit from the provided recommendations.
   ms.date: 03/08/2023
   author: ricmmartins
-  ms.author: ricmart
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: ricardomac
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/4-when-to-use-azure-advisor.md)]

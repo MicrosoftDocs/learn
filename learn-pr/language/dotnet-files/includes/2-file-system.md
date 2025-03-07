@@ -1,6 +1,6 @@
 .NET contains built-in types for working with the file system that you can find in the `System.IO` namespace.
 
-Here, you'll learn about the types available in `System.IO` by using C# to read a file system to discover files and directories.
+Here, you learn about the types available in `System.IO` by using C# to read a file system to discover files and directories.
 
 ## The scenario
 
@@ -10,13 +10,13 @@ Tailwind Traders has each of its stores write its sales total to a file and send
 
 ## Include the System.IO namespace
 
-The System.IO namespace contains built-in types that allow you to interact with files and directories. For example, you can `get` and `set` properties for files and directories and retrieve collections of files and directories based on search criteria. You can also use `System.IO` namespace types to synchronously and asynchronously read and write data streams and files.
+The System.IO namespace contains built-in types that allow you to interact with files and directories. For example, you can retrieve collections of files and directories based on search criteria and  `get` and `set` properties for files and directories. You can also use `System.IO` namespace types to synchronously and asynchronously read and write data streams and files.
 
 For now, we're going to focus on what you need to know to work with directories by using the `Directory` class contained in the `System.IO` namespace. The Directory class exposes static methods for creating, moving, and enumerating through directories and subdirectories.
 
 ## List all directories
 
-One task that you'll often do with the `Directory` class is list out (or *enumerate*) directories. For instance, Tailwind Traders has a root folder called *stores*. In that folder are subfolders organized by store number, and inside those folders are the sales-total and inventory files. The structure looks like this example:
+The `Directory` class is often used to list out (or *enumerate*) directories. For instance, the Tailwind Traders file structure has a root folder called *stores*. In that folder are subfolders organized by store number, and inside those folders are the sales-total and inventory files. The structure looks like this example:
 
 ```
 📂 stores
@@ -80,4 +80,4 @@ foreach (var file in allFilesInAllFolders)
 // stores/201/inventory.txt
 ```
 
-In the next exercise, you'll use the `Directory` class to dynamically read through Tailwind Traders' main *stores* directory to find all of the sales.json files.
+In the next exercise, you use the `Directory` class to dynamically read through Tailwind Traders' main *stores* directory to find all of the sales.json files.

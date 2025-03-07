@@ -14,4 +14,4 @@ You can learn more by reviewing the following.
 
 [Microsoft Tech Community Security Webinars](https://techcommunity.microsoft.com/t5/microsoft-security-and/security-community-webinars/ba-p/927888?azure-portal=true)
 
-[Microsoft Defender for Cloud data collection with the Azure Monitor Agent (AMA)](https://learn.microsoft.com/azure/defender-for-cloud/monitoring-components)
+[Microsoft Defender for Cloud data collection with the Azure Monitor Agent (AMA)](/azure/defender-for-cloud/monitoring-components)

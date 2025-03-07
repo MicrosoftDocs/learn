@@ -1,0 +1,44 @@
+### YamlMime:LearningPath
+uid: learn.defender-iot-deploy-ot-monitoring
+title: Deploy Defender for IoT for OT monitoring
+metadata:
+  title: Deploy Microsoft Defender for IoT for OT monitoring
+  description: Learn how to deploy Defender for IoT to discover and secure IoT and OT devices.
+  ms.date: 05/17/2024
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: learning-path
+summary: >
+  Microsoft Defender for IoT is a unified security solution that identifies IoT and OT devices, vulnerabilities, and threats. Learn how to deploy Defender for IoT for OT monitoring.
+prerequisites: |
+  - Knowledge of what Defender for IoT is and how it works at a beginner level
+  - Knowledge of operational technology (OT) networks and networking concepts at an intermediate level 
+  - Familiarity with the Purdue networking model, like the device types that are included in each networking level
+  - Knowledge of what Azure roles and role-based access controls (RBAC) are and how they work at a beginner level
+  - Access to an [Azure subscription](https://azure.microsoft.com/free) as a Security Admin, Contributor, or Owner user
+  -	A Defender for IoT license with an [OT plan](/azure/defender-for-iot/organizations/getting-started)
+  - A configured firewall and all of the rules and settings for it to connect to port 443, including: IP address, subnet mask, default gateway, DNS and hostname
+  - Access to either a virtual or physical OT sensor
+  - Access to a virtual machine, such as VMware ESXi 5.5 or later
+  - A configured network adapter port group that connects to the internet 
+  - A configured network adapter port group that connects to the SPAN port on the virtual switch
+  - Access to Wireshark or similar packet capture (PCAPS) file reader
+  - A network diagram for your organization
+iconUrl: /training/achievements/defender-iot-deploy-ot-monitoring.svg
+levels:
+  - intermediate
+roles:
+  - solution-architect
+  - technology-manager
+products: 
+  - defender-for-iot
+subjects: 
+  - security
+modules:
+  - learn.defender-iot-plan-deployment
+  - learn.defender-iot-prepare-deployment
+  - learn.onboard-sensor-microsoft-defender-iot
+  - learn.defender-iot-deploy-sensor
+  - learn.defender-iot-fine-tune-deployment
+trophy:
+  uid: learn.defender-iot-deploy-ot-monitoring.trophy

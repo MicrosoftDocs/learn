@@ -1,26 +1,30 @@
 ### YamlMime:Module
 uid: learn.communication-services-voice-calling-webapp
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   moduleType: standard
   title: Create a voice calling web app with Azure Communication Services
-  description: "In this module, you'll create a basic web app that can be used for voice calling with Azure Communication Services."
-  ms.date: 04/20/2022
-  author: ProbablePrime
-  ms.author: rifox
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: "In this module, you create a basic web app that can be used for voice calling with Azure Communication Services."
+  manager: mkluck
+  ms.date: 07/26/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: module
+  ms.service: azure-communication-services 
+  ms.subservice: calling 
 title: Create a voice calling web app with Azure Communication Services
-summary: "In this module, you'll create a basic web app that can be used for voice calling with Azure Communication Services."
+summary: "In this module, you create a basic web app that can be used for voice calling with Azure Communication Services."
 abstract: |
   By the end of this module, you'll be able to:
-  - Create and configure an Azure Communication Services resource
-  - Set up a basic voice calling web application
-  - Make a voice call to an echo bot using Azure Communication Services
-  - Make a voice call to another user using Azure Communication Services
+  - Create and configure an Azure Communication Services resource.
+  - Set up a basic voice calling web application.
+  - Make a voice call to an echo bot using Azure Communication Services.
+  - Make a voice call to another user using Azure Communication Services.
 prerequisites: |
-  - Basic familiarity with JavaScript and Node.js
-  - The LTS (Long Term Support) or latest version of Node.js
-  - An Azure account with an active subscription and a billing address in the United States. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)
+  - Basic familiarity with JavaScript and Node.js.
+  - The LTS (Long Term Support) or latest version of Node.js, including the npm package manager.
+  - An Azure account with an active subscription and a billing address in the United States. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 iconUrl: /training/achievements/communication-services-voice-calling-web-app.svg
 levels:
   - beginner
@@ -39,3 +43,4 @@ units:
 - learn.communication-services-voice-calling-webapp.summary
 badge:
   uid: learn.communication-services-voice-calling-webapp.badge
+

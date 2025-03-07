@@ -12,7 +12,7 @@ Now that you know how to use GitHub Pages to support your projects, learn to [Ma
 
 ## Learn more
 
-Here are some links to more information on the topics we discussed in this module.
+Here are some links to more information on the subjects we discussed in this module.
 
 - [GitHub Pages official site](https://pages.github.com/?azure-portal=true)
 - [Jekyll official site](https://jekyllrb.com/?azure-portal=true)

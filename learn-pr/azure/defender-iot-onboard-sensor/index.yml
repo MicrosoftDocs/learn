@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.onboard-sensor-microsoft-defender-iot
+metadata:
+  title: Onboard your first OT sensor to Microsoft Defender for IoT
+  description: "Learn how to onboard an OT sensor as part of the deployment of Microsoft Defender for IoT to monitor your OT network."
+  ms.date: 02/21/2024
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: module-standard-task-based
+  ms.service: defender-for-iot
+title: 
+  Onboard your first OT sensor to Microsoft Defender for IoT
+summary: Based on the sensor information gathered in the plan and prepare phases of a deployment, onboard one of these sensors to Defender for IoT, download the sensor's activation file, and the list of endpoints required to connect your sensor to Azure.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Onboard an OT sensor to Defender for IoT
+prerequisites: |
+  - Knowledge of what Defender for IoT is and how it works at a beginner level 
+  - Access to an [Azure subscription](https://azure.microsoft.com/free) as a Security Admin, Contributor, or Owner user
+  -	A Defender for IoT license with an [OT plan](/azure/defender-for-iot/organizations/getting-started)
+  - Knowledge of deployment planning concepts for Defender for IoT, such as sites and zones OT sensor parameters
+  - Details of the specific site and zone needed to assign to the sensor 
+iconUrl: /learn/achievements/defender-for-iot/defender-iot-onboard-sensor.svg
+levels: 
+  - intermediate
+roles:
+  - technology-manager
+products: 
+  - defender-for-iot
+subjects: 
+  - security
+units:
+- learn.onboard-sensor-microsoft-defender-iot.introduction
+- learn.onboard-sensor-microsoft-defender-io.describe-process-onboard
+- learn.onboard-sensor-microsoft-defender-io.plan-to-onboard-sensor
+- learn.onboard-sensor-microsoft-defender-io.exercise-onboard-sensor
+- learn.onboard-sensor-microsoft-defender-iot.knowledge-check
+- learn.onboard-sensor-microsoft-defender-iot.summary
+badge:
+  uid: learn.onboard-sensor-microsoft-defender-iot.badge

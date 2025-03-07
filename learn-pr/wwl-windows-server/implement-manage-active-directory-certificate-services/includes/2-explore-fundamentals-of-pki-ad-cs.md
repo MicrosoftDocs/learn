@@ -1,8 +1,9 @@
+
 To obtain certificates for your AD DS infrastructure, you can request them from a public CA or issue them by using your own infrastructure. To implement your own CA, you can use AD CS, which is the path that Contoso chose to take. AD CS is an identity technology in Windows Server that allows you to implement PKI for your **organization**.
 
 ## What is PKI?
 
-PKI is the combination of software, encryption technologies, processes, and services that enables an organization to secure its data, communications, and business transactions. PKI relies on the exchange of digital certificates between authenticated users and trusted resources. You use certificates to secure data and to manage identification credentials from users and computers both within and outside of your organization.
+PKI is the combination of software, encryption technologies, processes, and services that enable an organization to secure its data, communications, and business transactions. PKI relies on the exchange of digital certificates between authenticated users and trusted resources. You use certificates to secure data and to manage identification credentials from users and computers both within and outside of your organization.
 
 ## What is AD CS?
 
@@ -26,4 +27,4 @@ The AD CS role includes the following role services:
   - Renew certificates automatically for computers that are part of untrusted AD DS domains or are not joined to a domain.
 - Certificate Enrollment Policy Web Service. This component enables users to obtain certificate enrollment policy information. Combined with CES, it enables policy-based certificate enrollment in scenarios where user devices are not joined to the domain or can't connect to a domain controller.
 
-:::image type="content" source="../media/m10-ca-role-services.png" alt-text="The role services of the AD CS role in Windows Server 2019, including CA, CA Web Enrollment, Online Responder, Network Device Enrollment Service, CES, and Certificate Enrollment Policy Web Service." border="false":::
+:::image type="content" source="../media/m10-ca-role-services-70385431.png" alt-text="The role services of the AD CS role in Windows Server 2019, including CA, CA Web Enrollment, Online Responder, Network Device Enrollment Service, CES, and Certificate Enrollment Policy Web Service." border="false":::

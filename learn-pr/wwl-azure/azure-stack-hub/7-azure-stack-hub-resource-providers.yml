@@ -2,13 +2,14 @@
 uid: learn.wwl.azure-stack-hub.resource-providers
 title: Resource providers for Azure Stack Hub
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Resource providers for Azure Stack Hub
   description: "Resource providers for Azure Stack Hub"
   ms.date: 08/05/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

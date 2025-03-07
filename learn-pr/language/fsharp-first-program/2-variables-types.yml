@@ -4,11 +4,10 @@ title: Use variables to store values
 metadata:
   title: Use variables to store values
   description: In this unit, you learn about variables and different data types. You also learn how to print variables to the screen.
-  author: softchris
-  ms.author: chnoring
-  ms.date: 07/21/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: baronfel
+  ms.author: chethusk 
+  ms.date: 02/24/2023
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 4
 content: |

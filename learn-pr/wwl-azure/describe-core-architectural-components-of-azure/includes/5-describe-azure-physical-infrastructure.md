@@ -15,13 +15,13 @@ A region is a geographical area on the planet that contains at least one, but po
 When you deploy a resource in Azure, you'll often need to choose the region where you want your resource deployed.
 
 > [!NOTE]
-> Some services or virtual machine (VM) features are only available in certain regions, such as specific VM sizes or storage types. There are also some global Azure services that don't require you to select a particular region, such as Azure Active Directory, Azure Traffic Manager, and Azure DNS.
+> Some services or virtual machine (VM) features are only available in certain regions, such as specific VM sizes or storage types. There are also some global Azure services that don't require you to select a particular region, such as Microsoft Entra ID, Azure Traffic Manager, and Azure DNS.
 
 ### Availability Zones
 
 Availability zones are physically separate datacenters within an Azure region. Each availability zone is made up of one or more datacenters equipped with independent power, cooling, and networking. An availability zone is set up to be an isolation boundary. If one zone goes down, the other continues working. Availability zones are connected through high-speed, private fiber-optic networks.
 
-:::image type="content" source="../media/availability-zones-c22f95a3.png" alt-text="Diagram showing three datacenters connected in a single Azure region representing an availability zone.":::
+:::image type="content" source="../media/availability-zones-c22f95a3-14cd8677.png" alt-text="Diagram showing three datacenters connected in a single Azure region representing an availability zone.":::
 
 
 > [!IMPORTANT]
@@ -50,7 +50,7 @@ Most Azure regions are paired with another region within the same geography (suc
 
 Examples of region pairs in Azure are West US paired with East US and South-East Asia paired with East Asia. Because the pair of regions are directly connected and far enough apart to be isolated from regional disasters, you can use them to provide reliable services and data redundancy.
 
-:::image type="content" source="../media/region-pairs-7c495a33.png" alt-text="Diagram showing the relationship between geography, region pair, region, and availability zone.":::
+:::image type="content" source="../media/region-pairs-7c495a33-85c0fa20.png" alt-text="Diagram showing the relationship between geography, region pair, region, and availability zone.":::
 
 
 #### Additional advantages of region pairs:
@@ -60,7 +60,7 @@ Examples of region pairs in Azure are West US paired with East US and South-East
  -  Data continues to reside within the same geography as its pair (except for Brazil South) for tax- and law-enforcement jurisdiction purposes.
 
 > [!IMPORTANT]
-> Most directions are paired in two directions, meaning they are the backup for the region that provides a backup for them (West US and East US back each other up). However, some regions, such as West India and Brazil South, are paired in only one direction. In a one-direction pairing, the Primary region does not provide backup for its secondary region. So, even though West India’s secondary region is South India, South India does not rely on West India. West India's secondary region is South India, but South India's secondary region is Central India. Brazil South is unique because it's paired with a region outside of its geography. Brazil South's secondary region is South Central US. The secondary region of South Central US isn't Brazil South.
+> Most regions are paired in two directions, meaning they are the backup for the region that provides a backup for them (West US and East US back each other up). However, some regions, such as West India and Brazil South, are paired in only one direction. In a one-direction pairing, the Primary region does not provide backup for its secondary region. So, even though West India’s secondary region is South India, South India does not rely on West India. West India's secondary region is South India, but South India's secondary region is Central India. Brazil South is unique because it's paired with a region outside of its geography. Brazil South's secondary region is South Central US. The secondary region of South Central US isn't Brazil South.
 
 ### Sovereign Regions
 

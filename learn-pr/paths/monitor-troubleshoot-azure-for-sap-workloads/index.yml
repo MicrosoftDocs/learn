@@ -3,16 +3,16 @@ uid: learn.wwl.monitor-troubleshoot-azure-for-sap-workloads
 metadata:
   title: Monitor and troubleshoot Azure for SAP workloads
   description: Monitor and troubleshoot Azure for SAP workloads
-  ms.date: 05/05/2022
+  ms.date: 01/11/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Monitor and troubleshoot Azure for SAP workloads
-prerequisites: ""
+prerequisites: |
+  Before taking this training, you should complete the Azure Administrator (AZ-104) or Azure Solutions Architect Expert (AZ-305) exam, and SAP HANA or NetWeaver training.
 summary: |
   SAP professionals need to monitor and support Azure for SAP workloads. These modules explore monitoring Azure on SAP, and Azure virtual machine licensing, pricing, and support.
-iconUrl: /training/achievements/monitor-and-troubleshoot-azure-for-sap-workloads.svg
+iconUrl: /learn/achievements/monitor-and-troubleshoot-azure-for-sap-workloads.svg
 levels:
 - advanced
 roles:

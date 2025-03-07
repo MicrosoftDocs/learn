@@ -2,13 +2,14 @@
 uid: learn.wwl.get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals.explore-objective-domains
 title: Explore objective domains
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore objective domains
   description: "Explore objective domains"
   ms.date: 01/16/2023
   author: wwlpublish
   ms.author: tsheppard
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/2-explore-objective-domains.md)]

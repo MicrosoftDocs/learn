@@ -2,14 +2,17 @@
 uid: learn.quantum.estimate-resources-quantum-algorithms.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary.
-  ms.date: 01/20/2023
+  ms.date: 01/22/2025
   author: SoniaLopezBravo
   ms.author: sonialopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  manager: tedhudek
+  ms.topic: unit
   show_latex: true
 durationInMinutes: 1
 content: |
   [!include[](includes/summary.md)]
+

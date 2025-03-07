@@ -12,17 +12,17 @@ Consider some of the instances when a person needs to process form data:
 
 Without AI services, people need to manually sort through form documents to identify important information and then manually reenter data to record it. Some may also need to complete these tasks in real-time with a customer. 
 
-Form Recognizer services provide the building blocks for automation by using intelligent services to extract data at scale and with accuracy. *Azure Form Recognizer* is a Vision API that extracts key-value pairs and table data from form documents.
+Azure Document Intelligence services provide the building blocks for automation by using intelligent services to extract data at scale and with accuracy. *Azure Document Intelligence* is a Vision API that extracts key-value pairs and table data from form documents.
 
-**Uses of the Form Recognizer service include**: 
+**Uses of the Azure Document Intelligence service include**: 
 - Process automation 
 - Knowledge mining 
 - Industry-specific applications        
 
 **In this module, you'll learn how to**: 
 
-- Identify how Form Recognizer's document analysis, prebuilt, and custom models can automate processes
-- Use Form Recognizer's Optical Character Recognition (OCR) capabilities with SDKs and REST API
-- Develop and test a custom Form Recognizer model 
+- Identify how Azure Document Intelligence's document analysis, prebuilt, and custom models can automate processes
+- Use Azure Document Intelligence's Optical Character Recognition (OCR) capabilities with SDKs and REST API
+- Develop and test a custom Azure Document Intelligence model 
 
 To complete this module, you'll need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com](https://azure.microsoft.com?azure-portal=true).

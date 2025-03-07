@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.run-docker-containers-aci.8-summary
+title: Summary
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Summary
+  description: "Summary"
+  ms.date: 01/15/2025
+  author: v-tcassi
+  ms.author: tomcassidy
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-summary.md)]

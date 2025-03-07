@@ -1,5 +1,3 @@
-
-
 SC-400: Module 2 Implement data loss prevention with Microsoft Purview
 
 Module 2 Overview
@@ -13,7 +11,7 @@ This module consists of four lessons:
 - Lesson 3 – Configure DLP policies for Microsoft Defender for cloud apps and Power Platform
 - Lesson 4 – Manage DLP policies and reports in Microsoft Purview
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWXrMG]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e4aafb15-1ecd-4634-ac3a-7760d913ac70]  
 
 Module 2 Tips and Tricks
 

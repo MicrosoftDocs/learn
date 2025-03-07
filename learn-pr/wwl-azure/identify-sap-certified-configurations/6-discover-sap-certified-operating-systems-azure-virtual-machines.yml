@@ -1,14 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.identify-sap-certified-configurations.discover-operating-systems-for-azure-virtual-machines
-title: Discover SAP-certified operating systems for Azure virtual machines
+title: Discover SAP-certified operating systems for Azure Virtual Machines
 metadata:
-  title: Discover SAP-certified operating systems for Azure virtual machines
-  description: "Discover SAP-certified operating systems for Azure virtual machines"
-  ms.date: 04/21/2023
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Discover SAP-certified operating systems for Azure Virtual Machines
+  description: "Discover SAP-certified operating systems for Azure Virtual Machines."
+  ms.date: 09/19/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/6-discover-sap-certified-operating-systems-azure-virtual-machines.md)]

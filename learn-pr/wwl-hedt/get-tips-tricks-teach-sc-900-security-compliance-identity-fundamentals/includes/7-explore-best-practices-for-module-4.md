@@ -15,7 +15,7 @@ This module consists of six lessons:
 - Lesson 5 – Describe eDiscovery and audit capabilities in Microsoft Purview
 - Lesson 6 – Describe resource governance capabilities in Azure
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWXpsO]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=a7167078-8aa4-4a94-b992-863758f1866e]  
 
 Module 4 Tips and Tricks
 
@@ -27,7 +27,6 @@ Module 4 Demos
 - Demo 4.1: [Service trust portal](https://github.com/MicrosoftLearning/SC-900-Microsoft-Security-Compliance-and-Identity-Fundamentals/blob/master/Instructions/Demos/DEMO_10_explore_service_trust_portal.md)
 - Demo 4.2: [Microsoft Purview compliance portal](https://github.com/MicrosoftLearning/SC-900-Microsoft-Security-Compliance-and-Identity-Fundamentals/blob/master/Instructions/Demos/DEMO_11_explore_compliance_mgr.md) 
 - Demo 4.3: [Sensitivity labels in Microsoft Purview](https://github.com/MicrosoftLearning/SC-900-Microsoft-Security-Compliance-and-Identity-Fundamentals/blob/master/Instructions/Demos/DEMO_12_explore_senstivity_labels.md)
-- Demo 4.4: [Azure policy](https://github.com/MicrosoftLearning/SC-900-Microsoft-Security-Compliance-and-Identity-Fundamentals/blob/master/Instructions/Demos/DEMO_13_explore_azure_policy.md)
 
 Module 4 Labs (optional)
 

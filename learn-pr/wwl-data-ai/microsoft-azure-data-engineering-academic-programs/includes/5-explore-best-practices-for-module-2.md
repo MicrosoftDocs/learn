@@ -13,7 +13,7 @@ This module consists of four lessons:
 - Lesson 3 – Create metadata objects in Azure Synapse Analytics serverless SQL pools 
 - Lesson 4 – Secure data and manage users in Azure Synapse serverless SQL pools 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5axAs] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ab91e955-9dea-40de-98e0-b0fb68eb380d] 
 
 Module 2 Tips and Tricks 
 
@@ -21,7 +21,7 @@ Module 2 Tips and Tricks
 - Dedicated is for data warehousing workloads 
 - Understand the dependencies and order for metadata object creation  
 	- They remain the same for serverless or dedicated 
-- Strongly prefer Azure Active Directory Authentication 
+- Strongly prefer Microsoft Entra authentication 
 
 Module 2 Demos 
 

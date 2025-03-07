@@ -3,12 +3,12 @@ uid: learn.student-evangelism.bash-introduction
 metadata:
   title: Introduction to Bash
   description: Learn how to use Bash to manage IT infrastructure.
-  ms.date: 04/06/2022
+  ms.date: 08/05/2024
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-bash
+  ms.topic: module
   ms.custom: team=nextgen
+  ms.devlang: bash
 title: Introduction to Bash
 summary: Use Bash to manage IT infrastructure.
 abstract:  | 
@@ -31,7 +31,6 @@ products:
 - azure
 - azure-clis
 subjects:
-- development-tools
 - it-management-monitoring
 units:
 - learn.student-evangelism.bash-introduction.0-introduction

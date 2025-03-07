@@ -2,7 +2,7 @@ To help decide whether serverless computing is right for you, let's first learn 
 
 ## What is serverless compute?
 
-[Serverless compute](https://azure.microsoft.com/solutions/serverless/) can be thought of as a function as a service (FaaS), or a microservice that is hosted on a cloud platform. Your business logic runs as functions and you don't have to manually provision or scale infrastructure. The cloud provider manages infrastructure. Your app is automatically scaled out or down depending on load. Azure has several ways to build this sort of architecture. The two most common approaches are Azure Logic Apps and Azure Functions, which is the focus off in this module.
+[Serverless compute](https://azure.microsoft.com/solutions/serverless/) can be thought of as a function as a service (FaaS), or a microservice that is hosted on a cloud platform. Your business logic runs as functions, and you don't have to manually provision or scale infrastructure. The cloud provider manages infrastructure. Your app is automatically scaled out or down depending on load. Azure has several ways to build this sort of architecture. The two most common approaches are Azure Logic Apps and Azure Functions, which is the focus of this module.
 
 ## What is Azure Functions?
 
@@ -22,15 +22,15 @@ Stateless functions are great candidates for serverless compute; function instan
 
 ### Event driven
 
-Functions are _event driven_. They run only in response to an event (called a "trigger"), such as receiving an HTTP request, or a message being added to a queue. You configure a trigger as part of the function definition. This approach simplifies your code by allowing you to declare where the data comes from (trigger/input binding) and where it goes (output binding). You don't need to write code to watch queues, blobs, hubs, and so on. You can focus purely on the business logic.
+Functions are _event driven_. They run only in response to an event (called a "trigger"), such as receiving an HTTP request or a message being added to a queue. You configure a trigger as part of the function definition. This approach simplifies your code by allowing you to declare where the data comes from (trigger/input binding) and where it goes (output binding). You don't need to write code to watch queues, blobs, hubs, and so on. You can focus purely on the business logic.
 
 ### Functions can be used in traditional compute environments
 
-Functions are a key component of serverless computing, but they're also a general compute platform for executing any type of code. Should the needs of your app change, you can take your project and deploy it in a non serverless environment. That gives you the flexibility to manage scaling, run on virtual networks, and even completely isolate your functions.
+Functions are a key component of serverless computing, but they're also a general compute platform for executing any type of code. Should the needs of your app change, you can take your project and deploy it in a non-serverless environment. That gives you the flexibility to manage scaling, run on virtual networks, and even completely isolate your functions.
 
 ## Drawbacks of a serverless compute solution
 
-Serverless compute, as provided by Azure Functions in the Consumption plan, won't always be the appropriate solution to hosting your business logic. Here are a few characteristics of functions that may affect your decision to host your services in serverless compute.
+Serverless compute, as provided by Azure Functions in the Consumption plan, isn't always the appropriate solution to hosting your business logic. Here are a few characteristics of functions that may affect your decision to host your services in serverless compute.
 
 ### Execution time
 
@@ -38,6 +38,6 @@ By default, functions have a timeout of five (5) minutes. This timeout is config
 
 ### Execution frequency
 
-Another characteristic is execution frequency. If you expect clients executing your function continuously, it would be prudent to estimate the usage and calculate the cost of using functions accordingly. It might be cheaper to host your service on a VM.
+Another characteristic is execution frequency. If you expect clients to execute your function continuously, it would be prudent to estimate the usage and calculate the cost of using functions accordingly. It might be cheaper to host your service on a VM.
 
-While scaling, only one function app instance can be created every 10 seconds, for up to 200 total instances. Keep in mind, each instance can service multiple concurrent executions, so there's no set limit about how much traffic a single instance can handle. Different types of triggers have different scaling requirements, so research your choice of trigger and investigate its limits.
+When your function scales, only one function app instance can be created every 10 seconds, for up to 200 total instances. Keep in mind, each instance can service multiple concurrent executions, so there's no set limit about how much traffic a single instance can handle. Different types of triggers have different scaling requirements, so research your choice of trigger and investigate its limits.

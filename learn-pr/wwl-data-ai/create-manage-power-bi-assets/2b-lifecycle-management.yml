@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-power-bi-assets.lifecycle-management
+title: Manage development lifecycle for Power BI assets
+metadata:
+  title: Manage development lifecycle for Power BI assets
+  description: "Discover Power BI Projects and other features that help you manage the lifecycle of your Power BI assets."
+  ms.date: 11/12/2024
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 11
+content: |
+  [!include[](includes/2b-lifecycle-management.md)]

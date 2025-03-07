@@ -4,12 +4,12 @@ title: Clone the code repo and become familiar with it
 metadata:
   unitType: exercise
   title: Clone the code repo and become familiar with it
-  description: "In this unit, you'll clone the Blazing Pizza source code repository and familiarize yourself with it."
-  ms.date: 11/09/2021
+  description: "In this unit, you clone the Blazing Pizza source code repository and familiarize yourself with it."
+  ms.date: 06/03/2024
   author: IEvangelist
   ms.author: dapine
-  ms.topic: interactive-tutorial # do we need ms.topic?
-  ms.prod: aspnet-core
+  ms.manager: markl
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-clone-familiarize.md)]

@@ -6,8 +6,7 @@ metadata:
   ms.date: 10/09/2021
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Program with Transact-SQL
 prerequisites: |
   - Familiarity with working with tables of data
@@ -33,7 +32,7 @@ products:
 - azure-sqlserver-vm
 - sql-server
 subjects:
-- database
+- databases
 modules:
 - learn.wwl.get-started-transact-sql-programming
 - learn.wwl.create-stored-procedures-table-valued-functions

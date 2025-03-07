@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-netapp-files-quotas.summary
+title: Summary
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  unitType: summary
+  title: Summary
+  description: You've learned different options to optimize capacity management in Azure NetApp Files.    
+  ms.date: 11/15/2024
+  author: b-ahibbard
+  ms.author: anfdocs
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-summary.md)]

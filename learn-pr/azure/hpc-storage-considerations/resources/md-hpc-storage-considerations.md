@@ -16,7 +16,7 @@ HPC Storage Considerations
 
 - Azure
 - Azure Storage
-- Azure HPC Cache
+- Azure Managed Lustre
 - Azure NetApp Files
 
 ## Prerequisites

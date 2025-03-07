@@ -1,17 +1,19 @@
 ### YamlMime:Module
 uid: learn.iot.run-iot-edge-device-restricted-network-offline
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Run an IoT Edge device in a restricted network and offline
   description: This module is theoretical and will walk you through how an IoT Edge device can be harnessed as a gateway to child devices and can store captured information if connectivity is unavailable.
   ms.date: 01/05/2020
   author: abartolo
   ms.author: abartolo
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
   ms.custom:
   - team=cloud_advocates
   ms.contributors:
   - abartolo-04302020
+  ms.service: azure-iot-edge
 title: Run an IoT Edge device in a restricted network and offline
 summary: >
   This module is theoretical and will walk you through how an IoT Edge device can be harnessed as a gateway to child devices and can store captured information if connectivity is unavailable.
@@ -54,3 +56,4 @@ units:
 - learn.iot.run-iot-edge-device-restricted-network-offline.summary
 badge:
   uid: learn.iot.run-iot-edge-device-restricted-network-offline.badge
+

@@ -4,18 +4,17 @@ metadata:
   title: AI edge engineer
   description: This learning path aims to explain learners how to deploy AI at the edge using Azure services.
   brand: azure
-  ms.date: 4/13/2020
-  author: leestott
-  ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/20/2025
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: learning-path
 title: AI edge engineer
 summary: |
   The interplay between AI, cloud, and edge is a rapidly evolving domain. Currently, many IoT solutions are based on basic telemetry. The telemetry function captures data from edge devices and stores it in a data store. Our approach extends beyond basic telemetry. We aim to model problems in the real world through machine learning and deep learning algorithms and implement the model through AI and Cloud on to edge devices. The model is trained in the cloud and deployed on the edge device. The deployment to the edge provides a feedback loop to improve the business process (digital transformation).
 
   In this learning path, we take an interdisciplinary engineering approach. We aspire to create a standard template for many complex areas for deployment of AI on edge devices such as Drones, Autonomous vehicles etc. The learning path presents implementation strategies for an evolving landscape of complex AI applications. Containers are central to this approach. When deployed to edge devices, containers can encapsulate deployment environments for a range of diverse hardware. CICD (Continuous integration - continuous deployment) is a logical extension to deploying containers on edge devices. In future modules in this learning path, we may include other techniques such as serverless computing and deployment on Microcontroller Units.
 
-  The engineering-led approach underpins themes / pedagogies for engineering education such as 
+  The engineering-led approach underpins themes / pedagogies for engineering education such as
     - Systems thinking
     - Experimentation and Problem solving
     - Improving through experimentation 
@@ -23,7 +22,7 @@ summary: |
     - Impact on other engineering domains
     - Forecasting behaviour of a component or system
     - Design considerations
-    - Working within constraints/tolerances and specific operating conditions – for example, device constraints
+    - Working within constraints/tolerances and specific operating conditions including device constraints
     - Safety and security considerations
     - Building tools which help to create the solution 
     - Improving processes - Using edge(IoT) to provide an analytics feedback loop to the business process to drive processes
@@ -39,10 +38,9 @@ summary: |
     - Learn the process of implementing models to edge devices using containers
     - Explore the use of DevOps for edge devices
 
-  ***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***
-
 prerequisites: None
 iconUrl: /training/achievements/ai-edge-engineer.svg
+hidden: true
 levels:
 - beginner
 roles:
@@ -51,7 +49,6 @@ roles:
 products:
 - azure
 - azure-iot
-- azure-notebooks
 - azure-cloud-shell
 - azure-container-instances
 - azure-container-registry
@@ -63,7 +60,7 @@ products:
 subjects:
 - artificial-intelligence
 modules:
-- learn.oxford.intro-to-iot
+#- learn.introduction-to-azure-iot
 - learn.oxford.intro-to-iot-hub
 - learn.oxford.intro-to-iot-edge
 - learn.oxford.deploy-prebuilt-module-edge-device

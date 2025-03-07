@@ -4,11 +4,10 @@ title: Make your bot accessible
 metadata:
   title: Make your bot accessible
   description: Part of building software responsibly is making sure that all users can be involved. This unit goes into detail about how to make sure your bot is accessible to users of all kinds, including those with disabilities or impairments.
-  ms.date: 02/20/2020
+  ms.date: 07/10/2024
   author: Adriamen
   ms.author: japerena
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/6-make-bots-accessible.md)] 

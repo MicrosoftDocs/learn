@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-dream-destination-ai-copilot.exercise-brainstorm-destination-features
+title: 'Exercise: Brainstorm destination features'
+metadata:
+  title: 'Exercise: Brainstorm destination features'
+  description: "Exercise: Brainstorm destination features"
+  ms.date: 12/13/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - copilot-learning-hub
+  - ai-learning-hub
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-brainstorm-destination-features.md)]

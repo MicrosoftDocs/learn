@@ -2,15 +2,20 @@
 uid: learn.wwl.configure-automatic-deployment-for-azure-sql-database.automate-deployment-using-cli
 title: Automate deployment by using Azure CLI
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Automate deployment by using Azure CLI
   description: "Automate deployment by using Azure CLI"
-  ms.date: 06/28/2022
-  author: wwlpublish
+  ms.date: 02/26/2025
+  author: JulianePadrao
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-arm-template
+    - devx-track-azurecli
 azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/5-automate-deployment-using-cli.md)]
+

@@ -1,5 +1,3 @@
-
-
 The Contoso IT team has various choices about how best to implement networking services in a hybrid environment. Azure Virtual WAN is a service that consolidates many of these networking services, and provides a consistent operational interface to network security, routing, and infrastructure.
 
 ## What is Azure Virtual WAN?
@@ -125,3 +123,4 @@ Use the following procedure to create the connection between the hub and a VNet.
     - Hubs
     - Subscription
     - Virtual network
+

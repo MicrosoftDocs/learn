@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.get-started-with-devops.3-what-is-azure-devops
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is Azure DevOps?
   description: What is Azure DevOps?
-  ms.date: 06/16/2022
+  ms.date: 10/02/2024
   ms.custom: devdivchpfy22
   author: chcomley
   ms.author: chcomley
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: What is Azure DevOps?
 durationInMinutes: 4
 content: |
@@ -45,7 +46,8 @@ quiz:
       explanation: "You can use Azure DevOps whether you deploy to the cloud or on-premises."
     - content: "A suite of services that provide an end-to-end tool chain"
       isCorrect: true
-      explanation: "Azure DevOps can help you throughout your application's entire life cycle &mdash; from planning all the way to deploying your application."
+      explanation: "Azure DevOps can help you throughout your application's entire lifecycle, from planning all the way to deploying your application."
     - content: "A DevOps course offered by Microsoft"
       isCorrect: false
       explanation: "Although you can take our courses, Azure DevOps is a collection of software and services."
+

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-tomcat-java-appservice.3
+title: Exercise - Create a simple Tomcat Java web app 
+metadata:
+  title: Exercise - Create a Simple Tomcat Java Web App
+  description: Shows you how to create a simple Java web app and deploy it locally.
+  ms.date: 02/20/2025
+  author: KarlErickson
+  ms.author: karler
+  ms.reviewer: ayangupta
+  ms.topic: unit
+  ms.custom: team=cloud_advocates, devx-track-extended-java, devx-track-java, linux-related-content
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-create-simple-java-app.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.develop-accessible-resize-reflow.accessibility-requirements
+title: Accessibility requirements
+metadata:
+  title: Accessibility Requirements
+  description: Learn about accessibility requirements.
+  author: erzelman
+  ms.author: erzelman
+  ms.date: 02/12/2025
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-accessibility-requirements.md)]

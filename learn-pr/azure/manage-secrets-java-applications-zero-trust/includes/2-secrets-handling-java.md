@@ -9,34 +9,33 @@ The concept of Zero Trust is that no one should be blindly trusted, and allowed 
 This concept applies to Web applications too: they shouldn't have secrets stored in their
 code or in their final binaries. It's what we call Zero Secrets.
 
-Secrets should be managed by an external system, with strict access rules and validation, to reduce the attack risk.
+Secrets should be managed by an external system, with strict access rules and validation, to reduce attack risk.
 
 ## Don't put secrets into Git repositories
 
 Even if your Git repository is private, putting any secret in your source code is a bad practice:
 
-- Anybody having access to your repository will know your sensitive data
-- Anybody having access to your application binary will be able to extract secrets from it
+- Anyone with access to your repository will know your sensitive data
+- Anyone with access to your application binary can extract secrets from it
 
-Also, once a secret has been stored into Git, attackers can always find it by looking in the repository's history, where it
-can be forgotten for a long time.
+Also, once a secret is stored in a Git repository, attackers can always find it by looking in the repository's history, where it
+can be forgotten after a long time has passed.
 
-Even if that seems practical, you should never store any secrets in your source code repository. To avoid this issue, you can use automatic tools that regularly check your repository and will send warnings if they find a password or database URL stored by mistake.
+Even if it seems practical to do so, you should never store any secrets in your source code repository. To avoid this issue, you can use automatic tools that regularly check your repository and send warnings if they find a password or database URL stored by mistake.
 
 ## Using environment variables
 
 The easiest solution for managing secrets is to use environment variables. They have several benefits:
 
-- They're easy to use,
-- They work on all systems (even non-cloud systems),
-- Everyone knows them and understands how they work.
+- They're easy to use
+- They work on all systems (even in on-premises systems)
+- Everyone knows them and understands how they work
 
-However, they're not secure enough: all processes on your system can read them, and they'll be easily exposed
-using JMX on a Java system.
+However, they're not secure enough: all processes on your system can read them, and they're easily exposed
+using Java Management Extensions (JMX) on a Java system.
 
 As a result, environment variables are often seen as a first step towards Zero Trust: they're more secure than storing secrets
-directly into the source code, but they lack management capabilities and
-are easy to access for attackers.
+directly into the source code, but they lack management capabilities and are easy to access for attackers.
 
 ## Using Kubernetes secrets
 
@@ -44,7 +43,7 @@ Kubernetes has a notion of `secrets`, which is another good solution. Those secr
 filesystem: a Java program can then read that file at startup time, to access those secrets. Tools like the Spring Frameworks even
 have standard support for this mechanism, allowing them to use those secrets in an easy and efficient way.
 
-This mechanism is more secure than environment variables, as those files can be read only by the process that will require them. They
+This mechanism is more secure than environment variables, as those files can be read only by the process that requires them. They
 also benefit from the rich Kubernetes ecosystem, and they can be managed by various management tools, including the tools provided by
 your cloud provider.
 
@@ -53,10 +52,10 @@ on the tools used to manage the Kubernetes infrastructure.
 
 ## Using a Secrets store
 
-A Secrets store, like Hashicorp Vault or Azure Key Vault, is a specialized software for managing secrets. It offers a rich management
+A Secrets store, like Hashicorp Vault or Azure Key Vault, is specialized software for managing secrets. It offers a rich management
 system to authorize users, rotate security keys, and validates which application can access which secret.
 
 They also provide an external API, so they can be used on any system. For example, you can use Azure Key Vault on all Azure services,
 including Virtual Machines, Azure App Services, Azure Kubernetes Services, or Azure Spring Apps.
 
-A Secrets store is the most secure and advanced solution for managing secrets, but they require the use of a dedicated tool.
+A Secrets store is the most secure solution for managing secrets, but they require the use of a dedicated tool.

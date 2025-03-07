@@ -1,0 +1,91 @@
+### YamlMime:ModuleUnit
+uid: learn.defender-iot-deploy-sensor.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 4/15/2024
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: unit
+durationInMinutes: 5
+###########################################################################
+###
+### General guidance (https://review.learn.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+
+quiz:
+
+  questions:
+  
+  - content: "Which of these actions is performed first when deploying a sensor?"
+    choices:
+    - content: "Upload a signed security certificate"
+      isCorrect: false
+      explanation: "Incorrect, the first action is to upload the monitor software."
+    - content: "Upload the monitor software"
+      isCorrect: true 
+      explanation: "Correct, the first action is to upload the monitor software."
+    - content: "Activate the sensor"
+      isCorrect: false
+      explanation: "Incorrect, the first action is to upload the monitor software."
+
+  - content: "Where can the monitoring ISO software file be downloaded from?"
+    choices:
+    - content: "The sensor set up page after sensor onboarding" 
+      isCorrect: true
+      explanation: "Correct, the sensor set up page."
+    - content: "It automatically downloads after the onboarding process"
+      isCorrect: false
+      explanation: "Incorrect, it's on the sensor set up page after sensor onboarding."
+    - content: "It's available in the Set Up, but only after the security certificate is uploaded"
+      isCorrect: false
+      explanation: "Incorrect, it's on the sensor set up page after sensor onboarding."
+
+  - content: "In the management tab, you must set the new sensor networking details. Why is this important?"
+    choices:
+    - content: "Setting unique details adds security to the connections"
+      isCorrect: true
+      explanation: "Correct, to ensure the highest level of security, don't use the default settings."
+    - content: "The default settings don't actually work, but any new ones will"
+      isCorrect: false 
+      explanation: "Incorrect, new settings ensure a higher level of security."
+    - content: "The sensor only starts tracking once its details are reset and not before"
+      isCorrect: false
+      explanation: "Incorrect, new settings ensure a higher level of security."
+
+  - content: "What is the best type of security certificate to be added to the sensor deployment?"
+    choices:
+    - content: "S/MIME protocol certificate" 
+      isCorrect: false
+      explanation: "Incorrect, the S/MIME certificate is issued for email transfers and wouldn't provide the correct level of security."
+    - content: "Self-signed certificate"
+      isCorrect: false
+      explanation: "Incorrect, the self-signed certificate is issued from an individual user and wouldn't provide the correct level of security."
+    - content: "CA-signed certificate"
+      isCorrect: true
+      explanation: "Correct, this certificate is issued from an authority that checks the user and provides the correct level of security."
+
+
+  - content: "By selecting enable in the Interface configurations tab, what starts to work?"
+    choices:
+    - content: "The sensor, which is now able to send monitoring data to the Azure portal"
+      isCorrect: false
+      explanation: "Incorrect, it enables the individual sensor interface to send data to display in Defender for IoT."
+    - content: "The IP address for the sensor"
+      isCorrect: false
+      explanation: "Incorrect, it enables the individual sensor interface to send data to display in Defender for IoT."
+    - content: "The specific endpoint interface chosen on the sensor"
+      isCorrect: true
+      explanation: "Correct, the individual sensor interface is set to enable and sends data to display in Defender for IoT."

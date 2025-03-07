@@ -2,15 +2,17 @@
 uid: learn.azdo.create-a-build-pipeline.7-publish-build-result
 title: Exercise - Publish the result to the pipeline
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Publish the result to the pipeline
   description: Publish your build artifact to the pipeline so others can access the build results.
-  ms.date: 04/04/2023
+  ms.date: 09/13/2024
   ms.custom: devdivchpfy22, engagement-fy23
   author: steved0x
   ms.author: sdanie
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   zone_pivot_groups: azure-pipelines-agent-hosting
 durationInMinutes: 10
 content: |
   [!include[](includes/7-publish-build-result.md)]
+

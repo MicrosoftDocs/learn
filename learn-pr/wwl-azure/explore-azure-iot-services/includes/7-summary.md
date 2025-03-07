@@ -1,1 +1,0 @@
-Your team will be building an Azure IoT solution but has not used either Azure IoT Hub or the Device Provisioning Service before. Examining the service features and exploring these tools in the Azure portal provides the experience you need to begin configuring your solution.

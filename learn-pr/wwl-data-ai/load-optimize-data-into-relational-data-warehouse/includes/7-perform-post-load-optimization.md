@@ -1,5 +1,3 @@
-
-
 After loading new data into the data warehouse, it's a good idea to rebuild the table indexes and update statistics on commonly queried columns.
 
 ## Rebuild indexes

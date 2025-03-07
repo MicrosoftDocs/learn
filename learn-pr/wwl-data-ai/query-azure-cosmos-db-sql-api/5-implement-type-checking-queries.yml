@@ -2,13 +2,14 @@
 uid: learn.wwl.query-azure-cosmos-db-sql-api.implement-type-checking-queries
 title: Implement type-checking in queries
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement type-checking in queries
   description: "Implement type-checking in queries"
   ms.date: 11/04/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 9

@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.run-iot-edge-device-restricted-network-offline.introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Run an IoT Edge device in restricted network and offline.
   ms.date: 05/01/2020
   author: abartolo
   ms.author: abartolo
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom:
   - team=cloud_advocates
   ms.contributors:
@@ -17,3 +18,4 @@ title: Introduction
 durationInMinutes: 10
 content: |
   [!include[](includes/1-introduction.md)]
+

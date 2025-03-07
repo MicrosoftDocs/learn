@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-microsoft-ai-strategy-manufacturing.1b-ai-manufacturing
+title: AI and manufacturing
+metadata:
+  title: AI and manufacturing
+  description: "AI and manufacturing"
+  ms.date: 08/12/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/1b-ai-manufacturing.md)]

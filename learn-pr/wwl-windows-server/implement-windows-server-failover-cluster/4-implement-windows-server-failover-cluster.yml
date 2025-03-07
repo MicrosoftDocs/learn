@@ -4,11 +4,10 @@ title: Implement Windows Server failover clustering
 metadata:
   title: Implement Windows Server failover clustering
   description: "Implement Windows Server failover clustering"
-  ms.date: 09/28/2021
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 16
@@ -21,10 +20,10 @@ quiz:
     choices:
     - content: "Disk"
       isCorrect: false
-      explanation: "That's incorrect. The demonstration video illustrated implementation of a file share witness."
+      explanation: "Incorrect. The demonstration video illustrated implementation of a file share witness."
     - content: "File share"
       isCorrect: true
-      explanation: "That's correct. The demonstration video illustrated implementation of a file share witness."
+      explanation: "Correct. The demonstration video illustrated implementation of a file share witness."
     - content: "Cloud"
       isCorrect: false
-      explanation: "That's incorrect. The demonstration video illustrated implementation of a file share witness."
+      explanation: "Incorrect. The demonstration video illustrated implementation of a file share witness."

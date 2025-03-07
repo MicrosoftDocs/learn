@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.design-scalable-semantic-models.storage-modes
+title: Choose the best storage mode
+metadata:
+  title: "Choose the best storage mode"
+  description: "Understand the different storage modes and guidance to optimize each connection type."
+  ms.date: 10/15/2024
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-storage-modes.md)]

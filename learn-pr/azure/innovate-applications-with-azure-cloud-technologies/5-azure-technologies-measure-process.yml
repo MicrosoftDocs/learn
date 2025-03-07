@@ -4,10 +4,9 @@ metadata:
   title: Azure technologies for measuring business impact
   description: Using Azure Application Insights to support the measure step of the innovation lifecycle
   ms.date: 04/14/2023
-  author: jomore
-  ms.author: jomore
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 title: Azure technologies for measuring business impact
 durationInMinutes: 8
 content: |

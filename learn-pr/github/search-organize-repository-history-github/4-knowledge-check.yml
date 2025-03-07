@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check what you've learned.
-  ms.date: 06/26/2020
+  ms.date: 01/02/2025
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/4-knowledge-check.md)]
@@ -17,7 +16,7 @@ quiz:
   questions:
   - content: "How does GitHub's top-level search bar differ from the search options available on repository tabs?"
     choices:
-    - content: "Other than being located in different parts of the user interface, they are otherwise the same."
+    - content: "Other than being located in different parts of the user interface, they're otherwise the same."
       isCorrect: false
       explanation: "They offer different user experiences due to their scoping."
     - content: "They support different filter syntax options."
@@ -39,7 +38,7 @@ quiz:
       explanation: "In some systems, `git praise` is a friendlier alias for the `git blame` command."
   - content: "Suppose a bug issue is reported on your project, and you know which pull request introduced the problem. Which of the following options is **not** a cross-linking best practice?"
     choices:
-    - content: "Do not create cross-links when the root cause of the issue is already known."
+    - content: "Don't create cross-links when the root cause of the issue is already known."
       isCorrect: true
       explanation: "It's a good practice to always add cross-links in case you or someone else needs the context later on."
     - content: "Add a comment to the bug report that includes the pull request's author by using an @mention."

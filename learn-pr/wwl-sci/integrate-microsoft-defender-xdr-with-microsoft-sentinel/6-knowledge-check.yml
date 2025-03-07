@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel.6-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check."
+  ms.date: 10/2/2024
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What is one of the benefits of integrating Microsoft Sentinel and Defender XDR in the Defender portal?
+    choices:
+    - content: It increases the complexity of managing and switching between multiple tools.
+      isCorrect: false
+      explanation: Incorrect. The integration actually reduces the complexity of managing and switching between different systems.
+    - content: It streamlines operations and reduces the risk of errors that can occur when switching between different systems.
+      isCorrect: true
+      explanation: Correct. By integrating security solutions, operations can be streamlined and the risk of errors reduced.
+    - content: It requires context-switching when querying across different data sets.
+      isCorrect: false
+      explanation: Incorrect. The integration allows for efficient querying from a single portal across different data sets, removing the need for context-switching.
+  - content: Which portal supports the functionality of adding entities to threat intelligence from incidents in Microsoft Sentinel?
+    choices:
+    - content: Both Azure and Defender portals
+      isCorrect: false
+      explanation: Incorrect. Both portals do not support this functionality, only one does.
+    - content: Azure portal
+      isCorrect: true
+      explanation: Correct. The Azure portal supports the functionality of adding entities to threat intelligence from incidents in Microsoft Sentinel.
+    - content: Defender portal
+      isCorrect: false
+      explanation: Incorrect. The Defender portal does not support the functionality of adding entities to threat intelligence from incidents.
+  - content: What is one of the product changes associated with connecting a workspace to Defender XDR?
+    choices:
+    - content: Microsoft Sentinel Reader role is assigned to the Microsoft Threat Protection and WindowsDefenderATP apps within the subscription.
+      isCorrect: false
+      explanation: Incorrect. The Microsoft Sentinel Contributor role, not the Reader role, is assigned to the Microsoft Threat Protection and WindowsDefenderATP apps within the subscription.
+    - content: All Microsoft security incident creation rules are activated to avoid duplicate incidents.
+      isCorrect: false
+      explanation: Incorrect. Active Microsoft security incident creation rules are deactivated, not activated, to avoid duplicate incidents.
+    - content: Log tables, queries, and functions in the Microsoft Sentinel workspace are also available in advanced hunting within Defender XDR.
+      isCorrect: true
+      explanation: Correct. When a workspace is connected to Defender XDR, log tables, queries, and functions in the Microsoft Sentinel workspace become available in advanced hunting within Defender XDR.
+  - content: What happens when a workspace is disconnected from the Defender portal in Microsoft Sentinel?
+    choices:
+    - content: The Microsoft Sentinel section is removed from the left-hand side navigation of the Defender portal
+      isCorrect: true
+      explanation: Correct. When a workspace is disconnected, the Microsoft Sentinel section is removed from the navigation of the Defender portal.
+    - content: The workspace is deleted from Microsoft Sentinel
+      isCorrect: false
+      explanation: Incorrect. Disconnecting a workspace does not delete it from Microsoft Sentinel.
+    - content: Data from Microsoft Sentinel is still included on the Overview page
+      isCorrect: false
+      explanation: Incorrect. Once disconnected, data from Microsoft Sentinel is no longer included on the Overview page.
+

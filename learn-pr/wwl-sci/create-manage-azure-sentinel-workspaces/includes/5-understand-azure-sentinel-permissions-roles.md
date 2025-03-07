@@ -38,7 +38,7 @@ Users with particular job requirements may need to be assigned other roles or sp
 
 - Guest users assigning incidents
 
-  If a guest user needs to be able to assign incidents, then in addition to the Microsoft Sentinel Responder role, the user will also need to be assigned the role of Directory Reader. This role isn't an Azure role but an Azure Active Directory role, and that regular (non-guest) users have this role assigned by default.
+  If a guest user needs to be able to assign incidents, then in addition to the Microsoft Sentinel Responder role, the user will also need to be assigned the role of Directory Reader. This role isn't an Azure role but a Microsoft Entra role, and that regular (non-guest) users have this role assigned by default.
 
 - Creating and deleting workbooks
 
@@ -79,4 +79,3 @@ The following table summarizes the roles and allowed actions in Microsoft Sentin
 ## Custom roles and advanced Azure RBAC
 
 If the built-in Azure roles don't meet the specific needs of your organization, you can create your own custom roles. Just like built-in roles, you can assign custom roles to users, groups, and service principals for management-group, subscription, and resource-group scopes.
-

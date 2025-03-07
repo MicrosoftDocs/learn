@@ -5,10 +5,9 @@ metadata:
   title: Exercise - Test and train datasets
   description: Exercise unit testing and training datasets in machine learning
   ms.date: 05/25/2021
-  author: TomReidNZ
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: s-polly
+  ms.author: scottpolly
+  ms.topic: unit
 durationInMinutes: 10
 sandbox: true
 notebook: notebooks/5-5-exercise-test-training-datasets.ipynb

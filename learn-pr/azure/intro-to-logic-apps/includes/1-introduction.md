@@ -1,22 +1,46 @@
-Implementing a business process can be challenging because you typically need to make diverse services work together. Think about everything your company uses to store and process data: Salesforce, Microsoft 365, Oracle, Twitter, YouTube, Dropbox, Google services, Azure Cognitive Services, and so on. How do you integrate all these products? Azure Logic Apps gives you pre-built components to connect to hundreds of services. You use a graphical design tool to put the pieces together in any combination you need, and Azure Logic Apps will run your process automatically in the cloud.
+Many businesses today work with diverse services, systems, apps, and data. Business processes often use data that flows through multiple products and technologies. Consider everything that a business can use to receive, process, and store data. For example, you can use Salesforce, Microsoft 365, Oracle, SQL Server, X, YouTube, Dropbox, Google services, Azure AI services, and so on.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qhug]
+If your business has similar scenarios, you often face challenges in making products and technologies work together. Success depends on integration solutions that run efficiently, smoothly, and seamlessly to route the necessary data to the appropriate task. If you automate the workloads and data flows that power your business processes, you can streamline your business even further.
 
-Suppose you work at an athletic shoe company that is launching a new product. You sell the shoes on your website, manage your cloud-hosted advertising videos, and monitor social media to gauge reactions to the launch. The following illustration shows these processes. Notice how the tasks include both customer-facing processes like direct sales and administrative tasks like auto-archiving old videos.
+Azure Logic Apps is a cloud platform that helps you:
 
-:::image type="complex" source="../media/business-processes.png" alt-text="Diagram of three business processes for a fictitious shoe company: online sales to consumers, social-media analysis, and video asset management.":::
-Diagram showing three business processes used by a fictional shoe-manufacturing company. The first process shows a typical flow for online sales including receiving a customer order, charging their credit card, and shipping the product. The second process shows the company monitoring and analyzing social-media postings about their products. The third process shows management of video assets by moving them to lower-cost storage as they get older.
-:::image-end:::
+- Automate business processes as integration workflows that run in Azure cloud.
 
-Here, you'll see how Azure Logic Apps automates these types of business processes. You'll also learn a bit about how they work behind the scenes. The goal is to help you decide if Azure Logic Apps is a good choice for your business.
+- Build integration solutions for a wide range of scenarios, not only inside your company and customer-facing, but also business to business (B2B).
+
+- Create workflows more easily using the visual designer in a browser, Visual Studio Code, or Visual Studio.
+
+  The designer provides 1,000+ prebuilt connectors and operations that work with a vast variety of services, systems, apps, and data. Or, create your own custom connectors to work with existing APIs. Either way, you save time because you rarely have to write or maintain any code.
+
+- Automate your own software development process with continuous integration and deployment (CI/CD) in Azure DevOps.
+
+- Monitor and maintain your solutions more easily using tools and services in Azure.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b73a5a71-e109-4c38-800e-31905808eac9]
+
+Suppose you work at an athletic shoe company that is planning a new product. You sell the shoes on your website, manage your cloud-hosted advertising videos, and monitor industry news about your company and your competitors.
+
+The following diagram shows the tasks for these business processes:
+
+- Customer-focused processes, such as direct sales. 
+- Administrative tasks, such as autoarchiving outdated videos.
+- Marketing tasks, such as monitoring and analyzing news for market perception.
+
+:::image type="content" source="../media/business-processes.png" alt-text="Diagram shows three business processes for a fictitious shoe company, including online sales to customers, news analysis, and video asset management." lightbox="../media/business-processes.png":::
+
+The first business process shows a typical flow for online sales, which includes getting a customer order, charging a credit card, and shipping the product. The second process shows managing video assets by moving outdated videos to lower-cost storage. The third shows monitoring and analyzing industry news.
+
+In this module, you learn how Azure Logic Apps can automate these types of business processes. You also learn how these processes work behind the scenes. This module should help you decide whether Azure Logic Apps is a good fit for implementing your business scenario.
 
 ## Learning objectives
 
-In this module, you will:
-- Evaluate whether Azure Logic Apps is appropriate to automate your business processes
-- Describe how the components of a logic app work together to automate a business process
+In this module, you complete the following tasks:
+
+- Get an overview about how Azure Logic Apps helps with integration challenges.
+- Evaluate whether Azure Logic Apps can best help automate your business processes.
+- Understand how the components in a logic app workflow work together to automate a business process.
 
 ## Prerequisites
 
-- Basic knowledge of programming concepts such as conditional logic and loops
-- Basic knowledge of REST services and APIs
+- Basic knowledge about programming concepts, such as conditional logic and loops
+- Basic knowledge about APIs and REST services

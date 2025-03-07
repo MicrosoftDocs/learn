@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.explore-fundamentals-kql.kql-query-structure
+title: How a KQL query is built
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: How a KQL query is built
+  description: Learn about the structure of a KQL query, how data is processed through the funnel. Learn about inputs, outputs, and the query pipeline. What are the kinds of KQL queries?    
+  ms.date: 11/01/2024
+  author: shsagir
+  ms.author: shsagir
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-kql-query-structure.md)]

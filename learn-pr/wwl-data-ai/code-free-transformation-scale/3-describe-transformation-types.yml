@@ -2,13 +2,14 @@
 uid: learn.wwl.perform-code-free-transformation-scale-azure-data-factory.describe-transformation-types
 title: Describe Azure Data Factory transformation types
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe Azure Data Factory transformation types
   description: "Describe Azure Data Factory transformation types"
   ms.date: 11/18/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

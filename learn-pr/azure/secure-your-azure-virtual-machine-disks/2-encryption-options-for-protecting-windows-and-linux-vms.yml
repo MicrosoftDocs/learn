@@ -2,13 +2,16 @@
 uid: learn.secure-your-azure-virtual-machine-disks.2-encryption-options-for-protecting-windows-and-linux-vms
 title: Encryption options for protecting Windows and Linux VMs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Encryption options for protecting Windows and Linux VMs
   description: Encryption options for protecting Windows and Linux VMs
-  ms.date: 09/24/2018
+  ms.date: 09/10/2024
   author: roygara
   ms.author: rogarana
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: linux-related-content
 durationInMinutes: 8
 content: |
   [!include[](includes/2-encryption-options-for-protecting-windows-and-linux-vms.md)]
+

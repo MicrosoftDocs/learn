@@ -1,18 +1,18 @@
-You will soon be writing code to create a web page.
+You'll soon be writing code to create a web page.
 
-:::image type="content" source="../media/html-to-webpage.png" alt-text="Image of HTML Code and the resulting webpage for an example resume.":::
+:::image type="content" source="../media/html-to-webpage.png" alt-text="Diagram showing HTML Code and the resulting webpage for an example resume.":::
 
-When getting started with a new technology there are different terms you will need to be familiar with. While your vocabulary will expand as you continue to grow as a web developer, there are certain core concepts which will help you get started.
+When getting started with a new technology there are different terms you'll need to be familiar with. While your vocabulary will expand as you continue to grow as a web developer, there are certain core concepts which will help you get started.
 
 ## Web Pages and Websites
 
-Web pages, HTML pages, or simply pages are similar to a page in an e-book. They are a single screen that displays information. You might scroll up and down on the page, but it's made to be a collection of similar data. Software developers create pages in HTML *files*. A file is like a document you might create in a word processor. Instead of writing in a language like English or Spanish, you create files using the languages designed for websites.
+Web pages, HTML pages, or simply pages are similar to a page in an e-book. They're a single screen that displays information. You might scroll up and down on the page, but it's made to be a collection of similar data. Software developers create pages in HTML *files*. A file is like a document you might create in a word processor. Instead of writing in a language like English or Spanish, you create files using the languages designed for websites.
 
 In web development, a web page can be a single file or the result of bringing two or more files together. In the next section, you'll learn about the different files that can be used to create a web page.
 
 A website is a set of pages. Returning to our e-book analogy, the e-book itself would be the website. It has all of the pages and is read by a user one page at a time. A website could be a single page, thousands of pages, and everything in between.
 
-As you read this unit, you are reading a web page. You scroll up and down to examine the information you want. You eventually navigate to a different page to review the next unit. All of these pages make up the site that is Microsoft Learn.
+As you read this unit, you're reading a web page. You scroll up and down to examine the information you want. You eventually navigate to a different page to review the next unit. All of these pages make up the site that is Microsoft Learn.
 
 ## Creating a Web Page
 

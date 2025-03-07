@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.foundations-platform-engineering.core-aspects-platform-implementation
+title: Core Aspects of Platform Implementation
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Core Aspects of Platform Implementation
+  description: "Core Aspects of Platform Implementation"
+  ms.date: 01/14/2025
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-core-aspects-platform-implementation.md)]

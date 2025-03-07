@@ -5,18 +5,20 @@ metadata:
   unitType: unit
   title: " Benefits of using XAML"
   description: "Describe why to use XAML to design the UI for a .NET MAUI app"
-  ms.date: 04/29/2022
+  ms.date: 10/24/2024
   author: codemillmatt  
-  ms.author: masoucou 
-  ms.topic: interactive-tutorial
-  ms.prod: learning-languages
+  ms.author: masoucou
+  ms.manager: markl
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 5
 content: |
   [!include[](includes/2-xaml-benefits.md)]
 quiz:
   title: Knowledge check
   questions:
-  - content: "Which method must you call in the constructor of a page to read the XAML description of the page, loads the various controls on that page, and sets their properties?"
+  - content: "Which method must you call in the constructor of a page to read the XAML description of the page, load the various controls on that page, and set their properties?"
     choices:
     - content: "InitializeComponent"
       isCorrect: true
@@ -31,7 +33,7 @@ quiz:
     choices:
     - content: "XAML runs more efficiently than C# code for constructing the UI at runtime."
       isCorrect: false
-      explanation: "No. There may be some minor difference in performance, but it could also be that in some cases defining the UI by using C# code results in more efficient code."
+      explanation: "No. There might be some minor difference in performance, but it could also be that in some cases defining the UI by using C# code results in more efficient code."
     - content: "You can separate the definition of the UI from the logic of the app."
       isCorrect: true
       explanation: "This is the correct answer."

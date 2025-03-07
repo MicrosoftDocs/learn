@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.multistage-reasoning-azure-databricks.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/23/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What is a key advantage of using multi-stage reasoning in Large Language Models (LLMs)?"
+    choices:
+    - content: "It reduces the overall computational cost."
+      isCorrect: false
+      explanation: "Incorrect. Multi-stage reasoning doesn't reduce the overall computational cost."
+    - content: "Dividing a complex problem into smaller and more manageable tasks."
+      isCorrect: true
+      explanation: "Correct. Multi-stage reasoning involves dividing a complex problem into smaller, more manageable tasks that the model can solve sequentially. This approach improves the model’s ability to handle intricate reasoning processes by addressing each subtask independently before combining the results to solve the overall problem."
+    - content: "It eliminates the need for external data sources."
+      isCorrect: false
+      explanation: "Incorrect. Multi-stage reasoning doesn't eliminate the need for external data sources."
+  - content: "Which framework is commonly used for managing multi-stage reasoning systems in LLMs?"
+    choices:
+    - content: "Tensorflow"
+      isCorrect: false
+      explanation: "Incorrect. TensorFlow is an open-source platform used for building and deploying deep learning models."
+    - content: "PyTorch"
+      isCorrect: false
+      explanation: "Incorrect. PyTorch is an open-source deep learning framework used for developing and training machine learning models, with a focus on flexibility and dynamic computation graphs."
+    - content: "LangChain"
+      isCorrect: true
+      explanation: "Correct. LangChain is a popular framework that helps build complex reasoning systems by linking different reasoning tasks together."
+  - content: "In the context of multi-stage reasoning with LLMs, what is the primary role of a 'retriever' in a retriever-based chain?"
+    choices:
+    - content: "To generate new data based on the initial input."
+      isCorrect: false
+      explanation: "Incorrect. The 'retriever' isn't used to generate new data."
+    - content: "To retrieve relevant information or documents that can be used in subsequent reasoning stages."
+      isCorrect: true
+      explanation: "Correct. In a retriever-based chain, the retriever is responsible for fetching relevant information or documents from a predefined dataset or knowledge base. This retrieved information is then passed on to subsequent stages in the reasoning process, where it can be used to generate a more informed and accurate response."
+    - content: "To execute logical operations like AND, OR, and NOT."
+      isCorrect: false
+      explanation: "Incorrect. The 'retriever' isn't used to execute logical operations like AND, OR and NOT."
+

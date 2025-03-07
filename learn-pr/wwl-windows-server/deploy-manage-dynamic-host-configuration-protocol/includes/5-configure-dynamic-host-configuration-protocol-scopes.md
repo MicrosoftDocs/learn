@@ -80,7 +80,7 @@ The following video demonstrates how to create a DHCP scope using the DHCP conso
     - IP address
     - MAC address
 
- >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWxDP4]
+ >[!VIDEO https://learn-video.azurefd.net/vod/player?id=3952dfc9-680f-4597-accb-2008a32ab92c]
 
 ---
 

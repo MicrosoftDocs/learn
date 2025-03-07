@@ -6,8 +6,8 @@ metadata:
   ms.date: 11/21/2022
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: microsoft-sentinel
 title: Automation in Microsoft Sentinel
 summary: By the end of this module, you'll be able to use automation rules in Microsoft Sentinel to automated incident management.
 abstract: |

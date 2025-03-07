@@ -2,15 +2,19 @@
 uid: learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
-  description: "Summary"
-  ms.date: 11/11/2022
+  description: Summary
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/20/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
+

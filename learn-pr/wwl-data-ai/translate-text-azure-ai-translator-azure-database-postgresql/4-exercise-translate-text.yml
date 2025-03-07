@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.translate-text-azure-ai-translator-azure-database-postgresql.exercise-translate-text
+title: Exercise-Translate text
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Exercise-Translate text
+  description: Exercise-Translate text
+  author: wwlpublish
+  ms.author: calopez
+  ms.date: 11/24/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-exercise-translate-text.md)]
+

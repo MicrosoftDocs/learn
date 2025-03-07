@@ -2,15 +2,16 @@
 uid: learn.wwl.configure-blob-storage.upload-blobs
 title: Upload blobs
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Upload blobs
   description: "Upload blobs"
-  ms.date: 03/27/2023
+  ms.date: 01/29/2025
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
 content: |
   [!include[](includes/7-upload-blobs.md)]

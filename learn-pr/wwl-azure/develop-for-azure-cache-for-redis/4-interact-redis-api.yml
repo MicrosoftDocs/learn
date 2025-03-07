@@ -2,13 +2,16 @@
 uid: learn.wwl.develop-for-azure-cache-for-redis.interact-by-using-net
 title: Interact with Azure Cache for Redis by using .NET
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Interact with Azure Cache for Redis by using .NET
   description: "Interact with Azure Cache for Redis by using .NET"
-  ms.date: 04/24/2023
+  ms.date: 02/24/2025
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/4-interact-redis-api.md)]

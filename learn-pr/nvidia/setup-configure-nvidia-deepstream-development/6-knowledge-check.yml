@@ -2,14 +2,15 @@
 uid: learn.nvidia.setup-configure-nvidia-deepstream-development.6-knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check.
-  ms.date: 11/09/2021
+  ms.date: 09/03/2024
   author: toolboc
   ms.author: chnoring
   ms.custom: team=nextgen
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 5
 content: |
@@ -26,7 +27,7 @@ quiz:
       explanation: Incorrect. Object-Oriented Programming isn't a computer vision algorithm.
     - content: 'Object Detection, Image Classification, and Object Tracking'
       isCorrect: true
-      explanation: Correct. These computer vision algorithms are all supported for use in inference by the DeepStream SDK.
+      explanation: Correct. The DeepStream SDK supports all of these computer vision algorithms for use in inference.
   - content: 'DeepStream applications can visually display which of the following forms of metadata in the on-screen display?'
     choices: 
     - content: 'Bounding boxes for detected objects only'
@@ -49,3 +50,4 @@ quiz:
     - content: '`[tiled-display]num-sources`'
       isCorrect: false
       explanation: Incorrect. The `num-sources` property can be applied to sources of type `File` to denote the creation of *N* instances of `uri`.
+

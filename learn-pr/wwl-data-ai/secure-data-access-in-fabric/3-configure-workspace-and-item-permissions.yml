@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.secure-data-access-in-fabric.configure-workspace-and-item-permissions
+title: Configure workspace and item permissions
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Configure workspace and item permissions
+  description: "Learn how to implement workspace roles and configure data item permissions in Microsoft Fabric."
+  ms.date: 10/18/2024
+  author: wwlpublish
+  ms.author: theresai
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-configure-workspace-and-item-permissions.md)]

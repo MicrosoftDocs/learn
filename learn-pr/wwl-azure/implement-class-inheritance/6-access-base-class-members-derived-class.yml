@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-class-inheritance.access-base-class-members-derived-class
+title: Access base class members from a derived class
+metadata:
+  title: Access base class members from a derived class
+  description: "Access base class members from a derived class"
+  ms.date: 03/06/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-access-base-class-members-derived-class.md)]

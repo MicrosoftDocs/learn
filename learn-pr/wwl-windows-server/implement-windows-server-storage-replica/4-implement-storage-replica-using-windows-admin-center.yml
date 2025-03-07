@@ -4,11 +4,10 @@ title: Implement Storage Replica by using Windows Admin Center
 metadata:
   title: Implement Storage Replica by using Windows Admin Center
   description: "Implement Storage Replica by using Windows Admin Center"
-  ms.date: 10/20/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 10
@@ -21,10 +20,10 @@ quiz:
     choices:
     - content: "Kerberos"
       isCorrect: false
-      explanation: "That's incorrect. The demo illustrated how to use CredSSP to implement Storage Replica by using Windows Admin Center."
+      explanation: "Incorrect. The demo illustrated how to use CredSSP to implement Storage Replica by using Windows Admin Center."
     - content: "CredSSP"
       isCorrect: true
-      explanation: "That's correct. The demo illustrated how to use CredSSP to implement Storage Replica by using Windows Admin Center."
+      explanation: "Correct. The demo illustrated how to use CredSSP to implement Storage Replica by using Windows Admin Center."
     - content: "NTLM"
       isCorrect: false
-      explanation: "That's incorrect. The demo illustrated how to use CredSSP to implement Storage Replica by using Windows Admin Center."
+      explanation: "Incorrect. The demo illustrated how to use CredSSP to implement Storage Replica by using Windows Admin Center."

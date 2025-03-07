@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-defender-cloud-threat-protection.just-in-time-machine-access
+title: Just-in-time machine access
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Just-in-time machine access
+  description: "Just-in-time machine access"
+  ms.date: 02/28/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - references_regions
+durationInMinutes: 7
+content: |
+  [!include[](includes/19-just-in-time-machine-access.md)]

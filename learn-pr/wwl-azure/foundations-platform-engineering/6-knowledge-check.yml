@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.foundations-platform-engineering.knowledge-check
+title: Knowledge Check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge Check
+  description: "Knowledge Check"
+  ms.date: 01/09/2025
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: What is the primary role of platform engineering in an organization?
+      choices:
+        - content: Building user-facing applications or services.
+          isCorrect: false
+          explanation: Incorrect. This is the primary role of application engineering, not platform engineering.
+        - content: Creating marketing strategies for the company's products.
+          isCorrect: false
+          explanation: Incorrect. This is typically a role for the marketing department, not platform engineering.
+        - content: Creating and managing a cohesive, integrated platform that supports developers in building, deploying, and maintaining applications.
+          isCorrect: true
+          explanation: Correct. Platform engineering focuses on creating a unified framework that enhances developer productivity and operational efficiency.
+    - content: What is the purpose of implementing shift-left, start-right, and stay-right practices in platform engineering?
+      choices:
+        - content: To enforce governance and compliance only during the runtime and production.
+          isCorrect: false
+          explanation: Incorrect. While stay-right focuses on runtime and production, shift-left and start-right address issues early and provide solid foundations respectively.
+        - content: To focus solely on the development process and ignore operational standards.
+          isCorrect: false
+          explanation: Incorrect. These practices balance proactive development with ongoing operational excellence and compliance.
+        - content: To ensure the platform is optimized and aligned with organizational goals throughout its product lifecycle.
+          isCorrect: true
+          explanation: Correct. These practices aim to balance proactive development practices with ongoing operational excellence and compliance.
+    - content: What is the primary focus of the Interfaces capability in the Platform Engineering Capability Model?
+      choices:
+        - content: It considers how users interact with and consume the platform services and products.
+          isCorrect: true
+          explanation: Correct. The Interfaces capability is about establishing standards, increasing user autonomy, and seamlessly integrating platform capabilities into existing workflows.
+        - content: It focuses on how users create, deploy, and manage resources.
+          isCorrect: false
+          explanation: Incorrect. This is the focus of the Provisioning and Management capability, not the Interfaces capability.
+        - content: It involves gathering, analyzing, and incorporating metrics and feedback to assess the success of platform engineering practices.
+          isCorrect: false
+          explanation: Incorrect. This is the focus of the Measurements and Feedback capability, not the Interfaces capability.
+    - content: What is the primary goal of deploying environments as a service in platform engineering?
+      choices:
+        - content: To enable secure, standardized, and automated provisioning of infrastructure.
+          isCorrect: true
+          explanation: Correct. Deploying environments as a service is designed to provide secure, standardized, and automated infrastructure provisioning.
+        - content: To allow developers direct access to sensitive credentials and underlying subscription.
+          isCorrect: false
+          explanation: Incorrect. Deploying environments as a service aims to prevent developers from accessing sensitive credentials directly.
+        - content: To decentralize the management of Infrastructure as Code (IaC) templates.
+          isCorrect: false
+          explanation: Incorrect. This approach centralizes the management of IaC templates, not decentralize it.

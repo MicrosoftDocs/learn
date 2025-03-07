@@ -2,14 +2,20 @@
 uid: learn.containerize-deploy-java-app-aks.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: Summary
   title: Summary
-  description: Summary
-  ms.date: 9/28/2021
-  author: chtrembl
-  ms.author: chtrembl
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Summary.
+  ms.date: 02/12/2025
+  author: KarlErickson
+  ms.author: karler
+  ms.reviewer: yoterada
+  ms.topic: unit
+  ms.custom:
+    - devx-track-java
+    - devx-track-extended-java
 durationInMinutes: 2
 content: |
   [!include[](includes/8-summary.md)]
+

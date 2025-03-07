@@ -1,8 +1,8 @@
-You should have learned how to connect Microsoft 365 Defender security solutions to the Microsoft Sentinel workspace using the provided data connectors.
+You should have learned how to connect Microsoft Defender XDR security solutions to the Microsoft Sentinel workspace using the provided data connectors.
 
 You should now be able to:
 
-- Activate the Microsoft 365 Defender connector in Microsoft Sentinel
+- Activate the Microsoft Defender XDR connector in Microsoft Sentinel
 - Activate the Microsoft Defender for Cloud connector in Microsoft Sentinel
 
 ## Learn more

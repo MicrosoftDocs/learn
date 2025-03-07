@@ -6,8 +6,6 @@ In this unit, you'll get some overview information about Azure IoT Central that 
 
 :::image type="content" source="../media/architecture.png" alt-text="Diagram that shows the architecture of Azure IoT Central." border="false":::
 
-Azure IoT Central follows the [eight attributes of successful IoT solutions](https://azure.microsoft.com/resources/8-attributes-of-successful-iot-solutions?azure-portal=true).
-
 ## Main tasks
 
 The high-level steps that you'll follow in this module are:

@@ -1,5 +1,4 @@
 
-
 For Contoso, virtual machine scale sets might solve their need to quickly create and manage VMs for fluctuating workloads. They can use either vertical scaling or horizontal scaling to meet their needs.
 
 ## What is vertical scaling?
@@ -56,19 +55,14 @@ In this procedure, we'll create a virtual machine scale set for a Windows Server
     - **Subscription** and **Resource group**
     - **Virtual machine scale set name**
     - **Region** and **Availability zone**
-    - Image: **Windows Server 2019 Datacenter**
+    - Image: **Windows Server 2025 Azure Edition**
     - **Size**
     - Administrator account details
 5. Select **Next** to move to the other tabs.
 6. On the **Scaling** tab, configure **Initial instance count**, **Scaling policy**, and **Scale-In policy**.
 7. Select **Review + create**.
 8. After validation, select **Create** to deploy the scale set.
-
-![A screenshot of the Create a virtual machine scale set blade. The administrator has selected all default settings on the Scaling tab.](../media/m22-scale-set.png)
-
-If you want to customize the scaling settings, on the **Scaling** tab, for **Scaling policy**, select **Custom**. When the new page opens, configure the additional details, and then select **Review + create**.
-
-![A screenshot of the Create a virtual machine scale set blade. The administrator is configuring the Scaling tab, and has selected Custom, which results in more options being available.](../media/m22-scale-set-2.png)
+9. If you want to customize the scaling settings, on the **Scaling** tab, for **Scaling policy**, select **Custom**. When the new page opens, configure the additional details, and then select **Review + create**.
 
 ### Configuring scaling
 
@@ -77,13 +71,7 @@ After you have created the virtual machine scale set, open the newly created res
 - Manual scale (the default)
 - Custom autoscale
 
-If you want to configure autoscaling, select the **Custom autoscale** option, and then for **Scale Mode**, you can scale based on a metric, such as virtual machine host percentage CPU, or a specific instance count.
-
-![A screenshot of the Scaling tab for the selected virtual machine scale set. The administrator is defining a Scale based on a metric, and rules are displayed that indicate when action scaling should be taken.](../media/m22-scale-set-3.png)
-
-If you want to schedule the scaling automatically, select the **Custom autoscale** option, and then select **Add a scale condition**. You can then specify additional metrics, or a schedule for accommodating known changes in demand.
-
-![A screenshot of the Scaling tab for the selected virtual machine scale set. The administrator is defining a Scale based on a schedule.](../media/m22-scale-set-4.png)
+If you want to configure autoscaling, select the **Custom autoscale** option, and then for **Scale Mode**, you can scale based on a metric, such as virtual machine host percentage CPU, or a specific instance count. If you want to schedule the scaling automatically, select the **Custom autoscale** option, and then select **Add a scale condition**. You can then specify additional metrics, or a schedule for accommodating known changes in demand.
 
 ## Try it
 

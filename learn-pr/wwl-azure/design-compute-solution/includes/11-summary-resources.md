@@ -1,5 +1,19 @@
 In this module, you learned how to choose and recommend an Azure compute solution. You reviewed scenarios for Azure Virtual Machines, Azure Logic Apps, Azure Functions, and Azure Container Instances. Azure Logic Apps and Azure Functions offer serverless compute options. You also looked at scenarios for supporting applications with Azure Batch, Azure App Service, and Azure Kubernetes Service. App Service lets you use the programming language of your choice. Azure Kubernetes Service makes it simple to deploy and manage containerized applications. You explored how to host applications in the cloud with Azure compute services to improve performance, scalability, and flexibility.
 
+## Learn more with Copilot
+
+Copilot can assist you in designing Azure infrastructure solutions. Copilot can compare, recommend, explain, and research products and services where you need more information. Open a Microsoft Edge browser and choose Copilot (top right) or navigate to copilot.microsoft.com. Take a few minutes to try these prompts and extend your learning with Copilot. 
+
+- Compare and contrast how Azure virtual machines are different from Azure containers. Illustrate through examples when to select each product. 
+
+- How can I simplify managing Azure containers? What orchestration products are available in Azure? Create a table of pros and cons. 
+
+- What Azure products are available to host a website? Rank the solutions based on ease of use. 
+
+- What is the difference between Azure Functions and Azure Logic Apps? Provide examples when to use each product. 
+
+
+
 ## Learn more with Azure documentation
 
 - Choose an [Azure compute service](/azure/architecture/guide/technology-choices/compute-decision-tree).
@@ -23,8 +37,6 @@ In this module, you learned how to choose and recommend an Azure compute solutio
 - Review [security considerations for Azure Container Instances](/azure/container-instances/container-instances-image-security).
 
 ## Learn more with self-paced training
-
-- Choose the [best Azure service to automate your business processes](/training/modules/choose-azure-service-to-integrate-and-automate-business-processes/).
 
 - Align [requirements with cloud types and service models in Azure](/training/modules/align-requirements-in-azure/).
 

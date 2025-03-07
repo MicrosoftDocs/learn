@@ -2,13 +2,14 @@
 uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.manage-pod-storage-kubernetes-clusters
 title: Manage pod storage on Kubernetes clusters
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage pod storage on Kubernetes clusters
   description: "Manage pod storage on Kubernetes clusters"
   ms.date: 06/09/2021
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 5
 content: |

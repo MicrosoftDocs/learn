@@ -5,10 +5,9 @@ metadata:
   title: Secure access for workload identities
   description: "SC-100 preparatory unit on this topic: secure access for workload identities."
   ms.date: 3/15/2023
-  author: hrasheed-msft
-  ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/6-secure-access-workload-identities.md)]

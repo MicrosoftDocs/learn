@@ -1,4 +1,3 @@
-
 The Azure Backup service provides simple, secure, and cost-effective solutions to back up your data and recover it from the Azure cloud.
 
 ## Before you start
@@ -19,8 +18,6 @@ By default, vaults use GRS. If the vault is your primary backup mechanism, we re
 2. On the **Properties** page, within **Backup Configuration**, select **Update**.
 3. Select the storage replication type, and then select **Save**.
 
-[![A screenshot of the Backup Configuration blade in the Azure portal. The administrator has selected Geo-redundant.](../media/m20-backup-configuration.png)](../media/m20-backup-configuration.png#lightbox)
-
 > [!CAUTION]
 > You can't modify the storage replication type after you set up the vault and it contains backup items. If you want to do this, you need to re-create the vault.
 
@@ -33,11 +30,8 @@ Download the MARS agent so that you can install it on the machines that you want
 You can also run a backup at any time. To run an on-demand backup, use the following procedure:
 
 1. In the MARS agent, select **Back Up Now**.
-
 2. If the MARS agent version is 2.0.9169.0 or newer, then you can set a custom retention date. In the **Retain Backup Till** section, choose a date from the calendar.
-
 3. On the **Confirmation** page, review the settings, and then select **Back Up**.
-
 4. Select **Close** to close the wizard. If you close the wizard before the backup finishes, the wizard will continue to run in the background.
 
 After the initial backup finishes, the Job completed status displays in the **Backup** console.
@@ -69,7 +63,6 @@ If you accidentally delete a file and want to restore it to the same machine fro
 10. When you're finished, on the **Browse and Recover Files** page, select **Unmount**, and then select **Yes** to confirm that you want to unmount the volume.
 
 ### Use Instant Restore to restore data to an alternate machine
-
 
 If your entire server is lost, you can still recover data from Azure Backup to a different machine. To understand the steps for completing the process, you must understand the terminology used with it:
 

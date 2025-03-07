@@ -5,11 +5,10 @@ metadata:
   unitType: learning-content
   title: Understanding nullability
   description: "In the understanding nullability section of the null-safety module, you'll learn the history of nullability in C#. You'll have an understanding of nullability as it relates to the various types with C#."
-  ms.date: 01/31/2022
-  author: IEvangelist
-  ms.author: dapine
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.date: 07/11/2024
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-understand-nullability.md)]

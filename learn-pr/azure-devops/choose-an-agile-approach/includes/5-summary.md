@@ -6,7 +6,7 @@ In this module, the Tailspin team took their first steps towards adopting DevOps
 
 ## Learn more
 
-This module touches on Agile and Agile processes but there's a lot more to learn.
+This module touches on Agile and Agile processes, but there's a lot more to learn.
 
 If you're interested in learning more about the benefits of Agile, check out [What is Agile Development?](/devops/plan/what-is-agile-development?azure-portal=true)
 

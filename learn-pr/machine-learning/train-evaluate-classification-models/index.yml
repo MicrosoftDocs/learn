@@ -1,13 +1,16 @@
 ### YamlMime:Module
 uid: learn.wwl.train-evaluate-classification-models
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Train and evaluate classification models
   description: "Train and evaluate classification models"
-  ms.date: 01/04/2021
-  author: TomReidNZ
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.collection: TBD
+  ms.date: 08/25/2024
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: module
+  ms.service: azure-machine-learning
 title: Train and evaluate classification models
 summary: Classification is a kind of machine learning used to categorize items into classes.
 abstract: |
@@ -39,3 +42,4 @@ units:
 - learn.wwl.train-evaluate-classification-models.summary
 badge:
   uid: learn.wwl.train-evaluate-classification-models.badge
+

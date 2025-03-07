@@ -6,9 +6,8 @@ metadata:
   description: Learn how to develop a program curriculum and map learning outcomes to certification outcomes.
   ms.date: 08/11/2021
   author: leestott
-  ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: tsheppard
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 8
 content: |

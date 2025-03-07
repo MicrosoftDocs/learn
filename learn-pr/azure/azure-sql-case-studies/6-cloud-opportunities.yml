@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-case-studies.6-cloud-opportunities
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Opportunities in Azure
   description: Opportunities in Azure
   ms.date: 03/15/2023
   author: MashaMSFT
   ms.author: mathoma
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Opportunities in Azure
 durationInMinutes: 10
 content: |

@@ -1,6 +1,6 @@
 With YaST, you can add, remove, and manage software packages on your SLES virtual machine.
 
-It's time to add a package to the server that's going to host your company's website. In this exercise, you'll use the YaST admin tool to search for and install the Apache package.
+It's time to add a package to the server that's going to host your company's website. In this exercise, you use the YaST admin tool to search for and install the Apache package.
 
 ## Start YaST 
 
@@ -34,21 +34,21 @@ It's time to add a package to the server that's going to host your company's web
     apache <RETURN> 
     ```
 
-    Notice that the icon or marker (i) in front of the apache entry on the right shows an empty box. This indicates that the package is not yet installed. 
+    Notice that the icon or marker (i) in front of the apache entry on the right shows an empty box. This icon indicates that the package isn't yet installed. 
 
 1. Switch to the right box with \<TAB\> and go down and select **apache2** in the list with the \<SPACE\> bar.
 
-    The icon changes to a check mark (or "+").  Any shown dependencies will also be indicated (a+).
+    The icon changes to a check mark (or "+"). Any shown dependencies are indicated (a+).
 
     :::image type="content" source="../media/yast-control-center-search-results-inline.png" alt-text="Screenshot of search results for apache2 in YaST Control Center." lightbox="../media/yast-control-center-search-results-expanded.png":::
 
-1. Click Accept to install the apache package.
+1. Choose Accept to install the apache package.
 
-    A new window will be shown with the additional dependent packages which need to be installed too. Click **Continue**.
+    A new window is shown with the additional dependent packages that need to be installed too. Select **Continue**.
 
     :::image type="content" source="../media/yast-control-center-dependent-packages-inline.png" alt-text="Screenshot in YaST showing additional dependent packages to be added." lightbox="../media/yast-control-center-dependent-packages-expanded.png":::
 
-1. In the Installation dialog, click Finish. You will get an information window presented with the summary of your install.
+1. In the Installation dialog, select Finish. You get an information window presented with the summary of your install.
 
     :::image type="content" source="../media/yast-control-center-installation-report-inline.png" alt-text="Screenshot of YaST showing installation report." lightbox="../media/yast-control-center-installation-report-expanded.png":::
 

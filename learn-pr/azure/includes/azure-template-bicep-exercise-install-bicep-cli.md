@@ -1,9 +1,8 @@
 ---
-author: davidsmatlak
-ms.prod: learning-azure
+author: mumian
 ms.topic: include
-ms.date: 11/09/2022
-ms.author: davidsmatlak
+ms.date: 01/15/2025
+ms.author: jgao
 ---
 
 ### Install Bicep
