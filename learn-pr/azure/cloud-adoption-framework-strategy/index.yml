@@ -11,7 +11,7 @@ metadata:
   ms.subservice: caf-methodology-strategy
 title: Prepare for successful cloud adoption by using the Cloud Adoption Framework
 summary: |
- The Cloud Adoption Framework for Azure consists of eight methodologies. This module focuses on the Strategy methodology. It provides guidance about how to assess and improve your organization's foundation before you adopt and integrate cloud technologies. This step is premptive to the next methodology where you create an actionable plan to implement your cloud adoption strategy.
+ The Cloud Adoption Framework for Azure consists of eight methodologies. This module focuses on the Strategy methodology. It provides guidance about how to assess and improve your organization's foundation before you adopt and integrate cloud technologies. The next methodology is the Plan methodology, where you create an actionable plan to implement your cloud adoption strategy.
 abstract: |
   In this module, you'll learn:
   - Create clarity for a corporate strategy to ensure that all team members are working toward common goals. 

@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.cloud-adoption-framework-strategy.mission-objectives
 metadata:
-  title: Capture strategic motivation
+  title: Define Your Mission and Objectives
   description: Capture strategic motivation.
   ms.date: 10/10/2023
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit
-title: Capture strategic motivation
+title: Define your mission and objectives
 durationInMinutes: 10
 content: |
   [!include[](includes/4-mission-objectives.md)]
