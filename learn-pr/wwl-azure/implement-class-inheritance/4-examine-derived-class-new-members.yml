@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-class-inheritance.examine-derived-class-new-members
+title: Extend a derived class with new members
+metadata:
+  title: Extend a derived class with new members
+  description: "Extend a derived class with new members"
+  ms.date: 03/06/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/4-examine-derived-class-new-members.md)]

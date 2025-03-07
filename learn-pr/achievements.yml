@@ -5340,3 +5340,38 @@ achievements:
   title: Create a labeled dataset using Azure Machine Learning data labeling tools
   summary: Learn how to use Azure Machine Learning data labeling to create, manage, and monitor data labeling projects.
   iconUrl: /training/achievements/setup-configure-nvidia-deepstream-development.svg
+- uid: learn.azure.communication-service-send-sms-console-app.badge
+  type: badge
+  title: Send an SMS message from a C# console application with Azure Communication Services
+  summary: In this module, you'll create a C# console application that sends SMS messages using a phone number provisioned via Azure Communication Services.
+  iconUrl: /training/achievements/communication-service-send-sms-console-app.svg
+- uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.badge
+  type: badge
+  title: Track wild polar bears with AI
+  summary: Detect and track polar bears through photos using AI, and then use Power BI to show where cameras spot polar bears.
+  iconUrl: /training/achievements/student-evangelism/build-ml-model-with-azure-stream-analytics-badge.svg
+- uid: learn.reactors.blockchain-tokens.badge
+  type: badge
+  title: Create tokens using OpenZeppelin
+  summary: Learn about the significance of tokens and how they are used in blockchain.
+  iconUrl: /training/achievements/reactors/blockchain-tokens.svg
+- uid: learn.reactors.blockchain-solidity-ethereum-smart-contracts.badge
+  type: badge
+  title: Write Ethereum smart contracts by using Solidity
+  summary: Learn how to install and use tools that you can use to develop smart contracts.
+  iconUrl: /training/achievements/reactors/blockchain-solidity-ethereum-smart-contracts.svg
+- uid: learn.reactors.blockchain-learning-solidity.badge
+  type: badge
+  title: Learn how to use Solidity
+  summary: Discover how Solidity can make it easy to program smart contracts for the Ethereum blockchain platform.
+  iconUrl: /training/achievements/reactors/blockchain-learning-solidity.svg
+- uid: learn.reactors.blockchain-ethereum-networks.badge
+  type: badge
+  title: Connect and deploy to Ethereum networks
+  summary: Learn about and use Ethereum networks for development, testing, and production.
+  iconUrl: /training/achievements/reactors/blockchain-ethereum-networks.svg
+- uid: learn.ethereum-blockchain-development.trophy
+  type: trophy
+  title: Get started with blockchain development
+  summary: This learning path introduces you to blockchain and development on the Ethereum platform. Discover what skills are necessary to learn to begin building your own blockchain networks at scale.
+  iconUrl: /training/achievements/ethereum-blockchain-development.svg
