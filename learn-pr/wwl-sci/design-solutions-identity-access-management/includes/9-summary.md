@@ -23,5 +23,4 @@ You've learned how to:
 
 - [Microsoft Entra security for AWS - Azure Architecture Center](/azure/architecture/reference-architectures/aws/aws-azure-ad-security)
 
-> [!NOTE]
-> This modules contains AI-generated content.
+
