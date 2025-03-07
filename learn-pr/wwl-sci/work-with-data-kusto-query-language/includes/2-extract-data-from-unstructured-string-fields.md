@@ -1,6 +1,6 @@
-Security log data is often contained in unstructured string fields and requires parsing to extract data.  There are multiple ways of pulling information from string fields in KQL.  The two primary operators used are extract and parse.
+Security log data is often contained in unstructured string fields and requires parsing to extract data. There are multiple ways of pulling information from string fields in KQL.  The two primary operators used are extract and parse.
 
-## extract
+## Extract
 
 Extract gets a match for a regular expression from a text string. You may optionally convert the extracted substring to the indicated type.
 
@@ -37,9 +37,9 @@ SecurityEvent
 
 ```
 
-## parse
+## Parse
 
-Parse evaluates a string expression and parses its value into one or more calculated columns. The computed columns will have nulls for unsuccessfully parsed strings.
+Parse evaluates a string expression and parses its value into one or more calculated columns. The computed columns have nulls for unsuccessfully parsed strings.
 
 Syntax
 
@@ -57,7 +57,7 @@ Arguments
 
   - flags: Flags to be used in regex mode like U (Ungreedy), m (multi-line mode), s (match new line \n), i (case-insensitive) in RE2 flags.
 
-  - relaxed: StringConstant is a regular string value and the match is relaxed. All string delimiters should appear in the parsed string, but extended columns may partially match the required types. Extended columns that didn't match the required types will get the value null.
+  - relaxed: StringConstant is a regular string value and the match is relaxed. All string delimiters should appear in the parsed string, but extended columns may partially match the required types. Extended columns that didn't match the required types get the value null.
 
 - Expression: An expression that evaluates to a string.
 

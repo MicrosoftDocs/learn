@@ -6,8 +6,8 @@ metadata:
   prefetch-feature-rollout: true
   title: Describe deployment models in Azure
   description: "Describe deployment models in Azure"
-  ms.date: 06/28/2022
-  author: wwlpublish
+  ms.date: 02/26/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
   ms.custom:

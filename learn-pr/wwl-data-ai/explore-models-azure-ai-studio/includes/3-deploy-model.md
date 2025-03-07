@@ -24,7 +24,14 @@ Now that you understand why you want to deploy a model, let's explore the deploy
 
 When you deploy a language model with Azure AI Foundry, you have several types available, which depend on the model you want to deploy:
 
-|Activity|Azure OpenAI models|Models deployed as Serverless APIs (pay-as-you-go)|Models deployed with user-managed compute|
-|---|---|---|---|
-|Deploy the model|No, you aren't billed for deploying an Azure OpenAI model to your project.|Yes, you're billed minimally per the infrastructure of the endpoint.|Yes, you're billed for the infrastructure hosting the model per minute.|
-|Call the endpoint|Yes, you're billed based on your token usage.|Yes, you're billed based on your token usage.|None.|
+- Azure OpenAI service to deploy [Azure OpenAI models](/azure/ai-services/openai/concepts/models?azure-portal=true).
+- Azure AI model inference to deploy [Azure OpenAI models and Models as a Service](/azure/ai-foundry/model-inference/concepts/models?azure-portal=true).
+- Serverless APIs to deploy [Models as a Service](/azure/ai-foundry/how-to/model-catalog-overview#content-safety-for-models-deployed-via-serverless-apis?azure-portal=true).
+- Managed compute to deploy [open-source and custom models](/azure/ai-foundry/how-to/model-catalog-overview#availability-of-models-for-deployment-as-managed-compute?azure-portal=true).
+
+The associated cost will depend on the type of model you deploy, which deployment option you choose, and what you are doing with the model:
+
+|Activity|Azure OpenAI models|Azure AI model inference|Models deployed as Serverless APIs (pay-as-you-go)|Models deployed with user-managed compute|
+|---|---|---|---|---|
+|Deploy the model|No, you aren't billed for deploying an Azure OpenAI model to your project.|No, you aren't billed for deploying an Azure OpenAI model to your project.|Yes, you're billed minimally per the infrastructure of the endpoint.|Yes, you're billed for the infrastructure hosting the model per minute.|
+|Call the endpoint|Yes, you're billed based on your token usage.|Yes, you're billed based on your token usage.|Yes, you're billed based on your token usage.|None.|

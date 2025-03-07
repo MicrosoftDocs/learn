@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-prepare-genaiops.use-cases
+title: Explore use cases for GenAIOps
+metadata:
+  title: Explore use cases for GenAIOps
+  description: Explore use cases for GenAIOps.
+  author: madiepev
+  ms.author: madiepev
+  ms.date: 02/21/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-use-cases.md)]

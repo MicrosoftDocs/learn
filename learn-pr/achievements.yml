@@ -372,6 +372,11 @@ achievements:
   title: Explore Azure service level agreements (SLAs)
   summary: You're placing an application into a cloud-providers hardware versus on-premises.  How reliable will your solution be?
   iconUrl: /training/achievements/explore-azure-service-level-agreements.svg
+- uid: learn.wwl.get-started-openai.badge   
+  type: badge   
+  title: Get started with Azure OpenAI Service   
+  summary: This module provides engineers with the skills to begin building an Azure OpenAI Service solution.   
+  iconUrl: /training/achievements/generic-badge.svg 
 - uid: learn.wwl.examine-service-lifecycle-azure.badge
   type: badge
   title: Examine service lifecycle in Azure
@@ -5120,6 +5125,11 @@ achievements:
   title: Manage device identity with Microsoft Entra join and Enterprise State Roaming
   summary: Evaluate options to manage device identities in Microsoft Entra ID. Allow users to join devices in Microsoft Entra ID. Require devices to be marked as compliant. Enable Enterprise State Roaming.
   iconUrl: /training/achievements/manage-device-identity-ad-join.svg
+- uid: learn.azure.create-custom-roles-rbac.badge
+  type: badge
+  title: Create custom roles for Azure resources with role-based access control (RBAC)
+  summary: Understand the structure of role definitions for access control. Identify the role properties to use that define your custom role permissions. Create an Azure custom role and assign to a user.
+  iconUrl: /training/achievements/create-custom-azure-roles-with-rbac.svg
 - uid: learn.language.typescript-namespaces-organize-code.badge
   type: badge
   title: Organize code using TypeScript namespaces
@@ -5205,3 +5215,148 @@ achievements:
   title: Introduction to Visual Studio Code
   summary: In this module, you learn how to assess whether Visual Studio Code is the right source code editor for you. We explore how Visual Studio Code can be used in different development situations, for example, web, C++, and data science. We also examine Visual Studio Code's features such as the editor, debugger, and source control. Finally, we walk you through decision criteria you can use to choose a code editor.
   iconUrl: /learn/achievements/introduction-to-visual-studio-code.svg
+- uid: learn.student-evangelism.web-development-101-variables.badge
+  type: badge
+  title: JavaScript variables and data types
+  summary: JavaScript is a programming language used for web development as well as the server. Learn about variables and the data types that populate them.
+  iconUrl: /training/achievements/student-evangelism/web-development-101-variables.svg
+- uid: learn.student-evangelism.web-development-101.introduction-to-programming.badge
+  type: badge
+  title: Introduction to programming
+  summary: Learn about programming languages and the tools that developers use to create software.
+  iconUrl: /training/achievements/student-evangelism/web-development-101-introduction.svg
+- uid: learn.student-evangelism.web-development-101.functions.badge
+  type: badge
+  title: Create modular code by using functions in JavaScript
+  summary: Functions are the building blocks for any application you'll create. With functions, you can create named, reusable sections of code to help make it more readable and maintainable. This module explores the core concepts of functions.
+  iconUrl: /training/achievements/student-evangelism/web-development-101-functions.svg
+- uid: learn.student-evangelism.web-development-101-if-else.badge
+  type: badge
+  title: Make decisions with JavaScript
+  summary: This lesson covers the basics of JavaScript if/else decision-making concepts. You'll learn how comparing variables, using Booleans, and using if/else statements allow you to make decisions in your code.
+  iconUrl: /training/achievements/student-evangelism/web-development-101-if-else.svg
+- uid: learn.student-evangelism.web-development-101.trophy
+  type: trophy
+  title: Web Development for Beginners
+  summary: Learn the basics of web development, including programming languages and tools, and web accessibility.
+  iconUrl: /training/achievements/student-evangelism/web-development-101.svg
+- uid: learn.student-evangelism.web-development-101-loops-arrays.badge
+  type: badge
+  title: JavaScript arrays and loops
+  summary: Learn how to manipulate and store data within JavaScript.
+  iconUrl: /training/achievements/student-evangelism/web-development-101-loops-arrays.svg
+- uid: learn.data-ai.data-warehouse-security.badge
+  type: badge
+  title: Data warehouse security
+  summary: Learn about the security controls that Azure Synapse Analytics provides to help secure your data warehouse infrastructure and the data that's stored in it.
+  iconUrl: /training/achievements/data-ai/data-warehouse-security-badge.svg
+- uid: learn.wwl.develop-dynamic-reports-microsoft-power-bi.trophy
+  type: trophy
+  title: Develop reports with Microsoft Power BI
+  summary: Power BI allows you to easily connect to and present your data in an interactive report, so you can make data-driven decisions. Learn how to connect to data, transform and shape data, and create interactive visuals in a Power BI report.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.introduction-to-azure-ai-studio.badge
+  type: badge
+  title: Introduction to Azure AI Foundry
+  summary: Microsoft Azure offers multiple services that enable developers to build amazing AI-powered solutions. Azure AI Foundry brings these services together in a single unified experience for AI development on the Azure cloud platform.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.prepare-to-develop-ai-solutions-azure.badge
+  type: badge
+  title: Prepare to develop AI solutions on Azure
+  summary: As an aspiring Azure AI Engineer, you should understand core concepts and principles of AI development, and the capabilities of Azure services used in AI solutions.
+  iconUrl: /training/achievements/azure-develop-ai-solutions.svg
+- uid: learn.language.rust-set-up-environment.badge
+  type: badge
+  title: Set up the Rust development environment
+  summary: Learn how to set up the Rust development environment, write a program, and use the Cargo build system.
+  iconUrl: /training/achievements/rust-set-up-environment.svg 
+- uid: learn.language.rust-modules-packages-crates.badge
+  type: badge
+  title: Explore modules, packages, and third-party crates
+  summary: Learn about how to effectively use modules and how to integrate with packages and third-party crates.
+  iconUrl: /training/achievements/rust-modules-packages-crates.svg
+- uid: learn.languages.rust-memory-management.badge
+  type: badge
+  title: Understand how Rust manages memory
+  summary: Discover the features that make Rust so unique - ownership and borrowing.
+  iconUrl: /training/achievements/rust-memory-management.svg
+- uid: learn.language.rust-loop-expressions.badge
+  type: badge
+  title: Use loops to iterate through data in Rust
+  summary: Explore how to use hash maps in Rust. Discover how to use loop expressions to iterate through data.
+  iconUrl: /training/achievements/rust-understand-common-concepts.svg
+- uid: learn.language.rust-introduction.badge
+  type: badge
+  title: What is Rust
+  summary: A quick introduction to Rust language features and how Rust compares with other programming languages.
+  iconUrl: /training/achievements/rust-get-started.svg
+- uid: learn.language.rust-if-else-expressions.badge
+  type: badge
+  title: Test conditions with if/else expressions in Rust
+  summary: Explore Rust compound data types like arrays and vectors. Discover how to use if/else statements to test conditions.
+  iconUrl: /training/achievements/rust-understand-common-concepts.svg 
+- uid: learn.language.rust-generic-types-traits.badge
+  type: badge
+  title: Implement generic types and traits
+  summary: Understand what generic types and traits are and how to use them in Rust.
+  iconUrl: /training/achievements/rust-generic-types-traits.svg 
+- uid: learn.language.rust-error-handling.badge
+  type: badge
+  title: Handle errors in Rust
+  summary: UIn this module, you'll learn about ways to handle errors in Rust.
+  iconUrl: /training/achievements/rust-error-handling.svg 
+- uid: learn.language.rust-create-command-line-program.badge
+  type: badge
+  title: Build a command-line to-do list program
+  summary: Create a command-line program to manage to-do list items.
+  iconUrl: /training/achievements/rust-create-command-line-program.svg
+- uid: learn.language.rust-create-program.badge
+  type: badge
+  title: Create your first Rust program
+  summary: Learn about Rust concepts, including variables, data types, and functions.
+  iconUrl: /training/achievements/rust-understand-common-concepts.svg 
+- uid: learn.languages.rust-first-steps.trophy
+  type: trophy
+  title: Take your first steps with Rust
+  summary: Interested in learning a new programming language that's growing in use and popularity? Start here! Lay the foundation of knowledge you need to build fast and effective programs in Rust.
+  iconUrl: /training/achievements/take-your-first-steps-with-rust.svg
+- uid: learn.language.rust-automated-tests.badge
+  type: badge
+  title: Write automated tests
+  summary: Learn about the types of testing you can do with Rust.
+  iconUrl: /training/achievements/rust-automated-tests.svg
+- uid: learn.azure.communication-service-send-sms-console-app.badge
+  type: badge
+  title: Send an SMS message from a C# console application with Azure Communication Services
+  summary: In this module, you'll create a C# console application that sends SMS messages using a phone number provisioned via Azure Communication Services.
+  iconUrl: /training/achievements/communication-service-send-sms-console-app.svg
+- uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.badge
+  type: badge
+  title: Track wild polar bears with AI
+  summary: Detect and track polar bears through photos using AI, and then use Power BI to show where cameras spot polar bears.
+  iconUrl: /training/achievements/student-evangelism/build-ml-model-with-azure-stream-analytics-badge.svg
+- uid: learn.reactors.blockchain-tokens.badge
+  type: badge
+  title: Create tokens using OpenZeppelin
+  summary: Learn about the significance of tokens and how they are used in blockchain.
+  iconUrl: /training/achievements/reactors/blockchain-tokens.svg
+- uid: learn.reactors.blockchain-solidity-ethereum-smart-contracts.badge
+  type: badge
+  title: Write Ethereum smart contracts by using Solidity
+  summary: Learn how to install and use tools that you can use to develop smart contracts.
+  iconUrl: /training/achievements/reactors/blockchain-solidity-ethereum-smart-contracts.svg
+- uid: learn.reactors.blockchain-learning-solidity.badge
+  type: badge
+  title: Learn how to use Solidity
+  summary: Discover how Solidity can make it easy to program smart contracts for the Ethereum blockchain platform.
+  iconUrl: /training/achievements/reactors/blockchain-learning-solidity.svg
+- uid: learn.reactors.blockchain-ethereum-networks.badge
+  type: badge
+  title: Connect and deploy to Ethereum networks
+  summary: Learn about and use Ethereum networks for development, testing, and production.
+  iconUrl: /training/achievements/reactors/blockchain-ethereum-networks.svg
+- uid: learn.ethereum-blockchain-development.trophy
+  type: trophy
+  title: Get started with blockchain development
+  summary: This learning path introduces you to blockchain and development on the Ethereum platform. Discover what skills are necessary to learn to begin building your own blockchain networks at scale.
+  iconUrl: /training/achievements/ethereum-blockchain-development.svg

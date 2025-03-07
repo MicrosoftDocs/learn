@@ -33,6 +33,5 @@ subjects:
 modules:
 - learn.control-and-organize-with-resource-manager
 - learn.secure-azure-resources-with-rbac
-- learn.azure.create-custom-roles-rbac
 trophy:
   uid: learn.security.implement-resource-mgmt-security.trophy

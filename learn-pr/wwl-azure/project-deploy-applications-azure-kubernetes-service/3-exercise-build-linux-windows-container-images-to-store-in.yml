@@ -6,14 +6,14 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise - Build Linux and Windows container images to store in the registry
   description: "Exercise - Build Linux and Windows container images to store in the registry"
-  ms.date: 10/25/2023
+  ms.date: 03/05/2025
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
-  ms.custom: linux-related-content
+  ms.custom:
+  - N/A
 azureSandbox: false
 labModal: false
 durationInMinutes: 13
 content: |
   [!include[](includes/3-exercise-build-linux-windows-container-images-to-store-in.md)]
-
