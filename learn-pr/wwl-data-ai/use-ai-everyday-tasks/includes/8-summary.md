@@ -1,6 +1,6 @@
 In this module, you explored some ways generative AI can help you at home and at work. You learned to write detailed prompts with context needed to generate useful responses.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Join us as we attempt a **GUINNESS WORLD RECORDS(tm)** title for **Most users to take an online multi-level artificial intelligence lesson in 24 hours**! 
 > To participate, you must:
 > - **Register** for the [Microsoft AI Skills Fest](https://aka.ms/AISkillsFest).

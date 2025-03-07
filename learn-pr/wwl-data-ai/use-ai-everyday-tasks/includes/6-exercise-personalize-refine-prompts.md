@@ -65,7 +65,7 @@ Iteration is a key part of creating effective AI prompts. In this step, you refi
 > **Sample prompt**:
 > Copilot, generate a list of 5 book recommendations for a beach holiday that focus on world building science fiction.
 
-![Screenshot Copilot with the Submit button highlighted.](../media/05-copilot-submit.jpg)
+![Screenshot of Copilot with the Submit button highlighted.](../media/05-copilot-submit.jpg)
 
 2. Activate **Think Deeper** by selecting the icon.
 
