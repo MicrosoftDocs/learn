@@ -12,7 +12,8 @@ metadata:
   description: Learn how to create a Java Tomcat web app and deploy it to Azure App Service using Maven.
   ms.date: 02/20/2025
   author: KarlErickson
-  ms.author: ayangupta
+  ms.author: karler
+  ms.reviewer: ayangupta
   ms.topic: module-build-your-first
   ms.custom: team=cloud_advocates, devx-track-extended-java, devx-track-java, linux-related-content
   ms.service: azure-app-service

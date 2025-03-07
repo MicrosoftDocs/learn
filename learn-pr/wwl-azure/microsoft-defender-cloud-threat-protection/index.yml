@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Configure and manage threat protection by using Microsoft Defender for Cloud
   description: "This module focuses on the essential techniques for configuring and managing threat protection exclusively with Microsoft Defender for Cloud, empowering cybersecurity specialists to strengthen the security posture of their cloud environments."
-  ms.date: 02/12/2025
+  ms.date: 02/28/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: module-intro-to-product
@@ -71,6 +71,9 @@ units:
 - learn.wwl.microsoft-defender-cloud-threat-protection.devops-environment-security-posture
 - learn.wwl.microsoft-defender-cloud-threat-protection.connect-your-git-hub-lab-environment-microsoft-defender-cloud
 - learn.wwl.microsoft-defender-cloud-threat-protection.configure-microsoft-security-devops-github-action
+- learn.wwl.microsoft-defender-cloud-threat-protection.ai-threat-protection
+- learn.wwl.microsoft-defender-cloud-threat-protection.enable-threat-protection-for-ai-workloads
+- learn.wwl.microsoft-defender-cloud-threat-protection.gain-application-and-end-user-context-for-ai-alerts
 - learn.wwl.microsoft-defender-cloud-threat-protection.knowledge-check
 - learn.wwl.microsoft-defender-cloud-threat-protection.summary
 badge:

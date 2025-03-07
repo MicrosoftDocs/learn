@@ -6,7 +6,8 @@ metadata:
   description: Shows you how to deploy a simple Tomcat Java web app to Azure App Service.
   ms.date: 02/20/2025
   author: KarlErickson
-  ms.author: ayangupta
+  ms.author: karler
+  ms.reviewer: ayangupta
   ms.topic: unit
   ms.custom: team=cloud_advocates, devx-track-extended-java, devx-track-java, linux-related-content
 durationInMinutes: 7

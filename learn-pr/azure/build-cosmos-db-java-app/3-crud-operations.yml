@@ -6,8 +6,9 @@ metadata:
   title: Exercise - Create, read, update, and delete NoSQL data programmatically
   description: Exercise - Create, read, update, and delete documents programmatically
   ms.date: 11/02/2020
-  author: kushagraThapar
-  ms.author: kuthapar
+  author: KarlErickson
+  ms.author: karler
+  ms.reviewer: kuthapar
   ms.topic: unit
   ms.custom:
     - devx-track-extended-java

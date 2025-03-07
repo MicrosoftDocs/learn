@@ -26,7 +26,7 @@ In this exercise, you complete the project by reading the .json files, adding up
     record SalesData (double Total);
     ```
 
-## Create a method to calculate sales totals
+## Create a method that calculates sales totals
 
 1. In `Program.cs`, just before the `record` line that you added in the previous step, create a new function that calculates the sales total. This method should take an `IEnumerable<string>` of file paths that it can iterate over.
 
@@ -55,7 +55,7 @@ In this exercise, you complete the project by reading the .json files, adding up
             string salesJson = File.ReadAllText(file);
         
             // Parse the contents as JSON
-            SalesData? data = JsonSerializer.Deserialize<SalesData?>(salesJson);
+            SalesData? data = JsonConvert.DeserializeObject<SalesData?>(salesJson);
         
             // Add the amount found in the Total field to the salesTotal variable
             salesTotal += data?.Total ?? 0;
@@ -101,7 +101,7 @@ In this exercise, you complete the project by reading the .json files, adding up
     File.AppendAllText(Path.Combine(salesTotalDir, "totals.txt"), $"{salesTotal}{Environment.NewLine}");
     ```
 
-1. Press <kbd>Ctrl+S</kbd> / <kbd>Cmd+S</kbd> to save the *Program.cs* file.
+1. Save the *Program.cs* file by pressing <kbd>Ctrl+S</kbd> / <kbd>Cmd+S</kbd>.
 
 ## Run the program
 
@@ -123,7 +123,7 @@ In this exercise, you complete the project by reading the .json files, adding up
 
    The *totals.txt* file now has a second line. Every time you run the program, the totals are added up again and a new line is written to the file.
 
-Outstanding work! You've written a smart, robust, and handy tool that Tailwind Traders can use to process all of its stores' sales every night. In the next unit, we'll review what you learned and a few tips to remember.
+Outstanding work! You wrote a smart, robust, and handy tool that Tailwind Traders can use to process all of its stores' sales every night. In the next unit, we'll review what you learned and a few tips to remember.
 
 ## Got stuck?
 

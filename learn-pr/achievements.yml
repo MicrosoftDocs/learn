@@ -372,6 +372,11 @@ achievements:
   title: Explore Azure service level agreements (SLAs)
   summary: You're placing an application into a cloud-providers hardware versus on-premises.  How reliable will your solution be?
   iconUrl: /training/achievements/explore-azure-service-level-agreements.svg
+- uid: learn.wwl.get-started-openai.badge   
+  type: badge   
+  title: Get started with Azure OpenAI Service   
+  summary: This module provides engineers with the skills to begin building an Azure OpenAI Service solution.   
+  iconUrl: /training/achievements/generic-badge.svg 
 - uid: learn.wwl.examine-service-lifecycle-azure.badge
   type: badge
   title: Examine service lifecycle in Azure
@@ -5260,3 +5265,98 @@ achievements:
   title: Prepare to develop AI solutions on Azure
   summary: As an aspiring Azure AI Engineer, you should understand core concepts and principles of AI development, and the capabilities of Azure services used in AI solutions.
   iconUrl: /training/achievements/azure-develop-ai-solutions.svg
+- uid: learn.language.rust-set-up-environment.badge
+  type: badge
+  title: Set up the Rust development environment
+  summary: Learn how to set up the Rust development environment, write a program, and use the Cargo build system.
+  iconUrl: /training/achievements/rust-set-up-environment.svg 
+- uid: learn.language.rust-modules-packages-crates.badge
+  type: badge
+  title: Explore modules, packages, and third-party crates
+  summary: Learn about how to effectively use modules and how to integrate with packages and third-party crates.
+  iconUrl: /training/achievements/rust-modules-packages-crates.svg
+- uid: learn.languages.rust-memory-management.badge
+  type: badge
+  title: Understand how Rust manages memory
+  summary: Discover the features that make Rust so unique - ownership and borrowing.
+  iconUrl: /training/achievements/rust-memory-management.svg
+- uid: learn.language.rust-loop-expressions.badge
+  type: badge
+  title: Use loops to iterate through data in Rust
+  summary: Explore how to use hash maps in Rust. Discover how to use loop expressions to iterate through data.
+  iconUrl: /training/achievements/rust-understand-common-concepts.svg
+- uid: learn.language.rust-introduction.badge
+  type: badge
+  title: What is Rust
+  summary: A quick introduction to Rust language features and how Rust compares with other programming languages.
+  iconUrl: /training/achievements/rust-get-started.svg
+- uid: learn.language.rust-if-else-expressions.badge
+  type: badge
+  title: Test conditions with if/else expressions in Rust
+  summary: Explore Rust compound data types like arrays and vectors. Discover how to use if/else statements to test conditions.
+  iconUrl: /training/achievements/rust-understand-common-concepts.svg 
+- uid: learn.language.rust-generic-types-traits.badge
+  type: badge
+  title: Implement generic types and traits
+  summary: Understand what generic types and traits are and how to use them in Rust.
+  iconUrl: /training/achievements/rust-generic-types-traits.svg 
+- uid: learn.language.rust-error-handling.badge
+  type: badge
+  title: Handle errors in Rust
+  summary: UIn this module, you'll learn about ways to handle errors in Rust.
+  iconUrl: /training/achievements/rust-error-handling.svg 
+- uid: learn.language.rust-create-command-line-program.badge
+  type: badge
+  title: Build a command-line to-do list program
+  summary: Create a command-line program to manage to-do list items.
+  iconUrl: /training/achievements/rust-create-command-line-program.svg
+- uid: learn.language.rust-create-program.badge
+  type: badge
+  title: Create your first Rust program
+  summary: Learn about Rust concepts, including variables, data types, and functions.
+  iconUrl: /training/achievements/rust-understand-common-concepts.svg 
+- uid: learn.languages.rust-first-steps.trophy
+  type: trophy
+  title: Take your first steps with Rust
+  summary: Interested in learning a new programming language that's growing in use and popularity? Start here! Lay the foundation of knowledge you need to build fast and effective programs in Rust.
+  iconUrl: /training/achievements/take-your-first-steps-with-rust.svg
+- uid: learn.language.rust-automated-tests.badge
+  type: badge
+  title: Write automated tests
+  summary: Learn about the types of testing you can do with Rust.
+  iconUrl: /training/achievements/rust-automated-tests.svg
+- uid: learn.azure.communication-service-send-sms-console-app.badge
+  type: badge
+  title: Send an SMS message from a C# console application with Azure Communication Services
+  summary: In this module, you'll create a C# console application that sends SMS messages using a phone number provisioned via Azure Communication Services.
+  iconUrl: /training/achievements/communication-service-send-sms-console-app.svg
+- uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.badge
+  type: badge
+  title: Track wild polar bears with AI
+  summary: Detect and track polar bears through photos using AI, and then use Power BI to show where cameras spot polar bears.
+  iconUrl: /training/achievements/student-evangelism/build-ml-model-with-azure-stream-analytics-badge.svg
+- uid: learn.reactors.blockchain-tokens.badge
+  type: badge
+  title: Create tokens using OpenZeppelin
+  summary: Learn about the significance of tokens and how they are used in blockchain.
+  iconUrl: /training/achievements/reactors/blockchain-tokens.svg
+- uid: learn.reactors.blockchain-solidity-ethereum-smart-contracts.badge
+  type: badge
+  title: Write Ethereum smart contracts by using Solidity
+  summary: Learn how to install and use tools that you can use to develop smart contracts.
+  iconUrl: /training/achievements/reactors/blockchain-solidity-ethereum-smart-contracts.svg
+- uid: learn.reactors.blockchain-learning-solidity.badge
+  type: badge
+  title: Learn how to use Solidity
+  summary: Discover how Solidity can make it easy to program smart contracts for the Ethereum blockchain platform.
+  iconUrl: /training/achievements/reactors/blockchain-learning-solidity.svg
+- uid: learn.reactors.blockchain-ethereum-networks.badge
+  type: badge
+  title: Connect and deploy to Ethereum networks
+  summary: Learn about and use Ethereum networks for development, testing, and production.
+  iconUrl: /training/achievements/reactors/blockchain-ethereum-networks.svg
+- uid: learn.ethereum-blockchain-development.trophy
+  type: trophy
+  title: Get started with blockchain development
+  summary: This learning path introduces you to blockchain and development on the Ethereum platform. Discover what skills are necessary to learn to begin building your own blockchain networks at scale.
+  iconUrl: /training/achievements/ethereum-blockchain-development.svg
