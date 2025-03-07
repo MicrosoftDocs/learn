@@ -10,6 +10,8 @@ After completing this module, you are now able to:
 
 Additional Reading:
 
-- [Azure AI Agent Service function calling](azure/ai-services/agents/how-to/tools/function-calling)
+TODO: add link to CDA content?
+
+- [Azure AI Agent Service function calling](/azure/ai-services/agents/how-to/tools/function-calling)
 - [Introduction to Azure Functions](/azure/azure-functions/functions-overview)
 - [OpenAPI Specification](https://swagger.io/specification/)
