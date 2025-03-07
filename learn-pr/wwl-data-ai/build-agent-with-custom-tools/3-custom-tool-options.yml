@@ -7,8 +7,7 @@ metadata:
   ms.date: 3/6/2025
   author: ivorb
   ms.author: berryivor
-  ms.topic: interactive-tutorial
-  ms.service: 
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/3-custom-tool-options.md)]
