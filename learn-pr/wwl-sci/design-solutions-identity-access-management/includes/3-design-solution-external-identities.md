@@ -23,7 +23,7 @@ A *tenant* is a dedicated and trusted instance of Microsoft Entra ID that contai
 
 Microsoft Entra External ID includes Microsoft's customer identity and access management (CIAM) solution. For organizations and businesses that want to make their apps available to consumers and business customers, External ID makes it easy to add CIAM features like self-service registration, personalized sign-in experiences, and customer account management. Because these CIAM capabilities are built into Microsoft Entra ID, you also benefit from platform features like enhanced security, compliance, and scalability.
 
-:::image type="content" source="../media/overview-ciam.png" lightbox="../media/overview-ciam.png" alt-text="Diagram showing an overview of the customer identity and access management (CIAM) solution in Microsoft Entra External ID. The solution uses an external Microsoft Entra tenant.":::
+:::image type="content" source="../media/overview-customer-identity-access-management.png" lightbox="../media/overview-customer-identity-access-management.png" alt-text="Diagram showing an overview of the customer identity and access management (CIAM) solution in Microsoft Entra External ID.":::
 
 Organizations and developers use External ID in an external tenant as their CIAM solution when publishing their apps to consumers and business customers. You can create a separate Microsoft Entra tenant in an external configuration, which allows you to manage your apps and user accounts separately from your workforce. Within this tenant, you can easily configure custom-branded sign-up experiences and user management features:
 
@@ -58,8 +58,6 @@ A user object is created for the business guest in the same directory as your em
 You can use cross-tenant access settings to manage collaboration with other Microsoft Entra organizations and across Microsoft Azure clouds. For collaboration with non-Azure AD external users and organizations, use [external collaboration settings](/entra/external-id/external-collaboration-settings-configure).
 
 #### Comparing External ID feature sets
-
-The following table compares the scenarios you can enable with External ID.
 
 The following table compares the scenarios you can enable with External ID.
 
