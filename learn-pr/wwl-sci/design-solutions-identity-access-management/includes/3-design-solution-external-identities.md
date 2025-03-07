@@ -18,7 +18,6 @@ A *tenant* is a dedicated and trusted instance of Microsoft Entra ID that contai
 - A *workforce tenant configuration* is a standard Microsoft Entra tenant that contains your employees, internal business apps, and other organizational resources. In a workforce tenant, your internal users can collaborate with external business partners and guests using B2B collaboration.
 - An *external tenant configuration* is used exclusively for apps you want to publish to consumers or business customers. This distinct tenant follows the standard Microsoft Entra tenant model, but is configured for consumer scenarios. It contains your app registrations and a directory of consumer or customer accounts.
 
-
 #### Secure your apps for consumers and business customers
 
 Microsoft Entra External ID includes Microsoft's customer identity and access management (CIAM) solution. For organizations and businesses that want to make their apps available to consumers and business customers, External ID makes it easy to add CIAM features like self-service registration, personalized sign-in experiences, and customer account management. Because these CIAM capabilities are built into Microsoft Entra ID, you also benefit from platform features like enhanced security, compliance, and scalability.
@@ -70,7 +69,6 @@ The following table compares the scenarios you can enable with External ID.
 |   **Company branding**    |  The default state for the authentication experience is a Microsoft look and feel. Administrators can customize the guest sign-in experience with their company branding.    |  The default branding for the external tenant is neutral and doesn't include any existing Microsoft branding. Administrators can customize the branding for the organization or per application.  [Learn more](/entra/external-id/customers/concept-branding-customers).    |  
 | **Microsoft cloud settings**  | [Supported.](/entra/external-id/cross-cloud-settings)  |  Not applicable.  |
 | **Entitlement management**  | [Supported.](/entra/id-governance/entitlement-management-overview)  | Not applicable. |
-
 
 #### Related technologies
 
