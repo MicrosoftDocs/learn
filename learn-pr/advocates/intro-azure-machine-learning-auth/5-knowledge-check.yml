@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-azure-machine-learning-auth.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: Knowledge Check
+  ms.date: 03/06/2025
+  author: Orin-Thomas
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 3
+content: Choose the best response for each question. 
+quiz:
+  questions:
+    - content: "When are account keys used for authentication purposes rather than Microsoft Entra ID?"
+      choices:
+        - content: "When accessing other Azure resources."
+          isCorrect: false
+          explanation: "Access between Azure resources (including Azure Machine Learning) use managed-identities which is a feature of Microsoft Entra ID"
+        - content: "When Azure Machine Learning compute clusters or Kubernetes clusters access other Azure services."
+          isCorrect: false
+          explanation: "Azure Machine Learning compute clusters or Kubernetes clusters use managed-identities which is a feature of Entra ID"
+        - content: "When account keys or tokens are used for access to external data sources."
+          isCorrect: true
+          explanation: "In cases on which the data source only accepts credential-based authentication, Azure Machine Learning can use Azure Key Vault to store these secrets"
+    - content: "Which Azure Machine Learning default role should you assign to someone who will be responsible for the compute resources in a workspace?"
+      choices:
+        - content: "Contributor."
+          isCorrect: false
+          explanation: "While contributors can create and delete compute resources in a workspace, they also have additional permissions. Granting Contributor access to someone who is responsible to for the compute resources might pose a security risk"
+        - content: "Azure Machine Learning Compute Operator."
+          isCorrect: true
+          explanation: "Azure Machine Learning Compute Operators can only create, manage, delete, and access compute resources within a workspace"
+        - content: "Azure Machine Learning Data Scientist."
+          isCorrect: false
+          explanation: "Azure Machine Learning Data Scientists can perform all actions within an Azure Machine Learning workspace, except for creating or deleting compute resources and modifying the workspace itself."
+    - content: "Which of the following statements is true regarding system-assigned managed identify for Azure Machine Learning?"
+      choices:
+        - content: "When that workspace is deleted, its associated system-assigned identity is also deleted."
+          isCorrect: true
+          explanation: "The lifecycle of system-assigned managed identities is tied to their associated resource. When the resource is deleted, the identity is also deleted."
+        - content: "You must manually enable a system-assigned identity after creating a machine learning workspace."
+          isCorrect: false
+          explanation: "By default, Azure Machine Learning has a system-assigned managed identity and that is a supported scenario"
+        - content: "Azure Machine Learning workspaces are assigned a user-managed identity by default."
+          isCorrect: false
+          explanation: "Creating an Azure Machine Learning workspace automatically creates a system-assigned managed identity. User-managed identities must be manually configured."
+  
+  
+        
+   
