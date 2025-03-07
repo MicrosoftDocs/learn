@@ -1,0 +1,80 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-class-inheritance.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/06/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What does the colon (`:`) character indicate in the declaration of a derived class in C#?"
+    choices:
+    - content: "It indicates that the derived class is implementing an interface."
+      isCorrect: false
+      explanation: "Incorrect. The colon (`:`) character in C# is used to indicate inheritance, not interface implementation."
+    - content: "It indicates that the derived class is defining a new property or method."
+      isCorrect: false
+      explanation: "Incorrect. The colon (`:`) character in C# is used to indicate inheritance, not the definition of new properties or methods."
+    - content: "It indicates that the derived class is inheriting from a base class."
+      isCorrect: true
+      explanation: "Correct. In C#, the colon (`:`) character is used in the declaration of a derived class to indicate that it's inheriting from a base class."
+  - content: "What is the effect of the `sealed` keyword in C# inheritance?"
+    choices:
+    - content: "It allows a method to be overridden in derived classes."
+      isCorrect: false
+      explanation: "Incorrect. The `sealed` keyword prevents a method from being overridden in derived classes."
+    - content: "It allows a class to be used as a base class for other classes."
+      isCorrect: false
+      explanation: "Incorrect. The `sealed` keyword prevents a class from being used as a base class for other classes."
+    - content: "It prevents a class or class member from being inherited or overridden."
+      isCorrect: true
+      explanation: "Correct. The `sealed` keyword in C# is used to prevent a class or class member from being inherited or overridden."
+  - content: "What is the purpose of using the `new` keyword when defining members in a derived class?"
+    choices:
+    - content: "To hide base class members intentionally or to avoid accidental overriding of base class members."
+      isCorrect: true
+      explanation: "Correct. The `new` keyword allows you to define new members in a derived class that have the same name as members in the base class. The `new` keyword hides the corresponding base class members."
+    - content: "To create a new instance of the derived class."
+      isCorrect: false
+      explanation: "Incorrect. The `new` keyword doesn't create a new instance of the derived class."
+    - content: "To override the base class members with the same name."
+      isCorrect: false
+      explanation: "Incorrect. The `new` keyword doesn't override base class members."
+  - content: "What is the purpose of the `override` keyword in C#?"
+    choices:
+    - content: "It indicates that the member has no implementation and must be overridden in a derived class."
+      isCorrect: false
+      explanation: "Incorrect. The `override` keyword doesn't indicate that the member has no implementation and must be overridden in a derived class. This definition matches the `abstract` keyword."
+    - content: "It indicates that the base class member is extended or modified in the derived class."
+      isCorrect: true
+      explanation: "Correct. The `override` keyword in C# is used to extend or modify the behavior of the base class. Overriding provides custom implementations for properties and methods inherited from the base class."
+    - content: "It indicates that the derived class hides members of the base class with new implementations."
+      isCorrect: false
+      explanation: "Incorrect. The `override` keyword doesn't hide members of the base class with new implementations in the derived class. This definition matches the `new` keyword."
+  - content: "What is the purpose of the `base` keyword in a derived class?"
+    choices:
+    - content: "To access derived class members from a base class."
+      isCorrect: false
+      explanation: "Incorrect. The `base` keyword is used in a derived class to access members of the base class, not the other way around."
+    - content: "To access base class members from a derived class."
+      isCorrect: true
+      explanation: "Correct. The `base` keyword is used in a derived class to access members of the base class, including methods, properties, and constructors."
+    - content: "To specify which derived-class constructor should be called when creating instances of the base class."
+      isCorrect: false
+      explanation: "Incorrect. The `base` keyword is used in a derived class to specify which base-class constructor should be called when creating instances of the derived class."
+  - content: "What is the primary purpose of implementing base and derived classes in C#?"
+    choices:
+    - content: "To reduce the amount of code needed for each class."
+      isCorrect: false
+      explanation: "Incorrect. Although implementing base and derived classes can sometimes reduce the amount of code, reducing the amount of code isn't the primary purpose of implementing base and derived classes."
+    - content: "To establish a hierarchy of classes that share common attributes and behaviors."
+      isCorrect: true
+      explanation: "Correct. Base and derived classes are used to establish a hierarchy of classes that share common attributes and behaviors, promoting reusability and organization."
+    - content: "To create multiple instances of the same class."
+      isCorrect: false
+      explanation: "Incorrect. While it's possible to create multiple instances of a class, creating instances of the same class isn't the primary purpose of implementing base and derived classes."

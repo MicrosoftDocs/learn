@@ -6,10 +6,12 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/25/2023
+  ms.date: 03/05/2025
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
+  ms.custom:
+  - N/A
 azureSandbox: false
 labModal: false
 durationInMinutes: 6
@@ -40,25 +42,3 @@ quiz:
     - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
       isCorrect: true
       explanation: "Correct. Enabling DevOps practices aims to automate and validate the creation and teardown of environments to deliver secure and stable application hosting platforms."
-  - content: "What is the purpose of creating an Azure Container Registry and an AKS cluster?"
-    choices:
-    - content: "To configure a new storage account in Azure"
-      isCorrect: false
-      explanation: "Incorrect. This answer describes a different task."
-    - content: "To create a new virtual machine in Azure"
-      isCorrect: false
-      explanation: "Incorrect. This answer describes a different task."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
-      isCorrect: true
-      explanation: "Correct. By creating an Azure Container Registry and an AKS cluster, you can automate and validate the creation and teardown of environments, which helps deliver secure and stable application hosting platforms."
-  - content: "What does Azure CNI enable in AKS?"
-    choices:
-    - content: "Enables the creation of Windows node pools"
-      isCorrect: false
-      explanation: "Incorrect. Azure CNI is related to networking, not the creation of Windows node pools."
-    - content: "Enables automatic upgrade of Kubernetes version"
-      isCorrect: false
-      explanation: "Incorrect. Azure CNI is related to networking, not Kubernetes version upgrades."
-    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
-      isCorrect: true
-      explanation: "Correct. Azure CNI enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."

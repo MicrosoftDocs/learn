@@ -33,7 +33,7 @@ Go to Search in Microsoft Sentinel to enter your search criteria.
 
 1. In the Azure portal, go to Microsoft Sentinel and select the appropriate workspace.
 
-1. Under General, select Search (preview).
+1. Under General, select Search.
 
 1. In the Search box, enter the search term.
 
