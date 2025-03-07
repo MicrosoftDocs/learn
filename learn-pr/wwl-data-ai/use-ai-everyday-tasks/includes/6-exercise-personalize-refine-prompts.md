@@ -25,7 +25,7 @@ To start, you practice creating personalized prompts using a few fill-in-the-bla
 **Sample prompt**:
 > Copilot, generate a list of **[10 book recommendations]** for **[summer reading]** that focus on **[self-improvement and personal growth]**.
 
-![Screenshot Copilot with the sample prompt pasted into the chat box.](../media/05-copilot-book-prompt-bracketed.jpg)
+![Screenshot of Copilot with the sample prompt pasted into the chat box.](../media/05-copilot-book-prompt-bracketed.jpg)
 
 The following screenshot is an example of what Copilot might generate. How does it compare to the personalized prompt that you submitted?
 
@@ -69,7 +69,7 @@ Iteration is a key part of creating effective AI prompts. In this step, you refi
 
 2. Activate **Think Deeper** by selecting the icon.
 
-![Screenshot Copilot with the Think Deeper button highlighted.](../media/05-think-deeper-activate.jpg)
+![Screenshot of Copilot with the Think Deeper button highlighted.](../media/05-think-deeper-activate.jpg)
 
 3. Ask a follow-up question for more detailed information.
 
