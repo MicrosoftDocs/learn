@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-intelligent-spring-apps-using-ai.5-exercise-spring-ai-development
+uid: learn.azure.build-enterprise-ai-agents-with-java-spring.5-exercise-spring-ai-development
 title: Exercise - Develop a RAG application with Spring AI and Azure OpenAI 
 metadata:
   title: Exercise - Develop a RAG Application with Spring AI and Azure OpenAI 
-  description: Learn how to develop a Spring AI application to Azure Container Apps.
+  description: Learn how to develop a Spring AI application integrated with Azure OpenAI for retrieval augmented generation (RAG) and implement an Evaluator Optimizer Agent to iteratively refine AI-generated content.
   ms.date: 03/02/2025
   author: KarlErickson
   ms.author: karler
-  ms.reviewer: jbalderas
+  ms.reviewer: jbalderas, thegovind
   ms.topic: unit
   ms.collection: ce-skilling-ai-copilot
 durationInMinutes: 25

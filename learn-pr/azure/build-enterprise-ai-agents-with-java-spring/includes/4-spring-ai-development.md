@@ -10,7 +10,7 @@ These vectors capture semantic relationships, enabling advanced search and analy
 
 Embedding models are essential tools in natural language processing (NLP) and other AI applications. They convert complex data, such as text, into dense vector representations that capture the semantic meaning of the data. These vectors can then be used for various tasks, including search, recommendation, and clustering.
 
-Azure OpenAI provides powerful embedding models that can be easily integrated into your applications. These models can generate embeddings for various types of data, enabling advanced search and retrieval capabilities. One the most commonly used text embedding model from OpenAI is the `text-embedding-ada-002` model. This model can be used for various applications, including search, clustering, and recommendation systems, due to its ability to understand and represent complex text data. When used with ChatGPT models, `text-embedding-ada-002` enhances the chatbot's ability to understand context, retrieve relevant information, and provide more accurate and contextually appropriate responses. By using `text-embedding-ada-002` with ChatGPT, developers can create more intelligent and responsive applications that deliver better user experiences.
+Azure OpenAI provides powerful embedding models that can be easily integrated into your applications. These models can generate embeddings for various types of data, enabling advanced search and retrieval capabilities. One of the most commonly used text embedding models from OpenAI is the `text-embedding-ada-002` model. This model can be used for various applications, including search, clustering, and recommendation systems, due to its ability to understand and represent complex text data. When used with ChatGPT models, `text-embedding-ada-002` enhances the chatbot's ability to understand context, retrieve relevant information, and provide more accurate and contextually appropriate responses. By using `text-embedding-ada-002` with ChatGPT, developers can create more intelligent and responsive applications that deliver better user experiences.
 
 ## Implement VectorStore in Spring AI
 
@@ -25,7 +25,7 @@ You can add the `VectorStore` Spring Boot starter dependency to your project usi
 </dependency>
 ```
 
-On startup, the `pgvector` Spring Boot starter attempts to install the required database extensions and create the required `vector_store` table with an index if not existing. Optionally, you can do this manually using this SQL statements:
+On startup, the `pgvector` Spring Boot starter attempts to install the required database extensions and create the required `vector_store` table with an index if not existing. Optionally, you can do this manually using these SQL statements:
 
 ```sql
 CREATE EXTENSION IF NOT EXISTS vector;
@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS vector_store (
 CREATE INDEX ON vector_store USING HNSW (embedding vector_cosine_ops);
 ```
 
-The `VectorStore` also requires an `EmbeddingModel` instance to calculate embeddings for the documents. To use Azure OpenAI Embedding Model, add the following dependency to your project:
+The `VectorStore` also requires an `EmbeddingModel` instance to calculate embeddings for the documents. To use the Azure OpenAI Embedding Model, add the following dependency to your project:
 
 ```xml
 <dependency>
@@ -77,9 +77,9 @@ vectorStore.add(documents);
 
 Here's a detailed explanation of how this code works:
 
-1. First use the Spring's `@Autowired` annotation to automatically inject an instance of the `VectorStore` class into the current class.
-1. Next create a list of `Document` objects. Each `Document` object contains a string representing the content and a map of metadata. In this example, two documents are created:
-1. Finally we add the list of documents to the `vectorStore` instance. The add method of the `VectorStore` class is used to store the documents in the vector store database table, and generate embeddings using the specified `EmbeddingModel` in your Spring Boot configuration.
+1. Spring's `@Autowired` annotation injects an instance of the `VectorStore` class into your component.
+2. A list of `Document` objects is created. Each `Document` contains content and metadata (for example, a prompt).
+3. The list of documents is added to the `vectorStore`. The `VectorStore` generates embeddings using the configured `EmbeddingModel` and stores both the content and embeddings in the database.
 
 ### Query documents
 
@@ -97,10 +97,35 @@ List<Document> results = vectorStore.similaritySearch(
 Here's a detailed explanation for this code snippet:
 
 1. The `similaritySearch` method of the `VectorStore` class is used to find documents that are similar to a given query.
-1. This code uses the builder pattern to create a `SearchRequest` object using the following components:
-    1. This `query` method sets the query string for the search. The similarity search looks for documents in the vector store that are similar to this query.
-    1. The `topK(5)` portion specifies the number of top results to return. In this case, the search should return the top five most similar documents.
+2. The builder pattern creates a `SearchRequest` object:
+    - The `query` sets the search string.
+    - The `topK(5)` specifies that the search returns the top five most similar documents.
+
+## Advanced Content Generation with Evaluator Optimizer Agent Pattern
+
+In addition to the core RAG functionality, modern AI applications can benefit from iterative refinement techniques for generating high-quality content. One advanced approach is the Evaluator Optimizer Agent pattern. This pattern employs a dual-model process:
+
+- **Generator LLM (Writer)**: Produces an initial draft of content (e.g., a blog post).
+- **Evaluator LLM (Editor)**: Reviews the draft, providing detailed feedback and identifying areas for improvement.
+
+### How It Works
+
+1. **Initial Generation**: The writer LLM generates a draft based on the given topic.
+2. **Evaluation**: The evaluator LLM reviews the draft against quality criteria such as clarity, engagement, and structure.
+3. **Iterative Refinement**: If the evaluator indicates that improvements are needed, the feedback is incorporated and the writer LLM generates a revised draft.
+4. **Loop Until Approved**: This process repeats until the content meets the desired quality standards or a maximum number of iterations is reached.
+
+### Example Application: Blog Post Generation
+
+In our exercise, we extend the RAG application by implementing a Blog Writer agent that uses the Evaluator Optimizer pattern. The Blog Writer service (along with its corresponding controller) demonstrates how to:
+- Generate an initial blog post draft.
+- Evaluate the draft and extract actionable feedback.
+- Refine the draft in multiple iterations until the content is approved.
+
+The Blog Writer pattern is particularly useful in scenarios where iterative content refinement provides significant value—such as content creation, code generation, and complex search tasks that require multi-step reasoning.
+
+*Note: The complete code for the BlogWriterService and BlogWriterController is provided in the subsequent exercise module. This section introduces the concepts and rationale behind leveraging an Evaluator Optimizer Agent for enhanced content generation.*
 
 ## Unit summary
 
-In this unit, you learned the concepts behind using Spring Boot's `VectorStore` and OpenAI Spring Boot Starter to manage and query document embeddings. You explored the importance of embeddings, how to generate and store them, and how to perform similarity searches. In the next exercise, we build a RAG Spring Boot application using these tools.
+In this unit, you learned the concepts behind using Spring Boot's `VectorStore` and Azure OpenAI Spring Boot Starter to manage and query document embeddings. You explored the importance of embeddings, how to generate and store them, and how to perform similarity searches. Additionally, you were introduced to the Evaluator Optimizer Agent pattern—a dual-LLM approach that iteratively refines generated content (as demonstrated in the Blog Writer agent example). In the next exercise, you will build a complete RAG application using these tools and extend it with advanced content generation capabilities.

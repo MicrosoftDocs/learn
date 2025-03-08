@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.azure.build-enterprise-ai-agents-with-java-spring
+metadata:
+  title: Build Enterprise AI Agents with Java and Spring
+  description: Learn how to build and deploy an AI-powered Java application and AI agents using Spring AI, Azure OpenAI, and Azure Container Apps with PostgreSQL vector storage.
+  ms.date: 02/24/2025
+  author: KarlErickson
+  ms.author: karler
+  ms.reviewer: jbalderas, thegovind
+  ms.topic: module
+  ms.custom: team=cloud_advocates
+  ms.service: azure-container-apps
+  ms.collection: ce-skilling-ai-copilot
+title: Build Enterprise AI Agents with Java and Spring
+summary: Build and deploy a Java application and AI agents using Spring AI, Azure OpenAI, and Azure Container Apps with PostgreSQL vector storage.
+abstract: |
+  After completing this module, you'll be able to:
+  - Understand Spring AI's core abstractions and Azure OpenAI integration
+  - Create and configure Azure PostgreSQL for vector storage
+  - Implement an end-to-end AI application and AI agent with Spring AI
+  - Deploy and scale your application on Azure Container Apps
+iconUrl: /training/achievements/build-enterprise-ai-agents-with-java-spring.svg
+levels:
+  - intermediate
+roles:
+  - developer
+products:
+  - azure
+  - azure-openai
+  - azure-container-apps
+  - azure-database-postgresql
+prerequisites: |
+  - Azure subscription
+  - Basic familiarity with Java and Spring Boot
+  - Experience with Git and Maven
+  - Java 17 or later installed
+  - psql client
+subjects:
+  - machine-learning
+  - custom-app-development
+units:
+  - learn.azure.build-enterprise-ai-agents-with-java-spring.1-introduction
+  - learn.azure.build-enterprise-ai-agents-with-java-spring.2-pgvector-azure-postgresql-setup
+  - learn.azure.build-enterprise-ai-agents-with-java-spring.3-exercise-pgvector-azure-postgresql-setup
+  - learn.azure.build-enterprise-ai-agents-with-java-spring.4-spring-ai-development
+  - learn.azure.build-enterprise-ai-agents-with-java-spring.5-exercise-spring-ai-development
+  - learn.azure.build-enterprise-ai-agents-with-java-spring.6-aca-deployment
+  - learn.azure.build-enterprise-ai-agents-with-java-spring.7-exercise-aca-deployment
+  - learn.azure.build-enterprise-ai-agents-with-java-spring.8-knowledge-check
+  - learn.azure.build-enterprise-ai-agents-with-java-spring.9-summary
+badge:
+  uid: learn.azure.build-enterprise-ai-agents-with-java-spring.badge

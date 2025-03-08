@@ -1,4 +1,4 @@
-In this unit, we build a retrieval-augmented generation (RAG) application using Spring AI, Azure OpenAI, and `VectorStore` from Spring AI.
+In this unit, we build a retrieval-augmented generation (RAG) application using Spring AI, Azure OpenAI, and `VectorStore` from Spring AI. Additionally, we demonstrate an Evaluator Optimizer Agent pattern that leverages multiple AI agents to generate, evaluate, and refine content iteratively, such as generating blog posts.
 
 ## Set up your development environment
 
@@ -12,13 +12,13 @@ Before you start building an AI-powered application, set up your development env
    java -version  # Verify Java installation
    ```
 
-1. Confirm **Maven** is installed:
+2. Confirm **Maven** is installed:
 
    ```bash
    mvn -version  # Verify Maven installation
    ```
 
-1. Log in to **Azure** using `az`:
+3. Log in to **Azure** using `az`:
 
    ```azurecli
    az login
@@ -59,7 +59,7 @@ az cognitiveservices account create \
 
 ### Deploy an Azure OpenAI chat model
 
-Use the following command to a chat model named `gpt-4o`:
+Use the following command to deploy a chat model named `gpt-4o`:
 
 ```azurecli
 az cognitiveservices account deployment create \
@@ -110,8 +110,8 @@ curl https://start.spring.io/starter.zip \
 
 The generated Spring Boot starter project includes the following configurations and dependencies:
 
-- **Spring Boot Version**: 3.4.3
-- **Java Version**: 17
+- **Spring Boot Version**: 3.4.3  
+- **Java Version**: 17  
 - **Dependencies**:
   - `web`: Adds support for building web applications, including RESTful services using Spring MVC (Model View Controller).
   - `jdbc`: Provides JDBC (Java Database Connectivity) support for database access.
@@ -119,7 +119,7 @@ The generated Spring Boot starter project includes the following configurations 
   - `spring-ai-azure-openai`: Adds support for integrating with Azure OpenAI services.
   - `spring-ai-vectordb-pgvector`: Adds support for using `pgvector`, a PostgreSQL extension for vector embeddings.
 
-Unzip downloaded file using command:
+Unzip the downloaded file using the command:
 
 ```bash
 unzip -u spring-ai-app.zip -d spring-ai-app
@@ -133,7 +133,7 @@ cd spring-ai-app
 
 We need to change the **pom.xml** file to include a dependency for password-less authentication for PostgreSQL.
 
-Open **pom.xml** file, locate the `<dependencies>` section and add the following dependency:
+Open the **pom.xml** file, locate the `<dependencies>` section and add the following dependency:
 
 ```xml
     <dependency>
@@ -164,7 +164,7 @@ Expect to see a successful build output:
 From the **spring-ai-app** directory, run these commands to create new directories for new source files to be added:
 
 ```bash
-mkdir -p src/mainjava/com/example/springaiapp/controller
+mkdir -p src/main/java/com/example/springaiapp/controller
 mkdir -p src/main/java/com/example/springaiapp/service
 ```
 
@@ -179,21 +179,21 @@ src/
 │   │       ├── service/
 │   │       └── SpringAiAppApplication.java
 │   └── resources/
-│       ├── application.properties
+│       └── application.properties
 ├── test/
-│   ├── java/
-│   │   └── com/example/springaiapp/
-│   │       └── SpringAiAppApplicationTests.java
+│   └── java/
+│       └── com/example/springaiapp/
+│           └── SpringAiAppApplicationTests.java
 └── pom.xml
 ```
 
 ### Spring AI configuration
 
-Before we can run the application successfully, we need to add required configuration:
+Before we can run the application successfully, we need to add the required configuration:
 
-- Azure OpenAI Endpoint
-- Azure OpenAI API Key
-- PostgreSql URL
+- Azure OpenAI Endpoint  
+- Azure OpenAI API Key  
+- PostgreSQL URL
 
 Retrieve the **Azure OpenAI Endpoint** using this command:
 
@@ -215,7 +215,7 @@ export AZURE_OPENAI_API_KEY=$(az cognitiveservices account keys list \
     --output tsv | tr -d '\r')
 ```
 
-Additionally we need to provide the **PostgreSQL URL**, which you can retrieve using command from prior exercise:
+Additionally, provide the **PostgreSQL URL** (retrieved using the command from a prior exercise):
 
 ```azcli
 az postgres flexible-server show --resource-group $RESOURCE_GROUP --name $DB_SERVER_NAME \
@@ -224,7 +224,7 @@ az postgres flexible-server show --resource-group $RESOURCE_GROUP --name $DB_SER
 
 ### Update Azure OpenAI in application.properties
 
-Locate and open the **application.properties** file in the **src/main/resources** directory and add the following properties replacing the values retrieved previously:
+Locate and open the **application.properties** file in the **src/main/resources** directory and add the following properties, replacing the values retrieved previously:
 
 ```properties
 spring.application.name=spring-ai-app
@@ -244,7 +244,7 @@ spring.ai.vectorstore.pgvector.schema-name=postgres
 
 #### Create the service
 
-Within the **service** directory, create a new file name **RagService.java** with the following content:
+Within the **service** directory, create a new file named **RagService.java** with the following content:
 
 ```java
 package com.example.springaiapp.service;
@@ -275,8 +275,13 @@ public class RagService {
     }
 
     public String processQuery(String query) {
-        String answer = "";
-        List<Document> similarContexts = vectorStore.similaritySearch(SearchRequest.builder().query(query).similarityThreshold(0.8).topK(3).build());
+        List<Document> similarContexts = vectorStore.similaritySearch(
+            SearchRequest.builder()
+                .query(query)
+                .similarityThreshold(0.8)
+                .topK(3)
+                .build()
+        );
         String context = similarContexts.stream()
                 .map(ch -> String.format("Q: %s\nA: %s", ch.getMetadata().get("prompt"), ch.getText()))
                 .collect(Collectors.joining("\n\n"));
@@ -293,26 +298,19 @@ public class RagService {
             context,
             query
         );
-        answer = this.chatClient.prompt()
+        return this.chatClient.prompt()
             .user(promptText)
             .call()
             .content();
-        return answer;
     }
 }
 ```
 
-In the provided code, we implement RAG by to generate an answer to a given query by augmenting knowledge in the model using similar contexts from the `VectorStore` as follows:
+In the provided code, we implement RAG by generating an answer to a given query by augmenting the knowledge in the model using similar contexts from the `VectorStore`.
 
-1. First perform a similarity search using Spring AI's `VectorStore` with the provided `query`. The search is configured to find documents with a similarity threshold of 0.8 and to return the top three most similar documents.
-1. The results of the similarity search are then transformed into a formatted string that pairs the new prompt (question) with the contents from the similar found documents.
-1. Finally, the new prompt is sent to the `ChatClient`, which sends it to the Azure OpenAI model and returns the response from the model.
+#### Create the RAG controller
 
-#### Create the controller
-
-Next, we need to expose and REST endpoint for our application. To do that, create a new file named **RagController.java** within the **controller** directory.
-
-Update the file with the following content:
+Next, we need to expose a REST endpoint for our RAG application. Create a new file named **RagController.java** within the **controller** directory:
 
 ```java
 package com.example.springaiapp.controller;
@@ -335,43 +333,38 @@ public class RagController {
 }
 ```
 
-#### Test the application
+#### Test the RAG application
 
-With these changes in place, we're now ready to test the implementation by running this command:
+With these changes in place, test the implementation by running:
 
 ```bash
 mvn spring-boot:run
 ```
 
-Test the new REST endpoint either from a browser or via `curl` command:
+Test the new REST endpoint either from a browser or via a `curl` command:
 
 ```bash
 curl -G "http://localhost:8080/api/rag" --data-urlencode "query=What is pgvector?"
 ```
 
-Expect to see a valid response:
+You should see a valid response:
 
 ```bash
 pgvector is an open-source PostgreSQL extension that enables efficient storage, indexing, 
-and querying of vector embeddings within a PostgreSQL database. 
+and querying of vector embeddings within a PostgreSQL database.
 ```
 
-Next, use the `curl` command to ask this question "How does QuestionAnswerAdvisor work in Spring AI?":
+Next, try asking:
 
 ```bash
 curl -G "http://localhost:8080/api/rag" --data-urlencode "query=How does QuestionAnswerAdvisor work in Spring AI?"
 ```
 
-Notice that even though the answer may appear valid, there are words indicating that this response is a likely guess:
-
-```bash
-### 2. **What is QuestionAnswerAdvisor?**
-The **QuestionAnswerAdvisor** is likely a component or feature within Spring AI that focuses on providing AI-driven advice or responses to user queries. 
-```
+Notice that while the answer may appear valid, it might include phrasing that indicates it is a reasoned guess.
 
 #### Test the application with extra knowledge
 
-We now provide extra knowledge by providing the following documents to be stored using our vector store:
+We now provide extra knowledge by adding the following documents to the vector store. Create a new file named **DocumentService.java** within the **service** directory:
 
 ```java
 package com.example.springaiapp.service;
@@ -399,8 +392,7 @@ public class DocumentService {
     @PostConstruct
     private void init() {
         vectorStore.add(documents);
-        logger.info("DocumentService initialized with. Document count: {}", 
-                   documents.size());
+        logger.info("DocumentService initialized with. Document count: {}", documents.size());
     }
 
     List<Document> documents = List.of(
@@ -430,27 +422,182 @@ public class DocumentService {
 }
 ```
 
-In this code, we create two new documents: one about Spring AI, and the second one explaining how `QuestionAnswerAdvisor` works. Data Scientists are normally responsible for creating these documents.
-
 Test these changes by running:
 
 ```bash
 mvn spring-boot:run
 ```
 
-Use the `curl` command to ask this question again: "How does QuestionAnswerAdvisor work in Spring AI?":
+Then ask:
 
-```bash
 ```bash
 curl -G "http://localhost:8080/api/rag" --data-urlencode "query=How does QuestionAnswerAdvisor work in Spring AI?"
 ```
 
-Notice how the agent now knows about `QuestionAnswerAdvisor`:
+You should now see an answer that clearly explains the role of **QuestionAnswerAdvisor** within Spring AI.
+
+---
+
+## Implement Evaluator Optimizer Agent for Blog Post Generation
+
+In addition to the RAG service, this unit now demonstrates an Evaluator Optimizer Agent pattern to improve generated content. In this design, one AI agent (the **Writer**) generates an initial draft (e.g., a blog post), and another agent (the **Evaluator**) reviews and provides actionable feedback. The Writer refines the draft based on the feedback, and the process repeats until the content is approved or the maximum number of iterations is reached.
+
+#### Create the BlogWriterService
+
+Within the **service** directory, create a new file named **BlogWriterService.java** with the following code:
+
+```java
+package com.example.springaiapp.service;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.ai.chat.client.ChatClient;
+import org.springframework.stereotype.Service;
+
+@Service
+public class BlogWriterService {
+    private static final Logger logger = LoggerFactory.getLogger(BlogWriterService.class);
+    private static final int MAX_ITERATIONS = 3;
+
+    private final ChatClient chatClient;
+
+    public BlogWriterService(ChatClient.Builder chatClientBuilder) {
+        this.chatClient = chatClientBuilder.build();
+    }
+
+    public String generateBlogPost(String topic) {
+        logger.info("Starting blog generation for topic: {}", topic);
+
+        // Writer: Generate initial blog draft
+        String initialPrompt = String.format("""
+            You are a professional blog writer. Write a well-structured, engaging blog post about "%s".
+            The post should have a clear introduction, body paragraphs, and conclusion.
+            Include relevant examples and maintain a conversational yet professional tone.
+            """, topic);
+        
+        String draft = chatClient.prompt(initialPrompt).call().chatResponse().getResult().getOutput().getText();
+        logger.info("Initial draft generated");
+        logger.debug("Initial draft content:\n{}", draft);
+
+        // Enter evaluator-optimizer loop for refinement
+        boolean approved = false;
+        int iteration = 1;
+        
+        while (!approved && iteration <= MAX_ITERATIONS) {
+            // Evaluator: Assess the current draft
+            String evalPrompt = String.format("""
+                You are a critical blog editor. Evaluate the following blog draft and respond with either:
+                PASS - if the draft is well-written, engaging, and complete
+                NEEDS_IMPROVEMENT - followed by specific, actionable feedback on what to improve
+                
+                Focus on:
+                - Clarity and flow of ideas
+                - Engagement and reader interest
+                - Professional yet conversational tone
+                - Structure and organization
+                
+                Draft:
+                %s
+                """, draft);
+            
+            String evaluation = chatClient.prompt(evalPrompt).call().chatResponse().getResult().getOutput().getText();
+            logger.info("Iteration {} - Editor's evaluation:\n{}", iteration, evaluation);
+
+            if (evaluation.toUpperCase().contains("PASS")) {
+                approved = true;
+                logger.info("Draft approved by editor on iteration {}", iteration);
+            } else {
+                // Extract feedback and refine the draft
+                String feedback = extractFeedback(evaluation);
+                logger.info("Editor feedback (iteration {}): {}", iteration, feedback);
+                
+                // Writer: Refine the draft using feedback
+                String refinePrompt = String.format("""
+                    You are a blog writer. Improve the following blog draft based on this editorial feedback:
+                    
+                    Feedback: %s
+                    
+                    Current Draft:
+                    %s
+                    
+                    Provide the complete improved version while maintaining the original topic and structure.
+                    """, feedback, draft);
+                
+                draft = chatClient.prompt(refinePrompt).call().chatResponse().getResult().getOutput().getText();
+                logger.info("Iteration {} - Draft revised", iteration);
+                logger.debug("Revised draft content:\n{}", draft);
+            }
+            iteration++;
+        }
+
+        if (!approved) {
+            logger.warn("Maximum iterations ({}) reached without editor approval", MAX_ITERATIONS);
+        }
+
+        return draft;
+    }
+
+    private String extractFeedback(String evaluation) {
+        if (evaluation == null) return "";
+        int idx = evaluation.toUpperCase().indexOf("NEEDS_IMPROVEMENT");
+        if (idx != -1) {
+            // Return text after "NEEDS_IMPROVEMENT"
+            return evaluation.substring(idx + "NEEDS_IMPROVEMENT".length()).trim();
+        }
+        return evaluation;
+    }
+}
+```
+
+#### Create the BlogWriterController
+
+To expose the blog generation functionality via a REST endpoint, create a new file named **BlogWriterController.java** within the **controller** directory:
+
+```java
+package com.example.springaiapp.controller;
+
+import com.example.springaiapp.service.BlogWriterService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/api/blog")
+public class BlogWriterController {
+
+    private final BlogWriterService blogWriterService;
+
+    @Autowired
+    public BlogWriterController(BlogWriterService blogWriterService) {
+        this.blogWriterService = blogWriterService;
+    }
+
+    @GetMapping
+    public String generateBlogPost(@RequestParam String topic) {
+        return blogWriterService.generateBlogPost(topic);
+    }
+}
+```
+
+This controller exposes a GET endpoint at `/api/blog` that accepts a `topic` parameter and delegates the blog post generation to the **BlogWriterService**.
+
+#### Testing the Blog Generation
+
+After adding the BlogWriterService and its controller, compile and run the application:
 
 ```bash
-In Spring AI, the **QuestionAnswerAdvisor** works as a mechanism to enable **Retrieval Augmented Generation (RAG)**, helping developers integrate advanced question-answering capabilities into their applications. 
+mvn spring-boot:run
 ```
+
+Then test the blog generation endpoint using a REST client or `curl`:
+
+```bash
+curl -G "http://localhost:8080/api/blog" --data-urlencode "topic=Spring AI Innovation"
+```
+
+This should return a blog post that has been generated and iteratively refined through the Evaluator Optimizer Agent process.
+
+---
 
 ## Unit summary
 
-In this unit, we successfully built a Retrieval Augmented Generation (RAG) application using Spring AI, Azure OpenAI, and Spring AI's `VectorStore`.
+In this unit, we successfully built a Retrieval Augmented Generation (RAG) application using Spring AI, Azure OpenAI, and Spring AI's `VectorStore`. Additionally, we incorporated an Evaluator Optimizer Agent pattern to enhance content generation by iteratively refining a blog post through automated evaluation and optimization. The module exposes both RAG and blog generation capabilities via dedicated REST endpoints through the **RagController** and **BlogWriterController**.
