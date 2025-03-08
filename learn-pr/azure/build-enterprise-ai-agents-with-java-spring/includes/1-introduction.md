@@ -1,4 +1,4 @@
-Spring AI is a powerful framework that simplifies the integration of AI capabilities into Java applications. In this module, you learn how to build an AI-powered application using Spring AI with Azure OpenAI and deploy it to Azure Container Apps.
+Spring AI is a powerful framework that simplifies the integration of AI capabilities into Java applications. In this module, you learn how to build an AI-powered application and AI Agents using Spring AI with Azure OpenAI and deploy it to Azure Container Apps.
 
 ## What is Spring AI?
 
@@ -8,7 +8,7 @@ Spring AI provides the following abstractions and tools that make it easy to wor
 - Multiple AI Model providers: Support for all major AI Model providers, including Azure OpenAI.
 - Embeddings: Generate vector embeddings for semantic search.
 - Vector storage integration: Built-in support for vector databases, such as `pgvector`.
-- Advisors API: Encapsulates Generative AI patterns, for example, to implement Retrieval Augmentation (RAG).
+- Advisors API: Encapsulates Generative AI patterns, for example, to implement Retrieval Augmented Generation (RAG).
 
 ## Sample use cases
 
@@ -33,5 +33,5 @@ After completing this module, you'll be able to:
 
 - Understand Spring AI's core abstractions and Azure OpenAI integration
 - Create and configure Azure PostgreSQL for vector storage
-- Implement an end-to-end AI application with Spring AI
+- Implement an end-to-end AI application and AI Agents with Spring AI
 - Deploy and scale your application on Azure Container Apps
