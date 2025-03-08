@@ -2,7 +2,7 @@
 uid: learn.azure.build-intelligent-spring-apps-using-ai.4-spring-ai-development
 title: Develop RAG application with Spring AI and Azure OpenAI 
 metadata:
-  title: Develop RAG application with Spring AI and Azure OpenAI 
+  title: Develop a RAG Application with Spring AI and Azure OpenAI 
   description: Learn how to implement a RAG application using Spring AI with Azure OpenAI and VectorStore Spring Boot Starters.
   ms.date: 02/24/2025
   author: KarlErickson

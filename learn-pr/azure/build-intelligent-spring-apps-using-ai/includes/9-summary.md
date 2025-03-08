@@ -1,18 +1,18 @@
 Congratulations! You completed this comprehensive module on building AI-powered applications with Spring AI and Azure. Let's review what you learned.
 
-## What You Learned
+## What you learned
 
-1. **Spring AI Fundamentals**
-   - Core abstractions and components
-   - Azure OpenAI integration
-   - Vector operations and storage
+- Spring AI fundamentals:
+  - Core abstractions and components
+  - Azure OpenAI integration
+  - Vector operations and storage
 
-2. **Azure Integration**
-   - OpenAI service configuration
-   - PostgreSQL with pgvector
-   - Container Apps deployment
+- Azure integration:
+  - OpenAI service configuration
+  - PostgreSQL with `pgvector`
+  - Container Apps deployment
 
-## Next Steps
+## Next steps
 
 To continue your learning journey:
 
@@ -26,7 +26,7 @@ To continue your learning journey:
    - Review [Awesome Spring AI](https://github.com/danvega/awesome-spring-ai) resources
    - Review and contribute [Azure AI samples](https://github.com/Azure-Samples/azure-ai)
 
-## Learning Resources
+## Learning resources
 
 - [Spring AI Documentation](https://docs.spring.io/spring-ai/reference/)
 - [Azure OpenAI Service](/azure/cognitive-services/openai/)

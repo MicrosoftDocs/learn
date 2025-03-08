@@ -1,6 +1,6 @@
 In this module, you learn how to deploy our Spring Retrieval Augmented Generation (RAG) application to Azure Container Apps. This module covers the necessary concepts and steps to containerize your application, set up Azure Container Apps, and ensure secure and scalable deployment.
 
-## Azure Container Apps Concepts
+## Azure Container Apps concepts
 
 Azure Container Apps is a serverless platform that allows you to maintain less infrastructure and save costs while running containerized applications.
 
@@ -12,8 +12,8 @@ A Container Apps environment is a secure boundary around one or more container a
 
 There are two types of Container App environments:
 
-1. **Workload profile.** Run serverless apps with support for scale-to-zero and pay only for resources your apps use with the consumption profile. You can also run apps with customized hardware and increased cost predictability using dedicated workload profiles.
-1. **Consumption only.** Run serverless apps with support for scale-to-zero and pay only for resources your apps use.
+1. Workload profile. Run serverless apps with support for scale-to-zero and pay only for resources your apps use with the consumption profile. You can also run apps with customized hardware and increased cost predictability using dedicated workload profiles.
+1. Consumption only. Run serverless apps with support for scale-to-zero and pay only for resources your apps use.
 
 #### Replicas
 
@@ -23,7 +23,7 @@ Replicas are instances of your container app that run concurrently to handle inc
 
 Revisions are immutable snapshots of your container app's configuration and code at a specific point in time. Each deployment creates a new revision, allowing you to roll back to previous versions if needed. Revisions enable safe updates and version control for your containerized applications. You can configure traffic splitting between revisions to gradually roll out new features or perform A/B testing.
 
-### Deployment Types
+### Deployment types
 
 There are three primary deployment types for Azure Container Apps:
 
@@ -68,6 +68,6 @@ az containerapp update \
 
 In this example, the container app is configured to scale between 1 and 10 replicas based on HTTP concurrency. HTTP concurrency is set to 50, which means each replica handles up to 50 concurrent HTTP requests before more instances are created.
 
-## Unit Summary
+## Unit summary
 
 In this unit, we learned about the key concepts of Azure Container Apps, including environments, deployment types, ingress options, and scaling mechanisms. In the next exercise, we'll put these concepts into practice by deploying our Spring RAG application using Azure Container Apps.

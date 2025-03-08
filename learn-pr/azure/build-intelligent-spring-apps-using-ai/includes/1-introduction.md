@@ -2,32 +2,32 @@ Spring AI is a powerful framework that simplifies the integration of AI capabili
 
 ## What is Spring AI?
 
-Spring AI provides a set of abstractions and tools that make it easy to work with various AI models and services:
+Spring AI provides the following abstractions and tools that make it easy to work with various AI models and services:
 
-- **ChatClient API**: Core abstraction for interacting with Large Language Models (LLMs).
-- **Multiple AI Model providers**: Support for all major AI Model providers, including Azure OpenAI.
-- **Embeddings**: Generate vector embeddings for semantic search.
-- **Vector storage integration**: Built-in support for vector databases, such as `pgvector`.
-- **Advisors API**: Encapsulates Generative AI patterns, for example, to implement Retrieval Augmentation (RAG).
+- ChatClient API: Core abstraction for interacting with Large Language Models (LLMs).
+- Multiple AI Model providers: Support for all major AI Model providers, including Azure OpenAI.
+- Embeddings: Generate vector embeddings for semantic search.
+- Vector storage integration: Built-in support for vector databases, such as `pgvector`.
+- Advisors API: Encapsulates Generative AI patterns, for example, to implement Retrieval Augmentation (RAG).
 
-## Sample Use Cases
+## Sample use cases
 
-### RAG Implementation
+### RAG implementation
 
-A Retrieval Augmented Generation (RAG) application typically has these capabilities:
+A retrieval-augmented generation (RAG) application typically has the following capabilities:
 
-1. Converts user questions into vector embeddings
-2. Finds similar previous prompts and responses using vector similarity search
-3. Uses found responses as context for generating responses
-4. Stores interactions for future reference
+- Converts user questions into vector embeddings.
+- Finds similar previous prompts and responses using vector similarity search.
+- Uses found responses as context for generating responses.
+- Stores interactions for future reference.
 
 ## Why Azure OpenAI and Container Apps?
 
-- **Azure OpenAI**: Azure OpenAI provides a secure and scalable platform for deploying AI models with enterprise-grade features. It ensures data privacy and compliance, making it suitable for sensitive applications. Additionally, it integrates seamlessly with other Azure services for a comprehensive AI solution.
-- **Azure Container Apps**: Azure Container Apps offers a serverless environment for running containerized applications with automatic scaling based on demand. It simplifies the deployment and management of microservices, enabling developers to focus on building applications without worrying about infrastructure.
-- **Azure PostgreSQL**: Azure PostgreSQL is a fully managed database service that supports advanced features like vector search for AI applications. It provides high availability, security, and performance, making it an ideal choice for storing and querying large datasets used in AI models.
+- Azure OpenAI: Azure OpenAI provides a secure and scalable platform for deploying AI models with enterprise-grade features. It ensures data privacy and compliance, making it suitable for sensitive applications. Additionally, it integrates seamlessly with other Azure services for a comprehensive AI solution.
+- Azure Container Apps: Azure Container Apps offers a serverless environment for running containerized applications with automatic scaling based on demand. It simplifies the deployment and management of microservices, enabling developers to focus on building applications without worrying about infrastructure.
+- Azure PostgreSQL: Azure PostgreSQL is a fully managed database service that supports advanced features like vector search for AI applications. It provides high availability, security, and performance, making it an ideal choice for storing and querying large datasets used in AI models.
 
-## Learning Objectives
+## Learning objectives
 
 After completing this module, you'll be able to:
 

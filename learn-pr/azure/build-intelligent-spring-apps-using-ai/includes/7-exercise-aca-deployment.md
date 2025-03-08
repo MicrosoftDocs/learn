@@ -1,44 +1,44 @@
 In this unit, we deploy our Spring AI application to Azure Container Apps for scalable and serverless container hosting.
 
-## Environment Variables Setup
+## Set up environment variables
 
 For this exercise, we need to some environment variables from prior exercises.
 
 1. Confirm these variables are available:
 
-  ```bash
-  export RESOURCE_GROUP=spring-ai-postgresql-rg
-  export LOCATION=eastus2
-  echo "RESOURCE_GROUP: $RESOURCE_GROUP LOCATION: $LOCATION"
-  ```
+   ```bash
+   export RESOURCE_GROUP=spring-ai-postgresql-rg
+   export LOCATION=eastus2
+   echo "RESOURCE_GROUP: $RESOURCE_GROUP LOCATION: $LOCATION"
+   ```
 
 1. Confirm OpenAI Key and Endpoint variables from prior exercise are available:
 
-  ```bash
-  echo "Azure OpenAI Endpoint: $AZURE_OPENAI_ENDPOINT, key: $AZURE_OPENAI_API_KEY"
-  ```
+   ```bash
+   echo "Azure OpenAI Endpoint: $AZURE_OPENAI_ENDPOINT, key: $AZURE_OPENAI_API_KEY"
+   ```
 
 1. Confirm `DB_SERVER_NAME` and `PGHOST` variable from prior exercise is available:
 
-  ```bash
-  echo "DB_SERVER_NAME: $DB_SERVER_NAME PGHOST: $PGHOST"
-  ```
+   ```bash
+   echo "DB_SERVER_NAME: $DB_SERVER_NAME PGHOST: $PGHOST"
+   ```
 
 1. Export a name for the new container app:
 
-  ```bash
-  CONTAINER_APP_NAME=rag-api
-  ```
+   ```bash
+   export CONTAINER_APP_NAME=rag-api
+   ```
 
 1. Export the name to use as the Managed Identity for the Azure Container App:
 
 ```azurecli
-MANAGED_IDENTITY_NAME=containerappusr
+export MANAGED_IDENTITY_NAME=containerappusr
 ```
 
 With these environment values in place, you're now ready to deploy the application into Azure Container Apps.
 
-## Create Dockerfile
+## Create a Dockerfile
 
 Next we create a `Dockerfile` that is used to build a docker image with the application code to be used to deploy to Azure Container Apps:
 
@@ -86,9 +86,9 @@ To view the logs of your Azure Container App, use the following command:
 
 ```azurecli
 az containerapp logs show \
-  --name $CONTAINER_APP_NAME \
-  --resource-group $RESOURCE_GROUP \
-  --tail 80
+    --resource-group $RESOURCE_GROUP \
+    --name $CONTAINER_APP_NAME \
+    --tail 80
 ```
 
 Inspect the logs and notice that the application isn't starting successfully due to missing configuration values as expected:
@@ -101,10 +101,11 @@ AAD_AUTH_TOKENTYPE_APP_OBO token."}
 
 To redeploy the application after making changes, you can use the following command:
 
-```bash
-az containerapp update --name $CONTAINER_APP_NAME \
-  --resource-group $RESOURCE_GROUP \
-  --source .
+```azurecli
+az containerapp update \
+    --resource-group $RESOURCE_GROUP \
+    --name $CONTAINER_APP_NAME \
+    --source .
 ```
 
 ## Enable managed identity
@@ -115,16 +116,20 @@ To enable system-assigned managed identity for your Azure Container App, use thi
 
 ```azurecli
 az containerapp identity assign \
-  --name $CONTAINER_APP_NAME \
-  --resource-group $RESOURCE_GROUP \
-  --system-assigned
+    --resource-group $RESOURCE_GROUP \
+    --name $CONTAINER_APP_NAME \
+    --system-assigned
 ```
 
 To get the ID of the system assigned managed identity, use the following command:
 
 ```azurecli
-MANAGED_IDENTITY_ID=$(az containerapp show --name $CONTAINER_APP_NAME \
-  --resource-group $RESOURCE_GROUP --query 'identity.principalId' --output tsv | tr -d '\r')
+export MANAGED_IDENTITY_ID=$(az containerapp show \
+    --resource-group $RESOURCE_GROUP \
+    --name $CONTAINER_APP_NAME \
+    --query 'identity.principalId' \
+    --output tsv \
+    | tr -d '\r')
 echo "Managed Identity ID: $MANAGED_IDENTITY_ID"
 ```
 
@@ -132,11 +137,11 @@ To authorize the managed identity of your Azure Container App to access the Post
 
 ```azurecli
 az postgres flexible-server ad-admin create \
-  --resource-group $RESOURCE_GROUP \
-  --server-name $DB_SERVER_NAME \
-  --display-name $MANAGED_IDENTITY_NAME \
-  --object-id $MANAGED_IDENTITY_ID \
-  --type ServicePrincipal
+    --resource-group $RESOURCE_GROUP \
+    --server-name $DB_SERVER_NAME \
+    --display-name $MANAGED_IDENTITY_NAME \
+    --object-id $MANAGED_IDENTITY_ID \
+    --type ServicePrincipal
 ```
 
 ## Azure Container App Environment and Secret Configuration
@@ -145,38 +150,38 @@ Create a secret for sensitive values:
 
 ```bash
 az containerapp secret set \
-  --name $CONTAINER_APP_NAME \
-  --resource-group $RESOURCE_GROUP \
-  --secrets \
-    azure-openai-api-key=$AZURE_OPENAI_API_KEY
+    --resource-group $RESOURCE_GROUP \
+    --name $CONTAINER_APP_NAME \
+    --secrets \
+      azure-openai-api-key=$AZURE_OPENAI_API_KEY
 ```
 
 Next set environment variables:
 
 ```azurecli
 az containerapp update \
-  --name $CONTAINER_APP_NAME \
-  --resource-group $RESOURCE_GROUP \
-  --set-env-vars \
-    SPRING_AI_AZURE_OPENAI_API_KEY=secretref:azure-openai-api-key \
-    SPRING_AI_AZURE_OPENAI_ENDPOINT=${AZURE_OPENAI_ENDPOINT} \
-    SPRING_DATASOURCE_USERNAME=${MANAGED_IDENTITY_NAME} \
-    SPRING_DATASOURCE_URL=jdbc:postgresql://${PGHOST}/postgres?sslmode=require \
-    SPRING_AI_VECTORSTORE_PGVECTOR_SCHEMA_NAME=containerapp
+    --resource-group $RESOURCE_GROUP \
+    --name $CONTAINER_APP_NAME \
+    --set-env-vars \
+      SPRING_AI_AZURE_OPENAI_API_KEY=secretref:azure-openai-api-key \
+      SPRING_AI_AZURE_OPENAI_ENDPOINT=${AZURE_OPENAI_ENDPOINT} \
+      SPRING_DATASOURCE_USERNAME=${MANAGED_IDENTITY_NAME} \
+      SPRING_DATASOURCE_URL=jdbc:postgresql://${PGHOST}/postgres?sslmode=require \
+      SPRING_AI_VECTORSTORE_PGVECTOR_SCHEMA_NAME=containerapp
 ```
 
 We intentionally use a different `pgvector` schema name to avoid conflicts from using the same schema name with a different user.
 
-## Verify Deployment
+## Verify the deployment
 
 Get Container App URL:
 
-```bash
-URL=$(az containerapp show \
-  --name $CONTAINER_APP_NAME \
-  --resource-group $RESOURCE_GROUP \
-  --query properties.configuration.ingress.fqdn \
-  --output tsv)
+```azurecli
+export URL=$(az containerapp show \
+    --name $CONTAINER_APP_NAME \
+    --resource-group $RESOURCE_GROUP \
+    --query properties.configuration.ingress.fqdn \
+    --output tsv)
 ```
 
 Test Endpoint:
@@ -207,27 +212,27 @@ Expect to see a similar valid response:
 
 By default, your Azure Container App is configured to use zero minimum replicas and an HTTP scaling rule to handle 10 requests per replica. You can configure the scaling configuration using the `az containerapp update` command:
 
-```sh
+```azurecli
 az containerapp update \
-  --name $CONTAINER_APP_NAME \
-  --resource-group $RESOURCE_GROUP \
-  --min-replicas 1 \
-  --max-replicas 10 \
-  --scale-rule-name http-scaler \
-  --scale-rule-type http \
-  --scale-rule-http-concurrency 15
+    --resource-group $RESOURCE_GROUP \
+    --name $CONTAINER_APP_NAME \
+    --min-replicas 1 \
+    --max-replicas 10 \
+    --scale-rule-name http-scaler \
+    --scale-rule-type http \
+    --scale-rule-http-concurrency 15
 ```
 
 ## Cleanup
 
-Once you're done testing, you can remove resources when done:
+After you're done testing, use the following commands to remove resources:
 
-```bash
+```azurecli
 az group delete \
-  --name $RESOURCE_GROUP \
-  --yes --no-wait
+    --name $RESOURCE_GROUP \
+    --yes --no-wait
 ```
 
-## Unit Summary
+## Unit summary
 
 In this unit, we successfully deployed a Spring AI application to Azure Container Apps, using scalable and serverless container hosting. We set up necessary environment variables, created a Dockerfile to build the application image, and deployed the container app using Azure CLI commands. We enabled managed identity for secure authentication to the PostgreSQL server and configured secrets and environment variables for the application. Finally, we verified the deployment by testing the application endpoint and learned how to clean up resources after testing.

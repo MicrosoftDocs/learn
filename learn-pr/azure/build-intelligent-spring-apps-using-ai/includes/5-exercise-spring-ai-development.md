@@ -1,10 +1,10 @@
-In this unit, we build a RAG (Retrieval Augmented Generation) application using Spring AI, Azure OpenAI, and `VectorStore` from Spring AI.
+In this unit, we build a retrieval-augmented generation (RAG) application using Spring AI, Azure OpenAI, and `VectorStore` from Spring AI.
 
-## Setting Up Your Development Environment
+## Set up your development environment
 
-Before we start building our AI-powered application, let's set up our development environment and required Azure resources.
+Before you start building an AI-powered application, set up your development environment and the required Azure resources.
 
-## Local Development Setup
+## Set up your local environment
 
 1. Confirm **Java Development Kit (JDK) 17** (or greater) is installed:
 
@@ -12,21 +12,21 @@ Before we start building our AI-powered application, let's set up our developmen
    java -version  # Verify Java installation
    ```
 
-2. Confirm **Maven** is installed:
+1. Confirm **Maven** is installed:
 
    ```bash
    mvn -version  # Verify Maven installation
    ```
 
-3. Log in to **Azure** using `az`:
+1. Log in to **Azure** using `az`:
 
    ```azurecli
    az login
    ```
 
-## Environment Variables Setup
+## Set up environment variables
 
-For this exercise, we need to some environment variables from the prior exercise. Ensure these variables are still available, and if not, recreate them from the values used previously:
+For this exercise, you need some environment variables from the previous exercise. If these variables aren't still available, use the following commands to recreate them:
 
 ```bash
 echo RESOURCE_GROUP: $RESOURCE_GROUP
@@ -36,60 +36,60 @@ echo LOCATION: $LOCATION
 Additionally, export the following new variables needed for this lab:
 
 ```bash
-OPENAI_RESOURCE_NAME=OpenAISpringAI
+export OPENAI_RESOURCE_NAME=OpenAISpringAI
 ```
 
-## Deploy Azure OpenAI Models
+## Deploy the Azure OpenAI models
 
-For our application, we first need to deploy one chat model (gpt-4o) and one embedding model (`text-embedding-ada-002`). To deploy these models, we first need to create an Azure OpenAI resource.
+For our application, you first need to deploy one chat model (gpt-4o) and one embedding model (`text-embedding-ada-002`). To deploy these models, we first need to create an Azure OpenAI resource.
 
-### Create Azure OpenAI Account
+### Create an Azure OpenAI account
 
 We create the Azure OpenAI account using this Azure CLI command:
 
 ```azurecli
 az cognitiveservices account create \
-  --name $OPENAI_RESOURCE_NAME \
-  --resource-group $RESOURCE_GROUP \
-  --kind OpenAI \
-  --sku S0 \
-  --location $LOCATION \
-  --yes
+    --resource-group $RESOURCE_GROUP \
+    --name $OPENAI_RESOURCE_NAME \
+    --kind OpenAI \
+    --sku S0 \
+    --location $LOCATION \
+    --yes
 ```
 
-### Deploy Azure OpenAI Chat Model
+### Deploy an Azure OpenAI chat model
 
-We then deploy a chat model named `gpt-4o` using this command:
+Use the following command to a chat model named `gpt-4o`:
 
 ```azurecli
 az cognitiveservices account deployment create \
-  --name $OPENAI_RESOURCE_NAME \
-  --resource-group $RESOURCE_GROUP \
-  --deployment-name gpt-4o \
-  --model-name gpt-4o \
-  --model-version 2024-11-20 \
-  --model-format OpenAI \
-  --sku-capacity "15" \
-  --sku-name GlobalStandard
+    --resource-group $RESOURCE_GROUP \
+    --name $OPENAI_RESOURCE_NAME \
+    --deployment-name gpt-4o \
+    --model-name gpt-4o \
+    --model-version 2024-11-20 \
+    --model-format OpenAI \
+    --sku-capacity "15" \
+    --sku-name GlobalStandard
 ```
 
-### Deploy Azure OpenAI Embedding model
+### Deploy an Azure OpenAI embedding model
 
-We can now deploy embedding model named `text-embedding-ada-002` using this command:
+We can now deploy an embedding model named `text-embedding-ada-002` using this command:
 
 ```azurecli
 az cognitiveservices account deployment create \
-  --name $OPENAI_RESOURCE_NAME \
-  --resource-group $RESOURCE_GROUP \
-  --deployment-name text-embedding-ada-002 \
-  --model-name text-embedding-ada-002 \
-  --model-version 2 \
-  --model-format OpenAI \
-  --sku-capacity 120 \
-  --sku-name Standard
+    --resource-group $RESOURCE_GROUP \
+    --name $OPENAI_RESOURCE_NAME \
+    --deployment-name text-embedding-ada-002 \
+    --model-name text-embedding-ada-002 \
+    --model-version 2 \
+    --model-format OpenAI \
+    --sku-capacity 120 \
+    --sku-name Standard
 ```
 
-## Create Spring AI Application
+## Create a Spring AI application
 
 Use the following `curl` command to generate a new Spring Boot starter project with all of the dependencies needed:
 
@@ -131,9 +131,9 @@ Switch directory to this path:
 cd spring-ai-app
 ```
 
-We need to change the `pom.xml` file to include a dependency for password-less authentication for PostgreSQL.
+We need to change the **pom.xml** file to include a dependency for password-less authentication for PostgreSQL.
 
-Open `pom.xml` file, locate the `<dependencies>` section and add the following dependency:
+Open **pom.xml** file, locate the `<dependencies>` section and add the following dependency:
 
 ```xml
     <dependency>
@@ -159,9 +159,9 @@ Expect to see a successful build output:
 [INFO] ------------------------------------------------------------------------
 ```
 
-### Project Structure
+### Project structure
 
-From the `spring-ai-app` directory, run these commands to create new directories for new source files to be added:
+From the **spring-ai-app** directory, run these commands to create new directories for new source files to be added:
 
 ```bash
 mkdir -p src/mainjava/com/example/springaiapp/controller
@@ -187,7 +187,7 @@ src/
 └── pom.xml
 ```
 
-### Spring AI Configuration
+### Spring AI configuration
 
 Before we can run the application successfully, we need to add required configuration:
 
@@ -199,32 +199,32 @@ Retrieve the **Azure OpenAI Endpoint** using this command:
 
 ```azcli
 export AZURE_OPENAI_ENDPOINT=$(az cognitiveservices account show \
-  --name $OPENAI_RESOURCE_NAME \
-  --resource-group $RESOURCE_GROUP \
-  --query "properties.endpoint" \
-  --output tsv | tr -d '\r')
+    --name $OPENAI_RESOURCE_NAME \
+    --resource-group $RESOURCE_GROUP \
+    --query "properties.endpoint" \
+    --output tsv | tr -d '\r')
 ```
 
 Retrieve the **Azure OpenAI API Key** using this command:
 
 ```azcli
 export AZURE_OPENAI_API_KEY=$(az cognitiveservices account keys list \
-  --name $OPENAI_RESOURCE_NAME \
-  --resource-group $RESOURCE_GROUP \
-  --query "key1" \
-  --output tsv | tr -d '\r')
+    --name $OPENAI_RESOURCE_NAME \
+    --resource-group $RESOURCE_GROUP \
+    --query "key1" \
+    --output tsv | tr -d '\r')
 ```
 
 Additionally we need to provide the **PostgreSQL URL**, which you can retrieve using command from prior exercise:
 
 ```azcli
 az postgres flexible-server show --resource-group $RESOURCE_GROUP --name $DB_SERVER_NAME \
- --query fullyQualifiedDomainName --output tsv
+    --query fullyQualifiedDomainName --output tsv
 ```
 
 ### Update Azure OpenAI in application.properties
 
-Locate and open the `application.properties` file in the `src/main/resources` directory and add the following properties replacing the values retrieved previously:
+Locate and open the **application.properties** file in the **src/main/resources** directory and add the following properties replacing the values retrieved previously:
 
 ```properties
 spring.application.name=spring-ai-app
@@ -240,11 +240,11 @@ spring.ai.vectorstore.pgvector.initialize-schema=true
 spring.ai.vectorstore.pgvector.schema-name=postgres
 ```
 
-### Implementing RAG Service
+### Implement a RAG service
 
-#### Create Service
+#### Create the service
 
-Within the `service` directory, create a new file name `RagService.java` with the following content:
+Within the **service** directory, create a new file name **RagService.java** with the following content:
 
 ```java
 package com.example.springaiapp.service;
@@ -308,10 +308,11 @@ In the provided code, we implement RAG by to generate an answer to a given query
 1. The results of the similarity search are then transformed into a formatted string that pairs the new prompt (question) with the contents from the similar found documents.
 1. Finally, the new prompt is sent to the `ChatClient`, which sends it to the Azure OpenAI model and returns the response from the model.
 
-#### Create Controller
+#### Create the controller
 
-Next, we need to expose and REST endpoint for our application. To do that, create a new file named `RagController.java` within the `controller` directory.
-Update the file with this content:
+Next, we need to expose and REST endpoint for our application. To do that, create a new file named **RagController.java** within the **controller** directory.
+
+Update the file with the following content:
 
 ```java
 package com.example.springaiapp.controller;
@@ -334,7 +335,7 @@ public class RagController {
 }
 ```
 
-#### Test application
+#### Test the application
 
 With these changes in place, we're now ready to test the implementation by running this command:
 
@@ -368,7 +369,7 @@ Notice that even though the answer may appear valid, there are words indicating 
 The **QuestionAnswerAdvisor** is likely a component or feature within Spring AI that focuses on providing AI-driven advice or responses to user queries. 
 ```
 
-#### Test application with extra knowledge
+#### Test the application with extra knowledge
 
 We now provide extra knowledge by providing the following documents to be stored using our vector store:
 
@@ -450,6 +451,6 @@ Notice how the agent now knows about `QuestionAnswerAdvisor`:
 In Spring AI, the **QuestionAnswerAdvisor** works as a mechanism to enable **Retrieval Augmented Generation (RAG)**, helping developers integrate advanced question-answering capabilities into their applications. 
 ```
 
-## Unit Summary
+## Unit summary
 
 In this unit, we successfully built a Retrieval Augmented Generation (RAG) application using Spring AI, Azure OpenAI, and Spring AI's `VectorStore`.
