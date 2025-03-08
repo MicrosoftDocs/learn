@@ -1,8 +1,8 @@
-You can think of data as continuous, categorical, or ordinal (categorical but with an order). Confusion matrices are a means of assessing how well a categorical model performs. For context as to how these work, let’s first refresh our knowledge about continuous data. Through this, we can see how confusion matrices are simply an extension of the histograms we already know.
+You can think of data as continuous, categorical, or ordinal (categorical but with an order). Confusion matrices are a means of assessing how well a categorical model performs. For context as to how these matrices work, let’s first refresh our knowledge about continuous data. Through this, we can see how confusion matrices are simply an extension of the histograms we already know.
 
 ## Continuous data distributions
 
-When we want to understand continuous data, the first step is often to see how it's distributed. Consider the following histogram:
+When we want to understand continuous data, the first step is often to see how the data is distributed. Consider the following histogram:
 
 ![Histogram showing label distribution.](../media/8-g-a.jpg)
 
@@ -59,7 +59,7 @@ Let’s explain these one by one, replacing these acronyms with actual values. B
 
 ### True Negatives (TN)
 
-The top-left value will list how many times the model predicted false, and the actual label was also false. In other words, this lists how many times the model correctly predicted false. Let’s say, for our example, that this happened 500 times:
+The top-left value lists how many times the model predicted false, and the actual label was also false. In other words, this lists how many times the model correctly predicted false. Let’s say, for our example, that this happened 500 times:
 
 ![Diagram of the confusion matrix without total numbers, showing true negatives only.](../media/8-2-b.jpg)
 
