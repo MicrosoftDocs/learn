@@ -101,31 +101,6 @@ Here's a detailed explanation for this code snippet:
     - The `query` sets the search string.
     - The `topK(5)` specifies that the search returns the top five most similar documents.
 
-## Advanced Content Generation with Evaluator Optimizer Agent Pattern
-
-In addition to the core RAG functionality, modern AI applications can benefit from iterative refinement techniques for generating high-quality content. One advanced approach is the Evaluator Optimizer Agent pattern. This pattern employs a dual-model process:
-
-- **Generator LLM (Writer)**: Produces an initial draft of content (e.g., a blog post).
-- **Evaluator LLM (Editor)**: Reviews the draft, providing detailed feedback and identifying areas for improvement.
-
-### How It Works
-
-1. **Initial Generation**: The writer LLM generates a draft based on the given topic.
-2. **Evaluation**: The evaluator LLM reviews the draft against quality criteria such as clarity, engagement, and structure.
-3. **Iterative Refinement**: If the evaluator indicates that improvements are needed, the feedback is incorporated and the writer LLM generates a revised draft.
-4. **Loop Until Approved**: This process repeats until the content meets the desired quality standards or a maximum number of iterations is reached.
-
-### Example Application: Blog Post Generation
-
-In our exercise, we extend the RAG application by implementing a Blog Writer agent that uses the Evaluator Optimizer pattern. The Blog Writer service (along with its corresponding controller) demonstrates how to:
-- Generate an initial blog post draft.
-- Evaluate the draft and extract actionable feedback.
-- Refine the draft in multiple iterations until the content is approved.
-
-The Blog Writer pattern is particularly useful in scenarios where iterative content refinement provides significant value—such as content creation, code generation, and complex search tasks that require multi-step reasoning.
-
-*Note: The complete code for the BlogWriterService and BlogWriterController is provided in the subsequent exercise module. This section introduces the concepts and rationale behind leveraging an Evaluator Optimizer Agent for enhanced content generation.*
-
 ## Unit summary
 
-In this unit, you learned the concepts behind using Spring Boot's `VectorStore` and Azure OpenAI Spring Boot Starter to manage and query document embeddings. You explored the importance of embeddings, how to generate and store them, and how to perform similarity searches. Additionally, you were introduced to the Evaluator Optimizer Agent pattern—a dual-LLM approach that iteratively refines generated content (as demonstrated in the Blog Writer agent example). In the next exercise, you will build a complete RAG application using these tools and extend it with advanced content generation capabilities.
+In this unit, you learned the concepts behind using Spring Boot's `VectorStore` and Azure OpenAI Spring Boot Starter to manage and query document embeddings. You explored the importance of embeddings, how to generate and store them, and how to perform similarity searches.

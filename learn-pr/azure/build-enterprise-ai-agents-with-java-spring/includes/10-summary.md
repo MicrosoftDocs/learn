@@ -7,6 +7,10 @@ Congratulations! You completed this comprehensive module on building AI-powered 
   - Azure OpenAI integration
   - Vector operations and storage
 
+- AI Agents
+  - Agent AI Design Patterns
+  - Evaluator Optimizer Agent Pattern
+
 - Azure integration:
   - OpenAI service configuration
   - PostgreSQL with `pgvector`

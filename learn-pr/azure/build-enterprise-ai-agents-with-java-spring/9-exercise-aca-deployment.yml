@@ -7,9 +7,9 @@ metadata:
   ms.date: 03/02/2025
   author: KarlErickson
   ms.author: karler
-  ms.reviewer: jbalderas, gok
+  ms.contributors: jbalderas, gok
   ms.topic: unit
   ms.collection: ce-skilling-ai-copilot
 durationInMinutes: 15
 content: |
-  [!include[](includes/7-exercise-aca-deployment.md)]
+  [!include[](includes/9-exercise-aca-deployment.md)]

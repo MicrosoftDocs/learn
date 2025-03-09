@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-enterprise-ai-agents-with-java-spring.6-aca-deployment
+title: Develop Evaluator Optimizer Agent pattern using Spring AI
+metadata:
+  title: Develop Evaluator Optimizer Agent pattern using Spring AI
+  description: Learn how to develop Evaluator Optimizer Agent pattern using Spring AI
+  ms.date: 02/24/2025
+  author: KarlErickson
+  ms.author: karler
+  ms.contributors: jbalderas, gok
+  ms.topic: unit
+  ms.collection: ce-skilling-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-agent-ai-development.md)]
