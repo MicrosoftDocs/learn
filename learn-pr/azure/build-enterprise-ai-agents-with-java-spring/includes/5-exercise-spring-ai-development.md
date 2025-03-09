@@ -26,7 +26,7 @@ Before you start building an AI-powered application, set up your development env
 
 ## Set up environment variables
 
-For this exercise, you need some environment variables from the previous exercise. If these variables aren't still available, use the following commands to recreate them:
+For this exercise, you need some environment variables from the previous exercise. Use the following commands to verify these variables are available. If these variables aren't available, refer to the prior exercises to recreate them.
 
 ```bash
 echo RESOURCE_GROUP: $RESOURCE_GROUP

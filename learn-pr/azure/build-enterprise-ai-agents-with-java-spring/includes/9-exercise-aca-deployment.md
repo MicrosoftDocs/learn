@@ -208,6 +208,22 @@ Expect to see a similar valid response:
 **Vector Search Similarity** refers to the process of comparing and ranking data points (represented as vectors) based on their similarity in a multi-dimensional space. This method is commonly used in applications like information retrieval, recommendation systems, natural language processing, and computer vision.
 ```
 
+You can also test the blog generation endpoint using a REST client or `curl`:
+
+```bash
+curl -G "https://$URL$/api/blog" --data-urlencode "topic=Spring AI Innovation"
+```
+
+Because of the review iteration cycle, this request will take longer to complete. Once it completes, expect to see a blog entry similar to this excerpt:
+
+```markdown
+# Spring AI Innovation: Embracing the Season of Transformation
+
+Spring is a season synonymous with growth, renewal, and fresh beginnings. As nature awakens from its winter slumber, so too does the world of technology. In recent years, artificial intelligence (AI) has followed a similar pattern of blossoming innovation, with spring heralding exciting breakthroughs and applications. From revolutionizing industries to improving our everyday lives, AI is in full bloom, and its potential seems as boundless as the season itself.
+
+In this blog post, we’ll explore the latest AI innovations that are flourishing this spring, highlight real-world examples of their impact, and discuss how they’re reshaping the future. Whether you’re an AI enthusiast, a tech professional, or simply curious about the role of AI in our lives, this is your guide to the season’s most exciting developments.
+```
+
 ## Scaling Azure Container Apps
 
 By default, your Azure Container App is configured to use zero minimum replicas and an HTTP scaling rule to handle 10 requests per replica. You can configure the scaling configuration using the `az containerapp update` command:
