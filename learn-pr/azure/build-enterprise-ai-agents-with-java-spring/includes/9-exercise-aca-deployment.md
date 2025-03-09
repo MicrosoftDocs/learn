@@ -211,7 +211,7 @@ Expect to see a similar valid response:
 You can also test the blog generation endpoint using a REST client or `curl`:
 
 ```bash
-curl -G "https://$URL$/api/blog" --data-urlencode "topic=Spring AI Innovation"
+curl -G "https://$URL/api/blog" --data-urlencode "topic=Spring AI Innovation"
 ```
 
 Because of the review iteration cycle, this request will take longer to complete. Once it completes, expect to see a blog entry similar to this excerpt:
