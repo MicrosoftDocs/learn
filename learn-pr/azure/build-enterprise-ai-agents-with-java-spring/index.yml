@@ -44,9 +44,11 @@ units:
   - learn.azure.build-enterprise-ai-agents-with-java-spring.3-exercise-pgvector-azure-postgresql-setup
   - learn.azure.build-enterprise-ai-agents-with-java-spring.4-spring-ai-development
   - learn.azure.build-enterprise-ai-agents-with-java-spring.5-exercise-spring-ai-development
-  - learn.azure.build-enterprise-ai-agents-with-java-spring.6-aca-deployment
-  - learn.azure.build-enterprise-ai-agents-with-java-spring.7-exercise-aca-deployment
-  - learn.azure.build-enterprise-ai-agents-with-java-spring.8-knowledge-check
-  - learn.azure.build-enterprise-ai-agents-with-java-spring.9-summary
+  - learn.azure.build-enterprise-ai-agents-with-java-spring.6-agent-ai-development
+  - learn.azure.build-enterprise-ai-agents-with-java-spring.7-exercise-agent-ai-development  
+  - learn.azure.build-enterprise-ai-agents-with-java-spring.8-aca-deployment
+  - learn.azure.build-enterprise-ai-agents-with-java-spring.9-exercise-aca-deployment
+  - learn.azure.build-enterprise-ai-agents-with-java-spring.10-knowledge-check
+  - learn.azure.build-enterprise-ai-agents-with-java-spring.11-summary
 badge:
   uid: learn.azure.build-enterprise-ai-agents-with-java-spring.badge
