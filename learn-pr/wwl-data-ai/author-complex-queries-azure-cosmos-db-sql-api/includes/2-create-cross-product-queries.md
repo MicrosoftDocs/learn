@@ -21,7 +21,7 @@ Let’s take this example JSON object, which has a **name** property and an arra
 
 ```
 
-If you create a cross-product of the **name** and **group** properties, you will create a JSON array with permutations of possible combinations of names and groups, making it easier for your applications to iterate over items in the array:
+If you create a cross-product of the **name** and **group** properties, you create a JSON array with permutations of possible combinations of names and groups, making it easier for your applications to iterate over items in the array:
 
 ```json
 [
@@ -71,7 +71,7 @@ So, how can you create this type of cross-product in a SQL query? The ``JOIN`` k
 }
 ```
 
-The corresponding query for this is structured like most ``SELECT FROM`` query, but also includes the ``JOIN`` keyword, which references the **tags** property and aliases it with the letter **t**. Then, we add the **t.name** to the list of projected fields in the query results:
+The corresponding query for this example is structured like most ``SELECT FROM`` query, but also includes the ``JOIN`` keyword, which references the **tags** property and aliases it with the letter **t**. Then, we add the **t.name** to the list of projected fields in the query results:
 
 ```sql
 SELECT 
