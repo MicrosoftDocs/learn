@@ -1,0 +1,31 @@
+### YamlMime:LearningPath
+uid: learn.wwl.implement-inheritance-polymorphism
+metadata:
+  title: Implement inheritance and polymorphism
+  description: Implement inheritance and polymorphism
+  ms.date: 03/10/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: learning-path
+title: Implement inheritance and polymorphism
+prerequisites: |
+  -   An installation of Visual Studio Code with the C# Dev Kit extension installed.
+  -   The ability to develop basic object-oriented program in C# that implement classes with properties and methods.
+  -   The ability to create interfaces&nbsp;that define a contract&nbsp;for the classes implemented by an&nbsp;object-oriented program written in C#.
+summary: |
+  Learn how to&nbsp;create class hierarchies using base and derived classes and how to&nbsp;implement polymorphic behavior by using either class inheritance or interface implementation.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- vs
+modules:
+- learn.wwl.implement-class-inheritance
+- learn.wwl.implement-polymorphic-behavior
+trophy:
+  uid: learn.wwl.implement-inheritance-polymorphism.trophy
