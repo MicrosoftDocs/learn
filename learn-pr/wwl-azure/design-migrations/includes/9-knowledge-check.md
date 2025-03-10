@@ -1,5 +1,6 @@
 
 
+
 Tailwind Traders is assessing their migration to Azure. You're asked to make recommendations and provide input to meet the system requirements.
 
 - **Large data transfers.** Large amounts of data need to be transferred between on-premises storage and an Azure storage account. There's a concern the transfer might monopolize network bandwidth. The executive committee requests an approach where Microsoft handles the shipping and logistics. 
