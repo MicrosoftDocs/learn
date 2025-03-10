@@ -1,6 +1,6 @@
 In this unit, you deploy a Jakarta EE application to JBoss EAP on Azure App Service. You use the Maven Plugin for Azure App Service to configure the project, compile and deploy the application, and configure a data source.
 
-## Configure the app
+## Configure the app the Maven Plugin for Azure App Service
 
 Configure the app with the Maven Plugin for Azure App Service by using the following steps:
 
@@ -117,7 +117,7 @@ Configure the app with the Maven Plugin for Azure App Service by using the follo
 
 1. Check the `<region>` element in **pom.xml**. If it's not the same installation location as MySQL, change it to the same location.
 
-1. Use the following example to modify the `webContainer` value in **pom.xml** to `Jbosseap 8` for the JBoss EAP 8 environment on Azure App Service:
+1. Use the following example to modify the `webContainer` value in your **pom.xml** file to `Jbosseap 8`, for the JBoss EAP 8 environment on Azure App Service:
 
     > [!TIP]
     > As of February 2025, the latest available version of JBoss EAP is 8.0 Update 4.1.
@@ -130,7 +130,7 @@ Configure the app with the Maven Plugin for Azure App Service by using the follo
                     </runtime>
     ```
 
-1. To deploy the startup file, add the following example to **pom.xml**. The resource `<type>startup</type>` deploys the specified script as **startup.sh** for Linux or **startup.cmd** for Windows, to **/home/site/scripts/**. 
+1. To deploy the startup file, add the following example to **pom.xml**. 
 
     ```xml
               </runtime>
@@ -146,6 +146,8 @@ Configure the app with the Maven Plugin for Azure App Service by using the follo
                   </resource>
                   <!-- Add the following lines -->
     ```
+
+    The resource `<type>startup</type>` deploys the specified script as **startup.sh** for Linux or **startup.cmd** for Windows, to **/home/site/scripts/**.
 
     > [!NOTE]  
     > You can choose the deployment option and deployment location by specifying `type` in one of the following ways:
@@ -167,7 +169,7 @@ Configure the app with the Maven Plugin for Azure App Service by using the follo
     ```
 
 1. Assign the values for `resourceGroup` and `appName` to
-environment variables by using the following command:
+environment variables by using the following commands:
 
     ```bash
     export RESOURCE_GROUP_NAME=jakartaee-app-on-jboss-1625038814881-rg
@@ -228,7 +230,7 @@ The following output is typical:
 [INFO] ------------------------------------------------------------------------
 ```
 
-The output contains the URL of the deployed application, as in the following typical output:
+The output line that begins with `[INFO] Successfully deployed the artifact` contains the URL of the deployed application.
 
 ```output
 [INFO] Successfully deployed the artifact to https://jakartaee-app-on-jboss-1625038814881.azurewebsites.net
@@ -236,7 +238,7 @@ The output contains the URL of the deployed application, as in the following typ
 
 ## Configure a database connection
 
-The sample application connects to your MySQL Database and displays data. In the Maven project configuration in **pom.xml**, you specified the MySQL JDBC driver using the following example:
+The sample application connects to your MySQL Database and displays data. In the Maven project configuration in the **pom.xml** file, you specified the MySQL JDBC driver using the following example:
 
 ```xml
     <dependency>
@@ -252,7 +254,7 @@ As a result, JBoss EAP automatically installs the JDBC drive `ROOT.war_com.mysql
 
 To access Azure Database for MySQL, you need to configure the `DataSource` object in JBoss EAP and specify the JNDI name in your source code.
 
-To create a MySQL `DataSource` object in JBoss EAP, use the **/WEB-INF/createMySQLDataSource.sh** startup shell script. The following is a version of the script that's already been uploaded to App Service, but hasn't yet been configured to be invoked:
+To create a MySQL `DataSource` object in JBoss EAP, you use the **/WEB-INF/createMySQLDataSource.sh** startup shell script. The following is a version of the script that's already been uploaded to App Service, but hasn't yet been configured:
 
 ```bash
 #!/bin/bash
@@ -298,48 +300,65 @@ After the script runs, the application server invokes it every time the applicat
 
 ## Configure the service connection for MySQL flexible server
 
-After you configure the startup script, configure App Service to use Service Connector for MySQL flexible server connection by using the following steps:
+After you configure the startup script, configure App Service to use Service Connector for the MySQL flexible server connection by using the following steps:
 
 1. The following environment variables need to be set:
 
     - `PASSWORDLESS_USER_NAME_SUFFIX`, which is the suffix for the username used to connect to the MySQL flexible server. The username created will have the prefix `aad_` followed by the specified suffix.
-    - `SOURCE_WEB_APP_ID`, which is the ID of the Azure App Service used to connect to the MySQL flexible server.
+    - `SOURCE_WEB_APP_ID`, which is the ID of the Azure App Service instance used to connect to the MySQL flexible server.
     - `MYSQL_ID`, which is the ID of the MySQL flexible server.
-    - `TARGET_MYSQL_ID`, which specifies the database name as `/database/world`, to establish a connection with a user who has permissions to access the `world` database.
-    - `MANAGED_ID` is the managed identity used to connect to the MySQL flexible server.
+    - `TARGET_MYSQL_ID`, which specifies the database name as `world`, to establish a connection with a user who has permissions to access the `world` database.
+    - `MANAGED_ID`, which is the managed identity used to connect to the MySQL flexible server.
 
     Set the environment variables by using the following commands:
 
+    > [!NOTE]
+    > The parameters in these commands apply to the Azure command line substitutions - such as `az webapp list` - not the `export` commands.
+
     ```bash
     export PASSWORDLESS_USER_NAME_SUFFIX=jbossapp
-    export SOURCE_WEB_APP_ID=$(az webapp list -g  $RESOURCE_GROUP_NAME --query "[0].id" -o tsv)
-    export MYSQL_ID=$(az mysql flexible-server list -g $RESOURCE_GROUP_NAME --query "[0].id" -o tsv)
+    export SOURCE_WEB_APP_ID=$(az webapp list \
+        --resource-group  $RESOURCE_GROUP_NAME \ 
+        --query "[0].id" \
+        --output tsv)
+    export MYSQL_ID=$(az mysql flexible-server list \
+        --resource-group $RESOURCE_GROUP_NAME \
+        --query "[0].id" \
+        --output tsv)
     export TARGET_MYSQL_ID=$MYSQL_ID/databases/world 
-    export MANAGED_ID=$(az identity list -g $RESOURCE_GROUP_NAME --query "[0].id" -o tsv)
+    export MANAGED_ID=$(az identity list \
+        --resource-group $RESOURCE_GROUP_NAME 
+        --query "[0].id"
+        --output tsv)
     ```
 
-1. Add the extension for `serviceconnector-passwordless` and create the `Service Connector` by using the following commands:
+1. Add the extension for `serviceconnector-passwordless` and create the service connection by using the following commands:
 
-```azurecli
-az extension add \
-    --name serviceconnector-passwordless \
-    --upgrade
-az webapp connection create mysql-flexible \
-    --resource-group ${RESOURCE_GROUP_NAME} \
-    --connection $PASSWORDLESS_USER_NAME_SUFFIX \
-    --source-id $SOURCE_WEB_APP_ID \
-    --target-id $TARGET_MYSQL_ID \
-    --client-type java \
-    --system-identity mysql-identity-id=$MANAGED_ID
-```
+    ```azurecli
+    az extension add \
+        --name serviceconnector-passwordless \
+        --upgrade
+    az webapp connection create mysql-flexible \
+        --resource-group ${RESOURCE_GROUP_NAME} \
+        --connection $PASSWORDLESS_USER_NAME_SUFFIX \
+        --source-id $SOURCE_WEB_APP_ID \
+        --target-id $TARGET_MYSQL_ID \
+        --client-type java \
+        --system-identity mysql-identity-id=$MANAGED_ID
+    ```
 
-> [!NOTE]
-> if you get an error message like `Resource '********-****-****-****-************' does not exist or one of its queried reference-property objects are not present.`, re-run the command after a few seconds.
+    > [!NOTE]
+    > if you get an error message like `Resource '********-****-****-****-************' does not exist or one of its queried reference-property objects are not present.`, re-run the command after a few seconds.
 
 1. Check the list of users registered in MySQL again by using the following command:
 
     ```sql
     SELECT user, host, plugin FROM mysql.user;
+    ```
+
+    The following output is typical:
+
+    ```output
     +----------------------------------+-----------+-----------------------+
     | user                             | host      | plugin                |
     +----------------------------------+-----------+-----------------------+
@@ -403,9 +422,17 @@ In the sample application, you implemented three REST endpoints. You can access 
 
     :::image type="content" source="../media/rest-endpoint-area.png" alt-text="Screenshot that shows area as the REST endpoint.":::
 
+1. Specify a `continent` path parameter to retrieve all of the countries and regions in the specified continent.
+
+    :::image type="content" source="../media/rest-endpoint-continent.png" alt-text="Screenshot that shows continent as the REST endpoint.":::
+
+1. Specify a `countrycode` path parameter for the `countries` endpoint to retrieve all the cities that have a population greater than 1 million within the country or region specified.
+
+    :::image type="content" source="../media/rest-endpoint-cities.png" alt-text="Screenshot that shows cities as the REST endpoint.":::
+
 ### [Bash](#tab/bash)
 
-1. Use the following command to retrieve all of the continent information in JSON format:
+1. Use the following command to retrieve all of the continents, in JSON format:
 
     ```bash
     curl https://${WEB_APP_NAME}.azurewebsites.net/area
@@ -417,25 +444,15 @@ In the sample application, you implemented three REST endpoints. You can access 
     ["North America","Asia","Africa","Europe","South America","Oceania","Antarctica"]
     ```
 
----
-
-### [Browser](#tab/browser)
-
-1. Specify the continent in the URL to retrieve all of the countries and regions in the specified continent.
-
-    :::image type="content" source="../media/rest-endpoint-continent.png" alt-text="Screenshot that shows continent as the REST endpoint.":::
-
-### [Bash](#tab/bash)
-
-1. Use the following command to retrieve all of the countries and regions in the specified continent:
+1. Use the following command to retrieve all of the countries and regions in a specified continent:
 
     ```bash
     $ curl https://${WEB_APP_NAME}.azurewebsites.net/area/Asia | jq '.[] | { name: .name, code: .code }'
     ```
 
-    The following output is typical:
+    In this example, the user specified `Asia`. The following output is typical:
 
-    ```bash
+    ```output
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                      Dload  Upload   Total   Spent    Left  Speed
       0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--   100 16189  100 16189    0     0  65278      0 --:--:-- --:--:-- --:--:-- 65542
@@ -459,26 +476,15 @@ In the sample application, you implemented three REST endpoints. You can access 
       "name": "Bangladesh",
       "code": "BGD"
     }
-    ....
     ```
 
----
-
-### [Browser](#tab/browser)
-
-1. Specify a country/region path parameter for the `/countries` endpoint along with the `GET` method to retrieve all the cities that have population greater than 1 million within the country/region.
-
-    :::image type="content" source="../media/rest-endpoint-cities.png" alt-text="Screenshot that shows cities as the REST endpoint.":::
-
-### [Bash](#tab/bash)
-
-1. Specify a country/region path parameter for the `/countries` endpoint to retrieve all the cities that have population greater than 1 million within the country/region, by using the following command:
+1. Retrieve all of the cities that have population greater than 1 million within the country/region, by using the following command:
 
     ```bash
     $ curl https://${WEB_APP_NAME}.azurewebsites.net/countries/JPN | jq '.[].name'
     ```
 
-    The following output is typical:
+    In this example, the user specified `JPN`. The following output is typical:
 
     ```output
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
@@ -496,6 +502,8 @@ In the sample application, you implemented three REST endpoints. You can access 
     "Hiroshima"
     "Kitakyushu"
     ```
+
+---
 
 ## Exercise summary
 
