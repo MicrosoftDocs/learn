@@ -4,6 +4,7 @@ In this module, discover the basics of how generative AI works and how you can u
 
 > [!NOTE]
 > Join us as we attempt a **GUINNESS WORLD RECORDS(tm)** title for **Most users to take an online multi-level artificial intelligence lesson in 24 hours**!
+
 > To participate, you must:
 > - **Register** for the [Microsoft AI Skills Fest](https://aka.ms/AISkillsFest).
 > - **Complete this module**. You do not need to get the knowledge check questions correct, you just need to attempt them.
