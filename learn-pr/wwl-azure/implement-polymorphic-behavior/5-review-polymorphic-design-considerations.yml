@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-polymorphic-behavior.review-polymorphic-design-considerations
+title: Review polymorphic design considerations
+metadata:
+  title: Review polymorphic design considerations
+  description: "Review polymorphic design considerations"
+  ms.date: 03/10/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-review-polymorphic-design-considerations.md)]

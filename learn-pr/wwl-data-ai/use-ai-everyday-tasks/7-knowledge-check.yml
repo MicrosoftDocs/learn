@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-everyday-tasks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/05/2025
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the role of generative AI in content creation?"
+    choices:
+    - content: "Generative AI rearranges existing information to create new content."
+      isCorrect: false
+      explanation: "Incorrect. Generative AI doesn't just rearrange existing information; it creates something new that didn't exist before."
+    - content: "Generative AI creates new, unique content, such as writing poems, composing melodies, or designing graphics based on the patterns and styles it learned from existing data."
+      isCorrect: true
+      explanation: "Correct. Generative AI uses large language models (LLMs) that are trained on huge amounts of data to create outputs that are similar to the data they were trained on."
+    - content: "Generative AI copies existing data to produce similar content."
+      isCorrect: false
+      explanation: "Incorrect. Generative AI does not just copy data, it creates entirely new and original pieces of work."
+  - content: "What is the key to getting the best responses from AI tools like Microsoft Copilot?"
+    choices:
+    - content: "Being clear, specific, and goal-oriented in your prompts."
+      isCorrect: true
+      explanation: "Correct. Clear, specific, and goal-oriented prompts help the AI understand exactly what you need and provide accurate and useful responses."
+    - content: "Using advanced vocabulary and technical terms to enhance AI comprehension."
+      isCorrect: false
+      explanation: "Incorrect. While AI can process complex language, unnecessary jargon may introduce ambiguity and lead to less accurate responses."
+    - content: "Trusting the AI’s first response as the best possible answer without adjustments."
+      isCorrect: false
+      explanation: "Incorrect. While AI can generate strong initial responses, iterating on your prompt and refining based on feedback often leads to more precise and valuable results."
+  - content: "What is the purpose of using the Think Deeper feature in Microsoft Copilot?"
+    choices:
+    - content: "To generate lists."
+      isCorrect: false
+      explanation: "Incorrect. While Think Deeper can be used to get detailed information on various topics, it is not specifically for generating book recommendations."
+    - content: "To correct grammatical errors in the prompts."
+      isCorrect: false
+      explanation: "Incorrect. 'Think Deeper' does not correct grammatical errors, it provides more detailed responses."
+    - content: "To handle more complex questions by breaking them down into multiple steps, allowing for more accurate and detailed responses."
+      isCorrect: true
+      explanation: "Correct. 'Think Deeper' unlocks the power of deep reasoning in Microsoft Copilot, providing more accurate and detailed responses."
