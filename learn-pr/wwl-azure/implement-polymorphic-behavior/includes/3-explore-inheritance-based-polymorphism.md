@@ -91,14 +91,15 @@ There are two main types of casting:
 
 ### Cast objects by using the `is` and `as` keywords
 
-- Using the `is` keyword with pattern matching:
+In C#, you can cast objects using the `is` and `as` keywords. These keywords provide a safe way to check the type of an object before casting it to another type. Here are some common ways to cast objects in C#:
 
+- Using the `is` keyword with pattern matching:
 
     ```csharp
 
     if (account is CheckingAccount checkingAccount)
     {
-    // Use checkingAccount as a CheckingAccount
+        // Use checkingAccount as a CheckingAccount
     }
 
     ```
@@ -113,17 +114,17 @@ There are two main types of casting:
 
     if (account is CheckingAccount)
     {
-    CheckingAccount checkingAccount = (CheckingAccount)account;
-    // Use checkingAccount as a CheckingAccount
+        CheckingAccount checkingAccount = (CheckingAccount)account;
+        // Use checkingAccount as a CheckingAccount
     }
 
     ```
+
 	- This syntax checks if `account` is of type `CheckingAccount`.
     - If the check is successful, it explicitly casts `account` to `CheckingAccount` and assigns it to the variable `checkingAccount`.
     - This approach is more verbose than the pattern matching syntax but provides more control over the casting process.
 
 - Using the `as` keyword:
-
 
     ```csharp
 
@@ -131,10 +132,11 @@ There are two main types of casting:
 
     if (checkingAccount != null)
     {
-    // Use checkingAccount as a CheckingAccount
+        // Use checkingAccount as a CheckingAccount
     }
 
     ```
+
     - This syntax attempts to cast `account` to `CheckingAccount` and assigns the result to `checkingAccount`.
     - If the cast is successful, `checkingAccount` contains the cast object; otherwise, it is null.
     - This approach is useful when you want to check the cast result before using the cast object. For example, when you want to avoid exceptions and handle the failure case gracefully.
@@ -154,18 +156,23 @@ When your goal is inheritance-based polymorphism, here are some things to avoid 
 - Avoid using sealed classes and methods: Sealed classes and methods can't be inherited or overridden, which limits the ability to use polymorphism. If you seal a class or method, you prevent further extension and customization. For example:
 
     ```csharp
+
     public sealed class BankAccount { } // This class can't be inherited
+
     ```
 
 - Avoid overusing static methods. Static methods belong to the class itself rather than an instance of the class. They can't be overridden, which means they do not participate in polymorphism.
 
     ```csharp
+
     public static void PrintMessage() { } // This method can't be overridden
+
     ```
 
 - Avoid tight coupling. Tight coupling occurs when classes or components in a system are highly dependent on each other. This means that changes in one class can directly affect other classes, making the system less flexible and harder to maintain. Tight coupling can lead to difficulties in testing, extending, and modifying the code.
 
     ```csharp
+
     public class BankAccount
     {
         public void TransferFunds(SavingsAccount savingsAccount)
@@ -173,11 +180,13 @@ When your goal is inheritance-based polymorphism, here are some things to avoid 
             // Tight coupling with SavingsAccount
         }
     }
+
     ```
 
 - Avoid using the 'new' keyword without a good reason. The 'new' keyword hides the base class method in the derived class, which can lead to confusion and unexpected behavior. Only use the 'new' keyword when you intend to hide the base class method intentionally.
 
     ```csharp
+
     public class Dog : Animal
     {
         public new void MakeSound() // Hides the base class method. Better to use 'override'
@@ -185,6 +194,7 @@ When your goal is inheritance-based polymorphism, here are some things to avoid 
             Console.WriteLine("The dog barks.");
         }
     }
+
     ```
 
 - Ensure consistent method signatures. Ensure that overridden methods in derived classes have the same signature as the base class method. Changing the method signature will result in method hiding rather than overriding.
