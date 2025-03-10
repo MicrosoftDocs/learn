@@ -6,19 +6,19 @@ Before you start building an AI-powered application, set up your development env
 
 ## Set up your local environment
 
-1. Confirm **Java Development Kit (JDK) 17** (or greater) is installed:
+1. Confirm that the Java Development Kit (JDK) version 17 or greater is installed:
 
    ```bash
    java -version  # Verify Java installation
    ```
 
-2. Confirm **Maven** is installed:
+1. Confirm that Maven is installed:
 
    ```bash
    mvn -version  # Verify Maven installation
    ```
 
-3. Log in to **Azure** using `az`:
+1. Log in to Azure:
 
    ```azurecli
    az login
@@ -111,9 +111,9 @@ curl https://start.spring.io/starter.zip \
 
 The generated Spring Boot starter project includes the following configurations and dependencies:
 
-- **Spring Boot Version**: 3.4.3  
-- **Java Version**: 17  
-- **Dependencies**:
+- Spring Boot Version: 3.4.3
+- Java Version: 17
+- Dependencies:
   - `web`: Adds support for building web applications, including RESTful services using Spring MVC (Model View Controller).
   - `jdbc`: Provides JDBC (Java Database Connectivity) support for database access.
   - `azure-support`: Adds support for integrating with Azure services.
@@ -151,7 +151,7 @@ mvn clean package -DskipTests
 
 Expect to see a successful build output:
 
-```bash
+```output
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
@@ -171,7 +171,7 @@ mkdir -p src/main/java/com/example/springaiapp/service
 
 Inspect the code using Visual Studio Code or your favorite IDE. The starter code includes the following structure:
 
-```txt
+```
 src/
 ├── main/
 │   ├── java/
@@ -192,35 +192,40 @@ src/
 
 Before we can run the application successfully, we need to add the required configuration:
 
-- Azure OpenAI Endpoint  
-- Azure OpenAI API Key  
+- Azure OpenAI Endpoint
+- Azure OpenAI API Key
 - PostgreSQL URL
 
 Retrieve the **Azure OpenAI Endpoint** using this command:
 
-```azcli
+```azurecli
 export AZURE_OPENAI_ENDPOINT=$(az cognitiveservices account show \
-    --name $OPENAI_RESOURCE_NAME \
     --resource-group $RESOURCE_GROUP \
+    --name $OPENAI_RESOURCE_NAME \
     --query "properties.endpoint" \
-    --output tsv | tr -d '\r')
+    --output tsv \
+    | tr -d '\r')
 ```
 
 Retrieve the **Azure OpenAI API Key** using this command:
 
-```azcli
+```azurecli
 export AZURE_OPENAI_API_KEY=$(az cognitiveservices account keys list \
-    --name $OPENAI_RESOURCE_NAME \
     --resource-group $RESOURCE_GROUP \
+    --name $OPENAI_RESOURCE_NAME \
     --query "key1" \
-    --output tsv | tr -d '\r')
+    --output tsv \
+    | tr -d '\r')
 ```
 
 Additionally, provide the **PostgreSQL URL** (retrieved using the command from a prior exercise):
 
-```azcli
-az postgres flexible-server show --resource-group $RESOURCE_GROUP --name $DB_SERVER_NAME \
-    --query fullyQualifiedDomainName --output tsv
+```azurecli
+az postgres flexible-server show \
+    --resource-group $RESOURCE_GROUP \
+    --name $DB_SERVER_NAME \
+    --query fullyQualifiedDomainName \
+    --output tsv
 ```
 
 #### Review application.properties file
@@ -270,7 +275,7 @@ public class RagService {
 
     @Autowired
     VectorStore vectorStore;
-    
+
     public RagService(ChatClient.Builder chatClientBuilder) {
         this.chatClient = chatClientBuilder.build();
     }
@@ -292,9 +297,9 @@ public class RagService {
 
             Previous interactions:
             %s
-            
+
             New question: %s
-            
+
             Please provide a clear and educational response.""",
             context,
             query
@@ -350,8 +355,8 @@ curl -G "http://localhost:8080/api/rag" --data-urlencode "query=What is pgvector
 
 You should see a valid response:
 
-```bash
-pgvector is an open-source PostgreSQL extension that enables efficient storage, indexing, 
+```output
+pgvector is an open-source PostgreSQL extension that enables efficient storage, indexing,
 and querying of vector embeddings within a PostgreSQL database.
 ```
 
@@ -384,7 +389,7 @@ import jakarta.annotation.PostConstruct;
 
 @Service
 public class DocumentService {
- 
+
     private static final Logger logger = LoggerFactory.getLogger(DocumentService.class);
 
     @Autowired
@@ -399,23 +404,23 @@ public class DocumentService {
     List<Document> documents = List.of(
         new Document("3e1a1af7-c872-4e36-9faa-fe53b9613c69",
                     """
-                    The Spring AI project aims to streamline the development of applications that 
-                    incorporate artificial intelligence functionality without unnecessary complexity. 
-                    The project draws inspiration from notable Python projects, such as LangChain 
-                    and LlamaIndex, but Spring AI is not a direct port of those projects. 
-                    The project was founded with the belief that the next wave of Generative AI 
-                    applications will not be only for Python developers but will be ubiquitous 
+                    The Spring AI project aims to streamline the development of applications that
+                    incorporate artificial intelligence functionality without unnecessary complexity.
+                    The project draws inspiration from notable Python projects, such as LangChain
+                    and LlamaIndex, but Spring AI is not a direct port of those projects.
+                    The project was founded with the belief that the next wave of Generative AI
+                    applications will not be only for Python developers but will be ubiquitous
                     across many programming languages.
                     """,
                      Map.of("prompt", "What is Spring AI?")),
-        new Document("7a7c2caf-ce9c-4dcb-a543-937b76ef1098", 
+        new Document("7a7c2caf-ce9c-4dcb-a543-937b76ef1098",
                     """
-                    A vector database stores data that the AI model is unaware of. When a user 
-                    question is sent to the AI model, a QuestionAnswerAdvisor queries the vector 
+                    A vector database stores data that the AI model is unaware of. When a user
+                    question is sent to the AI model, a QuestionAnswerAdvisor queries the vector
                     database for documents related to the user question.
-                    The response from the vector database is appended to the user text to provide 
-                    context for the AI model to generate a response. Assuming you have already 
-                    loaded data into a VectorStore, you can perform Retrieval Augmented Generation 
+                    The response from the vector database is appended to the user text to provide
+                    context for the AI model to generate a response. Assuming you have already
+                    loaded data into a VectorStore, you can perform Retrieval Augmented Generation
                     (RAG) by providing an instance of QuestionAnswerAdvisor to the ChatClient.
                     """,
                      Map.of("prompt", "How does QuestionAnswer Advisor work?"))

@@ -32,17 +32,17 @@ For this exercise, we need to some environment variables from prior exercises.
 
 1. Export the name to use as the Managed Identity for the Azure Container App:
 
-```azurecli
-export MANAGED_IDENTITY_NAME=containerappusr
-```
+   ```bash
+   export MANAGED_IDENTITY_NAME=containerappusr
+   ```
 
 With these environment values in place, you're now ready to deploy the application into Azure Container Apps.
 
 ## Create a Dockerfile
 
-Next we create a `Dockerfile` that is used to build a docker image with the application code to be used to deploy to Azure Container Apps:
+Next we create a **Dockerfile** that is used to build a docker image with the application code to be used to deploy to Azure Container Apps:
 
-```txt
+```dockerfile
 # Step 1: Use microsoft JDK image with maven3 to build the application
 FROM mcr.microsoft.com/openjdk/jdk:17-mariner AS builder
 RUN tdnf install maven3 -y
@@ -58,18 +58,19 @@ COPY --from=builder /app/target/*.jar app.jar
 ENTRYPOINT ["java", "-jar", "app.jar"]
 ```
 
-## Deploy Azure Container Application
+## Deploy the container application
 
 To deploy the application, use the following command:
 
-```bash
-az containerapp up --name $CONTAINER_APP_NAME \
-  --resource-group $RESOURCE_GROUP \
-  --environment $ENVIRONMENT \
-  --source . \
-  --ingress external \
-  --target-port 8080 \
-  --location $LOCATION
+```azurecli
+az containerapp up \
+    --resource-group $RESOURCE_GROUP \
+    --name $CONTAINER_APP_NAME \
+    --environment $ENVIRONMENT \
+    --source . \
+    --ingress external \
+    --target-port 8080 \
+    --location $LOCATION
 ```
 
 This command will:
@@ -94,8 +95,8 @@ az containerapp logs show \
 Inspect the logs and notice that the application isn't starting successfully due to missing configuration values as expected:
 
 ```json
-{"TimeStamp": "2025-03-04T19:04:52.7673831+00:00", "Log": "F Caused by: org.postgresql.util.PSQLException: 
-FATAL: Azure AD user token for role[AzureAdmin] is neither an AAD_AUTH_TOKENTYPE_APP_USER or an 
+{"TimeStamp": "2025-03-04T19:04:52.7673831+00:00", "Log": "F Caused by: org.postgresql.util.PSQLException:
+FATAL: Azure AD user token for role[AzureAdmin] is neither an AAD_AUTH_TOKENTYPE_APP_USER or an
 AAD_AUTH_TOKENTYPE_APP_OBO token."}
 ```
 
@@ -148,7 +149,7 @@ az postgres flexible-server ad-admin create \
 
 Create a secret for sensitive values:
 
-```bash
+```azurecli
 az containerapp secret set \
     --resource-group $RESOURCE_GROUP \
     --name $CONTAINER_APP_NAME \
@@ -178,8 +179,8 @@ Get Container App URL:
 
 ```azurecli
 export URL=$(az containerapp show \
-    --name $CONTAINER_APP_NAME \
     --resource-group $RESOURCE_GROUP \
+    --name $CONTAINER_APP_NAME \
     --query properties.configuration.ingress.fqdn \
     --output tsv)
 ```
@@ -221,7 +222,7 @@ Because of the review iteration cycle, this request will take longer to complete
 
 Spring is a season synonymous with growth, renewal, and fresh beginnings. As nature awakens from its winter slumber, so too does the world of technology. In recent years, artificial intelligence (AI) has followed a similar pattern of blossoming innovation, with spring heralding exciting breakthroughs and applications. From revolutionizing industries to improving our everyday lives, AI is in full bloom, and its potential seems as boundless as the season itself.
 
-In this blog post, we’ll explore the latest AI innovations that are flourishing this spring, highlight real-world examples of their impact, and discuss how they’re reshaping the future. Whether you’re an AI enthusiast, a tech professional, or simply curious about the role of AI in our lives, this is your guide to the season’s most exciting developments.
+In this blog post, we'll explore the latest AI innovations that are flourishing this spring, highlight real-world examples of their impact, and discuss how they're reshaping the future. Whether you're an AI enthusiast, a tech professional, or simply curious about the role of AI in our lives, this is your guide to the season's most exciting developments.
 ```
 
 ## Scaling Azure Container Apps
@@ -246,7 +247,8 @@ After you're done testing, use the following commands to remove resources:
 ```azurecli
 az group delete \
     --name $RESOURCE_GROUP \
-    --yes --no-wait
+    --yes \
+    --no-wait
 ```
 
 ## Unit summary

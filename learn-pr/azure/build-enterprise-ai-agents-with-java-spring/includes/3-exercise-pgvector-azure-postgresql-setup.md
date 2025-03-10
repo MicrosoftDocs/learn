@@ -136,7 +136,7 @@ Run this command to get access token for your user ID:
 export PGPASSWORD="$(az account get-access-token \
     --resource https://ossrdbms-aad.database.windows.net \
     --query accessToken \
-    --output tsv)" 
+    --output tsv)"
 ```
 
 Connect to database using `psql` client with this command:

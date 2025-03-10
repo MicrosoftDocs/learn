@@ -1,4 +1,4 @@
-Spring AI is a powerful framework that simplifies the integration of AI capabilities into Java applications. In this module, you learn how to build an AI-powered application and AI Agents using Spring AI with Azure OpenAI and deploy it to Azure Container Apps.
+Spring AI is a powerful framework that simplifies the integration of AI capabilities into Java applications. In this module, you learn how to build an AI-powered application and AI Agents, using Spring AI with Azure OpenAI, and deploy it to Azure Container Apps.
 
 ## What is Spring AI?
 
@@ -23,14 +23,14 @@ A retrieval-augmented generation (RAG) application typically has the following c
 
 ### Agents and Workflows
 
-Spring AI also empowers you to build dynamic AI Agents and orchestrated workflows. While various patterns exist (like chain, parallelization, and routing), this module focuses exclusively on the **Evaluator-Optimizer Workflow**. 
+Spring AI also empowers you to build dynamic AI Agents and orchestrated workflows. While various patterns exist (like chain, parallelization, and routing), this module focuses exclusively on the **Evaluator-Optimizer Workflow**.
 This pattern iteratively refines outputs through a generator-evaluator loop, ensuring high-quality and adaptive AI responses.
 
 ## Why Azure OpenAI and Container Apps?
 
-- **Azure OpenAI:** Provides a secure and scalable platform for deploying AI models with enterprise-grade features. It ensures data privacy and compliance, making it suitable for sensitive applications, and integrates seamlessly with other Azure services.
-- **Azure Container Apps:** Offers a serverless environment for running containerized applications with automatic scaling based on demand, simplifying microservice deployment and management.
-- **Azure PostgreSQL:** A fully managed database service that supports advanced features like vector search, providing high availability, security, and performance for large datasets used in AI models.
+- Azure OpenAI: Provides a secure and scalable platform for deploying AI models with enterprise-grade features. It ensures data privacy and compliance, making it suitable for sensitive applications, and integrates seamlessly with other Azure services.
+- Azure Container Apps: Offers a serverless environment for running containerized applications with automatic scaling based on demand, simplifying microservice deployment and management.
+- Azure PostgreSQL: A fully managed database service that supports advanced features like vector search, providing high availability, security, and performance for large datasets used in AI models.
 
 ## Learning objectives
 

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.build-enterprise-ai-agents-with-java-spring.4-spring-ai-development
-title: Develop RAG application with Spring AI and Azure OpenAI 
+title: Develop RAG application with Spring AI and Azure OpenAI
 metadata:
-  title: Develop a RAG Application with Spring AI and Azure OpenAI 
-  description: Learn how to implement a RAG application using Spring AI with Azure OpenAI and VectorStore Spring Boot Starters
+  title: Develop a RAG Application with Spring AI and Azure OpenAI
+  description: Learn how to implement a RAG application using Spring AI with Azure OpenAI and VectorStore Spring Boot Starters.
   ms.date: 02/24/2025
   author: KarlErickson
   ms.author: karler

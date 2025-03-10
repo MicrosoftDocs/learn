@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.build-enterprise-ai-agents-with-java-spring.6-agent-ai-development
-title: Develop Evaluator Optimizer Agent pattern using Spring AI
+title: Develop with the Evaluator Optimizer Agent pattern using Spring AI
 metadata:
-  title: Develop Evaluator Optimizer Agent pattern using Spring AI
+  title: Develop with the Evaluator Optimizer Agent Pattern Using Spring AI
   description: Learn how to develop Evaluator Optimizer Agent pattern using Spring AI
   ms.date: 02/24/2025
   author: KarlErickson
