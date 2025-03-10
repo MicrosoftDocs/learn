@@ -1,14 +1,16 @@
-In this exercise, you'll access the JBoss administration tools and stream the application logs.
+In this exercise, you access the JBoss administration tools and stream the application logs.
 
 ## Create a TCP tunnel
 
-To access the remote server, you need to create a TCP tunnel between your remote server and your local machine. Run the following command:
+To access the remote server, create a TCP tunnel between your remote server and your local machine by using the following command:
 
-```azcli
-az webapp create-remote-connection -n ${WEBAPP_NAME} -g ${RESOURCEGROUP_NAME}
+```azurecli
+az webapp create-remote-connection \
+    --resource-group ${RESOURCE_GROUP_NAME} \
+    --name ${WEB_APP_NAME}
 ```
 
-The command returns the following result:
+The following output is typical:
 
 ```output
 Verifying if app is running....
@@ -18,171 +20,175 @@ SSH is available { username: root, password: Docker! }
 Ctrl + C to close
 ```
 
-You get the following information from the command result:
+The output also provides the following information that you use in the next section:
 
-|  Required information  |  Value  |
-| ---- | ---- |
-|  `Opening tunnel on port`  |  `PORT_NUMBER` (for example, `59445`)  |
-|  `username`  |  `root`  |
-|  `password`  |  `Docker!`  |
-
-Take note of the password and the port number. These two values are used in the next section.
+| Required information     | Value                                |
+|--------------------------|--------------------------------------|
+| `Opening tunnel on port` | `PORT_NUMBER` (for example, `59445`) |
+| `username`               | `root`                               |
+| `password`               | `Docker!`                            |
 
 ## Sign in by using SSH and the TCP tunnel
 
-You now need to sign in to the server by using an `ssh` command. Open a new command terminal and run the following command:
+To sign in to the server using SSH and a TCP tunnel, use the following steps:
 
-```bash
-export PORT_NUMBER=<the port number from above>
-ssh root@127.0.0.1 -L 9990:localhost:9990 -p $PORT_NUMBER 
-```
+1. Open a new command terminal.
 
-> [!TIP]
-> If you want to access to the JBoss EAP admin web console, specify the `-L 9990:localhost:9990` option. Then access `http://localhost:9990/console` for the JBoss web console. If you don't need to sign in to the JBoss web console, you can remove the "-L" option.
+1. Sign in to the server by using the following commands:
 
-You see the following messages when you sign in to the server.
+    ```bash
+    export PORT_NUMBER=<the port number from above>
+    ssh root@127.0.0.1 -L 9990:localhost:9990 -p $PORT_NUMBER 
+    ```
 
-```output
-ssh root@127.0.0.1 -L 9990:localhost:9990 -p 65171
-root@127.0.0.1's password: 
-Last login: Tue Feb 25 07:44:49 2025 from 169.254.129.2
-   _|_|                                            
- _|    _|  _|_|_|_|  _|    _|  _|  _|_|    _|_|    
- _|_|_|_|      _|    _|    _|  _|_|      _|_|_|_|  
- _|    _|    _|      _|    _|  _|        _|        
- _|    _|  _|_|_|_|    _|_|_|  _|          _|_|_|
+    > [!TIP]
+    > If you want to access to the JBoss EAP admin web console, specify the `-L 9990:localhost:9990` option. Then access the JBoss web console at `http://localhost:9990/console`. If you don't need to sign in to the JBoss web console, you can remove the `-L` option.
 
-     J A V A   O N   A P P   S E R V I C E
+    The following output is typical:
 
-Documentation: https://aka.ms/appservice
-
-**NOTE**: No files or system changes outside of /home will persist beyond your application's current session. /home is your application's persistent storage and is shared across all the server instances.
-
-root@jakartaee-e9de81f9:/# 
-```
+    ```output
+    ssh root@127.0.0.1 -L 9990:localhost:9990 -p 65171
+    root@127.0.0.1's password: 
+    Last login: Tue Feb 25 07:44:49 2025 from 169.254.129.2
+       _|_|                                            
+     _|    _|  _|_|_|_|  _|    _|  _|  _|_|    _|_|    
+     _|_|_|_|      _|    _|    _|  _|_|      _|_|_|_|  
+     _|    _|    _|      _|    _|  _|        _|        
+     _|    _|  _|_|_|_|    _|_|_|  _|          _|_|_|
+    
+         J A V A   O N   A P P   S E R V I C E
+    
+    Documentation: https://aka.ms/appservice
+    
+    **NOTE**: No files or system changes outside of /home will persist beyond your application's current session. /home is your application's persistent storage and is shared across all the server instances.
+    ```
 
 ## Run the JBoss CLI command
 
-After you sign in to the remote server, you can run the JBoss EAP admin CLI tool as `jboss-cli.sh`. The CLI command is in the `/opt/eap/bin/` directory.
+After you sign in to the remote server, you can run the JBoss EAP admin CLI tool, **/opt/eap/bin/jboss-cli.sh**, by using the following steps:
 
-Connect to JBoss EAP by using the following command:
+1. Connect to JBoss EAP by using the following command:
 
-```bash
-/opt/eap/bin/jboss-cli.sh --connect
-OpenJDK 64-Bit Server VM warning: Options -Xverify:none and -noverify were deprecated in JDK 13 and will likely be removed in a future release.
-```
+    ```bash
+    /opt/eap/bin/jboss-cli.sh --connect
+    ```
 
-After you connect to the JBoss EAP Server, run the JBoss CLI command and get the JBoss server information:
+    The following JBoss server output is typical:
 
-```bash
-[standalone@localhost:9990 /] :product-info
-{
-    "outcome" => "success",
-    "result" => [{"summary" => {
-        "host-name" => "jakartaee-e9de81f9",
-        "instance-identifier" => "e0996cd1-25b3-42d4-a150-49fabf415ecc",
-        "product-name" => "JBoss EAP",
-        "product-version" => "8.0 Update 4.1",
-        "product-community-identifier" => "Product",
-        "product-home" => "/opt/eap",
-        "standalone-or-domain-identifier" => "STANDALONE_SERVER",
-        "host-operating-system" => "Ubuntu 22.04.5 LTS",
-        "host-cpu" => {
-            "host-cpu-arch" => "amd64",
-            "host-core-count" => 2
-        },
-        "jvm" => {
-            "name" => "OpenJDK 64-Bit Server VM",
-            "java-version" => "17",
-            "jvm-version" => "17.0.13",
-            "jvm-vendor" => "Microsoft",
-            "java-home" => "/usr/lib/jvm/msopenjdk-17-amd64"
-        }
-    }}]
-}
-```
+    ```output
+    OpenJDK 64-Bit Server VM warning: Options -Xverify:none and -noverify were deprecated in JDK 13 and will likely be removed in a future release.
+    [standalone@localhost:9990 /] :product-info
+    {
+        "outcome" => "success",
+        "result" => [{"summary" => {
+            "host-name" => "jakartaee-e9de81f9",
+            "instance-identifier" => "e0996cd1-25b3-42d4-a150-49fabf415ecc",
+            "product-name" => "JBoss EAP",
+            "product-version" => "8.0 Update 4.1",
+            "product-community-identifier" => "Product",
+            "product-home" => "/opt/eap",
+            "standalone-or-domain-identifier" => "STANDALONE_SERVER",
+            "host-operating-system" => "Ubuntu 22.04.5 LTS",
+            "host-cpu" => {
+                "host-cpu-arch" => "amd64",
+                "host-core-count" => 2
+            },
+            "jvm" => {
+                "name" => "OpenJDK 64-Bit Server VM",
+                "java-version" => "17",
+                "jvm-version" => "17.0.13",
+                "jvm-vendor" => "Microsoft",
+                "java-home" => "/usr/lib/jvm/msopenjdk-17-amd64"
+            }
+        }}]
+    }
+    ```
 
-You can get all the deployed applications from the following command:
+1. Use the following command to list all of the deployed applications:
 
-```bash
-[standalone@localhost:9990 /] ls deployment
-ROOT.war
-```
+    ```bash
+    ls deployment
+    ```
 
-Next, test the database connection by running the following command:
+    The following output is typical:
 
-```bash
-[standalone@localhost:9990 /] /subsystem=datasources/data-source="JPAWorldDataSourceDS":test-connection-in-pool
-{
-    "outcome" => "success",
-    "result" => [true]
-}
-```
+    ```output
+    ROOT.war
+    ```
 
-Exit from the JBoss EAP CLI.
+1. Test the database connection by using the following command:
 
-```bash
-exit
-```
+    ```bash
+    [standalone@localhost:9990 /] /subsystem=datasources/data-source="JPAWorldDataSourceDS":test-connection-in-pool
+    ```
+
+    The following output is typical:
+
+    ```output
+    {
+        "outcome" => "success",
+        "result" => [true]
+    }
+    ```
+
+1. Exit from the JBoss EAP CLI by using the following command:
+
+    ```bash
+    exit
+    ```
 
 ## Access the JBoss EAP admin web console
 
-Next, let's access the JBoss admin web console.
+Next, access the JBoss admin web console by using the following steps:
 
-First, create an admin user and password for authentication:
+1. Create an admin user and password for authentication by using the following command:
 
-```bash
-/opt/eap/bin/add-user.sh -u admin -p admin -r ManagementRealm
-```
+    ```bash
+    /opt/eap/bin/add-user.sh -u admin -p admin -r ManagementRealm
+    ```
 
-You should see output similar to the following.
+    The following output is typical:
 
-```bash
-Picked up JAVA_TOOL_OPTIONS: -Xmx5480M -Djava.net.preferIPv4Stack=true
-Updated user 'admin' to file '/opt/eap/standalone/configuration/mgmt-users.properties'
-Updated user 'admin' to file '/opt/eap/domain/configuration/mgmt-users.properties'
-```
+    ```output
+    Picked up JAVA_TOOL_OPTIONS: -Xmx5480M -Djava.net.preferIPv4Stack=true
+    Updated user 'admin' to file '/opt/eap/standalone/configuration/mgmt-users.properties'
+    Updated user 'admin' to file '/opt/eap/domain/configuration/mgmt-users.properties'
+    ```
 
-Now you can access the web console from your local environment. By using a browser, access the following URL:
+1. Access the web console from a web browser in your local environment by using `http://127.0.0.1:9990/console`.
 
-```html
-http://127.0.0.1:9990/console
-```
+1. In the authentication dialog box, sign in with the previously created username and password.
 
-In the authentication dialog box, sign in with the previously created username and password:
+    :::image type="content" source="../media/jboss-admin-console-1.png" alt-text="Screenshot of the authentication dialog box for the admin console." lightbox="../media/jboss-admin-console-1.png":::
 
-:::image type="content" source="../media/jboss-admin-console-1.png" alt-text="Screenshot that shows the authentication dialog box for the admin console.":::
+    After you sign in to the web console, the following screen appears:
 
-After you sign in to the web console, the following screen appears:
+    :::image type="content" source="../media/jboss-admin-console-2.png" alt-text="Screenshot of the main page of the admin console." lightbox="../media/jboss-admin-console-2.png":::
 
-:::image type="content" source="../media/jboss-admin-console-2.png" alt-text="Screenshot that shows the main page of the admin console.":::
+1. Confirm your created data source by selecting **Configuration** > **Subsystems** > **Datasources & Drivers** > **Datasources**.
 
-You can confirm your created data source from **Configuration** > **Subsystems** > **Datasources & Drivers** > **Datasources**.
+    :::image type="content" source="../media/jboss-admin-console-3.png" alt-text="Screenshot of the list of data sources on the admin console." lightbox="../media/jboss-admin-console-3.png":::
 
-:::image type="content" source="../media/jboss-admin-console-3.png" alt-text="Screenshot that shows the list of data sources on the admin console.":::
+1. Optionally, confirm the RESTful endpoints of your application by selecting **Runtime** > *your system* > **JAX-RS** > *your application*.
 
-You can also confirm the RESTful endpoints of your application from **Runtime** > *System* > **JAX-RS** > *Your Application*.
+    :::image type="content" source="../media/jboss-admin-console-4.png" alt-text="Screenshot of the RESTful endpoints on the admin console." lightbox="../media/jboss-admin-console-4.png":::
 
-:::image type="content" source="../media/jboss-admin-console-4.png" alt-text="Screenshot that shows RESTful endpoints on the admin console.":::
-
-> [!WARNING]
-> If you directly access the remote server via the JBoss CLI command or web console and add or update a configuration, the configuration will be cleared and deleted after the Azure App Service instance is restarted. To persist the configuration, configure this in a startup script. For example, we created the `createMySQLDataSource.sh` as a startup script in a previous unit.
+    > [!WARNING]
+    > If you directly access the remote server via the JBoss CLI command or web console and add or update a configuration, the configuration is cleared and deleted after the Azure App Service instance is restarted. To persist the configuration, use a startup script. Because of this need, you created the **createMySQLDataSource.sh** startup script in a previous unit.
 
 ## Open a log stream
 
-Next, let's sign in to the server and access the application logs.
-You can access the logs by signing in your local machine through the following command:
+Access the logs by using the following command:
 
 ```azurecli
-az webapp log tail --name ${WEBAPP_NAME} --resource-group ${RESOURCEGROUP_NAME}
+az webapp log tail \
+    --resource-group ${RESOURCE_GROUP_NAME} \
+    --name ${WEB_APP_NAME}
 ```
 
-After you run the command, you get your log output:
+The following output is typical:
 
 ```output
-az webapp log tail  -n jakartaee-app-on-jboss-1606464084546 \
-  -g jakartaee-app-on-jboss-1606464084546-rg
-
 2025-02-25T06:58:11.5107300Z Waiting for main process to exit. GLOBAL_PID_MAIN=123
 2025-02-25T06:58:11.5109525Z Waiting for GLOBAL_PID_MAIN == 123
 2025-02-25T06:58:12.7891598Z 2025-02-25 06:58:12,786 WARN  [org.apache.activemq.artemis.core.server.impl.FileLockNodeManager] (Thread-2 (ActiveMQ-scheduled-threads)) Lost the lock according to the monitor, notifying listeners
@@ -206,4 +212,4 @@ az webapp log tail  -n jakartaee-app-on-jboss-1606464084546 \
 
 In this unit, you learned how to configure and deploy a Jakarta EE 10 application to JBoss EAP on Azure App Service. Then, you used a `DataSource` object for connecting MySQL to JBoss EAP in a startup script.
 
-You also learned how to access the remote server from both the CLI and the GUI by using a TCP tunnel. Finally, you accessed the log file from a local machine.
+You also learned how to access the remote server from both the CLI and the UI by using a TCP tunnel. Finally, you accessed the log file from a local machine.
