@@ -8,16 +8,16 @@ Cybersecurity and Infrastructure Security Agency's (CISA) _Insider Threats 101_ 
 
 Examples of data security risks include:
 
-- **MOVEit Data Breach:** In June 2023, a vulnerability in the MOVEit file transfer software led to cyberattacks affecting thousands of organizations and nearly 100 million individuals, including major corporations and government agencies. This breach highlighted the risks of unprotected sensitive data. ([Wikipedia](https://en.wikipedia.org/wiki/2023_MOVEit_data_breach))
-- **Social Engineering Attacks:** ENISA's report highlights a sharp rise in Business Email Compromise (BEC), where attackers manipulate employees into disclosing sensitive data. Without proper security controls, unauthorized data exposure can lead to fraud, identity theft, and corporate espionage.
-- **Data Leaks and Misconfigurations:** Unintentional data exposure remains a major issue, as noted in ENISA's findings. Security misconfigurations and lack of visibility over sensitive data can lead to breaches, making it essential to implement policies that restrict unauthorized access.
+- **MOVEit Data Breach**: In June 2023, a vulnerability in the MOVEit file transfer software was exploited in a series of cyberattacks. These attacks affected thousands of organizations and nearly 100 million individuals, including major corporations and government agencies. This breach highlighted the risks of unprotected sensitive data. ([Wikipedia](https://en.wikipedia.org/wiki/2023_MOVEit_data_breach))
+- **Social Engineering Attacks**: ENISA's report highlights a sharp rise in Business Email Compromise (BEC), where attackers manipulate employees into disclosing sensitive data. Without proper security controls, unauthorized data exposure can lead to fraud, identity theft, and corporate espionage.
+- **Data Leaks and Misconfigurations**: Unintentional data exposure remains a major issue, as noted in ENISA's findings. Security misconfigurations and lack of visibility over sensitive data can lead to breaches, making it essential to implement policies that restrict unauthorized access.
 
 ## Risks organizations face
 
-- **External threats:** Cyberattacks, phishing, and data breaches expose sensitive information and can cause financial and reputational damage.
-- **Insider risks:** Employees and contractors might unintentionally or maliciously leak data, making access controls and monitoring essential.
-- **Compliance challenges:** Regulations like GDPR and HIPAA impose strict requirements for data security and privacy, with severe penalties for noncompliance.
-- **AI security risks:** As organizations adopt AI-driven tools, they must ensure that sensitive data isn't used or exposed in ways that could violate security policies. AI-generated content can introduce security gaps if not properly managed.
+- **External threats**: Cyberattacks, phishing, and data breaches expose sensitive information and can cause financial and reputational damage.
+- **Insider risks**: Employees and contractors might unintentionally or maliciously leak data, making access controls and monitoring essential.
+- **Compliance challenges**: Organizations must meet strict data security and privacy requirements set by industry standards, government policies, and regulatory frameworks, with significant consequences for noncompliance.
+- **AI security risks**: As organizations adopt AI-driven tools, they must ensure that sensitive data isn't used or exposed in ways that could violate security policies. AI-generated content can introduce security gaps if not properly managed.
 
 ## The need for a proactive approach
 
