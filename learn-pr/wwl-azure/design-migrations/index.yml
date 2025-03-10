@@ -1,9 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.design-migrations
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design migrations
   description: "Azure Architect's design and recommend migration solutions."
-  ms.date: 12/10/2024
+  ms.date: 03/10/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module

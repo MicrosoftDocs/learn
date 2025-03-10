@@ -2,9 +2,11 @@
 uid: learn.wwl.design-migrations.select-migration-tool
 title: Select a migration tool
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Select a migration tool
   description: "Select a migration tool and examine Azure Migrate for migration and Azure Resource Mover."
-  ms.date: 12/10/2024
+  ms.date: 03/10/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

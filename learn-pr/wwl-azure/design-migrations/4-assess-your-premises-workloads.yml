@@ -2,9 +2,11 @@
 uid: learn.wwl.design-migrations.assess-your-premises-workloads
 title: Assess your on-premises workloads
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Assess your on-premises workloads
   description: "Assess your on-premises workloads with Service Map, Azure TCO Calculator, and Azure Migrate Server Assessment."
-  ms.date: 12/10/2024
+  ms.date: 03/10/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
