@@ -5,7 +5,7 @@ Most applications use a database to store the data used by the application. For 
 The [Azure Database Migration Service](/azure/dms/dms-overview) is part of Azure Migrate. Supported scenarios include:
 
 - Azure SQL Database
-- Azure SQL Database Managed Instance
+- Azure SQL Managed Instance
 - Azure SQL VM
 - Azure Cosmos DB 
 - Azure Database for MySQL 
@@ -19,7 +19,7 @@ Azure Database Migration Service is a fully managed service. The service enables
 
 - **Online migration**: An online migration uses a continuous synchronization of live data, which allows a cut over to the Azure replica database at any time. Online migration minimizes downtime. 
 
-Not all migration scennarios have both offline and online capabilities. 
+Not all migration scenarios have both offline and online capabilities. 
 
 | Migration scenario | Migration mode |
 | --- | --- |
@@ -31,9 +31,9 @@ Not all migration scennarios have both offline and online capabilities.
 
 When selecting a database migration solution, determine which features are important to you.
 
-- Do you need an assessment to identify compatability issues?
+- Do you need an assessment to identify compatibility issues?
 - Do you need a SKU recommendation?
 - Do you need to migrate database logins and schemas?
 - Do you need to automate the process?
-- Do you have a specific product scenarios?
+- Do you have a specific product scenario?
 - Do you need to integrate with other migration tools?
