@@ -8,12 +8,12 @@ The roles related to Azure Machine Learning workspaces are as follows.
 
 | **Role** | **Access level** |
 |---|---|
-| **Azure Machine Learning Data Scientist** | Can perform all actions within an Azure Machine Learning workspace, except for creating or deleting compute resources and modifying the workspace itself. |
-| **Azure Machine Learning Compute Operator** | Can create, manage, delete, and access compute resources within a workspace. |
+| **AzureML Data Scientist** | Can perform all actions within an Azure Machine Learning workspace, except for creating or deleting compute resources and modifying the workspace itself. |
+| **AzureML Compute Operator** | Can create, manage, delete, and access compute resources within a workspace. |
 | **Reader** | Read-only actions in the workspace. Readers can list and view assets, including [datastore](/azure/machine-learning/how-to-access-data) credentials, in a workspace. Readers can't create or update these assets. |
 | **Contributor** | View, create, edit, or delete (where applicable) assets in a workspace. For example, contributors can create an experiment, create or attach a compute cluster, submit a run, and deploy a web service. |
 | **Owner** | Full access to the workspace, including the ability to view, create, edit, or delete (where applicable) assets in a workspace. Additionally, you can change role assignments. |
-| **Azure Machine Learning Registry User** | Can get registries and read, write, and delete assets within them. Can't create new registry resources or delete them. |
+| **AzureML Registry User** | Can get registries and read, write, and delete assets within them. Can't create new registry resources or delete them. |
 
 If the permissions assigned to the built-in roles are insufficient or do not meet your needs, you can create custom roles. Custom roles might possess read, write, delete, and compute resource permissions in that workspace. You can make the custom role available at a specific workspace level, a specific resource group level, or a specific subscription level.
 
@@ -21,11 +21,11 @@ When you create an Azure Machine Learning workspace, you're automatically assign
 
 As a best practice, you can use Microsoft Entra security groups to manage access to workspaces. You assign the RBAC role to an Entra security group and then manage which security principals have the role by managing membership of the group. This approach has the following benefits:
 
-You can assign project leaders group ownership permissions. This means they can manage user access to workspace, without needing Owner role on the workspace resource directly.
+- You can assign project leaders group ownership permissions. This means they can manage user access to workspace, without needing Owner role on the workspace resource directly.
 
-You can organize, manage, and revoke users' permissions on workspace and other resources as a group, without having to manage permissions on user-by-user basis. This also makes it simpler to audit the permissions held as it's only a matter of determining group membership.
+- You can organize, manage, and revoke users' permissions on workspace and other resources as a group, without having to manage permissions on user-by-user basis. This also makes it simpler to audit the permissions held as it's only a matter of determining group membership.
 
-Using Microsoft Entra groups helps you to avoid reaching the subscription limit on role assignments.
+- Using Microsoft Entra groups helps you to avoid reaching the subscription limit on role assignments.
 
 To assign the Azure Machine Learning Data Scientist role, perform the following steps:
 
