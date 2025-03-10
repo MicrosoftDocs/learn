@@ -23,4 +23,29 @@ Your security priorities, such as reliability, performance, and costs, depend on
 
 ## Adopt a Zero Trust strategy
 
+The Zero Trust principles form the foundation of the Microsoft security strategy. A Zero Trust strategy consists of three principles:
+
+- **Verify explicitly.** Always authenticate and authorize based on all data points.
+
+- **Use least privilege.** Limit access with just-in-time and just-enough access, adaptive policies, and data protection.
+- **Assume breach.** Minimize impact, segment access, ensure end-to-end encryption, and use analytics for visibility and threat detection.
+
+These principles guide the design, implementation, and operation of a cloud estate. Use Microsoft Zero Trust guidance to integrate these principles into your security strategy, align with the Cloud Adoption Framework for Azure, and take advantage of Azure, Microsoft 365, and AI services.
+
+Recommendations:
+
+- **Adopt Zero Trust.** Use the Microsoft Zero Trust guidance to implement Zero Trust principles, which help drive a security-first mindset.
+
+## Sign up for the CISO and MCRA workshops
+
+Microsoft offers workshops to help decision-makers and architects apply best practices in cloud adoption:
+
+- **CISO workshop:** Focuses on modernizing cybersecurity practices for CISOs and senior leaders
+- **MCRA workshop:** Teaches architectural best practices for cloud environments
+
+Both workshops are based on Zero Trust principles and align with the Cloud Adoption Framework, Azure Well-Architected Framework, and security recommendations.
+
+Recommendations:
+
+- **Consult with team leaders about the CISO and MCRA workshops.** Consider investing in one or more Microsoft-led workshops. For Microsoft-led workshop material, see Security adoption resources.
 
