@@ -1,4 +1,4 @@
-When developing middle-tier and API applications, there is a tendency to build highly complex solutions to translate database results to something that the business application can understand and use. This workaround often occurs because the database platform is inflexible and must store the data in some fixed schema that can never be changed.
+When you develop middle-tier and API applications, there's a tendency to build highly complex solutions to translate database results to something that the business application can understand and use. This workaround often occurs because the database platform is inflexible and must store the data in some fixed schema that can never be changed.
 
 One of the great things about JSON is that it’s compatible with various developer platforms making it highly flexible. Azure Cosmos DB for NoSQL extends the SQL query language by adding functionality to manipulate the JSON results of your query so you can change the query result to map to the schema and shape that your developer team needs.
 
@@ -18,7 +18,7 @@ WHERE
     p.price <= 100
 ```
 
-And here is an example result:
+And here's an example result:
 
 ```json
 {
@@ -28,7 +28,9 @@ And here is an example result:
 }
 ```
 
-While this result is acceptable, your dev team needs this result mapped to this C# object and does not want to write extra code to accomplish this task.
+::: zone pivot="csharp"
+
+While this result is acceptable, your dev team needs this result mapped to this C# object and doesn't want to write extra code to accomplish this task.
 
 ```csharp
 public class ProductAdvertisement
@@ -45,7 +47,49 @@ public class ProductAdvertisement
 ```
 
 > [!NOTE]
-> For the purposes of this exercise, you can ignore casing. The JSON parser will properly handle converting between camel and pascal casing.
+> For the purposes of this exercise, you can ignore casing. The JSON parser properly handles converting between camel and pascal casing.
+
+::: zone-end
+
+::: zone pivot="python"
+
+While this result is acceptable, your Python team needs this result mapped to this Python class and doesn't want to write extra code to accomplish this task.
+
+```python
+class ProductAdvertisement:
+    def __init__(self, name, category, scanner_data):
+        self.name = name
+        self.category = category
+        self.scanner_data = scanner_data
+
+class ScannerData:
+    def __init__(self, price):
+        self.price = price
+```
+
+::: zone-end
+
+::: zone pivot="node"
+
+While this result is acceptable, your JavaScript team needs this result mapped to this JavaScript object and doesn't want to write extra code to accomplish this task.
+
+```javascript
+class ProductAdvertisement {
+    constructor(name, category, scannerData) {
+        this.name = name;
+        this.category = category;
+        this.scannerData = scannerData;
+    }
+}
+
+class ScannerData {
+    constructor(price) {
+        this.price = price;
+    }
+}
+```
+
+::: zone-end
 
 The first change that could be made is to use a SQL alias to change the **categoryName** property to **category**. This change is accomplished by adding an ``AS`` keyword to the existing query:
 
@@ -61,7 +105,7 @@ WHERE
     p.price <= 100
 ```
 
-This new query will result in this JSON output:
+This new query results in this JSON output:
 
 ```json
 {
@@ -71,7 +115,7 @@ This new query will result in this JSON output:
 }
 ```
 
-The following change will require us to think about how we want to change the structure of our JSON output. Before changing the query, we need to think about how our JSON object should change. We, essentially, need to create a child JSON object. In this example, we have a child ``scannerData`` object with a property for ``price``:
+The following change requires us to think about how we want to change the structure of our JSON output. Before changing the query, we need to think about how our JSON object should change. We, essentially, need to create a child JSON object. In this example, we have a child ``scannerData`` object with a property for ``price``:
 
 ```json
 {
@@ -83,7 +127,7 @@ The following change will require us to think about how we want to change the st
 }
 ```
 
-How does this affect the query? We need to create a field that defines a JSON object with a single property named **price** that references the **p.price** property and an alias of **scannerData**. This expression would look like this:
+How does this child affect the query? We need to create a field that defines a JSON object with a single property named **price** that references the **p.price** property and an alias of **scannerData**. This expression would look like this:
 
 ```sql
 { "price": p.price } AS scannerData
@@ -116,7 +160,7 @@ FROM
     products p
 ```
 
-This would return a JSON result set
+This query returns a JSON result set
 
 Unfortunately, there would be repeated values within the result set:
 
@@ -155,6 +199,8 @@ FROM
     products p
 ```
 
+::: zone pivot="csharp"
+
 Let’s consider another scenario. If your .NET developers wanted to consume this list of category names, they would need to create a C# wrapper class to consume this list:
 
 ```csharp
@@ -166,7 +212,39 @@ public class CategoryReader
 // Developers read this as List<CategoryReader>
 ```
 
-This extra step is both needless and unnecessary. It can quickly become cumbersome as you will need to do this multiple times for multiple types in your container[s]. But, if you have a query that returns an object with only a single property, you can use the ``VALUE`` keyword to flatten the result set to an array of a simple type.
+::: zone-end
+
+::: zone pivot="python"
+
+Let’s consider another scenario. If your Python developers wanted to consume this list of category names, they would need to create a Python wrapper class to consume this list:
+
+```python
+class CategoryReader:
+    def __init__(self, category_name):
+        self.category_name = category_name
+
+# Developers read this as List[CategoryReader]
+```
+
+::: zone-end
+
+::: zone pivot="node"
+
+Let’s consider another scenario. If your JavaScript developers wanted to consume this list of category names, they would need to create a JavaScript wrapper class to consume this list:
+
+```javascript
+class CategoryReader {
+    constructor(categoryName) {
+        this.categoryName = categoryName;
+    }
+}
+
+// Developers read this as List<CategoryReader>
+```
+
+::: zone-end
+
+This extra step is both needless and unnecessary. It can quickly become cumbersome as you need to do this multiple times for multiple types in your container[s]. But, if you have a query that returns an object with only a single property, you can use the ``VALUE`` keyword to flatten the result set to an array of a simple type.
 
 ```sql
 SELECT DISTINCT VALUE
@@ -186,9 +264,29 @@ FROM
 ...
 ```
 
+::: zone pivot="csharp"
+
 ```csharp
 // Developers read this as List<string>
 ```
+
+::: zone-end
+
+::: zone pivot="python"
+
+```python
+# Developers read this as List[str]
+```
+
+::: zone-end
+
+::: zone pivot="node"
+
+```javascript
+// Developers read this as List<string>
+```
+
+::: zone-end
 
 The ``VALUE`` keyword can even be used on its own without the ``DISTINCT`` keyword:
 
