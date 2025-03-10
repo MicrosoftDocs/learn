@@ -1,4 +1,4 @@
-Polymorphism is one of the core concepts of object-oriented programming (OOP). Polymorphism enables objects of different classes to be treated as objects of a common base class, providing flexibility and reusability in code.
+Polymorphism is one of the core concepts of object-oriented programming. Polymorphism enables objects of different types to be treated as objects of a common base type, providing flexibility and reusability in code.
 
 Suppose you're working at a non-profit company that's in the midst of a software update project. The application combines tightly coupled models with a loosely coupled reporting structure. You're tasked with implementing polymorphism in the application to enhance flexibility and maintainability. You need to understand how to implement polymorphic behavior using class inheritance and interfaces. This module guides you through these concepts and provides practical examples to help you apply them in your work.
 
