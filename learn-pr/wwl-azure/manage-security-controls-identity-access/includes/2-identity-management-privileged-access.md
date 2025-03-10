@@ -17,7 +17,7 @@ Azure guidance: Microsoft Entra ID ([Microsoft Entra ID](/azure/active-directory
 For the Azure services that apply, avoid use of local authentication methods and instead use Microsoft Entra ID to centralize your service authentications.
 
 > [!NOTE]
-> As soon as it is technically feasible, you should migrate on-premises Active Directory based applications to Micosoft Entra ID. This could be an Mcirosoft Entra ID Enterprise Directory, Business to Business configuration, or Business to consumer configuration.
+> As soon as it is technically feasible, you should migrate on-premises Active Directory based applications to Micosoft Entra ID. This could be an Microsoft Entra ID Enterprise Directory, Business to Business configuration, or Business to consumer configuration.
 
 Azure implementation and additional context:
 
