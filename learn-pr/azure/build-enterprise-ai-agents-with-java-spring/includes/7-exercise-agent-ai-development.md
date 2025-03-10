@@ -23,6 +23,7 @@ package com.example.springaiapp.service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.ai.chat.client.ChatClient;
+import org.springframework.ai.chat.client.SimpleLoggerChatClientBuilder;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -33,10 +34,12 @@ public class BlogWriterService {
     private final ChatClient chatClient;
 
     public BlogWriterService(ChatClient.Builder chatClientBuilder) {
-        this.chatClient = chatClientBuilder.build();
+        // Enable Simple Logger Advisor for detailed logging of AI interactions
+        this.chatClient = new SimpleLoggerChatClientBuilder(chatClientBuilder).build();
     }
 
     public String generateBlogPost(String topic) {
+        // First Agent: Writer - Generates initial blog post draft
         String initialPrompt = String.format("""
             You are a professional blog writer. Write a well-structured, engaging blog post about "%s".
             The post should have a clear introduction, body paragraphs, and conclusion.
@@ -48,6 +51,7 @@ public class BlogWriterService {
         boolean approved = false;
         int iteration = 1;        
         while (!approved && iteration <= MAX_ITERATIONS) {
+            // Second Agent: Evaluator - Reviews and provides feedback
             String evalPrompt = String.format("""
                 You are a critical blog editor. Evaluate the following blog draft and respond with either:
                 PASS - if the draft is well-written, engaging, and complete
@@ -73,6 +77,7 @@ public class BlogWriterService {
                 String feedback = extractFeedback(evaluation);
                 logger.info("Editor feedback (iteration {}): {}", iteration, feedback);
                 
+                // Third Agent: Standby Writer - Refines the draft based on editor's feedback
                 String refinePrompt = String.format("""
                     You are a blog writer. Improve the following blog draft based on this editorial feedback:
                     
@@ -170,7 +175,7 @@ This should return a blog post that has been generated and iteratively refined t
 
 Spring is a season synonymous with growth, renewal, and fresh beginnings. As nature awakens from its winter slumber, so too does the world of technology. In recent years, artificial intelligence (AI) has followed a similar pattern of blossoming innovation, with spring heralding exciting breakthroughs and applications. From revolutionizing industries to improving our everyday lives, AI is in full bloom, and its potential seems as boundless as the season itself.
 
-In this blog post, we’ll explore the latest AI innovations that are flourishing this spring, highlight real-world examples of their impact, and discuss how they’re reshaping the future. Whether you’re an AI enthusiast, a tech professional, or simply curious about the role of AI in our lives, this is your guide to the season’s most exciting developments.
+In this blog post, we'll explore the latest AI innovations that are flourishing this spring, highlight real-world examples of their impact, and discuss how they're reshaping the future. Whether you're an AI enthusiast, a tech professional, or simply curious about the role of AI in our lives, this is your guide to the season's most exciting developments.
 ```
 
 ## Unit summary

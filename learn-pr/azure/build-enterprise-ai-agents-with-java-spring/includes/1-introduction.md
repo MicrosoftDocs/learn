@@ -21,17 +21,22 @@ A retrieval-augmented generation (RAG) application typically has the following c
 - Uses found responses as context for generating responses.
 - Stores interactions for future reference.
 
+### Agents and Workflows
+
+Spring AI also empowers you to build dynamic AI Agents and orchestrated workflows. While various patterns exist (like chain, parallelization, and routing), this module focuses exclusively on the **Evaluator-Optimizer Workflow**. 
+This pattern iteratively refines outputs through a generator-evaluator loop, ensuring high-quality and adaptive AI responses.
+
 ## Why Azure OpenAI and Container Apps?
 
-- Azure OpenAI: Azure OpenAI provides a secure and scalable platform for deploying AI models with enterprise-grade features. It ensures data privacy and compliance, making it suitable for sensitive applications. Additionally, it integrates seamlessly with other Azure services for a comprehensive AI solution.
-- Azure Container Apps: Azure Container Apps offers a serverless environment for running containerized applications with automatic scaling based on demand. It simplifies the deployment and management of microservices, enabling developers to focus on building applications without worrying about infrastructure.
-- Azure PostgreSQL: Azure PostgreSQL is a fully managed database service that supports advanced features like vector search for AI applications. It provides high availability, security, and performance, making it an ideal choice for storing and querying large datasets used in AI models.
+- **Azure OpenAI:** Provides a secure and scalable platform for deploying AI models with enterprise-grade features. It ensures data privacy and compliance, making it suitable for sensitive applications, and integrates seamlessly with other Azure services.
+- **Azure Container Apps:** Offers a serverless environment for running containerized applications with automatic scaling based on demand, simplifying microservice deployment and management.
+- **Azure PostgreSQL:** A fully managed database service that supports advanced features like vector search, providing high availability, security, and performance for large datasets used in AI models.
 
 ## Learning objectives
 
 After completing this module, you'll be able to:
 
-- Understand Spring AI's core abstractions and Azure OpenAI integration
-- Create and configure Azure PostgreSQL for vector storage
-- Implement an end-to-end AI application and AI Agents with Spring AI
-- Deploy and scale your application on Azure Container Apps
+- Understand Spring AI's core abstractions and Azure OpenAI integration.
+- Create and configure Azure PostgreSQL for vector storage.
+- Implement an end-to-end AI application and AI Agents with Spring AI.
+- Deploy and scale your application on Azure Container Apps.

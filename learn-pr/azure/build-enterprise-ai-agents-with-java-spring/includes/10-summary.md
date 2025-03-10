@@ -37,5 +37,6 @@ To continue your learning journey:
 - [Azure Container Apps](/azure/container-apps/)
 - [Tutorial: Scale a container app with Java metrics](/azure/container-apps/java-metrics-scale-with-keda)
 - [PostgreSQL Documentation](https://www.postgresql.org/docs/)
+- [Spring AI Agentic Patterns](https://spring.io/blog/2025/01/21/spring-ai-agentic-patterns)
 
 Congratulations on completing this module! You're now ready to build sophisticated AI applications using Spring AI and Azure!
