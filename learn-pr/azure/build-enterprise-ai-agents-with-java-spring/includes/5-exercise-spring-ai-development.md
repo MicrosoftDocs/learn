@@ -31,6 +31,7 @@ For this exercise, you need some environment variables from the previous exercis
 ```bash
 echo RESOURCE_GROUP: $RESOURCE_GROUP
 echo LOCATION: $LOCATION
+echo PG_HOST: $PG_HOST
 ```
 
 Additionally, export the following new variables needed for this lab:
@@ -222,9 +223,9 @@ az postgres flexible-server show --resource-group $RESOURCE_GROUP --name $DB_SER
     --query fullyQualifiedDomainName --output tsv
 ```
 
-### Update Azure OpenAI in application.properties
+#### Review application.properties file
 
-Locate and open the **application.properties** file in the **src/main/resources** directory and add the following properties, replacing the values retrieved previously:
+Locate and open the **application.properties** file in the **src/main/resources** directory. There are three property values that will be populated using values from these environment variables: **AZURE_OPENAI_API_KEY**, **AZURE_OPENAI_ENDPOINT** and **PG_HOST**:
 
 ```properties
 spring.application.name=spring-ai-app
