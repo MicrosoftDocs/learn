@@ -1,6 +1,6 @@
 In this unit, you deploy a Jakarta EE application to JBoss EAP on Azure App Service. You use the Maven Plugin for Azure App Service to configure the project, compile and deploy the application, and configure a data source.
 
-## Configure the app the Maven Plugin for Azure App Service
+## Configure the app
 
 Configure the app with the Maven Plugin for Azure App Service by using the following steps:
 
@@ -11,7 +11,7 @@ Configure the app with the Maven Plugin for Azure App Service by using the follo
     ```
 
     > [!IMPORTANT]  
-    > If you change the region of your MySQL server, you should also change to the same region for your Jakarta EE application server to minimize latency delays.
+    > If you change the region of your MySQL server, you should match that region to the region of your Jakarta EE application server in order to minimize latency delays.
 
     Use the values in the following table to answer the interactive prompts:
 
@@ -115,7 +115,7 @@ Configure the app with the Maven Plugin for Azure App Service by using the follo
       </build>
     ```
 
-1. Check the `<region>` element in **pom.xml**. If it's not the same installation location as MySQL, change it to the same location.
+1. Check the `<region>` element in your **pom.xml** file. If it's value doesn't match the installation location of MySQL, change it to the same location.
 
 1. Use the following example to modify the `webContainer` value in your **pom.xml** file to `Jbosseap 8`, for the JBoss EAP 8 environment on Azure App Service:
 
@@ -147,7 +147,7 @@ Configure the app with the Maven Plugin for Azure App Service by using the follo
                   <!-- Add the following lines -->
     ```
 
-    The resource `<type>startup</type>` deploys the specified script as **startup.sh** for Linux or **startup.cmd** for Windows, to **/home/site/scripts/**.
+    The resource `<type>startup</type>` deploys the specified script as the **startup.sh** file for Linux or **startup.cmd** for Windows. The deployment location is **/home/site/scripts/**.
 
     > [!NOTE]  
     > You can choose the deployment option and deployment location by specifying `type` in one of the following ways:
@@ -252,9 +252,7 @@ As a result, JBoss EAP automatically installs the JDBC drive `ROOT.war_com.mysql
 
 ## Create the MySQL DataSource object in JBoss EAP
 
-To access Azure Database for MySQL, you need to configure the `DataSource` object in JBoss EAP and specify the JNDI name in your source code.
-
-To create a MySQL `DataSource` object in JBoss EAP, you use the **/WEB-INF/createMySQLDataSource.sh** startup shell script. The following is a version of the script that's already been uploaded to App Service, but hasn't yet been configured:
+To access Azure Database for MySQL, you need to configure the `DataSource` object in JBoss EAP and specify the JNDI name in your source code. To create a MySQL `DataSource` object in JBoss EAP, you use the **/WEB-INF/createMySQLDataSource.sh** startup shell script. The following is a version of the script that's already been uploaded to App Service, but hasn't yet been configured:
 
 ```bash
 #!/bin/bash
@@ -281,6 +279,7 @@ EOF
 
 > [!NOTE]
 > When you create the data source, you don't specify a password for the MySQL connection. The environment variable `AZURE_MYSQL_CONNECTIONSTRING` is specified in the `--connection-url` parameter. This environment variable will be automatically set when the service connection is created later.
+> 
 > The service connection value will be set to `jdbc:mysql://$$MYSQL_SERVER_INSTANCE.mysql.database.azure.com:3306/world?serverTimezone=UTC&sslmode=required&user=aad_jbossapp`, which uses the `aad_jbossapp` username without a password.
 > By appending `&authenticationPlugins=com.azure.identity.extensions.jdbc.mysql.AzureMysqlAuthenticationPlugin` to this URL, Azure AD authentication is enabled for the `aad_jbossapp` user.
 
@@ -288,7 +287,7 @@ Configure your App Service instance to invoke the startup script by using the fo
 
 ```azurecli
 az webapp config set \
-    --resource-group ${RESOURCE_GROUP_NAME}
+    --resource-group ${RESOURCE_GROUP_NAME} \
     --name ${WEB_APP_NAME} \
     --startup-file '/home/site/scripts/startup.sh' \
 ```
@@ -302,18 +301,7 @@ After the script runs, the application server invokes it every time the applicat
 
 After you configure the startup script, configure App Service to use Service Connector for the MySQL flexible server connection by using the following steps:
 
-1. The following environment variables need to be set:
-
-    - `PASSWORDLESS_USER_NAME_SUFFIX`, which is the suffix for the username used to connect to the MySQL flexible server. The username created will have the prefix `aad_` followed by the specified suffix.
-    - `SOURCE_WEB_APP_ID`, which is the ID of the Azure App Service instance used to connect to the MySQL flexible server.
-    - `MYSQL_ID`, which is the ID of the MySQL flexible server.
-    - `TARGET_MYSQL_ID`, which specifies the database name as `world`, to establish a connection with a user who has permissions to access the `world` database.
-    - `MANAGED_ID`, which is the managed identity used to connect to the MySQL flexible server.
-
-    Set the environment variables by using the following commands:
-
-    > [!NOTE]
-    > The parameters in these commands apply to the Azure command line substitutions - such as `az webapp list` - not the `export` commands.
+1. Set environment variables by using the following commands:
 
     ```bash
     export PASSWORDLESS_USER_NAME_SUFFIX=jbossapp
@@ -331,6 +319,17 @@ After you configure the startup script, configure App Service to use Service Con
         --query "[0].id"
         --output tsv)
     ```
+
+    > [!NOTE]
+    > The parameters in these commands apply to the Azure command line substitutions - such as `az webapp list` - not the `export` commands.
+
+    The environment variables are used for the following purposes:
+
+    - `PASSWORDLESS_USER_NAME_SUFFIX` is the suffix for the username used to connect to the MySQL flexible server. The username created will have the prefix `aad_` followed by the specified suffix.
+    - `SOURCE_WEB_APP_ID` is the ID of the Azure App Service instance used to connect to the MySQL flexible server.
+    - `MYSQL_ID` is the ID of the MySQL flexible server.
+    - `TARGET_MYSQL_ID` specifies the database name as `world`, to establish a connection with a user who has permissions to access the `world` database.
+    - `MANAGED_ID` is the managed identity used to connect to the MySQL flexible server.
 
 1. Add the extension for `serviceconnector-passwordless` and create the service connection by using the following commands:
 
@@ -350,7 +349,7 @@ After you configure the startup script, configure App Service to use Service Con
     > [!NOTE]
     > if you get an error message like `Resource '********-****-****-****-************' does not exist or one of its queried reference-property objects are not present.`, re-run the command after a few seconds.
 
-1. Check the list of users registered in MySQL again by using the following command:
+1. Again check the list of users registered in MySQL by using the following command:
 
     ```sql
     SELECT user, host, plugin FROM mysql.user;
@@ -407,7 +406,7 @@ Previously, you implemented the database access code by using Java Persistence A
 
 ## Access the application
 
-In the sample application, you implemented three REST endpoints. You can access the application and validate these endpoints by using a web browser or a `curl` command. To access the application and retrieve data, use the following steps:
+In the sample application, you implemented three REST endpoints. To access the application and retrieve data, use the following steps:
 
 ### [Browser](#tab/browser)
 
