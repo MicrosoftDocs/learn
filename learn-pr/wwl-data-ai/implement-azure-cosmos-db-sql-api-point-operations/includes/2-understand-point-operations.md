@@ -153,7 +153,8 @@ class Product:
         }
 ```
 
-> 💡 **Tip**: If you are working with existing Python classes that cannot be modified, consider using helper methods like `to_dict()` to convert objects into the format expected by Azure Cosmos DB for NoSQL. This allows you to reuse existing types while avoiding technical debt.
+> [!NOTE]
+> If you are working with existing Python classes that cannot be modified, consider using helper methods like `to_dict()` to convert objects into the format expected by Azure Cosmos DB for NoSQL. This allows you to reuse existing types while avoiding technical debt.
 
 With these foundational modeling techniques, you can ensure that your Python application effectively interacts with Azure Cosmos DB for NoSQL.
 
@@ -247,7 +248,8 @@ class Product {
 }
 ```
 
-> 💡 **Tip**: If you are working with existing JavaScript classes that cannot be modified, consider using a method like `toJSON()` to convert objects into the format expected by Azure Cosmos DB for NoSQL. This allows you to reuse existing types while avoiding technical debt.
+> [!NOTE]
+> If you are working with existing JavaScript classes that cannot be modified, consider using a method like `toJSON()` to convert objects into the format expected by Azure Cosmos DB for NoSQL. This allows you to reuse existing types while avoiding technical debt.
 
 With these foundational modeling techniques, you can ensure that your JavaScript application effectively interacts with Azure Cosmos DB for NoSQL.
 
