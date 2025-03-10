@@ -1,0 +1,100 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-protect-sensitive-data.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Your organization is expanding its data protection strategy. You need a way to classify and protect sensitive files across Microsoft 365 services. Which feature should you implement?"
+    choices:
+    - content: "Microsoft Purview Sensitivity Labels"
+      isCorrect: true
+      explanation: "Correct: Sensitivity labels help classify and protect data by applying encryption, access restrictions, and content markings."
+    - content: "Microsoft Purview Data Loss Prevention (DLP)"
+      isCorrect: false
+      explanation: "Incorrect: DLP helps prevent unauthorized data sharing but does not classify and label data."
+    - content: "Microsoft Defender for Cloud"
+      isCorrect: false
+      explanation: "Incorrect: Microsoft Defender for Cloud focuses on cloud security posture management, not data classification."
+
+  - content: "Your organization is adopting AI-driven tools to improve efficiency. However, leadership is concerned about the risk of sensitive data being used in AI model training. Which Microsoft Purview feature can help prevent unauthorized data use?"
+    choices:
+    - content: "Data Loss Prevention (DLP) policies"
+      isCorrect: true
+      explanation: "Correct: DLP policies can prevent sensitive data from being shared with unauthorized AI tools."
+    - content: "Insider Risk Management"
+      isCorrect: false
+      explanation: "Incorrect: Insider Risk Management identifies risky user behavior but doesn't directly prevent AI data use."
+    - content: "Microsoft Defender XDR"
+      isCorrect: false
+      explanation: "Incorrect: Microsoft Defender XDR focuses on threat detection rather than data protection for AI models."
+
+  - content: "Your company is expanding remote work options, and employees are accessing sensitive files from unmanaged devices. Which approach aligns with Zero Trust principles to secure access?"
+    choices:
+    - content: "Require multifactor authentication (MFA) and conditional access policies."
+      isCorrect: true
+      explanation: "Correct: Zero Trust requires continuous verification through MFA and conditional access."
+    - content: "Allow access from any device but require VPN usage."
+      isCorrect: false
+      explanation: "Incorrect: VPN alone does not enforce identity verification and risk-based access."
+    - content: "Block all remote access to sensitive files."
+      isCorrect: false
+      explanation: "Incorrect: Blocking all access is not practical and hinders productivity."
+
+  - content: "Your security team wants to analyze how sensitive data is being accessed and shared within your organization. Which tool provides insights into user activity and data movement?"
+    choices:
+    - content: "Activity Explorer"
+      isCorrect: true
+      explanation: "Correct: Activity Explorer helps track user activity, data access, and movement within Microsoft 365."
+    - content: "Content Explorer"
+      isCorrect: false
+      explanation: "Incorrect: Content Explorer helps view classified data but does not track user activity."
+    - content: "Microsoft Purview Audit"
+      isCorrect: false
+      explanation: "Incorrect: Microsoft Purview Audit provides forensic activity logs but does not focus on real-time data movement."
+
+  - content: "Your organization recently experienced a data breach due to an insider threat. Leadership wants a solution to identify risky user behavior before a breach occurs. Which Microsoft Purview feature should be implemented?"
+    choices:
+    - content: "Insider Risk Management"
+      isCorrect: true
+      explanation: "Correct: Insider Risk Management detects and analyzes risky user behavior before a data breach happens."
+    - content: "Microsoft Defender XDR"
+      isCorrect: false
+      explanation: "Incorrect: Microsoft Defender XDR focuses on external threat detection rather than insider risks."
+    - content: "Sensitivity Labels"
+      isCorrect: false
+      explanation: "Incorrect: Sensitivity Labels help classify and protect data but do not identify risky user behavior."
+
+  - content: "A security analyst needs to investigate an incident where an employee accessed a large volume of sensitive files. Which Microsoft Purview tool can provide detailed activity logs for the investigation?"
+    choices:
+    - content: "Microsoft Purview Audit"
+      isCorrect: true
+      explanation: "Correct: Microsoft Purview Audit provides detailed activity logs for security investigations."
+    - content: "Content Explorer"
+      isCorrect: false
+      explanation: "Incorrect: Content Explorer shows classified data but does not provide user activity logs."
+    - content: "Insider Risk Management"
+      isCorrect: false
+      explanation: "Incorrect: Insider Risk Management helps detect risk but does not provide detailed forensic logs."
+
+
+  - content: "Your company is concerned about unauthorized sharing of classified financial documents. How can Microsoft Purview help prevent data leaks?"
+    choices:
+    - content: "Implement DLP policies to block unauthorized sharing."
+      isCorrect: true
+      explanation: "Correct: DLP policies can prevent financial documents from being shared outside the organization."
+    - content: "Use Content Explorer to track classified financial documents."
+      isCorrect: false
+      explanation: "Incorrect: Content Explorer provides insights but does not prevent data leaks."
+    - content: "Configure Microsoft Defender XDR to detect financial threats."
+      isCorrect: false
+      explanation: "Incorrect: Defender XDR detects threats but does not enforce sharing restrictions."

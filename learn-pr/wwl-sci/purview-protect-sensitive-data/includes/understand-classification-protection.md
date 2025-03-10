@@ -17,29 +17,38 @@ These capabilities help organizations secure sensitive data while ensuring users
 
 ### Data classification
 
-Data classification helps organizations identify and categorize sensitive information. By labeling data based on content, context, and usage, organizations can apply security controls more effectively.
+Data classification helps organizations identify and categorize sensitive information, making it easier to apply appropriate security controls. By classifying data based on content, context, and usage, organizations can improve compliance, reduce exposure risks, and enforce protection policies effectively.
 
-Microsoft Purview provides built-in classification capabilities, including sensitive information types and trainable classifiers, to help automate classification across cloud, endpoint, and collaboration environments.
+Microsoft Purview provides built-in classification capabilities that automate the identification of sensitive data across cloud, endpoint, and collaboration environments. These include:
+
+- **Sensitive information types**: Predefined and customizable patterns that detect data such as financial records, personal identifiers, and healthcare information.
+- **Trainable classifiers**: AI-powered classifiers that recognize sensitive content based on real-world examples, improving detection accuracy for unstructured data.
+
+By using these classification tools, organizations can identify and label sensitive data at scale, ensuring that security policies apply consistently across their digital environment.
 
 ### Sensitivity labels
 
-Sensitivity labels define how data should be handled, enforcing policies for encryption, access control, and visual markings. These labels ensure that data remains protected across emails, files, and cloud services, regardless of where it's shared.
+Sensitivity labels classify and protect data by enforcing encryption, access control, and visual markings. Unlike data classification, which identifies sensitive data, sensitivity labels define how data should be handled and secured throughout its lifecycle.
 
 Microsoft Purview Sensitivity Labels allow organizations to:
 
-- Apply **automatic** or **manual** labels based on content and policies.
-- Restrict file sharing and enforce **access controls**.
-- Add **visual markings** such as headers, footers, and watermarks.
+- **Classify and protect data** with persistent labels that travel with content across emails, files, and cloud services.
+- **Apply automatic or manual labels** based on content inspection and policy rules.
+- **Restrict file sharing and enforce access controls** to ensure only authorized users can access or modify data.
+- **Apply encryption** to protect information at rest and in transit.
+- **Add visual markings** such as headers, footers, and watermarks to indicate data sensitivity.
+
+By integrating sensitivity labels with Microsoft Purview’s classification capabilities, organizations can automate data protection, ensuring sensitive content is properly secured, even when shared outside the organization.
 
 ### Encryption
 
 Encryption secures data by converting it into an unreadable format, ensuring that only authorized users can access it. It protects information at rest, in transit, and in use to prevent unauthorized exposure.
 
-Microsoft Purview encryption policies support:
+Microsoft Purview provides encryption capabilities for securing data across applications, files, emails, and on-premises storage:
 
-- **Microsoft 365 apps**, enabling encryption for emails and files..
-- **Automatic encryption** for highly sensitive content.
-- **Microsoft Purview Information Protection scanner** for discovering and classifying sensitive data across on-premises locations.
+- **Sensitivity labels in Microsoft 365 apps**: Encrypt emails and files in Outlook, Word, Excel, and PowerPoint with automatic encryption based on classification and security policies.
+- **Microsoft Purview Information Protection scanner**: Discover, classify, and encrypt sensitive data across on-premises locations.
+- **Microsoft Purview Message Encryption**: Encrypt email communication for secure messaging inside and outside the organization.
 
 ### Data loss prevention (DLP) and retention policies
 
