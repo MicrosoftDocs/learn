@@ -4,13 +4,14 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/25/2024
+  ms.date: 01/15/2025
   author: wwlpublish
   ms.author: anrudduc
   ms.topic: unit
   ms.custom:
-    - build-2023-dataai
-    - build-2023-fabric
+  - build-2023
+  - build-2023-dataai
+  - build-2023-fabric
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -20,9 +21,9 @@ quiz:
     - content: "A Spark job definition."
       isCorrect: false
       explanation: "Incorrect. A Spark job definition will run Spark code, but isn't the best choice for interactive analytics."
-    - content: "A pipeline."
+    - content: "A Data Factory pipeline."
       isCorrect: false
-      explanation: "Incorrect. A pipeline isn't an interactive Spark environment."
+      explanation: "Incorrect. A Data Factory pipeline isn't an interactive Spark environment."
     - content: "A notebook."
       isCorrect: true
       explanation: "Correct. Notebooks enable you to run Spark code interactively."
@@ -33,18 +34,18 @@ quiz:
       explanation: "Correct. You can load data from files in many formats, including CSV, into a Spark dataframe."
     - content: "Import the data into a table in a warehouse."
       isCorrect: false
-      explanation: "Incorrect. You do not need to load the data into a warehouse in order to analyze it with Spark."
+      explanation: "Incorrect. You don't need to load the data into a warehouse in order to analyze it with Spark."
     - content: "Convert the data to Parquet format."
       isCorrect: false
-      explanation: "Incorrect. While you could load the data into Spark from a Parquet file, you do not need to convert the data from CSV format in order to use it in Spark."
-  - content: "Which format is used to store data as lakehouse tables in Microsoft Fabric?"
+      explanation: "Incorrect. While you could load the data into Spark from a Parquet file, you don't need to convert the data from CSV format in order to use it in Spark."
+  - content: "Which method is used to split the data across folders when saving a dataframe?"
     choices:
-    - content: "`Comma-separated-values (CSV)`"
+    - content: "`splitBy`"
       isCorrect: false
-      explanation: "Incorrect. CSV is a common format for delimited text data, but isn't used for tables in Fabric."
-    - content: "`Avro`"
+      explanation: "That's incorrect. The `splitBy` method isn't used to partition data across folders"
+    - content: "`distributeBy`"
       isCorrect: false
-      explanation: "Incorrect. Avro is a common file format in big data processing, but isn't used for tables in Fabric."
-    - content: "`Delta`"
+      explanation: "That's incorrect. The `distributeBy` method isn't used to split across folders when saving a DataFrame."
+    - content: "`partitionBy`"
       isCorrect: true
-      explanation: "Correct. Tables in a Fabric lakehouse are based on Delta Lake technology, which uses an extended format of Parquet files known as Delta."
+      explanation: "That's correct. The `partitionBy` method partitions the dataframe based on specified columns."

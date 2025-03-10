@@ -6,9 +6,9 @@ metadata:
   prefetch-feature-rollout: true
   title: Use Spark in notebooks
   description: "Use Spark in notebooks"
-  ms.date: 08/29/2023
+  ms.date: 12/12/2024
   author: wwlpublish
-  ms.author: jamesh
+  ms.author: gmalc
   ms.topic: unit
 azureSandbox: false
 labModal: false

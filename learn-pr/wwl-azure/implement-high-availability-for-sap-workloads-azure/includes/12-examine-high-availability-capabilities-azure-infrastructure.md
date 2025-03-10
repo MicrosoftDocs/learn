@@ -13,9 +13,9 @@ The following principles apply to maximizing high availability of the SAP NetWea
 
 High availability of Azure Virtual Machines should be considered in the following three main scenarios:
 
-- Single Azure Virtual Machines (99.9% uptime SLA)
-- Two or more virtual machines in the same Availability Set (99.95% uptime SLA)
-- Two or more virtual machines in different availability zones in the same Azure region (99.99% uptime SLA)
+- Single Azure Virtual Machines (99.9% uptime SLA).
+- Two or more virtual machines in the same Availability Set (99.95% uptime SLA).
+- Two or more virtual machines in different availability zones in the same Azure region (99.99% uptime SLA).
 
 For all virtual machines that have two or more instances deployed in the same Availability Set, Azure guarantees the virtual machine connectivity to at least one instance at least 99.95% of the time. When two or more virtual machines are part of the same Availability Set, each virtual machine in the Availability Set is assigned an update domain and a fault domain by the underlying Azure platform.
 
@@ -24,9 +24,9 @@ For all virtual machines that have two or more instances deployed in the same Av
 
 Availability Sets can be used in the following scenarios in SAP systems:
 
-- High-availability architecture for SAP application servers
-- High-availability architecture for an SAP ASCS/SCS instance on Windows &amp; Linux
-- High-availability DBMS instance
+- High-availability architecture for SAP application servers.
+- High-availability architecture for an SAP ASCS/SCS instance on Windows &amp; Linux.
+- High-availability DBMS instance.
 
 Considerations while setting up an Availability Set:
 

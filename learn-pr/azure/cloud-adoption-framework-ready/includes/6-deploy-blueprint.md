@@ -1,4 +1,4 @@
-Based on the customer narrative, Tailwind Traders will start by deploying a few specific configuration options to meet its constraints. When you're deploying the Azure landing zone accelerator, the following options will mimic the process that Tailwind Traders follows.
+Tailwind Traders will start by deploying a few specific configuration options to meet its constraints. When you're deploying the Azure landing zone accelerator, the following options will mimic the process that Tailwind Traders follows.
 
 ## Prerequisites
 

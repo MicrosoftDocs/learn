@@ -3,7 +3,7 @@ uid: introduction-azure-openai-managed-identity-authentication-python.keyless-au
 title: Keyless authentication methods
 metadata:
   title: Keyless authentication methods
-  description: Learn about keyless authentication methods that can be used to authenticate with Azure services
+  description: Learn about keyless authentication methods that can be used to authenticate with Azure services.
   ms.date: 11/11/2024
   author: sarah-yo
   ms.author: sayoung

@@ -15,7 +15,7 @@ To create the storage account, use the **az storage account create** command:
    ```azurecli
    az storage account create \
        --name dlstoragetest$RANDOM \
-       --resource-group <rgn>[Sandbox resource group]</rgn> \
+       --resource-group "<rgn>[sandbox resource group name]</rgn>" \
        --location westus2 \
        --sku Standard_LRS \
        --kind StorageV2 \

@@ -29,7 +29,7 @@ import matplotlib.pyplot as plt
 %matplotlib inline
 ```
 
-The dataset we'll use here's the same one that's drawn from the [U.S. Department of Agriculture National Nutrient Database for Standard Reference](https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/nutrient-data-laboratory/docs/usda-national-nutrient-database-for-standard-reference/?azure-portal=true) that you prepared in the preceding module.
+The dataset we'll use here's the same one that's drawn from the [U.S. Department of Agriculture National Nutrient Database for Standard Reference](https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/?azure-portal=true) that you prepared in the preceding module.
 
 Remember to set the encoding to `latin1` (for µg):
 

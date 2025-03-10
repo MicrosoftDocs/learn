@@ -2,11 +2,13 @@
 uid: learn.wwl.design-implement-private-access-to-azure-services.exercise-create-azure-private-endpoint-using-azure-powershell
 title: 'Exercise: Create an Azure private endpoint using Azure PowerShell'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Create an Azure private endpoint using Azure PowerShell'
   description: "Exercise: Create an Azure private endpoint using Azure PowerShell"
-  ms.date: 12/02/2024
+  ms.date: 01/30/2025
   author: wwlpublish
-  ms.author: jileary
+  ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A

@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.analyze-text-with-text-analytics-service.exercise
-title: Exercise - Analyze text with Language Studio
+title: Exercise - Analyze text in Azure AI Foundry portal
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Exercise - Analyze text with Language Studio
-  description: "Exercise - Analyze text with Language Studio"
-  ms.date: 10/17/2024
+  title: Exercise - Analyze text in Azure AI Foundry portal
+  description: "Exercise - Analyze text in Azure AI Foundry portal"
+  ms.date: 02/06/2025
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit

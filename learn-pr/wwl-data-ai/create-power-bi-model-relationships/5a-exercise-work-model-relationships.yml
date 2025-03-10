@@ -4,13 +4,10 @@ title: 'Exercise: Work with model relationships'
 metadata:
   title: 'Exercise: Work with model relationships'
   description: "Exercise: Work with model relationships"
-  ms.date: 09/25/2024
+  ms.date: 12/16/2024
   author: angierudduck
   ms.author: anrudduc
   ms.topic: unit
-azureSandbox: false
-labId: 124446
-labModal: true
 durationInMinutes: 45
 content: |
   [!include[](includes/5a-exercise-work-model-relationships.md)]

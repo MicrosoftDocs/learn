@@ -2,11 +2,9 @@
 uid: learn.wwl.implement-high-availability-for-sap-workloads-azure.explore-deployment-scenarios
 title: Explore deployment scenarios
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore deployment scenarios
   description: "Explore three different deployment scenarios."
-  ms.date: 09/20/2024
+  ms.date: 12/27/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

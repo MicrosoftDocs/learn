@@ -10,9 +10,9 @@ metadata:
   ms.author: lumac
   ms.topic: module
   ms.custom:
-  - N/A
-  ai-usage: human-only
-  ms.service: azure-resource-manager
+    - N/A
+  ms.service: azure
+  ai-usage: ai-assisted
 title: Explore infrastructure as code and configuration management
 summary: This module describes key concepts of infrastructure as code and environment deployment creation and configuration. Also, understand the imperative, declarative, and idempotent configuration and how it applies to your company.
 abstract: |
@@ -24,34 +24,33 @@ abstract: |
 prerequisites: None
 iconUrl: /training/achievements/1-explore-infrastructure-as-code-and-configuration-management.svg
 levels:
-- advanced
+  - advanced
 roles:
-- administrator
-- developer
-- devops-engineer
-- security-engineer
-- security-operations-analyst
-- service-adoption-specialist
-- solution-architect
-- technology-manager
+  - administrator
+  - developer
+  - devops-engineer
+  - security-engineer
+  - security-operations-analyst
+  - service-adoption-specialist
+  - solution-architect
+  - technology-manager
 products:
-- azure
-- azure-artifacts
-- azure-boards
-- azure-cloud-services
-- azure-devops
-- azure-pipelines
-- azure-repos
-- azure-test-plans
-- github
+  - azure
+  - azure-artifacts
+  - azure-boards
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+  - azure-test-plans
+  - github
 units:
-- learn.wwl.explore-infrastructure-as-code-configuration-management.introduction
-- learn.wwl.explore-infrastructure-as-code-configuration-management.explore-environment-deployment
-- learn.wwl.explore-infrastructure-as-code-configuration-management.examine-environment-configuration
-- learn.wwl.explore-infrastructure-as-code-configuration-management.understand-imperative-versus-declarative-configuration
-- learn.wwl.explore-infrastructure-as-code-configuration-management.understand-idempotent-configuration
-- learn.wwl.explore-infrastructure-as-code-configuration-management.knowledge-check
-- learn.wwl.explore-infrastructure-as-code-configuration-management.summary
+  - learn.wwl.explore-infrastructure-as-code-configuration-management.introduction
+  - learn.wwl.explore-infrastructure-as-code-configuration-management.explore-environment-deployment
+  - learn.wwl.explore-infrastructure-as-code-configuration-management.examine-environment-configuration
+  - learn.wwl.explore-infrastructure-as-code-configuration-management.understand-imperative-versus-declarative-configuration
+  - learn.wwl.explore-infrastructure-as-code-configuration-management.understand-idempotent-configuration
+  - learn.wwl.explore-infrastructure-as-code-configuration-management.knowledge-check
+  - learn.wwl.explore-infrastructure-as-code-configuration-management.summary
 badge:
   uid: learn.wwl.explore-infrastructure-as-code-configuration-management.badge
-

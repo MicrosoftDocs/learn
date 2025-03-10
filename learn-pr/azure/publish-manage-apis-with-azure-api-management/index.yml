@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Publish and manage your APIs with Azure API Management
   description: Learn about using an Azure API gateway to share APIs with partners, and how to use subscription keys to control access to your APIs.
-  ms.date: 10/30/2023
+  ms.date: 12/05/2024
   author: dlepow
   ms.author: danlep
   ms.topic: module-standard-task-based

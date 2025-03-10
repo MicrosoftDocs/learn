@@ -42,9 +42,9 @@ quiz:
       explanation: "Correct. The duration of the maintenance window should be provided in HH:mm format."
   - content: "A system administrator needs to ensure update compliance across all machines, deploy critical updates instantly, and use flexible patching options. Which Azure service should they use?"
     choices:
-    - content: "Azure Security Center"
+    - content: "Microsoft Defender for Cloud"
       isCorrect: false
-      explanation: "Incorrect. While Azure Security Center provides unified security management and advanced threat protection, it does not directly manage updates."
+      explanation: "Incorrect. While Microsoft Defender for Cloud provides unified security management and advanced threat protection, it does not directly manage updates."
     - content: "Azure Automation"
       isCorrect: false
       explanation: "Incorrect. Azure Automation allows for the creation, deployment, monitoring, and maintenance of resources in an Azure environment, but it does not specifically manage updates."

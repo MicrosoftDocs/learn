@@ -6,8 +6,8 @@ metadata:
   title: Challenge
   description: Use what you just learned about Kusto Query Language to write a query that answers the challenge question. 
   ms.date: 10/16/2024
-  author: YaelSchuster
-  ms.author: yaschust
+  author: shsagir
+  ms.author: shsagir
   ms.topic: unit
 durationInMinutes: 2 
 content: |

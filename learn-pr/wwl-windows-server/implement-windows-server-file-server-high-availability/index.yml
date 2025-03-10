@@ -3,7 +3,7 @@ uid: learn.wwl.implement-windows-server-file-server-high-availability
 metadata:
   title: Implement Windows Server File Server high availability
   description: "Implement Windows Server File Server high availability"
-  ms.date: 03/31/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
@@ -18,7 +18,7 @@ abstract: |
   - Describe the characteristics of, and high-level implementation steps for Storage Replica.
 prerequisites: |
   To get the best learning experience from this module, you should have knowledge and experience of:
-  - Windows Server 2012 or Windows Server 2016.
+  - Windows Server systems administration.
   - Core networking technologies.
   - Windows Server Hyper-V fundamentals.
 iconUrl: /training/achievements/implement-windows-server-file-server-high-availability.svg

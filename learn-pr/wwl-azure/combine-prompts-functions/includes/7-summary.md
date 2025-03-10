@@ -1,0 +1,1 @@
+In this module, you learned how the Semantic Kernel SDK automatically encodes input to prevent prompt injection attacks. You learned how to explicitly trust specific input and how to apply filters to functions when they are invoked. Great work!

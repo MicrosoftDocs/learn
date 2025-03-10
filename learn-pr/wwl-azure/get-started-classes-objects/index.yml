@@ -1,0 +1,59 @@
+### YamlMime:Module
+uid: learn.wwl.get-started-classes-objects
+metadata:
+  title: Get Started with Classes and Objects
+  description: "Learn how to create classes and instantiate objects that expose encapsulated field data by using class definitions, constructors, and the `new` operator."
+  ms.date: 02/12/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
+  ms.service: dotnet-csharp
+  ms.subservice: fundamentals
+  ms.devlang: dotnet
+  ai-usage: human-only
+title: Get started with classes and objects
+summary: Learn how to create classes and instantiate objects that expose public data fields by using class definitions, constructors, and the `new` operator.
+abstract: |
+  After completing this module, you'll be able to:
+
+  -   Describe the .NET type system, the difference between value and reference types, and the benefit of using custom class types.
+
+  -   Explain the difference between a class and an instantiated object.
+
+  -   Create class definitions that include public data fields and constructors that accept zero or more arguments.
+
+  -   Create classes and instantiate objects that expose public field values.
+prerequisites: |
+  -   An installation of Visual Studio Code with the C# Dev Kit extension installed.
+
+  -   The ability to develop C# console apps that implement business logic using iteration statements, selection statements, and custom methods.
+
+  -   The ability to perform basic C# code debugging and exception handling in a Visual Studio Code environment.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- vs-code
+- dotnet
+subjects:
+- app-development
+- custom-app-development
+units:
+- learn.wwl.get-started-classes-objects.introduction
+- learn.wwl.get-started-classes-objects.compare-structured-object-oriented-programming
+- learn.wwl.get-started-classes-objects.examine-dotnet-type-system
+- learn.wwl.get-started-classes-objects.design-use-classes
+- learn.wwl.get-started-classes-objects.create-class-constructors-instantiate-objects
+- learn.wwl.get-started-classes-objects.exercise-create-classes-instantiate-objects
+- learn.wwl.get-started-classes-objects.knowledge-check
+- learn.wwl.get-started-classes-objects.summary
+badge:
+  uid: learn.wwl.get-started-classes-objects.badge

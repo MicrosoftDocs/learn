@@ -8,7 +8,14 @@ The main takeaways from this module are:
 - A container group is a collection of containers that get scheduled on the same host machine. 
 - Containers can be rapidly recreated on another cluster node if a node fails. 
  
-## Learn more
+## Learn more with Copilot
+Copilot can assist you in configuring Azure infrastructure solutions. Copilot can compare, recommend, explain, and research products and services where you need more information. Open a Microsoft Edge browser and choose Copilot (top right) or navigate to copilot.microsoft.com. Take a few minutes to try these prompts and extend your learning with Copilot.
+
+- Compare benefits and usage cases for containers and virtual machines. 
+
+- Compare benefits and usage cases for Azure Container Apps and Azure Kubernetes Service. 
+
+## Learn more with documentation
 
 - [Containers versus virtual machines](/virtualization/windowscontainers/about/containers-vs-vm). This article reviews the key similarities and differences between containers and virtual machines (VMs), and when you might want to use each. 
 

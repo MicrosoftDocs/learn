@@ -26,18 +26,18 @@ quiz:
     - content: "GitHub Copilot uses radio language, that you type, and it provides suggestions based on what you type."
       isCorrect: false
       explanation: "GitHub Copilot doesn't use radio language."
-  - content: "Is GitHub Copilot Free?"
+  - content: "What are some GitHub Copilot Free features?"
     choices:
-    - content: "Yes, it's free for everyone."
+    - content: "It's a free unrestrticted AI tool that works independent of code editors."
       isCorrect: false
-      explanation: "Incorrect. GitHub Copilot currently costs 10 dollars per month, except for certain users. "
-    - content: "No, it’s a service you can sign up for that’s free for students to use but currently costs 10 dollars per month."
+      explanation: "Incorrect. GitHub Copilot Free has a quota for code completions and chat messages."
+    - content: "It provides several suggestions and chats per month directly in your IDE and on github.com."
       isCorrect: true
-      explanation: "GitHub Copilot is free for verified students, teachers, and maintainers of popular open-source projects."
-    - content: "It's not free, even if you're a student or a teacher."
+      explanation: "Correct. It also supports multi-file editing and and switching models!"
+    - content: "An option to enable slower responses, preservering your Copilot Pro quota."
       isCorrect: false
-      explanation: "GitHub Copilot is free for verified students, teachers, and maintainers of popular open-source projects."
-  - content: "How can you accept GitHub Copilot’s suggestions?"
+      explanation: "Incorrect. Copilot Free has quoat restrictions. Copilot Pro provides unlimited code suggestions and chat."
+  - content: "How can you accept GitHub Copilot's suggestions?"
     choices:
     - content: "Press the <kbd>Tab</kbd> key."
       isCorrect: true

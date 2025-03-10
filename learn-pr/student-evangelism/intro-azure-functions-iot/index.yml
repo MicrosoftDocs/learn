@@ -6,8 +6,8 @@ metadata:
   title: "Introduction to Azure Functions for IoT"
   description: "Learn about Azure Functions for IoT. University of Oxford"
   ms.date: 07/25/2024
-  author: leestott
-  ms.author: chnoring
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: module-standard-task-based
   ms.custom: team=cloud_advocates
   ms.service: azure-functions
@@ -26,6 +26,7 @@ prerequisites: |
     - Basic understanding of IoT 
     
 iconUrl: /training/achievements/student-evangelism/introduction-to-azure-functions-iot-edge.svg
+hidden: true
 badge:
   uid: learn.oxford.intro-iot-funtions-iot.badge
 levels:

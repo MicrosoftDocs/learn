@@ -8,8 +8,8 @@ metadata:
   title: Knowledge check
   description: "Learn how to characterize an unfamiliar dataset using Azure Data Explorer web UI and KQL queries."
   ms.date: 04/02/2024
-  author: YaelSchuster
-  ms.author: yaschust
+  author: shsagir
+  ms.author: shsagir
   ms.topic: unit
 durationInMinutes: 3
 content: |

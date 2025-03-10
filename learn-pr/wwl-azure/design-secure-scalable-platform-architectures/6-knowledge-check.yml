@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-secure-scalable-platform-architectures.knowledge-check
+title: Knowledge Check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge Check
+  description: "Knowledge Check"
+  ms.date: 01/09/2025
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: What is the primary purpose of integrating DevSecOps practices in platform engineering?
+      choices:
+        - content: To eliminate the need for automated security scans, dependency checks, and vulnerability testing during code builds.
+          isCorrect: false
+          explanation: Incorrect. DevSecOps practices actually enable automated security scans, dependency checks, and vulnerability testing during code builds.
+        - content: To embed security throughout the platform development lifecycle, ensuring that vulnerabilities are identified and mitigated early.
+          isCorrect: true
+          explanation: Correct. DevSecOps integrates security into the development, testing, and deployment processes, making it a continuous process and helping to identify and mitigate vulnerabilities early.
+        - content: To separate security from the development, testing, and deployment processes.
+          isCorrect: false
+          explanation: Incorrect. DevSecOps aims to integrate security into the development, testing, and deployment processes, not separate it.
+    - content: What is the main benefit of implementing Security as Code and Policy as Code in platform architecture?
+      choices:
+        - content: It allows for manual enforcement of security standards across environments.
+          isCorrect: false
+          explanation: Incorrect. Security as Code and Policy as Code automate the enforcement of security standards, reducing human error.
+        - content: It automates the enforcement of security standards across environments, ensuring uniformity and reducing human error.
+          isCorrect: true
+          explanation: Correct. By codifying security configurations and policies, organizations can automate the enforcement of security standards, ensuring uniformity and reducing human error.
+        - content: It ensures that security configurations and policies are different across environments.
+          isCorrect: false
+          explanation: Incorrect. These practices ensure uniformity of security configurations and policies across environments.
+    - content: What is the role of Centralized Infrastructure as Code (IaC) management in platform engineering?
+      choices:
+        - content: It enables automation of provisioning, configuration, and scaling, ensuring efficient deployment processes and minimal manual interventions.
+          isCorrect: true
+          explanation: Correct. Centralized IaC management automates provisioning, configuration, and scaling, making deployment processes more efficient and reducing the need for manual interventions.
+        - content: It increases the need for manual interventions in the deployment processes.
+          isCorrect: false
+          explanation: Incorrect. Centralized IaC management minimizes manual interventions by automating provisioning, configuration, and scaling.
+        - content: It allows teams to maintain inconsistent, version-controlled infrastructure configurations across environments.
+          isCorrect: false
+          explanation: Incorrect. Centralized IaC management helps maintain consistent, not inconsistent, infrastructure configurations across environments.
+    - content: What is the role of CI/CD pipelines in the concept of Everything as Code (EaC)?
+      choices:
+        - content: CI/CD pipelines are used to manually configure systems and manage resources.
+          isCorrect: false
+          explanation: Incorrect. CI/CD pipelines automate the delivery of code, configurations, and infrastructure changes, not manual configuration.
+        - content: CI/CD pipelines automate the delivery of code, configurations, and infrastructure changes, streamlining development cycles and reducing the risk of human error.
+          isCorrect: true
+          explanation: Correct. In the context of EaC, CI/CD pipelines automate processes that were traditionally manual, enhancing reliability and agility across all layers of the platform.
+        - content: CI/CD pipelines are only used for application development and don't interact with infrastructure or configuration management.
+          isCorrect: false
+          explanation: Incorrect. CI/CD pipelines play a crucial role in EaC by enabling continuous delivery of code, configurations, and infrastructure changes.

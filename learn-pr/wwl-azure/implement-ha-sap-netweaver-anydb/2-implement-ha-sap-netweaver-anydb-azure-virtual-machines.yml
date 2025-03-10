@@ -2,11 +2,9 @@
 uid: learn.wwl.implement-ha-sap-netweaver-anydb.machines
 title: Implement high availability in SAP NetWeaver with AnyDB on Azure Virtual Machines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement high availability in SAP NetWeaver with AnyDB on Azure Virtual Machines
   description: "Implement high availability in SAP NetWeaver with AnyDB on Azure Virtual Machines."
-  ms.date: 08/01/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

@@ -2,6 +2,17 @@ A shared access signature (SAS) is a uniform resource identifier (URI) that gran
 
 You can provide a SAS to clients who shouldn't have access to your storage account key. By distributing a SAS URI to these clients, you grant them access to a resource for a specified period of time. 
 
+You'd typically use a SAS for a service where users read and write their data to your storage account. Accounts that store user data have two typical designs:
+
+- Clients can upload and download data through a front-end proxy service, which performs authentication. This front-end proxy service has the advantage of allowing validation of business rules. if you handle large amounts of data or high-volume transactions, it can be difficult to scale this service 
+
+:::image type="content" source="../media/4-client-flowchart.png" alt-text="Diagram of data using the Front End Proxy Service to access Azure Storage." border="false":::
+
+- A lightweight service authenticates the client, as needed. Next, it generates a SAS. Clients receiving the SAS can access storage account resources directly. The SAS defines the client's permissions and access interval. It reduces the need to route all data through the front-end proxy service.
+
+:::image type="content" source="../media/4-server-flowchart.png" alt-text="Diagram of a SAS authenticating access to Azure Storage." border="false":::
+
+
 ### Things to know about shared access signatures
 
 Let's review some characteristics of a SAS.
@@ -16,9 +27,9 @@ Let's review some characteristics of a SAS.
 
 - SAS provides account-level and service-level control.
 
-   - **Account-level** SAS delegates access to resources in one or more Azure Storage services.
+   - **Account-level**. Use an *account-level SAS* to allow access to anything that a service-level SAS can allow, plus other resources and abilities. For example, you can use an account-level SAS to allow the ability to create file systems.
 
-   - **Service-level** SAS delegates access to a resource in only one Azure Storage service.
+   - **Service-level**.You can use a *service-level SAS* to allow access to specific resources in a storage account. You'd use this type of SAS, for example, to allow an app to retrieve a list of files in a file system, or to download a file.
 
    > [!NOTE]
    > A **stored access policy** can provide another level of control when you use a service-level SAS on the server side. You can group SASs and provide other restrictions by using a stored access policy.

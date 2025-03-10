@@ -4,12 +4,12 @@ Activator is a technology in Microsoft Fabric that enables automated processing 
 
 ## Understand Activator key concepts
 
-Activator operates based on four core concepts: *Events, Objects, Triggers,* and *Properties*. Understanding these four principles enables you to utilize the capabilities of Activator more effectively.
+Activator operates based on four core concepts: *Events*, *Objects, *Properties*, and *Rules*.
 
-- **Events** - Activator considers all data sources as a sequence of events, each representing an observation about the status of a particular object. These events can occur frequently, as with IoT sensors, or less frequently, such as when monitoring package scanning in shipping locations.
-- **Objects** - Activator’s objects can be tangible items like vehicles or packages, or abstract concepts like advertising campaigns or user sessions. When creating a Reflex item, you model the object by connecting one or more event streams. You then select a column for the object ID, and specifying the fields to become properties of the object.
-- **Triggers** - Activator’s triggers are designed to monitor your events and data, initiating specified actions once certain conditions within these events are fulfilled.
-- **Properties** - Activator’s properties are beneficial for reusing logic across various triggers. You could, for instance, set up a property on a smart lighting system to track the average brightness levels during the busiest hours of the day. This average could then be used in numerous triggers to correctly tweak the lighting and save energy.
+- **Events** - Each record in a stream of data represents an *event* that has occurred at a specific point in time.
+- **Objects** - The data in an event record can be used to represent an *object*, such as a sales order, a sensor, or some other business entity.
+- **Properties** - The fields in the event data can be mapped to *properties* of the business object, representing some aspect of its state. For example, a *total_amount* field might represent a sales order total, or a *temperature* field might represent the temperature measured by an environmental sensor.
+- **Rules** - The key to using Activator to automate actions based on events is to define *rules* that set conditions under which an action is triggered based on the property values of objects referenced in events. For example, you might define a rule that sends an email to a maintenance manager if the temperature measured by a sensor exceeds a specific threshold.
 
 ## Use cases for Activator
 

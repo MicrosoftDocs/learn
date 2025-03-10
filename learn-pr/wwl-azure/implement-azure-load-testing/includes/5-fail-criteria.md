@@ -24,13 +24,13 @@ Fail criteria have the following structure:
 
 The following table describes the different components:
 
-| Parameter            | Description                                                                                                                                                                                                                                                                                                                                                |
-| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Client metric`      | *Required.* The client metric on which the condition should be applied.                                                                                                                                                                                                                                                                                    |
-| `Aggregate function` | *Required.* The aggregate function to be applied on the client metric.                                                                                                                                                                                                                                                                                     |
-| `Condition`          | *Required.* The comparison operator, such as `greater than`, or `less than`.                                                                                                                                                                                                                                                                               |
-| `Threshold`          | *Required.* The numeric value to compare with the client metric.                                                                                                                                                                                                                                                                                           |
-| `Request`            | *Optional.* Name of the sampler in the JMeter script to which the criterion applies. If you don't specify a request name, the criterion applies to the aggregate of all the requests in the script. <br/> Don't include any personal data in the sampler name in your JMeter script. The sampler names appear in the Azure Load Testing results dashboard. |
+| Parameter | Description |
+|--|--|
+| `Client metric` | *Required.* The client metric on which the condition should be applied. |
+| `Aggregate function` | *Required.* The aggregate function to be applied on the client metric. |
+| `Condition` | *Required.* The comparison operator, such as `greater than`, or `less than`. |
+| `Threshold` | *Required.* The numeric value to compare with the client metric. |
+| `Request` | *Optional.* Name of the sampler in the JMeter script to which the criterion applies. If you don't specify a request name, the criterion applies to the aggregate of all the requests in the script. <br/> Don't include any personal data in the sampler name in your JMeter script. The sampler names appear in the Azure Load Testing results dashboard. |
 
 ## Load test fail criteria example
 
@@ -94,3 +94,4 @@ The following example disables auto stop for your load test:
         engineInstances: 1
         autoStop: disable
         ```
+

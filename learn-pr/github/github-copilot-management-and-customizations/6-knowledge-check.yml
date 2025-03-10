@@ -14,9 +14,9 @@ quiz:
   questions:
   - content: "Which GitHub Copilot plan includes enterprise-grade security and privacy?"
     choices:
-    - content: "Individual"
+    - content: "Pro"
       isCorrect: false
-      explanation: "The Individual plan doesn't include enterprise-grade security and privacy features. It's designed for personal use and lacks the advanced security measures that businesses and enterprises require."
+      explanation: "The Pro plan doesn't include enterprise-grade security and privacy features. It's designed for personal use and lacks the advanced security measures that businesses and enterprises require."
     - content: "Business"
       isCorrect: false
       explanation: "The Business plan does include enterprise-grade security and privacy features, but this isn't the only correct answer."

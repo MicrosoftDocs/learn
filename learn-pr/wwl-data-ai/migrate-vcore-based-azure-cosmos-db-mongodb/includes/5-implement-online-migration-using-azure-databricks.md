@@ -1,14 +1,14 @@
-Azure Databricks simplifies moving big MongoDB datasets to vCore-based Azure Cosmos DB for MongoDB, making the transfer of complex data more straightforward. It allows for detailed control over the migration pace and data transformations, effectively handling very large datasets.
+Azure Databricks simplifies moving large MongoDB datasets to vCore-based Azure Cosmos DB for MongoDB, making the transfer of complex data more straightforward. It allows for detailed control over the migration pace and data transformations, effectively handling large datasets.
 
 ## Why use Azure Databricks?
 
-Azure Databricks, a Platform as a Service (PaaS) for Apache Spark, introduces a streamlined, efficient method for both offline and online migration of databases from MongoDB. Its architecture is specifically designed to support extensive datasets, making it a suitable choice for your migration projects.
+Azure Databricks, a Platform as a Service (PaaS) for Apache Spark, introduces a streamlined, efficient method for both offline and online migration of databases from MongoDB. Its architecture is designed to support extensive datasets, making it a suitable choice for your migration projects.
 
 ## Prerequisites
 
 Before you start the migration, ensure you have the following prerequisites:
 
-- Confirm that your vCore-based Azure Cosmos DB for MongoDB account is active and properly configured.
+- Confirm that your vCore-based Azure Cosmos DB for MongoDB account is active and properly configured. Make sure that you enabled a managed identity for your Azure MongoDB account and granted the necessary permissions to access the source MongoDB database.
 - Provision an Azure Databricks cluster, selecting Databricks runtime *version 7.6* for optimal *Spark 3.0* compatibility.
 
 ![Screenshot of how to add the MongoDB migration extension to Azure Data Studio.](../media/5-create-databricks-cluster.png)
@@ -21,22 +21,51 @@ You can create either a Python or Scala notebook in Azure Databricks to perform 
 
 ```python
 from pyspark.sql import SparkSession
+from azure.identity import DefaultAzureCredential
 
-sourceConnectionString = "mongodb://<USERNAME>:<PASSWORD>@<HOST>:<PORT>/<AUTHDB>"
-sourceDb = "<DB NAME>"
-sourceCollection =  "<COLLECTIONNAME>"
-targetConnectionString = "mongodb://<ACCOUNTNAME>:<PASSWORD>@<ACCOUNTNAME>.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@<ACCOUNTNAME>@"
-targetDb = "<DB NAME>"
-targetCollection =  "<COLLECTIONNAME>"
+# Set up the managed identity credential
+credential = DefaultAzureCredential()
 
+# Retrieve the access token for Azure Cosmos DB
+token = credential.get_token("https://cosmos.azure.com/.default")
+
+# Construct the target connection string using the access token
+target_account_name = "<ACCOUNTNAME>"  # Replace with your Cosmos DB account name
+target_connection_string = (
+    f"mongodb://:@{target_account_name}.mongo.cosmos.azure.com:10255/"
+    f"?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@{target_account_name}@"
+    f"&authMechanism=PLAIN&authSource=$external&password={token.token}"
+)
+
+# MongoDB source connection details
+source_connection_string = "mongodb://<USERNAME>:<PASSWORD>@<HOST>:<PORT>/<AUTHDB>"  # Replace with your source MongoDB connection
+source_db = "<DB NAME>"
+source_collection = "<COLLECTIONNAME>"
+target_db = "<DB NAME>"
+target_collection = "<COLLECTIONNAME>"
+
+# Initialize Spark session
 my_spark = SparkSession \
     .builder \
-    .appName("myApp") \
+    .appName("MongoDB to CosmosDB Migration") \
+    .config("spark.mongodb.input.uri", source_connection_string) \
+    .config("spark.mongodb.output.uri", target_connection_string) \
     .getOrCreate()
 
-df = my_spark.read.format("com.mongodb.spark.sql.DefaultSource").option("uri", sourceConnectionString).option("database", sourceDb).option("collection", sourceCollection).load()
+# Read from source MongoDB
+df = my_spark.read.format("com.mongodb.spark.sql.DefaultSource") \
+    .option("uri", source_connection_string) \
+    .option("database", source_db) \
+    .option("collection", source_collection) \
+    .load()
 
-df.write.format("mongo").mode("append").option("uri", targetConnectionString).option("maxBatchSize",2500).option("database", targetDb).option("collection", targetCollection).save()
+# Write to Azure Cosmos DB (MongoDB API)
+df.write.format("mongo") \
+    .mode("append") \
+    .option("uri", target_connection_string) \
+    .option("database", target_db) \
+    .option("collection", target_collection) \
+    .save()
 ```
 
 ### Execute the migration

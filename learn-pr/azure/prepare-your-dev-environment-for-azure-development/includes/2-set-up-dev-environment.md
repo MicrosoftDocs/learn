@@ -10,13 +10,13 @@ However, Visual Studio Code doesn't include a compiler. Code compilation for spe
 
 ## Extension model
 
-One of the most powerful features of Visual Studio Code is the extension model. Extensions _extend_ the capabilities of Visual Studio Code to add a wide range of new capabilities. For example, extensions can be used to add compilers, add spell checking, and integrate with Azure services.
+One of the most powerful features of Visual Studio Code is the extension model. Extensions *extend* the capabilities of Visual Studio Code to add a wide range of new capabilities. For example, extensions can be used to add compilers, add spell checking, and integrate with Azure services.
 
 Extensions are free, you can add them from the Extensions page within Visual Studio Code. You can explore the available extensions in the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/).
 
 ## Azure extensions
 
-Many of the extensions target Azure features and products. For example, there are extensions that provide features such as Docker support, subscription management, tooling for the Azure CLI, database access, and Azure Storage API integration.
+Many of the extensions target Azure features and products. For example, there are extensions for Docker support, subscription management, tooling for the Azure CLI, database access, and Azure Storage API integration.
 
 ## Install Visual Studio Code and prepare for Azure development
 
@@ -26,17 +26,17 @@ Visual Studio Code supports Windows, Linux, and macOS. To install Visual Studio 
 
 ::: zone pivot="vstudio"
 
-Visual Studio is a full-featured integrated development environment (IDE) for a wide range of programming application types and languages. Visual Studio has a full set of tools and features that are specifically targeted at developing applications with Microsoft Azure. These features provide support for Azure development, debugging, and deployment tools that are tightly integrated with the IDE.
+Visual Studio is a full-featured integrated development environment (IDE) for a wide range of programming application types and languages. Visual Studio has a full set of tools and features that are targeted specifically at developing applications with Microsoft Azure. These features provide support for Azure development, debugging, and deployment tools that are tightly integrated with the IDE.
 
 ## Visual Studio
 
 Visual Studio is a fully featured IDE used to develop applications for a wide range of application types including Windows, Android, iOS, web, and Azure.
 
-When installing Visual Studio, you'll see that several _workloads_ are available. Workloads are collections of libraries and components that define an area of functionality that you can install. Instead of installing an individual component where you must know and remember the dependencies between each, you can use workloads to do "themed" installations. Visual Studio workloads ensure that all necessary components are included.
+The base installation of Visual Studio comes with no tools or libraries for Azure development. However, when you install Visual Studio, you see that several *workloads* are available. Workloads are collections of libraries and components that define an area of functionality that you can install. Instead of installing an individual component where you must know and remember the dependencies between each, you can use workloads to do "themed" installations. Visual Studio workloads ensure that all necessary components are included.
 
-The base installation of Visual Studio comes with no tools or libraries for Azure development. For that, you'll need to include the Azure development workload, which includes the Azure SDKs, tooling, and template projects.
+For Azure development, you need to include the **Azure development** workload, which includes the Azure SDKs, tooling, and template projects.
 
-To install Visual Studio, [download the installer](https://visualstudio.microsoft.com/). The installer will ask which workloads to install; you'll specify the Azure development workload. Additional functionality is typically added via NuGet packages or Visual Studio extensions.
+To install Visual Studio, [download the installer](https://visualstudio.microsoft.com/). When the installer asks which workloads to install, specify the Azure development workload. More functionality is typically added via NuGet packages or Visual Studio extensions.
 
 ::: zone-end
 
@@ -56,7 +56,7 @@ Installing Eclipse for Java or Java EE on any platform is straightforward. The i
 
 The Azure Toolkit for Eclipse provides templates and functionality that you can use to easily create, develop, test, and deploy cloud applications to Azure from Eclipse. The Azure Toolkit is open source, actively developed, and hosted in GitHub.
 
-The toolkit includes integration templates for Docker containers, HDInsights, Azure documentation, Azure Cache for Redis, storage account operations, and virtual machine management.
+The toolkit includes integration templates for Docker containers, HDInsight, Azure documentation, Azure Cache for Redis, storage account operations, and virtual machine management.
 
 The Azure Toolkit is installed through the Eclipse IDE itself; it's the same procedure on all the supported operating systems. The toolkit is available from the [Eclipse Marketplace](https://marketplace.eclipse.org/).
 
@@ -76,9 +76,9 @@ Installing IntelliJ IDEA for Java or Java EE on any platform is straightforward.
 
 ## Azure Toolkit for IntelliJ
 
-The Azure Toolkit for IntelliJ provides templates and functionality that you can use to easily create, develop, test, and deploy cloud applications to Azure from IntelliJ IDEA. The Azure Toolkit is open source, actively developed, and hosted in GitHub.
+The Azure Toolkit for IntelliJ provides templates and functionality for easily creating, developing, testing, and deploying cloud applications to Azure from IntelliJ IDEA. The Azure Toolkit is open source, actively developed, and hosted in GitHub.
 
-The toolkit includes integration templates for Docker containers, HDInsights, Azure documentation, Azure Cache for Redis, storage account operations, and virtual machine management.
+The toolkit includes integration templates for Docker containers, HDInsight, Azure documentation, Azure Cache for Redis, storage account operations, and virtual machine management.
 
 The Azure Toolkit is installed through the IntelliJ IDEA itself; it's the same procedure on all the supported operating systems. The toolkit is available from the [IntelliJ IDEA Marketplace](https://plugins.jetbrains.com/).
 

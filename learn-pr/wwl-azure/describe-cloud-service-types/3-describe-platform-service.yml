@@ -2,11 +2,9 @@
 uid: learn.wwl.describe-cloud-service-types.describe-platform-service
 title: Describe Platform as a Service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe Platform as a Service
   description: "Describe Platform as a Service"
-  ms.date: 09/19/2024
+  ms.date: 12/12/2024
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: unit

@@ -6,9 +6,9 @@ metadata:
   prefetch-feature-rollout: true
   title: Configure inputs and outputs
   description: "Configure inputs and outputs"
-  ms.date: 05/24/2023
+  ms.date: 12/12/2024
   author: wwlpublish
-  ms.author: jamesh
+  ms.author: gmalc
   ms.topic: unit
 durationInMinutes: 9
 content: |

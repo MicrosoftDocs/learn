@@ -6,8 +6,8 @@ metadata:
   title: "Introduction to Azure IoT Edge"
   description: "Learn how to explain the essential characteristics of the IoT Edge and the functionality of the IoT Edge components."
   ms.date: 07/30/2024
-  author: leestott
-  ms.author: chnoring
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: module
   ms.custom: team=cloud_advocates
   ms.service: azure-iot-edge
@@ -24,6 +24,7 @@ abstract: |
 prerequisites: |
     - Basic knowledge of IoT applications and IoT Hub
 iconUrl: /training/achievements/student-evangelism/introduction-to-iot-edge.svg
+hidden: true
 badge:
   uid: learn.introduction-to-iot-edge.badge
 levels:

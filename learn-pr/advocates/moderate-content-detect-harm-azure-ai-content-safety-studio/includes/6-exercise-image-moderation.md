@@ -7,7 +7,7 @@ You can apply an AI model to detect whether the images that customers post are h
 First, test an image of a family camping:
 
 1. On the **Content Safety** page, select **Moderate image content**.
-1. Select **Browse for a file** and upload the **family-builds-campfire.JPG** file.
+1. Select **Browse for a file** and upload the **family-builds-campfire.JPG** file. The file is within the **data/Image Moderation** folder.
 1. Set all **Threshold level** values to **Medium**.
 
     :::image type="content" source="../media/image-moderation.png" alt-text="Screenshot of the image preview and filter configuration for image moderation."  lightbox="../media/image-moderation.png":::

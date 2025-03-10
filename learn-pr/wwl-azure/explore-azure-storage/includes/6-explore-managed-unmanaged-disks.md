@@ -19,12 +19,12 @@ Azure offers five tiers of managed disks according to their performance characte
 
 |  | Ultra disk | Premium SSD v2 | Premium SSD | Standard SSD | Standard HDD |
 |---|---|---|---|---|---|
-| **Disk type** | SSD | SSD | SSD | SSD | HDD
-| **Scenario** | IO-intensive workloads such as SAP HANA, top-tier databases (for example, SQL, Oracle), and other transaction-heavy workloads. | Production and performance-sensitive workloads that consistently require low latency and high IOPS and throughput | Production and performance-sensitive workloads | Web servers, lightly used enterprise applications, and dev/test | Backup, non-critical, infrequent access
-| **Max disk size** | 65,536 GiB | 65,536 GiB | 32,767 GiB | 32,767 GiB | 32,767 GiB
-| **Max throughput** | 4,000 MiB/s | 1,200 MiB/s | 900 MiB/s | 750 MiB/s | 500 MiB/s
-| **Max IOPS** | 160,000 | 80,000 | 20,000 | 6,000 | 2,000, 3,000*
-| **Usable as OS disk?** | No | No | Yes | Yes | Yes
+| **Disk type** | SSD | SSD | SSD | SSD | HDD |
+| **Scenario** | IO-intensive workloads such as SAP HANA, top-tier databases (for example, SQL, Oracle), and other transaction-heavy workloads. | Production and performance-sensitive workloads that consistently require low latency and high IOPS and throughput | Production and performance-sensitive workloads | Web servers, lightly used enterprise applications, and dev/test | Backup, non-critical, infrequent access |
+| **Max disk size** | 65,536 GiB | 65,536 GiB | 32,767 GiB | 32,767 GiB | 32,767 GiB |
+| **Max throughput** | 4,000 MiB/s | 1,200 MiB/s | 900 MiB/s | 750 MiB/s | 500 MiB/s |
+| **Max IOPS** | 160,000 | 80,000 | 20,000 | 6,000 | 2,000, 3,000* |
+| **Usable as OS disk?** | No | No | Yes | Yes | Yes |
 
 > [!NOTE]
 > Only applies to disks with performance plus (preview) enabled.

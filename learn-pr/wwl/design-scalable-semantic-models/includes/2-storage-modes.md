@@ -1,4 +1,4 @@
-When designing a scalable semantic model, selecting the appropriate storage mode is crucial. Depending on your data source, you have four options: *Import*, *DirectQuery*, *Direct Lake*, and *Composite model*. Each mode has its own advantages and considerations to ensure optimal performance and scalability.
+When you design a scalable semantic model, selecting the appropriate storage mode is crucial. Depending on your data source, you have four options: *Import*, *DirectQuery*, *Direct Lake*, and *Composite model*. Each mode has its own advantages and considerations to ensure optimal performance and scalability.
 
 ### Import Mode
 
@@ -21,7 +21,7 @@ Guidance for Import models also applies to the other storage modes. You should a
 
 **Optimization Tips**:
 
-- Simplify DAX measures to avoid complex calculations at the source.
+- Avoid complex calculations at the source by simplifying Data Analysis Expressions (DAX).
 - Apply dual storage mode for dimensions related to fact tables.
 - Use the *Assume Referential Integrity* property on relationships.
 - Avoid relationships on calculated and Unique Identifier columns.
@@ -31,7 +31,7 @@ Guidance for Import models also applies to the other storage modes. You should a
 
 ### Direct Lake mode
 
-**Direct Lake** allows querying data directly from a Microsoft Fabric lakehouse or warehouse without storing it in a semantic model, making it ideal for handling large volumes of data. This mode is optimized for quickly loading data into memory from Delta tables in Microsoft Fabric. While it offers the advantage of quick access to large data volumes, it requires the setup of a lakehouse or warehouse, and Delta tables and might need to be tuned for optimal performance.
+**Direct Lake** allows querying data directly from a Microsoft Fabric lakehouse or warehouse without storing it in a semantic model, making it ideal for handling large volumes of data. This mode is optimized for quickly loading data into memory from Delta tables in Microsoft Fabric. While it offers the advantage of quick access to large data volumes, it requires the setup of a lakehouse or warehouse, and Delta tables might need to be tuned for optimal performance.
 
 **Optimization Tips**:
 

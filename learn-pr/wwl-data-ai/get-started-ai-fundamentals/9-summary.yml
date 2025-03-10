@@ -5,13 +5,13 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Summary
-  description: "Summary"
-  ms.date: 10/03/2024
+  description: "Review what you've learned about AI and find resources to learn more."
+  ms.date: 02/24/2025
   author: wwlpublish
-  ms.author: sheryang
+  ms.author: gmalc
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/9-summary.md)]

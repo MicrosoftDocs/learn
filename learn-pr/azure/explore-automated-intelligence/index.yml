@@ -24,6 +24,7 @@ abstract: |
   "***Produced in partnership with the University of Oxford – Ajit Jaokar Artificial Intelligence: Cloud and Edge Implementations course***"
 prerequisites: None
 iconUrl: /training/achievements/generic-badge.svg
+hidden: true
 levels: 
 - beginner
 roles: 

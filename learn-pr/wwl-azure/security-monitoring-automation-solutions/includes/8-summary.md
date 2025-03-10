@@ -1,1 +1,0 @@
-In this module, you learned how to configure and manage security monitoring and automation solutions, including monitoring security events using Azure Monitor, configuring data connectors in Microsoft Sentinel, creating custom analytics rules, evaluating alerts and incidents, and implementing automation to enhance security incident response and management.

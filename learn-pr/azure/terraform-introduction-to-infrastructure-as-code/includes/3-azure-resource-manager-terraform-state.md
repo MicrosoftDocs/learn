@@ -6,7 +6,7 @@ This unit covers the difference between Azure Resource Manager and Terraform sta
 
 ### Azure Resource Manager
 
-Azure Resource Manager is the service that's used to deploy and manage resources in Azure with Bicep or ARM templates. You can use Resource Manager to create, update, and delete resources in your Azure subscription. It expects a declarative template that it translates that into a set of idempotent commands to create or update your resources.
+Azure Resource Manager is the service that's used to deploy and manage resources in Azure with Bicep or ARM templates. You can use Resource Manager to create, update, and delete resources in your Azure subscription. It expects a declarative template that it translates into a set of idempotent commands to create or update your resources.
 
 ### Terraform State
 

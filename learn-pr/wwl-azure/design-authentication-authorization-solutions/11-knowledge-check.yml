@@ -2,9 +2,11 @@
 uid: learn.wwl.design-authentication-authorization-solutions.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/05/2024
+  ms.date: 02/18/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

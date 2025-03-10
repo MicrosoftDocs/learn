@@ -14,7 +14,7 @@ Cmdlets are the fundamental components of commands. There are thousands of  Wind
 
 #### Cmdlet verbs
 
-The verb portion of the cmdlet name indicates what the cmdlet does. There is a set of approved verbs that cmdlet creators use, which provides consistency in cmdlet names. Common verbs are described in the following table.
+The verb portion of the cmdlet name indicates what the cmdlet does. There's a set of approved verbs that cmdlet creators use, which provides consistency in cmdlet names. Common verbs are described in the following table.
 
 |Verb|Explanation|
 |--|--|
@@ -30,7 +30,7 @@ The noun portion of the cmdlet name indicates what kinds of resources or objects
 
 #### Parameter format
 
-Parameters modify the actions that a cmdlet performs. Each cmdlet can have no parameters, one parameter, or many parameters. Parameter names begin with a dash (-). A space separates the value that you want to pass from the parameter name. If the value that you are passing contains spaces, you will need to enclose the text in quotation marks. Some parameters accept multiple values, which are separated by commas and no spaces.
+Parameters modify the actions that a cmdlet performs. Each cmdlet can have no parameters, one parameter, or many parameters. Parameter names begin with a dash (-). A space separates the value that you want to pass from the parameter name. If the value that you're passing contains spaces, you'll need to enclose the text in quotation marks. Some parameters accept multiple values, which are separated by commas and no spaces.
 
 #### Examples
 You can study the following examples to help determine how you could use Windows PowerShell to perform common administrative tasks. The following command displays a list of running services.  
@@ -77,7 +77,7 @@ The ISE is a fully graphical environment that provides a script editor, debuggin
 
 #### Panes
 
-The ISE offers two main panes: a Script pane (or script editor) and the Console pane. You can position these one above the other or side-by-side in a two-pane layout. You can also maximize one pane and switch back and forth between the panes. By default, a Command Add-on pane also displays, which enables you to search for or browse available commands, and review and fill in parameters for a command you select. There is also a floating Command window that provides the same functionality.
+The ISE offers two main panes: a Script pane (or script editor) and the Console pane. You can position these one above the other or side-by-side in a two-pane layout. You can also maximize one pane and switch back and forth between the panes. By default, a Command Add-on pane also displays, which enables you to search for or browse available commands, and review and fill in parameters for a command you select. There's also a floating Command window that provides the same functionality.
 
 #### Customizing the view
 
@@ -97,8 +97,8 @@ A key goal of Windows PowerShell remoting is to enable batch administration, whi
 | Method               | Description                                                  |
 | -------------------- | ------------------------------------------------------------ |
 | One-to-One remoting  | In the One-to-One remoting scenario, (also known as *interactive remoting*), you connect to a single remote computer and run Windows PowerShell commands on it, exactly as if you had signed in to the computer and opened a Windows PowerShell window. |
-| One-to-Many remoting | In the One-to-Many remoting scenario, (also known as *fan*-*out* *remoting*), you issue a command that will be executed on one or more remote computers in parallel. You are not working with each remote computer interactively. Instead, your commands are issued and executed in a batch, and the results are returned to your computer for your use. |
-| Many-to-One remoting | In the Many-to-One remoting scenario, (also known as *fan-in* *remoting*), multiple administrators make remote connections to a single computer. Typically, those administrators will have differing permissions on the same remote computer and might be working in a restricted Windows PowerShell session. |
+| One-to-Many remoting | In the One-to-Many remoting scenario, (also known as *fan*-*out* *remoting*), you issue a command that is executed on one or more remote computers in parallel. You aren't working with each remote computer interactively. Instead, your commands are issued and executed in a batch, and the results are returned to your computer for your use. |
+| Many-to-One remoting | In the Many-to-One remoting scenario, (also known as *fan-in* *remoting*), multiple administrators make remote connections to a single computer. Typically, those administrators have differing permissions on the same remote computer and might be working in a restricted Windows PowerShell session. |
 
 > [!CAUTION]
 > When you run commands on multiple computers, be aware of the differences between the remote computers, such as differences in operating systems, file system structures, and system registries.

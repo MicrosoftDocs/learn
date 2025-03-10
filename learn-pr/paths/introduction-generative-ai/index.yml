@@ -4,7 +4,7 @@ metadata:
   title: "Microsoft Azure AI Fundamentals: Generative AI"
   description: Learn 
   brand: azure
-  ms.date: 07/26/2023
+  ms.date: 02/05/2025
   author: sherzyang
   ms.author: sheryang
   ms.topic: learning-path
@@ -12,12 +12,11 @@ title: "Microsoft Azure AI Fundamentals: Generative AI"
 summary: |
   Generative AI is a form of artificial intelligence in which models are trained to generate new original content based on natural language input. In other words, you can describe a desired output in normal everyday language, and the model can respond by creating appropriate text, image, code, and more. 
 
-  Take this learning path to get started with generative AI. In it, you'll:
-  - Understand how language models form the foundation of generative AI
-  - Describe how Azure AI Studio provides access to the latest generative AI technology
-  - Understand how generative AI applications, such as copilots, support efficiencies
-  - Describe copilot prompts and responses 
-  - Describe how Microsoft's responsible AI principles drive ethical AI advancements
+  Take this learning path to get started with generative AI. In it, you'll learn how to:
+  - Understand core concepts of generative AI
+  - Prepare for an AI development project
+  - Describe considerations and practices for responsible generative AI
+  - Build an AI agent using Azure AI Foundry
 prerequisites: Familiarity with Azure and the Azure portal.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
@@ -34,7 +33,8 @@ subjects:
   - cloud-computing
 modules:
 - learn.wwl.fundamentals-generative-ai
-- learn.wwl.introduction-to-azure-ai-studio
+- learn.wwl.prepare-azure-ai-development
 - learn.wwl.responsible-ai-studio
+- learn.wwl.ai-agent-fundamentals
 trophy:
   uid: learn.intro-generative-ai.trophy

@@ -2,11 +2,9 @@
 uid: learn.wwl.explore-azure-networking.explore-virtual-network-connectivity
 title: Explore virtual network connectivity
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore virtual network connectivity
   description: "Explore methods for establish direct connectivity to an Azure virtual network from a physical computer or virtual machine not hosted in Azure."
-  ms.date: 10/03/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

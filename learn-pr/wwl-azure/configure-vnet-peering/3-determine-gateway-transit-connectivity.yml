@@ -2,11 +2,9 @@
 uid: learn.wwl.configure-vnet-peering.determine-gateway-transit-connectivity
 title: Determine gateway transit and connectivity
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Determine gateway transit and connectivity
   description: "Determine gateway transit and connectivity"
-  ms.date: 04/09/2024
+  ms.date: 12/13/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

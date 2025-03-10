@@ -28,7 +28,7 @@ Here's' an example route table, before enabling a Service Endpoint.
 |  Default   |  Active   |     10.1.1.0/24      |       VNet        |
 |  Default   |  Active   |      0.0.0.0./0      |     Internet      |
 |  Default   |  Active   |      10.0.0.0/8      |       None        |
-|  Default   |  Active   |     100.64.0.0./     |       None        |
+|  Default   |  Active   |     100.64.0.0/10     |       None        |
 |  Default   |  Active   |    192.168.0.0/16    |       None        |
 
 Here's an example route table after you add two Service Endpoints to the virtual network.
@@ -38,7 +38,7 @@ Here's an example route table after you add two Service Endpoints to the virtual
 |  Default   |  Active   |       10.1.1.0/24       |             VNet              |
 |  Default   |  Active   |       0.0.0.0./0        |           Internet            |
 |  Default   |  Active   |       10.0.0.0/8        |             None              |
-|  Default   |  Active   |      100.64.0.0./       |             None              |
+|  Default   |  Active   |      100.64.0.0/10       |             None              |
 |  Default   |  Active   |     192.168.0.0/16      |             None              |
 |  Default   |  Active   | 20.38.106.0/23, 10 more | VirtualNetworkServiceEndpoint |
 |  Default   |  Active   |  20.150.2.0/23, 9 more  | VirtualNetworkServiceEndpoint |
@@ -64,8 +64,6 @@ In the [service endpoint tutorial](/azure/virtual-network/tutorial-restrict-netw
 A service tag represents a group of IP address prefixes from a given Azure service. Microsoft manages the address prefixes encompassed by the service tag and automatically updates the service tag as addresses change, minimizing the complexity of frequent updates to network security rules.
 
 You can use service tags to define network access controls on network security groups or Azure Firewall. Use service tags in place of specific IP addresses when you create security rules. By specifying the service tag name, such as API Management, in the appropriate source or destination field of a rule, you can allow or deny the traffic for the corresponding service.
-
-As of March 2021, you can also use Service Tags in place of explicit IP ranges in user defined routes. This feature is currently in Public Preview.
 
 You can use service tags to achieve network isolation and protect your Azure resources from the general Internet while accessing Azure services that have public endpoints. Create inbound/outbound network security group rules to deny traffic to/from Internet and allow traffic to/from AzureCloud or other available service tags of specific Azure services.
 

@@ -2,14 +2,14 @@
 uid: learn.wwl.turn-insight-into-action-combine-sap-other-data.explore-azure-synapse-studio
 title: Explore Azure Synapse Studio
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Azure Synapse Studio
-  description: "Explore Azure Synapse Studio"
-  ms.date: 03/19/2024
+  description: "Host data and analytic capabilities for your business scenario with Azure Synapse Studio."
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/3-explore-azure-synapse-studio.md)]

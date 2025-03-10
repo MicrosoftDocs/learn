@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Connect hybrid machines to Azure using a deployment script
   description: "Connect hybrid machines to Azure using a deployment script"
-  ms.date: 06/11/2024
+  ms.date: 02/14/2025
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit

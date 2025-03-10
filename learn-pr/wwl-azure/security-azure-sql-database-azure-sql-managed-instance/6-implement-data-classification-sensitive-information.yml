@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Implement data classification of sensitive information by using the Microsoft Purview governance portal
   description: "Implement data classification of sensitive information by using the Microsoft Purview governance portal"
-  ms.date: 05/29/2024
+  ms.date: 02/24/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

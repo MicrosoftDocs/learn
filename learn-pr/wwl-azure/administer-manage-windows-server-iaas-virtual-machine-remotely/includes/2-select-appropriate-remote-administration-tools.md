@@ -1,5 +1,3 @@
-
-
 At Contoso, the server operations team is used to performing remote management of their on-premises servers. They understand that it's more efficient to remotely administer and maintain servers than it is to interactively administer them using locally installed tools. They realize that for the Windows IaaS VMs being deployed in Azure, they must rely solely on remote management to administer and maintain cloud-based resources. As lead engineer, you've set up a short presentation on the available management tools for the new hybrid environment that exists at Contoso.
 
 ## What is the Azure portal?
@@ -32,7 +30,7 @@ The Azure hybrid services tool in Windows Admin Center consolidates all the inte
 [![A screenshot of Windows Admin Center. The administrator has selected the Azure hybrid services node.](../media/m23-windows-admin-center.png)](../media/m23-windows-admin-center.png#lightbox)
 
 > [!IMPORTANT]
-> Windows Admin Center requires connectivity to your Azure VMs. you'll need to either assign a public IP address to a VM, set up a gateway, or establish a virtual private network (VPN) connection from the Windows Admin Center computer to Azure.
+> Windows Admin Center requires connectivity to your Azure VMs. You'll need to either assign a public IP address to a VM, set up a gateway, or establish a virtual private network (VPN) connection from the Windows Admin Center computer to Azure.
 
 ## What is Azure PowerShell?
 

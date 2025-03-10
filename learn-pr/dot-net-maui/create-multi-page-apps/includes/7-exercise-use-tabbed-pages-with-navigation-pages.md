@@ -11,7 +11,7 @@ In the astronomy app, you're asked to add pages that enable the user to select d
 1. Use Visual Studio to open the **Astronomy.sln** solution or the folder in Visual Studio Code.
 
     > [!NOTE]
-    > This solution contains pages that aren't in the version of the app you used in the previous exercises.
+    > This solution contains pages and styles that aren't in the version of the app you used in the previous exercises.
 
 1. In the Solution Explorer window, open the **Pages** folder. In addition to the **MoonPhasePage**, **SunrisePage**, and **AboutPage** files, this folder contains two more pages:
 

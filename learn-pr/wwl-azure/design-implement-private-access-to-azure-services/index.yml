@@ -1,12 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.design-implement-private-access-to-azure-services
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design and implement private access to Azure Services
   description: "You learn to design and implement private access to Azure Services with Azure Private Link, and virtual network service endpoints."
-  ms.date: 12/02/2024
+  ms.date: 01/30/2025
   author: wwlpublish
-  ms.author: jileary
+  ms.author: cynthist
   ms.topic: module
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: azure

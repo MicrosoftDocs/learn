@@ -1,4 +1,3 @@
-
 ## Configure Device discovery
 
 When accessing your Microsoft Defender portal settings for Endpoints for the first time, the first step is to configure Device discovery. You must be a global administrator or security administrator for the tenant.
@@ -33,7 +32,7 @@ In general, to onboard devices to the service:
 
 - Run a detection test to verify that the devices are properly onboarded and reporting to the service
 
-<!--- >>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr?rel=0] -->
+<!--- >>[!VIDEO https://learn-video.azurefd.net/vod/player?id=2524ee5d-6a5f-482c-8f69-dc3792577c60] -->
 
 ## Interactive Lab Simulation
 
@@ -67,4 +66,3 @@ As you can see, there are many configuration options.
 ## Offboarding devices
 
 In Settings, Endpoints, Device Management, Offboarding, select operating system dropdown to see the direction to offboard devices.
-

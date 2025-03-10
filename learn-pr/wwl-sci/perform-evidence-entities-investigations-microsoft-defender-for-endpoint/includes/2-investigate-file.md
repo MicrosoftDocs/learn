@@ -66,7 +66,7 @@ The deep analysis results are matched against threat intelligence, and any match
 
 Use the deep analysis feature to investigate the details of any file, usually during an investigation of an alert or for any other reason where you suspect malicious behavior. This feature is available within the Deep analysis tab on the file's profile page.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4aAYy?rel=0]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=c6c613b8-28dc-40cc-926d-8469472ebdfb]
 
 Submit for deep analysis is enabled when the file is available in the Defender for Endpoint backend sample collection, or if it was observed on a Windows 10 device that supports submitting to deep analysis.  You can also manually submit a sample through the Microsoft Security Center Portal if the file wasn't observed on a Windows 10 device and wait for Submit for deep analysis button to become available.
 
@@ -228,4 +228,3 @@ The Action center provides information on actions that were taken on a device or
 - Device isolation
 
 All other related details are also shown, for example, submission date/time, submitting user, and if the action succeeded or failed.
-

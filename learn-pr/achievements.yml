@@ -5,11 +5,21 @@ achievements:
 #  title: Module template
 #  summary: Module template badge.
 #  iconUrl: http://via.placeholder.com/120x120
+- uid: learn.send-crop-weather-alerts.badge
+  type: badge
+  title: Use Twilio and Azure Maps to receive text message weather alerts 
+  summary: In this module, you'll create an application that allows farmers to use text messaging to set up temperature alerts. These alerts can help farmers know when to plant, when to water, or when to protect their crops. 
+  iconUrl: /training/achievements/advocates/send-crop-weather-alerts.svg 
 - uid: learn.monitor-vm-performance-using-azure-monitor-for-vms.badge
   type: badge
   title: Monitor performance of virtual machines by using Azure Monitor VM Insights
   summary: Monitor performance of virtual machines by using Azure Monitor VM Insights
   iconUrl: /training/achievements/monitor-performance-using-azure-monitor-for-vms.svg
+- uid: learn.intro-to-azure-government.badge
+  type: badge
+  title: Introduction to Azure Government
+  summary: Introduction to Azure Government
+  iconUrl: /training/achievements/intro-to-azure-government.svg
 - uid: learn.make-your-virtual-machines-highly-available.badge
   type: badge
   title: Make your virtual machines highly available
@@ -24,12 +34,52 @@ achievements:
   type: badge 
   title: Introduction to WebXR with Babylon.jss 
   summary: In this learning module, we'll introduce you to the core concepts of building Mixed Reality experiences with Babylon.js. We'll create a simple WebXR app that can be run cross-platform. 
-  iconUrl: /training/achievements/build-mixed-reality-with-babylonjs.svg  
+  iconUrl: /training/achievements/build-mixed-reality-with-babylonjs.svg
+- uid: learn.azure-intro-to-blockchain.badge
+  type: badge
+  title: Introduction to blockchain on Azure
+  summary: Discover how blockchain protocols enable trust. Learn to assess scenarios for when to use blockchain and decide if it's right for your solution.
+  iconUrl: /training/achievements/intro-to-blockchain.svg
 - uid: learn.quantum.qsharp-explore-key-concepts-quantum-computing.badge
   type: badge
   title: Explore the key concepts of quantum computing by using Q#
   summary: Explore the key concepts of quantum computing by using Q#
   iconUrl: /training/achievements/quantum/qsharp-explore-key-concepts-quantum-computing.svg
+- uid: learn.iot.manage-monitor-devices-iot-hub-azure-monitor.trophy
+  type: trophy
+  title: Manage and monitor IoT devices by using Azure IoT Hub and Azure Monitor
+  summary: Manage and monitor IoT devices by using Azure IoT Hub and Azure Monitor
+  iconUrl: /training/achievements/iot/manage-monitor-devices-iot-hub-azure-monitor.svg
+- uid: learn.wwl.explore-iot-hub-monitoring.badge
+  type: badge
+  title: Guided project - Explore Azure IoT Hub monitoring
+  summary: Guided project - Explore Azure IoT Hub monitoring
+  iconUrl: /training/achievements/iot-hub-monitoring.svg
+- uid: learn.wwl.troubleshoot-device-connections-communication.badge
+  type: badge
+  title: Troubleshoot Azure IoT Hub device connections and communication
+  summary: Troubleshoot Azure IoT Hub device connections and communication
+  iconUrl: /training/achievements/device-connection-communication.svg
+- uid: learn.wwl.examine-azure-iot-solution-monitoring-logging.badge
+  type: badge
+  title: Examine Azure IoT Hub monitoring and logging
+  summary: Examine Azure IoT Hub monitoring and logging
+  iconUrl: /training/achievements/azure-iot-monitoring-logging.svg
+- uid: learn.wwl.examine-approaches-to-device-management-at-scale.badge
+  type: badge
+  title: Examine approaches to device management at scale using Azure IoT Hub
+  summary: Examine approaches to device management at scale using Azure IoT Hub
+  iconUrl: /training/achievements/device-management-at-scale.svg
+- uid: learn.wwl.examine-device-management-concepts-methods.badge
+  type: badge
+  title: Examine device management concepts and methods for Azure IoT Hub
+  summary: Examine device management concepts and methods for Azure IoT Hub
+  iconUrl: /training/achievements/device-management-examine.svg
+- uid: learn.wwl.examine-device-management-tools.badge
+  type: badge
+  title: Evaluate device management tools for Azure IoT Hub
+  summary: Evaluate device management tools for Azure IoT Hub
+  iconUrl: /training/achievements/device-management-tools.svg
 - uid: learn.quantum.use-qsharp-libraries.badge
   type: badge
   title: Use the Q# libraries
@@ -90,6 +140,31 @@ achievements:
   title: Introduction to Azure solutions
   summary: Introduction to Azure solutions
   iconUrl: /training/achievements/intro-to-azure-areas-and-solutions.svg
+- uid: learn.wwl.examine-device-provisioning-service-terms-concepts.badge
+  type: badge
+  title: Introduction to Azure IoT Hub Device Provisioning Service
+  summary: Introduction to Azure IoT Hub Device Provisioning Service
+  iconUrl: /training/achievements/provisioning-device-terms-conditions.svg
+- uid: learn.wwl.examine-device-provisioning-service-coding-tools-access.badge
+  type: badge
+  title: Examine IoT Hub Device Provisioning Service coding tools and access
+  summary: Examine IoT Hub Device Provisioning Service coding tools and access
+  iconUrl: /training/achievements/provisioning-device-service.svg
+- uid: learn.wwl.examine-device-provisioning-lifecycle-tasks.badge
+  type: badge
+  title: Examine IoT Hub Device Provisioning Service lifecycle tasks
+  summary: Examine IoT Hub Device Provisioning Service lifecycle tasks
+  iconUrl: /training/achievements/provisioning-lifecycle-device.svg
+- uid: learn.wwl.explore-group-enrollment-tasks.badge
+  type: badge
+  title: Guided project - Provision IoT devices securely and at scale with IoT Hub Device Provisioning Service
+  summary: Guided project - Provision IoT devices securely and at scale with IoT Hub Device Provisioning Service
+  iconUrl: /training/achievements/enrollment-group-task.svg
+- uid: learn.wwl.provision-iot-devices-at-scale-by-using-device.trophy
+  type: trophy
+  title: Provision IoT devices at scale by using Azure IoT Hub Device Provisioning Service (DPS)
+  summary: Provision IoT devices at scale by using Azure IoT Hub Device Provisioning Service (DPS)
+  iconUrl: /training/achievements/iot-provisions-device-scale.svg
 - uid: learn-xamarin.university-veteran.badge
   type: badge
   title: Xamarin University Veteran
@@ -297,6 +372,11 @@ achievements:
   title: Explore Azure service level agreements (SLAs)
   summary: You're placing an application into a cloud-providers hardware versus on-premises.  How reliable will your solution be?
   iconUrl: /training/achievements/explore-azure-service-level-agreements.svg
+- uid: learn.wwl.get-started-openai.badge   
+  type: badge   
+  title: Get started with Azure OpenAI Service   
+  summary: This module provides engineers with the skills to begin building an Azure OpenAI Service solution.   
+  iconUrl: /training/achievements/generic-badge.svg 
 - uid: learn.wwl.examine-service-lifecycle-azure.badge
   type: badge
   title: Examine service lifecycle in Azure
@@ -442,12 +522,12 @@ achievements:
   title: Predict  classes with a knn classifier
   summary: Predict  classes with a knn classifier
   iconUrl: /training/achievements/student-evangelism/predict-classes-with-knn-classifier.svg
-- uid: learn.data-ai.recognize-voices-with-speaker-recognition
+- uid: learn.data-ai.recognize-voices-with-speaker-recognition.badge
   type: badge
   title: Recognize specific voices with the Speaker Recognition APIs in Azure Cognitive Services
   summary: Learn how to use the Speaker Recognition APIs to identify specific people through their voices.
   iconUrl: /training/achievements/data-ai/recognize-voices-with-speaker-recognition.svg
-- uid: learn.data-ai.intro-to-azure-dsvm
+- uid: learn.data-ai.intro-to-azure-dsvm.badge
   type: badge
   title: Introduction to the Azure Data Science Virtual Machine
   summary: Azure provides some preconfigured virtual machine images specifically designed for data science.  Learn how you can use these to get a jump start on your data science work.
@@ -457,12 +537,12 @@ achievements:
   title: Synthesize Text Input to Speech
   summary: Synthesize Text Input to Speech
   iconUrl: /training/achievements/synthesize-text-input-speech.svg
-- uid: learn.csc.space-jam-cloud-skills-challenge # Cloud Skills Challenge achievement (manually awarded via paspier)
+- uid: learn.csc.space-jam-cloud-skills-challenge.badge # Cloud Skills Challenge achievement (manually awarded via paspier)
   type: badge
   title: Space Jam - A New Legacy Cloud Skills Challenge
   summary: Space Jam - A New Legacy Cloud Skills Challenge
   iconUrl: /training/achievements/csc/CloudSkillsChallenge-SpaceJam.svg
-- uid: learn.csc.space-rocks-cloud-skills-challenge # Cloud Skills Challenge achievement (manually awarded via paspier)
+- uid: learn.csc.space-rocks-cloud-skills-challenge.badge # Cloud Skills Challenge achievement (manually awarded via paspier)
   type: badge
   title: Space Rocks! Cloud Skills Challenge
   summary: Space Rocks! Cloud Skills Challenge
@@ -492,102 +572,102 @@ achievements:
   title: Explore AI solution development with data science services in Azure
   summary: Learn the tools available in Azure for data scientists to explore, analyze, and process data with machine learning.
   iconUrl: /training/achievements/data-ai/explore-data-science-tools-in-azure-trophy.svg
-- uid: learn.performing-model-training-evaluation-and-selection-with-azure-databricks
+- uid: learn.performing-model-training-evaluation-and-selection-with-azure-databricks.badge
   type: badge
   title: Train, evaluate, and select machine-learning models with Azure Databricks
   summary: Training a machine-learning model to have high predictive accuracy is crucial if you're a data scientist. This module focuses on basic and advanced techniques for training a machine-learning model and how these techniques are supported by Azure Databricks.
   iconUrl: /training/achievements/performing-model-training-evaluation-and-selection-with-azure-databricks.svg
-- uid: learn.create-data-visualizations-using-azure-databricks-and-power-bi
+- uid: learn.create-data-visualizations-using-azure-databricks-and-power-bi.badge
   type: badge
   title: Create data visualizations by using Azure Databricks and Power BI
   summary: Use Azure Databricks to create basic to advanced visualizations by using built-in charts and third-party libraries such as Matplotlib. Connect your Azure Databricks data to Power BI to create business-intelligence dashboards that can be shared with others.
   iconUrl: /training/achievements/create-data-visualizations-using-azure-databricks-and-power-bi.svg
-- uid: learn.performing-exploratory-data-analysis-with-azure-databricks
+- uid: learn.performing-exploratory-data-analysis-with-azure-databricks.badge
   type: badge
   title: Perform exploratory data analysis with Azure Databricks
   summary: Learn the fundamentals of using Azure Databricks notebooks to do basic and advanced exploratory data analysis.
   iconUrl: /training/achievements/performing-exploratory-data-analysis-with-azure-databricks.svg
-- uid: learn.intro-to-azure-databricks
+- uid: learn.intro-to-azure-databricks.badge
   type: badge
   title: Intro to Azure Databricks
   summary: Learn the fundamentals of Azure Databricks and Apache Spark notebooks.
   iconUrl: /training/achievements/intro-to-azure-databricks.svg
-- uid: learn.read-and-write-data-using-azure-databricks
+- uid: learn.read-and-write-data-using-azure-databricks.badge
   type: badge
   title: Read and write data using Azure Databricks
   summary: Use Azure Databricks to work with multiple data sources, combining inputs from files and data stores such as Azure SQL Database, and transform and store that data for advanced analytics.
   iconUrl: /training/achievements/read-and-write-data-using-azure-databricks.svg
-- uid: learn.performing-text-analytics-with-azure-databricks
+- uid: learn.performing-text-analytics-with-azure-databricks.badge
   type: badge
   title: Perform text analytics with Azure Databricks
   summary: In this module, you investigate techniques for developing machine learning models used in text analytics. You do this by applying two different text analytics scenarios demonstrating some of its most important aspects - movie classification and claim classification.
   iconUrl: /training/achievements/performing-text-analytics-with-azure-databricks.svg
-- uid: learn.data-ingestion-with-azure-data-factory
+- uid: learn.data-ingestion-with-azure-data-factory.badge
   type: badge
   title: Data ingestion with Azure data factory
   summary: In this module, you use Azure Databricks to work with multiple data sources. Learn how to combine inputs from files and data stores, such as Azure SQL Database, and transform and store that data for advanced analytics.
   iconUrl: /training/achievements/data-ingestion-with-azure-data-factory.svg
-- uid: learn.deep-learning-in-azure-databricks
+- uid: learn.deep-learning-in-azure-databricks.badge
   type: badge
   title: Deep learning with Azure Databricks
   summary: In this module, you investigate techniques for developing machine-learning models based on neural networks. The main purpose of this module is to build your understanding of deep learning.
   iconUrl: /training/achievements/deep-learning-in-azure-databricks.svg
-- uid: learn.streaming-in-azure-databricks
+- uid: learn.streaming-in-azure-databricks.badge
   type: badge
   title: Work with streaming data in Azure Databricks
   summary: Learn how to analyze and process streaming data by using Azure Event Hubs, Spark Structured Streaming, and Databricks Delta.
   iconUrl: /training/achievements/streaming-in-azure-databricks.svg
-- uid: learn.perform-basic-data-transformation-in-azure-databricks
+- uid: learn.perform-basic-data-transformation-in-azure-databricks.badge
   type: badge
   title: Perform basic data transformations in Azure Databricks
   summary: Learn the tools and techniques to do basic data transformations in Azure Databricks.
   iconUrl: /training/achievements/perform-basic-data-transformation-in-azure-databricks.svg
-- uid: learn.create-data-pipelines-using-databricks-delta
+- uid: learn.create-data-pipelines-using-databricks-delta.badge
   type: badge
   title: Create data pipelines by using Databricks Delta
   summary: Learn how to use Databricks Delta in Azure to manage the flow of data (a data pipeline) to and from a data lake. This system includes mechanisms to create, append, and upsert data to Apache Spark tables, taking advantage of built-in reliability and optimizations. Learn how Databricks Delta architecture helps speed up reads, and how it lets multiple writers modify a dataset simultaneously and see consistent views. Finally, implement a Lambda Architecture by processing batch and streaming data with Delta.
   iconUrl: /training/achievements/create-data-pipelines-using-databricks-delta.svg
-- uid: learn.understanding-the-sql-dw-connector-with-azure-databricks
+- uid: learn.understanding-the-sql-dw-connector-with-azure-databricks.badge
   type: badge
   title: Access SQL Data Warehouse instances with Azure Databricks
   summary: Learn how to access Azure SQL Data Warehouse from Azure Databricks by using the SQL Data Warehouse connector. This allows you to use Apache Spark with Azure Blob storage and PolyBase in SQL Data Warehouse to efficiently transfer large volumes of data between a Databricks cluster and a SQL Data Warehouse instance.
   iconUrl: /training/achievements/understanding-the-sql-dw-connector-with-azure-databricks.svg
-- uid: learn.perform-advanced-data-transformation-in-azure-databricks
+- uid: learn.perform-advanced-data-transformation-in-azure-databricks.badge
   type: badge
   title: Perform advanced data transformation data in Azure Databricks
   summary: Learn how to perform advanced data transformations in Azure Databricks, and encapsulate transformation logic through user-defined functions (UDFs) and libraries.
   iconUrl: /training/achievements/perform-advanced-data-transformation-in-azure-databricks.svg
-- uid: learn.data-ai.create-an-experiment-in-ml-studio
+- uid: learn.data-ai.create-an-experiment-in-ml-studio.badge
   type: badge
   title: Create an Experiment in Azure Machine Learning studio
   summary: Learn how to use Microsoft Azure Machine Learning studio to create an experiment, test it, and then publish it as a web service.
   iconUrl: /training/achievements/data-ai/create-an-experiment-in-ml-studio.svg
-- uid: learn.data-ai.create-machine-learning-studio-account
+- uid: learn.data-ai.create-machine-learning-studio-account.badge
   type: badge
   title: Create an Azure Machine Learning studio account
   summary: Get a high-level overview of machine learning and Microsoft Azure Machine Learning studio.
   iconUrl: /training/achievements/data-ai/create-machine-learning-studio-account.svg
-- uid: learn.data-ai.choose-azure-data-science-option
+- uid: learn.data-ai.choose-azure-data-science-option.badge
   type: badge
   title: Choose the Data Science service in Azure you need
   summary: Choose the Data Science service in Azure you need
   iconUrl: /training/achievements/data-ai/choose-data-science-option-in-azure-badge.svg
-- uid: learn.data-ai.intro-to-data-science-in-azure
+- uid: learn.data-ai.intro-to-data-science-in-azure.badge
   type: badge
   title: Introduction to Data Science in Azure
   summary: In this module, you learn about the Data Science process from end to end.  You see that there are several specialized roles involved.
   iconUrl: /training/achievements/data-ai/intro-to-data-science-in-azure-badge.svg
-- uid: learn.data-ai.explore-azure-dsvm-types
+- uid: learn.data-ai.explore-azure-dsvm-types.badge
   type: badge
   title: Explore the types of Azure Data Science Virtual Machines
   summary: You learn about the types of Azure Data Science Virtual Machines (DSVM) and when to use each type.  You learn about the Windows-based and Linux-based DSVMs which each support different needs.
   iconUrl: /training/achievements/data-ai/explore-azure-dsvm-types-badge.svg
-- uid: learn.data-ai.provision-and-use-azure-dsvm
+- uid: learn.data-ai.provision-and-use-azure-dsvm.badge
   type: badge
   title: Provision and use an Azure Data Science Virtual Machine
   summary: Provision and use an Azure Data Science Virtual Machine
   iconUrl: /training/achievements/data-ai/provision-and-use-azure-dsvm-badge.svg
-- uid: learn.interactive-deep-learning
+- uid: learn.interactive-deep-learning.badge
   type: badge
   title: Interactive deep learning with Jupyter, Docker, and PyTorch on the Data Science Virtual Machine
   summary: Learn to train deep learning models with Jupyter, PyTorch, and the Data Science Virtual Machine.
@@ -607,52 +687,52 @@ achievements:
   title: Describe Microsoft security and compliance principles
   summary: Describe Microsoft security and compliance principles
   iconUrl: /training/achievements/describe-microsoft-security-and-compliance-principles.svg
-- uid: learn.azdo.recommend-system-feedback-mechanisms
+- uid: learn.azdo.recommend-system-feedback-mechanisms.badge
   type: badge
   title: Recommend and design system feedback mechanisms
   summary: Learn how surveys and application analytics create a feedback loop that helps you understand the voice of the customer.
   iconUrl: /training/achievements/azure-devops/recommend-system-feedback-mechanisms.svg
-- uid: learn.azdo.manage-database-changes-in-azure-pipelines
+- uid: learn.azdo.manage-database-changes-in-azure-pipelines.badge
   type: badge
   title: Manage database changes in Azure Pipelines
   summary: Use a release approval in Azure Pipelines to help coordinate database schema changes between developers and database administrators.
   iconUrl: /training/achievements/azure-devops/manage-database-changes-in-azure-pipelines.svg
-- uid: learn.azdo.provision-databases-azure-pipelines
+- uid: learn.azdo.provision-databases-azure-pipelines.badge
   type: badge
   title: Provision databases in Azure Pipelines
   summary: Learn how to automatically provision Azure SQL Database in Azure Pipelines by using an Azure Resource Manager template.
   iconUrl: /training/achievements/azure-devops/provision-database-azure-pipelines.svg
-- uid: learn.azdo.provision-infrastructure-azure-pipelines
+- uid: learn.azdo.provision-infrastructure-azure-pipelines.badge
   type: badge
   title: Provision infrastructure in Azure Pipelines
   summary: Learn how infrastructure as code enables you to describe and automatically provision the infrastructure that you need for your application.
   iconUrl: /training/achievements/azure-devops/provision-infrastructure-azure-pipelines.svg
-- uid: learn.azdo.configure-infrastructure-azure-pipelines
+- uid: learn.azdo.configure-infrastructure-azure-pipelines.badge
   type: badge
   title: Configure infrastructure in Azure Pipelines
   summary: Run configuration management tools in Azure Pipelines to help keep your infrastructure configured as you need.
   iconUrl: /training/achievements/azure-devops/configure-infrastructure-azure-pipelines.svg
-- uid: learn.azdo.scan-for-vulnerabilities
+- uid: learn.azdo.scan-for-vulnerabilities.badge
   type: badge
   title: Scan code for vulnerabilities in Azure Pipelines
   summary: Scan for potential vulnerabilities in your source code during the build process.
   iconUrl: /training/achievements/azure-devops/scan-code-for-vulnerabilities-in-your-build-pipeline.svg
-- uid: learn.azdo.scan-open-source
+- uid: learn.azdo.scan-open-source.badge
   type: badge
   title: Scan open-source components for vulnerabilities and license ratings in Azure Pipelines
   summary: Scan open-source components for security vulnerabilities and assess their license ratings when your application builds in Azure Pipelines.
   iconUrl: /training/achievements/azure-devops/manage-security-and-compliance-in-your-build-pipeline.svg
-- uid: learn.azdo.automate-deployments-azure-devops
+- uid: learn.azdo.automate-deployments-azure-devops.trophy
   type: trophy
   title: Automate your deployments with Azure DevOps
   summary: Azure DevOps enables you to build, test, and deploy any application to any cloud or on premises. Learn how to combine automation techniques such as infrastructure as code with automated pipelines to provision and configure the infrastructure you need to run your applications and services.
   iconUrl: /training/achievements/azure-devops/automate-deployments-azure-devops.svg
-- uid: learn.azdo.capture-feedback-monitoring
+- uid: learn.azdo.capture-feedback-monitoring.trophy
   type: trophy
   title: Capture feedback and monitoring data to continuously improve your software
   summary: Azure DevOps enables you to build, test, and deploy any application to any cloud or on premises. Learn how to recommend and design system feedback mechanisms, implement a process for routing system feedback to development teams, and optimize feedback mechanisms.
   iconUrl: /training/achievements/azure-devops/capture-feedback-monitoring.svg
-- uid: learn.build-azure-vm-templates
+- uid: learn.build-azure-vm-templates.badge
   type: badge
   title: Build Azure Resource Manager templates
   summary: Learn how Resource Manager templates express your deployments as code, enabling you to deploy faster and more reliably.
@@ -1302,6 +1382,21 @@ achievements:
   title: Integrate AKS with pipelines
   summary: Integrate AKS with pipelines
   iconUrl: /training/achievements/5-integrate-aks-with-pipelines.svg
+- uid: learn.wwl.manage-access-for-azure-stack-hub.badge
+  type: badge
+  title: Manage access for Azure Stack Hub
+  summary: Manage access for Azure Stack Hub
+  iconUrl: /training/achievements/2-manage-access-for-azure-stack-hub.svg
+- uid: learn.wwl.manage-multi-tenancy-for-azure-stack-hub.badge
+  type: badge
+  title: Manage multi-tenancy for Azure Stack Hub
+  summary: Manage multi-tenancy for Azure Stack Hub
+  iconUrl: /training/achievements/1-manage-multi-tenancy-for-azure-stack-hub.svg
+- uid: learn.wwl.manage-identity-access-for-azure-stack-hub.trophy
+  type: trophy
+  title: Manage Identity and Access for Azure Stack Hub
+  summary: Manage Identity and Access for Azure Stack Hub
+  iconUrl: /training/achievements/manage-identity-and-access-for-azure-stack-hub.svg
 - uid: learn.wwl.design-processes-to-capture-analyze-user-feedback.badge
   type: badge
   title: Design processes to capture and analyze user feedback
@@ -1332,6 +1427,41 @@ achievements:
   title: Introduction to Chef and Puppet
   summary: Introduction to Chef and Puppet
   iconUrl: /training/achievements/6-introduction-to-chef-and-puppet.svg
+- uid: learn.wwl.manage-system-health-azure-stack-hub.badge
+  type: badge
+  title: Manage system health on Azure Stack Hub
+  summary: Manage system health on Azure Stack Hub
+  iconUrl: /training/achievements/1-manage-system-health-on-azure-stack-hub.svg
+- uid: learn.wwl.azure-monitor-azure-stack-hub.badge
+  type: badge
+  title: Azure Monitor on Azure Stack Hub
+  summary: Azure Monitor on Azure Stack Hub
+  iconUrl: /training/achievements/2-azure-monitor-on-azure-stack-hub.svg
+- uid: learn.wwl.plan-configure-business-continuity-disaster-recovery-for-azure-stack-hub.badge
+  type: badge
+  title: Plan and configure business continuity and disaster recovery
+  summary: Plan and configure business continuity and disaster recovery
+  iconUrl: /training/achievements/3-plan-configure-business-continuity-disaster-recovery.svg
+- uid: learn.wwl.manage-capacityfor-azure-stack-hub.badge
+  type: badge
+  title: Manage capacity for Azure Stack Hub 
+  summary: Manage capacity for Azure Stack Hub
+  iconUrl: /training/achievements/4-manage-capacity-for-azure-stack-hub.svg
+- uid: learn.wwl.manage-azure-stack-hub-by-using-privileged-endpoints.badge
+  type: badge
+  title: Manage Azure Stack Hub by using privileged endpoints
+  summary: Manage Azure Stack Hub by using privileged endpoints
+  iconUrl: /training/achievements/6-manage-azure-stack-hub-by-using-privileged-endpoints.svg
+- uid: learn.wwl.update-infrastructure-for-azure-stack-hub.badge
+  type: badge
+  title: Update infrastructure for Azure Stack Hub
+  summary: Update infrastructure for Azure Stack Hub
+  iconUrl: /training/achievements/5-update-infrastructure-for-azure-stack-hub.svg
+- uid: learn.wwl.manage-infrastructure-for-azure-stack-hub.trophy
+  type: trophy
+  title: Manage Infrastructure for Azure Stack Hub
+  summary: Manage Infrastructure for Azure Stack Hub
+  iconUrl: /training/achievements/manage-infrastructure-for-azure-stack-hub.svg
 - uid: learn.wwl.manage-alerts-incidents-microsoft-defender-for-endpoints.badge
   type: badge
   title: Manage alerts and incidents in Microsoft Defender for Endpoint
@@ -1407,6 +1537,36 @@ achievements:
   title: Build a .NET Core app for Azure Cosmos DB in Visual Studio Code
   summary: Learn how to create a .NET Core application to store and query data in Azure Cosmos DB by using Visual Studio Code.
   iconUrl: /training/achievements/build-cosmos-db-app-with-vscode.svg
+- uid: learn.wwl.manage-azure-stack-hub-marketplace.badge
+  type: badge
+  title: Manage Azure Stack Hub Marketplace
+  summary: Manage Azure Stack Hub Marketplace
+  iconUrl: /training/achievements/1-manage-azure-stack-hub-marketplace.svg
+- uid: learn.wwl.offer-app-services-resource-provider-for-azure-stack-hub.badge
+  type: badge
+  title: Offer an App Services resource provider  for Azure Stack Hub
+  summary: Offer an App Services resource provider  for Azure Stack Hub
+  iconUrl: /training/achievements/2-offer-an-app-services-resource-provider-for-azure-stack-hub.svg
+- uid: learn.wwl.offer-services-for-azure-stack-hub.badge
+  type: badge
+  title: Offer services for Azure Stack Hub
+  summary: Offer services for Azure Stack Hub
+  iconUrl: /training/achievements/4-offer-services-for-azure-stack-hub.svg
+- uid: learn.wwl.manage-usage-billing-for-azure-stack-hub.badge
+  type: badge
+  title: Manage usage and billing for Azure Stack Hub
+  summary: Manage usage and billing for Azure Stack Hub
+  iconUrl: /training/achievements/5-manage-usage-and-billing-for-azure-stack-hub.svg
+- uid: learn.wwl.provide-services-for-azure-stack-hub.trophy
+  type: trophy
+  title: Provide services for Azure Stack Hub
+  summary: Provide services for Azure Stack Hub
+  iconUrl: /training/achievements/provide-services-for-azure-stack-hub.svg
+- uid: learn.wwl.offer-event-hubs-resource-provider-for-azure-stack-hub.badge
+  type: badge
+  title: Offer an Event Hubs resource provider for Azure Stack Hub
+  summary: Offer an Event Hubs resource provider for Azure Stack Hub
+  iconUrl: /training/achievements/offer-an-event-hubs-resource-provider-for-azure-stack-hub.svg
 - uid: learn.monitor-azure-cosmos-db.badge
   type: badge
   title: Optimize the performance of Azure Cosmos DB by using partitioning and indexing strategies
@@ -1852,12 +2012,12 @@ achievements:
 
     Once you complete this learning path, you'll have a stronger grasp of implementing logic in your C# code.
   iconUrl: /training/achievements/csharp-logic.svg
-- uid: learn.wwl.create-methods-c-sharp-console-applications
+- uid: learn.wwl.create-methods-c-sharp-console-applications.trophy
   type: trophy
   title: Create methods in C# console applications (Get started with C#, Part 5)
   summary: Learn how to create methods for C# console applications. Use parameters and return values to manipulate data across applications. Learn to use named and optional arguments to simplify code.
   iconUrl: /training/achievements/generic-trophy.svg
-- uid: learn.wwl.debug-c-sharp-console-applications
+- uid: learn.wwl.debug-c-sharp-console-applications.trophy
   type: trophy
   title: Debug C# console applications (Get started with C#, Part 6)
   summary: Learn how to debug C# console applications in Visual Studio Code and how to implement exception handling using the try-catch pattern. Configure the C# debugger tools in Visual Studio Code and use the debugger tools to isolate and fix logic issues. Examine the exception types provided by .NET and the properties of exception objects, then implement exception handling and throw customized exception objects.
@@ -2628,6 +2788,11 @@ achievements:
   title: Create an Azure account
   summary: The first step to using Azure is to sign up. You may sign up directly through Azure.com, with the help of a Microsoft representative, or through a partner. If you’re new to Azure, you may sign up for an Azure free account to start exploring with $200 USD free credit and free services.
   iconUrl: /training/achievements/create-azure-account.svg
+- uid: learn.navigate-microsoft-learn-for-educators-school-leaders.badge
+  type: badge
+  title: Navigate Microsoft Learn for Educators and School Leaders
+  summary: Navigate Microsoft Learn for Educators and School Leaders
+  iconUrl: /training/achievements/educator/microsoft-learn-for-educators-pioneer.svg
 - uid: learn.wwl.apl-5001-configure-siem--security-operations-using-microsoft-sentinel.trophy
   type: trophy
   title: Configure SIEM security operations using Microsoft Sentinel
@@ -3103,6 +3268,11 @@ achievements:
   title: Configure Azure Kubernetes Service
   summary: Learn how to configure Azure Kubernetes Service including networking, storage, and scaling.
   iconUrl: /training/achievements/azure-kubernetes-configure.svg
+- uid: learn.azure.cloud-adoption-framework-getting-started.badge
+  type: badge
+  title: Getting started with the Microsoft Cloud Adoption Framework for Azure
+  summary: The Microsoft Cloud Adoption Framework for Azure is a guide to the full lifecycle of cloud adoption. Along your organization's journey to the cloud, you encounter roadblocks that can be easily removed through common approaches that thousands of customers share.
+  iconUrl: /training/achievements/cloud-adoption-framework-getting-started.svg
 - uid: learn.data-ai.azure-for-the-data-engineer.trophy
   type: trophy
   title: Azure for the Data Engineer
@@ -3653,7 +3823,7 @@ achievements:
   title: Build Mixed Reality Apps in Native C# with StereoKit
   summary: By the end of this module, you'll be able to set up, create, and build an application using StereoKit. You'll understand the features of StereoKit through a sample application called StereoKit ink application. You'll also work across OpenXR platforms like HoloLens 2 and Windows Mixed Reality.
   iconUrl: /training/achievements/intro-to-stereokit.svg
-- uid: learn.n-tier-architecture
+- uid: learn.n-tier-architecture.badge
   type: badge
   title: Tour the N-tier architecture style for your application
   summary: Use a Resource Manager template to deploy an application styled in an N-tier architecture, identify key concepts of N-tier architectures, and review best practices for deployments of this style.
@@ -3947,22 +4117,22 @@ achievements:
   title: Configure role-based access control
   summary: Learn how to use role-based access control (RBAC) to ensure resources are protected, but users can still access the resources they need.
   iconUrl: /training/achievements/roles-based-access-control.svg
-- uid: learn.wwl.describe-insider-risk-capabilities-microsoft-365
+- uid: learn.wwl.describe-insider-risk-capabilities-microsoft-365.badge
   type: badge
   title: Describe the insider risk capabilities in Microsoft Purview
   summary: Insider risks are a top concern for organizations. These risks can be challenging to identify and mitigate. Learn how Microsoft Purview enables organizations to identify, analyze, and remediate internal risks before they cause harm.
   iconUrl: /training/achievements/describe-insider-risk-capabilities-in-microsoft-365.svg
-- uid: learn.wwl.describe-ediscovery-capabilities-of-microsoft-365
+- uid: learn.wwl.describe-ediscovery-capabilities-of-microsoft-365.badge
   type: badge
   title: Describe the eDiscovery and Audit capabilities in Microsoft Purview
   summary: Organizations may need to identify, collect, and/or audit information for legal, regulatory, or business reasons. Learn how the eDiscovery and audit capabilities of Microsoft Purview help organizations find relevant data quickly.
   iconUrl: /training/achievements/describe-the-ediscovery-capabilities-of-microsoft-365.svg
-- uid: learn.wwl.describe-compliance-management-capabilities-microsoft-365
+- uid: learn.wwl.describe-compliance-management-capabilities-microsoft-365.badge
   type: badge
   title: Describe the compliance management capabilities in Microsoft Purview
   summary: Explore the Microsoft Purview compliance portal, the portal for organizations to manage their compliance needs.  Learn about the Compliance Manager and compliance score, which can help organizations manage, simplify, and improve compliance across their organization.
   iconUrl: /training/achievements/describe-compliance-management-capabilities-microsoft-365.svg
-- uid: learn.wwl.describe-information-protection-governance-capabilities-microsoft-365
+- uid: learn.wwl.describe-information-protection-governance-capabilities-microsoft-365.badge
   type: badge
   title: Describe information protection, data lifecycle management, and data governance capabilities in Microsoft Purview
   summary: Microsoft Purview is a comprehensive set of solutions that help you govern, protect, and manage your entire data estate, providing unified data governance and risk management for your organization.
@@ -4227,6 +4397,11 @@ achievements:
   title: Optimize your web applications by caching read-only data with Redis
   summary: Use Redis caching in Azure to reduce the load on databases. Apply different caching architectures to support larger loads in distributed and high-volume environments.
   iconUrl: /training/achievements/optimize-web-apps-with-redis.svg
+- uid: learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.badge
+  type: badge
+  title: Share your location as a text message using Azure Functions and Twilio
+  summary: Learn how to use location tracking on your phone mixed with Azure Functions and Twilio to share your location with your friends as a text message.
+  iconUrl: /training/achievements/send-location-over-sms-from-mobile-using-azure-functions-twilio.svg
 - uid: learn.wwl.build-reports-using-power-bi-within-azure-synapse-analytics.badge
   type: badge
   title: Build reports using Power BI within Azure Synapse Analytics
@@ -4297,3 +4472,891 @@ achievements:
   title: Gather metrics from your Azure Blob Storage containers
   summary: In this module, you learn how to use Azure Monitor to gather and view metrics for a Blob Storage account in Microsoft Azure.
   iconUrl: /training/achievements/gather-metrics-from-blob-storage.svg
+- uid: learn.azure.build-node-cosmos-app-vscode.badge
+  type: badge
+  title: Build a Node.js app for Azure Cosmos DB Core (SQL) in Visual Studio Code
+  summary: Build a database app to store and query data in Azure Cosmos DB Core (SQL) by using Visual Studio Code and Node.js.
+  iconUrl: /training/achievements/build-node-cosmos-app-vscode.svg
+- uid: learn.javascript-on-azure.trophy
+  type: trophy
+  title: JavaScript on Azure
+  summary: Use the Azure JavaScript SDKs to build cloud-based applications.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.build-chat-bot-azure-cosmos-db-openai-blazor.badge
+  type: badge
+  title: Guided project - Build a chat bot using Azure OpenAI, Azure Cosmos DB for NoSQL, and Blazor
+  summary: Connect an existing Blazor web application to Azure Cosmos DB for NoSQL and Azure OpenAI using their .NET software development kits. Your code manages and queries items in an API for NoSQL container. Your code also sends prompts to Azure OpenAI and parses the responses.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.build-dotnet-app-azure-cosmos-db-nosql.badge
+  type: badge
+  title: Guided project - Build a .NET app with Azure Cosmos DB for NoSQL
+  summary: Connect to an Azure Cosmos DB for NoSQL account using C# and .NET to perform common operations. Your code creates resources, coordinate multiple operations, and query items.
+  iconUrl: /training/achievements/build-dotnet-app-azure-cosmos-db-nosql.svg
+- uid: learn.wwl.ingest-data-with-microsoft-fabric-notebooks.badge
+  type: badge
+  title: Ingest data with Spark and Microsoft Fabric notebooks
+  summary: Discover how to use Apache Spark and Python for data ingestion into a Microsoft Fabric lakehouse. Fabric notebooks provide a scalable and systematic solution.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.build-azure-machine-learning-custom-skill-for-azure-cognitive-search.badge
+  type: badge
+  title: Build an Azure Machine Learning custom skill for Azure AI Search
+  summary: Custom skills allow you to enhance datasets as they pass through the enrichment pipeline. Azure Machine Learning can build custom models for regression or classification to enrich your search indexes.
+  iconUrl: /training/achievements/build-azure-machine-learn-custom-skill-for-azure-cognitive-search.svg
+- uid: learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search.badge
+  type: badge
+  title: Build a Document intelligence custom skill for Azure AI search
+  summary: Learn how to use an Azure Document Intelligence solution as a custom skill to enrich content in an Azure AI Search pipeline.
+  iconUrl: /training/achievements/build-form-recognizer-custom-skill-for-azure-cognitive-search.svg
+- uid: learn.wwl.configure-azure-resources-tools.badge
+  type: badge
+  title: Configure Azure resources with tools
+  summary: You will learn how to select a tooling option such as Azure portal, Azure PowerShell, Azure CLI, or Azure Cloud Shell.
+  iconUrl: /training/achievements/arm-configure-with-tools.svg
+- uid: learn.wwl.configure-subscriptions.badge
+  type: badge
+  title: Configure subscriptions
+  summary: Learn how to configure Azure subscriptions, including how to obtain a subscription, implement cost management, and apply Azure resource tags.
+  iconUrl: /training/achievements/subscriptions-configure.svg
+- uid: learn.wwl.integrate-microsoft-purview-azure-synapse-analytics.badge
+  type: badge
+  title: Integrate Microsoft Purview and Azure Synapse Analytics
+  summary: Learn how to integrate Microsoft Purview with Azure Synapse Analytics to improve data discoverability and lineage tracking.
+  iconUrl: /training/achievements/integrate-microsoft-purview-azure-synapse-analytics.svg
+- uid: learn.pytorch.intro-computer-vision.badge
+  type: badge
+  title: Introduction to Computer Vision with PyTorch
+  summary: We'll learn about different computer vision tasks and focus on image classification, learning how to use neural networks to classify handwritten digits, as well as some real-world images, such as photographs of cats and dogs. We'll be using one of the most popular deep learning frameworks, PyTorch!
+  iconUrl: /training/achievements/pytorch-computer-vision.svg
+- uid: learn.automate-workflow-github-actions.trophy
+  type: trophy
+  title: Automate your workflow with GitHub Actions
+  summary: Learn how GitHub Actions enables you to automate your software development cycle and deploy applications to Azure.
+  iconUrl: /training/achievements/github/automate-workflow-github-actions.svg
+- uid: learn.wwl.configure-azure-policy.badge
+  type: badge
+  title: Configure Azure Policy
+  summary: Learn how to configure Azure Policy to implement compliance requirements.
+  iconUrl: /training/achievements/azure-policy-configure.svg
+- uid: learn.wwl.configure-user-group-accounts.badge
+  type: badge
+  title: Configure user and group accounts
+  summary: Learn how to configure user and group accounts.
+  iconUrl: /training/achievements/user-group-accounts-configure.svg
+- uid: learn.wwl.configure-azure-application-gateway.badge
+  type: badge
+  title: Configure Azure Application Gateway
+  summary: Learn how to configure Azure Application Gateway.
+  iconUrl: /training/achievements/azure-application-gateway-configure.svg
+- uid: learn.wwl.configure-azure-load-balancer.badge
+  type: badge
+  title: Configure Azure Load Balancer
+  summary: Learn how to configure an internal or public load balancer.
+  iconUrl: /training/achievements/azure-load-balancer-configure.svg
+- uid: learn.wwl.configure-network-watcher.badge
+  type: badge
+  title: Configure Network Watcher
+  summary: You learn how to configure Network Watcher and troubleshoot common networking problems.
+  iconUrl: /training/achievements/network-watcher-configure.svg
+- uid: learn.wwl.configure-azure-monitor.badge
+  type: badge
+  title: Configure Azure Monitor
+  summary: Learn how to configure Azure Monitor, including querying the Azure Monitor activity log.
+  iconUrl: /training/achievements/azure-monitor-configure.svg
+- uid: learn.wwl.configure-log-analytics.badge
+  type: badge
+  title: Configure Log Analytics
+  summary: You learn how to configure Log Analytics including structuring queries.
+  iconUrl: /training/achievements/log-analytics-configure.svg
+- uid: learn.wwl.configure-virtual-machines.badge
+  type: badge
+  title: Configure virtual machines
+  summary: Learn how to configure virtual machines including sizing, storage, and connections.
+  iconUrl: /training/achievements/virtual-machines-configure.svg
+- uid: learn.choose-azure-service-to-integrate-and-automate-business-processes.badge
+  type: badge
+  title: Choose the best Azure service to automate your business processes
+  summary: In this module, we discuss how to choose the appropriate Azure service to integrate and automate business processes.
+  iconUrl: /training/achievements/choose-azure-service-to-integrate-and-automate-business-processes.svg
+- uid: learn.pytorch.intro-machine-learning.badge
+  type: badge
+  title: Introduction to PyTorch
+  summary: In this module, you learn key concepts used to build machine learning models with PyTorch. You also train a neural network model that recognizes and classifies images.
+  iconUrl: /training/achievements/pytorch-intro.svg
+- uid: learn.pytorch.intro-natural-language-processing.badge
+  type: badge
+  title: Introduction to Natural Language Processing with PyTorch
+  summary: This module explores different neural network architectures for dealing with natural language texts. **Natural Language Processing** (NLP) is growing in importance due to the ability of language models to accurately "understand" human language faster while using unsupervised training on large text corpora. This module covers different NLP techniques such as using bag-of-words (BoW), word embeddings and recurrent neural networks for classifying text from news headlines to one of the 4 categories (World, Sports, Business, and Sci-Tech).
+  iconUrl: /training/achievements/pytorch-natural-language-process.svg
+- uid: learn.pytorch.pytorch-fundamentals.trophy
+  type: trophy
+  title: PyTorch Fundamentals
+  summary: Learn the fundamentals of deep learning with PyTorch! This beginner friendly learning path will introduce key concepts to building machine learning models in multiple domains include speech, vision, and natural language processing.
+  iconUrl: /training/achievements/pytorch-intro-trophy.svg
+- uid: learn.pytorch.intro-audio-classification.badge
+  type: badge
+  title: Introduction to audio classification with PyTorch
+  summary: In this Learn module, you learn how to do audio classification with PyTorch. You'll understand more about audio data features and how to transform the sound signals into a visual representation called spectrograms. Then you'll build the model by using computer vision on the spectrogram images. That's right, you can turn audio into an image format, and then do computer vision to classify the word spoken!
+  iconUrl: /training/achievements/pytorch-audio-data.svg
+- uid: learn.develop-azure-functions-app-with-maven-plugin.badge
+  type: badge
+  title: Develop Java serverless Functions on Azure using Maven
+  summary: Learn how to use the Maven Plugin for Azure Functions to create a cloud-based function. The function is triggered when certain values are passed in an HTTP request, and it outputs a log entry to track the activity.
+  iconUrl: /training/achievements/develop-azure-functions-app-with-maven-plugin.svg
+- uid: learn.azure.build-api-azure-functions.badge
+  type: badge
+  title: Build Serverless APIs with Azure Functions
+  summary: Use Visual Studio Code and Azure Functions to rapidly create a serverless API, implement a RESTful architecture and safely store secure information like connection strings.
+  iconUrl: /training/achievements/build-api-azure-functions.svg
+- uid: learn.azure.shift-express-api-azure-functions.badge
+  type: badge
+  title: Refactor Node.js Express APIs into serverless Azure Functions APIs
+  summary: Improve availability and scalability by refactoring existing Node.js Express APIs into Azure Functions serverless APIs with v4 programming model.
+  iconUrl: /training/achievements/shift-express-api-azure-functions.svg
+- uid: learn.beginner-python.functions-python.badge
+  type: badge
+  title: Python functions
+  summary: The next step after using procedural code is to write modular software by using functions. Functions, from simple ones to multiple-argument ones, are useful in making code reusable.
+  iconUrl: /training/achievements/functions-python.svg
+- uid: learn.beginner-python.python-error-handling.badge
+  type: badge
+  title: Python error handling
+  summary: Handle exceptions and create useful error messages. Improve your skills by using exceptions for code flow control.
+  iconUrl: /training/achievements/python-error-handling.svg
+- uid: learn.beginner-python.intro-python-lists.badge
+  type: badge
+  title: Introduction to lists in Python
+  summary: You'll often work with multiple values in a program. In Python, you can group data together by using lists. In this module, you'll learn how to use lists and what the most common tasks with lists are.
+  iconUrl: /training/achievements/intro-python-lists.svg
+- uid: learn.beginner-python.python-loops.badge
+  type: badge
+  title: Use 'while' and 'for' loops in Python
+  summary: With Python, you can use `while` loops to run the same task multiple times and `for` loops to loop once over list data. In this module, you'll learn about the two loop types and when to apply each.
+  iconUrl: /training/achievements/python-loops.svg
+- uid: learn.beginner-python.python-dictionaries.badge
+  type: badge
+  title: Manage data with Python dictionaries
+  summary: Python dictionaries allow you to model complex data. This module explores common scenarios where you could use dictionaries.
+  iconUrl: /training/achievements/python-dictionaries.svg
+- uid: learn.beginner-python.use-boolean-types.badge
+  type: badge
+  title: Use Boolean logic in Python
+  summary: Explore how to use Boolean logic in Python to craft complex expressions that apply conditional logic.
+  iconUrl: /training/achievements/python-use-boolean-types.svg
+- uid: learn.beginner-python.use-strings.badge
+  type: badge
+  title: Use strings in Python
+  summary: Strings and string operations are among the main core types in Python. Manipulating text is an essential developer skill, and Python offers several ways to work with strings.
+  iconUrl: /training/achievements/python-use-strings.svg
+- uid: learn.beginner-python.use-math-operators.badge
+  type: badge
+  title: Use mathematical operations in Python
+  summary: Almost every application a developer creates involves some level of math. This module explores the core functionality in Python and arithmetic operators. You'll also explore how to perform more manipulations of data and numbers. You'll put this knowledge to use to create a project to determine the distance between planets.
+  iconUrl: /training/achievements/python-math-operators.svg  
+- uid: learn.beginner-python.trophy
+  type: trophy
+  title: Python for beginners
+  summary: Get started with Python! Learn how to create programs and projects in Python. Work with strings, lists, loops, dictionaries, and functions.
+  iconUrl: /training/achievements/beginner-python.svg
+- uid: learn.student-evangelism.python-flask-build-ai-web-app.badge
+  type: badge
+  title: Build an AI web app by using Python and Flask
+  summary: Use Python, Flask, and Azure AI services to build a web app that incorporates AI.
+  iconUrl: /training/achievements/student-evangelism/python-flask-build-ai-web-app-badge.svg
+- uid: learn.python-get-started-testing.badge
+  type: badge
+  title: Get started with testing in Python
+  summary: Start testing with Python using the unittest module. Get exposed to other testing concepts like functional and integration testing.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.languages.python-apps.trophy
+  type: trophy
+  title: Build real world applications with Python
+  summary: Interested in learning how to build apps in Python that scales and that you want to maintain? Then this is the path for you. It will take you through basics of the language but also teach you various patterns you can use.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.student-evangelism.intro-to-python.badge
+  type: badge
+  title: Introduction to Python
+  summary: Learn how to write a few lines of Python code, declare variables, and work with console input and output.
+  iconUrl: /training/achievements/intro-to-python.svg
+- uid: learn.beginner-python.create-run-program.badge
+  type: badge
+  title: Write your first Python programs
+  summary: In this module, you'll learn a variety of topics, like input and output to the console, variables and data types, and type conversion.
+  iconUrl: /training/achievements/python-create-run-program.svg
+- uid: learn.student-evangelism.python-object-oriented-programming.badge
+  type: badge
+  title: Introduction to object-oriented programming with Python
+  summary: This module will teach you how to model problems by using object-oriented programming (OOP) concepts. You'll also learn to turn your model into working code by using OOP concepts like classes, attributes, and methods.
+  iconUrl: /training/achievements/student-evangelism/python-object-oriented-programming-badge.svg
+- uid: learn.python-partnership.personality-quiz.badge
+  type: badge
+  title: What is your super sleuth personality?
+  summary: What is your super sleuth personality? Use Python to build a quiz to share with your friends by using Boolean commands and conditionals.
+  iconUrl: /training/achievements/python-partnership/personality-quiz-revised.svg
+- uid: learn.azure.discover-azure-government.badge
+  type: badge
+  title: Discover the potential of Azure for government
+  summary: Discover the potential of Azure for government
+  iconUrl: /training/achievements/discover-azure-government.svg
+- uid: learn.azure.safeguard-data-sector.badge
+  type: badge
+  title: Safeguard public sector data with Azure
+  summary: Safeguard public sector data with Azure
+  iconUrl: /training/achievements/safeguard-data-sector.svg
+- uid: learn.azure.support-hybrid-clouds.badge
+  type: badge
+  title: Support data classification with private and hybrid clouds
+  summary: Support data classification with private and hybrid clouds
+  iconUrl: /training/achievements/support-hybrid-clouds.svg
+- uid: learn.azure.optimize-government-operations.trophy
+  type: trophy
+  title: Optimize government operations with Azure
+  summary: Optimize government operations with Azure
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn-pr.azure.manage-azure-stack-hci-storage.badge 
+  type: badge
+  title: Plan and implement Azure Stack HCI storage
+  summary: Plan and implement Azure Stack HCI storage
+  iconUrl: /training/achievements/generic-badge.svg 
+- uid: learn.python-partnership.secret-message.badge
+  type: badge
+  title: Crack the code and reveal a secret with Python and Visual Studio Code
+  summary: You're handed a secret message that needs a code cracker to find the truth. Learn how to solve the code mystery to reveal a location and date to find a hidden treasure. Get a glimpse into the popular Python programming language with this introductory lesson that requires no coding experience.
+  iconUrl: /training/achievements/python-partnership/secret-message-revised.svg
+- uid: learn.introduction-to-aks-edge-essentials.badge
+  type: badge
+  title: Introduction to Azure Kubernetes Service (AKS) Edge Essentials
+  summary: Introduction to Azure Kubernetes Service (AKS) Edge Essentials
+  iconUrl: /training/achievements/iot/introduction-to-aks-edge-essentials.svg
+- uid: learn.create-first-aks-edge-essentials.badge
+  type: badge
+  title: Create your first Azure Kubernetes Service (AKS) Edge Essentials single machine cluster
+  summary: Create your first Azure Kubernetes Service (AKS) Edge Essentials single machine cluster
+  iconUrl: /training/achievements/iot/create-first-aks-edge-essentials.svg
+- uid: learn.azure.design-secure-environment-government.badge
+  type: badge
+  title: Design cloud solutions for the public sector
+  summary: Design cloud solutions for the public sector
+  iconUrl: /training/achievements/design-secure-environment-government.svg
+- uid: learn.azure.encrypt-sector-data.badge
+  type: badge
+  title: Encrypt public sector data in Azure
+  summary: Encrypt public sector data in Azure
+  iconUrl: /training/achievements/encrypt-sector-data.svg
+- uid: learn.azure.protect-public-sector-data.trophy
+  type: trophy
+  title: Protect public sector data in Azure
+  summary: Protect public sector data in Azure
+  iconUrl: /training/achievements/protect-public-sector-data.svg
+- uid: learn.connect-aks-edge-essentials-azure-arc.badge
+  type: badge
+  title: Connect your Azure Kubernetes Service (AKS) Edge Essentials cluster to Azure Arc 
+  summary: Connect your Azure Kubernetes Service (AKS) Edge Essentials cluster to Azure Arc 
+  iconUrl: /training/achievements/iot/connect-aks-edge-essentials-azure-arc.svg
+- uid: learn.get-started-aks-edge-essentials.trophy
+  type: trophy
+  title: Get started with Azure Kubernetes Service (AKS) Edge Essentials
+  summary: Get started with Azure Kubernetes Service (AKS) Edge Essentials
+  iconUrl: /training/achievements/iot/get-started-aks-edge-essentials.svg
+- uid: learn.wwl.prepare-for-azure-stack-hub-deployment.badge
+  type: badge
+  title: Prepare for Azure Stack Hub deployment
+  summary: Prepare for Azure Stack Hub deployment
+  iconUrl: /learn/achievements/1-prepare-for-azure-stack-hub-deployment.svg
+- uid: learn.wwl.manage-azure-stack-hub-registration.badge
+  type: badge
+  title: Manage Azure Stack Hub registration
+  summary: Manage Azure Stack Hub registration
+  iconUrl: /training/achievements/3-manage-azure-stack-hub-registration.svg
+- uid: learn.wwl.manage-infrastructure-certificates-for-azure-stack-hub.badge
+  type: badge
+  title: Manage infrastructure certificates for Azure Stack Hub
+  summary: Manage infrastructure certificates for Azure Stack Hub
+  iconUrl: /training/achievements/2-manage-infrastructure-certificates-for-azure-stack-hub.svg
+- uid: learn.wwl.implement-data-center-integration-for-azure-stack-hub.trophy
+  type: trophy
+  title: Implement Data Center Integration for Azure Stack Hub
+  summary: Implement Data Center Integration for Azure Stack Hub
+  iconUrl: /training/achievements/implement-data-center-integration-for-azure-stack-hub.svg
+- uid: learn.python-partnership.trophy
+  type: trophy
+  title: Use Python basics to solve mysteries and find answers
+  summary: You are a novice but dedicated sleuth, and you enjoy solving mysteries. Harness the power of Python and Visual Studio Code to find solutions programmatically and resolve intrigue.
+  iconUrl: /training/achievements/python-partnership.svg
+- uid: learn.languages.python-install-vscode.badge
+  type: badge
+  title: Install and configure Visual Studio Code for Python development
+  summary: Install and configure Visual Studio Code to create a development environment for learning to build Python applications.
+  iconUrl: /training/achievements/python-install-vscode.svg
+- uid: learn.wwl.create-manage-device-templates.badge
+  type: badge
+  title: Create and manage device templates in Azure IoT Central
+  summary: Create and manage device templates in Azure IoT Central
+  iconUrl: /training/achievements/iot/create-manage-device-templates.svg
+- uid: learn.wwl.manage-devices-azure-iot-central.badge
+  type: badge
+  title: Manage devices in Azure IoT Central
+  summary: Manage devices in Azure IoT Central
+  iconUrl: /training/achievements/iot/manage-devices-azure-iot-central.svg
+- uid: learn.iot.connect-iot-edge-device-to-iot-central.badge
+  type: badge
+  title: Connect an Azure IoT Edge device to your Azure IoT Central application
+  summary: Connect an Azure IoT Edge device to your Azure IoT Central application
+  iconUrl: /training/achievements/iot/connect-iot-edge-device-to-iot-central.svg
+- uid: learn.wwl.configure-business-integration.badge
+  type: badge
+  title: Configure business integration in Azure IoT Central
+  summary: Configure business integration in Azure IoT Central
+  iconUrl: /training/achievements/iot/configure-business-integration.svg
+- uid: learn.introduction-to-azure-iot-central.badge
+  type: badge
+  title: Introduction to Azure IoT Central
+  summary: Introduction to Azure IoT Central
+  iconUrl: /training/achievements/iot/introduction-to-azure-iot-central.svg
+- uid: learn.monitor-manage-device-with-iotcentral.badge
+  type: badge
+  title: Build your first Azure IoT Central application to manage your coffee machines
+  summary: Build your first Azure IoT Central application to manage your coffee machines
+  iconUrl: /training/achievements/iot/monitor-and-manage-device-with-iot-central.svg
+- uid: learn.introduction-to-iot.badge
+  type: badge
+  title: Introduction to Azure IoT
+  summary: Introduction to Azure IoT
+  iconUrl: /training/achievements/introduction-to-azure-iot.svg
+- uid: learn.iot.evaluate-iot-scenario-with-iot-central.trophy
+  type: trophy
+  title: Evaluate your IoT Scenario by using Azure IoT Central
+  summary: Evaluate your IoT Scenario by using Azure IoT Central
+  iconUrl: /training/achievements/iot/evaluate-iot-scenario-with-iot-central.svg
+- uid: learn.chat-completions-badge
+  type: badge
+  title: Introduction to chat completion
+  summary: This module introduces you to prompt engineering techniques, such as chat completion and system messages, and how to use them in the Azure AI Foundry portal playground.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.examine-iot-hub-message-routing.badge
+  type: badge
+  title: Examine Azure IoT Hub message routing
+  summary: Examine Azure IoT Hub message routing
+  iconUrl: /training/achievements/iot-hub-message-routing.svg
+- uid: learn.wwl.implement-device-message-processing-data-analytics.trophy
+  type: trophy
+  title: Implement message processing for data storage and analytics by using Azure IoT Hub
+  summary: Implement message processing for data storage and analytics by using Azure IoT Hub
+  iconUrl: /training/achievements/message-device-processing.svg
+- uid: learn.wwl.get-started-cloud-storage-for-iot.badge
+  type: badge
+  title: Examine Cloud storage options for Azure IoT Hub solutions
+  summary: Examine Cloud storage options for Azure IoT Hub solutions
+  iconUrl: /training/achievements/iot-cloud-storage.svg
+- uid: learn.wwl.explore-message-processing-tasks.badge
+  type: badge
+  title: Guided project - Route and process messages from your Azure IoT Hub devices
+  summary: Guided project - Route and process messages from your Azure IoT Hub devices
+  iconUrl: /training/achievements/message-process-explore-tasks.svg
+- uid: learn.wwl.examine-azure-stream-analytics-azure-functions.badge
+  type: badge
+  title: Examine Azure Stream Analytics and Azure Functions in Azure IoT Hub solutions
+  summary: Examine Azure Stream Analytics and Azure Functions in Azure IoT Hub solutions
+  iconUrl: /training/achievements/azure-stream-analytics.svg
+- uid: learn.wwl.consider-message-processing-options-constraints.badge
+  type: badge
+  title: Consider Azure IoT Hub message processing options and constraints
+  summary: Consider Azure IoT Hub message processing options and constraints
+  iconUrl: /training/achievements/messaging-processing-options.svg
+- uid: learn.student-evangelism.predict-meteor-showers-using-python.badge
+  type: badge
+  title: Predict meteor showers by using Python and Visual Studio Code
+  summary: Learn how to use concepts from machine learning to predict the occurrence of meteor showers (or Moon Goddess tears).
+  iconUrl: /training/achievements/student-evangelism/predict-meteor-showers-using-python.svg
+- uid: learn.student-evangelism.train-custom-vision-ai.badge
+  type: badge
+  title: Use AI to recognize objects in images by using the Custom Vision service
+  summary: Use the Custom Vision service to analyze images of animals, like Bungee, without ever writing code.
+  iconUrl: /training/achievements/student-evangelism/train-custom-vision-ai.svg
+- uid: learn.explore-space-using-python.trophy
+  type: trophy
+  title: Explore space with Python and Visual Studio Code; inspired by Netflix's Over the Moon
+  summary: This *Over the Moon* - inspired learning path aims to equip you with data science, artificial intelligence, and coding strategies to discover the technology used in space exploration.
+  iconUrl: /training/achievements/explore-space-using-python.svg
+- uid: learn.student-evangelism.plan-moon-mission-using-python-pandas.badge
+  type: badge
+  title: Plan a Moon mission by using Python pandas
+  summary: Like Fei Fei, use data to plan your own mission to the Moon. Ensure that your rocket can not only get you there, but also bring you and all your Moon rocks safely back to Earth.
+  iconUrl: /training/achievements/student-evangelism/plan-moon-mission-using-python-pandas.svg
+- uid: learn.wwl.implement-advanced-data-visualization-techniques.trophy
+  type: trophy
+  title: Implement advanced data visualization techniques by using Power BI
+  summary: >-
+    This learning path takes analysts through visualizing data in Power BI. You'll learn about visuals in Power BI reports, using Power BI to visualize real-time data, and visualizing data in paginated reports.
+  
+    This learning path helps you prepare for the [Azure Enterprise Data Analyst Certification](/certifications/exams/dp-500).
+  iconUrl: /training/achievements/implement-advanced-data-visualization-techniques.svg
+- uid: learn.wwl.understand-advanced-data-visualization-concepts.badge
+  type: badge
+  title: Understand advanced data visualization concepts
+  summary: Create cohesive, inclusive, and efficient Power BI reports to effectively communicate results.
+  iconUrl: /training/achievements/understand-advanced-data-visualization-concepts.svg
+- uid: learn.beginner-python.create-run-jupyter-notebook.badge
+  type: badge
+  title: Get started with Jupyter notebooks for Python
+  summary: Use Jupyter notebooks to run Python. Build a spaceship manual that has interactive, runnable Markdown and code elements.
+  iconUrl: /training/achievements/python-create-jupyter-notebook.svg
+- uid: learn.iot.introduction-to-azure-digital-twins.badge
+  type: badge
+  title: Introduction to Azure Digital Twins
+  summary: Introduction to Azure Digital Twins
+  iconUrl: /training/achievements/introduction-to-azure-digital-twins.svg
+- uid: learn.iot.explore-azure-digital-twins-api-for-creating-a-graph.badge
+  type: badge
+  title: Explore the Azure Digital Twins API for creating a graph
+  summary: Explore the Azure Digital Twins API for creating a graph
+  iconUrl: /training/achievements/explore-azure-digital-twins-api-for-creating-a-graph.svg
+- uid: learn.iot.synchronize-azure-digital-twins-with-iot-device-data.badge
+  type: badge
+  title: Synchronize Azure Digital Twins with IoT device data
+  summary: Synchronize Azure Digital Twins with IoT device data
+  iconUrl: /training/achievements/synchronize-azure-digital-twins-with-iot-device-data.svg
+- uid: learn.iot.build-azure-digital-twins-solution.trophy
+  type: trophy
+  title: Build out an Azure Digital Twins solution
+  summary: Build out an Azure Digital Twins solution
+  iconUrl: /training/achievements/build-out-an-azure-digital-twins-solution.svg
+- uid: learn.beginner-python.create-manage-projects.badge
+  type: badge
+  title: Create and manage projects in Python
+  summary: To manage projects, you need a virtual environment, packages that will help you develop faster, and a strategy for maintaining packages.
+  iconUrl: /training/achievements/python-create-manage-projects.svg
+- uid: learn.use-azure-maps-to-track-air-pollution.badge
+  type: badge
+  title: Track global air quality with Azure Maps
+  summary: This module shows how to track global air quality by using the Azure Maps web SDK and pollution data from a third-party air quality API.
+  iconUrl: /training/achievements/advocates/use-azure-maps-to-track-air-pollution.svg
+- uid: learn.student-evangelism.train-test-predictive-ai-model-nasa.badge
+  type: badge
+  title: Classify types of space rocks in random photos by using artificial intelligence
+  summary: Learn how to build an artificial intelligence model to predict types of space rocks in images. Train and test your model by using random photos.
+  iconUrl: /training/achievements/student-evangelism/train-test-predictive-ai-model-nasa.svg
+- uid: learn.student-evangelism.analyze-rock-images-ai-nasa.badge
+  type: badge
+  title: Analyze images of rocks by using artificial intelligence
+  summary: Identify data to add to an artificial intelligence model that classifies space rocks in random photos.
+  iconUrl: /training/achievements/student-evangelism/analyze-rock-images-ai-nasa.svg
+- uid: learn.classify-space-rocks-artificial-intelligence-nasa.trophy
+  type: trophy
+  title: Classify space rocks by using Python and artificial intelligence
+  summary: This learning path gives you a view into the worlds of AI and space. Learn how to create an AI model that can classify the type of space rock in a random photo.
+  iconUrl: /training/achievements/classify-space-rocks-artificial-intelligence-nasa.svg
+- uid: learn.student-evangelism.research-space-rocks-ai-nasa.badge
+  type: badge
+  title: Learn about space rocks and how to classify them
+  summary: Learn about space rocks, where they're found, and why they're valuable for scientific research.
+  iconUrl: /training/achievements/student-evangelism/research-space-rocks-ai-nasa.svg
+- uid: learn.student-evangelism.introduction-artificial-intelligence.nasa.badge
+  type: badge
+  title: Prepare to research space rocks by using artificial intelligence
+  summary: Learn about the scientific research of space rocks and how artificial intelligence can enhance this study.
+  iconUrl: /training/achievements/student-evangelism/introduction-artificial-intelligence-nasa.svg
+- uid: learn.student-evangelism.collect-manipulate-data-python-nasa.badge
+  type: badge
+  title: Data collection and manipulation
+  summary: Learn about the steps to import data into Python and clean the data for use in creating machine learning models.
+  iconUrl: /training/achievements/student-evangelism/collect-manipulate-data-python-nasa.svg
+- uid: learn.student-evangelism.learn.student-evangelism.machine-learning-model-nasa.badge
+  type: badge
+  title: Build a machine learning model
+  summary: In this module, you focus on a local analysis of your data by using scikit-learn, and use a decision tree classifier to gain knowledge from raw weather and rocket launch data.
+  iconUrl: /training/achievements/student-evangelism/machine-learning-model-nasa.svg
+- uid: learn.student-evangelism.machine-learning-predict-launch-delay-nasa.trophy
+  type: trophy
+  title: Predict rocket launch delays with machine learning
+  summary: This learning path introduces you to the world of machine learning. You'll take a real-life problem that NASA faces and apply machine learning to solve it. The goal is to get students excited and curious to discover how machine learning could help solve other problems in space discovery and different aspects of life.
+  iconUrl: /training/achievements/machine-learning-predict-launch-delay-nasa.svg
+- uid: learn.student-evangelism.introduction-rocket-launch-nasa.badge
+  type: badge
+  title: Introduction to rocket launches
+  summary: Get an introduction to how NASA chooses a date for a rocket launch and discover machine learning fundamentals.
+  iconUrl: /training/achievements/student-evangelism/introduction-rocket-launch-nasa.svg
+- uid: learn.student-evangelism.basic-python-nasa.badge
+  type: badge
+  title: Write basic Python in Notebooks
+  summary: Learn the basics of Python using interactive Notebooks.
+  iconUrl: /training/achievements/student-evangelism/basic-python-nasa.svg
+- uid: learn.student-evangelism.intermediate-python-nasa.badge
+  type: badge
+  title: Code control statements in Python
+  summary: Learn more advanced topics of Python using interactive Notebooks.
+  iconUrl: /training/achievements/student-evangelism/intermediate-python-nasa.svg
+- uid: learn.student-evangelism.count-moon-rocks-python-nasa.badge
+  type: badge
+  title: Count the number of Moon rocks by type using Python
+  summary: Use Python to make a simple program to count the number of each type of space rock.
+  iconUrl: /training/achievements/student-evangelism/count-moon-rocks-python-nasa.svg
+- uid: learn.introduction-python-space-exploration-nasa.trophy
+  type: trophy
+  title: Discover the role of Python in space exploration
+  summary: This learning path introduces you to the world of Python. But the goal is not to learn Python, the goal is to understand how Python plays a role in the innovative solutions that NASA creates. Through the lens of space discovery, this learning path could ignite a passion to persistently learn, discover, and create so that you too can one day help us all understand a little more about the world beyond our Earth.
+  iconUrl: /training/achievements/introduction-python-space-exploration-nasa.svg
+- uid: learn.student-evangelism.install-code-tools-python-nasa.badge
+  type: badge
+  title: Install coding tools for Python development
+  summary: Learn about what coding is and install tools to help you code.
+  iconUrl: /training/achievements/student-evangelism/install-code-tools-python-nasa.svg
+- uid: learn.student-evangelism.introduction-python-nasa.badge
+  type: badge
+  title: Introduction to Python for space exploration
+  summary: Get an introduction to the types of space exploration problems that Python and data science can influence.
+  iconUrl: /training/achievements/student-evangelism/introduction-python-nasa.svg 
+- uid: learn.wwl.monitor-data-real-time-power-bi.badge
+  type: badge
+  title: Monitor data in real-time with Power BI
+  summary: Describe real-time analytics in Power BI using automatic page refresh, real-time dashboards, and auto-refresh in paginated reports.
+  iconUrl: /training/achievements/monitor-data-real-time-power-bi.svg
+- uid: learn.student-evangelism.create-git-project.badge
+  type: badge
+  title: How to create and modify a Git project
+  summary: Learn how to create, modify and track changes on a project using Git.
+  iconUrl: /training/achievements/create-git-project.svg
+- uid: learn.student-evangelism.branch-merge-git.badge
+  type: badge
+  title: Edit code through branching and merging in Git
+  summary: Level up your Git knowledge by learning how to keep code separate in branches, and how to merge them later.
+  iconUrl: /training/achievements/student-evangelism/branch-merge-git-badge.svg
+- uid: learn.student-evangelism.intro-to-vc-git.trophy
+  type: trophy
+  title: Introduction to version control with Git
+  summary: Git is the leading version control tool, and it's essential for developers. Learn how to use Git to track your own changes and collaborate with others.
+  iconUrl: /training/achievements/student-evangelism/intro-to-vc-git-badge.svg
+- uid: learn.student-evangelism.collaborate-with-git.badge
+  type: badge
+  title: Collaborate with Git
+  summary: Use Git to track changes to source code and collaborate with other developers.
+  iconUrl: /training/achievements/student-evangelism/collaborate-with-git-badge.svg
+- uid: learn.django.models-data.badge
+  type: badge
+  title: Work with models and data in Django
+  summary: Django is focused on data-driven applications, so it provides its own object-relational mapper (ORM). We'll explore ORM concepts and how the Django ORM works. We'll create our own models and set up the database.
+  iconUrl: /training/achievements/django-models-data.svg
+- uid: learn.django.admin-site.badge
+  type: badge
+  title: Work with the Django admin site
+  summary: Probably the most popular feature of the Python framework Django is its built-in admin site, which allows internal users to manage data without having to create a special utility. We'll explore how to configure users to use this site and how to set up the site itself.
+  iconUrl: /training/achievements/django-admin-site.svg
+- uid: learn.django.get-started.badge
+  type: badge
+  title: Get started with Django
+  summary: Django is one of the most popular Python web frameworks. It's especially powerful when working with a data-driven application, where the main goal is to provide a front end to a database. Django comes with numerous features built in to streamline the development process. In this module, we explore the benefits of Django, how to install it, and how to create your first project.
+  iconUrl: /training/achievements/django-get-started.svg
+- uid: learn.django.generic-views.badge
+  type: badge
+  title: Use generic views in Django
+  summary: Because Django was designed for data-driven applications, it includes numerous built-in utilities to streamline the amount of code needed. One key area where Django makes a developer's life easier is by providing generic views, which are prebuilt with all the necessary code to perform core operations like displaying and editing data. We'll see how we can use generic views to greatly reduce the amount of code required.
+  iconUrl: /training/achievements/django-generic-views.svg
+- uid: learn.django-create-data-driven-websites.trophy
+  type: trophy
+  title: Create data-driven websites by using the Python framework Django
+  summary: Use Django to create data-driven websites.
+  iconUrl: /training/achievements/django-create-data-driven-websites.svg
+- uid: learn.django.views-templates.badge
+  type: badge
+  title: Create views and templates in Django
+  summary: As with every web framework, Django has a templating engine for creating dynamic HTML. The information that the user wants to access is created by this engine and presented through views. We'll explore how the engine works and the process of creating views in Django.
+  iconUrl: /training/achievements/django-views-templates.svg
+- uid: learn.django.deployment.badge
+  type: badge
+  title: Deploy a Django application to Azure by using PostgreSQL
+  summary: To make your application available to the world, you need to host it somewhere. Here you'll deploy your application to Azure and create a database for the data.
+  iconUrl: /training/achievements/django-deployment.svg
+- uid: learn.student-intro-azure.trophy
+  type: trophy
+  title: Introduction to Azure
+  summary: In this path, you'll learn various Azure fundamentals, including cloud concepts, core Azure services, useful tools and programs and more. If you're a beginner, this path is for you.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.student-introduction-to-azure.badge
+  type: badge
+  title: Introduction to Azure for students
+  summary: In this module, you'll learn about cloud computing and how Microsoft Azure and other helpful tools and services can help you solve common problems as a student.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.student-evangelism.student-introduction-github.badge
+  type: badge
+  title: Tooling, Git and GitHub products
+  summary: This module provides an overview of Git, GitHub, and version control. It provides step-by-step guidance for performing basic tasks in GitHub.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.student-evangelism.node-web-routes.badge
+  type: badge
+  title: Introduction to route management in Node.js with JavaScript
+  summary: Learn how to set up a Node.js API with multiple routes and handle incoming HTTP requests by using JavaScript. This module uses JavaScript (CommonJS) with the Express.js server framework in the Node.js runtime.
+  iconUrl: /training/achievements/student-evangelism/introduction-route-management-nodejs.svg
+- uid: learn.azure.build-web-api-nodejs-express.badge
+  type: badge
+  title: Build a web API with Node.js and Express
+  summary: Use Express for Node.js to build RESTful APIs. Create and configure middleware to add things like logging, authentication and authorization, and other web development technologies. This module uses JavaScript (CommonJS) with the Express.js server framework in the Node.js runtime.
+  iconUrl: /training/achievements/build-web-api-nodejs-express.svg
+- uid: learn.azure.nodejs-files.badge
+  type: badge
+  title: Work with files and directories in a Node.js app
+  summary: Build an app that manipulates files and directories with Node.js. This module uses JavaScript CommonJS in the Node.js runtime.
+  iconUrl: /training/achievements/nodejs-files.svg
+- uid: learn.azure.debug-nodejs.badge
+  type: badge
+  title: Interactively debug Node.js apps with the built-in and Visual Studio Code debuggers
+  summary: Learn how to efficiently debug your Node.js app by using Visual Studio Code to fix your bugs quickly. This module uses JavaScript CommonJS in the Node.js runtime.
+  iconUrl: /training/achievements/debug-nodejs.svg
+- uid: learn.build-javascript-applications-nodejs.trophy
+  type: trophy
+  title: Build JavaScript applications with Node.js
+  summary: Node.js provides a large set of built-in APIs that help you build various types of applications, command-line apps, web apps, and more. It also offers testing and debugging capabilities and a rich ecosystem of third-party packages that you can easily add to your application.
+  iconUrl: /training/achievements/build-javascript-applications-nodejs.svg
+- uid: learn.azure.intro-to-nodejs.badge
+  type: badge
+  title: Introduction to Node.js
+  summary: "Learn about Node.js: what it is, how it works, and when to use it. This module uses JavaScript in the Node.js runtime."
+  iconUrl: /training/achievements/intro-to-nodejs.svg
+- uid: learn.azure.create-nodejs-project-dependencies.badge
+  type: badge
+  title: Create a new Node.js project and work with dependencies
+  summary: Use dependencies from the npm registry to develop Node.js applications faster. Learn how to manage dependencies for your project. This module uses JavaScript CommonJS in the Node.js runtime.
+  iconUrl: /training/achievements/create-nodejs-project-dependencies.svg
+- uid: learn.azdo.explore-azure-devops-with-github.trophy
+  type: trophy
+  title: Explore Azure DevOps with GitHub to streamline your development process
+  summary: Learn how to use GitHub Actions, Azure DevOps, and Azure Pipelines to build, test, and deploy applications.
+  iconUrl: /training/achievements/explore-azure-devops-with-github.svg
+- uid: learn.azure.manage-device-identity-ad-join.badge
+  type: badge
+  title: Manage device identity with Microsoft Entra join and Enterprise State Roaming
+  summary: Evaluate options to manage device identities in Microsoft Entra ID. Allow users to join devices in Microsoft Entra ID. Require devices to be marked as compliant. Enable Enterprise State Roaming.
+  iconUrl: /training/achievements/manage-device-identity-ad-join.svg
+- uid: learn.azure.create-custom-roles-rbac.badge
+  type: badge
+  title: Create custom roles for Azure resources with role-based access control (RBAC)
+  summary: Understand the structure of role definitions for access control. Identify the role properties to use that define your custom role permissions. Create an Azure custom role and assign to a user.
+  iconUrl: /training/achievements/create-custom-azure-roles-with-rbac.svg
+- uid: learn.language.typescript-namespaces-organize-code.badge
+  type: badge
+  title: Organize code using TypeScript namespaces
+  summary: TypeScript provides two ways to organize code - namespaces and modules. This module explains how to organize TypeScript code using namespaces.
+  iconUrl: /training/achievements/typescript/typescript-namespaces-organize-code.svg
+- uid: learn.language.typescript-work-external-libraries.badge
+  type: badge
+  title: Access external libraries from TypeScript
+  summary: TypeScript provides two ways to organize your code, namespaces and modules. This module introduces you to modules in TypeScript (referred to as external modules in previous versions.)
+  iconUrl: /training/achievements/typescript/typescript-work-external-libraries.svg
+- uid: learn.language.typescript-get-started.badge
+  type: badge
+  title: Get started with TypeScript
+  summary: This module introduces you to the TypeScript language, why it was created, and how to use it for JavaScript development. You'll also set up a TypeScript development environment for future exercises.
+  iconUrl: /training/achievements/typescript/typescript-get-started.svg
+- uid: learn.language.typescript-implement-interfaces.badge
+  type: badge
+  title: Implement interfaces in TypeScript
+  summary: JavaScript doesn't support interfaces so, as a JavaScript developer, you may or may not have experience with them. In TypeScript, you can use interfaces as you would in traditional object-oriented programming. You can also use interfaces to define object types and this is the primary focus of this module.
+  iconUrl: /training/achievements/typescript/typescript-implement-interfaces.svg
+- uid: learn.typescript-develop-typed-functions.badge 
+  type: badge
+  title: Develop typed functions by using TypeScript
+  summary: If you know how to write functions in JavaScript, you know how to write functions in TypeScript. But TypeScript adds some new capabilities to the standard JavaScript functions to make them easier to work with.
+  iconUrl: /training/achievements/typescript/typescript-develop-typed-functions.svg
+- uid: learn.language.typescript-generics.badge
+  type: badge
+  title: Define generics in TypeScript
+  summary: Generics are code templates that you can define and reuse throughout your codebase. They provide a way to tell functions, classes, or interfaces what type you want to use when you call it.
+  iconUrl: /training/achievements/typescript/typescript-generics.svg
+- uid: learn.language.build-javascript-applications-typescript.trophy
+  type: trophy
+  title: Build JavaScript applications using TypeScript
+  summary: TypeScript offers all the features of JavaScript, plus an additional layer on top of these - the TypeScript type system. In this learning path, you’ll learn how using TypeScript for JavaScript development can help you build more robust code, reduce runtime type errors, take advantage of modern features before they are available in JavaScript, and work better with development teams.
+  iconUrl: /training/achievements/typescript/build-javascript-applications-typescript.svg
+- uid: learn.language.typescript-declare-variable-types.badge
+  type: badge
+  title: Declare variable types in TypeScript
+  summary: JavaScript is a dynamically typed language. While this makes declaring variables easy, it can in some cases lead to unexpected results. The static type system in TypeScript enables you to describe the shape of an object, providing better documentation, and allowing TypeScript to validate that your code is working correctly. In TypeScript, declarations of namespaces, classes, properties, functions, variables, and other language entities associate types with those entities. The way that a type is formed and associated with a language entity depends on the kind of entity. This module introduces some of the available types and shows how to associate them with variables. Later modules examine how interfaces, functions, and classes use static typing.
+  iconUrl: /training/achievements/typescript/typescript-declare-variable-types.svg
+- uid: learn.language.typescript-declare-instantiate-classes.badge
+  type: badge
+  title: Declare and instantiate classes in TypeScript
+  summary: Classes in TypeScript extend the ES6 functionality by adding TypeScript-specific features like type annotations for class members, access modifiers, and the ability to specify required or optional parameters. Another benefit of using TypeScript is that you can use it to develop with classes and then compile them down to JavaScript that works across all major browsers and platforms, as needed.
+  iconUrl: /training/achievements/typescript/typescript-declare-instantiate-classes.svg
+- uid: learn.intro-to-azure-sql-edge.badge
+  type: badge
+  title: Introduction to Azure SQL Edge
+  summary: Describe how Azure SQL Edge enables developers to use the same Transact-SQL (T-SQL) API to develop apps for the edge. Evaluate whether Azure SQL Edge provides the same security and performance as Microsoft SQL Server.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn-sqlserver.deploying-sql-server-linux.badge
+  type: badge
+  title: Deploy SQL Server on Linux
+  summary: Learn about the software and hardware prerequisites to run SQL Server on Linux and then discover the straightforward steps to install SQL Server on Linux. You will also learn additional tasks, such as installing command-line tools.
+  iconUrl: /training/achievements/sqlserver/deploying-on-sql-server-on-linux.svg
+- uid: learn.language.vue-dynamic-rendering.badge
+  type: badge
+  title: Dynamic page displays with Vue.js
+  summary: One of the goals of any web framework is to update the display based on data values. This module explores how to make your page dynamic based on those values and how to display lists of information.
+  iconUrl: /training/achievements/vue-dynamic-rendering.svg
+- uid: learn.language.vue-get-started.badge
+  type: badge
+  title: Get started with Vue
+  summary: Vue.js is a progressive web framework that allows developers to get up and running quickly, with just the addition of a script tag. But Vue.js can also grow with you. You can use it to create large scalable applications. In this module, you'll explore the core concepts of Vue.js and how to get started.
+  iconUrl: /training/achievements/vue-get-started.svg
+- uid: learn.languages.vue-first-steps.trophy
+  type: trophy
+  title: Take your first steps with Vue.js
+  summary: Vue.js is a progressive web framework allowing developers to get up and running quickly, with the addition of a `script` tag. However, Vue.js can also grow with you, and can be used to create large scalable applications.
+  iconUrl: /training/achievements/vue-first-steps.svg
+- uid: learn.language.vue-cli-components.badge
+  type: badge
+  title: Getting started with Vue CLI and single-file components in Vue.js.
+  summary: Although it's possible to create Vue.js applications by using purely JavaScript, most developers need more power and flexibility. By using Vue CLI and single-file components, you can use more robust tooling to enhance the development experience. We'll see how to use Vue CLI to bootstrap an application, and how to create reusable components in Vue.
+  iconUrl: /training/achievements/vue-cli-components.svg
+- uid: learn.language.vue-data-events.badge
+  type: badge
+  title: Work with data and events in Vue.js
+  summary: Dynamic web applications typically allow users to interact with the page and data. In this module, you'll see how to add forms to a Vue.js page and respond to user events. You'll also see how to add computed values that can be calculated based on updates to the data.
+  iconUrl: /training/achievements/vue-data-events.svg
+- uid: learn.introduction-to-visual-studio-code.badge
+  type: badge
+  title: Introduction to Visual Studio Code
+  summary: In this module, you learn how to assess whether Visual Studio Code is the right source code editor for you. We explore how Visual Studio Code can be used in different development situations, for example, web, C++, and data science. We also examine Visual Studio Code's features such as the editor, debugger, and source control. Finally, we walk you through decision criteria you can use to choose a code editor.
+  iconUrl: /learn/achievements/introduction-to-visual-studio-code.svg
+- uid: learn.student-evangelism.web-development-101-variables.badge
+  type: badge
+  title: JavaScript variables and data types
+  summary: JavaScript is a programming language used for web development as well as the server. Learn about variables and the data types that populate them.
+  iconUrl: /training/achievements/student-evangelism/web-development-101-variables.svg
+- uid: learn.student-evangelism.web-development-101.introduction-to-programming.badge
+  type: badge
+  title: Introduction to programming
+  summary: Learn about programming languages and the tools that developers use to create software.
+  iconUrl: /training/achievements/student-evangelism/web-development-101-introduction.svg
+- uid: learn.student-evangelism.web-development-101.functions.badge
+  type: badge
+  title: Create modular code by using functions in JavaScript
+  summary: Functions are the building blocks for any application you'll create. With functions, you can create named, reusable sections of code to help make it more readable and maintainable. This module explores the core concepts of functions.
+  iconUrl: /training/achievements/student-evangelism/web-development-101-functions.svg
+- uid: learn.student-evangelism.web-development-101-if-else.badge
+  type: badge
+  title: Make decisions with JavaScript
+  summary: This lesson covers the basics of JavaScript if/else decision-making concepts. You'll learn how comparing variables, using Booleans, and using if/else statements allow you to make decisions in your code.
+  iconUrl: /training/achievements/student-evangelism/web-development-101-if-else.svg
+- uid: learn.student-evangelism.web-development-101.trophy
+  type: trophy
+  title: Web Development for Beginners
+  summary: Learn the basics of web development, including programming languages and tools, and web accessibility.
+  iconUrl: /training/achievements/student-evangelism/web-development-101.svg
+- uid: learn.student-evangelism.web-development-101-loops-arrays.badge
+  type: badge
+  title: JavaScript arrays and loops
+  summary: Learn how to manipulate and store data within JavaScript.
+  iconUrl: /training/achievements/student-evangelism/web-development-101-loops-arrays.svg
+- uid: learn.data-ai.data-warehouse-security.badge
+  type: badge
+  title: Data warehouse security
+  summary: Learn about the security controls that Azure Synapse Analytics provides to help secure your data warehouse infrastructure and the data that's stored in it.
+  iconUrl: /training/achievements/data-ai/data-warehouse-security-badge.svg
+- uid: learn.wwl.develop-dynamic-reports-microsoft-power-bi.trophy
+  type: trophy
+  title: Develop reports with Microsoft Power BI
+  summary: Power BI allows you to easily connect to and present your data in an interactive report, so you can make data-driven decisions. Learn how to connect to data, transform and shape data, and create interactive visuals in a Power BI report.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.introduction-to-azure-ai-studio.badge
+  type: badge
+  title: Introduction to Azure AI Foundry
+  summary: Microsoft Azure offers multiple services that enable developers to build amazing AI-powered solutions. Azure AI Foundry brings these services together in a single unified experience for AI development on the Azure cloud platform.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.prepare-to-develop-ai-solutions-azure.badge
+  type: badge
+  title: Prepare to develop AI solutions on Azure
+  summary: As an aspiring Azure AI Engineer, you should understand core concepts and principles of AI development, and the capabilities of Azure services used in AI solutions.
+  iconUrl: /training/achievements/azure-develop-ai-solutions.svg
+- uid: learn.language.rust-set-up-environment.badge
+  type: badge
+  title: Set up the Rust development environment
+  summary: Learn how to set up the Rust development environment, write a program, and use the Cargo build system.
+  iconUrl: /training/achievements/rust-set-up-environment.svg 
+- uid: learn.language.rust-modules-packages-crates.badge
+  type: badge
+  title: Explore modules, packages, and third-party crates
+  summary: Learn about how to effectively use modules and how to integrate with packages and third-party crates.
+  iconUrl: /training/achievements/rust-modules-packages-crates.svg
+- uid: learn.languages.rust-memory-management.badge
+  type: badge
+  title: Understand how Rust manages memory
+  summary: Discover the features that make Rust so unique - ownership and borrowing.
+  iconUrl: /training/achievements/rust-memory-management.svg
+- uid: learn.language.rust-loop-expressions.badge
+  type: badge
+  title: Use loops to iterate through data in Rust
+  summary: Explore how to use hash maps in Rust. Discover how to use loop expressions to iterate through data.
+  iconUrl: /training/achievements/rust-understand-common-concepts.svg
+- uid: learn.language.rust-introduction.badge
+  type: badge
+  title: What is Rust
+  summary: A quick introduction to Rust language features and how Rust compares with other programming languages.
+  iconUrl: /training/achievements/rust-get-started.svg
+- uid: learn.language.rust-if-else-expressions.badge
+  type: badge
+  title: Test conditions with if/else expressions in Rust
+  summary: Explore Rust compound data types like arrays and vectors. Discover how to use if/else statements to test conditions.
+  iconUrl: /training/achievements/rust-understand-common-concepts.svg 
+- uid: learn.language.rust-generic-types-traits.badge
+  type: badge
+  title: Implement generic types and traits
+  summary: Understand what generic types and traits are and how to use them in Rust.
+  iconUrl: /training/achievements/rust-generic-types-traits.svg 
+- uid: learn.language.rust-error-handling.badge
+  type: badge
+  title: Handle errors in Rust
+  summary: UIn this module, you'll learn about ways to handle errors in Rust.
+  iconUrl: /training/achievements/rust-error-handling.svg 
+- uid: learn.language.rust-create-command-line-program.badge
+  type: badge
+  title: Build a command-line to-do list program
+  summary: Create a command-line program to manage to-do list items.
+  iconUrl: /training/achievements/rust-create-command-line-program.svg
+- uid: learn.language.rust-create-program.badge
+  type: badge
+  title: Create your first Rust program
+  summary: Learn about Rust concepts, including variables, data types, and functions.
+  iconUrl: /training/achievements/rust-understand-common-concepts.svg 
+- uid: learn.languages.rust-first-steps.trophy
+  type: trophy
+  title: Take your first steps with Rust
+  summary: Interested in learning a new programming language that's growing in use and popularity? Start here! Lay the foundation of knowledge you need to build fast and effective programs in Rust.
+  iconUrl: /training/achievements/take-your-first-steps-with-rust.svg
+- uid: learn.language.rust-automated-tests.badge
+  type: badge
+  title: Write automated tests
+  summary: Learn about the types of testing you can do with Rust.
+  iconUrl: /training/achievements/rust-automated-tests.svg
+- uid: learn.azure.communication-service-send-sms-console-app.badge
+  type: badge
+  title: Send an SMS message from a C# console application with Azure Communication Services
+  summary: In this module, you'll create a C# console application that sends SMS messages using a phone number provisioned via Azure Communication Services.
+  iconUrl: /training/achievements/communication-service-send-sms-console-app.svg
+- uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.badge
+  type: badge
+  title: Track wild polar bears with AI
+  summary: Detect and track polar bears through photos using AI, and then use Power BI to show where cameras spot polar bears.
+  iconUrl: /training/achievements/student-evangelism/build-ml-model-with-azure-stream-analytics-badge.svg
+- uid: learn.reactors.blockchain-tokens.badge
+  type: badge
+  title: Create tokens using OpenZeppelin
+  summary: Learn about the significance of tokens and how they are used in blockchain.
+  iconUrl: /training/achievements/reactors/blockchain-tokens.svg
+- uid: learn.reactors.blockchain-solidity-ethereum-smart-contracts.badge
+  type: badge
+  title: Write Ethereum smart contracts by using Solidity
+  summary: Learn how to install and use tools that you can use to develop smart contracts.
+  iconUrl: /training/achievements/reactors/blockchain-solidity-ethereum-smart-contracts.svg
+- uid: learn.reactors.blockchain-learning-solidity.badge
+  type: badge
+  title: Learn how to use Solidity
+  summary: Discover how Solidity can make it easy to program smart contracts for the Ethereum blockchain platform.
+  iconUrl: /training/achievements/reactors/blockchain-learning-solidity.svg
+- uid: learn.reactors.blockchain-ethereum-networks.badge
+  type: badge
+  title: Connect and deploy to Ethereum networks
+  summary: Learn about and use Ethereum networks for development, testing, and production.
+  iconUrl: /training/achievements/reactors/blockchain-ethereum-networks.svg
+- uid: learn.ethereum-blockchain-development.trophy
+  type: trophy
+  title: Get started with blockchain development
+  summary: This learning path introduces you to blockchain and development on the Ethereum platform. Discover what skills are necessary to learn to begin building your own blockchain networks at scale.
+  iconUrl: /training/achievements/ethereum-blockchain-development.svg

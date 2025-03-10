@@ -8,7 +8,7 @@ metadata:
   description: Knowledge check
   author: wwlpublish
   ms.author: calopez
-  ms.date: 11/24/2024
+  ms.date: 12/12/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -21,7 +21,7 @@ quiz:
     choices:
       - content: "User interface design"
         isCorrect: false
-        explanation: "Incorrect. While important, the integration involves more than just UI design, focusing on secure and responsible AI use."
+        explanation: "Incorrect. While important, the integration involves more than just UI design, focusing on secure and ethical AI use."
       - content: "Security features and ethical AI usage"
         isCorrect: true
         explanation: "Correct. When integrating Azure OpenAI, it's crucial to consider security and ethical implications of AI use."

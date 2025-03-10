@@ -6,7 +6,7 @@
 
 Azure Storage Explorer has the following characteristics.
 
-- Azure Storage Explorer requires both management (Azure Resource Manager) and data layer permissions to allow full access to your resources. You need Microsoft Entra ID (formerly Azure Active Directory) permissions to access your storage account, the containers in your account, and the data in the containers.
+- Azure Storage Explorer requires both management (Azure Resource Manager) and data layer permissions to allow full access to your resources. You need Microsoft Entra ID permissions to access your storage account, the containers in your account, and the data in the containers.
 
 - Azure Storage Explorer lets you connect to different storage accounts.
    - Connect to storage accounts associated with your Azure subscriptions.
@@ -17,7 +17,7 @@ Azure Storage Explorer has the following characteristics.
 
 ### Things to consider when using Azure Storage Explorer
 
-Azure Storage Explorer supports many scenarios for working with storage accounts in global and national Azure. As you review these options, think about which scenarios apply to your Azure Storage implementation.
+Azure Storage Explorer supports many scenarios for working with storage accounts in Azure. As you review these options, think about which scenarios apply to your Azure Storage implementation.
 
 | Scenario | Description |
 | --- | --- |
@@ -45,3 +45,4 @@ Access keys provide access to the entire storage account. You're provided two ac
 > Store your access keys securely. We recommend regenerating your access keys regularly. 
 
 When you regenerate your access keys, you must update any Azure resources and applications that access this storage account to use the new keys. This action doesn't interrupt access to disks from your virtual machines.
+

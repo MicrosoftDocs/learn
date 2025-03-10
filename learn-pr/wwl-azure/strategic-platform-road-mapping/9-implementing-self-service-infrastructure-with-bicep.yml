@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.strategic-platform-road-mapping.implementing-self-service-infrastructure-with-bicep
+title: Implementing Self-Service Infrastructure with Bicep
+metadata:
+  title: Implementing Self-Service Infrastructure with Bicep
+  description: "This lab will guide you through using Bicep, an Infrastructure as Code (IaC) tool, to deploy and manage Azure resources in a self-service manner."
+  ms.date: 2/4/2025
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 20
+content: |
+  [!include[](includes/9-implementing-self-service-infrastructure-with-bicep.md)]

@@ -16,7 +16,7 @@ Let's review some characteristics of file share snapshots.
 
 - You can retrieve a share snapshot for an individual file. This level of support helps with restoring individual files rather than having to restore to the entire file share.
 
-- Share snapshots provide only file-level protection. They don't prevent fat-finger deletions on a file share or storage account. If you delete a file share that has share snapshots, all of its snapshots will be deleted along with the share.
+- Share snapshots provide only file-level protection. They don't prevent fat-finger deletions on a file share or storage account. If you delete a file share that has share snapshots, all of its snapshots are deleted along with the share.
 
 ### Things to consider when using file share snapshots
 
@@ -25,5 +25,6 @@ There are several benefits to using file share snapshots and having access to in
 | Benefit | Description |
 | --- | --- |
 | **_Protect against application error and data corruption_** | Applications that use file shares perform operations like writing, reading, storage, transmission, and processing. When an application is misconfigured or an unintentional bug is introduced, accidental overwrite or damage can happen to a few data blocks. To help protect against these scenarios, you can take a share snapshot before you deploy new application code. When a bug or application error is introduced with the new deployment, you can go back to a previous version of your data on that file share. |
-| **_Protect against accidental deletions or unintended changes_** | Imagine you're working on a text file in a file share. After the text file is closed, you lose the ability to undo your changes. In this scenario, you need to recover a previous version of your file. You can use share snapshots to recover previous versions of the file if it's accidentally renamed or deleted. |
+| **_Protect against accidental deletions or unintended changes_** | Imagine you're working on a text file in a file share. After the text file is closed, you lose the ability to undo your changes. In this scenario, you need to recover a previous version of your file. You can use share snapshots to recover previous versions of the deleted or renamed file.
 | **_Support backup and recovery_** | After you create a file share, you can periodically create a snapshot of the file share to use it for data backup. A share snapshot, when taken periodically, helps maintain previous versions of data that can be used for future audit requirements or disaster recovery. |
+

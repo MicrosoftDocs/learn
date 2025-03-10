@@ -1,5 +1,3 @@
-
-
 Contoso plans to increase the use of virtualization to optimize their computing environment as many physical servers are underutilized. In addition, there are plans to expand into additional sites and use virtualization to help expedite bringing a new site online. Bearing this in mind, it's important you can determine an appropriate method of licensing and activating these new VMs. 
 
 ## What is Automatic Virtual Machine Activation?
@@ -19,6 +17,8 @@ On Hyper-V hosts that are activated with Volume Licensing or OEM Licensing, Cont
 
 Your virtualization host must be running one of the following operating systems:
 
+- Windows Server 2025 Datacenter.
+- Windows Server 2022 Datacenter.
 - Windows Server 2019 Datacenter.
 - Windows Server 2016 Datacenter.
 - Windows Server 2012 Datacenter R2.
@@ -27,6 +27,8 @@ The following table describes the available activation options based on the oper
 
 | Host OS                | Supported guest OS                                           |
 | ---------------------- | ------------------------------------------------------------ |
+| Windows Server 2025    | Windows Server 2025, Windows Server 2022, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 |
+| Windows Server 2022    | Windows Server 2022, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 |
 | Windows Server 2019    | Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 |
 | Windows Server 2016    | Windows Server 2016, Windows Server 2012 R2                  |
 | Windows Server 2012 R2 | Windows Server 2012 R2                                       |
@@ -47,30 +49,3 @@ slmgr /ipk <AVMA_key>
 ```
 
 The VM will now activate.
-
-## AVMA keys
-
-The key you use varies depending on operating system version and edition. You can use the following AVMA keys for Windows Server 2019.
-
-| Edition    | AVMA key                      |
-| :--------- | :---------------------------- |
-| Datacenter | H3RNG-8C32Q-Q8FRX-6TDXV-WMBMW |
-| Standard   | TNK62-RXVTB-4P47B-2D623-4GF74 |
-| Essentials | 2CTP7-NHT64-BP62M-FV6GG-HFV28 |
-
-You can use the following AVMA keys for Windows Server, versions 1909, 1903, and 1809.
-
-| Edition    | AVMA key                      |
-| :--------- | :---------------------------- |
-| Datacenter | H3RNG-8C32Q-Q8FRX-6TDXV-WMBMW |
-| Standard   | TNK62-RXVTB-4P47B-2D623-4GF74 |
-
-You can use the following AVMA keys for Windows Server, version 1803 and 1709.
-
-| Edition    | AVMA key                      |
-| :--------- | :---------------------------- |
-| Datacenter | TMJ3Y-NTRTM-FJYXT-T22BY-CWG3J |
-| Standard   | C3RCX-M6NRP-6CXC9-TW2F2-4RHYD |
-
-> [!CAUTION]
-> This activation method does not work with other Virtualization Server technologies.

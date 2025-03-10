@@ -1,17 +1,17 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.manage-microsoft-fabric-environment
 metadata:
-  title: Manage and optimize a Microsoft Fabric environment
-  description: Microsoft Fabric is a Software-as-a-Service platform for data analytics. Learn how to manage and optimize your environment through Continuous Integration/Continuous Deployment (CI/CD), monitoring, performance optimization, and security.
+  title: Manage a Microsoft Fabric environment
+  description: Microsoft Fabric is a Software-as-a-Service platform for data analytics. Learn how to manage your environment through Continuous Integration/Continuous Deployment (CI/CD), monitoring, and security.
   ms.date: 12/04/2024
   author: angierudduck
   ms.author: anrudduc
   ms.topic: learning-path
-title: Manage and optimize a Microsoft Fabric environment
+title: Manage a Microsoft Fabric environment
 prerequisites: |
   Before starting this learning path, you should have experience with Microsoft Fabric or Power BI. You should also have a basic understanding of data engineering and management concepts.
 summary: |
-  Microsoft Fabric is a Software-as-a-Service platform for data analytics. Learn how to manage and optimize your environment through Continuous Integration/Continuous Deployment (CI/CD), monitoring, performance optimization, and security.
+  Microsoft Fabric is a Software-as-a-Service platform for data analytics. Learn how to manage your environment through Continuous Integration/Continuous Deployment (CI/CD), monitoring, and security.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate
@@ -29,7 +29,6 @@ subjects:
 modules:
 - learn-wwl.implement-cicd-in-fabric
 - learn.wwl.monitor-fabric-items
-- learn.wwl.optimize-performance-microsoft-fabric
 - learn-wwl.secure-data-access-in-fabric
 - learn.wwl.administer-fabric
 trophy:

@@ -6,8 +6,8 @@ metadata:
   title: "Introduction to Azure Sphere"
   description: "Learn how to evaluate whether Azure Sphere is the right product for creating IoT applications."
   ms.date: 07/20/2024
-  author: leestott
-  ms.author: chnoring
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: module-standard-task-based
   ms.custom: team=cloud_advocates
   ms.service: azure-sphere
@@ -24,6 +24,7 @@ prerequisites: |
     - Basic understanding of IoT  
     - Basic understanding of IoT Edge
 iconUrl: /training/achievements/student-evangelism/introduction-to-azure-sphere.svg
+hidden: true
 badge:
   uid: learn.oxford.intro-to-azure-sphere.badge
 levels:

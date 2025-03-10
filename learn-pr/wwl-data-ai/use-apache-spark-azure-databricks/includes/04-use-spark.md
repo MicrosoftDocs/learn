@@ -17,5 +17,5 @@ Notebooks consist of one or more *cells*, each containing either code or markdow
 - The ability to export results.
 
 > [!TIP]
-> To learn more about working with notebooks in Azure Databricks, see the [Notebooks](/azure/databricks/notebooks/) article in the Azure Databricks documentation.
+> For more information about working with notebooks in Azure Databricks, see the **[Notebooks](/azure/databricks/notebooks/)** article in the Azure Databricks documentation.
 

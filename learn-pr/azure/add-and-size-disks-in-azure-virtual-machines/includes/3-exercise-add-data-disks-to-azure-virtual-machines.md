@@ -1,7 +1,7 @@
 Your law firm is expanding its case load, and you're tasked with creating a new Linux web server to store critical documents from various sources: clients, other law firms, and law-enforcement offices. The web server lets you upload documents and store them on disk.
 
 > [!TIP]
-> This exercise uses Linux as the example, but the basic process of creating VMs and adding disks is the same for Windows. The primary difference would be in partitioning and formatting the disk. On Windows, you can connect to your VM over Remote Desktop and use the built-in Disk Management tools or deploy a PowerShell script that's similar to the Bash script you'll use here.
+> This exercise uses Linux as the example, but the basic process of creating VMs and adding disks is the same for Windows. The primary difference is in partitioning and formatting the disk. On Windows, you can connect to your VM over Remote Desktop and use the built-in Disk Management tools or deploy a PowerShell script that's similar to the Bash script you'll use here.
 
 Your goal is to create a Linux VM and attach a new virtual hard disk (VHD) named **uploadDataDisk1** to store the `/uploads` directory.
 
@@ -9,13 +9,13 @@ Your goal is to create a Linux VM and attach a new virtual hard disk (VHD) named
 
 The Azure CLI lets you set default values so you don't have to repeat them each time you run a command.
 
-You specify the default Azure location, or region. This location is where your Azure VM is placed.
+You can specify the default Azure location, or region. This location is where your Azure VM is placed.
 
 Ideally, this location is close to your clients. In this case, select the closest region to you from the locations available to the Azure sandbox.
 
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note.md)]
 
-1. Run `az configure` to set the default location you want to use. Replace **eastus** with the location chosen in the previous step.
+1. Run `az configure` to set the default location you want to use. Replace **eastus** with the location you chose in the previous step.
 
     ```azurecli
     az configure --defaults location=eastus
@@ -49,7 +49,7 @@ Here, you create a Linux VM to host your web server.
     * The admin username is **azureuser**. In practice, this name can be whatever you like.
     * The `--generate-ssh-keys` argument generates an SSH keypair for you, allowing you to connect to your VM over SSH.
 
-    The VM takes a few minutes to deploy. When the VM is ready, you see information about it in JSON format. Here's an example:
+    The VM takes a few minutes to deploy. When the VM is ready, you get information about it in JSON format. Here's an example:
 
     ```json
     {
@@ -70,7 +70,7 @@ Here, you create a Linux VM to host your web server.
 
 ## Add an empty data disk to your VM
 
-Here, you create an empty data disk and attach it to your VM. Initially, Your data disk is 64 GB in size. Later, you mount this disk to the `/uploads` directory on your VM.
+Here, you create an empty data disk and attach it to your VM. Initially, Your data disk is 64 GB in size. Later, you'll mount this disk to the `/uploads` directory on your VM.
 
 > [!TIP]
 > For learning purposes, you're creating the VM and data disk as separate steps. In practice, you can specify the `--data-disk-sizes-gb` argument to the `az vm create` command to add data disks when the VM is created.
@@ -89,7 +89,7 @@ Here, you create an empty data disk and attach it to your VM. Initially, Your da
     This command:
 
     * Names the disk **uploadDataDisk1**.
-    * Sets its size to be 64 GB.
+    * Sets its size to 64 GB.
     * Specifies the use of premium storage with local redundancy.
 
 To use the disk, you need to partition and format it. Let's do that next.
@@ -98,11 +98,11 @@ To use the disk, you need to partition and format it. Let's do that next.
 
 Your empty data drive needs to be initialized and formatted. The process to do that is the same as for a physical disk.
 
-For one-time tasks, you might manually connect to your VM over SSH and run the commands you need.  However, to make the process more repeatable and less error-prone, you can specify your commands in a Bash script or a PowerShell script (if it's available).
+For one-time tasks, you might manually connect to your VM over SSH and run the commands you need. However, to make the process more repeatable and less error-prone, you can specify your commands in a Bash script or a PowerShell script (if it's available).
 
 Using a script to automate the process has an added benefit: your script serves as documentation for how the process is performed. Others can read your script to understand how the system is configured. If you need to change the process, you can just modify your script and test it on a temporary scratch VM before you deploy your change to production.
 
-To automate the process in this lesson, you use the *Custom Script Extension*. The Custom Script Extension is an easy way to download and run scripts on your Azure VMs. It's just one of the many ways you can configure the system after your VM is up and running.
+To automate the process in this lesson, you can use the *Custom Script Extension*. The Custom Script Extension is an easy way to download and run scripts on your Azure VMs. It's just one of the many ways you can configure the system after your VM is up and running.
 
 You can store your scripts in Azure storage, or in a public location such as GitHub. You can run scripts manually or as part of a more automated deployment. Here, you run an Azure CLI command to download a premade Bash script from GitHub and execute it on your VM.
 
@@ -138,7 +138,7 @@ For learning purposes, let's also run a few commands on your VM to verify that t
     └─sda1    8:1    0 29.9G  0 part /
     ```
 
-    Notice that the 64-GB drive, `sdc`,  you  created isn't mounted. The drive is listed this way because it isn't initialized yet.
+    Notice that the 64-GB drive (`sdc`) you created isn't mounted. The drive is listed this way because it isn't initialized yet.
 
 1. Run the following `az vm extension set` command to run the premade Bash script on your VM.
 
@@ -170,7 +170,7 @@ For learning purposes, let's also run a few commands on your VM to verify that t
     ssh azureuser@$ipaddress lsblk
     ```
 
-    You see that `sdc/sdc1` is partitioned and mounted to the `/uploads` directory as you expect.
+    You should find that `sdc/sdc1` is partitioned and mounted to the `/uploads` directory as you expect.
 
     ```output
     NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT

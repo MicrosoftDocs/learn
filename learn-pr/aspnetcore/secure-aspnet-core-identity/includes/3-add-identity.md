@@ -141,7 +141,7 @@ The default Identity implementation can be added with `dotnet` command-line tool
     * The `RazorPagesPizzaAuthConnection` connection string is read from *appsettings.json*.
     * The EF Core database context class, named `RazorPagesPizzaAuth`, is configured with the connection string.
     * The Identity services are registered, including the default UI, token providers, and cookie-based authentication.
-        * `.AddDefaultIdentity<IdentityUser>` tells the Identity services to use the default user model.
+        * `.AddDefaultIdentity<RazorPagesPizzaUser>` tells the Identity services to use the custom `RazorPagesPizzaUser` user model.
         * The lambda expression `options => options.SignIn.RequireConfirmedAccount = true` specifies that users must confirm their email accounts.
         * `.AddEntityFrameworkStores<RazorPagesPizzaAuth>()` specifies that Identity uses the default Entity Framework Core store for its database. The `RazorPagesPizzaAuth` `DbContext` class is used.
 

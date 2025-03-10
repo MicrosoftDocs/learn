@@ -2,11 +2,9 @@
 uid: learn.wwl.explore-azure-databases.consider-security-recommendations-for-blob-storage
 title: Consider security recommendations for Blob storage
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Consider security recommendations for Blob storage
   description: "Review multiple recommendations designed to improve security when using Blob storage."
-  ms.date: 08/01/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

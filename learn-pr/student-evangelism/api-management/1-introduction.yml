@@ -6,8 +6,9 @@ metadata:
   prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
-  author: softchris
-  ms.author: chnoring
+  author: dlepow
+  ms.author: danlep
+  manager: susanpotter
   ms.date: 06/30/2024
   ms.topic: unit
 durationInMinutes: 3

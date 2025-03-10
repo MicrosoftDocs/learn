@@ -17,5 +17,5 @@ For more information about Azure Backup, see the following articles:
 - [Built-in monitoring and alerting capabilities](/azure/backup/backup-azure-monitoring-built-in-monitor?azure-portal=true)
 - [Azure Files - Snapshot management by Azure Backup](/azure/backup/backup-afs?azure-portal=true)
 - [Back up SQL Server databases running on Azure VMs](/azure/backup/backup-azure-sql-database?azure-portal=true)
-- [Backup SAP High-performance Analytic Appliance (HANA) databases running on Azure VMs](/azure/backup/backup-azure-sap-hana-database?azure-portal=true)
+- [Backup SAP HANA (High-performance Analytic Appliance) databases running on Azure VMs](/azure/backup/backup-azure-sap-hana-database?azure-portal=true)
 - [Azure Data Protection Manager (DPM)](/azure/backup/backup-azure-dpm-introduction?azure-portal=true) and [Azure Backup Server (MABS)](/azure/backup/backup-mabs-protection-matrix?azure-portal=true)

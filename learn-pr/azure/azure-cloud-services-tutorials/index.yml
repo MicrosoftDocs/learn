@@ -2,7 +2,7 @@
 uid: learn.azure.azure-cloud-services-tutorials-mrtk
 metadata:
   title: Integrate Azure Cloud Services to your Unity project on HoloLens 2
-  description: Add Azure Cloud Services such as Azure Storage, Azure Custom Vision, and Azure Spatial Anchors for your mixed reality application.
+  description: Add Azure Cloud Services such as Azure Storage and Azure Custom Vision for your mixed reality application.
   ms.date: 01/11/2024
   author: marlenaklein-msft
   ms.author: marlenaklein
@@ -47,8 +47,6 @@ units:
 - learn.azure.azure-cloud-services-tutorials-mrtk.5-exercise-integrate-azure-storage
 - learn.azure.azure-cloud-services-tutorials-mrtk.6-integrate-azure-custom-vision
 - learn.azure.azure-cloud-services-tutorials-mrtk.7-exercise-integrate-azure-custom-vision
-- learn.azure.azure-cloud-services-tutorials-mrtk.8-integrate-azure-spatial-anchors
-- learn.azure.azure-cloud-services-tutorials-mrtk.9-exercise-integrate-azure-spatial-anchors
 - learn.azure.azure-cloud-services-tutorials-mrtk.12-knowledge-check
 - learn.azure.azure-cloud-services-tutorials-mrtk.13-summary
 

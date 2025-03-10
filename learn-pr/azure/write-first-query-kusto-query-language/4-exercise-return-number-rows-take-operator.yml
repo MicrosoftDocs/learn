@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Return a specific number of rows by using the take operator
   description: Exercise - Return a specific number of rows by using the take operator.
   ms.date: 10/16/2024
-  author: YaelSchuster
-  ms.author: yaschust
+  author: shsagir
+  ms.author: shsagir
   ms.topic: unit
 durationInMinutes: 5 
 content: |

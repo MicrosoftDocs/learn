@@ -29,7 +29,6 @@ modules:
 - learn.azure.create-resource-manager-template-vs-code
 - learn.deploy-vms-from-vhd-templates
 - learn.build-app-with-scale-sets
-- learn.choose-azure-service-to-integrate-and-automate-business-processes
 - learn.intro-to-hpc
 - learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli
 trophy:

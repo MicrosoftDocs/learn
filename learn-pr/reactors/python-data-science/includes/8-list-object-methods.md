@@ -1,4 +1,4 @@
-Python includes a number of handy methods that are available to all lists.
+Python includes several handy methods that are available to all lists.
 
 For example, use [append()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) and [extend()](https://docs.python.org/3.6/tutorial/datastructures.html?azure-portal=true) to add to the end of a list. These methods work on lists much like an augmentation ("+=") operator works on other variables.
 
@@ -126,7 +126,7 @@ groupMembers
 The output is:
 
 ```Output
-['Quinn', 'Jordan', 'Parker', 'Riley']
+['Jordan', 'Parker', 'Quinn', 'Riley']
 ```
 
 ### Try it yourself
@@ -149,7 +149,7 @@ The output is:
   The output is:
   
   ```Output
-  ['Quinn', 'Jordan', 'Parker', 'Riley', [...]]
+  ['Quinn', 'Jordan', 'Parker', 'Riley', 'Quinn', 'Jordan', 'Parker', 'Riley']
   ```
   
   The next input is:
@@ -162,7 +162,7 @@ The output is:
   Here's the output:
   
   ```Output
-  ['Quinn', 'Jordan', 'Parker', 'Riley', 'Quinn', 'Jordan', 'Parker', 'Riley']
+  ['Quinn', 'Jordan', 'Parker', 'Riley', ['Quinn', 'Jordan', 'Parker', 'Riley']]
   ```
   
 </details>
@@ -172,4 +172,4 @@ The output is:
 ***
 
 > [!NOTE]
-> You can supply your own *lambda function* for the `sort()` method, for use in comparing items in a list. We'll cover lambda functions in a later unit.
+> You can supply your own *lambda function* for the `sort()` method, for use in comparing items in a list. We cover lambda functions in a later unit.

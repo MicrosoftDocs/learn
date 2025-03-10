@@ -6,9 +6,9 @@ metadata:
   prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
-  ms.date: 07/25/2024
+  ms.date: 12/12/2024
   author: wwlpublish
-  ms.author: madiepev
+  ms.author: gmalc
   ms.topic: unit
 azureSandbox: false
 labModal: false

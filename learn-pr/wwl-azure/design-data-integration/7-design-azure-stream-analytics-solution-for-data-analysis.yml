@@ -2,16 +2,14 @@
 uid: learn.wwl.design-data-integration.design-azure-stream-analytics-solution-for-data-analysis
 title: Design an Azure Stream Analytics solution for data analysis
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design an Azure Stream Analytics solution for data analysis
   description: "Design an Azure Stream Analytics solution for data analysis"
-  ms.date: 07/30/2024
+  ms.date: 12/11/2024
   author: wwlpublish
   ms.author: jileary
   ms.topic: unit
-azureSandbox: false
-labModal: false
-durationInMinutes: 6
+  ms.custom:
+  - N/A
+durationInMinutes: 7
 content: |
   [!include[](includes/7-design-azure-stream-analytics-solution-for-data-analysis.md)]

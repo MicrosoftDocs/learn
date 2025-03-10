@@ -1,6 +1,6 @@
 In this exercise, create an AKS cluster that uses several nodes to meet the demand of many customers using the service. You decide to use the *single control plane and multiple nodes* architecture because it provides the best way to create and manage workload resources.
 
-AKS supports both Linux and Windows node pools via the Portal or Azure CLI, however, if you're going to use Windows node pools, the cluster must be created with extra **prerequisites** and commands. Select an OS based on which type of node pools you want to add.
+AKS supports both Linux and Windows node pools via the Portal or Azure CLI. However, if you're going to use Windows node pools, the cluster must be created with extra **prerequisites** and commands. Select an OS based on which type of node pools you want to add.
 
 [!INCLUDE [azure-exercise-subscription-prerequisite](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
@@ -13,6 +13,8 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
 
     > [!IMPORTANT]
     > We'll run all the scripts with Bash, so if you haven't created a Cloud Shell yet, select *Bash* as the running shell.
+
+1. In the Cloud Shell window, select **Settings** > **Go to Classic version**.
 
 1. Create variables for the configuration values you reuse throughout the exercises.
 
@@ -69,6 +71,8 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
 
     > [!IMPORTANT]
     > We'll run all the scripts with Bash, so if you haven't created a Cloud Shell yet, select *Bash* as the running shell.
+
+1. In the Cloud Shell window, select the **More** icon (**...**), then select **Settings** > **Go to Classic version**.
 
 1. Create variables for the configuration values you reuse throughout the exercises.
 

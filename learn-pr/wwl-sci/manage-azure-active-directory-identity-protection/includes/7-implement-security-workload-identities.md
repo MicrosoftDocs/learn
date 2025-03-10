@@ -2,9 +2,9 @@ Microsoft Entra Identity Protection has historically protected users in detectin
 
 A workload identity is an identity that allows an application or service principal access to resources, sometimes in the context of a user. These workload identities differ from traditional user accounts as they:
 
- -  Can’t perform multifactor authentication.
- -  Often have no formal lifecycle process.
- -  Need to store their credentials or secrets somewhere.
+- Can’t perform multifactor authentication.
+- Often have no formal lifecycle process.
+- Need to store their credentials or secrets somewhere.
 
 These differences make workload identities harder to manage and put them at higher risk for compromise.
 
@@ -12,14 +12,13 @@ These differences make workload identities harder to manage and put them at high
 
 To make use of workload identity risk, including the new Risky workload identities (preview) blade and the Workload identity detections tab in the Risk detections blade, in the Azure portal you must have the following.
 
- -  Microsoft Entra ID Premium P2 licensing
- -  Logged in user must be assigned either:
+- Microsoft Entra ID Premium P2 licensing
+- Logged in user must be assigned either:
     
-    
-     -  Global administrator
-     -  Security administrator
-     -  Security operator
-     -  Security reader
+    - Global administrator
+    - Security administrator
+    - Security operator
+    - Security reader
 
 ### What types of risks are detected?
 

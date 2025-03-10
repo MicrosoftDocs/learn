@@ -9,7 +9,6 @@ You can review Server Manager event logs for all servers, for a specific server,
 ![This screenshot displays the EVENTS node in Local Server in Server Manager. A Warning event has been selected that relates to the Microsoft-Windows-Time-Service.](../media/server-manager-events.png)
 
 - All Servers. This view displays event logs from all servers that Server Manager is monitoring.
-
 - AD DS, DNS, and Remote Access. This view displays event logs from all servers that Server Manager is monitoring and that have specific server roles installed, such as AD DS, DNS, or the Remote Access role. These logs display specific information that the AD DS, DNS, or the Remote Access server roles generate. For example, the following screenshot displays events relating to AD DS; specifically an error related to DFSR.
 
 ![This screenshot displays events relating to AD DS; specifically an error related to DFSR.](../media/server-manager-active-directory-domain-services-events.png)
@@ -19,6 +18,4 @@ You can review Server Manager event logs for all servers, for a specific server,
 You can further customize event log views by:
 
 - Creating queries for specific types of events that must display. You can save these queries and use them later when you're searching for events that are defined in the query criteria.
-
-- Configuring event data that needs to display. You can choose what type of events to display, such as Critical, Error, Warning, and Informational. Additionally, you can choose the event log files from where the events will display, such as Application, Directory Service, DNS Server, Security, System, and Setup.
-
+- Configuring event data that needs to display. You can choose what type of events to display, such as Critical, Error, Warning, and Informational. Additionally, you can choose the event log files from where the events display, such as Application, Directory Service, DNS Server, Security, System, and Setup.

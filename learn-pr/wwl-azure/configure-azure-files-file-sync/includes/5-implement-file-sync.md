@@ -20,7 +20,7 @@ Let's take a look at the characteristics of soft delete for Azure Files.
 
 There are many advantages to using soft delete for Azure Files. Consider the following scenarios, and think about how you can use soft delete.
 
-- **Recover from accidental data loss**. Use soft delete to recover data that is deleted or corrupted.
+- **Recover from accidental data loss**. You can recover deleted or corrupted data with soft delete.
 
 - **Upgrade scenarios**. Use soft delete to restore to a known good state after a failed upgrade attempt.
 
@@ -29,4 +29,5 @@ There are many advantages to using soft delete for Azure Files. Consider the fol
 - **Long-term retention**. Use soft delete to comply with data retention requirements.
 
 - **Business continuity**. Use soft delete to prepare your infrastructure to be highly available for critical workloads.
+
 

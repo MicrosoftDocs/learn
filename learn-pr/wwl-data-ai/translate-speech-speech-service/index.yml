@@ -6,8 +6,8 @@ metadata:
   title: Translate speech with the Azure AI Speech service
   description: Translate speech with the Azure AI Speech service
   author: wwlpublish
-  ms.author: gmalc
-  ms.date: 08/20/2024
+  ms.author: berryivor
+  ms.date: 12/13/2024
   ms.service: azure-ai-speech
   ms.topic: module-standard-task-based
   ms.collection:

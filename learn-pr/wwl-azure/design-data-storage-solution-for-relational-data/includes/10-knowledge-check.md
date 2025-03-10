@@ -1,4 +1,5 @@
 
+
 Tailwind Traders has several workloads that are being migrated to Azure. You're reviewing all application database requirements to recommend the appropriate solution. Your design has to accommodate the following scenarios:
 
 - **Inventory application**. You plan to migrate the inventory application with a database to the cloud, but you use a third-party application that requires Windows authentication. You also need full control and customization, including OS access.
@@ -9,4 +10,4 @@ Tailwind Traders has several workloads that are being migrated to Azure. You're 
 
 ### Answer the following questions
 
-Choose the best response for each of the questions. 
+Choose the best response for each question.

@@ -2,11 +2,9 @@
 uid: learn.wwl.explore-azure-compute.scale-azure-virtual-machines
 title: Scale Azure Virtual Machines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Scale Azure Virtual Machines
   description: "Change the size of your virtual machine based on the required CPU, network, or disk performance."
-  ms.date: 09/19/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

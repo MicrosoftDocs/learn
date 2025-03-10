@@ -2,9 +2,11 @@
 uid: learn.wwl.design-application-architecture.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
-  ms.date: 12/08/2024
+  ms.date: 02/03/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

@@ -6,12 +6,12 @@ metadata:
   prefetch-feature-rollout: true
   title: Determine replication strategies
   description: "Determine replication strategies"
-  ms.date: 08/06/2024
+  ms.date: 12/20/2024
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 4
+durationInMinutes: 7
 content: |
   [!include[](includes/5-determine-replication-strategies.md)]

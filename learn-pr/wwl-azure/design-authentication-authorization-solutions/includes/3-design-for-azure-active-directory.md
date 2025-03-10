@@ -1,4 +1,3 @@
-
 [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis) is the Azure solution for identity and access management. Microsoft Entra ID is a multitenant, cloud-based directory, and identity management service. It combines core directory services, application access management, and identity protection into a single solution. Microsoft Entra ID can be used in cloud or hybrid environments. 
 
 :::image type="content" source="../media/on-premises-identities.png" alt-text="Diagram that shows how Microsoft Entra Connect syncs Active Directory Domain Services and Microsoft Entra ID." border="false":::
@@ -31,7 +30,7 @@ Tailwind Traders plans to use Microsoft Entra ID in its identity management solu
 
 - **Consider limiting account synchronization**. Don't synchronize accounts to Active Directory that have high privileges in your existing Microsoft Entra Tailwind Traders instance. By default, Microsoft Entra Connect filters out these high privileged accounts. This configuration mitigates the risk of adversaries pivoting from cloud to on-premises assets (which could result in a major incident).
 
-- **Consider password hash synchronization**. Enable [password hash synchronization](/azure/active-directory/hybrid/whatis-phs) to sync user password hashes from an on-premises Microsoft Entra instance to a cloud-based Microsoft Entra instance. This sync helps to protect Tailwind Traders against leaked credentials being replayed from previous sign-ins.
+- **Consider password hash synchronization**. Enable [password hash synchronization](/azure/active-directory/hybrid/whatis-phs) to sync user password hashes from on-premises to a cloud-based Microsoft Entra instance. This sync helps to protect Tailwind Traders against leaked credentials being replayed from previous sign-ins.
 
 - **Consider single sign-on (SSO)**. Enable SSO to reduce the need for multiple passwords. Multiple passwords increase the likelihood of users reusing passwords or using weak passwords. With SSO, users provide their primary work or school account for their domain-joined devices and company resources. Their application access can be automatically provisioned (or deprovisioned) based on their Tailwind Traders organization group memberships and their status as an employee. 
 

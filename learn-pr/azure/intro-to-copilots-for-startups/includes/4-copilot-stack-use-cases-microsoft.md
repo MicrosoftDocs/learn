@@ -92,7 +92,7 @@ Microsoft 365 Copilot uses prompts that are designed to make your writing easier
 
 *Here's a video that explains the Microsoft 365 Copilot system:*
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW190cN]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c9ea790e-a543-4548-b433-3bf39f30e225]
 
 ### Takeaways - Microsoft 365 Copilot
 

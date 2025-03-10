@@ -8,8 +8,8 @@ Create a new Blazor pagination template component file and pagination controls.
 
 ### Create the file and add the markup
 
-1. In your Blazor app project in Visual Studio Code, create a new folder named *Components*, and then create a new file in the folder named *PaginationComponent.razor*.
-1. Add the following Razor markup to the newly created template component:
+1. In your Blazor app project in Visual Studio Code, create a new folder named *Components*. In the *Components* folder, create a new file named *PaginationComponent.razor*.
+1. In the newly created template component, add the following Razor markup:
 
    ```razor
    @typeparam TItem
@@ -50,7 +50,7 @@ Create a new Blazor pagination template component file and pagination controls.
 
 The markup accepts a generic type parameter `TItem`, defines a container to display the selected item, and uses a `<nav>` element to display the pagination controls.
 
-The controls use a `<ul>` element with each list item being a page number. The page number is defined by the `ItemLabel` render fragment, which passes in as a parameter. The `ItemLabel` render fragment is defined in the component that uses the template.
+The controls use a `<ul>` element with each list item being a page number. The page number is defined based on the `ItemLabel` render fragment, which is passed in to the method as a parameter. The `ItemLabel` render fragment is defined in the component that uses the template.
 
 ### Add the code directive
 

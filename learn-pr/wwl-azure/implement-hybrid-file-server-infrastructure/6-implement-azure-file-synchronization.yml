@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Implement Azure File Sync
   description: "Implement Azure File Sync"
-  ms.date: 05/17/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit

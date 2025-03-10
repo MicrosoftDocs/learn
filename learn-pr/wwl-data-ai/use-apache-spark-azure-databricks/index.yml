@@ -5,9 +5,9 @@ metadata:
   prefetch-feature-rollout: true
   title: Use Apache Spark in Azure Databricks
   description: Use Apache Spark in Azure Databricks
-  ms.date: 08/29/2023
+  ms.date: 12/12/2024
   author: wwlpublish
-  ms.author: jamesh
+  ms.author: gmalc
   ms.topic: module
   ms.service: azure
 title: Use Apache Spark in Azure Databricks

@@ -12,7 +12,16 @@ The main takeaways from this module are:
 
 - Application security groups provide an application-centric view of infrastructure and simplify rule management.
 
-## Learn more
+## Learn more with Copilot
+Copilot can assist you in designing Azure infrastructure solutions. Copilot can compare, recommend, explain, and research products and services where you need more information. Open a Microsoft Edge browser and choose Copilot (top right) or navigate to copilot.microsoft.com. Take a few minutes to try these prompts and extend your learning with Copilot.
+
+- What is the difference between an Azure network security group and an application security group? Provide usage examples. 
+
+- Can you explain NSG rules in detail?
+
+- How can I troubleshoot network security group rules?
+
+## Learn more with documentation
 
 - [Read about network security groups](/azure/virtual-network/security-overview). This article describes the properties of a network security group rule, the default security rules that are applied, and the rule properties that you can modify.
 

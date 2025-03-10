@@ -63,7 +63,7 @@ The following video demonstrates how to configure DHCP server options using Serv
 5. Select **Server Options**.
 6. Configure the appropriate options for this DHCP server.
 
- >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWxDP3]
+ >[!VIDEO https://learn-video.azurefd.net/vod/player?id=5b2d7bc6-8c71-4f44-b935-419f2396ba8e]
 
 ---
 

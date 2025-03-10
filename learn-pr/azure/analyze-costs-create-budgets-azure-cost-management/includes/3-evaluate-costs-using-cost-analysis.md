@@ -10,13 +10,13 @@ This unit describes how you can use cost analysis, with several different defaul
 
 **Pivot (donut) charts:** This view provides dynamic pivots, breaking down the total cost by a common set of standard properties. They show the largest to smallest costs for the current month. You can change pivot charts at any time by selecting a different pivot. Cost categories include service (meter category), location (region), and child scope by default. For example, enrollment accounts are under billing accounts, resource groups are under subscriptions, and resources are under resource groups.
 
-![Screenshot of initial view of cost analysis in the Azure portal.](../media/3-cost-analysis.png)
+:::image type="content" source="../media/3-cost-analysis.png" border="true" alt-text="Screenshot of initial view of cost analysis in the Azure portal." lightbox="../media/3-cost-analysis.png" :::
 
 ## Customized cost views
 
 Let's look at each cost view in more detail.
 
-![Screenshot of Cost Analysis panel with callout around the Built-In view options with Cost By Service selected.](../media/3-customized-cost-views.png)
+:::image type="content" source="../media/3-customized-cost-views.png" border="true" alt-text="Screenshot of Cost Analysis panel with callout around the Built-In view options with Cost By Service selected." lightbox="../media/3-customized-cost-views.png" :::
 
 **Accumulated costs:** By default, cost analysis shows data for the current month. You can use the date selector to switch to common date ranges quickly. Examples include the last seven days, the last month, the current year, or a custom date range. Pay-as-you-go subscriptions also include date ranges based on your billing period (which isn't bound to the calendar month), like the current billing period or last invoice. Use the **PREVIOUS** and **NEXT** links at the top of the menu to jump to the previous or next period, respectively. For example, **PREVIOUS** switches from the **Last 7 days** to **8-14 days ago** or **15-21 days ago**.
 
@@ -24,7 +24,7 @@ Cost analysis shows **accumulated** costs by default. Accumulated costs include 
 
 **Cost by resource:** The cost by resource view shows a table of grouped resources sorted by highest cost.
 
-![Screenshot of Cost By Resource report for a fictitious resource group.](../media/3-cost-by-resource-table.png)
+:::image type="content" source="../media/3-cost-by-resource-table.png" border="true" alt-text="Screenshot of Cost By Resource report for a fictitious resource group." lightbox="../media/3-cost-by-resource-table.png" :::
 
 This view answers the question: Which resources cost the most so far this month?
 
@@ -34,7 +34,7 @@ When your daily costs are consistently above the estimated daily budget, you can
 
 Here's a daily view of recent spending.
 
-![Screenshot of daily view showing example daily costs for the current month.](../media/3-daily-view.png)
+:::image type="content" source="../media/3-daily-view.png" border="true" alt-text="Screenshot of daily view showing example daily costs for the current month." lightbox="../media/3-daily-view.png" :::
 
 This view answers the question: Have there been any increases in the costs per day for the last 30 days?
 
@@ -50,11 +50,12 @@ Cost Management has many grouping and filtering options. In this module's summar
 
 Let's look at Azure service costs for the current month. You should see a graph like the following example:
 
-![Screenshot of grouped daily accumulated view showing example Azure service costs for last month.](../media/3-grouped-daily-accum-view.png)
+:::image type="content" source="../media/3-grouped-daily-accum-view.png" border="true" alt-text="Screenshot of grouped daily accumulated view showing example Azure service costs for last month." lightbox="../media/3-grouped-daily-accum-view.png" :::
 
 By default, cost analysis shows all usage and purchase costs as they're accrued. This cost shows on your invoice and is also known as **Actual cost**. Viewing actual cost is ideal for reconciling your invoice. However, purchase spikes in cost can be alarming when you're keeping an eye out for spending anomalies and other changes in cost. To flatten out spikes caused by reservation purchase costs, switch to **Amortized cost**.
 
-![Screenshot showing actual cost and amortized cost selection.](../media/3-metric-picker.png)
+
+:::image type="content" source="../media/3-metric-picker.png" border="true" alt-text="Screenshot showing actual cost and amortized cost selection." lightbox="../media/3-metric-picker.png" :::
 
 Amortized cost breaks down reservation purchases into daily chunks and spreads them over the duration of the reservation term. For example, instead of seeing a USD 365.00 purchase on January 1, you'll see a USD 1.00 purchase every day from January 1 to December 31. In addition to basic amortization, these costs are also reallocated and associated by using the specific resources that used the reservation. For example, if the USD 1.00 daily charge was split between two virtual machines, you'd see two USD 0.50 charges for the day. If part of the reservation isn't used for the day, you'd see one USD 0.50 charge associated with the applicable virtual machine, and another USD 0.50 charge with a charge type of UnusedReservation. You can only see unused reservation costs when viewing amortized cost.
 
@@ -64,7 +65,7 @@ Due to the change in how costs are represented, it's important to note that actu
 
 Customizing a view in cost analysis is easy. Just pick the date range you need, group the data to see a breakdown, and then choose the visualization that you want. **Pin** your view to a dashboard for quick access, and then share the dashboard with your team so everyone can track costs from a single place.
 
-![Screenshot of the Cost Analysis view with a callout highlighting the pin icon in the upper right-hand corner to pin to the dashboard.](../media/3-save-share-view01.png)
+:::image type="content" source="../media/3-save-share-view01.png" border="true" alt-text="Screenshot of the Cost Analysis view with a callout highlighting the pin icon in the upper right-hand corner to pin to the dashboard." lightbox="../media/3-save-share-view01.png" :::
 
 You can also share a direct link to your customized view so others can copy and personalize it for themselves. To share a link to a view, select **Share**.
 
@@ -76,7 +77,7 @@ Anyone can save up to 50 private views, even if they only have read access. You 
 
 You can access all views from the view menu. You see your private views first, then views shared across the scope, and lastly the built-in views that are always available.
 
-![Screenshot of the Cost Analysis view with a callout highlighting a dropdown to select private, shared and built-in views.](../media/3-cost-analysis-views.png)
+:::image type="content" source="../media/3-cost-analysis-views.png" border="true" alt-text="Screenshot of the Cost Analysis view with a callout highlighting a dropdown to select private, shared, and built-in views." lightbox="../media/3-cost-analysis-views.png" :::
 
 Do you need to share your view outside of the portal? You can download the charts as an image and copy that image into an email or presentation to share it with your team, for example. There's a slightly redesigned **Download** menu that offers a **PNG** option when viewing charts. You can't download the table view as an image.
 
@@ -85,13 +86,21 @@ The filter bar shows both the:
 - Scope pill with the scope name for added clarity.
 - View menu that is based on its growing importance with saved views.
 
+## Copilot and cost analysis
+
+You can use [Microsoft Copilot in Azure](/azure/copilot/analyze-cost-management) to help you analyze, estimate, and optimize cloud costs. With Copilot you can use natural language questions in Azure to quickly and easily get insights without complex navigation in the Azure portal.
+
+For example, you can ask “What are the top cost drivers for this month?” to get a text summary about your charges. The results might include insights about any significant changes in your usage and charges. Copilot might also show suggested follow-up questions to help you narrow results for key insights and help you save money.
+
+:::image type="content" source="../media/3-cost-analysis-copilot.png" border="true" alt-text="Screenshot showing Copilot results." lightbox="../media/3-cost-analysis-copilot.png" :::
+
 ## Export data
 
-Let's start by creating a daily export of your cost and usage data. Note that besides subscriptions, you can create exports on resource groups, accounts, departments, and enrollments.
+Let's start by creating a daily export of your cost and usage data. Besides subscriptions, you can create exports on resource groups, accounts, departments, and enrollments.
 
 Go to **Subscriptions**, select a subscription from the list, and in the menu pane under **Cost Management**, select **Cost analysis**. At the top of the Cost analysis pane, select **Configure subscription**. On the **Configuration** pane, select **Exports** and then **+Create**.
 
-![Screenshot that shows the New export panel.](../media/3-basics-exports.png)
+:::image type="content" source="../media/3-basics-exports.png" border="true" alt-text="Screenshot that shows the New export panel." lightbox="../media/3-basics-exports.png" :::
 
 Select the type of export you'd like. In this case, we'll **Create your own export**. Specify the type of data as **Cost and usage details (actual)**, add a name, and choose frequency as daily for your scheduled export. You can also provide a description. Once complete, add an **Export prefix** to ensure the exports have unique names.
 
@@ -120,10 +129,11 @@ You can easily verify that your Cost Management data is being collected, and vie
 
 In the export list, select the storage account name. On the storage account page, select **Open in Explorer**. If you see a confirmation box, select **Yes** to open the file in Azure Storage Explorer.
 
-![Screenshot of storage account page showing example information and link to Open in Explorer.](../media/3-storage-account-page.png)
+
+:::image type="content" source="../media/3-storage-account-page.png" border="true" alt-text="Screenshot of storage account page showing example information and link to Open in Explorer." lightbox="../media/3-storage-account-page.png" :::
 
 In Storage Explorer, navigate to the container that you want to open and select the folder corresponding to the current month. A list of CSV files appears. Select one, then select **Open**.
 
 The file opens with the program or application you've set to open CSV file extensions. Here's an example in Excel:
 
-![Screenshot of example exported CSV data shown in Excel.](../media/3-example-export-data.png)
+:::image type="content" source="../media/3-example-export-data.png" border="true" alt-text="Screenshot of example exported CSV data shown in Excel." lightbox="../media/3-example-export-data.png" :::

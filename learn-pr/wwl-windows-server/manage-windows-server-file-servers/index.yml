@@ -3,7 +3,7 @@ uid: learn.wwl.manage-windows-server-file-servers
 metadata:
   title: Manage Windows Server file servers
   description: "Manage Windows Server file servers"
-  ms.date: 10/20/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
@@ -19,7 +19,7 @@ abstract: |
   - Describe Volume Shadow Copy Service.
 prerequisites: |
   To get the best experience from this module, you should have knowledge and experience of:
-  - Windows Server 2012 or Windows Server 2016.
+  - Windows Server.
   - Core networking technologies.
 iconUrl: /training/achievements/manage-windows-server-file-servers.svg
 levels:

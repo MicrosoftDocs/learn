@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Migrate Data from MongoDB to vCore-based Azure Cosmos DB for MongoDB using Azure Databricks
   description: "Migrate Data from MongoDB to vCore-based Azure Cosmos DB for MongoDB using Azure Databricks"
-  ms.date: 11/24/2024
+  ms.date: 12/19/2024
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

@@ -4,12 +4,12 @@ title: Create your environment
 metadata:
   title: Create your environment
   description: "Create your environment"
-  ms.date: 02/17/2023
+  ms.date: 12/19/2024
   author: wwlpublish
   ms.author: kelawson
   ms.topic: unit
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/2-create-your-environment.md)]

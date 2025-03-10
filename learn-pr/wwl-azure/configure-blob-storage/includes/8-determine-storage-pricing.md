@@ -1,4 +1,10 @@
-All Azure storage accounts use a pricing model for Azure Blob Storage that's based on the tier of each blob.
+All Azure storage accounts use a pricing model for Azure Blob Storage tiers. Total cost of block blob storage depends on:
+
+- Volume of data stored per month.
+
+- Quantity and types of operations performed, along with any data transfer costs.
+
+- Data redundancy option selected.
 
 ### Things to know about pricing for Blob Storage
 
@@ -12,6 +18,7 @@ Review the following billing considerations for an Azure storage account and Blo
 
 - **Geo-replication data transfer costs**. This charge only applies to accounts that have geo-replication configured, including GRS and RA-GRS. Geo-replication data transfer incurs a per-gigabyte charge.
 
-- **Outbound data transfer costs**. Outbound data transfers (data that's transferred out of an Azure region) incur billing for bandwidth usage on a per-gigabyte basis. This billing is consistent with general-purpose Azure storage accounts.
+- **Outbound data transfer costs**. Outbound data transfers incur billing for bandwidth usage on a per-gigabyte basis. This billing is consistent with general-purpose Azure storage accounts.
 
 - **Changes to the storage tier**. If you change the account storage tier from Cool to Hot, you incur a charge equal to reading all the data existing in the storage account. Changing the account storage tier from Hot to Cool incurs a charge equal to writing all the data into the Cool tier (GPv2 accounts only).
+

@@ -1,0 +1,31 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cloud-adoption-framework-security.methodology
+title: The Secure methodology
+metadata:
+  unitType: learning-content
+  title: The Secure Methodology
+  description: Learn about the foundational guidance of the Microsoft Cloud Adoption Framework Secure methodology and how it can improve your Azure cloud estate.
+  ms.date: 02/27/2025
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-methodology.md)]
+quiz:
+ title: Check your knowledge
+ questions:
+ - content: What is the primary goal of the Secure methodology?
+   choices:
+   - content: To provide financial guidance for cloud adoption
+     isCorrect: false
+     explanation: Incorrect. The Secure methodology includes some financial guidance, but it's typically covered by other frameworks or business strategies.
+   - content: To provide a structured approach that you can use to enhance workload security and compliance
+     isCorrect: true
+     explanation: Correct. The primary goal of the Secure methodology is to ensure that workloads are highly secure and compliant.
+   - content: To provide a cloud-based environment that enables you to build, deploy, and manage applications
+     isCorrect: false
+     explanation: Incorrect. Providing a cloud-based environment isn't the primary goal of the Secure methodology. 
+   - content: To standardize the process for requesting, deploying, and governing subscriptions so that you can deploy your workloads faster
+     isCorrect: false
+     explanation: Incorrect. Standardizing processes for subscriptions isn't the focus of the Secure methodology.

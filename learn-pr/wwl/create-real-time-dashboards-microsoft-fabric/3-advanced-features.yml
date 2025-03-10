@@ -2,16 +2,14 @@
 uid: learn.wwl.create-real-time-dashboards-microsoft-fabric.advanced-features
 title: Advanced features
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Advanced features
   description: "Advanced features"
-  ms.date: 05/29/2024
+  ms.date: 12/12/2024
   author: wwlpublish
-  ms.author: jamesh
+  ms.author: gmalc
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 15
+durationInMinutes: 10
 content: |
   [!include[](includes/3-advanced-features.md)]

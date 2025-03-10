@@ -7,8 +7,8 @@ metadata:
   title: "Connecting IoT devices to Azure AI services using Azure Functions"
   description: Create and deploy an Azure function to make a language translation IoT device
   ms.date: 07/10/2024
-  author: leestott
-  ms.author: chnoring
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: module-standard-task-based
   ms.custom: team=cloud_advocates
   ms.service: azure-ai-services
@@ -38,6 +38,7 @@ prerequisites: |
     - .NET SDK installed on your computer
 
 iconUrl: /training/achievements/student-evangelism/connecting-iot-devices-to-cognitive-services-using-azure-functions.svg
+hidden: true
 badge:
   uid: learn.oxford.connect-iot-devices-cognitive-services-azure-func.badge
 levels:

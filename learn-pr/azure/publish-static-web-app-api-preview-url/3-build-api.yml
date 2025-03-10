@@ -6,8 +6,8 @@ metadata:
   title: Build an API with Azure Functions
   description: Learn how to build an API for your static web app with Azure Functions
   ms.date: 12/12/2023
-  author: craigshoemaker
-  ms.author: cshoe
+  author: v1212
+  ms.author: wujia
   ms.topic: unit
 title: Build an API with Azure Functions
 durationInMinutes: 3

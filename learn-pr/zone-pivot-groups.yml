@@ -468,3 +468,11 @@ groups:
       title: Microsoft SQL Server
     - id: fabric-database
       title: Microsoft Fabric
+- id: maven-azure-cli
+  title: Deployment options
+  prompt: Select a deployment option
+  pivots:
+    - id: maven-plugin
+      title: Maven Plugin for Azure App Service
+    - id: azure-cli
+      title: Azure CLI

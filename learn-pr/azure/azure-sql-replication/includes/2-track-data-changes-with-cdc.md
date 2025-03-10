@@ -1,6 +1,6 @@
 ## Scenario
 
-Let's remember our scenario, in which you're the CTO of a healthcare business that sells medical equipment in different regions around the country. You have different inventory databases in each region, and you want to ensure that these databases are all replicating data changes to a central country-wide inventory database that offers you a status on each sale. You might decide to use change data capture (CDC) and enable it on each of your regional inventory databases in order to track data changes on your source database, then you might decide to use a streaming service such as Azure Data Factory to consume changes from the CDC tables and stream them to the national/regional database.
+Let's remember our scenario, in which you're the CTO of a healthcare business that sells medical equipment in different regions around the country/region. You have different inventory databases in each region, and you want to ensure that these databases are all replicating data changes to a central country/region-wide inventory database that offers you a status on each sale. You might decide to use change data capture (CDC) and enable it on each of your regional inventory databases in order to track data changes on your source database, then you might decide to use a streaming service such as Azure Data Factory to consume changes from the CDC tables and stream them to the national/regional database.
 
 Let's learn more about CDC. 
 
@@ -39,7 +39,7 @@ You can use CDC by running T-SQL commands.
 In order to enable CDC on your Azure SQL Database, run the following:
 
 ```sql
-EXEC sys.sp_cdc_enable_db
+EXEC sys.sp_cdc_enable_db;
 GO
 ```
 
@@ -58,7 +58,7 @@ EXEC sys.sp_cdc_enable_table
 @role_name     = N'MyRole', 
 @filegroup_name = N'MyDB_CT', 
 @supports_net_changes = 1,
-@captured_column_list = N'Column1, Column2'
+@captured_column_list = N'Column1, Column2';
 ```
 
 **You can specify the following options when creating a capture instance:**
@@ -84,7 +84,7 @@ The following example shows how you can disable CDC on a table:
 
 ```sql
 -- Connect to your target Azure SQL Database
-EXEC sys.sp_cdc_disable_table 
+EXEC sys.sp_cdc_disable_table;
 GO
 ```
 
@@ -96,7 +96,7 @@ GO
 Disabling the CDC on the database removes all associated change data capture metadata, including the CDC user and schema and the CDC jobs. However, any gating roles CDC created will not be removed automatically and must be explicitly deleted. To determine if CDC is enabled on a database, query the `is_cdc_enabled` column in the `sys.databases` catalog view.
 
 ```sql
-EXEC sys.sp_cdc_disable_db
+EXEC sys.sp_cdc_disable_db;
 GO
 ```
 

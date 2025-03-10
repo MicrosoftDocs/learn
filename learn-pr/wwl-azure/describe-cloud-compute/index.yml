@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Describe cloud computing
   description: "Introduction to concepts surrounding cloud computing. Mostly platform agnostic, focused instead on general concepts."
-  ms.date: 09/20/2024
+  ms.date: 12/12/2024
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: module

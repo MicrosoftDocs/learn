@@ -22,7 +22,7 @@ Here, you use the Azure portal to create an Azure Function App. Then, you deploy
 
     The **Create Function App** pane appears.
 
-1. On the **Basics** tab, enter the following values for each setting.
+1. Select **Consumptio** as the hosting plan. Then on the **Basics** tab, enter the following values for each setting.
 
     > [!NOTE]
     > Your function app must have a name unique to Azure. We suggest using something like **\<*your initials*\>watchfunctions**. Use this name wherever you see *\<your-function-app-name\>* in the remainder of the exercise.
@@ -34,14 +34,11 @@ Here, you use the Azure portal to create an Azure Function App. Then, you deploy
     | Resource Group | From the dropdown list, select <rgn>[Sandbox resource group]</rgn>. |
     | **Instance Details** |
     | Function App name | *\<your-function-app-name\>* |
-    | Publish | Code |
     | Runtime stack | .NET |
-    | Version | 6 |
+    | Version | 8 (LTS), isolated worker model |
     | Region  | Accept the default location. |
     | **Operating system** |
     | Operating System | Windows |
-    | **Plan** |
-    | Plan type | Consumption (Serverless) |
 
 1. Select **Next : Storage**.
 

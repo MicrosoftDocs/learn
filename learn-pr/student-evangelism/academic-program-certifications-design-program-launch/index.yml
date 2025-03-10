@@ -2,14 +2,14 @@
 uid: learn.student-evangelism.academic-program-certifications-design-program-launch
 metadata:
   title: Design a program launch strategy
-  description: Ensure that your program’s unique selling points focus on the benefits of implementing certifications, and discover the support available through the Microsoft Learn for Educators program. 
+  description: Ensure that your program's unique selling points focus on the benefits of implementing certifications, and discover the support available through the Microsoft Learn for Educators program. 
   ms.date: 08/11/2021
   author: leestott
-  ms.author: chnoring
+  ms.author: tsheppard
   ms.topic: module
-  ms.custom: team=nextgen
+  ms.service: azure
 title: Design a program launch strategy
-summary: Ensure that your program’s unique selling points focus on the benefits of implementing certifications, and discover the support available through the Microsoft Learn for Educators program.
+summary: Ensure that your program's unique selling points focus on the benefits of implementing certifications, and discover the support available through the Microsoft Learn for Educators program.
 abstract: |
     After completing this module, you will be able to:
     - Demonstrate the shared goals of your institution and Microsoft in offering certifications as part of an academic program

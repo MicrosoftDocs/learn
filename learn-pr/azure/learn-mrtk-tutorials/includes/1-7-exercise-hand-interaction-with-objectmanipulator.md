@@ -216,6 +216,6 @@ Your PC is now paired with your HoloLens, and you can deploy apps automatically.
 
 ## Tips
 
-- You can also deploy to the [HoloLens Emulator](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator) or create an [App Package](/windows/uwp/packaging/packaging-uwp-app/windows/msix/package/packaging-uwp-appss) for sideloading.
+- You can also deploy to the [HoloLens Emulator](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator) or create an [App Package](/windows/uwp/packaging/) for sideloading.
 
 - You might notice the Diagnostics profiler in the app. You can toggle it on or off by using the speech command **Toggle Diagnostics**. We recommend that you keep the profiler visible most of the time during development so you can understand how changes to the app might affect performance. For example, you can monitor your app to ensure that [the frame rate is at least 60 FPS](/windows/mixed-reality/develop/advanced-concepts/understanding-performance-for-mixed-reality).

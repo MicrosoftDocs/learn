@@ -4,7 +4,7 @@ metadata:
   title: Migrate ASP.NET Apps to Azure
   description: Migrate ASP.NET web applications and their data to Azure App Service and Azure SQL Database to take advantage of the cloud.
   author: msangapu-msft
-  ms.date: 07/06/2020
+  ms.date: 01/07/2025
   ms.author: msangapu
   ms.topic: learning-path
 title: Migrate ASP.NET Apps to Azure
@@ -15,7 +15,7 @@ prerequisites: |
   - Basic familiarity with Azure SQL Database
 video:
   title: "Microsoft Learn video: Migrate ASP.NET Apps to Azure"
-  url: https://www.microsoft.com/videoplayer/embed/RE4X1sb
+  url: https://learn-video.azurefd.net/vod/player?id=712678d5-3b3f-4154-b0c3-cbf83eed2cb0
 summary: |
   Migrate ASP.NET web applications and their data to Azure App Service and Azure SQL Database to take advantage of the cloud.
 iconUrl: /training/achievements/generic-trophy.svg

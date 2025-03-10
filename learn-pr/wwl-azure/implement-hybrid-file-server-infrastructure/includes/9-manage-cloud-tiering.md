@@ -1,6 +1,3 @@
-
-
-
 *Cloud tiering* is an optional feature of Microsoft Azure File Sync that helps ensure that on-premises file servers always have enough free space. It can also help ensure that frequently accessed files are cached locally on a file server while all other files are tiered to an Azure file share. When a file is tiered, the File Sync file system filter replaces the file locally with a pointer called *reparse point*, which represents a URL to the file on an Azure file share. When a user requests a tiered file, File Sync seamlessly recalls the file data from Azure Files without the user needing to know that the file date is stored on an Azure file share.
 
 ## Configure cloud tiering
@@ -46,4 +43,4 @@ When cloud tiering is enabled, files are automatically tiered based on the volum
 If a file is already tiered and you want to recall it, the easiest way to cache it locally is to open the file, such as by double-clicking or selecting it in File Explorer. You can also run the `Invoke-StorageSyncFileRecall` cmdlet, which can be especially useful if you want to recall multiple files at once.
 
 > [!NOTE]
-> The **Previous Versions** feature (snapshots) is compatible with cloud tiering; you can use it to restore previous versions of cloud-tiered files. If a file has the **Recall on data access** attribute set, the antivirus software will scan only the file metadata, but it won't recall the file.
+> The **Previous Versions** feature (snapshots) is compatible with cloud tiering; you can use it to restore previous versions of cloud-tiered files. If a file has the **Recall on data access** attribute set, the antivirus software scans only the file metadata, but it won't recall the file.

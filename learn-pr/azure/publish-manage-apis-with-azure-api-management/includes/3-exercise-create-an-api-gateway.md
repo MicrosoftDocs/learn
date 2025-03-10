@@ -1,12 +1,12 @@
 In this exercise, you deploy a sample web API, and you configure an API gateway. In a later unit, you publish the web API to your gateway.
 
-In the shoe company example, NorthWind Shoes has decided to share an inventory API with partners. This API enables partners to access inventory and product information.
+In the shoe company example, NorthWind Shoes decided to share an inventory API with partners. This API enables partners to access inventory and product information.
 
 [!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 ## Deploy the ShoeCompany web API
 
-You've developed a .NET Core app that generates inventory and product information. The app includes Swashbuckle to generate OpenAPI Swagger documentation.
+You developed a .NET Core app that generates inventory and product information. The app includes Swashbuckle to generate OpenAPI Swagger documentation.
 
 To save time, let's start by running a script to host our RESTful API in Azure. The script performs the following steps:
 
@@ -28,7 +28,7 @@ To save time, let's start by running a script to host our RESTful API in Azure. 
     git clone https://github.com/MicrosoftDocs/mslearn-publish-manage-apis-with-azure-api-management.git
     ```
 
-1. After the operation has completed, open your local repo folder and list its contents by running the following commands.
+1. After the operation completes, open your local repo folder and list its contents by running the following commands.
 
     ```bash
     cd mslearn-publish-manage-apis-with-azure-api-management
@@ -37,7 +37,7 @@ To save time, let's start by running a script to host our RESTful API in Azure. 
 
    One of the files is setup.sh. As its name suggests, it's the script we run to set up our test API.
 
-1. Enter the following command to run this script. It generates a public web app that exposes an OpenAPI interface.
+1. Run this script by entering the following command. It generates a public web app that exposes an OpenAPI interface.
 
     ```bash
     bash setup.sh
@@ -64,9 +64,9 @@ The final task in this exercise is to create an API gateway in the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 
-1. In **Azure services**,  or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
+1. In **Azure services**, or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the resource menu, select **Integration**, and in the results, select **API Management**. The **Create API Management service** pane appears.
+1. In the resource menu, select **Integration**, and in the results, select **API Management**. A **Create API Management service** pane appears.
 
 1. In the **Basics** tab, enter the following values for each setting.
 
@@ -87,6 +87,6 @@ The final task in this exercise is to create an API gateway in the Azure portal.
 
 1. Select **Review + create** to validate your settings.
 
-1. When validation has passed, select **Create**. Deployment can take several minutes to complete.
+1. After validation passes, select **Create**. Deployment can take several minutes to complete.
 
-1. When deployment has completed, your API Management instance is listed in the Azure resources. Select **Go to resource** to view the pane for your API Management service.
+1. When deployment is completed, your API Management instance is listed in the Azure resources. Select **Go to resource** to view the pane for your API Management service.

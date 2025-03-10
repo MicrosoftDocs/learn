@@ -1,4 +1,3 @@
-
 Every organization needs to work with external users. [Microsoft Entra business-to-business (B2B)](/azure/active-directory/external-identities/what-is-b2b) is a feature of Microsoft Entra ID that enables you to securely collaborate with external partners. Your partner users are invited as guest users. You remain in control of what they have access to, and for how long. 
 
 :::image type="content" source="../media/external-identities.png" alt-text="Diagram that shows how business-to-business users are invited to Microsoft Entra ID." border="false":::

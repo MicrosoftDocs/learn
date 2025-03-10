@@ -8,6 +8,7 @@ metadata:
   ms.author: anrudduc
   ms.service: fabric
   ms.topic: module
+  ms.collection: wwl-ai-copilot
   ai-usage: ai-assisted
 title: Govern data in Microsoft Fabric with Purview
 summary: "Learn how Microsoft Purview enables the highest level of data governance for your Microsoft Fabric data lakes. Ensure that data is both tightly controlled and highly available for compliant analysis."

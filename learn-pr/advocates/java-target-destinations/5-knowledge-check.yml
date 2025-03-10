@@ -4,8 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your knowledge of the Java target destinations on Azure.
-  author: judubois
-  ms.author: judubois
+  author: KarlErickson
+  ms.author: karler
+  ms.reviewer: hangwan
   ms.date: 01/04/2024
   ms.topic: unit
   ms.custom:
