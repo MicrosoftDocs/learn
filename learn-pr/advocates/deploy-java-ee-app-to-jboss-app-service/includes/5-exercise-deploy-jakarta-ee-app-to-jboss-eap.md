@@ -289,7 +289,7 @@ Configure your App Service instance to invoke the startup script by using the fo
 az webapp config set \
     --resource-group ${RESOURCE_GROUP_NAME} \
     --name ${WEB_APP_NAME} \
-    --startup-file '/home/site/scripts/startup.sh' \
+    --startup-file '/home/site/scripts/startup.sh'
 ```
 
 After the script runs, the application server invokes it every time the application server is restarted.
@@ -315,13 +315,10 @@ After you configure the startup script, configure App Service to use Service Con
         --output tsv)
     export TARGET_MYSQL_ID=$MYSQL_ID/databases/world 
     export MANAGED_ID=$(az identity list \
-        --resource-group $RESOURCE_GROUP_NAME 
-        --query "[0].id"
+        --resource-group $RESOURCE_GROUP_NAME \
+        --query "[0].id" \
         --output tsv)
     ```
-
-    > [!NOTE]
-    > The parameters in these commands apply to the Azure command line substitutions - such as `az webapp list` - not the `export` commands.
 
     The environment variables are used for the following purposes:
 
