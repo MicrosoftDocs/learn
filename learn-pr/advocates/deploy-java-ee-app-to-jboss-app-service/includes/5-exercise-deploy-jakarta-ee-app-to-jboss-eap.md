@@ -411,7 +411,7 @@ In the sample application, you implemented three REST endpoints. You can access 
 
 ### [Browser](#tab/browser)
 
-1. Use your browser to navigate to the application URL, which you got from previous output. The line in the begins with `[INFO] Successfully deployed the artifact`, as in the following typical output:
+1. Use your browser to navigate to the application URL, which you got from previous output. The relevant line begins with `[INFO] Successfully deployed the artifact`, as in the following typical output:
 
     ```output
     [INFO] Successfully deployed the artifact to  
@@ -422,11 +422,11 @@ In the sample application, you implemented three REST endpoints. You can access 
 
     :::image type="content" source="../media/rest-endpoint-area.png" alt-text="Screenshot that shows area as the REST endpoint.":::
 
-1. Specify a `continent` path parameter to retrieve all of the countries and regions in the specified continent.
+1. Specify a `continent` path parameter on the `area` endpoint and the `GET` method to retrieve all of the countries and regions in the specified continent.
 
     :::image type="content" source="../media/rest-endpoint-continent.png" alt-text="Screenshot that shows continent as the REST endpoint.":::
 
-1. Specify a `countrycode` path parameter for the `countries` endpoint to retrieve all the cities that have a population greater than 1 million within the country or region specified.
+1. Specify a `countrycode` path parameter on the `countries` endpoint and the `GET` method to retrieve all of the cities that have a population greater than 1 million within the country or region specified.
 
     :::image type="content" source="../media/rest-endpoint-cities.png" alt-text="Screenshot that shows cities as the REST endpoint.":::
 
@@ -447,7 +447,7 @@ In the sample application, you implemented three REST endpoints. You can access 
 1. Use the following command to retrieve all of the countries and regions in a specified continent:
 
     ```bash
-    $ curl https://${WEB_APP_NAME}.azurewebsites.net/area/Asia | jq '.[] | { name: .name, code: .code }'
+    curl https://${WEB_APP_NAME}.azurewebsites.net/area/Asia | jq '.[] | { name: .name, code: .code }'
     ```
 
     In this example, the user specified `Asia`. The following output is typical:
@@ -478,10 +478,10 @@ In the sample application, you implemented three REST endpoints. You can access 
     }
     ```
 
-1. Retrieve all of the cities that have population greater than 1 million within the country/region, by using the following command:
+1. Retrieve all of the cities that have a population greater than 1 million within the specified country or region, by using the following command:
 
     ```bash
-    $ curl https://${WEB_APP_NAME}.azurewebsites.net/countries/JPN | jq '.[].name'
+    curl https://${WEB_APP_NAME}.azurewebsites.net/countries/JPN | jq '.[].name'
     ```
 
     In this example, the user specified `JPN`. The following output is typical:
