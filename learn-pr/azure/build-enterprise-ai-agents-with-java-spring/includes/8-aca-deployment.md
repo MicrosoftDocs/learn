@@ -8,7 +8,7 @@ Azure Container Apps is a serverless platform that allows you to maintain less i
 
 A Container Apps environment is a secure boundary around one or more container apps and jobs. The Container Apps runtime manages each environment by handling OS upgrades, scale operations, failover procedures, and resource balancing. Before we can deploy an Azure Container App, we need to create an Azure Container App environment.
 
-:::image type="content" source="../media/aca-deployment-environment.png" alt-text="Azure Container Apps Environment":::
+:::image type="content" source="../media/azure-container-apps-containers.png" alt-text="Diagram showing the Azure Container Apps environment." lightbox="../media/azure-container-apps-containers.png" border="false":::
 
 There are two types of Container App environments:
 
