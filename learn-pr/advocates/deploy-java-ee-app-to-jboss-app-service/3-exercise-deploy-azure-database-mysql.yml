@@ -1,12 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-java-ee-app-to-app-service.3-exercise-deploy-azure-database-mysql
-title: Exercise - Deploy Azure Database for MySQL
+title: Exercise - Deploy on Azure Database for MySQL
 metadata:
-  title: Exercise - Deploy Azure Database for MySQL
-  description: In this unit, you'll deploy Azure Database for MySQL by using a custom shell script.
-  author: yoshioterada
-  ms.author: yoterada
-  ms.date: 02/21/2025
+  title: Exercise - Deploy on Azure Database for MySQL
+  description: Shows you how to deploy on Azure Database for MySQL by using a custom shell script.
+  author: KarlErickson
+  ms.author: karler
+  ms.reviewer: yoshioterada
+  ms.date: 03/11/2025
   ms.topic: unit
   ms.custom:
     - team=cloud_advocates
@@ -14,7 +15,6 @@ metadata:
     - devx-track-javaee-jbosseap-appsvc
     - devx-track-javaee
     - devx-track-extended-java
-  ms.contributors: yoterada-03082021
 durationInMinutes: 16
 content: |
   [!include[](includes/3-exercise-deploy-azure-database-mysql.md)]
