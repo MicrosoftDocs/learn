@@ -2,7 +2,7 @@
 uid: learn.github-github-advanced-security-2
 metadata:
   title: GitHub Advanced Security Part 2 of 2
-  description: Learn how to secure your code with advanced security features at every stage of your development lifecycle. GitHub Advanced Security is an add-on to GitHub Enterprise that allows you to use security features, such as secret scanning, code scanning, and dependency management on your private repositories.
+  description: Learn how to secure your code with advanced security features at every stage of your development lifecycle. GitHub Advanced Security is an add-on to GitHub Enterprise that allows you to use security features, such as secret scanning, code scanning, and dependency management on your private repositories. This is the second learning path out of two learning paths of GHAS. 
   brand: github
   ms.date: 03/11/2025
   author: camihmerhar
@@ -39,4 +39,4 @@ modules:
 - learn.github-administration-github-advanced-security
 - learn.github.manage-sensitive-data-security-policies
 trophy:
-  uid: learn.generic-trophy.trophy
+  uid: learn.maintain-secure-repository-github.trophy
