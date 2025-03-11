@@ -2,7 +2,7 @@
 uid: learn.github-copilot
 metadata:
   title: GitHub Copilot Fundamentals Part 1 of 2
-  description: Empower individual developers and businesses to enhance their productivity and foster innovation through a comprehensive exploration of the fundamental concepts of GitHub Copilot. Additionally, gain valuable insights on how to initiate the implementation of GitHub Copilot within your organization, enabling you to kickstart your own transformative journey.
+  description: Empower individual developers and businesses to enhance their productivity and foster innovation through a comprehensive exploration of the fundamental concepts of GitHub Copilot. Additionally, gain valuable insights on how to initiate the implementation of GitHub Copilot within your organization, enabling you to kickstart your own transformative journey. This is learning path is split into two and this is part one of two.
   brand: github
   ms.date: 03/11/2025
   author: camihmerhar
@@ -48,4 +48,4 @@ modules:
 - learn.github.github-copilot-across-environments
 - learn.github.github-copilot-management-and-customizations
 trophy:
-  uid: learn.github.trophy
+  uid: generic-badge-social.trophy
