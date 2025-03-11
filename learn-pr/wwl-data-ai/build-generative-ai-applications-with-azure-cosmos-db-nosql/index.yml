@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.build-generative-ai-applications-with-azure-cosmos-db-nosql
+metadata:
+  title: Build Generative AI applications with Azure Cosmos DB
+  description: "Build advanced Generative AI application with Python and Azure Cosmos DB for NoSQL."
+  ms.date: 03/10/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module
+  ms.service: azure-cosmos-db
+title: Build Generative AI applications with Azure Cosmos DB
+summary: Build advanced Generative AI application with Python and Azure Cosmos DB for NoSQL.
+abstract: |
+  After completing this module, you'll be able to:
+  - Build a Generative AI application capable of interacting with private data using Python and Azure Cosmos DB for NoSQL.
+  - Efficiently retrieve and store vectors in Azure Cosmos DB for NoSQL.
+  - Perform similarity searches using Azure Cosmos DB for NoSQL.
+  - Integrate data and AI models using LangChain orchestration to create intelligent and adaptable Generative AI application.
+prerequisites: |
+  Before starting this module, you should have a basic understanding of Python development, Azure Cosmos DB for NoSQL, working with AI models, and understand the concepts associated with retrieval augmented generated (RAG) patterns.
+iconUrl: /training/achievements/azure-cosmos-db-build-copilots.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+- azure-openai
+subjects:
+- artificial-intelligence
+- app-development
+- databases
+units:
+- learn.wwl.build-generative-ai-applications-with-azure-cosmos-db-nosql.introduction
+- learn.wwl.build-generative-ai-applications-with-azure-cosmos-db-nosql.configure-vector-search-storage-for-azure-cosmos-db-nosql
+- learn.wwl.build-generative-ai-applications-with-azure-cosmos-db-nosql.exercise-enable-azure-cosmos-db-nosql-vector-search
+- learn.wwl.build-generative-ai-applications-with-azure-cosmos-db-nosql.generate-embeddings
+- learn.wwl.build-generative-ai-applications-with-azure-cosmos-db-nosql.exercise-generate-and-store-vectors
+- learn.wwl.build-generative-ai-applications-with-azure-cosmos-db-nosql.build-generative-ai-applications
+- learn.wwl.build-generative-ai-applications-with-azure-cosmos-db-nosql.perform-vector-search
+- learn.wwl.build-generative-ai-applications-with-azure-cosmos-db-nosql.exercise-build-generative-ai-applications
+- learn.wwl.build-generative-ai-applications-with-azure-cosmos-db-nosql.integrate-langchain-orchestration
+- learn.wwl.build-generative-ai-applications-with-azure-cosmos-db-nosql.exercise-implement-rag-with-langchain
+- learn.wwl.build-generative-ai-applications-with-azure-cosmos-db-nosql.knowledge-check
+- learn.wwl.build-generative-ai-applications-with-azure-cosmos-db-nosql.summary
+badge:
+  uid: learn.wwl.build-generative-ai-applications-with-azure-cosmos-db-nosql.badge
