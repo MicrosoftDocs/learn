@@ -83,3 +83,14 @@ quiz:
         - content: API key, endpoint, and deployment name
           isCorrect: true
           explanation: Correct. Spring AI requires the API key, endpoint URL, and deployment name to properly configure Azure OpenAI integration.
+    - content: Which Spring AI pattern uses multiple AI roles to improve content quality?
+      choices:
+        - content: Chain of Responsibility
+          isCorrect: false
+        - Evaluator-Optimizer
+          isCorrect: true
+          explanation: The Evaluator-Optimizer pattern uses writer and editor AI roles in a feedback loop to improve content quality.
+        - Command Pattern
+          isCorrect: false
+        - Observer Pattern
+          isCorrect: false

@@ -11,15 +11,15 @@ metadata:
   ms.custom: team=cloud_advocates
   ms.service: azure-container-apps
   ms.collection: ce-skilling-ai-copilot
-title: Build Enterprise AI Agents with Java and Spring
+title: Build enterprise AI agents with Java and Spring
 summary: Build and deploy a Java application and AI agents using Spring AI, Azure OpenAI, and Azure Container Apps with PostgreSQL vector storage.
 abstract: |
   After completing this module, you'll be able to:
-  - Understand Spring AI's core abstractions and Azure OpenAI integration
-  - Create and configure Azure PostgreSQL for vector storage
-  - Implement an end-to-end AI application and AI agent with Spring AI
-  - Deploy and scale your application on Azure Container Apps
-iconUrl: /training/achievements/build-enterprise-ai-agents-with-java-spring.svg
+  - Understand Spring AI's core abstractions and Azure OpenAI integration.
+  - Create and configure Azure PostgreSQL for vector storage.
+  - Implement an end-to-end AI application and AI agent with Spring AI.
+  - Deploy and scale your application on Azure Container Apps.
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - intermediate
 roles:
@@ -30,11 +30,11 @@ products:
   - azure-container-apps
   - azure-database-postgresql
 prerequisites: |
-  - Azure subscription
-  - Basic familiarity with Java and Spring Boot
-  - Experience with Git and Maven
-  - Java 17 or later installed
-  - psql client
+  - An Azure subscription.
+  - Basic familiarity with Java and Spring Boot.
+  - Experience with Git and Maven.
+  - Java 17 or later installed.
+  - psql client.
 subjects:
   - machine-learning
   - custom-app-development
