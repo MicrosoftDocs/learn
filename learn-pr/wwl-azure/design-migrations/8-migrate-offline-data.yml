@@ -2,9 +2,11 @@
 uid: learn.wwl.design-migrations.migrate-offline-data
 title: Migrate offline data
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Migrate offline data
   description: "Migrate offline data with Azure Import/Export and Azure Data Box."
-  ms.date: 12/09/2024
+  ms.date: 03/10/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

@@ -4,10 +4,12 @@ title: What is AI?
 metadata:
   title: What is AI?
   description: "What is AI?"
-  ms.date: 03/05/2025
+  ms.date: 03/11/2025
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/2-what-is-ai.md)]

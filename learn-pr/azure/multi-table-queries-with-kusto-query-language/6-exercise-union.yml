@@ -4,8 +4,8 @@ title: Exercise - Combine table results by using the union operator
 metadata:
   unitType: exercise
   title: Exercise - Combine table results by using the union operator
-  description: In this exercise, you'll use the union operator to combine sales facts that were collected from various countries/regions.
-  ms.date: 01/03/2024
+  description: In this exercise, you use the union operator to combine sales facts that were collected from various countries/regions.
+  ms.date: 03/07/2025
   author: shsagir
   ms.author: shsagir
   ms.topic: unit
