@@ -4,7 +4,7 @@ This unit shows you how the JBoss administration tools appear on the screen and 
 
 Azure App Service provides both an administrative UI and a command line interface. When you open the admin web console, you see the following screen:
 
-:::image type="content" source="../media/jboss-admin-console-2.png" alt-text="Screenshot OF the main page of the admin console." lightbox="../media/jboss-admin-console-2.png":::
+:::image type="content" source="../media/jboss-admin-console-2.png" alt-text="Screenshot of the main page of the admin console." lightbox="../media/jboss-admin-console-2.png":::
 
 ## Application logs
 
