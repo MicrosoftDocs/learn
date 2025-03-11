@@ -2,45 +2,50 @@ In this module, you learned how to create an Azure Database for MySQL instance a
 
 ## Clean up resources
 
-In this module, you created resources by using your Azure subscription. You need to clean up these resources so that you don't continue to be charged for them. Run the following commands to delete all the resources:
+In this module, you created resources by using your Azure subscription. You need to clean up these resources so that you don't continue to be charged for them. Use the following steps to clean up your resources:
 
-```azurecli
-az group delete --name <name of your MySQL resource>
-az group delete --name <name of your JBoss EAP on Azure App Service resource>
-```
+1. Use the following commands to delete all of the resources:
 
-Clear out any defaults configured with `az configure` that you no longer want to keep as defaults - for example, the default location configured in a previous unit.
+    ```azurecli
+    az group delete \
+        --name <name-of-your-MySQL-resource>
+    az group delete \
+        --name <name-of-your-JBoss-EAP-on-Azure-App-Service-resource>
+    ```
 
-```azurecli
-az configure --defaults location=''
-```
+1. Use the following command to clear out any defaults configured with `az configure` that you no longer want to keep:
+
+    ```azurecli
+    az configure \
+        --defaults location=''
+    ```
+
+   This command removes the default location configured in a previous unit.
 
 ## Other resources
 
-Use the following links to get more information about the topics in this module.
-
 ### Microsoft Azure
 
-* [Azure App Service](/azure/app-service?WT.mc_id=java-14033-yoterada)
-* [Monitor Azure App Service performance](/azure/azure-monitor/app/azure-web-apps?tabs=java&WT.mc_id=java-14033-yoterada)
-* [Get started with autoscale in Azure](/azure/azure-monitor/platform/autoscale-get-started?WT.mc_id=java-14033-yoterada)
-* [Deploy to App Service using GitHub Actions](/azure/app-service/deploy-github-actions?tabs=userlevel&WT.mc_id=java-14033-yoterada)
-* [Integrate your app with an Azure virtual network](/azure/app-service/web-sites-integrate-with-vnet?WT.mc_id=java-14033-yoterada)
-* [App Service pricing](https://azure.microsoft.com/pricing/details/app-service/linux?WT.mc_id=java-14033-yoterada)
+- [Azure App Service](/azure/app-service)
+- [Enable application monitoring in Azure App Service for .NET, Node.js, Python, and Java applications](/azure/azure-monitor/app/codeless-app-service?tabs=java).
+- [Get started with autoscale in Azure](/azure/azure-monitor/platform/autoscale-get-started).
+- [Deploy to App Service using GitHub Actions](/azure/app-service/deploy-github-actions?tabs=userlevel).
+- [Integrate your app with an Azure virtual network](/azure/app-service/web-sites-integrate-with-vnet).
+- [Azure App Service on Linux pricing](https://azure.microsoft.com/pricing/details/app-service/linux).
 
 ### Jakarta EE
 
-* [Jakarta EE](https://jakarta.ee/)
-* [Jakarta RESTful Web Services](https://projects.eclipse.org/projects/ee4j.jaxrs)
-* [Jakarta Persistence](https://projects.eclipse.org/projects/ee4j.jpa)
-* [Jakarta JSON Binding](https://projects.eclipse.org/projects/ee4j.jsonb)
-* [Jakarta Contexts and Dependency Injection](https://projects.eclipse.org/projects/ee4j.cdi)
-* [Maven Plugin for Azure Web Apps](https://github.com/microsoft/azure-maven-plugins)
+- [Jakarta EE](https://jakarta.ee/)
+- [Jakarta RESTful Web Services](https://projects.eclipse.org/projects/ee4j.rest).
+- [Jakarta Persistence](https://projects.eclipse.org/projects/ee4j.jpa)
+- [Jakarta JSON Binding](https://projects.eclipse.org/projects/ee4j.jsonb)
+- [Jakarta Contexts and Dependency Injection](https://projects.eclipse.org/projects/ee4j.cdi).
+- [Maven Plugin for Azure Services](https://github.com/microsoft/azure-maven-plugins)
 
 ### MySQL
 
-* [MySQL Community Edition](https://www.mysql.com/products/community/)
-* [MySQL Connector/J](https://mvnrepository.com/artifact/mysql/mysql-connector-java)
-* [MySQL Sample World Database Installation](https://dev.mysql.com/doc/world-setup/en/world-setup-installation.html)
-* [Azure Database for MySQL](/azure/mysql?WT.mc_id=java-14033-yoterada)
-* [Azure Database for MySQL - Flexible Server](/azure/mysql/flexible-server/overview?WT.mc_id=java-14033-yoterada)
+- [MySQL Community Edition](https://www.mysql.com/products/community/)
+- [MySQL Connector Java](https://mvnrepository.com/artifact/mysql/mysql-connector-java)
+- [MySQL sample world database installation](https://dev.mysql.com/doc/world-setup/en/world-setup-installation.html)
+- [Azure Database for MySQL](/azure/mysql?WT.mc_id=java-14033-yoterada)
+- [What is Azure Database for MySQL - Flexible Server?](/azure/mysql/flexible-server/overview)
