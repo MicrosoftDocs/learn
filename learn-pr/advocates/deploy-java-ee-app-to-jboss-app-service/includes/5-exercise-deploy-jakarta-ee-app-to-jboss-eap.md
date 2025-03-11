@@ -416,15 +416,15 @@ In the sample application, you implemented three REST endpoints. To access the a
 
 1. Use the `GET` method on the `area` endpoint to get all of the continent information in JSON format.
 
-    :::image type="content" source="../media/rest-endpoint-area.png" alt-text="Screenshot that shows area as the REST endpoint." lightbox="../media/rest-endpoint-area.png":::
+    :::image type="content" source="../media/rest-endpoint-area.png" alt-text="Screenshot of the area endpoint." lightbox="../media/rest-endpoint-area.png":::
 
 1. Specify a `continent` path parameter on the `area` endpoint and the `GET` method to retrieve all of the countries and regions in the specified continent.
 
-    :::image type="content" source="../media/rest-endpoint-continent.png" alt-text="Screenshot that shows continent as the REST endpoint." lightbox="../media/rest-endpoint-continent.png":::
+    :::image type="content" source="../media/rest-endpoint-continent.png" alt-text="Screenshot of the area endpoint with a continent path parameter." lightbox="../media/rest-endpoint-continent.png":::
 
 1. Specify a `countrycode` path parameter on the `countries` endpoint and the `GET` method to retrieve all of the cities that have a population greater than 1 million within the country or region specified.
 
-    :::image type="content" source="../media/rest-endpoint-cities.png" alt-text="Screenshot that shows cities as the REST endpoint." lightbox="../media/rest-endpoint-cities.png":::
+    :::image type="content" source="../media/rest-endpoint-cities.png" alt-text="Screenshot of the countries endpoint with the  countrycode path parameter." lightbox="../media/rest-endpoint-cities.png":::
 
 ### [Bash](#tab/bash)
 
