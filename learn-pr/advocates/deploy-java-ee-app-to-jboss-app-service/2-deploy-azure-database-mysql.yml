@@ -1,12 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-java-ee-app-to-app-service.2-deploy-azure-database-mysql
-title: Deploy Azure Database for MySQL
+title: Deploy an Azure Database for MySQL instance
 metadata:
-  title: Deploy Azure Database for MySQL
-  description: In this unit, you'll learn how to deploy an Azure Database for MySQL instance
-  author: yoshioterada
-  ms.author: yoterada
-  ms.date: 02/21/2025
+  title: Deploy an Azure Database for MySQL Instance
+  description: Shows you how to deploy an Azure Database for MySQL instance.
+  author: KarlErickson
+  ms.author: karler
+  ms.reviewer: yoshioterada
+  ms.date: 03/11/2025
   ms.topic: unit
   ms.custom:
     - team=cloud_advocates
@@ -14,7 +15,6 @@ metadata:
     - devx-track-javaee-jbosseap-appsvc
     - devx-track-javaee
     - devx-track-extended-java
-  ms.contributors: yoterada-03082021
 durationInMinutes: 3
 content: |
   [!include[](includes/2-deploy-azure-database-mysql.md)]
