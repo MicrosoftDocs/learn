@@ -4,7 +4,7 @@ When you create a Large Language Model (LLM) application with prompt flow, you f
 
 Whenever you want your flow to connect to external data source, service, or API, you need your flow to be authorized to communicate with that external service. When you create a **connection**, you configure a secure link between prompt flow and external services, ensuring seamless and safe data communication.
 
-:::image type="content" source="../media/connections.png" alt-text="Diagram showing a flow with two nodes, connecting to Cognitive Search and Azure Open AI.":::
+:::image type="content" source="../media/connections.png" alt-text="Diagram showing a flow with two nodes, connecting to Azure AI Search and Azure Open AI.":::
 
 Depending on the type of connection you create, the connection securely stores the endpoint, API key, or credentials necessary for prompt flow to communicate with the external service. Any necessary secrets aren't exposed to users, but instead are stored in an Azure Key Vault.
 
@@ -16,7 +16,7 @@ Certain built-in tools require you to have a connection configured:
 |---|---|
 |Azure Open AI|LLM or Python|
 |Open AI|LLM or Python|
-|Cognitive Search|Vector DB Lookup or Python|
+|Azure AI Search|Vector DB Lookup or Python|
 |Serp|Serp API or Python|
 |Custom|Python|
 
