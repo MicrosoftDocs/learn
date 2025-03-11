@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/23/2024
+  ms.date: 03/10/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -15,7 +15,7 @@ labModal: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "You are tasked with writing the shortest possible NoSQL query to select all items and include all fields from your container. Which of these queries is both valid and would accomplish this task?"
+  - content: "The developer team is tasked with writing the shortest possible NoSQL query to select all items and include all fields from a container. Which of these queries is both valid and would accomplish this task?"
     choices:
     - content: "``SELECT FROM``"
       isCorrect: false
@@ -26,7 +26,7 @@ quiz:
     - content: "``SELECT * FROM p``"
       isCorrect: true
       explanation: "Correct. This query includes the data source and the specification for which fields should be returned."
-  - content: "Which SQL keyword is used to flatten your query results into an array of a specific field value for each item?"
+  - content: "Which SQL keyword is used to flatten the query results into an array of a specific field value for each item?"
     choices:
     - content: "``FROM``"
       isCorrect: false
@@ -37,7 +37,7 @@ quiz:
     - content: "``DISTINCT``"
       isCorrect: false
       explanation: "Incorrect. The ``DISTINCT`` keyword specifies that duplicates should be removed."
-  - content: "You have a container named products. What must the data source be named after the ``FROM`` keyword in the query?"
+  - content: "The database has a container named products. What must the data source be named after the ``FROM`` keyword in the query?"
     choices:
     - content: "p"
       isCorrect: false
@@ -45,7 +45,7 @@ quiz:
     - content: "products"
       isCorrect: false
       explanation: "Incorrect. The data source doesn't necessarily need to be named the same as the container."
-    - content: "Any of these"
+    - content: "Either of these names"
       isCorrect: true
       explanation: "Correct. The data source can have a unique name that's distinct from the container's name."
 
