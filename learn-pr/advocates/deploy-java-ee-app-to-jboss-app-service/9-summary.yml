@@ -3,10 +3,11 @@ uid: learn.azure.deploy-java-ee-app-to-app-service.9-summary
 title: Summary
 metadata:
   title: Summary
-  description: Summary and cleanup of Azure resources.
-  author: yoshioterada
-  ms.author: yoterada
-  ms.date: 02/21/2025
+  description: Summarizes the module and provides instructions for the cleanup of Azure resources.
+  author: KarlErickson
+  ms.author: karler
+  ms.reviewer: yoshioterada
+  ms.date: 03/11/2025
   ms.topic: unit
   ms.custom:
     - team=cloud_advocates
@@ -14,7 +15,6 @@ metadata:
     - devx-track-javaee-jbosseap-appsvc
     - devx-track-javaee
     - devx-track-extended-java
-  ms.contributors: yoterada-03102021
 durationInMinutes: 2
 content: |
   [!include[](includes/9-summary.md)]
