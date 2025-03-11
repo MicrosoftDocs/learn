@@ -1,6 +1,6 @@
-Azure Cosmos DB for NoSQL uses the already popular Structured Query Language (SQL) syntax to perform queries over semi-structured data. If you have performed queries in database platforms like MySQL or SQL Server, then you may already have some of the tools necessary to write queries in Azure Cosmos DB for NoSQL.
+Azure Cosmos DB for NoSQL uses the already popular Structured Query Language (SQL) syntax to perform queries over semi-structured data. If you ran queries in database platforms like MySQL or SQL Server, then you may already have some of the tools necessary to write queries in Azure Cosmos DB for NoSQL.
 
-For this module, we will focus on a fictional container of **products** with the following structure:
+For this module, we focus on a fictional container of **products** with the following structure:
 
 | **Property** | **Value** |
 | --- | --- |
@@ -8,11 +8,12 @@ For this module, we will focus on a fictional container of **products** with the
 | **categoryId** | *String* &vert; *partition key* |
 | **categoryName** | *String* |
 | **sku** | *String* |
+| **name** | *String* |
 | **description** | *String* |
 | **price** | *Number* |
 | **tags** | *Array* &vert; *[ String id, String name ]* |
 
-Here is an example of a JSON object that would be in this container:
+Here's an example of a JSON object that would be in this container:
 
 ```json
 {
