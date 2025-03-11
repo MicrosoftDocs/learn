@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-generative-ai-applications-with-azure-cosmos-db-nosql.perform-vector-search
+title: 'Perform vector searches using Azure Cosmos DB for NoSQL from a Generative AI application'
+metadata:
+  title: 'Perform vector searches using Azure Cosmos DB for NoSQL from a Generative AI application'
+  description: "Learn how to perform vector searches using Azure Cosmos DB for NoSQL from a Generative AI application."
+  ms.date: 03/10/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-perform-vector-search.md)]

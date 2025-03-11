@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-protect-sensitive-data.protect-ai-data
+title: Protect AI-generated and AI-processed data
+metadata:
+  title: Protect AI-generated and AI-processed data
+  description: "Protect AI-generated and AI-processed data."
+  ms.date: 03/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/protect-ai-data.md)]

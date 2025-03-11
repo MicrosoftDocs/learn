@@ -44542,6 +44542,301 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/paths/develop-custom-object-detection-models-with-nvidia-and-azure-machine-learning/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/create-labeled-dataset-using-azure-machine-learning-data-labeling-tools/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/create-labeled-dataset-using-azure-machine-learning-data-labeling-tools/2-create-azure-machine-learning-data-labeling-project.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/create-labeled-dataset-using-azure-machine-learning-data-labeling-tools/3-label-images-azure-machine-learning-data-labeling-tools.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/create-labeled-dataset-using-azure-machine-learning-data-labeling-tools/4-export-labeled-azure-machine-learning-dataset.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/create-labeled-dataset-using-azure-machine-learning-data-labeling-tools/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/create-labeled-dataset-using-azure-machine-learning-data-labeling-tools/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/create-labeled-dataset-using-azure-machine-learning-data-labeling-tools/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/create-workspace-resources-getting-started-azure-machine-learning/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/create-workspace-resources-getting-started-azure-machine-learning/2-introduction-to-azure-machine-learning.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/create-workspace-resources-getting-started-azure-machine-learning/3-create-azure-storage-account.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/create-workspace-resources-getting-started-azure-machine-learning/4-create-azure-storage-container.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/create-workspace-resources-getting-started-azure-machine-learning/5-create-azure-machine-learning-workspace.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/create-workspace-resources-getting-started-azure-machine-learning/6-create-azure-machine-learning-compute-instance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/create-workspace-resources-getting-started-azure-machine-learning/7-create-azure-machine-learning-datastore.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/create-workspace-resources-getting-started-azure-machine-learning/8-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/create-workspace-resources-getting-started-azure-machine-learning/9-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/create-workspace-resources-getting-started-azure-machine-learning/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/deploy-model-to-nvidia-triton-inference-server/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/deploy-model-to-nvidia-triton-inference-server/2-create-gpu-accelerated-virtual-machine.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/deploy-model-to-nvidia-triton-inference-server/3-install-prerequisites-nvidia-triton-inference-server.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/deploy-model-to-nvidia-triton-inference-server/4-execute-inference-workload-nvidia-triton-inference-server.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/deploy-model-to-nvidia-triton-inference-server/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/deploy-model-to-nvidia-triton-inference-server/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/deploy-model-to-nvidia-triton-inference-server/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/use-automl-train-labeled-dataset-develop-production-model/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/use-automl-train-labeled-dataset-develop-production-model/2-prepare-jupyter-notebook-workspace.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/use-automl-train-labeled-dataset-develop-production-model/3-configure-jupyter-notebook-execution-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/use-automl-train-labeled-dataset-develop-production-model/4-execute-jupyter-notebook-produce-object-detection-model-automl.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/use-automl-train-labeled-dataset-develop-production-model/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/use-automl-train-labeled-dataset-develop-production-model/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/use-automl-train-labeled-dataset-develop-production-model/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/nvidia-deepstream-development-with-microsoft-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/nvidia-deepstream-embedded-device-deployment-azure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/nvidia-deepstream-embedded-device-deployment-azure/2-introduction-artificial-intelligence-edge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/nvidia-deepstream-embedded-device-deployment-azure/3-configure-deepstream-graph-publish-data-azure-iot-hub.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/nvidia-deepstream-embedded-device-deployment-azure/4-build-publish-cross-platform-deepstream-container-images.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/nvidia-deepstream-embedded-device-deployment-azure/5-configure-azure-iot-edge-nvidia-embedded-hardware.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/nvidia-deepstream-embedded-device-deployment-azure/6-deploy-deepstream-images-nvidia-embedded-devices-iot-edge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/nvidia-deepstream-embedded-device-deployment-azure/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/nvidia-deepstream-embedded-device-deployment-azure/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/nvidia-deepstream-embedded-device-deployment-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/setup-configure-nvidia-deepstream-development/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/setup-configure-nvidia-deepstream-development/2-introduction-intelligent-video-analytics.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/setup-configure-nvidia-deepstream-development/3-install-nvidia-deepstream-dependencies-sdk.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/setup-configure-nvidia-deepstream-development/4-run-nvidia-deepstream-reference-application.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/setup-configure-nvidia-deepstream-development/5-modify-deepstream-reference-application-samples.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/setup-configure-nvidia-deepstream-development/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/setup-configure-nvidia-deepstream-development/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/setup-configure-nvidia-deepstream-development/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/introduction-nvidia-deepstream-graph-composer-azure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/introduction-nvidia-deepstream-graph-composer-azure/2-introduction-nvidia-deepstream-graph-composer.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/introduction-nvidia-deepstream-graph-composer-azure/3-install-nvidia-deepstream-graph-composer.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/introduction-nvidia-deepstream-graph-composer-azure/4-run-nvidia-deepstream-graph-composer-reference-application.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/introduction-nvidia-deepstream-graph-composer-azure/5-package-deepstream-graph-composer-app-containerized-workload.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/introduction-nvidia-deepstream-graph-composer-azure/6-publish-deepstream-graph-composer-container-to-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/introduction-nvidia-deepstream-graph-composer-azure/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/introduction-nvidia-deepstream-graph-composer-azure/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/introduction-nvidia-deepstream-graph-composer-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/paths/go-first-steps/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false

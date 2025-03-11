@@ -1,11 +1,11 @@
 You've learned how to:
 
-*   Design cloud, hybrid and multicloud access strategies
-*   Design a solution for Microsoft Entra ID, part of Microsoft Entra
-*   Design a solution for external identities
-*   Design modern authentication and authorization strategies
-*   Specify requirements to secure Active Directory Domain Services
-*   Design a solution to manage secrets, keys, and certificates
+- Design cloud, hybrid, and multicloud access strategies.
+- Design a solution for Microsoft Entra ID, part of Microsoft Entra.
+- Design a solution for external identities.
+- Design modern authentication and authorization strategies.
+- Specify requirements to secure Active Directory Domain Services.
+- Design a solution to manage secrets, keys, and certificates.
 
 ## Learn more with security documentation
 
@@ -23,5 +23,4 @@ You've learned how to:
 
 - [Microsoft Entra security for AWS - Azure Architecture Center](/azure/architecture/reference-architectures/aws/aws-azure-ad-security)
 
-> [!NOTE]
-> This modules contains AI-generated content.
+
