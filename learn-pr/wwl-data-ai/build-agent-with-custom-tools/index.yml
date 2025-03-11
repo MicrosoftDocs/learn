@@ -3,7 +3,7 @@ uid: learn.wwl.build-agent-with-custom-tools
 metadata:
   title: Build an agent with custom tools
   description: Learn how to build an agent with custom tools using the Azure AI Agent Service.
-  ms.date: 3/6/2025
+  ms.date: 3/11/2025
   author: ivorb
   ms.author: berryivor
   ms.topic: module-standard-task-based 
