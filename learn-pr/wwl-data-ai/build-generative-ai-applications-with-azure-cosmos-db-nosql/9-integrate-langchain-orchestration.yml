@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-generative-ai-applications-with-azure-cosmos-db-nosql.integrate-langchain-orchestration
+title: Integrate LangChain orchestration to improve efficiency and code maintainability in a Python Generative AI application
+metadata:
+  title: Integrate LangChain orchestration to improve efficiency and code maintainability in a Python Generative AI application
+  description: "Review techniques for integrating LangChain orchestration to improve efficiency and code maintainability in a Python Generative AI application."
+  ms.date: 03/10/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-integrate-langchain-orchestration.md)]
