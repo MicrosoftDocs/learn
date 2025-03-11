@@ -8,9 +8,7 @@ Azure AI services provide several custom tool options, including OpenAPI specifi
 - **Function calling**: Function calling allows you to describe the structure of functions to an agent and return the functions that need to be called along with their arguments. This feature is useful for integrating custom logic and workflows into your AI agents.
 - **Azure Functions**: Azure Functions enable you to create intelligent, event-driven applications with minimal overhead. They support triggers and bindings, which simplify how your AI Agents interact with external systems and services. Triggers determine when a function executes, while bindings facilitate streamlined connections to input or output data sources.
 
-TODO: Examples of each option instead of use cases?
-
-## Example Use Cases of Custom Tools within the Azure AI Agent Service
+## Example use of custom tools with the Azure AI Agent Service
 
 Custom tools within the Azure AI Agent Service enable users to extend the capabilities of AI agents, tailoring them to meet specific business needs. Some example use cases that illustrate the versatility and impact of custom tools include:
 

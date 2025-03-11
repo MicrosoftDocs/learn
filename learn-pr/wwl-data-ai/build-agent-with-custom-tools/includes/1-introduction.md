@@ -1,6 +1,6 @@
 Azure AI Agent Service offers a seamless way to build an agent without needing extensive AI or machine learning expertise. Through the use of tools, you can provide your agent additional functionality to execute actions on your behalf.
 
-Through the use of built-in tools for gathering knowledge and interpreting code, but sometimes your agent needs to be able to complete very specific tasks or actions. To accomplish these actions, you can provide your agent a **custom tool**.
+The AI Agent Service provides built-in tools for gathering knowledge and interpreting code, which provide your agent with some powerful functionality. However, sometimes your agent needs to be able to complete very specific tasks or actions that an AI model would struggle to handle on its own. To accomplish these actions, you can provide your agent a **custom tool**.
 
 Imagine you're working in the retail industry, and your company is struggling with managing customer inquiries efficiently. The customer support team is overwhelmed with repetitive questions, leading to delays in response times and decreased customer satisfaction. By leveraging Azure AI Agent Service with custom tools, you can create a custom FAQ agent that handles common inquiries. This agent can be provided a set of custom tools to look up customer orders, freeing up your support team to focus on more complex issues.
 

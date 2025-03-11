@@ -127,14 +127,38 @@ Azure Functions provide serverless computing capabilities for real-time processi
 ### Example: Using Azure Functions with a queue trigger
 
 1. **Define an Azure Function**: Develop and deploy your Azure Function. In this example, imagine we have a function in our Azure subscription to fetch the snowfall for a given location.
+
 1. **Integrate the Azure Function with the agent**:
 
     ```python
+    storage_service_endpoint = "https://<your-storage>.queue.core.windows.net"
+    
+    azure_function_tool = AzureFunctionTool(
+        name="get_snowfall",
+        description="Get snowfall information using Azure Function",
+        parameters={
+                "type": "object",
+                "properties": {
+                    "location": {"type": "string", "description": "The location to check snowfall."},
+                },
+                "required": ["location"],
+            },
+        input_queue=AzureFunctionStorageQueue(
+            queue_name="input",
+            storage_service_endpoint=storage_service_endpoint,
+        ),
+        output_queue=AzureFunctionStorageQueue(
+            queue_name="output",
+            storage_service_endpoint=storage_service_endpoint,
+        ),
+    )
+    
     agent = project_client.agents.create_agent(
-        model="gpt-4o-mini",
-        name="function-agent",
-        instructions="You are a weather assistant. Use the Azure Function to fetch weather data.",
-        tools=TODO BASED ON LAB
+        model=os.environ["MODEL_DEPLOYMENT_NAME"],
+        name="azure-function-agent",
+        instructions="You are a snowfall tracking agent. Use the provided Azure Function to fetch snowfall based on location.",
+        tools=azure_function_tool.definitions,
+    )
     ```
 
 The agent can now send requests to the Azure Function via a storage queue and process the results.
