@@ -1,0 +1,51 @@
+### YamlMime:LearningPath
+uid: learn.github-copilot-2
+metadata:
+  title: GitHub Copilot Fundamentals Part 2 of 2
+  description: Empower individual developers and businesses to enhance their productivity and foster innovation through a comprehensive exploration of the fundamental concepts of GitHub Copilot. Additionally, gain valuable insights on how to initiate the implementation of GitHub Copilot within your organization, enabling you to kickstart your own transformative journey.
+  brand: github
+  ms.date: 03/11/2025
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.topic: learning-path
+  ms.custom: [copilot-learning-hub]
+title: GitHub Copilot Fundamentals Part 2 of 2
+summary: |
+  Explore the fundamentals of GitHub Copilot and its potential to enhance productivity and foster innovation for both individual developers and businesses. Discover how to implement it within your organization and unleash its power for your own projects.
+
+  In this learning path, you'll:
+
+  - Gain a comprehensive understanding of the distinctions between GitHub Copilot Individuals, GitHub Copilot Business, and GitHub Copilot Enterprise.
+  - Understand how to utilize GitHub Copilot across various environments responsibly and securely.
+  - Learn advanced functionalities of GitHub Copilot and how to best use them. 
+
+prerequisites: |
+ - Basic understanding of GitHub fundamentals
+iconUrl: /training/achievements/intro-github-copilot.svg
+levels:
+- beginner
+- intermediate
+
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+- student
+
+products:
+- github
+
+subjects:
+- collaboration
+- devops
+
+modules:
+- learn.github.developer-use-cases-for-ai-with-github-copilot
+- learn.wwl.develop-unit-tests-using-github-copilot-tools
+- learn.github.introduction-to-github-copilot-for-business
+- learn.github.intro-github-copilot-enterprise
+- learn.github-copilot-with-javascript
+- learn.github-copilot-with-python
+trophy:
+  uid: learn.github.trophy

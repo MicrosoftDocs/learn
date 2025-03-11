@@ -304,14 +304,14 @@ Logging can be enabled either through an environment variable or programmaticall
 
 Set the `AZURE_LOG_LEVEL` environment variable before starting your application.
 
-#### On macOS/Linux:
+#### On macOS/Linux
 
 ```bash
 export AZURE_LOG_LEVEL=info
 node your-app.js
 ```
 
-#### On Windows:
+#### On Windows
 
 ```cmd
 set AZURE_LOG_LEVEL=info
