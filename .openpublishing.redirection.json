@@ -44750,6 +44750,91 @@
       "source_path": "learn-pr/nvidia/nvidia-deepstream-embedded-device-deployment-azure/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/setup-configure-nvidia-deepstream-development/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/setup-configure-nvidia-deepstream-development/2-introduction-intelligent-video-analytics.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/setup-configure-nvidia-deepstream-development/3-install-nvidia-deepstream-dependencies-sdk.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/setup-configure-nvidia-deepstream-development/4-run-nvidia-deepstream-reference-application.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/setup-configure-nvidia-deepstream-development/5-modify-deepstream-reference-application-samples.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/setup-configure-nvidia-deepstream-development/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/setup-configure-nvidia-deepstream-development/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/setup-configure-nvidia-deepstream-development/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/introduction-nvidia-deepstream-graph-composer-azure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/introduction-nvidia-deepstream-graph-composer-azure/2-introduction-nvidia-deepstream-graph-composer.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/introduction-nvidia-deepstream-graph-composer-azure/3-install-nvidia-deepstream-graph-composer.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/introduction-nvidia-deepstream-graph-composer-azure/4-run-nvidia-deepstream-graph-composer-reference-application.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/introduction-nvidia-deepstream-graph-composer-azure/5-package-deepstream-graph-composer-app-containerized-workload.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/introduction-nvidia-deepstream-graph-composer-azure/6-publish-deepstream-graph-composer-container-to-azure.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/introduction-nvidia-deepstream-graph-composer-azure/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/introduction-nvidia-deepstream-graph-composer-azure/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/introduction-nvidia-deepstream-graph-composer-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     }
  ]
 }
