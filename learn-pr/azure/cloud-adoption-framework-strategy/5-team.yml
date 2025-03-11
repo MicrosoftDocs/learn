@@ -11,3 +11,20 @@ title: Define your cloud strategy team
 durationInMinutes: 10
 content: |
   [!include[](includes/5-team.md)]
+quiz:
+ title: Check your knowledge
+ questions:
+ - content: 
+   choices:
+   - content: 
+     isCorrect: true
+     explanation: Correct.
+   - content: 
+     isCorrect: false
+     explanation: Incorrect.
+   - content: 
+     isCorrect: false
+     explanation: Incorrect. 
+   - content: 
+     isCorrect: false
+     explanation: Incorrect. 

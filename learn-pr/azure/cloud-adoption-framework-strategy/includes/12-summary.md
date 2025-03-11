@@ -1,12 +1,10 @@
-In this module, you learned how to establish and define an executive-level strategy for cloud adoption. Now you can apply these skills to your own cloud adoption or digital transformation strategy to create clarity and executive sponsorship for your program.
+Now you know how to create a structured approach to help your organization define your business justification and expected outcomes for cloud adoption.
 
-In this module, you completed your objectives to:
+In this module, you learned how to:
 
-- Create clarity on corporate strategy to ensure that all team members are working toward common goals
-- Establish metrics to create clarity, help the team learn, and systematically work toward your organizational objectives
-- Evaluate financial considerations to understand the value of cloud adoption
-- Evaluate technical considerations to help the team prepare for successful cloud-adoption projects
+- Assess your organization's readiness for cloud adoption. 
+- Identify reasons for adopting cloud technologies and establish clear, measurable objectives.
+- Identify individuals and teams to help build and implement the cloud adoption strategy.
+- Ensure leadership and executive buy-in, align organizational strategies, and assess the readiness of your operating model.
+- Develop a comprehensive plan that outlines your approach to adopt and integrate cloud technologies.
 
-## Next steps
-
-Convert your cloud adoption strategy to an actionable cloud adoption plan with the complementary Learn module, *Prepare for cloud adoption with a data-driven plan*.

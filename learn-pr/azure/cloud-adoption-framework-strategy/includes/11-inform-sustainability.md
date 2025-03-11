@@ -1,4 +1,4 @@
-Sustainability is becoming a key performance indicator for organizations. Organizations must respond to this evolution with innovative solutions and technology-enabled approaches.
+Sustainability is an increasingly important KPI for organizations. Organizations must respond to this evolution with innovative solutions and technology-enabled approaches.
 
 Research indicates that this evolution is good for business because sustainability front-runners:
 
@@ -16,15 +16,15 @@ Research indicates that this evolution is good for business because sustainabili
 
 Customers demand transparency about the environmental impact of organizations. Proactively work toward sustainability to build a positive brand, reputation, and trust, and attract new talent, partners, and investors. To strengthen your business messaging, communicate details about your sustainability efforts to customers. Adopt a green business model to ensure long-term success and attract employees that have a similar green mindset.
 
-Recommendations:
+#### Recommendations
 
 - **Integrate sustainability into your mission statement** and align brand values with business practices.
 
-- **Share annual sustainability reports** to demonstrate transparency and progress. For more information, see the Microsoft 2024 environmental sustainability report.
+- **Share annual sustainability reports** to demonstrate transparency and progress. For more information, see the [Microsoft 2024 environmental sustainability report](https://www.microsoft.com/corporate-responsibility/sustainability/report).
 
 ## Incorporate sustainability into your cloud strategy
 
-Consider how the cloud can benefit your sustainability efforts:
+The cloud can benefit your sustainability efforts in the following ways:
 
 - Meet regulatory compliance requirements.
 - Help your organization reduce carbon emissions by using modern cloud tools.
@@ -33,25 +33,25 @@ Consider how the cloud can benefit your sustainability efforts:
 - Increase revenue by optimizing your technical landscape.
 - Reduce operating costs by driving efficiency.
 - Improve brand trust by driving sustainability and green IT practices.
-- Achieve sustainable outcomes by combining financial efficiency and cost optimization. Cost optimization often represents a greater sustainability posture.
+- Achieve sustainable outcomes by combining financial efficiency and cost optimization.
 
-Recommendations:
+#### Recommendations
 
-- **Build green teams** with goals and metrics for sustainability, including emissions, water use, and energy consumption.
+- **Create green teams** that have goals and metrics for sustainability, including emissions, water use, and energy consumption.
 
 - **Evaluate your supply chain** for Scope 3 emissions, and understand the factors that contribute to your emissions. 
 - **Educate teams** by using the Azure Well-Architected Framework for sustainable practices.
-- **Use gamification** to motivate sustainable solutions, and track progress with metrics like the Software Carbon Intensity specification.
-- **Incorporate AI** to accelerate sustainability efforts. For more information, see 'Accelerating Sustainability with AI: Innovations for a Better Future.
+- **Use gamification** to motivate sustainable solutions, and track progress with metrics like the Software Carbon Intensity (SCI) specification.
+- **Incorporate AI** to accelerate sustainability efforts. For more information, see [Accelerate sustainability with AI](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/Accelerating-Sustainability-with-AI-2025.pdf).
 
 ### Azure facilitation
 
-- [Microsoft Cloud for Sustainability](/industry/sustainability/overview) combines environmental, social, and governance capabilities to accelerate sustainability progress and business growth.
+- [Cloud for Sustainability](/industry/sustainability/overview) combines environmental, social, and governance capabilities to accelerate sustainability progress and business growth.
 
-- [Microsoft Sustainability Manager](/industry/sustainability/sustainability-manager-overview) provides data intelligence and comprehensive, integrated, and automated sustainability management capabilities.
+- [Sustainability Manager](/industry/sustainability/sustainability-manager-overview) provides data intelligence and comprehensive, integrated, and automated sustainability management capabilities.
 
-- [Azure carbon optimization](/azure/carbon-optimization/overview) measures and minimizes the carbon impact of your Azure resources.
+- [Azure carbon optimization](/azure/carbon-optimization/overview) helps measure and minimize the carbon impact of your Azure resources.
 
-- The [emissions savings estimator for Microsoft Cloud](https://gw.us-il301.gateway.prod.island.powerapps.com/customerenrollmentservice/estimator/index.html) evaluates how to reduce emissions by migrating your workloads to Microsoft Cloud services.
+- The [emissions-saving estimator for Microsoft Cloud](https://gw.us-il301.gateway.prod.island.powerapps.com/customerenrollmentservice/estimator/index.html) evaluates how to reduce emissions by migrating your workloads to Microsoft Cloud services.
 
 - The [emissions impact dashboard](https://www.microsoft.com/sustainability/emissions-impact-dashboard) evaluates your carbon emissions so that you can make targeted decisions.

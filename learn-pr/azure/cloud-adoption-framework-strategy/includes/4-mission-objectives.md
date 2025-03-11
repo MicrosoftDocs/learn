@@ -2,9 +2,9 @@ This unit describes how to define your mission and objectives. A clear mission p
 
 ## Create a mission statement
 
-A mission statement helps you align your objectives and key results to your organization's overall business mission.
+A mission statement helps align your objectives and key results to your organization's overall business mission.
 
-To help you derive a statement for your business, consider these initial questions:
+To help derive a statement for your business, consider these initial questions:
 
 - Why are you moving to or expanding in the cloud?
 - What are your business objectives?
@@ -16,13 +16,14 @@ Use the answers to these questions to help define your mission statement for you
 
 ## Define objectives
 
-Ensure that your objectives include clear and inspiring goals that align with the mission statement. Consider the following examples:
+Your objectives should include clear and inspiring goals that align with the mission statement. Consider the following examples:
 
 - **Objective for security:** "Use advanced security offerings to protect your assets."
+
 - **Objective for compliance:** "Use advanced compliance offerings to audit your assets."
 - **Objective for datacenter modernization:** "Modernize infrastructure with reduced hardware and staffing. To upgrade the datacenter, migrate to Azure for enhanced capabilities."
 
-To define your mission and objectives, consider the following recommendations:
+#### Recommendations
 
 - **Involve key stakeholders** to ensure that they understand and align with the business and departmental missions and objectives. Include problem statements that cloud adoption addresses.
 
@@ -36,16 +37,14 @@ To define your mission and objectives, consider the following recommendations:
 
 ## Measure success
 
-To understand if you're on track to meet your objectives, you must be able to effectively measure and track your key results. Establish KPIs or other ways to gauge progress on your mission and objectives.
+To understand if you're on track to meet your objectives, you must be able to effectively measure and track your key results by using KPIs or other metrics. These metrics should provide insight into your progress against each key result and highlight areas for improvement.
 
-These metrics should provide insights into your progress against each key result and highlight areas for improvement.
+The Strategy methodology provides [example objectives and metrics](/azure/cloud-adoption-framework/strategy/mission-objectives#example-objectives-and-success-metrics). Use these example to discover ideas about how to incorporate this guidance into your scenario.
 
-To measure your success, use these guidelines when you define metrics.
+#### Recommendations
 
 - **Define KPIs.** Set clear metrics that you can measure against each related key result.
 
 - **Review regularly.** Schedule and perform regular reviews to assess progress.
 
 - **Be agile.** Iterate and adjust your strategy and ways to measure progress. Cloud innovation rapidly changes the technical landscape and the opportunities to apply clever solutions.
-
-The Strategy methodology provides [example objectives and metrics](/azure/cloud-adoption-framework/strategy/mission-objectives#example-objectives-and-success-metrics). Use these example to discover ideas about how to incorporate this guidance into your scenario.

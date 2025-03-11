@@ -11,3 +11,20 @@ title: Define your mission and objectives
 durationInMinutes: 10
 content: |
   [!include[](includes/4-mission-objectives.md)]
+quiz:
+ title: Check your knowledge
+ questions:
+ - content: What is the primary purpose of a mission statement in the context of cloud adoption? 
+   choices:
+   - content: To provide direction and purpose 
+     isCorrect: true
+     explanation: Correct. A mission statement aligns the cloud initiatives with the overall business goals to help focus efforts on achieving desired outcomes.
+   - content: To define the specific cloud services and vendors that must be used
+     isCorrect: false
+     explanation: Incorrect. A mission statement should guide the overall strategy, not dictate specific services or vendors.
+   - content: To outline the technical specifications and configurations required for cloud deployment
+     isCorrect: false
+     explanation: Incorrect. A mission statement focuses on the overall direction and purpose, not technical details.
+   - content: To create a detailed project timeline for cloud migration activities
+     isCorrect: false
+     explanation: Incorrect. A mission statement provides high-level direction and purpose, not specific timelines.

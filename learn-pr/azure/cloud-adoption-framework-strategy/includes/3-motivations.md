@@ -1,10 +1,10 @@
 This unit describes how to understand and define your motivations for your cloud adoption strategy. Clear motivations help prioritize initiatives, streamline resource allocation, and mitigate risks by addressing specific business needs. 
 
-You can acheive motivations for cloud adoption directly, such as through cost optimization by moving to platform as a service (PaaS), or indirectly, like accelerating business application delivery.
+You can acheive motivations for cloud adoption directly, such as through cost optimization by moving to platform as a service (PaaS), or indirectly, such as accelerating business application delivery.
 
 ## Define your motivations
 
-Motivations for adopting and expanding your cloud footprint can vary. Consider the following examples to guide your decision making and inform your strategy.
+Determine your motivations for adopting and expanding your cloud footprint. Consider the following examples to guide your decision making and inform your strategy.
 
 ### Reduce business risk  
 
@@ -16,9 +16,9 @@ Motivations for adopting and expanding your cloud footprint can vary. Consider t
 
 - **Business continuity:** Use the capabilities of the cloud for high availability and uptime guarantees. To establish disaster recovery routines, use reliable backup and recovery solutions.
 
-- **Datacenter modernization:** Reduce hardware and staffing to modernize infrastructure. To upgrade your infrastructure, migrate to Azure for enhanced capabilities.
+- **Datacenter modernization:** Reduce hardware and staffing, and get enhanced capabilities.
 
-- **Data governance:** Implement robust data governance to minimize risks. This approach helps ensure compliance and security across decentralized data sources.
+- **Data governance:** Implement robust data governance to minimize risks and help ensure compliance and security across decentralized data sources.
 
 - **Compliance management:** Minimize compliance risks by using policies that block or alert deployments that don't align with your compliance requirements.  
 
@@ -30,7 +30,7 @@ Motivations for adopting and expanding your cloud footprint can vary. Consider t
 
 - **AI:** Access cutting-edge AI capabilities for transformative solutions.
 
-- **Cloud-native capabilities:** Benefit from exclusive cloud capabilities that aren't available elsewhere.
+- **Cloud-native capabilities:** Benefit from exclusive cloud capabilities that aren't available in on-premises environments.
 
 - **Security:** Use robust security controls to securely enhance innovation.
 
@@ -38,11 +38,11 @@ Motivations for adopting and expanding your cloud footprint can vary. Consider t
 
 - **Shared responsibility:** Focus IT efforts on delivering business value.
 
-- **Data empowerment:** Use accessible data to democratize insights. This strategy drives rapid, data-driven innovation across teams.
+- **Data empowerment:** Use accessible data to democratize insights and drive rapid, data-driven innovation across teams.
 
 - **Compliance empowerment:** Apply policies to make compliance a feature of the solutions that you develop instead of an assessment that they need to pass later.
 
-- **Cost flexibility:** Use the pay-as-you-go cost model to easily drive short-term innovative projects and proof-of-concept solutions without the need to own anything when you shut them down.
+- **Cost flexibility:** Use the pay-as-you-go cost model to easily drive short-term innovative projects and proof-of-concept solutions without the need to own any resources when you shut them down.
 
 ### Enhance agility and efficiency
 
@@ -70,4 +70,4 @@ After you identify your motivations and key considerations, assess and prioritiz
 
 - **Iterate and review:** Revisit and adjust priorities regularly as the business needs change. When you later define your mission and goals, link them to your motivations and expand as necessary.
 
-The Strategy methodology provides an [example of how to classify motivations](/azure/cloud-adoption-framework/strategy/motivations#example-classification). Use this example to discover ideas about how to incorporate this guidance into your scenario.
+The Strategy methodology provides an [example of motivation classification](/azure/cloud-adoption-framework/strategy/motivations#example-classification). Use this example to discover ideas about how to incorporate this guidance into your scenario.
