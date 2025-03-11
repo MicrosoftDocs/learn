@@ -5405,6 +5405,16 @@ achievements:
   title: Get started with blockchain development
   summary: This learning path introduces you to blockchain and development on the Ethereum platform. Discover what skills are necessary to learn to begin building your own blockchain networks at scale.
   iconUrl: /training/achievements/ethereum-blockchain-development.svg
+- uid: learn.language.go-methods-interfaces.badge
+  type: badge
+  title: Use methods and interfaces in Go
+  summary: Learn about best practices for writing methods and interfaces in Go.
+  iconUrl: /training/achievements/go/go-methods-interfaces.svg
+- uid: learn.language.go-get-started.badge
+  type: badge
+  title: Get started with Go
+  summary: In this module, you'll start taking your first steps with Go.
+  iconUrl: /training/achievements/go/go-get-started.svg
 - uid: learn.language.go-errors-logs.badge
   type: badge
   title: Implement error handling and logging in Go
