@@ -6,12 +6,13 @@ metadata:
   prefetch-feature-rollout: true
   title: Implement threading and parallelism
   description: "Implement threading and parallelism"
-  ms.date: 10/17/2022
+  ms.date: 03/09/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
   ms.custom:
     - devx-track-dotnet
+  zone_pivot_groups: dev-lang-csharp-node-python
 azureSandbox: false
 labModal: false
 durationInMinutes: 6
