@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-generative-ai-applications-with-azure-cosmos-db-nosql.exercise-build-generative-ai-applications
+title: Exercise - Build a Generative AI application with Python and Azure Cosmos DB for NoSQL
+metadata:
+  title: Exercise - Build a Generative AI application with Python and Azure Cosmos DB for NoSQL
+  description: "Exercise: Build a Generative AI application with Python and Azure Cosmos DB for NoSQL."
+  ms.date: 03/10/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 20
+content: |
+  [!include[](includes/8-exercise-build-generative-ai-applications.md)]
