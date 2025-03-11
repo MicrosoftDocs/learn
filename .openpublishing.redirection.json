@@ -44700,6 +44700,56 @@
       "source_path": "learn-pr/nvidia/use-automl-train-labeled-dataset-develop-production-model/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/nvidia-deepstream-development-with-microsoft-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/nvidia-deepstream-embedded-device-deployment-azure/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/nvidia-deepstream-embedded-device-deployment-azure/2-introduction-artificial-intelligence-edge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/nvidia-deepstream-embedded-device-deployment-azure/3-configure-deepstream-graph-publish-data-azure-iot-hub.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/nvidia-deepstream-embedded-device-deployment-azure/4-build-publish-cross-platform-deepstream-container-images.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/nvidia-deepstream-embedded-device-deployment-azure/5-configure-azure-iot-edge-nvidia-embedded-hardware.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/nvidia-deepstream-embedded-device-deployment-azure/6-deploy-deepstream-images-nvidia-embedded-devices-iot-edge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/nvidia-deepstream-embedded-device-deployment-azure/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/nvidia-deepstream-embedded-device-deployment-azure/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/nvidia/nvidia-deepstream-embedded-device-deployment-azure/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/",
+      "redirect_document_id": false
     }
  ]
 }

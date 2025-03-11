@@ -5325,6 +5325,16 @@ achievements:
   title: Write automated tests
   summary: Learn about the types of testing you can do with Rust.
   iconUrl: /training/achievements/rust-automated-tests.svg
+- uid: learn.nvidia-deepstream-development-azure.trophy
+  type: trophy
+  title: NVIDIA DeepStream development with Microsoft Azure
+  summary: With NVIDIA DeepStream, you can seamlessly develop optimized Intelligent Video Applications that can consume multiple video, image, and audio sources. You can also apply single or cascading inference operations to video frames in real-time, and transmit inference results to the cloud for archiving or additional processing. Learn how to develop custom DeepStream applications backed by services in Microsoft Azure and securely deploy NVIDIA DeepStream-based AI workloads to NVIDIA-powered IoT Edge devices.
+  iconUrl: /training/achievements/nvidia-deepstream-development-with-microsoft-azure.svg
+- uid: learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure.badge
+  type: badge
+  title: NVIDIA DeepStream embedded device deployment with Azure
+  summary: In this module, you'll publish and deploy an ARM-based DeepStream container workload to NVIDIA embedded hardware by using Azure IoT Edge.
+  iconUrl: /training/achievements/nvidia-deepstream-embedded-device-deployment-azure.svg
 - uid: learn.nvidia.use-automl-train-labeled-dataset-develop-production-model.badge
   type: badge
   title: Use AutoML to train a labeled dataset and develop a production model
