@@ -18,7 +18,7 @@ summary: |
    - Become familiar with Git
    - Learn about GitHub Copilot
 prerequisites: |
- - A [GitHub](https://github.com?azure-portal=true)
+ - A [GitHub Account](https://github.com?azure-portal=true)
 iconUrl: /training/achievements/8-learn-continuous-integration-with-github-actions.svg
 levels:
 - beginner
