@@ -41,7 +41,7 @@ az group create --name $RESOURCE_GROUP --location $LOCATION
 
 ### Create an Azure Database for PostgreSQL Server
 
-Use the following command to create a database instance for development purposes. The **burstable** tier is a cost-effective tier for workloads that don't require consistent performance.
+Use the following command to create a database instance for development purposes. The *burstable* tier is a cost-effective tier for workloads that don't require consistent performance.
 
 ```azurecli
 az postgres flexible-server create \

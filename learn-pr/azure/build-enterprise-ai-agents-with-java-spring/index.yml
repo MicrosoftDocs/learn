@@ -34,7 +34,8 @@ prerequisites: |
   - Basic familiarity with Java and Spring Boot.
   - Experience with Git and Maven.
   - Java 17 or later installed.
-  - psql client.
+  - The psql client.
+  - Maven
 subjects:
   - machine-learning
   - custom-app-development

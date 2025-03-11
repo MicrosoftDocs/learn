@@ -10,36 +10,34 @@ Agents can send and receive messages, generating responses using a combination o
 
 AI agents offer several advantages for application development by enabling the creation of modular components that collaborate to reduce manual intervention in complex tasks. Key benefits include:
 
-* **Modular Components:** Define specialized agents for tasks like data scraping, API interaction, or natural language processing. This modularity makes it easier to adapt the application as requirements evolve.
-* **Collaboration:** Multiple agents can work together - one might handle data collection, another performs analysis, while yet another makes decisions - creating distributed intelligence.
-* **Human-Agent Collaboration:** Agents can work alongside humans to augment decision-making, for example, by preparing analyses that humans review and refine.
-* **Process Orchestration:** Agents can coordinate tasks across systems, tools, and APIs, automating end-to-end processes such as cloud orchestration, deployments, or creative workflows.
+- Modular Components: Define specialized agents for tasks like data scraping, API interaction, or natural language processing. This modularity makes it easier to adapt the application as requirements evolve.
+
+- Collaboration: Multiple agents can work together - one might handle data collection, another performs analysis, while yet another makes decisions - creating distributed intelligence.
+
+- Human-Agent Collaboration: Agents can work alongside humans to augment decision-making, for example, by preparing analyses that humans review and refine.
+
+- Process Orchestration: Agents can coordinate tasks across systems, tools, and APIs, automating end-to-end processes such as cloud orchestration, deployments, or creative workflows.
 
 ## Agent workflows and patterns
 
 Modern AI applications can be designed using a variety of agentic patterns. The Spring AI blog post on Agentic Patterns outlines several key workflows:
 
-- Chain Workflow:
-  Breaks complex tasks into a series of sequential steps. Each step processes the output of the previous one, allowing for gradual transformation and refinement of data.
+- Chain workflow: Breaks complex tasks into a series of sequential steps. Each step processes the output of the previous one, allowing for gradual transformation and refinement of data.
 
-- Parallelization Workflow:
-  Executes multiple LLM calls concurrently using techniques like thread pools and futures. This pattern is ideal for processing large volumes of independent items or obtaining diverse perspectives through majority voting.
+- Parallelization workflow: Executes multiple LLM calls concurrently using techniques like thread pools and futures. This pattern is ideal for processing large volumes of independent items or obtaining diverse perspectives through majority voting.
 
-- Routing Workflow:
-  Directs inputs to specialized handlers based on content. By classifying the input and routing it to a corresponding prompt, the system ensures that each type of task is handled optimally.
+- Routing workflow: Directs inputs to specialized handlers based on content. By classifying the input and routing it to a corresponding prompt, the system ensures that each type of task is handled optimally.
 
-- Orchestrator-Workers Workflow:
-  Uses a central orchestrator to decompose a complex task into subtasks that are handled by specialized worker agents. This pattern supports distributed problem solving while maintaining overall process control.
+- Orchestrator-Workers workflow: Uses a central orchestrator to decompose a complex task into subtasks that are handled by specialized worker agents. This pattern supports distributed problem solving while maintaining overall process control.
 
-- Evaluator Optimizer Workflow:
-  Focused on iterative refinement, this dual-model approach uses a generator (writer) to produce an initial output and an evaluator (editor) to review and suggest improvements. The process repeats until the output meets defined quality standards.
+- Evaluator Optimizer workflow: Focused on iterative refinement, this dual-model approach uses a generator (writer) to produce an initial output and an evaluator (editor) to review and suggest improvements. The process repeats until the output meets defined quality standards.
 
 ## Advanced content generation with the Evaluator Optimizer Agent pattern
 
 Building on the core RAG functionality, advanced AI applications benefit from iterative refinement for generating high-quality content. The Evaluator Optimizer Agent pattern employs a dual-model process:
 
-* **Generator (Writer):** Produces an initial draft (e.g., a blog post).
-* **Evaluator (Editor):** Reviews the draft, providing detailed feedback and identifying areas for improvement.
+- Generator (Writer): Produces an initial draft, such as a blog post.
+- Evaluator (Editor): Reviews the draft, providing detailed feedback and identifying areas for improvement.
 
 ### How it works
 
@@ -52,9 +50,9 @@ Building on the core RAG functionality, advanced AI applications benefit from it
 
 In our exercise, we extend the RAG application by implementing a Blog Writer agent that uses the Evaluator Optimizer pattern. The Blog Writer service demonstrates how to:
 
-* Generate an initial blog post draft.
-* Evaluate the draft and extract actionable feedback.
-* Refine the draft iteratively until the content is approved.
+- Generate an initial blog post draft.
+- Evaluate the draft and extract actionable feedback.
+- Refine the draft iteratively until the content is approved.
 
 ## Unit summary
 

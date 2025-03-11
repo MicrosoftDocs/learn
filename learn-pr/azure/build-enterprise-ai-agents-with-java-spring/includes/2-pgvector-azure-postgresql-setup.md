@@ -1,6 +1,6 @@
 ## What is Vector Search Similarity?
 
-Vector Search Similarity is a technique used to find similar items in a dataset by comparing their vector representations. Vector similarity is commonly calculated using distance metrics, such as Euclidean distance or `cosine` similarity. In the context of AI and machine learning, vector representations (or embeddings) are numerical representations of data points, such as words, images, or user queries. These vectors capture the semantic meaning of the data points, allowing for efficient similarity searches.
+Vector Search Similarity is a technique used to find similar items in a dataset by comparing their vector representations. Vector similarity is commonly calculated using distance metrics, such as Euclidean distance or `cosine` similarity. In the context of AI and machine learning, vector representations - or embeddings - are numerical representations of data points, such as words, images, or user queries. These vectors capture the semantic meaning of the data points, allowing for efficient similarity searches.
 
 For example, in a question-answering system, user queries can be converted into vector embeddings. These embeddings can then be compared to a database of precomputed embeddings of previous prompts and answers to find the most similar ones. This process is known as vector similarity search.
 

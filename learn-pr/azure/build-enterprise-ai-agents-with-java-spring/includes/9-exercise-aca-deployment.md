@@ -73,15 +73,15 @@ az containerapp up \
     --location $LOCATION
 ```
 
-This command will:
+This command does the following tasks:
 
-* Create the resource group, it not created already.
-* Create the Container Apps environment named `$ENVIRONMENT` with a Log Analytics workspace
-* Create an Azure Container Registry
-* Build the container image using the source code and `Dockerfile` specified in `--source` path, and push it to the registry
-* Create and deploy the container app named `$CONTAINER_APP_NAME` using the built container image
-* Configure `8080` as the HTTP port that the container app listens for incoming traffic
-* Deploy the container app in the region specified in the `--location` parameter
+- Creates the resource group, if it doesn't already exist.
+- Creates the container apps environment named `$ENVIRONMENT` with a Log Analytics workspace.
+- Creates an Azure Container Registry instance.
+- Builds the container image using the source code and `Dockerfile` in the directory specified by the `source` parameter, and then pushes it to the registry.
+- Creates and deploys the container app named `$CONTAINER_APP_NAME` using the built container image.
+- Configures `8080` as the HTTP port that the container app listens to for incoming traffic.
+- Deploys the container app in the region specified in the `location` parameter.
 
 To view the logs of your Azure Container App, use the following command:
 
@@ -206,7 +206,7 @@ curl -G "https://$URL/api/rag" --data-urlencode "query=What is Vector Search Sim
 Expect to see a similar valid response:
 
 ```markdown
-**Vector Search Similarity** refers to the process of comparing and ranking data points (represented as vectors) based on their similarity in a multi-dimensional space. This method is commonly used in applications like information retrieval, recommendation systems, natural language processing, and computer vision.
+**Vector Search Similarity** refers to the process of comparing and ranking data points - represented as vectors - based on their similarity in a multi-dimensional space. This method is commonly used in applications like information retrieval, recommendation systems, natural language processing, and computer vision.
 ```
 
 You can also test the blog generation endpoint using a REST client or `curl`:

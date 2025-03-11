@@ -83,14 +83,17 @@ quiz:
         - content: API key, endpoint, and deployment name
           isCorrect: true
           explanation: Correct. Spring AI requires the API key, endpoint URL, and deployment name to properly configure Azure OpenAI integration.
-    - content: Which Spring AI pattern uses multiple AI roles to improve content quality?
+    - content: Which Agentic workflow uses multiple AI roles to improve content quality?
       choices:
-        - content: Chain of Responsibility
+        - content: Chain Workflow
           isCorrect: false
-        - Evaluator-Optimizer
+          explanation: The Chain Workflow breaks complex tasks into a series of steps
+        - content: Evaluator-Optimizer Workflow
           isCorrect: true
-          explanation: The Evaluator-Optimizer pattern uses writer and editor AI roles in a feedback loop to improve content quality.
-        - Command Pattern
+          explanation: The Evaluator-Optimizer workflow uses writer and editor AI roles in a feedback loop to improve content quality.
+        - content: Routing Workflow
           isCorrect: false
-        - Observer Pattern
+          explanation: The Routing Workflow directs input to specialized handlers
+        - content: Parallelization Workflow
           isCorrect: false
+          explanation: The Parallelization Workflow is ideal for processing large volumes of independent items. 

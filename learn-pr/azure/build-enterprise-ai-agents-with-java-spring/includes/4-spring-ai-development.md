@@ -2,7 +2,7 @@ In this unit, you learn how to implement Retrieval-Augmented Generation (RAG) in
 
 ## What are embeddings?
 
-*Embeddings* are dense vector representations of data. In simpler terms, embeddings are a way to convert complex data, like words or images, into a set of numbers (vectors) that a computer can easily process. In natural language processing (NLP), embeddings represent words, sentences, or documents as vectors in a high-dimensional space. In these vectors, each word or sentence is represented as a list of numbers. These numbers aren't random; they're designed to capture the meaning and relationships between the words.
+*Embeddings* are dense vector representations of data. In simpler terms, embeddings are a way to convert complex data, like words or images, into a set of numbers - vectors - that a computer can easily process. In natural language processing (NLP), embeddings represent words, sentences, or documents as vectors in a high-dimensional space. In these vectors, each word or sentence is represented as a list of numbers. These numbers aren't random; they're designed to capture the meaning and relationships between the words.
 
 These vectors capture semantic relationships, enabling advanced search and analysis. For instance, if you search for "queen" in a database, the system can also find related terms like "king" or "royalty" because their vectors are close to each other. This capability makes embeddings a powerful tool for tasks like search engines, recommendation systems, and language translation.
 
@@ -75,11 +75,11 @@ List<Document> documents = List.of(
 vectorStore.add(documents);
 ```
 
-Here's a detailed explanation of how this code works:
+The following list provides a detailed explanation of how this code works:
 
-1. Spring's `@Autowired` annotation injects an instance of the `VectorStore` class into your component.
-2. A list of `Document` objects is created. Each `Document` contains content and metadata (for example, a prompt).
-3. The list of documents is added to the `vectorStore`. The `VectorStore` generates embeddings using the configured `EmbeddingModel` and stores both the content and embeddings in the database.
+- Spring's `@Autowired` annotation injects an instance of the `VectorStore` class into your component.
+- A list of `Document` objects is created. Each `Document` contains content and metadata - for example, a prompt.
+- The list of documents is added to the `vectorStore`. The `VectorStore` generates embeddings using the configured `EmbeddingModel` and stores both the content and embeddings in the database.
 
 ### Query documents
 

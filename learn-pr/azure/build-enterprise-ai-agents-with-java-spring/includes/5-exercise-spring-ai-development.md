@@ -42,7 +42,7 @@ export OPENAI_RESOURCE_NAME=OpenAISpringAI
 
 ## Deploy the Azure OpenAI models
 
-For our application, you first need to deploy one chat model (gpt-4o) and one embedding model (`text-embedding-ada-002`). To deploy these models, we first need to create an Azure OpenAI resource.
+For our application, you first need to deploy one chat model - `gpt-4o` - and one embedding model - `text-embedding-ada-002`. To deploy these models, we first need to create an Azure OpenAI resource.
 
 ### Create an Azure OpenAI account
 
@@ -114,8 +114,8 @@ The generated Spring Boot starter project includes the following configurations 
 - Spring Boot Version: 3.4.3
 - Java Version: 17
 - Dependencies:
-  - `web`: Adds support for building web applications, including RESTful services using Spring MVC (Model View Controller).
-  - `jdbc`: Provides JDBC (Java Database Connectivity) support for database access.
+  - `web`: Adds support for building web applications, including RESTful services using Spring Model View Controller (MVC).
+  - `jdbc`: Provides Java Database Connectivity (JDBC) support for database access.
   - `azure-support`: Adds support for integrating with Azure services.
   - `spring-ai-azure-openai`: Adds support for integrating with Azure OpenAI services.
   - `spring-ai-vectordb-pgvector`: Adds support for using `pgvector`, a PostgreSQL extension for vector embeddings.
@@ -190,13 +190,13 @@ src/
 
 ### Spring AI configuration
 
-Before we can run the application successfully, we need to add the required configuration:
+Before we can run the application successfully, we need to add the following required configuration:
 
 - Azure OpenAI Endpoint
 - Azure OpenAI API Key
 - PostgreSQL URL
 
-Retrieve the **Azure OpenAI Endpoint** using this command:
+Retrieve the Azure OpenAI endpoint by using the following command:
 
 ```azurecli
 export AZURE_OPENAI_ENDPOINT=$(az cognitiveservices account show \
@@ -207,7 +207,7 @@ export AZURE_OPENAI_ENDPOINT=$(az cognitiveservices account show \
     | tr -d '\r')
 ```
 
-Retrieve the **Azure OpenAI API Key** using this command:
+Retrieve the Azure OpenAI API key by using the following command:
 
 ```azurecli
 export AZURE_OPENAI_API_KEY=$(az cognitiveservices account keys list \
@@ -218,7 +218,7 @@ export AZURE_OPENAI_API_KEY=$(az cognitiveservices account keys list \
     | tr -d '\r')
 ```
 
-Additionally, provide the **PostgreSQL URL** (retrieved using the command from a prior exercise):
+Provide the PostgreSQL URL - retrieved using the command from a prior exercise:
 
 ```azurecli
 az postgres flexible-server show \
@@ -230,7 +230,7 @@ az postgres flexible-server show \
 
 #### Review application.properties file
 
-Locate and open the **application.properties** file in the **src/main/resources** directory. There are three property values that will be populated using values from these environment variables: **AZURE_OPENAI_API_KEY**, **AZURE_OPENAI_ENDPOINT** and **PG_HOST**:
+Locate and open the **application.properties** file in the **src/main/resources** directory. There are three property values that will be populated using values from these environment variables: `AZURE_OPENAI_API_KEY`, `AZURE_OPENAI_ENDPOINT`, and `PG_HOST`:
 
 ```properties
 spring.application.name=spring-ai-app
@@ -440,8 +440,8 @@ Then ask:
 curl -G "http://localhost:8080/api/rag" --data-urlencode "query=How does QuestionAnswerAdvisor work in Spring AI?"
 ```
 
-You should now see an answer that clearly explains the role of **QuestionAnswerAdvisor** within Spring AI.
+You should now see an answer that clearly explains the role of `QuestionAnswerAdvisor` within Spring AI.
 
 ## Unit summary
 
-In this unit, we successfully built a Retrieval Augmented Generation (RAG) application using Spring AI, Azure OpenAI, and Spring AI's `VectorStore`. The module exposes the RAG capability via dedicated REST endpoint through the **RagController** class.
+In this unit, we successfully built a Retrieval Augmented Generation (RAG) application using Spring AI, Azure OpenAI, and Spring AI's `VectorStore`. The module exposes the RAG capability via dedicated REST endpoint through the `RagController` class.

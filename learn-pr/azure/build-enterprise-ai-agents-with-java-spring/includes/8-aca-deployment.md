@@ -6,14 +6,15 @@ Azure Container Apps is a serverless platform that allows you to maintain less i
 
 ### Environments
 
-A Container Apps environment is a secure boundary around one or more container apps and jobs. The Container Apps runtime manages each environment by handling OS upgrades, scale operations, failover procedures, and resource balancing. Before we can deploy an Azure Container App, we need to create an Azure Container App environment.
+A container apps environment is a secure boundary around one or more container apps and jobs. The Container Apps runtime manages each environment by handling OS upgrades, scale operations, failover procedures, and resource balancing. Before we can deploy a container app, you need to create an Azure Container Apps environment.
 
 :::image type="content" source="../media/azure-container-apps-containers.png" alt-text="Diagram showing the Azure Container Apps environment." lightbox="../media/azure-container-apps-containers.png" border="false":::
 
-There are two types of Container App environments:
+There are two types of container app environments:
 
-1. Workload profile. Run serverless apps with support for scale-to-zero and pay only for resources your apps use with the consumption profile. You can also run apps with customized hardware and increased cost predictability using dedicated workload profiles.
-1. Consumption only. Run serverless apps with support for scale-to-zero and pay only for resources your apps use.
+- Workload profile. Run serverless apps with support for scale-to-zero and pay only for resources your apps use with the consumption profile. You can also run apps with customized hardware and increased cost predictability using dedicated workload profiles.
+
+- Consumption only. Run serverless apps with support for scale-to-zero and pay only for resources your apps use.
 
 #### Replicas
 
@@ -50,7 +51,7 @@ Azure Container Apps support multiple ingress options to control how your applic
 Azure Container Apps provide flexible scaling options to ensure your application can handle varying loads efficiently. Here are the primary scaling options available:
 
 1. Manual Scaling. You can manually set the number of replicas for your container app. This option gives you full control over the scaling process, allowing you to adjust the number of instances based on your specific needs.
-1. Automatic Scaling. Azure Container Apps support automatic scaling based on various metrics. You can configure autoscaling rules to automatically adjust the number of replicas based on CPU usage, memory usage, or custom metrics including `JVM` (Java Virtual Machine) metrics using KEDA (Kubernetes Event-driven Autoscaling). This capability ensures your application can handle increased traffic without manual intervention.
+1. Automatic Scaling. Azure Container Apps support automatic scaling based on various metrics. You can configure autoscaling rules to automatically adjust the number of replicas based on CPU usage, memory usage, or custom metrics including `JVM` - Java Virtual Machine - metrics using Kubernetes Event-driven Autoscaling (KEDA). This capability ensures your application can handle increased traffic without manual intervention.
 1. Scale to Zero. For serverless applications, you can configure your container app to scale down to zero instances when there's no traffic. This helps save costs by only using resources when needed.
 
 To configure scaling, you can use the Azure CLI, Azure portal, or ARM templates. Here's an example of how to set up autoscaling using the Azure CLI:
