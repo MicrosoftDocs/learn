@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-generative-ai-applications-with-azure-cosmos-db-nosql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/10/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "What is the name of the system function that can be used to conduct a vector search in Azure Cosmos DB for NoSQL?"
+    choices:
+    - content: "``VectorSearch``"
+      isCorrect: false
+      explanation: "Incorrect. Although the name ``VectorSearch`` implies a function related to vector searches, it isn't a system function in Azure Cosmos DB."
+    - content: "``SimilaritySearch``"
+      isCorrect: false
+      explanation: "Incorrect. Although the name ``SimilaritySearch`` implies a function related to vector similarity searches, it isn't a system function in Azure Cosmos DB."
+    - content: "``VectorDistance``"
+      isCorrect: true
+      explanation: "Correct. The ``VectorDistance()`` system function is used to conduct a vector search in Azure Cosmos DB for NoSQL. It calculates the distance between two vectors, which helps determine how similar two vectors are based on their spatial characteristics."
+  - content: "Which component of the container vector policy specifies the technique used to compute the similarity between vectors?"
+    choices:
+    - content: "``datatype``"
+      isCorrect: false
+      explanation: "Incorrect. The ``datatype`` component specifies the type of elements in the vector, such as `Float32`, and doesn't relate to the technique for computing vector distances or similarities."
+    - content: "``distanceFunction``"
+      isCorrect: true
+      explanation: "Correct. The ``distanceFunction`` property of the container vector policy specifies the technique used to compute the distance or similarity between vectors. In vector search, distance functions determine how similar or different vectors are within a multidimensional space. Popular methods include Euclidean distance, cosine similarity, and Manhattan distance, each offering unique ways to compare the vectors."
+    - content: "path"
+      isCorrect: false
+      explanation: "Incorrect. The ``path`` component indicates the property containing the vector embeddings, not the method for computing distances or similarities between vectors."
+  - content: "Which type of vector index policy in Azure Cosmos DB for NoSQL is designed for fast and efficient approximate searches?"
+    choices:
+    - content: "``diskANN``"
+      isCorrect: true
+      explanation: "Correct. The ``diskANN`` index policy creates an index based on DiskANN, which is designed for fast and efficient approximate searches. It specializes for high-dimensional data and supports up to 4,096 dimensions, making it ideal for scenarios requiring quick retrieval of semantically similar vectors."
+    - content: "``flat``"
+      isCorrect: false
+      explanation: "Incorrect. The ``flat`` index policy stores vectors on the same index as other indexed properties without additional optimizations for fast searches. It supports up to 505 dimensions but doesn't provide the efficiency improvements of ``diskANN``."
+    - content: "``quantizedFlat``"
+      isCorrect: false
+      explanation: "Incorrect. The ``quantizedFlat`` index policy quantizes (compresses) vectors before storing them on the index, improving latency and throughput at the cost of a small amount of accuracy. It also supports up to 4,096 dimensions but focuses on compression rather than approximate search efficiency."
+      

@@ -17,7 +17,7 @@ await container.UpsertItemAsync<Product>(product, partitionKey);
 
 Since read and write in this example are distinct operations, there's a latency between these operations. This latency is represented in this diagram as *n*.
 
-![N latency between read and update](../media/5-latency.png)
+![Diagram of the N latency between read and update.](../media/5-latency.png)
 
 This latency can be as short as milliseconds or seconds in computer code but could still be catastrophic enough to lose potential updates. Some user-facing applications, where user input causes a longer latency between a read and update operation, can cause a longer *n* value and a higher potential for lost updates. This issue can be resolved by implementing **optimistic concurrency control**.
 
@@ -82,7 +82,7 @@ container.upsert_item(body=product)
 
 Since read and write in this example are distinct operations, there's a latency between these operations. This latency is represented in this diagram as *n*.
 
-![N latency between read and update](../media/5-latency.png)
+![Diagram of the N latency between read and update.](../media/5-latency.png)
 
 This latency can be as short as milliseconds or seconds in computer code but could still be catastrophic enough to lose potential updates. Some user-facing applications, where user input causes a longer latency between a read and update operation, can cause a longer *n* value and a higher potential for lost updates. This issue can be resolved by implementing **optimistic concurrency control**.
 
@@ -156,7 +156,7 @@ await container.items.upsert(product);
 
 Since read and write in this example are distinct operations, there's a latency between these operations. This latency is represented in this diagram as *n*.
 
-![N latency between read and update](../media/5-latency.png)
+![Diagram of the N latency between read and update.](../media/5-latency.png)
 
 This latency can be as short as milliseconds or seconds in computer code but could still be catastrophic enough to lose potential updates. Some user-facing applications, where user input causes a longer latency between a read and update operation, can cause a longer *n* value and a higher potential for lost updates. This issue can be resolved by implementing **optimistic concurrency control**.
 

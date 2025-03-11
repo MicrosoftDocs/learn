@@ -24,5 +24,6 @@ subjects:
 modules:
 - learn.wwl.query-azure-cosmos-db-sql-api
 - learn.wwl.author-complex-queries-azure-cosmos-db-sql-api
+- learn.wwl.build-generative-ai-applications-with-azure-cosmos-db-nosql
 trophy:
   uid: learn.wwl.execute-queries-azure-cosmos-db-sql-api.trophy

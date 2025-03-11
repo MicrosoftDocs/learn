@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-generative-ai-applications-with-azure-cosmos-db-nosql.exercise-generate-and-store-vectors
+title: Exercise - Generate vector embeddings with Azure OpenAI and store them in Azure Cosmos DB for NoSQL
+metadata:
+  title: Exercise - Generate vector embeddings with Azure OpenAI and store them in Azure Cosmos DB for NoSQL
+  description: "Exercise - Generate vector embeddings with Azure OpenAI and store them in Azure Cosmos DB for NoSQL."
+  ms.date: 03/10/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 20
+content: |
+  [!include[](includes/5-exercise-generate-and-store-vectors.md)]
