@@ -39,7 +39,7 @@ We can rewrite our JOIN expression by writing a subquery to filter out the group
 SELECT VALUE t FROM t IN p.tags WHERE t.class = 'trade-in'
 ```
 
-If we add this subquery to the entire all-up query, it will total up to this:
+If we add this subquery to the entire all-up query, it becomes this query:
 
 ```sql
 SELECT 
@@ -52,7 +52,7 @@ JOIN
     (SELECT VALUE t FROM t IN p.tags WHERE t.class = 'trade-in') AS t
 ```
 
-Our final JSON result array would then be this with one less result in the set:
+Our final JSON result array would then be as follows with one less result in the set:
 
 ```json
 [
