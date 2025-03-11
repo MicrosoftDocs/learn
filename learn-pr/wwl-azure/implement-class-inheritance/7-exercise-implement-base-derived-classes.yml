@@ -4,10 +4,12 @@ title: Exercise - Implement base and derived classes in a C# app
 metadata:
   title: Exercise - Implement base and derived classes in a C# app
   description: "Exercise - Implement base and derived classes in a C# app"
-  ms.date: 03/06/2025
+  ms.date: 03/10/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 30
 content: |
   [!include[](includes/7-exercise-implement-base-derived-classes.md)]

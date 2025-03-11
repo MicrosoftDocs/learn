@@ -5325,6 +5325,51 @@ achievements:
   title: Write automated tests
   summary: Learn about the types of testing you can do with Rust.
   iconUrl: /training/achievements/rust-automated-tests.svg
+- uid: learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.badge
+  type: badge
+  title: Introduction to NVIDIA DeepStream Graph Composer with Microsoft Azure
+  summary: In this module, you'll learn how to set up and configure the NVIDIA DeepStream 6.0 Graph Composer on an X86-based Ubuntu 18.04 system to enable rapid development of Intelligent Video Analytics application pipelines for deployment to cloud and edge-capable devices.
+  iconUrl: /training/achievements/introduction-nvidia-deepstream-graph-composer-azure.svg
+- uid: learn.nvidia.setup-configure-nvidia-deepstream-development.badge
+  type: badge
+  title: Set up and configure an NVIDIA DeepStream development environment
+  summary: In this module, you'll learn how to set up and configure an x86-based Ubuntu 18.04 system to host an NVIDIA DeepStream development environment.
+  iconUrl: /training/achievements/setup-configure-nvidia-deepstream-development.svg
+- uid: learn.nvidia-deepstream-development-azure.trophy
+  type: trophy
+  title: NVIDIA DeepStream development with Microsoft Azure
+  summary: With NVIDIA DeepStream, you can seamlessly develop optimized Intelligent Video Applications that can consume multiple video, image, and audio sources. You can also apply single or cascading inference operations to video frames in real-time, and transmit inference results to the cloud for archiving or additional processing. Learn how to develop custom DeepStream applications backed by services in Microsoft Azure and securely deploy NVIDIA DeepStream-based AI workloads to NVIDIA-powered IoT Edge devices.
+  iconUrl: /training/achievements/nvidia-deepstream-development-with-microsoft-azure.svg
+- uid: learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure.badge
+  type: badge
+  title: NVIDIA DeepStream embedded device deployment with Azure
+  summary: In this module, you'll publish and deploy an ARM-based DeepStream container workload to NVIDIA embedded hardware by using Azure IoT Edge.
+  iconUrl: /training/achievements/nvidia-deepstream-embedded-device-deployment-azure.svg
+- uid: learn.nvidia.use-automl-train-labeled-dataset-develop-production-model.badge
+  type: badge
+  title: Use AutoML to train a labeled dataset and develop a production model
+  summary: Learn how to use Automated Machine Learning to train a labeled dataset and develop a production object detection model.
+  iconUrl: /training/achievements/setup-configure-nvidia-deepstream-development.svg
+- uid: learn.nvidia.deploy-model-to-nvidia-triton-inference-server.badge
+  type: badge
+  title: Deploy model to NVIDIA Triton Inference Server
+  summary: NVIDIA Triton Inference Server is a multi-framework, open-source software that is optimized for inference. It supports popular machine learning frameworks like TensorFlow, Open Neural Network Exchange (ONNX) Runtime, PyTorch, NVIDIA TensorRT, and more. It can be used for your CPU or GPU workloads. In this module, you deploy your production model to NVIDIA Triton server to perform inference on a cloud-hosted virtual machine.
+  iconUrl: /training/achievements/introduction-nvidia-deepstream-graph-composer-azure.svg
+- uid: learn.nvidia.develop-custom-object-detection-models-with-nvidia-and-azure-machine-learning.trophy
+  type: trophy
+  title: Develop Custom Object Detection Models with NVIDIA and Azure Machine Learning
+  summary: Azure Machine Learning studio is a GUI-based integrated development environment for constructing and operationalizing Machine Learning workflow on Azure.  Learn how to develop custom object detection models using this service with NVIDIA GPU accelerated virtual machines.
+  iconUrl: /training/achievements/nvidia-deepstream-development-with-microsoft-azure-social.png
+- uid: learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.badge
+  type: badge
+  title: Create workspace resources for getting started with Azure Machine Learning
+  summary: In this module, you learn how to create resources for getting started with Azure Machine Learning.
+  iconUrl: /training/achievements/setup-configure-nvidia-deepstream-development.svg
+- uid: learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools.badge
+  type: badge
+  title: Create a labeled dataset using Azure Machine Learning data labeling tools
+  summary: Learn how to use Azure Machine Learning data labeling to create, manage, and monitor data labeling projects.
+  iconUrl: /training/achievements/setup-configure-nvidia-deepstream-development.svg
 - uid: learn.azure.communication-service-send-sms-console-app.badge
   type: badge
   title: Send an SMS message from a C# console application with Azure Communication Services
@@ -5370,3 +5415,18 @@ achievements:
   title: Use data types and structs, arrays, slices, and maps in Go
   summary: Learn about structs, arrays, slices, and maps. Understand the difference between them and when to use one type over the other.
   iconUrl: /training/achievements/go/go-data-types.svg
+- uid: learn.languages.go-first-steps.trophy
+  type: trophy
+  title: Take your first steps with Go
+  summary: Interested in learning a programming language but aren't sure where to start? Start here! Learn the basic syntax and thought processes required to build simple programs using Go.
+  iconUrl: /training/achievements/go/go-first-steps.svg
+- uid: learn.language.go-control-flow.badge
+  type: badge
+  title: Use control flows in Go
+  summary: Learn how to use control flows in Go.
+  iconUrl: /training/achievements/go/go-control-flow.svg
+- uid: learn.language.go-concurrency.badge
+  type: badge
+  title: Learn how concurrency works in Go
+  summary: Understand more about concurrency, one of the most unique features in Go.
+  iconUrl: /training/achievements/go/go-concurrency.svg

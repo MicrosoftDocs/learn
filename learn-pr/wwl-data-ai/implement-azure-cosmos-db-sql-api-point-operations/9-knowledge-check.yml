@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/22/2024
+  ms.date: 03/09/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -19,33 +19,33 @@ quiz:
     choices:
     - content: "Both an ID and partition key value"
       isCorrect: true
-      explanation: "That's correct. You can perform a point read with both the ID and partition key values."
+      explanation: "Correct. A point read with both the ID and partition key values can be performed."
     - content: "Only an ID"
       isCorrect: false
-      explanation: "That's incorrect. Both a partition key value and ID are required to perform a point read operation in Azure Cosmos DB for NoSQL."
+      explanation: "Incorrect. Both a partition key value and ID are required to perform a point read operation in Azure Cosmos DB for NoSQL."
     - content: "Only a partition key value"
       isCorrect: false
-      explanation: "That's incorrect. Both a partition key value and ID are required to perform a point read operation in Azure Cosmos DB for NoSQL."
-  - content: "Which method should you use to update an item in Azure Cosmos DB for NoSQL using the .NET SDK?"
+      explanation: "Incorrect. Both a partition key value and ID are required to perform a point read operation in Azure Cosmos DB for NoSQL."
+  - content: "Which method should be used to update an item in Azure Cosmos DB for NoSQL using the .NET SDK?"
     choices:
     - content: "PatchItemAsync<>"
       isCorrect: false
-      explanation: "That's incorrect. There's a separate set of methods to patch items in the SDK."
+      explanation: "Incorrect. There's a separate set of methods to patch items in the SDK."
     - content: "UpdateItemAsync<>"
       isCorrect: false
-      explanation: "That's incorrect. This method doesn't exist in the SDK."
+      explanation: "Incorrect. This method doesn't exist in the SDK."
     - content: "ReplacesItemAsync<>"
       isCorrect: true
-      explanation: "That's correct. The ReplaceItemAsync<> method takes in an item as the method parameter and updates the item. You can alternatively use UpsertItemAsync<> but this is less efficient as it attempts an insert first."
+      explanation: "Correct. The ReplaceItemAsync<> method takes in an item as the method parameter and updates the item. Alternatively UpsertItemAsync<> can be used, but this method is less efficient as it attempts an insert first."
   - content: "Which class contains the methods for Create, Read, Update, and Delete point operations on items in Azure Cosmos DB for NoSQL?"
     choices:
     - content: "Database"
       isCorrect: false
-      explanation: "That's incorrect. First access the Microsoft.Azure.Cosmos.Container class to perform CRUD operations on items."
+      explanation: "Incorrect. First access the Microsoft.Azure.Cosmos.Container class to perform CRUD operations on items."
     - content: "Container"
       isCorrect: true
-      explanation: "That's correct. The Microsoft.Azure.Cosmos.Container class contains methods for CRUD operations on items."
+      explanation: "Correct. The Microsoft.Azure.Cosmos.Container class contains methods for CRUD operations on items."
     - content: "CosmosClient"
       isCorrect: false
-      explanation: "That's incorrect. First access the Microsoft.Azure.Cosmos.Container class to perform CRUD operations on items."
+      explanation: "Incorrect. First access the Microsoft.Azure.Cosmos.Container class to perform CRUD operations on items."
 
