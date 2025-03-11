@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-generative-ai-applications-with-azure-cosmos-db-nosql.build-generative-ai-applications
+title: Build Generative AI applications with Azure Cosmos DB NoSQL and Python
+metadata:
+  title: Build Generative AI applications with Azure Cosmos DB NoSQL and Python
+  description: "Learn how to build Generative AI applications with Python and Azure Cosmos DB for NoSQL."
+  ms.date: 03/10/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-build-generative-ai-applications.md)]
