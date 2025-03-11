@@ -9,7 +9,7 @@ Sensitive data is no longer confined to on-premises servers. It exists across cl
 
 By 2025, global data volumes are expected to reach 175 zettabytes, a tenfold increase from 2016. As structured and unstructured data continues to grow, organizations must implement robust data discovery and classification strategies to maintain security and compliance.
 
-:::image type="content" source="../media/data-is-exploding.png" alt-text="Data is exploding diagram." border="false":::
+:::image type="content" source="../media/data-is-exploding.png" alt-text="Data is exploding diagram." lightbox="../media/data-is-exploding.png":::
 
 ## Balancing security with usability
 
@@ -26,7 +26,7 @@ Many organizations struggle to track where sensitive data resides, how it's acce
   - 88% of organizations lack confidence in their ability to detect or prevent sensitive data loss.
   - More than 80% of corporate data remains "dark", meaning unclassified and unprotected.
 
-:::image type="content" source="../media/discovery-managing-data-is-challenging.png" alt-text="Diagram that shows challenges in data management." border="false":::
+:::image type="content" source="../media/discovery-managing-data-is-challenging.png" alt-text="Diagram that shows challenges in data management." lightbox="../media/discovery-managing-data-is-challenging.png":::
 
 Without visibility, organizations struggle to enforce security policies, leaving them vulnerable to breaches and compliance failures.
 

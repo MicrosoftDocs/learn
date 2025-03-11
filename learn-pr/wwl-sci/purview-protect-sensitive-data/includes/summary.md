@@ -17,4 +17,3 @@ Without a proactive data security strategy, organizations might struggle to keep
 - [Learn about Microsoft Purview](/purview/purview)
 - [Implementing Zero Trust with Microsoft Purview](/zero-trust-microsoft-purview)
 - [Microsoft Purview data security solutions](/purview/purview-security)
-- 
