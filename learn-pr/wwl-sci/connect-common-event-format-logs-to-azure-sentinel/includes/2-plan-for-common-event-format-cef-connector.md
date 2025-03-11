@@ -42,13 +42,13 @@ Make sure the Linux machine you use as a log forwarder is running one of the fol
 
   - Ubuntu Linux 14.04 LTS and 16.04 LTS
 
-  - Daemon versions
+- Daemon versions
 
   - Syslog-ng: 2.1 - 3.22.1
 
   - Rsyslog: v8
 
-  - Syslog RFCs supported
+- Syslog RFCs supported
 
   - Syslog RFC 3164
 
