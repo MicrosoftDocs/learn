@@ -5405,6 +5405,16 @@ achievements:
   title: Get started with blockchain development
   summary: This learning path introduces you to blockchain and development on the Ethereum platform. Discover what skills are necessary to learn to begin building your own blockchain networks at scale.
   iconUrl: /training/achievements/ethereum-blockchain-development.svg
+- uid: learn.language.go-errors-logs.badge
+  type: badge
+  title: Implement error handling and logging in Go
+  summary: Understand how to handle errors and log helpful information in your Go programs.
+  iconUrl: /training/achievements/go/go-errors-logs.svg
+- uid: learn.language.go-data-types.badge
+  type: badge
+  title: Use data types and structs, arrays, slices, and maps in Go
+  summary: Learn about structs, arrays, slices, and maps. Understand the difference between them and when to use one type over the other.
+  iconUrl: /training/achievements/go/go-data-types.svg
 - uid: learn.languages.go-first-steps.trophy
   type: trophy
   title: Take your first steps with Go
