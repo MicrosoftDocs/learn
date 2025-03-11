@@ -1,10 +1,10 @@
-The CEF Connector deploys a Syslog Forwarder server to support the communication between the appliance and Microsoft Sentinel. The server consists of a dedicated Linux machine with the Log Analytics agent for Linux installed.  Many of the Microsoft Sentinel Data Connectors that are vendor-specific utilize CEF Connector.
+The CEF Connector deploys a Syslog Forwarder server to support the communication between the appliance and Microsoft Sentinel. The server consists of a dedicated Linux machine with the Log Analytics agent for Linux installed. Many of the Microsoft Sentinel Data Connectors that are vendor-specific utilize CEF Connector.
 
-The following diagram displays the setup for a Linux VM in Azure.  The on-premises Syslog sources securely send events to an Azure Linux VM.  The Linux VM with the Log Analytics agent installed then forwards the logs to the Microsoft Sentinel workspace.
+The following diagram displays the setup for a Linux VM in Azure. The on-premises Syslog sources securely send events to an Azure Linux VM. The Linux VM with the Log Analytics agent installed then forwards the logs to the Microsoft Sentinel workspace.
 
 :::image type="content" source="../media/learn-path5-01.png" alt-text="Diagram of the Azure VM hosting Syslog connector architecture.":::
 
-Alternatively, the following diagram displays the setup if you use a VM in another cloud or an on-premises machine.  The on-premises Syslog sources securely send events to a Linux VM.  The Linux VM with the Log Analytics agent installed then securely forwards the logs to the Microsoft Sentinel workspace.
+Alternatively, the following diagram displays the setup if you use a VM in another cloud or an on-premises machine. The on-premises Syslog sources securely send events to a Linux VM. The Linux VM with the Log Analytics agent installed then securely forwards the logs to the Microsoft Sentinel workspace.
 
 :::image type="content" source="../media/learn-path5-02.png" alt-text="Diagram of the on-premises Syslog connector architecture.":::
 
