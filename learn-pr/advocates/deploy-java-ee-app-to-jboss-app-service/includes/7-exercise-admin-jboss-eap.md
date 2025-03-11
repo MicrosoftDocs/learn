@@ -159,7 +159,7 @@ Next, access the JBoss admin web console by using the following steps:
 
 1. In the authentication dialog box, sign in with the previously created username and password.
 
-    :::image type="content" source="../media/jboss-admin-console-1.png" alt-text="Screenshot of the authentication dialog box for the admin console." lightbox="../media/jboss-admin-console-1.png":::
+    :::image type="content" source="../media/jboss-admin-console-authentication.png" alt-text="Screenshot of the authentication dialog box for the admin console." lightbox="../media/jboss-admin-console-authentication.png":::
 
     After you sign in to the web console, the following screen appears:
 
