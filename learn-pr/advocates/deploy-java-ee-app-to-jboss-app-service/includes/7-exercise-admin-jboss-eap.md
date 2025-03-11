@@ -163,15 +163,15 @@ Next, access the JBoss admin web console by using the following steps:
 
     After you sign in to the web console, the following screen appears:
 
-    :::image type="content" source="../media/jboss-admin-console-2.png" alt-text="Screenshot of the main page of the admin console." lightbox="../media/jboss-admin-console-2.png":::
+    :::image type="content" source="../media/jboss-admin-console-home-page.png" alt-text="Screenshot of the main page of the admin console." lightbox="../media/jboss-admin-console-home-page.png":::
 
 1. Confirm your created data source by selecting **Configuration** > **Subsystems** > **Datasources & Drivers** > **Datasources**.
 
-    :::image type="content" source="../media/jboss-admin-console-3.png" alt-text="Screenshot of the list of data sources on the admin console." lightbox="../media/jboss-admin-console-3.png":::
+    :::image type="content" source="../media/jboss-admin-console-configuration.png" alt-text="Screenshot of the list of data sources on the admin console." lightbox="../media/jboss-admin-console-configuration.png":::
 
 1. Optionally, confirm the RESTful endpoints of your application by selecting **Runtime** > *your system* > **JAX-RS** > *your application*.
 
-    :::image type="content" source="../media/jboss-admin-console-4.png" alt-text="Screenshot of the RESTful endpoints on the admin console." lightbox="../media/jboss-admin-console-4.png":::
+    :::image type="content" source="../media/jboss-admin-console-runtime.png" alt-text="Screenshot of the RESTful endpoints on the admin console." lightbox="../media/jboss-admin-console-runtime.png":::
 
     > [!WARNING]
     > If you directly access the remote server via the JBoss CLI command or web console and add or update a configuration, the configuration is cleared and deleted after the Azure App Service instance is restarted. To persist the configuration, use a startup script. Because of this need, you created the **createMySQLDataSource.sh** startup script in a previous unit.
