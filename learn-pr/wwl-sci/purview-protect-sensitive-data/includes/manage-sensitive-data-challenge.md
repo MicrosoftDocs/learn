@@ -9,7 +9,7 @@ Sensitive data is no longer confined to on-premises servers. It exists across cl
 
 By 2025, global data volumes are expected to reach 175 zettabytes, a tenfold increase from 2016. As structured and unstructured data continues to grow, organizations must implement robust data discovery and classification strategies to maintain security and compliance.
 
-:::image type="content" source="../media/data-is-exploding.png" alt-text="Data is exploding diagram." lightbox="../media/data-is-exploding.png":::
+:::image type="content" source="../media/data-is-exploding.png" alt-text="Diagram that shows the concept that data is exploding." lightbox="../media/data-is-exploding.png":::
 
 ## Balancing security with usability
 
