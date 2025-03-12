@@ -8,6 +8,6 @@ metadata:
   author: ivorb
   ms.author: berryivor
   ms.topic: unit
-durationInMinutes: 1
+durationInMinutes: 7
 content: |
   [!include[](includes/4-how-use-custom-tools.md)]
