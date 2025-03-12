@@ -36,7 +36,7 @@ You can access data explorer and content explorer from multiple Microsoft Purvie
 
 1. Select **Solutions**.
 
-1. **Data explorer** and **Content explorer (classic) can be found in these solutions:
+1. **Data explorer** and **Content explorer (classic)** can be found in these solutions:
 
    - Communication compliance
 
