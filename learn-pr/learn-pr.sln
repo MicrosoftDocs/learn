@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "azure-devops", "azure-devops", "{4F852FC3-0C47-C577-0FE2-23363977190D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "manage-build-dependencies", "manage-build-dependencies", "{29DC702C-E9EA-4B49-1BE3-CA62A6D84B47}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "includes", "includes", "{05807A45-99CA-9DA9-A5A6-C434E84B1657}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6-tailspin.spacegame.web", "azure-devops\manage-build-dependencies\includes\code\6-tailspin.spacegame.web.csproj", "{20AE3F21-C25B-2D0E-8DA6-0D12956CE459}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20AE3F21-C25B-2D0E-8DA6-0D12956CE459}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20AE3F21-C25B-2D0E-8DA6-0D12956CE459}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20AE3F21-C25B-2D0E-8DA6-0D12956CE459}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20AE3F21-C25B-2D0E-8DA6-0D12956CE459}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{29DC702C-E9EA-4B49-1BE3-CA62A6D84B47} = {4F852FC3-0C47-C577-0FE2-23363977190D}
+		{05807A45-99CA-9DA9-A5A6-C434E84B1657} = {29DC702C-E9EA-4B49-1BE3-CA62A6D84B47}
+		{20AE3F21-C25B-2D0E-8DA6-0D12956CE459} = {05807A45-99CA-9DA9-A5A6-C434E84B1657}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C45EE9C8-4CB8-4764-9F1B-447EA4947AB7}
+	EndGlobalSection
+EndGlobal
