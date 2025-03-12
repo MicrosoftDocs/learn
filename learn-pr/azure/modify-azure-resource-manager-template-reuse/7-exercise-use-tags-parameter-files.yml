@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise - Use Azure Resource Manager tags and parameter files
   description: Update the tags on your Azure Storage account resource for better tracking, and use multiple parameter files to deploy the template to multiple Azure environments.
-  ms.date: 10/18/2024
+  ms.date: 03/05/2025
   author: mumian
   ms.author: jgao
   ms.topic: unit
