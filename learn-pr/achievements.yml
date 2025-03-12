@@ -5450,3 +5450,13 @@ achievements:
   title: Learn how concurrency works in Go
   summary: Understand more about concurrency, one of the most unique features in Go.
   iconUrl: /training/achievements/go/go-concurrency.svg
+- uid: learn.student-evangelism.health-bot-case-studies.badge
+  type: badge
+  title: Azure Health Bot case studies
+  summary: The Health Bot service is a cloud platform that empowers developers in healthcare organizations to build and deploy compliant, AI-powered virtual health assistants and health bots that help them improve processes and reduce costs.
+  iconUrl: /training/achievements/student-evangelism/health-bot-case-studies.svg
+- uid: learn.student-evangelism.health-bot-built-in-scenarios.badge
+  type: badge
+  title: Azure Health Bot built-in scenarios
+  summary: Azure Health Bot supports many built-in scenarios. Examples include triaging a medical condition, finding information about a disease or types of drugs, and getting user consent.
+  iconUrl: /training/achievements/student-evangelism/health-bot-built-in-scenarios.svg
