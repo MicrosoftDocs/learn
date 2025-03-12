@@ -23,22 +23,22 @@ The steps in this unit illustrate deploying an Azure Database for MySQL - Flexib
 1. Create an Azure resource group by using the following command:
 
     > [!IMPORTANT]
-    > `MYSQL_RES_GRP_NAME` must be unique within your subscription. `MYSQL_LOCATION` must be one of the values returned in the `Name` column when you run the command `az account list-locations --output table`.
+    > `MYSQL_RESOURCE_GROUP_NAME` must be unique within your subscription. `MYSQL_LOCATION` must be one of the values returned in the `Name` column when you run the command `az account list-locations --output table`.
 
     ```azurecli
     az group create \
-        --name $MYSQL_RES_GRP_NAME \
+        --name $MYSQL_RESOURCE_GROUP_NAME \
         --location $MYSQL_LOCATION
     ```
 
 1. Create an Azure Database for MySQL - Flexible Server instance by using the following command:
 
     > [!IMPORTANT]
-    > `MYSQL_SERVER_NAME` must be unique within the resource group. The name can contain only lowercase letters, numbers, and the hyphen (-) character. The name must be between three and 63 characters long, inclusively, and if it's convenient, you can just use the value of `MYSQL_RES_GRP_NAME`. `MYSQL_PASSWORD` is the password of the administrator. The password must be between eight and 128 characters long, inclusively, and it must contain characters from three of the following categories: English uppercase letters, English lowercase letters, numbers, and non-alphanumeric characters. `PUBLIC_IP` is the public IP address of the host name from which you want to allow connections outside of Azure, which is used for testing the database from your local host.
+    > `MYSQL_SERVER_NAME` must be unique within the resource group. The name can contain only lowercase letters, numbers, and the hyphen (-) character. The name must be between three and 63 characters long, inclusively, and if it's convenient, you can just use the value of `MYSQL_RESOURCE_GROUP_NAME`. `MYSQL_PASSWORD` is the password of the administrator. The password must be between eight and 128 characters long, inclusively, and it must contain characters from three of the following categories: English uppercase letters, English lowercase letters, numbers, and non-alphanumeric characters. `PUBLIC_IP` is the public IP address of the host name from which you want to allow connections outside of Azure, which is used for testing the database from your local host.
 
     ```azurecli
     az mysql flexible-server create \
-        --resource-group $MYSQL_RES_GRP_NAME \
+        --resource-group $MYSQL_RESOURCE_GROUP_NAME \
         --name $MYSQL_SERVER_NAME \
         --admin-user $MYSQL_USER \
         --admin-password $MYSQL_PASSWORD \
@@ -55,7 +55,7 @@ The steps in this unit illustrate deploying an Azure Database for MySQL - Flexib
 
     ```azurecli
     az mysql flexible-server firewall-rule create \
-        --resource-group $MYSQL_RES_GRP_NAME \
+        --resource-group $MYSQL_RESOURCE_GROUP_NAME \
         --name $MYSQL_SERVER_NAME \
         --rule-name AllowAllAzureIPs \
         --start-ip-address 0.0.0.0 \
@@ -72,7 +72,7 @@ Use the following steps to create a database, connect to the server, and run a q
 
     ```azurecli
     az mysql flexible-server db create \
-            --resource-group  $MYSQL_RES_GRP_NAME \
+            --resource-group  $MYSQL_RESOURCE_GROUP_NAME \
             --server-name $MYSQL_SERVER_NAME \
             --database-name $newdatabase \
             --charset utf8mb4 \
@@ -102,7 +102,7 @@ Use the following steps to create a database, connect to the server, and run a q
     az mysql flexible-server execute \
         --name <server-name> \
         --admin-user <username> \
-        --admin-password "<password>" \
+        --admin-password <password> \
         --database-name <database-name> \
         --file-path "./test.sql"
     ```
