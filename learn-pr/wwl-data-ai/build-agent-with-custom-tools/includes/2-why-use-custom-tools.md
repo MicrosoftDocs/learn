@@ -16,5 +16,5 @@ The diagram shows the process of an agent choosing to use the provided tool:
 
 1. A user asks an agent for a report, such as about recent snowfall in their local mountains.
 1. The agent determines the provided tool to retrieve snowfall for a specific location will be useful, and calls that tool.
-1. The agent may choose to use additional tools to best accomplish the user's task, such as retrieve knowledge using a built-in tool.
+1. The agent may choose to use other tools to best accomplish the user's task, such as retrieve knowledge using a built-in tool.
 1. The agent then outputs the report and responds to the user.

@@ -6,7 +6,7 @@ Function calling allows agents to execute predefined functions dynamically based
 
 ### Example: Defining and using a function
 
-Start by defining a function that the agent can call. For instance, here is a fake snowfall tracking function:
+Start by defining a function that the agent can call. For instance, here's a fake snowfall tracking function:
 
 ```python
 import json
@@ -50,7 +50,7 @@ The agent can now call `recent_snowfall` dynamically when prompted by the user.
 OpenAPI defined tools allow agents to interact with external APIs using standardized specifications. This approach simplifies API integration and ensures compatibility with various services. Azure AI Agent Service uses OpenAPI 3.0 specified tools.
 
 > [!TIP]
-> Currently, three authentication types are supported with OpenAPI 3.0 tools: `anonymous`, `API key` and `managed identity`.
+> Currently, three authentication types are supported with OpenAPI 3.0 tools: `anonymous`, `API key`, and `managed identity`.
 
 ### Example: Using an OpenAPI specification
 

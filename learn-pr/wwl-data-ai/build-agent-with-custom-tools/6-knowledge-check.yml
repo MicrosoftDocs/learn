@@ -19,10 +19,10 @@ quiz:
       explanation: "Incorrect. While custom tools simplify many processes, some level of coding knowledge may still be required for advanced configurations."  
     - content: "They enhance productivity by automating repetitive tasks."  
       isCorrect: true  
-      explanation: "Correct. Custom tools in Azure AI services can automate repetitive tasks, saving time and resources, which enhances productivity."  
+      explanation: "Correct. Custom tools in Azure AI services can automate repetitive tasks, saving time and resources, which enhance productivity."  
     - content: "They provide free access to all Azure AI services."  
       isCorrect: false  
-      explanation: "Incorrect. While some Azure AI services offer a free tier, not all services are free, and custom tools do not inherently provide free access."
+      explanation: "Incorrect. While some Azure AI services offer a free tier, not all services are free, and custom tools don't inherently provide free access."
   - content: "A company wants to integrate its AI agents with existing patient management systems securely that they have a standard specification for already. Which tool should they use?"  
     choices:  
     - content: "Custom question answering"  

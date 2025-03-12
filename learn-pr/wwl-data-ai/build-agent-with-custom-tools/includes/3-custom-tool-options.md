@@ -42,4 +42,4 @@ Custom tools within the Azure AI Agent Service enable users to extend the capabi
 - **Functionality**: The AI agent can recommend courses, track student progress, and answer questions about course content.
 - **Outcome**: Enhanced learning experiences, increased student engagement, and streamlined administrative tasks.
 
-These examples demonstrate how custom tools within the Azure AI Agent Service can be leveraged across industries to address unique challenges, drive efficiency, and deliver value.
+These examples demonstrate how custom tools within the Azure AI Agent Service can be used across industries to address unique challenges, drive efficiency, and deliver value.
