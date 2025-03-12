@@ -1,8 +1,8 @@
-In this unit, we deploy our Spring AI application to Azure Container Apps for scalable and serverless container hosting.
+In this unit, you deploy your Spring AI application to Azure Container Apps for scalable and serverless container hosting.
 
 ## Set up environment variables
 
-For this exercise, we need to some environment variables from prior exercises.
+For this exercise, you need to some environment variables from prior exercises.
 
 1. Confirm these variables are available:
 
@@ -30,7 +30,7 @@ For this exercise, we need to some environment variables from prior exercises.
    export CONTAINER_APP_NAME=rag-api
    ```
 
-1. Export the name to use as the Managed Identity for the Azure Container App:
+1. Export the name to use as the managed identity for the container app:
 
    ```bash
    export MANAGED_IDENTITY_NAME=containerappusr
@@ -40,7 +40,7 @@ With these environment values in place, you're now ready to deploy the applicati
 
 ## Create a Dockerfile
 
-Next we create a **Dockerfile** that is used to build a docker image with the application code to be used to deploy to Azure Container Apps:
+Next, create a **Dockerfile** and add the following contents. This file is used to build a docker image with the application code for deployment to Azure Container Apps.
 
 ```dockerfile
 # Step 1: Use microsoft JDK image with maven3 to build the application
@@ -78,12 +78,12 @@ This command does the following tasks:
 - Creates the resource group, if it doesn't already exist.
 - Creates the container apps environment named `$ENVIRONMENT` with a Log Analytics workspace.
 - Creates an Azure Container Registry instance.
-- Builds the container image using the source code and `Dockerfile` in the directory specified by the `source` parameter, and then pushes it to the registry.
+- Builds the container image using the source code and the **Dockerfile** in the directory specified by the `source` parameter, and then pushes it to the registry.
 - Creates and deploys the container app named `$CONTAINER_APP_NAME` using the built container image.
 - Configures `8080` as the HTTP port that the container app listens to for incoming traffic.
 - Deploys the container app in the region specified in the `location` parameter.
 
-To view the logs of your Azure Container App, use the following command:
+To view the logs of your container app, use the following command:
 
 ```azurecli
 az containerapp logs show \
@@ -111,9 +111,9 @@ az containerapp update \
 
 ## Enable managed identity
 
-The Container App needs to be able to authenticate to PostgresSQL server. We use System Assigned Managed Identities for authentication.
+The container app needs to be able to authenticate to PostgresSQL server. You use system-assigned managed identities for authentication.
 
-To enable system-assigned managed identity for your Azure Container App, use this command:
+To enable a system-assigned managed identity for your container app, use the following command:
 
 ```azurecli
 az containerapp identity assign \
@@ -134,7 +134,7 @@ export MANAGED_IDENTITY_ID=$(az containerapp show \
 echo "Managed Identity ID: $MANAGED_IDENTITY_ID"
 ```
 
-To authorize the managed identity of your Azure Container App to access the PostgreSQL Flexible Server instance, use the following command:
+To authorize the managed identity of your container app to access the PostgreSQL Flexible Server instance, use the following command:
 
 ```azurecli
 az postgres flexible-server ad-admin create \
@@ -145,7 +145,7 @@ az postgres flexible-server ad-admin create \
     --type ServicePrincipal
 ```
 
-## Azure Container App Environment and Secret Configuration
+## Configure the container app environment and secret
 
 Create a secret for sensitive values:
 
@@ -175,7 +175,7 @@ We intentionally use a different `pgvector` schema name to avoid conflicts from 
 
 ## Verify the deployment
 
-Get Container App URL:
+Use the following command to get the container app URL:
 
 ```azurecli
 export URL=$(az containerapp show \
@@ -185,37 +185,37 @@ export URL=$(az containerapp show \
     --output tsv)
 ```
 
-Test Endpoint:
+Use the following command to test the endpoint:
 
 ```bash
 curl -G "https://$URL/api/rag" --data-urlencode "query=How does QuestionAnswerAdvisor work in Spring AI?"
 ```
 
-Expect to see a valid response:
+The response should be similar to the following example:
 
 ```markdown
 In the context of **Spring AI**, the **QuestionAnswerAdvisor** operates as a key component for enabling **Retrieval Augmented Generation (RAG)**, which combines user queries with external contextual data to produce accurate and relevant AI responses.
 ```
 
-Try another question that isn't in our vector store:
+Use the following command to try another question that isn't in the vector store:
 
 ```bash
 curl -G "https://$URL/api/rag" --data-urlencode "query=What is Vector Search Similarity?"
 ```
 
-Expect to see a similar valid response:
+The response should be similar to the following example:
 
 ```markdown
 **Vector Search Similarity** refers to the process of comparing and ranking data points - represented as vectors - based on their similarity in a multi-dimensional space. This method is commonly used in applications like information retrieval, recommendation systems, natural language processing, and computer vision.
 ```
 
-You can also test the blog generation endpoint using a REST client or `curl`:
+Use the following command to test the blog generation endpoint:
 
 ```bash
 curl -G "https://$URL/api/blog" --data-urlencode "topic=Spring AI Innovation"
 ```
 
-Because of the review iteration cycle, this request will take longer to complete. Once it completes, expect to see a blog entry similar to this excerpt:
+Because of the review iteration cycle, this request takes longer to complete. After it completes, you should see a blog entry similar to the following example:
 
 ```markdown
 # Spring AI Innovation: Embracing the Season of Transformation
@@ -225,9 +225,9 @@ Spring is a season synonymous with growth, renewal, and fresh beginnings. As nat
 In this blog post, we'll explore the latest AI innovations that are flourishing this spring, highlight real-world examples of their impact, and discuss how they're reshaping the future. Whether you're an AI enthusiast, a tech professional, or simply curious about the role of AI in our lives, this is your guide to the season's most exciting developments.
 ```
 
-## Scaling Azure Container Apps
+## Scale Azure Container Apps
 
-By default, your Azure Container App is configured to use zero minimum replicas and an HTTP scaling rule to handle 10 requests per replica. You can configure the scaling configuration using the `az containerapp update` command:
+By default, your container app is configured to use zero minimum replicas and an HTTP scaling rule to handle 10 requests per replica. To configure the scaling configuration, use the following command:
 
 ```azurecli
 az containerapp update \
@@ -253,4 +253,4 @@ az group delete \
 
 ## Unit summary
 
-In this unit, we successfully deployed a Spring AI application to Azure Container Apps, using scalable and serverless container hosting. We set up necessary environment variables, created a Dockerfile to build the application image, and deployed the container app using Azure CLI commands. We enabled managed identity for secure authentication to the PostgreSQL server and configured secrets and environment variables for the application. Finally, we verified the deployment by testing the application endpoint and learned how to clean up resources after testing.
+In this unit, you successfully deployed a Spring AI application to Azure Container Apps, using scalable and serverless container hosting. You set up necessary environment variables, created a **Dockerfile** to build the application image, and deployed the container app using Azure CLI commands. You enabled managed identity for secure authentication to the PostgreSQL server and configured secrets and environment variables for the application. Finally, you verified the deployment by testing the application endpoint and learned how to clean up resources after testing.

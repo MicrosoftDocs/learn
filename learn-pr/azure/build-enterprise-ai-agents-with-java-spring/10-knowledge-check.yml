@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.build-enterprise-ai-agents-with-java-spring.10-knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
   title: Knowledge Check
-  description: Test your knowledge of Spring AI and Azure deployment
-  ms.date: 02/24/2025
+  description: Test your knowledge of Spring AI and Azure deployment.
+  ms.date: 03/12/2024
   author: KarlErickson
   ms.author: karler
   ms.reviewer: jbalderas, gok
@@ -20,7 +20,7 @@ quiz:
           explanation: ChatClient isn't correct. The ChatClient offers a fluent API for communicating with AI models.
         - content: EmbeddingModel
           isCorrect: true
-          explanation: Correct. The EmbeddingModel is an interface for integration with embedding models in AI and can be used for generating vector embeddings.
+          explanation: Correct. EmbeddingModel is an interface for integration with embedding models in AI and can be used for generating vector embeddings.
         - content: QuestionAnswerAdvisor
           isCorrect: false
           explanation: While QuestionAnswerAdvisor uses vector embeddings for vector similarity search, it can't be used directly for generating embeddings.
@@ -45,7 +45,7 @@ quiz:
       choices:
         - content: HTTP Scale Rules
           isCorrect: true
-          explanation: Correct. HTTP Scale Rules in Azure Container Apps allow automatic scaling based on incoming HTTP request concurrency.
+          explanation: Correct. HTTP Scale Rules in Azure Container Apps enable automatic scaling based on incoming HTTP request concurrency.
         - content: Traffic Manager
           isCorrect: false
           explanation: Traffic Manager isn't used for automatic scaling based on HTTP traffic.
@@ -65,35 +65,35 @@ quiz:
           explanation: The ChatClient isn't used for processing HTTP requests.
         - content: Interacting with language models
           isCorrect: true
-          explanation: Correct. The ChatClient is Spring AI's core abstraction for interacting with Large Language Models (LLMs) like Azure OpenAI.
+          explanation: Correct. The ChatClient is Spring AI's core abstraction for interacting with large language models (LLMs) like Azure OpenAI.
         - content: Handling authentication
           isCorrect: false
           explanation: The ChatClient isn't used for handling authentication.
     - content: Which configuration is required for Azure OpenAI integration in application.properties?
       choices:
-        - content: Only API key
+        - content: Only the API key
           isCorrect: false
           explanation: The API key isn't sufficient for Azure OpenAI integration.
-        - content: Only endpoint URL
+        - content: Only the endpoint URL
           isCorrect: false
           explanation: The endpoint URL isn't sufficient for Azure OpenAI integration.
-        - content: Only deployment name
+        - content: Only the deployment name
           isCorrect: false
           explanation: The deployment name isn't sufficient for Azure OpenAI integration.
-        - content: API key, endpoint, and deployment name
+        - content: The API key, endpoint, and deployment name
           isCorrect: true
           explanation: Correct. Spring AI requires the API key, endpoint URL, and deployment name to properly configure Azure OpenAI integration.
     - content: Which Agentic workflow uses multiple AI roles to improve content quality?
       choices:
-        - content: Chain Workflow
+        - content: The Chain workflow
           isCorrect: false
-          explanation: The Chain Workflow breaks complex tasks into a series of steps
-        - content: Evaluator-Optimizer Workflow
+          explanation: The Chain workflow breaks complex tasks into a series of steps
+        - content: The Evaluator-Optimizer workflow
           isCorrect: true
           explanation: The Evaluator-Optimizer workflow uses writer and editor AI roles in a feedback loop to improve content quality.
-        - content: Routing Workflow
+        - content: The Routing workflow
           isCorrect: false
-          explanation: The Routing Workflow directs input to specialized handlers
-        - content: Parallelization Workflow
+          explanation: The Routing workflow directs input to specialized handlers
+        - content: The Parallelization workflow
           isCorrect: false
-          explanation: The Parallelization Workflow is ideal for processing large volumes of independent items. 
+          explanation: The Parallelization workflow is ideal for processing large volumes of independent items.

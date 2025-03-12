@@ -1,8 +1,8 @@
-In this unit, we extend our RAG Application to demonstrate an *Evaluator Optimizer Agent* pattern. This pattern leverages multiple AI agents to generate, evaluate, and refine content iteratively. We can use this pattern to generate and refine content from blog posts.
+In this unit, you extend your RAG application to demonstrate an *Evaluator Optimizer Agent* pattern. This pattern leverages multiple AI agents to generate, evaluate, and refine content iteratively. You can use this pattern to generate and refine content from blog posts.
 
 ## Implement Evaluator Optimizer Agent for Blog Post Generation
 
-In this exercise we implement an Evaluator Optimizer Agent pattern to improve generated content. In this design, one AI agent - the *Writer* - generates an initial draft - for example, a blog post. Another agent - the *Evaluator* - reviews and provides actionable feedback. The Writer refines the draft based on the feedback, and the process repeats until the content is approved or the maximum number of iterations is reached.
+In this exercise, you implement an Evaluator Optimizer Agent pattern to improve generated content. In this design, one AI agent - the *Writer* - generates an initial draft - for example, a blog post. Another agent - the *Evaluator* - reviews and provides actionable feedback. The Writer refines the draft based on the feedback, and the process repeats until the content is approved or the maximum number of iterations is reached.
 
 ## Set up environment variables
 
@@ -113,15 +113,15 @@ public class BlogWriterService {
 }
 ```
 
-This method generates a blog post on a given topic and refines it through an iterative process. Here's a high-level overview of this functionality:
+This method generates a blog post on a given topic and refines it through an iterative process. The following steps provide a high-level overview of this functionality:
 
-1. Initial Draft Generation: constructs an initial prompt asking the AI model to write a well-structured blog post on the given topic and sends it to the `chatClient` to retrieve an initial draft.
-1. Evaluator-Optimizer Loop:
+1. Initial draft generation: constructs an initial prompt asking the AI model to write a well-structured blog post on the given topic and sends it to the `chatClient` to retrieve an initial draft.
+1. Evaluator-Optimizer loop:
     - Enters a loop that continues until the draft is approved or the maximum number of iterations is reached.
     - Checks whether the evaluation response contains `PASS`. If so, marks the draft as approved and logs the approval.
     - If the draft needs improvement, extracts feedback from the evaluation.
     - Sends the refinement prompt to the `chatClient` and retrieves the revised draft.
-1. Final Check: returns the final draft if either the evaluation receives a "PASS" response or the maximum iterations was reached.
+1. Final check: returns the final draft if either the evaluation receives a "PASS" response or the maximum iterations was reached.
 
 ### Create the BlogWriterController class
 
@@ -154,21 +154,21 @@ public class BlogWriterController {
 
 This controller exposes a GET endpoint at `/api/blog` that accepts a `topic` parameter and delegates the blog post generation to the `BlogWriterService`.
 
-### Testing the blog generation
+### Test the blog generation
 
-After adding the BlogWriterService and its controller, compile and run the application:
+After adding the `BlogWriterService` and its controller, use the following command to compile and run the application:
 
 ```bash
 mvn spring-boot:run
 ```
 
-Then test the blog generation endpoint using a REST client or `curl`:
+Then, use the following command to test the blog generation endpoint:
 
 ```bash
 curl -G "http://localhost:8080/api/blog" --data-urlencode "topic=Spring AI Innovation"
 ```
 
-This should return a blog post that has been generated and iteratively refined through the Evaluator Optimizer Agent process. Because of the review iteration cycle, this request will take longer to complete. Once it completes, expect to see a blog entry similar to this excerpt:
+This command should return a blog post that's been generated and iteratively refined through the Evaluator Optimizer Agent process. Because of the review iteration cycle, this request takes longer to complete. After it completes, you should see a blog entry similar to the following excerpt:
 
 ```markdown
 # Spring AI Innovation: Embracing the Season of Transformation
@@ -180,4 +180,4 @@ In this blog post, we'll explore the latest AI innovations that are flourishing 
 
 ## Unit summary
 
-In this unit, we successfully extend our Spring AI application capabilities by incorporating an Evaluator Optimizer Agent pattern. This pattern enhances content generation by iteratively refining a blog post through automated evaluation and optimization. The module exposes this blog generation capability via a new REST endpoint.
+In this unit, you extended your Spring AI application capabilities by incorporating an Evaluator Optimizer Agent pattern. This pattern enhances content generation by iteratively refining a blog post through automated evaluation and optimization. The module exposes this blog generation capability via a new REST endpoint.

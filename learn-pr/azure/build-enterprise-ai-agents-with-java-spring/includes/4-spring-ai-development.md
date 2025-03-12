@@ -25,7 +25,7 @@ You can add the `VectorStore` Spring Boot starter dependency to your project usi
 </dependency>
 ```
 
-On startup, the `pgvector` Spring Boot starter attempts to install the required database extensions and create the required `vector_store` table with an index if not existing. Optionally, you can do this manually using these SQL statements:
+On startup, the `pgvector` Spring Boot starter attempts to install the required database extensions and create the required `vector_store` table with an index if it doesn't already exist. Optionally, you can do this manually using these SQL statements:
 
 ```sql
 CREATE EXTENSION IF NOT EXISTS vector;
@@ -94,10 +94,11 @@ List<Document> results = vectorStore.similaritySearch(
 );
 ```
 
-Here's a detailed explanation for this code snippet:
+The following list provides a detailed explanation for this code snippet:
 
-1. The `similaritySearch` method of the `VectorStore` class is used to find documents that are similar to a given query.
-2. The builder pattern creates a `SearchRequest` object:
+- The `similaritySearch` method of the `VectorStore` class is used to find documents that are similar to a given query.
+
+- The builder pattern creates a `SearchRequest` object:
     - The `query` sets the search string.
     - The `topK(5)` specifies that the search returns the top five most similar documents.
 

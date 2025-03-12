@@ -1,4 +1,4 @@
-In this exercise, we create Azure Database for PostgreSQL Flexible Server, enable `pgvector` extension, and create required database structure for use with Spring AI `VectorStore` abstraction.
+In this exercise, you create Azure Database for PostgreSQL Flexible Server, enable `pgvector` extension, and create required database structure for use with Spring AI `VectorStore` abstraction.
 
 ## Sign in to Azure via Azure CLI
 
@@ -26,10 +26,11 @@ export PUBLIC_IP=$(curl -s ipinfo.io/ip)
 echo "Start IP: $$PUBLIC_IP"
 ```
 
-> [!Note]
+> [!NOTE]
 > The IP address may change and the corresponding firewall rule needs to be updated accordingly
-> [!Tip]
-> This command should work in most Linux distributions and git bash. If it doesn't work, you can alternatively get your public IP address using [https://whatismyipaddress.com/](https://whatismyipaddress.com/)
+
+> [!TIP]
+> This command should work in most Linux distributions and Git Bash. If it doesn't work, you can alternatively get your public IP address using [https://whatismyipaddress.com/](https://whatismyipaddress.com/)
 
 ### Create a resource group
 
@@ -73,7 +74,7 @@ This command takes a few minutes to complete. After it completes, output similar
 }
 ```
 
-For testing purposes only, run the following command to create a firewall rule to allow access to a wider IP range:
+For testing purposes only, use the following command to create a firewall rule to allow access to a wider IP range:
 
 ```azurecli
 az postgres flexible-server firewall-rule create \
@@ -86,7 +87,7 @@ az postgres flexible-server firewall-rule create \
 
 ### Grant admin access to your Entra ID
 
-Run the following command to get the `object id` for your Entra ID:
+Use the following command to get the `object id` for your Entra ID:
 
 ```azurecli
 export USER_OBJECT_ID=$(az ad signed-in-user show \
@@ -95,7 +96,7 @@ export USER_OBJECT_ID=$(az ad signed-in-user show \
     | tr -d '\r')
 ```
 
-Run the following command to grant admin access to your Entra ID:
+Use the following command to grant admin access to your Entra ID:
 
 ```azurecli
 az postgres flexible-server ad-admin create \
@@ -107,7 +108,7 @@ az postgres flexible-server ad-admin create \
 
 ### Update allowlist required extensions for pgvector
 
-Before we can enable extensions required by `pgvector`, we need to allow them using this `az` command:
+Before you can enable the extensions required by `pgvector`, you need to allow them by using the following command:
 
 ```azurecli
 az postgres flexible-server parameter set \
@@ -119,7 +120,7 @@ az postgres flexible-server parameter set \
 
 ## Validate connectivity to your database
 
-Use this command to get the fully qualified host name for your database server:
+Use the following command to get the fully qualified host name for your database server:
 
 ```azurecli
 export PGHOST=$(az postgres flexible-server show \
@@ -130,7 +131,7 @@ export PGHOST=$(az postgres flexible-server show \
     | tr -d '\r')
 ```
 
-Run this command to get access token for your user ID:
+Use the following command to get access token for your user ID:
 
 ```azurecli
 export PGPASSWORD="$(az account get-access-token \
@@ -139,13 +140,13 @@ export PGPASSWORD="$(az account get-access-token \
     --output tsv)"
 ```
 
-Connect to database using `psql` client with this command:
+Use the following command to connect to the database:
 
 ```bash
 psql "host=$PGHOST dbname=postgres user=azureuser sslmode=require"
 ```
 
-Example output from `psql`:
+The following output is typical:
 
 ```output
 psql (14.13, server 16.4)
@@ -161,4 +162,4 @@ After this rule is created, you can update it by using `az postgres flexible-ser
 
 ## Unit summary
 
-We now have a vector-enabled PostgreSQL database ready that provides vector similarity search capabilities
+You now have a vector-enabled PostgreSQL database ready that provides vector similarity search capabilities

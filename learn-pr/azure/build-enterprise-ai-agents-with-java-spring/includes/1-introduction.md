@@ -21,13 +21,13 @@ A retrieval-augmented generation (RAG) application typically has the following c
 - Uses found responses as context for generating responses.
 - Stores interactions for future reference.
 
-### Agents and Workflows
+### Agents and workflows
 
 Spring AI also empowers you to build dynamic AI Agents and orchestrated workflows. While various patterns exist - like chain, parallelization, and routing - this module focuses exclusively on the *Evaluator-Optimizer Workflow*.
 
 This pattern iteratively refines outputs through a generator-evaluator loop, ensuring high-quality and adaptive AI responses.
 
-## Why Azure OpenAI and Container Apps?
+## Why use Azure OpenAI and Container Apps?
 
 Azure OpenAI provides a secure and scalable platform for deploying AI models with enterprise-grade features. It ensures data privacy and compliance, making it suitable for sensitive applications, and integrates seamlessly with other Azure services.
 

@@ -2,9 +2,9 @@
 uid: learn.azure.build-enterprise-ai-agents-with-java-spring.9-exercise-aca-deployment
 title: Exercise - Deploy a Spring AI application to Azure Container Apps
 metadata:
-  title: Exercise - Deploy Spring AI Application to Azure Container Apps
+  title: Exercise - Deploy a Spring AI Application to Azure Container Apps
   description: Learn how to deploy your Spring AI application to Azure Container Apps.
-  ms.date: 03/02/2025
+  ms.date: 03/12/2024
   author: KarlErickson
   ms.author: karler
   ms.reviewer: jbalderas, gok

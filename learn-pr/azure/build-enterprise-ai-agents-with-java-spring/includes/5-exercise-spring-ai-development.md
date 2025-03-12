@@ -1,4 +1,4 @@
-In this unit, we build a retrieval-augmented generation (RAG) application using Spring AI, Azure OpenAI, and `VectorStore` from Spring AI.
+In this unit, you build a retrieval-augmented generation (RAG) application using Spring AI, Azure OpenAI, and `VectorStore` from Spring AI.
 
 ## Set up your development environment
 
@@ -6,19 +6,19 @@ Before you start building an AI-powered application, set up your development env
 
 ## Set up your local environment
 
-1. Confirm that the Java Development Kit (JDK) version 17 or greater is installed:
+1. Use the following command to confirm that the Java Development Kit (JDK) version 17 or greater is installed:
 
    ```bash
-   java -version  # Verify Java installation
+   java -version  # Verify the Java installation
    ```
 
-1. Confirm that Maven is installed:
+1. Use the following command to confirm that Maven is installed:
 
    ```bash
-   mvn -version  # Verify Maven installation
+   mvn -version  # Verify the Maven installation
    ```
 
-1. Log in to Azure:
+1. Use the following command to sign in to Azure:
 
    ```azurecli
    az login
@@ -42,11 +42,11 @@ export OPENAI_RESOURCE_NAME=OpenAISpringAI
 
 ## Deploy the Azure OpenAI models
 
-For our application, you first need to deploy one chat model - `gpt-4o` - and one embedding model - `text-embedding-ada-002`. To deploy these models, we first need to create an Azure OpenAI resource.
+For your application, you first need to deploy one chat model - `gpt-4o` - and one embedding model - `text-embedding-ada-002`. To deploy these models, you first need to create an Azure OpenAI resource.
 
 ### Create an Azure OpenAI account
 
-We create the Azure OpenAI account using this Azure CLI command:
+Use the following command to create the Azure OpenAI account:
 
 ```azurecli
 az cognitiveservices account create \
@@ -76,7 +76,7 @@ az cognitiveservices account deployment create \
 
 ### Deploy an Azure OpenAI embedding model
 
-We can now deploy an embedding model named `text-embedding-ada-002` using this command:
+You can now deploy an embedding model named `text-embedding-ada-002` by using the following command:
 
 ```azurecli
 az cognitiveservices account deployment create \
@@ -132,7 +132,7 @@ Switch directory to this path:
 cd spring-ai-app
 ```
 
-We need to change the **pom.xml** file to include a dependency for password-less authentication for PostgreSQL.
+You need to change the **pom.xml** file to include a dependency for passwordless authentication for PostgreSQL.
 
 Open the **pom.xml** file, locate the `<dependencies>` section and add the following dependency:
 
@@ -162,7 +162,7 @@ Expect to see a successful build output:
 
 ### Project structure
 
-From the **spring-ai-app** directory, run these commands to create new directories for new source files to be added:
+From the **spring-ai-app** directory, run the following commands to create new directories for new source files to be added:
 
 ```bash
 mkdir -p src/main/java/com/example/springaiapp/controller
@@ -190,11 +190,11 @@ src/
 
 ### Spring AI configuration
 
-Before we can run the application successfully, we need to add the following required configuration:
+Before you can run the application successfully, you need to add the following required configuration:
 
-- Azure OpenAI Endpoint
-- Azure OpenAI API Key
-- PostgreSQL URL
+- An Azure OpenAI endpoint.
+- An Azure OpenAI API key.
+- A PostgreSQL URL.
 
 Retrieve the Azure OpenAI endpoint by using the following command:
 
@@ -218,7 +218,7 @@ export AZURE_OPENAI_API_KEY=$(az cognitiveservices account keys list \
     | tr -d '\r')
 ```
 
-Provide the PostgreSQL URL - retrieved using the command from a prior exercise:
+Retrieve the PostgreSQL URL by using the following command:
 
 ```azurecli
 az postgres flexible-server show \
@@ -230,7 +230,7 @@ az postgres flexible-server show \
 
 #### Review application.properties file
 
-Locate and open the **application.properties** file in the **src/main/resources** directory. There are three property values that will be populated using values from these environment variables: `AZURE_OPENAI_API_KEY`, `AZURE_OPENAI_ENDPOINT`, and `PG_HOST`:
+Locate and open the **application.properties** file in the **src/main/resources** directory. There are three properties that are initialized using values from the following environment variables: `AZURE_OPENAI_API_KEY`, `AZURE_OPENAI_ENDPOINT`, and `PG_HOST`:
 
 ```properties
 spring.application.name=spring-ai-app
@@ -312,11 +312,11 @@ public class RagService {
 }
 ```
 
-In the provided code, we implement RAG by generating an answer to a given query by augmenting the knowledge in the model using similar contexts from the `VectorStore`.
+This code implements RAG by generating an answer to a given query, augmenting the knowledge in the model using similar contexts from the `VectorStore`.
 
 #### Create the RAG controller
 
-Next, we need to expose a REST endpoint for our RAG application. Create a new file named **RagController.java** within the **controller** directory:
+Next, you need to expose a REST endpoint for your RAG application. Create a new file named **RagController.java** within the **controller** directory:
 
 ```java
 package com.example.springaiapp.controller;
@@ -370,7 +370,7 @@ Notice that while the answer may appear valid, it might include phrasing that in
 
 #### Test the application with extra knowledge
 
-We now provide extra knowledge by adding the following documents to the vector store. Create a new file named **DocumentService.java** within the **service** directory:
+You now provide extra knowledge by adding the following documents to the vector store. Create a new file named **DocumentService.java** within the **service** directory:
 
 ```java
 package com.example.springaiapp.service;
@@ -444,4 +444,4 @@ You should now see an answer that clearly explains the role of `QuestionAnswerAd
 
 ## Unit summary
 
-In this unit, we successfully built a Retrieval Augmented Generation (RAG) application using Spring AI, Azure OpenAI, and Spring AI's `VectorStore`. The module exposes the RAG capability via dedicated REST endpoint through the `RagController` class.
+In this unit, you successfully built a Retrieval Augmented Generation (RAG) application using Spring AI, Azure OpenAI, and Spring AI's `VectorStore`. The module exposes the RAG capability via dedicated REST endpoint through the `RagController` class.

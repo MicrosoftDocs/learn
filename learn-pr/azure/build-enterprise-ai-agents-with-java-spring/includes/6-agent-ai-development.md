@@ -41,14 +41,19 @@ Building on the core RAG functionality, advanced AI applications benefit from it
 
 ### How it works
 
-1. Initial Generation: The writer creates a draft based on the given topic.
+The following steps describe how this pattern works:
+
+1. Initial generation: The writer creates a draft based on the given topic.
+
 1. Evaluation: The evaluator reviews the draft against criteria such as clarity, engagement, and structure.
-1. Iterative Refinement: If improvements are needed, feedback is incorporated and the writer generates a revised draft.
-1. Loop Until Approved: The process repeats until the content meets the desired quality standards or a maximum number of iterations is reached.
+
+1. Iterative refinement: If improvements are needed, feedback is incorporated and the writer generates a revised draft.
+
+1. Loop until approved: The process repeats until the content meets the desired quality standards or a maximum number of iterations is reached.
 
 ### Example application: blog post generation
 
-In our exercise, we extend the RAG application by implementing a Blog Writer agent that uses the Evaluator Optimizer pattern. The Blog Writer service demonstrates how to:
+In the exercise, you extend the RAG application by implementing a Blog Writer agent that uses the Evaluator Optimizer pattern. The Blog Writer service demonstrates how to:
 
 - Generate an initial blog post draft.
 - Evaluate the draft and extract actionable feedback.
@@ -56,4 +61,4 @@ In our exercise, we extend the RAG application by implementing a Blog Writer age
 
 ## Unit summary
 
-In this unit we learn about AI agents and various agentic patterns, including Chain, Parallelization, Routing, and Orchestrator-Workers workflows. However, the module focuses exclusively on the Evaluator Optimizer Agent pattern - a dual-LLM approach that iteratively refines generated content, as demonstrated in the Blog Writer agent use case. In the next exercise, you will implement this pattern in the RAG application to provide enhanced content generation capabilities.
+In this unit you learn about AI agents and various agentic patterns, including Chain, Parallelization, Routing, and Orchestrator-Workers workflows. However, the module focuses exclusively on the Evaluator Optimizer Agent pattern - a dual-LLM approach that iteratively refines generated content, as demonstrated in the Blog Writer agent use case. In the next exercise, you implement this pattern in the RAG application to provide enhanced content generation capabilities.
