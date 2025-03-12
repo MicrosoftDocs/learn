@@ -5450,3 +5450,13 @@ achievements:
   title: Learn how concurrency works in Go
   summary: Understand more about concurrency, one of the most unique features in Go.
   iconUrl: /training/achievements/go/go-concurrency.svg
+- uid: learn.student-evangelism.health-bot-template-scenarios.badge
+  type: badge
+  title: Azure Health Bot scenario templates
+  summary: Learn how to enrich the capabilities of your bot by using the prebuilt scenario templates.
+  iconUrl: /training/achievements/student-evangelism/health-bot-template-scenarios.svg
+- uid: learn.student-evangelism.health-bot-language-understanding.badge
+  type: badge
+  title: Language understanding in Azure Health Bot
+  summary: Language understanding plays a fundamental role in the working of Azure Health Bot.
+  iconUrl: /training/achievements/student-evangelism/health-bot-language-understanding.svg
