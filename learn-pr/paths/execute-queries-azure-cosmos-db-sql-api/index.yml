@@ -11,7 +11,7 @@ title: Execute queries and build a Generative AI application with Azure Cosmos D
 prerequisites: |
   Before starting this learning path, you should have experience of building cloud applications with Microsoft C#, Python, JavaScript, or a similar programming language.
 summary: |
-  Create SQL queries for Azure Cosmos DB for NoSQL using the Data Explorer and SDKs for .NET, Python, and Node.js. Apply these skills to retrieve and process data efficiently, then use them to build a Generative AI application that makes the most of Cosmos DB’s capabilities.
+  Create SQL queries for Azure Cosmos DB for NoSQL using the Data Explorer and SDKs for .NET, Python, and Node.js. Apply these skills to retrieve and process data efficiently, then use them to build a Generative AI application that makes the most of Cosmos DB's capabilities.
 iconUrl: /training/achievements/azure-cosmos-db-execute-queries.svg
 levels:
 - intermediate
