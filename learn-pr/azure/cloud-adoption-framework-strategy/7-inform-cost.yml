@@ -11,3 +11,20 @@ title: Cost efficiency considerations for your cloud adoption strategy
 durationInMinutes: 10
 content: |
   [!include[](includes/7-inform-cost.md)]
+quiz:
+ title: Check your knowledge
+ questions: 
+ - content: What is the purpose of the FinOps Framework in cloud adoption?
+   choices:
+   - content: To foster financial responsibility that focuses on accountability and data-driven decisions
+     isCorrect: true
+     explanation: Correct. The FinOps Framework focuses on enhancing the business value of cloud infrastructure.
+   - content: To ensure that cloud investments are focused solely on short-term gains
+     isCorrect: false
+     explanation: Incorrect. The FinOps Framework aims to balance short-term and long-term financial goals.
+   - content: To prioritize cost-cutting measures above all other considerations, even at the expense of innovation
+     isCorrect: false
+     explanation: Incorrect. The FinOps Framework seeks to balance cost efficiency with innovation and business value.
+   - content: To maintain fixed annual budget allocations without flexibility
+     isCorrect: false
+     explanation: Incorrect. The FinOps Framework promotes flexible budgeting based on actual cloud usage and needs.

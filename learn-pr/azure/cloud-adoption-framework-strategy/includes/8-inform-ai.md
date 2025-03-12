@@ -19,7 +19,7 @@ AI is revolutionizing cloud adoption strategies by enhancing efficiency, scalabi
 - **Inform your organization and decision makers about AI adoption.** Familiarize yourself with the Cloud Adoption Framework for [guidance about adopting AI on Azure](/azure/cloud-adoption-framework/scenarios/ai/). Use this framework to integrate AI into your cloud adoption strategy.
 - **Educate leadership on AI for sustainability.** Learn how AI can transform your organization's sustainability efforts. For more information, see [AI transformations for sustainability](https://blogs.microsoft.com/on-the-issues/2025/01/16/ai-transformations-for-sustainability/).
 
-## Apply responsible and trust AI principles
+## Apply responsible AI principles
 
 The six key principles for responsible AI at Microsoft include fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability. Apply these principles to help ensure that your AI is responsible and trustworthy as you integrate it into mainstream products and services throughout your AI adoption.
 

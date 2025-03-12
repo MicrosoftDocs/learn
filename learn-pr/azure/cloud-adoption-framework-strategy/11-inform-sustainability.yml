@@ -11,3 +11,20 @@ title: Sustainability considerations for your cloud adoption strategy
 durationInMinutes: 10
 content: |
   [!include[](includes/11-inform-sustainability.md)]
+quiz:
+ title: Check your knowledge
+ questions: 
+ - content: What is the purpose of creating green teams within an organization? 
+   choices:
+   - content: To promote a company's green image
+     isCorrect: false
+     explanation: Incorrect. A green team's tasks might benefit a company's image, but the primary goal is to drive foundational sustainability initiatives.
+   - content: To implement large-scale sustainability initiatives immediately
+     isCorrect: false
+     explanation: Incorrect. Green teams don't overhaul businesses overnight. They typically make gradual improvements that align with business goals.
+   - content: To have a team dedicated to defining goals and metrics for sustainability, including emissions, water use, and energy consumption
+     isCorrect: true
+     explanation: Correct. Green teams help drive foundational sustainability initiatives.
+   - content: To separate sustainability from core business goals
+     isCorrect: false
+     explanation: Incorrect. A green team's goal is actually to integrate sustainability into core business operations.

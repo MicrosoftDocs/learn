@@ -11,3 +11,20 @@ title: Prepare your organization
 durationInMinutes: 10
 content: |
   [!include[](includes/6-prepare.md)]
+quiz:
+ title: Check your knowledge
+ questions: 
+ - content: Why is it important to shift from a project model to a product model for cloud operations?
+   choices:
+   - content: To ensure continuous value delivery and scalable cloud services
+     isCorrect: true
+     explanation: Correct. The product model helps ensure that cloud investments provide lasting, strategic value rather than short-term, one-off results.
+   - content: To ensure that cloud services have a clearly defined end date
+     isCorrect: false
+     explanation: Incorrect. The product model emphasizes continuous value delivery and ongoing improvements, not a defined end date.
+   - content: To reduce the focus on customer-centered thinking and collaboration across teams
+     isCorrect: false
+     explanation: Incorrect. The product model enhances customer-centered thinking and collaboration.
+   - content: To maintain a CapEx-focused budget and avoid operational expenses that are associated with continuous delivery
+     isCorrect: false
+     explanation: Incorrect. The product model often involves focusing on continuous delivery and operational expenses to support ongoing improvements.

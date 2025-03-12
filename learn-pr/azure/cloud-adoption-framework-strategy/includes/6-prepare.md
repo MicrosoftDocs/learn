@@ -66,7 +66,7 @@ Understand your existing operating model so that you can address potential limit
 
 To ensure that you can broadly scale your cloud services at speed, you might need to shift from a traditional project delivery model to a product delivery model for operations.
 
-- A **project model** is task-driven with a defined scope, start and end time frames, and a CAPEX-focused budget. Ownership shifts to another team after completion for operations and maintenance.
+- A **project model** is task-driven with a defined scope, start and end time frames, and a Capital Expenditures (CapEx)-focused budget. Ownership shifts to another team after completion for operations and maintenance.
 
 - A **product model** is outcome-driven with continuous value delivery. Cross-functional teams take end-to-end ownership of development, operations, and governance. This approach enables responsive and scalable value delivery.
 

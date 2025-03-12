@@ -6,7 +6,7 @@ Cost efficiency involves strategic decisions to help ensure that your organizati
 
 ## Shift from a CapEx model to an OpEx model
 
-Traditionally, organizations used a Capital Expenditures (CapEx) model for IT budgets, which required significant upfront investment in hardware. These expenses were recorded as assets on the balance sheet.
+Traditionally, organizations used a CapEx model for IT budgets, which required significant upfront investment in hardware. These expenses were recorded as assets on the balance sheet.
 
 In contrast, cloud computing shifts IT spending to an Operating Expenses (OpEx) model, which includes ongoing costs such as periodic payments for services like Azure. The charges reflect actual usage and maintenance needs rather than fixed costs. So organizations can adjust costs based on usage, which promotes financial agility and efficiency.
 
@@ -26,9 +26,9 @@ Consider the following factors when you shift to an OpEx model:
 
 - **Understand the cost-to-benefit ratio** and ensure that cloud services contribute to business objectives. Use tools like the [Azure total cost of ownership calculator](https://azure.microsoft.com/pricing/tco/calculator/), the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/), and [Microsoft Cost Management](https://azure.microsoft.com/products/cost-management).
 
-## Establish best practices with the FinOps framework
+## Use the FinOps Framework to establish best practices
 
-To implement cost efficiency in cloud adoption, manage and optimize cloud investments to maximize business value. During this process, you must:
+To implement cost efficiency in cloud adoption, you must properly manage and optimize cloud investments to maximize business value. During this process, you must:
 
 - Gain a clear understanding of cloud usage and associated costs.
 - Quantify the business value of cloud initiatives.
@@ -40,7 +40,7 @@ Effective financial management contributes to the following benefits:
 - Safeguards against inefficiencies
 - Reinforces strategic alignment across teams
 
-Embrace FinOps to foster financial responsibility that focuses on accountability and data-driven decisions. Key practices include accurate forecasting, strategic budgeting, and real-time cost tracking. FinOps encourages collaboration between finance, operations, and engineering teams for shared ownership of cloud spending and outcomes. Implement FinOps to balance innovation and cost-effectiveness.
+Embrace the FinOps Framework to foster financial responsibility that focuses on accountability and data-driven decisions. Key practices include accurate forecasting, strategic budgeting, and real-time cost tracking. The FinOps Framework encourages collaboration between finance, operations, and engineering teams for shared ownership of cloud spending and outcomes. Implement FinOps best practices to balance innovation and cost-effectiveness.
 
 #### Recommendations
 
