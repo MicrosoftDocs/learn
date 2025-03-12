@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-agent-with-custom-tools.exercise
+title: Exercise - Build an agent with custom tools
+metadata:
+  title: Exercise - Build an agent with custom tools
+  description: "Get interactive experience with building an agent with custom tools."
+  ms.date: 3/11/2025
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise.md)]

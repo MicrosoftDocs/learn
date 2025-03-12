@@ -27,5 +27,6 @@ subjects:
 modules:
 - learn.wwl.ai-agent-fundamentals
 - learn.wwl.develop-ai-agent-azure
+- learn.wwl.build-agent-with-custom-tools
 trophy:
   uid: learn.wwl.develop-ai-agent-on-azure.trophy

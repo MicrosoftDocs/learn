@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-agent-with-custom-tools.how-use-custom-tools
+title: How to integrate custom tools
+metadata:
+  title: How to integrate custom tools
+  description: "Learn how to integrate custom tools into your agent. This unit covers function calling, Azure Function integration, and OpenAPI specification integration."
+  ms.date: 3/11/2025
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-how-use-custom-tools.md)]
