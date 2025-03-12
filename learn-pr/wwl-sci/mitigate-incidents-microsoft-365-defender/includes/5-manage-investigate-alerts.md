@@ -1,4 +1,3 @@
-## Manage investigate alerts
 
 You can manage alerts by selecting an alert in the Alerts queue or the Alerts tab of the Device page for an individual device. Selecting an alert in either of those places brings up the Alert management pane.
 
