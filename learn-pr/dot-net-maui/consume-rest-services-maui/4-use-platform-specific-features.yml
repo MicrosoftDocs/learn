@@ -4,8 +4,8 @@ title: Use platform-specific network features
 metadata:
   unitType: unit
   title: "Use platform-specific network features"
-  description: "Learn about the platform-specific network capabilities available to .NET MAUI apps."
-  ms.date: 10/31/2023
+  description: "Learn about the platform-specific network capabilities available to .NET Multi-platform App UI (MAUI) apps."
+  ms.date: 03/05/2025
   author: codemillmatt 
   ms.author: masoucou
   ms.manager: markl
