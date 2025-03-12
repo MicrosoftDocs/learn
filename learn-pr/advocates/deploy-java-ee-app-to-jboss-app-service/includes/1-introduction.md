@@ -9,7 +9,7 @@ In a similar way, in this module, you create a database on Azure Database for My
 
 ## Learning objectives
 
-By the end of this module, you'll be able to perform the following tasks:
+By the end of this module, you'll be able to complete the following tasks:
 
 - Create and manage an Azure Database for MySQL Flexible Server instance.
 - Deploy a Jakarta EE app to JBoss EAP on Azure App Service.
@@ -20,7 +20,7 @@ By the end of this module, you'll be able to perform the following tasks:
 
 - An Azure subscription. [Create one for free.](https://azure.microsoft.com/free/).
 - [Azure CLI](/cli/azure/install-azure-cli)
-- [Java SE 17 or later)](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html).
-- [The Git CLI](https://git-scm.com/downloads)
-- [The MySQL CLI](https://dev.mysql.com/downloads/shell/)
-- [The jq CLI JSON processor](https://stedolan.github.io/jq/).
+- [Java SE 17 or later](https://www.oracle.com/java/technologies/downloads/#java17).
+- [Git](https://git-scm.com/downloads)
+- [MySQL](https://dev.mysql.com/downloads/shell/)
+- [jq](https://stedolan.github.io/jq/).
