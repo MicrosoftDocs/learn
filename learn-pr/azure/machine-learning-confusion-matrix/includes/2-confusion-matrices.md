@@ -14,15 +14,15 @@ In some respects, categorical data aren't so different from continuous data. We 
 
 ![Bar plot showing more false labels then true.](../media/8-g-b.jpg)
 
-This tells us that there are 750 samples with "false" as a label, and 250 with "true" as the label.
+This plot tells us that there are 750 samples with "false" as a label, and 250 with "true" as the label.
 
 A label for three categories is similar:
 
 ![Bar plot showing more animal labels than person and tree labels.](../media/8-g-c.jpg)
 
-This tells us that there are 200 samples that are "person", 400 that are "animal", and 100 that are "tree".
+This plot tells us that there are 200 samples that are "person", 400 that are "animal", and 100 that are "tree".
 
-As categorical labels are simpler, we can often show these as simple tables. The two preceding graphs would appear like so:
+As categorical labels are simpler, we can often show these labels and values as simple tables. The two preceding graphs would appear like so:
 
 | Label      | False       |  True      |
 |------------|-------------|------------|
@@ -43,7 +43,7 @@ We can look at predictions that the model makes just like we look at the ground-
 | False      | 700         |
 | True       | 300         |
 
-This provides direct information about the predictions our model is making, but it doesn’t tell us which of these are correct. While we can use a cost function to understand how often the correct responses are given, the cost function won't tell us which kinds of errors are being made. For example, the model might correctly guess all "true" values, but also guess "true" when it should have guessed "false".
+This result provides direct information about the predictions our model is making, but it doesn’t tell us which of these predictions are correct. While we can use a cost function to understand how often the correct responses are given, the cost function won't tell us which kinds of errors are being made. For example, the model might correctly guess all "true" values, but also guess "true" when it should guess "false".
 
 ## The confusion matrix
 
@@ -53,9 +53,9 @@ The key to understanding the model performance is to combine the table for model
 
 The square we haven't filled out is called the confusion matrix.
 
-Each cell in the confusion matrix tells us one thing about the model’s performance. These are True Negatives (TN), False Negatives (FN), False Positives (FP) and True Positives (TP).
+Each cell in the confusion matrix tells us one thing about the model’s performance. These are True Negatives (TN), False Negatives (FN), False Positives (FP), and True Positives (TP).
 
-Let’s explain these one by one, replacing these acronyms with actual values. Blue-green squares mean the model made a correct prediction, and orange squares mean the model made an incorrect prediction.
+Let’s explain these acronyms one by one and replace them with actual values. Blue-green squares mean the model made a correct prediction, and orange squares mean the model made an incorrect prediction.
 
 ### True Negatives (TN)
 
@@ -87,7 +87,7 @@ We normally simplify our confusion matrix slightly, like so:
 
 ![Diagram of the simplified confusion matrix.](../media/8-2-f.jpg)
 
-We’ve colored the cells here to highlight when the model made correct predictions. From this, we know not only how often the model made certain types of predictions, but also how often those predictions were correct or incorrect.
+We colored the cells here to highlight when the model made correct predictions. From this, we know not only how often the model made certain types of predictions, but also how often those predictions were correct or incorrect.
 
 Confusion matrices can also be constructed when there are more labels. For example, for our person/ animal/tree example, we might get a matrix like so:
 
