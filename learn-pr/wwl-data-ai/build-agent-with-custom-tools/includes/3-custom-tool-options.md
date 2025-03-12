@@ -12,31 +12,31 @@ Azure AI services provide several custom tool options, including OpenAPI specifi
 
 Custom tools within the Azure AI Agent Service enable users to extend the capabilities of AI agents, tailoring them to meet specific business needs. Some example use cases that illustrate the versatility and impact of custom tools include:
 
-### Customer Support Automation
+### Customer support automation
 
 - **Scenario**: A retail company integrates a custom tool that connects the Azure AI Agent to their customer relationship management (CRM) system.
 - **Functionality**: The AI agent can retrieve customer order histories, process refunds, and provide real-time updates on shipping statuses.
 - **Outcome**: Faster resolution of customer queries, reduced workload for support teams, and improved customer satisfaction.
 
-### Inventory Management
+### Inventory management
 
 - **Scenario**: A manufacturing company develops a custom tool to link the AI agent with their inventory management system.
 - **Functionality**: The AI agent can check stock levels, predict restocking needs using historical data, and place orders with suppliers automatically.
 - **Outcome**: Streamlined inventory processes and optimized supply chain operations.
 
-### Healthcare Appointment Scheduling
+### Healthcare appointment scheduling
 
 - **Scenario**: A healthcare provider integrates a custom scheduling tool with the AI agent.
 - **Functionality**: The AI agent can access patient records, suggest available appointment slots, and send reminders to patients.
 - **Outcome**: Reduced administrative burden, improved patient experience, and better resource utilization.
 
-### IT Helpdesk Support
+### IT Helpdesk support
 
 - **Scenario**: An IT department develops a custom tool to integrate the AI agent with their ticketing and knowledge base systems.
 - **Functionality**: The AI agent can troubleshoot common technical issues, escalate complex problems, and track ticket statuses.
 - **Outcome**: Faster issue resolution, reduced downtime, and improved employee productivity.
 
-### E-Learning and Training
+### E-learning and training
 
 - **Scenario**: An educational institution creates a custom tool to connect the AI agent with their learning management system (LMS).
 - **Functionality**: The AI agent can recommend courses, track student progress, and answer questions about course content.
