@@ -75,13 +75,12 @@ az configure --defaults location=<desired-location>
 
     > [!IMPORTANT]
     > Run the following command in an IPv4 environment. If your environment has an IPv6 address, the command fails because the firewall configuration for it doesn't support IPv6 addresses yet.
+    >
+    > If an error occurs during the execution of the script, the process stops in the middle of the execution. If an error occurs during `Granting the User.Read.All, GroupMember.Read.All, and Application.Read.All permissions to the user managed identity`, sign in to the Azure CLI again with a user that has `Azure AD administrator` privileges and then re-run the script.
 
     ```bash
     ./setup_mysql.sh flexible
     ```
-
-    > [!NOTE]
-    > If an error occurs during the execution of the script, the process stops in the middle of the execution. If an error occurs during `Granting the User.Read.All, GroupMember.Read.All, and Application.Read.All permissions to the user managed identity`, sign in to the Azure CLI again with a user that has `Azure AD administrator` privileges and then re-run the script.
 
     The following output is typical:
 
@@ -228,8 +227,8 @@ To sign in to the database and view the available usernames and plugins, use the
 
 Use the following steps to create a database for your application and to verify its details:
 
-    > [!TIP]
-    > You can also use the `mysql` command to create a database and tables from a script file, but that command takes a long time to complete. We therefore recommend using `az mysql flexible-server execute`.
+> [!TIP]
+> You can also use the `mysql` command to create a database and tables from a script file, but that command takes a long time to complete. We therefore recommend using `az mysql flexible-server execute`.
 
 1. Use the following command to create the database and tables:
 
@@ -250,13 +249,7 @@ Use the following steps to create a database for your application and to verify 
         --database-name world \
         --interactive
 
-1. When the system prompts you, enter a password.
-
-    ```bash
-    Password: [Enter the same password as $MYSQL_PASSWORD]
-    ```
-
-    The following output is typical:
+1. When the system prompts you, enter a password. The following output is typical:
 
     ```output
     MySQL 8.0.39
