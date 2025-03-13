@@ -33,13 +33,13 @@ Your objectives should include clear and inspiring goals that align with the mis
 
 - **Assign accountable roles to key results**, and review key results and KPIs periodically, preferably at least quarterly at the strategic level.
 
-- **Ensure that your objectives, key results, and accountability are clear, concise, accessible and easy to understand for everyone.**
+- **Ensure that your objectives, key results, and accountability are clear, concise, accessible, and easy to understand for everyone.**
 
 ## Measure success
 
 To understand if you're on track to meet your objectives, you must be able to effectively measure and track your key results by using KPIs or other metrics. These metrics should provide insight into your progress against each key result and highlight areas for improvement.
 
-The Strategy methodology provides [example objectives and metrics](/azure/cloud-adoption-framework/strategy/mission-objectives#example-objectives-and-success-metrics). Use these example to discover ideas about how to incorporate this guidance into your scenario.
+The Strategy methodology provides [example objectives and metrics](/azure/cloud-adoption-framework/strategy/mission-objectives#example-objectives-and-success-metrics). Use these examples to discover ideas about how to incorporate this guidance into your scenario.
 
 #### Recommendations
 

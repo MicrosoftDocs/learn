@@ -12,7 +12,7 @@ A cloud adoption strategy is a comprehensive plan that outlines your organizatio
 
 - **Mitigate modernization risks.** Create a roadmap to safely rearchitect legacy systems and integrate cloud technologies.
 
-- **Enable continuous strategy improvement.** Use a well-defined and continuously evolving cloud adoption strategy to better address challenges, like unexpected costs, siloed work environments, and unrealized cloud investment value.
+- **Enable continuous strategy improvement.** Use a well-defined and continuously evolving cloud adoption strategy to better address challenges, such as unexpected costs, siloed work environments, and unrealized cloud investment value.
 
 ## Build a cloud adoption strategy
 
@@ -22,7 +22,7 @@ Use the following iterative steps to [develop a cloud adoption strategy](/azure/
 
 - **Define your motivations.** Identify your reasons for adopting cloud technologies.
 - **Define your mission and objectives.** Establish a clear mission and measurable objectives for your cloud motivations.
-- **Define your strategy team.** Identify the individuals and teams who will help you build and implement your strategy.
+- **Define your strategy team.** Identify individuals and teams that can help build and implement your strategy.
 - **Prepare your organization.** Get leadership and executive buy-in, align your organizational strategies, understand your operating model's readiness for cloud, and consider a shift to a product model.
 - **Inform your strategy.** Discover strategic considerations for the important cloud strategy areas: financial efficiency, AI, resiliency, security, and sustainability.
 

@@ -44,5 +44,5 @@ Your cloud strategy team should continuously seek input from across the business
 - **Start small and expand.** Define core members, such as IT, finance, and security, and seek input from other functions as needed for your first iterations.
 
 - **Define roles.** Map business requirements to the operational responsibilities of the cloud adoption strategy team. Establish a clear accountability structure.
-- **Review members.** Review the team regulary to ensure proper representation and stakeholder involvement. This practice helps uncover opportunities and risks.
+- **Review members.** Review the team regularly to ensure proper representation and stakeholder involvement. This practice helps uncover opportunities and risks.
 - **Iterate on your strategy.** Create an initial strategy draft with the core team, consult business leaders, and expand the strategy as necessary with executive support.

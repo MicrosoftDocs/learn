@@ -18,7 +18,7 @@ Incorporate the shared responsibility model into your strategy to proactively ad
 
 For Azure, Microsoft manages the reliability of the cloud platform, while customers and partners manage the reliability of their cloud applications and infrastructure deployments.
 
-:::image type="content" source="../media/shared-responsibility-resiliency.png" lightbox="../media/shared-responsibility-resiliency.png" alt-text="Chart that shows the division of responsibility for the shared responsbility model." border="false":::
+:::image type="content" source="../media/shared-responsibility-resiliency.png" lightbox="../media/shared-responsibility-resiliency.png" alt-text="Chart that shows the division of responsibility for the shared responsibility model." border="false":::
 
 #### Recommendations
 

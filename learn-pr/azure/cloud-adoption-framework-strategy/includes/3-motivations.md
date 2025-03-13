@@ -1,10 +1,10 @@
 You need to understand and [define your motivations](/azure/cloud-adoption-framework/strategy/motivations) for your cloud adoption strategy. Clear motivations help prioritize initiatives, streamline resource allocation, and mitigate risks by addressing specific business needs. 
 
-You can acheive motivations for cloud adoption directly, such as through cost optimization by moving to platform as a service (PaaS), or indirectly, such as accelerating business application delivery.
+You can achieve motivations for cloud adoption directly, such as through cost optimization by moving to platform as a service (PaaS), or indirectly, such as accelerating business application delivery.
 
 ## Define your motivations
 
-Determine your motivations for adopting and expanding your cloud footprint. Consider the following examples to guide your decision making and inform your strategy.
+Determine your motivations for adopting and expanding your cloud footprint. To guide your decision making and inform your strategy, consider the following examples.
 
 ### Reduce business risk  
 

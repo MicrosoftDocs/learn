@@ -51,7 +51,7 @@ Understand your existing operating model so that you can address potential limit
 
 - **Organizational capabilities and processes:** Traditional capabilities might not keep up with cloud's continuous change and scale. The adoption strategy should improve these capabilities to support the cloud effectively.
 
-- **Organizational culture:** Regulated or risk-averse organizations might resist cloud adoption because of their non-collaborative culture. The strategy should address cultural needs to enable cloud benefits.
+- **Organizational culture:** Regulated or risk-averse organizations might resist cloud adoption because of their noncollaborative culture. The strategy should address cultural needs to enable cloud benefits.
 - **Roles and skills:** On-premises organizations might lack cloud expertise. The strategy should include a training and skilling plan for cloud services adoption.
 
 #### Recommendations
@@ -72,7 +72,7 @@ To ensure that you can broadly scale your cloud services at speed, you might nee
 
 |Project delivery model|Product delivery model|
 |----|----|
-| The focus is to complete tasks and deliver a finished solution.| The focus is ongoing improvements and contiuous value delivery.|
+| The focus is to complete tasks and deliver a finished solution.| The focus is ongoing improvements and continuous value delivery.|
 |The outcome is based on a completed solution at a specific point in time.| The outcome is based on a continuously evolving service.|
 |The team structure consists of isolated and temporary project teams.| The team structure consists of cross-functional, stable product, platform, and enablement teams. |
 |Temporary project teams have a clearly defined end date.| Permanent product teams manage the lifecycle of the service.|
