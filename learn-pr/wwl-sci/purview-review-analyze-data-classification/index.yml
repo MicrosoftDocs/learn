@@ -10,18 +10,16 @@ metadata:
   ms.service: purview
   hidden: false
 title: Review and analyze data classification and protection
-summary: Discover how Microsoft Purview helps organizations classify, protect, and monitor sensitive data across cloud, endpoint, and AI environments. This module explores strategies for securing data through classification, labeling, encryption, and proactive risk management.
+summary: Discover how Microsoft Purview helps organizations monitor and analyze data classification and protection. This module explores how security teams can track classification trends, investigate labeled content, and assess policy effectiveness using Information Protection Reports, Data explorer, Content explorer, and Activity explorer.  
 abstract: |
   After completing this module, you'll be able to:
-  - Describe challenges in protecting sensitive data across cloud and AI environments.
-  - Explain how Microsoft Purview enables data classification, labeling, and protection.
-  - Identify how data loss prevention (DLP) prevents unauthorized data sharing.
-  - Understand how Insider Risk Management helps detect potential threats.
-  - Explore security monitoring tools for detecting and responding to data risks.
+  - Interpret Information Protection Reports to assess classification and protection trends.  
+  - Investigate labeled content using Data explorer and Content explorer to identify classification patterns.  
+  - Analyze user activity in Activity explorer to detect policy violations and potential security risks.  
+  - Use Microsoft Purview tools to improve data security, maintain compliance, and refine protection strategies.  
 prerequisites: |
-  - Basic understanding of data security concepts.
-  - Familiarity with compliance and risk management practices.
-  - Awareness of Microsoft 365 security and compliance tools.
+  - Basic understanding of data classification and protection.  
+  - Familiarity with security and compliance policies in Microsoft 365.  
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
