@@ -1,15 +1,15 @@
 ### YamlMime:Module
-uid: learn.wwl.purview-review-monitor-data-classification
+uid: learn.wwl.purview-review-analyze-data-classification
 metadata:
-  title: Protect sensitive data in a digital world
-  description: "Protect sensitive data in a digital world."
-  ms.date: 03/10/2025
+  title: Review and analyze data classification and protection
+  description: "Review and analyze data classification and protection."
+  ms.date: 03/13/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
   ms.service: purview
   hidden: false
-title: Protect sensitive data in a digital world
+title: Review and analyze data classification and protection
 summary: Discover how Microsoft Purview helps organizations classify, protect, and monitor sensitive data across cloud, endpoint, and AI environments. This module explores strategies for securing data through classification, labeling, encryption, and proactive risk management.
 abstract: |
   After completing this module, you'll be able to:
@@ -36,12 +36,12 @@ subjects:
 - information-protection-governance
 - security
 units:
-- learn.wwl.purview-review-monitor-data-classification.introduction
-- learn.wwl.purview-review-monitor-data-classification.information-protection-reports
-- learn.wwl.purview-review-monitor-data-classification.analyze-classified-data
-- learn.wwl.purview-review-monitor-data-classification.monitor-review-actions
-- learn.wwl.purview-review-monitor-data-classification.knowledge-check
-- learn.wwl.purview-review-monitor-data-classification.summary
+- learn.wwl.purview-review-analyze-data-classification.introduction
+- learn.wwl.purview-review-analyze-data-classification.information-protection-reports
+- learn.wwl.purview-review-analyze-data-classification.analyze-classified-data
+- learn.wwl.purview-review-analyze-data-classification.monitor-review-actions
+- learn.wwl.purview-review-analyze-data-classification.knowledge-check
+- learn.wwl.purview-review-analyze-data-classification.summary
 
 badge:
-  uid: learn.wwl.purview-review-monitor-data-classification.badge
+  uid: learn.wwl.purview-review-analyze-data-classification.badge

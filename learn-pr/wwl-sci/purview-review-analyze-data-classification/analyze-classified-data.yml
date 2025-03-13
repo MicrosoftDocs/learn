@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-review-analyze-data-classification.analyze-classified-data
+title: Analyze classified data with data and content explorer
+metadata:
+  title: Analyze classified data with data and content explorer
+  description: "Analyze classified data with data and content explorer"
+  ms.date: 03/13/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/analyze-classified-data.md)]
