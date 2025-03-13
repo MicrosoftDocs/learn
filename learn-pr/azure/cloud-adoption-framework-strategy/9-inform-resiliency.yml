@@ -14,7 +14,7 @@ content: |
 quiz:
  title: Check your knowledge
  questions: 
- - content: What does the shared responsibility model in cloud adoption define?
+ - content: What does the shared responsibility model define?
    choices:
    - content: The exclusive responsibilities of the cloud provider
      isCorrect: false

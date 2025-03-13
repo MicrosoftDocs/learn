@@ -1,4 +1,4 @@
-This unit describes how to assess your existing cloud strategy. Use the feedback from your assessment to inform your organization of your current cloud maturity, identify gaps in your strategy, and take action to improve.
+First, you should [assess your existing cloud strategy](/azure/cloud-adoption-framework/strategy/assessment). Use the feedback from your assessment to determine your current cloud maturity, identify gaps in your strategy, and take action to improve.
 
 :::image type="content" source="../media/strategy-assess.svg" lightbox="../media/strategy-assess.svg" alt-text="Diagram that shows the Assess phase of the Strategy methodology." border="false":::
 

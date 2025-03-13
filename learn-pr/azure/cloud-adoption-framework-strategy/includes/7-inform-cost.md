@@ -2,7 +2,7 @@ After you complete the first four steps of your strategy, you can factor in othe
 
 :::image type="content" source="../media/strategy-inform.svg" lightbox="../media/strategy-inform.svg" alt-text="Diagram that shows the Assess phase of the Strategy methodology." border="false":::
 
-Cost efficiency involves strategic decisions to help ensure that your organization gets the best value for your investment and minimizes unnecessary expenses.
+[Cost efficiency](/azure/cloud-adoption-framework/strategy/inform/cost-efficiency) involves strategic decisions to help ensure that your organization gets the best value for your investment and minimizes unnecessary expenses.
 
 ## Shift from a CapEx model to an OpEx model
 

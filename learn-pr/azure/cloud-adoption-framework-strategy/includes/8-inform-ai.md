@@ -1,4 +1,4 @@
-AI is revolutionizing cloud adoption strategies by enhancing efficiency, scalability, and innovation. To optimize operations and drive business growth, integrate AI into your cloud platform to benefit from advanced analytics, machine learning, and automation.
+AI is revolutionizing cloud adoption strategies by enhancing efficiency, scalability, and innovation. To optimize operations and drive business growth, [integrate AI](/azure/cloud-adoption-framework/strategy/inform/ai) into your cloud platform to benefit from advanced analytics, machine learning, and automation.
 
 ## Benefits of AI
 

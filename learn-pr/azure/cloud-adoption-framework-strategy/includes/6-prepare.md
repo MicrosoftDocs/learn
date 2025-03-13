@@ -1,4 +1,4 @@
-This unit describes steps that you should take to align your organization with your new cloud adoption strategy.
+To [align your organization](/azure/cloud-adoption-framework/strategy/prepare-organizational-alignment) with your new cloud adoption strategy, do the following tasks.
 
 ## Get leadership and executive buy-in
 

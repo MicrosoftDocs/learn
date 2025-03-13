@@ -1,4 +1,4 @@
-Sustainability is an increasingly important KPI for organizations. Organizations must respond to this evolution with innovative solutions and technology-enabled approaches.
+[Sustainability](/azure/cloud-adoption-framework/strategy/inform/sustainability) is an increasingly important KPI for organizations. Organizations must respond to this evolution with innovative solutions and technology-enabled approaches.
 
 Research indicates that this evolution is good for business because sustainability front-runners:
 

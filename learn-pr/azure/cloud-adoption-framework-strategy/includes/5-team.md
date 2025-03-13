@@ -1,4 +1,4 @@
-This unit describes how to define your cloud strategy team. This team performs functions that validate and maintain alignment between business priorities and cloud adoption efforts.
+[Define a cloud strategy team](/azure/cloud-adoption-framework/strategy/define-your-team) to perform functions that validate and maintain alignment between business priorities and cloud adoption efforts.
 
 :::image type="content" source="../media/strategy-team.svg" lightbox="../media/strategy-team.svg" alt-text="Diagram that shows the Team phase of the Strategy methodology." border="false":::
 

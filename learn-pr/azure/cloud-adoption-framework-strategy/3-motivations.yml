@@ -25,6 +25,6 @@ quiz:
    - content: To move to the cloud without considering the impact on data security and compliance requirements
      isCorrect: false
      explanation: Incorrect. Data security and compliance are critical factors for motivations to protect sensitive information and adhere to regulatory standards.
-   - content: To help prioritize initiatives, streamline resource allocation, and mitigate risks by addressing specific business needs. 
+   - content: To help prioritize initiatives, streamline resource allocation, and mitigate risks by addressing specific business needs
      isCorrect: true
      explanation: Correct. Motivations help achieve future goals by addressing these important aspects.

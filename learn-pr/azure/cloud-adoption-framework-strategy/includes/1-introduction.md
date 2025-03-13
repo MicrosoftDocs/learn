@@ -16,7 +16,7 @@ A cloud adoption strategy is a comprehensive plan that outlines your organizatio
 
 ## Build a cloud adoption strategy
 
-Use the following iterative steps to develop a cloud adoption strategy that aligns with your business goals.
+Use the following iterative steps to [develop a cloud adoption strategy](/azure/cloud-adoption-framework/strategy/#how-to-build-a-cloud-adoption-strategy) that aligns with your business goals.
 
 - **Assess your cloud adoption strategy.** Evaluate your organization's readiness for cloud adoption.
 

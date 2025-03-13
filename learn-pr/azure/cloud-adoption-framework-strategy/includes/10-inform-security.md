@@ -1,4 +1,4 @@
-A successful cloud adoption requires a well-designed security strategy. Evaluate your cloud expertise and focus on cloud security, especially if you're transitioning from on-premises environments.
+A successful cloud adoption requires a well-designed [security strategy](/azure/cloud-adoption-framework/strategy/inform/security). Evaluate your cloud expertise and focus on cloud security, especially if you're transitioning from on-premises environments.
 
 To manage security in the cloud, you might need to restructure your security team and approach. Organizational changes can cause stress and conflict. Ensure that management supports and clearly communicates these changes to all teams.
 

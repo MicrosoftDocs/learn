@@ -1,4 +1,4 @@
-Resiliency is the ability of your infrastructure to maintain functionality and availability despite disruptions or failures. If a system supports a key process or is critical to your business operations, downtime can lead to significant financial losses, resource drain, or even a complete halt to your business activities. Not all systems require the same level of resiliency. Focus resiliency investments where they matter most.
+[Resiliency](/azure/cloud-adoption-framework/strategy/inform/resiliency) is the ability of your infrastructure to maintain functionality and availability despite disruptions or failures. If a system supports a key process or is critical to your business operations, downtime can lead to significant financial losses, resource drain, or even a complete halt to your business activities. Not all systems require the same level of resiliency. Focus resiliency investments where they matter most.
 
 Resiliency helps provide the following benefits:
 

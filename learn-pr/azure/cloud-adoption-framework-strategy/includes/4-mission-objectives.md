@@ -1,4 +1,4 @@
-This unit describes how to define your mission and objectives. A clear mission provides direction and purpose. The objectives outline the steps that you take to achieve that mission. A mission is only valuable if you can take action on it, achieve objectives effectively, and measure the results.
+Next, you must [define your mission and objectives](/azure/cloud-adoption-framework/strategy/mission-objectives). A clear mission provides direction and purpose. The objectives outline the steps that you take to achieve that mission. A mission is only valuable if you can take action on it, achieve objectives effectively, and measure the results.
 
 ## Create a mission statement
 
