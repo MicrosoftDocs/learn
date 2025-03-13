@@ -3,7 +3,7 @@ AI is no longer just for tech experts and scientists. With tools like Microsoft 
 In this module, discover the basics of how generative AI works and how you can use it to be more productive. Whether you're looking to simplify routine tasks or explore new ways to innovate, AI can help you achieve more.
 
 > [!NOTE]
-> **April 8, 2025 only: Join us as we attempt a **GUINNESS WORLD RECORDS<sup>TM</sup>** title for "Most users to take an online multi-level artificial intelligence lesson in 24 hours!"
+> **April 8, 2025 only**: Join us as we attempt a **GUINNESS WORLD RECORDS<sup>TM</sup>** title for "Most users to take an online multi-level artificial intelligence lesson in 24 hours!"
 > To participate, you must:
 > 1. **Register** for the [Microsoft AI Skills Fest](https://aka.ms/AISkillsFest?azure-portal=true).
 > 2. **Complete this module**. You do not need to get the knowledge check questions correct, you just need to attempt them.
