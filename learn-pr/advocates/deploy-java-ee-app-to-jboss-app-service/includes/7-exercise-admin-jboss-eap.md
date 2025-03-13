@@ -63,7 +63,7 @@ To sign in to the server using SSH and a TCP tunnel, use the following steps:
     **NOTE**: No files or system changes outside of /home will persist beyond your application's current session. /home is your application's persistent storage and is shared across all the server instances.
     ```
 
-## Run the JBoss CLI command
+## Run the JBoss CLI tool
 
 After you sign in to the remote server, you can run the JBoss EAP admin CLI tool, **/opt/eap/bin/jboss-cli.sh**, by using the following steps:
 

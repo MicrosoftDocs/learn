@@ -36,10 +36,10 @@ quiz:
       choices:
         - content: JBoss command-line interface (CLI).
           isCorrect: false
-          explanation: It's possible. However, we don't recommend this method in an Azure App Service environment because you must be signed in directly to run the CLI, and the settings disappear after a system restart.
+          explanation: It's possible. However, we don't recommend this method in an Azure App Service environment because you must be signed in directly to use the CLI, and the settings disappear after a system restart.
         - content: JBoss graphical user interface (GUI).
           isCorrect: false
-          explanation: It's possible. However, we don't recommend this method in an Azure App Service environment because you must be signed in to run the CLI, and the settings disappear after a system restart.
+          explanation: It's possible. However, we don't recommend this method in an Azure App Service environment because you must be signed in to use the CLI, and the settings disappear after a system restart.
         - content: Startup shell script
           isCorrect: true
           explanation: Correct!
@@ -59,7 +59,7 @@ quiz:
           explanation: This choice is correct. If you access the JBoss EAP on Azure App Service, you can select the log stream. However, this isn't the only correct option.
         - content: Azure CLI
           isCorrect: false
-          explanation: This choice is correct. When you run the Azure CLI command, you can access the logs. However, this isn't the only correct option.
+          explanation: This choice is correct. When you use the Azure CLI command, you can access the logs. However, this isn't the only correct option.
         - content: All of the above.
           isCorrect: true
           explanation: Correct!

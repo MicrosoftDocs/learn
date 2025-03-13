@@ -74,7 +74,7 @@ az configure --defaults location=<desired-location>
 1. Navigate to the **mslearn-jakarta-ee-azure** directory, and use the following command to create your Azure Database for MySQL Flexible Server instance:
 
     > [!IMPORTANT]
-    > Run the following command in an IPv4 environment. If your environment has an IPv6 address, the command fails because the firewall configuration for it doesn't support IPv6 addresses yet.
+    > Use the following command in an IPv4 environment. If your environment has an IPv6 address, the command fails because the firewall configuration for it doesn't support IPv6 addresses yet.
     >
     > If an error occurs during the execution of the script, the process stops in the middle of the execution. If an error occurs during `Granting the User.Read.All, GroupMember.Read.All, and Application.Read.All permissions to the user managed identity`, sign in to the Azure CLI again with a user that has `Azure AD administrator` privileges and then re-run the script.
 
@@ -110,7 +110,7 @@ az configure --defaults location=<desired-location>
     [INFO] -------------------------------------------------------
     ```
 
-1. Note the key values that appear in the output, since you use these values in later steps.
+1. Note the key values that appear in the output, because you use these values in later steps.
 
 ## Get data from the sample database
 

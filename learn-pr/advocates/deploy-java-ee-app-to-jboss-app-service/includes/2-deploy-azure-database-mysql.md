@@ -23,7 +23,7 @@ The steps in this unit illustrate deploying an Azure Database for MySQL - Flexib
 1. Create an Azure resource group by using the following command:
 
     > [!IMPORTANT]
-    > `MYSQL_RESOURCE_GROUP_NAME` must be unique within your subscription. `MYSQL_LOCATION` must be one of the values returned in the `Name` column when you run the command `az account list-locations --output table`.
+    > `MYSQL_RESOURCE_GROUP_NAME` must be unique within your subscription. `MYSQL_LOCATION` must be one of the values returned in the `Name` column when you use the command `az account list-locations --output table`.
 
     ```azurecli
     az group create \

@@ -73,7 +73,7 @@ Configure the app with the Maven Plugin for Azure App Service by using the follo
     [INFO] ------------------------------------------------------------------------
     ```
 
-    After you run the Maven command, the following example is a typical addition to your Maven **pom.xml** file:
+    After you use the Maven command, the following example is a typical addition to your Maven **pom.xml** file:
 
     ```xml
       <build>
