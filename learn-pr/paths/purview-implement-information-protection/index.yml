@@ -19,7 +19,7 @@ levels:
 roles:
 - auditor
 - administrator
-- information-protection-governance
+- ip-admin
 products:
 - microsoft-purview
 subjects:
