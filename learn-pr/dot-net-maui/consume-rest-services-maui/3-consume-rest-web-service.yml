@@ -5,7 +5,7 @@ metadata:
   unitType: unit
   title: "Consume a REST service with HttpClient"
   description: "Learn how to connect to a REST web service and perform CRUD operations using HttpClient"
-  ms.date: 10/31/2023
+  ms.date: 03/05/2025
   author: codemillmatt 
   ms.author: masoucou
   ms.manager: markl
@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: "`POST`"
       isCorrect: true
-      explanation: "This is the correct answer."
+      explanation: "This answer is correct."
     - content: "`PUT`"
       isCorrect: false
       explanation: "No. Use `PUT` to update an existing resource."
@@ -31,10 +31,10 @@ quiz:
     choices:
     - content: "`IsSuccessful`"
       isCorrect: false
-      explanation: "No. The IsSuccessful is a property that is checked afterwards."
+      explanation: "No. The `IsSuccessful` property is checked afterwards."
     - content: "`EnsureSuccessStatusCode`"
       isCorrect: true
-      explanation: "This is the correct answer."
+      explanation: "This answer is correct."
     - content: "`CheckStatusCode`"
       isCorrect: false
-      explanation: "No. This isn't a valid method."
+      explanation: "No. `CheckStatusCode` isn't a valid method."
