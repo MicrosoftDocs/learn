@@ -3,7 +3,7 @@ uid: learn.azure.deploy-java-ee-app-to-app-service.9-summary
 title: Summary
 metadata:
   title: Summary
-  description: Summarizes the module and provides instructions for the cleanup of Azure resources.
+  description: Summarizes the module and provides instructions for cleaning up Azure resources.
   author: KarlErickson
   ms.author: karler
   ms.reviewer: yoshioterada
