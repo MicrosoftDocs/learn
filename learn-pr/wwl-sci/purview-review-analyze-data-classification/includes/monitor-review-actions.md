@@ -82,7 +82,7 @@ AI-driven capabilities include:
 
 - **Data hunting**: Use machine learning to surface critical data activity.
 - **Prompt-based filtering**: Enter natural language queries to generate filter sets.
-**Investigative assistance**: Drill down into suspicious activities.
+- **Investigative assistance**: Drill down into suspicious activities.
 
 Example prompts:
 
