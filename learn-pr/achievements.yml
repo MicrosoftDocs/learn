@@ -5460,3 +5460,13 @@ achievements:
   title: Azure Health Bot built-in scenarios
   summary: Azure Health Bot supports many built-in scenarios. Examples include triaging a medical condition, finding information about a disease or types of drugs, and getting user consent.
   iconUrl: /training/achievements/student-evangelism/health-bot-built-in-scenarios.svg
+- uid: learn.create-bots-azure-health-bot.trophy
+  type: trophy
+  title: Create intelligent health bots with Azure Health Bot
+  summary: Azure Health Bot enables users to build a health bot by using built-in or custom scenarios. The information that each instance of the Health Bot service handles is privacy protected to HIPAA standards. It also meets Microsoft's high standards for privacy and security. The modules in this Learning path guide you through the creation of both a basic and enhanced health bot. You'll learn about language understanding and how to use both built-in and template scenarios.
+  iconUrl: /training/achievements/create-bots-azure-health-bot.svg
+- uid: learn.student-evangelism.health-bot-basic-bot.badge
+  type: badge
+  title: Basic Azure Health Bot
+  summary: This module starts with a basic informative bot that has no interrupting or breaking scenario involved. It shows you how to enhance the bot with more advanced functionalities.
+  iconUrl: /training/achievements/student-evangelism/health-bot-basic-bot.svg

@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise - Use Azure Resource Manager functions to create expressions
   description: Use several Azure Resource Manager functions to create an expression for the unique Azure Storage account name.
-  ms.date: 10/18/2024
+  ms.date: 03/05/2025
   author: mumian
   ms.author: jgao
   ms.topic: unit
