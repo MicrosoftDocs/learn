@@ -1,4 +1,4 @@
-After you complete the first four steps of your strategy, you can factor in other considerations to inform your cloud adoption strategy. These considerations include cost efficiency, AI, resiliency, security, and sustainability.
+After you complete the first four steps of your strategy, you can factor in other considerations to [inform your cloud adoption strategy](/azure/cloud-adoption-framework/strategy/inform/). These considerations include cost efficiency, AI, resiliency, security, and sustainability.
 
 :::image type="content" source="../media/strategy-inform.svg" lightbox="../media/strategy-inform.svg" alt-text="Diagram that shows the Assess phase of the Strategy methodology." border="false":::
 

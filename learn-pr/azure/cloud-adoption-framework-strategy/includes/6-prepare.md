@@ -1,4 +1,6 @@
-To [align your organization](/azure/cloud-adoption-framework/strategy/prepare-organizational-alignment) with your new cloud adoption strategy, do the following tasks.
+To [align your organization](/azure/cloud-adoption-framework/strategy/prepare-organizational-alignment) with your new cloud adoption strategy, perform the following tasks.
+
+:::image type="content" source="../media/strategy-prepare.svg" lightbox="../media/strategy-prepare.svg" alt-text="Diagram that shows the Prepare phase of the Strategy methodology." border="false":::
 
 ## Get leadership and executive buy-in
 

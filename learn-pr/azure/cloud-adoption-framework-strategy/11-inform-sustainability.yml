@@ -22,7 +22,7 @@ quiz:
    - content: To implement large-scale sustainability initiatives immediately
      isCorrect: false
      explanation: Incorrect. Green teams don't overhaul businesses overnight. They typically make gradual improvements that align with business goals.
-   - content: To have a team dedicated to defining goals and metrics for sustainability, including emissions, water use, and energy consumption
+   - content: To have a dedicated team for defining goals and metrics for sustainability, including emissions, water use, and energy consumption
      isCorrect: true
      explanation: Correct. Green teams help drive foundational sustainability initiatives.
    - content: To separate sustainability from core business goals
