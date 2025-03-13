@@ -1,16 +1,15 @@
-## Manage investigate alerts
 
-You can manage alerts by selecting an alert in the Alerts queue or the Alerts tab of the Device page for an individual device.  Selecting an alert in either of those places brings up the Alert management pane.
+You can manage alerts by selecting an alert in the Alerts queue or the Alerts tab of the Device page for an individual device. Selecting an alert in either of those places brings up the Alert management pane.
 
 :::image type="content" source="../media/alert-queue.png" alt-text="Screenshot of the Microsoft Defender XDR Alerts Queue page." lightbox="../media/alert-queue.png":::
 
 ## Alert management
 
-You can view and set metadata about the Alert preview or Alert details page.
+You can view and set metadata on the Alert preview or Alert details page.
 
 :::image type="content" source="../media/alert-manage.png" alt-text="Screenshot of the Microsoft Defender XDR Alert details page." lightbox="../media/alert-manage.png":::
 
-The metadata fields include and actions include:
+The metadata fields and actions include:
 
 ### Severity
 
@@ -18,11 +17,11 @@ The metadata fields include and actions include:
 
 - **Medium (Orange) -** Alerts from endpoint detection and response post-breach behaviors that might be a part of an advanced persistent threat (APT). This includes observed behaviors typical of attack stages, anomalous registry change, execution of suspicious files, and so forth. Although some might be part of internal security testing, it requires investigation as it might also be a part of an advanced attack.
 
-- **Low (Yellow)** - Alerts on threats associated with prevalent malware. For example, hack-tools, non-malware hack tools, such as running exploration commands, clearing logs, etc. often don't indicate an advanced threat targeting the organization. It could also come from an isolated security tool testing by a user in your organization.
+- **Low (Yellow)** - Alerts on threats associated with prevalent malware. For example, hack-tools, nonmalware hack tools, such as running exploration commands, clearing logs, etc. often don't indicate an advanced threat targeting the organization. It could also come from an isolated security tool testing by a user in your organization.
 
 - **Informational (Grey)** - Alerts that might not be considered harmful to the network but can drive organizational security awareness on potential security issues.
 
-Microsoft Defender Antivirus (Microsoft Defender AV) and Defender for Endpoint alert severities are different because they represent different scopes.  The Microsoft Defender AV threat severity represents the absolute severity of the detected threat (malware) and is assigned based on the potential risk to the individual device if infected.
+Microsoft Defender Antivirus (Microsoft Defender AV) and Defender for Endpoint alert severities are different because they represent different scopes. The Microsoft Defender AV threat severity represents the absolute severity of the detected threat (malware) and is assigned based on the potential risk to the individual device if infected.
 
 The Defender for Endpoint alert severity represents the severity of the detected behavior, the actual risk to the device, and most importantly, the potential risk to the organization.
 
@@ -111,7 +110,7 @@ Alternatively, the team leader might assign the alert to the Resolved queue if t
 
 ### Alert classification
 
-You can choose not to set a classification or specify whether an alert is a true alert or a false alert. It's important to provide the classification of true positive/false positive because it is used to monitor alert quality and make alerts more accurate. The "determination" field defines extra fidelity for a "true positive" classification.
+You can choose not to set a classification or specify whether an alert is a true alert or a false alert. It's important to provide the classification of true positive/false positive because it's used to monitor alert quality and make alerts more accurate. The "determination" field defines extra fidelity for a "true positive" classification.
 
 ### Add comments and view the history of an alert
 
