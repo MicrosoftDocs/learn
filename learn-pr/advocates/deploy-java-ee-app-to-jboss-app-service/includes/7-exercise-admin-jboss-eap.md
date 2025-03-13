@@ -73,7 +73,7 @@ After you sign in to the remote server, you can run the JBoss EAP admin CLI tool
     /opt/eap/bin/jboss-cli.sh --connect
     ```
 
-    The following JBoss server output is typical:
+    The following output is typical:
 
     ```output
     OpenJDK 64-Bit Server VM warning: Options -Xverify:none and -noverify were deprecated in JDK 13 and will likely be removed in a future release.
@@ -165,7 +165,7 @@ Next, access the JBoss admin web console by using the following steps:
 
     :::image type="content" source="../media/jboss-admin-console-home-page.png" alt-text="Screenshot of the main page of the admin console." lightbox="../media/jboss-admin-console-home-page.png":::
 
-1. Confirm your created data source by selecting **Configuration** > **Subsystems** > **Datasources & Drivers** > **Datasources**.
+1. Confirm that you created the datasource by selecting **Configuration** > **Subsystems** > **Datasources & Drivers** > **Datasources**.
 
     :::image type="content" source="../media/jboss-admin-console-configuration.png" alt-text="Screenshot of the list of data sources on the admin console." lightbox="../media/jboss-admin-console-configuration.png":::
 
