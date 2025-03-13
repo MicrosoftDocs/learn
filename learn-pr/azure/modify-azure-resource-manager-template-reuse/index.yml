@@ -7,7 +7,7 @@ metadata:
   description: Manage multiple Azure environment deployments of your JSON Azure Resource Manager templates (ARM templates) by using functions, variables, tags, and parameter files.
   ms.service: azure-resource-manager
   manager: jasongroce
-  ms.date: 10/18/2024
+  ms.date: 03/05/2025
   author: mumian
   ms.author: jgao
   ms.topic: module
