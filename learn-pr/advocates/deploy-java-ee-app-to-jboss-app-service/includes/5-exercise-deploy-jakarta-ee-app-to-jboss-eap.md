@@ -1,4 +1,4 @@
-In this unit, you deploy a Jakarta EE application to JBoss EAP on Azure App Service. You use the Maven Plugin for Azure App Service to configure the project, compile and deploy the application, and configure a data source.
+In this unit, you deploy a Jakarta EE application to Red Hat JBoss Enterprise Application Platform (JBoss EAP) on Azure App Service. You use the Maven Plugin for Azure App Service to configure the project, compile and deploy the application, and configure a data source.
 
 ## Configure the app
 
@@ -13,21 +13,21 @@ Configure the app with the Maven Plugin for Azure App Service by using the follo
     > [!IMPORTANT]  
     > If you change the region of your MySQL server, you should match that region to the region of your Jakarta EE application server in order to minimize latency delays.
 
-    Use the values in the following table to answer the interactive prompts:
+1. Use the values in the following table to answer the interactive prompts:
 
-    |  Input element  |  Value  |
-    | ---- | ---- |
-    | `Create new run configuration (Y/N) [Y]:` | `Y` |
-    |  `Define value for OS [Linux]:`  |  `Linux`  |
-    |  `Define value for javaVersion [Java 17]:`  |  `1: Java 17`  |
-    |  `Define value for runtimeStack:`  |  `3: Jbosseap 7`  |
-    |  `Define value for pricingTier [P1v3]:`  |  `P1v3`  |
-    |  `Confirm (Y/N) [Y]:` | `Y` |
+    | Input element                             | Value           |
+    |-------------------------------------------|-----------------|
+    | `Create new run configuration (Y/N) [Y]:` | `Y`             |
+    | `Define value for OS [Linux]:`            | `Linux`         |
+    | `Define value for javaVersion [Java 17]:` | `1: Java 17`    |
+    | `Define value for runtimeStack:`          | `3: Jbosseap 7` |
+    | `Define value for pricingTier [P1v3]:`    | `P1v3`          |
+    | `Confirm (Y/N) [Y]:`                      | `Y`             |
 
     The following output is typical:
 
     ```output
-     ./mvnw com.microsoft.azure:azure-webapp-maven-plugin:2.13.0:config
+    ./mvnw com.microsoft.azure:azure-webapp-maven-plugin:2.13.0:config
     [INFO] Scanning for projects...
     [INFO] 
     [INFO] ---------< com.microsoft.azure.samples:jakartaee-app-on-jboss >---------
@@ -73,7 +73,7 @@ Configure the app with the Maven Plugin for Azure App Service by using the follo
     [INFO] ------------------------------------------------------------------------
     ```
 
-    After running the Maven command, the following example is a typical addition to your Maven `pom.xml` file:
+    After you run the Maven command, the following example is a typical addition to your Maven **pom.xml** file:
 
     ```xml
       <build>
@@ -115,7 +115,7 @@ Configure the app with the Maven Plugin for Azure App Service by using the follo
       </build>
     ```
 
-1. Check the `<region>` element in your **pom.xml** file. If it's value doesn't match the installation location of MySQL, change it to the same location.
+1. Check the `<region>` element in your **pom.xml** file. If its value doesn't match the installation location of MySQL, change it to the same location.
 
 1. Use the following example to modify the `webContainer` value in your **pom.xml** file to `Jbosseap 8`, for the JBoss EAP 8 environment on Azure App Service:
 
@@ -130,7 +130,7 @@ Configure the app with the Maven Plugin for Azure App Service by using the follo
                     </runtime>
     ```
 
-1. To deploy the startup file, add the following example to **pom.xml**. 
+1. To deploy the startup file, add the following example to **pom.xml**:
 
     ```xml
               </runtime>
@@ -152,13 +152,13 @@ Configure the app with the Maven Plugin for Azure App Service by using the follo
     > [!NOTE]  
     > You can choose the deployment option and deployment location by specifying `type` in one of the following ways:
     >
-    > - `type=war` deploys the WAR file to **/home/site/wwwroot/app.war** if `path` is not specified.
+    > - `type=war` deploys the WAR file to **/home/site/wwwroot/app.war** if `path` isn't specified.
     > - `type=war&path=webapps/<appname>` deploys the WAR file to **/home/site/wwwroot/webapps/\<appname\>**.
     > - `type=jar` deploys the WAR file to **/home/site/wwwroot/app.jar**. The `path` parameter is ignored.
     > - `type=ear` deploys the WAR file to **/home/site/wwwroot/app.ear**. The `path` parameter is ignored.  
     > - `type=lib` deploys the JAR to **/home/site/libs**. You must specify `path` parameter.
     > - `type=static` deploys the script to **/home/site/scripts**. You must specify the `path` parameter.
-    > - `type=startup` deploys the script as **startup.sh** on Linux, or  or **startup.cmd** on Windows. The script is deployed to **/home/site/scripts/**. The `path` parameter is ignored.
+    > - `type=startup` deploys the script as **startup.sh** on Linux, or **startup.cmd** on Windows. The script is deployed to **/home/site/scripts/**. The `path` parameter is ignored.
     > - `type=zip` unzips the **.zip** file to **/home/site/wwwroot**. The `path` parameter is optional.
 
 1. Check the values for `resourceGroup` and `appName` in **pom.xml**, as in the following typical example:
@@ -184,7 +184,7 @@ After you configure the Azure App Service deployment settings, compile and packa
 ./mvnw clean package
 ```
 
-The following is typical output:
+The following output is typical:
 
 ```output
 [INFO] --- war:3.4.0:war (default-war) @ jakartaee-app-on-jboss ---
@@ -252,7 +252,7 @@ As a result, JBoss EAP automatically installs the JDBC drive `ROOT.war_com.mysql
 
 ## Create the MySQL DataSource object in JBoss EAP
 
-To access Azure Database for MySQL, you need to configure the `DataSource` object in JBoss EAP and specify the JNDI name in your source code. To create a MySQL `DataSource` object in JBoss EAP, you use the **/WEB-INF/createMySQLDataSource.sh** startup shell script. The following is a version of the script that's already been uploaded to App Service, but hasn't yet been configured:
+To access Azure Database for MySQL, you need to configure the `DataSource` object in JBoss EAP and specify the JNDI name in your source code. To create a MySQL `DataSource` object in JBoss EAP, you use the **/WEB-INF/createMySQLDataSource.sh** startup shell script. The following is an unconfigured version of the script already in Azure App Service:
 
 ```bash
 #!/bin/bash
@@ -262,7 +262,7 @@ sed -i -e "s|.*<resolve-parameter-values.*|<resolve-parameter-values>true</resol
 /opt/eap/bin/jboss-cli.sh --connect <<EOF
 data-source add --name=JPAWorldDataSourceDS \
 --jndi-name=java:jboss/datasources/JPAWorldDataSource \
---connection-url=${AZURE_MYSQL_CONNECTIONSTRING}&characterEncoding=utf8&sslMode=REQUIRED&serverTimezone=UTC&authenticationPlugins=com.azure.identity.extensions.jdbc.mysql.AzureMysqlAuthenticationPlugin \
+--connection-url=${AZURE_MYSQL_CONNECTION_STRING}&characterEncoding=utf8&sslMode=REQUIRED&serverTimezone=UTC&authenticationPlugins=com.azure.identity.extensions.jdbc.mysql.AzureMysqlAuthenticationPlugin \
 --driver-name=ROOT.war_com.mysql.cj.jdbc.Driver_9_2 \
 --min-pool-size=5 \
 --max-pool-size=20 \
@@ -278,8 +278,8 @@ EOF
 ```
 
 > [!NOTE]
-> When you create the data source, you don't specify a password for the MySQL connection. The environment variable `AZURE_MYSQL_CONNECTIONSTRING` is specified in the `--connection-url` parameter. This environment variable will be automatically set when the service connection is created later.
-> 
+> When you create the datasource, you don't specify a password for the MySQL connection. The environment variable `AZURE_MYSQL_CONNECTION_STRING` is specified in the `--connection-url` parameter. This environment variable is automatically set when the service connection is created later.
+>
 > The service connection value will be set to `jdbc:mysql://$$MYSQL_SERVER_INSTANCE.mysql.database.azure.com:3306/world?serverTimezone=UTC&sslmode=required&user=aad_jbossapp`, which uses the `aad_jbossapp` username without a password.
 > By appending `&authenticationPlugins=com.azure.identity.extensions.jdbc.mysql.AzureMysqlAuthenticationPlugin` to this URL, Azure AD authentication is enabled for the `aad_jbossapp` user.
 
@@ -370,11 +370,11 @@ After you configure the startup script, configure App Service to use Service Con
     8 rows in set (2.06 sec)
     ```
 
-    You should see that a user named `aad_jbossapp` has been added, which uses the `aad_auth` plugin. From JBoss EAP deployed on Azure, you can connect to the MySQL flexible server using the `aad_jbossapp` username without a password.
+    You should see that a `aad_jbossapp` user added that uses the `aad_auth` plugin. From JBoss EAP deployed on Azure, you can connect to the MySQL flexible server using the `aad_jbossapp` username without a password.
 
-## Confirm the data source reference in the code
+## Confirm the datasource reference in the code
 
-Previously, you implemented the database access code by using Java Persistence API (JPA). To configure the data source reference in your application project and access the MySQL database from your application, use the following steps:
+Previously, you implemented the database access code by using Java Persistence API (JPA). To configure the datasource reference in your application project and access the MySQL database from your application, use the following steps:
 
 1. The configuration for the `DataSource` reference was added in the configuration file of the JPA, **src/main/resources/META-INF/persistence.xml**. Check this file to see if the `DataSource` name matches the name used in the configuration. The code already created the JNDI name as `java:jboss/datasources/JPAWorldDataSource`, as in the following example:
 
@@ -418,17 +418,17 @@ In the sample application, you implemented three REST endpoints. To access the a
 
     :::image type="content" source="../media/rest-endpoint-area.png" alt-text="Screenshot of the area endpoint." lightbox="../media/rest-endpoint-area.png":::
 
-1. Specify a `continent` path parameter on the `area` endpoint and the `GET` method to retrieve all of the countries and regions in the specified continent.
+1. To retrieve all of the countries and regions in the specified continent, specify a `continent` path parameter on the `area` endpoint and the `GET` method.
 
     :::image type="content" source="../media/rest-endpoint-continent.png" alt-text="Screenshot of the area endpoint with a continent path parameter." lightbox="../media/rest-endpoint-continent.png":::
 
-1. Specify a `countrycode` path parameter on the `countries` endpoint and the `GET` method to retrieve all of the cities that have a population greater than 1 million within the country or region specified.
+1. To retrieve all of the cities that have a population greater than 1 million within the country or region specified, specify a `countrycode` path parameter on the `countries` endpoint and the `GET` method.
 
     :::image type="content" source="../media/rest-endpoint-cities.png" alt-text="Screenshot of the countries endpoint with the  countrycode path parameter." lightbox="../media/rest-endpoint-cities.png":::
 
 ### [Bash](#tab/bash)
 
-1. Use the following command to retrieve all of the continents, in JSON format:
+1. To retrieve all of the continents, in JSON format, use the following command:
 
     ```bash
     curl https://${WEB_APP_NAME}.azurewebsites.net/area
