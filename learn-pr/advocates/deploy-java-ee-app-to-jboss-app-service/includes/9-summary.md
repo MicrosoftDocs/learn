@@ -7,17 +7,14 @@ In this module, you created resources by using your Azure subscription. You need
 1. Use the following commands to delete all of the resources:
 
     ```azurecli
-    az group delete \
-        --name <name-of-your-MySQL-resource>
-    az group delete \
-        --name <name-of-your-JBoss-EAP-on-Azure-App-Service-resource>
+    az group delete --name <name-of-your-MySQL-resource>
+    az group delete --name <name-of-your-JBoss-EAP-on-Azure-App-Service-resource>
     ```
 
 1. Use the following command to clear out any defaults configured with `az configure` that you no longer want to keep:
 
     ```azurecli
-    az configure \
-        --defaults location=''
+    az configure --defaults location=''
     ```
 
    This command removes the default location configured in a previous unit.
@@ -40,12 +37,12 @@ In this module, you created resources by using your Azure subscription. You need
 - [Jakarta Persistence](https://projects.eclipse.org/projects/ee4j.jpa)
 - [Jakarta JSON Binding](https://projects.eclipse.org/projects/ee4j.jsonb)
 - [Jakarta Contexts and Dependency Injection](https://projects.eclipse.org/projects/ee4j.cdi).
-- [Maven Plugin for Azure Services](https://github.com/microsoft/azure-maven-plugins)
+- [Maven Plugin for Azure Services](https://github.com/microsoft/azure-maven-plugins).
 
 ### MySQL
 
-- [MySQL Community Edition](https://www.mysql.com/products/community/)
+- [MySQL Community Edition](https://www.mysql.com/products/community/).
 - [MySQL Connector Java](https://mvnrepository.com/artifact/mysql/mysql-connector-java)
-- [MySQL sample world database installation](https://dev.mysql.com/doc/world-setup/en/world-setup-installation.html)
-- [Azure Database for MySQL](/azure/mysql?WT.mc_id=java-14033-yoterada)
+- [MySQL sample world database installation](https://dev.mysql.com/doc/world-setup/en/world-setup-installation.html).
+- [Azure Database for MySQL](/azure/mysql?WT.mc_id=java-14033-yoterada).
 - [What is Azure Database for MySQL - Flexible Server?](/azure/mysql/flexible-server/overview)
