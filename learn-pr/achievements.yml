@@ -5450,6 +5450,16 @@ achievements:
   title: Learn how concurrency works in Go
   summary: Understand more about concurrency, one of the most unique features in Go.
   iconUrl: /training/achievements/go/go-concurrency.svg
+- uid: learn.student-evangelism.health-bot-enhanced.badge
+  type: badge
+  title: Enhanced Azure Health Bot
+  summary: In the previous module, you created a basic informative bot without any interrupting or breaking scenario involved. This module shows you how to enhance the bot with advanced functionalities.
+  iconUrl: /training/achievements/student-evangelism/health-bot-enhanced.svg
+- uid: learn.student-evangelism.health-bot-channelized-bot.badge
+  type: badge
+  title: Channelized Azure Health Bot
+  summary: In the previous module, you integrated a bot with a database hosted on Azure. This module shows you how to make the bot available on Teams and build a basic app.
+  iconUrl: /training/achievements/student-evangelism/health-bot-channelized-bot.svg
 - uid: learn.student-evangelism.health-bot-case-studies.badge
   type: badge
   title: Azure Health Bot case studies
