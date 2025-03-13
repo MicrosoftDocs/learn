@@ -1,6 +1,6 @@
 ## What is Vector Search Similarity?
 
-Vector Search Similarity is a technique used to find similar items in a dataset by comparing their vector representations. Vector similarity is commonly calculated using distance metrics, such as Euclidean distance or `cosine` similarity. In the context of AI and machine learning, vector representations - or embeddings - are numerical representations of data points, such as words, images, or user queries. These vectors capture the semantic meaning of the data points, enabling efficient similarity searches.
+Vector Search Similarity is a technique used to find similar items in a dataset by comparing their vector representations. Vector similarity is commonly calculated using distance metrics, such as Euclidean distance or `cosine` similarity. In the context of AI and machine learning, vector representations or embeddings are numerical representations of data points, such as words, images, or user queries. These vectors capture the semantic meaning of the data points, enabling efficient similarity searches.
 
 For example, in a question-answering system, user queries can be converted into vector embeddings. These embeddings can then be compared to a database of precomputed embeddings of previous prompts and answers to find the most similar ones. This process is known as vector similarity search.
 
@@ -18,7 +18,7 @@ The `pgvector` extension includes the following key features:
 
 The `pgvector` extension adds an open-source vector similarity search to PostgreSQL.
 
-Before you can enable `pgvector` on your Azure Database for PostgreSQL flexible server instance, you need to add it to your allowlist as described in [how to use PostgreSQL extensions](/azure/postgresql/extensions/how-to-allow-extensions#allow-extensions). To check whether you added it correctly, use the following command: `SHOW azure.extensions;`
+Before you can enable `pgvector` on your Azure Database for PostgreSQL flexible server instance, you need to add it to your allowlist as described in [Allow extensions](/azure/postgresql/extensions/how-to-allow-extensions). To determine whether you added it correctly, use the following command: `SHOW azure.extensions;`
 
 > [!IMPORTANT]
 > Although the PostgreSQL community often refers to this extension as `pgvector`, the name of the binary and the extension itself is `vector`. That is the name you must use in the allowlist and when you create it in PostgreSQL via the `CREATE EXTENSION` command.
@@ -40,9 +40,9 @@ ORDER BY embedding <-> '[0.1,0.2,...]'::vector
 LIMIT 3;
 ```
 
-## Implementing pgvector with Spring AI
+## The Spring AI implementation of pgvector
 
-Spring AI includes an abstraction of `pvector` named `VectorStore`. This implementation requires 2 other PostgreSQL extensions: `hstore` and `uuid-ossp`.
+Spring AI includes an abstraction of `pgvector` named `VectorStore`. This implementation requires two other PostgreSQL extensions: `hstore` and `uuid-ossp`.
 
 On startup, Spring Boot installs the required extensions and creates the required `vector_store` table with an index if doesn't already exist.
 

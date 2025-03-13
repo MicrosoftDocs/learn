@@ -134,7 +134,7 @@ export MANAGED_IDENTITY_ID=$(az containerapp show \
 echo "Managed Identity ID: $MANAGED_IDENTITY_ID"
 ```
 
-To authorize the managed identity of your container app to access the PostgreSQL Flexible Server instance, use the following command:
+To authorize the managed identity of your container app to access the Azure Database for PostgreSQL flexible server instance, use the following command:
 
 ```azurecli
 az postgres flexible-server ad-admin create \

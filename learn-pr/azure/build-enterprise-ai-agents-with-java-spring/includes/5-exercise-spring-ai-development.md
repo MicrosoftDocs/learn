@@ -6,6 +6,8 @@ Before you start building an AI-powered application, set up your development env
 
 ## Set up your local environment
 
+Use the following steps to set up your environment:
+
 1. Use the following command to confirm that the Java Development Kit (JDK) version 17 or greater is installed:
 
    ```bash
@@ -341,36 +343,36 @@ public class RagController {
 
 #### Test the RAG application
 
-With these changes in place, test the implementation by running:
+With these changes in place, test the implementation by using the following command:
 
 ```bash
 mvn spring-boot:run
 ```
 
-Test the new REST endpoint either from a browser or via a `curl` command:
+Test the new REST endpoint either from a browser or by using the following command:
 
 ```bash
 curl -G "http://localhost:8080/api/rag" --data-urlencode "query=What is pgvector?"
 ```
 
-You should see a valid response:
+You should see a valid response similar to the following example:
 
 ```output
 pgvector is an open-source PostgreSQL extension that enables efficient storage, indexing,
 and querying of vector embeddings within a PostgreSQL database.
 ```
 
-Next, try asking:
+Next, try the following command:
 
 ```bash
 curl -G "http://localhost:8080/api/rag" --data-urlencode "query=How does QuestionAnswerAdvisor work in Spring AI?"
 ```
 
-Notice that while the answer may appear valid, it might include phrasing that indicates it is a reasoned guess.
+While the answer might appear valid, it might include phrasing that indicates it's a reasoned guess.
 
 #### Test the application with extra knowledge
 
-You now provide extra knowledge by adding the following documents to the vector store. Create a new file named **DocumentService.java** within the **service** directory:
+Next, provide extra knowledge by adding the following documents to the vector store. Create a new file named **DocumentService.java** within the **service** directory, and then add the following contents:
 
 ```java
 package com.example.springaiapp.service;
@@ -428,13 +430,13 @@ public class DocumentService {
 }
 ```
 
-Test these changes by running:
+Test these changes by using the following commands:
 
 ```bash
 mvn spring-boot:run
 ```
 
-Then ask:
+Then, ask a question by using the following command:
 
 ```bash
 curl -G "http://localhost:8080/api/rag" --data-urlencode "query=How does QuestionAnswerAdvisor work in Spring AI?"
@@ -444,4 +446,4 @@ You should now see an answer that clearly explains the role of `QuestionAnswerAd
 
 ## Unit summary
 
-In this unit, you successfully built a Retrieval Augmented Generation (RAG) application using Spring AI, Azure OpenAI, and Spring AI's `VectorStore`. The module exposes the RAG capability via dedicated REST endpoint through the `RagController` class.
+In this unit, you successfully built a RAG application using Spring AI, Azure OpenAI, and Spring AI's `VectorStore`. The module exposes the RAG capability via a dedicated REST endpoint through the `RagController` class.

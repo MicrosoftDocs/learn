@@ -1,29 +1,27 @@
-Spring AI is a powerful framework that simplifies the integration of AI capabilities into Java applications. In this module, you learn how to build an AI-powered application and AI Agents, using Spring AI with Azure OpenAI, and deploy it to Azure Container Apps.
+Spring AI is a powerful framework that simplifies the integration of AI capabilities into Java applications. In this module, you learn how to build an AI-powered application and AI agents, using Spring AI with Azure OpenAI, and deploy to Azure Container Apps.
 
 ## What is Spring AI?
 
 Spring AI provides the following abstractions and tools that make it easy to work with various AI models and services:
 
-- ChatClient API: Core abstraction for interacting with Large Language Models (LLMs).
-- Multiple AI Model providers: Support for all major AI Model providers, including Azure OpenAI.
-- Embeddings: Generate vector embeddings for semantic search.
-- Vector storage integration: Built-in support for vector databases, such as `pgvector`.
-- Advisors API: Encapsulates Generative AI patterns, for example, to implement Retrieval Augmented Generation (RAG).
+- The ChatClient API: a core abstraction for interacting with large language models (LLMs).
+- Multiple AI model providers: support for all major AI model providers, including Azure OpenAI.
+- Embeddings: generate vector embeddings for semantic search.
+- Vector storage integration: built-in support for vector databases, such as `pgvector`.
+- Advisors API: encapsulates generative AI patterns - for example, to implement retrieval-augmented generation (RAG).
 
-## Sample use cases
+## RAG implementation
 
-### RAG implementation
-
-A retrieval-augmented generation (RAG) application typically has the following capabilities:
+A RAG application typically has the following capabilities:
 
 - Converts user questions into vector embeddings.
 - Finds similar previous prompts and responses using vector similarity search.
 - Uses found responses as context for generating responses.
 - Stores interactions for future reference.
 
-### Agents and workflows
+## Agents and workflows
 
-Spring AI also empowers you to build dynamic AI Agents and orchestrated workflows. While various patterns exist - like chain, parallelization, and routing - this module focuses exclusively on the *Evaluator-Optimizer Workflow*.
+Spring AI also empowers you to build dynamic AI agents and orchestrated workflows. While various patterns exist - like chain, parallelization and routing - this module focuses exclusively on the *Evaluator-Optimizer* workflow.
 
 This pattern iteratively refines outputs through a generator-evaluator loop, ensuring high-quality and adaptive AI responses.
 

@@ -1,8 +1,8 @@
-In this exercise, you create Azure Database for PostgreSQL Flexible Server, enable `pgvector` extension, and create required database structure for use with Spring AI `VectorStore` abstraction.
+In this exercise, you create an Azure Database for PostgreSQL flexible server instance, enable the `pgvector` extension, and create the required database structure for use with the Spring AI `VectorStore` abstraction.
 
-## Sign in to Azure via Azure CLI
+## Sign in to Azure via the Azure CLI
 
-Sign in to Azure:
+Use the following command to sign in to Azure:
 
 ```azurecli
 az login
@@ -10,7 +10,7 @@ az login
 
 ## Set parameter values
 
-The following values are used in subsequent commands to create the database and required resources. Server names need to be globally unique across all of Azure so the `$RANDOM` function is used to create the server name. Change the location as appropriate for your environment.
+Use the following commands to set some environment variables. These values are passed to subsequent commands to create the database and required resources. The `$RANDOM` function is used to provide part of the server name, which must be globally unique across all of Azure. Change the location as appropriate for your environment.
 
 ```bash
 export ID=$RANDOM
@@ -19,28 +19,28 @@ export RESOURCE_GROUP="spring-ai-postgresql-rg"
 export DB_SERVER_NAME="spring-ai-postgresql-server-$ID"
 ```
 
-You can limit access by specifying to the PostgreSQL server external IP appropriate IP address values for your environment. Use the public IP address of the computer you're using to restrict access to the server to only your IP address. Initialize the `start` and `end` IP values as follows:
+You can limit access to the PostgreSQL server external IP address by specifying an appropriate IP address value for your environment. Use the public IP address of the computer you're using so that only your IP address can access the server. Use the following commands to set an environment variable for later use when initializing the `start` and `end` IP values:
 
 ```bash
 export PUBLIC_IP=$(curl -s ipinfo.io/ip)
-echo "Start IP: $$PUBLIC_IP"
+echo "Start IP: $PUBLIC_IP"
 ```
 
 > [!NOTE]
-> The IP address may change and the corresponding firewall rule needs to be updated accordingly
+> The IP address can change. If this happens, the corresponding firewall rule must be updated accordingly.
 
 > [!TIP]
-> This command should work in most Linux distributions and Git Bash. If it doesn't work, you can alternatively get your public IP address using [https://whatismyipaddress.com/](https://whatismyipaddress.com/)
+> This command should work in most Linux distributions and in Git Bash. If it doesn't work, you can alternatively get your public IP address using [https://whatismyipaddress.com/](https://whatismyipaddress.com/)
 
 ### Create a resource group
 
-Create a resource group with the following command. An Azure resource group is a logical container into which Azure resources are deployed and managed.
+Create a resource group by using the following command. An Azure resource group is a logical container into which Azure resources are deployed and managed.
 
 ```azurecli
 az group create --name $RESOURCE_GROUP --location $LOCATION
 ```
 
-### Create an Azure Database for PostgreSQL Server
+### Create an Azure Database for PostgreSQL flexible server instance
 
 Use the following command to create a database instance for development purposes. The *burstable* tier is a cost-effective tier for workloads that don't require consistent performance.
 
@@ -56,7 +56,7 @@ az postgres flexible-server create \
     --version 16
 ```
 
-This command takes a few minutes to complete. After it completes, output similar to the following example is displayed:
+This command takes a few minutes to complete. After it completes, it displays output similar to the following example:
 
 ```json
 {
@@ -131,7 +131,7 @@ export PGHOST=$(az postgres flexible-server show \
     | tr -d '\r')
 ```
 
-Use the following command to get access token for your user ID:
+Use the following command to get an access token for your user ID:
 
 ```azurecli
 export PGPASSWORD="$(az account get-access-token \
