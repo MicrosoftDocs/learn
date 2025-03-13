@@ -2,13 +2,13 @@ In this exercise, you create your Azure Database for MySQL - Flexible Server ins
 
 ## Get the sample application and script
 
-1. Clone the sample application and shell script from the GitHub repository by using the following command:
+Clone the sample application and shell script from the GitHub repository by using the following command:
 
-    ```bash
-    git clone https://github.com/MicrosoftDocs/mslearn-jakarta-ee-azure.git
-    ```
+```bash
+git clone https://github.com/MicrosoftDocs/mslearn-jakarta-ee-azure.git
+```
 
-Cloning the project produces the following file structure in the directory that you cloned in:
+Cloning the project produces the following file structure:
 
 ```
 ├── LICENSE
@@ -52,7 +52,7 @@ Cloning the project produces the following file structure in the directory that 
 
 ## Sign in to Azure
 
-If you haven't already done so, sign in to Azure by using the following command:
+If you haven't signed in to Azure, sign in by using the following command:
 
 ```azurecli
 az login
@@ -62,55 +62,56 @@ az login
 
 The commands executed by the script used in this module expect a `--location` option. Specify a default value for this option by using the following command, replacing `<desired-location>` with an appropriate region:
 
-```azurecli
-az configure \
-    --defaults location=<desired-location>
-```
-
 > [!NOTE]
 > We advise you to use the same region you used for deploying your Jakarta EE application.
+
+```azurecli
+az configure --defaults location=<desired-location>
+```
 
 ## Create an Azure Database for MySQL - Flexible Server instance
 
 1. Navigate to the **mslearn-jakarta-ee-azure** directory, and use the following command to create your Azure Database for MySQL Flexible Server instance:
 
     > [!IMPORTANT]
-    > Run the following command in an IPv4 environment. If your environment has an IPv6 address, the command will fail because the firewall configuration for it doesn't support IPv6 addresses yet.
+    > Run the following command in an IPv4 environment. If your environment has an IPv6 address, the command fails because the firewall configuration for it doesn't support IPv6 addresses yet.
 
     ```bash
     ./setup_mysql.sh flexible
     ```
 
-Note the key values that appear in the output of the command. You use those values in later steps.
+    > [!NOTE]
+    > If an error occurs during the execution of the script, the process stops in the middle of the execution. If an error occurs during `Granting the User.Read.All, GroupMember.Read.All, and Application.Read.All permissions to the user managed identity`, sign in to the Azure CLI again with a user that has `Azure AD administrator` privileges and then re-run the script.
 
-```text
-[INFO] -------------------------------------------------------
-[INFO] Azure Database for MySQL Setup Completed SUCCESS
-[INFO] -------------------------------------------------------
-[INFO] 1. Please copy the following value into your temporal file
-[INFO]
-[INFO] RESOURCE GROUP is $RESOURCE_GROUP_NAME
-[INFO] MySQL HOSTNAME is $MYSQL_SERVER_INSTANCE.mysql.database.azure.com
-[INFO] MySQL ADMIN_USERNAME is $CURRENT_AZ_LOGIN_USER_NAME#EXT#$CURRENT_AZ_LOGIN_USER_NAME
-[INFO]
-[INFO]
-[INFO] 2. Please execute the following command to connect to the Server.
-[INFO]
-[INFO] mysql -h $MYSQL_SERVER_INSTANCE.mysql.database.azure.com --user $CURRENT_AZ_LOGIN_USER_NAME#EXT#$CURRENT_AZ_LOGIN_USER_NAME --enable-cleartext-plugin --password=$(az account get-access-token --resource-type oss-rdbms --output tsv --query accessToken)
-[INFO]
-[INFO] Or you can use the following Azure CLI command
-[INFO]
-[INFO] az mysql flexible-server connect -g $RESOURCE_GROUP_NAME -n $MYSQL_SERVER_INSTANCE -u azureuser -p '!yhYrNhwQ27640' --interactive
-[INFO] Password: [!yhYrNhwQ27640]
-[INFO] 
-[INFO] 
-[INFO] 3. Clean up Resource (Delete MySQL DB)
-[INFO] az group delete -n $RESOURCE_GROUP_NAME
-[INFO] -------------------------------------------------------
-```
+    The following output is typical:
 
-> [!NOTE]
-> If an error occurs during the execution of the script, the process stops in the middle of the execution. If an error occurs during `Granting the User.Read.All, GroupMember.Read.All, and Application.Read.All permissions to the user managed identity`, sign in to the Azure CLI again with a user that has `Azure AD administrator` privileges and then re-run the script.
+    ```output
+    [INFO] -------------------------------------------------------
+    [INFO] Azure Database for MySQL Setup Completed SUCCESS
+    [INFO] -------------------------------------------------------
+    [INFO] 1. Please copy the following value into your temporal file
+    [INFO]
+    [INFO] RESOURCE GROUP is $RESOURCE_GROUP_NAME
+    [INFO] MySQL HOSTNAME is $MYSQL_SERVER_INSTANCE.mysql.database.azure.com
+    [INFO] MySQL ADMIN_USERNAME is $CURRENT_AZ_LOGIN_USER_NAME#EXT#$CURRENT_AZ_LOGIN_USER_NAME
+    [INFO]
+    [INFO]
+    [INFO] 2. Please execute the following command to connect to the Server.
+    [INFO]
+    [INFO] mysql -h $MYSQL_SERVER_INSTANCE.mysql.database.azure.com --user $CURRENT_AZ_LOGIN_USER_NAME#EXT#$CURRENT_AZ_LOGIN_USER_NAME --enable-cleartext-plugin --password=$(az account get-access-token --resource-type oss-rdbms --output tsv --query accessToken)
+    [INFO]
+    [INFO] Or you can use the following Azure CLI command
+    [INFO]
+    [INFO] az mysql flexible-server connect -g $RESOURCE_GROUP_NAME -n $MYSQL_SERVER_INSTANCE -u azureuser -p '!yhYrNhwQ27640' --interactive
+    [INFO] Password: [!yhYrNhwQ27640]
+    [INFO] 
+    [INFO] 
+    [INFO] 3. Clean up Resource (Delete MySQL DB)
+    [INFO] az group delete -n $RESOURCE_GROUP_NAME
+    [INFO] -------------------------------------------------------
+    ```
+
+1. Note the key values that appear in the output, since you use these values in later steps.
 
 ## Get data from the sample database
 
@@ -128,7 +129,7 @@ In this module, you use a sample database called `world` from the official MySQL
     unzip world-db.zip
     ```
 
-1. Access the SQL file by using the following commands:
+1. List the SQL file by using the following commands:
 
     ```bash
     cd world-db
@@ -156,32 +157,7 @@ To sign in to the database and view the available usernames and plugins, use the
         --interactive 
     ```
 
-    When the system prompts you, enter a password.
-
-    ```bash
-    Password:
-    ```
-
-### [MySQL](#tab/mysql)
-
-1. The **setup_mysql.sh** script adds an admin user who can connect using the access token of the user currently signed in to the Azure CLI. Register that user as an admin user. For detailed steps, see the [`CreateUserManagedIdentity()`](https://github.com/MicrosoftDocs/mslearn-jakarta-ee-azure/blob/main/setup_mysql.sh#L145-L208) function in the [setup_mysql.sh](https://github.com/MicrosoftDocs/mslearn-jakarta-ee-azure/blob/main/setup_mysql.sh) script.
-
-1. To connect to the Azure Database for MySQL - Flexible Server instance, use the following command:
-
-    ```bash
-     mysql \
-         --host $MYSQL_SERVER_INSTANCE.mysql.database.azure.com \
-         --user CURRENT_AZ_LOGIN_USER_NAME#EXT#@CURRENT_AZ_LOGIN_USER_NAME \
-         --enable-cleartext-plugin \
-         --password=$(az account get-access-token --resource-type oss-rdbms --output tsv --query accessToken)
-    ```
-
-    > [!NOTE]
-    > Starting from MySQL version 8, the default authentication plug-in is `caching_sha2_password`. Therefore, when you try to authenticate using only the username and password with the `mysql` command, you encounter the following error:
-    > `ERROR 2059 (HY000): Authentication plugin 'mysql_native_password' cannot be loaded:`
-    > To address this, you use the `az mysql flexible-server ad-admin create` command to create an administrative user who can access the database with the user already signed in to the database.
-
----
+1. When the system prompts you, enter a password.
 
 1. List the available usernames and plugins by using the following command:
 
@@ -205,9 +181,55 @@ To sign in to the database and view the available usernames and plugins, use the
     +----------------------------------+-----------+-----------------------+
     ```
 
+### [MySQL](#tab/mysql)
+
+1. The **setup_mysql.sh** script adds an admin user who can connect using the access token of the user currently signed in to the Azure CLI. Register that user as an admin user. For detailed steps, see the [`CreateUserManagedIdentity()`](https://github.com/MicrosoftDocs/mslearn-jakarta-ee-azure/blob/main/setup_mysql.sh#L145-L208) function in the [setup_mysql.sh](https://github.com/MicrosoftDocs/mslearn-jakarta-ee-azure/blob/main/setup_mysql.sh) script.
+
+1. To connect to the Azure Database for MySQL - Flexible Server instance, use the following command:
+
+    ```bash
+     mysql \
+         --host $MYSQL_SERVER_INSTANCE.mysql.database.azure.com \
+         --user CURRENT_AZ_LOGIN_USER_NAME#EXT#@CURRENT_AZ_LOGIN_USER_NAME \
+         --enable-cleartext-plugin \
+         --password=$(az account get-access-token --resource-type oss-rdbms --output tsv --query accessToken)
+    ```
+
+    > [!NOTE]
+    > Starting from MySQL version 8, the default authentication plug-in is `caching_sha2_password`. Therefore, when you try to authenticate using only the username and password with the `mysql` command, you encounter the following error:
+    > `ERROR 2059 (HY000): Authentication plugin 'mysql_native_password' cannot be loaded:`
+    > To address this, you use the `az mysql flexible-server ad-admin create` command to create an administrative user who can access the database with the user already signed in to the database.
+
+1. List the available usernames and plugins by using the following command:
+
+    ```sql
+    SELECT user, host, plugin FROM mysql.user;
+    ```
+
+    The following output is typical:
+
+    ```output
+    +----------------------------------+-----------+-----------------------+
+    | user                             | host      | plugin                |
+    +----------------------------------+-----------+-----------------------+
+    | azureuser                        | %         | mysql_native_password |
+    | $CURRENT_AZ_LOGIN_USER_NAME#EXT#@| %         | aad_auth              |
+    | azure_superuser                  | 127.0.0.1 | mysql_native_password |
+    | azure_superuser                  | localhost | mysql_native_password |
+    | mysql.infoschema                 | localhost | caching_sha2_password |
+    | mysql.session                    | localhost | caching_sha2_password |
+    | mysql.sys                        | localhost | caching_sha2_password |
+    +----------------------------------+-----------+-----------------------+
+    ```
+
+---
+
 ## Create a database and tables for your application
 
 Use the following steps to create a database for your application and to verify its details:
+
+    > [!TIP]
+    > You can also use the `mysql` command to create a database and tables from a script file, but that command takes a long time to complete. We therefore recommend using `az mysql flexible-server execute`.
 
 1. Use the following command to create the database and tables:
 
@@ -219,16 +241,13 @@ Use the following steps to create a database for your application and to verify 
         --file-path -f "./world-db/world.sql"
     ```
 
-    > [!TIP]
-    > You can also use the `mysql` command to create a database and tables from a script file, but that command takes a long time to complete, therefore, we recommend using `az mysql flexible-server execute`.
-
 1. Confirm that the databases and tables are in your server by using the following command:
 
    ```azurecli
     az mysql flexible-server connect \
         --name $MYSQL_SERVER_NAME \
         --admin-user $MYSQL_USER \
-        --database-name word \
+        --database-name world \
         --interactive
 
 1. When the system prompts you, enter a password.
@@ -324,6 +343,8 @@ Use the following steps to view the contents of the `world` database:
     ```sql
     select code,name from country where Continent='Asia';
     ```
+
+    The following output is typical:
 
     ```output
     +------+----------------------+
