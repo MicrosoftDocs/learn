@@ -5450,6 +5450,16 @@ achievements:
   title: Learn how concurrency works in Go
   summary: Understand more about concurrency, one of the most unique features in Go.
   iconUrl: /training/achievements/go/go-concurrency.svg
+- uid: learn.student-evangelism.health-bot-introduction.badge
+  type: badge
+  title: Introduction to Azure Health Bot
+  summary: Azure Health Bot enables users to build a health bot by using built-in scenarios or custom ones. The information that each instance of the Health Bot service handles is privacy protected to HIPAA standards. It also meets Microsoft's high standards for privacy and security.
+  iconUrl: /training/achievements/student-evangelism/health-bot-introduction.svg
+- uid: learn.student-evangelism.health-bot-integrated-bot.badge
+  type: badge
+  title: Integrate Azure Health Bot with a database
+  summary: Learn how to integrate an advanced bot with a database.
+  iconUrl: /training/achievements/student-evangelism/health-bot-integrated-bot.svg
 - uid: learn.student-evangelism.health-bot-enhanced.badge
   type: badge
   title: Enhanced Azure Health Bot
