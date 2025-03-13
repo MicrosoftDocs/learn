@@ -5325,6 +5325,26 @@ achievements:
   title: Write automated tests
   summary: Learn about the types of testing you can do with Rust.
   iconUrl: /training/achievements/rust-automated-tests.svg
+- uid: learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.badge
+  type: badge
+  title: Introduction to NVIDIA DeepStream Graph Composer with Microsoft Azure
+  summary: In this module, you'll learn how to set up and configure the NVIDIA DeepStream 6.0 Graph Composer on an X86-based Ubuntu 18.04 system to enable rapid development of Intelligent Video Analytics application pipelines for deployment to cloud and edge-capable devices.
+  iconUrl: /training/achievements/introduction-nvidia-deepstream-graph-composer-azure.svg
+- uid: learn.nvidia.setup-configure-nvidia-deepstream-development.badge
+  type: badge
+  title: Set up and configure an NVIDIA DeepStream development environment
+  summary: In this module, you'll learn how to set up and configure an x86-based Ubuntu 18.04 system to host an NVIDIA DeepStream development environment.
+  iconUrl: /training/achievements/setup-configure-nvidia-deepstream-development.svg
+- uid: learn.nvidia-deepstream-development-azure.trophy
+  type: trophy
+  title: NVIDIA DeepStream development with Microsoft Azure
+  summary: With NVIDIA DeepStream, you can seamlessly develop optimized Intelligent Video Applications that can consume multiple video, image, and audio sources. You can also apply single or cascading inference operations to video frames in real-time, and transmit inference results to the cloud for archiving or additional processing. Learn how to develop custom DeepStream applications backed by services in Microsoft Azure and securely deploy NVIDIA DeepStream-based AI workloads to NVIDIA-powered IoT Edge devices.
+  iconUrl: /training/achievements/nvidia-deepstream-development-with-microsoft-azure.svg
+- uid: learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure.badge
+  type: badge
+  title: NVIDIA DeepStream embedded device deployment with Azure
+  summary: In this module, you'll publish and deploy an ARM-based DeepStream container workload to NVIDIA embedded hardware by using Azure IoT Edge.
+  iconUrl: /training/achievements/nvidia-deepstream-embedded-device-deployment-azure.svg
 - uid: learn.nvidia.use-automl-train-labeled-dataset-develop-production-model.badge
   type: badge
   title: Use AutoML to train a labeled dataset and develop a production model
@@ -5385,3 +5405,48 @@ achievements:
   title: Get started with blockchain development
   summary: This learning path introduces you to blockchain and development on the Ethereum platform. Discover what skills are necessary to learn to begin building your own blockchain networks at scale.
   iconUrl: /training/achievements/ethereum-blockchain-development.svg
+- uid: learn.language.go-write-test-program.badge
+  type: badge
+  title: Write and test a program in Go
+  summary: By using what you've learned about Go, write and test a complete program.
+  iconUrl: /training/achievements/go/go-write-test-program.svg
+- uid: learn.language.go-variables-functions-packages.badge
+  type: badge
+  title: Understand how to use packages, variables, and functions in Go
+  summary: Learn about the basic data types in Go and about how to declare variables, write functions, and use packages.
+  iconUrl: /training/achievements/go/go-variables-functions-packages.svg
+- uid: learn.language.go-methods-interfaces.badge
+  type: badge
+  title: Use methods and interfaces in Go
+  summary: Learn about best practices for writing methods and interfaces in Go.
+  iconUrl: /training/achievements/go/go-methods-interfaces.svg
+- uid: learn.language.go-get-started.badge
+  type: badge
+  title: Get started with Go
+  summary: In this module, you'll start taking your first steps with Go.
+  iconUrl: /training/achievements/go/go-get-started.svg
+- uid: learn.language.go-errors-logs.badge
+  type: badge
+  title: Implement error handling and logging in Go
+  summary: Understand how to handle errors and log helpful information in your Go programs.
+  iconUrl: /training/achievements/go/go-errors-logs.svg
+- uid: learn.language.go-data-types.badge
+  type: badge
+  title: Use data types and structs, arrays, slices, and maps in Go
+  summary: Learn about structs, arrays, slices, and maps. Understand the difference between them and when to use one type over the other.
+  iconUrl: /training/achievements/go/go-data-types.svg
+- uid: learn.languages.go-first-steps.trophy
+  type: trophy
+  title: Take your first steps with Go
+  summary: Interested in learning a programming language but aren't sure where to start? Start here! Learn the basic syntax and thought processes required to build simple programs using Go.
+  iconUrl: /training/achievements/go/go-first-steps.svg
+- uid: learn.language.go-control-flow.badge
+  type: badge
+  title: Use control flows in Go
+  summary: Learn how to use control flows in Go.
+  iconUrl: /training/achievements/go/go-control-flow.svg
+- uid: learn.language.go-concurrency.badge
+  type: badge
+  title: Learn how concurrency works in Go
+  summary: Understand more about concurrency, one of the most unique features in Go.
+  iconUrl: /training/achievements/go/go-concurrency.svg

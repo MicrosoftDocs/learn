@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-agent-with-custom-tools.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction to building an agent with custom tools."
+  ms.date: 3/11/2025
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

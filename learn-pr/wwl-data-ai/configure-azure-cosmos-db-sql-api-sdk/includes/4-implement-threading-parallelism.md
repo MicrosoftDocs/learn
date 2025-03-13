@@ -261,7 +261,7 @@ Avoid blocking asynchronous execution by improperly using `.then()` or `.catch()
 
 The JavaScript SDK includes built-in iterators to retrieve query results efficiently without blocking other operations. Avoid eagerly collecting all query results, as it can consume a large amount of memory and block other operations.
 
-### Inefficient example:
+### Inefficient example
 
 ```javascript
 const results = await container.items
@@ -270,7 +270,7 @@ const results = await container.items
 console.log(results.resources);
 ```
 
-### Efficient example using an iterator:
+### Efficient example using an iterator
 
 ```javascript
 const iterator = container.items.query(

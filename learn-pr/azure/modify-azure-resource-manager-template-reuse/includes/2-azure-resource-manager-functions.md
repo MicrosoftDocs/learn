@@ -6,7 +6,7 @@ To solve this problem, you decide to create an expression by using [ARM template
 
 ARM template functions add flexibility to your ARM template by dynamically getting values during deployment.
 
-To understand functions, you first need to understand expressions. Expressions are values that are evaluated when the template is deployed. They start and end with brackets `[]`, and can return a string, integer, Boolean, array, or object.
+To understand functions, you first need to understand expressions. Expressions are values that are evaluated when the template is deployed. They start and end with brackets `[]` and can return a string, integer, Boolean, array, or object.
 
 In the previous module in this learning path, you already worked with expressions in your Resource Manager template. For example, you used:
 
