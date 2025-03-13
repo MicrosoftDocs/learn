@@ -1,4 +1,4 @@
-The steps in this unit illustrate how to deploy your Jakarta EE application to JBoss EAP on Azure App Service, and how to connect to the database. You execute these steps in the next unit.
+The steps in this unit illustrate how to deploy your Jakarta EE application to Red Hat JBoss Enterprise Application Platform (JBoss EAP) on Azure App Service, and how to connect to the database. You execute these steps in the next unit.
 
 ## Create a Jakarta EE application
 
@@ -11,7 +11,7 @@ In this module, you use a sample Jakarta EE application that uses the following 
 - JPA 3.1
 
 > [!TIP]
-> The deployment procedure introduced here is similar to that used for most Jakarta EE web applications.
+> The deployment procedure introduced here is similar to the procedure used for most Jakarta EE web applications.
 
 ## Configure the application project for deploying to Azure by using Maven
 
@@ -41,25 +41,25 @@ You can use the `./mvnw package` command to build a Web Application Archive (WAR
 
 After you create your Maven artifact, you can run the `deploy` command in the Maven Plugin for Azure App Service to deploy the application to JBoss EAP. This command creates an Azure resource group and an instance of JBoss EAP based on the preceding plug-in settings. This one command does everything from creating instances to deploying the Java web application.
 
- All of the Azure Maven plug-ins share a common set of configurations. For the complete list of configurations, see the plug-in reference documentation. For more information, see [Common Configurations](https://github.com/microsoft/azure-maven-plugins/wiki/Common-Configuration). For more information about configurations specific to App Service, see [Azure Web App: Configuration Details](https://github.com/microsoft/azure-maven-plugins/wiki/Azure-Web-App:-Configuration-Details).
+ All of the Azure Maven plug-ins share a common set of configurations. For the complete list of configurations, see the plug-in reference documentation. For more information, see [Common Configuration](https://github.com/microsoft/azure-maven-plugins/wiki/Common-Configuration). For more information about configurations specific to App Service, see [Azure Web App: Configuration Details](https://github.com/microsoft/azure-maven-plugins/wiki/Azure-Web-App:-Configuration-Details).
 
 ## Configure a database connection by using a data source and JNDI
 
-Your application requires a binding to a data source. We'll configure the application to use the MySQL database that we created in the previous units. To connect to the database from JBoss EAP, you need to configure a `DataSource` object, which allows an application to connect to the database.
+Your application requires a binding to a data source. In the next unit, you configure the application to use the MySQL database that we created in the previous units. To connect to the database from JBoss EAP, you need to configure a `DataSource` object, which allows an application to connect to the database.
 
-You'll configure `DataSource` to connect to the Azure Database for MySQL instance that you created earlier by using the following settings:
+You configure `DataSource` to connect to the Azure Database for MySQL instance that you created earlier by using the following settings:
 
-| Data source configuration | value |
-| --- | --- |
-| `DataSource Name` | `JPAWorldDataSourceDS`  |
-| `JNDI Name` | `java:jboss/datasources/JPAWorldDataSource` |
-| `Connection URL`| `${MYSQL_CONNECTION_URL}` |
-| `JDBC Driver Name`| `$PACKAGE_NAME.war_com.mysql.cj.jdbc.Driver_9_2` |
-| `Minimum Pool Size` | `5` |
-| `Maximum Pool Size` | `20` |
-| `JDBC Class Name`| `com.mysql.cj.jdbc.Driver` |
+| Data source configuration | value                                            |
+|---------------------------|--------------------------------------------------|
+| `DataSource Name`         | `JPAWorldDataSourceDS`                           |
+| `JNDI Name`               | `java:jboss/datasources/JPAWorldDataSource`      |
+| `Connection URL`          | `${MYSQL_CONNECTION_URL}`                        |
+| `JDBC Driver Name`        | `$PACKAGE_NAME.war_com.mysql.cj.jdbc.Driver_9_2` |
+| `Minimum Pool Size`       | `5`                                              |
+| `Maximum Pool Size`       | `20`                                             |
+| `JDBC Class Name`         | `com.mysql.cj.jdbc.Driver`                       |
 
-We used a Java Naming and Directory Interface (JNDI) name of `java:jboss/datasources/JPAWorldDataSource` for the data source. JNDI is useful in multiple environments to change to a different database without code changes.
+You used a Java Naming and Directory Interface (JNDI) name of `java:jboss/datasources/JPAWorldDataSource` for the data source. JNDI is useful in multiple environments to change to a different database without code changes.
 
 ## Access the application
 
