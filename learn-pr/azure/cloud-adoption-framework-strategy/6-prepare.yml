@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.cloud-adoption-framework-strategy.prepare
 metadata:
-  title: Prepare Your Organization
-  description: Learn how to prepare your organization for a successful cloud adoption.
+  title: Prepare For Organizational Alignment
+  description: Learn how to align your organization so that you have support to achieve your objectives and strategies for cloud adoption.
   ms.date: 10/10/2023
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit
-title: Prepare your organization
+title: Prepare for organizational alignment
 durationInMinutes: 10
 content: |
   [!include[](includes/6-prepare.md)]
