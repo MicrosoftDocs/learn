@@ -1,0 +1,38 @@
+### YamlMime:LearningPath
+uid: learn.wwl.purview-implement-information-protection
+metadata:
+  title: 'Implement Information Protection'
+  description: 'Organizations need to classify, label, and protect sensitive data to prevent exposure and ensure compliance. Microsoft Purview solutions provide data classification, sensitivity labels, and encryption to secure information across Microsoft 365 and on-premises storage.'
+  ms.date: 03/13/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: learning-path
+title: 'Implement Information Protection'
+prerequisites: |
+  - Familiarity with Microsoft Purview compliance solutions
+  - Basic understanding of data protection and security concepts
+summary: |
+  Organizations need effective information protection to prevent data exposure, ensure compliance, and maintain security across cloud and on-premises environments. Microsoft Purview enables classification, labeling, and encryption to safeguard sensitive data across Microsoft 365 services, Exchange, and on-premises storage.
+iconUrl: /training/achievements/implement-information-protection.svg
+levels:
+- intermediate
+roles:
+- auditor
+- administrator
+- ip-admin
+products:
+- microsoft-purview
+subjects:
+- security
+modules:
+- learn.wwl.purview-protect-sensitive-data
+- learn-m365.m365-compliance-information-classify-data
+- learn.wwl.purview-review-analyze-data-classification
+- learn.wwl.create-manage-sensitive-information-types
+- learn-m365.m365-compliance-information-protect-information
+- learn.wwl.apply-manage-sensitivity-labels
+- learn-m365.audit-encryption
+- learn.wwl.deploy-message-encryption-microsoft-365
+
+trophy:
+  uid: learn.wwl.purview-implement-information-protection.trophy

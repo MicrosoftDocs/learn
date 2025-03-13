@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-review-analyze-data-classification.monitor-review-actions
+title: Monitor and review actions on labeled data
+metadata:
+  title: Monitor and review actions on labeled data
+  description: "Monitor and review actions on labeled data."
+  ms.date: 03/13/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/monitor-review-actions.md)]
