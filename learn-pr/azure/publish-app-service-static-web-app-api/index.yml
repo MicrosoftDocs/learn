@@ -15,9 +15,9 @@ title: Publish an Angular, React, Svelte, or Vue JavaScript app with Azure Stati
 summary: Automatically deploy and update a static web application from a GitHub repository.
 abstract: |
   In this module, you will:
-    - Choose an existing web app project with either Angular, React, Svelte or Vue
-    - Run the application locally
-    - Publish the app to Azure Static Web Apps
+    - Choose an existing web app project with either Angular, React, Svelte or Vue.
+    - Run the application locally.
+    - Publish the app to Azure Static Web Apps.
 prerequisites: |
   - Familiarity with one of Angular, React, Svelte, or Vue
   - [Git](https://www.git-scm.com/downloads)
