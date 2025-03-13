@@ -72,11 +72,11 @@ Use the following steps to create a database, connect to the server, and run a q
 
     ```azurecli
     az mysql flexible-server db create \
-            --resource-group  $MYSQL_RESOURCE_GROUP_NAME \
-            --server-name $MYSQL_SERVER_NAME \
-            --database-name $newdatabase \
-            --charset utf8mb4 \
-            --collation utf8mb4_unicode_ci
+        --resource-group  $MYSQL_RESOURCE_GROUP_NAME \
+        --server-name $MYSQL_SERVER_NAME \
+        --database-name $newdatabase \
+        --charset utf8mb4 \
+        --collation utf8mb4_unicode_ci
     ```
 
 1. Connect to the server with interactive mode by using the following command:
