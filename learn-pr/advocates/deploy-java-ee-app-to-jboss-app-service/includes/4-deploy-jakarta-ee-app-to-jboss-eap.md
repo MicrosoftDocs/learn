@@ -24,9 +24,9 @@ Microsoft provides the Maven Plugin for Azure App Service to deploy your Java we
 | `appName`                | Application instance name for the web container                     |
 | `pricingTier`            | Virtual machine selection to run                                    |
 | `region`                 | Region to deploy (same location as the MySQL installation location) |
-| `runtime` `OS`           | Operating system to run (Linux)                                     |
-| `runtime` `javaVersion`  | Java virtual machine version for the web container (Java 17)        |
-| `runtime` `webContainer` | Web container (JBoss EAP 8)                                         |
+| `runtime`, `OS`           | Operating system to run (Linux)                                     |
+| `runtime`, `javaVersion`  | Java virtual machine version for the web container (Java 17)        |
+| `runtime`, `webContainer` | Web container (JBoss EAP 8)                                         |
 
 In this module, you deploy an application to the JBoss EAP environment. Select `Java 17` for the Java version and `Red Hat JBoss EAP 8` for the runtime web container.
 
