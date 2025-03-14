@@ -3,7 +3,7 @@ uid: learn.azure.optimize-spend-and-performance-with-azure-openai-service-provis
 metadata:
   title: Optimize spend and performance with Azure OpenAI Service provisioned reservations
   description: This module introduces you to provisioned deployments in Azure OpenAI services. 
-  ms.date: 10/24/2024
+  ms.date: 03/13/2025
   author: rmcmurray
   ms.author: robmcm
   ms.topic: module-standard-task-based
