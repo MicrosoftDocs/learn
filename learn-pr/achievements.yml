@@ -5450,6 +5450,21 @@ achievements:
   title: Learn how concurrency works in Go
   summary: Understand more about concurrency, one of the most unique features in Go.
   iconUrl: /training/achievements/go/go-concurrency.svg
+- uid: learn.altair-azure-sphere-computing-fundamentals.trophy
+  type: trophy
+  title: Learn computing fundamentals with Altair 8800 and Azure Sphere
+  summary: In this learning path, learn computing fundamentals by creating a cloud-enabled Altair 8800 on Azure Sphere solution.
+  iconUrl: /training/achievements/student-evangelism/altair-azure-sphere-computing-fundamentals.svg
+- uid: learn.student-evangelism.altair-azure-sphere-create-iot-central-application.badge
+  type: badge
+  title: Create an Azure IoT Central application for the Altair emulator and Azure Sphere
+  summary: Learn how to create a cloud-based Azure IoT Central application for the Altair 8800 emulator and Azure Sphere.
+  iconUrl: /training/achievements/student-evangelism/altair-azure-sphere-create-iot-central-application.svg
+- uid: learn.student-evangelism.altair-azure-sphere-create-web-terminal.badge
+  type: badge
+  title: Create and customize Altair 8800 cloud services
+  summary: Learn how to customize IoT Central, create an Altair web terminal, and run the Altair virtual disk server.
+  iconUrl: /training/achievements/student-evangelism/altair-azure-sphere-create-web-terminal.svg
 - uid: learn.student-evangelism.health-bot-template-scenarios.badge
   type: badge
   title: Azure Health Bot scenario templates
