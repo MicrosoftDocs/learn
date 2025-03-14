@@ -44,6 +44,6 @@ GitHub Team includes all the same repository permission levels as GitHub Free fo
 
 ## Repo permissions in GitHub Enterprise Cloud
 
-GitHub Enterprise Cloud is designed for enterprise-level organizations and includes all the features of GitHub Team, as well as enterprise-leve
+GitHub Enterprise Cloud is designed for enterprise-level organizations and includes all the features of GitHub Team, as well as enterprise-level
 
 l security features such as single sign-on, audit logs, and compliance controls. GitHub Enterprise Cloud supports very granular control over repository permissions, including the ability to manage permissions at the branch level.Organization owners can also create custom roles to grant more granular permissions to different users or teams than those available with the built-in read, triage, write, maintain, and admin roles.
