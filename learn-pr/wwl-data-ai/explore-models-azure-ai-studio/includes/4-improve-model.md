@@ -2,15 +2,9 @@ After you deploy your model to an endpoint, you can start interacting with it to
 
 Let's explore different ways to optimize the model and make it work better for your specific use case.
 
-<<<<<<< HEAD
 ## Apply prompt patterns to optimize your model's output
 
 The quality of the questions you send to the language model, directly influences the quality of the responses you get back. You can carefully construct your question, or **prompt**, to receive better and more interesting responses. The process of designing and optimizing prompts to improve the model's performance is also known as **prompt engineering**.
-=======
-You can use your preferred coding language to make an API call to your model's endpoint, or you can chat with the model directly in the Azure AI Foundry portal playground. The chat playground is a quick and easy way to experiment and improve your model performance.
-
-:::image type="content" source="../media/chat-playground.png" alt-text="Screenshot showing the chat playground in the Azure AI Foundry.":::
->>>>>>> 9728d51e21ae212cfd9ce334d3cfb5c112baae53
 
 Prompt engineering requires users to ask relevant, specific, unambiguous, and well-structured questions, instructing the model to generate more accurate responses. To understand how to create well-defined prompts, let's explore some patterns that help you improve the output of a model.
 
