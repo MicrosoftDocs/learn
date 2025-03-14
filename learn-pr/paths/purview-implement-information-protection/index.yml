@@ -1,8 +1,8 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.purview-implement-information-protection
 metadata:
-  title: 'Implement Information Protection'
-  description: 'Organizations need to classify, label, and protect sensitive data to prevent exposure and ensure compliance. Microsoft Purview solutions provide data classification, sensitivity labels, and encryption to secure information across Microsoft 365 and on-premises storage.'
+  title: 'Implement Information Protection (SC-401)'
+  description: 'Organizations need to classify, label, and protect sensitive data to prevent exposure and ensure compliance. Microsoft Purview solutions provide data classification, sensitivity labels, and encryption to secure information across Microsoft 365 and on-premises storage. This learning path aligns with exam SC-401: Microsoft Information Security Administrator.'
   ms.date: 03/13/2025
   author: wwlpublish
   ms.author: riswinto

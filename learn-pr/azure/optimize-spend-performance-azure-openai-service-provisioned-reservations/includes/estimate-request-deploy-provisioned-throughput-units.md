@@ -2,7 +2,7 @@ When you start with Azure OpenAI, we recommend that you use the Standard deploym
 
 In general, prompt tokens are less expensive to process than an equal number of generated tokens. This also means that the distribution of these call shapes is important in overall throughput. Traffic patterns with a wide distribution that include some very large calls might experience lower throughput per PTU than a narrower distribution with the same average prompt and completion token sizes.
 
-## Using the Capacity Calculator in Azure OpenAI Studio
+## Using the Capacity Calculator in Azure OpenAI Foundry
 
 Determining the right number of PTUs you require for your workload is an essential step to optimizing performance and cost. You can use the Azure OpenAI capacity calculator to help estimate the required number of PTUs to meet the needs of your workload.
 
@@ -50,13 +50,13 @@ Creating a new deployment requires an available (unused) quota to cover the desi
 
 In this scenario, 200 PTUs of quota are considered used, and 300 PTUs are available for use to create new deployments.
 
-A default number of provisioned and global provisioned quota is assigned to all subscriptions in several regions. You can review the quota available to you in a region by visiting the Quotas blade in Azure OpenAI Studio and selecting the desired subscription and region.
+A default number of provisioned and global provisioned quota is assigned to all subscriptions in several regions. You can review the quota available to you in a region by visiting the Quotas blade in Azure OpenAI Foundry and selecting the desired subscription and region.
 
 For example, the following screenshot displays a quota limit of 500 PTUs in West US for the selected subscription. Note that you might observe lower values of available default quotas.
 
-:::image type="content" source="../media/4-quota-limit-small.png" alt-text="A screenshot of the available quotas in Azure OpenAI Studio." border="true" lightbox="../media/4-quota-limit.png":::
+:::image type="content" source="../media/4-quota-limit-small.png" alt-text="A screenshot of the available quotas in Azure OpenAI Foundry." border="true" lightbox="../media/4-quota-limit.png":::
 
-By default, PTU quota is available in many regions. If an additional quota is required, customers can request it by using the **Request Quota** link next to the **Provisioned Managed Throughput Unit** quota item in Azure OpenAI Studio. The form allows customers to request an increase in the PTU quota for a specified region. After the request is approved, customers will receive an email at the included address, typically within two business days.
+By default, PTU quota is available in many regions. If an additional quota is required, customers can request it by using the **Request Quota** link next to the **Provisioned Managed Throughput Unit** quota item in Azure OpenAI Foundry. The form allows customers to request an increase in the PTU quota for a specified region. After the request is approved, customers will receive an email at the included address, typically within two business days.
 
 ## Creating a provisioned deployment - capacity is available
 
@@ -64,7 +64,7 @@ You can create PTUs by using Azure OpenAI resource objects within Azure. You mus
 
 To create a provisioned deployment, follow the instructions in the **Deploy model** dialog box, entering the required information as depicted in the following example.
 
-:::image type="content" source="../media/4-deploy-model-dialog-box.png" alt-text="A screenshot of the Azure OpenAI Studio deployment page for a provisioned deployment." border="true":::
+:::image type="content" source="../media/4-deploy-model-dialog-box.png" alt-text="A screenshot of the Azure OpenAI Foundry deployment page for a provisioned deployment." border="true":::
 
 Important things to note when creating a provisioned deployment:
 
@@ -82,9 +82,9 @@ The following image displays an example of the pricing confirmation that you can
 
 Due to the dynamic nature of capacity availability, it is possible that the region of your selected resource might not have the service capacity to create the deployment of the specified model, version, and number of PTUs.
 
-In this event, Azure OpenAI Studio will direct you to other regions with available quota and capacity to create a deployment of the desired model. If this happens, the **Deploy model** dialog box might display information as depicted in the following screenshot.
+In this event, Azure OpenAI Foundry will direct you to other regions with available quota and capacity to create a deployment of the desired model. If this happens, the **Deploy model** dialog box might display information as depicted in the following screenshot.
 
-:::image type="content" source="../media/4-deploy-model-capacity-not-available.png" alt-text="A screenshot of the Azure OpenAI Studio deployment page for a provisioned deployment with no capacity available." border="true":::
+:::image type="content" source="../media/4-deploy-model-capacity-not-available.png" alt-text="A screenshot of the Azure OpenAI Foundry deployment page for a provisioned deployment with no capacity available." border="true":::
 
 Important things to note:
 
