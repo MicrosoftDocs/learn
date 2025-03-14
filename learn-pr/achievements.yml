@@ -5450,6 +5450,26 @@ achievements:
   title: Learn how concurrency works in Go
   summary: Understand more about concurrency, one of the most unique features in Go.
   iconUrl: /training/achievements/go/go-concurrency.svg
+- uid: learn.student-evangelism.altair-azure-sphere-setup.badge
+  type: badge
+  title: Set up the Altair emulator and Azure Sphere
+  summary: Learn how to set up the Altair 8800 emulator and the Azure Sphere development environment.
+  iconUrl: /training/achievements/student-evangelism/altair-azure-sphere-setup.svg
+- uid: learn.student-evangelism.altair-azure-sphere-secure-emulator.badge
+  type: badge
+  title: Secure the Altair emulator
+  summary: Learn how to help secure the Altair emulator network communications.
+  iconUrl: /training/achievements/student-evangelism/altair-azure-sphere-secure-emulator.svg
+- uid: learn.student-evangelism.altair-azure-sphere-program-emulator.badge
+  type: badge
+  title: Program the Altair 8800 emulator
+  summary: Learn how to program the Altair 8800 emulator.
+  iconUrl: /training/achievements/student-evangelism/altair-azure-sphere-program-emulator.svg
+- uid: learn.student-evangelism.altair-azure-sphere-introduction.badge
+  type: badge
+  title: Introduction to the Altair 8800 and Azure Sphere
+  summary: Introduction to computing fundamentals with Altair 8800 and Azure Sphere.
+  iconUrl: /training/achievements/student-evangelism/altair-azure-sphere-introduction.svg
 - uid: learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker.badge
   type: badge
   title: Deploy a private MQTT broker
