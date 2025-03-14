@@ -23,105 +23,468 @@ package com.example.springaiapp.service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.ai.chat.client.ChatClient;
-import org.springframework.ai.chat.client.SimpleLoggerChatClientBuilder;
+import org.springframework.ai.chat.client.advisor.SimpleLoggerAdvisor;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * This service demonstrates the Evaluator Optimizer Agent pattern using Spring AI.
+ * 
+ * The pattern involves multiple AI agents working together to iteratively improve content:
+ * 1. Writer Agent - Creates the initial draft and refines based on feedback
+ * 2. Editor Agent - Evaluates the draft and provides actionable feedback
+ * 
+ * This iterative refinement continues until the content is approved or reaches max iterations.
+ */
 @Service
 public class BlogWriterService {
     private static final Logger logger = LoggerFactory.getLogger(BlogWriterService.class);
-    private static final int MAX_ITERATIONS = 3;
+    private static final int MAX_ITERATIONS = 3;  // Maximum number of refinement iterations
 
     private final ChatClient chatClient;
 
+    /**
+     * Initialize the service with a ChatClient that has SimpleLoggerAdvisor.
+     * 
+     * The SimpleLoggerAdvisor automatically logs all AI interactions (prompts and responses)
+     * when the application's logging level is set to DEBUG for the advisor package.
+     * 
+     * @param chatClientBuilder Builder for creating a configured ChatClient
+     */
     public BlogWriterService(ChatClient.Builder chatClientBuilder) {
-        // Enable Simple Logger Advisor for detailed logging of AI interactions
-        this.chatClient = new SimpleLoggerChatClientBuilder(chatClientBuilder).build();
+        // Add SimpleLoggerAdvisor to log requests and responses for debugging
+        this.chatClient = chatClientBuilder
+                .defaultAdvisors(new SimpleLoggerAdvisor())
+                .build();
+        logger.info("BlogWriterService initialized with ChatClient and SimpleLoggerAdvisor");
     }
 
+    /**
+     * Generates a concise blog post (max 10 sentences) using the Evaluator Optimizer Agent pattern.
+     * 
+     * The method uses multiple AI agents to:
+     * 1. Generate an initial draft
+     * 2. Evaluate the draft for quality and brevity
+     * 3. Provide feedback for improvement
+     * 4. Refine the draft based on feedback
+     * 5. Repeat until approved or max iterations reached
+     * 
+     * @param topic The blog post topic
+     * @return A refined blog post with a maximum of 10 sentences
+     */
     public String generateBlogPost(String topic) {
-        // First Agent: Writer - Generates initial blog post draft
+        logger.info("Starting blog generation for topic: {}", topic);
+
+        // PHASE 1: WRITER AGENT
+        // Prompt the Writer agent to generate the initial blog draft
         String initialPrompt = String.format("""
             You are a professional blog writer. Write a well-structured, engaging blog post about "%s".
             The post should have a clear introduction, body paragraphs, and conclusion.
             Include relevant examples and maintain a conversational yet professional tone.
+            
+            IMPORTANT FORMATTING REQUIREMENTS:
+            1. Format as plain text only (no Markdown, HTML, or special formatting)
+            2. Use simple ASCII characters only
+            3. For the title, simply put it on the first line and use ALL CAPS instead of "#" symbols
+            4. Separate paragraphs with blank lines
+            5. The blog post must be concise and contain NO MORE THAN 10 SENTENCES total.
             """, topic);
+        
+        // Using Spring AI's fluent API to send the prompt and get the response
+        logger.info("Sending initial draft generation prompt to AI model");
+        String draft = chatClient.prompt()
+                .user(initialPrompt)  // Creates a UserMessage with the prompt
+                .call()               // Executes the AI call
+                .content();           // Extracts the content from the response
+        logger.info("Initial draft successfully generated for topic: {}", topic);
 
-        String draft = chatClient.prompt(initialPrompt).call().chatResponse().getResult().getOutput().getText();
-
+        // PHASE 2: EVALUATION & REFINEMENT LOOP
+        // Setup for the iterative improvement process
         boolean approved = false;
         int iteration = 1;
+        
         while (!approved && iteration <= MAX_ITERATIONS) {
-            // Second Agent: Evaluator - Reviews and provides feedback
+            logger.info("Starting iteration {} of blog refinement", iteration);
+            
+            // PHASE 2A: EDITOR AGENT
+            // Prompt the Editor agent to evaluate the current draft
             String evalPrompt = String.format("""
                 You are a critical blog editor. Evaluate the following blog draft and respond with either:
                 PASS - if the draft is well-written, engaging, and complete
                 NEEDS_IMPROVEMENT - followed by specific, actionable feedback on what to improve
-
+                
                 Focus on:
                 - Clarity and flow of ideas
                 - Engagement and reader interest
                 - Professional yet conversational tone
                 - Structure and organization
-
+                - Strict adherence to the 10-sentence maximum length requirement
+                
+                IMPORTANT: The blog MUST have no more than 10 sentences total. Count the sentences carefully.
+                If the draft exceeds 10 sentences, it must receive a NEEDS_IMPROVEMENT rating with feedback to reduce length.
+                
                 Draft:
                 %s
                 """, draft);
-
-            String evaluation = chatClient.prompt(evalPrompt).call()
-                .chatResponse().getResult().getOutput().getText();
-
+            
+            // Send the evaluation prompt to the AI model
+            logger.info("Sending draft for editorial evaluation (iteration: {})", iteration);
+            String evaluation = chatClient.prompt()
+                    .user(evalPrompt)
+                    .call()
+                    .content();
+            
+            // Check if the Editor agent approves the draft
             if (evaluation.toUpperCase().contains("PASS")) {
+                // Draft is approved, exit the loop
                 approved = true;
                 logger.info("Draft approved by editor on iteration {}", iteration);
             } else {
+                // Draft needs improvement, extract the specific feedback
                 String feedback = extractFeedback(evaluation);
-                logger.info("Editor feedback (iteration {}): {}", iteration, feedback);
-
-                // Third Agent: Standby Writer - Refines the draft based on editor's feedback
+                logger.info("Editor feedback received (iteration {}): {}", iteration, feedback);
+                
+                // PHASE 2B: WRITER AGENT (REFINEMENT)
+                // Prompt the Writer agent to refine the draft based on the feedback
                 String refinePrompt = String.format("""
                     You are a blog writer. Improve the following blog draft based on this editorial feedback:
-
+                    
                     Feedback: %s
-
+                    
                     Current Draft:
                     %s
-
-                    Provide the complete improved version while maintaining the original topic and structure.
+                    
+                    IMPORTANT REQUIREMENTS:
+                    1. The final blog post MUST NOT exceed 10 sentences total.
+                    2. Maintain a clear introduction, body, and conclusion structure.
+                    3. Keep formatting as plain text only (NO Markdown, HTML, or special formatting)
+                    4. For the title, use ALL CAPS instead of any special formatting
+                    5. Separate paragraphs with blank lines
+                    6. Use only simple ASCII characters
+                    7. Provide the complete improved version while addressing the feedback.
+                    8. Count your sentences carefully before submitting.
                     """, feedback, draft);
-
-                draft = chatClient.prompt(refinePrompt).call()
-                    .chatResponse().getResult().getOutput().getText();
+                
+                // Send the refinement prompt to the AI model
+                logger.info("Requesting draft revision based on feedback (iteration: {})", iteration);
+                draft = chatClient.prompt()
+                        .user(refinePrompt)
+                        .call()
+                        .content();
+                logger.info("Revised draft received for iteration {}", iteration);
             }
             iteration++;
         }
 
+        // PHASE 3: FINALIZATION
+        // Return the final draft, either approved or after reaching max iterations
         if (!approved) {
             logger.warn("Maximum iterations ({}) reached without editor approval", MAX_ITERATIONS);
+        } else {
+            logger.info("Blog post generation completed successfully for topic: {}", topic);
         }
 
         return draft;
     }
 
+    /**
+     * Enhanced version of generateBlogPost that also returns metadata about the generation process.
+     * 
+     * @param topic The blog post topic
+     * @return A BlogGenerationResult containing the content and metadata
+     */
+    public BlogGenerationResult generateBlogPostWithMetadata(String topic) {
+        logger.info("Starting blog generation with metadata for topic: {}", topic);
+        
+        BlogGenerationResult result = new BlogGenerationResult();
+        result.setModelName("Azure OpenAI");
+        
+        // PHASE 1: WRITER AGENT
+        // Prompt the Writer agent to generate the initial blog draft
+        String initialPrompt = String.format("""
+            You are a professional blog writer. Write a well-structured, engaging blog post about "%s".
+            The post should have a clear introduction, body paragraphs, and conclusion.
+            Include relevant examples and maintain a conversational yet professional tone.
+            
+            IMPORTANT FORMATTING REQUIREMENTS:
+            1. Format as plain text only (no Markdown, HTML, or special formatting)
+            2. Use simple ASCII characters only
+            3. For the title, simply put it on the first line and use ALL CAPS instead of "#" symbols
+            4. Separate paragraphs with blank lines
+            5. The blog post must be concise and contain NO MORE THAN 10 SENTENCES total.
+            """, topic);
+        
+        // Using Spring AI's fluent API to send the prompt and get the response
+        logger.info("Sending initial draft generation prompt to AI model");
+        String draft = chatClient.prompt()
+                .user(initialPrompt)
+                .call()
+                .content();
+        
+        // Estimate token usage as we can't directly access it
+        estimateTokenUsage(result, initialPrompt, draft);
+        logger.info("Initial draft successfully generated for topic: {}", topic);
+
+        // PHASE 2: EVALUATION & REFINEMENT LOOP
+        // Setup for the iterative improvement process
+        boolean approved = false;
+        int iteration = 1;
+        
+        while (!approved && iteration <= MAX_ITERATIONS) {
+            logger.info("Starting iteration {} of blog refinement", iteration);
+            
+            // PHASE 2A: EDITOR AGENT
+            // Prompt the Editor agent to evaluate the current draft
+            String evalPrompt = String.format("""
+                You are a critical blog editor. Evaluate the following blog draft and respond with either:
+                PASS - if the draft is well-written, engaging, and complete
+                NEEDS_IMPROVEMENT - followed by specific, actionable feedback on what to improve
+                
+                Focus on:
+                - Clarity and flow of ideas
+                - Engagement and reader interest
+                - Professional yet conversational tone
+                - Structure and organization
+                - Strict adherence to the 10-sentence maximum length requirement
+                
+                IMPORTANT: The blog MUST have no more than 10 sentences total. Count the sentences carefully.
+                If the draft exceeds 10 sentences, it must receive a NEEDS_IMPROVEMENT rating with feedback to reduce length.
+                
+                Draft:
+                %s
+                """, draft);
+            
+            // Send the evaluation prompt to the AI model
+            logger.info("Sending draft for editorial evaluation (iteration: {})", iteration);
+            String evaluation = chatClient.prompt()
+                    .user(evalPrompt)
+                    .call()
+                    .content();
+            
+            estimateTokenUsage(result, evalPrompt, evaluation);
+            
+            // Check if the Editor agent approves the draft
+            if (evaluation.toUpperCase().contains("PASS")) {
+                // Draft is approved, exit the loop
+                approved = true;
+                logger.info("Draft approved by editor on iteration {}", iteration);
+            } else {
+                // Draft needs improvement, extract the specific feedback
+                String feedback = extractFeedback(evaluation);
+                logger.info("Editor feedback received (iteration {}): {}", iteration, feedback);
+                result.addEditorFeedback(feedback);
+                
+                // PHASE 2B: WRITER AGENT (REFINEMENT)
+                // Prompt the Writer agent to refine the draft based on the feedback
+                String refinePrompt = String.format("""
+                    You are a blog writer. Improve the following blog draft based on this editorial feedback:
+                    
+                    Feedback: %s
+                    
+                    Current Draft:
+                    %s
+                    
+                    IMPORTANT REQUIREMENTS:
+                    1. The final blog post MUST NOT exceed 10 sentences total.
+                    2. Maintain a clear introduction, body, and conclusion structure.
+                    3. Keep formatting as plain text only (NO Markdown, HTML, or special formatting)
+                    4. For the title, use ALL CAPS instead of any special formatting
+                    5. Separate paragraphs with blank lines
+                    6. Use only simple ASCII characters
+                    7. Provide the complete improved version while addressing the feedback.
+                    8. Count your sentences carefully before submitting.
+                    """, feedback, draft);
+                
+                // Send the refinement prompt to the AI model
+                logger.info("Requesting draft revision based on feedback (iteration: {})", iteration);
+                String revisedDraft = chatClient.prompt()
+                        .user(refinePrompt)
+                        .call()
+                        .content();
+                
+                estimateTokenUsage(result, refinePrompt, revisedDraft);
+                draft = revisedDraft;
+                logger.info("Revised draft received for iteration {}", iteration);
+            }
+            iteration++;
+        }
+
+        // PHASE 3: FINALIZATION
+        // Set final result properties
+        result.setContent(draft);
+        result.setApproved(approved);
+        result.setIterations(iteration - 1);
+        
+        if (!approved) {
+            logger.warn("Maximum iterations ({}) reached without editor approval", MAX_ITERATIONS);
+        } else {
+            logger.info("Blog post generation completed successfully for topic: {}", topic);
+        }
+
+        return result;
+    }
+
+    /**
+     * Helper method to extract actionable feedback from the Editor agent's evaluation.
+     * This extracts the text after "NEEDS_IMPROVEMENT" to get just the feedback portion.
+     * 
+     * @param evaluation The full evaluation text from the Editor agent
+     * @return Just the actionable feedback portion
+     */
     private String extractFeedback(String evaluation) {
         if (evaluation == null) return "";
         int idx = evaluation.toUpperCase().indexOf("NEEDS_IMPROVEMENT");
         if (idx != -1) {
+            // Return text after "NEEDS_IMPROVEMENT"
             return evaluation.substring(idx + "NEEDS_IMPROVEMENT".length()).trim();
         }
         return evaluation;
     }
+    
+    /**
+     * Helper method to estimate token usage as we can't directly access it
+     * This is a rough estimation: approximately 4 characters per token
+     */
+    private void estimateTokenUsage(BlogGenerationResult result, String prompt, String response) {
+        try {
+            // Very rough estimation: ~4 characters per token
+            int estimatedPromptTokens = prompt.length() / 4;
+            int estimatedCompletionTokens = response.length() / 4;
+            
+            result.addPromptTokens(estimatedPromptTokens);
+            result.addCompletionTokens(estimatedCompletionTokens);
+            
+            logger.debug("Estimated token usage: prompt={}, completion={}, total={}",
+                estimatedPromptTokens, estimatedCompletionTokens, 
+                estimatedPromptTokens + estimatedCompletionTokens);
+        } catch (Exception e) {
+            logger.warn("Failed to estimate token usage", e);
+        }
+    }
+    
+    /**
+     * Class to hold blog generation result, including the content and metadata.
+     */
+    public static class BlogGenerationResult {
+        private String content;
+        private int iterations;
+        private boolean approved;
+        private int promptTokens;
+        private int completionTokens;
+        private int totalTokens;
+        private String modelName;
+        private List<String> editorFeedback = new ArrayList<>();
+        
+        // Getters and setters
+        public String getContent() {
+            return content;
+        }
+        
+        public void setContent(String content) {
+            this.content = content;
+        }
+        
+        public int getIterations() {
+            return iterations;
+        }
+        
+        public void setIterations(int iterations) {
+            this.iterations = iterations;
+        }
+        
+        public boolean isApproved() {
+            return approved;
+        }
+        
+        public void setApproved(boolean approved) {
+            this.approved = approved;
+        }
+        
+        public int getPromptTokens() {
+            return promptTokens;
+        }
+        
+        public void setPromptTokens(int promptTokens) {
+            this.promptTokens = promptTokens;
+            this.totalTokens = this.promptTokens + this.completionTokens;
+        }
+        
+        public void addPromptTokens(int tokens) {
+            this.promptTokens += tokens;
+            this.totalTokens = this.promptTokens + this.completionTokens;
+        }
+        
+        public int getCompletionTokens() {
+            return completionTokens;
+        }
+        
+        public void setCompletionTokens(int completionTokens) {
+            this.completionTokens = completionTokens;
+            this.totalTokens = this.promptTokens + this.completionTokens;
+        }
+        
+        public void addCompletionTokens(int tokens) {
+            this.completionTokens += tokens;
+            this.totalTokens = this.promptTokens + this.completionTokens;
+        }
+        
+        public int getTotalTokens() {
+            return totalTokens;
+        }
+        
+        public String getModelName() {
+            return modelName;
+        }
+        
+        public void setModelName(String modelName) {
+            this.modelName = modelName;
+        }
+        
+        public List<String> getEditorFeedback() {
+            return editorFeedback;
+        }
+        
+        public void setEditorFeedback(List<String> editorFeedback) {
+            this.editorFeedback = editorFeedback;
+        }
+        
+        public void addEditorFeedback(String feedback) {
+            if (this.editorFeedback == null) {
+                this.editorFeedback = new ArrayList<>();
+            }
+            this.editorFeedback.add(feedback);
+        }
+    }
 }
 ```
 
-This method generates a blog post on a given topic and refines it through an iterative process. The following steps provide a high-level overview of this functionality:
+This implementation includes several key features:
 
-1. Initial draft generation: constructs an initial prompt asking the AI model to write a well-structured blog post on the given topic and sends it to the `chatClient` to retrieve an initial draft.
-1. Evaluator-Optimizer loop:
-    - Enters a loop that continues until the draft is approved or the maximum number of iterations is reached.
-    - Checks whether the evaluation response contains `PASS`. If so, marks the draft as approved and logs the approval.
-    - If the draft needs improvement, extracts feedback from the evaluation.
-    - Sends the refinement prompt to the `chatClient` and retrieves the revised draft.
-1. Final check: returns the final draft if either the evaluation receives a "PASS" response or the maximum iterations was reached.
+1. **Basic Blog Generation** (`generateBlogPost` method):
+   - Creates a well-structured blog post on a given topic
+   - Uses an iterative refinement process with Writer and Editor agents
+   - Enforces a 10-sentence maximum length
+
+2. **Enhanced Metadata Generation** (`generateBlogPostWithMetadata` method):
+   - Extends the basic functionality to capture detailed metadata about the generation process
+   - Tracks iterations, approval status, token usage, and editor feedback history
+   - Returns all information in a structured `BlogGenerationResult` object
+
+3. **Token Usage Estimation**:
+   - Provides a rough approximation of token usage by counting characters
+   - Tracks prompt tokens, completion tokens, and total tokens used
+   - This is a workaround since we no longer directly access the `ChatResponse` class
+
+4. **BlogGenerationResult Inner Class**:
+   - Serves as a container for both the generated content and its metadata
+   - Includes fields for content, iterations, approval status, token usage, and editor feedback
+   - Provides getters, setters, and convenience methods for tracking metadata
+
+The service is thoroughly commented to explain the Evaluator Optimizer Agent pattern and how Spring AI's fluent API facilitates interactions between AI agents.
 
 ### Create the BlogWriterController class
 
@@ -134,6 +497,11 @@ import com.example.springaiapp.service.BlogWriterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Map;
+import java.util.HashMap;
+import java.util.List;
+import java.util.ArrayList;
+
 @RestController
 @RequestMapping("/api/blog")
 public class BlogWriterController {
@@ -145,14 +513,63 @@ public class BlogWriterController {
         this.blogWriterService = blogWriterService;
     }
 
-    @GetMapping
-    public String generateBlogPost(@RequestParam String topic) {
-        return blogWriterService.generateBlogPost(topic);
+    @GetMapping(produces = "application/json")
+    public Map<String, Object> generateBlogPost(@RequestParam String topic) {
+        // Generate the blog post and capture metadata
+        BlogWriterService.BlogGenerationResult result = blogWriterService.generateBlogPostWithMetadata(topic);
+        
+        // Create a structured JSON response
+        Map<String, Object> response = new HashMap<>();
+        response.put("topic", topic);
+        response.put("content", result.getContent());
+        response.put("metadata", createMetadataObject(result));
+        
+        return response;
+    }
+    
+    private Map<String, Object> createMetadataObject(BlogWriterService.BlogGenerationResult result) {
+        Map<String, Object> metadata = new HashMap<>();
+        metadata.put("iterations", result.getIterations());
+        metadata.put("approved", result.isApproved());
+        metadata.put("totalTokensUsed", result.getTotalTokens());
+        
+        if (result.getEditorFeedback() != null && !result.getEditorFeedback().isEmpty()) {
+            List<Map<String, Object>> feedbackHistory = new ArrayList<>();
+            for (int i = 0; i < result.getEditorFeedback().size(); i++) {
+                Map<String, Object> feedbackEntry = new HashMap<>();
+                feedbackEntry.put("iteration", i + 1);
+                feedbackEntry.put("feedback", result.getEditorFeedback().get(i));
+                feedbackHistory.add(feedbackEntry);
+            }
+            metadata.put("editorFeedback", feedbackHistory);
+        }
+        
+        // Include token usage statistics if available
+        if (result.getPromptTokens() > 0) {
+            Map<String, Object> tokenUsage = new HashMap<>();
+            tokenUsage.put("promptTokens", result.getPromptTokens());
+            tokenUsage.put("completionTokens", result.getCompletionTokens());
+            tokenUsage.put("totalTokens", result.getTotalTokens());
+            metadata.put("tokenUsage", tokenUsage);
+        }
+        
+        // Include model information if available
+        if (result.getModelName() != null) {
+            metadata.put("model", result.getModelName());
+        }
+        
+        return metadata;
     }
 }
 ```
 
-This controller exposes a GET endpoint at `/api/blog` that accepts a `topic` parameter and delegates the blog post generation to the `BlogWriterService`.
+This controller exposes a GET endpoint at `/api/blog` that accepts a `topic` parameter and returns a structured JSON response containing both the generated blog content and detailed metadata about the generation process. The metadata includes:
+
+1. Number of iterations performed during generation
+2. Whether the final blog post was approved by the Editor agent
+3. Estimated token usage statistics (prompt, completion, and total tokens) 
+4. Editor feedback history from each iteration
+5. Information about the AI model used
 
 ### Test the blog generation
 
@@ -165,19 +582,58 @@ mvn spring-boot:run
 Then, use the following command to test the blog generation endpoint:
 
 ```bash
-curl -G "http://localhost:8080/api/blog" --data-urlencode "topic=Spring AI Innovation"
+curl --request GET \
+  --url 'http://localhost:8080/api/blog?topic=Java%2520on%2520Azure'
 ```
 
-This command should return a blog post that's been generated and iteratively refined through the Evaluator Optimizer Agent process. Because of the review iteration cycle, this request takes longer to complete. After it completes, you should see a blog entry similar to the following excerpt:
+This command will return a JSON response containing both the blog content and metadata about the generation process. Here's an example of the JSON structure you'll receive:
 
-```markdown
-# Spring AI Innovation: Embracing the Season of Transformation
+```json
+{
+  "topic": "Java on Azure",
+  "content": "JAVA ON AZURE\n\nIf you're a Java developer looking to elevate your applications in the cloud, Microsoft Azure offers a powerful platform for building and scaling your projects.\n\nAzure App Service allows for quick deployment of Java web applications with frameworks like Spring Boot and Java EE, while Azure Functions provides a serverless option that lets you write Java code without worrying about the underlying infrastructure. Together, these services make it easier for developers to focus on coding rather than managing servers.\n\nFor example, a startup used Azure to build a scalable e-commerce app, leveraging App Service for web hosting and Azure Functions for processing payments. This combination streamlined their development process and improved efficiency.\n\nIn summary, Azure's services enhance flexibility, simplify deployment, and foster innovation for Java developers. How could these tools transform your Java development experience?",
+  "metadata": {
+    "iterations": 3,
+    "approved": false,
+    "totalTokensUsed": 5480,
+    "editorFeedback": [
+      {
+        "iteration": 1,
+        "feedback": "1. **Length**: The draft exceeds the 10-sentence maximum requirement, containing 12 sentences. You need to condense the content without losing essential information.\n   \n2. **Clarity and Flow**: While the ideas are mostly clear, the flow can be improved by connecting the sentences more cohesively. For example, consider linking the features of Azure more directly to the benefits for Java developers.\n\n3. **Engagement and Reader Interest**: The draft is informative but could be more engaging. Adding a question or a call-to-action might spark more interest and prompt readers to think about how they could apply this information.\n\n4. **Professional yet Conversational Tone**: The tone is somewhat formal. Try using a more conversational style to make it more relatable, such as directly addressing the reader (\"If you're a Java developer...\").\n\n5. **Structure and Organization**: Consider rearranging the content to start with a more compelling hook that highlights the importance of Java in the cloud landscape before diving into specific features.\n\nTo improve the draft, aim to succinctly capture the main points and eliminate redundancy while keeping within the sentence limit."
+      },
+      {
+        "iteration": 2,
+        "feedback": "While the draft is informative and covers important features of Azure for Java developers, it exceeds the 10-sentence limit, which is a critical requirement. Here are specific, actionable suggestions to improve the draft:\n\n1. **Condense Information**: Try to combine related ideas into fewer sentences. For example, you could merge the sentences about Azure App Service and Docker support to create a more concise point about deployment options.\n   \n2. **Remove Redundant Phrases**: Phrases like \"ideal platform\" and \"simplifies the process\" could be streamlined to save space.\n\n3. **Focus on Key Features**: You might want to highlight only one or two standout features instead of discussing multiple options, which would help keep the content focused and within the sentence limit.\n\n4. **Engaging Question**: The concluding question is a good touch, but consider integrating it more seamlessly into the conclusion to avoid exceeding the limit.\n\nBy implementing these changes, you can create a more concise and impactful blog post."
+      },
+      {
+        "iteration": 3,
+        "feedback": "1. The draft contains 11 sentences, exceeding the 10-sentence maximum requirement. Consider condensing some of the ideas to fit this constraint.\n2. The structure could benefit from clearer transitions between the main points about Azure services. For instance, you might explicitly link how App Service and Azure Functions both contribute to a developer's efficiency.\n3. While the concluding question is engaging, it could be more impactful if you briefly summarize the benefits discussed before asking it, reinforcing the key takeaways.\n4. Aim for a more conversational tone by using simpler language in some areas. For example, \"allows for seamless deployment via Docker\" could be rephrased to \"makes it easy to deploy using Docker.\"\n5. Consider adding a specific example or a brief case study to make the content more relatable and demonstrate practical application. \n\nBy addressing these points, the blog can be more engaging and adhere to the required length."
+      }
+    ],
+    "tokenUsage": {
+      "promptTokens": 3590,
+      "completionTokens": 1890,
+      "totalTokens": 5480
+    },
+    "model": "Azure OpenAI"
+  }
+}
+```
 
-Spring is a season synonymous with growth, renewal, and fresh beginnings. As nature awakens from its winter slumber, so too does the world of technology. In recent years, artificial intelligence (AI) has followed a similar pattern of blossoming innovation, with spring heralding exciting breakthroughs and applications. From revolutionizing industries to improving our everyday lives, AI is in full bloom, and its potential seems as boundless as the season itself.
+The JSON response provides valuable insights into the generation process, allowing you to track:
 
-In this blog post, we'll explore the latest AI innovations that are flourishing this spring, highlight real-world examples of their impact, and discuss how they're reshaping the future. Whether you're an AI enthusiast, a tech professional, or simply curious about the role of AI in our lives, this is your guide to the season's most exciting developments.
+- How many iterations were needed (3 in this example)
+- Whether the post was approved by the Editor agent (false in this example, meaning it reached max iterations)
+- The specific feedback from the Editor agent during each iteration
+- Estimated token usage for the entire process
+
+You can also examine the detailed logs, which are automatically captured by the `SimpleLoggerAdvisor`, by ensuring your application's logging level is set to DEBUG for the Spring AI packages:
+
+```properties
+# In application.properties
+logging.level.org.springframework.ai.chat.client.advisor=DEBUG
 ```
 
 ## Unit summary
 
-In this unit, you extended your Spring AI application capabilities by incorporating an Evaluator Optimizer Agent pattern. This pattern enhances content generation by iteratively refining a blog post through automated evaluation and optimization. The module exposes this blog generation capability via a new REST endpoint.
+In this unit, you extended your Spring AI application capabilities by incorporating an Evaluator Optimizer Agent pattern. This pattern enhances content generation by iteratively refining a blog post through automated evaluation and optimization. You also learned how to implement a structured JSON response that includes detailed metadata about the generation process, providing insights into the iterative refinement and resource usage of the AI-powered content generation.
