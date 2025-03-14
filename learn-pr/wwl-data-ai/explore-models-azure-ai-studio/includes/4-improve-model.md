@@ -6,12 +6,18 @@ Let's explore different ways to optimize the model and make it work better for y
 
 The quality of the questions you send to the language model, directly influences the quality of the responses you get back. You can carefully construct your question, or **prompt**, to receive better and more interesting responses. The process of designing and optimizing prompts to improve the model's performance is also known as **prompt engineering**.
 
-Prompt engineering requires users to ask relevant, specific, unambiguous, and well-structured questions, instructing the model to generate more accurate responses. To understand how to create well-defined prompts, let's explore some patterns that help you improve the output of a model.
+Prompt engineering requires users to ask relevant, specific, unambiguous, and well-structured questions, instructing the model to generate more accurate responses. To understand how to create well-defined prompts, let's explore some patterns that help you improve the output of a model:
+
+- Instruct the model to act as a persona.
+- Guide the model to suggest better questions.
+- Provide a template to generate output in a specific format.
+- Understand how a model reasons by asking it to reflect.
+- Add context to improve the accuracy of the model's output.
 
 > [!Note]
 > The patterns listed here are based on the work by [White et al., (2023) who constructed a prompt pattern catalog](https://arxiv.org/abs/2302.11382?azure-portal=true).
 
-### Instruct the model to act as a persona
+### Act as a persona
 
 When you want the model to take a specific point of view or perspective when answering a question, you can ask it to act as a persona.
 
@@ -24,7 +30,7 @@ For example, you can ask the model to respond as if it's a seasoned sales manage
 
 You can create different personas for various business roles. Think of roles like a product manager, data analyst, customer service expert, or teacher. Define the persona and add more detail to what you expect that persona to know or do to get tailored, context-driven responses.
 
-### Guide the model to suggest better questions
+### Ask for better questions
 
 When you want the model to help refine your question, you can ask it to suggest better ways to phrase your query. You can also ask it to provide extra context.
 
@@ -37,7 +43,7 @@ For example, if you're seeking advice on increasing sales, you can prompt the mo
 
 When you encourage the model to suggest clarifications or extra details can help you ask the right questions and achieve better, more accurate answers in fewer interactions.
 
-### Provide a template to generate output in a specific format
+### Provide a template 
 
 When you want the model to generate output in a specific format, you can provide a template or structure in your prompt.
 
@@ -52,7 +58,7 @@ You can apply this approach to other scenarios where a specific format is needed
 
 You can also use a **one-shot** or **few-shots** approach by providing one or more examples to help the model identify a desired pattern.
 
-### Understand how a model reasons by asking it to reflect
+### Ask for reflection
 
 When you want the model to explain the reasoning behind its answers, you can ask the model to automatically reflect on its rationale and assumptions after providing a response.
 
@@ -65,7 +71,7 @@ For example, if you're working on coding tasks, you can ask the model to explain
 
 You can apply this approach when you want explanations in data analysis, marketing strategy, or technical troubleshooting. When you ask the model to define its reasoning, you use a technique called **chain-of-thought** to make it think step-by-step.
 
-### Add context to improve the accuracy of the model's output
+### Add context
 
 When you want the model to focus on specific topics, you can specify the context to consider. You can also tell the model to ignore irrelevant information.
 
