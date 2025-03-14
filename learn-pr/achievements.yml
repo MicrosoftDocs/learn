@@ -5460,3 +5460,68 @@ achievements:
   title: Deploy the Altair emulator to Azure Sphere
   summary: Learn how to deploy the Altair 8800 emulator to Azure Sphere.
   iconUrl: /training/achievements/student-evangelism/altair-azure-sphere-deploy-emulator.svg
+- uid: learn.altair-azure-sphere-computing-fundamentals.trophy
+  type: trophy
+  title: Learn computing fundamentals with Altair 8800 and Azure Sphere
+  summary: In this learning path, learn computing fundamentals by creating a cloud-enabled Altair 8800 on Azure Sphere solution.
+  iconUrl: /training/achievements/student-evangelism/altair-azure-sphere-computing-fundamentals.svg
+- uid: learn.student-evangelism.altair-azure-sphere-create-iot-central-application.badge
+  type: badge
+  title: Create an Azure IoT Central application for the Altair emulator and Azure Sphere
+  summary: Learn how to create a cloud-based Azure IoT Central application for the Altair 8800 emulator and Azure Sphere.
+  iconUrl: /training/achievements/student-evangelism/altair-azure-sphere-create-iot-central-application.svg
+- uid: learn.student-evangelism.altair-azure-sphere-create-web-terminal.badge
+  type: badge
+  title: Create and customize Altair 8800 cloud services
+  summary: Learn how to customize IoT Central, create an Altair web terminal, and run the Altair virtual disk server.
+  iconUrl: /training/achievements/student-evangelism/altair-azure-sphere-create-web-terminal.svg
+- uid: learn.student-evangelism.health-bot-template-scenarios.badge
+  type: badge
+  title: Azure Health Bot scenario templates
+  summary: Learn how to enrich the capabilities of your bot by using the prebuilt scenario templates.
+  iconUrl: /training/achievements/student-evangelism/health-bot-template-scenarios.svg
+- uid: learn.student-evangelism.health-bot-language-understanding.badge
+  type: badge
+  title: Language understanding in Azure Health Bot
+  summary: Language understanding plays a fundamental role in the working of Azure Health Bot.
+  iconUrl: /training/achievements/student-evangelism/health-bot-language-understanding.svg
+- uid: learn.student-evangelism.health-bot-introduction.badge
+  type: badge
+  title: Introduction to Azure Health Bot
+  summary: Azure Health Bot enables users to build a health bot by using built-in scenarios or custom ones. The information that each instance of the Health Bot service handles is privacy protected to HIPAA standards. It also meets Microsoft's high standards for privacy and security.
+  iconUrl: /training/achievements/student-evangelism/health-bot-introduction.svg
+- uid: learn.student-evangelism.health-bot-integrated-bot.badge
+  type: badge
+  title: Integrate Azure Health Bot with a database
+  summary: Learn how to integrate an advanced bot with a database.
+  iconUrl: /training/achievements/student-evangelism/health-bot-integrated-bot.svg
+- uid: learn.student-evangelism.health-bot-enhanced.badge
+  type: badge
+  title: Enhanced Azure Health Bot
+  summary: In the previous module, you created a basic informative bot without any interrupting or breaking scenario involved. This module shows you how to enhance the bot with advanced functionalities.
+  iconUrl: /training/achievements/student-evangelism/health-bot-enhanced.svg
+- uid: learn.student-evangelism.health-bot-channelized-bot.badge
+  type: badge
+  title: Channelized Azure Health Bot
+  summary: In the previous module, you integrated a bot with a database hosted on Azure. This module shows you how to make the bot available on Teams and build a basic app.
+  iconUrl: /training/achievements/student-evangelism/health-bot-channelized-bot.svg
+- uid: learn.student-evangelism.health-bot-case-studies.badge
+  type: badge
+  title: Azure Health Bot case studies
+  summary: The Health Bot service is a cloud platform that empowers developers in healthcare organizations to build and deploy compliant, AI-powered virtual health assistants and health bots that help them improve processes and reduce costs.
+  iconUrl: /training/achievements/student-evangelism/health-bot-case-studies.svg
+- uid: learn.student-evangelism.health-bot-built-in-scenarios.badge
+  type: badge
+  title: Azure Health Bot built-in scenarios
+  summary: Azure Health Bot supports many built-in scenarios. Examples include triaging a medical condition, finding information about a disease or types of drugs, and getting user consent.
+  iconUrl: /training/achievements/student-evangelism/health-bot-built-in-scenarios.svg
+- uid: learn.create-bots-azure-health-bot.trophy
+  type: trophy
+  title: Create intelligent health bots with Azure Health Bot
+  summary: Azure Health Bot enables users to build a health bot by using built-in or custom scenarios. The information that each instance of the Health Bot service handles is privacy protected to HIPAA standards. It also meets Microsoft's high standards for privacy and security. The modules in this Learning path guide you through the creation of both a basic and enhanced health bot. You'll learn about language understanding and how to use both built-in and template scenarios.
+  iconUrl: /training/achievements/create-bots-azure-health-bot.svg
+- uid: learn.student-evangelism.health-bot-basic-bot.badge
+  type: badge
+  title: Basic Azure Health Bot
+  summary: This module starts with a basic informative bot that has no interrupting or breaking scenario involved. It shows you how to enhance the bot with more advanced functionalities.
+  iconUrl: /training/achievements/student-evangelism/health-bot-basic-bot.svg
