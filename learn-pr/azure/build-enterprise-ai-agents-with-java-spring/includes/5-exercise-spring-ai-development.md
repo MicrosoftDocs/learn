@@ -28,15 +28,21 @@ Use the following steps to set up your environment:
 
 ## Set up environment variables
 
-For this exercise, you need some environment variables from the previous exercise. Use the following commands to verify these variables are available. If these variables aren't available, refer to the prior exercises to recreate them.
+For this exercise, you need some environment variables from prior exercises. If you're using the same Bash window, these variables should still exist. If the variables are no longer available, use the following commands to recreate them:
 
 ```bash
-echo RESOURCE_GROUP: $RESOURCE_GROUP
-echo LOCATION: $LOCATION
-echo PG_HOST: $PG_HOST
+export RESOURCE_GROUP=<resource-group>
+export LOCATION=<location>
+export DB_SERVER_NAME=<server-name>
+export PGHOST=$(az postgres flexible-server show \
+    --resource-group $RESOURCE_GROUP \
+    --name $DB_SERVER_NAME \
+    --query fullyQualifiedDomainName \
+    --output tsv \
+    | tr -d '\r')
 ```
 
-Additionally, export the following new variables needed for this lab:
+Export the following new variable, which you need for this lab:
 
 ```bash
 export OPENAI_RESOURCE_NAME=OpenAISpringAI
@@ -230,9 +236,9 @@ az postgres flexible-server show \
     --output tsv
 ```
 
-#### Review application.properties file
+#### Review the application.properties file
 
-Locate and open the **application.properties** file in the **src/main/resources** directory. There are three properties that are initialized using values from the following environment variables: `AZURE_OPENAI_API_KEY`, `AZURE_OPENAI_ENDPOINT`, and `PG_HOST`:
+Locate and open the **application.properties** file in the **src/main/resources** directory. There are three properties that are initialized using values from the following environment variables: `AZURE_OPENAI_API_KEY`, `AZURE_OPENAI_ENDPOINT`, and `PGHOST`:
 
 ```properties
 spring.application.name=spring-ai-app
@@ -242,7 +248,7 @@ spring.ai.azure.openai.chat.model=gpt-4o
 spring.ai.azure.openai.embedding.model=text-embedding-ada-002
 
 spring.datasource.url=jdbc:postgresql://${PGHOST}/postgres?sslmode=require
-spring.datasource.username=cliuser
+spring.datasource.username=azureuser
 spring.datasource.azure.passwordless-enabled=true
 spring.ai.vectorstore.pgvector.initialize-schema=true
 spring.ai.vectorstore.pgvector.schema-name=postgres

@@ -2,38 +2,46 @@ In this unit, you deploy your Spring AI application to Azure Container Apps for 
 
 ## Set up environment variables
 
-For this exercise, you need to some environment variables from prior exercises.
+For this exercise, you need some environment variables from prior exercises. If you're using the same Bash window, these variables should still exist. If the variables are no longer available, use the following commands to recreate them. Be sure to replace the `<...>` placeholders with your own values, and use the same values that you used previously.
 
-1. Confirm these variables are available:
+```bash
+export RESOURCE_GROUP=<resource-group>
+export LOCATION=<location>
+export OPENAI_RESOURCE_NAME=OpenAISpringAI
+export AZURE_OPENAI_ENDPOINT=$(az cognitiveservices account show \
+    --resource-group $RESOURCE_GROUP \
+    --name $OPENAI_RESOURCE_NAME \
+    --query "properties.endpoint" \
+    --output tsv \
+    | tr -d '\r')
+export AZURE_OPENAI_API_KEY=$(az cognitiveservices account keys list \
+    --resource-group $RESOURCE_GROUP \
+    --name $OPENAI_RESOURCE_NAME \
+    --query "key1" \
+    --output tsv \
+    | tr -d '\r')
+export DB_SERVER_NAME=<server-name>
+export PGHOST=$(az postgres flexible-server show \
+    --resource-group $RESOURCE_GROUP \
+    --name $DB_SERVER_NAME \
+    --query fullyQualifiedDomainName \
+    --output tsv \
+    | tr -d '\r')
+```
 
-   ```bash
-   export RESOURCE_GROUP=spring-ai-postgresql-rg
-   export LOCATION=eastus2
-   echo "RESOURCE_GROUP: $RESOURCE_GROUP LOCATION: $LOCATION"
-   ```
 
-1. Confirm OpenAI Key and Endpoint variables from prior exercise are available:
 
-   ```bash
-   echo "Azure OpenAI Endpoint: $AZURE_OPENAI_ENDPOINT, key: $AZURE_OPENAI_API_KEY"
-   ```
-
-1. Confirm `DB_SERVER_NAME` and `PGHOST` variable from prior exercise is available:
-
-   ```bash
-   echo "DB_SERVER_NAME: $DB_SERVER_NAME PGHOST: $PGHOST"
-   ```
 
 1. Export a name for the new container app:
 
    ```bash
-   export CONTAINER_APP_NAME=rag-api
+   export CONTAINER_APP_NAME=<container-app-name>
    ```
 
 1. Export the name to use as the managed identity for the container app:
 
    ```bash
-   export MANAGED_IDENTITY_NAME=containerappusr
+   export MANAGED_IDENTITY_NAME=<managed-identity-name>
    ```
 
 With these environment values in place, you're now ready to deploy the application into Azure Container Apps.
