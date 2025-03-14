@@ -6,16 +6,28 @@ In this exercise, you implement an Evaluator Optimizer Agent pattern to improve 
 
 ## Set up environment variables
 
-For this exercise, you need some environment variables from the previous exercise. Use the following commands to verify these variables are available. If these variables aren't available, refer to the prior exercises to recreate them.
+For this exercise, you need some environment variables from prior exercises. If you're using the same Bash window, these variables should still exist. If the variables are no longer available, use the following commands to recreate them. Be sure to replace the `<...>` placeholders with your own values, and use the same values that you used previously.
 
-```bash
-echo AZURE_OPENAI_ENDPOINT: $AZURE_OPENAI_ENDPOINT
-echo AZURE_OPENAI_API_KEY: $AZURE_OPENAI_API_KEY
+```azurecli
+export RESOURCE_GROUP=<resource-group>
+export OPENAI_RESOURCE_NAME=OpenAISpringAI
+export AZURE_OPENAI_ENDPOINT=$(az cognitiveservices account show \
+    --resource-group $RESOURCE_GROUP \
+    --name $OPENAI_RESOURCE_NAME \
+    --query "properties.endpoint" \
+    --output tsv \
+    | tr -d '\r')
+export AZURE_OPENAI_API_KEY=$(az cognitiveservices account keys list \
+    --resource-group $RESOURCE_GROUP \
+    --name $OPENAI_RESOURCE_NAME \
+    --query "key1" \
+    --output tsv \
+    | tr -d '\r')
 ```
 
 ### Create the BlogWriterService
 
-Within the **service** directory, create a new file named **BlogWriterService.java** with the following code:
+Within the **service** directory, create a new file named **BlogWriterService.java** and add the following code:
 
 ```java
 package com.example.springaiapp.service;
@@ -643,7 +655,9 @@ This command will return a JSON response containing both the blog content and me
 }
 ```
 
-> **Expected Behavior:** With the implementation as shown above, you should consistently see at least 2 iterations (and often 3) in the feedback loop. The first iteration is guaranteed by the instruction to the Editor agent to always provide improvement feedback on the first round. This ensures you can observe the complete Evaluator Optimizer Agent pattern in action. Without this forced iteration, you might occasionally see the Editor agent approve the first draft immediately, which doesn't demonstrate the full pattern.
+### Expected behavior
+
+With the implementation as shown above, you should consistently see at least 2 iterations (and often 3) in the feedback loop. The first iteration is guaranteed by the instruction to the Editor agent to always provide improvement feedback on the first round. This ensures you can observe the complete Evaluator Optimizer Agent pattern in action. Without this forced iteration, you might occasionally see the Editor agent approve the first draft immediately, which doesn't demonstrate the full pattern.
 
 The JSON response provides valuable insights into the generation process, allowing you to track:
 

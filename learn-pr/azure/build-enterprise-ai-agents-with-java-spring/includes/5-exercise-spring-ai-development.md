@@ -42,7 +42,7 @@ export PGHOST=$(az postgres flexible-server show \
     | tr -d '\r')
 ```
 
-Export the following new variable, which you need for this lab:
+You also need a new environment variable for this unit. Use the following command to define this variable:
 
 ```bash
 export OPENAI_RESOURCE_NAME=OpenAISpringAI

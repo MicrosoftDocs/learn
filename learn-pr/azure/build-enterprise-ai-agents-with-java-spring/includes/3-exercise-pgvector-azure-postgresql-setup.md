@@ -18,18 +18,18 @@ export LOCATION=<location>
 export DB_SERVER_NAME=<server-name>
 ```
 
-You can limit access to the PostgreSQL server external IP address by specifying an appropriate IP address value for your environment. Use the public IP address of the computer you're using so that only your IP address can access the server. Use the following commands to set an environment variable for later use when initializing the `start` and `end` IP values:
+Next, use the following command to store your public IP address in an environment variable and display it in the console. You use this value later in this unit to limit access to the PostgreSQL server external IP address. By using the public IP address of the computer you're using, only your IP address can access the server.
 
 ```bash
 export PUBLIC_IP=$(curl -s ipinfo.io/ip)
 echo "Start IP: $PUBLIC_IP"
 ```
 
-> [!NOTE]
-> The IP address can change. If this happens, the corresponding firewall rule must be updated accordingly.
-
 > [!TIP]
 > This command should work in most Linux distributions and in Git Bash. If it doesn't work, you can alternatively get your public IP address using [https://whatismyipaddress.com/](https://whatismyipaddress.com/)
+
+> [!NOTE]
+> Your IP address can change. If this happens, you must update the corresponding firewall rule accordingly.
 
 ### Create a resource group
 

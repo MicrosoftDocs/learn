@@ -4,7 +4,7 @@ In this unit, you deploy your Spring AI application to Azure Container Apps for 
 
 For this exercise, you need some environment variables from prior exercises. If you're using the same Bash window, these variables should still exist. If the variables are no longer available, use the following commands to recreate them. Be sure to replace the `<...>` placeholders with your own values, and use the same values that you used previously.
 
-```bash
+```azurecli
 export RESOURCE_GROUP=<resource-group>
 export LOCATION=<location>
 export OPENAI_RESOURCE_NAME=OpenAISpringAI
@@ -29,22 +29,15 @@ export PGHOST=$(az postgres flexible-server show \
     | tr -d '\r')
 ```
 
+You also need some new environment variables for this unit. Use the following command to define these variables. Be sure to replace the `<...>` placeholders with your own values.
 
+```bash
+export CONTAINER_APP_NAME=<container-app-name>
+export MANAGED_IDENTITY_NAME=<managed-identity-name>
+export ENVIRONMENT=<Azure-Container-Apps-environment>
+```
 
-
-1. Export a name for the new container app:
-
-   ```bash
-   export CONTAINER_APP_NAME=<container-app-name>
-   ```
-
-1. Export the name to use as the managed identity for the container app:
-
-   ```bash
-   export MANAGED_IDENTITY_NAME=<managed-identity-name>
-   ```
-
-With these environment values in place, you're now ready to deploy the application into Azure Container Apps.
+With these environment variables in place, you're now ready to deploy the application to Azure Container Apps.
 
 ## Create a Dockerfile
 
@@ -130,7 +123,7 @@ az containerapp identity assign \
     --system-assigned
 ```
 
-To get the ID of the system assigned managed identity, use the following command:
+To get the ID of the system assigned managed identity and display it, use the following commands:
 
 ```azurecli
 export MANAGED_IDENTITY_ID=$(az containerapp show \
@@ -220,7 +213,7 @@ The response should be similar to the following example:
 Use the following command to test the blog generation endpoint:
 
 ```bash
-curl -G "https://$URL/api/blog" --data-urlencode "topic=Spring AI Innovation"
+curl -G "https://$URL/api/blog" --data-urlencode "topic=Java on Azure"
 ```
 
 Because of the review iteration cycle, this request takes longer to complete. After it completes, you should see a blog entry similar to the following example:
