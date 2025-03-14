@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-adoption-framework-strategy.team
+metadata:
+  title: Define Your Cloud Strategy Team
+  description: Learn how to define a cloud strategy team that can help facilitate alignment between business and adoption initiatives.
+  ms.date: 03/14/2025
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
+title: Define your cloud strategy team
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-team.md)]
+quiz:
+ title: Check your knowledge
+ questions: 
+ - content: What role do business decision makers play in a cloud strategy team?
+   choices:
+   - content: They focus solely on technical feasibility.
+     isCorrect: false
+     explanation: Incorrect. IT roles focus on technical feasibility.
+   - content: They ensure that cloud strategies drive business value and align with revenue generation, customer engagement, and operational goals.
+     isCorrect: true
+     explanation: Correct. Business decision makers ensure that cloud strategies align with business objectives.
+   - content: They minimize legal and compliance risks, and ensure that cloud practices meet regulatory and organizational standards.
+     isCorrect: false
+     explanation: Incorrect. Compliance teams focus on these aspects.
+   - content: They translate business objectives into secure, scalable, reliable, and adaptable technical architectures.
+     isCorrect: false
+     explanation: Incorrect. Lead architects focus on these aspects.

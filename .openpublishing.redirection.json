@@ -9183,6 +9183,42 @@
       "redirect_url": "/training/modules/prepare-your-dev-environment-for-azure-development/4-summary"
     },
     {
+      "source_path_from_root": "/learn-pr/azure/cloud-adoption-framework-strategy/2-customer-narrative.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-strategy/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/cloud-adoption-framework-strategy/3-capture-strategic-motivation.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-strategy/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/cloud-adoption-framework-strategy/4-define-objective-key-result.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-strategy/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/cloud-adoption-framework-strategy/5-evaluate-financial-considerations.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-strategy/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/cloud-adoption-framework-strategy/6-understand-technical-considerations.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-strategy/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/cloud-adoption-framework-strategy/7a-create-a-business-case.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-strategy/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/cloud-adoption-framework-strategy/7-knowledge-check.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-strategy/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/cloud-adoption-framework-strategy/8-summary.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-strategy/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/cloud-adoption-framework-strategy/1-introduction.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-strategy/"
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/principles-cloud-computing/1-introduction.md",
       "redirect_url": "/training/modules/fundamental-azure-concepts"
     },
