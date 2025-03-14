@@ -3,7 +3,7 @@ uid: learn.cloud-adoption-framework-strategy.resiliency
 metadata:
   title: Resiliency Considerations for Your Cloud Adoption Strategy
   description: Learn about resiliency considerations so that you can design a strategy that minimizes the effect of disruptions and helps maintain business continuity.
-  ms.date: 10/10/2023
+  ms.date: 03/14/2025
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit

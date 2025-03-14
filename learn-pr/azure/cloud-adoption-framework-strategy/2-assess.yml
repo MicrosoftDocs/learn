@@ -3,11 +3,11 @@ uid: learn.cloud-adoption-framework-strategy.assess
 metadata:
   title: Assess Your Cloud Adoption Strategy
   description: Learn how to assess your cloud adoption strategy, including identifying gaps, getting guidance, and taking action to improve your strategy.
-  ms.date: 10/10/2023
+  ms.date: 03/14/2025
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit
 title: Assess your cloud adoption strategy
-durationInMinutes: 10
+durationInMinutes: 5
 content: |
   [!include[](includes/2-assess.md)]
