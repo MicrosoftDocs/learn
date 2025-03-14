@@ -10,13 +10,12 @@ az login
 
 ## Set parameter values
 
-Use the following commands to set some environment variables. These values are passed to subsequent commands to create the database and required resources. The `$RANDOM` function is used to provide part of the server name, which must be globally unique across all of Azure. Change the location as appropriate for your environment.
+Use the following commands to set some environment variables. These values are passed to subsequent commands to create the database and required resources. Be sure to replace the `<...>` placeholders with your own values. The `<server-name>` value must be globally unique across all of Azure. An easy way to ensure uniqueness is to use a combination of your initials, today's date, and some identifier - for example, **abc-031325-spring-ai-postgresql-server**.
 
 ```bash
-export ID=$RANDOM
-export LOCATION="eastus2"
-export RESOURCE_GROUP="spring-ai-postgresql-rg"
-export DB_SERVER_NAME="spring-ai-postgresql-server-$ID"
+export RESOURCE_GROUP=<resource-group>
+export LOCATION=<location>
+export DB_SERVER_NAME=<server-name>
 ```
 
 You can limit access to the PostgreSQL server external IP address by specifying an appropriate IP address value for your environment. Use the public IP address of the computer you're using so that only your IP address can access the server. Use the following commands to set an environment variable for later use when initializing the `start` and `end` IP values:

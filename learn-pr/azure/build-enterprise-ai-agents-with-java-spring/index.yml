@@ -10,6 +10,7 @@ metadata:
   ms.topic: module
   ms.custom: team=cloud_advocates
   ms.service: azure-container-apps
+  ms.custom: devx-track-java
   ms.collection: ce-skilling-ai-copilot
 title: Build enterprise AI agents with Java and Spring
 summary: Build and deploy a Java application and AI agents using Spring AI, Azure OpenAI, and Azure Container Apps with PostgreSQL vector storage.
