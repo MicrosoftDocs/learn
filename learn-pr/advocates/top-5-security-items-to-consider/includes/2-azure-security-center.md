@@ -15,7 +15,7 @@ Defender for Cloud is part of the [Center for Internet Security](https://www.cis
 
 ## Activating Microsoft Defender for Cloud
 
-Microsoft Defender for Cloud provides unified security management and advanced threat protection for hybrid cloud workloads and is offered in several plans. The Foundational Cloud Security Posture Management (CSPM) plan, which is free and activated by default provides security policies, assessments, and recommendations. The Defender CSPM plan provides a robust set of features, including threat intelligence. There are also plans for Servers, App Service, and more.
+Microsoft Defender for Cloud provides unified security management and advanced threat protection for hybrid cloud workloads, and is offered in several plans. The Foundational Cloud Security Posture Management (CSPM) plan, which is free and activated by default provides security policies, assessments, and recommendations. The Defender CSPM plan provides a robust set of features, including threat intelligence. There are also plans for Servers, App Service, and more.
 
 Given the benefits of Defender for Cloud, the security team at your company has decided that it will be turned on for all subscriptions at your office. You got an email this morning to turn it on for your applications, so let's look at how to do that.
 
