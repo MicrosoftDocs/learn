@@ -9215,6 +9215,10 @@
       "redirect_url": "/training/modules/cloud-adoption-framework-strategy/"
     },
     {
+      "source_path_from_root": "/learn-pr/azure/cloud-adoption-framework-strategy/1-introduction.yml",
+      "redirect_url": "/training/modules/cloud-adoption-framework-strategy/"
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/principles-cloud-computing/1-introduction.md",
       "redirect_url": "/training/modules/fundamental-azure-concepts"
     },
