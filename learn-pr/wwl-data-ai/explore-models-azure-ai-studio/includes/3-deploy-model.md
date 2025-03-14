@@ -44,7 +44,7 @@ You can deploy:
 - Third-party models like DeepSeek-R1 as [Models as a Service](/azure/ai-foundry/model-inference/concepts/models?azure-portal=true) as part of Azure AI model inference or with [serverless APIs](/azure/ai-foundry/how-to/model-catalog-overview#content-safety-for-models-deployed-via-serverless-apis?azure-portal=true).
 - Open and custom models like models from Hugging Face with your own [user-managed compute](/azure/ai-foundry/how-to/model-catalog-overview#availability-of-models-for-deployment-as-managed-compute?azure-portal=true).
 
-The associated cost will depend on the type of model you deploy, which deployment option you choose, and what you are doing with the model:
+The associated cost depends on the type of model you deploy, which deployment option you choose, and what you are doing with the model:
 
 |Activity|Azure OpenAI models|Azure AI model inference| Serverless APIs (pay-as-you-go)|Managed compute|
 |---|---|---|---|---|
