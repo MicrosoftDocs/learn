@@ -38,7 +38,7 @@ To sign in to the server using SSH and a TCP tunnel, use the following steps:
 
     ```bash
     export PORT_NUMBER=<the port number from above>
-    ssh root@127.0.0.1 -L 9990:localhost:9990 -p $PORT_NUMBER 
+    ssh root@127.0.0.1 -L 9990:localhost:9990 -p $PORT_NUMBER
     ```
 
     > [!TIP]
@@ -48,18 +48,18 @@ To sign in to the server using SSH and a TCP tunnel, use the following steps:
 
     ```output
     ssh root@127.0.0.1 -L 9990:localhost:9990 -p 65171
-    root@127.0.0.1's password: 
+    root@127.0.0.1's password:
     Last login: Tue Feb 25 07:44:49 2025 from 169.254.129.2
-       _|_|                                            
-     _|    _|  _|_|_|_|  _|    _|  _|  _|_|    _|_|    
-     _|_|_|_|      _|    _|    _|  _|_|      _|_|_|_|  
-     _|    _|    _|      _|    _|  _|        _|        
+       _|_|
+     _|    _|  _|_|_|_|  _|    _|  _|  _|_|    _|_|
+     _|_|_|_|      _|    _|    _|  _|_|      _|_|_|_|
+     _|    _|    _|      _|    _|  _|        _|
      _|    _|  _|_|_|_|    _|_|_|  _|          _|_|_|
-    
+
          J A V A   O N   A P P   S E R V I C E
-    
+
     Documentation: https://aka.ms/appservice
-    
+
     **NOTE**: No files or system changes outside of /home will persist beyond your application's current session. /home is your application's persistent storage and is shared across all the server instances.
     ```
 

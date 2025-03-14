@@ -10,7 +10,7 @@ Configure the app with the Maven Plugin for Azure App Service by using the follo
     ./mvnw com.microsoft.azure:azure-webapp-maven-plugin:2.13.0:config
     ```
 
-    > [!IMPORTANT]  
+    > [!IMPORTANT]
     > If you change the region of your MySQL server, you should match that region to the region of your Jakarta EE application server in order to minimize latency delays.
 
 1. Use the values in the following table to answer the interactive prompts:
@@ -29,21 +29,21 @@ Configure the app with the Maven Plugin for Azure App Service by using the follo
     ```output
     ./mvnw com.microsoft.azure:azure-webapp-maven-plugin:2.13.0:config
     [INFO] Scanning for projects...
-    [INFO] 
+    [INFO]
     [INFO] ---------< com.microsoft.azure.samples:jakartaee-app-on-jboss >---------
     [INFO] Building jakartaee-app-on-jboss 0.1-SNAPSHOT
     [INFO] --------------------------------[ war ]---------------------------------
-    [INFO] 
+    [INFO]
     [INFO] --- azure-webapp-maven-plugin:2.13.0:config (default-cli) @ jakartaee-app-on-jboss ---
-    Create new run configuration (Y/N) [Y]: 
+    Create new run configuration (Y/N) [Y]:
     Define value for OS [Linux]:
       1: Windows
     * 2: Linux
       3: Docker
-    Enter your choice: 
+    Enter your choice:
     Define value for javaVersion [Java 17]:
     * 1: Java 17
-    Enter your choice: 
+    Enter your choice:
     Define value for webContainer [Tomcat 10.0]:
     * 1: Tomcat 10.0
       2: Tomcat 9.0
@@ -53,7 +53,7 @@ Configure the app with the Maven Plugin for Azure App Service by using the follo
     * 1: P1v3
       2: P2v3
       3: P3v3
-    Enter your choice: 
+    Enter your choice:
     Please confirm webapp properties
     AppName : jakartaee-app-on-jboss-1740086485353
     ResourceGroup : jakartaee-app-on-jboss-1740086485353-rg
@@ -63,7 +63,7 @@ Configure the app with the Maven Plugin for Azure App Service by using the follo
     Java Version: Java 17
     Web server stack: Jbosseap 7
     Deploy to slot : false
-    Confirm (Y/N) [Y]: 
+    Confirm (Y/N) [Y]:
     [INFO] Saving configuration to pom.
     [INFO] ------------------------------------------------------------------------
     [INFO] BUILD SUCCESS
@@ -149,13 +149,13 @@ Configure the app with the Maven Plugin for Azure App Service by using the follo
 
     The resource `<type>startup</type>` deploys the specified script as the **startup.sh** file for Linux or **startup.cmd** for Windows. The deployment location is **/home/site/scripts/**.
 
-    > [!NOTE]  
+    > [!NOTE]
     > You can choose the deployment option and deployment location by specifying `type` in one of the following ways:
     >
     > - `type=war` deploys the WAR file to **/home/site/wwwroot/app.war** if `path` isn't specified.
     > - `type=war&path=webapps/<appname>` deploys the WAR file to **/home/site/wwwroot/webapps/\<appname\>**.
     > - `type=jar` deploys the WAR file to **/home/site/wwwroot/app.jar**. The `path` parameter is ignored.
-    > - `type=ear` deploys the WAR file to **/home/site/wwwroot/app.ear**. The `path` parameter is ignored.  
+    > - `type=ear` deploys the WAR file to **/home/site/wwwroot/app.ear**. The `path` parameter is ignored.
     > - `type=lib` deploys the JAR to **/home/site/libs**. You must specify `path` parameter.
     > - `type=static` deploys the script to **/home/site/scripts**. You must specify the `path` parameter.
     > - `type=startup` deploys the script as **startup.sh** on Linux, or **startup.cmd** on Windows. The script is deployed to **/home/site/scripts/**. The `path` parameter is ignored.
@@ -221,7 +221,7 @@ The following output is typical:
 [INFO] Trying to deploy artifact to jakartaee-app-on-jboss-eap8-yoshio...
 [INFO] Deploying (/mslearn-jakarta-ee-azure/target/ROOT.war)[war]  ...
 [INFO] Deploying (/mslearn-jakarta-ee-azure/src/main/webapp/WEB-INF/createMySQLDataSource.sh)[startup]  ...
-[INFO] Application url: https://jakartaee-app-on-jboss-eap8-yoshio.azurewebsites.net                
+[INFO] Application url: https://jakartaee-app-on-jboss-eap8-yoshio.azurewebsites.net
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
@@ -306,14 +306,14 @@ After you configure the startup script, configure App Service to use Service Con
     ```bash
     export PASSWORDLESS_USER_NAME_SUFFIX=jbossapp
     export SOURCE_WEB_APP_ID=$(az webapp list \
-        --resource-group  $RESOURCE_GROUP_NAME \ 
+        --resource-group  $RESOURCE_GROUP_NAME \
         --query "[0].id" \
         --output tsv)
     export MYSQL_ID=$(az mysql flexible-server list \
         --resource-group $RESOURCE_GROUP_NAME \
         --query "[0].id" \
         --output tsv)
-    export TARGET_MYSQL_ID=$MYSQL_ID/databases/world 
+    export TARGET_MYSQL_ID=$MYSQL_ID/databases/world
     export MANAGED_ID=$(az identity list \
         --resource-group $RESOURCE_GROUP_NAME \
         --query "[0].id" \
@@ -396,7 +396,7 @@ Previously, you implemented the database access code by using Java Persistence A
     @Transactional(REQUIRED)
     @RequestScoped
     public class CityService {
-    
+
         @PersistenceContext(unitName = "JPAWorldDatasourcePU")
         EntityManager em;
     ```
@@ -410,7 +410,7 @@ In the sample application, you implemented three REST endpoints. To access the a
 1. Use your browser to navigate to the application URL, which you got from previous output. The relevant line begins with `[INFO] Successfully deployed the artifact`, as in the following typical output:
 
     ```output
-    [INFO] Successfully deployed the artifact to  
+    [INFO] Successfully deployed the artifact to
     https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net
     ```
 

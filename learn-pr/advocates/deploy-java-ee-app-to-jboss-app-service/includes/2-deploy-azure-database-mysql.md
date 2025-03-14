@@ -44,7 +44,7 @@ The steps in this unit illustrate deploying an Azure Database for MySQL - Flexib
         --admin-password $MYSQL_PASSWORD \
         --sku-name Standard_B1ms \
         --tier Burstable \
-        --public-access $PUBLIC_IP  \
+        --public-access $PUBLIC_IP \
         --storage-size 32 \
         --storage-auto-grow Enabled \
         --iops 500 \
@@ -74,7 +74,7 @@ Use the following steps to create a database, connect to the server, and run a q
     az mysql flexible-server db create \
         --resource-group  $MYSQL_RESOURCE_GROUP_NAME \
         --server-name $MYSQL_SERVER_NAME \
-        --database-name $newdatabase \
+        --database-name newdatabase \
         --charset utf8mb4 \
         --collation utf8mb4_unicode_ci
     ```
@@ -86,7 +86,7 @@ Use the following steps to create a database, connect to the server, and run a q
         --name $MYSQL_SERVER_NAME \
         --admin-user $MYSQL_USER \
         --admin-password $MYSQL_PASSWORD \
-        --database-name $newdatabase \
+        --database-name newdatabase \
         --interactive
     ```
 
@@ -97,13 +97,17 @@ Use the following steps to create a database, connect to the server, and run a q
         --name $MYSQL_SERVER_NAME \
         --admin-user $MYSQL_USER \
         --admin-password $MYSQL_PASSWORD \
-        --database-name $newdatabase \
+        --database-name newdatabase \
         --querytext "select * from table1;"
+
+    You can alternatively put the query into a file and use the following command to run the query:
+
+    ```azurecli
     az mysql flexible-server execute \
-        --name <server-name> \
-        --admin-user <username> \
-        --admin-password <password> \
-        --database-name <database-name> \
+        --name $MYSQL_SERVER_NAME \
+        --admin-user $MYSQL_USER \
+        --admin-password $MYSQL_PASSWORD \
+        --database-name newdatabase \
         --file-path "./test.sql"
     ```
 

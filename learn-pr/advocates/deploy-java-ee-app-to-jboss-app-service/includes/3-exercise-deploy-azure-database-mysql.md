@@ -103,8 +103,8 @@ az configure --defaults location=<desired-location>
     [INFO]
     [INFO] az mysql flexible-server connect -g $RESOURCE_GROUP_NAME -n $MYSQL_SERVER_INSTANCE -u azureuser -p '!yhYrNhwQ27640' --interactive
     [INFO] Password: [!yhYrNhwQ27640]
-    [INFO] 
-    [INFO] 
+    [INFO]
+    [INFO]
     [INFO] 3. Clean up Resource (Delete MySQL DB)
     [INFO] az group delete -n $RESOURCE_GROUP_NAME
     [INFO] -------------------------------------------------------
@@ -153,7 +153,7 @@ To sign in to the database and view the available usernames and plugins, use the
     az mysql flexible-server connect \
         --name $MYSQL_SERVER_INSTANCE \
         --user azureuser \
-        --interactive 
+        --interactive
     ```
 
 1. When the system prompts you, enter a password.
@@ -186,12 +186,15 @@ To sign in to the database and view the available usernames and plugins, use the
 
 1. To connect to the Azure Database for MySQL - Flexible Server instance, use the following command:
 
-    ```bash
+    ```azurecli
      mysql \
          --host $MYSQL_SERVER_INSTANCE.mysql.database.azure.com \
          --user CURRENT_AZ_LOGIN_USER_NAME#EXT#@CURRENT_AZ_LOGIN_USER_NAME \
          --enable-cleartext-plugin \
-         --password=$(az account get-access-token --resource-type oss-rdbms --output tsv --query accessToken)
+         --password=$(az account get-access-token \
+             --resource-type oss-rdbms \
+             --output tsv \
+             --query accessToken)
     ```
 
     > [!NOTE]
@@ -237,7 +240,7 @@ Use the following steps to create a database for your application and to verify 
         --name $MYSQL_SERVER_NAME \
         --admin-password azureuser \
         --admin-password '$MYSQL_PASSWORD' \
-        --file-path -f "./world-db/world.sql"
+        --file-path "./world-db/world.sql"
     ```
 
 1. Confirm that the databases and tables are in your server by using the following command:
