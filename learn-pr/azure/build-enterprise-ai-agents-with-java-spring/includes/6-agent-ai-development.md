@@ -20,7 +20,7 @@ AI agents offer several advantages for application development by enabling the c
 
 ## Agent workflows and patterns
 
-Modern AI applications can be designed using various agentic patterns. The Spring AI blog post on Agentic Patterns outlines several key workflows:
+Modern AI applications can be designed using various agentic patterns. The [Spring AI blog post on agentic patterns](https://spring.io/blog/2025/01/21/spring-ai-agentic-patterns) outlines several key workflows:
 
 - Chain workflow: breaks complex tasks into a series of sequential steps. Each step processes the output of the previous one, enabling gradual transformation and refinement of data.
 
