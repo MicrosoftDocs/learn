@@ -21,7 +21,7 @@ A RAG application typically has the following capabilities:
 
 ## Agents and workflows
 
-Spring AI also empowers you to build dynamic AI agents and orchestrated workflows. While various patterns exist - like chain, parallelization and routing - this module focuses exclusively on the *Evaluator-Optimizer* workflow.
+Spring AI also empowers you to build dynamic AI agents and orchestrated workflows. Although various patterns exist - like chain, parallelization and routing - this module focuses exclusively on the *Evaluator-Optimizer* workflow.
 
 This pattern iteratively refines outputs through a generator-evaluator loop, ensuring high-quality and adaptive AI responses.
 

@@ -9,7 +9,7 @@ Congratulations! You completed this comprehensive module on building AI-powered 
 
 - AI agents:
   - Agent AI design patterns.
-  - The Evaluator-Optimizer Agent pattern.
+  - The Evaluator-Optimizer agent pattern.
 
 - Azure integration:
   - OpenAI service configuration.

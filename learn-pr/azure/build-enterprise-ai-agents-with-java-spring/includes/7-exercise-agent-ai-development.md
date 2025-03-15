@@ -1,8 +1,8 @@
-In this unit, you extend your RAG application to demonstrate an *Evaluator Optimizer Agent* pattern. This pattern leverages multiple AI agents to generate, evaluate, and refine content iteratively. You can use this pattern to generate and refine content from blog posts.
+In this unit, you extend your RAG application to demonstrate the *Evaluator-Optimizer Agent* pattern. This pattern uses multiple AI agents to generate, evaluate, and refine content iteratively. You can use this pattern to generate and refine content from blog posts.
 
-## Implement Evaluator Optimizer Agent for Blog Post Generation
+## Implement the Evaluator-Optimizer agent pattern for blog post generation
 
-In this exercise, you implement an Evaluator Optimizer Agent pattern to improve generated content. In this design, one AI agent - the *Writer* - generates an initial draft - for example, a blog post. Another agent - the *Evaluator* - reviews and provides actionable feedback. The Writer refines the draft based on the feedback, and the process repeats until the content is approved or the maximum number of iterations is reached.
+In this exercise, you implement the Evaluator-Optimizer agent pattern to improve generated content. In this design, one AI agent - the *Writer* - generates an initial draft - for example, a blog post. Another agent - the *Evaluator* - reviews and provides actionable feedback. The Writer refines the draft based on the feedback, and the process repeats until the content is approved or the maximum number of iterations is reached.
 
 ## Set up environment variables
 
@@ -42,11 +42,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * This service demonstrates the Evaluator Optimizer Agent pattern using Spring AI.
+ * This service demonstrates the Evaluator-Optimizer agent pattern using Spring AI.
  * 
  * The pattern involves multiple AI agents working together to iteratively improve content:
- * 1. Writer Agent - Creates the initial draft and refines based on feedback
- * 2. Editor Agent - Evaluates the draft and provides actionable feedback
+ * 1. Writer agent - Creates the initial draft and refines based on feedback
+ * 2. Editor agent - Evaluates the draft and provides actionable feedback
  * 
  * This iterative refinement continues until the content is approved or reaches max iterations.
  */
@@ -74,7 +74,7 @@ public class BlogWriterService {
     }
 
     /**
-     * Generates a concise blog post (max 10 sentences) using the Evaluator Optimizer Agent pattern.
+     * Generates a concise blog post (max 10 sentences) using the Evaluator-Optimizer agent pattern.
      * 
      * The method uses multiple AI agents to:
      * 1. Generate an initial draft
@@ -497,33 +497,33 @@ public class BlogWriterService {
 }
 ```
 
-This implementation includes several key features:
+This implementation includes the following key features:
 
-1. **Basic Blog Generation** (`generateBlogPost` method):
-   - Creates a well-structured blog post on a given topic
-   - Uses an iterative refinement process with Writer and Editor agents
-   - Enforces a 10-sentence maximum length
+- Basic blog generation. The `generateBlogPost` method:
+  - Creates a well-structured blog post on a given topic.
+  - Uses an iterative refinement process with Writer and Editor agents.
+  - Enforces a 10-sentence maximum length.
 
-2. **Enhanced Metadata Generation** (`generateBlogPostWithMetadata` method):
-   - Extends the basic functionality to capture detailed metadata about the generation process
-   - Tracks iterations, approval status, token usage, and editor feedback history
-   - Returns all information in a structured `BlogGenerationResult` object
+- Enhanced metadata generation. The `generateBlogPostWithMetadata` method:
+  - Extends the basic functionality to capture detailed metadata about the generation process.
+  - Tracks iterations, approval status, token usage, and editor feedback history.
+  - Returns all information in a structured `BlogGenerationResult` object.
 
-3. **Token Usage Estimation**:
-   - Provides a rough approximation of token usage by counting characters
-   - Tracks prompt tokens, completion tokens, and total tokens used
-   - This is a workaround since we no longer directly access the `ChatResponse` class
+- Token usage estimation:
+  - Provides a rough approximation of token usage by counting characters.
+  - Tracks prompt tokens, completion tokens, and total tokens used.
+  - This process is a workaround because we no longer directly access the `ChatResponse` class.
 
-4. **BlogGenerationResult Inner Class**:
-   - Serves as a container for both the generated content and its metadata
-   - Includes fields for content, iterations, approval status, token usage, and editor feedback
-   - Provides getters, setters, and convenience methods for tracking metadata
+- The `BlogGenerationResult` inner class:
+  - Serves as a container for both the generated content and its metadata.
+  - Includes fields for content, iterations, approval status, token usage, and editor feedback.
+  - Provides getters, setters, and convenience methods for tracking metadata.
 
-The service is thoroughly commented to explain the Evaluator Optimizer Agent pattern and how Spring AI's fluent API facilitates interactions between AI agents.
+The service is thoroughly commented to explain the Evaluator-Optimizer agent pattern and how Spring AI's fluent API facilitates interactions between AI agents.
 
 ### Create the BlogWriterController class
 
-To expose the blog generation functionality via a REST endpoint, create a new file named **BlogWriterController.java** within the **controller** directory:
+To expose the blog generation functionality via a REST endpoint, create a new file named **BlogWriterController.java** within the **controller** directory, and then add the following code:
 
 ```java
 package com.example.springaiapp.controller;
@@ -598,17 +598,17 @@ public class BlogWriterController {
 }
 ```
 
-This controller exposes a GET endpoint at `/api/blog` that accepts a `topic` parameter and returns a structured JSON response containing both the generated blog content and detailed metadata about the generation process. The metadata includes:
+This controller exposes a GET endpoint at `/api/blog` that accepts a `topic` parameter and returns a structured JSON response containing both the generated blog content and detailed metadata about the generation process. The metadata includes the following information:
 
-1. Number of iterations performed during generation
-2. Whether the final blog post was approved by the Editor agent
-3. Estimated token usage statistics (prompt, completion, and total tokens) 
-4. Editor feedback history from each iteration
-5. Information about the AI model used
+- The number of iterations performed during generation.
+- The approval status of the final blog post by the Editor agent.
+- Estimated token usage statistics: prompt, completion, and total tokens.
+- Editor feedback history from each iteration.
+- Information about the AI model used.
 
 ### Test the blog generation
 
-After adding the `BlogWriterService` and its controller, use the following command to compile and run the application:
+After you add the `BlogWriterService` and its controller, use the following command to compile and run the application:
 
 ```bash
 mvn spring-boot:run
@@ -618,10 +618,10 @@ Then, use the following command to test the blog generation endpoint:
 
 ```bash
 curl --request GET \
-  --url 'http://localhost:8080/api/blog?topic=Java%2520on%2520Azure'
+    --url 'http://localhost:8080/api/blog?topic=Java%2520on%2520Azure'
 ```
 
-This command will return a JSON response containing both the blog content and metadata about the generation process. Here's an example of the JSON structure you'll receive:
+This command returns a JSON response containing both the blog content and metadata about the generation process, as shown in the following example:
 
 ```json
 {
@@ -657,16 +657,16 @@ This command will return a JSON response containing both the blog content and me
 
 ### Expected behavior
 
-With the implementation as shown above, you should consistently see at least 2 iterations (and often 3) in the feedback loop. The first iteration is guaranteed by the instruction to the Editor agent to always provide improvement feedback on the first round. This ensures you can observe the complete Evaluator Optimizer Agent pattern in action. Without this forced iteration, you might occasionally see the Editor agent approve the first draft immediately, which doesn't demonstrate the full pattern.
+With this implementation, you should consistently see at least two iterations - and often three - in the feedback loop. The first iteration is guaranteed by the instruction to the Editor agent to always provide improvement feedback on the first round. This instruction ensures that you can observe the complete Evaluator-Optimizer agent pattern in action. Without this forced iteration, you might occasionally see the Editor agent approve the first draft immediately, which doesn't demonstrate the full pattern.
 
-The JSON response provides valuable insights into the generation process, enabling you to track:
+The JSON response provides valuable insights into the generation process, enabling you to track the following information:
 
-- How many iterations were needed (3 in this example)
-- Whether the post was approved by the Editor agent (false in this example, meaning it reached max iterations)
-- The specific feedback from the Editor agent during each iteration
-- Estimated token usage for the entire process
+- How many iterations were needed - three in this example.
+- The approval status of the post by the Editor agent - false in this example, meaning it reached the maximum number of iterations.
+- The specific feedback from the Editor agent during each iteration.
+- Estimated token usage for the entire process.
 
-You can also examine the detailed logs, which are automatically captured by the `SimpleLoggerAdvisor`, by ensuring your application's logging level is set to DEBUG for the Spring AI packages:
+You can also examine the detailed logs, which `SimpleLoggerAdvisor` captures automatically, by ensuring that your application's logging level is set to DEBUG for the Spring AI packages. This setting is shown in the following example:
 
 ```properties
 # In application.properties
@@ -675,4 +675,4 @@ logging.level.org.springframework.ai.chat.client.advisor=DEBUG
 
 ## Unit summary
 
-In this unit, you extended your Spring AI application capabilities by incorporating an Evaluator Optimizer Agent pattern. This pattern enhances content generation by iteratively refining a blog post through automated evaluation and optimization. You also learned how to implement a structured JSON response that includes detailed metadata about the generation process, providing insights into the iterative refinement and resource usage of the AI-powered content generation.
+In this unit, you extended your Spring AI application capabilities by incorporating the Evaluator-Optimizer agent pattern. This pattern enhances content generation by iteratively refining a blog post through automated evaluation and optimization. You also learned how to implement a structured JSON response that includes detailed metadata about the generation process, providing insights into the iterative refinement and resource usage of the AI-powered content generation.

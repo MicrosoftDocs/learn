@@ -3,7 +3,7 @@ uid: learn.azure.build-enterprise-ai-agents-with-java-spring.5-exercise-spring-a
 title: Exercise - Develop a RAG application with Spring AI and Azure OpenAI
 metadata:
   title: Exercise - Develop a RAG Application with Spring AI and Azure OpenAI
-  description: Learn how to develop a Spring AI application integrated with Azure OpenAI for retrieval augmented generation (RAG) and implement an Evaluator Optimizer Agent to iteratively refine AI-generated content.
+  description: Learn how to develop a Spring AI application integrated with Azure OpenAI for retrieval augmented generation (RAG) and implement an Evaluator-Optimizer agent to iteratively refine AI-generated content.
   ms.date: 03/12/2024
   author: KarlErickson
   ms.author: karler

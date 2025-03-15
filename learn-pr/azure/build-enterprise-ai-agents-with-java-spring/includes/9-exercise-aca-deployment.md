@@ -77,12 +77,12 @@ az containerapp up \
 This command does the following tasks:
 
 - Creates the resource group, if it doesn't already exist.
-- Creates the container apps environment named `$ENVIRONMENT` with a Log Analytics workspace.
+- Creates the Container Apps environment with a Log Analytics workspace. The environment is named using the value specified in the `environment` parameter.
 - Creates an Azure Container Registry instance.
 - Builds the container image using the source code and the **Dockerfile** in the directory specified by the `source` parameter, and then pushes it to the registry.
-- Creates and deploys the container app named `$CONTAINER_APP_NAME` using the built container image.
+- Creates and deploys the container app using the built container image. The container app is named using the value specified in the `name` parameter.
 - Configures `8080` as the HTTP port that the container app listens to for incoming traffic.
-- Deploys the container app in the region specified in the `location` parameter.
+- Deploys the container app to the region specified in the `location` parameter.
 
 To view the logs of your container app, use the following command:
 
@@ -93,7 +93,7 @@ az containerapp logs show \
     --tail 80
 ```
 
-Inspect the logs and notice that the application isn't starting successfully due to missing configuration values as expected:
+The following example shows a typical log. When you inspect the logs, you can see that the application isn't starting successfully due to missing configuration values, which is expected at this point.
 
 ```json
 {"TimeStamp": "2025-03-04T19:04:52.7673831+00:00", "Log": "F Caused by: org.postgresql.util.PSQLException:
@@ -112,7 +112,7 @@ az containerapp update \
 
 ## Enable managed identity
 
-The container app needs to be able to authenticate to PostgresSQL server. You use system-assigned managed identities for authentication.
+The container app needs to be able to authenticate to the PostgresSQL server. You use system-assigned managed identities for authentication.
 
 To enable a system-assigned managed identity for your container app, use the following command:
 
@@ -148,7 +148,7 @@ az postgres flexible-server ad-admin create \
 
 ## Configure the container app environment and secret
 
-Create a secret for sensitive values:
+To create a secret for sensitive values, use the following command:
 
 ```azurecli
 az containerapp secret set \
@@ -158,7 +158,7 @@ az containerapp secret set \
       azure-openai-api-key=$AZURE_OPENAI_API_KEY
 ```
 
-Next set environment variables:
+Next, use the following command to set environment variables:
 
 ```azurecli
 az containerapp update \
@@ -172,7 +172,7 @@ az containerapp update \
       SPRING_AI_VECTORSTORE_PGVECTOR_SCHEMA_NAME=containerapp
 ```
 
-We intentionally use a different `pgvector` schema name to avoid conflicts from using the same schema name with a different user.
+This command intentionally uses a different `pgvector` schema name to avoid conflicts from using the same schema name with a different user.
 
 ## Verify the deployment
 
@@ -189,7 +189,8 @@ export URL=$(az containerapp show \
 Use the following command to test the endpoint:
 
 ```bash
-curl -G "https://$URL/api/rag" --data-urlencode "query=How does QuestionAnswerAdvisor work in Spring AI?"
+curl -G "https://$URL/api/rag" \
+    --data-urlencode "query=How does QuestionAnswerAdvisor work in Spring AI?"
 ```
 
 The response should be similar to the following example:
@@ -201,19 +202,21 @@ In the context of **Spring AI**, the **QuestionAnswerAdvisor** operates as a key
 Use the following command to try another question that isn't in the vector store:
 
 ```bash
-curl -G "https://$URL/api/rag" --data-urlencode "query=What is Vector Search Similarity?"
+curl -G "https://$URL/api/rag" \
+    --data-urlencode "query=What is vector similarity search?"
 ```
 
 The response should be similar to the following example:
 
 ```markdown
-**Vector Search Similarity** refers to the process of comparing and ranking data points - represented as vectors - based on their similarity in a multi-dimensional space. This method is commonly used in applications like information retrieval, recommendation systems, natural language processing, and computer vision.
+**Vector similarity search** refers to the process of comparing and ranking data points - represented as vectors - based on their similarity in a multi-dimensional space. This method is commonly used in applications like information retrieval, recommendation systems, natural language processing, and computer vision.
 ```
 
 Use the following command to test the blog generation endpoint:
 
 ```bash
-curl -G "https://$URL/api/blog" --data-urlencode "topic=Java on Azure"
+curl -G "https://$URL/api/blog" \
+    --data-urlencode "topic=Java on Azure"
 ```
 
 Because of the review iteration cycle, this request takes longer to complete. After it completes, you should see a blog entry similar to the following example:

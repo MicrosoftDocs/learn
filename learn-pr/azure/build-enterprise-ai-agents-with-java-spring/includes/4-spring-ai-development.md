@@ -1,4 +1,4 @@
-In this unit, you learn how to implement retrieval-augmented generation (RAG) in a Spring Boot application using vector search similarity provided by the `pgvector` extension in a PostgreSQL database. We introduce relevant RAG concepts such as embeddings, embedding models, and vector stores. By the end of this unit, you should understand how to apply these tools to enhance your applications with advanced search and retrieval capabilities.
+In this unit, you learn how to implement retrieval-augmented generation (RAG) in a Spring Boot application using vector similarity search provided by the `pgvector` extension in a PostgreSQL database. We introduce relevant RAG concepts such as embeddings, embedding models, and vector stores. By the end of this unit, you should understand how to apply these tools to enhance your applications with advanced search and retrieval capabilities.
 
 ## What are embeddings?
 

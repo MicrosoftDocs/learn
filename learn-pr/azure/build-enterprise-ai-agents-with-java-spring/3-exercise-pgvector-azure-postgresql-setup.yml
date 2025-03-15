@@ -3,7 +3,7 @@ uid: learn.azure.build-enterprise-ai-agents-with-java-spring.3-exercise-pgvector
 title: Exercise - Set up the pgvector extension in Azure PostgresQL for use with Spring AI
 metadata:
   title: Exercise - Set Up the pgvector Extension in Azure PostgreSQL for Use with Spring AI
-  description: Set up the pgvector extension in Azure PostgreSQL to apply the Vector Search Similarity abstraction in Spring AI.
+  description: Set up the pgvector extension in Azure PostgreSQL to apply the vector similarity search abstraction in Spring AI.
   ms.date: 03/12/2024
   author: KarlErickson
   ms.author: karler

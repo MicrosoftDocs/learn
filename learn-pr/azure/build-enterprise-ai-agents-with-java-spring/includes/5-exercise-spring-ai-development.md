@@ -28,7 +28,7 @@ For your application, you first need to deploy one chat model - `gpt-4o` - and o
 
 ### Create an Azure OpenAI account
 
-Use the following command to create the Azure OpenAI account:
+Use the following command to create an Azure OpenAI account:
 
 ```azurecli
 az cognitiveservices account create \
@@ -93,8 +93,8 @@ curl https://start.spring.io/starter.zip \
 
 The generated Spring Boot starter project includes the following configurations and dependencies:
 
-- Spring Boot Version: 3.4.3
-- Java Version: 17
+- Spring Boot version: 3.4.3
+- Java version: 17
 - Dependencies:
   - `web`: adds support for building web applications, including RESTful services using Spring Model View Controller (MVC).
   - `jdbc`: provides Java Database Connectivity (JDBC) support for database access.
@@ -102,36 +102,29 @@ The generated Spring Boot starter project includes the following configurations 
   - `spring-ai-azure-openai`: adds support for integrating with Azure OpenAI services.
   - `spring-ai-vectordb-pgvector`: adds support for using `pgvector`, a PostgreSQL extension for vector embeddings.
 
-Unzip the downloaded file using the command:
+Use the following commands to unzip the downloaded file and navigate to the created directory:
 
 ```bash
 unzip -u spring-ai-app.zip -d spring-ai-app
-```
-
-Switch directory to this path:
-
-```bash
 cd spring-ai-app
 ```
 
-You need to change the **pom.xml** file to include a dependency for passwordless authentication for PostgreSQL.
-
-Open the **pom.xml** file, locate the `<dependencies>` section and add the following dependency:
+Next, you need to change the **pom.xml** file to include a dependency for passwordless authentication for PostgreSQL. Open the **pom.xml** file, locate the `<dependencies>` section, and then add the following dependency:
 
 ```xml
-    <dependency>
-      <groupId>com.azure.spring</groupId>
-      <artifactId>spring-cloud-azure-starter-jdbc-postgresql</artifactId>
-    </dependency>
+<dependency>
+  <groupId>com.azure.spring</groupId>
+  <artifactId>spring-cloud-azure-starter-jdbc-postgresql</artifactId>
+</dependency>
 ```
 
-You can compile the application skipping tests using this command:
+Then, use the following command to compile the application, skipping tests:
 
 ```bash
 mvn clean package -DskipTests
 ```
 
-Expect to see a successful build output:
+The output should include a success message similar to the following example:
 
 ```output
 [INFO] ------------------------------------------------------------------------
@@ -144,7 +137,7 @@ Expect to see a successful build output:
 
 ### Project structure
 
-From the **spring-ai-app** directory, run the following commands to create new directories for new source files to be added:
+From the **spring-ai-app** directory, use the following commands to create new directories for new source files to be added:
 
 ```bash
 mkdir -p src/main/java/com/example/springaiapp/controller
@@ -210,9 +203,9 @@ az postgres flexible-server show \
     --output tsv
 ```
 
-#### Review the application.properties file
+#### Update the application.properties file
 
-Locate and open the **application.properties** file in the **src/main/resources** directory. There are three properties that are initialized using values from the following environment variables: `AZURE_OPENAI_API_KEY`, `AZURE_OPENAI_ENDPOINT`, and `PGHOST`:
+Locate and open the **application.properties** file in the **src/main/resources** directory. There are three properties that are initialized using values from the following environment variables: `AZURE_OPENAI_API_KEY`, `AZURE_OPENAI_ENDPOINT`, and `PGHOST`. Replace the file's content with the following content:
 
 ```properties
 spring.application.name=spring-ai-app
@@ -232,7 +225,7 @@ spring.ai.vectorstore.pgvector.schema-name=postgres
 
 #### Create the service
 
-Within the **service** directory, create a new file named **RagService.java** with the following content:
+Within the **service** directory, create a new file named **RagService.java** and add the following code:
 
 ```java
 package com.example.springaiapp.service;
@@ -298,7 +291,7 @@ This code implements RAG by generating an answer to a given query, augmenting th
 
 #### Create the RAG controller
 
-Next, you need to expose a REST endpoint for your RAG application. Create a new file named **RagController.java** within the **controller** directory:
+Next, you need to expose a REST endpoint for your RAG application. Create a new file named **RagController.java** within the **controller** directory, and then add the following code:
 
 ```java
 package com.example.springaiapp.controller;
@@ -323,7 +316,7 @@ public class RagController {
 
 #### Test the RAG application
 
-With these changes in place, test the implementation by using the following command:
+With these changes in place, use the following command to compile and run the code:
 
 ```bash
 mvn spring-boot:run
@@ -332,7 +325,8 @@ mvn spring-boot:run
 Test the new REST endpoint either from a browser or by using the following command:
 
 ```bash
-curl -G "http://localhost:8080/api/rag" --data-urlencode "query=What is pgvector?"
+curl -G "http://localhost:8080/api/rag" \
+    --data-urlencode "query=What is pgvector?"
 ```
 
 You should see a valid response similar to the following example:
@@ -345,14 +339,15 @@ and querying of vector embeddings within a PostgreSQL database.
 Next, try the following command:
 
 ```bash
-curl -G "http://localhost:8080/api/rag" --data-urlencode "query=How does QuestionAnswerAdvisor work in Spring AI?"
+curl -G "http://localhost:8080/api/rag" \
+    --data-urlencode "query=How does QuestionAnswerAdvisor work in Spring AI?"
 ```
 
-While the answer might appear valid, it might include phrasing that indicates it's a reasoned guess.
+Although the answer might appear valid, it might include phrasing that indicates it's a reasoned guess.
 
 #### Test the application with extra knowledge
 
-Next, provide extra knowledge by adding the following documents to the vector store. Create a new file named **DocumentService.java** within the **service** directory, and then add the following contents:
+Next, provide extra knowledge by adding documents to the vector store. Create a new file named **DocumentService.java** within the **service** directory, and then add the following code:
 
 ```java
 package com.example.springaiapp.service;
@@ -410,7 +405,7 @@ public class DocumentService {
 }
 ```
 
-Test these changes by using the following commands:
+To test these changes, use the following command to compile and run the code:
 
 ```bash
 mvn spring-boot:run
@@ -419,7 +414,8 @@ mvn spring-boot:run
 Then, ask a question by using the following command:
 
 ```bash
-curl -G "http://localhost:8080/api/rag" --data-urlencode "query=How does QuestionAnswerAdvisor work in Spring AI?"
+curl -G "http://localhost:8080/api/rag" \
+    --data-urlencode "query=How does QuestionAnswerAdvisor work in Spring AI?"
 ```
 
 You should now see an answer that clearly explains the role of `QuestionAnswerAdvisor` within Spring AI.
