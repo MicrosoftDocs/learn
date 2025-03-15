@@ -25,11 +25,10 @@ export PUBLIC_IP=$(curl -s ipinfo.io/ip)
 echo "Start IP: $PUBLIC_IP"
 ```
 
-> [!TIP]
-> This command should work in most Linux distributions and in Git Bash. If it doesn't work, you can alternatively get your public IP address using [https://whatismyipaddress.com/](https://whatismyipaddress.com/)
+This command should work in most Linux distributions and in Git Bash. If it doesn't work, you can alternatively get your public IP address by using [https://whatismyipaddress.com/](https://whatismyipaddress.com/)
 
 > [!NOTE]
-> Your IP address can change. If this happens, you must update the corresponding firewall rule accordingly.
+> Your IP address can change. If it changes, you must update the corresponding firewall rule accordingly.
 
 ### Create a resource group
 
@@ -105,7 +104,7 @@ az postgres flexible-server ad-admin create \
     --display-name azureuser
 ```
 
-### Update allowlist required extensions for pgvector
+### Allow the required extensions for pgvector
 
 Before you can enable the extensions required by `pgvector`, you need to allow them by using the following command:
 
@@ -161,4 +160,4 @@ After this rule is created, you can update it by using `az postgres flexible-ser
 
 ## Unit summary
 
-You now have a vector-enabled PostgreSQL database ready that provides vector similarity search capabilities
+You now have a vector-enabled PostgreSQL database ready that provides vector similarity search capabilities.

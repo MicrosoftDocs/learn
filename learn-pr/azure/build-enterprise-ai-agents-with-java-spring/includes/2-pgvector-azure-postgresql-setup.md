@@ -21,7 +21,7 @@ The `pgvector` extension adds an open-source vector similarity search to Postgre
 Before you can enable `pgvector` on your Azure Database for PostgreSQL flexible server instance, you need to add it to your allowlist as described in [Allow extensions](/azure/postgresql/extensions/how-to-allow-extensions). To determine whether you added it correctly, use the following command: `SHOW azure.extensions;`
 
 > [!IMPORTANT]
-> Although the PostgreSQL community often refers to this extension as `pgvector`, the name of the binary and the extension itself is `vector`. That is the name you must use in the allowlist and when you create it in PostgreSQL via the `CREATE EXTENSION` command.
+> The PostgreSQL community often refers to this extension as `pgvector`. However, the name of the binary and the extension itself is `vector`, which is the name you must use in the allowlist and when you create it in PostgreSQL via the `CREATE EXTENSION` command.
 
 After you add the extension to the allowlist, install the extension by using the following SQL command:
 
@@ -44,7 +44,7 @@ LIMIT 3;
 
 Spring AI includes an abstraction of `pgvector` named `VectorStore`. This implementation requires two other PostgreSQL extensions: `hstore` and `uuid-ossp`.
 
-On startup, Spring Boot installs the required extensions and creates the required `vector_store` table with an index if doesn't already exist.
+On startup, Spring Boot installs the required extensions and creates the required `vector_store` table with an index if it doesn't already exist.
 
 ## Unit summary
 

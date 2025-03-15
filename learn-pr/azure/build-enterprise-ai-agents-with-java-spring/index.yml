@@ -8,9 +8,8 @@ metadata:
   ms.author: karler
   ms.reviewer: jbalderas, gok
   ms.topic: module
-  ms.custom: team=cloud_advocates
+  ms.custom: team=cloud_advocates, devx-track-java
   ms.service: azure-container-apps
-  ms.custom: devx-track-java
   ms.collection: ce-skilling-ai-copilot
 title: Build enterprise AI agents with Java and Spring
 summary: Build and deploy a Java application and AI agents using Spring AI, Azure OpenAI, and Azure Container Apps with PostgreSQL vector storage.
@@ -31,12 +30,12 @@ products:
   - azure-container-apps
   - azure-database-postgresql
 prerequisites: |
-  - An Azure subscription.
+  - An Azure subscription. [Create one for free.](https://azure.microsoft.com/free/)
   - Basic familiarity with Java and Spring Boot.
   - Experience with Git and Maven.
-  - Java 17 or later installed.
+  - [Java 17 or later](/java/openjdk/download#openjdk-17).
   - The psql client.
-  - Maven.
+  - [Maven](https://maven.apache.org/download.cgi).
 subjects:
   - machine-learning
   - custom-app-development

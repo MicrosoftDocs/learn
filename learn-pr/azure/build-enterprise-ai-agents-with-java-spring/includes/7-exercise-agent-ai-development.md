@@ -659,7 +659,7 @@ This command will return a JSON response containing both the blog content and me
 
 With the implementation as shown above, you should consistently see at least 2 iterations (and often 3) in the feedback loop. The first iteration is guaranteed by the instruction to the Editor agent to always provide improvement feedback on the first round. This ensures you can observe the complete Evaluator Optimizer Agent pattern in action. Without this forced iteration, you might occasionally see the Editor agent approve the first draft immediately, which doesn't demonstrate the full pattern.
 
-The JSON response provides valuable insights into the generation process, allowing you to track:
+The JSON response provides valuable insights into the generation process, enabling you to track:
 
 - How many iterations were needed (3 in this example)
 - Whether the post was approved by the Editor agent (false in this example, meaning it reached max iterations)

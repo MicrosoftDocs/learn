@@ -1,34 +1,8 @@
 In this unit, you build a retrieval-augmented generation (RAG) application using Spring AI, Azure OpenAI, and `VectorStore` from Spring AI.
 
-## Set up your development environment
-
-Before you start building an AI-powered application, set up your development environment and the required Azure resources.
-
-## Set up your local environment
-
-Use the following steps to set up your environment:
-
-1. Use the following command to confirm that the Java Development Kit (JDK) version 17 or greater is installed:
-
-   ```bash
-   java -version  # Verify the Java installation
-   ```
-
-1. Use the following command to confirm that Maven is installed:
-
-   ```bash
-   mvn -version  # Verify the Maven installation
-   ```
-
-1. Use the following command to sign in to Azure:
-
-   ```azurecli
-   az login
-   ```
-
 ## Set up environment variables
 
-For this exercise, you need some environment variables from prior exercises. If you're using the same Bash window, these variables should still exist. If the variables are no longer available, use the following commands to recreate them:
+For this exercise, you need some environment variables from prior exercises. If you're using the same Bash window, these variables should still exist. If the variables are no longer available, use the following commands to recreate them. Be sure to replace the `<...>` placeholders with your own values, and use the same values that you used previously.
 
 ```bash
 export RESOURCE_GROUP=<resource-group>
@@ -122,11 +96,11 @@ The generated Spring Boot starter project includes the following configurations 
 - Spring Boot Version: 3.4.3
 - Java Version: 17
 - Dependencies:
-  - `web`: Adds support for building web applications, including RESTful services using Spring Model View Controller (MVC).
-  - `jdbc`: Provides Java Database Connectivity (JDBC) support for database access.
-  - `azure-support`: Adds support for integrating with Azure services.
-  - `spring-ai-azure-openai`: Adds support for integrating with Azure OpenAI services.
-  - `spring-ai-vectordb-pgvector`: Adds support for using `pgvector`, a PostgreSQL extension for vector embeddings.
+  - `web`: adds support for building web applications, including RESTful services using Spring Model View Controller (MVC).
+  - `jdbc`: provides Java Database Connectivity (JDBC) support for database access.
+  - `azure-support`: adds support for integrating with Azure services.
+  - `spring-ai-azure-openai`: adds support for integrating with Azure OpenAI services.
+  - `spring-ai-vectordb-pgvector`: adds support for using `pgvector`, a PostgreSQL extension for vector embeddings.
 
 Unzip the downloaded file using the command:
 
@@ -196,7 +170,7 @@ src/
 └── pom.xml
 ```
 
-### Spring AI configuration
+### Configure Spring AI
 
 Before you can run the application successfully, you need to add the following required configuration:
 
