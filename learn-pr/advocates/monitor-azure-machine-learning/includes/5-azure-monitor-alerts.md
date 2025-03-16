@@ -23,4 +23,4 @@ The Alerts dashboard shows information if the alert has been triggered:
 
 If you configure an Alert to send an e-mail, you should receive a notification:
 
-![A screenshot showing the output of an azure monitor alert in the Azure portal.](../media/azure-monitor-alert.png)
+![A screenshot showing the output of an Azure Monitor alert in the Azure portal.](../media/azure-monitor-alert.png)

@@ -8,7 +8,7 @@ Resource logs provide insight into operations that were done by an Azure resourc
 1. Under Destination details, select Send to Log Analytics workspace.
 1. Select the Subscription and Log Analytics workspace you want to export this data to.
 
-   ![A screenshot diagnostic settings in the Azure portal.](../media/diagnostic-setting.png)
+   ![A screenshot of the diagnostic settings in the Azure portal.](../media/diagnostic-setting.png)
 
 1. Select Save to save and close the export configuration.
 1. Back on the Diagnostic settings page, you should now be able to see the configuration. If needed, you can change the settings for this export by clicking Edit setting.
@@ -29,6 +29,6 @@ _| project  TimeGenerated , ClusterId , EventType , ExecutionState , ToolType_
 
 1. Select Run to run the query.
 
-![A screenshot the KQL code in a log query in the Azure portal.](../media/log-query.png)
+![A screenshot of the KQL code in a log query in the Azure portal.](../media/log-query.png)
 
 Once you run the query, you can analyze the results in the Results pane.

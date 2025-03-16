@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.introduction-to-azure-machine-learning-monitoring.azure-monitor-and-alerts
+uid: learn.introduction-to-azure-machine-learning-monitorin.azure-monitor-alerts
 title: Azure Monitor and Alerts
 metadata:
   title: Azure Monitor and Alerts
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/5-azure-monitor-and-alerts.md)]
+  [!include[](includes/6-azure-monitor-alerts.md)]

@@ -30,14 +30,14 @@ products:
 - azure
 units:
 - learn.introduction-to-azure-machine-learning-monitoring.introduction
-- learn.introduction-to-azure-machine-learning-monitoring.monitoring-azure-machine-learning-workspace-and-compute
+- learn.introduction-to-azure-machine-learning-monitoring.monitoring-azure-machine-learning-workspace-compute
 - learn.introduction-to-azure-machine-learning-monitoring.azure-monitor-platform-metrics
 - learn.introduction-to-azure-machine-learning-monitoring.azure-monitor-resource-logs
-- learn.introduction-to-azure-machine-learning-monitoring.azure-monitor-and-alerts
+- learn.introduction-to-azure-machine-learning-monitorin.azure-monitor-alerts
 - learn.introduction-to-azure-machine-learning-monitoring.online-endpoints
 - learn.introduction-to-azure-machine-learning-monitoring.azure-machine-learning-model-monitoring
-- learn.introduction-to-azure-machine-learning-monitoring.monitoring-signals-and-metrics
 - learn.introduction-to-azure-machine-learning-monitoring.knowledge-check
+- learn.introduction-to-azure-machine-learning-monitorin.monitoring-signals-metrics
 - learn.introduction-to-azure-machine-learning-monitoring.summary
 badge:
   uid: learn.introduction-to-azure-machine-learning-monitoring-badge
