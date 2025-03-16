@@ -173,4 +173,4 @@ units:
 - learn.wwl-azure.basic-sql-querying.aggregate-functions-and-grouping
 - learn.wwl-azure.basic-sql-querying.summary
 badge:
-  uid: learn.wwl-azure.basic-sql-commands.badge
+  uid: learn.wwl-azure.basic-sql-querying.badge
