@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/6-azure-monitor-alerts.md)]
+  [!include[](includes/5-azure-monitor-alerts.md)]
