@@ -7,14 +7,13 @@ metadata:
   author: KarlErickson
   ms.author: karler
   ms.reviewer: yoshioterada
-  ms.date: 03/13/2025
+  ms.date: 03/16/2025
   ms.topic: unit
   ms.custom:
     - team=cloud_advocates
     - devx-track-java
     - devx-track-javaee-jbosseap-appsvc
     - devx-track-javaee
-    - devx-track-extended-java
 durationInMinutes: 2
 quiz:
   questions:
@@ -36,16 +35,16 @@ quiz:
       choices:
         - content: JBoss command-line interface (CLI).
           isCorrect: false
-          explanation: It's possible. However, we don't recommend this method in an Azure App Service environment because you must be signed in directly to use the CLI, and the settings disappear after a system restart.
+          explanation: It's possible. However, we don't recommend this method in an Azure App Service environment because you must be signed in to use the CLI, and the settings disappear after a system restart.
         - content: JBoss graphical user interface (GUI).
           isCorrect: false
-          explanation: It's possible. However, we don't recommend this method in an Azure App Service environment because you must be signed in to use the CLI, and the settings disappear after a system restart.
+          explanation: It's possible. However, we don't recommend this method in an Azure App Service environment because you must be signed in to use the GUI, and the settings disappear after a system restart.
         - content: Startup shell script
           isCorrect: true
           explanation: Correct!
         - content: All of the above.
           isCorrect: false
-          explanation: We don't recommend some of the above options.
+          explanation: We don't recommend some of these options.
     - content: How can you access your application logs for JBoss on Azure App Service?
       choices:
         - content: Signing in to the JBoss EAP container instance.

@@ -187,14 +187,14 @@ To sign in to the database and view the available usernames and plugins, use the
 1. To connect to the Azure Database for MySQL - Flexible Server instance, use the following command:
 
     ```azurecli
-     mysql \
-         --host $MYSQL_SERVER_INSTANCE.mysql.database.azure.com \
-         --user CURRENT_AZ_LOGIN_USER_NAME#EXT#@CURRENT_AZ_LOGIN_USER_NAME \
-         --enable-cleartext-plugin \
-         --password=$(az account get-access-token \
-             --resource-type oss-rdbms \
-             --output tsv \
-             --query accessToken)
+    mysql \
+        --host $MYSQL_SERVER_INSTANCE.mysql.database.azure.com \
+        --user CURRENT_AZ_LOGIN_USER_NAME#EXT#@CURRENT_AZ_LOGIN_USER_NAME \
+        --enable-cleartext-plugin \
+        --password=$(az account get-access-token \
+            --resource-type oss-rdbms \
+            --output tsv \
+            --query accessToken)
     ```
 
     > [!NOTE]
@@ -245,12 +245,13 @@ Use the following steps to create a database for your application and to verify 
 
 1. Confirm that the databases and tables are in your server by using the following command:
 
-   ```azurecli
+    ```azurecli
     az mysql flexible-server connect \
         --name $MYSQL_SERVER_NAME \
         --admin-user $MYSQL_USER \
         --database-name world \
         --interactive
+    ```
 
 1. When the system prompts you, enter a password. The following output is typical:
 

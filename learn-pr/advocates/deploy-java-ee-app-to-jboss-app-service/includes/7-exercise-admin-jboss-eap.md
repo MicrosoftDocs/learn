@@ -34,10 +34,10 @@ To sign in to the server using SSH and a TCP tunnel, use the following steps:
 
 1. Open a new command terminal.
 
-1. Sign in to the server by using the following commands:
+1. Sign in to the server by using the following commands. Be sure to replace the `<port-number>` placeholder with the port number you retrieved in the previous section.
 
     ```bash
-    export PORT_NUMBER=<the port number from above>
+    export PORT_NUMBER=<port-number>
     ssh root@127.0.0.1 -L 9990:localhost:9990 -p $PORT_NUMBER
     ```
 

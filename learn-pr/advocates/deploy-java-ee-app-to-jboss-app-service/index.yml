@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.deploy-java-ee-app-to-app-service
 metadata:
-  title: Deploy a Jakarta EE application to Azure
+  title: Deploy a Jakarta EE Application to Azure
   description: Deploy a Jakarta EE application to JBoss EAP on Azure App Service and bind it to Azure Database for MySQL.
-  ms.date: 02/21/2025
-  author: yoshioterada
-  ms.author: yoterada
+  ms.date: 03/16/2025
+  author: KarlErickson
+  ms.author: karler
+  ms.reviewer: yoshioterada
   ms.topic: module
-  ms.custom: team=cloud_advocates
-  ms.contributors: yoterada-03082021
+  ms.custom: team=cloud_advocates, devx-track-java, devx-track-javaee-jbosseap-appsvc, devx-track-javaee
 title: Deploy a Jakarta EE application to Azure
 summary: Deploy a Jakarta EE application to JBoss EAP on Azure App Service and bind it to Azure Database for MySQL.
 abstract: |
@@ -25,9 +25,9 @@ roles:
 products:
   - azure
 prerequisites: |
-  - Azure subscription
+  - An Azure subscription. [Create one for free.](https://azure.microsoft.com/free/)
   - [Azure CLI](/cli/azure/install-azure-cli?WT.mc_id=java-9121-yoterada)
-  - [Java SE 17](https://learn.microsoft.com/java/openjdk/download#openjdk-17)
+  - [Java SE 17 or later](/java/openjdk/download#openjdk-17)
   - [Git CLI](https://git-scm.com/downloads)
   - [MySQL CLI](https://dev.mysql.com/downloads/shell/)
   - [jq utility](https://stedolan.github.io/jq/)

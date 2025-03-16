@@ -76,43 +76,43 @@ Configure the app with the Maven Plugin for Azure App Service by using the follo
     After you use the Maven command, the following example is a typical addition to your Maven **pom.xml** file:
 
     ```xml
-      <build>
-        <finalName>ROOT</finalName>
-        <plugins>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-war-plugin</artifactId>
-            <version>3.4.0</version>
-          </plugin>
-            <plugin>
-                <groupId>com.microsoft.azure</groupId>
-                <artifactId>azure-webapp-maven-plugin</artifactId>
-                <version>2.13.0</version>
-                <configuration>
-                    <schemaVersion>v2</schemaVersion>
-                    <resourceGroup>jakartaee-app-on-jboss-1625038814881-rg</resourceGroup>
-                    <appName>jakartaee-app-on-jboss-1625038814881</appName>
-                    <pricingTier>P1v3</pricingTier>
-                    <region>centralus</region>
-                    <runtime>
-                        <os>Linux</os>
-                        <javaVersion>Java 17</javaVersion>
-                        <webContainer>Jbosseap 7</webContainer>
-                    </runtime>
-                    <deployment>
-                        <resources>
-                            <resource>
-                                <directory>${project.basedir}/target</directory>
-                                <includes>
-                                    <include>*.war</include>
-                                </includes>
-                            </resource>
-                        </resources>
-                    </deployment>
-                </configuration>
-            </plugin>
-        </plugins>
-      </build>
+    <build>
+      <finalName>ROOT</finalName>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>3.4.0</version>
+        </plugin>
+        <plugin>
+            <groupId>com.microsoft.azure</groupId>
+            <artifactId>azure-webapp-maven-plugin</artifactId>
+            <version>2.13.0</version>
+            <configuration>
+                <schemaVersion>v2</schemaVersion>
+                <resourceGroup>jakartaee-app-on-jboss-1625038814881-rg</resourceGroup>
+                <appName>jakartaee-app-on-jboss-1625038814881</appName>
+                <pricingTier>P1v3</pricingTier>
+                <region>centralus</region>
+                <runtime>
+                    <os>Linux</os>
+                    <javaVersion>Java 17</javaVersion>
+                    <webContainer>Jbosseap 7</webContainer>
+                </runtime>
+                <deployment>
+                    <resources>
+                        <resource>
+                            <directory>${project.basedir}/target</directory>
+                            <includes>
+                                <include>*.war</include>
+                            </includes>
+                        </resource>
+                    </resources>
+                </deployment>
+            </configuration>
+        </plugin>
+      </plugins>
+    </build>
     ```
 
 1. Check the `<region>` element in your **pom.xml** file. If its value doesn't match the installation location of MySQL, change it to the same location.
@@ -123,28 +123,23 @@ Configure the app with the Maven Plugin for Azure App Service by using the follo
     > As of February 2025, the latest available version of JBoss EAP is 8.0 Update 4.1.
 
     ```xml
-                    <runtime>
-                        <os>Linux</os>
-                        <javaVersion>Java 17</javaVersion>
-                        <webContainer>Jbosseap 8</webContainer> <!-- Change this value -->
-                    </runtime>
+    <runtime>
+        <os>Linux</os>
+        <javaVersion>Java 17</javaVersion>
+        <webContainer>Jbosseap 8</webContainer> <!-- Change this value -->
+    </runtime>
     ```
 
-1. To deploy the startup file, add the following example to **pom.xml**:
+1. To deploy the startup file, add the following XML to the `<resources>` element of your **pom.xml** file:
 
     ```xml
-              </runtime>
-              <deployment>
-                <resources>
-                  <!-- Add the following lines -->
-                  <resource>
-                    <type>startup</type>
-                    <directory>${project.basedir}/src/main/webapp/WEB-INF/</directory>
-                    <includes>
-                      <include>createMySQLDataSource.sh</include>
-                    </includes>
-                  </resource>
-                  <!-- Add the following lines -->
+    <resource>
+      <type>startup</type>
+      <directory>${project.basedir}/src/main/webapp/WEB-INF/</directory>
+      <includes>
+        <include>createMySQLDataSource.sh</include>
+      </includes>
+    </resource>
     ```
 
     The resource `<type>startup</type>` deploys the specified script as the **startup.sh** file for Linux or **startup.cmd** for Windows. The deployment location is **/home/site/scripts/**.
@@ -161,7 +156,7 @@ Configure the app with the Maven Plugin for Azure App Service by using the follo
     > - `type=startup` deploys the script as **startup.sh** on Linux, or **startup.cmd** on Windows. The script is deployed to **/home/site/scripts/**. The `path` parameter is ignored.
     > - `type=zip` unzips the **.zip** file to **/home/site/wwwroot**. The `path` parameter is optional.
 
-1. Check the values for `resourceGroup` and `appName` in **pom.xml**, as in the following typical example:
+1. Check the values for `resourceGroup` and `appName` in your **pom.xml** file, as shown in the following example:
 
     ```xml
     <resourceGroup>jakartaee-app-on-jboss-1625038814881-rg</resourceGroup>
@@ -241,11 +236,11 @@ The output line that begins with `[INFO] Successfully deployed the artifact` con
 The sample application connects to your MySQL Database and displays data. In the Maven project configuration in the **pom.xml** file, you specified the MySQL JDBC driver using the following example:
 
 ```xml
-    <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-      <version>${mysql-jdbc-driver}</version>
-    </dependency>
+<dependency>
+  <groupId>mysql</groupId>
+  <artifactId>mysql-connector-java</artifactId>
+  <version>${mysql-jdbc-driver}</version>
+</dependency>
 ```
 
 As a result, JBoss EAP automatically installs the JDBC drive `ROOT.war_com.mysql.cj.jdbc.Driver_9_2` to your deployment package, **ROOT.war**.
@@ -303,7 +298,7 @@ After you configure the startup script, configure App Service to use Service Con
 
 1. Set environment variables by using the following commands:
 
-    ```bash
+    ```azurecli
     export PASSWORDLESS_USER_NAME_SUFFIX=jbossapp
     export SOURCE_WEB_APP_ID=$(az webapp list \
         --resource-group  $RESOURCE_GROUP_NAME \
@@ -376,18 +371,17 @@ After you configure the startup script, configure App Service to use Service Con
 
 Previously, you implemented the database access code by using Java Persistence API (JPA). To configure the datasource reference in your application project and access the MySQL database from your application, use the following steps:
 
-1. The configuration for the `DataSource` reference was added in the configuration file of the JPA, **src/main/resources/META-INF/persistence.xml**. Check this file to see if the `DataSource` name matches the name used in the configuration. The code already created the JNDI name as `java:jboss/datasources/JPAWorldDataSource`, as in the following example:
+1. The configuration for the `DataSource` reference was added in the configuration file of the JPA, **src/main/resources/META-INF/persistence.xml**. Check this file to see if the `DataSource` name matches the name used in the configuration. The code already created the JNDI name as `java:jboss/datasources/JPAWorldDataSource`, as shown in the following example:
 
     ```xml
-      <persistence-unit name="JPAWorldDatasourcePU" transaction-type="JTA">
-        <jta-data-source>java:jboss/datasources/JPAWorldDataSource</jta-data-source>
-        <exclude-unlisted-classes>false</exclude-unlisted-classes>
-        <properties>
-          <property name="hibernate.generate_statistics" value="true" />
-          <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
-        </properties>
-      </persistence-unit>
-    </persistence>
+    <persistence-unit name="JPAWorldDatasourcePU" transaction-type="JTA">
+      <jta-data-source>java:jboss/datasources/JPAWorldDataSource</jta-data-source>
+      <exclude-unlisted-classes>false</exclude-unlisted-classes>
+      <properties>
+        <property name="hibernate.generate_statistics" value="true" />
+        <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+      </properties>
+    </persistence-unit>
     ```
 
 1. Access the MySQL database referenced in the `PersistenceContext` unit name by using the following example:

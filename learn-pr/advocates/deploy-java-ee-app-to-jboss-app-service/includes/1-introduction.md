@@ -18,9 +18,9 @@ By the end of this module, you'll be able to complete the following tasks:
 
 ## Prerequisites
 
-- An Azure subscription. [Create one for free.](https://azure.microsoft.com/free/).
+- An Azure subscription. [Create one for free.](https://azure.microsoft.com/free/)
 - [Azure CLI](/cli/azure/install-azure-cli)
-- [Java SE 17 or later](https://www.oracle.com/java/technologies/downloads/#java17).
+- [Java SE 17 or later](/java/openjdk/download#openjdk-17)
 - [Git](https://git-scm.com/downloads)
 - [MySQL](https://dev.mysql.com/downloads/shell/)
-- [jq](https://stedolan.github.io/jq/).
+- [jq](https://stedolan.github.io/jq/)

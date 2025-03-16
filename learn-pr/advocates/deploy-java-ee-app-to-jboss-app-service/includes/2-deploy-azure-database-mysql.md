@@ -99,6 +99,7 @@ Use the following steps to create a database, connect to the server, and run a q
         --admin-password $MYSQL_PASSWORD \
         --database-name newdatabase \
         --querytext "select * from table1;"
+    ```
 
     You can alternatively put the query into a file and use the following command to run the query:
 
