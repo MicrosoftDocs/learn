@@ -71,6 +71,8 @@ az configure --defaults location=<desired-location>
 
 ## Create an Azure Database for MySQL - Flexible Server instance
 
+Use the following steps to create a server instance:
+
 1. Navigate to the **mslearn-jakarta-ee-azure** directory, and use the following command to create your Azure Database for MySQL Flexible Server instance:
 
     > [!IMPORTANT]
@@ -182,8 +184,6 @@ To sign in to the database and view the available usernames and plugins, use the
 
 ### [MySQL](#tab/mysql)
 
-1. The **setup_mysql.sh** script adds an admin user who can connect using the access token of the user currently signed in to the Azure CLI. Register that user as an admin user. For detailed steps, see the [`CreateUserManagedIdentity()`](https://github.com/MicrosoftDocs/mslearn-jakarta-ee-azure/blob/main/setup_mysql.sh#L145-L208) function in the [setup_mysql.sh](https://github.com/MicrosoftDocs/mslearn-jakarta-ee-azure/blob/main/setup_mysql.sh) script.
-
 1. To connect to the Azure Database for MySQL - Flexible Server instance, use the following command:
 
     ```azurecli
@@ -198,9 +198,9 @@ To sign in to the database and view the available usernames and plugins, use the
     ```
 
     > [!NOTE]
-    > Starting from MySQL version 8, the default authentication plug-in is `caching_sha2_password`. Therefore, when you try to authenticate using only the username and password with the `mysql` command, you encounter the following error:
-    > `ERROR 2059 (HY000): Authentication plugin 'mysql_native_password' cannot be loaded:`
-    > To address this, you use the `az mysql flexible-server ad-admin create` command to create an administrative user who can access the database with the user already signed in to the database.
+    > This command connects to the database by using an access token instead of a password. Using an access token is necessary because, starting from MySQL version 8, the default authentication plug-in is `caching_sha2_password`. Therefore, if you use the `mysql` command to authenticate using only the username and password, you encounter the following error: `ERROR 2059 (HY000): Authentication plugin 'mysql_native_password' cannot be loaded`.
+    >
+    > This error is addressed by the **setup_mysql.sh** script that you ran previously in this unit. The script adds an admin user who can connect to the database using the access token of the user currently signed in to the Azure CLI. Therefore, the `mysql` command can connect by using that access token. For more information, see the [`CreateUserManagedIdentity()`](https://github.com/MicrosoftDocs/mslearn-jakarta-ee-azure/blob/main/setup_mysql.sh#L145-L208) function in the [setup_mysql.sh](https://github.com/MicrosoftDocs/mslearn-jakarta-ee-azure/blob/main/setup_mysql.sh) script.
 
 1. List the available usernames and plugins by using the following command:
 
