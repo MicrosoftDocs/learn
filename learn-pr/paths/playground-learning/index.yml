@@ -24,5 +24,6 @@ subjects:
 - databases
 modules:
 - learn.wwl-azure.basic-sql-commands
+- learn.wwl-azure.basic-sql-querying
 trophy:
   uid: learn.wwl-azure.azure-pg-playground.trophy

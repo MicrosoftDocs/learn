@@ -1,0 +1,176 @@
+### YamlMime:Module
+uid: learn.wwl-azure.basic-sql-querying
+metadata:
+  title: basic-sql-querying
+  description: "TODO" # Describe the module in 120 to 165 characters. Include relevant search keywords.
+  ms.date: 3/16/2025
+  author: mpopovic
+  ms.author: mpopovic
+  ms.topic: module-standard-task-based
+###########################################################################
+###
+### ms.service value
+###
+### If your content is related to a product or service, apply one value from
+### the ms.service allowlist.
+###
+### If your content isn't about a product or service, you can omit the ms.service field.
+###
+### For the list of approved ms.service values, go to
+### `https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main`.
+###
+### To request new values, go to
+### `https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main`.
+  ms.service: azure-database-postgresql
+title: basic-sql-querying
+###########################################################################
+###
+### Introductory summary
+###
+### General guidelines:
+###   - Write two sentences.
+###   - Generally use 20-25 words but no more than 35.
+###   - Avoid "learn" and "in this module."
+###   - Don't repeat title phrases.
+###   - Don't teach.
+###
+### First sentence:
+###   - Describe why the concepts are important or how they're used.
+###   - Example 1: "Secure authentication and authorization are a cornerstone of
+###                protecting against cybersecurity threats."
+###   - Example 2: "Relational databases are used to track inventories, process
+###                e-commerce transactions, manage mission-critical customer
+###                information, and more."
+###
+### Second sentence:
+###   - Describe the concepts that the module covers.
+###   - Example 1: "Learn about common identity-based attacks, effective
+###                authentication methods, and common techniques to protect against
+###                unauthorized access."
+###   - Example 2: "We'll cover the core ideas underlying relational databases
+###                including tables, normalization, stored procedures, and the SQL
+###                query language."
+###
+### Detailed guidance: `https://review.learn.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main`
+###
+summary: "TODO"
+###########################################################################
+###
+### Learning objectives
+###
+### Guidelines:
+###   - Base remember-level objectives on expressing that the user can recall
+###     definitions and facts:
+###     - Example 1: "Define feature scaling."
+###     - Example 2: "List key strategies for observing the overall health of the
+###                  system."
+###   - Base understand-level objectives on expressing that the user can explain a
+###     concept in their own words:
+###     - Example 1: "Describe how delivery plans allow multiple teams to plan,
+###                  schedule, and coordinate their work."
+###     - Example 2: "Explain the Dickerson hierarchy of reliability and the map it
+###                  provides for approaching reliability challenges."
+###   - Base apply-level objectives on expressing that the user can determine
+###     whether an example fits a definition:
+###     - Example 1: "Distinguish between different models to understand which one
+###                  to choose for what purpose."
+###     - Example 2: "Classify programs as sequential, concurrent, parallel, and
+###                  distributed."
+###
+### Notes:
+###   - The YAML field name is "abstract," but it contains your learning objectives.
+###   - Start each objective with an uppercase letter.
+###   - End each objective with a period.
+###
+### Detailed guidance: `https://review.learn.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main`
+###
+abstract: |
+  By the end of this module, you'll be able to:
+  - TODO
+  - TODO
+  - ...
+  - TODO
+###########################################################################
+###
+### Prerequisites
+###
+### General guidance:
+###   - List the skills learners need to have before starting this module.
+###   - Be specific. For example, use "Familiarity with programming concepts such as
+###     loops, conditionals, and variables," not "Familiarity with programming
+###     concepts."
+###   - Don't mention or link to other content that teaches the required prerequisite
+###     skills.
+###   - If needed, include software setup requirements with setup links.
+###
+### Example:
+###   Prerequisite 1: "Familiarity with programming concepts such as conditional
+###                   logic and loops"
+###   Prerequisite 2: "Basic knowledge of REST services and APIs"
+###
+### Detailed guidance: `https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites`
+###
+prerequisites: |
+  - TODO
+  - TODO
+  - ...
+  - TODO
+###########################################################################
+###
+### Icon URL
+###
+### Guidance:
+###   - Enter the site-relative link of the module image that should appear on the
+###     module landing page.
+###   - Use the temporary generic badge "/training/achievements/generic-badge.svg"
+###     if your module badge isn't yet available.
+###
+### Detailed guidance: `https://review.learn.microsoft.com/help/learn/achievements-creation`
+###
+iconUrl: /training/achievements/generic-badge.svg
+###########################################################################
+###
+### Learning level
+###
+### Don't edit this value. Use a level of `beginner`.
+###
+levels:
+  - beginner
+###########################################################################
+###
+### Role list
+###
+### Specify the target roles. Use values from the taxonomy at
+### `https://review.learn.microsoft.com/help/platform/metadata-taxonomies`.
+###
+roles:
+  - database-administrator
+  - developer
+###########################################################################
+###
+### Product list
+###
+### List the main product or products that the module discusses. Use values
+### from the taxonomy at `https://review.learn.microsoft.com/help/platform/metadata-taxonomies`.
+###
+products:
+- azure-database-postgresql
+###########################################################################
+###
+### Subject list
+###
+### Specify the subject areas. Use values from the subject taxonomy at
+### `https://review.learn.microsoft.com/help/platform/metadata-taxonomies`.
+###
+subjects:
+  - databases
+units:
+- learn.wwl-azure.basic-sql-querying.introduction
+- learn.wwl-azure.basic-sql-querying.sample-database-overview
+- learn.wwl-azure.basic-sql-querying.select-and-where
+- learn.wwl-azure.basic-sql-querying.sorting-tables
+- learn.wwl-azure.basic-sql-querying.joining-tables
+- learn.wwl-azure.basic-sql-querying.aggregate-functions-and-grouping
+- learn.wwl-azure.basic-sql-querying.summary
+badge:
+  uid: learn.wwl-azure.basic-sql-commands.badge
