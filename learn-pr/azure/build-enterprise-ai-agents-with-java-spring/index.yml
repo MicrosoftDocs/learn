@@ -3,7 +3,7 @@ uid: learn.azure.build-enterprise-ai-agents-with-java-spring
 metadata:
   title: Build Enterprise AI Agents with Java and Spring
   description: Learn how to build and deploy an AI-powered Java application and AI agents using Spring AI, Azure OpenAI, and Azure Container Apps with PostgreSQL vector storage.
-  ms.date: 03/12/2024
+  ms.date: 03/16/2025
   author: KarlErickson
   ms.author: karler
   ms.reviewer: jbalderas, gok
