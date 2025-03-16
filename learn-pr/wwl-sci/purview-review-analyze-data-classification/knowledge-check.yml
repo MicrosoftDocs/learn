@@ -1,0 +1,75 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-review-analyze-data-classification.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/13/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz: 
+  title: "Check your knowledge"
+  questions:
+  - content: "A security analyst in your organization needs to track how sensitive data is being accessed and shared across Microsoft 365 services. They want to filter activities based on users, sensitivity labels, and policy violations. Which Microsoft Purview tool should they use?"
+    choices:
+    - content: "Activity Explorer"
+      isCorrect: true
+      explanation: "Correct: Activity Explorer helps track user activity, data access, and policy violations within Microsoft 365."
+    - content: "Data Explorer"
+      isCorrect: false
+      explanation: "Incorrect: Data Explorer provides visibility into classified data but doesn't track user activity."
+    - content: "Microsoft Purview Audit"
+      isCorrect: false
+      explanation: "Incorrect: Microsoft Purview Audit provides forensic activity logs but isn't designed for interactive data movement analysis."
+
+  - content: "Your compliance team needs a way to review where sensitive data is stored and how it's classified across Microsoft 365. They want to see applied sensitivity labels and retention labels in a centralized view. Which tool should they use?"
+    choices:
+    - content: "Activity Explorer"
+      isCorrect: false
+      explanation: "Incorrect: Activity Explorer focuses on tracking user actions and policy violations, not reviewing stored data."
+    - content: "Microsoft Purview Data Loss Prevention (DLP)"
+      isCorrect: false
+      explanation: "Incorrect: DLP prevents data sharing violations but doesn't provide a view of labeled data."
+    - content: "Content Explorer"
+      isCorrect: true
+      explanation: "Correct: Content Explorer helps review labeled data across Microsoft 365, displaying classification details for files."
+
+  - content: "Your organization wants to track trends in sensitivity label adoption, encryption usage, and policy enforcement across Microsoft 365 and external storage locations. Which Microsoft Purview feature provides this high-level overview?"
+    choices:
+    - content: "Data Explorer"
+      isCorrect: false
+      explanation: "Incorrect: Data Explorer focuses on reviewing labeled data, but it doesn't provide a broad summary of protection trends."
+    - content: "Information Protection Reports"
+      isCorrect: true
+      explanation: "Correct: Information Protection Reports provide insights into classification, encryption, and policy effectiveness across multiple environments."
+    - content: "Microsoft Purview Audit"
+      isCorrect: false
+      explanation: "Incorrect: Microsoft Purview Audit provides detailed event logs but isn't designed for monitoring classification trends."
+
+  - content: "A security administrator wants to analyze how users are applying sensitivity labels and whether labeled data is being downgraded or removed. They need to drill down into specific files and locations. Which Microsoft Purview tool should they use?"
+    choices:
+    - content: "Activity Explorer"
+      isCorrect: false
+      explanation: "Incorrect: Activity Explorer tracks user actions but doesn't provide a detailed view of labeled files."
+    - content: "Data Explorer"
+      isCorrect: true
+      explanation: "Correct: Data Explorer allows security teams to investigate labeled content, track label changes, and analyze classification patterns."
+    - content: "Microsoft Purview Insider Risk Management"
+      isCorrect: false
+      explanation: "Incorrect: Insider Risk Management identifies risky user behavior but doesn't focus on tracking label usage."
+
+  - content: "Your organization's security team wants to proactively detect unusual data activity, such as large-scale downloads of sensitive files. They want an AI-powered tool that can analyze patterns and surface potential risks. Which feature should they use?"
+    choices:
+    - content: "Microsoft Security Copilot in Activity Explorer"
+      isCorrect: true
+      explanation: "Correct: Security Copilot in Activity Explorer helps detect anomalies and investigate unusual data access patterns."
+    - content: "Information Protection Reports"
+      isCorrect: false
+      explanation: "Incorrect: Information Protection Reports provide insights into classification trends but don't analyze real-time security risks."
+    - content: "Microsoft Purview Data Loss Prevention (DLP)"
+      isCorrect: false
+      explanation: "Incorrect: DLP helps prevent policy violations but doesn't use AI to detect unusual activity."

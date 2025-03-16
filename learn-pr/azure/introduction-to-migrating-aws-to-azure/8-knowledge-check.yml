@@ -9,7 +9,6 @@ metadata:
   ms.author: carols
   ms.topic: unit
 durationInMinutes: 3
-content: |
 quiz:
   questions:
   - content: "You're using AWS S3 to host videos that are published on your public-facing website. Now, you're migrating the site to the Azure App Service. Which of the following Azure services can you use to replace AWS S3?"

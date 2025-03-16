@@ -54,26 +54,15 @@ We can refer to the [Basic Configuration](https://playwright.dev/docs/test-confi
 - [`use`](https://playwright.dev/docs/api/class-testconfig) = set _[global options](https://playwright.dev/docs/test-use-options)_ for all tests (can be overridden at project or test scope)
 - [`projects`](https://playwright.dev/docs/api/class-testconfig) = run tests in multiple configurations (think browsers, emulators, options)
 
-## Configure Test Dir
+## Run the demo todo app tests
 
-The `testDir` property tells Playwright where to look for test files. By default, it's set to `./tests`, which means that Playwright looks for test files in the `tests` folder. If you have your test files in a different folder, you can change this property to point to that folder.
-
-Let's change the testDir property so that Playwright looks for test files in the root of the project.
-
-```js
-export default defineConfig({
-  testDir: '.',
-  ..
-});
-```
-
-Now that we updated the testDir property, let's run the tests again and see what happens.
+The example-tests folder contains tests for a demo todo app. Let's copy that spec file and paste it into our tests folder. Let's run our tests
 
 ```bash
 npx playwright test
 ```
 
-This time, Playwright would look for test files in the root of the project and run the tests.
+This time, Playwright will run tests from both spec files in our tests folder.
 
 ```bash
 Running 78 tests using 5 workers
@@ -91,16 +80,7 @@ npx playwright show-report
 
 :::image type="content" source="../media/run-report.png" alt-text="A screenshot of an HTML report showing 2 test files.":::
 
-The report tells us that tests were run in tests/example.spec.ts and tests-examples/demo-todo-app.spec.ts and on the three different browser engines - `Chromium`, `Firefox`, and `Webkit`. As we set the testDir to the root of the project, Playwright found all the test files in the project and ran them.
-
-Let's set the `testDir` back to `./tests` so we can move on to the next exercise.
-
-```js
-export default defineConfig({
-  testDir:* *'./tests',
-  ..
-});
-```
+The report tells us that all tests were run on the three different browser engines - `Chromium`, `Firefox`, and `Webkit`.
 
 ## Configure Projects
 

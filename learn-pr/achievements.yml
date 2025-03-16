@@ -372,6 +372,11 @@ achievements:
   title: Explore Azure service level agreements (SLAs)
   summary: You're placing an application into a cloud-providers hardware versus on-premises.  How reliable will your solution be?
   iconUrl: /training/achievements/explore-azure-service-level-agreements.svg
+- uid: learn.wwl.get-started-openai.badge   
+  type: badge   
+  title: Get started with Azure OpenAI Service   
+  summary: This module provides engineers with the skills to begin building an Azure OpenAI Service solution.   
+  iconUrl: /training/achievements/generic-badge.svg 
 - uid: learn.wwl.examine-service-lifecycle-azure.badge
   type: badge
   title: Examine service lifecycle in Azure
@@ -5120,6 +5125,66 @@ achievements:
   title: Manage device identity with Microsoft Entra join and Enterprise State Roaming
   summary: Evaluate options to manage device identities in Microsoft Entra ID. Allow users to join devices in Microsoft Entra ID. Require devices to be marked as compliant. Enable Enterprise State Roaming.
   iconUrl: /training/achievements/manage-device-identity-ad-join.svg
+- uid: learn.azure.create-custom-roles-rbac.badge
+  type: badge
+  title: Create custom roles for Azure resources with role-based access control (RBAC)
+  summary: Understand the structure of role definitions for access control. Identify the role properties to use that define your custom role permissions. Create an Azure custom role and assign to a user.
+  iconUrl: /training/achievements/create-custom-azure-roles-with-rbac.svg
+- uid: learn.language.typescript-namespaces-organize-code.badge
+  type: badge
+  title: Organize code using TypeScript namespaces
+  summary: TypeScript provides two ways to organize code - namespaces and modules. This module explains how to organize TypeScript code using namespaces.
+  iconUrl: /training/achievements/typescript/typescript-namespaces-organize-code.svg
+- uid: learn.language.typescript-work-external-libraries.badge
+  type: badge
+  title: Access external libraries from TypeScript
+  summary: TypeScript provides two ways to organize your code, namespaces and modules. This module introduces you to modules in TypeScript (referred to as external modules in previous versions.)
+  iconUrl: /training/achievements/typescript/typescript-work-external-libraries.svg
+- uid: learn.language.typescript-get-started.badge
+  type: badge
+  title: Get started with TypeScript
+  summary: This module introduces you to the TypeScript language, why it was created, and how to use it for JavaScript development. You'll also set up a TypeScript development environment for future exercises.
+  iconUrl: /training/achievements/typescript/typescript-get-started.svg
+- uid: learn.language.typescript-implement-interfaces.badge
+  type: badge
+  title: Implement interfaces in TypeScript
+  summary: JavaScript doesn't support interfaces so, as a JavaScript developer, you may or may not have experience with them. In TypeScript, you can use interfaces as you would in traditional object-oriented programming. You can also use interfaces to define object types and this is the primary focus of this module.
+  iconUrl: /training/achievements/typescript/typescript-implement-interfaces.svg
+- uid: learn.typescript-develop-typed-functions.badge 
+  type: badge
+  title: Develop typed functions by using TypeScript
+  summary: If you know how to write functions in JavaScript, you know how to write functions in TypeScript. But TypeScript adds some new capabilities to the standard JavaScript functions to make them easier to work with.
+  iconUrl: /training/achievements/typescript/typescript-develop-typed-functions.svg
+- uid: learn.language.typescript-generics.badge
+  type: badge
+  title: Define generics in TypeScript
+  summary: Generics are code templates that you can define and reuse throughout your codebase. They provide a way to tell functions, classes, or interfaces what type you want to use when you call it.
+  iconUrl: /training/achievements/typescript/typescript-generics.svg
+- uid: learn.language.build-javascript-applications-typescript.trophy
+  type: trophy
+  title: Build JavaScript applications using TypeScript
+  summary: TypeScript offers all the features of JavaScript, plus an additional layer on top of these - the TypeScript type system. In this learning path, you’ll learn how using TypeScript for JavaScript development can help you build more robust code, reduce runtime type errors, take advantage of modern features before they are available in JavaScript, and work better with development teams.
+  iconUrl: /training/achievements/typescript/build-javascript-applications-typescript.svg
+- uid: learn.language.typescript-declare-variable-types.badge
+  type: badge
+  title: Declare variable types in TypeScript
+  summary: JavaScript is a dynamically typed language. While this makes declaring variables easy, it can in some cases lead to unexpected results. The static type system in TypeScript enables you to describe the shape of an object, providing better documentation, and allowing TypeScript to validate that your code is working correctly. In TypeScript, declarations of namespaces, classes, properties, functions, variables, and other language entities associate types with those entities. The way that a type is formed and associated with a language entity depends on the kind of entity. This module introduces some of the available types and shows how to associate them with variables. Later modules examine how interfaces, functions, and classes use static typing.
+  iconUrl: /training/achievements/typescript/typescript-declare-variable-types.svg
+- uid: learn.language.typescript-declare-instantiate-classes.badge
+  type: badge
+  title: Declare and instantiate classes in TypeScript
+  summary: Classes in TypeScript extend the ES6 functionality by adding TypeScript-specific features like type annotations for class members, access modifiers, and the ability to specify required or optional parameters. Another benefit of using TypeScript is that you can use it to develop with classes and then compile them down to JavaScript that works across all major browsers and platforms, as needed.
+  iconUrl: /training/achievements/typescript/typescript-declare-instantiate-classes.svg
+- uid: learn.intro-to-azure-sql-edge.badge
+  type: badge
+  title: Introduction to Azure SQL Edge
+  summary: Describe how Azure SQL Edge enables developers to use the same Transact-SQL (T-SQL) API to develop apps for the edge. Evaluate whether Azure SQL Edge provides the same security and performance as Microsoft SQL Server.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn-sqlserver.deploying-sql-server-linux.badge
+  type: badge
+  title: Deploy SQL Server on Linux
+  summary: Learn about the software and hardware prerequisites to run SQL Server on Linux and then discover the straightforward steps to install SQL Server on Linux. You will also learn additional tasks, such as installing command-line tools.
+  iconUrl: /training/achievements/sqlserver/deploying-on-sql-server-on-linux.svg
 - uid: learn.language.vue-dynamic-rendering.badge
   type: badge
   title: Dynamic page displays with Vue.js
@@ -5150,3 +5215,333 @@ achievements:
   title: Introduction to Visual Studio Code
   summary: In this module, you learn how to assess whether Visual Studio Code is the right source code editor for you. We explore how Visual Studio Code can be used in different development situations, for example, web, C++, and data science. We also examine Visual Studio Code's features such as the editor, debugger, and source control. Finally, we walk you through decision criteria you can use to choose a code editor.
   iconUrl: /learn/achievements/introduction-to-visual-studio-code.svg
+- uid: learn.student-evangelism.web-development-101-variables.badge
+  type: badge
+  title: JavaScript variables and data types
+  summary: JavaScript is a programming language used for web development as well as the server. Learn about variables and the data types that populate them.
+  iconUrl: /training/achievements/student-evangelism/web-development-101-variables.svg
+- uid: learn.student-evangelism.web-development-101.introduction-to-programming.badge
+  type: badge
+  title: Introduction to programming
+  summary: Learn about programming languages and the tools that developers use to create software.
+  iconUrl: /training/achievements/student-evangelism/web-development-101-introduction.svg
+- uid: learn.student-evangelism.web-development-101.functions.badge
+  type: badge
+  title: Create modular code by using functions in JavaScript
+  summary: Functions are the building blocks for any application you'll create. With functions, you can create named, reusable sections of code to help make it more readable and maintainable. This module explores the core concepts of functions.
+  iconUrl: /training/achievements/student-evangelism/web-development-101-functions.svg
+- uid: learn.student-evangelism.web-development-101-if-else.badge
+  type: badge
+  title: Make decisions with JavaScript
+  summary: This lesson covers the basics of JavaScript if/else decision-making concepts. You'll learn how comparing variables, using Booleans, and using if/else statements allow you to make decisions in your code.
+  iconUrl: /training/achievements/student-evangelism/web-development-101-if-else.svg
+- uid: learn.student-evangelism.web-development-101.trophy
+  type: trophy
+  title: Web Development for Beginners
+  summary: Learn the basics of web development, including programming languages and tools, and web accessibility.
+  iconUrl: /training/achievements/student-evangelism/web-development-101.svg
+- uid: learn.student-evangelism.web-development-101-loops-arrays.badge
+  type: badge
+  title: JavaScript arrays and loops
+  summary: Learn how to manipulate and store data within JavaScript.
+  iconUrl: /training/achievements/student-evangelism/web-development-101-loops-arrays.svg
+- uid: learn.data-ai.data-warehouse-security.badge
+  type: badge
+  title: Data warehouse security
+  summary: Learn about the security controls that Azure Synapse Analytics provides to help secure your data warehouse infrastructure and the data that's stored in it.
+  iconUrl: /training/achievements/data-ai/data-warehouse-security-badge.svg
+- uid: learn.wwl.develop-dynamic-reports-microsoft-power-bi.trophy
+  type: trophy
+  title: Develop reports with Microsoft Power BI
+  summary: Power BI allows you to easily connect to and present your data in an interactive report, so you can make data-driven decisions. Learn how to connect to data, transform and shape data, and create interactive visuals in a Power BI report.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.introduction-to-azure-ai-studio.badge
+  type: badge
+  title: Introduction to Azure AI Foundry
+  summary: Microsoft Azure offers multiple services that enable developers to build amazing AI-powered solutions. Azure AI Foundry brings these services together in a single unified experience for AI development on the Azure cloud platform.
+  iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.prepare-to-develop-ai-solutions-azure.badge
+  type: badge
+  title: Prepare to develop AI solutions on Azure
+  summary: As an aspiring Azure AI Engineer, you should understand core concepts and principles of AI development, and the capabilities of Azure services used in AI solutions.
+  iconUrl: /training/achievements/azure-develop-ai-solutions.svg
+- uid: learn.language.rust-set-up-environment.badge
+  type: badge
+  title: Set up the Rust development environment
+  summary: Learn how to set up the Rust development environment, write a program, and use the Cargo build system.
+  iconUrl: /training/achievements/rust-set-up-environment.svg 
+- uid: learn.language.rust-modules-packages-crates.badge
+  type: badge
+  title: Explore modules, packages, and third-party crates
+  summary: Learn about how to effectively use modules and how to integrate with packages and third-party crates.
+  iconUrl: /training/achievements/rust-modules-packages-crates.svg
+- uid: learn.languages.rust-memory-management.badge
+  type: badge
+  title: Understand how Rust manages memory
+  summary: Discover the features that make Rust so unique - ownership and borrowing.
+  iconUrl: /training/achievements/rust-memory-management.svg
+- uid: learn.language.rust-loop-expressions.badge
+  type: badge
+  title: Use loops to iterate through data in Rust
+  summary: Explore how to use hash maps in Rust. Discover how to use loop expressions to iterate through data.
+  iconUrl: /training/achievements/rust-understand-common-concepts.svg
+- uid: learn.language.rust-introduction.badge
+  type: badge
+  title: What is Rust
+  summary: A quick introduction to Rust language features and how Rust compares with other programming languages.
+  iconUrl: /training/achievements/rust-get-started.svg
+- uid: learn.language.rust-if-else-expressions.badge
+  type: badge
+  title: Test conditions with if/else expressions in Rust
+  summary: Explore Rust compound data types like arrays and vectors. Discover how to use if/else statements to test conditions.
+  iconUrl: /training/achievements/rust-understand-common-concepts.svg 
+- uid: learn.language.rust-generic-types-traits.badge
+  type: badge
+  title: Implement generic types and traits
+  summary: Understand what generic types and traits are and how to use them in Rust.
+  iconUrl: /training/achievements/rust-generic-types-traits.svg 
+- uid: learn.language.rust-error-handling.badge
+  type: badge
+  title: Handle errors in Rust
+  summary: UIn this module, you'll learn about ways to handle errors in Rust.
+  iconUrl: /training/achievements/rust-error-handling.svg 
+- uid: learn.language.rust-create-command-line-program.badge
+  type: badge
+  title: Build a command-line to-do list program
+  summary: Create a command-line program to manage to-do list items.
+  iconUrl: /training/achievements/rust-create-command-line-program.svg
+- uid: learn.language.rust-create-program.badge
+  type: badge
+  title: Create your first Rust program
+  summary: Learn about Rust concepts, including variables, data types, and functions.
+  iconUrl: /training/achievements/rust-understand-common-concepts.svg 
+- uid: learn.languages.rust-first-steps.trophy
+  type: trophy
+  title: Take your first steps with Rust
+  summary: Interested in learning a new programming language that's growing in use and popularity? Start here! Lay the foundation of knowledge you need to build fast and effective programs in Rust.
+  iconUrl: /training/achievements/take-your-first-steps-with-rust.svg
+- uid: learn.language.rust-automated-tests.badge
+  type: badge
+  title: Write automated tests
+  summary: Learn about the types of testing you can do with Rust.
+  iconUrl: /training/achievements/rust-automated-tests.svg
+- uid: learn.nvidia.introduction-nvidia-deepstream-graph-composer-azure.badge
+  type: badge
+  title: Introduction to NVIDIA DeepStream Graph Composer with Microsoft Azure
+  summary: In this module, you'll learn how to set up and configure the NVIDIA DeepStream 6.0 Graph Composer on an X86-based Ubuntu 18.04 system to enable rapid development of Intelligent Video Analytics application pipelines for deployment to cloud and edge-capable devices.
+  iconUrl: /training/achievements/introduction-nvidia-deepstream-graph-composer-azure.svg
+- uid: learn.nvidia.setup-configure-nvidia-deepstream-development.badge
+  type: badge
+  title: Set up and configure an NVIDIA DeepStream development environment
+  summary: In this module, you'll learn how to set up and configure an x86-based Ubuntu 18.04 system to host an NVIDIA DeepStream development environment.
+  iconUrl: /training/achievements/setup-configure-nvidia-deepstream-development.svg
+- uid: learn.nvidia-deepstream-development-azure.trophy
+  type: trophy
+  title: NVIDIA DeepStream development with Microsoft Azure
+  summary: With NVIDIA DeepStream, you can seamlessly develop optimized Intelligent Video Applications that can consume multiple video, image, and audio sources. You can also apply single or cascading inference operations to video frames in real-time, and transmit inference results to the cloud for archiving or additional processing. Learn how to develop custom DeepStream applications backed by services in Microsoft Azure and securely deploy NVIDIA DeepStream-based AI workloads to NVIDIA-powered IoT Edge devices.
+  iconUrl: /training/achievements/nvidia-deepstream-development-with-microsoft-azure.svg
+- uid: learn.nvidia.nvidia-deepstream-embedded-device-deployment-azure.badge
+  type: badge
+  title: NVIDIA DeepStream embedded device deployment with Azure
+  summary: In this module, you'll publish and deploy an ARM-based DeepStream container workload to NVIDIA embedded hardware by using Azure IoT Edge.
+  iconUrl: /training/achievements/nvidia-deepstream-embedded-device-deployment-azure.svg
+- uid: learn.nvidia.use-automl-train-labeled-dataset-develop-production-model.badge
+  type: badge
+  title: Use AutoML to train a labeled dataset and develop a production model
+  summary: Learn how to use Automated Machine Learning to train a labeled dataset and develop a production object detection model.
+  iconUrl: /training/achievements/setup-configure-nvidia-deepstream-development.svg
+- uid: learn.nvidia.deploy-model-to-nvidia-triton-inference-server.badge
+  type: badge
+  title: Deploy model to NVIDIA Triton Inference Server
+  summary: NVIDIA Triton Inference Server is a multi-framework, open-source software that is optimized for inference. It supports popular machine learning frameworks like TensorFlow, Open Neural Network Exchange (ONNX) Runtime, PyTorch, NVIDIA TensorRT, and more. It can be used for your CPU or GPU workloads. In this module, you deploy your production model to NVIDIA Triton server to perform inference on a cloud-hosted virtual machine.
+  iconUrl: /training/achievements/introduction-nvidia-deepstream-graph-composer-azure.svg
+- uid: learn.nvidia.develop-custom-object-detection-models-with-nvidia-and-azure-machine-learning.trophy
+  type: trophy
+  title: Develop Custom Object Detection Models with NVIDIA and Azure Machine Learning
+  summary: Azure Machine Learning studio is a GUI-based integrated development environment for constructing and operationalizing Machine Learning workflow on Azure.  Learn how to develop custom object detection models using this service with NVIDIA GPU accelerated virtual machines.
+  iconUrl: /training/achievements/nvidia-deepstream-development-with-microsoft-azure-social.png
+- uid: learn.nvidia.create-workspace-resources-getting-started-azure-machine-learning.badge
+  type: badge
+  title: Create workspace resources for getting started with Azure Machine Learning
+  summary: In this module, you learn how to create resources for getting started with Azure Machine Learning.
+  iconUrl: /training/achievements/setup-configure-nvidia-deepstream-development.svg
+- uid: learn.nvidia.create-labeled-dataset-using-azure-machine-learning-data-labeling-tools.badge
+  type: badge
+  title: Create a labeled dataset using Azure Machine Learning data labeling tools
+  summary: Learn how to use Azure Machine Learning data labeling to create, manage, and monitor data labeling projects.
+  iconUrl: /training/achievements/setup-configure-nvidia-deepstream-development.svg
+- uid: learn.azure.communication-service-send-sms-console-app.badge
+  type: badge
+  title: Send an SMS message from a C# console application with Azure Communication Services
+  summary: In this module, you'll create a C# console application that sends SMS messages using a phone number provisioned via Azure Communication Services.
+  iconUrl: /training/achievements/communication-service-send-sms-console-app.svg
+- uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.badge
+  type: badge
+  title: Track wild polar bears with AI
+  summary: Detect and track polar bears through photos using AI, and then use Power BI to show where cameras spot polar bears.
+  iconUrl: /training/achievements/student-evangelism/build-ml-model-with-azure-stream-analytics-badge.svg
+- uid: learn.reactors.blockchain-tokens.badge
+  type: badge
+  title: Create tokens using OpenZeppelin
+  summary: Learn about the significance of tokens and how they are used in blockchain.
+  iconUrl: /training/achievements/reactors/blockchain-tokens.svg
+- uid: learn.reactors.blockchain-solidity-ethereum-smart-contracts.badge
+  type: badge
+  title: Write Ethereum smart contracts by using Solidity
+  summary: Learn how to install and use tools that you can use to develop smart contracts.
+  iconUrl: /training/achievements/reactors/blockchain-solidity-ethereum-smart-contracts.svg
+- uid: learn.reactors.blockchain-learning-solidity.badge
+  type: badge
+  title: Learn how to use Solidity
+  summary: Discover how Solidity can make it easy to program smart contracts for the Ethereum blockchain platform.
+  iconUrl: /training/achievements/reactors/blockchain-learning-solidity.svg
+- uid: learn.reactors.blockchain-ethereum-networks.badge
+  type: badge
+  title: Connect and deploy to Ethereum networks
+  summary: Learn about and use Ethereum networks for development, testing, and production.
+  iconUrl: /training/achievements/reactors/blockchain-ethereum-networks.svg
+- uid: learn.ethereum-blockchain-development.trophy
+  type: trophy
+  title: Get started with blockchain development
+  summary: This learning path introduces you to blockchain and development on the Ethereum platform. Discover what skills are necessary to learn to begin building your own blockchain networks at scale.
+  iconUrl: /training/achievements/ethereum-blockchain-development.svg
+- uid: learn.language.go-write-test-program.badge
+  type: badge
+  title: Write and test a program in Go
+  summary: By using what you've learned about Go, write and test a complete program.
+  iconUrl: /training/achievements/go/go-write-test-program.svg
+- uid: learn.language.go-variables-functions-packages.badge
+  type: badge
+  title: Understand how to use packages, variables, and functions in Go
+  summary: Learn about the basic data types in Go and about how to declare variables, write functions, and use packages.
+  iconUrl: /training/achievements/go/go-variables-functions-packages.svg
+- uid: learn.language.go-methods-interfaces.badge
+  type: badge
+  title: Use methods and interfaces in Go
+  summary: Learn about best practices for writing methods and interfaces in Go.
+  iconUrl: /training/achievements/go/go-methods-interfaces.svg
+- uid: learn.language.go-get-started.badge
+  type: badge
+  title: Get started with Go
+  summary: In this module, you'll start taking your first steps with Go.
+  iconUrl: /training/achievements/go/go-get-started.svg
+- uid: learn.language.go-errors-logs.badge
+  type: badge
+  title: Implement error handling and logging in Go
+  summary: Understand how to handle errors and log helpful information in your Go programs.
+  iconUrl: /training/achievements/go/go-errors-logs.svg
+- uid: learn.language.go-data-types.badge
+  type: badge
+  title: Use data types and structs, arrays, slices, and maps in Go
+  summary: Learn about structs, arrays, slices, and maps. Understand the difference between them and when to use one type over the other.
+  iconUrl: /training/achievements/go/go-data-types.svg
+- uid: learn.languages.go-first-steps.trophy
+  type: trophy
+  title: Take your first steps with Go
+  summary: Interested in learning a programming language but aren't sure where to start? Start here! Learn the basic syntax and thought processes required to build simple programs using Go.
+  iconUrl: /training/achievements/go/go-first-steps.svg
+- uid: learn.language.go-control-flow.badge
+  type: badge
+  title: Use control flows in Go
+  summary: Learn how to use control flows in Go.
+  iconUrl: /training/achievements/go/go-control-flow.svg
+- uid: learn.language.go-concurrency.badge
+  type: badge
+  title: Learn how concurrency works in Go
+  summary: Understand more about concurrency, one of the most unique features in Go.
+  iconUrl: /training/achievements/go/go-concurrency.svg
+- uid: learn.student-evangelism.altair-azure-sphere-setup.badge
+  type: badge
+  title: Set up the Altair emulator and Azure Sphere
+  summary: Learn how to set up the Altair 8800 emulator and the Azure Sphere development environment.
+  iconUrl: /training/achievements/student-evangelism/altair-azure-sphere-setup.svg
+- uid: learn.student-evangelism.altair-azure-sphere-secure-emulator.badge
+  type: badge
+  title: Secure the Altair emulator
+  summary: Learn how to help secure the Altair emulator network communications.
+  iconUrl: /training/achievements/student-evangelism/altair-azure-sphere-secure-emulator.svg
+- uid: learn.student-evangelism.altair-azure-sphere-program-emulator.badge
+  type: badge
+  title: Program the Altair 8800 emulator
+  summary: Learn how to program the Altair 8800 emulator.
+  iconUrl: /training/achievements/student-evangelism/altair-azure-sphere-program-emulator.svg
+- uid: learn.student-evangelism.altair-azure-sphere-introduction.badge
+  type: badge
+  title: Introduction to the Altair 8800 and Azure Sphere
+  summary: Introduction to computing fundamentals with Altair 8800 and Azure Sphere.
+  iconUrl: /training/achievements/student-evangelism/altair-azure-sphere-introduction.svg
+- uid: learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker.badge
+  type: badge
+  title: Deploy a private MQTT broker
+  summary: Learn how to deploy your own private MQTT broker.
+  iconUrl: /training/achievements/student-evangelism/altair-azure-sphere-deploy-mqtt-broker.svg
+- uid: learn.student-evangelism.altair-azure-sphere-deploy-emulator.badge
+  type: badge
+  title: Deploy the Altair emulator to Azure Sphere
+  summary: Learn how to deploy the Altair 8800 emulator to Azure Sphere.
+  iconUrl: /training/achievements/student-evangelism/altair-azure-sphere-deploy-emulator.svg
+- uid: learn.altair-azure-sphere-computing-fundamentals.trophy
+  type: trophy
+  title: Learn computing fundamentals with Altair 8800 and Azure Sphere
+  summary: In this learning path, learn computing fundamentals by creating a cloud-enabled Altair 8800 on Azure Sphere solution.
+  iconUrl: /training/achievements/student-evangelism/altair-azure-sphere-computing-fundamentals.svg
+- uid: learn.student-evangelism.altair-azure-sphere-create-iot-central-application.badge
+  type: badge
+  title: Create an Azure IoT Central application for the Altair emulator and Azure Sphere
+  summary: Learn how to create a cloud-based Azure IoT Central application for the Altair 8800 emulator and Azure Sphere.
+  iconUrl: /training/achievements/student-evangelism/altair-azure-sphere-create-iot-central-application.svg
+- uid: learn.student-evangelism.altair-azure-sphere-create-web-terminal.badge
+  type: badge
+  title: Create and customize Altair 8800 cloud services
+  summary: Learn how to customize IoT Central, create an Altair web terminal, and run the Altair virtual disk server.
+  iconUrl: /training/achievements/student-evangelism/altair-azure-sphere-create-web-terminal.svg
+- uid: learn.student-evangelism.health-bot-template-scenarios.badge
+  type: badge
+  title: Azure Health Bot scenario templates
+  summary: Learn how to enrich the capabilities of your bot by using the prebuilt scenario templates.
+  iconUrl: /training/achievements/student-evangelism/health-bot-template-scenarios.svg
+- uid: learn.student-evangelism.health-bot-language-understanding.badge
+  type: badge
+  title: Language understanding in Azure Health Bot
+  summary: Language understanding plays a fundamental role in the working of Azure Health Bot.
+  iconUrl: /training/achievements/student-evangelism/health-bot-language-understanding.svg
+- uid: learn.student-evangelism.health-bot-introduction.badge
+  type: badge
+  title: Introduction to Azure Health Bot
+  summary: Azure Health Bot enables users to build a health bot by using built-in scenarios or custom ones. The information that each instance of the Health Bot service handles is privacy protected to HIPAA standards. It also meets Microsoft's high standards for privacy and security.
+  iconUrl: /training/achievements/student-evangelism/health-bot-introduction.svg
+- uid: learn.student-evangelism.health-bot-integrated-bot.badge
+  type: badge
+  title: Integrate Azure Health Bot with a database
+  summary: Learn how to integrate an advanced bot with a database.
+  iconUrl: /training/achievements/student-evangelism/health-bot-integrated-bot.svg
+- uid: learn.student-evangelism.health-bot-enhanced.badge
+  type: badge
+  title: Enhanced Azure Health Bot
+  summary: In the previous module, you created a basic informative bot without any interrupting or breaking scenario involved. This module shows you how to enhance the bot with advanced functionalities.
+  iconUrl: /training/achievements/student-evangelism/health-bot-enhanced.svg
+- uid: learn.student-evangelism.health-bot-channelized-bot.badge
+  type: badge
+  title: Channelized Azure Health Bot
+  summary: In the previous module, you integrated a bot with a database hosted on Azure. This module shows you how to make the bot available on Teams and build a basic app.
+  iconUrl: /training/achievements/student-evangelism/health-bot-channelized-bot.svg
+- uid: learn.student-evangelism.health-bot-case-studies.badge
+  type: badge
+  title: Azure Health Bot case studies
+  summary: The Health Bot service is a cloud platform that empowers developers in healthcare organizations to build and deploy compliant, AI-powered virtual health assistants and health bots that help them improve processes and reduce costs.
+  iconUrl: /training/achievements/student-evangelism/health-bot-case-studies.svg
+- uid: learn.student-evangelism.health-bot-built-in-scenarios.badge
+  type: badge
+  title: Azure Health Bot built-in scenarios
+  summary: Azure Health Bot supports many built-in scenarios. Examples include triaging a medical condition, finding information about a disease or types of drugs, and getting user consent.
+  iconUrl: /training/achievements/student-evangelism/health-bot-built-in-scenarios.svg
+- uid: learn.create-bots-azure-health-bot.trophy
+  type: trophy
+  title: Create intelligent health bots with Azure Health Bot
+  summary: Azure Health Bot enables users to build a health bot by using built-in or custom scenarios. The information that each instance of the Health Bot service handles is privacy protected to HIPAA standards. It also meets Microsoft's high standards for privacy and security. The modules in this Learning path guide you through the creation of both a basic and enhanced health bot. You'll learn about language understanding and how to use both built-in and template scenarios.
+  iconUrl: /training/achievements/create-bots-azure-health-bot.svg
+- uid: learn.student-evangelism.health-bot-basic-bot.badge
+  type: badge
+  title: Basic Azure Health Bot
+  summary: This module starts with a basic informative bot that has no interrupting or breaking scenario involved. It shows you how to enhance the bot with more advanced functionalities.
+  iconUrl: /training/achievements/student-evangelism/health-bot-basic-bot.svg

@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.develop-ai-agent-azure
+metadata:
+  title: Develop an AI agent with Azure AI Agent Service
+  description: Learn how to start using Azure AI Agent Service.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 02/24/2025
+  ms.service: azure-ai-openai
+  ms.topic: module-standard-task-based
+title: Develop an AI agent with Azure AI Agent Service
+summary: This module provides engineers with the skills to begin building agents with Azure AI Agent Service.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe the purpose of AI agents
+  - Explain the key features of Azure AI Agent Service
+  - Build an agent using the Azure AI Agent Service
+  - Integrate an agent in the Azure AI Agent Service into your own application
+prerequisites: |
+  - Familiarity with Azure and the Azure portal.
+  - An understanding of generative AI. You can learn more with [Fundamentals of Generative AI](/training/modules/fundamentals-generative-ai/).
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - ai-engineer
+  - developer
+  - solution-architect
+  - student
+products: 
+  - azure-openai
+  - azure
+subjects: 
+  - cloud-computing
+units:
+- learn.wwl.develop-ai-agent-azure.introduction
+- learn.wwl.develop-ai-agent-azure.what-is-ai-agent
+- learn.wwl.develop-ai-agent-azure.how-use-agent-service
+- learn.wwl.develop-ai-agent-azure.when-use-agent-service
+- learn.wwl.develop-ai-agent-azure.exercise
+- learn.wwl.develop-ai-agent-azure.knowledge-check
+- learn.wwl.develop-ai-agent-azure.summary
+badge:
+  uid: learn.wwl.develop-ai-agent-azure.badge

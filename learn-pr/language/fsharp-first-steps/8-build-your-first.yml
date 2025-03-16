@@ -6,9 +6,8 @@ metadata:
   title: "Exercise - Create your first F# application"
   description: "Create an F# application to print out a message to a text console"
   ms.date: 02/22/2023
-  author: luisquintanilla
-  ms.author: luquinta
-  ms.manager: markl
+  author: baronfel
+  ms.author: chethusk 
   ms.topic: unit
 durationInMinutes: 2
 content: |

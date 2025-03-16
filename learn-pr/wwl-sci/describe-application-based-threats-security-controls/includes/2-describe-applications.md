@@ -30,7 +30,7 @@ Application software can be characterized by the following:
 - Doing specialized work, such as word processing, video editing, and messaging.
 - Designed for the user to interact with directly.
 - Typically, it doesn't run independently and needs system software.
-- It needs to be installed by a user.
+- Typically, it needs to be installed by a user and/or managed by a user, although many systems come preloaded with application software.
 
 Word processors, email apps, internet browsers, and image editors, are all examples of application software. More than ever, we’re using application software to do all sorts of things, so they now come in all shapes and sizes. Applications can run on all types of devices, such as desktops, mobiles, and appliances. For example, games are applications that can run on desktops, mobile devices, and even smart televisions.
 

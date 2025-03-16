@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Implement Microsoft Entra Identity Protection
   description: "Implement Microsoft Entra Identity Protection"
-  ms.date: 02/07/2025
+  ms.date: 03/10/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

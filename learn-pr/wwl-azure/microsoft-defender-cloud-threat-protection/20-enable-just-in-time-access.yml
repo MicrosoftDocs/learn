@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-defender-cloud-threat-protection.enable-just-in-time-access
+title: Enable just-in-time access
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Enable just-in-time access
+  description: "Enable just-in-time access"
+  ms.date: 02/28/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - references_regions
+durationInMinutes: 7
+content: |
+  [!include[](includes/20-enable-just-in-time-access.md)]

@@ -2,7 +2,7 @@ A private IP address resource can be associated with virtual machine network int
 
 ### Things to consider when associating private IP addresses
 
-The following table summarizes how you can associate private IP addresses for different types of resources.
+The next table summarizes how you can associate private IP addresses for different types of resources.
 
 | Resource | Private IP address association | Dynamic IP address | Static IP address |
 | --- | --- | --- | --- |

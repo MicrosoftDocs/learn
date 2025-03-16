@@ -6,8 +6,8 @@ metadata:
   prefetch-feature-rollout: true
   title: Create a SQL Server maintenance plan
   description: "Create a SQL Server maintenance plan"
-  ms.date: 05/11/2022
-  author: wwlpublish
+  ms.date: 02/26/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false

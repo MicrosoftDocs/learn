@@ -37,6 +37,6 @@ Abstractive summarization returns the two generated sentences:
 
 ```sql
 {
-  "The document describes a one-bedroom apartment located on the west side of Queen Anne Hill. The apartment, which is the bottom unit of a duplex, features an open floor plan, bamboo floors, a fully equipped kitchen, a queen-size bed, and a private deck with a BBQ. It is conveniently located near bus lines, historic Ballard, a grocery store, coffee shops, and various shops and restaurants."
+  "The document describes a one-bedroom apartment located on the west side of Queen Anne Hill, featuring an open floor plan, bamboo floors, a fully equipped kitchen, a queen-size bed, and a private deck with a BBQ. It is conveniently located near bus lines, historic Ballard, a grocery store, coffee shops, and various shops and restaurants."
 }
 ```

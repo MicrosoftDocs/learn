@@ -48,7 +48,7 @@ Using a multi-service resource can make it easier to manage applications that us
 
 ### Regional availability
 
-Some services and models and available in only a subset of Azure regions. Consider service availability and any regional quota restrictions for your subscription when provisioning Azure AI services. Use the [product availability table](https://azure.microsoft.com/explore/global-infrastructure/products-by-region/table?azure-portal=true) to check regional availability of Azure services. Use the [model availability table](/azure/ai-services/openai/concepts/models#model-summary-table-and-region-availability?azure-portal=true) in the Azure OpenAI service documentation to determine regional availability for Azure OpenAI models.
+Some services and models are available in only a subset of Azure regions. Consider service availability and any regional quota restrictions for your subscription when provisioning Azure AI services. Use the [product availability table](https://azure.microsoft.com/explore/global-infrastructure/products-by-region/table?azure-portal=true) to check regional availability of Azure services. Use the [model availability table](/azure/ai-services/openai/concepts/models#model-summary-table-and-region-availability?azure-portal=true) in the Azure OpenAI service documentation to determine regional availability for Azure OpenAI models.
 
 ### Cost
 

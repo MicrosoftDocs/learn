@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ai-foundry-sdk.connections
+title: Work with project connections
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Work with project connections
+  description: Use the Azure AI Foundry SDK to work with connections in a project.
+  author: wwlpublish
+  ms.author: gmalc
+  ms.date: 02/05/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  zone_pivot_groups: dev-lang-csharp-python
+durationInMinutes: 5
+content: |
+  [!include[](includes/03-connections.md)]

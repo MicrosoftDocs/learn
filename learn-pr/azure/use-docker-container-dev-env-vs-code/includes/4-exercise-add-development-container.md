@@ -7,7 +7,7 @@ In this exercise, you'll add a dev container and open the Products Dashboard pro
 1. Return to VS Code and the project you cloned earlier.
 1. Press <kbd>F1</kbd> to open the Command Palette.
 1. Type **add dev container** and select **Dev Containers: Add Development Container Configuration Files**. This presents a list of [Dev Container Templates](https://containers.dev/implementors/templates/). Templates contain the source files needed to configure a complete development environment for the specified tech stack.
-1. Select **Add configuration to user data folder**.
+1. Select **Add configuration to workspace**.
 1. Select the following options:
 
    | Option                                      | Value       |

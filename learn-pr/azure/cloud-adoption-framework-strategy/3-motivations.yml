@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-adoption-framework-strategy.motivations
+metadata:
+  title: Determine Your Motivations
+  description: Learn how to determine your motivations so that you can ensure alignment with strategic business objectives and facilitate informed decision making.
+  ms.date: 03/14/2025
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
+title: Determine your motivations
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-motivations.md)]
+quiz:
+ title: Check your knowledge
+ questions:
+ - content: Why is it important to define clear motivations for cloud adoption?
+   choices:
+   - content: To ensure that cloud adoption is driven by short-term trends rather than long-term strategic goals
+     isCorrect: false
+     explanation: Incorrect. Cloud adoption motivations should align with long-term strategic goals to ensure sustainable growth and value.
+   - content: To prioritize the adoption of cloud technologies without considering the specific needs of the organization
+     isCorrect: false
+     explanation: Incorrect. Motivations should address the specific needs of the organization to ensure that cloud technologies provide relevant and effective solutions.
+   - content: To move to the cloud without considering the impact on data security and compliance requirements
+     isCorrect: false
+     explanation: Incorrect. Data security and compliance are critical factors for motivations to protect sensitive information and adhere to regulatory standards.
+   - content: To help prioritize initiatives, streamline resource allocation, and mitigate risks by addressing specific business needs
+     isCorrect: true
+     explanation: Correct. Motivations help achieve future goals by addressing these important aspects.

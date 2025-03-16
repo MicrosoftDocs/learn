@@ -19,7 +19,7 @@ abstract: |
   - Understand how to configure keyless authentication to Azure OpenAI for Azure-hosted environments for .NET applications
 prerequisites: |
   To get the best learning experience from this module, you should have knowledge and experience of:
-  - Java programming
+  - .NET programming
   - Azure OpenAI
   - Azure RBAC roles
   - Azure Managed Identity

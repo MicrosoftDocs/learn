@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Implement Windows security enhancements with Microsoft Defender for Endpoint
   description: "Implement Windows security enhancements with Microsoft Defender for Endpoint"
-  ms.date: 1/16/2025
+  ms.date: 2/26/2025
   author: wwlpublish
   ms.author: kelawson
   ms.topic: module
