@@ -5558,10 +5558,15 @@ achievements:
 - uid: learn.wwl.create-calculation-groups.badge
   type: badge
   title: Create calculation groups
-  summary: In this module you’ll learn what calculation groups are, explore key features and usage scenarios, and learn to create calculation groups.
+  summary: In this module you'll learn what calculation groups are, explore key features and usage scenarios, and learn to create calculation groups.
   iconUrl: /training/achievements/create-calculation-groups.svg
 - uid: learn.wwl.use-tools-to-optimize-power-bi-performance.badge
   type: badge
   title: Use tools to optimize Power BI performance
   summary: Use tools to develop, manage, and optimize Power BI data model and DAX query performance.
   iconUrl: /training/achievements/use-tools-optimize-power-bi-performance.svg
+- uid: learn.introduction-to-azure-purview.badge
+  type: badge
+  title: Introduction to Microsoft Purview
+  summary: In this module, you'll evaluate whether Microsoft Purview is the right choice for your data discovery and governance needs.
+  iconUrl: /training/achievements/introduction-to-azure-purview.svg
