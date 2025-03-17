@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-sk-multi-agent-solution.exercise
+title: Exercise - Develop a multi-agent soluton
+metadata:
+  title: Exercise - Develop a multi-agent soluton
+  description: Learn how to build a multi-agent solution. This unit provides a hands-on exercise to develop a multi-agent solution with the Semantic Kernel Agent Framework.
+  author: buzahid
+  ms.author: buzahid
+  ms.date: 03/14/2025
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-exercise.md)]

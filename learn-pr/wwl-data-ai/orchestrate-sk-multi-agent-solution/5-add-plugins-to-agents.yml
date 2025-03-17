@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-sk-multi-agent-solution.add-plugins-to-agents
+title: Add plugins to agents
+metadata:
+  title: Add plugins to agents
+  description: Learn how to add plugins to agents.
+  author: buzahid
+  ms.author: buzahid
+  ms.date: 03/14/2025
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-add-plugins-to-agents.md)]

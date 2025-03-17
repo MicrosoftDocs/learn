@@ -1,0 +1,20 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-agent-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This unit contains a knowledge check which can help learners reinforce their understanding of the material.
+  author: buzahid
+  ms.author: buzahid
+  ms.date: 03/14/2025
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: ""  
+    choices:  
+      - content: ""  
+        isCorrect: true  
+        explanation: ""  
+  
