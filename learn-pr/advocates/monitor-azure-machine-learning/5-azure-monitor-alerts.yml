@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-machine-learning-monitorin.azure-monitor-alerts
+title: Azure Monitor and Alerts
+metadata:
+  title: Azure Monitor and Alerts
+  description: Learn how to use Azure Monitor and Alerts to monitor Azure Machine Learning resources
+  ms.date: 03/15/2025
+  author: Orin-Thomas
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-azure-monitor-alerts.md)]
