@@ -2,7 +2,7 @@ There are three primary log types in Microsoft Sentinel:
 
 - Analytics Logs
 - Basic Logs
-- Auxilary Logs (Preview)
+- Auxiliary Logs (Preview)
 
 Data in each table in a Log Analytics workspace is retained for a specified period of time after which it's either removed or archived with a reduced retention fee. Set the retention time to balance your requirement for having data available with reducing your cost for data retention.
 
