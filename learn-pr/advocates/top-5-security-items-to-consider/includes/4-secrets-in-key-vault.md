@@ -2,7 +2,7 @@ Secrets aren't secrets if they're shared with everyone. Storing confidential ite
 
 Instead, you should always put these secrets into **Azure Key Vault**.
 
-## What is Azure Key Vault
+## What is Azure Key Vault?
 
 Azure Key Vault is a *secret store*: a centralized cloud service for storing application secrets. Key Vault keeps your confidential data safe by keeping application secrets in a single central location and providing secure access, permissions control, and access logging.
 
@@ -15,7 +15,7 @@ Secrets are stored in individual *vaults*, each with their own configuration and
 
 ## Why use a Key Vault for my secrets
 
-Key management and storing secrets can be complicated and error-prone when performed manually. Rotating certificates manually means potentially going without for a few hours or days. As mentioned above, saving your connections strings in your configuration file or code repository means someone could steal your credentials.
+Key management and storing secrets can be complicated and error-prone when performed manually. Rotating certificates manually means potentially going without for a few hours or days. As mentioned previously, saving your connections strings in your configuration file or code repository means someone could steal your credentials.
 
 Key Vault allows users to store connection strings, secrets, passwords, certificates, access policies, file locks (making items in Azure read-only), and automation scripts. It also logs access and activity and allows you to monitor access control (IAM) in your subscription. It also has diagnostics, metrics, alerts, and troubleshooting tools to ensure you have the access you need.
 

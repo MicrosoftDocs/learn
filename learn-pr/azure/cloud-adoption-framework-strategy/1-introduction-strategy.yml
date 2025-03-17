@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-adoption-framework-strategy.introduction
+metadata:
+  title: Introduction
+  description: Learn how to understand the specific needs and objectives of your business so that you can create an effective cloud adoption strategy.
+  ms.date: 03/14/2025
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
+title: Introduction
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-introduction-strategy.md)]
+quiz:
+ title: Check your knowledge
+ questions: 
+ - content: What is a cloud adoption strategy?
+   choices:
+   - content: A comprehensive plan to adopt and integrate cloud technologies
+     isCorrect: true
+     explanation: Correct. A cloud adoption strategy helps define clear goals for cloud adoption that you can take action on later.
+   - content: A plan that focuses on how a business competes in a particular market
+     isCorrect: false
+     explanation: Incorrect. A cloud adoption strategy helps define clear goals that you can take action on later.
+   - content: A plan that involves investing in research and development and fostering a culture of innovation within an organization
+     isCorrect: false
+     explanation: Incorrect. A cloud adoption strategy might involve innovation initiatives, but the primary goal expands to all areas of cloud adoption.
+   - content: A plan that involves reducing the scale or scope of a business's operations to improve financial stability
+     isCorrect: false
+     explanation: Incorrect. A cloud adoption strategy helps define clear goals that you can take action on later.
