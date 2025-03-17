@@ -15,9 +15,9 @@ Defender for Cloud is part of the [Center for Internet Security](https://www.cis
 
 ## Activating Microsoft Defender for Cloud
 
-Microsoft Defender for Cloud provides unified security management and advanced threat protection for hybrid cloud workloads and is offered in several plans. The Foundational Cloud Security Posture Management (CSPM) plan, which is free and activated by default provides security policies, assessments, and recommendations. The Defender CSPM plan provides a robust set of features, including threat intelligence. There are also plans for Servers, App Service, and more.
+Microsoft Defender for Cloud provides unified security management and advanced threat protection for hybrid cloud workloads, and is offered in several plans. The Foundational Cloud Security Posture Management (CSPM) plan, which is free and activated by default provides security policies, assessments, and recommendations. The Defender CSPM plan provides a robust set of features, including threat intelligence. There are also plans for Servers, App Service, and more.
 
-Given the benefits of Defender for Cloud, the security team at your company has decided that it will be turned on for all subscriptions at your office. You got an email this morning to turn it on for your applications, so let's look at how to do that.
+Given the benefits of Defender for Cloud, your company's security team has decided to turn it on for all subscriptions at your office. You got an email this morning to turn it on for your applications, so let's look at how to do that.
 
 > [!IMPORTANT]
 > Microsoft Defender for Cloud is not supported in the free Azure sandbox. You can perform these steps in your own subscription, or just follow along to understand how to activate Defender for Cloud.
@@ -26,7 +26,7 @@ Given the benefits of Defender for Cloud, the security team at your company has 
 
    ![Screenshot showing the All services pane with Defender for Cloud highlighted.](../media/2-ASC-Menu.png)
 
-1. If you've never opened Defender for Cloud, the pane will start on the **Getting started** entry which might ask you to upgrade your subscription. Ignore that for now; select **Skip** at the bottom of the page, then select **Overview**.
+1. If you've never opened Defender for Cloud, the pane starts on the **Getting started** entry, which might ask you to upgrade your subscription. Ignore that for now; select **Skip** at the bottom of the page, then select **Overview**.
     - This will display the "big security picture" across all the elements available in your subscription.
     - This has a ton of great information you can explore.
 
@@ -36,7 +36,7 @@ Given the benefits of Defender for Cloud, the security team at your company has 
 
 ### Foundational CSPM vs. Defender CSPM pricing tier
 
-While you can use a free Azure subscription tier with Defender for Cloud, it's limited to assessments and recommendations of Azure resources only. To really leverage Defender for Cloud, you will need to upgrade to a Defender CSPM subscription as shown previously. You can upgrade your subscription through the **Upgrade** button on the **Getting Started** pane in the Defender for Cloud menu, which will walk you through changing your subscription level. The pricing and features may change based on the region, you can get a full overview on the [pricing page](https://azure.microsoft.com/pricing/details/security-center/).
+Although you can use a free Azure subscription tier with Defender for Cloud, it's limited to assessments and recommendations of Azure resources only. To really leverage Defender for Cloud, you'll need to upgrade to a Defender CSPM subscription as shown previously. You can upgrade your subscription through the **Upgrade** button on the **Getting Started** pane in the Defender for Cloud menu, which will walk you through changing your subscription level. The pricing and features might change based on the region; you can get a full overview on the [pricing page](https://azure.microsoft.com/pricing/details/defender-for-cloud/).
 
 > [!NOTE]
 > To upgrade a subscription to the Defender CSPM tier, you must be assigned the role of Subscription Owner, Subscription Contributor, or Security Admin.
@@ -46,22 +46,22 @@ While you can use a free Azure subscription tier with Defender for Cloud, it's l
 
 ## Turning off Microsoft Defender for Cloud
 
-For production systems, you definitely want to keep Microsoft Defender for Cloud turned on so it can monitor all your resources for threats. However, if you're just playing with Defender for Cloud and turned it on, you will likely want to disable it to ensure you're not charged. Let's do that now.
+For production systems, you definitely want to keep Microsoft Defender for Cloud turned on so it can monitor all your resources for threats. However, if you're just playing with Defender for Cloud and turned it on, you'll likely want to disable it to ensure you're not charged. Let's do that now.
 
 1. Open the [Azure portal](https://portal.azure.com?azure-portal=true) and select **Microsoft Defender for Cloud** from the left-hand menu. If you don't see it there, you can select **All services** and find **Microsoft Defender for Cloud** in the security section as shown in the following image:
 
     ![Screenshot showing the All services pane with Defender for Cloud highlighted.](../media/2-ASC-Menu.png)
 
-1. Select **Environment settings** from the left-hand menu.
+1. Select **Environment settings** under **Management** in the left-hand menu.
 
-1. Next, select the ellipses next to the subscription for which you want to downgrade, then select **Edit settings**.
+1. Next, select the ellipses next to the subscription you want to downgrade, then select **Edit settings**.
 
 1. A new page will appear that looks like the image below. Toggle the **Defender CSPM** plan to **Off**.
 
     ![Screenshot showing Foundational CSPM and Defender CSPM options.](../media/2-Pricing-Tier.png)
 
-1. Press the **Save** button at the top of the screen.
+1. Select the **Save** button at the top of the screen.
 
-You have now downgraded your subscription to the free tier of Microsoft Defender for Cloud.
+You've now downgraded your subscription to the free tier of Microsoft Defender for Cloud.
 
-Congratulations, you have taken your first (and most important) step to securing your application, data and network!
+Congratulations, you've taken your first (and most important) step to securing your application, data and network!
