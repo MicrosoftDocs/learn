@@ -5545,7 +5545,7 @@ achievements:
   title: Basic Azure Health Bot
   summary: This module starts with a basic informative bot that has no interrupting or breaking scenario involved. It shows you how to enhance the bot with more advanced functionalities.
   iconUrl: /training/achievements/student-evangelism/health-bot-basic-bot.svg
-- uid: learn.wwl.create-power-bi-model-relationships
+- uid: learn.wwl.create-power-bi-model-relationships.badge
   type: badge
   title: Create Power BI model relationships
   summary: "Power BI model relationships form the basis of a tabular model. Define Power BI model relationships, set up relationships, recognize DAX relationship functions, and describe relationship evaluation."
