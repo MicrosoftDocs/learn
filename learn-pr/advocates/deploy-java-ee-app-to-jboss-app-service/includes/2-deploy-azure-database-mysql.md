@@ -1,62 +1,71 @@
-Azure Database for MySQL is a relational database service powered by the MySQL community edition. You can use Azure Database for MySQL to host a MySQL database in Azure. It's a fully managed Database as a Service (DBaaS) offering that can handle mission-critical workloads with predictable performance and dynamic scalability.
+Azure Database for MySQL is a relational database service powered by the MySQL community edition. It's a fully managed database-as-a-service (DBaaS) offering that can handle mission-critical workloads with predictable performance and dynamic scalability.
 
 ## Azure Database for MySQL deployment options
 
-To host a MySQL database in Azure, you can use Azure Database for MySQL - Flexible Server. This option provides the following capabilities:
+To host a MySQL database in Azure, you can use the Flexible Server deployment option. The Flexible Server option provides the following capabilities:
 
-- Better control of your database servers, and cost optimization.
-- Application development by customizing the MySQL engine.
+- Better control of your database servers and cost optimization.
+- The ability to develop applications by customizing the MySQL engine.
 - Zone-redundant high availability.
 - Managed maintenance windows to control the timing of patches and upgrades.
 - Configuration parameters for tuning.
 
 ## Commands for deploying a server instance
 
-The steps in this unit illustrate deploying an Azure Database for MySQL - Flexible Server instance. You execute these steps in the next unit. Use the following steps to create a resource group, create a server instance in the group, and configure a firewall rule in the instance:
+This unit shows you the steps to deploy an Azure Database for MySQL - Flexible Server instance. You actually execute similar steps in the next unit, including running a script that performs some steps for you.
 
-1. Sign in to the Azure CLI by using the following command:
+To deploy an Azure Database for MySQL - Flexible Server instance, you first create a resource group. You then create the server instance in the resource group. Finally, to access the instance, you configure a firewall rule.
+
+The following steps outline the commands for those tasks:
+
+1. To sign in to the Azure CLI, you use the following command:
 
     ```azurecli
     az login
     ```
 
-1. Create an Azure resource group by using the following command:
-
-    > [!IMPORTANT]
-    > `MYSQL_RESOURCE_GROUP_NAME` must be unique within your subscription. `MYSQL_LOCATION` must be one of the values returned in the `Name` column when you use the command `az account list-locations --output table`.
+1. To create an Azure resource group, you use the following command:
 
     ```azurecli
     az group create \
-        --name $MYSQL_RESOURCE_GROUP_NAME \
-        --location $MYSQL_LOCATION
+        --name <resource-group-name> \
+        --location <location>
     ```
 
-1. Create an Azure Database for MySQL - Flexible Server instance by using the following command:
+    The following list describes the values you use for the `<...>` placeholders:
 
-    > [!IMPORTANT]
-    > `MYSQL_SERVER_NAME` must be unique within the resource group. The name can contain only lowercase letters, numbers, and the hyphen (-) character. The name must be between three and 63 characters long, inclusively, and if it's convenient, you can just use the value of `MYSQL_RESOURCE_GROUP_NAME`. `MYSQL_PASSWORD` is the password of the administrator. The password must be between eight and 128 characters long, inclusively, and it must contain characters from three of the following categories: English uppercase letters, English lowercase letters, numbers, and non-alphanumeric characters. `PUBLIC_IP` is the public IP address of the host name from which you want to allow connections outside of Azure, which is used for testing the database from your local host.
+    - `<resource-group-name>` must be unique within your subscription.
+    - `<location>` must be one of the values returned in the `Name` column when you use the command `az account list-locations --output table`.
+
+1. To create an Azure Database for MySQL - Flexible Server instance, use the following command:
 
     ```azurecli
     az mysql flexible-server create \
-        --resource-group $MYSQL_RESOURCE_GROUP_NAME \
-        --name $MYSQL_SERVER_NAME \
-        --admin-user $MYSQL_USER \
-        --admin-password $MYSQL_PASSWORD \
+        --resource-group <resource-group-name> \
+        --name <MySQL-server-name> \
+        --admin-user <MySQL-user> \
+        --admin-password <MySQL-password> \
         --sku-name Standard_B1ms \
         --tier Burstable \
-        --public-access $PUBLIC_IP \
+        --public-access <public-IP> \
         --storage-size 32 \
         --storage-auto-grow Enabled \
         --iops 500 \
         --version 8.0.21
     ```
 
-1. Create a firewall rule by using the following command:
+    The following list describes the values you use for the `<...>` placeholders, in addition to the values previously described:
+
+    - `<MySQL-server-name>` must be unique within the resource group. The name can contain only lowercase letters, numbers, and the hyphen (-) character. The name must be between 3 and 63 characters long, inclusively, and if it's convenient, you can just use the same value you use for `<resource-group-name>`.
+    - `<MySQL-password>` is the password of the administrator. The password must be between 8 and 128 characters long, inclusively, and it must contain characters from three of the following categories: English uppercase letters, English lowercase letters, numbers, and non-alphanumeric characters.
+    - `<public-IP>` is the public IP address of the host name from which you want to allow connections outside of Azure, which is used for testing the database from your local host.
+
+1. To create a firewall rule, use the following command with the same placeholder values from the previous commands:
 
     ```azurecli
     az mysql flexible-server firewall-rule create \
-        --resource-group $MYSQL_RESOURCE_GROUP_NAME \
-        --name $MYSQL_SERVER_NAME \
+        --resource-group <resource-group-name> \
+        --name <MySQL-server-name> \
         --rule-name AllowAllAzureIPs \
         --start-ip-address 0.0.0.0 \
         --end-ip-address 255.255.255.255
@@ -66,38 +75,38 @@ The steps in this unit illustrate deploying an Azure Database for MySQL - Flexib
 
 Since MySQL 8.0, the user authentication method changed to `caching_sha2_password`, making `mysql_native_password` authentication unavailable. As an alternative, you can use the `az mysql flexible-server connect` command in the Azure CLI to test connectivity to your database server, quickly create a basic database, and run queries directly against your server without installing **mysql.exe** or MySQL Workbench. You can also use the command in interactive mode to run multiple queries at a time.
 
-Use the following steps to create a database, connect to the server, and run a query:
+Use the following commands to create a database, connect to the server, and run a query, using the same placeholder values from the previous commands and the new `<database-name>` value to name the database.
 
-1. Use the following command to create a database:
+1. To create a database, use the following command:
 
     ```azurecli
     az mysql flexible-server db create \
-        --resource-group  $MYSQL_RESOURCE_GROUP_NAME \
-        --server-name $MYSQL_SERVER_NAME \
-        --database-name newdatabase \
+        --resource-group <resource-group-name> \
+        --server-name <MySQL-server-name> \
+        --database-name <database-name> \
         --charset utf8mb4 \
         --collation utf8mb4_unicode_ci
     ```
 
-1. Connect to the server with interactive mode by using the following command:
+1. To connect to the server with interactive mode, use the following command:
 
     ```azurecli
     az mysql flexible-server connect \
-        --name $MYSQL_SERVER_NAME \
-        --admin-user $MYSQL_USER \
-        --admin-password $MYSQL_PASSWORD \
-        --database-name newdatabase \
+        --name <MySQL-server-name> \
+        --admin-user <MySQL-user> \
+        --admin-password <MySQL-password> \
+        --database-name <database-name> \
         --interactive
     ```
 
-1. Use the following command to run a query:
+1. To run a query, use the following command:
 
     ```azurecli
     az mysql flexible-server execute \
-        --name $MYSQL_SERVER_NAME \
-        --admin-user $MYSQL_USER \
-        --admin-password $MYSQL_PASSWORD \
-        --database-name newdatabase \
+        --name <MySQL-server-name> \
+        --admin-user <MySQL-user> \
+        --admin-password <MySQL-password> \
+        --database-name <database-name> \
         --querytext "select * from table1;"
     ```
 
@@ -105,10 +114,10 @@ Use the following steps to create a database, connect to the server, and run a q
 
     ```azurecli
     az mysql flexible-server execute \
-        --name $MYSQL_SERVER_NAME \
-        --admin-user $MYSQL_USER \
-        --admin-password $MYSQL_PASSWORD \
-        --database-name newdatabase \
+        --name <MySQL-server-name> \
+        --admin-user <MySQL-user> \
+        --admin-password <MySQL-password> \
+        --database-name <database-name> \
         --file-path "./test.sql"
     ```
 

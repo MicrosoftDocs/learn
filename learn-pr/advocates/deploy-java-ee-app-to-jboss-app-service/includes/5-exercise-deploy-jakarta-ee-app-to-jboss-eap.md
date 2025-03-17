@@ -320,7 +320,7 @@ After you configure the startup script, configure App Service to use Service Con
     - `PASSWORDLESS_USER_NAME_SUFFIX` is the suffix for the username used to connect to the MySQL flexible server. The username created will have the prefix `aad_` followed by the specified suffix.
     - `SOURCE_WEB_APP_ID` is the ID of the Azure App Service instance used to connect to the MySQL flexible server.
     - `MYSQL_ID` is the ID of the MySQL flexible server.
-    - `TARGET_MYSQL_ID` specifies the database name as `world`, to establish a connection with a user who has permissions to access the `world` database.
+    - `TARGET_MYSQL_ID` specifies the database name as `$MYSQL_ID/databases/world` to establish a connection with a user who has permission to access the `world` database.
     - `MANAGED_ID` is the managed identity used to connect to the MySQL flexible server.
 
 1. Add the extension for `serviceconnector-passwordless` and create the service connection by using the following commands:
@@ -341,7 +341,7 @@ After you configure the startup script, configure App Service to use Service Con
     > [!NOTE]
     > if you get an error message like `Resource '********-****-****-****-************' does not exist or one of its queried reference-property objects are not present.`, re-run the command after a few seconds.
 
-1. Again check the list of users registered in MySQL by using the following command:
+1. Check the list of users registered in MySQL by using the following query:
 
     ```sql
     SELECT user, host, plugin FROM mysql.user;

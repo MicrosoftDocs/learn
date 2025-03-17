@@ -60,59 +60,45 @@ az login
 
 ## Set up a default installation location
 
-The commands executed by the script used in this module expect a `--location` option. Specify a default value for this option by using the following command, replacing `<desired-location>` with an appropriate region:
-
-> [!NOTE]
-> We advise you to use the same region you used for deploying your Jakarta EE application.
+The commands executed by the script used in this module expect a `--location` option. Specify a default value for this option by using the following command, replacing `<location>` with an appropriate region. You should use the same region you use for deploying your Jakarta EE application later in this module.
 
 ```azurecli
-az configure --defaults location=<desired-location>
+az configure --defaults location=<location>
 ```
 
 ## Create an Azure Database for MySQL - Flexible Server instance
 
-Use the following steps to create a server instance:
+Navigate to the **mslearn-jakarta-ee-azure** directory, and then use the following command to create your Azure Database for MySQL Flexible Server instance:
 
-1. Navigate to the **mslearn-jakarta-ee-azure** directory, and use the following command to create your Azure Database for MySQL Flexible Server instance:
+> [!IMPORTANT]
+> Use the following command in an IPv4 environment. If your environment has an IPv6 address, the command will fail because the firewall configuration for it doesn't support IPv6 addresses yet.
+>
+> If an error occurs during the execution of the script, the process stops in the middle of the execution. An error might occur while the script is granting permissions, as indicated by the output message `Granting the User.Read.All, GroupMember.Read.All, and Application.Read.All permissions to the user managed identity`. To fix this error, sign in to the Azure CLI again with a user that has `Azure AD administrator` privileges, and then re-run the script.
 
-    > [!IMPORTANT]
-    > Use the following command in an IPv4 environment. If your environment has an IPv6 address, the command fails because the firewall configuration for it doesn't support IPv6 addresses yet.
-    >
-    > If an error occurs during the execution of the script, the process stops in the middle of the execution. If an error occurs during `Granting the User.Read.All, GroupMember.Read.All, and Application.Read.All permissions to the user managed identity`, sign in to the Azure CLI again with a user that has `Azure AD administrator` privileges and then re-run the script.
+```bash
+./setup_mysql.sh flexible
+```
 
-    ```bash
-    ./setup_mysql.sh flexible
-    ```
+The typical output includes the following success, plus some important values that you use in the rest of this module:
 
-    The following output is typical:
+```output
+[INFO] -------------------------------------------------------
+[INFO] Azure Database for MySQL Setup Completed SUCCESS
+[INFO] -------------------------------------------------------
+```
 
-    ```output
-    [INFO] -------------------------------------------------------
-    [INFO] Azure Database for MySQL Setup Completed SUCCESS
-    [INFO] -------------------------------------------------------
-    [INFO] 1. Please copy the following value into your temporal file
-    [INFO]
-    [INFO] RESOURCE GROUP is $RESOURCE_GROUP_NAME
-    [INFO] MySQL HOSTNAME is $MYSQL_SERVER_INSTANCE.mysql.database.azure.com
-    [INFO] MySQL ADMIN_USERNAME is $CURRENT_AZ_LOGIN_USER_NAME#EXT#$CURRENT_AZ_LOGIN_USER_NAME
-    [INFO]
-    [INFO]
-    [INFO] 2. Please execute the following command to connect to the Server.
-    [INFO]
-    [INFO] mysql -h $MYSQL_SERVER_INSTANCE.mysql.database.azure.com --user $CURRENT_AZ_LOGIN_USER_NAME#EXT#$CURRENT_AZ_LOGIN_USER_NAME --enable-cleartext-plugin --password=$(az account get-access-token --resource-type oss-rdbms --output tsv --query accessToken)
-    [INFO]
-    [INFO] Or you can use the following Azure CLI command
-    [INFO]
-    [INFO] az mysql flexible-server connect -g $RESOURCE_GROUP_NAME -n $MYSQL_SERVER_INSTANCE -u azureuser -p '!yhYrNhwQ27640' --interactive
-    [INFO] Password: [!yhYrNhwQ27640]
-    [INFO]
-    [INFO]
-    [INFO] 3. Clean up Resource (Delete MySQL DB)
-    [INFO] az group delete -n $RESOURCE_GROUP_NAME
-    [INFO] -------------------------------------------------------
-    ```
+Save aside the key values that appear in the output because you use these values in later steps.
 
-1. Note the key values that appear in the output, because you use these values in later steps.
+## Set up environment variables
+
+Use the following commands to store the key values. Be sure to replace the `<...>` placeholders with the values output by the script in the previous section.
+
+```bash
+export RESOURCE_GROUP_NAME=<resource-group>
+export MYSQL_SERVER_INSTANCE=<MySQL-host-name>
+export MYSQL_USER=<MySQL-admin-user-name>
+export MYSQL_PASSWORD=<MySQL-password>
+```
 
 ## Get data from the sample database
 
@@ -145,7 +131,7 @@ In this module, you use a sample database called `world` from the official MySQL
 
 ## Sign in to the database
 
-To sign in to the database and view the available usernames and plugins, use the following steps:
+To connect to the database and view the available usernames and plugins, use the following steps:
 
 ### [Azure CLI](#tab/azure-cli)
 
@@ -160,7 +146,7 @@ To sign in to the database and view the available usernames and plugins, use the
 
 1. When the system prompts you, enter a password.
 
-1. List the available usernames and plugins by using the following command:
+1. At the SQL prompt, list the available usernames and plugins by using the following query:
 
     ```sql
     SELECT user, host, plugin FROM mysql.user;
@@ -202,7 +188,7 @@ To sign in to the database and view the available usernames and plugins, use the
     >
     > This error is addressed by the **setup_mysql.sh** script that you ran previously in this unit. The script adds an admin user who can connect to the database using the access token of the user currently signed in to the Azure CLI. Therefore, the `mysql` command can connect by using that access token. For more information, see the [`CreateUserManagedIdentity()`](https://github.com/MicrosoftDocs/mslearn-jakarta-ee-azure/blob/main/setup_mysql.sh#L145-L208) function in the [setup_mysql.sh](https://github.com/MicrosoftDocs/mslearn-jakarta-ee-azure/blob/main/setup_mysql.sh) script.
 
-1. List the available usernames and plugins by using the following command:
+1. At the SQL prompt, list the available usernames and plugins by using the following query:
 
     ```sql
     SELECT user, host, plugin FROM mysql.user;
@@ -237,7 +223,7 @@ Use the following steps to create a database for your application and to verify 
 
     ```azurecli
     az mysql flexible-server execute \
-        --name $MYSQL_SERVER_NAME \
+        --name $MYSQL_SERVER_INSTANCE \
         --admin-password azureuser \
         --admin-password '$MYSQL_PASSWORD' \
         --file-path "./world-db/world.sql"
@@ -247,7 +233,7 @@ Use the following steps to create a database for your application and to verify 
 
     ```azurecli
     az mysql flexible-server connect \
-        --name $MYSQL_SERVER_NAME \
+        --name $MYSQL_SERVER_INSTANCE \
         --admin-user $MYSQL_USER \
         --database-name world \
         --interactive
@@ -263,7 +249,7 @@ Use the following steps to create a database for your application and to verify 
     Thanks to the contributor - Jakub Boukal
     ```
 
-1. Use the following command to show the databases on the server:
+1. At the SQL prompt, use the following query to show the databases on the server:
 
     ```sql
     show databases;
@@ -288,7 +274,7 @@ Use the following steps to create a database for your application and to verify 
     Time: 0.152s
     ```
 
-1. Use the following command to list the tables in the `world` database:
+1. Use the following query to list the tables in the `world` database:
 
     ```sql
     show tables;
@@ -313,7 +299,7 @@ Use the following steps to create a database for your application and to verify 
 
 Use the following steps to view the contents of the `world` database:
 
-1. List all of the continent information by using the following command:
+1. List all of the continent information by using the following query:
 
     ```sql
     select distinct Continent from country ;
@@ -335,7 +321,7 @@ Use the following steps to view the contents of the `world` database:
     +---------------+
     ```
 
-1. List country names and country codes by continent by using the following command:
+1. List country names and country codes by continent by using the following query:
 
     ```sql
     select code,name from country where Continent='Asia';
@@ -373,7 +359,7 @@ Use the following steps to view the contents of the `world` database:
     51 rows in set (0.02 sec)
     ```
 
-1. List all cities that have a population greater than 1 million by using the following command:
+1. List all cities that have a population greater than 1 million by using the following query:
 
     ```sql
     select * from city where CountryCode='JPN' AND Population > 1000000 ORDER BY Population DESC;
