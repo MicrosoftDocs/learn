@@ -5545,3 +5545,23 @@ achievements:
   title: Basic Azure Health Bot
   summary: This module starts with a basic informative bot that has no interrupting or breaking scenario involved. It shows you how to enhance the bot with more advanced functionalities.
   iconUrl: /training/achievements/student-evangelism/health-bot-basic-bot.svg
+- uid: learn.wwl.create-power-bi-model-relationships.badge
+  type: badge
+  title: Create Power BI model relationships
+  summary: "Power BI model relationships form the basis of a tabular model. Define Power BI model relationships, set up relationships, recognize DAX relationship functions, and describe relationship evaluation."
+  iconUrl: /training/achievements/create-power-bi-model-relationships.svg
+- uid: learn.wwl.design-build-tabular-models.trophy
+  type: trophy
+  title: Design and build tabular models
+  summary: This learning path introduces the foundational components of designing scalable tabular models using Power BI.This learning path helps you prepare for the [Azure Enterprise Data Analyst Certification](/certifications/exams/dp-500).
+  iconUrl: /training/achievements/design-build-tabular-models.svg
+- uid: learn.wwl.create-calculation-groups.badge
+  type: badge
+  title: Create calculation groups
+  summary: In this module you’ll learn what calculation groups are, explore key features and usage scenarios, and learn to create calculation groups.
+  iconUrl: /training/achievements/create-calculation-groups.svg
+- uid: learn.wwl.use-tools-to-optimize-power-bi-performance.badge
+  type: badge
+  title: Use tools to optimize Power BI performance
+  summary: Use tools to develop, manage, and optimize Power BI data model and DAX query performance.
+  iconUrl: /training/achievements/use-tools-optimize-power-bi-performance.svg

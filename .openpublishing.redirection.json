@@ -45876,6 +45876,141 @@
       "source_path": "learn-pr/student-evangelism/altair-azure-sphere-setup/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-power-bi-model-relationships/index.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-power-bi-model-relationships/1-introduction.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-power-bi-model-relationships/2-understand-model-relationships.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-power-bi-model-relationships/3-set-up-relationships.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-power-bi-model-relationships/4-use-dax-relationship-functions.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-power-bi-model-relationships/5-understand-relationship-evaluation.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-power-bi-model-relationships/5a-exercise-work-model-relationships.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-power-bi-model-relationships/6-knowledge-check.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-power-bi-model-relationships/7-summary.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/design-build-tabular-models/index.md",
+      "redirect_url": "/training/paths/work-semantic-models-microsoft-fabric/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-calculation-groups/index.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-calculation-groups/1-introduction.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-calculation-groups/2-understand.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-calculation-groups/3-explore-usage-features.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-calculation-groups/4-model.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-calculation-groups/5-lab.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-calculation-groups/6-knowledge-check.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-calculation-groups/7-summary.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-tools-optimize-power-bi-performance/index.md",
+      "redirect_url": "/training/modules/optimize-model-power-bi/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-tools-optimize-power-bi-performance/1-introduction.md",
+      "redirect_url": "/training/modules/optimize-model-power-bi/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-tools-optimize-power-bi-performance/2-use-performance-analyzer.md",
+      "redirect_url": "/training/modules/optimize-model-power-bi/",
+      "redirect_document_id": false
+    },
+
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-tools-optimize-power-bi-performance/3-troubleshoot-dax-performance-use-dax-studio.md",
+      "redirect_url": "/training/modules/optimize-model-power-bi/",
+      "redirect_document_id": false
+    },
+
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-tools-optimize-power-bi-performance/4-optimize-data-model-use-best-practice-analyzer.md",
+      "redirect_url": "/training/modules/optimize-model-power-bi/",
+      "redirect_document_id": false
+    },
+
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-tools-optimize-power-bi-performance/5-exercise.md",
+      "redirect_url": "/training/modules/optimize-model-power-bi/",
+      "redirect_document_id": false
+    },
+
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-tools-optimize-power-bi-performance/6-knowledge-check.md",
+      "redirect_url": "/training/modules/optimize-model-power-bi/",
+      "redirect_document_id": false
+    },
+
+    {
+      "source_path": "learn-pr/wwl-data-ai/use-tools-optimize-power-bi-performance/7-summary.md",
+      "redirect_url": "/training/modules/optimize-model-power-bi/",
+      "redirect_document_id": false
     }
  ]
 }
