@@ -45876,6 +45876,51 @@
       "source_path": "learn-pr/student-evangelism/altair-azure-sphere-setup/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-power-bi-model-relationships/index.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-power-bi-model-relationships/1-introduction.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-power-bi-model-relationships/2-understand-model-relationships.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-power-bi-model-relationships/3-set-up-relationships.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-power-bi-model-relationships/4-use-dax-relationship-functions.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-power-bi-model-relationships/5-understand-relationship-evaluation.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-power-bi-model-relationships/5a-exercise-work-model-relationships.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-power-bi-model-relationships/6-knowledge-check.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-power-bi-model-relationships/7-summary.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
     }
  ]
 }
