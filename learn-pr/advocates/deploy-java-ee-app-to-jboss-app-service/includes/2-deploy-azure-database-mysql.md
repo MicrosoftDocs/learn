@@ -12,7 +12,7 @@ To host a MySQL database in Azure, you can use the Flexible Server deployment op
 
 ## Commands for deploying a server instance
 
-This unit shows you the steps to deploy an Azure Database for MySQL - Flexible Server instance. You actually execute similar steps in the next unit, including running a script that performs some steps for you.
+This unit describes the steps to deploy an Azure Database for MySQL - Flexible Server instance. You actually execute similar steps in the next unit, including running a script that performs some steps for you.
 
 To deploy an Azure Database for MySQL - Flexible Server instance, you first create a resource group. You then create the server instance in the resource group. Finally, to access the instance, you configure a firewall rule.
 

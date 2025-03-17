@@ -1,4 +1,4 @@
-The steps in this unit illustrate how to deploy your Jakarta EE application to Red Hat JBoss Enterprise Application Platform (JBoss EAP) on Azure App Service, and how to connect to the database. You execute these steps in the next unit.
+This unit describes the steps to deploy your Jakarta EE application to Red Hat JBoss Enterprise Application Platform (JBoss EAP) on Azure App Service. It also describes how to connect to the database. You actually execute these steps in the next unit.
 
 ## Create a Jakarta EE application
 
@@ -17,18 +17,16 @@ In this module, you use a sample Jakarta EE application that uses the following 
 
 Microsoft provides the Maven Plugin for Azure App Service to deploy your Java web applications to Azure App Service. By using this Maven plug-in, you can configure the following settings for your App Service instance:
 
-| Setting                    | Description                                                         |
-|--------------------------|---------------------------------------------------------------------|
-| `subscriptionID`         | Azure subscription for deployment                                   |
-| `resourceGroup`          | Name of the resource group where the web container is deployed      |
-| `appName`                | Application instance name for the web container                     |
-| `pricingTier`            | Virtual machine selection to use                                    |
-| `region`                 | Region to deploy (same location as the MySQL installation location) |
-| `runtime`, `OS`           | Operating system to use (Linux)                                     |
-| `runtime`, `javaVersion`  | Java virtual machine version for the web container (Java 17)        |
-| `runtime`, `webContainer` | Web container (JBoss EAP 8)                                         |
-
-In this module, you deploy an application to the JBoss EAP environment. Select `Java 17` for the Java version and `Red Hat JBoss EAP 8` for the runtime web container.
+| Setting                   | Description                                                                                            |
+|---------------------------|--------------------------------------------------------------------------------------------------------|
+| `subscriptionID`          | The Azure subscription for deployment.                                                                 |
+| `resourceGroup`           | The name of the resource group where the web container is deployed.                                    |
+| `appName`                 | The application instance name for the web container.                                                   |
+| `pricingTier`             | The virtual machine selection to use.                                                                  |
+| `region`                  | The region to deploy to. In this module, you use the same location as the MySQL installation location. |
+| `runtime`, `OS`           | The operating system to use. In this module, you use `Linux`.                                          |
+| `runtime`, `javaVersion`  | The Java virtual machine version for the web container. In this module you use `Java 17`.              |
+| `runtime`, `webContainer` | The web container. In this module, you use `Red Hat JBoss EAP 8`.                                      |
 
 ## Build the WAR package
 
@@ -41,11 +39,11 @@ You can use the `./mvnw package` command to build a Web Application Archive (WAR
 
 After you create your Maven artifact, you can use the `deploy` command in the Maven Plugin for Azure App Service to deploy the application to JBoss EAP. This command creates an Azure resource group and an instance of JBoss EAP based on the preceding plug-in settings. This one command does everything from creating instances to deploying the Java web application.
 
- All of the Azure Maven plug-ins share a common set of configurations. For the complete list of configurations, see the plug-in reference documentation. For more information, see [Common Configuration](https://github.com/microsoft/azure-maven-plugins/wiki/Common-Configuration). For more information about configurations specific to App Service, see [Azure Web App: Configuration Details](https://github.com/microsoft/azure-maven-plugins/wiki/Azure-Web-App:-Configuration-Details).
+All of the Azure Maven plug-ins share a common set of configurations. For the complete list of configurations, see the plug-in reference documentation. For more information, see [Common Configuration](https://github.com/microsoft/azure-maven-plugins/wiki/Common-Configuration). For more information about configurations specific to App Service, see [Azure Web App: Configuration Details](https://github.com/microsoft/azure-maven-plugins/wiki/Azure-Web-App:-Configuration-Details).
 
 ## Configure a database connection by using a data source and JNDI
 
-Your application requires a binding to a data source. In the next unit, you configure the application to use the MySQL database that we created in the previous units. To connect to the database from JBoss EAP, you need to configure a `DataSource` object, which enables an application to connect to the database.
+Your application requires a binding to a data source. In the next unit, you configure the application to use the MySQL database that you created in the previous unit. To connect to the database from JBoss EAP, you need to configure a `DataSource` object, which enables an application to connect to the database.
 
 You configure `DataSource` to connect to the Azure Database for MySQL instance that you created earlier by using the following settings:
 

@@ -7,6 +7,7 @@ metadata:
   author: KarlErickson
   ms.author: karler
   ms.reviewer: yoshioterada
+  ms.service: azure-java
   ms.topic: module
   ms.custom: team=cloud_advocates, devx-track-java, devx-track-javaee-jbosseap-appsvc, devx-track-javaee
 title: Deploy a Jakarta EE application to Azure

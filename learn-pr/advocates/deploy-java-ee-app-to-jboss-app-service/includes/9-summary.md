@@ -7,8 +7,8 @@ In this module, you created resources by using your Azure subscription. You need
 1. Use the following commands to delete all of the resources:
 
     ```azurecli
-    az group delete --name <name-of-your-MySQL-resource>
-    az group delete --name <name-of-your-JBoss-EAP-on-Azure-App-Service-resource>
+    az group delete --name <name-of-your-MySQL-resource-group>
+    az group delete --name <name-of-your-JBoss-EAP-on-Azure-App-Service-resource-group>
     ```
 
 1. Use the following command to clear out any defaults configured with `az configure` that you no longer want to keep:

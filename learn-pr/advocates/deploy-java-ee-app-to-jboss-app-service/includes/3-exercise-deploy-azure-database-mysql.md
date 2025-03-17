@@ -68,7 +68,7 @@ az configure --defaults location=<location>
 
 ## Create an Azure Database for MySQL - Flexible Server instance
 
-Navigate to the **mslearn-jakarta-ee-azure** directory, and then use the following command to create your Azure Database for MySQL Flexible Server instance:
+Navigate to the **mslearn-jakarta-ee-azure** directory, and then use the following command to create your Azure Database for MySQL - Flexible Server instance:
 
 > [!IMPORTANT]
 > Use the following command in an IPv4 environment. If your environment has an IPv6 address, the command will fail because the firewall configuration for it doesn't support IPv6 addresses yet.
@@ -131,93 +131,66 @@ In this module, you use a sample database called `world` from the official MySQL
 
 ## Sign in to the database
 
-To connect to the database and view the available usernames and plugins, use the following steps:
-
 ### [Azure CLI](#tab/azure-cli)
 
-1. Use the following command to connect using only the username and password, instead of an access token:
+Use the following command to connect to the database using only the username and password, instead of an access token:
 
-    ```azurecli
-    az mysql flexible-server connect \
-        --name $MYSQL_SERVER_INSTANCE \
-        --user azureuser \
-        --interactive
-    ```
+```azurecli
+az mysql flexible-server connect \
+    --name $MYSQL_SERVER_INSTANCE \
+    --user azureuser \
+    --interactive
+```
 
-1. When the system prompts you, enter a password.
-
-1. At the SQL prompt, list the available usernames and plugins by using the following query:
-
-    ```sql
-    SELECT user, host, plugin FROM mysql.user;
-    ```
-
-    The following output is typical:
-
-    ```output
-    +----------------------------------+-----------+-----------------------+
-    | user                             | host      | plugin                |
-    +----------------------------------+-----------+-----------------------+
-    | azureuser                        | %         | mysql_native_password |
-    | $CURRENT_AZ_LOGIN_USER_NAME#EXT#@| %         | aad_auth              |
-    | azure_superuser                  | 127.0.0.1 | mysql_native_password |
-    | azure_superuser                  | localhost | mysql_native_password |
-    | mysql.infoschema                 | localhost | caching_sha2_password |
-    | mysql.session                    | localhost | caching_sha2_password |
-    | mysql.sys                        | localhost | caching_sha2_password |
-    +----------------------------------+-----------+-----------------------+
-    ```
+When the system prompts you, enter the MySQL password that you retrieved previously.
 
 ### [MySQL](#tab/mysql)
 
-1. To connect to the Azure Database for MySQL - Flexible Server instance, use the following command:
+Use the following command to connect to the database using an access token instead of a password:
 
-    ```azurecli
-    mysql \
-        --host $MYSQL_SERVER_INSTANCE.mysql.database.azure.com \
-        --user CURRENT_AZ_LOGIN_USER_NAME#EXT#@CURRENT_AZ_LOGIN_USER_NAME \
-        --enable-cleartext-plugin \
-        --password=$(az account get-access-token \
-            --resource-type oss-rdbms \
-            --output tsv \
-            --query accessToken)
-    ```
+```azurecli
+mysql \
+    --host $MYSQL_SERVER_INSTANCE.mysql.database.azure.com \
+    --user CURRENT_AZ_LOGIN_USER_NAME#EXT#@CURRENT_AZ_LOGIN_USER_NAME \
+    --enable-cleartext-plugin \
+    --password=$(az account get-access-token \
+        --resource-type oss-rdbms \
+        --output tsv \
+        --query accessToken)
+```
 
-    > [!NOTE]
-    > This command connects to the database by using an access token instead of a password. Using an access token is necessary because, starting from MySQL version 8, the default authentication plug-in is `caching_sha2_password`. Therefore, if you use the `mysql` command to authenticate using only the username and password, you encounter the following error: `ERROR 2059 (HY000): Authentication plugin 'mysql_native_password' cannot be loaded`.
-    >
-    > This error is addressed by the **setup_mysql.sh** script that you ran previously in this unit. The script adds an admin user who can connect to the database using the access token of the user currently signed in to the Azure CLI. Therefore, the `mysql` command can connect by using that access token. For more information, see the [`CreateUserManagedIdentity()`](https://github.com/MicrosoftDocs/mslearn-jakarta-ee-azure/blob/main/setup_mysql.sh#L145-L208) function in the [setup_mysql.sh](https://github.com/MicrosoftDocs/mslearn-jakarta-ee-azure/blob/main/setup_mysql.sh) script.
-
-1. At the SQL prompt, list the available usernames and plugins by using the following query:
-
-    ```sql
-    SELECT user, host, plugin FROM mysql.user;
-    ```
-
-    The following output is typical:
-
-    ```output
-    +----------------------------------+-----------+-----------------------+
-    | user                             | host      | plugin                |
-    +----------------------------------+-----------+-----------------------+
-    | azureuser                        | %         | mysql_native_password |
-    | $CURRENT_AZ_LOGIN_USER_NAME#EXT#@| %         | aad_auth              |
-    | azure_superuser                  | 127.0.0.1 | mysql_native_password |
-    | azure_superuser                  | localhost | mysql_native_password |
-    | mysql.infoschema                 | localhost | caching_sha2_password |
-    | mysql.session                    | localhost | caching_sha2_password |
-    | mysql.sys                        | localhost | caching_sha2_password |
-    +----------------------------------+-----------+-----------------------+
-    ```
+> [!NOTE]
+> Using an access token is necessary when you authenticate using `mysql`. This requirement is because the default authentication plug-in is `caching_sha2_password` starting with MySQL version 8. If you use only the username and password, you encounter the following error: `ERROR 2059 (HY000): Authentication plugin 'mysql_native_password' cannot be loaded`.
+>
+> The **setup_mysql.sh** script that you ran previously in this unit enables the access-token authentication. The script adds an admin user who can connect to the database using the access token of the user currently signed in to the Azure CLI. The `mysql` command can then connect by using that access token. For more information, see the [`CreateUserManagedIdentity()`](https://github.com/MicrosoftDocs/mslearn-jakarta-ee-azure/blob/main/setup_mysql.sh#L145-L208) function in the [setup_mysql.sh](https://github.com/MicrosoftDocs/mslearn-jakarta-ee-azure/blob/main/setup_mysql.sh) script.
 
 ---
 
+After you connect, you can use the following query at the SQL prompt to view the available usernames and plugins:
+
+```sql
+SELECT user, host, plugin FROM mysql.user;
+```
+
+The following output is typical:
+
+```output
++----------------------------------+-----------+-----------------------+
+| user                             | host      | plugin                |
++----------------------------------+-----------+-----------------------+
+| azureuser                        | %         | mysql_native_password |
+| $CURRENT_AZ_LOGIN_USER_NAME#EXT#@| %         | aad_auth              |
+| azure_superuser                  | 127.0.0.1 | mysql_native_password |
+| azure_superuser                  | localhost | mysql_native_password |
+| mysql.infoschema                 | localhost | caching_sha2_password |
+| mysql.session                    | localhost | caching_sha2_password |
+| mysql.sys                        | localhost | caching_sha2_password |
++----------------------------------+-----------+-----------------------+
+```
+
 ## Create a database and tables for your application
 
-Use the following steps to create a database for your application and to verify its details:
-
-> [!TIP]
-> You can also use the `mysql` command to create a database and tables from a script file, but that command takes a long time to complete. We therefore recommend using `az mysql flexible-server execute`.
+Use the following steps to create a database for your application from the **world.sql** script, and then verify its details:
 
 1. Use the following command to create the database and tables:
 
@@ -229,6 +202,9 @@ Use the following steps to create a database for your application and to verify 
         --file-path "./world-db/world.sql"
     ```
 
+    > [!TIP]
+    > You can also use `mysql` to create a database and tables from a script file, but that command takes a long time to complete.
+
 1. Confirm that the databases and tables are in your server by using the following command:
 
     ```azurecli
@@ -239,7 +215,9 @@ Use the following steps to create a database for your application and to verify 
         --interactive
     ```
 
-1. When the system prompts you, enter a password. The following output is typical:
+1. When the system prompts you, enter the MySQL password that you retrieved previously.
+
+    The following output is typical:
 
     ```output
     MySQL 8.0.39

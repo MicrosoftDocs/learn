@@ -27,43 +27,6 @@ Configure the app with the Maven Plugin for Azure App Service by using the follo
     The following output is typical:
 
     ```output
-    ./mvnw com.microsoft.azure:azure-webapp-maven-plugin:2.13.0:config
-    [INFO] Scanning for projects...
-    [INFO]
-    [INFO] ---------< com.microsoft.azure.samples:jakartaee-app-on-jboss >---------
-    [INFO] Building jakartaee-app-on-jboss 0.1-SNAPSHOT
-    [INFO] --------------------------------[ war ]---------------------------------
-    [INFO]
-    [INFO] --- azure-webapp-maven-plugin:2.13.0:config (default-cli) @ jakartaee-app-on-jboss ---
-    Create new run configuration (Y/N) [Y]:
-    Define value for OS [Linux]:
-      1: Windows
-    * 2: Linux
-      3: Docker
-    Enter your choice:
-    Define value for javaVersion [Java 17]:
-    * 1: Java 17
-    Enter your choice:
-    Define value for webContainer [Tomcat 10.0]:
-    * 1: Tomcat 10.0
-      2: Tomcat 9.0
-      3: Jbosseap 7
-    Enter your choice: 3
-    Define value for pricingTier [P1v3]:
-    * 1: P1v3
-      2: P2v3
-      3: P3v3
-    Enter your choice:
-    Please confirm webapp properties
-    AppName : jakartaee-app-on-jboss-1740086485353
-    ResourceGroup : jakartaee-app-on-jboss-1740086485353-rg
-    Region : centralus
-    PricingTier : P1v3
-    OS : Linux
-    Java Version: Java 17
-    Web server stack: Jbosseap 7
-    Deploy to slot : false
-    Confirm (Y/N) [Y]:
     [INFO] Saving configuration to pom.
     [INFO] ------------------------------------------------------------------------
     [INFO] BUILD SUCCESS
@@ -90,8 +53,8 @@ Configure the app with the Maven Plugin for Azure App Service by using the follo
             <version>2.13.0</version>
             <configuration>
                 <schemaVersion>v2</schemaVersion>
-                <resourceGroup>jakartaee-app-on-jboss-1625038814881-rg</resourceGroup>
-                <appName>jakartaee-app-on-jboss-1625038814881</appName>
+                <resourceGroup>jakartaee-app-on-jboss-rg</resourceGroup>
+                <appName>jakartaee-app-on-jboss</appName>
                 <pricingTier>P1v3</pricingTier>
                 <region>centralus</region>
                 <runtime>
@@ -130,7 +93,7 @@ Configure the app with the Maven Plugin for Azure App Service by using the follo
     </runtime>
     ```
 
-1. To deploy the startup file, add the following XML to the `<resources>` element of your **pom.xml** file:
+1. Add the following XML to the `<resources>` element of your **pom.xml** file. This configuration is used to deploy the startup file, which you update later in this unit.
 
     ```xml
     <resource>
@@ -142,7 +105,7 @@ Configure the app with the Maven Plugin for Azure App Service by using the follo
     </resource>
     ```
 
-    The resource `<type>startup</type>` deploys the specified script as the **startup.sh** file for Linux or **startup.cmd** for Windows. The deployment location is **/home/site/scripts/**.
+    The resource `<type>` value of `startup` deploys the specified script as the **startup.sh** file for Linux or **startup.cmd** for Windows. The deployment location is **/home/site/scripts/**.
 
     > [!NOTE]
     > You can choose the deployment option and deployment location by specifying `type` in one of the following ways:
@@ -156,19 +119,14 @@ Configure the app with the Maven Plugin for Azure App Service by using the follo
     > - `type=startup` deploys the script as **startup.sh** on Linux, or **startup.cmd** on Windows. The script is deployed to **/home/site/scripts/**. The `path` parameter is ignored.
     > - `type=zip` unzips the **.zip** file to **/home/site/wwwroot**. The `path` parameter is optional.
 
-1. Check the values for `resourceGroup` and `appName` in your **pom.xml** file, as shown in the following example:
-
-    ```xml
-    <resourceGroup>jakartaee-app-on-jboss-1625038814881-rg</resourceGroup>
-    <appName>jakartaee-app-on-jboss-1625038814881</appName>
-    ```
+1. Check the values for the `resourceGroup` and `appName` elements in your **pom.xml** file.
 
 1. Assign the values for `resourceGroup` and `appName` to
 environment variables by using the following commands:
 
     ```bash
-    export RESOURCE_GROUP_NAME=jakartaee-app-on-jboss-1625038814881-rg
-    export WEB_APP_NAME=jakartaee-app-on-jboss-1625038814881
+    export RESOURCE_GROUP_NAME=<resource-group>
+    export WEB_APP_NAME=<app-name>
     ```
 
 ## Compile and build the Jakarta EE app
@@ -204,36 +162,11 @@ After you compile and package the code, deploy the application by using the foll
 ./mvnw azure-webapp:deploy
 ```
 
-The following output is typical:
-
-```output
-[INFO] Start creating App Service plan (asp-jakartaee-app-on-jboss-eap8-yoshio)...
-[INFO] App Service plan (asp-jakartaee-app-on-jboss-eap8-yoshio) is successfully created
-[INFO] Start creating Web App(jakartaee-app-on-jboss-eap8-yoshio)...
-[INFO] Web App(jakartaee-app-on-jboss-eap8-yoshio) is successfully created
-[INFO] Trying to deploy external resources to jakartaee-app-on-jboss-eap8-yoshio...
-[INFO] Successfully deployed the resources to jakartaee-app-on-jboss-eap8-yoshio
-[INFO] Trying to deploy artifact to jakartaee-app-on-jboss-eap8-yoshio...
-[INFO] Deploying (/mslearn-jakarta-ee-azure/target/ROOT.war)[war]  ...
-[INFO] Deploying (/mslearn-jakarta-ee-azure/src/main/webapp/WEB-INF/createMySQLDataSource.sh)[startup]  ...
-[INFO] Application url: https://jakartaee-app-on-jboss-eap8-yoshio.azurewebsites.net
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  04:01 min
-[INFO] Finished at: 2025-02-21T06:37:21+09:00
-[INFO] ------------------------------------------------------------------------
-```
-
-The output line that begins with `[INFO] Successfully deployed the artifact` contains the URL of the deployed application.
-
-```output
-[INFO] Successfully deployed the artifact to https://jakartaee-app-on-jboss-1625038814881.azurewebsites.net
-```
+You should see output that includes a success message and the URL of the deployed application. Be sure to save aside the URL for later use.
 
 ## Configure a database connection
 
-The sample application connects to your MySQL Database and displays data. In the Maven project configuration in the **pom.xml** file, you specified the MySQL JDBC driver using the following example:
+The sample application connects to your MySQL database and displays data. The Maven project configuration in the **pom.xml** file specifies the MySQL JDBC driver as shown in the following example:
 
 ```xml
 <dependency>
@@ -243,11 +176,11 @@ The sample application connects to your MySQL Database and displays data. In the
 </dependency>
 ```
 
-As a result, JBoss EAP automatically installs the JDBC drive `ROOT.war_com.mysql.cj.jdbc.Driver_9_2` to your deployment package, **ROOT.war**.
+As a result, JBoss EAP automatically installs the JDBC driver `ROOT.war_com.mysql.cj.jdbc.Driver_9_2` to your deployment package **ROOT.war**.
 
 ## Create the MySQL DataSource object in JBoss EAP
 
-To access Azure Database for MySQL, you need to configure the `DataSource` object in JBoss EAP and specify the JNDI name in your source code. To create a MySQL `DataSource` object in JBoss EAP, you use the **/WEB-INF/createMySQLDataSource.sh** startup shell script. The following is an unconfigured version of the script already in Azure App Service:
+To access Azure Database for MySQL, you need to configure the `DataSource` object in JBoss EAP and specify the Java Naming and Directory Interface (JNDI) name in your source code. To create a MySQL `DataSource` object in JBoss EAP, you use the **/WEB-INF/createMySQLDataSource.sh** startup shell script. The following example shows an unconfigured version of the script already in Azure App Service:
 
 ```bash
 #!/bin/bash
@@ -257,7 +190,7 @@ sed -i -e "s|.*<resolve-parameter-values.*|<resolve-parameter-values>true</resol
 /opt/eap/bin/jboss-cli.sh --connect <<EOF
 data-source add --name=JPAWorldDataSourceDS \
 --jndi-name=java:jboss/datasources/JPAWorldDataSource \
---connection-url=${AZURE_MYSQL_CONNECTION_STRING}&characterEncoding=utf8&sslMode=REQUIRED&serverTimezone=UTC&authenticationPlugins=com.azure.identity.extensions.jdbc.mysql.AzureMysqlAuthenticationPlugin \
+--connection-url=${AZURE_MYSQL_CONNECTIONSTRING}&characterEncoding=utf8&sslMode=REQUIRED&serverTimezone=UTC&authenticationPlugins=com.azure.identity.extensions.jdbc.mysql.AzureMysqlAuthenticationPlugin \
 --driver-name=ROOT.war_com.mysql.cj.jdbc.Driver_9_2 \
 --min-pool-size=5 \
 --max-pool-size=20 \
@@ -273,10 +206,10 @@ EOF
 ```
 
 > [!NOTE]
-> When you create the datasource, you don't specify a password for the MySQL connection. The environment variable `AZURE_MYSQL_CONNECTION_STRING` is specified in the `--connection-url` parameter. This environment variable is automatically set when the service connection is created later.
+> When you create the datasource, you don't specify a password for the MySQL connection. The environment variable `AZURE_MYSQL_CONNECTIONSTRING` is specified in the `--connection-url` parameter. This environment variable is automatically set when the service connection is created later.
 >
-> The service connection value will be set to `jdbc:mysql://$$MYSQL_SERVER_INSTANCE.mysql.database.azure.com:3306/world?serverTimezone=UTC&sslmode=required&user=aad_jbossapp`, which uses the `aad_jbossapp` username without a password.
-> By appending `&authenticationPlugins=com.azure.identity.extensions.jdbc.mysql.AzureMysqlAuthenticationPlugin` to this URL, Azure AD authentication is enabled for the `aad_jbossapp` user.
+> The service connection value is set to `jdbc:mysql://$MYSQL_SERVER_INSTANCE.mysql.database.azure.com:3306/world?serverTimezone=UTC&sslmode=required&user=aad_jbossapp`, which uses the `aad_jbossapp` username without a password.
+> By appending `&authenticationPlugins=com.azure.identity.extensions.jdbc.mysql.AzureMysqlAuthenticationPlugin` to this URL, Microsoft Entra ID authentication is enabled for the `aad_jbossapp` user.
 
 Configure your App Service instance to invoke the startup script by using the following command:
 
@@ -317,7 +250,7 @@ After you configure the startup script, configure App Service to use Service Con
 
     The environment variables are used for the following purposes:
 
-    - `PASSWORDLESS_USER_NAME_SUFFIX` is the suffix for the username used to connect to the MySQL flexible server. The username created will have the prefix `aad_` followed by the specified suffix.
+    - `PASSWORDLESS_USER_NAME_SUFFIX` is the suffix for the username used to connect to the MySQL flexible server. The username created has the prefix `aad_` followed by the specified suffix.
     - `SOURCE_WEB_APP_ID` is the ID of the Azure App Service instance used to connect to the MySQL flexible server.
     - `MYSQL_ID` is the ID of the MySQL flexible server.
     - `TARGET_MYSQL_ID` specifies the database name as `$MYSQL_ID/databases/world` to establish a connection with a user who has permission to access the `world` database.
@@ -341,7 +274,7 @@ After you configure the startup script, configure App Service to use Service Con
     > [!NOTE]
     > if you get an error message like `Resource '********-****-****-****-************' does not exist or one of its queried reference-property objects are not present.`, re-run the command after a few seconds.
 
-1. Check the list of users registered in MySQL by using the following query:
+1. At the SQL prompt, check the list of users registered in MySQL by using the following query:
 
     ```sql
     SELECT user, host, plugin FROM mysql.user;
@@ -365,13 +298,17 @@ After you configure the startup script, configure App Service to use Service Con
     8 rows in set (2.06 sec)
     ```
 
-    You should see that a `aad_jbossapp` user added that uses the `aad_auth` plugin. From JBoss EAP deployed on Azure, you can connect to the MySQL flexible server using the `aad_jbossapp` username without a password.
+    You should see an `aad_jbossapp` user that uses the `aad_auth` plugin. From JBoss EAP deployed on Azure, you can connect to the MySQL flexible server using the `aad_jbossapp` username without a password.
 
-## Confirm the datasource reference in the code
+## Confirm the DataSource reference in the code
 
-Previously, you implemented the database access code by using Java Persistence API (JPA). To configure the datasource reference in your application project and access the MySQL database from your application, use the following steps:
+To access the MySQL database from your application, you need to configure the data source reference in your application project.
 
-1. The configuration for the `DataSource` reference was added in the configuration file of the JPA, **src/main/resources/META-INF/persistence.xml**. Check this file to see if the `DataSource` name matches the name used in the configuration. The code already created the JNDI name as `java:jboss/datasources/JPAWorldDataSource`, as shown in the following example:
+The database access code is implemented using the Java Persistence API (JPA). The configuration for the `DataSource` reference is in the JPA configuration file **persistence.xml**.
+
+Use the following steps to confirm the `DataSource` reference:
+
+1. Open the **src/main/resources/META-INF/persistence.xml** file and check to see if the `DataSource` name matches the name used in the configuration. The startup script already created the JNDI name as `java:jboss/datasources/JPAWorldDataSource`, as shown in the following example:
 
     ```xml
     <persistence-unit name="JPAWorldDatasourcePU" transaction-type="JTA">
@@ -384,7 +321,7 @@ Previously, you implemented the database access code by using Java Persistence A
     </persistence-unit>
     ```
 
-1. Access the MySQL database referenced in the `PersistenceContext` unit name by using the following example:
+1. Access the MySQL database in the `PersistenceContext` unit name as shown in the following example:
 
     ```java
     @Transactional(REQUIRED)
@@ -397,32 +334,27 @@ Previously, you implemented the database access code by using Java Persistence A
 
 ## Access the application
 
-In the sample application, you implemented three REST endpoints. To access the application and retrieve data, use the following steps:
+The sample application implements three REST endpoints. To access the application and retrieve data, use the following steps:
 
 ### [Browser](#tab/browser)
 
-1. Use your browser to navigate to the application URL, which you got from previous output. The relevant line begins with `[INFO] Successfully deployed the artifact`, as in the following typical output:
+1. Use your browser to navigate to the application URL, which was shown in the output when you deployed the application.
 
-    ```output
-    [INFO] Successfully deployed the artifact to
-    https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net
-    ```
-
-1. Use the `GET` method on the `area` endpoint to get all of the continent information in JSON format.
+1. To get all the continent information in JSON format, use the `GET` method on the `area` endpoint.
 
     :::image type="content" source="../media/rest-endpoint-area.png" alt-text="Screenshot of the area endpoint." lightbox="../media/rest-endpoint-area.png":::
 
-1. To retrieve all of the countries and regions in the specified continent, specify a `continent` path parameter on the `area` endpoint and the `GET` method.
+1. To get all the countries and regions in a specified continent, use the `GET` method on the `area` endpoint and specify a `continent` path parameter.
 
     :::image type="content" source="../media/rest-endpoint-continent.png" alt-text="Screenshot of the area endpoint with a continent path parameter." lightbox="../media/rest-endpoint-continent.png":::
 
-1. To retrieve all of the cities that have a population greater than 1 million within the country or region specified, specify a `countrycode` path parameter on the `countries` endpoint and the `GET` method.
+1. To get all the cities that have a population greater than one million within the country or region specified, use the `GET` method on the `countries` endpoint and specify a `countrycode` path parameter.
 
-    :::image type="content" source="../media/rest-endpoint-cities.png" alt-text="Screenshot of the countries endpoint with the  countrycode path parameter." lightbox="../media/rest-endpoint-cities.png":::
+    :::image type="content" source="../media/rest-endpoint-cities.png" alt-text="Screenshot of the countries endpoint with the countrycode path parameter." lightbox="../media/rest-endpoint-cities.png":::
 
 ### [Bash](#tab/bash)
 
-1. To retrieve all of the continents, in JSON format, use the following command:
+1. To get all the continent information in JSON format, use the following command:
 
     ```bash
     curl https://${WEB_APP_NAME}.azurewebsites.net/area
@@ -434,13 +366,13 @@ In the sample application, you implemented three REST endpoints. To access the a
     ["North America","Asia","Africa","Europe","South America","Oceania","Antarctica"]
     ```
 
-1. Use the following command to retrieve all of the countries and regions in a specified continent:
+1. To get all the countries and regions in a specified continent, use the following command:
 
     ```bash
     curl https://${WEB_APP_NAME}.azurewebsites.net/area/Asia | jq '.[] | { name: .name, code: .code }'
     ```
 
-    In this example, the user specified `Asia`. The following output is typical:
+    This example uses `Asia` and produces the following output:
 
     ```output
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
@@ -468,13 +400,13 @@ In the sample application, you implemented three REST endpoints. To access the a
     }
     ```
 
-1. Retrieve all of the cities that have a population greater than 1 million within the specified country or region, by using the following command:
+1. To get all the cities that have a population greater than one million within the country or region specified, use the following command:
 
     ```bash
     curl https://${WEB_APP_NAME}.azurewebsites.net/countries/JPN | jq '.[].name'
     ```
 
-    In this example, the user specified `JPN`. The following output is typical:
+    This example uses `JPN` and produces the following output:
 
     ```output
       % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
@@ -497,4 +429,4 @@ In the sample application, you implemented three REST endpoints. To access the a
 
 ## Exercise summary
 
-In this unit, you validated the application REST endpoints and tested that your application can get data from your MySQL database. In the next unit, you examine the server logs.
+In this unit, you validated the application REST endpoints and confirmed that your application can get data from your MySQL database. In the next unit, you examine the server logs.
