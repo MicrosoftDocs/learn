@@ -45958,7 +45958,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "llearn-pr/wwl-data-ai/create-calculation-groups/6-knowledge-check.md",
+      "source_path": "learn-pr/wwl-data-ai/create-calculation-groups/6-knowledge-check.md",
       "redirect_url": "/training/modules/design-scalable-semantic-models/",
       "redirect_document_id": false
     },
@@ -45978,13 +45978,13 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "llearn-pr/wwl-data-ai/use-tools-optimize-power-bi-performance/2-use-performance-analyzer.md",
+      "source_path": "learn-pr/wwl-data-ai/use-tools-optimize-power-bi-performance/2-use-performance-analyzer.md",
       "redirect_url": "/training/modules/optimize-model-power-bi/",
       "redirect_document_id": false
     },
 
     {
-      "source_path": "llearn-pr/wwl-data-ai/use-tools-optimize-power-bi-performance/3-troubleshoot-dax-performance-use-dax-studio.md",
+      "source_path": "learn-pr/wwl-data-ai/use-tools-optimize-power-bi-performance/3-troubleshoot-dax-performance-use-dax-studio.md",
       "redirect_url": "/training/modules/optimize-model-power-bi/",
       "redirect_document_id": false
     },
