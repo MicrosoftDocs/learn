@@ -24,7 +24,6 @@ subjects:
 - data-analytics
 - data-modeling
 modules:
-- learn.wwl.create-power-bi-model-relationships
 - learn-bizapps.dax-power-bi-time-intelligence
 - learn.wwl.create-calculation-groups
 - learn.wwl.enforce-power-bi-model-security
