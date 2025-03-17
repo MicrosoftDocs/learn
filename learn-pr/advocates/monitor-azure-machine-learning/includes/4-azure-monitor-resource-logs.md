@@ -21,11 +21,11 @@ Once you configure the Diagnostic setting, you can query the logs in Logs Analyt
 1. On the New Query 1* tab, select the drop-down menu on the right-hand side to change Simple mode to KQL. (KQL stands for Justo Query Language)
 1. In the KQL query editor, you can type the query you want to perform. For our example, we check for records for a specific job name:
 
-```kusto
-_AmlComputeJobEvent_
-*| where JobName == "musing_date_yg60v862b2"*
-_| project  TimeGenerated , ClusterId , EventType , ExecutionState , ToolType_
-```
+   ```kusto
+   _AmlComputeJobEvent_
+   *| where JobName == "musing_date_yg60v862b2"*
+   _| project  TimeGenerated , ClusterId , EventType , ExecutionState , ToolType_
+   ```
 
 1. Select Run to run the query.
 
