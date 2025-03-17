@@ -1,12 +1,12 @@
 We have our Windows VM deployed and running, but it's not configured to do any work.
 
-Recall that our scenario is a video-processing system. Our platform receives files through FTP. The traffic cameras upload video clips to a known URL, which is mapped to a folder on the server. The custom software on each Windows VM runs as a service and watches the folder and processes each uploaded clip. It then passes the normalized video to our algorithms running on other Azure services.
+Recall that our scenario is a video-processing system. Our platform receives files through FTP. The traffic cameras upload video clips to a known URL, which is mapped to a folder on the server. The custom software on each Windows VM runs as a service, watches the folder, and processes each uploaded clip. It then passes the normalized video to our algorithms running on other Azure services.
 
 There are a few things we'd need to configure to support this scenario:
 
-- Install FTP and open the ports it needs to communicate
-- Install the proprietary video codec unique to the city's camera system
-- Install our transcoding service that processes uploaded videos
+- Install FTP and open the ports it needs to communicate.
+- Install the proprietary video codec unique to the city's camera system.
+- Install our transcoding service that processes uploaded videos.
 
 Many of these are typical administrative tasks we won't actually cover here, and we don't have software to install. Instead, we'll walk through the steps and show you how you *could* install custom or third-party software using Remote Desktop. Let's start by getting the connection information.
 
