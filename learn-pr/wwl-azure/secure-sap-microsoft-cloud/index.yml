@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.wwl.secure-sap-microsoft-cloud
+metadata:
+  title: Secure SAP on Microsoft Cloud
+  description: "In this module, you learn about integrating Azure Identity Services with SAP RISE, implementing single sign-on, transitioning from SAP Identity Management to Microsoft Entra, using Microsoft Security Copilot and Microsoft Sentinel with SAP RISE."
+  ms.date: 03/17/2025
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: module
+  ms.service: sap-on-azure
+  ai-usage: human-only
+title: Secure SAP on Microsoft Cloud
+summary: In this module, you learn about integrating Azure Identity Services with SAP RISE, implementing single sign-on, transitioning from SAP Identity Management to Microsoft Entra, using Microsoft Security Copilot and Microsoft Sentinel with SAP RISE.
+abstract: |
+  After completing this module, you’ll be able to:
+
+  -   Understand and configure single sign-on (SSO) for SAP environments running in ECS/RISE using Microsoft Entra ID.
+
+  -   Manage SAP user lifecycle and authorizations using Microsoft Entra ID Governance.
+
+  -   Utilize Microsoft's Security Copilot for responding to cyber threats and assessing risk exposure.
+
+  -   Implement Microsoft Sentinel solution for monitoring, detection, and response to suspicious activities in SAP applications.
+
+  -   Understand the limitations of Azure Monitor for SAP solutions with SAP RISE/ECS and the alternatives available.
+prerequisites: |
+  -   Experience using the Azure portal to create resources.
+
+  -   Basic knowledge of security concepts like identities, permissions, and encryption.
+
+  -   Basic knowledge of networking concepts like virtual networks and subnetting.
+
+  -   Basic knowledge of SAP RISE, GROW, and native.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- devops-engineer
+products:
+- azure-sap
+units:
+- learn.wwl.secure-sap-microsoft-cloud.introduction
+- learn.wwl.secure-sap-microsoft-cloud.azure-identity-services-rise
+- learn.wwl.secure-sap-microsoft-cloud.microsoft-security-copilot-rise
+- learn.wwl.secure-sap-microsoft-cloud.microsoft-sentinel-security-rise
+- learn.wwl.secure-sap-microsoft-cloud.sentinel-sap-business-platform
+- learn.wwl.secure-sap-microsoft-cloud.automatic-response-sentinel-capability
+- learn.wwl.secure-sap-microsoft-cloud.azure-monitor-rise
+- learn.wwl.secure-sap-microsoft-cloud.knowledge-check
+- learn.wwl.secure-sap-microsoft-cloud.summary
+badge:
+  uid: learn.wwl.secure-sap-microsoft-cloud.badge

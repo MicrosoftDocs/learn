@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-sap-microsoft-cloud.microsoft-security-copilot-rise
+title: Microsoft Security Copilot with SAP RISE
+metadata:
+  title: Microsoft Security Copilot with SAP RISE
+  description: "Microsoft Security Copilot with SAP RISE"
+  ms.date: 03/17/2025
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-microsoft-security-copilot-rise.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-sap-microsoft-cloud.sentinel-sap-business-platform
+title: Microsoft Sentinel Solution for SAP BTP overview
+metadata:
+  title: Microsoft Sentinel Solution for SAP BTP overview
+  description: "Microsoft Sentinel Solution for SAP BTP overview"
+  ms.date: 03/17/2025
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-sentinel-sap-business-platform.md)]
