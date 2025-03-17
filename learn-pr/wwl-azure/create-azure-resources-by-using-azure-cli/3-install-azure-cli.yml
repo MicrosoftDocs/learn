@@ -1,17 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn.control-azure-services-with-cli.3-install-azure-cli
+uid: learn.wwl.create-azure-resources-by-using-azure-cli.install-azure-cli
 title: Install Azure CLI
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Install Azure CLI
-  description: Install Azure CLI
-  ms.date: 01/09/2025
-  author: dbradish-microsoft
+  description: "Choose the right environment and install Azure CLI."
+  ms.date: 02/17/2025
+  author: wwlpublish
   ms.author: dbradish
   ms.topic: unit
-  ms.custom:
-    - devx-track-azurecli
+  ms.custom: devx-track-azurecli
   zone_pivot_groups: platform
 durationInMinutes: 10
 content: |
