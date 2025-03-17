@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.introduction-to-azure-machine-learning-monitoring
+metadata:
+  ms.author: viniap
+  author: Orin-Thomas
+  ms.date: 03/15/2025
+  title: Introduction to monitoring Azure Machine Learning
+  description: An introduction to what you need to know about monitoring Azure Machine Learning deployments
+  ms.service: azure-machine-learning
+  ms.topic: module
+  moduleType: standard
+  ms.collection: ce-advocates-ai-copilot
+title: Introduction to Azure Machine Learning monitoring
+summary: Learn how to monitor Azure Machine Learning deployments
+abstract: |
+  After completing this module, you'll be able to:
+  - Set up monitoring for Azure Machine Learning resources and workflows
+  -	Manage metrics and logs for Azure Machine Learning resources
+  -	Understand how monitoring for Azure Machine Learning models works
+prerequisites:  |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  - Fundamental monitoring concepts
+  - Fundamental Azure Machine Learning concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.introduction-to-azure-machine-learning-monitoring.introduction
+- learn.introduction-to-azure-machine-learning-monitoring.monitoring-azure-machine-learning-workspace-compute
+- learn.introduction-to-azure-machine-learning-monitoring.azure-monitor-platform-metrics
+- learn.introduction-to-azure-machine-learning-monitoring.azure-monitor-resource-logs
+- learn.introduction-to-azure-machine-learning-monitorin.azure-monitor-alerts
+- learn.introduction-to-azure-machine-learning-monitoring.online-endpoints
+- learn.introduction-to-azure-machine-learning-monitoring.azure-machine-learning-model-monitoring
+- learn.introduction-to-azure-machine-learning-monitoring.knowledge-check
+- learn.introduction-to-azure-machine-learning-monitorin.monitoring-signals-metrics
+- learn.introduction-to-azure-machine-learning-monitoring.summary
+badge:
+  uid: learn.introduction-to-azure-machine-learning-monitoring-badge
