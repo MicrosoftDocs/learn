@@ -61,7 +61,7 @@ The **Analytics** home page provides the following filters:
 
 - **Severity**. Use to filter the rules by levels of severity.
 
-- **Rule Type**. There are currently six types of rules: Scheduled, NRT (near real time), Fusion, Microsoft Security, ML (machine learning) Behavior Analytics, and Threat Intelligence.
+- **Rule Type**. There are currently seven types of rules: Scheduled, NRT (near real time), Fusion, Microsoft Security, ML (machine learning) Behavior Analytics, and Threat Intelligence.
 
 - **Tactics**. Use to filter the rules based on 14 specific methodologies in ATT&amp;CK model.
 
