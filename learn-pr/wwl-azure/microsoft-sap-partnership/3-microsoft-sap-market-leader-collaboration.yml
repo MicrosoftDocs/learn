@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-sap-partnership.microsoft-sap-market-leader-collaboration
+title: Integration of Microsoft 365 Copilot, Copilot for Microsoft Viva Learning, and SAP SuccessFactors
+metadata:
+  title: Integration of Microsoft 365 Copilot, Copilot for Microsoft Viva Learning, and SAP SuccessFactors
+  description: "Integration of Microsoft 365 Copilot, Copilot for Microsoft Viva Learning, and SAP SuccessFactors"
+  ms.date: 03/18/2025
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-microsoft-sap-market-leader-collaboration.md)]

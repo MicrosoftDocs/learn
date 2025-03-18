@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.wwl.microsoft-sap-partnership
+metadata:
+  title: The Microsoft and SAP Partnership
+  description: "In this module, you learn about the key aspects of the Microsoft and SAP partnership, including cloud migration, AI integration, Copilot for Microsoft Viva Learning, and SAP SuccessFactors."
+  ms.date: 03/18/2025
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: module
+  ms.service: sap-on-azure
+  ai-usage: human-only
+title: The Microsoft and SAP Partnership
+summary: In this module, you learn about the key aspects of the Microsoft and SAP partnership, including cloud migration, AI integration, Copilot for Microsoft Viva Learning, and SAP SuccessFactors.
+abstract: |
+  After completing this module, you’ll be able to:
+
+  -   Understand the key aspects of the Microsoft and SAP partnership and its focus areas.
+
+  -   Comprehend the integration of Microsoft 365 Copilot, Copilot for Microsoft Viva Learning, and SAP SuccessFactors.
+
+  -   Appreciate the collaborative enterprise resource planning capabilities introduced by SAP and Microsoft.
+
+  -   Understand how SAP RISE can be integrated with Azure services for data and app integration scenarios.
+
+  -   Recognize the importance of integrating SAP managed environments with the customer's Azure ecosystem and third-party applications.
+prerequisites: |
+  -   Experience using the Azure portal to create resources.
+
+  -   Basic knowledge of security concepts like identities, permissions, and encryption.
+
+  -   Basic knowledge of networking concepts like virtual networks and subnetting.
+
+  -   Basic knowledge of SAP RISE, GROW, and native.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- devops-engineer
+products:
+- azure-sap
+units:
+- learn.wwl.microsoft-sap-partnership.introduction
+- learn.wwl.microsoft-sap-partnership.strategic-partnership-sap-microsoft
+- learn.wwl.microsoft-sap-partnership.microsoft-sap-market-leader-collaboration
+- learn.wwl.microsoft-sap-partnership.organizational-productivity-enhance-collaborate-erp
+- learn.wwl.microsoft-sap-partnership.integrate-azure-services-rise
+- learn.wwl.microsoft-sap-partnership.integrate-azure-rise-overview
+- learn.wwl.microsoft-sap-partnership.knowledge-check
+- learn.wwl.microsoft-sap-partnership.summary
+badge:
+  uid: learn.wwl.microsoft-sap-partnership.badge

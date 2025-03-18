@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-sap-partnership.integrate-azure-rise-overview
+title: Integrating Microsoft Azure with SAP RISE
+metadata:
+  title: Integrating Microsoft Azure with SAP RISE
+  description: "Integrating Microsoft Azure with SAP RISE"
+  ms.date: 03/18/2025
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-integrate-azure-rise-overview.md)]
