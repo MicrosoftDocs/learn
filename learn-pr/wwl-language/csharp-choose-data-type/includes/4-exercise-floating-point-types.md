@@ -1,6 +1,5 @@
 
-
-In this exercise, you'll work with floating-point data types to learn about the nuanced differences between each data type.
+In this exercise, you work with floating-point data types to learn about the nuanced differences between each data type.
 
 A floating point is a simple value type that represents numbers to the right of the decimal place. Unlike integral numbers, there are other considerations beyond the maximum and minimum values you can store in a given floating-point type.
 
@@ -12,7 +11,7 @@ Second, you must consider the manner in which the values are stored and the impa
 
 Performing math on binary floating-point values can produce results that may surprise you if you're used to decimal (base 10) math. Often, binary floating-point math is an approximation of the real value. Therefore, `float` and `double` are useful because large numbers can be stored using a small memory footprint. However, `float` and `double` should only be used when an approximation is useful. For example, being a few thousandths off when calculating the splatter of a snowball in a video game is close enough.
 
-When you need more a more precise answer, you should use `decimal`. Each value of type `decimal` has a relatively large memory footprint, however performing math operations gives you a more precise result. So, you should use `decimal` when working with financial data or any scenario where you need an accurate result from a calculation.
+When you need a more precise answer, you should use `decimal`. Each value of type `decimal` has a relatively large memory footprint, however performing math operations gives you a more precise result. So, you should use `decimal` when working with financial data or any scenario where you need an accurate result from a calculation.
 
 ### Use the MinValue and MaxValue properties for each signed float type
 
@@ -28,18 +27,17 @@ Console.WriteLine($"double : {double.MinValue} to {double.MaxValue} (with ~15-17
 Console.WriteLine($"decimal: {decimal.MinValue} to {decimal.MaxValue} (with 28-29 digits of precision)");
 ```
 
-1. On the Visual Studio Code **File** menu, select **Save**.
+3. On the Visual Studio Code **File** menu, select **Save**.
 
     The Program.cs file must be saved before building or running the code.
 
-1. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
+4. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
 
     A Terminal panel should open, and should include a command prompt showing that the Terminal is open to your TestProject folder location.
 
-1. At the Terminal command prompt, to run your code, type **dotnet run** and then press Enter.
+5. At the Terminal command prompt, to run your code, type **dotnet run** and then press Enter.
 
-    > [!NOTE]
-    > If you see a message saying "Couldn't find a project to run", ensure that the Terminal command prompt displays the expected TestProject folder location. For example: `C:\Users\someuser\Desktop\csharpprojects\TestProject>`
+    If you see a message saying "Couldn't find a project to run," ensure that the Terminal command prompt displays the expected TestProject folder location. For example: `C:\Users\someuser\Desktop\csharpprojects\TestProject>`
 
     You should see the following output:
 

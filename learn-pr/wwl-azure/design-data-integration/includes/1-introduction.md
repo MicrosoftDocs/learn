@@ -32,12 +32,12 @@ Design data storage solutions
 
 - Design data integration
 
-   - Recommend a solution for data integration
+   - Recommend a solution for data integration.
 
-   - Recommend a solution for data analysis 
+   - Recommend a solution for data analysis. 
 
 ### Prerequisites
 
-- Conceptual knowledge of data integration solutions 
+- Conceptual knowledge of data integration solutions. 
 
-- Working experience with data integration solutions
+- Working experience with data integration solutions.

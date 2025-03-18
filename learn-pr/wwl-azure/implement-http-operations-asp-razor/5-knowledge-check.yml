@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-http-operations-asp-razor.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/15/2025
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the recommended approach for implementing `HttpClient` in an app with long-lived clients?"
+    choices:
+    - content: "Create a new instance of `HttpClient` for each request."
+      isCorrect: false
+      explanation: "Incorrect. This approach is not recommended for long-lived clients."
+    - content: "Use clients created by `IHttpClientFactory`."
+      isCorrect: false
+      explanation: "Incorrect. This approach is recommended for short-lived clients."
+    - content: "Create a `static` or singleton instance using the `HttpClient` class and set `PooledConnectionLifetime`."
+      isCorrect: true
+      explanation: "Correct. For long-lived clients, create a `static` or singleton instance using the `HttpClient` class and set `PooledConnectionLifetime`."
+  - content: "What is the purpose of `IHttpClientFactory` in an ASP.NET Core app?"
+    choices:
+    - content: "To handle the creation and disposal of REST operations"
+      isCorrect: false
+      explanation: "Incorrect. `IHttpClientFactory` handles the creation and disposal of HTTP clients, not REST operations."
+    - content: "To handle the creation and disposal of HTTP requests"
+      isCorrect: false
+      explanation: "Incorrect. `IHttpClientFactory` handles the creation and disposal of HTTP clients, not requests."
+    - content: "To handle the creation and disposal of HTTP clients"
+      isCorrect: true
+      explanation: "Correct. `IHttpClientFactory` handles the creation and disposal of HTTP clients, which can be used to perform REST operations."
+  - content: "What is the purpose of the `PooledConnectionLifetime` property in the `HttpClient` class in .NET Core?"
+    choices:
+    - content: "To limit the lifetime of the connection, forcing a DNS lookup when the connection is replaced."
+      isCorrect: true
+      explanation: "Correct. The `PooledConnectionLifetime` property is used to limit the lifetime of the connection, forcing a DNS lookup when the connection is replaced."
+    - content: "To allow the HttpClient to track time to live (TTL) durations specified by the DNS server."
+      isCorrect: false
+      explanation: "Incorrect. The HttpClient does not track TTL durations. Instead, it only resolves DNS entries when a connection is created."
+    - content: "To provide a central location for naming and configuring logical HttpClient instances."
+      isCorrect: false
+      explanation: "Incorrect. The `PooledConnectionLifetime` property doesn't provide a central location for naming and configuring HttpClient instances that is a feature of the `IHttpClientFactory`."

@@ -3,14 +3,16 @@ uid: learn.intro-to-kubernetes.what-is-kubernetes
 title: What is Kubernetes?
 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is Kubernetes?
   description: What is Kubernetes?
-  ms.date: 4/24/2020
+  ms.date: 11/13/2024
   author: nickomang
   ms.author: nickoman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 
 durationInMinutes: 7
 content: |
   [!include[](includes/2-what-is-kubernetes.md)]
+

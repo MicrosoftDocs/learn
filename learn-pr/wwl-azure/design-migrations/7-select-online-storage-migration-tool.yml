@@ -2,15 +2,16 @@
 uid: learn.wwl.design-migrations.select-online-storage-migration-tool
 title: Select an online storage migration tool for unstructured data
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Select an online storage migration tool for unstructured data
-  description: "Select an online storage migration tool to move unstructured data, and examine the Azure Storage Migration Service and Azure File Sync."
-  ms.date: 02/16/2023
+  description: "Select an online storage migration tool to move unstructured data."
+  ms.date: 03/10/2025
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/7-select-online-storage-migration-tool.md)]

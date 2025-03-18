@@ -1,0 +1,39 @@
+### YamlMime:LearningPath
+uid: learn.wwl.create-custom-copilots-ai-studio
+metadata:
+  title: Develop generative AI apps in the Azure AI Foundry portal AI-3016
+  description: Learn how to develop generative AI apps in the Azure AI Foundry portal. (AI-3016)
+  ms.date: 02/05/2025
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: learning-path
+  ms.collection: wwl-ai-copilot
+  ms.custom: [copilot-learning-hub]
+title: Develop generative AI apps in Azure AI Foundry portal
+prerequisites: |
+  Before starting this module, you should be familiar with fundamental AI concepts and services in Azure. Consider completing the [Get started with artificial intelligence](/training/paths/get-started-with-artificial-intelligence-on-azure) learning path first.
+summary: |
+  Generative Artificial Intelligence (AI) is becoming more accessible through easy-to-use platforms like Azure AI Foundry. Learn how to build generative AI applications that use language models with prompt flow to provide value to your users.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-scientist
+- ai-engineer
+products:
+- ai-services
+subjects:
+- artificial-intelligence
+- machine-learning
+- natural-language-processing
+modules:
+- learn.wwl.prepare-azure-ai-development
+- learn.wwl.explore-models-copilot-ai-studio
+- learn.wwl.ai-foundry-sdk
+- learn.get-started-prompt-flow-ai-studio
+- learn.wwl.build-copilot-ai-studio
+- learn.wwl.finetune-model-copilot-ai-studio
+- learn.wwl.evaluate-models-azure-ai-studio
+- learn.wwl.responsible-ai-studio
+trophy:
+  uid: learn.wwl.create-custom-copilots-ai-studio.trophy

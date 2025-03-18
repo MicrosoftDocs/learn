@@ -28,7 +28,7 @@ The *parameters* to a machine learning algorithm are the data features (and labe
 
 ## Fitting a model
 
-To actually train a model, you need to for the algorithm to the data. The specific syntax and data formats used to do this can vary across machine learning frameworks, but the principle is always the same. For supervised machine learning, you fit the algorithm to the features based on the known labels. For unsupervised machine learning, you supply the features and the algorithm attempts to separate them into discrete clusters.
+To actually train a model, you need to fit the algorithm to the data. The specific syntax and data formats used to do this can vary across machine learning frameworks, but the principle is always the same. For supervised machine learning, you fit the algorithm to the features based on the known labels. For unsupervised machine learning, you supply the features and the algorithm attempts to separate them into discrete clusters.
 
 The following example shows the code used to initiate training of a logistic regression model using the Spark MLlib framework. The training data is provided as a dataframe in which the labels are in a column of integer values, and the corresponding features are represented as a single vector (array) of values. In this example, two hyperparameters (*maxIter* and *regParam*) have also been specified.
 

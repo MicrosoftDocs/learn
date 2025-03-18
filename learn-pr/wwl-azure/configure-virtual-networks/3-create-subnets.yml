@@ -2,13 +2,16 @@
 uid: learn.wwl.configure-virtual-networks.create-subnets
 title: Create subnets
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create subnets
   description: "Create subnets"
-  ms.date: 04/12/2023
+  ms.date: 02/14/2025
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-durationInMinutes: 3
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
 content: |
   [!include[](includes/3-create-subnets.md)]

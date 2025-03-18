@@ -2,13 +2,14 @@
 uid: learn.wwl.configure-automatic-deployment-for-azure-sql-database.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/28/2022
-  author: wwlpublish
+  ms.date: 02/26/2025
+  author: JulianePadrao
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -50,7 +51,7 @@ quiz:
     - content: "apiVersion"
       isCorrect: false
       explanation: "Incorrect. ApiVersion specifics the version of the API to deploy a resource, but not dependencies."
-  - content: "Which Azure CLI command should you choose to create a SQL Database server?"
+  - content: "Which Azure CLI command should you choose to create a logical server for Azure SQL Database?"
     choices:
     - content: "az sql db op"
       isCorrect: false
@@ -60,4 +61,4 @@ quiz:
       explanation: "Correct. `az sql server create` creates a SQL Database."
     - content: "az sql db create"
       isCorrect: false
-      explanation: "Incorrect. `az sql db create` creates a database, not a SQL Database server."
+      explanation: "Incorrect. `az sql db create` creates a database, not a logical server for Azure SQL Database."

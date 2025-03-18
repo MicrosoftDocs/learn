@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.secure-data-warehouse-in-microsoft-fabric.exercise-secure-data-warehouse
+title: 'Exercise: Secure a warehouse in Microsoft Fabric'
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: 'Exercise: Secure a warehouse in Microsoft Fabric'
+  description: "Learn how to secure a warehouse using T-SQL in Microsoft Fabric."
+  ms.date: 01/10/2025
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-exercise-secure-data-warehouse.md)]

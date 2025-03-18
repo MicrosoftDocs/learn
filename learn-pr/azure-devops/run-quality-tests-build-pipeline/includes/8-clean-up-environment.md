@@ -3,21 +3,6 @@ You're all done with the tasks for this module. You can now move the work item t
 > [!IMPORTANT]
 > This page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps if you ran the template earlier in this module.
 
-## Move the work item to Done
-
-In this part, you move the work item that you assigned to yourself earlier in this module, **Create unit tests**, to the **Done** column.
-
-In practice, the definition of "Done" often means that working software is in the hands of your users. In this unit, for learning purposes, you mark this work as complete because you have working unit tests and code coverage tests set up in your build pipeline.
-
-At the end of each sprint, or work iteration, you and your team might hold a retrospective meeting. Here, you share the work you completed, what went well in the sprint, and what could be improved.
-
-To complete the work item:
-
-1. In Azure DevOps, go to **Boards** and then, in the left pane, select **Boards**.
-1. Move the **Create unit tests** work item from the **Doing** column to the **Done** column.
-
-    :::image type="content" source="../media/8-azure-boards-wi3-done.png" alt-text="A screenshot of Azure Boards showing the Create unit tests card in the Done column.":::
-
 ## Disable the pipeline or delete your project
 
 Each module in this learning path provides a template that you can run to create a clean environment for the duration of the module.
@@ -36,7 +21,7 @@ To disable the pipeline:
 1. From the drop-down menu, select **Settings**:
 
     :::image type="content" source="../../shared/media/azure-pipelines-settings-button.png" alt-text="A screenshot of Azure Pipelines showing the location of the Settings menu.":::
-1. Under **Processing of new run requests**, select **Disabled** and then select **Save**.
+1. Under **Processing of new run requests**, select **Disabled**, then select **Save**.
 
     Your pipeline will no longer process build requests.
 
@@ -47,7 +32,7 @@ This option deletes your Azure DevOps project, including what's on Azure Boards 
 To delete the project:
 
 1. In Azure DevOps, go to your project. Earlier, we recommended that you name this project **Space Game - web - Tests**.
-1. Select **Project settings** in the lower left corner of the Azure Devops page.
+1. Select **Project settings** in the lower-left corner of the Azure Devops page.
 1. In the **Project details** area, scroll down, and then select **Delete**.
 
     :::image type="content" source="../../shared/media/azure-devops-delete-project.png" alt-text="A screenshot of Azure Pipelines showing the location of the Delete button.":::

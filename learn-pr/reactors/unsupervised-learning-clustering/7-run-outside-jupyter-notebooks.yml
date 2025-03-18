@@ -7,9 +7,10 @@ metadata:
   ms.date: 05/15/2020
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-reactors
-  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
   show_latex: true
 durationInMinutes: 10
 content: |

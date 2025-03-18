@@ -7,7 +7,7 @@ Now it's your opportunity to explore relational database services in Azure.
 
 Launch the exercise and follow the instructions to explore Azure SQL Database.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/dp900-sql-lab?azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2261872&azure-portal=true)
 
 ::: zone-end
 
@@ -15,7 +15,7 @@ Launch the exercise and follow the instructions to explore Azure SQL Database.
 
 Launch the exercise and follow the instructions to explore Azure Database for PostgreSQL.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/dp900-postresql-lab?azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2261871&azure-portal=true)
 
 ::: zone-end
 
@@ -23,6 +23,6 @@ Launch the exercise and follow the instructions to explore Azure Database for Po
 
 Launch the exercise and follow the instructions to explore Azure Database for MySQL.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/dp900-mysql-lab?azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2262125&azure-portal=true)
 
 ::: zone-end

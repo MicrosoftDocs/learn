@@ -11,7 +11,7 @@ Microsoft itself has also-embraced open-source software in its software and the 
 
     
 
-The .NET platforms, such as the original .NET Framework and even more so .NET Core, use several components created by the open-source community and not Microsoft itself. In [ASP.NET](http://asp.net/) and [ASP.NET](http://asp.net/) Core, many of the frontend development libraries are open-source components, such as jQuery, Angular, and React.
+The .NET platforms, such as the original .NET Framework and even more so .NET Core, use several components created by the open-source community and not Microsoft itself. In [ASP.NET](https://asp.net/) and [ASP.NET](https://asp.net/) Core, many of the frontend development libraries are open-source components, such as jQuery, Angular, and React.
 
 Instead of creating new components themselves, the teams at Microsoft are using the open-source components and taking a dependency on them.
 
@@ -21,4 +21,4 @@ The teams also contribute and invest in the open-source components and projects,
 
 The .NET Foundation aims to advocate the needs and evangelize the benefits of the .NET platform. And promote the use of .NET open source for developers.
 
-For more information, see the [.NET Foundation website](http://www.dotnetfoundation.org).
+For more information, see the [.NET Foundation website](https://www.dotnetfoundation.org).

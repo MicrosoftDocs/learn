@@ -1,12 +1,12 @@
 Multiple servers are virtualized and consolidated onto fewer physical hosts to increase utilization and decrease energy costs. This improvement is helpful, but the demand for IT-related services in organizations continues to grow. The number of web-based startup companies, which have a higher proportional demand for IT equipment, also continues to grow. 
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4pXFK]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=d3873764-5bf1-49de-aff7-b578668966a4]
 
 ## Server utilization
 
 To see why server utilization is important, let us discuss power consumption when a server is idle (the CPUs are not doing anything, but the HDDs are spinning, and RAM and I/O devices still consume power) versus when the server is at maximum load (when all CPUs are at 100% utilization).
 
-Use the following formula to estimate the power consumption $ P $ at a specific utilization (<small>**n**</small> %):
+Use the following formula to estimate the power consumption $ P $ at a specific utilization (**n** %):
 
 $$ P_{n} = \left( P_{max} - P_{idle} \right) \times \frac{n}{100} + P_{idle} $$
 

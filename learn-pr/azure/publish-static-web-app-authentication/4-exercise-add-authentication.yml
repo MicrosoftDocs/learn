@@ -2,13 +2,14 @@
 uid: learn.azure.publish-static-web-app-authentication.4-exercise-add-authentication
 title: Exercise - Add user authentication
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Add user authentication
   description: Integrate user authentication in your web app
   ms.date: 12/20/2022
-  author: sinedied
-  ms.author: yolasors
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: craigshoemaker
+  ms.author: cshoe
+  ms.topic: unit
   ms.custom:
   - team=nextgen
   - team=cloud_advocates
@@ -19,3 +20,4 @@ sandbox: true
 durationInMinutes: 6
 content: |
   [!include[](includes/4-exercise-add-authentication.md)]
+

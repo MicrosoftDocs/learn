@@ -4,11 +4,10 @@ title: Cloud use cases
 metadata:
   title: Cloud use cases
   description: Cloud Use Cases
-  ms.date: 08/15/2019
+  ms.date: 06/07/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 12
 content: |
@@ -34,6 +33,6 @@ quiz:
       - content: "Your company runs an online retail operation in which demand varies at different times of day and different times of year."
         isCorrect: false
         explanation: "Incorrect. The cloud offers PaaS services for hosting web sites that can scale up and down as demand fluctuates, ensuring that you always have enough servers to handle the load."
-      - content: "The marketing department has asked you to write an application that uses AI to monitor Twitter and alert them if tweets targeting the company turn negative."
+      - content: "The marketing department has asked you to write an application that uses AI to monitor X and alert them if tweets targeting the company turn negative."
         isCorrect: false
         explanation: "Incorrect. Cloud services such as Azure Text Analytics offer APIs that make it easy to build apps that analyze text for sentiment and perform other AI-related tasks."

@@ -2,13 +2,14 @@
 uid: learn.wwl.use-sql-warehouses-azure-databricks.create-queries-dashboards
 title: Create queries and dashboards
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create queries and dashboards
   description: "Create queries and dashboards"
-  ms.date: 08/26/2022
+  ms.date: 09/05/2024
   author: wwlpublish
-  ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: theresai
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

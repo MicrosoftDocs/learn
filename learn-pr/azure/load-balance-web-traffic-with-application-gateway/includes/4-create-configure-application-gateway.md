@@ -1,6 +1,6 @@
 Application Gateway comprises a series of components that combine to route requests to a pool of web servers and to check the health of these web servers. Let's take a look at how these components are related and what role they play in an Application Gateway.
 
-![Visualization of the components of Application Gateway.](../media/4-application-gateway-components.svg)
+![Diagram with a visualization of the Application Gateway components.](../media/4-application-gateway-components.svg)
 
 ### Front-end IP address
 
@@ -8,19 +8,19 @@ Client requests are received through a *front-end IP address*. You can configure
 
 ### Listeners
 
-Application Gateway uses one or more *listeners* to receive incoming requests. A listener accepts traffic arriving on a specified combination of protocol, port, host, and IP address. Each listener routes requests to a back-end pool of servers following routing rules that you specify. A listener can be *Basic* or *Multi-site*. A Basic listener only routes a request based on the path in the URL. A Multi-site listener can also route requests using the hostname element of the URL.
+Application Gateway uses one or more *listeners* to receive incoming requests. A listener accepts traffic arriving on a specified combination of protocol, port, host, and IP address. Each listener routes requests to a back-end pool of servers following routing rules that you specify. A listener can be *Basic* or *Multisite*. A Basic listener only routes a request based on the path in the URL. A Multisite listener can also route requests using the hostname element of the URL.
 
 Listeners also handle SSL certificates for securing your application between the user and Application Gateway.
 
 ### Routing rules
 
-A *routing rule* binds a listener to the back-end pools. A rule specifies how to interpret the hostname and path elements in the URL of a request, and direct the request to the appropriate back-end pool. A routing rule also has an associated set of HTTP settings. These settings indicate whether (and how) traffic is encrypted between Application Gateway and the back-end servers, and other configuration information such as:
+A *routing rule* binds a listener to the back-end pools. A rule specifies how to interpret the hostname and path elements in the URL of a request, and how to direct the request to the appropriate back-end pool. A routing rule also has an associated set of HTTP settings. These settings indicate whether (and how) traffic is encrypted between Application Gateway and the back-end servers, and other configuration information such as:
 
-- Protocol (HTTP or HTTPS)
-- Session stickiness, to pass all requests in a client session to the same web server rather than distributing them across servers with load balancing
-- Connection draining, to enable the graceful removal of servers from a back-end pool
-- Request timeout period, in seconds
-- Health probes, specifying a probe URL, time out periods, and other parameters used to determine whether a server in the back-end pool is available
+- Protocol (HTTP or HTTPS).
+- Session stickiness, to pass all requests in a client session to the same web server rather than distributing them across servers with load balancing.
+- Connection draining to enable the graceful removal of servers from a back-end pool.
+- Request timeout period, in seconds.
+- Health probes, specifying a probe URL, time-out periods, and other parameters used to determine whether a server in the back-end pool is available.
 
 ### Back-end pools
 
@@ -39,13 +39,13 @@ The *web application firewall* (WAF) is an optional component that handles incom
 - Bots, crawlers, and scanners
 - HTTP protocol violations and anomalies
 
-OWASP has defined a set of generic rules for detecting attacks. These rules are referred to as the Core Rule Set (CRS). The rule sets are under continuous review as attacks evolve in sophistication. WAF supports two rule sets, CRS 2.2.9 and CRS 3.0. CRS 3.0 is the default and more recent of these rule sets. If necessary, you can opt to select only specific rules in a rule set, targeting certain threats. Additionally, you can customize the firewall to specify which elements in a request to examine, and limit the size of messages to prevent massive uploads from overwhelming your servers.
+OWASP has defined a set of generic rules for detecting attacks called the *Core Rule Set (CRS)*. The rule sets are under continuous review as attacks evolve in sophistication. WAF supports two rule sets, CRS 2.2.9 and CRS 3.0. CRS 3.0 is the default and more recent of these rule sets. If necessary, you can opt to select only specific rules in a rule set, targeting certain threats. Additionally, you can customize the firewall to specify which elements in a request to examine, and limit the size of messages to prevent massive uploads from overwhelming your servers.
 
-WAF is enabled on your Application Gateway by selecting the `WAF` tier when you create a gateway.
+You can enable WAF on your Application Gateway by selecting the `WAF` tier when you create a gateway.
 
 ### Health probes
 
-Health probes are an important part in assisting the load balancer to determine which servers are available for load balancing in a back-end pool. Application Gateway uses a health probe to send a request to a server. If the server returns an HTTP response with a status code between 200 and 399, the server is deemed healthy.
+Health probes are an important element in assisting the load balancer to determine which servers are available for load balancing in a back-end pool. Application Gateway uses a health probe to send a request to a server. If the server returns an HTTP response with a status code between 200 and 399, the server is deemed healthy.
 
 If you don't configure a health probe, Application Gateway creates a default probe that waits for 30 seconds before deciding that a server is unavailable.
 

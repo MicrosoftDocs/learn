@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-your-ai-copilot-azure-kubernetes.create-containerized-app
+title: Create containerized apps with Azure Kubernetes Service clusters
+metadata:
+  title: Create containerized apps with Azure Kubernetes Service clusters
+  description: "Create containerized apps with Azure Kubernetes Service clusters"
+  ms.date: 11/12/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-create-containerized-app.md)]

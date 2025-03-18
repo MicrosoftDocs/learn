@@ -4,11 +4,10 @@ title: Enable setup and boot event collection
 metadata:
   title: Enable setup and boot event collection
   description: "Enable setup and boot event collection"
-  ms.date: 06/02/2022
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

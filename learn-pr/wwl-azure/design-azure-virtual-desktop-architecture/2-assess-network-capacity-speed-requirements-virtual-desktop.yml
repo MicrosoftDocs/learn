@@ -2,13 +2,14 @@
 uid: learn.wwl.design-azure-virtual-desktop-architecture.assess-network-capacity-speed-requirements-for
 title: Assess network capacity and speed requirements for Azure Virtual Desktop
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Assess network capacity and speed requirements for Azure Virtual Desktop
   description: "Assess network capacity and speed requirements for Azure Virtual Desktop"
   ms.date: 08/01/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

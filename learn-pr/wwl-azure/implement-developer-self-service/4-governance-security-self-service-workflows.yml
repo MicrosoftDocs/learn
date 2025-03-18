@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-developer-self-service.governance-security-self-service-workflows
+title: Governance and Security in Self-Service Workflows
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Governance and Security in Self-Service Workflows
+  description: "Governance and Security in Self-Service Workflows"
+  ms.date: 01/14/2025
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 14
+content: |
+  [!include[](includes/4-governance-security-self-service-workflows.md)]

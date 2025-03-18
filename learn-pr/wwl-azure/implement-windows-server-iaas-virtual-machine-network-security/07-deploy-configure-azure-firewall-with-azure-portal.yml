@@ -4,11 +4,10 @@ title: Deploy and configure Azure firewall using the Azure portal
 metadata:
   title: Deploy and configure Azure firewall using the Azure portal
   description: "Deploy and configure Azure firewall using the Azure portal"
-  ms.date: 09/25/2020
+  ms.date: 12/24/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 13
 content: |
@@ -20,10 +19,10 @@ quiz:
     choices:
     - content: "Restarting the VM applies the DNS configuration changes made to the virtual NIC in the VM."
       isCorrect: true
-      explanation: "That's correct. You must restart the VM for changes to be effective."
+      explanation: "Correct. You must restart the VM for changes to be effective."
     - content: "The VM is running the firewall and must be restarted to apply the configuration."
       isCorrect: false
-      explanation: "That's incorrect. The VM is not running the firewall."
+      explanation: "Incorrect. The VM is not running the firewall."
     - content: "Restarting the VM is an optional step after making the required configuration changes."
       isCorrect: false
-      explanation: "That's incorrect. If you change the DNS settings of a virtual NIC, the VM is restarted."
+      explanation: "Incorrect. If you change the DNS settings of a virtual NIC, the VM is restarted."

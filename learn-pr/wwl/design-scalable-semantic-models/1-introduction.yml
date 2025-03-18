@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.design-scalable-semantic-models.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction for the Design scalable semantic models module."
+  ms.date: 10/15/2024
+  author: angierudduck
+  ms.author: anrudduc
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

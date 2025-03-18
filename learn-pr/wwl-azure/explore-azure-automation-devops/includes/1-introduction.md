@@ -27,14 +27,13 @@ However, the integration hooks available to Azure Automation remove much of the 
 
 Some Azure Automation capabilities are:
 
- -  Process automation. Azure Automation provides you with the ability to automate frequent, time-consuming, and error-prone cloud management tasks.
- -  Azure Automation State Configuration. It's an Azure service that allows you to write, manage, and compile Windows PowerShell DSC configurations, import DSC Resources, and assign configurations to target nodes, all in the cloud. For more information, visit [Azure Automation State Configuration Overview](/azure/automation/automation-dsc-overview).
- -  Update management. Manage operating system updates for Windows and Linux computers in Azure, on-premises environments, or other cloud providers. Get update compliance visibility across Azure, on-premises, and for other cloud services. You can create scheduled deployments to orchestrate update installations within a defined maintenance window. For more information, visit [Azure Automation Update Management Deployment Plan](/azure/automation/update-management/plan-deployment).
- -  Start and stop virtual machines (VMs). Azure Automation provides an integrated Start/Stop VM–related resource that enables you to start and stop VMs on user-defined schedules. It also provides insights through **Azure Log Analytics** and can send emails by using action groups. For more information, go to [Start/Stop VMs during off-hours solution in Azure Automation](/azure/automation/automation-solution-vm-management).
+ -  Process automation - Azure Automation provides you with the ability to automate frequent, time-consuming, and error-prone cloud management tasks.
+ -  Azure Automation State Configuration - It's an Azure service that allows you to write, manage, and compile Windows PowerShell DSC configurations, import DSC Resources, and assign configurations to target nodes, all in the cloud. For more information, visit [Azure Automation State Configuration Overview](/azure/automation/automation-dsc-overview).
+ -  Azure Update Manager - Manage operating system updates for Windows and Linux computers in Azure, on-premises environments, or other cloud providers. Get update compliance visibility across Azure, on-premises, and for other cloud services. You can create scheduled deployments to orchestrate update installations within a defined maintenance window. For more information, visit [Azure Update Manager](/azure/update-manager/overview).
  -  Integration with GitHub, Azure DevOps, Git, or Team Foundation Version Control repositories. For more information, go to [Source control integration in Azure Automation](/azure/automation/source-control-integration).
- -  Automate Amazon Web Services (AWS) Resources. Automate common tasks with resources in AWS using Automation runbooks in Azure. For more information, go to [Authenticate Runbooks with Amazon Web Services](/azure/automation/automation-config-aws-account).
- -  Manage Shared resources. Azure Automation consists of a set of shared resources (such as *connections*, *credentials*, *modules*, *schedules*, and *variables*) that make it easier to automate and configure your environments at scale.
- -  Run backups. Azure Automation allows you to run regular backups of non-database systems, such as backing up Azure Blob Storage at certain intervals.
+ -  Automate Amazon Web Services (AWS) Resources - Automate common tasks with resources in AWS using Automation runbooks in Azure. For more information, go to [Authenticate Runbooks with Amazon Web Services](/azure/automation/automation-config-aws-account).
+ -  Manage Shared resources - Azure Automation consists of a set of shared resources (such as *connections*, *credentials*, *modules*, *schedules*, and *variables*) that make it easier to automate and configure your environments at scale.
+ -  Run backups - Azure Automation allows you to run regular backups of non-database systems, such as backing up Azure Blob Storage at certain intervals.
 
 Azure Automation works across hybrid cloud environments in addition to Windows and Linux operating systems.
 

@@ -6,8 +6,7 @@ metadata:
   ms.date: 11/29/2021
   author: bmitchell287
   ms.author: brendm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Expand the capabilities for Java apps on Azure
 summary: |
   Start here and learn how you can get the full power of Azure with your Java apps - use idiomatic libraries to connect and interact with your preferred cloud services, including:
@@ -17,7 +16,7 @@ summary: |
     - Messaging and eventing systems - Event Hubs and Service Bus
     - Cache - Azure Redis Cache
     - Storage - Azure Storage
-    - Directory - Azure Active Directory (Azure AD) and Azure AD B2C
+    - Directory - Microsoft Entra ID and Azure AD B2C
 
   As always, use tools and frameworks that you know and love - Spring, Tomcat, WildFly, JBoss, WebLogic, WebSphere, Maven, Gradle, IntelliJ, Eclipse, Jenkins, Terraform and more.
 
@@ -57,9 +56,8 @@ roles:
 - technology-manager
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-app-service
-- azure-app-service-web
 # - azure-application-insights
 #- azure-automation
 - azure-cache-redis
@@ -68,11 +66,8 @@ products:
 - azure-database-mysql
 #- azure-devops
 - azure-spring-apps
-- azure-web-apps
 - msal-java
 - azure-service-bus
-subjects:
-- development-tools
 modules:
 - learn.azure-spring-cloud-workshop
 - learn.azure.deploy-java-ee-app-to-app-service

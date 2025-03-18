@@ -2,13 +2,15 @@
 uid: learn.create-azure-storage-account.4-choose-an-account-creation-tool
 title: Choose an account creation tool
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Choose an account creation tool
   description: Choose an account creation tool
-  ms.date: 09/24/2018
-  author: tamram
-  ms.author: tamram
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/18/2024
+  author: normesta
+  ms.author: normesta
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/4-choose-an-account-creation-tool.md)]
+

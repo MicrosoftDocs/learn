@@ -4,12 +4,11 @@ title: Introduction
 metadata:
   unitType: introduction
   title: Introduction
-  description: Introduction to the Microsoft Cloud Adoption Framework for Azure security module.
-  ms.date: 04/26/2022
-  author: BrianBlanchard
-  ms.author: brblanch
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Learn how the Secure methodology in the Cloud Adoption Framework provides a structured approach to secure your Azure cloud estate.
+  ms.date: 02/27/2025
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

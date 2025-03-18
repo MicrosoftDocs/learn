@@ -1,0 +1,37 @@
+### YamlMime:LearningPath
+uid: learn.aspnet-core-fundamentals
+metadata:
+  title: Understand ASP.NET Core fundamentals
+  description: |
+    Learn the fundamentals of building web applications with ASP.NET Core. This learning path teaches the basics required for front-end and back-end development with ASP.NET Core.
+  ms.date: 11/13/2024
+  author: CamSoper
+  ms.author: casoper
+  ms.topic: learning-path
+title: Understand ASP.NET Core fundamentals
+summary: |
+  Learn the fundamentals of building web applications with ASP.NET Core. This learning path teaches the basics required for front-end and back-end development with ASP.NET Core. 
+prerequisites: |
+  - Experience building web applications using .NET and C#
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+  - intermediate
+roles:
+  - developer
+products: 
+  - dotnet
+  - aspnet-core
+  - vs
+  - vs-code
+subjects: 
+  - cross-development
+  - backend-development
+  - frontend-development
+modules:
+- learn.introduction-to-aspnet-core
+- learn.build-your-first-aspnet-core-web-app
+- learn.aspnetcore-middleware
+- learn.configure-dependency-injection
+- learn.publish-aspnetcore-app
+trophy:
+  uid: learn.aspnet-core-fundamentals.trophy

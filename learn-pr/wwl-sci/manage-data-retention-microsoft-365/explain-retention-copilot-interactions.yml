@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-data-retention-microsoft-365.explain-retention-copilot-interactions
+title: Explain retention in Copilot for Microsoft 365
+metadata:
+  title: Explain retention in Copilot for Microsoft 365
+  description: "Explain retention in Copilot for Microsoft 365"
+  ms.date: 05/30/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/explain-retention-copilot-interactions.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Where is user interaction data from Copilot for Microsoft 365 securely stored?"
+    choices:
+    - content: "In the user's OneDrive."
+      isCorrect: false
+      explanation: "Incorrect: OneDrive isn't used for storing Copilot interaction data."
+    - content: "In the Teams channel."
+      isCorrect: false
+      explanation: "Incorrect: While Teams channels store some data, Copilot interactions are stored in Exchange mailboxes."
+    - content: "In an Exchange mailbox designated with the RecipientTypeDetails attribute of UserMailbox."
+      isCorrect: true
+      explanation: "Correct: Copilot interaction data is stored securely within an Exchange mailbox, ensuring compliance and data protection."

@@ -1,24 +1,31 @@
+In this module, you learned Azure Virtual Network peering lets you connect virtual networks in a hub and spoke topology. You learned how to configure your virtual networks with Azure VPN Gateway for transit connectivity. You explored how to extend peering with user-defined routes and service chaining.
 
-Azure Virtual Network peering lets you connect virtual networks in a hub and spoke topology. Virtual Network peering is a cost-effective and easy to configure solution for connecting your Azure virtual networks.
+The main takeaways from this module are:
+- Azure Virtual Network peering allows for the connection of virtual networks in a hub and spoke topology.
 
-In this module, you examined usage cases and product features of Azure Virtual Network peering. You learned how to configure your virtual networks to implement Azure VPN Gateway for transit connectivity. You explored how to extend peering by using a hub and spoke network with user-defined routes and service chaining.
+- There are two types of peering: regional and global. Regional peering connects virtual networks in the same region. Global peering connects virtual networks in different regions. 
 
-## Learn more
+- Network traffic between peered virtual networks is private and kept on the Azure backbone network.
 
-- Peruse [Azure Virtual Network peering documentation](/azure/virtual-network/virtual-network-peering-overview).
+- You can configure Azure VPN Gateway in the peered virtual network as a transit point to access resources in another network.
 
-- Connect [virtual networks with Azure Virtual Network peering in the Azure portal](/azure/virtual-network/tutorial-connect-virtual-networks-portal).
+- Network security groups can be applied to block or allow access between virtual networks when configuring virtual network peering.
 
-- Create, change, or delete [virtual network peering](/azure/virtual-network/virtual-network-manage-peering).
+## Learn more with Copilot
+Copilot can assist you in designing Azure infrastructure solutions. Copilot can compare, recommend, explain, and research products and services where you need more information. Open a Microsoft Edge browser and choose Copilot (top right) or navigate to copilot.microsoft.com. Take a few minutes to try these prompts and extend your learning with Copilot.
 
-- Configure [Azure VPN Gateway transit for virtual network peering](/azure/vpn-gateway/vpn-gateway-peering-gateway-transit).
+- What is Azure virtual network peering and what are the advantages of this feature?
 
-- Create [peering for virtual networks in different deployment models](/azure/virtual-network/create-peering-different-deployment-models).
+- What are some of the configurations settings for Azure virtual network peering?
 
-- Explore [hub-spoke network topology in Azure and virtual network peering](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke?tabs=cli#virtual-network-peering).
+## Learn more with documentation
 
-- Troubleshoot [virtual network peering issues](/azure/virtual-network/virtual-network-troubleshoot-peering-issues).
+- [Azure Virtual Network peering](/azure/virtual-network/virtual-network-peering-overview). This article is your starting point for learning about virtual network peering. 
+
+- [Create, change, or delete a virtual network peering](/azure/virtual-network/virtual-network-manage-peering?tabs=peering-portal). This article reviews how to create a virtual network peering and what each setting means. 
 
 ## Learn more with self-paced training
 
-- Distribute [your services across Azure virtual networks and integrate them by using Azure Virtual Network peering (sandbox)](/training/modules/integrate-vnets-with-vnet-peering/).
+- [Introduction to Azure Virtual Networks](/training/modules/introduction-to-azure-virtual-networks/). Learn how to design and implement core Azure networking infrastructure such as virtual networks, and virtual network peering.
+
+- [Distribute your services across Azure Virtual Networks and integrate them by using Azure Virtual Network peering (sandbox)](/training/modules/integrate-vnets-with-vnet-peering/). Learn how to use virtual network peering to enable communication across virtual networks.

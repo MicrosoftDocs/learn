@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-dream-destination-ai-copilot.exercise-plan-menu
+title: 'Exercise: Plan the Menu'
+metadata:
+  title: 'Exercise: Plan the Menu'
+  description: "Exercise: Plan the menu"
+  ms.date: 03/17/2025
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - copilot-learning-hub
+  - ai-learning-hub
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-exercise-plan-menu.md)]

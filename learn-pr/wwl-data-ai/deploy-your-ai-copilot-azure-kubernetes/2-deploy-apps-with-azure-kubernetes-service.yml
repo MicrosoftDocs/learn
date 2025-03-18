@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-your-ai-copilot-azure-kubernetes.deploy-apps-with-azure-kubernetes-service
+title: Deploy applications with Azure Kubernetes Service
+metadata:
+  title: Deploy applications with Azure Kubernetes Service
+  description: "Deploy applications with Azure Kubernetes Service"
+  ms.date: 11/12/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-deploy-apps-with-azure-kubernetes-service.md)]

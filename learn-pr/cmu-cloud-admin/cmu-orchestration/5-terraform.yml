@@ -4,12 +4,13 @@ title: Terraform
 metadata:
   title: Terraform
   description: Learn about Terraform, the most popular infrastructure as code tool
-  ms.date: 12/31/2019
+  ms.date: 06/07/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.topic: unit
+  ms.custom:
+    - team=nextgen
+    - devx-track-terraform
 durationInMinutes: 10
 content: |
   [!include[](includes/5-terraform.md)]

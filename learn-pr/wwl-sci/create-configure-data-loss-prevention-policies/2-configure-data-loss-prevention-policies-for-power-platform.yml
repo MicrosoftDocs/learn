@@ -4,11 +4,10 @@ title: Configure data loss prevention policies for Power Platform
 metadata:
   title: Configure data loss prevention policies for Power Platform
   description: "Configure data loss prevention policies for Power Platform"
-  ms.date: 08/18/2022
+  ms.date: 08/30/2024
   author: wwlpublish
-  ms.author: bneeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.author: riswinto
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

@@ -4,11 +4,11 @@ title: Describe Azure Migrate
 metadata:
   title: Describe Azure Migrate
   description: "Describe Azure Migrate"
-  ms.date: 10/21/2020
+  ms.date: 01/25/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.contributors: orthomas
 azureSandbox: false
 durationInMinutes: 10
 content: |

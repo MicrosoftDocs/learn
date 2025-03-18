@@ -10,7 +10,7 @@ Start by gathering information about each component of the application. The answ
 
 |Ask this question ...|To determine controls that ...|
 |---|---|
-|Are connections authenticated using Azure AD, TLS (with mutual authentication), or another modern security protocol approved by the security team?<br><br>- Between users and the application<br><br>- Between different application components and services|Prevent unauthorized access to the application component and data.|
+|Are connections authenticated using Microsoft Entra ID, TLS (with mutual authentication), or another modern security protocol approved by the security team?<br><br>- Between users and the application<br><br>- Between different application components and services|Prevent unauthorized access to the application component and data.|
 |Are you limiting access to only those accounts that have the need to write or modify data in the application| Prevent unauthorized data tampering or alteration.|
 |Is the application activity logged and fed into a Security Information and Event Management (SIEM) through Azure Monitor or a similar solution?|Detect and investigate attacks quickly.|
 |Is critical data protected with encryption that has been approved by the security team?| Prevent unauthorized copying of data at rest.|
@@ -29,7 +29,7 @@ Analyze application components and connections and their relationships. Threat m
 
 Popular methodologies include:
 
--   [STRIDE](https://learn.microsoft.com/azure/security/develop/threat-modeling-tool-threats):
+-   [STRIDE](/azure/security/develop/threat-modeling-tool-threats):
     -   Spoofing
     -   Tampering
     -   Repudiation
@@ -43,7 +43,7 @@ Microsoft Security Development Lifecycle uses STRIDE and provides a tool to assi
 
 Integrate threat modeling through automation using secure operations. Here are some resources:
 - Toolkit for [Secure DevOps on Azure](https://azsk.azurewebsites.net/).
-- [Guidance on DevOps pipeline security](https://www.owasp.org/index.php/OWASP_AppSec_Pipeline#tab=Main) by OWASP.
+- [Guidance on DevOps pipeline security](https://owasp.org/www-project-devsecops-guideline/) by OWASP.
 
 ## 3- Mitigate the identified threats
 
@@ -64,7 +64,7 @@ Here are some best practices:
 - Upload the threat modeling report to a tracking tool. Create work items that can be validated and addressed by the developers. Cyber security teams can also use the report to determine attack vectors during a penetration test.
 - As new features are added to the application, update the threat model report and integrate it into the code management process. Triage security issues into the next release cycle or a faster release, depending on the severity.
 
-For information about mitigation strategies, see [RapidAttack](https://learn.microsoft.com/security/compass/human-operated-ransomware).
+For information about mitigation strategies, see [RapidAttack](/security/compass/human-operated-ransomware).
 
 ## Overview of Microsoft Threat Modeling tool
 
@@ -85,4 +85,4 @@ Here are some tooling capabilities and innovations, just to name a few:
 - Designed for Developers and Centered on Software: many approaches are centered on assets or attackers. We're centered on software. We build on activities that all software developers and architects are familiar with, like drawing pictures for their software architecture
 - Focused on Design Analysis: The term "threat modeling" can refer to either a requirements or a design analysis technique. Sometimes, it refers to a complex blend of the two. The Microsoft SDL approach to threat modeling is a focused design analysis technique
 
-For more information on getting started with the tool, see [Getting started with the Threat Modeling Tool](https://learn.microsoft.com/azure/security/develop/threat-modeling-tool-getting-started).
+For more information on getting started with the tool, see [Getting started with the Threat Modeling Tool](/azure/security/develop/threat-modeling-tool-getting-started).

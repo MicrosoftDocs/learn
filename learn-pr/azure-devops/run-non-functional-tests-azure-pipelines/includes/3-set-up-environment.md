@@ -1,6 +1,6 @@
-In this section, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You also create the Azure App Service environments that you'll deploy to.
+In this section, you'll make sure that your Azure DevOps organization is set up to complete the rest of this module. You'll also create the Azure App Service environments to which you'll deploy.
 
-To set up your system, you:
+To set up your system, you'll:
 
 > [!div class="checklist"]
 > * Add a user to ensure that Azure DevOps can connect to your Azure subscription.
@@ -14,15 +14,15 @@ To set up your system, you:
 
 To complete this module, you need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). You can get started with Azure for free.
 
-Although you don't need an Azure subscription to work with Azure DevOps, here, you'll use Azure DevOps to deploy to resources that exist in your Azure subscription. To simplify the process, you use the same Microsoft account to sign in to both your Azure subscription and your Azure DevOps organization.
+Although you don't need an Azure subscription to work with Azure DevOps, in this module you'll use Azure DevOps to deploy to resources that exist in your Azure subscription. To simplify the process, you should use the same Microsoft account to sign in to both your Azure subscription and your Azure DevOps organization.
 
 If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true&tabs=browser). When you add the user, choose the **Basic** access level.
 
-Then sign out of Azure DevOps and sign in again under the Microsoft account that you use to sign in to your Azure subscription.
+Then, sign out of Azure DevOps and sign in again under the Microsoft account that you use to sign in to your Azure subscription.
 
 ## Get the Azure DevOps project
 
-Here you make sure that your Azure DevOps organization is set up to complete the rest of this module. You start by running a template that creates your project in Azure DevOps.
+Here, you'll make sure that your Azure DevOps organization is set up to complete the rest of this module. You'll start by running a template that creates your project in Azure DevOps.
 
 The modules in this learning path are part of a progression that follows the Tailspin web team through their DevOps journey. For learning purposes, each module has an associated Azure DevOps project.
 
@@ -36,11 +36,11 @@ Run a template that sets up your Azure DevOps organization.
 On the Azure DevOps Demo Generator site, follow these steps to run the template.
 
 1. Select **Sign In** and accept the usage terms.
-1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as *Space Game - web - Nonfunctional tests*.
+1. On the **Create New Project** page, select your Azure DevOps organization, then enter a project name such as *Space Game - web - Nonfunctional tests*.
 
     :::image type="content" source="../media/3-create-new-project.png" alt-text="Screenshot for Creating a project through the Azure DevOps Demo Generator.":::
 
-1. Select **Yes, I want to fork this repository**. Then select **Authorize**.
+1. Select **Yes, I want to fork this repository**, then select **Authorize**.
 1. Select **Create Project**.
 
     The template takes a few moments to run.
@@ -51,43 +51,13 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template.
 
 [!include[](../../shared/includes/project-visibility.md)]
 
-## Move the work item to Doing
-
-In this part, on Azure Boards, you assign yourself a work item that relates to this module. You also move the work item to the **Doing** state. In practice, your team would create work items at the start of each *sprint* or work iteration.
-
-Assigning work in this way gives you a checklist to work from. It gives your team visibility into what you're working on and how much work is left. It also helps the team enforce limits on work in progress (WIP) so that the team doesn't take on too much work at one time.
-
-Recall that the team settled on these top issues for the current sprint:
-
-:::image type="content" source="../../shared/media/deploy-all-tasks.png" alt-text="Screenshot of Azure Boards, showing the tasks for this sprint.":::
-
-> [!NOTE]
-> Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number for each work item might not match what you see here.
-
-Here you move the fourth item, **Automate performance tests**, to the **Doing** column. Then you assign yourself to the work item. **Automate performance tests** relates to automating load testing, a form of performance testing, for the _Space Game_ website.
-
-To set up the work item:
-
-1. In Azure DevOps, navigate to **Boards**. Then select **Boards** from the menu.
-
-    :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="Screenshot of Azure DevOps showing the location of the Boards menu.":::
-
-1. In the **Automate performance tests** work item, select the down arrow at the bottom of the card. Then assign the work item to yourself.
-
-    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="Screenshot of Azure Boards showing the location of the down arrow.":::
-1. Move the work item from the **To Do** column to the **Doing** column.
-
-    :::image type="content" source="../media/3-azure-boards-wi4-doing.png" alt-text="Screenshot of Azure Boards, showing the card in the Doing column.":::
-
-At the end of this module, you move the card to the **Done** column after you complete the task.
-
 [!include[](../../shared/includes/deploy-local-setup.md)]
 
 ## Create the Azure App Service environments
 
-Here you create the environments that define the pipeline stages. You create one App Service instance that corresponds to each stage: _Dev_, _Test_, and _Staging_.
+Here, you'll create the environments that define the pipeline stages. You'll create one App Service instance that corresponds to each stage: _Dev_, _Test_, and _Staging_.
 
-In previous modules, you used the Azure CLI to create your App Service instances. Here you'll do the same.
+In previous modules, you used the Azure CLI to create your App Service instances. Here, you'll do the same.
 
 > [!IMPORTANT]
 > Remember that you need your own Azure subscription to complete the exercises in this module.
@@ -117,7 +87,7 @@ Here you specify the default _region_, or geographic location, where your Azure 
     az configure --defaults location=<REGION>
     ```
 
-    Here's an example that sets **westus2** as the default region.
+    Here's an example that sets **westus2** as the default region:
 
     ```azurecli
     az configure --defaults location=westus2
@@ -125,10 +95,10 @@ Here you specify the default _region_, or geographic location, where your Azure 
 
 ### Create the App Service instances
 
-Here you create the App Service instances for the three stages that you'll deploy to: _Dev_, _Test_, and _Staging_.
+Here, you'll create the App Service instances for the three stages to which you'll deploy: _Dev_, _Test_, and _Staging_.
 
 > [!NOTE]
-> For learning purposes, you use the default network settings. These settings make your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a network that's not routable from the internet, and that's accessible to only your team. Later, when you're ready, you could reconfigure your network to make the website available to your users.
+> For learning purposes, use the default network settings. These settings make your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a network that's not routable from the internet, and that's accessible to only your team. Later, when you're ready, you could reconfigure your network to make the website available to your users.
 
 1. In Cloud Shell, generate a random number that makes your web app's domain name unique.
 
@@ -179,7 +149,7 @@ Here you create the App Service instances for the three stages that you'll deplo
       --runtime "DOTNET|6.0"
     ```
 
-    For learning purposes, here, you apply the same App Service plan, **B1 Basic**, to each App Service instance. In practice, you would assign a plan that matches your expected workload.
+    For learning purposes, here, you apply the same App Service plan, **B1 Basic**, to each App Service instance. In practice, you'd assign a plan that matches your expected workload.
 
 1. Run the following `az webapp list` command to list the host name and state of each App Service instance.
 
@@ -211,7 +181,7 @@ Here you create the App Service instances for the three stages that you'll deplo
 
 ## Create pipeline variables in Azure Pipelines
 
-In [Run functional tests in Azure Pipelines](/training/modules/run-functional-tests-azure-pipelines?azure-portal=true), you added one variable for each of the App Service instances. The instances correspond to the _Dev_, _Test_, and _Staging_ stages in your pipeline. Here you follow the same pattern.
+In [Run functional tests in Azure Pipelines](/training/modules/run-functional-tests-azure-pipelines?azure-portal=true), you added one variable for each of the App Service instances. The instances correspond to the _Dev_, _Test_, and _Staging_ stages in your pipeline. Here, you'll follow the same pattern.
 
 Each stage in your pipeline configuration uses the variables to identify which App Service instance to deploy to.
 
@@ -237,7 +207,7 @@ To add the variables:
     > [!IMPORTANT]
     > Make sure that you set the name of the App Service instance, not its host name. In this example, you would enter *tailspin-space-game-web-dev-1234* and not *tailspin-space-game-web-dev-1234.azurewebsites.net*.
 
-1. To save your variable to the pipeline, near the top of the page, select **Save**.
+1. To save your variable to the pipeline, select **Save** near the top of the page.
 
     Your variable group resembles this one:
 
@@ -245,7 +215,7 @@ To add the variables:
 
 ## Create the dev, test, and staging environments
 
-In [Run functional tests in Azure Pipelines](/training/modules/run-functional-tests-azure-pipelines?azure-portal=true), you created environments for the **dev**, **test**, and **staging** environments. Here, you repeat the process.
+In [Run functional tests in Azure Pipelines](/training/modules/run-functional-tests-azure-pipelines?azure-portal=true), you created environments for the **dev**, **test**, and **staging** environments. Here, you'll repeat the process.
 
 To create the **dev**, **test**, and **staging** environments:
 
@@ -271,7 +241,7 @@ To create the **dev**, **test**, and **staging** environments:
 
 ## Create a service connection
 
-Here you create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service. You created a similar service connection in the previous module.
+Here, you'll create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service. You created a similar service connection in the previous module.
 
 > [!IMPORTANT]
 > Make sure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.

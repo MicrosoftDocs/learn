@@ -1,3 +1,4 @@
+
 In this module, you learned the backup and recovery options for Azure Cosmos DB.
 
 Now that you have completed this module, you can:

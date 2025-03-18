@@ -11,14 +11,14 @@ While there are many complex rules that define the process of refactoring data i
 To understand the core principles of normalization, suppose the following table represents a spreadsheet that a company uses to track its sales.
 
 > [!div class="mx-imgBorder"]
-> ![Order data ina  single, un-normalized table](../media/unnormalized-data.png)
+> ![Diagram showing an order data in a single, un-normalized table.](../media/unnormalized-data.png)
 
 Notice that the customer and product details are duplicated for each individual item sold; and that the customer name and postal address, and the product name and price are combined in the same spreadsheet cells.
 
 Now let's look at how normalization changes the way the data is stored.
 
 > [!div class="mx-imgBorder"]
-> ![Order data in a normalized tabular schema](../media/normalized-data.png)
+> ![Diagram showing an order data in a normalized tabular schema.](../media/normalized-data.png)
 
 Each entity that is represented in the data (customer, product, sales order, and line item) is stored in its own table, and each discrete attribute of those entities is in its own column.
 

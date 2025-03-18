@@ -1,13 +1,16 @@
 ### YamlMime:Module
 uid: learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Consume an Azure Cosmos DB for NoSQL change feed using the SDK
   description: "Process change feed events using the change feed processor in the Azure Cosmos DB for NoSQL .NET SDK."
   ms.date: 10/18/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: azure-cosmos-db
+  ms.subservice: nosql
 title: Consume an Azure Cosmos DB for NoSQL change feed using the SDK
 summary: Process change feed events using the change feed processor in the Azure Cosmos DB for NoSQL .NET SDK.
 abstract: |

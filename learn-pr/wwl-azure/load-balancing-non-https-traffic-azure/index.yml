@@ -1,24 +1,35 @@
 ### YamlMime:Module
 uid: learn.wwl.load-balancing-non-https-traffic-azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Load balance non-HTTP(S) traffic in Azure
-  description: "You will learn the different load balancer options in Azure and how to choose and implement the right Azure solution for non-HTTP(S) traffic."
-  ms.date: 09/28/2022
+  description: "You learn the different load balancer options in Azure and how to choose and implement the right Azure solution for non-HTTP(S) traffic."
+  ms.date: 02/13/2025
   author: wwlpublish
-  ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: cynthist
+  ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - references_regions
+  ms.service: azure-load-balancer
+  ai-usage: human-only
 title: Load balance non-HTTP(S) traffic in Azure
-summary: You will learn the different load balancer options in Azure and how to choose and implement the right Azure solution for non-HTTP(S) traffic.
+summary: You learn the different load balancer options in Azure and how to choose and implement the right Azure solution for non-HTTP(S) traffic.
 abstract: |
-  At the end of this module, you will be able to:
-  - Identify the features and capabilities of Azure Load Balancer
-  - Design and implement an Azure Load Balancer
-  - Implement a Traffic Manager profile
+  At the end of this module, you are able to:
+
+  -   Identify the features and capabilities of Azure Load Balancer
+
+  -   Design and implement an Azure Load Balancer
+
+  -   Implement a Traffic Manager profile
 prerequisites: |
-  - You should have experience with networking concepts, such as IP addressing, Domain Name System (DNS), and routing
-  - You should have experience with network connectivity methods, such as VPN or WAN
-  - You should have experience with the Azure portal and Azure PowerShell
+  -   You should have experience with networking concepts, such as IP addressing, Domain Name System (DNS), and routing
+
+  -   You should have experience with network connectivity methods, such as VPN or WAN
+
+  -   You should have experience with the Azure portal and Azure PowerShell
 iconUrl: /training/achievements/load-balancing-non-https-traffic-in-azure.svg
 levels:
 - intermediate

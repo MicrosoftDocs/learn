@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-machine-learning.clustering
+title: Clustering
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Clustering
+  description: "Clustering"
+  ms.date: 02/14/2025
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-clustering.md)]

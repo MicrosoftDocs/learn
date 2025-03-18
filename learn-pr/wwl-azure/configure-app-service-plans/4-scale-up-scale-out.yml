@@ -2,15 +2,16 @@
 uid: learn.wwl.configure-app-service-plans.scale-up-scale-out
 title: Scale up and scale out Azure App Service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Scale up and scale out Azure App Service
   description: "Scale up and scale out Azure App Service"
-  ms.date: 01/29/2023
+  ms.date: 03/10/2025
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/4-scale-up-scale-out.md)]

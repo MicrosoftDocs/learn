@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.explore-data-for-data-science-microsoft-fabric.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.date: 1/24/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+
+durationInMinutes: 4
+content: |
+  [!include[](includes/1-introduction.md)]

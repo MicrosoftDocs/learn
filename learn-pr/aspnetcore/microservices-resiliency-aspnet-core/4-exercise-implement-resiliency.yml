@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-resiliency-aspnet-core.4-exercise-implement-resiliency
+metadata:
+  title: Exercise - Implement application resiliency
+  description: Write code to add resiliency to an existing cloud-native microservices app.
+  author: codemillmatt
+  ms.author: masoucou
+  ms.date: 11/06/2023
+  ms.topic: unit
+title: Exercise - Implement application resiliency
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-exercise-implement-resiliency.md)]

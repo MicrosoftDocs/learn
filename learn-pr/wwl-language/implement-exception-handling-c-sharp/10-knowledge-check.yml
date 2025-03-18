@@ -4,11 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/24/2023
+  ms.date: 01/14/2025
   author: wwlpublish
   ms.author: cahowd
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 quiz:
   title: "Check your knowledge"
@@ -59,13 +60,13 @@ quiz:
       explanation: "Incorrect. This answer choice describes when a `IndexOutOfRangeException` exception is thrown."
   - content: "What is the name of the base class that all derived exception types inherit from?"
     choices:
-    - content: "Object."
+    - content: "`Object`."
       isCorrect: false
       explanation: "Incorrect. Object isn't an exception type."
-    - content: "System."
+    - content: "`System`."
       isCorrect: false
       explanation: "Incorrect. System isn't an exception type."
-    - content: "Exception."
+    - content: "`Exception`."
       isCorrect: true
       explanation: "Correct. In C#, `System.Exception` is the base class that all derived exception types inherit from."
   - content: "Which property of an exception object can be used to determine where an error occurred?"

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-azure-openai-authentication-authorization.summary
+title: Summary
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Summary
+  description: Module summary
+  ms.date: 10/16/2024
+  author: sarah-yo
+  ms.author: sayoung
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-summary.md)]
+

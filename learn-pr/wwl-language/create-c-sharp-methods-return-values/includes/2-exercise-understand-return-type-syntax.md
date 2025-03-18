@@ -1,6 +1,3 @@
-
-
-
 Not only can methods perform operations, they can return a value as well. Methods can return a value by including the return type in the method signature. Methods can return any data type, or they can return nothing at all. The return type must always be specified before the method name. 
 
 Using `void` as the return type means the method only performs operations and doesn't return a value. For example:
@@ -60,7 +57,8 @@ This module includes hands-on activities that guide you through the process of b
 
 ### Use methods to calculate the total purchase price
 
-The Contoso Shopping Center is having a super sale! Many items have discounted price. You're given a list of item prices and a list of corresponding discounts. The discounts are represented by percentages, for example 50% = 0.5. If a customer spends more than $30.00, they recieve $5.00 of their total purchase. In this task, you'll write code to calculate the customer's total. Let's get started!
+
+The Contoso Shopping Center is having a super sale! Many items have discounted price. You're given a list of item prices and a list of corresponding discounts. The discounts are represented by percentages, for example 50% = 0.5. If a customer spends more than $30.00, they receive $5.00 of their total purchase. In this task, you'll write code to calculate the customer's total. Let's get started!
 
 1. Enter the following code into the Visual Studio Code Editor:
 

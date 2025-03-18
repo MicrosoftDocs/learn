@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.become-learn-contributor.share-learn-resources
+title: Share Microsoft Learn resources with others
+metadata:
+  title: Share Microsoft Learn resources with others
+  description: This unit explains how to contribute to Microsoft Learn by sharing resources with others.
+  ms.date: 10/5/2023
+  author: sgaspari815
+  ms.author: v-sgaspari
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-share-learn-resources.md)]

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.responsible-language-models-azure-databricks.summary
+title: Summary
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Summary
+  description: "Summary"
+  ms.date: 08/23/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/08-summary.md)]

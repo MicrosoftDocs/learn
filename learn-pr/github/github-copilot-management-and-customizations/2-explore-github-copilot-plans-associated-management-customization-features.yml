@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-copilot-management-and-customizations.exploring-git-hub-copilot-plans-and-their-associated-management-and-customization-features
+title: Explore GitHub Copilot plans and their associated management and customization features
+metadata:
+  title: Explore GitHub Copilot plans and their associated management and customization features
+  description: This content is part of the "Management and customization considerations with GitHub Copilot" module.
+  ms.date: 10/18/2024
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-explore-github-copilot-plans-their-associated-management-customization-features.md)]

@@ -1,6 +1,6 @@
-When you're designing a data model for a NoSQL database, the objective is to ensure that operations on data are done in the fewest requests. To do this, you need to understand the relationships between the data and how data will be accessed by the application. These access patterns are important because they, along with the relationships, will determine how the properties of the various entities are grouped together and stored in documents within containers in Azure Cosmos DB for NoSQL databases.
+When you're designing a data model for a NoSQL database, the objective is to ensure that operations on data are done in the fewest requests. To do this, you need to understand the relationships between the data and how data will be accessed by the application. These access patterns are important because they, along with the relationships, will determine how the properties of the various entities are grouped together and stored in documents within containers in Azure Cosmos DB for NoSQL.
 
-In Azure Cosmos DB for NoSQL, documents are called Items and containers are often synonymously referred to as collections.
+In Azure Cosmos DB for NoSQL, documents are called items and containers are often synonymously referred to as collections.
 
 ## Identify access patterns for customer entities
 
@@ -14,7 +14,7 @@ In our application, we'll perform three operations on the customer entities:
 - **Update a customer**: When an existing user updates their profile information, their customer record will be updated.
 - **Retrieve a customer**: When an existing user visits the site, they'll sign in with their password. During that same session, they'll need to access other customer data (such as address) to purchase new items.
 
-For each of these operations, we need all this data at the same time. These entities can be modeled as separate documents, but it would require multiple round trips to the server to create, update, and retrieve the customer data.
+For each of these operations, we need all this data at the same time. If they were modeled as separate documents, it would require multiple round trips to the server to create, update, and retrieve the customer data. This is inefficient.
 
 ## Model customer entities
 

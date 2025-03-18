@@ -12,7 +12,7 @@ This module consists of three lessons:
 - Lesson 2 – Work with data streams by using Azure Stream Analytics  
 - Lesson 3 – Transform data by using Azure Stream Analytics  
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5akqa] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=dfbe9f72-0376-414d-894b-0d8a1473231e] 
 
 Module 10 Tips and Tricks 
 

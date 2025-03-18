@@ -2,15 +2,16 @@
 uid: learn.wwl.design-migrations.migrate-your-databases
 title: Migrate your structured data in databases
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Migrate your structured data in databases
   description: "Migrate your structured data in databases with the Azure Database Migration Service and SQL Server Data Migration Assistant (DMA)."
-  ms.date: 02/16/2023
+  ms.date: 03/10/2025
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/6-migrate-your-databases.md)]

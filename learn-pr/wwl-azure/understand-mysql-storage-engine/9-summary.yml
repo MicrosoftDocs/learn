@@ -2,12 +2,14 @@
 uid: learn.wwl.understand-mysql-storage-engine.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 11/08/2022
   author: wwlpublish
   ms.author: caroline
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 1

@@ -2,15 +2,16 @@
 uid: learn.wwl.design-migrations.evaluate-migration-cloud-adoption-framework
 title: Evaluate migration with the Cloud Adoption Framework
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Evaluate migration with the Cloud Adoption Framework
   description: "Evaluate migration with the Cloud Adoption Framework"
-  ms.date: 02/16/2023
+  ms.date: 03/10/2025
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/2-evaluate-migration-cloud-adoption-framework.md)]

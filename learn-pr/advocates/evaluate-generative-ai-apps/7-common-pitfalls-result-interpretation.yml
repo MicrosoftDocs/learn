@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.evaluate-generative-ai-apps.common-pitfalls-result-interpretation
+title: Common pitfalls in result interpretation
+metadata:
+  title: Common pitfalls in result interpretation
+  description: Learn some of the common pitfalls in interpreting generative AI application evaluation results.
+  ms.date: 10/11/2024
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-common-pitfalls-result-interpretation.md)]

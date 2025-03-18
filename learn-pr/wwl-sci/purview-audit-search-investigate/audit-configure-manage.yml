@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-audit-search-investigate.audit-configure-manage
+title: Configure and manage Microsoft Purview Audit
+metadata:
+  title: Configure and manage Microsoft Purview Audit
+  description: "Configure and manage Microsoft Purview Audit."
+  ms.date: 05/01/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/audit-configure-manage.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the main difference in subscription requirements between Microsoft Purview Audit (Standard) and Audit (Premium)?"
+    choices:
+    - content: "Audit (Premium) requires higher-tier plans like Microsoft 365 E5 or Office 365 E5, which includes advanced security tools."
+      isCorrect: true
+      explanation: "Correct: Audit (Premium) requires subscriptions to higher-tier plans like Microsoft 365 E5 to access advanced auditing features."
+    - content: "Both versions require the same types of subscriptions."
+      isCorrect: false
+      explanation: "Incorrect: Audit (Premium) requires more comprehensive subscription plans compared to Audit (Standard)."
+    - content: "Audit (Standard) requires an Office 365 E1 subscription, while Audit (Premium) doesn't."
+      isCorrect: false
+      explanation: "Incorrect: Audit (Standard) and Audit (Premium) both require specific subscription types, but Premium generally requires higher-tier plans."

@@ -2,15 +2,16 @@
 uid: learn.wwl.configure-provision-environments.understand-shift-left
 title: Understand Shift-left
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand Shift-left
   description: "Understand Shift-left"
-  ms.date: 02/07/2023
+  ms.date: 05/06/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
 content: |
   [!include[](includes/5-understand-shift-left.md)]

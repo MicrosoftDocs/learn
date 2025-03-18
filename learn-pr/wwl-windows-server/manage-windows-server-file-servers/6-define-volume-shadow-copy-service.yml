@@ -4,11 +4,10 @@ title: Define Volume Shadow Copy Service
 metadata:
   title: Define Volume Shadow Copy Service
   description: "Define Volume Shadow Copy Service"
-  ms.date: 10/20/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 4

@@ -40,7 +40,7 @@ The main steps in the process are:
 1. Connect to the iSCSI Target from the management server. Use iSCSI Initiator to connect to the newly configured iSCSI Target.
 1. Validate the presence of a new volume. Use Server Manager to validate the volume mount on the management server.
 
- >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MxmO]
+ > [!VIDEO https://learn-video.azurefd.net/vod/player?id=13bd48d6-ea2a-490c-b9af-696218399822]
 
 ---
 

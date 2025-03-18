@@ -1,10 +1,6 @@
-
-
-
-
 In this exercise, you'll review the Starter project code and then begin updating the application. Your first coding task will be creating the arrays that hold student exam scores. Once your application data is available in arrays, you'll begin working on a `foreach` loop that can be used to sum student grades. The detailed tasks that you'll complete during this exercise are:
 
-1. Code review: review the contents of the Program.cs file.
+1. Code review: review the contents of the Program.cs file. 
 
 1. Arrays: Create the arrays that store each student's assignment scores.
 
@@ -33,11 +29,9 @@ In this task, you'll review the code that's provided as a Starter project for th
 
 1. Take a few minutes to review the code in the Program.cs file.
 
-1. Notice that the top portion of your code begins with a `Using` statement and a list of variable declarations.  
+1. Notice that the top portion of your code begins with a list of variable declarations.  
 
     ```c#
-    using System;
-
     // initialize variables - graded assignments 
     int currentAssignments = 5;
     
@@ -66,9 +60,7 @@ In this task, you'll review the code that's provided as a Starter project for th
     int logan5 = 96;
     ```
 
-    The `using` statement enables you to write code that implements members of the `System` namespace without requiring you to specify `System`. For example, your code can use the `Console.WriteLine()` method without having to specify `System.Console.WriteLine()`. Among other things, the `using` statement makes your code easier to read.
-
-    Next, you see a comment line followed by a list of variables that are used to hold the scores of graded assignments for each student. Your first variable, `currentAssignments` is used to hold the number of exams that have been scored.
+    At the top of your code file, you see a comment line followed by a list of variables that are used to hold the scores of graded assignments for each student. Your first variable, `currentAssignments` is used to hold the number of exams that have been scored.
 
     The assignment score variables represent a great opportunity to create and use arrays!
 
@@ -116,10 +108,10 @@ In this task, you'll review the code that's provided as a Starter project for th
 
     ```c#
     Console.WriteLine("Student\t\tGrade\n");
-    Console.WriteLine("Sophia:\t\t" + sophiaScore + "\tA");
-    Console.WriteLine("Andrew:\t\t" + andrewScore + "\tB");
+    Console.WriteLine("Sophia:\t\t" + sophiaScore + "\tA-");
+    Console.WriteLine("Andrew:\t\t" + andrewScore + "\tB+");
     Console.WriteLine("Emma:\t\t" + emmaScore + "\tB");
-    Console.WriteLine("Logan:\t\t" + loganScore + "\tA");
+    Console.WriteLine("Logan:\t\t" + loganScore + "\tA-");
     
     Console.WriteLine("Press the Enter key to continue");
     Console.ReadLine();
@@ -143,7 +135,7 @@ In this task, you'll review the code that's provided as a Starter project for th
     ```txt
     Determining projects to restore...
     All projects are up-to-date for restore.
-    Starter -> C:\Users\someuser\Desktop\GuidedProject\Starter\bin\Debug\net6.0\Starter.dll
+    Starter -> C:\Users\someuser\Desktop\GuidedProject\Starter\bin\Debug\net7.0\Starter.dll
 
     Build succeeded.
         0 Warning(s)
@@ -157,7 +149,7 @@ In this task, you'll review the code that's provided as a Starter project for th
     The `dotnet run` command will instruct the compiler to build your application and then, as long as there were no build errors, it will run your compiled code.
 
     > [!IMPORTANT]
-    > The Starter project targets version 7.0 of the .NET Framework. If you don't have .NET 7 installed, the `dotnet run` command will generate an error. You can either install the .NET 7 SDK (recommended), or you can change the target framework in the Starter.csproj file to align with the version of .NET that you chave installed in your environment.
+    > The Starter project targets .NET 8 (in the Starter.csproj file). If you don't have .NET 8 installed, the `dotnet run` command will generate an error. You can either install the .NET 8 SDK (recommended), or you can change the target framework in the Starter.csproj file to align with the version of .NET that you have installed in your environment.
 
 1. Verify that your application produced the following output:
 

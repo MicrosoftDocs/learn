@@ -4,11 +4,10 @@ title: Prepare on-premises Active Directory for directory synchronization
 metadata:
   title: Prepare on-premises Active Directory for directory synchronization
   description: "Prepare on-premises Active Directory for directory synchronization"
-  ms.date: 12/13/2021
+  ms.date: 01/01/2025
   author: wwlpublish
-  ms.author: v-anwarr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: tonyj
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

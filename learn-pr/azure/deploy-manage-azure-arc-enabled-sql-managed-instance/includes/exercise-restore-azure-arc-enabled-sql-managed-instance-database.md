@@ -4,36 +4,28 @@ In this exercise, you restore and query AdventureWorks2019 sample database to fa
 
 1. Download AdventureWorks2019 sample database backup [AdventureWorks2019](/sql/samples/adventureworks-install-configure#download-backup-files).
 
-2. [Copy](/azure/azure-arc/data/migrate-to-managed-instance#step-2-copy-the-backup-file-into-the-pods-file-system) the downloaded backup file to your backup drive attached to your Arc-enabled SQL Managed Instance using the `kubectl cp` command.
-3. Open Azure Data Studio.
-4. Expand the **Connections**.
-5. Expand **Azure Arc Controllers**.
-6. Expand your Arc data controller.
-7. Right-click on your Arc-enabled SQL Managed Instance and select **Manage**.
-
-    ![Screenshot of Azure Arc-enabled SQL Managed Instance - Manage.](../media/Manage-1.png)
-
-8. The external Endpoint is what you need to connect to your Arc-enabled SQL Managed Instance. Copy this and open either SQL Server Manage Studio or Azure Data Studio. The primary external endpoint is available from ADS as can be seen above or via the [`az sql mi-arc list`](/azure/azure-arc/data/connect-managed-instance#view-azure-arc-enabled-sql-managed-instances) command.
-9. Connect to your external endpoint and name accordingly.
-10. Open a new query window to perform your database restore.
-
-    ![Screenshot of Azure Arc-enabled SQL Managed Instance - ADS query window.](../media/azure-data-studio-querywindow-2.png)
-
-11. Execute the [Restore Filelistonly](/sql/t-sql/statements/restore-statements-filelistonly-transact-sql) command to confirm you have access to the AdventureWorks2019 backup file. In this example, we are restoring from locally attached storage.
-12. Execute the [Restore Database](/sql/t-sql/statements/restore-statements-transact-sql) Command to restore to your Arc-enabled SQL Managed Instance.
+1. Use the `kubectl cp` command to [copy](/azure/azure-arc/data/migrate-to-managed-instance#step-2-copy-the-backup-file-into-the-pods-file-system) the downloaded backup file to your backup drive, which is attached to your Arc-enabled SQL Managed Instance.
+1. Open Azure Data Studio.
+1. Expand **Connections**.
+1. Expand **Azure Arc Controllers**.
+1. Expand your Arc data controller.
+1. Right-click on your Arc-enabled SQL Managed Instance and select **Manage**.
+1. The external endpoint is what you connect to your Arc-enabled SQL Managed Instance. Copy it and open either SQL Server Manage Studio or Azure Data Studio. The primary external endpoint is available from Azure Data Studio as shown, or by using the [`az sql mi-arc list`](/azure/azure-arc/data/connect-managed-instance#view-azure-arc-enabled-sql-managed-instances) command.
+1. Connect to your external endpoint and name accordingly.
+1. Open a new query window to perform your database restore.
+1. Run the [Restore Filelistonly](/sql/t-sql/statements/restore-statements-filelistonly-transact-sql) command to confirm you have access to the AdventureWorks2019 backup file. In this example, we restore from locally attached storage.
+1. Run the [Restore Database](/sql/t-sql/statements/restore-statements-transact-sql) command to restore to your Arc-enabled SQL Managed Instance.
 
     ![Screenshot of Azure Arc-enabled SQL Managed Instance - DB Restore.](../media/database-restore-3.png)
 
-13. Refresh your database list in the connections tab for your Arc-enabled SQL Managed Instance connection. 
-
-    ![Screenshot of Azure Arc-enabled SQL Managed Instance - DB Restored.](../media/database-restored-4.png)
+1. Refresh your database list in the Connections tab for your Arc-enabled SQL Managed Instance connection.
 
 ## Explore AdventureWorks2019  
 
-Whether you deploy your Arc-enabled SQL Managed Instance to Azure, on-premises, or any public cloud, you can access it the same as any other instance of SQL Server. Using your preferred tools like SQL Server Management Studio or Azure Data Studio, you will explore the AdventureWorks2019 database we restored in the exercise above.
+Whether you deploy your Arc-enabled SQL Managed Instance to Azure, on-premises, or any public cloud, you can access it in the same way as any other instance of SQL Server. Using your preferred tools like SQL Server Management Studio or Azure Data Studio, you explore the AdventureWorks2019 database we restored in the previous exercise.
 
 1. Right-click on AdventureWorks2019 in your database listing and select **New Query**.
-2. Execute the following statement to list all schemas and tables in the AdventureWorks2019 database:
+1. Run the following statement to list all schemas and tables in the AdventureWorks2019 database:
 
     ```sql
     Select S.Name as 'SchemaName',
@@ -45,7 +37,7 @@ Whether you deploy your Arc-enabled SQL Managed Instance to Azure, on-premises, 
 
     ![Screenshot of Azure Arc-enabled SQL Managed Instance - schema-table query and results.](../media/database-Table-listing-5.png)
 
-3. Execute the following statement to retrieve all order details in the AdventureWorks2019 database:
+1. Run the following statement to retrieve all order details in the AdventureWorks2019 database:
 
     ```sql
     Select SUM(OrderQty) SumOfOrderQty, P.Name, SOH.OrderDate

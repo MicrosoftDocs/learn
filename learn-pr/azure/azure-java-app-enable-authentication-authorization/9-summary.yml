@@ -2,14 +2,19 @@
 uid: learn.azure.azure-java-app-enable-authentication-authorization.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: Summary
-  ms.date: 06/11/2021
-  author: navyasric
-  ms.author: nacanuma
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/21/2023
+  author: KarlErickson
+  ms.author: karler
+  ms.reviewer: yoterada
+  ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
 durationInMinutes: 2
 content: |
   [!include[](includes/9-summary.md)]
+

@@ -2,16 +2,14 @@
 uid: learn.wwl.measure-performance-azure-cosmos-db-sql-api.exercise-use-azure-monitor-to-analyze-account
 title: 'Exercise: Use Azure Monitor to analyze an Azure Cosmos DB for NoSQL account'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Use Azure Monitor to analyze an Azure Cosmos DB for NoSQL account'
   description: "Exercise: Use Azure Monitor to analyze an Azure Cosmos DB for NoSQL account"
-  ms.date: 12/21/2022
+  ms.date: 10/28/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labId: 107593
-labModal: true
+  ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/6-exercise-use-azure-monitor-to-analyze-account.md)]

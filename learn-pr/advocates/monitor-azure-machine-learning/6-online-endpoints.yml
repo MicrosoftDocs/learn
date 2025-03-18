@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-machine-learning-monitoring.online-endpoints
+title: Online endpoints
+metadata:
+  title: Online endpoints
+  description: Learn how to monitor Azure Machine Learning online endpoints
+  ms.date: 03/15/2025
+  author: Orin-Thomas
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-online-endpoints.md)]

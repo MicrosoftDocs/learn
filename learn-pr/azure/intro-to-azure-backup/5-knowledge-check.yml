@@ -2,15 +2,16 @@
 uid: learn.azure.intro-to-azure-backup.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: "Azure Backup knowledge check"
   description: "Knowledge check questions for the Introduction to Azure Backup Module."
-  ms.prod: learning-azure
-  ms.date: 4/30/2021
+  ms.date: 10/03/2024
   author: gerryaobrien
-  ms.author: gerryo
-  ms.topic: interactive-tutorial
-durationInMinutes: 15 
+  ms.author: nitinme
+  ms.topic: unit
+durationInMinutes: 2
 content: |
 quiz:
   questions:
@@ -18,7 +19,7 @@ quiz:
     choices:
     - content: "Snapshot Tier"
       isCorrect: true
-      explanation: "Correct. The snapshots of the VM/Azure Files/Azure Blobs/and so on are retained in the customer's subscription itself in a specified resource group. This ensure restores are quick, because the backup/snapshot is available locally to the customer."
+      explanation: "Correct. The snapshots of the VM/Azure Files/Azure Blobs/and so on are retained in the customer's subscription itself in a specified resource group. This ensure restores are quick, because the backup/snapshot is available to the customer locally."
     - content: "Standard Tier"
       isCorrect: false
       explanation: "Incorrect. The Vault-Standard tier is an online storage tier that allows you to store an isolated copy of backup data in a Microsoft-managed tenant, thus creating an extra layer of protection."
@@ -48,3 +49,4 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. Recovery point objective (RPO) is concerned with the amount of time it takes for recovery operations."
  
+

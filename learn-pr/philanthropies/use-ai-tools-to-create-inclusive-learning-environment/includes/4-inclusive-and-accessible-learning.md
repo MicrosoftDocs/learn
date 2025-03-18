@@ -1,0 +1,22 @@
+In this video, you delve into an overview of how generative AI can support inclusive and accessible learning. You explore ways in which AI can support your ability to create dynamic and engaging learning environments that are accessible to all learners, regardless of their abilities or needs.
+
+> [!VIDEO https://go.microsoft.com/fwlink/?linkid=2281616]
+
+In the video, you witnessed firsthand how AI enhanced accessibility for learners. Now, you're about to explore the specific AI tools that are being employed to cater to the diverse needs of learners. These tools aren't just about providing assistance; they're about empowering every person to learn in ways that work best for them.
+
+## AI-powered inclusive and accessible learning
+
+To create an inclusive and accessible learning experience, trainers must consider how to differentiate and accommodate different learners' needs. Differentiation involves tailoring learning paths based on learners' readiness, interests, and profiles, while accommodation means adjusting learning environments to ensure accessibility for all learners, regardless of their abilities.
+
+AI assists learners by enabling them to access learning materials through tools such as speech-to-text transcription, text-to-speech technology, translation services, and image descriptions.
+
+Here are some ways in which AI can enrich our lives and revolutionize various industries:
+
+- **Transcribing speech**: With AI integrated into Microsoft Teams, you can now transcribe and caption meetings and calls. This feature benefits learners with hearing impairments, ADHD, or any individuals operating in noisy environments. For instance, a learner with ADHD can easily read the transcribed speech after a meeting, relieving the pressure to maintain focus in real-time.
+- **Reading content aloud**: Applications like Microsoft Outlook, Microsoft Edge, and Microsoft PowerPoint incorporate read-aloud functionality utilizing text-to-speech technology, allowing you to have content read aloud. For learners with visual impairments, Seeing AI can be used, which can transform text from printed or hand-written documents into speech. Read-aloud functionality benefits learners with visual impairments, ADHD, dyslexia, or autism, offering a seamless way to access information without hindrance.
+- **Translating communication**: Being in a learning environment with a diverse range of learners enriches the learning experience but may also present certain challenges to successful learning. Microsoft Translator is a comprehensive translation service that facilitates multilingual communication in formats such as speech-to-speech, text-to-speech, and optical character recognition (OCR). This service is designed to enable effective communication across different languages and formats within the Microsoft Teams or Microsoft Outlook platforms.
+- **Operating with voice commands**: You can take control of your devices easily with voice assistants in Microsoft products like Windows and Xbox. These products now use text-to-speech functionalities so that learners with physical limitations can use voice commands to control devices and access information and services conveniently.
+- **Describing images**: Microsoft Edge, Microsoft PowerPoint, and Seeing AI are software applications that utilize Azure Computer Vision capabilities. One of the functionalities offered is picture captioning, which facilitates the provision of descriptive text for images, enhancing accessibility for individuals with visual impairments, including blindness or low vision. Image descriptions provide the extra benefit of enhancing search engine optimization (SEO) and offering alternatives for individuals consuming content through auditory means or those experiencing limited bandwidth conditions. This AI-driven capability improves the overall user experience, cultivating inclusivity for everyone.
+- **Describing the environment**: Seeing AI can also support learners in acquiring a better understanding of their surroundings by providing audio information about the environment and people's emotions. Seeing AI enhances the accessibility of individuals with visual impairments, allowing them to be more involved throughout the learning experience.
+
+AI can substantially contribute to accessibility and inclusion—from personalized support to innovative communication solutions. Regardless of people's unique needs and circumstances, AI integration can drive a future where everyone can fully participate in the digital world.

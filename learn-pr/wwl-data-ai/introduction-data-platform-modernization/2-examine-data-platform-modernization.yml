@@ -2,13 +2,14 @@
 uid: learn.wwl.introduction-data-platform-modernization.examine-data-platform-modernization
 title: Examine data platform modernization
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Examine data platform modernization
   description: "Examine data platform modernization"
   ms.date: 04/14/2023
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

@@ -1,9 +1,9 @@
-Every IT team is obsessed with network security. It's mandatory to make sure that every device meets your security and business requirements before accessing your network. With Conditional Access, you can determine the following factors:
+Every IT team is obsessed with network security. It's mandatory to make sure that every device meets your security and business requirements before accessing your network. With Conditional Access, you can determine if:
 
-- If every device is encrypted
-- If malware is installed  
-- If its settings are updated
-- If it's jailbroken or rooted  
+- Every device is encrypted.
+- Malware is installed.
+- Its settings are updated.
+- It's jailbroken or rooted.
 
 Conditional Access combines granular control over organizational data with a user experience that maximizes worker productivity on any device from any location.
 

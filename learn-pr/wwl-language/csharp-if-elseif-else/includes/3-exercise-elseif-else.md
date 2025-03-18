@@ -1,4 +1,3 @@
-
 In the previous unit, you used multiple `if` statements to implement the rules of a game. However, at the end of the unit, you noticed that more expressive `if` statements are needed to fix a subtle bug in your code.
 
 In this exercise, you'll use `if`, `else`, and `else if` statements to improve the branching options in your code and fix a logic bug.
@@ -251,6 +250,8 @@ To make the game more fun, you can change the game from "win-or-lose" to awardin
             Console.WriteLine("You rolled doubles!  +2 bonus to total!");
             total += 2;
         }
+    
+        Console.WriteLine($"Your total including the bonus: {total}");
     }
     
     if (total >= 16)

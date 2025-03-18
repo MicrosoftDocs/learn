@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.wwl.design-dream-destination-ai-copilot
+metadata:
+  title: Design a dream destination using Microsoft Copilot
+  description: "Interact with Microsoft Copilot to learn about the capabilities of generative AI. Bring your personal creativity and passion to dream up a novel destination and create the content to help tell its story. Use Microsoft Copilot to ideate, research, and generate content. Use tips and techniques to write good prompts. Apply format and tone."
+  ms.date: 03/17/2025
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: module-guided-project
+  ms.collection: wwl-ai-copilot
+  ms.custom:
+  - copilot-learning-hub
+  - ai-learning-hub
+  ms.service: microsoft-copilot
+  ai-usage: ai-assisted
+title: Design a dream destination using Microsoft Copilot
+summary: Bring your personal creativity and passion to dream up a novel destination and create the content to help tell its story. Interact with Microsoft Copilot to learn about the capabilities of generative AI.&nbsp;
+abstract: |
+  In this module, learn how to:
+
+  -   Use Microsoft Copilot to ideate, research, and generate content
+
+  -   Use tips and techniques to write good prompts
+
+  -   Apply format and tone
+prerequisites: None
+iconUrl: /training/achievements/design-dream-destination-ai-copilot.svg
+levels:
+- beginner
+roles:
+- business-owner
+- business-user
+- higher-ed-educator
+- k-12-educator
+- parent-guardian
+- student
+products:
+- ms-copilot
+subjects:
+- artificial-intelligence
+units:
+- learn.wwl.design-dream-destination-ai-copilot.introduction
+- learn.wwl.design-dream-destination-ai-copilot.exercise-define-idea-set-context
+- learn.wwl.design-dream-destination-ai-copilot.exercise-create-hero-image
+- learn.wwl.design-dream-destination-ai-copilot.exercise-make-grand-entrance
+- learn.wwl.design-dream-destination-ai-copilot.exercise-brainstorm-destination-features
+- learn.wwl.design-dream-destination-ai-copilot.exercise-plan-menu
+- learn.wwl.design-dream-destination-ai-copilot.exercise-ideate-ambience-music
+- learn.wwl.design-dream-destination-ai-copilot.exercise-create-branding
+- learn.wwl.design-dream-destination-ai-copilot.knowledge-check
+- learn.wwl.design-dream-destination-ai-copilot.summary
+badge:
+  uid: learn.wwl.design-dream-destination-ai-copilot.badge

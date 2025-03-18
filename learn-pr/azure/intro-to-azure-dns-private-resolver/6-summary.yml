@@ -2,14 +2,15 @@
 uid: learn.intro-to-azure-dns-private-resolver.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
-  description: "Summary of Azure DNS Private Resolver and other reading"
-  ms.date: 03/17/2023
-  author: greg-lindsay
-  ms.author: greglin
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  description: Summary of Azure DNS Private Resolver and other reading.
+  ms.date: 01/31/2024
+  author: ricmmartins
+  ms.author: ricardomac
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]

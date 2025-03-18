@@ -49,7 +49,7 @@ To identify a class in CSS, you prefix a `.` in front of the name. In our exampl
 
 If using a CSS file, you would write the class style definition in the CSS file. The class attribute in HTML references the definition from the CSS file.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE5amMK]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=d6df02cb-e0bd-4e52-b75b-7c519d84c9e4]
 ### Pseudo-classes
 
 Pseudo-classes enable you to identify elements based on their location on a page or how the user is interacting with them.
@@ -81,7 +81,7 @@ Some of the most common pseudo-classes are listed in the following table:
 
 Similar to classes, an ID allows you to apply a style to an element. But, while a class can be applied to multiple elements, an ID must be unique and refer to only one element.
 
-On a resume, you might have a section for social media, such as Twitter, GitHub, or your blog. If you wanted a custom style for that section, you could set an ID:
+On a resume, you might have a section for social media, such as X, GitHub, or your blog. If you wanted a custom style for that section, you could set an ID:
 
 ```html
 <div id="social-media">

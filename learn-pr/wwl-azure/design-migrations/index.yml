@@ -1,27 +1,41 @@
 ### YamlMime:Module
 uid: learn.wwl.design-migrations
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design migrations
-  description: "Azure Architects design and recommend migration solutions."
-  ms.date: 02/16/2023
+  description: "Azure Architect's design and recommend migration solutions."
+  ms.date: 03/10/2025
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
 title: Design migrations
-summary: Azure Architects design and recommend migration solutions.
+summary: Azure Architect's design and recommend migration solutions.
 abstract: |
   In this module, you learn how to:
-  - Evaluate migration with the Microsoft Cloud Adoption Framework for Azure
-  - Describe the Azure Migration and Modernization Program (Azure Migration Framework)
-  - Assess your on-premises workloads
-  - Select a migration tool
-  - Migrate your databases
-  - Select an online storage migration tool
-  - Migrate offline data
+
+  -   Evaluate migration with the Microsoft Cloud Adoption Framework for Azure
+
+  -   Describe the Azure Migration and Modernization Program (Azure Migration Framework)
+
+  -   Assess your on-premises workloads
+
+  -   Select a migration tool
+
+  -   Migrate your databases
+
+  -   Select an online storage migration tool
+
+  -   Migrate offline data
 prerequisites: |
-  - Conceptual knowledge of migrating compute, database, and storage workloads
-  - Working experience with planning migrations, assessing workloads, determining migration requirements, and deploying workloads
+  -   Conceptual knowledge of migrating compute, database, and storage workloads
+
+  -   Working experience with planning migrations, assessing workloads, determining migration requirements, and deploying workloads
 iconUrl: /training/achievements/design-migration.svg
 levels:
 - advanced

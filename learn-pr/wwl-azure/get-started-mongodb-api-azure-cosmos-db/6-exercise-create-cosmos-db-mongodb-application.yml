@@ -2,17 +2,19 @@
 uid: learn.wwl.get-started-mongodb-api-azure-cosmos-db.exercise-create-mongodb-db-app-use-api-for-mongodb
 title: Exercise - Create a MongoDB DB app using the Azure Cosmos DB for MongoDB
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create a MongoDB DB app using the Azure Cosmos DB for MongoDB
   description: "Exercise - Create a MongoDB DB app using the Azure Cosmos DB for MongoDB"
-  ms.date: 02/06/2023
+  ms.date: 12/09/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: N/A, devx-track-azurecli, devx-track-extended-java, devx-track-js, devx-track-python
   zone_pivot_groups: dev-lang-csharp-java-node-python
 azureSandbox: true
-labModal: false
 durationInMinutes: 35
 content: |
   [!include[](includes/6-exercise-create-cosmos-db-mongodb-application.md)]
 interactive: bash
+

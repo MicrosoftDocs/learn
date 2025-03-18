@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.wwl.purview-implement-manage-dlp-retention
+metadata:
+  title: 'Implement data loss prevention and retention (SC-401)'
+  description: 'Organizations need to prevent data loss and manage data retention to ensure security and compliance. Microsoft Purview provides DLP policies to protect sensitive information and retention policies to govern data lifecycle. Learn how to design, configure, and monitor these protections across cloud and endpoint environments. This learning path aligns with exam SC-401: Microsoft Information Security Administrator.'
+  ms.date: 03/14/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: learning-path
+title: 'Implement data loss prevention and retention'
+prerequisites: |
+  - Foundational knowledge of Microsoft security and compliance technologies
+  - Basic knowledge of information protection concepts
+summary: |
+  Organizations must prevent data loss and ensure compliance by implementing effective policies for retention and protection. Microsoft Purview provides data loss prevention (DLP) to safeguard sensitive information across cloud and endpoint environments and retention policies to manage data lifecycle and compliance. Learn how to design and configure DLP policies, monitor endpoint activities, and implement retention strategies to protect and govern organizational data.
+iconUrl: /training/achievements/implement-data-loss-prevention.svg
+levels:
+- intermediate
+roles:
+- auditor
+- administrator
+- ip-admin
+products:
+- microsoft-purview
+subjects:
+- security
+modules:
+- learn-m365.m365-compliance-information-prevent-data-loss
+- learn-m365.purview-implement-endpoint-dlp
+- learn.wwl.create-configure-data-loss-prevention-policies
+- learn.wwl.purview-implement-manage-retention
+
+trophy:
+  uid: learn.wwl.purview-implement-manage-dlp-retention.trophy

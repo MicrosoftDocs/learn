@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.use-compliance-frameworks-and-secure-data-sharing
+title: Use compliance frameworks and secure data sharing in Azure Databricks
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Use compliance frameworks and secure data sharing in Azure Databricks
+  description: "Work with tools that allow for compliance with oversight sources and secure data sharing across systems."
+  ms.date: 08/14/2024
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/05-use-compliance-frameworks-and-secure-data-sharing.md)]

@@ -21,7 +21,7 @@ The following image shows the difference in size and form between the Xbox Adapt
 >
 > One major success of the Xbox Adaptive Controller is its intentional design that makes it look like a true Xbox product. Creating accessible gaming products that are usable and also desirable is another major opportunity to be tackled in this space.
 
-The contrast between these two design approaches can make the task of creating accessible standard hardware devices seem overwhelming. It might not be possible to meet the needs of all players with a single, standard controller, console, or headset. However, the best practices discussed in this module can be generally applied to all hardware devices.
+The contrast between these two design approaches can make the task of creating accessible standard hardware devices seem overwhelming. It might not be possible to meet the needs of all players with a single, standard controller, console, or headset. However, the best practices discussed in this module can usually be applied to all hardware devices.
 
 This application can provide more accessible experiences for players with disabilities as they perform basic setup tasks like:
 

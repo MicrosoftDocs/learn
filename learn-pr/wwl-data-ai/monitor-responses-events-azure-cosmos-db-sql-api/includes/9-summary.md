@@ -1,4 +1,4 @@
-In this module, you learned how to monitor and alert on response events using the Azure Cosmos DB SQL API.
+In this module, you learned how to monitor and alert on response events using the Azure Cosmos DB for NoSQL.
 
 Now that you have completed this module, you can:
 
@@ -23,7 +23,7 @@ For more information about the topics discussed in this module, see:
 - [Query Documents][/rest/api/cosmos-db/query-documents]
 - [HTTP Status Codes for Azure Cosmos DB][/rest/api/cosmos-db/http-status-codes-for-cosmosdb]
 - [Diagnose and troubleshoot Azure Cosmos DB service unavailable exceptions][/azure/cosmos-db/sql/troubleshoot-service-unavailable]
-- [Azure Cosmos DB SQL SDK connectivity modes][/azure/cosmos-db/sql/sql-sdk-connection-modes]
+- [Azure Cosmos DB for NoSQL SDK connectivity modes][/azure/cosmos-db/sql/sql-sdk-connection-modes]
 - [Diagnose and troubleshoot Azure Cosmos DB .NET SDK request timeout exceptions][/azure/cosmos-db/sql/troubleshoot-dot-net-sdk-request-timeout]
 - [Diagnose and troubleshoot Azure Cosmos DB request rate too large (429) exceptions][/azure/cosmos-db/sql/troubleshoot-request-rate-too-large]
 - [Create alerts for Azure Cosmos DB using Azure Monitor][/azure/cosmos-db/create-alerts]

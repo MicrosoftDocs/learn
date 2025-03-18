@@ -6,9 +6,11 @@ metadata:
   description: Learn how to use the Visual Studio Code debugger with .NET programs.
   author: jongalloway
   ms.author: jogallow
-  ms.date: 10/28/2020
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.date: 10/12/2023
+  ms.topic: unit
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 20
 content: |
   [!include[](includes/4-use-visual-studio-code-debugger.md)]

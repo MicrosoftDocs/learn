@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.responsible-ai-content-safety.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduce responsible use of AI with Azure AI Content Safety.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 10/17/2024
+  ms.topic: unit
+  ms.collection:
+    - learn.wwl.responsible-ai-content-safety
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

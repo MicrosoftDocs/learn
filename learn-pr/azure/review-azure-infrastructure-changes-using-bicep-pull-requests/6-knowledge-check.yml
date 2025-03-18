@@ -2,14 +2,17 @@
 uid: learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check.
-  ms.date: 02/28/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/31/2025
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
   zone_pivot_groups: repository-hosting-platform
 durationInMinutes: 3
 content: |
@@ -49,3 +52,4 @@ quiz:
     - content: Approve the pull request. The author will notice the problem when they deploy the Bicep file.
       isCorrect: false
       explanation: Incorrect. The pull request process is designed to stop these kinds of issues before changes are merged.
+

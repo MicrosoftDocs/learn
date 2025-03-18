@@ -1,16 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-files-file-sync.manage-file-shares
-title: Manage Azure Files shares
+title: Manage Azure file shares
 metadata:
-  title: Manage Azure Files shares
-  description: "Manage Azure Files shares"
-  ms.date: 03/30/2023
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Manage Azure file shares
+  description: "Manage Azure file shares"
+  ms.date: 01/10/2025
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
 content: |
   [!include[](includes/3-manage-file-shares.md)]

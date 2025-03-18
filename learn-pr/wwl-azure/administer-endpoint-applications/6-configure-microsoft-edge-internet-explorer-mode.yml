@@ -4,10 +4,12 @@ title: Configure Microsoft Edge Internet Explorer mode
 metadata:
   title: Configure Microsoft Edge Internet Explorer mode
   description: "Configure Microsoft Edge Internet Explorer mode"
-  ms.date: 03/16/2023
+  ms.date: 09/29/2023
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/6-configure-microsoft-edge-internet-explorer-mode.md)]

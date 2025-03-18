@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-application-resiliency-azure.introduction-to-application-resiliency-in-azure
+title: Introduction to application resiliency in Azure
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Introduction to application resiliency in Azure
+  description: Introduction to application resiliency in Azure
+  ms.date: 08/14/2024
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction-to-application-resiliency-in-azure.md)]
+

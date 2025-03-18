@@ -1,4 +1,4 @@
-You can run many different kinds of application on Spark, including code in Python or Scala scripts, Java code compiled as a Java Archive (JAR), and others. Spark is commonly used in two kinds of workload:
+You can run many different kinds of applications on Spark, including code in Python or Scala scripts, Java code compiled as a Java Archive (JAR), and others. Spark is commonly used in two kinds of workloads:
 
 - Batch or stream processing jobs to ingest, clean, and transform data - often running as part of an automated pipeline.
 - Interactive analytics sessions to explore, analyze, and visualize data.
@@ -9,7 +9,6 @@ Azure Databricks includes an integrated notebook interface for working with Spar
 
 ![A screenshot of a notebook in Azure Databricks.](../media/azure-databricks-notebook.png)
 
-
 Notebooks consist of one or more *cells*, each containing either code or markdown. Code cells in notebooks have some features that can help you be more productive, including:
 
 - Syntax highlighting and error support.
@@ -18,5 +17,5 @@ Notebooks consist of one or more *cells*, each containing either code or markdow
 - The ability to export results.
 
 > [!TIP]
-> To learn more about working with notebooks in Azure Databricks, see the [Notebooks](/azure/databricks/notebooks/) article in the Azure Databricks documentation.
+> For more information about working with notebooks in Azure Databricks, see the **[Notebooks](/azure/databricks/notebooks/)** article in the Azure Databricks documentation.
 

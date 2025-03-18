@@ -2,13 +2,14 @@
 uid: learn.wwl.introduction-open-source-database-migration-azure.mysql-postgresql-database-services-azure
 title: MySQL and PostgreSQL database services in Azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: MySQL and PostgreSQL database services in Azure
   description: "MySQL and PostgreSQL database services in Azure"
   ms.date: 11/07/2022
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 10

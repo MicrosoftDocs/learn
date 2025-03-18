@@ -1,13 +1,11 @@
-
-
-Contoso IT operations has invested in numerous Windows Server licenses for their on-premises servers. They would like to repurpose these licenses on Azure. The *Azure Hybrid Benefit* offer enables Contoso to use these licenses for the VMs they create on Azure.
+Contoso IT operations have invested in numerous Windows Server licenses for their on-premises servers. They would like to repurpose these licenses on Azure. The *Azure Hybrid Benefit* offer enables Contoso to use these licenses for the VMs they create on Azure.
 
 > [!NOTE]
 > To be eligible for this offer, your Windows licenses must be covered by Software Assurance.
 
 ## Azure Hybrid Benefit for Windows Server
 
-Azure Hybrid Benefit is a pricing offer that'll help to maximize the value of your existing on-premises Windows Server license investment while you’re migrating to Azure. When you want to implement Azure Hybrid Benefit, the following guidelines apply:
+Azure Hybrid Benefit is a pricing offer that helps to maximize the value of your existing on-premises Windows Server license investment while you’re migrating to Azure. When you want to implement Azure Hybrid Benefit, the following guidelines apply:
 
 - Each two-processor license or each set of 16-core licenses is entitled to two instances of up to 8 cores or one instance of up to 16 cores.
 - You can only use Standard Edition licenses either on-premises or in Azure, but not both. This means you can't use the same license for an Azure VM and an on-premises server.
@@ -23,8 +21,6 @@ Applying the benefit is easy. When you create a VM, you can specify the licensin
 
 > [!NOTE]
 > You can also use PowerShell or Azure CLI to complete this task.
-
-![A screenshot of the Create a virtual machine blade in the Azure portal. The administrator has selected Yes for the Already have a Windows Server license option. ](../media/m21-hybrid-license.png)
 
 You can also change the licensing option for an existing VM. For example, to convert existing Windows Server VMs to Azure Hybrid Benefit for Windows Server, run the following PowerShell command:
 

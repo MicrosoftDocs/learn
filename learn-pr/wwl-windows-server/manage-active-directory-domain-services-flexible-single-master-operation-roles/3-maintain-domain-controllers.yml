@@ -4,10 +4,10 @@ title: Maintain AD DS domain controllers
 metadata:
   title: Maintain AD DS domain controllers
   description: "Maintain AD DS domain controllers"
-  ms.date: 01/05/2023
+  ms.date: 01/10/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 8

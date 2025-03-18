@@ -1,16 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.monitor-maintain-azure-active-directory.review-monitory-azure-ad-audit-logs
-title: Review and monitor Azure Active Directory audit logs
+title: Review and monitor Microsoft Entra audit logs
 metadata:
-  title: Review and monitor Azure Active Directory audit logs
-  description: "Review and monitor Azure Active Directory audit logs"
-  ms.date: 02/16/2023
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Review and monitor Microsoft Entra audit logs
+  description: "Review and monitor Microsoft Entra audit logs"
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: roberts
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/3-review-monitor-azure-active-directory-audit-logs.md)]

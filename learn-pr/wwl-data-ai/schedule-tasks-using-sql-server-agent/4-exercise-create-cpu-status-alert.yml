@@ -2,13 +2,14 @@
 uid: learn.wwl.schedule-tasks-using-sql-server-agent.exercise-create-cpu-status-alert
 title: 'Exercise: Create a CPU status alert for a SQL Server'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Create a CPU status alert for a SQL Server'
   description: "Exercise: Create a CPU status alert for a SQL Server"
-  ms.date: 05/11/2022
-  author: wwlpublish
+  ms.date: 02/26/2025
+  author: JulianePadrao
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labId: 120595
 labModal: true

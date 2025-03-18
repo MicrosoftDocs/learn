@@ -2,15 +2,16 @@
 uid: learn.wwl.describe-cloud-compute.define-cloud-models
 title: Define cloud models
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Define cloud models
   description: "Define cloud models"
-  ms.date: 01/24/2023
+  ms.date: 12/12/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/5-define-cloud-models.md)]

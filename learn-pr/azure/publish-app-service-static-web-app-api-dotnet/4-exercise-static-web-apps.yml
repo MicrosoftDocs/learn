@@ -1,13 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.publish-static-web-app-and-api-dotnet.4-exercise-static-web-apps
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create an Azure Static Web App
   description: Exercise - Create an Azure Static Web App
-  ms.date: 01/06/2023
+  ms.date: 03/04/2025
   author: aaronpowell
   ms.author: aapowell
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.manager: markl
+  ms.topic: unit
   ms.custom:
   - team=cloud_advocates
   ms.contributors:
@@ -17,3 +19,4 @@ title: Exercise - Create an Azure Static Web App
 durationInMinutes: 5
 content: |
   [!include[](includes/4-exercise-static-web-apps.md)]
+

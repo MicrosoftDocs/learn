@@ -1,18 +1,18 @@
-The last step in the process of "how games are played" is related to game input. After players have decided on the action they want to take, they generally must provide physical input to their gaming device. In many game scenarios, this physical input must be provided with speed and accuracy over a prolonged period of time to be successful. If a player can't accomplish these tasks, they might be blocked from progressing in a game.
+The last step in the process of "how games are played" is related to game input. After players decide on the action they want to take, they generally must provide physical input to their gaming device. In many game scenarios, this physical input must be provided with speed and accuracy over a prolonged period of time to be successful. If a player can't accomplish these tasks, they might be blocked from progressing in a game.
 
-In this unit, you'll learn about common input mechanics in games that might pose barriers for players with mobility-related disabilities.
+In this unit, learn about common input mechanics in games that might pose barriers for players with mobility-related disabilities.
 
 ## Input and gaming
 
 Completing game tasks typically requires players to move their fingers with speed, precision, and coordination as they interact with physical input devices. These experiences can introduce unintentional barriers for players with physical disabilities when:
 
 - Platforms or game titles only support a specific type of input device that some players can't physically use.
-- Challenging mechanics like rapidly pressing buttons, pressing multiple buttons at once, or holding buttons down are required actions to progress in game play.
+- Games require challenging mechanics like rapidly pressing buttons, pressing multiple buttons at once, or holding buttons down are required actions to progress in game play.
 - Players must be able to activate many different inputs to engage in basic play.
 
-In the following video, you'll learn to identify common input-based elements that can pose unintentional barriers to access for players when proper accessible supports and features aren't provided.
+In the following video, learn how to identify common input-based elements that can pose unintentional barriers to access for players when proper accessible supports and features aren't provided.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWQhCj]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f4ce3c5c-2b01-4b19-b320-7b7dd4191d54]
 
 ## Mobility and disability
 
@@ -27,9 +27,9 @@ Mobility-related disabilities can affect any combination of a player’s strengt
 
 ### Strength and gaming
 
-Players must be able to operate the input devices that are supported by their desired platforms and games. For players with disabilities that affect strength, physical actions like pressing a key on a keyboard, moving a mouse, or holding the weight of a standard controller during play can be difficult.
+Players must be able to operate the input devices that their platforms and games support. For players with disabilities that affect strength, physical actions during play can be difficult. For example, pressing a key on a keyboard, moving a mouse, or holding the weight of a standard controller.
 
-As a result, these players might avoid the use of standard devices like mice, keyboards, and controllers altogether. Instead, they might use assistive technology devices in place of standard input devices. These devices typically include buttons and analog controls that require less force to activate than standard devices. These devices can also support the use of larger buttons that can be activated by the head, foot, elbow, or other larger body parts
+As a result, these players might avoid the use of standard devices like mice, keyboards, and controllers altogether. Instead, they might use assistive technology devices in place of standard input devices. These devices typically include buttons and analog controls that require less force to activate than standard devices. These devices can also support the use of larger buttons that the head, foot, elbow, or other larger body parts can activate.
 
 When you approach accessible input solutions, consider the following settings and supports:
 
@@ -59,6 +59,6 @@ Endurance typically refers to how long someone can engage in an activity before 
 
 Common game mechanics that tend to introduce fatigue include quick, repetitive button presses and holding buttons for prolonged periods. Approaches to support these players include providing them with the ability to:
 
-- Change input demands from button holds to button presses.
+- Change the input demands from button holds to button presses.
 - Allow players to pause a game or initiate game saves at any point in time.
-- Provide toggle-based settings like auto-fire and auto-run.
+- Provide toggle-based settings like autofire and autorun.

@@ -34,4 +34,4 @@ Cybersecurity refers to technologies, processes, and training that help protect 
 - **Integrity**: Information should only be changed by the right people or processes.
 - **Availability**: Information should be visible and accessible whenever needed.
 
-This is commonly referred to as the *Confidentiality, Integrity, Availability* (CIA) model in the context of cybersecurity.  Throughout the rest of this module, you'll learn about the types of attacks that cybercriminals use to disrupt these goals, and cause harm. You'll also see some basic threat mitigation strategies.
+This is commonly referred to as the *Confidentiality, Integrity, Availability* (CIA) model in the context of cybersecurity. Throughout the rest of this module, you'll learn about the types of attacks that cybercriminals use to disrupt these goals, and cause harm. You'll also see some basic threat mitigation strategies.

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-design-object-oriented-structure.exercise-add-game-buffer
+title: Exercise - Add game buffer exception handling
+metadata:
+  title: Exercise - Add game buffer exception handling
+  description: "This unit describes exception handling for the game buffer"
+  ms.date: 09/11/2024
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 15
+content: |
+  [!include[](includes/06-exercise-add-game-buffer.md)]

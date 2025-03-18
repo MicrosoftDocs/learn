@@ -6,7 +6,7 @@ Just like in SQL Server 2017 and SQL Server 2019, SQL Server 2022 can be deploye
 
 SQL Server 2022 is supported on Windows 10, Windows 11, and Windows Server. SQL Server 2022 for Linux is supported on Red Hat Enterprise Linux 8.0 - 8.5 Server, SUSE Enterprise Linux Server v15, and Ubuntu 20.04 LTS.
 
-You can deploy SQL Server using the same methods as in previous versions, such as the Windows Graphical setup wizard, command line options, Linux package managers, and container runtime engines, such as Docker. SQL Server 2022 is also available through Azure Virtual Machine marketplace images.
+You can deploy SQL Server using the same methods as in previous versions, such as the Windows graphical setup wizard, command line options, Linux package managers, and container runtime engines, such as Docker. SQL Server 2022 is also available through Azure Virtual Machine marketplace images.
 
 ## Editions for SQL Server 2022
 
@@ -28,7 +28,7 @@ For more information, and a list of all the capabilities for each edition, see o
 
 ## Licensing for SQL Server 2022
 
-SQL Server 2022 paid editions are licensed on individual instances using models like per core or with contract agreements such as Software Assurance (SA). SQL Server 2022 offers a new licensing model called Pay-as-you-go (PAYG). Learn more about all the licensing options for SQL Server 2022 at [SQL Server licensing](https://aka.ms/sqlserver2022licensing).
+SQL Server 2022 paid editions are licensed on individual instances using models like per core, or with contract agreements such as Software Assurance (SA). SQL Server 2022 offers a new licensing model called Pay-as-you-go (PAYG). Learn more about all the licensing options for SQL Server 2022 at [SQL Server licensing](https://aka.ms/sqlserver2022licensing).
 
 ## Feature differences for SQL Server 2022 from previous releases
 
@@ -40,7 +40,7 @@ In future units, you'll learn about all the new features and capabilities in SQL
 - Data virtualization
 - Transact-SQL (T-SQL) enhancements
 
-Some of the differences for features that have been removed, deprecated, or enhanced from SQL Server in SQL Server 2022 from a perspective of deployment is listed below.
+Some of the differences for features that have been removed, deprecated, or enhanced from SQL Server in SQL Server 2022 from a perspective of deployment are listed below.
 
 > [!TIP]
 > Stay up to date with all the latest release notes at [SQL Server 2022 release notes](https://aka.ms/sqlserver2022releasenotes).
@@ -57,10 +57,10 @@ The following features have been removed from SQL Server 2022 that were availabl
 
 - Machine Learning Server - Machine Learning Server was retired in July of 2022. Therefore, the Machine Learning Server feature has been removed from the SQL Server setup.
 
-- Distributed Replay - Distributed Reply is no longer available to configure with the setup for SQL Server 2022 on Windows.
+- Distributed Replay - Distributed Replay is no longer available to configure with the setup for SQL Server 2022 on Windows.
 
 - Stretch Database - Stretch Database is deprecated in SQL Server 2022. This feature will be removed in a future version of Microsoft SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature.
 
 ### New deployment experiences in SQL Server 2022
 
-In SQL Server 2022, the Azure extension for SQL Server configuration is part of the SQL Server 2022 setup experience. The Azure extension for SQL Server can be used to configure SQL Server 2022 as an Azure Arc-enabled SQL Server. There's no subscription charge to set up an Azure Arc-enabled SQL Server. You only incur subscription charges when you use specific Azure services such as Azure Active Directory (Azure AD) authentication, Microsoft Purview, or Microsoft Defender for SQL.
+In SQL Server 2022, the Azure extension for SQL Server configuration is part of the SQL Server 2022 setup experience. The Azure extension for SQL Server can be used to configure SQL Server 2022 as an Azure Arc-enabled SQL Server. There's no subscription charge to set up an Azure Arc-enabled SQL Server. You only incur subscription charges when you use specific Azure services such as Microsoft Entra authentication, Microsoft Purview, or Microsoft Defender for SQL.

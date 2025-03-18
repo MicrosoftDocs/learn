@@ -2,13 +2,15 @@
 uid: learn.startups.fundraising.investor-types
 title: Different types of investors
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Different types of investors
   description: Find out how to raise money from investors for your startup. Understand the tradeoffs between gaining funding and giving up some control of your business.
-  ms.date: 02/11/2022
-  author: ryanmesches
-  ms.author: ryanmesches
-  ms.topic: interactive-tutorial
-  ms.prod: learning-consumer
+  ms.date: 06/17/2024
+  author: vhawk85
+  ms.author: vahughes
+  ms.topic: unit
+  ms.collection: learn-startups
 durationInMinutes: 5
 content: |
   [!include[](includes/3-investor-types.md)]

@@ -4,11 +4,10 @@ title: Accessibility and standard device development
 metadata:
   title: Determine the role of accessible design for standard hardware devices
   description: This content is part of the accessibility best practices for gaming hardware module.
-  ms.date: 11/02/2021
+  ms.date: 04/30/2023
   author: kaitlynjones
   ms.author: kaitlynjones
-  ms.topic: interactive-tutorial
-  ms.prod: learning-hardware-devices
+  ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/01-standard-devices.md)]

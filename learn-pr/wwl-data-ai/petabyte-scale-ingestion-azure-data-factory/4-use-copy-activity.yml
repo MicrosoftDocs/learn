@@ -2,15 +2,17 @@
 uid: learn.wwl.petabyte-scale-ingestion-azure-data-factory.use-copy-activity
 title: Exercise - Use the data factory copy activity
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Use the data factory copy activity
   description: "Exercise - Use the data factory copy activity"
   ms.date: 01/05/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/4-use-copy-activity.md)]
+

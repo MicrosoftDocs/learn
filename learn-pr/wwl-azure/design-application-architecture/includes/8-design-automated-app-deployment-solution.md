@@ -1,4 +1,4 @@
-With the move to the cloud, many teams have adopted agile development methods. These teams must iterate quickly and repeatedly deploy their solutions to the cloud. Teams must be assured their infrastructure is in a reliable state. Application code must be managed through a unified process.
+With the move to the cloud, many teams adopt agile development methods. These teams must iterate quickly and repeatedly deploy their solutions to the cloud. Teams must be assured their infrastructure is in a reliable state. Application code must be managed through a unified process.
 
 To meet these challenges in your design for Tailwind Traders, you're investigating how to automate deployments by using the practice of [infrastructure as code](/devops/deliver/what-is-infrastructure-as-code). Let's explore two Azure solutions for deployment and automation of your applications: Azure Resource Manager templates and Azure Automation. 
 
@@ -12,29 +12,29 @@ There are many benefits to using ARM templates for your resource provisioning. A
 
 - When an ARM template deployment is submitted to Azure Resource Manager, the resources in the ARM template are deployed in parallel. This orchestration feature process allows deployments to finish faster.
 
-- The `WhatIf` parameter available in PowerShell and the Azure CLI allows you to preview changes to your environment before deploying the ARM template. This parameter details any creations, modifications, and deletions that will be made by your template.
+- The `WhatIf` parameter available in PowerShell and the Azure CLI allows you to preview changes to your environment before deploying the ARM template. This parameter details any creations, modifications, and deletions made by the template.
 
 - ARM templates submitted to Resource Manager are validated before the deployment process. This validation alerts you to any errors in your template before resource provisioning.
 
 - You can break up your ARM templates into smaller components and link them together at deployment.
 
-- Your ARM templates can be integrated into multiple CI/CD tools like Azure DevOps and GitHub Actions.
+- Your ARM templates can be integrated into multiple CI/CD tools like Azure Pipelines and GitHub Actions.
 
 - With deployment scripts, you can run Bash or PowerShell scripts from within your ARM templates. Through extensibility, you can use a single template to deploy a complete solution.
 
 #### ARM template formats
 
-There are two formats available for ARM templates and Azure resource deployments, JSON and Bicep. JavaScript Object Notation (JSON) is an open-standard file format that multiple languages can use. Bicep is a new domain-specific language that was recently developed for authoring templates by using an easier syntax. You can use the Bicep CLI to decompile any JSON template into a Bicep template.
+There are two formats available for ARM templates and Azure resource deployments, JSON and Bicep. JavaScript Object Notation (JSON) is an open-standard file format that multiple languages can use. Bicep is a domain-specific language that was recently developed for authoring templates by using an easier syntax. You can use the Bicep CLI to decompile any JSON template into a Bicep template.
 
 ### Things to know about Azure Bicep templates
 
-[Bicep](/azure/azure-resource-manager/bicep/overview) is an ARM template language that's used to declaratively deploy Azure resources. Bicep is a domain-specific language, which means that it's designed for a specific scenario or domain. Bicep is used to create ARM templates. 
+[Bicep](/azure/azure-resource-manager/bicep/overview) is an ARM template language that's used to declaratively deploy Azure resources. Bicep is a domain-specific language designed for a specific scenario or domain. Bicep is used to create ARM templates. 
 
 :::image type="content" source="../media/bicep-to-json.png" alt-text="Illustration that shows the process of authoring with a Bicep ARM template via a JSON ARM template to Azure." border="false":::
 
 There are many reasons to choose Bicep as the main tool set for your infrastructure as code deployments.
 
-- Bicep is native to the Azure ecosystem. When new Azure resources are released or updated, Bicep will support those features on day one.
+- Bicep is native to the Azure ecosystem. When new Azure resources are released or updated, Bicep supports those features on day one.
 
 - JSON and Bicep templates are fully integrated within the Azure platform. With Resource Manager-based deployments, you can monitor the progress of your deployment in the Azure portal.
 

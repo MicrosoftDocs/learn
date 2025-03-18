@@ -1,13 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-azure-paas-resources-using-automated-methods
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage Azure PaaS tasks using automation
-  description: "Manage Azure PaaS tasks using automation"
-  ms.date: 06/10/2022
-  author: wwlpublish
+  description: Manage Azure PaaS tasks using automation
+  ms.date: 02/27/2025
+  author: JulianePadrao
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Manage Azure PaaS tasks using automation
 summary: Explore automation for Azure SQL platform. Configure elastic jobs, explore Azure Automation, and evaluate different strategies for monitoring automation tasks.
 abstract: |
@@ -35,7 +37,7 @@ products:
 subjects:
 - cloud-computing
 - data-engineering
-- database
+- databases
 units:
 - learn.wwl.manage-azure-paas-resources-using-automated-methods.introduction
 - learn.wwl.manage-azure-paas-resources-using-automated-methods.explore-elastic-jobs
@@ -48,3 +50,4 @@ units:
 - learn.wwl.manage-azure-paas-resources-using-automated-methods.summary
 badge:
   uid: learn.wwl.manage-azure-paas-resources-using-automated-methods.badge
+

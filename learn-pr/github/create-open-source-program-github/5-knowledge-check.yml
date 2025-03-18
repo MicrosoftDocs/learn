@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check what you've learned.
-  ms.date: 06/26/2020
+  ms.date: 09/20/2024
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -17,16 +16,16 @@ quiz:
   questions:
     - content: "Which project is the best candidate for an open-source program?"
       choices:
-        - content: "The custom BizTalk 2004 adapter that connects your legacy warehouse database management software with a proprietary in-house supply chain system."
+        - content: "The custom BizTalk 2004 adapter that connects your legacy warehouse database-management software with a proprietary in-house supply-chain system."
           isCorrect: false
-          explanation: "This project would likely offer little value to the open-source community because it's specifically tailored for your company's unique internal systems."
-        - content: "Your company's flagship AI service that is highly regarded and produces most of your company's revenue."
+          explanation: "This project would likely offer little value to the open-source community, because it's specifically tailored for your company's unique internal systems."
+        - content: "Your company's flagship AI service that's highly regarded and produces most of your company's revenue."
           isCorrect: false
           explanation: "The intellectual property of this service is extremely valuable and almost surely should not be opened to the general public."
-        - content: "A client library used by customers to consume your company's services."
+        - content: "A client library customers use to consume your company's services."
           isCorrect: true
-          explanation: "As this software is designed to be used by customers, open-sourcing it could provide a great way to attract community participation."
-    - content: "Suppose your organization has decided to open-source a project. What is a good reason for your team to decide **not** to go through with it?"
+          explanation: "Because this software is designed for customer use, open-sourcing it could provide a great way to attract community participation."
+    - content: "Suppose your organization has decided to open-source a project. What's a good reason for your team to decide **not** to go through with it?"
       choices:
         - content: "You don't want outsiders judging the code your team has written."
           isCorrect: false
@@ -47,15 +46,15 @@ quiz:
           explanation: "This file is the landing page for your project and the first thing potential contributors see when they visit the repository. It's essential because it explains the project and attracts support."
         - content: "`LICENSE`"
           isCorrect: false
-          explanation: "Not having a license can discourage participation because contributors may not be able to use your project to begin with. Having an explicit license makes it easier for them to clear usage and contribution."
+          explanation: "Not having a license can discourage participation because contributors might not be able to use your project to begin with. Having an explicit license makes it easier for them to clear usage and contribution."
     - content: "How can you check how your project compares to community standards?"
       choices:
         - content: "Sending polls through your project's mailing list."
           isCorrect: false
-          explanation: "This might give you opinions about your community but not check for community widely adopted best practices."
+          explanation: "This might give you opinions about your community, but it doesn't check for the community's widely adopted best practices."
         - content: "Starting a discussion for your community in GitHub discussions."
           isCorrect: false
           explanation: "You should use GitHub discussions to establish open dialogues with your team and communities."
-        - content: "Go to Insights>Community in your repository's main page."
+        - content: "Go to **Insights** > **Community** in your repository's main page."
           isCorrect: true
-          explanation: "By checking your community insights you can get a better idea on what you can improve to make your project more welcoming to your community."
+          explanation: "By checking your community insights, you can get a better idea on what you can improve to make your project more welcoming to your community."

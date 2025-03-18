@@ -12,5 +12,5 @@ In this exercise, you will:
 
 Follow these instructions to complete the exercise:
 
-1. Open the exercise instructions at [https://aka.ms/mslearn-dp090](https://aka.ms/mslearn-dp090?azure-portal=true).
+1. Open the exercise instructions at [https://learn.microsoft.com/training/paths/deploy-consume-models-azure-machine-learning/](/training/paths/deploy-consume-models-azure-machine-learning/).
 2. Complete the **Deploying Models in Azure Machine Learning** exercises.

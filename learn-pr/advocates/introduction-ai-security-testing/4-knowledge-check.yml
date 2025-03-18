@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-ai-security-testing.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description:  Display your knowledge
+  ms.author: sayoung
+  author: sarah-yo
+  ms.date: 09/01/2024  
+  ms.topic: unit
+durationInMinutes: 3
+content: Choose the best response for each question. 
+quiz:
+  questions:
+    - content: "Which if the following is a flavor of AI red teaming?"
+      choices:
+        - content: "Full stack testing."
+          isCorrect: true
+          explanation: "Full-stack testing is a flavor of AI red teaming. This tests the underlying infrastructure."
+        - content: "Layer 7 testing."
+          isCorrect: false
+          explanation: "Layer 7 is the application layer of the OSI model but isn't related to AI red teaming."
+        - content: "Model testing."
+          isCorrect: false
+          explanation: "Model testing isn't one of the three flavors or categories of AI red teaming."
+    - content: "You're testing an AI system. The testing you're doing involves testing multiple different types of prompts and assessing the responses from the AI application. What kind of AI red teaming is this?"
+      choices:
+        - content: "Full stack"
+          isCorrect: false
+          explanation: "full stack testing involves probing for security harms across the entire AI system rather than manipulating prompts."
+        - content: "Adversarial ML"
+          isCorrect: false
+          explanation: "Adversarial ML involves studying ML model attacks to identify weak points and defend against malicious inputs rather than manipulating prompts."
+        - content: "Prompt injection."
+          isCorrect: true
+          explanation: "Prompt injection attempts to exploit LLMs by injecting carefully crafted prompts."
+    - content: "Which of the following should be tested as part of AI red teaming?"
+      choices:
+        - content: "Base LLM and application."
+          isCorrect: true
+          explanation: "AI red teaming involves testing both the base LLM and application."
+        - content: "Client operating system."
+          isCorrect: false
+          explanation: "The security of the client operating system is outside the scope of AI red teaming."
+        - content: "DNS server."
+          isCorrect: false
+          explanation: "The security of DNS is separate from the process of AI red teaming."
+    
+  

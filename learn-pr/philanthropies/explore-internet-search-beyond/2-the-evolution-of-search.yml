@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.explore-internet-search-beyond.the-evolution-of-search
+title: The evolution of search
+metadata:
+  title: The evolution of search
+  description: This content is a part of the module about internet search and beyond.
+  ms.date: 01/14/2025
+  author: v-downesmary
+  ms.author: anruss
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-the-evolution-of-search.md)]

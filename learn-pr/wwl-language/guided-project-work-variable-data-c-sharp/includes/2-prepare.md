@@ -1,7 +1,3 @@
-
-
-
-
 Use Visual Studio Code to develop a version of a C# console application. The application comes with the basic features that create sample data on pets available for adoption and is able to display the pet's information. The main feature to add is searching available dogs using a single search term. The secondary tasks include adding and displaying `suggestedDonation` data.
 
 ## The design specification

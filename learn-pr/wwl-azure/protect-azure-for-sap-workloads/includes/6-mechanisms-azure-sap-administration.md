@@ -10,7 +10,7 @@ Andy's system access supports two key functions:
 
 Andy needs to be able to create and manage virtual machines, networking resources, and users. Andy uses the following features and services:
 
-- **The Azure portal**. To access Azure services and tools, Andy points the browser to [https://portal.azure.com](https://portal.azure.com) and authenticates through Azure Active Directory (AAD) and Azure AD Multi-Factor Authentication. 
+- **The Azure portal**. To access Azure services and tools, Andy points the browser to [https://portal.azure.com](https://portal.azure.com) and authenticates through Microsoft Entra ID and Microsoft Entra multifactor authentication. 
 - **Azure PowerShell**. Andy uses a comprehensive collection of PowerShell cmdlets to manage Azure. 
 - **Azure Command Line Interface (CLI)**. Andy also uses the Azure CLI, which is similar to PowerShell but runs in a bash-like shell. 
 - **Secure Shell Protocol (SSH)** or **Remote Desktop Protocol (RDP)**, depending on the system Andy needs to access.

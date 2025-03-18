@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-microsoft-intune-suite.apply-zero-trust
+title: Applying Zero Trust security using the Microsoft Intune Suite
+metadata:
+  title: Applying Zero Trust security using the Microsoft Intune Suite
+  description: "Applying Zero Trust security using the Microsoft Intune Suite"
+  ms.date: 09/27/2024
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-apply-zero-trust.md)]

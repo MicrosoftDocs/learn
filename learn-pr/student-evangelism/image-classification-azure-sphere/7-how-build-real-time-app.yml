@@ -2,14 +2,15 @@
 uid: learn.oxford.image-classification-azure-sphere.how-build-real-time-app
 title: How to build a real-time image classification application
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How to build a real-time image classification application
   description: In this section, we guide the learner in how to build a real-time application by modifying the existing sample application.
-  ms.date: 06/19/2020
+  ms.date: 07/20/2024
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
-  ms.custom: team=nextgen
+  ms.topic: unit
 durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/7-how-build-real-time-app.md)]
+

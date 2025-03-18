@@ -3,17 +3,16 @@ uid: learn.wwl.deploy-cloud-based-tools
 metadata:
   title: MD-102 Deploy using cloud based tools
   description: Students will learn about using Windows Autopilot and deployment using Microsoft Intune. Students will also learn how co-management can be used to transition to modern management.
-  ms.date: 04/06/2023
+  ms.date: 09/30/2024
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: MD-102 Deploy using cloud based tools
 prerequisites: |
   Students should have:
-  - Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later
-  - Strong understanding of computer networking, client security, and application concepts
-  - Experience using Active Directory Domain Services
+  -   Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later
+  -   Strong understanding of computer networking, client security, and application concepts
+  -   Experience using Active Directory Domain Services
 summary: |
   Students will learn about using Windows Autopilot and deployment using Microsoft Intune. Students will also learn how co-management can be used to transition to modern management.
 iconUrl: /training/achievements/generic-trophy.svg
@@ -31,5 +30,6 @@ modules:
 - learn.wwl.plan-transition-modern-endpoint-management
 - learn.wwl.manage-windows-365
 - learn.wwl.manage-azure-virtual-desktop
+- learn.wwl.explore-microsoft-intune-suite
 trophy:
   uid: learn.wwl.deploy-cloud-based-tools.trophy

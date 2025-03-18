@@ -1,0 +1,139 @@
+{
+  "redirections": [
+           {
+          "source_path_from_root": "/learn-pr/azure/intro-to-azure-hdinsight-aks/1-introduction.yml",
+          "redirect_url": "/training/modules/intro-to-azure-hdinsight/",
+          "redirect_document_id": false
+           },
+           {
+          "source_path_from_root": "/learn-pr/azure/intro-to-azure-hdinsight-aks/2-what-is-azure-hdinsight-aks.yml",
+          "redirect_url": "/training/modules/intro-to-azure-hdinsight/",
+          "redirect_document_id": false
+          },
+          {
+          "source_path_from_root": "/learn-pr/azure/intro-to-azure-hdinsight-aks/3-how-azure-hdinsight-aks-works.yml",
+          "redirect_url": "/training/modules/intro-to-azure-hdinsight/",
+          "redirect_document_id": false
+          },
+          {
+          "source_path_from_root": "/learn-pr/azure/intro-to-azure-hdinsight-aks/4-when-to-use-azure-hdinsight-aks.yml",
+          "redirect_url": "/training/modules/intro-to-azure-hdinsight/",
+          "redirect_document_id": false
+          },
+          {
+          "source_path_from_root": "/learn-pr/azure/intro-to-azure-hdinsight-aks/5-knowledge-check.yml",
+          "redirect_url": "/training/modules/intro-to-azure-hdinsight/",
+          "redirect_document_id": false
+          }, 
+          {
+          "source_path_from_root": "/learn-pr/azure/intro-to-azure-hdinsight-aks/6-summary.yml",
+          "redirect_url": "/training/modules/intro-to-azure-hdinsight/",
+          "redirect_document_id": false
+          },
+          {
+          "source_path_from_root": "/learn-pr/azure/intro-to-azure-hdinsight-aks/index.yml",
+          "redirect_url": "/training/modules/intro-to-azure-hdinsight/",
+          "redirect_document_id": false
+          },
+          {
+          "source_path_from_root": "/learn-pr/azure/intro-hdinsight-aks-data-transformation-flink/create-flink-cluster.yml",
+          "redirect_url": "/training/modules/intro-to-azure-hdinsight/",
+          "redirect_document_id": false
+          },
+          {
+          "source_path_from_root": "/learn-pr/azure/intro-hdinsight-aks-data-transformation-flink/flink-architecture.yml",
+          "redirect_url": "/training/modules/intro-to-azure-hdinsight/",
+          "redirect_document_id": false
+          },
+          {
+          "source_path_from_root": "/learn-pr/azure/intro-hdinsight-aks-data-transformation-flink/index.yml",
+          "redirect_url": "/training/modules/intro-to-azure-hdinsight/",
+          "redirect_document_id": false
+          },
+          {
+          "source_path_from_root": "/learn-pr/azure/intro-hdinsight-aks-data-transformation-flink/introduction.yml",
+          "redirect_url": "/training/modules/intro-to-azure-hdinsight/",
+          "redirect_document_id": false
+          },
+          {
+          "source_path_from_root": "/learn-pr/azure/intro-hdinsight-aks-data-transformation-flink/knowledge-check.yml",
+          "redirect_url": "/training/modules/intro-to-azure-hdinsight/",
+          "redirect_document_id": false
+          },
+          {
+          "source_path_from_root": "/learn-pr/azure/intro-hdinsight-aks-data-transformation-flink/run-job-in-flink.yml",
+          "redirect_url": "/training/modules/intro-to-azure-hdinsight/",
+          "redirect_document_id": false
+          },
+          {
+          "source_path_from_root": "/learn-pr/azure/intro-hdinsight-aks-data-transformation-flink/summary.yml",
+          "redirect_url": "/training/modules/intro-to-azure-hdinsight/",
+          "redirect_document_id": false
+          },
+          {
+          "source_path_from_root": "/learn-pr/azure/intro-hdinsight-aks-data-transformation-flink/write-event-message.yml",
+          "redirect_url": "/training/modules/intro-to-azure-hdinsight/",
+          "redirect_document_id": false
+          },
+          {
+            "source_path_from_root": "/learn-pr/azure/intro-configuration-management-hdinsight-aks/1-introduction.yml",
+            "redirect_url": "/training/modules/intro-to-azure-hdinsight/",
+            "redirect_document_id": false
+             },          
+             {
+            "source_path_from_root": "/learn-pr/azure/intro-configuration-management-hdinsight-aks/2-guidelines-for-hdinsight-on-aks-cluster.yml",
+            "redirect_url": "/training/modules/intro-to-azure-hdinsight/",
+            "redirect_document_id": false
+             },
+             {
+            "source_path_from_root": "/learn-pr/azure/intro-configuration-management-hdinsight-aks/3-exercise-create-hdinsight-on-aks-cluster.yml",
+            "redirect_url": "/training/modules/intro-to-azure-hdinsight/",
+            "redirect_document_id": false
+             },          
+             {
+            "source_path_from_root": "/learn-pr/azure/intro-configuration-management-hdinsight-aks/4-manage-hdinsight-on-aks-cluster.yml",
+            "redirect_url": "/training/modules/intro-to-azure-hdinsight/",
+            "redirect_document_id": false
+             },
+             {
+            "source_path_from_root": "/learn-pr/azure/intro-configuration-management-hdinsight-aks/5-exercise-customize-cluster-configuration.yml",
+            "redirect_url": "/training/modules/intro-to-azure-hdinsight/",
+            "redirect_document_id": false
+             },          
+             {
+            "source_path_from_root": "/learn-pr/azure/intro-configuration-management-hdinsight-aks/6-manage-observability-of-hdinsight-on-aks-cluster.yml",
+            "redirect_url": "/training/modules/intro-to-azure-hdinsight/",
+            "redirect_document_id": false
+             },
+             {
+            "source_path_from_root": "/learn-pr/azure/intro-configuration-management-hdinsight-aks/7-exercise-enable-log-analytics.yml",
+            "redirect_url": "/training/modules/intro-to-azure-hdinsight/",
+            "redirect_document_id": false
+             },          
+             {
+            "source_path_from_root": "/learn-pr/azure/intro-configuration-management-hdinsight-aks/8-knowledge-check.yml",
+            "redirect_url": "/training/modules/intro-to-azure-hdinsight/",
+            "redirect_document_id": false
+             },
+             {
+            "source_path_from_root": "/learn-pr/azure/intro-configuration-management-hdinsight-aks/9-summary.yml",
+            "redirect_url": "/training/modules/intro-to-azure-hdinsight/",
+            "redirect_document_id": false
+             },          
+             {
+            "source_path_from_root": "/learn-pr/azure/intro-configuration-management-hdinsight-aks/index.yml",
+            "redirect_url": "/training/modules/intro-to-azure-hdinsight/",
+            "redirect_document_id": false
+             },
+             {
+            "source_path_from_root": "/learn-pr/advocates/create-java-webapp-to-app-service-linux/2-javaserver-faces-explanation.yml",
+            "redirect_url": "/training/modules/create-java-webapp-to-app-service-linux/",
+            "redirect_document_id": false
+             },
+             {
+            "source_path_from_root": "/learn-pr/advocates/create-java-webapp-to-app-service-linux/3-exercise-create-javaserver-faces-app.yml",
+            "redirect_url": "/training/modules/create-java-webapp-to-app-service-linux/",
+            "redirect_document_id": false
+             }
+      ]
+}

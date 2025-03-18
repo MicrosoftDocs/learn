@@ -12,7 +12,7 @@ This module consists of three lessons:
 - Lesson 2 – Static method 
 - Lesson 3 – Dynamic method 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5akqH] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=64dd373d-e264-4a5c-9efa-653d7c572ea5] 
 
 Module 12 Tips and Tricks 
 

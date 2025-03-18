@@ -4,10 +4,10 @@ In this module, you learned about Azure identity, access, and security services 
 
 You should now be able to:
 
- -  Describe directory services in Azure, including Azure Active Directory (AD) and Azure AD DS.
+ -  Describe directory services in Azure, including Microsoft Entra ID and Microsoft Entra Domain Services.
  -  Describe authentication methods in Azure, including single sign-on (SSO), multifactor authentication (MFA), and passwordless.
  -  Describe external identities and guest access in Azure.
- -  Describe Azure AD Conditional Access.
+ -  Describe Microsoft Entra Conditional Access.
  -  Describe Azure Role Based Access Control (RBAC).
  -  Describe the concept of Zero Trust.
  -  Describe the purpose of the defense in depth model.
@@ -15,6 +15,4 @@ You should now be able to:
 
 ## Additional resources
 
-The following resources provide more information on topics in this module or related to this module.
-
- -  [Microsoft Certified: Security, Compliance, and Identity Fundamentals](/learn/certifications/security-compliance-and-identity-fundamentals/) is an entire certification, with associated training, dedicated to helping you better understand and manage Security, Compliance, and identity.
+The following resources provide more information on topics in this module or related to this module.<br>[Microsoft Certified: Security, Compliance, and Identity Fundamentals](/learn/certifications/security-compliance-and-identity-fundamentals/) is an entire certification, with associated training, dedicated to helping you better understand and manage Security, Compliance, and identity.

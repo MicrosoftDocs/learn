@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-aspnet-core.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introducing .NET for web app development.
+  ms.date: 11/01/2024
+  author: wadepickett
+  ms.author: wpickett
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

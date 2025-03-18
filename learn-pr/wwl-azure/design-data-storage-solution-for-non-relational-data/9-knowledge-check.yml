@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/13/2023
+  ms.date: 12/10/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/9-knowledge-check.md)]
@@ -55,9 +54,9 @@ quiz:
     - content: "Hot access tier"
       isCorrect: false
       explanation: "Incorrect. The Hot access tier is optimized for frequent reads and writes of objects in the storage account."
-    - content: "Cool access tier"
+    - content: "Cold or Cool access tier"
       isCorrect: true
-      explanation: "Correct. The Cool access tier is for content that isn't viewed frequently, but must be available immediately, if accessed."
+      explanation: "Correct. These tiers are for content that isn't viewed frequently, but must be available immediately, if accessed."
     - content: "Archive access tier"
       isCorrect: false
       explanation: "Incorrect. The older catalogs are still accessed, although infrequently. In the Archive access tier, you can incur an early deletion charge, if data is accessed sooner than 180 days."

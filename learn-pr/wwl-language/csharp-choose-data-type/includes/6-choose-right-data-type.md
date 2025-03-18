@@ -1,5 +1,3 @@
-
-
 You've been introduced to the difference between value types and reference types, as well as integral and floating point types.
 
 Suppose your job is to build a new application that retrieves, manipulates, and stores different types of data. Which data types do you use?
@@ -30,7 +28,7 @@ Many assume that because a given data type stores less information it must use l
 
 Suppose you want to work with a span of years between two dates. Since the application is a business application, you might determine that you only need a range from about 1960 to 2200. You might think to try to work with `byte` since it can represent numbers between 0 and 255.
 
-However, when you look at the built-in methods on the `System.TimeSpan` and `System.DateTime` classes, you realize they mostly accept values of type `double` and `int`. If you choose `sbyte`, you'll constantly be casting back and forth between `sbyte` and `double` or `int`. In this case, it might make more sense to choose `int` if you don't need subsecond precision, and `double` if you do need subsecond precision.
+However, when you look at the built-in methods on the `System.TimeSpan` and `System.DateTime` classes, you realize they mostly accept values of type `double` and `int`. If you choose `sbyte`, you'll constantly be casting back and forth between `byte` and `double` or `int`. In this case, it might make more sense to choose `int` if you don't need subsecond precision, and `double` if you do need subsecond precision.
 
 ### Choose data types based on impact to other systems
 

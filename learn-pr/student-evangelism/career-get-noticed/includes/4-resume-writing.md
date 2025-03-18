@@ -1,4 +1,4 @@
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4NA8o]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=d0916b6e-8b6e-456e-b380-ff2a7ddd71d7]
 
 When you're applying for an internship, a strong, attractive resume is the first step in getting recruiters and hiring managers to notice you. Whether your application gets seen or overlooked hinges on how you present your job and life experiences.
 

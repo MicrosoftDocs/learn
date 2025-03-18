@@ -2,7 +2,7 @@ Live response provides security operations teams instantaneous access to a devic
 
 Live response is designed to enhance investigations by enabling your security operations team to collect forensic data, run scripts, send suspicious entities for analysis, remediate threats, and proactively hunt for emerging threats.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qLUW?rel=0]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=38c8abec-021a-4cda-9198-5ff6402a79ee]
 
 With live response, analysts can do all of the following tasks:
 
@@ -267,4 +267,3 @@ Live response has the following limitations:
   - Fileinfo limit: 10 GB
 
   - Library limit: 250 MB
-

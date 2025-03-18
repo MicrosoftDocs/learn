@@ -28,7 +28,7 @@ The easiest way to see the content of your JSON file is to provide the file URL 
 {"date_rep":"2020-07-27","day":27,"month":7,"year":2020,"cases":8,"deaths":0,"geo_id":"AF"}
 ```
 
-If the file is publicly available, or if your Azure Active Directory identity can access this file, you should see the content of the file using the query like the one shown in the following examples.
+If the file is publicly available, or if your Microsoft Entra identity can access this file, you should see the content of the file using the query like the one shown in the following examples.
 
 ## Read JSON files
 

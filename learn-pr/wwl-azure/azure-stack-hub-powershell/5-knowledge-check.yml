@@ -2,13 +2,15 @@
 uid: learn.wwl.azure-stack-hub-powershell.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 03/17/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -39,3 +41,4 @@ quiz:
     - content: "Azure-cli"
       isCorrect: false
       explanation: "Incorrect. Azure-cli hosts guidance for a CLI multi-platform command line experience for Azure."
+

@@ -4,11 +4,10 @@ title: Summary
 metadata:
   title: Summary
   description: Review what you've learned about threat model context depth layers
-  ms.date: 02/28/2020
+  ms.date: 05/05/2023
   author: rodsan
   ms.author: rodsan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-threat-modeling
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]
@@ -17,12 +16,12 @@ quiz:
   questions:
   - content: "Which statement summarizes the importance of defining context depth layers earlier in the threat modeling stage?"
     choices:
-    - content: "It allows me to gather details about all external components used"
+    - content: "It allows me to gather details about all of the external components used."
       isCorrect: false
-      explanation: "This statement is a part of the design phase, but it doesn't define the importance of context depth layers"
-    - content: "It helps me generate the right level of context according to requirements and expectations"
+      explanation: "This statement is a part of the design phase, but it doesn't define the importance of context depth layers."
+    - content: "It helps me generate the right level of context according to requirements and expectations."
       isCorrect: true
-      explanation: "This statement states the importance of setting the right level of context before creating a data-flow diagram"
-    - content: "It helps me identify all applicable threats before a security review takes place"
+      explanation: "This statement states the importance of setting the right level of context before creating a data-flow diagram."
+    - content: "It helps me identify all applicable threats before a security review takes place."
       isCorrect: false
-      explanation: "This statement is a part of the break phase, which comes after a data-flow is created"
+      explanation: "This statement is a part of the break phase, which comes after a data-flow is created."

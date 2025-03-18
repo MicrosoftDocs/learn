@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.scale-ai.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/13/2025
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+  - ai-learning-hub
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Why is it helpful to prioritize Horizon 1 initiatives over Horizon 2 or Horizon 3 when starting out with AI?"
+    choices:
+    - content: "Horizon 1 initiatives tend to be the most complex and costly, enabling you to take the majority of the financial and technical impact of AI investment upfront."
+      isCorrect: false
+      explanation: "Incorrect. Horizon 2 and 3 initiatives require the most resources, time, and risk."
+    - content: "Horizon 1 initiatives have the most disruptive influence on your business model and the markets you operate in."
+      isCorrect: false
+      explanation: "Incorrect. Horizon 1 initiatives are less complex, risky, and disruptive than other initiatives."
+    - content: "Horizon 1 initiatives provide a chance to create incremental value from AI by improving current business processes while building experience for subsequent, more complex initiatives."
+      isCorrect: true
+      explanation: "Correct. Horizon 1 initiatives improve or automate existing processes."
+  - content: "Why is it beneficial for people from technical teams and lines of business to collaborate on AI initiatives?"
+    choices:
+    - content: "The technical teams need to make sure the solution has the latest and greatest AI capabilities."
+      isCorrect: false
+      explanation: "Incorrect. An AI solution’s complexity should be suited to the business use case."
+    - content: "All relevant teams need to be involved in design, implementation, and ongoing maintenance to make sure the solution functions properly and achieves its business objectives."
+      isCorrect: true
+      explanation: "Correct. Technical and line-of-business teams bring different perspectives to the table that are essential for creating and maintaining a successful solution."
+    - content: "Line-of-business leaders need to make sure the solution costs as little as possible."
+      isCorrect: false
+      explanation: "Incorrect. While cost is a consideration, it isn’t the primary benefit of collaboration."
+  - content: "How should you include business subject matter experts in AI adoption?"
+    choices:
+    - content: "Train all business domain experts in data science, enabling them to write code and train machine learning models."
+      isCorrect: false
+      explanation: "Incorrect. Training every subject matter expert in AI development would be time-intensive and costly."
+    - content: "Retrain business domain experts to perform other tasks - AI will replace them in their current roles."
+      isCorrect: false
+      explanation: "Incorrect. Organizations can achieve the most from AI when they utilize the expertise of their business users and subject matter experts."
+    - content: "Encourage domain experts to use AI copilots and no-code AI development tools to expand their impact across the enterprise."
+      isCorrect: true
+      explanation: "Correct. Company-wide transformation takes place when experts can embed their knowledge into AI tools and process automation."

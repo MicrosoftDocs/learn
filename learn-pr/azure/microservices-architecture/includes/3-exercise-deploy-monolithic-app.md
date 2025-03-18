@@ -1,8 +1,8 @@
-We've talked a bit about monolithic and microservices architectures. Now, let's deploy a monolithic application and dive further into how we can evolve it into a microservices architecture.
+We talked a bit about monolithic and microservices architectures. Now, let's deploy a monolithic application and dive further into how we can evolve it into a microservices architecture.
 
-Fabrikam has currently added the drone service into their existing application.
+Fabrikam recently added the drone service into their existing application.
 
-In this exercise, we'll deploy a monolithic application on Azure App Service, and enable Azure Monitor to get visibility into telemetry and application performance.
+In this exercise, we deploy a monolithic application on Azure App Service, and enable Azure Monitor to get visibility into telemetry and application performance.
 
 ![Visualization of the resources for the drone delivery application.](../media/3-drone-delivery-monolithic.svg)
 
@@ -14,7 +14,7 @@ Let's start by deploying the application. First, we need to create the Azure res
 
     ```azurecli
     az deployment group create \
-        --resource-group <rgn>[sandbox resource group]</rgn> \
+        --resource-group "<rgn>[sandbox resource group]</rgn>" \
         --template-uri https://raw.githubusercontent.com/MicrosoftDocs/mslearn-microservices-architecture/master/deployment/azuredeploy.json
     ```
 
@@ -35,7 +35,7 @@ Let's start by deploying the application. First, we need to create the Azure res
 
     ```bash
     APPSERVICENAME="$(az webapp list \
-                        --resource-group <rgn>[sandbox resource group]</rgn> \
+                        --resource-group "<rgn>[sandbox resource group]</rgn>" \
                         --query '[].name' \
                         --output tsv)"
     ```
@@ -44,7 +44,7 @@ Let's start by deploying the application. First, we need to create the Azure res
 
     ```azurecli
     az webapp config appsettings set \
-        --resource-group <rgn>[sandbox resource group]</rgn> \
+        --resource-group "<rgn>[sandbox resource group]</rgn>" \
         --name $APPSERVICENAME \
         --settings SCM_DO_BUILD_DURING_DEPLOYMENT=true
     ```
@@ -52,17 +52,17 @@ Let's start by deploying the application. First, we need to create the Azure res
 1. And now, run the following command to deploy the application to App Service. This deployment takes a few minutes to finish.
 
     ```azurecli
-    az webapp deployment source config-zip \
-        --resource-group <rgn>[sandbox resource group]</rgn> \
+    az webapp deploy \
+        --resource-group "<rgn>[sandbox resource group]</rgn>" \
         --name $APPSERVICENAME \
-        --src DroneDelivery-before.zip
+        --src-path DroneDelivery-before.zip
     ```
 
-1. After the deployment finishes, confirm that the deployment was successful by visiting the website of your app service. Run the following command to get the URL, and select it to open the page.
+1. After the deployment finishes, confirm that the deployment is successful by visiting the website of your app service. Run the following command to get the URL, and select it to open the page.
 
     ```bash
     echo https://$(az webapp config hostname list \
-                    --resource-group <rgn>[sandbox resource group]</rgn> \
+                    --resource-group "<rgn>[sandbox resource group]</rgn>" \
                     --webapp-name $APPSERVICENAME \
                     --query [].name \
                     --output tsv)

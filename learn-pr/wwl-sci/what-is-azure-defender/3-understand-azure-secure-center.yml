@@ -4,11 +4,10 @@ title: Describe Microsoft Defender for Cloud workload protections
 metadata:
   title: Describe Microsoft Defender for Cloud workload protections
   description: "Describe Microsoft Defender for Cloud workload protections"
-  ms.date: 02/22/2023
+  ms.date: 02/10/2025
   author: wwlpublish
-  ms.author: bneeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: kelawson
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 11

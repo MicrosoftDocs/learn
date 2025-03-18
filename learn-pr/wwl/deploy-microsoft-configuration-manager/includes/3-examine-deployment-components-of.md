@@ -1,9 +1,10 @@
 
+
 Boot images in MDT and Configuration Manager are Windows PE images that initiate a Windows deployment, accessed through various mediums such as CD, ISO, USB or network. The boot images then connect to the deployment share to begin the deployment. Configuration Manager also allows for the creation of MDT boot images within its UI when both tools are integrated.
 
 Configuration Manager provides two default boot images: One to support x86 platforms and the other to support x64 platforms. These images are stored in the `i386` or `x64` folders in the following share on the site server:
 
-**\\\\&lt;SiteServerName&gt;\\SMS\_&lt;sitecode&gt;\\osd\\boot\\**
+**\\\\< SiteServerName >\\SMS\_< sitecode >\\osd\\boot\\**
 
 The default boot images are updated or regenerated depending on the action that you take. You can customize boot images in many ways to facilitate troubleshooting or expand capability; however, you must consider some key concepts:
 
@@ -13,13 +14,13 @@ The default boot images are updated or regenerated depending on the action that 
 
 The Windows ADK is required as part of the prerequisites to set up a Configuration Manager hierarchy. Windows ADK loads a set of boot images based on a specific version of Windows. These images evolve as Windows does and follows a support matrix in relation to Configuration Manager site server support.
 
-Starting with Configuration Manager 2006 and beyond, boot images have cloud capability that expands options for modern deployment; however, with the introduction of Autopilot and the use of OEM images from a vendor, the requirement to start devices from a boot image has less relevance.
+From Configuration Manager 2006 onwards, boot images have gained cloud capability, opening up new possibilities for modern deployment. However, as Autopilot and the utilization of OEM images from vendors have been introduced, the necessity of starting devices from a boot image has become less significant.
 
-The initial creation of boot images in MDT and Configuration is similar, as are the tools with which to customize the image itself. Note, that storage locations are different and, when using MDT and Configuration Manager together, only the boot images associated with Configuration Manager are referenced in the Configuration Manager task sequences through the UI.
+When it comes to the initial creation of boot images in both MDT (Microsoft Deployment Toolkit) and Configuration Manager, the process is similar, and the tools used for customizing the image. However, it's worth noting that the storage locations may vary. If MDT and Configuration Manager are utilized together, it's important to remember that only the boot images associated with Configuration Manager will be referenced within the Configuration Manager task sequences through the user interface (UI).
 
 #### OS Images
 
-Operating system images in Configuration Manager are stored in the Windows Imaging (WIM) file format and represent a compressed collection of reference files and folders that are required to successfully install and configure an operating system on a computer. For all operating system deployment scenarios, you must select an operating system image. You can use the default operating system image or build the operating system image from a reference computer that you configure.
+Operating system images in Configuration Manager are stored in the Windows Imaging (WIM) file format and representing a compressed collection of reference files and folders that are required to successfully install and configure an operating system on a computer. For all operating system deployment scenarios, you must select an operating system image. You can use the default operating system image or build the operating system image from a reference computer that you configure.
 
 OS images after often used for the output of a capture task sequence and where enterprises store their golden .WIM images.
 
@@ -31,7 +32,7 @@ Operating system upgrade packages serve as the source files for an OS upgrade or
 
 You can install device drivers on destination computers without including them in the operating system image that is being deployed. Configuration Manager provides a driver catalog that contains references to all the device drivers that you import into Configuration Manager. The driver catalog is in the **Software Library** workspace and consists of two nodes: **Drivers** and **Driver Packages**. The **Drivers** node lists all the drivers that you've imported into the driver catalog. You can use this node to discover the details about each imported driver, to change what driver package or boot image a driver belongs to, to enable or disable a driver, and more.
 
-Drive management is another topic in the deployment community with many different strategies and techniques to achieve similar goals. Configuration Manager provides you with the capability to be sure that only the correct drivers are applied to a piece of hardware albeit in a static way. Also, it's important that these are kept up to date, or you use a modern driver strategy as part of your long-term transition to modern management where drivers are applied direct from the vendors as opposed to driver packs.
+Drive management is a notable subject within the deployment community, encompassing diverse strategies and techniques that aim to accomplish similar objectives. Configuration Manager empowers you to ensure the precise application of appropriate drivers to hardware, albeit in a static manner. It's equally important to regularly update these drivers or adopt a modern driver strategy as part of a long-term transition to modern management, where drivers are obtained directly from vendors rather than relying on driver packs.
 
 #### Software Updates
 

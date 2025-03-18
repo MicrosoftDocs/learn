@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.defend-against-cyberthreats-microsoft-defender-xdr-lab.initialize-defender-xdr-exercise
+
+title: Configure the Microsoft Defender XDR environment
+metadata:
+  title: exercise
+  description: "Configure the Microsoft Defender XDR environment."
+  ms.date: 11/7/2024
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-initialize-defender-xdr-exercise.md)]

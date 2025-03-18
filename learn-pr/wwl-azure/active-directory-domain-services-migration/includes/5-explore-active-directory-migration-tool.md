@@ -1,15 +1,10 @@
-To move objects between Active Directory Domain Services (AD DS) forests and domains, Microsoft provides the Active Directory Migration Tool (ADMT). You can use this tool when consolidating domains within a forest or when migrating to a new AD DS forest. This tool hasn't been updated recently, but it still works with Windows Server 2022.
+To move objects between Active Directory Domain Services (AD DS) forests and domains, Microsoft provides the Active Directory Migration Tool (ADMT). You can use this tool when consolidating domains within a forest or when migrating to a new AD DS forest. This tool hasn't been updated recently. Despite the warnings present on the download site, the tool still works with Windows Server 2025.
 
 - ADMT can perform the following functions:
-
 - Migrate user accounts
-
 - Migrate service accounts
-
 - Migrate groups
-
 - Migrate computer accounts
-
 - Translate security for local profiles
 
 If you're defining a new naming structure for users or groups, you can implement that as part of the migration process. Use an include file, which identifies the desired source objects and the destination names. Computer accounts can't be renamed during migration.
@@ -32,4 +27,3 @@ Translating security in local profiles on client computers allows a migrated use
 
 > [!NOTE]
 > ADMT was developed to work with Windows 7 and earlier. It hasn't been updated to work with Window 8 or Windows 10. This means that profile translation might not work properly, depending on the configuration of computers and apps in your organization. For detailed information about using ADMT, obtain [Active Directory Migration Tool (ADMT) Guide: Migrating and Restructuring Active Directory Domains](https://www.microsoft.com/download/details.aspx?id=19188) from the Microsoft Download Center.
-

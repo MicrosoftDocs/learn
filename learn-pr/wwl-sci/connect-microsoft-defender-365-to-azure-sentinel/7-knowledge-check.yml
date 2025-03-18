@@ -7,8 +7,7 @@ metadata:
   ms.date: 1/5/2023
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -25,21 +24,21 @@ quiz:
     - content: "Microsoft Defender for Endpoint"
       isCorrect: false
       explanation: "Incorrect.  This connector will only send the alert data, not the raw data."
-    - content: "Microsoft 365 Defender"
+    - content: "Microsoft Defender XDR"
       isCorrect: true
       explanation: "Correct. The connector can be configured to send the raw data from Defender for Endpoint."
-  - content: "Which Microsoft security product is part of the Microsoft 365 Defender suite of products?"
+  - content: "Which Microsoft security product is part of the Microsoft Defender XDR suite of products?"
     choices:
     - content: "Microsoft Defender for Cloud Apps"
       isCorrect: true
-      explanation: "Correct. Microsoft Defender for Cloud Apps is part of the Microsoft 365 Defender suite of products."
+      explanation: "Correct. Microsoft Defender for Cloud Apps is part of the Microsoft Defender XDR suite of products."
     - content: "Microsoft Purview Information Protection"
       isCorrect: false
-      explanation: "Incorrect. Microsoft Purview Information Protection is not considered as part of the Microsoft 365 Defender suite of products."
-    - content: "Azure Active Directory"
+      explanation: "Incorrect. Microsoft Purview Information Protection is not considered as part of the Microsoft Defender XDR suite of products."
+    - content: "Microsoft Entra ID"
       isCorrect: false
-      explanation: "Incorrect.  Azure Activate Directory is not considered as part of the Microsoft 365 Defender suite of products."
-  - content: "Which table (Data type) does the Microsoft 365 Defender connector write to?"
+      explanation: "Incorrect.  Azure Activate Directory is not considered as part of the Microsoft Defender XDR suite of products."
+  - content: "Which table (Data type) does the Microsoft Defender XDR connector write to?"
     choices:
     - content: "SecurityAlert"
       isCorrect: true

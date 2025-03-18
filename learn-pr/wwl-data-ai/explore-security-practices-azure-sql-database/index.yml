@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn-wwl.explore-security-practices-azure-sql-database
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Explore security practices for Azure SQL Database
+  description: "Learn how security works in Azure SQL Database, the key concepts, and practical examples to help developers effectively utilize Azure SQL Database in their cloud-based applications."
+  ms.date: 09/24/2024
+  author: jupadrao
+  ms.author: jupadrao
+  ms.topic: module-standard-task-based
+  ms.service: azure
+  ai-usage: ai-assisted
+title: Explore security practices for Azure SQL Database
+summary: You'll explore different features and tools to help you secure an Azure SQL Database.
+abstract: |
+  By the end of this module, you'll be able to:
+  *   Explain the authentication options available.
+  *   Configure managed identity to access Azure SQL Database.
+  *   Understand how firewall rules work.
+  *   Explain advanced data security features.
+prerequisites: |
+  *   Ability to navigate the Azure portal.
+  *   Experience with T-SQL programming language at a basic level.
+  
+iconUrl: /training/achievements/1-prepare-to-maintain-databases-on-azure.svg
+levels:
+- intermediate
+roles:
+- developer
+- solution-architect
+products:
+- azure-sql-database
+- azure
+subjects: 
+  - databases
+  - cloud-computing
+units:
+- learn-wwl.explore-security-practices-azure-sql-database.introduction
+- learn-wwl.explore-security-practices-azure-sql-database.explore-authentication-methods
+- learn-wwl.explore-security-practices-azure-sql-database.configure-managed-identity
+- learn-wwl.explore-security-practices-azure-sql-database.understand-firewall-rules
+- learn-wwl.explore-security-practices-azure-sql-database.explore-advanced-data-security
+- learn-wwl.explore-security-practices-azure-sql-database.exercise-managed-identity
+- learn-wwl.explore-security-practices-azure-sql-database.knowledge-check
+- learn-wwl.explore-security-practices-azure-sql-database.summary
+badge:
+  uid: learn-wwl.explore-security-practices-azure-sql-database.badge

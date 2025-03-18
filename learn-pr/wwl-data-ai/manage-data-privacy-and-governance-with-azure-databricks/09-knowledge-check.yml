@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/15/2024
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What is the purpose of using customer-managed keys in Azure Databricks?"
+    choices:
+    - content: "To allow users to bypass encryption for faster data processing."
+      isCorrect: false
+      explanation: "Incorrect. Customer-managed keys don't bypass encryption. They enhance control over data encryption."
+    - content: "To disable Azure's broader security framework."
+      isCorrect: false
+      explanation: "Incorrect. Customer-managed keys are part of Azure's broader security framework, not a means to disable it."
+    - content: "To enable users to control and manage their own encryption keys using Azure Key Vault."
+      isCorrect: true
+      explanation: "Correct. Customer-managed keys allow users to control and manage their own encryption keys, enhancing control over data encryption."
+  - content: "What is the purpose of using mount points in Azure Databricks data access control?"
+    choices:
+    - content: "To define standardized configurations for clusters."
+      isCorrect: false
+      explanation: "Incorrect. Cluster policies, not mount points, define the standardized configurations for clusters."
+    - content: "To track changes and manage version control for notebooks."
+      isCorrect: false
+      explanation: "Incorrect. Mount points aren't used for version control. They're used to control access to data stored in Azure Data Lake Storage or other storage accounts."
+    - content: "To control access to data stored in Azure Data Lake Storage or other storage accounts."
+      isCorrect: true
+      explanation: "Correct. Mount points in Azure Databricks are used to control access to data stored in Azure Data Lake Storage or other storage accounts."
+  - content: "What is the role of Azure Data Factory in implementing data masking with Azure Databricks?"
+    choices:
+    - content: "Azure Data Factory is used to create custom data masking functions in Databricks."
+      isCorrect: false
+      explanation: "Incorrect. Custom data masking functions are created in Databricks, not Azure Data Factory."
+    - content: "Azure Data Factory provides built-in features for data anonymization."
+      isCorrect: false
+      explanation: "Incorrect. Azure Data Factory is used for automating data masking workflows, not specifically for data anonymization."
+    - content: "Azure Data Factory can be integrated with Azure Databricks to automate data masking workflows."
+      isCorrect: true
+      explanation: "Correct. Azure Data Factory's data flow feature includes built-in transformations for masking data and can be integrated with Azure Databricks to automate these processes."
+

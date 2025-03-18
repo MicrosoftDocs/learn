@@ -4,36 +4,57 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/05/2023
+  ms.date: 05/14/2024
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which Azure Virtual Desktop feature allows administrators to automatically adjust capacity based on time of day, specific weekdays, or fluctuating demand?"
+  - content: "A system administrator needs to ensure optimal performance for Azure Virtual Desktop users. What load balancing option should they use to fully allocate users on one VM before moving to the next?"
     choices:
-    - content: "Autoscale"
+    - content: "Breadth mode load balancing"
+      isCorrect: false
+      explanation: "Incorrect. Breadth mode load balancing allocates users sequentially across the host pool, not fully on one VM before moving to the next."
+    - content: "Depth mode load balancing"
       isCorrect: true
-      explanation: "Correct - Autoscale is a feature that allows administrators to automatically adjust capacity based on time of day, specific weekdays, or fluctuating demand."
-    - content: "Personal (persistent) desktops."
+      explanation: "Correct. Depth mode fully allocates users on one VM before moving to the next, ensuring optimal performance."
+    - content: "Sequential mode load balancing"
       isCorrect: false
-      explanation: "Incorrect - Personal (persistent) desktops are a feature that allows users to save their files and settings to a personal desktop."
-    - content: "Remote desktop services (RDS)"
-      isCorrect: false
-      explanation: "Incorrect - Remote desktop services (RDS) is a feature that allows users to connect to a virtual desktop from a remote location."
-  - content: "Which of the following is a unique remote action for Cloud PCs?"
+      explanation: "Incorrect. There's no such thing as Sequential mode load balancing in Azure Virtual Desktop."
+  - content: "A team needs to establish a multi-session Windows 11 environment that offers a comprehensive Windows experience with scalability. They also need to deploy Microsoft 365 Apps for enterprise and optimize them for multi-user virtual scenarios. Which service should they use?"
     choices:
-    - content: "Restart"
-      isCorrect: false
-      explanation: "Incorrect. This is a common action for both Cloud PCs and Windows Virtual Desktop. Try again."
-    - content: "Sync"
-      isCorrect: false
-      explanation: "Incorrect. This is a common action for both Cloud PCs and Windows Virtual Desktop. Try again."
-    - content: "Reprovisioning"
+    - content: "Azure Virtual Desktop"
       isCorrect: true
-      explanation: "Correct. Reprovisioning is a unique action for Cloud PCs."
+      explanation: "Correct. Azure Virtual Desktop is a cloud-based service for desktop and application virtualization, offering users secure and remote access to their desktop environments and applications from various devices and locations."
+    - content: "Azure Active Directory"
+      isCorrect: false
+      explanation: "Incorrect. Azure Active Directory is a cloud-based identity and access management service, not a desktop and application virtualization service."
+    - content: "Azure DevOps"
+      isCorrect: false
+      explanation: "Incorrect. Azure DevOps is a developer service providing tools for planning, collaboration, and code development, not a desktop and application virtualization service."
+  - content: "A system administrator is tasked with setting up a Windows 11 Enterprise desktop in Azure Virtual Desktop. They have created a personal host pool, a session host virtual machine, a workspace, and an application group. What should they do next to ensure users can access the desktop?"
+    choices:
+    - content: "They should assign users to the application group."
+      isCorrect: true
+      explanation: "Correct. After setting up the host pool, session host VM, workspace, and application group, the next step is to assign users to the application group."
+    - content: "They should create another session host virtual machine."
+      isCorrect: false
+      explanation: "Incorrect. Creating another session host virtual machine isn't required unless more resources are needed."
+    - content: "They should delete and recreate the host pool."
+      isCorrect: false
+      explanation: "Incorrect. Deleting and recreating the host pool isn't necessary once it has been properly set up."
+  - content: "A system administrator needs to retrieve the object ID of a host pool in Azure Virtual Desktop. Which command should they use?"
+    choices:
+    - content: "Get-AzWvdWorkspace -Name &lt;WorkspaceName&gt; -ResourceGroupName &lt;ResourceGroupName&gt;).ObjectID"
+      isCorrect: false
+      explanation: "Incorrect. This PowerShell command is used to retrieve the object ID of a workspace, not a host pool."
+    - content: "az desktopvirtualization workspace show --name &lt;Name&gt; --resource-group &lt;ResourceGroupName&gt; --query objectId --output tsv"
+      isCorrect: false
+      explanation: "Incorrect. This command is used to retrieve the object ID of a workspace, not a host pool."
+    - content: "az desktopvirtualization hostpool show --name &lt;Name&gt; --resource-group &lt;ResourceGroupName&gt; --query objectId --output tsv"
+      isCorrect: true
+      explanation: "Correct. This command retrieves the object ID of a host pool in Azure Virtual Desktop."

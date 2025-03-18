@@ -4,11 +4,10 @@ title: Describe what is cybersecurity
 metadata:
   title: Describe what is cybersecurity
   description: "Describe what is cybersecurity"
-  ms.date: 01/19/2023
+  ms.date: 08/22/2024
   author: wwlpublish
   ms.author: ceperezb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

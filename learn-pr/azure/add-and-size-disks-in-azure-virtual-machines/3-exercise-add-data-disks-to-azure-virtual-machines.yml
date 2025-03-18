@@ -2,13 +2,15 @@
 uid: learn.add-and-size-disks-in-azure-virtual-machines.3-exercise-add-data-disks-to-azure-virtual-machines
 title: Exercise - Add a data disk to a VM
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Add a data disk to a VM
   description: Exercise - Add a data disk to a VM
-  ms.date: 09/24/2018
+  ms.date: 12/09/2024
   author: roygara
   ms.author: rogarana
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom: devx-track-azurecli, linux-related-content
 interactive: bash
 azureSandbox: true
 durationInMinutes: 10
@@ -30,3 +32,4 @@ content: |
 #        type: "Microsoft.Compute/virtualMachines/extensions"
 #        name: customScript
 #    hint: "Run the `az vm extension set` command as shown to run the script on your virtual machine."
+

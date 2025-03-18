@@ -1,13 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-to-azure-synapse-analytics
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to Azure Synapse Analytics
   description: "Introduction to Azure Synapse Analytics"
   ms.date: 08/17/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-synapse-analytics
 title: Introduction to Azure Synapse Analytics
 summary: Learn about the features and capabilities of Azure Synapse Analytics - a cloud-based platform for big data processing and analysis.
 abstract: |
@@ -40,3 +42,4 @@ units:
 - learn.wwl.introduction-to-azure-synapse-analytics.summary
 badge:
   uid: learn.wwl.introduction-to-azure-synapse-analytics.badge
+

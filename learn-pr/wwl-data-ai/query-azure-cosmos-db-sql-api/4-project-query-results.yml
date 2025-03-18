@@ -2,13 +2,15 @@
 uid: learn.wwl.query-azure-cosmos-db-sql-api.project-query-results
 title: Project query results
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Project query results
   description: "Project query results"
-  ms.date: 11/04/2022
+  ms.date: 03/10/2025
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  zone_pivot_groups: dev-lang-csharp-node-python
 azureSandbox: false
 labModal: false
 durationInMinutes: 10

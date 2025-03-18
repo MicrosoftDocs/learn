@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-azure-openai-authentication-authorization.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: Demonstrate your understanding of the module by answering these questions
+  ms.date: 10/16/2024
+  author: sarah-yo
+  ms.author: sayoung
+  ms.topic: unit
+durationInMinutes: 4
+content: Choose the best response for each question. 
+quiz:
+  questions:
+    - content: "Why are Microsoft Entra identities and Managed Identities better to use for authentication to Azure OpenAI?"
+      choices:
+        - content: "They provide a more secure method by avoiding the use of keys and secrets."
+          isCorrect: true
+          explanation: "This method enhances security by not explicitly handling sensitive credentials, making the authentication process more secure."
+        - content: "They allow developers to use keys and secrets for authentication."
+          isCorrect: false
+          explanation: "Using keys and secrets for authentication isn't recommended from a security perspective, as handling sensitive credentials can lead to potential breaches."
+        - content: "They don't require any form of credential management."
+          isCorrect: false
+          explanation: "While they reduce the risk associated with handling credentials, some form of identity management is still required to ensure secure access."
+    - content: "What is an advantage of using user-assigned identities?"
+      choices:
+        - content: "They automatically expire after a short period, enhancing security."
+          isCorrect: false
+          explanation: "User-assigned identities don't automatically expire; they're managed and maintained independently."
+        - content: "They require less configuration and are easier to set up than system-assigned identities."
+          isCorrect: false
+          explanation: "User-assigned identities typically require more configuration compared to system-assigned identities, which are automatically managed by Azure."
+        - content: "They can be used across multiple resources and maintain their lifecycle independently."
+          isCorrect: true
+          explanation: "User-assigned identities can be shared among multiple resources, providing flexibility and independent lifecycle management."
+    - content: "Which role provides access only to view the resource in the Azure portal, view the endpoint under \"Keys and Endpoint\", view resources and deployments in Azure OpenAI Studio, and use playground experiences, but doesn't allow creating or editing model deployments or managing keys?"
+      choices:
+        - content: "Cognitive Services OpenAI User"
+          isCorrect: true
+          explanation: "The Cognitive Services OpenAI User role has just the permissions necessary for viewing and using the existing resources without permissions for deployment or key management."
+        - content: "Cognitive Services OpenAI Contributor"
+          isCorrect: false
+          explanation: "Cognitive Services OpenAI Contributor is incorrect because this role allows creating or editing model deployments, which go beyond just viewing and using resources."
+        - content: "Cognitive Services Contributor"
+          isCorrect: false
+          explanation: "Cognitive Services Contributor is incorrect because this role includes permissions for creating and managing Azure OpenAI resources, which exceeds the viewing and usage scope specified."
+    
+  
+
+  
+

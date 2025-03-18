@@ -2,20 +2,22 @@
 uid: learn.wwl.query-relational-data-azure
 metadata:
   title: Query relational data in Azure
-  description: "Query relational data in Azure"
-  ms.date: 08/12/2021
+  description: "This content is a part of Query relational data in Azure."
+  ms.date: 03/19/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: sql
+  ai-usage: human-only
 title: Query relational data in Azure
 summary: Learn about Structured Query Language (SQL), and how you can use it to query, insert, update, and delete data in a relational database.
 abstract: |
   In this module, you will:
+
   * Describe query techniques for data using the SQL language
+
   * Query relational data
-prerequisites: |
-  None
+prerequisites: None
 iconUrl: /training/achievements/query-relational-data-azure.svg
 levels:
 - beginner

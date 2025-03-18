@@ -3,11 +3,10 @@ uid: learn.wwl.plan-implement-data-platform-resources
 metadata:
   title: Plan and implement data platform resources
   description: Plan and implement data platform resources
-  ms.date: 04/26/2022
-  author: wwlpublish
+  ms.date: 2/25/2022
+  author: JulianePadrao
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: Plan and implement data platform resources
 prerequisites: |
   - Familiarity with on-premises virtualization technologies, including: VMs, virtual networking, and virtual hard disks.
@@ -31,9 +30,9 @@ subjects:
 - data-engineering
 - data-management
 modules:
+- learn.wwl.prepare-to-maintain-sql-databases-azure
 - learn.wwl.deploy-iaas-solutions-with-azure-sql
 - learn.wwl.deploy-paas-solutions-with-azure-sql
-- learn.wwl.evaluate-strategies-for-migrating-to-azure-sql
 - learn-wwl.migrate-sql-workloads-azure-sql-databases
 - learn-wwl.migrate-sql-workloads-azure-managed-instances
 trophy:

@@ -7,11 +7,8 @@ metadata:
   ms.date: 05/05/2022
   author: wwlpublish
   ms.author: anrudduc
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labId: 96511
-labModal: true
+  ms.topic: unit
+  zone_pivot_groups: sql-database
 durationInMinutes: 30
 content: |
   [!include[](includes/7-exercise-sort-filter-query-results.md)]

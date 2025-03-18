@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.load-balance-web-traffic-with-application-gateway.2-routing-traffic-with-application-gateway
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Route traffic with Application Gateway
   description: Explain how Application Gateway routes requests and performs load balancing
-  ms.date: 05/02/2019
-  author: vhorne
-  ms.author: victorh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/31/2024
+  author: greg-lindsay
+  ms.author: greglin
+  ms.topic: unit
 title: Route traffic with Application Gateway
 durationInMinutes: 10
 content: |
@@ -37,3 +38,4 @@ quiz:
     - content: "Application Gateway follows a round-robin approach, distributing requests to each available server in a backend pool in turn."
       isCorrect: true
       explanation: "Correct!"
+

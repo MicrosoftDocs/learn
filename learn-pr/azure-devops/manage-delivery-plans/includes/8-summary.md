@@ -8,10 +8,10 @@ In this module, the Tailspin team took on some common organizational challenges 
 
 ## Learning path summary
 
-Congratulations. You've completed the final module in the _Get started with Azure DevOps_ learning path. In this learning path, you:
+Congratulations, you've completed the final module in the _Get started with Azure DevOps_ learning path. In this learning path, you:
 
 * Saw how a value stream map can help you examine your existing processes and technologies.
-* Saw what DevOps is (and isn't) and created an Azure DevOps organization.
+* Saw what DevOps is (and isn't), and created an Azure DevOps organization.
 * Learned how Azure Boards helps teams plan the work that needs to be done. You used the Basic process to set up a basic backlog of tasks you'll work on in upcoming modules.
 * Learned how to optimize sprint workloads across multiple Agile teams.
 * Learned how to view and track dependencies within and across several Agile teams.
@@ -26,4 +26,4 @@ For more self-paced, hands-on learning around Azure DevOps, also check out [Azur
 
 This module focused on how delivery plans can help you manage work schedules across multiple teams. However, there are many things to consider when coordinating projects at scale.
 
-To learn more about some of the other features Azure DevOps provides for scaling your team projects, such as team hierarchies, project portfolio management, and dashboards, see [Plans (Agile at scale)](/azure/devops/boards/plans/?azure-portal=true).
+To learn more about some of the other features Azure DevOps provides for scaling your team projects, such as team hierarchies, project portfolio management, and dashboards, see [Plan for Agile at scale](/azure/devops/boards/plans/?azure-portal=true).

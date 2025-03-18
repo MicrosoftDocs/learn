@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.fundamentals-of-ai-security.data-exfiltration
+title: Data exfiltration
+metadata:
+  title: Data exfiltration
+  description: Understanding data exfiltration
+  ms.date: 07/17/2024
+  author: sarah-yo
+  ms.author: sayoung
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-data-exfiltration.md)]

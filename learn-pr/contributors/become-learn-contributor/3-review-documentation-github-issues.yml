@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.become-learn-contributor.review-documentation-github-issues
+title: Review documentation using GitHub Issues
+metadata:
+  title: Review documentation using GitHub Issues
+  description: This unit explains how to submit a GitHub issue to give feedback on Microsoft documentation articles.
+  ms.date: 10/4/2023
+  author: sgaspari815
+  ms.author: v-sgaspari
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-review-documentation-github-issues.md)]

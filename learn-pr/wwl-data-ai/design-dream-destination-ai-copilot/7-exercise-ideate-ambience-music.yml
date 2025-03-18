@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-dream-destination-ai-copilot.exercise-ideate-ambience-music
+title: 'Exercise: Ideate ambience and music'
+metadata:
+  title: 'Exercise: Ideate ambience and music'
+  description: "Exercise: Ideate ambience and music"
+  ms.date: 03/17/2025
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - copilot-learning-hub
+  - ai-learning-hub
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-exercise-ideate-ambience-music.md)]

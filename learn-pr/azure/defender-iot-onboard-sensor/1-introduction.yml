@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.onboard-sensor-microsoft-defender-iot.introduction
+title: Introduction
+metadata:
+  title: Introduction to onboarding an OT sensor
+  description: "Introduction to Defender for IoT module for the onboarding a sensor phase of a deployment."
+  ms.date: 02/21/2024
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: unit
+
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -3,20 +3,16 @@ uid: learn.wwl.azure-data-fundamentals-explore-data-warehouse-analytics
 metadata:
   title: 'Microsoft Azure Data Fundamentals: Explore data analytics in Azure'
   description: 'Microsoft Azure Data Fundamentals: Explore data analytics in Azure'
-  ms.date: 03/08/2022
+  ms.date: 09/25/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: 'Microsoft Azure Data Fundamentals: Explore data analytics in Azure'
 prerequisites: |
   Before starting this learning path, you should have a fundamental understanding of core data concepts, relational data, and non-relational data.
 summary: |
   The phenomenal growth in data in recent years is fueling digital transformation of businesses and other organizations by empowering fast and informed decision making through data analytics. Microsoft Azure provides multiple services that you can combine to build large-scale analytics solutions that leverage the latest technologies and techniques for data ingestion, storage, modeling, and visualization.
   This learning path helps you prepare for the [Azure Data Fundamentals](/certifications/azure-data-fundamentals?azure-portal=true) certification.
-video:
-  title: "Microsoft Azure Data Fundamentals: Explore data analytics in Azure"
-  url: https://www.microsoft.com/videoplayer/embed/RE57fRS
 iconUrl: /training/achievements/azure-data-fundamentals-explore-data-warehouse-analytics.svg
 levels:
 - beginner

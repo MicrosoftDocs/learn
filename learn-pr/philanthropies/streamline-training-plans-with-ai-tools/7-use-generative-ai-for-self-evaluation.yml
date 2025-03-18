@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.streamline-training-plans-with-ai-tools.use-generative-ai-self-evaluation
+title: Use generative AI for self-evaluation
+metadata:
+  title: Use generative AI for self-evaluation
+  description: This content is a part of the Streamline training plans with AI tools module.
+  author: yoosunee
+  ms.author: anruss
+  ms.date: 01/14/2025
+  ms.topic: unit
+  ms.collection:
+    - philanthropies-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-use-generative-ai-for-self-evaluation.md)]

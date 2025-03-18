@@ -1,4 +1,4 @@
-In the previous unit, you defined a resource in XAML and used it as a static value. However, there are some cases where **StaticResource** isn't appropriate. Consider the following scenarios:
+In the previous unit, you defined a resource in Extensible Application Markup Language (XAML) and used it as a static value. However, there are some cases where **StaticResource** isn't appropriate. Consider the following scenarios:
 
 - Suppose you want to implement color themes that let the user change the look of the app at runtime. The **StaticResource** mark-up extension does the dictionary lookup only once, so it can't update the UI dynamically.
 
@@ -18,7 +18,7 @@ Consider the following example:
 </ContentPage.Resources>
 ```
 
-Suppose you want to change the value of the **PanelBackgroundColor** resource while the application is running. You can add code such as that shown below to the code-behind file for the page, to access the **Resources** property. The following example updates the resource value from the previous XAML example to a different color.
+Suppose you want to change the value of the **PanelBackgroundColor** resource while the application is running. You can add code to the code-behind file for the page, to access the **Resources** property. The following example updates the resource value from the previous XAML example to a different color.
 
 ```csharp
 this.Resources["PanelBackgroundColor"] = Colors.Green;
@@ -47,4 +47,4 @@ To use the updated background color from the earlier example, you can apply the 
 </ContentPage>
 ```
 
-If the value of the **PanelBackgroundColor** resource changes, the **BackgroundColor** value of the **StackLayout** control will be updated automatically.
+If the value of the **PanelBackgroundColor** resource changes, the **BackgroundColor** value of the **StackLayout** control is updated automatically.

@@ -7,8 +7,7 @@ metadata:
   ms.date: 03/20/2023
   author: wwlpublish
   ms.author: tsheppard
-  ms.topic: interactive-tutorial
-  ms.prod: dynamics-365
+  ms.topic: unit
 durationInMinutes: 6
 content: |
   [!include[](includes/11-knowledge-check.md)]

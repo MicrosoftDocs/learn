@@ -16,21 +16,13 @@ Incorporating these pillars helps produce a high quality, stable, and efficient 
 | Operational Excellence | Operations processes that keep a system running in production. |
 | Performance Efficiency | The ability of a system to adapt to changes in load. |
 
-Reference the following video about how to architect successful workloads on Azure with the Well-Architected Framework:
-
-<!-- markdownlint-disable MD034 -->
-
-<br/>
-
-> [!VIDEO https://learn.microsoft.com/shows/azure-enablement/architect-successful-workloads-on-azure--introduction-ep-1-well-architected-series/player]
-
-<!-- markdownlint-enable MD034 -->
+Please see [Architect successful workloads on Azure](/shows/azure-essentials-show/architect-successful-workloads-on-azure--introduction-ep-1-well-architected-series), for more information.
 
 ## Overview
 
 The following diagram gives a high-level overview of the Azure Well-Architected Framework:
 
-![Diagram of the Well-Architected Framework and supporting elements.](https://learn.microsoft.com/azure/architecture/framework/_images/waf-diagram-revised.png)
+![Diagram of the Well-Architected Framework and supporting elements.](/azure/architecture/framework/_images/waf-diagram-revised.png)
 
 In the center, is the Well-Architected Framework, which includes the five pillars of architectural excellence. Surrounding the Well-Architected Framework are six supporting elements:
 

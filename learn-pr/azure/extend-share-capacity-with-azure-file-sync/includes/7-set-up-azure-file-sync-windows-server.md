@@ -1,12 +1,12 @@
 Azure File Sync has a sync agent for all the supported versions of Windows Server. The agent completes the setup of the trust relationship between your on-premises Windows Server computer and the Azure Storage Sync Service.
 
-You've successfully set up your company's Azure resources to support Azure File Sync. Now, you're going to prepare your Windows file server to deploy the required Azure File Sync components.
+You successfully set up your company's Azure resources to support Azure File Sync. Now, you're going to prepare your Windows file server to deploy the required Azure File Sync components.
 
-In this unit, you'll learn how to prepare the Windows Server environment for Azure File Sync.
+In this unit, you learn how to prepare the Windows Server environment for Azure File Sync.
 
 ## 1. Disable IE Enhanced Security Configuration
 
-The default configuration for all versions of Windows Server is to restrict web browsing and downloads of additional software. You must disable this protection for the initial server registration. In the Server Manager console, set **IE Enhanced Security Configuration** to **Off** for both administrators and users. Re-enable this protection after the agent is installed.
+The default configuration for all versions of Windows Server is to restrict web browsing and downloads of other software. You must disable this protection for the initial server registration. In the Server Manager console, set **IE Enhanced Security Configuration** to **Off** for both administrators and users. Re-enable this protection after the agent is installed.
 
 ## 2. Install the Azure File Sync agent
 
@@ -22,6 +22,6 @@ Run the agent and sign in with your Azure account. To register the file server, 
 
 ## 4. Add the server endpoint
 
-To finish setup of the trust relationship, return to the Azure portal and the sync group you created. In the sync group, you should already have a cloud endpoint. Now add its matching server endpoint. Because you've registered your server, select **Add a server endpoint**, and then select your server.
+To finish setup of the trust relationship, return to the Azure portal and the sync group you created. In the sync group, you should already have a cloud endpoint. Now add its matching server endpoint. Because you registered your server, select **Add a server endpoint**, and then select your server.
 
-We'll complete these steps in the next unit.
+You complete these steps in the next unit.

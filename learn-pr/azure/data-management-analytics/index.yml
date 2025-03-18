@@ -3,22 +3,22 @@ uid: learn.data-management-analytics
 metadata:
   moduleType: standard
   title: Get started with enterprise scale data management and analytics scenario
-  description: "Enterprise scale data management and analytics scenario provides a prescriptive data platform design coupled with Azure best practices to define best course for the data journey."
-  ms.date: 1/28/2022
+  description: "An enterprise-scale data-management and analytics scenario provides a prescriptive data platform design coupled with Azure best practices to define best course for the data journey."
+  ms.date: 08/09/2024
   author: lapate
   ms.author: lapate
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: purview
 title: Get started with enterprise scale data management and analytics scenario
-summary: "In this module, you'll learn how data management and analytics scenario help organizations build the strategic design to on board and govern modern data analytics workloads.  The module prepares you to design the enterprise scale architecture patterns focused on data first approach"
+summary: "In this module, you learn how a data-management and analytics scenario can help organizations build the strategic design to onboard and govern modern data-analytics workloads. The module prepares you to design the enterprise-scale architecture patterns focused on a data-first approach."
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you should be able to:
 
-    - Define your strategy and plan
-    - Design Considerations
-    - Provision Data Management Landing Zone
-    - Provision Data Landing Zone
-    - Provision Data Product Landing Zone
+    - Define your strategy and plan.
+    - Design Considerations.
+    - Provision Data Management Landing Zone.
+    - Provision Data Landing Zone.
+    - Provision Data Product Landing Zone.
 prerequisites: |
   - Basic knowledge of Azure
   - Azure subscription ownership

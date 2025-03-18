@@ -5,4 +5,4 @@ Now it's your opportunity to use a Spark cluster in Azure Databricks. In this ex
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/mslearn-databricks-spark?azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2281014&azure-portal=true)

@@ -1,4 +1,4 @@
-Resources are great for avoiding hard-coded, duplicate values in your XAML mark-up, but they can be tedious to apply. You assign each property value individually, which can result in cluttered and verbose XAML. This unit shows you how to group multiple settings into a style, which can help to declutter your code and make it more maintainable.
+In .NET Multi-platform App UI (MAUI), resources are great for avoiding hard-coded, duplicate values in your Extensible Application Markup Language (XAML) mark-up, but they can be tedious to apply. You assign each property value individually, which can result in cluttered and verbose XAML. This unit shows you how to group multiple settings into a style, which can help to declutter your code and make it more maintainable.
 
 ## How resources can clutter your XAML
 
@@ -20,7 +20,7 @@ A resource provides a value for a single property. However, using lots of resour
     TextColor = "{StaticResource textColor}" />
 ```
 
-Notice how the same five properties are set on each of the buttons. Using resources removes the need for repeated, hard-coded values. However, this type of XAML mark-up quickly gets hard to read. Additionally, if you're setting a large number of properties for each control, it's easy to accidentally omit one of them, leading to inconsistencies in the appearance of the controls. The solution is to create a style that assigns all four properties at once.
+Notice how the same five properties are set on each of the buttons. Using resources removes the need for repeated, hard-coded values in four of them. However, this type of XAML mark-up quickly gets hard to read. Additionally, if you're setting a large number of properties for each control, it's easy to accidentally omit one of them, leading to inconsistencies in the appearance of the controls. The solution is to create a style that assigns all four properties at once.
 
 ## What is a setter?
 
@@ -39,7 +39,7 @@ You can use a resource for the value in a setter, as shown in the following code
 ```
 
 > [!NOTE]
-> The property value that you specify in a setter must be implemented as a bindable property. All properties on controls in .NET MAUI that end with the suffix *Property* are bindable properties. If you're trying to use a property such as **TextColor** in a setter, make sure there's a corresponding bindable property named **TextColorProperty** for that control. In practice, almost all the properties you'll want to use in your setters are implemented this way.
+> The property value that you specify in a setter must be implemented as a bindable property. All properties on controls in .NET MAUI that end with the suffix *Property* are bindable properties. If you're trying to use a property such as **TextColor** in a setter, make sure there's a corresponding bindable property named **TextColorProperty** for that control. In practice, almost all the properties you want to use in your setters are implemented this way.
 
 ## What is a style?
 
@@ -83,7 +83,7 @@ In the previous example, you used the **StaticResource** mark-up extension to at
 <Button Text="Cancel" Style="{DynamicResource MyButtonStyle}" />
 ```
 
-**DynamicResource** listens for replacement of the **x:Key** property in the resource dictionary. If you write code that loads a new style into ResourceDictionary with that same **x:Key** value, the new style will automatically get applied to your UI.
+**DynamicResource** listens for replacement of the **x:Key** property in the resource dictionary. If you write code that loads a new style into ResourceDictionary with that same **x:Key** value, the new style is automatically applied to your UI.
 
 ## Use an implicit style for multiple controls
 
@@ -91,7 +91,7 @@ Suppose your UI has 50 buttons and you want to apply the same style to all of th
 
 An *implicit style* is a style that you add to a resource dictionary without giving it an **x:Key** identifier. Implicit styles are automatically applied to all controls of the specified **TargetType** object.
 
-The following code shows the previous example declared as an implicit style. This style will be applied to every button on the page.
+The following code shows the previous example declared as an implicit style. This style is applied to every button on the page.
 
 ```XML
 <ContentPage.Resources>
@@ -104,7 +104,7 @@ The following code shows the previous example declared as an implicit style. Thi
 ```
 
 > [!IMPORTANT]
-> The matching of implicit styles to controls requires an exact match to the specified **TargetType**. Controls that inherit from the target type will not receive the styles. To affect inherited controls, you can set the **Style.ApplyToDerivedTypes** attribute to **True** when you define the style. For example, to apply a style to the **Button** type and have it affect any of your buttons that inherit from **Button** (such as an **ImageButton**, **RadioButton**, or a custom type that you create), you could use a style such as this.
+> The matching of implicit styles to controls requires an exact match to the specified **TargetType**. Controls that inherit from the target type don't receive the styles. To affect inherited controls, you can set the **Style.ApplyToDerivedTypes** attribute to **True** when you define the style. For example, to apply a style to the **Button** type and have it affect any of your buttons that inherit from **Button** (such as an **ImageButton**, **RadioButton**, or a custom type that you create), you could use a style such as this.
 
 ```XML
 <ContentPage.Resources>
@@ -117,7 +117,7 @@ The following code shows the previous example declared as an implicit style. Thi
 
 ## Override a style
 
-You can think of a style as providing a set of default values for controls. If an existing style is close to your requirements, but contains one or two setters that you don't want, you can apply the style and then override value by setting properties directly. The explicit setting is applied after the style, so it will override the value from the style.
+You can think of a style as providing a set of default values for controls. An existing style might be close to your requirements, but contain one or two setters that you don't want. In that case, you can apply the style and then override the value by setting properties directly. The explicit setting is applied after the style, so it will override the value from the style.
 
 Suppose you want to use the following style for several buttons on your page.
 
@@ -154,11 +154,11 @@ The following code shows a style that targets a base class that's being applied 
 <Label Style="{StaticResource MyVisualElementStyle}" ... />
 ```
 
-This example identifies the style by using **x:Key** and the controls apply it explicitly. An implicit style won't work here because **TargetType** for an implicit style must be an exact match to the control type.
+This example identifies the style by using **x:Key** and the controls apply it explicitly. An implicit style doesn't work here because **TargetType** for an implicit style must be an exact match to the control type.
 
 ## Use BasedOn to inherit from a style
 
-Suppose you want to create a cohesive look for your UI. You decide that all controls should use a consistent background color. The background color setting will then likely appear in more than one of your styles. The following code shows two styles with a repeated setter.
+Suppose you want to create a cohesive look for your UI. You decide that all controls should use a consistent background color. The background color setting is likely to appear in more than one of your styles. The following code shows two styles with a repeated setter.
 
 ```XML
 <Style x:Key="MyButtonStyle" TargetType="Button">
@@ -175,7 +175,7 @@ Suppose you want to create a cohesive look for your UI. You decide that all cont
 
 You can use style inheritance to factor out the duplicate setter into a base style. To create a derived style, set its **BasedOn** property to reference the base style. The new style inherits all the setters from its base style. The derived style can also add new setters or replace an inherited setter with one that contains a different value.
 
-The following code shows the previous example styles refactored into a hierarchy. The common setter appears only in the base style rather than being repeated. Notice that you use the **StaticResource** mark-up extension to look up the base style. You can't use **DynamicResource** in this situation.
+The following code shows the styles from the previous example refactored into a hierarchy. The common setter appears only in the base style rather than being repeated. Notice that you use the **StaticResource** mark-up extension to look up the base style. You can't use **DynamicResource** in this situation.
 
 ```XML
 <Style x:Key="MyVisualElementStyle" TargetType="VisualElement">

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-container-app-azure-container-apps.examine-azure-container-apps-containers-registries
+title: Examine Azure Container Apps containers and containers registries
+metadata:
+  title: Examine Azure Container Apps containers and containers registries
+  description: "Examine Azure Container Apps containers and containers registries"
+  ms.date: 11/06/2024
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - ai-learning-hub
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-examine-azure-container-apps-containers-registries.md)]

@@ -2,13 +2,14 @@
 uid: learn.wwl.explore-developer-tools-for-workspace-interaction.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/06/2023
+  ms.date: 07/25/2024
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 quiz:
   questions:
@@ -16,7 +17,7 @@ quiz:
     choices:
     - content: "The Azure Machine Learning studio."
       isCorrect: false
-      explanation: "Incorrect. During experimentation, a data scientist will want to edit and run the script multiple times. The studio may be ideal for initial exploration, but is not ideal for continuous experimentation."
+      explanation: "Incorrect. During experimentation, a data scientist will want to edit and run the script multiple times. The studio may be ideal for initial exploration, but isn't ideal for continuous experimentation."
     - content: "The Python SDK."
       isCorrect: true
       explanation: "Correct. The data scientist is likely to already be familiar with Python and can easily use the Python SDK to run the training script."
@@ -27,10 +28,10 @@ quiz:
     choices:
     - content: "The Azure Machine Learning studio."
       isCorrect: false
-      explanation: "Incorrect. The studio may be ideal for initial exploration, but is not ideal for configuring automation."
+      explanation: "Incorrect. The studio may be ideal for initial exploration, but isn't ideal for configuring automation."
     - content: "The Python SDK."
       isCorrect: false
       explanation: "Incorrect. Though the Python SDK can be used, the Azure CLI provides more options to trigger and automate Azure Machine Learning jobs."
     - content: "The Azure CLI."
       isCorrect: true
-      explanation: "Correct. The Azure CLI is designed for automating tasks. By using YAML files to define how the model must be trained, the machine learning tasks will be repeatable, consistent, and reliable."
+      explanation: "Correct. The Azure CLI is designed for automating tasks. By using YAML files to define how the model must be trained, the machine learning tasks are repeatable, consistent, and reliable."

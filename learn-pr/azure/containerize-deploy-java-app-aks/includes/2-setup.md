@@ -1,60 +1,54 @@
-In this unit, you'll use the Azure CLI to create the Azure resources that will be needed in later units. Before you start entering commands, make sure Docker Desktop is installed and running.
+In this unit, you use the Azure CLI to create the Azure resources needed in later units. Before you start entering commands, make sure Docker Desktop is installed and running.
 
-## Using the Azure CLI, perform the following steps
+To save time, you can instruct Azure to provision the resources first and then move on to the next unit. Azure Kubernetes Service (AKS) cluster creation can take up to 10 minutes. This process can run in the background while you proceed through subsequent units.
 
-> [!NOTE]
-> In an effort to preserve time, you'll instruct Azure to provision the resources first and move on to the next unit. Azure Kubernetes Cluster creation can take up to 10 minutes. This can, optionally, run in the background while you proceed through the next units.
+## Authenticate with Azure Resource Manager
 
-### Authenticate with Azure Resource Manager
+Use the following command to sign in:
 
-Sign in:
-
-```bash
+```azurecli
 az login
 ```
 
-### Select an Azure subscription
+## Select an Azure subscription
 
-Azure subscriptions are logical containers used to provision resources in Azure. You'll need to locate the subscription ID (SubscriptionId) that you plan to use in this module. List your Azure subscriptions:
+Azure subscriptions are logical containers used to provision resources in Azure. Use the following command to list your Azure subscriptions, then locate the subscription ID - the `SubscriptionId` value - that you plan to use in this module.
 
-```bash
+```azurecli
 az account list --output table
 ```
 
-Ensure your using an Azure subscription that allows you to create resources for the purposes of this module, substituting your subscription ID (SubscriptionId) of choice:
+Use the following command to ensure you're using an Azure subscription that enables you to create resources for the purposes of this module, substituting your preferred `SubscriptionId` value for the placeholder:
 
-```bash
-az account set --subscription "<YOUR_SUBSCRIPTION_ID>"
+```azurecli
+az account set --subscription "<your-subscription-ID>"
 ```
 
-### Define local variables
+## Define local variables
 
-To simplify the commands that we'll execute later, set up the following environment variables:
+To simplify the commands that you use later, set up the following environment variables. Be sure to replace the following placeholders with your own values:
 
-> [!NOTE]
-> You'll want to replace <YOUR_AZURE_REGION> with your region of choice, for example: eastus  
->
-> You'll want to replace <YOUR_CONTAINER_REGISTRY> with a unique value, because this is used to generate a unique FQDN (fully qualified domain name) for your Azure Container Registry when it is created; for example: someuniquevaluejavacontainerregistry.
->
-> You'll want to replace <YOUR_UNIQUE_DNS_PREFIX_TO_ACCESS_YOUR_AKS_CLUSTER> with a unique value as this is used to generate a unique FQDN (fully qualified domain name) for your Azure Kubernetes Cluster when it is created, for example: `someuniquevaluejavacontainerizationdemoaks`.
+- Replace `<your-Azure-region>` with your region of choice - for example, `eastus`.
+- Replace `<your-container-registry>` with a unique value. This value is used to generate a unique fully qualified domain name (FQDN) for your Azure container registry when it's created.
+- Replace `<your-unique-DNS-prefix-to-access-your-AKS-cluster>` with a unique value. This value is used to generate a unique FQDN for your AKS cluster when it's created.
 
-```bash
-AZ_RESOURCE_GROUP=javacontainerizationdemorg
-AZ_CONTAINER_REGISTRY=<YOUR_CONTAINER_REGISTRY>
-AZ_KUBERNETES_CLUSTER=javacontainerizationdemoaks
-AZ_LOCATION=<YOUR_AZURE_REGION>
-AZ_KUBERNETES_CLUSTER_DNS_PREFIX=<YOUR_UNIQUE_DNS_PREFIX_TO_ACCESS_YOUR_AKS_CLUSTER>
+```azurecli
+export AZ_RESOURCE_GROUP=java-containerization-demo-rg
+export AZ_CONTAINER_REGISTRY=<your-container-registry>
+export AZ_KUBERNETES_CLUSTER=java-containerization-demo-aks
+export AZ_LOCATION=<your-Azure-region>
+export AZ_KUBERNETES_CLUSTER_DNS_PREFIX=<your-unique-DNS-prefix-to-access-your-AKS-cluster>
 ```
 
-### Create an Azure Resource Group
+## Create an Azure resource group
 
-Azure resource groups are Azure containers, located within Azure subscriptions, for holding related resources for an Azure solution. Create a Resource group:
+Azure resource groups are Azure containers in Azure subscriptions for holding related resources for an Azure solution. Create a resource group by using the following command:
 
-```bash
+```azurecli
 az group create \
     --name $AZ_RESOURCE_GROUP \
     --location $AZ_LOCATION \
-    | jq
+| jq
 ```
 
 > [!NOTE]
@@ -62,44 +56,46 @@ az group create \
 >
 > If you don't want to use the `jq` tool, you can safely remove the `| jq` part of all commands in this module.
 
-### Create an Azure Container Registry
+## Create an Azure container registry
 
-Azure Container Registry allows you to build, store, and manage container images, which are ultimately where the container image for the Java app will be stored. Create a Container registry:
+Azure Container Registry enables you to build, store, and manage container images, including a container image for this Java app. Create a container registry by using the following command:
 
-```bash
+```azurecli
 az acr create \
     --resource-group $AZ_RESOURCE_GROUP \
     --name $AZ_CONTAINER_REGISTRY \
     --sku Basic \
-    | jq
+| jq
 ```
 
-Configure Azure CLI to use this newly created Azure Container Registry:
+Use the following command to configure the Azure CLI to use this newly created Azure container registry:
 
-```bash
-az configure \
-    --defaults acr=$AZ_CONTAINER_REGISTRY
+```azurecli
+az configure --defaults acr=$AZ_CONTAINER_REGISTRY
 ```
 
-Authenticate to the newly created Azure Container Registry:
+Use the following command to authenticate to the newly created Azure container registry:
 
-```bash
-az acr login -n $AZ_CONTAINER_REGISTRY
+> [!NOTE]
+> Before you run the `az acr login` command, ensure that Docker Desktop is running on your local environment. If it isn't running, you receive an error message similar to `Cannot connect to the Docker daemon at unix:///$HOME_DIR/.docker/run/docker.sock. Is the docker daemon running?`
+
+```azurecli
+az acr login --name $AZ_CONTAINER_REGISTRY
 ```
 
-### Create an Azure Kubernetes Cluster
+## Create an Azure Kubernetes Service cluster
 
-You'll need an Azure Kubernetes Cluster to deploy the Java app (container image) to. Create an AKS Cluster:
+You need an AKS cluster to deploy the Java app container image. Create an AKS cluster by using the following command:
 
-```bash
+```azurecli
 az aks create \
     --resource-group $AZ_RESOURCE_GROUP \
     --name $AZ_KUBERNETES_CLUSTER \
     --attach-acr $AZ_CONTAINER_REGISTRY \
     --dns-name-prefix=$AZ_KUBERNETES_CLUSTER_DNS_PREFIX \
     --generate-ssh-keys \
-    | jq
+| jq
 ```
 
 > [!NOTE]
-> Azure Kubernetes Cluster creation can take up to 10 minutes. Once you run the command above, you can optionally let it continue in your Azure CLI tab and move on to the next unit.
+> Creating an AKS cluster can take up to 10 minutes. After you run the previous command, you can let it continue in your Azure CLI tab and move on to the next unit.

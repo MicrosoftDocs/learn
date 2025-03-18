@@ -1,10 +1,10 @@
-The CEF Connector deploys a Syslog Forwarder server to support the communication between the appliance and Microsoft Sentinel. The server consists of a dedicated Linux machine with the Log Analytics agent for Linux installed.  Many of the Microsoft Sentinel Data Connectors that are vendor-specific utilize CEF Connector.
+The CEF Connector deploys a Syslog Forwarder server to support the communication between the appliance and Microsoft Sentinel. The server consists of a dedicated Linux machine with the Log Analytics agent for Linux installed. Many of the Microsoft Sentinel Data Connectors that are vendor-specific utilize CEF Connector.
 
-The following diagram displays the setup for a Linux VM in Azure.  The on-premises Syslog sources securely send events to an Azure Linux VM.  The Linux VM with the Log Analytics agent installed then forwards the logs to the Microsoft Sentinel workspace.
+The following diagram displays the setup for a Linux VM in Azure. The on-premises Syslog sources securely send events to an Azure Linux VM. The Linux VM with the Log Analytics agent installed then forwards the logs to the Microsoft Sentinel workspace.
 
 :::image type="content" source="../media/learn-path5-01.png" alt-text="Diagram of the Azure VM hosting Syslog connector architecture.":::
 
-Alternatively, the following diagram displays the setup if you use a VM in another cloud or an on-premises machine.  The on-premises Syslog sources securely send events to a Linux VM.  The Linux VM with the Log Analytics agent installed then securely forwards the logs to the Microsoft Sentinel workspace.
+Alternatively, the following diagram displays the setup if you use a VM in another cloud or an on-premises machine. The on-premises Syslog sources securely send events to a Linux VM. The Linux VM with the Log Analytics agent installed then securely forwards the logs to the Microsoft Sentinel workspace.
 
 :::image type="content" source="../media/learn-path5-02.png" alt-text="Diagram of the on-premises Syslog connector architecture.":::
 
@@ -20,8 +20,6 @@ Make sure the Linux machine you use as a log forwarder is running one of the fol
 
 - 64-bit
 
-  - CentOS 7 and 8, including minor versions (not 6)
-
   - Amazon Linux 2017.09
 
   - Oracle Linux 7
@@ -36,8 +34,6 @@ Make sure the Linux machine you use as a log forwarder is running one of the fol
 
 - 32-bit
 
-  - CentOS 7 and 8, including minor versions (not 6)
-
   - Oracle Linux 7
 
   - Red Hat Enterprise Linux (RHEL) Server 7 and 8, including minor versions (not 6)
@@ -46,13 +42,13 @@ Make sure the Linux machine you use as a log forwarder is running one of the fol
 
   - Ubuntu Linux 14.04 LTS and 16.04 LTS
 
-  - Daemon versions
+- Daemon versions
 
   - Syslog-ng: 2.1 - 3.22.1
 
   - Rsyslog: v8
 
-  - Syslog RFCs supported
+- Syslog RFCs supported
 
   - Syslog RFC 3164
 

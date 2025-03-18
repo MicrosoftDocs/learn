@@ -1,14 +1,12 @@
-
-
 Outside of relatively rare cross-zone scenarios, typical disaster recovery (DR) designs rely on failover to a secondary Azure region. Each tier uses a different strategy to provide disaster recovery protection.
 
 ## Application servers
 
-SAP application servers do not contain business data. On Azure, a simple DR strategy is to create SAP application servers in the secondary region, then shut them down. Upon any configuration changes or kernel updates on the primary application server, the same changes must be applied to the virtual machines in the secondary region. For example, copy the SAP kernel executables to the DR virtual machines. For automatic replication of application servers to a secondary region, Azure Site Recovery is the recommended solution.
+SAP application servers don't contain business data. On Azure, a simple DR strategy is to create SAP application servers in the secondary region, then shut them down. Upon any configuration changes or kernel updates on the primary application server, the same changes must be applied to the virtual machines in the secondary region. For example, copy the SAP kernel executables to the DR virtual machines. For automatic replication of application servers to a secondary region, Azure Site Recovery is the recommended solution.
 
 ## Central Services servers
 
-This component of the SAP application stack also does not persist business data. You can build a VM in the secondary region to run the Central Services role. The only content from the primary Central Services node to synchronize is the **/sapmnt** share content. Also, if configuration changes or kernel updates take place on the primary Central Services servers, they must be repeated on the VM in the secondary region running Central Services. To synchronize the two servers, you can use either Azure Site Recovery, to replicate the cluster nodes, or use a regularly scheduled copy job to copy **/sapmnt** to the DR side. For Central Services Linux and Windows VMs, use Azure Site Recovery to replicate the cluster nodes and storage. Alternatively, you can create a three-node geo-cluster using a High Availability Extension for Linux VMs or multi-site Failover Cluster for Windows VMs.
+This SAP application stack component doesn't store business data. You can construct a virtual machine in the secondary region to operate the Central Services role. The only content to sync from the primary Central Services node is the **/sapmnt** share content. Additionally, any configuration changes or kernel updates on the primary Central Services servers need to be duplicated on the secondary region's virtual machine running Central Services. You can sync the two servers through Azure Site Recovery for cluster node replication, or a regular copy job to duplicate **/sapmnt** to the disaster recovery side. For Central Services Linux and Windows virtual machines, use Azure Site Recovery for cluster nodes and storage replication. Alternatively, you can establish a three-node geo-cluster using a High Availability Extension for Linux virtual machines or a multi-site Failover Cluster for Windows virtual machines. Note, Azure Site Recovery doesn't support ultra disks.
 
 ## Database servers
 

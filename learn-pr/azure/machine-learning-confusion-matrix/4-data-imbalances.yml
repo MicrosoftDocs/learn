@@ -2,13 +2,14 @@
 uid: learn.machinelearning.evaluate-real-world-models.data-imbalances
 title: Data imbalances
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Data imbalances
   description: Conceptual unit about data imbalances in machine learning
-  ms.date: 05/25/2021
-  author: TomReidNZ
-  ms.author: jasdeb
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/20/2024
+  author: s-polly
+  ms.author: scottpolly
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/4-data-imbalances.md)]

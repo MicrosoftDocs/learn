@@ -2,24 +2,34 @@
 uid: learn.wwl.design-implement-azure-expressroute
 metadata:
   title: Design and implement Azure ExpressRoute
-  description: "You will learn how to design and implement Azure ExpressRoute, ExpressRoute Global Reach, ExpressRoute FastPath, and when to use each service according to your environments requirements."
-  ms.date: 03/02/2023
+  description: "You learn how to design and implement Azure ExpressRoute, ExpressRoute Global Reach, ExpressRoute FastPath."
+  ms.date: 12/06/2024
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
+  ms.service: azure-expressroute
+  ai-usage: human-only
 title: Design and implement Azure ExpressRoute
-summary: You will learn how to design and implement Azure ExpressRoute, ExpressRoute Global Reach, ExpressRoute FastPath, and when to use each service according to your environments requirements.
+summary: You learn how to design and implement Azure ExpressRoute, ExpressRoute Global Reach, ExpressRoute FastPath.
 abstract: |
-  At the end of this module, you will be able to:
-  - Design and implement ExpressRoute
-  - Design and implement ExpressRoute Global Reach
-  - Design and implement ExpressRoute FastPath
-  - Troubleshoot ExpressRoute connection issues
+  At the end of this module, you are able to:
+
+  -   Design and implement ExpressRoute
+
+  -   Design and implement ExpressRoute Global Reach
+
+  -   Design and implement ExpressRoute FastPath
+
+  -   Troubleshoot ExpressRoute connection issues
 prerequisites: |
-  - You should have experience with networking concepts, such as IP addressing, Domain Name System (DNS), and routing
-  - You should have experience with network connectivity methods, such as VPN or WAN
-  - You should have experience with the Azure portal and Azure PowerShell
+  -   You should have experience with networking concepts, such as IP addressing, Domain Name System (DNS), and routing
+
+  -   You should have experience with network connectivity methods, such as VPN or WAN
+
+  -   You should have experience with the Azure portal and Azure PowerShell
 iconUrl: /training/achievements/express-route-design-implement.svg
 levels:
 - intermediate

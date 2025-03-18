@@ -1,9 +1,8 @@
-
 Code challenges will reinforce what you've learned and help you gain some confidence before continuing on.
 
 ## Math class methods challenge
 
-In this challenge, you'll use either Intellisense or docs.microsoft.com to find and call a method that returns the larger of two numbers.
+In this challenge, you'll use either Intellisense or learn.microsoft.com to find and call a method that returns the larger of two numbers.
 
 ## Code challenge: Implement a method of the Math class that returns the larger of two numbers
 
@@ -27,7 +26,7 @@ Here are your challenge requirements:
 
 1. Find a method of the `System.Math` class that returns the larger of two numbers.
 
-    You can use either Visual Studio Code "Intellisense" or docs.microsoft.com to find the method and determine how to call it properly.
+    You can use either Visual Studio Code "Intellisense" or learn.microsoft.com to find the method and determine how to call it properly.
 
 1. Use the method that you found to assign a value to the variable named `largerValue`.
 

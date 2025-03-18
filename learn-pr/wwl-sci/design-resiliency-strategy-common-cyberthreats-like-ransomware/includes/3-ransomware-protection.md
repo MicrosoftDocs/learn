@@ -1,5 +1,6 @@
 
 Microsoft best practices for ransomware protection are based on a three step approach:
+
 1. Prepare your recovery plan
 2. Limit the scope of the damage
 3. Make it hard to get in
@@ -52,7 +53,7 @@ As mentioned earlier, you should assume that at some point in time you'll fall v
 
 ### What to do during an attack
 
-If you're attacked, your prioritized back up list becomes your prioritized restore list. Before you restore, validate again that your backup is good. You may be able to look for malware inside the backup.
+If you're attacked, your prioritized backup list becomes your prioritized restore list. Before you restore, validate again that your backup is good. You may be able to look for malware inside the backup.
 
 ### Post attack or simulation
 

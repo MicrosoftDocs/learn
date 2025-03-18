@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-llmops-azure-databricks.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/23/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Which of the following best describes the role of LLMOps in the context of Azure Databricks?"
+    choices:
+    - content: "Automating the deployment and scaling of traditional machine learning models"
+      isCorrect: false
+      explanation: "Incorrect. LLMOps isn't about automating the deployment and scaling of traditional machine learning models."
+    - content: "Managing the lifecycle of language models, including training, deployment, monitoring, and governance."
+      isCorrect: true
+      explanation: "Correct. LLMOps focuses on managing the entire lifecycle of language models, which includes training, deploying, monitoring, and governing these models."
+    - content: "Optimizing SQL queries within Azure Databricks."
+      isCorrect: false
+      explanation: "Incorrect. LLMOps isn't about optimizing SQL queries within Azure Databricks."
+  - content: "In the LLMOps workflow within Azure Databricks, which tool or framework is primarily used for monitoring and logging the performance of large language models?"
+    choices:
+    - content: "MLflow"
+      isCorrect: true
+      explanation: "Correct. MLflow is a key tool in the LLMOps workflow on Azure Databricks, used for tracking experiments, logging model performance, and monitoring the deployment of large language models. It provides a comprehensive platform for managing and improving model performance over time."
+    - content: "Delta Lake"
+      isCorrect: false
+      explanation: "Incorrect. Delta Lake isn't used for monitoring and logging the performance of large language models."
+    - content: "Apache Spark"
+      isCorrect: false
+      explanation: "Incorrect. Apache Spark isn't used for monitoring and logging the performance of large language models."
+  - content: "When you implement LLMOps with Azure Databricks, which of the following considerations is key for ensuring responsible AI practices?"
+    choices:
+    - content: "Minimizing the size of the model to reduce costs."
+      isCorrect: false
+      explanation: "Incorrect. Minimizing the size of the model to reduce costs isn't a key consideration for ensuring responsible AI practices."
+    - content: "Using Unity Catalog for data governance and access control."
+      isCorrect: true
+      explanation: "Correct. Unity Catalog plays a crucial role in LLMOps by enforcing data governance and access control, which is vital for responsible AI practices. Ensuring that only authorized personnel have access to sensitive data and models is key to maintaining ethical standards and compliance within the organization."
+    - content: "Running models only on-demand to save compute resources."
+      isCorrect: false
+      explanation: "Incorrect. Running model only on-demand to save compute resources isn't a key consideration for ensuring responsible AI practices."

@@ -2,13 +2,14 @@
 uid: learn.wwl.troubleshoot-active-directory.recover-ad-ds-database
 title: Recover the AD DS database
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Recover the AD DS database
   description: "Recover the AD DS database"
-  ms.date: 06/08/2022
+  ms.date: 01/10/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 10

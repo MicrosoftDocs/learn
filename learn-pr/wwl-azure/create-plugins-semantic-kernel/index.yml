@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.wwl.create-plugins-semantic-kernel
+metadata:
+  title: Run prompts with Semantic Kernel
+  description: "This module explores Semantic Kernel SDK plugins. Learn how plugins to the SDK are used to accomplish customized tasks and create intelligent applications."
+  ms.date: 01/24/2025
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
+  ms.service: semantic-kernel
+  ai-usage: human-only
+title: Run prompts with Semantic Kernel
+summary: This module explores Semantic Kernel SDK plugins. Learn how plugins to the SDK are used to accomplish customized tasks and create intelligent applications.
+abstract: |
+  -   Understand the purpose of Semantic Kernel plugins
+
+  -   Learn how to use premade plugins
+
+  -   Learn how to create your own plugins
+prerequisites: |
+  -   Experience programming in C#.
+
+  -   Visual Studio Code IDE installed.
+
+  -   Familiarity with Azure and the Azure portal.
+
+  -   Access to Azure OpenAI Services.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- dotnet
+- vs-code
+- azure-openai
+units:
+- learn.wwl.create-plugins-semantic-kernel.introduction
+- learn.wwl.create-plugins-semantic-kernel.optimize-language-model-prompts
+- learn.wwl.create-plugins-semantic-kernel.use-semantic-kernel-prompt-templates
+- learn.wwl.create-plugins-semantic-kernel.exercise-use-semantic-kernel-prompt-templates
+- learn.wwl.create-plugins-semantic-kernel.use-handlebars-prompt-templates
+- learn.wwl.create-plugins-semantic-kernel.exercise-use-handlebars-prompts-templates
+- learn.wwl.create-plugins-semantic-kernel.store-chat-history
+- learn.wwl.create-plugins-semantic-kernel.exercise-store-chat-history
+- learn.wwl.create-plugins-semantic-kernel.knowledge-check
+- learn.wwl.create-plugins-semantic-kernel.summary
+badge:
+  uid: learn.wwl.create-plugins-semantic-kernel.badge

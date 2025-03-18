@@ -33,7 +33,7 @@ Containers are the primary unit of scalability in Azure Cosmos DB for NoSQL. Whe
 - The parent database
 - A unique name for the container with the database
 - The path for the partition key value
-- *Optional*: provisioned throughput if not inferred from database provisioning.
+- *Optional*: provisioned throughput if not using a Serverless account.
 
 The Azure Cosmos DB service will automatically and transparently partition your data based on the value of the partition key for each individual item.
 

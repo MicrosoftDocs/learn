@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-accelerate-app-development-using-github-copilot-tools.exercise-analyze-document-code-github-copilot
+title: Exercise - Analyze and document code using GitHub Copilot tools
+metadata:
+  title: Exercise - Analyze and document code using GitHub Copilot tools
+  description: "Exercise - Analyze and document code using GitHub Copilot tools"
+  ms.date: 11/26/2024
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 20
+content: |
+  [!include[](includes/3-exercise-analyze-document-code-github-copilot.md)]

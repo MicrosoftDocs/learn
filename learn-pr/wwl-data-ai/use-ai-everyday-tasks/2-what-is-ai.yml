@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-everyday-tasks.what-is-ai
+title: What is AI?
+metadata:
+  title: What is AI?
+  description: "What is AI?"
+  ms.date: 03/17/2025
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-what-is-ai.md)]

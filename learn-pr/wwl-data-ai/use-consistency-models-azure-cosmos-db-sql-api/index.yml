@@ -1,13 +1,16 @@
 ### YamlMime:Module
 uid: learn.wwl.use-consistency-models-azure-cosmos-db-sql-api
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use consistency models in Azure Cosmos DB for NoSQL
   description: "Configure consistency on a sliding scale for Azure Cosmos DB for NoSQL."
   ms.date: 10/17/2022
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: azure-cosmos-db
+  ms.subservice: nosql
 title: Use consistency models in Azure Cosmos DB for NoSQL
 summary: Configure consistency on a sliding scale for Azure Cosmos DB for NoSQL.
 abstract: |
@@ -24,7 +27,7 @@ roles:
 products:
 - azure-cosmos-db
 subjects:
-- database
+- databases
 units:
 - learn.wwl.use-consistency-models-azure-cosmos-db-sql-api.introduction
 - learn.wwl.use-consistency-models-azure-cosmos-db-sql-api.understand

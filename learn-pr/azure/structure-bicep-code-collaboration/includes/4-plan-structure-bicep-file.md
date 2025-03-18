@@ -5,6 +5,7 @@ Bicep gives you the flexibility to decide how to structure your code. In this un
 Your Bicep templates can contain many elements, including parameters, variables, resources, modules, outputs, and a `targetScope` for the entire template. Bicep doesn't enforce an order for your elements to follow. However, it's important to consider the order of your elements to ensure that your template is clear and understandable.
 
 There are two main approaches to ordering your code:
+
 * Group elements by element type
 * Group elements by resource
 
@@ -12,7 +13,7 @@ You and your team should agree on one and use it consistently.
 
 ### Group elements by element type
 
-You can group all elements of the same type together. So, all your parameters would go in one place, usually at the top of the file. Variables come next, followed by resources and modules, and outputs are at the bottom. For example, you might have a Bicep file that deploys an Azure SQL database and a storage account.
+You can group all elements of the same type together. All your parameters would go in one place, usually at the top of the file. Variables come next, followed by resources and modules, and outputs are at the bottom. For example, you might have a Bicep file that deploys an Azure SQL database and a storage account.
 
 When you group your elements by type, they might look like this:
 
@@ -21,21 +22,21 @@ When you group your elements by type, they might look like this:
 > [!TIP]
 > If you follow this convention, consider putting the `targetScope` at the top of the file.
 
-This ordering makes sense when you're used to other infrastructure as code languages (for example, the language in Azure Resource Manager templates). It also can make your template easy to understand, because it's clear where to look for specific types of elements. In longer templates, though, it can be challenging to navigate and jump between the elements.
+This ordering makes sense when you're used to other infrastructure as code languages (for example, the language in Azure Resource Manager templates). It can also make your template easy to understand, because it's clear where to look for specific types of elements. In longer templates, though, it can be challenging to navigate and jump between the elements.
 
 You still have to decide how to order the elements within these categories. It's a good idea to group related parameters together. For example, all parameters that are about a storage account belong together and, within that, the storage account's SKU parameters belong together.
 
-Similarly, you can group related resources together. Doing so helps anyone who uses your template to quickly navigate it, and to understand the important parts of the template.
+Similarly, you can group related resources together. Doing so helps anyone who uses your template to quickly navigate it and to understand the important parts of the template.
 
-Sometimes, you create a template that deploys a primary resource, with multiple secondary supporting resources. For example, you might create a template to deploy a website that's hosted on Azure App Service. The primary resource is the App Service app. Secondary resources in the same template might include the App Service plan, storage account, Application Insights instance, and others. When you have a template like this, it's a good idea to put the primary resource or resources at the top of the resource section of the template, so that anyone who opens the template can quickly identify the purpose of the template and can find the important resources.
+Sometimes, you create a template that deploys a primary resource with multiple secondary supporting resources. For example, you might create a template to deploy a website that's hosted on Azure App Service. The primary resource is the App Service app. Secondary resources in the same template might include the App Service plan, storage account, Application Insights instance, and others. When you have a template like this, it's a good idea to put the primary resource or resources at the top of the resource section of the template, so that anyone who opens the template can quickly identify the template's purpose and can find the important resources.
 
 ### Group elements by resource
 
-Alternatively, you can group your elements based on the type of resources that are being deployed. Continuing the preceding example, you could group all the parameters, variables, resources, and outputs that relate to the Azure SQL database resources. You could then add the parameters, variables, resources, and outputs for the storage account, as shown here:
+Alternatively, you can group your elements based on the type of resources you're deploying. Continuing the preceding example, you could group all the parameters, variables, resources, and outputs that relate to the Azure SQL database resources. You could then add the parameters, variables, resources, and outputs for the storage account, as shown here:
 
 :::image type="content" source="../media/4-group-resource.png" alt-text="Diagram showing elements grouped by resource. Storage account elements are grouped, followed by Azure SQL database elements." border="false":::
 
-Grouping by resource can make it easier to read your template, because all the elements you need for a specific resource are in one place. But it makes it harder to quickly check how specific element types are declared when, for example, you want to review all your parameters.
+Grouping by resource can make it easier to read your template, because all the elements you need for a specific resource are in one place. However, it makes it harder to quickly check how specific element types are declared when, for example, you want to review all your parameters.
 
 You also need to consider how to handle parameters and variables that are common to multiple resources, such as an `environmentType` parameter when you use a configuration map. Common parameters and variables should be placed together, usually at the top of the Bicep file.
 
@@ -68,13 +69,13 @@ Bicep allows you to explicitly specify a dependency by using the `dependsOn` pro
 
 ## How do you express parent-child relationships?
 
-Azure Resource Manager and Bicep have the concept of _child resources_, which makes sense only when they're deployed within the context of their parent. For example, an Azure SQL database is a child of a SQL server instance. There are several ways to define child resources, but in most cases, it's a good idea to use the `parent` property. This helps Bicep to understand the relationship so it can provide validation in Visual Studio Code. And it makes the relationship clear to anyone else who reads the template.
+Azure Resource Manager and Bicep have the concept of _child resources_, which makes sense only when they're deployed within the context of their parent. For example, an Azure SQL database is a child of a SQL server instance. There are several ways to define child resources, but in most cases, it's a good idea to use the `parent` property. This helps Bicep to understand the relationship so it can provide validation in Visual Studio Code, and it makes the relationship clear to anyone else who reads the template.
 
 ## How do you set resource properties?
 
 You need to specify the values for resource properties in your Bicep files. It's a good idea to be thoughtful when you're hard-coding values into your resource definitions. If you know the values won't change, hard-coding them might be better than using another parameter that makes your template harder to test and work with. If the values might change, though, consider defining them as parameters or variables to make your Bicep code more dynamic and reusable.
 
-When you do hard-code values, it's good to make sure that they're understandable to others. For example, if a property has to be set to a specific value for the resource to behave correctly for your solution, consider creating a well-named variable that provides an explanation, and then assigning the value by using the variable. For situations where a variable name doesn't tell the whole story, consider adding a comment. You'll learn more about comments later in this module.
+When you do hard-code values, it's good to make sure that they're understandable to others. For example, if a property has to be set to a specific value for the resource to behave correctly for your solution, consider creating a well-named variable that provides an explanation, then assigning the value by using the variable. For situations where a variable name doesn't tell the whole story, consider adding a comment. You'll learn more about comments later in this module.
 
 For some resource properties, to construct values automatically, you need to create complex expressions that include functions and string interpolation. Your Bicep code is usually clearer when you declare variables and reference them in the resource code blocks.
 
@@ -87,7 +88,7 @@ For some resource properties, to construct values automatically, you need to cre
 > output hostname string = '${app.name}.azurewebsites.net'
 > ```
 >
-> The above approach will break if App Service changes the way they assign hostnames to apps, or if you deploy to Azure environments that use different URLs.
+> The preceding approach will break if App Service changes the way they assign hostnames to apps, or if you deploy to Azure environments that use different URLs.
 >
 > Instead, use the `defaultHostname` property of the app resource:
 >
@@ -97,10 +98,10 @@ For some resource properties, to construct values automatically, you need to cre
 
 ## How do you use version control effectively?
 
-Version control systems such as Git can help simplify your work when you're refactoring code.
+Version-control systems such as Git can help simplify your work when you're refactoring code.
 
-Because version control systems are designed to keep track of the changes to your files, you can use them to easily return to an older version of your code if you make a mistake. It's a good idea to commit your work often so that you can go back to the exact point in time that you need.
+Because version-control systems are designed to keep track of the changes to your files, you can use them to easily return to an older version of your code if you make a mistake. It's a good idea to commit your work often so that you can go back to the exact point in time that you need.
 
 Version control also helps you to remove old code from your Bicep files. What if your Bicep code includes a resource definition that you don't need anymore? You might need the definition again in the future, and it's tempting to simply comment it out and keep it in the file. But really, keeping it there only clutters up your Bicep file, making it hard for others to understand why the commented-out resources are still there.
 
-Another consideration is that it's possible for someone to accidentally uncomment the definition, with unpredictable or potentially adverse results. When you use a version control system, you can simply remove the old resource definition. If you need the definition again in the future, you can retrieve it from the file history.
+Another consideration is that it's possible for someone to accidentally uncomment the definition, with unpredictable or potentially adverse results. When you use a version-control system, you can simply remove the old resource definition. If you need the definition again in the future, you can retrieve it from the file history.

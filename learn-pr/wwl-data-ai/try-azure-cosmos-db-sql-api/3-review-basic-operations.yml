@@ -2,15 +2,17 @@
 uid: learn.wwl.try-azure-cosmos-db-sql-api.review-basic-operations
 title: Review basic operations
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Review basic operations
   description: "Review basic operations"
-  ms.date: 12/19/2022
+  ms.date: 10/23/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/3-review-basic-operations.md)]
+

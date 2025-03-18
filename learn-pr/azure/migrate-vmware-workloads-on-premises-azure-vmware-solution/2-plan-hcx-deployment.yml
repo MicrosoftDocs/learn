@@ -2,25 +2,24 @@
 uid: learn.migrate-vmware-workloads-on-premises-azure-vmware-solution.plan-hcx-deployment
 title: Plan HCX deployment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Plan HCX deployment
   description: Plan HCX deployment.
-  ms.date: 6/17/2021
-  author: sbkuehn
-  ms.author: shkuehn
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.contributors:
-  - shkuehn-07022021
-  ms.custom:
-  - team=cloud_advocates
+  ms.date: 08/01/2024
+  author: amycolyer
+  ms.author: amycolyer
+  ms.topic: unit
+  ms.contributors: shkuehn-07022021, orthomas-08092023
+  ms.custom: team=cloud_advocates
 durationInMinutes: 10
 content: |
   [!include[](includes/2-plan-hcx-deployment.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "At a minimum, how many IPs does Mariana need to identify on-premises for a network segment to use with VMware HCX?"
+  - content: "At a minimum, how many IPs do you need to identify on-premises for a network segment to use with VMware HCX?"
     choices:
     - content: "3 IPs"
       isCorrect: false
@@ -30,13 +29,13 @@ quiz:
       explanation: "For a minimum deployment, 10 IPs is too many to assign to the HCX Connector on-premises."
     - content: "2 IPs"
       isCorrect: true
-      explanation: "At a minimum, identify 2 IPs in the on-premises network segment for the VMware HCX Connector deployment. Sonila might need a bigger number of IPs, depending on the scale of the deployment."
-  - content: "What version of vSphere on-premises is compatible with HCX 4.0 without needing extra configuration changes?"
+      explanation: "At a minimum, identify 2 IPs in the on-premises network segment for the VMware HCX Connector deployment. Sonia might need a bigger number of IPs, depending on the scale of the deployment."
+  - content: "What version of vSphere on-premises is compatible with HCX 4.8 without needing extra configuration changes?"
     choices:
-    - content: "vSphere 6.0"
+    - content: "vSphere 7.0"
       isCorrect: true
       explanation: "vSphere 6.0 is compatible with HCX 4.0."
-    - content: "vSphere 5.0"
+    - content: "vSphere 6.0"
       isCorrect: false
       explanation: "vSphere 5.0 isn't directly compatible with HCX 4.0 without factoring in extra configuration changes."
     - content: "vSphere 5.1"
@@ -47,9 +46,10 @@ quiz:
     - content: "4"
       isCorrect: false
       explanation: "The VMware HCX Advanced Connector doesn't support 4 site connections."
-    - content: "3"
+    - content: "10"
       isCorrect: true
-      explanation: "The VMware HCX Advanced Connector supports up to 3 site connections."
+      explanation: "The VMware HCX Advanced Connector supports up to 10 site connections."
     - content: "8"
       isCorrect: false
       explanation: "The VMware HCX Advanced Connector doesn't support 8 site connections."
+

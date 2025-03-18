@@ -2,15 +2,16 @@
 uid: learn.wwl.protecting-monitoring-tuning-migrated-database.protecting-database-server
 title: Protect a database and server
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Protect a database and server
   description: "Protect a database and server"
-  ms.date: 09/26/2022
+  ms.date: 10/14/2024
   author: wwlpublish
-  ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.author: jupadrao
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 9
 content: |
   [!include[](includes/2-protect-database-server.md)]

@@ -1,4 +1,4 @@
-Your team has built some security-hardened Bicep files that are compliant with your company's new governance model. One of the hardened Bicep files deploys a Linux-based Azure App Service app. In this exercise, you'll use a deployment pipeline to publish the Bicep file as a template spec.
+Your team has some security-hardened Bicep files that are compliant with your company's new governance model. One of the hardened Bicep files deploys a Linux-based Azure App Service app. In this exercise, you use a deployment pipeline to publish the Bicep file as a template spec.
 
 During the process, you'll:
 
@@ -36,7 +36,7 @@ Now, you can add a second stage to publish the template spec to Azure.
 
    :::code language="yaml" source="code/4-pipeline.yml" range="37-55" :::
 
-   This stage checks out the code from your repository and signs in to Azure by using service connection that you created earlier. It then runs the `az ts create` command to publish the template spec to Azure.
+   This stage checks out the code from your repository and signs in to Azure using the service connection that you created. It then runs the `az ts create` command to publish the template spec to Azure.
 
    > [!TIP]
    > To keep things simple, your pipeline uses the pipeline's _build number_ as the template spec's version number. In the next unit, you'll learn about a more complex versioning scheme.

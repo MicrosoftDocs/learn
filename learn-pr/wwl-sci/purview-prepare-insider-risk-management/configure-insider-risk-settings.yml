@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-prepare-insider-risk-management.configure-insider-risk-settings
+title: Configure settings for Insider Risk Management
+metadata:
+  title: Configure settings for Insider Risk Management
+  description: "Configure settings for Insider Risk Management"
+  ms.date: 1/3/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/configure-insider-risk-settings.md)]

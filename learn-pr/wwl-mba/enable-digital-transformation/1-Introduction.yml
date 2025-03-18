@@ -2,13 +2,14 @@
 uid: learn-wwl.enable-digital-transformation.1-introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 10/14/2020
   author: raniabayoumy
   ms.author: rabayoum
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 1
 content: |

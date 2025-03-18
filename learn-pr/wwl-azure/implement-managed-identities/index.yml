@@ -3,22 +3,30 @@ uid: learn.wwl.implement-managed-identities
 metadata:
   title: Implement managed identities
   description: "Implement managed identities"
-  ms.date: 04/24/2023
+  ms.date: 07/16/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: entra-id
+  ai-usage: human-only
 title: Implement managed identities
 summary: Learn how managed identities can help you deploy secure solutions on Azure without the need to manage credentials.
 abstract: |
   After completing this module, you'll be able to:
-  * Explain the differences between the two types of managed identities
-  * Describe the flows for user- and system-assigned managed identities
-  * Configure managed identities
-  * Acquire access tokens by using REST and code
+
+  -   Explain the differences between the two types of managed identities
+
+  -   Describe the flows for user- and system-assigned managed identities
+
+  -   Configure managed identities
+
+  -   Acquire access tokens by using REST and code
 prerequisites: |
-  * You should be experienced with developer concepts and terminology.
-  * An understanding of cloud computing and some experience with the Azure portal.
+  -   You should be experienced with developer concepts and terminology.
+
+  -   An understanding of cloud computing and some experience with the Azure portal.
 iconUrl: /training/achievements/manage-identities-implement.svg
 levels:
 - intermediate

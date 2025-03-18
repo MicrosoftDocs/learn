@@ -4,7 +4,7 @@ When you create your shared access signature (SAS), a uniform resource identifie
 
 ### Things to know about URI definitions
 
-Let's look at a sample URI definition and examine the parameters. This sample creates a service-level SAS that grants read and write permissions to a blob. Consider how you might configure the parameters to support your Azure Storage resources.
+Let's look at an example URI definition and examine the parameters. This example creates a service-level SAS that grants read and write permissions to a blob. Consider how you might configure the parameters to support your Azure Storage resources.
 
 ```URI
 https://myaccount.blob.core.windows.net/?restype=service&comp=properties&sv=2015-04-05&ss=bf&st=2015-04-29T22%3A18%3A26Z&se=2015-04-30T02%3A23%3A26Z&sr=b&sp=rw&sip=168.1.5.60-168.1.5.70&spr=https&sig=F%6GRVAZ5Cdj2Pw4tgU7IlSTkWgn7bUkkAg8P6HESXwmf%4B
@@ -21,4 +21,10 @@ https://myaccount.blob.core.windows.net/?restype=service&comp=properties&sv=2015
 | **Permissions** | **`sp`**`=rw` | Lists the permissions to grant. This example grants access to read and write operations. |
 | **IP range** | **`sip`**`=168.1.5.60-168.1.5.70` | Specifies a range of IP addresses from which a request is accepted. This example defines the IP address range 168.1.5.60 through 168.1.5.70.|
 | **Protocol** | **`spr`**`=https` | Specifies the protocols from which Azure Storage accepts the SAS. This example indicates that only requests by using HTTPS are accepted. |
-| **Signature** | **`sig`**`=F%6GRVAZ5Cdj2Pw4tgU7Il` `STkWgn7bUkkAg8P6HESXwmf%4B` | Specifies that access to the resource is authenticated by using an HMAC signature. The signature is computed over a string-to-sign with a key by using the SHA256 algorithm, and encoded by using Base64 encoding. |
+| **Signature** | **`sig`**`=F%6GRVAZ5Cdj2Pw4tgU7Il` `STkWgn7bUkkAg8P6HESXwmf%4B` | Specifies that access to the resource is authenticated by using a Hash-Based Message Authentication Code (HMAC) signature. The signature is computed with a key using the SHA256 algorithm, and encoded by using Base64 encoding. |
+
+### Things to know about this exam topic
+
+[Create and use shared access signature (SAS) tokens](/credentials/certifications/resources/study-guides/az-104) is covered on the AZ-104 Azure Administrator certification. If you are taking the exam, here is short snippet from the [Implement and manage storage](/shows/exam-readiness-zone/preparing-for-az-104-implement-and-manage-storage-2-of-5) exam preparation video. 
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=02f55e9b-5b93-4867-800b-b60d42b1c979]

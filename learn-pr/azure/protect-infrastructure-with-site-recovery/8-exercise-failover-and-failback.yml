@@ -1,14 +1,18 @@
 ### YamlMime:ModuleUnit
 uid: learn.protect-infrastructure-with-azure-site-recovery.8-exercise-failover-and-failback
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Failover and failback using Azure Site Recovery
   description: Exercise - Failover and failback using Azure Site Recovery
-  ms.date: 11/15/2019
+  ms.date: 01/25/2025
   author: ankitaduttaMSFT
   ms.author: ankitadutta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurepowershell
 title: Exercise - Failover and failback using Azure Site Recovery
 durationInMinutes: 10
 content: |
   [!include[](includes/8-exercise-failover-and-failback.md)]
+

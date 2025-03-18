@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-arc-enabled-data-services.3-fundamentals
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Enable hybrid computing with Azure Arc-enabled data services
   description: In this unit, you learn about the basics and architecture of Azure Arc-enabled data services.
-  ms.date: 06/28/2021
+  ms.date: 03/07/2023
   author: MikeRayMSFT
   ms.author: mikeray
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: e2e-hybrid
 title: Enable hybrid computing with Azure Arc-enabled data services
 durationInMinutes: 10
@@ -64,3 +65,4 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. The Azure CLI is an interface that uses the Azure Resource Manager"
       
+

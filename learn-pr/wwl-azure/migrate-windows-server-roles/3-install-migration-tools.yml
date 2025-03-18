@@ -4,11 +4,10 @@ title: Install the Migration Tools
 metadata:
   title: Install the Migration Tools
   description: "Install the Migration Tools"
-  ms.date: 04/06/2022
+  ms.date: 01/15/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

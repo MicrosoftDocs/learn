@@ -1,13 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.author-complex-queries-azure-cosmos-db-sql-api
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Author complex queries with the Azure Cosmos DB for NoSQL
   description: "Create SQL queries for Azure Cosmos DB for NoSQL that uses subqueries or cross-products."
-  ms.date: 10/18/2022
+  ms.date: 03/10/2025
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: azure-cosmos-db
 title: Author complex queries with the Azure Cosmos DB for NoSQL
 summary: Create SQL queries for Azure Cosmos DB for NoSQL that uses subqueries or cross-products.
 abstract: |
@@ -15,7 +17,7 @@ abstract: |
   - Implement a correlated subquery
   - Create a cross-product query
 prerequisites: |
-  Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
+  Before starting this module, you should have experience in building cloud applications with Microsoft C#, Python, JavaScript, or a similar programming language.
 iconUrl: /training/achievements/azure-cosmos-db-author-complex-queries.svg
 levels:
 - intermediate

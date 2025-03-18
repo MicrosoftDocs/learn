@@ -1,27 +1,37 @@
+In this module, you learned about Azure virtual networks and their importance in creating private networks in Azure. You explored the benefits of using virtual networks, such as scalability, availability, and isolation. You learned how to create virtual networks with subnetting and how to determine which resources require public or private IP addresses.
 
+The main takeaways from this module are:
 
-Azure virtual networks are a fundamental building block for your private network in Azure. Azure virtual networks enable many types of Azure resources to securely communicate. The resources can communicate with each other, the internet, and on-premises networks. Azure Virtual Network is similar to a traditional network, but offers more benefits such as scale, availability, and isolation.
+- Azure virtual networks allow different Azure resources to securely communicate with each other, the internet, and on-premises networks.
 
-Azure IP addressing is critical to ensuring resources are accessible. You can use private IP addresses to communicate between resources in Azure. Public IP addresses enable Azure resources to be accessible directly from the internet.
+- Subnets within virtual networks provide logical divisions, improving security, performance, and management.
 
-In this module, you examined Azure Virtual Network features and usage cases for subnets and subnetting. You learned how to create a virtual network with subnetting. You reviewed usage cases for private and public IP addresses. You explored how to create and determine which resources require public and private IP addresses.
+- When creating virtual networks, ensure that the IP address space is unique and doesn't overlap with other subnets. 
 
-## Learn more
+- IP addresses can provide public or private access to resources. 
 
-- Peruse [Azure Virtual Network documentation](/azure/virtual-network/).
+## Learn more with Copilot
+Copilot can assist you in designing Azure infrastructure solutions. Copilot can compare, recommend, explain, and research products and services where you need more information. Open a Microsoft Edge browser and choose Copilot (top right) or navigate to copilot.microsoft.com. Take a few minutes to try these prompts and extend your learning with Copilot.
 
-- Explore [Azure networking documentation](/azure/networking/).
+- Explain CIDR for a nontechnical audience. Provide examples.
 
-- Read about [public IP addresses for virtual networks](/azure/virtual-network/public-ip-addresses).
+- What are the basic steps and considerations for creating a virtual network in Azure?
 
-- Read about [private IP addresses for virtual networks](/azure/virtual-network/private-ip-addresses).
+- What types of Azure resources should be assigned a static IP address?
 
-- Get started with [virtual networks and virtual machines in Azure](/azure/virtual-network/network-overview).
+## Learn more with documentation
+
+- [What is Azure Virtual Network?](/azure/virtual-network/virtual-networks-overview). This article is your starting point to learn about virtual networks. 
+
+- [Public IP addresses](/azure/virtual-network/ip-services/public-ip-addresses). This article reviews the basics of when to use public IP addresses. 
+
+- [Private IP addresses](/azure/virtual-network/private-ip-addresses). This article reviews the basics of when to use private IP addresses. 
 
 ## Learn more with self-paced training
 
-- Design [an IP addressing schema for your Azure deployment (sandbox)](/training/modules/design-ip-addressing-for-azure/).
+- [Introduction to Azure Virtual Networks](/training/modules/introduction-to-azure-virtual-networks/). Learn how to design and implement core Azure Networking infrastructure.
 
-## Learn more with optional hands-on exercises
+- [Design an IP addressing schema for your Azure deployment (sandbox)](/training/modules/design-ip-addressing-for-azure/). Learn about network IP addressing and integration. 
 
-- Implement [Windows Server IaaS virtual machine IP addressing and routing](/training/modules/implement-windows-server-iaas-virtual-machine-ip-addressing-routing/). _Azure subscription required_.
+- [Implement Windows Server IaaS virtual machine IP addressing and routing](/training/modules/implement-windows-server-iaas-virtual-machine-ip-addressing-routing/). Learn about IP addressing and virtual networks for virtual machines. 
+

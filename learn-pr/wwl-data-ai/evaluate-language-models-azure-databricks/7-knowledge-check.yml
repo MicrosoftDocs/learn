@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-language-models-azure-databricks.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/20/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What is the primary purpose of evaluating a Large Language Model (LLM)?"
+    choices:
+    - content: "To improve its computational efficiency."
+      isCorrect: false
+      explanation: "Incorrect. Evaluating an LLM doesn't improve its computational efficiency."
+    - content: "To assess its accuracy and performance on specific tasks."
+      isCorrect: true
+      explanation: "Correct. The primary purpose of evaluating an LLM is to determine its effectiveness and accuracy."
+    - content: "To increase its training data size."
+      isCorrect: false
+      explanation: "Incorrect. Evaluating an LLM doesn't increase the training data size."
+  - content: "In the context of evaluating language models, what does perplexity measure?"
+    choices:
+    - content: "The size of the training dataset."
+      isCorrect: false
+      explanation: "Incorrect. Perplexity doesn't measure the size of the training dataset."
+    - content: "The diversity of generated text."
+      isCorrect: false
+      explanation: "Incorrect. Perplexity doesn't measure the diversity of generated text."
+    - content: "The uncertainty of the model in predicting the next word."
+      isCorrect: true
+      explanation: "Correct. Perplexity is a measure of how uncertain a language model is when predicting the next word in a sequence. Lower perplexity indicates a better-performing model."
+  - content: "When you evaluate a large language model (LLM) for bias, what is a common approach?"
+    choices:
+    - content: "Measuring the model's training time"
+      isCorrect: false
+      explanation: "Incorrect. Measuring the model's training time doesn't evaluate an LLM for bias."
+    - content: "Analyzing the model's outputs for harmful stereotypes"
+      isCorrect: true
+      explanation: "Correct. Evaluating a model for bias typically involves analyzing its outputs to identify and mitigate harmful stereotypes or biased predictions, ensuring the model is fair and ethical in its responses."
+    - content: "Counting the number of model parameters"
+      isCorrect: false
+      explanation: "Incorrect. Counting the number of model parameters doesn't evaluate an LLM for bias."

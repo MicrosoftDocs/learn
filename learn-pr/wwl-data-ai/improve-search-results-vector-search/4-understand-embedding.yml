@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-search-results-vector-search.understand-embedding
+title: Understand embedding
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Understand embedding
+  description: Learn about embeddings
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 10/24/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-understand-embedding.md)]
+

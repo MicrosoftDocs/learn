@@ -2,13 +2,14 @@
 uid: learn.wwl.operationalize-your-azure-data-factory-pipelines.understand-language-support-azure-data-factory
 title: Understand the language support in Azure Data Factory
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand the language support in Azure Data Factory
   description: "Understand the language support in Azure Data Factory"
   ms.date: 05/16/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

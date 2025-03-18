@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-dream-destination-ai-copilot.exercise-define-idea-set-context
+title: 'Exercise: Define your idea and set the context'
+metadata:
+  title: 'Exercise: Define your idea and set the context'
+  description: "Exercise: Define your idea and set the context"
+  ms.date: 03/17/2025
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - copilot-learning-hub
+  - ai-learning-hub
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-exercise-define-idea-set-context.md)]

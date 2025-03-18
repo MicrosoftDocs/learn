@@ -1,6 +1,3 @@
-
-
-
 When developing applications, you'll often need to build and modify sets of data. Methods are useful for performing operations on data, and they're especially powerful tools for building the data sets themselves. Developing methods to create arrays representing your data set helps to keep your code reusable, organized, and simplified. In this exercise, you'll practice returning arrays from methods.
 
 ### Find coins to make change
@@ -150,7 +147,7 @@ In this step, you'll extend the `TwoCoins` method to find more pairs of coins wh
         }
     ```
 
-    Notice that `count` is incremented every time a pair is added to the array. This can cause an index out of bounds error if there are more than five pairs found. To prevent this error, you can add code to check the value of `count` and return the result the `result` array is filled.
+    Notice that `count` is incremented every time a pair is added to the array. This can cause an index out of bounds error if there are more than five pairs found. To prevent this error, you can add code to check the value of `count` and return the result of the `result` array is filled.
 
 1. Update the logic in the `TwoCoins` method with the following code:
 
@@ -263,7 +260,7 @@ In this task, you'll run your application from the Integrated Terminal and verif
 1. Compare your code with the following to ensure it's correct:
 
     ```c#
-    int target = 60;
+    int target = 30;
     int[] coins = new int[] {5, 5, 50, 25, 25, 10, 5};
     int[,] result = TwoCoins(coins, target);
 

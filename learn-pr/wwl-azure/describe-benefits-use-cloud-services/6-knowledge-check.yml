@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/25/2023
+  ms.date: 12/12/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -35,7 +34,7 @@ quiz:
       explanation: "Reliability is the ability of a system to recover from failures and continue to function, and it is one of the pillars of the Microsoft Azure Well-Architected Framework."
     - content: "Predictability"
       isCorrect: false
-      explanation: "Predictability is focused on providing you the ability to predict or estimate resources needed and the cost of those resources."
+      explanation: "Predictability is focused on providing you with the ability to predict or estimate resources needed and the cost of those resources."
     - content: "Scalability"
       isCorrect: false
       explanation: "Scalability is the ability of resources to scale to meet demands."

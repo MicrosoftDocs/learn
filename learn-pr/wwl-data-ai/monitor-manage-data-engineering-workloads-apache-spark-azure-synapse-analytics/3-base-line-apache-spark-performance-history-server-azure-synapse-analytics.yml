@@ -2,13 +2,14 @@
 uid: learn.wwl.monitor-manage-data-engineering-workloads-with-apache-spark-azure-synapse-analyt.base-line-apache-spark-performance-history-server-azure-synapse-analytics
 title: Base-line Apache Spark performance with Apache Spark history server in Azure Synapse Analytics
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Base-line Apache Spark performance with Apache Spark history server in Azure Synapse Analytics
   description: "Base-line Apache Spark performance with Apache Spark history server in Azure Synapse Analytics"
   ms.date: 01/05/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

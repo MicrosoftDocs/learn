@@ -6,7 +6,7 @@ param locations array = [
 
 var subnetCount = 2
 
-resource virtualNetworks 'Microsoft.Network/virtualNetworks@2021-08-01' = [for (location, i) in locations : {
+resource virtualNetworks 'Microsoft.Network/virtualNetworks@2024-05-01' = [for (location, i) in locations : {
   name: 'vnet-${location}'
   location: location
   properties: {

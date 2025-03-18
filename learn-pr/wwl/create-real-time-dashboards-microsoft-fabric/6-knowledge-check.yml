@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-real-time-dashboards-microsoft-fabric.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 12/12/2024
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is a real-time dashboard?"
+    choices:
+    - content: "A Power BI report that is based on an Eventhouse."
+      isCorrect: false
+      explanation: "Incorrect. A real-time dashboard isn't a Power BI report."
+    - content: "A Real-Time Intelligence item that can display data from a real-time streaming source in Microsoft Fabric."
+      isCorrect: true
+      explanation: "Correct. A real-time dashboard displays real-time data in Microsoft Fabric."
+    - content: "A client-installed tool for monitoring eventstreams in Microsoft Fabric."
+      isCorrect: false
+      explanation: "Incorrect. A real-time dashboard isn't a client-side tool for monitoring an eventstream."
+  - content: "How can you enable users to filter a real-time dashboard interactively?"
+    choices:
+    - content: "Add a base query to the dashboard."
+      isCorrect: false
+      explanation: "Incorrect. A base query doesn't enable interactive filtering."
+    - content: "Add multiple pages to the dashboard."
+      isCorrect: false
+      explanation: "Incorrect. Pages don't inherently enable filtering."
+    - content: "Add parameters to the dashboard."
+      isCorrect: true
+      explanation: "Correct. Parameters enable users to filter data in real-time dashboards."
+  - content: "How can you ensure users always see fresh data in a real-time dashboard?"
+    choices:
+    - content: "Configure auto refresh for the dashboard."
+      isCorrect: true
+      explanation: "Correct. Auto refresh ensures the dashboard shows fresh data."
+    - content: "Use the pass-through identity option for the dashboard data source."
+      isCorrect: false
+      explanation: "Incorrect. Pass-through identity doesn't automatically ensure data freshness."
+    - content: "Use a SQL query instead of KQL."
+      isCorrect: false
+      explanation: "Incorrect. Real-time dashboards are based on KQL queries. Using SQL doesn't ensure data freshness."

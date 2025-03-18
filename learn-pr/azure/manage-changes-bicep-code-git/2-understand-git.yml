@@ -2,14 +2,18 @@
 uid: learn.azure.manage-changes-bicep-code-git.understand-git
 title: Understand Git
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Understand Git
   description: Learn how version control and Git can help support your Bicep authoring workflow and solve some common problems that you might face.
-  ms.date: 01/23/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/31/2025
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 4
 content: |
   [!include[](includes/2-understand-git.md)]
+

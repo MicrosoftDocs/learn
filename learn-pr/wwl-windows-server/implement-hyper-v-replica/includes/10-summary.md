@@ -5,8 +5,7 @@ Using the knowledge acquired in this module, you have determined options and ser
 You can learn more by reviewing the following documents:
 
 - [Set up Hyper-V Replica](/windows-server/virtualization/hyper-v/manage/set-up-hyper-v-replica?azure-portal=true)
-- [Types of failover operations in Hyper-V Replica Part 1 Test Failover](/virtualization/community/team-blog/2012/20120725-types-of-failover-operations-in-hyper-v-replica-part-i-test-failover?azure-portal=true)
-- [Why is the "Hyper-V Replica Broker" required?](/virtualization/community/team-blog/2012/20120327-why-is-the-hyper-v-replica-broker-required?azure-portal=true)
+- [Why is the "Hyper-V Replica Broker" required?](/training/paths/windows-server-hyper-v-virtualization/?azure-portal=true)
 - [About Site Recovery](/azure/site-recovery/site-recovery-overview?azure-portal=true)
 - [Set up disaster recovery of on-premises Hyper-V VMs to Azure](/azure/site-recovery/hyper-v-azure-tutorial?azure-portal=true)
 - [About the Azure Site Recovery Deployment Planner for VMware to Azure](/azure/site-recovery/site-recovery-deployment-planner?azure-portal=true)

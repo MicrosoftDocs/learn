@@ -1,4 +1,3 @@
-
 You can let users enroll their personal devices for Intune management (BYOD). Once you've completed the prerequisites and assigned users licenses, they can download the Intune Company Portal app from the Google Play Store, and follow enrollment instructions in the app.
 
 To enroll an Android device using the Company Portal, perform the following steps:
@@ -19,4 +18,4 @@ Android Enterprise management makes it easier to define the scope of management 
 
 To set up Android Enterprise, you must connect your Intune tenant account to your Managed Google Play account and set up an enrollment profile based on what method of management is being used.
 
-For more information, refer to [Enroll Android devices](https://aka.ms/AA6du6k).
+For more information, refer to [Enroll Android devices](/mem/intune/enrollment/android-kiosk-enroll).

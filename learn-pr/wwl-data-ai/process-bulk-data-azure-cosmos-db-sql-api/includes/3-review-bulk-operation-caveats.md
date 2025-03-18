@@ -1,4 +1,4 @@
-There are some caveats to consider when developing for bulk operations that you are different than designing for typical Azure Cosmos DB for NoSQL applications.
+There are some caveats to consider when developing for bulk operations that are different than designing for typical Azure Cosmos DB for NoSQL applications.
 
 ## Throughput consumption
 

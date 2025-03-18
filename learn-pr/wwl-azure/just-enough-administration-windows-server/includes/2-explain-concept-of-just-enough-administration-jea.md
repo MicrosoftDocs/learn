@@ -5,11 +5,8 @@ When you configure JEA, an authorized user connects to a specially configured en
 When connected to the endpoint, JEA uses a special, privileged, virtual account rather than the user’s account to perform tasks. The advantages of this approach include:
 
 - The user’s credentials are not stored on the remote system. If the remote system is compromised, the user’s credentials are not subject to credential theft and cannot be used to traverse the network and gain access to other hosts.
-
 - The user account that's used to connect to the endpoint doesn't need to be privileged. You simply need to configure the endpoint to allow connections from specified user accounts.
-
 - The virtual account is limited to the system on which it is hosted. The virtual account cannot be used to connect to remote systems. This means that attackers cannot use a compromised virtual account to access other protected servers.
-
 - The virtual account has local administrator privileges but is limited to performing only the activities defined by JEA. You can configure the virtual account with membership of a group other than the local Administrators group to further reduce privileges.
 
 ## JEA limitations
@@ -23,6 +20,6 @@ Also, JEA only works with Windows PowerShell sessions. While you can configure s
 JEA works on the following operating systems directly:
 
 - Windows Server 2016 or later
-
 - Windows 10 or later
 
+JEA will work with Windows Server 2012 R2 if you install Windows Management Framework 5.0.

@@ -1,6 +1,3 @@
-
-
-
 Contoso, like many companies, has multiple file servers in separate locations. With DFS, you can replicate folder content between file servers, and publish file shares in a single namespace. Windows Server has the following two DFS-related role services:
 
 - DFS Namespaces. DFS Namespaces (DFS-N) enables you to group shared folders that are on different servers into one or more logically structured namespaces. Each namespace presents to users as a single shared folder with a series of subfolders. However, the underlying structure of the namespace can consist of numerous file shares that are on different servers in multiple sites.

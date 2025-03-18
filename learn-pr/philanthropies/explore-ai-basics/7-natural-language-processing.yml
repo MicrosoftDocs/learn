@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.explore-ai-basics.natural-language-processing
+title: Natural Language Processing (NLP)
+metadata:
+  title: Natural Language Processing (NLP)
+  description: This content is a part of the AI basics module.
+  ms.date: 01/14/2025
+  author: yoosunee
+  ms.author: anruss
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-natural-language-processing.md)]

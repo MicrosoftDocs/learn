@@ -9,5 +9,5 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [What is Azure Pipelines? - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/get-started/what-is-azure-pipelines).
- -  [Use Azure Pipelines - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/get-started/pipelines-get-started).
+ -  [What is Azure Pipelines? - Azure Pipelines \| Microsoft Learn](/azure/devops/pipelines/get-started/what-is-azure-pipelines).
+ -  [Use Azure Pipelines - Azure Pipelines \| Microsoft Learn](/azure/devops/pipelines/get-started/pipelines-get-started).

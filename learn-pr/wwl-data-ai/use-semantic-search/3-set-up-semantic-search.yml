@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.use-semantic-search.set-up-semantic-search
+title: Set up semantic ranking
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Set up semantic ranking
+  description: Learn how to set up semantic ranking.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 10/24/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-set-up-semantic-search.md)]
+

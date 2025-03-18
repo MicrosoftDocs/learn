@@ -4,20 +4,19 @@ metadata:
   moduleType: build-your-first-using-product
   title: Introduction to SQL Server 2022      
   description: "Training module to learn about new major capabilities of SQL Server 2022 from cloud connected features to core engine capabilities."
-  ms.date: 04/18/2023
+  ms.date: 10/16/2023
   author: rgward
   ms.author: bobward
   ms.reviewer: vanto
-  ms.topic: interactive-tutorial
-  ms.prod: learning-sqlserver
+  ms.topic: module
+  ms.service: sql
 title: Introduction to SQL Server 2022
 summary: |
   Learn about new major capabilities of SQL Server 2022 from cloud connected features to core engine capabilities.
 abstract: |
   In this module, you'll be able to:
-
     - Describe the innovations introduced in SQL Server 2022
-    - Determine if SQL Server 2022 can help modernize your data estate, while reducing the cost of ownership, and accelerate the performance of your applications
+    - Determine whether SQL Server 2022 can help modernize your data estate, while reducing the cost of ownership, and accelerate the performance of your applications
     - Leverage new security capabilities in SQL Server 2022 to protect your data and use cryptographic attestations that your data hasn't been tampered with
     - Connect your data to Azure and data lakes
 prerequisites: |
@@ -32,7 +31,7 @@ roles:
 products:
   - sql-server
 subjects:
-  - database
+  - databases
 units:
 - learn.introduction-to-sql-server-2022.introduction
 - learn.introduction-to-sql-server-2022.deploy-and-feature-difference

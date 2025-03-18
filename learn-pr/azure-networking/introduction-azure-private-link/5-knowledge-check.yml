@@ -2,13 +2,14 @@
 uid: learn.introduction-azure-private-link.5-knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 02/10/2021
+  ms.date: 01/22/2024
   author: asudbring
   ms.author: allensu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -48,3 +49,4 @@ quiz:
     - content: "Azure Standard Load Balancer"
       isCorrect: true
       explanation: "Correct. Azure's standard version of its load balancer is the one you must use for Private Link Service."
+

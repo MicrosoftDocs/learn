@@ -1,16 +1,19 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-java-ee-app-to-app-service.6-admin-jboss-eap
-title: View the JBoss EAP administration tools and application logs
+title: Access the JBoss EAP administration tools and application logs
 metadata:
-  title: View the JBoss EAP administration tools and application logs
-  description: In this unit, you'll learn how to view the JBoss EAP administration tools and application logs.
-  author: yoshioterada
-  ms.author: yoterada
-  ms.date: 03/04/2023
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: team=cloud_advocates, devx-track-java, devx-track-javaee-jbosseap-appsvc, devx-track-javaee
-  ms.contributors: yoterada-03082021
+  title: Access the JBoss EAP Administration Tools and Application Logs
+  description: Shows you how to access the JBoss EAP administration tools and application logs.
+  author: KarlErickson
+  ms.author: karler
+  ms.reviewer: yoshioterada
+  ms.date: 03/16/2025
+  ms.topic: unit
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-java
+    - devx-track-javaee-jbosseap-appsvc
+    - devx-track-javaee
 durationInMinutes: 2
 content: |
   [!include[](includes/6-admin-jboss-eap.md)]

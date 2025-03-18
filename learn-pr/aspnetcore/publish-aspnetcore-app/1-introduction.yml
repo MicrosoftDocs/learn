@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.publish-aspnetcore-app.intro
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to publishing ASP.NET Core apps.
+  ms.date: 8/28/2024
+  author: camsoper
+  ms.author: casoper
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

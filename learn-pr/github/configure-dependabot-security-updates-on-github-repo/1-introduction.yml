@@ -5,11 +5,10 @@ metadata:
   unitType: introduction
   title: Introduction
   description: GitHub dependency management tools help you handle the security risks and maintenance requirements of incorporating third-party software into your project.
-  ms.date: 1/5/2022
-  author: sterling463
-  ms.author: csterling 
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 04/25/2024
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

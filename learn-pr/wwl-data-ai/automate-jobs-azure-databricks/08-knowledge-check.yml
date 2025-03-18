@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.automate-jobs-azure-databricks.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/05/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What is a key feature of job scheduling in Azure Databricks?"
+    choices:
+    - content: "Allows users to run jobs only at specific times."
+      isCorrect: false
+      explanation: "Incorrect. While Azure Databricks does allow users to run jobs at specific times, it also provides flexibility with various frequency configurations."
+    - content: "Does not support version control integration."
+      isCorrect: false
+      explanation: "Incorrect. Azure Databricks supports integration with Git for version control of notebooks and other scripts."
+    - content: "Enables the automation of notebooks, JARs, Python scripts, and other workflows."
+      isCorrect: true
+      explanation: "Correct. Azure Databricks allows users to automate the execution of various workflows, including notebooks, JARs, and Python scripts."
+  - content: "What is the purpose of environment isolation in Azure Databricks?"
+    choices:
+    - content: "To increase the size of the environment."
+      isCorrect: false
+      explanation: "Incorrect. Environment isolation does not increase the size of the environment, but rather it helps to avoid conflicts between different project dependencies."
+    - content: "To decrease the speed of the environment."
+      isCorrect: false
+      explanation: "Incorrect. Environment isolation does not decrease the speed of the environment, but rather it helps to maintain clean and isolated environments for projects with complex or conflicting dependencies."
+    - content: "To avoid conflicts between different project dependencies."
+      isCorrect: true
+      explanation: "Correct. Environment isolation in Azure Databricks is used to avoid conflicts between different project dependencies by using Conda environments and Docker containers."
+  - content: "What is a key benefit of modularizing code when automating production jobs in Azure Databricks?"
+    choices:
+    - content: "It allows for the use of multiple programming languages within a single notebook."
+      isCorrect: false
+      explanation: "Incorrect. While Databricks does support multiple languages, modularizing code primarily enhances maintainability and allows for code reuse."
+    - content: "It increases the execution speed of the scripts."
+      isCorrect: false
+      explanation: "Incorrect. Modularizing code doesn't necessarily increase execution speed, but it simplifies debugging and enhances maintainability."
+    - content: "It enhances maintainability, simplifies debugging, and allows for code reuse across different projects."
+      isCorrect: true
+      explanation: "Correct. Breaking down workflows into reusable components enhances maintainability, simplifies debugging, and allows for code reuse."

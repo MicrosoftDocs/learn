@@ -4,11 +4,12 @@ title: Manage Windows 10 using PowerShell
 metadata:
   title: Manage Windows 10 using PowerShell
   description: "Manage Windows 10 using PowerShell"
-  ms.date: 10/24/2022
+  ms.date: 03/26/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 azureSandbox: false
 labModal: false
 durationInMinutes: 8

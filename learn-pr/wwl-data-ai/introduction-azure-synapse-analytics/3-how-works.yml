@@ -2,13 +2,14 @@
 uid: learn.wwl.introduction-to-azure-synapse-analytics.how-works
 title: How Azure Synapse Analytics works
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How Azure Synapse Analytics works
   description: "How Azure Synapse Analytics works"
   ms.date: 08/17/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 8

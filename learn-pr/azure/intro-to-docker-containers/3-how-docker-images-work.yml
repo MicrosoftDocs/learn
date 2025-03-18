@@ -3,13 +3,14 @@ uid: learn.intro-to-docker-containers.3-how-docker-images-work
 title: How Docker images work
 
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How Docker images work
   description: In this unit, we discuss how we build Docker images and explore basic image management.
-  ms.date: 03/24/2023
+  ms.date: 10/09/2024
   author: rayoef
   ms.author: rayoflores
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 
 durationInMinutes: 10
 content: |
@@ -25,12 +26,12 @@ quiz:
       explanation: "Docker Desktop runs on macOS, but it's not the only supported desktop operating system."
     - content: "Linux only"
       isCorrect: false
-      explanation: "Docker Desktop currently is not available for the Linux desktop operating systems. However, Docker Desktop for Windows does support using a Linux command line via Windows Subsystem for Linux. For more information and set up, see the [WSL + Docker documentation](/windows/wsl/tutorials/wsl-containers)."
+      explanation: "Docker Desktop currently isn't available for the Linux desktop operating systems. However, Docker Desktop for Windows does support using a Linux command line via Windows Subsystem for Linux. For more information and set up, see the [WSL + Docker documentation](/windows/wsl/tutorials/wsl-containers)."
     - content: "Windows, macOS, and Windows Subsystem for Linux (WSL)"
       isCorrect: true
       explanation: "While Docker Desktop is only available for Windows and macOS, it does support using a Linux command line via Windows Subsystem for Linux (WSL). For more information and set up, see the [WSL + Docker documentation](/windows/wsl/tutorials/wsl-containers)."
 
-  - content: "Which is correct Docker command to rebuild a container image?"
+  - content: "Which is the correct Docker command to rebuild a container image?"
     choices:
     - content: "docker rebuild"
       isCorrect: false
@@ -44,7 +45,7 @@ quiz:
 
   - content: "Which of the following sentences describe a container image the best?"
     choices:
-    - content: "A container image is a read-only portable package that contains software and may include an operating system."
+    - content: "A container image is a read-only portable package that contains software and might include an operating system."
       isCorrect: true
       explanation: "A container image is an immutable package that contains all the application code, system packages, binaries, libraries, configuration files, and the operating system running in the container. Docker containers running on Linux share the host OS kernel and don't require a container OS as long as the binary can access the OS kernel directly."
     - content: "A container image is a set of commands that builds a container."
@@ -53,3 +54,4 @@ quiz:
     - content: "A container image is a read-only portable package that contains software."
       isCorrect: false
       explanation: "A container image is an immutable package that contains all the application code, system packages, binaries, libraries, configuration files, and the operating system running in the container."
+

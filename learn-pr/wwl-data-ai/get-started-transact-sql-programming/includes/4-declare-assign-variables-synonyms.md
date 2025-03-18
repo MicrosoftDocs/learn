@@ -62,6 +62,6 @@ EXEC dbo.ProdsByCategory @numrows = 3, @catid = 2;
 To create a synonym, you must have 'CREATE SYNONYM' permission as well as permission to alter the schema in which the synonym will be stored.
 
 > [!NOTE]
-> To create a synonym, the user must have CREATE SYNONYM permission and either own or have ALTER SCHEMA in the destination schema.
+> To create a synonym, the user must have CREATE SYNONYM permission and either own or have ALTER SCHEMA permission in the destination schema.
 
 A synonym is an "empty" object that is resolved to the source object when referenced at runtime.

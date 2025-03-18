@@ -4,7 +4,7 @@ param locations array = [
   'eastasia'
 ]
 
-resource sqlServers 'Microsoft.Sql/servers@2021-11-01-preview' = [for (location, i) in locations: {
+resource sqlServers 'Microsoft.Sql/servers@2024-05-01-preview' = [for (location, i) in locations: {
   name: 'sqlserver-${i+1}'
   location: location
   properties: {

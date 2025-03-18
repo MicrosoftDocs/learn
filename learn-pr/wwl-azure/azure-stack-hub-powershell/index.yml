@@ -1,13 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.azure-stack-hub-powershell
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Azure Stack Hub PowerShell
   description: "Azure Stack Hub PowerShell"
   ms.date: 03/17/2022
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-stack-hub
 title: Azure Stack Hub PowerShell
 summary: |
   See how resource providers in Azure Stack Hub can be configure with PowerShell to enhance Azure capabilities.
@@ -38,3 +40,4 @@ units:
 - learn.wwl.azure-stack-hub-powershell.summary
 badge:
   uid: learn.wwl.azure-stack-hub-powershell.badge
+

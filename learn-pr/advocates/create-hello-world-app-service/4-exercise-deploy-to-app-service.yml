@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-hello-app-service.deploy-web-app
+title: "Exercise: Deploy a web app to Azure App Service"
+metadata:
+  description: Deploy the web app from the previous section to App Service.
+  author: KarlErickson
+  ms.author: karler
+  ms.reviewer: ayangupta
+  ms.date: 12/11/2024
+  ms.topic: unit
+  ms.custom: team=cloud_advocates, devx-track-java, devx-track-extended-java, linux-related-content
+  ms.assetid: HelloJavaAppService
+  zone_pivot_groups: maven-azure-cli
+durationInMinutes: 7
+content: |
+  [!INCLUDE[](includes/4-exercise-deploy-to-app-service.md)]

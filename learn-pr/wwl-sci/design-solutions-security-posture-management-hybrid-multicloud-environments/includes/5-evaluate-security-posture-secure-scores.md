@@ -32,7 +32,7 @@ Your secure score is shown in the following locations in Defender for Cloud's po
 
 ### Secure Score Over Time report in workbooks page
 
-Defender for Cloud's workbooks page includes a ready-made report for visually tracking the scores of your subscriptions, security controls, and more. Learn more in [Create rich, interactive reports of Defender for Cloud data](https://learn.microsoft.com/azure/defender-for-cloud/custom-dashboards-azure-workbooks).
+Defender for Cloud's workbooks page includes a ready-made report for visually tracking the scores of your subscriptions, security controls, and more. Learn more in [Create rich, interactive reports of Defender for Cloud data](/azure/defender-for-cloud/custom-dashboards-azure-workbooks).
 
 ![Screenshot showing a section of the secure score over time report from Microsoft Defender for Cloud's workbooks gallery.](../media/secure-score-over-time-snip.png)
 

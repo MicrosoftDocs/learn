@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.implement-cicd-in-fabric.implement-deployment-pipelines
+title: Implement deployment pipelines
+metadata:
+  title: Implement deployment pipelines
+  description: "Learn how to implement deployment pipelines in Microsoft Fabric."
+  ms.date: 11/8/2024
+  author: wwlpublish
+  ms.author: theresai
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-implement-deployment-pipelines.md)]

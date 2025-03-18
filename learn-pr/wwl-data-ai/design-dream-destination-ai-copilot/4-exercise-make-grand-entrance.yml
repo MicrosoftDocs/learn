@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-dream-destination-ai-copilot.exercise-make-grand-entrance
+title: 'Exercise: Make a grand entrance'
+metadata:
+  title: 'Exercise: Make a grand entrance'
+  description: "Exercise: Make a grand entrance"
+  ms.date: 03/17/2025
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - copilot-learning-hub
+  - ai-learning-hub
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-exercise-make-grand-entrance.md)]

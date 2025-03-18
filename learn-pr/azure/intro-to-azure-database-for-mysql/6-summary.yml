@@ -2,15 +2,17 @@
 uid: learn.intro-to-azure-database-for-mysql.6-summary  
 title: Summary  
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: summary  
   title: Summary
   description: Summary
-  ms.date: 03/23/2021  
-  author: markingmyname
-  ms.author: maghan
-  manager: jroth
-  ms.topic: interactive-tutorial 
-  ms.prod: learning-azure
-durationInMinutes: 4
+  ms.date: 08/21/2024
+  author: shreyaaithal
+  ms.author: shaithal
+  ms.reviewer: maghan
+  ms.topic: unit
+durationInMinutes: 3
 content: |
   [!include[](includes/6-summary.md)]
+

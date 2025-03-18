@@ -24,7 +24,7 @@ param appServicePlanInstanceCount int = 1
 
 var appServicePlanName_var = 'plan-${environment}-001'
 
-resource appServicePlanName 'Microsoft.Web/serverfarms@2020-12-01' = {
+resource appServicePlanName 'Microsoft.Web/serverfarms@2024-04-01' = {
   name: appServicePlanName_var
   location: location
   sku: {

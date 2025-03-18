@@ -319,6 +319,11 @@ Use the following procedure to use a custom .NET app to upload blobs to the Azur
     $env:standardconnectionstring = '<connection-string>'
     ```
 
+    > [!IMPORTANT]
+    > This code example uses a connection string to authorize access to your storage account. This configuration is for example purposes. Connection strings and account access keys should be used with caution in application code. If your account access key is lost or accidentally placed in an insecure location, your service may become vulnerable. Anyone who has the access key is able to authorize requests against the storage account, and effectively has access to all the data.
+    >
+    > For optimal security, Microsoft recommends using managed identities for Azure resources to authorize requests against blob, queue, and table data, whenever possible. To learn more, see [Authorize access to blobs using Microsoft Entra ID](/azure/storage/blobs/authorize-access-azure-active-directory).
+
 1. Clone the GitHub repo containing the code of the .NET app you'll use for latency testing into the home directory of the Cloud Shell:
 
     ```powershell
@@ -371,6 +376,11 @@ Use the following procedure to leverage the custom .NET app to upload blobs to t
     ```powershell
     $env:premiumconnectionstring = '<connection-string>'
     ```
+
+    > [!IMPORTANT]
+    > This code example uses a connection string to authorize access to your storage account. This configuration is for example purposes. Connection strings and account access keys should be used with caution in application code. If your account access key is lost or accidentally placed in an insecure location, your service may become vulnerable. Anyone who has the access key is able to authorize requests against the storage account, and effectively has access to all the data.
+    >
+    > For optimal security, Microsoft recommends using managed identities for Azure resources to authorize requests against blob, queue, and table data, whenever possible. To learn more, see [Authorize access to blobs using Microsoft Entra ID](/azure/storage/blobs/authorize-access-azure-active-directory).
 
 1. Initiate the upload of 10,000 blobs of 4 MiB in size to the target storage account:
 

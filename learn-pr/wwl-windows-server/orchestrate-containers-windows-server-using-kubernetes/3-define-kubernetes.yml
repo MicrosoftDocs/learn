@@ -4,11 +4,10 @@ title: Define Kubernetes
 metadata:
   title: Define Kubernetes
   description: "Define Kubernetes"
-  ms.date: 03/01/2021
+  ms.date: 02/01/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 10
 content: |

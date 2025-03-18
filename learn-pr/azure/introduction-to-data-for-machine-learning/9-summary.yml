@@ -2,14 +2,15 @@
 uid: learn.machinelearning.introduction-to-data-for-machine-learning.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: An overview of the content covered in the module.
-  ms.date: 02/27/2023
-  author: TomReidNZ
-  ms.author: jasdeb
+  ms.date: 10/10/2024
+  author: fbsolo-ms1
+  ms.author: franksolomon
   ms.reviewer: franksolomon
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/9-summary.md)] 

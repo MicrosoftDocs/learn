@@ -2,13 +2,14 @@
 uid: learn.design-health-model-mission-critical-workload.health-states
 title: Health states, metrics, and thresholds
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Health states, metrics, and thresholds
   description: Learn about health states, metrics, and thresholds in a health model.
-  ms.date: 01/12/2022
+  ms.date: 08/05/2024
   author: msimecek
   ms.author: prwilk
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/4-health-states.md)]
@@ -31,7 +32,7 @@ quiz:
     choices:
     - content: "Base your decision on your experience with what a normal operation looks like for the system. Observe and refine the values over time."
       isCorrect: true
-      explanation: "Correct. Although you should make the best decision you can with the information at hand, you can easily change the health model later if you need to."
+      explanation: "Correct. You should make the best decision you can with the information at hand. But, you can easily change the health model later if you need to."
     - content: "Be careful and choose correctly, because these decisions are difficult to change later in the health model."
       isCorrect: false
       explanation: "Incorrect. You can easily change the health model later if you need to."
@@ -39,7 +40,8 @@ quiz:
     choices:
     - content: "When a component isn't working properly, the entire application should enter the *unhealthy* state and wait for the problem to be addressed."
       isCorrect: false
-      explanation: "Incorrect. When a component isn't working properly, it doesn't always mean that the business requirements are affected. For example, although a slower response time means that the user will still get a response, it needs to be investigated before it causes a complete outage."
+      explanation: "Incorrect. When a component isn't working properly, it doesn't always mean that the business requirements are affected. For example, although a slower response time means that the user still gets a response, it needs to be investigated before it causes a complete outage."
     - content: "Not all parts of the system have the same criticality. Sometimes, suboptimal performance doesn't break the application for its users."
       isCorrect: true
-      explanation: "Correct. It's important to distinguish between non-healthy states that will break the application for its users and states that can potentially break the user experience."
+      explanation: "Correct. It's important to distinguish between nonhealthy states that break the application for its users and states that can potentially break the user experience."
+

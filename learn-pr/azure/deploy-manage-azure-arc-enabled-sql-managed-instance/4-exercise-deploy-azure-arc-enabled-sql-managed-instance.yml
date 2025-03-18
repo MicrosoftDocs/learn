@@ -1,14 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-manage-azure-arc-enabled-sql-managed-instance.exercise-deploy-azure-arc-enabled-sql-managed-instance
-title: Exercise - Deploy Azure Arc-enabled SQL Managed Instance
+title: Exercise - Deploy an Azure Arc-enabled SQL Managed Instance
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: exercise
-  description: Learn how to deploy Azure Arc-enabled SQL Managed Instance.
-  ms.date: 12/21/2022
-  author: tchristiani
-  ms.author: terrychr
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Learn how to deploy an Azure Arc-enabled SQL Managed Instance.
+  ms.date: 08/06/2024
+  author: MikeRayMSFT
+  ms.author: mikeray
+  ms.topic: unit
 durationInMinutes: 20
 content: |
   [!include[](includes/exercise-deploy-azure-arc-enabled-sql-managed-instance.md)]
+

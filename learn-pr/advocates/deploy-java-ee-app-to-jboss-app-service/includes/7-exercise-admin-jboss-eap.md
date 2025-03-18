@@ -1,200 +1,217 @@
-In this exercise, you'll access the JBoss administration tools and stream the application logs.
+In this exercise, you access the JBoss administration tools and stream the application logs.
+
+## Set up environment variables
+
+For this exercise, you need some environment variables from prior exercises. If you're using the same Bash window, these variables should still exist. If the variables are no longer available, use the following commands to recreate them. Be sure to replace the <...> placeholders with your own values, and use the same values that you used previously.
+
+```bash
+export RESOURCE_GROUP_NAME=<resource-group>
+export WEB_APP_NAME=<app-name>
+```
 
 ## Create a TCP tunnel
 
-To access the remote server, you need to create a TCP tunnel between your remote server and your local machine. Run the following command:
+To access the remote server, create a TCP tunnel between your remote server and your local machine by using the following command:
 
-```azcli
-az webapp create-remote-connection -n ${WEBAPP_NAME} -g ${RESOURCEGROUP_NAME}
+```azurecli
+az webapp create-remote-connection \
+    --resource-group ${RESOURCE_GROUP_NAME} \
+    --name ${WEB_APP_NAME}
 ```
-
-The command returns the following result:
-
-```output
-Verifying if app is running....
-App is running. Trying to establish tunnel connection...
-Opening tunnel on port: 59445
-SSH is available { username: root, password: Docker! }
-Ctrl + C to close
-```
-
-You get the following information from the command result:
-
-|  Required information  |  Value  |
-| ---- | ---- |
-|  `Opening tunnel on port`  |  `PORT_NUMBER` (for example, `59445`)  |
-|  `username`  |  `root`  |
-|  `password`  |  `Docker!`  |
-
-Take note of the password and the port number. These two values are used in the next section.
+The output contains the TCP tunnel port number, username, and password. Be sure to save aside this information for later use.
 
 ## Sign in by using SSH and the TCP tunnel
 
-You now need to sign in to the server by using an `ssh` command. Open a new command terminal and run the following command:
+To sign in to the server using SSH and a TCP tunnel, use the following steps:
 
-```bash
-export PORT_NUMBER=<the port number from above>
-ssh root@127.0.0.1 -L 9990:localhost:9990 -p $PORT_NUMBER 
-```
+1. Open a new command terminal.
 
-> [!TIP]
-> If you want to access to the JBoss EAP admin web console, specify the `-L 9990:localhost:9990` option. Then access `http://localhost:9990/console` for the JBoss web console. If you don't need to sign in to the JBoss web console, you can remove the "-L" option.
+1. Sign in to the server by using the following commands. Be sure to replace the `<port-number>` placeholder with the port number you retrieved in the previous section.
 
-You see the following messages when you sign in to the server.
+    ```bash
+    export PORT_NUMBER=<port-number>
+    ssh root@127.0.0.1 -L 9990:localhost:9990 -p $PORT_NUMBER
+    ```
 
-```bash
-The authenticity of host '[127.0.0.1]:59445 ([127.0.0.1]:59445)' can't be established.
-ECDSA key fingerprint is SHA256:vHsp1b3+7NtnHISvZ6aKS82pww+e5L6CUc9fKaPZGDQ.
-Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
-Warning: Permanently added '[127.0.0.1]:59445' (ECDSA) to the list of known hosts.
-root@127.0.0.1's password:
-   _|_|
- _|    _|  _|_|_|_|  _|    _|  _|  _|_|    _|_|
- _|_|_|_|      _|    _|    _|  _|_|      _|_|_|_|
- _|    _|    _|      _|    _|  _|        _|
- _|    _|  _|_|_|_|    _|_|_|  _|          _|_|_|
+    > [!TIP]
+    > If you want to access to the JBoss EAP admin web console, specify the `-L 9990:localhost:9990` option. Then, access the JBoss web console at `http://localhost:9990/console`. If you don't need to sign in to the JBoss web console, you can remove the `-L` option.
 
-     J A V A   O N   A P P   S E R V I C E
+    The following output is typical:
 
-Documentation: https://aka.ms/appservice
+    ```output
+    ssh root@127.0.0.1 -L 9990:localhost:9990 -p 65171
+    root@127.0.0.1's password:
+    Last login: Tue Feb 25 07:44:49 2025 from 169.254.129.2
+       _|_|
+     _|    _|  _|_|_|_|  _|    _|  _|  _|_|    _|_|
+     _|_|_|_|      _|    _|    _|  _|_|      _|_|_|_|
+     _|    _|    _|      _|    _|  _|        _|
+     _|    _|  _|_|_|_|    _|_|_|  _|          _|_|_|
 
-**NOTE**: No files or system changes outside of /home will persist beyond your application's current session. /home is your application's persistent storage and is shared across all the server instances.
-```
+         J A V A   O N   A P P   S E R V I C E
 
-## Run the JBoss CLI command
+    Documentation: https://aka.ms/appservice
 
-After you sign in to the remote server, you can run the JBoss EAP admin CLI tool as `jboss-cli.sh`. The CLI command is in the `/opt/eap/bin/` directory.
+    **NOTE**: No files or system changes outside of /home will persist beyond your application's current session. /home is your application's persistent storage and is shared across all the server instances.
+    ```
 
-Connect to JBoss EAP by using the following command:
+## Run the JBoss CLI tool
 
-```bash
-/opt/eap/bin/jboss-cli.sh --connect
-Picked up JAVA_TOOL_OPTIONS: -Xmx2402M -Djava.net.preferIPv4Stack=true 
-```
+After you sign in to the remote server, you can run the JBoss EAP admin CLI tool, **/opt/eap/bin/jboss-cli.sh**, by using the following steps:
 
-After you connect to the JBoss EAP Server, run the JBoss CLI command and get the JBoss server information:
+1. Connect to JBoss EAP by using the following command:
 
-```bash
-[standalone@localhost:9990 /] :product-info
-{
-    "outcome" => "success",
-    "result" => [{"summary" => {
-        "host-name" => "295cf7c97684",
-        "instance-identifier" => "24bb4e37-ac89-42bc-b87e-d635d37a56f3",
-        "product-name" => "JBoss EAP",
-        "product-version" => "7.4.2.GA",
-        "product-community-identifier" => "Product",
-        "product-home" => "/opt/eap",
-        "last-update-date" => "4/26/22, 10:29 PM",
-        "standalone-or-domain-identifier" => "STANDALONE_SERVER",
-        "host-operating-system" => "Ubuntu 20.04.4 LTS",
-        "host-cpu" => {
-            "host-cpu-arch" => "amd64",
-            "host-core-count" => 2
-        },
-        "jvm" => {
-            "name" => "OpenJDK 64-Bit Server VM",
-            "java-version" => "11",
-            "jvm-version" => "11.0.14.1",
-            "jvm-vendor" => "Microsoft",
-            "java-home" => "/usr/lib/jvm/msopenjdk-11-amd64"
-        }
-    }}]
-```
+    ```bash
+    /opt/eap/bin/jboss-cli.sh --connect
+    ```
 
-You can get all the deployed applications from the following command:
+    The following output is typical:
 
-```bash
-[standalone@localhost:9990 /] ls deployment
-ROOT.war
-```
+    ```output
+    OpenJDK 64-Bit Server VM warning: Options -Xverify:none and -noverify were deprecated in JDK 13 and will likely be removed in a future release.
+    ```
 
-Next, test the database connection by running the following command:
+1. After you connect to the JBoss EAP Server, use the following command at the JBoss prompt to get the JBoss server information:
 
-```bash
-[standalone@localhost:9990 /] /subsystem=datasources/data-source="JPAWorldDataSourceDS":test-connection-in-pool
-{
-    "outcome" => "success",
-    "result" => [true]
-}
-```
+    ```JBoss
+    product-info
+    ```
 
-Exit from the JBoss EAP CLI.
+    The following output is typical:
 
-```bash
-exit
-```
+    ```output
+    {
+        "outcome" => "success",
+        "result" => [{"summary" => {
+            "host-name" => "jakartaee-aaaabbbb",
+            "instance-identifier" => "aaaaaaaa-1111-bbbb-2222-cccccccccccc",
+            "product-name" => "JBoss EAP",
+            "product-version" => "8.0 Update 4.1",
+            "product-community-identifier" => "Product",
+            "product-home" => "/opt/eap",
+            "standalone-or-domain-identifier" => "STANDALONE_SERVER",
+            "host-operating-system" => "Ubuntu 22.04.5 LTS",
+            "host-cpu" => {
+                "host-cpu-arch" => "amd64",
+                "host-core-count" => 2
+            },
+            "jvm" => {
+                "name" => "OpenJDK 64-Bit Server VM",
+                "java-version" => "17",
+                "jvm-version" => "17.0.13",
+                "jvm-vendor" => "Microsoft",
+                "java-home" => "/usr/lib/jvm/msopenjdk-17-amd64"
+            }
+        }}]
+    }
+    ```
+
+1. Use the following command to list all of the deployed applications:
+
+    ```JBoss
+    ls deployment
+    ```
+
+    The following output is typical:
+
+    ```output
+    ROOT.war
+    ```
+
+1. Test the database connection by using the following command:
+
+    ```JBoss
+    /subsystem=datasources/data-source="JPAWorldDataSourceDS":test-connection-in-pool
+    ```
+
+    The following output is typical:
+
+    ```output
+    {
+        "outcome" => "success",
+        "result" => [true]
+    }
+    ```
+
+1. Exit from the JBoss EAP CLI by using the following command:
+
+    ```JBoss
+    exit
+    ```
 
 ## Access the JBoss EAP admin web console
 
-Next, let's access the JBoss admin web console.
+Next, access the JBoss admin web console by using the following steps:
 
-First, create an admin user and password for authentication:
+1. Create an admin user and password for authentication by using the following command:
 
-```bash
-/opt/eap/bin/add-user.sh -u admin -p admin -r ManagementRealm
-```
+    ```bash
+    /opt/eap/bin/add-user.sh -u admin -p admin -r ManagementRealm
+    ```
 
-You should see output similar to the following.
+    The following output is typical:
 
-```bash
-Picked up JAVA_TOOL_OPTIONS: -Xmx5480M -Djava.net.preferIPv4Stack=true
-Updated user 'admin' to file '/opt/eap/standalone/configuration/mgmt-users.properties'
-Updated user 'admin' to file '/opt/eap/domain/configuration/mgmt-users.properties'
-```
+    ```output
+    Picked up JAVA_TOOL_OPTIONS: -Xmx5480M -Djava.net.preferIPv4Stack=true
+    Updated user 'admin' to file '/opt/eap/standalone/configuration/mgmt-users.properties'
+    Updated user 'admin' to file '/opt/eap/domain/configuration/mgmt-users.properties'
+    ```
 
-Now you can access the web console from your local environment. By using a browser, access the following URL:
+1. Access the web console from a web browser in your local environment by using `http://127.0.0.1:9990/console`.
 
-```html
-http://127.0.0.1:9990/console
-```
+1. In the authentication dialog box, sign in with the previously created username and password.
 
-In the authentication dialog box, sign in with the previously created username and password:
+    :::image type="content" source="../media/jboss-admin-console-authentication.png" alt-text="Screenshot of the authentication dialog box for the admin console." lightbox="../media/jboss-admin-console-authentication.png":::
 
-:::image type="content" source="../media/jboss-admin-console-1.png" alt-text="Screenshot that shows the authentication dialog box for the admin console.":::
+    After you sign in to the web console, the following screen appears:
 
-After you sign in to the web console, the following screen appears:
+    :::image type="content" source="../media/jboss-admin-console-home-page.png" alt-text="Screenshot of the main page of the admin console." lightbox="../media/jboss-admin-console-home-page.png":::
 
-:::image type="content" source="../media/jboss-admin-console-2.png" alt-text="Screenshot that shows the main page of the admin console.":::
+1. Confirm that you created the datasource by selecting **Configuration** > **Subsystems** > **Datasources & Drivers** > **Datasources**.
 
-You can confirm your created data source from **Configuration** > **Subsystems** > **Datasources & Drivers** > **Datasources**.
+    :::image type="content" source="../media/jboss-admin-console-configuration.png" alt-text="Screenshot of the list of data sources on the admin console." lightbox="../media/jboss-admin-console-configuration.png":::
 
-:::image type="content" source="../media/jboss-admin-console-3.png" alt-text="Screenshot that shows the list of data sources on the admin console.":::
+1. You can also confirm the RESTful endpoints of your application by selecting **Runtime** > **\<your-system\>** > **JAX-RS** > **\<your-application\>**.
 
-You can also confirm the RESTful endpoints of your application from **Runtime** > *System* > **JAX-RS** > *Your Application*.
+    :::image type="content" source="../media/jboss-admin-console-runtime.png" alt-text="Screenshot of the RESTful endpoints on the admin console." lightbox="../media/jboss-admin-console-runtime.png":::
 
-:::image type="content" source="../media/jboss-admin-console-4.png" alt-text="Screenshot that shows RESTful endpoints on the admin console.":::
-
-> [!WARNING]
-> If you directly access the remote server via the JBoss CLI command or web console and add or update a configuration, the configuration will be cleared and deleted after the Azure App Service instance is restarted. To persist the configuration, configure this in a startup script.
-For example, we created the `createMySQLDataSource.sh` as a startup script in a previous unit.
+    > [!WARNING]
+    > If you directly access the remote server via the JBoss CLI command or web console and add or update a configuration, the configuration is cleared and deleted after the Azure App Service instance is restarted. To persist the configuration, use a startup script such as the **createMySQLDataSource.sh** script used in a previous unit.
 
 ## Open a log stream
 
-Next, let's sign in to the server and access the application logs.
-You can access the logs by signing in your local machine through the following command:
+Access the logs by using the following command:
 
 ```azurecli
-az webapp log tail --name ${WEBAPP_NAME} --resource-group ${RESOURCEGROUP_NAME}
+az webapp log tail \
+    --resource-group ${RESOURCE_GROUP_NAME} \
+    --name ${WEB_APP_NAME}
 ```
 
-After you run the command, you get your log output:
+The following output is typical:
 
-```azurecli
-az webapp log tail  -n jakartaee-app-on-jboss-1606464084546 \
-  -g jakartaee-app-on-jboss-1606464084546-rg
-
-2020-12-09T02:23:24.412067731Z: [INFO]  02:23:24,411 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 82) WFLYUT0021: Registered web context: '/' for server 'default-server'
-2020-12-09T02:23:24.455340165Z: [INFO]  02:23:24,453 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "ROOT.war" (runtime-name : "ROOT.war")
-2020-12-09T02:23:24.464834646Z: [INFO]  02:23:24,456 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "activemq-rar.rar" (runtime-name : "activemq-rar.rar")
-2020-12-09T02:23:24.674103836Z: [INFO]  02:23:24,673 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
-2020-12-09T02:23:24.676640538Z: [INFO]  02:23:24,675 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: JBoss EAP 7.2.9.GA (WildFly Core 6.0.30.Final-redhat-00001) started in 25914ms - Started 537 of 709 services (345 services are lazy, passive or on-demand)
-2020-12-09T02:23:24.680203180Z: [INFO]  02:23:24,679 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
-2020-12-09T02:23:24.680950010Z: [INFO]  02:23:24,680 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+```output
+2025-02-25T06:58:11.5107300Z Waiting for main process to exit. GLOBAL_PID_MAIN=123
+2025-02-25T06:58:11.5109525Z Waiting for GLOBAL_PID_MAIN == 123
+2025-02-25T06:58:12.7891598Z 2025-02-25 06:58:12,786 WARN  [org.apache.activemq.artemis.core.server.impl.FileLockNodeManager] (Thread-2 (ActiveMQ-scheduled-threads)) Lost the lock according to the monitor, notifying listeners
+2025-02-25T06:58:14.3783443Z 2025-02-25 06:58:14,377 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) WFLYJPA0002: Read persistence.xml for JPAWorldDatasourcePU
+2025-02-25T06:58:14.7548991Z 2025-02-25 06:58:14,752 INFO  [org.jipijapa] (MSC service thread 1-3) JIPIORMV6020260: Second level cache enabled for ROOT.war#JPAWorldDatasourcePU
+2025-02-25T06:58:14.7971763Z 2025-02-25 06:58:14,796 WARN  [org.apache.activemq.artemis.core.server.impl.FileLockNodeManager] (Thread-2 (ActiveMQ-scheduled-threads)) Lost the lock according to the monitor, notifying listeners
+2025-02-25T06:58:14.9371057Z 2025-02-25 06:58:14,924 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment ROOT.war
+2025-02-25T06:58:15.2875956Z 2025-02-25 06:58:15,280 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-4) HV000001: Hibernate Validator 8.0.1.Final-redhat-00001
+2025-02-25T06:58:16.0075988Z 2025-02-25 06:58:16,003 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 78) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.marshalling.jboss.JBossMarshaller'
+2025-02-25T06:58:16.0534913Z 2025-02-25 06:58:16,048 INFO  [org.jipijapa] (MSC service thread 1-1) JIPIORMV6020260: Second level cache enabled for ROOT.war#JPAWorldDatasourcePU
+2025-02-25T06:58:16.1970192Z 2025-02-25 06:58:16,192 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.cj.jdbc.Driver (version 9.2)
+2025-02-25T06:58:16.2695781Z 2025-02-25 06:58:16,265 INFO  [org.jboss.weld.Version] (MSC service thread 1-1) WELD-000900: 5.1.2 (redhat)
+2025-02-25T06:58:16.4228682Z 2025-02-25 06:58:16,421 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = ROOT.war_com.mysql.cj.jdbc.Driver_9_2
+2025-02-25T06:58:16.4261069Z 2025-02-25 06:58:16,425 INFO  [org.jboss.as.connector.subsystems.datasources.AbstractDataSourceService$AS7DataSourceDeployer] (MSC service thread 1-3) IJ020018: Enabling <validate-on-match> for java:jboss/datasources/JPAWorldDataSource
+2025-02-25T06:58:16.4349571Z 2025-02-25 06:58:16,428 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/JPAWorldDataSource]
+2025-02-25T06:58:16.7892296Z 2025-02-25 06:58:16,787 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'ROOT.war#JPAWorldDatasourcePU'
+2025-02-25T06:58:16.8070373Z 2025-02-25 06:58:16,805 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 78) HHH000204: Processing PersistenceUnitInfo [name: JPAWorldDatasourcePU]
 ```
 
 ## Exercise summary
 
-In this unit, you learned how to configure and deploy a Java EE 8 (Jakarta EE) application to JBoss EAP on Azure App Service. Then you used a `DataSource` object for connecting MySQL to JBoss EAP in a startup script.
+In this unit, you learned how to configure and deploy a Jakarta EE 10 application to JBoss EAP on Azure App Service. Then, you used a `DataSource` object for connecting MySQL to JBoss EAP in a startup script.
 
-You also learned how to access the remote server from both the CLI and the GUI by using a TCP tunnel. Finally, you accessed the log file from a local machine.
+You also learned how to access the remote server from both the CLI and the graphical user interface (GUI) by using a TCP tunnel. Finally, you accessed the log file from a local machine.

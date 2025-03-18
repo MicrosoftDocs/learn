@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-microsoft-intune-suite.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/27/2024
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which feature of the Microsoft Intune Suite allows secure access to on-premises resources from mobile devices without requiring full device enrollment?"
+    choices:
+    - content: "Microsoft Defender for Endpoint"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender for Endpoint provides threat detection and response capabilities, not access to on-premises resources. Try again."
+    - content: "Endpoint Privilege Management"
+      isCorrect: false
+      explanation: "Incorrect. Endpoint Privilege Management is used to manage administrative privileges on devices. Try again."
+    - content: "Microsoft Tunnel"
+      isCorrect: true
+      explanation: "Correct. Microsoft Tunnel provides a secure connection to on-premises resources from mobile devices, especially useful in BYOD scenarios without full device enrollment."
+  - content: "Which of the following roles provides full rights to manage Endpoint Privilege Management (EPM) policies and elevation requests?"
+    choices:
+    - content: "Endpoint Privilege Manager"
+      isCorrect: true
+      explanation: "Correct. The Endpoint Privilege Manager role grants full rights to manage EPM policies and elevation requests in the Intune console."
+    - content: "Endpoint Privilege Reader"
+      isCorrect: false
+      explanation: "Incorrect. The Endpoint Privilege Reader role only allows viewing policies and reports related to EPM, not managing them. Try again."
+    - content: "Read Only Operator"
+      isCorrect: false
+      explanation: "Incorrect. The Read Only Operator role has limited access and can only view reports and elevation requests. Try again."
+  - content: "What is a primary benefit of using app protection policies in a BYOD scenario?"
+    choices:
+    - content: "Full device management is required"
+      isCorrect: false
+      explanation: "Incorrect. App protection policies allow securing data within apps without requiring full device management. Try again."
+    - content: "Corporate data within apps is protected and isolated from personal data"
+      isCorrect: true
+      explanation: "Correct. App protection policies ensure that corporate data within apps is encrypted and separated from personal data on the device, providing security in BYOD scenarios."
+    - content: "Apps are automatically updated without user consent"
+      isCorrect: false
+      explanation: "Incorrect. While apps can self-update, this is not directly related to app protection policies. Try again."

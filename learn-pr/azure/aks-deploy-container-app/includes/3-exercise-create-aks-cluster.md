@@ -1,6 +1,6 @@
 In this exercise, create an AKS cluster that uses several nodes to meet the demand of many customers using the service. You decide to use the *single control plane and multiple nodes* architecture because it provides the best way to create and manage workload resources.
 
-AKS supports both Linux and Windows node pools via the Portal or Azure CLI, however, if you're going to use Windows node pools, the cluster must be created with extra **prerequisites** and commands. Select an OS based on which type of node pools you want to add.
+AKS supports both Linux and Windows node pools via the Portal or Azure CLI. However, if you're going to use Windows node pools, the cluster must be created with extra **prerequisites** and commands. Select an OS based on which type of node pools you want to add.
 
 [!INCLUDE [azure-exercise-subscription-prerequisite](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
@@ -14,15 +14,17 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
     > [!IMPORTANT]
     > We'll run all the scripts with Bash, so if you haven't created a Cloud Shell yet, select *Bash* as the running shell.
 
+1. In the Cloud Shell window, select **Settings** > **Go to Classic version**.
+
 1. Create variables for the configuration values you reuse throughout the exercises.
 
     ```bash
     export RESOURCE_GROUP=rg-contoso-video
     export CLUSTER_NAME=aks-contoso-video
-    export LOCATION=<myLocation>
+    export LOCATION=eastus
     ```
 
-    Update the LOCATION variable with the region closest to you; for example: `eastus`.
+    Update the LOCATION variable with the region closest to you. This example uses: `eastus`.
 
 1. Run the `az group create` command to create a resource group. Deploy all resources into this new resource group.
 
@@ -37,13 +39,15 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
         --resource-group $RESOURCE_GROUP \
         --name $CLUSTER_NAME \
         --node-count 2 \
-        --enable-addons http_application_routing \
         --generate-ssh-keys \
         --node-vm-size Standard_B2s \
         --network-plugin azure
     ```
 
-    The above command creates a new AKS cluster named `aks-contoso-video` within the `rg-contoso-video` resource group. The cluster has two nodes defined by the `--node-count` parameter. We're using only two nodes here for cost considerations in this exercise. The `--node-vm-size` parameter configures the cluster nodes as Standard_B2s-sized VMs. The HTTP application routing add-on is enabled via the `--enable-addons` flag. These nodes are going to be part of **System** mode.
+    The command creates a new AKS cluster named `aks-contoso-video` within the `rg-contoso-video` resource group. The cluster has two nodes defined by the `--node-count` parameter. We're using only two nodes in this exercise for cost considerations in this exercise. The `--node-vm-size` parameter configures the cluster nodes as Standard_B2s-sized VMs. These nodes are part of **System mode**.
+
+    > [!IMPORTANT]
+    > Standard B2s VMs are required to create node pools but not available in Free-Tier subscriptions. If you're receiving notifications about limits, you need to upgrade to a Standard Upgrade.
 
 1. Run the `az aks nodepool add` command to add another node pool that uses the default Linux operating system.
 
@@ -56,7 +60,7 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
         --node-vm-size Standard_B2s
     ```
 
-    The command adds a new node pool (**User mode**) to the existing AKS cluster (created in the previous command). This new node pool can be used to host applications and workloads, instead of using the **System** node pool that was created in the previous step using `az aks create`.
+    The command adds a new node pool (**User mode**) to the existing AKS cluster (created in the previous command). This **User** node pool is used to host applications and workloads, unlike the **System** node pool.
 
 #### [Windows](#tab/windows)
 
@@ -68,16 +72,17 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
     > [!IMPORTANT]
     > We'll run all the scripts with Bash, so if you haven't created a Cloud Shell yet, select *Bash* as the running shell.
 
+1. In the Cloud Shell window, select the **More** icon (**...**), then select **Settings** > **Go to Classic version**.
+
 1. Create variables for the configuration values you reuse throughout the exercises.
 
     ```bash
     export RESOURCE_GROUP=rg-contoso-video
     export CLUSTER_NAME=aks-contoso-video
-    export LOCATION=<myLocation>
+    export LOCATION=eastus
     ```
 
-    Update the LOCATION variable with the region closest to you; for example: `eastus`.
-
+    Update the LOCATION variable with the region closest to you. This example uses: `eastus`.
 1. Run the `az group create` command to create a resource group. Deploy all resources into this new resource group.
 
     ```azurecli
@@ -91,14 +96,16 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
         --resource-group $RESOURCE_GROUP \
         --name $CLUSTER_NAME \
         --node-count 2 \
-        --enable-addons http_application_routing \
         --generate-ssh-keys \
         --node-vm-size Standard_B2s \
         --network-plugin azure \
         --windows-admin-username localadmin
     ```
 
-    The command creates a new AKS cluster named `aks-contoso-video` within the `rg-contoso-video` resource group. The cluster has two nodes defined by the `--node-count` parameter. We're using only two nodes in this exercise for cost considerations. The `--node-vm-size` parameter configures the cluster nodes as Standard_B2s-sized VMs. The HTTP application routing add-on is enabled via the `--enable-addons` flag. These nodes are going to be part of **System** mode.
+    The command creates a new AKS cluster named `aks-contoso-video` within the `rg-contoso-video` resource group. The cluster has two nodes defined by the `--node-count` parameter. We're using only two nodes in this exercise for cost considerations in this exercise. The `--node-vm-size` parameter configures the cluster nodes as Standard_B2s-sized VMs. These nodes are part of **System mode**.
+
+    > [!IMPORTANT]
+    > Standard B2s VMs are required to create node pools but not available in Free-Tier subscriptions. If you're receiving notifications about limits, you need to upgrade to a Standard Upgrade.
 
     The `--windows-admin-username` parameter is used to set up administrator credentials for Windows containers, and prompts the user to set a password at the command line. The password has to meet [**Windows Server password requirements**](/windows/security/threat-protection/security-policy-settings/password-must-meet-complexity-requirements#reference).
 
@@ -114,7 +121,7 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
         --os-type Windows
     ```
 
-    The command adds a new node pool (**User mode**) to an existing AKS cluster (created in the previous command). This new node pool can be used to host applications and workloads, instead of using the  **System** node pool, which was created in the previous step using `az aks create`.
+    The command adds a new node pool (**User mode**) to the existing AKS cluster (created in the previous command). This **User** node pool is used to host applications and workloads, unlike the **System** node pool.
 
     The `--os-type` parameter is used to specify operating system of the node pool. If not specified, the command uses Linux as operating system for the nodes.
 

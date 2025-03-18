@@ -15,6 +15,6 @@ Students preparing for this exam should have practical experience in administrat
 - Cloud capabilities
 - Azure services
 
-Before we begin, make sure you're using the most up-to-date version of the Microsoft Official Curriculum (MOC). It's recommended that you log into the [Learning Download Center](https://aka.ms/ldc) (LDC) at least quarterly. If you haven't already done so, please download the course materials from the LDC before continuing with this module.  
+Before we begin, make sure you're using the most up-to-date version of the Microsoft Official Curriculum (MOC). It's recommended that you log into the [Learning Download Center](https://techcommunity.microsoft.com/blog/mctnews/current-courseware-downloading-process/4196123) (LDC) at least quarterly. If you haven't already done so, please download the course materials from the LDC before continuing with this module.  
 
 Now that you have the updated materials, you’re ready to prepare for your class. 
