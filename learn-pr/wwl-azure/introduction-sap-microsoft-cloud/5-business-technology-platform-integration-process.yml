@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-sap-microsoft-cloud.business-technology-platform-integration-process
+title: TBusiness Technology Platform (BTP) integration process
+metadata:
+  title: TBusiness Technology Platform (BTP) integration process
+  description: "TBusiness Technology Platform (BTP) integration process"
+  ms.date: 03/18/2025
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-business-technology-platform-integration-process.md)]

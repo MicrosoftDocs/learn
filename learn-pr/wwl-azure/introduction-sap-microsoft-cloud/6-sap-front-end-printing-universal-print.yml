@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-sap-microsoft-cloud.sap-front-end-printing-universal-print
+title: 'title: SAP printing with Universal Print'
+metadata:
+  title: 'title: SAP printing with Universal Print'
+  description: "title: SAP printing with Universal Print"
+  ms.date: 03/18/2025
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-sap-front-end-printing-universal-print.md)]

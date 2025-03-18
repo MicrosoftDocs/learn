@@ -1,0 +1,63 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-sap-microsoft-cloud
+metadata:
+  title: Introduction to SAP on Microsoft Cloud
+  description: "In this module, you learn about integrating SAP Business Technology Platform with Azure Cloud, including identity provider setup, data integration, and implementing Universal Print for SAP front-end printing."
+  ms.date: 03/18/2025
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: module
+  ms.service: sap-on-azure
+  ai-usage: human-only
+title: Introduction to SAP on Microsoft Cloud
+summary: |
+  In this module, you learn about integrating SAP Business
+
+  Technology Platform with Azure Cloud, including identity provider setup, data
+
+  integration, and implementing Universal Print for SAP frontend printing.
+abstract: |
+  After completing this module, you’ll be able to:
+
+  -   Understand
+       the benefits of integrating SAP BTP with Azure, including enhanced
+       performance, security, and scalability of enterprise applications.
+  -   Set up
+       Microsoft Entra ID as an Identity Provider to protect sensitive data and
+       comply with industry regulations.
+  -   Configure
+       Azure Data Factory for data integration across digital transformation
+       initiatives.
+  -   Use
+       Azure Logic Apps for workflow automation and Azure API Management to
+       secure and manage APIs.
+  -   Use
+       Universal Print for SAP front-end printing, allowing centralized
+       management of printers and drivers.
+prerequisites: |
+  -   Experience using the Azure portal to create resources.
+
+  -   Basic knowledge of security concepts like identities, permissions, and encryption.
+
+  -   Basic knowledge of networking concepts like virtual networks and subnetting.
+
+  -   Basic knowledge of SAP RISE, GROW, and native.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- devops-engineer
+products:
+- azure-sap
+units:
+- learn.wwl.introduction-sap-microsoft-cloud.introduction
+- learn.wwl.introduction-sap-microsoft-cloud.get-started-microsoft-sap-integration-scenarios
+- learn.wwl.introduction-sap-microsoft-cloud.business-technology-platform-azure
+- learn.wwl.introduction-sap-microsoft-cloud.integrate-business-technology-platform
+- learn.wwl.introduction-sap-microsoft-cloud.business-technology-platform-integration-process
+- learn.wwl.introduction-sap-microsoft-cloud.sap-front-end-printing-universal-print
+- learn.wwl.introduction-sap-microsoft-cloud.knowledge-check
+- learn.wwl.introduction-sap-microsoft-cloud.summary
+badge:
+  uid: learn.wwl.introduction-sap-microsoft-cloud.badge
