@@ -1,6 +1,6 @@
 In this exercise, you use SQLite to store information locally with an application. In the sample scenario, you decided to cache data for the social-media app to improve responsiveness. This exercise creates and uses a local SQLite database for storing information about people. You save the physical database file in local storage.
 
-[!include[](../../../includes/dotnet8-sdk-version.md)]
+[!include[](../../../includes/dotnet9-sdk-version.md)]
 
 ## Open the starter solution
 
@@ -12,38 +12,23 @@ In this exercise, you use SQLite to store information locally with an applicatio
 1. Use Visual Studio to open the **People.sln** solution, which you find in **mslearn-dotnetmaui-store-local-data** > **People**, or the starter folder in Visual Studio Code.
 
     > [!NOTE]
-    > Don't try and build the solution just yet. The code is incomplete and won't compile until you add the missing elements later in this exercise.
+    > Don't try run the application just yet, the code is incomplete and will throw exceptions until you add the missing elements later in this exercise.
 
 ## Define a SQLite entity
 
-1. Right-click the **People** project, select **Add**, then select **New folder** to add a new folder to the project. Name the new folder **Models**.
-
-1. Right-click the **Models** folder, select **Add**, and select **Class**. Make sure **Class** is selected in the list, then name the new class **Person.cs**. Select **Add**.
-
-1. Modify the class and mark it as `public`:
-
-    ```csharp
-    namespace People.Models
-    {
-
-        public class Person
-        {
-        }
-    }
-    ```
+1. Open the **Person.cs** file in the **Models** folder.
 
 1. Add an `int` property called `Id` to the `Person` class.
 
 1. Add a `string` property called `Name`. The class should look like this:
 
     ```csharp
-    namespace People.Models
+    namespace People.Models;
+
+    public class Person
     {
-        public class Person
-        {
-            public int Id { get; set; }
-            public string Name { get; set; }
-        }
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
     ```
 
@@ -57,13 +42,10 @@ In this exercise, you use SQLite to store information locally with an applicatio
 
     :::image type="content" source="../media/4-sqlite-nuget-package.png" alt-text="A screenshot showing the NuGet package manager with the sqlite-net-pcl library selected.":::
 
-1. Also search for and select **SQLitePCLRaw.bundle_green**, then select **Install**.
-
 If using Visual Studio Code, open the terminal and these packages with the following commands:
 
 ```dotnetcli
 dotnet add package sqlite-net-pcl
-dotnet add package SQLitePCLRaw.bundle_green
 ```
 
 ## Add SQLite attributes
@@ -73,10 +55,10 @@ dotnet add package SQLitePCLRaw.bundle_green
     ```csharp
     using SQLite;
 
-    namespace People.Models
-    {
+    namespace People.Models;
 
-        public class Person
+    public class Person
+    {
         ...
     }
     ```
@@ -92,18 +74,16 @@ dotnet add package SQLitePCLRaw.bundle_green
     ```csharp
     using SQLite;
 
-    namespace People.Models
+    namespace People.Models;
+
+    [Table("people")]
+    public class Person
     {
+        [PrimaryKey, AutoIncrement]
+        public int Id { get; set; }
 
-        [Table("people")]
-        public class Person
-        {
-            [PrimaryKey, AutoIncrement]
-            public int Id { get; set; }
-
-            [MaxLength(250), Unique]
-            public string Name { get; set; }
-        }
+        [MaxLength(250), Unique]
+        public string Name { get; set; }
     }
     ```
 
@@ -255,9 +235,6 @@ dotnet add package SQLitePCLRaw.bundle_green
         public App(PersonRepository repo)
         {
             InitializeComponent();
-
-            MainPage = new AppShell();
-
             PersonRepo = repo;
         }
     }

@@ -2,11 +2,9 @@
 uid: learn.wwl.explore-azure-storage.recognize-virtual-machine-images-disks
 title: Recognize virtual machine images and disks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Recognize virtual machine images and disks
   description: "Recognize virtual machine images and disks."
-  ms.date: 08/13/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

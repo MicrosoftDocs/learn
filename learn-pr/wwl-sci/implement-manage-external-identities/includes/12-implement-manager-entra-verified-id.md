@@ -1,13 +1,10 @@
-:::image type="content" source="../media/entra-verified-identity-d15c9bf7.png" alt-text="Screenshot of the Microsoft Entra ID security settings screen, with the Verifiable credentials selected.":::
-
-
-Microsoft Entra Verified ID is a preview feature. This content will continue to update as more capabilities are added, and the feature moves to general-availability. For more information you can also look here: [Configure your tenant for Microsoft Entra Verifiable Credentials](/azure/active-directory/verifiable-credentials/verifiable-credentials-configure-tenant).
+:::image type="content" source="../media/entra-verified-identity-d15c9bf7-67300c67.png" alt-text="Screenshot of the Microsoft Entra ID security settings screen, with the Verifiable credentials selected.":::
 
 ### What is Entra Verified ID?
 
 Microsoft Entra Verified ID safeguards your organization with an identity solution that's seamless and decentralized. The service allows you to issue and verify credentials. For issuers, Microsoft Entra ID provides a service that they can customize and use to issue their own verifiable credentials. For verifiers, the service provides a free REST API that makes it easy to request and accept verifiable credentials in your apps and services.
 
-We use IDs in our daily lives. We have drivers licenses that we use as evidence of our ability to operate a car. Universities issue diplomas that prove we attained a level of education. We use passports to prove who we are to authorities as we arrive to other countries / regions. The data model describes how we could handle these types of scenarios when working over the internet but in a secure manner that respects users' privacy. In short, verifiable credentials are data objects consisting of claims made by the issuer attesting information about a subject. These claims are identified by schema and include the DID issuer and subject. The issuer's DID creates a digital signature as proof that they attest to this information.
+We use IDs in our daily lives. We have drivers licenses that we use as evidence of our ability to operate a car. Universities issue diplomas that prove we attained a level of education. We use passports to prove who we are to authorities as we arrive to other countries/regions. The data model describes how we could handle these types of scenarios when working over the internet but in a secure manner that respects users' privacy. In short, verifiable credentials are data objects consisting of claims made by the issuer attesting information about a subject. These claims are identified by schema and include the DID issuer and subject. The issuer's DID creates a digital signature as proof that they attest to this information.
 
 ### Deploying the Microsoft Entra Verified ID service
 

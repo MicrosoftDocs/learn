@@ -16,7 +16,7 @@ It's helpful to envision these building blocks in a hierarchy to understand how 
 
 ![Screenshot of Fabric access control hierarchy.](../media/data-access-controls.png)
 
-A *workspace* in Fabric enables you to distribute ownership and access policies using *workspace roles*. Within a workspace, you can create Fabric data *items* like lakehouses, data warehouses, and semantic models. *Item permissions* can be inherited from a workspace role or set individually by sharing an item. Items are shared using item permissions when workspace roles are too permissive.  
+A *workspace* in Fabric enables you to distribute ownership and access policies using *workspace roles*. Within a workspace, you can create Fabric data *items* like lakehouses, data warehouses, and semantic models. *Item permissions* can be inherited from a workspace role or set individually by sharing an item. When workspace roles provide too much access, items can be shared using item permissions to ensure proper security.
 
 Within each data item, *granular engine permissions* such as Read, ReadData, or ReadAll can be applied. 
 

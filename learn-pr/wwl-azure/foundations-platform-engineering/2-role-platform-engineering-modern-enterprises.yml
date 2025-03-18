@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.foundations-platform-engineering.role-platform-engineering-modern-enterprises
+title: The Role of Platform Engineering in Modern Enterprises
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: The Role of Platform Engineering in Modern Enterprises
+  description: "The Role of Platform Engineering in Modern Enterprises"
+  ms.date: 01/14/2025
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-role-platform-engineering-modern-enterprises.md)]

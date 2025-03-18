@@ -43,7 +43,7 @@ To use GitHub Copilot, you need to complete the following steps:
 
 3. **Enable Copilot**:
    - In GitHub, go to your profile, then head over to **Settings**.
-   - Under **Copilot**, enable access or sign up for a free trial.
+   - Under **Copilot**, enable access or sign up for GitHub Copilot Free or try a trial for one of the tiered plans.
 
 4. **Install the Extension**:
    - Install the GitHub Copilot extension into your IDE.

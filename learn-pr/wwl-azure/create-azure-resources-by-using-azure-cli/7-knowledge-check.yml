@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-azure-resources-by-using-azure-cli.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/17/2025
+  author: wwlpublish
+  ms.author: dbradish
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What are the two types of Azure CLI reference types?"
+    choices:
+    - content: "Cmdlets and modules"
+      isCorrect: false
+      explanation: "Incorrect. Azure PowerShell is the tool comprised of cmdlets and modules."
+    - content: "Core and extension"
+      isCorrect: true
+      explanation: "Correct. All Azure CLI reference commands are part of Azure CLI `core`, or are an Azure CLI extension."
+  - content: "Which of the following commands can you use to create a resource group using Azure CLI?"
+    choices:
+    - content: "az group create"
+      isCorrect: true
+      explanation: "Correct. Create a resource group to organize and manage your Azure resources by running `az group create`."
+    - content: "az creates group"
+      isCorrect: false
+      explanation: "Incorrect. Create a resource group to organize and manage your Azure resources by running `az group create`."
+    - content: "az deployment group create"
+      isCorrect: false
+      explanation: "Incorrect. Create a resource group to organize and manage your Azure resources by running `az group create`."
+  - content: "What parameter do you use to troubleshoot Azure CLI commands?"
+    choices:
+    - content: "--help"
+      isCorrect: false
+      explanation: "Incorrect. The `--help` parameter gives you more information about a command group, subgroup, or command."
+    - content: "--find"
+      isCorrect: false
+      explanation: "Incorrect. The `--find` parameter helps you locate Azure CLI reference commands."
+    - content: "--debug"
+      isCorrect: true
+      explanation: "Correct. The `--debug` parameter exposes API calls and the parameter values your environment interpreted."
+  - content: "Which of the following choices is a valid syntax for string variables in Bash?"
+    choices:
+    - content: "variableName=varValue"
+      isCorrect: true
+      explanation: "Correct. To instantiate a variable in Bash, use `variableName=variableValue` or `variableNAme=\"variableValue\"."
+    - content: " $variableName=\"varValue\""
+      isCorrect: false
+      explanation: "Incorrect. Preceding a dollar sign before a variable name is PowerShell syntax."
+    - content: "set variableName=varValue"
+      isCorrect: false
+      explanation: "Incorrect. The `set` command is Cmd.exe syntax."
+  - content: "In which operating systems can you execute Azure CLI commands?"
+    choices:
+    - content: "Windows only"
+      isCorrect: false
+      explanation: "Incorrect. The Azure CLI runs in Windows, Linux, macOS, inside Docker Containers, and Azure Cloud Shell."
+    - content: "Linux only"
+      isCorrect: false
+      explanation: "Incorrect. The Azure CLI runs in Windows, Linux, macOS, inside Docker Containers, and Azure Cloud Shell."
+    - content: "macOS only"
+      isCorrect: false
+      explanation: "Incorrect. The Azure CLI runs in Windows, Linux, macOS, inside Docker Containers, and Azure Cloud Shell."
+    - content: "Windows, macOS, and Linux"
+      isCorrect: true
+      explanation: "Correct. The Azure CLI runs in Windows, Linux, macOS, inside Docker Containers, and Azure Cloud Shell."      

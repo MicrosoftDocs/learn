@@ -5,10 +5,11 @@ metadata:
   prefetch-feature-rollout: true
   title: Configure Azure Storage security
   description: "Learn how to configure common Azure Storage security features like storage access signatures."
-  ms.date: 03/05/2024
+  ms.date: 03/04/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: azure-storage
@@ -18,13 +19,13 @@ summary: Learn how to configure common Azure Storage security features like stor
 abstract: |
   In this module, you learn how to:
 
-  - Configure a shared access signature (SAS), including the uniform resource identifier (URI) and SAS parameters.
+  -   Configure a shared access signature (SAS), including the uniform resource identifier (URI) and SAS parameters.
 
-  - Configure Azure Storage encryption.
+  -   Configure Azure Storage encryption.
 
-  - Implement customer-managed keys.
+  -   Implement customer-managed keys.
 
-  - Recommend opportunities to improve Azure Storage security.
+  -   Recommend opportunities to improve Azure Storage security.
 prerequisites: None
 iconUrl: /training/achievements/storage-security-configure.svg
 levels:

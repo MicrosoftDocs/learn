@@ -2,11 +2,9 @@
 uid: learn.wwl.explore-azure-networking.load-balancer
 title: Explore Azure load balancer
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Azure load balancer
   description: "Explore enhancing availability and scalability of virtual machine by using Azure load balancer."
-  ms.date: 10/03/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

@@ -68,17 +68,14 @@ quiz:
         - content: "Traffic inspection is used to segregate public-facing services from private ones to reduce attack surfaces."
           isCorrect: false
           explanation: "Segregating public-facing services from private ones is an important security consideration, but it is not the primary purpose of traffic inspection."
-    - content: "What are some benefits of using Microsoft Defender for DNS in Azure?"
+    - content: What does the interactive network map in Microsoft Defender for Cloud provide?
       choices:
-        - content: "Defender for DNS detects and blocks all types of malicious web traffic."
-          isCorrect: false
-          explanation: "While Defender for DNS can block many types of malicious web traffic, it is not foolproof and should be used in conjunction with other security measures."
-        - content: "Defender for DNS uses machine learning algorithms to detect threat patterns in real-time."
+        - content: It provides a graphical view with security overlays giving recommendations and insights for hardening network resources.
           isCorrect: true
-          explanation: "Defender for DNS uses advanced analytics and machine learning algorithms to identify and stop malicious traffic in real-time."
-        - content: "Defender for DNS increases the speed of DNS resolution through the use of caching."
+          explanation: Correct. The interactive network map provides a graphical view with security overlays, showing the network topology of Azure workloads, connections between virtual machines and subnets, and recommendations for specific resources.
+        - content: It provides a list of all the users connected to the network.
           isCorrect: false
-          explanation: "While Defender for DNS may provide advantages over traditional DNS service, it does not directly impact the speed of DNS resolution."
-        - content: "Defender for DNS provides automatic updates of DNS records to minimize misconfigurations."
+          explanation: Incorrect. The network map does not provide a list of users, but rather a graphical view with security overlays giving recommendations and insights for hardening network resources.
+        - content: It provides a real-time traffic analysis of the network.
           isCorrect: false
-          explanation: "While it may provide some benefits in terms of management and automation, Defender for DNS does not directly impact DNS record configuration."  
+          explanation: Incorrect. While the network map does provide a view of possible traffic between resources, it does not provide real-time traffic analysis.

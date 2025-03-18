@@ -4,7 +4,7 @@ AZ-900: Module 2, Lesson 2: Compute and networking
 
 As you are preparing to teach this lesson, get familiar with what the students will learn during the lesson. In this lesson, students will learn about the concept of compute services and how Azure compute is an on-demand computing service that provides computing resources. They will also learn the difference between scale sets and availability sets, Azure network services, Azure Domain Name System (DNS).
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dSQl]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e5a9b750-90e2-4f9a-90b5-cb4a9eec1d4f]
  
 Module 2, Lesson 2 Tips and Tricks
 

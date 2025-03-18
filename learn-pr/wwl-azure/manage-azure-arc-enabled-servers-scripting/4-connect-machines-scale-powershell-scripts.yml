@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Connect machines at scale by running PowerShell scripts with Configuration Manager
   description: "Connect machines at scale by running PowerShell scripts with Configuration Manager"
-  ms.date: 06/11/2024
+  ms.date: 02/14/2025
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit

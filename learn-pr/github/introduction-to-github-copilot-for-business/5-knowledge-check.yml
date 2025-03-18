@@ -14,7 +14,7 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-    - content: "What functionality isn't supported in GitHub Copilot Individuals?"
+    - content: "What functionality isn't supported in GitHub Copilot Pro?"
       choices:
         - content: "VPN Proxy support via self-signed certificates"
           isCorrect: true

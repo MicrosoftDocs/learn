@@ -3,7 +3,7 @@ uid: introduction-azure-openai-managed-identity-authentication-python.knowledge-
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Display your knowledge
+  description: Display your knowledge.
   ms.date: 11/11/2024
   author: sarah-yo
   ms.author: sayoung
@@ -14,15 +14,15 @@ quiz:
   questions:
     - content: "What is the primary benefit of using managed identities over API keys in Azure OpenAI?"
       choices:
-        - content: "Enhanced Security"
+        - content: "Enhanced security"
           isCorrect: true
-          explanation: "Managed identities eliminate the need to store credentials within application code, reducing the risk of credential leaks. They leverage Azure Active Directory for authentication, providing a more secure and automated method for accessing Azure services."
-        - content: "Increased Performance"
+          explanation: "Managed identities eliminate the need to store credentials within application code, reducing the risk of credential leaks. They use Microsoft Entra authentication to provide a more secure and automated method for accessing Azure services."
+        - content: "Increased performance"
           isCorrect: false
-          explanation: "While managed identities improve security, they don't inherently increase application performance."
-        - content: "Cost Reduction"
+          explanation: "Managed identities don't inherently increase application performance."
+        - content: "Reduced costs"
           isCorrect: false
-          explanation: "Managed identities don't directly impact the cost of Azure services; their primary benefit is enhanced security."
+          explanation: "Managed identities don't directly affect the cost of Azure services."
     - content: "Which role in Azure OpenAI allows you to create custom fine-tuned models and manage model deployments?"
       choices:
         - content: "Cognitive Services OpenAI User"
@@ -34,15 +34,15 @@ quiz:
         - content: "Cognitive Services OpenAI Contributor"
           isCorrect: true
           explanation: "This role includes permissions to create custom fine-tuned models, upload datasets, and manage model deployments."
-    - content: "In the provided code example for keyless authentication to Azure OpenAI for Azure-hosted environments using Python, what is the purpose of the chat.completion.create method?"
+    - content: "In the provided code example for keyless authentication to Azure OpenAI for Azure-hosted environments by using Python, what is the purpose of the `chat.completions.create` method?"
       choices:
         - content: "Authenticate the user"
           isCorrect: false
-          explanation: "Authentication is handled separately, typically using credentials or tokens, and isn't the purpose of this method."
-        - content: "Generate a response from the OpenAI model"
+          explanation: "Authentication is handled separately, typically through credentials or tokens. It isn't the purpose of this method."
+        - content: "Generate a response from the Azure OpenAI model"
           isCorrect: true
-          explanation: "This method sends a request to the OpenAI service with the specified parameters, such as the model, prompt, and other settings, and returns the generated response."
+          explanation: "This method sends a request to the Azure OpenAI service with the specified parameters, such as the model, the prompt, and other settings. It then returns the generated response."
         - content: "Store the API response"
           isCorrect: false
-          explanation: "This method generates a response from the OpenAI model but doesn't handle storing the response; storing data would require additional code."
+          explanation: "This method generates a response from the Azure OpenAI model but doesn't handle storing the response. Storing data would require additional code."
     

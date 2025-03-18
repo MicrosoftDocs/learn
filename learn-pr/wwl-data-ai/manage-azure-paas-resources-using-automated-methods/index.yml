@@ -5,8 +5,8 @@ metadata:
   prefetch-feature-rollout: true
   title: Manage Azure PaaS tasks using automation
   description: Manage Azure PaaS tasks using automation
-  ms.date: 06/10/2022
-  author: wwlpublish
+  ms.date: 02/27/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module
   ms.service: azure

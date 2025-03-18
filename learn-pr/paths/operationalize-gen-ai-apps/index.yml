@@ -1,0 +1,33 @@
+### YamlMime:LearningPath
+uid: learn.wwl.operationalize-gen-ai-apps
+metadata:
+  title: Operationalize generative AI applications (GenAIOps)
+  description: Learn how to develop, evaluate, optimize, and deploy generative AI applications (GenAIOps)
+  ms.date: 03/03/2025
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: learning-path
+  ms.collection: wwl-ai-copilot
+  ms.custom: [copilot-learning-hub]
+title: Operationalize generative AI applications (GenAIOps) 
+prerequisites: |
+  Before starting this learning path, you should be familiar with fundamental generative AI concepts and services in Azure. Consider completing the [Microsoft Azure AI Fundamentals: Generative AI](/training/paths/introduction-generative-ai/?azure-portal=true) learning path first.
+summary: |
+  To effectively scale generative Artificial Intelligence (AI) applications, you need to manage, deploy, and maintain GenAI apps to ensure their performance, reliability, and continuous improvement in real-world applications.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-scientist
+- ai-engineer
+products:
+- ai-services
+subjects:
+- artificial-intelligence
+- machine-learning
+- natural-language-processing
+modules:
+- learn.wwl.plan-prepare-genaiops
+- learn.evaluate-generative-ai-apps
+trophy:
+  uid: learn.wwl.operationalize-gen-ai-apps.trophy

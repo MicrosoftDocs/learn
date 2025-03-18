@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Check your knowledge"
-  ms.date: 06/11/2024
+  ms.date: 01/23/2025
   author: wwlpublish
   ms.author: buzahid
   ms.topic: unit
@@ -19,23 +19,12 @@ quiz:
     - content: "Semantic Kernel SDK primarily functions as a standalone AI application."
       isCorrect: false
       explanation: "Incorrect. The Semantic Kernel SDK isn't a standalone AI application."
-    - content: "Semantic Kernel SDK acts as an AI orchestration layer between code and large language models."
-      isCorrect: true
-      explanation: "Correct. Semantic Kernel provides a layer for seamless integration with large language models."
     - content: "Semantic Kernel SDK is exclusively designed for gaming applications."
       isCorrect: false
       explanation: "Incorrect. The Semantic Kernel SDK isn't exclusively designed for gaming applications."
-  - content: "What are connectors in the Semantic Kernel SDK?"
-    choices:
-    - content: "Connectors in the Semantic Kernel SDK refer to electrical components."
-      isCorrect: false
-      explanation: "Incorrect. Connectors in the Semantic Kernel SDK are not electrical components."
-    - content: "Connectors connect the application code to the internet."
-      isCorrect: false
-      explanation: "Incorrect. Connectors in the Semantic Kernel SDK aren't responsible for connecting the application code to the internet."
-    - content: "Connectors serve as the bridge between application code and AI models."
+    - content: "Semantic Kernel SDK acts as a bridge between code and large language models."
       isCorrect: true
-      explanation: "Correct. Connectors facilitate the integration process."
+      explanation: "Correct. Semantic Kernel provides a layer for seamless integration with large language models."
   - content: "Which of the following statements is true about the Semantic Kernel SDK?"
     choices:
     - content: "Semantic Kernel SDK adds unnecessary complexity and developers should avoid it."
@@ -47,3 +36,14 @@ quiz:
     - content: "Semantic Kernel SDK is only suitable for advanced AI developers."
       isCorrect: false
       explanation: "Incorrect. The Semantic Kernel SDK is suitable for developers of all levels."
+  - content: "How does the Semantic Kernel handle prompts sent to an AI service?"
+    choices:
+    - content: "It builds the prompt using a provided template and processes the response."
+      isCorrect: true
+      explanation: "Correct. The kernel builds the prompt, sends it to the AI service, receives the response, and parses it before returning it to the application."
+    - content: "It selects multiple AI services simultaneously to run the prompt."
+      isCorrect: false
+      explanation: "Incorrect. The kernel selects the best single AI service to run the prompt."
+    - content: "It bypasses the use of templates to streamline the workflow."
+      isCorrect: false
+      explanation: "Incorrect. The kernel uses provided prompt templates as part of the process."

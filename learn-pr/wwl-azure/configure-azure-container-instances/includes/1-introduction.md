@@ -6,7 +6,6 @@ In this module, you learn when to use Azure Container Instances instead of virtu
 
 The goal of this module is to introduce you to Azure Container Instances.
 
-
 ## Learning objectives
 
 In this module, you learn how to:
@@ -17,7 +16,7 @@ In this module, you learn how to:
 
 ## Skills measured
 
-The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). 
+The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/credentials/certifications/resources/study-guides/az-104). 
 
 ## Prerequisites
 

@@ -1,10 +1,10 @@
-You can create a public IP address for your resource in the Azure portal.
+You can create a public IP address for your resource in the Azure portal. For example, you could create a public IP address for a virtual machine.
 
 :::image type="content" source="../media/create-public-ip-address-f07bd67d.png" alt-text="Screenshot that shows how to create a public IP address in the Azure portal.":::
 
 ### Things to consider when creating a public IP address
 
-To create a public IP address, configure the following settings:
+To create a public IP address, configure these settings:
 
 - **IP Version**: Select to create an **IPv4** or **IPv6** address, or **Both** addresses.
 

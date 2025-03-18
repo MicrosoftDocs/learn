@@ -2,11 +2,9 @@
 uid: learn.wwl.implement-high-availability-for-sap-workloads-azure.examine-of-dbms-instances
 title: Examine high availability of DBMS instances
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Examine high availability of DBMS instances
   description: "Examine high availability of DBMS instances."
-  ms.date: 09/20/2024
+  ms.date: 12/27/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

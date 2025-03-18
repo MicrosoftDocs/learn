@@ -2,7 +2,7 @@ Azure Administrators are familiar with Azure Files and the Azure File Sync agent
 
 In this module, you learned when to use Azure Files and how the service compares to Azure Blob Storage. You also reviewed Azure Files features such as snapshots and soft delete. You learned how Azure File Sync can be used with on-premises data stores. You also were introduced to Azure Storage Explorer.
 
-The main takeaways for this module are:
+**The main takeaways for this module are:**
 
 - Azure Files provides the SMB and NFS protocols, client libraries, and a REST interface that allows access from anywhere to stored files.
 
@@ -14,12 +14,19 @@ The main takeaways for this module are:
 
 - File share snapshots capture a point-in-time, read-only copy of your data.
 
-- Soft delete allows you to recover your file share when it's deleted by an application or other storage account user.
+- Soft delete allows you to recover your deleted file share.
 
 - Azure Storage Explorer is a standalone application that makes it easy to work with stored data on Windows, macOS, and Linux. 
 
 - Azure File Sync enables you to cache file shares on an on-premises Windows Server or cloud virtual machine. 
 
+## Learn more with Copilot
+
+Copilot can assist you in configuring Azure infrastructure solutions. Copilot can compare, recommend, explain, and research products and services where you need more information. Open a Microsoft Edge browser and choose Copilot (top right) or navigate to copilot.microsoft.com. Take a few minutes to try these prompts and extend your learning with Copilot.
+
+- What are Azure Files and how are they different from Azure blob storage?
+
+- What are some common configuration and administration tasks for Azure Files?
 
 ## Learn more with documentation
 
@@ -32,4 +39,7 @@ The main takeaways for this module are:
 - [Introduction to Azure Files](/training/modules/introduction-to-azure-files/). In this module, you learn how you can meet your storage needs with Azure Files and Azure File Sync.
 
 - [Implement a hybrid file server infrastructure](/training/modules/implement-hybrid-file-server-infrastructure/). In this module, you learn to deploy Azure File Sync and use Storage Migration Services to migrate file servers to Azure.
+
+- [Guided Project - Azure Files and Azure Blobs](/training/modules/guided-project-azure-files-azure-blobs/). In this module, you practice storing business data securely by using Azure Blob Storage and Azure Files. The lab combines both learning and practical experience. 
+
 

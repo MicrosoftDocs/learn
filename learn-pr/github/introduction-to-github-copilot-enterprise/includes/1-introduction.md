@@ -5,7 +5,7 @@ With the introduction of GitHub Copilot Enterprise, your organization can experi
 Here’s what you’ll learn in this module:
 
 - Comprehend the specific features of GitHub Copilot Enterprise
-- Understand the differences between GitHub Copilot Enterprise versus Business versus Individual.
+- Understand the differences between GitHub Copilot Enterprise versus Business versus Pro & Free.
 - Learn about specific use cases for GitHub Copilot Enterprise and hear how customers are enhancing their productivity.
 - Review how to enable GitHub Copilot Enterprise.
 

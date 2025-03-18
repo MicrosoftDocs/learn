@@ -1,4 +1,3 @@
-
 > [!CAUTION]
 > This article references CentOS, a Linux distribution that is End Of Life (EOL) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
 
@@ -57,6 +56,7 @@ Microsoft Defender for Endpoint on Android is our mobile threat defense solution
 ## Microsoft Defender for Endpoint on iOS
 
 Microsoft Defender for Endpoint on iOS is our mobile threat defense solution for devices running iOS 11.0 and higher. Devices that are registered within a customer's tenant (enrolled or unenrolled) are supported. Both supervised and unsupervised enrolled devices are supported. On iOS, we offer web protection, which includes anti-phishing, blocking unsafe connections and setting custom indicators, and jailbreak detection.
+
 
 
 

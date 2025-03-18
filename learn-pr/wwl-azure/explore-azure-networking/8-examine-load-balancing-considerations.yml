@@ -2,11 +2,9 @@
 uid: learn.wwl.explore-azure-networking.examine-load-balancing-considerations
 title: Examine load balancing considerations
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Examine load balancing considerations
   description: "Examine load balancing considerations."
-  ms.date: 10/03/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

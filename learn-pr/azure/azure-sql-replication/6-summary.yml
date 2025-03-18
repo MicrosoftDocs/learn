@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-replication.summary
+title: Summary
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  unitType: learning-content
+  title: Summary
+  description: "Reviewing all Azure SQL data tracking tools covered in this Learn Module - change data capture (CDC) and change tracking."
+  ms.date: 01/15/2025
+  author: WilliamDAssafMSFT
+  ms.author: wiassaf
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-summary.md)]
+

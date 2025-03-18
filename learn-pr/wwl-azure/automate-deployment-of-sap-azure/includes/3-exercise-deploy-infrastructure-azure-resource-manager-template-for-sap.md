@@ -152,3 +152,4 @@ If you created any resources with deployments, clean up the resources you deploy
 
 4. Select **Delete resource group** from the top menu.
 
+

@@ -19,7 +19,7 @@ In a previous module, you learned how to scale a database by using T-SQL. The go
 1. In the Azure Cloud Shell terminal on the right side of this page, run the following PowerShell script to configure your environment:  
 
     ```powershell
-    $resourceGroup = "<rgn>Sandbox resource group name</rgn>"
+    $resourceGroup = "<rgn>[sandbox resource group name]</rgn>"
     $database = "AdventureWorks-bc"
     $server = Get-AzureRmSqlServer -ResourceGroupName $resourceGroup
     $server = $server.ServerName

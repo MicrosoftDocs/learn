@@ -1,7 +1,7 @@
 ---
 author: mumian
 ms.topic: include
-ms.date: 11/14/2021
+ms.date: 01/15/2025
 ms.author: jgao
 ---
 [!INCLUDE [Introduction (PowerShell)](azure-template-exercise-nosandbox-intro-powershell.md)]

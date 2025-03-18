@@ -1,0 +1,64 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.discover-microsoft-sentinel-solution-for-sap-btp.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Check what you learn in this module."
+  ms.date: 01/13/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary function of the Microsoft Sentinel Solution for SAP BTP?"
+    choices:
+    - content: "It offers a bird's-eye view across your enterprise."
+      isCorrect: false
+      explanation: "That is incorrect. This is a feature of Microsoft Sentinel in general, not specifically the Microsoft Sentinel Solution for SAP BTP."
+    - content: "It monitors and protects your SAP BTP system by collecting audits and activity logs from the BTP infrastructure and BTP-based apps."
+      isCorrect: true
+      explanation: "That is correct. The Microsoft Sentinel Solution for SAP BTP is designed to monitor and protect your SAP BTP system."
+    - content: "It provides low-code development capabilities for SAP BTP."
+      isCorrect: false
+      explanation: "That is incorrect. While SAP BTP does offer low-code development, this isn't a feature provided by the Microsoft Sentinel Solution for SAP BTP."
+  - content: "What are the capabilities of the Microsoft Sentinel Solution for SAP BTP?"
+    choices:
+    - content: "It monitors both on-premises and SaaS SAP environments."
+      isCorrect: false
+      explanation: "That is incorrect. The Microsoft Sentinel Solution for SAP BTP can monitor only SaaS SAP environments."
+    - content: "It monitors only on-premises SAP environments."
+      isCorrect: false
+      explanation: "That is incorrect. The Microsoft Sentinel Solution for SAP BTP can monitor only SaaS SAP environments."
+    - content: "It monitors only Saas SAP environments."
+      isCorrect: true
+      explanation: "That is correct. The Microsoft Sentinel Solution for SAP BTP can monitor only SaaS SAP environments."
+  - content: "What does the Overview tab in the Microsoft Sentinel Solution for SAP BTP Activity Workbook display?"
+    choices:
+    - content: "It provides a detailed log of all BTP security alerts."
+      isCorrect: false
+      explanation: "That is incorrect. While it does show the number of BTP security alerts, it doesn't provide a detailed log."
+    - content: "It displays BTP subaccounts, sign-in activity, and a timeline of BTP activity and security alerts."
+      isCorrect: true
+      explanation: "That is correct. The Overview tab helps analysts identify active accounts, sign-in trends, and any correlation between BTP activity and security alerts."
+    - content: "It shows a grid of identity management events in a human-readable format."
+      isCorrect: false
+      explanation: "That is incorrect. This is the function of the Identity Management tab, not the Overview tab."
+  - content: "Which is one of the values found in the service key created when deploying the Microsoft Sentinel Solution for SAP BTP?"
+    choices:
+    - content: "`uaa.clientid`"
+      isCorrect: true
+      explanation: "That is correct. The required values in the service key are url, uaa.clientid, uaa.clientecret, and uaa.url."
+    - content: "`clientname`"
+      isCorrect: false
+      explanation: "That is incorrect. The required values in the service key are url, uaa.clientid, uaa.clientecret, and uaa.url."
+    - content: "`client.url`"
+      isCorrect: false
+      explanation: "That is incorrect. The required values in the service key are url, uaa.clientid, uaa.clientecret, and uaa.url."

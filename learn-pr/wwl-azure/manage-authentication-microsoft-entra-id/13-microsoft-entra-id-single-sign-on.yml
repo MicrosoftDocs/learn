@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Microsoft Entra ID single sign-on
   description: "Microsoft Entra ID single sign-on"
-  ms.date: 09/04/2024
+  ms.date: 12/20/2024
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

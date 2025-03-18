@@ -11,7 +11,6 @@ Note: To support migrating data to or from a Windows failover cluster, you must 
 The minimum recommended hardware requirements for an orchestrator server are:
 
 - 2 CPU cores
-
 - 2 GB of memory
 
 ## Source servers
@@ -27,7 +26,6 @@ Destination servers can be running Windows Server 2012 R2 or newer. However, mig
 The minimum recommended hardware requirements for a destination server are:
 
 - 2 CPU cores
-
 - 2 GB of memory
 
 ## Security
@@ -35,12 +33,8 @@ The minimum recommended hardware requirements for a destination server are:
 To migrate data, the necessary firewall rules must be enabled. These firewall rules might be enabled already, but you should verify this. On the orchestrator server, you must enable the File and Printer Sharing (SMB-In) firewall rule. On source and destination servers, the following firewall rules must be enabled:
 
 - File and Printer Sharing (SMB-In)
-
 - Netlogon Service (NP-In)
-
 - Windows Management Instrumentation (DCOM-In)
-
 - Windows Management Instrumentation (WMI-In)
 
 You can perform migrations by using a single account that is an administrator on the source, destination, and orchestrator servers. Alternatively, you can have a source migration account and a destination migration account. The source migration account is an administrator on the source and orchestrator servers. The destination migration account is an administrator on the destination and orchestrator servers.
-

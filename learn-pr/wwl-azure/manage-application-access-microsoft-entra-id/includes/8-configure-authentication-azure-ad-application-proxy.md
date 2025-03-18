@@ -8,15 +8,21 @@ Application Proxy is recommended for giving remote users access to internal reso
 
 You need to meet the following prerequisites before beginning your implementation. You can see more information on setting up your environment, including these prerequisites, in this tutorial.
 
- -  Connectors: Connectors are lightweight agents that you can deploy onto:<br>
+ -  Connectors: Connectors are lightweight agents that you can deploy onto:
+    
+    
      -  Physical hardware on-premises<br>
      -  A VM hosted within any hypervisor solution
      -  A VM hosted in Azure to enable outbound connection to the Application Proxy service.
  -  Microsoft Entra application proxy Connectors.
+    
+    
      -  Connector machines must be enabled for TLS 1.2 before installing the connectors.<br>
      -  If possible, deploy connectors in the same network and segment as the back-end web application servers. It's best to deploy connectors after you complete a discovery of applications.<br>
      -  We recommend that each connector group has at least two connectors to provide high availability and scale. Having three connectors is optimal in case you may need to service a machine at any point. Review the connector capacity table to help with deciding what type of machine to install connectors on. The larger the machine the more buffer and performant the connector will be.<br>
- -  Network access settings: Microsoft Entra application proxy connectors connect to Azure via HTTPS (TCP Port 443) and HTTP (TCP Port 80).<br>
+ -  Network access settings: Microsoft Entra application proxy connectors connect to Azure via HTTPS (TCP Port 443) and HTTP (TCP Port 80).
+    
+    
      -  Terminating connector TLS traffic isn't supported and will prevent connectors from establishing a secure channel with their respective Azure App Proxy endpoints.<br>
      -  Avoid all forms of inline inspection on outbound TLS communications between connectors and Azure. Internal inspection between a connector and backend applications is possible, but could degrade the user experience, and as such, isn't recommended.<br>
      -  Load balancing of the connectors themselves is also not supported, or even necessary.<br>
@@ -30,10 +36,14 @@ The following core requirements must be met in order to configure and implement 
  -  Service limits: To protect against overconsumption of resources by individual tenants, there are throttling limits set per application and tenant. To see these limits refer to Microsoft Entra service limits and restrictions. These throttling limits are based on a benchmark far above typical usage volume and provide ample buffer for a majority of deployments.<br>
  -  Public certificate: If you're using custom domain names, you must procure a TLS/SSL certificate. Depending on your organizational requirements, getting a certificate can take some time and we recommend beginning the process as early as possible. Azure Application Proxy supports standard, wildcard, or SAN-based certificates. For more details, see Configure custom domains with Microsoft Entra application proxy.<br>
  -  Domain requirements: Single sign-on to your published applications using Kerberos Constrained Delegation (KCD) requires that the server running the Connector and the server running the app are domain joined and part of the same domain or trusting domains. For detailed information on the topic, see KCD for single sign-on with Application Proxy. The connector service runs in the context of the local system and shouldn't be configured to use a custom identity.<br>
- -  DNS records for URLs<br>
+ -  DNS records for URLs
+    
+    
      -  Before using custom domains in Application Proxy you must create a CNAME record in public DNS, allowing clients to resolve the custom defined external URL to the pre-defined Application Proxy address. Failing to create a CNAME record for an application that uses a custom domain prevents remote users from connecting to the application. Steps required to add CNAME records can vary from DNS provider to provider, so learn how to manage DNS records and record sets by using the Microsoft Entra admin center.<br>
      -  Similarly, connector hosts must be able to resolve the internal URL of applications being published.<br>
- -  Administrative rights and roles<br>
+ -  Administrative rights and roles
+    
+    
      -  Connector installation requires local admin rights to the Windows server that it's being installed on. It also requires a minimum of an Application Administrator role to authenticate and register the connector instance to your Microsoft Entra tenant.<br>
      -  Application publishing and administration require the Application Administrator role. Application Administrators can manage all applications in the directory including registrations, SSO settings, user and group assignments and licensing, Application Proxy settings, and consent. It doesn't grant the ability to manage Conditional Access. The Cloud Application Administrator role has all the abilities of the Application Administrator, except that it doesn't allow
      -  management of Application Proxy settings.<br>
@@ -90,9 +100,9 @@ The following are areas for which you should define your organization’s busine
 
 Determine the amount of time and effort needed to fully commission a single application for remote access with Single sign-on (SSO). Do so by running a pilot that considers its initial discovery, publishing, and general testing. Using a simple IIS-based web application that is already preconfigured for integrated Windows authentication (IWA) would help establish a baseline, as this setup requires minimal effort to successfully pilot remote access and SSO.
 
-The following design elements should increase the success of your pilot implementation directly in a production tenant.<br>
+The following design elements should increase the success of your pilot implementation directly in a production tenant.
 
-**Connector management**:<br>
+**Connector management**:
 
  -  Connectors play a key role in providing the on-premises conduit to your applications. Using the Default connector group is adequate for initial pilot testing of published applications before commissioning them into production. Successfully tested applications can then be moved to production connector groups.<br>
 
@@ -101,11 +111,11 @@ The following design elements should increase the success of your pilot implemen
  -  Your workforce is most likely to remember an external URL is familiar and relevant. Avoid publishing your application using our pre-defined msappproxy.net or onmicrosoft.com suffixes. Instead, provide a familiar top-level verified domain, prefixed with a logical hostname such as intranet.&lt;customers\_domain&gt;.com.<br>
  -  Restrict visibility of the pilot application’s icon to a pilot group by hiding its launch icon from the Azure MyApps portal. When ready for production you can scope the app to its respective targeted audience, either in the same pre-production tenant, or by also publishing the application in your production tenant.<br>
 
-**Single sign-on settings**: Some SSO settings have specific dependencies that can take time to set up, so avoid change control delays by ensuring dependencies are addressed ahead of time. This includes domain joining connector hosts to perform SSO using Kerberos Constrained Delegation (KCD) and taking care of other time-consuming activities.<br>
+**Single sign-on settings**: Some SSO settings have specific dependencies that can take time to set up, so avoid change control delays by ensuring dependencies are addressed ahead of time. This includes domain joining connector hosts to perform SSO using Kerberos Constrained Delegation (KCD) and taking care of other time-consuming activities.
 
-**TLS Between Connector Host and Target Application**: Security is paramount, so TLS between the connector host and target applications should always be used. Particularly if the web application is configured for forms-based authentication (FBA), as user credentials are then effectively transmitted in clear text.<br>
+**TLS Between Connector Host and Target Application**: Security is paramount, so TLS between the connector host and target applications should always be used. Particularly if the web application is configured for forms-based authentication (FBA), as user credentials are then effectively transmitted in clear text.
 
-**Implement incrementally and test each step**. Conduct basic functional testing after publishing an application to ensure that all user and business requirements are met by following the directions below:<br>
+**Implement incrementally and test each step**. Conduct basic functional testing after publishing an application to ensure that all user and business requirements are met by following the directions below:
 
 1.  Test and validate general access to the web application with pre-authentication disabled.<br>
 2.  If successful enable pre-authentication and assign users and groups. Test and validate access.
@@ -129,6 +139,8 @@ Below are some best practices to follow when publishing an application:
  -  **Use Connector Groups**: Assign a connector group that has been designated for publishing each respective application. We recommend that each connector group has at least two connectors to provide high availability and scale. Having three connectors is optimal in case you may need to service a machine at any point. Additionally, see Publish applications on separate networks and locations using connector groups to see how you can also use connector groups to segment your connectors by network or location.
  -  **Set Backend Application Timeout**: This setting is useful in scenarios where the application might require more than 75 seconds to process a client transaction. For example when a client sends a query to a web application that acts as a front end to a database. The front end sends this query to its back-end database server and waits for a response, but by the time it receives a response, the client side of the conversation times out. Setting the timeout to Long provides 180 seconds for longer transactions to complete.
  -  **Use Appropriate Cookie Types**
+    
+    
      -  HTTP-Only Cookie: Provides additional security by having application proxy include the HTTPOnly flag in set-cookie HTTP response headers. This setting helps to mitigate exploits such as cross-site scripting (XSS). Leave this set to No for clients/user agents that do require access to the session cookie. For example, RDP/MTSC client connecting to a Remote Desktop Gateway published via application proxy.
      -  Secure Cookie: When a cookie is set with the Secure attribute, the user agent (Client-side app) will only include the cookie in HTTP requests if the request is transmitted over a TLS secured channel. This helps mitigate the risk of a cookie being compromised over clear text channels, so should be enabled.
      -  Persistent Cookie: Allows the application proxy session cookie to persist between browser closures by remaining valid until it either expires or is deleted. Used for scenarios where a rich application such as office accesses a document within a published web application, without the user being re-prompted for authentication. Enable with caution however, as persistent cookies can ultimately leave a service at risk of unauthorized access, if not used in conjunction with other compensating controls. This setting should only be used for older applications that can't share cookies between processes. It's better to update your application to handle sharing cookies between processes instead of using this setting.
@@ -139,7 +151,7 @@ For scenarios where a published app links to other published apps, enable link t
 
 For example, suppose that you have three applications published through application proxy that all link to each other: Benefits, Expenses, and Travel, plus a fourth app, Feedback that isn't published through application proxy.
 
-:::image type="content" source="../media/link-translation-0a4e090d.png" alt-text="Diagram showing an example of three applications published through application proxy.":::
+:::image type="content" source="../media/link-translation-0a4e090d-9299ecfb-7c2d7c89.png" alt-text="Diagram showing an example of three applications published through application proxy.":::
 
 
 When you enable link translation for the Benefits app, the links to Expenses and Travel are redirected to the external URLs for those apps, so that users accessing the applications from outside the corporate network can access them. Links from Expenses and Travel back to Benefits don't work because link translation hasn't been enabled for those two apps. The link to Feedback isn't redirected because there's no external URL, so users using the Benefits app won't be able to access the feedback app from outside the corporate network.
@@ -150,10 +162,8 @@ Several options exist for managing access to application proxy published resourc
 
 The most straight forward way of assigning users access to an application is going into the **Users and Groups** options from the left-hand pane of your published application and directly assigning groups or individuals.
 
-:::image type="content" source="../media/add-user-0f5638ff.png" alt-text="Screenshot showing an example of managing access to application proxy published resources.":::
- You can also allow users to self-service access to your application by assigning a group that they aren't currently a member of and configuring the self-serve options.
-
-:::image type="content" source="../media/allow-access-1d990f66.png" alt-text="Screenshot showing an example of allowing users to self-service access to your application by assigning a group.":::
+:::image type="content" source="../media/add-user-0f5638ff-591bf689-22f5eba1.png" alt-text="Screenshot showing an example of managing access to application proxy published resources.":::
+ You can also allow users to self-service access to your application by assigning a group that they aren't currently a member of and configuring the self-serve options. :::image type="content" source="../media/allow-access-1d990f66-dfb94956-0910b509.png" alt-text="Screenshot showing an example of allowing users to self-service access to your application by assigning a group.":::
 
 
 If enabled, users will then be able to log into the MyApps portal and request access, and either be auto approved and added to the already permitted self-service group, or need approval from a designated approver.
@@ -162,7 +172,7 @@ Guest users can also be invited to access internal applications published via ap
 
 For on premises applications that are normally accessible anonymously, requiring no authentication, you may prefer to disable the option located in the application’s Properties.
 
-:::image type="content" source="../media/assignment-required-80db257a.png" alt-text="Screenshot showing an example of how to disable the option located in the application’s properties.":::
+:::image type="content" source="../media/assignment-required-80db257a-314b9f2b-6835fd6b.png" alt-text="Screenshot showing an example of how to disable the option located in the application’s properties.":::
 
 
 Leaving this option set to No allows users to access the on-premises application via Microsoft Entra application proxy without permissions, so use with caution.
@@ -171,11 +181,9 @@ Leaving this option set to No allows users to access the on-premises application
 
 Verify that your application is accessible through application proxy accessing it via the external URL.
 
-1. Browse to **Identity** &gt; **Applications** &gt; **Enterprise applications** &gt; **All applications** and choose the app you want to manage.
-
-2. Select **application proxy**.
-
-3. In the **Pre-Authentication** field, use the dropdown list to select **Microsoft Entra ID**, and select **Save**.
+1.  Browse to **Identity** &gt; **Applications** &gt; **Enterprise applications** &gt; **All applications** and choose the app you want to manage.
+2.  Select **application proxy**.
+3.  In the **Pre-Authentication** field, use the dropdown list to select **Microsoft Entra ID**, and select **Save**.
 
 With pre-authentication enabled, Microsoft Entra ID will challenge users first for authentication and if single sign-on is configured then the back-end application will also verify the user before access to the application is granted. Changing the pre-authentication mode from Passthrough to Microsoft Entra ID also configures the external URL with HTTPS, so any application initially configured for HTTP will now be secured with HTTPS.
 

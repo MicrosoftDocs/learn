@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cloud-adoption-framework.ready
+title: Ready
+metadata:
+  title: Ready
+  description: "A high-level overview of the Ready methodology in the Cloud Adoption Framework, including how to define a cloud operating model and implement landing zones."
+  ms.date: 02/06/2025
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-ready.md)]
+  

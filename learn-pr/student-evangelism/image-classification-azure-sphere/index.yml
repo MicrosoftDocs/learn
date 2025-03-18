@@ -6,8 +6,8 @@ metadata:
   title: "Image classification using Azure Sphere"
   description: "Learn how to implement image classification on a microcontroller device. Also, learn how Azure Sphere components work."
   ms.date: 07/20/2024
-  author: leestott
-  ms.author: chnoring
+  author: orin-thomas
+  ms.author: orthomas
   ms.topic: module
   ms.custom: team=cloud_advocates
   ms.service: azure-sphere
@@ -33,6 +33,7 @@ prerequisites: |
     - Git installed on your computer
     - Ability to use Git/GitHub
 iconUrl: /training/achievements/student-evangelism/image-classification-using-azure-sphere.svg
+hidden: true
 badge:
   uid: learn.oxford.image-classification-azure-sphere.badge
 levels:

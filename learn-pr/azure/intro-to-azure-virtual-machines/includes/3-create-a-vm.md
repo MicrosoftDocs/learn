@@ -2,7 +2,7 @@ You've planned out the network infrastructure and identified a few VMs to migrat
 
 #### Options to create and manage VMs
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yJKx]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=8790339c-187e-4ebe-85f6-6c57b8c869cb]
 
 Let's explore the Azure portal first - it's the easiest way to start with Azure.
 
@@ -40,7 +40,7 @@ You need to configure the basic parameters of your virtual machine. If some of t
     | Region | From the dropdown list, select a geographical location close to you. |
     | Availability options  | No infrastructure redundancy required |
     | Security type  | Standard |
-    | Image | Ubuntu Server 20.04 LTS - Gen2 |
+    | Image | Ubuntu Server 24.04 LTS - Gen2 |
     | VM architecture  | x64 |
     | Run with Azure Spot discount | Unchecked |
     | Size | Standard D2s V3 |

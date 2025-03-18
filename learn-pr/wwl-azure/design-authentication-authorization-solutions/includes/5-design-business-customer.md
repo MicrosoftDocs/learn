@@ -1,4 +1,3 @@
-
 [Azure AD B2C](/azure/active-directory-b2c/overview) is a type of Microsoft Entra tenant for managing customer identities and their access to your apps. Azure AD B2C requires a Microsoft Entra tenant, but this tenant _isn't_ the same as the Microsoft Entra tenant for your organization.
 - The **Microsoft Entra tenant** represents your organization.
 - The **Azure AD B2C tenant** represents the identities for your customer apps. 
@@ -51,7 +50,7 @@ Now that you have some basic knowledge about the Microsoft Entra identity soluti
 
 ## WoodGrove Groceries tutorial
 
-We prepared a tutorial to help you in the decision making process for choosing a Microsoft Entra identity solution. [WoodGrove Groceries](https://woodgrovedemo.com/?azure-portal=true) is a live web app created by Microsoft to demonstrate several Azure AD B2C features. You can read about the [WoodGrove Groceries](/azure/active-directory-b2c/overview#example-woodgrove-groceries) configuration. Take a few minutes now to complete the tutorial demo.
+We prepared a tutorial to help you in the decision making process for choosing a Microsoft Entra identity solution. [WoodGrove Groceries](https://woodgrovedemo.com/?azure-portal=true) is a live web app created by Microsoft to demonstrate several Azure AD B2C features. 
 
 > [!IMPORTANT]
 > After you complete the WoodGrove Groceries tutorial, take a moment to decide if Azure B2B or Azure B2C would be required by your own organization. Write down a few thoughts on how these options would be used.

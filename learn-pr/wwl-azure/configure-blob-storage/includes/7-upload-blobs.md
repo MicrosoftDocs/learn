@@ -26,13 +26,13 @@ A common approach for uploading blobs to your Azure storage account is to use Az
 
 #### Business scenario
 
-The following example shows how to upload blob data in Azure Storage Explorer. After you identify the files to upload, you choose the blob type and block size, and the container folder. You also set the authentication method and encryption scope.
+The following example shows how to upload blob data. After you identify the files to upload, you choose the blob type and block size, and the container folder. You also set the access tier and the encryption scope.
 
 :::image type="content" source="../media/upload-blobs-7ad73d30.png" alt-text="Screenshot of the Upload Blob page that shows the Authentication type, blob types, and block size.":::
 
 ### How to use Blob versioning
 
-You can enable Blob storage versioning to automatically maintain previous versions of an object. When blob versioning is enabled, you can access earlier versions of a blob to recover your data if it's modified or deleted.
+You can enable Blob storage versioning to automatically maintain previous versions of an object. When blob versioning is enabled, you can access earlier versions of a blob. This access lets you recover your modified or deleted data.
 
 #### <!-- Video -->
 

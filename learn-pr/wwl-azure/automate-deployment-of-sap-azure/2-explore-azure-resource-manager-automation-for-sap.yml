@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Explore Azure Resource Manager automation for SAP on Azure
   description: "Explore Azure Resource Manager automation for SAP on Azure"
-  ms.date: 08/19/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

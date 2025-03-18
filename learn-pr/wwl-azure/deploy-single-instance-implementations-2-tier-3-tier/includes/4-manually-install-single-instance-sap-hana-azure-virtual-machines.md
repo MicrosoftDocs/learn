@@ -6,7 +6,7 @@ Besides the deployment considerations described earlier, manual single-instance 
   - Use **SAP Software Provisioning Manager (SWPM)** as part of the standard (2-tier) or distributed (3-tier) NetWeaver installation, followed by HANA installation.
   - Use the **SAP HANA Database Lifecycle Manager (HDBLCM) tool**, and then install NetWeaver.
 
-Regardless of the approach, the installation starts by provisioning an ASCS instance. As part of the ASCS instance installation, the **/sapmnt** share, which includes the SAP profile directory, must be shared with the SAP DB server virtual machine. The DB installation step needs access to this directory. The best way to provide access is to use either SMB or NFS, depending on the operating system of the DB server virtual machine.
+No matter the method, the first step in the installation is to set up an ASCS instance. During this setup, the **/sapmnt** share that contains the SAP profile directory should be accessible to the SAP DB server virtual machine. This directory is necessary for the DB installation step. The most effective way to grant access is through SMB or NFS, based on the operating system of the DB server virtual machine.
 
 For a Linux OS, the **/sapmnt** directory is shared via NFS by using the rw and no\_root\_squash options. The defaults are ro and root\_squash, which might lead to problems when you install the database instance. In the final step, the installation builds the primary application server instance. After the primary application server instance is installed, you can use tools such as SAP GUI to verify that the installation finished correctly.
 

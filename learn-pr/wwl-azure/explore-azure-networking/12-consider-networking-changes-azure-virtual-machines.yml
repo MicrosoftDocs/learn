@@ -2,11 +2,9 @@
 uid: learn.wwl.explore-azure-networking.consider-networking-changes-for-azure-virtual-machines
 title: Consider networking changes for Azure Virtual Machines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Consider networking changes for Azure Virtual Machines
   description: "Account for extra network requirements as part of a deployment of Azure Virtual Machines or large instances of SAP HANA on Azure."
-  ms.date: 10/03/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

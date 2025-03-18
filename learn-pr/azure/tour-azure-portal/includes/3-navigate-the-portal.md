@@ -14,9 +14,10 @@ You can change your default view to the customizable **Dashboard** in the portal
     :::column:::
     :::image type="content" source="../media/3-favorites.png" alt-text="Screenshot of the portal menu and Favorites in the Azure portal.":::
     :::column-end:::
+
     :::column span="3":::
 
-    In the left-hand sidebar of the portal is the portal menu, which lists different Azure services and resource types.
+    In the portal's left-hand sidebar is the portal menu, which lists different Azure services and resource types.
 
     Azure has many more services than what's shown in this menu. The services listed here are the ones in your **Favorites**.
 
@@ -44,15 +45,15 @@ Let's walk through each of these controls to understand them better.
 
 ### Cloud Shell
 
-Select the **Cloud Shell** icon (>_) to create a new Azure Cloud Shell session. Recall that Azure Cloud Shell is an interactive shell for managing Azure resources. This browser-based terminal lets you control and administer your Azure resources through a command-line interface built right into the portal.
+Select the **Cloud Shell** icon (**>_**) to create a new Azure Cloud Shell session. Recall that Azure Cloud Shell is an interactive shell for managing Azure resources. This browser-based terminal lets you control and administer your Azure resources through a command-line interface built right into the portal.
 
 ### Notifications
 
-Select the bell icon to display the **Notifications** pane. This pane gives you information about the most recent actions that have been carried out, along with their status.
+Select the **bell** icon to display the **Notifications** pane. This pane gives you information about the most recent actions that have been carried out, along with their status.
 
 ### Settings
 
-Select the gear icon to change the Azure portal settings. In the tabs at the left, there are multiple options that let you change settings such as:
+Select the **gear** icon to change the Azure portal settings. Different tabs provide options to change settings such as:
 
 - Directories and subscription management
 - Inactivity sign out delay
@@ -65,7 +66,7 @@ Select the gear icon to change the Azure portal settings. In the tabs at the lef
 
 ### Support + troubleshooting pane
 
-Select the question mark icon to show the **Support + troubleshooting** pane. This is where you can get help if you're experiencing a problem or need support. You can also see if any ongoing health events are impacting your Azure subscription or find links to support resources.
+Select the **question mark** icon to show the **Support + troubleshooting** pane. This is where you can get help if you're experiencing a problem or need support. You can also see if any ongoing health events are impacting your Azure subscription or find links to support resources.
 
 ### Feedback pane
 
@@ -78,11 +79,11 @@ If you select your name in the top right corner, a menu opens with a few options
 - Sign in with another account, or sign out entirely
 - View your account profile, where you can change your password
 
-Select the "..." button on the right-hand side for options to:
+Select the **More options** (**...**) button on the right-hand side for options to:
 
 - Check your permissions
-- View your bill
 - Submit an idea
+- View your bill
 - Update your contact information
 
 ### Azure Marketplace
@@ -93,10 +94,10 @@ The solution catalog spans thousands of offerings across multiple industry categ
 
 ### Azure Advisor
 
-Finally, the Azure Advisor is a free service built into Azure that provides recommendations on high availability, security, performance, operational excellence, and cost. Advisor analyzes your deployed services and suggests ways to improve your environment across those areas. You can view recommendations in the portal or download them in PDF or CSV format.
+Finally, Azure Advisor is a free service built into Azure that provides recommendations on high availability, security, performance, operational excellence, and cost. Advisor analyzes your deployed services and suggests ways to improve your environment across those areas. You can view recommendations in the portal or download them in PDF or CSV format.
 
 You can access Azure Advisor by selecting **Advisor** from the navigation menu, or search for it in the **All Services** menu.
 
 :::image type="content" source="../media/3-advisordashboard.png" alt-text="Screenshot of the Azure Advisor Overview page in the Azure portal.":::
 
-Now let's try some of these features out!
+Now, let's try some of these features out!

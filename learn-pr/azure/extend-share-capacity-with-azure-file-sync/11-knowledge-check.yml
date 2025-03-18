@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Check your knowledge
   description: Review what you've learned.
-  ms.date: 11/17/2023
+  ms.date: 01/10/2025
   author: khdownie
   ms.author: kendownie
   ms.topic: unit
@@ -82,13 +82,13 @@ quiz:
       explanation: Install the Azure File Sync agent on the server that contains the file share you want to sync with Azure.
   - content: "Which of these answers isn't a possible cause for file sync issues?"
     choices:
-    - content: Your company's firewall rules are blocking network traffic on port 445.
+    - content: Some file names are invalid.
       isCorrect: false
-      explanation: Azure needs to have port 445 open to connect to Azure datacenters.
+      explanation: The most common cause for files not syncing is invalid file names.
     - content: The virtual machine that runs the Storage Sync Service is stopped.
       isCorrect: true
       explanation: The Storage Sync Service is the high-level Azure resource for Azure File Sync. You create this resource in Azure.
-    - content: Your on-premises server doesn't support SMB encryption.
+    - content: The registered server state is Appears Offline.
       isCorrect: false
-      explanation: Azure denies connections that aren't secure.
+      explanation: The registered server must be online in order for files to sync.
 

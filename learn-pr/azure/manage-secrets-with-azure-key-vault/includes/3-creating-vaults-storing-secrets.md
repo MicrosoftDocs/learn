@@ -9,7 +9,7 @@ Creating a vault requires no initial configuration. Your user identity is automa
 
 ## Create the Key vault and store the secret in it
 
-Given all the trouble the company's been having with application secrets, management asks you to create a small starter app to set the other developers on the right path. The app needs to demonstrate best practices for managing secrets as simply and securely as possible.
+Given all the trouble the company's been having with application secrets. Management asks you to create a small starter app to set the other developers on the right path. The app needs to demonstrate best practices for managing secrets as simply and securely as possible.
 
 To start, create a vault and store one secret in it.
 
@@ -42,4 +42,4 @@ az keyvault secret set \
     --vault-name <your-unique-vault-name>
 ```
 
-You'll write the code for your app shortly, but first you need to learn a bit about how your app is going to authenticate to a vault.
+Before you write the code for your app, you first need to learn a bit about how your app is going to authenticate to a vault.

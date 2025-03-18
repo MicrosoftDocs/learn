@@ -2,11 +2,9 @@
 uid: learn.wwl.explore-azure-networking-sap-rise.azure-sap-rise-virtual-private-network
 title: Explore Azure virtual private network connection to SAP RISE
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Azure virtual private network connection to SAP RISE
   description: "Learn to establish a connection between Azure and SAP RISE using a Virtual Private Network VNet-to-VNet."
-  ms.date: 10/04/2024
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

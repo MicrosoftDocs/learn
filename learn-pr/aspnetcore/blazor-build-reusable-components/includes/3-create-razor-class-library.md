@@ -4,7 +4,7 @@ In this exercise, you'll create a modal dialog in a Razor class library that you
 
 ## Create the Razor class library project
 
-[!include[](../../../includes/dotnet6-sdk-version.md)]
+[!include[](../../../includes/dotnet8-sdk-version.md)]
 
 To begin, create the Razor class library project for a modal dialog component. You can use Visual Studio to create a new project, or you can create the project in a new folder with the .NET command-line tool, as shown here:
 
@@ -185,6 +185,7 @@ With this project reference in place, the *MyBlazorApp* application can interact
      </p>
     </Modal>
     ```
+
    a. Give the component a title, "My first Modal dialog."  
    b. Add a short paragraph to be displayed inside the dialog. This content describes the purpose of the dialog.  
    c. Set the dialog to be visible by using the `Show` parameter.

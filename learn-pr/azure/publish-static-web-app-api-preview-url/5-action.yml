@@ -6,8 +6,8 @@ metadata:
   title: Publish the API with GitHub Actions
   description: Learn how to include your API when you publish a static site with a GitHub Action
   ms.date: 12/12/2023
-  author: craigshoemaker
-  ms.author: cshoe
+  author: v1212
+  ms.author: wujia
   ms.topic: unit
   zone_pivot_groups: dev-javascript-framework
 title: Publish the API with GitHub Actions

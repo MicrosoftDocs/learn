@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-manage-enforcement-cloud-governance-policies.configure-access-key-vault-azure-role-based-access-control
+title: Configure access to Key Vault, including vault access policies and Azure role-based access control
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Configure access to Key Vault, including vault access policies and Azure role-based access control
+  description: "Configure access to Key Vault, including vault access policies and Azure role-based access control"
+  ms.date: 02/07/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/13-configure-access-key-vault-azure-role-based-access-control.md)]

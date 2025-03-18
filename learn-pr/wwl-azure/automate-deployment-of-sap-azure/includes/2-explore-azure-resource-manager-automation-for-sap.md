@@ -7,7 +7,7 @@ In this unit, you learn about the native Azure tools for using Azure Resource Ma
 
 ## Azure Resource Manager
 
-Central to the ability to automate in Azure is the Azure Resource Manager, providing a management layer that enables you to create, update, and delete resources in your Azure account using tools such as the Azure portal, Azure CLI, and Azure PowerShell.
+Central to automating in Azure is the Azure Resource Manager, which provides a management layer for creating, updating, and deleting resources using tools like the Azure portal, Azure CLI, and Azure PowerShell.
 
 ### CLI
 
@@ -43,4 +43,5 @@ Azure Resource Manager templates allow you to declare what you intend to deploy 
 Azure Resource Manager templates are *idempotent*, which means you can deploy the same template many times and get the same resource types in the same state.
 
 Resource Manager orchestrates the deployment of the resources so that they're created in the correct order. When possible, resources are created in parallel, so Azure Resource Manager template deployments finish faster than scripted deployments.
+
 

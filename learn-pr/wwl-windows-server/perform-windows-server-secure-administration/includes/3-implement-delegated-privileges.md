@@ -6,7 +6,7 @@ Although Active Directory and member servers have built-in groups that have pred
 
 ## Use the Delegation of Control Wizard
 
-Delegated privilege provides a way to grant limited authority to specified users or groups. You can delegate more granular privileges to users or groups by using the **Delegation of Control Wizard**. The wizard allows you to assign permissions at the site, domain, or organization unit level. The wizard has the following pre-defined tasks  that you can assign:
+Delegated privilege provides a way to grant limited authority to specified users or groups. You can delegate more granular privileges to users or groups by using the **Delegation of Control Wizard**. The wizard allows you to assign permissions at the site, domain, or organization unit level. The wizard has the following predefined tasks  that you can assign:
 
 - Create, delete, and manage user accounts.
 - Reset user passwords and force password change at next sign in.
@@ -75,9 +75,4 @@ The following video demonstrates how to use the **Delegation of Control Wizard**
 5. Assign the **Sales Managers** group the **Reset user passwords and force password change at next logon** permission on the **Sales** OU.
 6. Sign in as a member of the **Sales Managers** group and verify that the user can reset a password for users in the **Sales** OU but not in the **Research** OU.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4McI8]
-
----
-
-
----
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=14b639d5-9fce-4487-a08b-7fdd329393b7]

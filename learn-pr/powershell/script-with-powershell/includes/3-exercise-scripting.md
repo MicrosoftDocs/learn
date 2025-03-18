@@ -6,6 +6,8 @@ First, you learn how to set up a profile so you can customize your working envir
 
 A profile is a script that runs when you start a new session. Having a customized environment can make you more productive.
 
+1. In the Cloud Shell window on the right side of the screen, select the **More** icon (**...**), then select **Settings** > **Go to Classic version**.
+
 1. Enter `pwsh` in a terminal window to start a PowerShell session:
 
    ```bash

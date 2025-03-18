@@ -1,4 +1,3 @@
-
 Contoso has a hybrid infrastructure; some compute workloads run as IaaS VMs in Azure, and others run on Windows Server VMs in Contoso datacenters. The process of monitoring on-premises Windows Servers using Azure Monitor is almost identical to the process of enabling monitoring on IaaS VMs.
 
 ## Implement Azure Monitor in hybrid scenarios
@@ -7,13 +6,12 @@ To leverage the benefits provided by Azure Monitor in hybrid scenarios, you must
 
 1. On the target server, open the Azure portal.
 2. From your **Log Analytics workspace** in the Azure portal, select **Advanced settings**.
-3. Copy the **WORKSPACE ID** and **PRIMARY KEY** values. (You'll need them during installation.)
+3. Copy the **WORKSPACE ID** and **PRIMARY KEY** values. (You need them during installation.)
 4. In the details pane, select **Download Windows Agent (64-bit)** or **Download Windows Agent (32-bit)** as required.
 
 [![A screenshot of the Advanced settings page of a Log Analytics workspace. In the details pane, links display for downloading various agents. Also displayed are the WORKSPACE ID and PRIMARY KEY values.](../media/m16-download-agent.png)](../media/m16-download-agent.png#lightbox)
 
 Next, run the **MMASetup-AMD64.exe** file and use the following instructions to install the agent:
-
 
 1. On the **Welcome** page, select **Next**.
 2. On the **License Terms** page, read the license agreement, and then select **I Agree**.
@@ -59,7 +57,7 @@ You also have the option to create computer groups. Computer groups can serve as
 - Windows Server Update Services (WSUS) groups.
 - Microsoft Endpoint Configuration Manager groups.
 
-For on-premises servers that you onboard into Azure Monitor, data is continually collected by the locally installed agents, and then uploaded into a Log Analytics workspace in Azure Monitor. You can add monitoring solutions to each workspace. These monitoring solutions are the primary method of extending the service's core capabilities. To utilize this extensibility, you add any solution that is available in the Azure Marketplace to the workspace. Some solutions you can enable directly from the blades of the services implementing their core functionality. For example, Update management, and Change Tracking and Inventory are part of the Azure Automation pane.
+For on-premises servers that you onboard into Azure Monitor, data is continually collected by the locally installed agents, and then uploaded into a Log Analytics workspace in Azure Monitor. You can add monitoring solutions to each workspace. These monitoring solutions are the primary method of extending the service's core capabilities. To utilize this extensibility, you add any solution that is available in Azure Marketplace to the workspace. Some solutions you can enable directly from the blades of the services implementing their core functionality. For example, Update management, and Change Tracking and Inventory are part of the Azure Automation pane.
 
 > [!CAUTION]
 > Keep in mind that adding a solution to the workspace deploys it to all managed computers that support the workspace. This in turn impacts the volume of collected data, which has both network bandwidth and pricing implications.
@@ -68,18 +66,17 @@ The Azure Monitor monitoring solutions build on the core functionality of the se
 
 ### Windows Admin Center
 
-You can also integrate Windows servers with Azure Monitor by using Windows Admin Center. Windows Admin Center simplifies implementation between the two by automatically creating a Log Analytics workspace if one doesn't already exist, and if needed a corresponding Azure Automation account. It also installs both the Log Analytics agent and the Dependency Agent on the target Windows server. In addition, Windows Admin Center will enable the Azure Monitor for VMs solution by default, also referred to as *Virtual Machine Insights*.
+You can also integrate Windows servers with Azure Monitor by using Windows Admin Center. Windows Admin Center simplifies implementation between the two by automatically creating a Log Analytics workspace if one doesn't already exist, and if needed a corresponding Azure Automation account. It also installs both the Log Analytics agent and the Dependency Agent on the target Windows server. In addition, Windows Admin Center enables the Azure Monitor for VMs solution by default, also referred to as *Virtual Machine Insights*.
 
 > [!NOTE]
 > To set up Azure Monitor integration from the Windows Admin Center, you must first register Windows Admin Center with Azure.
 
 Onboarding Windows servers into Azure Monitor by using Windows Admin Center automatically enables the Infrastructure Insights and Dependency Map solutions. These two solutions are collectively referred to as *Azure Monitor for VMs*.
 
-You use Windows Admin Center to enable Azure Update Management. From Windows Admin Center, you can also configure alerts that will apply to all servers connected to the same Log Analytics workspace. To review and modify alert configurations, you can use the Azure portal.
+You use Windows Admin Center to enable Azure Update Management. From Windows Admin Center, you can also configure alerts that apply to all servers connected to the same Log Analytics workspace. To review and modify alert configurations, you can use the Azure portal.
 
 ## Additional reading
 
 You can learn more by reviewing the following documents.
 
 - [Connect Windows computers to Azure Monitor](https://aka.ms/agent-windows?azure-portal=true)
-

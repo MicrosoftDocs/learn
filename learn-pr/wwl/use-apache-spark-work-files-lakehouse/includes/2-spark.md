@@ -45,7 +45,7 @@ The Spark open source ecosystem includes multiple versions of the Spark *runtime
 
 In some cases, organizations may need to define multiple *environments* to support a diverse range of data processing tasks. Each environment defines a specific runtime version as well as the libraries that must be installed to perform specific operations. Data engineers and scientists can then select which environment they want to use with a Spark pool for a particular task.
 
-### Spark runtimes Microsoft Fabric
+### Spark runtimes in Microsoft Fabric
 
 Microsoft Fabric supports multiple Spark runtimes, and will continue to add support for new runtimes as they are released. You can use the workspace settings interface to specify the Spark runtime that is used by default environment when a Spark pool is started.
 
@@ -105,7 +105,7 @@ To enable the native execution engine for a specific script or notebook, you can
 
 When you run Spark code in Microsoft Fabric, a Spark session is initiated. You can optimize the efficiency of Spark resource usage by using *high concurrency mode* to share Spark sessions across multiple concurrent users or processes. When high concurrency mode is enabled for Notebooks, multiple users can run code in notebooks that use the same Spark session, while ensuring isolation of code to avoid variables in one notebook being affected by code in another notebook. You can also enable high concurrency mode for Spark jobs, enabling similar efficiencies for concurrent non-interactive Spark script execution.
 
-You enable high concurrency mode, use the **Data Engineering/Science** section of the workspace settings interface.
+To enable high concurrency mode, use the **Data Engineering/Science** section of the workspace settings interface.
 
 > [!TIP]
 > For more information about high concurrency mode, see **[High concurrency mode in Apache Spark for Fabric](/fabric/data-engineering/high-concurrency-overview)** in the Microsoft Fabric documentation.
@@ -120,3 +120,4 @@ Administrators can manage Spark settings at a Fabric capacity level, enabling th
 
 > [!TIP]
 > For more information about managing Spark configuration at the Fabric capacity level, see **[Configure and manage data engineering and data science settings for Fabric capacities](/fabric/data-engineering/capacity-settings-management)** in the Microsoft Fabric documentation.
+

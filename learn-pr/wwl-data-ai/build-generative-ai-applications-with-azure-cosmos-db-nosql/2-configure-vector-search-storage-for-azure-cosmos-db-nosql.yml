@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-generative-ai-applications-with-azure-cosmos-db-nosql.configure-vector-search-storage-for-azure-cosmos-db-nosql
+title: Configure the Vector Search and storage feature of Azure Cosmos DB NoSQL
+metadata:
+  title: Configure the Vector Search and storage feature of Azure Cosmos DB NoSQL
+  description: "Explore the Vector Search and storage feature of Azure Cosmos DB for NoSQL and how to enable it."
+  ms.date: 03/10/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-configure-vector-search-storage-for-azure-cosmos-db-nosql.md)]

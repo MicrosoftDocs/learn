@@ -19,7 +19,9 @@ abstract: |
   - Create data objects usable with data binding.
   - Design a UI that's driven by data binding.
 prerequisites: |
-  - Visual Studio 2022 with the **.NET Multi-platform App UI development** workload installed. 
+  - [Visual Studio 2022](https://www.visualstudio.com) with the .NET MAUI workload
+  - Optional: Local installations [Visual Studio Code](https://code.visualstudio.com/), the [.NET SDK](https://dotnet.microsoft.com/download) with .NET MAUI workload, and the [.NET MAUI Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-maui)
+  - Familiarity with C# and .NET
   - Familiarity with intermediate programming concepts like interfaces, classes, and attributes.
   - Ability to write XAML code.
 iconUrl: /training/achievements/generic-badge.svg

@@ -1,8 +1,5 @@
 This unit explains how to sign up for GitHub Copilot, how to configure GitHub Copilot by using VS Code, and how to troubleshoot GitHub Copilot by using VS Code.
 
-> [!NOTE]
-> When you sign up for the GitHub Copilot free trial, you're asked to submit a form of payment, even though you aren't charged until the free trial is over. To avoid being charged, be sure to cancel before the 30 days are over.
-
 ## Sign up for GitHub Copilot
 
 Before you can start using GitHub Copilot, you need to set up a free trial or subscription for your account.

@@ -33,13 +33,3 @@ Copilot can tell that something is a prompt or an instruction if you:
 What you get back from Copilot is a *suggestion*, or text that shows itself as gray code, if you use black as your text color. To accept the suggestion, you need to press the <kbd>Tab</kbd> key.
 
 Copilot might suggest more than one thing. In this case, you can cycle between suggestions by using <kbd>Ctrl + Enter</kbd>, and select the most appropriate one.
-
-## How to set up GitHub Copilot
-
-To set up GitHub Copilot, you need to:
-
-- Create a GitHub account. Copilot is a GitHub service, so you need a GitHub account to use the service.
-- Sign up. You need to sign up for Copilot via its web page.
-- Enable Copilot. In GitHub, select your profile, then select **Settings**. Under **Copilot**, you can enable access or sign up for a free trial.
-
-To use GitHub Copilot, you need to install it as an extension into your IDE. Extensions are available for major Integrated Development Environments (IDEs) like Visual Studio, and Visual Studio Code.

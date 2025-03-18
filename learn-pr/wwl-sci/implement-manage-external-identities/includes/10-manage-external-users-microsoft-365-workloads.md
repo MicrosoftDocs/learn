@@ -1,4 +1,4 @@
-:::image type="content" source="../media/admin-center-guest-users-a8119317.png" alt-text="Screenshot of the Microsoft 365 admin center, opened to the guest users page.":::
+:::image type="content" source="../media/admin-center-guest-users-a8119317-8d38cc1e.png" alt-text="Screenshot of the Microsoft 365 admin center, opened to the guest users page.":::
 
 
 Similar to Microsoft Entra ID, Microsoft 365 can invite guest users into the directory for collaboration purposes. Those users show in the user list as external, and have limited to no rights in Microsoft 365. However, they can be assigned collaboration rights to any Microsoft 365 workload. Guest users can even be given licenses to allow them to perform specific operations.

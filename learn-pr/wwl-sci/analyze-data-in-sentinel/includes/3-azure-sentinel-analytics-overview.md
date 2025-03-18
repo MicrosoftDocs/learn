@@ -29,7 +29,7 @@ Common security analytics use cases include:
 
 - Threat hunting
 
-You might not be able to detect some of the threats by using conventional protection tools, such as firewalls or antimalware solutions. Certain threats can go undetected for months. Combining data, gathered by multiple tools and products, with the power of threat intelligence can help you to detect, analyze, and mitigate insider threats.
+You might not be able to detect some of the threats by using conventional protection tools, such as firewalls or anti-malware solutions. Certain threats can go undetected for months. Combining data, gathered by multiple tools and products, with the power of threat intelligence can help you to detect, analyze, and mitigate insider threats.
 
 You can also use analytics rules to create custom alerts that use indicators of attack. These indicators can identify potential attacks that are in progress in real time.
 
@@ -61,7 +61,7 @@ The **Analytics** home page provides the following filters:
 
 - **Severity**. Use to filter the rules by levels of severity.
 
-- **Rule Type**. There are currently four types of rules: Scheduled, Fusion, Microsoft Security, Machine Learning Behavior Analytics.
+- **Rule Type**. There are currently seven types of rules: Scheduled, NRT (near real time), Fusion, Microsoft Security, ML (machine learning) Behavior Analytics, and Threat Intelligence.
 
 - **Tactics**. Use to filter the rules based on 14 specific methodologies in ATT&amp;CK model.
 

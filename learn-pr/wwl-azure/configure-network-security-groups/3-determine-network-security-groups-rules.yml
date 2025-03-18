@@ -2,9 +2,11 @@
 uid: learn.wwl.configure-network-security-groups.determine-nsg-rules
 title: Determine network security group rules
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Determine network security group rules
   description: "Determine network security group rules"
-  ms.date: 12/13/2024
+  ms.date: 02/12/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

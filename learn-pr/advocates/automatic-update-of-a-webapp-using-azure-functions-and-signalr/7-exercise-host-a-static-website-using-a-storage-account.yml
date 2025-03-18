@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise - Use a storage account to host a static website
   description: Customize your storage account, publish your function app and view your application hosted in the cloud.
-  ms.date: 08/12/2024
+  ms.date: 01/22/2025
   author: craigshoemaker
   ms.author: cshoe
   ms.topic: unit

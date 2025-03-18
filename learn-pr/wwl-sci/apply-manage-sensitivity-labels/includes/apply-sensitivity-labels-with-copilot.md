@@ -1,16 +1,16 @@
-Applying sensitivity labels in Microsoft 365 is essential for securing sensitive information while utilizing AI-driven tools like Copilot for Microsoft 365. These labels ensure that only authorized individuals have access to critical data, maintaining high data security standards. They also support compliance across various applications such as Word, Excel, PowerPoint, Outlook, and Teams. By integrating sensitivity labels with Copilot, organizations can enhance productivity without compromising data protection.
+Applying sensitivity labels in Microsoft 365 is essential for securing sensitive information while utilizing AI-driven tools like Microsoft 365 Copilot. These labels ensure that only authorized individuals have access to critical data, maintaining high data security standards. They also support compliance across various applications such as Word, Excel, PowerPoint, Outlook, and Teams. By integrating sensitivity labels with Copilot, organizations can enhance productivity without compromising data protection.
 
 As our marketing team gears up to launch a new service utilizing data analysis and AI, the security of sensitive information remains a top priority. Combining sensitivity labels in Microsoft 365 with Copilot's advanced AI capabilities ensures that our firm's critical data is protected throughout the service launch. This strategy safeguards our data and allows our teams to collaborate seamlessly, boosting productivity and ensuring efficient and safe operations.
 
 Here you learn how to:
 
 - Understand the function and importance of sensitivity labels in Microsoft 365.
-- Apply sensitivity labels within Copilot for Microsoft 365 to enhance data security.
+- Apply sensitivity labels within Microsoft 365 Copilot to enhance data security.
 - Configure sensitivity labels in the Microsoft Purview compliance portal for comprehensive data protection.
 
-## Understand Copilot for Microsoft 365
+## Understand Microsoft 365 Copilot
 
-Copilot for Microsoft 365 is an AI tool that enhances user interaction with Microsoft 365 applications, including Word, Excel, PowerPoint, Outlook, and Teams. It uses advanced language models, such as GPT-4, to understand, summarize, create, and predict content. Copilot connects with Microsoft Graph, allowing it to access emails, chats, and documents that users have permission to access, offering relevant and context-aware assistance. Its uses include:
+Microsoft 365 Copilot is an AI tool that enhances user interaction with Microsoft 365 applications, including Word, Excel, PowerPoint, Outlook, and Teams. It uses advanced language models, such as GPT-4, to understand, summarize, create, and predict content. Copilot connects with Microsoft Graph, allowing it to access emails, chats, and documents that users have permission to access, offering relevant and context-aware assistance. Its uses include:
 
 - Drafting documents in Word with advanced language models.
 - Creating presentations in PowerPoint, including generating images using AI tools.
@@ -33,7 +33,7 @@ Integrating Copilot with sensitivity labels enhances data protection in Microsof
 
 For example, if a marketing manager uses Copilot to create a report from documents with different sensitivity levels, Copilot recognizes these labels and ensures the report meets required privacy standards. This integration allows Copilot to boost productivity without compromising data security.
 
-## Use sensitivity labels with Copilot for Microsoft 365
+## Use sensitivity labels with Microsoft 365 Copilot
 
 Combining sensitivity labels with Microsoft 365 Copilot offers significant benefits in both security and productivity:
 
@@ -45,7 +45,7 @@ Imagine our global consultancy firm is working on the launch of the new AI-power
 
 ## Getting started with sensitivity labels and Copilot
 
-To start using Copilot for Microsoft 365 with sensitivity labels:
+To start using Microsoft 365 Copilot with sensitivity labels:
 
 - **Verify prerequisites**: Ensure your IT infrastructure supports Copilot and sensitivity labels, including necessary network configurations and software updates.
 - **Understand label interaction**: Familiarize yourself with how Copilot recognizes and adheres to sensitivity labels, including respecting permissions set by these labels for different types of content.

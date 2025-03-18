@@ -12,7 +12,7 @@ You implemented the following process to resolve Contoso's requirements:
 
    Contoso estimates they'll need 100 PTUs: GPT -4os in US West.
 
-3. [Check PTU quota](/azure/ai-services/openai/how-to/provisioned-get-started) based on chosen region in Azure OpenAI Studio:
+3. [Check PTU quota](/azure/ai-services/openai/how-to/provisioned-get-started) based on chosen region in Azure OpenAI Foundry:
 
    Contoso confirms 100 PTUs of PGT -4os are available in US West.
 

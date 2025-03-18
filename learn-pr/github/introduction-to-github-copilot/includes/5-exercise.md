@@ -27,4 +27,4 @@ This exercise walks you through the following steps:
 > You don't need to modify any of the workflow files to complete this exercise. Altering the contents in this workflow can break the exercise's ability to validate your actions, provide feedback, or grade the results.
 
 > [!div class="nextstepaction"]
-> [Start the exercise on GitHub](https://github.com/skills/copilot-codespaces-vscode)
+> [Start the exercise on GitHub](https://github.com/skills/getting-started-with-github-copilot)

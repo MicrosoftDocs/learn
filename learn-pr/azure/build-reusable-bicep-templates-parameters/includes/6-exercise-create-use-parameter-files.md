@@ -1,19 +1,19 @@
-In this exercise, you'll create a parameter file that provides values for the Bicep file that you previously created. In the same parameter file, you'll also add Azure Key Vault references to securely provide sensitive information.
+In this exercise, you'll create a parameters file that provides values for the Bicep file that you previously created. In the same parameters file, you'll also add Azure Key Vault references to securely provide sensitive information.
 
 During the process, you'll do the following tasks:
 
 > [!div class="checklist"]
 >
 > - Add some secure parameters.
-> - Create a parameter file.
-> - Test the deployment to ensure that the parameter file is valid.
+> - Create a parameters file.
+> - Test the deployment to ensure that the parameters file is valid.
 > - Create a key vault and secrets.
-> - Update the parameter file to refer to the key vault secrets.
-> - Re-test the deployment to ensure that the parameter file is still valid.
+> - Update the parameters file to refer to the key vault secrets.
+> - Re-test the deployment to ensure that the parameters file is still valid.
 
 ## Remove the default value for the App Service plan SKU
 
-To make your template work across environments, the Azure App Service plan's SKU details will be provided in a parameter file rather than by a default value.
+To make your template work across environments, the Azure App Service plan's SKU details will be provided in a parameters file rather than by a default value.
 
 In the _main.bicep_ file in Visual Studio Code, update the `appServicePlanSku` parameter to remove its default value.
 
@@ -27,7 +27,7 @@ In the _main.bicep_ file in Visual Studio Code, add the `sqlServerAdministratorL
 
 :::code language="bicep" source="code/6-template.bicep" range="1-34" highlight="25-34" :::
 
-Notice that you're not specifying default values for the `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters. It's bad security practice to add default values for secure parameters. Also, you're not specifying a default value for `sqlDatabaseSku`. You'll specify a value in a parameter file.
+Notice that you're not specifying default values for the `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters. It's bad security practice to add default values for secure parameters. Also, you're not specifying a default value for `sqlDatabaseSku`. You'll specify a value in a parameters file.
 
 ## Add new variables
 
@@ -51,7 +51,7 @@ After you've completed all of the preceding changes, your Bicep file should look
 
 If it doesn't, either copy the example or adjust your template to match the example.
 
-## Create a parameter file
+## Create a parameters file
 
 1. Open Visual Studio Code, and open the folder where the _main.bicep_ file is located. In the same folder, create a new file called _main.parameters.dev.json_.
 
@@ -61,14 +61,15 @@ If it doesn't, either copy the example or adjust your template to match the exam
 
 1. Save the changes to the file.
 
-## Deploy the Bicep template with the parameter file
+## Deploy the Bicep template with the parameters file
 
 ::: zone pivot="cli"
 
-Run the following Azure CLI command in the terminal. Notice that you're providing a parameter file for the deployment.
+Run the following Azure CLI command in the terminal. Notice that you're providing a parameters file for the deployment.
 
 ```azurecli
 az deployment group create \
+  --name main \
   --template-file main.bicep \
   --parameters main.parameters.dev.json
 ```
@@ -77,17 +78,18 @@ az deployment group create \
 
 ::: zone pivot="powershell"
 
-Run the following Azure PowerShell command in the terminal. Notice that you're providing a parameter file for the deployment.
+Run the following Azure PowerShell command in the terminal. Notice that you're providing a parameters file for the deployment.
 
 ```azurepowershell
 New-AzResourceGroupDeployment `
+  -Name main `
   -TemplateFile main.bicep `
   -TemplateParameterFile main.parameters.dev.json
 ```
 
 ::: zone-end
 
-You're prompted to enter the values for `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters when you execute the deployment. You don't need to specify `solutionName` because it has a default value specified in the template. You don't need to specify the other parameter values because their values are specified in the parameter file.
+You're prompted to enter the values for `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameters when you execute the deployment. You don't need to specify `solutionName` because it has a default value specified in the template. You don't need to specify the other parameter values because their values are specified in the parameters file.
 
 > [!TIP]
 > When you enter the secure parameters, the values you choose must follow some rules:
@@ -189,7 +191,7 @@ The resource ID will look something like this example:
 
 Copy the resource ID. You'll use it in the next step.
 
-## Add a key vault reference to a parameter file
+## Add a key vault reference to a parameters file
 
 1. In the _main.parameters.dev.json_ file, append the following code after the `sqlDatabaseSku` parameter's closing brace. Make sure that you replace `YOUR-KEY-VAULT-RESOURCE-ID` with the value of the key vault resource ID you copied in the previous step. After you're finished, your parameters file should look like this example:
 
@@ -197,14 +199,15 @@ Copy the resource ID. You'll use it in the next step.
 
 1. Save the changes to the file.
 
-## Deploy the Bicep template with parameter file and Azure Key Vault references
+## Deploy the Bicep template with parameters file and Azure Key Vault references
 
 ::: zone pivot="cli"
 
-Run the following Azure CLI command in the terminal. You're providing a parameter file along with a Bicep file.
+Run the following Azure CLI command in the terminal. You're providing a parameters file along with a Bicep file.
 
 ```azurecli
 az deployment group create \
+  --name main \
   --template-file main.bicep \
   --parameters main.parameters.dev.json
 ```
@@ -213,10 +216,11 @@ az deployment group create \
 
 ::: zone pivot="powershell"
 
-Run the following Azure PowerShell command in the terminal. You're providing a parameter file along with a Bicep file.
+Run the following Azure PowerShell command in the terminal. You're providing a parameters file along with a Bicep file.
 
 ```azurepowershell
 New-AzResourceGroupDeployment `
+  -Name main `
   -TemplateFile main.bicep `
   -TemplateParameterFile main.parameters.dev.json
 ```
@@ -237,6 +241,6 @@ The deployment completes more quickly this time because the Azure resources alre
 
 1. On the left menu, select **Inputs**.
 
-1. Notice that the `appServicePlanSku` and the `sqlDatabaseSku` parameter values have both been set to the values in the parameter file. Also, notice that the `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameter values aren't displayed, because you applied the `@secure()` decorator to them.
+1. Notice that the `appServicePlanSku` and the `sqlDatabaseSku` parameter values have both been set to the values in the parameters file. Also, notice that the `sqlServerAdministratorLogin` and `sqlServerAdministratorPassword` parameter values aren't displayed, because you applied the `@secure()` decorator to them.
 
     :::image type="content" source="../media/6-parameter-values.png" alt-text="Screenshot of the Azure portal interface for the specific deployment showing the parameter values." border="true":::

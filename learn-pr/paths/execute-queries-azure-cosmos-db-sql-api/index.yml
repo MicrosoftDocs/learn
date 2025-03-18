@@ -1,17 +1,17 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.execute-queries-azure-cosmos-db-sql-api
 metadata:
-  title: Execute queries in Azure Cosmos DB for NoSQL
-  description: Execute queries in Azure Cosmos DB for NoSQL
-  ms.date: 10/17/2022
+  title: Execute queries and build a Generative AI application with Azure Cosmos DB
+  description: Execute queries and build a Generative AI application with Azure Cosmos DB
+  ms.date: 03/10/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: learning-path
-title: Execute queries in Azure Cosmos DB for NoSQL
+title: Execute queries and build a Generative AI application with Azure Cosmos DB
 prerequisites: |
-  Before starting this learning path, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
+  Before starting this learning path, you should have experience of building cloud applications with Microsoft C#, Python, JavaScript, or a similar programming language.
 summary: |
-  Create SQL queries for the Azure Cosmos DB for NoSQL using the Data Explorer and the .NET SDK
+  Create SQL queries for Azure Cosmos DB for NoSQL using the Data Explorer and SDKs for .NET, Python, and Node.js. Apply these skills to retrieve and process data efficiently, then use them to build a Generative AI application that makes the most of Cosmos DB's capabilities.
 iconUrl: /training/achievements/azure-cosmos-db-execute-queries.svg
 levels:
 - intermediate
@@ -24,5 +24,6 @@ subjects:
 modules:
 - learn.wwl.query-azure-cosmos-db-sql-api
 - learn.wwl.author-complex-queries-azure-cosmos-db-sql-api
+- learn.wwl.build-generative-ai-applications-with-azure-cosmos-db-nosql
 trophy:
   uid: learn.wwl.execute-queries-azure-cosmos-db-sql-api.trophy

@@ -1,6 +1,6 @@
 As you are setting up your class, you will be assigning work to your students on Microsoft Learn. Microsoft Learn is a free online learning platform that provides interactive training on Microsoft products and technologies. You and your students can access Microsoft Learn directly. We have provided multiple services for you to use to more effectively leverage this resource in your classroom.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQdf] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=81567731-d5a0-4d63-803d-bde97f1e15e5] 
 
 Microsoft provides tools to integrate content from Microsoft Learn into your institution’s Learning Management System (LMS). The Learning Tools Interoperability (LTI) application enables institutions to embed modules and pathways from the Microsoft Learn catalog and display them within an institution's LMS (e.g., [Blackboard](https://aka.ms/LTIBBdemo), [Canvas](https://aka.ms/LTICdemo) and [Moodle](https://aka.ms/LTIMdemo)). Find more information on [Microsoft Learn Catalog LTI Provider](https://aka.ms/MSLTI). 
 

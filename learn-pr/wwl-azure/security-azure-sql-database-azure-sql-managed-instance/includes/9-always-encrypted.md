@@ -2,7 +2,7 @@ Always Encrypted is a feature designed to protect sensitive data, such as credit
 
 Always Encrypted can be configured to support limited confidential queries on encrypted data, the queries that involve equality comparisons. For example, point lookup-searches or equality joins. Such queries leverage deterministic encryption.
 
-:::image type="content" source="../media/always-encrypted-database-1a57fc8a.png" alt-text="Diagram showing an example of an always encrypted database.":::
+:::image type="content" source="../media/always-encrypted-database-1a57fc8a-bc107e0f-36615bfe-2ddbb888.png" alt-text="Diagram showing an example of an always encrypted database.":::
 
 
 > [!NOTE]
@@ -14,40 +14,31 @@ Always Encrypted makes encryption transparent to applications. An Always Encrypt
 
 To set up Always Encrypted in your database, you need to:
 
-1.  Provision cryptographic keys to protect your data. Always Encrypted uses two types of keys:<br>
+1.  Provision cryptographic keys to protect your data. Always Encrypted uses two types of keys:
+    
+    
      -  Column encryption keys.<br>
      -  Column master keys.
     
-    A column encryption key is used to encrypt data in an encrypted column. A column master key is a key-protecting key that encrypts one or more column encryption keys.
-    
-    You need to store column master keys in a trusted key store outside of the database system, such as Azure Key Vault, Windows certificate store, or a hardware security module.<br>
-    
-    Then, you need provision column encryption keys and encrypt each of them with a column master key.<br>
-    
-    Finally, you need to store the metadata about the keys in your database.<br>
+    A column encryption key is used to encrypt data in an encrypted column. A column master key is a key-protecting key that encrypts one or more column encryption keys. You need to store column master keys in a trusted key store outside of the database system, such as Azure Key Vault, Windows certificate store, or a hardware security module.<br>Then, you need provision column encryption keys and encrypt each of them with a column master key.<br>Finally, you need to store the metadata about the keys in your database.
     
     
      -  The column master key metadata captures the location of the column master key.<br>
      -  The column encryption key metadata contains the encrypted value of the column encryption key. The Database Engine never stores or uses the keys of either type in plaintext.
-2.  Configure encryption for selected database columns that contain sensitive data to be protected. This can involve creating new tables with encrypted columns or encrypting existing database columns and existing data. When setting up encryption for a column, you specify the information about an encryption algorithm, a column encryption key to protect the data in the column, and an encryption type. Always Encrypted supports two encryption types:<br>
+2.  Configure encryption for selected database columns that contain sensitive data to be protected. This can involve creating new tables with encrypted columns or encrypting existing database columns and existing data. When setting up encryption for a column, you specify the information about an encryption algorithm, a column encryption key to protect the data in the column, and an encryption type. Always Encrypted supports two encryption types:
+    
+    
      -  Deterministic encryption always generates the same encrypted value for a given plaintext value. Using deterministic encryption allows point lookups, equality joins, grouping and indexing on encrypted columns. However, it may also allow unauthorized users to guess information about encrypted values by examining patterns in the encrypted column, especially if there's a small set of possible encrypted values, such as True/False, or North/South/East/West region.<br>
      -  Randomized encryption uses a method that encrypts data in a less predictable manner. Randomized encryption is more secure, but prevents searching, grouping, indexing, and joining on encrypted columns.
     
-    Use deterministic encryption for columns that will be used as search or grouping parameters. For example, a government ID number. Use randomized encryption for data such as confidential investigation comments, which aren't grouped with other records and aren't used to join tables.
-    
-    For details on Always Encrypted cryptographic algorithms, see [Always Encrypted cryptography](/sql/relational-databases/security/encryption/always-encrypted-cryptography?view=sql-server-ver16).
-    
-    You can perform the above steps using [SQL tools](/sql/tools/overview-sql-tools?view=sql-server-ver16):
+    Use deterministic encryption for columns that will be used as search or grouping parameters. For example, a government ID number. Use randomized encryption for data such as confidential investigation comments, which aren't grouped with other records and aren't used to join tables. For details on Always Encrypted cryptographic algorithms, see [Always Encrypted cryptography](/sql/relational-databases/security/encryption/always-encrypted-cryptography?view=sql-server-ver16). You can perform the above steps using [SQL tools](/sql/tools/overview-sql-tools?view=sql-server-ver16):
     
     
      -  [SQL Server Management Studio (SSMS)](/sql/relational-databases/security/encryption/configure-always-encrypted-keys-using-ssms?view=sql-server-ver16)
      -  [SQL Server PowerShell](/sql/relational-databases/security/encryption/configure-always-encrypted-using-powershell?view=sql-server-ver16)
      -  [sqlpackage](/sql/relational-databases/security/encryption/configure-always-encrypted-using-dacpac?view=sql-server-ver16) \- which automate the setup process
     
-    To ensure Always Encrypted keys and protected sensitive data are never revealed in plaintext to the database environment, the Database Engine can't be involved in key provisioning and data encryption, or decryption operations. Therefore, Transact-SQL (T-SQL) doesn't support key provisioning or cryptographic operations. For the same reason, encrypting existing data or re-encrypting it (with a different encryption type or a column encryption key) needs to be performed outside of the database (SQL tools can automate that).
-    
-    > [!NOTE]
-    > [Always Encrypted with secure enclaves](/sql/relational-databases/security/encryption/always-encrypted-enclaves?view=sql-server-ver16) lifts some of the above restrictions by allowing cryptographic operations on existing data using T-SQL, and eliminates the need to move the data outside of the database.
+    To ensure Always Encrypted keys and protected sensitive data are never revealed in plaintext to the database environment, the Database Engine can't be involved in key provisioning and data encryption, or decryption operations. Therefore, Transact-SQL (T-SQL) don't support key provisioning or cryptographic operations. For the same reason, encrypting existing data or re-encrypting it (with a different encryption type or a column encryption key) needs to be performed outside of the database (SQL tools can automate that).
 
 ## How queries against encrypted columns work
 
@@ -57,27 +48,19 @@ To run a query on encrypted database columns, insert data to encrypted columns, 
  -  Connect to the database with Always Encrypted enabled in the database connection. Most SQL tools and SQL client drivers support enabling Always Encrypted for database connections.
 
 > [!NOTE]
-> If the user has required database permissions to read the data, but no access to the keys protecting it, the user can still retrieve cyphertext (encrypted) data by connecting to the database without enabling Always Encrypted in the database connection.
+> If the user has required database permissions to read the data, but no access to the keys protecting it, the user can still retrieve ciphertext (encrypted) data by connecting to the database without enabling Always Encrypted in the database connection.
 
 Here's how queries on encrypted columns work:
 
-1. When an application issues a parameterized query, the SQL client driver within the application transparently contacts the Database Engine (by calling [sp\_describe\_parameter\_encryption (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-describe-parameter-encryption-transact-sql?view=sql-server-ver16) to determine which parameters target encrypted columns and should be encrypted. For each parameter that needs to be encrypted, the driver receives the encryption algorithm, encryption type, and key metadata, including the encrypted column encryption key and the location of its corresponding column master key.<br>
-
-2. The driver calls the key store, containing column master keys in order to decrypt the encrypted column encryption key values. The resultant plaintext column encryption keys are cached to reduce the number of round trips to the key store on subsequent uses of the same column encryption keys.
-
-3. The driver uses the obtained plaintext column encryption keys to encrypt the query parameters corresponding to encrypted columns.
-
-4. The driver substitutes the plaintext values of the parameters targeting encrypted columns with their encrypted values, and it sends the query to the Database Engine for processing.
-
-5. The Database Engine executes the query, which may involve equality comparisons on columns using deterministic encryption.
-
-6. If query results include data from encrypted columns, the Database Engine attaches encryption metadata for each column, including the information about the encryption algorithm, the encryption type, and key metadata to the result set.
-
-7. The Database Engine sends the result set to the client application.
-
-8. For each encrypted column in the received result set, the driver first tries to find the plaintext column encryption key in the local cache, and only makes a round trip to a key store holding the column master key if it can't find the key in the cache.
-
-9. The driver decrypts the results and returns plaintext values to the application.
+1.  When an application issues a parameterized query, the SQL client driver within the application transparently contacts the Database Engine (by calling [sp\_describe\_parameter\_encryption (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-describe-parameter-encryption-transact-sql?view=sql-server-ver16) to determine which parameters target encrypted columns and should be encrypted. For each parameter that needs to be encrypted, the driver receives the encryption algorithm, encryption type, and key metadata, including the encrypted column encryption key and the location of its corresponding column master key.<br>
+2.  The driver calls the key store, containing column master keys in order to decrypt the encrypted column encryption key values. The resultant plaintext column encryption keys are cached to reduce the number of round trips to the key store on subsequent uses of the same column encryption keys.
+3.  The driver uses the obtained plaintext column encryption keys to encrypt the query parameters corresponding to encrypted columns.
+4.  The driver substitutes the plaintext values of the parameters targeting encrypted columns with their encrypted values, and it sends the query to the Database Engine for processing.
+5.  The Database Engine executes the query, which may involve equality comparisons on columns using deterministic encryption.
+6.  If query results include data from encrypted columns, the Database Engine attaches encryption metadata for each column, including the information about the encryption algorithm, the encryption type, and key metadata to the result set.
+7.  The Database Engine sends the result set to the client application.
+8.  For each encrypted column in the received result set, the driver first tries to find the plaintext column encryption key in the local cache, and only makes a round trip to a key store holding the column master key if it can't find the key in the cache.
+9.  The driver decrypts the results and returns plaintext values to the application.
 
 A client driver interacts with a key store, containing a column master key, using a column master key store provider, which is a client-side software component that encapsulates a key store containing the column master key. Providers for common types of key stores are available in client-side driver libraries from Microsoft, or as standalone downloads. You can also implement your own provider. Always Encrypted capabilities, including built-in column master key store providers vary by a driver library and its version.
 
@@ -89,7 +72,9 @@ You can also query encrypted columns using SQL tools, for example [Azure Data St
 
 The following limitations apply to queries on encrypted columns:
 
- -  Deterministic encryption supports the following operations involving equality comparisons - no other operations are allowed.<br>
+ -  Deterministic encryption supports the following operations involving equality comparisons - no other operations are allowed.
+    
+    
      -  [= (Equals)](/sql/t-sql/language-elements/equals-transact-sql?view=sql-server-ver16) in point lookup searches.<br>
      -  [IN](/sql/t-sql/language-elements/in-transact-sql?view=sql-server-ver16).
      -  [SELECT - GROUP BY](/sql/t-sql/queries/select-group-by-transact-sql?view=sql-server-ver16).
@@ -100,6 +85,8 @@ The following limitations apply to queries on encrypted columns:
 > [Always Encrypted with secure enclaves](/sql/relational-databases/security/encryption/always-encrypted-enclaves?view=sql-server-ver16) relaxes the above restriction by allowing pattern matching, comparison operators, sorting, and indexing on columns using randomized encryption.
 
  -  Query statements that trigger computations involving both plaintext and encrypted data aren't allowed. For example:
+    
+    
      -  Comparing an encrypted column to a plaintext column or a literal.<br>
      -  Copying data from a plaintext column to an encrypted column (or the other way around) **UPDATE**, **BULK INSERT**, **SELECT INTO**, or **INSERT..SELECT**.
      -  Inserting literals to encrypted columns.
@@ -110,6 +97,18 @@ Such statements result in operand clash errors like this:
 Output
 Msg 206, Level 16, State 2, Line 89
 Operand type clash: char(11) encrypted with (encryption_type = 'DETERMINISTIC', encryption_algorithm_name = 'AEAD_AES_256_CBC_HMAC_SHA_256', column_encryption_key_name = 'CEK_1', column_encryption_key_database_name = 'ssn') collation_name = 'Latin1_General_BIN2' is incompatible with char
+
+
+
+
+
+
+
+
+
+
+
+
 ```
 
  -  Applications must use query parameters to pass values that correspond to encrypted columns. For example, when inserting data to encrypted columns or filtering by encrypted columns (when using deterministic encryption). Passing literals or T-SQL variables corresponding to encrypted columns isn't supported. For more information specific to a client driver you're using, see [Develop applications using Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-client-development?view=sql-server-ver16).
@@ -122,6 +121,8 @@ Operand type clash: char(11) encrypted with (encryption_type = 'DETERMINISTIC', 
      -  [FOR JSON (SQL Server)](/sql/relational-databases/json/format-query-results-as-json-with-for-json-sql-server?view=sql-server-ver16)
  -  After changing the definition of an encrypted column, execute [sp\_refresh\_parameter\_encryption](/sql/relational-databases/system-stored-procedures/sp-refresh-parameter-encryption-transact-sql?view=sql-server-ver16) to update the Always Encrypted metadata for the object.
  -  Always Encrypted isn't supported for the columns with the below characteristics:
+    
+    
      -  Columns using one of the following data types: xml, timestamp, rowversion, image, ntext, text, sql\_variant, hierarchyid, geography, geometry, alias, user-defined types.
      -  [FILESTREAM](/sql/t-sql/statements/create-table-transact-sql?view=sql-server-ver16#filestream) columns
      -  Columns with the [IDENTITY](/sql/t-sql/statements/create-table-transact-sql?view=sql-server-ver16#identity) property.
@@ -145,7 +146,6 @@ Operand type clash: char(11) encrypted with (encryption_type = 'DETERMINISTIC', 
      -  Columns in [stretch database tables](/sql/sql-server/stretch-database/stretch-database?view=sql-server-ver16). (Tables with columns encrypted with Always Encrypted can be enabled for Stretch.)
  -  > [!IMPORTANT]
     > Stretch Database is deprecated in SQL Server 2022 (16.x) and Azure SQL Database. This feature will be removed in a future version of the Database Engine. Avoid using this feature in new development work, and plan to modify applications that currently use this feature.
-
  -  The following features don't work on encrypted columns:
     
     

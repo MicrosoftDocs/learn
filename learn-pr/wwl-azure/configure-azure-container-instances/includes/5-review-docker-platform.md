@@ -2,7 +2,7 @@ There are many options for teams to build and deploy cloud native and containeri
 
 ### Things to know about Azure Container Apps
 
-Azure Container Apps is a serverless platform that allows you to maintain less infrastructure and save costs while running containerized applications. Instead of worrying about server configuration, container orchestration, and deployment details, Container Apps provides all the up-to-date server resources required to keep your applications stable and secure.
+[Azure Container Apps](/azure/container-apps/overview) is a serverless platform that allows you to maintain less infrastructure and save costs while running containerized applications. Instead of worrying about server configuration, container orchestration, and deployment details, Container Apps provides all the up-to-date server resources required to keep your applications stable and secure.
 
 Common uses of Azure Container Apps include:
 
@@ -11,7 +11,7 @@ Common uses of Azure Container Apps include:
 - Handling event-driven processing
 - Running microservices
 
-Additionally, applications built on Azure Container Apps can dynamically scale based on the following characteristics:
+Applications built on Azure Container Apps can dynamically scale based on the following characteristics:
 
 - HTTP traffic
 - Event-driven processing
@@ -38,7 +38,7 @@ Azure Container Instances (ACI) can be managed in several ways. Azure Container 
 | --- | --- | --- |
 | Overview | ACA is a serverless container platform that simplifies the deployment and management of microservices-based applications by abstracting away the underlying infrastructure. | AKS simplifies deploying a managed Kubernetes cluster in Azure by offloading the operational overhead to Azure. It’s suitable for complex applications that require orchestration. |
 | Deployment | ACA provides a PaaS experience with quick deployment and management capabilities. | AKS offers more control and customization options for Kubernetes environments, making it suitable for complex applications and microservices. |
-| Management | ACA builds upon AKS and offers a simplified PaaS experience for running containers, with additional features, like Dapr for microservices. | AKS provides a more granular control over the Kubernetes environment, suitable for teams with Kubernetes expertise. |
+| Management | ACA builds upon AKS and offers a simplified PaaS experience for running containers. | AKS provides a more granular control over the Kubernetes environment, suitable for teams with Kubernetes expertise. |
 | Scalability | ACA supports both HTTP-based autoscaling and event-driven scaling, making it ideal for applications that need to respond quickly to changes in demand. | AKS offers horizontal pod autoscaling and cluster autoscaling, providing robust scalability options for containerized applications. |
-| Use Cases | ACA is designed for microservices and serverless applications that benefit from rapid scaling and simplified management. | AKS is best for complex, long-running applications that require full Kubernetes features and tight integration with other Azure services. |
+| Use Cases | ACA is designed for microservices and serverless applications that benefit from rapid scaling and simplified management. | AKS is best for complex, long-running applications. These applications require full Kubernetes features and tight integration with other Azure services. |
 | Integration | ACA integrates with Azure Logic Apps, Functions, and Event Grid for event-driven architectures. | AKS provides features like Azure Policy for Kubernetes, Azure Monitor for containers, and Azure Defender for Kubernetes for comprehensive security and governance. |

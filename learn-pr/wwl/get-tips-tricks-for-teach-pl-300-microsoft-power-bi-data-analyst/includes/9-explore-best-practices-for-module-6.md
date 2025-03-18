@@ -12,7 +12,7 @@ This module consists of three lessons:
 - Lesson 2 – Identify poorly performing measures, relationships, and visuals 
 - Lesson 3 – Reduce cardinality levels to improve performance  
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5anzl] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ee1b9c8e-cf70-42fc-92ce-a01ec7e2ffe2] 
 
 Module 6 Tips and Tricks 
 

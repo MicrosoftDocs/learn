@@ -24,11 +24,11 @@ quiz:
     - content: You can provision capacity by selecting the help icon and entering Provision Capacity.
       isCorrect: false
       explanation: Incorrect. While the help option can provide information on how to provision capacity, you can't provision capacity from the help icon.
-    - content: You can provision capacity by running the wizard that is part of the first run experience Microsoft Security Copilot or by selecting 'Microsoft Security Copilot compute capacities' in the Azure portal and completing the steps.
+    - content: You can provision capacity by running the wizard that is part of the first run experience Microsoft Security Copilot. Or, by selecting 'Microsoft Security Copilot compute capacities' in the Azure portal and completing the steps.
       isCorrect: true
-      explanation: Correct. You can provision capacity by running the wizard that is part of the first run experience Microsoft Security Copilot or by selecting 'Microsoft Security Copilot compute capacities' in the Azure portal and completing the steps.
+      explanation: Correct. You can provision capacity by running the wizard that is part of the first run experience Microsoft Security Copilot. Or, by selecting 'Microsoft Security Copilot compute capacities' in the Azure portal and completing the steps.
    
-  - content: When adding a custom plugin, what are the options that you select as part of the upload process?
+  - content: When you add a custom plugin, what are the options that you select as part of the upload process?
     choices:
     - content: You can select 'Who can use this plugin' and you upload a file in the format of .docx, .pdf, .txt, or .md.
       isCorrect: false
@@ -40,12 +40,12 @@ quiz:
       isCorrect: false
       explanation: Incorrect. The option to 'Allow Security Copilot to access data from your Microsoft 365 services' isn't applicable to custom plugins. To add a custom plugin, you can select 'Who can use this plugin' and you select whether you're uploading a Security Copilot plugin or an OpenAI plugin.
   
-  - content: What the option that best describes the steps involved in creating a custom promptbook.
+  - content: Which option best describes the steps involved in creating a custom promptbook.
     choices:
     - content: From the owner settings, select the custom promptbook icon, follow the steps in the Create a promptbook page, and select create.
       isCorrect: false
       explanation: Incorrect. To create a custom promptbook identify an existing session, select the prompts you want to reuse, select the custom promptbook icon, follow the steps in the Create a promptbook page, then select create.
-    - content: Start with an existing session, select the prompts you want to reuse, select the custom promptbook icon, follow the steps in the Create a promptbook page, and select create.
+    - content: Start with an existing session. Select the prompts you want to reuse. Then, select the custom promptbook icon, follow the steps in the Create a promptbook page, and select create.
       isCorrect: true
       explanation: Correct. To create a custom promptbook identify an existing session, select the prompts you want to reuse, select the custom promptbook icon, follow the steps in the Create a promptbook page, then select create.
     - content: Select the Sources icon, select files, then upload a .json formatted file that contains the details of the promptbook.

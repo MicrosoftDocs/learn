@@ -1,4 +1,4 @@
-Azure Blob Storage is a service that stores unstructured data in the cloud as objects or blobs. Blob stands for Binary Large Object. Blob Storage is also referred to as _object storage_ or _container storage_.
+[Azure Blob Storage](/azure/storage/blobs/storage-blobs-overview) is a service that stores unstructured data in the cloud as objects or blobs. Blob stands for Binary Large Object. Blob Storage is also referred to as _object storage_ or _container storage_.
 
 ### Things to know about Azure Blob Storage
 
@@ -12,11 +12,11 @@ Let's examine some configuration characteristics of Blob Storage.
    - Blobs in a container
 
 - To implement Blob Storage, you configure several settings:
-   - Blob container options
-   - Blob types and upload options
-   - Blob Storage access tiers
-   - Blob lifecycle rules
-   - Blob object replication options
+   - Blob container options.
+   - Blob types and upload options.
+   - Blob Storage access tiers.
+   - Blob lifecycle rules.
+   - Blob object replication options.
 
 The following diagram shows the relationship between the Blob Storage resources.
 

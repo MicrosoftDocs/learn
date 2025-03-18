@@ -2,11 +2,9 @@
 uid: learn.wwl.implement-high-availability-for-sap-workloads-azure.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Check what you learn in this module."
-  ms.date: 09/20/2024
+  ms.date: 12/27/2024
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

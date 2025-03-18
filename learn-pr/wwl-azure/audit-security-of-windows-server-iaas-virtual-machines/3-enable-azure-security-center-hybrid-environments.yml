@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.audit-security-of-windows-server-iaas-vms.enable-azure-security-center-hybrid-environments
-title: Enable Azure Security Center in hybrid environments
+title: Enable Microsoft Defender for Cloud in hybrid environments
 metadata:
-  title: Enable Azure Security Center in hybrid environments
-  description: "Enable Azure Security Center in hybrid environments"
-  ms.date: 09/24/2020
+  title: Enable Microsoft Defender for Cloud in hybrid environments
+  description: "Enable Microsoft Defender for Cloud in hybrid environments"
+  ms.date: 12/20/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit

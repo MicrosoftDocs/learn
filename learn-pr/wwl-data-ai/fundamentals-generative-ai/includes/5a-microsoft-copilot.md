@@ -28,7 +28,7 @@ These are just some examples of how you can use Microsoft 365 Copilot. There’s
 
 #### Use AI to support business processes
 
-**Copilot in Dynamics 365 Customer Service**: Modernizes contact centers with generative AI.|Customer service agents use Copilot to analyze support tickets, research similar issues, find resolutions, and communicate them to users with only a few clicks and prompts.
+**Copilot in Dynamics 365 Customer Service**: Modernizes contact centers with generative AI. Customer service agents use Copilot to analyze support tickets, research similar issues, find resolutions, and communicate them to users with only a few clicks and prompts.
 
 ![Screenshot of Copilot for Dynamics 365 Customer Service.](../media/dynamics-support.png)
 
@@ -52,7 +52,7 @@ These are just some examples of how you can use Microsoft 365 Copilot. There’s
 
 #### Manage IT infrastructure and security 
 
-**Copilot for Security**: Provides assistance for security professionals as the assess, mitigate, and respond to security threats.
+**Copilot for Security**: Provides assistance for security professionals as they assess, mitigate, and respond to security threats.
 
 ![Screenshot of Copilot for Security.](../media/security-copilot.png)
 

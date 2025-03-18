@@ -6,12 +6,13 @@ GitHub Copilot is heralding a new generation of more productive, fulfilled, and 
 
 Now that you've finished this module, you should be able to:
 
-- Explain the GitHub Copilot features and the subscription plans (Individual, Business, and Enterprise).
+- Explain the GitHub Copilot features and the subscription plans (Free, Pro, Business, and Enterprise).
 - Get started with and configure GitHub Copilot.
 - Develop by using GitHub Copilot and VS Code.
 
 ## References
 
+- [GitHub Copilot Certification Exam Prep](https://github.com/orgs/community/discussions/144443)
 - [GitHub Copilot features](https://github.com/features/copilot)
 - [Research: quantifying GitHub Copilot's impact on developer productivity and happiness](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/)
 - [What is GitHub Copilot?](https://docs.github.com/en/copilot/about-github-copilot/what-is-github-copilot)

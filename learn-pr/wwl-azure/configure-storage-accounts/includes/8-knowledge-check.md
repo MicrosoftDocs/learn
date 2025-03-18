@@ -1,5 +1,4 @@
 
-
 An organization has diverse requirements for their cloud-hosted data. They need to configure secure storage access.
 
 - The admin team requests help implementing a storage replication strategy. They have questions about how to configure storage accounts. 
@@ -8,4 +7,4 @@ An organization has diverse requirements for their cloud-hosted data. They need 
 
 ### Answer the following questions
 
-Choose the best response for each of the questions. 
+Choose the best response for each question.

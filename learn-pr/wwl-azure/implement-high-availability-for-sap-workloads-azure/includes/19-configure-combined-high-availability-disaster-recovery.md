@@ -17,4 +17,4 @@ The following considerations apply:
   - For Windows, a cluster solution that uses SIOS DataKeeper, as documented in Cluster an SAP ASCS/SCS instance on a Windows failover cluster by using a cluster shared disk in Azure.
   - For SUSE Linux, an NFS share that's built as documented in High availability for NFS on Azure Virtual Machines on SUSE Linux Enterprise Server.
 - Currently, the solution that uses Microsoft Scale-Out File Server isn't supported across zones.
-- The third zone is used to host the SBD device in case you build a SUSE Linux Pacemaker cluster or other application instances
+- The third zone is used to host the SBD device in case you build a SUSE Linux Pacemaker cluster or other application instances.

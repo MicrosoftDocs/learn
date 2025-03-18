@@ -6,8 +6,9 @@ metadata:
   title: Knowledge check
   description: Knowledge check
   ms.date: 09/15/2020
-  author: kushagraThapar
-  ms.author: kuthapar
+  author: KarlErickson
+  ms.author: karler
+  ms.reviewer: kuthapar
   ms.topic: unit
   ms.custom:
     - devx-track-extended-java

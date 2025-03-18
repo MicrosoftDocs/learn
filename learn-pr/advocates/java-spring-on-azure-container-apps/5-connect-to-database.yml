@@ -1,0 +1,19 @@
+### YamlMime:ModuleUnit
+uid: learn.java-on-azure-container-apps.5-connect-to-database
+title: Exercise - Connect to a database
+metadata:
+  title: Exercise - Connect to a database
+  description: This unit shows you how to connect your Spring Boot application to a database on Azure Container Apps.
+  author: KarlErickson
+  ms.author: karler
+  ms.reviewer: hangwan
+  ms.date: 02/18/2025
+  ms.topic: unit
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-java
+    - devx-track-extended-java
+  ms.contributors: hangwan97
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-connect-to-database.md)]
