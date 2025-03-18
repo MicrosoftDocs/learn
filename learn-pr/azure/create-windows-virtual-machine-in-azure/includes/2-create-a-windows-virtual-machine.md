@@ -16,12 +16,12 @@ The Azure Marketplace also provides preconfigured images that include both an OS
 
 When creating a Windows VM in Azure, you also create resources to host the VM. These resources work together to virtualize a computer and run the Windows operating system. These must either exist (and be selected during VM creation), or they'll be created with the VM.
 
-- A virtual machine that provides CPU and memory resources
-- An Azure Storage account to hold the virtual hard disks
-- Virtual disks to hold the OS, applications, and data
-- A virtual network (VNet) to connect the VM to other Azure services or your own on-premises hardware
-- A network interface to communicate with the VNet
-- A public IP address so you can access the VM (this is optional)
+- A virtual machine that provides CPU and memory resources.
+- An Azure Storage account to hold the virtual hard disks.
+- Virtual disks to hold the OS, applications, and data.
+- A virtual network (VNet) to connect the VM to other Azure services or your own on-premises hardware.
+- A network interface to communicate with the VNet.
+- A public IP address so you can access the VM (this is optional).
 
 Like other Azure services, you'll need a **resource group** to contain the VM (and optionally group these resources together for administration). When you create a new VM, you can either use an existing resource group or create a new one.
 
@@ -41,18 +41,18 @@ Just as a physical machine has a certain amount of memory and CPU power, so does
 > [!WARNING]
 > There are quota limits on each subscription that can impact VM creation. In the classic deployment model, you can't have more than 20 virtual *cores* across all VMs within a region. You can either split up VMs across regions or file an [online request](/azure/azure-supportability/resource-manager-core-quotas-request) to increase your limits.
 
-VM sizes are grouped into categories, starting with the B-series for basic testing, and running up to the H-series for massive computing tasks. You should select the VM's size based on the workload you want to perform. It's possible to change a VM's size after it's been created, but the VM must be stopped first, so it's best to size it appropriately from the start if possible.
+VM sizes are grouped into categories, starting with the B-series for basic testing, and running up to the H-series for massive computing tasks. You should select the VM's size based on the workload you want to perform. It's possible to change a VM's size after it's been created, but the VM must be stopped first. So it's best to size it appropriately from the start if possible.
 
-### Here are some guidelines based on the scenario you're targeting:
+### Here are some guidelines based on the scenario you're targeting
 
 | What are you doing? | Consider these sizes |
 |-------|------------------|
-| **General use computing/web**: Testing and development, small to medium databases, or low to medium traffic web servers | B, Dsv3, Dv3, DSv2, Dv2 |
-| **Heavy computational tasks**: Medium traffic web servers, network appliances, batch processes, and application servers | Fsv2, Fs, F |
+| **General use computing/web**: Testing and development, small to medium databases, or low to medium traffic web servers. | B, Dsv3, Dv3, DSv2, Dv2 |
+| **Heavy computational tasks**: Medium traffic web servers, network appliances, batch processes, and application servers. | Fsv2, Fs, F |
 | **Large memory usage**: Relational database servers, medium to large caches, and in-memory analytics. | Esv3, Ev3, M, GS, G, DSv2, Dv2 |
-| **Data storage and processing**: Big Data, SQL, and NoSQL databases, which need high disk throughput and IO | Ls |
-| **Heavy graphics rendering** or video editing, as well as model training and inferencing (ND) with deep learning | NV, NC, NCv2, NCv3, ND |
-| **High-performance computing (HPC)**: If you need the fastest and most powerful CPU virtual machines with optional high-throughput network interfaces | H |
+| **Data storage and processing**: Big Data, SQL, and NoSQL databases, which need high disk throughput and IO. | Ls |
+| **Heavy graphics rendering** or video editing, as well as model training and inferencing (ND) with deep learning. | NV, NC, NCv2, NCv3, ND |
+| **High-performance computing (HPC)**: If you need the fastest and most powerful CPU virtual machines with optional high-throughput network interfaces. | H |
 
 ## Choose storage options
 
@@ -72,7 +72,7 @@ By default, two virtual hard disks (VHDs) will be created for your Windows VM:
 1. **A Temporary disk**: This provides temporary storage for the OS or any apps. It's configured as the D: drive by default and is sized based on the VM size, making it an ideal location for the Windows paging file.
 
 > [!WARNING]
-> The temporary disk is not persistent. You should only write data to this disk that you're willing to lose at any time.
+> The temporary disk isn't persistent. You should only write data to this disk that you're willing to lose at any time.
 
 #### What about data?
 
@@ -102,6 +102,6 @@ Virtual machines communicate with external resources using a virtual network (VN
 
 When you create a new VM, you'll have the option of creating a new virtual network or using an existing VNet in your region.
 
-Having Azure create the network together with the VM is simple, but it's likely not ideal for most scenarios. It's better to plan your network requirements *up front* for all the components in your architecture and create the VNet structure you'll need separately and then create the VMs and place them into the already-created VNets.
+Having Azure create the network together with the VM is simple, but it's likely not ideal for most scenarios. It's better to plan your network requirements *up front* for all the components in your architecture, and create the VNet structure you'll need separately. Then create the VMs, and place them into the already-created VNets.
 
 We'll look more at virtual networks a bit later in this module. Let's apply some of this knowledge and create a VM in Azure.

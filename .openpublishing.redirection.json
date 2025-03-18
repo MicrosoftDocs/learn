@@ -46032,6 +46032,46 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/improve-api-developer-experience-with-swagger/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/fundamentals/openapi/aspnetcore-openapi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/improve-api-developer-experience-with-swagger/2-publish-openapi-documentation.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/fundamentals/openapi/aspnetcore-openapi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/improve-api-developer-experience-with-swagger/3-exercise-enable-swagger-and-swashbuckle.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/fundamentals/openapi/aspnetcore-openapi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/improve-api-developer-experience-with-swagger/4-visualize-and-interact-with-api-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/fundamentals/openapi/aspnetcore-openapi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/improve-api-developer-experience-with-swagger/5-exercise-use-swagger-ui.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/fundamentals/openapi/aspnetcore-openapi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/improve-api-developer-experience-with-swagger/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/fundamentals/openapi/aspnetcore-openapi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/improve-api-developer-experience-with-swagger/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/fundamentals/openapi/aspnetcore-openapi",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "learn-pr/azure/improve-api-developer-experience-with-swagger/index.yml",
+      "redirect_url": "https://learn.microsoft.com/aspnet/core/fundamentals/openapi/aspnetcore-openapi",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/paths/prepare-data-for-tabular-models-power-bi/index.md",
       "redirect_url": "/training/paths/prepare-data-power-bi/",
       "redirect_document_id": false
