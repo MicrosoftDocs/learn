@@ -4,5 +4,5 @@ In this module, you'll learn how to use the Semantic Kernel SDK to develop your 
 
 After completing this module, you'll be able to:
   - Build AI agents using the Semantic Kernel SDK
-  - Create custom plugin functions for your AI agents
+  - Use tools and plugins with your AI agents
   - Develop multi-agent solutions
