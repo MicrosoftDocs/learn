@@ -46026,10 +46026,84 @@
       "redirect_url": "/training/modules/optimize-model-power-bi/",
       "redirect_document_id": false
     },
-
     {
       "source_path": "learn-pr/wwl-data-ai/use-tools-optimize-power-bi-performance/7-summary.md",
       "redirect_url": "/training/modules/optimize-model-power-bi/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/prepare-data-for-tabular-models-power-bi/index.md",
+      "redirect_url": "/training/paths/prepare-data-power-bi/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-scalability-power-bi/index.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-scalability-power-bi/1-introduction.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-scalability-power-bi/2-describe-significance-of-scalable-models.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-scalability-power-bi/3-implement-data-modeling-best-practices.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-scalability-power-bi/4-configure-large-datasets.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-scalability-power-bi/5-knowledge-check.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/understand-scalability-power-bi/6-summary.md",
+      "redirect_url": "/training/modules/design-scalable-semantic-models/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-manage-scalable-power-bi-dataflows/index.md",
+      "redirect_url": "/training/paths/prepare-data-power-bi/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-manage-scalable-power-bi-dataflows/1-introduction.md",
+      "redirect_url": "/training/paths/prepare-data-power-bi/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-manage-scalable-power-bi-dataflows/2-define-use-cases-for-dataflows.md",
+      "redirect_url": "/training/paths/prepare-data-power-bi/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-manage-scalable-power-bi-dataflows/3-create-reusable-assets.md",
+      "redirect_url": "/training/paths/prepare-data-power-bi/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-manage-scalable-power-bi-dataflows/4-implement-best-practices.md",
+      "redirect_url": "/training/paths/prepare-data-power-bi/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-manage-scalable-power-bi-dataflows/6-knowledge-check.md",
+      "redirect_url": "/training/paths/prepare-data-power-bi/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-manage-scalable-power-bi-dataflows/7-summary.md",
+      "redirect_url": "/training/paths/prepare-data-power-bi/",
       "redirect_document_id": false
     }
  ]

@@ -5564,4 +5564,19 @@ achievements:
   type: badge
   title: Use tools to optimize Power BI performance
   summary: Use tools to develop, manage, and optimize Power BI data model and DAX query performance.
-  iconUrl: /training/achievements/use-tools-optimize-power-bi-performance.svg
+  iconUrl: /training/achievements/use-tools-optimize-power-bi-performance.svg\
+- uid: learn.wwl.prepare-data-for-tabular-models-power-bi.trophy
+  type: trophy
+  title: Prepare data for tabular models in Power BI
+  summary: Designing reports for enterprise scale requires more than just connecting to data. Understanding Power BI model frameworks and strategies for scalability and optimization are key to a successful enterprise implementation.This learning path helps you prepare for the [Azure Enterprise Data Analyst Certification](/learn/certifications/exams/dp-500).
+  iconUrl: /training/achievements/prepare-data-for-tabular-models-power-bi.svg
+- uid: learn.wwl.understand-scalability-power-bi.badge
+  type: badge
+  title: Understand scalability in Power BI
+  summary: Scalable data models enable enterprise-scale analytics in Power BI. Implement data modeling best practices, use large dataset storage format, and practice building a star schema to design analytics solutions that can scale.
+  iconUrl: /training/achievements/understand-scalability-power-bi.svg
+- uid: learn.wwl.create-manage-scalable-power-bi-dataflows.badge
+  type: badge
+  title: Create and manage scalable Power BI dataflows
+  summary: Create Power BI transformation logic for reuse across your organization with Power BI dataflows.  Learn how to combine Power BI dataflows with Power BI Premium for scalable ETL, and practice creating and consuming dataflows.
+  iconUrl: /training/achievements/create-manage-scalable-power-bi-dataflows.svg
