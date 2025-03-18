@@ -5,9 +5,10 @@ metadata:
   title: Top 5 security items to consider before pushing to production
   description: Learn about the Site Reliability Engineering approach to the challenge of assuring reliability and gain a better understanding of why it matters.
   author: patridge
-  ms.author: adpatrid
-  ms.date: 05/26/2023
+  ms.author: robmcm
+  ms.date: 03/14/2025
   ms.topic: module
+  ms.service: security
 title: Top 5 security items to consider before pushing to production
 summary: Secure your web applications on Azure and protect your apps against the most common and dangerous web application attacks.
 abstract: | 

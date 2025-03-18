@@ -12,6 +12,7 @@ Now that you've finished this module, you should be able to:
 
 ## References
 
+- [GitHub Copilot Certification Exam Prep](https://github.com/orgs/community/discussions/144443)
 - [GitHub Copilot features](https://github.com/features/copilot)
 - [Research: quantifying GitHub Copilot's impact on developer productivity and happiness](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/)
 - [What is GitHub Copilot?](https://docs.github.com/en/copilot/about-github-copilot/what-is-github-copilot)

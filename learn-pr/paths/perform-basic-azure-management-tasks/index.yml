@@ -1,0 +1,37 @@
+### YamlMime:LearningPath
+uid: learn.wwl.perform-basic-azure-management-tasks
+metadata:
+  title: 'APL-0502: Perform basic Azure Management Tasks (Security and Monitoring)'
+  description: 'APL-0502: Perform basic Azure Management Tasks (Security and Monitoring)'
+  ms.date: 03/17/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: learning-path
+title: 'APL-0502: Perform basic Azure Management Tasks (Security and Monitoring)'
+prerequisites: |
+  Prior knowledge of cloud concepts, Azure services, and basic security and monitoring principles, such as those covered in Course AZ-900T00-A: Microsoft Azure Fundamentals.
+summary: |
+  Perform essential Azure security and monitoring tasks by enabling Microsoft Defender for Cloud, reviewing security recommendations, managing keys and secrets, configuring firewall policies, and modifying monitoring settings in Log Analytics to enhance cloud security and compliance.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- security-engineer
+products:
+- azure
+- azure-firewall
+- azure-key-vault
+- azure-kubernetes-service
+- azure-log-analytics
+- azure-virtual-machines
+- azure-virtual-network
+- defender-for-cloud
+subjects:
+- cloud-security
+modules:
+- learn.wwl.microsoft-defender-cloud-threat-protection
+- learn.azure-security.configure-and-manage-azure-key-vault
+- introduction-azure-firewall
+- learn.wwl.create-configure-log-analytics-workspace
+trophy:
+  uid: learn.wwl.perform-basic-azure-management-tasks.trophy

@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.use-ai-everyday-tasks
+metadata:
+  title: Use AI for everyday tasks
+  description: "In this module, you dive into the fascinating world of generative AI and discover how it can simplify your daily tasks. You learn the essentials of crafting effective prompts, explore various AI tools, and understand how to analyze and build on AI-generated results. By the end, you'll be equipped with the knowledge to use AI responsibly and ethically, making this an exciting journey for any AI enthusiast!"
+  ms.date: 03/17/2025
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: module-intro-to-product
+  ms.collection: wwl-ai-copilot
+  ms.custom:
+  - N/A
+  ms.service: microsoft-copilot
+  ai-usage: ai-generated
+title: Use AI for everyday tasks
+summary: Dive into the world of generative AI and discover how it can simplify your daily tasks.&nbsp;Whether you're looking to simplify routine tasks or explore new ways to innovate, AI can help you achieve more.
+abstract: |
+  By the end of this course, you'll be able to:
+
+  -   Understand generative AI.
+
+  -   Identify ways to use AI at home and at work.
+
+  -   Write effective prompts and find helpful resources.
+prerequisites: None
+iconUrl: /training/achievements/explore-microsoft-copilot-business-users.svg
+hidden: true
+levels:
+- beginner
+roles:
+- business-user
+- k-12-educator
+- student
+products:
+- ms-copilot
+subjects:
+- artificial-intelligence
+- machine-learning
+units:
+- learn.wwl.use-ai-everyday-tasks.introduction
+- learn.wwl.use-ai-everyday-tasks.what-is-ai
+- learn.wwl.use-ai-everyday-tasks.explore-prompting
+- learn.wwl.use-ai-everyday-tasks.discover-ai-personal-life
+- learn.wwl.use-ai-everyday-tasks.discover-ai-work
+- learn.wwl.use-ai-everyday-tasks.exercise-personalize-refine-prompts
+- learn.wwl.use-ai-everyday-tasks.knowledge-check
+- learn.wwl.use-ai-everyday-tasks.summary
+badge:
+  uid: learn.wwl.explore-microsoft-copilot-business-users.badge

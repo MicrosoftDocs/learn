@@ -106,8 +106,8 @@ For Azure SQL Database, there are a few nuances. You can have logins that exist 
 
 | Database Role | Definition |
 |------------|-------------|
-|**dbmanager** | Allows members to create logins for the database server. This role is the equivalent of the `dbcreator` fixed server role in an on-premises Microsoft SQL Server. |
-|**loginmanager** | Allows members to create and delete databases for the database server. This role is the equivalent of the `securityadmin` fixed server role in an on-premises Microsoft SQL Server. |
+|**loginmanager** | Allows members to create logins for the database server. This role is the equivalent of the `dbcreator` fixed server role in an on-premises Microsoft SQL Server. |
+|**dbmanager** | Allows members to create and delete databases for the database server. This role is the equivalent of the `securityadmin` fixed server role in an on-premises Microsoft SQL Server. |
 
 ## Fixed server-level roles
 

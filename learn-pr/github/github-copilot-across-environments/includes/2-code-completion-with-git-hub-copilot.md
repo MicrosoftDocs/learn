@@ -2,18 +2,19 @@ GitHub Copilot code completion features live directly within your IDE, where you
 
 In this unit, we cover:
 
-- GitHub Copilot supported languages 
+- GitHub Copilot supported languages
 - Auto suggestions
 - Multiple suggestions pane
 - Support for different coding styles in suggestions
 - How GitHub Copilot incorporates coding comments for suggestions
 
-
 ## GitHub Copilot supported languages
+
 GitHub Copilot provides robust support for a wide range of programming languages and frameworks, with strong capabilities in:
 
 - Python
 - JavaScript
+- Java
 - TypeScript
 - Ruby
 - Go
@@ -22,21 +23,22 @@ GitHub Copilot provides robust support for a wide range of programming languages
 
 While these languages receive exceptional support, GitHub Copilot can assist with many other languages and frameworks as well.
 
-
 ## Auto suggestions
+
 Copilot offers code suggestions as you type: sometimes completing the current line, sometimes suggesting a whole new block of code. You can accept all, part, or ignore the suggestion. This ability to provide real-time, context-aware suggestions saves valuable development time by reducing the need to search for syntax, troubleshoot logic, or repeatedly write common patterns.
 
 :::image type="content" source="../media/auto-completion-ghost-text.png" alt-text="Screenshot of auto completion ghost text.":::
 
-
 ## Multiple suggestions pane
+
 When you're working on a code block and GitHub Copilot offers a suggestion, you see a grayed-out code snippet. To explore more options, hover over the suggestion to reveal the GitHub Copilot control panel.
 
 :::image type="content" source="../media/multiple-suggestion-auto-completion-ghost-text.png" alt-text="Screenshot of multiple suggestion auto completion ghost text.":::
 
 Click the forward or backward arrow buttons in the control panel to see the next or previous suggestions. You can also use keyboard shortcuts:
-  - macOS: Option (⌥) or Alt+] (next), Option (⌥) or Alt+[ (previous) 
-  - Windows or Linux: Alt+] (next), Alt+[ (previous)
+
+- macOS: Option (⌥) or Alt+] (next), Option (⌥) or Alt+[ (previous) 
+- Windows or Linux: Alt+] (next), Alt+[ (previous)
 
 :::image type="content" source="../media/suggestions-pane.gif" alt-text="Screenrecord of suggestions pane.":::
 
@@ -48,28 +50,31 @@ While GitHub Copilot is superb at suggesting code for you, it also demonstrates 
 - **Comment Style**: It can mimic your comment style, whether you prefer inline comments, block comments, or doc strings.
 - **Design Patterns**: When your project consistently uses certain design patterns, Copilot suggests code that aligns with these patterns.
 
-
 ## Using coding comments for suggestions
+
 A key aspect of this capability is how it incorporates coding comments to enhance its suggestions. This section explores the various ways GitHub Copilot utilizes comments to improve its code completion and generation capabilities.
 
 ### Understanding comment context
+
 When integrated into your existing codebase, GitHub Copilot uses various aspects of your code to provide more relevant suggestions, including code comments. Developers often use comments to clarify code intent and enhance collaboration, and Copilot, as your AI coding assistant, makes use of these comments in much the same way. By understanding the intent behind the comments, Copilot can provide more accurate and context-aware code suggestions through two key processes: 
 
 - **Natural Language Processing**: Copilot uses advanced natural language processing (NLP) techniques to interpret the meaning and intent behind comments in the code.
 - **Contextual Analysis**: It analyzes comments in relation to the surrounding code, understanding their relevance and purpose within the broader context of the file or project.
 
-
 ## Types of comments utilized
+
 Copilot can work with various types of comments to inform its suggestions:
+
 - **Inline comments**: Short explanations next to specific lines of code.
 - **Block comments**: Longer explanations that might describe a function or class.
 - **Docstrings**: Formal documentation strings in languages like Python.
 - **TODO comments**: Notes about future implementations or improvements.
 - **API Documentation**: Comments that describe the usage and parameters of functions or methods.
 
-
 ## Comment-driven code generation
+
 Copilot uses comments in several ways to generate and suggest code:
+
 - **Function implementation**: When a function is described in comments, Copilot can suggest an entire implementation based on that description.
 
    :::image type="content" source="../media/multiple-line-code-completion-ghost-text.png" alt-text="Screenshot of multiple line code completion ghost text.":::

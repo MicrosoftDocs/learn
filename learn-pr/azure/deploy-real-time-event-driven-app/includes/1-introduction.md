@@ -15,5 +15,5 @@ By the end of this module, you're able to:
 As a Java developer, you're already familiar with NoSQL databases and how to connect them with functions. To complete the exercises in this module, use a personal Azure account. Make sure that you have the following resources:
   
 - An Azure subscription
-- Local installations of Java JDK (17 or later), Maven (3.0 or later), and the Azure CLI (2.12 or later)
+- Local installations of Java JDK (17 or later), Maven (3.0 or later), and the Azure CLI (2.70 or later)
 - Azure Functions Core Tools (4x)

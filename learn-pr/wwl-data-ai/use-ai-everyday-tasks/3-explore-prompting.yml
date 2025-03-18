@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-everyday-tasks.explore-prompting
+title: Explore prompting
+metadata:
+  title: Explore prompting
+  description: "Explore prompting"
+  ms.date: 03/17/2025
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-explore-prompting.md)]
