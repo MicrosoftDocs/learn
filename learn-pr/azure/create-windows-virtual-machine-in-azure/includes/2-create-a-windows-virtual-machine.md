@@ -72,7 +72,7 @@ By default, two virtual hard disks (VHDs) will be created for your Windows VM:
 1. **A Temporary disk**: This provides temporary storage for the OS or any apps. It's configured as the D: drive by default and is sized based on the VM size, making it an ideal location for the Windows paging file.
 
 > [!WARNING]
-> The temporary disk is not persistent. You should only write data to this disk that you're willing to lose at any time.
+> The temporary disk isn't persistent. You should only write data to this disk that you're willing to lose at any time.
 
 #### What about data?
 

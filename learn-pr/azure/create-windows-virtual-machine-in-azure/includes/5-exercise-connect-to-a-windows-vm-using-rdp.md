@@ -17,7 +17,7 @@ To connect to an Azure VM with an RDP client, you'll need:
 - Public IP address of the VM (or private if the VM is configured to connect to your network)
 - Port number
 
-You can enter this information into the RDP client, or download a pre-configured **RDP** file.
+You can enter this information into the RDP client, or download a preconfigured **RDP** file.
 
 > [!NOTE]
 > An **RDP** file is a text file that contains a set of name/value pairs that define the connection parameters for an RDP client to connect to a remote computer using the Remote Desktop Protocol.
@@ -82,7 +82,7 @@ We have two approaches we can use to install software. First, this VM is connect
 
 With access to your local drive, you can copy the files for the custom software onto the VM and install the software. We won't actually do that because it's just a simulated scenario, but you can imagine how it would work.
 
-The more interesting thing to observe in the list of drives is what is *missing*. Notice that our **Data** drive is not present. Azure added a VHD, but didn't initialize it.
+The more interesting thing to observe in the list of drives is what is *missing*. Notice that our **Data** drive isn't present. Azure added a VHD, but didn't initialize it.
 
 ## Initialize data disks
 
