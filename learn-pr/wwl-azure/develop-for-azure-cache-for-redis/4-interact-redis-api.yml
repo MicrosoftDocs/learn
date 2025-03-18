@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Interact with Azure Cache for Redis by using .NET
   description: "Interact with Azure Cache for Redis by using .NET"
-  ms.date: 02/24/2025
+  ms.date: 03/18/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit
