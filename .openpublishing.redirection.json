@@ -46105,6 +46105,106 @@
       "source_path": "learn-pr/wwl-data-ai/create-manage-scalable-power-bi-dataflows/7-summary.md",
       "redirect_url": "/training/paths/prepare-data-power-bi/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/manage-analytics-development-lifecycle/index.md",
+      "redirect_url": "/training/paths/manage-microsoft-fabric-environment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-power-bi-application-lifecycle-management-strategy/index.md",
+      "redirect_url": "/training/modules/create-manage-power-bi-assets/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-power-bi-application-lifecycle-management-strategy/1-introduction.md",
+      "redirect_url": "/training/modules/create-manage-power-bi-assets/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-power-bi-application-lifecycle-management-strategy/2-define.md",
+      "redirect_url": "/training/modules/create-manage-power-bi-assets/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-power-bi-application-lifecycle-management-strategy/3-recommend-source-control-strategy.md",
+      "redirect_url": "/training/modules/create-manage-power-bi-assets/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-power-bi-application-lifecycle-management-strategy/4-design-deployment-strategy.md",
+      "redirect_url": "/training/modules/create-manage-power-bi-assets/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-power-bi-application-lifecycle-management-strategy/5-knowledge-check.md",
+      "redirect_url": "/training/modules/create-manage-power-bi-assets/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/design-power-bi-application-lifecycle-management-strategy/6-summary.md",
+      "redirect_url": "/training/modules/create-manage-power-bi-assets/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/implement-interfaces/index.md",
+      "redirect_url": "/training/paths/implement-interfaces-new/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduce-interfaces/index.md",
+      "redirect_url": "/training/modules/discover-interfaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduce-interfaces/01-introduction.md",
+      "redirect_url": "/training/modules/discover-interfaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduce-interfaces/02-what-is-interface.md",
+      "redirect_url": "/training/modules/discover-interfaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduce-interfaces/03-exercise-create-interface.md",
+      "redirect_url": "/training/modules/discover-interfaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduce-interfaces/04-exercise-extend-classes-with-interface.md",
+      "redirect_url": "/training/modules/discover-interfaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduce-interfaces/05-why-use-interfaces.md",
+      "redirect_url": "/training/modules/discover-interfaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduce-interfaces/06-exercise-use-system-defined-interfaces.md",
+      "redirect_url": "/training/modules/discover-interfaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduce-interfaces/07-exercise-challenge-create-consumables.md",
+      "redirect_url": "/training/modules/discover-interfaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduce-interfaces/08-review-solution-create-consumables.md",
+      "redirect_url": "/training/modules/discover-interfaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduce-interfaces/09-knowledge-check.md",
+      "redirect_url": "/training/modules/discover-interfaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/introduce-interfaces/10-summary.md",
+      "redirect_url": "/training/modules/discover-interfaces/",
+      "redirect_document_id": false
     }
  ]
 }
