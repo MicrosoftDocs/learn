@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Test your knowledge.
-  ms.date: 10/24/2024
+  ms.date: 03/13/2025
   author: rmcmurray
   ms.author: robmcm
   ms.topic: unit
@@ -13,9 +13,9 @@ quiz:
   questions:
   - content: "Which tool can you use to deploy AI models and deploy them for public consumption in software applications?"
     choices:
-    - content: "Azure OpenAI Studio"
+    - content: "Azure OpenAI Foundry"
       isCorrect: true
-      explanation: "Correct. You can use Azure OpenAI Studio to deploy AI models and deploy them for public consumption in software applications."
+      explanation: "Correct. You can use Azure OpenAI Foundry to deploy AI models and deploy them for public consumption in software applications."
     - content: "Azure subscriptions"
       isCorrect: false
       explanation: "Incorrect. You can't use Azure subscriptions to  deploy AI models and deploy them for public consumption in software applications."
@@ -52,7 +52,7 @@ quiz:
     - content: "Azure OpenAI Deployment"
       isCorrect: true
       explanation: "Correct. Azure OpenAI Deployment is the unit of management for a specific OpenAI model."
-    - content: "Azure OpenAI Studio"
+    - content: "Azure OpenAI Foundry"
       isCorrect: false
       explanation: "Incorrect. Azure OpenAI Deployment is the unit of management for a specific OpenAI model."
   - content: "You have a workload that needs to run through Azure OpenAI. The workload isn't latency-sensitive or time-sensitive. Which type of deployment is appropriate for this scenario, cost-wise?"

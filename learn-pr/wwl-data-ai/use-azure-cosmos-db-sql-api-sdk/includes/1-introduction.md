@@ -6,9 +6,9 @@ There are various SDKs (Software Development Kits) available to connect to the A
 - JavaScript (Node.js)
 - GO
 
-For this section, you explore and get hands-on with the .NET SDK for the Azure Cosmos DB for NoSQL.
+For this section, you explore and get hands-on with the .NET, Python, and JavaScript SDKs for the Azure Cosmos DB for NoSQL.
 
 After completing this module, you'll be able to:
 
-- Integrate the Microsoft.Azure.Cosmos SDK library from NuGet
-- Connect to an Azure Cosmos DB for NoSQL account using the SDK and .NET 
+- Integrate the Microsoft .NET, Python, and JavaScript Azure Cosmos DB SDK libraries using package managers
+- Connect to an Azure Cosmos DB for NoSQL account using an SDK and .NET, Python, or JavaScript

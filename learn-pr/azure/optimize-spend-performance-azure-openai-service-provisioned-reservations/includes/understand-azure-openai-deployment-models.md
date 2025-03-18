@@ -17,21 +17,18 @@ Provisioned deployments allow you to specify the amount of throughput required i
 
 As part of your solution design, you need to make two key decisions:
 
-- **Data residency needs: global versus regional resources**
+- **Data residency needs: Data Zone, Global, or Regional**
 - **Call volume: Standard versus Provisioned**
 
-For Standard deployment types, you can have two configurations within your resource: global or regional.
-Global deployments use Azure's global infrastructure, and dynamically route customer traffic to the data center with the best availability for the customer's inference requests. This means customers will get the highest initial throughput limits and best model availability while still providing an uptime service-level agreement (SLA) and low latency. However, you must choose regional deployment if you have specific data residency requirements. For high-volume workloads above the specified usage tiers, you might experience increased latency variation. Provisioned throughput is recommended for customers who require a lower latency variance at large workload usage.
+**Global Standard**: Global deployments are available in the same Azure OpenAI resources as non-global deployment types but allow you to leverage Azure's global infrastructure to dynamically route traffic to the data center with best availability for each request. Global standard provides the highest default quota and eliminates the need to load balance across multiple resources.
 
-The following table describes usage scenarios best suited for the various Azure OpenAI deployment types.
+**Global provisioned**: Global deployments are available in the same Azure OpenAI resources as non-global deployment types but allow you to leverage Azure's global infrastructure to dynamically route traffic to the data center with best availability for each request. Global provisioned deployments provide reserved model processing capacity for high and predictable throughput using Azure global infrastructure.
 
-| Global-Batch | Global-Standard | Global-Provisioned | Standard | Provisioned |
-| --- | --- | --- | --- | --- |
-| Offline scoring | Recommended starting place for customers. | Real-time scoring for large consistent volume. | For customers with data residency requirements. | Real-time scoring for large consistent volume. |
-| Workloads that are not latency-sensitive and can be completed in hours. | Global-Standard will have a higher default quota and a larger number of models available than Standard. | Includes the highest commitments and limits. | Optimized for low-to-medium volume. | Includes the highest commitments and limits. |
-| For use cases that do not have data processing residency requirements. | *Not applicable* | For use cases that do not have data residency requirements. | *Not applicable* | *Not applicable* |
+**Global batch**: Global batch is designed to handle large-scale and high-volume processing tasks efficiently. Process asynchronous groups of requests with separate quota, with 24-hour target turnaround.  With batch processing, rather than send one request at a time you send a large number of requests in a single file. Global batch requests have a separate enqueued token quota avoiding any disruption of your online workloads.
 
-It is important to note that the Global-Batch deployment type is an asynchronous API that does offline processing by using files. This deployment type returns completion within 24 hours for a 50 percent discount on Global Standard Pricing. It also provides access to all new models with larger quota allocations. For Global-Standard and Global-Batch, your prompts might be routed to any location worldwide. For Standard deployment type, you can set the location for processing.
+**Data zone standard**: Data zone standard deployments are available in the same Azure OpenAI resource as all other Azure OpenAI deployment types but allow you to leverage Azure global infrastructure to dynamically route traffic to the data center within the Microsoft defined data zone with the best availability for each request. Data zone standard provides higher default quotas than our Azure geography-based deployment types.
+
+**Data zone provisioned**: Data zone provisioned deployments are available in the same Azure OpenAI resource as all other Azure OpenAI deployment types but allow you to leverage Azure global infrastructure to dynamically route traffic to the data center within the Microsoft specified data zone with the best availability for each request. Data zone provisioned deployments provide reserved model processing capacity for high and predictable throughput using Azure infrastructure within the Microsoft specified data zone.
 
 ## What does the provisioned deployment type provide?
 
@@ -53,7 +50,7 @@ Typically, you would choose PTU when an application:
 
 - Has real-time/latency sensitive requirements.
 
-When creating a provisioned deployment in Azure OpenAI Studio, the deployment type on the **Create Deployment** dialog box is **Provisioned-Managed**. When creating a provisioned deployment in Azure OpenAI via command-line interface (CLI) or API, you need to set the SKU name to **Provisioned-Managed**. The SKU capacity specifies the number of PTUs assigned to the deployment.
+When creating a provisioned deployment in Azure OpenAI Foundry, the deployment type on the **Create Deployment** dialog box is **Provisioned-Managed**. When creating a provisioned deployment in Azure OpenAI via command-line interface (CLI) or API, you need to set the SKU name to **Provisioned-Managed**. The SKU capacity specifies the number of PTUs assigned to the deployment.
 
 ## Summary
 

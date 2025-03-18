@@ -12,6 +12,7 @@ metadata:
   ms.topic: unit
   ms.custom:
     - devx-track-azurecli
+  zone_pivot_groups: platform
 durationInMinutes: 10
 content: |
   [!include[](includes/3-install-azure-cli.md)]

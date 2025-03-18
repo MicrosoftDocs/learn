@@ -2,9 +2,9 @@ You needed to build a shopping list web app that is secure, and offers solid per
 
 Azure Static Web Apps provides these features as a great fit for this scenario:
 
-- Performance and scale: Your web assets are globally distributed, putting them closer to your users to minimize latency. Your business logic runs on Azure Functions that scales automatically to meet demand.
-- Productivity: You get an automated build pipeline with CI/CD.
-- Security: Your web app is secured with an SSL certificate.
+- **Performance and scale:** Your web assets are globally distributed, putting them closer to your users to minimize latency. Your business logic runs on Azure Functions that scales automatically to meet demand.
+- **Productivity:** You get an automated build pipeline with CI/CD.
+- **Security:** Your web app is secured with an SSL certificate.
 
 *Without* Azure Static Web Apps, you would need to:
 
@@ -26,6 +26,6 @@ Here are several resources where you can learn more about Azure Static Web Apps,
 - Learn how to [Publish an API to Azure Static Web Apps](/training/modules/publish-static-web-app-api-preview-url/)
 - Learn how to [Authenticate users with Azure Static Web Apps](/training/modules/publish-static-web-app-authentication/)
 - [Azure Static Web Apps](/azure/static-web-apps)
-- Learn how to [Deploy to Azure Using Azure Functions](/azure/developer/javascript/how-to/with-web-app/azure-function-resource-group-management/deploy-azure-function-with-visual-studio-code)
+- Learn how to [Deploy to Azure Using Azure Functions](/azure/azure-functions/functions-deployment-technologies)
 - [Overview of Blazor](/aspnet/core/blazor/)
 - Use [Angular](https://code.visualstudio.com/docs/nodejs/angular-tutorial), [React](https://code.visualstudio.com/docs/nodejs/reactjs-tutorial), and [Vue](https://code.visualstudio.com/docs/nodejs/vuejs-tutorial) in Visual Studio Code
