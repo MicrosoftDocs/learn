@@ -1,4 +1,3 @@
-
 ## Manage analytics rules
 
 To adjust the noise and filter the more important threats detected, you should manage the analytics rules on an ongoing basis. This helps ensure that your rules remain useful and efficient in detecting potential security threats.
