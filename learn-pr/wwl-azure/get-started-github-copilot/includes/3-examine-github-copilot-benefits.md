@@ -64,6 +64,7 @@ GitHub Copilot is implemented using two extensions for Visual Studio Code: GitHu
 
 - The GitHub Copilot extension provides code completions and code generation from comments. Powerful tools that help developers write code faster and smarter.
 - The GitHub Copilot Chat extension provides the editor with an AI-enabled chat interface that’s focused on developer scenarios. It recognizes the entire project workspace, the code revisions being entered, error messages, and other aspects of the compiler/runtime environment. Developers can use Copilot Chat to get an in-depth analysis of their code, investigate new features, enhance or refactor existing features, generate unit tests, and even receive proposed fixes for bugs.
+- GitHub Copilot for Azure extension integrates seamlessly with Azure services, providing AI-powered coding assistance for developers working on cloud-based projects. This integration helps developers understand Azure features, deploy resources, retrieve information about resources, and diagnose and troubleshoot issues.
 
 ## Limitations of GitHub Copilot Chat
 

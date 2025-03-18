@@ -23,6 +23,7 @@ The following Python code sample uses a **ChatCompletionsClient** object to chat
 ```python
 from azure.ai.projects import AIProjectClient
 from azure.identity import DefaultAzureCredential
+from azure.ai.inference.models import SystemMessage, UserMessage
 
 try:
         
@@ -42,8 +43,8 @@ try:
     response = chat.complete(
         model="phi-4-model",
         messages=[
-            {"role": "system", "content": "You are a helpful AI assistant that answers questions."},
-            {"role": "user", "content": user_prompt},
+                   SystemMessage("You are a helpful AI assistant that answers questions."),
+                   UserMessage(user_prompt)
         ],
     )
     print(response.choices[0].message.content)
@@ -131,6 +132,8 @@ The following Python code sample uses the Azure AI Foundry and Azure OpenAI SDKs
 ```python
 from azure.ai.projects import AIProjectClient
 from azure.identity import DefaultAzureCredential
+import openai
+
 
 try:
     # Initialize the project client

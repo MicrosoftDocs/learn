@@ -8,14 +8,11 @@ metadata:
   description: Complete a hands-on exercise to learn how to use your own data with Azure OpenAI services.
   author: ivorb
   ms.author: berryivor
-  ms.date: 11/15/2024
+  ms.date: 03/18/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 20
-azureSandbox: false
-labId: 152388
-labModal: true
+durationInMinutes: 25
 content: |
   [!include[](includes/5-exercise.md)]
 

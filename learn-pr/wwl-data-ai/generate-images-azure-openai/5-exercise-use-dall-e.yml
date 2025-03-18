@@ -8,14 +8,11 @@ metadata:
   description: Hands-on exercise to use DALL-E in Azure OpenAI service
   author: ivorb
   ms.author: berryivor
-  ms.date: 11/15/2024
+  ms.date: 03/18/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 25
-azureSandbox: false
-labId: 152389
-labModal: true
+durationInMinutes: 20
 content: |
   [!include[](includes/5-exercise-use-dall-e.md)]
 
