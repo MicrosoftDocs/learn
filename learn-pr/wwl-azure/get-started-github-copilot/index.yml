@@ -27,9 +27,9 @@ abstract: |
 
   -   Configure the GitHub Copilot extensions for Visual Studio Code.
 prerequisites: |
-  -   An active subscription for GitHub Copilot in your personal GitHub account (or associated with a subscription managed by an organization or enterprise) is required.
+  -   An active subscription for GitHub Copilot is required for either your personal GitHub account or a GitHub account managed by an organization or enterprise. You can set up a GitHub Copilot Free account or sign up for a subscription to GitHub Copilot Pro trial with a one-time 30-day trial.  For learning, the Copilot Free option with usage limits should be sufficient.
 
-  -   Awareness of the GitHub Copilot free trial conditions. If you choose the free trial offer for GitHub Copilot, a form of payment is requested at sign-up. Charges aren't applied until the trial is over, unless you cancel before the conclusion of the 30-day period.
+  -   Awareness of the GitHub Copilot free trial conditions: if you choose the free trial offer for GitHub Copilot, a form of payment is requested at sign-up. Charges aren't applied until the trial is over, unless you cancel before the conclusion of the 30-day period.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
