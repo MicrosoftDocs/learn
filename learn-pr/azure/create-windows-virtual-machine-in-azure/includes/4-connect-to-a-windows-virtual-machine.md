@@ -1,6 +1,6 @@
-Now that you have a Windows VM in Azure, the next thing you’ll do is put your applications and data on those VMs to process our traffic videos. 
+Now that you have a Windows VM in Azure, the next thing you'll do is put your applications and data on those VMs to process our traffic videos. 
 
-However, unless you’ve set up a site-to-site VPN to Azure, your Azure VMs won’t be accessible from your local network. If you’re just getting started with Azure, it’s unlikely that you have a working site-to-site VPN, so how can you transfer files to Azure VMs? One easy way is to use Azure’s Remote Desktop Connections feature to share your local drives with your new Azure VMs.
+However, unless you've set up a site-to-site VPN to Azure, your Azure VMs won't be accessible from your local network. If you're just getting started with Azure, it's unlikely that you have a working site-to-site VPN. So how can you transfer files to Azure VMs? One easy way is to use Azure's Remote Desktop Connections feature to share your local drives with your new Azure VMs.
 
 Now that we have a new Windows virtual machine, we need to install our custom software onto it. There are several options to choose from:
 
@@ -35,7 +35,7 @@ One thing to be aware of with public IP addresses in Azure is they're often dyna
 
 ### How do you connect to a VM in Azure using RDP?
 
-Connecting to a VM in Azure using RDP is a simple process. In the Azure portal, you'll go to your VM's properties, and at the top, select **Connect**. This shows you the IP addresses assigned to the VM and give you the option to download a **preconfigured.rdp** file that Windows then opens in the RDP client. You can choose to connect over the public IP address of the VM in the RDP file. Instead, if you're connecting over VPN or ExpressRoute, you can select the internal IP address. You can also select the port number for the connection.
+Connecting to a VM in Azure using RDP is a simple process. In the Azure portal, you'll go to your VM's properties, and at the top, select **Connect**. This shows you the IP addresses assigned to the VM and gives you the option to download a **preconfigured.rdp** file that Windows then opens in the RDP client. You can choose to connect over the public IP address of the VM in the RDP file. Instead, if you're connecting over VPN or ExpressRoute, you can select the internal IP address. You can also select the port number for the connection.
 
 If you're using a static public IP address for the VM, you can save the **.rdp** file to your desktop. If you're using dynamic IP addressing, the **.rdp** file only remains valid while the VM is running. If you stop and restart the VM, you must download another **.rdp** file.
 
@@ -44,8 +44,8 @@ If you're using a static public IP address for the VM, you can save the **.rdp**
 
 When you connect, you'll typically receive two warnings. These are:
 
-- **Publisher warning**: caused by the **.rdp** file not being publicly signed
-- **Certificate warning**: caused by the machine certificate not being trusted
+- **Publisher warning**: caused by the **.rdp** file not being publicly signed.
+- **Certificate warning**: caused by the machine certificate not being trusted.
 
 In test environments, you can ignore these warnings. In production environments, the **.rdp** file can be signed using **RDPSIGN.EXE** and the machine certificate placed in the client's **Trusted Root Certification Authorities** store.
 
