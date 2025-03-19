@@ -25,12 +25,6 @@ After successfully finishing this module, you'll be capable of using interactive
 
 ## Prerequisites
 
-Skills:
-
 - Basic understanding of Python and text editors.
 - Basic comprehension of Git and GitHub Fundamentals and running basic `git` commands like `git add` and `git push`.
-
-Accounts:
-
-- A [GitHub account](https://github.com/login)
-- [Access to GitHub Copilot](https://github.com/github-copilot/signup)
+- A GitHub Account with an active subscription for GitHub Copilot is required for either your personal [GitHub account](https://github.com/login) or a GitHub account managed by an organization or enterprise. For learning, the Copilot Free option with usage limits should be sufficient.
