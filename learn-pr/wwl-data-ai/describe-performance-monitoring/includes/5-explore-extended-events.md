@@ -15,7 +15,7 @@ Below is an example of an extended event session created on Azure SQL Database:
 
 :::image type="content" source="../media/extended-events.png" alt-text="Extended Event running on a SQL Database":::
 
-In the image above, *xe_deadlocks* is the name an extended event session running on *AdventureWorks* database (on the left side of the image). The *event_counter* target node, which is under your event session node,  counts the number of occurrences of each event in the event session. To view the target data in the SSMS Object Explorer, you can right-click the target node, and then select *View Target Data*. SSMS displays the data as we see on the left side of the image, and the count results for each event.
+In the image above, *xe_deadlocks* is the name an extended event session running on *AdventureWorks* database (on the left side of the image). The *event_counter* target node, which is under your event session node,  counts the number of occurrences of each event in the event session. To view the target data in the SSMS Object Explorer, you can select the target node, and then select *View Target Data*. SSMS displays the data as we see on the left side of the image, and the count results for each event.
 
 For more information about extended events on Azure SQL Database, see [Extended events in Azure SQL Database](/azure/azure-sql/database/xevent-db-diff-from-svr).
 
@@ -48,7 +48,7 @@ ORDER BY obj.object_type,
 
 ## Create extended events session
 
-You will see below the basic process of creating an extended events session using the *New Session* dialog from SQL Server Management Studio. You can get to this screen by expanding the *Management* node in SSMS, expanding the Extended Events node, right-clicking on Sessions, and selecting *New Session*.
+You will see below the basic process of creating an extended events session using the *New Session* dialog from SQL Server Management Studio. You can get to this screen by expanding the *Management* node in SSMS, expanding the Extended Events node, select **Sessions**, and then **New Session**.
 
 :::image type="content" source="../media/module-66-automation-final-11.png" alt-text="Creating an Extended Events Session":::
 
@@ -65,7 +65,7 @@ You have a couple of check box options for when to start this session. You can c
 
 :::image type="content" source="../media/module-66-automation-final-12.png" alt-text="Event selection in SQL Server Management Studio":::
 
-The image above shows the screen where you add the events to your session. An event represents a point of interest within the database engine code — these can represent purely internal system operations, or they can be associated with user actions like query execution. In the above example, you can see that the events `sp_statement_completed`, `sql_batch_completed`, and `sql_statement_completed` have been added to this event session. By default, this session would capture all instances of these events taking place on your instance. You can limit collection by clicking the configure button.
+The image above shows the screen where you add the events to your session. An event represents a point of interest within the database engine code — these can represent purely internal system operations, or they can be associated with user actions like query execution. In the above example, you can see that the events `sp_statement_completed`, `sql_batch_completed`, and `sql_statement_completed` have been added to this event session. By default, this session would capture all instances of these events taking place on your instance. You can limit collection by selecting the configure option.
 
 :::image type="content" source="../media/module-66-automation-final-13.png" alt-text="Global event selection":::
 

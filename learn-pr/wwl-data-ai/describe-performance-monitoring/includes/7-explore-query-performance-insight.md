@@ -6,11 +6,11 @@ Azure SQL Database offers a tool called Query Performance Insight, that allows t
 
 When you launch Query Performance Insight, you’ll discover three buttons to allow you to filter for long running queries, top resource consuming queries, or a custom filter. The default value is Resource Consuming Queries. This tab will show you the top five queries sorted by the particular resource that you select on the left. In this case, it was sorted by CPU. You also have other options of sorting by Data IO and Log IO metrics.
 
-You can drill into individual queries by clicking on the row within the lower grid. Each row will be identified with a unique color that correlates to the color within the bar graph above it.
+You can drill into individual queries by selecting the row within the lower grid. Each row will be identified with a unique color that correlates to the color within the bar graph above it.
 
 [![Screenshot of Query Performance Insights.](../media/module-44-optimize-resources-final-16.png)](../media/module-44-optimize-resources-final-16.png#lightbox)
 
-Switching to Long Running Queries, you can see a similar layout as before. In this case, the metrics are limited to the top five queries sorted by duration from the previous 24 hours and is a sum aggregation. In the grid below the graph, you can examine specific queries by clicking on the row.
+Switching to Long Running Queries, you can see a similar layout as before. In this case, the metrics are limited to the top five queries sorted by duration from the previous 24 hours and is a sum aggregation. In the grid below the graph, you can examine specific queries by selecting the row.
 
 [![Screenshot of a query across multiple executions in Query Performance Insight.](../media/module-44-optimize-resources-final-17.png)](../media/module-44-optimize-resources-final-17.png#lightbox)
 

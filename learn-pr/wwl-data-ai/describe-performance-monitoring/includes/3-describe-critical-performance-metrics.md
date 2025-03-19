@@ -24,9 +24,9 @@ The example shown below reflects a virtual machine named SQL2019 on which we are
 
 Regardless the scope of the alert, the creation process is the same.
 
-From the alerts screen, click on New Alert Rule. If an alert is created from within the scope of a resource, the resource values should be populated for you. You can see that the resource is the SQL2019 virtual machine, the subscription is Dev-Test-Lab and the resource group in which it resides is SQLPlayground.
+From the alerts screen, select **New Alert Rule**. If an alert is created from within the scope of a resource, the resource values should be populated for you. You can see that the resource is the SQL2019 virtual machine, the subscription is Dev-Test-Lab and the resource group in which it resides is SQLPlayground.
 
-Under the Condition section, click **Add**:
+Under the Condition section, select **Add**:
 
 :::image type="content" source="../media/module-44-optimize-resources-final-06.png" alt-text="A screenshot of the create rule page on Azure portal":::
 
@@ -45,15 +45,15 @@ Both types of alerts offer Booleans operators such as the 'greater than' or 'les
 After creating the alert, in order to notify administrators or launch an automation process, an action group needs to be configured.
 
 >[!NOTE]
->Defining an action group is optional, and if one is not configured the alert will just log the notification to storage with no further action is taken. You can create a new action group from the metrics screen, by clicking **Add** next to Action Groups. You will then see this dialog:
+>Defining an action group is optional, and if one is not configured the alert will just log the notification to storage with no further action is taken. You can create a new action group from the metrics screen, by selecting **Add** next to Action Groups. You will then see this dialog:
 
 :::image type="content" source="../media/module-44-optimize-resources-final-09.png" alt-text="A screenshot of where the create action group option is located when creating a new alert":::
 
-Once you click Create Action group, you will see the screen shown below. You will name the action group and define an alert and the response. In this example, the administrator is going to be emailed in the event of the alert’s condition being triggered.
+Once you select **Create Action Group**, you will see the screen shown below. You will name the action group and define an alert and the response. In this example, the administrator is going to be emailed in the event of the alert’s condition being triggered.
 
 :::image type="content" source="../media/module-44-optimize-resources-final-10.png" alt-text="A screenshot of add action group page when creating a new alert":::
 
- You can configure the email or SMS details as can be seen below. You can reach this screen either by clicking **Edit Details** under **Configure**, or by adding a new action, which will also bring up the configuration screen.
+ You can configure the email or SMS details as can be seen below. You can reach this screen either by selecting **Edit Details** under **Configure**, or by adding a new action, which will also bring up the configuration screen.
 
 :::image type="content" source="../media/module-44-optimize-resources-final-11.png" alt-text="A screenshot of email/SMS message/push/voice page used for notification preferences when creating a new alert":::
 
@@ -70,7 +70,7 @@ With an action group, there are several ways in which you can respond to the ale
 
 There are two categories to these actions—notification, which means notifying an administrator or group of administrators of an event, and automation, which is taking a defined action to respond to a performance condition.
 
-## Review older performance data
+## Review past performance data
 
 One of the benefits of utilizing the Azure Monitor is the ability to easily and quickly review past metrics that were gathered. If you examine a resource, you’ll note a datetime picker in the upper right-hand corner. Azure Monitor Metrics will be retained for 93 days, after which they are purged, however you do have the option to archive them to Azure Storage.
 

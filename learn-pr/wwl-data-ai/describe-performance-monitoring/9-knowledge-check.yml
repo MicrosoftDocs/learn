@@ -6,8 +6,8 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/26/2022
-  author: wwlpublish
+  ms.date: 03/19/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
@@ -18,17 +18,17 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which Intelligent Insights options provide SQL Insights?"
+  - content: "Which data store options can be used to analyze SQL monitoring data collected by Database Watcher?"
     choices:
-    - content: "Log Analytics"
+    - content: "Azure Data Explorer"
       isCorrect: true
-      explanation: "Correct. Storing data in Azure Log Analytics allows you to gain further intelligence on the events in your database."
-    - content: "Azure Storage"
+      explanation: "Correct. Azure Data Explorer is a fully managed, highly scalable service designed for fast ingestion and analytics of time-series monitoring data."
+    - content: "Azure Blob Storage"
       isCorrect: false
-      explanation: "Incorrect. Azure storage stores the files as extended events, and they have to be analyzed using Azure SQL."
-    - content: "Event Hubs"
+      explanation: "Incorrect. Azure Blob Storage is used for storing large amounts of unstructured data, but it does not provide analytics capabilities."
+    - content: "Azure Event Grid"
       isCorrect: false
-      explanation: "Incorrect. Event Hubs allows you to forward events to another consumer, but does not perform analysis."
+      explanation: "Incorrect. Azure Event Grid is used for event routing, but it does not perform data analysis."
   - content: "Which Performance Monitor counter reflects how long SQL Server expects to retain data in memory?"
     choices:
     - content: "Page Life Expectancy"
@@ -48,9 +48,9 @@ quiz:
     - content: "Azure Monitor"
       isCorrect: false
       explanation: "Incorrect. Azure Monitor does not include data from within the VM resource."
-    - content: "SQL Insights"
+    - content: "Database watcher"
       isCorrect: false
-      explanation: "Incorrect. Intelligent Insights provide performance data, but does not include SQL Server information."
+      explanation: "Incorrect. Database watcher provide performance data, but does not include SQL Server information."
   - content: "Which extended event target counts how many times each specified event occurs?"
     choices:
     - content: "The *etw_classic_sync_target* target"

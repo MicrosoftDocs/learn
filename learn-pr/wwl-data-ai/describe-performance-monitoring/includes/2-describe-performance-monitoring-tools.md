@@ -14,7 +14,7 @@ If you create a virtual machine with one of the pre-configured SQL Server images
 
 ![Screenshot of SQL VM resource provider.](../media/module-44-optimize-resources-final-02.png#lightbox)
 
-You can launch this screen in the Azure portal by going to the **Settings** section of the main blade for an Azure Virtual Machine, then clicking on the **SQL Server configuration** option. To see the view from the screen above, click on **Manage SQL Virtual Machine**. 
+You can launch this screen in the Azure portal by going to the **Settings** section of the main blade for an Azure Virtual Machine, then selecting the **SQL Server configuration** option. To see the view from the screen above, select **Manage SQL Virtual Machine**. 
 
 ![Screenshot of directions to register with SQL IaaS Agent Extension.](../media/install-extension-img.png#lightbox)
 
