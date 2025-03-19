@@ -46245,6 +46245,146 @@
       "source_path": "learn-pr/wwl-azure/introduce-interfaces/10-summary.md",
       "redirect_url": "/training/modules/discover-interfaces/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-interfaces-c-sharp/index.md",
+      "redirect_url": "/training/modules/apply-interfaces-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-interfaces-c-sharp/01-introduction.md",
+      "redirect_url": "/training/modules/apply-interfaces-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-interfaces-c-sharp/02-examine-interfaces-abstract-classes.md",
+      "redirect_url": "/training/modules/apply-interfaces-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-interfaces-c-sharp/03-when-use-interfaces.md",
+      "redirect_url": "/training/modules/apply-interfaces-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-interfaces-c-sharp/04-exercise-implement-multiple-interfaces.md",
+      "redirect_url": "/training/modules/apply-interfaces-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-interfaces-c-sharp/05-exercise-use-interfaces-type.md",
+      "redirect_url": "/training/modules/apply-interfaces-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-interfaces-c-sharp/06-exercise-challenge-get-craftable-items.md",
+      "redirect_url": "/training/modules/apply-interfaces-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-interfaces-c-sharp/07-review-solution-get-craftable-items.md",
+      "redirect_url": "/training/modules/apply-interfaces-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-interfaces-c-sharp/08-knowledge-check.md",
+      "redirect_url": "/training/modules/apply-interfaces-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-interfaces-c-sharp/09-summary.md",
+      "redirect_url": "/training/modules/apply-interfaces-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-code-with-interfaces/index.md",
+      "redirect_url": "/training/modules/design-resilient-code-interfaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-code-with-interfaces/01-introduction.md",
+      "redirect_url": "/training/modules/design-resilient-code-interfaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-code-with-interfaces/02-understand-tightly-coupled-code.md",
+      "redirect_url": "/training/modules/design-resilient-code-interfaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-code-with-interfaces/03-exercise-reduce-dependencies-with-interfaces.md",
+      "redirect_url": "/training/modules/design-resilient-code-interfaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-code-with-interfaces/04-examine-interface-designs.md",
+      "redirect_url": "/training/modules/design-resilient-code-interfaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-code-with-interfaces/05-exercise-create-design-standard.md",
+      "redirect_url": "/training/modules/design-resilient-code-interfaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-code-with-interfaces/06-learn-plan-interfaces.md",
+      "redirect_url": "/training/modules/design-resilient-code-interfaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-code-with-interfaces/07-exercise-challenge-design-readable-items.md",
+      "redirect_url": "/training/modules/design-resilient-code-interfaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-code-with-interfaces/08-review-solution-design-readable-items.md",
+      "redirect_url": "/training/modules/design-resilient-code-interfaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-code-with-interfaces/09-knowledge-check.md",
+      "redirect_url": "/training/modules/design-resilient-code-interfaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-code-with-interfaces/10-summary.md",
+      "redirect_url": "/training/modules/design-resilient-code-interfaces/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/guided-project-langstons-ant/index.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/guided-project-langstons-ant/01-introduction.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/guided-project-langstons-ant/02-prepare.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/guided-project-langstons-ant/03-exercise-create-interface.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/guided-project-langstons-ant/04-exercise-use-interface-type.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/guided-project-langstons-ant/05-knowledge-check.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/guided-project-langstons-ant/06-summary.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
     }
  ]
 }
