@@ -2,7 +2,7 @@ The Semantic Kernel Agent Framework supports collaboration between multiple agen
 
 ## Create an agent group chat
 
-An `AgetnGroupChat` object allows agents to work together. You can specify the participating agents or create an empty chant and add agent participants afterwards.
+An `AgentGroupChat` object allows agents to work together. You can specify the participating agents or create an empty chant and add agent participants afterwards.
 
 ```python
 # Initialize the group chat with participating agents

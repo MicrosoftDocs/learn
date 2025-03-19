@@ -6,33 +6,37 @@ The Semantic Kernel Agent Framework is a framework designed to help developers b
 
 ### Core Concepts
 
-- **Kernel** 
-
-    The kernel is the central component of the Semantic Kernel. The kernel acts as the execution engine, managing AI interactions, function orchestration, and memory.
+The Agent Framework in Semantic Kernel provides architecture on top of existing Semantic Kernel resources, including:
 
 - **Agents**
 
     Agents are intelligent, AI-driven entities capable of reasoning and executing tasks. They use language models, functions, and memory to make decisions dynamically.
 
+- **Agent Collaboration**
+
+    Agents can collaborate together through an **agent group chat**, which enables multiple agents to join the same chat, even of different agent types. Agent group chats determine which agent should respond and how to determine if the conversation is finished.
+
+The features that power Semantic Kernel are also still available within the Agent Framework, including:
+
+- **Kernel**
+
+    The kernel is the central component of the Semantic Kernel. The kernel acts as the execution engine, managing AI interactions, function orchestration, and memory.
+
 - **Tools and Plugins**
 
-    Agents use tools and plugins to perform specific tasks. Tools provide additional functionality to your agents, such as file searching or code interpreter. Plugins enable agents to dynamically interact with external services or execute complex tasks through function calling.
+    **Plugins** align with existing Semantic Kernel features, enabling agents to dynamically interact with external services or execute complex tasks through function calling.  Within the Agent Framework, **tools** are available to provide extra functionality to your agents, such as file searching or code interpreter, similar to tool usage in Azure AI Agent service. Agents use tools and plugins to perform specific tasks.
 
 - **History**
 
-    Agents can maintain chat history across multiple interactions, allowing them to track previous interactions and adapt responses accordingly.
-
-- **Agent Collaboration**
-
-    Agents can collaborate together through an **agent group chat**, which enables multiple agents to join the same chat. Agent group chats determine which agent should respond and how to determine if the conversation is finished.
+    Agents can maintain chat history across multiple interactions, allowing them to track previous interactions and adapt responses accordingly. The conversation history is always accessible by the agents, either as a whole or for a specific agent's chat history.
 
 ### Types of Agents
 
 The Semantic Kernel Agent Framework supports several different types of agents, including:
 
+- Azure AI Agent
 - Chat Completion Agent
 - OpenAI Assistant Agent
-- Azure AI Agent
 
 ## Why you should use the Semantic Kernel Agent Framework
 

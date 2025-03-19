@@ -3,11 +3,11 @@ uid: learn.wwl.orchestrate-sk-multi-agent-solution.design-agent-collaboration
 title: Add plugins to agents
 metadata:
   title: Design agent collaboration
-  description: Learn how to design mutli-agent collaboration solutions
+  description: Learn how to design mutli-agent collaboration solutions.
   author: buzahid
   ms.author: buzahid
   ms.date: 03/14/2025
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/6-design-agent-collaboration.md)]
+  [!include[](includes/4-design-agent-collaboration.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-sk-multi-agent-solution.agent-collaboration-components
+title: Agent collaboration components
+metadata:
+  title: Agent collaboration components
+  description: "This unit explains the components necessary to consider for agent collaboration."
+  ms.date: 3/18/2025
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-agent-collaboration-components.md)]
