@@ -20,7 +20,7 @@ prerequisites: |
   - Basic understanding of software development concepts and practices.
   - Familiarity with at least one programming language.
   - A GitHub account and basic knowledge of GitHub functionalities.
-  - Access to GitHub Copilot (through individual, business, or enterprise subscription).
+  - Access to GitHub Copilot requires either a personal GitHub account or an account managed by an organization or enterprise. For learning purposes, the Copilot Free option with usage limits should be sufficient.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
