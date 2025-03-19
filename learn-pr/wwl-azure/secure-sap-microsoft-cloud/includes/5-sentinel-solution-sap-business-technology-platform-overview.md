@@ -1,5 +1,3 @@
-
-
 SAP BTP is a cloud-based solution that provides a wide range of tools and services for developers to build, run, and manage applications. One of the key features of SAP BTP is its low-code development capabilities. Low-code development allows developers to create applications quickly and efficiently by using visual drag-and-drop interfaces and prebuilt components, rather than writing code from scratch.
 
 The Microsoft Sentinel solution for SAP BTP monitors and protects your SAP Business Technology Platform (BTP) system by collecting audits and activity logs from the BTP infrastructure and BTP based apps, and detecting threats, suspicious activities, illegitimate activities, and more.
@@ -8,7 +6,7 @@ The Microsoft Sentinel solution for SAP BTP monitors and protects your SAP Busin
 
 The following image illustrates how Microsoft Sentinel retrieves the complete BTP's audit log information. The Microsoft Sentinel solution for SAP BTP provides built-in analytics rules and detections for selected scenarios, which you can extend to cover more of the audit log information and events.
 
-:::image type="content" source="../media/sap-btp-solution-overview.png" alt-text="Diagram that shows an SAP BTP landscape integrated with Microsoft Sentinel.":::
+:::image type="content" source="../media/sap-business-technology-platform-solution-overview.png" alt-text="Diagram that shows an SAP BTP landscape integrated with Microsoft Sentinel.":::
 
 
 ## Why it's important to monitor BTP activity
@@ -26,7 +24,7 @@ Beyond the low-code aspect, BTP applications have the following aspects that mak
 
 ## How the solution addresses BTP security risks
 
-With the Microsoft Sentinel Solution for SAP BTP, you can:
+With the Microsoft Sentinel solution for SAP BTP, you can:
 
 - Gain visibility to activities **on** BTP applications, including creation, modification, permissions change, execution, and more.
 - Gain visibility to activities **in** BTP applications, including who uses the application, which business applications the BTP application accesses, business data Create, Read, Update, Delete (CRUD) activities, and more.
@@ -39,5 +37,3 @@ The solution includes:
 - The **SAP BTP** connector, which allows you to connect your BTP subaccounts and global account to Microsoft Sentinel via the [Audit Log service for SAP BTP API](https://help.sap.com/docs/btp/sap-business-technology-platform/security-events-logged-by-cf-services). Learn how to [install the solution and data connector](/azure/sentinel/sap/deploy-sap-btp-solution).
 - **[Built-in analytics rules](/azure/sentinel/sap/sap-btp-security-content#built-in-analytics-rules)** for identity management and low-code application development scenarios using the Trust and Authorization Provider and Business Application Studio (BAS) event sources in BTP.
 - The **[BTP activity workbook](/azure/sentinel/sap/sap-btp-security-content#sap-btp-workbook)**, which provides a dashboard overview of subaccounts and a grid of identity management events.
-  
-\

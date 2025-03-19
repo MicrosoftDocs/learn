@@ -3,7 +3,7 @@ uid: learn.wwl.secure-sap-microsoft-cloud
 metadata:
   title: Secure SAP on Microsoft Cloud
   description: "In this module, you learn about integrating Azure Identity Services with SAP RISE, implementing single sign-on, transitioning from SAP Identity Management to Microsoft Entra, using Microsoft Security Copilot and Microsoft Sentinel with SAP RISE."
-  ms.date: 03/17/2025
+  ms.date: 03/19/2025
   author: wwlpublish
   ms.author: bradj
   ms.topic: module
@@ -44,7 +44,7 @@ units:
 - learn.wwl.secure-sap-microsoft-cloud.azure-identity-services-rise
 - learn.wwl.secure-sap-microsoft-cloud.microsoft-security-copilot-rise
 - learn.wwl.secure-sap-microsoft-cloud.microsoft-sentinel-security-rise
-- learn.wwl.secure-sap-microsoft-cloud.sentinel-sap-business-platform
+- learn.wwl.secure-sap-microsoft-cloud.sentinel-solution-sap-business-technology-platform-overview
 - learn.wwl.secure-sap-microsoft-cloud.automatic-response-sentinel-capability
 - learn.wwl.secure-sap-microsoft-cloud.azure-monitor-rise
 - learn.wwl.secure-sap-microsoft-cloud.knowledge-check
