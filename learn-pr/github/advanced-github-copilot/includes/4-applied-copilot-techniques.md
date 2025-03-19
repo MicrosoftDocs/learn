@@ -54,6 +54,15 @@ As always, if the suggestions aren't exactly what you are looking for, you can r
 @workspace help me create a Dockerfile to package this project but make sure you are using a Virtual Environment for Python.
 ```
 
+In addition to the `@workspace` agent, you can use other agents like `@terminal`, `@file`, and `@directory` to get context-specific suggestions:
+
+- `@terminal`: Provides suggestions based on the terminal output.
+    - Example: @terminal How do I fix the error message I'm seeing?
+- `@file`: Focuses on the content of a specific file.
+    - Example: @file Can you help me refactor this function in main.py?
+- `@directory`: Considers the contents of a specific directory.
+    - Example: @directory How can I optimize the scripts in the utils directory?
+
 If you're stuck or not getting the results you want, then you can reword the prompt or start writing code for Copilot to autocomplete.
 
 >[!Note]
