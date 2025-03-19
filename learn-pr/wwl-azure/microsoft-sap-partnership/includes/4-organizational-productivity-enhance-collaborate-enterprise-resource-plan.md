@@ -2,4 +2,4 @@ SAP and Microsoft continue to enhance end-user productivity through the introduc
 
 The[ announcements of Adaptive card-based Loop components in SAP S/4HANA Cloud](https://techcommunity.microsoft.com/t5/microsoft-365-blog/adaptive-card-based-loop-components-collaborate-on-live-content/ba-p/3644272), demonstrate a deeper S/4HANA + Teams integration. These capabilities let you bring your SAP data and business processes directly into Teams and Outlook where users spend most of their workday. With these Adaptive card-based Loop components users can complete their SAP S/4HANA tasks from directly within Teams chats, calls, and more. The collaboration allows them to work directly on SAP data within the flow of their work. 
 
-:::image type="content" source="../media/organizational-productivity-enhanced-collaboration.png" alt-text="Image showing how to maximize the value of SAP on the Microsoft Cloud.":::
+:::image type="content" source="../media/organizational-productivity-enhanced-collaboration.png" alt-text="Screenshot of how to maximize the value of SAP on the Microsoft Cloud.":::

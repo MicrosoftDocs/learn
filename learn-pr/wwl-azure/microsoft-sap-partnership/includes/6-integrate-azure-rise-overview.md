@@ -3,6 +3,7 @@ For customers with SAP solutions such as RISE with SAP Enterprise Cloud Services
 It's important to distinguish the responsibility between SAP and customer when enabling certain Azure scenarios. The following diagram illustrates most common situations.
 
 :::image type="content" source="../media/sap-rise-integration-table.png" alt-text= "Diagram showing the breakdown of responsibility between customer and SAP for different aspects of enablement of integration scenarios.":::
+
 There might be some circumstances when an initial request needs to be placed with SAP RISE for enablement. However, most Azure scenarios depend on open network communication to available SAP interfaces and activities entirely within customer's responsibility. The diagram shown doesn't replace or extends an existing responsibility matrix between the customer and SAP RISE/ECS.
 
 ## First steps
