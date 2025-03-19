@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.orchestrate-sk-multi-agent-solution.design-agent-collaboration
-title: Add plugins to agents
+title: Design agent collaboration
 metadata:
   title: Design agent collaboration
-  description: Learn how to design mutli-agent collaboration solutions.
+  description: Learn how to design multi-agent collaboration solutions.
   author: buzahid
   ms.author: buzahid
   ms.date: 03/14/2025
