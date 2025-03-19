@@ -25,10 +25,10 @@ quiz:
       explanation: "Correct. Azure Data Explorer is a fully managed, highly scalable service designed for fast ingestion and analytics of time-series monitoring data."
     - content: "Azure Blob Storage"
       isCorrect: false
-      explanation: "Incorrect. Azure Blob Storage is used for storing large amounts of unstructured data, but it does not provide analytics capabilities."
+      explanation: "Incorrect. Azure Blob Storage is used for storing large amounts of unstructured data, but it doesn't provide analytics capabilities."
     - content: "Azure Event Grid"
       isCorrect: false
-      explanation: "Incorrect. Azure Event Grid is used for event routing, but it does not perform data analysis."
+      explanation: "Incorrect. Azure Event Grid is used for event routing, but it doesn't perform data analysis."
   - content: "Which Performance Monitor counter reflects how long SQL Server expects to retain data in memory?"
     choices:
     - content: "Page Life Expectancy"
@@ -47,10 +47,10 @@ quiz:
       explanation: "Correct. The SQL virtual machine resource provider enhances manageability features for SQL Server running on Azure Virtual Machines."
     - content: "Azure Monitor"
       isCorrect: false
-      explanation: "Incorrect. Azure Monitor does not include data from within the VM resource."
+      explanation: "Incorrect. Azure Monitor doesn't include data from within the VM resource."
     - content: "Database watcher"
       isCorrect: false
-      explanation: "Incorrect. Database watcher provide performance data, but does not include SQL Server information."
+      explanation: "Incorrect. Database watcher provides performance data, but doesn't include SQL Server information."
   - content: "Which extended event target counts how many times each specified event occurs?"
     choices:
     - content: "The *etw_classic_sync_target* target"

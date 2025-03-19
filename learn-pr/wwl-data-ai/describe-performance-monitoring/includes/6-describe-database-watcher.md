@@ -11,7 +11,7 @@ One of the key features of Database watcher is its ability to gather and store m
 
 Database watcher enables you to set targets, datasets, frequency, and retention according to your specific needs. It supports low latency, with data collection and ingestion happening within seconds. This ensures that you always have up-to-date information about your database's performance and health.
 
-This tool also offers a range of dashboards in the Azure portal, providing a single-pane-of-glass view of your entire SQL estate. These dashboards offer detailed insights into each monitored resource, allowing you to quickly identify and address any issues. Additionally, Database Watcher supports parameterized templates for common alert rules, as well as the ability to create custom alerts, ensuring that you are always notified of critical events.
+This tool also offers a range of dashboards in the Azure portal, providing a single-pane-of-glass view of your entire SQL estate. These dashboards offer detailed insights into each monitored resource, allowing you to quickly identify and address any issues. Additionally, Database Watcher supports parameterized templates for common alert rules, and the ability to create custom alerts, ensuring that you're always notified of critical events.
 
 :::image type="content" source="../media/database-watcher.png" alt-text="Diagram showing database watcher components and data flow from monitored resources to watcher to data store to Azure portal dashboards.":::
 
@@ -33,4 +33,4 @@ Here's a simple guide to configure database watcher for Azure SQL Database and A
 
 1. Review your configuration settings and select **Create** to deploy the database watcher resource.
 
-To lear more about database watcher, see [Quickstart: Create a database watcher to monitor Azure SQL](/azure/azure-sql/database-watcher-quickstart).
+To learn more about database watcher, see [Quickstart: Create a database watcher to monitor Azure SQL](/azure/azure-sql/database-watcher-quickstart).
