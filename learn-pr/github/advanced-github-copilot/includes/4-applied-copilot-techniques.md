@@ -23,6 +23,15 @@ After selecting the code and using **Ctrl+i** on Windows or **Command+i** on a M
 
 If you only type `/fix`, you might get a response from GitHub Copilot similar to this: _"To fix the code, I would add parentheses after file.read to call the read method and fix the typo in the method name."_
 
+Slash commands can be used both in the inline chat and the chat interface. In addition to the `/fix` command, here are some of the most useful slash commands you can use in Copilot chat:
+
+- `/doc`: Adds comments to the specified or selected code.
+- `/explain`: Gets explanations about the code.
+- `/generate`: Generates code to answer the specified question.
+- `/help`: Gets help on how to use Copilot chat.
+- `/optimize`: Analyzes and improves the runtime of the selected code.
+- `/tests`: Creates unit tests for the selected code.
+
 Using slash commands allows for easier interaction with GitHub Copilot and helps you get better responses without having to write longer prompts.
 
 Combining features like slash commands with inline chat allows you to choose the way that works best for you and the code you're working on.
