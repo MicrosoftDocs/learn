@@ -5,11 +5,11 @@ metadata:
   author: debs-obrien
   ms.manager: jamont
   ms.date: 03/19/2025
-  title: Build Your first end-to-end test with Playwright
+  title: Build your first end-to-end test with Playwright
   description: In this module, you'll learn how to use Playwright to test a sample web application. You'll learn how to run tests, view test reports, and understand the structure of a Playwright project. You'll also learn how to use Visual Studio Code to run tests, debug tests, and record new tests.
   ms.topic: module
   ms.service: vs-code
-title: Build Your first end-to-end test with Playwright
+title: Build your first end-to-end test with Playwright
 summary: In this module, you'll learn how to use Playwright to test a sample web application. You'll learn how to run tests, view test reports, and understand the structure of a Playwright project. You'll also learn how to use Visual Studio Code to run tests, debug tests, and record new tests.
 abstract: |
   In this module, you'll learn:
