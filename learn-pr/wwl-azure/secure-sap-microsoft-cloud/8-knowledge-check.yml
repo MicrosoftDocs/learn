@@ -27,7 +27,7 @@ quiz:
       explanation: "Incorrect. SAP GUI is typically used with SNC SSO method, not SAML/OAuth."
   - content: "What is the recommended migration path for SAP Identity Management (SAP IDM) users?"
     choices:
-    - content: "Continue using SAP IDM beyond 2027 ."
+    - content: "Continue using SAP IDM beyond 2027."
       isCorrect: false
       explanation: "Incorrect. SAP has announced the retirement of SAP IDM by 2027."
     - content: "Migrate to Microsoft Entra."
