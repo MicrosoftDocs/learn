@@ -18,9 +18,9 @@ abstract: |
     - Craft prompts that can generate useful suggestions from GitHub Copilot.
     - Use GitHub Copilot to improve a Python project.
 prerequisites: |
-  - Basic understanding of Python, like variables and conditionals.
-  - Ability to use Git and GitHub for version control.
-  - 3.	A GitHub Account with an active subscription for GitHub Copilot is required for either your personal GitHub account or a GitHub account managed by an organization or enterprise. For learning, the Copilot Free option with usage limits should be sufficient.
+  - Basic understanding of Python and text editors.
+  - Basic comprehension of Git and GitHub Fundamentals. Particularly, running basic git commands like `git add` and `git push`.
+  - A GitHub Account with an active subscription for GitHub Copilot is required for either your personal GitHub account or a GitHub account managed by an organization or enterprise. For learning, the Copilot Free option with usage limits should be sufficient.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
