@@ -2,14 +2,18 @@
 uid: learn.azure.publish-reusable-bicep-code-using-github-actions.design-workflow-versioning-strategy
 title: Design a workflow and versioning strategy
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Design a workflow and versioning strategy
   description: Learn about how to version your reusable Bicep code within a workflow, and whether to use a single workflow or multiple workflows.
-  ms.date: 04/05/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/22/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 7
 content: |
   [!include[](includes/5-design-workflow-versioning-strategy.md)]
+

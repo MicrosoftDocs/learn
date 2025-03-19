@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.azure.azure-netapp-files-solutions-benefits
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  moduleType: introduction        
+  title: Solutions and benefits for using Azure NetApp Files     
+  description: Learn about applications for Azure NetApp Files with Linux OSS applications and databases, Windows applications and SQL Server solutions, SAP on Azure solutions, and other products.   
+  ms.date: 11/14/2024
+  author: b-ahibbard   
+  ms.author: anfdocs           
+  ms.topic: module
+  ms.service: azure-netapp-files
+title:  Solutions and benefits for using Azure NetApp Files  
+summary: Learn about applications for Azure NetApp Files with Linux OSS applications and databases, Windows applications and SQL Server solutions, SAP on Azure solutions, and other products. 
+abstract: |
+  By the end of this module, you'll be able to: 
+  - Describe the solutions for different workloads.
+  - Classify the benefits of using Azure NetApp Files with various workloads.
+prerequisites: |
+  - Basic understanding of data protection and disaster recovery in Azure NetApp Files
+iconUrl: /training/achievements/introduction-to-azure-netapp-files.svg
+levels:
+  - intermediate
+roles:
+  - administrator
+  - solution-architect
+products:
+  - azure-netapp-files
+  - azure-virtual-machines
+subjects:
+- cloud-computing
+- storage
+- migration
+units:
+- learn.azure.azure-netapp-files-solutions-benefits.introduction
+- learn.azure.azure-netapp-files-solutions-benefits.benefits
+- learn.azure.azure-netapp-files-solutions-benefits.knowledge-check
+- learn.azure.azure-netapp-files-solutions-benefits.summary
+badge:
+  uid: learn.azure.azure-netapp-files-solutions-benefits.badge
+

@@ -35,7 +35,6 @@ A workflow offers many benefits, including:
  -  Multidevice management. Simultaneously apply workflow tasks to hundreds of managed nodes.
  -  Single task runs multiple scripts and commands. Combine related scripts and commands into a single task. Then run the single task on multiple computes. The activity status and progress within the workflow are visible at any time.
  -  Automated failure recovery.
-    
      -  Workflows survive both planned and unplanned interruptions, such as computer restarts.
      -  You can suspend a workflow operation, then restart or resume the workflow from the point it was suspended.
      -  You can author checkpoints as part of your workflow so that you can resume the workflow from the last persisted task (or checkpoint) instead of restarting the workflow from the beginning.

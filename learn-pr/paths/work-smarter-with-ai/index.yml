@@ -1,0 +1,27 @@
+### YamlMime:LearningPath
+uid: learn.wwl.work-smarter-with-ai
+metadata:
+  title: Work smarter with AI
+  description: Get more done and unleash your creativity with Microsoft Copilot.
+  ms.date: 11/19/2024
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.topic: learning-path
+title: Work smarter with AI
+prerequisites: |
+  Familiarity with Microsoft productivity applications, like Word, Excel, Outlook, and PowerPoint.
+summary: |
+  Get more done and unleash your creativity with Microsoft Copilot. In this learning path, you'll explore how to use Microsoft Copilot to help you research, find information, and generate effective content.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- business-user
+products:
+- ms-copilot
+subjects:
+- artificial-intelligence
+modules:
+- learn.explore-microsoft-copilot-business-users
+trophy:
+  uid: learn.wwl.work-smarter-with-ai.trophy

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.build-your-first-aspnet-core-web-app.learning-content
+title: The ASP.NET Core project templates
+metadata:
+  title: learning-content
+  description: Review available ASP.NET Core project templates that can get you productive quickly.
+  ms.date: 9/9/2024
+  author: wadepickett
+  ms.author: wpickett
+  ms.topic: unit
+
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-learning-content.md)]

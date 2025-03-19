@@ -2,14 +2,21 @@
 uid: learn.containerize-deploy-java-app-aks.setup
 title: Set up your Azure environment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: Set up
   title: Set up your Azure environment
-  description: Set up your Azure environment
-  ms.date: 9/28/2021
-  author: chtrembl
-  ms.author: chtrembl
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Set up your Azure environment.
+  ms.date: 02/12/2025
+  author: KarlErickson
+  ms.author: karler
+  ms.reviewer: yoterada
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
+    - devx-track-java
+    - devx-track-extended-java
 durationInMinutes: 6
 content: |
   [!include[](includes/2-setup.md)]
+

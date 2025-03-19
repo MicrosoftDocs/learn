@@ -4,11 +4,10 @@ title: Back up and recover data from encrypted disks
 metadata:
   title: Back up and recover data from encrypted disks
   description: "Back up and recover data from encrypted disks"
-  ms.date: 07/27/2022
+  ms.date: 01/10/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

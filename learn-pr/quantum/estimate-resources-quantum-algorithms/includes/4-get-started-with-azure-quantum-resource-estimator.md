@@ -1,147 +1,171 @@
+In the previous unit, you learned that the Azure Quantum Resource Estimator works by taking three main inputs: the physical qubit parameters, the quantum error correction (QEC) scheme, and the error budget. 
 
-The Azure Quantum Resource Estimator is a useful tool that is highly customizable. Before you start to work on the task you've been given, first you need to get familiar with the tool and get some practice. In the following example, you estimate the physical resources of a multiplier, which implements the multiplication of integer $a$ by integer $b$.
+Let's get some practice with the Azure Quantum Resource Estimator. In this unit, you estimate the physical resources of a simple program using the Azure Quantum Resource Estimator.
 
-## Enable the Azure Quantum Resource Estimator
+## Install the required packages
 
-First, enable the Azure Quantum Resource Estimator tool in your Azure Quantum workspace:
+First, install the latest Azure Quantum `qsharp` and `qsharp-widgets` packages.  
 
-1. Sign in to the [Azure portal](https://portal.azure.com/) and select your Azure Quantum workspace.
-1. On the left menu, under **Operations**, select **Providers**.
-1. Select **Add a provider**.
-1. For **Microsoft Quantum Computing**, select **Add**.
-1. Select **Learn & Develop**, and then select **Add**.
-
-## Create a new notebook in your workspace
-
-Next, create a new Jupyter notebook in your Azure Quantum workspace:
-
-1. In your Azure Quantum workspace, select **Notebooks**.
-1. Select **My notebooks**, and then select **Add new** to create a new Jupyter notebook.
-1. For **Kernel Type**, select **IPython**.
-1. Enter a name for the file, for example, *quickstartResourceEstimator.ipynb*.
-1. Select **Create file**.
-
-When your new notebook opens, it automatically creates the code for the first cell based on your subscription and workspace information.
-
-```python
-from azure.quantum import Workspace
-workspace = Workspace (
-    subscription_id = <your subscription ID>, 
-    resource_group = <your resource group>,   
-    name = <your workspace name>,          
-    location = <your location>        
-    )
+```bash
+python -m pip install --upgrade qsharp qsharp-widgets 
 ```
 
-## Get started
+## Create the quantum algorithm in a Jupyter notebook
 
-The first step is to connect to your Azure Quantum workspace and select the Azure Quantum Resource Estimator as target. You also are importing the `Microsoft.Quantum.Numerics` package that you use in your example algorithm.
+To get started with the Resource Estimator, you estimate the required resources for a simple quantum algorithm that generates a random bit.
 
-Select **Code** to add a new cell, and then enter and run the following code:
+1. Open Visual Studio Code.
+1. Select **View > Command palette** and select **Create: New Jupyter Notebook**.
+1. In the notebook's first cell, import the `qsharp` package:
 
-```python
-import qsharp
-import qsharp.azure  # Connect to your Azure Quantum workspace
-targets = qsharp.azure.connect(
-   resourceId="<your resourceID>", # Fill in with the resource ID of your workspace
-   location="<your location>") # Fill in with the location of your workspace (for example "westus")
+    ```python
+    import qsharp
+    from qsharp_widgets import EstimateDetails
+    ```
 
-qsharp.packages.add("Microsoft.Quantum.Numerics") # Import the Microsoft.Quantum.Numerics package to create the multiplier for this example
-qsharp.azure.target("microsoft.estimator") # Select the Azure Quantum Resource Estimator as target
-```
+1. Add a new cell and copy the following code:
 
-> [!NOTE]
-> You can find the location and resource ID of your workspace on the **Overview** tab of your Azure Quantum workspace.
->
-> :::image type="content" source="../media/azure-quantum-resource-id.png" alt-text="Screenshot of the overview pane of a workspace in the Azure portal. Location and resource ID are marked inside a red rectangle.":::
-
-As a running example, you're creating a multiplier by using the [MultiplyI](/qsharp/api/qsharp/microsoft.quantum.arithmetic.multiplyi) operation. You can configure the size of the multiplier by using a `bitwidth` parameter that can be passed as an input argument. The operation has two input registers that have that bit width, `factor1` and `factor2`. It has one output register with the size of twice the bit width, `product`.
-
-Select **Code** to add a new cell, and then enter and run the following code:
-
-```python
-%%qsharp
-
-open Microsoft.Quantum.Arithmetic;
-
-operation EstimateMultiplication(bitwidth : Int) : Unit {
-    use factor1 = Qubit[bitwidth];
-    use factor2 = Qubit[bitwidth];
-    use product = Qubit[2 * bitwidth];
+    ```qsharp
+    %%qsharp
+    /// # Sample
+    /// Random Bit
+    ///
+    /// # Description
+    /// This Q# program generates a random bit by setting a qubit in a superposition
+    /// of the computational basis states |0〉 and |1〉, and returning the measurement
+    /// result.
     
-    MultiplyI(LittleEndian(factor1), LittleEndian(factor2), LittleEndian(product));
-}
-```
+        operation RandomBit() : Result {
+            // Qubits are only accesible for the duration of the scope where they
+            // are allocated and are automatically released at the end of the scope.
+            use qubit = Qubit();
+    
+            // Set the qubit in superposition by applying a Hadamard transformation.
+            H(qubit);
+    
+            // Measure the qubit. There is a 50% probability of measuring either 
+            // `Zero` or `One`.
+            let result = M(qubit);
+    
+            // Reset the qubit so it can be safely released.
+            Reset(qubit);
+            return result;
+        }
+    ```
 
-> [!NOTE]
-> The `%%qsharp` magic command allows you to enter Q# code directly in a Jupyter notebook when you use the Python 3 kernel (ipykernel). For more information, see [%%qsharp magic command](/azure/quantum/how-to-python-qdk-local#the-qsharp-magic-command).
+## Estimate the quantum algorithm
 
-## Estimate the algorithm
+Now, run the Resource Estimator to estimate the physical resources for the `RandomBit` operation. If you don't specify anything, the Resource Estimator uses the default assumptions, that is the `qubit_gate_ns_e3` qubit model, the `surface_code` error correction code, and 0.001 error budget.
 
-Now, estimate the physical resources for this operation by using the default assumptions. You can submit the operation to the resource estimator target by using the `qsharp.azure.execute` function. This function calls the `EstimateMultiplication` operation and passes the operation argument `bitwidth=8`.
+1. Add a new cell and copy the following code:
 
-Select **Code** to add a new cell, and then enter and run the following code:
+    ```python
+    result = qsharp.estimate("RandomBit()")
+    result
+    ```
+
+    The `qsharp.estimate` function creates a result object, which can be used to display a table with the overall physical resource counts. The first table shows the main physical-resource estimates. The `RandomBit` operation requires 300 qubits and takes two microseconds to run on a quantum computer.
+
+    |Physical resource estimates| Value |
+    |----|---|
+    |Runtime| 2 microsecs|
+    |rQOPS| 3.00M|
+    |Physical qubits| 300|
+
+1. You can inspect cost details by collapsing the groups, which have more information. For example, collapse the **Logical qubit parameters** group to see that the code distance is 5 and the number of physical qubits per logical qubit is 50.
+
+    |Logical qubit parameter| Value |
+    |----|---|
+    |QEC scheme                                                |                           surface_code |
+    |Code distance                                                                       |            5 |
+    |Physical qubits                                                                   |            50 |
+    |Logical cycle time                                                                   |   2 microsecs |
+    |Logical qubit error rate                                                            |     3.00E-5 |
+    |Crossing prefactor                                                                    |       0.03|
+    |Error correction threshold                                                             |      0.01|
+    |Logical cycle time formula    | (4 * `twoQubitGateTime` + 2 * `oneQubitMeasurementTime`) * `codeDistance`|
+    |Physical qubits formula     |                                      2 * `codeDistance` * `codeDistance`|
+
+1. You can use the `jobParams` field to access all the target parameters that can be passed to the job execution and see which default values were assumed:
+
+    ```python
+    result['jobParams']
+    ```
+
+    ```output
+    {'errorBudget': 0.001,
+     'qecScheme': {'crossingPrefactor': 0.03,
+      'errorCorrectionThreshold': 0.01,
+      'logicalCycleTime': '(4 * twoQubitGateTime + 2 * oneQubitMeasurementTime) * codeDistance',
+      'name': 'surface_code',
+      'physicalQubitsPerLogicalQubit': '2 * codeDistance * codeDistance'},
+     'qubitParams': {'instructionSet': 'GateBased',
+      'name': 'qubit_gate_ns_e3',
+      'oneQubitGateErrorRate': 0.001,
+      'oneQubitGateTime': '50 ns',
+      'oneQubitMeasurementErrorRate': 0.001,
+      'oneQubitMeasurementTime': '100 ns',
+      'tGateErrorRate': 0.001,
+      'tGateTime': '50 ns',
+      'twoQubitGateErrorRate': 0.001,
+      'twoQubitGateTime': '50 ns'}}
+     ```
+
+    You can see that the Resource Estimator takes the `qubit_gate_ns_e3` qubit model, the `surface_code` error correction code, and 0.001 error budget, which are the default values for the estimation.
+
+## Change the default values and estimate the algorithm
+
+If you don't want to use the default values, you can specify optional parameters. Let's change the qubit model, the QEC scheme, and the error budget.
+
+### Change qubit model
+
+You estimate the cost for the same algorithm using the Majorana-based qubit parameter, `qubit_maj_ns_e6`. To do this, you need to pass the `qubitParams` parameter with the `name` field set to `qubit_maj_ns_e6`.
+
+In a new cell, copy and run the following code:
 
 ```python
-result = qsharp.azure.execute(EstimateMultiplication, bitwidth=8)
-result
-```
-
-The `qsharp.azure.execute` function creates a table that shows the overall physical resource counts. You can inspect cost details by collapsing the groups, which have more information. For example, if you collapse the *Logical qubit parameters* group, you can see that the QEC code distance is 13. In the *Physical qubit parameters* group, you can see the physical qubit properties that were assumed for this estimation. For example, the time to perform a single-qubit measurement and a single-qubit gate are assumed to be 100 ns and 50 ns, respectively.
-
-## Customize target parameters
-
-To customize target parameters, rerun resource estimation for the example by using the Majorana-based qubit parameters `"qubit_maj_ns_e6"`.
-
-Select **Code** to add a new cell, and then enter and run the following code:
-
-```python
-result = qsharp.azure.execute(EstimateMultiplication, bitwidth=8, 
-            jobParams={
+result_maj = qsharp.estimate("RandomBit()", params={
                 "qubitParams": {
-                    "name": "qubit_maj_ns_e6" # Specify the qubit parameter name
+                    "name": "qubit_maj_ns_e6"
                 }})
-result
+EstimateDetails(result_maj)
 ```
 
-You can inspect the result and compare both qubit technologies. For example, now the QEC code distance is 5, and the number of physical qubits has decreased from 173,592 to 8,160. Conversely, the runtime is 6 ms, compared to 3 ms when you use the previous approach.
+### Change quantum error correction scheme
 
-You can update the error correction code, too. Select **Code** to add a new cell and rerun the resource estimation job on the Majorana-based qubit parameters. This time, use Floquet code as the error correction scheme:
+You estimate the cost for the same algorithm using the Majorana-based qubit parameters with a floqued QEC scheme, `qecScheme`. To do this, you also need to pass the `qecScheme` parameter with the `name` field set to `floquet_code`.
+
+In a new cell, copy and run the following code:
 
 ```python
-result_maj_floquet = qsharp.azure.execute(EstimateMultiplication, bitwidth=8,
-            jobParams={
+result_maj = qsharp.estimate("RandomBit()", params={
                 "qubitParams": {
-                    "name": "qubit_maj_ns_e6" # Specify the qubit parameter name
+                    "name": "qubit_maj_ns_e6"
                 },
                 "qecScheme": {
-                    "name": "floquet_code" # Specify the QEC scheme name
+                    "name": "floquet_code"
                 }})
-
-result_maj_floquet
+EstimateDetails(result_maj)
 ```
 
-Now, you need 26,208 physical qubits, but the runtime is 0.547 ms.
+### Change error budget
 
-Finally, set the error budget to 10 percent.
+Next, estimate the cost for the same parameters with an `errorBudget` of 10%. To do this, you need to pass the `errorBudget` parameter with the value set to 0.1.
 
-Select **Code** to add a new cell, and then enter and run the following code:
+In a new cell, copy and run the following code:
 
 ```python
-result_maj_floquet_e1 = qsharp.azure.execute(EstimateMultiplication, bitwidth=8, 
-            jobParams={
+result_maj = qsharp.estimate("RandomBit()", params={
                 "qubitParams": {
-                    "name": "qubit_maj_ns_e6" # Specify the qubit parameter name
+                    "name": "qubit_maj_ns_e6"
                 },
                 "qecScheme": {
-                    "name": "floquet_code" # Specify the QEC scheme name
+                    "name": "floquet_code"
                 },
-                "errorBudget": 0.1 # Specify the error budget, a number between 0 and 1
-                }) 
-
-result_maj_floquet_e1
+                "errorBudget": 0.1})
+EstimateDetails(result_maj)
 ```
 
-Using this qubit technology and architecture, with an error budget of 10, you would need 4,620 physical qubits. This resource estimation shows that fewer physical qubits are needed if a higher error rate is acceptable. But if accuracy is important, then you need more physical qubits to account for error correction.
+Congratulations! You've successfully estimated the physical resources for a simple quantum algorithm using the Azure Quantum Resource Estimator and customized the parameters to see how they affect the resource estimates.
 
-Next, create a quantum algorithm for factoring a large number, and estimate the resources required to run the algorithm on a fault-tolerant quantum computer.
+In the next unit, you'll level up the difficulty and estimate the resources for the Shor's algorithm using the Azure Quantum Resource Estimator.

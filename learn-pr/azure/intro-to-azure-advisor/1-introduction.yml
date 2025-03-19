@@ -2,14 +2,15 @@
 uid: learn.intro-to-azure-advisor.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: Introduction to Azure Advisor and how to get recommendations for Azure services.
   ms.date: 03/08/2023
   author: ricmmartins
-  ms.author: ricmart
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: ricardomac
+  ms.topic: unit
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

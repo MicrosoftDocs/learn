@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-defender-cloud-threat-protection.collect-data-with-azure-monitor-agent
+title: Collect data with Azure Monitor Agent
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Collect data with Azure Monitor Agent
+  description: "Collect data with Azure Monitor Agent"
+  ms.date: 02/28/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - references_regions
+durationInMinutes: 7
+content: |
+  [!include[](includes/14-collect-data-with-azure-monitor-agent.md)]

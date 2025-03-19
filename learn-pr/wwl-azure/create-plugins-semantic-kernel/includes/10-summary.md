@@ -1,0 +1,1 @@
+In this module, you learned about optimizing language model prompts, using prompt templates, and how to work with the chat history object to create rich user experiences. You also practiced creating prompts, invoking functions, and retrieving chat completion replies. Great work!

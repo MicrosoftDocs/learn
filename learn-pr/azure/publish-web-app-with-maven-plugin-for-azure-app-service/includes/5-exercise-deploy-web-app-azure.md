@@ -8,17 +8,18 @@ In this exercise, you'll add the `azure-webapp-maven-plugin` plugin to your proj
 
     ```bash
     cd ~/MyWebApp
-    mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
+    mvn com.microsoft.azure:azure-webapp-maven-plugin:2.13.0:config
     ```
-    
+
     Enter the following values for each of the interactive prompts:
 
     | Prompt | Value |
     |---|---|
+    | **Create new run configuration** | *Enter **Y*** |
     | **Define value for OS** | *Enter the corresponding number for **Linux*** |
-    | **Define value for pricingTier** | *Enter the corresponding number for **F1*** |
-    | **Define value for javaVersion** | *Enter the corresponding number for **Java 8*** |
-    | **Define value for runtimeStack** | *Enter the corresponding number for **TOMCAT 8.5*** |
+    | **Define value for javaVersion** | *Enter the corresponding number for **Java 17*** |
+    | **Define value for webContainer** | *Enter the corresponding number for **TOMCAT 10.0*** |
+    | **Define value for pricingTier** | *Enter the corresponding number for **S1*** |
     | **Confirm (Y/N)** | *Enter **Y*** |
 
     The plugin will add the appropriate settings that reflect your choices to your `pom.xml` file.
@@ -29,25 +30,18 @@ In this exercise, you'll add the `azure-webapp-maven-plugin` plugin to your proj
     code pom.xml
     ```
 
-1. The `<build>` section of your `pom.xml` file should resemble the following example.
+1. The `<build>` section of your `pom.xml` file should resemble the following example:
 
     ```xml
-    <build>
-      <finalName>MyWebApp</finalName>
+    <finalName>MyWebApp</finalName>
+    <pluginManagement>
+      ...
+    </pluginManagement>
       <plugins>
-        <plugin>
-          <groupId>org.apache.tomcat.maven</groupId>
-          <artifactId>tomcat7-maven-plugin</artifactId>
-          <version>2.2</version>
-          <configuration>
-            <!-- http port needed in the sandbox is 8000 -->
-            <port>8000</port>
-          </configuration>
-        </plugin>
         <plugin>
           <groupId>com.microsoft.azure</groupId>
           <artifactId>azure-webapp-maven-plugin</artifactId>
-          <version>1.12.0</version>
+          <version>2.13.0</version>
           <configuration>
             <schemaVersion>v2</schemaVersion>
             ...
@@ -59,7 +53,7 @@ In this exercise, you'll add the `azure-webapp-maven-plugin` plugin to your proj
 
 ## Configure the plugin to use sandbox resource group
 
-1. For this exercise, you'll need to determine the name and location of the resource group for your sandbox. To do so, use the following command.
+1. For this exercise, you'll need to determine the name and location of the resource group for your sandbox. To do so, use the following command:
 
     ```azurecli
     az group list --query [0].name
@@ -71,7 +65,7 @@ In this exercise, you'll add the `azure-webapp-maven-plugin` plugin to your proj
 1. Use the `azure-webapp-maven-plugin` again to configure more settings interactively to your Maven `pom.xml` file:
 
     ```bash
-    mvn azure-webapp:config
+    mvn com.microsoft.azure:azure-webapp-maven-plugin:2.13.0:config
     ```
 
     Enter the following values for each of the interactive prompts:
@@ -89,26 +83,34 @@ In this exercise, you'll add the `azure-webapp-maven-plugin` plugin to your proj
 
 ## Deploy and test the web app
 
-1. Use Maven to build and deploy your web app to Azure App Service.
+1. Use Maven to build and deploy your web app to Azure App Service:
 
     ```bash
     mvn package azure-webapp:deploy
     ```
 
+    Enter the following values for each of the interactive prompts:
+
+    | Prompt | Value |
+    |---|---|
+    | **Please choose a subscription** | _Enter the corresponding number for your subscription_ |
+
     Maven displays a series of build messages, and the final message should indicate successful deployment to Azure.
 
     ```console
-    [INFO] Successfully deployed the artifact to https://MyWebApp-1570214065588.azurewebsites.net
+    [INFO] Successfully deployed the resources to MyWebApp-1570214065588
+    [INFO] Trying to deploy artifact to MyWebApp-1570214065588...
+    [INFO] Deploying (/home/cephas/MyWebApp/target/MyWebApp.war)[war]  ...
+    [INFO] Application url: https://MyWebApp-1570214065588.azurewebsites.net
     [INFO] ------------------------------------------------------------------------
     [INFO] BUILD SUCCESS
     [INFO] ------------------------------------------------------------------------
-    [INFO] Total time: 01:43 min
-    [INFO] Finished at: 2020-02-12T21:12:00+00:00
-    [INFO] Final Memory: 49M/347M
+    [INFO] Total time:  31.001 s
+    [INFO] Finished at: 2024-05-02T12:08:40Z
     [INFO] ------------------------------------------------------------------------
     ```
 
-1. Visit the deployed app by selecting the URL in the shell.
+1. Visit the deployed app by selecting the URL in the shell. By default, the Maven plugin deploys the Tomcat application to the default (root) context.
 
     :::image type="content" source="../media/3-app-service-response.png" alt-text="Example web app running on Azure App Service in a web browser." loc-scope="other"::: <!-- no-loc -->
 

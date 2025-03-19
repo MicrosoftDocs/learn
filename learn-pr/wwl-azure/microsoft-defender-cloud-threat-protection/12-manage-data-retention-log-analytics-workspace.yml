@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-defender-cloud-threat-protection.manage-data-retention-log-analytics-workspace
+title: Manage data retention in a Log Analytics workspace
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Manage data retention in a Log Analytics workspace
+  description: "Manage data retention in a Log Analytics workspace"
+  ms.date: 02/28/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - references_regions
+durationInMinutes: 7
+content: |
+  [!include[](includes/12-manage-data-retention-log-analytics-workspace.md)]

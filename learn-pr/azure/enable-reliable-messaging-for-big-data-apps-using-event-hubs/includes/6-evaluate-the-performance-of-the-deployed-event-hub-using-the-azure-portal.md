@@ -1,23 +1,23 @@
 When using Event Hubs, you must monitor your hub to ensure that it's working as expected.
 
-Continuing with the banking example, you've deployed Azure Event Hubs service and configured sender and receiver applications. Your applications are ready for testing the payment processing solution. The sender application collects customer's credit card data, and the receiver application verifies the credit card is valid. Because of the sensitive nature of your employer's business, it's essential your payment processing is robust and reliable, even when it's temporarily unavailable.
+Continuing with the banking example, you deployed Azure Event Hubs service and configured sender and receiver applications. Your applications are ready for testing the payment processing solution. The sender application collects a customer's credit card data, and the receiver application verifies the credit card is valid. Because of the sensitive nature of your employer's business, it's essential your payment processing is robust and reliable, even when it's temporarily unavailable.
 
 Evaluate your Event Hubs service by testing that your event hub is processing data as expected. The metrics available in Event Hubs allow you to ensure that it's working fine.
 
 ## How do you use the Azure portal to view your event hub activity?
 
-The Overview pane for your event hub service shows message counts, which represent the data (events) received and sent by the event hub. You can choose the timescale while viewing these events.
+The Overview pane for your event hub service shows message counts, which represent the data (events) received and sent by the event hub. You can choose the timescale while viewing these events. If you don't see the incoming and outgoing message counts, wait for a few minutes and refresh the page. 
 
 ![Screenshot of the Azure portal displaying the Event Hub namespace with message counts.](../media/6-view-messages.png)
 
 ## How can you test event hub resilience?
 
-Messages received from your sender application, even when the hub becomes unavailable, are successfully transmitted and processed as soon as the hub becomes available. Transient connectivity issues may occur because of backend service upgrades and restarts. When they do occur, you can view symptoms, which may include:
+Messages received from your sender application, even when the hub becomes unavailable, are successfully transmitted and processed as soon as the hub becomes available. Transient connectivity issues might occur because of backend service upgrades and restarts. When they do occur, you can view symptoms, which might include:
 
-- There may be a drop in incoming messages/requests.
-- The log file may contain error messages.
-- The applications may be disconnected from the service for a few seconds.
-- Requests may be momentarily throttled.
+- A drop in incoming messages/requests.
+- The log file might contain error messages.
+- The applications might be disconnected from the service for a few seconds.
+- Requests might be momentarily throttled.
 
 Client SDKs for Event Hubs have built-in resilience. To test this functionality, you can use the Azure portal to disable your event Hub.
 

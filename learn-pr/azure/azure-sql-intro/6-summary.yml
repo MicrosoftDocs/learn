@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-intro.6-summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
-  description: Summary
-  ms.date: 03/15/2023
+  description: Review what you've learned about Azure SQL in this module.
+  ms.date: 10/03/2024
   author: MashaMSFT
   ms.author: mathoma
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Summary
 durationInMinutes: 2
 content: |

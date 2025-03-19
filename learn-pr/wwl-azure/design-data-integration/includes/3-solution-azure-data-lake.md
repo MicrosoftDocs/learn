@@ -1,5 +1,4 @@
-
-A data lake is a repository of data that's stored in its natural format, usually as blobs or files. [Azure Data Lake](https://azure.microsoft.com/solutions/data-lake/) Storage is a comprehensive, scalable, and cost-effective data lake solution for big data analytics built into Azure. Azure Data Lake Storage combines a file system with a storage platform to help you quickly identify insights into your data. The solution builds on Azure Blob Storage capabilities to provide optimizations for analytics workloads. This integration enables analytics performance, high-availability, security, and durability capabilities of Azure Storage.
+A data lake is a repository of data stored in its natural format, usually as blobs or files. [Azure Data Lake](/azure/storage/blobs/data-lake-storage-introduction) Storage is a comprehensive, scalable, and cost-effective data lake solution for big data analytics built into Azure. Azure Data Lake Storage combines a file system with a storage platform to help you quickly identify insights into your data. The solution builds on Azure Blob Storage capabilities to provide optimizations for analytics workloads. This integration enables analytics performance, high-availability, security, and durability capabilities of Azure Storage.
 
 > [!Note] 
 > The current implementation of the service is Azure Data Lake Storage Gen2.
@@ -52,7 +51,7 @@ The following table compares storage solution criteria for using Azure Blob Stor
 
 | Compare                   | Azure Data Lake                                        | Azure Blob Storage                                           |
 | ------------------------- | ------------------------------------------------------ | ------------------------------------------------------------ |
-| **Data types**            | Good for storing large volumes of text data            | Good for storing unstructured non-text based data like photos, videos, and backups |
+| **Data types**            | Good for storing large volumes of text data            | Good for storing unstructured nontext based data like photos, videos, and backups |
 | **Geographic redundancy** | Must manually configure data replication               | Provides geo-redundant storage by default                    |
 | **Namespaces**            | Supports hierarchical namespaces                       | Supports flat namespaces                                     |
 | **Hadoop compatibility**  | Hadoop services can use data stored in Azure Data Lake | By using Azure Blob Filesystem Driver, applications and frameworks can access data in Azure Blob Storage |

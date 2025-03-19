@@ -1,16 +1,20 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-machine-learning-model-training-solution.identify-tasks
-title: Identify machine learning tasks
+title: Define the problem
 metadata:
-  title: Identify machine learning tasks
-  description: "Identify machine learning tasks"
-  ms.date: 12/06/2022
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Define the problem
+  description: Define the problem
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/20/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/2-identify-tasks.md)]
+

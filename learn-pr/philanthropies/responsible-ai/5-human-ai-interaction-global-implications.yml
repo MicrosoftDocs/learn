@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.explore-responsible-ai.human-ai-interaction-global-implications
+title: Human-AI interaction and global implications
+metadata:
+  title: Human-AI interaction and global implications
+  description: This content is a part of the responsible AI module.
+  ms.date: 01/14/2025
+  author: yoosunee
+  ms.author: anruss
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-human-ai-interaction-global-implications.md)]

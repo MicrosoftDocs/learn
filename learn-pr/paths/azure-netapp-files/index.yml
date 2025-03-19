@@ -1,0 +1,41 @@
+### YamlMime:LearningPath
+uid: learn.azure-netapp-files
+metadata:
+  title: Azure NetApp Files fundamentals
+  description: Learn how to deploy, monitor, secure, and optimize Azure NetApp Files.
+  brand: azure
+  ms.date: 11/27/2024
+  author: b-ahibbard
+  ms.author: anfdocs
+  ms.topic: learning-path
+title: Azure NetApp Files fundamentals
+summary: "Learn about the file types best suited for Azure NetApp Files, its key features, and how to optimize performance, cost, security, and data resiliency. Also learn how Azure NetApp Files can support SAP HANA and Oracle workloads." 
+prerequisites: |
+  - Basic knowledge of Azure products, including Azure Virtual Network and Azure Virtual Gateway.
+  - Basic knowledge of networked file system protocols. Particularly, Server Message Block (SMB) and Network File System (NFS).
+iconUrl: /training/achievements/introduction-to-azure-netapp-files-social.png
+levels: 
+- beginner
+roles: 
+- database-administrator
+- administrator
+- solution-architect
+products: 
+- azure-netapp-files
+subjects:
+- data-storage
+- data-management
+- migration
+modules:
+- learn.azure.introduction-to-azure-netapp-files
+- learn.azure.azure-netapp-files-volumes-service
+- learn.azure-netapp-files.essentials
+- learn.azure.azure-netapp-file-cost-optimization
+- learn.azure.azure-netapp-files-quotas
+- learn.azure.azure-netapp-files-performance
+- learn.azure.azure-netapp-files-application-volume-group 
+- learn.azure.azure-netapp-files-data-protection
+- learn.azure.azure-netapp-files-solutions-benefits
+- learn.azure.azure-netapp-files-security
+trophy:
+  uid: learn.azure-netapp-files.trophy

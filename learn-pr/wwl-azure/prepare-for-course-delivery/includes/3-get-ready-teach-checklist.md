@@ -1,12 +1,12 @@
 The new term is going to start in a few weeks, and you're incorporating Microsoft Official Curriculum (MOC) into your class for the first time. Maybe you've taught this subject before and want a refresher, or maybe you've been teaching Microsoft Fundamentals and you're going to teach Advanced Role-Based content for the first time. Regardless, this module and checklist are for you.  
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE50Nm8]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=26e88508-0bd5-40dd-83c9-fae4fba34ec6]
 
 Getting ready to teach checklist: 
 
 1. Draft my syllabus 
 
-   - Download the most up-to-date version of the Microsoft Official Curriculum from the [Microsoft Learning Download Center](https://aka.ms/LDC) 
+   - Download the most up-to-date version of the Microsoft Official Curriculum from the [Microsoft Learning Download Center](https://techcommunity.microsoft.com/blog/mctnews/current-courseware-downloading-process/4196123) 
 
    - Check out the Course Data sheet. This resource contains an outline that provides detailed information about the content included in the instructor-led course modules, including topic areas, interactive guides and videos 
 

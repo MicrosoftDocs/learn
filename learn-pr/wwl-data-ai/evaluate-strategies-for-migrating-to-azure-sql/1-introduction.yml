@@ -2,13 +2,14 @@
 uid: learn.wwl.evaluate-strategies-for-migrating-to-azure-sql.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 04/15/2022
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 1

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.explore-generative-ai.ai-linguistics
+title: AI linguistics
+metadata:
+  title: AI linguistics
+  description: This content is a part of the exploring generative AI module.
+  ms.date: 01/14/2025
+  author: yoosunee
+  ms.author: anruss
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-ai-linguistics.md)]

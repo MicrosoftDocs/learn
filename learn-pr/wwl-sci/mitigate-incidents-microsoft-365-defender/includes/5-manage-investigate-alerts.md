@@ -1,16 +1,15 @@
-## Manage investigate alerts
 
-You can manage alerts by selecting an alert in the Alerts queue or the Alerts tab of the Device page for an individual device.  Selecting an alert in either of those places brings up the Alert management pane.
+You can manage alerts by selecting an alert in the Alerts queue or the Alerts tab of the Device page for an individual device. Selecting an alert in either of those places brings up the Alert management pane.
 
-:::image type="content" source="../media/alert-queue.png" alt-text="Screenshot of the Microsoft 365 Defender Alerts Queue page." lightbox="../media/alert-queue.png":::
+:::image type="content" source="../media/alert-queue.png" alt-text="Screenshot of the Microsoft Defender XDR Alerts Queue page." lightbox="../media/alert-queue.png":::
 
 ## Alert management
 
-You can view and set metadata about the Alert preview or Alert details page.
+You can view and set metadata on the Alert preview or Alert details page.
 
-:::image type="content" source="../media/alert-manage.png" alt-text="Screenshot of the Microsoft 365 Defender Alert details page." lightbox="../media/alert-manage.png":::
+:::image type="content" source="../media/alert-manage.png" alt-text="Screenshot of the Microsoft Defender XDR Alert details page." lightbox="../media/alert-manage.png":::
 
-The metadata fields include and actions include:
+The metadata fields and actions include:
 
 ### Severity
 
@@ -18,11 +17,11 @@ The metadata fields include and actions include:
 
 - **Medium (Orange) -** Alerts from endpoint detection and response post-breach behaviors that might be a part of an advanced persistent threat (APT). This includes observed behaviors typical of attack stages, anomalous registry change, execution of suspicious files, and so forth. Although some might be part of internal security testing, it requires investigation as it might also be a part of an advanced attack.
 
-- **Low (Yellow)** - Alerts on threats associated with prevalent malware. For example, hack-tools, non-malware hack tools, such as running exploration commands, clearing logs, etc. often don't indicate an advanced threat targeting the organization. It could also come from an isolated security tool testing by a user in your organization.
+- **Low (Yellow)** - Alerts on threats associated with prevalent malware. For example, hack-tools, nonmalware hack tools, such as running exploration commands, clearing logs, etc. often don't indicate an advanced threat targeting the organization. It could also come from an isolated security tool testing by a user in your organization.
 
 - **Informational (Grey)** - Alerts that might not be considered harmful to the network but can drive organizational security awareness on potential security issues.
 
-Microsoft Defender Antivirus (Microsoft Defender AV) and Defender for Endpoint alert severities are different because they represent different scopes.  The Microsoft Defender AV threat severity represents the absolute severity of the detected threat (malware) and is assigned based on the potential risk to the individual device if infected.
+Microsoft Defender Antivirus (Microsoft Defender AV) and Defender for Endpoint alert severities are different because they represent different scopes. The Microsoft Defender AV threat severity represents the absolute severity of the detected threat (malware) and is assigned based on the potential risk to the individual device if infected.
 
 The Defender for Endpoint alert severity represents the severity of the detected behavior, the actual risk to the device, and most importantly, the potential risk to the organization.
 
@@ -38,7 +37,12 @@ So, for example:
 
 ### Categories
 
-The alert categories align with the enterprise attack tactics in the MITRE ATT&CK matrix.  The categories are:
+The alert categories align closely with the attack tactics and techniques in the MITRE ATT&CK Enterprise matrix.
+
+> [!NOTE]
+> The alert categories also include items (like `Unwanted Software`) that are not part of the ATT&CK matrices.
+
+The categories are:
 
 - **Collection** - Locating and collecting data for exfiltration
 
@@ -86,7 +90,7 @@ There might be scenarios where you need to suppress alerts from appearing in Mic
 
 Suppression rules can be created from an existing alert. They can be disabled and re-enabled if needed.
 
-When a suppression rule is created, it will take effect from the point when the rule is created. The rule won't affect existing alerts already in the queue prior to the rule creation. The rule will only be applied to alerts that satisfy the conditions set after the rule is created.
+When a suppression rule is created, it takes effect from the point when the rule is created. The rule won't affect existing alerts already in the queue prior to the rule creation. The rule will only be applied to alerts that satisfy the conditions set after the rule is created.
 
 There are two contexts for a suppression rule that you can choose from:
 
@@ -106,7 +110,7 @@ Alternatively, the team leader might assign the alert to the Resolved queue if t
 
 ### Alert classification
 
-You can choose not to set a classification or specify whether an alert is a true alert or a false alert. It's important to provide the classification of true positive/false positive because it is used to monitor alert quality and make alerts more accurate. The "determination" field defines extra fidelity for a "true positive" classification.
+You can choose not to set a classification or specify whether an alert is a true alert or a false alert. It's important to provide the classification of true positive/false positive because it's used to monitor alert quality and make alerts more accurate. The "determination" field defines extra fidelity for a "true positive" classification.
 
 ### Add comments and view the history of an alert
 
@@ -120,7 +124,7 @@ Select an alert from the alerts queue to go to alert page. This view contains th
 
 From the alert page, begin your investigation by selecting the affected assets or any of the entities under the alert story tree view. The details pane automatically populates with further information about what you selected.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4yiO5?rel=0]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8a9c08a6-558c-47a8-a336-d748acbdaa80]
 
 ### Investigate using the alert story
 
@@ -128,15 +132,14 @@ The alert story details why the alert was triggered, related events that happene
 
 Entities are clickable, and every entity that isn't an alert is expandable using the expand icon on the right side of that entity's card. The entity in focus will be indicated by a blue stripe to the left side of that entity's card, with the alert in the title being in focus at first.
 
-Selecting an entity will switch the context of the details pane to this entity, and will allow you to review further information, and manage that entity. Selecting ... to the right of the entity card will reveal all actions available for that entity. These same actions appear in the details pane when that entity is in focus.
+Selecting an entity switches the context of the details pane to this entity, and will allow you to review further information, and manage that entity. Selecting ... to the right of the entity card reveals all actions available for that entity. These same actions appear in the details pane when that entity is in focus.
 
 ### Take action from the details pane
 
-Once you've selected an entity of interest, the details pane will change to display information about the selected entity type, historic information when it's available, and offer controls to take action on this entity directly from the alert page.
+Once you've selected an entity of interest, the details pane changes to display information about the selected entity type, historic information when it's available, and offer controls to take action on this entity directly from the alert page.
 
 Once you're done investigating, go back to the alert you started with, mark the alert's status as Resolved and classify it as either False alert or True alert. Classifying alerts helps tune this capability to provide more true alerts and fewer false alerts.
 
 If you classify it as a true alert, you can also select a determination.
 
 If you're experiencing a false alert with a line-of-business application, create a suppression rule to avoid this type of alert in the future.
-

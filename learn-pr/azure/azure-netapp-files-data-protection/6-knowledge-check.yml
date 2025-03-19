@@ -1,0 +1,46 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-netapp-files-data-protection.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Check your knowledge of Azure NetApp Files data replication and resiliency. 
+  ms.date: 11/22/2024
+  author: b-ahibbard
+  ms.author: anfdocs
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+quiz: 
+  questions: 
+  - content: "Which data protection option can replicate your Azure NetApp Files data across designated Azure regions to protect your data from unforeseeable regional failures?"
+    choices: 
+    - content: Snapshots
+      isCorrect: false
+      explanation: "Incorrect. Cross-region replication asynchronously replicates data from an Azure NetApp Files volume (source) in one region to another Azure NetApp Files volume (destination) in another region. It provides protection for data from regional failures."
+    - content: Cross-zone replication 
+      isCorrect: false
+      explanation: "Incorrect. Cross-region replication asynchronously replicates data from an Azure NetApp Files volume (source) in one region to another Azure NetApp Files volume (destination) in another region. It provides protection for data from regional failures."
+    - content:  Cross-region replication 
+      isCorrect: true
+      explanation: "Correct. Cross-region replication asynchronously replicates data from an Azure NetApp Files volume (source) in one region to another Azure NetApp Files volume (destination) in another region. It provides protection for data from regional failures."
+    - content: Azure NetApp Files backups
+      isCorrect: false 
+      explanation: "Incorrect. Cross-region replication asynchronously replicates data from an Azure NetApp Files volume (source) in one region to another Azure NetApp Files volume (destination) in another region. It provides protection for data from regional failures."
+  - content: How is the cost of backup calculated in Azure NetApp Files?
+    choices: 
+      - content: Backup is priced based on the duration of the restore process.
+        isCorrect: false
+        explanation: "Incorrect. Backup cost is determined by the amount of data being restored during the billing cycle."
+      - content: Backup is included in the Azure NetApp Files subscription at no extra cost. 
+        isCorrect: false
+        explanation: "Incorrect. Backup cost is determined by the volume of data being transferred during the restore operation. Backups can incur additional costs based on the data restored."
+      - content:  Backup is priced per restore operation during the billing cycle.
+        isCorrect: false
+        explanation: "Incorrect. Azure NetApp Files doesn't charge per restore operation. The pricing is based on the amount of data that is restored."
+      - content: Backup is priced based on the amount of data restored during the billing cycle.
+        isCorrect: true
+        explanation: "Correct. In Azure NetApp Files, the pricing is based on the amount of data that is restored from the backup. The cost is determined by the volume of data being transferred during the restore operation."
+ 

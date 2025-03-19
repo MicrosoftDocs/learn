@@ -1,0 +1,56 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.explore-ai-basics.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is a part of the AI basics module.
+  ms.date: 01/14/2025
+  author: yoosunee
+  ms.author: anruss
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Knowledge check
+  questions:
+  - content: Which of the following statements best describes the relationship between AI, machine learning, and deep learning?
+    choices:
+    - content: Machine learning is a subset of AI, and deep learning is a subset of machine learning.
+      isCorrect: true
+      explanation: "Correct: _AI is the overarching field, machine learning is a subset of AI that focuses on algorithms that learn from data, and deep learning is a subset of machine learning that uses neural networks with many layers._"
+    - content: AI is a subset of machine learning, which is a subset of deep learning.
+      isCorrect: false
+      explanation: "Incorrect: _This statement reverses the actual hierarchy. AI is the broadest field, encompassing both machine learning and deep learning._"
+    - content: Deep learning is a subset of AI, and machine learning is a subset of deep learning.
+      isCorrect: false
+      explanation: "Incorrect: _Deep learning is a subset of machine learning, not the other way around._"
+    - content: AI, machine learning, and deep learning are three distinct and unrelated fields.
+      isCorrect: false
+      explanation: "Incorrect: _AI is the broad field that includes both machine learning and deep learning as subfields._"
+  - content: "Which algorithm would be the most appropriate for predicting house prices and why?"
+    choices:
+    - content: Classification algorithms because they are used to sort data into predefined categories.
+      isCorrect: false
+      explanation: "Incorrect: Classification algorithms are used to sort data into predefined categories. For example, they can determine whether an email is spam or not, but this isn't an effective algorithm for predicting home prices."
+    - content: Regression algorithms because they are designed to predict continuous outcomes based on input variables.
+      isCorrect: true
+      explanation: "Correct: In the context of predicting house prices, regression algorithms can analyze factors such as size, location, and other attributes to forecast the price."
+    - content: Regression algorithms because they group similar data points together based on their characteristics.
+      isCorrect: false
+      explanation: "Incorrect: Clustering algorithms group similar data points together which can be used for tasks like music or movie recommendations."
+    - content: Classification algorithms because they are used to find the best solution for realtors such as determining the quickest sale.
+      isCorrect: false
+      explanation: "Incorrect: Optimization algorithms are used to find the best solution among many possible options, such as determining the quickest route for a delivery."
+  - content: "Which milestone most significantly contributed to the practical applications of AI in every day life and why?"
+    choices:
+    - content: Alan Turing's question "Can machines think?" in 1950 because this sparked interest in AI.
+      isCorrect: false
+      explanation: "Incorrect: Turing's question was foundational and sparked interest in AI, but it didn't directly lead to practical applications. It was more a theoretical inquiry that set the stage for future research."
+    - content: Development of the Logic Theorist in 1956 because it was a significant technical achievement that started the advancement of AI programs.
+      isCorrect: false
+      explanation: "Incorrect: The Logic Theorist was a significant technical achievement, but its impact was limited to academic circles and didn't lead to widespread practical applications."
+    - content: The shift to a data-driven approach in the 2000s.
+      isCorrect: true
+      explanation: "Correct: The shift to a data-driven approach in the 2000s was pivotal in enabling the development of AI models. This shift allowed for the creation of practical AI applications such as recommendation systems and predictive analytics."
+    - content: Introduction of virtual assistants into everyday products in the 2010s.
+      isCorrect: false
+      explanation: "Incorrect: These advancements were built on the foundational shift to a data-driven approach in the 2010s. The data-driven approach is what enabled the development of these technologies."

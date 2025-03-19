@@ -13,7 +13,7 @@ The following virtual machine images are provided by default:
 
 By default, all contributors in a project are members of the User role on each hosted pool.
 
-It allows every contributor to the author and runs build and release pipelines using a Microsoft-hosted pool.
+It allows every contributor to author and run build and release pipelines using a Microsoft-hosted pool.
 
 Pools are used to run jobs. Learn about [specifying pools for jobs](/azure/devops/pipelines/process/phases).
 

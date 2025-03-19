@@ -3,25 +3,26 @@ uid: learn.create-azure-storage-account.6-knowledge-check
 title: Knowledge check - Create a storage account
 durationInMinutes: 3
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check - Create a storage account
   description: Questions about storage account properties and creation.
-  ms.date: 09/24/2018
-  author: tamram
-  ms.author: tamram
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/18/2024
+  author: normesta
+  ms.author: normesta
+  ms.topic: unit
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Suppose you have two video files stored as blobs. One of the videos is business-critical and requires a replication policy that creates multiple copies across geographically diverse datacenters. The other video is non-critical, and a local replication policy is sufficient. Which of the following options would satisfy both data diversity and cost sensitivity consideration."
+  - content: "Suppose you have two video files stored as blobs. One of the videos is business-critical and requires a replication policy that creates multiple copies across geographically diverse datacenters. The other video is noncritical, and a local replication policy is sufficient. Which of the following options would satisfy both data diversity and cost sensitivity considerations."
     choices:
     - content: "Create a single storage account that makes use of Local-redundant storage (LRS) and host both videos from here."
       isCorrect: false
       explanation: "The usage of single storage account to host both videos in a single LRS enabled storage account takes cost savings into consideration, but doesn't consider the data diversity storage requirements for business-critical content."
     - content: "Create a single storage account that makes use of Geo-redundant storage (GRS) and host both videos from here."
       isCorrect: false
-      explanation: "The usage of single storage account to host both videos in a single RRS enabled storage account takes data diversity into consideration, but doesn't consider the cost savings requirements for non-critical content."
-    - content: "Create two storage accounts. The first account makes use of Geo-redundant storage (GRS) and hosts the business-critical video content. The second account makes use of Local-redundant storage (LRS) and hosts the non-critical video content."
+      explanation: "The usage of single storage account to host both videos in a single GRS enabled storage account takes data diversity into consideration, but doesn't consider the cost savings requirements for noncritical content."
+    - content: "Create two storage accounts. The first account makes use of Geo-redundant storage (GRS) and hosts the business-critical video content. The second account makes use of Local-redundant storage (LRS) and hosts the noncritical video content."
       isCorrect: true
       explanation: "In general, increased diversity means an increased number of storage accounts. A storage account by itself has no financial cost. However, the settings you choose for the account do influence the cost of services in the account. Use multiple storage accounts to reduce costs."
   - content: "The name of a storage account must be:"
@@ -35,7 +36,7 @@ quiz:
     - content: "Globally unique."
       isCorrect: true
       explanation: "The storage account name is used as part of the URI for API access, so it must be globally unique."
-  - content: "In a typical project, when would you create your storage account(s)?"
+  - content: "In a typical project, when would you create your storage accounts?"
     choices:
     - content: "At the beginning, during project setup."
       isCorrect: true
@@ -46,3 +47,4 @@ quiz:
     - content: "At the end, during resource cleanup."
       isCorrect: false
       explanation: "Storage accounts are stable for the lifetime of a project. It's common to create them at the start of a project."
+

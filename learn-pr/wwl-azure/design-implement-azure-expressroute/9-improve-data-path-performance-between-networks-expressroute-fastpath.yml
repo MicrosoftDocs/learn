@@ -4,13 +4,12 @@ title: Improve data path performance between networks with ExpressRoute FastPath
 metadata:
   title: Improve data path performance between networks with ExpressRoute FastPath
   description: "Improve data path performance between networks with ExpressRoute FastPath"
-  ms.date: 03/02/2023
+  ms.date: 12/06/2024
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/9-improve-data-path-performance-between-networks-expressroute-fastpath.md)]
@@ -28,14 +27,14 @@ quiz:
     - content: "Through the public internet."
       isCorrect: false
       explanation: "Incorrect. ExpressRoute FastPath does not send traffic through the public internet."
-  - content: "A network has multiple VNets peered with the VNet that is connected to ExpressRoute. How should the ExpressRoute FastPath deployment be modified?"
+  - content: "A network has multiple virtual networks peered with a virtual network that is connected to ExpressRoute. How should the ExpressRoute FastPath deployment be modified?"
     choices:
-    - content: "Connect the VNet gateways to ExpressRoute FastPath."
+    - content: "Connect the virtual network gateways to ExpressRoute FastPath."
       isCorrect: false
-      explanation: "Incorrect. The VNet gateways still support VNet-to-Vnet peering and should not be connected directly to FastPath."
+      explanation: "Incorrect. The virtual network gateways still support VNet-to-Vnet peering and should not be connected directly to FastPath."
     - content: "Connect all the virtual networks to the ExpressRoute FastPath circuit directly."
       isCorrect: true
       explanation: "Correct. To avoid traffic being routed through the VNet gateways, connect all the VNets to ExpressRoute FastPath circuit directly."
-    - content: "Modify the VNet peering configuration."
+    - content: "Modify the virtual network peering configuration."
       isCorrect: false
-      explanation: "Incorrect. The VNet gateways can still support VNet-to-Vnet peering and do not have to be modified."
+      explanation: "Incorrect. The virtual network gateways support VNet-to-Vnet peering and do not have to be modified."

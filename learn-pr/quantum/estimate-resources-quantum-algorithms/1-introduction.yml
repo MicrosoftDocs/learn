@@ -2,13 +2,16 @@
 uid: learn.quantum.estimate-resources-quantum-algorithms.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction.
-  ms.date: 02/08/2023
+  ms.date: 01/22/2025
   author: SoniaLopezBravo
   ms.author: sonialopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  manager: tedhudek
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+

@@ -1,0 +1,29 @@
+### YamlMime:LearningPath
+uid: learn.wwl.design-dream-destination-ai
+metadata:
+  title: Design a dream destination with AI
+  description: Use Microsoft Copilot generative AI capabilities to ideate, research, and generate content. Use tips and techniques to write good prompts. Apply format and tone. AI-3024
+  ms.date: 12/13/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: learning-path
+title: Design a dream destination with AI
+prerequisites: |
+  None.
+summary: |
+  In this learning path, you learn about the capabilities of generative AI using Microsoft Copilot. Bring your personal creativity and passion to dream up a novel destination and create the content to help tell its story.
+iconUrl: /training/achievements/design-dream-destination-ai.svg
+levels:
+- beginner
+roles:
+- business-owner
+- business-user
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- ms-copilot
+modules:
+- learn.wwl.design-dream-destination-ai-copilot
+trophy:
+  uid: learn.wwl.design-dream-destination-ai.trophy

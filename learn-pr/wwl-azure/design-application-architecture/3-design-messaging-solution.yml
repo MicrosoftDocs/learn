@@ -2,15 +2,16 @@
 uid: learn.wwl.design-application-architecture.design-messaging-solution
 title: Design a messaging solution
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design a messaging solution
   description: "Design a messaging solution"
-  ms.date: 03/14/2023
+  ms.date: 02/03/2025
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
 content: |
   [!include[](includes/3-design-messaging-solution.md)]

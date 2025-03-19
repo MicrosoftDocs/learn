@@ -2,13 +2,17 @@
 uid: learn.wwl.design-machine-learning-operations-solution.design-monitoring
 title: Design for monitoring
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for monitoring
-  description: "Learn what you can monitor in an MLOps solution to optimize for performance."
-  ms.date: 03/03/2023
+  description: Learn what you can monitor in an MLOps solution to optimize for performance.
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 08/25/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 9
 content: |
   [!include[](includes/3-design-monitoring.md)]
+

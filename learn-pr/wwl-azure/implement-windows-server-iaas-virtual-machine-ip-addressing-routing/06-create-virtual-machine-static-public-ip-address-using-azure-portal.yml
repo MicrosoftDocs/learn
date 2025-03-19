@@ -4,11 +4,10 @@ title: Create a virtual machine with a static public IP address using the Azure 
 metadata:
   title: Create a virtual machine with a static public IP address using the Azure portal
   description: "Create a virtual machine with a static public IP address using the Azure portal"
-  ms.date: 08/16/2020
+  ms.date: 12/20/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 3
 content: |

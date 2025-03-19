@@ -4,13 +4,12 @@ title: Create and register a scheduled job in Windows PowerShell
 metadata:
   title: Create and register a scheduled job in Windows PowerShell
   description: "Create and register a scheduled job in Windows PowerShell"
-  ms.date: 11/10/2022
+  ms.date: 04/22/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/5-create-register-scheduled-job.md)]

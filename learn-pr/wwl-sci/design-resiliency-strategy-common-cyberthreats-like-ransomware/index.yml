@@ -1,25 +1,28 @@
 ### YamlMime:Module
 uid: learn.wwl.design-resiliency-strategy-common-cyberthreats-like-ransomware
 metadata:
-  title: Design a resiliency strategy for common cyberthreats like ransomware
-  description: "You'll learn about common cyberthreats like ransomware and what kinds of attack patterns an organization must be prepared for."
-  ms.date: 3/14/2023
-  author: hrasheed-msft
-  ms.author: hrasheed
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
-title: Design a resiliency strategy for common cyberthreats like ransomware
-summary: "You'll learn about common cyberthreats like ransomware and what kinds of attack patterns an organization must be prepared for."
+  title: Design a resiliency strategy for ransomware and other attacks based on Microsoft Security Best Practices
+  description: "You learn about common cyberthreats like ransomware and what kinds of attack patterns an organization must be prepared for."
+  ms.date: 09/09/2024
+  author: ceperezb
+  ms.author: ceperezb
+  ms.topic: module
+  ms.service: security
+  ai-usage: ai-assisted
+  ms.custom: wwl-aipa
+title: Design a resiliency strategy for ransomware and other attacks based on Microsoft Security Best Practices
+summary: |
+  You learn about common cyberthreats like ransomware and what kinds of attack patterns an organization must be prepared for.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you are able to:
     - Understand common cyberthreats like ransomware.
     - Understand how to support business resiliency.
     - Design configurations for secure backup and restore.
     - Design solutions for managing security updates.
 prerequisites: |
-  - Conceptual knowledge of security policies, requirements, zero trust architecture, and management of hybrid environments.
-  - Working experience with zero trust strategies, applying security policies, and developing security requirements based on business goals.
-iconUrl: /learn/achievements/generic-badge.svg
+  - Conceptual knowledge of security policies, requirements, Zero Trust architecture, and management of hybrid environments.
+  - Working experience with Zero Trust strategies, applying security policies, and developing security requirements based on business goals.
+iconUrl: /learn/achievements/design-resiliency-strategy-common-cyberthreats-like-ransomware.svg
 levels:
 - advanced
 roles:

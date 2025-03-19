@@ -2,13 +2,14 @@
 uid: learn.wwl.migrate-onpremises-workloads-azure.configure-replication-onprem-vms
 title: Configure replication of on-premises virtual machines
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure replication of on-premises virtual machines
   description: "Configure replication of on-premises virtual machines"
   ms.date: 05/17/2021
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 durationInMinutes: 6
 content: |

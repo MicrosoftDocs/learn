@@ -4,11 +4,12 @@ title: Evaluate the use of Automated decision methods
 metadata:
   title: Evaluate the use of Automated decision methods
   description: This unit goes into detail about limitations of automated decision methods.
-  ms.date: 10/14/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
 durationInMinutes: 3
 content: |
   [!include[](includes/6-evaluate.md)]

@@ -2,15 +2,17 @@
 uid: learn.implement-message-workflows-with-service-bus.7-exercise-write-code-that-uses-service-bus-topics
 title: Exercise - Send and receive messages by using a topic
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Send and receive messages by using a topic
   description: Write code that sends messages to a topic and receives messages from a subscription to the topic.
-  ms.date: 04/04/2023
+  ms.date: 01/27/2025
   author: spelluru
   ms.author: spelluru
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 interactive: bash
 azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/7-exercise-write-code-that-uses-service-bus-topics.md)]
+

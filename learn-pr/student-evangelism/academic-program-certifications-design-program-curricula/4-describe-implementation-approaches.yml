@@ -6,9 +6,8 @@ metadata:
   description: Learn about the certification implementation approaches you can choose from.
   ms.date: 08/11/2021
   author: leestott
-  ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: tsheppard
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 5
 content: |

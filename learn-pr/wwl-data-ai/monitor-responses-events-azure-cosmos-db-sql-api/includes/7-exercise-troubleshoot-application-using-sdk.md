@@ -1,7 +1,17 @@
+
+### Set up environment
+
 > [!NOTE]
-> A virtual machine (VM) containing the client tools you need is provided, along with the exercise instructions. Use the button above to open the VM. A limited number of concurrent sessions are available - if the hosted environment is unavailable, try again later.
+> To complete this exercise, you will need a [Microsoft Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative access.
 
-> [!TIP]
-> Alternatively, if you would like to use a development environment on your own computer, you can use this [setup guide](https://github.com/microsoftlearning/dp-420-cosmos-db-dev/blob/main/instructions/00-setup-environment.md) and follow these [exercise instructions](https://github.com/microsoftlearning/dp-420-cosmos-db-dev/blob/main/instructions/26-sdk-troubleshoot.md). The setup guide is designed for multiple development exercises, and may include software that is not required for this specific exercise. Additionally, due to the range of possible operating systems and setup configurations, we can't provide support if you choose to complete the exercise on your own computer.
+To set up the lab environment for this exercise, sign into your Azure subscription and follow these instructions to provision your Azure resources:
 
-When you finish the exercise, end the lab to close the VM. Don't forget to come back and complete the knowledge check to earn points for completing this module!
+- **[Create an Azure resource group for the lab.](https://go.microsoft.com/fwlink/?linkid=2295043&azure-portal=true)**
+- **[Set up your local lab environment.](https://go.microsoft.com/fwlink/?linkid=2294752)**
+- **[Enable Azure resource providers.](https://go.microsoft.com/fwlink/?linkid=2294853&azure-portal=true)**
+
+### Complete the exercise
+
+Launch the exercise and follow the instructions.
+
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2294858&azure-portal=true)

@@ -1,8 +1,7 @@
-
 **Identity administration** is how identity objects are managed over the lifetime of the identity’s existence. This administration can be manual or automated.  However, it has to be done.  Here's a simple example of what happens without governance and administration of your identities.
 
 #### Story - the life of an identity
-You have a user by the name of Juan.  Juan is given an account in your company and works for several years.  Over that time, the user is given admin access to deploy an application.  Later Juan leaves the company in good regard; however, the account is never removed from the system. A manager forgot to submit the paperwork to close the account. There's no governance system in place to notice the account is unused and that Juan is no longer listed in the HR systems.  A year later, Juan falls victim of a phishing email and has his personal username and password stolen.  Being like many people, Juan used a similar password for his personal life and his work accounts.  Guess what, you now have a scenario where your systems could be broken into. And the attack will come from what appears to be a valid account!
+You have a user by the name of Juan.  Juan is given an account in your company and works for several years.  Over that time, the user is given admin access to deploy an application.  Later Juan leaves the company in good regard; however, the account is never removed from the system. A manager forgot to submit the paperwork to close the account. There's no governance system in place to notice the account is unused and that Juan is no longer listed in the HR systems.  A year later, Juan falls victim of a phishing email and has his personal username and password stolen.  Being like many people, Juan used a similar password for his personal life and his work accounts.  Guess what, you now have a scenario where your systems could be broken into. And the attack comes from what appears to be a valid account!
 
 :::image type="content" source="../media/identity-lifecycle.png" alt-text="Diagram of life of an identity. Start, no access. Then job with access and identity created. Leave the company, then back to no access.":::
 
@@ -35,27 +34,23 @@ There are many common tasks performed during identity administration.
 
 ## Identity management automation
 
-| Azure PowerShell | CLI (command line interface) |
+| PowerShell | CLI (command line interface) |
 | :--------------- | :--------------------------- |
-| Cross-platform PowerShell module, runs on Windows, macOS, Linux | Cross-platform command-line interface, installable on Windows, macOS, Linux |
+| Cross-platform PowerShell runs on Windows, macOS, Linux | Cross-platform command-line interface, installable on Windows, macOS, Linux |
 | Requires Windows PowerShell or PowerShell | Runs in Windows PowerShell, Command prompt, or Bash and other Unix shells |
-
-> [!Note]
-> You can also script using the Microsoft Graph API.  The commands are very similar to CLI and PowerShell.
 
 | Scripting Language | Action | Command |
 | :----------------- | :----- | :-----: |
 | Azure CLI  | Create user  | `az ad user create --display-name "New User" --password  "Password" --user-principal-name NewUser@contoso.com` |
-| Azure PowerShell | Create user | `New-AzureADUser -DisplayName "New User" -PasswordProfile Password -UserPrincipalName "NewUser@contoso.com" -AccountEnabled $true -MailNickName "Newuser“ `|
 | Microsoft Graph | Create user | `New-MgUser -DisplayName "New User" -PasswordProfile Password -UserPrincipalName "NewUser@contoso.com" -AccountEnabled $true -MailNickName "Newuser“ `|
 
-When picking the right tool, consider your past experience and current work environment. Azure CLI syntax is similar to that of Bash scripting. If you work primarily with Linux systems, Azure CLI feels more natural. Azure PowerShell is a PowerShell module. If you work primarily with Windows systems, Azure PowerShell is a natural fit. Commands follow a verb-noun naming scheme and data is returned as objects.
+When picking the right tool, consider your past experience and current work environment. Azure CLI syntax is similar to that of Bash scripting. If you work primarily with Linux systems, Azure CLI feels more natural. PowerShell is the Microsoft scripting engine. If you work primarily with Windows systems, then PowerShell is a natural fit. Commands follow a verb-noun naming scheme and data is returned as objects.
 
 ### Microsoft Graph
 
-:::image type="content" source="../media/graph-capabilities.png" alt-text="Diagram Microsoft Graph features.  Use graph to pull identity information from Azure A D.":::
+:::image type="content" source="../media/graph-capabilities.png" alt-text="Diagram Microsoft Graph features.  Use graph to pull identity information from Microsoft Entra ID.":::
 
-Microsoft Graph exposes REST APIs and client libraries to access data on the following Microsoft cloud services such as Azure AD, Microsoft 365, devices, and many others.
+Microsoft Graph exposes REST APIs and client libraries to access data on the following Microsoft cloud services such as Microsoft Entra ID, Microsoft 365, devices, and many others.
 
 - The Microsoft Graph API offers a single endpoint, `https://graph.microsoft.com`, to provide access to rich, people-centric data and insights in the Microsoft cloud, including Microsoft 365, Windows 10, and Enterprise Mobility + Security. You can use REST APIs or SDKs to access the endpoint and build apps that support Microsoft 365 scenarios. The access can span from productivity, to collaboration, to education. Microsoft Graph also includes a powerful set of services that manage user and device identity. You can determine and configure access, compliance, security, and help protect organizations from data leakage or loss.
 

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-manage-postgresql.introduction
+title: Introduction
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Introduction
+  description: "Introduction"
+  ms.date: 05/10/2024
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -2,40 +2,41 @@
 uid: learn.wwl.load-balancing-https-traffic-azure.configure-azure-application-gateway
 title: Configure Azure Application Gateway
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure Azure Application Gateway
   description: "Configure Azure Application Gateway"
-  ms.date: 04/04/2023
+  ms.date: 01/10/2025
   author: wwlpublish
   ms.author: jileary
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 25
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 20
 content: |
   [!include[](includes/3-configure-azure-application-gateway.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You are configuring Azure Application Gateway for your organization and you want to ensure that users don't experience performance degradation during peak times. Which setting should you configure?"
+  - content: "You're configuring Azure Application Gateway for your organization and you want to ensure that users don't experience performance degradation during peak times. Which setting should you configure?"
     choices:
     - content: "Autoscaling"
       isCorrect: true
-      explanation: "Correct, With autoscaling enabled, the Application Gateway scales up or down based on application traffic requirements."
+      explanation: "Correct. With autoscaling enabled, the Application Gateway scales up or down based on application traffic requirements."
     - content: "Manual scaling"
       isCorrect: false
-      explanation: "Incorrect, With Manual scaling enabled, the gateway won't autoscale. If there is more traffic than the Application Gateway can handle, it could result in traffic loss."
+      explanation: "Incorrect. The gateway doesn't autoscale. If there's more traffic than the Application Gateway can handle, it could result in traffic loss."
     - content: "Health probes"
       isCorrect: false
-      explanation: "Incorrect, Health probes monitor the health of all resources in the back-end pool and automatically removes any resource considered unhealthy from the pool."
+      explanation: "Incorrect. Health probes monitor the health of all resources in the back-end pool."
   - content: "What is a listener?"
     choices:
     - content: "A listener is an entity that checks for incoming connection requests."
       isCorrect: true
-      explanation: "Correct, A listener is a logical entity that checks for incoming connection requests by using the port, protocol, host, and IP address."
+      explanation: "Correct. A listener is a logical entity that checks for incoming connection requests by using the port, protocol, host, and IP address."
     - content: "A listener is an entity that routes traffic based on basic or path-based rules."
       isCorrect: false
-      explanation: "Incorrect, A routing rule is an entity that routes traffic based on basic or path-based rules."
+      explanation: "Incorrect. A routing rule routes traffic based on basic or path-based rules."
     - content: "A listener is a collection of servers that respond to requests."
       isCorrect: false
-      explanation: "Incorrect, A backend pool"
+      explanation: "Incorrect. A backend pool responds to requests."

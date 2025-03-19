@@ -1,10 +1,10 @@
-The goal of this exercise is to make resources available across multiple pages by moving them to a resource dictionary in the Tip Calculator Application class.
+The goal of this exercise is to make resources available across multiple pages in your .NET Multi-platform App UI (MAUI) application by moving them to a resource dictionary in the Tip Calculator Application class.
 
 This exercise is a continuation of the previous exercise. Either use your existing solution as the starting point for these steps, or open the **TipCalculator** project in the **exercise4/TipCalculator** folder in the repository that you cloned in the first exercise.
 
 ## Verify page-level resources
 
-Let's verify that resources defined on one page aren't available on another page. Your app won't run correctly at the end of this section. However, you'll fix it in the next section.
+Let's verify that resources defined on one page aren't available on another page. At the end of this section, your app doesn't run correctly. However, you fix it in the next section.
 
 1. In the **TipCalculator** project, open the **CustomTipPage.xaml** file.
 
@@ -16,13 +16,13 @@ Let's verify that resources defined on one page aren't available on another page
 
 1. Run the app.
 
-1. Select **Use Custom Calculator** to display the **CustomTipPage** page. Look at the Bill label. The font size should be smaller than the other labels and it isn't bold. This is because the page hasn't found a resource named **infoLabelStyle** (it's in the resource dictionary for a different page), so the default values are used for the font size and font attributes.
+1. Select **Use Custom Calculator** to display the **CustomTipPage** page. Look at the Bill label. The font size should be smaller than the other labels and it isn't bold. This behavior is because the page didn't find a resource named **infoLabelStyle** (it's in the resource dictionary for a different page), so the default values are used for the font size and font attributes.
 
     :::image type="content" source="../media/9-custom-tip-page.png" alt-text="A screenshot of the CustomTipPage page. The Bill label isn't styled correctly.":::
 
 ## Create a dictionary for application-level resources
 
-Let's create an application-wide resource dictionary to hold resources to use on multiple pages.
+Let's create an application-wide resource dictionary for holding resources to use on multiple pages.
 
 1. Open the **App.xaml** file. Notice that this file currently contains a resource dictionary with some existing resource dictionaries and styles that are used by default for controls built into .NET MAUI. To see all the styles included by default, view the **Resources/Styles.xaml** file.
 

@@ -4,13 +4,12 @@ title: Design for SQL Server on Azure Virtual Machines
 metadata:
   title: Design for SQL Server on Azure Virtual Machines
   description: "Design for SQL Server on Azure Virtual Machines"
-  ms.date: 03/29/2023
+  ms.date: 12/10/2024
   author: wwlpublish
   ms.author: cynthist
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
 content: |
   [!include[](includes/4-design-for-sql-server-azure.md)]

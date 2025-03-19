@@ -1,14 +1,17 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-azure-cosmos-db-sql-api
 metadata:
-  title: Configure Azure Cosmos DB for NoSQL database and containers
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Configure Azure Cosmos DB for NoSQL
   description: "Select between the various throughput offerings in Azure Cosmos DB for NoSQL."
-  ms.date: 10/18/2022
+  ms.date: 10/22/2024
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Configure Azure Cosmos DB for NoSQL database and containers
+  ms.topic: module-standard-task-based
+  ms.service: azure-cosmos-db
+  ms.subservice: nosql
+title: Configure Azure Cosmos DB for NoSQL
 summary: Select between the various throughput offerings in Azure Cosmos DB for NoSQL.
 abstract: |
   After completing this module, you'll be able to:
@@ -37,3 +40,4 @@ units:
 - learn.wwl.configure-azure-cosmos-db-sql-api.summary
 badge:
   uid: learn.wwl.configure-azure-cosmos-db-sql-api.badge
+

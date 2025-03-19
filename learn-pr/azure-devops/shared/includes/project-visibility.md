@@ -1,14 +1,10 @@
 ### Set your project's visibility
 
-Your fork of the _Space Game_ repository on GitHub is initially public. The Azure DevOps template creates a project that's initially private.
+Initially, your fork of the Space Game repository on GitHub is set to public while the project created by the Azure DevOps template is set to private. A public repository on GitHub can be accessed by anyone, while a private repository is only accessible to you and the people you choose to share it with. Similarly, on Azure DevOps, public projects provide read-only access to non-authenticated users, while private projects require users to be granted access and authenticated to access the services.
 
-A public GitHub repository is accessible to everyone, whereas a private repository is accessible to you and the people you share it with. In both cases, only collaborators can commit changes to a GitHub repository.
+At the moment, it is not necessary to modify any of these settings for the purposes of this module. However, for your personal projects, you must determine the visibility and access you wish to grant to others. For instance, if your project is open source, you may choose to make both your GitHub repository and your Azure DevOps project public. If your project is proprietary, you would typically make both your GitHub repository and your Azure DevOps project private.
 
-A project on Azure DevOps works the same way. Users who aren't signed in to the service have read-only access to public projects. Private projects require users to be granted access to the project and signed in to access the services.
-
-For learning purposes, you don't need to change any of these settings right now. But for your own projects, you need to decide what visibility and access you want to provide to others. For example, if your project is open source, you might make both your GitHub repository and your Azure DevOps project public. If your project is closed source, you would likely make both your GitHub repository and your Azure DevOps project private.
-
-Later, you can use these resources to help you decide which option is best for your project:
+Later on, you may find the following resources helpful in determining which option is best for your project:
 
 * [Use private and public projects](/azure/devops/organizations/projects/about-projects#use-private-and-public-projects)
 * [Quickstart: Make your private project public](/azure/devops/organizations/public/make-project-public)

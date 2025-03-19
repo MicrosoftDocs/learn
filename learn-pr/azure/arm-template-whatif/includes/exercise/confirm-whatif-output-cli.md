@@ -1,9 +1,8 @@
 ---
-author: davidsmatlak
-ms.prod: learning-azure
+author: mumian
 ms.topic: include
-ms.date: 05/22/2021
-ms.author: davidsmatlak
+ms.date: 02/04/2025
+ms.author: jgao
 ---
 Your output will look similar to the following:
 
@@ -15,34 +14,34 @@ Your output will look similar to the following:
 
 ```output
 Note: The result may contain false positive predictions (noise).
-You can help us improve the accuracy of the result by opening an issue here: https://aka.ms/WhatIfIssues.
+You can help us improve the accuracy of the result by opening an issue here: https://aka.ms/WhatIfIssues
 
 Resource and property changes are indicated with this symbol:
   - Delete
 
 The deployment will update the following scope:
 
-Scope: /subscriptions/b4219936-de68-4fe4-8393-4bd7d7f7fe99/resourceGroups/learn-31a62588-9867-48a4-9e6b-666a7bdbefff
+Scope: /subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/learn-00000000-0000-0000-0000-000000000000
 
   - Microsoft.Network/virtualNetworks/vnet-001
 
-      id:              "/subscriptions/b4219936-de68-4fe4-8393-4bd7d7f7fe99/resourceGroups/learn-31a62588-9867-48a4-9e6b-666a7bdbefff/providers/Microsoft.Network/virtualNetworks/vnet-001"
+      id:              "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/learn-00000000-0000-0000-0000-000000000000/providers/Microsoft.Network/virtualNetworks/vnet-001"
       location:        "westus"
       name:            "vnet-001"
       tags.CostCenter: "12345"
       tags.Owner:      "Team A"
       type:            "Microsoft.Network/virtualNetworks"
 
-  - Microsoft.Storage/storageAccounts/cloudshell843483168
+  - Microsoft.Storage/storageAccounts/cloudshell496089001
 
-      id:                     "/subscriptions/b4219936-de68-4fe4-8393-4bd7d7f7fe99/resourceGroups/learn-31a62588-9867-48a4-9e6b-666a7bdbefff/providers/Microsoft.Storage/storageAccounts/cloudshell843483168"
+      id:                     "/subscriptions/aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e/resourceGroups/learn-00000000-0000-0000-0000-000000000000/providers/Microsoft.Storage/storageAccounts/cloudshell496089001"
       kind:                   "Storage"
-      location:               "southeastasia"
-      name:                   "cloudshell843483168"
+      location:               "southcentralus"
+      name:                   "cloudshell496089001"
       sku.name:               "Standard_GRS"
       sku.tier:               "Standard"
       tags.ms-resource-usage: "azure-cloud-shell"
-      tags.x-created-by:      "freelearning"
+      tags.x-created-by:      "productsandboxes"
       type:                   "Microsoft.Storage/storageAccounts"
 
 Resource changes: 2 to delete.

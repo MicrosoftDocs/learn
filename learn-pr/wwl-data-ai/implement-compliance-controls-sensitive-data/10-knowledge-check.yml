@@ -2,13 +2,14 @@
 uid: learn.wwl.implement-compliance-controls-for-sensitive-data.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/02/2022
-  author: wwlpublish
+  ms.date: 02/26/2025
+  author: JulianePadrao
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -21,43 +22,43 @@ quiz:
     choices:
     - content: "In the extended properties for each object"
       isCorrect: false
-      explanation: "That's incorrect. This was the case in older versions of SQL Server, but not in SQL Server 2019."
+      explanation: "Incorrect. This was the case in older versions of SQL Server, but not in SQL Server 2019."
     - content: "In the sys.sensitivity_classifications catalog view"
       isCorrect: true
-      explanation: "That's correct. This is the correct view."
+      explanation: "Correct. This is the correct view."
     - content: "In the sys.all_columns catalog view"
       isCorrect: false
-      explanation: "That's incorrect. This view does contain classification."
+      explanation: "Incorrect. This view does contain classification."
   - content: "Which server-level action group audits queries and stored procedures executed against an Azure SQL Database?"
     choices:
     - content: "BATCH_STARTED_GROUP"
       isCorrect: false
-      explanation: "That's incorrect. BATCH_STARTED_GROUP is raised whenever any batch text, stored procedure, or transaction management operation starts executing."
+      explanation: "Incorrect. BATCH_STARTED_GROUP is raised whenever any batch text, stored procedure, or transaction management operation starts executing."
     - content: "BATCH_COMPLETED_GROUP"
       isCorrect: true
-      explanation: "That's correct. BATCH_COMPLETED_GROUP is raised whenever any batch text, stored procedure, or transaction management operation completes executing."
+      explanation: "Correct. BATCH_COMPLETED_GROUP is raised whenever any batch text, stored procedure, or transaction management operation completes executing."
     - content: "SENSITIVE_BATCH_COMPLETED_GROUP"
       isCorrect: false
-      explanation: "That's incorrect. SENSITIVE_BATCH_COMPLETED_GROUP is raised whenever any batch text, stored procedure, or transaction management operation completes executing on sensitive data classified labels."
+      explanation: "Incorrect. SENSITIVE_BATCH_COMPLETED_GROUP is raised whenever any batch text, stored procedure, or transaction management operation completes executing on sensitive data classified labels."
   - content: "Which block predicate prevents users from updating rows to values that violate its row-level security predicate?"
     choices:
     - content: "AFTER INSERT"
       isCorrect: false
-      explanation: "That's incorrect. AFTER INSERT prevents users from inserting rows with values that violate the predicate."
+      explanation: "Incorrect. AFTER INSERT prevents users from inserting rows with values that violate the predicate."
     - content: "BEFORE UPDATE"
       isCorrect: false
-      explanation: "That's incorrect. BEFORE UPDATE prevents users from updating rows that currently violate the predicate."
+      explanation: "Incorrect. BEFORE UPDATE prevents users from updating rows that currently violate the predicate."
     - content: "AFTER UPDATE"
       isCorrect: true
-      explanation: "That's correct. AFTER UPDATE prevents users from updating rows to values that violate the predicate."
+      explanation: "Correct. AFTER UPDATE prevents users from updating rows to values that violate the predicate."
   - content: "Which of the following features can be used to automate data discovery through the provision of data scanning and classification as a service?"
     choices:
     - content: "Database auditing"
       isCorrect: false
-      explanation: "That's incorrect. Database auditing tracks database events and writes them to an audit log in your Azure Storage account, Log Analytics workspace or Event Hubs."
+      explanation: "Incorrect. Database auditing tracks database events and writes them to an audit log in your Azure Storage account, Log Analytics workspace or Event Hubs."
     - content: "Dynamic data masking"
       isCorrect: false
-      explanation: "That's incorrect. Dynamic data masking works by obfuscating data in order to limit its exposure."
+      explanation: "Incorrect. Dynamic data masking works by obfuscating data in order to limit its exposure."
     - content: "Azure Purview"
       isCorrect: true
-      explanation: "That's correct. Azure Purview automates data discovery by providing data scanning and classification as a service for assets across your data estate."
+      explanation: "Correct. Azure Purview automates data discovery by providing data scanning and classification as a service for assets across your data estate."

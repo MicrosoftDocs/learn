@@ -2,13 +2,16 @@
 uid: learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 11/17/2022
+  description: Knowledge check
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 08/25/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 durationInMinutes: 3
 quiz:
   questions:
@@ -34,3 +37,4 @@ quiz:
     - content: "Use a mlflow.log_metric() statement to log the AUC value."
       isCorrect: true
       explanation: "Correct. Your script needs to use MLflow to log the primary metric to the run using the same name as specified in the sweep job."
+

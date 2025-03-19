@@ -1,0 +1,42 @@
+Performance and quality metrics are essential for assessing the efficiency and effectiveness of generative AI applications. These metrics provide a systematic way to measure various aspects of an AI model's output, ensuring it meets desired standards and user expectations. They encompass both qualitative and quantitative dimensions, offering a comprehensive evaluation of the AI's capabilities.
+
+## Scenario
+
+Contoso Home Furnishings is developing an app that generates product descriptions for their selection of furniture. The app aims to generate engaging product descriptions based on the manufacturer’s specification of the furniture.
+
+## Instructions
+
+In this exercise, you evaluate the model output for the generated product description using performance and quality metrics. Open the `evaluate-performance-quality.ipynb` file to get started. At the top-right of the notebook, for **Select Kernel** select **Python 3.11** or newer.
+
+## Metrics
+
+Provided is a table of our built-in performance and quality metrics:
+
+### Qualitative Metrics
+
+Qualitative metrics measure the subjective qualities of AI-generated responses. Qualitative metrics focus on the human experience, assessing aspects like readability, creativity, and appropriateness.
+
+|Metric  |Definition  |Example of Use  |Interpretation  |
+|---------|---------|---------|---------|
+|Coherence     | The degree to which the output is logically consistent and makes sense.         | Assess whether the generated output for an AI creative writing assistant follows a logical sequence and maintains consistent character development throughout the story        |Assessed on a scale of 1.0 - 5.0. <br><br> High coherence means the content is easy to follow and understand as a whole.|
+|Fluency     | The smoothness and readability of the output, with correct grammar and syntax.        |Assessing a chatbot's responses to ensure they're grammatically correct and easy to read.         |Assessed on a scale of 1.0 - 5.0. <br><br> High fluency means the text flows well and sounds natural to a native speaker.|
+|Groundedness     | The extent to which the output is based on factual information or given context.        | Verifying that a generated news article accurately reflects the facts and sources provided.        | Assessed on a scale of 1.0 - 5.0. <br><br> High groundedness means the model's output is factually accurate and consistent with the given context or known information.|
+|Groundedness Pro | detects whether the generated text response is consistent or accurate with respect to the given context in a retrieval-augmented generation question and answering scenario. It checks whether the response adheres closely to the context in order to answer the query, avoiding speculation or fabrication, and outputs a true/false label. | When you need to verify that AI-generated responses align with and are validated by the provided context. It's essential for applications where contextual accuracy is key, like information retrieval and question and answering. | False if response is ungrounded and True if it's grounded |
+|Relevance     | How well the output aligns with the given context or user query.        | Assess how well generated article summaries match users' interests for an AI-powered personalized news aggregator.        |Assessed on a scale of 1.0 - 5.0. <br><br> High relevance means the content is closely aligned with the user's intent or the subject matter being discussed.|
+|Similarity     |The degree of resemblance between the generated output and the reference text.        | Assess that the AI-generated content aligns with established legal practices and terminology by comparing AI generated contract clauses with a database of standard legal language.        |Assessed on a scale of 1.0 - 5.0 <br><br> A high similarity score indicates that the compared texts or concepts have similar meanings or convey essentially the same information, even if using different words.|
+|F1 Score     |A measure of a model's accuracy that combines precision (relevance of retrieved items) and recall (completeness of retrieval).         |Assess how well a model correctly identifies and classifies various skin conditions for an AI app that assists doctors in diagnosing skin conditions from images.         | Assessed on a scale of 0 - 1. <br><br> A high F1 score indicates that the model has low false positives and low false negatives.|
+|Retrieval | Measures the quality of search without ground truth. It focuses on how relevant the context chunks (encoded as a string) are to address a query and how the most relevant context chunks are surfaced at the top of the list. | Suitable for applications where the model engages in generation using a retrieval-augmented approach to extract information from your provided documents and generate detailed responses, usually multi-turn. | Assessed on a scale of 1.0 - 5.0 <br><br> High quality means the output is highly relevant, well ranked, and no bias is introduced.
+
+### Quantitative Metrics
+
+Quantitative metrics involve objective, numerical measurements of the AI's performance. Quantitative metrics are often data-driven and based on specific algorithms or statistical analysis.
+
+|Metric  |Definition  |Example  |Interpretation  |
+|---------|---------|---------|---------|
+|ROUGE     | Recall-Oriented Understudy for Gisting Evaluation, measures the overlap of n-grams (word sequences) between the generated and reference texts. It's useful for assessing if key information is retained in summaries.        | Assess how AI-generated summaries of scientific papers capture key findings from the original research papers, comparing them against human-written reviews.        |Assessed on a scale of 0 - 1. <br><br> Higher ROUGE scores indicate better coverage of the reference content.|
+|BLEU     |Bilingual Evaluation Understudy measures how many words overlap between the machine translation and reference translations, considering exact matches and near matches. It focuses on precision and aims to capture translation adequacy and fluency.         |Assess the quality of AI-generated posts in various languages for a multilingual content generation tool for a social media platform. Compare the AI generated posts against human-translated versions.         |Assessed on a scale of 0 - 1. <br><br> Higher BLEU scores suggest better translation quality.|
+|METEOR     |Metric for Evaluation of Translation with Explicit ORdering, designed to improve some of the weaknesses of BLEU. METEOR is an automatic metric for machine translation evaluation. It considers synonyms and paraphrases and aligns words between the machine translation and reference.         | An e-learning platform developing an AI tutor that explains complex concepts in simpler terms uses METEOR to evaluate the quality of its explanations. This metric helps assess whether the AI-generated explanations effectively convey the same meaning as expert-written materials, even if using different words.        |Assessed on a scale of 0 - 1. <br><br> A high METEOR score suggests that the generated text closely matches the reference text in terms of content and meaning.|
+|GLEU     |A variant of BLEU developed by Google for evaluating machine translation. GLEU is similar to BLEU but calculates the minimum of precision and recall for n-grams, making it more sensitive to changes in translation quality that affect both precision and recall.         | A company creating an AI system for generating product descriptions uses GLEU to fine-tune their model. They compare the AI-generated descriptions against professionally written ones, using GLEU's sensitivity to both precision and recall to incrementally improve the system's ability to create compelling and accurate product narratives.        |Assessed on a scale of 0 - 1. <br><br> A high GLEU score indicates a high degree of overlap in n-grams between the generated text and reference translations. A high GLEU score generally suggests fluency and adequacy in translation, and good precision in word choice and word order.|
+
+> [!NOTE]
+> It's important to note that while these are the theoretical maximum scores, in practice, achieving a perfect score is often unrealistic, especially for metrics like BLEU, METEOR, and GLEU.

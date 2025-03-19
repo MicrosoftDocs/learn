@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.render-api-responses-razor-pages.explore-asp-core-razor-pages
+title: Explore Blazor render modes and component lifecycle
+metadata:
+  title: Explore Blazor render modes and component lifecycle
+  description: "Explore Blazor render modes and component lifecycle"
+  ms.date: 01/16/2025
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-explore-asp-core-razor-pages.md)]

@@ -1,14 +1,17 @@
 ### YamlMime:Module
 uid: learn.oxford.deploy-prebuilt-module-edge-device
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: "Deploy a pre-built module to the Edge device"
-  description: "University of Oxford"
-  ms.date: 12/5/2019
-  author: leestott
-  ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub
-  ms.custom: team=nextgen
+  description: "Deploy a pre-built temperature simulator module to an IoT Edge device using a container. Check that the module was successfully created and deployed and view simulated data."
+  ms.date: 07/08/2024
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: module
+  ms.custom: team=cloud_advocates
+  ms.service: azure-iot-edge
+  ms.collection: ce-advocates-ai-copilot
 title: "Deploy a pre-built module to the Edge device"
 summary: "Deploy a pre-built temperature simulator module to an IoT Edge device using a container. Check that the module was successfully created and deployed and view simulated data."
 abstract: |
@@ -16,14 +19,13 @@ abstract: |
     - Launch a module from Azure portal to IoT Edge 
     - Generate simulated data from an edge device
     - Verify data generated from the edge device
-   
-    "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
 prerequisites: |
     - Ability to use IoT Hub in Azure
     - Ability to use Azure Cloud Shell
     - Experience creating and managing resources using the Azure portal or Azure Cloud Shell at the beginner level
     - Basic knowledge of Azure IoT Edge
 iconUrl: /training/achievements/student-evangelism/deploy-pre-built-module-iot-edge.svg
+hidden: true
 badge:
   uid: learn.deploy-built-module-iot-edge.badge
 levels:
@@ -43,3 +45,4 @@ units:
 - learn.oxford.deploy-prebuilt-module-edge-device.6-exercise-deploying-prebuilt-module
 - learn.oxford.deploy-prebuilt-module-edge-device.7-knowledge-check
 - learn.oxford.deploy-prebuilt-module-edge-device.8-summary
+

@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-business-value.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 02/13/2025
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which characteristic of an organization directly contributes to an AI-ready culture?"
+    choices:
+    - content: "An organization uses a cloud infrastructure."
+      isCorrect: false
+      explanation: "Incorrect. While cloud adoption can support AI adoption, it doesn't mean the organization is AI-ready."
+    - content: "An organization supports remote working."
+      isCorrect: false
+      explanation: "Incorrect. While AI can enhance remote work, it isn't a deciding factor for AI-readiness in a business."
+    - content: "An organization has accessible, reliable data."
+      isCorrect: true
+      explanation: "Correct. There are three main characteristics of an AI-ready culture, which include a workplace that is data-driven, empowering, and responsible."
+  - content: "Which is a driver of AI success in the Organization and Culture category?"
+    choices:
+    - content: "Restricting employee access to IT systems and devices."
+      isCorrect: false
+      explanation: "Incorrect. Security measures are part of the AI Governance category."
+    - content: "Clear communication from Leadership on vision and importance of AI."
+      isCorrect: true
+      explanation: "Correct. The Organization and Culture category focuses on employee connection and contribution to strategy, vision, and execution."
+    - content: "Making in-person attendance mandatory for all internal meetings."
+      isCorrect: false
+      explanation: "Incorrect. Whether an organization requires in-person attendance or supports remote or hybrid work isn't a deciding factor in its AI success."
+  - content: "Which of the following actions is typical for an organization at the formalization stage?"
+    choices:
+    - content: "Moving from proofs of concept and pilots into production."
+      isCorrect: true
+      explanation: "Correct. At the formalization stage, AI initiatives take place in multiple business units and move from proof of concept and pilots to production."
+    - content: "Learning about and experimenting with AI in select areas of the organization."
+      isCorrect: false
+      explanation: "Incorrect. Experimentation belongs to the exploration stage, the first stage of AI value creation."
+    - content: "Realizing repeatable and measurable value across the organization."
+      isCorrect: false
+      explanation: "Incorrect. Realizing consistent AI value across the organization is the last stage of AI value creation and comes after formalization and scaling."

@@ -8,7 +8,7 @@ To understand the importance of feedback and how it can help empower your recipi
 <br>
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OKLQ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b35dc304-9abf-4684-881b-710355ebad0c]
 
 Consider the following questions:
 

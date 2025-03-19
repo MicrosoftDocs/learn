@@ -11,7 +11,7 @@ This module consists of two lessons:
 - Lesson 1 – Design a report 
 - Lesson 2 – Enhance a report 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5anzk] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=5426f2b0-552d-4813-85fe-ec46bc237c1c] 
 
 Module 7 Tips and Tricks 
 

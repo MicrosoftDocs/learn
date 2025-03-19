@@ -2,16 +2,17 @@
 uid: learn.wwl.upgrade-migrate-windows-server-iaas-virtual-machines
 metadata:
   title: Upgrade and migrate Windows Server IaaS virtual machines
-  description: "Learn to migrate a workload running in Windows Server to an infrastructure as a service (IaaS) virtual machine (VM) and to Windows Server 2019 by using Windows Server migration tools or the Storage Migration Service."
-  ms.date: 10/21/2020
+  description: "Learn to migrate a workload running in Windows Server to an infrastructure as a service (IaaS) virtual machine (VM) and to Windows Server 2025 by using Windows Server migration tools or the Storage Migration Service."
+  ms.date: 01/25/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: windows-server
+  ms.contributors: orthomas
 title: Upgrade and migrate Windows Server IaaS virtual machines
-summary: Learn to migrate a workload running in Windows Server to an infrastructure as a service (IaaS) virtual machine (VM) and to Windows Server 2019 by using Windows Server migration tools or the Storage Migration Service.
+summary: Learn to migrate a workload running in Windows Server to an infrastructure as a service (IaaS) virtual machine (VM) and to Windows Server 2025 by using Windows Server migration tools or the Storage Migration Service.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
   - Describe Windows Server IaaS migration.
   - Explain how to migrate workloads using Windows Server Migration tools.
   - Describe storage migration.
@@ -23,8 +24,8 @@ prerequisites: |
   - Core Microsoft compute, storage, networking, and virtualization technologies.
   - On-premises resiliency Windows Server-based compute and storage technologies.
   - Implementing and managing IaaS services in Azure.
-  - Azure Active Directory (Azure AD).
-  - Security-related technologies such as firewalls, encryption, and multi-factor authentication.
+  - Microsoft Entra ID.
+  - Security-related technologies such as firewalls, encryption, and multifactor authentication.
   - Windows PowerShell scripting.
   - Automation and monitoring.
 iconUrl: /training/achievements/upgrade-and-migrate-windows-server-iaas-virtual-machines.svg

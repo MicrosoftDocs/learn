@@ -5,7 +5,7 @@ In this lab, you analyze Rosie's lemonade sales, and create visualizations to he
 ## Before you start
 
 > [!NOTE]
-> If you have completed the previous module in this learning path, you can skip the **Before you start** section.
+> If you have completed the previous module in this learning path, you can skip this **Before you start** section and go straight to **Exercise 1: Analyze data with a PivotTable**.
 
 If you don't already have a Microsoft account (for example a `hotmail.com`, `live.com`. or `outlook.com` account), sign up for one at [https://signup.live.com](https://signup.live.com).
 
@@ -16,10 +16,10 @@ If you don't already have a Microsoft account (for example a `hotmail.com`, `liv
     :::image type="content" source="../media/one-drive.png" alt-text="Screenshot of One Drive My Files folder." lightbox="../media/one-drive.png":::
 
 2. On the **&#65291; New** menu, select **Folder** to create a new folder. You can name this anything you like, for example **DAT101**. When your new folder appears, select it to open it.
-3. In your new empty folder, on the **&#10514; Upload** menu, click **Files**. Then when prompted, in the **File name** box, enter the following address (you can copy and paste it from here!):
+3. In your new empty folder, on the **&#10514; Upload** menu, click **Files**. Then when prompted, in the **File name** box, enter the following address in the **File name** field (you can copy and paste it from here!):
 
     ```
-    https://github.com/MicrosoftLearning/mslearn-data-concepts/raw/main/labfiles/Lemonade.xlsx
+    https://github.com/MicrosoftLearning/mslearn-data-concepts/raw/main/labfiles/Lemonade_formatted.xlsx
     ```
 
     Then click **Open** to upload the Excel file containing Rosie's lemonade data, as shown here:
@@ -28,17 +28,7 @@ If you don't already have a Microsoft account (for example a `hotmail.com`, `liv
 
     After a few seconds, the **Lemonade.xlsx** file should appear in your folder like this:
 
-    :::image type="content" source="../media/lemonade-xlsx.png" alt-text="Screenshot of Lemonade x l s x file in One Drive." lightbox="../media/lemonade-xlsx.png":::
-
-### Open the workbook in Excel Online
-
-1. Click the **Lemonade.xlsx** file in your OneDrive folder to open it in Excel Online. When opened, it should look like this:
-
-    :::image type="content" source="../media/lemonade-workbook.png" alt-text="Screenshot of Lemonade workbook in Excel." lightbox="../media/lemonade-workbook.png":::
-
-2. The dates in column **A** may be too wide to be displayed, so the cells may contain ***#######*** as previously shown. To see the dates, double-click the line between the **A** and **B** column headers. The dates are now shown in the format for the locale associated with your Microsoft account. For example, in the following image, the dates are shown in UK format (*dd/MM/yyyy*).
-
-    :::image type="content" source="../media/widened-column.png" alt-text="Screenshot of column A widened to show dates." lightbox="../media/widened-column.png":::
+    :::image type="content" source="../media/lemonade-formatted-xlsx.png" alt-text="Screenshot of Lemonade-formatted x l s x file in One Drive." lightbox="../media/lemonade-formatted-xlsx.png":::
 
 ## Exercise 1: Analyze data with a PivotTable
 
@@ -46,7 +36,7 @@ PivotTables are an excellent way to *slice and dice* data, summarizing numeric m
 
 ### Create a PivotTable
 
-1. If you haven't already done so, in your web browser, navigate to [https://onedrive.live.com](https://onedrive.live.com), and sign in using your Microsoft account credentials. Then open the **Lemonade.xlsx** workbook in the folder where you uploaded it in the **Before you start** section. Your workbook should look like this:
+1. If you haven't already done so, in your web browser, navigate to [https://onedrive.live.com](https://onedrive.live.com), and sign in using your Microsoft account credentials. If you completed the previous module in this learning path, then open the **Lemonade.xlsx** workbook, otherwise open the **Lemonade-formatted.xlsx** in the folder where you uploaded it in the **Before you start** section. Your workbook should look like this:
 
     :::image type="content" source="../media/conditional-bottom-ten.png" alt-text="Screenshot of Lemonade workbook in Excel Online.":::
 

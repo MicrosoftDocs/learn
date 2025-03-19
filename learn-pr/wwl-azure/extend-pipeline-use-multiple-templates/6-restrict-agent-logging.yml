@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.extend-pipeline-use-multiple-templates.restrict-agent-logging
+title: Restrict agent logging
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Restrict agent logging
+  description: "Restrict agent logging."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-restrict-agent-logging.md)]

@@ -7,7 +7,7 @@ In this module, you learned the basics of using Bash. Among other things, you:
 - Learned how to find and terminate rogue processes
 - Learned how to use Bash to filter output from another CLI tool
 
-There is much more you can do with Bash. We've gotten comfortable using Bash as a way to interact with our shell, but you can use the commands you've learned (and many more) to use Bash for full-fledged programming. Check out these resources for taking your Bash knowledge to the next level:
+There's more you can do with Bash. We've gotten comfortable using Bash as a way to interact with our shell, but you can use the commands you learned (and many more) to use Bash for full-fledged programming. Check out these resources for taking your Bash knowledge to the next level:
 
 - [Introduction to Bash from Loyola Marymount University](https://cs.lmu.edu/~ray/notes/bash/)
 - [Bash Academy](https://guide.bash.academy/)

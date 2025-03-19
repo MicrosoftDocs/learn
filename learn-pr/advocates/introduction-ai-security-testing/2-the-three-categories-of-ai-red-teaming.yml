@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-ai-security-testing.the-three-categories-of-ai-red-teaming
+title: The three categories of AI red teaming
+metadata:
+  title: The three categories of AI red teaming
+  description: Explanation of the categories of AI red teaming
+  ms.author: sayoung
+  author: sarah-yo
+  ms.date: 09/01/2024  
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-the-three-categories-of-ai-red-teaming.md)]

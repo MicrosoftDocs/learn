@@ -1,4 +1,4 @@
-To help you understand basic ways to troubleshoot container instances, perform some basic operations like:
+To help you understand basic ways to troubleshoot container instances, you can perform some basic operations like:
 
 * Pulling container logs
 * Viewing container events
@@ -11,7 +11,7 @@ Run the following `az container logs` command to see the output from the cats an
 ```azurecli
 az container logs \
   --resource-group learn-deploy-aci-rg \
-  --name aci-demo
+  --name aci-demo-files
 ```
 
 You get a similar output to:
@@ -39,13 +39,13 @@ Run `az container attach` to attach to your container:
 ```azurecli
 az container attach \
   --resource-group learn-deploy-aci-rg \
-  --name aci-demo
+  --name aci-demo-files
 ```
 
 You get a similar output to:
 
 ```output
-Container 'aci-demo' is in state 'Running'...
+Container 'aci-demo-files' is in state 'Running'...
 (count: 1) (last timestamp: 2021-09-21 23:48:14+00:00) pulling image "mcr.microsoft.com/azuredocs/azure-vote-front"
 (count: 1) (last timestamp: 2021-09-21 23:49:09+00:00) Successfully pulled image "mcr.microsoft.com/azuredocs/azure-vote-front"
 (count: 1) (last timestamp: 2021-09-21 23:49:12+00:00) Created container
@@ -69,7 +69,7 @@ As you diagnose and troubleshoot issues, you may need to run commands directly o
     ```azurecli
     az container exec \
       --resource-group learn-deploy-aci-rg \
-      --name aci-demo \
+      --name aci-demo-files \
       --exec-command /bin/sh
     ```
 
@@ -93,7 +93,7 @@ See how to monitor CPU and memory usage on your container.
     ```azurecli
     CONTAINER_ID=$(az container show \
       --resource-group learn-deploy-aci-rg \
-      --name aci-demo \
+      --name aci-demo-files \
       --query id \
       --output tsv)
     ```
@@ -176,4 +176,6 @@ In this module, you created resources using your Azure subscription. You should 
 
 1. In the **Overview** tab of the resource group, select **Delete resource group**.
 
-1. A new dialog box opens. Enter the name of the resource group again, and select **Delete**. All of the resources we created in this module are deleted.
+1. A new dialog box opens. Enter the name of the resource group and select **Delete**.
+
+1. Select **Delete** again to confirm deletion. All of the resources we created in this module are deleted.

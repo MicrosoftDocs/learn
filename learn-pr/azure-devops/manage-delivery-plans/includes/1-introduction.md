@@ -1,4 +1,4 @@
-Azure DevOps can help your team scale their development processes to deliver bigger, more ambitious projects. Let's rejoin the Tailspin Toys team as they tackle common problems organizations face as they grow. Together, we'll discover what it takes to manage work schedules across multiple teams effectively.
+Azure DevOps can help your team scale their development processes to deliver bigger, more ambitious projects. Let's rejoin the Tailspin Toys team as they tackle common problems that organizations face as they grow. Together, we'll discover what it takes to manage work schedules across multiple teams effectively.
 
 You met the team at Tailspin Toys earlier in this learning path. In the [previous module](/training/modules/choose-an-agile-approach?azure-portal=true), you watched as they began to manage their work schedule through Azure Boards. Soon, word of their early success began to spread, and now other teams are exploring how they can enjoy the same benefits.
 
@@ -13,7 +13,7 @@ After completing this module, you'll be able to:
 
 ## Prerequisites
 
-The modules in this learning path form a progression. We recommend you start at the beginning of the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path before you work on this module.
+The modules in this learning path form a progression. We recommend that you start at the beginning of the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path before you work on this module.
 
 If you'd rather do only this module, go through [Introduction to Azure DevOps](/training/modules/get-started-with-devops?azure-portal=true) first to set up your Azure DevOps organization.
 

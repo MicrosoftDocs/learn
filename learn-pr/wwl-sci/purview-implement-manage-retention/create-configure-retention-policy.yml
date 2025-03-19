@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-implement-manage-retention.create-configure-retention-policy
+title: Create and configure retention policies
+metadata:
+  title: Create and configure retention policies
+  description: "Create and configure retention policies."
+  ms.date: 07/01/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/create-configure-retention-policy.md)]

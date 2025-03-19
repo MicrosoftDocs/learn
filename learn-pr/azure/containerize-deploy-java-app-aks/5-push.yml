@@ -2,14 +2,20 @@
 uid: learn.containerize-deploy-java-app-aks.push
 title: Push the container image to Azure Container Registry
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: Push the container image to Azure Container Registry
   title: Push the container image to Azure Container Registry
-  description: Push the container image to Azure Container Registry
-  ms.date: 9/28/2021
-  author: chtrembl
-  ms.author: chtrembl
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Push the container image to Azure Container Registry.
+  ms.date: 02/12/2025
+  author: KarlErickson
+  ms.author: karler
+  ms.reviewer: yoterada
+  ms.topic: unit
+  ms.custom:
+    - devx-track-java
+    - devx-track-extended-java
 durationInMinutes: 4
 content: |
   [!include[](includes/5-push.md)]
+

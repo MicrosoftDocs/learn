@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-microsoft-intune-microsoft-copilot-security-integration.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  author: wwlpublish
+  ms.author: rstearman
+  ms.date: 06/21/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A multinational bank is facing daily threats from cybercriminals targeting sensitive financial data. The bank's security team needs to quickly analyze and respond to incidents. They also need to enforce strict compliance policies on all employee devices, manage device configurations to prevent unauthorized access, and deploy security updates and patches automatically to all devices. Which combination of Microsoft tools would be most effective for this scenario?"
+    choices:
+    - content: "Microsoft Intune and Microsoft Defender XDR"
+      isCorrect: false
+      explanation: "Incorrect. Although this combination provides device management and threat detection, it lacks the contextual insights and actionable intelligence provided by Security Copilot."
+    - content: "Microsoft Sentinel and Microsoft Defender XDR"
+      isCorrect: false
+      explanation: "Incorrect. While these tools provide threat detection and response, they do not offer the comprehensive device management and compliance enforcement capabilities required in this scenario."
+    - content: "Microsoft Security Copilot and Microsoft Intune"
+      isCorrect: true
+      explanation: "Correct. This combination provides both robust threat analysis and response capabilities (Security Copilot) and comprehensive device management and compliance enforcement (Intune), meeting all the requirements of the scenario."
+  - content: "An IT administrator needs to rename a device in the Microsoft Intune admin center. What steps should they follow?"
+    choices:
+    - content: "Sign in to the Microsoft Intune admin center, choose Devices > All devices > choose a device > ... > Rename device, type the new name in the text box, decide whether to restart the device after renaming it, and choose Rename."
+      isCorrect: true
+      explanation: "Correct. These are the correct steps to rename a device in the Microsoft Intune admin center."
+    - content: "Sign in to the Microsoft Intune admin center, choose Devices > All devices > choose a device > ... > Rename device, type the new name in the text box, and choose Rename."
+      isCorrect: false
+      explanation: "Incorrect. This answer is missing the step of deciding whether to restart the device after renaming it."
+    - content: "Sign in to the Microsoft Intune admin center, choose Devices > All devices > Bulk Device Actions, select the platform of the devices you want to rename, and then for Device action select Rename."
+      isCorrect: false
+      explanation: "Incorrect. This answer describes the process for renaming devices in bulk, not a single device."
+  - content: "John, a security analyst at XYZ Corp, has been given access to specific security plugins in Microsoft Security Copilot. He needs to use tools for incident response and threat hunting. What role should he be assigned to ensure a focused and secure workflow without altering platform settings?"
+    choices:
+    - content: "Global Administrator"
+      isCorrect: false
+      explanation: "Incorrect. The Global Administrator role would provide John with broad access across many areas, which is not necessary for his specific tasks."
+    - content: "Copilot contributor"
+      isCorrect: true
+      explanation: "Correct. The Copilot contributor role allows John to use specific security plugins for incident response and threat hunting without the ability to alter platform settings."
+    - content: "Copilot owner"
+      isCorrect: false
+      explanation: "Incorrect. The Copilot owner role would give John more permissions than necessary, including the ability to alter platform settings."

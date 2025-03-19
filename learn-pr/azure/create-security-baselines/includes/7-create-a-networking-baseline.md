@@ -2,11 +2,11 @@ By design, Azure networking services maximize flexibility, availability, resilie
 
 ## Azure networking security recommendations
 
-The following sections describe the Azure networking recommendations that are in CIS Microsoft Azure Foundations Security Benchmark v. 1.3.0. Included with each recommendation are the basic steps to complete in the Azure portal. You should complete these steps for your own subscription and by using your own resources to validate each security recommendation. Keep in mind that **Level 2** options might restrict some features or activity, so carefully consider which security options you decide to enforce.
+The following sections describe the Azure networking recommendations that are in CIS Microsoft Azure Foundations Security Benchmark v. 3.0.0. Included with each recommendation are the basic steps to complete in the Azure portal. You should complete these steps for your own subscription and by using your own resources to validate each security recommendation. Keep in mind that **Level 2** options might restrict some features or activity, so carefully consider which security options you decide to enforce.
 
 ### Restrict RDP and SSH access from the internet - Level 1
 
-It's possible to reach Azure VMs by using Remote Desktop Protocol (RDP) and the Secure Shell (SSH) protocol. You can use these protocols to manage VMs from remote locations. The protocols are standard in datacenter computing.
+You can reach Azure VMs by using Remote Desktop Protocol (RDP) and the Secure Shell (SSH) protocol. You can use these protocols to manage VMs from remote locations. The protocols are standard in datacenter computing.
 
 The potential security problem with using RDP and SSH over the internet is that attackers can use brute-force techniques to gain access to Azure VMs. After the attackers gain access, they can use your VM as a launching pad to compromise other machines on your virtual network, or even attack networked devices outside Azure.
 
@@ -14,13 +14,15 @@ We recommended that you disable direct RDP and SSH access from the internet for 
 
 1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Virtual machines**.
 
-1. In the left menu under **Settings**, select **Networking**.
+1. Select a virtual machine.
 
-1. In the **Networking** pane, verify that the **Inbound port rules** tab doesn't have a rule for RDP, for example: `port=3389, protocol = TCP, Source = Any or Internet`.
+1. In the left menu under **Networking**, select **Network settings**.
 
-1. Verify that the **Inbound port rules** tab doesn't have a rule for SSH, for example: `port=22, protocol = TCP, Source = Any or Internet`.
+1. Verify that the **Inbound port rules** section doesn't have a rule for RDP, for example: `port=3389, protocol = TCP, Source = Any or Internet`. You can use the **Delete** icon to remove the rule.
 
-:::image type="content" source="../media/azure-networking/rdp.png" alt-text="Screenshot the VM networking pane." lightbox="../media/azure-networking/rdp.png#lightbox":::
+1. Verify that the **Inbound port rules** section doesn't have a rule for SSH, for example: `port=22, protocol = TCP, Source = Any or Internet`. You can use the **Delete** icon to remove the rule.
+
+:::image type="content" source="../media/azure-networking/rdp.png" alt-text="Screenshot the VM network settings pane." lightbox="../media/azure-networking/rdp.png#lightbox":::
 
 When direct RDP and SSH access from the internet are disabled, you have other options that you can use to access these VMs for remote management:
 
@@ -33,7 +35,7 @@ When direct RDP and SSH access from the internet are disabled, you have other op
 
 Firewall systems help prevent unauthorized access to computer resources. If a firewall is turned on but isn't correctly configured, attempts to connect to SQL Server might be blocked.
 
-To access an instance of SQL Server through a firewall, you must configure the firewall on the computer that is running SQL Server. Allowing ingress for the IP range `0.0.0.0/0` (Start IP of `0.0.0.0` and End IP of `0.0.0.0`) allows open access to any and all traffic, potentially making the SQL Server database vulnerable to attacks. Ensure that no SQL Server databases allow ingress from the internet. Complete the following steps for each SQL Server instance.
+To access an instance of SQL Server through a firewall, you must configure the firewall on the computer that's running SQL Server. Allowing ingress for the IP range `0.0.0.0/0` (Start IP of `0.0.0.0` and End IP of `0.0.0.0`) allows open access to any and all traffic, potentially making the SQL Server database vulnerable to attacks. Ensure that no SQL Server databases allow ingress from the internet. Complete the following steps for each SQL Server instance.
 
 1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **SQL servers**.
 
@@ -59,7 +61,7 @@ NSG flow logs are an Azure Network Watcher feature that gives you information ab
 
 1. Select **Network Watcher** for your subscription and location.
 
-1. If no NSG flow logs exist for your subscription, create an NSG flow log.
+1. If no NSG flow logs exist for your subscription, [create an NSG flow log](/azure/network-watcher/nsg-flow-logs-portal).
 
 ### Set NSG flow log retention period to more than 90 days - Level 2
 
@@ -77,4 +79,4 @@ You can use NSG flow logs to check for anomalies and to gain insight into suspec
 
 1. Ensure that **Retention (days)** is greater than 90 days.
 
-1. If you change any settings, in the menu bar, select **Save**.
+1. If you change any settings, select **Save** in the menu bar.

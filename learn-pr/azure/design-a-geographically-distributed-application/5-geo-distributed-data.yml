@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-a-geographically-distributed-application.5-geo-distributed-data
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design a geographically distributed data architecture
   description: In this unit, you learn how to replicate databases between regions in a multi-region application architecture.
-  ms.date: 11/07/2019
-  author: jboeshart
-  ms.author: jaboes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 03/17/2023
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 title: Design a geographically distributed data architecture
 durationInMinutes: 6
 content: |
@@ -37,3 +38,4 @@ quiz:
     - content: "Use Azure SQL Database with an auto failover group."
       isCorrect: false
       explanation: "Auto failover groups use asynchronous replication, in which a transaction replicates after it's complete on the writeable replica. If a failure occurs before replication occurs, the change may be lost."
+

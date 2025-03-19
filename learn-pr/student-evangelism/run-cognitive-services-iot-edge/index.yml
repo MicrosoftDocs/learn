@@ -1,15 +1,18 @@
 ### YamlMime:Module
 uid: learn.oxford.run-cognitive-services-iot-edge
 metadata:
-  title: "Run Cognitive Services on IoT Edge"
-  description: "University of Oxford"
-  ms.date: 6/12/2020
-  author: leestott
-  ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub
-  ms.custom: team=nextgen
-title: "Run Cognitive Services on IoT Edge"
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: "Run Azure AI services on IoT Edge"
+  description: Implement a cognitive service for performing language detection on an IoT Edge device.
+  ms.date: 07/08/2024
+  author: orin-thomas
+  ms.author: orthomas
+  ms.topic: module
+  ms.custom: team=cloud_advocates
+  ms.collection: ce-advocates-ai-copilot
+  ms.service: azure-iot-edge
+title: "Run Azure AI services on IoT Edge"
 summary: "Implement a cognitive service for performing language detection on an IoT Edge device. Describe the components and steps for implementing a cognitive service on an IoT Edge device."
 abstract: |
     In this module, you will:
@@ -17,12 +20,12 @@ abstract: |
     - Implement a cognitive service for performing language detection on an edge device
     - Describe how the components and services of a solution to deploy a cognitive service on an edge device work together to solve the problem of language detection on an edge device.  
 
-    "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
 prerequisites: |
     - Basic knowledge of Azure IoT Edge
     - Basic knowledge of Azure IoT Hub
     - An active Azure account
 iconUrl: /training/achievements/student-evangelism/run-cognitive-services-on-iot-edge.svg
+hidden: true
 badge:
   uid: learn.oxford.run-cognitive-services-iot-edge.badge
 levels:
@@ -44,3 +47,4 @@ units:
 - learn.oxford.run-cognitive-services-iot-edge.exercise-test-cognitive-service
 - learn.oxford.run-cognitive-services-iot-edge.knowledge-check
 - learn.oxford.run-cognitive-services-iot-edge.summary
+

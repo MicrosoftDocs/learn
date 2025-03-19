@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.finetune-model-copilot-ai-studio.introduction
+title: Introduction
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Introduction
+  description: Introduction to fine-tuning a foundation model from the model catalog in Azure AI Foundry.
+  author: madiepev
+  ms.author: madiepev
+  ms.date: 11/28/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
+

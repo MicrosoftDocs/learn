@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn-wwl.get-started-sql-database-application-development
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Get started with Azure SQL Database for modern application development
+  description: "Learn how Azure SQL Database works, the key concepts, and practical examples to help developers effectively utilize Azure SQL Database in their cloud-based applications."
+  ms.date: 10/02/2024
+  author: jupadrao
+  ms.author: jupadrao
+  ms.topic: module-standard-task-based
+  ms.collection: wwl-ai-copilot
+  ms.service: azure
+  ai-usage: ai-assisted
+title: Get started with Azure SQL Database for modern application development
+summary: You'll explore different features and tools to help you develop in Azure SQL Database.
+abstract: |
+  By the end of this module, you'll be able to:
+  *   Explain the deployment options available.
+  *   Explore Hyperscale capabilities.
+  *   Understand how serverless works.
+  *   Explain application resilience options for Azure SQL Database.
+  *   Understand AI capabilities for Azure SQL Database.
+prerequisites: |
+  *   Ability to navigate the Azure portal.
+  *   Experience with T-SQL programming language at a basic level.
+  
+iconUrl: /training/achievements/1-prepare-to-maintain-databases-on-azure.svg
+levels:
+- intermediate
+roles:
+- developer
+- solution-architect
+products:
+- azure-sql-database
+- azure
+subjects: 
+  - databases
+  - cloud-computing
+  - artificial-intelligence
+units:
+- learn-wwl.get-started-sql-database-application-development.introduction
+- learn-wwl.get-started-sql-database-application-development.explain-sql-database-deployment-options
+- learn-wwl.get-started-sql-database-application-development.explore-hyperscale-capabilities
+- learn-wwl.get-started-sql-database-application-development.understand-serverless-compute-tier
+- learn-wwl.get-started-sql-database-application-development.enable-application-resilience
+- learn-wwl.get-started-sql-database-application-development.build-ai-application
+- learn-wwl.get-started-sql-database-application-development.exercise-enable-auto-failover-groups
+- learn-wwl.get-started-sql-database-application-development.knowledge-check
+- learn-wwl.get-started-sql-database-application-development.summary
+badge:
+  uid: learn-wwl.get-started-sql-database-application-development.badge

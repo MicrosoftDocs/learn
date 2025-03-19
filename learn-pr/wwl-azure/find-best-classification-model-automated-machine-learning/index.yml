@@ -1,13 +1,17 @@
 ### YamlMime:Module
 uid: learn.wwl.find-best-classification-model-automated-machine-learning
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Find the best classification model with Automated Machine Learning
-  description: "Find the best classification model with Automated Machine Learning"
-  ms.date: 01/20/2023
+  description: Learn how to find the best classification model with automated machine learning (AutoML). You'll use the Python SDK (v2) to configure and run an AutoML job.
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/10/2024
+  ms.service: azure-machine-learning
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
 title: Find the best classification model with Automated Machine Learning
 summary: Learn how to find the best classification model with automated machine learning (AutoML). You'll use the Python SDK (v2) to configure and run an AutoML job.
 abstract: |
@@ -17,7 +21,7 @@ abstract: |
   - Evaluate and compare models.
 prerequisites: |
   None
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/find-best-classification-model-automated-machine-learning.svg
 levels:
 - beginner
 roles:
@@ -36,3 +40,4 @@ units:
 - learn.wwl.find-best-classification-model-automated-machine-learning.summary
 badge:
   uid: learn.wwl.find-best-classification-model-automated-machine-learning.badge
+

@@ -4,21 +4,21 @@ Natural language processing (NLP) is a subfield of linguistics, computer science
 
 Challenges in natural language processing frequently involve speech recognition, natural language understanding, and natural language generation.
 
-## Azure prediction resource for the language understanding intelligent service (LUIS) app
+## Azure prediction resource for the conversational language understanding (CLU) app
 
-Language Understanding (LUIS) is a cloud-based conversational AI service that applies customized machine-learning intelligence to a user's conversational, natural language text to predict overall meaning, and pull out relevant, detailed information. LUIS provides access through its custom portal, APIs, and SDK client libraries.
+Conversational language understanding (CLU) is a cloud-based conversational AI service that applies customized machine-learning intelligence to a user's conversational, natural language text to predict overall meaning and pull out relevant, detailed information. CLU provides access through its custom portal, APIs, and SDK client libraries.
 
 ## Intents
 
-An intent represents a task or an action the user wants to do. It is a purpose or goal expressed in a user's utterance.
+An intent represents a task or an action the user wants to do. It's a purpose or goal expressed in a user's utterance.
 
 ## Entities
 
-An entity is an item or an element that is relevant to the user's intent. Entities define data that can be extracted from the utterance and is essential to complete a user's required action.
+An entity is an item or an element that's relevant to the user's intent. Entities define data that can be extracted from the utterance and are essential to complete a user's required action.
 
 ## Utterances
 
-Utterances are input from the user that your app needs to interpret. To train LUIS to extract intents and entities from them, it's vital to capture different kinds of example utterances for each intent. Active learning, or the process of continuing to train on new utterances, is essential to the machine-learning intelligence that LUIS provides. An utterance can have only one top-scoring intent, but it can have many entities.
+Utterances are input from the user that your app needs to interpret. To train CLU to extract intents and entities from them, it's vital to capture different kinds of example utterances for each intent. Active learning, or the process of continuing to train on new utterances, is essential to the machine-learning intelligence that CLU provides. An utterance can have only one top-scoring intent, but it can have many entities.
 
 ## Intent recognition
 

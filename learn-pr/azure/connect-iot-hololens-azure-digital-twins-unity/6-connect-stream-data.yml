@@ -2,13 +2,16 @@
 uid: learn.azure.connect-iot-hololens-azure-digital-twins-unity.connect-stream-data
 title: Exercise - Connect and stream Azure Digital Twin data to wind turbine assets
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Connect and stream Azure Digital Twin data to wind turbine assets
   description: Learn how to connect and stream Azure Digital Twin data to the wind turbine assets in your Unity project.
-  ms.date: 05/12/2021
+  ms.date: 09/10/2024
   author: JBrentJ
-  ms.author: jejacks
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: lolab
+  ms.topic: unit
+  ms.custom:
 durationInMinutes: 20
 content: |
   [!include[](includes/6-connect-stream-data.md)]
+

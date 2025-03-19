@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.protect-virtual-machines-with-azure-backup.5-restore-virtual-machine-data
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Restore virtual machine data
-  description: Learn about the different options for restoring an Azure VM from a previous backup.
-  ms.date: 08/27/2019
-  author: jboeshart
-  ms.author: jaboes
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  description: Learn about the different options for restoring an Azure virtual machine (VM) from a previous backup.
+  ms.date: 09/05/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 title: Restore virtual machine data
 durationInMinutes: 5
 content: |
@@ -28,12 +29,13 @@ quiz:
       explanation: Selecting this option allows for a disk to be restored and then used to replace a disk on an existing VM.
   - content: "You want to replace a disk on an existing VM but receive an error. What's the possible reason?"
     choices:
-    - content: The existing VM has been deleted and is no longer available
+    - content: The existing VM is deleted and is no longer available.
       isCorrect: true
       explanation: If the VM was deleted, the disk can't be restored.
-    - content: The existing VM is part of a different resource group in your Azure subscription
+    - content: The existing VM is part of a different resource group in your Azure subscription.
       isCorrect: false
-      explanation: The resource group that the VM belongs to doesn't matter in this particular case.
+      explanation: In this particular case, it doesn't matter what resource group the VM belongs to.
     - content: The existing VM is turned off
       isCorrect: false
-      explanation: The VM being turned off has no impact. The disk can still be replaced.
+      explanation: The VM being turned off has no effect. The disk can still be replaced.
+

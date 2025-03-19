@@ -2,13 +2,15 @@
 uid: learn.azure.create-an-app-to-run-parallel-compute-jobs-in-azure-batch.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
-  ms.date: 06/01/2019
+  ms.date: 02/14/2024
   author: lauradolan
-  ms.author: ladolan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: jushiman
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/11-summary.md)]
+

@@ -2,15 +2,18 @@
 uid: learn.wwl.manage-users-groups-licenses-azure-active-directory-use-windows-powershell.manage-licenses-microsoft-365
 title: Manage licenses in Microsoft 365 by using Windows PowerShell
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage licenses in Microsoft 365 by using Windows PowerShell
   description: "Manage licenses in Microsoft 365 by using Windows PowerShell"
   ms.date: 10/26/2022
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
 azureSandbox: false
 labModal: false
 durationInMinutes: 12
 content: |
   [!include[](includes/7-manage-licenses-microsoft-365.md)]
+

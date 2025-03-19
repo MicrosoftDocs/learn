@@ -3,14 +3,13 @@ uid: learn.wwl.turn-insight-into-action-combine-sap-other-data.examine-connectin
 title: Examine connecting to Power BI to display transformed data
 metadata:
   title: Examine connecting to Power BI to display transformed data
-  description: "Examine connecting to Power BI to display transformed data"
-  ms.date: 04/06/2022
+  description: "Use Power BI for data visualization to help business decision makers understand your findings."
+  ms.date: 12/23/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/7-examine-connect-to-power-bi-to-display-transformed-data.md)]

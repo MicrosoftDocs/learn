@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.github.intro-github-copilot-enterprise.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: This content is a part of the Introduction to GitHub Copilot Enterprise module.
+  author: a-a-ron
+  ms.author: aastewar
+  ms.date: 02/28/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

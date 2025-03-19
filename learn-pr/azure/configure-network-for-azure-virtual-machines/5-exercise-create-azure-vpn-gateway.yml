@@ -2,13 +2,17 @@
 uid: learn.configure-the-network-for-your-virtual-machines.5-exercise-create-azure-vpn-gateway
 title: Exercise - Create an Azure VPN gateway
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create an Azure VPN gateway
   description: Exercise - Create an Azure VPN gateway
-  ms.date: 09/24/2018
-  author: KumudD
-  ms.author: kumud
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/01/2023
+  author: cherylmc
+  ms.author: cherylmc
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurepowershell
 durationInMinutes: 40
 content: |
   [!include[](includes/5-exercise-create-azure-vpn-gateway.md)]
+

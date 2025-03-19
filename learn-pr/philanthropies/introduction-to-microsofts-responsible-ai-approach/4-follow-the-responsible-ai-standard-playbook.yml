@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.introduction-to-microsofts-responsible-ai-approach.follow-the-responsible-ai-standard-playbook
+title: Follow the responsible AI standard playbook
+metadata:
+  title: Follow the responsible AI standard playbook
+  description: This content is a part of the “Introduction to Microsoft's Responsible AI Approach” module.
+  author: yoosunee
+  ms.author: anruss
+  ms.date: 01/17/2025
+  ms.topic: unit
+  ms.collection:
+    - philanthropies-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-follow-the-responsible-ai-standard-playbook.md)]

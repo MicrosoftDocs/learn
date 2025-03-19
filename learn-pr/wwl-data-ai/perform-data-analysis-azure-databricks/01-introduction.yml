@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-data-analysis-azure-databricks.introduction
+title: Introduction
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Introduction
+  description: "Introduction"
+  ms.date: 12/12/2024
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/01-introduction.md)]

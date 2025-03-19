@@ -4,7 +4,7 @@ In the following example, you'll configure a mail flow rule that encrypts all ma
 
 Perform the following steps to create a mail flow rule in the Exchange Admin Center (EAC):
 
-1. In a web browser, navigate to the Exchange admin center at [https://outlook.office365.com/ecp/](https://outlook.office365.com/ecp/?azure-portal=true).
+1. In a web browser, navigate to the Exchange admin center at [https://outlook.office365.com/ecp/](https://www.office.com/?azure-portal=true).
 
 1. Sign in using a work or school account that has been granted Exchange administrator permissions.
 

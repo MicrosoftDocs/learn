@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-dream-destination-ai-copilot.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/17/2025
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - copilot-learning-hub
+  - ai-learning-hub
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the significance of providing specific details when asking Copilot to suggest a name for the destination?"
+    choices:
+    - content: "To ensure that the name is long and complex."
+      isCorrect: false
+      explanation: "Incorrect. The goal is not to create a long and complex name, but rather a name that accurately reflects the destination's essence."
+    - content: "To make sure that the name includes a pun or cultural reference."
+      isCorrect: false
+      explanation: "Incorrect. While a pun or cultural reference could be included, it's not a requirement. The aim is to create a name that captures the destination's essence."
+    - content: "To generate a name that accurately captures the essence and feel of the destination."
+      isCorrect: true
+      explanation: "Correct. Providing specific details helps Copilot generate a name that truly represents the destination's essence and evokes the desired feelings."
+  - content: "What is the main benefit of using the multimodal capabilities in Copilot?"
+    choices:
+    - content: "It allows the copilot to understand images shared in the chat."
+      isCorrect: true
+      explanation: "That's correct. Multimodal capabilities enable the copilot to interpret and answer questions about images, and provide visual responses."
+    - content: "It allows the copilot to search the web for web related content based on the chat history."
+      isCorrect: false
+      explanation: "That's incorrect. This speaks more to the features of Copilot."
+    - content: "It allows the copilot to perform actions and tasks within the chat without leaving the browser."
+      isCorrect: false
+      explanation: "That's incorrect. This speaks more to the features or benefits of Copilot in."
+  - content: "How do you refine image output using Copilot?"
+    choices:
+    - content: "Request Copilot to create an image without providing any context."
+      isCorrect: false
+      explanation: "Incorrect. Providing context helps Copilot generate an image that aligns with the user's requirements."
+    - content: "Use descriptive modifiers in the prompt and craft an image prompt with more details."
+      isCorrect: true
+      explanation: "Correct. Detailed prompts help Copilot generate images that closely match the user's expectations."
+    - content: "Ask Copilot to generate a random image."
+      isCorrect: false
+      explanation: "Incorrect. Randomly generated images may not align with the desired context or theme."

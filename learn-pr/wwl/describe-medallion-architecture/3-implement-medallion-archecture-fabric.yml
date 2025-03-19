@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-medallion-architecture.implement-medallion-archecture-fabric
+title: Implement a medallion architecture in Fabric
+metadata:
+  title: Implement a medallion architecture in Fabric
+  description: "Implement a medallion architecture in Fabric"
+  ms.date: 11/21/2024
+  author: wwlpublish
+  ms.author: theresai
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-implement-medallion-archecture-fabric.md)]

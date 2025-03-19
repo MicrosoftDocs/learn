@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.get-started-with-graphql-microsoft-fabric.exercise-work-with-graphql
+title: 'Exercise: Work with API for GraphQL in Microsoft Fabric'
+metadata:
+  title: 'Exercise: Work with API for GraphQL in Microsoft Fabric'
+  description: "Learn how to work with API for GraphQL in Microsoft Fabric."
+  ms.date: 10/24/2024
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+  ms.custom:
+    - ignite-2024
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise-work-with-graphql.md)]

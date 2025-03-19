@@ -2,15 +2,16 @@
 uid: learn.wwl.manage-alerts-blameless-retrospectives-just-culture.reduce-meaningless-non-actionable-alerts
 title: Reduce meaningless and non-actionable alerts
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Reduce meaningless and non-actionable alerts
   description: "Reduce meaningless and non-actionable alerts"
-  ms.date: 06/15/2022
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: lumac
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/7-reduce-meaningless-non-actionable-alerts.md)]

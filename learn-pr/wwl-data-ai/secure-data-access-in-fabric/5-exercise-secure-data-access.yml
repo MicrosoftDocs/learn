@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.secure-data-access-in-fabric.exercise
+title: 'Exercise: Secure data access in Microsoft Fabric'
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: 'Exercise: Secure data access in Microsoft Fabric'
+  description: "Learn how to secure data access in Microsoft Fabric."
+  ms.date: 10/18/2024
+  author: wwlpublish
+  ms.author: theresai
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise-secure-data-access.md)]

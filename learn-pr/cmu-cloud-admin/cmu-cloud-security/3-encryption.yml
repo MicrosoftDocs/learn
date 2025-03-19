@@ -4,11 +4,10 @@ title: Encryption
 metadata:
   title: Encryption
   description: Encryption
-  ms.date: 01/15/2020
+  ms.date: 06/07/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 10
 content: |

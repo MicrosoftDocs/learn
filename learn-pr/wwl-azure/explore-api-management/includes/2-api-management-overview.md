@@ -1,5 +1,4 @@
-
-API Management provides the core functionality to ensure a successful API program through developer engagement, business insights, analytics, security, and protection. Each API consists of one or more operations, and each API can be added to one or more products. To use an API, developers subscribe to a product that contains that API, and then they can call the API's operation, subject to any usage policies that may be in effect.
+API Management provides the core functionality to ensure a successful API program through developer engagement, business insights, analytics, security, and protection. Each API consists of one or more operations, and each API can be added to one or more products. To use an API, developers subscribe to a product that contains that API, and then they can call the API's operation, subject to any usage policies that might be in effect.
 
 ## API Management components
 
@@ -41,7 +40,7 @@ Groups are used to manage the visibility of products to developers. API Manageme
 * **Developers** - Authenticated developer portal users that build applications using your APIs. Developers are granted access to the developer portal and build applications that call the operations of an API.
 * **Guests** - Unauthenticated developer portal users. They can be granted certain read-only access, like the ability to view APIs but not call them.
 
-In addition to these system groups, administrators can create custom groups or use external groups in associated Azure Active Directory tenants. 
+In addition to these system groups, administrators can create custom groups or use external groups in associated Microsoft Entra tenants. 
 
 ## Developers
 

@@ -1,21 +1,26 @@
 ### YamlMime:Module
 uid: learn.wwl.design-machine-learning-model-training-solution
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design a machine learning model training solution
-  description: "Azure Machine Learning Python SDK v2"
-  ms.date: 12/06/2022
+  description: Design a machine learning model training solution
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/20/2025
+  ms.service: azure-machine-learning
+  ms.topic: module
+  ms.collection:
+    - wwl-ai-copilot
 title: Design a machine learning model training solution
 summary: Learn how to design a model training solution for machine learning projects.
 abstract: |
-  In this module, you'll learn how to:
-  - Identify machine learning tasks
-  - Choose a service to train a model
-  - Choose between compute options
-prerequisites: ""
+  In this module, you learn how to:
+  - Design a solution to get and prepare data.
+  - Choose a service and compute to train a model.
+  - Prepare for model deployment options.
+prerequisites: |
+  None
 iconUrl: /training/achievements/design-machine-learning-model-training-solution.svg
 levels:
 - beginner
@@ -29,6 +34,7 @@ subjects:
 units:
 - learn.wwl.design-machine-learning-model-training-solution.introduction
 - learn.wwl.design-machine-learning-model-training-solution.identify-tasks
+- learn.wwl.design-machine-learning-model-training-solution.prepare-data
 - learn.wwl.design-machine-learning-model-training-solution.choose-service-train
 - learn.wwl.design-machine-learning-model-training-solution.decide-between-compute-options
 - learn.wwl.design-machine-learning-model-training-solution.exercise
@@ -36,3 +42,4 @@ units:
 - learn.wwl.design-machine-learning-model-training-solution.summary
 badge:
   uid: learn.wwl.design-machine-learning-model-training-solution.badge
+

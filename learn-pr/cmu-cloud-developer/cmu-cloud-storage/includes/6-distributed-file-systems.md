@@ -1,6 +1,6 @@
 Switching gears now, we will discuss distributed file systems (DFSs). A distributed file system is a file system that has files distributed among multiple file servers. 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pSuz]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=a2659d02-6a2b-4672-8524-fbf96280afbd]
 
 It is important to note that in a distributed file system, the client views a single, global namespace that encompasses all the files across all the file system servers, as shown in the following figure.
 

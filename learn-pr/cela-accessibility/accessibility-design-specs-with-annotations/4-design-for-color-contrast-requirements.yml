@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility.accessibility-design-specs-with-annotations.design-for-color-contrast-requirements
+title: Design for color contrast requirements
+metadata:
+  title: Design for Color Contrast requirements
+  description: This unit is a part of the accessibility design specs with annotations module.
+  ms.date: 02/14/2025
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-design-for-color-contrast-requirements.md)]

@@ -2,13 +2,14 @@
 uid: learn.wwl.describe-significant-government-strategy-actions.describe-cybersecurity-infrastructure-security-agency-act-of-2018
 title: Describe the Cybersecurity and Infrastructure Security Agency Act of 2018
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe the Cybersecurity and Infrastructure Security Agency Act of 2018
   description: "Describe the Cybersecurity and Infrastructure Security Agency Act of 2018"
   ms.date: 04/29/2022
   author: wwlpublish
   ms.author: jesander
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

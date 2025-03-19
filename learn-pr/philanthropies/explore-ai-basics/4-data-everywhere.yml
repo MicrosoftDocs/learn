@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.explore-ai-basics.data-everywhere
+title: Data everywhere
+metadata:
+  title: Data everywhere
+  description: This content is a part of the AI basics module.
+  ms.date: 01/14/2025
+  author: yoosunee
+  ms.author: anruss
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-data-everywhere.md)]

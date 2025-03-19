@@ -39,7 +39,7 @@ Before you can publish modules, you need to create a registry for your organizat
 
    :::image type="content" source="../media/6-registry-created.png" alt-text="Screenshot of the Azure portal that shows the container registry deployment, with the button for going to a resource highlighted.":::
 
-1. In the container registry's **Overview** area, note the value of the **Login server** setting. It will look like _yourregistryname.azurecr.io_.
+1. In the container registry's **Overview** area, note the value of the **Login server** setting. It will be something like _yourregistryname.azurecr.io_.
 
    :::image type="content" source="../media/6-registry-login-server.png" alt-text="Screenshot of the Azure portal that shows the container registry's details, with the login server highlighted.":::
 
@@ -178,7 +178,7 @@ You can also remove the service connection and Azure DevOps project.
 
 - Azure App registration
 
-  1. From the portal home page, search for _Azure Active Directory_ and select it from the list of **Services**.
+  1. From the portal home page, search for _Microsoft Entra ID_ and select it from the list of **Services**.
   1. Go to **Manage** > **App registrations**.
   1. In **Deleted applications** select **toy-reusable**.
   1. Select **Delete permanently** and follow the prompts.

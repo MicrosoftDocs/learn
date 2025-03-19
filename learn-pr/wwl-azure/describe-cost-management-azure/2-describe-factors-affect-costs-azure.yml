@@ -2,15 +2,16 @@
 uid: learn.wwl.describe-cost-management-azure.describe-factors-affect-costs-azure
 title: Describe factors that can affect costs in Azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe factors that can affect costs in Azure
   description: "Describe factors that can affect costs in Azure"
-  ms.date: 02/02/2023
+  ms.date: 09/19/2024
   author: wwlpublish
   ms.author: robbarefoot
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/2-describe-factors-affect-costs-azure.md)]

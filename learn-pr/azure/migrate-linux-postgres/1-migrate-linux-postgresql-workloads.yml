@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-linux-postgres.migrate-linux-postgresql-workloads
+title: Migrate Linux and PostgreSQL workloads
+metadata:
+  title: Migrate Linux and PostgreSQL workloads
+  description: "Get an explanation and in-depth assessment of how to migrate Linux and PostgreSQL workloads to Azure by using Azure Migrate and Azure Database for PostgreSQL."
+  ms.date: 9/16/2024
+  author: asw101
+  ms.author: aawislan
+  ms.topic: unit
+durationInMinutes: 45
+content: |
+  [!include[](includes/1-migrate-linux-postgresql-workloads.md)]

@@ -4,36 +4,37 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check for the administer device authentication module."
-  ms.date: 03/13/2023
+  ms.date: 03/22/2024
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is a benefit for using Azure AD in an organization that already has Active Directory Domain Services implemented?"
+  - content: "What is a benefit for using Microsoft Entra ID in an organization that already has Active Directory Domain Services implemented?"
     choices:
     - content: "To remove the need for domain controllers"
       isCorrect: false
       explanation: "Incorrect. Domain controllers are always required when using AD DS. Try again."
     - content: "To enable iOS and Android devices to be managed using Group Policy"
       isCorrect: false
-      explanation: "Incorrect. Leveraging Azure AD can provide management options for non-Windows devices, but it does not manage them using Group Policy. Try again."
+      explanation: "Incorrect. Leveraging Microsoft Entra ID can provide management options for non-Windows devices, but it doesn't manage them using Group Policy. Try again."
     - content: "To offer users the ability to use their personal devices to access organizational resources"
       isCorrect: true
-      explanation: "Correct. With Azure AD join, devices can access resources without the need to join a domain."
-  - content: "What is a benefit from using Hybrid Azure AD join?"
+      explanation: "Correct. With Microsoft Entra join, devices can access resources without the need to join a domain."
+  - content: "What is a benefit from using Microsoft Entra hybrid join?"
     choices:
     - content: "Organizations can apply OS configurations to employee-owned devices."
       isCorrect: false
       explanation: "Incorrect. The device must be enrolled with an MDM such as Microsoft Intune to apply configuration policies. Try again."
     - content: "To allow continued use of Group Policy to manage domain-joined devices"
       isCorrect: true
-      explanation: "Correct. Organizations transitioning to Azure AD take time. Hybrid AD join allows continued use of existing group policy while leveraging the benefits that Azure AD adds."
+      explanation: "Correct. Organizations transitioning to Microsoft Entra ID take time. Hybrid AD join allows continued use of existing group policy while leveraging the benefits that Microsoft Entra ID adds."
     - content: "To automatically configure a broad range of older versions of Windows devices"
       isCorrect: false
       explanation: "Incorrect. Before an organization can use Hybrid Azure join, the environment must be reviewed to determine whether it supports Windows down-level devices. Try again."

@@ -2,13 +2,14 @@
 uid: learn.wwl.describe-government-its-structure.defense-information-systems-agency-disa
 title: Describe the Defense Information Systems Agency (DISA)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Describe the Defense Information Systems Agency (DISA)
   description: "Describe the Defense Information Systems Agency (DISA)"
   ms.date: 04/29/2022
   author: wwlpublish
   ms.author: jesander
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

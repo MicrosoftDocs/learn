@@ -1,30 +1,40 @@
 
 Today’s world is about collaboration, working with people both inside and outside of your organization. That means you'll sometimes need to provide access to your organization’s applications or data to external users.
 
-Azure AD External Identities is a set of capabilities that enable organizations to allow access to external users, such as customers or partners. Your customers, partners, and other guest users can "bring their own identities" to sign in.
+Microsoft Entra External ID combines powerful solutions for working with people outside of your organization. With External ID capabilities, you can allow external identities to securely access your apps and resources. Whether you’re working with external partners, consumers, or business customers, users can bring their own identities. These identities can range from corporate or government-issued accounts to social identity providers like Google or Facebook.
 
-This ability for external users is enabled through Azure AD support of external identity providers like other Azure AD tenants, Facebook, Google, or enterprise identity providers. Admins can set up federation with identity providers so your external users can sign in with their existing social or enterprise accounts instead of creating a new account just for your application.
+:::image type="content" source="../media/external-identities-overview.png" alt-text="Diagram showing elements of Microsoft External ID. On the left, it shows Consumers business customers, and guests. On the right, it shows business apps, consumer apps, and on-premises apps. In the center, is a circle showing secure user access, seamless experience, and secure app development.":::
 
-There are two different Azure AD External Identities: B2B and B2C.
+Microsoft Entra External ID addresses the scenarios that are encountered when it comes to working with external users.
 
-- B2B collaboration allows you to share your apps and resources with external users.
-- B2C is an identity management solution for consumer and customer facing apps.
+- Collaborate with business guests
+- Secure your apps for consumers and business customers
 
-## B2B collaboration
+Also, each of these scenarios suggests a different approach for how an organization configures their Microsoft Entra ID tenant.
 
-B2B collaboration allows you to share your organization’s applications and services with guest users from other organizations, while maintaining control over your own data. B2B collaboration uses an invitation and redemption process. You can also enable self-service sign-up user flows to let external users sign up for apps or resources themselves. Once the external user has redeemed their invitation or completed sign-up, they're represented in the same directory as employees but with a user type of guest.  As a guest, they can now access your resources with their credentials.
+There are two ways to configure a tenant, depending on how the organization intends to use the tenant and the resources they want to manage:
 
-Guest users can be managed in the same way as employees, added to the same groups, and so on.  With B2B, SSO to all Azure AD-connected apps are supported.
+- A workforce tenant configuration is for your employees, internal business apps, and other organizational resources. You can invite external business partners and guests to your workforce tenant.
+- An external tenant configuration is used exclusively for External ID scenarios where you want to publish apps to consumers or business customers.
 
-## B2C access management
+:::image type="content" source="../media/external-id-tenant-configurations.png" alt-text="Diagram showing a representation of the two external ID scenarios and the corresponding tenant type. Collaboration with business guests uses a workforce tenant configuration. External facing apps use an external tenant configuration.":::
 
-Azure AD B2C is a customer identity access management (CIAM) solution. Azure AD B2C allows external users to sign in with their preferred social, enterprise, or local account identities to get single sign-on to your applications. Azure AD B2C supports millions of users and billions of authentications per day. It takes care of the scaling and safety of the authentication platform, monitoring, and automatically handling threats like denial-of-service, password spray, or brute force attacks.
+### Collaborate with business guests
 
-With Azure AD B2C, external users are managed in the Azure AD B2C directory, separately from the organization's employee and partner directory. SSO to customer owned apps within the Azure AD B2C tenant is also supported.
+If you want to enable your employees to collaborate with business partners and guests, use External ID for B2B collaboration.
 
-Azure AD B2C is an authentication solution that you can customize with your brand so that it blends with your web and mobile applications.
+External ID B2B collaboration allows your workforce to collaborate with external business partners.
 
-![Azure AD B2C customized sign-in screen](../media/customized-screen.png)
+Using your workforce tenant, you can use B2B collaboration to share your company's applications and services with guests, while maintaining control over your own corporate data. You can invite anyone to sign in to your Microsoft Entra organization using their own credentials so they can access the apps and resources you want to share with them.
 
+Use B2B collaboration when you need to let business guests access your Office 365 apps, software-as-a-service (SaaS) apps, and line-of-business applications. There are no credentials associated with business guests. Instead, they authenticate with their home organization or identity provider, and then your organization checks the user’s eligibility for guest collaboration.
 
-Azure AD External Identities is a feature of Premium P1 and P2 Azure AD editions, and pricing is based on Monthly Active Users. For more information, see [Azure AD pricing](https://azure.microsoft.com/pricing/details/active-directory/external-identities/).
+:::image type="content" source="../media/b2b-collaboration-overview.png" alt-text="Diagram showing a representation of B2B collaboration.":::
+
+### Secure your apps for consumers and business customers
+
+If you’re an organization or a developer creating consumer apps, use External ID to quickly add authentication and customer identity and access management (CIAM) to your application.
+
+Microsoft Entra External ID includes Microsoft's customer identity and access management (CIAM) solution that includes features like self-service registration, personalized sign-in experiences including single sign-on (SSO) with social and enterprise identities, and customer account management. Because these CIAM capabilities are built into Microsoft Entra ID, you also benefit from platform features like enhanced security, compliance, and scalability.
+
+:::image type="content" source="../media/overview-ciam.png" alt-text="Diagram showing a representation of External ID in an external tenant.":::

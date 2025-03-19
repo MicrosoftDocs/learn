@@ -2,14 +2,19 @@
 uid: learn.azure.azure-java-app-enable-authentication-authorization.exercise-sign-in-with-msal
 title: Exercise - Sign in users with MSAL
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Sign in users with MSAL
   description: In this exercise, you will use MSAL in a Java web application to sign in users.
-  ms.date: 06/11/2021
-  author: navyasric
-  ms.author: nacanuma
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/21/2023
+  author: KarlErickson
+  ms.author: karler
+  ms.reviewer: yoterada
+  ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
 durationInMinutes: 5
 content: |
   [!include[](includes/5-exercise-sign-in-with-msal.md)]
+

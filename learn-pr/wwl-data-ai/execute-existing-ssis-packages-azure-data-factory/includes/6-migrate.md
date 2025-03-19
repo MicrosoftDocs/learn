@@ -1,62 +1,43 @@
-With the Azure-SSIS integration runtime installed and SQL Server Data Tools (SSDT) you have the capability to deploy and manage SSIS packages that you create in the cloud. For some packages, you may be able to rebuild them by redeploying them in the Azure-SSIS runtime. However, there may be some SSIS packages that already exist within your environment that may not be compatible? How should you deal with them?
+With the Azure-SSIS integration runtime installed and SQL Server Data Tools (SSDT) you have the capability to deploy and manage SSIS packages that you create in the cloud. For some packages, you may be able to rebuild them by redeploying them in the Azure-SSIS runtime. However, there may be some SSIS packages that already exist within your environment that may not be compatible.
 
-## Perform assessments of your SSIS packages.
+## Perform assessments of your SSIS packages
 
-When you migrate your database workloads from SQL Server on premises to Azure SQL database services, you may have to migrate SSIS packages as well. The first step required is to perform an assessment of you current SSIS packages to make sure that they are compatible in Azure.
-Fortunately, you can use the Data Migration Assistant (DMA) to perform an assessment of the SSIS packages that exist and identify any compatibility issues with them. The Data Migration Assistant has two main categories of information:
--	Migration blockers: Issues that prevent your existing SSIS packages to run on Azure-SSIS Integration Runtime environments.
+When you migrate your database workloads from SQL Server on premises to Azure SQL database services, you may have to migrate SSIS packages as well. The first step required is to evaluate your current SSIS packages to make sure that they are compatible in Azure.
 
--	Information issues: SSIS features within your packages that are only partially supported, or are deprecated.
-Regardless of which category of information you receive, the Data Migration Assistant will perform the assessment on a batch of SSIS packages and provide guidance and potential mitigation steps that you can use to address the blockers and issues that are raised.
+Fortunately, you can use the SQL Server Data Tools (SSDT) to test and debug SSIS packages and identify any compatibility issues with them. 
 
 ## Account for SQL Server Agent jobs
 
-Many SSIS packages are scheduled to execute on a recurring basis. To that end, there are job definitions held within the SQL Server Agent that are used to manage the execution of SSIS packages. When you migrate your SSIS packages, you can also migrate the associated jobs within the SQL Server Agent
+Many SSIS packages are scheduled to execute on a recurring basis. To that end, there are job definitions held within the SQL Server Agent that are used to manage the execution of SSIS packages. When you migrate your SSIS packages, you can also migrate the associated jobs within the SQL Server Agent via SQL Server Management Studio (SSMS).
+
+To learn more how to migrate SQL Server Agent jobs associated with SSIS packages, see [Migrate SQL Server Agent jobs to ADF with SSMS](/azure/data-factory/how-to-migrate-ssis-job-ssms).
 
 ## Perform a migration of your packages
 
-Before migrating, you must know which Azure SQL database service you are migrating to. This can include migrating to Azure SQL Managed Instance (MI), or Azure SQL Database. Furthermore, when migrating SSIS packages. you have to consider the location of the SSIS packages that you are migrating, as this can impact how you migrate the packages, and which tool you will need to use. There are four types of storage including:
+Before migrating, you must know which Azure SQL database service you are migrating to. This can include migrating to Azure SQL Managed Instance (MI), or Azure SQL Database. Furthermore, when migrating SSIS packages you have to consider the location of the SSIS packages that you are migrating, as this can impact how you migrate the packages, and which tool you will need to use. There are four types of storage including:
+
 -	SSIS Catalog (also known as SSISDB)
 -	File System
 -	MSDB database in SQL Server
 -	SSIS Package store
 
-Based on this information, you can use the following table as a basis for understanding the tools you can use to perform migration assessments, and to perform the migration itself.
+## Azure Database Migration Service
 
-[![SSIS migration matrix guide](../media/ssis-migration-matrix.png)](../media/ssis-migration-matrix.png#lightbox)
+The Azure Database Migration Service helps you identify compatibility issues that can impact database functionality in your new version of Azure SQL. Azure DMS recommends performance and reliability improvements for your target environment and allows you to move your schema, data, and objects from your source server to your target server.
 
-## Microsoft Data Migration Assistant
+This tool can be helpful to you in identifying any issues that can affect a migration to an Azure SQL data platform, and with the results you can evaluate your SSIS packages for compatibility. It supports a variety of migration scenarios, including online, offline, and hybrid migrations.
 
-The Data Migration Assistant helps you upgrade to a modern data platform by detecting compatibility issues that can impact database functionality in your new version of SQL Server or Azure SQL Database. DMA recommends performance and reliability improvements for your target environment and allows you to move your schema, data, and objects from your source server to your target server.
+> [!TIP]
+> To understand additional features and tools for migrating SQL Server workloads to Azure SQL, see [Migrate SQL Server workloads to Azure SQL](/training/paths/migrate-sql-workloads-azure/).
 
-![Perfoming assessments in the Data Migration Assistant](../media/welcome-to-data-migration-assistant.png)
+## Data Migration Assistant
 
-This tool can be helpful to you in identifying any issues that can affect a migration to an Azure SQL data platform. The DMA can run assessment projects that will identify any blocking issues or unsupported features that are currently in use with your on-premises SQL Server. It can also help you understand the new features in the target SQL Server platform that the database can benefit from after a migration. The DMA can also perform migration projects that can migrate an on-premises SQL Server instance to a modern SQL Server instance hosted on-premises or on an Azure virtual machine (VM) that is accessible from your on-premises network.
+Data Migration Assistant (DMA) is a tool designed to facilitate your transition to an updated data platform. It identifies potential compatibility problems that could affect the functionality of your database on the new version of SQL Server. In addition to suggesting enhancements for performance and reliability in your target environment, DMA also enables the migration of your schema, data, and uncontained objects from your source server to your target server.
 
-The Data Migration Assistant replaces all previous versions of SQL Server Upgrade Advisor and should be used for upgrades for most SQL Server versions.
+> [!NOTE]
+> Whenever possible, we recommend that you use the [Azure Database Migration Service](/azure/dms/dms-overview?azure-portal=true) for enhanced overall experience, which is available as [Azure SQL Migration extension for Azure Data Studio](/azure-data-studio/extensions/azure-sql-migration-extension?azure-portal=true), or via [Azure Portal](https://aka.ms/dmsazureportal?azure-portal=true), or through [Azure PowerShell and Azure CLI](/azure/dms/migration-dms-powershell-cli?azure-portal=true).
 
-## Supported SQL Server source and targets
-
-The Data Migration Assistant supports the following source and target technologies
-
-**Sources**
-- SQL Server 2005
-- SQL Server 2008
-- SQL Server 2008 R2
-- SQL Server 2012
-- SQL Server 2014
-- SQL Server 2016
-- SQL Server 2017 on Windows
-
-**Targets**
-- SQL Server 2012
-- SQL Server 2014
-- SQL Server 2016
-- SQL Server 2017 on Windows and Linux
-- Azure SQL Database
-- Azure SQL Database Managed Instance
-
-## Using the Data Migration Assistant.
+### Using the Data Migration Assistant
 
 On completion of the installation, the Data Migration Assistant opens. The first step is to configure the type of project that you want to run. There are two choices:
 
@@ -83,7 +64,7 @@ On completion of the installation, the Data Migration Assistant opens. The first
 
     ![Migration options in the Data Migration Assistant](../media/perform-migration-data-migration-assistant.png)
 
-## Best practices for running Data Migration Assistant
+### Best practices for running Data Migration Assistant
 
 The following list outlines the best practices that you should consider when working with the Data Migration Assistant:
 

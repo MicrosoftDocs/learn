@@ -10,7 +10,7 @@ This module consists of four lessons:
 
 **Lesson 4** – Enable Containers security 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE50u1J] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=8b9fa8af-3d03-45fb-aa23-3f8a6a6d5eef] 
 
 ### Module 2 Tips and Tricks 
 

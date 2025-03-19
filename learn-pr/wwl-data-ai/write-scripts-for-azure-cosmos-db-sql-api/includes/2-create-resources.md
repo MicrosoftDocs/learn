@@ -8,7 +8,7 @@ When managing Azure Cosmos DB for NoSQL accounts using the Azure CLI, most comma
 To create a new account, you will need to use the **az cosmosdb create** command. This command only requires, at a minimum, the name of the new account to create and the target resource group for the account resource. When creating the new account, you must ensure that the name you use is globally unique to avoid the command failing due to a name conflict with another service instance.
 
 > [!TIP]
-> By default, this command will create a new account using the NoSQL API.
+> By default, this command will create a new NoSQL account.
 
 ```azurecli
 az cosmosdb create \
@@ -16,13 +16,13 @@ az cosmosdb create \
     --resource-group '<resource-group>'
 ```
 
-When creating a new account, you can also optionally specify extra parameters to control the characteristics of the newly created account. For example, this command enables the free tier and sets the default consistency level to **Strong**.
+When creating a new account, you can also optionally specify extra parameters to control the characteristics of the newly created account. For example, this command enables the free tier and sets the default consistency level to **Eventual**.
 
 ```azurecli
 az cosmosdb create \
     --name '<account-name>' \
     --resource-group '<resource-group>' \
-    --default-consistency-level 'strong' \
+    --default-consistency-level 'Eventual' \
     --enable-free-tier 'true'
 ```
 

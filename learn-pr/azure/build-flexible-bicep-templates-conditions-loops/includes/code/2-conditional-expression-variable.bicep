@@ -9,7 +9,7 @@ param auditStorageAccountName string = 'bearaudit${uniqueString(resourceGroup().
 var auditingEnabled = environmentName == 'Production'
 var storageAccountSkuName = 'Standard_LRS'
 
-resource auditStorageAccount 'Microsoft.Storage/storageAccounts@2021-09-01' = if (auditingEnabled) {
+resource auditStorageAccount 'Microsoft.Storage/storageAccounts@2023-05-01' = if (auditingEnabled) {
   name: auditStorageAccountName
   location: location
   sku: {
@@ -18,7 +18,7 @@ resource auditStorageAccount 'Microsoft.Storage/storageAccounts@2021-09-01' = if
   kind: 'StorageV2'
 }
 
-resource auditingSettings 'Microsoft.Sql/servers/auditingSettings@2021-11-01-preview' = if (auditingEnabled) {
+resource auditingSettings 'Microsoft.Sql/servers/auditingSettings@2024-05-01-preview' = if (auditingEnabled) {
   parent: server
   name: 'default'
   properties: {

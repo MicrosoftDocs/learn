@@ -2,13 +2,16 @@
 uid: learn.tensorflow.intro-computer-vision.image-data
 title: Introduction to image data
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction to image data
   description: Learn how image data can be represented as tensors for neural network training
-  ms.date: 07/07/2021
   author: shwars
-  ms.author: dmitryso
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: chnoring
+  ms.date: 07/07/2021
+  ms.topic: unit
+  ms.collection:
+    - ce-advocates-ai-copilot
   ms.custom: team=nextgen
 durationInMinutes: 10
 sandbox: true
@@ -30,3 +33,4 @@ quiz:
     - content: "32x32x3 tensor of floats in the range 0..255"
       isCorrect: false
       explanation: "All values should be normalized in the range 0..1"
+

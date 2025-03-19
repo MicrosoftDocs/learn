@@ -2,13 +2,15 @@
 uid: learn.introduction-to-azure-files.what-is-azure-file-sync
 title: What is Azure File Sync?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is Azure File Sync?
   description: In this unit, you'll learn about Azure File Sync.
-  ms.date: 08/30/2022
-  author: kendownie
+  ms.date: 01/08/2025
+  author: khdownie
   ms.author: kendownie
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-durationInMinutes: 8
+  ms.topic: unit
+durationInMinutes: 4
 content: |
   [!include[](includes/3-what-is-azure-file-sync.md)]
+

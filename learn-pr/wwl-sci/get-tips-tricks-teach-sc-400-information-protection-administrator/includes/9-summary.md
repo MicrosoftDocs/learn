@@ -1,11 +1,9 @@
-
-
 SC-400: Microsoft Information Protection Administrator gives students the opportunity to learn a digital skillset that improves their career prospects. Educators can facilitate the SC-400: Microsoft Information Protection Administrator courseware and exams as part of academic courses and programs.
 
 Supplemental Resources:
 
 - [Microsoft Learn for Educators](https://aka.ms/msle)  
-- [Learning Download Center](https://aka.ms/ldc)
+- [Learning Download Center](https://techcommunity.microsoft.com/blog/mctnews/current-courseware-downloading-process/4196123)
 - [Learn Events](https://aka.ms/LearnTV)
 - [Microsoft Technical Documentation](https://aka.ms/docs)
 - [Microsoft Whiteboard](https://aka.ms/whiteboard)

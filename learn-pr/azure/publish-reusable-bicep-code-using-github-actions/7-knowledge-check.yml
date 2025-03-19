@@ -2,14 +2,17 @@
 uid: learn.azure.publish-reusable-bicep-code-using-github-actions.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 04/05/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/22/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 3
 content: |
   [!include[](includes/7-knowledge-check.md)]
@@ -51,3 +54,4 @@ quiz:
     - content: You add a new output.
       isCorrect: false
       explanation: Incorrect. Adding a new output isn't a breaking change, so you don't need to update the major version.
+

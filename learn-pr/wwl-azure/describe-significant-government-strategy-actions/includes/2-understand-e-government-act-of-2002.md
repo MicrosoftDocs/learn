@@ -25,7 +25,7 @@ The act creates a framework that requires US Government agencies to use Internet
 
 ### FISMA
 
-The act recognizes FISMA, or the Federal Information Security Management Act, as Title III. FISMA officially identifies the importance of information security to the national security and economic security of the United States.
+The act recognizes FISMA, or the Federal Information Security Management Act, as Title III. FISMA officially identifies the importance of information security to the national/regional security and economic security of the United States.
 
 FISMA requires each agency to develop, document, implement, and maintain a program to provide information security to the systems that support the operations and assets of the agency, even those that are provided by other agencies, contractors, and outside sources.
 
@@ -43,7 +43,7 @@ This action is important because federal, state, local, and tribal governments a
 
 ### Unquantified goals
 
-The act also includes a number of unquantified goals, such as promoting better informed decision making; access to government information across multiple channels; better government transparency and accountability; utilizing best practices from industry; providing access to services in a way that addresses personal privacy, national security, records retention, accessibility, and other relevant laws. While these are unquantifiable, they do set the vision and intent for what the government is hoping to achieve.
+The act also includes a number of unquantified goals, such as promoting better informed decision making; access to government information across multiple channels; better government transparency and accountability; utilizing best practices from industry; providing access to services in a way that addresses personal privacy, national/regional security, records retention, accessibility, and other relevant laws. While these are unquantifiable, they do set the vision and intent for what the government is hoping to achieve.
 
 ## Importance
 

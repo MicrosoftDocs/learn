@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.explore-foundation-models-in-model-catalog.exercise
+title: Exercise - Explore foundation models in the model catalog
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Exercise - Explore foundation models in the model catalog
+  description: Exercise on exploring foundation models in the model catalog in the Azure Machine Learning workspace.
+  author: madiepev
+  ms.author: madiepev
+  ms.date: 07/25/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise.md)]
+

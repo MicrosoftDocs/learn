@@ -1,4 +1,3 @@
-
 Software developers love it when they can write code that saves keystrokes and visual space without sacrificing readability. Only apply the phrase "less is more" in the development process when it makes your code more readable and understandable.
 
 If a code block needs only one line of code, chances are you don't need to define a formal code block using curly braces. Although technically you don't even need to separate your code into multiple lines, combining statements on a single line can make your code hard to read.

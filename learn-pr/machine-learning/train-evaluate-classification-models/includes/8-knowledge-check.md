@@ -1,1 +1,1 @@
-Answer the following questions to check your learning.
+Answer the following questions to check your understanding.

@@ -1,24 +1,34 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-core-data-concepts
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore core data concepts
-  description: "Explore core data concepts"
-  ms.date: 03/15/2023
+  description: "This content is a part of Explore core data concepts."
+  ms.date: 08/28/2024
   author: wwlpublish
   ms.author: rcaper
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
+  ms.service: azure-education
+  ai-usage: human-only
 title: Explore core data concepts
 summary: Data powers the digital transformation that is sweeping across organizations and society in general. But what is &quot;data&quot;, and how is it represented and used?
 abstract: |
-  In this module you will learn how to:
-  - Identify common data formats
-  - Describe options for storing data in files
-  - Describe options for storing data in databases
-  - Describe characteristics of transactional data processing solutions
-  - Describe characteristics of analytical data processing solutions
-prerequisites: |
-  None
+  In this module, you learn how to:
+
+  -   Identify common data formats.
+
+  -   Describe options for storing data in files.
+
+  -   Describe options for storing data in databases.
+
+  -   Describe characteristics of transactional data processing solutions.
+
+  -   Describe characteristics of analytical data processing solutions.
+prerequisites: None
 iconUrl: /training/achievements/explore-core-data-concepts.svg
 levels:
 - beginner

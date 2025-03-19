@@ -4,11 +4,10 @@ title: Plan for Common Event Format connector
 metadata:
   title: Plan for Common Event Format connector
   description: "Plan for Common Event Format connector"
-  ms.date: 01/19/2023
+  ms.date: 02/11/2025
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

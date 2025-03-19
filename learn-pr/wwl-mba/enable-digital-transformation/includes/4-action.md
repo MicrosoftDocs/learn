@@ -64,7 +64,7 @@ Watch this video to see how Ørsted uses and integrates Microsoft solutions.
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MHLi]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e6737d85-eb5a-43fe-8610-0c90026a548c]
 
 Microsoft solutions help Ørsted optimize its operations by transforming data from its 1,300 offshore wind turbines into insights for predictive maintenance that save time and resources. Furthermore, the company is transforming their products and making it faster to build new wind farms.
 

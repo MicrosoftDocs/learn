@@ -1,6 +1,6 @@
-The Microsoft 365 admin center is a web-based console that you can use to manage users, groups, licensing, and other tenant-level configuration settings. When you manage users and groups from here, the properties you modify might be part of Azure AD, Exchange Online, or another service. This console provides a unified interface for some common management tasks.
+The Microsoft 365 admin center is a web-based console that you can use to manage users, groups, licensing, and other tenant-level configuration settings. When you manage users and groups from here, the properties you modify might be part of Microsoft Entra ID, Exchange Online, or another service. This console provides a unified interface for some common management tasks.
 
-Links to service-specific, web-based consoles enable you to perform more detailed configuration of Microsoft 365 services. You can use these links to manage services such as Azure AD, Exchange Online, Microsoft Teams, and SharePoint Online. With the service-specific consoles, you can perform tasks such as:
+Links to service-specific, web-based consoles enable you to perform more detailed configuration of Microsoft 365 services. You can use these links to manage services such as Microsoft Entra ID, Exchange Online, Microsoft Teams, and SharePoint Online. With the service-specific consoles, you can perform tasks such as:
 
 - Creating users and group.
 - Modifying email addresses.

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.defender-iot-fine-tune-deployment.describe-process-fine-tune
+title: Describe the processes to fine-tune and create a baseline for an OT sensor
+metadata:
+  title: Describe the processes to fine-tune and create a baseline for an OT sensor
+  description: "Describe the processes to fine-tune and create a baseline for an OT sensor."
+  ms.date: 5/23/2024
+  author: limwainstein
+  ms.author: lwainstein
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-describe-process-fine-tune.md)]
+ 

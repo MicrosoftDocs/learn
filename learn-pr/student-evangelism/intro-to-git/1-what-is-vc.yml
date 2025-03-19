@@ -5,10 +5,9 @@ metadata:
   title: What is version control?
   description: What is version control?
   ms.date: 03/05/2021
-  author: softchris
-  ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-git
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 5
 content: |

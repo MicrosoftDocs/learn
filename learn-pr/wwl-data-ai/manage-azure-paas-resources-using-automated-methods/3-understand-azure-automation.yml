@@ -2,13 +2,14 @@
 uid: learn.wwl.manage-azure-paas-resources-using-automated-methods.understand-azure-automation
 title: Understand Azure Automation
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Understand Azure Automation
   description: "Understand Azure Automation"
-  ms.date: 06/10/2022
-  author: wwlpublish
+  ms.date: 02/27/2025
+  author: JulianePadrao
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 9

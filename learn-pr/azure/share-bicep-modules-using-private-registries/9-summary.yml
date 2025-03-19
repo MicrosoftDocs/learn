@@ -2,14 +2,18 @@
 uid: learn.azure.share-bicep-modules-using-private-registries.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: Summary for sharing Bicep modules by using private registries.
-  ms.date: 03/06/2023
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 09/27/2024
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]
+

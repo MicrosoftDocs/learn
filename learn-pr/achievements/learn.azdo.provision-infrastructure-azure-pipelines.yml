@@ -1,8 +1,8 @@
 ### YamlMime:AchievementDetail
-achievementUid: learn.azdo.provision-infrastructure-azure-pipelines
+achievementUid: learn.azdo.provision-infrastructure-azure-pipelines.badge
 metadata:
   title: >-
     Microsoft Badge: Provision infrastructure in Azure Pipelines was issued by
     Microsoft
 socialImageUrl: >-
-  /training/achievements/azure-devops/provision-infrastructure-azure-pipelines-social.png
+  /training/achievements/azure-devops/provision-infrastructure-azure-pipelines.png

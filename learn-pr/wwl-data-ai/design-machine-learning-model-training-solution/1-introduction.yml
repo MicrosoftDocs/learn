@@ -2,15 +2,19 @@
 uid: learn.wwl.design-machine-learning-model-training-solution.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
-  description: "Introduction"
-  ms.date: 12/06/2022
+  description: Introduction
   author: wwlpublish
   ms.author: madiepev
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 01/20/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
-durationInMinutes: 1
+durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]
+

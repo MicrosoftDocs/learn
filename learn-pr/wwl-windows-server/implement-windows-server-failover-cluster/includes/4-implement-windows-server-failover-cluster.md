@@ -74,7 +74,7 @@ The main steps in the process are:
 1. Create a failover cluster. Use Windows PowerShell to create a failover cluster.
 1. Configure a Windows Server failover cluster quorum.
 
- >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MJKA]
+ >[!VIDEO https://learn-video.azurefd.net/vod/player?id=263d1cf5-7909-4717-bca9-b5c653456f64]
 
 ---
 

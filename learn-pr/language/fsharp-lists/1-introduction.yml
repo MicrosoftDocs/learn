@@ -4,11 +4,10 @@ title: Introduction
 metadata:
   title: Introduction
   description: Introduction
-  author: softchris
-  ms.author: chnoring
-  ms.date: 07/28/2021
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  author: baronfel
+  ms.author: chethusk 
+  ms.date: 03/24/2023
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 1
 content: |

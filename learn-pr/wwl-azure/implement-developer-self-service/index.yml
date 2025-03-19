@@ -1,0 +1,68 @@
+### YamlMime:Module
+uid: learn.wwl.implement-developer-self-service
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Implement Developer Self-Service
+  description: "This module focuses on enabling developers to independently manage their resources and workflows, fostering agility and innovation. Learners will understand the importance of combining flexibility with robust governance to ensure security, compliance, and operational consistency. The module also covers best practices for implementing and managing self-service capabilities within an organization."
+  ms.date: 01/14/2025
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: module-standard-task-based
+  ms.service: azure
+  ai-usage: ai-assisted
+title: Implement Developer Self-Service
+summary: This module focuses on enabling developers to independently manage their resources and workflows, fostering agility and innovation. Learners will understand the importance of combining flexibility with robust governance to ensure security, compliance, and operational consistency. The module also covers best practices for implementing and managing self-service capabilities within an organization.
+abstract: |
+  -   Learn how to enable developers to independently manage their resources and workflows, fostering agility and innovation.
+  -   Understand the importance of combining flexibility with robust governance to ensure security, compliance, and operational consistency.
+  -   Explore the benefits of developer self-service in accelerating development cycles and reducing bottlenecks.
+  -   Recognize the role of self-service platforms in enhancing developer satisfaction and productivity.
+  -   Identify best practices for implementing and managing self-service capabilities within an organization.
+prerequisites: |
+  -   Understanding of what DevOps is and its concepts.
+  -   Beneficial to have experience in an organization that delivers software.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - advanced
+roles:
+  - administrator
+  - ai-engineer
+  - developer
+  - devops-engineer
+  - network-engineer
+  - security-engineer
+  - solution-architect
+  - startup-founder
+products:
+  - azure
+  - azure-devops
+  - github
+subjects:
+  - app-development
+  - architecture
+  - asset-management
+  - automation
+  - cloud-computing
+  - cloud-security
+  - containers
+  - custom-app-development
+  - devops
+  - infrastructure
+  - it-management-monitoring
+  - product-lifecycle-management
+  - productivity
+  - site-reliability-engineering
+units:
+- learn.wwl.implement-developer-self-service.introduction
+- learn.wwl.implement-developer-self-service.introduction-developer-self-service
+- learn.wwl.implement-developer-self-service.developer-self-service-platform-architecture
+- learn.wwl.implement-developer-self-service.governance-security-self-service-workflows
+- learn.wwl.implement-developer-self-service.developer-coding-environments
+- learn.wwl.implement-developer-self-service.automation-self-service-tools
+- learn.wwl.implement-developer-self-service.monitor-audit-developer-activities
+- learn.wwl.implement-developer-self-service.implement-microsoft-dev-box
+- learn.wwl.implement-developer-self-service.knowledge-check
+- learn.wwl.implement-developer-self-service.summary
+badge:
+  uid: learn.wwl.implement-developer-self-service.badge

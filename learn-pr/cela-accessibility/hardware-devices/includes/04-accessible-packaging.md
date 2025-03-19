@@ -1,6 +1,6 @@
 Unboxing a new gaming device after purchase is often considered a treasured experience. Product packaging is designed to protect and market the device prior to purchase. Efforts to ensure maximum device protection while maintaining an aesthetically pleasing design can result in packaging elements that are difficult or impossible to remove for some players.
 
-In this unit, you'll be introduced to best practices principles for packaging design that can produce more accessible customer experiences through:
+In this unit, you're introduced to best practices principles for packaging design that can produce more accessible customer experiences through:
 
 - Easy wayfinding of packaging components like adhesives and access points.
 - Easy removal of device parts from the packaging.
@@ -14,14 +14,14 @@ Players might look for visual cues like text or imagery on the box to inform pro
 
 :::image type="content" source="../media/adaptive-kit-box.png" alt-text="An image of the packaging for the Surface Adaptive Kit. The box contains text and images on the top panel.":::
 
-The top panel of the packaging has text and an image of the Surface Adaptive Kit components. When the box is properly oriented for opening, this text and image appear right side up to the user. If the user were to orient the box differently, the text and image would appear upside down or sideways. This positioning would indicate to the user that they should adjust the box orientation prior to opening.
+The top panel of the packaging has text and an image of the Surface Adaptive Kit components. When the box is properly oriented for opening, this text and image appear right side up to the user. If the user orients the box differently, the text and image would appear upside down or sideways. This positioning would indicate to the user that they should adjust the box orientation prior to opening.
 
 Players who can't see or use these visual cues to guide correct orientation might accidentally open packaging incorrectly, resulting in dropped or damaged new devices. To create a safer, more accessible experience, consider the following best practices:
 
 - Design packaging with accessible visual and structural cues that inform proper opening orientation:
 
-    - Visual: Provide larger text and graphics on packaging to ensure more players with low vision can see and use it to guide orientation.
-    - Structural: Offer discoverable tactile cues that inform proper unboxing orientation through intentional placement. For example, use break-the-seal labels, closure tabs, or seam lines.
+  - Visual: Provide larger text and graphics on packaging to ensure more players with low vision can see and use it to guide orientation.
+  - Structural: Offer discoverable tactile cues that inform proper unboxing orientation through intentional placement. For example, use break-the-seal labels, closure tabs, or seam lines.
 - Create packaging that allows players to open and remove devices safely, regardless of box orientation.
 
 ## Support accessible removal of adhesives and fasteners
@@ -76,6 +76,6 @@ The following images show the packaging for the Xbox Series X. The surrounding m
 
 The following video features many of the best practices outlined in this unit in action. It discusses the accessible packaging components designed and implemented for the Xbox Adaptive Controller. This product and its packaging exemplify a "gold standard" of accessible design. The intent of this video is to reinforce best practices information presented in this unit and to provide inspiration for future packaging design efforts.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWOcyB]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ee240e40-5f4c-4464-b021-42e000163b09]
 
 Devices differ in terms of size, weight, fragility, and cost. These variables might introduce challenges when you design and create accessible packaging. When you identify and implement solutions for these challenges, you can help improve customer satisfaction. You can also help to provide more customers a truly delightful experience from the moment they have their device at home.

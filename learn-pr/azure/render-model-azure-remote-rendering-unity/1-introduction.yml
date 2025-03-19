@@ -2,13 +2,14 @@
 uid: learn.azure.render-a-model-with-azure-remote-rendering-and-unity.1-introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: Introduces module concepts, scenario, learning objectives, and prerequisites
-  ms.date: 02/01/2021
+  ms.date: 07/31/2023
   author: aprilspeight
   ms.author: apspeigh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom:
   - team=cloud_advocates
   ms.contributors:
@@ -16,3 +17,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]
+

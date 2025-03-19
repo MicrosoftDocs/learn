@@ -1,7 +1,0 @@
-Now that you have learned about the basics of an AI-centric organization, it is important to understand the current maturity of your organization to determine where to start the transformation. Watch this video from Steve Sweetman, Director, Microsoft Solutions, as he discusses the different stages of maturity and how to leverage a maturity model tool to understand how to advance your organization to the next level.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Y20K]
-
-Organizations who are successful at adopting AI have already built a culture of experimentation and a learning mindset. Both are required to truly harness the power of this new technology. Organizations who have adopted AI also have a manifesto, they have a set of principles and core understanding about what they want to achieve and the approach that they want to take. Where is your organization on its AI journey? The AI Maturity Model Assessment in the summary and resources unit of this module will help you get started with understanding where you are today.
-
-Now that you’ve considered various aspects of what it means to have an AI-ready culture, how to assess your organization’s AI maturity, and prepare for change, let’s wrap up everything you’ve learned with a knowledge check.

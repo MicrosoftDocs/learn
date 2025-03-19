@@ -2,13 +2,15 @@
 uid: learn.azure.create-batch-account-using-azure-portal.create-azure-batch-account
 title: Create a Batch job by using the Azure portal
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create a Batch job by using the Azure portal
   description: Read about Batch and select security features.
-  ms.date: 02/01/2021
-  author: prkannap
-  ms.author: prkannap
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 08/05/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-create-azure-batch-account.md)]
+

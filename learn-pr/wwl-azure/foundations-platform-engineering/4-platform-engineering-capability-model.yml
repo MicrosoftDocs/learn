@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.foundations-platform-engineering.platform-engineering-capability-model
+title: Platform Engineering Capability Model
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Platform Engineering Capability Model
+  description: "Platform Engineering Capability Model"
+  ms.date: 01/14/2025
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/4-platform-engineering-capability-model.md)]

@@ -1,13 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-secure-data.10-summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
-  ms.date: 03/15/2023
+  ms.date: 11/13/2023
   author: VanMSFT
   ms.author: vanto
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Summary
 durationInMinutes: 2
 content: |

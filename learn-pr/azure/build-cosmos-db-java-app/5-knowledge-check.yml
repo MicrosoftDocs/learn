@@ -1,14 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.cosmos-db-java-app.5-knowledge-check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   ms.date: 09/15/2020
-  author: seesharprun
-  ms.author: sidandrews
-  manager: jroth
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: KarlErickson
+  ms.author: karler
+  ms.reviewer: kuthapar
+  ms.topic: unit
+  ms.custom:
+    - devx-track-extended-java
 title: Knowledge check
 durationInMinutes: 3
 quiz:
@@ -50,3 +53,4 @@ quiz:
     - content: "Call `replaceItem` with an updated `Person` object."
       isCorrect: true
       explanation: "`replaceItem` will replace the existing document with the new one. In this case, we'd intend the old and new to be the same other than `firstName`."
+

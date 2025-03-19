@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.explore-fundamentals-kql.kql-query-environments
+title: KQL query environments
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: KQL query environments
+  description: "Learn about the different environments in which you can use KQL."
+  ms.date: 11/01/2024
+  author: shsagir
+  ms.author: shsagir
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-kql-query-environments.md)]
+

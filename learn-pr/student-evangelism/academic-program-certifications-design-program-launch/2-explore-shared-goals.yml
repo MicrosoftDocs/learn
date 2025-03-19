@@ -6,9 +6,8 @@ metadata:
   description: Explore the shared goals of your institution and Microsoft for certification
   ms.date: 08/11/2021
   author: leestott
-  ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: tsheppard
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 3
 content: |

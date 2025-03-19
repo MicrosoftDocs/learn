@@ -1,12 +1,12 @@
-There are two features of Azure Resource Manager (ARM) templates that you'll want to use when you deploy to more than one Azure environment. These features are *resource tags* and *ARM template parameter files*.
+There are two features of Azure Resource Manager (ARM) templates that you want to use when you deploy to more than one Azure environment. These features are *resource tags* and *ARM template parameter files*.
 
-As you add more resources to your environments, you'll quickly find that you need a way to identify the purpose of these resources. Resources have a ```tags:``` attribute for this purpose. As you deploy to more environments, you'll need an efficient way to keep track of the input parameters. ARM templates can use parameter files to manage parameters for each deployment environment.
+As you add more resources to your environments, you quickly find that you need a way to identify the purpose of these resources. Resources have a ```tags:``` attribute for this purpose. As you deploy to more environments, you need an efficient way to keep track of the input parameters. ARM templates can use parameter files to manage parameters for each deployment environment.
 
 ## What is an Azure resource tag?
 
 You can tag resources to add values that help you identify their use. For example, you can add tags that list the environment and the project to which a resource belongs. Or, you can add tags that identify a cost center or the team that owns a resource. Add any values that make sense for your organization.
 
-The tag value will be displayed on the overview page for the Azure resource and in cost reports.
+The tag value is displayed on the overview page for the Azure resource and in cost reports.
 
 ## How do I create an Azure resource tag?
 
@@ -30,9 +30,9 @@ To make this attribute more useful, you can define a parameter that has more inf
     }
 ```
 
-Here, you created an object to hold values for an environment name and a project name. You could have defined anything you wanted.
+Here, you created an object to hold values for an environment name and a project name, but you could define anything you want.
 
-You'll then use that parameter for any resource that's for the Dev environment and the Inventory project; for example, your storage account.
+Then, you can use that parameter for any resource that's for the Dev environment and the Inventory project; for example, your storage account.
 
 ```json
 "resources": [{
@@ -46,11 +46,11 @@ You'll then use that parameter for any resource that's for the Dev environment a
 
 ## What is an ARM template parameter file?
 
-An ARM template parameter file holds values that will be passed in to the ARM template when the template is executed and that file is specified. If you use a parameter file for each environment to which an ARM template will be deployed, you ensure that the correct parameters are set for that specific environment. You also ensure that you can track the history and maintenance of those parameter values in source control.
+An ARM template parameter file holds values that are passed in to the ARM template when the template is executed. By using a parameter file for each environment to which an ARM template is deployed, you ensure that the correct parameters are set for that specific environment. You also ensure that you can track the history and maintenance of those parameter values in source control.
 
 ## How do I use ARM template parameter files?
 
-ARM template parameter files are JSON files that hold parameter values. For example, for the parameters you've used in the ARM template so far, you could create a template parameter file as follows:
+ARM template parameter files are JSON files that hold parameter values. For example, for the parameters you used in the ARM template so far, you could create a template parameter file as follows:
 
 ```json
 {
@@ -75,7 +75,7 @@ ARM template parameter files are JSON files that hold parameter values. For exam
 
 You could then create a file similar to this file for each environment. For example, these files might be called azuredeploy.parameters.dev.json and azuredeploy.parameters.prod.json, and hold different values for the parameters.
 
-To deploy an ARM template by using a parameter file, you'll specify the path to the parameter file in the deployment command. In Azure CLI, you'd use ```--parameters {path to parameter file}```. In PowerShell, you'd use ```-TemplateParameterFile {path to parameter file}```.
+To deploy an ARM template by using a parameter file, specify the path to the parameter file in the deployment command. In Azure CLI, you use ```--parameters {path to parameter file}```. In PowerShell, you use ```-TemplateParameterFile {path to parameter file}```.
 
 # [Azure CLI](#tab/azure-cli)
 

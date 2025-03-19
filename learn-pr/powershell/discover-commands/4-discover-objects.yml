@@ -6,10 +6,9 @@ metadata:
   description: Learn what type of object a command returns to help you understand how to pick out the information you need and how a command can fit with another command in a pipeline.
   author: ttorble
   ms.author: chnoring
-  ms.date: 05/27/2022
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 02/23/2023
+  ms.topic: unit
   ms.custom: team=nextgen
-durationInMinutes: 1
+durationInMinutes: 6
 content: |
   [!include[](includes/4-discover-objects.md)]

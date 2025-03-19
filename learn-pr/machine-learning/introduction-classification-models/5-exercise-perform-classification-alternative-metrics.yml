@@ -4,11 +4,10 @@ title: Exercise - Train a classification model by using alternative metrics
 metadata:
   title: Exercise - Train a classification model by using alternative metrics
   description: In this exercise, you'll train a classification model by using alternative metrics.
-  ms.date: 05/11/2022
+  ms.date: 05/16/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 15
 sandbox: true
 notebook: /training/modules/introduction-classification-models/notebooks/5-exercise-perform-classification-alternative-metrics.ipynb

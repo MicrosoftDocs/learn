@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.philanthropies.explore-generative-ai
+metadata:
+  ms.author: anruss
+  ms.date: 01/14/2025
+  title: "AI fluency: Explore generative AI"  
+  description: Discover the fundamentals of generative AI and how this technology is transforming our approach to creativity and productivity.
+  ms.topic: module
+  ms.service: artificial-intelligence
+  moduleType: standard
+  author: yoosunee
+  ms.collection: philanthropies-ai-copilot
+title: Explore Generative AI
+summary: Discover the fundamentals of generative AI and how this technology is transforming our approach to creativity and productivity. 
+abstract: |
+  By completing this module, you'll be able to:
+  - Distinguish between Natural Language Processing (NLP), Natural Language Generation (NLG), and Large Language Models (LLMs), assessing their roles, applications, and interrelationships with generating human language. 
+  - Assess the differences between generative AI and traditional AI models, focusing on their applications, capabilities, and the role of data. 
+  - Evaluate how generative AI services like Microsoft Copilot can enhance creativity in various fields. 
+prerequisites: A basic understanding of AI concepts and technologies.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+- ai-engineer
+- technology-manager
+- solution-architect
+products:
+- azure
+units:
+- learn.philanthropies.explore-generative-ai.introduction
+- learn.philanthropies.explore-generative-ai.what-is-generative-ai
+- learn.philanthropies.explore-generative-ai.ai-linguistics
+- learn.philanthropies.explore-generative-ai.visualize-ai-text-image
+- learn.philanthropies.explore-generative-ai.ai-companion-content-creation
+- learn.philanthropies.explore-generative-ai.new-opportunities-with-generative-ai
+- learn.philanthropies.explore-generative-ai.exercise-create-with-generative-ai
+- learn.philanthropies.explore-generative-ai.knowledge-check
+- learn.philanthropies.explore-generative-ai.summary
+badge:
+  uid: learn.philanthropies.explore-generative-ai-badge

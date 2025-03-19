@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-generative-ai-applications-with-azure-cosmos-db-nosql.exercise-enable-azure-cosmos-db-nosql-vector-search
+title: Exercise - Enable the Azure Cosmos DB for NoSQL Vector Search feature
+metadata:
+  title: Exercise - Enable the Azure Cosmos DB for NoSQL Vector Search feature
+  description: "Exercise: Enable the Azure Cosmos DB for NoSQL Vector Search feature in your Azure Cosmos DB account."
+  ms.date: 03/10/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-enable-azure-cosmos-db-nosql-vector-search.md)]

@@ -25,5 +25,5 @@ After completing this module, you'll be able to:
 - Implement network level access control
 - Review data encryption options
 - Use role-based access control (RBAC)
-- Access Account Resources using Azure Active Directory
+- Access Account Resources using Microsoft Entra ID
 - Understand Always Encrypted

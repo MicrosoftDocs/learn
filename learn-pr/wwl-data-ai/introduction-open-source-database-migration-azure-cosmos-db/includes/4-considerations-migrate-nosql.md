@@ -2,7 +2,7 @@ A business system running on-premises can have an architecture that's coupled to
 
 In your IoT technology company, you've identified Azure Cosmos DB as a database system that can host all your telemetry databases with the minimum of software recoding. Now, you want to plan the migration project to Cosmos DB.
 
-Here, you'll learn how to decide key aspects of a migration project, such as whether to perform an offline or online migration, how to fall back if problems arise, and how to maintain security.
+Here, you learn how to decide key aspects of a migration project, such as whether to perform an offline or online migration, how to fall back if problems arise, and how to maintain security.
 
 ### Investigate dependencies
 
@@ -63,7 +63,7 @@ In this case, an offline migration is possible because there's a long period whe
 
 ### Online migrations
 
-Now consider another database that supports a sales app. Sales staff are distributed around the world and also work at weekends. There isn't a period of low activity, the database is always busy and, if you take the database offline for a significant period, it will impact users. Sales activity is business-critical, so an interruption in service will have a direct affect on the organization's bottom line.
+Now consider another database that supports a sales app. Sales staff are distributed around the world and also work at weekends. There isn't a period of low activity, the database is always busy and, if you take the database offline for a significant period, it impacts users. Sales activity is business-critical, so an interruption in service has a direct affect on the organization's bottom line.
 
 In cases like this, consider performing an online migration. In an online migration, downtime is limited to the time it takes to switch to the new database. Use a tool such as the Azure Database Migration Service to execute an online migration. Online migrations have the following differences to offline migrations:
 
@@ -79,16 +79,16 @@ After you've migrated a database, how (and when) should you cut over to the new 
 - Move subsets of users.
 - Adopt a combination of both approaches.
 
-The intention is that you perform application migration in small stages that can be easily rolled back if something goes awry. Regardless of whether you've followed an offline or online approach to database migration, you should still have a working configuration located at the original source. In theory, you'll be able to switch back to the original source quickly. But if the data is constantly changing, you need to consider where these changes have been made.
+The intention is that you perform application migration in small stages that can be easily rolled back if something goes awry. Regardless of whether you've followed an offline or online approach to database migration, you should still have a working configuration located at the original source. In theory, you are able to switch back to the original source quickly. But if the data is constantly changing, you need to consider where these changes have been made.
 
 - In an offline migration, the source and destinations are independent of each other. Users and applications might no longer see a consistent view of the data. In a transactional system, this situation is likely to be unacceptable. In this case, you would need to maintain some form of bidirectional replication between databases while both systems remain live. Alternatively, if the purpose of an application is to generate monthly or weekly reports, generate sales projections, or perform other statistical operations, this lack of consistency might not be so worrying. Such applications take a "long view" of the data, rather than being dependent on up-to-date data. In this latter case, transactional applications use the new database, whereas reporting applications are moved more slowly.
 - In an online migration, the new database is kept synchronized with the old, usually by some form of replication. The replication process might be asynchronous, so there could be a lag. However, changes made to data in the new database won't be propagated back to the old, resulting in possible conflicts. An application running against the old database might make a conflicting change to data that's been modified in the new database. Replication will blindly overwrite the change in the new database, resulting in a "lost update".
 
 ### Approaches to testing
 
-If the database plays a critical role in your business, the consequences of a failure might be extensive. To increase your confidence that this won't happen, consider running performance tests against the migrated database to ensure that it copes with the load users might place upon it and respond quickly. Remember that there could be periods of peak activity, when demand is much higher than normal. You must be sure that your migrated system handles the expected workload.
+If the database plays a critical role in your business, the consequences of a failure might be extensive. To increase your confidence that this won't happen, consider running performance tests against the migrated database to ensure that it copes with the load users might place upon it and respond quickly. Remember that there could be periods of peak activity, when demand is higher than normal. You must be sure that your migrated system handles the expected workload.
 
-Always perform some type of regression testing against the new database before allowing access to users. These tests will verify that the behavior and functionality of the system are correct.
+Always perform some type of regression testing against the new database before allowing access to users. These tests verify that the behavior and functionality of the system are correct.
 
 Additionally, you should consider running a "soak test". A soak test is a load test designed to see how the system as a whole operates under pressure. A soak test stresses the new database and determines whether it's stable under high demand. A soak test runs over a significant time period to see what happens when high demand persists.
 
@@ -154,13 +154,13 @@ In an internet-connected application, database servers are usually protected by 
 
 The second firewall separates the front-end servers from the database servers. It's recommended to publish the database service on a private port number that's not known to the outside world. On the second firewall, open this port number only for the IP addresses of the front-end servers. This arrangement prevents any direct communication from a malicious internet user to the database servers.
 
-If you plan to migrate database servers to Azure Cosmos DB, use a virtual network to replicate firewall rules. The virtual network will provide one layer of protection and the firewall settings of the Azure Cosmos DB account will provide another.
+If you plan to migrate database servers to Azure Cosmos DB, use a virtual network to replicate firewall rules. The virtual network provides one layer of protection and the firewall settings of the Azure Cosmos DB account will provide another.
 
 ### Authentication and authorization
 
-In most databases, you need to closely control who accesses and modifies which data. This control requires that users are positively identified when they connect to the database. This process is called **authentication** and can be performed in a number of ways with Azure Cosmos DB. Most authentication is for an individual user and is provided by Azure Active Directory. You can also grant access to service principals which can include objects such as apps and virtual machines.
+In most databases, you need to closely control who accesses and modifies which data. This control requires that users are positively identified when they connect to the database. This process is called **authentication** and can be performed in a number of ways with Azure Cosmos DB. Most authentication is for an individual user and is provided by Microsoft Entra ID. You can also grant access to service principals which can include objects such as apps and virtual machines.
 
-Once a user is authenticated and you are certain of their identity, you can add **authorization** to resources. In Cosmos DB, authorization is applied by adding users, groups, or service principals to roles.
+Once a user is authenticated and you're certain of their identity, you can add **authorization** to resources. In Cosmos DB, authorization is applied by adding users, groups, or service principals to roles.
 
 ![Image showing role assignments for Azure Cosmos DB](../media/1-add-role-assignment.png)
 

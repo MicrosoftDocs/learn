@@ -1,16 +1,18 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.troubleshoot-authentication-access-control.troubleshoot-azure-ad-authentication
-title: Troubleshoot Azure AD authentication
+title: Troubleshoot Microsoft Entra authentication
 metadata:
-  title: Troubleshoot Azure AD authentication
-  description: "Troubleshoot Azure AD authentication"
-  ms.date: 06/14/2022
-  author: wwlpublish
-  ms.author: lola
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Troubleshoot Microsoft Entra authentication
+  description: "Troubleshoot Microsoft Entra authentication"
+  ms.date: 04/27/2023
+  author: mistoyanwork
+  ms.author: mistoyan
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/2-troubleshoot-azure-active-directory-authentication.md)]
+

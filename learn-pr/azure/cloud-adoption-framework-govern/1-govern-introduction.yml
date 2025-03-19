@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cloud-adoption-framework-govern.govern-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: An introduction to the Govern methodology.
+  ms.date: 07/15/2024
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-govern-introduction.md)]

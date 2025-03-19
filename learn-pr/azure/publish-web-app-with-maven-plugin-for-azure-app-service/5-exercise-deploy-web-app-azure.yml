@@ -2,15 +2,18 @@
 uid: learn.azure.publish-app-with-maven-plugin-for-azure-web-apps.exercise-deploy-web-app-azure
 title: Exercise - Deploy your web app to Azure App Service
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Deploy your web app to Azure App Service
   description: In this exercise, you'll deploy your web app to Azure App Service.
-  ms.date: 03/10/2020
-  author: cephalin
-  ms.author: cephalin
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 05/02/2024
+  author: KarlErickson
+  ms.author: karler
+  ms.reviewer: jialuogan
+  ms.topic: unit
 durationInMinutes: 10
 interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/5-exercise-deploy-web-app-azure.md)]
+

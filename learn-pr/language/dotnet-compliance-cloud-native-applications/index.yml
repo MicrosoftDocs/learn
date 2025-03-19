@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.implement-compliance-cloud-native-applications
+metadata:
+  title: Implement compliance in a cloud-native .NET 8 application
+  description: Microservice applications, because of their distributed nature, can be difficult to secure. In this module, you'll learn how to classify sensitive data in a cloud-native application, redact sensitive data in log files, and generate compliance reports for a cloud-native application.
+  ms.date: 11/30/2023
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: module
+  ms.service: dotnet
+  ms.custom:
+  - team=cloud_advocates
+  ms.contributors:
+  - masoucou-05122021
+title: Implement compliance in a cloud-native .NET 8 application
+summary: Microservice applications, because of their distributed nature, can be difficult to secure. In this module, you'll learn how to classify sensitive data in a cloud-native application, redact sensitive data in log files, and generate compliance reports for a cloud-native application.
+abstract: |
+  In this module, you'll:
+    - Classify sensitive data in a cloud-native application
+    - Redact sensitive data in log files
+    - Generate compliance reports for a cloud-native application
+prerequisites: |
+  - Familiarity with basic Docker concepts and a Docker account
+  - Familiarity with microservice design
+  - Familiarity with developing applications in C# and .NET.
+iconUrl: /training/achievements/generic-badge.svg
+levels: 
+  - beginner
+roles: 
+  - developer
+products: 
+  - dotnet
+  - aspnet-core
+subjects: 
+  - custom-app-development
+  - compliance
+units:
+- learn.implement-compliance-cloud-native-applications.introduction
+- learn.implement-compliance-cloud-native-applications.classify-sensitive-data-cloud-native-application
+- learn.implement-compliance-cloud-native-applications.exercise-classify-sensitive-data-cloud-native-application
+- learn.implement-compliance-cloud-native-applications.redact-sensitive-data-cloud-native-application
+- learn.implement-compliance-cloud-native-applications.exercise-redact-sensitive-data-cloud-native-application
+- learn.implement-compliance-cloud-native-applications.generate-compliance-reports-cloud-native-application
+- learn.implement-compliance-cloud-native-applications.exercise-generate-compliance-reports-cloud-native-application
+- learn.implement-compliance-cloud-native-applications.knowledge-check
+- learn.implement-compliance-cloud-native-applications.summary
+badge:
+  uid: learn.languages.implement-compliance-cloud-native-applications.badge

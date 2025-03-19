@@ -2,13 +2,14 @@
 uid: learn.implement-message-workflows-with-service-bus.3-exercise-implement-a-service-bus-topic-and-queue
 title: Exercise - Create a Service Bus queue and topic
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create Service Bus queue and topic
   description: Create Service Bus messaging components—a namespace that contains a queue, a topic, and subscriptions.
-  ms.date: 04/04/2023
+  ms.date: 01/27/2025
   author: spelluru
   ms.author: spelluru
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: true
 durationInMinutes: 10
 content: |
@@ -21,3 +22,4 @@ content: |
 #     resource:
 #       type: "Microsoft.ServiceBus/namespaces"
 #   hint: "Use the instructions above to create a Service Bus namespace, queue, topic and subscriptions."
+

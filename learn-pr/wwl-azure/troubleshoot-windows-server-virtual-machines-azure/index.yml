@@ -1,17 +1,19 @@
 ### YamlMime:Module
 uid: learn.wwl.troubleshoot-windows-server-virtual-machines-azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Troubleshoot Windows Server Virtual Machines in Azure
-  description: "Learn to troubleshoot configuration issues that impact connectivity to your Azure-hosted Windows Server virtual machines (VMs). Explore approaches to resolve issues with VM startup, extensions, performance, storage, and encryption."
-  ms.date: 02/17/2023
+  description: "Learn to troubleshoot configuration issues that affect connectivity to your Azure-hosted Windows Server virtual machines (VMs). Explore approaches to resolve issues with VM startup, extensions, performance, storage, and encryption."
+  ms.date: 08/02/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure-virtual-machines
 title: Troubleshoot Windows Server Virtual Machines in Azure
-summary: Learn to troubleshoot configuration issues that impact connectivity to your Azure-hosted Windows Server virtual machines (VMs). Explore approaches to resolve issues with VM startup, extensions, performance, storage, and encryption.
+summary: Learn to troubleshoot configuration issues that affect connectivity to your Azure-hosted Windows Server virtual machines (VMs). Explore approaches to resolve issues with VM startup, extensions, performance, storage, and encryption.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you're able to:
   *   Troubleshoot VM deployment and extension issues
   *   Troubleshoot VM startup and performance issues
   *   Troubleshoot VM storage and encryption issues

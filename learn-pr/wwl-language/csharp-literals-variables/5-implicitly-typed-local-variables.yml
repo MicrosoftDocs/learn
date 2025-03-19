@@ -4,11 +4,12 @@ title: Declare implicitly typed local variables
 metadata:
   title: Declare implicitly typed local variables
   description: "Declare implicitly typed local variables"
-  ms.date: 04/13/2023
+  ms.date: 01/17/2025
   author: wwlpublish
   ms.author: buzahid
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/5-implicitly-typed-local-variables.md)]

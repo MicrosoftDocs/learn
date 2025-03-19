@@ -1,18 +1,20 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-database-authentication-authorization
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure database authentication and authorization
-  description: "Configure database authentication and authorization"
-  ms.date: 04/26/2022
-  author: wwlpublish
+  description: Configure database authentication and authorization
+  ms.date: 02/25/2025
+  author: JulianePadrao
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.service: azure
 title: Configure database authentication and authorization
-summary: Contrast authentication using Azure Active Directory, Windows Active Directory, and SQL Server authentication. Implement various security principals and configure permissions.
+summary: Contrast authentication using Microsoft Entra ID, and SQL Server authentication. Implement various security principals and configure permissions.
 abstract: |
   After completing this module, you will be able to:
-  - Learn about authentication options for Azure SQL Database
+  - Learn about authentication options for Azure SQL
   - Create various security principals
   - Configure permissions within a SQL database
   - Identify authentication and authorization failures
@@ -29,10 +31,9 @@ roles:
 products:
 - azure
 subjects:
-- database
+- databases
 units:
 - learn.wwl.configure-database-authentication-authorization.introduction
-- learn.wwl.configure-database-authentication-authorization.describe-active-directory-azure-active-directory
 - learn.wwl.configure-database-authentication-authorization.describe-authentication-identities
 - learn.wwl.configure-database-authentication-authorization.describe-security-principals
 - learn.wwl.configure-database-authentication-authorization.describe-database-object-permissions
@@ -42,3 +43,4 @@ units:
 - learn.wwl.configure-database-authentication-authorization.summary
 badge:
   uid: learn.wwl.configure-database-authentication-authorization.badge
+

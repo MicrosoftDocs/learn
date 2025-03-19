@@ -1,107 +1,151 @@
-Best practices for Sentinel workspace design fall into a few main categories:
+Microsoft Sentinel is a cloud-native Security Information and Event Management (SIEM) and Security Orchestration, Automation, and Response (SOAR) solution. It helps enterprises collect large volumes of security data, detect and investigate potential threats, and automate response actions. By integrating with a wide array of data sources and using advanced analytics, Microsoft Sentinel streamlines security operations and reduces the time needed to address threats.
 
-- Tenancy considerations
-- Compliance considerations
-- Region considerations
-- Access considerations
-- Creating your workspace
-- Simplify working with multiple workspaces
+A Log Analytics workspace is a data store into which you can collect any type of log data from all of your Azure and non-Azure resources and applications. Microsoft Sentinel, and other Azure services, including Azure Monitor and Microsoft Defender for Cloud use a Log Analytics workspace as the underlying storage and analytics engine for all ingested data. Microsoft Sentinel uses the data in the workspace to power its core features, including analytics rules, threat hunting, incident investigation, and workbooks.
 
-## Tenancy considerations
+Because the Log Analytics workspace is where all ingested data is stored, organizations need to consider factors including the number of workspaces needed for their environment and the configuration and placement of those workspaces to meet their requirements while optimizing costs. This unit presents criteria to consider when designing your workspace architecture. For information on Microsoft Sentinel capabilities, see [What is Microsoft Sentinel?](/azure/sentinel/overview) For information on concepts related to Log Analytics workspaces, see [Log Analytics workspace overview](/azure/azure-monitor/logs/log-analytics-workspace-overview).
 
-While fewer workspaces are simpler to manage, you may have specific needs for multiple tenants and workspaces. For example, many organizations have a cloud environment that contains multiple Azure Active Directory (Azure AD) tenants, resulting from mergers and acquisitions or due to identity separation requirements.
+## Design strategy
+Your design should always start with a single workspace to reduce the complexity of managing multiple workspaces and in querying data from them. There are no performance limitations from the amount of data in your workspace. Multiple services and data sources can send data to the same workspace. As you identify criteria to create more workspaces, your design should use the fewest number of workspaces to meet your requirements.
 
-When determining how many tenants and workspaces to use, consider that most Microsoft Sentinel features operate by using a single workspace or Microsoft Sentinel instance, and Microsoft Sentinel ingests all logs housed within the workspace.
+Designing a workspace configuration includes evaluation of multiple criteria. But some of the criteria might be in conflict. For example, you might be able to reduce egress charges by creating a separate workspace in each Azure region. Consolidating into a single workspace might allow you to reduce charges even more with a commitment tier. Evaluate each of the criteria independently. Consider your requirements and priorities to determine which design is most effective for your environment.
 
-Costs are one of the main considerations when determining Microsoft Sentinel architecture.
+## Design criteria
+The following table presents criteria to consider when you design your workspace architecture. 
 
-### Working with multiple tenants
+| Criteria | Description |
+|:---|:---|
+| [Operational and security data](/azure/azure-monitor/logs/workspace-design#operational-and-security-data) | You may choose to combine operational data from Azure Monitor in the same workspace as security data from Microsoft Sentinel or separate each into their own workspace. Combining them gives you better visibility across all your data, while your security standards might require separating them so that your security team has a dedicated workspace. You may also have cost implications to each strategy. |
+| [Azure tenants](/azure/azure-monitor/logs/workspace-design#azure-tenants) | If you have multiple Azure tenants, you'll usually create a workspace in each one. Several data sources can only send monitoring data to a workspace in the same Azure tenant. |
+| [Azure regions](/azure/azure-monitor/logs/workspace-design#azure-regions) | Each workspace resides in a particular Azure region. You might have regulatory or compliance requirements to store data in specific locations. |
+| [Data ownership](/azure/azure-monitor/logs/workspace-design#data-ownership) | You might choose to create separate workspaces to define data ownership. For example, you might create workspaces by subsidiaries or affiliated companies. |
+| [Split billing](/azure/azure-monitor/logs/workspace-design#split-billing) | By placing workspaces in separate subscriptions, they can be billed to different parties. |
+| [Data retention](/azure/azure-monitor/logs/workspace-design#data-retention) | You can set different retention settings for each workspace and each table in a workspace. You need a separate workspace if you require different retention settings for different resources that send data to the same tables. |
+| [Commitment tiers](/azure/azure-monitor/logs/workspace-design#commitment-tiers) | Commitment tiers allow you to reduce your ingestion cost by committing to a minimum amount of daily data in a single workspace. |
+| [Legacy agent limitations](/azure/azure-monitor/logs/workspace-design#legacy-agent-limitations) | Legacy virtual machine agents have limitations on the number of workspaces they can connect to. |
+| [Data access control](/azure/azure-monitor/logs/workspace-design#data-access-control) | Configure access to the workspace and to different tables and data from different resources. |
+| [Resilience](/azure/azure-monitor/logs/workspace-design#resilience)| To ensure that data in your workspace is available in the event of a region failure, you can ingest data into multiple workspaces in different regions.|
 
-If you have multiple tenants, such as if you're a managed security service provider (MSSP), we recommend that you create at least one workspace for each Azure AD tenant to support built-in, service to service data connectors that work only within their own Azure AD tenant.
+## Work with multiple workspaces
+Many designs include multiple workspaces. For example, a central security operations team might use its own Microsoft Sentinel workspaces to manage centralized artifacts like analytics rules or workbooks.
 
-All connectors based on diagnostics settings cannot be connected to a workspace that is not located in the same tenant where the resource resides. This applies to connectors such as Azure Firewall, Azure Storage, Azure Activity or Azure Active Directory.
+Microsoft Sentinel includes features to assist you in analyzing this data across workspaces. For more information, see [Extend Microsoft Sentinel across workspaces and tenants](/azure/sentinel/extend-sentinel-across-workspaces-tenants)
 
-Use Azure Lighthouse to help manage multiple Microsoft Sentinel instances in different tenants.
+When naming each workspace, we recommend including a meaningful indicator in the name so that you can easily identity the purpose of each workspace.
 
-## Compliance considerations
+## Multiple tenant strategies
+Environments with multiple Azure tenants, including Microsoft service providers (MSPs), independent software vendors (ISVs), and large enterprises, often require a strategy where a central administration team has access to administer workspaces located in other tenants. Each of the tenants might represent separate customers or different business units.
 
-After your data is collected, stored, and processed, compliance can become an important design requirement, with a significant impact on your Microsoft Sentinel architecture. Having the ability to validate and prove who has access to what data under all conditions is a critical data sovereignty requirement in many countries and regions, and assessing risks and getting insights in Microsoft Sentinel workflows is a priority for many customers.
+> [!NOTE]
+> For partners and service providers who are part of the [Cloud Solution Provider (CSP) program](https://partner.microsoft.com/membership/cloud-solution-provider), Log Analytics in Azure Monitor is one of the Azure services available in Azure CSP subscriptions.
 
-In Microsoft Sentinel, data is mostly stored and processed in the same geography or region, with some exceptions, such as when using detection rules that leverage Microsoft's Machine learning. In such cases, data may be copied outside your workspace geography for processing.
+Two basic strategies for this functionality are described in the following sections.
 
-To start validating your compliance, assess your data sources, and how and where they send data.
+### Distributed architecture
+In a distributed architecture, a Log Analytics workspace is created in each Azure tenant. This option is the only one you can use if you're monitoring Azure services other than virtual machines.
 
-## Region considerations
+There are two options to allow service provider administrators to access the workspaces in the customer tenants:
 
-Use separate Microsoft Sentinel instances for each region. While Microsoft Sentinel can be used in multiple regions, you may have requirements to separate data by team, region, or site, or regulations and controls that make multi-region models impossible or more complex than needed. Using separate instances and workspaces for each region helps to avoid bandwidth / egress costs for moving data across regions.
+- Use [Azure Lighthouse](/azure/lighthouse/overview) to access each customer tenant. The service provider administrators are included in a Microsoft Entra user group in the service provider's tenant. This group is granted access during the onboarding process for each customer. The administrators can then access each customer's workspaces from within their own service provider tenant instead of having to sign in to each customer's tenant individually. For more information, see [Monitor customer resources at scale](/azure/lighthouse/how-to/monitor-at-scale).
+- Add individual users from the service provider as [Microsoft Entra guest users (B2B)](/azure/active-directory/external-identities/what-is-b2b). The customer tenant administrators manage individual access for each service provider administrator. The service provider administrators must sign in to the directory for each tenant in the Azure portal to access these workspaces.
 
-Consider the following when working with multiple regions:
+Advantages to this strategy:
 
-- Egress costs generally apply when the Log Analytics or Azure Monitor agent is required to collect logs, such as on virtual machines.
+- Logs can be collected from all types of resources.
+- The customer can confirm specific levels of permissions with [Azure delegated resource management](/azure/lighthouse/concepts/architecture). Or the customer can manage access to the logs by using their own [Azure RBAC](/azure/role-based-access-control/overview).
+- Each customer can have different settings for their workspace, such as retention and data cap.
+- Isolation between customers for regulatory and compliance.
+- The charge for each workspace is included in the bill for the customer's subscription.
 
-- Internet egress is also charged, which may not affect you unless you export data outside your Log Analytics workspace. For example, you may incur internet egress charges if you export your Log Analytics data to an on-premises server.
+Disadvantages to this strategy:
 
-- Bandwidth costs vary depending on the source and destination region and collection method. For more information, see:
+- Running a query over a large number of workspaces is slow and can't scale above 100 workspaces. This means that you can create a central visualization and data analytics but it's slow if there are more than a few dozen workspaces. This situation is less acute if all workspaces are colocated on the same [dedicated cluster](/azure/azure-monitor/logs/logs-dedicated-clusters). See [here](/azure/azure-monitor/logs/cross-workspace-query) for more details on running queries across workspaces.
+- If customers aren't onboarded for Azure delegated resource management, service provider administrators must be provisioned in the customer directory. This requirement makes it more difficult for the service provider to manage many customer tenants at once.
+- When running a query on a workspace, the workspace admins might have visibility to the full text of the query via [query audit](/azure/azure-monitor/logs/query-audit).
 
-  - [Bandwidth pricing](https://azure.microsoft.com/pricing/details/bandwidth/)
-  - [Data transfers charges using Log Analytics ](/azure/azure-monitor/usage-estimated-costs).
+### Centralized
+A single workspace is created in the service provider's subscription. This option can collect data from customer virtual machines and Azure PaaS services based on diagnostics settings. Agents installed on the virtual machines and PaaS services can be configured to send their logs to this central workspace.
 
-- Use templates for your analytics rules, custom queries, workbooks, and other resources to make your deployments more efficient. Deploy the templates instead of manually deploying each resource in each region.
+Advantages to this strategy:
 
-- Connectors that are based on diagnostics settings do not incur in-bandwidth costs. For more information, see [Data transfers charges using Log Analytics](/azure/azure-monitor/usage-estimated-costs).
+- It's easy to manage many customers.
+- The service provider has full ownership over the logs and the various artifacts, such as functions and saved queries.
+- A service provider can perform analytics across all of its customers.
 
-For example, if you decide to collect logs from Virtual Machines in East US and send them to a Microsoft Sentinel workspace in West US, you'll be charged ingress costs for the data transfer. Since the Log Analytics agent compresses the data in transit, the size charged for the bandwidth may be lower than the size of the logs in Microsoft Sentinel.
+Disadvantages to this strategy:
 
-If you're collecting Syslog and CEF logs from multiple sources around the world, you may want to set up a Syslog collector in the same region as your Microsoft Sentinel workspace to avoid bandwidth costs, provided that compliance is not a concern.
+- Logs can only be collected from virtual machines with an agent or Azure PaaS services (via Azure Lighthouse delegation). It won't work with SaaS connectors, or Azure Service Fabric data sources.
+- It might be difficult to separate data between customers because their data shares a single workspace. Queries need to use the computer's fully qualified domain name or the Azure subscription ID.
+- All data from all customers will be stored in the same region with a single bill and the same retention and configuration settings.
 
-Understanding whether bandwidth costs justify separate Microsoft Sentinel workspaces depend on the volume of data you need to transfer between regions. Use the [Azure Pricing Calculator](https://azure.microsoft.com/pricing/details/bandwidth/) to estimate your costs.
+### Hybrid
+In a hybrid model, each tenant has its own workspace. A mechanism is used to pull data into a central location for reporting and analytics. This data could include a small number of data types or a summary of the activity, such as daily statistics.
 
-For more information, see [Data residency in Azure](https://azure.microsoft.com/global-infrastructure/data-residency/).
+There are several options to implement logs in a central location:
 
-## Access considerations
+- **Central workspace**: The service provider creates a workspace in its tenant and pulls data from the various workspaces using:
+    - A script that uses the [Query API](/azure/azure-monitor/logs/api/overview) with the [logs ingestion API](/azure/azure-monitor/logs/logs-ingestion-api-overview) to send the data from the tenant workspaces to the central workspace.
+    - [Azure Logic Apps](/azure/logic-apps/logic-apps-overview) to copy data to the central workspace.
+    - [Data export](/azure/azure-monitor/logs/logs-data-export) from the source workspace and reingestion to the central workspace. You can also create [summary rules](/azure/azure-monitor/logs/summary-rules) to export an aggregation of key data from the original workspaces into the central workspace.
+- **Power BI**: The tenant workspaces export data to Power BI by using the integration between the [Log Analytics workspace and Power BI](/azure/azure-monitor/logs/log-powerbi).
 
-You may have situations planned where different teams will need access to the same data. For example, your SOC team must have access to all Microsoft Sentinel data, while operations and applications teams will need access to only specific parts. Independent security teams may also need to access Microsoft Sentinel features, but with varying sets of data.
+## Manage access to workspaces
 
-Combine resource-context RBAC and table-level RBAC to provide your teams with a wide range of access options that should support most use cases.
+The factors that determine which data you can access in a Log Analytics workspace are:
 
-### Resource-context RBAC
+- The settings on the workspace itself.
+- Your access permissions to resources that send data to the workspace.
+- The method used to access the workspace.
+
+The factors that define the data you can access are described in the following table.
+
+| Factor | Description  |
+|:-------------------------------------------------------|:--------------------------------------------------------|
+| Access mode | Method used to access the workspace. Defines the scope of the data available and the access control mode that's applied.
+| Access control mode | Setting on the workspace that defines whether permissions are applied at the workspace or resource level.  |
+| Azure role-based access control (RBAC)  | Permissions applied to individuals or groups of users for the workspace or resource sending data to the workspace. Defines what data you have access to. |
+| Table-level Azure RBAC | Optional permissions that define specific data types in the workspace that you can access.   |
+
+**Access mode**. The access mode refers to how you access a Log Analytics workspace and defines the data you can access during the current session. The mode is determined according to the scope you select in Log Analytics.
+
+There are two access modes:
+
+- Workspace-context: You can view all logs in the workspace for which you have permission. Queries in this mode are scoped to all data in tables that you have access to in the workspace. This access mode is used when logs are accessed with the workspace as the scope.
+
+- Resource-context: When you access the workspace for a particular resource, resource group, or subscription, such as when you select Logs from a resource menu in the Azure portal, you can view logs for only resources in all tables that you have access to. Queries in this mode are scoped to only data associated with that resource. This mode also enables granular Azure RBAC. Workspaces use a resource-context log model where every log record emitted by an Azure resource is automatically associated with this resource.
+
+**Access control mode**. The access control mode is a setting on each workspace that defines how permissions are determined for the workspace.
+
+- Require workspace permissions. This control mode doesn't allow granular Azure RBAC. To access the workspace, the user must be granted permissions to the workspace or to specific tables.
+
+- Use resource or workspace permissions. This control mode allows granular Azure RBAC.
+
+**Azure RBAC**. Access to a workspace is managed by using Azure RBAC. You grant access to the Log Analytics workspace by using Azure permissions. To learn more, see [Workspace permissions](/azure/azure-monitor/logs/manage-access?tabs=portal#workspace-permissions)
+
+**Table-level Azure RBAC**. Table-level access settings let you grant specific users or groups read-only permission to data in a table. Users with table-level read access can read data from the specified table in both the workspace and the resource context. To learn more, see [Manage table-level read access in a Log Analytics workspace](/azure/azure-monitor/logs/manage-table-access).
+
+#### Manage access to Microsoft Sentinel data by resource
+
+Typically, users who have access to a Log Analytics workspace enabled for Microsoft Sentinel also have access to all the workspace data, including security content. Administrators can use Azure roles to configure access to specific features in Microsoft Sentinel, depending on the access requirements in their team.
+
+However, you may have some users who need to access only specific data in your workspace, but shouldn't have access to the entire Microsoft Sentinel environment. For example, you may want to provide a nonsecurity operations (non-SOC) team with access to the Windows event data for the servers they own.
+
+In such cases, we recommend that you configure your role-based access control (RBAC) based on the resources that are allowed to your users, instead of providing them with access to the workspace or specific Microsoft Sentinel features. This method is also known as setting up **resource-context RBAC**.
+
+The following table highlights the scenarios where resource-context RBAC is most helpful. Note the differences in access requirements between SOC teams and non-SOC teams.
+
+| Requirement type |SOC team  |Non-SOC team  |
+|---------|---------|---------|
+|**Permissions**     | The entire workspace        |   Specific resources only      |
+|**Data access**     |  All data in the workspace       | Only data for resources that the team is authorized to access        |
+|**Experience**     |  The full Microsoft Sentinel experience, possibly limited by the [roles and permissions](/azure/sentinel/roles) assigned to the user       |  Log queries and Workbooks only       |
 
 The following image shows a simplified version of a workspace architecture where security and operations teams need access to different sets of data, and resource-context RBAC is used to provide the required permissions.
 
-[![Diagram of a sample architecture for resource-context RBAC.](../media/resource-context-rbac-sample.png)](../media/resource-context-rbac-sample.png#lightbox)
+:::image type="content" source="../media/resource-context-rbac-sample.png" lightbox="../media/resource-context-rbac-sample.png" alt-text="A diagram of a simplified version of a workspace architecture where security and operations teams need access to different sets of data, and resource-context RBAC is used to provide the required permissions.":::
 
-In this image, the Microsoft Sentinel workspace is placed in a separate subscription to better isolate permissions.
+In this image:
 
-In addition to the security subscription, a separate subscription is used for the applications teams to host their workloads. The applications teams are granted access to their respective resource groups, where they can manage their resources. This separate subscription and resource-context RBAC allows these teams to view logs generated by any resources they have access to, even when the logs are stored in a workspace where they *don't* have direct access. The applications teams can access their logs via the **Logs** area of the Azure portal, to show logs for a specific resource, or via Azure Monitor, to show all of the logs they can access at the same time.
+- The Log Analytics workspace enabled for Microsoft Sentinel is placed in a separate subscription to better isolate permissions from the subscription that the applications teams use to host their workloads.
+- The applications teams are granted access to their respective resource groups, where they can manage their resources.
 
-Azure resources have built-in support for resource-context RBAC, but may require additional fine-tuning when working with non-Azure resources.
-
-### Table-level RBAC
-
-Table-level RBAC enables you to define specific data types (tables) to be accessible only to a specified set of users.
-
-For example, consider if the organization whose architecture is described in the image above must also grant access to Office 365 logs to an internal audit team. In this case, they might use table-level RBAC to grant the audit team with access to the entire **OfficeActivity** table, without granting permissions to any other table.
-
-### Access considerations with multiple workspaces
-
-If you have different entities, subsidiaries, or geographies within your organization, each with their own security teams that need access to Microsoft Sentinel, use separate workspaces for each entity or subsidiary. Implement the separate workspaces within a single Azure AD tenant, or across multiple tenants using Azure Lighthouse.
-
-Your central SOC team may also use an additional, optional Microsoft Sentinel workspace to manage centralized artifacts such as analytics rules or workbooks.
-
-## Technical best practices for creating your workspace
-
-Use the following best practice guidance when creating the Log Analytics workspace you'll use for Microsoft Sentinel:
-
-- **When naming your workspace**, include *Microsoft Sentinel* or some other indicator in the name, so that it's easily identified among your other workspaces.
-
-- **Use the same workspace for both Microsoft Sentinel and Microsoft Defender for Cloud**, so that all logs collected by Microsoft Defender for Cloud can also be ingested and used by Microsoft Sentinel. The default workspace created by Microsoft Defender for Cloud will not appear as an available workspace for Microsoft Sentinel.
-
-- **Use a dedicated workspace cluster if your projected data ingestion is around or more than 1 TB per day**. A dedicated cluster enables you to secure resources for your Microsoft Sentinel data, which enables better query performance for large data sets. Dedicated clusters also provide the option for more encryption and control of your organization's keys.
-
-Don't apply a resource lock to a Log Analytics workspace you'll use for Microsoft Sentinel. A resource lock on a workspace can cause many Microsoft Sentinel operations to fail.
-
-## Simplify working with multiple workspaces
-
-If you do need to work with multiple workspaces, simplify your incident management and investigation by condensing and listing all incidents from each Microsoft Sentinel instance in a single location.
-
-To reference data that's held in other Microsoft Sentinel workspaces, such as in cross-workspace workbooks, use cross-workspace queries.
+This separate subscription and resource-context RBAC allows these teams to view logs generated by any resources they have access to, even when the logs are stored in a workspace where they don't have direct access. The applications teams can access their logs via the Logs area of the Azure portal, to show logs for a specific resource, or via Azure Monitor, to show all of the logs they can access at the same time.

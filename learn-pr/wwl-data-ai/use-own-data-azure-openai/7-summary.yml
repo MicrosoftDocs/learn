@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-own-data-azure-openai.summary
+title: Summary
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Summary
+  description: Summary of topics covered in this module.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 03/18/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

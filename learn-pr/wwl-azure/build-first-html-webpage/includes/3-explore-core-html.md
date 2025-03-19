@@ -28,7 +28,7 @@ Headers are common elements that are numbered one through six, with one being th
 
 The following video demonstrates how HTML gets transformed by browsers into formatted information.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE5d5qK]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ca39156c-3f3a-404d-beca-5c2f9ebfcc3f]
 
 ## Learning How to Use Tags
 

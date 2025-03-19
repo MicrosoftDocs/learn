@@ -4,11 +4,10 @@ metadata:
   title: "Develop a security and compliance plan"
   description: "Build strategies around security and compliance and prepare for Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions."
   brand: azure
-  ms.date: 06/25/2020
+  ms.date: 01/08/2025
   author: chcomley
   ms.author: chcomley
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: learning-path
 title: "Develop a security and compliance plan"
 summary: |
   Build strategies around security and compliance that enable you to authenticate and authorize your users, handle sensitive information, and enforce proper governance.
@@ -24,24 +23,21 @@ roles:
 - security-engineer
 products:
 - azure
-- azure-active-directory
+- entra-id
 - azure-key-vault
 - azure-api-management
 - azure-monitor
 subjects:
 - information-protection-governance
-- business-continuity
+- site-reliability-engineering
 - security
 modules:
 - learn.intro-to-azure-ad
-- learn.azure.create-users-and-groups-in-azure-active-directory
-- learn.authenticate-apps-with-managed-identities
+- learn.azure-security.manage-users-and-groups-in-aad
 - learn.azure-security.configure-and-manage-azure-key-vault
 - learn.control-authentication-with-apim
-- learn.azure.protect-against-security-threats-azure
 - learn.monitor-report-aad-security-events
 - learn.github.maintain-secure-repository-github
-- learn.azure.build-cloud-governance-strategy-azure
 - learn.improve-reliability-failure
 - learn.improve-reliability-incidents
 trophy:

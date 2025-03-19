@@ -4,11 +4,10 @@ title: Implement event log subscriptions
 metadata:
   title: Implement event log subscriptions
   description: "Implement event log subscriptions"
-  ms.date: 06/02/2022
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

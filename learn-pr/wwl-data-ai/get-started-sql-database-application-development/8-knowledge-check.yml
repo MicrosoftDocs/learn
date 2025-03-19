@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.get-started-sql-database-application-development.knowledge-check
+title: Knowledge check
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/02/2024
+  author: jupadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 8
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What is the primary difference between the single database and elastic pools deployment models in Azure SQL Database?
+    choices:
+    - content: The single database model allows for the allocation of storage and compute resources to a group of databases, while the elastic pools model manages each database individually in terms of scale and data size.
+      isCorrect: false
+      explanation: Incorrect. The elastic pools model allows for the allocation of storage and compute resources to a group of databases, while the single database model manages each database individually in terms of scale and data size.
+    - content: In the single database model, each database has its own dedicated resources, while in the elastic pools model, resources are shared among multiple databases within the same pool.
+      isCorrect: true
+      explanation: Correct. The single database model manages each database individually with its own resources, while the elastic pools model shares resources among multiple databases.
+    - content: In the single database model, resources are shared among multiple databases, while in the elastic pools model, each database has its own dedicated resources.
+      isCorrect: false
+      explanation: Incorrect. In the single database model, each database has its own dedicated resources, while in the elastic pools model, resources are shared among multiple databases within the same pool.
+  - content: How does the Hyperscale service tier affect the time needed to create database backups or to scale up or down?
+    choices:
+    - content: It increases the time based on the volume of data in the database.
+      isCorrect: false
+      explanation: Incorrect. Hyperscale service tier actually reduces the time needed for these operations, regardless of the volume of data.
+    - content: It requires a constant amount of time, regardless of the volume of data in the database.
+      isCorrect: false
+      explanation: Incorrect. While Hyperscale does improve the speed of these operations, it doesn't require a constant amount of time.
+    - content: It's no longer dependent on the volume of data in the database.
+      isCorrect: true
+      explanation: Correct. The time needed to create database backups or to scale up or down with Hyperscale isn't dependent on the volume of data in the database.
+  - content: What is the main difference between geo-replication and auto-failover groups in terms of replication type?
+    choices:
+    - content: Geo-replication uses synchronous replication, while auto-failover groups use asynchronous replication.
+      isCorrect: false
+      explanation: Incorrect. Geo-replication uses asynchronous replication, while auto-failover groups use synchronous replication.
+    - content: Both geo-replication and auto-failover groups use asynchronous replication.
+      isCorrect: false
+      explanation: Incorrect. Geo-replication uses asynchronous replication, while auto-failover groups use synchronous replication.
+    - content: Geo-replication uses asynchronous replication, while auto-failover groups use synchronous replication.
+      isCorrect: true
+      explanation: Correct. Geo-replication uses asynchronous replication that can cause data lag, while auto-failover groups use synchronous replication ensuring the secondary database is always in sync with the primary.
+  - content: What is the main function of Microsoft Copilot in Azure SQL Database?
+    choices:
+    - content: It allows database administrators to manage developers' tasks.
+      isCorrect: false
+      explanation: Incorrect. Microsoft Copilot doesn't manage developers' tasks. It helps both administrators and developers manage databases and resolve issues independently.
+    - content: It translates SQL queries into natural language.
+      isCorrect: false
+      explanation: Incorrect. Microsoft Copilot doesn't translate SQL queries into natural language, it translates natural language into SQL queries.
+    - content: It enhances SQL management and troubleshooting by offering natural language to SQL conversion and self-help for database administration.
+      isCorrect: true
+      explanation: Correct. Microsoft Copilot in Azure SQL Database boosts productivity by translating natural language into SQL and providing self-help for database administration.

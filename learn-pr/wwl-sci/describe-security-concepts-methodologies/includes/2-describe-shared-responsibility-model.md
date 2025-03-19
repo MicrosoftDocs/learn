@@ -12,7 +12,7 @@ The shared responsibility model makes responsibilities clear. When organizations
 
 The following diagram illustrates the areas of responsibility between the customer and the cloud provider, according to where data is held.
 
-:::image type="content" source="../media/3-shared-responsibility-model.png" alt-text="The Shared responsibility model responsibilities by type.":::
+:::image type="content" source="../media/3-shared-responsibility-model.png" alt-text="Diagram showing the Shared responsibility model responsibilities by type.":::
 
 - **On-premises datacenters**. In an on-premises datacenter, you have responsibility for everything from physical security to encrypting sensitive data.
 

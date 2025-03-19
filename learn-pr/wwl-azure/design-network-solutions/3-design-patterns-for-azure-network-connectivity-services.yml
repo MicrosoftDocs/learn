@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-network-solutions.design-patterns-for-azure-network-connectivity-services
+title: Design patterns for Azure network connectivity services
+metadata:
+  title: Design patterns for Azure network connectivity services
+  description: "Design patterns for Azure network connectivity services"
+  ms.date: 12/09/2024
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-design-patterns-for-azure-network-connectivity-services.md)]

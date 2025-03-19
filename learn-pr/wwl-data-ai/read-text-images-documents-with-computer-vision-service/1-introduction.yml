@@ -2,15 +2,19 @@
 uid: learn.wwl.read-text-images-documents-with-computer-vision-service.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
-  description: "Introduction"
-  ms.date: 10/20/2022
+  description: Introduction
   author: wwlpublish
-  ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.author: berryivor
+  ms.date: 02/05/2024
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
 azureSandbox: false
 labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
+

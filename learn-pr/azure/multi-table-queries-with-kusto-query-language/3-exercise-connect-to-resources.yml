@@ -4,12 +4,11 @@ title: Exercise - Connect to resources
 metadata:
   unitType: exercise
   title: Exercise - Connect to resources
-  description: In this exercise, you'll learn how to connect to a database that holds the sales data.
-  ms.date: 09/22/2022
+  description: In this exercise, you learn how to connect to a database that holds the sales data.
+  ms.date: 03/07/2025
   author: shsagir
   ms.author: shsagir
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/3-exercise-connect-to-resources.md)]

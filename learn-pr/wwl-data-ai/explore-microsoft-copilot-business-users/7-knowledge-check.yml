@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.explore-microsoft-copilot-business-users.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Check your knowledge of Microsoft Copilot."
+  ms.date: 11/11/2024
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.topic: unit
+  ms.collection:
+  - wwl-ai-copilot
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "Which Copilot product should your organization use to assist employees as they work in Microsoft productivity applications and with data in services across the enterprise?"
+    choices:
+    - content: "Microsoft Copilot"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Copilot is a good solution for individuals who need Copilot for personal use."
+    - content: "Microsoft Copilot Pro"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Copilot Pro is for individuals who need advanced functionality."
+    - content: "Microsoft 365 Copilot"
+      isCorrect: true
+      explanation: "Correct. Microsoft 365 Copilot is a great choice to assist employees in an organization."
+  - content: "How can you ground a prompt for Copilot?"
+    choices:
+    - content: "Reference a source of data in the prompt to scope the response."
+      isCorrect: true
+      explanation: "Correct. Referencing a data source in your prompt helps ground the response."
+    - content: "Repeatedly submit the same prompt until you get the response you want."
+      isCorrect: false
+      explanation: "Incorrect. Repeating the same request does not ground the prompt."
+    - content: "Enter the command 'GO' after your prompt"
+      isCorrect: false
+      explanation: "Incorrect. Copilot prompts do not require keyword commands."
+  - content: "What should you do if Copilot returns a response that doesn’t fully answer your question?"
+    choices:
+    - content: "Restart the session and try again. Copilot answers are random."
+      isCorrect: false
+      explanation: "Incorrect. Copilot responses are not random. They are dependent on effective prompts and iterative conversations."
+    - content: "Submit a follow-up prompt asking for the specific information you need."
+      isCorrect: true
+      explanation: "Correct. Using follow-up prompts to iterate on a response can help you get the information you need."
+    - content: "Ask a human coworker instead. Copilot cannot answer your question."
+      isCorrect: false
+      explanation: "Incorrect. Copilot responses can be refined by submitting effective prompts in iterative conversations."
+  

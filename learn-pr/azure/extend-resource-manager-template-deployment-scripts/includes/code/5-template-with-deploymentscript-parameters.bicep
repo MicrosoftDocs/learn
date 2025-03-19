@@ -10,7 +10,7 @@ var roleAssignmentName = guid(resourceGroup().id, 'contributor')
 var contributorRoleDefinitionId = resourceId('Microsoft.Authorization/roleDefinitions', 'b24988ac-6180-42a0-ab88-20f7382dd24c')
 var deploymentScriptName = 'CopyConfigScript'
 
-resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
+resource storageAccount 'Microsoft.Storage/storageAccounts@2023-01-01' = {
   name: storageAccountName
   tags: {
     displayName: storageAccountName
@@ -22,6 +22,7 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
     tier: 'Standard'
   }
   properties: {
+    allowBlobPublicAccess: true
     encryption: {
       services: {
         blob: {

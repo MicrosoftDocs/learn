@@ -1,0 +1,56 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.explore-generative-ai.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is a part of the exploring generative AI module.
+  ms.date: 01/14/2025
+  author: yoosunee
+  ms.author: anruss
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Knowledge check
+  questions:
+  - content: Which statement best distinguishes between Natural Language Processing (NLP), Natural Language Generation (NLG), and Large Language Models (LLMs)?
+    choices:
+    - content: NLP aims to understand and analyze human language, while NLG generates human-like text such as summaries. LLMs are sophisticated models that handle both by using extensive datasets and algorithms.
+      isCorrect: true
+      explanation: "Correct: _This answer accurately distinguishes between the three concepts._"
+    - content: NLP and NLG are subsets of LLMs. NLP analyzes text, NLG creates text, and LLMS stores and retrieves text data.
+      isCorrect: false
+      explanation: "Incorrect: _NLP and NLG are not subsets of LLMs. LLMs can perform tasks related to both. LLMs are not primarily used for data storage._"
+    - content: NLP is used for generating human-like text, NLG is for interpreting human language, and LLMs are models that perform processing tasks.
+      isCorrect: false
+      explanation: "Incorrect: _This answer reverses the roles of NLP and NLG and underestimates the capabilities of LLMs._"
+    - content: NLP involves both understanding and generating human language. NLF is a specific application of NLP focused on text creation, and LLMs are complex models that integrate these capabilities to perform language-related tasks.
+      isCorrect: false
+      explanation: "Incorrect: _While NLP involves understanding and generating human language, NLF isn't a specific application of NLP._"
+  - content: Which statement best assesses the difference between generative AI and traditional AI models?
+    choices:
+    - content: Generative AI and traditional AI both rely on explicit programming to perform specific tasks, with generative AI being more efficient with data analysis and traditional AI with content creation.
+      isCorrect: false
+      explanation: "Incorrect: Generative AI doesn't rely on explicit programming for specific tasks; it uses machine learning techniques to generate new content."
+    - content: Generative AI focuses on creating new content from existing data, while traditional AI is designed to perform specific tasks using predefined rules and algorithms.
+      isCorrect: true
+      explanation: "Correct: This is correct. Generative AI focuses on creating new content while traditional AI is designed for specific tasks using predefined rules and algorithms, such as data analysis."
+    - content: Both types use supervised learning to analyze and predict outcomes based on structured data.
+      isCorrect: false
+      explanation: "Incorrect: Traditional AI uses supervised learning while generative AI uses unsupervised learning to create new data."
+    - content: They both can create content, but generative AI requires more computational power.
+      isCorrect: false
+      explanation: "Incorrect: While generative AI requires more computational power, it isn't correct to say both are equally capable of creating content."
+  - content: Evaluate the following statements and decide which one best assesses how generative AI services, like Microsoft Copilot, can enhance creativity.
+    choices:
+    - content: These services are used for data analysis, and don't directly affect creativity.
+      isCorrect: false
+      explanation: "Incorrect: AI services like Microsoft Copilot aren't primarily used for data analysis."
+    - content: Generative AI services like Microsoft Copilot allows the AI to handle the creative process, making tasks easier.
+      isCorrect: false
+      explanation: "Incorrect: Generative AI services, like Microsoft Copilot, don't replace human creativity; they enhance it, allowing for more efficient and creative processes."
+    - content: Generative AI services like Microsoft Copilot enhance creativity by automating repetitive tasks, allowing users to focus on more creative aspects of their work, and providing suggestions and ideas.
+      isCorrect: true
+      explanation: "Correct: This answer is correct."
+    - content: Generative AI services like Microsoft Copilot enhance creativity by helping with technical tasks.
+      isCorrect: false
+      explanation: "Incorrect: While Microsoft Copilot can help with technical tasks, it can also help with an array of other tasks too."

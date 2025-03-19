@@ -1,6 +1,6 @@
-In this module, you'll add nonfunctional tests to the pipeline. These tests check characteristics like performance and reliability.
+In this module, you'll add nonfunctional tests to your pipeline. These tests check characteristics like performance and reliability.
 
-In [Run functional tests in Azure Pipelines](/training/modules/run-functional-tests-azure-pipelines?azure-portal=true), you and the Tailspin Toys web team added UI tests to the pipeline. UI tests are a form of functional testing. Functional tests verify the functionality, or behavior, of software. In other words, functional tests verify that each function of the software does what it should.
+In [Run functional tests in Azure Pipelines](/training/modules/run-functional-tests-azure-pipelines?azure-portal=true), you and the Tailspin Toys web team added UI tests to the pipeline. UI tests are a form of functional testing. Functional tests verify the functionality—or behavior—of software. In other words, functional tests verify that each function of the software does what it should.
 
 But what about the nonfunctional aspects of an application, such as performance and reliability? After your service is operational and deployed to an environment, how can you determine the application's performance under both realistic and heavy loads? Does your application expose any loopholes or weaknesses that might cause an information breach?
 
@@ -19,8 +19,8 @@ After completing this module, you'll be able to:
 
 The modules in this learning path are part of a progression. To follow the progression from the beginning, be sure to first complete these learning paths:
 
-* [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
-* [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
+- [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
+- [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
 
 We also recommend that you start at the beginning of the [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true) learning path.
 
@@ -38,21 +38,3 @@ You can get started with Azure and Azure DevOps for free. You don't need an Azur
 The development environment lets you complete the exercises in this and future modules. You can also use it to apply your new skills to your own projects.
 
 [!include[](../../shared/includes/project-details-note.md)]
-
-## Meet the team
-
-You met the _Space Game_ web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module.
-
-:::row:::
-
-[!include[](../../shared/includes/meet-andy-short-col.md)]
-
-[!include[](../../shared/includes/meet-amita-short-col.md)]
-
-[!include[](../../shared/includes/meet-tim-short-col.md)]
-
-[!include[](../../shared/includes/meet-mara-short-col.md)]
-
-:::row-end:::
-
-Mara has prior experience with DevOps. She's helping the team adopt a more automated process that uses Azure DevOps.

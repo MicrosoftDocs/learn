@@ -28,7 +28,7 @@ Add-DnsServerResourceRecord -ZoneName "Contoso.com" -A -Name "www" -IPv4Address 
 Add-DnsServerResourceRecord -ZoneName "Contoso.com" -A -Name "www" -IPv4Address "172.16.18.17" -ZoneScope "LondonZoneScope"
 # Create the DNS server query resolution policies
 Add-DnsServerQueryResolutionPolicy -Name "LondonPolicy" -Action ALLOW -ClientSubnet "eq,LondonSubnet" -ZoneScope "LondonZoneScope,1" -ZoneName "Contoso.com"
-Add-DnsServerQueryResolutionPolicy -Name "SeattlePolicy" -Action ALLOW -ClientSubnet "eq,SeattleSubnet" -ZoneScope "SeattleZoneScope,1" -ZoneName Contoso.com
+Add-DnsServerQueryResolutionPolicy -Name "SeattlePolicy" -Action ALLOW -ClientSubnet "eq,SeattleSubnet" -ZoneScope "SeattleZoneScope,1" -ZoneName "Contoso.com"
 ```
 
 ## Demonstration
@@ -46,7 +46,7 @@ The following video demonstrates how to implement DNS policies by using Windows 
 9. Create the DNS server query resolution policies by running the `Add-DnsServerQueryResolutionPolicy` cmdlet.
 10. Switch back to the client, purge the resolver cache, and then test name resolution for the `www.Contoso.com`record.
 
- >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWxDP5]
+ >[!VIDEO https://learn-video.azurefd.net/vod/player?id=567d420f-428c-409e-8d27-7617ad3050ca]
 
 ---
 

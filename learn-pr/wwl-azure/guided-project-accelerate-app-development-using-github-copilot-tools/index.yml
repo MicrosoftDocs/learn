@@ -1,0 +1,60 @@
+### YamlMime:Module
+uid: learn.wwl.guided-project-accelerate-app-development-using-github-copilot-tools
+metadata:
+  title: Guided project - Accelerate app development using GitHub Copilot tools
+  description: "This module explores using GitHub Copilot to accelerate development work during an end-to-end project. GitHub Copilot is used to explain an unfamiliar codebase, generate project documentation, develop a new app feature, develop unit tests, and implement improvements."
+  ms.date: 11/26/2024
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: module-guided-project
+  ms.collection: N/A
+  ms.custom:
+  - N/A
+  ms.service: github-copilot
+  ms.devlang: csharp
+  ai-usage: ai-assisted
+title: Guided project - Accelerate app development using GitHub Copilot tools
+summary: This Module explores using GitHub Copilot to accelerate development of an end-to-end project. GitHub Copilot is used to explain unfamiliar code, generate project documentation, develop a new app feature, develop unit tests, and implement improvements.&nbsp;
+abstract: |
+  By the end of this module, you're able to:
+
+  -   Explain an unfamiliar codebase using GitHub Copilot tools.
+
+  -   Generate README project documentation using GitHub Copilot tools.
+
+  -   Develop a new application feature using GitHub Copilot tools.
+
+  -   Create unit tests using GitHub Copilot tools.
+
+  -   Implement code quality, reliability, performance, and security improvements using GitHub Copilot tools.
+prerequisites: |
+  -   An active subscription for GitHub Copilot&nbsp;is required&nbsp;for either your personal GitHub account or a GitHub account managed by an organization or enterprise.
+
+  -   Experience using the GitHub Copilot and GitHub Copilot Chat extensions for Visual Studio Code to create new code and generate explanations of existing code.
+
+  -   One or more years of software development experience is recommended.
+
+  -   Experience developing C# applications using Visual Studio Code and the C# Dev Kit extension is recommended.
+
+  -   Awareness of the GitHub Copilot free trial conditions. If you choose the free trial offer for GitHub Copilot, a form of payment is requested at sign-up. Charges aren't applied until the trial is over, unless you cancel before the conclusion of the 30-day period.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- github
+subjects:
+- app-development
+- productivity
+units:
+- learn.wwl.guided-project-accelerate-app-development-using-github-copilot-tools.introduction
+- learn.wwl.guided-project-accelerate-app-development-using-github-copilot-tools.prepare-development-environment
+- learn.wwl.guided-project-accelerate-app-development-using-github-copilot-tools.exercise-analyze-document-code-github-copilot
+- learn.wwl.guided-project-accelerate-app-development-using-github-copilot-tools.exercise-develop-code-features-github-copilot
+- learn.wwl.guided-project-accelerate-app-development-using-github-copilot-tools.exercise-develop-unit-tests-github-copilot
+- learn.wwl.guided-project-accelerate-app-development-using-github-copilot-tools.exercise-refactor-improve-code-github-copilot
+- learn.wwl.guided-project-accelerate-app-development-using-github-copilot-tools.knowledge-check
+- learn.wwl.guided-project-accelerate-app-development-using-github-copilot-tools.summary
+badge:
+  uid: learn.wwl.guided-project-accelerate-app-development-using-github-copilot-tools.badge

@@ -1,4 +1,4 @@
-Organizations want to monitor and repair health of their Azure Virtual Desktop including virtual machines, virtual networks, application gateways, and load balancers.
+This module covers connecting on-premises computers and networks to a virtual network using Point-to-site VPN, Site-to-site VPN, and Azure ExpressRoute. It discusses how to filter network traffic, route network traffic, and integrate Azure services into an Azure virtual network.
 
 This module aligns with the exam AZ-140: Configuring and Operating Microsoft Azure Virtual Desktop.
 
@@ -6,13 +6,14 @@ This module aligns with the exam AZ-140: Configuring and Operating Microsoft Azu
 
 After completing this module, you'll be able to:
 
- -  Recommend a solution for Azure Virtual Desktop network connectivity.
- -  Implement Azure virtual network connectivity for Azure Virtual Desktop.
- -  Describe network security for Azure Virtual Desktop.
- -  Configure Azure Virtual Desktop session hosts using Microsoft Bastion.
- -  Monitor communication between a virtual machine and an endpoint.
+ -  Describe Azure Virtual Desktop network connectivity
+ -  Analyze connection quality in Azure Virtual Desktop
+ -  Understand Remote Desktop Protocol (RDP) bandwidth requirements
+ -  Configure RDP Shortpath for Azure Virtual Desktop sample scenarios<br>
+ -  Plan and implement Quality of Service for Azure Virtual Desktop
+ -  Plan an Azure Private Link solution for Azure Virtual Desktop
+ -  Create an RDP connection to a Windows VM using Azure Bastion
 
 ## Prerequisites
 
- -  Working experience with enterprise networking.
- -  Conceptual knowledge of software defined networking and hybrid connectivity.
+ -  Conceptual knowledge of networking and security.

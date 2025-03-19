@@ -1,19 +1,23 @@
 ### YamlMime:Module
 uid: learn.wwl.translate-text-with-translation-service
 metadata:
-  title: Translate text and speech
-  description: "Translate text and speech"
-  ms.date: 01/27/2023
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: 'Fundamentals of language translation '
+  description: "Use Azure AI Speech and Azure AI Translator to translate text and speech."
+  ms.date: 09/13/2024
   author: wwlpublish
   ms.author: sheryang
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Translate text and speech
+  ms.topic: module
+  ms.collection: wwl-ai-copilot
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: ai-assisted
+title: Fundamentals of language translation
 summary: Automated translation capabilities in an AI solution enable closer collaboration by removing language barriers.
-abstract: |
-  After completing this module, you will be able to perform text and speech translation using Azure Cognitive Services.
-prerequisites: |
-  Ability to navigate the Azure portal
+abstract: After completing this module, you will understand how to perform text and speech translation using Azure AI Translator and Azure AI Speech.
+prerequisites: Ability to navigate the Azure portal
 iconUrl: /training/achievements/translate-text-with-translation-service.svg
 levels:
 - beginner
@@ -24,11 +28,13 @@ roles:
 - solution-architect
 - student
 products:
-- azure-cognitive-services
+- ai-services
 subjects:
 - artificial-intelligence
 units:
 - learn.wwl.translate-text-with-translation-service.introduction
+- learn.wwl.translate-text-with-translation-service.translation-concepts
+- learn.wwl.translate-text-with-translation-service.understand-translation-azure
 - learn.wwl.translate-text-with-translation-service.get-started-azure
 - learn.wwl.translate-text-with-translation-service.exercise-translate-text-use-azure
 - learn.wwl.translate-text-with-translation-service.knowledge-check

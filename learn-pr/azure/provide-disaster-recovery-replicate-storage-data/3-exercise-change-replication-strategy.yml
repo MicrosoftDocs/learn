@@ -2,14 +2,18 @@
 uid: learn.azure.provide-disaster-recovery-replicate-storage-data.exercise-change-replication-strategy
 title: Exercise - View replication status
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - View replication status
   description: Learn how to view the replication status for an Azure Storage account.
-  ms.date: 10/08/2020
-  author: tamram
-  ms.author: tamram
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/03/2023
+  author: stevenmatthew
+  ms.author: shaas
+  ms.topic: unit
+  ms.custom:
+    - devx-track-azurecli
 durationInMinutes: 7
 azureSandbox: false
 content: |
   [!include[](includes/3-exercise-change-replication-strategy.md)]
+

@@ -5,11 +5,10 @@ metadata:
   unitType: knowledge_check
   title: "Knowledge check"
   description: "Review your knowledge of F#"
-  ms.date: 07/20/2021
-  author: luisquintanilla
-  ms.author: luquinta
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.date: 02/22/2023
+  author: baronfel
+  ms.author: chethusk 
+  ms.topic: unit
 durationInMinutes: 5
 content: |
 quiz:

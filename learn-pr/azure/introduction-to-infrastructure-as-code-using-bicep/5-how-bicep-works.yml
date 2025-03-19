@@ -2,14 +2,18 @@
 uid: learn.azure.introduction-infrastructure-code-using-bicep.how-bicep-works
 title: How Bicep works
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: How Bicep works # user input: module title for browser tab and search results
   description: Learn how Bicep deploys your Azure infrastructure.
-  ms.date: 10/17/2022
-  author: davidsmatlak
-  ms.author: davidsmatlak
-  ms.topic: interactive-tutorial # do we need ms.topic?
-  ms.prod: learning-azure
+  ms.date: 01/15/2025
+  author: mumian
+  ms.author: jgao
+  ms.topic: unit
+  ms.custom:
+    - devx-track-bicep
 durationInMinutes: 3
 content: |
   [!include[](includes/5-how-bicep-works.md)]
+

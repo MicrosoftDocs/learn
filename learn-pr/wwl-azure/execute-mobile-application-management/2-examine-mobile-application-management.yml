@@ -4,11 +4,10 @@ title: Examine mobile application management
 metadata:
   title: Examine mobile application management
   description: "Examine mobile application management"
-  ms.date: 03/17/2023
+  ms.date: 07/18/2023
   author: wwlpublish
   ms.author: rstearman
-  ms.topic: interactive-tutorial
-  ms.prod: intune
+  ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/2-examine-mobile-application-management.md)]

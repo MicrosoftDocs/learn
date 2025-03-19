@@ -1,8 +1,4 @@
-
-
-
-
-Having enabled Change Tracking and Inventory on your Azure VM workloads, you must now configure and manage the required settings. You can use Change Tracking and Inventory to track changes to files, the registry, software, and Microsoft services running on your VMs. In this unit, you'll learn how to modify Change Tracking and Inventory settings, how to track Windows files, how to track Windows Registry changes, and how to search logs for change records.
+Having enabled Change Tracking and Inventory on your Azure VM workloads, you must now configure and manage the required settings. You can use Change Tracking and Inventory to track changes to files, the registry, software, and Microsoft services running on your VMs. In this unit, you learn how to modify Change Tracking and Inventory settings, how to track Windows files, how to track Windows Registry changes, and how to search logs for change records.
 
 ## Change Tracking and Inventory user interface
 
@@ -19,10 +15,7 @@ You can use the Azure portal to configure and manage Change Tracking and Invento
    - Software
    - Microsoft services
 
-
-Events automatically display on the timeline, as displayed in the graphic. 
-
-![Screenshot of the ContosoAutomationAccount blade. The administrator has selected Change tracking beneath Configuration Management. The graphical output has a number of Events over the preceding 24 hours. ](../media/m10-change-tracking-dash-01.png)
+Events automatically display on the timeline, as displayed in the graphic.
 
 To access inventory information, from the automation account page, in the navigation pane, select **Inventory**. You can review the inventory changes in the corresponding chart that opens.
 
@@ -50,10 +43,10 @@ The following table has the data collection frequency for these various tracked 
 |Windows software|30 minutes|
 |Linux software|5 minutes|
 
-> [!TIP] 
+> [!TIP]
 > You can adjust the Windows Services value using a slide on the **Windows Services** tab in Workspace Configuration.
 
-> [!NOTE] 
+> [!NOTE]
 > The typical Log Analytics data usage for a machine with Change Tracking and Inventory enabled is about 40 megabytes (MB) per month.
 
 #### Track Windows files
@@ -62,12 +55,7 @@ Use the following procedure to configure tracking for Windows files:
 
 1. On the **Workspace Configuration** blade, select the **Windows Files** tab.
 2. On the toolbar, select **Add**.
-
-   ![Screenshot of the Workspace Configuration blade in Change Tracking. The Administrator has selected the Windows Files tab. The Add Windows File for Change Tracking blade is also open. The Administrator has added a file has added and enabled the file.](../media/m10-add-files.png)
-
 3. On the **Add Windows File for Change Tracking** blade, enter the required information, and then select **Save**.
-
-   ![A screenshot of the Workspace Configuration blade in Change Tracking. The Administrator has selected the Windows Files tab and added a file.](../media/m10-add-files-2.png)
 
 The following table lists the configurable properties and explains their meaning.
 
@@ -94,8 +82,6 @@ To track changes to the Registry, use the following procedure:
 4. On the toolbar, select **Add**.
 5. On the **Add Windows Registry for Change Tracking** blade, enter the required information, and then select **Save**.
 
-   ![A screenshot of the Workspace Configuration blade in Change Tracking. The Administrator has selected the Windows Registry tab. Other tab options are: Windows Files, Linux Files, File Content, and Windows Services.](../media/m10-change-tracking-settings.png)
-
 The following table lists the configurable properties and explains their meaning.
 
 | Property             | Explanation                                                  |
@@ -110,8 +96,6 @@ To review  the list of preconfigured tracked registry keys and their meaning, vi
 #### Search logs for change records
 
 You can use the Azure Monitor logs to search for change records. On the **Change Tracking** blade, select **Log Analytics**. On the **Logs** blade, you can enter your log searches.
-
-![A screenshot of the Logs blade. The administrator has entered a new query.](../media/m10-log-query.png)
 
 The following sample query returns the most recent inventory records for Microsoft services that were set to Auto, but were reported as being Stopped.
 

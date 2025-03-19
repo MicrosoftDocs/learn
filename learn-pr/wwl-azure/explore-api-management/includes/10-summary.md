@@ -1,4 +1,3 @@
-
 In this module, you learned how to:
 
 * Describe the components, and their function, of the API Management service.

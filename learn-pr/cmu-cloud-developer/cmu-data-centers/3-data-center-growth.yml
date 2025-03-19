@@ -4,11 +4,10 @@ title: Size, density, and efficiency growth
 metadata:
   title: Size, density, and efficiency growth of datacenters
   description: Learn about the size, density, and efficiency growth of datacenters.
-  ms.date: 02/20/2020
+  ms.date: 03/09/2022
   author: softchris
   ms.author: chnoring
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 8
 content: |

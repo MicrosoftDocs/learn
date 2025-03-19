@@ -1,26 +1,32 @@
+Controlling when content is refreshed is important for any caching mechanism. A cached resource might be out-of-date or stale (compared to the corresponding resource on the origin server).
 
-Because a cached resource can potentially be out-of-date or stale (compared to the corresponding resource on the origin server), it is important for any caching mechanism to control when content is refreshed. To save time and bandwidth consumption, a cached resource is not compared to the version on the origin server every time it is accessed. Instead, as long as a cached resource is considered to be fresh, it is assumed to be the most current version and is sent directly to the client. A cached resource is considered to be fresh when its age is less than the age or period defined by a cache setting. For example, when a browser reloads a webpage, it verifies that each cached resource on your hard drive is fresh and loads it. If the resource is not fresh (stale), an up-to-date copy is loaded from the server.
+## Standard rules engine
 
-## Controlling caching behavior
+In the Standard rules engine for Azure Content Delivery Network, a rule consists of one or more match conditions and an action. The rules engine is designed to be the final authority on how specific types of requests get processed by Standard Azure Content Delivery Network.
 
-Azure CDNs provide two mechanisms for caching files. However, these configuration settings depend on the tier you've selected. Caching rules in Azure CDN Standard for Microsoft are set at the endpoint level and provide three configuration options. Other tiers provide additional configuration options, which include:
+Common uses for the rules:
 
-* **Caching rules**. Caching rules can be either global (apply to all content from a specified endpoint) or custom. Custom rules apply to specific paths and file extensions.
-* **Query string caching**. Query string caching enables you to configure how Azure CDN responds to a query string. Query string caching has no effect on files that can't be cached.
+* Override or define a custom cache policy.
+* Redirect requests.
+* Modify HTTP request and response headers.
 
-With the Azure CDN Standard for Microsoft Tier, caching rules are as simple as the following three options:
+A rule consists of one or more match conditions and an action. The first part of a rule is a match condition or set of match conditions. In the Standard rules engine for Azure Content Delivery Network, each rule can have up to four match conditions. A match condition identifies specific types of requests for which defined actions are performed. If you use multiple match conditions, the match conditions are grouped together by using `AND` logic. Following is a table highlighting a few of the available match options.
 
-* Ignore query strings. This option is the default mode. A CDN POP simply passes the request and any query strings directly to the origin server on the first request and caches the asset. New requests for the same asset will ignore any query strings until the TTL expires.
-* Bypass caching for query strings. Each query request from the client is passed directly to the origin server with no caching.
-* Cache every unique URL. Every time a requesting client generates a unique URL, that URL is passed back to the origin server and the response cached with its own TTL. This final method is inefficient where each request is a unique URL, as the cache-hit ratio becomes low.
+| Match condition | Description |
+|--|--|
+| Device type | Identifies requests made from a mobile device or desktop device. |
+| HTTP version | Identifies requests based on the HTTP version of the request. |
+| Request cookies | Identifies requests based on cookie information in the incoming request. |
+| Post argument | Identifies requests based on arguments defined for the POST request method that's used in the request. |
+| Query string | Identifies requests that contain a specific query string parameter. This parameter is set to a value that matches a specific pattern. |
 
-To change these settings, in the Endpoint pane, select **Caching rules** and then select the caching option that you want to apply to the endpoint and select **Save**.
+For a complete list of match conditions, visit [Match conditions in the Standard rules engine for Azure Content Delivery Network](/azure/cdn/cdn-standard-rules-engine-match-conditions)
 
 ## Caching and time to live
 
-If you publish a website through Azure CDN, the files on that site are cached until their TTL expires. The Cache-Control header contained in the HTTP response from origin server determines the TTL duration.
+Files from publicly accessible origin web servers can be cached in Azure Content Delivery Network until their time to live (TTL) elapses. The TTL gets determined by the `Cache-Control` header in the HTTP response from the origin server. This article describes how to set `Cache-Control` headers for the Web Apps feature of Microsoft Azure App Service, Azure Cloud Services, ASP.NET applications, and Internet Information Services (IIS) sites, all of which are configured similarly. You can set the `Cache-Control` header either by using configuration files or programmatically.
 
-If you don't set a TTL on a file, Azure CDN sets a default value. However, this default may be overridden if you have set up caching rules in Azure. Default TTL values are as follows:
+If you don't set a TTL on a file, Azure CDN sets a default value. However, this default might be overridden if you set up caching rules in Azure. Default TTL values are as follows:
 
 * Generalized web delivery optimizations: seven days
 * Large file optimizations: one day
@@ -28,11 +34,9 @@ If you don't set a TTL on a file, Azure CDN sets a default value. However, this 
 
 ## Content updating
 
-In normal operation, an Azure CDN edge node will serve an asset until its TTL expires. The edge node reconnects to the origin server when the TTL expires and a client makes a request to the same asset. The node will fetch another copy of the asset, resetting the TTL in the process.
+Azure Content Delivery Network edge nodes cache contents until the content's time to live (TTL) expires. After the TTL expires, when a client makes a request for the content from the edge node, the edge node will retrieve a new updated copy of the content to serve to the client. Then the refreshed content in cache of the edge node.
 
-To ensure that users always receive the latest version of an asset, consider including a version string in the asset URL. This approach causes the CDN to retrieve the new asset immediately.
-
-Alternatively, you can purge cached content from the edge nodes, which refreshes the content on the next client request. You might purge cached content when publishing a new version of a web app or to replace any out-of-date assets.
+The best practice to make sure your users always obtain the latest copy of your assets is to version your assets for each update and publish them as new URLs. Content delivery network will immediately retrieve the new assets for the next client requests. Sometimes you might wish to purge cached content from all edge nodes and force them all to retrieve new updated assets. The reason might be due to updates to your web application, or to quickly update assets that contain incorrect information.
 
 You can purge content in several ways.
 
@@ -40,7 +44,7 @@ You can purge content in several ways.
 * Specify a file, by including the path to that file or all assets on the selected endpoint by checking the **Purge All** checkbox in the Azure portal.
 * Based on wildcards (*) or using the root (/).
 
-The Azure CLI provides a special purge verb that will unpublish cached assets from an endpoint. This is very useful if you have an application scenario where a large amount of data is invalidated and should be updated in the cache. To unpublish assets, you must specify either a file path, a wildcard directory, or both:
+The Azure CLI provides a special purge verb that unpublishes cached assets from an endpoint which is useful if you have an application scenario where a large amount of data is invalidated and should be updated in the cache. To unpublish assets, you must specify either a file path, a wildcard directory, or both:
 
 ```bash
 az cdn endpoint purge \
@@ -50,7 +54,7 @@ az cdn endpoint purge \
     --resource-group ExampleGroup
 ```
 
-You can also preload assets into an endpoint. This is useful for scenarios where your application creates a large number of assets, and you want to improve the user experience by prepopulating the cache before any actual requests occur:
+You can also preload assets into an endpoint which is useful for scenarios where your application creates a large number of assets. You can improve the user experience by prepopulating the cache before any actual requests occur:
 
 ```bash
 az cdn endpoint load \
@@ -62,4 +66,4 @@ az cdn endpoint load \
 
 ## Geo-filtering
 
-Geo-filtering enables you to allow or block content in specific countries/regions, based on the country/region code. In the Azure CDN Standard for Microsoft Tier, you can only allow or block the entire site. With the Verizon and Akamai tiers, you can also set up restrictions on directory paths. For more information, see the further reading section in the Summary unit.
+Geo-filtering enables you to allow or block content in specific countries/regions, based on the country/region code. In the Azure CDN Standard for Microsoft Tier, you can only allow or block the entire site. 

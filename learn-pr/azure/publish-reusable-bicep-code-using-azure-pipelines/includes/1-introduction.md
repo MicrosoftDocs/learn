@@ -6,15 +6,15 @@ Publishing reusable Bicep code comes with different concerns than normal Bicep d
 
 Suppose you're the Azure administrator at a toy company. The company's use of Azure is expanding. The company has introduced a new cloud governance approach to ensure that your deployments follow Microsoft's recommended practices for security and reliability.
 
-To make it easy for your colleagues, you've created a set of security-hardened Bicep files. Some of the files deploy complete solutions that your colleagues need. Other files define sets of resources that your colleagues can use within their own Bicep deployments.
+To make it easy for your colleagues, you create a set of security-hardened Bicep files. Some of the files deploy complete solutions that your colleagues need. Other files define sets of resources that your colleagues can use within their own Bicep deployments.
 
-You've previously used Azure Pipelines to automate the deployment of your Azure resources. Now, you want to find a way to automate the validation and publishing of your reusable Bicep code.
+You previously used Azure Pipelines to automate the deployment of your Azure resources. Now, you want to find a way to automate the validation and publishing of your reusable Bicep code.
 
 :::image type="content" source="../media/1-architecture-diagram.png" alt-text="Diagram that shows two pipelines. One publishes a complete Bicep file to a template spec, and the other publishes a module to a Bicep registry." border="false":::
 
-## What will we be doing?
+## What will you learn?
 
-In this module, you'll learn about publishing reusable Bicep code from a deployment pipeline. You'll learn how your pipeline securely identifies itself so that it can publish your code. You'll also learn how to perform code validation and versioning within an automated deployment process.
+In this module, you'll learn to publish reusable Bicep code from a deployment pipeline. You'll also learn how your pipeline securely identifies itself so that it can publish your code. And finally, you'll learn how to perform code validation and versioning within an automated deployment process.
 
 You'll create deployment pipelines to publish two Bicep files: one as a template spec, and another as a module to a private Bicep registry.
 

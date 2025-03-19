@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-ai-everyday-tasks.exercise-personalize-refine-prompts
+title: 'Exercise: Personalize and refine prompts'
+metadata:
+  title: 'Exercise: Personalize and refine prompts'
+  description: "Exercise: Personalize and refine prompts"
+  ms.date: 03/17/2025
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-exercise-personalize-refine-prompts.md)]

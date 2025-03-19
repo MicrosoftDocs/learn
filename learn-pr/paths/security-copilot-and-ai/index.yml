@@ -1,0 +1,44 @@
+### YamlMime:LearningPath
+uid: learn.wwl.security-copilot-and-ai
+metadata:
+  title: 'Enhance security operations by using Microsoft Security Copilot (SC-5006)'
+  description: 'Enhance security operations by using Microsoft Security Copilot (SC-5006).'
+  ms.date: 01/13/2025
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: learning-path
+  ms.custom: [copilot-learning-hub]
+title: 'Enhance security operations by using Microsoft Security Copilot'
+prerequisites: |
+  - Working knowledge of security operations and incident response
+  - Working knowledge of Microsoft security products and services
+summary: |
+  Learn about Microsoft Security Copilot, an AI-powered security analysis tool that enables analysts to process security signals and respond to threats at a machine speed, and the AI concepts upon which it's built.
+iconUrl: /training/achievements/generic-trophy.svg
+hidden: false
+levels:
+- beginner
+roles:
+- student
+- security-engineer
+- security-operations-analyst
+- business-user
+- business-owner
+products:
+- defender-xdr
+- microsoft-sentinel
+- intune
+- entra
+- defender-for-threat-intelligence
+- ms-copilot
+subjects:
+- security
+- artificial-intelligence
+modules:
+- learn.wwl.fundamentals-generative-ai
+- learn-wwl.security-copilot-getting-started
+- learn.security-copilot-describe-core-features
+- learn.security-copilot-embedded-experiences
+- learn.security-copilot-exercises
+trophy:
+  uid: earn.wwl.security-copilot-and-ai.trophy

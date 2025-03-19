@@ -1,15 +1,18 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-java-azure.7-knowledge-check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Check your knowledge
   description: Knowledge check
-  ms.date: 11/16/2020
-  author: SandraAhlgrimm
-  ms.author: sakriema
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 11/22/2024
+  author: KarlErickson
+  ms.author: karler
+  ms.reviewer: hangwan
+  ms.topic: unit
   ms.custom:
-  - team=cloud_advocates
+    - team=cloud_advocates
+    - devx-track-extended-java
   ms.contributors:
   - sakriema-12042020
 title: Check your knowledge
@@ -24,9 +27,9 @@ quiz:
     - content: "VM"
       isCorrect: false
       explanation: "Even though it's possible to deploy the packaged Spring Boot Application on a VM in Azure, it's not the preferred way to do so. Azure provides more support with other services."
-    - content: "Azure Spring Apps"
+    - content: "Azure Container Apps"
       isCorrect: false
-      explanation: "Azure Spring Apps is the home of distributed Spring Boot services."
+      explanation: "Azure Container Apps is the home of Spring applications."
     - content: "All the above"
       isCorrect: true
       explanation: "Whether you're at the beginning of a _lift and shift_ migration toward the cloud or you start cloud native, Azure provides various services that you can choose from."
@@ -52,3 +55,4 @@ quiz:
     - content: "All the above"
       isCorrect: true
       explanation: "Even though it always depends on the specific application, Azure offers services for all of these application types."
+

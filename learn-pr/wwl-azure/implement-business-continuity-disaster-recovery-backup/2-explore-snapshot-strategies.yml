@@ -2,13 +2,14 @@
 uid: learn.wwl.implement-business-continuity-disaster-recovery-backup.explore-snapshot-strategies
 title: Explore snapshot strategies
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore snapshot strategies
   description: "Explore snapshot strategies"
   ms.date: 06/30/2022
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

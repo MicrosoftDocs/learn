@@ -11,7 +11,7 @@ This module consists of two lessons:
 - Lesson 1 – Parameters 
 - Lesson 2 – Datasets 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5aA6j] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=09c13206-0701-4829-85e8-3a6f819a61c4] 
 
 Module 11 Tips and Tricks 
 

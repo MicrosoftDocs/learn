@@ -1,13 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.survey-components-of-azure-synapse-analytics
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Survey the Components of Azure Synapse Analytics
   description: "Survey the Components of Azure Synapse Analytics"
   ms.date: 06/23/2022
   author: wwlpublish
   ms.author: jamesh
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: azure-synapse-analytics
 title: Survey the Components of Azure Synapse Analytics
 summary: Learn the various components of Azure Synapse Analytics that enables you to build your analytical solutions in one place.
 abstract: |
@@ -44,3 +46,4 @@ units:
 - learn.wwl.survey-components-of-azure-synapse-analytics.summary
 badge:
   uid: learn.wwl.survey-components-of-azure-synapse-analytics.badge
+

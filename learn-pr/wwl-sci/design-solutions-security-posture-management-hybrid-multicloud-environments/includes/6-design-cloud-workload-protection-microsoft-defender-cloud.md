@@ -47,10 +47,10 @@ The following table summarizes the Defender for Servers deployment process:
 1. Protect on-premises servers:
     - Onboard them as Azure Arc machines and deploy agents with auto-provisioning. 
 
--   Learn more about [foundational cloud security posture management (CSPM)](https://learn.microsoft.com/azure/defender-for-cloud/concept-cloud-security-posture-management#defender-cspm-plan-options).
--   Learn more about [Azure Arc](https://learn.microsoft.com/azure/azure-arc/) onboarding.
+-   Learn more about [foundational cloud security posture management (CSPM)](/azure/defender-for-cloud/concept-cloud-security-posture-management#defender-cspm-plan-options).
+-   Learn more about [Azure Arc](/azure/azure-arc/) onboarding.
 
-When you enable [Microsoft Defender for Servers](https://learn.microsoft.com/azure/defender-for-cloud/defender-for-servers-introduction) on an Azure subscription or a connected AWS account, all of the connected machines will be protected by Defender for Servers. You can enable Microsoft Defender for Servers at the Log Analytics workspace level, but only servers reporting to that workspace will be protected and billed and those servers won't receive some benefits, such as Microsoft Defender for Endpoint, vulnerability assessment, and just-in-time VM access.
+When you enable [Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction) on an Azure subscription or a connected AWS account, all of the connected machines will be protected by Defender for Servers. You can enable Microsoft Defender for Servers at the Log Analytics workspace level, but only servers reporting to that workspace will be protected and billed and those servers won't receive some benefits, such as Microsoft Defender for Endpoint, vulnerability assessment, and just-in-time VM access.
 
 ## Application workload protections
 
@@ -95,10 +95,10 @@ Microsoft Defender for SQL servers on machines extends the protections for your 
     
 -   On-premises SQL servers:
     
-    -   [Azure Arc-enabled SQL Server](https://learn.microsoft.com/sql/sql-server/azure-arc/overview)
-    -   [SQL Server running on Windows machines without Azure Arc](https://learn.microsoft.com/azure/azure-monitor/agents/agent-windows)
+   -   [Azure Arc-enabled SQL Server](/sql/sql-server/azure-arc/overview)
+   -   [SQL Server running on Windows machines without Azure Arc](/azure/azure-monitor/agents/agent-windows)
         
 -   Multicloud SQL servers:
     
-    -   [Connect your AWS accounts to Microsoft Defender for Cloud](https://learn.microsoft.com/azure/defender-for-cloud/quickstart-onboard-aws)
-    -   [Connect your GCP project to Microsoft Defender for Cloud](https://learn.microsoft.com/azure/defender-for-cloud/quickstart-onboard-gcp)
+    -   [Connect your AWS accounts to Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-aws)
+    -   [Connect your GCP project to Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-gcp)

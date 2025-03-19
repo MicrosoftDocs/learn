@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.exercise
+title: Exercise - Practice the implementation of Unity Catalog
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Exercise - Practice the implementation of Unity Catalog
+  description: "Learn ways to anonymize data and apply data masking on attributes in Azure Databricks with Unity Catalog."
+  ms.date: 08/14/2024
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 35
+content: |
+  [!include[](includes/08-exercise.md)]
+

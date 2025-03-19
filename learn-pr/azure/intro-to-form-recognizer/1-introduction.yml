@@ -2,13 +2,17 @@
 uid: learn.azure.intro-to-form-recognizer.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
-  description: Introduction to Azure Form Recognizer
-  ms.date: 03/14/2021
+  description: Introduction to Azure AI Document Intelligence
   author: laujan
   ms.author: lajanuar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.date: 07/30/2024
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
 durationInMinutes: 2
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!INCLUDE[](includes/1-introduction.md)]
+

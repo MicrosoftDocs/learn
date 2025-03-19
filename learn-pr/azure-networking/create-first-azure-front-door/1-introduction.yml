@@ -2,14 +2,15 @@
 uid: learn.create-first-azure-front-door.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: Introduction
-  ms.date: 06/08/2022
+  ms.date: 10/16/2023
   author: duongau
   ms.author: duau
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

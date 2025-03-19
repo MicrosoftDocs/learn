@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.explore-generative-ai.new-opportunities-with-generative-ai
+title: New opportunities with generative AI
+metadata:
+  title: New opportunities with generative AI
+  description: This content is a part of the exploring generative AI module.
+  ms.date: 01/14/2025
+  author: yoosunee
+  ms.author: anruss
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-new-opportunities-with-generative-ai.md)]

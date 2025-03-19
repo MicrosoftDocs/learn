@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-data-retention-microsoft-365.recover-content-microsoft-exchange
+title: Recover content in Microsoft Exchange
+metadata:
+  title: Recover content in Microsoft Exchange
+  description: "Recover content in Microsoft Exchange"
+  ms.date: 05/30/2024
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/recover-content-microsoft-exchange.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How do eDiscovery tools within the Microsoft Purview compliance portal support complex recovery needs?"
+    choices:
+    - content: "By offering robust search and hold functionalities."
+      isCorrect: true
+      explanation: "Correct: eDiscovery tools within the Microsoft Purview compliance portal are designed for detailed audits and legal considerations, providing comprehensive search and hold functionalities."
+    - content: "By providing a simple recovery interface."
+      isCorrect: false
+      explanation: "Incorrect: The eDiscovery tools are more complex and offer detailed functionalities, not just a simple recovery interface."
+    - content: "By automatically recovering all deleted messages."
+      isCorrect: false
+      explanation: "Incorrect: eDiscovery tools don't automatically recover deleted messages; they require user-defined searches and actions."

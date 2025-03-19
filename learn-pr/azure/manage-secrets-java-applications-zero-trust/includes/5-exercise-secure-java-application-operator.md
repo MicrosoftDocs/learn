@@ -1,6 +1,6 @@
-In this unit, you'll use the Azure CLI to grant your Java application access to the Azure Key Vault secrets.
+In this unit, you use the Azure CLI to grant your Java application access to the Azure Key Vault secrets.
 
-You'll have the role of an IT operator, who will manage those secrets and grant access to them.
+You play the role of an IT operator, who manages those secrets and grants access to them.
 
 ## Store secrets into Azure Key Vault
 
@@ -41,17 +41,18 @@ az keyvault secret set \
 To access Azure Key Vault, your Spring Boot application needs first to have an Azure identity assigned.
 
 ```bash
-az spring-cloud app identity assign \
+az spring app identity assign \
    --resource-group $AZ_RESOURCE_GROUP \
    --service $AZ_SPRING_CLOUD \
-   --name application
+   --name application \
+   --system-assigned
 ```
 
-You'll also need to configure your Spring Boot application with two environment variables.
-The first variable is to enable Azure Key Vault. The second variable is to give the URL to your Azure Key Vault instance.
+You also need to configure your Spring Boot application with two environment variables.
+The first variable is to enable Azure Key Vault. The second variable is to give the URL to your Azure Key Vault instance. This command can take several minutes to run.
 
 ```bash
-az spring-cloud app update \
+az spring app update \
    --resource-group $AZ_RESOURCE_GROUP \
    --service $AZ_SPRING_CLOUD \
    --name application \
@@ -60,10 +61,10 @@ az spring-cloud app update \
    AZURE_KEYVAULT_URI=https://$AZ_KEY_VAULT_NAME.vault.azure.net/
 ```
 
-Then, you'll need to grant your application access to the Azure Key Vault instance.
+Then, you need to grant your application access to the Azure Key Vault instance.
 
 ```bash
-AZ_SPRING_CLOUD_PRINCIPAL_ID=$(az spring-cloud app identity show --resource-group $AZ_RESOURCE_GROUP --service $AZ_SPRING_CLOUD --name application | jq --raw-output '.principalId')
+AZ_SPRING_CLOUD_PRINCIPAL_ID=$(az spring app identity show --resource-group $AZ_RESOURCE_GROUP --service $AZ_SPRING_CLOUD --name application | jq --raw-output '.principalId')
 
 az keyvault set-policy \
     --name $AZ_KEY_VAULT_NAME \

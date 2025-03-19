@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.optimize-performance-with-spark-and-delta-live-tables
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Optimize performance with Spark and Delta Live Tables
+  description: Optimize performance with Spark and Delta Live Tables in Azure Databricks.
+  ms.date: 08/06/2024
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: module
+  ms.service: azure
+title: Optimize performance with Spark and Delta Live Tables
+summary: Learn how to Optimize performance with Spark and Delta Live Tables in Azure Databricks.
+abstract: |
+  In this module, you learn how to:
+  - Use serverless compute and parallelism with Delta live tables
+  - Perform cost based optimization and query performance
+  - Use Change Data Capture (CDC)
+  - Apply enhanced autoscaling capabilities
+  - Implement Observability and enhance data quality metrics
+prerequisites: |
+  Before starting this module, you should have a fundamental knowledge of data analytics concepts. Consider completing [Azure Data Fundamentals certification](/certifications/azure-data-fundamentals?azure-portal=true) before starting this module.
+iconUrl: /training/achievements/work-dataframes-azure-databricks.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-databricks
+units:
+- learn.wwl.optimize-performance-with-spark-and-delta-live-tables.introduction
+- learn.wwl.optimize-performance-with-spark-and-delta-live-tables.use-serverless-compute-and-parallelism-with-delta-live-tables
+- learn.wwl.optimize-performance-with-spark-and-delta-live-tables.perform-cost-based-optimization-and-query-performance
+- learn.wwl.optimize-performance-with-spark-and-delta-live-tables.use-change-data-capture
+- learn.wwl.optimize-performance-with-spark-and-delta-live-tables.use-enhanced-autoscaling
+- learn.wwl.optimize-performance-with-spark-and-delta-live-tables.implement-observability-and-data-quality-metrics
+- learn.wwl.optimize-performance-with-spark-and-delta-live-tables.exercise
+- learn.wwl.optimize-performance-with-spark-and-delta-live-tables.knowledge-check
+- learn.wwl.optimize-performance-with-spark-and-delta-live-tables.summary
+badge:
+  uid: learn.wwl.optimize-performance-with-spark-and-delta-live-tables.badge
+

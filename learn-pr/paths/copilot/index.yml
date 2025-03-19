@@ -1,0 +1,51 @@
+### YamlMime:LearningPath
+uid: learn.github-copilot
+metadata:
+  title: GitHub Copilot Fundamentals Part 1 of 2
+  description: Empower individual developers and businesses to enhance their productivity and foster innovation through a comprehensive exploration of the fundamental concepts of GitHub Copilot. Additionally, gain valuable insights on how to initiate the implementation of GitHub Copilot within your organization, enabling you to kickstart your own transformative journey. This is learning path is split into two and this is part one of two.
+  brand: github
+  ms.date: 03/11/2025
+  author: camihmerhar
+  ms.author: camhernandez
+  ms.topic: learning-path
+  ms.custom: [copilot-learning-hub]
+title: GitHub Copilot Fundamentals Part 1 of 2
+summary: |
+  Explore the fundamentals of GitHub Copilot and its potential to enhance productivity and foster innovation for both individual developers and businesses. Discover how to implement it within your organization and unleash its power for your own projects.
+
+  In this learning path, you'll:
+
+  - Gain a comprehensive understanding of the distinctions between GitHub Copilot Individuals, GitHub Copilot Business, and GitHub Copilot Enterprise.
+  - Understand how to utilize GitHub Copilot across various environments responsibly and securely.
+  - Learn advanced functionalities of GitHub Copilot and how to best use them. 
+
+prerequisites: |
+ - Basic understanding of GitHub fundamentals
+iconUrl: /training/achievements/intro-github-copilot.svg
+levels:
+- beginner
+- intermediate
+
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+- student
+
+products:
+- github
+
+subjects:
+- collaboration
+- devops
+
+modules:
+- learn.github.responsible-ai-with-github-copilot
+- learn.github.introduction-to-github-copilot
+- learn.github.introduction-prompt-engineering-with-github-copilot
+- learn.advanced-github-copilot
+- learn.github.github-copilot-across-environments
+- learn.github.github-copilot-management-and-customizations
+trophy:
+  uid: generic-badge-social.trophy

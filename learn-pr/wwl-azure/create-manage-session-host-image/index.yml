@@ -1,24 +1,33 @@
 ### YamlMime:Module
 uid: learn.wwl.create-manage-session-host-image
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create and manage session host image for Azure Virtual Desktop
-  description: "Create and manage session host image for Azure Virtual Desktop"
-  ms.date: 03/30/2023
+  description: "A Shared Image Gallery simplifies custom image sharing across your organization. Custom images can be used to bootstrap deployment tasks like preloading applications, application configurations, and other OS configurations."
+  ms.date: 08/21/2024
   author: wwlpublish
   ms.author: bradj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ms.service: azure
+  ai-usage: human-only
 title: Create and manage session host image for Azure Virtual Desktop
 summary: A Shared Image Gallery simplifies custom image sharing across your organization. Custom images can be used to bootstrap deployment tasks like preloading applications, application configurations, and other OS configurations.
 abstract: |
   After completing this module, you'll be able to:
-  *  Create a managed VM image for an Azure Virtual Desktop-specific configuration.
-  *  Modify a session host image.
-  *  Plan for image update and management.
-  *  Create and use a Shared Image Gallery (SIG) for Azure Virtual Desktop.
-  *  Install language packs in Azure Virtual Desktop.
-prerequisites: |
-  None
+
+  -   Create a managed VM image for an Azure Virtual Desktop-specific configuration.
+
+  -   Modify a session host image.
+
+  -   Plan for image update and management.
+
+  -   Create and use a Shared Image Gallery (SIG) for Azure Virtual Desktop.
+
+  -   Install language packs in Azure Virtual Desktop.
+prerequisites: None
 iconUrl: /training/achievements/4-create-and-manage-session-host-image.svg
 levels:
 - intermediate
@@ -34,11 +43,10 @@ subjects:
 units:
 - learn.wwl.create-manage-session-host-image.introduction
 - learn.wwl.create-manage-session-host-image.create-managed-vm-image
-- learn.wwl.create-manage-session-host-image.modify
-- learn.wwl.create-manage-session-host-image.plan-for-image-update-management
-- learn.wwl.create-manage-session-host-image.create-use-shared-image-gallery-sig-using-portal
+- learn.wwl.create-manage-session-host-image.create-image-azure-builder
 - learn.wwl.create-manage-session-host-image.create-azure-virtual-desktop-image-image-builder
-- learn.wwl.create-manage-session-host-image.install-office-master-image
+- learn.wwl.create-manage-session-host-image.plan-for-image-update-management
+- learn.wwl.create-manage-session-host-image.manage-license-session-hosts-run-windows-client
 - learn.wwl.create-manage-session-host-image.install-language-packs-azure-virtual-desktop
 - learn.wwl.create-manage-session-host-image.knowledge-check
 - learn.wwl.create-manage-session-host-image.summary

@@ -4,7 +4,8 @@ When you use a computer like your laptop, you only have the power of that one co
 
 The cloud is a large set of computers working together. They can be used by people all over the planet. In fact, there are hundreds of thousands of servers in the cloud. And instead of thinking about them as a set of computers, it can be helpful to think of them as compute.
 
-![Diagram showing computers in a cloud working together.](../media/computer-cloud.png)
+:::image type="content" source="../media/computer-cloud-0f49b4cf.png" alt-text="Diagram showing computers in a cloud working together.":::
+
 
 But we're getting ahead of ourselves. Let's step back and examine the different parts of cloud computing.
 
@@ -18,7 +19,8 @@ Compute isn't just about what the cloud can do but also about how much can be ma
 
 This process is called "scaling." The cloud can scale up when more resources are needed and scale down when they're not. Similar to the job site above, cloud computers have managers or controllers that look at the work being done. Controllers are special computers with software that manages the work other computers do. The controller can provide more power where it's needed.
 
-![Diagram showing two arrows with one moving up and one moving down.](../media/two-arrows.png)
+:::image type="content" source="../media/two-arrows-da7eca22.png" alt-text="Diagram showing two arrows with one moving up and one moving down.":::
+
 
 ## Storage
 

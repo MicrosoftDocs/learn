@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.use-slurm-hpc-azure-cyclecloud.cluster-scheduler-concepts
+title: Describe cluster scheduler concepts
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Describe cluster scheduler concepts
+  description: This content is part of the "Use Slurm for HPC on Azure CycleCloud" module.
+  ms.date: 08/18/2024
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-cluster-scheduler-concepts.md)]
+

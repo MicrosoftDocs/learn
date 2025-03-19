@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-image-builder.how-does-azure-image-builder-work
+title: How does Azure Image Builder work?
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: How does Azure Image Builder work?
+  description: Understand how Azure Image Builder (AIB) works. Read text and view a diagram that illustrates the AIB workflow.
+  ms.date: 08/15/2024
+  author: ju-shim
+  ms.author: jushiman
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-how-does-azure-image-builder-work.md)]
+

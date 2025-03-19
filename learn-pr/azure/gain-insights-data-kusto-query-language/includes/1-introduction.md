@@ -4,7 +4,7 @@ Kusto Query Language (KQL) lets you explore your data and discover patterns, ide
 
 You're a data analyst with a passion for meteorological data. You want to use KQL to manipulate and consolidate a dataset that will allow you to answer questions about the kinds and locations of storms in the US. In particular, you want to compare the impacts of different types of storms in various locations.
 
-## What will we be doing?
+## What will we learn?
 
 You'll write queries in the Kusto Query Language (KQL) to explore and gain insights from a sample dataset. You'll learn how to:
 

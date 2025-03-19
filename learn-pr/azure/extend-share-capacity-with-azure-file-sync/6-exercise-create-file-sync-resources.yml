@@ -2,14 +2,16 @@
 uid: learn.azure.extend-share-capacity-with-azure-file-sync.exercise-create-file-sync-resources
 title: Exercise - Create File Sync resources in Azure
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - Create File Sync resources in Azure
   description: In this exercise, you'll create the resources your company needs to support Azure File Sync.
-  ms.date: 05/18/2020
+  ms.date: 11/17/2023
   author: khdownie
   ms.author: kendownie
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 6
 azureSandbox: false
 content: |
   [!include[](includes/6-exercise-create-file-sync-resources.md)]
+

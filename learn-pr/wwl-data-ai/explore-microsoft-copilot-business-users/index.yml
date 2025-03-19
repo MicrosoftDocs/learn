@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.explore-microsoft-copilot-business-users
+metadata:
+  title: Work smarter with AI using Microsoft Copilot
+  description: "Learn how to be more productive with Microsoft Copilot."
+  ms.date: 11/11/2024
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ai-usage: ai-assisted
+  ms.service: microsoft-copilot
+  ms.collection:
+    - wwl-ai-copilot
+title: Work smarter with AI using Microsoft Copilot
+summary: "Microsoft Copilot is an AI-powered assistant that you can use for personal projects and work."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe Microsoft Copilot and Microsoft 365 Copilot
+    - Identify tasks with which Microsoft Copilot can assist
+    - Describe how Microsoft Copilot works.
+    - Write effective prompts for Microsoft Copilot
+prerequisites: |
+  - Familiarity with Microsoft productivity applications like Word, Excel, PowerPoint, and Outlook.
+iconUrl: /learn/achievements/data-ai/explore-microsoft-copilot-business-users.svg
+levels:
+  - beginner
+roles:
+  - business-user
+products:
+  - ms-copilot
+subjects:
+  - artificial-intelligence
+units:
+- learn.explore-microsoft-copilot-business-users.introduction
+- learn.explore-microsoft-copilot-business-users.what-is-copilot
+- learn.explore-microsoft-copilot-business-users.copilot-uses
+- learn.explore-microsoft-copilot-business-users.how-copilot-works
+- learn.explore-microsoft-copilot-business-users.copilot-prompts
+- learn.explore-microsoft-copilot-business-users.exercise-explore-copilot
+- learn.explore-microsoft-copilot-business-users.knowledge-check
+- learn.explore-microsoft-copilot-business-users.summary
+badge:
+  uid: learn.explore-microsoft-copilot-business-users.badge

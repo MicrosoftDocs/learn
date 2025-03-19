@@ -45,7 +45,7 @@ You can use the WebJobs feature to run a program (.exe, Java, PHP, Python, or No
 Use the Mobile Apps feature of App Service to quickly build a back end for iOS and Android apps. With just a few actions in the Azure portal, you can:
 
  -  Store mobile app data in a cloud-based SQL database.
- -  Authenticate customers against common social providers, such as MSA, Google, Twitter, and Facebook.
+ -  Authenticate customers against common social providers, such as MSA, Google, X, and Facebook.
  -  Send push notifications.
  -  Execute custom back-end logic in C\# or Node.js.
 

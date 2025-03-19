@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.retrieval-augmented-generation-azure-databricks.ranking
+title: Rerank your retrieved results
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Rerank your retrieved results
+  description: "Rerank your retrieved results"
+  ms.date: 08/12/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-ranking.md)]
+

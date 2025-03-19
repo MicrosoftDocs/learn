@@ -1,4 +1,4 @@
-Azure Virtual Desktop is currently available for all geographical locations. Administrators can choose the location to store user data when they create the host pool virtual machines and associated services, such as file servers. Learn more about Azure geographies at the [Azure datacenter map](https://azuredatacentermap.azurewebsites.net/).
+Azure Virtual Desktop is currently available for all geographical locations. Administrators can choose the location to store user data when they create the host pool virtual machines and associated services, such as file servers. Learn more about Azure geographies at the [Azure datacenter map](https://datacenters.microsoft.com/globe/explore/).
 
 :::image type="content" source="../media/client-access-af6b0cff-3d7e822f.png" alt-text="Graphic of Azure Virtual Desktop is currently available for all geographical locations.":::
 

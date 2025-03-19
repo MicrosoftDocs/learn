@@ -29,11 +29,11 @@ Organizations should not develop and maintain their own encryption algorithms. A
 
 Secure standards already exist on the market and should be preferred. If custom implementation is required, developers should use well-established cryptographic algorithms and secure standards. Use Advanced Encryption Standard (AES) as a symmetric block cipher, AES-128, AES-192, and AES-256 are acceptable.
 
-Developers should use cryptography APIs built into operating systems instead of non-platform cryptography libraries. For .NET, follow the [.NET Cryptography Model](https://learn.microsoft.com/dotnet/standard/security/cryptography-model).
+Developers should use cryptography APIs built into operating systems instead of non-platform cryptography libraries. For .NET, follow the [.NET Cryptography Model](/dotnet/standard/security/cryptography-model).
 
 We advise using standard and recommended encryption algorithms.
 
-For more information, refer to [Choose an algorithm](https://learn.microsoft.com/dotnet/standard/security/cryptography-model#choose-an-algorithm).
+For more information, refer to [Choose an algorithm](/dotnet/standard/security/cryptography-model#choose-an-algorithm).
 
 ### Modern hashing functions
 
@@ -53,7 +53,7 @@ Your most sensitive data might include business, financial, healthcare, or perso
 
 **Suggested action**
 
-Classify your data. Consider using [Data Discovery & Classification](https://learn.microsoft.com/azure/azure-sql/database/data-discovery-and-classification-overview) in Azure SQL Database.
+Classify your data. Consider using [Data Discovery & Classification](/azure/azure-sql/database/data-discovery-and-classification-overview) in Azure SQL Database.
 
 ### Data classification
 
@@ -73,11 +73,11 @@ There are many options to store files in the cloud. Cloud-native apps typically 
 
 Consider a hybrid solution. Files can move from on-premises to the cloud, from the cloud to on-premises, or between services hosted in the cloud. One strategy is to make sure that the files and their contents aren't accessible to unauthorized users. You can use authentication-based access controls to prevent unauthorized downloading of files. However, that is not enough. Have a backup mechanism to secure the virtual disk files in case authentication and authorization or its configuration is compromised. There are several approaches. You can encrypt the virtual disk files. If an attempt is made to mount disk files, the contents of the files cannot be accessed because of the encryption.
 
-We recommend that you enable virtual disk encryption. For information about how to encrypt Windows VM disks, see [Quickstart: Create and encrypt a Windows VM with the Azure CLI](https://learn.microsoft.com/azure/virtual-machines/windows/disk-encryption-cli-quickstart).
+We recommend that you enable virtual disk encryption. For information about how to encrypt Windows VM disks, see [Quickstart: Create and encrypt a Windows VM with the Azure CLI](/azure/virtual-machines/windows/disk-encryption-cli-quickstart).
 
 Azure-based virtual disks are stored as files in a Storage account. If no encryption is applied to a virtual disk, and an attacker manages to download a virtual disk image file, it can be mounted and inspected at the attacker's leisure as if they had physical access to the source computer. Encrypting virtual disk files helps prevent attackers from gaining access to the contents of those disk files in the event they are able to download them. Depending on the sensitivity of the information stored on the disk, unencrypted access could represent a critical risk to confidential business data (such as a SQL database) or identity (such as an AD Domain Controller).
 
-An example of virtual disk encryption is [Azure Disk Encryption](https://learn.microsoft.com/azure/security/fundamentals/azure-disk-encryption-vms-vmss).
+An example of virtual disk encryption is [Azure Disk Encryption](/azure/security/fundamentals/azure-disk-encryption-vms-vmss).
 
 Azure Disk Encryption helps protect and safeguard your data to meet your organizational security and compliance commitments. It uses the Bitlocker-feature of Windows (or DM-Crypt on Linux) to provide volume encryption for the OS and data disks of Azure virtual machines (VMs). It is integrated with Azure Key Vault to help you control and manage the disk encryption keys, and secrets.
 
@@ -85,7 +85,7 @@ Virtual machines use virtual disk files as storage volumes and exist in a cloud 
 
 ### Use identity-based storage access controls
 
-There are many ways to control access to data: shared keys, shared signatures, anonymous access, identity provider-based. Use Azure Active Directory (Azure AD) and role-based access control (RBAC) to grant access. For more information, see [Identity and access management considerations](https://learn.microsoft.com/azure/architecture/framework/security/design-identity).
+There are many ways to control access to data: shared keys, shared signatures, anonymous access, identity provider-based. Use Microsoft Entra ID and role-based access control (RBAC) to grant access. For more information, see [Identity and access management considerations](/azure/architecture/framework/security/design-identity).
 
 ### Use an additional Key Encryption Key (KEK)
 

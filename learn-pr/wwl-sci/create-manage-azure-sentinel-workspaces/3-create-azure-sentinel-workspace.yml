@@ -4,11 +4,10 @@ title: Create a Microsoft Sentinel workspace
 metadata:
   title: Create a Microsoft Sentinel workspace
   description: "Create a Microsoft Sentinel workspace"
-  ms.date: 11/11/2022
+  ms.date: 03/14/2025
   author: wwlpublish
   ms.author: kelawson
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6

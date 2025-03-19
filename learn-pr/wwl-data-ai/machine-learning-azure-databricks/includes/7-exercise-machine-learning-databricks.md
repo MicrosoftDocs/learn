@@ -6,4 +6,4 @@ Now it's your chance to train a machine learning model in Azure Databricks for y
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/mslearn-databricks-ml?azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2284003&azure-portal=true)

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-language-models-databricks.what-is-generative-ai
+title: Understand Generative AI
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Understand Generative AI
+  description: "Understand Generative AI"
+  ms.date: 08/12/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/02-what-is-generative-ai.md)]

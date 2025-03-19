@@ -4,15 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/16/2022
+  ms.date: 04/16/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
-content: |
-  [!include[](includes/9-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
@@ -20,32 +18,32 @@ quiz:
     choices:
     - content: "AD DS security group"
       isCorrect: false
-      explanation: "That's incorrect. An AD DS security group is a security principal that collects user accounts, computer accounts, and other groups into manageable units."
+      explanation: "Incorrect. An AD DS security group is a security principal that collects user accounts, computer accounts, and other groups into manageable units."
     - content: "Microsoft Desktop Image Service Manager"
       isCorrect: false
-      explanation: "That's incorrect. The Microsoft Desktop Image Service Manager is a disk imaging utility in which you can create .vhd or .vhdx file types. The Shielded Template Disk Creation Wizard then prepares and encrypts the .vhdx file to create a shielded VM template disk."
+      explanation: "Incorrect. The Microsoft Desktop Image Service Manager is a disk imaging utility in which you can create .vhd or .vhdx file types. The Shielded Template Disk Creation Wizard then prepares and encrypts the .vhdx file to create a shielded VM template disk."
     - content: "HGS"
       isCorrect: true
-      explanation: "That's correct. In a guarded fabric, the HGS checks the validity of guarded hosts and releases the keys that are used to start protected VMs."
+      explanation: "Correct. In a guarded fabric, the HGS checks the validity of guarded hosts and releases the keys that are used to start protected VMs."
   - content: "Which of the following is used to prepare and encrypt a shielded VM template disk?"
     choices:
     - content: "The Shielded Template Disk Creation Wizard"
       isCorrect: true
-      explanation: "That's correct. The Shielded Template Disk Creation Wizard is a tool for preparing and encrypting a shielded VM template disk."
+      explanation: "Correct. The Shielded Template Disk Creation Wizard is a tool for preparing and encrypting a shielded VM template disk."
     - content: "The Key Protection service"
       isCorrect: false
-      explanation: "That's incorrect. The Key Protection service is a component of the HGS. The Key Protection service provides a guarded host with the security keys required to power on a shielded VM, and for migrating a shielded VM to another guarded host."
+      explanation: "Incorrect. The Key Protection service is a component of the HGS. The Key Protection service provides a guarded host with the security keys required to power on a shielded VM, and for migrating a shielded VM to another guarded host."
     - content: "A shielding data file"
       isCorrect: false
-      explanation: "That's incorrect. A shielding data file is an encrypted file that protects important VM configuration information."
+      explanation: "Incorrect. A shielding data file is an encrypted file that protects important VM configuration information."
   - content: "Which of the following contains the encrypted secrets that are needed to deploy a shielded VM?"
     choices:
     - content: "A shielding data file"
       isCorrect: true
-      explanation: "That's correct. A shielding data file contains the encrypted secrets that are needed to deploy a shielded VM, in addition to information about signed template disks."
+      explanation: "Correct. A shielding data file contains the encrypted secrets that are needed to deploy a shielded VM, in addition to information about signed template disks."
     - content: "A Trusted Computing Group Information log file"
       isCorrect: false
-      explanation: "That's incorrect. In TPM-mode attestation, a Trusted Computing Group Information log file is used by the HGS to check the health of a host's hardware when the VM starts up."
+      explanation: "Incorrect. In TPM-mode attestation, a Trusted Computing Group Information log file is used by the HGS to check the health of a host's hardware when the VM starts up."
     - content: "The code integrity policy"
       isCorrect: false
-      explanation: "That's incorrect. In TPM-mode attestation, the code integrity policy allows the HGS to check the integrity of a host's software when the VM starts up."
+      explanation: "Incorrect. In TPM-mode attestation, the code integrity policy allows the HGS to check the integrity of a host's software when the VM starts up."

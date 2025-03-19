@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.develop-azure-sql-database.create-configure-sql-database
+title: Create and configure an Azure SQL Database
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Create and configure an Azure SQL Database
+  description: "Learn how to create and configure an Azure SQL Database."
+  ms.date: 9/27/2024
+  author: jupadrao
+  ms.author: jupadrao
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-create-configure-sql-database.md)]

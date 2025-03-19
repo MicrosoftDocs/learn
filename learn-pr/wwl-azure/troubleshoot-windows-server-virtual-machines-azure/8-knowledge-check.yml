@@ -2,13 +2,14 @@
 uid: learn.wwl.troubleshoot-windows-server-virtual-machines-azure.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/17/2023
+  ms.date: 08/02/2024
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -19,27 +20,27 @@ quiz:
   questions:
   - content: "An administrator is provisioning Windows Server VMs in Azure. They upload a specialized VM image as a generalized image. What is likely to happen when they perform this task?"
     choices:
-    - content: "The administrator receives a provisioning failure error with the VM stuck at the OOBE screen because the new VM is running with the original computer name, username and password."
+    - content: "The administrator receives a provisioning failure error with the VM stuck at the OOBE screen because the new VM is running with the original computer name, username, and password."
       isCorrect: true
       explanation: "Correct. The administrator receives this error."
     - content: "The administrator receives no error and is able to complete the task."
       isCorrect: false
       explanation: "Incorrect. Upload or capture of a specialized VM image as a generalized image causes a provisioning failure and an error is displayed."
-    - content: "The administrator receives a provisioning timeout error because the original VM isn't usable as it's marked as generalized."
+    - content: "The administrator receives a provisioning timeout error, because the original VM is marked as generalized and, thus, isn't usable."
       isCorrect: false
       explanation: "Incorrect. Timeout errors result when an administrator uploads or captures a generalized VM image as a specialized image."
   - content: "An administrator attempts to connect remotely to a VM for performing a management task. They're unable to establish an RDP connection. What should the administrator do next?"
     choices:
     - content: "Restart their administrative computer."
       isCorrect: false
-      explanation: "Incorrect. This is unlikely to have any impact on the problem."
+      explanation: "Incorrect. This is unlikely to have any effect on the problem."
     - content: "Deploy and configure Azure Bastion."
       isCorrect: false
       explanation: "Incorrect. Although deploying Azure Bastion is a good solution in helping to secure remote connectivity to the VM, it's not a solution to the current problem."
     - content: "Verify and test the RDP connection details being used to connect to the target VM."
       isCorrect: true
-      explanation: "Correct. It's possible the details have changed."
-  - content: "An administrator has received an error when they started a Windows Server VM. They've no idea why the VM won't start. What should they do first to determine the cause of the startup failure?"
+      explanation: "Correct. It's possible the details changed."
+  - content: "An administrator received an error when they started a Windows Server VM. They have no idea why the VM doesn't start. What should they do first to determine the cause of the startup failure?"
     choices:
     - content: "Review boot diagnostics."
       isCorrect: true

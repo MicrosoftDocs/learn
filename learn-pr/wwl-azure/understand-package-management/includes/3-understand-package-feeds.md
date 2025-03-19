@@ -4,7 +4,7 @@ The centralized storage for packages is commonly called a `package feed`. There 
 
 We'll refer to all of these as package feeds unless it's necessary to use the specific name for clarity. Each package type has its type of feed.
 
-Put another way. One feed typically contains one type of packages. There are NuGet feeds, NPM feeds, Maven repositories, PyPi feed, and Docker registries.
+Put another way. One feed typically contains one type of packages. There are NuGet feeds, npm feeds, Maven repositories, PyPi feed, and Docker registries.
 
 Package feeds offer versioned storage of packages. A particular package can exist in multiple versions in the feed, catering for consumption of a specific version.
 

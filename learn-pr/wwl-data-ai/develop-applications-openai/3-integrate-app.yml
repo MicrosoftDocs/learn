@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-applications-openai.integrate-app
+title: Integrate OpenAI into an app
+metadata:
+  title: Integrate OpenAI into an app
+  description: This unit lists the steps needed to configure your app to access the OpenAI service.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 03/18/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  zone_pivot_groups: dev-lang-csharp-python
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-integrate-app.md)]

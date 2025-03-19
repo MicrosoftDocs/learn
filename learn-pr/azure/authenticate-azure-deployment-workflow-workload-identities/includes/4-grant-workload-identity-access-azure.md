@@ -1,28 +1,28 @@
-By itself, a workload identity can't do anything in your Azure environment. It's just like how a user can't work with your Azure resources unless they're authorized to do so. In this unit, you'll learn how to authorize workload identities to deploy and configure Azure resources, while avoiding granting unnecessary permissions.
+By itself, a workload identity can't do anything in your Azure environment, just like how a user can't work with your Azure resources unless they're authorized to do so. In this unit, you'll learn how to authorize workload identities to deploy and configure Azure resources while avoiding granting unnecessary permissions.
 
 ## Workload identity authorization
 
-Until now, you've focused on what workload identities are and how they can be used to prove the identity of a deployment workflow to Azure Active Directory (Azure AD). This is all about _authentication_.
+Until now, you've focused on what workload identities are and how they can be used to prove the identity of a deployment workflow to Microsoft Entra ID. This is all about _authentication_.
 
-After Azure AD has authenticated a workload identity, the next question becomes: what can this workload identity do? This is the concept of _authorization_. It's the responsibility of the Azure role-based access control (RBAC) system, sometimes called identity and access management (IAM). By using Azure RBAC, you can grant a workload identity access to a specific resource group, subscription, or management group.
+After Microsoft Entra ID has authenticated a workload identity, the next question becomes: what can this workload identity do? This is the concept of _authorization_. It's the responsibility of the Azure role-based access control (RBAC) system, sometimes called identity and access management (IAM). By using Azure RBAC, you can grant a workload identity access to a specific resource group, subscription, or management group.
 
 > [!NOTE]
-> Everything you're doing here is using the Azure RBAC system to grant access to create and manage Azure resources, like your storage accounts, Azure App Service plan, and virtual networks. Azure AD also has its own role system, which is sometimes called _directory roles_. You use these roles to grant permissions for workload identities to manage Azure AD. This module doesn't discuss this subject in depth, but be aware that the term _role_ can be used for both situations in some documentation.
+> Everything you're doing here is using the Azure RBAC system to grant access to create and manage Azure resources like your storage accounts, Azure App Service plan, and virtual networks. Microsoft Entra ID also has its own role system, which is sometimes called _directory roles_. You use these roles to grant permissions for workload identities to manage Microsoft Entra ID. This module doesn't discuss this subject in depth, but be aware that the term _role_ is used for both situations in some documentation.
 
 ## Select the right role assignment for your workflow
 
-A role assignment has three key parts: who the role is assigned to (the _assignee_), what they can do (the _role_), and which resource or resources the role assignment applies to (the _scope_).
+A role assignment has three key parts: to whom the role is assigned (the _assignee_), what they can do (the _role_), and to which resource or resources the role assignment applies (the _scope_).
 
 ### Assignee
 
-When you work with a workload identity, you assign roles for it. To assign a role, you need to first create a _service principal_, which enables you to grant your application roles in Azure. After you create the service principal, you can continue to work with the application registration's application ID.
+When you work with a workload identity, you assign roles for it. To assign a role, you need to first create a _service principal_, which allows you to grant your application roles in Azure. After you create the service principal, you can continue to work with the application registration's application ID.
 
 ::: zone pivot="cli"
 
 To create a service principal, use the `az ad sp create` command and specify the application registration's app ID:
 
 ```azurecli
-az ad sp create --id b585b740-942d-44e9-9126-f1181c95d497
+az ad sp create --id A123b4567c-1234-1a2b-2b1a-1234abc12345
 ```
 
 ::: zone-end
@@ -32,7 +32,7 @@ az ad sp create --id b585b740-942d-44e9-9126-f1181c95d497
 To create a service principal, use the `New-AzADServicePrincipal` cmdlet and specify the application registration's app ID:
 
 ```azurepowershell
-New-AzADServicePrincipal -AppId b585b740-942d-44e9-9126-f1181c95d497
+New-AzADServicePrincipal -AppId A123b4567c-1234-1a2b-2b1a-1234abc12345
 ```
 
 ::: zone-end
@@ -41,8 +41,8 @@ New-AzADServicePrincipal -AppId b585b740-942d-44e9-9126-f1181c95d497
 
 It can be a little more work to figure out which role to assign. In Azure, there are a few common roles:
 
-- **Reader**: Allows the assignee to read information about resources but not modify or delete them.
-- **Contributor**: Allows the assignee to create resources, and to read and modify existing resources. However, contributors can't grant other principals access to resources.
+- **Reader**: Allows the assignee to read information about resources, but not modify or delete them.
+- **Contributor**: Allows the assignee to create resources and to read and modify existing resources. However, contributors can't grant other principals access to resources.
 - **Owner**: Allows full control over resources, including granting other principals access.
 
 > [!CAUTION]
@@ -63,7 +63,7 @@ You need to determine how broadly you assign the role. This decision affects the
 - **Resource group**: You can grant access to all resources within a resource group. Contributors and Owners can also create resources within the group. This is a good option for many deployment workflows.
 - **Subscription**: You can grant access to all resources within a subscription. If you have multiple applications, workloads, or environments in a single subscription, you can grant permissions to the subscription's scope. This is usually too permissive for a deployment workflow, though. You should instead consider scoping your role assignments to resource groups, unless your deployment workflow needs to create resource groups.
 
-Remember that role assignments are inherited. If you assign a role at a subscription, the assignee will have access to every resource group and resource inside that subscription.
+Remember that role assignments are inherited. If you assign a role at a subscription, the assignee has access to every resource group and resource inside that subscription.
 
 ### Selecting the right role assignment
 
@@ -74,14 +74,14 @@ Now that you understand the components of a role assignment, you can decide the 
 > - Use the least permissive role that you can. If your workflow is only going to deploy basic Bicep files and won't manage role assignments, don't use the Owner role.
 > - Use the narrowest scope that you can. Most workflows only need to deploy resources to a resource group, so they shouldn't be given subscription-scoped role assignments.
 > - For many workflows, a good default option for a role assignment is the Contributor role on the resource group scope.
-> - Consider everything your workflow does, and everything it might do in the future. For example, you might consider creating a custom role definition for your website's deployment workflow and grant permissions for only App Service and Application Insights. Next month, you might need to add an Azure Cosmos DB account to your Bicep file, but the custom role will block Azure Cosmos DB resources from being created.
+> - Consider everything your workflow does and everything it might do in the future. For example, you might consider creating a custom role definition for your website's deployment workflow and grant permissions for only App Service and Application Insights. Next month, you might need to add an Azure Cosmos DB account to your Bicep file, but the custom role will block Azure Cosmos DB resources from being created.
 >
 >   Instead, it's often better to use a built-in role, or a combination of built-in roles, to avoid having to repeatedly change your role definitions. Consider using Azure Policy to enforce your governance requirements for allowed services, SKUs, and locations.
 > - Test the workflow to verify that the role assignment works.
 
 ### Mixing and matching role assignments
 
-You can create multiple role assignments that provide different permissions at different scopes. For example, you might assign a workload identity the role of Reader with a scope of the entire subscription. And you might separately assign the same workload identity the role of Contributor for a specific resource group. When the workload identity tries to work with the resource group, the more permissive assignment is applied.
+You can create multiple role assignments that provide different permissions at different scopes. For example, you might assign a workload identity the role of Reader with a scope of the entire subscription. You might separately assign the same workload identity the role of Contributor for a specific resource group. When the workload identity tries to work with the resource group, the more permissive assignment is applied.
 
 ### Working with multiple environments
 
@@ -97,9 +97,9 @@ To create a role assignment for a workload identity, use the `az role assignment
 
 ```azurecli
 az role assignment create \
-  --assignee b585b740-942d-44e9-9126-f1181c95d497 \
+  --assignee A123b4567c-1234-1a2b-2b1a-1234abc12345 \
   --role Contributor \
-  --scope "/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/ToyWebsite" \
+  --scope "/subscriptions/B123a4567c-1234-2b1a-1b2b-11a2b01b2b3c0/resourceGroups/ToyWebsite" \
   --description "The deployment workflow for the company's website needs to be able to create resources within the resource group."
 ```
 
@@ -118,9 +118,9 @@ To create a role assignment for a workload identity, use the `New-AzRoleAssignme
 
 ```azurepowershell
 New-AzRoleAssignment `
-  -ApplicationId b585b740-942d-44e9-9126-f1181c95d497 `
+  -ApplicationId A123b4567c-1234-1a2b-2b1a-1234abc12345 `
   -RoleDefinitionName Contributor `
-  -Scope '/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/ToyWebsite' `
+  -Scope '/subscriptions/B123a4567c-1234-2b1a-1b2b-11a2b01b2b3c0/resourceGroups/ToyWebsite' `
   -Description "The deployment workflow for the company's website needs to be able to create resources within the resource group."
 ```
 
@@ -141,7 +141,7 @@ Let's look at each argument:
 
 ## Grant access by using Bicep
 
-Role assignments are Azure resources. This means that you can create a role assignment by using Bicep. You might do this if you initialize your resource groups by using Bicep, and then deploy the resources into the resource group by using a workload identity. Here's an example Bicep definition for the preceding role assignment:
+Role assignments are Azure resources. This means that you can create a role assignment by using Bicep. You might do this if you initialize your resource groups by using Bicep, then deploy the resources into the resource group by using a workload identity. Here's an example Bicep definition for the preceding role assignment:
 
 ```bicep
 resource roleAssignment 'Microsoft.Authorization/roleAssignments@2022-04-01' = {
@@ -161,6 +161,6 @@ Let's look at each argument:
 - `principalType` should be set to `ServicePrincipal`.
 - `roleDefinitionId` is the fully qualified resource ID for the role definition that you're assigning. You mostly work with built-in roles, so you find the role definition ID in the [Azure built-in roles documentation](/azure/role-based-access-control/built-in-roles?azure-portal=true).
 
-   For example, the _Contributor_ role has the role definition ID `b24988ac-6180-42a0-ab88-20f7382dd24c`. When you specify it in your Bicep file, you use a fully qualified resource ID, such as `/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c`.
+   For example, the _Contributor_ role has the role definition ID `b24988ac-6180-42a0-ab88-20f7382dd24c`. When you specify it in your Bicep file, you use a fully qualified resource ID, such as `/subscriptions/B123a4567c-1234-2b1a-1b2b-11a2b01b2b3c0/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c`.
 - `principalId` is the service principal's object ID. Make sure you don't use the application ID or the application registration's object ID.
 - `description` is a human-readable description of the role assignment.

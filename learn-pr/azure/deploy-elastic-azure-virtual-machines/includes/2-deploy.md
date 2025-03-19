@@ -2,7 +2,7 @@ Azure virtual machines (VMs) provide Azure users a flexible way to deploy their 
 
 Recall that the start-up retailer you work for currently uses Elastic on-premises to manage sales transactions. They would like to migrate to Azure VMs to improve data accessibility for remote workers and other departments while reducing the burden of maintaining infrastructure.
 
-Here, you'll learn about the steps for deploying an Elastic workload on Azure VMs.
+Here, you learn about the steps for deploying an Elastic workload on Azure VMs.
 
 ## Start with the Elasticsearch (self-managed) template in the Azure Marketplace
 
@@ -10,11 +10,11 @@ The Elasticsearch (self-managed) template is an Azure Marketplace solution that 
 
 The Azure Marketplace template provides a user interface (UI) within the Azure portal that guides you through a series of setup steps. During setup, you provide the minimum number of input parameters needed to deploy an Elasticsearch cluster to Azure. Following the last step, the UI feeds the provided parameter values to an Azure Resource Manager (ARM) template that deploys the requested Azure resources to a resource group. In a matter of minutes, you have a running cluster! You can also use the ARM template with Azure CLI and PowerShell to further customize your deployment.
 
-With the template, you'll be guided through the following configuration settings:
+With the template, you're guided through the following configuration settings:
 
 - Basics: establish your username, authentication type (password vs. SSH public key), subscription, resource group, and region.
 - Cluster settings: name the cluster and configure the virtual network and Elasticsearch nodes subnet.
-- Data node configuration: select the number and size of nodes and disks. In the following exercise, we'll create a three node cluster. We'll make the data nodes master-eligible because a cluster of this size usually doesn't benefit from dedicated master nodes. For more information on node types, see the Elasticsearch guide in the references section.
+- Data node configuration: select the number and size of nodes and disks. In the following exercise, we create a three node cluster. We make the data nodes master-eligible because a cluster of this size usually doesn't benefit from dedicated master nodes. For more information on node types, see the Elasticsearch guide in the references section.
 - Kibana & Logstash: determine whether to deploy Kibana and/or Logstash in addition to Elasticsearch, and how the cluster can be accessed from outside of the virtual network. 
 - Security: create an Elastic superuser account and accounts for Kibana, Logstash, Beats, APM, and remote monitoring.
 
@@ -34,12 +34,12 @@ Elastic also offers [Rally](https://github.com/elastic/rally), a macro benchmark
 
 To start fast, we recommend following these two guidelines:
 
-- Start with a three-node Elasticsearch cluster for a production environment. While you may be able to support your use case with single node Elasticsearch clusters, it's recommended that you start with a three-node cluster. A three-node cluster provides resiliency for the architecture and room to perform lifecycle operations such as upgrade, security patching for the underlying infrastructure, and mitigating data loss with replication. Elastic Cloud takes care of many of these issues, so you can focus on onboarding the data into Elastic and getting insights and value from it.
+- Start with a three-node Elasticsearch cluster for a production environment. While you may be able to support your use case with single node Elasticsearch clusters, we recommend you start with a three-node cluster. A three-node cluster provides resiliency for the architecture and room to perform lifecycle operations such as upgrade, security patching for the underlying infrastructure, and mitigating data loss with replication. Elastic Cloud takes care of many of these issues, so you can focus on onboarding the data into Elastic and getting insights and value from it.
 - Use two Kibana instances for High Availability. Kibana is the window into the Elastic stack – whether you're exploring the data in Elasticsearch or the management of the Elastic components. Given its value to all the use cases of Elastic, we recommend at least two instances of Kibana behind a load balancer to provide fault tolerance and higher chances of uninterrupted access to Elastic. If Kibana is unavailable it doesn’t necessarily lead to data loss, but it can create disruptive experiences for end users.
 
 ## Install Kibana and Logstash as part of your deployment
 
-With every deployment of Elastic on Azure, you'll be prompted to install Kibana and Logstash, and set the VM to run each of those workloads.
+With every deployment of Elastic on Azure, you're prompted to install Kibana and Logstash, and set the VM to run each of those workloads.
 
 ### Set up Kibana
 
@@ -47,11 +47,11 @@ Kibana is the window into the Elastic stack that lets users visualize their data
 
 ### Set up Logstash
 
-If your use case requires transformation of the data before it's ingested into Elasticsearch, Logstash offers a flexible and powerful way of performing multiple types of transformations. It has a rich ecosystem of input and filter plug-ins that help you with the transformation. The UI template default calls for one VM for Logstash, however, in most production environments, at least two VMs are recommended for high availability in your data processing.
+If your use case requires transformation of the data before Elasticsearch ingests it, Logstash offers a flexible and powerful way of performing multiple types of transformations. It has a rich ecosystem of input and filter plug-ins that help you with the transformation. The UI template default calls for one VM for Logstash, however, in most production environments, at least two VMs are recommended for high availability in your data processing.
 
 ### Set security passwords for system users
 
-The Azure Marketplace Elasticsearch (self-managed) template embeds the best practices when it comes to securing your Elastic deployment. These best practices include securing communication between users or applications and Elastic deployment, and between the various components of the Elastic deployment. Therefore, the final step requires you to set passwords for your system user accounts. You'll create a password for each system you've installed and to enable remote monitoring.
+The Azure Marketplace Elasticsearch (self-managed) template embeds the best practices when it comes to securing your Elastic deployment. These best practices include securing communication between users or applications and Elastic deployment, and between the various components of the Elastic deployment. Therefore, the final step requires you to set passwords for your system user accounts. You create a password for each system you installed and to enable remote monitoring.
 
 ## How are other customers using Elastic on Azure VMs?
 

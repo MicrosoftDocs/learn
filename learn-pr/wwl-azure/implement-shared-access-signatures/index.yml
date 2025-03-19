@@ -1,13 +1,18 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-shared-access-signatures
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement shared access signatures
-  description: "Implement shared access signatures"
-  ms.date: 04/24/2023
+  description: Implement shared access signatures
+  ms.date: 11/13/2024
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module
+  ms.custom:
+  - N/A
+  ai-usage: human-only
+  ms.service: azure-storage
 title: Implement shared access signatures
 summary: Learn how to use shared access signatures to authorize access to storage resources.
 abstract: |
@@ -36,3 +41,4 @@ units:
 - learn.wwl.implement-shared-access-signatures.summary
 badge:
   uid: learn.wwl.implement-shared-access-signatures.badge
+

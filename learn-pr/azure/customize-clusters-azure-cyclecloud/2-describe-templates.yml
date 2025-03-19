@@ -2,14 +2,15 @@
 uid: learn.azure.customize-clusters-azure-cyclecloud.describe-templates
 title: Describe Azure CycleCloud cluster templates
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   unitType: learning-content
   title: Describe Azure CycleCloud cluster templates
   description: This unit describes the concept and characteristics of Azure CycleCloud cluster templates.
-  ms.date: 06/14/2021
+  ms.date: 02/01/2024
   author: anhoward
   ms.author: anhoward
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 5
 content: |
   [!include[](includes/2-describe-templates.md)]

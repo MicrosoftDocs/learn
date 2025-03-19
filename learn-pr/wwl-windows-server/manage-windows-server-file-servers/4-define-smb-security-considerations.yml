@@ -4,11 +4,10 @@ title: Define SMB and its security considerations
 metadata:
   title: Define SMB and its security considerations
   description: "Define SMB and its security considerations"
-  ms.date: 10/20/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 15

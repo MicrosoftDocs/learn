@@ -1,30 +1,19 @@
-Azure Databricks is a comprehensive platform that offers many data processing capabilities. While you can use the service to support any workload that requires scalable data processing, Azure Databricks is optimized for three specific types of data workload and associated user personas:
+Azure Databricks offers capabilities for various workloads including Machine Learning and Large Language Models (LLM), Data Science, Data Engineering, BI and Data Warehousing, and Streaming Processing.
 
-- Data Science and Engineering
-- Machine Learning
-- SQL*
+## Data Engineering
 
-*\*SQL workloads are only available in premium tier workspaces.*
+Azure Databricks provides capabilities for data scientists and engineers who need to collaborate on complex data processing tasks. It provides an integrated environment with Apache Spark for big data processing in a data lakehouse, and supports multiple languages including Python, R, Scala, and SQL. The platform facilitates data exploration, visualization, and the development of data pipelines.
 
-The Azure Databricks user interface supports three corresponding *persona* views that you can switch between depending on the workload you're implementing.
-
-## Data Science and Engineering
-
-Azure Databricks provides Apache Spark based processing and analysis of large volumes of data in a data lake. Data engineers, data scientists, and data analysts can use interactive notebooks to run code in Python, Scala, SparkSQL, or other languages to cleanse, transform, aggregate, and analyze data.
-
-![A screenshot of the Azure Databricks portal for data science and engineering.](../media/data-engineering.png)
+:::image type="content" source="../media/03-azure-databricks-data-science-engineering.png" alt-text="Diagram of Databricks data ingestion & data sources screen." lightbox="../media/03-azure-databricks-data-science-engineering.png":::
 
 ## Machine Learning
 
-Azure Databricks supports machine learning workloads that involve data exploration and preparation, training and evaluating machine learning models, and serving models to generate predictions for applications and analyses. Data scientists and ML engineers can use AutoML to quickly train predictive models, or apply their skills with common machine learning frameworks such as SparkML, Scikit-Learn, PyTorch, and Tensorflow. They can also manage the end-to-end machine learning lifecycle with MLFlow.
+Azure Databricks supports building, training, and deploying machine learning models at scale. It includes MLflow, an open-source platform to manage the ML lifecycle, including experimentation, reproducibility, and deployment. It also supports various ML frameworks such as TensorFlow, PyTorch, and Scikit-learn, making it versatile for different ML tasks.
 
-![A screenshot of the Azure Databricks portal for machine learning.](../media/machine-learning.png)
+:::image type="content" source="../media/04-azure-databricks-machine-learning.png" alt-text="Diagram of Databricks Machine Learning screen." lightbox="../media/04-azure-databricks-machine-learning.png":::
 
 ## SQL
 
-Azure Databricks supports SQL-based querying for data stored in tables in a *SQL Warehouse*. This capability enables data analysts to query, aggregate, summarize, and visualize data using familiar SQL syntax and a wide range of SQL-based data analytical tools.
+Data analysts who primarily interact with data through SQL can use SQL warehouses in Azure Databricks. The Azure Databricks portal provides a familiar SQL editor, dashboards, and automatic visualization tools to analyze and visualize data directly within Azure Databricks. This workload is ideal for running quick ad-hoc queries and creating reports from large datasets.
 
-![A screenshot of the Azure Databricks portal for SQL.](../media/sql-portal.png)
-
-> [!NOTE]
-> SQL Warehouses are only available in *premium* Azure Databricks workspaces.
+:::image type="content" source="../media/05-azure-databricks-sql.png" alt-text="Diagram of DatabricksSQL Editor screen." lightbox="../media/05-azure-databricks-sql.png":::

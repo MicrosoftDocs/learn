@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.register-apps-use-microsoft-entra-id.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/18/2024
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What does the Microsoft identity platform do with the unique identifier of a registered app?"
+    choices:
+    - content: "It stores the identifier in the Microsoft Entra Application object."
+      isCorrect: false
+      explanation: "Incorrect. The Microsoft Entra Application object is a definition of an application, not storage for unique identifiers."
+    - content: "It shares the identifier with all Microsoft Entra directories."
+      isCorrect: false
+      explanation: "Incorrect. The unique identifier is only shared with the Microsoft identity platform when the app requests tokens."
+    - content: "It shares the identifier with the Microsoft identity platform when the app requests tokens."
+      isCorrect: true
+      explanation: "Correct. The unique identifier is used by the Microsoft identity platform to identify the app and provide all the necessary information for authentication."
+  - content: "What is the purpose of registering an app in Microsoft Entra?"
+    choices:
+    - content: "To request scope permissions for the user's device."
+      isCorrect: false
+      explanation: "Incorrect. Requesting scope permissions is one of the things you can do when registering an app, but not the main purpose."
+    - content: "To customize the branding of your application in the sign in dialog box."
+      isCorrect: false
+      explanation: "Incorrect. This is one of the benefits of registering an app, but not the main purpose."
+    - content: "To ensure that your identity system is aware of what applications are being used and to confirm the user has access to the app and that the app has access to any needed resources."
+      isCorrect: true
+      explanation: "Correct. Registering an app ensures the security and privacy of users, apps, and data by providing an identity configuration for the application that allows it to integrate with the Microsoft identity platform."
+  - content: "What is the principle of least privilege and how does it relate to third party app permissions in the Microsoft identity platform?"
+    choices:
+    - content: "The principle of least privilege states that third party apps should request all possible permissions to ensure full functionality."
+      isCorrect: false
+      explanation: "Incorrect. Requesting unnecessary permissions can lead to security risks and user distrust."
+    - content: "The principle of least privilege states that third party apps should not request any permissions to ensure user privacy."
+      isCorrect: false
+      explanation: "Incorrect. Without any permissions, the app cannot perform any functions on behalf of the user."
+    - content: "The principle of least privilege states that third party apps should only request the permissions they need to perform their function, ensuring fine-grained control over data and API functionality."
+      isCorrect: true
+      explanation: "Correct. An application by requesting only necessary permissions, users and administrators can know what data the app can access and be more confident that the app isn't behaving with malicious intent."

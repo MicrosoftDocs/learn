@@ -2,14 +2,16 @@
 uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere.how-connect-monitor-iot-central
 title: How to connect a room environment monitor to Azure IoT Central
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: How to connect a room environment monitor to Azure IoT Central
   description: In this section, we create an Azure Sphere application and connect it to Azure IoT Central.
-  ms.date: 06/28/2020
+  ms.date: 07/10/2024
   author: leestott
   ms.author: leestott
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure-central
+  ms.topic: unit
   ms.custom: team=nextgen
 durationInMinutes: 2 # dummy number at present
 content: |
   [!include[](includes/7-how-connect-monitor-iot-central.md)]
+

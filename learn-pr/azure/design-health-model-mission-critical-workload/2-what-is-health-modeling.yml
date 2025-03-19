@@ -2,13 +2,14 @@
 uid: learn.design-health-model-mission-critical-workload.what-is-health-modeling
 title: What is health modeling?
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is health modeling?
   description: Learn what a health model is and why you should use it.
-  ms.date: 01/12/2022
+  ms.date: 08/05/2024
   author: msimecek
   ms.author: prwilk
-  ms.topic: interactive-tutorial 
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/2-what-is-health-modeling.md)]
@@ -36,7 +37,8 @@ quiz:
     choices:
     - content: "The health model is multidimensional, the entire system is separated into layers, and you filter only for the layer that's relevant to you."
       isCorrect: false
-      explanation: "Incorrect. While a layered health model is multidimensional and it separates the system into layers, filtering on a single layer isn't the purpose of a health model. A health model provides value when it's analyzed and observed as a whole."
+      explanation: "Incorrect. While a layered health model is multidimensional and it separates the system into layers, filtering on a single layer isn't the purpose of a health model. A health model provides value when analyzed and observed as a whole."
     - content: "The health model is multidimensional, the entire system is separated into layers, and you observe the system as a whole."
       isCorrect: true
-      explanation: "Correct. A layered health model provides value when it's analyzed and observed as whole. Each layer of the health model captures what its healthy and unhealthy states represent. Health status of lower-level dependencies helps to quickly find the cause of service degradation."
+      explanation: "Correct. A layered health model provides value when analyzed and observed as whole. Each layer of the health model captures what its healthy and unhealthy states represent. Health status of lower-level dependencies helps to quickly find the cause of service degradation."
+

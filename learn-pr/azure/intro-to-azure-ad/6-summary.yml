@@ -1,14 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-ad.6-summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: Summary
-  ms.date: 02/25/2020
+  ms.date: 12/18/2023
   author: MicrosoftGuyJFlo
   ms.author: joflore
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 title: Summary
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]
+

@@ -1,4 +1,4 @@
-For Azure Virtual Desktop issues, check Azure Advisor first. Azure Advisor will give you directions for how to solve the problem, or at least point you towards a resource that can help.
+For Azure Virtual Desktop issues, check Azure Advisor first. Azure Advisor will give you directions for how to solve the problem, or at least point you towards a resource that can help.<br>
 
 This module aligns with the exam AZ-140: Configuring and Operating Microsoft Azure Virtual Desktop.
 
@@ -6,13 +6,14 @@ This module aligns with the exam AZ-140: Configuring and Operating Microsoft Azu
 
 After completing this module, you'll be able to:
 
- -  Describe how to monitor Azure Virtual Desktop by using Azure Monitor.
- -  How to use Log Analytics workspace for Azure Monitor.
- -  How to monitor Azure Virtual Desktop by using Azure Advisor.
- -  How to resolve Azure Advisor recommendations.
- -  How to diagnose graphics performance issues.
+ -  Configure log collection and analysis for Azure Virtual Desktop session hosts
+ -  Monitor Azure Virtual Desktop by using Azure Monitor
+ -  Customize Azure Monitor workbooks for Azure Virtual Desktop Insights
+ -  Optimize for capacity and performance
+ -  Monitor Azure Virtual Desktop by using Azure Advisor
+ -  Implement scaling plans in host pools
 
 ## Prerequisites
 
  -  Working experience with developing cloud applications.
- -  Conceptual knowledge of messaging, events, and API management.
+ -  Conceptual knowledge of monitoring, messaging, events, and API management.

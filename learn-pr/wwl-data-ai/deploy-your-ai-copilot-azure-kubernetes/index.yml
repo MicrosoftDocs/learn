@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.deploy-your-ai-copilot-azure-kubernetes
+metadata:
+  title: Deploy your AI Copilot with Azure Kubernetes
+  description: "Learn how to deploy an AI copilot app using Docker, Azure Container Resource, and Azure Kubernetes Service."
+  ms.date: 11/12/2024
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: module
+  ms.collection: wwl-ai-copilot
+  ms.service: azure-kubernetes-service
+  ai-usage: human-only
+title: Deploy your AI Copilot with Azure Kubernetes
+summary: Learn how to deploy an AI copilot application. Practice extending a solution that integrates vector search with GPT, and deploying it using Docker, Azure Container Resource, and Azure Kubernetes Service.
+abstract: |
+  - Set up REST endpoints in the application to access vector and GPT search functions.
+
+  - Test the application container locally using Docker.
+
+  - Build and store your application image in an Azure Container Resource.
+
+  - Deploy the image with Azure Kubernetes Service.
+prerequisites: '- Before starting this module, you should have experience building cloud applications with Python, Node.js, or a similar programming language.'
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+- developer
+products:
+- azure-cosmos-db
+- azure-kubernetes-service
+- azure-openai
+subjects:
+- artificial-intelligence
+- databases
+units:
+- learn.wwl.deploy-your-ai-copilot-azure-kubernetes.introduction
+- learn.wwl.deploy-your-ai-copilot-azure-kubernetes.deploy-apps-with-azure-kubernetes-service
+- learn.wwl.deploy-your-ai-copilot-azure-kubernetes.create-containerized-app
+- learn.wwl.deploy-your-ai-copilot-azure-kubernetes.exercise-prepare-your-copilot-application
+- learn.wwl.deploy-your-ai-copilot-azure-kubernetes.exercise-create-azure-kubernetes-service-cluster
+- learn.wwl.deploy-your-ai-copilot-azure-kubernetes.knowledge-check
+- learn.wwl.deploy-your-ai-copilot-azure-kubernetes.summary
+badge:
+  uid: learn.wwl.deploy-your-ai-copilot-azure-kubernetes.badge

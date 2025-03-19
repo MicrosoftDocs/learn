@@ -4,11 +4,10 @@ title: Describe Windows Server event logs
 metadata:
   title: Describe Windows Server event logs
   description: "Describe Windows Server event logs"
-  ms.date: 06/02/2022
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 8

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-netapp-files-data-protection.snapshots
+title: How do Azure NetApp Files snapshot works?  
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  unitType: learning-module
+  title: How do Azure NetApp Files snapshot works?  
+  description: Learn how Azure NetApp Files snapshots can be used to protect and restore your data.    
+  ms.date: 11/26/2024
+  author: b-ahibbard
+  ms.author: anfdocs
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-snapshots.md)]

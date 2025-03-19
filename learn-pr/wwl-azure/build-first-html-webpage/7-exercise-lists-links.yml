@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.build-first-html-webpage.exercise-lists-links
-title: 'Exercise: Lists links'
+title: Exercise - Lists and links
 metadata:
-  title: 'Exercise: Lists links'
-  description: "Exercise: Lists links"
-  ms.date: 03/01/2023
+  title: Exercise - Lists and links
+  description: "Add information to your resume using lists and links."
+  ms.date: 05/08/2024
   author: wwlpublish
   ms.author: eric
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/7-exercise-lists-links.md)]

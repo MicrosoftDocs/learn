@@ -2,13 +2,14 @@
 uid: learn.wwl.describe-high-availability-disaster-recovery-strategies.explore-iaas-ha-dr-solution
 title: Explore an IaaS high availability and disaster recovery solution
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore an IaaS high availability and disaster recovery solution
   description: "Explore an IaaS high availability and disaster recovery solution"
-  ms.date: 07/13/2022
+  ms.date: 06/21/2023
   author: wwlpublish
   ms.author: jupadrao
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 11

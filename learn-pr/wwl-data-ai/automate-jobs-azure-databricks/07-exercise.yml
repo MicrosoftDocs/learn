@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.automate-jobs-azure-databricks.exercise
+title: Exercise - Automate data ingestion and processing
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Exercise - Automate data ingestion and processing
+  description: "Exercise - Automate data ingestion and processing"
+  ms.date: 08/05/2024
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 30
+content: |
+  [!include[](includes/07-exercise.md)]

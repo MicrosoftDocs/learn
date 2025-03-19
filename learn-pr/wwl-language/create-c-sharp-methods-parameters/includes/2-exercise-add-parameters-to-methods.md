@@ -1,6 +1,3 @@
-
-
-
 When creating methods, you'll often want to provide some information for the method to use. Information consumed by a method is called a parameter. You can supply as many parameters as needed to accomplish its task, or none at all.
 
 The terms 'parameter' and 'argument' are often used interchangeably. However, 'parameter' refers to the variable in the method signature. The 'argument' is the value passed when the method is called.
@@ -9,17 +6,17 @@ The terms 'parameter' and 'argument' are often used interchangeably. However, 'p
 
 Parameters in a method work similar to variables. A parameter is defined by specifying the data type followed by the name of the parameter. Parameters are declared in the method signature, and the values for the parameters are provided by the method caller instead of being initialized inside the method itself. Consider the following code:
 
-    ```c#
-    CountTo(5);
+```c#
+	CountTo(5);
 
-    void CountTo(int max) 
-    {
-        for (int i = 0; i < max; i++)
-        {
-            Console.Write($"${i}, ");
-        }
-    }
-    ```
+	void CountTo(int max) 
+	{
+		for (int i = 0; i < max; i++)
+		{
+			Console.Write($"{i}, ");
+		}
+	}
+```
 
 In this example, the method `CountTo` accepts an integer parameter named `max`. The parameter is referenced in the `for` loop of the method. When `CountTo` is called, the integer `5` is supplied as an argument.
 

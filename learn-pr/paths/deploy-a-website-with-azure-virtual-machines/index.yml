@@ -5,10 +5,9 @@ metadata:
   description: Learn to use a Windows or Linux Azure Virtual Machine to extend the website support that Azure provides.
   brand: azure
   ms.date: 09/24/2018
-  author: adrianstevens
-  ms.author: adsteven
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: learning-path
 title: Deploy a website with Azure virtual machines
 summary:  |
   If your web hosting requirements aren't directly supported by the Azure Web app platform, you can leverage virtual machines to customize and control every aspect of the web server. Learn how to create, configure, and manage virtual machines on Linux and Windows that host web apps. This learning path can help you prepare for the [Microsoft Certified: Azure Developer Associate certification](/certifications/azure-developer).
@@ -27,7 +26,8 @@ subjects:
 - virtual-machine
 modules:
 - learn.introduction-to-azure-virtual-machines
-- learn.create-linux-vm-in-azure
+- learn.plan-your-linux-environment-in-azure
+- learn.provision-linux-virtual-machine-in-azure
 - learn.create-a-windows-vm-in-azure
 - learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm
 trophy:

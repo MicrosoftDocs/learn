@@ -2,13 +2,14 @@
 uid: learn.wwl.perform-cross-document-transactional-operations-azure-cosmos-db-sql-api.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/17/2022
+  ms.date: 03/09/2025
   author: wwlpublish
   ms.author: calopez
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -18,32 +19,32 @@ quiz:
     choices:
     - content: "Partition Key"
       isCorrect: true
-      explanation: "That's correct. The ``CreateTransactionalBatch()`` method has a single parameter of a partition key."
+      explanation: "Correct. The ``CreateTransactionalBatch()`` method has a single parameter of a partition key."
     - content: "Partition Key, List of Operations"
       isCorrect: false
-      explanation: "That's incorrect. The ``CreateTransactionalBatch()`` method does not require a list of operations. These are fluent methods invoked later."
+      explanation: "Incorrect. The ``CreateTransactionalBatch()`` method doesn't require a list of operations. These methods are fluent methods invoked later."
     - content: "None"
       isCorrect: false
-      explanation: "That's incorrect. The ``CreateTransactionalBatch()`` method requires at least a partition key."
-  - content: "You are using the ``ItemRequestOptions`` class to configure a request to enable optimistic concurrency control. Which header should you use to check for an exact value of an ``_etag``?"
+      explanation: "Incorrect. The ``CreateTransactionalBatch()`` method requires at least a partition key."
+  - content: "The ``ItemRequestOptions`` class is used to configure a request to enable optimistic concurrency control. Which header should be used to check for an exact value of an ``_etag``?"
     choices:
     - content: "``SessionToken``"
       isCorrect: false
-      explanation: "That's incorrect. This header is used for session tokens."
+      explanation: "Incorrect. This header is used for session tokens."
     - content: "``IfNoneMatchEtag``"
       isCorrect: false
-      explanation: "That's incorrect. This header is used for conditional matches, not exact value matches."
+      explanation: "Incorrect. This header is used for conditional matches, not exact value matches."
     - content: "``IfMatchETag``"
       isCorrect: true
-      explanation: "That's correct. This header is used to match the exact value of an ETag."
+      explanation: "Correct. This header is used to match the exact value of an ETag."
   - content: "Which property of the **TransactionalBatchResponse** returns the HTTP status code indicating success or failure of the transaction?"
     choices:
     - content: "ErrorMessage"
       isCorrect: false
-      explanation: "That's incorrect. This simply returns a string, which may or may not contain a message."
+      explanation: "Incorrect. This property simply returns a string, which may or may not contain a message."
     - content: "StatusCode"
       isCorrect: true
-      explanation: "That's correct. This returns the HTTP status code of type **HTTPStatusCode** from the underlying communication infrastructure with specific information about why the operation may have failed."
+      explanation: "Correct. This property returns the HTTP status code of type **HTTPStatusCode** from the underlying communication infrastructure with specific information about why the operation failed."
     - content: "IsSuccessStatusCode"
       isCorrect: false
-      explanation: "That's incorrect. This only returns a boolean indicating whether the operation has succeeded."
+      explanation: "Incorrect. This property only returns a boolean indicating that the operation succeeded."

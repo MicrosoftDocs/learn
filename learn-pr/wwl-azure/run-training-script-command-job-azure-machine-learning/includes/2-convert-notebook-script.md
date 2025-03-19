@@ -1,6 +1,4 @@
-
-
-When you've used notebooks for experimentation and development, you'll first need to convert a notebook to a script. Alternatively, you may choose to skip using notebooks and work only with scripts. Either way, there are some recommendations when creating scripts to have production-ready code.
+When you've used notebooks for experimentation and development, you'll first need to convert a notebook to a script. Alternatively, you might choose to skip using notebooks and work only with scripts. Either way, there are some recommendations when creating scripts to have production-ready code.
 
 Scripts are ideal for testing and automation in your production environment. To create a production-ready script, you'll need to:
 
@@ -18,7 +16,7 @@ The first thing you therefore need to do to convert your code to production code
 
 When using code in business processes, you want the code to be easy to read so that anyone can maintain it. One common approach to make code easier to read and test is to use functions. 
 
-For example, you may have used the following example code in a notebook to read and split the data:
+For example, you might have used the following example code in a notebook to read and split the data:
 
 ```python
 # read and visualize the data
@@ -35,14 +33,14 @@ from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30, random_state=0)
 ```
 
-As functions also allow you to test parts of your code, you may prefer to create *multiple smaller functions*, rather than one large function. If you want to test a part of your code, you can choose to only test a small part and avoid running more code than necessary. 
+As functions also allow you to test parts of your code, you might prefer to create *multiple smaller functions*, rather than one large function. If you want to test a part of your code, you can choose to only test a small part and avoid running more code than necessary. 
 
 You can refactor the code shown in the example into two functions: 
 
 - Read the data
 - Split the data
 
-An example of refactored code may be the following:
+An example of refactored code might be the following:
 
 ```python
 def main(csv_file):
