@@ -102,6 +102,26 @@ Understanding existing code is crucial, especially in large projects. You can us
 
 This feature is useful for learning purposes and when you're reviewing code that someone else wrote.
 
+## Slash Commands
+
+Slash commands are shortcuts that allow you to quickly perform actions in Copilot. These commands provide a convenient way to interact with Copilot without needing to navigate through menus.
+
+Here are some common slash commands and their usage:
+
+- `/explain` - Provides an explanation of the selected code.
+- `/suggest` - Offers code suggestions based on the current context.
+- `/test` - Generates unit tests for the selected function or class.
+- `/comment` - Converts comments into code snippets.
+
+To use a slash command, simply type the command in your editor and press `Enter`. For example:
+
+```python
+# /explain
+def calculate_average(numbers):
+    # Copilot will explain this function
+```
+
+
 ## Automated test generation
 
 Unit tests are essential for ensuring code quality and reliability. Copilot can save you time and effort by generating unit tests for your functions or classes.
