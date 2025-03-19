@@ -8,7 +8,7 @@ There are many reasons to choose Playwright as your test automation framework. H
 
 - **Unified API**: Playwright works across all modern browser engines (Chromium, WebKit, Firefox) and supports device emulation for mobile coverage. It comprises both headed and headless browser options, allowing developers to prioritize between debugging convenience and CI/Cloud execution.
 
-- **Resilient Testing**: Playwright implements "auto-wait" (no artificial timeouts) and "auto-retry" (web assertions), eliminating key causes for flaky tests. Rich tooling options (tracing, time-travel) make it easy to debug and fix issues if failures occur.
+- **Resilient Testing**: Playwright implements "auto-wait" (no artificial time-outs) and "auto-retry" (web assertions), eliminating key causes for flaky tests. Rich tooling options (tracing, time-travel) make it easy to debug and fix issues if failures occur.
 
 - **Test Isolation**: Every test runs in its own *BrowserContext*, independent of other tests running at the same time. Tests are run in parallel (for optimization) and one test failure doesn't affect others (for reliability).
 
@@ -22,7 +22,7 @@ In the following exercises, we'll learn how to perform test automation tasks usi
 |---|---|
 | [**TestConfig**](https://playwright.dev/docs/api/class-testconfig) | Configure Playwright Test Runner using File (static) or API (dynamic) |
 | [**TestProject**](https://playwright.dev/docs/test-projects) | Logical group of tests running same TestConfig and can be defined using filter. |
-| [**Test Timeout**](https://playwright.dev/docs/test-timeouts) | Global (per test run), Default (per test), Expect Timeouts, Fixture Timeouts |
+| [**Test Timeout**](https://playwright.dev/docs/test-timeouts) | Global (per test run), Default (per test), Expect time-outs, Fixture time-outs |
 | [**Fixtures**](https://playwright.dev/docs/test-fixtures) | Core to Playwright test isolation. Set environment; see [built-in](https://playwright.dev/docs/test-fixtures#built-in-fixtures) options. |
 | [**Navigation**](https://playwright.dev/docs/writing-tests) | Using `page.goto()` [options](https://playwright.dev/docs/api/class-page#page-goto) to craft multi-page testing workflows |
 | [**Locators**](https://playwright.dev/docs/locators) | Core to Playwright auto-wait and auto-retry. Action finds target elements. |
