@@ -4,7 +4,7 @@ The integration of SAP BTP with Azure also simplifies the process of managing an
 
 Identity ensures that businesses can protect their sensitive data and comply with industry regulations while using the advanced capabilities of both platforms. 
 
-:::image type="content" source="../media/microsoft-entra-integration-identity.png" alt-text="An graphic showing how Microsoft Entra ID is a holistic integrated cloud identity and access solution.":::
+:::image type="content" source="../media/microsoft-entra-integration-identity.png" alt-text="Screenshot of how Microsoft Entra ID is a holistic integrated cloud identity and access solution.":::
 
 
 - Add Cloud Foundry as an Enterprise Application on Azure.
@@ -17,7 +17,7 @@ Identity ensures that businesses can protect their sensitive data and comply wit
 
 Data Factory provides a data integration and transformation layer that works across your digital transformation initiatives.
 
-:::image type="content" source="../media/azure-data-factory-integration.png" alt-text="Data Factory provides a data integration and transformation layer that works across your digital transformation initiatives.":::
+:::image type="content" source="../media/azure-data-factory-integration.png" alt-text="Screenshot of Data Factory provides a data integration and transformation layer that works across your digital transformation initiatives.":::
 
 - Create a data factory in Azure.
 
@@ -39,7 +39,7 @@ Data Factory provides a data integration and transformation layer that works acr
 
 Azure API Management is made up of an API gateway, a management plane, and a developer portal, with features designed for different audiences in the API ecosystem. These components are Azure-hosted and fully managed by default. API Management is available in various tiers differing in capacity and features.
 
-:::image type="content" source="../media/azure-api-management-overview.png" alt-text="Graphic showing unified API management process":::
+:::image type="content" source="../media/azure-api-management-overview.png" alt-text="Screenshot of unified API management process":::
 
 - Create an API Management instance in Azure.
 

@@ -4,34 +4,34 @@ One of the key benefits of integrating SAP BTP with Azure is the ability to exte
 
 The integration of SAP BTP with Azure also simplifies the process of managing and securing enterprise applications. Azure provides a range of security and compliance features, including identity and access management, threat detection, and data encryption, which can be seamlessly integrated with SAP BTP. This ensures that businesses can protect their sensitive data and comply with industry regulations while leveraging the advanced capabilities of both platforms. 
 
-Azure's global network of data centers ensures that SAP applications can be deployed and accessed from anywhere in the world, providing businesses with the flexibility and reliability they need to operate in a global market.Another significant advantage of SAP BTP on Azure is the ability to integrate SAP applications with other Microsoft services, such as Microsoft 365 and Microsoft Teams. This integration enables businesses to create a unified and collaborative environment where employees can access and share information across different applications and platforms. For instance, businesses can use Microsoft Teams to facilitate communication and collaboration among employees working on SAP projects, while Microsoft 365 can be used to manage documents and workflows related to SAP applications.
+Azure's global network of data centers ensures that SAP applications can be deployed and accessed from anywhere in the world, providing businesses with the flexibility and reliability they need to operate in a global market. Another significant advantage of SAP BTP on Azure is the ability to integrate SAP applications with other Microsoft services, such as Microsoft 365 and Microsoft Teams. This integration enables businesses to create a unified and collaborative environment where employees can access and share information across different applications and platforms. For instance, businesses can use Microsoft Teams to facilitate communication and collaboration among employees working on SAP projects, while Microsoft 365 can be used to manage documents and workflows related to SAP applications.
 
 ### Benefits of Integrating SAP BTP with Azure
 
 You can move with confidence to RISE with SAP on the Microsoft Cloud with our Joint Reference Architectures.  Reduce the complexity and risk associated with business transformation while leveraging the integrated capabilities and longstanding partnership of SAP and Microsoft. 
 
-:::image type="content" source="../media/integration-joint-architecture-microsoft-partnership.png" alt-text="An image showing RISE with SAP on the Microsoft Cloud integration.":::
+:::image type="content" source="../media/integration-joint-architecture-microsoft-partnership.png" alt-text="Screenshot of RISE with SAP on the Microsoft Cloud integration.":::
 
-* **Scalability and Flexibility:** Azure provides a scalable infrastructure that can handle the dynamic workloads of SAP applications, allowing businesses to scale resources up or down based on demand.
+* **Scalability and Flexibility**: Azure provides a scalable infrastructure that can handle the dynamic workloads of SAP applications, allowing businesses to scale resources up or down based on demand.
 
-* **Enhanced Security:** Azure's robust security features, such as Azure Active Directory (Azure AD), provide secure access and identity management for SAP applications.
+* **Enhanced Security**: Azure's robust security features, such as Microsoft Entra ID, provide secure access and identity management for SAP applications.
 
-* **Cost Efficiency:** Azure's pay-as-you-go model enables organizations to optimize costs by paying only for the resources they use.
+* **Cost Efficiency**: Azure's pay-as-you-go model enables organizations to optimize costs by paying only for the resources they use.
 
-* **Improved Performance:** Azure's global network of data centers ensures low latency and high performance for SAP applications, enhancing user experience.
+* **Improved Performance**: Azure's global network of data centers ensures low latency and high performance for SAP applications, enhancing user experience.
 
-* **Seamless Integration:**Azure offers various services and tools that facilitate seamless integration with SAP BTP, such as Azure Data Factory, Azure Logic Apps, and Azure API Management.
+* **Seamless Integration**: Azure offers various services and tools that facilitate seamless integration with SAP BTP, such as Azure Data Factory, Azure Logic Apps, and Azure API Management.
 
 ### Key Components of SAP BTP and Azure Integration
 
 SAP Business Technology Platform unifies application development, data and analytics, integration, automation, and AI capabilities in one environment. 
 
-* **SAP BTP:** A comprehensive platform that includes services for database and data management, analytics, application development, and integration.
+* **SAP BTP**: A comprehensive platform that includes services for database and data management, analytics, application development, and integration.
 
-* **Azure:**A cloud computing platform that provides a wide range of services, including virtual machines, databases, analytics, and networking.
+* **Azure**: A cloud computing platform that provides a wide range of services, including virtual machines, databases, analytics, and networking.
 
-* **Microsoft Entra ID:**A cloud-based identity and access management service that provides single sign-on (SSO) and multi-factor authentication.
+* **Microsoft Entra ID**: A cloud-based identity and access management service that provides single sign-on (SSO) and multifactor authentication.
 
-* **Azure Data Factory:** A data integration service that allows you to create, schedule, and orchestrate data workflows.
+* **Azure Data Factory**: A data integration service that allows you to create, schedule, and orchestrate data workflows.
 
-* **Azure Logic Apps:** A cloud service that helps you automate workflows and integrate apps, data, and services.
+* **Azure Logic Apps**: A cloud service that helps you automate workflows and integrate apps, data, and services.

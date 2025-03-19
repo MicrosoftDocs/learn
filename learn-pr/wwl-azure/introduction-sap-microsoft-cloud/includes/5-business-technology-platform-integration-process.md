@@ -22,7 +22,7 @@ Integrating SAP BTP with Azure Cloud provides a powerful combination of capabili
 
 * **Azure Monitor:** Use Azure Monitor to track the performance and health of SAP BTP applications. Azure Monitor enables you to identify and resolve issues quickly, ensuring that applications are running smoothly.
 
-* **Azure Cost Management:** Use [Azure Cost Management](/azure/cost-management-billing/costs/https://learn.microsoft.com/azure/cost-management-billing/costs/overview-cost-management) to monitor and optimize costs. Azure Cost Management enables you to track spending and identify opportunities to reduce costs, ensuring that you're getting the most value from your investment.
+* **Microsoft Cost Management:** Use [Microsoft Cost Management](/azure/cost-management-billing/costs/overview-cost-management) to monitor and optimize costs. Microsoft Cost Management enables you to track spending and identify opportunities to reduce costs, ensuring that you're getting the most value from your investment.
 
 For more detailed guidance and tutorials on integrating SAP BTP with Azure, you can refer to the following resources:
 
