@@ -5605,3 +5605,18 @@ achievements:
   title: Introduce interfaces
   summary: In this module, you'll learn how to use interfaces in C#. You'll practice adding behaviors to classes and using system-defined interfaces to craft modular, robust code.
   iconUrl: /training/achievements/introduce-interfaces.svg
+- uid: learn.wwl.implement-interfaces-c-sharp.badge
+  type: badge
+  title: Implement interfaces
+  summary: In this module, you'll learn to extend classes with multiple interfaces, use interfaces as a type, and understand interface design practices.
+  iconUrl: /training/achievements/implement-interfaces.svg
+- uid: learn.wwl.design-code-with-interfaces.badge
+  type: badge
+  title: Design code with interfaces
+  summary: In this module, you'll learn about tightly coupled code and how to avoid it. You'll also learn how interfaces can improve your project by reducing code dependencies and standardizing your code.
+  iconUrl: /training/achievements/design-code-with-interfaces.svg
+- uid: learn.wwl.guided-project-langstons-ant.badge
+  type: badge
+  title: Guided project langstons ant
+  summary: This module will guide you through the steps required to develop your own Langston's Ant project. Your code will use interfaces to represent the functions the ants can perform.
+  iconUrl: /training/achievements/guided-project-langstons-ant.svg

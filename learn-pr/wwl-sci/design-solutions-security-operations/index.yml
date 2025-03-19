@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Design solutions for security operations
   description: "You learn techniques to design security operations capabilities including logging, auditing, Security Information and Event Management (SIEM), Security Orchestration and Automated Response (SOAR), and security workflows."
-  ms.date: 11/21/2024
+  ms.date: 03/18/2025
   author: ceperezb
   ms.author: ceperezb
   ms.topic: module
