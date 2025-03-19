@@ -200,7 +200,7 @@
       "redirect_url": "/training/modules/deploy-paas-solutions-with-azure-sql/"
     },
     {
-      "source_path_from_root": "learn-pr/wwl-data-ai/describe-performance-monitoring/6-describe-azure-sql-insights.yml",
+      "source_path_from_root": "/learn-pr/wwl-data-ai/describe-performance-monitoring/6-describe-azure-sql-insights.yml",
       "redirect_url": "/training/modules/describe-performance-monitoring/"
     },
     {
