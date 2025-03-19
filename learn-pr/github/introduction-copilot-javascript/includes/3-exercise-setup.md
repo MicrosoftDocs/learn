@@ -18,35 +18,6 @@ To use GitHub Copilot, you need to complete the following steps:
    - GitHub Copilot is available as an extension for major IDEs, including Visual Studio, Visual Studio Code, JetBrains IDEs, VIM, and XCode.
    - To install, search for "GitHub Copilot" in your IDE's extension marketplace and follow the installation instructions. For example, in the VS Code marketplace, you will find GitHub Copilot, GitHub Copilot Chat, and GitHub Copilot for Azure as options to install.
 
-## Accessing GitHub Copilot
-
-To use GitHub Copilot, you need to complete the following steps:
-
-1. **GitHub Account**: 
-   - If necessary, create a GitHub account.
-   - Copilot is a GitHub service, so you need a GitHub account to use it.
-
-2. **Check Copilot Access**: 
-   - Check the [Copilot pricing plans](https://github.com/features/copilot/plans) for your situation.
-   - For learning, the **Copilot Free** option with usage limits should be sufficient. It includes:
-      - Access to inline code completions
-      - Multi-file editing
-      - Copilot Chat
-      - Selecting multple models
-      - Support across all editors and in github.com
-
->[!Note]
-> Educators, Students and select open-source maintainers can receive Copilot Pro for free, learn how at: https://aka.ms/Copilot4Students
-
-3. **Verify Copilot Access is Enabled**:
-   - In GitHub, go to your profile, then head over to **Settings**.
-   - In the left navigation, select **Copilot**.
-   - Verify Copilot is active and **Copilot Chat in the IDE** is enabled.
-
-4. **Install the Extension**:
-   - Extensions are available for major IDEs like Visual Studio, Visual Studio Code, JetBrains IDEs, VIM, and XCode.
-   - Simply search for `GitHub Copilot` in your IDE's extension marketplace and install it.
-
 ## Environment set up
 
 First you need to launch the Codespaces environment, which comes preconfigured with the GitHub Copilot extension.
