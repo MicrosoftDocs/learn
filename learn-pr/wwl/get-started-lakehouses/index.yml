@@ -8,10 +8,6 @@ metadata:
   ms.author: anrudduc
   ms.topic: module-standard-task-based
   ms.collection: N/A
-  ms.custom:
-  - build-2023
-  - ' build-2023-data-ai'
-  - ' build-2023-fabric'
   ms.service: fabric
   ai-usage: human-only
 title: Get started with lakehouses in Microsoft Fabric

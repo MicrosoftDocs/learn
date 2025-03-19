@@ -8,10 +8,6 @@ metadata:
   author: angierudduck
   ms.author: anrudduc
   ms.topic: unit
-  ms.custom:
-  - build-2023
-  - ' build-2023-data-ai'
-  - ' build-2023-fabric'
 durationInMinutes: 6
 content: |
   [!include[](includes/4-explore-data-lakehouse.md)]
