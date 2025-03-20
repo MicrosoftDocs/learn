@@ -6,9 +6,9 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise - Implement LLMOps
   description: "Exercise - Implement LLMOps"
-  ms.date: 08/23/2024
+  ms.date: 03/20/2025
   author: wwlpublish
-  ms.author: madiepev
+  ms.author: theresai
   ms.topic: unit
 azureSandbox: false
 labModal: false
