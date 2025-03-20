@@ -2,7 +2,7 @@
 uid: learn.wwl.insights-sap-use-unified-analytics-ai-platform
 metadata:
   title: Insights for SAP using unified analytics and AI platform
-  description: "In this module, you learn about accelerating business transformation with Microsoft AI and SAP integration, enhancing business processes with Azure Copilot Studio, Power Platform, and SAP."
+  description: "In this module, you learn about accelerating business transformation with Microsoft AI and SAP integration, enhancing business processes with Microsoft Copilot Studio, Power Platform, and SAP."
   ms.date: 03/20/2025
   author: wwlpublish
   ms.author: bradj
@@ -10,7 +10,7 @@ metadata:
   ms.service: sap-on-azure
   ai-usage: human-only
 title: Insights for SAP using unified analytics and AI platform
-summary: In this module, you learn about accelerating business transformation with Microsoft AI and SAP integration, enhancing business processes with Azure Copilot Studio, Power Platform, and SAP.
+summary: In this module, you learn about accelerating business transformation with Microsoft AI and SAP integration, enhancing business processes with Microsoft Copilot Studio, Power Platform, and SAP.
 abstract: |
   After completing this module, you’ll be able to:
 
@@ -22,7 +22,7 @@ abstract: |
 
   -   Understand how Microsoft Security Copilot can enhance security in SAP systems.
 
-  -   Recognize the role of Azure Copilot Studio and Power Platform in transforming business processes.
+  -   Recognize the role of Microsoft Copilot Studio and Power Platform in transforming business processes.
 prerequisites: |
   -   Experience using the Azure portal to create resources.
 
