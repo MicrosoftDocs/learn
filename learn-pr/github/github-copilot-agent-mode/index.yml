@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.github.github-copilot-agent-mode
+metadata:
+  title: Building Applications with GitHub Copilot Agent Mode
+  description: GitHub Copilot Agent Mode is an AI-powered coding assistant that works on its own to analyze your entire project, handle tricky coding tasks, improve solutions over time, and help make your software development process faster and more collaborative.
+  author: a-a-ron
+  ms.author: aastewar
+  ms.date: 03/17/2025
+  ms.service: github-copilot
+  ms.topic: module
+  ms.collection:
+    - github-ai-copilot
+title: Building Applications with GitHub Copilot Agent Mode
+summary: Learn how to build applications using GitHub Copilot Agent Mode by prompting autonomous development tasks, using documentation for guidance, and understanding how Agent Mode iteratively manages, refactors, and improves your codebase.
+abstract: |
+  In this module, you'll:
+  - Understand how to develop with VS Code IDE in a GitHub Codespace
+  - Prompt GitHub Copilot agent mode to create an application
+  - Leverage documentation files to instruct GitHub Copilot agent mode
+  - Understand how GitHub Copilot agent mode iterates over a code base to:
+    - Fix errors
+    - Refactor code
+    - Develop new features
+prerequisites: |
+  - A GitHub account and a fundamental understanding of GitHub Copilot
+  - Include any concepts or skills that help learners succeed
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+- student
+products:
+- github
+- azure
+units:
+- learn.github.github-copilot-agent-mode.introduction
+- learn.github.github-copilot-agent-mode.what-is-agent-mode
+- learn.github.github-copilot-agent-mode.explore-the-power
+- learn.github.github-copilot-agent-mode.exercise
+- learn.github.github-copilot-agent-mode.knowledge-check
+- learn.github.github-copilot-agent-mode.summary
+badge:
+  uid: learn.github-copilot-agent-mode.badge
