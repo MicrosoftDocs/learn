@@ -6,8 +6,8 @@ metadata:
   prefetch-feature-rollout: true
   title: Describe virtual machine resizing
   description: "Describe virtual machine resizing"
-  ms.date: 07/13/2022
-  author: wwlpublish
+  ms.date: 03/20/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
