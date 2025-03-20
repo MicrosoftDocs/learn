@@ -36,7 +36,7 @@ Select the metric that you wish to alert on. The following image shows Percentag
 
 The alerts can be configured in a static manner (for example, raise an alert when CPU goes over 95%) or in a dynamic fashion using Dynamic Thresholds. Dynamic Thresholds learn the historical behavior of the metric and raise an alert when the resources are operating in an abnormal manner. These Dynamic Thresholds can detect seasonality in your workloads and adjust the alerting accordingly.
 
-If Static alerts are used, you must provide a threshold for the selected metric. In this example, 80 percent was specified. This threshold means that if the CPU utilization exceeds 80 percentage over a given period, an alert is fired and react as specified.
+If Static alerts are used, you must provide a threshold for the selected metric. In this example, 80 percent was specified. This threshold means that if the CPU utilization exceeds 80 percentage over a given period, an alert is fired and reacts as specified.
 
 Both types of alerts offer Booleans operators such as the 'greater than' or 'less than' operators. Along with Boolean operators, there are aggregate measurements to select from such as average, minimum, maximum, count, average, and total. With these options available, it’s easy to construct a flexible alert that will suit just about any enterprise level alerting.
 
@@ -44,8 +44,7 @@ Both types of alerts offer Booleans operators such as the 'greater than' or 'les
 
 After you create the alert, in order to notify administrators or launch an automation process, an action group needs to be configured.
 
->[!NOTE]
->Defining an action group is optional, and if one isn't configured the alert will just log the notification to storage with no further action is taken. You can create a new action group from the metrics screen, by selecting **Add** next to Action Groups. You'll then see this dialog:
+Defining an action group is optional, and if one isn't configured the alert will just log the notification to storage with no further action. You can create a new action group from the metrics screen, by selecting **Add** next to Action Groups. 
 
 :::image type="content" source="../media/module-44-optimize-resources-final-09.png" alt-text="A screenshot of where the create action group option is located when creating a new alert":::
 
