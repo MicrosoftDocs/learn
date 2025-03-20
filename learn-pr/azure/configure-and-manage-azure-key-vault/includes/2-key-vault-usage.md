@@ -49,7 +49,7 @@ Key Vault can also generate and protect keys using software-based RSA and ECC al
 The primary difference (besides price) with a software-protected key is that cryptographic operations are performed in software using Azure compute services. With HSM-protected keys, the cryptographic operations are performed within the HSM.
 
 > [!TIP]
-> For production use, it's recommended to use HSM-protected keys and use software-protected keys in only test/pilot scenarios. There is an additional charge for HSM-backed keys per-month if the key is used in that month. The summary page has a link to the pricing details for Azure Key Vault.
+> For production use, it's recommended to use HSM-protected keys and use software-protected keys in only test/pilot scenarios. There's an additional charge for HSM-backed keys per-month if the key is used in that month. The summary page has a link to the pricing details for Azure Key Vault.
 
 You determine the key generation type when you create the key. For example, the Azure PowerShell command `Add-AzureKeyVaultKey` has a `Destination` parameter that can be set to either `Software` or `HSM`:
 
