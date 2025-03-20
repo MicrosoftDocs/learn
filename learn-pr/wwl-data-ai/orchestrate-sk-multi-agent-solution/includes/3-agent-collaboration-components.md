@@ -1,3 +1,6 @@
+NOTES: After thinking on this longer, I wonder if we split out each section here into its own unit and expand a bit - give examples of the prebuilt selection and termination strategies. Then we can drop the code heavy unit (currently 4) and save the coding for the lab
+
+
 A key part of the Semantic Kernel Agent Framework is a system designed to facilitate intelligent, multi-agent interactions. Agent collaboration, called `AgentGroupChat`, has critical components to consider that aren't necessary with single agents or non-agentic Semantic Kernel applications.
 
 Each of these sections discusses an example multi-agent solution, where we have two agents:
