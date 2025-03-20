@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Implement Retrieval Augmented Generation (RAG) with Azure Databricks
   description: Implement Retrieval Augmented Generation (RAG) with Azure Databricks
-  ms.date: 03/25/2025
+  ms.date: 03/20/2025
   author: wwlpublish
   ms.author: theresai
   ms.topic: module
