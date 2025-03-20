@@ -22,4 +22,4 @@ Because Azure contains resilient copies of your data, you can recover quickly fr
 
 ## Cloud-side backup
 
-Azure file shares have native snapshot capabilities, and the you can automate the process using Azure Backup to schedule your backups and manage their retention. Azure Backup also integrates with your on-premises servers, so when you restore to the cloud, these changes are automatically downloaded on your Windows Servers.
+Azure file shares have native snapshot capabilities, and you can automate the process using Azure Backup to schedule your backups and manage their retention. Azure Backup also integrates with your on-premises servers, so when you restore to the cloud, these changes are automatically downloaded on your Windows Servers.
