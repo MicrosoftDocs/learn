@@ -31,8 +31,8 @@ You start with an existing template that your team has been using. The template 
 
 1. Create a new file called *azuredeploy.json*.
 
-1. Save the empty file so that Visual Studio Code loads the ARM template tooling. 
- 
+1. Save the empty file so that Visual Studio Code loads the ARM template tooling.
+
    You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
 
 1. Copy the following code into *azuredeploy.json*.
@@ -49,8 +49,8 @@ You start with an existing template that your team has been using. The template 
 
 1. Create a new file called *main.bicep*.
 
-1. Save the empty file so that Visual Studio Code loads the Bicep tooling. 
- 
+1. Save the empty file so that Visual Studio Code loads the Bicep tooling.
+
    You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
 
 1. Copy the following code into *main.bicep*.
@@ -173,7 +173,7 @@ To validate that your deployment has been created and sent to Azure, go to the [
 
 ::: zone pivot="jsonpowershell,jsoncli"
 
-1. In the *azuredeploy.json* file in Visual Studio Code, delete the tag named `Owner` and its value. After you're done, the `tags` property of the virtual network should look like this: 
+1. In the *azuredeploy.json* file in Visual Studio Code, delete the tag named `Owner` and its value. After you're done, the `tags` property of the virtual network should look like this:
 
    :::code language="json" source="code/4-template-after.json" range="12-14" :::
 
@@ -191,7 +191,7 @@ To validate that your deployment has been created and sent to Azure, go to the [
 
 ::: zone pivot="biceppowershell,bicepcli"
 
-1. In the *main.bicep* file in Visual Studio Code, delete the tag named `Owner` and its value. After you're done, the `tags` property of the virtual network should look like this: 
+1. In the *main.bicep* file in Visual Studio Code, delete the tag named `Owner` and its value. After you're done, the `tags` property of the virtual network should look like this:
 
    :::code language="bicep" source="code/4-template-after.bicep" range="6-8" :::
 
@@ -273,9 +273,9 @@ The what-if output is similar to the following one:
 
 Notice that the result is color-coded in addition to having a prefix:
 
-- Purple and **~** for any modifications
-- Green and **+** for new resources to be created
-- Orange and **-** for deletions
+* Purple and **~** for any modifications
+* Green and **+** for new resources to be created
+* Orange and **-** for deletions
 
 ## Remove the resources in the template
 

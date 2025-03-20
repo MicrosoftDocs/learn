@@ -4,16 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/12/2024
+  ms.date: 03/19/2025
   author: angierudduck
   ms.author: anrudduc
   ms.topic: unit
-  ms.custom:
-  - build-2023
-  - build-2023-dataai
-  - build-2023-fabric
 durationInMinutes: 3
 quiz:
+  title: ""
   questions:
   - content: "What is a Microsoft Fabric lakehouse?"
     choices:
