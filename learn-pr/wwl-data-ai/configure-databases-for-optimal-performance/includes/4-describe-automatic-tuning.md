@@ -20,7 +20,7 @@ In the example above, you can see a check mark on **Plan ID 1**, which means tha
 
 The plan will revert back to the last known good plan after 15 executions of the query.
 
-When plan forcing occurs automatically, the database engine applies the last known good plan and will also continue to monitor query execution plan performance. If the forced plan doesn't perform better than the previous plan, it is then unforced and force a new plan to be compiled. If the forced plan continues to outperform the previously bad plan, it remains forced until such time as a recompile occurs.
+When plan forcing happens automatically, the database engine applies the last known good plan and keeps an eye on query execution performance. If the forced plan doesn't perform better than the previous one, it's unforced, and a new plan is compiled. However, if the forced plan continues to outperform the previous bad plan, it stays in place until a recompile occurs.
 
 You can enable automatic plan correction via a T-SQL query. The Query Store must be enabled and must be in Read-Write mode for the command to succeed. If either of those two criteria aren't met, the ALTER statement fails.
 
