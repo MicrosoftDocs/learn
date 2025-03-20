@@ -34,8 +34,7 @@ subjects:
 units:
 - learn.wwl.orchestrate-sk-multi-agent-solution.introduction
 - learn.wwl.orchestrate-sk-multi-agent-solution.understand-agent-framework
-- learn.wwl.orchestrate-sk-multi-agent-solution.create-azure-ai-agent
-- learn.wwl.orchestrate-sk-multi-agent-solution.add-plugins-to-agents
+- learn.wwl.orchestrate-sk-multi-agent-solution.agent-collaboration-components
 - learn.wwl.orchestrate-sk-multi-agent-solution.design-agent-collaboration
 - learn.wwl.orchestrate-sk-multi-agent-solution.exercise
 - learn.wwl.orchestrate-sk-multi-agent-solution.knowledge-check

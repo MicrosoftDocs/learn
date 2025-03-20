@@ -1,4 +1,4 @@
-Semantic Kernel is an open-source SDK that enables developers to integrate AI models into their applications. Using the SDK, developers can create "plugins" to interface with the LLMs and perform various tasks. Semantic Kernel bridges the gap between AI and software development by offering tools to create AI-driven agents that can execute tasks, interact with APIs, and perform complex workflows.
+Semantic Kernel is an open-source SDK that enables developers to integrate AI models into their applications. Part of that SDK is the *Semantic Kernel Agents Framework*, enabling the creation of agents using the same features that exist in the core Semantic Kernel framework.
 
 ## What is the Semantic Kernel Agent Framework?
 
@@ -6,40 +6,40 @@ The Semantic Kernel Agent Framework is a framework designed to help developers b
 
 ### Core Concepts
 
-- **Kernel** 
+The Agent Framework in Semantic Kernel provides architecture on top of existing Semantic Kernel resources, including:
+
+- **Agents**
+
+    Agents are intelligent, AI-driven entities capable of reasoning and executing tasks. They use language models, functions, and memory to make decisions dynamically.
+
+- **Agent Collaboration**
+
+    Agents can collaborate together through an **agent group chat**, which enables multiple agents to join the same chat, even of different agent types. Agent group chats determine which agent should respond and how to determine if the conversation is finished.
+
+The features that power Semantic Kernel are also still available within the Agent Framework, including:
+
+- **Kernel**
 
     The kernel is the central component of the Semantic Kernel. The kernel acts as the execution engine, managing AI interactions, function orchestration, and memory.
 
-- **Agents**
-    
-    Agents are intelligent, AI-driven entities capable of reasoning and executing tasks. They use language models, functions, and memory to make decisions dynamically.
+- **Tools and Plugins**
 
-- **Plugins**
-
-    Agents use plugins to perform specific tasks. Plugin functions enable agents to dynamically interact with external services or execute complex tasks.
+    **Plugins** align with existing Semantic Kernel features, enabling agents to dynamically interact with external services or execute complex tasks through function calling.  Within the Agent Framework, **tools** are available to provide extra functionality to your agents, such as file searching or code interpreter, similar to tool usage in Azure AI Agent service. Agents use tools and plugins to perform specific tasks.
 
 - **History**
 
-    Agents can maintain chat history across multiple interactions, allowing them to track previous interactions and adapt responses accordingly.
+    Agents can maintain chat history across multiple interactions, allowing them to track previous interactions and adapt responses accordingly. The conversation history is always accessible by the agents, either as a whole or for a specific agent's chat history.
 
 ### Types of Agents
 
-The Semantic Kernel Agent Framework supports several different types of agents.
+The Semantic Kernel Agent Framework supports several different types of agents, including:
 
+- Azure AI Agent
 - Chat Completion Agent
 - OpenAI Assistant Agent
-- Azure AI Agent
 
-## Why Use the Semantic Kernel Agent Framework?
+## Why you should use the Semantic Kernel Agent Framework
 
-TODO
+The Semantic Kernel Agent Framework offers a robust platform for building intelligent, autonomous, and collaborative AI agents. By leveraging this framework, you can create modular AI components that seamlessly integrate into your applications, enabling them to perform complex tasks with minimal manual intervention. The framework's design emphasizes flexibility, allowing developers to define agents tailored to specific needs, such as data analysis, API interactions, or natural language processing. This modularity ensures that your application remains adaptable as requirements evolve or new technologies emerge.
 
-### Getting Started
-
-TODO - Create AI Foundry Project
-
-To use the Semantic Kernel Agent Framework, install the necessary package with dependencies:
-
-```sh
-pip install semantic-kernel[azure]
-```
+The Semantic Kernel Agent Framework can integrate agents from multiple sources, including Azure AI Agent Service, and supports both multi-agent collaboration and human-agent interaction. Agents can work together to orchestrate sophisticated workflows, where each agent specializes in a specific task, such as data collection, analysis, or decision-making. Additionally, the framework facilitates human-in-the-loop processes, enabling agents to augment human decision-making by providing insights or automating repetitive tasks. This combination of autonomy, collaboration, and interactivity makes the Semantic Kernel Agent Framework an ideal choice for applications requiring dynamic, goal-oriented behavior.
