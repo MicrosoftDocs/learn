@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Identity and Access Control
   description: In this unit, you'll learn about the various identity and access control options that are available for Azure Files.
-  ms.date: 11/10/2023
+  ms.date: 03/20/2025
   author: khdownie
   ms.author: kendownie
   ms.topic: unit
