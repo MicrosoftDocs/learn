@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.insights-sap-use-unified-analytics-ai-platform.unlock-business-transformation-microsoft-ai-sap
+title: Unlock business transformation with Microsoft AI and RISE with SAP
+metadata:
+  title: Unlock business transformation with Microsoft AI and RISE with SAP
+  description: "Unlock business transformation with Microsoft AI and RISE with SAP"
+  ms.date: 03/20/2025
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-unlock-business-transformation-microsoft-ai-sap.md)]
