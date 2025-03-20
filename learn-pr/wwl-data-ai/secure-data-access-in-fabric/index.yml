@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Secure data access in Microsoft Fabric
   description: Learn the key concepts and strategies for securing data access in Microsoft Fabric.
-  ms.date: 10/18/2024
+  ms.date: 03/20/2025
   author: wwlpublish
   ms.author: theresai
   ms.topic: module

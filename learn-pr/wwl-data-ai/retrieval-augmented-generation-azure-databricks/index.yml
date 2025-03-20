@@ -5,12 +5,13 @@ metadata:
   prefetch-feature-rollout: true
   title: Implement Retrieval Augmented Generation (RAG) with Azure Databricks
   description: Implement Retrieval Augmented Generation (RAG) with Azure Databricks
-  ms.date: 08/12/2024
+  ms.date: 03/25/2025
   author: wwlpublish
   ms.author: madiepev
   ms.topic: module
   ms.service: azure
   ai-usage: ai-assisted
+  ms.collection: wwl-ai-copilot
 title: Implement Retrieval Augmented Generation (RAG) with Azure Databricks
 summary: Retrieval Augmented Generation (RAG) is an advanced technique in natural language processing that enhances the capabilities of generative models by integrating external information retrieval mechanisms. When you use both generative models and retrieval systems, RAG dynamically fetches relevant information from external data sources to augment the generation process, leading to more accurate and contextually relevant outputs. 
 abstract: |
