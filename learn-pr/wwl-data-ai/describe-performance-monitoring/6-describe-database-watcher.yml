@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-performance-monitoring.describe-database-watcher
+title: Describe database watcher (preview)
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Describe database watcher (preview)
+  description: "Describe database watcher (preview)"
+  ms.date: 03/19/2025
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-describe-database-watcher.md)]
