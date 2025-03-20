@@ -8,6 +8,6 @@ By completing this module, you can:
 - Implement Microsoft Sentinel solution for monitoring, detection, and response to suspicious activities in SAP applications. 
 - Understand the limitations of Azure Monitor for SAP solutions with SAP RISE/ECS and the alternatives available.
 
-## More reading:
+## More reading
 
 - [Microsoft Sentinel product documentation](/azure/sentinel/)
