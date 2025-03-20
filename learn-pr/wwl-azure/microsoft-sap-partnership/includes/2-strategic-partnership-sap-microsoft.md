@@ -40,6 +40,4 @@ The partnership has both companies working together in the Industrial Internet C
 
 Data analytics and AI play a crucial role in the partnership's value proposition. Integration between SAP data and Microsoft cloud solutions improves end-user productivity and reduces operating expenses. Microsoft Fabric and Power BI provide cloud-scale analytics and data visualization services, enabling businesses to make informed decisions based on comprehensive insights. 
 
-:::image type="content" source="../media/combine-data-microsoft-fabric.png" alt-text="Diagram showing the value of combining data with Microsoft Fabric.":::
-
 The partnership also promotes data governance with Microsoft Purview, ensuring data integrity and relevance across the entire landscape.
