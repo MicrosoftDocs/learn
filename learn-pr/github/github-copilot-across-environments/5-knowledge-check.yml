@@ -20,9 +20,9 @@ quiz:
     - content: "JavaScript"
       isCorrect: false
       explanation: "Incorrect. JavaScript is mentioned as one of the languages receiving strong support from GitHub Copilot."
-    - content: "Java"
+    - content: "Rust"
       isCorrect: true
-      explanation: "Correct. Java isn't mentioned in the list of languages receiving strong support from GitHub Copilot."
+      explanation: "Correct. Rust isn't mentioned in the list of languages receiving strong support from GitHub Copilot."
     - content: "Ruby"
       isCorrect: false
       explanation: "Incorrect. Ruby is mentioned as one of the languages receiving strong support from GitHub Copilot."
