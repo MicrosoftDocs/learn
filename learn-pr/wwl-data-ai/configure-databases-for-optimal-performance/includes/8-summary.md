@@ -1,13 +1,3 @@
-Azure SQL has included many features in recent releases to improve performance. Many of these features can be enabled at the individual database level, and may also be controlled using the compatibility level of the database.
+Azure SQL has introduced numerous features in recent releases to enhance performance. Many of these features can be enabled at the individual database level and can be managed using the database's compatibility level.
 
-Maintaining indexes and statistics can help provide consistent performance for your queries. Additionally, Azure SQL Database automates the creation of new indexes and the removal of unused indexes.
-
-Now that you've reviewed this module, you should be able to:
-
-- Understand database scoped configuration options
-
-- Understand maintenance tasks related to indexing and statistics
-
-- Understand the features of Intelligent Query Processing
-
-- Explore the automatic tuning feature in Azure
+Maintaining indexes and statistics is crucial for ensuring consistent query performance. Azure SQL Database goes a step further by automating the creation of new indexes and the removal of unused ones. This automation helps optimize database performance over time, as the system learns from existing workloads and adjusts indexes accordingly. By leveraging these advanced features, you can achieve better efficiency and reliability in your Azure SQL Database operations.

@@ -20,9 +20,9 @@ In the example above, you can see a check mark on **Plan ID 1**, which means tha
 
 The plan will revert back to the last known good plan after 15 executions of the query.
 
-When plan forcing occurs automatically, the database engine will apply the last known good plan and will also continue to monitor query execution plan performance. If the forced plan doesn't perform better than the previous plan, it will be then unforced and force a new plan to be compiled. If the forced plan continues to outperform the previously bad plan, it will remain forced until such time as a recompile occurs.
+When plan forcing occurs automatically, the database engine applies the last known good plan and will also continue to monitor query execution plan performance. If the forced plan doesn't perform better than the previous plan, it is then unforced and force a new plan to be compiled. If the forced plan continues to outperform the previously bad plan, it remains forced until such time as a recompile occurs.
 
-You can enable automatic plan correction via a T-SQL query, as shown below. The Query Store must be enabled and must be in Read-Write mode for the command to succeed. If either of those two criteria aren't met, the ALTER statement will fail.
+You can enable automatic plan correction via a T-SQL query. The Query Store must be enabled and must be in Read-Write mode for the command to succeed. If either of those two criteria aren't met, the ALTER statement fails.
 
 ```SQL
 ALTER DATABASE [WideWorldImporters] SET AUTOMATIC_TUNING (FORCE_LAST_GOOD_PLAN = ON);
@@ -32,11 +32,11 @@ You can examine the automatic tuning recommendations through a dynamic managemen
 
 ## Automatic index management
 
-Azure SQL Database can perform automatic index tuning. Over time, the database will learn about existing workloads and provide recommendations on adding or removing indexes in order to provide better performance. Like forcing improved query plans, the database can be configured to allow for automatic index creation or removal depending on existing index performance, as shown below:
+Azure SQL Database has the capability to perform automatic index tuning. Over time, it learns from existing workloads and provides recommendations for adding or removing indexes to enhance performance. Similar to forcing improved query plans, the database can be configured to automatically create or remove indexes based on their performance, as shown in the following image.
 
 :::image type="content" source="../media/module-44-optimize-resources-final-26.png" alt-text="Screenshot of Automatic tuning Options for Azure SQL Database.":::
 
-When enabled, the **Performance Recommendations** page will identify indexes that can be created or dropped depending on query performance. Remember this feature isn't available for on-premises databases and only available for Azure SQL Database.
+When enabled, the **Performance Recommendations** page identifies indexes that can be created or dropped depending on query performance. Remember this feature isn't available for on-premises databases and only available for Azure SQL Database.
 
 Alternatively, use the following query to see the automatic tuning features enabled in your database:
 
@@ -50,6 +50,6 @@ FROM sys.database_automatic_tuning_options
 
 Creating new indexes can consume resources, and the timing of the index creations is critical to ensure no negative effect is felt on your workloads.
 
-Azure SQL Database will monitor the resources required to implement new indexes to avoid causing performance degradation. The tuning action is postponed until the available resources are available, for example if resources are required for existing workloads and not available for creating an index.
+Azure SQL Database monitors the resources required to implement new indexes to avoid causing performance degradation. The tuning action is postponed until the available resources are available, for example if resources are required for existing workloads and not available for creating an index.
 
-Monitoring ensures any action taken won't harm performance. If an index is dropped and query performance noticeably degrades, the recently dropped index will be automatically recreated.
+Monitoring ensures any action taken won't harm performance. If an index is dropped and query performance noticeably degrades, the recently dropped index is automatically recreated.
