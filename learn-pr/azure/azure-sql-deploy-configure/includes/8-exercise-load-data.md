@@ -67,7 +67,7 @@ Both exercises contain the same commands and content, so you can choose the opti
 
     ```sql
     CREATE MASTER KEY 
-    ENCRYPTION BY PASSWORD='MyComplexPassword00!';
+    ENCRYPTION BY PASSWORD='<password>';
     GO
     ```
 
@@ -78,7 +78,7 @@ Both exercises contain the same commands and content, so you can choose the opti
     ```sql
     CREATE DATABASE SCOPED CREDENTIAL [https://azuresqlworkshopsa.blob.core.windows.net/data/]
     WITH IDENTITY = 'SHARED ACCESS SIGNATURE',
-    SECRET = 'st=2020-09-28T22%3A05%3A27Z&se=2030-09-29T22%3A05%3A00Z&sp=rl&sv=2018-03-28&sr=c&sig=52WbuSIJCWyjS6IW6W0ILfIpqh4wLMXmOlifPyOetZI%3D';
+    SECRET = '<secret>';
     GO
     ```
 
