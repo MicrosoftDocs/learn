@@ -1,8 +1,8 @@
-Contoso wants to protect the servers and Kubernetes clusters that it has connected to Azure Arc. By using Microsoft Sentinel, Contoso can collect security-related events for their Arc-enabled servers, providing alert detection, threat visibility, and other benefits. Contoso can also use Microsoft Defender for Servers to monitor the security posture of their Arc-enabled servers, while also helping to secure their Kubernetes clusters through Microsoft Defender for Containers.
+Contoso wants to protect the servers and Kubernetes clusters that are connected to Azure Arc. By using Microsoft Sentinel, Contoso can collect security-related events for their Arc-enabled servers, providing alert detection, threat visibility, and other benefits. Contoso can also use Microsoft Defender for Servers to monitor the security posture of their Arc-enabled servers, while also helping to secure their Kubernetes clusters through Microsoft Defender for Containers.
 
 ## Azure Arc security with Microsoft Sentinel
 
-Microsoft Sentinel is an integrated SIEM (scalable, cloud-native, security information, and event management) and a SOAR (security orchestration, automation, and response) solution. Microsoft Sentinel delivers threat intelligence, providing a single solution for attack detection, proactive hunting, and threat response. It provides a birds-eye view across the enterprise, alleviating the stress of increasingly sophisticated attacks, increasing volumes of alerts, and long resolution time frames.
+Microsoft Sentinel is an integrated SIEM (scalable, cloud-native, security information, and event management) and a SOAR (security orchestration, automation, and response) solution. Microsoft Sentinel delivers threat intelligence, providing a single solution for attack detection, proactive hunting, and threat response. It provides a birds-eye view across the enterprise which alleviates the stress of increasingly sophisticated attacks, increasing volumes of alerts, and long resolution time frames.
 
 The benefits of Microsoft Sentinel include:
 
@@ -15,7 +15,7 @@ Through Azure Arc, these benefits can extend to servers across Contoso's hybrid 
 
 Microsoft Sentinel comes with several connectors for Microsoft solutions available out of the box and providing real-time integration. For physical and virtual machines, you install the Log Analytics agent that collects the logs and forwards them to Microsoft Sentinel.
 
-After your Azure Arc-enabled servers have been connected to the Log Analytics workspace and Microsoft Sentinel has been enabled, you can set up data connectors to start ingesting logs.
+After your Azure Arc-enabled servers are connected to the Log Analytics workspace and Microsoft Sentinel is enabled, you can set up data connectors to start ingesting logs.
 
 Contoso can use Microsoft Sentinel's threat detection templates to create their own rules for detecting suspicious activity. These rule templates are based on known threats and common attack vectors, allowing Contoso to create specific rules to automatically search their environment for threats. Templates can be customized to search for activities or filter them out as needed.
 

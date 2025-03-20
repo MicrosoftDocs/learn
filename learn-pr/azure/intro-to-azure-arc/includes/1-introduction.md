@@ -6,7 +6,7 @@ Contoso's IT director realizes that Contoso has an outdated operational model wi
 
 As Contoso moves to a modern cloud computing environment, it wants to understand how Azure services might help with modernizing the current operational model through automation and virtualization, even though they need to maintain some on-premises resources.
 
-As part of the initial design, the Contoso IT team wants you, as the lead system engineer and server administrator, to evaluate how Azure services can help modernize Contoso's IT infrastructure and meet business goals, including the use of Azure Arc.
+As part of the initial design, the Contoso IT team wants you, as the lead system engineer and server administrator, to evaluate how Azure services can help modernize Contoso's IT infrastructure while meeting business goals.
 
 ## Learning objectives
 
