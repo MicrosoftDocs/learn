@@ -1,4 +1,4 @@
-Now it's your opportunity to build a multi agent solution with the Semantic Kernel Agent Framework. In this exercise, you'll create an application that automatically triages and resolves issues presented in log files of a system. Using Azure AI Agents, you'll create an incident manager agent an a devops agent that will collaborate to fix the issues.
+Now it's your opportunity to build a multi agent solution with the Semantic Kernel Agent Framework. In this exercise, you create an application that automatically triages and resolves issues presented in log files of a system. Using Azure AI Agents, you create an incident manager agent and a devops agent that collaborates to fix the issues.
 
 Launch the exercise and follow the instructions.
 
