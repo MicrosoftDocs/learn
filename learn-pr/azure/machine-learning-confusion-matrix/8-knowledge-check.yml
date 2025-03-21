@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: Multiple-choice questions
-  ms.date: 07/20/2024
+  ms.date: 03/13/2025
   author: s-polly
   ms.author: scottpolly
   ms.topic: unit
@@ -16,35 +16,35 @@ quiz:
   questions:
   - content: 'What does it mean to have an imbalanced dataset?'
     choices:
-    - content: "The number of samples is smaller or greater than is required"
+    - content: "The number of samples is smaller or greater than is required."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "The feature columns contain many missing values"
+    - content: "The feature columns contain many missing values."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "There are many more training examples that correspond to some outputs (categories) than others"
+    - content: "There are many more training examples that correspond to some outputs (categories) than others."
       isCorrect: true
-      explanation: "Correct. This can lead to the model learning to improve loss metrics by 'cheating.'"
+      explanation: "Correct. An imbalanced dataset can lead to the model learning to improve loss metrics by 'cheating.'"
   - content: 'What information can we extract from a single confusion matrix?'
     choices:
-    - content: "Log loss, and/or mean squared error"
+    - content: "Log loss, and/or mean squared error."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "Whether the dataset has overfitted the training set"
+    - content: "Whether the dataset overfitted the training set."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "What kind of mistakes the model is making"
+    - content: "What kind of mistakes the model is making."
       isCorrect: true
       explanation: "Correct."
   - content: 'Why are measures like True Positives or Accuracy not used to train our models directly?'
     choices:
-    - content: "There are mathematical barriers that prevent these being used for some training regimens"
+    - content: "There are mathematical barriers that prevent these measures from being used for some training regimens."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "Subtle model improvements often don't affect these metrics"
+    - content: "Subtle model improvements often don't affect these metrics."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "Both of the above"
+    - content: "Both of these answers."
       isCorrect: true
       explanation: "Correct. In fact, these answers are often related. Methods like gradient descent rely on measures of slope, which don't exist for nonsmooth functions like accuracy."
 
