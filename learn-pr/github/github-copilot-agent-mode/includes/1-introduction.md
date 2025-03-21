@@ -1,6 +1,6 @@
 In this module, you learn how to build an application using GitHub Copilot Agent Mode within a GitHub Codespace and the VS Code IDE. You explore how to effectively prompt Agent Mode to autonomously create new applications, use documentation files to clearly guide its behavior, and harness its powerful iteration capabilities. Specifically, you see firsthand how Copilot Agent Mode intelligently interacts with your code base to detect and fix errors, refactor existing code for better maintainability, and autonomously develop new features that allow you to focus more on innovation and less on repetitive coding tasks.
 
-## Learning Objectives  
+## Learning objectives  
 
 By the end of this module, you are able to:  
 

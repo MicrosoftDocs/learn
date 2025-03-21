@@ -10,7 +10,7 @@ metadata:
   ms.topic: module
   ms.collection:
     - github-ai-copilot
-title: Building Applications with GitHub Copilot Agent Mode
+title: Building applications with GitHub Copilot agent mode
 summary: Learn how to build applications using GitHub Copilot Agent Mode by prompting autonomous development tasks, using documentation for guidance, and understanding how Agent Mode iteratively manages, refactors, and improves your codebase.
 abstract: |
   In this module, you'll:

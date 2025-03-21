@@ -4,7 +4,7 @@ GitHub Copilot Agent Mode represents a major advancement in AI-assisted software
 
 With Agent Mode, GitHub Copilot can create applications from scratch, refactor code across multiple files, write and run tests, and migrate legacy code to modern frameworks. It can also generate documentation, integrate new libraries, and answer complex questions about a codebase. This allows you to focus on higher-level problem-solving while Copilot handles many of the repetitive or time-consuming aspects of software development.
 
-## How GitHub Copilot Agent Mode Works
+## How GitHub Copilot agent mode works
 
 One of the most powerful aspects of Agent Mode is its ability to analyze an entire codebase and determine relevant files and dependencies before making changes. Instead of relying solely on the immediate context of a single file, Agent Mode evaluates the broader structure of a project, ensuring that modifications are consistent and align with best practices. This deeper level of understanding makes Copilot capable of assisting with tasks that require a project-wide perspective, such as refactoring across multiple files or updating an entire application to use a new framework.
 
