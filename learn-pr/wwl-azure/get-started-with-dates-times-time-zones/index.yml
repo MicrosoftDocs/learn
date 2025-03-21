@@ -2,7 +2,7 @@
 uid: learn.wwl.get-started-with-dates-times-time-zones
 metadata:
   title: Get started with dates, times, and time zones
-  description: "Learn how to handle date and time effectively in C# applications。"
+  description: "Learn how to handle date and time effectively in C# applications."
   ms.date: 03/21/2025
   author: wwlpublish
   ms.author: eric
@@ -29,7 +29,7 @@ prerequisites: |
 
   -   Basic&nbsp;understanding&nbsp;of&nbsp;the&nbsp;C#&nbsp;programming&nbsp;language.
 
-  -   Familiar&nbsp;with&nbsp;classes,&nbsp;abstract&nbsp;classes,&nbsp;interfaces&nbsp;and&nbsp;inheritance
+  -   Familiar&nbsp;with&nbsp;classes,&nbsp;abstract&nbsp;classes,&nbsp;interfaces&nbsp;and&nbsp;inheritance.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
