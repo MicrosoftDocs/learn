@@ -2,7 +2,7 @@ Contoso wants to protect the servers and Kubernetes clusters that are connected 
 
 ## Azure Arc security with Microsoft Sentinel
 
-Microsoft Sentinel is an integrated SIEM (scalable, cloud-native, security information, and event management) and a SOAR (security orchestration, automation, and response) solution. Microsoft Sentinel delivers threat intelligence, providing a single solution for attack detection, proactive hunting, and threat response. It provides a birds-eye view across the enterprise which alleviates the stress of increasingly sophisticated attacks, increasing volumes of alerts, and long resolution time frames.
+Microsoft Sentinel is an integrated SIEM (scalable, cloud-native, security information, and event management) and a SOAR (security orchestration, automation, and response) solution. Microsoft Sentinel delivers threat intelligence, providing a single solution for attack detection, proactive hunting, and threat response. It provides a birds-eye view across the enterprise which helps alleviate the stress of increasingly sophisticated attacks.
 
 The benefits of Microsoft Sentinel include:
 

@@ -45,6 +45,6 @@ Deploying the Azure Monitor agent to your Arc-enabled servers lets you:
 - Perform security monitoring in Azure by using Microsoft Defender for Cloud or Microsoft Sentinel.
 - Collect inventory and track changes by using Azure Automation Change Tracking and Inventory.
 
-For Azure Arc-enabled Kubernetes, you can use Container insights, a feature of Azure Monitor that monitors the performance and health of container workloads. You can use Container insights to help you collect memory and processor metrics from controllers, nodes, and containers, in addition to gathering container logs. You can analyze the collected data for the different components in your Kubernetes clusters with a collection of views and prebuilt workbooks.
+For Azure Arc-enabled Kubernetes, you can use Container insights, a feature of Azure Monitor that monitors the performance and health of container workloads. Container insights helps you collect memory and processor metrics from controllers, nodes, and containers, in addition to gathering container logs. You can analyze the collected data for the different components in your Kubernetes clusters with a collection of views and prebuilt workbooks.
 
 You can archive collected monitoring data in Azure Storage for long term analysis or compliance purposes. You can also route this data to Azure Stream Analytics, or to other services, for further analysis.
