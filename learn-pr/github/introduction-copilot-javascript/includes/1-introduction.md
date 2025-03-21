@@ -25,12 +25,6 @@ After successfully finishing this module, you'll be capable of using a prompt to
 
 ## Prerequisites
 
-Skills:
-
 - Basic understanding of JavaScript and text editors.
-- Basic comprehension of Git and GitHub Fundamentals and running basic `git` commands like `git add` and `git push`
-
-Accounts:
-
-- [GitHub account](https://github.com/login)
-- [GitHub Copilot](https://github.com/github-copilot/signup)
+- Basic comprehension of Git and GitHub Fundamentals and running basic `git` commands like `git add` and `git push`.
+- A [GitHub account](https://github.com/login) with an active subscription for GitHub Copilot is required for either your personal GitHub account or a GitHub account managed by an organization or enterprise. For learning, the Copilot Free option with usage limits should be sufficient.

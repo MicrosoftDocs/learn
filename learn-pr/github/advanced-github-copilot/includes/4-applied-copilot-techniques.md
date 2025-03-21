@@ -21,7 +21,16 @@ with open("file.txt", "r") as file:
 
 After selecting the code and using **Ctrl+i** on Windows or **Command+i** on a Mac, you can ask GitHub Copilot to help you fix the code using the inline chat and the `/fix` slash command.
 
-If you only type `/fix`, you might get a response from GitHub Copilot similar to this: _"To fix the code, I would add parentheses after file.read to call the read method and fix the typo in the method name."_
+If you only type `/fix`, you might get a response from GitHub Copilot similar to this suggestion: _"To fix the code, I would add parentheses after file.read to call the read method and fix the typo in the method name."_
+
+Slash commands can be used to both in the inline chat and the chat interface. In addition to the `/fix` command, here are some of the most useful slash commands you can use in Copilot chat:
+
+- `/doc`: Adds comments to the specified or selected code.
+- `/explain`: Gets explanations about the code.
+- `/generate`: Generates code to answer the specified question.
+- `/help`: Gets help on how to use Copilot chat.
+- `/optimize`: Analyzes and improves the runtime of the selected code.
+- `/tests`: Creates unit tests for the selected code.
 
 Using slash commands allows for easier interaction with GitHub Copilot and helps you get better responses without having to write longer prompts.
 
@@ -31,7 +40,7 @@ Combining features like slash commands with inline chat allows you to choose the
 
 GitHub Copilot can be customized to provide suggestions based on the context you're working on. For example, you can ask GitHub Copilot to provide suggestions based on the entire workspace or the terminal output.
 
-GitHub Copilot can give you an accurate suggestion for your project without requiring you to open many files. Imagine you need to package your project using a _Dockerfile_. A _Dockerfile_ is a special file that needs to have specific instructions to package your project. You can use the `@workspace` agent to ask GitHub Copilot how to help you out. For example, open GitHub Copilot Chat and type the following:
+GitHub Copilot can give you an accurate suggestion for your project without requiring you to open many files. Imagine you need to package your project using a _Dockerfile_. A _Dockerfile_ is a special file that needs to have specific instructions to package your project. You can use the `@workspace` agent to ask GitHub Copilot how to help you out. For example, open GitHub Copilot Chat and type the following command:
 
 ```text
 @workspace I need to create a Dockerfile for this project, can you generate one that will help me package it?
@@ -44,6 +53,15 @@ As always, if the suggestions aren't exactly what you are looking for, you can r
 ```text
 @workspace help me create a Dockerfile to package this project but make sure you are using a Virtual Environment for Python.
 ```
+
+In addition to the `@workspace` agent, you can use other agents like `@terminal`, `@file`, and `@directory` to get context-specific suggestions:
+
+- `@terminal`: Provides suggestions based on the terminal output.
+    - Example: @terminal How do I fix the error message I'm seeing?
+- `@file`: Focuses on the content of a specific file.
+    - Example: @file Can you help me refactor this function in main.py?
+- `@directory`: Considers the contents of a specific directory.
+    - Example: @directory How can I optimize the scripts in the utils directory?
 
 If you're stuck or not getting the results you want, then you can reword the prompt or start writing code for Copilot to autocomplete.
 

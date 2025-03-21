@@ -61,7 +61,23 @@ Inline chat enables context-specific conversations with Copilot directly within 
 1. Use the keyboard shortcut `Ctrl+I` (Windows or Linux) or `Cmd+I` (Mac) to open inline chat.
 1. Ask questions or request changes specific to that code location.
 
-Inline chat helps you focus on a particular section of your code and get targeted advice.
+Inline chat helps you focus on a specific section of your code and receive targeted advice. Additionally, you can utilize slash commands for more efficient interaction.
+
+Slash commands are shortcuts that allow you to quickly perform actions in Copilot. These commands provide a convenient way to interact with Copilot without needing to navigate through menus.
+
+Here are some common slash commands and their usage:
+
+- `/explain` - Provides an explanation of the selected code.
+- `/suggest` - Offers code suggestions based on the current context.
+- `/test` - Generates unit tests for the selected function or class.
+- `/comment` - Converts comments into code snippets.
+
+To use a slash command, simply type the command in your editor and press `Enter`. For example:
+
+```python
+# Select the function, use the shortcut to open the inline chat, and type: /explain
+def calculate_average(numbers):
+```
 
 ## Comments to code
 
