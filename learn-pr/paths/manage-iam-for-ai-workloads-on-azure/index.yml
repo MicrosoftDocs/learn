@@ -1,0 +1,39 @@
+### YamlMime:LearningPath
+uid: learn.manage-iam-for-ai-workloads-on-azure
+metadata:
+  title: Manage Authentication, Authorization, and RBAC for AI workloads on Azure
+  description: Boost your expertise in securing Azure's AI solutions with this comprehensive learning path tailored for identity and IT professionals. Dive into securing Azure OpenAI authentication and authorization, safeguarding Azure AI services, and mastering Azure Machine Learning authentication and authorization. This learning path equips you with essential security skills, ensuring your AI-driven solutions remain resilient and compliant in today's evolving digital landscape. Start enhancing your knowledge of AI security best practices today! 
+  ms.date: 03/20/2025
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: learning-path
+title: Manage Authentication, Authorization, and RBAC for AI workloads on Azure
+prerequisites: |
+  - Experience navigating the Azure portal
+  - Familiarity with Microsoft Entra ID concepts like RBAC
+  - Basic AI knowledge and familiarity with AI services on Azure
+summary: |
+  Cloud Administrators are responsible for securing identity and RBAC for AI workloads on Azure. This learning path is designed to teach you Azure's robust identity capabilities. Through these comprehensive modules, you'll explore how to secure authentication and authorization and safeguard AI services. Equip yourself with the knowledge to confidently implement security best practices and protect your AI-driven solutions.
+iconUrl: /training/achievements/manage-iam-for-ai-workloads-on-azure.svg
+levels:
+- intermediate
+roles:
+- administrator
+- auditor
+- devops-engineer
+- identity-access-admin
+- privacy-manager
+- security-engineer
+- security-operations-analyst
+- solution-architect
+- support-engineer
+products:
+- ai-services
+- ai-machine-learning
+- identity
+modules:
+- learn.secure-azure-openai-authentication-authorization
+- learn.wwl.secure-ai-services
+- learn.introduction-to-azure-machine-learning-auth
+trophy:
+  uid: learn.manage-iam-for-ai-workloads-on-azure.trophy
