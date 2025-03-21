@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.wwl.get-started-with-dates-times-time-zones
+metadata:
+  title: Get started with dates, times, and time zones
+  description: "Learn how to handle date and time effectively in C# applications。"
+  ms.date: 03/21/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: module
+  ms.service: dotnet-csharp
+  ms.devlang: csharp
+  ai-usage: ai-assisted
+title: Get started with dates, times, and time zones
+summary: In this module, you learn how to handle date and time effectively in C# applications that focus on scheduling meetings and logging events across different time zones.
+abstract: |
+  -   Use&nbsp;`DateOnly`,&nbsp;`TimeOnly`,&nbsp;and&nbsp;`DateTime`&nbsp;classes&nbsp;to&nbsp;represent&nbsp;dates&nbsp;and&nbsp;times.
+
+  -   Perform&nbsp;time&nbsp;zone&nbsp;conversions&nbsp;and&nbsp;interval&nbsp;calculations&nbsp;using&nbsp;`DateTimeOffset`,&nbsp;`TimeZoneInfo`,&nbsp;and&nbsp;`TimeSpan`.
+
+  -   Retrieve&nbsp;and&nbsp;manipulate&nbsp;day&nbsp;of&nbsp;the&nbsp;week&nbsp;information&nbsp;using&nbsp;`DayOfWeek`.
+
+  -   Handle&nbsp;culture-specific&nbsp;data&nbsp;using&nbsp;`CultureInfo`.
+
+  -   Perform&nbsp;calendar-related&nbsp;operations&nbsp;using&nbsp;`Calendar`&nbsp;and&nbsp;define&nbsp;rules&nbsp;for&nbsp;determining&nbsp;the&nbsp;first&nbsp;week&nbsp;of&nbsp;the&nbsp;year&nbsp;using&nbsp;`CalendarWeekRule`.
+prerequisites: |
+  -   Visual&nbsp;Studio&nbsp;Code&nbsp;installed&nbsp;with&nbsp;the&nbsp;C#&nbsp;Dev&nbsp;Kit.
+
+  -   Basic&nbsp;knowledge&nbsp;of&nbsp;the&nbsp;Visual&nbsp;Studio&nbsp;Code&nbsp;IDE.
+
+  -   Basic&nbsp;understanding&nbsp;of&nbsp;the&nbsp;C#&nbsp;programming&nbsp;language.
+
+  -   Familiar&nbsp;with&nbsp;classes,&nbsp;abstract&nbsp;classes,&nbsp;interfaces&nbsp;and&nbsp;inheritance
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- dotnet
+units:
+- learn.wwl.get-started-with-dates-times-time-zones.introduction
+- learn.wwl.get-started-with-dates-times-time-zones.examine-csharp-date-time
+- learn.wwl.get-started-with-dates-times-time-zones.implement-date-time-classes
+- learn.wwl.get-started-with-dates-times-time-zones.use-csharp-datetimeoffset-timezoneinfo-timespan-class-methods
+- learn.wwl.get-started-with-dates-times-time-zones.apply-csharp-dayofweek-cultureinfo-calendar-calendarweekrule-class-methods
+- learn.wwl.get-started-with-dates-times-time-zones.exercise-example
+- learn.wwl.get-started-with-dates-times-time-zones.knowledge-check
+- learn.wwl.get-started-with-dates-times-time-zones.summary
+badge:
+  uid: learn.wwl.get-started-with-dates-times-time-zones.badge

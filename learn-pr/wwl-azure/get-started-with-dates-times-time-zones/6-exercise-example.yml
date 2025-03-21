@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-with-dates-times-time-zones.exercise-example
+title: 'Exercise: Dates, Times, and Time Zones in C#'
+metadata:
+  title: 'Exercise: Dates, Times, and Time Zones in C#'
+  description: "Exercise: Implement dates, times and time zone solutions in using C#."
+  ms.date: 03/21/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-exercise-example.md)]
