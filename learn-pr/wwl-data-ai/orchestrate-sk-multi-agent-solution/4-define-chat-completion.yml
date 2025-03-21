@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-sk-multi-agent-solution.define-chat-completion
+title: Define chat completion
+metadata:
+  title: Define chat completion
+  description: Learn how to manage the completion state of the multi-agent collaboration.
+  author: buzahid
+  ms.author: buzahid
+  ms.date: 03/14/2025
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-define-chat-completion.md)]
