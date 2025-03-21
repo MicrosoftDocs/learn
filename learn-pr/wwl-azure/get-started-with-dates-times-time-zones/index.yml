@@ -21,7 +21,7 @@ abstract: |
 
   -   Handle&nbsp;culture-specific&nbsp;data&nbsp;using&nbsp;`CultureInfo`.
 
-  -   Perform&nbsp;calendar-related&nbsp;operations&nbsp;using&nbsp;`Calendar`&nbsp;and&nbsp;define&nbsp;rules&nbsp;for&nbsp;determining&nbsp;the&nbsp;first&nbsp;week&nbsp;of&nbsp;the&nbsp;year&nbsp;using&nbsp;`CalendarWeekRule`.
+  -   Perform&nbsp;calenda-related&nbsp;operations&nbsp;using&nbsp;`Calendar`&nbsp;and&nbsp;define&nbsp;rules&nbsp;for&nbsp;determining&nbsp;the&nbsp;first&nbsp;week&nbsp;of&nbsp;the&nbsp;year&nbsp;using&nbsp;`CalendarWeekRule`.
 prerequisites: |
   -   Visual&nbsp;Studio&nbsp;Code&nbsp;installed&nbsp;with&nbsp;the&nbsp;C#&nbsp;Dev&nbsp;Kit.
 

@@ -11,3 +11,17 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/2-examine-csharp-date-time.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which class in C# would be most suitable for calculating the length of events or breaks?"
+    choices:
+    - content: "The `DateTime` class."
+      isCorrect: false
+      explanation: "Incorrect. While the `DateTime` class can represent specific points in time, it isn't primarily used for representing durations or intervals."
+    - content: "The `TimeZoneInfo` class."
+      isCorrect: false
+      explanation: "Incorrect. The `TimeZoneInfo` class is used for converting times between different time zones, not for representing durations or intervals."
+    - content: "The `TimeSpan` class."
+      isCorrect: true
+      explanation: "Correct. The `TimeSpan` class represents durations or intervals, making it useful for calculating the length of events or breaks."

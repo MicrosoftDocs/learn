@@ -1,3 +1,5 @@
+
+
 Imagine you're a programmer working on a part of a project that involves scheduling meetings and logging events across different time zones. To tackle your task, you need to understand how to handle date and time in C#. So you learn about the various classes and methods that allow you to represent, manipulate, and display date and time values effectively.
 
 ## DateOnly, TimeOnly, DateTime
@@ -65,10 +67,3 @@ Console.WriteLine($"Today is: {today}");
 The example demonstrates how to retrieve and display the current day of the week using the `DayOfWeek` enumeration. It accesses the `DayOfWeek` property from the current date and time, and outputs the result in a readable format.
 
 By understanding `DateTimeOffset`, `TimeZoneInfo`, and `TimeSpan` classes and their basic methods, you begin to build a foundation for handling date and time in your applications. These concepts help ensure accurate scheduling and logging across different time zones.
-
-## Multiple Choice
-
-Which class in C# would be most suitable for calculating the length of events or breaks?
-( ) The `DateTime` class. {{Incorrect. While the `DateTime` class can represent specific points in time, it isn't primarily used for representing durations or intervals.}}
-( ) The `TimeZoneInfo` class. {{Incorrect. The `TimeZoneInfo` class is used for converting times between different time zones, not for representing durations or intervals.}}
-(x) The `TimeSpan` class. {{Correct. The `TimeSpan` class represents durations or intervals, making it useful for calculating the length of events or breaks.}}
