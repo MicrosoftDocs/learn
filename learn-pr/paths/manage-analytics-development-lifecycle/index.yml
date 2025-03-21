@@ -27,7 +27,6 @@ subjects:
 - data-management
 modules:
 - learn.wwl.design-power-bi-application-lifecycle-management-strategy
-- learn-bizapps.power-bi-deployment-pipelines
 - learn.wwl.create-manage-power-bi-assets
 trophy:
   uid: learn.wwl.manage-analytics-development-lifecycle.trophy

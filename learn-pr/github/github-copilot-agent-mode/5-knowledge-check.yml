@@ -1,0 +1,91 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-copilot-agent-mode.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Evaluate your understanding of GitHub Copilot Agent Mode.
+  author: a-a-ron
+  ms.author: aastewar
+  ms.date: 03/17/2025
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 5
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "In what key way does GitHub Copilot Agent Mode differ from traditional AI-assisted coding tools?"
+      choices:
+        - content: "It exclusively relies on user-provided step-by-step instructions to generate code."
+          isCorrect: false
+          explanation: "Incorrect. Agent Mode autonomously analyzes and executes complex tasks without needing explicit step-by-step instructions."
+        - content: "It dynamically analyzes entire projects, autonomously performs multi-step tasks, and iteratively refines its outputs."
+          isCorrect: true
+          explanation: "Correct. GitHub Copilot Agent Mode goes beyond traditional assistants by autonomously managing comprehensive tasks and continuously improving its own solutions."
+        - content: "It primarily suggests code snippets based on the immediate context of a single open file."
+          isCorrect: false
+          explanation: "Incorrect. Agent Mode analyzes the broader context of the entire workspace, not just single-file context."
+        - content: "It provides real-time inline suggestions but cannot autonomously refactor or execute code."
+          isCorrect: false
+          explanation: "Incorrect. Agent Mode can autonomously refactor and execute code across multiple files."
+
+    - content: "Which approach describes how GitHub Copilot Agent Mode iteratively improves its generated solutions?"
+      choices:
+        - content: "It suggests initial solutions, then requires manual developer intervention to run tests and debug."
+          isCorrect: false
+          explanation: "Incorrect. Agent Mode autonomously runs tests, identifies issues, and iterates without requiring manual debugging."
+        - content: "It automatically identifies issues through testing, autonomously corrects errors, and repeats the cycle to refine the solution."
+          isCorrect: true
+          explanation: "Correct. Agent Mode employs an iterative, autonomous process to diagnose and correct errors, continuously improving its solutions."
+        - content: "It only generates code once per task and relies on manual review to make improvements."
+          isCorrect: false
+          explanation: "Incorrect. Agent Mode autonomously iterates multiple times to refine and improve the code solutions."
+        - content: "It delegates all code improvements entirely to external testing frameworks and does not autonomously address failures."
+          isCorrect: false
+          explanation: "Incorrect. Agent Mode internally diagnoses test failures and autonomously corrects issues without relying solely on external frameworks."
+
+    - content: "You instruct GitHub Copilot Agent Mode to migrate a legacy JavaScript application to a modern framework. What actions would Agent Mode likely perform autonomously?"
+      choices:
+        - content: "Provide inline code completions only for individual files without modifying dependencies or project structure."
+          isCorrect: false
+          explanation: "Incorrect. Agent Mode would autonomously modify dependencies, project structure, and files as needed for migration."
+        - content: "Identify relevant files, update dependencies, refactor existing code across multiple files, and iteratively verify changes by running tests."
+          isCorrect: true
+          explanation: "Correct. Agent Mode autonomously handles comprehensive migration tasks, including dependencies, refactoring, and testing."
+        - content: "Generate new documentation explaining why the migration should occur, but leave the actual code implementation to the developer."
+          isCorrect: false
+          explanation: "Incorrect. Agent Mode actively performs code refactoring and migration tasks rather than focusing solely on documentation."
+        - content: "Prompt the developer for manual inputs at each step of code modification without autonomously running any tests."
+          isCorrect: false
+          explanation: "Incorrect. Agent Mode autonomously manages tasks without requiring frequent manual inputs, including running tests to validate code."
+
+    - content: "What is the role of project documentation files (such as README.md) when working with GitHub Copilot Agent Mode?"
+      choices:
+        - content: "They serve exclusively as reference documents for developers and have no influence on Agent Mode's behavior."
+          isCorrect: false
+          explanation: "Incorrect. Documentation files can guide Agent Mode’s behavior by providing context and instructions for tasks."
+        - content: "They help Agent Mode understand the project's intended behavior, influencing how it autonomously executes tasks."
+          isCorrect: true
+          explanation: "Correct. Documentation files provide context and guidance that Agent Mode can leverage to perform tasks more accurately."
+        - content: "They restrict Agent Mode's access to code files, preventing unwanted modifications."
+          isCorrect: false
+          explanation: "Incorrect. Documentation does not restrict file access, but it can help direct Agent Mode’s autonomous operations."
+        - content: "Agent Mode completely ignores documentation files and relies solely on the file structure and source code."
+          isCorrect: false
+          explanation: "Incorrect. Agent Mode leverages documentation files to better understand tasks and execute actions appropriately."
+
+    - content: "What is an important limitation developers should consider when using GitHub Copilot Agent Mode?"
+      choices:
+        - content: "It requires manual configuration after every code generation to be effective."
+          isCorrect: false
+          explanation: "Incorrect. Agent Mode autonomously handles configurations based on existing project context."
+        - content: "It may struggle with highly specialized domain knowledge or nuanced business logic that lacks clear patterns."
+          isCorrect: true
+          explanation: "Correct. Agent Mode performs best with clear patterns and complete context and may struggle when domain-specific logic is unclear or undocumented."
+        - content: "It only supports generating code snippets and cannot autonomously refactor or run tests."
+          isCorrect: false
+          explanation: "Incorrect. Agent Mode fully supports autonomous refactoring, test creation, and execution."
+        - content: "It cannot analyze project structure and dependencies, relying solely on explicit developer-provided context."
+          isCorrect: false
+          explanation: "Incorrect. Agent Mode autonomously analyzes project structure and dependencies to perform tasks effectively."
