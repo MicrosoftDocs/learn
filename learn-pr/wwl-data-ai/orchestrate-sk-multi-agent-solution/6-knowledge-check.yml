@@ -20,7 +20,7 @@ quiz:
       - content: "A storage system used to manage user data" 
         isCorrect: false 
         explanation: "Incorrect. Agents do not function as data storage systems; they perform tasks based on user interaction and intent."
-        - content: "An autonomous system that interacts with users and performs specific tasks based on user input and intent" 
+      - content: "An autonomous system that interacts with users and performs specific tasks based on user input and intent." 
         isCorrect: true 
         explanation: "Correct. In the Semantic Kernel Agent Framework, agents are autonomous systems that interact with users, interpret input, and perform tasks tailored to the user's needs."
   - content: "How does the Semantic Kernel Agent Framework select the right agent for a task?" 
