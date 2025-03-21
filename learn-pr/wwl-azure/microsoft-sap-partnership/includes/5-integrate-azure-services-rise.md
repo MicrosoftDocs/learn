@@ -44,10 +44,3 @@ SAP RISE/ECS exposes the communication ports for these applications to use but h
 
 SAP RISE/ECS exposes the communication ports for these applications to use but has no knowledge about any details of the connected application or service running in a customer’s subscription. Contact SAP for any SAP license details for any implications accessing SAP data through Azure service connecting to the SAP system or database.
 
-## Next steps
-Check out the documentation:
-
-- [Integrating Azure with SAP RISE overview](./rise-integration.md)
-- [Network connectivity options in Azure with SAP RISE](./rise-integration-network.md)
-- [SAP and Microsoft integration scenarios](./integration-get-started.md)
-- [SAP Data Integration Using Azure Data Factory](https://github.com/Azure/Azure-DataFactory/blob/main/whitepaper/SAP%20Data%20Integration%20using%20Azure%20Data%20Factory.pdf)
