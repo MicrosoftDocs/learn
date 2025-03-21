@@ -1,6 +1,6 @@
-Successful startups share a number of important attributes. In this unit, you'll learn about some of the most common shared attributes of successful startups, and you can score your startup against them.
+Successful startups share a number of important attributes. In this unit, you learn about some of the most common shared attributes of successful startups, and you can score your startup against them.
 
-By understanding what makes startups succeed, you'll be able to bake some of these attributes into your startup from the very beginning.
+By understanding what makes startups succeed, you're able to bake some of these attributes into your startup from the very beginning.
 
 ## Non-obvious idea
 
