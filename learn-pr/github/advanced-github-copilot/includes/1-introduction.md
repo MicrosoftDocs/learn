@@ -13,7 +13,7 @@ In this module, you understand how you can use advanced features of GitHub Copil
 
 ## What will I learn?
 
-By the conclusion of this module, you'll acquire the skills to:
+By the conclusion of this module, you acquire the skills to:
 
 - Work with a preconfigured GitHub repository in Codespaces with the GitHub Copilot extension.
 - Use interactive features of GitHub Copilot to generate useful suggestions for an existing project.
