@@ -1,0 +1,36 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.insights-sap-use-unified-analytics-ai-platform.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/20/2025
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the main benefit of integrating Joule and Microsoft 365 Copilot?"
+    choices:
+    - content: "It enables seamless access to information from business applications in SAP and Microsoft 365 without leaving the platform they're already in."
+      isCorrect: true
+      explanation: "Correct. The integration of Joule and Microsoft 365 Copilot allows users to find information faster and execute tasks without context switching."
+    - content: "It allows users to switch between different platforms to access information."
+      isCorrect: false
+      explanation: "Incorrect. The integration is designed to prevent the need for context switching, not encourage it."
+    - content: "It restricts the AI assistants to only access data from their respective systems."
+      isCorrect: false
+      explanation: "Incorrect. The integration enables AI assistants to access data regardless of its location or the system it's stored in."
+  - content: "What is the role of Azure OpenAI in the scenario of streamlining a business process?"
+    choices:
+    - content: "Azure OpenAI provides the platform for email and Teams chat communication."
+      isCorrect: false
+      explanation: "Incorrect. While Azure OpenAI does interact with various data sources, it does not directly provide the platform for email and Teams chat communication."
+    - content: "Azure OpenAI provides the foundation for developing and training the bot that generates responses."
+      isCorrect: true
+      explanation: "Correct. Azure OpenAI is used to develop and train the AI models that generate responses in the scenario."
+    - content: "Azure OpenAI is used to establish a connection between the Power Platform and the SAP system."
+      isCorrect: false
+      explanation: "Incorrect. Azure OpenAI is not responsible for establishing connections between systems, but rather for developing and training AI models."
