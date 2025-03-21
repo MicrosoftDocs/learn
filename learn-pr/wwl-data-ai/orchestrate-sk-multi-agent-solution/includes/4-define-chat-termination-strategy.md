@@ -1,15 +1,10 @@
 Multi-turn conversations have responses returned asynchronously, so the conversation can develop naturally. However, the agents need to know when to stop a conversation, which is determined by the **termination strategy**
 
-This unit uses the example multi-agent solution where we have two agents:
-
-- A copywriter agent who writes online content, called _CopywriterAgent_.
-- A creative director only reviewing the proposals, called _ReviewingDirectorAgent_.
-
 ## Termination strategy
 
 A termination strategy ensures that conversations or tasks conclude appropriately. This strategy prevents unnecessary messages to the user, limits resource usage, and improves the overall user experience.
 
-For example, once the _ReviewingDirectorAgent_ reviews and approves our scrubbing brush slogan from the _CopywriterAgent_, us humans know the conversation should be over. However, if we don't define when to terminate the conversation, the _CopywriterAgent_ is going to keep submitting slogans unnecessarily.
+For example, in the writer-reviewer agent scenario, once the _ReviewingDirectorAgent_ reviews and approves our scrubbing brush slogan from the _CopywriterAgent_, us humans know the conversation should be over. However, if we don't define when to terminate the conversation, the _CopywriterAgent_ is going to keep submitting slogans unnecessarily.
 
 ### Why use a termination strategy?
 

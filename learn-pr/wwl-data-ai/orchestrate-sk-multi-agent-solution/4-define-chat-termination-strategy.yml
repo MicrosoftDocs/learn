@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.orchestrate-sk-multi-agent-solution.define-chat-completion
-title: Define chat completion
+uid: learn.wwl.orchestrate-sk-multi-agent-solution.define-chat-termination-strategy
+title: Define a chat termination strategy
 metadata:
-  title: Define chat completion
+  title: Define a chat termination strategy
   description: Learn how to manage the completion state of the multi-agent collaboration.
   author: buzahid
   ms.author: buzahid
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-define-chat-completion.md)]
+  [!include[](includes/4-define-chat-termination-strategy.md)]

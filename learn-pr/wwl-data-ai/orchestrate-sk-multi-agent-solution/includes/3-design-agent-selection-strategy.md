@@ -1,6 +1,6 @@
 A key part of the Semantic Kernel Agent Framework is a system designed to facilitate intelligent, multi-agent interactions. Agent collaboration, called `AgentGroupChat`, has critical components to consider that aren't necessary with single agents or non-agentic Semantic Kernel applications.
 
-Each of these sections discusses an example multi-agent solution, where we have two agents:
+The following units discuss an example multi-agent solution, where we have two agents in a writer-reviewer scenario:
 
 - A copywriter agent who writes online content, called _CopywriterAgent_.
 - A creative director only reviewing the proposals, called _ReviewingDirectorAgent_.
