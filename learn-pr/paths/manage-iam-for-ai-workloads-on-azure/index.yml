@@ -29,8 +29,9 @@ roles:
 - support-engineer
 products:
 - ai-services
-- ai-machine-learning
-- identity
+- azure-machine-learning
+- entra-id
+- azure
 modules:
 - learn.secure-azure-openai-authentication-authorization
 - learn.wwl.secure-ai-services
