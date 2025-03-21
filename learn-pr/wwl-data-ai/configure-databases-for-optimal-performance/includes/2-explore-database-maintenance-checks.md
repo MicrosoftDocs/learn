@@ -2,7 +2,7 @@ The query optimizer utilizes statistical information from the indexes to attempt
 
 Within Azure SQL maintenance tasks such as backups and integrity checks are handled for you, and while you may be able to get away with automatic updates keeping your statistics up-to-date, sometimes it's not enough.
 
-Having healthy indexes and statistics will ensure that any given plan will perform at optimal efficiency. Index maintenance should be performed regularly as data in your databases changes over time. You could change your index maintenance strategy based on the frequency of modifications to your data.
+Having healthy indexes and statistics ensure that any given plan will perform at optimal efficiency. Index maintenance should be performed regularly as data in your databases changes over time. You could change your index maintenance strategy based on the frequency of modifications to your data.
 
 ## Rebuild and reorganize
 
@@ -12,7 +12,7 @@ As data is inserted, updated, and deleted from indexes the logical ordering in t
 
 A reorganization of an index is an online operation that will defrag the leaf level of the index (both clustered and nonclustered). This defragmentation process will physically reorder the leaf-level pages to match the logical order of the nodes from left to right. During this process, the index pages are also compacted based on the configured fillfactor value.
 
-A rebuild can be either online or offline depending on the command executed or the edition of SQL Server being utilized. An offline rebuild process will drop and re-create the index itself. If you can do so online, a new index will be built in parallel to the existing index. Once the new index has been built, the existing one will be dropped and then the new one will be renamed to match the old index name. Keep in mind that the online version will require more space as the new index is built in parallel to the existing index.
+A rebuild can be either online or offline depending on the command executed or the edition of SQL Server being utilized. An offline rebuild process will drop and re-create the index itself. If you can do so online, a new index is built in parallel to the existing index. Once the new index has been built, the existing one is dropped and then the new one will be renamed to match the old index name. Keep in mind that the online version requires more space as the new index is built in parallel to the existing index.
 
 The common guidance for index maintenance is:
 
@@ -38,7 +38,7 @@ Statistics contain information about the distribution of data values within a co
 
 Cardinality estimates are then used by the query optimizer to generate the execution plan. Cardinality estimates also help the optimizer determine what type of operation (for example, index seek or scan) to use to retrieve the data requested.
 
-To see the list of user defined statistics with the last updated date, run the query below:
+To see the list of user defined statistics with the last updated date, run the following query:
 
 ```sql
 SELECT sp.stats_id, 
@@ -57,7 +57,7 @@ When you have `AUTO_CREATE_STATISTICS` option to `ON`, the query optimizer creat
 
 These methods provide high-quality query plans for most queries. At times, you may need to create more statistics using `CREATE STATISTICS` statement to improve specific query plans.
 
-It's recommended to keep the `AUTO_CREATE_STATISTICS` option enabled as it will allow the query optimizer to create statistics for query predicate columns automatically.
+It's recommended to keep the `AUTO_CREATE_STATISTICS` option enabled as it allows the query optimizer to create statistics for query predicate columns automatically.
 
 Whenever you encounter the following situations, consider creating statistics:
 
