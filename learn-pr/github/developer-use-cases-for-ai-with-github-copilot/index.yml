@@ -2,7 +2,7 @@
 uid: learn.github.developer-use-cases-for-ai-with-github-copilot
 metadata:
   title: Developer use cases for AI with GitHub Copilot
-  description: Developer Use Cases for AI with GitHub Copilot explores ways developers can apply AI using GitHub Copilot to enhance productivity, ultimately enabling teams to save time, improve code quality, and boost developer satisfaction.
+  description: Developer Uses Cases for AI with GitHub Copilot explores ways developers can apply AI using GitHub Copilot to enhance productivity, ultimately enabling teams to save time, improve code quality, and boost developer satisfaction.
   ms.date: 10/09/2024
   author: a-a-ron
   ms.author: aastewar
@@ -12,7 +12,7 @@ metadata:
 title: Developer use cases for AI with GitHub Copilot
 summary: This module explores how GitHub Copilot streamlines developer productivity through AI-powered features. It enhances the Software Development Life Cycle (SDLC), aligns with developer preferences, and identifies key limitations. Additionally, it measures productivity gains effectively.
 abstract: |
-  By the end of this module, you are able to:
+  By the end of this module, you're able to:
     - Identify specific ways GitHub Copilot integrates seamlessly into developer workflows, enhancing the overall development experience and supporting individual coding preferences.
     - Explore GitHub Copilot's potential impact on different stages of the Software Development Lifecycle.
     - Evaluate the limitations of AI-assisted coding and measure its impact on development efficiency
