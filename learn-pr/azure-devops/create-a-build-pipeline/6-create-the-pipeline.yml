@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise - Create the pipeline
   description: Create an Azure Pipelines project and produce your first build artifact.
-  ms.date: 09/13/2024
+  ms.date: 03/21/2025
   ms.custom: devdivchpfy22, engagement-fy23
   author: steved0x
   ms.author: sdanie
