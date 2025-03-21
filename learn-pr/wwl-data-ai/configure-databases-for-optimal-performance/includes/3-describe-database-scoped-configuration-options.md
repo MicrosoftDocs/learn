@@ -1,4 +1,4 @@
-SQL Server has always had configuration options that were set at the database level. For example, the recovery model has always been a database setting, but as more complex features have been introduced to the database, more options have been added. Many of these options are tied to the compatibility level of the database, which is itself a database level configuration option. Database configuration options break down into two groups, with a minor difference:
+SQL Server has always offered configuration options at the database level. For example, the recovery model has traditionally been a database setting. As more complex features have been introduced, extra options have been added. Many of these options are linked to the database's compatibility level, which is also a database-level configuration setting. These configuration options can be categorized into two groups, with a minor distinction.
 
 - Options configured by the `ALTER DATABASE SCOPED CONFIGURATION` syntax in T-SQL
 
@@ -34,4 +34,4 @@ Each database has its own compatibility level, which controls the behavior of th
 
 You can manage this setting when upgrading SQL Server to ensure that your queries have similar execution plans to the older version.
 
-Microsoft will support running on an older compatibility level for an extended period. You should upgrade to a newer compatibility level if possible, as many of the new features in Intelligent Query Processing are only available in compatibility level 140 or 150.
+Microsoft supports running on an older compatibility level for an extended period. You should upgrade to a newer compatibility level if possible, as many of the new features in Intelligent Query Processing are only available in compatibility level 140 or 150.
