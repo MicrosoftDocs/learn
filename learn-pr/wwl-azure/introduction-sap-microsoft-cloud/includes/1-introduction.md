@@ -2,15 +2,8 @@ SAP, a platform that supports a significant portion of global commerce, is incre
 
 Imagine you're a global enterprise that relies heavily on SAP for your business processes. You're looking to transition to the cloud to apply its scalability, security, and advanced capabilities. However, you're concerned about the complexity of managing and securing your enterprise applications in the cloud. You also want to ensure that your SAP applications can take full advantage of the cloud's capabilities, such as AI, machine learning, and large-scale data storage and analysis. Furthermore, you want to create a unified, collaborative environment for information access and sharing by integrating with other Microsoft services like Microsoft 365 and Teams.
 
-The topics covered in this module include:
-- Introduction to SAP and Microsoft Integration Scenarios
-- Integrating SAP Business Technology Platform with Azure Cloud
-- Integrating SAP Business Technology Platform with Azure: Identity Provider Setup, Data Integration, Workflow Automation, and API Management
-- Integrating SAP Business Technology Platform with Azure Cloud
-- Implementing Universal Print for SAP Front-End Printing
-
 After completing this module, you’ll be able to: 
-- Understand the benefits of integrating SAP BTP with Azure, including enhanced performance, security, and scalability of enterprise applications. 
+- Understand the benefits of integrating SAP BTP with Azure including security and scalability of enterprise applications. 
 - Set up Microsoft Entra ID as an Identity Provider to protect sensitive data and comply with industry regulations. 
 - Configure Azure Data Factory for data integration across digital transformation initiatives. 
 - Use Azure Logic Apps for workflow automation and Azure API Management to secure and manage APIs. 

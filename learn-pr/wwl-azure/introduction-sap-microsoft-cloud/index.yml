@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-sap-microsoft-cloud
 metadata:
   title: Introduction to SAP on Microsoft Cloud
   description: "In this module, you learn about integrating SAP Business Technology Platform with Azure Cloud, including identity provider setup, data Integration, and implementing Universal Print for SAP front-end printing."
-  ms.date: 03/20/2025
+  ms.date: 03/21/2025
   author: wwlpublish
   ms.author: bradj
   ms.topic: module
