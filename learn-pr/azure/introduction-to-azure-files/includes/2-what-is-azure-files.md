@@ -26,7 +26,7 @@ The following table helps you to better understand each of the tiers.
 
 | Share type | Tier | Description |
 |---|---|---|
-| **Premium (SSD)** | Premium | Premium file shares enable highly I/O-intensive workloads with high throughput and low latency. Premium file shares require a FileStorage storage account type and are only available in a provisioned billing model. |
+| **Premium (SSD)** | Premium | Premium file shares enable highly I/O-intensive workloads with high throughput and low latency. Premium file shares require a FileStorage storage account kind and are only available in a provisioned billing model. |
 | **Standard (HDD)** | Transaction optimized | Transaction-optimized file shares enable transaction-heavy workloads that don't need the consistently low latency premium file shares offer. Transaction-optimized file shares are a great fit for applications that require file storage or for backend storage. |
 | **Standard (HDD)** | Hot | Hot file shares are optimized for general-purpose file-sharing scenarios such as team shares. |
 | **Standard (HDD)** | Cool | Cool file shares offer cost-efficient storage optimized for online archive storage scenarios. This tier is the best for data at rest. |
