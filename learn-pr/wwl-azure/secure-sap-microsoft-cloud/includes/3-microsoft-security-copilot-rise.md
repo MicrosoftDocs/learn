@@ -3,13 +3,13 @@
 [Security Copilot](/copilot/security/microsoft-security-copilot) is a generative AI security product that empowers security and IT professionals respond to cyber threats, process signals, and assess risk exposure at the speed and scale of AI. It has its own and embedded experiences in Microsoft Defender XDR, Microsoft Sentinel, and Intune.
 
 ### How does Security Copilot work?
-Security Copilot capabilities can be accessed through a standalone experience and through embedded experiences in other Microsoft security products. The foundation language model and proprietary Microsoft technologies work together in an underlying system that helps increase the efficiency and capabilities of defenders.
+Security Copilot capabilities can be accessed through a standalone experience and through embedded experiences in other Microsoft security products. The foundation language model and proprietary Microsoft technologies work together in an underlying system that helps increase the efficiency and capabilities of Defenders.
 
-- Microsoft security solutions such as Microsoft Defender XDR, Microsoft Sentinel, Microsoft Intune integrate seamlessly with Security Copilot. embedded experiences available in Microsoft security solutions  give access to Security Copilot and prompting capabilities in the context of their work within those solutions.
+- Microsoft security solutions such as Microsoft Defender XDR, Microsoft Sentinel, Microsoft Intune integrate seamlessly with Security Copilot. Embedded experiences available in Microsoft security solutions  give access to Security Copilot and prompting capabilities in the context of their work within those solutions.
 - Plugins from Microsoft and third-party security products are a means to extend and integrate services with Security Copilot. Plugins bring more context from event logs, alerts, incidents, and policies from both Microsoft security products and supported third-party solutions such as ServiceNow.
 - Security Copilot also has access to threat intelligence and authoritative content through plugins. Plugins can search across Microsoft Defender Threat Intelligence articles and intel profiles, Microsoft Defender XDR threat analytics reports, and vulnerability disclosure publications, among others.
 
-:::image type="content" source="../media/security-copilot-diagram.png" alt-text="Image of how Security Copilot works with other products.":::
+:::image type="content" source="../media/security-copilot-diagram.png" alt-text="Diagram showing how Security Copilot works with other products.":::
 
 Here's an explanation of how Security Copilot works:
 
