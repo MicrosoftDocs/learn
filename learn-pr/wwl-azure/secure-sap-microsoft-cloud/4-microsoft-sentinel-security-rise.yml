@@ -4,10 +4,10 @@ title: Microsoft Sentinel with SAP RISE
 metadata:
   title: Microsoft Sentinel with SAP RISE
   description: "Microsoft Sentinel with SAP RISE"
-  ms.date: 03/20/2025
+  ms.date: 03/24/2025
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
-durationInMinutes: 7
+durationInMinutes: 10
 content: |
   [!include[](includes/4-microsoft-sentinel-security-rise.md)]

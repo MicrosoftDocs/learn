@@ -4,10 +4,10 @@ title: 'Azure identity services with SAP RISE '
 metadata:
   title: Azure identity services with SAP RISE
   description: "Azure identity services with SAP RISE"
-  ms.date: 03/20/2025
+  ms.date: 03/24/2025
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
-durationInMinutes: 8
+durationInMinutes: 10
 content: |
   [!include[](includes/2-azure-identity-services-rise.md)]

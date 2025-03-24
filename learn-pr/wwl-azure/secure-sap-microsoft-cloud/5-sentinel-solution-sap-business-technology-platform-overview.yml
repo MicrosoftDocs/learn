@@ -4,10 +4,10 @@ title: Microsoft Sentinel Solution for SAP BTP overview
 metadata:
   title: Microsoft Sentinel Solution for SAP BTP overview
   description: "Microsoft Sentinel Solution for SAP BTP overview"
-  ms.date: 03/20/2025
+  ms.date: 03/24/2025
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
-durationInMinutes: 9
+durationInMinutes: 14
 content: |
   [!include[](includes/5-sentinel-solution-sap-business-technology-platform-overview.md)]
