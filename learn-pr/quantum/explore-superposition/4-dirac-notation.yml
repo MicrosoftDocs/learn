@@ -7,9 +7,9 @@ metadata:
   title: Dirac notation and operators
   description: Learn how to represent a qubit using Dirac notation.
   ms.date: 01/22/2025
-  author: SoniaLopezBravo
-  ms.author: sonialopez
-  manager: tedhudek
+  author: azure-quantum-content
+  ms.author: quantumdocwriters
+  
   ms.topic: unit
 durationInMinutes: 5
 content: |
