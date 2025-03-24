@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Describe Azure Arc-enabled data services
   description: Describe Azure Arc-enabled data services
-  ms.date: 12/07/2023
+  ms.date: 03/21/2025
   author: MikeRayMSFT
   ms.author: mikeray
   ms.topic: unit

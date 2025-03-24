@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Data imbalances
   description: Conceptual unit about data imbalances in machine learning
-  ms.date: 07/20/2024
+  ms.date: 03/13/2025
   author: s-polly
   ms.author: scottpolly
   ms.topic: unit

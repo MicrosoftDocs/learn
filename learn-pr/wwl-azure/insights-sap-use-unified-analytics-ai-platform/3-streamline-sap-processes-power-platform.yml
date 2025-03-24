@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.insights-sap-use-unified-analytics-ai-platform.streamline-sap-processes-power-platform
+title: Streamline SAP processes with Microsoft Copilot Studio and Power Platform
+metadata:
+  title: Streamline SAP processes with Microsoft Copilot Studio and Power Platform
+  description: "Streamline SAP processes with Microsoft Copilot Studio and Power Platform"
+  ms.date: 03/20/2025
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-streamline-sap-processes-power-platform.md)]

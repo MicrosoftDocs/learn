@@ -6,9 +6,9 @@ metadata:
   prefetch-feature-rollout: true
   title: Understand Large Language Models (LLMs)
   description: "Understand Large Language Models (LLMs)"
-  ms.date: 08/12/2024
+  ms.date: 03/20/2025
   author: wwlpublish
-  ms.author: madiepev
+  ms.author: theresai
   ms.topic: unit
 azureSandbox: false
 labModal: false

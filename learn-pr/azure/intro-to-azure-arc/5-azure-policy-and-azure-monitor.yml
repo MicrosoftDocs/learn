@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Describe Azure Arc integration with Azure Policy and Azure Monitor
   description: Describe Azure Arc integration with Azure Policy and Azure Monitor
-  ms.date: 12/07/2023
+  ms.date: 03/21/2025
   author: JnHs
   ms.author: jenhayes
   ms.topic: unit
