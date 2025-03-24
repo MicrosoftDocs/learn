@@ -51,7 +51,7 @@ GROW with SAP is a bundled set of solutions designed to speed up the move to the
 
 SAP GROW features include:
 
-**Inclusive Offering:** GROW with SAP includes SAP S/4HANA Cloud, public edition, SAP Business Technology Platform, packaged activation services, and expert and user support through SAP Community and the SAP Learning portfolio.
+- **Inclusive Offering**: GROW with SAP includes SAP S/4HANA Cloud, public edition, SAP Business Technology Platform, packaged activation services, and expert and user support through SAP Community and the SAP Learning portfolio.
 
-**Differentiating GROW and RISE:** GROW with SAP isn't a product or software but a bundled set of solutions aimed at accelerating the adoption of S/4HANA public cloud. RISE with SAP is SAP’s digital-transformation-as-a-service offering, designed to help organizations transition their existing SAP ERP systems to the cloud, specifically to SAP S/4HANA Cloud. RISE with SAP includes  software, services, and tools to simplify the migration process, reduce complexity, and accelerate the path to cloud-based solutions.
+- **Differentiating GROW and RISE**: GROW with SAP isn't a product or software but a bundled set of solutions aimed at accelerating the adoption of S/4HANA public cloud. RISE with SAP is SAP’s digital-transformation-as-a-service offering, designed to help organizations transition their existing SAP ERP systems to the cloud, specifically to SAP S/4HANA Cloud. RISE with SAP includes  software, services, and tools to simplify the migration process, reduce complexity, and accelerate the path to cloud-based solutions.
 
