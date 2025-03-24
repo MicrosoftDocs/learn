@@ -307,6 +307,10 @@
         "source_path_from_root": "/learn-pr/achievements/learn.wwl.describe-compliance-management-capabilities-microsoft-365.badge.yml",
         "redirect_url": "/training/modules/describe-purview-risk-compliance-governance/",
         "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/paths/purview-implement-manage-dlp-retention/index.yml",
+        "redirect_url": "/training/paths/purview-implement-manage-dlp/"
       } 
     ]
 }

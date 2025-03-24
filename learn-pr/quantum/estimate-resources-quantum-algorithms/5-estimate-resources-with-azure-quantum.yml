@@ -7,9 +7,9 @@ metadata:
   title: Exercise - Estimate resources for a real-world problem
   description: Learn how to run a QIR quantum algorithm on the Azure Quantum Resource Estimator. 
   ms.date: 01/22/2025
-  author: SoniaLopezBravo
-  ms.author: sonialopez
-  manager: tedhudek
+  author: azure-quantum-content
+  ms.author: quantumdocwriters
+  
   ms.topic: unit
   show_latex: true
 durationInMinutes: 10

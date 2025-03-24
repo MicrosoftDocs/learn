@@ -7,9 +7,9 @@ metadata:
   title: Exercise - Get started with the Azure Quantum Resource Estimator
   description: Learn to enable the Azure Quantum Resource Estimator and how to submit a job.
   ms.date: 01/22/2025
-  author: SoniaLopezBravo
-  ms.author: sonialopez
-  manager: tedhudek
+  author: azure-quantum-content
+  ms.author: quantumdocwriters
+  
   ms.topic: unit
 durationInMinutes: 8
 content: |

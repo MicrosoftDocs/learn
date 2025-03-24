@@ -6,8 +6,8 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your understanding so far.
-  author: SoniaLopezBravo
-  ms.author: sonialopez
+  author: azure-quantum-content
+  ms.author: quantumdocwriters
   ms.date: 12/13/2023
   ms.topic: unit
   show_latex: true
