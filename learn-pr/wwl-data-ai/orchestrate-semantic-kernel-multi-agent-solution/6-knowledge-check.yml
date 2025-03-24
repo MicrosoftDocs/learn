@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-sk-multi-agent-solution.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This unit contains a knowledge check which can help learners reinforce their understanding of the material.
+  author: buzahid
+  ms.author: buzahid
+  ms.date: 03/14/2025
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "Which of the following options best describes an agent in the Semantic Kernel Agent Framework?" 
+    choices:
+      - content: "A human-controlled interface for interacting with AI models" 
+        isCorrect: false 
+        explanation: "Incorrect. Agents in the framework aren't human-controlled; they're autonomous systems designed to process input and complete tasks."
+      - content: "A storage system used to manage user data" 
+        isCorrect: false 
+        explanation: "Incorrect. Agents don't function as data storage systems; they perform tasks based on user interaction and intent."
+      - content: "An autonomous system that interacts with users and performs specific tasks based on user input and intent." 
+        isCorrect: true 
+        explanation: "Correct. In the Semantic Kernel Agent Framework, agents are autonomous systems that interact with users, interpret input, and perform tasks tailored to the user's needs."
+  - content: "How does the Semantic Kernel Agent Framework select the right agent for a task?" 
+    choices:  
+      - content: "By random selection" 
+        isCorrect: false 
+        explanation: "Incorrect. Agent selection isn't random; it's based on analyzing user intent and routing according to specific rules."
+      - content: "Based on the user's intent and predefined rules" 
+        isCorrect: true 
+        explanation: "Correct. The framework uses intent recognition and predefined rules to route queries to the most relevant agent."
+      - content: "By the agent's physical location" 
+        isCorrect: false 
+        explanation: "Incorrect. Agent selection isn't based on physical location but on task relevance and expertise."
+  - content: "What is the role of the Termination Strategy in the Semantic Kernel Agent Framework?" 
+    choices:
+      - content: "It determines when a conversation or task should end" 
+        isCorrect: true 
+        explanation: "Correct. The Termination Strategy ensures conversations or tasks are properly concluded, preventing unnecessary messages or prolonged interactions."
+      - content: "It defines the flow of conversation" 
+        isCorrect: false 
+        explanation: "Incorrect. The flow of conversation is managed by the selection strategy, not the termination strategy."
+      - content: "It decides which agent takes the next turn" 
+        isCorrect: false 
+        explanation: "Incorrect. The next agent to respond is determined by the selection strategy, not the termination strategy."
