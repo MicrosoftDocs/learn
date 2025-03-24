@@ -1,4 +1,4 @@
-Recall from the example scenario that your customers use one of the company's websites to manage and check the status of their shipments. This website is deployed to virtual machines and hosted on-premises. 
+Recall from the example scenario that your customers use one of the company's websites to manage and check the status of their shipments. This website is deployed to virtual machines and hosted on-premises.
 
 You notice that users of the website have significant delays in response times when the overall CPU usage of the virtual machines exceeds 75 percent. You need the Virtual Machine Scale Set that hosts your web application to scale when the system hits this threshold. To save costs, you also want to scale back in when demand falls and the overall CPU usage across the scale set drops below 50 percent.
 
