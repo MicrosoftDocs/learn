@@ -10,6 +10,7 @@ The solution allows you to gain visibility to user activities on SAP RISE/ECS an
 -	Visualize the data with [built-in workbooks](/azure/sentinel/sap/sap-audit-log-workbook).
 
 :::image type="content" source="../media/sap-rise-sentinel.png" alt-text="Diagram that shows how to connect Microsoft Sentinel with SAP RISE/ECS." lightbox="../media/sap-rise-sentinel.png":::
+
 This diagram shows an example of Microsoft Sentinel connected through an intermediary VM or container to SAP managed SAP system. The intermediary VM or container runs in customer's own subscription with configured SAP data connector agent. Connection to SAP Business Technology Platform (BTP) uses SAP's public APIs for the Audit Log Management Service.
 
 For SAP RISE/ECS, the Microsoft Sentinel solution must be deployed in customer's Azure subscription. All parts of the Microsoft Sentinel solution are managed by customer and not by SAP. Private network connectivity from customer's vnet is needed to reach the SAP landscapes managed by SAP RISE/ECS. Typically, this connection is over the established vnet peering or through alternatives described in this document.
