@@ -39,7 +39,7 @@ Data Factory provides a data integration and transformation layer that works acr
 
 Azure API Management is made up of an API gateway, a management plane, and a developer portal, with features designed for different audiences in the API ecosystem. These components are Azure-hosted and fully managed by default. API Management is available in various tiers differing in capacity and features.
 
-:::image type="content" source="../media/azure-api-management-overview.png" alt-text="Screenshot of unified API management process":::
+:::image type="content" source="../media/azure-api-management-overview.png" alt-text="Screenshot of unified API management process.":::
 
 - Create an API Management instance in Azure.
 

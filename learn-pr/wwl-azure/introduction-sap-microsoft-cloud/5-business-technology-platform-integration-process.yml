@@ -4,10 +4,10 @@ title: Business Technology Platform (BTP) integration process
 metadata:
   title: Business Technology Platform (BTP) integration process
   description: "Business Technology Platform (BTP) integration process"
-  ms.date: 03/21/2025
+  ms.date: 03/24/2025
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
-durationInMinutes: 5
+durationInMinutes: 7
 content: |
   [!include[](includes/5-business-technology-platform-integration-process.md)]

@@ -4,10 +4,10 @@ title: Get started with SAP and Microsoft integration scenarios
 metadata:
   title: Get started with SAP and Microsoft integration scenarios
   description: "Get started with SAP and Microsoft integration scenarios"
-  ms.date: 03/21/2025
+  ms.date: 03/24/2025
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
-durationInMinutes: 12
+durationInMinutes: 16
 content: |
   [!include[](includes/2-get-started-microsoft-sap-integration-scenarios.md)]

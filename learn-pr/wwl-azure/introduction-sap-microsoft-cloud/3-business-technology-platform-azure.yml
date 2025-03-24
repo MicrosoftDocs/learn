@@ -4,10 +4,10 @@ title: Using SAP Business Technology Platform (BTP) on Azure Cloud
 metadata:
   title: Using SAP Business Technology Platform (BTP) on Azure Cloud
   description: "Using SAP Business Technology Platform (BTP) on Azure Cloud"
-  ms.date: 03/21/2025
+  ms.date: 03/24/2025
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit
-durationInMinutes: 8
+durationInMinutes: 12
 content: |
   [!include[](includes/3-business-technology-platform-azure.md)]
