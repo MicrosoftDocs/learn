@@ -2,7 +2,7 @@ Azure Arc enables organizations like Contoso to extend Azure capabilities to com
 
 Similarly, Contoso could use Azure Monitor to help monitor and manage their existing on-premises server resources that are connected through Azure Arc. Azure Monitor Container Insights can help Contoso collect health and resource utilization data for their Azure Arc-enabled Kubernetes clusters.
 
-:::image type="content" source="../media/5-insights-map.png" alt-text="Screenshot that depicts the Map tab on the Insights page for a VM in Azure. ContosoVM1 is displayed with details of open TCP ports. A VM summary is also displayed." border="false" lightbox="../media/5-insights-map.png":::
+:::image type="content" source="../media/5-insights-map.png" alt-text="Screenshot that depicts the Map tab on the Insights page for a virtual machine (VM) in Azure. ContosoVM1 is displayed with details of open Transmission Control Protocol (TCP) ports along with a VM summary." border="false" lightbox="../media/5-insights-map.png":::
 
 ## How can you use Azure Policy?
 
@@ -38,13 +38,13 @@ You can use Monitor to optimize the administration of your existing deployments 
 
 You can collect and monitor metrics, activity and diagnostic logs, and events for Arc-enabled servers. Azure Monitor can collect data directly from your connected machines into a Log Analytics workspace for detailed analysis and correlation.
 
-Deploying the Azure Monitor agent to your Arc-enabled servers lets you do the following:
+Deploying the Azure Monitor agent to your Arc-enabled servers lets you:
 
-- Monitor the operating system and any workloads running on the machine or server using VM insights
-- Analyze and alert using Azure Monitor
-- Perform security monitoring in Azure by using Microsoft Defender for Cloud or Microsoft Sentinel
-- Collect inventory and track changes by using Azure Automation Change Tracking and Inventory
+- Monitor the operating system and any workloads running on the machine or server using VM insights.
+- Analyze and alert using Azure Monitor.
+- Perform security monitoring in Azure by using Microsoft Defender for Cloud or Microsoft Sentinel.
+- Collect inventory and track changes by using Azure Automation Change Tracking and Inventory.
 
-For Azure Arc-enabled Kubernetes, you can use Container insights, a feature of Azure Monitor that monitors the performance and health of container workloads. Container insights helps to collect memory and processor metrics from controllers, nodes, and containers, in addition to gathering container logs. You can analyze the collected data for the different components in your Kubernetes clusters with a collection of views and pre-built workbooks.
+For Azure Arc-enabled Kubernetes, you can use Container insights, a feature of Azure Monitor that monitors the performance and health of container workloads. Container insights helps you collect memory and processor metrics from controllers, nodes, and containers, in addition to gathering container logs. You can analyze the collected data for the different components in your Kubernetes clusters with a collection of views and prebuilt workbooks.
 
 You can archive collected monitoring data in Azure Storage for long term analysis or compliance purposes. You can also route this data to Azure Stream Analytics, or to other services, for further analysis.
