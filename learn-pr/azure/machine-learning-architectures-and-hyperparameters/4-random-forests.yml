@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Random forests and selecting architectures
   description: Conceptual unit about random forests and selecting architectures
-  ms.date: 07/21/2024
+  ms.date: 03/24/2025
   author: s-polly
   ms.author: scottpolly
   ms.topic: unit
