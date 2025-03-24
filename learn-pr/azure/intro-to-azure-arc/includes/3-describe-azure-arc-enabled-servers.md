@@ -2,7 +2,7 @@ You can use Azure Arc-enabled servers to manage server-based resources that run 
 
 ## What is Azure Arc-enabled servers?
 
-Azure Arc-enabled servers allows you to manage all your servers as if they're Azure resources in one of your resource groups. Your managed servers can be:
+Azure Arc-enabled servers lets you manage all your servers as if they're Azure resources in one of your resource groups. Your managed servers can be:
 
 - Physical computers.
 - VMs hosted in an on-premises datacenter.

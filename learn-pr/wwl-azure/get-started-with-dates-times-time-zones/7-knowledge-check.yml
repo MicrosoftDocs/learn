@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-with-dates-times-time-zones.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/24/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which class in C# is used to represent a specific time of day without a date?"
+    choices:
+    - content: "DateOnly"
+      isCorrect: false
+      explanation: "Incorrect. The DateOnly class is used to represent dates without considering the time of day."
+    - content: "TimeOnly"
+      isCorrect: true
+      explanation: "Correct. The TimeOnly class is designed to represent a specific time of day without a date."
+    - content: "DateTime"
+      isCorrect: false
+      explanation: "Incorrect. The DateTime class represents both date and time, not just a specific time of day."
+  - content: "Which class is used to schedule a meeting that accounts for different time zones?"
+    choices:
+    - content: "DateTime"
+      isCorrect: false
+      explanation: "Incorrect. While DateTime can represent date and time, it does not account for different time zones."
+    - content: "DateTimeOffset"
+      isCorrect: true
+      explanation: "Correct. DateTimeOffset includes an offset from UTC, making it suitable for applications that need to account for different time zones."
+    - content: "TimeSpan"
+      isCorrect: false
+      explanation: "Incorrect. TimeSpan represents durations or intervals, not specific points in time across different time zones."
+  - content: "A programmer needs to calculate the duration of an event in C#. Which class should they use?"
+    choices:
+    - content: "TimeSpan"
+      isCorrect: true
+      explanation: "Correct. TimeSpan is used to represent durations or intervals, making it ideal for calculating the length of events."
+    - content: "DateTime"
+      isCorrect: false
+      explanation: "Incorrect. DateTime represents specific points in time, not durations."
+    - content: "DateTimeOffset"
+      isCorrect: false
+      explanation: "Incorrect. DateTimeOffset includes time zone information but is not used for representing durations."
