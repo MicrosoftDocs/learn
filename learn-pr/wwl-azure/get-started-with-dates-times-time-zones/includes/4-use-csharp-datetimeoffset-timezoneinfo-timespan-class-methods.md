@@ -1,6 +1,6 @@
 In this learning unit, you explore how to use various methods of the DateTimeOffset, TimeZoneInfo, and TimeSpan classes in a .NET application using Visual Studio Code. These classes are essential for handling date and time information accurately and efficiently in your applications.
 
-## Date and Time with offsets, zone conversions, and interval samples
+## Date and time with offsets, zone conversions, and interval samples
 
 ### DateTimeOffset methods
 

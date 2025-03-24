@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/21/2025
+  ms.date: 03/24/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -14,7 +14,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which class in C# would you use to represent a specific time of day without a date?"
+  - content: "Which class in C# is used to represent a specific time of day without a date?"
     choices:
     - content: "DateOnly"
       isCorrect: false
@@ -25,7 +25,7 @@ quiz:
     - content: "DateTime"
       isCorrect: false
       explanation: "Incorrect. The DateTime class represents both date and time, not just a specific time of day."
-  - content: "You need to schedule a meeting that accounts for different time zones. Which class should you use?"
+  - content: "Which class is used to schedule a meeting that accounts for different time zones?"
     choices:
     - content: "DateTime"
       isCorrect: false

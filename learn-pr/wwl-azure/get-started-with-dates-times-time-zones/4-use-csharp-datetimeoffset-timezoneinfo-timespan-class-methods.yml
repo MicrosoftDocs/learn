@@ -4,7 +4,7 @@ title: Use DateTimeOffset, TimeZoneInfo, and TimeSpan in C#
 metadata:
   title: Use DateTimeOffset, TimeZoneInfo, and TimeSpan in C#
   description: "Explore methods for handling date and time with offsets, time zone conversions, and intervals in .NET applications."
-  ms.date: 03/21/2025
+  ms.date: 03/24/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

@@ -7,8 +7,8 @@ After completing this module, you're now able to:
 - Utilize `DayOfWeek`, `CultureInfo`, `Calendar`, and `CalendarWeekRule` for culture-specific operations and date calculations.
 - Implement these classes in .NET applications using Visual Studio Code to manage date and time data effectively.
 
-Further Reading:
+## Further reading
 
 - [Microsoft Documentation on Date and Time in .NET](/dotnet/standard/datetime/)
-- [Handling Time Zones in .NET](/dotnet/standard/datetime/handling-time-zones)
+- [Use time zones in date and time arithmetic](/dotnet/standard/datetime/use-time-zones-in-arithmetic)
 - [Globalization and Localization in .NET](/dotnet/standard/globalization-localization/)

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-with-dates-times-time-zones.implement-date-time-classes
-title: Implement Date and Time Classes in C#
+title: Implement date and time classes in C#
 metadata:
-  title: Implement Date and Time Classes in C#
+  title: Implement date and time classes in C#
   description: "Learn about C# classes like DateOnly, TimeOnly, DateTime, DateTimeOffset, TimeZoneInfo, and TimeSpan for handling date and time."
-  ms.date: 03/21/2025
+  ms.date: 03/24/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
