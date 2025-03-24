@@ -28,6 +28,6 @@ modules:
 - learn.wwl.ai-agent-fundamentals
 - learn.wwl.develop-ai-agent-azure
 - learn.wwl.build-agent-with-custom-tools
-- learn.wwl.orchestrate-semantic-kernel-multi-agent-solution
+- learn.wwl.orchestrate-sk-multi-agent-solution
 trophy:
   uid: learn.wwl.develop-ai-agent-on-azure.trophy
