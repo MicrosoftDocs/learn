@@ -13,23 +13,23 @@ metadata:
 title: Get started with dates, times, and time zones
 summary: In this module, you learn how to handle date and time effectively in C# applications that focus on scheduling meetings and logging events across different time zones.
 abstract: |
-  -   Use&nbsp;`DateOnly`,&nbsp;`TimeOnly`,&nbsp;and&nbsp;`DateTime`&nbsp;classes&nbsp;to&nbsp;represent&nbsp;dates&nbsp;and&nbsp;times.
+  - Use `DateOnly`, `TimeOnly`, and `DateTime` classes to represent dates and times.
 
-  -   Perform&nbsp;time&nbsp;zone&nbsp;conversions&nbsp;and&nbsp;interval&nbsp;calculations&nbsp;using&nbsp;`DateTimeOffset`,&nbsp;`TimeZoneInfo`,&nbsp;and&nbsp;`TimeSpan`.
+  - Perform time zone conversions and interval calculations using `DateTimeOffset`, `TimeZoneInfo`, and `TimeSpan`.
 
-  -   Retrieve&nbsp;and&nbsp;manipulate&nbsp;day&nbsp;of&nbsp;the&nbsp;week&nbsp;information&nbsp;using&nbsp;`DayOfWeek`.
+  - Retrieve and manipulate day of the week information using `DayOfWeek`.
 
-  -   Handle&nbsp;culture-specific&nbsp;data&nbsp;using&nbsp;`CultureInfo`.
+  - Handle culture-specific data using `CultureInfo`.
 
-  -   Perform&nbsp;calendar-related operations&nbsp;using&nbsp;`Calendar`&nbsp;and&nbsp;define&nbsp;rules&nbsp;for&nbsp;determining&nbsp;the&nbsp;first&nbsp;week&nbsp;of&nbsp;the&nbsp;year&nbsp;using&nbsp;`CalendarWeekRule`.
+  - Perform calendar-related operations using `Calendar` and define rules for determining the first week of the year using `CalendarWeekRule`.
 prerequisites: |
-  -   Visual&nbsp;Studio&nbsp;Code&nbsp;installed&nbsp;with&nbsp;the&nbsp;C#&nbsp;Dev&nbsp;Kit.
+  - Visual Studio Code installed with the C# Dev Kit.
 
-  -   Basic&nbsp;knowledge&nbsp;of&nbsp;the&nbsp;Visual&nbsp;Studio&nbsp;Code&nbsp;IDE.
+  - Basic knowledge of the Visual Studio Code IDE.
 
-  -   Basic&nbsp;understanding&nbsp;of&nbsp;the&nbsp;C#&nbsp;programming&nbsp;language.
+  - Basic understanding of the C# programming language.
 
-  -   Familiar&nbsp;with&nbsp;classes,&nbsp;abstract&nbsp;classes,&nbsp;interfaces&nbsp;and&nbsp;inheritance.
+  - Familiar with classes, abstract classes, interfaces and inheritance.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
