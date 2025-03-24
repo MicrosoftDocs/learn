@@ -36,8 +36,8 @@ Test the app to make sure it runs.
 
 Now that you have a working app, let's create a service that generates a welcome message for the main page.
 
-1. Right-click the *MyWebApp* project in the `Solution Explorer` pane. Select **Add** > **New Folder**. Name the folder *Services*.
-1. Right-click the *Services* folder. Select **Add** > **New File**. Select the **Class** file type, and then name the file *WelcomeService.cs*.
+1. Right-click the *MyWebApp* project in the **Explorer** pane. Select **New Folder**. Name the folder *Services*.
+1. Right-click the *Services* folder. Select **New File**. Name the file *WelcomeService.cs*.
 1. Replace the contents of *WelcomeService.cs* with the following code:
 
     ```csharp
@@ -79,12 +79,12 @@ Now that you have a service, you need to register it with the service container.
 
     This directive resolves the reference to the `WelcomeService` class.
 
-1.  Immediately after the `var builder = WebApplication.CreateBuilder(args);` line, add the following code:
+1. Immediately after the `var builder = WebApplication.CreateBuilder(args);` line, add the following code:
 
     ```csharp
     builder.Services.AddSingleton<WelcomeService>();
     ```
-    
+
     `WebApplication.CreateBuilder` creates a new instance of the `WebApplicationBuilder` class called `builder`. The preceding code registers the `WelcomeService` class with the service container with a singleton lifetime.
 
 1. Change the `app.MapGet("/", () => "Hello World!");` line to the following code:
@@ -120,8 +120,8 @@ Now that you have a service, you need to register it with the service container.
 
 Your team reviews your code, and another developer suggests that you use an interface to register services, as this approach makes the code more flexible and easier to maintain.
 
-1. Right-click the *MyWebApp* project in the `Solution Explorer` pane. Select **Add** > **New Folder**. Name the folder *Interfaces*.
-1. Right-click the *Interfaces* folder. Select **Add** > **New File**. Select the file **Interface** file type, and then name the file *IWelcomeService.cs*.
+1. Right-click the *MyWebApp* project in the **Explorer** pane. Select **New Folder**. Name the folder *Interfaces*.
+1. Right-click the *Interfaces* folder. Select **New File**. Name the file *IWelcomeService.cs*.
 1. Replace the contents of *IWelcomeService.cs* with the following code:
 
     ```csharp
