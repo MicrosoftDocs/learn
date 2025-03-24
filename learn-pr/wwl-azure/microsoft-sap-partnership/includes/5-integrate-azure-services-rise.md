@@ -38,9 +38,20 @@ With SAP RISE, the on-premises data gateway can connect to Azure Services runnin
 :::image type="content" source="../media/sap-rise-on-premises-data-gateway.png" alt-text="Screenshot of SAP RISE/ECS accessed from Azure on-premises data gateway and connected Azure services.":::
 
 
-The SAP RISE environment here provides access to the SAP ports for RFC and https described earlier. The communication ports are accessed by the private network address through the virtual network (VNET) peering or VPN site-to-site connection. The on-premises data gateway VM running in customer’s Azure subscription uses the [SAP .NET connector](https://support.sap.com/en/product/connectors/msnet.html) to run RFC, BAPI, or IDoc calls through the RFC connection. Additionally, depending on service and way the communication is set up, a way to connect to public IP of the SAP systems REST API through https might be required. The https connection to a public IP can be exposed through SAP RISE/ECS managed application gateway. This high level architecture shows the possible integration scenario. Alternatives to it such as using Logic Apps single tenant and [private endpoints](/azure/logic-apps/secure-single-tenant-workflow-virtual-network-private-endpoint) to secure the communication and other can be seen as extension and aren't described here in.
+The SAP RISE environment here provides access to the SAP ports for RFC and https described earlier. The communication ports are accessed by the private network address through the virtual network (VNET) peering or VPN site-to-site connection. The on-premises data gateway VM running in customer’s Azure subscription uses the SAP .NET connector to run RFC, BAPI, or IDoc calls through the RFC connection. Additionally, depending on service and way the communication is set up, a way to connect to public IP of the SAP systems REST API through https might be required. The https connection to a public IP can be exposed through SAP RISE/ECS managed application gateway. This high level architecture shows the possible integration scenario. Alternatives to it such as using Logic Apps single tenant and private endpoints to secure the communication and other can be seen as extension and aren't described here in.
 
 SAP RISE/ECS exposes the communication ports for these applications to use but has no knowledge about any details of the connected application or service running in a customer’s subscription.
 
 SAP RISE/ECS exposes the communication ports for these applications to use but has no knowledge about any details of the connected application or service running in a customer’s subscription. Contact SAP for any SAP license details for any implications accessing SAP data through Azure service connecting to the SAP system or database.
+
+
+## GROW with SAP
+
+GROW with SAP is a bundled set of solutions designed to speed up the move to the S/4HANA Cloud public edition. GROW is tailored for midsize businesses and includes solutions, services, community, and learning access.
+
+SAP GROW features include:
+
+**Inclusive Offering:** GROW with SAP includes SAP S/4HANA Cloud, public edition, SAP Business Technology Platform, packaged activation services, and expert and user support through SAP Community and the SAP Learning portfolio.
+
+**Differentiating GROW and RISE:** GROW with SAP isn't a product or software but a bundled set of solutions aimed at accelerating the adoption of S/4HANA public cloud. RISE with SAP is SAP’s digital-transformation-as-a-service offering, designed to help organizations transition their existing SAP ERP systems to the cloud, specifically to SAP S/4HANA Cloud. RISE with SAP includes  software, services, and tools to simplify the migration process, reduce complexity, and accelerate the path to cloud-based solutions.
 

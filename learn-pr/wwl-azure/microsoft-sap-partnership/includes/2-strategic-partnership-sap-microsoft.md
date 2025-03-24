@@ -4,6 +4,8 @@ The partnership between Microsoft and SAP is a cornerstone in the enterprise sof
 
 Over the past three decades, Microsoft and SAP teamed up to create groundbreaking innovations that apply their unique areas of expertise, providing customers with powerful tools to navigate the complexities of the modern business environment.
 
+To run your SAP apps and workloads on the preferred cloud platform trusted by SAP, see [SAP on the Microsoft Cloud](https://azure.microsoft.com/solutions/sap/).
+
 ### Cloud migration and RISE with SAP
 
 The partnership focuses on cloud migration, particularly through the RISE (Realize, Innovate, Sustain, and Enhance) with SAP on Microsoft Azure Global Acceleration Program. The initiative accelerates the adoption of RISE with SAP, providing prescriptive guidance, proven recommendations, and security principles. The initiative helps organizations transition seamlessly to the cloud while unlocking the full potential of their SAP investments. Thousands of customers choose Azure for their RISE with SAP journey, benefiting from the combined expertise of SAP and Microsoft.
