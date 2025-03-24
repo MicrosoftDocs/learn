@@ -5,9 +5,8 @@ metadata:
   description: Intrigued by quantum computing but don't know where to start? This learning path helps prepare you for this exciting next generation of computing.
   brand: azure
   ms.date: 04/09/2024
-  author: SoniaLopezBravo
-  ms.author: sonialopez
-  manager: tedhudek
+  author: azure-quantum-content
+  ms.author: azure-quantum-content
   ms.topic: learning-path
 title: Get started with Azure Quantum
 summary: |

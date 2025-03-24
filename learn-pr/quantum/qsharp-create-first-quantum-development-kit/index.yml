@@ -6,9 +6,9 @@ metadata:
   title: Create your first Q# program by using the Azure Quantum Development Kit
   description: Get started with Q# programming by building a quantum random number generator.
   ms.date: 01/22/2025
-  author: SoniaLopezBravo
-  ms.author: sonialopez
-  manager: tedhudek
+  author: azure-quantum-content
+  ms.author: quantumdocwriters
+  
   ms.topic: module
   ms.service: azure-quantum
   ms.subservice: qdk

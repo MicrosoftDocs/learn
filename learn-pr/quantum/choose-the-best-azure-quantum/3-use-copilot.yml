@@ -7,8 +7,8 @@ metadata:
   title: Exercise - Use the Copilot to run a quantum program
   description: Use the Copilot of Azure Quantum website to run a quantum program
   ms.date: 10/30/2024
-  author: SoniaLopezBravo
-  ms.author: sonialopez
+  author: azure-quantum-content
+  ms.author: quantumdocwriters
   ms.topic: unit
 durationInMinutes: 4
 content: |
