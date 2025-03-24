@@ -9,7 +9,7 @@ Security Copilot capabilities can be accessed through a standalone experience an
 - Plugins from Microsoft and third-party security products are a means to extend and integrate services with Security Copilot. Plugins bring more context from event logs, alerts, incidents, and policies from both Microsoft security products and supported third-party solutions such as ServiceNow.
 - Security Copilot also has access to threat intelligence and authoritative content through plugins. Plugins can search across Microsoft Defender Threat Intelligence articles and intel profiles, Microsoft Defender XDR threat analytics reports, and vulnerability disclosure publications, among others.
 
-:::image type="content" source="../media/security-copilot-diagram.png" alt-text="Diagram showing how Security Copilot works with other products.":::
+:::image type="content" source="../media/security-copilot-diagram.png" alt-text="Diagram showing how Security Copilot works with other products." lightbox="../media/security-copilot-diagram.png":::
 
 Here's an explanation of how Security Copilot works:
 
@@ -20,10 +20,10 @@ Here's an explanation of how Security Copilot works:
 
 Security Copilot can be used with any data source that Defender XDR and Microsoft Sentinel support, including SAP RISE/ECS. Below shows the stand-alone experience.
 
-:::image type="content" source="../media/sap-rise-security-copilot.png" alt-text="Screenshot of Security Copilot experience with SAP RISE/ECS incidents.":::
+:::image type="content" source="../media/sap-rise-security-copilot.png" alt-text="Screenshot of Security Copilot experience with SAP RISE/ECS incidents." lightbox="../media/sap-rise-security-copilot.png":::
 
 In addition to that the Security Copilot experience is embedded on the Defender XDR portal. Next to an AI-generated summary, recommendations, and remediation like password reset for SAP are provided out-of-the-box. Learn more about automatic SAP attack disruption [here](/azure/sentinel/sap/deployment-attack-disrupt).
 
-:::image type="content" source="../media/sap-rise-security-copilot-defender-portal.png" alt-text="Screenshot of embedded Security Copilot experience in Defender with SAP RISE/ECS incidents.":::
+:::image type="content" source="../media/sap-rise-security-copilot-defender-portal.png" alt-text="Screenshot of embedded Security Copilot experience in Defender with SAP RISE/ECS incidents." lightbox="../media/sap-rise-security-copilot-defender-portal.png":::
 
 
