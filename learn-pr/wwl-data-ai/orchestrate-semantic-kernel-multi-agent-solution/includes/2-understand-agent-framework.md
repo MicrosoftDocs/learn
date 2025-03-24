@@ -4,7 +4,7 @@ Semantic Kernel is an open-source SDK that enables developers to integrate AI mo
 
 The Semantic Kernel Agent Framework is a framework designed to help developers build AI-powered agents. These agents can process user inputs, make decisions, and execute tasks autonomously by leveraging large language models and traditional programming logic. The framework provides structured components for defining AI-driven workflows, enabling agents to interact with users, APIs, and external services.
 
-### Core Concepts
+### Core concepts
 
 The Agent Framework in Semantic Kernel provides architecture on top of existing Semantic Kernel resources, including:
 
@@ -12,7 +12,7 @@ The Agent Framework in Semantic Kernel provides architecture on top of existing 
 
     Agents are intelligent, AI-driven entities capable of reasoning and executing tasks. They use language models, functions, and memory to make decisions dynamically.
 
-- **Agent Collaboration**
+- **Agent collaboration**
 
     Agents can collaborate together through an **agent group chat**, which enables multiple agents to join the same chat, even of different agent types. Agent group chats determine which agent should respond and how to determine if the conversation is finished.
 
@@ -22,7 +22,7 @@ The features that power Semantic Kernel are also still available within the Agen
 
     The kernel is the central component of the Semantic Kernel. The kernel acts as the execution engine, managing AI interactions, function orchestration, and memory.
 
-- **Tools and Plugins**
+- **Tools and plugins**
 
     **Plugins** align with existing Semantic Kernel features, enabling agents to dynamically interact with external services or execute complex tasks through function calling.  Within the Agent Framework, **tools** are available to provide extra functionality to your agents, such as file searching or code interpreter, similar to tool usage in Azure AI Agent service. Agents use tools and plugins to perform specific tasks.
 
@@ -30,7 +30,7 @@ The features that power Semantic Kernel are also still available within the Agen
 
     Agents can maintain chat history across multiple interactions, allowing them to track previous interactions and adapt responses accordingly. The conversation history is always accessible by the agents, either as a whole or for a specific agent's chat history.
 
-### Types of Agents
+### Types of agents
 
 The Semantic Kernel Agent Framework supports several different types of agents, including:
 
