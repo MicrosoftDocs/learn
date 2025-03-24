@@ -5,7 +5,7 @@ Microsoft Defender for Servers is available in two plans:
 
 - **Microsoft Defender for Servers Plan 1** - deploys Microsoft Defender for Endpoint to your servers and provides these capabilities:
 
-  - Microsoft Defender for Endpoint licenses are charged per hour instead of per seat, lowering costs for protecting virtual machines only when they are in use.
+  - Microsoft Defender for Endpoint licenses are charged per hour instead of per device, lowering costs for protecting virtual machines only when they are in use.
   - Microsoft Defender for Endpoint deploys automatically to all cloud workloads so that you know they're protected when they spin up.
   - Alerts and vulnerability data from Microsoft Defender for Endpoint is shown in Microsoft Defender for Cloud
 
