@@ -13,7 +13,7 @@ In this exercise, you configure autoscaling. Define scale rules that scale out a
 
 1. In the [Azure portal](https://portal.azure.com), go to the page for the Virtual Machine Scale Set.
 
-1. On the Virtual Machine Scale Set page, under **Settings**, select **Scaling**.
+1. On the Virtual Machine Scale Set page, under **Settings**, select **Availability + scale**.
 
 1. Select **Custom autoscale**. In the **Default** scale rule, ensure that the **Scale mode** is set to **Scale based on a metric**. Then select **Add a rule**.
 
