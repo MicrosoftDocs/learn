@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-sap-microsoft-cloud.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/24/2025
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is one of the integration scenarios between SAP and Microsoft Azure?"
+    choices:
+    - content: "Integration with Microsoft Power Platform"
+      isCorrect: true
+      explanation: "Correct. The content mentions integration scenarios with Microsoft Power Platform among others."
+    - content: "Integration with Amazon Web Services"
+      isCorrect: false
+      explanation: "Incorrect. The content does not mention any integration scenario with Amazon Web Services."
+    - content: "Integration with Google Cloud Platform"
+      isCorrect: false
+      explanation: "Incorrect. The content does not mention any integration scenario with Google Cloud Platform."
+  - content: "What is one of the key benefits of integrating SAP Business Technology Platform (BTP) with Azure?"
+    choices:
+    - content: "It enables businesses to extend and personalize SAP applications using Azure's extensive suite of services."
+      isCorrect: true
+      explanation: "Correct. The integration allows businesses to leverage Azure's services to enhance their SAP applications."
+    - content: "It restricts the deployment and access of SAP applications to specific regions."
+      isCorrect: false
+      explanation: "Incorrect. Azure's global network of data centers ensures that SAP applications can be deployed and accessed from anywhere in the world."
+    - content: "It allows businesses to use Azure's AI and machine learning capabilities to downgrade their SAP applications."
+      isCorrect: false
+      explanation: "Incorrect. The integration doesn't downgrade applications, but enhances them with predictive analytics and intelligent automation."
+  - content: "What is the purpose of integrating Azure Logic Apps with SAP BTP?"
+    choices:
+    - content: "To automate workflows between SAP BTP and other applications"
+      isCorrect: true
+      explanation: "Correct. Azure Logic Apps is used to define triggers and actions to automate workflows between SAP BTP and other applications."
+    - content: "To provide data encryption and threat detection features"
+      isCorrect: false
+      explanation: "Incorrect. These are security features provided by Azure, not specific functions of Azure Logic Apps."
+    - content: "To set up Microsoft Entra ID as Identity Provider"
+      isCorrect: false
+      explanation: "Incorrect. This is a function related to identity and access management, not a specific function of Azure Logic Apps."
+  - content: "What is the purpose of integrating Microsoft Entra ID with SAP BTP?"
+    choices:
+    - content: "To manage user identities and access, enabling single sign-on (SSO) and multifactor authentication (MFA) for enhanced security."
+      isCorrect: true
+      explanation: "Correct. Microsoft Entra ID integration with SAP BTP is used for managing user identities and access."
+    - content: "To enable data transformation capabilities for cleaning, transforming, and enriching data."
+      isCorrect: false
+      explanation: "Incorrect. Data transformation is a feature of Azure Data Factory, not Microsoft Entra ID integration."
+    - content: "To automate workflows and integrate applications across multiple systems."
+      isCorrect: false
+      explanation: "Incorrect. Workflow automation and application integration are features of Azure Logic Apps, not Microsoft Entra ID integration."
+  - content: "What is the role of Universal Print in SAP front-end printing?"
+    choices:
+    - content: "Universal Print enables centralized management of printers and printer drivers, removing the need for dedicated printer servers."
+      isCorrect: true
+      explanation: "Correct. Universal Print is a cloud-based solution that centralizes printer management, eliminating the need for dedicated printer servers."
+    - content: "Universal Print directly communicates with SAP for print job creation."
+      isCorrect: false
+      explanation: "Incorrect. Universal Print does not directly communicate with SAP for print job creation. The operating system handles this task."
+    - content: "Universal Print requires specific SAP configuration for print job creation."
+      isCorrect: false
+      explanation: "Incorrect. Universal Print does not require any specific SAP configuration for print job creation."
