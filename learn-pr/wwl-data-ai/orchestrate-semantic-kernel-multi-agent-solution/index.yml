@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.wwl.orchestrate-semantic-kernel-multi-agent-solution
+uid: learn.wwl.orchestrate-sk-multi-agent-solution
 metadata:
   title: Orchestrate a multi-agent solution using Semantic Kernel
   description: Learn how to design multi-agent solutions with Semantic Kernel and Azure AI Foundry
@@ -32,12 +32,12 @@ products:
 subjects: 
   - cloud-computing
 units:
-- learn.wwl.orchestrate-semantic-kernel-multi-agent-solution.introduction
-- learn.wwl.orchestrate-semantic-kernel-multi-agent-solution.understand-agent-framework
-- learn.wwl.orchestrate-semantic-kernel-multi-agent-solution.design-agent-selection-strategy
-- learn.wwl.orchestrate-semantic-kernel-multi-agent-solution.define-chat-termination-strategy
-- learn.wwl.orchestrate-semantic-kernel-multi-agent-solution.exercise
-- learn.wwl.orchestrate-semantic-kernel-multi-agent-solution.knowledge-check
-- learn.wwl.orchestrate-semantic-kernel-multi-agent-solution.summary
+- learn.wwl.orchestrate-sk-multi-agent-solution.introduction
+- learn.wwl.orchestrate-sk-multi-agent-solution.understand-agent-framework
+- learn.wwl.orchestrate-sk-multi-agent-solution.design-agent-selection-strategy
+- learn.wwl.orchestrate-sk-multi-agent-solution.define-chat-termination-strategy
+- learn.wwl.orchestrate-sk-multi-agent-solution.exercise
+- learn.wwl.orchestrate-sk-multi-agent-solution.knowledge-check
+- learn.wwl.orchestrate-sk-multi-agent-solution.summary
 badge:
-  uid: learn.wwl.orchestrate-semantic-kernel-multi-agent-solution.badge
+  uid: learn.wwl.orchestrate-sk-multi-agent-solution.badge
