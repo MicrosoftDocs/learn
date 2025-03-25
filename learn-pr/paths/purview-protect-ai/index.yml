@@ -13,7 +13,7 @@ prerequisites: |
   - Basic knowledge of information protection concepts
 summary: |
   AI tools like Microsoft Copilot are changing the way people work, but they also increase the risk of oversharing and accidental data exposure. Microsoft Purview helps organizations apply the right controls to keep sensitive data protected across AI-enabled environments.
-  iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate
 roles:
