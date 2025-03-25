@@ -47,7 +47,7 @@ For AC, higher voltage (400 V and 480 V) is more efficient for distributing powe
 
 _Figure 8: (a) C13 power connector. (b) C19 power connector._ ([Source](https://en.wikipedia.org/wiki/IEC_60320))
 
-Some vendors offer DC distribution, in which the AC-to-DC conversion is done per rack, per row, or per bay, rather than converting AC to DC within every server power supply. These systems have been measured to be more efficient than their AC counterparts, but only 2% to 4% for average loads. For details, see the white paper "[Quantitative analysis of power distribution configurations for data centers (WP#16)](https://www.thegreengrid.org/en/resources/library-and-tools/393-WP#16---Quantitative-Analysis-of-Power-Distribution-Configurations-for-Data-Centers-)."<sup>[1][^1]</sup>
+Some vendors offer DC distribution, in which the AC-to-DC conversion is done per rack, per row, or per bay, rather than converting AC to DC within every server power supply. These systems have been measured to be more efficient than their AC counterparts, but only 2% to 4% for average loads. For details, see the white paper "[Quantitative analysis of power distribution configurations for data centers (WP#16)](https://www.thegreengrid.org/en/resources/library-and-tools/393-WP%2316---Quantitative-Analysis-of-Power-Distribution-Configurations-for-Data-Centers#16---Quantitative-Analysis-of-Power-Distribution-Configurations-for-Data-Centers-)."<sup>[1][^1]</sup>
 
 Because DC power supplies are not a commodity, these are only suited for large-scale deployments with custom components.
 
@@ -125,8 +125,8 @@ There should be an adequate number of well-marked emergency exits. This seems ob
 
 ### References
 
-1. _The Green Grid (2008). [Quantitative analysis of power distribution configurations for data centers (WP#16)](https://www.thegreengrid.org/en/resources/library-and-tools/393-WP#16---Quantitative-Analysis-of-Power-Distribution-Configurations-for-Data-Centers-)_
+1. _The Green Grid (2008). [Quantitative analysis of power distribution configurations for data centers (WP#16)](https://www.thegreengrid.org/en/resources/library-and-tools/393-WP%2316---Quantitative-Analysis-of-Power-Distribution-Configurations-for-Data-Centers#16---Quantitative-Analysis-of-Power-Distribution-Configurations-for-Data-Centers-)_
 
-[^1]: <https://www.thegreengrid.org/en/resources/library-and-tools/393-WP#16---Quantitative-Analysis-of-Power-Distribution-Configurations-for-Data-Centers-> "The Green Grid (2008). *Quantitative analysis of power distribution configurations for data centers (WP#16)*"
+[^1]: <https://www.thegreengrid.org/en/resources/library-and-tools/393-WP%2316---Quantitative-Analysis-of-Power-Distribution-Configurations-for-Data-Centers#16---Quantitative-Analysis-of-Power-Distribution-Configurations-for-Data-Centers-> "The Green Grid (2008). *Quantitative analysis of power distribution configurations for data centers (WP#16)*"
 
 ***
