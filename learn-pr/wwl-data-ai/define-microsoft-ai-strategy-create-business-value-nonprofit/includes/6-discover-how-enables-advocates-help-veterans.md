@@ -1,0 +1,1 @@
+**Microosft Entra ID, Microsoft Power Platform, SharePoint**

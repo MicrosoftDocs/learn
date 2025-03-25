@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit
+metadata:
+  title: Define a Microsoft AI strategy to create business value in nonprofit
+  description: "Discover AI use cases and scenarios for nonprofit organizations. Get familiar with Microsoft AI tools and services for nonprofit. Learn from real success stories."
+  ms.date: 03/25/2025
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: module-intro-to-product
+  ms.service: microsoft-cloud-nonprofit
+  ai-usage: human-only
+title: Define a Microsoft AI strategy to create business value in nonprofit
+summary: This module is designed to help nonprofit professionals adopt Microsoft AI solutions. It discusses common use cases and real customer stories.
+abstract: |
+  -   Describe common goals and challenges in nonprofit.
+
+  -   Identify AI use cases for nonprofit&nbsp;organizations.
+
+  -   Identify Microsoft AI technologies that can support nonprofit&nbsp;use cases.
+prerequisites: None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- business-owner
+- business-user
+products:
+- azure-openai
+- fabric
+- microsoft-365-copilot
+- power-apps
+subjects:
+- artificial-intelligence
+- generative-ai
+units:
+- learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit.introduction
+- learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit.1b-ai-nonprofits
+- learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit.explore-ai-goals-challenges-nonprofit
+- learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit.explore-opportunities-ai-nonprofit
+- learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit.discover-how-transforms-lives-through-access-essential-surgery
+- learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit.discover-how-enables-evidence-based-public-policy
+- learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit.discover-how-enables-advocates-help-veterans
+- learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit.knowledge-check
+- learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit.summary
+badge:
+  uid: learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit.badge

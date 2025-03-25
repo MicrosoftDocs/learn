@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit.explore-ai-goals-challenges-nonprofit
+title: Explore AI goals and challenges in nonprofit
+metadata:
+  title: Explore AI goals and challenges in nonprofit
+  description: "Explore AI goals and challenges in nonprofit"
+  ms.date: 03/25/2025
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-explore-ai-goals-challenges-nonprofit.md)]
