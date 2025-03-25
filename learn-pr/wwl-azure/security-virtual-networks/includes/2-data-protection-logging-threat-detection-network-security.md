@@ -342,7 +342,7 @@ To simplify the WAF rules deployment, you can also use the AWS WAF Security Auto
 AWS implementation and additional context:
 
  -  [How AWS WAF works](https://docs.aws.amazon.com/waf/latest/developerguide/how-aws-waf-works.html)
- -  [AWS WAF Security Automations](https://docs.aws.amazon.com/solutions/latest/aws-waf3-security-automations/welcome.html)
+ -  [AWS WAF Security Automations](https://docs.aws.amazon.com/solutions/latest/security-automations-for-aws-waf/solution-overview.html)
  -  [AWS Managed Rules for AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/aws-managed-rule-groups.html)
 
 GCP guidance: Use Google Cloud Armor to help protect your applications and websites against denial of service and web attacks.
