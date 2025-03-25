@@ -31,15 +31,14 @@ products:
 - power-apps
 subjects:
 - artificial-intelligence
-- generative-ai
 units:
 - learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit.introduction
-- learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit.1b-ai-nonprofits
+- learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit.ai-nonprofits
 - learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit.explore-ai-goals-challenges-nonprofit
-- learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit.explore-opportunities-ai-nonprofit
 - learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit.discover-how-transforms-lives-through-access-essential-surgery
 - learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit.discover-how-enables-evidence-based-public-policy
 - learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit.discover-how-enables-advocates-help-veterans
+- learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit.explore-opportunities-ai-nonprofit
 - learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit.knowledge-check
 - learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit.summary
 badge:

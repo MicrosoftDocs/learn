@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit.1b-ai-nonprofits
+uid: learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit.ai-nonprofits
 title: AI and nonprofits
 metadata:
   title: AI and nonprofits
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/1b-ai-nonprofits.md)]
+  [!include[](includes/2-ai-nonprofits.md)]

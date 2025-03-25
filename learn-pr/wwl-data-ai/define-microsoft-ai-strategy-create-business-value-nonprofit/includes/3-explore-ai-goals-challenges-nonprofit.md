@@ -26,6 +26,6 @@ According to the [2024 State of the Nonprofit Sector Report](https://www.forvism
 
 >[!TIP]
 >Take a moment to identify the goals and challenges specific to your organization.
->![Photograph showing of People working and talking around a table.](../media/2-reflection.jpg)
+>![Screenshot of people working and talking around a table.](../media/2-reflection.jpg)
 
 Next, let’s explore common scenarios in which AI can help you attain these goals.
