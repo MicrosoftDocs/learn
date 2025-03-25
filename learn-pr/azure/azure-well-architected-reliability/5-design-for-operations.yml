@@ -7,8 +7,8 @@ metadata:
   title: Design for operations
   description: Learn strategies for designing your Azure workload to support operations.
   ms.date: 12/18/2023
-  author: claytonsiemens77
-  ms.author: csiemens
+  author: PageWriter-MSFT
+  ms.author: prwilk
   ms.topic: unit
 durationInMinutes: 15
 content: |
