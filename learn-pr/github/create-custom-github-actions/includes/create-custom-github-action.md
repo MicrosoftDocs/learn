@@ -33,6 +33,10 @@ The steps to build a JavaScript action are minimal and straightforward:
 
 Composite run steps actions allow you to reuse actions by using shell scripts. You can even mix multiple shell languages within the same action. If you have many shell scripts to automate several tasks, you can now easily turn them into an action and reuse them for different workflows. Sometimes it's easier to just write a shell script than using JavaScript or wrapping your code in a Docker container.
 
+<!-- INFOMAGNUS UPDATES for 3.1.4 and 3.1.5 go here. Source Material for 3.1.4 : https://docs.github.com/en/enterprise-cloud@latest/actions/sharing-automations/creating-actions/creating-a-composite-action#creating-a-composite-action-within-the-same-repository
+
+Source Material for 3.1.5 : https://docs.github.com/en/enterprise-cloud@latest/actions/sharing-automations/creating-actions/developing-a-third-party-cli-action ->
+
 ## Metadata and syntax needed to create an action
 
 When creating or reviewing a GitHub action, a great first step is to review the `action.yml` file to assess which inputs, outputs, description, runs, and other configuration information the action needs. Some of these parameters are required, while others are optional. The `action.yml` file defines the following information about your action:
@@ -124,6 +128,8 @@ runs:
     - run: ${{ github.action_path }}/test/script.sh
       shell: bash
 ```
+
+<!-- INFOMAGNUS UPDATES for 3.1.2 and 3.1.3 go here. Suggested Source Material : https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/troubleshooting-workflows/about-troubleshooting-workflows ->
 
 ### Branding
 
