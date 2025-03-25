@@ -26,6 +26,8 @@ jobs:
 
 This example is using the `github.ref` context to check the branch that triggered the workflow. If the branch is `main`, the runner is executed and prints out "Deploying to production server on branch $GITHUB_REF". The default environment variable `$GITHUB_REF` is used in the runner to refer to the branch. Notice that default environment variables are all uppercase where context variables are all lowercase.
 
+<!-- INFOMAGNUS UPDATES for sub OD 1.4.2 go here. Source Material: https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs --> 
+
 ## Custom environment variables
 
 Similar to using default environment variables, you can use custom environment variables in your workflow file. To create a custom variable, you need to define it in your workflow file using the `env` context. If you want to use the value of an environment variable inside a runner, you can use the runner operating system's normal method for reading environment variables.
@@ -42,6 +44,8 @@ jobs:
         env:
           First_Name: Mona
 ```
+
+<!-- INFOMAGNUS UPDATES for sub OD 1.4.3, 1.4.6, and 1.4.7 go here. Source Material: Infomagnus team to find source material and cite sources when they update material  --> 
 
 ## Scripts in your workflow
 
@@ -151,3 +155,5 @@ For example, a `GET` request to view a specific workflow run log would follow th
 ```http
 GET /repos/{owner}/{repo}/actions/runs/{run_id}/logs
 ```
+
+<!-- INFOMAGNUS UPDATES for sub OD 1.4.4 go here. Source Material: Infomagnus team to find source material and cite sources when they update material  --> 
