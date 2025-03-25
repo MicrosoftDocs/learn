@@ -2,8 +2,7 @@
 uid: learn.wwl.get-started-identity-access-labs
 metadata:
   title: Get started with identity and access labs
-  description: "Explore the basics of identity and access with
-interactive labs using Microsoft Entra ID."
+  description: "Use interactive labs to explore the basics of identity and access using Microsoft Entra ID."
   ms.date: 03/25/2025
   author: wwlpublish
   ms.author: roberts
@@ -12,10 +11,7 @@ interactive labs using Microsoft Entra ID."
   ms.subservice: identity-platform-1p
   ai-usage: human-only
 title: Get started with identity and access labs
-summary: |
-  Explore the basics of identity and access with
-
-  interactive labs using Microsoft Entra ID.
+summary: Use interactive labs to explore the basics of identity and access using Microsoft Entra ID.
 abstract: |
   After completing this module, you'll be able to:
 
