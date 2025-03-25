@@ -167,3 +167,5 @@ Each type of runner has its benefits, but GitHub-hosted runners offer a quicker 
 ### GitHub Actions may have usage limits
 
 GitHub Actions has some usage limits, depending on your GitHub plan and whether your runner is GitHub-hosted or self-hosted. For more information on usage limits, check out [Usage limits, billing, and administration](https://docs.github.com/actions/reference/usage-limits-billing-and-administration) in the GitHub documentation.
+
+<!-- INFOMAGNUS UPDATES for sub OD 1.2.8 go here. Source Material:  https://docs.github.com/en/actions/using-github-hosted-runners/using-larger-runners  --> 
