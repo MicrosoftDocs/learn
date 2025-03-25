@@ -73,6 +73,8 @@ To learn more about npm, check out the npm documentation:
 - [npm run](https://docs.npmjs.com/cli/run-script?azure-portal=true)
 - [npm test](https://docs.npmjs.com/cli/test.html?azure-portal=true)
 
+<!-- INFOMAGNUS UPDATES for sub OD 2.1.1, 2.1.2, 2.1.3, and 2.1.4 go here. Source Material: Infomagnus team to find source material and cite it. -->
+
 ## Action Logs for the build
 
 When a workflow runs, it produces a log that includes the details of what happened and any errors or test failures.
