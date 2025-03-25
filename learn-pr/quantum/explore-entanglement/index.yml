@@ -6,9 +6,9 @@ metadata:
   title: Teleport a qubit using entanglement and the Quantum Development Kit
   description: Teleport a qubit using entanglement and the Quantum Development Kit
   ms.date: 01/22/2025
-  author: SoniaLopezBravo
-  ms.author: sonialopez
-  manager: tedhudek
+  author: azure-quantum-content
+  ms.author: quantumdocwriters
+  
   ms.topic: module
   ms.service: azure-quantum
   ms.subservice: qdk

@@ -7,9 +7,9 @@ metadata:
   title: Exercise - Explore Superposition with Q#
   description: Learn how to create superposition states and analyze them using Q#.
   ms.date: 01/22/2025
-  author: SoniaLopezBravo
-  ms.author: sonialopez
-  manager: tedhudek
+  author: azure-quantum-content
+  ms.author: quantumdocwriters
+  
   ms.topic: unit
   ai-usage: ai-assisted
 durationInMinutes: 12
