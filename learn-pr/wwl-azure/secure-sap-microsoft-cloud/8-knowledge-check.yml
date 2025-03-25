@@ -1,0 +1,82 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-sap-microsoft-cloud.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 03/24/2025
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the typical use case for SAML/OAuth SSO method in SAP RISE?"
+    choices:
+    - content: "Web GUI, SAP Enterprise Portal."
+      isCorrect: false
+      explanation: "Incorrect. Web GUI and SAP Enterprise Portal are typically used with SPNEGO SSO method, not SAML/OAuth."
+    - content: "SAP Fiori, Web GUI, Portal, HANA."
+      isCorrect: true
+      explanation: "Correct. SAML/OAuth SSO method is typically used with SAP Fiori, Web GUI, Portal, and HANA."
+    - content: "SAP GUI."
+      isCorrect: false
+      explanation: "Incorrect. SAP GUI is typically used with SNC SSO method, not SAML/OAuth."
+  - content: "What is the recommended migration path for SAP Identity Management (SAP IDM) users?"
+    choices:
+    - content: "Continue using SAP IDM beyond 2027."
+      isCorrect: false
+      explanation: "Incorrect. SAP has announced the retirement of SAP IDM by 2027."
+    - content: "Migrate to Microsoft Entra."
+      isCorrect: true
+      explanation: "Correct. SAP recommends its IDM users to migrate to Microsoft Entra."
+    - content: "Migrate to SAP Cloud Identity Service."
+      isCorrect: false
+      explanation: "Incorrect. While SAP Cloud Identity Service is integrated with Microsoft Entra, it is not the recommended migration path for SAP IDM users."
+  - content: "What is the main function of Microsoft Security Copilot in relation to SAP RISE/ECS?"
+    choices:
+    - content: "It provides a stand-alone experience for SAP RISE/ECS incidents."
+      isCorrect: false
+      explanation: "Incorrect. While it does provide a stand-alone experience, its main function is to empower security and IT professionals to respond to cyber threats."
+    - content: "It empowers security and IT professionals to respond to cyber threats, process signals, and assess risk exposure at the speed and scale of AI."
+      isCorrect: true
+      explanation: "Correct. Microsoft Security Copilot's main function is to empower security and IT professionals to respond to cyber threats, process signals, and assess risk exposure at the speed and scale of AI."
+    - content: "It is an AI-generated summary tool for SAP RISE/ECS incidents."
+      isCorrect: false
+      explanation: "Incorrect. Although it does generate AI summaries, its primary role is to aid in responding to cyber threats."
+  - content: "What does the Microsoft Sentinel solution for SAP applications enable?"
+    choices:
+    - content: "It only works with SAP systems hosted on Azure."
+      isCorrect: false
+      explanation: "Incorrect. The solution works with SAP systems hosted on Azure, other clouds, or on-premises infrastructure."
+    - content: "It allows monitoring, detection, and response to suspicious activities on SAP systems hosted on Azure, other clouds, or on-premises infrastructure."
+      isCorrect: true
+      explanation: "Correct. The Microsoft Sentinel solution provides comprehensive security capabilities for SAP applications."
+    - content: "It only monitors user activities on SAP RISE/ECS and the SAP business logic layers."
+      isCorrect: false
+      explanation: "Incorrect. While it does monitor user activities, it also allows detection and response to suspicious activities, and customization based on needs."
+  - content: "What is a common first scenario for using prebuilt playbooks for security, orchestration, automation, and response capabilities (SOAR) with Microsoft Sentinel?"
+    choices:
+    - content: "SAP user blocking with intervention option from Microsoft Teams."
+      isCorrect: true
+      explanation: "Correct. The content mentions SAP user blocking with intervention option from Microsoft Teams as a popular first scenario."
+    - content: "Automated email response to detected threats."
+      isCorrect: false
+      explanation: "Incorrect. While automated responses are part of SOAR capabilities, the content does not mention email responses as a common first scenario."
+    - content: "Automatic system shutdown upon threat detection."
+      isCorrect: false
+      explanation: "Incorrect. The content does not mention system shutdowns as a common first scenario for using SOAR capabilities."
+  - content: "What is the relationship between Azure Monitoring for SAP solutions and SAP RISE/ECS?"
+    choices:
+    - content: "SAP RISE/ECS integrates with Azure Monitoring for SAP solutions to provide enhanced monitoring capabilities."
+      isCorrect: false
+      explanation: "Incorrect. SAP RISE/ECS does not support any integration with Azure Monitor for SAP solutions."
+    - content: "SAP RISE/ECS is a fully managed service that doesn't support any integration with Azure Monitor for SAP solutions."
+      isCorrect: true
+      explanation: "Correct. SAP's own monitoring and reporting is used and provided to the customer as defined by your service description with SAP."
+    - content: "Azure Monitoring for SAP solutions is used to monitor SAP RISE/ECS environments."
+      isCorrect: false
+      explanation: "Incorrect. Azure Monitoring for SAP isn't intended to be utilized for such managed environment like SAP RISE/ECS."

@@ -7,9 +7,9 @@ metadata:
   title: Exercise - Create a quantum random bit generator
   description: Write Q# code that generates a single random bit.
   ms.date: 10/30/2024
-  author: SoniaLopezBravo
-  ms.author: sonialopez
-  manager: tedhudek
+  author: azure-quantum-content
+  ms.author: quantumdocwriters
+  
   ms.topic: unit
   show_latex: true
 durationInMinutes: 8
