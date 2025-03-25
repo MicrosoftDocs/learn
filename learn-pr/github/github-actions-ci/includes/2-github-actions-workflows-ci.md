@@ -123,6 +123,8 @@ test:
       CI: true
 ```
 
+<!-- INFOMAGNUS UPDATES for sub OD 2.2.1 go here. Source Material: Infomagnus team to find source material and cite sources when they update material -->
+
 ## What are artifacts?
 
 When a workflow produces something other than a log entry, the product is called an *artifact*. For example, the Node.js build produces a Docker container that can be deployed. This artifact, the container, can be uploaded to storage by using the action [actions/upload-artifact](https://github.com/actions/upload-artifact?azure-portal=true) and later downloaded from storage by using the action [actions/download-artifact](https://github.com/actions/download-artifact?azure-portal=true).
@@ -192,3 +194,5 @@ Another action we could take is to add a label to the pull request. In this case
 Notice the block called `env:`. This block is where you set the environment variables for this action. For example, you can set the number of approvers needed. Here, it's one. The `secrets.GITHUB_TOKEN` authentication variable is required because the action must make changes to your repository by adding a label. Finally, you supply the name of the label to add.
 
 Adding a label could be an event that starts another workflow, such as a merge. We cover this event in the next module on continuous delivery with GitHub Actions.
+
+<!-- INFOMAGNUS UPDATES for sub OD 2.2.2 go here. Source Material: Infomagnus team to find source material and cite sources when they update material -->
