@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-identity-access-labs.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction"
+  ms.date: 03/25/2025
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

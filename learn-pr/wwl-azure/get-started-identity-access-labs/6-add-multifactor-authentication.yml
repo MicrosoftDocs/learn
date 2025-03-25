@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-identity-access-labs.add-multifactor-authentication
+title: Perform basic multifactor authentication tasks
+metadata:
+  title: Perform basic multifactor authentication tasks
+  description: "Perform the lab to enable multifactor authentication to protect users and company data."
+  ms.date: 03/25/2025
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-add-multifactor-authentication.md)]
