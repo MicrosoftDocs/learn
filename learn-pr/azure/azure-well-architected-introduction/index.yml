@@ -31,11 +31,6 @@ subjects:
 units:
 - learn.azure-well-architected-introduction.1-introduction
 - learn.azure-well-architected-introduction.2-pillars
-- learn.azure-well-architected-introduction.3-cost-optimization
-- learn.azure-well-architected-introduction.4-operational-excellence
-- learn.azure-well-architected-introduction.5-performance-efficiency
-- learn.azure-well-architected-introduction.6-reliability
-- learn.azure-well-architected-introduction.7-security
 - learn.azure-well-architected-introduction.8-summary
 badge:
   uid: learn.azure-well-architected-introduction.badge

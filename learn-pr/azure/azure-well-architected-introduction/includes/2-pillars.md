@@ -10,41 +10,39 @@ These concepts aren't all-inclusive, but focusing on them can help you build a r
 
 The Azure Well-Architected Framework consists of five pillars:
 
-- Cost optimization
-- Operational excellence
-- Performance efficiency
+- Cost Optimization
+- Operational Excellence
+- Performance Efficiency
 - Reliability
 - Security
 
 ![An illustration that shows the pillars of the Azure Well-Architected Framework.](../media/pillars.png)
 
-### Cost optimization
+### Cost Optimization
 
-You want to design your cloud environment so that it's cost-effective for operations and development. Identify inefficiency and waste in cloud spending to ensure you're spending money where you can make the greatest use of it.
+The Cost Optimization pillar focuses on how to consider your return on investment (ROI) and financial constraints when you create business goals. This guidance helps you determine how to allocate budgets, define spending patterns and priority areas, and maximize your resource investments.
 
 ![An illustration that shows increasing quality, speed, and efficiency while maintaining decreasing costs.](../media/efficiency.png)
 
-### Operational excellence
+### Operational Excellence
 
-By taking advantage of modern development practices such as DevOps, you can enable faster development and deployment cycles. You need to have a good monitoring architecture in place so that you can detect failures and problems before they happen or, at a minimum, before your customers notice. Automation is a key aspect of this pillar to remove variance and error while increasing operational agility.
+The Operational Excellence pillar focuses on DevOps practices to help ensure workload quality through standardized workflows and team cohesion. This pillar defines procedures for development, observability, and release management to minimize process variance, human error, and customer disruption. 
 
-### Performance efficiency
+### Performance Efficiency
 
-For an architecture to perform well and be scalable, it should properly match resource capacity to demand. Traditionally, cloud architectures accomplish this balance by scaling applications dynamically based on activity in the application. Demand for services changes, so it's important for your architecture to be able to adjust to demand. By designing your architecture with performance and scalability in mind, you provide a great experience for your customers while being cost-effective.
+The Performance Efficiency pillar focuses on the ability of your workload to adjust to changes in demands. A workload must be able to handle an increase in load without compromising user experience. Conversely, when there's a decrease in load, the workload must conserve its resources. Capacity, which indicates resource availability (CPU and memory), is a significant factor. You need a comprehensive strategy to sustain performance targets over time.
 
 ![An illustration that shows how resources in the cloud scale dynamically based on demand, resulting in highly efficient usage. When resources are implemented at a fixed level, it results in inefficient usage during low demand and shortage during high demand.](../media/performance-demand.png)
 
 ### Reliability
 
-Every architect's worst fear is having an architecture fail with no way to recover it. A successful cloud environment is designed in a way that anticipates failure at all levels. Part of anticipating failures is designing a system that can recover from a failure within the time that your stakeholders and customers require.
+The Reliability pillar focuses on the resiliency, availability, and recoverability of your workload. A reliable workload must survive outages and malfunctions and continue to consistently provide its intended functionality. It must be resilient so that it can detect, withstand, and recover from failures within an acceptable time period. It must also be available so that users can access the workload during the promised time period at the promised quality level.
 
 :::image type="content" source="../media/system-failure.png" alt-text="An illustration that shows two virtual machines in a virtual network. One of the machines is shown as failed, while the other is working to service customer requests." loc-scope="other"::: <!--no-loc -->
 
 ### Security
 
-Data is the most valuable piece of your organization's technical footprint. In this pillar, you focus on securing access to your architecture through authentication and protecting your application and data from network vulnerabilities. You should also protect the integrity of your data through tools like encryption.
-
-You must think about security throughout the entire lifecycle of your application, from design and implementation to deployment and operations. The cloud provides protections against various threats, such as network intrusion and DDoS attacks. But you still need to build security into your application, processes, and organizational culture.
+The Security pillar focuses on your workload's resiliency to security concerns. A secure workload is resilient to attacks and incorporates the interrelated security principles of confidentiality, integrity, and availability (also known as the CIA Triad) in addition to meeting business goals. A Well-Architected workload must also be built with the Zero Trust approach.
 
 ![An illustration that shows the types of security threats and attacks that might affect your data in the cloud.](../media/security.png)
 

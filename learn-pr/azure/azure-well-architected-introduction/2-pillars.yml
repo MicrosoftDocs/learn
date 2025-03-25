@@ -13,4 +13,94 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/2-pillars.md)]
+quiz:
+  questions:
+  - content: What's the primary focus of the Cost Optimization pillar? 
+    choices:
+    - content: To ensure workload quality through standardized workflows
+      isCorrect: false
+      explanation: Incorrect. The Operational Excellence pillar emphasizes DevOps practices and standardized workflows to ensure workload quality.
+    - content: To evaluate return on investment (ROI) and financial constraints
+      isCorrect: true
+      explanation: Correct. The Cost Optimization pillar focuses on evaluating ROI and financial constraints to help allocate budgets, define spending patterns, and maximize resource investments.
+    - content: To enhance workload resiliency and recoverability
+      isCorrect: false
+      explanation: Incorrect. The Reliability pillar helps ensure that workloads can withstand and recover from failures.
+    - content: To improve security by using the CIA Triad and Zero Trust principles
+      isCorrect: false 
+      explanation: Incorrect. The Security pillar emphasizes confidentiality, integrity, availability, and Zero Trust principles.
+    - content: To optimize your workload's ability to adjust to changes in demand.
+      isCorrect: false 
+      explanation: Incorrect. The Performance Efficiency pillar helps ensures that workloads can scale efficiently based on demand.
 
+  - content: What's the primary focus of the Operational Excellence pillar? 
+    choices:
+    - content: To ensure workload quality through standardized workflows
+      isCorrect: true
+      explanation: Correct. The Operational Excellence pillar focuses on DevOps practices and standardized workflows to help ensure workload quality, minimize process variance, and reduce human error. 
+    - content: To evaluate return on investment (ROI) and financial constraints
+      isCorrect: false
+      explanation: Incorrect. The Cost Optimization pillar focuses on evaluating ROI and financial constraints.
+    - content: To enhance workload resiliency and recoverability
+      isCorrect: false
+      explanation: Incorrect. The Reliability pillar helps ensure that workloads can withstand and recover from failures.
+    - content: To improve security by using the CIA Triad and Zero Trust principles
+      isCorrect: false 
+      explanation: Incorrect. The Security pillar emphasizes confidentiality, integrity, availability, and Zero Trust principles.
+    - content: To optimize your workload's ability to adjust to changes in demand.
+      isCorrect: false  
+      explanation: Incorrect. The Performance Efficiency pillar helps ensures that workloads can scale efficiently based on demand.
+
+  - content: What's the primary focus of the Performance Efficiency pillar? 
+    choices:
+    - content: To ensure workload quality through standardized workflows
+      isCorrect: false
+      explanation: Incorrect. The Operational Excellence pillar emphasizes DevOps practices and standardized workflows to ensure workload quality.
+    - content: To evaluate return on investment (ROI) and financial constraints
+      isCorrect: false
+      explanation: Incorrect. The Cost Optimization pillar focuses on evaluating ROI and financial constraints.
+    - content: To enhance workload resiliency and recoverability
+      isCorrect: false
+      explanation: Incorrect. The Reliability pillar helps ensure that workloads can withstand and recover from failures. 
+    - content: To improve security by using the CIA Triad and Zero Trust principles
+      isCorrect: false 
+      explanation: Incorrect. The Security pillar emphasizes confidentiality, integrity, availability, and Zero Trust principles.
+    - content: To optimize your workload's ability to adjust to changes in demand.
+      isCorrect: true
+      explanation: Correct. The Performance Efficiency pillar focuses on ensuring that workloads can scale efficiently based on demand to maintain performance without compromising user experience.
+
+  - content: What's the primary focus of the Reliability pillar? 
+    choices:
+    - content: To ensure workload quality through standardized workflows
+      isCorrect: false
+      explanation: Incorrect. The Operational Excellence pillar emphasizes DevOps practices and standardized workflows to ensure workload quality.
+    - content: To evaluate return on investment (ROI) and financial constraints
+      isCorrect: false
+      explanation: Incorrect. The Cost Optimization pillar focuses on evaluating ROI and financial constraints.
+    - content: To enhance workload resiliency and recoverability
+      isCorrect: true
+      explanation: Correct. The Reliability pillar focuses on ensuring that workloads can withstand and recover from failures to maintain availability and consistent functionality.
+    - content: To improve security by using the CIA Triad and Zero Trust principles
+      isCorrect: false 
+      explanation: Incorrect. The Security pillar emphasizes confidentiality, integrity, availability, and Zero Trust principles.
+    - content: To optimize your workload's ability to adjust to changes in demand.
+      isCorrect: false
+      explanation: Incorrect.
+
+  - content: What's the primary focus of the Security pillar? 
+    choices:
+    - content: To ensure workload quality through standardized workflows
+      isCorrect: false
+      explanation: Incorrect. The Operational Excellence pillar emphasizes DevOps practices and standardized workflows to ensure workload quality.
+    - content: To evaluate return on investment (ROI) and financial constraints
+      isCorrect: false
+      explanation: Incorrect. The Cost Optimization pillar focuses on evaluating ROI and financial constraints.
+    - content: To enhance workload resiliency and recoverability
+      isCorrect: false
+      explanation: Incorrect. The Reliability pillar helps ensure that workloads can withstand and recover from failures.
+    - content: To improve security by using the CIA Triad and Zero Trust principles
+      isCorrect: true
+      explanation: Correct. The Security pillar focuses on ensuring that workloads are resilient to attacks by incorporating confidentiality, integrity, availability (the CIA Triad), and Zero Trust principles.
+    - content: To optimize your workload's ability to adjust to changes in demand.
+      isCorrect: false
+      explanation: Incorrect. The Security pillar emphasizes confidentiality, integrity, availability, and Zero Trust principles.

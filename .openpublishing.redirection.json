@@ -15923,6 +15923,26 @@
       "redirect_url": "/training/modules/python-create-run-program"
     },
     {
+      "source_path_from_root": "/learn-pr/azure/azure-well-architected-introduction/3-cost-optimization.yml",
+      "redirect_url": "/training/modules/azure-well-architected-cost-optimization"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/azure-well-architected-introduction/4-operational-excellence.yml",
+      "redirect_url": "/training/modules/azure-well-architected-operational-excellence"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/azure-well-architected-introduction/5-performance-efficiency.yml",
+      "redirect_url": "/training/modules/azure-well-architected-performance-efficiency"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/azure-well-architected-introduction/6-reliability.yml",
+      "redirect_url": "/training/modules/azure-well-architected-reliability"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/azure-well-architected-introduction/7-security.yml",
+      "redirect_url": "/training/modules/azure-well-architected-security"
+    },
+    {
       "source_path_from_root": "/learn-pr/languages/python-datatypes-numeric-operations/1-introduction.md",
       "redirect_url": "/training/modules/python-math-operators"
     },
