@@ -1,0 +1,42 @@
+### YamlMime:LearningPath
+uid: learn.wwl.run-sap-microsoft-cloud
+metadata:
+  title: Run SAP on the Microsoft Cloud
+  description: In this learning path, you learn about the relationship between Microsoft and SAP across the enterprise software landscape, driving technological innovation and delivering significant benefits to customers. Areas of focus include cloud migration with the RISE with SAP program, AI integration, enhancing workplace productivity, security enhancements, IoT collaboration, and data analytics.
+  ms.date: 03/25/2025
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: learning-path
+title: Run SAP on the Microsoft Cloud
+prerequisites: |
+  -   Experience using the Azure portal to create resources.
+  -   Basic knowledge of security concepts like identities, permissions, and encryption.
+  -   Basic knowledge of networking concepts like virtual networks and subnetting.
+  -   Basic knowledge of SAP RISE, GROW, and native.
+summary: |
+  In this learning path, you learn about the relationship
+  between Microsoft and SAP across the enterprise software landscape, driving
+  technological innovation and delivering significant benefits to customers. Areas
+  of focus include cloud migration with the RISE with SAP program, AI
+  integration, enhancing workplace productivity, security enhancements, IoT
+  collaboration, and data analytics.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+- business-analyst
+products:
+- azure
+- azure-sap
+subjects:
+- cloud-computing
+modules:
+- learn.wwl.introduction-sap-microsoft-cloud
+- learn.wwl.innovate-rise-sap-microsoft-cloud
+- learn.wwl.insights-sap-use-unified-analytics-ai-platform
+- learn.wwl.explore-azure-networking-sap-rise
+- introduction-azure-private-link
+- learn.wwl.secure-sap-microsoft-cloud
+trophy:
+  uid: learn.wwl.run-sap-microsoft-cloud.trophy
