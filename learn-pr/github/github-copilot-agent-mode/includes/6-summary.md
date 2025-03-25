@@ -11,12 +11,12 @@ Now that you completed this module, you should be able to:
 
 ## References
 
-- [Features of GitHub Copilot](https://github.com/features/copilot)
-- [GitHub Copilot: The Agent Awakens](https://github.blog/news-insights/product-news/github-copilot-the-agent-awakens)
-- [Introducing GitHub Copilot Agent Mode (preview)](https://code.visualstudio.com/blogs/2025/02/24/introducing-copilot-agent-mode)
-- [Developing in Visual Studio Code](https://code.visualstudio.com/docs)
+- [Features of GitHub Copilot](https://github.com/features/copilot?azure-portal=true)
+- [GitHub Copilot: The Agent Awakens](https://github.blog/news-insights/product-news/github-copilot-the-agent-awakens?azure-portal=true)
+- [Introducing GitHub Copilot Agent Mode (preview)](https://code.visualstudio.com/blogs/2025/02/24/introducing-copilot-agent-mode?azure-portal=true)
+- [Developing in Visual Studio Code](https://code.visualstudio.com/docs?azure-portal=true)
 
 ## Get Certified
-Enhance your skills and get certified! Microsoft AI Skillsfest participants will receive a 50% discount code for GitHub's newest certification exam- GitHub Copilot. The exam discount code is valid through May 28, 2025. Exams must be completed by June 30, 2025. You can register for your exam and review exam study materials by going to [our website](https://resources.github.com/learn/certifications/). 
+Enhance your skills and get certified! Microsoft AI Skillsfest participants will receive a 50% discount code for GitHub's newest certification exam- GitHub Copilot. The exam discount code is valid through May 28, 2025. Exams must be completed by June 30, 2025. You can register for your exam and review exam study materials by going to [our website](https://resources.github.com/learn/certifications/?azure-portal=true). 
 
 **COUPON CODE**: AN6T5E9C
