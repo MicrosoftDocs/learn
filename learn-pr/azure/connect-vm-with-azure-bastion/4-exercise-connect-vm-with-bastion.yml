@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.connect-vm-with-azure-bastion.exercise-connect-to-vm-with-bastion
-title: Exercise – Connect to a virtual machine by using Azure Bastion
+title: Exercise - Connect to a virtual machine by using Azure Bastion
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Exercise – Connect to a virtual machine by using Azure Bastion
-  description: Exercise – Connect to a virtual machine by using Azure Bastion
-  ms.date: 12/06/2023
+  title: Exercise - Connect to a virtual machine by using Azure Bastion
+  description: Exercise - Connect to a virtual machine by using Azure Bastion
+  ms.date: 03/25/2025
   author: cherylmc
   ms.author: cherylmc
   ms.topic: unit
