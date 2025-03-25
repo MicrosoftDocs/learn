@@ -49,7 +49,7 @@ F# Interactive command line options:
     See 'dotnet fsi --help' for options
 ```
 
-The end of an expression is delimited by the `;;` characters. No code is evaluated until you input the `;;` characters. This structure is useful when writing multi-line expressions since your code isn't delimited by new line characters.
+The `;;` characters delimit the end of an expression. No code is evaluated until you input the `;;` characters. This structure is useful when writing multi-line expressions since your code isn't delimited with new line characters.
 
 Evaluating F# code works the same way. The following code prints a message to the console.
 
@@ -74,7 +74,7 @@ After you use the F# Interactive REPL, use the `#q` or `#quit` commands to exit.
 > #q;;
 ```
 
-## fsx script files
+## F# script files
 
 As you write more code, you can save your code in a script with the *fsx* file extension.
 

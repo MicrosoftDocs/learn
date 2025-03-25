@@ -1,9 +1,9 @@
-In this exercise, we write our first line of F# code, which prints the message **Hello World** to the console.
+In this exercise, we write our first F# code, which prints the message **Hello World** to the console.
 
 ## Start F# Interactive
 
-1. Open a command prompt
-1. Enter the following .NET CLI command into the command prompt
+1. Open a command prompt.
+1. Enter the following .NET CLI command into the command prompt:
 
     ```dotnetcli
     dotnet fsi
@@ -20,9 +20,9 @@ In this exercise, we write our first line of F# code, which prints the message *
     >
     ```
 
-## Write your first line of code
+## Write your first F# code
 
-Add the following line of code next to the `>` character in the F# Interactive terminal
+Add the following line of code next to the `>` character in the F# Interactive terminal:
 
 ```fsharp
 printfn "Hello World!";;
@@ -35,7 +35,7 @@ Hello World!
 val it : unit = ()
 ```
 
-Congratulations! You've written your first line of F# code!
+Congratulations! You wrote your first line of F# code!
 
 ## (Optional) Write a script
 
