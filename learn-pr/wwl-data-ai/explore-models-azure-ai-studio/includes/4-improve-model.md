@@ -2,6 +2,9 @@ After you deploy your model to an endpoint, you can start interacting with it to
 
 Let's explore different ways to optimize the model and make it work better for your specific use case.
 
+> [!NOTE]
+> This unit discusses options and considerations for model optimization. A full exploration of *how* to apply optimization strategies is beyond the scope of this module.
+
 ## Apply prompt patterns to optimize your model's output
 
 The quality of the questions you send to the language model, directly influences the quality of the responses you get back. You can carefully construct your question, or **prompt**, to receive better and more interesting responses. The process of designing and optimizing prompts to improve the model's performance is also known as **prompt engineering**.

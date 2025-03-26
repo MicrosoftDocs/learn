@@ -1,8 +1,10 @@
-Foundation models, such as GPT-4, are state-of-the-art natural language processing models designed to understand, generate, and interact with human language. To understand the significance of foundation models, it's essential to explore their origins, which stem from advancements in the field of natural language processing.
+Generative AI applications are built on *language models*. The development process usually starts with an exploration and comparison of available *foundation* models to find the one that best suits the particular needs of your application. After selecting a suitable model, you deploy it to an endpoint where it can be consumed by a client application or AI agent.
 
-## Understand natural language processing
+In some cases, you might seek to optimize model responses for your application by applying *prompt engineering* techniques, implementing a *retrieve, augment, and generate (RAG)* solution that uses your own data to contextualize prompts, or by *fine-tuning* your chosen model with example prompts and responses that represent the conversational behavior you need. But it all begins with choosing the right model to start with.
 
-Natural language processing (NLP) is a type of artificial intelligence (AI) that focuses on understanding, interpreting, and generating human language. Some common NLP use cases are:
+## Foundation models
+
+Foundation models, such as the GPT family of models, are state-of-the-art language models designed to understand, generate, and interact with natural language. Some common use cases for models are:
 
 - **Speech-to-text and text-to-speech conversion**. For example, generate subtitles for videos.
 - **Machine translation**. For example, translate text from English to Japanese.
@@ -12,16 +14,11 @@ Natural language processing (NLP) is a type of artificial intelligence (AI) that
 - **Question answering**. For example, provide answers to questions like "What is the capital of France?"
 - **Reasoning**. For example, solve a mathematical problem.
 
-> [!Note]
-> In this module, you focus on exploring foundation models used for question answering. The foundation models you explore can be used for chat applications in which you use a language model to generate a response to a user's question.
+In this module, you focus on exploring foundation models used for question answering. The foundation models you explore can be used for chat applications in which you use a language model to generate a response to a user's question.
 
-### Understand the importance of the Transformer architecture
+> [!NOTE]
+> The latest breakthrough in generative AI models is owed to the development of the **Transformer** architecture. Transformers were introduced in the [*Attention is all you need* paper by Vaswani, et al. from 2017](https://arxiv.org/abs/1706.03762?azure-portal=true). The Transformer architecture provided two innovations to NLP that resulted in the emergence of foundation models:
+>
+> - Instead of processing words sequentially, Transformers process each word independently and in parallel by using **attention**.
+> - Next to the semantic similarity between words, Transformers use **positional encoding** to include the information about the position of a word in a sentence.
 
-The latest breakthrough in **Natural Language Processing** (**NLP**) is owed to the development of the **Transformer** architecture.
-
-Transformers were introduced in the [*Attention is all you need* paper by Vaswani, et al. from 2017](https://arxiv.org/abs/1706.03762?azure-portal=true). The Transformer architecture provided two innovations to NLP that resulted in the emergence of foundation models:
-
-- Instead of processing words sequentially, Transformers process each word independently and in parallel by using **attention**.
-- Next to the semantic similarity between words, Transformers use **positional encoding** to include the information about the position of a word in a sentence.
-
-Foundation models designed for NLP use cases are often referred to as **Large Language Models** (**LLMs**) or language models. In this module, you explore the available language models, how to select a model for your use case, and how to use a language model with the Azure AI Foundry portal. You focus on language models that help you to develop generative AI apps that serve as chat applications that do question answering, answering questions to your users.
