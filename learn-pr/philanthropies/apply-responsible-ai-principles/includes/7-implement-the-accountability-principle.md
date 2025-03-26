@@ -2,25 +2,25 @@ The Accountability principle states that AI systems and the AI developers should
 
 :::image type="icon" source="../media/implement-accountability-principle.png":::
 
-**Human oversight**. AI systems should be monitored to ensure responsible outcomes. For example, you should have learning content moderators and policy teams to oversee your AI system's recommendations to learners.
+**Human oversight:** AI systems should be monitored to ensure responsible outcomes. For example, you should have learning content moderators and policy teams to oversee your AI system's recommendations to learners.
 
-**Auditability**. AI systems should have capabilities that allow third parties to review their operations, recommendations, and performance data. For example, an AI grading tool should have APIs and logs allowing supervisors to audit candidate scores for systemic and societal biases.
+**Auditability:** AI systems should have capabilities that allow third parties to review their operations, recommendations, and performance data. For example, an AI grading tool should have APIs and logs allowing supervisors to audit candidate scores for systemic and societal biases.
 
-**Controls**. AI systems should have measures in place that give you control over the system when needed. For example, a moderation algorithm should have controls allowing you to intervene if the AI system produces inaccurate outputs.
+**Controls:** AI systems should have measures in place that give you control over the system when needed. For example, a moderation algorithm should have controls allowing you to intervene if the AI system produces inaccurate outputs.
 
 ## Purpose of ensuring the accountability of AI systems
 
 Accountability is a vital principle in the advancement of responsible AI.  It serves several important purposes, including:
 
-- **Transparency**. Accountability supports explainability by requiring that developers inspect and understand their systems' decision-making processes. This sheds light on how AI systems determine outputs and recommendations.
+- **Transparency:** Accountability supports explainability by requiring that developers inspect and understand their systems' decision-making processes. This sheds light on how AI systems determine outputs and recommendations.
 
-- **Fairness**. Accountability enables the evaluation of the equitable treatment of different learner groups and the correction of issues of discrimination or exclusion.
+- **Fairness:** Accountability enables the evaluation of the equitable treatment of different learner groups and the correction of issues of discrimination or exclusion.
 
-- **Reliability & safety**. Accountability allows for the mitigation of unintentional harm through controls that can remedy unsafe system operations.
+- **Reliability & safety:** Accountability allows for the mitigation of unintentional harm through controls that can remedy unsafe system operations.
 
-- **Trust**. Accountability builds public confidence that AI systems can operate reliably as intended and that AI creators can swiftly address unexpected problems.
+- **Trust:** Accountability builds public confidence that AI systems can operate reliably as intended and that AI creators can swiftly address unexpected problems.
 
-- **Improvement**. Accountability provides diagnostic data to continuously enhance system performance, avoid unintended consequences, and address technical limitations.
+- **Improvement:** Accountability provides diagnostic data to continuously enhance system performance, avoid unintended consequences, and address technical limitations.
 
 ## Setting up accountable AI systems
 
@@ -30,7 +30,7 @@ To ensure accountability in your AI system, you should:
 
 - Set up internal review boards to observe and provide guidance on the responsible implementation of AI systems. The boards can also help with tasks like defining best practices for documenting and testing AI systems during implementation or providing guidance for sensitive cases.
 
-- Ensure your team is trained to use and maintain the AI system responsibly and understand when the system may require extra technical support.
+- Ensure your team is trained to use and maintain the AI system responsibly, and understand when the system may require extra technical support.
 
 - Keep subject matter experts in the loop by reporting to them and involving them in decisions about AI system implementation. When automation of decisions is required, ensure that subject matter experts can inspect, identify, and resolve challenges with the AI system's output and execution.
 

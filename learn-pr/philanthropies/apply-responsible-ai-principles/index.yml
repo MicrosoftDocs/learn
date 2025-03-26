@@ -11,7 +11,7 @@ metadata:
   ms.collection:
     - philanthropies-ai-copilot
 title: Apply responsible AI principles in learning environments
-summary: In this module, you will explore Microsoft's responsible AI principles, which include fairness, reliability & safety, privacy & security, transparency, inclusiveness, and accountability. This module is essential for anyone looking to implement or build an AI system responsibly for a learning environment.
+summary: In this module, you'll explore Microsoft's responsible AI principles, which include fairness, reliability & safety, privacy & security, transparency, inclusiveness, and accountability. This module is essential for anyone looking to implement or build an AI system responsibly for a learning environment.
 abstract: |
   By the end of this module, you'll be able to:
   - Analyze the importance of using real-world data to evaluate the fairness of AI systems. 
