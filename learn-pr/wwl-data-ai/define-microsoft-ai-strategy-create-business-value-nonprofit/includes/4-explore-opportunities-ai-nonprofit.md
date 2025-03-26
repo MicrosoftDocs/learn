@@ -1,8 +1,8 @@
-_<Add intro para here>_
+AI is transforming the nonprofit sector by offering innovative solutions to enhance efficiency and impact. Let's explore some of the ways Microsoft AI can help organizations achieve their missions more effectively. From automating administrative tasks to providing valuable insights for decision-making, AI empowers nonprofits to optimize their operations, deliver programs more effectively, manage volunteers, and make data-driven decisions.
 
 ## Operational Efficiency
 
-AI can help nonprofits by automating and streamlining administrative tasks, freeing up time for mission-critical activities. The Microsoft Cloud for Nonprofit is designed specifically for the sector, offering automation and efficiency for essential workflows. Key products include Microsoft 365 Copilot, which works seamlessly with Word, Excel, PowerPoint, Outlook, and Teams.
+AI can help nonprofits by automating and streamlining administrative tasks, freeing up time for mission-critical activities. The Microsoft Cloud for Nonprofit offers automation and efficiency for essential workflows. Key products include Microsoft 365 Copilot, which works seamlessly with Word, Excel, PowerPoint, Outlook, and Teams.
 
 **Source**: [Empower your nonprofit with AI | Microsoft Nonprofits](https://www.microsoft.com/nonprofits/empower-your-nonprofit-with-AI)
 
@@ -20,11 +20,11 @@ AI can help manage volunteers by matching them with opportunities that fit their
 
 ## Data-Driven Decision Making
 
-AI can help nonprofits make data-driven decisions by analyzing large datasets to uncover valuable insights. This helps nonprofits make more informed choices and improve their effectiveness. Key products include Power BI, which enables nonprofits to visualize and analyze their data like a pro.
+AI can help nonprofits make data-driven decisions by analyzing large datasets to uncover valuable insights. This helps nonprofits make more informed choices and improve their effectiveness. Key products include Microsoft Power BI, to create reports and provide insights in minutes using natural language processing (NLP). This makes it easier for users to gain valuable insights from their data, which enables nonprofits to visualize and analyze their data like a pro.
 
 **Source**: [Empower your nonprofit with AI | Microsoft Nonprofits](https://www.microsoft.com/nonprofits/empower-your-nonprofit-with-AI)
 
-Consider that these products belong to a robust Microsoft ecosystem that ensures security and privacy. You can learn more about how to implement them in by reviewing the  Nonprofit Solutions & Technology website.
+Consider that these products belong to a robust Microsoft ecosystem including security and privacy. You can learn more about how to implement them in by reviewing [Nonprofit Solutions & Technology](https://www.microsoft.com/nonprofits).
 
 >[!TIP]
 > Take a moment to consider what opportunities you hope to realize with AI in your organization.

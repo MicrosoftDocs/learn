@@ -16,9 +16,9 @@ To serve its global patients, Operation Smile needed better support for translat
 
 ## The solution
 
-Operation Smile chose to work with Azure OpenAI Service, Fabric, and Power Apps, in collaboration with Microsoft and partner Squadra to streamline data input, accelerate patient triage, and replace manual processes.
+Operation Smile to worked with **Azure OpenAI Service**, **Microsoft Fabric**, and **Microsoft Power Apps** to streamline data input, accelerate patient triage, and replace manual processes.
 
-Working closely with Microsoft Tech for Social Impact and Microsoft AI Cloud Partner Program member Squadra, Operation Smile embarked on a transformative journey with Azure AI technologies to enhance its processes.
+Working closely with **Microsoft Tech for Social Impact** and **Microsoft AI Cloud Partner Program** member Squadra, Operation Smile embarked on a transformative journey with Azure AI technologies to enhance its processes.
 
 The first step was to digitalize the registration process and provide multi-language support with Microsoft Power Apps, eliminating error-prone manual data entry and providing offline service in areas without internet connection. This helps Operation Smile operate more efficiently and serve more patients in low-resource areas.
 
@@ -40,7 +40,7 @@ Translation errors are down by 90%, repeated medical events are down by 15%, rep
 
 Operation Smile can already see the impact of these tools on its processes, and it looks forward to continuing to measure their effectiveness as these deployments mature.
 
->![Screenshot of a woman and child consulting with a doctor.](../media/5-smile.jpg)
+>![Screenshot of a woman and child consulting with a doctor.](../media/7-smile.jpg)
 
 By using Power Apps for data collection, Operation Smile has already reduced translation errors by about 90%. The organization has also seen a 15% decrease in recurring medical issues, because the organization can now quickly identify and address problems with greater precision. The digitalization of forms and the use of Azure AI have reduced the time required for completing reports from four to five hours to just 15 to 20 minutes.
 
@@ -52,4 +52,4 @@ This is just the beginning of Operation Smile’s AI journey with Microsoft.
 
 To learn more, read [Operation Smile bridges the gap in access to care with Azure OpenAI and Fabric](https://www.microsoft.com/customers/story/19752-operation-smile-azure-ai-and-machine-learning?msockid=28b8f1b4a48c60e10eaee4a3a52b61e6).
 
-Next, let’s discuss another nonprofit success story, 
+Next, let’s discuss another nonprofit success story, XXXXXXXX.
