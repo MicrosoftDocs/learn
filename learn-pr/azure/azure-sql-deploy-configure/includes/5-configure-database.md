@@ -1,4 +1,4 @@
-You've verified that your deployment succeeded, and you know what resources are available. You might now want to configure your SQL managed instance, SQL database, or databases within a managed instance. These databases are called *managed databases*.
+You've verified that your deployment succeeded, and you know what resources are available. You might now want to configure your SQL managed instance, or SQL database.
 
 ## Configure Azure SQL Managed Instance
 
@@ -6,7 +6,7 @@ Azure SQL Managed Instance is essentially a managed SQL Server instance. Many co
 
 ## Database configuration
 
-For managed databases in Azure SQL Managed Instance and Azure SQL Database, you have options available with the `ALTER DATABASE` command. There are `SET` options, and you can select the `dbcompat` value that you want. This value can help in migrations. You can also use the `ALTER DATABASE` command to change the edition or service tier.
+For databases in Azure SQL Managed Instance and Azure SQL Database, you have options available with the `ALTER DATABASE` command. There are `SET` options, and you can select the `dbcompat` value that you want. This value can help in migrations. You can also use the `ALTER DATABASE` command to change the edition or service tier.
 
 In Azure SQL Database, you don't have access to the file configuration underneath. In Azure SQL Managed instance, you can perform file maintenance. Similar to SQL Managed Instance, you have options available for network connectivity, network configuration, and space management.
 
@@ -54,7 +54,7 @@ The Azure SQL Managed Instance and Azure SQL Database services restrict the foll
 * Logon audit is done through SQL audit.
 * Server proxy account isn't applicable.
 
-Azure SQL Managed Instance and SQL Database are platform as a service (PaaS) offerings. Restricting these choices shouldn't inhibit your ability to fully use a SQL Server managed service.
+Azure SQL Managed Instance and SQL Database are platform as a service (PaaS) offerings. Restricting these choices shouldn't inhibit your ability to use a fully managed SQL Server service.
 
 ## Storage management
 
