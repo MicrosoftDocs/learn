@@ -35,7 +35,7 @@ Your first task is to create a scale set. Configure it to run a web server, in t
       - service nginx restart
     ```
 
-    This file contains configuration information to install nginx on the VMs in the scale set.
+    This file contains configuration information to install *nginx* on the VMs in the scale set.
 
 1. Select **Ctrl**+**S** to save the file, then **Ctrl**+**Q** to close the code editor.
 
@@ -61,7 +61,7 @@ Your first task is to create a scale set. Configure it to run a web server, in t
     By default, the new Virtual Machine Scale Set has two instances and a load balancer.
 
     > [!NOTE]
-    > The `custom-data` flag specifies that the VM configuration should use the settings in the *cloud-init.yaml* file after the VM has been created. You can use a cloud-init file to install additional packages, configure security, and write to files when the machine is first installed.
+    > The `custom-data` flag specifies that the VM configuration should use the settings in the *cloud-init.yaml* file after the VM is created. You can use a cloud-init file to install more packages, configure security, and write to files when the machine is first installed.
     >
     > For more information, see [Cloud-init support for VMs in Azure](/azure/virtual-machines/linux/using-cloud-init).
 

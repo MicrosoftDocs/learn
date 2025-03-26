@@ -8,7 +8,7 @@ In this unit, you learn how to use a custom script extension to update an applic
 
 An Azure custom script extension downloads and runs a script on an Azure virtual machine. It can automate the same tasks on all the virtual machines (VMs) in a scale set.
 
-Store your custom scripts in Azure Storage or in GitHub. To add one to a VM, you can use the Azure portal. To run custom scripts as part of a templated deployment, combine a custom script extension with Azure Resource Manager templates.
+Store your custom scripts in Azure Storage or in GitHub. To add one to a virtual machine, you can use the Azure portal. To run custom scripts as part of a templated deployment, combine a custom script extension with Azure Resource Manager templates.
 
 ## Install an application across a scale set by using a custom script extension
 
@@ -60,7 +60,7 @@ az vmss extension set \
   --settings @yourConfigV2.json
 ```
 
-The VMs are updated according to the upgrade policy for the scale set. This policy when you first create the scale set. The upgrade policy can have one of the following three modes:
+The VMs are updated according to the upgrade policy for the scale set. You set this policy when you first create the scale set. The upgrade policy can have one of the following three modes:
 
 - **Automatic**: The scale set doesn't define when the VMs are upgraded. They could all update at the same time, causing a service outage.
 - **Rolling**: The scale set rolls out the update in batches across the VMs in the scale set. An optional pause can minimize or eliminate a service outage. In this mode, machines in the scale set might run different versions of the app for a short time. This mode requires that you either add a health probe to the scale set or apply the application health extension to the scale set.
