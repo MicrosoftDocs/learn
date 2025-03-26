@@ -195,13 +195,7 @@ namespace my_foundry_client
                 var projectClient = new AIProjectClient(connectionString, new DefaultAzureCredential());
 
                  // Get an Azure OpenAI chat client
-                ConnectionResponse connection = projectClient.GetConnectionsClient().GetDefaultConnection(ConnectionType.AzureOpenAI, withCredential: true);
-                var connectionProperties = connection.Properties as ConnectionPropertiesApiKeyAuth;
-                AzureOpenAIClient azureOpenAIClient = new(
-                    new Uri(connectionProperties.Target),
-                    new AzureKeyCredential(connectionProperties.Credentials.Key));
-                
-                ChatClient chatClient = azureOpenAIClient.GetChatClient("gpt-4-model");
+                ChatClient chatClient = projectClient.GetAzureOpenAIChatClient("gpt-4-model");
 
                 // Get a chat completion based on a user-provided prompt
                 Console.WriteLine("Enter a question:");
