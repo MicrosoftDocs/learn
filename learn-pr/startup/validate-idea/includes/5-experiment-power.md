@@ -25,7 +25,7 @@ The following examples of commonly used experiments start with simple, low-fidel
 
 **Pros:** This experiment type produces a simple-to-track click-through rate and conversion rate, if you correctly set up analytics before launching the ad.
 
-**Cons:** This experiment type demonstrates only relatively weak interest. Getting users to select a link might not translate to strong-enough interest to use or pay for your product.
+**Cons:** This experiment type demonstrates only relatively weak interest. Getting users to select a link might not translate to interest that's strong enough to use or pay for your product.
 
 **Practical tips:** Search term ads are valuable for testing interest among users who are already aware of the problem and are searching for a solution. Display ads and social media ads are better suited to users who have yet to reach this point of awareness.
 
@@ -39,13 +39,13 @@ The following examples of commonly used experiments start with simple, low-fidel
 
 **Cons:** You need a suitable domain and sufficient design input to ensure that the page looks professional.
 
-**Practical tips:** Ensure that your call to action is above the fold because not all visitors scroll through the whole page. You can drive traffic to the site by using methods like online ads, email campaigns, social media, and posting in relevant online forms. Use quotes from your customer interviews to highlight customer pain points. Ensure that you're always up front about the status of your product.
+**Practical tips:** Ensure that your call to action is above the fold, because not all visitors scroll through the whole page. You can drive traffic to the site by using methods like online ads, email campaigns, social media, and posting in relevant online forms. Use quotes from your customer interviews to highlight customer pain points. Ensure that you're always up front about the status of your product.
 
 ## Experiment type: Clickable prototype
 
 **Description:** Create a realistic mock-up of key screens from within your product by using a tool like Figma, InVision, or Microsoft Visio.
 
-**Purpose:** Observe users interacting with something that resembles your final product, and collect their feedback afterward.
+**Purpose:** Observe users interacting with something that resembles your final product and collect their feedback afterward.
 
 **Pros:** This experiment type can be a great way to find out what features customers get excited about. The length of time that a user spends engaging with the prototype can be a good indicator of interest.
 
@@ -55,11 +55,11 @@ The following examples of commonly used experiments start with simple, low-fidel
 
 ## Experiment type: Concierge
 
-**Description:** Deliver an outcome to customers manually. Walk customers through the steps that your software product is going to ultimately automate. For example, if the outcome is a report that you provide to customers based on their inputs, you might be able to capture the inputs via a simple form. Then, manually create the report, and send it to them.
+**Description:** Deliver an outcome to customers manually. Walk customers through the steps that your software product is going to ultimately automate. For example, if the outcome is a report that you provide to customers based on their inputs, you might be able to capture the inputs via a simple form. Then, manually create the report and send it to them.
 
 **Purpose:** By delivering an outcome to customers, you can test whether they perceive the outcome as valuable. In many cases, this assumption is more important to test than anything to do with the process by which you achieve the outcome.
 
-**Pros:** This experiment type can often be done quickly and cheaply, because you can deliver an outcome without having to build the product. It allows for collection of feedback from customers after they receive the outcome and derive the value. This experiment can also be an opportunity to make sales, as long as customers see sufficient value in the outcome. Walking customers through the process is a good way to test it and to ensure that you integrate any learnings when you actually begin building the product.
+**Pros:** You can often do this experiment type quickly and cheaply, because you can deliver an outcome without having to build the product. It allows you to collect feedback from customers after they receive the outcome and derive the value. This experiment can also be an opportunity to make sales, as long as customers see sufficient value in the outcome. Walking customers through the process is a good way to test it and to ensure that you integrate any learnings when you actually begin building the product.
 
 **Cons:** This experiment type doesn't scale well, so you're only able to deliver an outcome to a limited number of customers. Depending on the complexity of the process, you might need to set expectations so that customers know when they can expect a response.
 
@@ -73,7 +73,7 @@ The following examples of commonly used experiments start with simple, low-fidel
 
 **Pros:** This experiment type provides a more robust test of pricing than the concierge method, because from the customers' perspective, they're buying and using your product.
 
-**Cons:** This experiment type generally doesn't scale to a large number of customers because the process is manual. The experiment is suited to products that create a single output for customers (such as a report or actioning something), but not to products that require significant customer interaction.
+**Cons:** This experiment type generally doesn't scale to a large number of customers, because the process is manual. The experiment is suited to products that create a single output for customers (such as a report or actioning something), but not to products that require significant customer interaction.
 
 **Practical tips:** Be prepared to deliver an outcome to customers quickly, because they're unaware that the behind-the-scenes process is being done manually. It's generally a good idea to price your product so that you can deliver it profitably by using Wizard of Oz. Then, you can continue to deliver value manually for as long as you like. When you automate the process, your profit margin can only improve.
 
