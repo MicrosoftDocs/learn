@@ -12,7 +12,7 @@ In this exercise, we write our first F# code, which prints the message **Hello W
     When the F# Interactive terminal opens, you should see something similar to the following output:
 
     ```dotnetcli
-    Microsoft (R) F# Interactive version 11.0.0.0 for F# 5.0
+    Microsoft (R) F# Interactive version 13.9.201.0 for F# 9.0
     Copyright (c) Microsoft Corporation. All Rights Reserved.
     
     For help type #help;;
@@ -32,7 +32,7 @@ The code is evaluated and similar output displays on the console:
 
 ```fsharp
 Hello World!
-val it : unit = ()
+val it: unit = ()
 ```
 
 Congratulations! You wrote your first line of F# code!

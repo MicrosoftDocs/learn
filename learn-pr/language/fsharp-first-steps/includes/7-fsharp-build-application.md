@@ -33,7 +33,10 @@ There are two files in the *MyFSharpApp* directory:
 - **Program.fs** - The entrypoint for your application.
 - **MyFSharpApp.fsproj** - The MSBuild project file that contains build information and instructions. MSBuild is a platform for building applications that provides an XML schema for a project file that controls how the build platform processes and builds software.
 
-The *Program.fs* file contains the following code:
+> [!NOTE]
+> If your console template was created with a more recent version of .NET, it might generate code with an *implicit* entry point that calls the `printfn` function by default.
+
+In the following example, the *Program.fs* file contains code with an *explicit* entry point.
 
 ```fsharp
 // Learn more about F# at https://learn.microsoft.com/dotnet/fsharp
