@@ -7,8 +7,7 @@ metadata:
   ms.date: 03/20/2025
   author: Orin-Thomas
   ms.author: orthomas
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: unit
 durationInMinutes: 7
 content: |
   [!include[](includes/3-azure-ai-agent-service-role-based-access-control.md)]
