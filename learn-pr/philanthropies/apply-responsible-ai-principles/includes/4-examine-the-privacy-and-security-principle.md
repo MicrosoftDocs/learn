@@ -30,8 +30,8 @@ In addition to implementing technical protections, it's imperative to adopt resp
 
 **Address data breaches:** You should implement procedures to responsibly address data breaches through notifications to learners and prepared mitigation plans. Any incidents should be thoroughly analyzed to prevent recurrence and improve the security of AI systems and data. By taking these steps, you can help to ensure the ongoing safety and security of your systems and data.
 
-**Implement security teams:** You should appoint dedicated teams to manage data privacy and security.  Key functions should be centralized to ensure consistency in data privacy and security measures.
+**Implement security teams:** You should appoint dedicated teams to manage data privacy and security. Key functions should be centralized to ensure consistency in data privacy and security measures.
 
 :::image type="icon" source="../media/implement-security-teams.png":::
 
-Having established a foundation in privacy and security, you are now prepared to learn the principle of inclusiveness. In the next unit, you will navigate the necessity for AI systems to be fair and accessible, while also being attuned to the vast array of human experiences. It's about guaranteeing that AI is accessible to all, irrespective of their background or capabilities. This enables every individual to leverage AI to enhance their personal and communal well-being. By confirming that AI systems are not only just and reliable but also inclusive, we nurture a climate of trust and reliability in AI systems.
+Having established a foundation in privacy and security, you're now prepared to learn the principle of inclusiveness. In the next unit, you'll navigate the necessity for AI systems to be fair and accessible, while also being attuned to the vast array of human experiences. It's about guaranteeing that AI is accessible to all, irrespective of their background or capabilities. This enables every individual to leverage AI to enhance their personal and communal well-being. By confirming that AI systems aren't only just and reliable but also inclusive, we nurture a climate of trust and reliability in AI systems.

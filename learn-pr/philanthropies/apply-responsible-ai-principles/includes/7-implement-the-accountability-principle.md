@@ -10,7 +10,7 @@ The Accountability principle states that AI systems and the AI developers should
 
 ## Purpose of ensuring the accountability of AI systems
 
-Accountability is a vital principle in the advancement of responsible AI.  It serves several important purposes, including:
+Accountability is a vital principle in the advancement of responsible AI. It serves several important purposes, including:
 
 - **Transparency:** Accountability supports explainability by requiring that developers inspect and understand their systems' decision-making processes. This sheds light on how AI systems determine outputs and recommendations.
 
@@ -24,7 +24,7 @@ Accountability is a vital principle in the advancement of responsible AI.  It se
 
 ## Setting up accountable AI systems
 
-By ensuring that you are accountable for the AI systems you use, you can help promote trust, transparency, fairness, reliability & safety, and responsibility in using AI. As the person who implements an AI system, you are accountable for how the system operates. You should draw upon industry standards to develop accountability standards. These standards can ensure that AI systems are not the final authority on any decision that impacts people's lives. They also ensure that you have meaningful control over otherwise highly autonomous AI systems.
+By ensuring that you're accountable for the AI systems you use, you can help promote trust, transparency, fairness, reliability & safety, and responsibility in using AI. As the person who implements an AI system, you're accountable for how the system operates. You should draw upon industry standards to develop accountability standards. These standards can ensure that AI systems aren't the final authority on any decision that impacts people's lives. They also ensure that you have meaningful control over otherwise highly autonomous AI systems.
 
 To ensure accountability in your AI system, you should:
 
@@ -36,4 +36,4 @@ To ensure accountability in your AI system, you should:
 
 - Put in place a clear system of governance to conduct remediation or correction activities if AI models start operating in an unfair or potentially harmful manner.
 
-The accountability principle in AI helps ensure that AI systems are developed and managed responsibly. It involves continuous monitoring, human oversight, auditability, and control measures to maintain transparency, fairness, reliability, safety, and trust. By setting up accountable AI systems, developers and managers can foster public confidence, mitigate risks, and improve system performance, ultimately leading to more ethical and effective AI solutions. Remember, accountability is not just a guideline but a commitment to responsible AI implementation and governance.
+The accountability principle in AI helps ensure that AI systems are developed and managed responsibly. It involves continuous monitoring, human oversight, auditability, and control measures to maintain transparency, fairness, reliability, safety, and trust. By setting up accountable AI systems, developers and managers can foster public confidence, mitigate risks, and improve system performance, ultimately leading to more ethical and effective AI solutions. Remember, accountability isn't just a guideline but a commitment to responsible AI implementation and governance.

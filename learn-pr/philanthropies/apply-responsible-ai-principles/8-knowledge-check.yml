@@ -20,12 +20,12 @@ quiz:
         - content: "To confirm, the AI system's performance is consistent with its training data."
           isCorrect: false
           explanation: "Incorrect. While consistency with training data is important, the key reason for evaluation with real-world data is to ensure the system performs fairly across all demographic groups."
-        - content: "To ensure the AI system does not require any updates or improvements."
+        - content: "To ensure the AI system doesn't require any updates or improvements."
           isCorrect: false
           explanation: "Incorrect. Evaluation with real-world data is crucial precisely because it helps identify areas where the AI system may need updates or improvements to ensure fairness."
         - content: "To verify the AI system performs equitably for different demographic groups."
           isCorrect: true
-          explanation: "Correct. Evaluating real-world data is essential to ensure that the AI system's error rates are fair and do not disproportionately affect any demographic group."
+          explanation: "Correct. Evaluating real-world data is essential to ensure that the AI system's error rates are fair and don't disproportionately affect any demographic group."
     - content: "How does Microsoft's responsible AI standard promote accessibility?"
       choices:
         - content: "By requiring AI systems to be accessible through traditional interaction methods."
