@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-ai-agent-service-security-controls.summary
+title: Summary
+metadata:
+  title: Summary
+  description: TBD
+  ms.date: 03/20/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]
