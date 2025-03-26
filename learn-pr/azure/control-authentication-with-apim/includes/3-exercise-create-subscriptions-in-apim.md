@@ -79,7 +79,7 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
     | Resource group | Select a new or existing resource group. A resource group is a logical container that holds related resources for an Azure solution.  |
     | **Instance details** ||
     | Region | Select an available region. |
-    | Resource name | Enter **apim-WeatherData<random number>**; the random number is to ensure that the name is globally unique. Make a note of this resource name; it will be the API gateway name that you'll need it later in this exercise. |
+    | Resource name | Enter **apim-WeatherDataXXXX**; replace the XXXX with a random number to ensure that the name is globally unique. Make a note of this resource name; it will be the API gateway name that you'll need it later in this exercise. |
     | Organization name | Enter **Weather-Company**. |
     | Administrator email | The email address to receive all system notifications. |
     | **Pricing tier** ||
