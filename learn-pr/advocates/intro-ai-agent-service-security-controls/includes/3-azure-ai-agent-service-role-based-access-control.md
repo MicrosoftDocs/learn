@@ -33,4 +33,4 @@ When you create a hub, the built-in role-based access control permissions grant 
 - The resource you're trying to use has permissions set up to allow you to access it.
 - Your hub is allowed to access it.
 
-For example, if you're trying to consume a new Blob storage that isn't hosted within the associated Azure AI hub. In this circumstance you need to ensure that hub's managed identity is added to the Blob Storage Reader role for the Blob. You will also need to ensure that you have configured workplace managed outbound access to allow network communication to the endpoint associated with the blob storage. Network access configuration is covered in more detail by the next unit.
+For example, if you're trying to consume a new Blob storage that isn't hosted within the associated Azure AI hub. In this circumstance, you need to ensure that hub's managed identity is added to the Blob Storage Reader role for the Blob. You'll also need to ensure that you have configured workplace managed outbound access to allow network communication to the endpoint associated with the blob storage. Network access configuration is covered in more detail by the next unit.

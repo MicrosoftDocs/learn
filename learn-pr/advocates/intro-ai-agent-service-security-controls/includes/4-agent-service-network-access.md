@@ -9,8 +9,8 @@ You have the following options when configuring network access:
   - Allow Internet Outbound: Compute can access private resources and outbound data movement is unrestricted.
   - Allow Only Approved Outbound. Compute can access resources that specifically allowlisted and outbound data movement is restricted to approved addresses.
 
-![Screenshot of Azure AI Hub networking configuraiton in Azure portal](../media/networking-configuration.png)
+![Screenshot of Azure AI Hub networking configuraiton in Azure portal.](../media/networking-configuration.png)
 
 To access your non-Azure resources located in a different virtual network or located entirely on-premises from your Azure AI Foundry's managed virtual network, you need to configure and deploy an Application Gateway. Through this Application Gateway, you can configure full end to end access to your resources. Once you configure the Application Gateway, you can create a private endpoint from the Azure AI Foundry hub's managed virtual network to the Application Gateway. With the private endpoint, the full end to end path is secured and not routed through the Internet.
 
-![Architecture diagram of Application Gateway connection from Azure AI Foundary to external resources](../media/ai-foundry-app-gateway.png)
+![Architecture diagram of Application Gateway connection from Azure AI Foundary to external resources.](../media/ai-foundry-app-gateway.png)
