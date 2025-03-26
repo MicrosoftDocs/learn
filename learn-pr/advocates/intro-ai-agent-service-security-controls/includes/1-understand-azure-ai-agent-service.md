@@ -1,4 +1,4 @@
-Azure AI Agent Service is a fully managed service designed to empower developers to securely build, deploy, and scale high-quality, and extensible AI agents without needing to manage the underlying compute and storage resources. Tasks that can take hundreds of lines of code to support client side function calling may now be achieved with just a few lines of code with Azure AI Agent Service.
+Azure AI Agent Service is a fully managed service designed to empower developers to securely build, deploy, and scale high-quality, and extensible AI agents without needing to manage the underlying compute and storage resources. Tasks that can take hundreds of lines of code to support client side function calling can now be achieved with just a few lines of code with Azure AI Agent Service.
 
 An AI Agent acts as a "smart" microservice that can be used to answer questions (Retrieval Augmented Generation), perform actions, or completely automate workflows. AI agents achieve this by combining the power of generative AI models to understand information resources with tools that allow that model to access and interact with real-world data sources.
 

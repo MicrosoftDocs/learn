@@ -11,7 +11,7 @@ The Azure AI Foundry hub has built-in roles that are available by default.
 | **Azure AI Inference Deployment Operator** | Perform all actions required to create a resource deployment within a resource group. |
 | **Reader** | Read only access to the hub. This role is automatically assigned to all project members within the hub. |
 
-Hubs have the system-assigned managed identity assigned to the Azure AI Administrator role. This role is more narrowly scoped to the minimum permissions needed for the managed identity to perform its tasks. This system-assigned managed identity is inherited at the project level. Depending on how an Azure AI Agent is configured, it will either use the system-assigned managed identity when accessing data sources or performing actions such as running code, running a custom function or an Azure function.  
+Hubs have the system-assigned managed identity assigned to the Azure AI Administrator role. This role is more narrowly scoped to the minimum permissions needed for the managed identity to perform its tasks. This system-assigned managed identity is inherited at the project level. Depending on how an Azure AI Agent is configured, the process will use the system-assigned managed identity when accessing data sources or performing actions such as running code, running a custom function or an Azure function with the user's identity.  
 
 When a user is granted access to a project (for example, through the Azure AI Foundry portal permission management), two more roles are automatically assigned to the user. The first role is Reader on the hub. The second role is the Inference Deployment Operator role, which allows the user to create deployments on the resource group that the project is in.
 

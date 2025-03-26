@@ -1,4 +1,4 @@
-Network access for an Azure AI Agent associated with an Azure Foundry project is configured at the Hub level. You can only configure network settings for a hub in the Azure portal and can't configure network settings in Azure Foundry.
+You configure network access for an Azure AI Agent associated with an Azure Foundry project at the Hub level. You can only configure network settings for a hub in the Azure portal and can't configure network settings in Azure Foundry.
 
 You have the following options when configuring network access:
 

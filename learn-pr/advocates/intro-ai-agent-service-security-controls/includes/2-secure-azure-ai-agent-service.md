@@ -8,4 +8,4 @@ You can apply security controls through the Azure AI Foundry interface or by app
 - Network access
 - Monitoring alerts, metrics and logs
 
-At the Azure AI project level, you can configure role based access control, monitoring alerts, metrics, and logs, but can't configure network access restrictions. In most scenarios you configure security controls related to Azure AI Agents Service agents at the hub level. When you need to have different sets of security controls, you host Azure AI Agent Service agents in different Azure AI hubs.
+At the Azure AI project level, you can configure role based access control, monitoring alerts, metrics, and logs, but can't configure network access restrictions. In the majority of scenarios, you configure security controls related to Azure AI Agents Service agents at the hub level. When you need to have different sets of security controls, you host Azure AI Agent Service agents in different Azure AI hubs.

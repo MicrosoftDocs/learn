@@ -1,4 +1,4 @@
-In this module, you learned how to configure the security of AI agent service agents by configuring the security of AI foundry hubs and projects. You learned about the different RBAC roles that are associated with AI Foundry, how managed identity relates to AI agents, and how you configure network access and restrictions.
+In this module, you learned how to manage the security settings of AI agent service agents by configuring the security of AI foundry hubs and projects. You learned about the different RBAC roles that are associated with AI Foundry, how managed identity relates to AI agents, and how you configure network access and restrictions.
 
 ## Other Resources
 
