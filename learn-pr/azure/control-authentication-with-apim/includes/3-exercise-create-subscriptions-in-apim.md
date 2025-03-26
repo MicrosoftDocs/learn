@@ -1,13 +1,13 @@
 You can use the Azure API Management user interface in the Azure portal to create subscriptions and obtain subscription keys for use in client apps.
 
-Suppose your weather company has decided to make its meteorological data available to clients that subscribe and pay for this service. The critical requirement is to only allow access to clients that are allocated a key. As lead developer, you need to create an API gateway. You'll use the gateway to publish a RESTful Weather API that exposes an OpenAPI endpoint. You'll then secure the endpoint and allocate a client key.
+Suppose your weather company decided to make its meteorological data available to clients who subscribe and pay for this service. The critical requirement is to only allow access to clients who are allocated a key. As lead developer, you need to create an API gateway. You'll use the gateway to publish a RESTful Weather API that exposes an OpenAPI endpoint. You'll then secure the endpoint and allocate a client key.
 
 In this unit, you'll:
 
-- Publish a RESTful Weather API
-- Deploy an API Management gateway
-- Expose the Weather API through the gateway endpoint
-- Restrict access based on a subscription key
+- Publish a RESTful Weather API.
+- Deploy an API Management gateway.
+- Expose the Weather API through the gateway endpoint.
+- Restrict access based on a subscription key.
 
 [!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
@@ -49,14 +49,14 @@ To save time, let's start by running a script to host our API in Azure. The scri
 
     The script has seven parts and takes about a minute to run. Observe that, during deployment, all dependencies needed for our app to run are automatically installed on the remote App Service.
 
-    When the script has finished, it outputs two URLS, a Swagger URL, and an Example URL. You can use these URLs to test the app deployment.
+    When the script has finished, it outputs two URLS: a Swagger URL and an Example URL. You can use these URLs to test the app deployment.
 
-1. To test that our app deployed correctly, copy and paste the Swagger URL from Azure Cloud Shell output into your favorite browser. The browser should display the Swagger UI for our app, and declare the following RESTful endpoints:
+1. To test that our app deployed correctly, copy and paste the Swagger URL from Azure Cloud Shell output into your favorite browser. The browser should display the Swagger UI for our app and declare the following RESTful endpoints:
 
     - **api/weather/{latitude}/{longitude}**, which returns meteorological data for the current day given the specified latitude and longitude (double values).
     - **api/weather/{date}/{latitude}/{longitude}**, which returns meteorological data for the specified day (date value) at the specified latitude and longitude (double values).
 
-    ![Swagger view.](../media/3-swagger.png)
+    ![Screenshot of the app Swagger view.](../media/3-swagger.png)
 
 1. Finally, copy and save the Example URL from Azure Cloud Shell output. This location is the Swagger JSON URL. You'll need it later in this exercise.
 
@@ -68,22 +68,22 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
 
 1. On the Azure resource menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the resource menu, select **Integration**, and in the results, select **API Management**. The **Install API Management gateway** pane appears.
+1. In the resource menu, search for and select **API Management**. Select **Create**. The **Install API Management gateway** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value |
     | --- | --- |
-    | **Project details** |
+    | **Project details** ||
     | Subscription | Select your subscription.|
     | Resource group | Select a new or existing resource group. A resource group is a logical container that holds related resources for an Azure solution.  |
-    | **Instance details** |
+    | **Instance details** ||
     | Region | Select an available region. |
-    | Resource name | Enter `apim-WeatherData<random number>`; the random number is to ensure that the name is globally unique. Make a note of this resource name; it will be the API gateway name that you'll need it later in this exercise. |
-    | Workspace name | Enter `Weather-Company`. |
+    | Resource name | Enter **apim-WeatherData<random number>**; the random number is to ensure that the name is globally unique. Make a note of this resource name; it will be the API gateway name that you'll need it later in this exercise. |
+    | Organization name | Enter **Weather-Company**. |
     | Administrator email | The email address to receive all system notifications. |
-    | **Pricing tier** |
-    | Pricing tier | From the dropdown list, select `Consumption`. |
+    | **Pricing tier** ||
+    | Pricing tier | From the dropdown list, select **Consumption**. |
     | | |
 
 1. Select **Review + create**, and after validation passes, select **Create**.
