@@ -9,6 +9,7 @@ metadata:
   ms.author: chethusk 
   ms.topic: module
   ms.devlang: fsharp
+  ms.service: dotnet-fsharp
 title: Write your first F# code
 summary: "Take your first steps with F# - Set up your development environment, write your first F# code, and build your first application."
 abstract: | 
