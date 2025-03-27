@@ -23,7 +23,7 @@ You can use antimalware and antivirus tools to monitor and remedy malware. These
 
 ### Application security
 
-Attackers can compromise applications, whether they're yours or owned by a third party. The software may inadvertently contain security vulnerabilities that an attacker might use to access devices and network resources. If an application is developed in-house, you'll need to actively find and fix vulnerabilities that attackers could abuse. One solution is to test your application during its development lifecycle and implement whatever changes are needed to fix a potential vulnerability. If you're dealing with an application developed elsewhere, it's a good practice to apply updates as soon as they're available.
+Attackers can compromise applications, whether they're yours or owned by a third party. The software might inadvertently contain security vulnerabilities that an attacker could use to access devices and network resources. If an application is developed in-house, you'll need to actively find and fix vulnerabilities that attackers could abuse. One solution is to test your application during its development lifecycle and implement whatever changes are needed to fix a potential vulnerability. If you're dealing with an application developed elsewhere, it's a good practice to apply updates as soon as they're available.
 
 ### Behavioral analytics
 
@@ -53,7 +53,7 @@ A virtual private network (VPN) can establish an encrypted connection from one n
 
 ### Web security
 
-You can employ tools that secure how your people use the web. For example, you can use a web filter to prevent users from accessing certain types of sites that have been red flagged. These web-security tools also allow you to set up policies that help you decide how you want to handle different types of web requests in your network.
+You can employ tools that secure how your people use the web. For example, you can use a web filter to prevent users from accessing certain types of sites that have been red flagged. These web security tools also allow you to set up policies that help you decide how you want to handle different types of web requests in your network.
 
 ### Wireless security
 
@@ -103,7 +103,7 @@ Firewalls can perform several different functions across your network:
 
 - **Application-layer firewalls** can be a physical appliance or software-based, like a plug-in or a filter. These types of firewalls target your applications. For example, they could affect how requests for HTTP connections are inspected across each of your applications.
 
-- **Packet filtering firewalls** scrutinize each data packet as it travels through your network. Based on rules you configure, they decide whether to block the specific packet or not.
+- **Packet filtering firewalls** scrutinize each data packet as it travels through your network. they decide whether to block the specific packet or not based on rules you configure.
 
 - **Circuit-level firewalls** check whether TCP and UDP connections across your network are valid before data is exchanged. For example, this type of firewall might first check whether the source and destination addresses, the user, the time, and date meet certain defined rules. When these checks pass and a session starts, data is exchanged between parties without further scrutiny.
 
@@ -121,7 +121,7 @@ Firewalls can perform several different functions across your network:
 
 Firewalls help protect your network from the outside world. If you don't have a firewall set up:
 
-- An attacker could employ malware and take advantage of your bandwidth to use it for themselves.
+- Attackers could employ malware and take advantage of your bandwidth to use it for themselves.
 - Sensitive and private information about employees and clients could be stolen.
 - Your resources, devices, and the entire network could be held for ransom.
 
@@ -169,6 +169,6 @@ Configure **Azure virtual network service endpoints** so that critical Azure ser
 
 **Disable SSH/RDP** access whenever possible. These protocols are used to manage your virtual machines from a remote location, but attackers could attempt brute-force attacks if no proper protections are in place. Create a point-to-site VPN connection before enabling SSH/RDP for remote management.
 
-Use **load balancing** to improve the performance and availability of your network. When you use a load balancer, you distribute network traffic across the machines in your network. For example, if you have a couple of web servers that look after a website as part of your network, you can configure a load balancer to distribute the traffic between them. This way, you improve the performance and availability of the website.
+Use **load balancing** to improve your network's performance and availability. When you use a load balancer, you distribute network traffic across the machines in your network. For example, if you have a couple of web servers that look after a website as part of your network, you can configure a load balancer to distribute the traffic between them. This way, you improve the performance and availability of the website.
 
-A distributed denial-of-service (DDoS) attack overloads resources or services across your network so that they become unusable or inaccessible. **Azure DDoS Protection** provides automatic traffic monitoring and mitigating for DDoS attacks. You can interact with the service and enable additional features, like having access to DDoS experts, by upgrading to the Standard tier.
+A distributed denial-of-service (DDoS) attack overloads resources or services across your network so that they become unusable or inaccessible. **Azure DDoS Protection** provides automatic traffic monitoring and mitigation for DDoS attacks. You can interact with the service and enable additional features, like having access to DDoS experts, by upgrading to the Standard tier.

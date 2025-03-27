@@ -1,13 +1,13 @@
 ### YamlMime:Module
 uid: learn.azure.network-fundamentals-2
 metadata:
-  title: Fundamentals of network security
+  title: Fundamentals of Network Security
   description: Explore the fundamentals of computer networking security and monitoring.
-  ms.date: 07/13/2023
-  author: cryophobia
-  ms.author: chrvaw
+  ms.date: 03/27/2025
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: module
-title: Fundamentals of network security
+title: Fundamentals of Network Security
 summary: Explore the fundamentals of computer networking security and monitoring.
 abstract: | 
   In this module, you'll learn how to:
