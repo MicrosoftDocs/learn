@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-collection-types.importance-collections
+title: Importance of Collections
+metadata:
+  title: Importance of Collections
+  description: "Learn about the significance of collections in C# for managing groups of objects efficiently."
+  ms.date: 03/27/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-importance-collections.md)]

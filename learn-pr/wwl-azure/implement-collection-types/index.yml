@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.wwl.implement-collection-types
+metadata:
+  title: Implement Collection Types
+  description: "Learn, to use C# tools for managing groups of objects dynamically, ensuring type safety and efficient data manipulation."
+  ms.date: 03/27/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
+  ms.service: dotnet-csharp
+  ms.devlang: csharp
+  ai-usage: ai-assisted
+title: Implement collection types
+summary: In this module you learn, to use C# tools for managing groups of objects dynamically, ensuring type safety and efficient data manipulation.
+abstract: |
+  - Apply C# Collections for Efficient Data Management
+
+  - Manage ordered collections using `List&lt;T&gt;` in C#
+
+  - Manage unique collections with `HashSet&lt;T&gt;`
+
+  - Using `Dictionary&lt;TKey, TValue&gt;` for efficient key-value pair management in C#
+prerequisites: |
+  -   Visual Studio Code installed with the C# Dev Kit.
+
+  -   Basic knowledge of the Visual Studio Code IDE.
+
+  -   Basic understanding of the C# programming language.
+
+  -   Familiar with classes, abstract classes, interfaces and inheritance.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- dotnet
+units:
+- learn.wwl.implement-collection-types.introduction
+- learn.wwl.implement-collection-types.importance-collections
+- learn.wwl.implement-collection-types.implement-ordered-collections-list&lt;T&rt;
+- learn.wwl.implement-collection-types.ensuring-uniqueness-hashset&lt;T&rt;
+- learn.wwl.implement-collection-types.organize-data-key-value-pairs-using-dictionary&lt;tkey,-tvalue&rt;
+- learn.wwl.implement-collection-types.exercise-implement-collection-types
+- learn.wwl.implement-collection-types.knowledge-check
+- learn.wwl.implement-collection-types.summary
+badge:
+  uid: learn.wwl.implement-collection-types.badge
