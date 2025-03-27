@@ -1,4 +1,4 @@
-![Rendering of a two parallel horizontal lines representing the Data Store Element.](../media/data-store.png)
+![Rendering of two parallel horizontal lines representing the Data Store Element.](../media/data-store.png)
 
 The **data store element** is depicted as parallel lines. This element represents data stored on a temporary or permanent basis.
 
@@ -21,6 +21,6 @@ Include the following context with each data store element:
 |Context|Questions|
 |-------|---------|
 |Type|Does the system use Azure SQL, cookies, local, or some other type of storage? If so, what is it?|
-|Function|How is the storage used? Is it used to share data, store backups, security logs, credentials, secrets?|
+|Function|How is the storage used? Is it used to share data, store backups, security logs, credentials, or secrets?|
 |Permission level|How is access control implemented? Who has read and write permissions?|
 |Additional controls|Is data encrypted? What about the disk? Are digital signatures used?|
