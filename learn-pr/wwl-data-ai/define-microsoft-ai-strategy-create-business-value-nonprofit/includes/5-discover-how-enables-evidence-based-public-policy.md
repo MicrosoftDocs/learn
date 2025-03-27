@@ -1,10 +1,12 @@
 **Microsoft Teams, Outlook, Microsoft 365 Copilot**
 
-_<add Intro text>_
+Nonprofit organizations can use Microsoft 365 Copilot to enhance productivity and support staff creativity. Discover how Microsoft 365 Copilot helps RTI staff focus on mission-critical tasks, streamline workflows, and drive impactful research.
 
 ## The organization
 
 RTI International is an independent, nonprofit research institute dedicated to improving the human condition. RTI's work in social and laboratory sciences, engineering, and international development helps clients inform public policy and ground practice in evidence.
+
+>![Screenshot of a woman working in a lab.](../media/5-rti.jpg)
 
 ## The challenge
 

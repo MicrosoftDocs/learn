@@ -4,13 +4,13 @@ When you adopt AI in a nonprofit project, what can you expect? What potential ob
 
 The main goal for AI projects in the Nonprofit industry is to use AI technology to **enhance the impact and efficiency of nonprofit organizations**. This includes optimizing grant writing and fundraising efforts, improving donor engagement, and using data-driven decision-making to better serve their missions.
 
-When nonprofit organizations implement AI solutions, they are often trying to address challenges achieving these goals:
- - Program management
+When nonprofit organizations implement AI solutions, they are often trying to address challenges to achieve these goals:
  - Volunteer management
  - Fundraising
  - Grant management
  - Donor relations
  - People development
+ - Program management
 
 >![Screenshot of warehouse with volunteers packing boxes.](../media/3-volunteer.jpg)
 
