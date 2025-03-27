@@ -1,6 +1,6 @@
 A `Dictionary<TKey, TValue>` is a generic collection in C# that stores data as key-value pairs, where each key is unique and maps to a specific value. It's ideal for scenarios requiring fast lookups based on unique identifiers, such as creating a phonebook or mapping product IDs to prices.
 
-## Define and explain the purpose of Dictionary<TKey, TValue> for organizing key-value pairs
+## Define and explain the purpose of Dictionary&#60;TKey, TValue&#62; for organizing key-value pairs
 
 A `Dictionary<TKey, TValue>` is part of the `System.Collections.Generic` namespace in C#. It stores data as key-value pairs, where each key is unique and maps to a specific value. This structure is ideal for scenarios where quick lookups are required based on unique identifiers.
 
@@ -12,7 +12,7 @@ The `Dictionary<TKey, TValue>` class provides methods like `Add` for inserting n
 > [!NOTE]
 > If you attempt to add a duplicate key using the `Add` method, an `ArgumentException` is thrown. However, using the indexer overwrites the existing value associated with the key.
 
-## Add, retrieve, and iterate through key-value pairs in a Dictionary<TKey, TValue>
+## Add, retrieve, and iterate through key-value pairs in a Dictionary&#60;TKey, TValue&#62;
 
 Adding key-value pairs to a dictionary can be done using the `Add` method or the index initializer. Retrieving values is straightforward using the key, and iteration is possible using loops.
 
@@ -87,7 +87,7 @@ foreach (var kvp in students)
 
 This code iterates through all key-value pairs in the dictionary and displays each key and its corresponding value.
 
-## Create practical applications like a phonebook or product ID-to-price mapping using Dictionary<TKey, TValue>
+## Create practical applications like a phonebook or product ID-to-price mapping using Dictionary&#60;TKey, TValue&#62;
 
 The versatility of `Dictionary<TKey, TValue>` makes it suitable for real-world applications such as:
 

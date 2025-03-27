@@ -12,17 +12,17 @@ Collections in C# allow developers to handle similar data more efficiently by st
 > [!NOTE]
 > For examples, you might need to add using directives for the `System.Collections.Generic` and `System.Linq` namespaces.
 
-## Describe List<T>, HashSet<T>, and Dictionary<TKey, TValue>
+## Describe List&#60;T&#62;, HashSet&#60;T&#62;, and Dictionary&#60;TKey, TValue&#62;
 
-### **List<T>**
+### **List&#60;T&#62;**
 
 `List<T>` is an indexable collection that allows access to elements by their position. It supports dynamic resizing, making it suitable for scenarios where the number of elements can change.
 
-### **HashSet<T>**
+### **HashSet&#60;T&#62;**
 
 `HashSet<T>` is a collection designed for high-performance set operations. It doesn't allow duplicate elements and is ideal for scenarios where uniqueness is required.
 
-### **Dictionary<TKey, TValue>**
+### **Dictionary&#60;TKey, TValue&#62;**
 
 `Dictionary<TKey, TValue>` stores elements as key/value pairs, enabling quick look-up by key. It's useful when you need to associate values with unique keys, such as mapping customer IDs to account details in a banking application.
 

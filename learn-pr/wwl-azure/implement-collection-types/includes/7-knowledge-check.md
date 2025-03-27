@@ -12,6 +12,6 @@ A banking application needs to store customer IDs with their associated account 
 
 ## Multiple Choice
 Which of these collections in C# supports dynamic resizing and access to elements by index?
-(x) `List<T>` {{Correct. List<T> supports dynamic resizing and allows access to elements by their index, making it versatile for various scenarios.}}
+(x) List&#60;T&#62; {{Correct. List&#60;T&#62; supports dynamic resizing and allows access to elements by their index, making it versatile for various scenarios.}}
 ( ) `Dictionary<TKey, TValue>` {{Incorrect. `Dictionary<TKey, TValue>` stores elements as key/value pairs and doesn't provide index-based access.}}
 ( ) `HashSet<T>` {{Incorrect. `HashSet<T>` is designed for set operations and doesn't support index-based access or dynamic resizing.}}
