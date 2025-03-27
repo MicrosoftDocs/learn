@@ -1,5 +1,5 @@
-Implementing HADR database platform solutions is more than just deploying a feature. Understand why and what you are doing to implement the right strategy.
+Implementing High Availability and Disaster Recovery (HADR) solutions for a database platform involves more than just deploying a feature. It's crucial to understand the reasons behind your choices and the strategies you're implementing.
 
-Suppose you need to implement high availability and disaster recovery (HADR) for an IaaS virtual machine that is running SQL Server 2019. Do you know how much time you would have to bring things back online if there was a problem? Do you know what options are available in SQL Server and the reasons for choosing one option over another?
+For example, if you need to set up HADR for a virtual machine, do you know how much time you have to bring everything back online if there's a problem? Are you aware of the available options in SQL Server and the reasons for choosing one over another?
 
-By the end of this module, you will have a solid foundation that will allow you to implement HADR solutions in Azure.
+By the end of this module, you'll have a solid foundation to implement HADR solutions in Azure.
