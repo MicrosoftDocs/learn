@@ -10,9 +10,9 @@ RTI International is an independent, nonprofit research institute dedicated to i
 
 ## The challenge
 
-By 2030, RTI aims to improve the well-being of one billion people worldwide through its science-based solutions. With such an ambitious goal, every bit of gained productivity matters. To become more efficient and to support their staff members’ creativity, RTI decided to experiment with Microsoft 365 Copilot, the AI-powered assistant.
+By 2030, RTI aims to improve the well-being of 1 billion people worldwide through its science-based solutions. With such an ambitious goal, every bit of gained productivity matters. To become more efficient and to support their staff members’ creativity, RTI decided to experiment with Microsoft 365 Copilot, the AI-powered assistant.
 
-“Ultimately, what we have to offer is our energy and our time,” says Amanda Greenway, Manager of Collaboration Technologies at RTI. “As much as we can route away from tasks like finding the perfect wording for emails and reading chats, the more we can focus on finding solutions for our clients.”
+"Ultimately, what we have to offer is our energy and our time," says Amanda Greenway, Manager of Collaboration Technologies at RTI. “As much as we can route away from tasks like finding the perfect wording for emails and reading chats, the more we can focus on finding solutions for our clients."
 
 ## The solution
 
@@ -20,7 +20,7 @@ RTI International implemented Microsoft 365 Copilot to enhance productivity and 
 
 ## The results
 
-Ultimately, support from AI helps RTI staff do more of what moves the needle on global issues. “Copilot gives us more time to stay in a flow state while at work,” Greenway says. Fewer interruptions and greater efficiencies, coupled with RTI staff members’ passion and dedication, help the nonprofit ask the big questions and carry out their mission.
+Ultimately, support from AI helps RTI staff do more of what moves the needle on global issues. "Copilot gives us more time to stay in a flow state while at work," Greenway says. Fewer interruptions and greater efficiencies, coupled with RTI staff members’ passion and dedication, help the nonprofit ask the large questions and carry out their mission.
 
 To learn more, read [Research nonprofit RTI International improves the human condition with Microsoft 365 Copilot](https://www.microsoft.com/customers/story/1802830664758543360-rti-international-microsoft-teams-nonprofit-en-united-states).
 
