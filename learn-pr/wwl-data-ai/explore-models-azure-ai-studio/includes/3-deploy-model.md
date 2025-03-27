@@ -1,6 +1,6 @@
 When you develop a generative AI app, you need to integrate language models into your application. To be able to use a language model, you need to deploy the model. Let's explore how to deploy language models in the Azure AI Foundry, after first understanding why to deploy a model.
 
-## Why to deploy a model
+## Why deploy a model?
 
 You train a model to generate output based on some input. To get value out of your model, you need a solution that allows you to send input to the model, which the model processes, after which the output is visualized for you.
 
@@ -46,7 +46,9 @@ You can deploy:
 
 The associated cost depends on the type of model you deploy, which deployment option you choose, and what you are doing with the model:
 
-|Activity|Azure OpenAI models|Azure AI model inference| Serverless APIs (pay-as-you-go)|Managed compute|
-|---|---|---|---|---|
-|Deploy the model|No cost|No cost|Minimal endpoint cost|Charged per minute|
-|Call the endpoint|Token-based billing|Token-based billing|Token-based billing|No charge|
+| | Azure OpenAI Service | Azure AI model inference | Serverless compute | Managed compute |
+|---------------|----------------------|--------------------------|--------------------|-----------------|
+| **Supported models** | Azure OpenAI models | *Flagship* models (including Azure OpenAI models and Models-as-a-service models) | Models-as-a-service models | Open and custom models |
+| **Hosting service** | Azure OpenAI resource | Azure AI Services resource | AI Project resource | AI Project resource |
+| **Deployment cost** | - | - | Minimal endpoint cost | Charged per minute |
+| **Inferencing cost** | Token-based billing | Token-based billing | Token-based billing | - |
