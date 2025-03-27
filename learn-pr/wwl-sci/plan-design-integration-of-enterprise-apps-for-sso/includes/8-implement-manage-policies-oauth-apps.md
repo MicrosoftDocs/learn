@@ -11,7 +11,7 @@ In addition to the existing investigation of OAuth apps connected to your enviro
 
 4. Select the **New policy** from search button.
     
-   :::image type="content" source="../media/oauth-policy-dialog.png" alt-text="Screenshot of the Microsoft Defender for Cloud Apps site with the create OAuth Policy dialog open.":::
+   :::image type="content" source="../media/oauth-policy-dialog.png" alt-text="Screenshot of the Microsoft Defender for Cloud Apps site with the OAuth Policy dialog open.":::
     
 5. You can use the **Community use** filter to get information on whether allowing permission to this app is common, uncommon, or rare.
     

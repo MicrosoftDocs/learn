@@ -31,7 +31,7 @@ Here, you add an Enterprise app that you can use for the exercise.
     
 6. In the results, select **GitHub Enterprise Cloud – Enterprise Account**.
 7. In the **GitHub Enterprise Cloud – Enterprise Account**, review the settings and then select **Create**.
-8. Once the account is created, you are redirected to the **GitHub Enterprise Cloud – Enterprise Account** screen.
+8. Once the account is created, you're redirected to the **GitHub Enterprise Cloud – Enterprise Account** screen.
 
 ## Assign users to an app
 

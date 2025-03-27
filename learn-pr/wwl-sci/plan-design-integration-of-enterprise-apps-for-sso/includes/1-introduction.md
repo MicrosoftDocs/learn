@@ -12,5 +12,5 @@ In this module, you'll:
 
 ## Prerequisites
 
-- Solid usage experience of admin centers within the Micrsoft Cloud.
+- Solid usage experience of admin centers within the Microsoft Cloud.
 - Experience with using application in the cloud

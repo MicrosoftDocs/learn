@@ -42,7 +42,7 @@ In some cases, enterprise applications created from the application gallery incl
 4. Select **Add** to select one or more owners to add to the app.
 
 > [!IMPORTANT]
-> Users and service principals can be owners of application registrations. Only users can be owners of enterprise applications. Groups cannot be assigned as owners of either.
+> Users and service principals can be owners of application registrations. Only users can be owners of enterprise applications. Groups can't be assigned as owners of either.
 
 Owners can add credentials to an application and use those credentials to impersonate the application’s identity. The application has more permissions than the owner, and thus would be an elevation of privilege over what the owner has access to as a user or service principal. Depending on the application's permissions, an application owner could potentially create or update users or other objects while impersonating the application.
 
