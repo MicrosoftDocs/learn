@@ -5,8 +5,8 @@ metadata:
   prefetch-feature-rollout: true
   title: Explore IaaS and PaaS solutions for high availability and disaster recovery
   description: Explore IaaS and PaaS solutions for high availability and disaster recovery
-  ms.date: 05/13/2022
-  author: wwlpublish
+  ms.date: 03/27/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module
   ms.service: azure
@@ -16,8 +16,8 @@ abstract: |
   After completing this module, you will be able to:
   - Explore options for deploying a WSFC in Azure
   - Explore options for deploying an AG in Azure
-  - Implement Temporal Tables
   - Plan active geo-replication and auto-failover groups
+  - Monitor high availability
 prerequisites: |
   - Experience creating and configuring resources using the Azure portal.
   - Basic understanding of SQL Server file storage.
@@ -36,9 +36,9 @@ units:
 - learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.introduction
 - learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.describe-failover-clustering-windows-server
 - learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.configure-always-availability-groups
-- learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.describe-temporal-tables-azure-sql-database
 - learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.describe-active-geo-replication
 - learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.explore-auto-failover-groups
+- learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.monitor
 - learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.exercise
 - learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.knowledge-check
 - learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.summary
