@@ -6,6 +6,6 @@ Because Azure AI Agent Service is a service fully managed by Microsoft, you can 
 
 As Azure AI Agent Service is a service managed by Microsoft and you don't need to worry about the underlying security of its moving parts, you should still apply standard security principles when you use the AI agent service. These principles include:
 
-- Restrict access to the service using role based access control. Ensure that only appropriate security principals can interact with the AI agent service and institute the principle of least priviledge.
+- Restrict access to the service using role based access control. Ensure that only appropriate security principals can interact with the AI agent service and institute the principle of least privilege.
 - Restrict the access of the AI Agent service. The AI Agent service is interacting with sensitive resources, such as organizational data. Ensure that the scope of this access is limited and that the AI Agent service and its tools only have necessary visibility of resources such as data stores.
 - Restrict network access to the AI Agent service and the network access of the AI agent service. Limit which network hosts can interact with the AI Agent service and control which network hosts the AI Agent service and it's associated tools are able to reach.
