@@ -26,4 +26,4 @@ Some scenarios require you as a DBA to configure a secondary replica on a differ
 
 Cross subscription geo-replication is only available programmatically.
 
-To learn more about the steps required to configure a cross subscription geo-replication, see [Cross-subscription geo-replication](/azure/azure-sql/database/active-geo-replication-overview?view=azuresql#cross-subscription-geo-replication).
+To learn more about the steps required to configure a cross subscription geo-replication, see [Cross-subscription geo-replication](/azure/azure-sql/database/active-geo-replication-overview).

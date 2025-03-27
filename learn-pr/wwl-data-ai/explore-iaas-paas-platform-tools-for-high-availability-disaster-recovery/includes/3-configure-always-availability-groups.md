@@ -2,7 +2,7 @@ Configuring an Availability Group (AG) in Azure is quite similar to doing so on-
 
 Avoid placing any permanent databases on temporary storage. All virtual machines (VMs) participating in an AG should have identical storage configurations. It's crucial to size disks appropriately based on the application's workload to ensure optimal performance.
 
-Before an AG can be configured, the AG feature must be enabled. This can be done in SQL Server Configuration Manager as shown in the image below or via PowerShell with the cmdlet [Enable-SqlAlwaysOn](/powershell/module/sqlps/enable-sqlalwayson?view=sqlserver-ps). Enabling the AG feature will require a stop and start of the SQL Server service.
+Before an AG can be configured, the AG feature must be enabled. This can be done in SQL Server Configuration Manager as shown in the image below or via PowerShell with the cmdlet [Enable-SqlAlwaysOn](/powershell/module/sqlps/enable-sqlalwayson). Enabling the AG feature will require a stop and start of the SQL Server service.
 
 :::image type="content" source="../media/module-77-high-availability-final-10.png" alt-text="Enabling the Availability Groups Feature in SQL Server Configuration Manager":::
 
