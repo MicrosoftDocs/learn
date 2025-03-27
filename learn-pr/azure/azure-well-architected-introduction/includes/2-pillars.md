@@ -44,7 +44,7 @@ The principles of the Reliability pillar can help achieve business goals. A reli
 
 ### Security
 
-The Security pillar helps make your workloads resilient to security concerns. Security incidents can hurt your reputation, operations, and finances, so it's crucial that you add strong security measures. A secure workload is resilient to attacks. To see if your security measures are effective, ask yourself if your defenses are strong enough to stop attacks and limit damage. A key part of implementing security is building with a Zero Trust approach and following the CIA triad: confidentiality, integrity, and availability. 
+The Security pillar helps make your workloads resilient to security concerns. Security incidents can hurt your reputation, operations, and finances, so it's crucial that you add strong security measures. A secure workload is resilient to attacks. To see if your security measures are effective, ask yourself if your defenses are strong enough to stop attacks and limit damage. A key part of implementing security is building with a Zero Trust approach and following the CIA Triad: confidentiality, integrity, and availability. 
 
 ![An illustration that shows the types of security threats and attacks that might affect your data in the cloud.](../media/security.png)
 

@@ -6,8 +6,8 @@ metadata:
   title: Introduction to the Microsoft Azure Well-Architected Framework
   description: Learn how using key principles throughout your cloud architecture can help you design and build a solid architectural foundation that you can continuously improve.
   ms.date: 04/17/2023
-  author: martinekuan
-  ms.author: martinek
+  author: PageWriter-MSFT
+  ms.author: prwilk
   ms.topic: module
   ms.service: azure-waf
 title: Introduction to the Microsoft Azure Well-Architected Framework

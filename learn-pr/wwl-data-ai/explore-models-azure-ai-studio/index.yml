@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Choose and deploy models from the model catalog in Azure AI Foundry portal
   description: "Choose the various language models that are available through the Azure AI Foundry's model catalog. Understand how to select, deploy, and test a model, and to improve its performance."
-  ms.date: 03/14/2025
+  ms.date: 03/26/2025
   author: madiepev
   ms.author: madiepev
   ms.topic: module-standard-task-based 

@@ -5,8 +5,8 @@ metadata:
   description: Learn how to design and build secure, scalable, high-performing solutions in Azure using the pillars of the Microsoft Azure Well-Architected Framework.
   brand: azure
   ms.date: 05/19/2020
-  author: martinekuan
-  ms.author: martinek
+  author: PageWriter-MSFT
+  ms.author: prwilk
   ms.topic: learning-path
   ms.custom: ai-learning-hub
 title: Build great solutions with the Microsoft Azure Well-Architected Framework
