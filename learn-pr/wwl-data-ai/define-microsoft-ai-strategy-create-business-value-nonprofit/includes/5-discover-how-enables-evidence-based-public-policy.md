@@ -6,7 +6,7 @@ Nonprofit organizations can use Microsoft 365 Copilot to enhance productivity an
 
 RTI International is an independent, nonprofit research institute dedicated to improving the human condition. RTI's work in social and laboratory sciences, engineering, and international development helps clients inform public policy and ground practice in evidence.
 
->![Screenshot of a woman working in a lab.](../media/5-rti.jpg)
+>![Screenshot of a woman working in an RTI lab.](../media/5-RTI.jpg)
 
 ## The challenge
 
@@ -24,4 +24,4 @@ Ultimately, support from AI helps RTI staff do more of what moves the needle on 
 
 To learn more, read [Research nonprofit RTI International improves the human condition with Microsoft 365 Copilot](https://www.microsoft.com/customers/story/1802830664758543360-rti-international-microsoft-teams-nonprofit-en-united-states).
 
-<Next, let’s discover how Veteran's Wellbeing Network help members of the Australian Defense Force (ADF).>
+Next, let’s discover how Veteran's Wellbeing Network help members of the Australian Defense Force (ADF).

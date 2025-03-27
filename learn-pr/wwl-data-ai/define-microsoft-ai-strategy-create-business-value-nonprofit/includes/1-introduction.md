@@ -4,4 +4,4 @@ Finding the right tools and partnerships to implement these AI use cases can be 
 
 It’s not enough to just use AI for nonprofit projects. AI practices and solutions must comply with the ethical standards of responsible AI. These requirements include fairness, reliability, privacy, security, inclusivity, transparency, and accountability. These standards are maintained during the development and maintenance of all Microsoft AI products and services.
 
-**UPDATE**: Next, <let’s lets hear from Melanie Nakagawa, Chief Sustainability Officer at Microsoft>.
+Next, let’s lets learn about Microsoft AI and nonprofits.

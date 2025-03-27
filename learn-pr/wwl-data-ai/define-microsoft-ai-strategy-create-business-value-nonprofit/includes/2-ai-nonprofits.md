@@ -10,4 +10,4 @@ In the following video, learn about Microsoft Cloud for Nonprofit.
 
 > [!VIDEO https://www.youtube.com/embed/wWF7Z-8WaPU?si=EuMP4WGoNnnw8Trv]
 
-Next, let’s discuss some key ideas and principles that you should consider when planning AI-powered nonprofit initiatives.
+Next, let’s explore some goals and challenged to consider when planning AI-powered nonprofit initiatives.
