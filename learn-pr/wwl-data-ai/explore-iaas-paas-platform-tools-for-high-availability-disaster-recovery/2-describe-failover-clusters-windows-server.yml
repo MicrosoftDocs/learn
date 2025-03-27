@@ -6,12 +6,12 @@ metadata:
   prefetch-feature-rollout: true
   title: Describe failover clusters in Windows Server
   description: "Describe failover clusters in Windows Server"
-  ms.date: 05/13/2022
-  author: wwlpublish
+  ms.date: 03/27/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 14
+durationInMinutes: 8
 content: |
   [!include[](includes/2-describe-failover-clusters-windows-server.md)]
