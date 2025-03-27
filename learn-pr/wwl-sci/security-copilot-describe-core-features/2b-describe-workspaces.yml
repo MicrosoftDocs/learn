@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-describe-core-features.describe-workspaces
+title: Describe workspaces
+metadata:
+  title: Describe workspaces
+  description: Describe workspaces.
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.date: 03/27/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 10
+content: |
+  [!include[](includes/2b-describe-workspaces.md)]
