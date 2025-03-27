@@ -7,6 +7,7 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.topic: module
+  ms.service: security
 title: Fundamentals of Network Security
 summary: Explore the fundamentals of computer networking security and monitoring.
 abstract: | 
