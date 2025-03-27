@@ -6,8 +6,8 @@ metadata:
   title: Microsoft Azure Well-Architected Framework - Reliability
   description: Apply reliability guidance in your architecture to improve your workload's availability and resilience.
   ms.date: 12/18/2023
-  author: martinekuan
-  ms.author: martinek
+  author: PageWriter-MSFT
+  ms.author: prwilk
   ms.topic: module
   ms.service: azure-waf
   ms.subservice: waf-pillar-reliability
