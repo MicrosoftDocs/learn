@@ -24,12 +24,10 @@ An identity provider (IdP) is a system that creates, manages and stores digital 
 - Security protocols that defend against intrusion
 - Someone we trust
 
-An identity provider verifies user identities using one or more authentication factors, such as a password or fingerprint scan.  An identity provider is often a trusted provider for use with single-sign-on (SSO) to access other resources. SSO enhances usability by reducing password fatigue. It also provides better security by decreasing the potential attack surface. Identity providers can facilitate connections between cloud computing resources and users, thus decreasing the need for users to reauthenticate when using mobile and roaming applications.
+An identity provider verifies identities using one or more authentication factors, such as a password or fingerprint scan.  An identity provider is often a trusted provider for use with single-sign-on (SSO) to access other resources. SSO enhances usability by reducing password fatigue. It also provides better security by decreasing the potential attack surface. Identity providers can facilitate connections between cloud computing resources and users, thus decreasing the need for users to reauthenticate when using mobile and roaming applications.
 
 ### Common identity protocols
 
 **OpenID provider** - OpenID Connect (OIDC) is an authentication protocol based on the OAuth2 protocol (which is used for authorization). OIDC uses the standardized message flows from OAuth2 to provide identity services. Specifically, a system entity (called an OpenID-Provider) issues JSON-formatted identity tokens to OIDC relying parties via a RESTful HTTP API.
 
 **SAML identity provider** - Security Assertion Markup Language (SAML) is an open standard for exchanging authentication and authorization data between an identity provider and a service provider. SAML is an XML-based markup language for security assertions, which are statements that service providers use to make access-control decisions.
-
-

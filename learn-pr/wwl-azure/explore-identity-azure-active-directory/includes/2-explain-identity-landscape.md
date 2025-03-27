@@ -18,15 +18,15 @@ It's important to understand the identity landscape before reviewing other ident
 | Dollars - Licenses           | |
 
 
-**First** you have the guidance of always thinking and designing with zero trust in mind.  Don't just give access to data and applications because the user has had access previously.  You need to always confirm.
+1) **First** you have the guidance of always thinking and designing with zero trust in mind.  Don't just give access to data and applications because the user has had access previously.  You need to always confirm.
 
-**Second** you have systems to provide verified accounts for users and applications.  Identity services come from Microsoft Entra ID, from business-to-business federation, from business-to-customer, and from decentralized identity providers.
+2) **Second** you have systems to provide verified accounts for users and applications.  Identity services come from Microsoft Entra ID, from business-to-business federation, from business-to-customer, and from decentralized identity providers.
 
-**Third** you have specific actions identity provides and to keep the systems running.  Users and applications can authenticate and authorize to gain access to systems.  And administrators need to monitor and maintain the identity systems with proper governance.
+3) **Third** you have specific actions identity provides and to keep the systems running.  Users and applications can authenticate and authorize to gain access to systems.  And administrators need to monitor and maintain the identity systems with proper governance.
 
-**Fourth** you get many actions that can be performed once your credentials are verified.  Use applications and data, while taking advantage of other identity based services.
+4) **Fourth** you get many actions that can be performed once your credentials are verified.  Use applications and data, while taking advantage of other identity based services.
 
-**Fifth** and finally, you need to always keep your systems up to date.
+5) **Fifth** and finally, you need to always keep your systems up to date.
 
 ### From classic identity to zero trust identity
 
