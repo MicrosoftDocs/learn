@@ -10,16 +10,16 @@ You need robust security to diagnose and prevent suspicious events, attacks, and
 
 You can use access control to scrutinize every user and client to determine whether they have permission to access your network or its resources. You implement access control by configuring security policies that ensure the user has the right level of permissions assigned to do specific actions on your network. For example, you might want to deny read access for some resources when the user is connecting from outside your on-premises location.
 
-### Antimalware tools
+### Anti-malware tools
 
-Antimalware tools protect your network from malicious software (malware). Malware comes in different forms, including:
+Anti-malware tools protect your network from malicious software (malware). Malware comes in different forms, including:
 
 - Ransomware
 - Viruses
 - Spyware
 - Trojans
 
-You can use antimalware and antivirus tools to monitor and remedy malware. These tools can detect anomalies in your files, take actions to remove malicious pieces of code, and repair affected resources and devices on your network.
+You can use anti-malware and antivirus tools to monitor and remedy malware. These tools can detect anomalies in your files, take actions to remove malicious pieces of code, and repair affected resources and devices on your network.
 
 ### Application security
 
