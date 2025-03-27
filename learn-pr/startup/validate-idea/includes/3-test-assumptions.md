@@ -1,4 +1,4 @@
-There's a lot more to startups than just customer jobs to be done, pains, and gains. In the beginning, your startup can be viewed as a large collection of assumptions, or untested hypotheses. It's vital that you decide which of these assumptions are most critical to the success of your company. Then, systematically test them so that you know you're on the right track.
+There's a lot more to startups than just customer jobs to be done, pains, and gains. In the beginning, you can view your startup as a large collection of assumptions, or untested hypotheses. It's vital that you decide which of these assumptions are most critical to the success of your company, then systematically test them so that you know you're on the right track.
 
 In this unit, we use the Lean Canvas as a tool for articulating assumptions about your business model. We then discuss ways to prioritize assumptions and test the most important ones with customers.
 
@@ -14,11 +14,11 @@ All founders have a finite amount of capital and time available. By testing your
 
 ## Use the Lean Canvas
 
-The [Lean Canvas](https://leanstack.com/lean-canvas?azure-portal=true), developed by Ash Maurya (author of *Running Lean*), can help you capture your assumptions about all aspects of your business model.
+The [Lean Canvas](https://www.leanfoundry.com/tools/lean-canvas?azure-portal=true), developed by Ash Maurya (author of *Running Lean*), can help you capture your assumptions about all aspects of your business model.
 
 The Lean Canvas is based on the well-known Business Model Canvas by Alex Osterwalder. It uses the structure of the Business Model Canvas and applies it to early-stage startups. This process helps founders spell out assumptions that relate to nine building blocks of business models.
 
-The Lean Canvas uses some of the inputs that we discussed earlier, such as customer, problem, and solution. It then adds vital business model blocks, such as revenue streams, cost structure, channels, and key metrics.
+The Lean Canvas uses some of the inputs we discussed earlier, such as customer, problem, and solution. It then adds vital business model blocks, such as revenue streams, cost structure, channels, and key metrics.
 
 :::image type="content" source="../media/lean-canvas.png" alt-text="Image that shows components that influence a startup business model. Examples include problems, solutions, cost structures, and revenue streams." lightbox="../media/lean-canvas-lightbox.png":::
 
@@ -32,7 +32,7 @@ For early-stage founders, the most critical assumptions about their startup's bu
 
 ## Task: Complete your own Lean Canvas
 
-[Download the Lean Canvas](https://leanstack.com/lean-canvas?azure-portal=true) from Leanstack.com.
+[Download the Lean Canvas](https://www.leanfoundry.com/tools/lean-canvas?azure-portal=true) from Leanfoundry.com.
 
 Print the Lean Canvas and place your assumptions on the relevant section by using sticky notes. Spend no more than 20 minutes. Aim to write no more than one short sentence on each sticky note, and keep to a maximum of three sticky notes per block.
 
@@ -42,7 +42,7 @@ It's best to start with the blocks for problem, customer segments, solution, and
 
 After capturing assumptions that relate to your startup's value proposition and business model, it's time to work out which of them are the most critical to test with customers.
 
-We can use design thinking principles to identify three categories of assumptions that you should test. They can be summarized in the following three questions about your product:
+We can use design thinking principles to identify three categories of assumptions that you should test. You can summarize them in the following three questions about your product:
 
 - Is it *desirable*?
 
@@ -56,7 +56,7 @@ We can use design thinking principles to identify three categories of assumption
 
   Can you build a commercially successful business around the product? Are there enough potential customers that are willing to pay enough for the product to achieve your commercial goals? Can you acquire customers cheaply enough that the lifetime value of those customers is larger than the cost of acquiring them?
 
-For your startup to be successful, you need a product that's desirable and feasible and viable. This sweet spot can be represented as the intersection of three sets in a Venn diagram.
+For your startup to be successful, you need a product that's desirable and feasible and viable. We can represent this sweet spot as the intersection of three sets in a Venn diagram.
 
 :::image type="content" source="../media/learning-path-three-spheres.png" alt-text="Venn diagram that shows three spheres labeled desirable, feasible, and viable. They intersect slightly.":::
 

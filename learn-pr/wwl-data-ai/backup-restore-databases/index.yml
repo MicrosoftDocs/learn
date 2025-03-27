@@ -5,8 +5,8 @@ metadata:
   prefetch-feature-rollout: true
   title: Back up and restore databases
   description: Back up and restore databases
-  ms.date: 07/25/2023
-  author: wwlpublish
+  ms.date: 03/25/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module
   ms.service: azure
