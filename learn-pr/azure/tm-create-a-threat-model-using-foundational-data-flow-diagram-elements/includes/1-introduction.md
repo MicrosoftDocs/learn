@@ -12,7 +12,7 @@ We use elements and their interactions in threat modeling to help identify threa
 In this module, you explore each element of a data-flow diagram. These elements have distinct shapes and functions and require specific context.
 
 > [!NOTE]
-> We might also refer to elements as as *Stencils* throughout this learning path.
+> We might also refer to elements as *Stencils* throughout this learning path.
 
 ## When to use elements
 

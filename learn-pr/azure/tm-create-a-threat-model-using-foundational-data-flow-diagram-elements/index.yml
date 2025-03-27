@@ -8,7 +8,7 @@ metadata:
   ms.author: rodsan
   ms.topic: module
 title: Create a threat model using data-flow diagram elements
-summary: Data-flow diagrams are graphical representations of your system and should specify each element, their interactions and helpful context.
+summary: Data-flow diagrams are graphical representations of your system and should specify each element, their interactions, and helpful context.
 abstract: |
     In this module, you learn how to:
     - Distinguish between the shape and function of each element.
