@@ -1,9 +1,5 @@
 Generative AI applications are built on *language models*. The development process usually starts with an exploration and comparison of available *foundation* models to find the one that best suits the particular needs of your application. After selecting a suitable model, you deploy it to an endpoint where it can be consumed by a client application or AI agent.
 
-In some cases, you might seek to optimize model responses for your application by applying *prompt engineering* techniques, implementing a *retrieve, augment, and generate (RAG)* solution that uses your own data to contextualize prompts, or by *fine-tuning* your chosen model with example prompts and responses that represent the conversational behavior you need. But it all begins with choosing the right model to start with.
-
-## Foundation models
-
 Foundation models, such as the GPT family of models, are state-of-the-art language models designed to understand, generate, and interact with natural language. Some common use cases for models are:
 
 - **Speech-to-text and text-to-speech conversion**. For example, generate subtitles for videos.
