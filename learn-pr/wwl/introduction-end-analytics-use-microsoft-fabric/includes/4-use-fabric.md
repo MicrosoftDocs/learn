@@ -38,7 +38,7 @@ The OneLake catalog in Microsoft Fabric helps users easily find and access vario
 - Explore default categories to quickly locate relevant data.
 - Filter by keyword or item type.
 
-:::image type="content" source="../media/onelake-catalog.png" alt-text="Screenshot of the OneLake catalog." lightbox="../media/onelake-data-hub.png":::
+:::image type="content" source="../media/onelake-catalog.png" alt-text="Screenshot of the OneLake catalog." lightbox="../media/onelake-catalog.png":::
 
 ## Create items with Fabric workloads
 
