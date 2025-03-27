@@ -1,6 +1,6 @@
 This module covers a wide view of the definitions and available services for identity provided in the Microsoft Cloud from Microsoft Entra ID to Microsoft 365.  You start with the basics of authentication, authorization, and access tokens.
 
-From this firm foundation of what an identity is, we explore how identity is used as part of your security foundation. We learn about governance and lifecycle management of your identities and identity solutions. The final section opens up the concept of zero trust, and how it should be applied to your identity solutions. What is the Microsoft Entra ID architecture and the connection with identity in Microsoft 365?
+From this firm foundation of what an identity is, we explore how identity is used as part of your security foundation. We learn about governance and lifecycle management of your identities and identity solutions. The final section opens up the concept of Zero Trust, and how it should be applied to your identity solutions. What is the Microsoft Entra ID architecture and the connection with identity in Microsoft 365?
 
 Next you explore how PowerShell and Microsoft Graph are available to build and manage identity solutions. The goal of this module is to prepare your technical knowledge of identity and access management in the Microsoft Cloud.
 
@@ -16,4 +16,4 @@ By the end of this module can:
 ### Prerequisites
 
 - Basic knowledge of cloud computing
-- Azure portal or Microsoft Entra admin center experience are a plus
+- Azure portal or Microsoft Entra admin center experience is a plus
