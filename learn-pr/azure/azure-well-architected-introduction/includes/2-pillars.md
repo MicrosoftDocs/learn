@@ -10,13 +10,27 @@ These concepts aren't all-inclusive, but focusing on them can help you build a r
 
 The Azure Well-Architected Framework consists of five pillars:
 
+- Reliability
+- Security
 - Cost Optimization
 - Operational Excellence
 - Performance Efficiency
-- Reliability
-- Security
 
 ![An illustration that shows the pillars of the Azure Well-Architected Framework.](../media/pillars.png)
+
+### Reliability
+
+Every architect's worst nightmare is having an architecture fail with no way to recover it. A well-architected cloud environment is designed to anticipate failure at all levels. This process involves creating a system that's resilient to failure and can self-heal. If an outage occurs, it should recover within the time that your stakeholders and customers expect.
+
+The principles of the Reliability pillar can help achieve business goals. A reliable workload must continue to function even when things go wrong. It should be resilient enough to detect, manage, and quickly recover from failures. Additionally, it needs to be available so that users can access it when they need to, and at the quality that they expect.
+
+:::image type="content" source="../media/system-failure.png" alt-text="An illustration that shows two virtual machines in a virtual network. One of the machines is shown as failed, while the other is working to service customer requests." loc-scope="other"::: <!--no-loc -->
+
+### Security
+
+The Security pillar helps make your workloads resilient to security concerns. Security incidents can hurt your reputation, operations, and finances, so it's crucial that you add strong security measures. A secure workload is resilient to attacks. To see if your security measures are effective, ask yourself if your defenses are strong enough to stop attacks and limit damage. A key part of implementing security is building with a Zero Trust approach and following the CIA Triad: confidentiality, integrity, and availability. 
+
+![An illustration that shows the types of security threats and attacks that might affect your data in the cloud.](../media/security.png)
 
 ### Cost Optimization
 
@@ -33,20 +47,6 @@ Unreliable workloads can increase downtime, increase costs, and decrease custome
 It's important to make sure that your workload can handle changes in demand. When there's an increase in load, your workload needs to manage it without affecting user experience. And when the load decreases, it's important to conserve resources. It's vital that you monitor and manage the amount of capacity that your system has so that your applications run smoothly and efficiently. You need a solid strategy to keep performance targets on track over time.
 
 ![An illustration that shows how resources in the cloud scale dynamically based on demand, resulting in highly efficient usage. When resources are implemented at a fixed level, it results in inefficient usage during low demand and shortage during high demand.](../media/performance-demand.png)
-
-### Reliability
-
-Every architect's worst nightmare is having an architecture fail with no way to recover it. A well-architected cloud environment is designed to anticipate failure at all levels. This process involves creating a system that's resilient to failure and can self-heal. If an outage occurs, it should recover within the time that your stakeholders and customers expect.
-
-The principles of the Reliability pillar can help achieve business goals. A reliable workload must continue to function even when things go wrong. It should be resilient enough to detect, manage, and quickly recover from failures. Additionally, it needs to be available so that users can access it when they need to, and at the quality that they expect.
-
-:::image type="content" source="../media/system-failure.png" alt-text="An illustration that shows two virtual machines in a virtual network. One of the machines is shown as failed, while the other is working to service customer requests." loc-scope="other"::: <!--no-loc -->
-
-### Security
-
-The Security pillar helps make your workloads resilient to security concerns. Security incidents can hurt your reputation, operations, and finances, so it's crucial that you add strong security measures. A secure workload is resilient to attacks. To see if your security measures are effective, ask yourself if your defenses are strong enough to stop attacks and limit damage. A key part of implementing security is building with a Zero Trust approach and following the CIA Triad: confidentiality, integrity, and availability. 
-
-![An illustration that shows the types of security threats and attacks that might affect your data in the cloud.](../media/security.png)
 
 ## General design principles
 
