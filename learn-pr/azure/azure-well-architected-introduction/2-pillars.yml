@@ -20,7 +20,7 @@ quiz:
     - content: To ensure workload quality through standardized workflows
       isCorrect: false
       explanation: Incorrect. The Operational Excellence pillar emphasizes DevOps practices and standardized workflows to ensure workload quality.
-    - content: To evaluate return on investment (ROI) and financial constraints
+    - content: To evaluate ROI and financial constraints
       isCorrect: true
       explanation: Correct. The Cost Optimization pillar focuses on evaluating ROI and financial constraints to help allocate budgets, define spending patterns, and maximize resource investments.
     - content: To enhance workload resiliency and recoverability
@@ -29,7 +29,7 @@ quiz:
     - content: To improve security by using the CIA Triad and Zero Trust principles
       isCorrect: false 
       explanation: Incorrect. The Security pillar emphasizes confidentiality, integrity, availability, and Zero Trust principles.
-    - content: To optimize your workload's ability to adjust to changes in demand.
+    - content: To optimize your workload's ability to adjust to changes in demand
       isCorrect: false 
       explanation: Incorrect. The Performance Efficiency pillar helps ensures that workloads can scale efficiently based on demand.
 
@@ -38,7 +38,7 @@ quiz:
     - content: To ensure workload quality through standardized workflows
       isCorrect: true
       explanation: Correct. The Operational Excellence pillar focuses on DevOps practices and standardized workflows to help ensure workload quality, minimize process variance, and reduce human error. 
-    - content: To evaluate return on investment (ROI) and financial constraints
+    - content: To evaluate ROI and financial constraints
       isCorrect: false
       explanation: Incorrect. The Cost Optimization pillar focuses on evaluating ROI and financial constraints.
     - content: To enhance workload resiliency and recoverability
@@ -47,7 +47,7 @@ quiz:
     - content: To improve security by using the CIA Triad and Zero Trust principles
       isCorrect: false 
       explanation: Incorrect. The Security pillar emphasizes confidentiality, integrity, availability, and Zero Trust principles.
-    - content: To optimize your workload's ability to adjust to changes in demand.
+    - content: To optimize your workload's ability to adjust to changes in demand
       isCorrect: false  
       explanation: Incorrect. The Performance Efficiency pillar helps ensures that workloads can scale efficiently based on demand.
 
@@ -56,7 +56,7 @@ quiz:
     - content: To ensure workload quality through standardized workflows
       isCorrect: false
       explanation: Incorrect. The Operational Excellence pillar emphasizes DevOps practices and standardized workflows to ensure workload quality.
-    - content: To evaluate return on investment (ROI) and financial constraints
+    - content: To evaluate ROI and financial constraints
       isCorrect: false
       explanation: Incorrect. The Cost Optimization pillar focuses on evaluating ROI and financial constraints.
     - content: To enhance workload resiliency and recoverability
@@ -65,7 +65,7 @@ quiz:
     - content: To improve security by using the CIA Triad and Zero Trust principles
       isCorrect: false 
       explanation: Incorrect. The Security pillar emphasizes confidentiality, integrity, availability, and Zero Trust principles.
-    - content: To optimize your workload's ability to adjust to changes in demand.
+    - content: To optimize your workload's ability to adjust to changes in demand
       isCorrect: true
       explanation: Correct. The Performance Efficiency pillar focuses on ensuring that workloads can scale efficiently based on demand to maintain performance without compromising user experience.
 
@@ -74,7 +74,7 @@ quiz:
     - content: To ensure workload quality through standardized workflows
       isCorrect: false
       explanation: Incorrect. The Operational Excellence pillar emphasizes DevOps practices and standardized workflows to ensure workload quality.
-    - content: To evaluate return on investment (ROI) and financial constraints
+    - content: To evaluate ROI and financial constraints
       isCorrect: false
       explanation: Incorrect. The Cost Optimization pillar focuses on evaluating ROI and financial constraints.
     - content: To enhance workload resiliency and recoverability
@@ -83,7 +83,7 @@ quiz:
     - content: To improve security by using the CIA Triad and Zero Trust principles
       isCorrect: false 
       explanation: Incorrect. The Security pillar emphasizes confidentiality, integrity, availability, and Zero Trust principles.
-    - content: To optimize your workload's ability to adjust to changes in demand.
+    - content: To optimize your workload's ability to adjust to changes in demand
       isCorrect: false
       explanation: Incorrect.
 
@@ -92,7 +92,7 @@ quiz:
     - content: To ensure workload quality through standardized workflows
       isCorrect: false
       explanation: Incorrect. The Operational Excellence pillar emphasizes DevOps practices and standardized workflows to ensure workload quality.
-    - content: To evaluate return on investment (ROI) and financial constraints
+    - content: To evaluate ROI and financial constraints
       isCorrect: false
       explanation: Incorrect. The Cost Optimization pillar focuses on evaluating ROI and financial constraints.
     - content: To enhance workload resiliency and recoverability
@@ -101,6 +101,6 @@ quiz:
     - content: To improve security by using the CIA Triad and Zero Trust principles
       isCorrect: true
       explanation: Correct. The Security pillar focuses on ensuring that workloads are resilient to attacks by incorporating confidentiality, integrity, availability (the CIA Triad), and Zero Trust principles.
-    - content: To optimize your workload's ability to adjust to changes in demand.
+    - content: To optimize your workload's ability to adjust to changes in demand
       isCorrect: false
       explanation: Incorrect. The Security pillar emphasizes confidentiality, integrity, availability, and Zero Trust principles.

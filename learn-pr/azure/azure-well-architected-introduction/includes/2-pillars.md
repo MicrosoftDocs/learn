@@ -20,29 +20,31 @@ The Azure Well-Architected Framework consists of five pillars:
 
 ### Cost Optimization
 
-The Cost Optimization pillar focuses on how to consider your return on investment (ROI) and financial constraints when you create business goals. This guidance helps you determine how to allocate budgets, define spending patterns and priority areas, and maximize your resource investments.
+When you set up your cloud environment, you might come across cost increases that you don't expect. Cost optimization is about making sure the money that your organization spends is put to good use. Architecture design is driven by business goals and must factor in return on investment (ROI) and financial constraints. The Cost Optimization pillar can help you figure out how to allocate your budget, define spending patterns and priority areas, and get the most out of your resources.
 
 ![An illustration that shows increasing quality, speed, and efficiency while maintaining decreasing costs.](../media/efficiency.png)
 
 ### Operational Excellence
 
-The Operational Excellence pillar focuses on DevOps practices to help ensure workload quality through standardized workflows and team cohesion. This pillar defines procedures for development, observability, and release management to minimize process variance, human error, and customer disruption. 
+Unreliable workloads can increase downtime, increase costs, and decrease customer satisfaction. The Operational Excellence pillar helps keep everything on track to ensure high-quality performance. A workload that operates smoothly has DevOps practices and procedures implemented, such as development, observability, and release management procedures. Standardized workflows and team cohesion can help minimize process variance, human error, and customer disruption.
 
 ### Performance Efficiency
 
-The Performance Efficiency pillar focuses on the ability of your workload to adjust to changes in demands. A workload must be able to handle an increase in load without compromising user experience. Conversely, when there's a decrease in load, the workload must conserve its resources. Capacity, which indicates resource availability (CPU and memory), is a significant factor. You need a comprehensive strategy to sustain performance targets over time.
+It's important to make sure that your workload can handle changes in demand. When there's an increase in load, your workload needs to manage it without affecting user experience. And when the load decreases, it's important to conserve resources. It's vital that you monitor and manage the amount of capacity that your system has so that your applications run smoothly and efficiently. You need a solid strategy to keep performance targets on track over time.
 
 ![An illustration that shows how resources in the cloud scale dynamically based on demand, resulting in highly efficient usage. When resources are implemented at a fixed level, it results in inefficient usage during low demand and shortage during high demand.](../media/performance-demand.png)
 
 ### Reliability
 
-The Reliability pillar focuses on the resiliency, availability, and recoverability of your workload. A reliable workload must survive outages and malfunctions and continue to consistently provide its intended functionality. It must be resilient so that it can detect, withstand, and recover from failures within an acceptable time period. It must also be available so that users can access the workload during the promised time period at the promised quality level.
+Every architect's worst nightmare is having an architecture fail with no way to recover it. A well-architected cloud environment is designed to anticipate failure at all levels. This process involves creating a system that's resilient to failure and can self-heal. If an outage occurs, it should recover within the time that your stakeholders and customers expect.
+
+The principles of the Reliability pillar can help achieve business goals. A reliable workload must continue to function even when things go wrong. It should be resilient enough to detect, manage, and quickly recover from failures. Additionally, it needs to be available so that users can access it when they need to, and at the quality that they expect.
 
 :::image type="content" source="../media/system-failure.png" alt-text="An illustration that shows two virtual machines in a virtual network. One of the machines is shown as failed, while the other is working to service customer requests." loc-scope="other"::: <!--no-loc -->
 
 ### Security
 
-The Security pillar focuses on your workload's resiliency to security concerns. A secure workload is resilient to attacks and incorporates the interrelated security principles of confidentiality, integrity, and availability (also known as the CIA Triad) in addition to meeting business goals. A Well-Architected workload must also be built with the Zero Trust approach.
+The Security pillar helps make your workloads resilient to security concerns. Security incidents can hurt your reputation, operations, and finances, so it's crucial that you add strong security measures. A secure workload is resilient to attacks. To see if your security measures are effective, ask yourself if your defenses are strong enough to stop attacks and limit damage. A key part of implementing security is building with a Zero Trust approach and following the CIA triad: confidentiality, integrity, and availability. 
 
 ![An illustration that shows the types of security threats and attacks that might affect your data in the cloud.](../media/security.png)
 
