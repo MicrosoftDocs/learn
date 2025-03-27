@@ -4,7 +4,7 @@ This replica is readable, similar to an Availability Group in IaaS. Underneath t
 
 Active geo-replication provides business continuity by allowing customers to programmatically or manually failover primary databases to secondary regions during major disaster.
 
-Azure SQL Managed Instance doesn't support active geo-replication, you must use auto-failover groups instead, which will learn on the next unit.
+Azure SQL Managed Instance doesn't support active geo-replication. You must use auto-failover groups instead, which will learn on the next unit.
 
 :::image type="content" source="../media/module-77-high-availability-final-13.png" alt-text="Screenshot of active Geo-Replication for Azure SQL Database.":::
 
@@ -16,7 +16,7 @@ As we can see above, you can manually configure geo-replication for Azure SQL Da
 
 :::image type="content" source="../media/module-77-high-availability-final-05.png" alt-text="Screenshot of replica page for Azure SQL Database.":::
 
-After the secondary replica is created, you can manually fail over your secondary replica. The roles will switch with the secondary becoming the new primary, and the old primary the secondary.
+After the secondary replica is created, you can manually fail over your secondary replica. The roles switch with the secondary becoming the new primary, and the old primary the secondary.
 
 :::image type="content" source="../media/module-77-high-availability-final-06.png" alt-text="Screenshot of Force Failover option on Azure portal." lightbox="../media/module-77-high-availability-final-06.png":::
 

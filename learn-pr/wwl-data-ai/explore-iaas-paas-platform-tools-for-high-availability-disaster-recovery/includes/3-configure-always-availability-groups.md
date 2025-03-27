@@ -1,10 +1,6 @@
-For all availability configurations of availability groups (AGs), an underlying cluster is required, whether or not it uses AD DS. By the end of this unit, you'll understand the considerations for deploying an AG in Azure.
+Configuring an Availability Group (AG) in Azure is quite similar to doing so on-premises, with most considerations remaining the same, such as initializing secondary replicas. Azure-specific considerations, like the need for an Internal Load Balancer (ILB), were discussed earlier. Just like with the Windows Server Failover Cluster (WSFC), you can't reserve the listener's IP address in Azure. Therefore, you must ensure that no other resource claims it, as this could lead to network conflicts and availability issues.
 
-## Considerations for Always On availability groups in Azure
-
-Configuring an AG is nearly the same in Azure as it is on premises as are most of the considerations, such as how to initialize secondary replicas. Most of the Azure-specific considerations were discussed earlier, such as needing an ILB. Same as the WSFC itself, you can't reserve the listener’s IP address in Azure so you need to ensure something else doesn't come along and grab it otherwise there could be a conflict on the network, which in turn could cause availability headaches.
-
-Don't place any permanent database on the ephemeral storage. All virtual machines (VMs) that are participating in an AG should have the same storage configuration. You must size disks appropriately for performance depending on the application workload.
+Avoid placing any permanent databases on temporary storage. All virtual machines (VMs) participating in an AG should have identical storage configurations. It's crucial to size disks appropriately based on the application's workload to ensure optimal performance.
 
 Before an AG can be configured, the AG feature must be enabled. This can be done in SQL Server Configuration Manager as shown in the image below or via PowerShell with the cmdlet [Enable-SqlAlwaysOn](/powershell/module/sqlps/enable-sqlalwayson?view=sqlserver-ps). Enabling the AG feature will require a stop and start of the SQL Server service.
 
