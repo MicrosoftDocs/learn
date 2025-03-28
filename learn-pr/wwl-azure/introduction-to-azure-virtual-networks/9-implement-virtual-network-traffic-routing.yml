@@ -12,7 +12,7 @@ metadata:
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 16
+durationInMinutes: 12
 content: |
   [!include[](includes/9-implement-virtual-network-traffic-routing.md)]
 quiz:
