@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-collection-types.implement-ordered-collections-typed-list
-title: Implement Ordered Collections with List<T>
+title: Implement ordered Collections with List<T>
 metadata:
-  title: Implement Ordered Collections with List<T>
+  title: Implement ordered Collections with List<T>
   description: "Learn how to use List for managing ordered collections, including adding, removing, and iterating through items."
   ms.date: 03/28/2025
   author: wwlpublish

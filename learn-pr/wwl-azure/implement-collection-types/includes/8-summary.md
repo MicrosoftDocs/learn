@@ -7,7 +7,7 @@ After completing this module, you're now able to:
 - Utilize `Dictionary<TKey, TValue>` to store and retrieve data using unique key-value pairs.  
 - Choose the appropriate collection type based on specific application requirements, such as ensuring uniqueness or enabling fast lookups.  
 
-Resources:  
+## Resources
 
 - [Microsoft Documentation on Collections](/dotnet/standard/collections/)  
 - [C# `List<T>` Class Overview](/dotnet/api/system.collections.generic.list-1)  

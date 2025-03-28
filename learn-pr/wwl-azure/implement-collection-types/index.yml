@@ -43,8 +43,8 @@ units:
 - learn.wwl.implement-collection-types.introduction
 - learn.wwl.implement-collection-types.importance-collections
 - learn.wwl.implement-collection-types.implement-ordered-collections-typed-list
-- learn.wwl.implement-collection-types.ensuring-uniqueness-typed-hashset
-- learn.wwl.implement-collection-types.organize-data-key-value-pairs-using-typed-dictionary
+- learn.wwl.implement-collection-types.ensure-uniqueness-typed-hashset
+- learn.wwl.implement-collection-types.organize-data-key-value-pairs-use-typed-dictionary
 - learn.wwl.implement-collection-types.exercise-implement-collection-types
 - learn.wwl.implement-collection-types.knowledge-check
 - learn.wwl.implement-collection-types.summary

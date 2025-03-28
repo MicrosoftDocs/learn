@@ -2,7 +2,7 @@ C# collections are powerful tools for managing groups of objects dynamically, en
 
 Imagine you're working in the banking industry, tasked with developing a system that manages customer accounts and transactions. You need a way to store customer IDs linked to their account details, ensure no duplicate transaction records, and maintain an ordered list of recent activities. Without the right tools, this task could become cumbersome and error-prone. C# collections like `List<T>`, `HashSet<T>`, and `Dictionary<TKey, TValue>` offer solutions tailored to these challenges. For instance, you can use `Dictionary<TKey, TValue>` to map customer IDs to account details for quick lookups, `HashSet<T>` to ensure transaction uniqueness, and `List<T>` to maintain an ordered sequence of activities. These collections streamline data management, making your application robust and efficient.
 
-## Learning bjectives
+## Learning objectives
 
 - Apply C# Collections for Efficient Data Management
 - Manage ordered collections using `List<T>` in C#

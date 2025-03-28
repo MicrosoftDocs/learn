@@ -20,9 +20,9 @@ Ordered collections in C#, such as the `List<T>` class, perform common operation
 
 `List<T>` provides methods for adding, removing, and iterating through items efficiently. These operations are straightforward and commonly used in application development.
 
-- **Adding items:**  To append elements to the list, use the `Add` method.
-- **Removing items:** To delete elements, use methods like `Remove`, `RemoveAt`, or `Clear`.
-- **Iterating through items:** For enumeration, use a `foreach` loop or LINQ (Language Integrated Query).
+- **Adding items**:  To append elements to the list, use the `Add` method.
+- **Removing items**: To delete elements, use methods like `Remove`, `RemoveAt`, or `Clear`.
+- **Iterating through items**: For enumeration, use a `foreach` loop or LINQ (Language Integrated Query).
 
 ```csharp
 // Example: Adding, removing, and iterating through a List<T>
