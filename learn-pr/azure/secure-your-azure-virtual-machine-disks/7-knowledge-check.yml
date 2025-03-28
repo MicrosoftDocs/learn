@@ -2,8 +2,6 @@
 uid: learn.secure-your-azure-virtual-machine-disks.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Summary
   ms.date: 09/10/2024
@@ -47,4 +45,4 @@ quiz:
     - content: "Both disks are encrypted using Storage Service Encryption."
       isCorrect: true
       explanation: "All disks are encrypted using SSE by default. With SSE, Azure manages the keys and automatically decrypts data for any read operations without affecting performance."
-
+

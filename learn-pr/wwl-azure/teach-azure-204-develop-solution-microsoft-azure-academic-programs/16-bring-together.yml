@@ -2,8 +2,6 @@
 uid: learn.wwl.teach-azure-204-develop-solution-microsoft-azure-academic-programs.bring-together
 title: 'Bring it all together '
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Bring it all together
   description: "Bring it all together"
   ms.date: 06/02/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/16-bring-together.md)]
+  [!include[](includes/16-bring-together.md)]

@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-release-strategy-recommendations.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 05/21/2024
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. Using stage you can pause and validate the pipeline with various checks."
     - content: "Quality Gate."
       isCorrect: false
-      explanation: "Incorrect. Using stage you can pause and validate the pipeline with various checks."
+      explanation: "Incorrect. Using stage you can pause and validate the pipeline with various checks."

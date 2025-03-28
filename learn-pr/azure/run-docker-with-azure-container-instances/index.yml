@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.run-docker-containers-aci
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Run Docker containers with Azure Container Instances
   description: Learn how to run and troubleshoot containerized apps using Docker containers with Azure Container Instances.
   manager: akashdubey
@@ -46,4 +44,4 @@ units:
 - learn.run-docker-containers-aci.8-summary
 badge:
   uid: learn.run-docker-containers-aci.badge
-
+

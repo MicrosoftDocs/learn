@@ -2,8 +2,6 @@
 uid: learn.choose-the-right-disk-storage-for-vm-workload.2-managed-unmanaged-local-disk-storage
 title: Managed, unmanaged, and local disk storage
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Managed, unmanaged, and local disk storage
   description: Managed, unmanaged, and local disk storage
   ms.date: 09/05/2023
@@ -35,4 +33,4 @@ quiz:
     - content: "A managed disk"
       isCorrect: true
       explanation: "Managed disks guarantee 99.999% availability because data is automatically replicated."
-
+

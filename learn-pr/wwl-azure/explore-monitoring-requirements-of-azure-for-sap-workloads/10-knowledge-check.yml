@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Check what you learn in this module."
   ms.date: 08/01/2024
@@ -39,4 +37,4 @@ quiz:
       explanation: "Correct. Azure Advisor uses resource usage telemetry to make recommendations for optimizing performance, security, and availability; and Azure Activity Log tracks events representing operations that alter the state of the user's resources; such as configuration changes, service health incidents, and autoscale operations."
     - content: "Azure Activity Log"
       isCorrect: false
-      explanation: "Incorrect. Azure Activity Log tracks events representing operations that alter the state of the user's resources; such as configuration changes, service health incidents, and autoscale operations."
+      explanation: "Incorrect. Azure Activity Log tracks events representing operations that alter the state of the user's resources; such as configuration changes, service health incidents, and autoscale operations."

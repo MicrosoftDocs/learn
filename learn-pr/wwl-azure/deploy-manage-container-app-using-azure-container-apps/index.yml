@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-manage-container-app-using-azure-container-apps
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Guided project - Deploy and manage a container app using Azure Container Apps
   description: "Learn to configure Azure Container Registry, Azure Container Apps, and the other resources required for an app deployment scenario. Learn to configure a container apps solution for continuous integration, scaling, and revision management."
   ms.date: 10/31/2024
@@ -54,4 +52,4 @@ units:
 - learn.wwl.deploy-manage-container-app-using-azure-container-apps.knowledge-check
 - learn.wwl.deploy-manage-container-app-using-azure-container-apps.summary
 badge:
-  uid: learn.wwl.deploy-manage-container-app-using-azure-container-apps.badge
+  uid: learn.wwl.deploy-manage-container-app-using-azure-container-apps.badge

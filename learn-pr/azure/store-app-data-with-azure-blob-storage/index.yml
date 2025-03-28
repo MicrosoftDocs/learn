@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.store-app-data-with-azure-blob-storage
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Store application data with Azure Blob Storage
   description: Discover how to build an app that stores user files with Azure Blob Storage, use Blob Storage in a web app, and use the Azure Storage SDK.
   manager: akashdubey
@@ -40,4 +38,4 @@ units:
 - learn.store-app-data-with-azure-blob-storage.8-cleanup-next-steps-knowledge-check
 badge:
   uid: learn.store-app-data-with-azure-blob-storage.badge
-
+

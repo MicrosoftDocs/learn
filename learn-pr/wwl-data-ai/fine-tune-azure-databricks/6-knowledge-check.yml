@@ -2,8 +2,6 @@
 uid: learn.wwl.fine-tune-azure-databricks.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 03/20/2025
@@ -48,4 +46,4 @@ quiz:
     - content: "It decides the number of layers to freeze in the model"
       isCorrect: false
       explanation: "Incorrect. The 'learning rate' doesn't decide the number of layers to freeze in the model."
-
+

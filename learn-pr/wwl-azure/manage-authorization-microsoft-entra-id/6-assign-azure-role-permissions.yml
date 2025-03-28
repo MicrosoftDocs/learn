@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-authorization-microsoft-entra-id.assign-azure-role-permissions
 title: Assign Azure role permissions for management groups, subscriptions, resource groups, and resources
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Assign Azure role permissions for management groups, subscriptions, resource groups, and resources
   description: "Assign Azure role permissions for management groups, subscriptions, resource groups, and resources"
   ms.date: 08/07/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-assign-azure-role-permissions.md)]
+  [!include[](includes/6-assign-azure-role-permissions.md)]

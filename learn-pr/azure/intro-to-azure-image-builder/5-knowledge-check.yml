@@ -2,8 +2,6 @@
 uid: learn.introduction-to-azure-image-builder.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge of Azure Image Builder (AIB) by taking a quiz containing multiple-choice questions about the AIB service.
   ms.date: 08/08/2024
@@ -55,4 +53,4 @@ quiz:
       explanation: "Incorrect. Configuring the image builder isn't part of the required steps to create and deploy a custom image using Azure Image Builder."
     - content: "Deploy the custom resource group."
       isCorrect: false
-      explanation: "Incorrect. Deploying the custom resource group isn't part of the required steps to create and deploy a custom image using Azure Image Builder."
+      explanation: "Incorrect. Deploying the custom resource group isn't part of the required steps to create and deploy a custom image using Azure Image Builder."

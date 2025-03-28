@@ -2,8 +2,6 @@
 uid: learn.deploy-azure-vmware-solution.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check.
   ms.date: 08/01/2024
@@ -82,4 +80,4 @@ quiz:
     - content: "Virtual network gateway"
       isCorrect: false
       explanation: "A virtual network gateway is a PaaS resource that routes tables and runs specific gateway services for site-to-site connectivity. This gateway isn't deployed with Azure VMware Solution."
-
+

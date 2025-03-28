@@ -2,8 +2,6 @@
 uid: learn.wwl.query-azure-cosmos-db-sql-api.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 03/10/2025
@@ -48,4 +46,4 @@ quiz:
     - content: "Either of these names"
       isCorrect: true
       explanation: "Correct. The data source can have a unique name that's distinct from the container's name."
-
+

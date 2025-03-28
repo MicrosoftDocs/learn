@@ -2,8 +2,6 @@
 uid: learn.wwl.azure-event-hubs.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 07/17/2024
@@ -37,4 +35,4 @@ quiz:
       explanation: "Incorrect. Scale covers the number of consumers and taking ownership of reading partitions."
     - content: "Load balance"
       isCorrect: false
-      explanation: "Incorrect. Load balance increases or reduces the consumers dynamically."
+      explanation: "Incorrect. Load balance increases or reduces the consumers dynamically."

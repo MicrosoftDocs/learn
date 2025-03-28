@@ -2,8 +2,6 @@
 uid: learn.azure.manage-changes-bicep-code-git.commit-files-view-history
 title: Commit files and view history
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Commit files and view history
   description: Learn how Git tracks files, and how to stage and commit files and view their history.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/4-commit-files-view-history.md)]
-
+

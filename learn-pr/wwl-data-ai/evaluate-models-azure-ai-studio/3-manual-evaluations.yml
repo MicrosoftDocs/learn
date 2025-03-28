@@ -2,8 +2,6 @@
 uid: learn.wwl.evaluate-models-azure-ai-studio.manual-evaluations
 title: Manually evaluate the performance of a model
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manually evaluate the performance of a model
   description: "Learn how manually evaluate the performance of a model in the Azure AI Foundry portal."
   ms.date: 11/28/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-manual-evaluations.md)]
+  [!include[](includes/3-manual-evaluations.md)]

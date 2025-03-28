@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.azure-container-instances-sidecar
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use Azure Container Instances sidecar containers and private addressing
   description: Learn to use YAML to define container instances, add functionality with sidecar and initialization containers, and use Azure Private Link for greater security.
   ms.date: 07/24/2024
@@ -41,4 +39,4 @@ units:
 - learn.azure.azure-container-instances-sidecar.summary
 badge:
   uid: learn.azure.secure-apps-azure-container-instances-sidecar.badge
-
+

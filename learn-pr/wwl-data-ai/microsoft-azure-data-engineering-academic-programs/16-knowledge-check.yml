@@ -2,8 +2,6 @@
 uid: learn.wwl.microsoft-azure-data-engineering-academic-programs.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 06/02/2023
@@ -48,4 +46,4 @@ quiz:
       explanation: "Incorrect: Azure Synapse is an enterprise analytics service that accelerates time to insight across data warehouses and big data systems, whereas Azure Stream Analytics is a fully managed stream processing engine that is designed to analyze and process large volumes of streaming data."
     - content: "Azure Stream Analytics"
       isCorrect: true
-      explanation: "Correct. Azure Stream Analytics is a fully managed stream processing engine that is designed to analyze and process large volumes of streaming data."
+      explanation: "Correct. Azure Stream Analytics is a fully managed stream processing engine that is designed to analyze and process large volumes of streaming data."

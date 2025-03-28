@@ -2,8 +2,6 @@
 uid: learn.wwl.measure-index-azure-cosmos-db-sql-api.exercise-optimize-containers-index-policy-for-specific-query
 title: Exercise - Optimize an Azure Cosmos DB for NoSQL container's index policy for a specific query
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Optimize an Azure Cosmos DB for NoSQL container's index policy for a specific query
   description: "Exercise - Optimize an Azure Cosmos DB for NoSQL container's index policy for a specific query"
   ms.date: 10/28/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/6-exercise-optimize-containers-index-policy-for-specific-query.md)]
+  [!include[](includes/6-exercise-optimize-containers-index-policy-for-specific-query.md)]

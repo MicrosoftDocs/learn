@@ -2,8 +2,6 @@
 uid: learn.azure.build-reusable-bicep-templates-parameters.knowledge-check
 title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check
@@ -52,4 +50,4 @@ quiz:
     - content: You can view the value of the `apiKey` parameter by inspecting the resource group deployments in the Azure portal.
       isCorrect: false
       explanation: Incorrect. Normally, the Azure portal will show you the values of each parameter for a deployment. However, the `apiKey` parameter has the `@secure()` decorator applied, which means that the parameter value is not available to you to view.
-
+

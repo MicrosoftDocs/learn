@@ -2,8 +2,6 @@
 uid: learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk.understand-features-sdk
 title: Understand change feed features in the SDK
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand change feed features in the SDK
   description: "Understand change feed features in the SDK"
   ms.date: 10/18/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-understand-features-sdk.md)]
+  [!include[](includes/2-understand-features-sdk.md)]

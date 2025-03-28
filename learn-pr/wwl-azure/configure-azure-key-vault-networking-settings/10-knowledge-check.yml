@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-azure-key-vault-networking-settings.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 10/24/2024
@@ -61,4 +59,4 @@ quiz:
       explanation: "Incorrect. Firewall rules for Azure Key Vault don't restrict access to only incoming network traffic."
     - content: "Network traffic is allowed based on specified IP rules."
       isCorrect: true
-      explanation: "Correct. When you enable firewall rules for Azure Key Vault, you can control network traffic by specifying IP rules that allow or deny access to the Key Vault. This allows you to define granular access restrictions based on specific IP addresses or ranges."
+      explanation: "Correct. When you enable firewall rules for Azure Key Vault, you can control network traffic by specifying IP rules that allow or deny access to the Key Vault. This allows you to define granular access restrictions based on specific IP addresses or ranges."

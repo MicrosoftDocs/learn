@@ -2,8 +2,6 @@
 uid: learn.wwl.responsible-ai-studio.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your understanding of the content presented in this module.
   author: ivorb
@@ -49,4 +47,4 @@ quiz:
     - content: "To enable you to charge more for the solution"  
       isCorrect: false  
       explanation: "The goal of a phased delivery plan is to reduce potential harm, not to maximize revenue."  
-
+

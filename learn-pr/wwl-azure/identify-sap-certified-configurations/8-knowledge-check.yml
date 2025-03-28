@@ -2,8 +2,6 @@
 uid: learn.wwl.identify-sap-certified-configurations.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Check what you learn in this module."
   ms.date: 09/19/2024
@@ -61,4 +59,4 @@ quiz:
       explanation: "Incorrect. SAP uses the term 'clustering' in SAP HANA Certified IaaS Platforms as a synonym for 'scale-out' and NOT for high availability 'clustering'."
     - content: "Both"
       isCorrect: false
-      explanation: "Incorrect. SAP uses the term 'clustering' in SAP HANA Certified IaaS Platforms as a synonym for 'scale-out' and NOT for high availability 'clustering'."
+      explanation: "Incorrect. SAP uses the term 'clustering' in SAP HANA Certified IaaS Platforms as a synonym for 'scale-out' and NOT for high availability 'clustering'."

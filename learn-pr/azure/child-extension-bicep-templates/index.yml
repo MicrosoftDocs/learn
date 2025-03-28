@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.child-extension-bicep-templates
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: standard
   title: Deploy child and extension resources by using Bicep
   description: Learn how to deploy child and extension resources, and refer to existing resources, within your Bicep code.
@@ -58,4 +56,4 @@ units:
 - learn.azure.child-extension-bicep-templates.summary
 badge:
   uid: learn.azure.child-extension-bicep-templates.badge
-
+

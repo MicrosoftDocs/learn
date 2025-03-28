@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-models-copilot-ai-studio.select-model
 title: Explore the model catalog 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore the model catalog
   description: "Learn how to browse and search the model catalog and to select a language model."
   ms.date: 03/26/2025
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/2-select-model.md)]
-
+

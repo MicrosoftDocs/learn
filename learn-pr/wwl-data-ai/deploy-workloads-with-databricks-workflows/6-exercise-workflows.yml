@@ -2,8 +2,6 @@
 uid: learn.wwl.deploy-workloads-with-databricks-workflows.exercise-workflows
 title: Exercise - Create an Azure Databricks Workflow
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create an Azure Databricks Workflow
   description: "Exercise - Create an Azure Databricks Workflow"
   ms.date: 07/29/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 40
 content: |
-  [!include[](includes/6-exercise-workflows.md)]
+  [!include[](includes/6-exercise-workflows.md)]

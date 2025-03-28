@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-premises-postgresql-databases-azure-database-postgresql.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 10/14/2022
@@ -58,4 +56,4 @@ quiz:
       explanation: "That's incorrect.  This isn't the location of the information."
     - content: "On the **Connection strings** page for your Azure Database for PostgreSQL service in the Azure portal."
       isCorrect: true
-      explanation: "That's correct. The **Connections strings** page shows the relevant information for a variety of connectivity providers."
+      explanation: "That's correct. The **Connections strings** page shows the relevant information for a variety of connectivity providers."

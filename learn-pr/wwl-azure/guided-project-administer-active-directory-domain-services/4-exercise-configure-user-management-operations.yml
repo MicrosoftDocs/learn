@@ -2,8 +2,6 @@
 uid: learn.wwl.guided-project-administer-active-directory-domain-services.exercise-configure-user-management-operations
 title: Exercise - Configure user management operations
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Configure user management operations
   description: "Exercise - Configure user management operations"
   ms.date: 08/16/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 25
 content: |
-  [!include[](includes/4-exercise-configure-user-management-operations.md)]
+  [!include[](includes/4-exercise-configure-user-management-operations.md)]

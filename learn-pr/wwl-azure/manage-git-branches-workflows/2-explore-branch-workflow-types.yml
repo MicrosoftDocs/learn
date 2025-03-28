@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-git-branches-workflows.explore-branch-workflow-types
 title: Explore branch workflow types
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore branch workflow types
   description: "Explore branch workflow types"
   ms.date: 05/24/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-explore-branch-workflow-types.md)]
+  [!include[](includes/2-explore-branch-workflow-types.md)]

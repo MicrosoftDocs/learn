@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.build-first-bicep-deployment-workflow-using-github-actions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: standard
   title: Build your first Bicep deployment workflow by using GitHub Actions
   description: Build a basic deployment workflow for Bicep infrastructure as code templates by using Azure DevOps and GitHub Actions.
@@ -65,4 +63,4 @@ units:
 - learn.azure.build-first-bicep-deployment-workflow-using-github-actions.summary
 badge:
   uid: learn.azure.build-first-bicep-deployment-workflow-using-github-actions.badge
-
+

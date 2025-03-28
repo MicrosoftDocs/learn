@@ -2,8 +2,6 @@
 uid: learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api.configure-throughput-arm-template
 title: Configure throughput with an Azure Resource Manager template
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure throughput with an Azure Resource Manager template
   description: "Configure throughput with an Azure Resource Manager template"
   ms.date: 10/18/2022
@@ -18,4 +16,4 @@ labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/5-configure-throughput-azure-resource-manager-template.md)]
-
+

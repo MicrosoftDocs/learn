@@ -2,8 +2,6 @@
 uid: learn.wwl.security-private-access-azure-resources.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 10/03/2024
@@ -72,4 +70,4 @@ quiz:
       explanation: "Incorrect. A public endpoint is not a secure way to connect to an Azure service."
     - content: "Private endpoint"
       isCorrect: true
-      explanation: "Correct. A private endpoint provides a private and secure connection to an Azure service using a private IP address from the virtual network."
+      explanation: "Correct. A private endpoint provides a private and secure connection to an Azure service using a private IP address from the virtual network."

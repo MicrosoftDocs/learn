@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.render-a-model-with-azure-remote-rendering-and-unity
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Render a 3D model with Azure Remote Rendering
   description: Use Azure Remote Rendering to render a 3D model in a Unity project. You can deploy the model to HoloLens 2 or use the power of mixed reality with the MRTK.
   ms.date: 07/31/2023
@@ -50,4 +48,4 @@ units:
 - learn.azure.render-a-model-with-azure-remote-rendering-and-unity.7-summary
 badge:
   uid: learn.azure.render-a-model-with-azure-remote-rendering-and-unity.badge
-
+

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.evaluate-models-azure-ai-studio
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Evaluate the performance of generative AI apps with Azure AI Foundry
   description: Evaluating copilots is essential to ensure your generative AI applications meet user needs, provide accurate responses, and continuously improve over time. Discover how to assess and optimize the performance of your generative AI applications using the tools and features available in the Azure AI Studio.
   ms.date: 11/28/2024
@@ -44,4 +42,4 @@ units:
 - learn.wwl.evaluate-models-azure-ai-studio.summary
 badge:
   uid: learn.wwl.evaluate-models-azure-ai-studio.badge
-
+

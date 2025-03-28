@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-azure-container-registry-container-app-deployments.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 11/22/2023
@@ -90,4 +88,4 @@ quiz:
       explanation: "Correct. A virtual network in Azure enables many types of Azure resources to securely communicate with each other, the internet, and on-premises networks. It also allows for filtering and routing of network traffic, as well as integration with Azure services."
     - content: "Communication between on-premises resources and the internet."
       isCorrect: false
-      explanation: "Incorrect. This is only one of the key scenarios that can be accomplished with a virtual network in Azure."
+      explanation: "Incorrect. This is only one of the key scenarios that can be accomplished with a virtual network in Azure."

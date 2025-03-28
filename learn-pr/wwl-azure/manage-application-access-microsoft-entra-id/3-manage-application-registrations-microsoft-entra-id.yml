@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-application-access-microsoft-entra-id.manage-application-registrations-microsoft-entra-id
 title: Manage app registrations in Microsoft Entra ID
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage app registrations in Microsoft Entra ID
   description: "Register an application with App Registration"
   ms.date: 02/12/2025

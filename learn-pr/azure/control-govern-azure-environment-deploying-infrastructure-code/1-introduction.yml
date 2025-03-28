@@ -2,8 +2,6 @@
 uid: learn.azure.control-govern-azure-environment-deploying-infrastructure-code.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: Introduction to controlling and governing your Azure environment by deploying your infrastructure as code.
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
-
+

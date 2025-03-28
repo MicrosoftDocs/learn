@@ -2,8 +2,6 @@
 uid: learn.containerize-deploy-java-app-aks.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: Knowledge Check
   title: Knowledge Check
   description: Knowledge check.
@@ -61,4 +59,4 @@ quiz:
       explanation: "A feature that enables you to create smaller container images with better caching and a smaller security footprint. This feature enables increased optimization and maintenance of the Dockerfile over time."
     - content: "A feature that enables you to create larger container images that use less caching."
       isCorrect: false
-      explanation: ""
+      explanation: ""

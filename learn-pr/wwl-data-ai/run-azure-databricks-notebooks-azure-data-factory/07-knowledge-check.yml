@@ -2,8 +2,6 @@
 uid: learn.wwl.run-azure-databricks-notebooks-azure-data-factory.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 08/29/2023
@@ -47,4 +45,4 @@ quiz:
       explanation: "Incorrect. You can use argparse to read parameters in a Python script."
     - content: "dbutils.widget"
       isCorrect: true
-      explanation: "Correct. Use the dbutils.widget library to define and read parameters in an Azure Databricks notebook."
+      explanation: "Correct. Use the dbutils.widget library to define and read parameters in an Azure Databricks notebook."

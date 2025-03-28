@@ -3,8 +3,6 @@ uid: learn.deploy-azure-database-for-mysql.how-deploy-connect-azure-database-mys
 title: How to deploy and connect to Azure Database for MySQL
 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: How to deploy and connect to Azure Database for MySQL 
   description: Describe how to deploy and connect to Azure Database for MySQL.
   author: shreyaaithal
@@ -17,4 +15,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/how-deploy-connect-azure-database-mysql.md)]
-
+

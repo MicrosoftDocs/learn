@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-modernize-explore-azure-compute.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 01/08/2024
@@ -59,4 +57,4 @@ quiz:
       explanation: "Correct. The Azure networking stack supports 250-K total network flows with good performance for VMs with eight CPU cores or more and 100-K total flows with good performance for VMs with less than eight CPU cores. Past this limit network performance degrades gracefully for extra flows up to a hard limit of 1-M total flows, 500-K inbound and 500-K outbound, after which extra flows are dropped."
     - content: "1,000,000"
       isCorrect: false
-      explanation: "Incorrect.  Azure networking stack support supports 1-M total flows (500-K inbound and 500-K outbound) after which flows are dropped."
+      explanation: "Incorrect.  Azure networking stack support supports 1-M total flows (500-K inbound and 500-K outbound) after which flows are dropped."

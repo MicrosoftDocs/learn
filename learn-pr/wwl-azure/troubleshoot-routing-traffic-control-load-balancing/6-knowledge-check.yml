@@ -2,8 +2,6 @@
 uid: learn.wwl.troubleshoot-routing-traffic-control-load-balancing.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 04/27/2023
@@ -50,4 +48,4 @@ quiz:
       explanation: "That's correct. You should always check with the vendor if you have connectivity issues."
     - content: "Azure Help and Support"
       isCorrect: false
-      explanation: "That's incorrect. Azure can't assist with virtual appliance connectivity issues."
+      explanation: "That's incorrect. Azure can't assist with virtual appliance connectivity issues."

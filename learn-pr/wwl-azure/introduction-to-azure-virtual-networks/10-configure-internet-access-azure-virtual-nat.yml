@@ -2,8 +2,6 @@
 uid: learn.wwl.introduction-to-azure-virtual-networks.configure-internet-access-nat
 title: Configure internet access with Azure Virtual NAT
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure internet access with Azure Virtual NAT
   description: "Configure internet access with Azure Virtual NAT"
   ms.date: 03/28/2025

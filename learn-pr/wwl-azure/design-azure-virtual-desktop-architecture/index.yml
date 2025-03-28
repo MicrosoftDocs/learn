@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.design-azure-virtual-desktop-architecture
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design the Azure Virtual Desktop architecture
   description: "Design the Azure Virtual Desktop architecture"
   ms.date: 08/01/2022
@@ -46,4 +44,4 @@ units:
 - learn.wwl.design-azure-virtual-desktop-architecture.summary
 badge:
   uid: learn.wwl.design-azure-virtual-desktop-architecture.badge
-
+

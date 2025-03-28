@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-dynamic-deployment.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 04/05/2023
@@ -37,4 +35,4 @@ quiz:
       explanation: "Correct. The Multiple Activation Key (MAK) method of activation uses product keys that can activate a specific number of computers. You can use MAKs to activate any Windows volume edition."
     - content: "Active Directory-based activation"
       isCorrect: false
-      explanation: "Incorrect. This method is a role service that allows you to use AD DS to store activation objects, which can help simplify the maintenance of volume activation services for a network. When you use Active Directory-based activation, you do not need a host server, as in KMS, and activation requests process during client computer startup."
+      explanation: "Incorrect. This method is a role service that allows you to use AD DS to store activation objects, which can help simplify the maintenance of volume activation services for a network. When you use Active Directory-based activation, you do not need a host server, as in KMS, and activation requests process during client computer startup."

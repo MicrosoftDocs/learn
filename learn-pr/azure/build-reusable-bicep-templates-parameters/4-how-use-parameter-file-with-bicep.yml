@@ -2,8 +2,6 @@
 uid: learn.azure.build-reusable-bicep-templates-parameters.how-use-parameter-file-with-bicep
 title: Provide values using parameter files
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Provide values using parameter files
   description: Learn about parameter files and how parameter values can be provided to Bicep deployments.
@@ -17,4 +15,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/4-how-use-parameter-file-with-bicep.md)]
-
+

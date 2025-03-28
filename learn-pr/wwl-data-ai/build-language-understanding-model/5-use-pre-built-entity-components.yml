@@ -2,8 +2,6 @@
 uid: learn.wwl.build-language-understanding-model.use-pre-built-entity-components
 title: Use pre-built entity components
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use pre-built entity components
   description: Use pre-built entity components
   author: wwlpublish
@@ -17,4 +15,4 @@ labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/5-use-pre-built-entity-components.md)]
-
+

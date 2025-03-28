@@ -2,8 +2,6 @@
 uid: learn.wwl.generate-code-azure-openai.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction to how to use the Azure OpenAI Service to generate and improve code.
   author: ivorb
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-
+

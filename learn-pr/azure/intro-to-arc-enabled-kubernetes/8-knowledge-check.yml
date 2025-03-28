@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-arc-enabled-kubernetes.knowledge-check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   ms.date: 08/07/2023
@@ -51,4 +49,4 @@ quiz:
     - content: "Flux"
       isCorrect: true
       explanation: "Azure Arc-enabled Kubernetes clusters rely on Flux, an open-source GitOps deployment tool."
-
+
