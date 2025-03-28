@@ -74,4 +74,4 @@ Azure Bastion session monitoring lets you view which users are connected to whic
 
 :::image type="content" source="../media/5-delete-remote-session.png" alt-text="Screenshot of the Azure Bastion sessions page with the delete option selected for one of the two sessions.":::
 
-You'll walk through how to manage remote sessions in the next unit.
+You'll learn how to manage remote sessions in the next unit.
