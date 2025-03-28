@@ -1,6 +1,6 @@
 Ordered collections in C#, such as the `List<T>` class, perform common operations like adding, removing, and iterating through items. An example where `List<T>` is managing a list of students or books.
 
-## Use List<T> for managing ordered collections
+## Use `List<T>` for managing ordered collections
 
 `List<T>` is a generic collection designed for scenarios where you need to store and manage an ordered sequence of elements of a specific type (`T`). It provides type safety, better performance, and flexibility compared to non-generic collections like `ArrayList`, eliminating the need for type casting when accessing elements.
 
@@ -16,7 +16,7 @@ Ordered collections in C#, such as the `List<T>` class, perform common operation
 > [!NOTE]
 > `List<T>` automatically expands its capacity when needed, but this expansion can affect performance. To optimize, set an initial capacity based on the estimated size of the collection.
 
-## Add, remove, and iterate through items in a List<T>
+## Add, remove, and iterate through items in a `List<T>`
 
 `List<T>` provides methods for adding, removing, and iterating through items efficiently. These operations are straightforward and commonly used in application development.
 
@@ -49,7 +49,7 @@ This example demonstrates how to add items to a `List<T>` while preserving exist
 > [!TIP]
 > LINQ queries can simplify filtering, ordering, and grouping operations on `List<T>`.
 
-## Manage a list of students or books by using List<T>
+## Manage a list of students or books by using `List<T>`
 
 `List<T>` is ideal for managing collections of objects, such as students or books. You can define a custom class for the items and apply `List<T>` to store and manipulate them.
 

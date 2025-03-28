@@ -40,9 +40,9 @@ quiz:
       explanation: "Incorrect. `HashSet<Account>` ensures uniqueness but doesn't support key-based look-up, which is required in this scenario."
   - content: "Which of these collections in C# supports dynamic resizing and access to elements by index?"
     choices:
-    - content: "List&#60;T&#62;"
+    - content: "`List<T>`"
       isCorrect: true
-      explanation: "Correct. List&#60;T&#62; supports dynamic resizing and allows access to elements by their index, making it versatile for various scenarios."
+      explanation: "Correct. `List<T>` supports dynamic resizing and allows access to elements by their index, making it versatile for various scenarios."
     - content: "`Dictionary<TKey, TValue>`"
       isCorrect: false
       explanation: "Incorrect. `Dictionary<TKey, TValue>` stores elements as key/value pairs and doesn't provide index-based access."
