@@ -1,6 +1,6 @@
 Resource logs provide insight into operations that were done by an Azure resource, such as Azure Machine Learning. Logs are generated automatically, but you must route them to Log Analytics or different service to save or query them. To route Azure Machine Learning logs to Log Analytics, perform the following steps:
 
-1. On the Azure portal, open the Azure Machine Learning resource.
+1. In the Azure portal, open the Azure Machine Learning resource.
 1. On the left-hand side menu, expand Monitoring and select Diagnostic settings.
 1. Select + Add diagnostic setting.
 1. On the Diagnostic setting page, provide a name for the Diagnostic setting name. 
@@ -15,7 +15,7 @@ Resource logs provide insight into operations that were done by an Azure resourc
 
 Once you configure the Diagnostic setting, you can query the logs in Logs Analytics:
 
-1. On the Azure portal, open the Azure Machine Learning resource.
+1. In the Azure portal, open the Azure Machine Learning resource.
 1. On the left-hand side menu, expand Monitoring and select Logs.
 1. If the Queries hub opens, you can close it. (Queries Hub provides a sample of queries you can use. They have the context of the resource type you're looking into and it's an easy way to get started with Logs Analytics.)
 1. On the New Query 1* tab, select the drop-down menu on the right-hand side to change Simple mode to KQL. (KQL stands for Justo Query Language)

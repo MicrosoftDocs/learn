@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-to-azure-machine-learning-monitoring.azure-machine-learning-model-monitoring
-title: Azure Machine Learning model monitoring
+title: Monitoring Azure Machine Learning models
 metadata:
-  title: Azure Machine Learning model monitoring
-  description: Learn how to monitor Azure Machine Learning models
+  title: Monitoring Azure Machine Learning Models
+  description: Learn how to monitor Azure Machine Learning models.
   ms.date: 03/15/2025
   author: Orin-Thomas
   ms.author: viniap
