@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-enum-struct-record-types.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Check what you've learned in this module."
+  ms.date: 03/28/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary purpose of using enums in C#?"
+    choices:
+    - content: "To define a set of named constants for fixed values."
+      isCorrect: true
+      explanation: "Correct. Enums are used to represent a set of predefined values with meaningful names, improving code readability and maintainability."
+    - content: "To store multiple values in a single variable."
+      isCorrect: false
+      explanation: "Incorrect. Enums do not store multiple values; they represent a single value from a predefined set of constants."
+    - content: "To perform mathematical operations on integral types."
+      isCorrect: false
+      explanation: "Incorrect. Enums are not designed for mathematical operations but for representing fixed sets of values."
+  - content: "What keyword is used to define a struct in C#?"
+    choices:
+    - content: "struct"
+      isCorrect: true
+      explanation: "Correct. The 'struct' keyword is used to define a struct in C#. It allows creating a value type that encapsulates related data."
+    - content: "class"
+      isCorrect: false
+      explanation: "Incorrect. The 'class' keyword is used to define reference types, not value types like structs."
+    - content: "interface"
+      isCorrect: false
+      explanation: "Incorrect. The 'interface' keyword is used to define contracts for classes or structs, not the struct itself."
+  - content: "What is the primary advantage of using records in C# for data modeling?"
+    choices:
+    - content: "They allow for mutable properties by default."
+      isCorrect: false
+      explanation: "Incorrect. Records are immutable by default, which is one of their key advantages for data integrity."
+    - content: "They support complex behavior-focused operations."
+      isCorrect: false
+      explanation: "Incorrect. Records are designed for simple, immutable data models rather than complex behavior-focused operations."
+    - content: "They provide value-based equality and immutability."
+      isCorrect: true
+      explanation: "Correct. Records offer value-based equality and immutability, making them ideal for scenarios where data should not change after creation."

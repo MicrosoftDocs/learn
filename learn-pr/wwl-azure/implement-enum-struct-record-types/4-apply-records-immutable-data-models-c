@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-enum-struct-record-types.apply-records-immutable-data-models-c#
+title: Apply records for immutable data models
+metadata:
+  title: Apply records for immutable data models
+  description: "Learn how to use records in C# to create immutable data models with value-based equality."
+  ms.date: 03/28/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-apply-records-immutable-data-models-c#.md)]
