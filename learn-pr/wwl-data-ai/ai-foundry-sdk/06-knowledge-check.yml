@@ -2,8 +2,6 @@
 uid: learn.wwl.ai-foundry-sdk.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge.
   author: wwlpublish
@@ -49,4 +47,4 @@ quiz:
       isCorrect: true
       explanation: "Correct. Use the Azure AI Inference library to chat with an Azure AI model inference model."
 
-
+

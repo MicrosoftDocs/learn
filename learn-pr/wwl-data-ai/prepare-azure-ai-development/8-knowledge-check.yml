@@ -2,8 +2,6 @@
 uid: learn.wwl.prepare-azure-ai-development.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge Check
   description: Test your knowledge.
   author: wwlpublish
@@ -49,4 +47,4 @@ quiz:
     - content: "Azure AI Foundry SDK"
       isCorrect: true
       explanation: "Correct. The Azure AI Foundry SDK provides the AI Projects client library, which you can use to access connections in a project or hub."
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.generate-code-azure-openai.complete-code-assist-development
 title: Complete code and assist the development process
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Complete code and assist the development process
   description: Learn how to use the Azure OpenAI Service to complete code and assist the development process. This includes writing unit tests and completing partial code.
   author: ivorb
@@ -17,4 +15,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/3-complete-code-assist-development.md)]
-
+

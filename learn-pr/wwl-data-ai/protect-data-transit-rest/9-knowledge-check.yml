@@ -2,8 +2,6 @@
 uid: learn.wwl.protect-data-transit-at-rest.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 2/25/2025
@@ -72,4 +70,4 @@ quiz:
       explanation: "Incorrect. CLI only supports creating server-level firewall rules."
     - content: "Executing a T-SQL statement"
       isCorrect: true
-      explanation: "Correct. This is the only way to create a database firewall rule."
+      explanation: "Correct. This is the only way to create a database firewall rule."

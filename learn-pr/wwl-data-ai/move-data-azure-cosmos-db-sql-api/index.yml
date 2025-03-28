@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.moving-data-into-out-of-azure-cosmos-db-sql-api
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Move data into and out of Azure Cosmos DB for NoSQL
   description: "Migrate data into and out of Azure Cosmos DB for NoSQL using Azure services and open-source solutions."
   ms.date: 10/17/2022
@@ -38,4 +36,4 @@ units:
 - learn.wwl.moving-data-into-out-of-azure-cosmos-db-sql-api.knowledge-check
 - learn.wwl.moving-data-into-out-of-azure-cosmos-db-sql-api.summary
 badge:
-  uid: learn.wwl.moving-data-into-out-of-azure-cosmos-db-sql-api.badge
+  uid: learn.wwl.moving-data-into-out-of-azure-cosmos-db-sql-api.badge

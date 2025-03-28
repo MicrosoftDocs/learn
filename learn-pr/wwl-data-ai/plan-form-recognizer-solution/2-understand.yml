@@ -2,8 +2,6 @@
 uid: learn.wwl.plan-form-recognizer-solution.understand
 title: Understand AI Document Intelligence
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand AI Document Intelligence
   description: Understand AI Document Intelligence
   author: ivorb
@@ -17,4 +15,4 @@ labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/2-understand.md)]
-
+

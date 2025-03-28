@@ -2,8 +2,6 @@
 uid: learn.wwl.analyze-content-ai.create-analyzer
 title: Create a Content Understanding analyzer
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create a Content Understanding analyzer
   description: Use the Azure AI Foundry portal to create a Content Understanding analyzer.
   author: wwlpublish

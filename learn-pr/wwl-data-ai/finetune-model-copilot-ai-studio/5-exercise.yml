@@ -2,8 +2,6 @@
 uid: learn.wwl.finetune-model-copilot-ai-studio.exercise
 title: Exercise - Fine-tune a foundation model
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Fine-tune a foundation model
   description: Exercise - Fine-tune a foundation model in the Azure AI Foundry portal.
   author: madiepev
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise.md)]
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.define-indexes-azure-cosmos-db-sql-api.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 11/03/2022
@@ -36,4 +34,4 @@ quiz:
       explanation: "That's incorrect. The array operator is exclusively used to address multiple elements together."
     - content: "``/?``"
       isCorrect: false
-      explanation: "That's incorrect. The scalar operator is used strictly for string or number values at the current node."
+      explanation: "That's incorrect. The scalar operator is used strictly for string or number values at the current node."

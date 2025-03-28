@@ -2,8 +2,6 @@
 uid: learn.monitor-ai-services.create-alerts
 title: Create alerts
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create alerts
   description: Learn how to create alerts.
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/3-create-alerts.md)]
-
+

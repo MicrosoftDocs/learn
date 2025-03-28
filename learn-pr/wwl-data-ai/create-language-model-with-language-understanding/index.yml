@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.create-language-model-with-luis
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Fundamentals of conversational language understanding
   description: "Create a language model with Azure AI language."
   ms.date: 09/26/2024
@@ -48,4 +46,4 @@ units:
 - learn.wwl.create-language-model-with-luis.knowledge-check
 - learn.wwl.create-language-model-with-luis.summary
 badge:
-  uid: learn.wwl.create-language-model-with-luis.badge
+  uid: learn.wwl.create-language-model-with-luis.badge

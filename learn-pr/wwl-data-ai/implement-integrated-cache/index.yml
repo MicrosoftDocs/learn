@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-integrated-cache
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement integrated cache in Azure Cosmos DB for NoSQL
   description: "Implement integrated cache in Azure Cosmos DB for NoSQL"
   ms.date: 12/13/2022
@@ -36,4 +34,4 @@ units:
 - learn.wwl.implement-integrated-cache.knowledge-check
 - learn.wwl.implement-integrated-cache.summary
 badge:
-  uid: learn.wwl.implement-integrated-cache.badge
+  uid: learn.wwl.implement-integrated-cache.badge

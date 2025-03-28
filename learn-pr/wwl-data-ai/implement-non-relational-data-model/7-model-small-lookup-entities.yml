@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-non-relational-data-model.model-small-lookup-tables
 title: Model small lookup entities
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Model small lookup entities
   description: "Model small lookup entities"
   ms.date: 04/16/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/7-model-small-lookup-entities.md)]
+  [!include[](includes/7-model-small-lookup-entities.md)]

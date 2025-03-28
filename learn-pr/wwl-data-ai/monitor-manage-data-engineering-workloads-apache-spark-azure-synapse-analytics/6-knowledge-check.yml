@@ -2,8 +2,6 @@
 uid: learn.wwl.monitor-manage-data-engineering-workloads-with-apache-spark-azure-synapse-analyt.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 01/05/2022
@@ -37,4 +35,4 @@ quiz:
       explanation: "Incorrect. When you enable autoscale, you can set a minimum and maximum number of nodes in order to control the scale that you'd like, such that you have flexibility in the number of nodes. It does not relate to performance issues on join or shuffle jobs."
     - content: "Bucketing."
       isCorrect: false
-      explanation: "Incorrect. A way to look into slower performance with joins or shuffle jobs is to look into bucketing. The introduction of a bucket column and pre-aggregate in buckets first might help the performance."
+      explanation: "Incorrect. A way to look into slower performance with joins or shuffle jobs is to look into bucketing. The introduction of a bucket column and pre-aggregate in buckets first might help the performance."

@@ -2,8 +2,6 @@
 uid: learn.wwl.visualize-real-time-data-azure-stream-analytics-power-bi.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 12/30/2022
@@ -46,4 +44,4 @@ quiz:
       explanation: "Correct. A dashboard with a tile based on a streaming dataset updates dynamically as new data arrives."
     - content: "Export the streaming dataset to Excel and create a report from the Excel workbook."
       isCorrect: false
-      explanation: "Incorrect. A report based on an Excel workbook does not update dynamically."
+      explanation: "Incorrect. A report based on an Excel workbook does not update dynamically."

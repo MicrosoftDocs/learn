@@ -2,8 +2,6 @@
 uid: learn.wwl.build-language-solution-azure-openai.integrate-azure-openai-into-app
 title: Integrate Azure OpenAI into your app
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Integrate Azure OpenAI into your app
   description: Understand considerations for integrating Azure OpenAI into your app. Learn how to decide between endpoints, methods for connecting to the service, and information on prompt engineering.
   author: ivorb
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/2-integrate-azure-openai-into-app.md)]
-
+

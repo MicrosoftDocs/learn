@@ -2,8 +2,6 @@
 uid: learn.wwl.apply-prompt-engineering-azure-openai.write-effective-prompts
 title: Write more effective prompts
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Write more effective prompts
   description: Write more effective prompts to generate quality responses from Azure OpenAI
   author: ivorb
@@ -18,4 +16,4 @@ metadata:
 durationInMinutes: 12
 content: |
   [!include[](includes/3-write-effective-prompts.md)]
-
+

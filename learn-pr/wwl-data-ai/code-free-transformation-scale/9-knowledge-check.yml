@@ -2,8 +2,6 @@
 uid: learn.wwl.perform-code-free-transformation-scale-azure-data-factory.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 11/18/2022
@@ -36,4 +34,4 @@ quiz:
       explanation: "Incorrect. A Source transformation configures your data source for the data flow. When designing data flows, your first step will always be configuring a source transformation."
     - content: "Sink."
       isCorrect: true
-      explanation: "Correct. A Sink transformation allows you to choose a dataset definition for the destination output data. You can have as many sink transformations as your data flow requires."
+      explanation: "Correct. A Sink transformation allows you to choose a dataset definition for the destination output data. You can have as many sink transformations as your data flow requires."

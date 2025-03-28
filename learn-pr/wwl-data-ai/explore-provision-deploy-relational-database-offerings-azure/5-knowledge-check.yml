@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-provision-deploy-relational-database-offerings-azure.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 10/09/2024
@@ -50,4 +48,4 @@ quiz:
       explanation: "Correct. LAMP standard for Linux, Apache, MySQL, and PHP."
     - content: "Azure Database for PostgreSQL"
       isCorrect: false
-      explanation: "Incorrect. That's incorrect. LAMP standard for Linux, Apache, MySQL, and PHP."
+      explanation: "Incorrect. That's incorrect. LAMP standard for Linux, Apache, MySQL, and PHP."
