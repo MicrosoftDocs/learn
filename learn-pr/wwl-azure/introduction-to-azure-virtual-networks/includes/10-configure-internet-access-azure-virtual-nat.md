@@ -1,4 +1,5 @@
 
+
 Globally, IPv4 address ranges are in short supply, and can be an expensive way to grant access to Internet resources. Network Address Translation (NAT) arose out of this need for internal resources on a private network to share routable IPv4 addresses to gain access to external resources on a public network. Rather than purchasing an IPv4 address for each resource that requires internet access, you can use a NAT service to map outgoing requests from internal resources to an external IP address, so that communication can take place.
 
 NAT services provide mappings for a single IP address, a range of IP addresses defined by an IP Prefix, and a range of ports associated with an IP address. NAT is compatible with standard SKU public IP address resources or public IP prefix resources or a combination of both. You can use a public IP prefix directly or distribute the public IP addresses of the prefix across multiple NAT gateway resources. NAT maps all traffic to the range of IP addresses of the prefix. NAT allows flows to be created from the virtual network to the Internet. Return traffic from the Internet is only allowed in response to an active flow.

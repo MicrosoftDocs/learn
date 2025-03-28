@@ -4,10 +4,12 @@ title: Examine exceptions and how exceptions are used
 metadata:
   title: Examine exceptions and how exceptions are used
   description: "Examine exceptions and how exceptions are used"
-  ms.date: 02/22/2024
+  ms.date: 03/28/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/4-examine-code-exception.md)]
@@ -18,7 +20,7 @@ quiz:
     choices:
     - content: "To ignore errors that occur in a program."
       isCorrect: false
-      explanation: "Incorrect. Exceptions should be handled in code to correct error conditions if possible."
+      explanation: "Incorrect. Exceptions should be handled in code to correct an error conditions if possible."
     - content: "To take corrective action when an error occurs in a program."
       isCorrect: true
       explanation: "Correct. The purpose of catching an exception is to take corrective action when an error occurs."
