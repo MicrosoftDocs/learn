@@ -2,11 +2,11 @@ In this module and throughout the exercises, you got hands-on with many security
 
 When you're securing Azure SQL, you should first consider your network and identity access, allowing only connections and access from the right places, people, and applications, depending on your organization and infrastructure. Additionally, you can encrypt and mask sensitive data and apply security management tools, such as those available in the Advanced Data Security suite.
 
-In the next module in this learning path, you'll take a look at the performance capabilities and tasks that can help you monitor and tune performance for Azure SQL as it compares to SQL Server. You'll also learn new capabilities in Azure SQL that can help you automate and accelerate performance.
+In the next module in this learning path, you take a look at the performance capabilities and tasks that can help you monitor and tune performance for Azure SQL as it compares to SQL Server. You also learn new capabilities in Azure SQL that can help you automate and accelerate performance.
 
 ### Learn more
 
-You'll find general and detailed guidance on security for Azure SQL in the [Azure SQL security documentation](/azure/sql-database/sql-database-security-overview?azure-portal=true) and the [Azure SQL security best practices playbook](/azure/sql-database/sql-database-security-best-practice?azure-portal=true).
+You can find general and detailed guidance on security for Azure SQL in the [Azure SQL security documentation](/azure/sql-database/sql-database-security-overview?azure-portal=true) and the [Azure SQL security best practices playbook](/azure/sql-database/sql-database-security-best-practice?azure-portal=true).
 
 ### Video series: Azure SQL for beginners
 
@@ -40,7 +40,7 @@ For information about contained database users in SQL Server and Azure, see [Con
 
 For more information about Azure SQL Transparent Data Encryption (TDE) with Bring Your Own Key (BYOK), see [Azure SQL TDE with customer-managed key](/azure/azure-sql/database/transparent-data-encryption-byok-overview). 
 
-If you're interested in using Azure Key Vault for BYOK, see [Tutorial: Getting started with Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-tutorial-getting-started). This tutorial uses Azure PowerShell or SMSS.
+If you're interested in using Azure Key Vault for BYOK, see [Tutorial: Getting started with Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-tutorial-getting-started). This tutorial uses Azure PowerShell or SQL Server Management Studio (SSMS).
 
 #### Managing security
 

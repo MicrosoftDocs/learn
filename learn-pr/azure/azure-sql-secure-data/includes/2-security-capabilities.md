@@ -19,7 +19,7 @@ In addition to these main choices, you have the opportunity to block all public 
 
 ### Allow access to Azure services
 
-During the Azure SQL Database deployment, you can set the option **Allow Azure services and resources access to this server** to **Yes**. If you choose this option, you're allowing any resource from any region or subscription the possibility to access your resource. This option makes it easy to get up and running and get Azure SQL Database connected to other services, such as Azure Virtual Machines, Azure App Service, or even Azure Cloud Shell, because you're allowing anything that comes through Azure to have the potential to connect.
+During the Azure SQL Database deployment, you can set the option **Allow Azure services and resources access to this server** to **Yes**. If you choose this option, you're allowing any resource from any region or subscription the possibility to access your resource. This option makes it easy to get up and running and get Azure SQL Database connected to other services. For example, Azure Virtual Machines, Azure App Service, or even Azure Cloud Shell can access your resource, because you're allowing anything that comes through Azure to have the potential to connect.
 
 :::image type="content" source="../media/2-allow-access.png" alt-text="Diagram of allowing access to Azure services." border="false":::
 
@@ -47,7 +47,7 @@ The result would be `203.0.113.1`, the public IP address of the Azure VM. Even t
 
 If you want to use only firewall rules, it can be complicated to set up. Using only firewall rules means that you have to specify a range of IP addresses for all your connections, which can sometimes have dynamic IP addresses. An easier alternative is to use [virtual network rules](/azure/azure-sql/database/vnet-service-endpoint-rule-overview) to establish and manage access from specific networks that contain VMs or other services that need to access the data.
 
-If you configure access from a virtual network with a virtual network rule, any resources in that virtual network can access the Azure SQL Database logical server. This can simplify the challenge of configuring access to all static and dynamic IP addresses that need to access the data. By using virtual network rules, you can specify one or more virtual networks, encompassing all the resources within them. You can also start to apply virtual network technologies to connect networks across regions in both Azure and on-premises.  
+If you configure access from a virtual network with a virtual network rule, any resources in that virtual network can access the Azure SQL Database logical server. This configuration can simplify the challenge of configuring access to all static and dynamic IP addresses that need to access the data. By using virtual network rules, you can specify one or more virtual networks, encompassing all the resources within them. You can also start to apply virtual network technologies to connect networks across regions in both Azure and on-premises.  
 
 :::image type="content" source="../media/2-vnet-rules.png" alt-text="Diagram of virtual network rules." border="false":::
 
@@ -81,7 +81,7 @@ Aliases:    aw-server.database.windows.net
 Under the nonauthoritative answer, there are some important things to look at:  
 
 - **Name**: The endpoint starting with `cr2` is part of the public DNS hierarchy. Without getting too much into the hierarchy, let's say that `cr2` is *control ring 2* and that there are multiple data "slices" below it.  
-- **Address**: The IP address returned here should match the public IP address of your Azure VM. Although a tool such as SSMS's final hop might be through your VM's private IP address, your VM's public IP address is still being used to connect in some capacity.  
+- **Address**: The IP address returned here should match the public IP address of your Azure VM. Although the final hop of a tool such as SSMS might be through your virtual machine's (VMs) private IP address, your VMs public IP address is still being used to connect in some capacity.  
 - **Aliases**: Aliases are various points within the DNS hierarchy; in this case, the specific data "slice" and endpoint you connect to.  
 
 > [!NOTE]
@@ -103,7 +103,7 @@ As you continue with this example, on the Azure VM in virtual network `SQLDBVNet
 SELECT client_net_address FROM sys.dm_exec_connections WHERE session_id=@@SPID;
 ```
 
-The result would now be `10.0.0.2`, which is the Azure VM's private IP address in this example. By adding access from your virtual network, connections to Azure SQL Database from your VM will appear to come through your VM's private IP address. This is the same result you saw with virtual network rules.  
+The result would now be `10.0.0.2`, which is the Azure VM's private IP address in this example. By adding access from your virtual network, connections to Azure SQL Database from your VM appear to come through your VM's private IP address. This result is the same one you saw with virtual network rules.  
 
 However, you might want to use the command prompt to look at the DNS hierarchy by using the following command:
 
@@ -123,10 +123,10 @@ Address:    10.0.0.5
 Aliases:    aw-server.database.windows.net
 ```
 
-Under the non-authoritative answer, there are some important things to look at:  
+Under the **Non-authoritative answer**, there are some important things to look at:  
 
 - **Name**: You're no longer pointing to the public DNS hierarchy, only to the Private Link DNS. This means that less information is revealed about your database server.  
-- **Addresses**: For virtual network rules, the address that's returned is your VM's public IP address, but it should now be one or more *private* IP addresses within the Private Link hierarchy (one is the private endpoint of your Azure SQL Database).
+- **Addresses**: For virtual network rules, your VM's public IP address is returned. However, it should now be one or more *private* IP addresses within the Private Link hierarchy (one is the private endpoint of your Azure SQL Database).
 - **Aliases**: As in the Name field, nothing is related to the DNS hierarchy, except that you can still connect to the server name (for example, `aw-server.database.windows.net`).  
 
 One thing you might be wondering if you're connecting to the private endpoint is *why are you still using the same server name?* In the backend, when you use only the Private Link method of connecting to Azure SQL Database (that is, no firewall or virtual network rules), the information is processed as follows:  
@@ -143,7 +143,7 @@ After you work out the networking access, the next layer to consider is access m
 
 ### Role-based access control
 
-All Azure types of operations for Azure SQL Database are controlled through role-based access control (RBAC). RBAC is currently decoupled from Azure SQL security, but you can think of it as security rights outside of your database in SQL Database, with a scope that includes subscription, resource group, and resource. The rights apply to operations in the Azure portal, the Azure CLI, and Azure PowerShell. RBAC allows for separation of duties between deployment, management, and usage.
+All Azure types of operations for Azure SQL Database are controlled through role-based access control (RBAC). RBAC is currently decoupled from Azure SQL security, but you can think of it as security rights outside of your database in SQL Database. The scope includes subscription, resource group, and resource. The rights apply to operations in the Azure portal, the Azure CLI, and Azure PowerShell. RBAC allows for separation of duties between deployment, management, and usage.
 
 Built-in roles are available to reduce the need for higher-level RBAC roles, such as **Owner** or **Contributor**. Effectively, you can use these roles to have certain individuals deploy Azure SQL resources (or manage security policies) but grant other users actual access to use or manage the database. For example, a **SQL Server Contributor** could deploy a server and assign a user to be the admin of the server and databases. The built-in roles for Azure SQL Database include:  
 
@@ -163,7 +163,7 @@ The server admin needs to be set during deployment. For databases in Azure SQL D
 
 If you're migrating a workload that needs Windows authentication or your organization uses Microsoft Entra ID, you can use Microsoft Entra ID. You can assign a Microsoft Entra server admin by using the portal or command-line tools.
 
-Microsoft Entra-only authentication is the default option when configuring a new server. [Server logins](/azure/azure-sql/database/authentication-azure-ad-logins) have been introduced to allow Microsoft Entra server principals, which are logins in the virtual `master` database of a SQL Database. You can create Microsoft Entra logins from Microsoft Entra *users, groups, and service principals*. When using Microsoft Entra-only authentication, you can create SQL authentication logins, and existing logins will remain. However, only Microsoft Entra authentication logins and users can connect to the logical server. To learn more about Microsoft Entra-only authentication, see [Microsoft Entra-only authentication with Azure SQL](/azure/azure-sql/database/authentication-azure-ad-only-authentication).
+Microsoft Entra-only authentication is the default option when configuring a new server. [Server logins](/azure/azure-sql/database/authentication-azure-ad-logins) allow Microsoft Entra server principals, which are logins in the virtual `master` database of a SQL Database. You can create Microsoft Entra logins from Microsoft Entra *users, groups, and service principals*. When using Microsoft Entra-only authentication, you can create SQL authentication logins, and existing logins remain. However, only Microsoft Entra authentication logins and users can connect to the logical server. To learn more about Microsoft Entra-only authentication, see [Microsoft Entra-only authentication with Azure SQL](/azure/azure-sql/database/authentication-azure-ad-only-authentication).
 
 :::image type="content" source="../media/2-azure-ad-admin.png" alt-text="Screenshot of setting the Microsoft Entra administrator." border="false":::  
 

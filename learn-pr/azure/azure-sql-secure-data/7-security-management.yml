@@ -27,7 +27,7 @@ quiz:
       - content: "Azure Metrics and Alerts"
         isCorrect: false
         explanation: "In Azure SQL Database, you can configure Azure SQL auditing and apply DMVs, metrics, and alerts to monitor security-related events."
-      - content: "All of the above"
+      - content: "All of these ways."
         isCorrect: true
         explanation: "In Azure SQL Database, you can configure Azure SQL auditing and apply DMVs, metrics, and alerts to monitor security-related events."
 

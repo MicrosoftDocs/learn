@@ -1,4 +1,4 @@
-In this exercise, you'll confirm that Microsoft Defender for Cloud is enabled, and you'll explore some of the features within each of the capabilities mentioned in the previous unit.
+In this exercise, you confirm that Microsoft Defender for Cloud is enabled. Then, you explore some of the features within each of the capabilities mentioned in the previous unit.
 
 ## Configure Microsoft Defender for Cloud
 
@@ -9,15 +9,15 @@ In this exercise, you'll confirm that Microsoft Defender for Cloud is enabled, a
 
 1. On the left pane, under **Security**, select **Microsoft Defender for Cloud**. Select the **Configure** link near the **Enablement Status**.
 
-1. Review the selections you've made for your Azure SQL Database logical server. On the same pane is information about Vulnerability Assessment and Advanced Threat Protection.  
+1. Review the selections you made for your Azure SQL Database logical server. On the same pane is information about Vulnerability Assessment and Advanced Threat Protection.  
 
     This storage account was deployed as part of the deployment script for your Azure SQL Database. Review the options and add your email address if you want to receive the results of the weekly recurring scan. Uncheck **Also send email notification to admins and subscription owners**.  
 
-1. Just as you can configure who receives Vulnerability Assessment scans, you can configure who receives Advanced Threat Protection alerts. In your sandbox subscription, you don't have access to set the subscription-level email settings, so you won't be able to **Add your contact details to the subscription's email settings in Azure Security Center**.  
+1. Just as you can configure who receives Vulnerability Assessment scans, you can configure who receives Advanced Threat Protection alerts. In your sandbox subscription, you don't have access to set the subscription-level email settings, so you aren't able to **Add your contact details to the subscription's email settings in Azure Security Center**.  
 
-1. After you've updated all your settings, select **Save**.  
+1. After you update all your settings, select **Save**.  
 
-    By configuring these settings, you'll be able to complete some of the other steps in this activity. You'll see more of Vulnerability Assessment and Advanced Threat Protection later.  
+    By configuring these settings, you're able to complete some of the other steps in this activity. Later, you see more of Vulnerability Assessment and Advanced Threat Protection.  
 
 ## Data Discovery & Classification
 
@@ -35,7 +35,7 @@ In this exercise, you'll confirm that Microsoft Defender for Cloud is enabled, a
 
 1. Select **Save** near the upper left of the menu.
 
-1. Finally, select the **Overview** tab to view the overview dashboard and review the classifications you've added.  
+1. Finally, select the **Overview** tab to view the overview dashboard and review the classifications you added.  
 
     :::image type="content" source="../media/8-data-classification-overview.png" alt-text="Screenshot of the Data Discovery & Classification overview.":::
 
@@ -49,7 +49,7 @@ In this exercise, you'll confirm that Microsoft Defender for Cloud is enabled, a
 
     :::image type="content" source="../media/8-vulnerability-scan.png" alt-text="Screenshot of how to kick off a Vulnerability Assessment scan.":::
 
-    Your resulting view will not be exact, but should be similar to what's shown here:  
+    Your resulting view won't be exactly the same, but should be similar to the view shown here:  
 
     :::image type="content" source="../media/8-vulnerability-scan-results.png" alt-text="Screenshot of the new Vulnerability Assessment dashboard after scan." lightbox="../media/8-vulnerability-scan-results.png":::
 
@@ -62,7 +62,7 @@ In this exercise, you'll confirm that Microsoft Defender for Cloud is enabled, a
 
     In this image, Vulnerability Assessment is suggesting that you configure a baseline of what firewall rules have been set. After you have a baseline, you can monitor and assess any changes.  
 
-1. Depending on the security check, there will be alternate views and recommendations. Review the information that's provided. For this security check, you can select the **Add all results as baseline** button and then select **Yes** to set the baseline. Now that a baseline is in place, this security check will fail in any future scans where the results are different from the baseline. Select the **X** at the top-right to close the pane for the specific rule.  
+1. Depending on the security check, there are alternate views and recommendations. Review the information provided. For this security check, you can select the **Add all results as baseline** button and then select **Yes** to set the baseline. Now that a baseline is in place, this security check will fail in any future scans where the results are different from the baseline. Select the **X** at the top-right to close the pane for the specific rule.  
 
 1. In our example, we completed another scan by selecting **Scan** and can confirm that VA2065 is now showing up as a *Passed* security check.
 
@@ -83,7 +83,7 @@ In this exercise, you'll confirm that Microsoft Defender for Cloud is enabled, a
     - Brute force
     - Anomalous client login
 
-    In this section, you'll learn how a SQL Injection alert can be triggered through SSMS. SQL Injection alerts are intended for custom-written applications, not for standard tools such as SSMS. Therefore, to trigger an alert through SSMS as a test for a SQL Injection, you need to "set" the **Application Name**, which is a connection property for clients that connect to SQL Server or Azure SQL.
+    In this section, you learn how a SQL Injection alert can be triggered through SSMS. SQL Injection alerts are intended for custom-written applications, not for standard tools such as SSMS. Therefore, to trigger an alert through SSMS as a test for a SQL Injection, you need to "set" the **Application Name**, which is a connection property for clients that connect to SQL Server or Azure SQL.
 
     To get the full experience of this section, you need access to the email address you provided for Advanced Threat Protection alerts in the first part of this exercise (which you can't do in this sandbox). If you need to update it, do so before proceeding.  
 
@@ -109,7 +109,7 @@ In this exercise, you'll confirm that Microsoft Defender for Cloud is enabled, a
     SELECT * FROM sys.databases WHERE database_id like '' or 1 = 1 --' and family = 'test1';
     ```
 
-    Within a few minutes, if you were able to configure the email settings (which you can't do in the sandbox), you would receive an email message that's similar to the following:  
+    Within a few minutes, if you're able to configure the email settings (which you can't do in the sandbox), you would receive an email message that's similar to the following example:  
 
     :::image type="content" source="../media/8-advanced-threat-protection-email.png" alt-text="Screenshot of an Advanced Threat Protection threat detected email.":::
 
