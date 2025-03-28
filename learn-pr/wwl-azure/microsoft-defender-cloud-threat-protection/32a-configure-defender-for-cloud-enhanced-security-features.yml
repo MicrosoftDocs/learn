@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-defender-cloud-threat-protection.32a-configure-defender-for-cloud-enhanced-security-features
+title: Exercise - Configuring Microsoft Defender for Cloud for Enhanced Protection
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Exercise - Configuring Microsoft Defender for Cloud for Enhanced Protection
+  description: "Exercise - Configuring Microsoft Defender for Cloud for Enhanced Protection"
+  ms.date: 03/28/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - references_regions
+durationInMinutes: 15
+content: |
+  [!include[](includes/32a-configure-defender-for-cloud-enhanced-security-features.md)]
