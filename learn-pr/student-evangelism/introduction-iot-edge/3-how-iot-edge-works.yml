@@ -2,8 +2,6 @@
 uid: learn.oxford.intro-to-iot-edge.how-iot-edge-works
 title: How IoT Edge works
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: How IoT Edge works
   description: How IoT Edge works
   ms.date: 07/30/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 7 # dummy number at present
 content: |
   [!include[](includes/3-how-iot-edge-works.md)]
-
+

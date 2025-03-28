@@ -2,8 +2,6 @@
 uid: learn.startups.pitch-company.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check what you learned about startup pitching, including how to polish presentation skills and how to prepare pitch deck slides.
   ms.date: 04/22/2024
@@ -76,4 +74,4 @@ quiz:
     - content: "50-100."
       isCorrect: false
       explanation: "Incorrect. In demo day pitches, presenters should focus on communicating key points verbally, not through slides that are packed with written words and images. The role of the slides is to support your talking points with an image, chart, or other single piece of information that's expressed in a limited number of words."
-
+

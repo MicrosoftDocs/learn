@@ -2,8 +2,6 @@
 uid: learn.pitch-your-product-prototype.5-demonstrate-your-prototype
 title: Demonstrate your prototype
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Demonstrate your prototype
   description: This unit teaches you how to demonstrate a prototype.
   author: czhu89
@@ -33,4 +31,4 @@ quiz:
       isCorrect: false
     - content: "So your audience understands the future of your product."
       isCorrect: true
-      explanation: "Your audience wants to know you have a future plan for your product to help them understand how it will grow."
+      explanation: "Your audience wants to know you have a future plan for your product to help them understand how it will grow."

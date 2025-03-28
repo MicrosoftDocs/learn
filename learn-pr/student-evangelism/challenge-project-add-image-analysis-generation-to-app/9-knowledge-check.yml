@@ -2,8 +2,6 @@
 uid: learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Answer the questions to check your knowledge of the concepts covered in this module."
   ms.date: 9/5/2023
@@ -61,4 +59,4 @@ quiz:
       explanation: "Incorrect. Azure AI services can be integrated into a React static web app using API or SDKs."
     - content: "Azure AI services can be integrated by creating a component handling Azure AI service authentication and calls, and then adding it to the 'index.html' file."
       isCorrect: false
-      explanation: "Incorrect. Azure AI services can be integrated by creating a component handling Azure AI service authentication and calls and then adding it to the 'App.js' file."
+      explanation: "Incorrect. Azure AI services can be integrated by creating a component handling Azure AI service authentication and calls and then adding it to the 'App.js' file."

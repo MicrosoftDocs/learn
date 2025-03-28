@@ -2,8 +2,6 @@
 uid: learn.large-language-model-deployment.try-model-exercise
 title: "Exercise: Try out your deployed model"
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: "Exercise: Try out your deployed model"
   description: Practice trying out your deployed model in the Azure OpenAI completions playground.
   ms.date: 09/25/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/7-try-model-exercise.md)]
-
+
