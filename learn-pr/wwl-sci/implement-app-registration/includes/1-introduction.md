@@ -1,4 +1,4 @@
-In this module, you will plan your line-of-business application registration strategy, implement application registrations, and configure application permissions.
+In this module, you plan your line-of-business application registration strategy, implement application registrations, and configure application permissions.
 
 ## Learning objectives
 

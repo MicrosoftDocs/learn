@@ -18,7 +18,7 @@ Granting tenant-wide admin consent requires you to sign in as a user that is aut
 5.  Review the dialogue box, and then select **Yes.**
     
    > [!WARNING]
-   > Granting tenant-wide admin consent through App registrations will revoke any permissions that had previously been granted tenant-wide. Permissions previously granted by users on their own behalf will not be affected.
+   > Granting tenant-wide admin consent through App registrations will revoke any permissions that had previously been granted tenant-wide. Permissions previously granted by users on their own behalf won't be affected.
 
 ## Grant admin consent in Enterprise apps
 
@@ -63,7 +63,7 @@ If the application is requesting application permissions and an administrator gr
 ## Using the admin consent endpoint
 
 > [!NOTE]
-> After granting admin consent using the admin consent endpoint, you've finished granting admin consent and users don't need to perform any further additional actions. After granting admin consent, users can get an access token via a typical auth flow, and the resulting access token will have the consented permissions.
+> After the admin grants admin consent using the admin consent endpoint, you've finished granting admin consent and users don't need to perform any further additional actions. After granting admin consent, users can get an access token via a typical auth flow, and the resulting access token will have the consented permissions.
 
 When a Company Administrator uses your application and is directed to the authorized endpoint, Microsoft identity platform will detect the user's role and ask them if they would like to consent on behalf of the entire tenant for the permissions you've requested. However, there's also a dedicated admin consent endpoint you can use if you would like to proactively request that an administrator grants permission on behalf of the entire tenant. Using this endpoint is also necessary for requesting application permissions (which can't be requested using the authorized endpoint).
 
