@@ -143,11 +143,11 @@ quiz:
   - content: "Can you exchange Azure OpenAI Service provisioned reservations?"
     choices:
     - content: "Yes"
-      isCorrect: false
-      explanation: "Incorrect. You can't exchange Azure OpenAI Service provisioned reservations."
-    - content: "No"
       isCorrect: true
-      explanation: "Correct. You can't exchange Azure OpenAI Service provisioned reservations."
+      explanation: "Correct. You can exchange Azure OpenAI Service provisioned reservations."
+    - content: "No"
+      isCorrect: false
+      explanation: "Incorrect. You can exchange Azure OpenAI Service provisioned reservations."
   - content: "You need to know the monetary value of reservation consumption by an Azure subscription. Which cost data should you look for?"
     choices:
     - content: " Actual cost data"

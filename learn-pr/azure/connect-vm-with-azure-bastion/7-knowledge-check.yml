@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Check your knowledge
   description: Review what you've learned.
-  ms.date: 12/06/2023
+  ms.date: 03/25/2025
   author: cherylmc
   ms.author: cherylmc
   ms.topic: unit
@@ -22,7 +22,7 @@ quiz:
     - content: The organization can eliminate all of its VM management work.
       isCorrect: false
       explanation: Azure Bastion simplifies the management of internal VMs by providing a secure connection to those VMs over the internet without requiring the installation of anything.
-    - content: The organization can simplify the management of its VMs.
+    - content: The organization can simplify VM management.
       isCorrect: true
       explanation: Azure Bastion is a fully managed PaaS service. It provides seamless RDP/SSH access to VMs over the internet without requiring the installation of connection software like Remote Desktop. 
   - content: "To what resource level or scope does an Azure Bastion connection apply?"
@@ -46,10 +46,10 @@ quiz:
       explanation: You can't connect to the Azure Bastion host without a public IP address.
     - content: Subnet named AzureBastionSubnet, public IP, and Azure Bastion
       isCorrect: true
-      explanation: Create a subnet named AzureBastionSubnet for the virtual network; create a public IP; and then create the Azure Bastion resource with the virtual network and public IP address information. 
+      explanation: Create a subnet named AzureBastionSubnet for the virtual network, create a public IP, then create the Azure Bastion resource with the virtual network and public IP address information. 
   - content: "Several of your peers are having trouble connecting to VMs by using Azure Bastion. What isn't likely to cause the problem?"
     choices:
-    - content: The public IP address of the destination VM
+    - content: The destination VM's public IP address
       isCorrect: true
       explanation: You connect to internal VMs by using the public IP of Azure Bastion, not a public IP of the destination VM.
     - content: The number of current remote connections
