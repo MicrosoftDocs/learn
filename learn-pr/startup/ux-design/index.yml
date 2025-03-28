@@ -3,7 +3,7 @@ uid: learn.startup.ux-design
 metadata:
   title: Foundations of user experience and design thinking
   description: This Microsoft Learn module provides a foundation for User Experience (UX) and design thinking. Your product ultimately exists to serve your end user, and by starting with their experience and the design that supports it, we can start with a strong foundation.
-  ms.date: 12/22/2023
+  ms.date: 03/21/2025
   author: vhawk85
   ms.author: vahughes
   ms.topic: module
@@ -35,4 +35,4 @@ units:
 - learn.startup.ux-design.knowledge-check
 - learn.startup.ux-design.summary
 badge:
-  uid: learn.startup.ux-design.badge
+  uid: learn.startup.ux-design.badge
