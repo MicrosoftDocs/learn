@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-exercises.explore-embedded-entra
+title: Explore the capabilities of Copilot in Microsoft Entra
+metadata:
+  title: Explore the capabilities of Copilot in Microsoft Entra
+  description: Explore the capabilities of Copilot in Microsoft Entra.
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.date: 03/28/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 30
+content: |
+  [!include[](includes/9a-explore-embedded-entra.md)]
