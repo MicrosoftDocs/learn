@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-manage-automation-microsoft-defender-for-endpoint.summary-resources
 title: Summary and resources
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary and resources
   description: "Summary and resources"
   ms.date: 11/28/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/7-summary-resources.md)]
+  [!include[](includes/7-summary-resources.md)]
