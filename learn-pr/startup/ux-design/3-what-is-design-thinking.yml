@@ -1,25 +1,7 @@
-<<<<<<< HEAD
 ### YamlMime:ModuleUnit
 uid: learn.startup.ux-design.what-is-design-thinking
 title: What is design thinking?
 metadata:
-  title: 'What is design thinking?'
-  description: 'This content is part of the “Foundations of user experience and design thinking” module.'
-  ms.date: 12/22/2023
-  author: vhawk85
-  ms.author: vahughes
-  ms.topic: unit
-  ms.collection: learn-startups
-durationInMinutes : 7
-content: |
-  [!include[](includes/3-what-is-design-thinking.md)]
-=======
-### YamlMime:ModuleUnit
-uid: learn.startup.ux-design.what-is-design-thinking
-title: What is design thinking?
-metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'What is design thinking?'
   description: 'This content is part of the “Foundations of user experience and design thinking” module.'
   ms.date: 03/21/2025
@@ -30,4 +12,3 @@ metadata:
 durationInMinutes : 7
 content: |
   [!include[](includes/3-what-is-design-thinking.md)]
->>>>>>> upstream
