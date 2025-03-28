@@ -2,8 +2,6 @@
 uid: learn.wwl.responsible-ai-studio.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summarize a responsible approach for generative AI.
   author: ivorb
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]
-
+

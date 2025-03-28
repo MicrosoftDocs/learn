@@ -2,8 +2,6 @@
 uid: learn.wwl.search-data-outside-azure-platform-cognitive-search.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   author: wwlpublish
@@ -17,4 +15,4 @@ labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/01-introduction.md)]
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.use-azure-cosmos-db-sql-api-sdk.exercise-connect-to
 title: 'Exercise: Connect to Azure Cosmos DB for NoSQL with the SDK'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Connect to Azure Cosmos DB for NoSQL with the SDK'
   description: "Exercise: Connect to Azure Cosmos DB for NoSQL with the SDK"
   ms.date: 03/05/2025
@@ -13,4 +11,4 @@ metadata:
   zone_pivot_groups: dev-lang-csharp-node-python
 durationInMinutes: 15
 content: |
-  [!include[](includes/7-exercise-connect-to.md)]
+  [!include[](includes/7-exercise-connect-to.md)]

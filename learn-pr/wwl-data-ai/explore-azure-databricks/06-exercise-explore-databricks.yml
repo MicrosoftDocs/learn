@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-azure-databricks.exercise
 title: Exercise - Explore Azure Databricks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Explore Azure Databricks
   description: "Exercise - Explore Azure Databricks"
   ms.date: 08/05/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 30
 content: |
-  [!include[](includes/06-exercise-explore-databricks.md)]
+  [!include[](includes/06-exercise-explore-databricks.md)]

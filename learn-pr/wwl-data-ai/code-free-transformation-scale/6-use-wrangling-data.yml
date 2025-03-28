@@ -2,8 +2,6 @@
 uid: learn.wwl.perform-code-free-transformation-scale-azure-data-factory.use-wrangling-data
 title: Exercise - Use Azure Data Factory wrangling data
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Use Azure Data Factory wrangling data
   description: "Exercise - Use Azure Data Factory wrangling data"
   ms.date: 11/18/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/6-use-wrangling-data.md)]
+  [!include[](includes/6-use-wrangling-data.md)]

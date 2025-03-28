@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-security-azure-cosmos-db-sql-api.implement-network-level-access-control
 title: Implement network-level access control
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement network-level access control
   description: "Implement network-level access control"
   ms.date: 10/18/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-implement-network-level-access-control.md)]
+  [!include[](includes/2-implement-network-level-access-control.md)]

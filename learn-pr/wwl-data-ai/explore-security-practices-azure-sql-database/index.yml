@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn-wwl.explore-security-practices-azure-sql-database
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore security practices for Azure SQL Database
   description: "Learn how security works in Azure SQL Database, the key concepts, and practical examples to help developers effectively utilize Azure SQL Database in their cloud-based applications."
   ms.date: 09/24/2024
@@ -45,4 +43,4 @@ units:
 - learn-wwl.explore-security-practices-azure-sql-database.knowledge-check
 - learn-wwl.explore-security-practices-azure-sql-database.summary
 badge:
-  uid: learn-wwl.explore-security-practices-azure-sql-database.badge
+  uid: learn-wwl.explore-security-practices-azure-sql-database.badge

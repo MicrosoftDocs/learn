@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.fine-tune-azure-databricks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Fine-tune language models with Azure Databricks
   description: Fine-tune language models with Azure Databricks
   ms.date: 03/20/2025
@@ -39,4 +37,4 @@ units:
 - learn.wwl.fine-tune-azure-databricks.summary
 badge:
   uid: learn.wwl.fine-tune-azure-databricks.badge
-
+

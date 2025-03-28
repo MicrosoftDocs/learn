@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-replication-manage-failovers-azure-cosmos-db.perform-manual-failovers
 title: Perform manual failovers
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Perform manual failovers
   description: "Perform manual failovers"
   ms.date: 12/06/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-perform-manual-failovers.md)]
+  [!include[](includes/6-perform-manual-failovers.md)]

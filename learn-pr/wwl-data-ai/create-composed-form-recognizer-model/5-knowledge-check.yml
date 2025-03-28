@@ -2,8 +2,6 @@
 uid: learn.wwl.create-composed-form-recognizer-model.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
@@ -40,4 +38,4 @@ quiz:
     - content: "That the custom models all have the same list of fields."
       isCorrect: false
       explanation: "Incorrect. Custom models can be added to a composed model even if they have different labeled fields."
-
+

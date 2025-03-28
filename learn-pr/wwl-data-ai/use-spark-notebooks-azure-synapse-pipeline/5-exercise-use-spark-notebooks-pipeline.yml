@@ -2,8 +2,6 @@
 uid: learn.wwl.use-spark-notebooks-azure-synapse-pipeline.exercise-use-spark-notebooks-pipeline
 title: Exercise - Use an Apache Spark notebook in a pipeline
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Use an Apache Spark notebook in a pipeline
   description: "Exercise - Use an Apache Spark notebook in a pipeline"
   ms.date: 02/07/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 30
 content: |
-  [!include[](includes/5-exercise-use-spark-notebooks-pipeline.md)]
+  [!include[](includes/5-exercise-use-spark-notebooks-pipeline.md)]

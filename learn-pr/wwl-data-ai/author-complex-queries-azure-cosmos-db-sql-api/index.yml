@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.author-complex-queries-azure-cosmos-db-sql-api
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Author complex queries with the Azure Cosmos DB for NoSQL
   description: "Create SQL queries for Azure Cosmos DB for NoSQL that uses subqueries or cross-products."
   ms.date: 03/10/2025
@@ -37,4 +35,4 @@ units:
 - learn.wwl.author-complex-queries-azure-cosmos-db-sql-api.knowledge-check
 - learn.wwl.author-complex-queries-azure-cosmos-db-sql-api.summary
 badge:
-  uid: learn.wwl.author-complex-queries-azure-cosmos-db-sql-api.badge
+  uid: learn.wwl.author-complex-queries-azure-cosmos-db-sql-api.badge

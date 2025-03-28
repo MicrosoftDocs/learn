@@ -2,8 +2,6 @@
 uid: learn.wwl.monitor-responses-events-azure-cosmos-db-sql-api.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 10/18/2022
@@ -47,4 +45,4 @@ quiz:
       explanation: "That's correct. Retrying the request is the only recommended solution, if the exception persists, open a support ticket from the Azure portal."
     - content: "Cache the names of the databases and containers."
       isCorrect: false
-      explanation: "That's incorrect. Caching names is a recommendation for fixing rate limiting on metadata requests."
+      explanation: "That's incorrect. Caching names is a recommendation for fixing rate limiting on metadata requests."

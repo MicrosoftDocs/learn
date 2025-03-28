@@ -2,8 +2,6 @@
 uid: learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 04/09/2024
@@ -47,4 +45,4 @@ quiz:
       explanation: "Incorrect. The HBase folder copy doesn't enable Azure cross region asynchronous replication between HDInsight HBase clusters, it's used to manually move data."
     - content: "HBase replication."
       isCorrect: true
-      explanation: "Correct. HBase replication enables Azure cross region asynchronous replication between HDInsight HBase clusters."
+      explanation: "Correct. HBase replication enables Azure cross region asynchronous replication between HDInsight HBase clusters."

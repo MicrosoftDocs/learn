@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.build-language-understanding-model
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Build a conversational language understanding model
   description: The Azure AI conversational language understanding service (CLU) enables you to train an Azure AI Language model that apps can use to extract meaning from natural language.
   author: wwlpublish
@@ -51,4 +49,4 @@ units:
 - learn.wwl.build-language-understanding-model.summary
 badge:
   uid: learn.wwl.build-language-understanding-model.badge
-
+
