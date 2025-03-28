@@ -17,7 +17,7 @@ You can pass this string to **StackExchange.Redis** to create a connection the s
 Notice that there are two more parameters at the end:
 
 * **ssl** - ensures that communication is encrypted.
-* **abortConnection** - allows a connection to be created even if the server is unavailable at that moment.
+* **abortConnect** - allows a connection to be created even if the server is unavailable at that moment.
 
 There are several other [optional parameters](https://github.com/StackExchange/StackExchange.Redis/blob/master/docs/Configuration.md#configuration-options) you can append to the string to configure the client library.
 

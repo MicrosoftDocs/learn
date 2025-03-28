@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.wwl.purview-protect-sensitive-data
+metadata:
+  title: Protect sensitive data in a digital world
+  description: "Protect sensitive data in a digital world."
+  ms.date: 03/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: purview
+  hidden: false
+title: Protect sensitive data in a digital world
+summary: Discover how Microsoft Purview helps organizations classify, protect, and monitor sensitive data across cloud, endpoint, and AI environments. This module explores strategies for securing data through classification, labeling, encryption, and proactive risk management.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe challenges in protecting sensitive data across cloud and AI environments.
+  - Explain how Microsoft Purview enables data classification, labeling, and protection.
+  - Identify how data loss prevention (DLP) prevents unauthorized data sharing.
+  - Understand how Insider Risk Management helps detect potential threats.
+  - Explore security monitoring tools for detecting and responding to data risks.
+prerequisites: |
+  - Basic understanding of data security concepts.
+  - Familiarity with compliance and risk management practices.
+  - Awareness of Microsoft 365 security and compliance tools.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- auditor
+- administrator
+- risk-practitioner
+products:
+- microsoft-purview
+- m365
+subjects:
+- information-protection-governance
+- security
+units:
+- learn.wwl.purview-protect-sensitive-data.introduction
+- learn.wwl.purview-protect-sensitive-data.data-protection-need
+- learn.wwl.purview-protect-sensitive-data.manage-sensitive-data-challenge
+- learn.wwl.purview-protect-sensitive-data.protect-data-zero-trust-world
+- learn.wwl.purview-protect-sensitive-data.understand-classification-protection
+- learn.wwl.purview-protect-sensitive-data.prevent-data-leaks-insider-threats
+- learn.wwl.purview-protect-sensitive-data.manage-respond-alerts-threats
+- learn.wwl.purview-protect-sensitive-data.protect-ai-data
+- learn.wwl.purview-protect-sensitive-data.knowledge-check
+- learn.wwl.purview-protect-sensitive-data.summary
+
+badge:
+  uid: learn.wwl.purview-protect-sensitive-data.badge

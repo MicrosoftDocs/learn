@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-models-copilot-ai-studio.improve-model
-title: Improve the performance of a language model
+title: Optimize model performance
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Improve the performance of a language model
+  title: Optimize model performance
   description: "Explore the various strategies to improve the model's performance"
-  ms.date: 03/05/2025
+  ms.date: 03/26/2025
   author: madiepev
   ms.author: madiepev
   ms.topic: unit

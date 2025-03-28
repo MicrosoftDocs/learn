@@ -1,8 +1,6 @@
-You've now seen the Azure portal, SQL Server Management Studio (SSMS), and SQL notebooks in Azure Data Studio. Other tools are available to you for managing Azure SQL. Two of the most popular are the Azure CLI and Azure PowerShell. They're similar in functionality. This activity focuses on the Azure CLI.
+You've now seen the Azure portal, and SQL Server Management Studio (SSMS). Other tools for managing Azure SQL products are available. Two of the most popular are the Azure CLI and Azure PowerShell. They're similar in functionality. For both of these tools, you can also use Azure Cloud Shell, which is an interactive shell environment that you can use through your browser in the Azure portal.
 
-To complete this activity, you can use a PowerShell notebook, which is the same concept as a SQL notebook but the coding language is PowerShell. You can use PowerShell notebooks to take advantage of Azure CLI or Azure PowerShell. This article focuses on Azure CLI commands. For both of these tools, you can also use Azure Cloud Shell, which is an interactive shell environment that you can use through your browser in the Azure portal.
-
-In this exercise, we use Cloud Shell. It already includes the Azure CLI and Azure PowerShell modules.
+This activity focuses on the Azure CLI. In this exercise, we use Cloud Shell. It already includes the Azure CLI and Azure PowerShell modules.
 
 ## Connecting with Azure Cloud Shell and the Azure CLI
 

@@ -19,7 +19,7 @@ You should always place your cache instance and your application in the same reg
 The tier determines the size, performance, and features that are available for the cache. For more information, visit [Azure Cache for Redis pricing](https://azure.microsoft.com/pricing/details/cache/).
 
 > [!TIP]
-> Microsoft recommends you always use Standard tier or higher for production systems. The Basic tier is a single node system with no data replication and no SLA. 
+> Microsoft recommends you always use Standard tier or higher for production systems. The Basic tier is a single node system with no data replication and no service level agreement. 
 
 ### Clustering support
 

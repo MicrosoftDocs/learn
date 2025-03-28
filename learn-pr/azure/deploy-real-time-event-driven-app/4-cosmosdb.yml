@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Databases for event-driven applications
   description: In this unit, we explain why Azure Cosmos DB is a perfect fit for event-driven systems with real-time requirements.
-  ms.date: 02/05/2024
+  ms.date: 03/05/2025
   author: SandraAhlgrimm
   ms.author: sakriema
   ms.topic: unit

@@ -84,7 +84,7 @@ Parent Component – A **parent component** refers to a component that contains 
 
 Child Component - A **child component** refers to an individual element that is nested inside a **parent component.**
 
-### [Plugin](https://www.figma.com/community/plugin/7three1three100three6968threethree4777/a11y-focus-order) UI
+### [Plugin](https://www.figma.com/community/plugin/731310036968334777/a11y-focus-order) UI
 
 The plug-in will create a table that has all the components listed out and they're here in the table shown below in the image. A diamond shaped thing is a library component which is an established library with some minor tweaks that are good to use and populate details automatically. Custom Components denoted as circle, are a composite of certain controls and need to set up many properties for them. And then if necessary custom components can have a parent and have children. For example, grid is a parent and grid item are a child component. Another example is that radio groups are parents and radio button are a child component.
 

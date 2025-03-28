@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise – Building a confusion matrix
   description: Exercise unit about building a confusion matrix in machine learning
-  ms.date: 07/20/2024
+  ms.date: 03/13/2025
   author: s-polly
   ms.author: scottpolly
   ms.topic: unit

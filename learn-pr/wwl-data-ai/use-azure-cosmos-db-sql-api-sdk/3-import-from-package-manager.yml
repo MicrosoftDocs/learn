@@ -6,11 +6,12 @@ metadata:
   prefetch-feature-rollout: true
   title: Import from package manager
   description: "Import from package manager"
-  ms.date: 10/23/2024
+  ms.date: 03/05/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
   ms.custom: devx-track-dotnet
+  zone_pivot_groups: dev-lang-csharp-node-python
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

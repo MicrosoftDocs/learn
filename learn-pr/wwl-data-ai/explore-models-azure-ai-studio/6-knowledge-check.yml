@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check about configuring language models."
-  ms.date: 03/05/2025
+  ms.date: 03/26/2025
   author: madiepev
   ms.author: madiepev
   ms.topic: unit
@@ -14,28 +14,6 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "You want to specify the tone, format, and content for each interaction with your model in the playground. What should you use to customize the model response?"
-    choices:
-    - content: "Benchmarks"
-      isCorrect: false
-      explanation: "Incorrect. Benchmarks are used to compare the performance of models, not to customize individual model responses."
-    - content: "Grounding"
-      isCorrect: false
-      explanation: "Incorrect. Grounding is a technique used to provide context or background information to a model, not to customize its responses."
-    - content: "System message"
-      isCorrect: true
-      explanation: "Correct. System messages are used to customize the model's responses by specifying the tone, format, and content for each interaction."
-  - content: "What pattern can you use to ground prompts?"
-    choices:
-    - content: "Metadata Optimized Prompt (MOP)"
-      isCorrect: false
-      explanation: "Incorrect. MOP isn't a recognized pattern for grounding prompts."
-    - content: "Retrieval Augmented Generation (RAG)"
-      isCorrect: true
-      explanation: "Correct. RAG involves using a retrieval-based approach to provide relevant information to the model, which can help ground the prompts in specific knowledge or data."
-    - content: "Data Understanding Support Text (DUST)"
-      isCorrect: false
-      explanation: "Incorrect. DUST isn't a recognized pattern for grounding prompts."
   - content: "Where can you test a deployed model in the Azure AI Foundry portal?"
     choices:
     - content: "Chat playground"
@@ -47,4 +25,26 @@ quiz:
     - content: "Development toolbox"
       isCorrect: false
       explanation: "Incorrect. The development toolbox can contain various tools for development purposes, but it isn't the place where you would test a deployed model."
+  - content: "You want to specify the tone, format, and content for each interaction with your model in the playground. What should you use to customize the model response?"
+    choices:
+    - content: "Benchmarks"
+      isCorrect: false
+      explanation: "Incorrect. Benchmarks are used to compare the performance of models, not to customize individual model responses."
+    - content: "Grounding"
+      isCorrect: false
+      explanation: "Incorrect. Grounding is a technique used to provide context or background information to a model, not to customize its responses."
+    - content: "System message"
+      isCorrect: true
+      explanation: "Correct. System messages are used to customize the model's responses by specifying the tone, format, and content for each interaction."
+  - content: "What deployment options for an OpenAI model incur no cost for deployment and charge for inferencing based on token-based billing?"
+    choices:
+    - content: "Only Azure OpenAI Service"
+      isCorrect: false
+      explanation: "Incorrect. Azure OpenAI Service is not the only option for the required deployment criteria."
+    - content: "Only managed compute"
+      isCorrect: false
+      explanation: "Incorrect. Managed compute is charged per-minute."
+    - content: "Either Azure OpenAI Service or Azure AI Model Inferencing Service"
+      isCorrect: true
+      explanation: "Correct. You can deploy OpenAI mdoels to either Azure OpenAI Service or Azure AI Model Inferencing Service."
 

@@ -1,13 +1,8 @@
 Now it's your chance to use DALL-E to generate images. In this exercise, you'll provision an Azure OpenAI service resource and use it to explore DALL-E image generation in the Azure AI Studio playground. Then you'll use the REST API to consume a DALL-E model from a custom application.
 
-> [!NOTE]
-> To complete this exercise, you will need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true).
+Launch the exercise and follow the instructions.
 
-To complete the exercise for this module, launch the VM and follow the instructions.
-
-[!INCLUDE [Lab note](../../../includes/wwl/launch-exercise-note.md)]
-
-If you'd like to follow these instructions on your own computer, you can follow the [exercise instructions here](https://aka.ms/mslearn-openai-dall-e?azure-portal=true).
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2310727&azure-portal=true)
 
 > [!TIP]
 > After completing the exercise, if you've finished exploring Azure AI Services, delete the Azure resources that you created during the exercise.

@@ -4,10 +4,12 @@ title: Discover ways to use AI at work
 metadata:
   title: Discover ways to use AI at work
   description: "Discover ways to use AI at work"
-  ms.date: 03/05/2025
+  ms.date: 03/17/2025
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/5-discover-ai-work.md)]

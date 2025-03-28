@@ -5,10 +5,10 @@ metadata:
   adobe-target: true
   prefetch-feature-rollout: true
   title: Predict what a deployment will do by using what-if
-  description: Deploying and hoping for the best is not the approach you should be taking. The what-if operation is here to address this fact. This unit will cover what it is and how to use it.
+  description: Deploying and hoping for the best isn't the approach you should be taking. The what-if operation is here to address this fact. This unit covers what the operation is and how to use it.
   author: mumian
   ms.author: jgao
-  ms.date: 01/31/2025
+  ms.date: 03/18/2025
   ms.topic: unit
   ms.custom:
     - team=nextgen

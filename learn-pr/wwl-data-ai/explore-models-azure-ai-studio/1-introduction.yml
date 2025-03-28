@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction to configuring the deployment of a language model using the Azure AI Foundry portal."
-  ms.date: 03/05/2025
+  ms.date: 03/26/2025
   author: madiepev
   ms.author: madiepev
   ms.topic: unit
