@@ -28,7 +28,7 @@ prerequisites: |
   -   Familiar with classes, abstract classes, interfaces and inheritance.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
-- Learn how to organize your code with enum, struct, and record types in C#.
+- beginner
 roles:
 - developer
 products:
