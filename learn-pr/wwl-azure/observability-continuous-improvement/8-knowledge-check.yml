@@ -2,8 +2,6 @@
 uid: learn.wwl.observability-continuous-improvement.knowledge-check
 title: Knowledge Check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge Check
   description: "Knowledge Check"
   ms.date: 01/14/2025
@@ -70,4 +68,4 @@ quiz:
           explanation: Incorrect. Feedback loops don't create barriers, but rather foster communication and continuous improvement.
         - content: Feedback loops are used only for identifying system failures and bugs.
           isCorrect: false
-          explanation: Incorrect. While feedback loops can help identify system issues, they also drive continuous improvement by informing platform enhancements.
+          explanation: Incorrect. While feedback loops can help identify system issues, they also drive continuous improvement by informing platform enhancements.

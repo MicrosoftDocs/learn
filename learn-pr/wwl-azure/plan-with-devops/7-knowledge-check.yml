@@ -2,8 +2,6 @@
 uid: learn.wwl.plan-with-devops.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 02/06/2024
@@ -59,4 +57,4 @@ quiz:
         - content: "To automate the process of merging code changes and building resulting artifacts."
           isCorrect: false
           explanation: "Incorrect. This describes the purpose of continuous integration."
-
+

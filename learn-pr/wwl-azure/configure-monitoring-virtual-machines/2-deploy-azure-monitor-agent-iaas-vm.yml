@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-monitoring-virtual-machines.deploy-azure-monitor-agent-iaas-vm
 title: Deploy Azure Monitor Agent to IaaS Virtual Machines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deploy Azure Monitor Agent to IaaS Virtual Machines
   description: "Deploy Azure Monitor Agent to IaaS Virtual Machines"
   ms.date: 10/25/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/2-deploy-azure-monitor-agent-iaas-vm.md)]
+  [!include[](includes/2-deploy-azure-monitor-agent-iaas-vm.md)]

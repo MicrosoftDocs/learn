@@ -2,8 +2,6 @@
 uid: learn.wwl.microsoft-defender-cloud-threat-protection.monitor-network-security-events-performance-data
 title: Monitor network security events and performance data by configuring data collection rules (DCRs) in Azure Monitor
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Monitor network security events and performance data by configuring data collection rules (DCRs) in Azure Monitor
   description: "Monitor network security events and performance data by configuring data collection rules (DCRs) in Azure Monitor"
   ms.date: 03/28/2025

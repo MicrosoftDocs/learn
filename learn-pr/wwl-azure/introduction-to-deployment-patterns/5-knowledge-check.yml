@@ -2,8 +2,6 @@
 uid: learn.wwl.introduction-to-deployment-patterns.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 05/06/2024
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. The traditional or classical deployment pattern was moving your software to a development stage, a testing stage, maybe an acceptance or staging stage, and finally a production stage."
     - content: "A/B testing."
       isCorrect: false
-      explanation: "Incorrect. The traditional or classical deployment pattern was moving your software to a development stage, a testing stage, maybe an acceptance or staging stage, and finally a production stage."
+      explanation: "Incorrect. The traditional or classical deployment pattern was moving your software to a development stage, a testing stage, maybe an acceptance or staging stage, and finally a production stage."

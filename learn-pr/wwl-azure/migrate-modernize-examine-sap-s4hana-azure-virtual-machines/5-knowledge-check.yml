@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-modernize-examine-sap-s4hana-azure-virtual-machines.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 01/08/2024
@@ -48,4 +46,4 @@ quiz:
       explanation: "Correct. A virtual gateway facilitates extending a user's on-premises network to the Azure virtual network. ExpressRoute is the recommended service for cross-premises connectivity of SAP deployments in Azure, but a Site-to-Site VPN or Virtual WAN can serve as alternatives."
     - content: "Virtual WAN"
       isCorrect: false
-      explanation: "Incorrect. A virtual WAN can provide cross-premises connectivity of SAP deployments in Azure, but it isn't the recommended solution."
+      explanation: "Incorrect. A virtual WAN can provide cross-premises connectivity of SAP deployments in Azure, but it isn't the recommended solution."

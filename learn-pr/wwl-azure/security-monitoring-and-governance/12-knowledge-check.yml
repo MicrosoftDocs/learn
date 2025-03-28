@@ -2,8 +2,6 @@
 uid: learn.wwl.security-monitoring-and-governance.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 05/13/2024
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. Locks help you prevent accidental deletion or modification of your Azure resources. You can manage these locks from within the Azure portal."
     - content: "Key Vault."
       isCorrect: false
-      explanation: "Incorrect. Locks help you prevent accidental deletion or modification of your Azure resources. You can manage these locks from within the Azure portal."
+      explanation: "Incorrect. Locks help you prevent accidental deletion or modification of your Azure resources. You can manage these locks from within the Azure portal."

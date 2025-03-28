@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-compare-models-azure-machine-learning.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge on creating and exploring the Responsible AI dashboard.
   author: wwlpublish
@@ -48,4 +46,4 @@ quiz:
     - content: "Individual feature importance."
       isCorrect: true
       explanation: "Correct. The individual feature importance shows how each feature influences an individual prediction."
-
+

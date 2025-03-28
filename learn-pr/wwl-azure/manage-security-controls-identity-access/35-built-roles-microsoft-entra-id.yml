@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-security-controls-identity-access.built-roles-microsoft-entra-id
 title: Assign built-in roles in Microsoft Entra ID
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Assign built-in roles in Microsoft Entra ID
   description: "Assign built-in roles in Microsoft Entra ID"
   ms.date: 03/10/2025

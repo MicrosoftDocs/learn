@@ -2,8 +2,6 @@
 uid: learn.azdo.manage-build-dependencies.4-create-feed
 title: Exercise - Create a package feed in Azure Artifacts
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create a package feed in Azure Artifacts
   description: Set up Azure Artifacts and create a new feed that hosts your package.
   ms.custom: devdivchpfy22
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/4-create-feed.md)]
-
+

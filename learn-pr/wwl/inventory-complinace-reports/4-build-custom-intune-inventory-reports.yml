@@ -2,8 +2,6 @@
 uid: learn.wwl.inventory-compliance-reports.build-custom-intune-inventory-reports
 title: Build custom Intune inventory reports
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Build custom Intune inventory reports
   description: "Build custom Intune inventory reports"
   ms.date: 11/23/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-build-custom-intune-inventory-reports.md)]
+  [!include[](includes/4-build-custom-intune-inventory-reports.md)]

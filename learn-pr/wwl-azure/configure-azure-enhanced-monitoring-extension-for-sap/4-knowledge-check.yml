@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-azure-enhanced-monitoring-extension-for-sap.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Check what you learn in this module."
   ms.date: 08/01/2024
@@ -50,4 +48,4 @@ quiz:
       explanation: "Correct. Choose the New version only in certain specific use cases, including installing the extension on SUSE SLES 15 or higher."
     - content: "No, both versions are equally valid in this scenario."
       isCorrect: false
-      explanation: "Incorrect. The New version is recommended in certain specific use cases, including installing the extension on SUSE SLES 15 or higher."
+      explanation: "Incorrect. The New version is recommended in certain specific use cases, including installing the extension on SUSE SLES 15 or higher."

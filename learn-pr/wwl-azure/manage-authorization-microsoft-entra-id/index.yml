@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-authorization-microsoft-entra-id
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage authorization by using Microsoft Entra ID
   description: "Administer authorization in Microsoft Entra ID."
   ms.date: 08/07/2024
@@ -65,4 +63,4 @@ units:
 - learn.wwl.manage-authorization-microsoft-entra-id.knowledge-check
 - learn.wwl.manage-authorization-microsoft-entra-id.summary
 badge:
-  uid: learn.wwl.manage-authorization-microsoft-entra-id.badge
+  uid: learn.wwl.manage-authorization-microsoft-entra-id.badge

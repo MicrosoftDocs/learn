@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-azure-sap-workloads.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Check what you learn in this module."
   ms.date: 08/01/2024
@@ -39,4 +37,4 @@ quiz:
       explanation: "Correct. Azure Data Factory allows users to build advanced pipelines to automate data movement and transformation. SAP connectors in Azure Data Factory often use the integration runtime to communicate with the SAP system, and so the installation of this component is mandatory to enable data replication."
     - content: "Microsoft Power BI"
       isCorrect: false
-      explanation: "Incorrect. Microsoft Power BI isn't the technology that allows users to build advanced pipelines to automate data movement and transformation in their SAP on Azure environment."
+      explanation: "Incorrect. Microsoft Power BI isn't the technology that allows users to build advanced pipelines to automate data movement and transformation in their SAP on Azure environment."
