@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.implement-collection-types.ensuring-uniqueness-hashset
+uid: learn.wwl.implement-collection-types.ensuring-uniqueness-typed-hashset
 title: Ensuring Uniqueness with HashSet<T>
 metadata:
   title: Ensuring Uniqueness with HashSet<T>
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-ensuring-uniqueness-hashset.md)]
+  [!include[](includes/4-ensuring-uniqueness-typed-hashset.md)]

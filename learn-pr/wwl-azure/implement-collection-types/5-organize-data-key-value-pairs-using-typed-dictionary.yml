@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.implement-collection-types.organize-data-key-value-pairs-using-dictionary
+uid: learn.wwl.implement-collection-types.organize-data-key-value-pairs-using-typed-dictionary
 title: Organize Data with Dictionary<TKey, TValue>
 metadata:
   title: Organize Data with Dictionary<TKey, TValue>
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 8
 content: |
-  [!include[](includes/5-organize-data-key-value-pairs-using-dictionary.md)]
+  [!include[](includes/5-organize-data-key-value-pairs-using-typed-dictionary.md)]

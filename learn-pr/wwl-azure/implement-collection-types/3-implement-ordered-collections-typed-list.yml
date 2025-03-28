@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.implement-collection-types.implement-ordered-collections-list
+uid: learn.wwl.implement-collection-types.implement-ordered-collections-typed-list
 title: Implement Ordered Collections with List<T>
 metadata:
   title: Implement Ordered Collections with List<T>
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-implement-ordered-collections-list.md)]
+  [!include[](includes/3-implement-ordered-collections-typed-list.md)]
