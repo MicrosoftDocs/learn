@@ -35,7 +35,7 @@ Public IP addresses are created with one of the following SKUs:
 | Public IP address | **Standard** | **Basic**|
 | --- | --- |--- |
 | Allocation method | Static |  For IPv4: Dynamic or Static; For IPv6: Dynamic. |
-| Idle Timeout | Have an adjustable inbound originated flow idle timeout of 4-30 minutes, with a default of 4 minutes, and fixed outbound originated flow idle timeout of 4 minutes. |  Have an adjustable inbound originated flow idle timeout of 4-30 minutes, with a default of 4 minutes, and fixed outbound originated flow idle timeout of 4 minutes. |
+| Idle Timeout | Have an adjustable inbound originated flow idle time out of 4-30 minutes, with a default of 4 minutes, and fixed outbound originated flow idle time out of 4 minutes. |  Have an adjustable inbound originated flow idle time out of 4-30 minutes, with a default of 4 minutes, and fixed outbound originated flow idle time out of 4 minutes. |
 |Security | Secure by default model and be closed to inbound traffic when used as a frontend. Allow traffic with network security group (NSG) is required (for example, on the NIC of a virtual machine with a Standard SKU Public IP attached). |Open by default. Network security groups are recommended but optional for restricting inbound or outbound traffic|
 |Availability zones | Supported. Standard IPs can be nonzonal, zonal, or zone-redundant. Zone redundant IPs can only be created in regions where there are three availability zones.| Not supported.|
 |Routing preference | Supported to enable more granular control of how traffic is routed between Azure and the Internet.| Not supported.|

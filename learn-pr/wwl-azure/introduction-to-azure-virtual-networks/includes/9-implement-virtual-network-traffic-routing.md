@@ -182,76 +182,11 @@ You can specify the following next hop types when creating a user-defined route:
 
 **Internet:** Specify when you want to explicitly route traffic destined to an address prefix to the Internet.
 
-## Configure User-defined routes
+### Uses for custom routes (video)
 
-Here's an example where you have a virtual network that includes three subnets.
+This video reviews different usage cases for custom routes. The entire video is available in the [On Demand Instructor-led Training Series](/shows/on-demand-instructor-led-training-series/?terms=700).
 
-- The subnets are Frontend, DMZ, and Backend. In the DMZ subnet, there's a network virtual appliance (NVA). NVAs are VMs that help with network functions like routing and firewall optimization.
-- You want to ensure all traffic from the Frontend subnet goes through the NVA to the Backend subnet.
-
-:::image type="content" source="../media/route-example.png" alt-text="Diagram of the virtual network diagram routing table.":::
-
-### Create a Routing Table
-
-Creating a routing table is straightforward. You provide **Name**, **Subscription**, **Resource Group**, and **Location**. You also decide to use **Virtual network gateway route propagation**.
-
-:::image type="content" source="../media/create-routing-table.png" alt-text="Screenshot of the route table blade in the Azure portal.":::
-
-Routes are automatically added to the route table for all subnets with Virtual network gateway propagation enabled. When you're using ExpressRoute, propagation ensures all subnets get the routing information.
-
-### Create a Custom Route
-
-For our example,
-
-- The new route is named *ToPrivateSubnet*.
-- The Private subnet is at 10.0.1.0/24.
-- The route uses a virtual appliance. Notice the other choices for *Next hop type*: virtual network gateway, virtual network, internet, and none.
-- The virtual appliance is located at 10.0.2.4.
-
-:::image type="content" source="../media/create-custom-route.png" alt-text="Screenshot of the route page. The Next hop type drop-down is highlighted. Virtual appliance is selected.":::
-
-In summary, this route applies to any address prefixes in 10.0.1.0/24 (private subnet). Traffic headed to these addresses is sent to the virtual appliance with a 10.0.2.4 address.
-
-### Associate the Route Table
-
-The last step in our example is to associate the Public subnet with the new routing table. Each subnet can have zero or one route table associated to it.
-
-:::image type="content" source="../media/associate-route-table.png" alt-text="Screenshot of a route table being associated with a virtual network.":::
-
-> [!NOTE]
-> By default, using system routes traffic would go directly to the private subnet. However, with a user-defined route you can force the traffic through the virtual appliance.
-
-> [!NOTE]
-> In this example, the virtual appliance shouldn't have a public IP address and IP forwarding should be enabled.
-
-## Secure a VNet by using forced tunneling
-
-Forced tunneling lets you redirect or "force" all Internet-bound traffic back to your on-premises location via a Site-to-Site VPN tunnel for inspection and auditing. If you don't configure forced tunneling, Internet-bound traffic from your VMs in Azure always traverses from the Azure network infrastructure directly out to the Internet, without the option to allow you to inspect or audit the traffic. Unauthorized Internet access can potentially lead to information disclosure or other types of security breaches. Forced tunneling can be configured by using Azure PowerShell. It can't be configured using the Azure portal.
-
-In the following example, the Frontend subnet isn't using force tunneling. The workloads in the Frontend subnet can continue to accept and respond to customer requests from the Internet directly. The Mid-tier and Backend subnets are forced tunneled. Any outbound connections from these two subnets to the Internet are forced or redirected back to an on-premises site via one of the Site-to-site (S2S) VPN tunnels.
-
-:::image type="content" source="../media/forced-tunnel-ba8d30e6.png" alt-text="Screenshot of the subnet forced tunneling.":::
-
-### Configure forced tunneling
-
-Forced tunneling in Azure is configured using virtual network custom user-defined routes.
-
-- Each virtual network subnet has a built-in, system routing table. The system routing table has the following three groups of routes:
-
-  - Local VNet routes: Route directly to the destination VMs in the same virtual network.
-  - On-premises routes: Route to the Azure VPN gateway.
-  - Default route: Route directly to the Internet. Packets destined to the private IP addresses not covered by the previous two routes are dropped.
-- To configure forced tunneling, you must:
-
-  - Create a routing table.
-  - Add a user-defined default route to the VPN Gateway.
-  - Associate the routing table to the appropriate VNet subnet.
-- Forced tunneling must be associated with a VNet that has a route-based VPN gateway.
-
-  - You must set a default site connection among the cross-premises local sites connected to the virtual network.
-  - The on-premises VPN device must be configured using 0.0.0.0/0 as traffic selectors.
-
-Using forced tunneling allows you to restrict and inspect Internet access from your VMs and cloud services in Azure.
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=cdcb25bb-d79c-4fbb-8389-09ad07293679]
 
 ## Configure Azure Route Server
 
@@ -289,27 +224,5 @@ You can view the effective routes for each network interface by using the Azure 
 5. Under **Support + troubleshooting**, select **Effective routes**. The effective routes for a network interface named **myVMNic1** are shown, in the following image:
 
     :::image type="content" source="../media/view-effective-routes-69875697.png" alt-text="Screenshot of the Azure portal effective routes.":::
-
-### View effective routes by using Azure PowerShell
-
-You can view the effective routes for a network interface with the Get-AzEffectiveRouteTable command. The following example gets the effective routes for a network interface named myVMNic1 that is in a resource group named myResourceGroup:
-
-```powershell
-Get-AzEffectiveRouteTable `
-
--NetworkInterfaceName myVMNic1 `
-
--ResourceGroupName myResourceGroup `
-
-```
-
-### Resolve the routing issue
-
-Steps you might take to resolve the routing problem might include:
-
-1. Add a custom route to override a default route. Learn how to [add a custom route](/azure/virtual-network/manage-route-table).
-2. Change or remove a custom route that causes traffic to be routed to an undesired location. Learn how to [change](/azure/virtual-network/manage-route-table) or [delete](/azure/virtual-network/manage-route-table) a custom route.
-3. Ensure that the route table is associated to the correct subnet (the one that contains the network interface). Learn how to [associate a route table to a subnet](/azure/virtual-network/manage-route-table).
-4. Ensure that devices such as Azure VPN gateway or network virtual appliances are operating as intended.
 
 Choose the best response for each question.

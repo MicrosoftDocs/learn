@@ -20,7 +20,7 @@ You can create multiple virtual networks per region per subscription. You can cr
 
 **Virtual Networks**
 
-When you are creating a VNet, use address ranges enumerated in RFC 1918. These addresses are for private, nonroutable address spaces.
+When you're creating a VNet, use address ranges enumerated in RFC 1918. These addresses are for private, nonroutable address spaces.
 
 - 10.0.0.0 - 10.255.255.255 (10/8 prefix)
 - 172.16.0.0 - 172.31.255.255 (172.16/12 prefix)
@@ -54,7 +54,7 @@ When planning to implement virtual networks, you need to consider:
 
 **Subnets**
 
-A subnet is a range of IP address in the VNet. You can segment VNets into different size subnets, creating as many subnets as you require for organization and security within the subscription limit. You can then deploy Azure resources in a specific subnet. Just like in a traditional network, subnets allow you to segment your VNet address space into segments that are appropriate for the organization's internal network. The smallest supported IPv4 subnet is /29, and the largest is /2 (using CIDR subnet definitions). IPv6 subnets must be exactly /64 in size. When planning to implement subnets, consider:
+A subnet is a range of IP address in the VNet. You can segment VNets into different size subnets. You can then deploy Azure resources in a specific subnet. Just like in a traditional network, subnets allow you to segment your VNet address space into segments that are appropriate for the organization's internal network. The smallest supported IPv4 subnet is /29, and the largest is /2 (using CIDR subnet definitions). IPv6 subnets must be exactly /64 in size. When planning to implement subnets, consider:
 
 - Each subnet must have a unique address range, specified in Classless Inter-Domain Routing (CIDR) format.
 - Certain Azure services require their own subnet.
@@ -65,8 +65,7 @@ A subnet is a range of IP address in the VNet. You can segment VNets into differ
 
 This video reviews the basics of IP addressing and subnetting. The entire video is available in the [On Demand Instructor-led Training Series](/shows/on-demand-instructor-led-training-series/?terms=700).
 
-<iframe src="https://learn-video.azurefd.net/vod/player?id=3813e403-1608-4af1-9876-da95c1703230" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
-
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3813e403-1608-4af1-9876-da95c1703230]
 
 ### Determine a naming convention
 
