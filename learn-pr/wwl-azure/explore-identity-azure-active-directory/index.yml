@@ -3,7 +3,7 @@ uid: learn.wwl.explore-identity-azure-active-directory
 metadata:
   title: Explore identity in Microsoft Entra ID
   description: "This module covers a wide view of the definition and available services for identity provided in the Microsoft Entra ID. Start with the basics of authentication, authorization, and access tokens. After building a firm foundation of what an identity is, why it's important. Then we move into governance and lifecycle management of your identities and identity solutions. The final topic opens up the term Zero Trust to see how it should be applied to your identity solutions."
-  ms.date: 03/27/2025
+  ms.date: 03/28/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: module
