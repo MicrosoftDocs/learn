@@ -36,10 +36,10 @@ products:
 - vs-code
 units:
 - learn.wwl.implement-enum-struct-record-types.introduction
-- learn.wwl.implement-enum-struct-record-types.use-enums-representing-named-constants-c#
-- learn.wwl.implement-enum-struct-record-types.create-structs-encapsulating-data-c#
-- learn.wwl.implement-enum-struct-record-types.apply-records-immutable-data-models-c#
-- learn.wwl.implement-enum-struct-record-types.exercise-implement-enum,-struct,-record-types
+- learn.wwl.implement-enum-struct-record-types.use-enums-representing-named-constants-csharp
+- learn.wwl.implement-enum-struct-record-types.create-structs-encapsulating-data-csharp
+- learn.wwl.implement-enum-struct-record-types.apply-records-immutable-data-models-csharp
+- learn.wwl.implement-enum-struct-record-types.exercise-implement-enum-struct-record-types
 - learn.wwl.implement-enum-struct-record-types.knowledge-check
 - learn.wwl.implement-enum-struct-record-types.summary
 badge:

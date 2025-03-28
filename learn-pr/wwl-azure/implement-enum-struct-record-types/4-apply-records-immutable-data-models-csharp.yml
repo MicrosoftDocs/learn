@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.implement-enum-struct-record-types.apply-records-immutable-data-models-c#
+uid: learn.wwl.implement-enum-struct-record-types.apply-records-immutable-data-models-csharp
 title: Apply records for immutable data models
 metadata:
   title: Apply records for immutable data models
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-apply-records-immutable-data-models-c#.md)]
+  [!include[](includes/4-apply-records-immutable-data-models-csharp.md)]

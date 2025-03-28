@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.implement-enum-struct-record-types.exercise-implement-enum,-struct,-record-types
+uid: learn.wwl.implement-enum-struct-record-types.exercise-implement-enum-struct-record-types
 title: Exercise - Implement enum, struct, and record types
 metadata:
   title: Exercise - Implement enum, struct, and record types
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 25
 content: |
-  [!include[](includes/5-exercise-implement-enum,-struct,-record-types.md)]
+  [!include[](includes/5-exercise-implement-enum-struct-record-types.md)]

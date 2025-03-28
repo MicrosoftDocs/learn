@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.implement-enum-struct-record-types.use-enums-representing-named-constants-c#
+uid: learn.wwl.implement-enum-struct-record-types.use-enums-representing-named-constants-csharp
 title: Use enums to represent named constants
 metadata:
   title: Use enums to represent named constants
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-use-enums-representing-named-constants-c#.md)]
+  [!include[](includes/2-use-enums-representing-named-constants-csharp.md)]
