@@ -19,7 +19,7 @@ A Zero Trust approach should extend throughout the entire digital estate and ser
 
 :::image type="content" source="../media/zero-trust-pillars.png" alt-text="Diagram of the six pillars of Zero Trust.  Identity - endpoints - data - apps - infrastructure - and network.":::
 
-For this content, we're going to focus specifically on the **security identity with zero trust** pillar. Identities, whether they represent people, services, or IoT devices define the Zero Trust control plane. When an identity attempts to access a resource, verify that identity with strong authentication, and ensure access is compliant and typical for that identity. Follow least privilege access principles.
+For this content, we're going to focus specifically on the **security identity with Zero Trust** pillar. Identities, whether they represent people, services, or IoT devices define the Zero Trust control plane. When an identity attempts to access a resource, verify that identity with strong authentication, and ensure access is compliant and typical for that identity. Follow least privilege access principles.
 
 ### Zero Trust architecture
 
