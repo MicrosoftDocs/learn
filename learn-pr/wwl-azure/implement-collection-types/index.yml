@@ -3,7 +3,7 @@ uid: learn.wwl.implement-collection-types
 metadata:
   title: Implement Collection Types
   description: "Learn, to use C# tools for managing groups of objects dynamically, ensuring type safety and efficient data manipulation."
-  ms.date: 03/27/2025
+  ms.date: 03/28/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: module
@@ -42,9 +42,9 @@ products:
 units:
 - learn.wwl.implement-collection-types.introduction
 - learn.wwl.implement-collection-types.importance-collections
-- learn.wwl.implement-collection-types.implement-ordered-collections-list&lt;T&rt;
-- learn.wwl.implement-collection-types.ensuring-uniqueness-hashset&lt;T&rt;
-- learn.wwl.implement-collection-types.organize-data-key-value-pairs-using-dictionary&lt;tkey,-tvalue&rt;
+- learn.wwl.implement-collection-types.implement-ordered-collections-list
+- learn.wwl.implement-collection-types.ensuring-uniqueness-hashset
+- learn.wwl.implement-collection-types.organize-data-key-value-pairs-using-dictionary
 - learn.wwl.implement-collection-types.exercise-implement-collection-types
 - learn.wwl.implement-collection-types.knowledge-check
 - learn.wwl.implement-collection-types.summary

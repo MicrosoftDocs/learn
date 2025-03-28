@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.implement-collection-types.ensuring-uniqueness-hashset&lt;T&rt;
+uid: learn.wwl.implement-collection-types.ensuring-uniqueness-hashset
 title: Ensuring Uniqueness with HashSet<T>
 metadata:
   title: Ensuring Uniqueness with HashSet<T>
   description: "Explore how to use HashSet to manage unique collections and prevent duplicate elements."
-  ms.date: 03/27/2025
+  ms.date: 03/28/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-ensuring-uniqueness-hashset&lt;T&rt;.md)]
+  [!include[](includes/4-ensuring-uniqueness-hashset.md)]
