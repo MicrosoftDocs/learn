@@ -6,23 +6,23 @@ Applications that integrate with Microsoft identity platform follow an authoriza
 
 The Microsoft identity platform implements the OAuth 2.0 authorization protocol, a method through which a third-party app can access web-hosted resources on behalf of a user. Any web-hosted resource that integrates with the Microsoft identity platform has a resource identifier, or *Application ID URI*. For example, Microsoft's web-hosted resources include:
 
- -  Microsoft Graph: `https://graph.microsoft.com`
- -  Microsoft 365 Mail API: `https://outlook.office.com`
- -  Azure Key Vault: `https://vault.azure.net`
+- Microsoft Graph: `https://graph.microsoft.com`
+- Microsoft 365 Mail API: `https://outlook.office.com`
+- Azure Key Vault: `https://vault.azure.net`
 
 The same is true for any third-party resources that have integrated with the Microsoft identity platform. Any of these resources also can define a set of permissions that can be used to divide the functionality of that resource into smaller chunks. As an example, Microsoft Graph has defined permissions for tasks such as:
 
- -  Read a user's calendar.
- -  Write to a user's calendar.
- -  Send mail as a user.
+- Read a user's calendar.
+- Write to a user's calendar.
+- Send mail as a user.
 
 When the app defines these types of permissions, the resource has fine-grained control over its data and how API functionality is exposed. A third-party app can request these permissions from users and administrators who must approve the request before the app can access data or act on a user's behalf. App development organization can put the functions of resources into smaller permission sets, developers can build third-party apps to request only the specific permissions that they need to perform their function. Users and administrators can know exactly what data the app has access to, and they can be more confident that it isn't behaving with malicious intent. Developers should always abide by the concept of least privilege, asking for only the permissions they need for their applications to function.
 
 In OAuth 2.0, these types of permissions are called *scopes*. They're also often referred to as *permissions*. A permission is represented in the Microsoft identity platform as a string value. Continuing with the Microsoft Graph example, the string value for each permission is:
 
- -  Read a user's calendar by using Calendars.Read
- -  Write to a user's calendar by using Calendars.ReadWrite
- -  Send mail as a user using by Mail.Send
+- Read a user's calendar by using Calendars.Read
+- Write to a user's calendar by using Calendars.ReadWrite
+- Send mail as a user using by Mail.Send
 
 An app most commonly requests these permissions by specifying the scopes in requests to the Microsoft identity platform authorize endpoint. However, certain high-privilege permissions can only be granted through administrator consent and requested/granted using the administrator consent endpoint.
 
@@ -30,14 +30,14 @@ An app most commonly requests these permissions by specifying the scopes in requ
 
 Microsoft identity platform supports two types of permissions: **delegated permissions** and **application permissions**.
 
- -  **Delegated permissions** are used by apps that have a signed-in user present. For these apps, either the user or an administrator consents to the permissions that the app requests, and the app is delegated permission to act as the signed-in user when making calls to the target resource. Some delegated permissions can be consented to by non-administrative users, but some higher-privileged permissions require administrator consent. To learn which administrator roles can consent to delegated permissions, see Administrator role permissions in Microsoft Entra ID.
- -  **Application permissions** are used by apps that run without a signed-in user present; for example, apps that run as background services or daemons. Only an administrator can consent to application permissions.
+- **Delegated permissions** are used by apps that have a signed-in user present. For these apps, either the user or an administrator consents to the permissions that the app requests, and the app is delegated permission to act as the signed-in user when making calls to the target resource. Some delegated permissions can be consented to by non-administrative users, but some higher-privileged permissions require administrator consent. To learn which administrator roles can consent to delegated permissions, see Administrator role permissions in Microsoft Entra ID.
+- **Application permissions** are used by apps that run without a signed-in user present; for example, apps that run as background services or daemons. Only an administrator can consent to application permissions.
 
 *Effective permissions* are those that your app will have when making requests to the target resource. It's important to understand the difference between the delegated and application permissions that your app is granted and its effective permissions when making calls to the target resource.
 
- -  For delegated permissions, the *effective permissions* of your app will be the least privileged intersection of the delegated permissions the app has been granted (via consent) and the privileges of the currently signed-in user. Your app can never have more privileges than the signed-in user. Within organizations, the privileges of the signed-in user are determined by policy or by membership in one or more administrator roles. To learn which administrator roles can consent to delegated permissions, see Administrator role permissions in Microsoft Entra ID.
- -  For example, assume your app has been granted the *User.ReadWrite.All* delegated permission. This permission nominally grants your app permission to read and update the profile of every user in an organization. If the signed-in user is a global administrator, your app will be able to update the profile of every user in the organization. However, if the signed-in user isn't in an administrator role, your app will be able to update only the profile of the signed-in user. It will not be able to update the profiles of other users in the organization, because the user whom it has permission to act on behalf of doesn't have those privileges.
- -  For application permissions, the *effective permissions* of your app will be the full level of privileges implied by the permission. For example, an app that has the *User.ReadWrite.All* application permission can update the profile of every user in the organization.
+- For delegated permissions, the *effective permissions* of your app will be the least privileged intersection of the delegated permissions the app has been granted (via consent) and the privileges of the currently signed-in user. Your app can never have more privileges than the signed-in user. Within organizations, the privileges of the signed-in user are determined by policy or by membership in one or more administrator roles. To learn which administrator roles can consent to delegated permissions, see Administrator role permissions in Microsoft Entra ID.
+- For example, assume your app has been granted the *User.ReadWrite.All* delegated permission. This permission nominally grants your app permission to read and update the profile of every user in an organization. If the signed-in user is a application administrator, your app will be able to update the profile of every user in the organization. However, if the signed-in user isn't in an administrator role, your app will be able to update only the profile of the signed-in user. It will not be able to update the profiles of other users in the organization, because the user whom it has permission to act on behalf of doesn't have those privileges.
+- For application permissions, the *effective permissions* of your app will be the full level of privileges implied by the permission. For example, an app that has the *User.ReadWrite.All* application permission can update the profile of every user in the organization.
 
 ## OpenID Connect Scopes
 
@@ -78,8 +78,7 @@ After the user enters their credentials, the Microsoft identity platform endpoin
 > [!NOTE]
 > At this time, the offline\_access ("Maintain access to data you have given it access to") and user.read ("Sign you in and read your profile") permissions are automatically included in the initial consent to an application. These permissions are generally required for proper app functionality; offline\_access gives the app access to refresh tokens, critical for native and web apps, while user.read gives access to the sub claim, allowing the client or app to correctly identify the user over time and access rudimentary user information.
 
-:::image type="content" source="../media/work-account-consent-cd2b2094.png" alt-text="Screenshot of the work account consent dialog. Users must agree to proceed with the application.":::
-
+:::image type="content" source="../media/work-account-consent.png" alt-text="Screenshot of the work account consent dialog. Users must agree to proceed with the application.":::
 
 When the user approves the permission request, consent is recorded, and the user doesn't have to consent again on subsequent sign-ins to the application.
 

@@ -1,58 +1,56 @@
-## Grant admin consent in app registrations
-
 For applications your organization has developed or for those that are registered directly in your Microsoft Entra tenant, you can grant tenant-wide admin consent from App registrations in the Azure portal.
 
 > [!WARNING]
 > Granting tenant-wide admin consent to an application will grant the app and the app's publisher access to your organization's data. Carefully review the permissions the application is requesting before granting consent.
 
-Granting tenant-wide admin consent requires you to sign in as a user that is authorized to consent on behalf of the organization. This includes Global Administrator and Privileged Role Administrator. A user can also be authorized to grant tenant-wide consent if they're assigned a custom directory role that includes the permission to grant permissions to applications.
+Granting tenant-wide admin consent requires you to sign in as a user that is authorized to consent on behalf of the organization. This includes Privileged Role Administrator. A user can also be authorized to grant tenant-wide consent if they're assigned a custom directory role that includes the permission to grant permissions to applications.
 
-1.  In a previous exercise, you created an app named Demo app. If necessary, in Microsoft Azure, browse to **Microsoft Entra ID** then **App registrations** then Demo app.\*\*
-2.  On the **Demo app** screen, locate and copy and save each **Application (client) ID** and **Directory (tenant) ID** values so that you can use them later.
+1. In a previous exercise, you created an app named Demo app. If necessary, in Microsoft Azure, browse to **Microsoft Entra ID** then **App registrations** then Demo app.\*\*
+2. On the **Demo app** screen, locate and copy and save each **Application (client) ID** and **Directory (tenant) ID** values so that you can use them later.
     
-    :::image type="content" source="../media/demo-app-directory-id-6f6b2621.png" alt-text="Screenshot of the Demo app screen with the directory ID highlighted for usage in your registration.":::
+   :::image type="content" source="../media/demo-app-directory-id.png" alt-text="Screenshot of the Demo app screen with the directory ID highlighted for usage in your registration.":::
     
-3.  In the left navigation, under **Manage**, select **API permissions**.
-4.  Under **Configured permissions**, select **Grant admin consent**.
+3. In the left navigation, under **Manage**, select **API permissions**.
+4. Under **Configured permissions**, select **Grant admin consent**.
     
-    :::image type="content" source="../media/api-permissions-admin-consent-e94497c3.png" alt-text="Screenshot of the API permission page with Grant admin consent for Contoso highlighted.":::
+   :::image type="content" source="../media/api-permissions-admin-consent.png" alt-text="Screenshot of the API permission page with Grant admin consent for Contoso highlighted.":::
     
 5.  Review the dialogue box, and then select **Yes.**
     
-    > [!WARNING]
-    > Granting tenant-wide admin consent through App registrations will revoke any permissions that had previously been granted tenant-wide. Permissions previously granted by users on their own behalf will not be affected.
+   > [!WARNING]
+   > Granting tenant-wide admin consent through App registrations will revoke any permissions that had previously been granted tenant-wide. Permissions previously granted by users on their own behalf will not be affected.
 
 ## Grant admin consent in Enterprise apps
 
 You can grant tenant-wide admin consent through Enterprise applications if the application has already been provisioned in your tenant.
 
-1.  In Microsoft Azure, browse to **Microsoft Entra ID**, then **Enterprise applications**, and then **Demo app**.
-2.  On the **Demo app** screen, in the left navigation, under **Security,** select **Permissions.**
-3.  Under **Permissions**, select **Grant admin consent.**
+1. In Microsoft Azure, browse to **Microsoft Entra ID**, then **Enterprise applications**, and then **Demo app**.
+2. On the **Demo app** screen, in the left navigation, under **Security,** select **Permissions.**
+3. Under **Permissions**, select **Grant admin consent.**
     
-    :::image type="content" source="../media/grant-admin-consent-enterprise-app-07e5e860.png" alt-text="Screenshot of the Demo app permissions page with Grant admin consent for Contoso highlighted.":::
+   :::image type="content" source="../media/grant-admin-consent-enterprise-app.png" alt-text="Screenshot of the Demo app permissions page with Grant admin consent for Contoso highlighted.":::
     
-4.  When prompted, sign in using your Global Administrator account.
-5.  In the **Permissions requested** dialog box, review the information and then select **Accept**.
+4. When prompted, sign in using your Privileged Role Administrator account.
+5. In the **Permissions requested** dialog box, review the information and then select **Accept**.
 
 ## Construct the URL for granting tenant-wide admin consent
 
 When you're granting tenant-wide admin consent using either method described above, a window opens from the Azure portal to prompt for tenant-wide admin consent. If you know the client ID of the application (also known as the application ID), you can build the same URL to grant tenant-wide admin consent.
 
-1.  The tenant-wide admin consent URL follows the following format: `https://login.microsoftonline.com/{tenant-id}/adminconsent?client_id={client-id}` where:
+1. The tenant-wide admin consent URL follows the following format: `https://login.microsoftonline.com/{tenant-id}/adminconsent?client_id={client-id}` where:
     
-    
-     -  `{client-id}` is the application's client ID (also known as app ID).
-     -  `{tenant-id}` is your organization's tenant ID or any verified domain name.
-2.  As always, carefully review the permissions an application requests before granting consent.
+   -  `{client-id}` is the application's client ID (also known as app ID).
+   -  `{tenant-id}` is your organization's tenant ID or any verified domain name.
+
+2. As always, carefully review the permissions an application requests before granting consent.
 
 ## Admin-restricted permissions
 
 Some high-privilege permissions in the Microsoft ecosystem can be set to *admin-restricted*. Examples of these kinds of permissions include:
 
- -  Read all user's full profiles by using User.Read.All
- -  Write data to an organization's directory by using Directory.ReadWrite.All
- -  Read all groups in an organization's directory by using Groups.Read.All
+- Read all user's full profiles by using User.Read.All
+- Write data to an organization's directory by using Directory.ReadWrite.All
+- Read all groups in an organization's directory by using Groups.Read.All
 
 Although a consumer user might grant an application access to this kind of data, organizational users are restricted from granting access to the same set of sensitive company data. If your application requests access to one of these permissions from an organizational user, the user receives an error message that says they're not authorized to consent to your app's permissions.
 
@@ -77,10 +75,10 @@ Applications are able to note which permissions they require (both delegated and
 
 ### To configure the list of statically requested permissions for an application
 
-1.  Go to your application in the Azure portal – App registrations experience, or create an app if you haven't already.
-2.  Locate the **API Permissions** section, then select **Add a permission**.
-3.  Select **Microsoft Graph** from the list of available APIs and then add the permissions that your app requires.
-4.  **Save** the app registration.
+1. Go to your application in the Azure portal – App registrations experience, or create an app if you haven't already.
+2. Locate the **API Permissions** section, then select **Add a permission**.
+3. Select **Microsoft Graph** from the list of available APIs and then add the permissions that your app requires.
+4. **Save** the app registration.
 
 ## Recommended: Sign the user into your app
 
@@ -106,9 +104,6 @@ scope=
     https://graph.microsoft.com/calendars.read
 
     https://graph.microsoft.com/mail.send
-
-
-
 
 
 ```

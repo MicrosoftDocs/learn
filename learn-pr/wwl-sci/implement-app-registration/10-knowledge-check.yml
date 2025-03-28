@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/18/2024
+  ms.date: 03/28/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
@@ -23,12 +23,12 @@ quiz:
     - content: "SaaS directory"
       isCorrect: false
       explanation: "Incorrect. Application publishers/vendors who integrate with Microsoft Entra ID are required to have a SaaS directory."
-    - content: "Single-sign-on app connected directory"
-      isCorrect: false
-      explanation: "Incorrect. Apps connected for single-sign-on are added by the user."
     - content: "App gallery directory"
       isCorrect: true
       explanation: "Correct. The two directories that Microsoft maintains are the App gallery directory and the Microsoft services directory."
+    - content: "Single-sign-on app connected directory"
+      isCorrect: false
+      explanation: "Incorrect. Apps connected for single-sign-on are added by the user."
   - content: "Which one of the following is a best practice for building multitenant apps?"
     choices:
     - content: "Follow the principle of least user access to ensure that your app only requests permissions it actually needs."

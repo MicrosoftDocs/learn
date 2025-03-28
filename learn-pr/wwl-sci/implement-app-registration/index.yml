@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Implement app registration
   description: "Line of business developed in-house need registration in Microsoft Entra ID and assigned to users for a secure Azure solution. Explore how to implement app registration."
-  ms.date: 12/18/2024
+  ms.date: 03/28/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: module-standard-task-based
