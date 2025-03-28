@@ -2,8 +2,6 @@
 uid: learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk.implement-change-feed-estimator
 title: Implement the change feed estimator
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement the change feed estimator
   description: "Implement the change feed estimator"
   ms.date: 10/18/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/5-implement-change-feed-estimator.md)]
+  [!include[](includes/5-implement-change-feed-estimator.md)]

@@ -2,8 +2,6 @@
 uid: learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: "This unit introduces the module on choosing a tool to migrate data to an Azure Database for MySQL flexible server. It covers migration phases and considerations, tool options, and migration approaches."
   ms.date: 08/28/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
-
+

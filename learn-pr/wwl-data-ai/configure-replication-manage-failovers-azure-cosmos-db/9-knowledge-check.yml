@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-replication-manage-failovers-azure-cosmos-db.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 12/06/2022
@@ -36,4 +34,4 @@ quiz:
       explanation: "Correct. The **ApplicationPreferredRegions** property sets a list of regions in priority order."
     - content: "``ConnectionMode``"
       isCorrect: false
-      explanation: "Incorrect. This property is used to configure the connection mode to either **direct** or **gateway**."
+      explanation: "Incorrect. This property is used to configure the connection mode to either **direct** or **gateway**."

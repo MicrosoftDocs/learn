@@ -2,8 +2,6 @@
 uid: learn.wwl.detect-objects-images.consider-options-for-labeling-images
 title: Consider options for labeling images
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Consider options for labeling images
   description: Consider options for labeling images
   author: ivorb
@@ -18,4 +16,4 @@ labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/4-consider-options-for-labeling-images.md)]
-
+

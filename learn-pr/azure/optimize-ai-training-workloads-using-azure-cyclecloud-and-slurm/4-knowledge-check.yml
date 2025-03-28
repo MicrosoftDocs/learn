@@ -2,8 +2,6 @@
 uid: learn.optimize-ai-training-workloads-using-azure-cyclecloud-and-slurm.4-knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge of how to optimize AI training workloads using Azure CycleCloud and Slurm.
@@ -87,4 +85,4 @@ quiz:
     - content: "All of the Above."
       isCorrect: true
       explanation: "Choosing Premium SSD option enables faster data access, reduced latency with shorter training times, and faster model convergence. It provides improved capability and parallelism with enhanced support for generative AI and LLMs."
-
+

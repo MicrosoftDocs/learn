@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.analyze-infrastructure-with-azure-monitor-logs
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Analyze your Azure infrastructure by using Azure Monitor logs
   description: Use Azure Monitor logs to extract valuable information about your infrastructure from log data.
   ms.date: 10/15/2024
@@ -40,4 +38,4 @@ units:
 - learn.analyze-infrastructure-with-azure-monitor-logs.5-summary
 badge:
   uid: learn.analyze-infrastructure-with-azure-monitor-logs.badge
-
+

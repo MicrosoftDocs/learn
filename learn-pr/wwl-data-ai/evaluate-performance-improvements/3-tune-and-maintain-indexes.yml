@@ -2,8 +2,6 @@
 uid: learn.wwl.evaluate-performance-improvements.tune-and-maintain-indexes
 title: Tune and maintain indexes
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Tune and maintain indexes
   description: "Tune and maintain indexes"
   ms.date: 07/13/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-tune-and-maintain-indexes.md)]
+  [!include[](includes/3-tune-and-maintain-indexes.md)]

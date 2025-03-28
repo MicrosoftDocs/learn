@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-query-performance-optimization.identify-problematic
 title: Identify problematic query plans
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Identify problematic query plans
   description: "Identify problematic query plans"
   ms.date: 06/28/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 15
 content: |
-  [!include[](includes/6-identify-problematic.md)]
+  [!include[](includes/6-identify-problematic.md)]

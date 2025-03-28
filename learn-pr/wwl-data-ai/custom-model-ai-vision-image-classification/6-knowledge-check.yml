@@ -2,8 +2,6 @@
 uid: learn.wwl.custom-model-ai-vision-image-classification.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge of custom model image classification with Azure AI Vision.
   author: ivorb
@@ -49,4 +47,4 @@ quiz:
     - content: "Image captioning and image generation"
       isCorrect: false
       explanation: "Incorrect. You can train image classification and object detection models with Azure AI Vision."
-
+

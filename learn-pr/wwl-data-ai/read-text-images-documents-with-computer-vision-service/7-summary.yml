@@ -2,8 +2,6 @@
 uid: learn.wwl.read-text-images-documents-with-computer-vision-service.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   author: wwlpublish
@@ -17,4 +15,4 @@ labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.governance-security.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 10/08/2024
@@ -72,4 +70,4 @@ quiz:
       explanation: "Dedicated HSMs provide a high level of security for cryptographic operations and key management by physically isolating and protecting keys from unauthorized access."
     - content: "To provide a physical computing device for processing graphical data."
       isCorrect: false
-      explanation: "HSMs are designed for securing cryptographic keys, not for processing graphical data."
+      explanation: "HSMs are designed for securing cryptographic keys, not for processing graphical data."

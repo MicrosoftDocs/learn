@@ -2,8 +2,6 @@
 uid: learn.wwl.work-linting-unit-test-github-actions.run
 title: Run linting and unit testing
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Run linting and unit testing
   description: "Run linting and unit testing"
   ms.date: 07/10/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-run.md)]
+  [!include[](includes/4-run.md)]

@@ -2,8 +2,6 @@
 uid: learn.wwl.deploy-paas-solutions-with-azure-sql.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 05/27/2022
@@ -61,4 +59,4 @@ quiz:
       explanation: "Correct. With Azure SQL managed instance, differential backups occur every 12 hours."
     - content: "Every 24 hours"
       isCorrect: false
-      explanation: "Incorrect. With Azure SQL managed instance, differential backups occur every 12 hours."
+      explanation: "Incorrect. With Azure SQL managed instance, differential backups occur every 12 hours."

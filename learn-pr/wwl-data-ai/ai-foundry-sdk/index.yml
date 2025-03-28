@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.ai-foundry-sdk
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Develop an AI app with the Azure AI Foundry SDK
   description: Use the Azure AI Foundry SDK to develop AI applications with Azure AI Foundry projects.
   author: wwlpublish
@@ -43,4 +41,4 @@ units:
 - learn.wwl.ai-foundry-sdk.summary
 badge:
   uid: learn.wwl.ai-foundry-sdk.badge
-
+

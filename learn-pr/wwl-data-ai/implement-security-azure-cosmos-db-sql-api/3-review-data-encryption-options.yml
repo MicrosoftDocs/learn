@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-security-azure-cosmos-db-sql-api.review-data-encryption-options
 title: Review data encryption options
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Review data encryption options
   description: "Review data encryption options"
   ms.date: 10/18/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-review-data-encryption-options.md)]
+  [!include[](includes/3-review-data-encryption-options.md)]

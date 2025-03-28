@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-basics-azure-business.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 09/19/2024
@@ -51,4 +49,4 @@ quiz:
     - content: "It is less regulated than off-cloud IT systems."
       isCorrect: false
       explanation: "Incorrect. Cloud computing is subject to the same regulations as off-cloud IT systems, though the cloud can help a business easily comply with various national and regional laws."
-interactive: bash
+interactive: bash

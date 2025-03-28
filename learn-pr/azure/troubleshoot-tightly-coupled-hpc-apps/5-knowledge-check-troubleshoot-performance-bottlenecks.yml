@@ -2,8 +2,6 @@
 uid: learn.azure.troubleshoot-tightly-coupled-hpc-apps.5-knowledge-check-troubleshoot-performance-bottlenecks
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   ms.date: 05/29/2024
@@ -37,4 +35,4 @@ quiz:
       explanation: Correct. Each HB120_v2 NUMA domain has four cores. But in this case, each NUMA domain has one process and three threads, which use three of the four cores.
     - content: "100"
       isCorrect: false
-      explanation: This answer is incorrect. Three of the four cores in each HB120_v2 NUMA domain are used.
+      explanation: This answer is incorrect. Three of the four cores in each HB120_v2 NUMA domain are used.

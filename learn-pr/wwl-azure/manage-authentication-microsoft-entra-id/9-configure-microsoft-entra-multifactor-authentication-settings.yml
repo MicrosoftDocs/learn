@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-authentication-microsoft-entra-id.configure-microsoft-entra-multifactor-authentication-settings
 title: Implement multifactor authentication (MFA)
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement multifactor authentication (MFA)
   description: "Implement multifactor authentication (MFA)"
   ms.date: 12/20/2024

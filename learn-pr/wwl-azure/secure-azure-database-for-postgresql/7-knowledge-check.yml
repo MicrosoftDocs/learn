@@ -2,8 +2,6 @@
 uid: learn.wwl.secure-azure-database-for-postgresql.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 05/10/2024
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. You can't assign superuser permissions in Azure Database for PostgreSQL."
     - content: "Returns an error message."
       isCorrect: true
-      explanation: "Correct. You can't create a superuser role in Azure Database for PostgreSQL and the query returns an error."
+      explanation: "Correct. You can't create a superuser role in Azure Database for PostgreSQL and the query returns an error."

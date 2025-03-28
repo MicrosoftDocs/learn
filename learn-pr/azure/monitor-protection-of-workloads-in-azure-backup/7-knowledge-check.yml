@@ -2,8 +2,6 @@
 uid: learn.azure.monitor-protection-of-workloads-in-azure-backup.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: Knowledge check
   title: Knowledge check
   description: Knowledge check
@@ -70,4 +68,4 @@ quiz:
     - content: "An alert rule and an action group"
       isCorrect: false
       explanation: "Incorrect"
-
+

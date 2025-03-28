@@ -2,8 +2,6 @@
 uid: learn.wwl.generate-code-azure-openai.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary of what you learned in this module.
   author: ivorb
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
-
+

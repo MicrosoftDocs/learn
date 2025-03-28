@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore IaaS and PaaS solutions for high availability and disaster recovery
   description: Explore IaaS and PaaS solutions for high availability and disaster recovery
   ms.date: 03/27/2025
@@ -44,4 +42,4 @@ units:
 - learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.summary
 badge:
   uid: learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.badge
-
+

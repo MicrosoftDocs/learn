@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-government-its-structure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe the government and its structure
   description: Understand government and how it is organized.
   ms.date: 04/29/2022
@@ -44,4 +42,4 @@ units:
 - learn.wwl.describe-government-its-structure.summary
 badge:
   uid: learn.wwl.describe-government-its-structure.badge
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.load-balancing-https-traffic-azure.design-configure-azure-front-door
 title: Design and configure Azure Front Door
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design and configure Azure Front Door
   description: "Design and configure Azure Front Door"
   ms.date: 01/10/2025

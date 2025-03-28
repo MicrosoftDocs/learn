@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-authentication-microsoft-entra-id.integrate-applications-with-microsoft-entra-id
 title: Integrate single sign-on (SSO) and identity providers
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Integrate single sign-on (SSO) and identity providers
   description: "Integrate single sign-on (SSO) and identity providers"
   ms.date: 12/20/2024

@@ -2,8 +2,6 @@
 uid: learn.wwl.understand-concurrency-mysql.exercise-understand-lock
 title: 'Exercise: Understand locking'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Understand locking'
   description: "Exercise: Understand locking"
   ms.date: 11/09/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 20
 content: |
-  [!include[](includes/6-exercise-understand-lock.md)]
+  [!include[](includes/6-exercise-understand-lock.md)]

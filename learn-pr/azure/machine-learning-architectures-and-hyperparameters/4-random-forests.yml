@@ -2,8 +2,6 @@
 uid: learn.machinelearning.machine-learning-architectures-and-hyperparameters.random-forests
 title: Random forests and selecting architectures
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Random forests and selecting architectures
   description: Conceptual unit about random forests and selecting architectures
   ms.date: 07/21/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/4-random-forests.md)]
-
+

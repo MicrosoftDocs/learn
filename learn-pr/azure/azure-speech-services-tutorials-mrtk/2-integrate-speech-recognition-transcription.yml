@@ -2,8 +2,6 @@
 uid: learn.azure.azure-speech-services-tutorials-mrtk.2-integrate-speech-recognition-transcription
 title: Integrate and use speech recognition and transcription
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Integrate and use speech recognition and transcription
   description: Introduction for Integrate and use speech recognition and transcription
   author: marlenaklein-msft
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/2-integrate-speech-recognition-transcription.md)]
-
+

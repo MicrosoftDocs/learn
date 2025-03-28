@@ -2,8 +2,6 @@
 uid: learn.azure.intro-to-azure-ml.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Multiple-choice questions
   ms.date: 07/20/2024
@@ -49,4 +47,4 @@ quiz:
     - content: "All of the above"
       isCorrect: true
       explanation: "Correct. Azure Machine Learning incorporates all of these principles within its features to help create reproducible and reliable creation of models."
-
+

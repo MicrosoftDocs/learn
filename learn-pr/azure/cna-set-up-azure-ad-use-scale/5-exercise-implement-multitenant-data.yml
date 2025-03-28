@@ -2,8 +2,6 @@
 uid: learn.azure.cna-set-up-apps-use-scale.5-exercise-implement-multitenant-data
 title: Exercise - Implement multitenant data
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Implement multitenant data
   description: Exercise - Implement multitenant data
   ms.date: 08/22/2023
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise-implement-multitenant-data.md)]
-
+

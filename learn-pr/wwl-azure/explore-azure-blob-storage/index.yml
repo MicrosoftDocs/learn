@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-azure-blob-storage
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Azure Blob storage
   description: "Learn the core features and functionality of Azure Blob storage."
   ms.date: 07/12/2024
@@ -44,4 +42,4 @@ units:
 - learn.wwl.explore-azure-blob-storage.knowledge-check
 - learn.wwl.explore-azure-blob-storage.summary
 badge:
-  uid: learn.wwl.explore-azure-blob-storage.badge
+  uid: learn.wwl.explore-azure-blob-storage.badge

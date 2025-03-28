@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-cassandra-workloads-cosmos-db.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 02/01/2021
@@ -68,4 +66,4 @@ quiz:
       explanation: "That's incorrect. You can't change the throughput after a database has been created.."
     - content: "Specify collection throughput."
       isCorrect: true
-      explanation: "That's correct. Database-level throughput often seems more appropriate than collection-level throughput for migration scenarios, but you should consider that this setting cannot be modified after creation and, therefore, you should choose the most appropriate setting for the expected use of the database."
+      explanation: "That's correct. Database-level throughput often seems more appropriate than collection-level throughput for migration scenarios, but you should consider that this setting cannot be modified after creation and, therefore, you should choose the most appropriate setting for the expected use of the database."

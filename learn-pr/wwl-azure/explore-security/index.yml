@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-security
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore security
   description: "Explore security"
   ms.date: 09/23/2024
@@ -49,4 +47,4 @@ units:
 - learn.wwl.explore-security.knowledge-check
 - learn.wwl.explore-security.summary
 badge:
-  uid: learn.wwl.security.badge
+  uid: learn.wwl.security.badge

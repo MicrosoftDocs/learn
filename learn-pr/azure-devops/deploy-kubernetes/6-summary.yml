@@ -2,8 +2,6 @@
 uid: learn.azdo.deploy-kubernetes.6-summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Review what you learned about deploying multiple containers to AKS cluster with Azure Pipelines.
   ms.date: 02/01/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]
-
+

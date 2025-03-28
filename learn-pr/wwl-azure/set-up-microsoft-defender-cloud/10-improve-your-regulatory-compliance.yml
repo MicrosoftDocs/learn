@@ -2,8 +2,6 @@
 uid: learn.wwl.set-up-microsoft-defender-cloud.improve-your-regulatory-compliance
 title: Improve your regulatory compliance.
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Improve your regulatory compliance.
   description: "Improve your regulatory compliance."
   ms.date: 04/24/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/10-improve-your-regulatory-compliance.md)]
+  [!include[](includes/10-improve-your-regulatory-compliance.md)]

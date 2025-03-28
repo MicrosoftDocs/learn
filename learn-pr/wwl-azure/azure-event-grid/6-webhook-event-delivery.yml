@@ -2,8 +2,6 @@
 uid: learn.wwl.azure-event-grid.receive-events-by-using-webhooks
 title: Receive events by using webhooks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Receive events by using webhooks
   description: "Receive events by using webhooks"
   ms.date: 07/17/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-webhook-event-delivery.md)]
+  [!include[](includes/6-webhook-event-delivery.md)]

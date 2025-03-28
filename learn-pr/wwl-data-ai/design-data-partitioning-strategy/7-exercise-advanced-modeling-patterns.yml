@@ -2,8 +2,6 @@
 uid: learn.wwl.design-data-partitioning-strategy.exercise-advanced-modeling-patterns
 title: Exercise advanced modeling patterns
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise advanced modeling patterns
   description: "Exercise advanced modeling patterns"
   ms.date: 10/28/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 25
 content: |
-  [!include[](includes/7-exercise-advanced-modeling-patterns.md)]
+  [!include[](includes/7-exercise-advanced-modeling-patterns.md)]

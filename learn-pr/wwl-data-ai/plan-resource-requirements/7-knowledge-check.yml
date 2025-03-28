@@ -2,8 +2,6 @@
 uid: learn.wwl.plan-resource-requirements.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 03/20/2024
@@ -36,4 +34,4 @@ quiz:
       explanation: "Correct. Specify the ``DefaultTimeToLive`` of a container to enable the time-to-live feature for items in the container."
     - content: "``_ttl``"
       isCorrect: false
-      explanation: "Incorrect. Use the ``_ttl`` property to further configure the time-to-live feature for specific items."
+      explanation: "Incorrect. Use the ``_ttl`` property to further configure the time-to-live feature for specific items."

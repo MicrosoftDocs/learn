@@ -2,8 +2,6 @@
 uid: learn.azure.deploy-configure-azure-developer-cli-templates.update-template
 title: Apply updates to your template
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Apply updates to your template
   description: Apply updates to your template
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/4-update-template.md)]
-
+

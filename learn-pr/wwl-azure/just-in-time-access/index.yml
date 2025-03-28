@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.just-in-time-access
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore just-in-time virtual machine access
   description: "Discover how to leverage Microsoft Defender for Cloud through the Azure portal to ensure the security of your Azure services and workloads, offering continuous threat detection and prevention."
   ms.date: 05/31/2024
@@ -62,4 +60,4 @@ units:
 - learn.wwl.just-in-time-access.knowledge-check
 - learn.wwl.just-in-time-access.summary
 badge:
-  uid: learn.wwl.just-in-time-access.badge
+  uid: learn.wwl.just-in-time-access.badge

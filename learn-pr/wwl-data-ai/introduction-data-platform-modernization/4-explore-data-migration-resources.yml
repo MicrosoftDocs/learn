@@ -2,8 +2,6 @@
 uid: learn.wwl.introduction-data-platform-modernization.explore-data-migration-resources
 title: Explore the available data migration technologies
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore the available data migration technologies
   description: "Explore the available data migration technologies"
   ms.date: 04/14/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-explore-data-migration-resources.md)]
+  [!include[](includes/4-explore-data-migration-resources.md)]

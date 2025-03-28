@@ -2,8 +2,6 @@
 uid: learn.improve-reliability-deployment.2-definition
 title: "What is software deployment?"
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: "What is software deployment?"
   description: "What is software deployment?"
   ms.date: 06/07/2024
@@ -30,4 +28,4 @@ quiz:
     - content: "It's complex."
       isCorrect: true
       explanation: "Because of the size and infrequency, they're often complex."
-
+

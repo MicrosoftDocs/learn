@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-data-factory.5-knowledge-check  
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check
@@ -71,4 +69,4 @@ quiz:
     - content: "Microsoft Entra Domain Services"
       isCorrect: false
       explanation: "Incorrect. Microsoft Entra Domain Services is a cloud-based managed authentication service that isn't used in this context."
-
+

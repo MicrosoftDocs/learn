@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-azure-cosmos-db-sql-api-sdk.configure-logging
 title: Configure logging
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure logging
   description: "Configure logging"
   ms.date: 03/09/2025
@@ -15,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 9
 content: |
-  [!include[](includes/5-configure-logging.md)]
+  [!include[](includes/5-configure-logging.md)]

@@ -2,8 +2,6 @@
 uid: learn.wwl.governance-security.azure-blueprints
 title: Configure security settings by using Azure Blueprint
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure security settings by using Azure Blueprint
   description: "Configure security settings by using Azure Blueprint"
   ms.date: 10/08/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/4-azure-blueprints.md)]
+  [!include[](includes/4-azure-blueprints.md)]

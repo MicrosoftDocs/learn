@@ -2,8 +2,6 @@
 uid: learn.wwl.integrate-data-azure-data-factory.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 06/05/2023
@@ -36,4 +34,4 @@ quiz:
       explanation: "Correct. When moving data between Azure data platform technologies, the Azure Integration runtime is used when copying data between two Azure data platform."
     - content: "Self-hosted"
       isCorrect: false
-      explanation: "Incorrect. Self-hosted IR is used when working with data movement from private networks to the cloud and vice versa."
+      explanation: "Incorrect. Self-hosted IR is used when working with data movement from private networks to the cloud and vice versa."

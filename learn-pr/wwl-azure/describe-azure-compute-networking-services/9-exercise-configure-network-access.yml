@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-azure-compute-networking-services.exercise-configure-network-access
 title: Exercise - Configure network access
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Configure network access
   description: "Exercise - Configure network access"
   ms.date: 09/20/2024
@@ -16,4 +14,4 @@ azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/9-exercise-configure-network-access.md)]
-interactive: bash
+interactive: bash

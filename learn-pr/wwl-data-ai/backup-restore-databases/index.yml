@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.backup-restore-databases
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Back up and restore databases
   description: Back up and restore databases
   ms.date: 03/25/2025
@@ -44,4 +42,4 @@ units:
 - learn.wwl.backup-restore-databases.summary
 badge:
   uid: learn.wwl.backup-restore-databases.badge
-
+

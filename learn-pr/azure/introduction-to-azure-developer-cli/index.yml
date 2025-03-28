@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.introduction-to-azure-developer-cli
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: introduction
   title: Introduction to Azure Developer CLI
   description: Evaluate whether Azure Developer CLI is appropriate for enhancing your apps.
@@ -40,4 +38,4 @@ units:
 - learn.azure.introduction-to-azure-developer-cli.summary
 badge:
   uid: learn.azure.introduction-to-azure-developer-cli.badge
-
+

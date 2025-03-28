@@ -3,8 +3,6 @@ uid: learn.intro-to-azure-kubernetes-service.introduction
 title: Introduction
 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to Azure Kubernetes Service
   description: Introduction
   ms.date: 11/26/2024
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-
+

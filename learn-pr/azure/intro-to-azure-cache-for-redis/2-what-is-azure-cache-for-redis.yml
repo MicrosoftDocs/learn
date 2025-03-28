@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-cache-for-redis.2-what-is-azure-cache-for-redis  
 title: What is Azure Cache for Redis?  
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content  
   title: What is Azure Cache for Redis? 
   description: Quick overview of Azure Cache for Redis
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 9
 content: |
   [!include[](includes/2-what-is-azure-cache-for-redis.md)]
-
+

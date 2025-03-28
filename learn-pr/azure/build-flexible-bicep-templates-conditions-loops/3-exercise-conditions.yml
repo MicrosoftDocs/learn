@@ -3,8 +3,6 @@ uid: learn.azure.bicep-conditions-loops.exercise-conditions
 title: Exercise - Deploy resources conditionally 
 sandbox: true
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Deploy resources conditionally
   description: Learn how to deploy resources conditionally, based on Boolean values and expressions.
@@ -17,4 +15,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/3-exercise-conditions.md)]
-
+

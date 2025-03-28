@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-llmops-azure-databricks.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 03/20/2025
@@ -47,4 +45,4 @@ quiz:
       explanation: "Correct. Unity Catalog plays a crucial role in LLMOps by enforcing data governance and access control, which is vital for responsible AI practices. Ensuring that only authorized personnel have access to sensitive data and models is key to maintaining ethical standards and compliance within the organization."
     - content: "Running models only on-demand to save compute resources."
       isCorrect: false
-      explanation: "Incorrect. Running model only on-demand to save compute resources isn't a key consideration for ensuring responsible AI practices."
+      explanation: "Incorrect. Running model only on-demand to save compute resources isn't a key consideration for ensuring responsible AI practices."

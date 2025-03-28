@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-significant-government-strategy-actions.describe-federal-acquisition-regulation
 title: Describe Federal Acquisition Regulation 12.301 (FAR 301)
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe Federal Acquisition Regulation 12.301 (FAR 301)
   description: "Describe Federal Acquisition Regulation 12.301 (FAR 301)"
   ms.date: 04/29/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/12-describe-federal-acquisition-regulation.md)]
+  [!include[](includes/12-describe-federal-acquisition-regulation.md)]

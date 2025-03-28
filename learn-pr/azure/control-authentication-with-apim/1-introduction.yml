@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.control-authentication-with-apim.1-introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: In this unit, you learn about a business problem that can be addressed by using API Management to control access to an API.
   ms.date: 06/13/2023
@@ -13,4 +11,4 @@ title: Introduction
 durationInMinutes: 5
 content: |
   [!include[](includes/1-introduction.md)]
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-authorization-microsoft-entra-id.entitlement-management
 title: Entitlement management
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Entitlement management
   description: "Entitlement management"
   ms.date: 08/07/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/17-entitlement-management.md)]
+  [!include[](includes/17-entitlement-management.md)]

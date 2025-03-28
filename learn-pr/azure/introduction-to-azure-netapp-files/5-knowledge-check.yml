@@ -2,8 +2,6 @@
 uid: learn.azure.introduction-to-azure-netapp-files.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge of Azure NetApp Files.
@@ -49,4 +47,4 @@ quiz:
       isCorrect: true
       explanation: "Correct. Azure NetApp Files doesn't provide a publicly (that is, internet) accessible endpoint."
 
-
+

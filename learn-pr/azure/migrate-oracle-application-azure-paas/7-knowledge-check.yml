@@ -2,8 +2,6 @@
 uid: learn.azure.migrate-oracle-application-azure-paas.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Test your knowledge.
   ms.date: 05/01/2024
@@ -49,4 +47,4 @@ quiz:
     - content: "Remediate issues introduced during the migration by identifying Oracle-specific code and updating it to work with your new database service. "
       isCorrect: true
       explanation: "Correct!"
-
+

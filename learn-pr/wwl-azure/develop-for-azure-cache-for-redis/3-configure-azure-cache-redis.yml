@@ -2,8 +2,6 @@
 uid: learn.wwl.develop-for-azure-cache-for-redis.configure
 title: Configure Azure Cache for Redis
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure Azure Cache for Redis
   description: "Configure Azure Cache for Redis"
   ms.date: 03/18/2025

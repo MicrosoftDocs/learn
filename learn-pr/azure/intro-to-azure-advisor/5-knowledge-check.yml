@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-advisor.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: "Check your knowledge."
@@ -47,4 +45,4 @@ quiz:
       explanation: "Incorrect. Azure Advisor provides recommendations for Azure services only."
     - content: "Providing recommendations for a specific list of Azure Services."
       isCorrect: true
-      explanation: "Correct. Azure Advisor provides recommendations for cost, security, reliability, operational excellence, and performance."
+      explanation: "Correct. Azure Advisor provides recommendations for cost, security, reliability, operational excellence, and performance."
