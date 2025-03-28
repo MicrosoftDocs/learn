@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-bicep.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 05/23/2024
@@ -50,4 +48,4 @@ quiz:
       explanation: "Correct. By defining a module and referencing it in other files."
     - content: "By adding a remote reference to a template from an online repository."
       isCorrect: false
-      explanation: "Incorrect. It's not by adding a remote reference to a template from an online repository."
+      explanation: "Incorrect. It's not by adding a remote reference to a template from an online repository."

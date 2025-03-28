@@ -2,8 +2,6 @@
 uid: learn.azure.deploy-java-spring-boot-app-service-mysql.4-deploy
 title: Deploy a Spring Boot application to Azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deploy a Spring Boot application to Azure
   description: Learn how to deploy a Spring Boot web application to Azure.
   ms.date: 11/08/2023
@@ -17,4 +15,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/4-deploy.md)]
-
+

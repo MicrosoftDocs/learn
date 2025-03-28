@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-scale-azure-sql-databases-elastic-pools.summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 12/15/2023
@@ -17,4 +15,4 @@ title: Summary
 durationInMinutes: 3
 content: |
   [!include[](includes/7-summary.md)]
-
+

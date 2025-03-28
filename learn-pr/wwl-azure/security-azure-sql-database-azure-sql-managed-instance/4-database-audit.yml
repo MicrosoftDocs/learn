@@ -2,8 +2,6 @@
 uid: learn.wwl.security-azure-sql-database-azure-sql-managed-instance.database-audit
 title: Enable and monitor database audit
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Enable and monitor database audit
   description: "Enable and monitor database auditing"
   ms.date: 02/24/2025

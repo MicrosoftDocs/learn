@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.ha-application-storage-with-grs.5-exercise-deploy-ha-application
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Deploy a highly available application
   description: In this unit, you learn how to deploy and test a highly available application.
   ms.date: 10/21/2024
@@ -14,4 +12,4 @@ azureSandbox: true
 durationInMinutes: 12
 content: |
   [!include[](includes/5-exercise-deploy-ha-application.md)]
-
+

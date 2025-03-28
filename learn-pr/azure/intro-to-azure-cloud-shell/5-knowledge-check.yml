@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-cloud-shell.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: In this unit, you consider a scenario and whether you should use Azure Cloud Shell to address the issues.
@@ -49,4 +47,4 @@ quiz:
     - content: "Use the Cloud Shell editor to make the necessary changes and save it directly on the CloudDrive."
       isCorrect: true
       explanation: "Correct. Saving your script directly on the CloudDrive is the most appropriate method."
-      
+      

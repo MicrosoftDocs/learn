@@ -2,8 +2,6 @@
 uid: learn.azure.migrate-azure-resources-bicep.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check.
@@ -61,4 +59,4 @@ quiz:
     - content: "You access the ARM template what-if operation in the Azure portal, and you use it to deploy templates to management groups."
       isCorrect: false
       explanation: "You use the ARM template what-if operation at the command line, not in the Azure portal."
-
+

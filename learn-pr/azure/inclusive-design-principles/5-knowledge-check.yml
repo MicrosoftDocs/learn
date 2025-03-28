@@ -2,8 +2,6 @@
 uid: learn.azure.inclusive-design-principles.5-knowledge-check
 title: Check your knowledge
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Check your knowledge
   description: Check your knowledge
   ms.date: 05/23/2024
@@ -63,4 +61,4 @@ quiz:
       isCorrect: false
       explanation: No. The correct answer is Agility.
 
-
+

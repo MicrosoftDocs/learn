@@ -2,8 +2,6 @@
 uid: learn.wwl.design-machine-learning-model-training-solution.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
@@ -40,4 +38,4 @@ quiz:
       explanation: "Incorrect. Batch predictions would take too long. We need immediate predictions."
     - content: "Local predictions"
       isCorrect: false
-      explanation: "Incorrect. There's a need for immediate predictions for individual patients so we need real-time predictions."
+      explanation: "Incorrect. There's a need for immediate predictions for individual patients so we need real-time predictions."

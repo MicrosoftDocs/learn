@@ -2,8 +2,6 @@
 uid: learn.introduction-to-azure-virtual-machines.5-high-availability
 title: Manage the availability of your Azure VMs
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage the availability of your Azure VMs
   description: Manage the availability of your Azure VMs
   ms.date: 05/19/2023
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/5-high-availability.md)]
-
+

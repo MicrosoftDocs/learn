@@ -2,8 +2,6 @@
 uid: learn-wwl.perform-post-migration-tasks-azure-sql.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 03/06/2023
@@ -56,4 +54,4 @@ quiz:
       explanation: "Incorrect. Client connections are automatically redirected, not disconnected."
     - content: "They remain connected to the old primary."
       isCorrect: false
-      explanation: "Incorrect. Connections don't remain connected to the old primary during a failover."
+      explanation: "Incorrect. Connections don't remain connected to the old primary during a failover."

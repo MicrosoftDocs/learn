@@ -2,8 +2,6 @@
 uid: learn.wwl.author-complex-queries-azure-cosmos-db-sql-api.paginate-queries-results
 title: Implement correlated subqueries
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement correlated subqueries
   description: "Implement correlated subqueries"
   ms.date: 03/10/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-implement-correlated-subqueries.md)]
+  [!include[](includes/3-implement-correlated-subqueries.md)]

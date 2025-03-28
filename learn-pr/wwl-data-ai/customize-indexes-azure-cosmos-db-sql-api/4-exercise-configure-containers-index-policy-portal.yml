@@ -2,8 +2,6 @@
 uid: learn.wwl.customize-indexes-azure-cosmos-db-sql-api.exercise-configure-containers-index-policy-portal
 title: "Exercise: Configure an Azure Cosmos DB for NoSQL container's index policy with the portal"
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: "Exercise: Configure an Azure Cosmos DB for NoSQL container's index policy with the portal"
   description: "Exercise: Configure an Azure Cosmos DB for NoSQL container's index policy with the portal"
   ms.date: 10/28/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-exercise-configure-containers-index-policy-portal.md)]
+  [!include[](includes/4-exercise-configure-containers-index-policy-portal.md)]

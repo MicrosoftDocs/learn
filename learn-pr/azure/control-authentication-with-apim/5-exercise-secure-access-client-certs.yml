@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.control-authentication-with-apim.5-exercise-secure-access-client-certs
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Use client certificates to secure access to an API
   description: In this unit, you create a client certificate and use it to authenticate calls to API Management.
   ms.date: 06/14/2023
@@ -15,4 +13,4 @@ interactive: bash
 azureSandbox: false
 content: |
   [!include[](includes/5-exercise-secure-access-client-certs.md)]
-
+

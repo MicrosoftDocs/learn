@@ -2,8 +2,6 @@
 uid: learn-wwl.migrate-sql-workloads-azure-sql-databases.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 10/31/2023
@@ -59,4 +57,4 @@ quiz:
       explanation: "Incorrect. Transactional replication can't be configured from the Azure portal."
     - content: "No, transactional replication can't be configured from the Azure portal."
       isCorrect: true
-      explanation: "Correct. Transactional replication can't be configured from the Azure portal."
+      explanation: "Correct. Transactional replication can't be configured from the Azure portal."

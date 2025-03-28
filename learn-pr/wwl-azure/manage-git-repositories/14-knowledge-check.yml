@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-git-repositories.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 05/24/2024
@@ -50,4 +48,4 @@ quiz:
       explanation: "Correct. git filter-branch command."
     - content: "git purge-branch command."
       isCorrect: false
-      explanation: "Incorrect. git filter-branch command."
+      explanation: "Incorrect. git filter-branch command."

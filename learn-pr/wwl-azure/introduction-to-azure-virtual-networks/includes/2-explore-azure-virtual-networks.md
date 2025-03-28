@@ -20,7 +20,7 @@ You can create multiple virtual networks per region per subscription. You can cr
 
 **Virtual Networks**
 
-When you are creating a VNet, use address ranges enumerated in RFC 1918. These addresses are for private, nonroutable address spaces.
+When you're creating a VNet, use address ranges enumerated in RFC 1918. These addresses are for private, nonroutable address spaces.
 
 - 10.0.0.0 - 10.255.255.255 (10/8 prefix)
 - 172.16.0.0 - 172.31.255.255 (172.16/12 prefix)
@@ -54,12 +54,18 @@ When planning to implement virtual networks, you need to consider:
 
 **Subnets**
 
-A subnet is a range of IP address in the VNet. You can segment VNets into different size subnets, creating as many subnets as you require for organization and security within the subscription limit. You can then deploy Azure resources in a specific subnet. Just like in a traditional network, subnets allow you to segment your VNet address space into segments that are appropriate for the organization's internal network. The smallest supported IPv4 subnet is /29, and the largest is /2 (using CIDR subnet definitions). IPv6 subnets must be exactly /64 in size. When planning to implement subnets, consider:
+A subnet is a range of IP address in the VNet. You can segment VNets into different size subnets. You can then deploy Azure resources in a specific subnet. Just like in a traditional network, subnets allow you to segment your VNet address space into segments that are appropriate for the organization's internal network. The smallest supported IPv4 subnet is /29, and the largest is /2 (using CIDR subnet definitions). IPv6 subnets must be exactly /64 in size. When planning to implement subnets, consider:
 
 - Each subnet must have a unique address range, specified in Classless Inter-Domain Routing (CIDR) format.
 - Certain Azure services require their own subnet.
 - Subnets can be used for traffic management. For example, you can create subnets to route traffic through a network virtual appliance.
 - You can limit access to Azure resources to specific subnets with a virtual network service endpoint. You can create multiple subnets, and enable a service endpoint for some subnets, but not others.
+
+### Fundamental IP addressing and subnetting (video)
+
+This video reviews the basics of IP addressing and subnetting. The entire video is available in the [On Demand Instructor-led Training Series](/shows/on-demand-instructor-led-training-series/?terms=700).
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3813e403-1608-4af1-9876-da95c1703230]
 
 ### Determine a naming convention
 
@@ -71,24 +77,3 @@ All Azure resource types have a scope that defines the level that resource names
 
 For example, a virtual network has a resource group scope, which means that there can be only one network named vnet-prod-westus-001 in each resource group. Other resource groups could have their own virtual network named vnet-prod-westus-001. Subnets are scoped to virtual networks, so each subnet within a virtual network must have a distinct name.
 
-### Understand Regions and Subscriptions
-
-All Azure resources are created in an Azure region and subscription. A resource can only be created in a virtual network that exists in the same region and subscription as the resource. You can, however, connect virtual networks that exist in different subscriptions and regions. Azure regions are important to consider as you design your Azure network in relation to your infrastructure, data, applications, and end users.
-
-You can deploy as many virtual networks as you need within each subscription, up to the subscription limit. Some larger organizations with global deployments have multiple virtual networks that are connected between regions, for example.
-
-:::image type="content" source="../media/microsoft-global-wan-b9362e87.png" alt-text="Diagram of a world map showing the Azure global network.":::
-
-### Azure Availability Zones
-
-An Azure Availability Zone enables you to define unique physical locations within a region. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking. Designed to ensure high-availability of your Azure services, the physical separation of Availability Zones within a region protects applications and data from datacenter failures.
-
-:::image type="content" source="../media/availability-zone-83abddc4.png" alt-text="Diagram of an Azure region showing three availability zones.":::
-
-You should consider availability zones when designing your Azure network, and plan for services that support availability zones.
-
-Azure services that support Availability Zones fall into three categories:
-
-- Zonal services. Resources can be pinned to a specific zone. For example, virtual machines, managed disks, or standard IP addresses can be pinned to a specific zone. This planning allows for increased resilience by having one or more instances of resources spread across zones.
-- Zone-redundant services. Resources are replicated or distributed across zones automatically. Azure replicates the data across three zones so that a zone failure doesn't impact its availability.
-- Nonregional services. Service is available from Azure geographies and is resilient to zone-wide outages.

@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-updates-azure-arc-enabled-servers.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 06/13/2024
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. Azure Automation allows for the creation, deployment, monitoring, and maintenance of resources in an Azure environment, but it does not specifically manage updates."
     - content: "Update Manager in Azure"
       isCorrect: true
-      explanation: "Correct. Update Manager in Azure oversees update compliance, deploys critical updates, and offers flexible patching options."
+      explanation: "Correct. Update Manager in Azure oversees update compliance, deploys critical updates, and offers flexible patching options."

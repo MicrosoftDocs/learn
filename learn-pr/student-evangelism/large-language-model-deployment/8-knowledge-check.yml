@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.large-language-model-deployment.knowledge-check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: "Knowledge check"
   description: Answer questions to see what you learned.
   ms.date: 09/25/2024
@@ -48,4 +46,4 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. This answer describes one of the examples of what can be done with the Azure OpenAI completions playground, but not the only one."
       
-
+

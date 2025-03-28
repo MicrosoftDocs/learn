@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.develop-for-azure-cache-for-redis
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Develop for Azure Cache for Redis
   description: "Learn how to configure Azure Cache for Redis, interact with the cache, and connect an application to Azure Cache for Redis by using .NET."
   ms.date: 03/18/2025

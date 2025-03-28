@@ -2,8 +2,6 @@
 uid: learn.azure.bicep-conditions-loops.knowledge-check
 title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge on conditions and loops.
@@ -67,4 +65,4 @@ quiz:
     - content: Use the output function within a resource declaration loop.
       isCorrect: false
       explanation: Incorrect. Outputs, including output loops, must be declared separately from resources.
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-query-performance-optimization.explore-query-store
 title: Explore Query Store
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Query Store
   description: "Explore Query Store"
   ms.date: 06/28/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 13
 content: |
-  [!include[](includes/5-explore-query-store.md)]
+  [!include[](includes/5-explore-query-store.md)]

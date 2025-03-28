@@ -2,8 +2,6 @@
 uid: learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.design-implement-star-schema
 title: Design a data warehouse schema
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design a data warehouse schema
   description: "Design a data warehouse schema"
   ms.date: 04/11/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-design-star-schema.md)]
+  [!include[](includes/2-design-star-schema.md)]

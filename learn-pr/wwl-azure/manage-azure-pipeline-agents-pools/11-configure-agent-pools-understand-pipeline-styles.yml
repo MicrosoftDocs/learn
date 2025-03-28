@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-azure-pipeline-agents-pools.configure-agent-pools-understand-pipeline-styles
 title: Configure agent pools and understand pipeline styles
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure agent pools and understand pipeline styles
   description: "Configure agent pools and understand pipeline styles"
   ms.date: 05/07/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 45
 content: |
-  [!include[](includes/11-configure-agent-pools-understand-pipeline-styles.md)]
+  [!include[](includes/11-configure-agent-pools-understand-pipeline-styles.md)]

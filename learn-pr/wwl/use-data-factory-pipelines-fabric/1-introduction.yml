@@ -2,8 +2,6 @@
 uid: learn.wwl.use-data-factory-pipelines-fabric.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 05/08/2024
@@ -14,4 +12,4 @@ metadata:
   - build-2023
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/1-introduction.md)]

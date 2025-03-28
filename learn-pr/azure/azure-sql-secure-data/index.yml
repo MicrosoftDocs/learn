@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure-sql-secure-data
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Secure your data with Azure SQL
   description: Secure your data with Azure SQL
   ms.date: 11/13/2023
@@ -48,4 +46,4 @@ units:
 - learn.azure-sql-secure-data.10-summary
 badge:
   uid: learn.azure-sql-secure-data.badge
-
+

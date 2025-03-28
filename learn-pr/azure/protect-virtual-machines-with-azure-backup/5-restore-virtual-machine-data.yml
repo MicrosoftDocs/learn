@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.protect-virtual-machines-with-azure-backup.5-restore-virtual-machine-data
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Restore virtual machine data
   description: Learn about the different options for restoring an Azure virtual machine (VM) from a previous backup.
   ms.date: 09/05/2024
@@ -38,4 +36,4 @@ quiz:
     - content: The existing VM is turned off
       isCorrect: false
       explanation: The VM being turned off has no effect. The disk can still be replaced.
-
+

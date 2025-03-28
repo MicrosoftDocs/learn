@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-developer-self-service.knowledge-check
 title: Knowledge Check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge Check
   description: "Knowledge Check"
   ms.date: 01/14/2025
@@ -81,4 +79,4 @@ quiz:
           explanation: Incorrect. Automated policy enforcement enhances security by preventing non-compliant actions from being executed.
         - content: Automated policy enforcement is used to manually check each action within the self-service environment against predefined rules.
           isCorrect: false
-          explanation: Incorrect. Automated policy enforcement reduces the need for manual checks by automatically checking actions against predefined rules.
+          explanation: Incorrect. Automated policy enforcement reduces the need for manual checks by automatically checking actions against predefined rules.

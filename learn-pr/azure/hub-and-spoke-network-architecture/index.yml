@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.hub-and-spoke-network-architecture
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Centralize your core services by using hub and spoke Azure virtual network architecture
   description: Design a network architecture in Azure that allows for growth and flexibility, secure isolation of critical resources, low administrative overhead, and communication with on-premises network resources.
   ms.service: azure-virtual-network
@@ -41,4 +39,4 @@ units:
 - learn.hub-and-spoke-network-architecture.6-summary
 badge:
   uid: learn.hub-and-spoke-network-architecture.badge
-
+

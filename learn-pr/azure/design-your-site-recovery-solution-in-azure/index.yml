@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.design-your-site-recovery-solution-in-azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design your site recovery solution in Azure
   description: Help protect your applications and data from disasters with a well-designed site recovery solution.
   manager: jsuri
@@ -39,4 +37,4 @@ units:
 - learn.design-your-site-recovery-solution-in-azure.4-build-resilient-application-services
 - learn.design-your-site-recovery-solution-in-azure.5-build-resilient-data-services
 - learn.design-your-site-recovery-solution-in-azure.6-summary
-
+

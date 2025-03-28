@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-secure-access-azure-repos-from-pipelines.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check."
   ms.date: 1/25/2023
@@ -46,4 +44,4 @@ quiz:
       explanation: "Correct. Using secure files is one of the recommended mechanisms to prevent sensitive information from being exposed in plaintext within pipeline logs."
     - content: "Use the Azure DevOps CLI to manage pipeline logs."
       isCorrect: false
-      explanation: "Incorrect. Using the Azure DevOps CLI won't prevent sensitive information from being logged."
+      explanation: "Incorrect. Using the Azure DevOps CLI won't prevent sensitive information from being logged."

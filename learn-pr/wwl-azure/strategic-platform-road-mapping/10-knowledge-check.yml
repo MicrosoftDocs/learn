@@ -2,8 +2,6 @@
 uid: learn.wwl.strategic-platform-road-mapping.knowledge-check
 title: Knowledge Check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge Check
   description: "Knowledge Check"
   ms.date: 01/14/2025
@@ -92,4 +90,4 @@ quiz:
           explanation: Incorrect. While visualization does provide a view of the platform's development, it shouldn't be complex but clear and engaging.
         - content: It helps stakeholders quickly understand the scope, progress, and timing of the platform’s development.
           isCorrect: true
-          explanation: Correct. Visualizing the roadmap provides a clear and engaging view of the platform's development for all stakeholders.
+          explanation: Correct. Visualizing the roadmap provides a clear and engaging view of the platform's development for all stakeholders.

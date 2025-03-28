@@ -2,8 +2,6 @@
 uid: learn.wwl.build-copilot-ai-studio.ground-language-model
 title: Understand how to ground your language model
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand how to ground your language model
   description: Learn about the grounding language models to get factually accurate responses.
   author: madiepev
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/2-ground-language-model.md)]
-
+

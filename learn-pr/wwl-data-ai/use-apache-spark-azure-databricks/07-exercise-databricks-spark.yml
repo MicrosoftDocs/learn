@@ -2,8 +2,6 @@
 uid: learn.wwl.use-apache-spark-azure-databricks.exercise-use
 title: Exercise - Use Spark in Azure Databricks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Use Spark in Azure Databricks
   description: "Exercise - Use Spark in Azure Databricks"
   ms.date: 12/12/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 45
 content: |
-  [!include[](includes/07-exercise-databricks-spark.md)]
+  [!include[](includes/07-exercise-databricks-spark.md)]

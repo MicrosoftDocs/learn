@@ -2,8 +2,6 @@
 uid: learn.implement-azure-database-for-mysql-features-support-mission-critical-workloads.configure-networking-security-features
 title: Configure networking and security features
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure networking and security features
   description: "This unit covers implementing networking and security features for Azure Database for PostgreSQL - Flexible Server. It also looks at Microsoft Defender for Cloud and data encryption."
   ms.date: 08/28/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/2-configure-networking-security-features.md)]
-
+

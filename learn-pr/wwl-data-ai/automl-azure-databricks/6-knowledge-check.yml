@@ -2,8 +2,6 @@
 uid: learn.wwl.automl-azure-databricks.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
@@ -49,4 +47,4 @@ quiz:
     - content: "`forecast`"
       isCorrect: false
       explanation: "Incorrect. A forecast model predicts values based on time."
-
+

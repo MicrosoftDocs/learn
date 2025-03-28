@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.troubleshoot-active-directory
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Troubleshoot Active Directory
   description: "Learn how to troubleshoot AD DS service failures or degraded performance. Learn how to recover deleted security objects and the AD DS database, and how to troubleshoot hybrid authentication issues."
   ms.date: 01/10/2025
@@ -47,4 +45,4 @@ units:
 - learn.wwl.troubleshoot-active-directory.summary
 badge:
   uid: learn.wwl.troubleshoot-active-directory.badge
-
+

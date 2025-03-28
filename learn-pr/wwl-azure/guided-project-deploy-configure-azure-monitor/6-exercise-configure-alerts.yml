@@ -2,8 +2,6 @@
 uid: learn.wwl.guided-project-deploy-configure-azure-monitor.exercise-configure-alerts
 title: Exercise - Configure alerts
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Configure alerts
   description: "Exercise - Configure alerts"
   ms.date: 10/06/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-exercise-configure-alerts.md)]
+  [!include[](includes/6-exercise-configure-alerts.md)]

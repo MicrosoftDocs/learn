@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-cost-management-azure.exercise-compare-workload-costs-use-total-cost-ownership-calculator
 title: Exercise - Compare workload costs using the TCO calculator
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Compare workload costs using the TCO calculator
   description: "Exercise - Compare workload costs using the TCO calculator"
   ms.date: 09/19/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-exercise-compare-workload-costs-use-total-cost-ownership-calculator.md)]
+  [!include[](includes/5-exercise-compare-workload-costs-use-total-cost-ownership-calculator.md)]

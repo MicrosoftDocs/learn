@@ -2,8 +2,6 @@
 uid: learn.wwl.security-storage.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 06/25/2024
@@ -72,4 +70,4 @@ quiz:
       explanation: "Correct. BYOK is used to securely transfer an existing key from an on-premises HSM to Azure Key Vault for secure storage and management."
     - content: "To generate a new key in Azure Key Vault for use in an on-premises HSM"
       isCorrect: false
-      explanation: "Incorrect. BYOK is used to transfer an existing key from an on-premises HSM to Azure Key Vault, not to generate a new key."
+      explanation: "Incorrect. BYOK is used to transfer an existing key from an on-premises HSM to Azure Key Vault, not to generate a new key."

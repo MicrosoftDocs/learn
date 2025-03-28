@@ -2,8 +2,6 @@
 uid: learn.wwl.design-azure-virtual-desktop-architecture.balancing-host-pools
 title: Balancing host pools
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Balancing host pools
   description: "Balancing host pools"
   ms.date: 08/01/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/5-balance-host-pools.md)]
+  [!include[](includes/5-balance-host-pools.md)]

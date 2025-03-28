@@ -2,8 +2,6 @@
 uid: learn.wwl.try-azure-cosmos-db-sql-api.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 12/19/2022
@@ -36,4 +34,4 @@ quiz:
       explanation: "Incorrect. Stored procedures are child resourced for containers, and are therefore items in Azure Cosmos DB for NoSQL."
     - content: "Database"
       isCorrect: true
-      explanation: "Correct. Databases are not items in Azure Cosmos DB for NoSQL, they are the parent resource for containers and child resource for accounts."
+      explanation: "Correct. Databases are not items in Azure Cosmos DB for NoSQL, they are the parent resource for containers and child resource for accounts."

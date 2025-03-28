@@ -2,8 +2,6 @@
 uid: learn.wwl.secure-ai-services.exercise-secure-ai-services
 title: Exercise - Manage Azure AI Services Security
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Manage Azure AI Services Security
   description: Exercise - Manage Azure AI Services Security
   author: wwlpublish
@@ -17,4 +15,4 @@ labId: 152414
 labModal: true
 content: |
   [!include[](includes/4-exercise-secure-ai-services.md)]
-
+

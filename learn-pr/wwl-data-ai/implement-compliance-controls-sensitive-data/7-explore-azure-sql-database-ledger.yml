@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-compliance-controls-for-sensitive-data.explore-azure-sql-database-ledger
 title: Explore Ledger
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Ledger
   description: "Explore Ledger"
   ms.date: 02/26/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/7-explore-azure-sql-database-ledger.md)]
+  [!include[](includes/7-explore-azure-sql-database-ledger.md)]

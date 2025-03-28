@@ -2,8 +2,6 @@
 uid: learn.wwl.troubleshoot-active-directory.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 01/10/2025
@@ -51,4 +49,4 @@ quiz:
     - content: "The users don't have licenses assigned for cloud apps. Microsoft Entra Connect doesn't sync licenses, and the administrator must manage these licenses manually."
       isCorrect: true
       explanation: "Correct. Each user must have a license assigned for cloud apps they want to access."
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-cloud-business-case-analysis.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 09/25/2024
@@ -84,4 +82,4 @@ quiz:
       explanation: "That's correct. Innovating a workload provides the opportunity and ability to improve a workload's core capabilities, experience, and services it offers to citizens."
     - content: "Mandate"
       isCorrect: false
-      explanation: "That's incorrect. Mandating isn't an approach proven to improve experiences and services provided to citizens."
+      explanation: "That's incorrect. Mandating isn't an approach proven to improve experiences and services provided to citizens."

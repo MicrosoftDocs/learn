@@ -2,8 +2,6 @@
 uid: learn.wwl.create-release-pipeline.configure-pipelines-code-with-yaml
 title: Configure Pipelines as Code with YAML
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure Pipelines as Code with YAML
   description: "Configure Pipelines as Code with YAML"
   ms.date: 05/28/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 60
 content: |
-  [!include[](includes/11-configure-pipelines-code-with-yaml.md)]
+  [!include[](includes/11-configure-pipelines-code-with-yaml.md)]

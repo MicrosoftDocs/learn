@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design a Modern Data Warehouse using Azure Synapse Analytics
   description: "Design a Modern Data Warehouse using Azure Synapse Analytics"
   ms.date: 07/30/2024
@@ -51,4 +49,4 @@ units:
 - learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.summary
 badge:
   uid: learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.badge
-
+

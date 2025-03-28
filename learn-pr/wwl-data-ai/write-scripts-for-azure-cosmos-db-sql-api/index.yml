@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.write-scripts-for-azure-cosmos-db-sql-api
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Write management scripts for Azure Cosmos DB for NoSQL
   description: "Learn how to manage Azure Cosmos DB for NoSQL accounts, databases, and containers using the Azure CLI."
   ms.date: 10/18/2022
@@ -43,4 +41,4 @@ units:
 - learn.wwl.write-scripts-for-azure-cosmos-db-sql-api.knowledge-check
 - learn.wwl.write-scripts-for-azure-cosmos-db-sql-api.summary
 badge:
-  uid: learn.wwl.write-scripts-for-azure-cosmos-db-sql-api.badge
+  uid: learn.wwl.write-scripts-for-azure-cosmos-db-sql-api.badge

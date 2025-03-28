@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.authenticate-azure-deployment-pipeline-service-principals
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: standard
   title: Authenticate your Azure deployment pipeline by using service principals
   description: Learn how to create, manage, and grant permissions to service principals, which enable your deployment pipelines to securely authenticate to Azure. 
@@ -62,4 +60,4 @@ units:
   - learn.azure.authenticate-azure-deployment-pipeline-service-principals.summary
 badge:
   uid: learn.azure.authenticate-azure-deployment-pipeline-service-principals.badge
-
+

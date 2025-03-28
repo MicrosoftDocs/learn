@@ -2,8 +2,6 @@
 uid: learn.wwl.secure-mysql.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 11/08/2022
@@ -61,4 +59,4 @@ quiz:
       explanation: "That's correct. Azure Database for MySQL supports data encryption at the table level."
     - content: "Azure Database for MySQL runs the Community Edition of MySQL. Only the Enterprise edition supports data at rest encryption."
       isCorrect: false
-      explanation: "That's incorrect. Azure Database for MySQL community edition of MySQL supports data at rest encryption."
+      explanation: "That's incorrect. Azure Database for MySQL community edition of MySQL supports data at rest encryption."

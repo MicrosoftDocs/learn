@@ -2,8 +2,6 @@
 uid: learn.wwl.measure-index-azure-cosmos-db-sql-api.measure-query-cost
 title: Measure query cost
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Measure query cost
   description: "Measure query cost"
   ms.date: 10/18/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-measure-query-cost.md)]
+  [!include[](includes/4-measure-query-cost.md)]

@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-operator-nexus.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   ms.date: 05/05/2023
@@ -69,4 +67,4 @@ quiz:
       explanation: "Resource Providers are responsible for managing and provisioning resources in Azure. They allow users to deploy and manage resources such as virtual machines, storage accounts, and databases."
     - content: "Resource Providers enable secure communication between Azure resources."
       isCorrect: false
-      explanation: "Resource Providers don't enable secure communication between Azure resources."
+      explanation: "Resource Providers don't enable secure communication between Azure resources."

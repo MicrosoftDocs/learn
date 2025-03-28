@@ -2,8 +2,6 @@
 uid: learn.wwl.design-for-user-identities-profiles.select-appropriate-licensing-model-for-azure-virtual-desktop-based-requirements
 title: Select an appropriate licensing model for Azure Virtual Desktop based on requirements
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Select an appropriate licensing model for Azure Virtual Desktop based on requirements
   description: "Select an appropriate licensing model for Azure Virtual Desktop based on requirements"
   ms.date: 02/10/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-select-appropriate-licensing-model.md)]
+  [!include[](includes/2-select-appropriate-licensing-model.md)]

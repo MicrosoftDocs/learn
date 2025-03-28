@@ -2,8 +2,6 @@
 uid: learn.wwl.create-release-pipeline.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 05/28/2024
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. It's Multi-agent: Run the same set of tasks on multiple agents using the specified number of agents."
     - content: "Multi-agent: Run the same set of tasks on multiple agents using the specified number of agents."
       isCorrect: true
-      explanation: "Correct. It's Multi-agent: Run the same set of tasks on multiple agents using the specified number of agents."
+      explanation: "Correct. It's Multi-agent: Run the same set of tasks on multiple agents using the specified number of agents."

@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-modernize-explore-azure-center-sap-solutions.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 01/09/2024
@@ -59,4 +57,4 @@ quiz:
       explanation: "Incorrect. This option creates distributed non-HA architecture, which isn't recommended for production environments."
     - content: "Architecture with a single server"
       isCorrect: false
-      explanation: "Incorrect. This option creates architecture with a single server, which is available only for non-production environments."
+      explanation: "Incorrect. This option creates architecture with a single server, which is available only for non-production environments."

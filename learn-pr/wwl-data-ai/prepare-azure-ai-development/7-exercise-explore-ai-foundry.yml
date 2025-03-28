@@ -2,8 +2,6 @@
 uid: learn.wwl.prepare-azure-ai-development.exercise-explore-ai-foundry
 title: Exercise - Explore the Azure AI Foundry portal
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Explore the Azure AI Foundry Portal
   description: Explore the Azure AI Foundry portal for AI development on the Azure cloud platform.
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 30
 content: |
   [!include[](includes/7-exercise-explore-ai-foundry.md)]
-
+

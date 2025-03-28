@@ -2,8 +2,6 @@
 uid: learn.wwl.troubleshoot-connectivity-issues-virtual-machines-azure.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 08/01/2024
@@ -50,4 +48,4 @@ quiz:
       explanation: "Correct. Azure Bastion has a connection troubleshoot wizard under the Monitoring section."
     - content: "Both offer a wizard"
       isCorrect: false
-      explanation: "Incorrect. Only one of the methods has a connection troubleshoot wizard."
+      explanation: "Incorrect. Only one of the methods has a connection troubleshoot wizard."

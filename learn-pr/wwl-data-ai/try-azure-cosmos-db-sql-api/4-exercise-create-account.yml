@@ -2,8 +2,6 @@
 uid: learn.wwl.try-azure-cosmos-db-sql-api.exercise-create-account
 title: 'Exercise: Create an Azure Cosmos DB for NoSQL account'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Create an Azure Cosmos DB for NoSQL account'
   description: "Exercise: Create an Azure Cosmos DB for NoSQL account"
   ms.date: 10/28/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-exercise-create-account.md)]
+  [!include[](includes/4-exercise-create-account.md)]

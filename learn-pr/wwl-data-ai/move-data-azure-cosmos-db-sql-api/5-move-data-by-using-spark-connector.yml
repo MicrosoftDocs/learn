@@ -2,8 +2,6 @@
 uid: learn.wwl.moving-data-into-out-of-azure-cosmos-db-sql-api.move-data-by-using-spark-connector
 title: Move data by using the Azure Cosmos DB Spark connector
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Move data by using the Azure Cosmos DB Spark connector
   description: "Move data by using the Azure Cosmos DB Spark connector"
   ms.date: 10/17/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 9
 content: |
-  [!include[](includes/5-move-data-by-using-spark-connector.md)]
+  [!include[](includes/5-move-data-by-using-spark-connector.md)]

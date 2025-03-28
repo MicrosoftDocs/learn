@@ -2,8 +2,6 @@
 uid: learn.wwl.understand-write-ahead-logging.understand-write-ahead-logging
 title: Describe write ahead logging
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe write ahead logging
   description: "Describe write ahead logging."
   ms.date: 05/10/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-understand-write-ahead-logging.md)]
+  [!include[](includes/2-understand-write-ahead-logging.md)]

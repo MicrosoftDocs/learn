@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-performance.9-intelligent-performance
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Intelligent performance
   description: Intelligent performance
   ms.date: 03/15/2023
@@ -48,4 +46,4 @@ quiz:
         explanation: "Automatic Tuning doesn't look at query plan details."
       - content: "Extended events traces of query plan information over time"
         isCorrect: false
-        explanation: "Automatic Tuning doesn't use extended events to look at query plan details."
+        explanation: "Automatic Tuning doesn't use extended events to look at query plan details."

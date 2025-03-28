@@ -2,8 +2,6 @@
 uid: learn.wwl.use-data-factory-pipelines-fabric.exercise-pipelines
 title: Exercise - Ingest data with a pipeline
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Ingest data with a pipeline
   description: "Exercise - Ingest data with a pipeline"
   ms.date: 12/05/2024
@@ -14,4 +12,4 @@ metadata:
   - build-2023
 durationInMinutes: 60
 content: |
-  [!include[](includes/6-exercise-pipelines.md)]
+  [!include[](includes/6-exercise-pipelines.md)]
