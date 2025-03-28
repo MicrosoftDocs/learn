@@ -12,7 +12,7 @@ Azure Machine Learning provides the following capabilities for continuous model 
 - **Ability to define custom monitoring signals**. If the built-in monitoring signals aren't suitable for your business scenario, you can define your own monitoring signal with a custom component.
 - **Flexibility to use production inference data from any source**. If you deploy models outside Azure Machine Learning or you deploy models to batch endpoints, you can still collect production inference data yourself to use in Azure Machine Learning model monitoring.
 
-Each machine learning model and its use cases are unique. Therefore, model monitoring is unique for each situation. Here are recommended best practices for model monitoring:
+Each machine learning model and its use cases are unique. Therefore, model monitoring is unique for each situation. Here are best practices for model monitoring:
 
 - **Start model monitoring immediately after you deploy a model to production**.
 - **Work with data scientists who are familiar with the model to set up monitoring**. Data scientists who have insight into the model and its use cases can recommend monitoring signals and metrics. They can set the right alert thresholds for each metric to avoid alert fatigue.

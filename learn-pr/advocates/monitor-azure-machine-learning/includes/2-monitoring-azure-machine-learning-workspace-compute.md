@@ -20,7 +20,7 @@ A compute is a designated resource where you run your job or host your endpoint.
 - **Compute cluster**: This type of compute is a managed infrastructure where you can create a cluster of CPU or GPU compute nodes.
 - **Serverless compute**: When you use serverless compute, you don't need to create your own cluster. All compute life-cycle management is offloaded to Azure Machine Learning.
 - **Kubernetes cluster**: This type of compute is a used to deploy trained machine learning models to Azure Kubernetes Service (AKS). You can create an AKS cluster from your Azure Machine Learning workspace or attach an existing AKS cluster.
-- **Attached (Unmanaged) compute**: You can attach your own compute resources to your workspace and use them for training and inference. Virtual machines (VM) are supported, along with services such as Azure Databricks and Azure HDInsight. These are unmanaged compute resources. As such, they can require extra steps for you to maintain or improve performance for machine learning workloads.
+- **Attached (unmanaged) compute**: You can attach your own compute resources to your workspace and use them for training and inference. Virtual machines are supported, along with services such as Azure Databricks and Azure HDInsight. These are unmanaged compute resources. As such, they can require extra steps for you to maintain or improve performance for machine learning workloads.
 
 For managed compute resources, you can get insights into the performance of the nodes, quota availability, and resilience of the environment directly from Azure Machine Learning.
 

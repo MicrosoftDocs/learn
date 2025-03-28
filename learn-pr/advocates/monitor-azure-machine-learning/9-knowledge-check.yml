@@ -17,17 +17,17 @@ quiz:
         - content: "Monitor Azure Machine Learning performance."
           isCorrect: true
           explanation: "Administrators are primarily responsible for the Azure infrastructure on which an Azure Machine Learning workspace and models run."
-        - content: "Monitor workflow issues."
+        - content: "Monitor workflow problems."
           isCorrect: false
           explanation: "Both administrators and machine learning professionals are responsible for monitoring problems and performance related to Azure Machine Learning workspaces."
         - content: "Monitor Azure Machine Learning models."
           isCorrect: false
           explanation: "Machine learning professionals and data scientists are primarily responsible for monitoring model performance."
-    - content: "You can use Kusto Query Language (KQL) to query the Log Analytics workspace that's associated with your Azure Machine Learning workspace. What is a necessary first step for accomplishing this goal?"
+    - content: "You can use KQL to query the Log Analytics workspace that's associated with your Azure Machine Learning workspace. What is a necessary first step for accomplishing this goal?"
       choices:
         - content: "Log Analytics is configured by default."
           isCorrect: false
-          explanation: "Only metrics are enabled by default on Azure Machine Learning. Logs can be exported to Log Analytics by setting up diagnostic settings."
+          explanation: "Only metrics are enabled by default on Azure Machine Learning. You can export logs to Log Analytics by setting up diagnostic settings."
         - content: "Configure diagnostic settings."
           isCorrect: true
           explanation: "By configuring diagnostic settings, you can enable logs to be exported to a Log Analytics workspace."

@@ -1,4 +1,4 @@
-Resource logs provide insight into operations that an Azure resource completed, such as Azure Machine Learning. Logs are generated automatically, but you must route them to Log Analytics or a different service to save or query them.
+Resource logs provide insight into operations that an Azure resource (such as Azure Machine Learning) completed. Logs are generated automatically, but you must route them to Log Analytics or a different service to save or query them.
 
 To route Azure Machine Learning logs to Log Analytics, perform the following steps:
 
@@ -34,7 +34,7 @@ After you configure the diagnostic setting, you can query the logs in Log Analyt
 
 1. On the **New Query 1*** tab, select the dropdown menu on the right side to change **Simple mode** to **KQL**. (KQL stands for Kusto Query Language.)
 
-1. In the KQL query editor, you can enter the query that you want to perform. For the example in this module, we check for records for a specific job name:
+1. In the KQL query editor, you can enter the query that you want to perform. The following example checks for records for a specific job name:
 
    ```kusto
    _AmlComputeJobEvent_
@@ -46,4 +46,4 @@ After you configure the diagnostic setting, you can query the logs in Log Analyt
 
 ![Screenshot of the KQL code in a log query in the Azure portal.](../media/log-query.png)
 
-After you run the query, you can analyze the results on the **Results** pane.
+After you run the query, you can analyze the results on the **Results** tab.
