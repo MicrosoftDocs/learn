@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.microsoft-defender-cloud-threat-protection
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure and manage threat protection by using Microsoft Defender for Cloud
   description: "This module focuses on the essential techniques for configuring and managing threat protection exclusively with Microsoft Defender for Cloud, empowering cybersecurity specialists to strengthen the security posture of their cloud environments."
   ms.date: 03/28/2025

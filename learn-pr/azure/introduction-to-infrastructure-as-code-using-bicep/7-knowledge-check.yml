@@ -2,8 +2,6 @@
 uid: learn.azure.introduction-infrastructure-code-using-bicep.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Check what you learned.
@@ -61,4 +59,4 @@ quiz:
     - content: Management group.
       isCorrect: false
       explanation: Incorrect. A management group is a logical container for grouping Azure subscriptions.
-
+

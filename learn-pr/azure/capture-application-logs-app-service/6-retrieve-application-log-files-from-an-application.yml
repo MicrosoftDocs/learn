@@ -2,8 +2,6 @@
 uid: learn.azure.capture-application-logs-app-service.6-retrieve-application-log-files-from-an-application
 title: Retrieve application log files
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Retrieve application log files
   description: Retrieve application log files
   ms.date: 11/12/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/6-retrieve-application-log-files-from-an-application.md)]
-
+

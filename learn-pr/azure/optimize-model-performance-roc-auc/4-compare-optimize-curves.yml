@@ -2,8 +2,6 @@
 uid: learn.machinelearning.optimize-model-performance-roc-auc-dropout.comparing-optimizing-curves
 title: Compare and optimize ROC curves
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Compare and optimize ROC curves
   description: Conceptual unit about comparing and optimizing machine learning models ROC curves
   ms.date: 07/20/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/4-compare-optimize-curves.md)]
-
+

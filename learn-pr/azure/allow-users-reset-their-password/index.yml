@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.allow-users-to-reset-their-password
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Allow users to reset their password with Microsoft Entra self-service password reset
   description: Learn how to allow users to reset their password with Microsoft Entra self-service password reset.
   ms.date: 11/07/2024
@@ -40,4 +38,4 @@ units:
 - learn.azure.allow-users-to-reset-their-password.exercise-customize-directory-branding
 - learn.azure.allow-users-to-reset-their-password.summary
 badge:
-  uid: learn.azure.allow-users-to-reset-their-password.badge
+  uid: learn.azure.allow-users-to-reset-their-password.badge

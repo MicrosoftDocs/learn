@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create resource template for Azure Cosmos DB for NoSQL
   description: "Learn about automated Azure Cosmos DB for NoSQL resource deployments using the Azure Resource Manager with JSON and Bicep templates."
   ms.date: 10/18/2022
@@ -38,4 +36,4 @@ units:
 - learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api.knowledge-check
 - learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api.summary
 badge:
-  uid: learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api.badge
+  uid: learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api.badge

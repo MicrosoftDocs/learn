@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-devops-continuous-security-operations.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 09/20/2020
@@ -71,4 +69,4 @@ quiz:
       explanation: "Sorry, that’s incorrect. The value of DevOps isn’t about finding a balance between discussion and implementation."
     - content: "Estimation (planning) and achievability (results)"
       isCorrect: false
-      explanation: "Sorry, that’s incorrect. The value of DevOps isn’t about finding a balance between estimation and achievability."
+      explanation: "Sorry, that’s incorrect. The value of DevOps isn’t about finding a balance between estimation and achievability."

@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-security-controls-identity-access.kerberos-authentication
 title: Kerberos authentication
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Kerberos authentication
   description: "Kerberos authentication"
   ms.date: 03/10/2025

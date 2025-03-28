@@ -2,8 +2,6 @@
 uid: learn.wwl.multistage-reasoning-azure-databricks.haystack
 title: Explore Haystack
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Haystack
   description: "Explore Haystack"
   ms.date: 03/20/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/05-haystack.md)]
+  [!include[](includes/05-haystack.md)]

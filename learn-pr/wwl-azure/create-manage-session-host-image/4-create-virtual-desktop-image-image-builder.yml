@@ -2,8 +2,6 @@
 uid: learn.wwl.create-manage-session-host-image.create-azure-virtual-desktop-image-image-builder
 title: Create an Azure Virtual Desktop image by using VM Image Builder and PowerShell
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create an Azure Virtual Desktop image by using VM Image Builder and PowerShell
   description: "Create an Azure Virtual Desktop image by using VM Image Builder and PowerShell"
   ms.date: 08/21/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-create-virtual-desktop-image-image-builder.md)]
+  [!include[](includes/4-create-virtual-desktop-image-image-builder.md)]

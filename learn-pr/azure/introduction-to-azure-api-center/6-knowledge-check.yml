@@ -2,8 +2,6 @@
 uid: learn.introduction-to-azure-api-center.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Check what you've learned about Azure API Center in this Knowledge Check."
   ms.date: 5/3/2024
@@ -92,4 +90,4 @@ quiz:
       explanation: "Azure API Center simplifies the tracking of APIs using metadata such as versions, owners, lifecycle, and processes like compliance reviews, thereby supporting effective API governance at scale. 2"
     - content: "By allowing the association of APIs with specific projects and teams."
       isCorrect: false
-      explanation: "Incorrect"
+      explanation: "Incorrect"

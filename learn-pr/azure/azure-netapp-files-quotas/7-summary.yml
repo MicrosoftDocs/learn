@@ -2,8 +2,6 @@
 uid: learn.azure.azure-netapp-files-quotas.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: You've learned different options to optimize capacity management in Azure NetApp Files.    
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 2
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/7-summary.md)]

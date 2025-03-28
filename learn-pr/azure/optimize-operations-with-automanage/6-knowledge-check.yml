@@ -2,8 +2,6 @@
 uid: learn.optimize-operations-with-automanage.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check.
   ms.date: 01/20/2025
@@ -61,4 +59,4 @@ quiz:
     - content: "Azure Policy."
       isCorrect: false
       explanation: "Incorrect. Azure Arc is the service used for extending Azure services such as Automanage to machines hosted outside of Azure."
-
+

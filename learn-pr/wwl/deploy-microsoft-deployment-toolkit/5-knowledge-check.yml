@@ -2,8 +2,6 @@
 uid: learn.wwl.deploy-microsoft-deployment-toolkit.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 04/03/2023
@@ -48,4 +46,4 @@ quiz:
       explanation: "Incorrect. This item is one of the top benefits of using Windows Autopilot. Try again."
     - content: "When deploying to bare metal devices"
       isCorrect: true
-      explanation: "Correct. As you transition to some of the modern management tools, it is likely that a combination of Windows Autopilot and Intune will begin to perform many of the tasks associated with MDT. For example, the top three benefits of using Autopilot in modern deployments include eliminating OS image reengineering, customizing the out-of-box experience, and preconfiguring policies and ensuring security with enrollment status. However, there are scenarios, such as a bare metal device, to which Autopilot is not suited and, in this case, MDT would be an appropriate tool of choice. MDT caters to a specific scenario where devices are likely built and managed on premises."
+      explanation: "Correct. As you transition to some of the modern management tools, it is likely that a combination of Windows Autopilot and Intune will begin to perform many of the tasks associated with MDT. For example, the top three benefits of using Autopilot in modern deployments include eliminating OS image reengineering, customizing the out-of-box experience, and preconfiguring policies and ensuring security with enrollment status. However, there are scenarios, such as a bare metal device, to which Autopilot is not suited and, in this case, MDT would be an appropriate tool of choice. MDT caters to a specific scenario where devices are likely built and managed on premises."

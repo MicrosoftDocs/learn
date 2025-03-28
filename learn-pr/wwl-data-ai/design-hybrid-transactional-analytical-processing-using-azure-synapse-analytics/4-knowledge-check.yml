@@ -2,8 +2,6 @@
 uid: learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 06/26/2023
@@ -47,4 +45,4 @@ quiz:
       explanation: "Correct. Azure Synapse Link for Dataverse replicates data to an Azure Data Lake Gen2 storage account."
     - content: "In an Azure Cosmos DB container."
       isCorrect: false
-      explanation: "Incorrect. Dataverse data is not replicated to Azure Cosmos DB."
+      explanation: "Incorrect. Dataverse data is not replicated to Azure Cosmos DB."

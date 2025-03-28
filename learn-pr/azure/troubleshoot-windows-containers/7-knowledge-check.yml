@@ -2,8 +2,6 @@
 uid: learn.azure.troubleshoot-windows-containers.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: This content is part of the "Troubleshooting Windows Containers" module.
   ms.date: 08/13/2024
@@ -46,4 +44,4 @@ quiz:
       explanation: "Correct. (LogMonitor's purpose is to send logs and events from Windows containers to STDOUT.)"
     - content: "Can be used to monitor the state of a background service."
       isCorrect: false
-      explanation: "Incorrect. (While it's possible to use LogMonitor to monitor the state of a background service, LogMonitor doesn't take any actions on it and the container exits. LogMonitor's main purpose is to send logs and events from Windows containers to STDOUT.)"
+      explanation: "Incorrect. (While it's possible to use LogMonitor to monitor the state of a background service, LogMonitor doesn't take any actions on it and the container exits. LogMonitor's main purpose is to send logs and events from Windows containers to STDOUT.)"

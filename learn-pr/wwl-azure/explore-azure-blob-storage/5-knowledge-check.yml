@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-azure-blob-storage.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 07/12/2024
@@ -57,4 +55,4 @@ quiz:
       explanation: "Incorrect. Both versions use AES, but they differ in the mode of operation: CBC for Version 1 and GCM for Version 2."
     - content: "Version 1 uses Galois/Counter Mode (GCM) mode with AES and Version 2 uses Cipher Block Chaining (CBC) mode with AES"
       isCorrect: false
-      explanation: "Incorrect. The versions are switched. Version 1 uses CBC mode with AES, while Version 2 uses GCM mode with AES."
+      explanation: "Incorrect. The versions are switched. Version 1 uses CBC mode with AES, while Version 2 uses GCM mode with AES."

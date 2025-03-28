@@ -2,8 +2,6 @@
 uid: learn.arm-template-whatif.4-exercise-what-if
 title: Exercise - Preview changes with the what-if command
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Preview changes with the what-if command
   description: Use the what-if tool to predict what a deployment will carry out if it's applied.
   author: mumian
@@ -16,4 +14,4 @@ durationInMinutes: 8
 azureSandbox: true
 content: |
   [!include[](includes/4-exercise-what-if.md)]
-
+

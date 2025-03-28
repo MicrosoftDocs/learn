@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deploy and manage Azure IaaS Active Directory domain controllers in Azure
   description: "Learn to deploy and manage Azure IaaS Active Directory domain controllers in Azure."
   ms.date: 06/20/2024
@@ -70,4 +68,4 @@ units:
 - learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azure.knowledge-check
 - learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azure.summary
 badge:
-  uid: learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azure.badge
+  uid: learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azure.badge

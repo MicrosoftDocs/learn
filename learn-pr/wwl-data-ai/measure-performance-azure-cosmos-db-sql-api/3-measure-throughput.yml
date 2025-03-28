@@ -2,8 +2,6 @@
 uid: learn.wwl.measure-performance-azure-cosmos-db-sql-api.measure-throughput
 title: Measure throughput
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Measure throughput
   description: "Measure throughput"
   ms.date: 04/23/2024
@@ -16,4 +14,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-measure-throughput.md)]
+  [!include[](includes/3-measure-throughput.md)]

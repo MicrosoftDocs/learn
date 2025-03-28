@@ -2,8 +2,6 @@
 uid: learn.wwl.perform-incremental-processing-with-spark-structured-streaming.set-up-real-time-sources
 title: Set up real-time data sources for incremental processing
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Set up real-time sources
   description: "Establish proper sources for Spark structured streaming"
   ms.date: 7/25/2024
@@ -15,4 +13,4 @@ labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/02-set-up-real-time-sources.md)]
-
+

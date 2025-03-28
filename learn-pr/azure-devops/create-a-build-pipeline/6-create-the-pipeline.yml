@@ -2,8 +2,6 @@
 uid: learn.azdo.create-a-build-pipeline.6-create-the-pipeline
 title: Exercise - Create the pipeline
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create the pipeline
   description: Create an Azure Pipelines project and produce your first build artifact.
   ms.date: 03/21/2025
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 20
 content: |
   [!include[](includes/6-create-the-pipeline.md)]
-
+

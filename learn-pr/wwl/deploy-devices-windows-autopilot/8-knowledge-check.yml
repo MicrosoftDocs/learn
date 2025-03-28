@@ -2,8 +2,6 @@
 uid: learn.wwl.deploy-devices-windows-autopilot.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 01/24/2024
@@ -57,4 +55,4 @@ quiz:
       explanation: "Incorrect. While this might ultimately be necessary in some cases, it's a drastic step and won't help identify the root cause of the deployment failure. Try again."
     - content: "Physically inspect the device for hardware issues."
       isCorrect: false
-      explanation: "Incorrect. Hardware issues are unlikely to be the root cause of a Windows Autopilot deployment failure. Try again."
+      explanation: "Incorrect. Hardware issues are unlikely to be the root cause of a Windows Autopilot deployment failure. Try again."

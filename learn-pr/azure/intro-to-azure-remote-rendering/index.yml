@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-remote-rendering
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: introduction        
   title: Introduction to Azure Remote Rendering
   description: Azure Remote Rendering enables you to render high-quality, interactive 3D content in the cloud. You can stream this content in real time to devices, such as the HoloLens 2.
@@ -43,4 +41,4 @@ units:
 - learn.intro-to-azure-remote-rendering.6-summary
 badge:
   uid: learn.intro-to-azure-remote-rendering.badge
-
+

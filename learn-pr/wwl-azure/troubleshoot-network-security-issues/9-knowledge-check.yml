@@ -2,8 +2,6 @@
 uid: learn.wwl.troubleshoot-network-security-issues.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 04/27/2023
@@ -72,4 +70,4 @@ quiz:
       explanation: "That's incorrect. A DDoS is a type of attack that aims to exhaust an application's resources to make it unavailable to legitimate users."
     - content: "Destination Network Address Translation (DNAT)"
       isCorrect: true
-      explanation: "That's correct. DNAT rules allow or deny inbound traffic to firewall public IP address(es)."
+      explanation: "That's correct. DNAT rules allow or deny inbound traffic to firewall public IP address(es)."

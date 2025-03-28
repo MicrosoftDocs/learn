@@ -2,8 +2,6 @@
 uid: learn.wwl.query-azure-cosmos-db-sql-api.execute-queries-sdk
 title: Execute queries in the SDK
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Execute queries in the SDK
   description: "Execute queries in the SDK"
   ms.date: 03/10/2025
@@ -15,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/7-execute-queries-sdk.md)]
+  [!include[](includes/7-execute-queries-sdk.md)]

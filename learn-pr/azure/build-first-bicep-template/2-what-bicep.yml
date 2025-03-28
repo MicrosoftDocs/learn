@@ -2,8 +2,6 @@
 uid: learn.azure.deploy-azure-resources-bicep.what-is-bicep
 title: What is Bicep?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: What is Bicep?
   description: Learn what Bicep is and how to install the Bicep tooling.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/2-what-bicep.md)]
-
+

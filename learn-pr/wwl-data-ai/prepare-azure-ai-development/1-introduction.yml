@@ -2,8 +2,6 @@
 uid: learn.wwl.prepare-azure-ai-development.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: It's important to plan and prepare for an AI development project.
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-
+

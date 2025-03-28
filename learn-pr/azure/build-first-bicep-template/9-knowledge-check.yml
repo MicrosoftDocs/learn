@@ -2,8 +2,6 @@
 uid: learn.azure.deploy-azure-resources-bicep.knowledge-check
 title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: "Knowledge check"
   description: "Knowledge check"
@@ -54,4 +52,4 @@ quiz:
     - content: Modules can't have outputs; only templates can.
       isCorrect: false
       explanation: Incorrect. Modules can define outputs. The outputs from modules are automatically made available to the parent template.
-
+

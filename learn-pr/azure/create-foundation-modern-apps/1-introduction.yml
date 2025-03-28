@@ -2,8 +2,6 @@
 uid: learn.azure.create-foundation-modern-apps.introduction  
 title: Introduction  
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: introduction  
   title: Introduction
   description: Break down a scenario for an application and build a multi-service solution based on the microservices approach. Learn how to use modern database capabilities to build a foundation for applications.
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
-
+

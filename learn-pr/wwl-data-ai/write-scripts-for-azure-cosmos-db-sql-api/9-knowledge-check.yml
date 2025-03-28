@@ -2,8 +2,6 @@
 uid: learn.wwl.write-scripts-for-azure-cosmos-db-sql-api.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 10/18/2022
@@ -47,4 +45,4 @@ quiz:
       explanation: "That's correct. Changing the priority of the primary region will cause a manual failover event."
     - content: "Use the ``az cosmosdb update`` command to \"bounce\" the service"
       isCorrect: false
-      explanation: "That's incorrect. This command changes only the characteristics of the service without affecting a manual failover event."
+      explanation: "That's incorrect. This command changes only the characteristics of the service without affecting a manual failover event."

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-manage-enforcement-cloud-governance-policies
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement and manage enforcement of cloud governance policies
   description: "This module equips administrators with the skills to design, deploy, and oversee security governance in Azure, ensuring alignment with organizational policies and industry best practices."
   ms.date: 02/07/2025

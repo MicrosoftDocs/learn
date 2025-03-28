@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.connect-on-premises-network-with-expressroute.2-expressroute-service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is the Azure ExpressRoute service?
   description: What is the Azure ExpressRoute service?
   ms.date: 10/18/2023
@@ -44,4 +42,4 @@ quiz:
     - content: "Access to Microsoft cloud services"
       isCorrect: false
       explanation: "Access to Microsoft cloud services is a benefit of choosing to connect your network to Microsoft by using ExpressRoute."
-
+

@@ -2,8 +2,6 @@
 uid: learn.azure.manage-changes-bicep-code-git.exercise-initialize-git-repository
 title: Exercise - Initialize a Git repository
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Initialize a Git repository
   description: Learn how to install Git and initialize a Git repository to store your Bicep code.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/3-exercise-initialize-git-repository.md)]
-
+

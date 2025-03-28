@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-azure-arc.6-knowledge-check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   ms.date: 03/21/2025
@@ -56,4 +54,4 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. Azure Arc lets you connect any CNCF-certified Kubernetes cluster to Azure."
 
-
+

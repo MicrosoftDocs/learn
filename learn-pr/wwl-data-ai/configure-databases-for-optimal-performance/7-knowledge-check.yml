@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-databases-for-optimal-performance.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 03/20/2025
@@ -61,4 +59,4 @@ quiz:
       explanation: "Incorrect. Classifier functions assign connections to workload groups."
     - content: "Resource pools"
       isCorrect: true
-      explanation: "Correct. Resource pools are where resources are assigned in resource governor."
+      explanation: "Correct. Resource pools are where resources are assigned in resource governor."

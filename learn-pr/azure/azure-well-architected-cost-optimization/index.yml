@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure-well-architected-cost-optimization
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Microsoft Azure Well-Architected Framework - Cost Optimization
   description: Apply cost optimization guidance in your architecture to sustain and improve your return on investment (ROI).
   ms.date: 10/23/2023
@@ -44,4 +42,4 @@ units:
   - learn.azure-well-architected-cost-optimization.6-summary
 badge:
   uid: learn.azure-well-architected-cost-optimization.badge
-
+

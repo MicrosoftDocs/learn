@@ -2,8 +2,6 @@
 uid: learn.wwl.introduction-to-azure-virtual-networks.enable-cross-vnet-connectivity-peering
 title: Enable cross-virtual network connectivity with peering
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Enable cross-virtual network connectivity with peering
   description: "Enable cross-virtual network connectivity with peering."
   ms.date: 03/28/2025

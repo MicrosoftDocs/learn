@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-relational-data-offerings.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 08/28/2024
@@ -50,4 +48,4 @@ quiz:
       explanation: "That's incorrect. A virtual table containing the results of a query is a view."
     - content: "A predefined SQL statement that modifies data"
       isCorrect: false
-      explanation: "That's incorrect. A predefined SQL statement to modify data would most likely be implemented as a stored procedure."
+      explanation: "That's incorrect. A predefined SQL statement to modify data would most likely be implemented as a stored procedure."

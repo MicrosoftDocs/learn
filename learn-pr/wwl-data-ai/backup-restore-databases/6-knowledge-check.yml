@@ -2,8 +2,6 @@
 uid: learn.wwl.backup-restore-databases.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 03/25/2025
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. Active geo-replication isn't supported by Azure SQL Managed Instance."
     - content: "Failover Cluster Instance"
       isCorrect: false
-      explanation: "Incorrect. Failover Cluster Instance isn't supported by Azure SQL Managed Instance."
+      explanation: "Incorrect. Failover Cluster Instance isn't supported by Azure SQL Managed Instance."

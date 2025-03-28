@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-monitoring-virtual-machines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure monitoring for virtual machines
   description: In this module, you learn how the Azure Monitor Agent can be deployed to IaaS VMs, how VM Insights can be used to monitor IaaS VM performance, and how to enable data collection rules to collect operating system and application logs.
   ms.date: 10/25/2023
@@ -33,4 +31,4 @@ units:
 - learn.wwl.configure-monitoring-virtual-machines.summary
 badge:
   uid: learn.wwl.configure-monitoring-virtual-machines.badge
-
+

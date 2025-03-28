@@ -2,8 +2,6 @@
 uid: learn.wwl.guided-project-administer-active-directory-domain-services.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 08/16/2024
@@ -70,4 +68,4 @@ quiz:
       explanation: "Incorrect. RODCs are specifically designed for environments where physical security can't be guaranteed, such as branch offices, not for secure datacenter environments."
     - content: "They host a read-only copy of the AD DS database and are suitable for branch office locations."
       isCorrect: true
-      explanation: "Correct. RODCs are designed for scenarios where physical security can't be guaranteed, such as branch offices."
+      explanation: "Correct. RODCs are designed for scenarios where physical security can't be guaranteed, such as branch offices."
