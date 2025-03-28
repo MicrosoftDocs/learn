@@ -67,7 +67,7 @@ To purchase an Azure OpenAI Service provisioned reservation, choose an Azure reg
 To buy a reservation, you must have the owner role or the reservation purchaser role on an Azure subscription that's of one of the following types:
 
 - Enterprise (MS-AZR-0017P or MS-AZR-0148P)
-- Pay-As-You-Go (MS-AZR-0003P or MS-AZR-0023P)
+- Pay-as-you-go (MS-AZR-0003P or MS-AZR-0023P)
 - Microsoft Customer Agreement.
 
 Cloud solution providers (CSP) can use the Azure portal or [Partner Center](/partner-center/azure-reservations) to purchase Azure reservations. CSP partners can buy reservations for them in Partner Center when authorized by their customers. For more information, refer to [Buy Microsoft Azure reservations on behalf of your customers](/partner-center/azure-reservations-buying). Alternatively, once the partner has given permission to the end customer and they have the reservation purchaser role, they can purchase reservations in the Azure portal.
