@@ -2,8 +2,6 @@
 uid: learn.introduction-to-azure-dedicated-hosts.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction to Azure Dedicated Hosts.
   ms.date: 06/1/2023
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction.md)]
-
+

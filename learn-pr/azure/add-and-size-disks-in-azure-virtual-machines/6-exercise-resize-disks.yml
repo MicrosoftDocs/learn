@@ -2,8 +2,6 @@
 uid: learn.add-and-size-disks-in-azure-virtual-machines.6-exercise-resize-disks
 title: Exercise - Resize a VM disk
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Resize a VM disk
   description: Exercise - Resize a VM disk
   ms.date: 12/09/2024
@@ -33,4 +31,4 @@ content: |
 #        type: "Microsoft.Compute/virtualMachines/extensions"
 #        name: customScript
 #    hint: "Run the `az vm extension set` command as shown to run the script on your virtual machine."
-
+

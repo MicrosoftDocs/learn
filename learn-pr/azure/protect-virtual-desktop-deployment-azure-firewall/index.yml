@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.protect-virtual-desktop-deployment-azure-firewall
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: standard
   title: Protect your Azure Virtual Desktop deployment by using Azure Firewall
   description: Learn how to deploy and configure Azure Firewall to protect outbound network traffic for Azure Virtual Desktop.
@@ -45,4 +43,4 @@ units:
 - learn.protect-virtual-desktop-deployment-azure-firewall.summary
 badge:
   uid: learn.protect-virtual-desktop-deployment-azure-firewall.badge
-
+

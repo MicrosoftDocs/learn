@@ -2,8 +2,6 @@
 uid: learn.azure.intro-to-arc-for-servers.characteristics-azure-arc-enabled-servers
 title: What are the characteristics of Azure Arc-enabled servers?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What are the characteristics of Azure Arc-enabled servers?
   description: What are the characteristics of Azure Arc-enabled servers?
   ms.date: 11/13/2023
@@ -40,4 +38,4 @@ quiz:
     - content: "macOS 10.15."
       isCorrect: true
       explanation: "Correct. The Azure Connected Machine agent supports only Windows Server and major Linux distributions."
-
+

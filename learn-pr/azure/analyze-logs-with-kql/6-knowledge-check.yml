@@ -2,8 +2,6 @@
 uid: learn.analyze-logs-with-kql.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: "Knowledge check for the information presented in this module."
@@ -62,4 +60,4 @@ quiz:
     - content: "Add a column to the query results and populate the missing data manually."
       isCorrect: false
       explanation: "You cannot add data manually from the Log Analytics user interface."
-
+

@@ -2,8 +2,6 @@
 uid: learn.azure-well-architected-reliability.1-introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   ms.date: 12/18/2023
@@ -13,4 +11,3 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-

@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-routing-preference.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check what you learned about routing preference."
   ms.date: 04/08/2024
@@ -68,4 +66,4 @@ quiz:
       explanation: "The terms are reversed. The terms hot potato and cold potato routing refer to how network traffic travels to and from an application or service hosted in Azure.  Hot potato routing refers to traffic that routes across the public internet and enters the Microsoft network closest to the Azure region where the application or service is deployed. Cold potato routing refers to traffic that routes across the public internet, but enters the Microsoft network closest to the user accessing the application or service deployed."
     - content: "The two options are hot coffee routing for Internet option and cold coffee routing for the Microsoft network option."
       isCorrect: false
-      explanation: "The terms hot coffee and cold coffee aren't valid terms for the routing preference in Azure. The terms hot potato and cold potato routing refer to how network traffic travels to and from an application or service hosted in Azure.  Hot potato routing refers to traffic that routes across the public internet and enters the Microsoft network closest to the Azure region where the application or service is deployed. Cold potato routing refers to traffic that routes across the public internet, but enters the Microsoft network closest to the user accessing the application or service deployed."
+      explanation: "The terms hot coffee and cold coffee aren't valid terms for the routing preference in Azure. The terms hot potato and cold potato routing refer to how network traffic travels to and from an application or service hosted in Azure.  Hot potato routing refers to traffic that routes across the public internet and enters the Microsoft network closest to the Azure region where the application or service is deployed. Cold potato routing refers to traffic that routes across the public internet, but enters the Microsoft network closest to the user accessing the application or service deployed."

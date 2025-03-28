@@ -2,8 +2,6 @@
 uid: learn.monitor-java-azure.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check of what you've learned
   ms.date: 01/07/2024
@@ -51,4 +49,4 @@ quiz:
     - content: "SQL"
       isCorrect: false
       explanation: "Incorrect. SQL is a database query language and not supported in Query Analytics."
-
+

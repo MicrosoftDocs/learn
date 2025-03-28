@@ -2,8 +2,6 @@
 uid: learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.7-knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Answer the following questions to see what you've learned.
   ms.date: 09/13/2024
@@ -58,4 +56,4 @@ quiz:
     - content: While publishing the Web API app, you can integrate it with an Azure API Management instance.
       isCorrect: false
       explanation: You can create a new Azure App Service instance within Visual Studio while publishing the Web API app. You can also create a new Azure API Management instance within Visual Studio while publishing the Web API app.
-
+

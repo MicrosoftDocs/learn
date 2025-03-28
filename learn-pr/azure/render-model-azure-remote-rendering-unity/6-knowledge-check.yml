@@ -2,8 +2,6 @@
 uid: learn.azure.render-a-model-with-azure-remote-rendering-and-unity.6-knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge
   ms.date: 07/31/2023
@@ -53,4 +51,4 @@ quiz:
       - content: "Any number of devices can connect to a session at once."
         isCorrect: false
         explanation: "You can create, observe, and shut down as many sessions as you want, but only one device can connect to a session at a time."
-
+

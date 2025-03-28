@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.caching-and-performance-azure-storage-and-disks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Caching and performance in Azure storage disks
   description: Learn about Azure VM disk performance and how to enable caching to help optimize read and write access to storage.
   manager: akashdubey
@@ -43,4 +41,4 @@ units:
 - learn.caching-and-performance-azure-storage-and-disks.7-summary
 badge:
   uid: learn.caching-and-performance-azure-storage-and-disks.badge
-
+

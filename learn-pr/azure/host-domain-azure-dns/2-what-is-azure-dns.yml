@@ -2,8 +2,6 @@
 uid: learn.azure.host-domain-azure-dns.what-is-azure-dns
 title: What is Azure DNS?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is Azure DNS?
   description: What is Azure DNS?
   ms.date: 10/03/2024
@@ -49,4 +47,4 @@ quiz:
     - content: SOA
       isCorrect: false
       explanation: The SOA record is the start of authority for your domain. It's used by other DNS servers to resolve your domain.
-
+

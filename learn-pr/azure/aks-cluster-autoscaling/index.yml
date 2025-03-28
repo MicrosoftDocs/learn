@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.aks-cluster-autoscaling
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   type: standard
   title: Automatically scale your AKS clusters with the cluster autoscaler
   description: Learn how to configure automatic scaling for your AKS clusters using the cluster autoscaler.
@@ -44,4 +42,4 @@ units:
 - learn.aks-cluster-autoscaling.4-summary
 badge:
   uid: learn.aks-cluster-autoscaling.badge
-
+

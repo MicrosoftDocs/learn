@@ -2,8 +2,6 @@
 uid: learn.introduction-to-azure-files.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   ms.date: 03/20/2025
@@ -100,4 +98,4 @@ quiz:
     - content: "False"
       isCorrect: true
       explanation: "Correct: Storage account keys aren't recommended for organization wide access, only administrators should use them."
-
+

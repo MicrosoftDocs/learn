@@ -2,8 +2,6 @@
 uid: learn.azure.network-fundamentals.network-types-topologies
 title: Network types and topologies to use when you design a network
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Network types and topologies to use when you design a network
   description: Explore the different network types and topologies that are used to design networks.
   ms.date: 07/09/2024
@@ -14,4 +12,4 @@ durationInMinutes: 7
 content: |
   [!include[](includes/2-network-types-topologies.md)]
   
-
+

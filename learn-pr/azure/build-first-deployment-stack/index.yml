@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.build-first-deployment-stack
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Build your first deployment stack
   description: Learn how to build and deploy deployment stacks.
   ms.date: 08/01/2023
@@ -57,4 +55,4 @@ units:
 - learn.azure.build-first-deployment-stack.knowledge-check
 - learn.azure.build-first-deployment-stack.summary
 badge:
-  uid: learn.azure.build-first-deployment-stack.badge
+  uid: learn.azure.build-first-deployment-stack.badge

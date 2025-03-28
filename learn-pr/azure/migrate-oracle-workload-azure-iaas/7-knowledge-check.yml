@@ -2,8 +2,6 @@
 uid: learn.azure.migrate-oracle-workload-azure-iaas.knowledge-check
 title: Knowledge Check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge Check
   description: Test your knowledge.
   ms.date: 05/01/2024
@@ -49,4 +47,4 @@ quiz:
     - content: "Correctly size your VMs and ensure that your instance counts are correctly meeting demand, and that your number of vCores matches your Oracle licensing."
       isCorrect: true
       explanation: "Correct!"
-
+

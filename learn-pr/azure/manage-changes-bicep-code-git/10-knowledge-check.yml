@@ -2,8 +2,6 @@
 uid: learn.azure.manage-changes-bicep-code-git.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check
@@ -61,4 +59,4 @@ quiz:
     - content: "`git remote add upstream`"
       isCorrect: false
       explanation: Incorrect. Because you're making a copy of a repository that's already on GitHub, you should use the `git clone` command.
-
+
