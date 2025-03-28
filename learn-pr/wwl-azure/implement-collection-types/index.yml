@@ -18,11 +18,11 @@ summary: In this module you learn, to use C# tools for managing groups of object
 abstract: |
   - Apply C# Collections for Efficient Data Management
 
-  - Manage ordered collections using `List&lt;T&gt;` in C#
+  - Manage ordered collections using List&lt;T&gt; in C#
 
-  - Manage unique collections with `HashSet&lt;T&gt;`
+  - Manage unique collections with HashSet&lt;T&gt;
 
-  - Using `Dictionary&lt;TKey, TValue&gt;` for efficient key-value pair management in C#
+  - Using Dictionary&lt;TKey, TValue&gt; for efficient key-value pair management in C#
 prerequisites: |
   -   Visual Studio Code installed with the C# Dev Kit.
 
