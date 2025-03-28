@@ -4,13 +4,13 @@ metadata:
   ms.author: viniap
   author: Orin-Thomas
   ms.date: 03/15/2025
-  title: Introduction to Monitoring Azure Machine Learning
+  title: Introduction to Azure Machine Learning Monitoring
   description: Get an introduction to what you need to know about monitoring Azure Machine Learning deployments.
   ms.service: azure-machine-learning
   ms.topic: module
   moduleType: standard
   ms.collection: ce-advocates-ai-copilot
-title: Introduction to monitoring Azure Machine Learning
+title: Introduction to Azure Machine Learning monitoring
 summary: Learn how to monitor Azure Machine Learning deployments.
 abstract: |
   After you complete this module, you'll be able to:
