@@ -1,6 +1,6 @@
 The `HashSet<T>` class offers developers an efficient way to handle collections of unique elements, ensuring no duplicates are present. For instance, a `HashSet<T>` is useful in maintaining lists of unique email addresses, where verifying and adding items without repetition is crucial.
 
-## Manage unique collections with HashSet&#60;T&#62;`
+## Manage unique collections with HashSet&#60;T&#62;
 
 The `HashSet<T>` class is designed for high-performance set operations. It ensures that all elements in the collection are unique and unordered. Unlike other collections like `List<T>`, which allow duplicates, `HashSet<T>` automatically prevents duplicate entries.
 
@@ -89,7 +89,7 @@ A common use case for `HashSet<T>` is managing unique email addresses, ensuring 
 Here’s an example:
 
 ```csharp
-HashSet<string> emailAddresses = new HashSet&#60;string&#62;();
+HashSet<string> emailAddresses = new HashSet<string>();
 emailAddresses.Add("user1@example.com");
 emailAddresses.Add("user2@example.com");
 emailAddresses.Add("user1@example.com"); // Duplicate, won't be added

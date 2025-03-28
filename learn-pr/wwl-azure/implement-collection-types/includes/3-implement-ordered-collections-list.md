@@ -1,6 +1,6 @@
 Ordered collections in C#, such as the `List<T>` class, perform common operations like adding, removing, and iterating through items. An example where `List<T>` is managing a list of students or books.
 
-## Use List&#60;T&#62; for managing ordered collections
+## Use List<T> for managing ordered collections
 
 `List<T>` is a generic collection designed for scenarios where you need to store and manage an ordered sequence of elements of a specific type (`T`). It provides type safety, better performance, and flexibility compared to non-generic collections like `ArrayList`, eliminating the need for type casting when accessing elements.
 
@@ -16,19 +16,19 @@ Ordered collections in C#, such as the `List<T>` class, perform common operation
 > [!NOTE]
 > `List<T>` automatically expands its capacity when needed, but this expansion can affect performance. To optimize, set an initial capacity based on the estimated size of the collection.
 
-## Add, remove, and iterate through items in a List&#60;T&#62;
+## Add, remove, and iterate through items in a List<T>
 
-`List<T&#62;` provides methods for adding, removing, and iterating through items efficiently. These operations are straightforward and commonly used in application development.
+`List<T>` provides methods for adding, removing, and iterating through items efficiently. These operations are straightforward and commonly used in application development.
 
 - **Adding items:**  To append elements to the list, use the `Add` method.
 - **Removing items:** To delete elements, use methods like `Remove`, `RemoveAt`, or `Clear`.
 - **Iterating through items:** For enumeration, use a `foreach` loop or LINQ (Language Integrated Query).
 
 ```csharp
-// Example: Adding, removing, and iterating through a List<T&#62;
+// Example: Adding, removing, and iterating through a List<T>
 
 // Define the type T as string for this list
-List<string&#62; books = new List<string&#62;(); // T is string
+List<string> books = new List<string>(); // T is string
 books.Add("Book A"); // Add a string to the list
 books.Add("Book B");
 books.Add("Book C");
@@ -49,9 +49,9 @@ This example demonstrates how to add items to a `List<T>` while preserving exist
 > [!TIP]
 > LINQ queries can simplify filtering, ordering, and grouping operations on `List<T>`.
 
-## Manage a list of students or books by using List&#60;T&#62;
+## Manage a list of students or books by using List<T>
 
-`List<T&#62;` is ideal for managing collections of objects, such as students or books. You can define a custom class for the items and apply `List<T&#62;` to store and manipulate them.
+`List<T>` is ideal for managing collections of objects, such as students or books. You can define a custom class for the items and apply `List<T>` to store and manipulate them.
 
 ```csharp
 // Example: Managing a list of students
@@ -61,7 +61,7 @@ public class Student
     public int Age { get; set; }
 }
 
-List<Student&#62; students = new List<Student&#62;
+List<Student> students = new List<Student>
 {
     new Student { Name = "Haneul", Age = 20 },
     new Student { Name = "Magda", Age = 22 }
