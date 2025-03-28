@@ -9,14 +9,14 @@ metadata:
   ms.topic: module
   ms.service: microsoft-sentinel
 title: Automation in Microsoft Sentinel
-summary: By the end of this module, you'll be able to use automation rules in Microsoft Sentinel to automated incident management.
+summary: By the end of this module, you're able to use automation rules in Microsoft Sentinel to automated incident management.
 abstract: |
-  After completing this module, you'll be able to:
+  After completing this module, you're able to:
   *   Explain automation options in Microsoft Sentinel
   *   Create automation rules in Microsoft Sentinel
 prerequisites: |
   - Familiarity with Microsoft Sentinel and its components
-  - Familiarity with the Micorosft Defender portal
+  - Familiarity with the Microsoft Defender portal
 iconUrl: /training/achievements/automation-microsoft-sentinel.svg
 levels:
 - intermediate

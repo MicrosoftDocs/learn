@@ -1,4 +1,3 @@
-
 Automation takes a few different forms in Microsoft Sentinel. From automation rules that centrally manage the automation of incident handling and response, to playbooks that run predetermined sequences of actions to provide powerful and flexible advanced automation to your threat response tasks.
 
 ## Automation rules
