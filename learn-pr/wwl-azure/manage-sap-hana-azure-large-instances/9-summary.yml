@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-sap-hana-azure-large-instances.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 12/08/2021
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/9-summary.md)]
+  [!include[](includes/9-summary.md)]

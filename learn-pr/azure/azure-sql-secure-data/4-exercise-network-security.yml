@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-secure-data.4-exercise-network-security
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Secure your network
   description: Exercise - Secure your network
   ms.date: 11/13/2023
@@ -14,4 +12,4 @@ durationInMinutes: 10
 interactive: powershell
 azureSandbox: true
 content: |
-  [!include[](includes/4-exercise-network-security.md)]
+  [!include[](includes/4-exercise-network-security.md)]

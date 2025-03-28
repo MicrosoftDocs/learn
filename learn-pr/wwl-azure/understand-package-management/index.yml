@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.understand-package-management
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand package management
   description: Understand package management
   ms.date: 05/07/2024
@@ -59,4 +57,4 @@ units:
 - learn.wwl.understand-package-management.summary
 badge:
   uid: learn.wwl.understand-package-management.badge
-
+

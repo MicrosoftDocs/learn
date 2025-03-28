@@ -2,8 +2,6 @@
 uid: learn.azure-well-architected-cost-optimization.design-for-rate-optimization
 title: Design for rate optimization
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design for rate optimization
   description: Learn how to increase efficiency without redesigning, renegotiating, or sacrificing requirements.
   ms.date: 10/23/2023
@@ -59,4 +57,4 @@ quiz:
           explanation: "Incorrect.  This scenario may be a good idea for high availability, but it won’t save Contoso any money."
         - content: "Disable SQL backups."
           isCorrect: false
-          explanation: "Incorrect.  Disabling backups isn’t a good idea because it puts the databases at risk of data loss."
+          explanation: "Incorrect.  Disabling backups isn’t a good idea because it puts the databases at risk of data loss."

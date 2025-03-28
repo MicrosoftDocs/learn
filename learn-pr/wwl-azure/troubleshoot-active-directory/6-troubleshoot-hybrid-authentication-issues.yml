@@ -2,8 +2,6 @@
 uid: learn.wwl.troubleshoot-active-directory.troubleshoot-hybrid-authentication-issues
 title: Troubleshoot hybrid authentication issues
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Troubleshoot hybrid authentication issues
   description: "Troubleshoot hybrid authentication issues"
   ms.date: 01/10/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 12
 content: |
-  [!include[](includes/6-troubleshoot-hybrid-authentication-issues.md)]
+  [!include[](includes/6-troubleshoot-hybrid-authentication-issues.md)]

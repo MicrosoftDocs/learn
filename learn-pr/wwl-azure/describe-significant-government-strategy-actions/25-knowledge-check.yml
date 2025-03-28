@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-significant-government-strategy-actions.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 04/29/2022
@@ -93,4 +91,4 @@ quiz:
       explanation: "That's incorrect. The CISO (Chief Information Security Officer) isn't responsible for overseeing the execution of government contracts."
     - content: "SAORM"
       isCorrect: false
-      explanation: "That's incorrect. The SAORM (Senior Agency Official for Records Management) isn't responsible for overseeing the execution of government contracts."
+      explanation: "That's incorrect. The SAORM (Senior Agency Official for Records Management) isn't responsible for overseeing the execution of government contracts."

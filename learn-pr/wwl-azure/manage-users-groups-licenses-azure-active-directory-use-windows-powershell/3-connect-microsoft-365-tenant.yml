@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-users-groups-licenses-azure-active-directory-use-windows-powershell.connect-microsoft-365-tenant
 title: Connect to the Microsoft 365 tenant by using Windows PowerShell
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Connect to the Microsoft 365 tenant by using Windows PowerShell
   description: "Connect to the Microsoft 365 tenant by using Windows PowerShell"
   ms.date: 10/26/2022
@@ -16,4 +14,4 @@ labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/3-connect-microsoft-365-tenant.md)]
-
+

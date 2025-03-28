@@ -2,8 +2,6 @@
 uid: learn.wwl.measure-performance-azure-cosmos-db-sql-api.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 04/23/2024
@@ -16,4 +14,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/8-summary.md)]
+  [!include[](includes/8-summary.md)]

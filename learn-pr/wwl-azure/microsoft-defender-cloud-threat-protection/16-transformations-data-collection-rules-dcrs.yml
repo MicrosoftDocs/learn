@@ -2,8 +2,6 @@
 uid: learn.wwl.microsoft-defender-cloud-threat-protection.transformations-data-collection-rules-dcrs
 title: Transformations in data collection rules (DCRs)
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Transformations in data collection rules (DCRs)
   description: "Transformations in data collection rules (DCRs)"
   ms.date: 03/28/2025

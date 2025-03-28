@@ -2,8 +2,6 @@
 uid: learn.wwl.analyze-text-ai-language.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
@@ -39,4 +37,4 @@ quiz:
     - content: "Use the Azure AI Language service to extract linked entities."
       isCorrect: true
       explanation: "Correct. Linked entities enable you to disambiguate common entities of the same name."
-
+

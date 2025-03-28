@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-application-access-microsoft-entra-id.configure-authentication-azure-ad-application-proxy
 title: Recommend when to use and configure a Microsoft Entra Application Proxy, including authentication
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Recommend when to use and configure a Microsoft Entra Application Proxy, including authentication
   description: "Recommend when to use and configure a Microsoft Entra Application Proxy, including authentication"
   ms.date: 02/12/2025

@@ -2,8 +2,6 @@
 uid: learn.machinelearning.introduction-to-machine-learning.understand-training
 title: What are inputs and outputs?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What are inputs and outputs?
   description: Conceptual unit introducing what machine learning inputs and outputs are
   ms.date: 08/21/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/4-understand-training.md)]
-
+

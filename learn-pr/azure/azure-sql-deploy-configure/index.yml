@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure-sql-deploy-configure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deploy and configure servers, instances, and databases for Azure SQL
   description: In this module, learn how to Deploy and configure servers, instances, and databases for Azure SQL.
   ms.date: 11/11/2024
@@ -48,4 +46,4 @@ units:
 - learn.azure-sql-deploy-configure.9-summary
 badge:
   uid: learn.azure-sql-deploy-configure.badge
-
+

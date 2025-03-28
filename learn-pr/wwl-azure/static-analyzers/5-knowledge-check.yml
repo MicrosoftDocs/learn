@@ -2,8 +2,6 @@
 uid: learn.wwl.static-analyzers.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 06/30/2023
@@ -48,4 +46,4 @@ quiz:
       explanation: "Correct. SonarCloud is the cloud-based version of the original SonarQube and would be best for working with code in Azure Repos."
     - content: "Microsoft Defender for Cloud."
       isCorrect: false
-      explanation: "Incorrect. Microsoft Defender for Cloud is a tool for security posture management and threat protection."
+      explanation: "Incorrect. Microsoft Defender for Cloud is a tool for security posture management and threat protection."

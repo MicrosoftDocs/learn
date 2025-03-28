@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-a-hybrid-network-architecture.4-working-with-hybrid-networks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Work with hybrid networks on Azure
   description: Explore hybrid networking patterns in Azure, learn the features and limitations of individual services, and get an overview of the hub-spoke architecture.
   ms.date: 02/16/2024
@@ -59,4 +57,4 @@ quiz:
     - content: Faster network communications.
       isCorrect: false
       explanation: A hub-spoke architecture might help increase network speed, but it isn't guaranteed to remove network bottlenecks.
-
+

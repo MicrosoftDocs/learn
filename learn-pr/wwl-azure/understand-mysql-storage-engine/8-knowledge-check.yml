@@ -2,8 +2,6 @@
 uid: learn.wwl.understand-mysql-storage-engine.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 11/08/2022
@@ -72,4 +70,4 @@ quiz:
       explanation: "Correct. The primary purpose of the write-ahead log is to recover data in the event of a crash."
     - content: "To group changes together and write them to disk in one batch."
       isCorrect: false
-      explanation: "Incorrect. The write-ahead log improves performance by writing changes first to the log sequentially and only then writing changes to disk in batches, but this process isn't its primary purpose."
+      explanation: "Incorrect. The write-ahead log improves performance by writing changes first to the log sequentially and only then writing changes to disk in batches, but this process isn't its primary purpose."

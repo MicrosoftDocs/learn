@@ -2,8 +2,6 @@
 uid: learn.wwl.troubleshoot-active-directory.recover-objects-from-ad-recycle-bin
 title: Recover objects from the AD recycle bin
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Recover objects from the AD recycle bin
   description: "Recover objects from the AD recycle bin"
   ms.date: 01/10/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/2-recover-objects-from-active-directory-recycle-bin.md)]
+  [!include[](includes/2-recover-objects-from-active-directory-recycle-bin.md)]

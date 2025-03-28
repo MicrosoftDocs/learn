@@ -2,8 +2,6 @@
 uid: learn.wwl.select-sort-measure-objects-use-pipeline.select-set-of-objects-pipeline
 title: Select a set of objects in the pipeline
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Select a set of objects in the pipeline
   description: "Select a set of objects in the pipeline"
   ms.date: 05/30/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-select-set-of-objects-pipeline.md)]
+  [!include[](includes/4-select-set-of-objects-pipeline.md)]

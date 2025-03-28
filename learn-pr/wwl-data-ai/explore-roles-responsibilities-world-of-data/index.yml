@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-roles-responsibilities-world-of-data
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore data roles and services
   description: "This content is a part of Explore data roles and services."
   ms.date: 10/09/2024
@@ -42,4 +40,4 @@ units:
 - learn.wwl.explore-roles-responsibilities-world-of-data.knowledge-check
 - learn.wwl.explore-roles-responsibilities-world-of-data.summary
 badge:
-  uid: learn.wwl.explore-roles-responsibilities-world-of-data.badge
+  uid: learn.wwl.explore-roles-responsibilities-world-of-data.badge

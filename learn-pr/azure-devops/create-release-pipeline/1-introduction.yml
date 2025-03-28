@@ -2,8 +2,6 @@
 uid: learn.azdo.create-release-pipeline.1-introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   ms.custom: devdivchpfy22, engagement-fy23
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-
+

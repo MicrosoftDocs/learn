@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-azure-key-vault.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 03/12/2024
@@ -37,4 +35,4 @@ quiz:
       explanation: "Correct. Azure Key Vault enforces Transport Layer Security protocol to protect data when it’s traveling between Azure Key Vault and clients."
     - content: "Presentation Layer"
       isCorrect: false
-      explanation: "Incorrect. Presentation Layer is part of the Open Systems Interconnection model and is not a security protocol."
+      explanation: "Incorrect. Presentation Layer is part of the Open Systems Interconnection model and is not a security protocol."

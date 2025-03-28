@@ -2,8 +2,6 @@
 uid: learn.wwl.ci-cd-workflows-pipelines-azure-databricks.environments
 title: Manage and configure your environment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage and configure your environment
   description: "Manage and configure your environment"
   ms.date: 08/01/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/04-environments.md)]
+  [!include[](includes/04-environments.md)]

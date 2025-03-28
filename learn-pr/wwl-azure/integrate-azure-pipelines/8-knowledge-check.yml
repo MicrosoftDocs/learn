@@ -2,8 +2,6 @@
 uid: learn.wwl.integrate-azure-pipelines.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 05/26/2024
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. In some cases, you might need to run the agent interactively for production use - such as to run UI tests."
     - content: "To communicate with cloud environments from on-premises agents (self-hosted)."
       isCorrect: false
-      explanation: "Incorrect. In some cases, you might need to run the agent interactively for production use - such as to run UI tests."
+      explanation: "Incorrect. In some cases, you might need to run the agent interactively for production use - such as to run UI tests."

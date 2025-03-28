@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-monitoring-virtual-networks.connection-monitor
 title: Connection Monitor
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Connection Monitor
   description: "Connection Monitor"
   ms.date: 10/25/2023
@@ -14,4 +12,4 @@ metadata:
   - references_regions
 durationInMinutes: 8
 content: |
-  [!include[](includes/3-connection-monitor.md)]
+  [!include[](includes/3-connection-monitor.md)]

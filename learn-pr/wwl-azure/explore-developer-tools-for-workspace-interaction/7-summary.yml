@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-developer-tools-for-workspace-interaction.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 07/25/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/7-summary.md)]

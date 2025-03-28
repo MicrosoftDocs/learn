@@ -2,8 +2,6 @@
 uid: learn.oxford.void-detection-edge-devices-lva.exercise-deploy-solution
 title: Exercise - Deploy your solution
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Deploy your solution
   description: In this section, we help learner to deploy the solution.
   ms.date: 07/20/2024
@@ -26,4 +24,4 @@ quiz:
       explanation: "The Web module captures images and sends them to train using Custom Vision API"
     - content: "Data is collected from RTSP simulator, live video analytics module capture images, label objects and send tagged images to web module to detect them"
       isCorrect: false
-      explanation: "Web module captures images and labels objects using Custom Vision API"
+      explanation: "Web module captures images and labels objects using Custom Vision API"

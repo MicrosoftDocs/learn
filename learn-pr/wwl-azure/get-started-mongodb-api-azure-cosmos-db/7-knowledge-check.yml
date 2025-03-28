@@ -2,8 +2,6 @@
 uid: learn.wwl.get-started-mongodb-api-azure-cosmos-db.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 03/20/2024
@@ -48,4 +46,4 @@ quiz:
       explanation: "Incorrect. While autoscale will allow a limit on the RUs used to be set, and would scale up to that number, it still will at least charge for the minimum RUs regardless if the RUs are used or not."
     - content: "Serverless."
       isCorrect: true
-      explanation: "Correct. With Serverless, only operations performed are charged, and there isn't a payment for the database when it isn't used."
+      explanation: "Correct. With Serverless, only operations performed are charged, and there isn't a payment for the database when it isn't used."

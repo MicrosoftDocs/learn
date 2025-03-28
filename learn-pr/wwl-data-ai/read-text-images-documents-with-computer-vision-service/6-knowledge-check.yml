@@ -2,8 +2,6 @@
 uid: learn.wwl.read-text-images-documents-with-computer-vision-service.knowledge-check
 title: Knowledge Check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge Check
   description: Knowledge Check
   author: wwlpublish
@@ -52,4 +50,4 @@ quiz:
     - content: "Use the Document Intelligence API."
       isCorrect: true
       explanation: "Correct: The Document Intelligence API can be used to process PDF formatted files."
-
+

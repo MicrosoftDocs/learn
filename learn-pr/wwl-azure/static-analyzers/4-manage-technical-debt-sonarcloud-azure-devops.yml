@@ -2,8 +2,6 @@
 uid: learn.wwl.static-analyzers.manage-technical-debt-sonarcloud-azure-devops
 title: Manage technical debt with SonarCloud and Azure DevOps
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage technical debt with SonarCloud and Azure DevOps
   description: "Manage technical debt with SonarCloud and Azure DevOps"
   ms.date: 06/30/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 60
 content: |
-  [!include[](includes/4-manage-technical-debt-sonarcloud-azure-devops.md)]
+  [!include[](includes/4-manage-technical-debt-sonarcloud-azure-devops.md)]

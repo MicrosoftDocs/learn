@@ -2,8 +2,6 @@
 uid: learn.wwl.use-sql-warehouses-azure-databricks.get-started
 title: Get started with SQL Warehouses
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Get started with SQL Warehouses
   description: "Get started with SQL Warehouses"
   ms.date: 09/05/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/02-sql-warehouses.md)]
+  [!include[](includes/02-sql-warehouses.md)]

@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-azure-virtual-machine-licensing-pricing-support.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Check what you learn in this module."
   ms.date: 08/01/2024
@@ -39,4 +37,4 @@ quiz:
       explanation: "Correct. The Azure TCO calculator helps users estimate the cost savings over time of operating a solution on Azure instead of in an on-premises datacenter."
     - content: "Azure Cloud Economics"
       isCorrect: false
-      explanation: "Incorrect. The Azure website includes information about how to get the most value from an Azure investment, but this option isn't the tool for providing a specific estimate."
+      explanation: "Incorrect. The Azure website includes information about how to get the most value from an Azure investment, but this option isn't the tool for providing a specific estimate."

@@ -2,8 +2,6 @@
 uid: learn.manage-linux-with-arc.options-for-managing-multiple-systems
 title: Describe options around managing large numbers of Linux systems
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe options around managing large numbers of Linux systems
   description: Describe the options for managing large numbers of Linux systems with Azure Arc and Ansible.
   ms.date: 07/30/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/4-options-for-managing-multiple-systems.md)]
-
+

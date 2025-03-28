@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-virtual-networks.associate-private-ip-addresses
 title: Allocate or assign private IP addresses
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Allocate or assign private IP addresses
   description: "Allocate or assign private IP addresses"
   ms.date: 02/14/2025

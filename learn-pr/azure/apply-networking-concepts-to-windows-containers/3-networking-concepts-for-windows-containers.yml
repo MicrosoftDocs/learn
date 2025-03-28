@@ -2,8 +2,6 @@
 uid: learn.azure.apply-networking-concepts-to-windows-containers.networking-concepts-for-windows-containers
 title: Networking concepts for Windows containers
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Networking concepts for Windows containers
   description: The processor in a standard Windows computer has a kernel mode and a user mode. The core OS components and most device drivers run in kernel mode, and apps run in user mode.
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-networking-concepts-for-windows-containers.md)]
-
+

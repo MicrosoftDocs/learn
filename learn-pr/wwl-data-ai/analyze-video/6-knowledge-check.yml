@@ -2,8 +2,6 @@
 uid: learn.wwl.analyze-video.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
@@ -40,4 +38,4 @@ quiz:
     - content: "Embed the Azure Video Indexer widgets in a custom web site that has all the brand images stored for reference."
       isCorrect: false
       explanation: "That's incorrect. You can both detect known brands, and well as include new brands you want to detect by providing information about it."
-
+

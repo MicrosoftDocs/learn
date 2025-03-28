@@ -2,8 +2,6 @@
 uid: learn.wwl.protect-data-transit-at-rest.describe-sql-injection
 title: Describe SQL injection
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe SQL injection
   description: "Describe SQL injection"
   ms.date: 2/25/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/6-describe-sql-injection.md)]
+  [!include[](includes/6-describe-sql-injection.md)]

@@ -2,8 +2,6 @@
 uid: learn.azure.access-data-azure-blob-storage-multiple-protocols.6-knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: Knowledge_check
   title: Knowledge check
   description: This is a knowledge check unit.
@@ -49,4 +47,4 @@ quiz:
       explanation: "Correct. To grant access to a connecting client, the storage account must have an identity associated with that credential. That identity is called a local user."
 content: |
   [!include[](includes/6-knowledge-check.md)]
-
+

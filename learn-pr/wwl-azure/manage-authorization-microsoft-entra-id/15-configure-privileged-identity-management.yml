@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-authorization-microsoft-entra-id.configure-privileged-identity-management
 title: Configure Privileged Identity Management
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure Privileged Identity Management
   description: "Configure Privileged Identity Management"
   ms.date: 08/07/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 25
 content: |
-  [!include[](includes/15-configure-privileged-identity-management.md)]
+  [!include[](includes/15-configure-privileged-identity-management.md)]

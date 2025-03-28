@@ -2,8 +2,6 @@
 uid: learn.wwl.create-implement-application-allowlists-with-adaptive-application-control.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 04/18/2024
@@ -37,4 +35,4 @@ quiz:
       explanation: "That's incorrect. You can also protect the .script file type."
     - content: ".exe, .msi, and .script."
       isCorrect: true
-      explanation: "That's correct. You can protect all three file types."
+      explanation: "That's correct. You can protect all three file types."

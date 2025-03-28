@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-deploy-sap-hana-azure-large-instances.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 06/30/2022
@@ -72,4 +70,4 @@ quiz:
       explanation: "That's correct. The HANA Large Instance units aren't directly connected to the internet. You can't directly download the installation packages from SAP to the HANA Large Instance virtual machine. Instead, you download the packages to the jump box virtual machine."
     - content: "The bits will already be pre-installed when you receive the HANA Large Instance from Microsoft."
       isCorrect: false
-      explanation: "That’s incorrect. The HANA Large Instance units aren't directly connected to the internet. You can't directly download the installation packages from SAP to the HANA Large Instance virtual machine. Instead, you download the packages to the jump box virtual machine."
+      explanation: "That’s incorrect. The HANA Large Instance units aren't directly connected to the internet. You can't directly download the installation packages from SAP to the HANA Large Instance virtual machine. Instead, you download the packages to the jump box virtual machine."

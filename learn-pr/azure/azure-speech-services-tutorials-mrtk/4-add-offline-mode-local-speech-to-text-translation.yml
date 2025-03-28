@@ -2,8 +2,6 @@
 uid: learn.azure.azure-speech-services-tutorials-mrtk.4-add-offline-mode-local-speech-to-text-translation
 title: Execute commands using Azure speech recognition
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Execute commands using Azure speech recognition
   description: Introduction to Execute commands using Azure speech recognition
   author: marlenaklein-msft
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/4-add-offline-mode-local-speech-to-text-translation.md)]
-
+

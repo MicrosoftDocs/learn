@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.get-started-with-devops.5-summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summarize what you've learned, and discover resources to learn more.
   ms.date: 10/02/2024
@@ -14,4 +12,4 @@ title: Summary
 durationInMinutes: 1
 content: |
  [!include[](includes/5-summary.md)]
-
+

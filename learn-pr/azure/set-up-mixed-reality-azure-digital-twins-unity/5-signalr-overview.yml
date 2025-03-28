@@ -2,8 +2,6 @@
 uid: learn.azure.set-up-mixed-reality-azure-digital-twins-unity.signalr-overview
 title: SignalR overview
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: SignalR overview
   description: Overview of the Azure SignalR service for adding real-time web functionality to applications over HTTP.
   ms.date: 01/24/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/5-signalr-overview.md)]
+  [!include[](includes/5-signalr-overview.md)]

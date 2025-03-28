@@ -2,8 +2,6 @@
 uid: learn.wwl.microsoft-defender-cloud-threat-protection.data-collection-rules-azure-monitor
 title: Data collection rules (DCRs) in Azure Monitor
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Data collection rules (DCRs) in Azure Monitor
   description: "Data collection rules (DCRs) in Azure Monitor"
   ms.date: 03/28/2025

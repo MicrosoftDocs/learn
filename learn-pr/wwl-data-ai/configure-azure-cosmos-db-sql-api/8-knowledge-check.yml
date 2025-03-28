@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-azure-cosmos-db-sql-api.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 10/18/2022
@@ -36,4 +34,4 @@ quiz:
       explanation: "Incorrect. Serverless can better handle workloads that have wildly varying traffic and low average-to-peak traffic ratios."
     - content: "Standard"
       isCorrect: true
-      explanation: "Correct. Standard throughput is suited for workloads with steady traffic."
+      explanation: "Correct. Standard throughput is suited for workloads with steady traffic."

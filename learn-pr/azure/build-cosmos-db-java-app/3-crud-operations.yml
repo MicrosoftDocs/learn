@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.cosmos-db-java-app.3-crud-operations
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create, read, update, and delete NoSQL data programmatically
   description: Exercise - Create, read, update, and delete documents programmatically
   ms.date: 11/02/2020
@@ -17,4 +15,4 @@ title: Exercise - Create, read, update, and delete NoSQL data programmatically
 durationInMinutes: 10
 content: |
   [!include[](includes/3-crud-operations.md)]
-
+

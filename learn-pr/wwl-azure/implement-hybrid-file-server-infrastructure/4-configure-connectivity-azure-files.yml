@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-hybrid-file-server-infrastructure.configure-connectivity-azure-files
 title: Configure connectivity to Azure Files
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure connectivity to Azure Files
   description: "Configure connectivity to Azure Files"
   ms.date: 01/01/2025
@@ -13,4 +11,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-configure-connectivity-azure-files.md)]
+  [!include[](includes/4-configure-connectivity-azure-files.md)]

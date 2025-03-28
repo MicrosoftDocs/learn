@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.deploy-azure-vmware-solution
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Prepare for VMware resource migration by deploying Azure VMware Solution
   description: Prepare to migrate VMware resources to Azure by deploying an Azure VMware Solution resource. Then, connect your VMware environment to Azure VMware Solution.
   ms.date: 08/01/2024
@@ -43,4 +41,4 @@ units:
 - learn.deploy-azure-vmware-solution.configure-nsx-network-components
 - learn.deploy-azure-vmware-solution.knowledge-check
 - learn.deploy-azure-vmware-solution.summary
-
+

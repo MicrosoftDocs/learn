@@ -2,8 +2,6 @@
 uid: learn.wwl.set-up-microsoft-defender-cloud.azure-arc
 title: Azure Arc
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Azure Arc
   description: "Azure Arc"
   ms.date: 04/24/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/7-azure-arc.md)]
+  [!include[](includes/7-azure-arc.md)]
