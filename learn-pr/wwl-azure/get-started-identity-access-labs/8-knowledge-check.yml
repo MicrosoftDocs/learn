@@ -14,7 +14,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You are tasked with creating a new user in Microsoft Entra ID. What is the first step you should take?"
+  - content: "The goal is to create a new user in Microsoft Entra ID. What is the first step to take?"
     choices:
     - content: "Browse to Identity > Users > All users."
       isCorrect: false
@@ -33,12 +33,12 @@ quiz:
     - content: "Navigate to Billing > Licenses."
       isCorrect: false
       explanation: "Incorrect. This is the second step. The first step is to sign in to the Microsoft 365 admin center."
-    - content: "Select the license you want to assign."
+    - content: "Select the license to assign."
       isCorrect: false
       explanation: "Incorrect. This is the third step. The first step is to sign in to the Microsoft 365 admin center."
-  - content: "You are an administrator who needs to invite an external user to collaborate on a project. What is the first step you should take?"
+  - content: "A identity and access administrator needs to invite an external user to collaborate on a project. What is the first step to take?"
     choices:
-    - content: "Send an email invitation directly from your email client."
+    - content: "Send an email invitation directly from the admin's email client."
       isCorrect: false
       explanation: "Incorrect. Invitations should be sent through the Microsoft Entra admin center to ensure proper tracking and management."
     - content: "Sign in to the Microsoft Entra admin center as at least a User Administrator."
@@ -46,8 +46,8 @@ quiz:
       explanation: "Correct. The first step is to sign in to the Microsoft Entra admin center with the necessary permissions to invite external users."
     - content: "Create a new user account for the external user."
       isCorrect: false
-      explanation: "Incorrect. You do not need to create a new user account; instead, you invite the external user to use their existing account."
-  - content: "You need to assign a role to a user in Microsoft Entra. What is the first step you should take?"
+      explanation: "Incorrect. There is not a need to create a new user account; instead, invite the external user to use their existing account."
+  - content: "An identity and access admin needs to assign a role to a user in Microsoft Entra. What is the first step to take?"
     choices:
     - content: "Sign in to the Microsoft Entra admin center."
       isCorrect: true
@@ -57,4 +57,4 @@ quiz:
       explanation: "Incorrect. Role assignments in Microsoft Entra are managed through the Microsoft Entra admin center, not the Azure portal."
     - content: "Create a new user account."
       isCorrect: false
-      explanation: "Incorrect. Creating a new user account is not the first step in assigning a role. You need to sign in to the Microsoft Entra admin center first."
+      explanation: "Incorrect. Creating a new user account is not the first step in assigning a role. Sign in to the Microsoft Entra admin center first."
