@@ -2,8 +2,6 @@
 uid: learn.wwl.introduction-to-azure-virtual-networks.exercise-connect-two-using-global-virtual-network-peering
 title: 'Exercise: Connect two Azure virtual networks using global virtual network peering'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Connect two Azure virtual networks using global virtual network peering'
   description: "Exercise: Connect two Azure virtual networks using global virtual network peering"
   ms.date: 03/28/2025

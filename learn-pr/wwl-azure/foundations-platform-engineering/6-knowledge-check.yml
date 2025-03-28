@@ -2,8 +2,6 @@
 uid: learn.wwl.foundations-platform-engineering.knowledge-check
 title: Knowledge Check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge Check
   description: "Knowledge Check"
   ms.date: 01/09/2025
@@ -59,4 +57,4 @@ quiz:
           explanation: Incorrect. Deploying environments as a service aims to prevent developers from accessing sensitive credentials directly.
         - content: To decentralize the management of Infrastructure as Code (IaC) templates.
           isCorrect: false
-          explanation: Incorrect. This approach centralizes the management of IaC templates, not decentralize it.
+          explanation: Incorrect. This approach centralizes the management of IaC templates, not decentralize it.

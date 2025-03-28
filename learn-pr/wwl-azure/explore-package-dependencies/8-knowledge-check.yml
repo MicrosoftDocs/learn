@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-package-dependencies.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 05/07/2024
@@ -48,4 +46,4 @@ quiz:
       explanation: "Incorrect. Standardization allows a repeatable, predictable process and usage that can be automated as well."
     - content: "Standardization."
       isCorrect: true
-      explanation: "Correct. Standardization allows a repeatable, predictable process and usage that can be automated as well."
+      explanation: "Correct. Standardization allows a repeatable, predictable process and usage that can be automated as well."

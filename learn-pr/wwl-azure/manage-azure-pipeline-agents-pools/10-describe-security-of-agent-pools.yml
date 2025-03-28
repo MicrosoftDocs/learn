@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-azure-pipeline-agents-pools.describe-security-of-agent-pools
 title: Describe security of agent pools
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe security of agent pools
   description: "Describe security of agent pools"
   ms.date: 05/07/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/10-describe-security-of-agent-pools.md)]
+  [!include[](includes/10-describe-security-of-agent-pools.md)]

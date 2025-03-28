@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-azure-kubernetes-service-cluster
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure an Azure Kubernetes Service cluster
   description: Use Azure Policy to enforce policies and safeguards on your Kubernetes clusters at scale. Azure Policy Ensures that your cluster is secure, compliant, and consistent across your organization.
   ms.date: 03/08/2024
@@ -37,4 +35,4 @@ units:
 - learn.wwl.configure-azure-kubernetes-service-cluster.summary
 badge:
   uid: learn.wwl.configure-azure-kubernetes-service-cluster.badge
-
+

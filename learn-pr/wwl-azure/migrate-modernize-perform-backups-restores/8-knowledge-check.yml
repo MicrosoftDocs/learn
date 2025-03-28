@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-modernize-perform-backups-restores.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 01/09/2024
@@ -48,4 +46,4 @@ quiz:
       explanation: "Incorrect. The easiest way to avoid problems would be to shut down SAP HANA, but this approach isn't an option for a production system. Freezing the XFS file system (with xfs_freeze) ensures consistency of the snapshot."
     - content: "No, the user should also freeze the file system before creating the blob snapshots on Azure, and unfreeze it afterwards."
       isCorrect: true
-      explanation: "Correct. The easiest way to avoid problems would be to shut down SAP HANA, but this approach isn't an option for a production system. Freezing the XFS file system (with xfs_freeze) ensures consistency of the snapshot."
+      explanation: "Correct. The easiest way to avoid problems would be to shut down SAP HANA, but this approach isn't an option for a production system. Freezing the XFS file system (with xfs_freeze) ensures consistency of the snapshot."

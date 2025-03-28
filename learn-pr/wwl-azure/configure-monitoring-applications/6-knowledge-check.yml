@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-monitoring-applications.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 10/25/2023
@@ -48,4 +46,4 @@ quiz:
       explanation: "Incorrect. Ingestion sampling happens at the Application Insights service endpoint. It discards some of the telemetry that arrives from your app, at a sampling rate that you set. It doesn't reduce telemetry traffic sent from your app, but helps you keep within your monthly quota."
     - content: "Fixed-rate sampling"
       isCorrect: true
-      explanation: "Correct. Fixed-rate sampling reduces the volume of telemetry sent from both your ASP.NET or ASP.NET Core or Java server and from your users' browsers. You set the rate. The client and server synchronize their sampling."
+      explanation: "Correct. Fixed-rate sampling reduces the volume of telemetry sent from both your ASP.NET or ASP.NET Core or Java server and from your users' browsers. You set the rate. The client and server synchronize their sampling."

@@ -2,8 +2,6 @@
 uid: learn.wwl.query-data-kql-database-microsoft-fabric.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 12/06/2024
@@ -48,4 +46,4 @@ quiz:
       explanation: "Incorrect. A materialized view encapsulates summarized data from a table."
     - content: "Write a custom Python script and save it as a Spark job definition"
       isCorrect: false
-      explanation: "Incorrect. A Spark job definition doesn't create a parameterized KQL query."
+      explanation: "Incorrect. A Spark job definition doesn't create a parameterized KQL query."

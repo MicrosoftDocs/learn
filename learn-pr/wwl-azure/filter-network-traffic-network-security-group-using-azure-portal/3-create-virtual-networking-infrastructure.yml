@@ -2,8 +2,6 @@
 uid: learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.create-virtual-networking-infrastructure
 title: Azure Virtual Network
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Azure Virtual Network
   description: "Azure Virtual Network"
   ms.date: 06/12/2024
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-create-virtual-networking-infrastructure.md)]
-interactive: bash
+interactive: bash

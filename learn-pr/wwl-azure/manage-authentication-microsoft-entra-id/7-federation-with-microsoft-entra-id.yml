@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-authentication-microsoft-entra-id.federation-with-microsoft-entra-id
 title: Federation with Microsoft Entra ID
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Federation with Microsoft Entra ID
   description: "Federation with Microsoft Entra ID"
   ms.date: 12/20/2024

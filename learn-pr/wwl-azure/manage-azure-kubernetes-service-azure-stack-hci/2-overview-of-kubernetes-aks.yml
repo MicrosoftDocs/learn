@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.overview-of-kubernetes-aks
 title: Overview of Kubernetes and AKS
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Overview of Kubernetes and AKS
   description: "Overview of Kubernetes and AKS"
   ms.date: 06/09/2021
@@ -27,4 +25,4 @@ quiz:
       explanation: "Incorrect. Deployments allow you to implement high availability and redundancy of pods, but they do not provide isolation of containerized resources."
     - content: "Namespaces"
       isCorrect: true
-      explanation: "Correct. Kubernetes offers the ability to isolate pods, services, deployments, and many other cluster components into namespaces. Namespaces form logical boundaries, which allow you to restrict access to create, view, or use cluster resources."
+      explanation: "Correct. Kubernetes offers the ability to isolate pods, services, deployments, and many other cluster components into namespaces. Namespaces form logical boundaries, which allow you to restrict access to create, view, or use cluster resources."

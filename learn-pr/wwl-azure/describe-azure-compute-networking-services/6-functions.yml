@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-azure-compute-networking-services.functions
 title: Describe Azure functions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe Azure functions
   description: "Describe Azure functions"
   ms.date: 09/20/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/6-functions.md)]
+  [!include[](includes/6-functions.md)]
