@@ -6,8 +6,8 @@ metadata:
   prefetch-feature-rollout: true
   title: Describe Azure high availability and disaster recovery  features for Azure Virtual Machines
   description: "Describe Azure high availability and disaster recovery  features for Azure Virtual Machines"
-  ms.date: 06/21/2023
-  author: wwlpublish
+  ms.date: 03/27/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false

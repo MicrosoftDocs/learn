@@ -5,8 +5,8 @@ metadata:
   prefetch-feature-rollout: true
   title: Describe high availability and disaster recovery strategies
   description: Describe high availability and disaster recovery strategies
-  ms.date: 06/21/2023
-  author: wwlpublish
+  ms.date: 03/27/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module
   ms.service: azure
