@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-high-availability.9-availability-consistency
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Availability and consistency
   description: Availability and consistency
   ms.date: 11/29/2023
@@ -12,4 +10,4 @@ metadata:
 title: Availability and consistency
 durationInMinutes: 10
 content: |
-  [!include[](includes/9-availability-consistency.md)]
+  [!include[](includes/9-availability-consistency.md)]

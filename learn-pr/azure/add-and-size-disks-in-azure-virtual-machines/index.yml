@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.add-and-size-disks-in-azure-virtual-machines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Add and size disks in Azure virtual machines
   description: Learn about your virtual machine storage options and how to choose between standard and premium, managed and unmanaged disks for your Azure virtual machine.
   manager: akashdubey
@@ -44,4 +42,4 @@ units:
 - learn.add-and-size-disks-in-azure-virtual-machines.7-summary
 badge:
   uid: learn.add-and-size-disks-in-azure-virtual-machines.badge
-
+

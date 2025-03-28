@@ -2,8 +2,6 @@
 uid: learn.wwl.design-processes-to-automate-application-analytics.examine-monitoring-tools-technologies
 title: Examine monitoring tools and technologies
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Examine monitoring tools and technologies
   description: "Examine monitoring tools and technologies"
   ms.date: 05/06/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-examine-monitoring-tools-technologies.md)]
+  [!include[](includes/4-examine-monitoring-tools-technologies.md)]

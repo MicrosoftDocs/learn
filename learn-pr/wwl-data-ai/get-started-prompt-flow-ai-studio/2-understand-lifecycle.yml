@@ -2,8 +2,6 @@
 uid: learn.get-started-prompt-flow-ai-studio.understand-lifecycle
 title: Understand the development lifecycle of a large language model (LLM) app
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand the development lifecycle of a large language model (LLM) app
   description: Learn about the stages and steps you need to perform when creating an application that uses a large language model (LLM).
   author: madiepev
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/2-understand-lifecycle.md)]
-
+

@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-arc-for-servers.summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 11/13/2023
@@ -14,4 +12,4 @@ title: Summary
 durationInMinutes: 2
 content: |
   [!include[](includes/5-summary.md)]
-
+

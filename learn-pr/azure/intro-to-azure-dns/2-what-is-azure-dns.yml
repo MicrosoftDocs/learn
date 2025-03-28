@@ -2,8 +2,6 @@
 uid: learn.introduction-to-azure-dns.what-is-azure-dns
 title: What is Azure DNS?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is Azure DNS?
   description: What is Azure DNS?
   ms.date: 01/31/2024
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 5
 content:   |
   [!include[](includes/2-what-is-azure-dns.md)]
-
+

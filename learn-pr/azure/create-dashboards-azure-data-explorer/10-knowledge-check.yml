@@ -2,8 +2,6 @@
 uid: learn.create-dashboards-azure-data-explorer.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: "Knowledge check: create dashboards in Azure Data Explorer."
@@ -48,4 +46,4 @@ quiz:
     - content: "There's no need to generate a list of parameter values."
       isCorrect: false
       explanation: "False. Every parameter must have a list of values."
-  
+  

@@ -2,8 +2,6 @@
 uid: learn.azure.authenticate-azure-deployment-workflow-workload-identities.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check
@@ -66,4 +64,4 @@ quiz:
         **Scope:** Resource group
       isCorrect: false
       explanation: Incorrect. This role assignment is too permissive. You should avoid granting the Owner role unless it's required. In this example, it's not.
-
+

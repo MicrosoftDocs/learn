@@ -2,8 +2,6 @@
 uid: learn.wwl.classify-images.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: ivorb
@@ -39,4 +37,4 @@ quiz:
     - content: "Azure AI Services"
       isCorrect: true
       explanation: "That's correct. You can publish a trained Azure AI Custom Vision model to either an Azure AI Custom Vision (Prediction) resource or an Azure AI Services multi-service resource."
-
+

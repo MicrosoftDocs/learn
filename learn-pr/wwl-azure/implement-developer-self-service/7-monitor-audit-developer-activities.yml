@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-developer-self-service.monitor-audit-developer-activities
 title: Monitor and Audit Developer Activities
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Monitor and Audit Developer Activities
   description: "Monitor and Audit Developer Activities"
   ms.date: 01/14/2025
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/7-monitor-audit-developer-activities.md)]
+  [!include[](includes/7-monitor-audit-developer-activities.md)]

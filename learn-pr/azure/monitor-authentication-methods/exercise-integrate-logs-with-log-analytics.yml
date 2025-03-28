@@ -2,8 +2,6 @@
 uid: learn.monitor-authentication-methods.exercise-integrate-logs-with-log-analytics
 title: Exercise - Integrate logs with Log analytics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Integrate logs with Log analytics  
   description: Exercise - Integrate logs with Log analytics
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 25
 content: |
-  [!include[](includes/exercise-integrate-logs-with-log-analytics.md)]
+  [!include[](includes/exercise-integrate-logs-with-log-analytics.md)]

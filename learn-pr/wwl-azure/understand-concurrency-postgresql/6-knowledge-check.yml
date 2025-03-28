@@ -2,8 +2,6 @@
 uid: learn.wwl.understand-concurrency-postgresql.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 05/09/2024
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. SELECT statements take out ACCESS SHARE locks, they don't block other transactions with an ACCESS SHARE LOCK."
     - content: "ACCESS EXCLUSIVE."
       isCorrect: true
-      explanation: "Correct. SELECT statements take out ACCESS SHARE locks, which block transactions with an ACCESS EXCLUSIVE lock."
+      explanation: "Correct. SELECT statements take out ACCESS SHARE locks, which block transactions with an ACCESS EXCLUSIVE lock."

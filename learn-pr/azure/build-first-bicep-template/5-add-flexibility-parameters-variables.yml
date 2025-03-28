@@ -2,8 +2,6 @@
 uid: learn.azure.deploy-azure-resources-bicep.add-flexibility-parameters-variables
 title: Add flexibility by using parameters and variables
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Add flexibility by using parameters and variables
   description: Learn how to build reusable templates by using parameters to accept input, and variables to store and reuse values within the template.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/5-add-flexibility-parameters-variables.md)]
-
+

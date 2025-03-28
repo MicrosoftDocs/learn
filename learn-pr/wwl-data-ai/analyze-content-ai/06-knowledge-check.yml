@@ -2,8 +2,6 @@
 uid: learn.wwl.analyze-content-ai.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge.
   author: wwlpublish
@@ -48,4 +46,4 @@ quiz:
     - content: "A cluster."
       isCorrect: false
       explanation: "Incorrect. You do not need to create a cluster to use Content Understanding."
-
+

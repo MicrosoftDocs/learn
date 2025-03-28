@@ -2,8 +2,6 @@
 uid: learn.wwl.finetune-model-copilot-ai-studio.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check about fine-tuning a language model.
   author: madiepev
@@ -49,4 +47,4 @@ quiz:
     - content: "n_epochs"
       isCorrect: true
       explanation: "Correct. When you set the number of epochs, you set the number of full cycles to run through the dataset."
-
+

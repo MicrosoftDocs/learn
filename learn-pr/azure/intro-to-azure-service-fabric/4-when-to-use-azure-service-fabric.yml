@@ -3,8 +3,6 @@ uid: learn.intro-to-azure-service-fabric.when-to-use-azure-service-fabric
 title: When to use Azure Service Fabric
 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: When to use Azure Service Fabric
   description: Learn about when to use Azure Service Fabric.
   ms.date: 01/03/2024
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/4-when-to-use-azure-service-fabric.md)]
-
+

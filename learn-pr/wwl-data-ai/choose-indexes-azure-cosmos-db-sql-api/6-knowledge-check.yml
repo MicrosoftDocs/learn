@@ -2,8 +2,6 @@
 uid: learn.wwl.choose-indexes-azure-cosmos-db-sql-api.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 10/18/2022
@@ -36,4 +34,4 @@ quiz:
       explanation: "Incorrect. The ``excludedPaths`` property determines which paths are excluded from the index, not whether the indexer will run."
     - content: "``automatic``"
       isCorrect: false
-      explanation: "Incorrect. Disabling ``automatic`` indexing using a boolean value of ``false`` doesn't disable all indexing for the container."
+      explanation: "Incorrect. Disabling ``automatic`` indexing using a boolean value of ``false`` doesn't disable all indexing for the container."

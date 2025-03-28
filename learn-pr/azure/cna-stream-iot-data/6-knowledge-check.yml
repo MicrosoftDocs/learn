@@ -2,8 +2,6 @@
 uid: learn.azure.cna-stream-iot-data.6-knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Multiple-choice questions
   ms.date: 04/05/2024
@@ -49,4 +47,4 @@ quiz:
     - content: "Device template"
       isCorrect: true
       explanation: "Correct. IoT Central accepts any syntactically valid JSON-formatted telemetry and displays it as raw data. However, telemetry characteristics, including the metrics names, must match their definition in the device model that's included in the device template. This is required for the telemetry data to display in the default and custom dashboards."
-
+

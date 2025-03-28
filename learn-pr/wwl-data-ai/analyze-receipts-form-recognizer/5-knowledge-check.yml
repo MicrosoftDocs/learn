@@ -2,8 +2,6 @@
 uid: learn.wwl.analyze-receipts-form-recognizer.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 10/04/2024
@@ -48,4 +46,4 @@ quiz:
       explanation: "Incorrect. Document analysis does not create new documents, but rather extracts and interprets data from existing ones."
     - content: "It is used to extract text, layout, and key-value pairs from documents, providing locations of text on a page identified by bounding box coordinates."
       isCorrect: true
-      explanation: "Correct. Document analysis is about extracting and interpreting data from documents, including text, layout, and key-value pairs, and identifying their locations on the page."
+      explanation: "Correct. Document analysis is about extracting and interpreting data from documents, including text, layout, and key-value pairs, and identifying their locations on the page."

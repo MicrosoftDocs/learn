@@ -2,8 +2,6 @@
 uid: learn.wwl.run-azure-databricks-notebooks-azure-data-factory.use-parameters-notebook
 title: Use parameters in a notebook
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use parameters in a notebook
   description: "Use parameters in a notebook"
   ms.date: 08/29/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/05-notebook-parameters.md)]
+  [!include[](includes/05-notebook-parameters.md)]

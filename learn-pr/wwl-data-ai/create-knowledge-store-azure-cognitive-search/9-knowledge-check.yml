@@ -2,8 +2,6 @@
 uid: learn.wwl.create-knowledge-store-with-azure-cognitive-search.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: ivorb
@@ -60,4 +58,4 @@ quiz:
     - content: "Table"
       isCorrect: false
       explanation: "Incorrect. Table projections don't contain image data extracted from a document."
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-cassandra-workloads-cosmos-db.cassandra-cosmos-db-migration-benefits
 title: Cassandra to Cosmos DB migration benefits
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Cassandra to Cosmos DB migration benefits
   description: "Cassandra to Cosmos DB migration benefits"
   ms.date: 02/01/2021
@@ -13,4 +11,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-benefits.md)]
+  [!include[](includes/2-benefits.md)]

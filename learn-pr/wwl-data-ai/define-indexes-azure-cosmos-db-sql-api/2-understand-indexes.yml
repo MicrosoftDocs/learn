@@ -2,8 +2,6 @@
 uid: learn.wwl.define-indexes-azure-cosmos-db-sql-api.understand-indexes
 title: Understand indexes
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand indexes
   description: "Understand indexes"
   ms.date: 11/03/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-understand-indexes.md)]
+  [!include[](includes/2-understand-indexes.md)]

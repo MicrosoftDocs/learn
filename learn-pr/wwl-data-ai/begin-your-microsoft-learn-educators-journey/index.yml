@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.begin-your-microsoft-learn-educators-journey
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Begin your Microsoft Learn for Educators Journey
   description: "Joining Microsoft Learn for Educators is the start of a journey helping ensure educators feel confident in technical skills related to teaching Microsoft technical content and integrate Microsoft official content into curriculum or syllabus."
   ms.date: 07/19/2024
@@ -46,4 +44,4 @@ units:
 - learn.wwl.begin-your-microsoft-learn-educators-journey.knowledge-check
 - learn.wwl.begin-your-microsoft-learn-educators-journey.summary
 badge:
-  uid: learn.wwl.begin-your-microsoft-learn-educators-journey.badge
+  uid: learn.wwl.begin-your-microsoft-learn-educators-journey.badge

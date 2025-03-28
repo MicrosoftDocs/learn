@@ -2,8 +2,6 @@
 uid: learn.azure.move-data-with-azure-data-box.when-to-use-azure-data-box-family
 title: When to use Azure Data Box family
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: When to use Azure Data Box family
   description: In this unit, you compare Azure Data Box products to other tools.
   ms.date: 05/01/2023
@@ -50,4 +48,4 @@ quiz:
     - content: "Data Box Heavy"
       isCorrect: false
       explanation: "Data Box Heavy allows for up to 800 TB of data transfer, but it doesn't provide data preprocessing and machine learning."
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics.exercise-spark
 title: Exercise - Analyze data with Spark
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Analyze data with Spark
   description: "Exercise - Analyze data with Spark"
   ms.date: 05/25/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 45
 content: |
-  [!include[](includes/6-exercise-spark.md)]
+  [!include[](includes/6-exercise-spark.md)]

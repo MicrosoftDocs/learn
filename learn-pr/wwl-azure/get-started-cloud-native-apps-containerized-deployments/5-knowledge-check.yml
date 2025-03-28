@@ -2,8 +2,6 @@
 uid: learn.wwl.get-started-cloud-native-apps-containerized-deployments.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 02/26/2024
@@ -57,4 +55,4 @@ quiz:
       explanation: "Incorrect. A private DNS zone is used to resolve the IP addresses of resources within a virtual network."
     - content: "To store virtual machines."
       isCorrect: false
-      explanation: "Incorrect. A container registry is used to store and manage container images."
+      explanation: "Incorrect. A container registry is used to store and manage container images."

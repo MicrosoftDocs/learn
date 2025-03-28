@@ -2,8 +2,6 @@
 uid: learn.azure-well-architected-security.sustain-and-evolve-your-security-posture
 title: Sustain and evolve your security posture
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Sustain and evolve your security posture
   description: Learn how to optimize your security controls to sustain and evolve your security posture.
   ms.date: 12/04/2023
@@ -52,4 +50,3 @@ quiz:
     - content: 'The jobs were not being monitored for failed runs.'
       isCorrect: false
       explanation: "Incorrect. This possibility didn't present a security risk."
-

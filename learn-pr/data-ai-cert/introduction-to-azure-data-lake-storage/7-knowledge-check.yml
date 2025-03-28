@@ -2,8 +2,6 @@
 uid: learn.data-ai.introduction-to-azure-data-lake-storage.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 07/18/2023
@@ -37,4 +35,4 @@ quiz:
       explanation: "Incorrect. data encryption does not enable Azure Data Lake Storage Gen2 containers."
     - content: "Hierarchical namespace"
       isCorrect: true
-      explanation: "Correct. To enable Azure Data Lake Storage Gen2 containers, you must turn on the Hierarchical namespace option."
+      explanation: "Correct. To enable Azure Data Lake Storage Gen2 containers, you must turn on the Hierarchical namespace option."

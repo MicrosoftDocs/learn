@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.manage-secrets-with-azure-key-vault
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage secrets in your server apps with Azure Key Vault
   description: Learn how to create an Azure Key Vault to store secret values and how to enable secure access to the vault.
   ms.date: 12/12/2024
@@ -41,4 +39,4 @@ units:
 - learn.manage-secrets-with-azure-key-vault.7-summary
 badge:
   uid: learn.manage-secrets-with-azure-key-vault.badge
-
+

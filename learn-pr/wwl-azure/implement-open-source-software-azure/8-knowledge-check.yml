@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-open-source-software-azure.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 05/07/2024
@@ -50,4 +48,4 @@ quiz:
       explanation: "Correct. Bugs, security vulnerabilities, and licensing issues are often associated with the use of open-source libraries."
     - content: "Security Vulnerabilities."
       isCorrect: false
-      explanation: "Incorrect. Bugs, security vulnerabilities, and licensing issues are often associated with the use of open-source libraries."
+      explanation: "Incorrect. Bugs, security vulnerabilities, and licensing issues are often associated with the use of open-source libraries."

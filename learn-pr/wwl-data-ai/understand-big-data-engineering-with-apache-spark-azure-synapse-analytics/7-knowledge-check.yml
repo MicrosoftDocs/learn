@@ -2,8 +2,6 @@
 uid: learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 05/25/2023
@@ -48,4 +46,4 @@ quiz:
       explanation: "Incorrect. The %%pyspark magic instructs Spark to interpret the code in the cell as Python."
     - content: "%%sql"
       isCorrect: true
-      explanation: "Correct. The %%sql magic instructs Spark to interpret the code in the cell as SQL."
+      explanation: "Correct. The %%sql magic instructs Spark to interpret the code in the cell as SQL."

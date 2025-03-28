@@ -2,8 +2,6 @@
 uid: learn.wwl.automl-azure-databricks.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-
+

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.ai-agent-fundamentals
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Fundamentals of AI agents on Azure
   description: AI agents represent the next generation of intelligent applications. Learn how they can be developed and used on Microsoft Azure.
   author: wwlpublish
@@ -43,4 +41,4 @@ units:
 - learn.wwl.ai-agent-fundamentals.summary
 badge:
   uid: learn.wwl.ai-agent-fundamentals.badge
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-performance-based-design.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 04/28/2022
@@ -50,4 +48,4 @@ quiz:
       explanation: "That's incorrect. Clustered index is recommended for primary key column."
     - content: "Nonclustered index"
       isCorrect: false
-      explanation: "That's incorrect. Columnstore index is recommended for queries that run large aggregation workloads."
+      explanation: "That's incorrect. Columnstore index is recommended for queries that run large aggregation workloads."

@@ -2,8 +2,6 @@
 uid: learn.secure-data-at-rest.2-classify-data
 title: Classify your data and protect confidential information
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Classify your data and protect confidential information
   description: Classify your data and protect confidential information.
   ms.date: 05/02/2023
@@ -39,4 +37,4 @@ quiz:
       isCorrect: true
       explanation: This data is highly confidential. Exposure or loss of this data would cause serious problems.
 
-
+

@@ -2,8 +2,6 @@
 uid: learn.introduction-to-azure-compute-gallery.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: A summary of the Introduction to Azure Compute Gallery Training module.
   ms.date: 08/16/2023
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]
-
+

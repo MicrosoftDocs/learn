@@ -2,8 +2,6 @@
 uid: learn.wwl.identify-technical-debt.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 05/06/2024
@@ -50,4 +48,4 @@ quiz:
       explanation: "Correct. SonarCloud is the cloud-based version of the original SonarQube and would be best for working with code in Azure Repos."
     - content: "Azure Security Center."
       isCorrect: false
-      explanation: "Incorrect. SonarCloud is the cloud-based version of the original SonarQube and would be best for working with code in Azure Repos."
+      explanation: "Incorrect. SonarCloud is the cloud-based version of the original SonarQube and would be best for working with code in Azure Repos."

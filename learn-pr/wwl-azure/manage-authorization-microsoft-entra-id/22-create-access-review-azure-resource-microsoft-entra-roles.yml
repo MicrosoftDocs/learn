@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-authorization-microsoft-entra-id.create-access-review-azure-resource-microsoft-entra-roles
 title: Configure role management and access reviews by using Microsoft Entra ID Governance
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure role management and access reviews by using Microsoft Entra ID Governance
   description: "Configure role management and access reviews by using Microsoft Entra ID Governance"
   ms.date: 08/07/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/22-create-access-review-azure-resource-microsoft-entra-roles.md)]
+  [!include[](includes/22-create-access-review-azure-resource-microsoft-entra-roles.md)]

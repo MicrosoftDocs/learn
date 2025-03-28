@@ -2,8 +2,6 @@
 uid: learn.wwl.deploy-model-github-actions.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 07/10/2024
@@ -38,4 +36,4 @@ quiz:
       explanation: "Correct. When a model is logged with MLflow, the scoring script and environment are created by the Azure Machine Learning workspace during deployment."
     - content: "The scoring script and deployment configuration."
       isCorrect: false
-      explanation: "Incorrect. It's still necessary to configure the deployment of the model to the endpoint."
+      explanation: "Incorrect. It's still necessary to configure the deployment of the model to the endpoint."

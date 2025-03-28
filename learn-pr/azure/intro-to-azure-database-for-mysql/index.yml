@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-database-for-mysql 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: introduction        
   title: Introduction to Azure Database for MySQL
   description: Describe how Azure Database for MySQL supports mission-critical workloads with predictable performance and dynamic scalability. Determine whether you should implement Azure Database for MySQL to address your relational database needs.
@@ -43,4 +41,4 @@ units:
 - learn.intro-to-azure-database-for-mysql.6-summary
 badge:
   uid: learn.intro-to-azure-database-for-mysql.badge
-
+

@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.backup-restore-azure-sql.7-exercise-restore-database
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Recover data by restoring an Azure SQL database
   description: Learn how to recover from a mistaken database modification by restoring a backup.
   ms.date: 12/11/2023
@@ -15,4 +13,4 @@ durationInMinutes: 7
 azureSandbox: true
 interactive: powershell
 content: |
-  [!include[](includes/7-exercise-restore-database.md)]
+  [!include[](includes/7-exercise-restore-database.md)]

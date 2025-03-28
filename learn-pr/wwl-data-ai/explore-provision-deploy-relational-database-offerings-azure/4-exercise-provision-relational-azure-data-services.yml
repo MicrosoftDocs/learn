@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-provision-deploy-relational-database-offerings-azure.exercise-provision-relational-azure-data-services
 title: 'Exercise: Explore Azure relational database services'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Explore Azure relational database services'
   description: "Exercise: Explore Azure relational database services"
   ms.date: 10/09/2024
@@ -15,4 +13,4 @@ metadata:
   zone_pivot_groups: data-azure-database
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-exercise-provision-relational-azure-data-services.md)]
+  [!include[](includes/4-exercise-provision-relational-azure-data-services.md)]

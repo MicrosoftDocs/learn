@@ -2,8 +2,6 @@
 uid: learn.wwl.fundamentals-generative-ai.writing-prompts
 title: Considerations for prompts
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Considerations for prompts
   description: Understand how submitting clear, specific prompts produces better generative AI results. See examples of best practices for prompt engineering.
   author: sherzyang
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/6-writing-prompts.md)]
-
+

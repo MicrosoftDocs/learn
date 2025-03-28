@@ -2,8 +2,6 @@
 uid: learn.wwl.security-monitoring-automation-solutions.log-retention-plans-in-microsoft-sentinel
 title: Log retention plans in Microsoft Sentinel
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Log retention plans in Microsoft Sentinel
   description: "Log retention plans in Microsoft Sentinel"
   ms.date: 02/03/2025

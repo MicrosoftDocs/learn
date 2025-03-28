@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-bastion.5-knowledge-check  
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check
@@ -71,4 +69,4 @@ quiz:
     - content: "The VMs you want to connect to require a public IP."
       isCorrect: false
       explanation: "Incorrect. Your VMs have only private IPs."
-
+

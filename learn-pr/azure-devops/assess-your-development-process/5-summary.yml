@@ -2,8 +2,6 @@
 uid: learn.azdo.assess-your-development-process.5-summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Discover how to continue your DevOps journey.
   ms.date: 10/07/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/5-summary.md)]
-
+
