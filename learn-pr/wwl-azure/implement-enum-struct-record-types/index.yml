@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-enum-struct-record-types
 metadata:
-  title: Implement enum, struct, and record types
-  description: "&lt;module title&gt;"
+  title: Implement Enum, Struct, and Record Types
+  description: "Learn to create organized, maintainable code with enum, struct, and record types in C#."
   ms.date: 03/28/2025
   author: wwlpublish
   ms.author: eric
@@ -28,7 +28,7 @@ prerequisites: |
   -   Familiar with classes, abstract classes, interfaces and inheritance.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
-- beginner
+- Learn how to organize your code with enum, struct, and record types in C#.
 roles:
 - developer
 products:
@@ -36,8 +36,8 @@ products:
 - vs-code
 units:
 - learn.wwl.implement-enum-struct-record-types.introduction
-- learn.wwl.implement-enum-struct-record-types.use-enums-representing-named-constants-csharp
-- learn.wwl.implement-enum-struct-record-types.create-structs-encapsulating-data-csharp
+- learn.wwl.implement-enum-struct-record-types.use-enums-represent-named-constants-csharp
+- learn.wwl.implement-enum-struct-record-types.create-structs-encapsulate-data-csharp
 - learn.wwl.implement-enum-struct-record-types.apply-records-immutable-data-models-csharp
 - learn.wwl.implement-enum-struct-record-types.exercise-implement-enum-struct-record-types
 - learn.wwl.implement-enum-struct-record-types.knowledge-check

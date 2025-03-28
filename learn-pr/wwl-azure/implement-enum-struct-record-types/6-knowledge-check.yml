@@ -21,19 +21,19 @@ quiz:
       explanation: "Correct. Enums are used to represent a set of predefined values with meaningful names, improving code readability and maintainability."
     - content: "To store multiple values in a single variable."
       isCorrect: false
-      explanation: "Incorrect. Enums do not store multiple values; they represent a single value from a predefined set of constants."
+      explanation: "Incorrect. Enums don't store multiple values; they represent a single value from a predefined set of constants."
     - content: "To perform mathematical operations on integral types."
       isCorrect: false
-      explanation: "Incorrect. Enums are not designed for mathematical operations but for representing fixed sets of values."
+      explanation: "Incorrect. Enums aren't designed for mathematical operations but for representing fixed sets of values."
   - content: "What keyword is used to define a struct in C#?"
     choices:
-    - content: "struct"
+    - content: "Struct"
       isCorrect: true
       explanation: "Correct. The 'struct' keyword is used to define a struct in C#. It allows creating a value type that encapsulates related data."
-    - content: "class"
+    - content: "Class"
       isCorrect: false
       explanation: "Incorrect. The 'class' keyword is used to define reference types, not value types like structs."
-    - content: "interface"
+    - content: "Interface"
       isCorrect: false
       explanation: "Incorrect. The 'interface' keyword is used to define contracts for classes or structs, not the struct itself."
   - content: "What is the primary advantage of using records in C# for data modeling?"
@@ -46,4 +46,4 @@ quiz:
       explanation: "Incorrect. Records are designed for simple, immutable data models rather than complex behavior-focused operations."
     - content: "They provide value-based equality and immutability."
       isCorrect: true
-      explanation: "Correct. Records offer value-based equality and immutability, making them ideal for scenarios where data should not change after creation."
+      explanation: "Correct. Records offer value-based equality and immutability, making them ideal for scenarios where data shouldn't change after creation."
