@@ -32,7 +32,7 @@ quiz:
       explanation: "Correct. A debugger is a software tool uses an analytical approach to observe and control the execution flow of a program."
     - content: "A program that generates code automatically based on user input."
       isCorrect: false
-      explanation: "Incorrect. Debuggers are used isolate logic issues in an application. They are not used to generate code."
+      explanation: "Incorrect. Debuggers are used to isolate logic issues in an application. They are not used to generate code."
     - content: "A tool that helps developers write their code faster."
       isCorrect: false
       explanation: "Incorrect. Although code debuggers speed the debugging process and help to identify issues, they do not help with writing code."
@@ -51,7 +51,7 @@ quiz:
     choices:
     - content: "To ignore the errors that occur in a program."
       isCorrect: false
-      explanation: "Incorrect. Exceptions should be handled in code to correct error conditions if possible."
+      explanation: "Incorrect. Exceptions should be handled in code to correct an error conditions if possible."
     - content: "To generate other exceptions in a program."
       isCorrect: false
       explanation: "Incorrect. Exceptions can be thrown when an issue or error is detected, but the `catch` clause is not a tool for generating errors."

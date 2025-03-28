@@ -23,7 +23,7 @@ quiz:
       explanation: "Correct. A debugger is a software tool uses an analytical approach to observe and control the execution flow of a program."
     - content: "A program that generates code automatically based on user input."
       isCorrect: false
-      explanation: "Incorrect. Debuggers are used isolate logic issues in an application. Debuggers are not used to generate code."
+      explanation: "Incorrect. Debuggers are used to isolate logic issues in an application. Debuggers are not used to generate code."
     - content: "A tool that helps developers write their code faster."
       isCorrect: false
       explanation: "Incorrect. Although code debuggers speed the debugging process and help to identify issues, they do not help with writing code."

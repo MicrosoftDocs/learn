@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: "To ignore errors that occur in a program."
       isCorrect: false
-      explanation: "Incorrect. Exceptions should be handled in code to correct error conditions if possible."
+      explanation: "Incorrect. Exceptions should be handled in code to correct an error conditions if possible."
     - content: "To take corrective action when an error occurs in a program."
       isCorrect: true
       explanation: "Correct. The purpose of catching an exception is to take corrective action when an error occurs."
