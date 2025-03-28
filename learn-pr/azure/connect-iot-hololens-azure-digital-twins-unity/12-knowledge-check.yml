@@ -2,8 +2,6 @@
 uid: learn.azure.connect-iot-hololens-azure-digital-twins-unity.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   ms.date: 09/10/2024
@@ -57,4 +55,4 @@ quiz:
     - content: "Local device data storage"
       isCorrect: true
       explanation: "Azure SignalR is ideal for pushing real-time content updates to connected clients, not storing locally cached data on devices."
-  
+  

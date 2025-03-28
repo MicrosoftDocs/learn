@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-secure-data.5-exercise-configure-authentication
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Configure authentication
   description: Exercise - Configure authentication
   ms.date: 11/13/2023
@@ -13,4 +11,4 @@ title: Exercise - Configure authentication
 durationInMinutes: 10
 azureSandbox: true
 content: |
-  [!include[](includes/5-exercise-configure-authentication.md)]
+  [!include[](includes/5-exercise-configure-authentication.md)]

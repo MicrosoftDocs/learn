@@ -2,8 +2,6 @@
 uid: learn.connect-vm-with-azure-bastion.exercise-connect-to-vm-with-bastion
 title: Exercise - Connect to a virtual machine by using Azure Bastion
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Connect to a virtual machine by using Azure Bastion
   description: Exercise - Connect to a virtual machine by using Azure Bastion
   ms.date: 03/25/2025
@@ -14,4 +12,4 @@ durationInMinutes: 15
 azureSandbox: false
 content: |
   [!include[](includes/4-exercise-connect-vm-with-bastion.md)]
-
+

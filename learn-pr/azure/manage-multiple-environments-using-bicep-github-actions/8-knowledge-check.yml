@@ -2,8 +2,6 @@
 uid: learn.azure.manage-multiple-environments-using-bicep-github-actions.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge.
@@ -57,4 +55,4 @@ quiz:
     - content: Add the parameter to the *parameters.ENVIRONMENT_NAME.json* files.
       isCorrect: false
       explanation: Incorrect. Bicep parameter files are committed to your Git repository, so they're not a secure location for secret values like passwords.
-
+

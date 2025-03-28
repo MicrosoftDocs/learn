@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: standard
   title: Build your first Bicep deployment pipeline by using Azure Pipelines
   description: Build a basic deployment pipeline for Bicep infrastructure as code templates by using Azure DevOps and Azure Pipelines.
@@ -65,4 +63,4 @@ units:
 - learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.summary
 badge:
   uid: learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.badge
-
+

@@ -2,8 +2,6 @@
 uid: learn.azure.capture-application-logs-app-service.7-retrieve-application-log-files-from-an-application-using-azure-cli-and-kudu
 title: Exercise - Retrieve Application Log Files using Azure CLI and Kudu
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Retrieve Application Log Files using Azure CLI and Kudu
   description: Retrieve Application Log Files using Azure CLI and Kudu
   ms.date: 11/12/2024
@@ -17,4 +15,4 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/7-retrieve-application-log-files-from-an-application-using-azure-cli-and-kudu.md)]
-
+

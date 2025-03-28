@@ -2,8 +2,6 @@
 uid: learn.design-your-site-recovery-solution-in-azure.4-build-resilient-application-services
 title: Build resilient application services
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Build resilient application services
   description: Build resilient application services.
   ms.date: 04/15/2024
@@ -48,4 +46,4 @@ quiz:
       explanation: Correct. With Azure Backup and SQL Server backup, you can back up all of these resources and restore them. You can run your workloads again, as long as you have these resources backed up.
     - content: Load balancers, subnets, VPN gateway.
       isCorrect: false
-      explanation: Incorrect. Azure Backup doesn't back up these resources.
+      explanation: Incorrect. Azure Backup doesn't back up these resources.

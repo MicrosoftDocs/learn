@@ -2,8 +2,6 @@
 uid: learn.azure.publish-static-web-app-and-api-dotnet.11-knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Multiple-choice questions
   ms.date: 03/04/2025
@@ -77,4 +75,4 @@ quiz:
         - content: "In the GitHub Actions workflow file in your *.github/workflows* folder."
           isCorrect: true
           explanation: "Correct. You can configure the locations for your app code, app artifact, and API in the GitHub Actions workflow file. This file is located in your *.github/workflows* folder."
-
+

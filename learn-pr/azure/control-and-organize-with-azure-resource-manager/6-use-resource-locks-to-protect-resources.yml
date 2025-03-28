@@ -2,8 +2,6 @@
 uid: learn.control-and-organize-with-resource-manager.6-use-resource-locks-to-protect-resources
 title: Use resource locks to protect resources
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use resource locks to protect resources
   description: In this unit, we'll discuss how to use resource locks to protect resources.
   ms.date: 10/29/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/6-use-resource-locks-to-protect-resources.md)]
-
+

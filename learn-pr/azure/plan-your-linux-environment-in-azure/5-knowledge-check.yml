@@ -2,8 +2,6 @@
 uid: learn.plan-your-linux-environment-in-azure.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   ms.date: 01/14/2025
@@ -82,4 +80,4 @@ quiz:
     - content: "OS disk"
       isCorrect: false
       explanation: "You should use the OS disk to store the OS files."
-
+

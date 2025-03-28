@@ -2,8 +2,6 @@
 uid: learn.azure.intro-azure-vmware-solution.how-azure-vmware-solution-works
 title: How Azure VMware Solution works
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: How Azure VMware Solution works
   description: Learn how Azure VMware Solution is set up and how it works on Azure.
   ms.date: 10/23/2024
@@ -52,4 +50,4 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. The CloudAdmin role doesn't have access to, and can't configure, specific management components that Microsoft supports and manages."
   
-
+

@@ -2,8 +2,6 @@
 uid: learn.manage-linux-with-arc.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check.
   ms.date: 07/30/2024
@@ -62,4 +60,4 @@ quiz:
     - content: "Arc SSH and Microsoft Entra ID."
       isCorrect: false
       explanation: "Incorrect. Although Arc SSH and Microsoft Entra ID both work with Arc-enabled Linux machines, their primary purpose is security and connection related."
-
+

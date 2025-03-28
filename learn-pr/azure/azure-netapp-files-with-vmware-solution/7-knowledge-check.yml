@@ -2,8 +2,6 @@
 uid: learn.azure.azure-netapp-files-with-vmware-solution.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge of Azure NetApp Files.
@@ -56,4 +54,4 @@ quiz:
       explanation: "Azure NetApp Files is a shared file service and doesn't offer block protocol connectivity."
 
 
- 
+ 

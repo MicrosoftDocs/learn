@@ -2,8 +2,6 @@
 uid: learn.azure.test-bicep-code-using-github-actions.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Check what you learned.
@@ -52,4 +50,4 @@ quiz:
     - content: Linting ensures that your Bicep file meets a minimum code style quality level.
       isCorrect: true
       explanation: Correct. The linter doesn't verify that your file deploys successfully, but it checks that your Bicep file follows some basic code style rules.
-
+

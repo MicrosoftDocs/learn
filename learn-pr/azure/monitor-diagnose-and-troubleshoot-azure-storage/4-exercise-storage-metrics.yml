@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-diagnose-and-troubleshoot-azure-storage.4-exercise-storage-metrics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Enable storage metrics and view metric data
   description: In this exercise, we'll explore how to enable storage metrics and view metric data.
   ms.date: 12/21/2023
@@ -14,4 +12,4 @@ durationInMinutes: 10
 azureSandbox: true
 content: |
   [!include[](includes/4-exercise-storage-metrics.md)]
-
+

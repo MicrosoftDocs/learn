@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.azure-cyclecloud-high-performance-computing
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: standard
   title: Create, customize, and manage an HPC cluster in Azure with Azure CycleCloud
   description: Learn how to use Azure CycleCloud to create, customize, and manage high-performance computing (HPC) clusters in Azure.
@@ -44,4 +42,4 @@ units:
 - learn.azure.azure-cyclecloud-high-performance-computing.summary
 badge:
   uid: learn.azure.azure-cyclecloud-high-performance-computing.badge
-
+

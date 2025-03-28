@@ -2,8 +2,6 @@
 uid: learn.react-to-state-changes-using-event-grid.6-knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge.
   ms.date: 10/04/2024
@@ -35,4 +33,4 @@ quiz:
         - content: "Azure Logic Apps"
           isCorrect: true
           explanation: "Yes. Azure Event Grid supports Azure Logic Apps as an event handler. A few other examples of event handlers within Azure are Functions, Event Hubs, and Service Bus."
-
+

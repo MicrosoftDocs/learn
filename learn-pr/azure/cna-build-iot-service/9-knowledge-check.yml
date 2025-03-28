@@ -2,8 +2,6 @@
 uid: learn.azure.cna-build-iot-service.9-knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Multiple-choice questions
   ms.date: 02/22/2024
@@ -48,4 +46,4 @@ quiz:
       explanation: "Incorrect. Azure IoT Central offers continuous data export to Azure Event Hubs, Azure Service Bus, and custom webhooks."
     - content: "Azure Event Hubs"
       isCorrect: true
-      explanation: "Correct. Azure IoT Central offers continuous data export to Azure Event Hubs, Azure Service Bus, and custom webhooks."
+      explanation: "Correct. Azure IoT Central offers continuous data export to Azure Event Hubs, Azure Service Bus, and custom webhooks."

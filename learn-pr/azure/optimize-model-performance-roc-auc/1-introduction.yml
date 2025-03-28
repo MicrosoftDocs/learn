@@ -2,8 +2,6 @@
 uid: learn.machinelearning.optimize-model-performance-roc-auc-dropout.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction to the ROC AUC module.
   ms.date: 07/20/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 2
 content: |
-  [!include[](includes/1-introduction.md)] 
+  [!include[](includes/1-introduction.md)] 

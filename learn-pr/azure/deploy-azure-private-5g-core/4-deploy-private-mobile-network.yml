@@ -2,8 +2,6 @@
 uid: learn.deploy-azure-private-5g-core.deploy-private-mobile-network
 title: Deploy private mobile network using Azure portal
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deploy private mobile network using Azure portal
   description: Describes how you need to create a mobile network using Azure portal
   ms.date: 06/24/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-deploy-private-mobile-network.md)]
+  [!include[](includes/4-deploy-private-mobile-network.md)]

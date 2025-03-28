@@ -2,8 +2,6 @@
 uid: learn.azure.deploy-event-driven-real-time.5-exercise-cosmosdb
 title: Exercise - Process the events and store the data in Azure Cosmos DB
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Process the events and store the data in Azure Cosmos DB
   description: In this exercise, you'll create an Azure function to read the events from the event hub, and then store them processed in Azure Cosmos DB.
   ms.date: 03/05/2025
@@ -17,4 +15,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/5-exercise-cosmosdb.md)]
-
+

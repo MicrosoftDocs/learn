@@ -2,8 +2,6 @@
 uid: learn.create-serverless-logic-with-functions.6-summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 11/25/2024
@@ -51,4 +49,4 @@ quiz:
     - content: "x-csrf-token"
       isCorrect: false
       explanation: The API key can be included as a query string parameter named `code`, or as an HTTP header named `x-functions-key`.
-
+

@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-application-autoscaling-native.4-concepts-scaling-fine-tune
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand scaler configurations
   description: Understand scaler configurations
   ms.date: 01/05/2024
@@ -49,4 +47,4 @@ quiz:
         - content: "To fine-tune the deployment behavior when scaling."
           isCorrect: false
           explanation: "Deployments aren't fine-tuned in the HPA."
-
+

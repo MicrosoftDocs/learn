@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-routing-preference.when-to-use-routing-preference
 title: When to use routing preference
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: when-to-use-routing-preference
   description: "Learn about routing preference options and when to use them."
   ms.date: 04/08/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 2
 content: |
-  [!include[](includes/4-when-to-use-routing-preference.md)]
+  [!include[](includes/4-when-to-use-routing-preference.md)]
