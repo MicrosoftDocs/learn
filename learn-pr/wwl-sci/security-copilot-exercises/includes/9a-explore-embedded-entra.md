@@ -26,7 +26,6 @@ You're an identity admin with Woodgrove. You believe there are some users at the
 1. Let’s do some research on those Risky Users.
 1. Select the Copilot button from the top right of the screen.
 1. Take a moment to review the sample prompts that are provided in Copilot.
-
 1. Enter the prompt “Show me my most recent risky users” and select the arrow.
 1. Note, the user we were concerned about (Serena) is in the list.
 1. Look at the bottom of the Copilot response for a link to the Risky Users report.
