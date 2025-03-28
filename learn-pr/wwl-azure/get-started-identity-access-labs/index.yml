@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-identity-access-labs
 metadata:
-  title: Get started with identity and access labs
+  title: Get Started with Identity and Access Labs
   description: "Use interactive labs to explore the basics of identity and access using Microsoft Entra ID."
-  ms.date: 03/27/2025
+  ms.date: 03/28/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: module
@@ -15,18 +15,18 @@ summary: Explore the basic usage of Microsoft Entra ID using these interactive l
 abstract: |
   After completing this module, you'll be able to:
 
-  -   Perform basic user management
+  -   Perform basic user management.
 
-  -   Perform basic group management
+  -   Perform basic group management.
 
-  -   Configure basic password protection
+  -   Configure basic password protection.
 
-  -   Configure Self Service Password Reset (SSPR)
+  -   Configure Self-Service Password Reset (SSPR).
 
-  -   Enable basic multifactor authentication (MFA)
+  -   Enable basic multifactor authentication (MFA).
 
-  -   Create a basic conditional access policy
-prerequisites: '-   General usability experience with Azure or Microsoft Entra admin tools'
+  -   Create a basic conditional access policy.
+prerequisites: '-   General usability experience with Azure or Microsoft Entra admin tools.'
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner

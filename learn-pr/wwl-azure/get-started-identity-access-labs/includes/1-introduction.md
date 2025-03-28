@@ -10,12 +10,12 @@ Through these interactive labs, you'll learn how to perform these tasks step-by-
 
 Let's get started and explore the capabilities of Microsoft Entra together!
 
-## Learning Objectives
+## Learning objectives
 
 In this module, you'll:
  - Perform basic user management.
  - Perform basic group management.
  - Configure basic password protection.
- - Configure Self Service Password Reset (SSPR).
+ - Configure Self-Service Password Reset (SSPR).
  - Enable basic multifactor authentication (MFA).
  - Create a basic conditional access policy.
