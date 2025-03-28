@@ -2,8 +2,6 @@
 uid: learn.startup.ux-design.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: 'This content is part of the “Foundations of user experience and design thinking” module.'
   ms.date: 12/22/2023
@@ -55,4 +53,4 @@ quiz:
       explanation: "For this phase, you'll first need to have already identified your users, their habits and most importantly their biggest problem(s) or pain points. From there, you'll be able to take those insights and start to develop better, more data-informed ideas regarding what you could deliver as a solution."
     - content: "Prototype"
       isCorrect: false
-      explanation: "Note that this phase is best executed once you've gained insights about your users. The goal of this stage is to take the ideas from the ideation phase and start turning them into something tangible that you can put in front of actual users."
+      explanation: "Note that this phase is best executed once you've gained insights about your users. The goal of this stage is to take the ideas from the ideation phase and start turning them into something tangible that you can put in front of actual users."
