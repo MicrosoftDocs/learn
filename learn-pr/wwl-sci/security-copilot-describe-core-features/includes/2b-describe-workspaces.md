@@ -54,7 +54,7 @@ Decisions and configuration made in plugin settings and role permissions apply s
 
 Decisions and configurations within "owner settings" apply specifically to the workspace that is being configured, with one exception: Audit Logging enablement can only be changed by Security Admins and applies to all workspaces.
 
-:::image type="content" source="../media/workspace-audit-logging.png" lightbox="../media/workspace-audit-logging.png" alt="Image of owner settings page with logging audit data highlighted.":::
+:::image type="content" source="../media/workspace-audit-logging.png" lightbox="../media/workspace-audit-logging.png" alt-text="Image of owner settings page with logging audit data highlighted.":::
 
 ### Manage workspaces
 
