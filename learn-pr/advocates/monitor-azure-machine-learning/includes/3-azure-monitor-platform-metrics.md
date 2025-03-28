@@ -7,8 +7,11 @@ Azure Monitor organizes core monitoring data into metrics on resource types, als
 You can use that data to analyze the performance of your Azure Machine Learning environment. For example, if you want to check how many cores a workspace is consuming:
 
 1. In the Azure portal, open the Azure Machine Learning resource.
+
 1. On the left menu, expand **Monitoring** and select **Metrics**.
+
 1. On the chart, make sure that **Scope** is set to the Azure Machine Learning resource. Make sure that **Metric Namespace** is set to the namespace of the resource. (You might need to select **Add metric** if no options appear in the graph.)
+
 1. Under **Metric**, scroll down to **Quota** > **Total Cores**.
 
    ![Screenshot of the metrics dashboard in the Azure portal.](../media/metrics-dashboard.png)
