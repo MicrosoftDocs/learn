@@ -61,6 +61,9 @@ You can also choose to replace this reservation with a new reservation purchase.
 
 To purchase an Azure OpenAI Service provisioned reservation, choose an Azure region and quantity, and then add the Azure OpenAI SKU to your cart. Then choose the quantity of PTUs that you want to purchase.
 
+> [!NOTE]
+> Reservations for Global, Data Zone, and Regional deployments aren't interchangeable. You need to purchase a separate reservation for each deployment type.
+
 To buy a reservation, you must have the owner role or the reservation purchaser role on an Azure subscription that's of one of the following types:
 
 - Enterprise (MS-AZR-0017P or MS-AZR-0148P)
@@ -115,17 +118,18 @@ To buy an Azure OpenAI reservation, perform the following steps:
 
    - **Management group.** Applies the reservation discount to the matching resource in the list of subscriptions that are a part of both the management group and billing scope. The management group scope applies to all subscriptions throughout the entire management group hierarchy. To buy a reservation for a management group, you must have at least read permission on the management group and be a reservation owner or reservation purchaser on the billing subscription.
 
-5. Select a region to choose an Azure region that the reservation covers, and then select **Add to cart**.
+5. Select a region to choose an Azure region that the reservation covers.
+6. Select the products to cover your deployment type (Global, Data Zone, or Regional) and select **Add to cart**.
 
    :::image type="content" source="../media/5-select-product-you-want-to-purchase-small.png" alt-text="A screenshot of the Select the product you want to purchase dialog box." border="true" lightbox="../media/5-select-product-you-want-to-purchase.png":::
 
-6. In the cart, choose the quantity of PTUs that you want to purchase. For example, a quantity of 64 would cover up to 64 deployed PTUs every hour.
+7. In the cart, choose the quantity of PTUs that you want to purchase. For example, a quantity of 64 would cover up to 64 deployed PTUs every hour.
 
-7. Select **Next: Review + Buy** and review your purchase choices and their prices.
+8. Select **Next: Review + Buy** and review your purchase choices and their prices.
 
-8. Select **Buy now**.
+9. Select **Buy now**.
 
-9. After purchase, you can select **View this Reservation** to review your purchase status.
+10. After purchase, you can select **View this Reservation** to review your purchase status.
 
 ## How reservation discounts apply to Azure OpenAI
 
@@ -143,13 +147,10 @@ The Azure OpenAI reservation application is based on an hourly comparison betwee
 
 The following examples illustrate how the Azure OpenAI reservation discount applies, depending on the deployments.
 
-- **A reservation is the same size as the deployed units.** For example, you purchase 100 PTUs on a reservation and you deploy 100 PTUs. In this example, you only pay the reservation price.
-
-- **A reservation is larger than your deployed units.** For example, you purchase 300 PTUs on a reservation and you only deploy 100 PTUs. In this example, the reservation discount is applied to 100 PTUs. The remaining 200 PTUs in the reservation will go unused and won't carry forward to future billing periods.
-
-- **A reservation is smaller than the deployed units.** For example, you purchase 200 PTUs on a reservation and you deploy 600 PTUs. In this example, the reservation discount is applied to the 200 PTUs that were used. The remaining 400 PTUs are charged at the hourly rate.
-
-- **A reservation is the same size as the total of two deployments.** For example, you purchase 200 PTUs on a reservation and you have two deployments of 100 PTUs each. In this example, the discount is applied to the sum of deployed units.
+- **A regional reservation that's exactly the same size as the regional deployed units.** For example, you purchase 100 PTUs on a regional reservation and you deploy 100 regional PTUs. In this example, you only pay the reservation price.
+- **A global reservation that's larger than your global deployed units.** For example, you purchase 300 PTUs on a global reservation and you only deploy 100 global PTUs. In this example, the global reservation discount is applied to 100 global PTUs. The remaining 200 PTUs, in the global reservation will go unused, and won't carry forward to future billing periods.
+- **A data zone reservation that's smaller than the data zone deployed units.** For example, you purchase 200 PTUs on a data zone reservation and you deploy 600 data zone PTUs. In this example, the data zone reservation discount is applied to the 200 data zone PTUs that were used. The remaining 400 data zone PTUs are charged at the pay-as-you-go rate.
+- **A regional reservation that's the same size as the total of two regional deployments.** For example, you purchase 200 regional PTUs on a reservation and you have two deployments of 100 regional PTUs each. In this example, the discount is applied to the sum of deployed units.
 
 ## Summary
 
