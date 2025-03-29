@@ -2,8 +2,6 @@
 uid: learn.wwl.customize-indexes-azure-cosmos-db-sql-api.evaluate-composite-indexes
 title: Evaluate composite indexes
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Evaluate composite indexes
   description: "Evaluate composite indexes"
   ms.date: 10/17/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/3-evaluate-composite-indexes.md)]
+  [!include[](includes/3-evaluate-composite-indexes.md)]

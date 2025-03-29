@@ -2,8 +2,6 @@
 uid: learn.introduction-azure-web-application-firewall.6-summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary.
   ms.date: 02/14/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]
-
+

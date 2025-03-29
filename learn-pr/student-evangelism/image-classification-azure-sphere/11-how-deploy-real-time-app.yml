@@ -2,8 +2,6 @@
 uid: learn.oxford.image-classification-azure-sphere.how-deploy-real-time-app
 title: How to deploy a real-time image classification application to Azure Sphere
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: How to deploy a real-time image classification application to Azure Sphere
   description: In this section, we guide the learner in how to deploy a real-time application to an Azure Sphere device.
   ms.date: 07/20/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/11-how-deploy-real-time-app.md)]
-
+

@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-front-door.5-knowledge-check  
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check
@@ -71,4 +69,4 @@ quiz:
     - content: "Managed rule sets"
       isCorrect: false
       explanation: "Incorrect. Managed rule sets are collections of preconfigured rules and are processed after custom rules."
-
+

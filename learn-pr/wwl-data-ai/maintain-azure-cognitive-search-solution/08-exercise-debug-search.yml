@@ -2,8 +2,6 @@
 uid: learn.wwl.maintain-azure-cognitive-search-solution.exercise-debug-search
 title: Exercise - Debug search issues
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Debug search issues
   description: Exercise to debug search issues.
   author: ivorb
@@ -17,4 +15,4 @@ labModal: false
 durationInMinutes: 30
 content: |
   [!include[](includes/08-exercise-debug-search.md)]
-
+

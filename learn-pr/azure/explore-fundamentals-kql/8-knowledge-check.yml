@@ -2,8 +2,6 @@
 uid: learn.azure.explore-fundamentals-kql.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "A knowledge check about how Kusto Query Language (KQL) is used to query data in Microsoft services, including various Azure services, for monitoring and real-time analytics."
   ms.date: 11/01/2024
@@ -58,4 +56,4 @@ quiz:
     - content: "Azure Cosmos DB"
       isCorrect: true
       explanation: "Azure Cosmos DB is a globally distributed, multi-model database service that has a built-in query syntax."
-
+

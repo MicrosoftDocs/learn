@@ -2,8 +2,6 @@
 uid: learn.wwl.introduction-to-azure-cosmos-db-sql-api.what-is
 title: What is Azure Cosmos DB for NoSQL
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is Azure Cosmos DB for NoSQL
   description: "What is Azure Cosmos DB for NoSQL"
   ms.date: 10/23/2024
@@ -17,4 +15,4 @@ labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/2-what-azure-cosmos-db-sql-api.md)]
-
+

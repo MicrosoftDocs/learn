@@ -2,8 +2,6 @@
 uid: learn.wwl.design-container-build-strategy.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 05/25/2024
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. It's docker run. You execute the container. An instance is created of the image."
     - content: "Docker pull."
       isCorrect: false
-      explanation: "Incorrect. It's docker run. You execute the container. An instance is created of the image."
+      explanation: "Incorrect. It's docker run. You execute the container. An instance is created of the image."

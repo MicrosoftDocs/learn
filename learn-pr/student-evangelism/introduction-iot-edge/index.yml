@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.oxford.intro-to-iot-edge
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: "Introduction to Azure IoT Edge"
   description: "Learn how to explain the essential characteristics of the IoT Edge and the functionality of the IoT Edge components."
   ms.date: 07/30/2024
@@ -42,4 +40,4 @@ units:
 - learn.oxford.intro-to-iot-edge.when-to-use-iot-edge
 - learn.oxford.intro-to-iot-edge.knowledge-check
 - learn.oxford.intro-to-iot-edge.summary
-
+

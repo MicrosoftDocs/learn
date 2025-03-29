@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-developer-tools-for-workspace-interaction.exercise
 title: Exercise - Explore the developer tools
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Explore the developer tools
   description: "Exercise - Explore the developer tools"
   ms.date: 07/25/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 30
 content: |
-  [!include[](includes/5-exercise.md)]
+  [!include[](includes/5-exercise.md)]

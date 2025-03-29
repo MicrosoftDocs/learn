@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-azure-updates.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 09/24/2020
@@ -47,4 +45,4 @@ quiz:
       explanation: "That's correct. A dynamic query creates the group membership."
     - content: "Contoso staff must use the **Include/exclude updates** value to define which servers to include."
       isCorrect: false
-      explanation: "That's incorrect. This value is used to define which updates to include or exclude."
+      explanation: "That's incorrect. This value is used to define which updates to include or exclude."

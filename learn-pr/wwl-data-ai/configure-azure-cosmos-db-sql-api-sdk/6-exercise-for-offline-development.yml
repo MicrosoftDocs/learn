@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-azure-cosmos-db-sql-api-sdk.exercise-for-offline-development
 title: 'Exercise: Configure the Azure Cosmos DB for NoSQL SDK for offline development'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Configure the Azure Cosmos DB for NoSQL SDK for offline development'
   description: "Exercise: Configure the Azure Cosmos DB for NoSQL SDK for offline development"
   ms.date: 03/09/2025
@@ -13,4 +11,4 @@ metadata:
   zone_pivot_groups: dev-lang-csharp-node-python
 durationInMinutes: 15
 content: |
-  [!include[](includes/6-exercise-for-offline-development.md)]
+  [!include[](includes/6-exercise-for-offline-development.md)]

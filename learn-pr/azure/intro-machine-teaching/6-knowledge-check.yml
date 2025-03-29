@@ -2,8 +2,6 @@
 uid: learn.oxford.intro-machine-teaching.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: A knowledge check for the discover Microsoft guidelines for Automated Intelligence.
   ms.date: 10/17/2022
@@ -60,4 +58,4 @@ quiz:
     - content: "Scenarios (also known as regimes): driving on highway, street roads, crowded roads, turning right, turning left."
       isCorrect: false
       explanation: "Incorrect. Scenarios, also called regimes in manufacturing, are the different conditions in which the autonomous car will have to practice, to learn the skills, i.e. driving on highway, street roads, crowded roads, turning right, turning left."
-
+

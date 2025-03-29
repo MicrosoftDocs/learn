@@ -2,8 +2,6 @@
 uid: learn.hpc-storage-considerations.3-performance-considerations
 title: File-system performance considerations
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: File-system performance considerations
   description: A discussion of the five performance factors that affect storage and how to determine which tools to use to determine your HPC workload's performance requirements.
   ms.date: 04/04/2024
@@ -35,4 +33,4 @@ quiz:
     - content: "20 MBps"
       isCorrect: true
       explanation: "5,000 IOPS * 4K block size = 20 MBps"
-
+

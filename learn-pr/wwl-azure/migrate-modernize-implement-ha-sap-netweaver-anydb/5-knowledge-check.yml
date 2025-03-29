@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-modernize-implement-ha-sap-netweaver-anydb.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 01/09/2024
@@ -48,4 +46,4 @@ quiz:
       explanation: "Incorrect. The templates create the Azure internal load balancer with all ports for the ASCS/SCS instance and IP address, and all ports for the SQL Server DBMS and IP address."
     - content: "Both"
       isCorrect: true
-      explanation: "Correct. The templates create the Azure internal load balancer with all ports for the ASCS/SCS instance and IP address, and all ports for the SQL Server DBMS and IP address."
+      explanation: "Correct. The templates create the Azure internal load balancer with all ports for the ASCS/SCS instance and IP address, and all ports for the SQL Server DBMS and IP address."

@@ -2,8 +2,6 @@
 uid: learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api.exercise-create-container-using-azure-resource-manager-templates
 title: 'Exercise: Create an Azure Cosmos DB for NoSQL container using Azure Resource Manager templates'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Create an Azure Cosmos DB for NoSQL container using Azure Resource Manager templates'
   description: "Exercise: Create an Azure Cosmos DB for NoSQL container using Azure Resource Manager templates"
   ms.date: 10/28/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 15
 content: |
   [!include[](includes/7-exercise-create-container-using-azure-resource-manager-templates.md)]
-
+

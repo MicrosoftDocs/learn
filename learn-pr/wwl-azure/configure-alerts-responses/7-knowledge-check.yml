@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-alerts-responses.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 10/25/2023
@@ -48,4 +46,4 @@ quiz:
       explanation: "Incorrect. If you define multiple filters in a rule, all the rules apply. There's a logical AND between all filters."
     - content: "Three"
       isCorrect: true
-      explanation: "Correct. If you define multiple filters in a rule, all the rules apply. There's a logical AND between all filters."
+      explanation: "Correct. If you define multiple filters in a rule, all the rules apply. There's a logical AND between all filters."

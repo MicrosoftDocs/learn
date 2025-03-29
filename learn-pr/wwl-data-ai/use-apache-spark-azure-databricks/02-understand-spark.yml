@@ -2,8 +2,6 @@
 uid: learn.wwl.use-apache-spark-azure-databricks.get-to-know-spark
 title: Get to know Spark
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Get to know Spark
   description: "Get to know Spark"
   ms.date: 12/12/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/02-understand-spark.md)]
+  [!include[](includes/02-understand-spark.md)]

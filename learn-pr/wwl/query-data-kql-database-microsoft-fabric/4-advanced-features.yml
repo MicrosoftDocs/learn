@@ -2,8 +2,6 @@
 uid: learn.wwl.query-data-kql-database-microsoft-fabric.advanced-features
 title: Materialized views and stored functions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Materialized views and stored functions
   description: "Advanced features of KQL databases include materialized views and stored functions."
   ms.date: 12/06/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 12
 content: |
-  [!include[](includes/4-advanced-features.md)]
+  [!include[](includes/4-advanced-features.md)]

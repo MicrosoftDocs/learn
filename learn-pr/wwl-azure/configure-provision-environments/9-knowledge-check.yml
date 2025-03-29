@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-provision-environments.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 05/06/2024
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. The Service Principal is a type of service account that only has permissions in the specific subscription and resource group. This makes it a safe way to connect from the pipeline."
     - content: "Service Principal."
       isCorrect: true
-      explanation: "Correct. The Service Principal is a type of service account that only has permissions in the specific subscription and resource group. This makes it a safe way to connect from the pipeline."
+      explanation: "Correct. The Service Principal is a type of service account that only has permissions in the specific subscription and resource group. This makes it a safe way to connect from the pipeline."

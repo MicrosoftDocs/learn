@@ -2,8 +2,6 @@
 uid: learn.analyze-logs-with-kql.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: "Use KQL to answer operational and business questions by interpreting and summarizing log data."
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 2
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/1-introduction.md)]

@@ -2,8 +2,6 @@
 uid: learn.choose-the-right-disk-storage-for-vm-workload.4-select-disk-type-for-your-workload
 title: Select a disk type for your workload
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Select a disk type for your workload
   description: Select a disk type for your workload
   ms.date: 09/05/2023
@@ -37,4 +35,4 @@ quiz:
     - content: "Use Standard HDDs instead of Standard SSDs."
       isCorrect: false
       explanation: "Standard SSDs and standard HDDs don't guarantee an IOPS value."
-
+

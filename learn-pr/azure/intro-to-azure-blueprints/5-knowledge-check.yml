@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-blueprints.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Check what you learned about Azure Blueprints.
@@ -48,4 +46,4 @@ quiz:
     - content: "Assigning a blueprint to a management group."
       isCorrect: true
       explanation: "Correct: This is one of the Azure Blueprints capabilities."
-
+

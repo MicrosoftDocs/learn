@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-pipelines-concurrency.understand-parallel-jobs
 title: Understand parallel jobs
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand parallel jobs
   description: "Understand parallel jobs"
   ms.date: 05/23/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-understand-parallel-jobs.md)]
+  [!include[](includes/2-understand-parallel-jobs.md)]

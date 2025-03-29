@@ -2,8 +2,6 @@
 uid: learn.wwl.get-tips-tricks-teach-az-900-microsoft-azure-ai-fundamentals.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 01/16/2023
@@ -48,4 +46,4 @@ quiz:
       explanation: "Correct. By completing the labs before demonstration in front of students you'll be sure to know the UI, with authority, and be familiar with each step in the lab process."
     - content: "It isn't necessary to complete the labs since they aren't included in the certification."
       isCorrect: false
-      explanation: "Incorrect. While labs aren't included in the certification, they're an important part of student learning. As the instructor, you'll want to be familiar with each step in the lab process. By completing the labs before demonstration in front of students you'll ensure you can navigate the UI with ease."
+      explanation: "Incorrect. While labs aren't included in the certification, they're an important part of student learning. As the instructor, you'll want to be familiar with each step in the lab process. By completing the labs before demonstration in front of students you'll ensure you can navigate the UI with ease."

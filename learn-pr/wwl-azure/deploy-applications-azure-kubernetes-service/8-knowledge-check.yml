@@ -2,8 +2,6 @@
 uid: learn.wwl.deploy-applications-azure-kubernetes-service.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 03/04/2024
@@ -59,4 +57,4 @@ quiz:
       explanation: "Incorrect. Azure NetApp Files is one of the options for file level access to data, but it isn't the only option."
     - content: "Choose from platform managed databases, disks, and file and blob storage."
       isCorrect: true
-      explanation: "Correct. AKS supports both stateless and stateful workloads. To accommodate this requirement, you can apply a range of native Azure services, including managed databases, disks, and file and blob storage. Each of these options offers different SKUs, sizes, and performance characteristics."
+      explanation: "Correct. AKS supports both stateless and stateful workloads. To accommodate this requirement, you can apply a range of native Azure services, including managed databases, disks, and file and blob storage. Each of these options offers different SKUs, sizes, and performance characteristics."

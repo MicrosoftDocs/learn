@@ -2,8 +2,6 @@
 uid: learn.oxford.connect-iot-devices-cognitive-services-azure-func.knowledge-check-3
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: In this section, we create interactive questions that validate if the learner has understood the learning objectives
   ms.date: 07/10/2024
@@ -36,4 +34,4 @@ quiz:
       explanation: "A function app isn't a containerized application."
     - content: "A function app is a collection of one or more functions that are managed together."
       isCorrect: true
-      explanation: "A function app can handle multiple functions."
+      explanation: "A function app can handle multiple functions."

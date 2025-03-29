@@ -2,8 +2,6 @@
 uid: learn.introduction-to-azure-dedicated-hosts.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge of Azure dedicated hosts.
@@ -48,4 +46,4 @@ quiz:
     - content: "A dedicated host is a single VM"
       isCorrect: false
       explanation: "Incorrect. While a single size can encompass an entire host's resources, you can run as many smaller sizes as you can fit within the host's resources."
-
+

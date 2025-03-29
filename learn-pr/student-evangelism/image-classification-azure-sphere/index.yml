@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.oxford.image-classification-azure-sphere
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: "Image classification using Azure Sphere"
   description: "Learn how to implement image classification on a microcontroller device. Also, learn how Azure Sphere components work."
   ms.date: 07/20/2024
@@ -60,4 +58,4 @@ units:
 - learn.oxford.image-classification-azure-sphere.exercise-deploy-real-time-app
 - learn.oxford.image-classification-azure-sphere.knowledge-check
 - learn.oxford.image-classification-azure-sphere.summary
-
+

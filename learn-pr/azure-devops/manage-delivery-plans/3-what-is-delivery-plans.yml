@@ -2,8 +2,6 @@
 uid: learn.azdo.manage-delivery-plans.3-what-is-delivery-plans
 title: What is Delivery Plans?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is Delivery Plans?
   description: Discover how Delivery Plans can help you coordinate team sprints for optimal project delivery.
   ms.date: 10/18/2024
@@ -50,4 +48,4 @@ quiz:
     - content: "Creating a delivery plan can be valuable at any point in a project."
       isCorrect: true
       explanation: "Given how useful delivery plans are in planning and analyzing work schedules across multiple teams, there really is no bad time to start using them."
-
+

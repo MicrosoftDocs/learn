@@ -2,8 +2,6 @@
 uid: learn.store-app-data-with-azure-blob-storage.8-cleanup-next-steps-knowledge-check
 title: Summary, clean up and knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Clean up and knowledge check
   description: Clean up and knowledge check
   ms.date: 10/29/2024
@@ -57,4 +55,4 @@ quiz:
     - content: "The contents of the named blob are downloaded."
       isCorrect: false
       explanation: "Getting a blob reference does not make any calls to Azure Storage, it simply creates an object locally that can work with a stored blob."
-
+

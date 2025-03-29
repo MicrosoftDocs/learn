@@ -2,8 +2,6 @@
 uid: learn.azure.azure-netapp-files-performance.large-volumes 
 title: Performance considerations for large volumes
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-module
   title: Performance considerations for large volumes
   description: Learn about the different performance abilities of large volumes (volumes between 50 TiB and 1 PiB).
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-large-volumes.md)]
+  [!include[](includes/2-large-volumes.md)]

@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-security.security-posture-management-threat-protection
 title: Security posture management and threat protection
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Security posture management and threat protection
   description: "Security posture management and threat protection"
   ms.date: 08/07/2024
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/7-security-posture-management-threat-protection.md)]
-interactive: bash
+interactive: bash

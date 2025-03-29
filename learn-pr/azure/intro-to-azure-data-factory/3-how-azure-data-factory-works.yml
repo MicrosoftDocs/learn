@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-data-factory.3-how-azure-data-factory-works  
 title: How Azure Data Factory works  
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content  
   title: How Azure Data Factory works
   description: How Azure Data Factory works
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/3-how-azure-data-factory-works.md)]
-
+

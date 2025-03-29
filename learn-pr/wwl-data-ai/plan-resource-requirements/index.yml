@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.plan-resource-requirements
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Plan Resource Requirements
   description: "Familiarize yourself with the various configuration options for a new Azure Cosmos DB for NoSQL account."
   ms.date: 03/20/2024
@@ -38,4 +36,4 @@ units:
 - learn.wwl.plan-resource-requirements.knowledge-check
 - learn.wwl.plan-resource-requirements.summary
 badge:
-  uid: learn.wwl.plan-resource-requirements.badge
+  uid: learn.wwl.plan-resource-requirements.badge

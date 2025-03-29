@@ -2,8 +2,6 @@
 uid: learn.azure.deploy-configure-azure-developer-cli-templates.deploy-first-template
 title: Deploy your first template
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Select and deploy your first template
   description: Select and deploy your first Azure Developer CLI template
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/3-deploy-first-template.md)]
-
+

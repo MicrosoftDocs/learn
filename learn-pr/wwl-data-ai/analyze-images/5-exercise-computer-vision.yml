@@ -2,8 +2,6 @@
 uid: learn.wwl.analyze-images.exercise-computer-vision
 title: Exercise - Analyze images with Azure AI Vision
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Analyze images with Azure AI Vision
   description: Exercise - Analyze images with Azure AI Vision
   author: wwlpublish
@@ -18,4 +16,4 @@ labModal: true
 durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise-computer-vision.md)]
-
+

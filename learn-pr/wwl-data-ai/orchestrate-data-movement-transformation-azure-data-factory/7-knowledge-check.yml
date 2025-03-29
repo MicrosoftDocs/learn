@@ -2,8 +2,6 @@
 uid: learn.wwl.orchestrate-data-movement-transformation-azure-data-factory.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 04/19/2022
@@ -37,4 +35,4 @@ quiz:
       explanation: "Incorrect. The until activity functionality is similar to a do-until loop used in programming. What it does is running a set of activities (do) in a loop until the condition (until) is met. Therefore it is not an example of a branching activity."
     - content: "Lookup-condition"
       isCorrect: false
-      explanation: "Incorrect. The Lookup activity, will read or look up a record or table name value from any external source. This output can further be referenced by succeeding activities. However, it is not an example of a branching activity."
+      explanation: "Incorrect. The Lookup activity, will read or look up a record or table name value from any external source. This output can further be referenced by succeeding activities. However, it is not an example of a branching activity."

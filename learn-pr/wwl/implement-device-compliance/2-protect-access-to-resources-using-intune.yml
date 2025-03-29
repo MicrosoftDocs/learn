@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-device-compliance.protect-access-to-resources-using-intune
 title: Protect access to resources using Intune
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Protect access to resources using Intune
   description: "Protect access to resources using Intune"
   ms.date: 10/09/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-protect-access-to-resources-using-intune.md)]
+  [!include[](includes/2-protect-access-to-resources-using-intune.md)]

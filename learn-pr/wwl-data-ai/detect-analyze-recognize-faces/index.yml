@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.detect-analyze-recognize-faces
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Detect, analyze, and recognize faces
   description: Detect, analyze, and recognize faces
   author: wwlpublish
@@ -61,4 +59,4 @@ units:
 - learn.wwl.detect-analyze-recognize-faces.summary
 badge:
   uid: learn.wwl.detect-analyze-recognize-faces.badge
-
+

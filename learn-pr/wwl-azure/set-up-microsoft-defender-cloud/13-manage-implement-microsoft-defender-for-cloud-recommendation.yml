@@ -2,8 +2,6 @@
 uid: learn.wwl.set-up-microsoft-defender-cloud.manage-implement-microsoft-defender-for-cloud-recommendation
 title: Manage and implement Microsoft Defender for Cloud recommendations
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage and implement Microsoft Defender for Cloud recommendations
   description: "Manage and implement Microsoft Defender for Cloud recommendations"
   ms.date: 04/24/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/13-manage-implement-microsoft-defender-for-cloud-recommendation.md)]
+  [!include[](includes/13-manage-implement-microsoft-defender-for-cloud-recommendation.md)]

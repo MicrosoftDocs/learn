@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-remote-rendering.5-knowledge-check  
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check
@@ -67,4 +65,4 @@ quiz:
       explanation: "Incorrect. Azure Remote Rendering provides additional, high-end GPUs to handle the processing required to render complex models without reducing visual fidelity."
     - content: "A user can change the server size after launching a lease request if they require additional resources for rendering."
       isCorrect: false
-      explanation: "Incorrect. You cannot change sizing after you launch an Azure Remote Rendering lease request."
+      explanation: "Incorrect. You cannot change sizing after you launch an Azure Remote Rendering lease request."

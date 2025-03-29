@@ -2,8 +2,6 @@
 uid: learn.azure.bicep-conditions-loops.use-loops-deploy-resources
 title: Deploy multiple resources by using loops
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Deploy multiple resources by using loops
   description: Learn how to use loops to deploy multiple instances of resources.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/4-use-loops-deploy-resources.md)]
-
+

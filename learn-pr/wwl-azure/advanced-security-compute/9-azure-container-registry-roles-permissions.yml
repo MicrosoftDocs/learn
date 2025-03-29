@@ -2,8 +2,6 @@
 uid: learn.wwl.advanced-security-compute.azure-container-registry-roles-permissions
 title: Manage access to Azure Container Registry (ACR)
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage access to Azure Container Registry (ACR)
   description: "Manage access to Azure Container Registry (ACR)"
   ms.date: 06/10/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/9-azure-container-registry-roles-permissions.md)]
+  [!include[](includes/9-azure-container-registry-roles-permissions.md)]

@@ -2,8 +2,6 @@
 uid: learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed.exercise-archive-data-using-azure-functions
 title: 'Exercise: Process Azure Cosmos DB for NoSQL data using Azure Functions'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Process Azure Cosmos DB for NoSQL data using Azure Functions'
   description: "Exercise: Process Azure Cosmos DB for NoSQL data using Azure Functions"
   ms.date: 10/28/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-exercise-archive-data-using-azure-functions.md)]
+  [!include[](includes/5-exercise-archive-data-using-azure-functions.md)]

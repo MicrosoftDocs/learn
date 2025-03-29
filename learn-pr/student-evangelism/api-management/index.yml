@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.api-management
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage your generative AI APIs with Azure API Management
   description: Learn how to manage generative AI APIs with Azure API Management.
   ms.date: 06/30/2024
@@ -38,4 +36,4 @@ units:
   - learn.api-management.summary
 badge:
   uid: learn.api-management.badge
-
+

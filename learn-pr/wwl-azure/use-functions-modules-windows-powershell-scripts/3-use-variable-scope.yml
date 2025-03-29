@@ -2,8 +2,6 @@
 uid: learn.wwl.use-functions-modules-windows-powershell-scripts.use-variable-scope
 title: Use variable scope in Windows PowerShell scripts
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use variable scope in Windows PowerShell scripts
   description: "Use variable scope in Windows PowerShell scripts"
   ms.date: 07/03/2023
@@ -16,4 +14,4 @@ labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/3-use-variable-scope.md)]
-
+

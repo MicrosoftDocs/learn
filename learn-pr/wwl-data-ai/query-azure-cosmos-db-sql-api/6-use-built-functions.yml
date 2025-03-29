@@ -2,8 +2,6 @@
 uid: learn.wwl.query-azure-cosmos-db-sql-api.use-built-functions
 title: Use built-in functions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use built-in functions
   description: "Use built-in functions"
   ms.date: 03/10/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-use-built-functions.md)]
+  [!include[](includes/6-use-built-functions.md)]

@@ -2,8 +2,6 @@
 uid: learn.azure.build-first-azure-developer-cli-template.update-azure-file
 title: Update the azure.yaml file
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Update the azure.yaml file
   description: Update the azure.yaml file for the template
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/5-update-azure-file.md)]
-
+
