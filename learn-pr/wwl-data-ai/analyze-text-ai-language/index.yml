@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.analyze-text-ai-language
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Analyze text with Azure AI Language
   description: Analyze text with Azure AI Language
   author: wwlpublish
@@ -46,4 +44,4 @@ units:
 - learn.wwl.analyze-text-ai-language.summary
 badge:
   uid: learn.wwl.analyze-text-ai-language.badge
-
+

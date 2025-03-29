@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.design-data-partitioning-strategy
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design a data partitioning strategy
   description: "Design a data partitioning strategy"
   ms.date: 04/16/2024
@@ -57,4 +55,4 @@ units:
 - learn.wwl.design-data-partitioning-strategy.knowledge-check
 - learn.wwl.design-data-partitioning-strategy.summary
 badge:
-  uid: learn.wwl.design-data-partitioning-strategy.badge
+  uid: learn.wwl.design-data-partitioning-strategy.badge

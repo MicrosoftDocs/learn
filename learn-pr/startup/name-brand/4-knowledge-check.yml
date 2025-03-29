@@ -2,8 +2,6 @@
 uid: learn.startups.name-brand.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Review concepts on startup naming and branding. Subjects include choosing an effective name and strengthening your personal brand.
   ms.date: 06/05/2024
@@ -75,4 +73,4 @@ quiz:
       explanation: "Correct. Media coverage of specific companies usually reports on important milestones like securing a well-known investor."
     - content: "Posting an interesting blog post on your website."
       isCorrect: false
-      explanation: "Incorrect. Media coverage of specific companies usually reports on important milestones. The mainstream media doesn't often write about basic steps that every company takes, such as posting a blog entry."
+      explanation: "Incorrect. Media coverage of specific companies usually reports on important milestones. The mainstream media doesn't often write about basic steps that every company takes, such as posting a blog entry."

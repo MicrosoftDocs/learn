@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.deploy-resources-different-scopes
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: standard
   title: Deploy resources to subscriptions, management groups, and tenants by using Bicep
   description: Learn how to deploy resources to subscription, management group, and tenant scopes within your Bicep code.
@@ -62,4 +60,4 @@ units:
 - learn.azure.deploy-resources-different-scopes.summary
 badge:
   uid: learn.azure.deploy-resources-different-scopes.badge
-
+

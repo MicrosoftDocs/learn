@@ -2,8 +2,6 @@
 uid: learn.wwl.process-bulk-data-azure-cosmos-db-sql-api.review-bulk-operation-caveats
 title: Review bulk operation caveats
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Review bulk operation caveats
   description: "Review bulk operation caveats"
   ms.date: 03/20/2024
@@ -16,4 +14,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-review-bulk-operation-caveats.md)]
+  [!include[](includes/3-review-bulk-operation-caveats.md)]

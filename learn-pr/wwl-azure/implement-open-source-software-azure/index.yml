@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-open-source-software-azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement open-source software
   description: "Implement open-source software"
   ms.date: 05/07/2024
@@ -59,4 +57,4 @@ units:
 - learn.wwl.implement-open-source-software-azure.knowledge-check
 - learn.wwl.implement-open-source-software-azure.summary
 badge:
-  uid: learn.wwl.implement-open-source-software-azure.badge
+  uid: learn.wwl.implement-open-source-software-azure.badge

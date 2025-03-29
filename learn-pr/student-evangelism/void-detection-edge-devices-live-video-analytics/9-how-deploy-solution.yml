@@ -2,8 +2,6 @@
 uid: learn.oxford.void-detection-edge-devices-lva.how-deploy-solution
 title: How to deploy your solution
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: How to deploy your solution
   description: The module helps learner deploy solution through web application.
   ms.date: 07/20/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3 # dummy number at present
 content: |
-  [!include[](includes/9-how-deploy-solution.md)]
+  [!include[](includes/9-how-deploy-solution.md)]

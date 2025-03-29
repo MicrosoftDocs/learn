@@ -2,8 +2,6 @@
 uid: learn.wwl.plan-resource-requirements.evaluate-data-storage-requirements
 title: Evaluate data storage requirements
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Evaluate data storage requirements
   description: "Evaluate data storage requirements"
   ms.date: 03/20/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 2
 content: |
-  [!include[](includes/4-evaluate-data-storage-requirements.md)]
+  [!include[](includes/4-evaluate-data-storage-requirements.md)]

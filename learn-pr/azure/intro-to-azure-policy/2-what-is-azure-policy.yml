@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-policy.what-is-azure-policy
 title: What is Azure Policy?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: What is Azure Policy?
   description: "What is Azure Policy and what can it be used for?"
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/2-what-is-azure-policy.md)]
-
+

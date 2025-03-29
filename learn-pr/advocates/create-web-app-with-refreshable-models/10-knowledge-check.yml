@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.create-web-app-with-refreshable-models.10-knowledge-check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
 # Search engine metadata  
   title: Knowledge check 
   description: Knowledge check
@@ -48,4 +46,4 @@ quiz:
     - content: "False"
       isCorrect: false
       explanation: "GitHub Actions can help automate software development workflows from within a GitHub repository."
-
+

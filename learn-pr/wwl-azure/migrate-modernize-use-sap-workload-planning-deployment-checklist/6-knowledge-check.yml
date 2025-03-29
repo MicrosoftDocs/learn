@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-modernize-use-sap-workload-planning-deployment-checklist.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 01/08/2024
@@ -48,4 +46,4 @@ quiz:
       explanation: "Incorrect. This step should be carried out during the project preparation and planning phase."
     - content: "Create a detailed inventory of OS, DB, Kernel, and SAP support pack versions."
       isCorrect: false
-      explanation: "Incorrect. This step should be carried out during the project preparation and planning phase."
+      explanation: "Incorrect. This step should be carried out during the project preparation and planning phase."

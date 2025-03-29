@@ -2,8 +2,6 @@
 uid: learn.student-evangelism.challenge-project-add-image-analysis-generation-to-app.exercise-add-image-generation
 title: Exercise - Add image generation capabilities to your React application
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Add image generation capabilities to your React application
   description: "Add image generation capabilities to your React application"
   ms.date: 9/5/2023
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/6-exercise-add-image-generation.md)]
+  [!include[](includes/6-exercise-add-image-generation.md)]

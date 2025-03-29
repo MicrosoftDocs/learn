@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-authorization-microsoft-entra-id.configure-azure-role-permissions
 title: Configure Azure role permissions for management groups, subscriptions, resource groups, and resources
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure Azure role permissions for management groups, subscriptions, resource groups, and resources
   description: "Configure Azure role permissions for management groups, subscriptions, resource groups, and resources"
   ms.date: 08/07/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-configure-azure-role-permissions.md)]
+  [!include[](includes/3-configure-azure-role-permissions.md)]

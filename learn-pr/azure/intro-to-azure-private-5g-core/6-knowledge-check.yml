@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-private-5g-core.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Checks that you've grasped what is taught about Azure Private 5G Core."
   ms.date: 05/16/2024
@@ -46,4 +44,4 @@ quiz:
       explanation: "Try again. Azure Private 5G Core doesn't use any event-routing service for integration."
     - content: "It shares data with other applications through a central database server."
       isCorrect: false
-      explanation: "Try again. Azure Private 5G Core doesn't use a database server to share data."
+      explanation: "Try again. Azure Private 5G Core doesn't use a database server to share data."

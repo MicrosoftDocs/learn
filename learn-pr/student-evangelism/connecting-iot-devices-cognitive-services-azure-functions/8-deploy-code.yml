@@ -2,8 +2,6 @@
 uid: learn.oxford.connect-iot-devices-cognitive-services-azure-func.deploy-device-code
 title: How to deploy device code to the IoT device
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: How to deploy device code to the IoT device
   description: In this section, we help the learner to configure the IoT device to the cloud
   ms.date: 07/10/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 5 # dummy number at present
 content: |
   [!include[](includes/8-deploy-code.md)]
-
+

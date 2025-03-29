@@ -10,6 +10,7 @@ For this exercise, you need some environment variables from prior exercises. If 
 
 ```azurecli
 export RESOURCE_GROUP=<resource-group>
+export DB_SERVER_NAME=<server-name>
 export OPENAI_RESOURCE_NAME=OpenAISpringAI
 export AZURE_OPENAI_ENDPOINT=$(az cognitiveservices account show \
     --resource-group $RESOURCE_GROUP \
@@ -21,6 +22,12 @@ export AZURE_OPENAI_API_KEY=$(az cognitiveservices account keys list \
     --resource-group $RESOURCE_GROUP \
     --name $OPENAI_RESOURCE_NAME \
     --query "key1" \
+    --output tsv \
+    | tr -d '\r')
+export PGHOST=$(az postgres flexible-server show \
+    --resource-group $RESOURCE_GROUP \
+    --name $DB_SERVER_NAME \
+    --query fullyQualifiedDomainName \
     --output tsv \
     | tr -d '\r')
 ```
@@ -82,138 +89,6 @@ public class BlogWriterService {
      * 3. Provide feedback for improvement
      * 4. Refine the draft based on feedback
      * 5. Repeat until approved or max iterations reached
-     * 
-     * @param topic The blog post topic
-     * @return A refined blog post with a maximum of 10 sentences
-     */
-    public String generateBlogPost(String topic) {
-        logger.info("Starting blog generation for topic: {}", topic);
-
-        // PHASE 1: WRITER AGENT
-        // Prompt the Writer agent to generate the initial blog draft
-        String initialPrompt = String.format("""
-            You are a professional blog writer. Write a well-structured, engaging blog post about "%s".
-            The post should have a clear introduction, body paragraphs, and conclusion.
-            Include relevant examples and maintain a conversational yet professional tone.
-            
-            IMPORTANT FORMATTING REQUIREMENTS:
-            1. Format as plain text only (no Markdown, HTML, or special formatting)
-            2. Use simple ASCII characters only
-            3. For the title, simply put it on the first line and use ALL CAPS instead of "#" symbols
-            4. Separate paragraphs with blank lines
-            5. The blog post must be concise and contain NO MORE THAN 10 SENTENCES total.
-            """, topic);
-        
-        // Using Spring AI's fluent API to send the prompt and get the response
-        logger.info("Sending initial draft generation prompt to AI model");
-        String draft = chatClient.prompt()
-                .user(initialPrompt)  // Creates a UserMessage with the prompt
-                .call()               // Executes the AI call
-                .content();           // Extracts the content from the response
-        logger.info("Initial draft successfully generated for topic: {}", topic);
-
-        // PHASE 2: EVALUATION & REFINEMENT LOOP
-        // Setup for the iterative improvement process
-        boolean approved = false;
-        int iteration = 1;
-        boolean forceFirstIteration = true; // Force at least one round of feedback to demonstrate the pattern
-        
-        // Continue until we reach max iterations or get approval (but always do at least one iteration)
-        while ((!approved && iteration <= MAX_ITERATIONS) || forceFirstIteration) {
-            logger.info("Starting iteration {} of blog refinement", iteration);
-            
-            // PHASE 2A: EDITOR AGENT
-            // Prompt the Editor agent to evaluate the current draft
-            String evalPrompt = String.format("""
-                You are a critical blog editor with extremely high standards. Evaluate the following blog draft and respond with either:
-                PASS - if the draft is exceptional, well-written, engaging, and complete
-                NEEDS_IMPROVEMENT - followed by specific, actionable feedback on what to improve
-                
-                Focus on:
-                - Clarity and flow of ideas
-                - Engagement and reader interest
-                - Professional yet conversational tone
-                - Structure and organization
-                - Strict adherence to the 10-sentence maximum length requirement
-                
-                IMPORTANT EVALUATION RULES:
-                1. The blog MUST have no more than 10 sentences total. Count the sentences carefully.
-                2. For the first iteration, ALWAYS respond with NEEDS_IMPROVEMENT regardless of quality.
-                3. Be extremely thorough in your evaluation and provide detailed feedback.
-                4. If the draft exceeds 10 sentences, it must receive a NEEDS_IMPROVEMENT rating.
-                5. Even well-written drafts should receive suggestions for improvement in early iterations.
-                
-                Draft:
-                %s
-                """, draft);
-            
-            // Send the evaluation prompt to the AI model
-            logger.info("Sending draft for editorial evaluation (iteration: {})", iteration);
-            String evaluation = chatClient.prompt()
-                    .user(evalPrompt)
-                    .call()
-                    .content();
-            
-            // After first iteration, remove the force flag
-            if (forceFirstIteration) {
-                forceFirstIteration = false;
-            }
-            
-            // Check if the Editor agent approves the draft
-            if (evaluation.toUpperCase().contains("PASS") && iteration > 1) { // Only allow PASS after first iteration
-                // Draft is approved, exit the loop
-                approved = true;
-                logger.info("Draft approved by editor on iteration {}", iteration);
-            } else {
-                // Draft needs improvement, extract the specific feedback
-                String feedback = extractFeedback(evaluation);
-                logger.info("Editor feedback received (iteration {}): {}", iteration, feedback);
-                
-                // PHASE 2B: WRITER AGENT (REFINEMENT)
-                // Prompt the Writer agent to refine the draft based on the feedback
-                String refinePrompt = String.format("""
-                    You are a blog writer. Improve the following blog draft based on this editorial feedback:
-                    
-                    Feedback: %s
-                    
-                    Current Draft:
-                    %s
-                    
-                    IMPORTANT REQUIREMENTS:
-                    1. The final blog post MUST NOT exceed 10 sentences total.
-                    2. Maintain a clear introduction, body, and conclusion structure.
-                    3. Keep formatting as plain text only (NO Markdown, HTML, or special formatting)
-                    4. For the title, use ALL CAPS instead of any special formatting
-                    5. Separate paragraphs with blank lines
-                    6. Use only simple ASCII characters
-                    7. Provide the complete improved version while addressing the feedback.
-                    8. Count your sentences carefully before submitting.
-                    """, feedback, draft);
-                
-                // Send the refinement prompt to the AI model
-                logger.info("Requesting draft revision based on feedback (iteration: {})", iteration);
-                draft = chatClient.prompt()
-                        .user(refinePrompt)
-                        .call()
-                        .content();
-                logger.info("Revised draft received for iteration {}", iteration);
-            }
-            iteration++;
-        }
-
-        // PHASE 3: FINALIZATION
-        // Return the final draft, either approved or after reaching max iterations
-        if (!approved) {
-            logger.warn("Maximum iterations ({}) reached without editor approval", MAX_ITERATIONS);
-        } else {
-            logger.info("Blog post generation completed successfully for topic: {}", topic);
-        }
-
-        return draft;
-    }
-
-    /**
-     * Enhanced version of generateBlogPost that also returns metadata about the generation process.
      * 
      * This method ensures at least one feedback-improvement cycle occurs to demonstrate
      * the full evaluator-optimizer pattern in action, regardless of initial draft quality.

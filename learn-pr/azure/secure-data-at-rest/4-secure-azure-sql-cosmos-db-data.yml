@@ -2,8 +2,6 @@
 uid: learn.secure-data-at-rest.4-secure-azure-sql-cosmos-db-data
 title: Secure data at rest in Azure SQL Database and Azure Cosmos DB
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Secure data at rest in Azure SQL Database and Azure Cosmos DB
   description: Secure data at rest in Azure SQL Database and Azure Cosmos DB
   ms.date: 05/02/2023
@@ -38,4 +36,4 @@ quiz:
     - content: You must rotate the keys. The keys need to be changed periodically to help protect the data. 
       isCorrect: false
       explanation: You don't have to do anything. The keys are rotated automatically. 
-
+

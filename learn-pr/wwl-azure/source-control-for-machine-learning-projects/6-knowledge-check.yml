@@ -2,8 +2,6 @@
 uid: learn.wwl.source-control-for-machine-learning-projects.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
@@ -39,4 +37,4 @@ quiz:
     - content: "To upload all changes to the main repo."
       isCorrect: false
       explanation: "Incorrect. After committing all changes, you push the commits to the repo."
-
+

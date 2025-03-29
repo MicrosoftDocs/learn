@@ -2,8 +2,6 @@
 uid: learn.introduction-azure-virtual-wan.5-knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge.
   ms.date: 12/06/2023
@@ -49,4 +47,4 @@ quiz:
     - content: "Azure Firewall and Azure Firewall Manager"
       isCorrect: true
       explanation: "That's correct. Use Azure Firewall and Azure Firewall Manager."
-
+

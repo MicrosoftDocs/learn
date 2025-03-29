@@ -2,8 +2,6 @@
 uid: learn.wwl.azure-virtual-desktop-architecture.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 06/21/2023
@@ -51,4 +49,4 @@ quiz:
     - content: "Azure Container Instances"
       isCorrect: false
       explanation: "That's incorrect. Azure Container Instances are for data processing where source data is ingested, processed, and placed in a durable store such as Azure Blob storage."
-
+

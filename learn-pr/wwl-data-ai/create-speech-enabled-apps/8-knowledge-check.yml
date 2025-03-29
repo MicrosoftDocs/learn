@@ -2,8 +2,6 @@
 uid: learn.wwl.create-speech-enabled-apps.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
@@ -50,4 +48,4 @@ quiz:
     - content: "Specify a filename in the AudioConfig object."
       isCorrect: false
       explanation: "Incorrect. To set a voice, set the SpeechSynthesisVoiceName property of the SpeechConfig to a voice name, such as \"en-GB-George\"."
-
+

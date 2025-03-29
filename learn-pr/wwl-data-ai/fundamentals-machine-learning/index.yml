@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.fundamentals-machine-learning
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Fundamentals of machine learning
   description: "Machine learning is the basis for most modern artificial intelligence solutions. A familiarity with the core concepts on which machine learning is based is an important foundation for understanding AI."
   ms.date: 02/14/2025

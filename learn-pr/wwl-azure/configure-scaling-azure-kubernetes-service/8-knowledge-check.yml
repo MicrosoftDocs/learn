@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-scaling-azure-kubernetes-service.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 10/25/2023
@@ -48,4 +46,4 @@ quiz:
       explanation: "Incorrect. This is not the purpose of the cluster autoscaler component in AKS."
     - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
       isCorrect: true
-      explanation: "Correct. The cluster autoscaler component can watch for pods in your cluster that can't be scheduled because of resource constraints. When issues are detected, the number of nodes in a node pool increases to meet the application demand. Nodes are also regularly checked for a lack of running pods, with the number of nodes then decreased as needed. This ability to automatically scale up or down the number of nodes in your AKS cluster lets you run an efficient, cost effective cluster."
+      explanation: "Correct. The cluster autoscaler component can watch for pods in your cluster that can't be scheduled because of resource constraints. When issues are detected, the number of nodes in a node pool increases to meet the application demand. Nodes are also regularly checked for a lack of running pods, with the number of nodes then decreased as needed. This ability to automatically scale up or down the number of nodes in your AKS cluster lets you run an efficient, cost effective cluster."

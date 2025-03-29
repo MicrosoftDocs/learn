@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-sap-hana-azure-large-instances.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 12/08/2021
@@ -61,4 +59,4 @@ quiz:
       explanation: "Incorrect. You can add storage by purchasing additional storage in 1 TB units. This additional storage can be added as additional volume. It also can be used to extend one or more of the existing volumes. The storage volumes are attached to the HANA Large Instance units as NFS4 volumes."
     - content: "10 TB"
       isCorrect: false
-      explanation: "Incorrect. You can add storage by purchasing additional storage in 1 TB units. This additional storage can be added as additional volume. It also can be used to extend one or more of the existing volumes. The storage volumes are attached to the HANA Large Instance units as NFS4 volumes."
+      explanation: "Incorrect. You can add storage by purchasing additional storage in 1 TB units. This additional storage can be added as additional volume. It also can be used to extend one or more of the existing volumes. The storage volumes are attached to the HANA Large Instance units as NFS4 volumes."

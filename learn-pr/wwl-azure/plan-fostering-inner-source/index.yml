@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.plan-foster-inner-source
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Plan foster inner source
   description: "Plan foster inner source"
   ms.date: 05/08/2024
@@ -58,4 +56,4 @@ units:
 - learn.wwl.plan-foster-inner-source.knowledge-check
 - learn.wwl.plan-foster-inner-source.summary
 badge:
-  uid: learn.wwl.plan-fostering-inner-source.badge
+  uid: learn.wwl.plan-fostering-inner-source.badge

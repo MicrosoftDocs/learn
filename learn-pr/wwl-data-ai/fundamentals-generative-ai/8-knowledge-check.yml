@@ -2,8 +2,6 @@
 uid: learn.wwl.fundamentals-generative-ai.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: This knowledge check is based on content about generative AI, large language models, and copilots.
   author: sherzyang
@@ -49,4 +47,4 @@ quiz:
     - content: "Microsoft Azure AI Foundry"
       isCorrect: true
       explanation: "Microsoft Azure AI Foundry is designed as a unified development portal for professional software developers to allow for full customization of language models."
-
+

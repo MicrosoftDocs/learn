@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.analyze-images-computer-vision
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Fundamentals of Computer Vision
   description: Analyze images with the Azure AI Vision service.
   author: wwlpublish
@@ -40,4 +38,4 @@ units:
 - learn.wwl.analyze-images-computer-vision.summary
 badge:
   uid: learn.wwl.analyze-images-computer-vision.badge
-
+

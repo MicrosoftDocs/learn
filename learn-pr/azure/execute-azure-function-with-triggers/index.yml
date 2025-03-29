@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.execute-azure-function-with-triggers
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Execute an Azure Function with triggers
   description: This module demos some of the most common types of triggers for executing Azure Functions and how to configure them to execute your logic.
   ms.date: 04/09/2024
@@ -46,4 +44,4 @@ units:
 - learn.execute-azure-function-with-triggers.9-summary
 badge:
   uid: learn.execute-azure-function-with-triggers.badge
-
+

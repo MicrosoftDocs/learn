@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 03/27/2025
@@ -72,4 +70,4 @@ quiz:
       explanation: "Incorrect. Configuring GracePeriodWithDataLossHours controls how long Azure waits before failing over."
     - content: "GracePeriodWithDataLossHours"
       isCorrect: true
-      explanation: "Correct. Configuring GracePeriodWithDataLossHours controls how long Azure waits before failing over."
+      explanation: "Correct. Configuring GracePeriodWithDataLossHours controls how long Azure waits before failing over."

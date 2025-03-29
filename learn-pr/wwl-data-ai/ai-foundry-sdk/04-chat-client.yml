@@ -2,8 +2,6 @@
 uid: learn.wwl.ai-foundry-sdk.chat-client
 title: Create a chat client
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create a chat client
   description: Create a chat client for models in your project.
   author: wwlpublish

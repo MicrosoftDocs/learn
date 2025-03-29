@@ -2,8 +2,6 @@
 uid: learn.wwl.design-for-user-identities-profiles.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 02/10/2023
@@ -40,4 +38,4 @@ quiz:
     - content: "FSLogix"
       isCorrect: true
       explanation: "That's correct. Azure Virtual Desktop offers FSLogix profile containers as the recommended user profile solution. FSLogix is designed to roam profiles in remote computing environments, such as Azure Virtual Desktop."
-
+

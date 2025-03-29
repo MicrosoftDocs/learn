@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-models-copilot-ai-studio.improve-model
 title: Optimize model performance
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Optimize model performance
   description: "Explore the various strategies to improve the model's performance"
   ms.date: 03/26/2025
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-improve-model.md)]
+  [!include[](includes/4-improve-model.md)]

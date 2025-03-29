@@ -2,8 +2,6 @@
 uid: learn.azure.azure-netapp-files-essentials.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge of Azure NetApp Files essentials.
@@ -56,4 +54,4 @@ quiz:
         explanation: "Incorrect. Volume quota size pertains to individual units, which are constituents of capacity pools."
       - content: Total snapshot size for the pool 
         isCorrect: false
-        explanation: "Incorrect. This metric describes the size of all snapshots across all volumes in the capacity pool."
+        explanation: "Incorrect. This metric describes the size of all snapshots across all volumes in the capacity pool."

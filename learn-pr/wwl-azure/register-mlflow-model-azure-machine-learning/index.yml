@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.register-mlflow-model-azure-machine-learning
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Register an MLflow model in Azure Machine Learning
   description: Learn how to register an Mlflow model in Azure Machine Learning.
   author: wwlpublish
@@ -39,4 +37,4 @@ units:
 - learn.wwl.register-mlflow-model-azure-machine-learning.summary
 badge:
   uid: learn.wwl.register-mlflow-model-azure-machine-learning.badge
-
+

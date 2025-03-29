@@ -2,8 +2,6 @@
 uid: learn.azure.automate-azure-infrastructure-change-reviews-using-bicep-github.exercise-set-up-environment
 title: Exercise - Set up your environment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Set up your environment
   description: In this exercise, you configure your environment to add automated reviews to your Bicep deployment workflow.
@@ -18,4 +16,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/3-exercise-set-up-environment.md)]
-
+

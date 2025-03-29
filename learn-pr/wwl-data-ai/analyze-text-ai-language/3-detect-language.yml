@@ -2,8 +2,6 @@
 uid: learn.wwl.analyze-text-ai-language.detect-language
 title: Detect language
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Detect language
   description: Detect language
   author: wwlpublish
@@ -17,4 +15,4 @@ labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/3-detect-language.md)]
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-identities-microsoft-entra-id.secure-microsoft-entra-users
 title: Secure Microsoft Entra users
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Secure Microsoft Entra users
   description: "Create and manage Microsoft Entra ID users"
   ms.date: 07/03/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-secure-microsoft-entra-users.md)]
+  [!include[](includes/3-secure-microsoft-entra-users.md)]

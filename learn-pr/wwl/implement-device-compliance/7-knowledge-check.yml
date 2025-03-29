@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-device-compliance.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 10/09/2023
@@ -37,4 +35,4 @@ quiz:
       explanation: "Incorrect. As this is inherently a risky scenario, conditional access might be used to help prevent this scenario."
     - content: "Automatically updating devices to the required minimum OS"
       isCorrect: false
-      explanation: "Incorrect. Conditional access allows or blocks access based on defined criteria. It doesn't initiate the steps to meet compliance. Try again."
+      explanation: "Incorrect. Conditional access allows or blocks access based on defined criteria. It doesn't initiate the steps to meet compliance. Try again."

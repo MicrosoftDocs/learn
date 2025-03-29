@@ -2,8 +2,6 @@
 uid: learn.wwl.ai-agent-fundamentals.azure-ai-agent-service
 title: Azure AI Agent Service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Azure AI Agent Service
   description: A high-level overview of Azure AI Agent Service.
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/4-azure-ai-agent-service.md)]
-
+

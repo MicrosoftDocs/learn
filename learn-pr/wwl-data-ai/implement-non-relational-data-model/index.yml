@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-non-relational-data-model
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement a non-relational data model
   description: "Implement a non-relational data model"
   ms.date: 04/16/2024
@@ -46,4 +44,4 @@ units:
 - learn.wwl.implement-non-relational-data-model.knowledge-check
 - learn.wwl.implement-non-relational-data-model.summary
 badge:
-  uid: learn.wwl.implement-non-relational-data-model.badge
+  uid: learn.wwl.implement-non-relational-data-model.badge

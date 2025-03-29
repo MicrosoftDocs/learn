@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.finetune-model-copilot-ai-studio
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Fine-tune a language model with Azure AI Foundry
   description: When you want to maximize the consistency in the responses of your language model, you can fine-tune a base model before integrating the model into your chat application. Learn how to fine-tune a language model and then integrate the model with Azure AI Foundry.
   author: madiepev
@@ -46,4 +44,4 @@ units:
 - learn.wwl.finetune-model-copilot-ai-studio.summary
 badge:
   uid: learn.wwl.finetune-model-copilot-ai-studio.badge
-
+

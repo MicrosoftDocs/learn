@@ -2,8 +2,6 @@
 uid: learn.azure.cna-set-up-apps-use-scale.8-knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Multiple-choice questions
   ms.date: 08/22/2023
@@ -49,4 +47,4 @@ quiz:
     - content: 'login.microsoftonline.com/common'
       isCorrect: true
       explanation: "Correct. With a multitenant app, you can't determine ahead of time which tenant will be used, so you need to use the 'https://login.microsoftonline.com/common' endpoint, which serves all Azure AD tenants."
-
+

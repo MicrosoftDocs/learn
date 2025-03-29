@@ -2,8 +2,6 @@
 uid: learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azure.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 06/20/2024
@@ -48,4 +46,4 @@ quiz:
       explanation: "That's incorrect. A trust relationship is required in scenarios where the on-premises AD domain is contained within a different AD forest from the AD domain in Azure."
     - content: "Read-only domain controllers."
       isCorrect: true
-      explanation: "That's correct. RODCs reduce the amount of egress traffic and the resulting Azure service charges. Because changes to directory objects aren't allowed on RODCs, replication of directory objects from RODCs to other domain controllers don't occur."
+      explanation: "That's correct. RODCs reduce the amount of egress traffic and the resulting Azure service charges. Because changes to directory objects aren't allowed on RODCs, replication of directory objects from RODCs to other domain controllers don't occur."

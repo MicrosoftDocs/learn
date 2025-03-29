@@ -2,8 +2,6 @@
 uid: learn.azure.create-resource-manager-template-vs-code.5-exercise-parameters-output
 title: Exercise - Add parameters and outputs to your Azure Resource Manager template
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Add parameters and outputs to your Azure Resource Manager template
   description: Update your Azure Resource Manager template to add parameters and outputs.
   ms.date: 10/29/2024
@@ -17,4 +15,4 @@ azureSandbox: true
 durationInMinutes: 12
 content: |
   [!include[](includes/5-exercise-parameters-output.md)]
-
+

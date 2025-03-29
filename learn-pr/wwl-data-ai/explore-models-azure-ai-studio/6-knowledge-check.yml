@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-models-copilot-ai-studio.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check about configuring language models."
   ms.date: 03/26/2025
@@ -47,4 +45,4 @@ quiz:
     - content: "Either Azure OpenAI Service or Azure AI Model Inferencing Service"
       isCorrect: true
       explanation: "Correct. You can deploy OpenAI mdoels to either Azure OpenAI Service or Azure AI Model Inferencing Service."
-
+

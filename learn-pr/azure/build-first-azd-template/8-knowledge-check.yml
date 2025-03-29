@@ -2,8 +2,6 @@
 uid: learn.azure.build-first-azure-developer-cli-template.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge of Azure Developer CLI templates
@@ -72,4 +70,4 @@ quiz:
     - content: "It contains the Bicep or Terraform files that define the Infrastructure as Code (IaC) templates."
       isCorrect: true
       explanation: "Correct. The `infra` folder contains the Bicep or Terraform files that define the infrastructure as-code templates."
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-azure-remote-management.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Check what you learn in this module."
   ms.date: 08/01/2024
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. Azure Bastion is a service users deploy that lets them connect to a virtual machine using their browser and the Azure portal. The Azure Bastion service is a fully platform-managed PaaS service that users provision inside their virtual network."
     - content: "Azure Front Door"
       isCorrect: false
-      explanation: "Incorrect. Azure Bastion is a service users deploy that lets them connect to a virtual machine using their browser and the Azure portal. The Azure Bastion service is a fully platform-managed PaaS service that users provision inside their virtual network."
+      explanation: "Incorrect. Azure Bastion is a service users deploy that lets them connect to a virtual machine using their browser and the Azure portal. The Azure Bastion service is a fully platform-managed PaaS service that users provision inside their virtual network."

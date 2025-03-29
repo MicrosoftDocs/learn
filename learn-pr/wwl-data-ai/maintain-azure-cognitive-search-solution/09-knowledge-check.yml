@@ -2,8 +2,6 @@
 uid: learn.wwl.maintain-azure-cognitive-search-solution.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: ivorb
@@ -50,4 +48,4 @@ quiz:
     - content: "Monitor and set budget alerts for all your search resources."
       isCorrect: true
       explanation: "Correct. This option is the most effective way to manage your costs."
-
+

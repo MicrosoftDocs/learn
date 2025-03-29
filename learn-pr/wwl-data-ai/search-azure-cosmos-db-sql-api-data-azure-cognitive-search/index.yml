@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.search-azure-cosmos-db-sql-api-data-azure-cognitive-search
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Search Azure Cosmos DB for NoSQL data with Azure Cognitive Search
   description: "Index Azure Cosmos DB for NoSQL data with Azure Cognitive Search."
   ms.date: 07/10/2024
@@ -35,4 +33,4 @@ units:
 - learn.wwl.search-azure-cosmos-db-sql-api-data-azure-cognitive-search.knowledge-check
 - learn.wwl.search-azure-cosmos-db-sql-api-data-azure-cognitive-search.summary
 badge:
-  uid: learn.wwl.search-azure-cosmos-db-sql-api-data-azure-cognitive-search.badge
+  uid: learn.wwl.search-azure-cosmos-db-sql-api-data-azure-cognitive-search.badge

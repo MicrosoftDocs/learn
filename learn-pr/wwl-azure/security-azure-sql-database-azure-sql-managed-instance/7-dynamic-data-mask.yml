@@ -2,8 +2,6 @@
 uid: learn.wwl.security-azure-sql-database-azure-sql-managed-instance.dynamic-data-mask
 title: Plan and implement dynamic mask
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Plan and implement dynamic mask
   description: "Configure dynamic data masking"
   ms.date: 02/24/2025

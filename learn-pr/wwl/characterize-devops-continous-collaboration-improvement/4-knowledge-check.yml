@@ -2,8 +2,6 @@
 uid: learn.wwl.characterize-devops-continous-collaboration-improvement.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 04/16/2021
@@ -71,4 +69,4 @@ quiz:
       explanation: "Sorry, that’s incorrect. Measuring the number of bugs found isn't important for DevOps leadership."
     - content: "Impact"
       isCorrect: true
-      explanation: "That’s correct. DevOps leadership should measure impact."
+      explanation: "That’s correct. DevOps leadership should measure impact."
