@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-manage-automation-microsoft-defender-for-endpoint
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure and manage automation using Microsoft Defender for Endpoint
   description: "Configure and manage automation using Microsoft Defender for Endpoint"
   ms.date: 1/2/2025
@@ -44,4 +42,4 @@ units:
 - learn.wwl.configure-manage-automation-microsoft-defender-for-endpoint.knowledge-check
 - learn.wwl.configure-manage-automation-microsoft-defender-for-endpoint.summary-resources
 badge:
-  uid: learn.wwl.configure-manage-automation-microsoft-defender-for-endpoint.badge
+  uid: learn.wwl.configure-manage-automation-microsoft-defender-for-endpoint.badge

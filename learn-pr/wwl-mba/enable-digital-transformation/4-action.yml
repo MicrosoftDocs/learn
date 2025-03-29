@@ -2,8 +2,6 @@
 uid: learn-wwl.enable-digital-transformation.action
 title: Digital transformation in action
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Digital transformation in action
   description: "Digital transformation in action"
   ms.date: 10/14/2020
@@ -13,4 +11,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 9
 content: |
-  [!include[](includes/4-action.md)]
+  [!include[](includes/4-action.md)]

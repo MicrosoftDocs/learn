@@ -2,8 +2,6 @@
 uid: learn.wwl.perform-zero-etl-analytics-hdinsight-interactive-query.7-create-large-scale-interactive-query-dashboard-evaluating-real-estate-trends
 title: Create a large scale interactive query dashboard for Evaluating Real Estate Trends
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create a large scale interactive query dashboard for Evaluating Real Estate Trends
   description: "Create a large scale interactive query dashboard for Evaluating Real Estate Trends."
   ms.date: 04/08/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/7-interactive-query-dashboard-evaluating-real-estate-trends.md)]
+  [!include[](includes/7-interactive-query-dashboard-evaluating-real-estate-trends.md)]
