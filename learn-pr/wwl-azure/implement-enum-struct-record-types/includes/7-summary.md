@@ -6,7 +6,7 @@ After completing this module, you're now able to:
 - Design and implement structs for encapsulating related data, ensuring immutability and efficient performance.  
 - Create and utilize records for modeling immutable data with value-based equality and hierarchical structures.  
 
-More reading:  
+## Resources
 
 - [Enums (C# Programming Guide)](/dotnet/csharp/programming-guide/enumeration-types)  
 - [Structs (C# Programming Guide)](/dotnet/csharp/programming-guide/classes-and-structs/structs)  
