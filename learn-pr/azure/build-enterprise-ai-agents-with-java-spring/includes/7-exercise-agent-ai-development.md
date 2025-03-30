@@ -374,13 +374,10 @@ public class BlogWriterService {
 
 This implementation includes the following key features:
 
-- Basic blog generation. The `generateBlogPost` method:
-  - Creates a well-structured blog post on a given topic.
+- Blog generation with metadata. The `generateBlogPostWithMetadata` method:
+  - Creates a well-structured blog post on a given topic with detailed metadata about the generation process.
   - Uses an iterative refinement process with Writer and Editor agents.
   - Enforces a 10-sentence maximum length.
-
-- Enhanced metadata generation. The `generateBlogPostWithMetadata` method:
-  - Extends the basic functionality to capture detailed metadata about the generation process.
   - Tracks iterations, approval status, token usage, and editor feedback history.
   - Returns all information in a structured `BlogGenerationResult` object.
 
