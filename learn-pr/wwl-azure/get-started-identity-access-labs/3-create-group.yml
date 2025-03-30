@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-identity-access-labs.create-group
+title: Perform basic Group Management tasks
+metadata:
+  title: Perform basic Group Management tasks
+  description: "Perform labs to create groups, assign users, and grant access."
+  ms.date: 03/29/2025
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-create-group.md)]
