@@ -56,10 +56,15 @@ Complete the following steps to create an App Configuration instance in your Azu
 
 1. Run the following Azure CLI commands to create an App Configuration instance:
 
-    ```azurecli
+    ```azurecli / bash
     export LOCATION=[Closest Azure region]
     export RESOURCE_GROUP=rg-eshop
     export CONFIG_NAME=eshop-app-features$SRANDOM    
+    ```
+    ```azurecli / Powershell
+    set LOCATION=[Closest Azure region]
+    set RESOURCE_GROUP=rg-eshop
+    set CONFIG_NAME=eshop-app-features$SRANDOM    
     ```
 
     You need to change the **LOCATION** to an Azure region close to you, for example **eastus**. If you'd like a different name for your resource group or app configuration change the values above.
@@ -108,7 +113,7 @@ You'll now add the App Configuration connection string to the application. Compl
 
 1. Open the **:::no-loc text="/dotnet-feature-flags/docker-compose.yml":::** file.
 
-1. Add a new environment variable at line 13.
+1. Add a new environment variable at line 9.
 
     ```yml
     - ConnectionStrings:AppConfig=[PASTE CONNECTION STRING HERE]
@@ -262,6 +267,8 @@ Your app can now read the feature flag, but the products page needs to be update
 
     The preceding code displays a sales alert if the feature flag is enabled.
 
+   If there is no comment in the razor, add that at line 22
+
 ### Build the app
 
 1. Ensure you've saved all your changes, and are in the **dotnet-feature-flags** directory. In the terminal, run the following command:
@@ -271,6 +278,54 @@ Your app can now read the feature flag, but the products page needs to be update
     ```
 
 1. Run the app using docker:
+
+    ```bash
+    docker compose up
+    ```  
+
+### Troubleshooting
+
+1. if you get docker pull image errors change the docker-compose.yml 
+to use the Products project, ln 14ff
+
+    ```yml
+    backend:
+        build:
+          context: .
+          dockerfile: Products/Dockerfile
+        # image: products:latest
+        ports: 
+          - "32001:8080"
+    ```
+
+2. Add a new file named Dockerfile in the Products Project with this contend
+
+    ```yml
+    # Use the official .NET image as a parent image
+    FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+    WORKDIR /app
+    EXPOSE 8080
+    
+    # Use the SDK image to build the app
+    FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+    WORKDIR /src
+    COPY ["Products/Products.csproj", "Products/"]
+    RUN dotnet restore "Products/Products.csproj"
+    COPY . .
+    WORKDIR "/src/Products"
+    RUN dotnet build "Products.csproj" -c Release -o /app/build
+    
+    FROM build AS publish
+    RUN dotnet publish "Products.csproj" -c Release -o /app/publish
+    
+    # Final stage/image
+    FROM base AS final
+    WORKDIR /app
+    COPY --from=publish /app/publish .
+    ENTRYPOINT ["dotnet", "Products.dll"]
+    ```
+    
+3. Run the app using docker:
 
     ```bash
     docker compose up
