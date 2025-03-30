@@ -2,6 +2,7 @@
 uid: learn.azure.deploy-configure-azure-developer-cli-templates.knowledge-check
 title: Knowledge check
 metadata:
+  ai_generated_module_assessment: true
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge of the Azure Developer CLI
@@ -70,4 +71,3 @@ quiz:
     - content: "The definition files are platform agnostic."
       isCorrect: false
       explanation: "Incorrect. Whether or not a tool is cross platform doesn't determine if it's idempotent."
-
