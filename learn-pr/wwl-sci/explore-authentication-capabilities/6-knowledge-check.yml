@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-authentication-capabilities-of-azure-ad.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 09/23/2024
@@ -49,4 +47,4 @@ quiz:
     - content: "FIDO2."
       isCorrect: false
       explanation: "Incorrect. FIDO2 may require the purchase of external keys such as a USB device, which might involve additional expense."
-
+
