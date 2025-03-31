@@ -6,10 +6,10 @@ metadata:
   description: "Configure advanced features"
   ms.date: 11/28/2023
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-configure-advanced-features.md)]
+  [!include[](includes/2-configure-advanced-features.md)]
