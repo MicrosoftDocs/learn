@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-manage-external-identities.demo-invite-guest-users-to-app
 title: Demo - manage guest users in Microsoft Entra ID
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Demo - manage guest users in Microsoft Entra ID
   description: "Demo - manage guest users in Microsoft Entra ID"
   ms.date: 12/18/2024

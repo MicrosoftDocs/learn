@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-app-registration
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement app registration
   description: "Line of business developed in-house need registration in Microsoft Entra ID and assigned to users for a secure Azure solution. Explore how to implement app registration."
   ms.date: 03/28/2025

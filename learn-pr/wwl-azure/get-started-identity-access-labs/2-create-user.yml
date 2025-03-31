@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-identity-access-labs.create-user
+title: Perform basic User Management tasks
+metadata:
+  title: Perform basic User Management tasks
+  description: "Perform labs to learn about creating users and assigning them access rights."
+  ms.date: 03/29/2025
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-create-user.md)]

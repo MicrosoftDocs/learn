@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-app-registration.grant-tenant-wide-admin-consent-to-application
 title: Grant tenant-wide admin consent to applications
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Grant tenant-wide admin consent to applications
   description: "Grant tenant-wide admin consent to applications"
   ms.date: 03/28/2025

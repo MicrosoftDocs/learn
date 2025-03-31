@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-initial-configuration-of-azure-active-directory.exercise-manage-users-roles
 title: Exercise manage users roles
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise manage users roles
   description: "Exercise manage users roles"
   ms.date: 09/03/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-exercise-manage-users-roles.md)]
+  [!include[](includes/4-exercise-manage-users-roles.md)]

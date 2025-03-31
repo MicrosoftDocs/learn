@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-manage-active-directory-certificate-services.manage-certificate-enrollment
 title: Manage certificate enrollment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage certificate enrollment
   description: "Manage certificate enrollment"
   ms.date: 06/11/2024
@@ -26,4 +24,4 @@ quiz:
       explanation: "That's incorrect. This console allows you to configure templates, however, not to make them available for usage."
     - content: "The Active Directory Sites and Services console"
       isCorrect: false
-      explanation: "That's incorrect. This console allows you to configure AD DS sites and services, however, not to manage templates."
+      explanation: "That's incorrect. This console allows you to configure AD DS sites and services, however, not to manage templates."
