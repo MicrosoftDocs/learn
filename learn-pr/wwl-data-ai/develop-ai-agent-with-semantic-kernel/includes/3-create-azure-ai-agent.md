@@ -1,8 +1,8 @@
-**AzureAIAgent** is a specialized agent within the Semantic Kernel framework, designed to provide advanced conversational capabilities with seamless tool integration. It automates tool calling, eliminating the need for manual parsing and invocation. The agent also securely manages conversation history using threads, reducing the overhead of maintaining state. The AzureAIAgent supports a variety of built-in tools, including file retrieval, code execution, and data interaction via Bing, Azure AI Search, Azure Functions, and OpenAPI.
+**AzureAIAgent** is a specialized agent within the Semantic Kernel framework, designed to provide advanced conversational capabilities with seamless tool integration. It automates tool calling, eliminating the need for manual parsing and invocation. The agent also securely manages conversation history using threads, reducing the overhead of maintaining state. The AzureAIAgent class supports a variety of built-in tools, including file retrieval, code execution, and data interaction via Bing, Azure AI Search, Azure Functions, and OpenAPI.
 
 ## Creating an AzureAIAgent
 
-The AzureAIAgent object encapsulates all the core capabilities you typically use the Kernel for, like function execution, planning, and memory access. This object acts as a self-contained agent runtime.
+An AzureAIAgent object encapsulates all the core capabilities you typically use the Kernel for, like function execution, planning, and memory access. This object acts as a self-contained agent runtime.
 
 To use an AzureAIAgent:
 1. Create an Azure AI Foundry project

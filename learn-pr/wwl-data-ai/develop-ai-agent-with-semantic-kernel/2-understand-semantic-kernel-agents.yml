@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.develop-ai-agent-with-semantic-kernel.understand-semantic-kernel
-title: Understand Semantic Kernel
+title: Understand Semantic Kernel AI Agents
 metadata:
-  title: Understand Semantic Kernel
+  title: Understand Semantic Kernel AI Agents
   description: This unit explains the Semantic Kernel SDK and Agent Framework.
   author: buzahid
   ms.author: buzahid

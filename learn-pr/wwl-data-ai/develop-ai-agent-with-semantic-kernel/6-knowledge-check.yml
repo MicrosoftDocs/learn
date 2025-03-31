@@ -12,37 +12,36 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "What is the first step in setting up Azure AI Agent Service?"  
+  - content: "What is the main purpose of the AzureAIAgent class in Semantic Kernel?"
     choices:  
-      - content: "Deploy a compatible model"  
+      - content: "To provide a low-level interface for directly managing AI models"  
         isCorrect: false  
-        explanation: "Incorrect. Deploying a compatible model is the second step. The first step is to create an Azure AI Foundry hub and project."  
-      - content: "Create an Azure AI Foundry hub and project"  
+        explanation: "Incorrect. The AzureAIAgent class is built on top of Azure AI Agent Service and streamlines its features rather than providing a low-level interface."  
+      - content: "To simplify the use of Azure AI Agent Service by abstracting complex operations"  
         isCorrect: true  
-        explanation: "Correct. The first step in setting up Azure AI Agent Service is to create an Azure AI Foundry hub and project in your Azure subscription."  
-      - content: "Make API calls using SDKs"  
+        explanation: "Correct. The AzureAIAgent class is designed to streamline the usage of Azure AI Agent Service, reducing the complexity of setting up and managing AI agents."  
+      - content: "To replace the need for prompt templates in AI workflows"  
         isCorrect: false  
-        explanation: "Incorrect. Making API calls using SDKs is the third step after deploying a compatible model."  
-  - content: "Which feature of Azure AI Agent Service ensures data privacy and compliance?"  
+        explanation: "Incorrect. AzureAIAgent enhances agent interactions but doesn't replace prompt templates, which are useful for defining structured AI behavior."  
+  - content: "Which component in the Agent Framework manages conversation state and stores messages?"  
     choices:  
-      - content: "Automatic tool calling"  
-        isCorrect: false  
-        explanation: "Incorrect. Automatic tool calling handles the tool-calling lifecycle but does not specifically ensure data privacy and compliance."  
-      - content: "Enterprise-grade security"  
+      - content: "Agent threads"  
         isCorrect: true  
-        explanation: "Correct. Enterprise-grade security ensures data privacy and compliance with secure data handling and keyless authentication."  
-      - content: "Customizable storage solutions"  
+        explanation: "Correct. Agent threads store conversations and maintain conversation state across multiple interactions."  
+      - content: "Agent chat"  
         isCorrect: false  
-        explanation: "Incorrect. Customizable storage solutions provide visibility and control over storage but do not specifically ensure data privacy and compliance."  
-  - content: "You are tasked with creating an AI agent that can interpret code and interact with data sources like Bing. Which feature of Azure AI Agent Service should you utilize?"  
+        explanation: "Incorrect. Agent chat provides the structure for multi-agent interactions but doesn't store messages."  
+      - content: "AI service connectors"  
+        isCorrect: false  
+        explanation: "Incorrect. AI service connectors allow AI models to interact with external services but don't handle conversation state."  
+  - content: "Which step is necessary to enable an AzureAIAgent to use a plugin?"  
     choices:  
-      - content: "Out-of-the-box tools"  
+      - content: "Modify the AI model's architecture to integrate the plugin"  
+        isCorrect: false  
+        explanation: "Incorrect. Plugins work through function calling and don't require modifications to the AI model itself."  
+      - content: "Configure the plugin in Azure Portal before using it in Semantic Kernel"  
+        isCorrect: false  
+        explanation: "Incorrect. Plugins are defined and added programmatically in the codebase, not configured in the Azure Portal."  
+       - content: "Define a class with methods annotated using the `kernel_function` decorator"  
         isCorrect: true  
-        explanation: "Correct. Out-of-the-box tools include capabilities for code interpretation and interaction with data sources like Bing, making them ideal for this task."  
-      - content: "Securely managed data"  
-        isCorrect: false  
-        explanation: "Incorrect. Securely managed data handles conversation states but does not specifically provide tools for code interpretation or data source interaction."  
-      - content: "Enterprise-grade security"  
-        isCorrect: false  
-        explanation: "Incorrect. Enterprise-grade security ensures data privacy and compliance but does not specifically provide tools for code interpretation or data source interaction."  
-  
+        explanation: "Correct. The first step in using a plugin is defining a class and annotating its methods with the `kernel_function` decorator so the AI knows how to use them."  

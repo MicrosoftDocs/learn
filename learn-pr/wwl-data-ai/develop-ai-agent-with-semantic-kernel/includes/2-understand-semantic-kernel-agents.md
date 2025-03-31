@@ -1,6 +1,6 @@
 An AI agent is a program that uses generative AI to interpret data, make decisions, and perform tasks on behalf of users or other applications. AI agents rely on large language models to perform their tasks. Unlike conventional programs, AI agents can function autonomously, handling complex workflows and automating processes without requiring continuous human oversight.
 
-AI Agents can be developed using many different tools and platforms, including the Semantic Kernel SDK. Semantic Kernel is an open-source SDK that enables developers to easily integrate the latest AI models into their applications. Part of that SDK includes the *Semantic Kernel Agents Framework*, which allows developers to quickly create functional agents that can use natural language processing to complete tasks. 
+AI Agents can be developed using many different tools and platforms, including the Semantic Kernel SDK. Semantic Kernel is an open-source SDK that enables developers to easily integrate the latest AI models into their applications. Part of that SDK includes the *Semantic Kernel Agent Framework*, which allows developers to quickly create functional agents that can use natural language processing to complete tasks. 
 
 ## Semantic Kernel core components
 
@@ -16,9 +16,25 @@ The Semantic Kernel offers different components that can be used individually or
 
 - **Filters** - allow custom actions to be performed before and after a function or prompt is invoked. When registered, function filters act as outer layers and prompt filters as inner layers.
 
-## Agent framework core components
+## Agent framework components
 
-The Agent Framework within Semantic Kernel helps streamline the creation of agents and enables multi-agent collaboration in conversations while integrating human input. The framework uses these key components:
+The Agent Framework within Semantic Kernel helps streamline the creation of agents and enables multi-agent collaboration in conversations while integrating human input. The framework supports different types of agents, including `ChatCompletionAgent`, `OpenAIAssistantAgent`, and `AzureAIAgent`. 
+
+### What is an Azure AI Agent?
+
+The `AzureAIAgent` class provides a seamless way to build and interact with AI agents using the Azure AI Agent Service. It abstracts the complexity of managing AI agents by offering a more structured and intuitive interface within the Semantic Kernel Agent Framework. Key benefits include:
+
+- Simplified agent creation – The AzureAIAgent class allows developers to define AI agents with minimal configuration, leveraging the power of Azure AI Agent Service without managing the underlying infrastructure.
+
+- Automatic tool invocation – The agent can automatically call and execute tools, integrating seamlessly with Azure AI Search, Bing, Azure Functions, and more.
+
+- Thread and conversation management – Provides built-in mechanisms for managing conversation states, ensuring smooth multi-agent interactions.
+
+- Secure enterprise integration – Enables secure and compliant AI agent development with keyless authentication and customizable storage options.
+
+By using the `AzureAIAgent` class, developers can take full advantage of Azure AI Agent Service while taking advantage of the features offered by the Semantic Kernel SDK. This allows for robust AI-driven workflows that scale efficiently across enterprise applications.
+
+### Agent framework core concepts
 
 - **Agent** - abstraction for AI agents, with specialized subclasses like AzureAIAgent, allowing for task completion and human interaction in conversations.
 
