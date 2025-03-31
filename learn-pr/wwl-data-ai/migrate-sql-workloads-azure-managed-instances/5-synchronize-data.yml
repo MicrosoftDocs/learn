@@ -2,8 +2,6 @@
 uid: learn-wwl.migrate-sql-workloads-azure-managed-instances.synchronize-data
 title: Move data to SQL Managed Instance
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Move data to SQL Managed Instance
   description: "Learn how to move data to SQL Managed Instance."
   ms.date: 05/26/2021
@@ -13,4 +11,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-synchronize-data.md)]
+  [!include[](includes/5-synchronize-data.md)]

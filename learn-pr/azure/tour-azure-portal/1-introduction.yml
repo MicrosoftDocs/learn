@@ -2,8 +2,6 @@
 uid: learn.tour-azure-portal-features.1-introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to Azure portal features
   description: Explore the Azure portal features and how to customize it to meet your needs.
   ms.date: 01/17/2025
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-
+

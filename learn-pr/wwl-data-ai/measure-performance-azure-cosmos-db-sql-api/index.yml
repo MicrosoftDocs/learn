@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.measure-performance-azure-cosmos-db-sql-api
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Measure performance in Azure Cosmos DB for NoSQL
   description: "We learn to use Azure Monitor to create and analyze monitoring data for Azure Cosmos DB."
   ms.date: 04/23/2024
@@ -47,4 +45,4 @@ units:
 - learn.wwl.measure-performance-azure-cosmos-db-sql-api.knowledge-check
 - learn.wwl.measure-performance-azure-cosmos-db-sql-api.summary
 badge:
-  uid: learn.wwl.measure-performance-azure-cosmos-db-sql-api.badge
+  uid: learn.wwl.measure-performance-azure-cosmos-db-sql-api.badge

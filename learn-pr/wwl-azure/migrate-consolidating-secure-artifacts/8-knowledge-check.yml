@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-consolidating-secure-artifacts.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 05/08/2024
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. You can store them directly using universal packages. This is also a great way to protect your packages."
     - content: "Team Foundation Version Control."
       isCorrect: false
-      explanation: "Incorrect. You can store them directly using universal packages. This is also a great way to protect your packages."
+      explanation: "Incorrect. You can store them directly using universal packages. This is also a great way to protect your packages."

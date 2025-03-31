@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-initial-configuration-of-azure-active-directory.configure-manage-custom-domains
 title: Configure and manage custom domains
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure and manage custom domains
   description: "Configure and manage custom domains"
   ms.date: 09/03/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/7-configure-manage-custom-domains.md)]
+  [!include[](includes/7-configure-manage-custom-domains.md)]

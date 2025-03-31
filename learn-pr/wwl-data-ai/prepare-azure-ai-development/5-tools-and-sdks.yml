@@ -2,8 +2,6 @@
 uid: learn.wwl.prepare-azure-ai-development.tools-and-sdks
 title: Developer tools and SDKs
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Developer Tools and SDKs
   description: Consider the tools and SDKs you'll use to develop your AI solution.
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/5-tools-and-sdks.md)]
-
+

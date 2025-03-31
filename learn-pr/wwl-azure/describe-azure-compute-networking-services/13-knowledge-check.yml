@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-azure-compute-networking-services.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 09/20/2024
@@ -50,4 +48,4 @@ quiz:
       explanation: "Point-based VPN gateways aren't a type of VPN gateway."
     - content: "Route-based VPN gateway"
       isCorrect: true
-      explanation: "You should use a route-based VPN gateway. They're more resilient to topology changes such as the creation of new subnets."
+      explanation: "You should use a route-based VPN gateway. They're more resilient to topology changes such as the creation of new subnets."

@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-azure-cosmos-db-sql-api-sdk.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 03/09/2025
@@ -47,4 +45,4 @@ quiz:
       explanation: "Incorrect. **HttpRequest** is a framework-specific class to represent HTTP requests, and doesn't provide any extra functionality in the SDK."
     - content: "RequestHandler"
       isCorrect: true
-      explanation: "Correct. The **RequestHandler** abstract class defines an overridable method to inject logic in the HTTP request+response flow."
+      explanation: "Correct. The **RequestHandler** abstract class defines an overridable method to inject logic in the HTTP request+response flow."

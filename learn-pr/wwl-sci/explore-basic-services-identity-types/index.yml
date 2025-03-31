@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe the function and identity types of Microsoft Entra ID
   description: "Describe the function and identity types of Microsoft Entra ID"
   ms.date: 08/01/2024
@@ -42,4 +40,4 @@ units:
 - learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.knowledge-check
 - learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.summary-resources
 badge:
-  uid: learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.badge
+  uid: learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.badge

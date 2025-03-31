@@ -2,8 +2,6 @@
 uid: learn.wwl.load-balancing-https-traffic-azure.exercise-create-front-door-for-highly-available-web-application-using-azure-port
 title: 'Exercise: create a Front Door for a highly available web application'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: create a Front Door for a highly available web application'
   description: "Exercise: create a Front Door for a highly available web application"
   ms.date: 01/10/2025

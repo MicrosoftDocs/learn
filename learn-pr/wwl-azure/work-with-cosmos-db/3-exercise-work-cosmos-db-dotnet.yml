@@ -2,8 +2,6 @@
 uid: learn.wwl.work-with-cosmos-db.exercise-work-cosmos-db-dotnet
 title: 'Exercise: Create resources by using the Microsoft .NET SDK v3'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Create resources by using the Microsoft .NET SDK v3'
   description: "Exercise: Create resources by using the Microsoft .NET SDK v3"
   ms.date: 07/15/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 15
 content: |
-  [!include[](includes/3-exercise-work-cosmos-db-dotnet.md)]
+  [!include[](includes/3-exercise-work-cosmos-db-dotnet.md)]

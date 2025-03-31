@@ -2,8 +2,6 @@
 uid: learn.wwl.fine-tune-azure-databricks.fine-tune-concept
 title: What is fine-tuning?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is fine-tuning?
   description: "What is fine-tuning?"
   ms.date: 03/20/2025
@@ -15,4 +13,4 @@ labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/2-fine-tune-concept.md)]
-
+

@@ -2,8 +2,6 @@
 uid: learn.azure.intro-to-azure-vpn-gateway.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check.
   ms.date: 02/24/2024
@@ -56,4 +54,4 @@ quiz:
 
 
         
-
+

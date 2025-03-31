@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.responsible-language-models-azure-databricks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Review responsible AI principles for language models in Azure Databricks
   description: Review responsible AI principles for language models in in Azure Databricks
   ms.date: 03/20/2025
@@ -40,4 +38,4 @@ units:
 - learn.wwl.responsible-language-models-azure-databricks.summary
 badge:
   uid: learn.wwl.responsible-language-models-azure-databricks.badge
-
+

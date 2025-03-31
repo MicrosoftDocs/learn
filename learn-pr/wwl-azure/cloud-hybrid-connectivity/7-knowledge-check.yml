@@ -2,8 +2,6 @@
 uid: learn.wwl.cloud-hybrid-connectivity.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 04/27/2023
@@ -50,4 +48,4 @@ quiz:
       explanation: "That's correct. This will bring failed resources such as route tables, hub router, or the virtual hub resource back to the provisioning state."
     - content: "Select the Reset Hub option for the Virtual Router"
       isCorrect: false
-      explanation: "That's incorrect. This won't bring failed resources such as route tables, hub router, or the virtual hub resource back to the provisioning state."
+      explanation: "That's incorrect. This won't bring failed resources such as route tables, hub router, or the virtual hub resource back to the provisioning state."

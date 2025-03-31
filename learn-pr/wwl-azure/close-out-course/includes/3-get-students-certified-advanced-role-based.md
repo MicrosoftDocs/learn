@@ -6,7 +6,7 @@ Exam vouchers are required to take an ARB certification exam. Institutions have 
 
 1. Institutions can purchase academic volume licenses through Microsoft  
 
-1. Institutions can visit the PearsonVUE site to purchase vouchers directly at [Voucher prices & order forms](https://aka.ms/PVUEpricelist)  
+1. Institutions can visit the PearsonVUE site to purchase vouchers directly
 
 After attaining a Microsoft ARB Certification exam voucher, students must schedule a certification exam: 
 

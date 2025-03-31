@@ -2,11 +2,9 @@
 uid: learn.wwl.microsoft-defender-cloud-threat-protection.gain-application-and-end-user-context-for-ai-alerts
 title: Gain application and end-user context for AI alerts
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Gain application and end-user context for AI alerts
   description: "Gain application and end-user context for AI alerts"
-  ms.date: 02/28/2025
+  ms.date: 03/28/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

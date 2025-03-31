@@ -2,8 +2,6 @@
 uid: learn.introduction-azure-web-application-firewall.5-knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge.
   ms.date: 02/14/2024
@@ -49,4 +47,4 @@ quiz:
     - content: "Your web app development team lacks security expertise, time, and money."
       isCorrect: false
       explanation: "Incorrect. A lack of expertise, time, and money can prevent your team from covering all possible exploits, which can leave your app vulnerable. Azure Web Application Firewall protects against all OWASP exploits and can be deployed quickly and cost-effectively."
-
+

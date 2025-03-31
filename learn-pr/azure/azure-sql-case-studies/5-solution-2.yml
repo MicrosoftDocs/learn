@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-case-studies.5-solution-2
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Scenario 2 solution - Mission-critical application
   description: Scenario 2 solution - Mission-critical application
   ms.date: 03/15/2023
@@ -12,4 +10,4 @@ metadata:
 title: Scenario 2 solution - Mission-critical application
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-solution-2.md)]
+  [!include[](includes/5-solution-2.md)]

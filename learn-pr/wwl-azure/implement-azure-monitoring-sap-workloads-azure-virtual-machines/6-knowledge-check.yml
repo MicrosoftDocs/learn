@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-azure-monitoring-for-sap-workloads-azure-vms.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Check what you learned in this module."
   ms.date: 03/28/2024
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. Structured Query Language is used to query structured databases."
     - content: "XQuery"
       isCorrect: false
-      explanation: "Incorrect. XQuery is a language that can query structured or semi-structured XML data but not used for Azure Monitor log queries."
+      explanation: "Incorrect. XQuery is a language that can query structured or semi-structured XML data but not used for Azure Monitor log queries."

@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-streaming-architecture-patterns-with-delta-live-tables.maintain-data-consistency-and-reliability-with-structured-streaming
 title: Maintain data consistency and reliability with structured streaming
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Data consistency and reliability with structured streaming in Azure Databricks
   description: "Learn how to handle late arriving data with Delta Lake in Azure Databricks"
   ms.date: 7/25/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/04-maintain-data-consistency-and-reliability-with-structured-streaming.md)]
+  [!include[](includes/04-maintain-data-consistency-and-reliability-with-structured-streaming.md)]

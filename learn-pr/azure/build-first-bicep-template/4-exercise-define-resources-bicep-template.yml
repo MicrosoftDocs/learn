@@ -3,8 +3,6 @@ uid: learn.azure.deploy-azure-resources-bicep.define-resources-bicep-template
 title: Exercise - Define resources in a Bicep template
 sandbox: true
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Define resources in a Bicep template
   description: Learn how to define resources in Bicep and understand how Bicep treats dependencies between resources.
@@ -17,4 +15,4 @@ metadata:
 durationInMinutes: 12
 content: |
   [!include[](includes/4-exercise-define-resources-bicep-template.md)]
-
+

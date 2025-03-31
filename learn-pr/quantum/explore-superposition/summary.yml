@@ -2,16 +2,14 @@
 uid: learn.quantum.explore-superposition.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary.
   ms.date: 01/22/2025
-  author: SoniaLopezBravo
-  ms.author: sonialopez
-  manager: tedhudek
+  author: azure-quantum-content
+  ms.author: quantumdocwriters
+  
   ms.topic: unit
   show_latex: true
 durationInMinutes: 1
 content: |
-  [!include[](includes/summary.md)]
+  [!include[](includes/summary.md)]

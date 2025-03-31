@@ -2,13 +2,11 @@
 uid: learn.azure-well-architected-operational-excellence.establish-development-standards
 title: Establish development standards
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Establish development standards
   description: Learn how to establish development standards to improve your operational excellence.
   ms.date: 12/05/2023
-  author: claytonsiemens77
-  ms.author: csiemens
+  author: PageWriter-MSFT
+  ms.author: prwilk
   ms.topic: unit
 durationInMinutes: 15
 content: |

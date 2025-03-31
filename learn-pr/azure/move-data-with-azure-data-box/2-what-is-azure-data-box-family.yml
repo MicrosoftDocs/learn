@@ -2,8 +2,6 @@
 uid: learn.azure.move-data-with-azure-data-box.what-is-azure-data-box-family
 title: What is the Azure Data Box family?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is the Azure Data Box family?
   description: In this unit, you learn about the online and offline data transfer products in the Azure Data Box family.
   ms.date: 05/01/2023
@@ -28,4 +26,4 @@ quiz:
     - content: "Data Box Heavy"
       isCorrect: false
       explanation: "Data Box Heavy allows for up to 800 TB of data transfer and isn't applicable in this scenario."
-
+

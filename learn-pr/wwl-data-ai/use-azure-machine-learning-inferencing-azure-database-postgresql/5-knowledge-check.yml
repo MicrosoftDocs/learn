@@ -2,8 +2,6 @@
 uid: learn.wwl.use-azure-machine-learning-inferencing-azure-database-postgresql.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
@@ -51,4 +49,4 @@ quiz:
     - content: "Text."
       isCorrect: false
       explanation: "Incorrect. The `input_data` parameter must be in a JSON format."
-
+

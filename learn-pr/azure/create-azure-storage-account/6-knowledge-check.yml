@@ -3,8 +3,6 @@ uid: learn.create-azure-storage-account.6-knowledge-check
 title: Knowledge check - Create a storage account
 durationInMinutes: 3
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check - Create a storage account
   description: Questions about storage account properties and creation.
   ms.date: 09/18/2024
@@ -47,4 +45,4 @@ quiz:
     - content: "At the end, during resource cleanup."
       isCorrect: false
       explanation: "Storage accounts are stable for the lifetime of a project. It's common to create them at the start of a project."
-
+

@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.create-web-app-with-refreshable-models.2-conceptual-overview
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Conceptual overview
   description: Building a web app to perform inference against a local machine learning model.
   author: GitHubber17
@@ -16,4 +14,4 @@ title: Conceptual overview
 durationInMinutes: 10
 content: |
   [!include[](includes/2-conceptual-overview.md)]
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-databases-for-optimal-performance.explore-database-maintenance-checks
 title: Explore database maintenance checks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore database maintenance checks
   description: "Explore database maintenance checks"
   ms.date: 03/20/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-explore-database-maintenance-checks.md)]
+  [!include[](includes/2-explore-database-maintenance-checks.md)]

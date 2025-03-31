@@ -2,8 +2,6 @@
 uid: learn.wwl.detect-analyze-faces.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 09/13/2024
@@ -48,4 +46,4 @@ quiz:
       explanation: "Correct: The Face resource has face detections capabilities, and can be used in Vision Studio to understand its capabilities."
     - content: "Create a Face resource, and open Azure AI Studio"
       isCorrect: false
-      explanation: "Incorrect: Azure AI Studio doesn't include face detection capabilities."
+      explanation: "Incorrect: Azure AI Studio doesn't include face detection capabilities."

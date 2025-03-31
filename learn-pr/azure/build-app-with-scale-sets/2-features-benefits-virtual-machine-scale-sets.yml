@@ -3,11 +3,9 @@ uid: learn.build-app-with-scale-sets.features-benefits-virtual-machine-scale-set
 title: Features and benefits of Virtual Machine Scale Sets
 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Features and benefits of Virtual Machine Scale Sets
   description: Features and benefits of Virtual Machine Scale Sets
-  ms.date: 04/03/2024
+  ms.date: 03/24/2025
   author: ju-shim
   ms.author: jushiman
   ms.reviewer: mimckitt
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/2-features-benefits-virtual-machine-scale-sets.md)]
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-analyze-data-with-python.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 08/01/2024
@@ -51,4 +49,4 @@ quiz:
     - content: "The units_sold value is, on average, 97% of the avg_temp value"
       isCorrect: false
       explanation: "Incorrect. The corr method returns the correlation between two numeric columns."
-
+

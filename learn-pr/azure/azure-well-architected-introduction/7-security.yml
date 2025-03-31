@@ -2,13 +2,11 @@
 uid: learn.azure-well-architected-introduction.7-security
 title: Security
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Security
   description: Security
   ms.date: 04/17/2023
-  author: martinekuan
-  ms.author: martinek
+  author: PageWriter-MSFT
+  ms.author: prwilk
   ms.topic: unit
 durationInMinutes: 10
 content: |
@@ -46,4 +44,4 @@ quiz:
     - content: "Ransomware that encrypts the disks of a virtual machine."
       isCorrect: false
       explanation: "Ransomware attacks are at the VM or compute layer."
-
+

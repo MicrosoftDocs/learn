@@ -2,8 +2,6 @@
 uid: learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.understand-data-storage-for
 title: Understand data storage for a modern data warehouse
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand data storage for a modern data warehouse
   description: "Understand data storage for a modern data warehouse"
   ms.date: 07/30/2024
@@ -19,4 +17,4 @@ labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/6-understand-data-storage.md)]
-
+

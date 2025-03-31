@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-high-availability.2-backup-restore
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Backup and restore
   description: Backup and restore
   ms.date: 11/29/2023
@@ -12,4 +10,4 @@ metadata:
 title: Backup and restore
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-backup-restore.md)]
+  [!include[](includes/2-backup-restore.md)]

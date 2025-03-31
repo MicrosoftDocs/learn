@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-what-is
 title: Describe Microsoft Entra ID
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe Microsoft Entra ID
   description: "Describe Microsoft Entra ID"
   ms.date: 08/01/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-describe-azure-active-directory.md)]
+  [!include[](includes/2-describe-azure-active-directory.md)]

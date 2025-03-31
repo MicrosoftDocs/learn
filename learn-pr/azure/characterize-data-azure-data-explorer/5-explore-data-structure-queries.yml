@@ -2,8 +2,6 @@
 uid: learn.azure.characterize-dataset-azure-data-explorer.explore-data-structure-queries
 title: Explore the data structure using queries
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: introduction
   title: Explore the data structure using queries
   description: "Explore the data structure using queries."
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/5-explore-data-structure-queries.md)]
-
+

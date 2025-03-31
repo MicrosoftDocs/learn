@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-defender-cloud-azure-arc-enabled-servers.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 06/11/2024
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. While this is a method, it is not the recommended one for connecting non-Azure machines."
     - content: "Onboarding with Azure Arc"
       isCorrect: true
-      explanation: "Correct. Azure Arc enabled servers is the recommended method for onboarding non-Azure machines."
+      explanation: "Correct. Azure Arc enabled servers is the recommended method for onboarding non-Azure machines."

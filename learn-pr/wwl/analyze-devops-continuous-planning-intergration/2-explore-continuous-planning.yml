@@ -2,8 +2,6 @@
 uid: learn.wwl.analyze-devops-continuous-planning-intergration.explore-continuous-planning
 title: Explore Continuous Planning
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Continuous Planning
   description: "Explore Continuous Planning"
   ms.date: 09/20/2020
@@ -13,4 +11,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-explore-continuous-planning.md)]
+  [!include[](includes/2-explore-continuous-planning.md)]

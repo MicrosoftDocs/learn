@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.startups.pitch-company
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: How to pitch your company
   description: Learn how to pitch your startup to investors, discover what makes a pitch effective, and get tips for delivering compelling pitches.
   ms.date: 04/22/2024
@@ -47,4 +45,4 @@ units:
 - learn.startups.pitch-company.summary
 badge:
   uid: learn.startups.pitch-company.badge
-
+

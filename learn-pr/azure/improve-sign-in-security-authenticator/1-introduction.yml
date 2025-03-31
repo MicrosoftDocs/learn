@@ -2,8 +2,6 @@
 uid: learn.improve-sign-in-security-authenticator.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: "You can improve sign-in security by helping users to set up Microsoft Authenticator whenever they sign in. Understand security of different authentication methods and choose a way to help users switch to methods with better security."
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/1-introduction.md)]

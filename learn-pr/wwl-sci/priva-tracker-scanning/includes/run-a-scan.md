@@ -35,7 +35,7 @@ In this step, define what the scan should detect:
   - **Consent banners**
   - **Privacy statements**
 
-To add a compliance object, enter its location path manually or use the Microsoft Edge extension to generate and upload a JSON file. For more information, see [Collecting location paths](/privacy/priva/location-paths?azure-portal=true).
+To add a compliance object, enter its location path manually or use the Microsoft Edge extension to generate and upload a JSON file.
 
 ## Scheduling scans
 

@@ -2,8 +2,6 @@
 uid: learn.wwl.fundamentals-azure-ai-services.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 10/03/2024
@@ -47,4 +45,4 @@ quiz:
       explanation: "Incorrect. The Azure AI Face resource is one of many Azure AI services."
     - content: "A single-service resource for Azure AI Search"
       isCorrect: false
-      explanation: "Incorrect. Azure AI Search is the single-service resource for Azure AI Search."
+      explanation: "Incorrect. Azure AI Search is the single-service resource for Azure AI Search."

@@ -2,8 +2,6 @@
 uid: learn.wwl.design-implement-private-access-to-azure-services.integrate-private-link-dns
 title: Integrate private endpoint with Domain Name Service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Integrate private endpoint with Domain Name Service
   description: "Integrate private endpoint with Domain Name Service"
   ms.date: 01/30/2025

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-validate-permissions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure and validate permissions
   description: Configure and validate permissions.
   ms.date: 01/18/2024
@@ -59,4 +57,4 @@ units:
 - learn.wwl.configure-validate-permissions.summary
 badge:
   uid: learn.wwl.configure-validate-permissions.badge
-
+

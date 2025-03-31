@@ -10,4 +10,4 @@ You can also highlight data that falls within a set of criteria, such as values 
 
 In this video, you'll see how a heat map can be applied to a dataset to display the values within a column using a color scale:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TYJ8]
+> [!VIDEO 1c31712d-42da-4e48-a6ea-803d26c61641]

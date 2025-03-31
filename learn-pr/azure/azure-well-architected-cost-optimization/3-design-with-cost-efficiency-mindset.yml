@@ -2,13 +2,11 @@
 uid: learn.azure-well-architected-cost-optimization.design-with-cost-efficiency-mindset
 title: Design with a cost-efficiency mindset
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design with a cost-efficiency mindset
   description: Learn how to spend only on what you need to achieve the highest return on your investments.
   ms.date: 10/23/2023
-  author: martinekuan
-  ms.author: martinek
+  author: PageWriter-MSFT
+  ms.author: prwilk
   ms.topic: unit
 durationInMinutes: 12
 content: |
@@ -59,4 +57,4 @@ quiz:
           explanation: "Incorrect.  Although MFA is a good security practice, it isn’t directly related to the workload's cost."
         - content: "Use Azure Policy to enforce the use of cost-efficient SKUs"
           isCorrect: true
-          explanation: "Correct.  By using Azure Policy to enforce the use of cost-efficient SKUs, the workload team can ensure that higher-priced SKUs aren’t deployed without approval."
+          explanation: "Correct.  By using Azure Policy to enforce the use of cost-efficient SKUs, the workload team can ensure that higher-priced SKUs aren’t deployed without approval."

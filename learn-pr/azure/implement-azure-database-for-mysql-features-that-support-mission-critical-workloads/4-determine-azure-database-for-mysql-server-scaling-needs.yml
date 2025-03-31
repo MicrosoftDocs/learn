@@ -2,8 +2,6 @@
 uid: learn.implement-azure-database-for-mysql-features-support-mission-critical-workloads.determine-azure-database-for-mysql-server-scaling-needs
 title: Determine Azure Database for MySQL server scaling needs
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Determine Azure Database for MySQL server scaling needs
   description: "This unit covers performance features for Azure Database for MySQL - Flexible Server: monitoring, tuning, Autoscale IOPS, and read replicas."
   ms.date: 08/28/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/4-determine-azure-database-for-mysql-server-scaling-needs.md)]
-
+

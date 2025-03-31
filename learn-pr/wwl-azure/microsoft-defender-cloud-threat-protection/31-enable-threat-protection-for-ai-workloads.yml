@@ -2,11 +2,9 @@
 uid: learn.wwl.microsoft-defender-cloud-threat-protection.enable-threat-protection-for-ai-workloads
 title: Enable threat protection for AI workloads in Defender for Cloud
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Enable threat protection for AI workloads in Defender for Cloud
   description: "Enable threat protection for AI workloads in Defender for Cloud"
-  ms.date: 02/28/2025
+  ms.date: 03/28/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

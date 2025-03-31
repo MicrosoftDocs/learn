@@ -2,8 +2,6 @@
 uid: learn.wwl.advanced-security-compute.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 06/10/2024
@@ -72,4 +70,4 @@ quiz:
       explanation: "Unrestricted ingress and egress rules would allow all types of traffic, negating the benefits of network isolation."
     - content: "Using network policies to control ingress and egress traffic"
       isCorrect: true
-      explanation: "Network policies in AKS enable administrators to define rules that govern ingress and egress traffic to pods, enhancing security."
+      explanation: "Network policies in AKS enable administrators to define rules that govern ingress and egress traffic to pods, enhancing security."

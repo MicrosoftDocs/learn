@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.control-authentication-with-apim
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Control authentication for your APIs with Azure API Management
   description: Discover how to protect your APIs from unauthorized use with API keys and client certificate authentication.
   ms.date: 06/13/2023
@@ -44,4 +42,4 @@ units:
 - learn.control-authentication-with-apim.6-summary
 badge:
   uid: learn.control-authentication-with-apim.badge
-
+

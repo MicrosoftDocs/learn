@@ -200,6 +200,10 @@
       "redirect_url": "/training/modules/deploy-paas-solutions-with-azure-sql/"
     },
     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/explore-iaas-paas-platform-tools-for-high-availability-disaster-recovery/4-describe-temporal-tables-azure-sql-database.yml",
+      "redirect_url": "/training/modules/explore-iaas-paas-platform-tools-for-high-availability-disaster-recovery/"
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/describe-performance-monitoring/6-describe-azure-sql-insights.yml",
       "redirect_url": "/training/modules/describe-performance-monitoring/"
     },
@@ -46033,6 +46037,41 @@
     {
       "source_path": "learn-pr/wwl-data-ai/use-tools-optimize-power-bi-performance/7-summary.md",
       "redirect_url": "/training/modules/optimize-model-power-bi/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-microsoft-purview/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-microsoft-purview/2-what-is-microsoft-purview.yml",
+      "redirect_url": "https://learn.microsoft.com/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-microsoft-purview/3-how-microsoft-purview-works.yml",
+      "redirect_url": "https://learn.microsoft.com/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-microsoft-purview/4-when-to-use-microsoft-purview.yml",
+      "redirect_url": "https://learn.microsoft.com/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-microsoft-purview/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-microsoft-purview/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-microsoft-purview/index.yml",
+      "redirect_url": "https://learn.microsoft.com/purview/",
       "redirect_document_id": false
     },
     {

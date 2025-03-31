@@ -2,8 +2,6 @@
 uid: learn.wwl.train-evaluate-deep-learn-models.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 07/10/2024
@@ -59,4 +57,4 @@ quiz:
       explanation: "Incorrect. Increasing the number of filters would increase the number of feature maps."
     - content: "Add a pooling layer after the convolutional layer"
       isCorrect: true
-      explanation: "Correct. A pooling layer reduces the number of features in a feature map."
+      explanation: "Correct. A pooling layer reduces the number of features in a feature map."

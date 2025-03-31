@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-firewall-manager.5-knowledge-check  
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check
@@ -71,4 +69,4 @@ quiz:
     - content: "Two instances of Firewall Manager must be implemented to support this requirement."
       isCorrect: false
       explanation: "Incorrect. You don't need multiple instances of Firewall Manager to support this requirement."
-
+

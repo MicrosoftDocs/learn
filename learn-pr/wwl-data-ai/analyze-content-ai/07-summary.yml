@@ -2,8 +2,6 @@
 uid: learn.wwl.analyze-content-ai.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Reflect on what you've learned about Azure AI Content Understanding.
   author: wwlpublish
