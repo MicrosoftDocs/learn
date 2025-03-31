@@ -22,7 +22,7 @@ quiz:
     choices:
     - content: "SaaS directory"
       isCorrect: false
-      explanation: "Incorrect. Application publishers/vendors who integrate with Microsoft Entra ID are required to have an SaaS directory."
+      explanation: "Incorrect. Application publishers/vendors who integrate with Microsoft Entra ID are required to have a SaaS directory."
     - content: "App gallery directory"
       isCorrect: true
       explanation: "Correct. The two directories that Microsoft maintains are the App gallery directory and the Microsoft services directory."

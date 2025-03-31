@@ -5,7 +5,7 @@ For applications your organization has developed or for those that are registere
 
 Granting tenant-wide admin consent requires you to sign in as a user that is authorized to consent on behalf of the organization. This includes Privileged Role Administrator. A user can also be authorized to grant tenant-wide consent if they're assigned a custom directory role that includes the permission to grant permissions to applications.
 
-1. In a previous exercise, you created an app named Demo app. If necessary, in Microsoft Azure, browse to **Microsoft Entra ID** then **App registrations** then Demo app.\*\*
+1. In a previous exercise, you created an app named Demo app. If necessary, in Microsoft Azure, browse to **Microsoft Entra ID** then **App registrations** then Demo app.
 2. On the **Demo app** screen, locate and copy and save each **Application (client) ID** and **Directory (tenant) ID** values so that you can use them later.
     
    :::image type="content" source="../media/demo-app-directory-id.png" alt-text="Screenshot of the Demo app screen with the directory ID highlighted for usage in your registration.":::
