@@ -46040,6 +46040,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/intro-to-microsoft-purview/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-microsoft-purview/2-what-is-microsoft-purview.yml",
+      "redirect_url": "https://learn.microsoft.com/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-microsoft-purview/3-how-microsoft-purview-works.yml",
+      "redirect_url": "https://learn.microsoft.com/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-microsoft-purview/4-when-to-use-microsoft-purview.yml",
+      "redirect_url": "https://learn.microsoft.com/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-microsoft-purview/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-microsoft-purview/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-microsoft-purview/index.yml",
+      "redirect_url": "https://learn.microsoft.com/purview/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/improve-api-developer-experience-with-swagger/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/aspnet/core/fundamentals/openapi/aspnetcore-openapi",
       "redirect_document_id": false
