@@ -1,14 +1,14 @@
 Contain a threat by not letting risky devices access your corporate resources through Conditional Access.
 
-You'll need a Microsoft Intune environment, with Intune managed and Entra ID joined Windows 10 or higher devices.
+You need a Microsoft Intune environment, with Intune managed and Entra ID joined Windows 10 or higher devices.
 
 The required roles to access these portals and implement Conditional access:
 
-- Microsoft Defender portal - You'll need to sign in to the portal with a global administrator role to turn on the integration.
+- Microsoft Defender portal - To configure roles in the Microsoft Defender portal, you need to sign in with the Security Administrator role. To manage portal advanced settings, you need the Microsoft Defender for Endpoint Administrator role.
 
-- Intune - You'll need to sign in to the portal with security administrator rights with management permissions.
+- Intune - You need to sign in to the portal with Security Administrator rights with management permissions.
 
-- Entra ID portal - You'll need to sign in as a global administrator, security administrator, or Conditional Access administrator.
+- Entra ID portal - You need to sign in as a Security Administrator, or Conditional Access administrator.
 
 <!--- >:::image type="content" source="../media/mde-architecture.png" alt-text="Diagram of architecture for M D E conditional access."::: --->
 
