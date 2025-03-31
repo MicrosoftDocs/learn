@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.develop-ai-agent-with-semantic-kernel.understand-semantic-kernel
+uid: learn.wwl.develop-ai-agent-with-semantic-kernel.understand-semantic-kernel-agents
 title: Understand Semantic Kernel AI Agents
 metadata:
   title: Understand Semantic Kernel AI Agents
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-understand-semantic-kernel.md)]
+  [!include[](includes/2-understand-semantic-kernel-agents.md)]

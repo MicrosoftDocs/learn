@@ -42,6 +42,6 @@ quiz:
       - content: "Configure the plugin in Azure Portal before using it in Semantic Kernel"  
         isCorrect: false  
         explanation: "Incorrect. Plugins are defined and added programmatically in the codebase, not configured in the Azure Portal."  
-       - content: "Define a class with methods annotated using the `kernel_function` decorator"  
+      - content: "Define a class with methods annotated using the `kernel_function` decorator"  
         isCorrect: true  
         explanation: "Correct. The first step in using a plugin is defining a class and annotating its methods with the `kernel_function` decorator so the AI knows how to use them."  
