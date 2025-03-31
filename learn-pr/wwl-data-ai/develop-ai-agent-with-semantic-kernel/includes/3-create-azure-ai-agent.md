@@ -7,15 +7,62 @@ An AzureAIAgent object encapsulates all the core capabilities you typically use 
 To use an AzureAIAgent:
 1. Create an Azure AI Foundry project
 1. Add the project connection string to your Semantic Kernel application code
+1. Create an AzureAIAgentSettings object
 1. Create an AzureAIAgent client
 1. Create an agent definition on the agent service provided by the client
 1. Create an agent based on the definition
 
-Once your agent is defined, you can interact with your agent and invoke responses for inputs.
+Here is the code that illustrates how to create an AzureAIAgent:
+
+```python
+from azure.identity.aio import DefaultAzureCredential
+from semantic_kernel.agents import AzureAIAgent, AzureAIAgentSettings
+
+# Create an AzureAIAgentSettings object
+ai_agent_settings = AzureAIAgentSettings.create()
+
+# Create an AzureAIAgent client
+async with (@
+    DefaultAzureCredential() as creds,
+    AzureAIAgent.create_client(credential=creds) as client,
+):
+    # Create an agent definition on the agent service provided by the client
+    agent_definition = await client.agents.create_agent(
+        model=ai_agent_settings.model_deployment_name,
+        name="<name>",
+        instructions="<instructions>",
+    )
+
+    # Create the AI agent based on the agent definition
+    agent = AzureAIAgent(
+        client=client,
+        definition=agent_definition,
+    )
+```
+
+Once your agent is defined, you can interact with your agent and invoke responses for inputs. To invoke responses, you create an agent thread and use the agent to add prompt and retrieve a response. For example:
+
+```python
+thread: AzureAIAgentThread = AzureAIAgentThread()
+
+try:
+    # Create a prompt 
+    prompt = "What are the largest semiconductor manufacturing companies?"
+
+    # Instruct the agent to add a message to the thread
+    await agent.add_chat_message(thread_id=thread.id, message=prompt)
+
+    # Invoke the agent for response on the thread
+    response = await agent.get_response(thread_id=thread.id)
+finally:
+    await thread.delete() if thread else None
+```
 
 ### AzureAIAgent key components
 
 The Semantic Kernel AzureAIAgent object relies on the following components to function:
+
+- **AzureAISAgentSettings** - an object that automatically includes the Azure AI Agent settings from the environment configuration. These settings will be used by the AzureAIAgents you create.
 
 - **AzureAIAgent client** - an object that manages the connection to your Azure AI Foundry project. This object allows you to access the services and models associated with your project. 
 
