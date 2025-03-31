@@ -2,9 +2,11 @@
 uid: learn.wwl.implement-app-registration.register-application
 title: Register an application
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Register an application
   description: "Register an application"
-  ms.date: 03/28/2025
+  ms.date: 03/31/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit

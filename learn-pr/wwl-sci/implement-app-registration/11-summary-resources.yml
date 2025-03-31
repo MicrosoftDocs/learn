@@ -2,9 +2,11 @@
 uid: learn.wwl.implement-app-registration.summary-resources
 title: Summary and resources
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary and resources
   description: "Summary and resources"
-  ms.date: 03/28/2025
+  ms.date: 03/31/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit

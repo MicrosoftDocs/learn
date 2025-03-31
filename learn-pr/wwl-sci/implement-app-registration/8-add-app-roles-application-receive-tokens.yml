@@ -2,9 +2,11 @@
 uid: learn.wwl.implement-app-registration.add-app-roles-to-application-receive-tokens
 title: Exercise add app roles to an application and receive tokens
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise add app roles to an application and receive tokens
   description: "Exercise add app roles to an application and receive tokens"
-  ms.date: 03/28/2025
+  ms.date: 03/31/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
