@@ -4,7 +4,7 @@ title: Block at risk devices
 metadata:
   title: Block at risk devices
   description: "Block at risk devices"
-  ms.date: 1/7/2025
+  ms.date: 3/31/2025
   author: wwlpublish
   ms.author: kelawson
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 11
 content: |
-  [!include[](includes/5-block-risk-devices.md)]
+  [!include[](includes/5-block-risk-devices.md)]
