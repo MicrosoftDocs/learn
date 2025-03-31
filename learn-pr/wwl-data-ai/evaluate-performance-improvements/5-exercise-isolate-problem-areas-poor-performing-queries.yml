@@ -4,8 +4,8 @@ title: 'Exercise: Isolate problem areas in poorly performing queries'
 metadata:
   title: 'Exercise: Isolate problem areas in poorly performing queries'
   description: "Exercise: Isolate problem areas in poorly performing queries"
-  ms.date: 07/13/2022
-  author: wwlpublish
+  ms.date: 03/31/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
@@ -13,4 +13,4 @@ labId: 119515
 labModal: true
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-exercise-isolate-problem-areas-poor-performing-queries.md)]
+  [!include[](includes/5-exercise-isolate-problem-areas-poor-performing-queries.md)]
