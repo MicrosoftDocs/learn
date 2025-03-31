@@ -100,6 +100,8 @@ export MYSQL_USER=<MySQL-admin-user-name>
 export MYSQL_PASSWORD=<MySQL-password>
 ```
 
+[!INCLUDE [security-note](../../../includes/security-note.md)]
+
 ## Get data from the sample database
 
 In this module, you use a sample database called `world` from the official MySQL website. To get the data, use the following steps:

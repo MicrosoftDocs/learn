@@ -123,6 +123,37 @@ Console.WriteLine(today.IsWeekend()); // Outputs: True
 > [!TIP]
 > Use extension methods to enhance enums without modifying their definition, making them more versatile and reusable.
 
+## Practical example: Using enums to manage order statuses
+
+Enums are often used in applications to represent predefined values. For example, in an e-commerce application, you can use an enum to manage order statuses:
+
+```csharp
+enum OrderStatus
+{
+    Pending,
+    Shipped,
+    Delivered,
+    Cancelled
+}
+
+class Order
+{
+    public int OrderId { get; set; }
+    public OrderStatus Status { get; set; }
+
+    public void UpdateStatus(OrderStatus newStatus)
+    {
+        Status = newStatus;
+        Console.WriteLine($"Order {OrderId} status updated to {Status}");
+    }
+}
+
+var order = new Order { OrderId = 123, Status = OrderStatus.Pending };
+order.UpdateStatus(OrderStatus.Shipped);
+```
+
+This example demonstrates how to define an enum for order statuses, use it in a class, and update the status of an order. It helps beginners see how enums can be applied in a real-world scenario.
+
 ## Use object initializers with structs
 
 Define a struct with properties to group related data together and make it easier to initialize and work with instances of the struct.

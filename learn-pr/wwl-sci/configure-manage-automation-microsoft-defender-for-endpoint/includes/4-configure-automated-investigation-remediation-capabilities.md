@@ -2,13 +2,18 @@ To configure automated investigation and remediation, turn on the features, and 
 
 ## **Turn on automated investigation and remediation**
 
-As a global administrator or security administrator:
+As a Global Administrator or Security Administrator:
 
 1. In the navigation pane, select **Settings > Endpoints**.
 
 1. In the General section, select **Advanced features**.
 
-1. Turn on both Automated Investigation and Automatically resolve alerts.
+1. Turn on **Automatically resolve alerts**.
+
+    > [!NOTE]
+    > The **Automated Investigation** option is gone from the advanced features setting in Defender for Endpoint. Automated investigation is now enabled by default.
+
+1. Select the **Save preferences** button.
 
 ## Set up device groups
 
@@ -24,7 +29,7 @@ As a global administrator or security administrator:
 
         - In the Devices section, use one or more conditions to identify and include devices.
 
-        - On the User access tab, select the Azure Active Directory groups that should have access to the device group you're creating.
+        - On the User access tab, select the Entra ID groups that should have access to the device group you're creating.
 
 1. Select **Done** when you're finished setting up your device group.
 
@@ -74,5 +79,4 @@ Using the no automation option isn't recommended because it reduces the security
 
 ## Quickly configure remediation levels on device groups
 
-Another way to set or update remediation levels on Device groups is in the Settings, General, Auto remediation page.  The page provides a list of Device groups and the current remediation level for each.  Select the row will allow you to adjust the remediation setting.
-
+Another way to set or update remediation levels on Device groups is in the Settings, General, Auto remediation page.  The page provides a list of Device groups and the current remediation level for each.  Selecting the row allows you to adjust the remediation setting.
