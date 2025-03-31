@@ -4,8 +4,8 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/28/2022
-  author: wwlpublish
+  ms.date: 03/31/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
@@ -31,7 +31,7 @@ quiz:
     choices:
     - content: "102,400"
       isCorrect: true
-      explanation: "That's correct. 102,400 is the minimum number of rows to bulk insert into a columnstore index, fewer rows will use a normal insert operation."
+      explanation: "That's correct. 102,400 is the minimum number of rows to bulk insert into a columnstore index, fewer rows use a normal insert operation."
     - content: "1,000,000"
       isCorrect: false
       explanation: "That's incorrect. While this row count would be bulk inserted, it's well above the minimum."
@@ -48,4 +48,4 @@ quiz:
       explanation: "That's incorrect. Clustered index is recommended for primary key column."
     - content: "Nonclustered index"
       isCorrect: false
-      explanation: "That's incorrect. Columnstore index is recommended for queries that run large aggregation workloads."
+      explanation: "That's incorrect. Columnstore index is recommended for queries that run large aggregation workloads."
