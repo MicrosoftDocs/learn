@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-enum-struct-record-types.use-enums-represent-named-constants-csharp
+title: Use enums to represent named constants in C#
+metadata:
+  title: Use enums to represent named constants in C#
+  description: "Learn how to use enums in C# to define named constants and improve code readability."
+  ms.date: 03/31/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-use-enums-represent-named-constants-csharp.md)]

@@ -2,8 +2,6 @@
 uid: learn.wwl.monitor-maintain-azure-active-directory.connect-data-from-azure-ad-to-azure-sentinel
 title: 'Exercise connect data from Microsoft Entra ID to Microsoft Sentinel '
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise connect data from Microsoft Entra ID to Microsoft Sentinel
   description: "Exercise connect data from Microsoft Entra ID to Microsoft Sentinel"
   ms.date: 12/23/2024

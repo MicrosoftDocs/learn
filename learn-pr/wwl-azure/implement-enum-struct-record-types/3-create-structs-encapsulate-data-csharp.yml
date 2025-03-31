@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-enum-struct-record-types.create-structs-encapsulate-data-csharp
+title: Create encapsulated data with structs in C#
+metadata:
+  title: Create encapsulated data with structs in C#
+  description: "Learn how to use structs in C# to group related data into lightweight, efficient containers."
+  ms.date: 03/31/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-create-structs-encapsulate-data-csharp.md)]

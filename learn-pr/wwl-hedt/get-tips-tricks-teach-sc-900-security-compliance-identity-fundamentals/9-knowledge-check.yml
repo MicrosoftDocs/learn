@@ -2,8 +2,6 @@
 uid: learn.wwl.get-tips-tricks-teach-sc-900-security-compliance-identity-fundamentals.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 04/07/2023
@@ -48,4 +46,4 @@ quiz:
       explanation: "Feedback: Correct. Instructors should complete the demos before demonstrations in front of students to ensure you can easily navigate the UI and are familiar with each step in the demo process."
     - content: "It isn't necessary to complete the demos since they're not included in the certification."
       isCorrect: false
-      explanation: "Feedback: Incorrect. While demos aren't included in the certification exam, they're an important part of student learning. Instructors should complete the demos before demonstrations in front of students to ensure you can easily navigate the UI and are familiar with each step in the demo process."
+      explanation: "Feedback: Incorrect. While demos aren't included in the certification exam, they're an important part of student learning. Instructors should complete the demos before demonstrations in front of students to ensure you can easily navigate the UI and are familiar with each step in the demo process."

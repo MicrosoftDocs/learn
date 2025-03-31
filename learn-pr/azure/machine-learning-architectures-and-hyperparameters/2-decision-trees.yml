@@ -2,12 +2,14 @@
 uid: learn.machinelearning.machine-learning-architectures-and-hyperparameters.decision-trees
 title: Decision trees and model architecture
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Decision trees and model architecture
   description: Conceptual unit about decision trees and model architecture
-  ms.date: 07/21/2024
+  ms.date: 03/24/2025
   author: s-polly
   ms.author: scottpolly
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-decision-trees.md)]
+  [!include[](includes/2-decision-trees.md)]

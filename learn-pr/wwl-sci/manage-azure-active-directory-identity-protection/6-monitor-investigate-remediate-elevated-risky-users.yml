@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-azure-ad-identity-protection.monitor-investigate-remediate-elevated-risky-users
 title: Monitor, investigate, and remediate elevated risky users
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Monitor, investigate, and remediate elevated risky users
   description: "Monitor, investigate, and remediate elevated risky users"
   ms.date: 02/21/2025
