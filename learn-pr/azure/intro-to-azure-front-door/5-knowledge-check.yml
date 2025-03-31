@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check
-  ms.date: 10/16/2023
+  ms.date: 03/31/2025
   author: duongau
   ms.author: duau
   ms.topic: unit
@@ -69,4 +69,4 @@ quiz:
     - content: "Managed rule sets"
       isCorrect: false
       explanation: "Incorrect. Managed rule sets are collections of preconfigured rules and are processed after custom rules."
-
+
