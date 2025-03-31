@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-exercises.explore-embedded-defender-for-cloud
+title: Explore the capabilities of Copilot in Microsoft Defender for Cloud
+metadata:
+  title: Explore the capabilities of Copilot in Microsoft Defender for Cloud
+  description: Explore the capabilities of Copilot in Microsoft Defender for Cloud.
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.date: 03/28/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 30
+content: |
+  [!include[](includes/9b-explore-embedded-defender-for-cloud.md)]

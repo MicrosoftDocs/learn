@@ -5,7 +5,7 @@ metadata:
   description: Explore use cases of Microsoft Security Copilot.
   author: wwlpublish
   ms.author: ceperezb
-  ms.date: 11/20/2024
+  ms.date: 03/31/2025
   ms.service: security-copilot
   ai-usage: ai-assisted
   ms.topic: module-standard-task-based
@@ -18,9 +18,8 @@ abstract: |
     - "Set up Microsoft Security Copilot."
     - "Work with sources in Copilot."
     - "Create a custom promptbook."
-    - "Use the capabilities of Copilot in Defender XDR."
-    - "Use the capabilities of Copilot in Microsoft Purview."
-    - "Use the capabilities of Copilot in Microsoft Entra."
+    - "Use the capabilities of Copilot embedded within our security solutions, including Microsoft Purview, Microsoft Entra, and Microsoft Defender for Cloud."
+
 prerequisites: |
   - Working knowledge of security operations and incident response
   - Working knowledge of Microsoft Security solutions and services
@@ -52,6 +51,7 @@ units:
 - learn.security-copilot-exercises.explore-embedded-defender-xdr
 - learn.security-copilot-exercises.explore-embedded-purview
 - learn.security-copilot-exercises.explore-embedded-entra
+- learn.security-copilot-exercises.explore-embedded-defender-for-cloud
 - learn.security-copilot-exercises.knowledge-check
 - learn.security-copilot-exercises.summary
 badge:

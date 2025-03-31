@@ -5,7 +5,7 @@ You went through a first run experience using the Microsoft Security Copilot wiz
 
 The module then moved on to exercises focused on managing sources. You configured a Microsoft plugin. You added a custom plugin and ran prompts using that plugin. You integrated a knowledge base into Copilot using file upload and ran prompts that reasoned over that knowledge base.
 
-Lastly, you explored the capabilities of Copilot embedded in Defender XDR and Purview.
+Lastly, you explored the capabilities of Copilot embedded in Defender XDR, Purview, Microsoft Entra, and Defender for Cloud.
 
 Now that you completed this module, you can:
 
@@ -20,6 +20,7 @@ Now that you completed this module, you can:
 - [Get started with Microsoft Security Copilot](/copilot/security/get-started-security-copilot)
 - [Plugins overview Microsoft Security Copilot](/copilot/security/plugin-overview)
 - [Build your own promptbooks](/copilot/security/build-promptbooks)
-- [Microsoft Security Copilot in Microsoft Defender XDR](/microsoft-365/security/defender/security-copilot-in-microsoft-365-defender)
-- [Microsoft Copilot in Intune (public preview)](/mem/intune/copilot/copilot-intune-overview)
-- [Microsoft Security Copilot in Microsoft Purview](/purview/copilot-in-purview-overview)
+- [Security Copilot in Microsoft Defender XDR](/microsoft-365/security/defender/security-copilot-in-microsoft-365-defender)
+- [Security Copilot in Microsoft Purview](/purview/copilot-in-purview-overview)
+- [Security Copilot in Microsoft Entra](/entra/fundamentals/copilot-security-entra)
+- [Security Copilot in Defender for Cloud (Preview)](/azure/defender-for-cloud/copilot-security-in-defender-for-cloud)
