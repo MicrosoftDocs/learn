@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-agent-with-semantic-kernel.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This unit contains a knowledge check which can help learners reinforce their understanding of the material.
+  author: buzahid
+  ms.author: buzahid
+  ms.date: 03/25/2025
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "What is the first step in setting up Azure AI Agent Service?"  
+    choices:  
+      - content: "Deploy a compatible model"  
+        isCorrect: false  
+        explanation: "Incorrect. Deploying a compatible model is the second step. The first step is to create an Azure AI Foundry hub and project."  
+      - content: "Create an Azure AI Foundry hub and project"  
+        isCorrect: true  
+        explanation: "Correct. The first step in setting up Azure AI Agent Service is to create an Azure AI Foundry hub and project in your Azure subscription."  
+      - content: "Make API calls using SDKs"  
+        isCorrect: false  
+        explanation: "Incorrect. Making API calls using SDKs is the third step after deploying a compatible model."  
+  - content: "Which feature of Azure AI Agent Service ensures data privacy and compliance?"  
+    choices:  
+      - content: "Automatic tool calling"  
+        isCorrect: false  
+        explanation: "Incorrect. Automatic tool calling handles the tool-calling lifecycle but does not specifically ensure data privacy and compliance."  
+      - content: "Enterprise-grade security"  
+        isCorrect: true  
+        explanation: "Correct. Enterprise-grade security ensures data privacy and compliance with secure data handling and keyless authentication."  
+      - content: "Customizable storage solutions"  
+        isCorrect: false  
+        explanation: "Incorrect. Customizable storage solutions provide visibility and control over storage but do not specifically ensure data privacy and compliance."  
+  - content: "You are tasked with creating an AI agent that can interpret code and interact with data sources like Bing. Which feature of Azure AI Agent Service should you utilize?"  
+    choices:  
+      - content: "Out-of-the-box tools"  
+        isCorrect: true  
+        explanation: "Correct. Out-of-the-box tools include capabilities for code interpretation and interaction with data sources like Bing, making them ideal for this task."  
+      - content: "Securely managed data"  
+        isCorrect: false  
+        explanation: "Incorrect. Securely managed data handles conversation states but does not specifically provide tools for code interpretation or data source interaction."  
+      - content: "Enterprise-grade security"  
+        isCorrect: false  
+        explanation: "Incorrect. Enterprise-grade security ensures data privacy and compliance but does not specifically provide tools for code interpretation or data source interaction."  
+  

@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.develop-ai-agent-with-semantic-kernel
+metadata:
+  title: Develop an AI agent with Semantic Kernel
+  description: Learn how to start building agents with Semantic Kernel
+  author: buzahid
+  ms.author: buzahid
+  ms.date: 03/25/2025
+  ms.service: azure-ai-openai
+  ms.topic: module-standard-task-based
+title: Develop an AI agent with Semantic Kernel
+summary: This module provides engineers with the skills to begin building agents with Semantic Kernel.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Understand the Semantic Kernel Agent Framework
+  - Build an agent using the Semantic Kernel SDK
+  - Integrate plugin functions with your AI agent
+prerequisites: |
+  - Familiarity with Azure and the Azure portal.
+  - An understanding of generative AI. You can learn more with [Fundamentals of Generative AI](/training/modules/fundamentals-generative-ai/).
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - ai-engineer
+  - developer
+  - solution-architect
+  - student
+products: 
+  - azure-openai
+  - azure
+subjects: 
+  - cloud-computing
+units:
+- learn.wwl.develop-ai-agent-with-semantic-kernel.introduction
+- learn.wwl.develop-ai-agent-with-semantic-kernel.understand-semantic-kernel
+- learn.wwl.develop-ai-agent-with-semantic-kernel.create-azure-ai-agent
+- learn.wwl.develop-ai-agent-with-semantic-kernel.add-plugins-to-agent
+- learn.wwl.develop-ai-agent-with-semantic-kernel.exercise
+- learn.wwl.develop-ai-agent-with-semantic-kernel.knowledge-check
+- learn.wwl.develop-ai-agent-with-semantic-kernel.summary
+badge:
+  uid: learn.wwl.develop-ai-agent-with-semantic-kernel.badge
