@@ -2,9 +2,11 @@
 uid: learn.wwl.implement-app-registration.manage-monitor-application-app-governance
 title: Manage and monitor application by using app governance
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage and monitor application by using app governance
   description: "Manage and monitor application by using app governance"
-  ms.date: 12/18/2024
+  ms.date: 03/31/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit

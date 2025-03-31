@@ -2,9 +2,11 @@
 uid: learn.wwl.implement-app-registration.implement-application-registration
 title: Implement application registration
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement application registration
   description: "Implement application registration"
-  ms.date: 12/18/2024
+  ms.date: 03/31/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
