@@ -52,10 +52,10 @@ quiz:
     - content: "This isn't a feature of Azure Front Door."
       isCorrect: false
       explanation: "Incorrect. This is a feature of Azure Front Door routing."
-    - content: "By using weighted routing"
+    - content: "By using weighted routing."
       isCorrect: false
       explanation: "Incorrect. Weighted routing uses administrator-assigned weights to your backends when you want to distribute traffic across a set of backends."
-    - content: "By using session affinity"
+    - content: "By using session affinity."
       isCorrect: true
       explanation: "Correct. Azure Front Door enables you to configure session affinity for your frontend hosts or domains. This ensures requests from the same end user get sent to the same backend."
   - content: "When an administrator is creating Azure Web Application Firewall rules, which of the following rules is processed first when applied to HTTP or HTTPS traffic?"
