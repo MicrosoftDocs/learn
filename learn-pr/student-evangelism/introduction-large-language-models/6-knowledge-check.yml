@@ -2,8 +2,6 @@
 uid: learn.introduction-large-language-models.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge.
   ms.date: 11/30/2023
@@ -48,4 +46,4 @@ quiz:
       explanation: "Incorrect. This method could easily result in gibberish."
     - content: "To represent common words with a single token."
       isCorrect: false
-      explanation: "Incorrect. Multiple tokens are needed to represent less common words."
+      explanation: "Incorrect. Multiple tokens are needed to represent less common words."
