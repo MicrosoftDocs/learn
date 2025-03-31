@@ -16075,6 +16075,31 @@
       "redirect_url": "/training/modules/python-boolean-types"
     }, 
     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/fundamentals-generative-ai/3-language models.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/fundamentals-generative-ai/4-azure-openai.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/fundamentals-generative-ai/5-copilots.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/fundamentals-generative-ai/5a-microsoft-copilot.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/fundamentals-generative-ai/6a-building-custom-copilots.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-openai/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/prepare-azure-ai-development/",
       "redirect_document_id": false
