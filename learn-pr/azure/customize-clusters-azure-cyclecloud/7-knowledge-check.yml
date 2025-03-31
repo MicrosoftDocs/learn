@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.customize-clusters-azure-cyclecloud.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: This is a knowledge check unit.
   ms.date: 02/01/2024
   author: anhoward

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.customize-suse-linux-enterprise-server-azure.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge of SLES virtual machine customization.
   ms.date: 08/01/2024
   author: yenchiho

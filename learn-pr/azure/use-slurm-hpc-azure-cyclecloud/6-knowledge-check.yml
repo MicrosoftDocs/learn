@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.use-slurm-hpc-azure-cyclecloud.knowledge-check
-title: Knowledge Check
+title: Module assessment
 metadata:
-  title: Knowledge Check
+  title: Module assessment
   description: This content is part of the "Use Slurm for HPC on Azure CycleCloud" module.
   ms.date: 08/18/2024
   author: Orin-Thomas

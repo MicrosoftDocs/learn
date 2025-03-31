@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-to-azure-image-builder.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge of Azure Image Builder (AIB) by taking a quiz containing multiple-choice questions about the AIB service.
   ms.date: 08/08/2024
   author: ju-shim
