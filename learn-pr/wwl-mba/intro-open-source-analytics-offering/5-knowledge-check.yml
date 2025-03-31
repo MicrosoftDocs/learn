@@ -2,8 +2,6 @@
 uid: learn.wwl.introduction-open-source-analytics-offering.5-knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 01/05/2022
@@ -36,4 +34,4 @@ quiz:
       explanation: "MapReduce is a programming model that enables you to process and analyze data."
     - content: "YARN"
       isCorrect: true
-      explanation: "This is the component that is responsible for managing resources on a Hadoop cluster."
+      explanation: "This is the component that is responsible for managing resources on a Hadoop cluster."

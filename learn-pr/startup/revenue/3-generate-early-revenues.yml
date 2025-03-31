@@ -2,8 +2,6 @@
 uid: learn.startups.revenue.generate-early-revenues
 title: Generate early revenues
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Generate early revenues
   description: Find out how to start generating revenue with your startup. Learn about ideal first customers and early adopters. See how to find and convert customers.
   ms.date: 06/18/2024
@@ -13,4 +11,4 @@ metadata:
   ms.collection: learn-startups
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-generate-early-revenues.md)]
+  [!include[](includes/3-generate-early-revenues.md)]

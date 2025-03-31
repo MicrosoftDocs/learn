@@ -2,8 +2,6 @@
 uid: learn.wwl.perform-zero-etl-analytics-hdinsight-interactive-query.4-exercise-provisioning-hdinsight-perform-adhoc-analytics
 title: Exercise - Provision HDInsight to perform adhoc analytics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Provision HDInsight to perform adhoc analytics
   description: "Exercise - Provision HDInsight to perform adhoc analytics"
   ms.date: 04/08/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-exercise-provisioning-hdinsight-perform-adhoc-analytics.md)]
+  [!include[](includes/4-exercise-provisioning-hdinsight-perform-adhoc-analytics.md)]

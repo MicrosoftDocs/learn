@@ -2,8 +2,6 @@
 uid: learn.startups.mentor-meeting.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: summary
   description: "This content is part of the \"Make the most of a mentor meeting\" module."
   ms.date: 04/18/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/12-summary.md)]
-
+

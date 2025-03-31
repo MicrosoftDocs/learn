@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-user-authentication.summary-resources
 title: Summary and resources
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary and resources
   description: "Summary and resources"
   ms.date: 10/25/2023
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 1
 content: |
-  [!include[](includes/12-summary-resources.md)]
+  [!include[](includes/12-summary-resources.md)]
