@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-pipelines-concurrency.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 05/23/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 1
 content: |
-  [!include[](includes/9-summary.md)]
+  [!include[](includes/9-summary.md)]

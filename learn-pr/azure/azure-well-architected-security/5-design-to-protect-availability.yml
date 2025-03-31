@@ -2,13 +2,11 @@
 uid: learn.azure-well-architected-security.design-to-protect-availability
 title: Design to protect availability
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design to protect availability
   description: Learn how use security controls to protect your workload's availability.
   ms.date: 12/05/2023
-  author: claytonsiemens77
-  ms.author: csiemens
+  author: PageWriter-MSFT
+  ms.author: prwilk
   ms.topic: unit
 durationInMinutes: 10
 content: |
@@ -52,4 +50,3 @@ quiz:
     - content: 'False'
       isCorrect: true
       explanation: 'Correct. The recovery environment should be as secure as the production environment.'
-

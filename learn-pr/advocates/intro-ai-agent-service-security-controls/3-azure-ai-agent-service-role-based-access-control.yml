@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-ai-agent-service-security-controls.azure-ai-agent-service-role-based-access-control
+title: Azure AI Agent Service Role Based Access Control
+metadata:
+  title: Azure AI Agent Service Role Based Access Control
+  description: Learn to configure role-based access control for the Azure AI Agent Service.
+  ms.date: 03/21/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-azure-ai-agent-service-role-based-access-control.md)]

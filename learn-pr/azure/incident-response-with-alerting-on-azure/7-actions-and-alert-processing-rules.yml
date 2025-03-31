@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.incident-response-with-alerting-on-azure.actions-and-alert-processing-rules
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use action groups and alert processing rules to send notifications when an alert is fired
   description: Learn about how to send notifications when an alert is fired using action groups, and how to override the actions with alert processing rules.
   ms.date: 09/24/2024
@@ -13,4 +11,4 @@ title: Use action groups and alert processing rules to send notifications when a
 durationInMinutes: 10
 content: |
   [!include[](includes/7-actions-and-alert-processing-rules.md)]
-
+

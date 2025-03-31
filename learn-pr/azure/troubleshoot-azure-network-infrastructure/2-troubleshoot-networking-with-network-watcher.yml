@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.troubleshoot-azure-network-infrastructure.2-troubleshoot-networking-with-network-watcher
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Troubleshoot a network by using Network Watcher monitoring and diagnostic tools
   description: In this unit, you'll learn about the features of Azure Network Watcher that you can use to diagnose problems in an Azure virtual network.
   ms.date: 01/16/2024
@@ -37,4 +35,4 @@ quiz:
     - content: "Connection troubleshoot"
       isCorrect: true
       explanation: "Connection troubleshoot displays the latency associated with each hop in a route."
-
+

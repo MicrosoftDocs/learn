@@ -2,16 +2,14 @@
 uid: learn.wwl.multistage-reasoning-azure-databricks.langchain
 title: Explore LangChain
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore LangChain
   description: "Explore LangChain"
-  ms.date: 10/23/2024
+  ms.date: 03/20/2025
   author: wwlpublish
-  ms.author: madiepev
+  ms.author: theresai
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/03-langchain.md)]
+  [!include[](includes/03-langchain.md)]

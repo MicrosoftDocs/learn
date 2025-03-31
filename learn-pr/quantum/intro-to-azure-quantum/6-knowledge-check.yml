@@ -2,13 +2,11 @@
 uid: learn.quantum.intro-to-azure-quantum.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your understanding so far.
-  author: SoniaLopezBravo
-  ms.author: sonialopez
-  manager: tedhudek
+  author: azure-quantum-content
+  ms.author: quantumdocwriters
+  
   ms.date: 01/09/2024
   ms.topic: unit
 durationInMinutes: 6
@@ -52,4 +50,4 @@ quiz:
       explanation: "Q# is a quantum programming language that's available for commercial use. It allows you to develop programs that run on a quantum computer."
     - content: "It allows quantum algorithms to be performed without the need to express them in the form of circuits, and integrates classical and quantum computing."
       isCorrect: true
-      explanation: "In the long term, we want to build algorithms and run them on universal quantum computers. Q# is designed to overcome circuits, respects the laws of physics, and integrates classical and quantum computing."
+      explanation: "In the long term, we want to build algorithms and run them on universal quantum computers. Q# is designed to overcome circuits, respects the laws of physics, and integrates classical and quantum computing."

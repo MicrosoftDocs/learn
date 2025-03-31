@@ -2,8 +2,6 @@
 uid: learn.student-evangelism.predict-flight-delays-with-python.build-machine-learning-model
 title: Exercise - Build Machine Learning Model
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Build Machine Learning Model
   description: Build Machine Learning Model
   ms.date: 02/25/2019
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 15
 content: |
   [!include[](includes/3-build-machine-learning-model.md)]
-
+

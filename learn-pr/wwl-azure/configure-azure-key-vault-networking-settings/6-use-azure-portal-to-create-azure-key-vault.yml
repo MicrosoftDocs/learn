@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-azure-key-vault-networking-settings.use-azure-portal-to-create-azure-key-vault
 title: Exercise - Configure Key Vault networking settings
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Configure Key Vault networking settings
   description: "Exercise - Configure Key Vault networking settings"
   ms.date: 10/24/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 30
 content: |
-  [!include[](includes/6-use-azure-portal-to-create-azure-key-vault.md)]
+  [!include[](includes/6-use-azure-portal-to-create-azure-key-vault.md)]

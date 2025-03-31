@@ -2,8 +2,6 @@
 uid: learn.azure.intro-to-azure-backup.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: "Azure Backup knowledge check"
   description: "Knowledge check questions for the Introduction to Azure Backup Module."
@@ -49,4 +47,4 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. Recovery point objective (RPO) is concerned with the amount of time it takes for recovery operations."
  
-
+

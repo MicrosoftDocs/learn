@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-user-authentication.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 10/25/2023
@@ -48,4 +46,4 @@ quiz:
       explanation: "Incorrect. Audit mode is the default initial setting, where passwords can continue to be set. Passwords that would be blocked are recorded in the event log."
     - content: "Enforced mode"
       isCorrect: false
-      explanation: "Incorrect. Audit mode is the default initial setting, where passwords can continue to be set. Passwords that would be blocked are recorded in the event log."
+      explanation: "Incorrect. Audit mode is the default initial setting, where passwords can continue to be set. Passwords that would be blocked are recorded in the event log."

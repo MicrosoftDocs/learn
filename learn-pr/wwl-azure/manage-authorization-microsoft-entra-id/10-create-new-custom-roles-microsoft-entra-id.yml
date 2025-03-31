@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-authorization-microsoft-entra-id.create-new-custom-roles-microsoft-entra-id
 title: Create and assign a custom role in Microsoft Entra ID
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create and assign a custom role in Microsoft Entra ID
   description: "Create and assign a custom role in Microsoft Entra ID"
   ms.date: 08/07/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/10-create-new-custom-roles-microsoft-entra-id.md)]
+  [!include[](includes/10-create-new-custom-roles-microsoft-entra-id.md)]

@@ -2,8 +2,6 @@
 uid: learn.wwl.begin-your-microsoft-learn-educators-journey.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 07/19/2024
@@ -48,4 +46,4 @@ quiz:
       explanation: "Feedback: Incorrect. While the Microsoft Learn for Educators Portal allows educators to update their profile, enter the course they'll be teaching, view past courses, request exam and practice exam vouchers, learn about training events, and access the Learning Download Center, the Microsoft Learn for Educators Teams community allows educators to connect with other faculty members teaching Microsoft Official Course materials and learn about upcoming events, Virtual Educator Prep Sessions, and much more."
     - content: "Microsoft Learn for Educators Teams community."
       isCorrect: true
-      explanation: "Feedback: Correct. The Microsoft Learn for Educators Teams community allows educators to connect with other faculty members teaching Microsoft Official Course materials and learn about upcoming events, Virtual Educator Prep Sessions, and much more."
+      explanation: "Feedback: Correct. The Microsoft Learn for Educators Teams community allows educators to connect with other faculty members teaching Microsoft Official Course materials and learn about upcoming events, Virtual Educator Prep Sessions, and much more."

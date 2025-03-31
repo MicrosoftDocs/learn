@@ -2,8 +2,6 @@
 uid: learn.wwl.understand-client-server-communication-postgresql.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 05/12/2024
@@ -50,4 +48,4 @@ quiz:
       explanation: "Correct. The pgbench tool is designed to run benchmark tests on PostgreSQL databases."
     - content: "the **psql** tool."
       isCorrect: false
-      explanation: "Incorrect. There is no psql tool, psql is a command line utility that allows you to interact with a PostgreSQL server. It doesn't have any specialist benchmark testing capabilities."
+      explanation: "Incorrect. There is no psql tool, psql is a command line utility that allows you to interact with a PostgreSQL server. It doesn't have any specialist benchmark testing capabilities."

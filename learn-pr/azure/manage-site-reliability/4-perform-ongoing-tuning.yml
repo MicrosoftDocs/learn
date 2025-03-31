@@ -2,8 +2,6 @@
 uid: learn.azdo.manage-site-reliability.4-perform-ongoing-tuning
 title: Perform ongoing tuning to reduce meaningless alerts
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Perform ongoing tuning to reduce meaningless alerts
   description: Learn about processes that you can implement to monitor site reliability. You also learn about ongoing tuning of your alerts to reduce meaningless alerts.
   ms.date: 04/21/2023
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/4-perform-ongoing-tuning.md)]
-
+

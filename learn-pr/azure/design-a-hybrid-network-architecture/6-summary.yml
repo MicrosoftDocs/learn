@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-a-hybrid-network-architecture.6-summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 02/16/2024
@@ -14,4 +12,4 @@ title: Summary
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]
-
+

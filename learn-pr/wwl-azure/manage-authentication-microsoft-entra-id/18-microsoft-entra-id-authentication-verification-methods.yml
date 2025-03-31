@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-authentication-microsoft-entra-id.microsoft-entra-id-authentication-verification-methods
 title: Recommend and enforce modern authentication protocols
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Recommend and enforce modern authentication protocols
   description: "Recommend and enforce modern authentication protocols"
   ms.date: 12/20/2024

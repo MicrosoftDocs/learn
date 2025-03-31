@@ -2,11 +2,9 @@
 uid: learn.build-app-with-scale-sets.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
-  ms.date: 04/03/2024
+  ms.date: 03/24/2025
   author: v-tcassi
   ms.author: tomcassidy
   ms.topic: unit
@@ -49,4 +47,4 @@ quiz:
       explanation: "Custom script extensions can be used to both install and update applications across a scale set."
     - content: You can both install and update applications on a virtual machine scale set using custom script extensions.
       isCorrect: false
-      explanation: "Custom script extensions can be used to both install and update applications across a scale set."
+      explanation: "Custom script extensions can be used to both install and update applications across a scale set."

@@ -3,8 +3,6 @@ uid: learn.intro-to-kubernetes.introduction
 title: Introduction
 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to Kubernetes
   description: Introduction
   ms.date: 11/13/2024
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
-
+

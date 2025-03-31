@@ -2,8 +2,6 @@
 uid: learn.wwl.search-data-outside-azure-platform-cognitive-search.index-any-data-using-push-api
 title: Index any data using the Azure AI Search push API
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Index any data using the Azure AI Search push API
   description: Index any data using the Azure AI Search push API
   author: wwlpublish
@@ -17,4 +15,4 @@ labModal: false
 durationInMinutes: 11
 content: |
   [!include[](includes/03-index-data-use-push-api.md)]
-
+

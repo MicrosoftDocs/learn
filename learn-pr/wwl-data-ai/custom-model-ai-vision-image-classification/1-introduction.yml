@@ -2,8 +2,6 @@
 uid: learn.wwl.custom-model-ai-vision-image-classification.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction to creating custom vision models.
   author: ivorb
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.plan-foster-inner-source.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 05/08/2024
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. For a small team (2-5 developers), we recommend working in a single repo."
     - content: "2-5 developers."
       isCorrect: true
-      explanation: "Correct. For a small team (2-5 developers), we recommend working in a single repo."
+      explanation: "Correct. For a small team (2-5 developers), we recommend working in a single repo."

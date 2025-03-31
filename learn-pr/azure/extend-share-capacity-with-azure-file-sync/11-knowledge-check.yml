@@ -2,8 +2,6 @@
 uid: learn.azure.extend-share-capacity-with-azure-file-sync.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Check your knowledge
   description: Review what you've learned.
   ms.date: 01/10/2025
@@ -91,4 +89,4 @@ quiz:
     - content: The registered server state is Appears Offline.
       isCorrect: false
       explanation: The registered server must be online in order for files to sync.
-
+

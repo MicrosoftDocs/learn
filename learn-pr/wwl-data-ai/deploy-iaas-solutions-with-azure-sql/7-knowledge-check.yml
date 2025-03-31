@@ -2,8 +2,6 @@
 uid: learn.wwl.deploy-iaas-solutions-with-azure-sql.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 02/18/2025
@@ -61,4 +59,4 @@ quiz:
       explanation: "That's incorrect. Azure Site Recovery is a low-cost solution that performs block level replication of your Azure virtual machine."
     - content: "Availability Groups"
       isCorrect: false
-      explanation: "That's incorrect. Azure Site Recovery is a low-cost solution that performs block level replication of your Azure virtual machine."
+      explanation: "That's incorrect. Azure Site Recovery is a low-cost solution that performs block level replication of your Azure virtual machine."

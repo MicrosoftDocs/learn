@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.oxford.deploy-prebuilt-module-edge-device
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: "Deploy a pre-built module to the Edge device"
   description: "Deploy a pre-built temperature simulator module to an IoT Edge device using a container. Check that the module was successfully created and deployed and view simulated data."
   ms.date: 07/08/2024
@@ -45,4 +43,4 @@ units:
 - learn.oxford.deploy-prebuilt-module-edge-device.6-exercise-deploying-prebuilt-module
 - learn.oxford.deploy-prebuilt-module-edge-device.7-knowledge-check
 - learn.oxford.deploy-prebuilt-module-edge-device.8-summary
-
+

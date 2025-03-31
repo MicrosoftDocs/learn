@@ -2,8 +2,6 @@
 uid: learn.design-a-data-model-with-ads.analyze-the-structure-of-a-database-table
 title: Analyze the structure of a database table
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Analyze the structure of a database table
   description: "Learn what a relational database table is, how data types are used and how Azure SQL DB stores tables."
   ms.date: 03/05/2024
@@ -40,4 +38,4 @@ quiz:
     - content: 8 Megabytes (MB)
       isCorrect: false
       explanation: An extent holds eight contiguous pages and there are 16 extents per megabyte so 8 megabytes is too large.
-
+

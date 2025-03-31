@@ -1,14 +1,12 @@
 ### YamlMime:Module
 uid: learn.quantum.explore-entanglement
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Teleport a qubit using entanglement and the Quantum Development Kit
   description: Teleport a qubit using entanglement and the Quantum Development Kit
   ms.date: 01/22/2025
-  author: SoniaLopezBravo
-  ms.author: sonialopez
-  manager: tedhudek
+  author: azure-quantum-content
+  ms.author: quantumdocwriters
+  
   ms.topic: module
   ms.service: azure-quantum
   ms.subservice: qdk
@@ -52,4 +50,4 @@ units:
 - learn.quantum.explore-entanglement.knowledge-check
 - learn.quantum.explore-entanglement.summary
 badge:
-  uid: learn.quantum.explore-entanglement.badge
+  uid: learn.quantum.explore-entanglement.badge

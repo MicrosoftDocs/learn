@@ -5570,3 +5570,58 @@ achievements:
   title: Introduction to Microsoft Purview
   summary: In this module, you'll evaluate whether Microsoft Purview is the right choice for your data discovery and governance needs.
   iconUrl: /training/achievements/introduction-to-azure-purview.svg
+- uid: learn.azure.improve-developer-experience-of-an-api-with-swagger-documentation.badge
+  type: badge
+  title: Improve the developer experience of an API with Swagger documentation
+  summary: Learn how to document an existing API, written in C#/ASP.NET Core, using Swashbuckle, Swagger/OpenAPI, and Swagger UI.
+  iconUrl: /training/achievements/improve-developer-experience-of-an-api-with-swagger-documentation.svg
+- uid: learn.wwl.prepare-data-for-tabular-models-power-bi.trophy
+  type: trophy
+  title: Prepare data for tabular models in Power BI
+  summary: Designing reports for enterprise scale requires more than just connecting to data. Understanding Power BI model frameworks and strategies for scalability and optimization are key to a successful enterprise implementation.This learning path helps you prepare for the [Azure Enterprise Data Analyst Certification](/learn/certifications/exams/dp-500).
+  iconUrl: /training/achievements/prepare-data-for-tabular-models-power-bi.svg
+- uid: learn.wwl.understand-scalability-power-bi.badge
+  type: badge
+  title: Understand scalability in Power BI
+  summary: Scalable data models enable enterprise-scale analytics in Power BI. Implement data modeling best practices, use large dataset storage format, and practice building a star schema to design analytics solutions that can scale.
+  iconUrl: /training/achievements/understand-scalability-power-bi.svg
+- uid: learn.wwl.create-manage-scalable-power-bi-dataflows.badge
+  type: badge
+  title: Create and manage scalable Power BI dataflows
+  summary: Create Power BI transformation logic for reuse across your organization with Power BI dataflows.  Learn how to combine Power BI dataflows with Power BI Premium for scalable ETL, and practice creating and consuming dataflows.
+  iconUrl: /training/achievements/create-manage-scalable-power-bi-dataflows.svg
+- uid: learn.wwl.manage-analytics-development-lifecycle.trophy
+  type: trophy
+  title: Manage the analytics development lifecycle
+  summary: This learning path introduces the foundational components of implementing lifecycle management techniques for Power BI assets.This learning path helps you prepare for the [Azure Enterprise Data Analyst Certification](/certifications/exams/dp-500).
+  iconUrl: /training/achievements/manage-analytics-development-lifecycle.svg
+- uid: learn.wwl.design-power-bi-application-lifecycle-management-strategy.badge
+  type: badge
+  title: Design a Power BI application lifecycle management strategy
+  summary: The use of OneDrive, Git repositories, and Power BI deployment pipelines allows us to follow application lifecycle management techniques. This reduces administrative overhead and provides continuity in the development process.
+  iconUrl: /training/achievements/design-power-bi-application-lifecycle-management-strategy.svg
+- uid: learn.wwl.implement-interfaces.trophy
+  type: trophy
+  title: Implement Interfaces in C#
+  summary: This learning path will introduce you to interfaces in C#. You'll work with a role-playing game inventory project to practice adding behaviors to classes, and use interfaces to craft modular, robust code.
+  iconUrl: /training/achievements/implement-interfaces.svg
+- uid: learn.wwl.introduce-interfaces.badge
+  type: badge
+  title: Introduce interfaces
+  summary: In this module, you'll learn how to use interfaces in C#. You'll practice adding behaviors to classes and using system-defined interfaces to craft modular, robust code.
+  iconUrl: /training/achievements/introduce-interfaces.svg
+- uid: learn.wwl.implement-interfaces-c-sharp.badge
+  type: badge
+  title: Implement interfaces
+  summary: In this module, you'll learn to extend classes with multiple interfaces, use interfaces as a type, and understand interface design practices.
+  iconUrl: /training/achievements/implement-interfaces.svg
+- uid: learn.wwl.design-code-with-interfaces.badge
+  type: badge
+  title: Design code with interfaces
+  summary: In this module, you'll learn about tightly coupled code and how to avoid it. You'll also learn how interfaces can improve your project by reducing code dependencies and standardizing your code.
+  iconUrl: /training/achievements/design-code-with-interfaces.svg
+- uid: learn.wwl.guided-project-langstons-ant.badge
+  type: badge
+  title: Guided project langstons ant
+  summary: This module will guide you through the steps required to develop your own Langston's Ant project. Your code will use interfaces to represent the functions the ants can perform.
+  iconUrl: /training/achievements/guided-project-langstons-ant.svg

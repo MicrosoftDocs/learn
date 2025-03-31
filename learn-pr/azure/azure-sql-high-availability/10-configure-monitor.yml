@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-high-availability.10-configure-monitor
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure and monitor availability
   description: Configure and monitor availability
   ms.date: 11/29/2023
@@ -43,4 +41,4 @@ quiz:
         explanation: "This tool does provide monitoring for instance, server, and database availability. Review the Instance, server, and database availability section in the unit."
       - content: "Azure CLI commands"
         isCorrect: false
-        explanation: "This tool does provide monitoring for instance, server, and database availability. Review the Instance, server, and database availability section in the unit."
+        explanation: "This tool does provide monitoring for instance, server, and database availability. Review the Instance, server, and database availability section in the unit."

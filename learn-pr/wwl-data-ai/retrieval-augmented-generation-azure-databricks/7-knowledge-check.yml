@@ -2,13 +2,11 @@
 uid: learn.wwl.retrieval-augmented-generation-azure-databricks.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/12/2024
+  ms.date: 03/20/2025
   author: wwlpublish
-  ms.author: madiepev
+  ms.author: theresai
   ms.topic: unit
 azureSandbox: false
 labModal: false
@@ -47,4 +45,4 @@ quiz:
       explanation: "Correct. Retrieval quality pertains to how accurately the RAG system retrieves relevant information for a given query. High retrieval quality ensures that the context given to the LLM (Large Language Model) is relevant and complete, which is essential for accurate and coherent responses​."
     - content: "The speed at which the model generates responses."
       isCorrect: false
-      explanation: "Incorrect. The speed at which the model generates responses doesn't relate to retrieval quality."
+      explanation: "Incorrect. The speed at which the model generates responses doesn't relate to retrieval quality."

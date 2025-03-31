@@ -2,8 +2,6 @@
 uid: learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
@@ -39,4 +37,4 @@ quiz:
     - content: "Azure SQL Database"
       isCorrect: false
       explanation: "Incorrect. A CSV file can't be directly stored in an Azure SQL Database, you'd have to convert the file to a SQL table to store the data."
-
+

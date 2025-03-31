@@ -2,16 +2,14 @@
 uid: learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
-  ms.date: 05/13/2022
-  author: wwlpublish
+  ms.date: 03/27/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/1-introduction.md)]

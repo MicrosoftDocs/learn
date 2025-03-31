@@ -2,8 +2,6 @@
 uid: learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.exercise-create-service-connection
 title: Exercise - Create a service connection
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Create a service connection
   description: Create a service principal and a service connection for a Bicep deployment pipeline.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/5-exercise-create-service-connection.md)]
-
+

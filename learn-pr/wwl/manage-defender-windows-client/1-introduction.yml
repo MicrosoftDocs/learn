@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-defender-windows-client.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 05/10/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/1-introduction.md)]

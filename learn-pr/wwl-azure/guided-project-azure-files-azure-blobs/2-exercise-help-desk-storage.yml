@@ -2,8 +2,6 @@
 uid: learn.wwl.guided-project-azure-files-azure-blobs.exercise1
 title: Exercise - Provide storage for the IT department testing and training
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Provide storage for the IT department testing and training
   description: "Exercise - Provide storage for the IT department testing and training"
   ms.date: 09/02/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-exercise-help-desk-storage.md)]
+  [!include[](includes/2-exercise-help-desk-storage.md)]

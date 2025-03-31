@@ -2,8 +2,6 @@
 uid: learn.wwl.understand-concepts-of-data-analytics.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 10/27/2022
@@ -50,4 +48,4 @@ quiz:
       explanation: "That's correct. Understanding the difference between structured and unstructured data will aid in planning for the analytics process."
     - content: "Understanding the difference will determine if the business requirements have been met"
       isCorrect: false
-      explanation: "That's incorrect. Pages and paragraphs describe the elements of a text document."
+      explanation: "That's incorrect. Pages and paragraphs describe the elements of a text document."

@@ -2,11 +2,9 @@
 uid: learn.wwl.develop-for-azure-cache-for-redis.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/24/2025
+  ms.date: 03/18/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit

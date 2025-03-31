@@ -2,13 +2,11 @@
 uid: learn.wwl.use-own-data-azure-openai.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge of using your own data with Azure OpenAI.
   author: ivorb
   ms.author: berryivor
-  ms.date: 11/15/2024
+  ms.date: 03/18/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -48,4 +46,4 @@ quiz:
       explanation: "Incorrect. Including too much conversation history can exceed the token limit and impact the model's response."
     - content: "Use a single long prompt to provide all necessary information."
       isCorrect: false
-      explanation: "Incorrect. Using a single long prompt can also exceed the token limit and impact the model's response."
+      explanation: "Incorrect. Using a single long prompt can also exceed the token limit and impact the model's response."

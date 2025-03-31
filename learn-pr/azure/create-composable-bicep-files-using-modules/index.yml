@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.create-composable-bicep-files-using-modules
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: standard
   title: Create composable Bicep files by using modules
   description: Build Bicep modules that are reusable, flexible, and shareable. Add parameters, conditions, and outputs to make your modules composable into templates.
@@ -55,4 +53,4 @@ units:
 - learn.azure.create-composable-bicep-files-using-modules.summary
 badge:
   uid: learn.azure.create-composable-bicep-files-using-modules.badge
-
+

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.design-a-geographically-distributed-application
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design a geographically distributed application
   description: Build an application that spans multiple geographic locations for high availability and resiliency.
   ms.service: azure-cdn
@@ -44,4 +42,4 @@ units:
 - learn.design-a-geographically-distributed-application.6-summary
 badge:
   uid: learn.design-geographically-distributed-application.badge
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.just-in-time-access.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 05/31/2024
@@ -61,4 +59,4 @@ quiz:
       explanation: "Incorrect. While Microsoft Defender does provide threat intelligence, this is not the primary function of JIT access."
     - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
       isCorrect: true
-      explanation: "Correct. JIT access primarily controls and limits access to virtual machines to enhance security."
+      explanation: "Correct. JIT access primarily controls and limits access to virtual machines to enhance security."

@@ -2,14 +2,12 @@
 uid: learn.wwl.create-azure-resources-by-using-azure-cli.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
-  ms.date: 05/22/2024
+  ms.date: 02/17/2025
   author: wwlpublish
-  ms.author: lumac
+  ms.author: dbradish
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/1-introduction.md)]

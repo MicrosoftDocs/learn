@@ -2,8 +2,6 @@
 uid: learn.wwl.assess-sql-server-databases-for-migration-to-azure-sql.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 05/23/2023
@@ -46,4 +44,4 @@ quiz:
       explanation: "That's correct. When calculating the estimated monthly cost for Azure SQL Database using the Azure SQL Assessment tool, the factors considered are the database size, compute size, and database activity."
     - content: "Compute size, storage size, and database activity."
       isCorrect: false
-      explanation: "That's incorrect. While compute size and database activity are part of the calculation, storage size isn't part of it."
+      explanation: "That's incorrect. While compute size and database activity are part of the calculation, storage size isn't part of it."

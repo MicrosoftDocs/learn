@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-machine-learning-monitoring.monitoring-azure-machine-learning-workspace-compute
+title: Monitoring Azure Machine Learning workspaces and compute
+metadata:
+  title: Monitoring Azure Machine Learning workspaces and compute
+  description: Learn about monitoring Azure Machine Learning workspaces and compute
+  ms.date: 03/15/2025
+  author: Orin-Thomas
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-monitoring-azure-machine-learning-workspace-compute.md)]

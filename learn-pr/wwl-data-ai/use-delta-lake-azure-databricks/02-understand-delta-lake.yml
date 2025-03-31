@@ -2,8 +2,6 @@
 uid: learn.wwl.use-delta-lake-azure-databricks.get-started
 title: Get started with Delta Lake
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Get started with Delta Lake
   description: "Get started with Delta Lake"
   ms.date: 08/26/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/02-understand-delta-lake.md)]
+  [!include[](includes/02-understand-delta-lake.md)]

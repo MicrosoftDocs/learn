@@ -2,13 +2,11 @@
 uid: learn.azure-well-architected-introduction.4-operational-excellence
 title: Operational excellence
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Operational excellence
   description: Operational excellence
   ms.date: 04/17/2023
-  author: martinekuan
-  ms.author: martinek
+  author: PageWriter-MSFT
+  ms.author: prwilk
   ms.topic: unit
 durationInMinutes: 10
 content: |
@@ -44,4 +42,4 @@ quiz:
     - content: "Manually copying application binaries from your build system to your deployment infrastructure."
       isCorrect: false
       explanation: "Automation would reduce the risk of errors that occur when manual steps are performed."
-
+

@@ -22,7 +22,7 @@ summary: |
   
   > [!NOTE]
   > [!INCLUDE [](../../includes/azure-subscription-prerequisite.md)]
-iconUrl: /training/achievements/develop-data-driven-app-sql-db.svg
+iconUrl: /training/achievements/implement-operational-databases-in-microsoft-fabric.svg
 levels:
 - intermediate
 roles:

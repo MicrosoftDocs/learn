@@ -2,8 +2,6 @@
 uid: learn.azure.introduction-elastic-azure.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: A multiple-choice knowledge check.
@@ -48,4 +46,4 @@ quiz:
     - content: Preferred OS
       isCorrect: false
       explanation: Preferred OS is one of the decision criteria.
-
+

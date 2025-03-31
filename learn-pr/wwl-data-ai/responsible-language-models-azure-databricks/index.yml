@@ -1,16 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.responsible-language-models-azure-databricks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Review responsible AI principles for language models in Azure Databricks
   description: Review responsible AI principles for language models in in Azure Databricks
-  ms.date: 08/23/2024
+  ms.date: 03/20/2025
   author: wwlpublish
   ms.author: madiepev
   ms.topic: module
   ms.service: azure
   ai-usage: ai-assisted
+  ms.collection: wwl-ai-copilot
 title: Review responsible AI principles for language models in Azure Databricks
 summary: When working with Large Language Models (LLMs) in Azure Databricks, it's important to understand the responsible AI principles for implementation, ethical considerations, and how to mitigate risks. Based on identified risks, learn how to implement key security tooling for language models.
 abstract: |
@@ -39,4 +38,4 @@ units:
 - learn.wwl.responsible-language-models-azure-databricks.summary
 badge:
   uid: learn.wwl.responsible-language-models-azure-databricks.badge
-
+

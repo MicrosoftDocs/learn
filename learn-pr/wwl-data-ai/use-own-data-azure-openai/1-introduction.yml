@@ -2,16 +2,14 @@
 uid: learn.wwl.use-own-data-azure-openai.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction to using your own data with Azure OpenAI Service.
   author: ivorb
   ms.author: berryivor
-  ms.date: 11/15/2024
+  ms.date: 03/18/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/1-introduction.md)]

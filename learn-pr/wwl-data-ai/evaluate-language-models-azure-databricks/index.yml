@@ -1,16 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.evaluate-language-models-azure-databricks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Evaluate language models with Azure Databricks
   description: Evaluate language models with Azure Databricks
-  ms.date: 08/20/2024
+  ms.date: 03/20/2025
   author: wwlpublish
   ms.author: madiepev
   ms.topic: module
   ms.service: azure
   ai-usage: ai-assisted
+  ms.collection: wwl-ai-copilot
 title: Evaluate language models with Azure Databricks
 summary: Learn to compare Large Language Model (LLM) and traditional Machine Learning (ML) evaluations, understand their relationship with AI system evaluation, and explore various LLM evaluation metrics and specific task-related evaluations.
 abstract: |
@@ -39,4 +38,4 @@ units:
 - learn.wwl.evaluate-language-models-azure-databricks.summary
 badge:
   uid: learn.wwl.evaluate-language-models-azure-databricks.badge
-
+

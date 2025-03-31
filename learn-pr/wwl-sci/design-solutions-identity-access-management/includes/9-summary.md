@@ -10,6 +10,10 @@ You've learned how to:
 ## Learn more with security documentation
 
 - [Azure identity and access management design area - Cloud Adoption Framework](/azure/cloud-adoption-framework/ready/landing-zone/design-area/identity-access)
+- [Identity decision guide](/azure/cloud-adoption-framework/decision-guides/identity/)
+- [What is Microsoft Entra Cloud Sync?](/entra/identity/hybrid/cloud-sync/what-is-cloud-sync)
+- [What is Microsoft Entra Domain Services?](/entra/identity/domain-services/overview)
+- [Microsoft Entra Connect and federation](/entra/identity/hybrid/connect/how-to-connect-fed-whatis)
 - [External Identities in Microsoft Entra ID - Microsoft Entra](/azure/active-directory/external-identities/external-identities-overview)
 - [Continuous access evaluation in Microsoft Entra ID - Microsoft Entra](/azure/active-directory/conditional-access/concept-continuous-access-evaluation)
 - [Conditional Access design principles and dependencies - Azure Architecture Center](/azure/architecture/guide/security/conditional-access-design)

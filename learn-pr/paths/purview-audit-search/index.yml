@@ -1,0 +1,32 @@
+### YamlMime:LearningPath
+uid: learn.wwl.purview-audit-search
+metadata:
+  title: 'Audit and search activity in Microsoft Purview (SC-401)'
+  description: 'Logging actions and locating content are essential for investigating events, supporting compliance efforts, and maintaining transparency. Microsoft Purview provides audit and content search capabilities to help organizations understand what actions were taken and find specific items across Microsoft 365 services. This learning path aligns with exam SC-401: Microsoft Information Security Administrator.'
+  ms.date: 03/25/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: learning-path
+title: 'Audit and search activity in Microsoft Purview'
+prerequisites: |
+  - Foundational knowledge of Microsoft security and compliance technologies
+  - Basic understanding of audit logs and content discovery
+summary: |
+  Understand how to use Microsoft Purview to log activity and search for content across Microsoft 365 services. Learn how audit logging supports investigations and compliance requirements, and how content search can help locate specific emails, documents, and other items when needed.
+iconUrl: /training/achievements/m365-content-search.svg
+levels:
+- intermediate
+roles:
+- auditor
+- administrator
+- ip-admin
+products:
+- microsoft-purview
+subjects:
+- security
+modules:
+- learn.wwl.purview-audit-search-investigate
+- learn.wwl.search-for-content-security-compliance-center
+
+trophy:
+  uid: learn.wwl.purview-audit-search.trophy

@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-azure-arc.5a-azure-security
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe Azure Arc security solutions
   description: Describe Azure Arc security solutions
-  ms.date: 12/07/2023
+  ms.date: 03/21/2025
   author: johnmarco
   ms.author: johnmarc
   ms.topic: unit
@@ -14,4 +12,4 @@ title: Describe Azure Arc security solutions
 durationInMinutes: 4
 content: |
   [!include[](includes/5a-azure-security.md)]
-
+

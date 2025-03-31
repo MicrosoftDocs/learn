@@ -2,8 +2,6 @@
 uid: learn.wwl.send-pass-data-output-from-pipeline.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 01/29/2024
@@ -37,4 +35,4 @@ quiz:
       explanation: "Incorrect. The `%` symbol represents an alias of the **ForEach-Object** cmdlet. It is the `>`symbol that represents the alias of the **Out-File** cmdlet that results in overwriting content of an existing file."
     - content: "`>`"
       isCorrect: true
-      explanation: "Correct. The `>`symbol represents the alias of the **Out-File** cmdlet that results in overwriting content of an existing file."
+      explanation: "Correct. The `>`symbol represents the alias of the **Out-File** cmdlet that results in overwriting content of an existing file."

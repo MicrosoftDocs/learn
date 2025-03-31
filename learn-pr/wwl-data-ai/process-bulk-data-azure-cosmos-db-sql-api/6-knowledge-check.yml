@@ -2,8 +2,6 @@
 uid: learn.wwl.process-bulk-data-azure-cosmos-db-sql-api.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 03/20/2024
@@ -38,4 +36,4 @@ quiz:
       explanation: "That's incorrect. Bulk operations actually will typically use more throughput than the typical individual operation counterparts."
     - content: "Configure the partition key for each operation configured in a set of tasks."
       isCorrect: true
-      explanation: "That's correct. Configuring the partition key for individual operations will save the SDK from having to compute the partition key on a per operation basis."
+      explanation: "That's correct. Configuring the partition key for individual operations will save the SDK from having to compute the partition key on a per operation basis."

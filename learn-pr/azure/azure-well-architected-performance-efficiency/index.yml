@@ -1,13 +1,11 @@
 ### YamlMime:Module
 uid: learn.azure-well-architected-performance-efficiency
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Microsoft Azure Well-Architected Framework - Performance efficiency'
   description: Learn how to optimize your workload to meet performance requirements while balancing costs, reliability, and security.
   ms.date: 12/13/2023
-  author: martinekuan
-  ms.author: martinek
+  author: PageWriter-MSFT
+  ms.author: prwilk
   ms.topic: module
   ms.service: azure-waf
 title: 'Microsoft Azure Well-Architected Framework - Performance efficiency'
@@ -52,4 +50,3 @@ units:
 - learn.azure-well-architected-performance-efficiency.6-summary
 badge:
   uid: learn.azure-well-architected-performance-efficiency.badge
-

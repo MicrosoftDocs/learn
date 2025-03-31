@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-azure-automation-devops.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 05/23/2024
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. When you create your workflow, begin with the workflow keyword, which identifies a workflow command to PowerShell."
     - content: "Workflow."
       isCorrect: true
-      explanation: "Correct. When you create your workflow, begin with the workflow keyword, which identifies a workflow command to PowerShell."
+      explanation: "Correct. When you create your workflow, begin with the workflow keyword, which identifies a workflow command to PowerShell."

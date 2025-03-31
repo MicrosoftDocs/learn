@@ -2,14 +2,12 @@
 uid: learn.machinelearning.evaluate-real-world-models.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
-  description: Introduction to the introduction of confusion matrices
+  description: Introduction to the introduction of confusion matrices.
   ms.date: 07/20/2024
   author: s-polly
   ms.author: scottpolly
   ms.topic: unit
 durationInMinutes: 2
 content: |
-  [!include[](includes/1-introduction.md)] 
+  [!include[](includes/1-introduction.md)] 

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.create-run-container-images-azure-container-instances
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Run container images in Azure Container Instances
   description: "Run container images in Azure Container Instances"
   ms.date: 02/06/2025

@@ -2,8 +2,6 @@
 uid: learn.azure.intro-to-azure-communication-services.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: "A knowledge check for the introduction to Azure Communication Services, Learn module. This tests your understanding of the module."
@@ -70,4 +68,4 @@ quiz:
     - content: "Azure Communication Services is not suitable for live data"
       isCorrect: false
       explanation: "Azure Communication Services can perfectly handle live communications, but it's not for data processing. You'll need to use other Azure offerings."
-
+

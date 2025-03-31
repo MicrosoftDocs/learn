@@ -2,8 +2,6 @@
 uid: learn.wwl.create-manage-session-host-image.plan-for-image-update-management
 title: Plan for image update and management
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Plan for image update and management
   description: "Plan for image update and management"
   ms.date: 08/21/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-plan-image-update-management.md)]
+  [!include[](includes/5-plan-image-update-management.md)]

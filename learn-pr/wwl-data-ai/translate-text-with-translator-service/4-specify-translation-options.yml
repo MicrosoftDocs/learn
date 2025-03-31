@@ -2,8 +2,6 @@
 uid: learn.wwl.translate-text-with-translator-service.specify-translation-options
 title: Specify translation options
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Specify translation options
   description: Specify translation options
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/4-specify-translation-options.md)]
-
+

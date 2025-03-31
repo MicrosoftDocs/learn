@@ -2,12 +2,10 @@
 uid: learn.quantum.choose-the-best-azure-quantum.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your understanding so far.
-  author: SoniaLopezBravo
-  ms.author: sonialopez
+  author: azure-quantum-content
+  ms.author: quantumdocwriters
   ms.date: 12/13/2023
   ms.topic: unit
   show_latex: true
@@ -52,4 +50,4 @@ quiz:
       explanation: "Managing Azure Quantum is only possible from the Azure portal."
     - content: "You can only manage Azure Quantum from the Azure portal."
       isCorrect: true
-      explanation: "From the Azure portal you can manage your subscriptions, workspaces, quantum jobs, credits consumption, and quotas, and grant a group of users access to a workspace."
+      explanation: "From the Azure portal you can manage your subscriptions, workspaces, quantum jobs, credits consumption, and quotas, and grant a group of users access to a workspace."

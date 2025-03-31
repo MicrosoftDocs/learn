@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-diagnose-and-troubleshoot-azure-storage.2-storage-troubleshooting-tools
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Identify the troubleshooting tools available in Azure
   description: In this unit, we'll discuss how to identify the troubleshooting tools available in Azure.
   ms.date: 12/21/2023
@@ -13,4 +11,4 @@ title: Identify the troubleshooting tools available in Azure
 durationInMinutes: 3
 content: |
   [!include[](includes/2-storage-troubleshooting-tools.md)]
-
+

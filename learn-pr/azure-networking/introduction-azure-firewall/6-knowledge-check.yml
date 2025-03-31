@@ -2,8 +2,6 @@
 uid: learn.introduction-azure-firewall.6-knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge.
   ms.date: 01/23/2025
@@ -60,4 +58,4 @@ quiz:
     - content: "Azure Firewall Premium Link filtering"
       isCorrect: false
       explanation: "That's incorrect. You need to inspect the entire URL, and Link filtering isn't an actual Azure Firewall Premium feature."
-
+

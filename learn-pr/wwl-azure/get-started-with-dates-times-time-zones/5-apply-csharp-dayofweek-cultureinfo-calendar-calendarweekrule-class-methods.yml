@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-with-dates-times-time-zones.apply-csharp-dayofweek-cultureinfo-calendar-calendarweekrule-class-methods
+title: Apply DayOfWeek, CultureInfo, Calendar, and CalendarWeekRule in C#
+metadata:
+  title: Apply DayOfWeek, CultureInfo, Calendar, and CalendarWeekRule in C#
+  description: "Learn to handle culture-specific data, calendar operations, and day-of-week manipulations in .NET applications."
+  ms.date: 03/24/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-apply-csharp-dayofweek-cultureinfo-calendar-calendarweekrule-class-methods.md)]

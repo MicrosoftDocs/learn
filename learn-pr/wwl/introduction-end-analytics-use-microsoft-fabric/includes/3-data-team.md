@@ -1,23 +1,25 @@
-Microsoft Fabric's unified data analytics platform makes it easier for data professionals to work together on data projects. Fabric removes data silos and the need for access to multiple systems, enhancing collaboration between data professionals.
+Microsoft Fabric's unified data analytics platform makes it easier for data professionals to collaborate on projects. Fabric increases collaboration between data professionals by removing data silos and the need for multiple systems.
 
-### Traditional roles and challenges
+## Traditional roles and challenges
 
-In a traditional analytics development process, data engineers and data analysts face several challenges. Data engineers perform complex data processing and then curate and serve data sources so data analysts can display data effectively for the business. This process requires extensive communication and coordination between the two roles, often leading to potential delays and misinterpretations.
+In a traditional analytics development process, data teams often face several challenges due to the division of data tasks and workflows.
 
-Data analysts need to perform extensive downstream data transformations before creating Power BI reports. This time-consuming process often lacks context, making it difficult for analysts to connect with data directly.
+Data engineers process and curate data for analysts, who then use it to create business reports. This process requires extensive coordination, often leading to delays and misinterpretations.
 
-Data scientists also struggle to integrate native data science techniques with existing data systems, which are often complex and cumbersome. As a result, data scientists find it challenging to provide data-informed insights efficiently.
+Data analysts often need to perform downstream data transformations before creating Power BI reports. This process is time-consuming and can lack the necessary context, making it harder for analysts to connect directly with the data.
 
-### Evolution of collaborative workflows
+Data scientists face difficulties integrating native data science techniques with existing systems, which are often complex, and makes it challenging to efficiently provide data-driven insights.
 
-Microsoft Fabric transforms the analytics development process by unifying tools into a SaaS platform, allowing flexibility for different roles to perform necessary skills without duplicating efforts.
+## Evolution of collaborative workflows
 
-**Data engineers** can now ingest, transform, and load large amounts of data into OneLake and present it in whichever data store makes most sense. Data loading patterns are simplified using pipelines and architectures, such as medallion, can be easily configured using workspaces.
+Microsoft Fabric simplifies the analytics development process by unifying tools into a SaaS platform. Fabric allows different roles to collaborate effectively without duplicating efforts.
 
-**Data analysts** gain greater context and streamline processes, transforming data upstream with Data Factory and connecting with data more directly using Direct Lake mode.
+**Data engineers** can ingest, transform, and load data directly into OneLake using Pipelines, which automate workflows and support scheduling. They can store data in lakehouses, using the Delta-Parquet format for efficient storage and versioning. Notebooks provide advanced scripting capabilities for complex transformations.
 
-**Data scientists** Integrate native data science techniques more easily and use Power BI's interactive reporting to provide data-informed insights.
+**Data analysts** can transform data upstream using dataflows and connect directly to OneLake with Direct Lake mode, reducing the need for downstream transformations. They can create interactive reports more efficiently using Power BI.
 
-**Analytics engineers** bridge the gap between data engineering and data analysis by curating data store assets, ensuring data quality, and enabling self-service analytics.
+**Data scientists** can use integrated notebooks with support for Python and Spark to build and test machine learning models. They can store and access data in lakehouses and integrate with Azure Machine Learning to operationalize and deploy models.
 
-**Low-to-no-code users** and **citizen developers** can now discover curated data through the OneLake hub, and further process and analyze it to suit their needs without being dependent on data engineers or duplicating data.
+**Analytics engineers** bridge the gap between data engineering and analysis by curating data assets in lakehouses, ensuring data quality, and enabling self-service analytics. They can create semantic models in Power BI to organize and present data effectively.
+
+**Low-to-no-code users** and **citizen developers** can discover curated datasets through the OneLake Hub and use Power BI templates to quickly create reports and dashboards. They can also use dataflows to perform simple ETL tasks without relying on data engineers.

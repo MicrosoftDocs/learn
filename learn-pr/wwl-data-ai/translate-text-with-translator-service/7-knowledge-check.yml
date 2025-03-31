@@ -2,8 +2,6 @@
 uid: learn.wwl.translate-text-with-translator-service.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
@@ -38,4 +36,4 @@ quiz:
     - content: "Transliterate"
       isCorrect: true
       explanation: "Correct. Transliteration converts text from one script to another."
-
+

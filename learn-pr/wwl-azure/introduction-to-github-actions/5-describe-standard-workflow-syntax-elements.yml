@@ -2,8 +2,6 @@
 uid: learn.wwl.introduction-to-github-actions.describe-standard-workflow-syntax-elements
 title: Describe standard workflow syntax elements
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe standard workflow syntax elements
   description: "Describe standard workflow syntax elements"
   ms.date: 05/08/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 2
 content: |
-  [!include[](includes/5-describe-standard-workflow-syntax-elements.md)]
+  [!include[](includes/5-describe-standard-workflow-syntax-elements.md)]

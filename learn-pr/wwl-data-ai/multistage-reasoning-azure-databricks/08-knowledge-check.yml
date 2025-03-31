@@ -2,13 +2,11 @@
 uid: learn.wwl.multistage-reasoning-azure-databricks.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/23/2024
+  ms.date: 03/20/2025
   author: wwlpublish
-  ms.author: madiepev
+  ms.author: theresai
   ms.topic: unit
 azureSandbox: false
 labModal: false
@@ -48,4 +46,4 @@ quiz:
     - content: "To execute logical operations like AND, OR, and NOT."
       isCorrect: false
       explanation: "Incorrect. The 'retriever' isn't used to execute logical operations like AND, OR and NOT."
-
+

@@ -2,13 +2,11 @@
 uid: learn.arm-template-whatif.2-deployment-modes
 title: Understand deployment modes
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand deployment modes
   description: Learn about the two deployment modes for Azure, incremental and complete.
   author: mumian
   ms.author: jgao
-  ms.date: 01/31/2025
+  ms.date: 03/18/2025
   ms.topic: unit
   ms.custom:
     - team=nextgen
@@ -17,4 +15,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/2-deployment-modes.md)]
-
+

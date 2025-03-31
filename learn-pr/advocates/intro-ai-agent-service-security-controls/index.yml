@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.introduction-ai-agent-service-security-controls
+metadata:
+  ms.author: orthomas
+  author: Orin-Thomas
+  ms.date: 03/21/2025
+  title: Introduction to AI Agent Service Security Controls
+  description: An overview of Azure AI Agent Service security controls.
+  ms.topic: module
+  moduleType: standard
+  ms.service: artificial-intelligence
+  ms.collection: ce-advocates-ai-copilot
+title: Introduction to AI Agent Service Security Controls
+summary: An introductory overview of Azure AI Agent Service security controls.
+abstract:  |
+  After completing this module, you'll be able to:
+  -	To configure RBAC roles related to Azure AI hubs and projects and how those influence Azure AI agent service agents.
+  - To configure network access restrictions on inbound and outbound network traffic to the hubs that Azure AI agent service agents.
+prerequisites: |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  - Fundamental security concepts
+  - Fundamental AI concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.introduction-ai-agent-service-security-controls.understand-azure-ai-agent-service
+- learn.introduction-ai-agent-service-security-controls.secure-azure-ai-agent-service
+- learn.introduction-ai-agent-service-security-controls.azure-ai-agent-service-role-based-access-control
+- learn.introduction-ai-agent-service-security-controls.agent-service-network-access
+- learn.introduction-ai-agent-service-security-controls.knowledge-check
+- learn.introduction-ai-agent-service-security-controls.summary
+badge:
+  uid: learn.introduction-to-ai-agent-service-security-controls-badge

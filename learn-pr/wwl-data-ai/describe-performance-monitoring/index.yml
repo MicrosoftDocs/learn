@@ -1,12 +1,10 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-performance-monitoring
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe performance monitoring
   description: Describe performance monitoring
-  ms.date: 09/26/2022
-  author: wwlpublish
+  ms.date: 03/19/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module
   ms.service: azure
@@ -18,7 +16,7 @@ abstract: |
   - Identify critical Azure metrics.
   - Learn how to collect metrics for an established baseline.
   - Use extended events for performance analysis.
-  - Understand Azure SQL Database Intelligent Insights.
+  - Understand database watcher for Azure SQL Database and Azure SQL Managed Instance.
 prerequisites: |
   - Experience creating and configuring resources using the Azure portal.
   - Ability to use Windows Performance Monitor to monitor system components such as CPU, I/O, network traffic.
@@ -41,11 +39,11 @@ units:
 - learn.wwl.describe-performance-monitoring.describe-critical-performance-metrics
 - learn.wwl.describe-performance-monitoring.establish-baseline-metrics
 - learn.wwl.describe-performance-monitoring.describe-extended-events
-- learn.wwl.describe-performance-monitoring.describe-azure-sql-insights
+- learn.wwl.describe-performance-monitoring.describe-database-watcher
 - learn.wwl.describe-performance-monitoring.explore-query-performance-insight
 - learn.wwl.describe-performance-monitoring.exercise
 - learn.wwl.describe-performance-monitoring.knowledge-check
 - learn.wwl.describe-performance-monitoring.summary
 badge:
   uid: learn.wwl.describe-performance-monitoring.badge
-
+

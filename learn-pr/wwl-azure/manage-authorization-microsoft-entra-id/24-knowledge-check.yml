@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-authorization-microsoft-entra-id.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 08/07/2024
@@ -72,4 +70,4 @@ quiz:
       explanation: "Incorrect. Adding a condition is optional but recommended for more fine-grained access control."
     - content: "Select the Unconstrained option under Delegation type on the Conditions tab."
       isCorrect: false
-      explanation: "Incorrect. This option doesn't provide fine-grained access control."
+      explanation: "Incorrect. This option doesn't provide fine-grained access control."

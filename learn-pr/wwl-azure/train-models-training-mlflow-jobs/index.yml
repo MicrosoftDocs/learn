@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.train-models-training-mlflow-jobs
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Track model training with MLflow in jobs
   description: Learn how to track model training with MLflow in jobs when running scripts.
   author: wwlpublish
@@ -38,4 +36,4 @@ units:
 - learn.wwl.train-models-training-mlflow-jobs.summary
 badge:
   uid: learn.wwl.train-models-training-mlflow-jobs.badge
-
+

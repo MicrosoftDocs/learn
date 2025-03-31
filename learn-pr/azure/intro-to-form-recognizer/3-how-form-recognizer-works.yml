@@ -2,8 +2,6 @@
 uid: learn.azure.intro-to-form-recognizer.how-form-recognizer-works
 title: How Azure AI Document Intelligence works
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: How Azure AI Document Intelligence works
   description: How Azure AI Document Intelligence works
   author: laujan
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!INCLUDE[](includes/3-how-form-recognizer-works.md)]
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 04/07/2024
@@ -47,4 +45,4 @@ quiz:
       explanation: "Incorrect. Adhoc queries are best served by using Interactive Query clusters for HDInsight."
     - content: "Running continuous jobs on streaming data."
       isCorrect: true
-      explanation: "Correct, running continuous jobs on click stream analytics streaming from a website is a good solution for Spark Structured Streaming."
+      explanation: "Correct, running continuous jobs on click stream analytics streaming from a website is a good solution for Spark Structured Streaming."
