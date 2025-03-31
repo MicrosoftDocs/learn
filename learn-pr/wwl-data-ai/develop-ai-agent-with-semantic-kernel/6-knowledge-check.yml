@@ -39,9 +39,9 @@ quiz:
       - content: "Modify the AI model's architecture to integrate the plugin"  
         isCorrect: false  
         explanation: "Incorrect. Plugins work through function calling and don't require modifications to the AI model itself."  
-      - content: "Configure the plugin in Azure Portal before using it in Semantic Kernel"  
+      - content: "Configure the plugin in Azure portal before using it in Semantic Kernel"  
         isCorrect: false  
-        explanation: "Incorrect. Plugins are defined and added programmatically in the codebase, not configured in the Azure Portal."  
+        explanation: "Incorrect. Plugins are defined and added programmatically in the codebase, not configured in the Azure portal."  
       - content: "Define a class with methods annotated using the `kernel_function` decorator"  
         isCorrect: true  
         explanation: "Correct. The first step in using a plugin is defining a class and annotating its methods with the `kernel_function` decorator so the AI knows how to use them."  

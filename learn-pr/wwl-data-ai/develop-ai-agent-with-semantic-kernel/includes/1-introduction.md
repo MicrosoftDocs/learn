@@ -12,6 +12,6 @@ In this module, you learn about the core features of the Semantic Kernel SDK and
 
 After completing this module, you're now able to:
 
-- Use Semantic Kernel to connect to an Azure AI Foundry project
-- Create Azure AI Agent Service agents using the Semantic Kernel SDK
-- Integrate plugin functions with your AI agent
+- Use Semantic Kernel to connect to an Azure AI Foundry project.
+- Create Azure AI Agent Service agents using the Semantic Kernel SDK.
+- Integrate plugin functions with your AI agent.

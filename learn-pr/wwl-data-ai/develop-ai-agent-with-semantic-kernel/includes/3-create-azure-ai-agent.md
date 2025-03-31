@@ -5,12 +5,12 @@
 An AzureAIAgent object encapsulates all the core capabilities you typically use the Kernel for, like function execution, planning, and memory access. This object acts as a self-contained agent runtime.
 
 To use an AzureAIAgent:
-1. Create an Azure AI Foundry project
-1. Add the project connection string to your Semantic Kernel application code
-1. Create an AzureAIAgentSettings object
-1. Create an AzureAIAgent client
-1. Create an agent definition on the agent service provided by the client
-1. Create an agent based on the definition
+1. Create an Azure AI Foundry project.
+1. Add the project connection string to your Semantic Kernel application code.
+1. Create an AzureAIAgentSettings object.
+1. Create an AzureAIAgent client.
+1. Create an agent definition on the agent service provided by the client.
+1. Create an agent based on the definition.
 
 Here is the code that illustrates how to create an AzureAIAgent:
 
