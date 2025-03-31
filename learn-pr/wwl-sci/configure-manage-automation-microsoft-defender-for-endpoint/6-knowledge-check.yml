@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-manage-automation-microsoft-defender-for-endpoint.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 11/28/2023
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. The feature requires Defender antivirus"
     - content: "Automated Investigation"
       isCorrect: false
-      explanation: "Incorrect. Automated investigations aren't specific to blocking files."
+      explanation: "Incorrect. Automated investigations aren't specific to blocking files."
