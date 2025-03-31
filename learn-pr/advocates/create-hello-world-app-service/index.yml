@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.create-hello-app-service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deploy a simple Java Web App to Azure App Service
   description: Learn how to create a Java web application and deploy it to Azure App Service.
   ms.date: 12/11/2024
@@ -40,4 +38,4 @@ units:
   - learn.azure.create-hello-app-service.knowledge-check
   - learn.azure.create-hello-app-service.summary
 badge:
-  uid: learn.azure.create-hello-app-service.badge
+  uid: learn.azure.create-hello-app-service.badge

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.plan-implement-business-continuity-disaster-recovery
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Plan and implement updates, backups, and disaster recovery
   description: "Plan for disaster recovery."
   ms.date: 08/07/2024
@@ -42,4 +40,4 @@ units:
 - learn.wwl.plan-implement-business-continuity-disaster-recovery.knowledge-check
 - learn.wwl.plan-implement-business-continuity-disaster-recovery.summary
 badge:
-  uid: learn.wwl.plan-implement-business-continuity-disaster-recovery.badge
+  uid: learn.wwl.plan-implement-business-continuity-disaster-recovery.badge

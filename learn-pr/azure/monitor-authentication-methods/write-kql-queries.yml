@@ -2,8 +2,6 @@
 uid: learn.monitor-authentication-methods.write-kql-queries
 title: Write KQL queries
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Write KQL queries
   description: Write KQL queries
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 20
 content: |
-  [!include[](includes/write-kql-queries.md)]
+  [!include[](includes/write-kql-queries.md)]

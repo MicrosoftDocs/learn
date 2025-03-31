@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.startups.name-brand
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Naming and branding
   description: Learn how to choose a good name for your startup and create a strong brand.
   ms.date: 06/05/2024
@@ -41,4 +39,4 @@ units:
 - learn.startups.name-brand.summary
 badge:
   uid: learn.startups.name-brand.badge
-
+

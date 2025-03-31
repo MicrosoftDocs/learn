@@ -1,18 +1,5 @@
-If you're using IaaS for deploying your database solution, there are considerations for properly deploying HADR.
+When deploying your database solution using Infrastructure as a Service (IaaS), there are important considerations for implementing high availability and disaster recovery (HADR). For example, if you plan to use an Availability Group (AG), you need to understand how deploying a Windows Server Failover Cluster (WSFC) differs in this context. Are there specific considerations for AGs that differ from an on-premises solution?
 
-Suppose you want to use an Availability Group (AG). How is deploying a Windows Server Failover Cluster (WSFC) different? Are there any specific considerations for AGs that differ from an on-premises solution?
-
-Implementing a PaaS-based high availability and disaster recovery (HADR) solution for PaaS solutions is different than IaaS. For IaaS, the configuration is done at the Azure level. For PaaS, the solutions that allow your applications and data to be highly available and meet your RTOs and RPOs are configured within the database or database server.
+On the other hand, implementing a Platform as a Service (PaaS)-based HADR solution is distinct from IaaS. In IaaS, the configuration is managed at the Azure level, whereas in PaaS, the solutions that ensure your applications and data are highly available and meet your Recovery Time Objectives (RTOs) and Recovery Point Objectives (RPOs) are configured within the database or database server itself.
 
 By the end of this module, you'll understand what is needed to be able to deploy IaaS database platform solutions in Azure.
-
-## Learning objectives
-
-In this module, you'll learn:
-
-- What to consider when deploying a WSFC in Azure
-- What to consider when deploying an AG in Azure
-- How to enable AGs
-- Temporal Tables
-- Active-geo replication
-- Auto-failover groups

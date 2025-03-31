@@ -2,8 +2,6 @@
 uid: learn.azure.introduction-to-azure-developer-cli.when-to-use-azure-developer-cli
 title: When to use the Azure Developer CLI
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: When to use the Azure Developer CLI
   description: Examine criteria and use cases to help you decide whether the Azure Developer CLI is right for your organization
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/4-when-to-use-azure-developer-cli.md)]
-
+

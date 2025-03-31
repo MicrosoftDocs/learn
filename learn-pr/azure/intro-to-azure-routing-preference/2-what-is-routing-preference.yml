@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-routing-preference.what-is-routing-preference
 title: What is routing preference?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: what-is-routing-preference
   description: "Learn about routing preference and about the routing difference between the options of Internet and Microsoft network."
   ms.date: 04/08/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 2
 content: |
-  [!include[](includes/2-what-is-routing-preference.md)]
+  [!include[](includes/2-what-is-routing-preference.md)]

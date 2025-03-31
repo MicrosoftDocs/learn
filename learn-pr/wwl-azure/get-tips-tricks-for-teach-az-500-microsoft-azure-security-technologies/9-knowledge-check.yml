@@ -2,8 +2,6 @@
 uid: learn.wwl.get-tips-tricks-for-teach-az-500-microsoft-azure-security-technologies.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 11/15/2022
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. Instructor-led lab experiences allow students the opportunity to practice the labs and build a strong foundation. Students will walk through the labs with the instructor first and then solidify concepts when completing the labs on their own."
     - content: "Instructor-led lab experiences"
       isCorrect: true
-      explanation: "Correct. Instructor-led lab experiences allow students the opportunity to practice the labs and build a strong foundation. Students will walk through the labs with the instructor first and then solidify concepts when completing the labs on their own."
+      explanation: "Correct. Instructor-led lab experiences allow students the opportunity to practice the labs and build a strong foundation. Students will walk through the labs with the instructor first and then solidify concepts when completing the labs on their own."

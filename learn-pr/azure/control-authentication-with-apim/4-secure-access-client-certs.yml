@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.control-authentication-with-apim.4-secure-access-client-certs
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use client certificates to secure access to an API
   description: In this unit, you learn how to use client certificates to authenticate clients as they connect to an API in API Management.
   ms.date: 06/14/2023
@@ -13,4 +11,4 @@ title: Use client certificates to secure access to an API
 durationInMinutes: 10
 content: |
   [!include[](includes/4-secure-access-client-certs.md)]
-
+

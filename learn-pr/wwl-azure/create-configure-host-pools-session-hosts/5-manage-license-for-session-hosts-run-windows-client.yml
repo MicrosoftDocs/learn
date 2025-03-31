@@ -2,8 +2,6 @@
 uid: learn.wwl.create-configure-host-pools-session-hosts.manage-licensing-for-that-run-windows-client
 title: 'Create a host pool '
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create a host pool
   description: "Create a host pool"
   ms.date: 08/22/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 8
 content: |
-  [!include[](includes/5-manage-license-for-session-hosts-run-windows-client.md)]
+  [!include[](includes/5-manage-license-for-session-hosts-run-windows-client.md)]

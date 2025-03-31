@@ -2,8 +2,6 @@
 uid: learn.manage-secrets-with-azure-key-vault.6-configure-deploy-run-azure
 title: Exercise - Configure, deploy, and run your app in Azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Configure, deploy, and run your app in Azure
   description: Exercise - Configure, deploy, and run your app in Azure
   ms.date: 12/12/2024
@@ -28,4 +26,4 @@ content: |
 #     resource:
 #       type: "Microsoft.Web/sites"
 #   hint: "Use the instructions above to create a web app and deploy your site."
-
+

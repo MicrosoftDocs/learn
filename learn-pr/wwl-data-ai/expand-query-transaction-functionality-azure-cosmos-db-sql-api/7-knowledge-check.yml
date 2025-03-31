@@ -2,8 +2,6 @@
 uid: learn.wwl.expand-query-transaction-functionality-azure-cosmos-db-sql-api.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 02/06/2023
@@ -58,4 +56,4 @@ quiz:
       explanation: "Incorrect. A pre-trigger will run its logic too early before the item has successfully been created or updated."
     - content: "Post-trigger"
       isCorrect: true
-      explanation: "Correct. A post-trigger will run its logic after the item has successfully been created or updated. At this point, you can update the aggregate metadata item."
+      explanation: "Correct. A post-trigger will run its logic after the item has successfully been created or updated. At this point, you can update the aggregate metadata item."

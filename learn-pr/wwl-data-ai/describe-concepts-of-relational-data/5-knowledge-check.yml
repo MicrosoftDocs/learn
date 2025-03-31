@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-concepts-of-relational-data.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 03/18/2024
@@ -50,4 +48,4 @@ quiz:
       explanation: "That's correct. PaaS solutions enable you to scale up and out without having to procure your own hardware."
     - content: "Increased functionality"
       isCorrect: false
-      explanation: "That's incorrect. Many database management systems running as PaaS solutions have reduced functionality compared to running the same database management systems on-premises."
+      explanation: "That's incorrect. Many database management systems running as PaaS solutions have reduced functionality compared to running the same database management systems on-premises."

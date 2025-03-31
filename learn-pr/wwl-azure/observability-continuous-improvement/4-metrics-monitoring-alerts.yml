@@ -2,8 +2,6 @@
 uid: learn.wwl.observability-continuous-improvement.metrics-monitoring-alerts
 title: Metrics, Monitoring, and Alerts
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Metrics, Monitoring, and Alerts
   description: "Metrics, Monitoring, and Alerts"
   ms.date: 01/14/2025
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-metrics-monitoring-alerts.md)]
+  [!include[](includes/4-metrics-monitoring-alerts.md)]

@@ -2,8 +2,6 @@
 uid: learn.saas-technical-foundations.multitenant-model
 title: Multitenant model
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Multitenant model
   description: "A multitenant solution is one used by multiple customers, or tenants. This module covers considerations for multitenant model, where one instance of SaaS solution is shared across customers/tenants."
   ms.date: 2/9/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-multitenant-model.md)]
+  [!include[](includes/3-multitenant-model.md)]

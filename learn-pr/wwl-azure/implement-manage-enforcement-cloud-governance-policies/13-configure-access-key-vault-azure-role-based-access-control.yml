@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-manage-enforcement-cloud-governance-policies.configure-access-key-vault-azure-role-based-access-control
 title: Configure access to Key Vault, including vault access policies and Azure role-based access control
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure access to Key Vault, including vault access policies and Azure role-based access control
   description: "Configure access to Key Vault, including vault access policies and Azure role-based access control"
   ms.date: 02/07/2025

@@ -2,8 +2,6 @@
 uid: learn.wwl.get-started-generative-ai-azure-database-postgresql.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
@@ -51,4 +49,4 @@ quiz:
     - content: "Primarily designed for image recognition."
       isCorrect: false
       explanation: "Incorrect. Generative AI language models are primarily focused on natural language understanding and generation, not image recognition."
-
+

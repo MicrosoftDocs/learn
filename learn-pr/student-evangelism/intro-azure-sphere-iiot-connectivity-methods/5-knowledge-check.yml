@@ -2,8 +2,6 @@
 uid: learn.oxford.industrial-iot-connectivity.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: In this section, we create interactive questions that validate if the learner has understood the learning objectives.
   ms.date: 6/18/2021
@@ -50,4 +48,4 @@ quiz:
       explanation: "This option could not be feasible depending on the available connectivity options."
     
     
-
+

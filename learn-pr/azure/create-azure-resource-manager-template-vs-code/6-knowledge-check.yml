@@ -2,8 +2,6 @@
 uid: learn.azure.create-resource-manager-template-vs-code.6-knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Check your knowledge.
   ms.date: 10/29/2024
@@ -49,4 +47,4 @@ quiz:
     - content: "Azure Resource Manager deletes the previously deployed resources and redeploys them."
       isCorrect: false
       explanation: "If the resource already exists and no change is detected in the properties, no action is taken. If the resource already exists and a property changes, the resource is updated. If the resource doesn't exist, the resource is created."
-
+

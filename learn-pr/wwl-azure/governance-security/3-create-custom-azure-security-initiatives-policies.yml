@@ -2,8 +2,6 @@
 uid: learn.wwl.governance-security.create-custom-azure-security-initiatives-policies
 title: Create, assign, and interpret security policies and initiatives in Azure Policy
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create, assign, and interpret security policies and initiatives in Azure Policy
   description: "Create, assign, and interpret security policies and initiatives in Azure Policy"
   ms.date: 10/08/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-create-custom-azure-security-initiatives-policies.md)]
+  [!include[](includes/3-create-custom-azure-security-initiatives-policies.md)]

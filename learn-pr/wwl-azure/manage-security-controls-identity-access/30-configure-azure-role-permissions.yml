@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-security-controls-identity-access.configure-azure-role-permissions
 title: Configure Azure role permissions for management groups, subscriptions, resource groups, and resources
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure Azure role permissions for management groups, subscriptions, resource groups, and resources
   description: "Configure Azure role permissions for management groups, subscriptions, resource groups, and resources"
   ms.date: 03/10/2025

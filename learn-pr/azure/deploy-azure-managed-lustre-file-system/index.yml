@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.deploy-azure-managed-lustre-file-system
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Accelerate HPC and AI workloads with Azure Managed Lustre'
   description: Learn how to deploy an Azure Managed Lustre file system to accelerate HPC and AI workloads.
   manager: akashdubey
@@ -51,4 +49,4 @@ units:
 - learn.azure.deploy-azure-managed-lustre-file-system.summary
 badge:
   uid: learn.azure.deploy-azure-managed-lustre-file-system.badge
-
+

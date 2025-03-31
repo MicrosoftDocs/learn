@@ -2,8 +2,6 @@
 uid: learn.azure.characterize-dataset-azure-data-explorer.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: "Learn how to characterize an unfamiliar dataset using Azure Data Explorer web UI and KQL queries."
@@ -49,4 +47,4 @@ quiz:
       isCorrect: true
       explanation: "True. This visualization will help you determine if there's missing data."
 
-
+

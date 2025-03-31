@@ -2,8 +2,6 @@
 uid: learn.wwl.query-azure-cosmos-db-sql-api.understand-sql-query-language
 title: Understand NoSQL query language
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand NoSQL query language
   description: "Understand NoSQL query language"
   ms.date: 03/10/2025
@@ -15,4 +13,4 @@ labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/2-understand-sql-query-language.md)]
-
+

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-deploy-configure-azure-monitor
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Guided Project – Deploy and configure Azure Monitor
   description: In this module, you practice configuring monitoring of various workloads and infrastructure services using Azure Monitor. The skills validated include deploying and configuring Log Analytics, configuring monitoring for Web apps, monitoring compute and networking services, and configuring alerts.
   ms.date: 10/06/2023
@@ -38,4 +36,4 @@ units:
 - learn.wwl.guided-project-deploy-configure-azure-monitor.summary
 badge:
   uid: learn.wwl.guided-project-deploy-configure-azure-monitor.badge
-
+

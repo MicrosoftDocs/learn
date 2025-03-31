@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-replication-manage-failovers-azure-cosmos-db
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure replication and manage failovers in Azure Cosmos DB
   description: "Configure replication and manage failovers in Azure Cosmos DB"
   ms.date: 12/06/2022
@@ -41,4 +39,4 @@ units:
 - learn.wwl.configure-replication-manage-failovers-azure-cosmos-db.knowledge-check
 - learn.wwl.configure-replication-manage-failovers-azure-cosmos-db.summary
 badge:
-  uid: learn.wwl.configure-replication-manage-failovers-azure-cosmos-db.badge
+  uid: learn.wwl.configure-replication-manage-failovers-azure-cosmos-db.badge

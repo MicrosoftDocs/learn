@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-canary-releases-dark-launching.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 05/06/2024
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. You are looking to assess users' responses to new features in your frontend rather than testing the performance of the backend."
     - content: "You're looking to assess users' responses to new features in your backend rather than testing the performance of the frontend."
       isCorrect: false
-      explanation: "Incorrect. You are looking to assess users' responses to new features in your frontend rather than testing the performance of the backend."
+      explanation: "Incorrect. You are looking to assess users' responses to new features in your frontend rather than testing the performance of the backend."

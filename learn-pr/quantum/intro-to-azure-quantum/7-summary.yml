@@ -2,8 +2,6 @@
 uid: learn.quantum.intro-to-azure-quantum.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 01/09/2024
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/7-summary.md)]

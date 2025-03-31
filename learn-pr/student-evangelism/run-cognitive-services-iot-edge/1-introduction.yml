@@ -2,8 +2,6 @@
 uid: learn.oxford.run-cognitive-services-iot-edge.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction to running Azure AI services on the edge
   ms.date: 07/22/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction.md)]
-
+

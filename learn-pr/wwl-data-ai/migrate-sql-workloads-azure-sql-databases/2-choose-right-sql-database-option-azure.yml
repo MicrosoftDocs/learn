@@ -2,8 +2,6 @@
 uid: learn-wwl.migrate-sql-workloads-azure-sql-databases.choose-right-sql-database-option-azure
 title: Choose the right Azure SQL Database feature
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Choose the right Azure SQL Database feature
   description: "Learn the essentials of Azure SQL Database deployment planning and migration. Explore its benefits, exclusive features, and migration options while optimizing performance and application connections for a smooth transition to the cloud."
   ms.date: 10/31/2023
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-choose-right-sql-database-option-azure.md)]
+  [!include[](includes/2-choose-right-sql-database-option-azure.md)]

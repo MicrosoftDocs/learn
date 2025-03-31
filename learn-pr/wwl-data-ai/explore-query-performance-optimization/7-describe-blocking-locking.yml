@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-query-performance-optimization.describe-blocking-locking
 title: Describe blocking and locking
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe blocking and locking
   description: "Describe blocking and locking"
   ms.date: 06/28/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 12
 content: |
-  [!include[](includes/7-describe-blocking-locking.md)]
+  [!include[](includes/7-describe-blocking-locking.md)]

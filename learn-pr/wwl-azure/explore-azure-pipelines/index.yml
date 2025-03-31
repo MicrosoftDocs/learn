@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-azure-pipelines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Azure Pipelines
   description: "Explore Azure Pipelines"
   ms.date: 05/07/2024
@@ -56,4 +54,4 @@ units:
 - learn.wwl.explore-azure-pipelines.knowledge-check
 - learn.wwl.explore-azure-pipelines.summary
 badge:
-  uid: learn.wwl.explore-azure-pipelines.badge
+  uid: learn.wwl.explore-azure-pipelines.badge

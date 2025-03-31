@@ -2,8 +2,6 @@
 uid: learn.azure.intro-to-form-recognizer.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   author: laujan
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!INCLUDE[](includes/7-summary.md)]
-
+

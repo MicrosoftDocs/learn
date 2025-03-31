@@ -2,8 +2,6 @@
 uid: learn.wwl.multistage-reasoning-azure-databricks.multi-stage-reasoning-concepts
 title: What are multi-stage reasoning systems?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What are multi-stage reasoning systems?
   description: "What are multi-stage reasoning systems?"
   ms.date: 03/20/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/02-multi-stage-reasoning-concepts.md)]
+  [!include[](includes/02-multi-stage-reasoning-concepts.md)]

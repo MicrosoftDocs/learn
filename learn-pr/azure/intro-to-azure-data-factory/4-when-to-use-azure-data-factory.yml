@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-data-factory.4-when-to-use-azure-data-factory  
 title: When to use Azure Data Factory  
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content  
   title: When to use Azure Data Factory
   description: When to use Azure Data Factory
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/4-when-to-use-azure-data-factory.md)]
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.business-continuity.lab-exercise
 title: 'Exercise: Troubleshoot business continuity issues'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Troubleshoot business continuity issues'
   description: "Exercise: Troubleshoot business continuity issues"
   ms.date: 04/27/2023
@@ -15,4 +13,4 @@ labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/4-exercise-business-continuity-issues.md)]
-interactive: powershell
+interactive: powershell

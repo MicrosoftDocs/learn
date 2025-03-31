@@ -2,8 +2,6 @@
 uid: learn.azure.authenticate-azure-deployment-workflow-workload-identities.grant-workload-identity-access-azure
 title: Grant a workload identity access to Azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Grant a workload identity access to Azure
   description: Learn how to create an Azure role assignment for a workload identity.
@@ -17,4 +15,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/4-grant-workload-identity-access-azure.md)]
-
+

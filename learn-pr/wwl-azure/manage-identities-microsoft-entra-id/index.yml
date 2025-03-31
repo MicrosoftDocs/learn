@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-identities-microsoft-entra-id
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage identities in Microsoft Entra ID
   description: "This module focuses on effectively managing identities and enhancing security in Microsoft Entra ID, ensuring that users, groups, and external identities are protected against security threats and unauthorized access."
   ms.date: 07/03/2024
@@ -50,4 +48,4 @@ units:
 - learn.wwl.manage-identities-microsoft-entra-id.knowledge-check
 - learn.wwl.manage-identities-microsoft-entra-id.summary
 badge:
-  uid: learn.wwl.manage-identities-microsoft-entra-id.badge
+  uid: learn.wwl.manage-identities-microsoft-entra-id.badge

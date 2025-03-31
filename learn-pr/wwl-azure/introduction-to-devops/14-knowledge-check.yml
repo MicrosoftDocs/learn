@@ -2,8 +2,6 @@
 uid: learn.wwl.introduction-to-devops.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 05/29/2024
@@ -48,4 +46,4 @@ quiz:
       explanation: "Correct. Infrastructure as Code (IaC) is a practice that enables the automation and validation of the creation and teardown of environments to help with delivering secure and stable application hosting platforms."
     - content: "Software as a Service (SaaS)."
       isCorrect: false
-      explanation: "Incorrect. Infrastructure as Code (IaC) is a practice that enables the automation and validation of the creation and teardown of environments to help with delivering secure and stable application hosting platforms."
+      explanation: "Incorrect. Infrastructure as Code (IaC) is a practice that enables the automation and validation of the creation and teardown of environments to help with delivering secure and stable application hosting platforms."

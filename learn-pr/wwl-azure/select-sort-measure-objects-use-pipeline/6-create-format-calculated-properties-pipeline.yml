@@ -2,8 +2,6 @@
 uid: learn.wwl.select-sort-measure-objects-use-pipeline.create-format-calculated-properties-pipeline
 title: Create and format calculated properties in the pipeline
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create and format calculated properties in the pipeline
   description: "Create and format calculated properties in the pipeline"
   ms.date: 05/30/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-create-format-calculated-properties-pipeline.md)]
+  [!include[](includes/6-create-format-calculated-properties-pipeline.md)]

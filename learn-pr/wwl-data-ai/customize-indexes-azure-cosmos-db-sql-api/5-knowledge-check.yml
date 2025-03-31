@@ -2,8 +2,6 @@
 uid: learn.wwl.customize-indexes-azure-cosmos-db-sql-api.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 10/17/2022
@@ -36,4 +34,4 @@ quiz:
       explanation: "That's incorrect. The sequence of properties in the composite index must exactly match the ``ORDER BY`` clause."
     - content: "``(name ASC, price ASC)``"
       isCorrect: true
-      explanation: "That's correct. This composite index will support the SQL query."
+      explanation: "That's correct. This composite index will support the SQL query."

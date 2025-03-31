@@ -2,8 +2,6 @@
 uid: learn.azure.create-your-first-text-to-speech-app.exercise-create-text-to-speech-app-using-ssml
 title: Exercise - Create a text to speech application using an SSML file
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create a text to speech application using an SSML file
   description: In this exercise, you'll create a text to speech application using an SSML file.
   author: rmcmurray
@@ -17,4 +15,4 @@ interactive: bash
 durationInMinutes: 10
 content: |
   [!INCLUDE[](includes/7-exercise-create-text-to-speech-app-using-ssml.md)]
-
+

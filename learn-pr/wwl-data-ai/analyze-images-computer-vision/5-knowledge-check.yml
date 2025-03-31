@@ -2,8 +2,6 @@
 uid: learn.wwl.analyze-images-computer-vision.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Knowledge check
   author: wwlpublish
@@ -49,4 +47,4 @@ quiz:
     - content: "Dense Captions"
       isCorrect: false
       explanation: "Incorrect. Categories provide suggested categorizations for the image as a whole, not individual items in it."
-
+

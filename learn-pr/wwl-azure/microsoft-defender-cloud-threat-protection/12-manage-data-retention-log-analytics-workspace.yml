@@ -2,11 +2,9 @@
 uid: learn.wwl.microsoft-defender-cloud-threat-protection.manage-data-retention-log-analytics-workspace
 title: Manage data retention in a Log Analytics workspace
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage data retention in a Log Analytics workspace
   description: "Manage data retention in a Log Analytics workspace"
-  ms.date: 02/28/2025
+  ms.date: 03/28/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

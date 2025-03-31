@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.aks-network-design-azure-container-network-interface
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure Azure CNI networking in Azure Kubernetes Service (AKS)
   description: In this module, you learn about the Azure Container Networking Interface (CNI) and how to configure it in Azure Kubernetes Service (AKS).
   manager: mkluck
@@ -47,4 +45,4 @@ units:
   - learn.aks-network-design-azure-container-network-interface.9-summary
 badge:
   uid: learn.aks-network-design-azure-container-network-interface.badge
-
+

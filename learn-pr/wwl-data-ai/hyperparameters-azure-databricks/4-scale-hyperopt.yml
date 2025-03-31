@@ -2,8 +2,6 @@
 uid: learn.wwl.hyperparameters-azure-databricks.scale-hyperopt
 title: Scale Hyperopt trials
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Scale Hyperopt trials
   description: Scale Hyperopt trials
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/4-scale-hyperopt.md)]
-
+

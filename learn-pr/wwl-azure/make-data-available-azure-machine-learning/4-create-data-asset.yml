@@ -2,8 +2,6 @@
 uid: learn.wwl.make-data-available-azure-machine-learning.create-data-asset
 title: Create a data asset
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create a data asset
   description: Create a data asset
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 12
 content: |
   [!include[](includes/4-create-data-asset.md)]
-
+

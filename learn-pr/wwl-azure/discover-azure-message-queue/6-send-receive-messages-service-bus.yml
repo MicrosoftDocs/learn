@@ -2,8 +2,6 @@
 uid: learn.wwl.discover-azure-message-queue.exercise-send-receive-message-from-service-bus-queue-by-using-net
 title: 'Exercise: Send and receive message from a Service Bus queue by using .NET.'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Send and receive message from a Service Bus queue by using .NET.'
   description: "Exercise: Send and receive message from a Service Bus queue by using .NET."
   ms.date: 07/18/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 30
 content: |
-  [!include[](includes/6-send-receive-messages-service-bus.md)]
+  [!include[](includes/6-send-receive-messages-service-bus.md)]

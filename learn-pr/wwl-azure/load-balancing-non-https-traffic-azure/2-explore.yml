@@ -2,8 +2,6 @@
 uid: learn.wwl.load-balancing-non-https-traffic-azure.explore
 title: Explore load balancing
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore load balancing
   description: "Explore load balancing"
   ms.date: 02/13/2025

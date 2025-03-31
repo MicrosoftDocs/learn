@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-cost-management-azure.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 09/19/2024
@@ -39,4 +37,4 @@ quiz:
       explanation: "Correct. The Total Cost of Ownership calculator lets you input your current infrastructure and requirements and provides you with an estimate for running in the cloud."
     - content: "Migrate to the cloud, but track usage closely using tags to rapidly understand costs."
       isCorrect: false
-      explanation: "Incorrect. While you would get the most accurate information with this approach, it would also be the most expensive and would entail a full migration."
+      explanation: "Incorrect. While you would get the most accurate information with this approach, it would also be the most expensive and would entail a full migration."

@@ -2,8 +2,6 @@
 uid: learn.wwl.design-data-partitioning-strategy.combine-multiple-entities-same-container
 title: Combine multiple entities in the same container
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Combine multiple entities in the same container
   description: "Combine multiple entities in the same container"
   ms.date: 04/16/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-combine-multiple-entities-same-container.md)]
+  [!include[](includes/4-combine-multiple-entities-same-container.md)]

@@ -2,8 +2,6 @@
 uid: learn.wwl.develop-for-storage-cdns.control-cache-behavior-azure-content-delivery-networks
 title: Control cache behavior on Azure Content Delivery Networks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Control cache behavior on Azure Content Delivery Networks
   description: "Control cache behavior on Azure Content Delivery Networks"
   ms.date: 01/09/2025

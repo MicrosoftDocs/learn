@@ -2,8 +2,6 @@
 uid: learn.wwl.query-azure-cosmos-db-sql-api.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 03/10/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 2
 content: |
-  [!include[](includes/10-summary.md)]
+  [!include[](includes/10-summary.md)]

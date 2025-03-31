@@ -2,8 +2,6 @@
 uid: learn.wwl.deploy-manage-azure-iaas-active-directory-domain-controllers-azure.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 06/20/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/01-introduction.md)]
+  [!include[](includes/01-introduction.md)]

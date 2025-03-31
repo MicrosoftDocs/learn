@@ -3,8 +3,6 @@ uid: learn.azure.build-reusable-bicep-templates-parameters.exercise-create-use-p
 title: Exercise - Add a parameter file and secure parameters
 sandbox: true
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Add a parameter file and secure parameters
   description: Learn about parameter files and how to provide secure parameters by using decorators and Azure Key Vault references.
@@ -18,4 +16,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/6-exercise-create-use-parameter-files.md)]
-
+

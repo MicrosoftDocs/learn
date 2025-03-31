@@ -2,8 +2,6 @@
 uid: learn.wwl.analyze-devops-continuous-planning-intergration.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 09/20/2020
@@ -71,4 +69,4 @@ quiz:
       explanation: "Sorry, that’s incorrect. Additional testing cycles don't help maintain quality while increasing speed to market."
     - content: "Shorter (and less complex) deployment cycles"
       isCorrect: true
-      explanation: "That’s correct. Shorter and less complex deployment cycles maintain quality while increasing speed to market."
+      explanation: "That’s correct. Shorter and less complex deployment cycles maintain quality while increasing speed to market."

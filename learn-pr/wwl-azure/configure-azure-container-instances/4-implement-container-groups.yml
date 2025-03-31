@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-azure-container-instances.implement-container-groups
 title: Implement container groups
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement container groups
   description: "Implement container groups"
   ms.date: 12/20/2024

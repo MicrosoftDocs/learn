@@ -2,8 +2,6 @@
 uid: learn.wwl.select-sort-measure-objects-use-pipeline.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 05/30/2024
@@ -39,4 +37,4 @@ quiz:
       explanation: "Correct. The **Select-Object** cmdlet allows you to specify the properties of an object passed to it by a pipeline that should be displayed as part of its output."
     - content: "Sort-Object"
       isCorrect: false
-      explanation: "Incorrect. The **Select-Object** cmdlet allows you to specify the properties of an object passed to it by a pipeline that should be displayed as part of its output. The **Sort-Object** cmdlet allows you to specify which properties to use for sorting, but not which properties to display."
+      explanation: "Incorrect. The **Select-Object** cmdlet allows you to specify the properties of an object passed to it by a pipeline that should be displayed as part of its output. The **Sort-Object** cmdlet allows you to specify which properties to use for sorting, but not which properties to display."

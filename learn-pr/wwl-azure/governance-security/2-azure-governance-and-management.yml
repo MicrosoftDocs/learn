@@ -2,8 +2,6 @@
 uid: learn.wwl.governance-security.azure-governance-and-management
 title: Azure governance
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Azure governance
   description: "Azure governance"
   ms.date: 10/08/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-azure-governance-and-management.md)]
+  [!include[](includes/2-azure-governance-and-management.md)]

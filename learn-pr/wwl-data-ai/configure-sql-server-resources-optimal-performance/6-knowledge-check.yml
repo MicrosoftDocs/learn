@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-sql-server-resources-for-optimal-performance.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 03/20/2025
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. The provider doesn't configure this option."
     - content: "Maintenance plan"
       isCorrect: false
-      explanation: "Incorrect. While you can configure backups, you can't configure maintenance plans."
+      explanation: "Incorrect. While you can configure backups, you can't configure maintenance plans."

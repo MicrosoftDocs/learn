@@ -2,8 +2,6 @@
 uid: learn.wwl.use-consistency-models-azure-cosmos-db-sql-api.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 10/17/2022
@@ -36,4 +34,4 @@ quiz:
       explanation: "That's incorrect. The session level has weaker consistency guarantees than Bounded staleness outside of the user session."
     - content: "Consistent prefix"
       isCorrect: false
-      explanation: "That's incorrect. The consistent prefix level has relatively weak consistency and only guarantees that writes will appear in the correct order."
+      explanation: "That's incorrect. The consistent prefix level has relatively weak consistency and only guarantees that writes will appear in the correct order."

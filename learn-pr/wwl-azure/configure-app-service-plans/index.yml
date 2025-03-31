@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-app-service-plans
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure Azure App Service plans
   description: "Configure Azure App Service plans"
   ms.date: 03/10/2025

@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-git-hooks.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 05/08/2024
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. For example, you could have a hook into the commit-msg event to validate that the commit message structure follows the recommended format, or it's associated with a work item."
     - content: "Msg-commit."
       isCorrect: false
-      explanation: "Incorrect. For example, you could have a hook into the commit-msg event to validate that the commit message structure follows the recommended format, or it's associated with a work item."
+      explanation: "Incorrect. For example, you could have a hook into the commit-msg event to validate that the commit message structure follows the recommended format, or it's associated with a work item."

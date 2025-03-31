@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.control-network-traffic-flow-with-routes.5-exercise-create-nva-vm
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create an NVA and virtual machines
   description: Exercise - Create an NVA and virtual machines
   ms.date: 12/02/2024
@@ -17,4 +15,4 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/5-exercise-create-nva-vm.md)]
-
+
