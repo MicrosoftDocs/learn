@@ -2,9 +2,11 @@
 uid: learn.machinelearning.machine-learning-architectures-and-hyperparameters.knowledge-check
 title: Knowledge check
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Knowledge check
   description: Multiple-choice questions
-  ms.date: 07/21/2024
+  ms.date: 03/24/2025
   author: s-polly
   ms.author: scottpolly
   ms.topic: unit
@@ -25,7 +27,7 @@ quiz:
       explanation: "Correct."
   - content: 'What does selecting model architectures mean?'
     choices:
-    - content: "Picking a model’s parameter values before training"
+    - content: "Picking a model's parameter values before training"
       isCorrect: false
       explanation: "Incorrect."
     - content: "Deciding how a model is structured"
@@ -45,4 +47,4 @@ quiz:
     - content: "All of the above"
       isCorrect: true
       explanation: "Correct."
-
+
