@@ -18,35 +18,35 @@ quiz:
   questions:
   - content: "What are two key components of transformer architecture that support today's generative AI?"
     choices:
-    - content: "Recurrent Neural Networks(RNNs) and memory retention"
+    - content: "Recurrent Neural Networks (RNNs) and memory retention"
       isCorrect: false
-      explanation: "RNNs were developed before transformer architecture. Transformer architecture is able to covercome challenges with RNNs."
+      explanation: "RNNs were developed before transformer architecture. Transformer architecture is able to overcome challenges with RNNs."
     - content: "Attention and positional encoding"
       isCorrect: true 
       explanation: "The most important innovations presented in the transformer architecture were *positional encoding* and *multi-head attention*."
     - content: "Prompt engineering and groundedness"
       isCorrect: false
-      explanation: Prompt engineering describes the process of prompt improvement, and while important, is not a key component of transformer architecture. Groundedness is a metric that measures response quality.     
+      explanation: Prompt engineering describes the process of prompt improvement, and while important, isn't a key component of transformer architecture. Groundedness is a metric that measures response quality.     
   - content: "What is the main difference between Large Language Models and Small Language Models?"
     choices:
-    - content: "Large Language Models are trained with vast quantities of text that represents a wide range of general subject matter, while Small Language Models are trained with smaller, more subject-focused datasets."
+    - content: "Large Language Models are trained with vast quantities of text. The text represents a wide range of general subject matter, while Small Language Models are trained with smaller, more subject-focused datasets."
       isCorrect: true 
       explanation: "Large Language Models are trained with vast quantities of text and have many parameters, while Small Language Models are trained with smaller datasets and have fewer parameters."
-    - content: "Large Language Models are trained to include an understanding of context, while Small Language Models are not."
+    - content: "Large Language Models are trained to include an understanding of context, while Small Language Models aren't."
       isCorrect: false
-      explanation: "Both LLMs and SLMs are trained to take into account context."
+      explanation: "Both large language models (LLMs) and small language models (SLMs) are trained to take into account context."
     - content: "Large Language Models have fewer parameters than Small Language Models."
       isCorrect: false
       explanation: "Incorrect. Large Language Models have many billions (even trillions) of parameters, which is more than Small Language Models."
   - content: "What is the purpose of fine-tuning in the context of generative AI?"
     choices:
-    - content: "It is used to manage access, authentication, and data usage in AI models."
+    - content: "It's used to manage access, authentication, and data usage in AI models."
       isCorrect: false
-      explanation: "This describes the role of security and governance controls, not fine-tuning."
+      explanation: "This statement describes the role of security and governance controls, not fine-tuning."
     - content: "It involves connecting a language model to an organization's proprietary database."
       isCorrect: false
-      explanation: "This describes the function of Retrieval-Augmented Generation, not fine-tuning."
-    - content: "It involves further training a pre-trained model on a task-specific dataset to make it more suitable for a particular application."
+      explanation: "This statement describes the function of Retrieval-Augmented Generation, not fine-tuning."
+    - content: "It involves further training a pretrained model on a task-specific dataset to make it more suitable for a particular application."
       isCorrect: true 
       explanation: "Fine-tuning allows the model to specialize and perform better at specific tasks that require domain-specific knowledge."
   - content: "What are the four stages in the process of developing and implementing a plan for responsible AI when using generative models according to Microsoft's guidance?"
@@ -56,9 +56,9 @@ quiz:
       explanation: "While it's important to identify and enhance benefits, the focus should be on identifying, measuring, and mitigating potential harms."
     - content: "Identify potential harms, Measure these harms, Mitigate the harms, Operate the solution responsibly"
       isCorrect: true
-      explanation: "These are the four stages in the process of developing and implementing a plan for responsible AI when using generative models."
+      explanation: "These stages are the four stages in the process of developing and implementing a plan for responsible AI when using generative models."
     - content: "Define the problem, Design the solution, Develop the solution, Deploy the solution"
       isCorrect: false
-      explanation: "These are general stages of software development, not specific to responsible AI development."
+      explanation: "These stages are general stages of software development, not specific to responsible AI development."
   
 

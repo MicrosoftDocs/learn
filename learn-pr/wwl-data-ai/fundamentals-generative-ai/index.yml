@@ -18,7 +18,7 @@ summary: "In this module, you explore the way in which language models enable AI
 abstract: |
   By the end of this module, you are able to:
   - Understand what generative AI can do and how it appears in today's applications.
-  - Understand how lanuage models can understand and generate language. 
+  - Understand how language models can understand and generate language. 
   - Describe ways you can engineer good prompts and quality responses. 
   - Describe responsible generative AI concepts.
 prerequisites: |

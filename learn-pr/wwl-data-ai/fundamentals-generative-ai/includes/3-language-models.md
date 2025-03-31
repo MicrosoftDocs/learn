@@ -1,4 +1,4 @@
-Over the last decades, multiple developments in the field of **natural language processing** (**NLP**) have resulted in achieving **large language models** (**LLMs**). The development and availability of language models led to new ways to interact with applications and systems, such as through generative AI assistants and agents. There are a few key conepts to understand about modern language models: 
+Over the last decades, multiple developments in the field of **natural language processing** (**NLP**) have resulted in achieving **large language models** (**LLMs**). The development and availability of language models led to new ways to interact with applications and systems, such as through generative AI assistants and agents. There are a few key concepts to understand about modern language models: 
 
 - How they *read*  
 - How they understand the relationship between words 
