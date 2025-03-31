@@ -2,9 +2,11 @@
 uid: learn.wwl.implement-app-registration.configure-application-permission
 title: Configure permission for an application
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure permission for an application
   description: "Configure permission for an application"
-  ms.date: 12/18/2024
+  ms.date: 03/31/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
