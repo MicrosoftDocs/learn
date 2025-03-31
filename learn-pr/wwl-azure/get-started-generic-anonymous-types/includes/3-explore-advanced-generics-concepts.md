@@ -15,7 +15,7 @@ Advanced use of generics builds on the foundation of generics by introducing fea
 > [!TIP]  
 > Use advanced generics to simplify complex scenarios while keeping your code reusable and type-safe.
 
-## Generic Interfaces
+## Generic interfaces
 
 Generic interfaces are a key feature of advanced generics, allowing you to define type-safe contracts for implementing classes. They're especially useful when you want to enforce consistent behavior across different types while maintaining flexibility.
 
@@ -102,7 +102,7 @@ Action<string> handleString = handleObject; // Contravariance: object is a more 
 > [!TIP]  
 > Covariance is useful when reading data, such as, iterating through a collection. Contravariance is useful when writing or processing data, such as passing parameters to a method.
 
-## Generic Math and Methods
+## Generic math and methods
 
 .NET 7 introduces generic math interfaces, enabling mathematical operations across numeric types.
 

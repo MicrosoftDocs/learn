@@ -1,4 +1,4 @@
-Imagine you're preparing a quick summary of items in a warehouse. Instead of creating detailed records for each item, you jot down only the key details you need, like the name and price, on a temporary list. This approach helps you stay organized without unnecessary complexity. Anonymous types in C# work similarly—they let you group related data into a temporary object without defining a full class, making your code simpler and more efficient.
+Imagine you're preparing a quick summary of items in a warehouse. Instead of creating detailed records for each item, you jot down only the key details you need, like the name and price, on a temporary list. This approach helps you stay organized without unnecessary complexity. Anonymous types in C# work similarly they let you group related data into a temporary object without defining a full class, making your code simpler and more efficient.
 
 ## Understand the concept of anonymous types
 
