@@ -2,8 +2,8 @@
 uid: learn.introduction-to-azure-machine-learning-monitoring.monitoring-azure-machine-learning-workspace-compute
 title: Monitoring Azure Machine Learning workspaces and compute
 metadata:
-  title: Monitoring Azure Machine Learning workspaces and compute
-  description: Learn about monitoring Azure Machine Learning workspaces and compute
+  title: Monitoring Azure Machine Learning Workspaces and Compute
+  description: Learn about monitoring Azure Machine Learning workspaces and compute.
   ms.date: 03/15/2025
   author: Orin-Thomas
   ms.author: viniap
