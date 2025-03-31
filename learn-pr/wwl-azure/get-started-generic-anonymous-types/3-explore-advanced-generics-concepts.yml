@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-generic-anonymous-types.explore-advanced-generics-concepts
+title: Explore advanced Generics concepts
+metadata:
+  title: Explore advanced Generics concepts
+  description: "Understand advanced concepts of generics, including covariance, contravariance, and generic constraints, to write more flexible, and reusable code."
+  ms.date: 03/31/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-explore-advanced-generics-concepts.md)]

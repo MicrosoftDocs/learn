@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-generic-anonymous-types.practical-applications-anonymous-types
+title: Practical applications of anonymous types
+metadata:
+  title: Practical applications of anonymous types
+  description: "Learn how to use anonymous types in C# for temporary data structures, LINQ queries, and efficient grouping of related data."
+  ms.date: 03/31/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-practical-applications-anonymous-types.md)]
