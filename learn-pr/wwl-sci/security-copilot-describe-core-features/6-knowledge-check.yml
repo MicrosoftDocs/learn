@@ -62,7 +62,7 @@ quiz:
       explanation: Incorrect. The plugin might be supported but appears restricted due to certain settings.
     - content: The plugin requires an account and license to the specific service.
       isCorrect: false
-      explanation: Incorrect. While some plugins do require an account and license, this wouldn't cause the plugin to appear greyed out and restricted.
+      explanation: Incorrect. While some plugins do require an account and license, this wouldn't cause the plugin to appear grayed out and restricted.
     - content: The Copilot owner has restricted plugin access.
       isCorrect: true
       explanation: Correct. If a Copilot owner has restricted plugin access, then those plugins that have been set to restricted will show greyed out.

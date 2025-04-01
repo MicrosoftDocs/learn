@@ -15,7 +15,7 @@ There are some key landmarks on the Copilot landing page (portal) to which the u
 
 The home menu is accessed by selecting the hamburger icon located on the top left corner of the Copilot landing page.
 
-:::image type="content" source="../media/home-menu-icon-home-menu-options-agents.png" lightbox="../media/home-menu-icon-home-menu-options-agents.png" alt-text="Screen capture showing the hamburger icon and the page it opens when selected.":::
+:::image type="content" source="../media/home-menu-icon-home-menu-options.png" lightbox="../media/home-menu-icon-home-menu-options-agents.png" alt-text="Screen capture showing the hamburger icon and the page it opens when selected.":::
 
 From the home menu, the user can navigate as follows:
 

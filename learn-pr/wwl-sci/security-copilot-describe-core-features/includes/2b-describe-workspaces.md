@@ -21,7 +21,7 @@ There are many benefits to Copilot workspaces.
 
 You need to be at least a Security Administrator to create new workspaces for your organization. A workspace is powered by a capacity resource (SCUs). To attach capacity to a workspace, you also need to be an Azure subscription owner or contributor.
 
-There are several entry points for you to create a new workspace
+There are several entry points for you to create a new workspace:
 
 - From the breadcrumb of the portal
 - From the Manage workspaces section of the Owner settings page
@@ -54,17 +54,17 @@ Decisions and configuration made in plugin settings and role permissions apply s
 
 Decisions and configurations within "owner settings" apply specifically to the workspace that is being configured, with one exception: Audit Logging enablement can only be changed by Security Admins and applies to all workspaces.
 
-:::image type="content" source="../media/workspace-audit-logging.png" lightbox="../media/workspace-audit-logging.png" alt-text="Image of owner settings page with logging audit data highlighted.":::
+:::image type="content" source="../media/workspace-audit-logging.png" lightbox="../media/workspace-audit-logging.png" alt-text="Screenshot of owner settings page with logging audit data highlighted.":::
 
 ### Manage workspaces
 
 Owners can view, navigate between, manage capacity allocations, and delete workspaces that they own from the Manage Workspaces page.
 
 # [Manage workspaces](#tab/manage-workspaces)
-:::image type="content" source="../media/workspace-manage.png" lightbox="../media/workspace-manage.png" alt-text="A screenshot of the manage workspaces page that lists the available workspaces.":::
+:::image type="content" source="../media/workspace-manage-v2.png" lightbox="../media/workspace-manage-v2.png" alt-text="A screenshot of the manage workspaces page that lists the available workspaces.":::
 
 # [Assign and switch capacity](#tab/capacity)
-:::image type="content" source="../media/workspace-assign-capacity.png" lightbox="../media/workspace-assign-capacity.png" alt-text="A screenshot of the drop-down menu from which owners can view and select from availability capacity options.":::
+:::image type="content" source="../media/workspace-assign-capacity-v2.png" lightbox="../media/workspace-assign-capacity-v2.png" alt-text="A screenshot of the drop-down menu from which owners can view and select from availability capacity options.":::
 
 ---
 
