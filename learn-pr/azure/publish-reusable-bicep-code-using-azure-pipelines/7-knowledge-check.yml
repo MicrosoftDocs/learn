@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.publish-reusable-bicep-code-using-azure-pipelines.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge.
   ms.date: 05/13/2024
   author: mumian

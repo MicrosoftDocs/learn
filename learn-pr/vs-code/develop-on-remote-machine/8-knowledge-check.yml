@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.develop-on-remote-machine.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: "Test your knowledge of connecting using SSH in Visual Studio Code."
   ms.date: 01/22/2024
   author: olguzzar
