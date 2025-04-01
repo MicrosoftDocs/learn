@@ -2,6 +2,7 @@
 uid: learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.knowledge-check
 title: Module assessment
 metadata:
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
   ms.date: 08/01/2024
@@ -47,4 +48,3 @@ quiz:
     - content: "Hybrid identity"
       isCorrect: false
       explanation: "Incorrect. A hybrid identity refers to a common user identity for authentication and authorization to all resources, regardless of location."
-
