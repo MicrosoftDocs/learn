@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.build-copilot-ai-studio.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check to test your knowledge on grounding models with RAG.
   author: madiepev
   ms.author: madiepev
@@ -49,4 +47,4 @@ quiz:
     - content: "Index Lookup tool."
       isCorrect: true
       explanation: "Correct. You can use the Index lookup tool to retrieve grounding data from an index in Prompt Flow."
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.analyze-images.analyze-image
 title: Analyze an image
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Analyze an image
   description: Analyze an image
   author: wwlpublish
@@ -19,4 +17,4 @@ labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/3-analyze-image.md)]
-
+

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.measure-index-azure-cosmos-db-sql-api
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Measure index performance in Azure Cosmos DB for NoSQL
   description: "Measure the performance of an indexing policy in Azure Cosmos DB for NoSQL."
   ms.date: 10/18/2022
@@ -38,4 +36,4 @@ units:
 - learn.wwl.measure-index-azure-cosmos-db-sql-api.knowledge-check
 - learn.wwl.measure-index-azure-cosmos-db-sql-api.summary
 badge:
-  uid: learn.wwl.measure-index-azure-cosmos-db-sql-api.badge
+  uid: learn.wwl.measure-index-azure-cosmos-db-sql-api.badge

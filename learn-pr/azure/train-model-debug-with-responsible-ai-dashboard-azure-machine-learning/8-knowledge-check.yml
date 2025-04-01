@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.train-model-debug-with-responsible-ai-dashboard-azure-machine-learning.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 08/30/2024
   author: lgayhardt
@@ -54,4 +52,4 @@ quiz:
       explanation: "Correct. Data imbalance can lead to fairness and inclusiveness issues as the model might not perform well on underrepresented groups."
     - content: "It has no impact on model performance."
       isCorrect: false
-      explanation: "Incorrect. Data imbalance can significantly impact model performance, especially in cases with underrepresented classes."
+      explanation: "Incorrect. Data imbalance can significantly impact model performance, especially in cases with underrepresented classes."

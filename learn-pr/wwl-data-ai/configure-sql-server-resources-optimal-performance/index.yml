@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-sql-server-resources-for-optimal-performance
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure SQL Server resources for optimal performance
   description: Configure SQL Server resources for optimal performance
   ms.date: 03/20/2025
@@ -46,4 +44,4 @@ units:
 - learn.wwl.configure-sql-server-resources-for-optimal-performance.summary
 badge:
   uid: learn.wwl.configure-sql-server-resources-for-optimal-performance.badge
-
+

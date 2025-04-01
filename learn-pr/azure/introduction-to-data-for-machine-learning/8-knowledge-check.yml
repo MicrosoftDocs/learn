@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.machinelearning.introduction-to-data-for-machine-learning.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Multiple-choice questions
   ms.date: 10/10/2024
   author: fbsolo-ms1
@@ -59,4 +57,4 @@ quiz:
     - content: "Adding a large number of features that you know have no relation to what the model is trying to predict."
       isCorrect: true
       explanation: "Correct. Adding more features that aren't relevant probably harms its performance"
-
+

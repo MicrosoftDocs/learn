@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.use-spark-notebooks-azure-synapse-pipeline
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use Spark Notebooks in an Azure Synapse Pipeline
   description: "This module describes how Apache Spark notebooks can be integrated into an Azure Synapse Analytics pipeline."
   ms.date: 02/07/2023
@@ -39,4 +37,4 @@ units:
 - learn.wwl.use-spark-notebooks-azure-synapse-pipeline.knowledge-check
 - learn.wwl.use-spark-notebooks-azure-synapse-pipeline.summary
 badge:
-  uid: learn.wwl.use-spark-notebooks-azure-synapse-pipeline.badge
+  uid: learn.wwl.use-spark-notebooks-azure-synapse-pipeline.badge

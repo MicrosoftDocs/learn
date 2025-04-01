@@ -1,50 +1,46 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-end-analytics-use-microsoft-fabric.knowledge-check
-title: Knowledge Check
+title: Module assessment
 metadata:
-  title: Knowledge Check
+  title: Module assessment
   description: "Knowledge Check"
-  ms.date: 09/30/2024
+  ms.date: 03/27/2025
   author: angierudduck
   ms.author: anrudduc
   ms.topic: unit
-  ms.custom:
-  - build-2023
-  - build-2023-dataai
-  - build-2023-fabric
-durationInMinutes: 5
+durationInMinutes: 3
 quiz:
   questions:
-  - content: "Which of the following is a key benefit of using Microsoft Fabric in data projects?"
+  - content: "What is a key benefit of using Microsoft Fabric in data projects?"
     choices:
-    - content: "It allows data professionals to work on data projects independently, without the need for collaboration."
+    - content: "It allows data professionals to work independently, without collaboration."
       isCorrect: false
-      explanation: "Incorrect. Fabric enables collaboration between data professionals and the business."
-    - content: "It requires duplication of data across different systems and teams to ensure data availability."
+      explanation: "Incorrect. Fabric promotes collaboration between data professionals and the business."
+    - content: "It requires duplicating data across systems to ensure availability."
       isCorrect: false
-      explanation: "Incorrect. Fabric is built on OneLake, which eliminates the need to move and copy data between different systems and teams."
-    - content: "It provides a single, integrated environment for data professionals and the business to collaborate on data projects."
+      explanation: "Incorrect. Fabric's OneLake eliminates the need to move or copy data across systems."
+    - content: "It provides a single, integrated environment for collaboration on data projects."
       isCorrect: true
-      explanation: "Correct. Fabric's OneLake provides a single, integrated environment for data professionals and the business to collaborate on data projects."
+      explanation: "Correct. Fabric provides a unified environment for data professionals and the business to collaborate effectively."
   - content: "What is the default storage format for Fabric's OneLake?"
     choices:
-    - content: "Delta"
+    - content: "Delta-Parquet"
       isCorrect: true
-      explanation: "Correct. The default storage format for OneLake is Delta Parquet, an open-source storage layer that brings reliability to data lakes."
+      explanation: "Correct. OneLake uses Delta Parquet as its default storage format, ensuring reliability and performance."
     - content: "JSON"
       isCorrect: false
       explanation: "Incorrect. JSON isn't the default storage format for OneLake."
     - content: "CSV"
       isCorrect: false
       explanation: "Incorrect. CSV isn't the default storage format for OneLake."
-  - content: "Which of the following Fabric experiences is used to move and transform data?"
+  - content: "Which Fabric experience is used to move and transform data?"
     choices:
     - content: "Data Science"
       isCorrect: false
-      explanation: "Incorrect. The Data Science experience enables data scientists to collaborate on data science projects."
+      explanation: "Incorrect. The Data Science experience is for building and deploying machine learning models."
     - content: "Data Warehousing"
       isCorrect: false
-      explanation: "Incorrect. The Data Warehouse experience enables data professionals to build data warehouses."
+      explanation: "Incorrect. The Data Warehousing experience is for building and managing data warehouses."
     - content: "Data Factory"
       isCorrect: true
-      explanation: "Correct. The Data Factory experience combines Power Query with the scale of Azure Data Factory to move and transform data."
+      explanation: "Correct. The Data Factory experience is used to move and transform data using Power Query."

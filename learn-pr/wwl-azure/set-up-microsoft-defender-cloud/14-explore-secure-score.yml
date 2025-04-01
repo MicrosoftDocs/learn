@@ -2,8 +2,6 @@
 uid: learn.wwl.set-up-microsoft-defender-cloud.explore-secure-score
 title: Explore secure score
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore secure score
   description: "Explore secure score"
   ms.date: 04/24/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/14-explore-secure-score.md)]
+  [!include[](includes/14-explore-secure-score.md)]

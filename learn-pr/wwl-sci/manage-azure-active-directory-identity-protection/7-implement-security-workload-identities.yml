@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-azure-ad-identity-protection.implement-security-workload-identities
 title: Implement security for workload identities
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement security for workload identities
   description: "Implement security for workload identities"
   ms.date: 02/21/2025

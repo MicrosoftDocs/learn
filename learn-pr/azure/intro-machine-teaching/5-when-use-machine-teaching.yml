@@ -2,8 +2,6 @@
 uid: learn.oxford.intro-machine-teaching.when
 title: When to use Machine Teaching
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: When to use Machine Teaching
   description: This unit goes into detail about when to use Machine Teaching.
   ms.date: 10/17/2022
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-when-use-machine-teaching.md)]
+  [!include[](includes/5-when-use-machine-teaching.md)]

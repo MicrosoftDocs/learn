@@ -2,15 +2,13 @@
 uid: learn.azure-security.configure-and-manage-azure-key-vault.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
-  ms.date: 03/24/2023
+  ms.date: 03/19/2025
   author: msmbaldwin
   ms.author: mbaldwin
   ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/6-summary.md)]
-
+

@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-build-copilots-for-startups.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: This content is part of the "Introduction to building copilots for startups" module.
   ms.date: 07/30/2024
   author: amit7200
@@ -56,4 +54,4 @@ quiz:
       explanation: "Incorrect. A copilot, while powerful, isn't a replacement for human expertise, intuition, and creativity. A successful startup typically requires a balanced combination of human expertise and technological assistance. Replacing an entire development team with a tool can lead to oversights and a lack of innovation."
     - content: "A startup building a copilot without proper understanding of its capabilities and limitations."
       isCorrect: false
-      explanation: "Incorrect. Using any tool without a proper understanding of its strengths and limitations can lead to inefficiencies and potential pitfalls. It's essential to have a comprehensive grasp of a tool's capabilities to employ it effectively."   
+      explanation: "Incorrect. Using any tool without a proper understanding of its strengths and limitations can lead to inefficiencies and potential pitfalls. It's essential to have a comprehensive grasp of a tool's capabilities to employ it effectively."   

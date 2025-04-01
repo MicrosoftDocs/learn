@@ -2,15 +2,13 @@
 uid: learn.startups.validate-idea.test-assumptions
 title: Test assumptions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Test assumptions
   description: Learn how to identify which assumptions are most critical to the success of your company. See how to systematically test those assumptions.
-  ms.date: 03/19/2024
-  author: ryanmesches
-  ms.author: ryanmesches
+  ms.date: 03/18/2025
+  author: vhawk85
+  ms.author: vahughes
   ms.topic: unit
   ms.collection: learn-startups
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-test-assumptions.md)]
+  [!include[](includes/3-test-assumptions.md)]

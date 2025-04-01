@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.learn-best-practices-from-microsoft-technical-trainers.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: 6-Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 08/08/2022
   author: wwlpublish
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. Case studies and labs are a good way to prepare for the certification exam but are not a feature of the Microsoft Fundamentals certification exams. Multiple-choice questions are a typical feature of the Microsoft Fundamentals exams and include: true or false, select one correct answer, or select multiple correct answers."
     - content: "True or false, select one correct answer, or select multiple correct answers"
       isCorrect: true
-      explanation: "Correct. Multiple-choice questions are a typical feature of the Microsoft Fundamentals exams and include: true or false, select one correct answer, or select multiple correct answers."
+      explanation: "Correct. Multiple-choice questions are a typical feature of the Microsoft Fundamentals exams and include: true or false, select one correct answer, or select multiple correct answers."

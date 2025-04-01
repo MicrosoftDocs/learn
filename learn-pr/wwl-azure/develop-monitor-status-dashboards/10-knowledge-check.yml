@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.develop-monitor-status-dashboards.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 12/12/2024
   author: wwlpublish
@@ -50,4 +48,4 @@ quiz:
           explanation: "Incorrect. While increasing parallel jobs can improve performance, it's important to balance this with cost considerations."
         - content: "Ignoring pipeline performance metrics."
           isCorrect: false
-          explanation: "Incorrect. Monitoring pipeline performance metrics is crucial for identifying optimization opportunities."
+          explanation: "Incorrect. Monitoring pipeline performance metrics is crucial for identifying optimization opportunities."

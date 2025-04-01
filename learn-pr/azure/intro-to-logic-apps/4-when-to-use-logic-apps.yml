@@ -2,8 +2,6 @@
 uid: learn.azure-intro-to-logic-apps.when-to-use-logic-apps
 title: When to use Azure Logic Apps
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: When to use Azure Logic Apps
   description: Learn about scenarios when you can use Azure Logic Apps.
   ms.date: 11/18/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/4-when-to-use-logic-apps.md)]
-
+

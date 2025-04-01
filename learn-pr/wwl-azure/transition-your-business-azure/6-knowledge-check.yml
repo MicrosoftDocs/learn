@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.transition-your-business-azure.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 09/25/2024
   author: wwlpublish
@@ -51,4 +49,4 @@ quiz:
     - content: "Hybrid"
       isCorrect: true
       explanation: "Correct. Hybrid cloud is a mixture of cloud and off-cloud, or public and private, IT operations."
-interactive: bash
+interactive: bash

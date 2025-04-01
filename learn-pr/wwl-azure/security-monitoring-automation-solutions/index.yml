@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.security-monitoring-automation-solutions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure and manage security monitoring and automation solutions
   description: "Learn to set up Azure Monitor and Microsoft Sentinel for automatic security monitoring and response in cloud settings."
   ms.date: 02/03/2025

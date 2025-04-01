@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-to-azure-cosmos-db-sql-api.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 03/21/2024
   author: wwlpublish
@@ -49,4 +47,4 @@ quiz:
       explanation: "That's correct. In order to have different behavior for replication and default consistency, your team member must create a new account."
     - content: "Database"
       isCorrect: false
-      explanation: "That's incorrect. If your team member creates a new database, the default consistency level and global replication settings will remain the same between both teams."
+      explanation: "That's incorrect. If your team member creates a new database, the default consistency level and global replication settings will remain the same between both teams."

@@ -2,8 +2,6 @@
 uid: learn.wwl.azure-virtual-desktop-architecture.service-updates-for
 title: Service updates for Azure Virtual Desktop desktops
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Service updates for Azure Virtual Desktop desktops
   description: "Service updates for Azure Virtual Desktop desktops"
   ms.date: 06/21/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/5-service-updates-for-azure-virtual-desktops.md)]
+  [!include[](includes/5-service-updates-for-azure-virtual-desktops.md)]

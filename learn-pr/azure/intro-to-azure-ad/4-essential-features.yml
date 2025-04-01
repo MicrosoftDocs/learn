@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-ad.4-essential-features
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Essential features of Microsoft Entra ID
   description: Essential features of Microsoft Entra ID
   ms.date: 12/18/2023
@@ -38,4 +36,4 @@ quiz:
     - content: You use it to add Microsoft Entra Gallery applications to your instance of Microsoft Entra ID.
       isCorrect: false
       explanation: You use Application Proxy to add on-premises applications to your instance of Microsoft Entra ID.
-
+

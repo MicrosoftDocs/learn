@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.optimize-your-cost-azure-blob-storage.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Interactive questions that validate whether the learner achieved the learning objectives.
   ms.date: 08/14/2024
   author: rmcmurray
@@ -70,4 +68,4 @@ quiz:
     - content: '1 PB'
       isCorrect: false
       explanation: 'Incorrect. The minimum size of a block in which Azure Blob Storage reservations can be purchased isn’t 1 PB, although this size is available as well.'
-
+

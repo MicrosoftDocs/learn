@@ -2,8 +2,6 @@
 uid: learn.wwl.create-azure-resources-by-using-azure-cli.execute-azure-cli-interactively
 title: Execute Azure CLI commands interactively
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Execute Azure CLI commands interactively
   description: "Execute Azure CLI commands interactively."
   ms.date: 02/17/2025
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/4-execute-azure-cli-interactively.md)]
-
+

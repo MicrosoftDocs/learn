@@ -2,8 +2,6 @@
 uid: learn.wwl.strategic-platform-road-mapping.understand-strategic-importance-platform-engineering
 title: Understand the Strategic Importance of Platform Engineering
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand the Strategic Importance of Platform Engineering
   description: "Understand the Strategic Importance of Platform Engineering"
   ms.date: 01/14/2025
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/2-understand-strategic-importance-platform-engineering.md)]
+  [!include[](includes/2-understand-strategic-importance-platform-engineering.md)]

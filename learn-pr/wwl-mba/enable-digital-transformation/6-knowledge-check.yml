@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.enable-digital-transformation.4-knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 10/14/2020
   author: raniabayoumy
@@ -57,4 +55,4 @@ quiz:
       explanation: "Incorrect. Encouraging innovation may be an outcome of digital transformation, but it is not one of the pillars."
     - content: "Compete effectively."
       isCorrect: false
-      explanation: "Incorrect. The ability to compete effectively may be an outcome of digital transformation, but it is not one of the pillars."
+      explanation: "Incorrect. The ability to compete effectively may be an outcome of digital transformation, but it is not one of the pillars."

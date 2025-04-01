@@ -2,8 +2,6 @@
 uid: learn.wwl.software-composition-analysis.integrate-software-composition-analysis-checks-into-pipelines
 title: Integrate software composition analysis checks into pipelines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Integrate software composition analysis checks into pipelines
   description: "Integrate software composition analysis checks into pipelines"
   ms.date: 05/13/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/5-integrate-software-composition-analysis-checks-into-pipelines.md)]
+  [!include[](includes/5-integrate-software-composition-analysis-checks-into-pipelines.md)]

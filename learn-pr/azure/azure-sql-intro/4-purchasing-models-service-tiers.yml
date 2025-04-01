@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-intro.4-purchasing-models-service-tiers
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Purchasing models, service tiers, and hardware choices
   description: Learn about Azure SQL purchasing models, service tiers, and hardware choices, and when to choose them.
   ms.date: 10/03/2024
@@ -38,4 +36,4 @@ quiz:
       - content: "Database resources are reduced to a lower service tier to reduce costs."
         isCorrect: false
         explanation: "The service tier of the database doesn't change when you use serverless compute."
-
+

@@ -2,8 +2,6 @@
 uid: learn.azure.cloud-scale-messaging-jms-service-bus.2-create-your-service-bus-premium-namespace
 title: Exercise - Create your Azure Service Bus Premium namespace
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create your Azure Service Bus Premium namespace
   description: Use the Azure CLI to create your Azure Service Bus Premium namespace.
   ms.date: 11/11/2024
@@ -17,4 +15,4 @@ azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/2-create-your-service-bus-premium-namespace.md)]
-
+

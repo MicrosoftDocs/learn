@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.survey-components-of-azure-synapse-analytics.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 06/23/2022
   author: wwlpublish
@@ -47,4 +45,4 @@ quiz:
       explanation: "Incorrect. Azure Synapse Studio is where you can develop with the various components of the Azure Synapse Analytics Service."
     - content: "Azure Synapse Link."
       isCorrect: true
-      explanation: "Correct. Azure Synapse Link is the component that enables Hybrid Transactional and Analytical Processing."
+      explanation: "Correct. Azure Synapse Link is the component that enables Hybrid Transactional and Analytical Processing."

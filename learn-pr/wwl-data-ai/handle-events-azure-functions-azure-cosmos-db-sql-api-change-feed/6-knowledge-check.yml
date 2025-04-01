@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 10/18/2022
   author: wwlpublish
@@ -47,4 +45,4 @@ quiz:
       explanation: "Correct. For a trigger, this will be set to in."
     - content: "Set the `leaseCollectionName` to the name of the container that will contain all the new leased documents"
       isCorrect: false
-      explanation: "Incorrect. The name of the container used to manage change feed leases."
+      explanation: "Incorrect. The name of the container used to manage change feed leases."

@@ -2,8 +2,6 @@
 uid: learn.aks-network-design-azure-container-network-interface.2-overview-of-kubernetes-networking
 title: Overview of Kubernetes networking
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Overview of Kubernetes networking
   description: This unit provides an overview of the key components of Kubernetes networking.
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/2-overview-of-kubernetes-networking.md)]
-
+

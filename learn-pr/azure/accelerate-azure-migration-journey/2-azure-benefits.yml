@@ -2,8 +2,6 @@
 uid: learn.azure.accelerate-migration-journey.2-azure-benefits
 title: Benefits of moving to Azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Benefits of moving to Azure
   description: Learn about the primary benefits of moving to Azure cloud, and how to align your business and technical goals to enjoy them.
   ms.date: 05/15/2023
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/2-azure-benefits.md)]
-
+

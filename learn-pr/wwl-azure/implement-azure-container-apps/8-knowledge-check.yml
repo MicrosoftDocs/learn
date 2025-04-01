@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-azure-container-apps.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 07/16/2024
   author: wwlpublish
@@ -37,4 +35,4 @@ quiz:
       explanation: "Incorrect. A revision is an immutable snapshot of a container app version."
     - content: "An immutable snapshot of a container app version."
       isCorrect: true
-      explanation: "Correct. A revision is an immutable snapshot of a container app version."
+      explanation: "Correct. A revision is an immutable snapshot of a container app version."

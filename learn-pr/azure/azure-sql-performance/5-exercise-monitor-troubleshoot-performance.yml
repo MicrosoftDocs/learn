@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-performance.5-exercise-monitor-troubleshoot-performance
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Monitor and troubleshoot performance
   description: Exercise - Monitor and troubleshoot performance
   ms.date: 03/15/2023
@@ -17,4 +15,4 @@ interactive: powershell
 azureSandbox: true
 content: |
   [!include[](includes/5-exercise-monitor-troubleshoot-performance.md)]
-
+

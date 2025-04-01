@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.deploy-workloads-with-databricks-workflows.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 07/29/2024
   author: wwlpublish
@@ -47,4 +45,4 @@ quiz:
       explanation: "Correct. The Databricks REST API provides a programmatic interface to create, manage, and execute jobs in Azure Databricks. This capability is crucial for automating workflows and integrating Databricks tasks with other applications and services, allowing for a more flexible and scalable deployment of data workflows."
     - content: "To visualize data within Databricks notebooks"
       isCorrect: false
-      explanation: "Incorrect. Databricks REST API isn't primarily used to visualize data within Databricks notebooks."
+      explanation: "Incorrect. Databricks REST API isn't primarily used to visualize data within Databricks notebooks."

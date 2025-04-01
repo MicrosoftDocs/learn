@@ -2,8 +2,6 @@
 uid: learn.wwl.perform-cross-document-transactional-operations-azure-cosmos-db-sql-api.implement-optimistic-concurrency-control
 title: Implement optimistic concurrency control
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement optimistic concurrency control
   description: "Implement optimistic concurrency control"
   ms.date: 03/09/2025
@@ -15,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/5-implement-optimistic-concurrency-control.md)]
+  [!include[](includes/5-implement-optimistic-concurrency-control.md)]

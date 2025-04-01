@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure-sql-high-availability
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deploy highly available solutions by using Azure SQL
   description: In this module, you'll learn how to deploy highly available solutions by using Azure SQL. You'll also look at architectures and how they affect availability.
   ms.date: 11/29/2023
@@ -52,4 +50,4 @@ units:
 - learn.azure-sql-high-availability.11-summary
 badge:
   uid: learn.azure-sql-high-availability.badge
-
+

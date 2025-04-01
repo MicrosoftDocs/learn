@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-security.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "The knowledge check unit offers learners the chance to test their knowledge and demonstrate grasp of key concepts."
   ms.date: 09/23/2024
   author: wwlpublish
@@ -50,4 +48,4 @@ quiz:
       explanation: "A system can let a person in (authenticate) but restrict access (not authorize). This is a way to keep people and resources safe."
     - content: "An email that appears to come from a trusted sender directs the user to an untrusted site"
       isCorrect: true
-      explanation: "In general, emails from a sender will only direct to websites that are owned and operated by that sender. When this doesn't happen, it could be phishing."
+      explanation: "In general, emails from a sender will only direct to websites that are owned and operated by that sender. When this doesn't happen, it could be phishing."

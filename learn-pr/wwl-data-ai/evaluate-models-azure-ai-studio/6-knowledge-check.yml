@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.evaluate-models-azure-ai-studio.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check to test your knowledge on evaluating models and applications."
   ms.date: 11/28/2024
   author: madiepev
@@ -47,4 +45,4 @@ quiz:
     - content: "Risk and safety metrics"
       isCorrect: false
       explanation: "Incorrect. "
-
+

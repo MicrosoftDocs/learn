@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.migrate-modernize-explore-monitoring-requirements-azure-sap-workloads.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 01/08/2024
   author: wwlpublish
@@ -59,4 +57,4 @@ quiz:
       explanation: "Correct. Choose the New version only in certain specific use cases, including installing the extension on SUSE SLES 15 or higher."
     - content: "No, both versions are equally valid in this scenario."
       isCorrect: false
-      explanation: "Incorrect. The New version is recommended in certain specific use cases, including installing the extension on SUSE SLES 15 or higher."
+      explanation: "Incorrect. The New version is recommended in certain specific use cases, including installing the extension on SUSE SLES 15 or higher."

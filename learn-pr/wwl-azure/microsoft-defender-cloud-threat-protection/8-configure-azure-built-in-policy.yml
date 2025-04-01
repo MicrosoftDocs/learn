@@ -2,11 +2,9 @@
 uid: learn.wwl.microsoft-defender-cloud-threat-protection.configure-azure-built-in-policy
 title: Enable configure Azure built-in policy
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Enable configure Azure built-in policy
   description: "Enable configure Azure built-in policy"
-  ms.date: 02/28/2025
+  ms.date: 03/28/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

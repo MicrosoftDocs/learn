@@ -2,16 +2,14 @@
 uid: learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.describe-active-geo-replication
 title: Describe active geo-replication for Azure SQL Database
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe active geo-replication for Azure SQL Database
   description: "Describe active geo-replication for Azure SQL Database"
-  ms.date: 05/13/2022
-  author: wwlpublish
+  ms.date: 03/27/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 2
+durationInMinutes: 3
 content: |
-  [!include[](includes/5-describe-active-geo-replication.md)]
+  [!include[](includes/5-describe-active-geo-replication.md)]

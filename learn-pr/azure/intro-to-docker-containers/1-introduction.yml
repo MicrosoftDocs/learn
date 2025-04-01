@@ -3,8 +3,6 @@ uid: learn.intro-to-docker-containers.1-introduction
 title: Introduction
 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   ms.date: 10/09/2024
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-
+

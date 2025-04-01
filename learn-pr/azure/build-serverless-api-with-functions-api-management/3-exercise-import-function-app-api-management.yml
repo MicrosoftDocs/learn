@@ -2,8 +2,6 @@
 uid: learn.build-serverless-api-with-functions-api-management.3-exercise-import-function-app-api-management
 title: Exercise - Create a new API in API Management from a function app
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create a new API in API Management from a function app
   description: In this unit, you will create a new instance of API Management and use it to host a function app.
   ms.date: 11/03/2023
@@ -15,4 +13,4 @@ interactive: bash
 durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-import-function-app-api-management.md)]
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics.describe-supported-analytical-workloads
 title: Describe Azure Synapse Link
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe Azure Synapse Link
   description: "Describe Azure Synapse Link"
   ms.date: 06/26/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-azure-synapse-link.md)]
+  [!include[](includes/3-azure-synapse-link.md)]

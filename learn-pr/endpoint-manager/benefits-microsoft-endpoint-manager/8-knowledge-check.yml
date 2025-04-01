@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.benefits-microsoft-endpoint-manager.8-knowledge-check
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   ms.date: 11/08/2024
   author: Erikre 
   ms.author: erikre
   ms.topic: unit
-title: Knowledge check
+title: Module assessment
 durationInMinutes: 3
 quiz:
   title: Check your knowledge

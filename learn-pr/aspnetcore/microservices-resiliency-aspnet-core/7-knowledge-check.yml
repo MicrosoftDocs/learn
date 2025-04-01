@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.microservices-resiliency-aspnet-core.7-knowledge-check
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Test your knowledge of what you learned in this tutorial about resiliency.
   author: codemillmatt
   ms.author: masoucou
   ms.date: 11/06/2023
   ms.topic: unit
-title: Knowledge check
+title: Module assessment
 durationInMinutes: 7
 content: |
 quiz:

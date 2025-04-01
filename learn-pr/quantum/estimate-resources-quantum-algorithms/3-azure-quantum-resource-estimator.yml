@@ -2,8 +2,6 @@
 uid: learn.quantum.estimate-resources-quantum-algorithms.azure-quantum-resource-estimator
 title: The Azure Quantum Resource Estimator
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: The Azure Quantum Resource Estimator
   description: Learn how to use the Azure Quantum Resource Estimator.
   ms.date: 01/22/2025
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/3-azure-quantum-resource-estimator.md)]
-
+

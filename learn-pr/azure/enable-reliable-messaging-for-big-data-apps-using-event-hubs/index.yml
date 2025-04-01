@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Enable reliable messaging for Big Data applications using Azure Event Hubs
   description: Learn to use Azure Event Hubs to reliably process high-volume data streams to enable you to code applications to send and receive messages through the hub.
   ms.date: 01/28/2025
@@ -44,4 +42,4 @@ units:
 - learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs.7-summary
 badge:
   uid: learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs.badge
-
+

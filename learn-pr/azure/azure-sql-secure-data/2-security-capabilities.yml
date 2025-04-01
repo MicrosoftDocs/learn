@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-secure-data.2-security-capabilities
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Security capabilities and tasks
   description: Security capabilities and tasks
   ms.date: 11/13/2023
@@ -44,4 +42,4 @@ quiz:
       - content: "Neither IP address"
         isCorrect: false
         explanation: "Review the unit again for more information."
-
+

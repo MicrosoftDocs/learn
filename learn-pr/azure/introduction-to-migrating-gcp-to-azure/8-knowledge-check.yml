@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-migrating-gcp-azure.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge Check
+  title: Module assessment
   description: "Test what you learned about Azure and how it compares to Google Cloud."
   ms.date: 01/16/2025
   author: carols

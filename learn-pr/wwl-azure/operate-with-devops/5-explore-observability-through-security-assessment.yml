@@ -2,8 +2,6 @@
 uid: learn.wwl.operate-with-devops.explore-observability-through-security-assessment
 title: 'Explore observability through security assessment'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Explore observability through security assessment'
   description: "Learn about the importance of observability in security monitoring and assessment to detect and respond to security incidents effectively."
   ms.date: 02/06/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/5-explore-observability-through-security-assessment.md)]
+  [!include[](includes/5-explore-observability-through-security-assessment.md)]

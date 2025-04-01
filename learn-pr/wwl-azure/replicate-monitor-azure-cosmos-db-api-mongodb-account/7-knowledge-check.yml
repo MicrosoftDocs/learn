@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.replicate-monitor-azure-cosmos-db-api-mongodb-account.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 10/15/2024
   author: wwlpublish
@@ -48,4 +46,4 @@ quiz:
     - content: "Last Write Wins."
       isCorrect: true
       explanation: "Correct. This policy uses the timestamp (_ts) to determine which document wrote last. In simple terms, if multiple documents are in conflict, the document with the largest value for the _ts property wins."
-
+

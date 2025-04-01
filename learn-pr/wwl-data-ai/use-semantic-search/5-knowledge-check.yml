@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.use-semantic-search.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge
   author: ivorb
   ms.author: berryivor
@@ -49,4 +47,4 @@ quiz:
     - content: "A summary of the content from all documents."
       isCorrect: false
       explanation: "Semantic captions don't include content from all documents."
-
+

@@ -8,16 +8,16 @@ Defender for Cloud Apps supports multiple instances of the same connected app. F
 
 Defender for Cloud Apps is deployed with system admin privileges to allow full access to all objects in your environment. The App Connector flow is as follows:
 
-1.  Defender for Cloud Apps scans and saves authentication permissions.
-2.  Defender for Cloud Apps requests the user list. The first time the request is done, it might take some time until the scan completes.
-3.  After completion of the user request, Defender for Cloud Apps periodically scans users, groups, activities, and files. All activities will be available after the first full scan.
+1. Defender for Cloud Apps scans and saves authentication permissions.
+2. Defender for Cloud Apps requests the user list. The first time the request is done, it might take some time until the scan completes.
+3. After completion of the user request, Defender for Cloud Apps periodically scans users, groups, activities, and files. All activities will be available after the first full scan.
 
 Connections might take some time depending on the size of the tenant, the number of users, and the size and number of files that need to be scanned. Depending on the app to which you're connecting, API connection enables the following items:
 
- -  **Account information** \- Visibility into users, accounts, profile information, status (suspended, active, disabled) groups, and privileges.
- -  **Audit trail** \- Visibility into user activities, admin activities, sign-in activities.
- -  **Account governance** \- Ability to suspend users, revoke passwords, etc.
- -  **App permissions** \- Visibility into issued tokens and their permissions.
- -  **App permission governance** \- Ability to remove tokens.
- -  **Data scan** \- Scanning of unstructured data using two processes -periodically (every 12 hours) and in real-time scan (triggered each time a change is detected).
- -  **Data governance** \- Ability to quarantine files, including files in trash, and overwrite files.
+- **Account information** - Visibility into users, accounts, profile information, status (suspended, active, disabled) groups, and privileges.
+- **Audit trail** - Visibility into user activities, admin activities, sign-in activities.
+- **Account governance** - Ability to suspend users, revoke passwords, etc.
+- **App permissions** - Visibility into issued tokens and their permissions.
+- **App permission governance** - Ability to remove tokens.
+- **Data scan** - Scanning of unstructured data using two processes -periodically (every 12 hours) and in real-time scan (triggered each time a change is detected).
+- **Data governance** - Ability to quarantine files, including files in trash, and overwrite files.

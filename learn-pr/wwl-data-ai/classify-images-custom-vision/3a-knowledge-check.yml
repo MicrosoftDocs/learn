@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.classify-images-custom-vision.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   author: wwlpublish
   ms.author: sheryang
@@ -49,4 +47,4 @@ quiz:
     - content: "The project ID, iteration number, and the key and endpoint for the training resource."
       isCorrect: false
       explanation: "Incorrect: You need the model name rather than the iteration number; and the key and endpoint must be for the prediction resource, not the training resource."
-
+

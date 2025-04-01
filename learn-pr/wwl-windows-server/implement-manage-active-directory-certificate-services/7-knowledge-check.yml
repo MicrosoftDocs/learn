@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-manage-active-directory-certificate-services.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 06/11/2024
   author: wwlpublish
@@ -48,4 +46,4 @@ quiz:
       explanation: "That's correct. Templates are available only when using Enterprise CA."
     - content: "You must implement a Standalone CA."
       isCorrect: false
-      explanation: "That's incorrect. Templates are available only when using Enterprise CA."
+      explanation: "That's incorrect. Templates are available only when using Enterprise CA."

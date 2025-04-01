@@ -2,8 +2,6 @@
 uid: learn.design-your-site-recovery-solution-in-azure.5-build-resilient-data-services
 title: Build resilient data services
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Build resilient data services
   description: Build resilient data services.
   ms.date: 04/15/2024
@@ -37,4 +35,4 @@ quiz:
       explanation: Incorrect. Azure Cosmos DB gives you unlimited databases.
     - content: You can have read access to your data, with low latency in another region.
       isCorrect: true
-      explanation: Correct. You can let your clients access the other region for reads, which gives you the ability to spread usage across multiple regions.
+      explanation: Correct. You can let your clients access the other region for reads, which gives you the ability to spread usage across multiple regions.

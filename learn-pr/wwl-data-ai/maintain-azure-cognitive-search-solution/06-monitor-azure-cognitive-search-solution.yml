@@ -2,8 +2,6 @@
 uid: learn.wwl.maintain-azure-cognitive-search-solution.monitor-azure-cognitive-search-solution
 title: Monitor an Azure AI Search solution
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Monitor an Azure AI Search solution
   description: Monitor an Azure AI Search solution
   author: ivorb
@@ -17,4 +15,4 @@ labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/06-monitor-azure-cognitive-search-solution.md)]
-
+
