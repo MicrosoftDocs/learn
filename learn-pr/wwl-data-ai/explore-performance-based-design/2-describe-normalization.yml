@@ -4,12 +4,12 @@ title: Describe normalization
 metadata:
   title: Describe normalization
   description: "Describe normalization"
-  ms.date: 04/28/2022
-  author: wwlpublish
+  ms.date: 03/31/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 13
 content: |
-  [!include[](includes/2-describe-normalization.md)]
+  [!include[](includes/2-describe-normalization.md)]

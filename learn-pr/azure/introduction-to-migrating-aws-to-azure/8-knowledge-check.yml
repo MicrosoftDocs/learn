@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-migrating-aws-azure.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: "Test what you learned about Azure and how it compares to Amazon Web Services (AWS)."
   ms.date: 01/16/2025
   author: carols
