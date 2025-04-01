@@ -2,6 +2,7 @@
 uid: learn.wwl.explore-access-management-capabilities-of-azure-ad.knowledge-check
 title: Module assessment
 metadata:
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
   ms.date: 08/02/2024
@@ -62,4 +63,4 @@ quiz:
     - content: "Global Secure Access app"
       isCorrect: true
       explanation: "That's correct. The Global Secure Access app, also referred to as Per-app Access, provides a more granular approach. The admin can create multiple enterprise apps and for each of these aps, assign users and groups and assign specific conditional access policies."
-           
+           
