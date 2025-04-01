@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-azure-storage-account.6-knowledge-check
-title: Knowledge check - Create a storage account
+title: Module assessment
 durationInMinutes: 3
 metadata:
-  title: Knowledge check - Create a storage account
+  title: Module assessment
   description: Questions about storage account properties and creation.
   ms.date: 09/18/2024
   author: normesta

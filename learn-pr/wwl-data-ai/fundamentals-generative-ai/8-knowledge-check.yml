@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.fundamentals-generative-ai.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: This knowledge check is based on content about generative AI and language models.
   author: sherzyang
   ms.author: sheryang

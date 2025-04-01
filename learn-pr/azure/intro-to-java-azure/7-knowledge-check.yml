@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-java-azure.7-knowledge-check
 metadata:
-  title: Check your knowledge
+  title: Module assessment
   description: Knowledge check
   ms.date: 11/22/2024
   author: KarlErickson
@@ -13,7 +13,7 @@ metadata:
     - devx-track-extended-java
   ms.contributors:
   - sakriema-12042020
-title: Check your knowledge
+title: Module assessment
 durationInMinutes: 4
 quiz:
   questions:

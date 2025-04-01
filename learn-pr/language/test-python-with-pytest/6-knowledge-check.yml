@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.test-python-with-pytest.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge about testing functions and classes with Pytest
   ms.date: 12/08/2023
   author: alfredodeza
