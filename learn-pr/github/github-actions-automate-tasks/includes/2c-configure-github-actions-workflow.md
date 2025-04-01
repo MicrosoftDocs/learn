@@ -90,6 +90,8 @@ Notice that in this example, the `${{ }}` are missing from the syntax. With some
 
 For more information about workflow syntax and expressions, check out [Workflow syntax for GitHub Actions](https://docs.github.com/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepsif).
 
+<!-- INFOMAGNUS UPDATES for sub OD 1.5.3, 1.5.4., 1.5.5., 1.5.6, 1.5.7, and 1.5.8 go here. Source Material: Infomagnus to find source material and cite  --> 
+
 ## Disable and delete workflows
 
 After adding a workflow to your repository, you might find a situation where you want to temporarily disable the workflow. You can stop a workflow from being triggered without having to delete the file from the repo, either on GitHub or through the GitHub REST API. When you wish to enable the workflow again, you can easily do it using the same methods.
