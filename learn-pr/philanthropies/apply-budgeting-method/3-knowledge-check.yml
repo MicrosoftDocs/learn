@@ -27,17 +27,17 @@ quiz:
       isCorrect: false
       explanation: Incorrect. That's not how zero-based budgeting works.
   
-  - content: In the 50/30/20 budgeting method, what percentage is allocated to savings? following is a need?
+  - content: In the 50/30/20 budgeting method, what percentage is allocated to savings? Following is a need?
     choices:
-    - content: 50%
+    - content: Fifty percent
       isCorrect: false
-      explanation: Incorrect. Needs take up 50%.
-    - content: 30% 
+      explanation: Incorrect. Needs take up fifty percent.
+    - content: Thirty percent 
       isCorrect: false
-      explanation: Incorrect. Wants take up 30%.
-    - content: 20%
+      explanation: Incorrect. Wants take up thirty percent.
+    - content: Twenty percent
       isCorrect: true
-      explanation: Correct! Savings are allocated 20%.
-    - content: 10%
+      explanation: Correct! Savings are allocated twenty percent.
+    - content: Ten percent
       isCorrect: false
-      explanation: Incorrect. Savings should be 20%, not 10%.
+      explanation: Incorrect. Savings should be twenty percent, not ten percent.

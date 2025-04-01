@@ -31,7 +31,7 @@ quiz:
     choices:
     - content: Needs, Wants, and Debt. 
       isCorrect: false
-      explanation: Incorrect. Debt is not one of the primary categories in the 50/30/20 rule.
+      explanation: Incorrect. Debt isn't one of the primary categories in the 50/30/20 rule.
     - content: Needs, Debt, and Savings. 
       isCorrect: false
       explanation: Incorrect. Debt isn't part of the original 50/30/20 structure.

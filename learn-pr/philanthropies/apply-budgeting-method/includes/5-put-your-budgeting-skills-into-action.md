@@ -9,11 +9,11 @@ Ask Copilot Activities:
 - Saving for a Big Goal
 
   1. Open Microsoft Copilot.
-  1. Choose a big savings goal, such as a laptop, bike, or gaming console.
+  1. Choose a large savings goal, such as a laptop, bike, or gaming console.
   1. Find out the total cost of your goal.
   1. Select a budgeting method, such as zero-based budgeting, pay-yourself-first, the envelope system, or the 50/30/20 rule.
   1. Ask Copilot: "How long will it take to save **total cost** using **chosen budgeting method** if I save **amount** per week or month?"
-  1. Review Copilot's calculation to see how many weeks or months it will take to reach your goal.
+  1. Review Copilot's calculation to see how many weeks or months it takes to reach your goal.
   1. Ask Copilot: "How can I save faster?" to explore ways to adjust your budget.
   1. Consider making changes, such as cutting unnecessary spending or increasing your savings amount.
   1. Write down or save your savings plan for future reference.
@@ -34,4 +34,4 @@ Ask Copilot Activities:
 
 `graphic: comparison chart showing the strengths and weaknesses of each budgeting method`
 
-Budgeting isn't about restricting what you can do—it's about making sure your money helps you do more. By starting small and staying consistent, you can build habits that will help you achieve both short-term and long-term goals. Remember, every dollar counts, and the choices you make today can set you up for success in the future.
+Budgeting isn't about restricting what you can do—it's about making sure your money helps you do more. By starting small and staying consistent, you can build habits that help you achieve both short-term and long-term goals. Remember, every dollar counts, and the choices you make today can set you up for success in the future.
