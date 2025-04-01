@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.prepare-azure-ai-development.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge Check
+  title: Module assessment
   description: Test your knowledge.
   author: wwlpublish
   ms.author: gmalc
@@ -49,4 +47,4 @@ quiz:
     - content: "Azure AI Foundry SDK"
       isCorrect: true
       explanation: "Correct. The Azure AI Foundry SDK provides the AI Projects client library, which you can use to access connections in a project or hub."
-
+

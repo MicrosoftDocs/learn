@@ -2,8 +2,6 @@
 uid: learn.wwl.design-implement-hybrid-networking.connect-remote-resources-by-using-azure-virtual-wans
 title: Connect remote resources by using Azure Virtual WANs
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Connect remote resources by using Azure Virtual WANs
   description: "Connect remote resources by using Azure Virtual WANs"
   ms.date: 01/09/2025

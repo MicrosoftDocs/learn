@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-deploy-container-app.3-exercise-create-aks-cluster
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create an Azure Kubernetes Service cluster
   description: In this exercise, you'll create an Azure Kubernetes Service cluster using Azure CLI and configure access from the Cloud Shell to your new cluster using Kubectl.
   ms.published: 07/31/2020
@@ -18,4 +16,4 @@ sandbox: false
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-create-aks-cluster.md)]
-
+

@@ -2,8 +2,6 @@
 uid: learn.oxford.intro-mlops-iot-edge.what-mlops-iot-edge
 title: What is MLOps for IoT Edge?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is MLOps for IoT Edge?
   description: In this section, we provide a definition of the product and discuss the value proposition of the product.
   ms.date: 11/28/2023
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 7 # dummy number at present
 content: |
   [!include[](includes/2-what-mlops.md)]
-
+

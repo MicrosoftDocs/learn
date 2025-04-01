@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.migrate-vmware-workloads-on-premises-azure-vmware-solution.knowledge-check
-title: Knowledge check 
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check.
   ms.date: 08/01/2024
   author: amycolyer
@@ -61,4 +59,4 @@ quiz:
     - content: "Redeploy VMware HCX on-premises to connect to Azure VMware Solution."
       isCorrect: false
       explanation: "Redeploying the VMware HCX appliance on-premises won't help create the service mesh."
-
+

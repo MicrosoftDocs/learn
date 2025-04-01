@@ -2,8 +2,6 @@
 uid: learn.azure.build-first-azure-developer-cli-template.configure-cicd
 title: Configure the CI/CD pipeline
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Configure the CI/CD pipeline
   description: Configure the CI/CD pipeline for the template
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/7-configure-cicd.md)]
-
+

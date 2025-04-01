@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.perform-incremental-processing-with-spark-structured-streaming.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: "Check your knowledge"
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 07/25/2023
   author: wwlpublish
@@ -50,4 +48,4 @@ quiz:
       explanation: "Correct. Watermarking in Azure Databricks helps manage late data by setting a threshold for its arrival."
     - content: "Watermarking is used to adjust processing logic based on the observed latency patterns, dynamically modifying how late data is handled to balance accuracy and performance."
       isCorrect: false
-      explanation: "Incorrect. This explanation refers to the process of latency-aware processing, not watermarking."
+      explanation: "Incorrect. This explanation refers to the process of latency-aware processing, not watermarking."

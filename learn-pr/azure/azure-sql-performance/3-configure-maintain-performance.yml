@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-performance.3-configure-maintain-performance
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure and maintain performance
   description: Configure and maintain performance
   ms.date: 03/15/2023
@@ -48,4 +46,4 @@ quiz:
         explanation: "All deployment options support rebuilding indexes."
       - content: "Use an offline index rebuild because online index rebuilds aren't supported on Azure SQL"
         isCorrect: false
-        explanation: "Azure SQL supports online and resumable index rebuilds."
+        explanation: "Azure SQL supports online and resumable index rebuilds."

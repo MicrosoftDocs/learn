@@ -4,12 +4,13 @@ In this module, you discover apps used within your environment. Then, you design
 
 In this module, you'll:
 
- -  Discover apps by using Defender for Cloud Apps app discovery.
- -  Design and implement access management for apps.
- -  Design and implement app management roles.
- -  Configure preintegrated (gallery) SaaS apps.
- -  Explore application connectors and OAuth apps.
+- Discover apps by using Defender for Cloud Apps app discovery.
+- Design and implement access management for apps.
+- Design and implement app management roles.
+- Configure preintegrated (gallery) SaaS apps.
+- Explore application connectors and OAuth apps.
 
 ## Prerequisites
 
-None.
+- Solid usage experience of admin centers within the Microsoft Cloud.
+- Experience with using application in the cloud

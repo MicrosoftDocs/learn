@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-azure-arc-enabled-servers-scripting
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage Azure Arc-enabled servers by using scripting
   description: "This module covers the topic of enabling Azure Arc for Windows or Linux machines in your environment. Enabling Arc-enabled servers is done either manually or by using an automated method with a provided template script."
   ms.date: 02/14/2025

@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.train-evaluate-cluster-models.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 09/07/2023
   author: madiepev
@@ -37,4 +35,4 @@ quiz:
       explanation: "Incorrect. The n_init parameter determines the number of times the algorithm will run with different initialization seeds."
     - content: "model = KMeans(max_iter=3)"
       isCorrect: false
-      explanation: "Incorrect. The max_iter parameter determines the maximum number of algorithm iterations used for cluster assignment."
+      explanation: "Incorrect. The max_iter parameter determines the maximum number of algorithm iterations used for cluster assignment."

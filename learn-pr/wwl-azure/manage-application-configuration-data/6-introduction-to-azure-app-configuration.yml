@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-application-configuration-data.introduction-to-azure-app-configuration
 title: Introduction to Azure App Configuration
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to Azure App Configuration
   description: "Introduction to Azure App Configuration"
   ms.date: 05/28/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-introduction-to-azure-app-configuration.md)]
+  [!include[](includes/6-introduction-to-azure-app-configuration.md)]

@@ -2,8 +2,6 @@
 uid: learn.azure.child-extension-bicep-templates.define-child-resources
 title: Define child resources
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Define child resources
   description: Learn how to create child resources in your Bicep template.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/3-define-child-resources.md)]
-
+

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.fundamentals-generative-ai.writing-prompts
-title: Considerations for prompts
+title: Improve prompt results
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Considerations for prompts
+  title: Improve prompt results
   description: Understand how submitting clear, specific prompts produces better generative AI results. See examples of best practices for prompt engineering.
   author: sherzyang
   ms.author: sheryang

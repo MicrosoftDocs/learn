@@ -2,8 +2,6 @@
 uid: learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.query-data
 title: Query a data warehouse
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Query a data warehouse
   description: "Query a data warehouse"
   ms.date: 04/11/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-query-data.md)]
+  [!include[](includes/5-query-data.md)]

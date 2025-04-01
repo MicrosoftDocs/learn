@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-llmops-azure-databricks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement LLMOps in Azure Databricks
   description: Implement LLMOps in Azure Databricks
   ms.date: 03/20/2025
@@ -39,4 +37,4 @@ units:
 - learn.wwl.implement-llmops-azure-databricks.summary
 badge:
   uid: learn.wwl.implement-llmops-azure-databricks.badge
-
+

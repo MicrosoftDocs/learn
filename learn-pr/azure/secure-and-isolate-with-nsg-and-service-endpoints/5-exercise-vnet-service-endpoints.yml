@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-and-isolate-with-nsg-and-service-endpoints.5-exercise-vnet-service-endpoints
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Restrict access to Azure Storage by using service endpoints
   description: Exercise - Restrict access to Azure Storage by using service endpoints
   ms.date: 11/04/2024
@@ -17,4 +15,4 @@ sandbox: true
 interactive: bash
 content: |
   [!include[](includes/5-exercise-vnet-service-endpoints.md)]
-
+

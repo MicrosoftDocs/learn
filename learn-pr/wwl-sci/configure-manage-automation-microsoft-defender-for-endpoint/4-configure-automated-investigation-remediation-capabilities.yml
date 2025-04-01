@@ -2,13 +2,11 @@
 uid: learn.wwl.configure-manage-automation-microsoft-defender-for-endpoint.configure-automated-investigation-remediation-capabilities
 title: Configure automated investigation and remediation capabilities
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure automated investigation and remediation capabilities
   description: "Configure automated investigation and remediation capabilities"
-  ms.date: 11/28/2023
+  ms.date: 03/31/2025
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: unit
 azureSandbox: false
 labModal: false

@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-enterprise-security-in-hdinsight.manage-application-middleware-security
 title: Manage application/ middleware security
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage application/ middleware security
   description: "Manage application/ middleware security"
   ms.date: 04/07/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 9
 content: |
-  [!include[](includes/5-manage-application-middleware-security.md)]
+  [!include[](includes/5-manage-application-middleware-security.md)]

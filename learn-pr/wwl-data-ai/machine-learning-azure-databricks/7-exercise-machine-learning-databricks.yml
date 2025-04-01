@@ -2,8 +2,6 @@
 uid: learn.wwl.machine-learning-azure-databricks.exercise-machine-learning-databricks
 title: Exercise - Train a machine learning model in Azure Databricks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Train a machine learning model in Azure Databricks
   description: Exercise - Train a machine learning model in Azure Databricks
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 45
 content: |
   [!include[](includes/7-exercise-machine-learning-databricks.md)]
-
+

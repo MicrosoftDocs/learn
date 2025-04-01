@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-intro.3-deployment-options
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Azure SQL deployment options
   description: Learn about deployment options on the Azure SQL platform to meet your needs.
   ms.date: 10/03/2024
@@ -44,4 +42,4 @@ quiz:
       - content: "Azure SQL Database, elastic database pool"
         isCorrect: false
         explanation: "Azure SQL Database doesn't support instance-scoped features like Service Broker and CLR."
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-release-strategy-recommendations.understand-delivery-cadence-three-types-of-triggers
 title: Understand the delivery cadence and three types of triggers
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand the delivery cadence and three types of triggers
   description: "Understand the delivery cadence and three types of triggers"
   ms.date: 05/21/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-understand-delivery-cadence-three-types-of-triggers.md)]
+  [!include[](includes/2-understand-delivery-cadence-three-types-of-triggers.md)]

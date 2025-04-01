@@ -2,8 +2,6 @@
 uid: learn.wwl.governance-security.azure-key-vault-backup-restore
 title: Configure backup and recovery of certificates, secrets, and keys
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure backup and recovery of certificates, secrets, and keys
   description: "Configure backup and recovery of certificates, secrets, and keys"
   ms.date: 10/08/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/14-azure-key-vault-backup-restore.md)]
+  [!include[](includes/14-azure-key-vault-backup-restore.md)]

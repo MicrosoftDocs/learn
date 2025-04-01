@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-to-azure-virtual-machine-scale-sets.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge about Azure Virtual Machine Scale Sets.
   ms.date: 08/02/2024
   ms.reviewer: mimckitt
@@ -35,4 +33,4 @@ quiz:
     - content: "2056"
       isCorrect: false
       explanation: "Incorrect. The maximum number of IaaS VMs in an Azure Virtual Machine Scale Set is 1000."
-
+

@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-performance.2-performance-capabilities
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Performance capabilities
   description: Performance capabilities
   ms.date: 03/15/2023
@@ -12,4 +10,4 @@ metadata:
 title: Performance capabilities
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-performance-capabilities.md)]
+  [!include[](includes/2-performance-capabilities.md)]

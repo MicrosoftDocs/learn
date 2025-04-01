@@ -2,8 +2,6 @@
 uid: learn.execute-azure-function-with-triggers.3-timer-trigger
 title: Run an Azure Function on a schedule
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Run an Azure Function on a schedule
   description: Run function on a schedule
   ms.date: 09/25/2023
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-timer-trigger.md)]
-
+

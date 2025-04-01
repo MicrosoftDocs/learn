@@ -2,8 +2,6 @@
 uid: learn.wwl.measure-index-azure-cosmos-db-sql-api.analyze-indexing-metrics-results
 title: Analyze indexing metrics results
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Analyze indexing metrics results
   description: "Analyze indexing metrics results"
   ms.date: 10/18/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/3-analyze-indexing-metrics-results.md)]
+  [!include[](includes/3-analyze-indexing-metrics-results.md)]

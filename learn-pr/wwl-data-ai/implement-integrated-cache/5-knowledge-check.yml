@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-integrated-cache.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 12/13/2022
   author: wwlpublish
@@ -36,4 +34,4 @@ quiz:
       explanation: "That's incorrect. Setting the consistency level correctly is a part of enabling the integrated cache, but it doesn't influence the time items remain in the cache."
     - content: "``DedicatedGatewayRequestOptions.MaxIntegratedCacheStaleness``"
       isCorrect: true
-      explanation: "That's correct. The ``MaxIntegratedCacheStaleness`` property will configure a **TimeSpan** that is used to determine how long items will remain in the cache."
+      explanation: "That's correct. The ``MaxIntegratedCacheStaleness`` property will configure a **TimeSpan** that is used to determine how long items will remain in the cache."

@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-identity-access-labs.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your knowledge."
+  ms.date: 03/29/2025
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "The goal is to create a new user in Microsoft Entra ID. What is the first step to take?"
+    choices:
+    - content: "Browse to Identity > Users > All users."
+      isCorrect: false
+      explanation: "Incorrect. This is the second step after signing in to the Microsoft Entra admin center."
+    - content: "Select New user > Create new user."
+      isCorrect: false
+      explanation: "Incorrect. This is the third step after browsing to the All users page."
+    - content: "Sign in to the Microsoft Entra admin center as at least a User Administrator."
+      isCorrect: true
+      explanation: "Correct. The first step is to sign in to the Microsoft Entra admin center with the appropriate role."
+  - content: "What is the first step to add a license to a user in Microsoft Entra ID?"
+    choices:
+    - content: "Sign in to the Microsoft 365 admin center as at least a License Administrator."
+      isCorrect: true
+      explanation: "Correct. The first step is to sign in to the Microsoft 365 admin center with the appropriate administrative role."
+    - content: "Navigate to Billing > Licenses."
+      isCorrect: false
+      explanation: "Incorrect. This is the second step. The first step is to sign in to the Microsoft 365 admin center."
+    - content: "Select the license to assign."
+      isCorrect: false
+      explanation: "Incorrect. This is the third step. The first step is to sign in to the Microsoft 365 admin center."
+  - content: "An identity and access administrator needs to invite an external user to collaborate on a project. What is the first step to take?"
+    choices:
+    - content: "Send an email invitation directly from the admin's email client."
+      isCorrect: false
+      explanation: "Incorrect. Invitations should be sent through the Microsoft Entra admin center to ensure proper tracking and management."
+    - content: "Sign in to the Microsoft Entra admin center as at least a User Administrator."
+      isCorrect: true
+      explanation: "Correct. The first step is to sign in to the Microsoft Entra admin center with the necessary permissions to invite external users."
+    - content: "Create a new user account for the external user."
+      isCorrect: false
+      explanation: "Incorrect. There is no need to create a new user account; instead, invite the external user to use their existing account."
+  - content: "An identity and access admin needs to assign a role to a user in Microsoft Entra. What is the first step to take?"
+    choices:
+    - content: "Sign in to the Microsoft Entra admin center."
+      isCorrect: true
+      explanation: "Correct. The first step in assigning a role in Microsoft Entra is to sign in to the Microsoft Entra admin center."
+    - content: "Navigate to the Azure portal."
+      isCorrect: false
+      explanation: "Incorrect. Role assignments in Microsoft Entra are managed through the Microsoft Entra admin center, not the Azure portal."
+    - content: "Create a new user account."
+      isCorrect: false
+      explanation: "Incorrect. Creating a new user account isn't the first step in assigning a role. Sign in to the Microsoft Entra admin center first."

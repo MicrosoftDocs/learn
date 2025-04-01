@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.automate-azure-virtual-desktop-management-tasks.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 06/21/2023
   author: wwlpublish
@@ -39,4 +37,4 @@ quiz:
       explanation: "That's incorrect. The Remote Connection Gateway service connects remote users to Azure Virtual Desktop apps and desktops from any internet-connected device that can run an Azure Virtual Desktop client. The client connects to a gateway, which then orchestrates a connection from a VM back to the same gateway."
     - content: "An Azure Automation account variable"
       isCorrect: true
-      explanation: "That's correct. The scaling tool in Azure Automation account provides start and stop based on Peak and Off-Peak business hours."
+      explanation: "That's correct. The scaling tool in Azure Automation account provides start and stop based on Peak and Off-Peak business hours."

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure-sql-replication
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: standard
   title: Data tracking and synchronization with Azure SQL Database
   description: "Azure SQL data tracking module that covers data changes tracking. The module explores tools such as change data capture (CDC) and change tracking."
@@ -45,4 +43,4 @@ units:
 - learn.azure-sql-replication.knowledge-check
 badge:
   uid: learn.azure-sql-replication.badge
-
+

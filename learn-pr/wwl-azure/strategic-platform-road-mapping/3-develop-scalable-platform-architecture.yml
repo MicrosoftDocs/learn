@@ -2,8 +2,6 @@
 uid: learn.wwl.strategic-platform-road-mapping.develop-scalable-platform-architecture
 title: Develop a Scalable Platform Architecture
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Develop a Scalable Platform Architecture
   description: "Develop a Scalable Platform Architecture"
   ms.date: 01/14/2025
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-develop-scalable-platform-architecture.md)]
+  [!include[](includes/3-develop-scalable-platform-architecture.md)]

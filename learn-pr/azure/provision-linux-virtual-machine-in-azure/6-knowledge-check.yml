@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.provision-linux-virtual-machine-in-azure.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   ms.date: 01/17/2025
   author: fossygirl
@@ -81,4 +79,4 @@ quiz:
     - content: "Standard JSON format"
       isCorrect: false
       explanation: "Incorrect: Bicep uses a domain-specific language, rather than JSON."
-
+

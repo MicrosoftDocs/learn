@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-azure-cosmos-db-sql-api-point-operations.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 03/09/2025
   author: wwlpublish
@@ -48,4 +46,4 @@ quiz:
     - content: "CosmosClient"
       isCorrect: false
       explanation: "Incorrect. First access the Microsoft.Azure.Cosmos.Container class to perform CRUD operations on items."
-
+

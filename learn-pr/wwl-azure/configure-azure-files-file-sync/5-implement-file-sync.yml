@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-azure-files-file-sync.implement-soft-delete
 title: Implement soft delete for Azure Files
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement soft delete for Azure Files
   description: "Implement soft delete for Azure Files."
   ms.date: 01/10/2025

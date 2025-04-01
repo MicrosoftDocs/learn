@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.analyze-azure-blob-storage-performance-indicators.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Test your knowledge
   ms.date: 08/01/2022
   author: ciphertxt
@@ -52,4 +50,4 @@ quiz:
     - content: "The cost per transaction is the same for both."
       isCorrect: false
       explanation: "The cost per transaction is higher for General Purpose v2 Storage accounts when compared to Premium Blob Storage, not the same."
-
+

@@ -3,8 +3,6 @@ uid: learn.dotnet-debug-visual-studio-app-service.attach-to-process
 sandbox: true
 title: Exercise - Attach the Visual Studio debugger to an App Service web app
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Attach the Visual Studio debugger to an App Service web app
   description: Learn how to use Visual Studio's attach to process features to debug web applications hosted in Azure App Service.
   ms.date: 05/29/2024
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 15
 content: |
   [!include[](includes/4-attach-to-process.md)]
-
+

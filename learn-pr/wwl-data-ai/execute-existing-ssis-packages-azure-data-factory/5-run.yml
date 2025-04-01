@@ -2,8 +2,6 @@
 uid: learn.wwl.execute-existing-ssis-packages-azure-data-factory.run
 title: Run SSIS packages in Azure Data Factory
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Run SSIS Packages in Azure Data Factory
   description: "Run SSIS packages in Azure Data Factory"
   ms.date: 06/07/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-run.md)]
+  [!include[](includes/5-run.md)]

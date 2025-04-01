@@ -2,8 +2,6 @@
 uid: learn.wwl.use-prebuilt-form-recognizer-models.exercise-analyze-document-use-form-recognizer
 title: Exercise - Analyze a document using Azure AI Document Intelligence
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Analyze a document using Azure AI Document Intelligence
   description: Exercise - Analyze a document using Azure AI Document Intelligence
   author: ivorb
@@ -17,4 +15,4 @@ labModal: true
 durationInMinutes: 3
 content: |
   [!include[](includes/5-exercise-analyze-document-use-form-recognizer.md)]
-
+

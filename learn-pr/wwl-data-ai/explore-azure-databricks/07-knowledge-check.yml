@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-azure-databricks.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 08/02/2024
   author: wwlpublish
@@ -48,4 +46,4 @@ quiz:
     - content: "Terminate the cluster"
       isCorrect: true
       explanation: "Correct. To minimize costs, it's crucial to terminate the Spark clusters in Azure Databricks when they aren't in use. Clusters consume resources and incur costs as long as they're running, regardless of activity."
-
+

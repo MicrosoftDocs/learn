@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explain-devops-continous-delivery-quality.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 09/20/2020
   author: wwlpublish
@@ -71,4 +69,4 @@ quiz:
       explanation: "That’s correct. All of these persons, together, are primarily responsible for bugs in software."
     - content: "The coder and the tester"
       isCorrect: false
-      explanation: "Sorry, that’s incorrect. These aren't the only people responsible for the existence of bugs in the software."
+      explanation: "Sorry, that’s incorrect. These aren't the only people responsible for the existence of bugs in the software."

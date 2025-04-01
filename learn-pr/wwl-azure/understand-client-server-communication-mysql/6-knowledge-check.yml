@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.understand-client-server-communication-mysql.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 11/08/2022
   author: wwlpublish
@@ -61,4 +59,4 @@ quiz:
       explanation: "That's incorrect. New connections don't have to wait for a new connection thread."
     - content: "Each new connection uses a connection from the connection pool."
       isCorrect: true
-      explanation: "That's correct. The connection pool maintains a number of connections available for new client connections."
+      explanation: "That's correct. The connection pool maintains a number of connections available for new client connections."

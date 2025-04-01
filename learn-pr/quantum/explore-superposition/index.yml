@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.quantum.explore-superposition
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true 
   title: Explore quantum superposition with Q#
   description: Learn one of the fundamental concepts of quantum computing, superposition, how to represent superposition of qubit using the Bloch sphere, and how to create and analyze superposition states with Q#.
   ms.date: 01/22/2025
@@ -50,4 +48,4 @@ units:
 - learn.quantum.explore-superposition.summary
 badge:
   uid: learn.quantum.explore-superposition.badge
-
+

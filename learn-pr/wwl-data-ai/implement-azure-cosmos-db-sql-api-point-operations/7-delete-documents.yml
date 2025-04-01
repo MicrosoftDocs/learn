@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-azure-cosmos-db-sql-api-point-operations.delete-documents
 title: Delete documents
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Delete documents
   description: "Delete documents"
   ms.date: 03/09/2025
@@ -16,4 +14,4 @@ labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/7-delete-documents.md)]
-
+

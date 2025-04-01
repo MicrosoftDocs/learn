@@ -104,3 +104,4 @@ quiz:
     - content: To optimize your workload's ability to adjust to changes in demand
       isCorrect: false
       explanation: Incorrect. The Security pillar emphasizes confidentiality, integrity, availability, and Zero Trust principles.
+

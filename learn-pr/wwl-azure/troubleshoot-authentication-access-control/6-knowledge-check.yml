@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.troubleshoot-authentication-access-control.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 04/27/2023
   author: mistoyanwork
@@ -51,4 +49,4 @@ quiz:
     - content: "30 days"
       isCorrect: true
       explanation: "That's correct. The default setting for storing audit logs is 30 days."
-
+

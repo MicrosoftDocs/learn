@@ -2,8 +2,6 @@
 uid: learn.quantum.estimate-resources-quantum-algorithms.estimate-resources-of-a-real-world-problem
 title: Exercise - Estimate resources for a real-world problem
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Estimate resources for a real-world problem
   description: Learn how to run a QIR quantum algorithm on the Azure Quantum Resource Estimator. 
   ms.date: 01/22/2025
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/5-estimate-resources-of-a-real-world-problem.md)]
-
+

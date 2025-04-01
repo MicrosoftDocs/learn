@@ -4,29 +4,19 @@ In this module, you learned how to efficiently allocate and use resources needed
 
 You implemented the following process to resolve Contoso's requirements:
 
-1. Choose to use [standard or provisioned deployments](/azure/ai-services/openai/how-to/deployment-types):
+1. Choose to use [standard or provisioned deployments](/azure/ai-services/openai/how-to/deployment-types): Contoso decides to use provisioned.
 
-   Contoso decides to use provisioned.
+2. Choose to use [global, data zone, or regional deployments](/azure/ai-services/openai/how-to/deployment-types): Contoso decides to use data zone.
 
-2. Use [capacity calculator to forecast PTU](/azure/ai-services/openai/how-to/provisioned-throughput-onboarding) usage based off estimated configuration and usage in specific region:
+3. Use [capacity calculator to forecast PTU](/azure/ai-services/openai/how-to/provisioned-throughput-onboarding) usage based off estimated configuration and usage in specific region: Contoso estimates they'll need 100 PTUs: GPT -4os in US West.
 
-   Contoso estimates they'll need 100 PTUs: GPT -4os in US West.
+4. [Check PTU quota](/azure/ai-services/openai/how-to/provisioned-get-started) based on chosen region in Azure OpenAI Foundry: Contoso confirms 100 PTUs of PGT -4os are available in US West.
 
-3. [Check PTU quota](/azure/ai-services/openai/how-to/provisioned-get-started) based on chosen region in Azure OpenAI Foundry:
+5. Create an [Azure OpenAI resource](/azure/ai-services/openai/how-to/provisioned-get-started) in chosen region: Contoso creates an Azure OpenAI resource in US West.
 
-   Contoso confirms 100 PTUs of PGT -4os are available in US West.
+6. [Create provisioned deployment](/azure/ai-services/openai/how-to/provisioned-get-started) in region where quota is available: Contoso creates a deployment in US West using PTU hourly.
 
-4. Create an [Azure OpenAI resource](/azure/ai-services/openai/how-to/provisioned-get-started) in chosen region:
-
-   Contoso creates an Azure OpenAI resource in US West.
-
-5. [Create provisioned deployment](/azure/ai-services/openai/how-to/provisioned-get-started) in region where quota is available:
-
-   Contoso creates a deployment in US West using PTU hourly.
-
-6. [Purchase provisioned reservations to](/azure/cost-management-billing/reservations/azure-openai) cover PTU hourly usage in specific region:
-
-   Contoso purchases 100 PTU reservations (monthly or yearly) in US west to get savings on 100 PTU hourly deployments.
+7. [Purchase provisioned reservations to](/azure/cost-management-billing/reservations/azure-openai) cover PTU hourly usage in specific region: Contoso purchases 100 PTU reservations (monthly or yearly) in US west to get savings on 100 PTU hourly deployments.
 
 #### Learn more
 

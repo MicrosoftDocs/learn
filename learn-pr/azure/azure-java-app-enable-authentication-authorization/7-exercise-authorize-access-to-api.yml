@@ -2,8 +2,6 @@
 uid: learn.azure.azure-java-app-enable-authentication-authorization.exercise-authorize-access-to-api
 title: Exercise - Authorize access to Microsoft Graph API with MSAL
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Authorize access to Microsoft Graph API with MSAL
   description: In this exercise, you will use MSAL in your application to get authorized access to Microsoft Graph API.
@@ -17,4 +15,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/7-exercise-authorize-access-to-api.md)]
-
+

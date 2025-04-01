@@ -3,8 +3,6 @@ uid: learn.intro-to-azure-kubernetes-service.what-is-azure-kubernetes-service
 title: What is Azure Kubernetes Service?
 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is Azure Kubernetes Service?
   description: What is Azure Kubernetes Service?
   ms.date: 11/26/2024
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/2-what-is-azure-kubernetes-service.md)]
-
+

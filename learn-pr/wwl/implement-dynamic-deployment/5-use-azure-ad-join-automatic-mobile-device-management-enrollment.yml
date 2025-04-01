@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-dynamic-deployment.use-azure-ad-join-automatic-mobile-device-management-enrollment
 title: Use Microsoft Entra join with automatic MDM enrollment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use Microsoft Entra join with automatic MDM enrollment
   description: "Use Microsoft Entra join with automatic MDM enrollment"
   ms.date: 04/05/2023
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/5-use-azure-ad-join-automatic-mobile-device-management-enrollment.md)]
-
+

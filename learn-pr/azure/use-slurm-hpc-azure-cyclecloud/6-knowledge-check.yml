@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.use-slurm-hpc-azure-cyclecloud.knowledge-check
-title: Knowledge Check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge Check
+  title: Module assessment
   description: This content is part of the "Use Slurm for HPC on Azure CycleCloud" module.
   ms.date: 08/18/2024
   author: Orin-Thomas
@@ -49,4 +47,4 @@ quiz:
           explanation: "Incorrect. You use this tool to run a job task."
         - content: "`sbatch`"
           isCorrect: false
-          explanation: "Incorrect. You use this command to submit a job script for later execution. These scripts generally include one or more `srun` commands to initiate parallel tasks."
+          explanation: "Incorrect. You use this command to submit a job script for later execution. These scripts generally include one or more `srun` commands to initiate parallel tasks."

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.prepare-to-maintain-sql-databases-azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Prepare to maintain SQL databases on Azure
   description: "Prepare to maintain SQL databases on Azure"
   ms.date: 2/12/2025
@@ -44,4 +42,4 @@ units:
 - learn.wwl.prepare-to-maintain-sql-databases-azure.knowledge-check
 - learn.wwl.prepare-to-maintain-sql-databases-azure.summary
 badge:
-  uid: learn.wwl.prepare-to-maintain-sql-databases-azure.badge
+  uid: learn.wwl.prepare-to-maintain-sql-databases-azure.badge

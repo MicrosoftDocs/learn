@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-data-partitioning-strategy.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 04/16/2024
   author: wwlpublish
@@ -48,4 +46,4 @@ quiz:
       explanation: "Incorrect. Just inserting the metrics document and then updating the device document won't guarantee the ACID and another metrics document could be added between the insert and the update."
     - content: "Add a new property to your device documents called ``metricscollectioncount`` and update it with the current number of metrics collection documents, when your app or Azure function adds a new metrics collection, also add 1 to the ``metricscollectioncount`` property inside a transactional batch."
       isCorrect: true
-      explanation: "Correct. If we insert the metrics document and update the device document inside a transaction, we guarantee that other transactions aren't updating the device document between the insert and the update."
+      explanation: "Correct. If we insert the metrics document and update the device document inside a transaction, we guarantee that other transactions aren't updating the device document between the insert and the update."

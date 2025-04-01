@@ -2,8 +2,6 @@
 uid: learn.azure-sql-replication.track-data-changes-with-cdc
 title: Track data changes on Azure SQL Database with change data capture (CDC)
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Track data changes on your Azure SQL Databases with change data capture (CDC)
   description: "Introducing change data capture (CDC) for Azure SQL Databases - the technical architecture of the product and the procedures to enable and disable it."
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-track-data-changes-with-cdc.md)]
+  [!include[](includes/2-track-data-changes-with-cdc.md)]

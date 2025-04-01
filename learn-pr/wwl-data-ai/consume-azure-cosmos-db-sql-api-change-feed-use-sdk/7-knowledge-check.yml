@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 10/18/2022
   author: wwlpublish
@@ -36,4 +34,4 @@ quiz:
       explanation: "That's correct. This method is a member of the **ChangeFeedProcessor** class and is invoked to start consuming changes from the change feed."
     - content: "``Build``"
       isCorrect: false
-      explanation: "That's incorrect. This method is invoked at the end of building a change feed processor (or estimator) and isn't a method of the **ChangeFeedProcessor** class."
+      explanation: "That's incorrect. This method is invoked at the end of building a change feed processor (or estimator) and isn't a method of the **ChangeFeedProcessor** class."

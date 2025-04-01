@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-language-model-with-luis.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 09/26/2024
   author: wwlpublish
@@ -48,4 +46,4 @@ quiz:
       explanation: "Incorrect. The authoring resource is used for authoring; not prediction."
     - content: "The Azure credentials of the user who published the language understanding application"
       isCorrect: false
-      explanation: "Incorrect. You should not share individual user credentials with other users."
+      explanation: "Incorrect. You should not share individual user credentials with other users."

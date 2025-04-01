@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.monitor-troubleshoot-sap-hana-azure-large-instances.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 07/06/2022
   author: wwlpublish
@@ -50,4 +48,4 @@ quiz:
       explanation: "That’s incorrect. In the Azure portal, from the page displaying HANA Large Instance units, you can create support requests specifically for that unit. Select the \"New support request\" link."
     - content: "Azure Monitor"
       isCorrect: false
-      explanation: "That’s incorrect. In the Azure portal, from the page displaying HANA Large Instance units, you can create support requests specifically for that unit. Select the \"New support request\" link."
+      explanation: "That’s incorrect. In the Azure portal, from the page displaying HANA Large Instance units, you can create support requests specifically for that unit. Select the \"New support request\" link."

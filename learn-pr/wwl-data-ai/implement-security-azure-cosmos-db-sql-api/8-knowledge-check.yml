@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-security-azure-cosmos-db-sql-api.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 10/18/2022
   author: wwlpublish
@@ -47,4 +45,4 @@ quiz:
       explanation: "That's correct. You can only set up Always Encrypted at the container's creation time."
     - content: "Create a CMKs in Azure Key Vault, use the SDK to create the DEKs (with the CMKs) on a new or existing container with the encryption policies."
       isCorrect: false
-      explanation: "That's incorrect. First, you need to set up the DEK on the database. Then, you can only set up Always Encrypted at the container's creation time and can't modify or add Always Encrypted to an existing container."
+      explanation: "That's incorrect. First, you need to set up the DEK on the database. Then, you can only set up Always Encrypted at the container's creation time and can't modify or add Always Encrypted to an existing container."

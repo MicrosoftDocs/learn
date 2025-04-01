@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.use-sap-workload-planning-deployment-checklist.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Check what you learn in this module."
   ms.date: 08/01/2024
   author: wwlpublish
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. For SAP systems that weren't part of the current Go Live phase, but communicate with the SAP systems that were moved into Azure in the current Go Live phase, the user needs to reset the host name buffer in SM51. This step will purge the cached IP addresses associated with the names of the application instances that were moved into Azure."
     - content: "Reset the host name buffer"
       isCorrect: true
-      explanation: "Correct. For SAP systems that weren't part of the current Go Live phase, but communicate with the SAP systems that were moved into Azure in the current Go Live phase, the user needs to reset the host name buffer in SM51. This step will purge the cached IP addresses associated with the names of the application instances that were moved into Azure."
+      explanation: "Correct. For SAP systems that weren't part of the current Go Live phase, but communicate with the SAP systems that were moved into Azure in the current Go Live phase, the user needs to reset the host name buffer in SM51. This step will purge the cached IP addresses associated with the names of the application instances that were moved into Azure."

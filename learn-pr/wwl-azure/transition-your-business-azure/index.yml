@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.transition-your-business-azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Transition your business to Azure
   description: "This module introduces various decisions that business decision makers can anticipate when considering a transition to Azure."
   ms.date: 09/25/2024
@@ -43,4 +41,4 @@ units:
 - learn.wwl.transition-your-business-azure.knowledge-check
 - learn.wwl.transition-your-business-azure.summary
 badge:
-  uid: learn.wwl.transition-your-business-azure.badge
+  uid: learn.wwl.transition-your-business-azure.badge

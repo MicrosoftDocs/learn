@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-generic-anonymous-types.examine-generics
+title: Examine generics
+metadata:
+  title: Examine generics
+  description: "Learn how generics acts as code templates that allow you to define type-safe data structures without committing to an actual data type."
+  ms.date: 04/01/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-examine-generics.md)]

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.orleans-product-introduction.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Check what you've learned about Orleans by answering questions about key points, such as grains and silos.
   author: alexwolfmsft
   ms.author: alexwolf

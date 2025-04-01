@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-ai-fundamentals.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 02/24/2025
   author: wwlpublish
@@ -48,4 +46,4 @@ quiz:
       explanation: "Correct. Speech synthesis is used to convert text into spoken language."
     - content: "Sentiment analysis"
       isCorrect: false
-      explanation: "Incorrect. Sentiment analysis is used to determine the emotional tone of written or spoken language."
+      explanation: "Incorrect. Sentiment analysis is used to determine the emotional tone of written or spoken language."

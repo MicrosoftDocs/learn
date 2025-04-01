@@ -2,8 +2,6 @@
 uid: learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.create-tables
 title: Create data warehouse tables
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create data warehouse tables
   description: "Create data warehouse tables"
   ms.date: 04/11/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-create-tables.md)]
+  [!include[](includes/3-create-tables.md)]

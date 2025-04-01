@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.build-multi-item-transactions-azure-cosmos-db-sql-api.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 10/17/2022
   author: wwlpublish
@@ -58,4 +56,4 @@ quiz:
       explanation: "This's correct. You can't execute a stored procedure that performs operations across logical partition key values."
     - content: "Stored procedures are scoped to only a single unique identifier"
       isCorrect: false
-      explanation: "That's incorrect. A stored procedure can perform a transaction with multiple items, each with a distinct unique identifier."
+      explanation: "That's incorrect. A stored procedure can perform a transaction with multiple items, each with a distinct unique identifier."

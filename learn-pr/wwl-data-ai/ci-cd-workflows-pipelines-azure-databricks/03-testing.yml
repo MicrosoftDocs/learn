@@ -2,8 +2,6 @@
 uid: learn.wwl.ci-cd-workflows-pipelines-azure-databricks.testing
 title: Perform unit testing and integration testing
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Perform unit testing and integration testing
   description: "Perform unit testing and integration testing"
   ms.date: 08/01/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/03-testing.md)]
+  [!include[](includes/03-testing.md)]

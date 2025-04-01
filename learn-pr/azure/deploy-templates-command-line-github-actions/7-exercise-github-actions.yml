@@ -2,8 +2,6 @@
 uid: learn.azure.deploy-templates-command-line-github-actions.7-exercise-github-actions
 title: Exercise - Deploy ARM templates as part of your CI/CD efforts with GitHub Actions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Deploy ARM templates as part of your CI/CD efforts with GitHub Actions
   description: Deploying your ARM templates as part of your CI/CD efforts with GitHub Actions
   ms.date: 03/13/2024
@@ -17,4 +15,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/7-exercise-github-actions.md)]
-
+

@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.read-text-images-documents-with-computer-vision-service.knowledge-check
-title: Knowledge Check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge Check
+  title: Module assessment
   description: Knowledge Check
   author: wwlpublish
   ms.author: berryivor
@@ -52,4 +50,4 @@ quiz:
     - content: "Use the Document Intelligence API."
       isCorrect: true
       explanation: "Correct: The Document Intelligence API can be used to process PDF formatted files."
-
+

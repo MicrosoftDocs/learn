@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-ai-fundamentals
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Fundamental AI Concepts
   description: "Curious about artificial intelligence? Want to understand what all the buzz is about? This module introduces you to the world of AI."
   ms.date: 02/24/2025
@@ -40,4 +38,4 @@ units:
 - learn.wwl.get-started-ai-fundamentals.knowledge-check
 - learn.wwl.get-started-ai-fundamentals.summary
 badge:
-  uid: learn.wwl.get-started-ai-fundamentals.badge
+  uid: learn.wwl.get-started-ai-fundamentals.badge
