@@ -15,9 +15,9 @@ title: Generate text and conversations with .NET and Azure OpenAI Completions
 summary: Learn how to use the .NET SDK with the Azure OpenAI service to have your applications carry on conversations with users in natural language.
 abstract: |
   In this module, you will:
-  - Learn how to use the Azure OpenAI .NET SDK
-  - Gain a foundational understanding of Azure OpenAI Completions
-  - Learn tips on improving completion quality
+  - Learn how to use the Azure OpenAI .NET SDK.
+  - Gain a foundational understanding of Azure OpenAI Completions.
+  - Learn tips on improving completion quality.
 prerequisites: |
   - Some C# programming experience
   - Basic familiarity with Azure OpenAI Service
