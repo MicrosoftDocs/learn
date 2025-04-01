@@ -11,6 +11,6 @@ Imagine you're a developer on an e-commerce platform. Order statuses like 'Pendi
 ## Prerequisites
 
 - Visual Studio Code installed with the C# Dev Kit.
-- Basic knowledge of the Visual Studio Code IDE.
+- Basic knowledge of the Visual Studio Code Integrated Development Environment (IDE).
 - Basic understanding of the C# programming language.
 - Familiar with classes, abstract classes, interfaces and inheritance.

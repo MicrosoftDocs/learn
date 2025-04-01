@@ -4,10 +4,12 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Check what you've learned in this module."
-  ms.date: 03/29/2025
+  ms.date: 04/01/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]

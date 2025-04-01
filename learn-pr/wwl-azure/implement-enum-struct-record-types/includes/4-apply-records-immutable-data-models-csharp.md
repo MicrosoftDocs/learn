@@ -93,4 +93,21 @@ Inheritance is useful for creating hierarchies of related data models, such as a
 > [!NOTE]
 > A record can't inherit from a class, and a class can't inherit from a record.
 
+## Practical example: Using records to represent products in an inventory system
+
+Records are ideal for representing immutable data. For example, you can use a record to represent a product in an inventory system and compare two products:
+
+```csharp
+public record Product(string Name, decimal Price);
+
+var product1 = new Product("Laptop", 1200m);
+var product2 = new Product("Laptop", 1200m);
+var product3 = new Product("Tablet", 600m);
+
+Console.WriteLine($"Are product1 and product2 equal? {product1 == product2}");
+Console.WriteLine($"Are product1 and product3 equal? {product1 == product3}");
+```
+
+This example demonstrates how to define a record for a product, create instances of the record, and compare them using value-based equality.
+
 Combining immutability, value-based equality, and concise syntax, records provide a powerful way to model data in C#. These features make records ideal for scenarios where data integrity and simplicity are critical.
