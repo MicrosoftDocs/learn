@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.intro-to-budgeting-for-students.responsible-spending-financial-planning
+title: Responsible Spending and Financial Planning
+metadata:
+  title: Responsible Spending and Financial Planning
+  description: This content is a part of the introduction to budgeting for students.
+  ms.date: 04/01/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-responsible-spending-financial-planning.md)]

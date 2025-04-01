@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.intro-to-budgeting-for-students.create-your-personal-budget-plan
+title: Create Your Personal Budget Plan Using Microsoft Copilot
+metadata:
+  title: Create Your Personal Budget Plan Using Microsoft Copilot
+  description: This content is a part of the introduction to budgeting for students.
+  ms.date: 04/01/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-create-your-personal-budget-plan.md)]

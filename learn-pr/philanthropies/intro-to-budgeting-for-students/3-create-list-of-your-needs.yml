@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.intro-to-budgeting-for-students.create-list-of-your-needs
+title: Create a List of Your Needs and Wants Using Copilot
+metadata:
+  title: Create a List of Your Needs and Wants Using Copilot
+  description: This content is a part of the introduction to budgeting for students.
+  ms.date: 04/01/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-create-list-of-your-needs.md)]
