@@ -2,8 +2,8 @@
 uid: learn.introduction-to-azure-machine-learning-monitoring.azure-monitor-resource-logs
 title: Azure Monitor resource logs
 metadata:
-  title: Azure Monitor resource logs
-  description: This unit helps you understand how to use Azure Monitor resource logs to monitor Azure Machine Learning resources
+  title: Azure Monitor Resource Logs
+  description: This unit helps you understand how to use Azure Monitor resource logs to monitor Azure Machine Learning resources.
   ms.date: 03/15/2025
   author: Orin-Thomas
   ms.author: viniap

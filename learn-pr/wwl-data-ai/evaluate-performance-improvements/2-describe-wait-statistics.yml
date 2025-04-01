@@ -4,12 +4,12 @@ title: Describe wait statistics
 metadata:
   title: Describe wait statistics
   description: "Describe wait statistics"
-  ms.date: 07/13/2022
-  author: wwlpublish
+  ms.date: 03/31/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/2-describe-wait-statistics.md)]
+  [!include[](includes/2-describe-wait-statistics.md)]
