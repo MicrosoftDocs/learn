@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.intro-to-budgeting-for-students.what-is-budgeting
+title: What is Budgeting?
+metadata:
+  title: What is Budgeting?
+  description: This content is a part of the introduction to budgeting for students.
+  ms.date: 04/01/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/what-is-budgeting.md)]

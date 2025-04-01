@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.intro-to-budgeting-for-students.check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Answer the following questions to see what you learned.
+  ms.date: 04/01/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+durationInMinutes: 1
+quiz:
+  title: Knowledge check
+  questions:
+  - content: Why is budgeting helpful?
+    choices:
+    - content: It gives you control over your money. 
+      isCorrect: true
+      explanation: Correct! Budgeting helps you make smart financial decisions.
+    - content: It lets you buy everything you want. 
+      isCorrect: false
+      explanation: Not quite. Budgeting helps prioritize needs and wants.
+    - content: It keeps you from spending any money. 
+      isCorrect: false
+      explanation: Incorrect. Budgeting helps you manage spending, not eliminate it.
+    - content: It makes you rich. 
+      isCorrect: false
+      explanation: Incorrect. While budgeting helps you save, it doesn't guarantee wealth.
+  

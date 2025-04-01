@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.intro-to-budgeting-for-students.why-budgeting-is-helpful
+title: Why Budgeting is Helpful?
+metadata:
+  title: Why Budgeting is Helpful?
+  description: This content is a part of the introduction to budgeting for students.
+  ms.date: 04/01/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/why-budgeting-is-helpful.md)]

@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.philanthropies.intro-to-budgeting-for-students
+
+metadata:
+  title: Introduction to budgeting for students
+  description: Learn the fundamentals of budgeting to manage your money effectively, save for future goals, and reduce financial stress.
+  ms.date: 04/01/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: module
+
+title: Introduction to budgeting for students
+summary: This module explores the essentials of budgeting for students. You will learn how to manage your money effectively by understanding the importance of budgeting, differentiating between needs and wants, and making smart financial choices to achieve your goals.
+
+abstract: |
+  - Explain what a budget is and why it's important.
+  - Differentiate between needs and wants.
+  - Use a budget to save money and reduce financial stress.
+  - Make smart choices with your money to achieve goals.
+prerequisites: Access to Microsoft Copilot and an Editor.
+products:
+  - azure
+iconUrl: /training/achievements/intro-to-budgeting-for-students.svg
+levels:
+- beginner
+roles:
+- student
+units:
+- learn.philanthropies.intro-to-budgeting-for-students.introduction
+- learn.philanthropies.intro-to-budgeting-for-students.what-is-budgeting
+- learn.philanthropies.intro-to-budgeting-for-students.create-list-of-your-needs
+- learn.philanthropies.intro-to-budgeting-for-students.knowledge-check
+- learn.philanthropies.intro-to-budgeting-for-students.why-budgeting-is-helpful
+- learn.philanthropies.intro-to-budgeting-for-students.responsible-spending-financial-planning
+- learn.philanthropies.intro-to-budgeting-for-students.create-your-personal-budget-plan
+- learn.philanthropies.intro-to-budgeting-for-students.check
+- learn.philanthropies.intro-to-budgeting-for-students.summary
+badge:
+  uid: learn.philanthropies.intro-to-budgeting-for-students.badge

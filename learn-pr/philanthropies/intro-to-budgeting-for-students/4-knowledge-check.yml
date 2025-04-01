@@ -1,0 +1,44 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.intro-to-budgeting-for-students.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Answer the following questions to see what you learned.
+  ms.date: 04/01/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  title: Knowledge check
+  questions:
+  - content: What is a budget?
+    choices:
+    - content: A plan for your money. 
+      isCorrect: true
+      explanation: Correct! A budget helps you plan how to use your money wisely.
+    - content: A list of things you want. 
+      isCorrect: false
+      explanation: Not quite. A budget is more about planning your expenses.
+    - content: Money you save. 
+      isCorrect: false
+      explanation: Not exactly. A budget is a plan for managing all your money, including saving.
+    - content: A way to spend money. 
+      isCorrect: false
+      explanation: Incorrect. A budget helps you control spending, not just spend freely.
+
+  - content: Which of the following is a need?
+    choices:
+    - content: Food 
+      isCorrect: true
+      explanation: Correct! Food is essential for living.
+    - content: Video games 
+      isCorrect: false
+      explanation: Not quite. Video games are fun but not necessary to live.
+    - content: Designer clothes 
+      isCorrect: false
+      explanation: Incorrect. Designer clothes are nice to have, but not a necessity.
+    - content: Toys 
+      isCorrect: false
+      explanation: Incorrect. Toys can be fun, but they are not essential for living.
+  
