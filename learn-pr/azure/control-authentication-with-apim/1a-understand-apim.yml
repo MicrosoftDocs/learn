@@ -1,9 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.control-authentication-with-apim.understand-apim
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: What is API Management?
   description: API Management helps businesses expose services and data through published APIs.
-  ms.date: 06/14/2023
+  ms.date: 03/26/2025
   author: dlepow
   ms.author: danlep
   ms.topic: unit
@@ -11,4 +13,4 @@ title: What is API Management?
 durationInMinutes: 5
 content: |
   [!include[](includes/1a-understand-apim.md)]
-
+

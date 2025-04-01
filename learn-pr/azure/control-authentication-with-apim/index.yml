@@ -1,9 +1,11 @@
 ### YamlMime:Module
 uid: learn.control-authentication-with-apim
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Control authentication for your APIs with Azure API Management
   description: Discover how to protect your APIs from unauthorized use with API keys and client certificate authentication.
-  ms.date: 06/13/2023
+  ms.date: 03/26/2025
   author: dlepow
   ms.author: danlep
   ms.topic: module-standard-task-based
@@ -14,8 +16,8 @@ title: Control access to your APIs with Azure API Management
 summary: Discover how to protect your APIs from unauthorized use with API keys and client certificate authentication.
 abstract: | 
   In this module, you will:
-  - Use API keys to authorize access to your APIs
-  - Use client certificate authentication to secure your APIs
+  - Use API keys to authorize access to your APIs.
+  - Use client certificate authentication to secure your APIs.
 prerequisites: | 
   - Familiarity with basic concepts of web APIs, such as operations and endpoints
   - Basic understanding of certificates
@@ -42,4 +44,4 @@ units:
 - learn.control-authentication-with-apim.6-summary
 badge:
   uid: learn.control-authentication-with-apim.badge
-
+
