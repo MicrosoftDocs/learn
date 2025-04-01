@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.gain-insights-data-kql.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: "Gain insights in your data using the Kusto Query Language."
   ms.date: 11/14/2024
   author: shsagir

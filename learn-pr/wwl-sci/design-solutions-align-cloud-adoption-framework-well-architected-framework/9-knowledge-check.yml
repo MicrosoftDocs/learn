@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework.knowledge-check
-title: Knowledge check - Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF)
+title: Module assessment
 metadata:
-  title: Knowledge check - Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF)
+  title: Module assessment
   description: "Knowledge check for module on the topic: Design solutions that align with the Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF)."
   ms.date: 04/05/2023
   author: ceperezb

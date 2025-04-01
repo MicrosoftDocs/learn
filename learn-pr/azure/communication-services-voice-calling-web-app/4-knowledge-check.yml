@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.communication-services-voice-calling-webapp.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: "Review concepts around using Azure Communication Services to create a voice calling web application."
   ms.date: 07/26/2024
   author: rmcmurray

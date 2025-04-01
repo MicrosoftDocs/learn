@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-to-azure-dns.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check for intro to Azure DNS."
   ms.date: 01/31/2024
   author: Orin-Thomas

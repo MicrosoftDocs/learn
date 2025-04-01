@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-container-instances-sidecar.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
   type: knowledge_check
-  title: Azure Container Instances - Knowledge check
+  title: Module assessment
   description: Azure Container Instances - Knowledge check
   ms.date: 07/24/2024
   author: erjosito
