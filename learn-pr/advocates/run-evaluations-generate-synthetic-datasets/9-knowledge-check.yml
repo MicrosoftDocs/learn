@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.run-evaluations-generate-synthetic-datasets.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Test your knowledge of running evaluations and generating a synthetic dataset with the Azure AI Evaluation SDK.
   ms.date: 10/13/2024
   author: aprilspeight

@@ -154,27 +154,4 @@ order.UpdateStatus(OrderStatus.Shipped);
 
 This example demonstrates how to define an enum for order statuses, use it in a class, and update the status of an order. It helps beginners see how enums can be applied in a real-world scenario.
 
-## Use object initializers with structs
-
-Define a struct with properties to group related data together and make it easier to initialize and work with instances of the struct.
-
-```csharp
-public struct Point
-{
-    public int X { get; set; }
-    public int Y { get; set; }
-}
-```
-
-Using an object initializer, you can create and initialize a `Point` instance like this:
-
-```csharp
-var point = new Point { X = 10, Y = 20 };
-```
-
-*Code sample demonstrates how to use an object initializer to set property values when creating a struct instance.*
-
-> [!NOTE]
-> Object initializers make your code more concise and easier to read, especially when working with structs that have multiple properties.
-
-Enums in C# simplify code by allowing you to define a set of named constants, making it easier to represent and manage fixed values like statuses or categories while improving readability and maintainability.
+By using enums, you can replace numeric literals with meaningful names, making your code more intuitive and easier to maintain, while also enabling explicit conversions and validations to ensure safe usage of these constants in your projects.

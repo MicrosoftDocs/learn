@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.manage-end-end-deployment-scenarios-using-bicep-github-actions.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check.
   ms.date: 07/18/2024
   author: mumian

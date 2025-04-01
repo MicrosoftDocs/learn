@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.saas-technical-foundations.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: "Learn from Microsoft about SaaS (Software-as-a-Service) architecture foundations, such as tenancy models, deployment SaaS models, monolithic and microservices architecture, and authentication in SaaS."
   ms.date: 2/9/2024
   author: kostinams

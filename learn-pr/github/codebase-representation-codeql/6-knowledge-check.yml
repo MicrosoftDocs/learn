@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.codebase-representation-codeql.6-knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
   unitType: knowledge_check
-  title: Check your knowledge
+  title: Module assessment
   description: Check your knowledge about CodeQL.
   ms.date: 04/08/2024
   author: rmcmurray

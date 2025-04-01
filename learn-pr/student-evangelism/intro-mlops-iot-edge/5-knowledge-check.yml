@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.intro-mlops-iot-edge.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: In this section, we create interactive questions that validate if the learner has understood the learning objectives
   ms.date: 11/28/2023
   author: PatAltimore
