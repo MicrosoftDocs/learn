@@ -2,6 +2,7 @@
 uid: learn.wwl.develop-with-devops.knowledge-check
 title: Module assessment
 metadata:
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
   ms.date: 02/06/2024
@@ -46,4 +47,3 @@ quiz:
         - content: "To manually, build and test updated versions of software."
           isCorrect: false
           explanation: "Incorrect. Continuous integration involves automating the build and testing process."
-
