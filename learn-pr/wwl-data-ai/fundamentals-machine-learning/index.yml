@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.fundamentals-machine-learning
 metadata:
-  title: Fundamentals of machine learning
+  title: Introduction to machine learning
   description: "Machine learning is the basis for most modern artificial intelligence solutions. A familiarity with the core concepts on which machine learning is based is an important foundation for understanding AI."
   ms.date: 02/14/2025
   author: wwlpublish
@@ -12,7 +12,7 @@ metadata:
   - N/A
   ms.service: azure-machine-learning
   ai-usage: human-only
-title: Fundamentals of machine learning
+title: Introduction to machine learning
 summary: Machine learning is the basis for most modern artificial intelligence solutions. A familiarity with the core concepts on which machine learning is based is an important foundation for understanding AI.
 abstract: |
   After completing this module, you will be able to:
@@ -49,7 +49,7 @@ units:
 - learn.wwl.fundamentals-machine-learning.multiclass-classification
 - learn.wwl.fundamentals-machine-learning.clustering
 - learn.wwl.fundamentals-machine-learning.deep-learning
-- learn.wwl.fundamentals-machine-learning.azure-machine-learning
+- learn.wwl.fundamentals-machine-learning.transformers
 - learn.wwl.fundamentals-machine-learning.exercise-auto-machine-learning
 - learn.wwl.fundamentals-machine-learning.knowledge-check
 - learn.wwl.fundamentals-machine-learning.summary
