@@ -1,4 +1,4 @@
-Generative AI applications are powered by *language models*, which are a specialized type of machine learning model that you can use to perform *natural language processing* (NLP) tasks, including:
+Today's generative AI applications are powered by *language models*, which are a specialized type of machine learning model that you can use to perform *natural language processing* (NLP) tasks, including:
 
 - Determining *sentiment* or otherwise classifying natural language text.
 - Summarizing text.

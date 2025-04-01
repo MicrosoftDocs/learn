@@ -11,26 +11,18 @@ metadata:
   ms.custom:
   - N/A
   ms.service: azure-machine-learning
-  ai-usage: human-only
 title: Introduction to machine learning
 summary: Machine learning is the basis for most modern artificial intelligence solutions. A familiarity with the core concepts on which machine learning is based is an important foundation for understanding AI.
 abstract: |
   After completing this module, you will be able to:
-
   -   Describe core concepts of machine learning
-
   -   Identify different types of machine learning
-
   -   Describe considerations for training and evaluating machine learning models
-
-  -   Describe core concepts of deep learning
-
-  -   Use automated machine learning in Azure Machine Learning service
+  -   Describe core concepts of deep learning and Transformers
 prerequisites: |
   Before starting this module, you should have:
 
   -   A basic knowledge of mathematics
-
   -   Familiarity with Microsoft Azure and cloud computing
 iconUrl: /training/achievements/generic-badge.svg
 levels:
