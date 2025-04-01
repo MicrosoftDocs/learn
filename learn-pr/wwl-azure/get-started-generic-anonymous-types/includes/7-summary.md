@@ -12,4 +12,4 @@ After completing this module, you're now able to:
 - [Generics in C#](/dotnet/csharp/programming-guide/generics/)  
 - [Covariance and Contravariance in C#](/dotnet/csharp/programming-guide/concepts/covariance-contravariance/)  
 - [Anonymous Types in C#](/dotnet/csharp/programming-guide/classes-and-structs/anonymous-types)  
-- [Generic Math in .NET 7](/dotnet/generic-math-in-csharp-and-vb/)
+- [Generics Math in .NET](/dotnet/standard/generics/math)

@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-generic-anonymous-types
 metadata:
   title: Get Started with Generic and Anonymous Types
   description: "Get started with generic and anonymous types in C#."
-  ms.date: 03/31/2025
+  ms.date: 04/01/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: module
@@ -11,7 +11,7 @@ metadata:
   ms.devlang: csharp
   ai-usage: ai-assisted
 title: Get started with generic and anonymous types
-summary: Learn how to apply generics, advanced generics, and anonymous types in C#.
+summary: Generics, and anonymous types in are powerful tools that help developers write flexible, reusable, and efficient code.&nbsp;Learn how to apply generics, advanced generics, and anonymous types in C#.&nbsp;
 abstract: |
   -   Implement generic classes and methods to handle various data types efficiently.
 

@@ -70,7 +70,7 @@ public T GetFirstItem<T>(List<T> items)
     return items[0];
 }
 
-List<string> names = new List<string> { "Alice", "Bob" };
+List<string> names = new List<string> {"Hannah", "Mario"};
 string firstName = GetFirstItem(names);
 Console.WriteLine(firstName);
 ```

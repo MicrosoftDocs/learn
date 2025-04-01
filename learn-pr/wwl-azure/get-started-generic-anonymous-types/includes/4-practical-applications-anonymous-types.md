@@ -86,7 +86,7 @@ Anonymous types are ideal for creating temporary data structures within the scop
 In the following example, an anonymous type is used to group data temporarily:
 
 ```csharp
-var customer = new { Name = "John Doe", Age = 30 };
+var customer = new { Name = "Mario Rogers", Age = 30 };
 Console.WriteLine($"Customer: {customer.Name}, Age: {customer.Age}");
 ```
 

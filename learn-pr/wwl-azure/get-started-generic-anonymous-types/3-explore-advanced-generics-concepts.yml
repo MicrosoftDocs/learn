@@ -4,7 +4,7 @@ title: Explore advanced generics concepts
 metadata:
   title: Explore advanced generics concepts
   description: "Understand advanced concepts of generics, including covariance, contravariance, and generic constraints, to write more flexible, and reusable code."
-  ms.date: 03/31/2025
+  ms.date: 04/01/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
