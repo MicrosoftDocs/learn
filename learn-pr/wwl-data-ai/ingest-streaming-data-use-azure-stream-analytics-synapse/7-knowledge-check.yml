@@ -2,6 +2,7 @@
 uid: learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse.knowledge-check
 title: Module assessment
 metadata:
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
   ms.date: 12/12/2024
@@ -33,4 +34,4 @@ quiz:
       explanation: "Correct. A Blob storage/ADLS Gen2 output writes data to files in a data lake."
     - content: "Azure Event Hubs"
       isCorrect: false
-      explanation: "Incorrect. An Azure Event Hubs output does not write data to files in a data lake."
+      explanation: "Incorrect. An Azure Event Hubs output does not write data to files in a data lake."
