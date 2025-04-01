@@ -3,6 +3,7 @@ uid: learn.azure.route-and-process-data-logic-apps.knowledge-check
 title: Module assessment
 
 metadata:
+  ai_generated_module_assessment: true
   title: Module assessment
   description: Knowledge check
   ms.date: 09/25/2024
@@ -39,4 +40,3 @@ quiz:
     - content: "Eight"
       isCorrect: false
       explanation: "Six blobs are created for the six attachments. One blob is created for the email body."
-
