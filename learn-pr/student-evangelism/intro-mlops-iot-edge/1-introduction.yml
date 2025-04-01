@@ -2,8 +2,6 @@
 uid: learn.oxford.intro-mlops-iot-edge.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: In this section, we help the learner decide if the product meets their needs by explaining when to use the product and how it works.
   ms.date: 11/28/2023
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 6 # dummy number at present
 content: |
   [!include[](includes/1-introduction.md)]
-
+

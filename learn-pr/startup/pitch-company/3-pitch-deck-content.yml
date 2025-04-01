@@ -2,8 +2,6 @@
 uid: learn.startups.pitch-company.pitch-deck-content
 title: What should go in your pitch deck?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What should go in your pitch deck?
   description: Learn what to include in a pitch deck and see the topics that potential investors want to hear about.
   ms.date: 04/22/2024
@@ -13,4 +11,4 @@ metadata:
   ms.collection: learn-startups
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-pitch-deck-content.md)]
+  [!include[](includes/3-pitch-deck-content.md)]

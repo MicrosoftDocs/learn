@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.cosmos-db-java-app.5-knowledge-check
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   ms.date: 09/15/2020
   author: KarlErickson
@@ -10,7 +10,7 @@ metadata:
   ms.topic: unit
   ms.custom:
     - devx-track-extended-java
-title: Knowledge check
+title: Module assessment
 durationInMinutes: 3
 quiz:
   title: Check your knowledge

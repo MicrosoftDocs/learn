@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check.
   ms.date: 01/30/2023
   author: mumian

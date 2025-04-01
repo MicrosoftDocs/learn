@@ -2,8 +2,6 @@
 uid: learn.improve-reliability-incidents.5-tracking
 title: "Incident tracking"
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: "Incident tracking"
   description: "Incident tracking"
   ms.date: 02/28/2024
@@ -69,4 +67,4 @@ quiz:
     - content: 'Logic Apps'
       isCorrect: true
       explanation: 'Correct.'
-
+

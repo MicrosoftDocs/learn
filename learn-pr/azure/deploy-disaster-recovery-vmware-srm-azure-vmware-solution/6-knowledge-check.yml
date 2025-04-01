@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-disaster-recovery-vmware-srm-azure-vmware-solution.6-knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
   unitType: Knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: This is a knowledge check unit.
   ms.date: 07/14/2023
   author: rmcmurray

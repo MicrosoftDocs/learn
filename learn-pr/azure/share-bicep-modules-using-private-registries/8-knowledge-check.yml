@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.share-bicep-modules-using-private-registries.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge.
   ms.date: 09/27/2024
   author: mumian
