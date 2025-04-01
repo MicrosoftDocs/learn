@@ -2,9 +2,11 @@
 uid: learn.wwl.microsoft-defender-cloud-threat-protection.enable-just-in-time-access
 title: Enable just-in-time access
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Enable just-in-time access
   description: "Enable just-in-time access"
-  ms.date: 03/28/2025
+  ms.date: 04/01/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

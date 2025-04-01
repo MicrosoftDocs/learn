@@ -1,12 +1,17 @@
 Threat protection for AI workloads in Microsoft Defender for Cloud protects AI workloads on an Azure subscription by providing insights to threats that might affect your generative AI applications.
 
-## Enroll in the limited preview
+> [!IMPORTANT]
 
-To get started, you must [sign up](https://aka.ms/D4AI/PublicPreviewAccess) and be accepted to the limited preview. Once accepted, you can start onboarding threat protection for AI workloads.
+Threat protection for AI workloads is currently in preview. See the Supplemental Terms of Use for Microsoft Azure Previews for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
 
-1.  Fill out the [registration form](https://aka.ms/D4AI/PublicPreviewAccess).
-2.  Wait to receive an email confirming your acceptance or rejection from the limited preview.
+## Prerequisites
+- Read the [Overview - AI threat protection](/azure/defender-for-cloud/ai-threat-protection).
 
+- You need a Microsoft Azure subscription. If you don't have an Azure subscription, you can [sign up for a free subscription](https://azure.microsoft.com/pricing/free-trial/).
+
+- [Enable Defender for Cloud on your Azure subscription](/azure/defender-for-cloud/get-started#enable-defender-for-cloud-on-your-azure-subscription).
+
+- We recommend not opting out of prompt-based triggered alerts for [Azure OpenAI content filtering](/azure/ai-services/openai/concepts/content-filter). Opting out and removing that capability can affect Defender for Cloud's ability to monitor and detect such attacks.
 If you're accepted into the limited preview, you can enable threat protection for AI workloads on your Azure subscription.
 
 ## Enable threat protection for AI workloads
@@ -30,5 +35,11 @@ User prompt evidence consists of prompts and model responses. Both are considere
 3.  In the Defender for Cloud menu, select Environment settings.
 4.  Select the relevant Azure subscription.
 5.  Locate AI workloads and select Settings.
+
+:::image type="content" source="../media/ai-workloads-in-defender-for-cloud-full-settings-and-monitoring.png" alt-text="Screenshot showing an example of ai workloads full settings.":::
+
 6.  Toggle Enable user prompt evidence to On.
+
+:::image type="content" source="../media/prompt-evidence-status.png" alt-text="Screenshot showing an example of the prompt evidence status settings.":::
+
 7.  Select Continue.

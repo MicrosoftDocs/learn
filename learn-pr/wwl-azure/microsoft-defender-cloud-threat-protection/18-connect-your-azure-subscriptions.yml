@@ -2,9 +2,11 @@
 uid: learn.wwl.microsoft-defender-cloud-threat-protection.connect-your-azure-subscriptions
 title: Connect your Azure subscriptions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Connect your Azure subscriptions
   description: "Connect your Azure subscriptions"
-  ms.date: 03/28/2025
+  ms.date: 04/01/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

@@ -2,9 +2,11 @@
 uid: learn.wwl.microsoft-defender-cloud-threat-protection.configure-defender-servers-storage
 title: Configure Microsoft Defender plans for Servers, Databases, and Storage
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure Microsoft Defender plans for Servers, Databases, and Storage
   description: "Configure Microsoft Defender plans for Servers, Databases, and Storage"
-  ms.date: 03/28/2025
+  ms.date: 04/01/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
