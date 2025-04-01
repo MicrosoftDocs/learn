@@ -46453,6 +46453,41 @@
       "source_path": "learn-pr/wwl-azure/guided-project-langstons-ant/06-summary.md",
       "redirect_url": "/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-cosmos-db-java-app/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-cosmos-db-java-app/2-setup.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-cosmos-db-java-app/3-crud-operations.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-cosmos-db-java-app/4-query.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-cosmos-db-java-app/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-cosmos-db-java-app/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-cosmos-db-java-app/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
+      "redirect_document_id": false
     }
  ]
 }
