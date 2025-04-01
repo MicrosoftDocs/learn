@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.github-administration-for-enterprise-support-adoption.knowledge-check
-title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
+title: Module assessment
 metadata:
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description:  Knowledge check for GitHub administration for Enterprise support and adoption module
   ms.date: 03/11/2024
   author: rmcmurray

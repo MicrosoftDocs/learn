@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.containerize-deploy-java-app-aks.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
   unitType: Knowledge Check
-  title: Knowledge Check
+  title: Module assessment
   description: Knowledge check.
   ms.date: 02/12/2025
   author: KarlErickson

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.code-scanning-with-github-codeql.knowledge-check
-title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
+title: Module assessment
 metadata:
   unitType: knowledge_check 
-  title: Knowledge check # user input: module title for browser tab and search results
+  title: Module assessment
   description: Knowledge check questions for configure code scanning module. # user input: a description for site search and SEO
   ms.date: 04/11/2024
   author: a-a-ron

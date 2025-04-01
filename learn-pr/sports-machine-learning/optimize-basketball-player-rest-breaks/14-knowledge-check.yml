@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.optimize-basketball-player-rest-breaks.14-knowledge-check
 metadata:
-  title: Check your knowledge
+  title: Module assessment
   description: Check your knowledge
   ms.date: 10/12/2022
   author: softchris
   ms.author: chnoring
   ms.topic: unit
   ms.custom: team=nextgen
-title: Check your knowledge
+title: Module assessment
 durationInMinutes: 2
 quiz:
   questions:
