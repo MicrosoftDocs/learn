@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-secure-data.6-data-protection
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Protect your data
   description: Protect your data
   ms.date: 04/01/2025

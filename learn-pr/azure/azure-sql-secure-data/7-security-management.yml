@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-secure-data.7-security-management
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Manage your security
   description: Exercise - Manage your security
   ms.date: 04/01/2025
