@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.apply-budgeting-method.check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Answer the following questions to see what you learned.
+  ms.date: 04/01/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Knowledge check
+  questions:
+  - content: Which budgeting method is best described as "giving every dollar a purpose"?
+    choices:
+    - content: Pay-Yourself-First Budgeting 
+      isCorrect: false
+      explanation: Incorrect. This method focuses on saving first.
+    - content: 50/30/20 Budgeting 
+      isCorrect: false
+      explanation: Incorrect. This method divides money into categories but doesn't allocate every dollar.
+    - content: Zero-Based Budgeting   
+      isCorrect: true
+      explanation: Correct! Zero-based budgeting assigns a specific purpose to every dollar.
+    - content: Envelope System Budgeting 
+      isCorrect: false
+      explanation: Incorrect. This method focuses on using envelopes for spending categories.
+  
+  - content: In the 50/30/20 rule, what are the three main categories?
+    choices:
+    - content: Needs, Wants, and Debt. 
+      isCorrect: false
+      explanation: Incorrect. Debt is not one of the primary categories in the 50/30/20 rule.
+    - content: Needs, Debt, and Savings. 
+      isCorrect: false
+      explanation: Incorrect. Debt isn't part of the original 50/30/20 structure.
+    - content: Needs, Wants, and Savings. 
+      isCorrect: true
+      explanation: Correct! These are the three categories in the 50/30/20 rule.
+    - content: Needs, Savings, and Investments. 
+      isCorrect: false
+      explanation: Incorrect. Investments aren't explicitly part of this method.
+
+  - content: What is one benefit of the envelope system budgeting method?
+    choices:
+    - content: It helps track digital transactions. 
+      isCorrect: false
+      explanation: Incorrect. The envelope system is a hands-on, cash-based method.
+    - content: It visually shows how much money is left in each category. 
+      isCorrect: true
+      explanation: Correct! The envelopes give a clear visual representation of your spending.
+    - content: It automatically balances your budget. 
+      isCorrect: false
+      explanation: Incorrect. This method requires manual management of envelopes.
+    - content: It splits your money into percentages. 
+      isCorrect: false
+      explanation: Incorrect. That's more aligned with the 50/30/20 method.

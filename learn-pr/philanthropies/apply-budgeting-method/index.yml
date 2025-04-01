@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.philanthropies.apply-budgeting-method
+
+metadata:
+  title: Apply a budgeting method to manage money effectively
+  description: Learn about four effective budgeting methods to manage your money, save for the future, and achieve your financial goals.
+  ms.date: 04/01/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: module
+  ms.service: artificial-intelligence
+
+title: Apply a budgeting method to manage money effectively
+summary: This module introduces students to zero-based budgeting, pay-yourself-first, the envelope system, and the 50/30/20 rule. Learn how to allocate money, prioritize needs and wants, and plan for savings while building good money habits.
+
+abstract: |
+  - Understand different budgeting methods and their benefits.
+  - Explain how zero-based budgeting, pay-yourself-first, the envelope system, and the 50/30/20 rule work.
+  - Identify which budgeting method works best for personal financial goals.
+prerequisites: Access to Microsoft Designer and Microsoft Copilot.
+products:
+  - azure
+iconUrl: /training/achievements/apply-budgeting-method.svg
+levels:
+- beginner
+roles:
+- student
+units:
+- learn.philanthropies.apply-budgeting-method.introduction
+- learn.philanthropies.apply-budgeting-method.budgeting-methods-overview
+- learn.philanthropies.apply-budgeting-method.knowledge-check
+- learn.philanthropies.apply-budgeting-method.why-budgeting-methods-are-helpful
+- learn.philanthropies.apply-budgeting-method.put-your-budgeting-skills-into-action
+- learn.philanthropies.apply-budgeting-method.check
+- learn.philanthropies.apply-budgeting-method.summary
+badge:
+  uid: learn.philanthropies.apply-budgeting-method.badge
