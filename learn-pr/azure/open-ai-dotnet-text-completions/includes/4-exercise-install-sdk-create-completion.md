@@ -21,7 +21,7 @@ The first step is to create the Azure OpenAI resource and deploy the model. Let'
 Creating the resource and deploying the model is a multi-step process. Use the Azure CLI as it can be quicker than using the Azure portal. But note you can use the [Azure portal if you wish](/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal).
 
 1. Run the `az login` command to sign-in if you haven't already.
-1. When you create a new Azure resource, you can create a new resource group or use an existing one. This command shows you how to create a new resource group. Use the name **HikingConversations-RG** but you can substitute the name of your choice, or use an existing group's name.
+1. When you create a new Azure resource, you can create a new resource group or use an existing one. This command shows you how to create a new resource group. Use the name **HikingConversations-RG**, substitute the name of your choice, or use an existing group's name.
 
     ::: zone pivot="cli"
 
@@ -71,7 +71,7 @@ Creating the resource and deploying the model is a multi-step process. Use the A
 
     ::: zone-end
 
-1. Next we want to deploy the GPT-35-Turbo model to the OpenAI resource we created. Call the model deployment **HikingRecommendationTurbo**. Note we're using **HikingConversations-RG** as the resource group name, **HikingConversationsAI** as the OpenAI resource name, if you used different values make sure you substitute those values.
+1. Next we want to deploy the GPT-35-Turbo model to the OpenAI resource we created. Call the model deployment **HikingRecommendationTurbo**. Note we're using **HikingConversations-RG** as the resource group name and **HikingConversationsAI** as the OpenAI resource name. If you used different values make sure you substitute those values.
 
     ::: zone pivot="cli"
 
@@ -103,7 +103,7 @@ Creating the resource and deploying the model is a multi-step process. Use the A
 
     ::: zone-end
 
-1. Once the resource and model have been created, we need to get the base URL and access keys so the .NET SDK can access the Azure OpenAI resource. Use these commands to get the endpoint and primary API keys and make note of them for later use:
+1. Once the resource and model have been created, we need to get the base URL and access keys so the .NET SDK can access the Azure OpenAI resource. Use these commands to get the endpoint and primary API keys, and make note of them for later use:
 
     **The endpoint**
 
@@ -187,7 +187,7 @@ Next up we want to create a bare bones .NET Console application and add the Azur
     string openAIDeploymentName = "HikingRecommendationTurbo";
     ```
 
-    In the steps above, we named the deployment **HikingRecommendationTurbo**, if you used a different value make sure you use that instead.
+    In the steps above, we named the deployment **HikingRecommendationTurbo**. If you used a different value make sure you use that instead.
 1. Finally, instantiate the class needed to communicate with the Azure OpenAI resource.
 
     ```csharp
@@ -216,7 +216,7 @@ Let's create the initial system role prompt that will provide the initial instru
     List<ChatMessage> chatHistory = new();
     ```
 
-1. Then create a new `SystemChatMessage` object and add it to the `chatHistory` list. We'll be setting the `ChatMessage` to be coming from the System role.
+1. Then create a new `SystemChatMessage` object, and add it to the `chatHistory` list. We'll be setting the `ChatMessage` to be coming from the System role.
 
     ```csharp
     SystemChatMessage systemMessage = ChatMessage.CreateSystemMessage(systemPrompt);
@@ -228,7 +228,7 @@ Let's create the initial system role prompt that will provide the initial instru
 
 Next we'll send the first message to the model, initiating the conversation.
 
-1. Create a prompt for the user and add it to the `chatHistory` as a user message.
+1. Create a prompt for the user, and add it to the `chatHistory` as a user message.
 
     ```csharp
     string userGreeting = """
@@ -260,7 +260,7 @@ Next we'll send the first message to the model, initiating the conversation.
     Console.WriteLine($"AI >>> {response.Value.Content.Last().Text}");
     ```
 
-1. Let's see what we have so far, you can run the application by entering `dotnet run` into the terminal.
+1. Let's see what we have so far. You can run the application by entering `dotnet run` into the terminal.
 1. Experiment by changing the `userGreetingMessage`'s value to see how the model may respond differently.
 
 In one example run, we received the following:
@@ -269,7 +269,7 @@ In one example run, we received the following:
 Hello! Great to hear from you. What type of hikes are you interested in? Do you enjoy easy scenic walks, challenging trails, or something in between? Do you prefer hikes with waterfalls, mountain views, or unique geological formations?
 ```
 
-You may receive something different as the model is nondeterministic, or may produce a different output even with the same input.
+You may receive something different as the model is nondeterministic, or it may produce a different output even with the same input.
 
 ## Continuing the conversation
 
@@ -283,7 +283,7 @@ Let's continue on by responding to the conversation and then outputting the resp
     chatHistory.Add(assistantMessage); 
     ```
 
-1. Next create another user prompt and send it to the model.
+1. Next create another user prompt, and send it to the model.
 
     ```csharp
     var hikeRequest = 

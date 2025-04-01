@@ -6,10 +6,10 @@ GPT-35-Turbo and GPT-4 can still accept and generate text completions, but where
 
 In Azure OpenAI there are two different options for interacting with these type of models:
 
-* Chat Completion API.
-* Completion API with Chat Markup Language (ChatML).
+* Chat Completion API
+* Completion API with Chat Markup Language (ChatML)
 
-The Chat Completion API is a new dedicated API for interacting with the GPT-35-Turbo and GPT-4 models and we'll use it as we go along here.
+The Chat Completion API is a new dedicated API for interacting with the GPT-35-Turbo and GPT-4 models, and we'll use it as we go along here.
 
 ## Understanding the Chat Completion API roles
 
@@ -21,12 +21,12 @@ The model accepts an array of message objects with a conversation organized by r
 
 ### The System role
 
-The system role also known as the system message is included at the beginning of the array. This message provides the initial instructions to the model. You can provide various information in the system role including:
+The system role, also known as the system message, is included at the beginning of the array. This message provides the initial instructions to the model. You can provide various information in the system role including:
 
-* A brief description of the assistant
-* Personality traits of the assistant
-* Instructions or rules you would like the assistant to follow
-* Data or information needed for the model, such as relevant questions from an FAQ
+* A brief description of the assistant.
+* Personality traits of the assistant.
+* Instructions or rules you would like the assistant to follow.
+* Data or information needed for the model, such as relevant questions from an FAQ.
 
 You can customize the system role for your use case or just include basic instructions. The system role/message is optional, but it's recommended to at least include a basic one to get the best results.
 
@@ -38,17 +38,17 @@ The message the user sends to the model should follow best practices for designi
 
 ## Message prompt examples
 
-Here are a few examples of different styles of prompts that you could use with the GPT-35-Turbo and GPT-4 models. The examples are just a starting point and you can experiment with different prompts to customize the behavior.
+Here are a few examples of different styles of prompts that you could use with the GPT-35-Turbo and GPT-4 models. The examples are just a starting point, and you can experiment with different prompts to customize the behavior.
 
 ### Basic example
 
-If you want the GPT-35-Turbo model to behave similarly to [chat.openai.com](https://chat.openai.com), you can use a basic system message like "Assistant is a large language model trained by OpenAI".
+If you want the GPT-35-Turbo model to behave similarly to [chat.openai.com](https://chat.openai.com), you can use a basic system message like "Assistant is a large language model trained by OpenAI."
 
-We'll learn how to use the Chat Completion API's .NET SDK in the next unit, for now we'll stick with variable names as an example.
+We'll learn how to use the Chat Completion API's .NET SDK in the next unit. For now we'll stick with variable names as an example.
 
 ```csharp
 
-string systemMessage = "Assistant is a large language model trained by OpenAI";
+string systemMessage = "Assistant is a large language model trained by OpenAI.";
 string userMessage = "Who were the founders of Microsoft?";
 
 ```
@@ -70,13 +70,12 @@ string userMessage = "When are my taxes due?";
 
 ## Managing conversations
 
-The model has no memory, so it needs an updated transcript with each new question with all questions and answers otherwise it will lose context.
+The model has no memory, so it needs an updated transcript with each new question with all questions and answers, otherwise it will lose context.
 
-This means you will need to send the entire, updated conversation to the model every time you interact with it and then token limit for each model could easily be hit.
+This means you'll need to send the entire updated conversation to the model every time you interact with it, and then token limit for each model could easily be hit.
 
-The token limit for `gpt-35-turbo` is 4096 tokens, whereas the token limits for `gpt-4` and `gpt-4-32k` are 8192 and 32768 respectively. You must stay under those limits otherwise you'll receive an error.
+The token limit for `gpt-35-turbo` is 4096 tokens, whereas the token limits for `gpt-4` and `gpt-4-32k` are 8192 and 32768 respectively. You must stay under those limits, otherwise you'll receive an error.
 
-You can keep track of the token count and remove the oldest messages from the array sent to the model. It's best to always keep the system message and only remove assistant or user messages. However over time this method of managing the conversation can cause the conversation quality to degrade as context of earlier parts of the conversation are lost.
+You can keep track of the token count and remove the oldest messages from the array sent to the model. It's best to always keep the system message and only remove assistant or user messages. However, over time this method of managing the conversation can cause the conversation quality to degrade as context of earlier parts of the conversation are lost.
 
 Alternatively, once the token limit is reached, you can prompt the user to start a new conversation.
-

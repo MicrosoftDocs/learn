@@ -6,7 +6,7 @@ Let's update the hiking recommendation application we started in the previous ex
 
 When classifying a product review, we only want the model to tell us if the review is positive, neutral, or negative. Let's update the prompt the model receives so it has the best chance of providing a high-quality response.
 
-The current system prompt is OK, but we can get the model to recommend more appropriate and exciting hikes by following best practices in prompt construction. Let's make the instructions on how the model should act a bit more clear
+The current system prompt is OK, but we can get the model to recommend more appropriate and exciting hikes by following best practices in prompt construction. Let's make the instructions on how the model should act a bit more clear.
 
 ### Add instructions
 
@@ -80,7 +80,7 @@ The previous request only said the hike should be strenuous with a great view. L
 
 This is much better! The response is following the rules of the system prompt and providing detailed information of the hike description requested.
 
-If you look closely, hike recommendation number 3 says it is both a point-to-point and a round trip hike. Let's change recommendation request prompt to see if we can avoid that mis-information.
+If you look closely, hike recommendation number three says it's both a point-to-point and a round trip hike. Let's change recommendation request prompt to see if we can avoid that mis-information.
 
 ### Chain-of-thought
 

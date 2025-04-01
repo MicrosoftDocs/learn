@@ -1,8 +1,8 @@
-Prompt construction can be difficult. In practice, the prompt acts to configure the model weights to complete the desired task, but it's more of an art than a science, often requiring experience and intuition to craft a successful prompt.
+Prompt construction can be difficult. In practice, the prompt acts to configure the model weights to complete the desired task. However, it's more of an art than a science, often requiring experience and intuition to craft a successful prompt.
 
 When you send well-constructed prompts to the model, the model returns better completions.
 
-In our hiking recommendation bot, a great system prompt helps the model get ready to recommend appropriate hikes. And good user prompts further refines the recommendations the model returns.
+In our hiking recommendation bot, a great system prompt helps the model get ready to recommend appropriate hikes. Good user prompts further refine the recommendations the model returns.
 
 In this unit, we talk about the general concepts and patterns that can be used to construct prompts and look at some techniques that can be used to improve the quality of the completions.
 
@@ -14,11 +14,11 @@ As you develop complex prompts, it's helpful to keep this fundamental behavior i
 
 ## Prompt components
 
-When using the Completion API there's no differentiation between different parts of the prompt, but it's still useful to dissect the prompt into its component parts - as the goal is to think about prompt construction.
+When using the Completion API, there's no differentiation between different parts of the prompt. However, it's still useful to dissect the prompt into its component parts, as the goal is to think about prompt construction.
 
 ### Instructions
 
-Instructions are likely the most commonly used prompt component. They're the part of the prompt that tells the model what to do and can range from simple to complex. For example, _Recommend hikes_ to _You're a hiking enthusiast who helps people discover fun hikes in their area. You're upbeat and friendly. You introduce yourself when first saying hello. When helping people out, you always ask them where they're located and the hiking intensity desired to inform the hiking recommendation you provide_.
+Instructions are likely the most commonly used prompt component. They're the part of the prompt that tells the model what to do and can range from simple to complex. For example, _Recommend hikes_ to _You're a hiking enthusiast who helps people discover fun hikes in their area. You're upbeat and friendly. You introduce yourself when first saying hello. When helping people out, you always ask them where they're located, and the hiking intensity desired to inform the hiking recommendation you provide_.
 
 ### Primary content
 
@@ -45,7 +45,7 @@ Recommendation:
 
 ### Cue
 
-Cues act as the “jumpstart” for the output of the model, helping to direct the model to the desired output. It's often a prefix that the model can build onto. A cue can direct the completion to include key elements. They're often used along with instructions.
+Cues act as the "jumpstart" for the output of the model, helping to direct the model to the desired output. It's often a prefix that the model can build onto. A cue can direct the completion to include key elements. They're often used along with instructions.
 
 The following example shows a single cue to summarize many trail reviews.
 
@@ -59,10 +59,10 @@ Supporting content is information that the model can utilize to influence the ou
 
 ## Best practices
 
-* **Be Specific.** Leave as little to interpretation as possible. Restrict the operational space.
-* **Be Descriptive.** Use analogies.
-* **Double Down.** Sometimes you may need to repeat yourself to the model. Give instructions before and after your primary content, use an instruction and a cue, etc.
-* **Order Matters.** The order in which you present information to the model may affect the output. Whether you put instructions before your content (“summarize the following…”) or after (“summarize the above…”) can make a difference in output. Even the order of few-shot examples can matter. This technique is referred to as recency bias.
-* **Prime the output.** Include a few words or phrases at the end of the prompt to obtain a model response that follows the desired form.
-* **Give the model an “out”.** It can sometimes be helpful to give the model an alternative path if it's unable to complete the assigned task. For example, when asking a question over a piece of text you might include something like "respond with ‘not found’ if the answer isn't present." This technique helps the model avoid generating false responses.
-* **Chain of thought prompting.** The model is instructed to proceed step-by-step and present all the steps involved. Doing so reduces the possibility of inaccuracies of outcomes and makes assessing the model response easier.
+* **Be Specific**: Leave as little to interpretation as possible. Restrict the operational space.
+* **Be Descriptive**: Use analogies.
+* **Double Down**: Sometimes you may need to repeat yourself to the model. Give instructions before and after your primary content, use an instruction and a cue, etc.
+* **Order Matters**: The order in which you present information to the model may affect the output. Whether you put instructions before your content ("summarize the following...") or after ("summarize the above...") can make a difference in output. Even the order of few-shot examples can matter. This technique is referred to as recency bias.
+* **Prime the output**: Include a few words or phrases at the end of the prompt to obtain a model response that follows the desired form.
+* **Give the model an "out"**: It can sometimes be helpful to give the model an alternative path if it's unable to complete the assigned task. For example, when asking a question over a piece of text you might include something like "respond with 'not found' if the answer isn't present." This technique helps the model avoid generating false responses.
+* **Chain of thought prompting**: The model is instructed to proceed step-by-step and present all the steps involved. Doing so reduces the possibility of inaccuracies of outcomes and makes assessing the model response easier.
