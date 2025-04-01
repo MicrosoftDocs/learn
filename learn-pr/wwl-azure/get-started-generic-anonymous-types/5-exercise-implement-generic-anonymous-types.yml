@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-generic-anonymous-types.exercise-implement-generic-anonymous-types
+title: Exercise - Implement generic and anonymous types
+metadata:
+  title: Exercise - Implement generic and anonymous types
+  description: "Practice creating generics, advanced generics, and anonymous types in C# to write flexible, reusable, and efficient code."
+  ms.date: 04/01/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 25
+content: |
+  [!include[](includes/5-exercise-implement-generic-anonymous-types.md)]

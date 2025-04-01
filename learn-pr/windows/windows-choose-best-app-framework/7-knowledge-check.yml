@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.windows.windows-best-app-framework.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge to see if you understand when to use each Windows UI framework (WPF, Windows Forms, and WinUI).
   ms.date: 11/22/2024
   author: alvinashcraft

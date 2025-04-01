@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-cache-for-redis.5-knowledge-check  
-title: Knowledge check
+title: Module assessment
 metadata:
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Test your knowledge.
   ms.date: 04/04/2024  
   author: flang-msft

@@ -3,7 +3,7 @@ uid: learn.wwl.implement-enum-struct-record-types
 metadata:
   title: Implement Enum, Struct, and Record Types
   description: "Learn to create organized, maintainable code with enum, struct, and record types in C#."
-  ms.date: 03/31/2025
+  ms.date: 04/01/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: module

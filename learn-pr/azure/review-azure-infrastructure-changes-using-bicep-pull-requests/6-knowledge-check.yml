@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check.
   ms.date: 01/31/2025
   author: mumian
