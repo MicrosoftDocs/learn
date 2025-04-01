@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-scale-azure-sql-databases-elastic-pools.knowledge-check
 metadata:
-  title: Knowledge Check
+  title: Module assessment
   description: Check what you learned about SQL elastic pools.
   ms.date: 12/15/2023
   author: WilliamDAssafMSFT
@@ -11,7 +11,7 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
-title: Knowledge Check
+title: Module assessment
 durationInMinutes: 3
 quiz:
 

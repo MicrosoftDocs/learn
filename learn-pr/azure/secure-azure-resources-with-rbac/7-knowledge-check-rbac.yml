@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-azure-resources-with-rbac.7-knowledge-check-rbac
-title: Knowledge check - Using Azure RBAC
+title: Module assessment
 metadata:
   unitType: knowledge_check
-  title: Knowledge check - Using Azure RBAC
+  title: Module assessment
   description: Knowledge check - Using Azure RBAC
   ms.date: 09/19/2024
   author: rolyon

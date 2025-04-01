@@ -4,12 +4,12 @@ title: Choose appropriate data types
 metadata:
   title: Choose appropriate data types
   description: "Choose appropriate data types"
-  ms.date: 04/28/2022
-  author: wwlpublish
+  ms.date: 03/31/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-choose-appropriate-data-types.md)]
+  [!include[](includes/3-choose-appropriate-data-types.md)]

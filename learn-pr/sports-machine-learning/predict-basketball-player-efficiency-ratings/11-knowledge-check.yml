@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.predict-basketball-player-efficiency-ratings.11-knowledge-check
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Answer the multiple choice questions to check your understanding of data cleansing and manipulation.
   ms.date: 03/10/2021
   author: softchris
   ms.author: chnoring 
   ms.topic: unit
   ms.custom: team=nextgen
-title: Knowledge check
+title: Module assessment
 durationInMinutes: 5
 content: |
   Answer the following questions to check your understanding of data cleansing and manipulation.
