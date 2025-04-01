@@ -33,7 +33,7 @@ The execution plan also stores other metadata about the query, such as the datab
 
 Query plans can be viewed in either a graphical representation or a text-based format. Text-based options are invoked with SET commands and apply only to the current connection. These plans can be viewed anywhere you can run T-SQL queries.
 
-Most DBAs prefer graphical plans because they allow you to see the plan as a whole, including the *shape* of the plan. There are several ways to view and save graphical query plans. The most common tool for this purpose is SQL Server Management Studio, but estimated plans can also be viewed in Azure Data Studio. Additionally, there are third-party tools that support viewing graphical execution plans.
+Most DBAs prefer graphical plans because they allow you to see the plan as a whole, including the *shape* of the plan. There are several ways to view and save graphical query plans. The most common tool for this purpose is SQL Server Management Studio. Additionally, there are third-party tools that support viewing graphical execution plans.
 
 There are three different types of execution plans.
 

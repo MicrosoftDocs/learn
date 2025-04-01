@@ -2,7 +2,7 @@ Actual versus estimated execution plans can be confusing. The difference is that
 
 :::image type="content" source="../media/module-55-optimize-queries-final-01.png" alt-text="Screenshot of an estimated execution plan generated in SQL Server Management Studio.":::
 
-As shown, you can generate an estimated plan in SSMS by clicking the button indicated by the estimated query plan box (or using the keyboard command **Control+L**). You can generate the actual plan by clicking the icon shown (or using the keyboard command **Control+M**), and then executing the query. The two option buttons work differently. The *Include Estimated Query Plan* button responds immediately to any query highlighted (or the entire workspace, if nothing is highlighted), whereas the *Include Actual Query Plan* button requires the query to be executed.
+As shown, you can generate an estimated plan in SSMS by selecting the button indicated by the estimated query plan box (or using the keyboard command **Control+L**). You can generate the actual plan by selecting the icon shown (or using the keyboard command **Control+M**), and then executing the query. The two option buttons work differently. The *Include Estimated Query Plan* button responds immediately to any query highlighted (or the entire workspace, if nothing is highlighted), whereas the *Include Actual Query Plan* button requires the query to be executed.
 
 There's overhead to both executing a query and generating an estimated execution plan, so viewing execution plans should be done carefully in a production environment.
 
@@ -32,7 +32,7 @@ The flow of execution in an execution plan is from right to left, and top to bot
 
 :::image type="content" source="../media/module-55-optimize-queries-final-03.png" alt-text="Screenshot of a tooltip for the Clustered Index Scan operation on the StockItems table.":::
 
-The tooltip highlights the cost and estimates for the estimated plan, and for an actual plan, it includes comparisons to the actual rows and costs. Each operator also has properties that provide more details than the tooltip. By right-clicking on a specific operator, you can select the Properties option from the context menu to see the full property list. This option opens a separate Properties pane in SQL Server Management Studio, which by default is on the right side. Once the Properties pane is open, clicking on any operator populates the Properties list with details for that operator. Alternatively, you can open the Properties pane by clicking on View in the main SQL Server Management Studio menu and choosing Properties.
+The tooltip highlights the cost and estimates for the estimated plan, and for an actual plan, it includes comparisons to the actual rows and costs. Each operator also has properties that provide more details than the tooltip. By right-clicking on a specific operator, you can select the Properties option from the context menu to see the full property list. This option opens a separate Properties pane in SQL Server Management Studio, which by default is on the right side. Once the Properties pane is open, selecting any operator populates the **Properties** list with details for that operator. Alternatively, you can open the Properties pane by selecting on **View** in the main SQL Server Management Studio menu and choosing **Properties**.
 
 :::image type="content" source="../media/module-55-optimize-queries-final-04.png" alt-text="Screenshot of the properties for the operator.":::
 
