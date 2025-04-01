@@ -2,6 +2,7 @@
 uid: learn.wwl.manage-azure-pipeline-agents-pools.knowledge-check
 title: Module assessment
 metadata:
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
   ms.date: 05/07/2024
@@ -48,4 +49,4 @@ quiz:
       explanation: "Incorrect. Administrator."
     - content: "Contributor."
       isCorrect: false
-      explanation: "Incorrect. Administrator."
+      explanation: "Incorrect. Administrator."
