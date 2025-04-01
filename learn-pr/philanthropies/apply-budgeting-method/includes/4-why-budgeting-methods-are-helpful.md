@@ -6,7 +6,7 @@ Reflection Activity: Which method do you think would work best for you? Why?
 
 Ask Copilot Activities:
 
-### Additional Budgeting Methods
+### Additional budgeting methods
 
 1. Open Microsoft Copilot.
 1. Ask Copilot to explain additional budgeting methods by typing: "Can you explain budgeting methods like the 80/20 rule or line-item budgeting?"
@@ -19,7 +19,7 @@ Ask Copilot Activities:
 1. Write down or save your findings for future reference.
 1. Reflect on how using a budgeting method can help you better manage your money.
 
-### $100 Monthly Budget
+### $100 monthly budget
 
 1. Open Microsoft Copilot.
 1. Choose a budgeting method you want to use, such as zero-based budgeting, pay-yourself-first, the envelope system, or the 50/30/20 rule.

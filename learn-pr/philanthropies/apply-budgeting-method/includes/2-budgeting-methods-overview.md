@@ -1,7 +1,7 @@
-#### Zero-Based Budgeting
+#### Zero-Based budgeting
 - Every dollar you have is assigned a "job."
-- Benefits: Helps you stay in control of your money by ensuring' nothing is unplanned.
-- Example: If you have $20, you might assign $10 to savings, $5' to snacks, and $5 to activities.
+- Benefits: Helps you stay in control of your money by ensuring nothing is unplanned.
+- Example: If you have 20 dollars, you might assign 10 dollars to savings, 5 dollars to snacks, and 5 dollars to activities.
 
 `embed Zero-Based Budgeting graphic`
 
@@ -9,35 +9,35 @@ Ask Copilot Activity:
 
 1. Consider a career you would love to have in the future.
 1. Open Microsoft Copilot.
-1. Prompt Copilot for the average salary of that career by typing "What' is the average salary for a [insert dream job] in [your state]?"
+1. Prompt Copilot for the average salary of that career by typing "What is the average salary for a [insert dream job] in [your state]?"
 1. Review the salary information.
-   - Look at the yearly and monthly earnings'  Copilot provides.
-1. Prompt Copilot to create a zero-based budget by typing "Using' the average salary of a [dream job], can you create a zero-based budget' where every dollar is assigned to a category?"
+   - Look at the yearly and monthly earnings Copilot provides.
+1. Prompt Copilot to create a zero-based budget by typing "Using the average salary of a [dream job], can you create a zero-based budget where every dollar is assigned to a category?"
 1. Review the budget Copilot generates.
 1. Adjust the budget to fit your lifestyle goals.
-   - Ask Copilot: "What happens if I'  save more each month?" or "Can you adjust this budget'  to include student loan payments or extra savings?"
+   - Ask Copilot: "What happens if I save more each month?" or "Can you adjust this budget to include student loan payments or extra savings?"
 1. Write down or save your budget.
 
-#### Pay-Yourself-First Budgeting
+#### Pay-Yourself-First budgeting
 
 - Prioritize saving money before spending on anything else.
-- Benefits: Builds a habit of saving and ensures you focus on' future goals.
+- Benefits: Builds a habit of saving and ensures you focus on future goals.
 
 `embed Pay-Yourself-First Budgeting graphic`
 
 Reflection Activity: Why is saving first important?
 
-#### Envelope System Budgeting
+#### Envelope System budgeting
 
-- Use envelopes labeled with spending categories to visually' manage money.
-- Benefits: Helps limit overspending and makes budgeting' tangible.
+- Use envelopes labeled with spending categories to visually manage money.
+- Benefits: Helps limit overspending and makes budgeting tangible.
 
 `embed Envelope System Budgeting graphic`
 
 
-### Microsoft Designer Activity: AI-Powered Budgeting with Virtual Envelopes
+### Microsoft designer activity: AI-Powered Budgeting with Virtual Envelopes
 
-#### Instructions:
+#### Instructions
 
 1. **Open Microsoft Designer**
 
