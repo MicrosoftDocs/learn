@@ -40,5 +40,5 @@ quiz:
       explanation: Incorrect. Designer clothes are nice to have, but not a necessity.
     - content: Toys 
       isCorrect: false
-      explanation: Incorrect. Toys can be fun, but they are not essential for living.
+      explanation: Incorrect. Toys can be fun, but they aren't essential for living.
   
