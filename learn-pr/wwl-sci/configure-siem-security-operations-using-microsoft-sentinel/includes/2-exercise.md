@@ -8,4 +8,4 @@ In this exercise, you’ll learn how to create an Azure Log Analytics workspace 
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/APL-5001-configure-siem-security-operations-using-microsoft-sentinel/Instructions/Labs/LAB_01_create_microsoft_sentinel_workspace.html)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/configure-siem-security-operations-using-microsoft-sentinel/Instructions/Labs/LAB_01_create_microsoft_sentinel_workspace.html)

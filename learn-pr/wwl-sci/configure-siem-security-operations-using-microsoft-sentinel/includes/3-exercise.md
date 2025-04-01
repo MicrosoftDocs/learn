@@ -8,4 +8,4 @@ In this exercise, you’ll learn how to install Microsoft Sentinel Content Hub s
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/APL-5001-configure-siem-security-operations-using-microsoft-sentinel/Instructions/Labs/LAB_02_deploy_microsoft_sentinel_content_hub_solution.html)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/configure-siem-security-operations-using-microsoft-sentinel/Instructions/Labs/LAB_02_deploy_microsoft_sentinel_content_hub_solution.html)
