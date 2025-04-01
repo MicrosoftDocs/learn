@@ -123,27 +123,35 @@ Console.WriteLine(today.IsWeekend()); // Outputs: True
 > [!TIP]
 > Use extension methods to enhance enums without modifying their definition, making them more versatile and reusable.
 
-## Use object initializers with structs
+## Practical example: Using enums to manage order statuses
 
-Define a struct with properties to group related data together and make it easier to initialize and work with instances of the struct.
+Enums are often used in applications to represent predefined values. For example, in an e-commerce application, you can use an enum to manage order statuses:
 
 ```csharp
-public struct Point
+enum OrderStatus
 {
-    public int X { get; set; }
-    public int Y { get; set; }
+    Pending,
+    Shipped,
+    Delivered,
+    Cancelled
 }
+
+class Order
+{
+    public int OrderId { get; set; }
+    public OrderStatus Status { get; set; }
+
+    public void UpdateStatus(OrderStatus newStatus)
+    {
+        Status = newStatus;
+        Console.WriteLine($"Order {OrderId} status updated to {Status}");
+    }
+}
+
+var order = new Order { OrderId = 123, Status = OrderStatus.Pending };
+order.UpdateStatus(OrderStatus.Shipped);
 ```
 
-Using an object initializer, you can create and initialize a `Point` instance like this:
+This example demonstrates how to define an enum for order statuses, use it in a class, and update the status of an order. It helps beginners see how enums can be applied in a real-world scenario.
 
-```csharp
-var point = new Point { X = 10, Y = 20 };
-```
-
-*Code sample demonstrates how to use an object initializer to set property values when creating a struct instance.*
-
-> [!NOTE]
-> Object initializers make your code more concise and easier to read, especially when working with structs that have multiple properties.
-
-Enums in C# simplify code by allowing you to define a set of named constants, making it easier to represent and manage fixed values like statuses or categories while improving readability and maintainability.
+By using enums, you can replace numeric literals with meaningful names, making your code more intuitive and easier to maintain, while also enabling explicit conversions and validations to ensure safe usage of these constants in your projects.

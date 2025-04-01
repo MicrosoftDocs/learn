@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-policy.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: "Check your knowledge about Azure Policy."
   ms.date: 07/19/2024
   author: ricmmartins

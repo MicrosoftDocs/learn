@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.apply-networking-concepts-to-windows-containers.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 02/12/2024
   author: vrapolinario
