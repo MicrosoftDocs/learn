@@ -2,6 +2,7 @@
 uid: learn.wwl.manage-azure-resources-windows-powershell.knowledge-check
 title: Module assessment
 metadata:
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
   ms.date: 03/22/2024
@@ -38,4 +39,3 @@ quiz:
     - content: "**Set-AzContext**"
       isCorrect: false
       explanation: "Incorrect. You can create a standard, general-purpose storage account with locally redundant storage (LRS) replication by using **New-AzStorageAccount**"
-
