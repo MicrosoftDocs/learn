@@ -1,10 +1,10 @@
 
-Now it's time to validate your Microsoft Sentinel deployment and configure data connectors to collect security events. You'll also create a near-real-time (NRT) query rule and configure an Automation rule.
+Now it's time to validate your Microsoft Sentinel deployment and configure data connectors to collect security events. You also create a near-real-time (NRT) query rule and configure an Automation rule.
 
-In this exercise, you’ll learn how to configure a data connector Data Collection Rule (DCR), detect threats with near-real-time (NRT) analytic rules, and configure automation in Microsoft Sentinel.
+In this exercise, you learn how to configure a data connector Data Collection Rule (DCR), detect threats with near-real-time (NRT) analytic rules, and configure automation in Microsoft Sentinel.
 
 > [!NOTE]
-> To complete this exercise, you will need to have completed the previous two exercises and have an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true).
+> To complete this exercise, you need to complete the previous two exercises and have an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true).
 
 Launch the exercise and follow the instructions.
 
