@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.configure-dependabot-security-updates-on-github-repo.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check questions for understanding and managing dependencies in GitHub.
   ms.date: 04/25/2024
   author: a-a-ron

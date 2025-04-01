@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-dashboards-azure-data-explorer.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check: create dashboards in Azure Data Explorer."
   ms.date: 01/19/2024
   author: shsagir
