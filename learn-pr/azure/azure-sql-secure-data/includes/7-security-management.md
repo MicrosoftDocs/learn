@@ -68,7 +68,7 @@ Complete the following steps to set up a Log Analytics workspace:
 
     It might take a few minutes for the configuration to process.
 
-You've now enabled auditing for a storage account and an Azure Log Analytics workspace. Later, you dive deeper into the auditing capabilities in Azure SQL. You'll see how to analyze the audit logs to view all the changes you made throughout the module, as well as some other interesting use cases.  
+Now that you completed these steps, auditing is enabled for a storage account and an Azure Log Analytics workspace. Later, you dive deeper into the auditing capabilities in Azure SQL, and see how to analyze the audit logs. Allowing you to view all the changes you made throughout the module, and some other interesting use cases.  
 
 ## Ledger for Azure SQL Database
 
@@ -87,7 +87,7 @@ Both updatable ledger tables and append-only ledger tables provide tamper-eviden
 
 In the exercise to create the Azure SQL Database, we added a database called `myLedgerDatabase` and created a table called `Account.Balance`. In this exercise, we're going to insert data, make updates to the data, and query the history table and ledger views to see the tracking that's taking place and the relationship between the tables.
 
-1. Open SSMS and connect to your Azure SQL Database logical server.
+1. Open SQL Server Management Studio (SSMS) and connect to your Azure SQL Database logical server.
 1. Right-click the `myLedgerDatabase` database, then select **New Query**.
 
 1. Insert the name `Nick Jones` as a new customer with an opening balance of $50.
@@ -122,8 +122,8 @@ In the exercise to create the Azure SQL Database, we added a database called `my
 
    In the results window, you first see the values inserted by your T-SQL commands, along with the system metadata that's used for data lineage purposes.
 
-   - The `ledger_start_transaction_id` column notes the unique transaction ID associated with the transaction that inserted the data. Because `John`, `Joe`, and `Mary` were inserted by using the same transaction, they share the same transaction ID.
-   - The `ledger_start_sequence_number` column notes the order by which values were inserted by the transaction.
+   - The `ledger_start_transaction_id` column notes the unique transaction ID associated with the transaction that inserted the data. `John`, `Joe`, and `Mary` share the same transaction ID because they're inserted using the same transaction.
+   - The `ledger_start_sequence_number` column notes the order in which the transaction inserted the values.
 
 1. Update `Nick`'s balance from `50` to `100`.
 
@@ -132,7 +132,7 @@ In the exercise to create the Azure SQL Database, we added a database called `my
    WHERE [CustomerID] = 1;
    ```
 
-1. View the `[Account].[Balance]` ledger view, along with the transaction ledger system view to identify users that made the changes. Select **Execute** to run the query.
+1. To identify the users that made changes, view the `[Account].[Balance]` ledger view, along with the transaction ledger system view. Select **Execute** to run the query.
 
     ```sql
   	SELECT
@@ -188,11 +188,11 @@ Microsoft Defender for Cloud is a unified package for advanced SQL security capa
 
 #### Vulnerability Assessment
 
-At the highest level, SQL Vulnerability Assessment is a scanning service that provides visibility into your security state and provides actionable steps to address any potential concerns. When you configure periodic recurring scans, you're enabling the service to scan your databases every seven days and check for any vulnerabilities. You can then choose to send those reports to the admins, subscription owners, or anyone else who might need to be notified of changes. For this service to operate, you have to specify a storage account where the results will be stored.
+At the highest level, SQL Vulnerability Assessment is a scanning service that provides visibility into your security state and provides actionable steps to address any potential concerns. When you configure periodic recurring scans, you're enabling the service to scan your databases every seven days and check for any vulnerabilities. You can then choose to send those reports to the admins, subscription owners, or anyone else who might need to be notified of changes. For this service to operate, you have to specify a storage account where the results are stored.
 
 #### Advanced Threat Protection
 
-With Advanced Threat Protection, you can detect and respond to potential threats as they occur by receiving security alerts on anomalous activities. Advanced Threat Protection applies advanced monitoring and machine-learning technologies to detect whether any of the following threats have occurred:
+With Advanced Threat Protection, you can detect and respond to potential threats as they occur by receiving security alerts on anomalous activities. Advanced Threat Protection applies advanced monitoring and machine-learning technologies to detect whether any of the following threats occurred:
 
 - SQL injection
 - SQL injection vulnerability

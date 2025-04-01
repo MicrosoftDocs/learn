@@ -43,5 +43,5 @@ quiz:
         explanation: "This operator is supported, but so are other options."
       - content: "All of these operators."
         isCorrect: true
-        explanation: "`JOIN`, `GROUP BY`, and `DISTINCT` operators are supported by deterministic encryption."
+        explanation: "Deterministic encryption (Always Encrypted), supports `JOIN`, `GROUP BY`, and `DISTINCT`."
 

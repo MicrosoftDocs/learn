@@ -83,7 +83,7 @@ Next, you simulate someone querying the classified columns and explore Dynamic D
     REVERT;
     ```
 
-    The result should now display the first 10 names, but with masking applied. Bob hasn't been granted access to the unmasked form of this data.  
+    The result should now display the first 10 names, but with masking applied. Bob isn't granted access to the unmasked form of this data.
 
     :::image type="content" source="../media/9-names-2.png" alt-text="Screenshot of SQL query results with mask.":::  
 
@@ -196,14 +196,14 @@ Analyzing your audit logs depends on your preference. In this section, you're ex
 
    You might need to wait three to five minutes and select **Refresh** for items to show up here.  
 
-    You can use this detailed information to find out:  
+   You can use this detailed information to answer questions such as:  
 
-    - How many queries are accessing sensitive data.
-    - Which types and sensitivities of data are being accessed.
-    - Which principals are accessing sensitive data.
-    - Which IPs are accessing sensitive data.  
+    - How many queries are accessing sensitive data?
+    - Which types and sensitivities of data are being accessed?
+    - Which principals are accessing sensitive data?
+    - Which IPs are accessing sensitive data?  
 
-    Review what's available here, and how you can audit usage with this tool. You can even select each of these and see the related logs in Log Analytics.  
+    Review what's available here, and how you can audit usage with this tool. You can even select each of these results and see the related logs in Log Analytics.  
 
 1. When you're done, close the **Azure SQL - Access to Sensitive Data** pane by selecting the **X** at the upper right.  
 

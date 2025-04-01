@@ -1,4 +1,4 @@
-Your network and identity access are configured and secure, let's consider how to protect your data, whether it's at rest, in motion, or being viewed by users and admins.
+Your network and identity access are configured and secure. Now, let's consider how to protect your data when it's at rest, in motion, or viewed by users and admins.
 
 ## Data encryption
 
@@ -27,7 +27,7 @@ You can alternately use BYOK and take advantage of an Azure key vault. The advan
 
 You can also take advantage of using a [user-assigned managed identity (UMI)](/azure/azure-sql/database/authentication-azure-ad-user-assigned-managed-identity) with customer-managed keys for TDE, which:
 
-- Enables the ability to preauthorize key vault access for Azure SQL logical servers by creating a user-assigned managed identity and granting it access to key vault, even before the server or database is created.
+- Enables the ability to preauthorize key vault access for Azure SQL logical servers. It creates a user-assigned managed identity and grants it access to key vault, even before the server or database is created.
 - Allows creation of an Azure SQL logical server with TDE and customer-managed key (CMK) enabled.
 - Enables the same user-assigned managed identity to be assigned to multiple servers, eliminating the need to individually turn on system-assigned managed identity for each Azure SQL logical server and providing it access to key vault.
 - Provides the capability to enforce CMK at server creation time with an available built-in Azure policy.

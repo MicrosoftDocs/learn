@@ -1,6 +1,6 @@
 In this module and throughout the exercises, you got hands-on with many security capabilities and scenarios that are enabled for Azure SQL.
 
-When you're securing Azure SQL, you should first consider your network and identity access, allowing only connections and access from the right places, people, and applications, depending on your organization and infrastructure. Additionally, you can encrypt and mask sensitive data and apply security management tools, such as those available in the Advanced Data Security suite.
+When you're securing Azure SQL, you should first consider your network and identity access. You want to only allow connections and access from the right places, people, and applications, depending on your organization and infrastructure. Additionally, you can encrypt and mask sensitive data and apply security management tools, such as those available in the Advanced Data Security suite.
 
 In the next module in this learning path, you take a look at the performance capabilities and tasks that can help you monitor and tune performance for Azure SQL as it compares to SQL Server. You also learn new capabilities in Azure SQL that can help you automate and accelerate performance.
 
@@ -18,7 +18,7 @@ For more information about Private Link, see [Azure Private Link for Azure SQL D
 
 For more information about the subnet requirements for Azure SQL Managed Instance, see [Create a virtual network for Azure SQL Managed Instance](/azure/azure-sql/managed-instance/virtual-network-subnet-create-arm-template?azure-portal=true).  
 
-Your networking environment and configuration can get complex quickly. You'll want to partner with your networking team to ensure that you have the most secure, functional network. A few handy resources include:  
+Your networking environment and configuration can get complex quickly. You should partner with your networking team to ensure that you have the most secure, functional network. A few handy resources include:  
 
 * [Azure SQL Database and Azure Synapse Analytics network access controls](/azure/azure-sql/database/network-access-controls-overview)
 * [Connect your application to Azure SQL Managed Instance](/azure/azure-sql/managed-instance/connect-application-instance)
@@ -52,4 +52,4 @@ For more information about some of the features discussed for managing security,
 
 For information about how to query various [Azure Monitor logs](/azure/azure-monitor/log-query/log-query-overview?azure-portal=true) with Kusto Query Language, see the [Overview of Kusto queries](/azure/data-explorer/kusto/query/).
 
-To learn more about Microsoft Defender for Cloud and how you can use it to monitor and manage your entire Azure estate, see [What is Microsoft Defender for Cloud?](/azure/defender-for-cloud/defender-for-cloud-introduction).
+To learn more how you can use Microsoft Defender for Cloud to monitor and manage your entire Azure estate, see [What is Microsoft Defender for Cloud?](/azure/defender-for-cloud/defender-for-cloud-introduction).
