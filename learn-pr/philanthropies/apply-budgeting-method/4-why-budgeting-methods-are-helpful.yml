@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.apply-budgeting-method.why-budgeting-methods-are-helpful
+title: Why Budgeting Methods are Helpful
+metadata:
+  title: Why Budgeting Methods are Helpful
+  description: This content is a part of the Apply a budgeting method to manage money effectively.
+  ms.date: 04/01/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-why-budgeting-methods-are-helpful.md)]

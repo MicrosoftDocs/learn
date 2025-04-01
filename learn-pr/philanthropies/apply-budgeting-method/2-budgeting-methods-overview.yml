@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.apply-budgeting-method.budgeting-methods-overview
+title: Budgeting Methods Overview
+metadata:
+  title: Budgeting Methods Overview
+  description: This content is a part of the Apply a budgeting method to manage money effectively.
+  ms.date: 04/01/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-budgeting-methods-overview.md)]
