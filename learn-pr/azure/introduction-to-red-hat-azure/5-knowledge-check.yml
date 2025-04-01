@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.introduction-to-red-hat-azure.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: A multiple-choice knowledge check covering the module contents.
   ms.date: 11/07/2023
   author: yenchiho

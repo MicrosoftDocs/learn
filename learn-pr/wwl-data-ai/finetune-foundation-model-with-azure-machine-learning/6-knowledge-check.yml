@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.finetune-foundation-model-with-azure-machine-learning.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check about fine-tuning a foundation model."
   ms.date: 07/25/2024
   author: madiepev
