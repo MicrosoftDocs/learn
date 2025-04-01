@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ### YamlMime:ModuleUnit
 uid: learn.control-authentication-with-apim.6-summary
 metadata:
@@ -15,19 +14,3 @@ durationInMinutes: 5
 content: |
   [!include[](includes/6-summary.md)]
 
-=======
-### YamlMime:ModuleUnit
-uid: learn.control-authentication-with-apim.6-summary
-metadata:
-  title: Summary
-  description: In this unit, you review what you have learned about API Management and authentication.
-  ms.date: 06/14/2023
-  author: dlepow
-  ms.author: danlep
-  ms.topic: unit
-title: Summary
-durationInMinutes: 5
-content: |
-  [!include[](includes/6-summary.md)]
-
->>>>>>> 25fae832091d7332a54f06b8d85e8ef0409137f1
