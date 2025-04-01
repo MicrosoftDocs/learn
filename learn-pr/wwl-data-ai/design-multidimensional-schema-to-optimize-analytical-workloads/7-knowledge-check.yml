@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 04/11/2024
   author: wwlpublish
@@ -81,4 +79,4 @@ quiz:
       explanation: "Incorrect. The `NTILE` function returns the percentile for a row in a partition based on a numeric ranking."
     - content: "`APPROX_COUNT_DISTINCT`"
       isCorrect: true
-      explanation: "Correct. `APPROX_COUNT_DISTINCT` returns an approximate count within 2% of the actual count while optimizing for minimal response time."
+      explanation: "Correct. `APPROX_COUNT_DISTINCT` returns an approximate count within 2% of the actual count while optimizing for minimal response time."

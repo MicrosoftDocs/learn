@@ -2,8 +2,6 @@
 uid: learn.wwl.build-copilot-ai-studio.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary of key learning points on building a custom agent with Azure AI Foundry.
   author: madiepev
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
-
+

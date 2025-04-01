@@ -2,8 +2,6 @@
 uid: learn.wwl.understand-concurrency-postgresql.understand-multi-version-concurrency-control-snapshots
 title: Understand multi-version concurrency control (MVCC) and snapshots
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand multi-version concurrency control (MVCC) and snapshots
   description: "Understand multi-version concurrency control (MVCC) and snapshots."
   ms.date: 05/09/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 2
 content: |
-  [!include[](includes/2-understand-multi-version-concurrency-control-snapshots.md)]
+  [!include[](includes/2-understand-multi-version-concurrency-control-snapshots.md)]

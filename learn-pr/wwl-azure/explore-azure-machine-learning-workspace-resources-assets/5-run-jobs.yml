@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-azure-machine-learning-workspace-resources-assets.run-jobs
 title: Train models in the workspace
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Train models in the workspace
   description: Train models in the workspace
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/5-run-jobs.md)]
-
+

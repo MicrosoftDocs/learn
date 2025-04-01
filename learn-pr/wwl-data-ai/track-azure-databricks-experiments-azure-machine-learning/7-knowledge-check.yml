@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.track-azure-databricks-experiments-azure-machine-learning.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 03/22/2023
   author: wwlpublish
@@ -49,4 +47,4 @@ quiz:
       explanation: "That's correct. After defining the configuration, ComputeTarget should be used to create the compute."
     - content: "DatabricksCompute"
       isCorrect: false
-      explanation: "That's incorrect. DatabricksCompute is used to manage a Databricks compute target, not create it."
+      explanation: "That's incorrect. DatabricksCompute is used to manage a Databricks compute target, not create it."

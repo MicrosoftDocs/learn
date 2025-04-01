@@ -3,8 +3,6 @@ uid: learn.azure.child-extension-bicep-templates.exercise-deploy-extension-exist
 title: Exercise - Deploy extension resources and use existing resources
 sandbox: true
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Refer to existing resources
   description: Learn how to deploy extension resources and refer to existing resources within your Bicep template.
@@ -18,4 +16,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/7-exercise-deploy-extension-existing-resources.md)]
-
+

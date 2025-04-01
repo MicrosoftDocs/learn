@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.align-requirements-in-azure.7-knowledge-check
-title: Knowledge check - IaaS, PaaS & SaaS
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check - IaaS, PaaS, and SaaS
+  title: Module assessment
   description: Check what you learned about IaaS, PaaS, and SaaS.
   ms.date: 12/06/2024
   author: rmcmurray
@@ -63,4 +61,4 @@ quiz:
 ###    - content: SaaS
 ###      isCorrect: false
 ###      explanation: "VPN is an IaaS resource so this would be considered an IaaS solution."
-
+

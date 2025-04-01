@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-business-continuity-disaster-recovery-backup.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 06/30/2022
   author: wwlpublish
@@ -39,4 +37,4 @@ quiz:
       explanation: "That’s incorrect. OS backup scripts use the Relax-and-Recover (ReaR) software, which is pre-installed in the server. ReaR packages are pre-installed in the Type II SKUs of HANA Large Instances, and no action is needed from you."
     - content: "Disaster recovery failover"
       isCorrect: false
-      explanation: "That’s incorrect. OS backup scripts use the Relax-and-Recover (ReaR) software, which is pre-installed in the server. ReaR packages are pre-installed in the Type II SKUs of HANA Large Instances, and no action is needed from you."
+      explanation: "That’s incorrect. OS backup scripts use the Relax-and-Recover (ReaR) software, which is pre-installed in the server. ReaR packages are pre-installed in the Type II SKUs of HANA Large Instances, and no action is needed from you."

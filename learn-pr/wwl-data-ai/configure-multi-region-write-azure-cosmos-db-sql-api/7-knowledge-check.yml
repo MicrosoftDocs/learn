@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-multi-region-write-azure-cosmos-db-sql-api.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 10/18/2022
   author: wwlpublish
@@ -36,4 +34,4 @@ quiz:
       explanation: "Correct. If you create a custom conflict resolution policy without a stored procedure, conflicts will be written to the conflicts feed."
     - content: "Both a custom conflict resolution policy and a stored procedure"
       isCorrect: false
-      explanation: "Incorrect. If the stored procedure handles a conflict, then it will not be written to the conflicts feed."
+      explanation: "Incorrect. If the stored procedure handles a conflict, then it will not be written to the conflicts feed."

@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-azure-synapse-studio.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 08/18/2022
   author: wwlpublish
@@ -47,4 +45,4 @@ quiz:
       explanation: "Correct. You can grant access to Synapse workspace in the Manage hub."
     - content: "Integrate hub."
       isCorrect: false
-      explanation: "Incorrect. You cannot grant access to Synapse workspace in the integrate hub."
+      explanation: "Incorrect. You cannot grant access to Synapse workspace in the integrate hub."

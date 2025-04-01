@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.custom-name-entity-recognition
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Custom named entity recognition
   description: Custom named entity recognition
   author: wwlpublish
@@ -41,4 +39,4 @@ units:
 - learn.wwl.custom-name-entity-recognition.summary
 badge:
   uid: learn.wwl.custom-name-entity-recognition.badge
-
+

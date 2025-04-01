@@ -2,16 +2,14 @@
 uid: learn.wwl.evaluate-performance-improvements.understand-query-hints
 title: Understand query hints
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand query hints
   description: "Understand query hints"
-  ms.date: 07/13/2022
-  author: wwlpublish
+  ms.date: 03/31/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 5
+durationInMinutes: 4
 content: |
   [!include[](includes/4-understand-query-hints.md)]

@@ -10,7 +10,7 @@ Azure Bastion provides RDP and SSH connectivity to all VMs on same virtual netwo
 
 ## Connect to a VM by using Azure Bastion
 
-After you deploy Azure Bastion, on the VM overview page, select **Connect** > **Bastion** > **Use Bastion**. Then, enter the sign-in credentials for the VM to connect.
+After you deploy Azure Bastion, on the VM overview page, select **Connect** > **Connect via Bastion**. Then, enter the sign-in credentials for the VM to connect.
 
 :::image type="content" source="../media/2-connect-bastion-enter-credentials.png" alt-text="Screenshot of the Azure Bastion page that prompts you to enter username and password for the VM.":::
 
@@ -38,7 +38,7 @@ The following table highlights some of the user-experience features that Azure B
 
 |Feature  |Supports  |
 |---------|---------|
-|Browsers     | - Windows: Microsoft Edge browser, Microsoft Edge Chromium, or Google Chrome</br>     - Apple Mac: Google Chrome browser or Microsoft Edge Chromium      |
+|Browsers     | - Windows: Microsoft Edge browser, Microsoft Edge Chromium, or Google Chrome</br>     - Mac: Google Chrome browser or Microsoft Edge Chromium      |
 |Keyboard layout in the VM    | - en-us-qwerty</br>- en-gb-qwerty</br>- de-ch-qwertz</br>- de-de-qwertz</br>- fr-be-azerty</br>- fr-fr-azerty</br>- fr-ch-qwertz</br>- hu-hu-qwertz</br>- it-it-qwerty</br>- ja-jp-qwerty</br>- pt-br-qwerty</br>- es-es-qwerty</br>- es-latam-qwerty</br>- sv-se-qwerty</br>- tr-tr-qwerty</br>          |
 |Functions within VM   | - Text copy and paste</br>- Features like file copy aren't currently supported        |
 

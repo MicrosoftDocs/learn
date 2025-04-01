@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.research.introduction-to-project-farmvibes-ai.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: A unit in the Intro to project FarmVibes.AI module. 
   ms.date: 7/16/2024
   author: RiyazPishori
@@ -90,4 +88,4 @@ quiz:
       explanation: "The FarmVibes.AI Client is central to the ISV experience, providing a comprehensive set of interface to interact with the platform's data and analytical capabilities."
     - content: "It is designed exclusively for administrative tasks, such as user account management and billing, without involving any analytical functions."
       isCorrect: false
-      explanation: "While administrative functionalities might be part of the Client's capabilities, its primary focus is on facilitating data analysis, workflow management, and result visualization for users."
+      explanation: "While administrative functionalities might be part of the Client's capabilities, its primary focus is on facilitating data analysis, workflow management, and result visualization for users."

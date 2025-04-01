@@ -2,8 +2,6 @@
 uid: learn.azure-container-registry.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: Azure Container Registry knowledge check.
   ms.date: 01/07/2025
@@ -56,4 +54,4 @@ quiz:
     - content: "Place a container registry in every Azure region."
       isCorrect: false
       explanation: "This increases costs and doesn't improve performance."
-
+

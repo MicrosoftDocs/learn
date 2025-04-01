@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-identity-projects-pipelines-agents.configure-agents-for-projects
 title: Configure agents for projects
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure agents for projects
   description: "Configure agents for projects."
   ms.date: 1/25/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-configure-agents-for-projects.md)]
+  [!include[](includes/3-configure-agents-for-projects.md)]

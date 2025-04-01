@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.philanthropies.exploring-artificial-intelligence-in-action.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: This module explores various subsets within artificial intelligence (AI) such as natural language processing (NLP), computer vision, and recommendation systems and discuss the integration of AI-powered tools into a learning environment.
   author: yoosunee
   ms.author: anruss

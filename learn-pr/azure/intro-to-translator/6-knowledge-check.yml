@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-translator.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Multiple-choice questions
   author: laujan
   ms.author: lajanuar
@@ -51,4 +49,4 @@ quiz:
     - content: Custom models can be tuned to understand the emotion of the document, allowing a sentiment score to provide more data for the end user.
       isCorrect: false
       explanation: Incorrect. Custom models don't offer a sentiment score.
-
+

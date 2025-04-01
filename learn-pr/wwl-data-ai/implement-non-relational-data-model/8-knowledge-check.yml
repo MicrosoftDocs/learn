@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-non-relational-data-model.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 04/16/2024
   author: wwlpublish
@@ -48,4 +46,4 @@ quiz:
       explanation: "That's correct. The main goal of your application is usually to process the data as soon as possible, so we usually design our NoSQL databases to reduce the number of requests the app does to read and/or write the data."
     - content: "Understanding the access pattern of your applications wouldn't help you identify the correct schema of your data."
       isCorrect: false
-      explanation: "That's incorrect. By understanding the access patterns, it also allows you to understand the way your documents and containers can be design to better improve the performances."
+      explanation: "That's incorrect. By understanding the access patterns, it also allows you to understand the way your documents and containers can be design to better improve the performances."

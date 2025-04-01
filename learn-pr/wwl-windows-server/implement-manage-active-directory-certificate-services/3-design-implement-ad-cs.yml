@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-manage-active-directory-certificate-services.design-implement-ad-cs
 title: Design and implement AD CS
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design and implement AD CS
   description: "Design and implement AD CS"
   ms.date: 06/11/2024
@@ -26,4 +24,4 @@ quiz:
       explanation: "That's incorrect. You can create a private key during the installation."
     - content: "When installing Enterprise CA, you have to include Certificate Enrollment Web Service in the installation."
       isCorrect: false
-      explanation: "That's incorrect. Certificate Enrollment Web Service is an optional CA component."
+      explanation: "That's incorrect. Certificate Enrollment Web Service is an optional CA component."

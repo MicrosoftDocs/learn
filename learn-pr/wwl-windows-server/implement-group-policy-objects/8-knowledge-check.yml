@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-group-policy-objects.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 04/17/2024
   author: wwlpublish
@@ -47,4 +45,4 @@ quiz:
       explanation: "That's incorrect. Although a Central Store makes managing Administrative Templates easier, Adatum administrators still need updated template files."
     - content: "Download and install new administrative template files and then configure the desired settings in the Administrative Templates node in the appropriate GPO."
       isCorrect: true
-      explanation: "That's correct. You must update the .admx and .adml files together."
+      explanation: "That's correct. You must update the .admx and .adml files together."

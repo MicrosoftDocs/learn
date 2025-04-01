@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-vcore-based-azure-cosmos-db-mongodb-cluster.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 11/24/2024
   author: wwlpublish
@@ -61,4 +59,4 @@ quiz:
     - content: "To dynamically scale database resources based on load"
       isCorrect: false
       explanation: "Incorrect. Azure Storage accounts are used for data retention, not for dynamically scaling resources."
-
+

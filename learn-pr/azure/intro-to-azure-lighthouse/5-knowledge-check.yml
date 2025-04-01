@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-lighthouse.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Check what you learned about Azure Lighthouse.
   ms.date: 07/24/2024
   author: JnHs
@@ -48,4 +46,4 @@ quiz:
       explanation: Incorrect. Azure Lighthouse is free to use, as long as you have an existing Azure subscription.
     - content: Costs are based on the number of marketplace offers and Azure Resource Manager Templates used.
       isCorrect: false
-      explanation: Incorrect. Azure Lighthouse is free to use, as long as you have an existing Azure subscription.
+      explanation: Incorrect. Azure Lighthouse is free to use, as long as you have an existing Azure subscription.

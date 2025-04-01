@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-monitoring-strategy-on-azure.3-azure-monitoring-options
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Monitoring options in Azure
   description: Explore the monitoring options available in Azure.
   ms.date: 01/22/2025
@@ -38,4 +36,4 @@ quiz:
     - content: Azure Event Hubs
       isCorrect: false
       explanation: You can use Azure Event Hubs to export Azure Monitor log data, but Event Hubs isn't involved in logging the data.
-
+

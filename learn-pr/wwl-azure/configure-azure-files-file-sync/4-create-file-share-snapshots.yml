@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-azure-files-file-sync.create-file-share-snapshots
 title: Create file share snapshots
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create file share snapshots
   description: "Create file share snapshots"
   ms.date: 01/10/2025

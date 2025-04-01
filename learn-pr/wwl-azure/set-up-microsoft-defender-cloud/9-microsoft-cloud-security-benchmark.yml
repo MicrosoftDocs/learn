@@ -2,8 +2,6 @@
 uid: learn.wwl.set-up-microsoft-defender-cloud.microsoft-cloud-security-benchmark
 title: Microsoft cloud security benchmark
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Microsoft cloud security benchmark
   description: "Microsoft cloud security benchmark"
   ms.date: 04/24/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/9-microsoft-cloud-security-benchmark.md)]
+  [!include[](includes/9-microsoft-cloud-security-benchmark.md)]

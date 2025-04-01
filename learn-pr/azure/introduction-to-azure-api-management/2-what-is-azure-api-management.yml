@@ -2,8 +2,6 @@
 uid: learn.azure.introduction-to-azure-api-management.what-is-azure-api-management
 title: What is Azure API Management?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: What is Azure API Management?
   description: Learn the basic features and concepts of Azure API Management
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/2-what-is-azure-api-management.md)]
-
+

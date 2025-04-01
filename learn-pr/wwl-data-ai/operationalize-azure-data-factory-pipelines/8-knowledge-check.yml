@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.operationalize-your-azure-data-factory-pipelines.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 05/16/2022
   author: wwlpublish
@@ -47,4 +45,4 @@ quiz:
       explanation: "Incorrect. Severity is a mandatory field in the Alert window that enables you to assign the severity level of the alert being defined."
     - content: "Add criteria."
       isCorrect: true
-      explanation: "Correct. The add criteria feature enables you to determine how an alert is fired"
+      explanation: "Correct. The add criteria feature enables you to determine how an alert is fired"

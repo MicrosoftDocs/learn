@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Exercise - Create subscriptions in Azure API Management
   description: In this unit, you create an API and add it to an instance of API Management. You use a subscription key to secure access to the API.
-  ms.date: 06/14/2023
+  ms.date: 03/26/2025
   author: dlepow
   ms.author: danlep
   ms.topic: unit

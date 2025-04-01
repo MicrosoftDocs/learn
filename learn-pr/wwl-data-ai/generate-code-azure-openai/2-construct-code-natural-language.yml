@@ -2,8 +2,6 @@
 uid: learn.wwl.generate-code-azure-openai.construct-code-natural-language
 title: Construct code from natural language
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Construct code from natural language
   description: Understand how to use the Azure OpenAI Service to generate and improve code using natural language.
   author: ivorb
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/2-construct-code-natural-language.md)]
-
+

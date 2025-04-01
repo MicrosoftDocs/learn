@@ -2,8 +2,6 @@
 uid: learn.wwl.run-azure-databricks-notebooks-azure-data-factory.create-linked-service-for
 title: Create a linked service for Azure Databricks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create a linked service for Azure Databricks
   description: "Create a linked service for Azure Databricks"
   ms.date: 08/29/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/03-linked-service.md)]
+  [!include[](includes/03-linked-service.md)]

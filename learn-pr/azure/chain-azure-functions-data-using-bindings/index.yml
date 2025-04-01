@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.chain-azure-functions-data-using-input-output-bindings
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Chain Azure Functions together by using input and output bindings
   description: In this module, we learn how to integrate your Azure Function with various data sources by using bindings.
   ms.date: 06/06/2024
@@ -45,4 +43,4 @@ units:
 - learn.chain-azure-functions-data-using-input-output-bindings.8-summary
 badge:
   uid: learn.chain-azure-functions-data-using-input-output-bindings.badge
-
+

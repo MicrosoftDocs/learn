@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.multistage-reasoning-azure-databricks.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 03/20/2025
   author: wwlpublish
@@ -48,4 +46,4 @@ quiz:
     - content: "To execute logical operations like AND, OR, and NOT."
       isCorrect: false
       explanation: "Incorrect. The 'retriever' isn't used to execute logical operations like AND, OR and NOT."
-
+

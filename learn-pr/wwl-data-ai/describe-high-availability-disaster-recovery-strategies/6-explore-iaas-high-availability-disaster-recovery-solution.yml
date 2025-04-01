@@ -1,17 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-high-availability-disaster-recovery-strategies.explore-iaas-ha-dr-solution
-title: Explore an IaaS high availability and disaster recovery solution
+title: Explore high availability and disaster recovery solution for IaaS
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Explore an IaaS high availability and disaster recovery solution
-  description: "Explore an IaaS high availability and disaster recovery solution"
-  ms.date: 06/21/2023
-  author: wwlpublish
+  title: Explore high availability and disaster recovery solution for IaaS
+  description: "Explore high availability and disaster recovery solution for IaaS"
+  ms.date: 03/27/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 11
 content: |
-  [!include[](includes/6-explore-iaas-high-availability-disaster-recovery-solution.md)]
+  [!include[](includes/6-explore-iaas-high-availability-disaster-recovery-solution.md)]

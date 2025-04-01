@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Handle events with Azure Functions and Azure Cosmos DB for NoSQL change feed
   description: "Use Azure Functions bindings to integrate a function with Azure Cosmos DB for NoSQL."
   ms.date: 10/18/2022
@@ -34,4 +32,4 @@ units:
 - learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed.knowledge-check
 - learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed.summary
 badge:
-  uid: learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed.badge
+  uid: learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed.badge

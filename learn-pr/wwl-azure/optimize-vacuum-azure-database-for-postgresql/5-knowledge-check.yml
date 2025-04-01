@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.optimize-vacuum-azure-database-for-postgresql.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 10/05/2022
   author: wwlpublish
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. This parameter will increase the memory that is used by each autovacuum process and shouldn't be increased for an annual update."
     - content: "Disable AUTOVACUUM and manually run VACUUM."
       isCorrect: false
-      explanation: "Incorrect. Autovacuum shouldn't be disabled. You can run VACUUM with Autovacuum enabled."
+      explanation: "Incorrect. Autovacuum shouldn't be disabled. You can run VACUUM with Autovacuum enabled."

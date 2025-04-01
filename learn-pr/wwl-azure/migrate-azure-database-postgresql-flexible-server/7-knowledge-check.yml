@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.migrate-azure-database-postgresql-flexible-server.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 05/10/2024
   author: wwlpublish
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. This is used to export server config and databases to a file."
     - content: "Azure Data Studio with Azure PostgreSQL migration extension."
       isCorrect: true
-      explanation: "Correct. There's a dedicated extension in ADS, which allows you to generate a rich report on potential migration blockers for PostgreSQL databases."
+      explanation: "Correct. There's a dedicated extension in ADS, which allows you to generate a rich report on potential migration blockers for PostgreSQL databases."

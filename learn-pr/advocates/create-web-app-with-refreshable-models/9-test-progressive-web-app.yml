@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.create-web-app-with-refreshable-models.9-test-progressive-web-app
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Test your Progressive Web App
   description: Test your Progressive Web App
   author: GitHubber17
@@ -16,4 +14,4 @@ title: Test your Progressive Web App
 durationInMinutes: 5
 content: |
   [!include[](includes/9-test-progressive-web-app.md)]
-
+

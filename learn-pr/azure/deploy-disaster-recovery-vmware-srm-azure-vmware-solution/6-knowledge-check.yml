@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-disaster-recovery-vmware-srm-azure-vmware-solution.6-knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: Knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: This is a knowledge check unit.
   ms.date: 07/14/2023
   author: rmcmurray
@@ -49,4 +47,4 @@ quiz:
       explanation: "Incorrect. First, you should install VMware Site Recovery and vSphere Replication appliance."
 content: |
   [!include[](includes/6-knowledge-check.md)]
-
+

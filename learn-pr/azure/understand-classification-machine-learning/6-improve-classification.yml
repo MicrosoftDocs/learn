@@ -2,8 +2,6 @@
 uid: learn.machinelearning.understand-classification-machine-learning.improve-classification
 title: Improving classification models
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Improving classification models
   description: Conceptual unit about improving classification models in machine learning
   ms.date: 07/20/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/6-improve-classification.md)] 
+  [!include[](includes/6-improve-classification.md)] 

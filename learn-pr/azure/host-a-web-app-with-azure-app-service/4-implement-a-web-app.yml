@@ -2,8 +2,6 @@
 uid: learn.host-a-web-application-with-azure-web-apps.4-exercise-implement-a-web-application
 title: Prepare the web application code
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Prepare the web application code
   description: Prepare the web application code
   ms.date: 10/3/2024
@@ -17,4 +15,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/4-implement-a-web-app.md)]
-
+

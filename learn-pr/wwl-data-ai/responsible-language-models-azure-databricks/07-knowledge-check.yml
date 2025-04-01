@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.responsible-language-models-azure-databricks.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 03/20/2025
   author: wwlpublish
@@ -47,4 +45,4 @@ quiz:
       explanation: "Correct. Hallucinations in LLMs refer to instances where the model generates outputs that aren't based on real data or facts."
     - content: "Deploy the model in production without any safeguards."
       isCorrect: false
-      explanation: "Incorrect. Deploying the model in production without any safeguards isn't the recommended approach in handling them in LLMs when using Azure Databricks."
+      explanation: "Incorrect. Deploying the model in production without any safeguards isn't the recommended approach in handling them in LLMs when using Azure Databricks."

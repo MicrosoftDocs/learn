@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-authorization-microsoft-entra-id.enable-microsoft-entra-permissions-management-your-organization
 title: Implement and manage Microsoft Entra Permissions Management
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement and manage Microsoft Entra Permissions Management
   description: "Implement and manage Microsoft Entra Permissions Management"
   ms.date: 08/07/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/12-enable-microsoft-entra-permissions-management-your-organization.md)]
+  [!include[](includes/12-enable-microsoft-entra-permissions-management-your-organization.md)]

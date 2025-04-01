@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.troubleshoot-web-app-down-scenarios-app-service-diagnostics.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 07/13/2022
   author: wwlpublish
@@ -50,4 +48,4 @@ quiz:
       explanation: "That's correct. Ask Genie is a bot which allows the user to input the technical issue your app is experiencing in your own words."
     - content: "It's a feature within App Service Diagnostics that can only be accessed through Configuration and Management for troubleshooting potential causes of an issue."
       isCorrect: false
-      explanation: "That's incorrect. Ask Genie can be accessed anywhere within App Service Diagnostics."
+      explanation: "That's incorrect. Ask Genie can be accessed anywhere within App Service Diagnostics."

@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.author-complex-queries-azure-cosmos-db-sql-api.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 03/10/2025
   author: wwlpublish
@@ -36,4 +34,4 @@ quiz:
       explanation: "Correct. This method uses a SQL string to construct the query and then deserialize the results into C# objects."
     - content: "``GetItemLinqQueryable<>``"
       isCorrect: false
-      explanation: "Incorrect. This method uses the LINQ query syntax rather than a SQL string to construct the query."
+      explanation: "Incorrect. This method uses the LINQ query syntax rather than a SQL string to construct the query."

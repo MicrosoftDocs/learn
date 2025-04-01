@@ -4,14 +4,10 @@ title: Summary
 metadata:
   title: Summary
   description: "Summary"
-  ms.date: 09/30/2024
+  ms.date: 03/27/2025
   author: angierudduck
   ms.author: anrudduc
   ms.topic: unit
-  ms.custom:
-  - build-2023
-  - build-2023-dataai
-  - build-2023-fabric
-durationInMinutes: 2
+durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]

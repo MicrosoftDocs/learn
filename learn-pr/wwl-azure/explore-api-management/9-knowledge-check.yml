@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-api-management.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 10/28/2024
   author: wwlpublish
@@ -37,4 +35,4 @@ quiz:
       explanation: "Correct. The choose policy applies enclosed policy statements based on the outcome of evaluation of boolean expressions."
     - content: "return-response"
       isCorrect: false
-      explanation: "Incorrect. The return-response policy aborts pipeline execution and returns either a default or custom response to the caller."
+      explanation: "Incorrect. The return-response policy aborts pipeline execution and returns either a default or custom response to the caller."

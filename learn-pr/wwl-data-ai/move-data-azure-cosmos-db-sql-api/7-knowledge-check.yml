@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.moving-data-into-out-of-azure-cosmos-db-sql-api.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 10/17/2022
   author: wwlpublish
@@ -36,4 +34,4 @@ quiz:
       explanation: "Incorrect. Enabling Synapse Link isn't enough to use the Spark connector with a specific container."
     - content: "Enable analytical storage at the container level"
       isCorrect: true
-      explanation: "Correct. Each container should have analytical storage enabled."
+      explanation: "Correct. Each container should have analytical storage enabled."

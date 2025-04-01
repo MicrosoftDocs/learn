@@ -2,8 +2,6 @@
 uid: learn.azure.intro-azure-vmware-solution.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: In this unit, we review what you learned about Azure VMware Solution.
   ms.date: 10/23/2024
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/5-summary.md)]
-
+

@@ -2,8 +2,6 @@
 uid: learn.startups.validate-idea.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Review how to identify and test assumptions about your startup. Gain an overview of useful tools and strategies.
   ms.date: 03/18/2025
@@ -13,4 +11,4 @@ metadata:
   ms.collection: learn-startups
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/7-summary.md)]

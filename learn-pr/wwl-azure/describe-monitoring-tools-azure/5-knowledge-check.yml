@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-monitoring-tools-azure.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 09/19/2024
   author: wwlpublish
@@ -39,4 +37,4 @@ quiz:
       explanation: "Incorrect. Resource Health would let you know if any of your resources are down. Service health will let you know if resources are down in regions where you’re deployed, but won’t give you details on your specific resources."
     - content: "Resource Health"
       isCorrect: true
-      explanation: "Correct. Resource Health is a tailored view of your actual Azure resources. It provides information about the health of your individual cloud resources."
+      explanation: "Correct. Resource Health is a tailored view of your actual Azure resources. It provides information about the health of your individual cloud resources."

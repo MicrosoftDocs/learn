@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.ai-agent-fundamentals.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Test your knowledge of AI agents.
   author: wwlpublish
   ms.author: berryivor
@@ -49,4 +47,4 @@ quiz:
     - content: "Knowledge"
       isCorrect: true
       explanation: "Correct. Adding a knowledge source enables an agent to ground prompts with contextual data."
-
+

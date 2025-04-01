@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.evaluate-language-models-azure-databricks.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 03/20/2025
   author: wwlpublish
@@ -47,4 +45,4 @@ quiz:
       explanation: "Correct. Evaluating a model for bias typically involves analyzing its outputs to identify and mitigate harmful stereotypes or biased predictions, ensuring the model is fair and ethical in its responses."
     - content: "Counting the number of model parameters"
       isCorrect: false
-      explanation: "Incorrect. Counting the number of model parameters doesn't evaluate an LLM for bias."
+      explanation: "Incorrect. Counting the number of model parameters doesn't evaluate an LLM for bias."

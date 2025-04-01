@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.get-tips-tricks-teach-sc-400-information-protection-administrator
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Get tips and tricks for teaching SC-400: Microsoft Information Protection Administrator'
   description: "Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials."
   ms.date: 11/17/2023
@@ -38,4 +36,4 @@ units:
 - learn.wwl.get-tips-tricks-teach-sc-400-information-protection-administrator.knowledge-check
 - learn.wwl.get-tips-tricks-teach-sc-400-information-protection-administrator.summary
 badge:
-  uid: learn.wwl.get-tips-tricks-teach-sc-400-information-protection-administrator.badge
+  uid: learn.wwl.get-tips-tricks-teach-sc-400-information-protection-administrator.badge

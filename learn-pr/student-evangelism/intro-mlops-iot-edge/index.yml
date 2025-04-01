@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.oxford.intro-mlops-iot-edge
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: "Introduction to MLOps for IoT Edge"
   description: "Analyze the significance of MLOps in the development and deployment of machine learning models for IoT Edge. Describe the components of the MLOps pipeline and show how you can combine them to create models that can be retrained automatically for IoT Edge devices."
   ms.date: 11/28/2023
@@ -41,4 +39,4 @@ units:
 - learn.oxford.intro-mlops-iot-edge.when-use-mlops-iot-edge
 - learn.oxford.intro-mlops-iot-edge.knowledge-check
 - learn.oxford.intro-mlops-iot-edge.summary
-
+

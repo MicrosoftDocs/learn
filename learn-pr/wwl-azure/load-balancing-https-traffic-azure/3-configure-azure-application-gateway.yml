@@ -2,8 +2,6 @@
 uid: learn.wwl.load-balancing-https-traffic-azure.configure-azure-application-gateway
 title: Configure Azure Application Gateway
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure Azure Application Gateway
   description: "Configure Azure Application Gateway"
   ms.date: 01/10/2025
