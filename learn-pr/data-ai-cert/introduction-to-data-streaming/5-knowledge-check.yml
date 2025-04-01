@@ -2,6 +2,7 @@
 uid: learn.data-ai.introduction-to-data-streaming.knowledge-check
 title: Module assessment
 metadata:
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
   ms.date: 12/08/2022
@@ -46,4 +47,4 @@ quiz:
       explanation: "Incorrect. Session windows only include concurrent events."
     - content: "Tumbling"
       isCorrect: true
-      explanation: "Correct. Tumbling windows define contiguous, fixed-length, non-overlapping windows."
+      explanation: "Correct. Tumbling windows define contiguous, fixed-length, non-overlapping windows."
