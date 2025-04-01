@@ -31,13 +31,13 @@ quiz:
     choices:
     - content: Fifty percent
       isCorrect: false
-      explanation: Incorrect. Needs take up fifty percent.
+      explanation: Incorrect. Needs take up 50 percent.
     - content: Thirty percent 
       isCorrect: false
-      explanation: Incorrect. Wants take up thirty percent.
+      explanation: Incorrect. Wants take up 30 percent.
     - content: Twenty percent
       isCorrect: true
-      explanation: Correct! Savings are allocated twenty percent.
+      explanation: Correct! Savings are allocated 20 percent.
     - content: Ten percent
       isCorrect: false
-      explanation: Incorrect. Savings should be twenty percent, not ten percent.
+      explanation: Incorrect. Savings should be 20 percent, not 10 percent.
