@@ -1,0 +1,59 @@
+### YamlMime:Module
+uid: learn.wwl.get-started-file-input-output
+metadata:
+  title: Get started with file input and output
+  description: "Learn how to manage local files and directories using the System.IO classes, and how to store and retrieve C# objects using CSV files and the StreamReader and StreamWriter classes."
+  ms.date: 04/01/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: module-intro-to-product
+  ms.service: dotnet-csharp
+  ms.subservice: fundamentals
+  ms.devlang: csharp
+  ai-usage: human-only
+title: Get started with file input and output
+summary: Learn how to manage local files and directories&nbsp;using&nbsp;the&nbsp;System.IO classes, and how to store and retrieve C# objects using CSV files and&nbsp;the StreamReader and StreamWriter classes.
+abstract: |
+  -   Describe common file input and output operations, the difference between structured and unstructured data, and common text file formats.
+
+  -   Use the Path, Directory, and File classes to create, copy, move, delete, and enumerate local text files and directories.
+
+  -   Implement file input and output operations using the StreamReader and StreamWriter classes and CSV files.
+
+  -   Control file access using the FileStream class.
+
+  -   Read and write binary files using the BinaryReader and BinaryWriter classes.
+
+  -   Store and retrieve C# objects using file input and output operations.
+prerequisites: |
+  -   An installation of Visual Studio Code with the C# Dev Kit extension installed.
+
+  -   The ability to develop object-oriented programs in C# that implement classes, interfaces, class inheritance, and polymorphic behavior.
+
+  -   The ability to manage&nbsp;collections, structs, records, generics,&nbsp;dates and times,&nbsp;and anonymous types.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- dotnet
+- vs-code
+subjects:
+- app-development
+- custom-app-development
+units:
+- learn.wwl.get-started-file-input-output.introduction
+- learn.wwl.get-started-file-input-output.get-started-file-input-output
+- learn.wwl.get-started-file-input-output.manage-local-directories-files-paths
+- learn.wwl.get-started-file-input-output.read-write-text-files-streamreader-streamwriter
+- learn.wwl.get-started-file-input-output.control-file-access-filestream
+- learn.wwl.get-started-file-input-output.examine-binaryreader-binarywriter
+- learn.wwl.get-started-file-input-output.exercise-create-manage-text-files
+- learn.wwl.get-started-file-input-output.knowledge check
+- learn.wwl.get-started-file-input-output.summary
+badge:
+  uid: learn.wwl.get-started-file-input-output.badge

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-file-input-output.get-started-file-input-output
+title: Get started with file input and output
+metadata:
+  title: Get started with file input and output
+  description: "Get started with file input and output"
+  ms.date: 04/01/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-get-started-file-input-output.md)]

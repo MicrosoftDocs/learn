@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-file-input-output.knowledge check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/01/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "This is a question?"
+    choices:
+    - content: "Answer 1."
+      isCorrect: false
+      explanation: "Incorrect. Reason 1."
+    - content: "Answer 2."
+      isCorrect: true
+      explanation: "Correct. Reason 2."
+    - content: "Answer 3."
+      isCorrect: false
+      explanation: "Incorrect. Reason 3."
+  - content: "This is a very thoughtful question?"
+    choices:
+    - content: "Answer 4."
+      isCorrect: false
+      explanation: "Incorrect. Reason 4."
+    - content: "Answer 5."
+      isCorrect: true
+      explanation: "Correct. Reason 5."
+    - content: "Answer 6."
+      isCorrect: false
+      explanation: "Incorrect. Reason 6."
+  - content: "This is another question?"
+    choices:
+    - content: "Answer 7."
+      isCorrect: false
+      explanation: "Incorrect. Reason 7."
+    - content: "Answer 8."
+      isCorrect: true
+      explanation: "Correct. Reason 8."
+    - content: "Answer 9."
+      isCorrect: false
+      explanation: "Incorrect. Reason 9."

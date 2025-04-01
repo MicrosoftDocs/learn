@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-file-input-output.examine-binaryreader-binarywriter
+title: Examine the BinaryReader and BinaryWriter classes
+metadata:
+  title: Examine the BinaryReader and BinaryWriter classes
+  description: "Examine the BinaryReader and BinaryWriter classes"
+  ms.date: 04/01/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-examine-binaryreader-binarywriter.md)]
