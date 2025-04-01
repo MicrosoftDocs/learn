@@ -1,8 +1,8 @@
 Threat protection for AI workloads in Microsoft Defender for Cloud protects AI workloads on an Azure subscription by providing insights to threats that might affect your generative AI applications.
 
-> [!IMPORTANT]
-
-Threat protection for AI workloads is currently in preview. See the Supplemental Terms of Use for Microsoft Azure Previews for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
+> [!IMPORTANT] 
+>
+> Threat protection for AI workloads is currently in preview. See the Supplemental Terms of Use for Microsoft Azure Previews for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
 
 ## Prerequisites
 - Read the [Overview - AI threat protection](/azure/defender-for-cloud/ai-threat-protection).
@@ -12,7 +12,7 @@ Threat protection for AI workloads is currently in preview. See the Supplemental
 - [Enable Defender for Cloud on your Azure subscription](/azure/defender-for-cloud/get-started#enable-defender-for-cloud-on-your-azure-subscription).
 
 - We recommend not opting out of prompt-based triggered alerts for [Azure OpenAI content filtering](/azure/ai-services/openai/concepts/content-filter). Opting out and removing that capability can affect Defender for Cloud's ability to monitor and detect such attacks.
-If you're accepted into the limited preview, you can enable threat protection for AI workloads on your Azure subscription.
+  If you're accepted into the limited preview, you can enable threat protection for AI workloads on your Azure subscription.
 
 ## Enable threat protection for AI workloads
 
@@ -36,7 +36,7 @@ User prompt evidence consists of prompts and model responses. Both are considere
 4.  Select the relevant Azure subscription.
 5.  Locate AI workloads and select Settings.
 
-:::image type="content" source="../media/ai-workloads-in-defender-for-cloud-full-settings-and-monitoring.png" alt-text="Screenshot showing an example of ai workloads full settings.":::
+:::image type="content" source="../media/ai-workloads-defender-cloud-full-settings-monitoring.png" alt-text="Screenshot showing an example of ai workloads full settings.":::
 
 6.  Toggle Enable user prompt evidence to On.
 
