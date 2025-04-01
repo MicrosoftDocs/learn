@@ -2,6 +2,7 @@
 uid: learn.wwl.explore-core-data-concepts.knowledge-check
 title: Module assessment
 metadata:
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
   ms.date: 08/28/2024
@@ -48,4 +49,4 @@ quiz:
       explanation: "That's correct. A data warehouse is a relational database in which the schema is optimized for queries that read data."
     - content: "A storage location for unstructured data files"
       isCorrect: false
-      explanation: "That's incorrect. Unstructured data files for analytical processing are stored in a data lake."
+      explanation: "That's incorrect. Unstructured data files for analytical processing are stored in a data lake."
