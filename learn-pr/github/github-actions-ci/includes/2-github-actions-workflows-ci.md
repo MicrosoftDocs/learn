@@ -174,6 +174,8 @@ steps:
 
 For more information about using artifacts in workflows, see [Storing workflow data as artifacts](https://docs.github.com/en/enterprise-cloud@latest/actions/using-workflows/storing-workflow-data-as-artifacts) in the GitHub documentation.
 
+<!-- INFOMAGNUS UPDATES for sub OD 1.6.4 go here. Source Material: Infomagnus team to find source material and cite sources when they update material -->
+
 ## Automate reviews in GitHub using workflows
 
 So far, we described starting the workflow with GitHub events such as *push* or *pull-request*. We could also run a workflow on a schedule, or on some event outside of GitHub.
