@@ -2,6 +2,7 @@
 uid: learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework.knowledge-check
 title: Module assessment
 metadata:
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check for module on the topic: Design solutions that align with the Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF)."
   ms.date: 04/05/2023
