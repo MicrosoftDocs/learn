@@ -14,7 +14,7 @@ Before users can start using Copilot, admins need to provision and allocate capa
 - You must have an Azure subscription.
 - You need to be an Azure owner or Azure contributor, at a resource group level, as a minimum.
   
-    *Keep in mind that a global administrator in Microsoft Entra ID  doesn't necessarily have the Azure owner or Azure contributor role by default. Microsoft Entra role assignments don't grant access to Azure resources. As a global admin in Microsoft Entra, you can enable access management for Azure resources through the Azure portal. For details, see [Elevate access to manage all Azure subscriptions and management groups](/azure/role-based-access-control/elevate-access-global-admin). Once you've enabled access management to Azure resources, you can configure the appropriate Azure role.*
+    *Keep in mind that a global Microsoft Entra administrator role doesn't necessarily have the Azure owner or Azure contributor role by default. Microsoft Entra role assignments don't grant access to Azure resources. As a global Microsoft Entra administrator, you can enable access management for Azure resources through the Azure portal. For details, see [Elevate access to manage all Azure subscriptions and management groups](/azure/role-based-access-control/elevate-access-global-admin). Once you've enabled access management to Azure resources, you can configure the appropriate Azure role.*
 
 There are two options for provisioning capacity:
 
@@ -40,10 +40,7 @@ Once admins complete the steps to onboard to Copilot, they can manage capacity b
 
 ### Set up the default environment
 
-To set up the default environment, you need to have one of the following Microsoft Entra ID roles:
-
-- Global administrator
-- Security administrator
+To set up the default environment, you need to have, at least, a Security Administrator role.
 
 During the setup of Security Copilot, you're prompted to configure settings. These include:
 
@@ -70,7 +67,7 @@ During the setup of Security Copilot, you're prompted to configure settings. The
 - Plugin settings - The admin manages plugins and configures whether to allow Security Copilot to access data from your Microsoft 365 services.
   - Configure who can add and manage their own custom plugins and who can add and manage custom plugins for everyone in the organization.
   - Manage plugin availability and restrict access. When enabled, admins decide which new and existing plugins will be available to everyone in your organization, and which will be restricted to owners only.
-  - Allow Security Copilot to access data from your Microsoft 365 services. If this option is turned off, your organization won't be able to use plugins that access Microsoft 365 services. Currently, this option is required for use of the Microsoft Purview plugin. Setting and/or changing this setting requires a user with a Global administrator role.
+  - Allow Security Copilot to access data from your Microsoft 365 services. If this option is turned off, your organization won't be able to use plugins that access Microsoft 365 services. Currently, this option is required for use of the Microsoft Purview plugin. Setting and/or changing this setting requires a user with a Copilot owner role or a global Microsoft Entra administrator role.
   
     :::image type="content" source="../media/plugin-settings-no-restrictions.png" lightbox="../media/plugin-settings-no-restrictions.png" alt-text="Screen capture showing the plugin settings and the setting to allow Security Copilot to access data from your Microsoft 365 services.":::
 

@@ -6,7 +6,7 @@ metadata:
   description: "Knowledge check"
   ms.date: 11/28/2023
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: unit
 azureSandbox: false
 labModal: false
@@ -20,18 +20,18 @@ quiz:
     choices:
     - content: "Semi - require approval for any remediation"
       isCorrect: true
-      explanation: "Correct.  This is a valid remediation level."
+      explanation: "Correct. This is a valid remediation level."
     - content: "Semi - user accounts only"
       isCorrect: false
-      explanation: "Incorrect.  This isn't a valid remediation level."
+      explanation: "Incorrect. This isn't a valid remediation level."
     - content: "Semi - files only"
       isCorrect: false
-      explanation: "Incorrect.  This isn't a valid remediation level."
+      explanation: "Incorrect. This isn't a valid remediation level."
   - content: "A security operations analyst needs to exclude a custom executable file c:\\myapp\\myapp.exe, which exclusion type should they use?"
     choices:
     - content: "File"
       isCorrect: true
-      explanation: "Correct. File will exclude this specific file from automation"
+      explanation: "Correct. File excludes this specific file from automation"
     - content: "Extension"
       isCorrect: false
       explanation: "Incorrect. Extension would exclude all files with the extension."
@@ -48,4 +48,4 @@ quiz:
       explanation: "Incorrect. The feature requires Defender antivirus"
     - content: "Automated Investigation"
       isCorrect: false
-      explanation: "Incorrect. Automated investigations aren't specific to blocking files."
+      explanation: "Incorrect. Automated investigations aren't specific to blocking files."

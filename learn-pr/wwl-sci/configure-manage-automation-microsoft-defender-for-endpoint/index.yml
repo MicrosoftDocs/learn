@@ -3,7 +3,7 @@ uid: learn.wwl.configure-manage-automation-microsoft-defender-for-endpoint
 metadata:
   title: Configure and manage automation using Microsoft Defender for Endpoint
   description: "Configure and manage automation using Microsoft Defender for Endpoint"
-  ms.date: 1/2/2025
+  ms.date: 03/31/2025
   author: wwlpublish
   ms.author: kelawson
   ms.topic: module
@@ -42,4 +42,4 @@ units:
 - learn.wwl.configure-manage-automation-microsoft-defender-for-endpoint.knowledge-check
 - learn.wwl.configure-manage-automation-microsoft-defender-for-endpoint.summary-resources
 badge:
-  uid: learn.wwl.configure-manage-automation-microsoft-defender-for-endpoint.badge
+  uid: learn.wwl.configure-manage-automation-microsoft-defender-for-endpoint.badge

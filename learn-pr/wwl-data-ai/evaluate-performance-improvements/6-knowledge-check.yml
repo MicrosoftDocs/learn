@@ -4,8 +4,8 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/13/2022
-  author: wwlpublish
+  ms.date: 03/31/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
@@ -20,10 +20,10 @@ quiz:
     choices:
     - content: "Clustered Columnstore"
       isCorrect: true
-      explanation: "Correct. A clustered columnstore index will provide the best performance for a data warehouse fact table."
+      explanation: "Correct. A clustered columnstore index provides the best performance for a data warehouse fact table."
     - content: "Nonclustered Columnstore"
       isCorrect: false
-      explanation: "Incorrect. Nonclustered columnstore indexes will consume unnecessary space."
+      explanation: "Incorrect. Nonclustered columnstore indexes consume unnecessary space."
     - content: "Clustered b-tree"
       isCorrect: false
       explanation: "Incorrect. A b-tree index won't match the performance of a columnstore index for scan operations."
@@ -48,4 +48,4 @@ quiz:
       explanation: "Incorrect. This DMV just has the estimated execution plans that are in the plan cache."
     - content: "sys.dm_exec_query_plan_stats"
       isCorrect: true
-      explanation: "Correct. In SQL Server 2019 you can query sys.dm_exec_query_plan_stats to get the last actual execution plan for a query."
+      explanation: "Correct. You can query sys.dm_exec_query_plan_stats to get the last actual execution plan for a query."
