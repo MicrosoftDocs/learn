@@ -53,7 +53,7 @@ units:
 - learn.wwl.get-started-file-input-output.control-file-access-filestream
 - learn.wwl.get-started-file-input-output.examine-binaryreader-binarywriter
 - learn.wwl.get-started-file-input-output.exercise-create-manage-text-files
-- learn.wwl.get-started-file-input-output.knowledge check
+- learn.wwl.get-started-file-input-output.knowledge-check
 - learn.wwl.get-started-file-input-output.summary
 badge:
   uid: learn.wwl.get-started-file-input-output.badge

@@ -19,7 +19,7 @@ Data can be categorized into two main types: structured and unstructured. Unders
 
 - Unstructured Storage: Unstructured storage refers to data that doesn't follow a predefined schema or structure. This type of storage is more flexible and can accommodate various types of data, such as text, images, and videos. The most common example of unstructured storage is a file system, where files can be stored in any format without a specific organization. Unstructured data is often stored in formats like JSON, XML, or plain text files. For example, a JSON file containing user profiles with varying attributes is considered unstructured data. The lack of structure makes unstructured data more challenging to analyze and process. The JSON format is often used for data interchange between applications, making it a popular choice for unstructured data storage.
 
-Data can be stored using a hybrid between structured and unstructured formats. Semi-structured data contains some organizational properties but does not conform to a strict schema.
+Data can be stored using a hybrid between structured and unstructured formats. Semi-structured data contains some organizational properties but doesn't conform to a strict schema.
 
 ## Examine common text file formats
 
@@ -84,7 +84,7 @@ Example:
 
 ```
 
-JSON supports nested structures, making it suitable for representing complex data. It uses a key-value pair format, where keys are strings and values can be strings, numbers, Booleans, arrays, or other JSON objects. There is a sepatate Learn module that examines using JSON files: "Store and retrieve JSON files".
+JSON supports nested structures, making it suitable for representing complex data. It uses a key-value pair format, where keys are strings and values can be strings, numbers, Booleans, arrays, or other JSON objects. There's a separate Learn module that examines using JSON files: "Store and retrieve JSON files".
 
 ### Review the XML file format
 
@@ -110,17 +110,17 @@ Example:
 
 ```
 
-XML uses a tree structure with elements and attributes, allowing for complex data representation. It is widely used in web services and configuration files.
+XML uses a tree structure with elements and attributes, allowing for complex data representation. It's widely used in web services and configuration files.
 
 ## Examine local, network, and cloud storage options
 
 Data files can be stored in various locations, depending on the application's requirements and the data's accessibility needs. Here are some common storage options:
 
-- Local Storage: Data is stored on the local device, such as a hard drive or SSD. This option is suitable for applications that require fast access to data and do not need to share it with other devices.
+- Local Storage: Data is stored on the local device, such as a hard drive or SSD. This option is suitable for applications that require fast access to data and don't need to share it with other devices.
 
 - Network Storage: Data is stored on a network-attached storage (NAS) device, allowing multiple devices to access the same data. This option is suitable for collaborative applications where data needs to be shared among users.
 
-- Cloud Storage: Data is stored on cloud services, such as Google Drive, Dropbox, or Microsoft OneDrive. This option provides scalability and accessibility from anywhere with an internet connection. It is suitable for applications that require data to be accessible across multiple devices and locations.
+- Cloud Storage: Data is stored on cloud services, such as Google Drive, Dropbox, or Microsoft OneDrive. This option provides scalability and accessibility from anywhere with an internet connection. It's suitable for applications that require data to be accessible across multiple devices and locations.
 
 ## Examine the System.IO classes commonly used in file I/O operations
 

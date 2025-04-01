@@ -1,6 +1,6 @@
-File input and output (File I/O) is an important programming task that enables your applications to persist, retrieve, and exchange application data. In this module, you'll learn how to manage text files in C#, including how to create, read, write, and delete local text files and directories using classes in the `System.IO` namespace. You'll also learn how to work with structured and unstructured data types, and how to use common text file formats.
+File input and output (File I/O) are an important programming task that enables your applications to persist, retrieve, and exchange application data. In this module, you learn how to manage text files in C#, including how to create, read, write, and delete local text files and directories using classes in the `System.IO` namespace. You also learn how to work with structured and unstructured data types, and how to use common text file formats.
 
-Imagine you're signed up to help a non-profit company with a software project. Before the project kicks off, you decide to update your programming skills by developing a banking app. To practice your file management skills, you're going add file input and output operations within the app's Program.cs file. You plan to work you way through some basic directory and file management tasks and then finish up with more advanced tasks like storing and retrieving bank transactions.
+Imagine you're signed up to help a non-profit company with a software project. Before the project kicks off, you decide to update your programming skills by developing a banking app. To practice your file management skills, you plan to implement file input and output operations within the app's Program.cs file. You plan to work you way through some basic directory and file management tasks and then finish up with more advanced tasks like storing and retrieving bank transactions.
 
 The topics covered in this module include:
 
@@ -19,4 +19,4 @@ After completing this module, you're able to:
 - Read and write binary files using the `BinaryReader` and `BinaryWriter` classes.
 - Store and retrieve C# objects using file input and output operations.
 
-By the end of this module, you have a solid understanding of file I/O operations and how to implement local file I/O in your projects. You'll be able to create, read, write, delete, and enumerate files and directories. You'll also have a better understanding of the different types of file formats and how to work with them effectively.
+By the end of this module, you have a solid understanding of file I/O operations and how to implement local file I/O in your projects. You're able to create, read, write, delete, and enumerate files and directories. You also have a better understanding of the different types of file formats and how to work with them effectively.
