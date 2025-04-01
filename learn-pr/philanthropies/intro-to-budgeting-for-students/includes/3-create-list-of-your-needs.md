@@ -4,7 +4,7 @@ How Can You Tell the Difference?
 
 Do I need this to live or stay healthy? → If yes, it's a need. If no, it's a want.
 
-Will life be hard if I don't have this? → If yes, it's a need. If no, it's a want.
+Is life hard if I don't have this? → If yes, it's a need. If no, it's a want.
 
 Can I find a cheaper or simpler option? → If yes, then the more expensive choice is a want.
 
