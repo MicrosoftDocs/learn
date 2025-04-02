@@ -34,9 +34,9 @@ Interactive Activity:
 
    - List important functions such as:
 
-     1. 📊 **Expense Tracking**
-     1. 🎯 **Goal Setting**
-     1. 🔄 **Automatic Savings**
+     - 📊 **Expense Tracking**
+     - 🎯 **Goal Setting**
+     - 🔄 **Automatic Savings**
 
    - Use **icons, bullet points, or short descriptions** to make the features stand out.
 
