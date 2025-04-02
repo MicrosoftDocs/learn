@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-implement-hybrid-networking.exercise-create-virtual-wan-by-using-azure-portal
-title: 'Exercise: create a Virtual WAN by using the Azure portal'
+title: 'Exercise: Create a Virtual WAN by using the Azure portal'
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: 'Exercise: create a Virtual WAN by using the Azure portal'
+  title: 'Exercise: Create a Virtual WAN by using the Azure portal'
   description: "Exercise: create a Virtual WAN by using the Azure portal"
   ms.date: 04/02/2025
   author: wwlpublish

@@ -19,7 +19,7 @@ Copilot can assist you in configuring Azure infrastructure solutions. Copilot ca
 
 ### Learn more with documentation and online training
 
--  [Introduction to Azure VPN Gateway training](/training/modules/intro-to-azure-vpn-gateway/)
--  [VPN Gateway documentation](/azure/vpn-gateway/)
--  [Introduction to Azure Virtual WAN training](/training/modules/introduction-azure-virtual-wan/)
--  [Virtual WAN documentation](/azure/virtual-wan/)
+-  [Introduction to Azure VPN Gateway training](/training/modules/intro-to-azure-vpn-gateway/). This module describes what Azure VPN Gateway does, how it works, and when you should choose to use Azure VPN Gateway as a solution to meet your organization's needs.
+-  [VPN Gateway documentation](/azure/vpn-gateway/). Learn how to configure, create, and manage an Azure VPN gateway. Create encrypted cross-premises connections to your virtual network from on-premises locations, or create encrypted connections between VNets.
+-  [Introduction to Azure Virtual WAN training](/training/modules/introduction-azure-virtual-wan/). Consider constructing a wide area network (WAN) using software-defined Azure Virtual WAN networking services.
+-  [Virtual WAN documentation](/azure/virtual-wan/). Learn how to configure, create, and manage an Azure Virtual WAN. Azure Virtual WAN is a networking service that brings many networking, security, and routing functionalities together to provide a single operational interface.
