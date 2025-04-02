@@ -81,9 +81,10 @@ Creating the resource and deploying the model is a multi-step process. Use the A
     -n HikingConversationsAI \
     --deployment-name HikingRecommendationTurbo \
     --model-name gpt-35-turbo \
-    --model-version "0301" \
+    --model-version "0125" \
     --model-format OpenAI \
-    --scale-settings-scale-type "Standard"
+    --sku-capacity 1
+    --sku-name "Standard"
     ```
 
     ::: zone-end
@@ -96,9 +97,9 @@ Creating the resource and deploying the model is a multi-step process. Use the A
     -n HikingConversationsAI `
     --deployment-name HikingRecommendationTurbo `
     --model-name gpt-35-turbo `
-    --model-version "0301" `
-    --model-format OpenAI `
-    --scale-settings-scale-type "Standard"
+    --model-version "0125" `
+    --sku-capacity 1
+    --sku-name "Standard"
     ```
 
     ::: zone-end

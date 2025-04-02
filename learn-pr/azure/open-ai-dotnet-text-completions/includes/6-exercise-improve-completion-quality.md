@@ -59,7 +59,7 @@ The previous request only said the hike should be strenuous with a great view. L
     a view that is amazing. I don't mind driving for a long time, even if it's over the pass.
     I've heard the Enchantments are nice.
     I don't want the hike to be over 10 miles round trip. I'd consider a point-to-point hike.
-    I want the hike to be as seculuded as possible. I don't want to see many people.
+    I want the hike to be as secluded as possible. I don't want to see many people.
     I would like it to be as bug free as possible. I would also like to avoid any Forest Service roads.
     """;
     ```
