@@ -2,6 +2,7 @@
 uid: learn.windows.windows-best-app-framework.knowledge-check
 title: Module assessment
 metadata:
+  hidden_question_numbers: ["687E202A_10","687E202A_34"]
   ai_generated_module_assessment: true
   title: Module assessment
   description: Check your knowledge to see if you understand when to use each Windows UI framework (WPF, Windows Forms, and WinUI).
