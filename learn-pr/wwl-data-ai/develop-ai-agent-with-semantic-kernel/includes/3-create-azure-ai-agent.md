@@ -16,7 +16,7 @@ Here's the code that illustrates how to create an AzureAIAgent:
 
 ```python
 from azure.identity.aio import DefaultAzureCredential
-from semantic_kernel.agents import AzureAIAgent, AzureAIAgentSettings
+from semantic_kernel.agents import AzureAIAgent, AzureAIAgentThread, AzureAIAgentSettings
 
 # Create an AzureAIAgentSettings object
 ai_agent_settings = AzureAIAgentSettings.create()
@@ -43,11 +43,11 @@ async with (@
 Once your agent is defined, you can create a thread to interact with your agent and invoke responses for inputs. For example:
 
 ```python
-# Use the client agent service to create a thread
-thread = await client.agents.create_thread()
+# Create the agent thread
+thread: AzureAIAgentThread = AzureAIAgentThread(client=client)
 
 try:
-    # Create prompts
+    # Create prompts 
     prompt_messages = ["What are the largest semiconductor manufacturing companies?"]
 
     # Invoke a response from the agent
@@ -57,7 +57,7 @@ try:
     print(response)
 finally:
     # Clean up the thread
-    await client.agents.delete_thread(thread.id)
+    await thread.delete() if thread else None
 ```
 
 ### AzureAIAgent key components
