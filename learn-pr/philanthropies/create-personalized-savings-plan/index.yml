@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.philanthropies.create-personalized-savings-plan
+
+metadata:
+  title: Create a personalized savings plan to work toward a financial goal
+  description: Learn how to build a strong financial foundation by exploring practical saving strategies. Discover how small steps today can lead to achieving large goals tomorrow.
+  ms.date: 04/02/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: module
+  ms.service: artificial-intelligence
+
+title: Create a personalized savings plan to work toward a financial goal
+summary: This module introduces students to the importance of saving and various strategies to help them save effectively. By the end, students have a personalized saving plan to help them reach their goals and build long-term financial habits.
+
+abstract: |
+  - Understand why saving money is essential for achieving future goals.
+  - Explore various saving strategies and their benefits.
+  - Practice saving skills to develop effective saving habits.
+prerequisites: Access to Microsoft Designer and Microsoft Copilot.
+products:
+  - azure
+iconUrl: /training/achievements/create-personalized-savings-plan.svg
+levels:
+- beginner
+roles:
+- student
+units:
+- learn.philanthropies.create-personalized-savings-plan.introduction
+- learn.philanthropies.create-personalized-savings-plan.why-saving-money-important
+- learn.philanthropies.create-personalized-savings-plan.exploring-different-saving-strategies
+- learn.philanthropies.create-personalized-savings-plan.developing-practical-saving-skills
+- learn.philanthropies.create-personalized-savings-plan.creating-your-personal-savings-plan
+- learn.philanthropies.create-personalized-savings-plan.knowledge-check
+- learn.philanthropies.create-personalized-savings-plan.summary
+badge:
+  uid: learn.philanthropies.create-personalized-savings-plan.badge
