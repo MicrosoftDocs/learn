@@ -2,15 +2,17 @@
 uid: learn.wwl.design-implement-hybrid-networking.design-implement-hybrid-networking
 title: Design and implement Azure VPN Gateway
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design and implement Azure VPN Gateway
   description: "Design and implement Azure VPN Gateway"
-  ms.date: 01/09/2025
+  ms.date: 04/02/2025
   author: wwlpublish
-  ms.author: jileary
+  ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 24
+durationInMinutes: 12
 content: |
   [!include[](includes/2-design-implement-vpn-gateway.md)]
 quiz:
@@ -18,15 +20,15 @@ quiz:
   questions:
   - content: "What are the two types of VPNs?"
     choices:
-    - content: "PolicyBased and RouteBased."
+    - content: "Policy-based and Route-based."
       isCorrect: true
-      explanation: "Correct. VPNs can be RouteBased or PolicyBased."
-    - content: "PolicyBased and static."
+      explanation: "Correct. VPNs can be route or policy based."
+    - content: "Policy-based and static."
       isCorrect: false
-      explanation: "Incorrect. VPNs can be PolicyBased. Static is the name used for PolicyBased VPNs in the classic deployment model."
-    - content: "RouteBased and dynamic."
+      explanation: "Incorrect. VPNs can be route or policy based."
+    - content: "RouteBR-based and dynamic."
       isCorrect: false
-      explanation: "Incorrect. VPNs can be RouteBased. Dynamic is the name used for RouteBased VPNs in the classic deployment model."
+      explanation: "Incorrect. VPNs can be route or policy based."
   - content: "What is the default high availability configuration for VPN gateways?"
     choices:
     - content: "Active-standby"
@@ -37,4 +39,4 @@ quiz:
       explanation: "Incorrect. You can create an Azure VPN gateway in an active-active configuration, but this configuration isn't the default."
     - content: "Dual-redundancy"
       isCorrect: false
-      explanation: "Incorrect. Duel-redundancy is not the default."
+      explanation: "Incorrect. Duel-redundancy isn't the default."
