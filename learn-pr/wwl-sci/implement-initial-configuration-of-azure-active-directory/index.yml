@@ -1,12 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-initial-configuration-of-azure-active-directory
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement initial configuration of Microsoft Entra ID
   description: "Learn to create an initial Azure Active Directory configuration to ensure all the identity solutions available in Azure are ready to use. This module explores how to build and configure an Azure AD system."
-  ms.date: 09/03/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: module-standard-task-based
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: azure
@@ -48,4 +51,4 @@ units:
 - learn.wwl.implement-initial-configuration-of-azure-active-directory.knowledge-check
 - learn.wwl.implement-initial-configuration-of-azure-active-directory.summary-resources
 badge:
-  uid: learn.wwl.implement-initial-configuration-of-azure-active-directory.badge
+  uid: learn.wwl.implement-initial-configuration-of-azure-active-directory.badge

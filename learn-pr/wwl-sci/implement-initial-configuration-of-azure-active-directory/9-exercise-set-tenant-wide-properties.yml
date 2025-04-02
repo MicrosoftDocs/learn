@@ -2,9 +2,11 @@
 uid: learn.wwl.implement-initial-configuration-of-azure-active-directory.exercise-setting-tenant-wide-properties
 title: Exercise - setting tenant-wide properties
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - setting tenant-wide properties
   description: "Exercise - setting tenant-wide properties"
-  ms.date: 09/03/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
@@ -12,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/9-exercise-set-tenant-wide-properties.md)]
+  [!include[](includes/9-exercise-set-tenant-wide-properties.md)]

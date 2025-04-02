@@ -2,9 +2,11 @@
 uid: learn.wwl.implement-initial-configuration-of-azure-active-directory.configure-company-brand
 title: Configure company brand
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure company brand
   description: "Configure company brand"
-  ms.date: 09/03/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
@@ -12,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-configure-company-brand.md)]
+  [!include[](includes/2-configure-company-brand.md)]

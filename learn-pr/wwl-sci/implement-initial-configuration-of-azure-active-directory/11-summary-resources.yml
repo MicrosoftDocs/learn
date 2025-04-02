@@ -2,9 +2,11 @@
 uid: learn.wwl.implement-initial-configuration-of-azure-active-directory.summary-resources
 title: Summary and resources
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary and resources
   description: "Summary and resources"
-  ms.date: 09/03/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
@@ -12,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 1
 content: |
-  [!include[](includes/11-summary-resources.md)]
+  [!include[](includes/11-summary-resources.md)]

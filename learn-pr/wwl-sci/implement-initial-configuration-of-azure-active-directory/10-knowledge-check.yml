@@ -1,10 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-initial-configuration-of-azure-active-directory.knowledge-check
-title: Module assessment
+title: Knowledge check
 metadata:
-  title: Module assessment
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/03/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
@@ -48,4 +50,4 @@ quiz:
       explanation: "Correct. Guest users can only manage aspects of their own profile information, like their password; and view available resource like apps."
     - content: "They can manage their own profile, change their own password, and identify group members or other directory objects."
       isCorrect: false
-      explanation: "Sorry, that's incorrect. Microsoft Entra guest users can't identify group members and other directory objects."
+      explanation: "Sorry, that's incorrect. Microsoft Entra guest users can't identify group members and other directory objects."
