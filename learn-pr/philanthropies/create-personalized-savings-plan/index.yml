@@ -27,7 +27,7 @@ roles:
 - student
 units:
 - learn.philanthropies.create-personalized-savings-plan.introduction
-- learn.philanthropies.create-personalized-savings-plan.why-saving-money-is-important
+- learn.philanthropies.create-personalized-savings-plan.why-saving-money-important
 - learn.philanthropies.create-personalized-savings-plan.exploring-different-saving-strategies
 - learn.philanthropies.create-personalized-savings-plan.developing-practical-saving-skills
 - learn.philanthropies.create-personalized-savings-plan.creating-your-personal-savings-plan

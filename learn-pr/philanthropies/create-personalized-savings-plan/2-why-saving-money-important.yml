@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.philanthropies.create-personalized-savings-plan.why-saving-money-is-important
-title: Why Saving Money is Important
+uid: learn.philanthropies.create-personalized-savings-plan.why-saving-money-important
+title: Why saving money is important
 metadata:
   title: Why Saving Money is Important
   description: This content is a part of the Create a personalized savings plan to work toward a financial goal.
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-why-saving-money-is-important.md)]
+  [!include[](includes/2-why-saving-money-important.md)]

@@ -24,9 +24,9 @@ Interactive Activity:
 
    - Decide on a savings target, such as:
 
-     1. **New Bike**
-     1. **Trip or Vacation**
-     1. **Gaming Console**
+     - **New Bike**
+     - **Trip or Vacation**
+     - **Gaming Console**
 
    - Add a title and **brief description** of your goal.
 
