@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.choose-budgeting-tool.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Answer the following questions to see what you learned.
+  ms.date: 04/02/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Knowledge check
+  questions:
+  - content: What is the main purpose of budgeting tools?
+    choices:
+    - content: To make managing money easier and fun. 
+      isCorrect: true
+      explanation: Correct!
+    - content: To replace all savings goals. 
+      isCorrect: false
+      explanation: Incorrect. Budgeting tools help set, not replace, savings goals.
+    - content: To eliminate spending entirely. 
+      isCorrect: false
+      explanation: Incorrect. Budgeting tools help balance spending and saving.
+    - content: To increase your income. 
+      isCorrect: false
+      explanation: Incorrect. Budgeting tools help manage, not increase, income.
+
+  - content: What is a benefit of using budgeting tools?
+    choices:
+    - content: They guarantee you'll save money. 
+      isCorrect: false
+      explanation: Incorrect. Tools help manage money but don't guarantee savings.
+    - content: They make tracking expenses more fun and interactive. 
+      isCorrect: true
+      explanation: Correct! Many tools turn budgeting into an engaging activity.
+    - content: They eliminate the need for setting goals. 
+      isCorrect: false
+      explanation: Incorrect. Tools are designed to help set and achieve goals.
+    - content: They only work for adults. 
+      isCorrect: false
+      explanation: Incorrect. Many tools are made for students.
+
+  - content: Why is it helpful to test out different budgeting tools?
+    choices:
+    - content: To find the one that best matches your needs. 
+      isCorrect: true
+      explanation: Correct! Testing tools helps identify the most suitable option.
+    - content: To learn about investment strategies. 
+      isCorrect: false
+      explanation: Incorrect. Budgeting tools focus on managing current income.
+    - content: To avoid making a budget. 
+      isCorrect: false
+      explanation: Incorrect. The goal is to create and manage a budget effectively.
+    - content: To increase your allowance. 
+      isCorrect: false
+      explanation: Incorrect. The goal is to create and manage a budget effectively.
