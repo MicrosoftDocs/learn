@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.philanthropies.choose-budgeting-tool
+
+metadata:
+  title: Choose a budgeting tool that fits your preferences and financial goals
+  description: Discover budgeting tools and apps designed for middle schoolers. Learn how to make money management easy, engaging, and effective with tools that help you save, track expenses, and set financial goals.
+  ms.date: 04/02/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: module
+  ms.service: artificial-intelligence
+
+title: Choose a budgeting tool that fits your preferences and financial goals
+summary: This module introduces age-appropriate budgeting tools, including apps, websites, and games. Explore how these tools can simplify money management and make it fun to save and plan for the future.
+
+abstract: |
+  - Understand how using budgeting tools can help manage money more effectively.
+  - Discover various budgeting tools designed specifically for middle schoolers.
+  - Explore and try out these tools to see how they work.
+prerequisites: Access to Microsoft Designer and Microsoft Copilot.
+products:
+  - azure
+iconUrl: /training/achievements/choose-budgeting-tool.svg
+levels:
+- beginner
+roles:
+- student
+units:
+- learn.philanthropies.choose-budgeting-tool.introduction
+- learn.philanthropies.choose-budgeting-tool.why-budgeting-tools-are-important
+- learn.philanthropies.choose-budgeting-tool.explore-budgeting-tools
+- learn.philanthropies.choose-budgeting-tool.interactive-exploration-budgeting-tools
+- learn.philanthropies.choose-budgeting-tool.choosing-your-favorite-reflecting
+- learn.philanthropies.choose-budgeting-tool.knowledge-check
+- learn.philanthropies.choose-budgeting-tool.summary
+badge:
+  uid: learn.philanthropies.choose-budgeting-tool.badge
