@@ -39,4 +39,4 @@ quiz:
       explanation: "Incorrect. You can create an Azure VPN gateway in an active-active configuration, but this configuration isn't the default."
     - content: "Dual-redundancy"
       isCorrect: false
-      explanation: "Incorrect. Duel-redundancy is not the default."
+      explanation: "Incorrect. Duel-redundancy isn't the default."

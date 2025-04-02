@@ -35,7 +35,7 @@ This video reviews the basics of how Virtual WANs work. The entire video is avai
 
 ### Choose a Virtual WAN SKU
 
-There are two Virtual WAN SKUs: Basic and Standard. This table shows the available configurations for each type.
+The Virtual WAN SKUs are: Basic and Standard. This table shows the available configurations for each type.
 
 | **Virtual WAN type** | **Hub type** |                                             **Available configurations**                                              |
 |:--------------------:|:------------:|:---------------------------------------------------------------------------------------------------------------------:|
