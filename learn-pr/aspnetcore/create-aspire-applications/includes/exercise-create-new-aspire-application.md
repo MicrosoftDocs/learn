@@ -142,7 +142,7 @@ Now that the prerequisites are installed, let's create a new app.
 
 1. Open **Visual Studio**. In the dialog, select **Create a new project**.
 1. In the **Search for templates** box, enter **aspire**.
-1. Select **.NET Aspire Starter Application**, and then select **Next**.
+1. Select **.NET Aspire Starter App**, and then select **Next**.
 1. In the **Solution name** box, enter **AspireTestApp**.
 1. In the **Location** box, enter the folder where you want to create the new app.
 1. Select **Next**.
@@ -244,7 +244,7 @@ Now let's add a Redis caching integration to the .NET Aspire project. We start w
 1. In **Solution Explorer**, right-click on the **AspireTestApp.AppHost** project, and select **Manage NuGet Packages**.
 1. Select the **Browse** tab, and select **Include prerelease**.
 1. Search for **aspire redis**, and select the **Aspire.Hosting.Redis** package.
-1. In the right pane, for **Version** select the latest **8.0.0**, and then select **Install**.
+1. In the right pane, for **Version** select **8.0.0**, and then select **Install**.
 1. In the **License Acceptance** dialog, select **I Accept**.
 
 # [.NET CLI](#tab/netcore-cli)
@@ -298,7 +298,7 @@ Now let's add a Redis caching integration to the .NET Aspire project. We start w
 1. In **Solution Explorer**, right-click on the **AspireTestApp.Web** project, and select **Manage NuGet Packages**.
 1. Select the **Browse** tab, and select **Include prerelease**.
 1. Search for **aspire redis**, and select the **Aspire.StackExchange.Redis.OutputCaching** package.
-1. In the right pane, for **Version** select the latest **8.0.0**, and then select **Install**.
+1. In the right pane, for **Version** select **8.0.0**, and then select **Install**.
 1. In the **License Acceptance** dialog, select **I Accept**.
 
 # [.NET CLI](#tab/netcore-cli)
