@@ -4,7 +4,7 @@ title: Razor class library creation and concepts
 metadata:
   unitType: learning-content
   title: Razor class library creation and concepts
-  description: "In this unit, you'll learn about Razor class libraries, how to create one, and how they differ from other .NET class libraries."
+  description: "In this unit, you learn about Razor class libraries, how to create one, and how they differ from other .NET class libraries."
   ms.date: 01/26/2024
   author: csharpfritz
   ms.author: jefritz
@@ -29,6 +29,6 @@ quiz:
       - content: "JavaScript files"
         isCorrect: false
         explanation: "Incorrect. Razor class libraries can deliver more than just JavaScript files."
-      - content: "All of the above"
+      - content: "All of these content types"
         isCorrect: true
         explanation: "Razor class libraries can deliver Razor components, CSS files, JavaScript files, images, and any static web content that your components need."

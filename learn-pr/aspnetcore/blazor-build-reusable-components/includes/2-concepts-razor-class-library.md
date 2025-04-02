@@ -1,6 +1,6 @@
 Components in web applications give developers the ability to reuse portions of an application user interface throughout the application. By using Razor class libraries, developers can share and reuse these components across many applications.
 
-In this unit, you'll learn how to create a Razor class library and then use it to share rendered and static content for Blazor applications to customize and display.
+In this unit, you learn how to create a Razor class library. You then use it to share rendered and static content for Blazor applications to customize and display.
 
 ## About Razor class libraries
 
@@ -55,7 +55,7 @@ A class library is a common package delivery structure in .NET applications, and
 
 - The project file contains an SDK reference to *Microsoft.NET.Sdk.Razor* to declare that it contains and creates Razor content as a Razor class library.
 - The `SupportedPlatform` entry declares that this library can be used in a `browser` platform, namely WebAssembly.
-- The `PackageReference` to the `Microsoft.AspNetCore.Components.Web` library gives access to the base Blazor components that are shipped with the framework. This lets you use those simple components to help you build more complex components.
+- The `PackageReference` to the `Microsoft.AspNetCore.Components.Web` library gives access to the base Blazor components that are shipped with the framework. This access lets you use those simple components to help you build more complex components.
 
 ### Razor component contents
 
@@ -71,7 +71,7 @@ This component interacts with other Blazor components and pages that reference i
 
 ### Static asset delivery
 
-You can reference the contents of the *wwwroot* folder relatively among the other contents of that folder and the components' individual CSS files, such as *Component1.razor.css*, as files in the same base folder. For example, the default CSS adds a 2 pixel dashed red border and a background image style that uses the *background.png* image in the *wwwroot* folder. No path is required to make this reference from the CSS to the content that resides in the *wwwroot* folder.
+You can reference the contents of the *wwwroot* folder relatively among the other contents of that folder and the components' individual CSS files, such as *Component1.razor.css*, as files in the same base folder. For example, the default CSS adds a two pixel dashed red border and a background image style that uses the *background.png* image in the *wwwroot* folder. No path is required to make this reference from the CSS to the content that resides in the *wwwroot* folder.
 
 ```css
 .my-component {
