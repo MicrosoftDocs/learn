@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Manage data retention in a Log Analytics workspace
   description: "Manage data retention in a Log Analytics workspace"
-  ms.date: 04/01/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

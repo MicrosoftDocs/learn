@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Data collection rules (DCRs) in Azure Monitor
   description: "Data collection rules (DCRs) in Azure Monitor"
-  ms.date: 04/01/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

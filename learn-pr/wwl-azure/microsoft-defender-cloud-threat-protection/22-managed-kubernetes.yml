@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Managed Kubernetes threat factors
   description: "Managed Kubernetes threat factors"
-  ms.date: 04/01/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
