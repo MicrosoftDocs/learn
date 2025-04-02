@@ -3,8 +3,8 @@ uid: learn.wwl.explore-performance-based-design
 metadata:
   title: Explore performance-based design
   description: Explore performance-based design
-  ms.date: 04/28/2022
-  author: wwlpublish
+  ms.date: 03/31/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module
   ms.service: azure
@@ -43,4 +43,4 @@ units:
 - learn.wwl.explore-performance-based-design.summary
 badge:
   uid: learn.wwl.explore-performance-based-design.badge
-
+
