@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-agent-with-semantic-kernel.add-plugins-to-agent
+title: Add plugins to Azure AI agent
+metadata:
+  title: Add plugins to Azure AI agent
+  description: Learn how to add plugins to your Azure AI agent
+  author: buzahid
+  ms.author: buzahid
+  ms.date: 03/25/2025
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-add-plugins-to-agent.md)]
