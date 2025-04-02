@@ -40,22 +40,24 @@ async with (@
     )
 ```
 
-Once your agent is defined, you can interact with your agent and invoke responses for inputs. To invoke responses, you create an agent thread and use the agent to add prompt and retrieve a response. For example:
+Once your agent is defined, you can create a thread to interact with your agent and invoke responses for inputs. For example:
 
 ```python
-thread: AzureAIAgentThread = AzureAIAgentThread()
+# Use the client agent service to create a thread
+thread = await client.agents.create_thread()
 
 try:
-    # Create a prompt 
-    prompt = "What are the largest semiconductor manufacturing companies?"
+    # Create prompts
+    prompt_messages = ["What are the largest semiconductor manufacturing companies?"]
 
-    # Instruct the agent to add a message to the thread
-    await agent.add_chat_message(thread_id=thread.id, message=prompt)
+    # Invoke a response from the agent
+    response = await agent.get_response(messages=prompt_messages, thread_id=thread.id)
 
-    # Invoke the agent for response on the thread
-    response = await agent.get_response(thread_id=thread.id)
+    # View the response
+    print(response)
 finally:
-    await thread.delete() if thread else None
+    # Clean up the thread
+    await client.agents.delete_thread(thread.id)
 ```
 
 ### AzureAIAgent key components
