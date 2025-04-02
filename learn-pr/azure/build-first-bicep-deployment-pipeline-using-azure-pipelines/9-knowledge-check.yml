@@ -3,9 +3,9 @@ uid: learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.kno
 title: Module assessment
 metadata:
   unitType: knowledge_check
-  title: Module assessment
-  description: Knowledge check.
-  ms.date: 01/30/2023
+  title: Module Assessment
+  description: Knowledge check
+  ms.date: 04/01/2025
   author: mumian
   ms.author: jgao
   ms.topic: unit
@@ -32,7 +32,7 @@ quiz:
     - content: Someone commits an update to the *README.md* file in the *templates* directory in the *main* branch.
       isCorrect: false
       explanation: Incorrect. The *templates/README.md* file is excluded by a path filter.
-    - content: Someone commits an update to any file anywhere in the repository, and pushes the update to a branch with a name starting with **releases/**.
+    - content: Someone commits an update to any file anywhere in the repository and pushes the update to a branch with a name starting with **releases/**.
       isCorrect: false
       explanation: Incorrect. Changes to the _templates/README.md_ file won't trigger the pipeline, because that filename is excluded by a path filter.
     - content: Someone commits an update to the *template.bicep* file in the *templates* directory and pushes the update to a branch with a name that starts with *releases/*.
@@ -60,4 +60,4 @@ quiz:
     - content: The *Azure Resource Group Deployment* task.
       isCorrect: true
       explanation: Correct. You can use the *Azure Resource Group Deployment* task to execute a deployment of a Bicep file.
-
+
