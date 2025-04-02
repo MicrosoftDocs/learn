@@ -28,7 +28,7 @@ The RADIUS server is deployed either on-premises or in your Azure VNet. During a
 
 ### Point-to-site connections (video)
 
-This video reviews the basics of point-to-site connections. The entire video is available in the [On Demand Instructor-led Training Series](/shows/on-demand-instructor-led-training-series/az-700-module-3).
+This video reviews the basics of point-to-site connections. 
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=d71189fa-2a1e-406d-baef-3e58adfa907a]
 

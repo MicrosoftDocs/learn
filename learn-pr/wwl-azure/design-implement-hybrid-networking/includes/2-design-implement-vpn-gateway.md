@@ -29,13 +29,13 @@ Factors that you need to consider during your planning process include:
 
 ### VPN Gateway planning (video)
 
-This video reviews the gateway basics of IP addressing and subnetting. The entire video is available in the [On Demand Instructor-led Training Series](/shows/on-demand-instructor-led-training-series/az-700-module-3).
+This video reviews the gateway basics of IP addressing and subnetting. 
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=f67524cf-ba8b-4e81-8fe3-29f75213d740]
 
 ### VPN Gateway SKUs
 
-When you create a VPN Gateway, you must select the [gateway SKU](/azure/vpn-gateway/about-gateway-skus). You can select a SKU that satifies your requirements based on the workload, throughput, feature, and SLAs. 
+When you create a VPN Gateway, you must select the [gateway SKU](/azure/vpn-gateway/about-gateway-skus). You can select a SKU that satisfies your requirements based on the workload, throughput, feature, and SLAs. 
 
 > [!TIP]
 > The Basic SKU has feature and performance limitations and shouldn't be used in  production environments. 
@@ -86,6 +86,6 @@ You can create an Azure VPN gateway in an active-active configuration. In the ac
 
 ### Gateway redundancy comparison (video)
 
-This video reviews VPN gateway redundancy options. The entire video is available in the [On Demand Instructor-led Training Series](/shows/on-demand-instructor-led-training-series/az-700-module-3).
+This video reviews VPN gateway redundancy options. 
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=bc399061-c874-4da9-8cb7-282d6d01f816]

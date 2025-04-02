@@ -27,6 +27,6 @@ This architecture isn't applicable in all situations because it uses an existing
 
 ### Implement a site-to-site VPN connection (video)
 
-This video reviews site-to-site connections. The entire video is available in the [AZ-700 Exam Readiness zone](/shows/exam-readiness-zone/preparing-for-az-700-design-implement-and-manage-connectivity-services-2-of-5).
+This video reviews site-to-site connections. 
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=cce9cc6b-a7b7-4b5b-9661-b5c666ce1bd7]
