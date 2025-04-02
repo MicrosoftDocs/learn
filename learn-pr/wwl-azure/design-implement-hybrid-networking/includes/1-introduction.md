@@ -4,7 +4,7 @@ Network architects and engineers ensure that communication between the on-premis
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you learn:
 
  -  Design and implement a site-to-site VPN connection.
  -  Design and implement a point-to-site VPN connection.
