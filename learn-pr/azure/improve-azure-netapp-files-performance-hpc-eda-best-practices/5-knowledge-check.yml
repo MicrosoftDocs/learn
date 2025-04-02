@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.improve-azure-netapp-files-performance-hpc-eda-best-practices.knowledge-check  
-title: Knowledge check
+title: Module assessment
 metadata:
   unitType: knowledge_check
-  title: Knowledge check 
+  title: Module assessment
   description: In this unit, you answer questions based on a scenario. 
   ms.date: 08/03/2023
   author: mengruts  

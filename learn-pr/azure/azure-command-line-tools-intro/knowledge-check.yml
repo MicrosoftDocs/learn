@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-command-line-tools-intro.knowledge-check
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   ms.published: 02/27/2023
   ms.date: 04/03/2024
   author: mikefrobbins
   ms.author: mirobb
   ms.topic: unit
-title: Knowledge check
+title: Module assessment
 durationInMinutes: 3
 quiz:
   title: Check your knowledge

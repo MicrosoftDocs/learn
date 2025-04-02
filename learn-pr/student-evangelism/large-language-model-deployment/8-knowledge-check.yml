@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.large-language-model-deployment.knowledge-check
 metadata:
-  title: "Knowledge check"
+  title: Module assessment
   description: Answer questions to see what you learned.
   ms.date: 09/25/2024
   author: softchris
   ms.author: chnoring
   ms.topic: unit
-title: "Knowledge check"
+title: Module assessment
 durationInMinutes: 3
 content: |
 quiz:

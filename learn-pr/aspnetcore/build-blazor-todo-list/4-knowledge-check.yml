@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-blazor-todo-list.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge about event handling and data binding in Blazor.
   ms.date: 09/30/2024
   author: danroth27

@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-azure-arc.6-knowledge-check
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   ms.date: 03/21/2025
   author: JnHs
   ms.author: jenhayes
   ms.topic: unit
   ms.custom: e2e-hybrid
-title: Knowledge check
+title: Module assessment
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]

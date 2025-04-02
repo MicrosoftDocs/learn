@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-storage-dotnet-aspire-app.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: "In this unit, you'll answer questions about using Azure Storage accounts in .NET Aspire to check the knowledge you've gained in this module."
   ms.date: 8/20/2024
   author: camsoper
