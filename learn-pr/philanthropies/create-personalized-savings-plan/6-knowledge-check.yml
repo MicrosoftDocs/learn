@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.apply-budgeting-method.check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Answer the following questions to see what you learned.
+  ms.date: 04/02/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+durationInMinutes: 5
+quiz:
+  title: Knowledge check
+  questions:
+  - content: Why is saving money important?
+    choices:
+    - content: It guarantees you always have enough money.
+      isCorrect: false
+      explanation: Incorrect. Saving helps prepare, but it doesn't guarantee this.
+    - content: It helps you be ready for future goals and unexpected expenses.
+      isCorrect: true
+      explanation: Correct! Saving builds financial security.
+    - content: It means you can stop budgeting.
+      isCorrect: false
+      explanation: Incorrect. Saving is part of budgeting, not a replacement.
+    - content: It lets you spend money freely.
+      isCorrect: false
+      explanation: Incorrect. Saving helps you spend wisely, not freely.
+
+  - content: Which saving strategy involves automatically transferring money into savings?
+    choices:
+    - content: Goal-Based Saving
+      isCorrect: false
+      explanation: Incorrect. This strategy focuses on setting goals.
+    - content: Piggy Bank Method 
+      isCorrect: false
+      explanation: Incorrect. This is about saving loose change.
+    - content: Automatic Savings 
+      isCorrect: true
+      explanation: Correct! This strategy ensures consistent saving.
+    - content: Savings Account
+      isCorrect: false
+      explanation: Incorrect. This involves storing money in a bank but not necessarily automatic transfers.
+
+  - content: What is one benefit of having a savings account?
+    choices:
+    - content: You can spend more money.
+      isCorrect: false
+      explanation: Incorrect. Savings accounts are for storing, not spending.
+    - content: Your money earns interest.
+      isCorrect: true
+      explanation: Correct! Savings accounts help your money grow.
+    - content: You don't need a saving plan. 
+      isCorrect: false
+      explanation: Incorrect. Savings accounts work best with a plan.
+    - content: It's easier to spend money quickly.
+      isCorrect: false
+      explanation: Incorrect. Savings accounts discourage impulsive spending.
+
+  - content: What is a key skill for sticking to a savings plan?
+    choices:
+    - content: Spending as much as possible. 
+      isCorrect: false
+      explanation: Incorrect. Saving requires reducing unnecessary spending.
+    - content: Consistency in saving money. 
+      isCorrect: true
+      explanation: Correct! Regular saving is essential for success.
+    - content: Relying on others to save for you. 
+      isCorrect: false
+      explanation: Incorrect. Saving is your responsibility.
+    - content: Ignoring your financial goals.
+      isCorrect: false
+      explanation: Incorrect. Goals motivate saving.

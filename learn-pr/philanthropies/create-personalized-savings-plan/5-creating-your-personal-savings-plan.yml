@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.create-personalized-savings-plan.creating-your-personal-savings-plan
+title: Creating Your Personal Savings Plan
+metadata:
+  title: Creating Your Personal Savings Plan
+  description: This content is a part of the Create a personalized savings plan to work toward a financial goal.
+  ms.date: 04/02/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/5-creating-your-personal-savings-plan.md)]
