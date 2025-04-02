@@ -12,7 +12,7 @@ The completions endpoint is the core component of the API service. This API prov
 
 ## Text completions
 
-In this unit we'll learn about text completions. The completions endpoint can be used for a wide variety of tasks. It provides a simple but powerful text-in, text-out interface to any of the Azure OpenAI models. You input some text as a prompt, and the model generates a text completion that attempts to match whatever context or pattern you gave it. For example, if you give the API the prompt, "As Descartes said, I think, therefore", it returns the completion " I am" with high probability.
+In this unit, we'll learn about text completions. The completions endpoint can be used for a wide variety of tasks. It provides a simple but powerful text-in, text-out interface to any of the Azure OpenAI models. You input some text as a prompt, and the model generates a text completion that attempts to match whatever context or pattern you gave it. For example, if you give the API the prompt, "As Descartes said, I think, therefore", it returns the completion " I am" with high probability.
 
 The actual completion results you see may differ because the AI is stochastic by default. In other words, you might get a slightly different completion every time you call it, even if your prompt stays the same.
 
@@ -72,7 +72,7 @@ Sentiment classifications:
 1.
 ```
 
-After showing the model 4 examples of a sentence classified by sentiment, we then provide it a list of examples and then a list of sentiment ratings with the same number index. The API is able to pick up from this how it is supposed to output the classified sentiments.
+After showing the model 4 examples of a sentence classified by sentiment, we then provide it a list of examples and then a list of sentiment ratings with the same number index. The API is able to pick up from this how it's supposed to output the classified sentiments.
 
 That leads us to what we want the model to do: we give it five sentiments to classify, and then it should output the classification of each in an ordered list.
 
@@ -86,7 +86,7 @@ One of the most powerful yet simplest tasks you can accomplish with the various 
 
 ### Conversation
 
-The model is extremely adept at carrying on conversations with humans and even with itself. With just a few lines of instruction, we've seen the model perform as a customer service chatbot that intelligently answers questions without ever getting flustered, or a wise-cracking conversation partner that makes jokes and puns.
+The model is adept at carrying on conversations with humans and even with itself. With just a few lines of instruction, we've seen the model perform as a customer service chatbot that intelligently answers questions without ever getting flustered, or a wise-cracking conversation partner that makes jokes and puns.
 
 ### Transformation
 
@@ -94,11 +94,11 @@ The model is a language model that is familiar with a variety of ways that words
 
 #### Translation
 
-The model already has a grasp of many languages, such as French, so you do not need to teach it. Instead, you just need to provide it enough examples of the translation in the prompt so it understands that it's translating from one language to another.
+The model already has a grasp of many languages, such as French, so you don't need to teach it. Instead, you just need to provide it enough examples of the translation in the prompt so it understands that it's translating from one language to another.
 
 #### Conversion
 
-In this example we convert the name of a movie into emoji. This shows the adaptability of the model to picking up patterns and working with other characters.
+In this example, we convert the name of a movie into emoji. This shows the adaptability of the model to picking up patterns and working with other characters.
 
 Here we expect the output to be an emoji representation of the Spider-Man movie.
 
@@ -130,7 +130,7 @@ Vertical farming provides a novel solution for producing food locally, reducing 
 
 Large language models (LLMs) have a lot of knowledge that they've learned from the data they trained on. They also have the ability to provide responses that sound real but are in fact made up. There are two ways to limit the likelihood of LLMs making up an answer.
 
-* **1. Provide a ground truth for the API.**: If you provide the model with a body of text to answer questions about (like a Wikipedia entry) it's less likely to confabulate a response.
+* **1. Provide a ground truth for the API.**: If you provide the model with a body of text to answer questions about (like a Wikipedia entry), it's less likely to confabulate a response.
 
 * **2. Use a low probability and show the API how to say "I don't know."**: If the model understands that in cases where it's less certain about a response that saying "I don't know" or some variation is appropriate, it's less inclined to make up answers.
 

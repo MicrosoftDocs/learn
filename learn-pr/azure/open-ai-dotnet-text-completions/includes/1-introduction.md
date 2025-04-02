@@ -4,6 +4,6 @@ You input some text as a prompt, and the model generates a completion that attem
 
 At a practical level, the prompt-based models allow you to develop applications that enable users to ask questions of the model as free-form text, and the model responds with the answer. GPT-3.5 and GPT-4 are even capable of having multi-turn conversations with the users of your application.
 
-For example, imagine you want to build an AI that recommends hikes to people based on the preferences they enter for the hike. The AI could ask them what attributes they are looking for, and then respond based on what they input.
+For example, imagine you want to build an AI that recommends hikes to people based on the preferences they enter for the hike. The AI could ask them what attributes they're looking for, and then respond based on what they input.
 
 Let's take a deeper look at both text and completions, how to improve completion quality, and build a simple application that can use Azure OpenAI to chat with the model to get hiking recommendations.

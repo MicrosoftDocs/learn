@@ -6,7 +6,7 @@ Let's update the hiking recommendation application we started in the previous ex
 
 When classifying a product review, we only want the model to tell us if the review is positive, neutral, or negative. Let's update the prompt the model receives so it has the best chance of providing a high-quality response.
 
-The current system prompt is OK, but we can get the model to recommend more appropriate and exciting hikes by following best practices in prompt construction. Let's make the instructions on how the model should act a bit more clear.
+The current system prompt is OK, but we can get the model to recommend more appropriate and exciting hikes by following best practices in prompt construction. Let's make the instructions on how the model should act clearer.
 
 ### Add instructions
 
@@ -26,7 +26,7 @@ The current system prompt is OK, but we can get the model to recommend more appr
 
 ### Add primary content
 
-The primary content refers to the text that is being transformed by the model and what to do with it. In this case the hiking recommendations themselves.
+The primary content refers to the text that the model is transforming and what to do with it. In this case, the hiking recommendations themselves.
 
 1. Update the `systemPrompt` variable to instruct the model what to do with the content.
 

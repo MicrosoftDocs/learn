@@ -13,7 +13,7 @@ The first step is to create the Azure OpenAI resource and deploy the model. Let'
 * An Azure subscription
 * Access granted to Azure OpenAI in the desired subscription
 
-    Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing the form at [https://aka.ms/oai/access](https://aka.ms/oai/access).
+    Currently, you can gain access to this service only by application. You can apply for access to Azure OpenAI by completing the form at [https://aka.ms/oai/access](https://aka.ms/oai/access).
 * [Azure CLI installed](/cli/azure/install-azure-cli)
 
 ### Create a resource and deploying a model
@@ -71,7 +71,7 @@ Creating the resource and deploying the model is a multi-step process. Use the A
 
     ::: zone-end
 
-1. Next we want to deploy the GPT-35-Turbo model to the OpenAI resource we created. Call the model deployment **HikingRecommendationTurbo**. Note we're using **HikingConversations-RG** as the resource group name and **HikingConversationsAI** as the OpenAI resource name. If you used different values make sure you substitute those values.
+1. Next we want to deploy the GPT-35-Turbo model to the OpenAI resource we created. Call the model deployment **HikingRecommendationTurbo**. Note we're using **HikingConversations-RG** as the resource group name and **HikingConversationsAI** as the OpenAI resource name. If you used different values, make sure you substitute those values.
 
     ::: zone pivot="cli"
 
@@ -97,7 +97,8 @@ Creating the resource and deploying the model is a multi-step process. Use the A
     -n HikingConversationsAI `
     --deployment-name HikingRecommendationTurbo `
     --model-name gpt-35-turbo `
-    --model-version "0125" `
+    --model-version "0125"
+    --model-format OpenAI `
     --sku-capacity 1
     --sku-name "Standard"
     ```
@@ -170,7 +171,7 @@ Next up we want to create a bare bones .NET Console application and add the Azur
     cd HikingConversationsAI
     ```
 
-1. Then add the Azure Open AI SDK.
+1. Then add the Azure OpenAI SDK.
 
     ```dotnetcli
     dotnet add package Azure.AI.OpenAI --prerelease
@@ -188,7 +189,7 @@ Next up we want to create a bare bones .NET Console application and add the Azur
     string openAIDeploymentName = "HikingRecommendationTurbo";
     ```
 
-    In the steps above, we named the deployment **HikingRecommendationTurbo**. If you used a different value make sure you use that instead.
+    In the preceding steps, we named the deployment **HikingRecommendationTurbo**. If you used a different value, make sure you use that instead.
 1. Finally, instantiate the class needed to communicate with the Azure OpenAI resource.
 
     ```csharp
@@ -243,7 +244,7 @@ Next we'll send the first message to the model, initiating the conversation.
     Console.WriteLine($"User >>> {userGreeting}");
     ```
 
-1. Now you will need to get a reference to the `ChatClient` object. This object is responsible for facilitating chat conversations with the model. As such, you'll need to tell the Azure OpenAI Client object which model that you deployed you want to use.
+1. Now you'll need to get a reference to the `ChatClient` object. This object is responsible for facilitating chat conversations with the model. As such, you'll need to tell the Azure OpenAI Client object which model that you deployed you want to use.
 
     ```csharp
     var chatClient = openAIClient.GetChatClient(openAIDeploymentName);

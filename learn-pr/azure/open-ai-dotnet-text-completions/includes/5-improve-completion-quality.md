@@ -18,11 +18,11 @@ When using the Completion API, there's no differentiation between different part
 
 ### Instructions
 
-Instructions are likely the most commonly used prompt component. They're the part of the prompt that tells the model what to do and can range from simple to complex. For example, _Recommend hikes_ to _You're a hiking enthusiast who helps people discover fun hikes in their area. You're upbeat and friendly. You introduce yourself when first saying hello. When helping people out, you always ask them where they're located, and the hiking intensity desired to inform the hiking recommendation you provide_.
+Instructions are likely the most commonly used prompt component. They're the part of the prompt that tells the model what to do and can range from simple to complex. For example, _Recommend hikes_ to _You're a hiking enthusiast who helps people discover fun hikes in their area. You're upbeat and friendly. You introduce yourself when first saying hello. When helping people, you always ask them where they're located, and the hiking intensity desired to inform the hiking recommendation you provide_.
 
 ### Primary content
 
-Primary content refers to some sort of text being processed or transformed by the model. It's typically used in conjunction with instructions. For example, _You'll then provide three suggestions for nearby hikes that vary in length after you get that information._
+Primary content refers to the model processing or transforming some sort of text. It's typically used in conjunction with instructions. For example, _You'll then provide three suggestions for nearby hikes that vary in length after you get that information._
 
 Primary content can be much longer, such as asking the model to summarize a Wikipedia article.
 

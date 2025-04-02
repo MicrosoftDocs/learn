@@ -32,7 +32,7 @@ You can customize the system role for your use case or just include basic instru
 
 ### The user and assistant roles
 
-The conversation happens between a user and the assistant. The user is the person entering prompts and interacting with the model. The responses from the model are represented by the system role.
+The conversation happens between a user and the assistant. The user is the person entering prompts and interacting with the model. The system role represents the responses from the model.
 
 The message the user sends to the model should follow best practices for designing prompts in order to get the highest quality responses.
 
@@ -44,7 +44,7 @@ Here are a few examples of different styles of prompts that you could use with t
 
 If you want the GPT-35-Turbo model to behave similarly to [chat.openai.com](https://chat.openai.com), you can use a basic system message like "Assistant is a large language model trained by OpenAI."
 
-We'll learn how to use the Chat Completion API's .NET SDK in the next unit. For now we'll stick with variable names as an example.
+We'll learn how to use the Chat Completion API's .NET SDK in the next unit. For now, we'll stick with variable names as an example.
 
 ```csharp
 

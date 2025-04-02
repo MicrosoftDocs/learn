@@ -19,8 +19,8 @@ quiz:
     choices:
     - content: Transformation
       isCorrect: false
-      explanation: Transformation allows the model to summarize, convert and express data in different ways.
-    - content: Sort data into pre-defined categories
+      explanation: Transformation allows the model to summarize, convert, and express data in different ways.
+    - content: Sort data into predefined categories
       isCorrect: true
       explanation: Classification instructs the model what category to sort the data into and provides some examples.
     - content: Translation
