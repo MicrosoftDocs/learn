@@ -67,7 +67,7 @@ Take the following steps to enable Conditional Access:
 
 1. Select **Next** and in the **Assignments** tab, select the groups, users, or devices to assign the policy to. Or select groups to exclude from the policy.
 
-1. Select **Next** until you can select **Create**, and Create to save your changes (and create the policy).
+1. Select **Next**, and then select **Create**, to save your changes (and create the policy).
 
     >[!NOTE:] You can also create and assign policies the *Microsoft Intune admin center*, **Endpoint security**, *Device compliance* section.
 
