@@ -10,7 +10,7 @@ Let's explore some age-appropriate tools! Below are examples of apps, websites, 
 1. **Budgeting Apps**:
 
    - YNAB for Teens: Learn budgeting skills interactively.
-   - Goodbudget: Digital envelope budgeting for teens and families.
+   - Good budget: Digital envelope budgeting for teens and families.
 
 1. **Interactive Websites**:
 

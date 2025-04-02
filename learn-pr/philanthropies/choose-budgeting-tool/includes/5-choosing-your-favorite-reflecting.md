@@ -27,7 +27,7 @@ Interactive Activity:
 
 1. **Choose a Budgeting Tool to Feature**
 
-   - Pick a budgeting tool you like (e.g., **Mint, YNAB, EveryDollar, Microsoft Excel**).
+   - Pick a budgeting tool you like (for example, **Mint, YNAB, EveryDollar, Microsoft Excel**).
    - Add the tool's **name** and a **brief description** of what it does.
 
 1. **Highlight Key Features**
@@ -58,8 +58,8 @@ Interactive Activity:
 Ask Copilot Activity:
 
 1. Open Microsoft Copilot.
-1. Identify the budgeting app you are currently using or interested in exploring.
-1. Ask Copilot: "What are some additional budgeting tools or features in [chosen app] that I might not have explored?"
+1. Identify the budgeting app you're currently using or interested in exploring.
+1. Ask Copilot: "What are some additional budgeting tools or features in the [chosen app] that I might not explore?"
 1. Review the features Copilot provides, such as savings trackers, spending alerts, or goal-setting tools.
 1. Ask Copilot: "How can these features help me manage my money better?"
 1. Look up the features in your app and explore how to activate or use them.
