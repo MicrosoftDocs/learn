@@ -16,46 +16,46 @@ quiz:
     choices:
     - content: "It returns the size of the specified directory."
       isCorrect: false
-      explanation: "Incorrect.` Directory.GetFiles` does not provide information about the size of a directory."
+      explanation: "Incorrect.` Directory.GetFiles` doesn't provide information about the size of a directory."
     - content: "It returns the names of subdirectories within the specified directory."
       isCorrect: false
-      explanation: "Incorrect. This is the behavior of `Directory.GetDirectories`, not `Directory.GetFiles`."
+      explanation: "Incorrect. Returning subdirectories is the behavior of `Directory.GetDirectories`, not `Directory.GetFiles`."
     - content: "It returns the names of files within the specified directory."
       isCorrect: true
       explanation: "Correct. `Directory.GetFiles` returns an array of full file names including paths."
   - content: "What is the purpose of the `StreamReader` and `StreamWriter` classes in C#?"
     choices:
-    - content: "They are used to establish network connections for data transmission."
+    - content: "They're used to establish network connections for data transmission."
       isCorrect: false
       explanation: "Incorrect. `StreamReader` and `StreamWriter` are used for handling text data in streams, not for establishing network connections."
-    - content: "They are used to read and write binary data from and to a stream."
+    - content: "They're used to read and write binary data from and to a stream."
       isCorrect: false
-      explanation: "Incorrect. `StreamReader` and `StreamWriter` are specifically designed for reading and writing text data, not binary data."
-    - content: "They are used to read characters from a byte stream and write characters to a stream in a specific encoding."
+      explanation: "Incorrect. `StreamReader` and `StreamWriter` are designed for reading and writing text data, not binary data."
+    - content: "They're used to read characters from a byte stream and write characters to a stream in a specific encoding."
       isCorrect: true
       explanation: "Correct. The `StreamReader` class is used to read characters from a byte stream in a particular encoding, while the `StreamWriter` class is used to write characters to a stream in a specific encoding."
   - content: "What is the purpose of the `FileStream.Seek` method in C#?"
     choices:
-    - content: "It is used to write to a file."
+    - content: "It's used to write to a file."
       isCorrect: false
-      explanation: "Incorrect. `FileStream.Seek` does not write to a file, it changes the current position of the `FileStream` object."
-    - content: "It is used to change the current position of the `FileStream` object."
+      explanation: "Incorrect. The `FileStream.Seek` method doesn't write to a file."
+    - content: "It's used to change the current position of the `FileStream` object."
       isCorrect: true
-      explanation: "Correct. `FileStream.Seek` changes the current position of the `FileStream` object."
-    - content: "It is used to close a file."
+      explanation: "Correct. The `FileStream.Seek` method changes the current position of the `FileStream` object."
+    - content: "It's used to close a file."
       isCorrect: false
-      explanation: "Incorrect. `FileStream.Seek` does not close a file, it changes the current position of the `FileStream` object."
+      explanation: "Incorrect. The `FileStream.Seek` method doesn't close a file."
   - content: "What are some common use cases for the `BinaryReader` and `BinaryWriter` classes in .NET?"
     choices:
-    - content: "They are used for creating and managing databases."
+    - content: "They're used for creating and managing databases."
       isCorrect: false
-      explanation: "Incorrect. While they can handle data, `BinaryReader` and `BinaryWriter` are not specifically designed for database management."
-    - content: "They are used for handling binary data such as configuration files, data serialization, multimedia storage, network communication, and file compression."
+      explanation: "Incorrect. While they can handle data, `BinaryReader` and `BinaryWriter` aren't designed for database management."
+    - content: "They're used for handling binary data such as configuration and multimedia files."
       isCorrect: true
-      explanation: "Correct. `BinaryReader` and `BinaryWriter` are designed for reading and writing binary data, which includes use cases like configuration files, data serialization, multimedia storage, network communication, and file compression."
-    - content: "They are used for reading and writing text files."
+      explanation: "Correct. `BinaryReader` and `BinaryWriter` are designed for reading and writing binary data, which includes configuration and multimedia files."
+    - content: "They're used for reading and writing text files."
       isCorrect: false
-      explanation: "Incorrect. `BinaryReader` and `BinaryWriter` are not typically used for text files, but for handling binary data."
+      explanation: "Incorrect. `BinaryReader` and `BinaryWriter` aren't typically used for text files."
   - content: "What classes are used to create and manage directories and files in a C# app?"
     choices:
     - content: "`BinaryWriter` and `BinaryReader` classes."
