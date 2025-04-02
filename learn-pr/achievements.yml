@@ -5625,3 +5625,8 @@ achievements:
   title: Guided project langstons ant
   summary: This module will guide you through the steps required to develop your own Langston's Ant project. Your code will use interfaces to represent the functions the ants can perform.
   iconUrl: /training/achievements/guided-project-langstons-ant.svg
+- uid: learn.permissions-management.explore-features-of-permissions-management.badge
+  type: badge
+  title: Explore the many features of Microsoft Entra Permissions Management
+  summary: While diving deeper into the features of Microsoft Entra Permissions Management, we use the framework of discover, remediate, monitor as a guide to help walkthrough how the Permissions Management features set can benefit your organization.
+  iconUrl: /training/achievements/2-explore-features-of-permissions-management.svg
