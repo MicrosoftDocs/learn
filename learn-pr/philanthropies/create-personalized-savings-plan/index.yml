@@ -3,7 +3,7 @@ uid: learn.philanthropies.create-personalized-savings-plan
 
 metadata:
   title: Create a personalized savings plan to work toward a financial goal
-  description: Learn how to build a strong financial foundation by exploring practical saving strategies. Discover how small steps today can lead to achieving big goals tomorrow.
+  description: Learn how to build a strong financial foundation by exploring practical saving strategies. Discover how small steps today can lead to achieving large goals tomorrow.
   ms.date: 04/02/2025
   author: kprks
   ms.author: v-kperkes
@@ -11,7 +11,7 @@ metadata:
   ms.service: artificial-intelligence
 
 title: Create a personalized savings plan to work toward a financial goal
-summary: This module introduces students to the importance of saving and various strategies to help them save effectively. By the end, students will have a personalized saving plan to help them reach their goals and build long-term financial habits.
+summary: This module introduces students to the importance of saving and various strategies to help them save effectively. By the end, students have a personalized saving plan to help them reach their goals and build long-term financial habits.
 
 abstract: |
   - Understand why saving money is essential for achieving future goals.
