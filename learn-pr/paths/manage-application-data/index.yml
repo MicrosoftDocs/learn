@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.wwl.manage-application-data
+metadata:
+  title: Manage Application Data
+  description: Learn to utilize C# methods for date and time, collection types, structs, records, generics, and anonymous types.
+  ms.date: 04/02/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: learning-path
+title: Manage application data
+prerequisites: |
+  -   Visual Studio Code installed with the C# Dev Kit.
+  -   Basic knowledge of the Visual Studio Code IDE.
+  -   Basic understanding of the C# programming language.
+  -   Familiar with classes, abstract classes, interfaces and inheritance.
+summary: |
+  Discover powerful tools for data handling in C#. Learn to utilize C# methods for date and time, collection types, structs, records, generics, and anonymous types.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- dotnet
+modules:
+- learn.wwl.get-started-with-dates-times-time-zones
+- learn.wwl.implement-collection-types
+- learn.wwl.implement-enum-struct-record-types
+- learn.wwl.get-started-generic-anonymous-types
+trophy:
+  uid: learn.wwl.manage-application-data.trophy
