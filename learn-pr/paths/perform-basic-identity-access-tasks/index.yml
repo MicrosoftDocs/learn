@@ -2,12 +2,7 @@
 uid: learn.wwl.perform-basic-identity-access-tasks
 metadata:
   title: Perform Basic Identity and Access Tasks
-  description: |-
-    Learn to create and manage identity and access
-
-    using Microsoft Entra ID. Explore the basics of creating users, groups,
-
-    and how to control access with conditional access.
+  description: Learn to create and manage identity and access using Microsoft Entra ID. Explore the basics of creating users, groups, and how to control access with conditional access.
   ms.date: 04/02/2025
   author: wwlpublish
   ms.author: roberts
