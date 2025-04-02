@@ -2,7 +2,7 @@ This exercise guides you through the implementation file management tasks using 
 
 - Create and enumerate directories and files using the `Path`, `Directory`, and `File` classes.
 - Perform file management tasks using the `File` class.
-- Read and write CSV files using the `StreamWriter` amd `StreamReader` classes.
+- Read and write CSV files using the `StreamWriter` and `StreamReader` classes.
 - Perform low-level file input and output operations using the `FileStream` class.
 - Create and read binary files using the `BinaryWriter` and `BinaryReader` classes.
 

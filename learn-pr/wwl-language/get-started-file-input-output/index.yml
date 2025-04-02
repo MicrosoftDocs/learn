@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-file-input-output
 metadata:
   title: Get started with file input and output
   description: "Learn how to manage local files and directories using the System.IO classes, and how to store and retrieve C# objects using CSV files and the StreamReader and StreamWriter classes."
-  ms.date: 04/01/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module-intro-to-product
