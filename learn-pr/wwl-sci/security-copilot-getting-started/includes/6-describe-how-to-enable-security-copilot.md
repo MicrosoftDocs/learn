@@ -7,7 +7,11 @@ To start using Microsoft Security Copilot, organizations need to take steps to o
 
 ### Provision capacity
 
-Microsoft Security Copilot is sold as a consumptive offering, meaning that customers are billed monthly based on a provisioned capacity that is billed by the hour. The capacity that is provisioned is referred to as a security compute unit (SCU). An SCU is the unit of measure of computing power used to run Copilot in both the standalone and embedded experiences.
+Security Copilot operates on a provisioned capacity and an overage model. Provisioned capacity is billed by the hour while the overage capacity is billed on usage.
+
+You can flexibly provision Security Compute Units (SCUs) to accommodate regular workloads and adjust them anytime without long-term commitments. An SCU is the unit of measure of computing power used to run Copilot in both the standalone and embedded experiences.
+
+To manage unexpected demand spikes, you can allocate an overage amount to ensure that additional SCUs are available when initially provisioned units are depleted during unexpected workload spikes. Overage units are billed on-demand and can be set as unlimited or a maximum amount. This approach enables predictable billing while providing the flexibility to handle both regular and unexpected usage.  See the summary and resources section of this module for links to information on Managing security compute unit usage and Security Copilot pricing.
 
 Before users can start using Copilot, admins need to provision and allocate capacity. To provision capacity:
 
