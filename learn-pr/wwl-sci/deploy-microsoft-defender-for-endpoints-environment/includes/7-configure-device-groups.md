@@ -30,7 +30,7 @@ To create a device group:
 
 1. Select **+ Add device group**.
 
-1. Enter the group name and automation settings and specify the matching rule that determines which devices belong to the group. See How the automated investigation starts.
+1. Enter the group name and remediation settings and specify the matching rule that determines which devices belong to the group. See How the automated investigation starts.
 
 1. Preview several devices that will be matched by this rule. If you're satisfied with the rule, select the User access tab.
 

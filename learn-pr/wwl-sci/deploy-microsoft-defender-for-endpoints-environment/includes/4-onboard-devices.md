@@ -1,6 +1,6 @@
 ## Configure Device discovery
 
-When accessing your Microsoft Defender portal settings for Endpoints for the first time, the first step is to configure Device discovery. You must be a global administrator or security administrator for the tenant.
+When accessing your Microsoft Defender portal settings for Endpoints for the first time, the first step is to configure Device discovery. You must be a Security Administrator for the tenant.
 
 1. On the **Microsoft Defender XDR** portal, from the navigation menu, select **Settings** from the left.
 
