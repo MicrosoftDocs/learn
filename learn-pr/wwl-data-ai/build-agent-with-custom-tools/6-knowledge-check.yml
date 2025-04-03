@@ -14,7 +14,7 @@ quiz:
   questions:
   - content: "What are custom tools, and how can they help you develop effective agents with Azure AI Agent Service?"  
     choices:  
-    - content: "Callable functions that an agent to use to extend its capabilities."  
+    - content: "Callable functions that an agent can use to extend its capabilities."  
       isCorrect: true  
       explanation: "Correct. Custom tools extend the capabilities of your agents by enabling them to call external functions."  
     - content: "Extensions for Visual Studio Code that make it easier to create and deploy agents."  
