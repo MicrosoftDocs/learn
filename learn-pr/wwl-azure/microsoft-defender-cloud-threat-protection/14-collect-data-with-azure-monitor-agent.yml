@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Collect data with Azure Monitor Agent
   description: "Collect data with Azure Monitor Agent"
-  ms.date: 04/02/2025
+  ms.date: 04/03/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

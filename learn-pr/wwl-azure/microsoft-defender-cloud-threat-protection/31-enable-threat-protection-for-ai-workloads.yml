@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Enable threat protection for AI workloads in Defender for Cloud
   description: "Enable threat protection for AI workloads in Defender for Cloud"
-  ms.date: 04/02/2025
+  ms.date: 04/03/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

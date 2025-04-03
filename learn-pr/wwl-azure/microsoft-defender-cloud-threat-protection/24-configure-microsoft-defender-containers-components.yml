@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Configure Microsoft Defender for Containers components
   description: "Configure Microsoft Defender for Containers components"
-  ms.date: 04/02/2025
+  ms.date: 04/03/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

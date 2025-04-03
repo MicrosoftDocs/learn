@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Deploy Microsoft Defender for Storage
   description: "Deploy Microsoft Defender for Storage"
-  ms.date: 04/02/2025
+  ms.date: 04/03/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

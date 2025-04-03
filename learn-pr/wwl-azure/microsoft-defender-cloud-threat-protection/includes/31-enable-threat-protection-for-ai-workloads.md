@@ -36,10 +36,10 @@ User prompt evidence consists of prompts and model responses. Both are considere
 4.  Select the relevant Azure subscription.
 5.  Locate AI workloads and select Settings.
 
-:::image type="content" source="../media/ai-workloads-defender-cloud-full-settings-monitoring.png" alt-text="Screenshot showing an example of AI workloads full settings.":::
+:::image type="content" source="../media/ai-workloads-full-settings.png" alt-text="Screenshot showing an example of AI workloads full settings.":::
 
 6.  Toggle Enable user prompt evidence to On.
 
-:::image type="content" source="../media/prompt-evidence-status.png" alt-text="Screenshot showing an example of the prompt evidence status settings.":::
+:::image type="content" source="../media/enable-suspicious-prompt-evidence.png" alt-text="Screenshot showing an example of the prompt evidence status settings.":::
 
 7.  Select Continue.
