@@ -4,7 +4,7 @@ title: How to integrate custom tools
 metadata:
   title: How to integrate custom tools
   description: "Learn how to integrate custom tools into your agent. This unit covers function calling, Azure Function integration, and OpenAPI specification integration."
-  ms.date: 3/11/2025
+  ms.date: 04/03/2025
   author: ivorb
   ms.author: berryivor
   ms.topic: unit
