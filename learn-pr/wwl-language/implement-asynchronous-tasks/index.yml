@@ -1,0 +1,61 @@
+### YamlMime:Module
+uid: learn.wwl.implement-asynchronous-tasks
+metadata:
+  title: Implement asynchronous tasks
+  description: "Learn how to implement asynchronous tasks in C# apps using the async and await keywords and how to run asynchronous tasks in parallel."
+  ms.date: 04/03/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: module-intro-to-product
+  ms.service: dotnet-csharp
+  ms.subservice: fundamentals
+  ms.devlang: csharp
+  ai-usage: human-only
+title: Implement asynchronous tasks
+summary: Learn how to implement asynchronous tasks in C# apps using the async and await keywords and how to run asynchronous tasks in parallel.
+abstract: |
+  -   Implement asynchronous programming in C# using the `async` and `await` keywords.
+
+  -   Perform asynchronous file input and output operations and access web resources asynchronously in C#.
+
+  -   Use the Task Parallel Library (TPL) in C# for parallel programming and managing concurrent data structures.
+
+  -   Identify common pitfalls in parallel programming and handle exceptions in async and parallel tasks.
+
+  -   Implement data parallelism in a C# application as part of a hands-on exercise.
+prerequisites: |
+  -   An installation of Visual Studio Code with the C# Dev Kit extension installed.
+
+  -   The ability to develop object-oriented programs in C# that implement classes, interfaces, class inheritance, and polymorphic behavior.
+
+  -   The ability to manage collections, structs, records, generics, dates and times, and anonymous types.
+
+  -   A basic understanding of file input and output operations using the System.IO classes.
+
+  -   A basic understanding of JSON serialization and deserialization&nbsp;using System.Text.Json classes and Data Transfer Objects.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- dotnet
+- vs-code
+subjects:
+- app-development
+- custom-app-development
+units:
+- learn.wwl.implement-asynchronous-tasks.introduction
+- learn.wwl.implement-asynchronous-tasks.get-started-asynchronous-programming
+- learn.wwl.implement-asynchronous-tasks.implement-asynchronous-file-input-output
+- learn.wwl.implement-asynchronous-tasks.access-web-resources-asynchronously
+- learn.wwl.implement-asynchronous-tasks.run-asynchronous-tasks-parallel
+- learn.wwl.implement-asynchronous-tasks.manage-asynchronous-parallel-tasks
+- learn.wwl.implement-asynchronous-tasks.exercise-implement-async-tasks
+- learn.wwl.implement-asynchronous-tasks.knowledge-check
+- learn.wwl.implement-asynchronous-tasks.summary
+badge:
+  uid: learn.wwl.implement-asynchronous-tasks.badge

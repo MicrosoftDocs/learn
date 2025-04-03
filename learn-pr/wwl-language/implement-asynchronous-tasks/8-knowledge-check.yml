@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-asynchronous-tasks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/03/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of using the `async` and `await` keywords in C# for file I/O operations?"
+    choices:
+    - content: "To create asynchronous methods that can perform file I/O operations without blocking the main thread."
+      isCorrect: true
+      explanation: "Correct. The `async` and `await` keywords allow for the creation of asynchronous methods that perform file I/O operations without blocking the main thread, improving application performance and responsiveness."
+    - content: "To perform file I/O operations synchronously."
+      isCorrect: false
+      explanation: "Incorrect. The `async` and `await` keywords are used to perform operations asynchronously, not synchronously."
+    - content: "To block the main thread until the file I/O operation is complete."
+      isCorrect: false
+      explanation: "Incorrect. The `async` and `await` keywords are used to perform operations without blocking the main thread."
+  - content: "What is the purpose of the `HttpClient` class in C#?"
+    choices:
+    - content: "To make non-blocking calls to web resources asynchronously."
+      isCorrect: true
+      explanation: "Correct. The `HttpClient` class in C# is designed for asynchronous use, allowing non-blocking calls to web resources."
+    - content: "To create multiple instances for each request to web resources."
+      isCorrect: false
+      explanation: "Incorrect. It's recommended to create a single instance of `HttpClient` and use it throughout the application to improve performance and resource management."
+    - content: "To block the UI thread while making calls to web resources."
+      isCorrect: false
+      explanation: "Incorrect. The `HttpClient` class is designed for asynchronous use, allowing non-blocking calls to web resources."
+  - content: "What is the purpose of the Task Parallel Library (TPL) in C#?"
+    choices:
+    - content: "To provide a set of public types and APIs for managing database connections."
+      isCorrect: false
+      explanation: "Incorrect. The TPL does not manage database connections. It simplifies the process of adding parallelism and concurrency to applications."
+    - content: "To provide a set of public types and APIs in the `System.Threading` and `System.Threading.Tasks` namespaces that simplify the process of adding parallelism and concurrency to applications."
+      isCorrect: true
+      explanation: "Correct. The TPL is designed to make developers more productive by simplifying the process of adding parallelism and concurrency to applications."
+    - content: "To provide a set of public types and APIs for handling user interface events."
+      isCorrect: false
+      explanation: "Incorrect. The TPL is not designed for handling user interface events. It's used for simplifying the process of adding parallelism and concurrency to applications."
+  - content: "What is a common pitfall in data and task parallelism?"
+    choices:
+    - content: "Avoiding writing to shared memory locations."
+      isCorrect: false
+      explanation: "Incorrect. Writing to shared memory locations in parallel tasks can lead to race conditions and should be avoided."
+    - content: "Assuming parallel is always faster."
+      isCorrect: true
+      explanation: "Correct. It's a common pitfall to assume that parallel tasks always run faster than sequential ones."
+    - content: "Assuming parallel is always slower."
+      isCorrect: false
+      explanation: "Incorrect. It's a common misconception that parallel is always faster, not slower."
+  - content: "What is the purpose of using `Parallel.ForEachAsync` and `Task.WhenAll` in a C# application?"
+    choices:
+    - content: "To connect the application to a database."
+      isCorrect: false
+      explanation: "Incorrect. These methods aren't used for database connections, but for managing tasks."
+    - content: "To implement data parallelism."
+      isCorrect: true
+      explanation: "Correct. `Parallel.ForEachAsync` and `Task.WhenAll` are used to manage multiple tasks concurrently, implementing data parallelism."
+    - content: "To create a user interface for the application."
+      isCorrect: false
+      explanation: "Incorrect. These methods aren't used for creating user interfaces, but for managing tasks."

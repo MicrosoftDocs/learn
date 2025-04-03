@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-asynchronous-tasks.exercise-implement-async-tasks
+title: 'Exercise - '
+metadata:
+  title: Exercise -
+  description: "Exercise -"
+  ms.date: 04/03/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/7-exercise-implement-async-tasks.md)]
