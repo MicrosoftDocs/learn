@@ -8,13 +8,7 @@ The Azure Well-Architected Framework is a set of guiding tenets to build high-qu
 
 These concepts aren't all-inclusive, but focusing on them can help you build a reliable, secure, and flexible foundation for your application.
 
-The Azure Well-Architected Framework consists of five pillars:
-
-- Reliability
-- Security
-- Cost Optimization
-- Operational Excellence
-- Performance Efficiency
+The Azure Well-Architected Framework consists of five pillars.
 
 ![An illustration that shows the pillars of the Azure Well-Architected Framework.](../media/pillars.png)
 
@@ -48,29 +42,7 @@ It's important to make sure that your workload can handle changes in demand. Whe
 
 ![An illustration that shows how resources in the cloud scale dynamically based on demand, resulting in highly efficient usage. When resources are implemented at a fixed level, it results in inefficient usage during low demand and shortage during high demand.](../media/performance-demand.png)
 
-## General design principles
-
-In addition to each of these pillars, there are some consistent design principles that you should consider throughout your architecture.
-
-- **Enable architectural evolution**: No architecture is static. Allow for the evolution of your architecture by taking advantage of new services, tools, and technologies when they're available.
-
-- **Use data to make decisions**: Collect data, analyze it, and use it to make decisions surrounding your architecture. From cost data, to performance, to user load, using data can guide you to make the right choices in your environment.
-
-- **Educate and enable**: Cloud technology evolves quickly. Educate your development, operations, and business teams to help them make the right decisions and build solutions to solve business problems. Document and share configurations, decisions, and best practices within your organization.
-
-- **Automate**: Automation of manual activities reduces operational costs, minimizes error introduced by manual steps, and provides consistency between environments.
-
-## Shared responsibility
-
-Moving to the cloud introduces a model of shared responsibility. In this model, your cloud provider manages certain aspects of your application, leaving you with the remaining responsibility.
-
-In an on-premises environment, you're responsible for everything. As you move to infrastructure as a service (IaaS), then to platform as a service (PaaS) and software as a service (SaaS), your cloud provider takes on more of this responsibility.
-
-This shared responsibility plays a role in your architectural decisions, because these decisions can have implications on cost, security, and your application's technical and operational capabilities. By shifting these responsibilities to your provider, you can focus on bringing value to your business and move away from activities that aren't a core business function.
-
-![An illustration that shows the level of shared responsibilities in each type of cloud-service model.](../media/cloud-responsibility-model.png)
-
-## Design choices
+## Trade-offs between pillars
 
 In an ideal architecture, you'd build the most secure, high-performance, highly available, and efficient environment possible. However, as with everything, there are tradeoffs.
 
