@@ -12,17 +12,17 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "What is the main purpose of the AzureAIAgent class in Semantic Kernel?"
+  - content: "What are the key steps to create an AzureAIAgent?"  
     choices:  
-      - content: "To provide a low-level interface for directly managing AI models"  
+      - content: "Initialize the agent by defining an LLM model in the AzureAIAgentThread constructor."  
         isCorrect: false  
-        explanation: "Incorrect. The AzureAIAgent class is built on top of Azure AI Agent Service and streamlines its features rather than providing a low-level interface."  
-      - content: "To simplify the use of Azure AI Agent Service by abstracting complex operations"  
+        explanation: "Incorrect. The agent definition specifies the model, not the thread constructor." 
+      - content: "Create an Azure AI agents client, create an agent definition, and instantiate the agent."  
         isCorrect: true  
-        explanation: "Correct. The AzureAIAgent class is designed to streamline the usage of Azure AI Agent Service, reducing the complexity of setting up and managing AI agents."  
-      - content: "To replace the need for prompt templates in AI workflows"  
+        explanation: "Correct. These steps ensure that the agent is correctly defined and can interact with Azure AI Foundry services."  
+      - content: "Deploy a custom AI model before creating an AzureAIAgentSettings object."  
         isCorrect: false  
-        explanation: "Incorrect. AzureAIAgent enhances agent interactions but doesn't replace prompt templates, which are useful for defining structured AI behavior."  
+        explanation: "Incorrect. AzureAIAgent does not require deploying a custom AI model before setup."   
   - content: "Which component in the Agent Framework manages conversation state and stores messages?"  
     choices:  
       - content: "Agent threads"  

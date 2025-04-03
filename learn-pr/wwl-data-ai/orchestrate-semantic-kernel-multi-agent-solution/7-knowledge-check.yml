@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.orchestrate-sk-multi-agent-solution.knowledge-check
-title: Module assessment
+title: Knowledge check
 metadata:
-  title: Module assessment
+  title: Knowledge check
   description: This unit contains a knowledge check which can help learners reinforce their understanding of the material.
   author: buzahid
   ms.author: buzahid
@@ -12,25 +12,25 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "Which of the following options best describes an agent in the Semantic Kernel Agent Framework?" 
-    choices:
-      - content: "A human-controlled interface for interacting with AI models" 
-        isCorrect: false 
-        explanation: "Incorrect. Agents in the framework aren't human-controlled; they're autonomous systems designed to process input and complete tasks."
-      - content: "A storage system used to manage user data" 
-        isCorrect: false 
-        explanation: "Incorrect. Agents don't function as data storage systems; they perform tasks based on user interaction and intent."
-      - content: "An autonomous system that interacts with users and performs specific tasks based on user input and intent." 
-        isCorrect: true 
-        explanation: "Correct. In the Semantic Kernel Agent Framework, agents are autonomous systems that interact with users, interpret input, and perform tasks tailored to the user's needs."
-  - content: "How does the Semantic Kernel Agent Framework select the right agent for a task?" 
+  - content: "Which statement best describes AgentGroupChat in the Semantic Kernel AgentChat framework?"  
+    choices:  
+      - content: "It only supports interactions between agents of the same type."  
+        isCorrect: false  
+        explanation: "Incorrect. AgentGroupChat allows agents of different types, such as ChatCompletionAgent and OpenAIAssistantAgent, to work together."  
+      - content: "It is an abstract class that must be subclassed to enable multi-agent interactions."  
+        isCorrect: false  
+        explanation: "Incorrect. AgentGroupChat is a concrete implementation of AgentChat, not an abstract class."  
+      - content: "It enables interaction between multiple agents and uses strategy-based approaches to manage conversation dynamics."  
+        isCorrect: true  
+        explanation: "Correct. AgentGroupChat allows multiple agents to collaborate using strategy-based conversation management."  
+  - content: "In an agent group chat, how does the Semantic Kernel Agent Framework select the right agent for a task?" 
     choices:  
       - content: "By random selection" 
         isCorrect: false 
         explanation: "Incorrect. Agent selection isn't random; it's based on analyzing user intent and routing according to specific rules."
-      - content: "Based on the user's intent and predefined rules" 
+      - content: "Using the specified selection strategy" 
         isCorrect: true 
-        explanation: "Correct. The framework uses intent recognition and predefined rules to route queries to the most relevant agent."
+        explanation: "Correct. The framework uses the defined selection strategy to determin which agent should respond."
       - content: "By the agent's physical location" 
         isCorrect: false 
         explanation: "Incorrect. Agent selection isn't based on physical location but on task relevance and expertise."
