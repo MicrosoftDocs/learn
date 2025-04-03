@@ -1,0 +1,80 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.store-retrieve-json-files.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/03/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the basic structure of a JSON file?"
+    choices:
+    - content: "Objects enclosed in square brackets, arrays enclosed in curly braces, and values can be strings, numbers, Booleans, arrays, or objects."
+      isCorrect: false
+      explanation: "Incorrect. In JSON, objects are enclosed in curly braces and arrays are enclosed in square brackets."
+    - content: "Objects enclosed in curly braces, arrays enclosed in parentheses, and values can be strings, numbers, Booleans, arrays, or objects."
+      isCorrect: false
+      explanation: "Incorrect. In JSON, arrays are enclosed in square brackets not parentheses."
+    - content: "Objects enclosed in curly braces, arrays enclosed in square brackets, and values can be strings, numbers, Booleans, arrays, or objects."
+      isCorrect: true
+      explanation: "Correct. This answer describes the basic structure of a JSON file."
+  - content: "What is the primary class used for serialization and deserialization in the `System.Text.Json` namespace?"
+    choices:
+    - content: "`JsonSerializer`."
+      isCorrect: true
+      explanation: "Correct. `JsonSerializer` is the primary class used for serialization and deserialization in the `System.Text.Json` namespace."
+    - content: "`JsonDocument`."
+      isCorrect: false
+      explanation: "Incorrect. `JsonDocument` is used for reading and parsing JSON data, not for serialization and deserialization."
+    - content: "`JsonElement`."
+      isCorrect: false
+      explanation: "Incorrect. `JsonElement` represents a JSON value and provides methods for accessing and manipulating JSON data, not for serialization and deserialization."
+  - content: "What is the purpose of the `JsonSerializerOptions` class in the context of customizing serialization behavior?"
+    choices:
+    - content: "It allows you to specify the data type of the object being serialized."
+      isCorrect: false
+      explanation: "Incorrect. `JsonSerializerOptions` doesn't specify the data type of the object, but provides options to customize the serialization process."
+    - content: "It enables the conversion of JSON strings into C# objects."
+      isCorrect: false
+      explanation: "Incorrect. `JsonSerializerOptions` is used to customize the serialization process, not for deserialization or converting JSON strings into C# objects."
+    - content: "It allows you to specify options such as whether to ignore null values, include fields, and control the formatting of the JSON output."
+      isCorrect: true
+      explanation: "Correct. `JsonSerializerOptions` provides various properties to customize the serialization process. For example, options can be used to ignore null values, include fields, and control JSON output formatting."
+  - content: "What is the main purpose of the `JsonSerializerOptions` class in customizing deserialization behavior?"
+    choices:
+    - content: "It allows you to specify the maximum depth of the JSON."
+      isCorrect: false
+      explanation: "Incorrect. While `JsonSerializerOptions` does have properties that can affect the depth of the JSON, its main purpose is to customize the deserialization behavior."
+    - content: "It allows you to customize the deserialization behavior of the `JsonSerializer.Deserialize` method."
+      isCorrect: true
+      explanation: "Correct. The `JsonSerializerOptions` class provides properties that can be used to customize the behavior of the `JsonSerializer.Deserialize` method."
+    - content: "It's used to convert a JSON string back into an object."
+      isCorrect: false
+      explanation: "Incorrect. The `JsonSerializerOptions` class isn't used for converting a JSON string back into an object, but for customizing how this process is done."
+  - content: "What is the purpose of the `JsonSerializerOptions` class in managing serialization and deserialization of complex objects?"
+    choices:
+    - content: "It allows you to compress and decompress JSON data."
+      isCorrect: false
+      explanation: "Incorrect. `JsonSerializerOptions` doesn't provide compression or decompression capabilities. It's used to customize various aspects of the serialization process."
+    - content: "It provides a way to encrypt and decrypt JSON data."
+      isCorrect: false
+      explanation: "Incorrect. `JsonSerializerOptions` doesn't provide encryption or decryption capabilities. It's used to configure the behavior of JSON serialization and deserialization."
+    - content: "It provides a way to configure the behavior of JSON serialization and deserialization."
+      isCorrect: true
+      explanation: "Correct. `JsonSerializerOptions` allows customization of various aspects of the serialization process, such as handling properties, managing references, and processing special data types."
+  - content: "What is the primary purpose of using Data Transfer Objects (DTOs) in serialization and deserialization?"
+    choices:
+    - content: "To increase the size of serialized data for better readability."
+      isCorrect: false
+      explanation: "Incorrect. DTOs are used to simplify and control the serialization process, not to increase the size of serialized data."
+    - content: "To simplify and control the serialization and deserialization of complex objects."
+      isCorrect: true
+      explanation: "Correct. DTOs are used to simplify the data structure and control which properties are included in the serialized output."
+    - content: "To expose all properties of an object during serialization."
+      isCorrect: false
+      explanation: "Incorrect. DTOs allow selective serialization, meaning only certain properties are included in the serialized output."

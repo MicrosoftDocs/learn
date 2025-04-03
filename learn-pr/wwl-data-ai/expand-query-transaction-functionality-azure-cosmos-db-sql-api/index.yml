@@ -3,7 +3,7 @@ uid: learn.wwl.expand-query-transaction-functionality-azure-cosmos-db-sql-api
 metadata:
   title: Expand query and transaction functionality in Azure Cosmos DB for NoSQL
   description: "Author user-defined functions and triggers using JavaScript in Azure Cosmos DB for NoSQL."
-  ms.date: 02/06/2023
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: module-standard-task-based
@@ -36,4 +36,4 @@ units:
 - learn.wwl.expand-query-transaction-functionality-azure-cosmos-db-sql-api.knowledge-check
 - learn.wwl.expand-query-transaction-functionality-azure-cosmos-db-sql-api.summary
 badge:
-  uid: learn.wwl.expand-query-transaction-functionality-azure-cosmos-db-sql-api.badge
+  uid: learn.wwl.expand-query-transaction-functionality-azure-cosmos-db-sql-api.badge
