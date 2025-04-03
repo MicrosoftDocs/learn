@@ -6,11 +6,11 @@ metadata:
   description: So you want to build an agent? Let's explore your options?
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 02/12/2025
+  ms.date: 04/03/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 6
 content: |
   [!include[](includes/3-agent-development.md)]
-
+
