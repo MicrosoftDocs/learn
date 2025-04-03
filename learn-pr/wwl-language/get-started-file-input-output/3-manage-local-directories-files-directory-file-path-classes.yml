@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.get-started-file-input-output.manage-local-directories-files-directory-files-path-classes
+uid: learn.wwl.get-started-file-input-output.manage-local-directories-files-directory-file-path-classes
 title: Manage local directories and files using the Directory, File, and Path classes
 metadata:
   title: Manage local directories and files using the Directory, File, and Path classes
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 9
 content: |
-  [!include[](includes/3-manage-local-directories-files-directory-files-path-classes.md)]
+  [!include[](includes/3-manage-local-directories-files-directory-file-path-classes.md)]

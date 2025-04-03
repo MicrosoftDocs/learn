@@ -48,7 +48,7 @@ subjects:
 units:
 - learn.wwl.get-started-file-input-output.introduction
 - learn.wwl.get-started-file-input-output.examine-text-file-formats-tools
-- learn.wwl.get-started-file-input-output.manage-local-directories-files-directory-files-path-classes
+- learn.wwl.get-started-file-input-output.manage-local-directories-files-directory-file-path-classes
 - learn.wwl.get-started-file-input-output.read-write-text-files-streamreader-streamwriter-classes
 - learn.wwl.get-started-file-input-output.control-file-access-filestream-class
 - learn.wwl.get-started-file-input-output.examine-binaryreader-binarywriter-classes
