@@ -2,9 +2,11 @@
 uid: learn.wwl.implement-manage-external-identities.configure-identity-providers
 title: Configure identity providers
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure identity providers
   description: "Configure identity providers"
-  ms.date: 12/18/2024
+  ms.date: 04/03/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit

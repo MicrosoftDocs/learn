@@ -2,7 +2,7 @@ Microsoft Entra External Identities is a feature that makes it possible for you 
 
 ## Invitation redemption flow
 
-## :::image type="content" source="../media/business-to-business-invitation-redemption-3caadd6b-822c0b2a.png" alt-text="Diagram of the redemption of an external invitation to join Microsoft Entra tenant as a guest."::: 
+:::image type="content" source="../media/business-to-business-invitation-redemption.png" alt-text="Diagram of the redemption of an external invitation to join Microsoft Entra tenant as a guest."::: 
 
 1.  Microsoft Entra ID performs user-based discovery to determine if the user already exists in a managed Microsoft Entra tenant. (Unmanaged Microsoft Entra accounts can no longer be used for redemption.) If the user’s User Principal Name (UPN) matches both an existing Microsoft Entra account and a personal MSA, the user is prompted to choose which account they want to redeem with.
 2.  If an admin has enabled SAML/WS-Fed IdP federation, Microsoft Entra ID checks if the user’s domain suffix matches the domain of a configured SAML/WS-Fed identity provider and redirects the user to the pre-configured identity provider.
@@ -21,13 +21,13 @@ A B2B collaboration scenario allows you to invite external users into your own t
 
 The following list identifies an example B2B collaboration scenario and details some of the capabilities it provides:
 
- -  Primary scenario - Collaboration using Microsoft applications (Microsoft 365, Teams, and so on) or your own applications (SaaS apps, custom-developed apps, and so on).
- -  Intended for - Collaborating with business partners from external organizations like suppliers, partners, vendors. Users appear as guest users in your directory.
- -  Identity providers supported - External users can collaborate using work accounts, school accounts, any email address, SAML and WS-Fed based identity providers, Gmail, and Facebook.
- -  External user management - External users are managed in the same directory as employees, but are typically annotated as guest users. Guest users can be managed the same way as employees, added to the same groups, and so on.
- -  Single sign-on (SSO) - SSO to all Microsoft Entra-connected apps is supported. For example, you can provide access to Microsoft 365 or on-premises apps, and to other SaaS apps such as Salesforce or Workday.
- -  Security policy and compliance - Managed by the host/inviting organization (for example, with Conditional Access policies).
- -  Branding - Host/inviting organization's brand is used.
+- Primary scenario - Collaboration using Microsoft applications (Microsoft 365, Teams, and so on) or your own applications (SaaS apps, custom-developed apps, and so on).
+- Intended for - Collaborating with business partners from external organizations like suppliers, partners, vendors. Users appear as guest users in your directory.
+- Identity providers supported - External users can collaborate using work accounts, school accounts, any email address, SAML and WS-Fed based identity providers, Gmail, and Facebook.
+- External user management - External users are managed in the same directory as employees, but are typically annotated as guest users. Guest users can be managed the same way as employees, added to the same groups, and so on.
+- Single sign-on (SSO) - SSO to all Microsoft Entra-connected apps is supported. For example, you can provide access to Microsoft 365 or on-premises apps, and to other SaaS apps such as Salesforce or Workday.
+- Security policy and compliance - Managed by the host/inviting organization (for example, with Conditional Access policies).
+- Branding - Host/inviting organization's brand is used.
 
 ## Manage external collaboration settings in Microsoft Entra ID<br>
 
@@ -41,9 +41,9 @@ Microsoft Entra ID allows you to restrict what external guest users can see in y
 
 With Microsoft Entra B2B (Business to Business) collaboration, a tenant admin can set the following invitation policies:
 
- -  Turn off invitations (no external users can be invited)
- -  Only admins and users in the Guest Inviter role can invite (only admins and users in the Guest Inviter role can invite)
- -  Admins, the Guest Inviter role, and members can invite (same as above setting, but invited members can also invite external users)
- -  All users, including guests, can invite (as the name implies, all users in the tenant can invite external users)
+- Turn off invitations (no external users can be invited)
+- Only admins and users in the Guest Inviter role can invite (only admins and users in the Guest Inviter role can invite)
+- Admins, the Guest Inviter role, and members can invite (same as above setting, but invited members can also invite external users)
+- All users, including guests, can invite (as the name implies, all users in the tenant can invite external users)
 
 By default, all users, including guests, can invite guest users.

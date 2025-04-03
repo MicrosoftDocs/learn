@@ -4,9 +4,9 @@ Direct federation is now called **SAML/WS-Fed identity provider** (IdP) federati
 
 After you set up federation with an organization's SAML/WS-Fed IdP, any new guest users you invite will be authenticated using that SAML/WS-Fed IdP. It’s important to note that setting up federation doesn’t change the authentication method for guest users who have already redeemed an invitation from you. Here are some examples:
 
- -  Guest users have already redeemed invitations from you, and then later you set up federation with the organization's SAML/WS-Fed IdP. These guest users continue to use the same authentication method they used before you set up federation.
- -  You set up federation with an organization's SAML/WS-Fed IdP and invite guest users, and then the partner organization later moves to Microsoft Entra ID. The guest users who have already redeemed invitations continue to use the federated SAML/WS-Fed IdP, as long as the federation policy in your tenant exists.
- -  You delete federation with an organization's SAML/WS-Fed IdP. Any guest users currently using the SAML/WS-Fed IdP are unable to sign in.
+-  Guest users have already redeemed invitations from you, and then later you set up federation with the organization's SAML/WS-Fed IdP. These guest users continue to use the same authentication method they used before you set up federation.
+-  You set up federation with an organization's SAML/WS-Fed IdP and invite guest users, and then the partner organization later moves to Microsoft Entra ID. The guest users who have already redeemed invitations continue to use the federated SAML/WS-Fed IdP, as long as the federation policy in your tenant exists.
+-  You delete federation with an organization's SAML/WS-Fed IdP. Any guest users currently using the SAML/WS-Fed IdP are unable to sign in.
 
 In any of these scenarios, you can update a guest user’s authentication method by resetting their redemption status. SAML/WS-Fed IdP federation is tied to domain namespaces, such as contoso.com and fabrikam.com. When the admin establishes federation with AD FS or a third-party IdP, organizations associate one or more domain-namespaces to these IdPs.
 
@@ -126,36 +126,34 @@ First, create a new project in the Google Developers Console to obtain a client 
 2.  Accept the terms of service if you're prompted to do so.
 3.  Create a new project: On the dashboard, select **Create Project**, give the project a name (for example, **Microsoft Entra B2B**), and then select **Create**:
     
-    :::image type="content" source="../media/google-new-project-5eeb7717-5f1b65d0.png" alt-text="Screenshot of the New Project page within the Google developers page.":::
+   :::image type="content" source="../media/google-new-project.png" alt-text="Screenshot of the New Project page within the Google developers page.":::
     
 4.  On the **APIs and Services** page, select **View** under your new project.
 5.  Select **Go to APIs overview** on the APIs card. Select **OAuth consent screen**.
 6.  Select **External**, and then select **Create**.
 7.  On the **OAuth consent screen**, enter an **Application name**:
     
-    :::image type="content" source="../media/google-oauth-consent-screen-90a0c899-82f19911.png" alt-text="Screenshot of the Google OAuth consent screen. Users have to confirm their usage.":::
+   :::image type="content" source="../media/google-oauth-consent-screen.png" alt-text="Screenshot of the Google OAuth consent screen. Users have to confirm their usage.":::
     
 8.  Scroll to the **Authorized domains** section and enter **microsoftonline.com**:
     
-    :::image type="content" source="../media/google-oauth-authorized-domains-ce2eb72d-39eead35.png" alt-text="Screenshot of the Authorized domains section, showing with Google domains are valid.":::
+   :::image type="content" source="../media/google-oauth-authorized-domains.png" alt-text="Screenshot of the Authorized domains section, showing with Google domains are valid.":::
     
 9.  Select **Save**.
 10. Select **Credentials**. On the **Create credentials** menu, select **OAuth client ID**:
     
-    :::image type="content" source="../media/google-api-credentials-17808992-6d0670a2.png" alt-text="Screenshot of the Google APIs Create credentials menu. Configure your credentials here.":::
+   :::image type="content" source="../media/google-api-credentials.png" alt-text="Screenshot of the Google APIs Create credentials menu. Configure your credentials here.":::
     
 11. Under **Application type**, select **Web application**. Give the application a suitable name, like **Microsoft Entra B2B**. Under **Authorized redirect URIs**, enter the following URIs:
     
+   -  `https://login.microsoftonline.com`
+   -  `https://login.microsoftonline.com/te/ tenant ID /oauth2/authresp` (where **tenant ID** is your tenant ID in Azure)
     
-     -  `https://login.microsoftonline.com`
-     -  `https://login.microsoftonline.com/te/ tenant ID /oauth2/authresp` (where **tenant ID** is your tenant ID in Azure)
-    
-    :::image type="content" source="../media/google-create-oauth-client-id-2e5afde1-2e7ca896.png" alt-text="Screenshot of the Authorized redirect URIs section. Where do users go to validate authorization.":::
+   :::image type="content" source="../media/google-create-oauth-client-id.png" alt-text="Screenshot of the Authorized redirect URIs section. Where do users go to validate authorization.":::
     
 12. Select **Create**. Copy the client ID and client secret. You'll use them when you add the identity provider in the Azure portal.
     
-    :::image type="content" source="../media/google-auth-client-id-secret-3bda508c-75786b50.png" alt-text="Screenshot of the OAuth client ID and client secret. Set your access secret.":::
-    
+   :::image type="content" source="../media/google-auth-client-id-secret.png" alt-text="Screenshot of the OAuth client ID and client secret. Set your access secret.":::
 
 ## Step 2: Configure Google federation in Microsoft Entra ID
 
@@ -168,9 +166,8 @@ You'll now set the Google client ID and client secret. You can use the Azure por
 3.  Select **All identity providers**, and then select the **Google** button.
 4.  Enter the client ID and client secret you obtained earlier. Select **Save**:
     
-    :::image type="content" source="../media/google-identity-provider-efa96217-9c67ebe3.png" alt-text="Screenshot of Add Google identity provider page. You have to enter the Client ID and Client secret from previous steps.":::
+   :::image type="content" source="../media/google-identity-provider.png" alt-text="Screenshot of Add Google identity provider page. You have to enter the Client ID and Client secret from previous steps.":::
     
-
 ## How do I remove Google federation?
 
 You can delete your Google federation setup. If you do so, Google guest users who have already redeemed their invitation won't be able to sign in. But you can give them access to your resources again by deleting them from the directory and reinviting them.
@@ -182,7 +179,7 @@ You can delete your Google federation setup. If you do so, Google guest users wh
 3.  Select **All identity providers**.
 4.  On the **Google** line, select the ellipsis button (**...**) and then select **Delete**.
     
-    :::image type="content" source="../media/google-social-identity-providers-22681be3-340462d2.png" alt-text="Screenshot of the Delete the Google identity provider page. Use the ellipsis at the end to open the delete command.":::
+   :::image type="content" source="../media/google-social-identity-providers.png" alt-text="Screenshot of the Delete the Google identity provider page. Use the ellipsis at the end to open the delete command.":::
     
 5.  Select **Yes** to confirm the deletion.
 
@@ -200,8 +197,8 @@ To use a Facebook account as an identity provider, you need to create an applica
 > [!NOTE]
 > Use the following URLs in the steps 9 and 16 below.
 
- -  For **Site URL** enter the address of your application, such as `https://contoso.com`.
- -  For **Valid OAuth redirect URIs**, enter `https://login.microsoftonline.com/te/ tenant-id /oauth2/authresp`. You can find your `tenant-ID`in the Microsoft Entra ID Overview screen.
+- For **Site URL** enter the address of your application, such as `https://contoso.com`.
+- For **Valid OAuth redirect URIs**, enter `https://login.microsoftonline.com/te/ tenant-id /oauth2/authresp`. You can find your `tenant-ID`in the Microsoft Entra ID Overview screen.
 
 1.  Sign in to [Facebook for developers](https://developers.facebook.com/) with your Facebook account credentials.
 2.  If you haven't already done so, you need to register as a Facebook developer. Select **Get Started** on the upper-right corner of the page, accept Facebook's policies, and complete the registration steps.
@@ -235,7 +232,7 @@ Now you'll set the Facebook client ID and client secret, either by entering it i
 5.  For the **Client ID**, enter the **App ID** of the Facebook application that you created earlier.
 6.  For the **Client secret**, enter the **App Secret** that you recorded.
     
-    :::image type="content" source="../media/add-social-identity-provider-page-50bdac92-6a1ab149.png" alt-text="Screenshot of the Add social identity provider page. Pick your social media provider.":::
+   :::image type="content" source="../media/add-social-identity-provider-page.png" alt-text="Screenshot of the Add social identity provider page. Pick your social media provider.":::
     
 7.  Select **Save**.
 

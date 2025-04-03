@@ -2,9 +2,11 @@
 uid: learn.wwl.implement-manage-external-identities.exercise-invite-guest-users-bulk
 title: Exercise - invite guest users bulk
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise - invite guest users bulk
   description: "Exercise - invite guest users bulk"
-  ms.date: 12/18/2024
+  ms.date: 04/03/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
