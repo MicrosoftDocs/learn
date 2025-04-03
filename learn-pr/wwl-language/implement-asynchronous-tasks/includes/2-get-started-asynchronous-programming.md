@@ -41,7 +41,7 @@ The following table shows typical areas where asynchronous programming improves 
 
 In C#, asynchronous operations implemented using the `async` and `await` keywords. The `async` keyword is used to define an asynchronous method, while the `await` keyword is used to call an asynchronous method and wait for its result without blocking the calling thread. The asynchronous operations are typically implemented using the `Task` or `Task<T>` types, which represent an ongoing operation that can be awaited.
 
-Here's a simple example of how to create and call an asynchronous tasks in C#:
+Here's an example of how to create and call an asynchronous task in C#:
 
 ```csharp
 
