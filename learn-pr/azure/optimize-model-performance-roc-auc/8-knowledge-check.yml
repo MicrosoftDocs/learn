@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.machinelearning.optimize-model-performance-roc-auc-dropout.knowledge-check
-title: Module assessment
+title: Module Assessment
 metadata:
-  title: Module assessment
+  title: Module Assessment
   description: Multiple-choice questions
-  ms.date: 07/20/2024
+  ms.date: 04/03/2025
   author: s-polly
   ms.author: scottpolly
   ms.topic: unit
@@ -45,4 +45,4 @@ quiz:
     - content: "It gives a summary of how well a model works across various thresholds."
       isCorrect: true
       explanation: "Correct."
-
+
