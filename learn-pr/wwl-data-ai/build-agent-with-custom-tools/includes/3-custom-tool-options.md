@@ -1,6 +1,6 @@
 Azure AI Agent Service offers various custom tools that enhance the capabilities and efficiency of your AI agents. These tools allow for scalable interoperability with various applications, making it easier to integrate with existing infrastructure or web services.
 
-## Custom tool options available in Azure AI services
+## Custom tool options available in Azure AI Agent Service
 
 Azure AI services provide several custom tool options, including OpenAPI specified tools, Azure Functions, and function calling. These tools enable seamless integration with external APIs, event-driven applications, and custom functions.
 
