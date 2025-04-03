@@ -4,7 +4,7 @@ title: Connect to an online account
 metadata:
   title: Connect to an online account
   description: "Connect to an online account"
-  ms.date: 03/05/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -14,4 +14,4 @@ labModal: false
 durationInMinutes: 9
 content: |
   [!include[](includes/4-connect-to-online-account.md)]
-
+

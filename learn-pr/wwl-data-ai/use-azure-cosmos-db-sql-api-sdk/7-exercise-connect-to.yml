@@ -4,11 +4,11 @@ title: 'Exercise: Connect to Azure Cosmos DB for NoSQL with the SDK'
 metadata:
   title: 'Exercise: Connect to Azure Cosmos DB for NoSQL with the SDK'
   description: "Exercise: Connect to Azure Cosmos DB for NoSQL with the SDK"
-  ms.date: 03/05/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
   zone_pivot_groups: dev-lang-csharp-node-python
 durationInMinutes: 15
 content: |
-  [!include[](includes/7-exercise-connect-to.md)]
+  [!include[](includes/7-exercise-connect-to.md)]

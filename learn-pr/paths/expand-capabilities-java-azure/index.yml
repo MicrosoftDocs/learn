@@ -71,7 +71,6 @@ products:
 modules:
 - learn.azure-spring-cloud-workshop
 - learn.azure.deploy-java-ee-app-to-app-service
-- learn.cosmos-db-java-app
 - learn.azure.cloud-scale-messaging-jms-service-bus
 # Kafka
 - learn.accelerate-scale-spring-boot-application-azure-cache-redis
