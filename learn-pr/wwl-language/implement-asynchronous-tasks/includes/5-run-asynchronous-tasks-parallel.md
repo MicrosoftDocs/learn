@@ -284,7 +284,7 @@ class Program
 
 ```
 
-In this example, the file I/O is performed synchronously. When dealing with large files or slow network connections, it might be preferable to access the files asynchronously. You can combine asynchronous I/O techniques with parallel iteration.
+In this example, the file I/O is performed synchronously. When your code is working with large files or slow network connections, it might be preferable to access the files asynchronously. You can combine asynchronous I/O techniques with parallel iteration.
 
 The example uses the local fileCount variable to maintain a count of the total number of files processed. Because the variable might be accessed concurrently by multiple tasks, access is synchronized by calling the `Interlocked.Add` method.
 

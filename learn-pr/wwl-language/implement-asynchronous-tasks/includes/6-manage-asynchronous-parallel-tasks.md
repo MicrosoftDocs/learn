@@ -4,13 +4,13 @@ For C# developers, the Task Parallel Library (TPL) provides an easier way to wri
 
 In many cases, `Parallel.For` and `Parallel.ForEach` can provide significant performance improvements over ordinary sequential loops. However, the work of parallelizing the loop introduces complexity that can lead to problems that aren't as common in sequential code.
 
-### Do not assume that parallel is always faster
+### Don't assume that parallel is always faster
 
-In certain cases a parallel loop might run slower than its sequential equivalent. The basic rule of thumb is that parallel loops that have few iterations and fast user delegates are unlikely to speedup much. However, because many factors are involved in performance, we recommend that you always measure actual results.
+In certain cases a parallel loop might run slower than its sequential equivalent. The basic rule of thumb is that parallel loops that have few iterations and fast user delegates are unlikely to speed up much. However, because many factors are involved in performance, we recommend that you always measure actual results.
 
 ### Avoid writing to shared memory locations
 
-In sequential code, it's not uncommon to read from or write to static variables or class fields. However, whenever multiple threads are accessing such variables concurrently, there's a big potential for race conditions. Even though you can use locks to synchronize access to the variable, the cost of synchronization can hurt performance. Therefore, we recommend that you avoid, or at least limit, access to shared state in a parallel loop as much as possible. The best way to do this is to use the overloads of Parallel.For and Parallel.ForEach that use a `System.Threading.ThreadLocal<T>` variable to store thread-local state during loop execution.
+In sequential code, it's not uncommon to read from or write to static variables or class fields. However, whenever multiple threads are accessing such variables concurrently, there's a significant potential for race conditions. Even though you can use locks to synchronize access to the variable, the cost of synchronization can hurt performance. Therefore, we recommend that you avoid, or at least limit, access to shared state in a parallel loop as much as possible. The best way to do this is to use the overloads of `Parallel.For` and `Parallel.ForEach` that use a `System.Threading.ThreadLocal<T>` variable to store thread-local state during loop execution.
 
 ### Avoid over-parallelization
 
@@ -18,7 +18,7 @@ By using parallel loops, you incur the overhead costs of partitioning the source
 
 The most common scenario in which over-parallelization can occur is in nested loops. In most cases, it's best to parallelize only the outer loop unless one or more of the following conditions apply:
 
-- The inner loop is known to be very long.
+- The inner loop is known to be long.
 - You're performing an expensive computation on each order.
 - The target system is known to have enough processors to handle the number of threads that are produced by parallelizing the processing.
 
@@ -26,7 +26,7 @@ In all cases, the best way to determine the optimum query shape is to test and m
 
 ## Exception handling in async and parallel tasks
 
-When you use the Task Parallel Library (TPL) to run tasks, exceptions can occur in several different ways. The most common is when a task throws an exception. This can happen when the task is running on a thread pool thread or when it's running on the main thread. In either case, the exception is propagated back to the calling thread.
+When you use the Task Parallel Library (TPL) to run tasks, exceptions can occur in several different ways. The most common is when a task throws an exception. Throwing an exception can happen when the task is running on a thread pool thread or when it's running on the main thread. In either case, the exception is propagated back to the calling thread.
 
 When you use the `Task.Wait` method to wait for a task to complete, any exceptions that were thrown by the task are propagated back to the calling thread. You can handle these exceptions using a try/catch block. If a task is the parent of attached child tasks, or if you're waiting on multiple tasks, multiple exceptions could be thrown. If one or more exceptions are thrown, they're wrapped in an `AggregateException` instance.
 

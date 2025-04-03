@@ -2,7 +2,7 @@ Making calls to web resources can result in long wait times for the user. To avo
 
 ## Web resources
 
-A web resource is any data or service that's accessible over the internet. This includes web pages, Application Programming Interfaces (APIs), images, videos, and other types of content. Applications retrieve or interacte with web resource using standard web protocols such as Hypertext Transfer Protocol (HTTP) or HTTP Secure (HTTPS).
+A web resource is any data or service that's accessible over the internet. This includes web pages, Application Programming Interfaces (APIs), images, videos, and other types of content. Applications retrieve or interact with web resource using standard web protocols such as Hypertext Transfer Protocol (HTTP) or HTTP Secure (HTTPS).
 
 One common use case for accessing web resources is to retrieve data from a remote server or service. This can include fetching JSON or XML data, downloading files, or interacting with web APIs. For example, you might want to access a weather API to get the current weather conditions for a specific location, or you might want to download an image from a URL.
 
@@ -12,7 +12,7 @@ In C#, you can use the `HttpClient` class to make HTTP requests to web resources
 
 ## Use HttpClient for asynchronous API calls
 
-The `HttpClient` class is part of the `System.Net.Http` namespace, which provides classes for sending HTTP requests and receiving HTTP responses. The `HttpClient` class is designed to be used asynchronously, allowing you to make non-blocking calls to web resources.
+The `HttpClient` class is part of the `System.Net.Http` namespace, which provides classes for sending HTTP requests and receiving HTTP responses. The `HttpClient` class is designed to be used asynchronously, allowing you to make nonblocking calls to web resources.
 
 The `HTTPClient` class includes the following asynchronous methods:
 
@@ -108,6 +108,6 @@ Key Points:
 
 - Web resources can be accessed asynchronously to avoid blocking the UI thread.
 - REST APIs provide a standardized way to interact with web services.
-- The `HttpClient` class in C# is designed for asynchronous use, allowing non-blocking calls to web resources.
+- The `HttpClient` class in C# is designed for asynchronous use, allowing nonblocking calls to web resources.
 - The `HttpClient` class includes asynchronous methods like `GetAsync`, `PostAsync`, `PutAsync`, `DeleteAsync`, and `SendAsync`.
 - A single instance of `HttpClient` should be reused for multiple requests to improve performance and resource management.
