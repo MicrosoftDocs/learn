@@ -2,7 +2,7 @@ Classification models must assign a sample to a category. For example, it must u
 
 We can improve classification models in many ways. For example, we can ensure our data are balanced, clean, and scaled. We can also alter our model architecture and use hyperparameters to squeeze as much performance as we possibly can out of our data and architecture. Eventually, we find no better way to improve performance on our test (or hold-out) set and declare our model ready.
 
-Model tuning to this point can be complex, but we can use a final simple step to further improve how well our model works. To understand this, though, we need to go back to basics.
+Model tuning to this point can be complex, but we can use a final step to further improve how well our model works. To understand this, though, we need to go back to basics.
 
 ## Probabilities and categories
 

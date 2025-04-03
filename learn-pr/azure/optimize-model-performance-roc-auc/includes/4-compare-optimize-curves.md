@@ -10,7 +10,7 @@ Usually there isn't a single threshold that gives both the best true positive ra
 
 ## Comparing models with AUC
 
-You can use ROC curves to compare models to each other, just like you can with cost functions. An ROC curve for a model shows how well it will work for a variety of decision thresholds. At the end of the day, what's most important in a model is how it will perform in the real world, where there's only one decision threshold. Why then would we want to compare models using thresholds we'll never use? There are two answers for this.
+You can use ROC curves to compare models to each other just like you can with cost functions. An ROC curve for a model shows how well it will work for a variety of decision thresholds. At the end of the day, what's most important in a model is how it will perform in the real world, where there's only one decision threshold. Why then would we want to compare models using thresholds we'll never use? There are two answers for this.
 
 Firstly, comparing ROC curves in particular ways is like performing a statistical test that tells us not just that one model did better on this particular test set, but whether it's likely to continue to perform better in the future. This is out of the scope of this learning material, but it's worth keeping in mind.
 
