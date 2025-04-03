@@ -3,7 +3,7 @@ When accessing your Microsoft Defender portal settings for Endpoints for the fir
 > [!IMPORTANT]
 > Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
 
-**Data storage location** - Determine where you want to be primarily hosted: US, EU, or UK. You can't change the location after this set up and Microsoft won't transfer the data from the specified geolocation.
+**Data storage location** - Determine where you want to be primarily hosted: US, EU, or UK. You can't change the location after this is set up, and Microsoft won't transfer the data from the specified geolocation.
 
 **Data retention** - The default is six months.
 
