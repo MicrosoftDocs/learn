@@ -43,7 +43,7 @@ agent = project_client.agents.create_agent(
 )
 ```
 
-The agent can now call `recent_snowfall` dynamically when prompted by the user.
+The agent can now call `recent_snowfall` dynamically when it determines that the prompt requires information that can be retrieved by the function.
 
 ## OpenAPI defined tools
 
@@ -163,4 +163,7 @@ Azure Functions provide serverless computing capabilities for real-time processi
 
 The agent can now send requests to the Azure Function via a storage queue and process the results.
 
-By using one of the above methods (or a combination of these options) for implementing a custom tool, you can create powerful, flexible, and intelligent agents with Azure AI Agent Service. These integrations enable seamless interaction with external systems, real-time processing, and scalable workflows, making it easier to build custom solutions tailored to your needs.
+> [!NOTE]
+> One of the concepts related to agents and custom tools that developers often have difficulty with is the *declarative* nature of the solution. You don't need to write code that explicitly *calls* your custom tool functions - the agent itself decides to call tool functions based on messages in prompts. By providing the agent with functions that have meaningful names and well-documented parameters, the agent can "figure out" when and how to call the function all by itself!
+
+By using one of the available custom tool options (or any combination of them), you can create powerful, flexible, and intelligent agents with Azure AI Agent Service. These integrations enable seamless interaction with external systems, real-time processing, and scalable workflows, making it easier to build custom solutions tailored to your needs.
