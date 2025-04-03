@@ -23,17 +23,17 @@ We can calculate some handy characteristics from the confusion matrix. Two popul
 
 Looking at true positive and false positive rates can help us understand a model's performance.
 
-Consider our hiker example. Ideally, the true positive rate is very high, and the false positive rate is very low, because this means that the model identifies hikers well and doesn't identify trees as hikers very often. Yet, if the true positive rate is very high, but the false positive rate is also very high, then the model is biased; it's identifying almost everything it encounters as hiker. Similarly, we don't want a model with a low true positive rate, because then when the model encounters a hiker, it'll label them as a tree.
+Consider our hiker example. Ideally, the true positive rate is very high, and the false positive rate is very low. This means that the model identifies hikers well and doesn't identify trees as hikers very often. Yet, if the true positive rate is very high, but the false positive rate is also very high, then the model is biased; it's identifying almost everything it encounters as hiker. Similarly, we don't want a model with a low true positive rate, because then when the model encounters a hiker, it'll label them as a tree.
 
 ## ROC curves
 
-Receiver operator characteristic (ROC) curves are a graph where we plot true positive rate versus false positive rate.
+Receiver operator characteristic curves are a graph where we plot true positive rate versus false positive rate.
 
 ROC curves can be confusing for beginners for two main reasons. The first reason is that beginners know that a model only has one value for true positive and true negative rates, so an ROC plot must look like this:
 
 ![Receiver operator characteristic curve graph with one plot point.](../media/roc-graph.png)
 
-If you're also thinking this, you're right. A trained model only produces one point. However, remember that our models have a threshold—normally 50%—that's used to decide whether the true (hiker) or false (tree) label should be used. If we change this threshold to 30% and recalculate true positive and false positive rates, we get another point:
+If you're also thinking this, you're right. A trained model only produces one point. However, remember that our models have a threshold-normally 50%-that's used to decide whether the true (hiker) or false (tree) label should be used. If we change this threshold to 30% and recalculate true positive and false positive rates, we get another point:
 
 ![Receiver operator characteristic curve graph with two plot points.](../media/roc-graph-2.png)
 
