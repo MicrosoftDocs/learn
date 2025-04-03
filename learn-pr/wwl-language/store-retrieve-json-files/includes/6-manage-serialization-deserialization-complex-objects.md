@@ -142,7 +142,7 @@ DTOs provide the following benefits:
 
 You can selectively serialize portions of an object by creating a custom DTO that includes only the properties you want to serialize. This approach allows you to control exactly what gets serialized without including nested objects.
 
-### Creating and Using DTOs for Serialization
+### Creating and using DTOs for Serialization
 
 Here's a step-by-step guide on how to create and use DTOs for serialization in C#:
 

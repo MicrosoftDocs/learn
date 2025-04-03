@@ -222,7 +222,7 @@ There are multiple ways to specify a preference for `replace` or `populate`:
 
     ```
 
-## Reading JSON Files
+## Reading JSON files
 
 How to read JSON files using `File.ReadAllText`.
 

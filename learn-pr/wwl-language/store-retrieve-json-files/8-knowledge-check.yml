@@ -69,12 +69,12 @@ quiz:
       explanation: "Correct. `JsonSerializerOptions` allows customization of various aspects of the serialization process, such as handling properties, managing references, and processing special data types."
   - content: "What is the primary purpose of using Data Transfer Objects (DTOs) in serialization and deserialization?"
     choices:
-    - content: "To increase the size of serialized data for better readability"
+    - content: "To increase the size of serialized data for better readability."
       isCorrect: false
       explanation: "Incorrect. DTOs are used to simplify and control the serialization process, not to increase the size of serialized data."
-    - content: "To simplify and control the serialization and deserialization of complex objects"
+    - content: "To simplify and control the serialization and deserialization of complex objects."
       isCorrect: true
       explanation: "Correct. DTOs are used to simplify the data structure and control which properties are included in the serialized output."
-    - content: "To expose all properties of an object during serialization"
+    - content: "To expose all properties of an object during serialization."
       isCorrect: false
       explanation: "Incorrect. DTOs allow selective serialization, meaning only certain properties are included in the serialized output."

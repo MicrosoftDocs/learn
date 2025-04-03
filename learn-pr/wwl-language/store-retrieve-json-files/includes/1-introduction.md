@@ -4,12 +4,12 @@ Imagine you're signed up to help a non-profit company with a software project. B
 
 The topics covered in this module include:
 
-- Introduction to JavaScript Object Notation
-- Working with JSON data in C#: Serialization and deserialization using JsonSerializer class
-- Customizing JSON serialization in C#
-- Customizing deserialization behavior in C#
-- Managing serialization and deserialization of complex objects with JsonSerializerOptions and Data Transfer Objects
-- Serializing and deserializing JSON files in C#
+- Introduction to JavaScript Object Notation.
+- Working with JSON data in C#: Serialization and deserialization using JsonSerializer class.
+- Customizing JSON serialization in C#.
+- Customizing deserialization behavior in C#.
+- Managing serialization and deserialization of complex objects with JsonSerializerOptions and Data Transfer Objects.
+- Serializing and deserializing JSON files in C#.
 
 After completing this module, you’ll be able to:
 

@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.store-retrieve-json-files
 metadata:
-  title: Store and retrieve JSON files
+  title: Store and Retrieve JSON Files
   description: "Learn how to serialize and deserialize JavaScript Object Notation (JSON) strings using the JsonSerializer class, the JsonSerializerOptions class, and Data Transfer Objects."
   ms.date: 04/03/2025
   author: wwlpublish
@@ -48,7 +48,7 @@ subjects:
 units:
 - learn.wwl.store-retrieve-json-files.introduction
 - learn.wwl.store-retrieve-json-files.get-started-javascript-object-notation
-- learn.wwl.store-retrieve-json-files.implement-jsonserilizer-class-csharp-apps
+- learn.wwl.store-retrieve-json-files.implement-jsonserializer-class-csharp-apps
 - learn.wwl.store-retrieve-json-files.customize-serialization-behavior
 - learn.wwl.store-retrieve-json-files.customize-deserialization-behavior
 - learn.wwl.store-retrieve-json-files.manage-serialization-deserialization-complex-objects

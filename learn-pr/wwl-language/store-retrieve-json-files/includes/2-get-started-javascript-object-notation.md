@@ -19,12 +19,12 @@ The basic structure of JSON consists of:
 
 JSON's basic data types are:
 
-- Number: a signed decimal number that may contain a fractional part and may use exponential E notation but can't include non-numbers. The format makes no distinction between integer and floating-point.
-- String: a sequence of zero or more Unicode characters. Strings are delimited with double quotation marks and support a backslash escaping syntax.
-- Boolean: either of the values `true` or `false`.
-- Array: an ordered list of zero or more elements, each of which may be of any type. Arrays use square bracket notation `[]` with comma-separated elements.
-- Object: a collection of `name:value` pairs where the names are strings. Objects are delimited with curly brackets `{}` and use commas to separate each pair, while within each pair, the colon `:` character separates the `name` from its `value`. Values can be of any supported type, including other objects or arrays.
-- null: an empty value, using the word `null`.
+- Number: A signed decimal number that may contain a fractional part and may use exponential E notation but can't include non-numbers. The format makes no distinction between integer and floating-point.
+- String: A sequence of zero or more Unicode characters. Strings are delimited with double quotation marks and support a backslash escaping syntax.
+- Boolean: Either of the values `true` or `false`.
+- Array: An ordered list of zero or more elements, each of which may be of any type. Arrays use square bracket notation `[]` with comma-separated elements.
+- Object: A collection of `name:value` pairs where the names are strings. Objects are delimited with curly brackets `{}` and use commas to separate each pair, while within each pair, the colon `:` character separates the `name` from its `value`. Values can be of any supported type, including other objects or arrays.
+- null: An empty value, using the word `null`.
 
 ## JSON samples
 
