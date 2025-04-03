@@ -17,13 +17,13 @@ You can have users in the following roles to manage your administrative unit:
 - User administrator
 
 > [!NOTE]
-> If you are familiar with on-premises Active Directory, this capability was handled by setting up Organizational Units (OUs) in your directory and adding your users to the OU.
+> If you're familiar with on-premises Active Directory, this capability was handled by setting up Organizational Units (OUs) in your directory and adding your users to the OU.
 
 ## Plan your administrative units
 
 You can use administrative units to logically group Microsoft Entra resources. An organization whose IT department is scattered globally might create administrative units that define relevant geographical boundaries. In another scenario, where a global organization has suborganizations that are semi-autonomous in their operations, administrative units could represent the suborganizations.
 
-The criteria on which administrative units are created are guided by the unique requirements of an organization. Administrative units are a common way to define structure across Microsoft 365 services. We recommend that you prepare your administrative units with their use across Microsoft 365 services in mind. You can get maximum value out of administrative units when you can associate common resources across Microsoft 365 under an administrative unit.
+The administrative units creation criteria is guided by the unique requirements of an organization. Administrative units are a common way to define structure across Microsoft 365 services. We recommend that you prepare your administrative units with their use across Microsoft 365 services in mind. You can get maximum value out of administrative units when you can associate common resources across Microsoft 365 under an administrative unit.
 
 You can expect the creation of administrative units in the organization to go through the following stages:
 
@@ -59,14 +59,14 @@ It's work to develop a delegation model that fits your needs. Developing a deleg
 
 ## Define roles
 
-Determine the Active Directory tasks that are carried out by administrators and how they map to roles. Each task should be evaluated for frequency, importance, and difficulty. These criteria are vital aspects of task definition because they govern whether a permission should be delegated:
+Determine the directory tasks carried out by administrators and how they map to roles. Each task should be evaluated for frequency, importance, and difficulty. These criteria are vital aspects of task definition because they govern whether a permission should be delegated:
 
 - Tasks that you do routinely, have limited risk, and are trivial to complete are excellent candidates for delegation.
 - Tasks that you do rarely but have potential risk across the organization and require high skill levels should be considered carefully before delegating. Instead, you can temporarily elevate an account to the required role or reassign the task.
 
 ## Delegate app administration
 
-The proliferation of apps within your organization can strain your delegation model. If it places the burden for application access management on the Global Administrator, it's likely that model increases its overhead as time goes on. If you have granted people the Global Administrator role for things like configuring enterprise applications, you can now offload them to the following less-privileged roles. Doing so helps to improve your security posture and reduces the potential for unfortunate mistakes. The most-privileged application administrator roles are:
+The proliferation of apps within your organization can strain your delegation model. If it places the burden for application access management on the Global Administrator, it's likely that model increases its overhead as time goes on. If you granted people the Global Administrator role for things like configuring enterprise applications, you can now offload them to the following less-privileged roles. Doing so helps to improve your security posture and reduces the potential for unfortunate mistakes. The most-privileged application administrator roles are:
 
 - The **Application Administrator** role, which grants the ability to manage all applications in the directory, including registrations, single sign-on settings, user and group assignments and licensing, Application Proxy settings, and consent. It doesn't grant the ability to manage Conditional Access.
 - The **Cloud Application Administrator** role, which grants all the abilities of the Application Administrator, except it doesn't grant access to Application Proxy settings (because it has no on-premises permission).

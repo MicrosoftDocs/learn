@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/02/2025
+  ms.date: 04/03/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
@@ -31,9 +31,9 @@ quiz:
       explanation: "Sorry, that's incorrect. A domain name can be included as part of an application or other resource if the organization owns the domain name that contains the resource."
   - content: "The proliferation of many types of devices and bring your own device (BYOD) concept require IT professionals to accommodate two rather different goals. One goal is to allow users to be productive wherever and anytime. What is the other goal?"
     choices:
-    - content: "Provide antimalware apps for a various devices."
+    - content: "Provide anti-malware apps for a various devices."
       isCorrect: false
-      explanation: "Sorry, that's incorrect. Providing antimalware apps for a all devices isn't a goal that IT professionals need to accommodate."
+      explanation: "Sorry, that's incorrect. Providing anti-malware apps for a all devices isn't a goal that IT professionals need to accommodate."
     - content: "Establish baseline security guidelines for users."
       isCorrect: false
       explanation: "Sorry, that's incorrect. Establishing baseline security guidelines isn't a goal that IT professionals need to accommodate."

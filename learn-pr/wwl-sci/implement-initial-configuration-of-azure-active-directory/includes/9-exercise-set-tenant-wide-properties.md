@@ -1,4 +1,4 @@
-You goal is to change the tenant display name
+Your goal is to change the tenant display name.
 
 1. Browse to the [Azure portal](https://portal.azure.com/) and sign in using an Administrator account for the directory.
 2. Select the **Show portal menu** hamburger icon and then select **Microsoft Entra ID**.
@@ -15,7 +15,7 @@ You goal is to change the tenant display name
 7. Under **Tenant properties**, locate **Country / region** and review the information.
     
    > [!IMPORTANT]
-   > When the tenant is created, the Country / region is specified at that time. This setting cannot be changed later.
+   > When the tenant is created, the Country / region is specified at that time. This setting can't be changed later.
 
 ### Find the location associated with your tenant
 
@@ -51,7 +51,7 @@ You add your organization's privacy information in the **Properties** area of Mi
 12. Add your privacy info for your employees:
     
    - **Technical contact**. Type the email address for the person to contact for technical support within your organization.
-   - **Global privacy contact**. Type the email address for the person to contact for inquiries about personal data privacy. This person is also who Microsoft contacts if there's a data breach. If there's no person listed here, Microsoft contacts your the administrator who own the tenant.
+   - **Global privacy contact**. Type the email address for the person to contact for inquiries about personal data privacy. This person is also who Microsoft contacts if there's a data breach. If there's no person listed here, Microsoft contacts the administrator who owns the tenant.
    - **Privacy statement URL**. Type the link to your organization's document that describes how your organization handles both internal and external guest's data privacy.
         
       :::image type="content" source="../media/active-directory-privacy-statement-contact.png" alt-text="Screenshot of the B 2 B Collaboration Review permissions box with Accept / Cancel buttons.":::

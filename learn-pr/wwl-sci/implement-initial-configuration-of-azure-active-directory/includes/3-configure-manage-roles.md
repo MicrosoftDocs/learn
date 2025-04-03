@@ -8,7 +8,7 @@ Microsoft Entra ID is Microsoft’s cloud-based identity and access management s
 Microsoft Entra ID is intended for:
 
 - **IT admins** - As an IT admin, you can use Microsoft Entra ID to control access to your apps and your app resources, based on your business requirements. For example, you can use Microsoft Entra ID to require multifactor authentication when accessing important organizational resources. Additionally, you can use Microsoft Entra ID to automate user provisioning between your existing Windows Server AD and your cloud apps, including Microsoft 365. Finally, Microsoft Entra ID gives you powerful tools to automatically help protect user identities and credentials and to meet your access governance requirements.
-- **App developers** - As an app developer, you can use Microsoft Entra ID as a standards-based approach for adding single sign-on (SSO) to your app, allowing it to work with a user's pre-existing credentials. Microsoft Entra ID also provides APIs that can help you build personalized app experiences using existing organizational data.
+- **App developers** - As an app developer, you can use Microsoft Entra ID as a standards-based approach for adding single sign-on (SSO) to your app, allowing it to work with a user's preexisting credentials. Microsoft Entra ID also provides APIs that can help you build personalized app experiences using existing organizational data.
 - **Microsoft 365, Office 365, Azure, or Dynamics CRM Online subscribers** - As a subscriber, you're already using Microsoft Entra ID. Each Microsoft 365, Office 365, Azure, and Dynamics CRM Online tenant is automatically a Microsoft Entra tenant. You can immediately start to manage access to your integrated cloud apps.
 
 In Microsoft Entra ID, if one of your users needs permission to manage Microsoft Entra resources, you must assign them to a role that provides the permissions they need.
@@ -54,12 +54,12 @@ At a high level, Azure roles control permissions to manage Azure resources, whil
 
 ### Do Azure roles and Microsoft Entra roles overlap?
 
-By default, Azure roles and Microsoft Entra roles don't span Azure and Microsoft Entra ID. However, if a Global Administrator elevates their access by choosing the **Access management for Azure resources** switch in the Azure portal, they will be granted the User Access Administrator role (an Azure role) on all subscriptions for a particular tenant. The User Access Administrator role enables the user to grant other users access to Azure resources. This switch can be helpful to regain access to a subscription.
+By default, Azure roles and Microsoft Entra roles don't span Azure and Microsoft Entra ID. However, if a Global Administrator elevates their access by choosing the **Access management for Azure resources** switch in the Azure portal, they're granted the User Access Administrator role (an Azure role) on all subscriptions for a particular tenant. The User Access Administrator role enables the user to grant other users access to Azure resources. This switch can be helpful to regain access to a subscription.
 
 Several Microsoft Entra roles span Microsoft Entra ID and Microsoft 365, such as the Global and User Administrator roles. For example, if you're assigned the Global Administrator role, you have administrator capabilities in Microsoft Entra ID and Microsoft 365, such as making changes to Microsoft Exchange and Microsoft SharePoint. However, by default, the Global Administrator doesn't have access to Azure resources.
 
 > [!NOTE]
-> Microsoft does not recommend the use of the Global Administrator role. It is recommended that you follow the principle of least privilege when performing administrative tasks.
+> Microsoft doesn't recommend the use of the Global Administrator role. It's recommended that you follow the principle of least privilege when performing administrative tasks.
 
 :::image type="content" source="../media/azure-office-roles.png" alt-text="Diagram of relationship of Azure roles to Microsoft Entra roles. Azure roles accessed in Azure tenant.  Microsoft Entra roles also accessed from Microsoft Entra ID and Microsoft 365.":::
 
@@ -83,7 +83,7 @@ The best method for your configuration needs can be used, but care must be taken
 A common way to assign Microsoft Entra roles to a user is on the Assigned roles page for a user. You can also configure the user eligibility to be elevated just-in-time into a role using **Privileged Identity Management (PIM)**.
 
 > [!NOTE]
-> If you have an Microsoft Entra ID Premium P2 license plan and already use PIM, all role management tasks are performed in the Privileged Identity Management experience. This feature is currently limited to assigning only one role at a time. You can't currently select multiple roles and assign them to a user all at once.
+> If you have a Microsoft Entra ID Premium P2 license plan and already use PIM, all role management tasks are performed in the Privileged Identity Management experience. This feature is currently limited to assigning only one role at a time. You can't currently select multiple roles and assign them to a user all at once.
 
 :::image type="content" source="../media/privileged-identity-management-manages-roles.png" alt-text="Screenshot of Privileged Identity Manager for users assigned Global Admin and have a Premium P2 license.":::
 
@@ -109,4 +109,4 @@ Custom roles can be created in the [Roles and administrators](https://portal.azu
 5. Next, enter "basic" in the search bar, select the `microsoft.directory/applications/basic/update` permission, and then select **Next**.
 6. On the **Review + create** tab, review the permissions and select **Create**.
 
-Your custom role will show up in the list of available roles to assign.
+Your custom role shows up in the list of available roles to assign.
