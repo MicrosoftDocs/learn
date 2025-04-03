@@ -3,7 +3,7 @@ uid: learn.wwl.build-multi-item-transactions-azure-cosmos-db-sql-api
 metadata:
   title: Build multi-item transactions with the Azure Cosmos DB for NoSQL
   description: "Author stored procedures using JavaScript in Azure Cosmos DB for NoSQL."
-  ms.date: 10/17/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: module-standard-task-based
@@ -36,4 +36,4 @@ units:
 - learn.wwl.build-multi-item-transactions-azure-cosmos-db-sql-api.knowledge-check
 - learn.wwl.build-multi-item-transactions-azure-cosmos-db-sql-api.summary
 badge:
-  uid: learn.wwl.build-multi-item-transactions-azure-cosmos-db-sql-api.badge
+  uid: learn.wwl.build-multi-item-transactions-azure-cosmos-db-sql-api.badge

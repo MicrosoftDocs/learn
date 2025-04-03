@@ -2,9 +2,11 @@
 uid: learn.wwl.microsoft-defender-cloud-threat-protection.defender-servers
 title: Defender for Servers
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Defender for Servers
   description: "Defender for Servers"
-  ms.date: 03/28/2025
+  ms.date: 04/03/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
