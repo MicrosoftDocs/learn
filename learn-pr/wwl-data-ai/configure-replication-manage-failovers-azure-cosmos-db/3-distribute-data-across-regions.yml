@@ -4,7 +4,7 @@ title: Distribute data across regions
 metadata:
   title: Distribute data across regions
   description: "Distribute data across regions"
-  ms.date: 12/06/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 2
 content: |
-  [!include[](includes/3-distribute-data-across-regions.md)]
+  [!include[](includes/3-distribute-data-across-regions.md)]

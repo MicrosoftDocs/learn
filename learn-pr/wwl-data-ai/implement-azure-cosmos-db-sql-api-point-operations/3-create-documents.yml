@@ -4,7 +4,7 @@ title: Create documents
 metadata:
   title: Create documents
   description: "Create documents"
-  ms.date: 03/09/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -14,4 +14,4 @@ labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/3-create-documents.md)]
-
+

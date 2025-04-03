@@ -4,10 +4,10 @@ title: 'Exercise: Connect different regions with the Azure Cosmos DB for NoSQL S
 metadata:
   title: 'Exercise: Connect different regions with the Azure Cosmos DB for NoSQL SDK'
   description: "Exercise: Connect different regions with the Azure Cosmos DB for NoSQL SDK"
-  ms.date: 10/28/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/8-exercise-connect-different-regions-sql-api-sdk.md)]
+  [!include[](includes/8-exercise-connect-different-regions-sql-api-sdk.md)]

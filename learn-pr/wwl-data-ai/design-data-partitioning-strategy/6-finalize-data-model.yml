@@ -4,7 +4,7 @@ title: Finalize the data model
 metadata:
   title: Finalize the data model
   description: "Finalize the data model"
-  ms.date: 04/16/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-finalize-data-model.md)]
+  [!include[](includes/6-finalize-data-model.md)]
