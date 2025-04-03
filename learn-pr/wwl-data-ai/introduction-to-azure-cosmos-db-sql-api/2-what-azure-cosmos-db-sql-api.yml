@@ -4,7 +4,7 @@ title: What is Azure Cosmos DB for NoSQL
 metadata:
   title: What is Azure Cosmos DB for NoSQL
   description: "What is Azure Cosmos DB for NoSQL"
-  ms.date: 10/23/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -15,4 +15,4 @@ labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/2-what-azure-cosmos-db-sql-api.md)]
-
+

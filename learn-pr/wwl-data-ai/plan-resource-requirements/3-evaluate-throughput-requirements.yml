@@ -4,7 +4,7 @@ title: Evaluate throughput requirements
 metadata:
   title: Evaluate throughput requirements
   description: "Evaluate throughput requirements"
-  ms.date: 10/23/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -13,4 +13,4 @@ labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/3-evaluate-throughput-requirements.md)]
-
+

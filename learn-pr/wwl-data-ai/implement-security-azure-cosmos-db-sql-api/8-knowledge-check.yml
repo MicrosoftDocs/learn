@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-security-azure-cosmos-db-sql-api.knowledge-check
-title: Module assessment
+title: Knowledge check
 metadata:
-  title: Module assessment
+  title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/18/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -13,36 +13,36 @@ labModal: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "One reason your request is getting a 403 status code returned is?"
+  - content: "One reason the request is getting a 403 status code returned is?"
     choices:
     - content: "Because by default Azure Cosmos DB blocks access to all incoming IPs."
       isCorrect: false
-      explanation: "That's incorrect. Azure Cosmos DB by default allows access to all IPs. A 403 status code means that your connection is forbidden."
+      explanation: "Incorrect. Azure Cosmos DB by default allows access to all IPs. A 403 status code means that the connection is forbidden."
     - content: "Because by default Azure Cosmos DB allows access to all incoming IPs."
       isCorrect: false
-      explanation: "That's incorrect. A 403 status code means that your connection is forbidden so you wouldn't get it if all IPs are allowed."
-    - content: "Because the firewall is enabled, and your application's IP must be added to the firewall's allowed access list."
+      explanation: "Incorrect. A 403 status code means that the connection is forbidden so it  doesn't trigger if all IPs are allowed."
+    - content: "Because the firewall is enabled, and the application's IP must be added to the firewall's allowed access list."
       isCorrect: true
-      explanation: "That's correct. If the firewall is enabled, your application's IP must be added to the allowed access list."
-  - content: "What do you need to do to use the Data Explorer with RBAC?"
+      explanation: "Correct. If the firewall is enabled, the application's IP must be added to the allowed access list."
+  - content: "What' needs to be done to use the Data Explorer with RBAC (Role-Based Access Control?"
     choices:
     - content: "Access the Azure Cosmos DB Data Explorer with the specific `?feature.enableAadDataPlane=true` query parameter and sign-in."
       isCorrect: false
-      explanation: "That's incorrect. Data Explorer doesn't support RBAC. The proposed solution is to use **Azure Cosmos DB Explorer** to query your data."
+      explanation: "Incorrect. Data Explorer doesn't support RBAC. The proposed solution is to use **Azure Cosmos DB Explorer** to query the data."
     - content: "Use CLI or PowerShell to enable the feature `enableAadDataPlane=true`."
       isCorrect: false
-      explanation: "That's incorrect. You can't enable RBAC data explorer access in any way."
+      explanation: "Incorrect. RBAC data explorer access can't be enabled in any way."
     - content: "Data Explorer doesn't support RBAC."
       isCorrect: true
-      explanation: "That's correct. Data Explorer doesn't support RBAC, to query your data, use **Azure Cosmos DB Explorer** instead."
+      explanation: "Correct. Data Explorer doesn't support RBAC, to query the data. Use **Azure Cosmos DB Explorer** instead."
   - content: "What is the proper set of steps to set up Always Encrypted for Cosmos DB?"
     choices:
-    - content: "Create a CMKs in Azure Key Vault, use the SDK to create the DEKs (with the CMKs) on a database, add the DEK and the encryption policies to an existing container."
+    - content: "Create a CMK (Customer-Managed Keys) in Azure Key Vault. Use the SDK to create the DEK (Data Encryption Key) (with the CMK) on a database, add the DEK and the encryption policies to an existing container."
       isCorrect: false
-      explanation: "That's incorrect. You can only set up Always Encrypted at the container's creation time and can't modify or add Always Encrypted to an existing container."
-    - content: "Create a CMKs in Azure Key Vault, use the SDK to create the DEKs (with the CMKs) on a database, create a container with the DEK and encryption policies."
+      explanation: "Incorrect. Always Encrypted can only be set up at the container's creation time and can't modify or add Always Encrypted to an existing container."
+    - content: "Create a CMK in Azure Key Vault. Use the SDK to create the DEK (with the CMK) on a database, create a container with the DEK and encryption policies."
       isCorrect: true
-      explanation: "That's correct. You can only set up Always Encrypted at the container's creation time."
-    - content: "Create a CMKs in Azure Key Vault, use the SDK to create the DEKs (with the CMKs) on a new or existing container with the encryption policies."
+      explanation: "Correct. Always Encrypted can only be set up at the container's creation time."
+    - content: "Create a CMK in Azure Key Vault. Use the SDK to create the DEK (with the CMK) on a new or existing container with the encryption policies."
       isCorrect: false
-      explanation: "That's incorrect. First, you need to set up the DEK on the database. Then, you can only set up Always Encrypted at the container's creation time and can't modify or add Always Encrypted to an existing container."
+      explanation: "Incorrect. First, the DEK needs to be set up on the database. Then, Always Encrypted can only be set up at the container's creation time and can't modify or add Always Encrypted to an existing container."
