@@ -2,6 +2,6 @@ In this module, you learned how the Semantic Kernel Agent Framework enables deve
 
 More reading:
 
-- Learn more about the [Semantic Kernel Agent Framework](https://learn.microsoft.com/semantic-kernel/frameworks/agent/?pivots=programming-language-python)
-- Learn more about [Semantic Kernel Plugins](https://learn.microsoft.com/semantic-kernel/concepts/plugins/?pivots=programming-language-python)
-- Practice [developing generative AI apps with Semantic Kernel](https://learn.microsoft.com/training/paths/develop-ai-agents-azure-open-ai-semantic-kernel-sdk/)
+- Learn more about the [Semantic Kernel Agent Framework](/semantic-kernel/frameworks/agent/?pivots=programming-language-python)
+- Learn more about [Semantic Kernel Plugins](/semantic-kernel/concepts/plugins/?pivots=programming-language-python)
+- Practice [developing generative AI apps with Semantic Kernel](/training/paths/develop-ai-agents-azure-open-ai-semantic-kernel-sdk/)
