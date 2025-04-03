@@ -4,7 +4,7 @@ title: Access account resources using Microsoft Entra ID
 metadata:
   title: Access account resources using Microsoft Entra ID
   description: "Access account resources using Microsoft Entra ID"
-  ms.date: 10/18/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -13,4 +13,4 @@ labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/5-access-account-resources-using-azure-active-directory.md)]
-
+

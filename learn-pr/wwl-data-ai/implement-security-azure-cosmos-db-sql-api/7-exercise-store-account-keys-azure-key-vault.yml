@@ -4,10 +4,10 @@ title: 'Exercise: Store Azure Cosmos DB for NoSQL account keys in Azure Key Vaul
 metadata:
   title: 'Exercise: Store Azure Cosmos DB for NoSQL account keys in Azure Key Vault'
   description: "Exercise: Store Azure Cosmos DB for NoSQL account keys in Azure Key Vault"
-  ms.date: 10/28/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
 durationInMinutes: 25
 content: |
-  [!include[](includes/7-exercise-store-account-keys-azure-key-vault.md)]
+  [!include[](includes/7-exercise-store-account-keys-azure-key-vault.md)]

@@ -4,10 +4,10 @@ title: 'Exercise: Use Azure Monitor to analyze an Azure Cosmos DB for NoSQL acco
 metadata:
   title: 'Exercise: Use Azure Monitor to analyze an Azure Cosmos DB for NoSQL account'
   description: "Exercise: Use Azure Monitor to analyze an Azure Cosmos DB for NoSQL account"
-  ms.date: 10/28/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/6-exercise-use-azure-monitor-to-analyze-account.md)]
+  [!include[](includes/6-exercise-use-azure-monitor-to-analyze-account.md)]

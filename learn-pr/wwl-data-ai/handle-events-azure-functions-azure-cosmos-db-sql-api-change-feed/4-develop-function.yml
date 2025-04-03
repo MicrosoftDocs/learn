@@ -4,7 +4,7 @@ title: Develop function
 metadata:
   title: Develop function
   description: "Develop function"
-  ms.date: 10/22/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -13,4 +13,4 @@ labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/4-develop-function.md)]
-
+
