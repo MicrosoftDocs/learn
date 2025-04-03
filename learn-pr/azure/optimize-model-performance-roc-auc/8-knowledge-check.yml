@@ -17,10 +17,10 @@ quiz:
     - content: "TPR is the number of correct responses. FPR is the number of incorrect responses."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "TPR is the proportion of answers that were provided correctly as 'true'. FPR is the proportion of answers that were provided incorrectly as 'true'."
+    - content: "TPR is the proportion of answers that were provided correctly as 'true.' FPR is the proportion of answers that were provided incorrectly as 'true.'"
       isCorrect: true
       explanation: "Correct."
-    - content: "TPR is the proportion of answers that were provided correctly as 'true'. FPR is the proportion of answers that were provided incorrectly as 'false'."
+    - content: "TPR is the proportion of answers that were provided correctly as 'true.' FPR is the proportion of answers that were provided incorrectly as 'false.'"
       isCorrect: false
       explanation: "Incorrect."
   - content: 'What are on the X and Y axes in an ROC plot?'
