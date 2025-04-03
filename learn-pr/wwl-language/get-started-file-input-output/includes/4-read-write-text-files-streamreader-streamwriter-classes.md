@@ -47,9 +47,9 @@ class Program
         {
             // Write some data
             writer.WriteLine("Name,Age,Occupation");
-            writer.WriteLine("Alice,30,Engineer");
-            writer.WriteLine("Bob,25,Designer");
-            writer.WriteLine("Charlie,35,Manager");
+            writer.WriteLine("Elize Harmsen,30,Engineer");
+            writer.WriteLine("Peter Zammit,25,Designer");
+            writer.WriteLine("Niki Demetriou,35,Manager");
         }
 
         Console.WriteLine($"CSV file created at: {filePath}");
@@ -143,9 +143,9 @@ class Program
         // Create a list of employees
         List<Employee> employees = new List<Employee>
         {
-            new Employee { Name = "Alice", Age = 30, Occupation = "Engineer" },
-            new Employee { Name = "Bob", Age = 25, Occupation = "Designer" },
-            new Employee { Name = "Charlie", Age = 35, Occupation = "Manager" }
+            new Employee { Name = "Elize Harmsen", Age = 30, Occupation = "Engineer" },
+            new Employee { Name = "Peter Zammit", Age = 25, Occupation = "Designer" },
+            new Employee { Name = "Niki Demetriou", Age = 35, Occupation = "Manager" }
         };
 
         // Write employees to a CSV file with a header
@@ -165,8 +165,8 @@ class Program
         // Append additional employees to the CSV file without a header
         List<Employee> additionalEmployees = new List<Employee>
         {
-            new Employee { Name = "David", Age = 28, Occupation = "Developer" },
-            new Employee { Name = "Eve", Age = 32, Occupation = "Analyst" }
+            new Employee { Name = "Hannah Haynes", Age = 28, Occupation = "Developer" },
+            new Employee { Name = "Conrad Nuber", Age = 32, Occupation = "Analyst" }
         };
 
         using (StreamWriter writer = new StreamWriter(filePath, true))

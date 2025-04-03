@@ -12,7 +12,7 @@ Although using `StreamReader` and `StreamWriter` is often sufficient for text fi
 - Network communication: Binary files are used in network communication to transmit data efficiently. You might encounter binary files when working on projects that involve sending or receiving data over a network.
 - File compression: Binary files are used for file compression, where data is compressed into a binary format to save space. You might need to work with compressed files in their projects.
 
-Practical Examples
+**Practical examples**:
 
 - Saving game data: When developing a game, you might use `BinaryWriter` to save the game state (e.g., player progress, scores) in a binary file and `BinaryReader` to load the game state when the game is started.
 - Handling media files: You might use `BinaryReader` to read image or audio files and `BinaryWriter` to save edited media files.

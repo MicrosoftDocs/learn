@@ -54,8 +54,8 @@ Example:
 ```plaintext
 
 Name,Age,Occupation
-Alice,30,Engineer
-Bob,25,Designer
+Elize Harmsen,30,Engineer
+Peter Zammit,25,Designer
 
 ```
 
@@ -70,12 +70,12 @@ Example:
 {
     "people": [
         {
-            "name": "Alice",
+            "name": "Elize Harmsen",
             "age": 30,
             "occupation": "Engineer"
         },
         {
-            "name": "Bob",
+            "name": "Peter Zammit",
             "age": 25,
             "occupation": "Designer"
         }
@@ -97,12 +97,12 @@ Example:
 <?xml version="1.0" encoding="UTF-8"?>
 <People>
   <Person>
-    <Name>Alice</Name>
+    <Name>Elize Harmsen</Name>
     <Age>30</Age>
     <Occupation>Engineer</Occupation>
   </Person>
   <Person>
-    <Name>Bob</Name>
+    <Name>Peter Zammit</Name>
     <Age>25</Age>
     <Occupation>Designer</Occupation>
   </Person>
