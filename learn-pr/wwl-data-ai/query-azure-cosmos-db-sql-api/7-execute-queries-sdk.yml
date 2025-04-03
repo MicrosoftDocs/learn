@@ -4,7 +4,7 @@ title: Execute queries in the SDK
 metadata:
   title: Execute queries in the SDK
   description: "Execute queries in the SDK"
-  ms.date: 03/10/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/7-execute-queries-sdk.md)]
+  [!include[](includes/7-execute-queries-sdk.md)]

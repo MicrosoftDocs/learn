@@ -4,7 +4,7 @@ title: Understand Azure Function bindings for Azure Cosmos DB for NoSQL
 metadata:
   title: Understand Azure Function bindings for Azure Cosmos DB for NoSQL
   description: "Understand Azure Function bindings for Azure Cosmos DB for NoSQL"
-  ms.date: 10/18/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 2
 content: |
-  [!include[](includes/2-understand-azure-function-bindings.md)]
+  [!include[](includes/2-understand-azure-function-bindings.md)]
