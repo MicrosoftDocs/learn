@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-file-input-output
 metadata:
   title: Get started with file input and output
   description: "Learn how to manage local files and directories using the System.IO classes, and how to store and retrieve C# objects using CSV files and the StreamReader and StreamWriter classes."
-  ms.date: 04/02/2025
+  ms.date: 04/03/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module-intro-to-product
@@ -12,7 +12,7 @@ metadata:
   ms.devlang: csharp
   ai-usage: human-only
 title: Get started with file input and output
-summary: Learn how to manage local files and directories&nbsp;using&nbsp;the&nbsp;System.IO classes, and how to store and retrieve C# objects using CSV files and&nbsp;the StreamReader and StreamWriter classes.
+summary: Learn how to manage local files and directories using the System.IO classes, and how to store and retrieve C# objects using CSV files and the StreamReader and StreamWriter classes.
 abstract: |
   -   Describe common file input and output operations, the difference between structured and unstructured data, and common text file formats.
 
@@ -30,7 +30,7 @@ prerequisites: |
 
   -   The ability to develop object-oriented programs in C# that implement classes, interfaces, class inheritance, and polymorphic behavior.
 
-  -   The ability to manage&nbsp;collections, structs, records, generics,&nbsp;dates and times,&nbsp;and anonymous types.
+  -   The ability to manage collections, structs, records, generics, dates and times, and anonymous types.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
