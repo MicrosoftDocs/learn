@@ -50,7 +50,7 @@ There are three ways to mark a property or field as required for JSON deserializ
 
 To specify that all non-optional constructor parameters are required for JSON deserialization, set the `JsonSerializerOptions.RespectRequiredConstructorParameters` option to `true`.
 
-From the serializer's perspective, the C# `required` modifier and `[JsonRequired]` attribute are equivalent, and both map to the same piece of metadata, which is `JsonPropertyInfo.IsRequired`. In most cases, you'd simply use the built-in C# keyword. However, in the following cases, you should use `JsonRequiredAttribute` instead:
+From the serializer's perspective, the C# `required` modifier and `[JsonRequired]` attribute are equivalent, and both map to the same piece of metadata, which is `JsonPropertyInfo.IsRequired`. In most cases, you'd use the built-in C# keyword. However, in the following cases, you should use `JsonRequiredAttribute` instead:
 
 - If you're using a programming language other than C# or a down-level version of C#.
 - If you only want the requirement to apply to JSON deserialization.
@@ -135,7 +135,7 @@ public class Person
 
 ## Deserialize and populate initialized properties
 
-When deserializinga JSON string into an object, you can specify whether certain properties are initialized or not. This is useful for ensuring that the deserialized object has all the necessary data before it can be used.
+When deserializing a JSON string into an object, you can specify whether certain properties are initialized or not. This is useful for ensuring that the deserialized object has all the necessary data before it can be used.
 
 Starting in .NET 8, you can specify a preference to either replace or populate .NET properties when JSON is deserialized. The `JsonObjectCreationHandling` enum provides the object creation handling choices:
 
@@ -184,10 +184,10 @@ You can change the deserialization behavior to modify (populate) properties and 
 - For a property that's an object with properties, its mutable properties are updated to the JSON values but the object reference itself doesn't change.
 - For a struct type property, the effective behavior is that for its mutable properties, any existing values are kept and new values from the JSON are added. However, unlike a reference property, the object itself isn't reused since it's a value type. Instead, a copy of the struct is modified and then reassigned to the property.
 
-A `struct` property must have a setter; otherwise, an InvalidOperationException is thrown at run time.
+A `struct` property must have a setter; otherwise, an `InvalidOperationException` is thrown at run time.
 
 > [!IMPORTANT]
-> The populate behavior currently doesn't work for types that have a parameterized constructor.
+> The `Populate` behavior currently doesn't work for types that have a parameterized constructor.
 
 ### How to specify
 

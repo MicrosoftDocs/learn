@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/02/2025
+  ms.date: 04/03/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
@@ -19,10 +19,10 @@ quiz:
       explanation: "Incorrect. In JSON, objects are enclosed in curly braces and arrays are enclosed in square brackets."
     - content: "Objects enclosed in curly braces, arrays enclosed in parentheses, and values can be strings, numbers, Booleans, arrays, or objects."
       isCorrect: false
-      explanation: "Incorrect. In JSON, arrays aren't enclosed in parentheses but in square brackets."
+      explanation: "Incorrect. In JSON, arrays are enclosed in square brackets not parentheses."
     - content: "Objects enclosed in curly braces, arrays enclosed in square brackets, and values can be strings, numbers, Booleans, arrays, or objects."
       isCorrect: true
-      explanation: "Correct. This is the basic structure of a JSON file."
+      explanation: "Correct. This answer describes the basic structure of a JSON file."
   - content: "What is the primary class used for serialization and deserialization in the `System.Text.Json` namespace?"
     choices:
     - content: "`JsonSerializer`."
@@ -44,7 +44,7 @@ quiz:
       explanation: "Incorrect. `JsonSerializerOptions` is used to customize the serialization process, not for deserialization or converting JSON strings into C# objects."
     - content: "It allows you to specify options such as whether to ignore null values, include fields, and control the formatting of the JSON output."
       isCorrect: true
-      explanation: "Correct. `JsonSerializerOptions` provides various properties to customize the serialization process, including ignoring null values, including fields, and controlling JSON output formatting."
+      explanation: "Correct. `JsonSerializerOptions` provides various properties to customize the serialization process. For example, options can be used to ignore null values, include fields, and control JSON output formatting."
   - content: "What is the main purpose of the `JsonSerializerOptions` class in customizing deserialization behavior?"
     choices:
     - content: "It allows you to specify the maximum depth of the JSON."

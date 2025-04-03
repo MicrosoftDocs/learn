@@ -1,4 +1,4 @@
-JavaScript Object Notation (JSON) is a lightweight data interchange format that's easy for both humans and machines to read and write. It's widely used for transmitting data between a server and a web application, as well as for storing and exchanging data in various applications.
+JavaScript Object Notation (JSON) is a lightweight data interchange format that's easy for both humans and machines to read and write. JSON is widely used for transmitting data between a server and a web application, as well as for storing and exchanging data in various applications.
 
 ## What is JSON?
 
@@ -10,8 +10,8 @@ The JSON file syntax is simple and easy to understand. JSON data is represented 
 
 The basic structure of JSON consists of:
 
-- **Objects**: Enclosed in curly braces `{}`, objects are collections of key-value pairs. Each key is a string, followed by a colon and the corresponding value. Multiple key-value pairs are separated by commas.
-- **Arrays**: Enclosed in square brackets `[]`, arrays are ordered lists of values. Values can be of any type, including objects and other arrays. Elements in an array are separated by commas.
+- **Objects**: Objects are collections of key-value pairs that are enclosed in curly braces `{}`. Each key is a string, followed by a colon and the corresponding value. Multiple key-value pairs are separated by commas.
+- **Arrays**: Arrays are ordered lists of values that are enclosed in square brackets `[]`. Values can be of any type, including objects and other arrays. Elements in an array are separated by commas.
 - **Values**: Values can be strings, numbers, Booleans, arrays, or objects. Strings are enclosed in double quotes, numbers are written without quotes, and Booleans are represented as true or false. A null value is represented by the keyword null.
 - **Whitespace**: JSON allows for whitespace (spaces, tabs, and newlines) to be used for readability. However, whitespace isn't significant in JSON and can be ignored by parsers.
 - **Comments**: JSON doesn't support comments.

@@ -3,7 +3,7 @@ uid: learn.wwl.store-retrieve-json-files
 metadata:
   title: Store and retrieve JSON files
   description: "Learn how to serialize and deserialize between JavaScript Object Notation (JSON) and C# object using the JsonSerializer class, the JsonSerializerOptions class, and Data Transfer Objects."
-  ms.date: 04/02/2025
+  ms.date: 04/03/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module-intro-to-product

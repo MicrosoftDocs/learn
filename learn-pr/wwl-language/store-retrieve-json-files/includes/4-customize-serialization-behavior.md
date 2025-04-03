@@ -24,7 +24,7 @@ The `JsonSerializer` class provides various options and configurations to custom
 
 ## Customize serialization behavior using JsonSerializerOptions
 
-The `JsonSerializerOptions` class allows you to customize the serialization behavior of the `JsonSerializer.Serialize` method. For exaple, you can specify options such as whether to ignore null values, include fields, and control the formatting of the JSON output.
+The `JsonSerializerOptions` class allows you to customize the serialization behavior of the `JsonSerializer.Serialize` method. For example, you can specify options such as whether to ignore null values, include fields, and control the formatting of the JSON output.
 
 The following properties are demonstrated during this unit:
 
