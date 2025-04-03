@@ -4,7 +4,7 @@ title: Define automatic failover policies
 metadata:
   title: Define automatic failover policies
   description: "Define automatic failover policies"
-  ms.date: 12/06/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 2
 content: |
-  [!include[](includes/5-define-automatic-failover-policies.md)]
+  [!include[](includes/5-define-automatic-failover-policies.md)]

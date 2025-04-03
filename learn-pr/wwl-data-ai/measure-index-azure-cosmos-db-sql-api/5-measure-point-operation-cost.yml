@@ -4,7 +4,7 @@ title: Measure point operation cost
 metadata:
   title: Measure point operation cost
   description: "Measure point operation cost"
-  ms.date: 10/18/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/5-measure-point-operation-cost.md)]
+  [!include[](includes/5-measure-point-operation-cost.md)]
