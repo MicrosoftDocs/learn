@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.store-retrieve-json-files.manage-serialization-deserialization-complex-objects
+title: Manage serialization and deserialization of complex objects
+metadata:
+  title: Manage serialization and deserialization of complex objects
+  description: "Manage serialization and deserialization of complex objects"
+  ms.date: 04/03/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-manage-serialization-deserialization-complex-objects.md)]
