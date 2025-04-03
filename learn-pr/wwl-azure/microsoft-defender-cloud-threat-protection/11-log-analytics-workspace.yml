@@ -2,9 +2,11 @@
 uid: learn.wwl.microsoft-defender-cloud-threat-protection.log-analytics-workspace
 title: 'Log Analytics workspace '
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Log Analytics workspace
   description: "Log Analytics workspace"
-  ms.date: 03/28/2025
+  ms.date: 04/03/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
