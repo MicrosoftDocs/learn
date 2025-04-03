@@ -46,7 +46,7 @@ Take the following steps to enable Conditional Access:
 
 1. In the Microsoft Intune admin center, select **Devices** from the navigation menu, and then expand the **Manage Devices** section.
 
-1. select **Compliance**.
+1. Select **Compliance**.
 
 1. Select **+ Create policy**.
 
@@ -69,7 +69,7 @@ Take the following steps to enable Conditional Access:
 
 1. Select **Next**, and then select **Create**, to save your changes (and create the policy).
 
-    >[!NOTE:] You can also create and assign policies the *Microsoft Intune admin center*, **Endpoint security**, *Device compliance* section.
+    >[!NOTE:] You can also create and assign policies in the *Microsoft Intune admin center*, **Endpoint security**, *Device compliance* section.
 
 ### Create an Entra ID Conditional Access policy
 
