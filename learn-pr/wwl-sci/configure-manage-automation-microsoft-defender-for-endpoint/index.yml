@@ -4,7 +4,7 @@ metadata:
   title: Configure and manage automation using Microsoft Defender for Endpoint
   description: "Configure and manage automation using Microsoft Defender for Endpoint"
   ms.date: 04/02/2025
-  author: wwlpublish
+  author: KenMAG
   ms.author: kelawson
   ms.topic: module
   ms.service: azure
