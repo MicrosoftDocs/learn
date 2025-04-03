@@ -4,7 +4,7 @@ title: Implement optimistic concurrency control
 metadata:
   title: Implement optimistic concurrency control
   description: "Implement optimistic concurrency control"
-  ms.date: 03/09/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/5-implement-optimistic-concurrency-control.md)]
+  [!include[](includes/5-implement-optimistic-concurrency-control.md)]

@@ -6,7 +6,7 @@ metadata:
   description: Test your knowledge of AI agents.
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 02/12/2025
+  ms.date: 04/03/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -47,4 +47,4 @@ quiz:
     - content: "Knowledge"
       isCorrect: true
       explanation: "Correct. Adding a knowledge source enables an agent to ground prompts with contextual data."
-
+

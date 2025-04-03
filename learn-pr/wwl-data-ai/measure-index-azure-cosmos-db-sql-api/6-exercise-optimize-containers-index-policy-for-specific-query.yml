@@ -4,10 +4,10 @@ title: Exercise - Optimize an Azure Cosmos DB for NoSQL container's index policy
 metadata:
   title: Exercise - Optimize an Azure Cosmos DB for NoSQL container's index policy for a specific query
   description: "Exercise - Optimize an Azure Cosmos DB for NoSQL container's index policy for a specific query"
-  ms.date: 10/28/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/6-exercise-optimize-containers-index-policy-for-specific-query.md)]
+  [!include[](includes/6-exercise-optimize-containers-index-policy-for-specific-query.md)]

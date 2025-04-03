@@ -4,7 +4,7 @@ title: Implement correlated subqueries
 metadata:
   title: Implement correlated subqueries
   description: "Implement correlated subqueries"
-  ms.date: 03/10/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-implement-correlated-subqueries.md)]
+  [!include[](includes/3-implement-correlated-subqueries.md)]

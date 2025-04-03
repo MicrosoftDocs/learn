@@ -4,7 +4,7 @@ title: Measure query cost
 metadata:
   title: Measure query cost
   description: "Measure query cost"
-  ms.date: 10/18/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-measure-query-cost.md)]
+  [!include[](includes/4-measure-query-cost.md)]
