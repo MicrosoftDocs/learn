@@ -4,10 +4,10 @@ title: 'Exercise: Create an Azure Cosmos DB for NoSQL account'
 metadata:
   title: 'Exercise: Create an Azure Cosmos DB for NoSQL account'
   description: "Exercise: Create an Azure Cosmos DB for NoSQL account"
-  ms.date: 10/28/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-exercise-create-account.md)]
+  [!include[](includes/4-exercise-create-account.md)]

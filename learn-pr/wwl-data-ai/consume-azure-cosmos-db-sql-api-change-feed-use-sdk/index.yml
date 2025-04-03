@@ -3,7 +3,7 @@ uid: learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk
 metadata:
   title: Consume an Azure Cosmos DB for NoSQL change feed using the SDK
   description: "Process change feed events using the change feed processor in the Azure Cosmos DB for NoSQL .NET SDK."
-  ms.date: 10/18/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: module-standard-task-based
@@ -36,4 +36,4 @@ units:
 - learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk.knowledge-check
 - learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk.summary
 badge:
-  uid: learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk.badge
+  uid: learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk.badge

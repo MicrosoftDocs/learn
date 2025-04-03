@@ -4,10 +4,10 @@ title: 'Exercise: Troubleshoot an application using the Azure Cosmos DB for NoSQ
 metadata:
   title: 'Exercise: Troubleshoot an application using the Azure Cosmos DB for NoSQL SDK'
   description: "Exercise: Troubleshoot an application using the Azure Cosmos DB for NoSQL SDK"
-  ms.date: 10/28/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
 durationInMinutes: 20
 content: |
-  [!include[](includes/7-exercise-troubleshoot-application-using-sdk.md)]
+  [!include[](includes/7-exercise-troubleshoot-application-using-sdk.md)]

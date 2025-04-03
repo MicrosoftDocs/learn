@@ -4,11 +4,11 @@ title: 'Exercise: Batch multiple point operations together with the Azure Cosmos
 metadata:
   title: 'Exercise: Batch multiple point operations together with the Azure Cosmos DB for NoSQL SDK'
   description: "Exercise: Batch multiple point operations together with the Azure Cosmos DB for NoSQL SDK"
-  ms.date: 03/09/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
   zone_pivot_groups: dev-lang-csharp-node-python
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-exercise-batch-multiple-point-operations-together-sdk.md)]
+  [!include[](includes/4-exercise-batch-multiple-point-operations-together-sdk.md)]

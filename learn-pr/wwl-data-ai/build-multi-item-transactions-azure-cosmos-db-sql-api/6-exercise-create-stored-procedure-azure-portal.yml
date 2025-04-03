@@ -4,10 +4,10 @@ title: 'Exercise: Create a stored procedure with the Azure portal'
 metadata:
   title: 'Exercise: Create a stored procedure with the Azure portal'
   description: "Exercise: Create a stored procedure with the Azure portal"
-  ms.date: 10/28/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/6-exercise-create-stored-procedure-azure-portal.md)]
+  [!include[](includes/6-exercise-create-stored-procedure-azure-portal.md)]
