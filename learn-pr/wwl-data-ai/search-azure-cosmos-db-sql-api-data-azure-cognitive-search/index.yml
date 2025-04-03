@@ -3,7 +3,7 @@ uid: learn.wwl.search-azure-cosmos-db-sql-api-data-azure-cognitive-search
 metadata:
   title: Search Azure Cosmos DB for NoSQL data with Azure Cognitive Search
   description: "Index Azure Cosmos DB for NoSQL data with Azure Cognitive Search."
-  ms.date: 07/10/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: module-standard-task-based
@@ -33,4 +33,4 @@ units:
 - learn.wwl.search-azure-cosmos-db-sql-api-data-azure-cognitive-search.knowledge-check
 - learn.wwl.search-azure-cosmos-db-sql-api-data-azure-cognitive-search.summary
 badge:
-  uid: learn.wwl.search-azure-cosmos-db-sql-api-data-azure-cognitive-search.badge
+  uid: learn.wwl.search-azure-cosmos-db-sql-api-data-azure-cognitive-search.badge

@@ -4,10 +4,10 @@ title: 'Exercise: Implement and use user defined functions with the Azure Cosmos
 metadata:
   title: 'Exercise: Implement and use user defined functions with the Azure Cosmos DB SDK'
   description: "Exercise: Implement and use user defined functions with the Azure Cosmos DB SDK"
-  ms.date: 10/28/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/6-exercise-implement-use-user-defined-functions-with-the-sdk.md)]
+  [!include[](includes/6-exercise-implement-use-user-defined-functions-with-the-sdk.md)]

@@ -4,7 +4,7 @@ title: Evaluate the cost of distributing data globally
 metadata:
   title: Evaluate the cost of distributing data globally
   description: "Evaluate the cost of distributing data globally"
-  ms.date: 10/22/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -13,4 +13,4 @@ labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/4-evaluate-cost-distributing-data-globally.md)]
-
+

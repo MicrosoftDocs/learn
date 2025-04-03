@@ -4,7 +4,7 @@ title: Author Stored procedures
 metadata:
   title: Author Stored procedures
   description: "Author Stored procedures"
-  ms.date: 10/17/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-author-stored-procedures.md)]
+  [!include[](includes/3-author-stored-procedures.md)]

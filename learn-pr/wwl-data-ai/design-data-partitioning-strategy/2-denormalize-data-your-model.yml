@@ -4,7 +4,7 @@ title: Denormalize data in your model
 metadata:
   title: Denormalize data in your model
   description: "Denormalize data in your model"
-  ms.date: 04/16/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-denormalize-data-your-model.md)]
+  [!include[](includes/2-denormalize-data-your-model.md)]
