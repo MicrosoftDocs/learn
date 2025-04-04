@@ -44,7 +44,9 @@ Take the following steps to enable Conditional Access:
 
 ### Create the compliance policy in the Intune admin center
 
-1. In the Microsoft Intune admin center, select **Dashboard**, and select **Compliance policies**.
+1. In the Microsoft Intune admin center, select **Devices** from the navigation menu, and then expand the **Manage Devices** section.
+
+1. Select **Compliance**.
 
 1. Select **+ Create policy**.
 
@@ -52,27 +54,23 @@ Take the following steps to enable Conditional Access:
 
 1. Enter a Name and Description, select **Next**.
 
-1. On the *Compliance Settings* tab, expand **Microsoft Defender for Endpoint rules**, set **Require the device to be at or under the machine risk score** to your preferred level:
+1. On the *Compliance Settings* tab, expand **Microsoft Defender for Endpoint**, set **Require the device to be at or under the machine risk score** to your preferred level:
 
     - Clear: This level is the most secure. The device can't have any existing threats and still access company resources. If any threats are found, the device is evaluated as noncompliant.
     - Low: The device is compliant if only low-level threats exist. Devices with medium or high threat levels aren't compliant.
     - Medium: The device is compliant if the threats found on the device are low or medium. If high-level threats are detected, the device is determined as noncompliant.
     - High: This level is the least secure and allows all threat levels. So devices with high, medium, or low threat levels are considered compliant.
 
+1. Select **Next** and in the **Actions for noncompliance** tab, select actions to take.
 
-1. Select **Next** until you can select **Create**, and Create to save your changes (and create the policy).
+1. Select **Next** and in the **Scope tags** tab, leave the *Default* or select other scope tags.
 
-### Assign the policy in Endpoint Manager
+1. Select **Next** and in the **Assignments** tab, select the groups, users, or devices to assign the policy to. Or select groups to exclude from the policy.
 
-1. In Microsoft Endpoint Manager admin center, open the policy you created in the previous step, select **Properties**.
+1. Select **Next**, and then select **Create**, to save your changes (and create the policy).
 
-1. Under the Assignments section, select **Edit**.
-
-1. Select **Assignments**.
-
-1. Include or exclude your Entra ID groups to assign them the policy.
-
-1. To deploy the policy to the groups, select **Review + Save** and then select **Save**. The user devices targeted by the policy are evaluated for compliance.
+    > [!NOTE]
+    > You can also create and assign policies in the *Microsoft Intune admin center*, **Endpoint security**, *Device compliance* section.
 
 ### Create an Entra ID Conditional Access policy
 
