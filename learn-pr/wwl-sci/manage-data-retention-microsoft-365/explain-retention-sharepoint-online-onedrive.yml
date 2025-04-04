@@ -26,4 +26,4 @@ quiz:
       explanation: "Incorrect: Retention policies apply to individual section files, not to the notebook as a whole."
     - content: "Retention is based on the Modified date of the entire notebook."
       isCorrect: false
-      explanation: "Incorrect: There's no single 'notebook' file; retention is based on individual section files' Modified dates."
+      explanation: "Incorrect: The Modified date shown for the notebook doesn't affect retention. Retention is based on the section files, which are the actual files managed by the policy."
