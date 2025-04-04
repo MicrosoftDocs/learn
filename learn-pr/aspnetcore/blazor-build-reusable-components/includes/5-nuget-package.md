@@ -1,14 +1,14 @@
-When you package your Razor class library, you have a binary deliverable that can be referenced by Blazor projects, and the components within it can be used in those projects.
+When you package your Razor class library, you have a binary deliverable that other Blazor projects can reference and the components within it can be used in those projects.
 
 In an earlier unit, you created a Razor class library with a modal component that delivers a modal dialog window for Blazor applications. To share that component for use in other applications, you need to package and place it in either a repository or a folder where other developers can acquire it.
 
-In this unit, you'll update that project and generate a NuGet package. Finally, you'll deploy that NuGet package to your Blazor server application.
+In this unit, you update that project and generate a NuGet package. Finally, you deploy that NuGet package to your Blazor server application.
 
 ## Add package properties to FirstClassLibrary
 
-Begin by updating the *FirstClassLibrary* project with properties that will allow it to be packaged for deployment as a NuGet package. 
+Begin by updating the *FirstClassLibrary* project with properties that allow it to be packaged for deployment as a NuGet package.
 
-1. Open the project file for the *MyClassLibrary* project either by double-clicking the project in Visual Studio Solution Explorer or by opening the *MyClassLibrary.csproj* file in Visual Studio Code.
+1. Open the project file for the *MyClassLibrary* project. Either double-click the project in Visual Studio Solution Explorer or open the *MyClassLibrary.csproj* file in Visual Studio Code.
 1. Near the top of the file, in the section with the `<PropertyGroup>` tag, add the following content before the closing `</PropertyGroup>` tag:
 
     ```xml
@@ -40,9 +40,9 @@ This command writes a file named *My.FirstClassLibrary.0.1.0.nupkg* to your *bin
 
 You already referenced the *FirstClassLibrary* project in your MyBlazorServer application, because it was in the same folder structure as the web application. 
 
-Now, you'll undo that project reference and add a reference to the NuGet package that you created earlier. 
+Now, you undo that project reference and add a reference to the NuGet package that you created earlier.
 
-These steps are *not* a typical configuration. Library projects that reside in the same folders or solution as the applications that want to reference them can reference the project directly, as you saw in the earlier exercise. 
+The following steps *don't* describe a typical configuration. Library projects that reside in the same folders or solution as the applications that want to reference them can reference the project directly, as you saw in the earlier exercise.
 
 1. Open the *MyBlazorServer.csproj* file either by double-clicking the *MyBlazorServer* project name in Visual Studio or by opening the file in Visual Studio Code.
 1. In the *MyBlazorServer.csproj* file, remove the following line:
@@ -59,7 +59,7 @@ These steps are *not* a typical configuration. Library projects that reside in t
 
 ## Check your work
 
-Did your new package install properly?  Can you start the FirstServer application and see a modal window when the application starts?
+Did your new package install properly? Can you start the FirstServer application and see a modal window when the application starts?
 
 Let's find out:
 
@@ -69,4 +69,4 @@ Let's find out:
 
 1. In your browser, go to the home page of the MyBlazorServer application: ``` https://localhost:5000 ```.
 
-   Is the **My first Modal dialog** dialog displayed?  If so, congratulations! You've successfully packaged and deployed the *FirstClassLibrary* project correctly. Applications everywhere can now use your modal window component by referencing your newly created NuGet package.
+   Is the **My first Modal dialog** dialog displayed? If so, congratulations! You successfully packaged and deployed the *FirstClassLibrary* project correctly. Applications everywhere can now use your modal window component by referencing your newly created NuGet package.
