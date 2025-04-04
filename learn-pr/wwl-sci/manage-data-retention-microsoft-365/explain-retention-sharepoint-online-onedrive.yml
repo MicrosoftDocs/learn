@@ -4,7 +4,7 @@ title: Explain retention in SharePoint Online and OneDrive
 metadata:
   title: Explain retention in SharePoint Online and OneDrive
   description: "Explain retention in SharePoint Online and OneDrive"
-  ms.date: 05/30/2024
+  ms.date: 04/04/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
@@ -16,14 +16,14 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "How does the retention of OneNote content work in SharePoint and OneDrive?"
+  - content: "How does retention work for OneNote content stored in SharePoint and OneDrive?"
     choices:
-    - content: "Each page within a section is treated as an individual file under retention policies."
+    - content: "Each OneNote section is stored as a separate file and retained individually under the policy."
       isCorrect: true
-      explanation: "Correct: OneNote notebooks consist of multiple sections, and each section is treated as an individual file under retention policies. This ensures that all pages within sections are retained or deleted together."
-    - content: "Entire notebooks are retained or deleted as single units."
+      explanation: "Correct: OneNote notebooks are stored as folders, and each section is a separate file. Retention policies apply to the section files individually, meaning all pages within a section are retained or deleted together."
+    - content: "Retention policies treat the entire notebook as a single unit."
       isCorrect: false
-      explanation: "Incorrect: Retention is applied to sections within a notebook, not to entire notebooks as single units."
-    - content: "The Modified date of the notebook determines retention decisions."
+      explanation: "Incorrect: Retention policies apply to individual section files, not to the notebook as a whole."
+    - content: "Retention is based on the Modified date of the entire notebook."
       isCorrect: false
-      explanation: "Incorrect: The Modified date of the notebook doesn't influence retention decisions in Microsoft 365."
+      explanation: "Incorrect: There's no single 'notebook' file; retention is based on individual section files' Modified dates."
