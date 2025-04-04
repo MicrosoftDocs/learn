@@ -3,7 +3,7 @@ uid: learn.wwl.implement-asynchronous-tasks
 metadata:
   title: Implement asynchronous tasks
   description: "Learn how to implement asynchronous tasks in C# apps using the async and await keywords and how to run asynchronous tasks in parallel."
-  ms.date: 04/03/2025
+  ms.date: 04/04/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module-intro-to-product
@@ -33,7 +33,7 @@ prerequisites: |
   -   A basic understanding of file input and output operations using the System.IO classes.
 
   -   A basic understanding of JSON serialization and deserialization&nbsp;using System.Text.Json classes and Data Transfer Objects.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
