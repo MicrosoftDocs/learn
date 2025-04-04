@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.purview-ai-discover-data
+metadata:
+  title: Discover AI interactions with Microsoft Purview
+  description: "Discover AI interactions with Microsoft Purview."
+  ms.date: 04/04/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: purview
+  hidden: false
+title: Discover AI interactions with Microsoft Purview
+summary: Microsoft Purview helps organizations discover how Microsoft 365 Copilot and enterprise AI tools interact with data. Through Microsoft Purview Data Security Posture Management (DSPM) for AI and Audit, security teams can identify AI activity, review potential risks, and use insights to support compliance and data protection efforts.
+abstract: |
+  After completing this module, you'll be able to:
+  - Explain the purpose and benefits of Microsoft Purview DSPM for AI and Audit.
+  - Set up and configure DSPM for AI to detect activity from Microsoft 365 Copilot and enterprise AI tools.
+  - Use Microsoft Purview Audit to search and review Copilot activity.
+  - Identify and analyze AI security risks using reports and insights.
+  - Run and review AI data assessments to detect oversharing risks.
+  - Apply security policies, such as DLP and sensitivity labels, to protect data referenced by AI tools.
+prerequisites: |
+  - Familiarity with Microsoft 365 services.
+  - Basic understanding of AI tools, including Microsoft 365 Copilot.
+  - Knowledge of security and compliance concepts such as data loss prevention (DLP), sensitivity labels, and auditing.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- auditor
+- administrator
+- risk-practitioner
+products:
+- microsoft-purview
+- m365
+subjects:
+- information-protection-governance
+- security
+units:
+- learn.wwl.purview-ai-discover-data.introduction
+- learn.wwl.purview-ai-discover-data.understand-ai-security-risks
+- learn.wwl.purview-ai-discover-data.dspm-ai-overview
+- learn.wwl.purview-ai-discover-data.configure-dspm-ai
+- learn.wwl.purview-ai-discover-data.review-ai-security-reports
+- learn.wwl.purview-ai-discover-data.audit-copilot
+- learn.wwl.purview-ai-discover-data.knowledge-check
+- learn.wwl.purview-ai-discover-data.summary
+
+badge:
+  uid: learn.wwl.purview-ai-discover-data.badge
