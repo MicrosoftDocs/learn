@@ -1,4 +1,4 @@
-This unit explores ways that you can maximize your interaction with GitHub Copilot in your development environment. By understanding the service's features and capabilities, you'll learn how to use it effectively.
+This unit explores ways that you can maximize your interaction with GitHub Copilot in your development environment. By understanding the service's features and capabilities, you learn how to use it effectively.
 
 The following sections describe the various ways to trigger and use GitHub Copilot, along with examples and shortcuts to help you get the most out of it.
 
@@ -69,10 +69,10 @@ Here are some common slash commands and their usage:
 
 - `/explain` - Provides an explanation of the selected code.
 - `/suggest` - Offers code suggestions based on the current context.
-- `/test` - Generates unit tests for the selected function or class.
+- `/tests` - Generates unit tests for the selected function or class.
 - `/comment` - Converts comments into code snippets.
 
-To use a slash command, simply type the command in your editor and press `Enter`. For example:
+To use a slash command, just type the command in your editor and press `Enter`. For example:
 
 ```python
 # Select the function, use the shortcut to open the inline chat, and type: /explain
