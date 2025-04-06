@@ -15,7 +15,7 @@ When implemented correctly, an AI center of excellence ensures the right people 
 - Ensuring key business and technical decision-makers, and other stakeholders, are actively involved in generative AI initiatives. 
 - Bridging the gap between technical and leadership to translate technical capabilities into business outcomes.
 
-![Diagram showing the process through which technical and domain experts can collaborate in generative AI lifecycle](../media/technical-domain-expert-collaboration.png)
+![Diagram showing the process through which technical and domain experts can collaborate in generative AI lifecycle.](../media/technical-domain-expert-collaboration.png)
 
 A generative AI CoE is able to identify use cases and ensure the "organizational fit." Domain experts (from business or specific functions) play a crucial role in identifying relevant use cases, determining the necessary data, and evaluating the model's effectiveness, especially considering the unique challenges of generative AI like delusions or model variability. The CoE is able to ensure that use cases must align with the organization's overarching strategy and its ability to deliver on that strategy.
 

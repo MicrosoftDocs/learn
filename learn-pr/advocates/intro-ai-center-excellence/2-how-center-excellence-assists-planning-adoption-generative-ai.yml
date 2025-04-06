@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.introduction-generative-ai-center-excellence.how-coe-assists-planning-adoption-generative-ai
+uid: learn.introduction-generative-ai-center-excellence.how-center-excellence-assists-planning-adoption-generative-ai
 title: How the Generative AI CoE assists in planning adoption of generative AI
 metadata:
   title: How the Generative AI CoE assists in planning adoption of generative AI
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-how-coe-assists-planning-adoption-generative-ai.md)]
+  [!include[](includes/2-how-center-excellence-assists-planning-adoption-generative-ai.md)]
