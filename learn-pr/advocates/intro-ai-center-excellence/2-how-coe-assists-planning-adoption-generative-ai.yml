@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-generative-ai-center-excellence.how-coe-assists-planning-adoption-generative-ai
+title: How the Generative AI CoE assists in planning adoption of generative AI
+metadata:
+  title: How the Generative AI CoE assists in planning adoption of generative AI
+  description: Learn how the Generative AI CoE assists in planning adoption of generative AI.
+  ms.date: 04/05/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-how-coe-assists-planning-adoption-generative-ai.md)]
