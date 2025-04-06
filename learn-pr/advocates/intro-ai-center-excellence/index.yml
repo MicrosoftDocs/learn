@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.introduction-generative-ai-center-excellence
+metadata:
+  ms.author: orthomas
+  author: Orin-Thomas
+  ms.date: 04/05/2025
+  title: Introduction to Generative AI Center of Excellence
+  description: An overview of the purpose of a Generative AI Center of Excellence
+  ms.topic: module
+  ms.collection:
+    - ce-advocates-ai-copilot
+  ms.service: artificial-intelligence
+title: Introduction to Generative AI Center of Excellence
+summary: Overview of the purpose of a Generative AI Center of Excellence including how a center of excellence can assist with adopting generative AI, deployment, operations, and governance of generative AI applications, determining appropriate organizational roles to assist an organization with generative AI workloads, function as a hub for learning resources and skilling, and provide a knowledge base for generative AI best practices.
+abstract: |
+  In this module you learn the purpose of a Generative AI Center of Excellence, including how a center of excellence can:
+  - Assist with adopting generative AI.
+  - Assist with deployment, operations, and governance of generative AI applications.
+  - Determine appropriate organizational roles to assist an organization with generative AI workloads
+  - Function as a hub for learning resources and skilling.
+  - Provide a knowledge base for generative AI best practices.
+prerequisites:   |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  - Azure fundamentals
+  - Generative AI fundamentals
+  - Fundamental AI concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.introduction-generative-ai-center-excellence.introduction-generative-ai-center-excellence
+- learn.introduction-generative-ai-center-excellence.how-center-excellence-assists-planning-adoption-generative-ai
+- learn.introduction-generative-ai-center-excellence.oversight-generative-ai-deployment-operations-governance
+- learn.introduction-generative-ai-center-excellence.determining-organizational-roles-responsibilities
+- learn.introduction-generative-ai-center-excellence.skilling-your-organization
+- learn.introduction-generative-ai-center-excellence.knowledge-check
+- learn.introduction-generative-ai-center-excellence.summary
+badge:
+  uid: learn.introduction-generative-ai-center-excellence-badge
