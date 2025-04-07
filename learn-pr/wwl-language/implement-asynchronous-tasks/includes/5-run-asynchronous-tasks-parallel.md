@@ -15,7 +15,7 @@ The TPL provides support in the following areas:
 
 Data parallelism is a form of parallel programming that focuses on performing the same operation on multiple data elements simultaneously. This is particularly useful when you have large datasets and want to perform computations or transformations on each element independently. In C#, you can use the `Parallel.For` and `Parallel.ForEach` methods to achieve data parallelism easily. These methods allow you to iterate over collections or ranges of data in parallel, distributing the workload across multiple threads.
 
-The Task Parallel Library supports data parallelism through the `System.Threading.Tasks.Parallel` class. This class provides method-based parallel implementations of `for` and `foreach` loops. You write the loop logic for a `Parallel.For` or `Parallel.ForEach` loop much as you would write a sequential loop. The TPL handles all the low-level work for you,
+The Task Parallel Library supports data parallelism through the `System.Threading.Tasks.Parallel` class. This class provides method-based parallel implementations of `for` and `foreach` loops. You write the loop logic for a `Parallel.For` or `Parallel.ForEach` loop much as you would write a sequential loop. The TPL handles all the low-level work for you.
 
 The following code example shows a simple foreach loop and its parallel equivalent.
 
@@ -294,7 +294,7 @@ Note that if an exception is thrown on the main thread, the threads that are sta
 
 This unit focused on parallelism and the Task Parallel Library (TPL). It covers how to run asynchronous tasks in parallel using the `Task.WhenAll` method, data parallelism with `Parallel.For` and `Parallel.ForEach` methods, and the use of concurrent data structures like `ConcurrentBag`, `ConcurrentQueue`, and `ConcurrentDictionary`. The content also demonstrates how to perform multiple file I/O operations concurrently.
 
-Key Points:
+## Key points
 
 - Parallel programming in C# allows executing multiple tasks simultaneously.
 - The `Task` class, `async` and `await` keywords are used for implementing parallel programming.

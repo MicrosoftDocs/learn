@@ -125,7 +125,7 @@ In this example, the `HandleFour` method creates a task that throws a `CustomExc
 
 This unit describes situations when code isn't suitable for parallelization and discusses common pitfalls in data and task parallelism. For example, assuming parallel is always faster, writing to shared memory locations, and over-parallelization. The content also explains how to handle exceptions in async and parallel tasks, including how to use the `Task.Wait` method and the `AggregateException.Handle` method.
 
-Key Points:
+## Key points
 
 - Not all code is suitable for parallelization. Testing and measuring performance is essential before parallelizing code.
 - Common pitfalls in data and task parallelism include assuming parallel is always faster, writing to shared memory locations, and over-parallelization.

@@ -104,7 +104,7 @@ The `HttpClient` class is designed to be reused for multiple requests, so it's r
 
 In this unit, you learned how to access web resources asynchronously using the `HttpClient` class. You also learned how to make asynchronous API calls to retrieve data from a REST API and process the response. By using asynchronous programming techniques, you can improve the responsiveness of your applications and provide a better user experience.
 
-Key Points:
+## Key points
 
 - Web resources can be accessed asynchronously to avoid blocking the UI thread.
 - REST APIs provide a standardized way to interact with web services.

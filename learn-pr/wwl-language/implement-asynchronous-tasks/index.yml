@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-asynchronous-tasks
 metadata:
-  title: Implement asynchronous tasks
-  description: "Learn how to implement asynchronous tasks in C# apps using the async and await keywords and how to run asynchronous tasks in parallel."
-  ms.date: 04/04/2025
+  title: Implement Asynchronous Tasks
+  description: "Learn how to implement asynchronous tasks in C# apps using the `async` and `await` keywords and how to run asynchronous tasks in parallel."
+  ms.date: 04/07/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module-intro-to-product
@@ -12,7 +12,7 @@ metadata:
   ms.devlang: csharp
   ai-usage: human-only
 title: Implement asynchronous tasks
-summary: Learn how to implement asynchronous tasks in C# apps using the async and await keywords and how to run asynchronous tasks in parallel.
+summary: Learn how to implement asynchronous tasks in C# apps using the `async` and `await` keywords and how to run asynchronous tasks in parallel.
 abstract: |
   -   Implement asynchronous programming in C# using the `async` and `await` keywords.
 
@@ -54,7 +54,7 @@ units:
 - learn.wwl.implement-asynchronous-tasks.access-web-resources-asynchronously
 - learn.wwl.implement-asynchronous-tasks.run-asynchronous-tasks-parallel
 - learn.wwl.implement-asynchronous-tasks.manage-asynchronous-parallel-tasks
-- learn.wwl.implement-asynchronous-tasks.exercise-implement-async-tasks
+- learn.wwl.implement-asynchronous-tasks.exercise-implement-tasks-asynchronously-parallel
 - learn.wwl.implement-asynchronous-tasks.knowledge-check
 - learn.wwl.implement-asynchronous-tasks.summary
 badge:
