@@ -61,4 +61,4 @@ There are several [load balancer SKUs](/azure/load-balancer/skus): Basic, Standa
 | SLA | 99.99% | Not available |
 
 > [!TIP]
-> To learn more about the Load Balancer check out the [Introduction to Azure Load Balancer](/training/modules/intro-to-azure-load-balancer/) module.
+> Learn more about the Load Balancer check out the [Introduction to Azure Load Balancer](/training/modules/intro-to-azure-load-balancer/) module.

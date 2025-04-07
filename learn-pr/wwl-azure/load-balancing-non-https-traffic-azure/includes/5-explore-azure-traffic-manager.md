@@ -7,8 +7,8 @@ Traffic Manager offers the several key features.
 
 | **Feature** | **Description** |
 | Increase application availability | Traffic Manager delivers high availability for your critical applications by monitoring your endpoints and providing automatic failover when an endpoint goes down. |
-| Improve application performance | Azure allows you to run cloud services and websites in datacenters located around the world. Traffic Manager can improve the responsiveness of your website by directing traffic to the endpoint with the lowest latency.
-  Service maintenance without downtime |  You can plan maintenance on your applications without downtime. Traffic Manager can direct traffic to alternative endpoints while the maintenance is in progress.
+| Improve application performance | Azure allows you to run cloud services and websites in datacenters located around the world. Traffic Manager can improve the responsiveness of your website by directing traffic to the endpoint with the lowest latency. |
+| Service maintenance without downtime |  You can plan maintenance on your applications without downtime. Traffic Manager can direct traffic to alternative endpoints while the maintenance is in progress. |
 | Combine hybrid applications | Traffic Manager supports external, non-Azure endpoints enabling it to be used with hybrid cloud and on-premises deployments, including the burst-to-cloud, migrate-to-cloud, and failover-to-cloud scenarios. |
 | Distribute traffic for complex deployments | Using nested Traffic Manager profiles, multiple traffic-routing methods are combined to create sophisticated and flexible rules to scale to the needs of larger, more complex deployments. |
 
@@ -46,7 +46,7 @@ Use the [**Performance** routing method](/azure/traffic-manager/traffic-manager-
 
 #### Geographic routing method
 
-Use the [**Geographic** routing method](azure/traffic-manager/traffic-manager-routing-methods#geographic-traffic-routing-method) to direct users to specific endpoints based on where their DNS queries originate from geographically. Good choice for regional compliance requirements. 
+Use the [**Geographic** routing method](/azure/traffic-manager/traffic-manager-routing-methods#geographic-traffic-routing-method) to direct users to specific endpoints based on where their DNS queries originate from geographically. Good choice for regional compliance requirements. 
 
 :::image type="content" source="../media/routing-method-geographic-c04c1141.png" alt-text="Diagram that shows the 'Geographic' routing method.":::
 
@@ -57,4 +57,4 @@ This video reviews Traffic Manager routing methods.
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=de489673-af9f-4474-842b-f6b13807065c]
 
 > [!TIP]
-> To learn more about Traffic Manager check out the [Enhance your service availability and data locality by using Azure Traffic Manager](/training/modules/distribute-load-with-traffic-manager/) module.
+> Learn more about Traffic Manager check out the [Enhance your service availability and data locality by using Azure Traffic Manager](/training/modules/distribute-load-with-traffic-manager/) module.
