@@ -2,8 +2,6 @@
 uid: learn.wwl.finetune-model-copilot-ai-studio.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction to fine-tuning a foundation model from the model catalog in Azure AI Foundry.
   author: madiepev
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-
+

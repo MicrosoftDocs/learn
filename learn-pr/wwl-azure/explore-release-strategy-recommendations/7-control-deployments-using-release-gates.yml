@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-release-strategy-recommendations.control-deployments-using-release-gates
 title: Control Deployments using Release Gates
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Control Deployments using Release Gates
   description: "Control Deployments using Release Gates"
   ms.date: 05/21/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 75
 content: |
-  [!include[](includes/7-control-deployments-using-release-gates.md)]
+  [!include[](includes/7-control-deployments-using-release-gates.md)]

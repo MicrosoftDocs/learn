@@ -1,4 +1,5 @@
 
+
 DNS is split into two areas: Public, and Private DNS for resources accessible from your own internal networks.
 
 ## Public DNS services

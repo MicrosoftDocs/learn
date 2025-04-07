@@ -2,8 +2,6 @@
 uid: learn.manage-azure-private-5g-core.policy-control
 title: Policy control
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Policy control
   description: Describes the tasks for using services and SIM policies to control the network traffic in a private mobile network.
   ms.date: 07/29/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 12
 content: |
-  [!include[](includes/3-policy-control.md)]
+  [!include[](includes/3-policy-control.md)]

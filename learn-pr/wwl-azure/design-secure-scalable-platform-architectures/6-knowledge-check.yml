@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-secure-scalable-platform-architectures.knowledge-check
-title: Knowledge Check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge Check
+  title: Module assessment
   description: "Knowledge Check"
   ms.date: 01/09/2025
   author: LuizMacedo
@@ -59,4 +57,4 @@ quiz:
           explanation: Correct. In the context of EaC, CI/CD pipelines automate processes that were traditionally manual, enhancing reliability and agility across all layers of the platform.
         - content: CI/CD pipelines are only used for application development and don't interact with infrastructure or configuration management.
           isCorrect: false
-          explanation: Incorrect. CI/CD pipelines play a crucial role in EaC by enabling continuous delivery of code, configurations, and infrastructure changes.
+          explanation: Incorrect. CI/CD pipelines play a crucial role in EaC by enabling continuous delivery of code, configurations, and infrastructure changes.

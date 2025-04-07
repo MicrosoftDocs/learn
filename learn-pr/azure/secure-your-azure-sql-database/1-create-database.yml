@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-your-azure-sql-database.1-create-database
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Set up sandbox environment
   description: Create an Azure SQL Database and a Linux VM for use throughout this module.
   ms.date: 11/07/2023
@@ -17,4 +15,4 @@ title: Exercise - Set up sandbox environment
 durationInMinutes: 10
 content: |
   [!include[](includes/1-create-database.md)]
-
+

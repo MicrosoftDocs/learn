@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 11/16/2023
   author: wwlpublish
@@ -47,4 +45,4 @@ quiz:
       explanation: "Incorrect. You do not need to drop and recreate the database to recreate an external table."
     - content: "Create an Apache Spark pool."
       isCorrect: false
-      explanation: "Incorrect. You do not need an Apache Spark pool to create an external table in a serverless SQL pool."
+      explanation: "Incorrect. You do not need an Apache Spark pool to create an external table in a serverless SQL pool."

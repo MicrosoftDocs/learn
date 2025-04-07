@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.startups.build-team
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Build your team
   description: Find out how to build your startup team and find cofounders. Learn how to benefit from diversity in teams, mentors, and risk management measures.
   ms.date: 06/06/2024
@@ -44,4 +42,4 @@ units:
 - learn.startups.build-team.summary
 badge:
   uid: learn.startups.build-team.badge
-
+

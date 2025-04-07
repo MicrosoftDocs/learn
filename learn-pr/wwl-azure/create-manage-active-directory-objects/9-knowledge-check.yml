@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-manage-active-directory-objects.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 10/22/2024
   author: wwlpublish
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. While creating an Organizational Unit provides a hierarchical framework for organizing objects, it doesn't directly allow for managing a collection of users and resources as a single entity."
     - content: "Create a new group"
       isCorrect: true
-      explanation: "Correct. Creating a group in Active Directory allows for managing a collection of users, computers, contacts, and other groups as a single entity."
+      explanation: "Correct. Creating a group in Active Directory allows for managing a collection of users, computers, contacts, and other groups as a single entity."

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-azure-load-balancer
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: introduction
   title: Introduction to Azure Load Balancer
   description: This module explains what Azure Load Balancer does, how it works, and when you should choose to use Load Balancer as a solution to meet your organization's needs.
@@ -39,4 +37,4 @@ units:
   - learn.azure.intro-to-azure-load-balancer.summary
 badge:
   uid: learn.azure.intro-to-azure-load-balancer.badge
-
+

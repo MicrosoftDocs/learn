@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-container-instances-sidecar.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   type: knowledge_check
-  title: Azure Container Instances - Knowledge check
+  title: Module assessment
   description: Azure Container Instances - Knowledge check
   ms.date: 07/24/2024
   author: erjosito
@@ -70,4 +68,4 @@ quiz:
     - content: "Only from inside the virtual network, peered virtual networks, and on-premises networks connected over VPN or ExpressRoute."
       isCorrect: true
       explanation: "Azure container instances deployed in virtual networks have the same connectivity as other resources, such as virtual machines."
-
+

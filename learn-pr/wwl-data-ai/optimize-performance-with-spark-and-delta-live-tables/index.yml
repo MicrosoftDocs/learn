@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.optimize-performance-with-spark-and-delta-live-tables
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Optimize performance with Spark and Delta Live Tables
   description: Optimize performance with Spark and Delta Live Tables in Azure Databricks.
   ms.date: 08/06/2024
@@ -40,4 +38,4 @@ units:
 - learn.wwl.optimize-performance-with-spark-and-delta-live-tables.summary
 badge:
   uid: learn.wwl.optimize-performance-with-spark-and-delta-live-tables.badge
-
+

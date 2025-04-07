@@ -1,11 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.perform-cross-document-transactional-operations-azure-cosmos-db-sql-api
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Perform cross-document transactional operations with the Azure Cosmos DB for NoSQL
   description: "Perform operations on multiple items in single logical units of work."
-  ms.date: 03/09/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: module-standard-task-based

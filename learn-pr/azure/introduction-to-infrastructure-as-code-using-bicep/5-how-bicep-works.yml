@@ -2,8 +2,6 @@
 uid: learn.azure.introduction-infrastructure-code-using-bicep.how-bicep-works
 title: How Bicep works
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: How Bicep works # user input: module title for browser tab and search results
   description: Learn how Bicep deploys your Azure infrastructure.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/5-how-bicep-works.md)]
-
+

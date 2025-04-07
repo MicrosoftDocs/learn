@@ -2,8 +2,6 @@
 uid: learn.wwl.build-copilot-ai-studio.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Explore building custom generative AI apps with Azure AI Foundry.
   author: madiepev
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
-
+

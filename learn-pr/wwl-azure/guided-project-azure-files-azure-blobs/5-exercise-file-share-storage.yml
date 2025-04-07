@@ -2,8 +2,6 @@
 uid: learn.wwl.guided-project-azure-files-azure-blobs.exercise4
 title: Exercise - Provide shared file storage for the company offices
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Provide shared file storage for the company offices
   description: "Exercise - Provide shared file storage for the company offices"
   ms.date: 09/02/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-exercise-file-share-storage.md)]
+  [!include[](includes/5-exercise-file-share-storage.md)]

@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.structure-bicep-code-collaboration.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   ms.date: 09/27/2024
   author: mumian
@@ -51,4 +49,4 @@ quiz:
     - content: You can structure your template and group elements in any order.
       isCorrect: false
       explanation: Incorrect. Although it's true that you can structure your Bicep templates in many different ways, ordering is unrelated to configuration sets.
-
+

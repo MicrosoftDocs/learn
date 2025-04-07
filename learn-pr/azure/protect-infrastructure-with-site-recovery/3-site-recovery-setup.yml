@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.protect-infrastructure-with-azure-site-recovery.3-site-recovery-setup
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Prepare for disaster recovery with Azure Site Recovery
   description: Here, we'll explore the configuration of an Azure Site Recovery job. We'll also complete the initial configuration of our exercise environment.
   ms.date: 01/25/2025
@@ -39,4 +37,4 @@ quiz:
       explanation: "These are the four main features of Site Recovery that will protect your VMs."
     - content: "Backs up VM disks locally and to a different region, automatically manages backup storage, creates a Microsoft Azure Backup Server (MABS), and mirrors workloads between primary and secondary regions."
       isCorrect: false
-      explanation: "These are features provided by Azure Backup, not Site Recovery."  
+      explanation: "These are features provided by Azure Backup, not Site Recovery."  

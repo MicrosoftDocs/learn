@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.use-data-factory-pipelines-fabric.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 05/08/2024
   author: wwlpublish
@@ -48,4 +46,4 @@ quiz:
       explanation: "Correct. The run history details show the time taken for each activity - optionally as a Gantt chart."
     - content: "View the **Refreshed** value for your lakehouse's default dataset"
       isCorrect: false
-      explanation: "Incorrect. The refreshed value shows the timestamp when the dataset was last refreshed, not the elapsed time for pipeline activities."
+      explanation: "Incorrect. The refreshed value shows the timestamp when the dataset was last refreshed, not the elapsed time for pipeline activities."

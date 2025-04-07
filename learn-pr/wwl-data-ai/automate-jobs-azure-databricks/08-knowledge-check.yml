@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.automate-jobs-azure-databricks.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 08/05/2024
   author: wwlpublish
@@ -47,4 +45,4 @@ quiz:
       explanation: "Incorrect. Modularizing code doesn't necessarily increase execution speed, but it simplifies debugging and enhances maintainability."
     - content: "It enhances maintainability, simplifies debugging, and allows for code reuse across different projects."
       isCorrect: true
-      explanation: "Correct. Breaking down workflows into reusable components enhances maintainability, simplifies debugging, and allows for code reuse."
+      explanation: "Correct. Breaking down workflows into reusable components enhances maintainability, simplifies debugging, and allows for code reuse."

@@ -2,11 +2,9 @@
 uid: learn.wwl.configure-azure-cosmos-db-sql-api.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/18/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -15,18 +13,18 @@ labModal: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "Your Azure Cosmos DB container has manually provisioned throughput. Incoming requests have exceeded the provisioned request units per second (RU/s). What happens next?"
+  - content: "An Azure Cosmos DB container's throughput was manually provisioned. Incoming requests exceeded the provisioned request units per second (RU/s). What happens next?"
     choices:
-    - content: "Azure Cosmos DB will rate-limit subsequent requests."
+    - content: "Azure Cosmos DB rate-limits subsequent requests."
       isCorrect: true
-      explanation: "Correct. Manually provisioned throughput will rate-limit requests, with a response indicating that a wait should be attempted before retrying."
-    - content: "Azure Cosmos DB will scale RU/s up to a service maximum of 50,000 RU/s."
+      explanation: "Correct. Manually provisioned throughput rate-limits requests, with a response indicating that a wait should be attempted before retrying."
+    - content: "Azure Cosmos DB scales RU/s up to a service maximum of 50,000 RU/s."
       isCorrect: false
-      explanation: "Incorrect. The container has manually provisioned throughput where RU/s won't change and remain static."
-    - content: "Azure Cosmos DB will scale RU/s up to a maximum RU/s that you've previously configured."
+      explanation: "Incorrect. The container's throughput was manually provisioned where RU/s don't change and remain static."
+    - content: "Azure Cosmos DB scales RU/s up to a maximum RU/s that were previously configured."
       isCorrect: false
-      explanation: "Incorrect. The container has manually provisioned throughput where RU/s will always remain static and not scale up or down."
-  - content: "While building a proof of concept, your web development team was able to successfully estimate the throughput needs of your application within a 5% margin of error and doesn't expect any significant variances over time. When running in production, the team expects your workload to be extraordinarily stable. What type of throughput option should you consider?"
+      explanation: "Incorrect. The container's throughput was manually provisioned where RU/s always remain static and not scale up or down."
+  - content: "The web development team is building a proof of concept. During this development, the team successfully estimated the throughput needs of the application within a 5% margin of error and doesn't expect any significant variances over time. When the app runs in production, the team expects the workload to be extraordinarily stable. What type of throughput option should be considered?"
     choices:
     - content: "Autoscale"
       isCorrect: false

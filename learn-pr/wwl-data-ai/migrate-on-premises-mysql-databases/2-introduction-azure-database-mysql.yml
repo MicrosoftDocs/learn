@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-premises-mysql-databases-azure-database-mysql.introduction-azure-database-mysql
 title: Introduction to Azure Database for MySQL
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to Azure Database for MySQL
   description: "Introduction to Azure Database for MySQL"
   ms.date: 11/09/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 14
 content: |
-  [!include[](includes/2-introduction-azure-database-mysql.md)]
+  [!include[](includes/2-introduction-azure-database-mysql.md)]

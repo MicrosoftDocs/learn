@@ -1,13 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.evaluate-language-models-azure-databricks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Evaluate language models with Azure Databricks
   description: Evaluate language models with Azure Databricks
   ms.date: 03/20/2025
   author: wwlpublish
-  ms.author: madiepev
+  ms.author: theresai
   ms.topic: module
   ms.service: azure
   ai-usage: ai-assisted

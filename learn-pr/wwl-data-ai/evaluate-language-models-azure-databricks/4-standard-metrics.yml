@@ -2,8 +2,6 @@
 uid: learn.wwl.evaluate-language-models-azure-databricks.standard-metrics
 title: Evaluate LLMs with standard metrics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Evaluate LLMs with standard metrics
   description: "Evaluate LLMs with standard metrics"
   ms.date: 03/20/2025
@@ -15,4 +13,4 @@ labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/4-standard-metrics.md)]
-
+

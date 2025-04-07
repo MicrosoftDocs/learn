@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-app-scaling-keda.3-exercise-deploy-keda
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Deploy KEDA on an Azure Kubernetes Service cluster
   description: In this exercise, you deploy KEDA into an AKS cluster using the KEDA add-on.
   ms.date: 06/03/2024
@@ -14,4 +12,4 @@ title: Exercise - Deploy KEDA on an Azure Kubernetes Service cluster
 durationInMinutes: 5
 content: |
   [!include[](includes/3-exercise-deploy-keda.md)]
-
+

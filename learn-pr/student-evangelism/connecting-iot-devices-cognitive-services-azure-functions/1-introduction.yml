@@ -2,8 +2,6 @@
 uid: learn.oxford.connect-iot-devices-cognitive-services-azure-func.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: In this section, we help the learner to decide if the product will meet their needs by explaining when to use the product and how it works.
   ms.date: 07/10/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 4 # dummy number at present
 content: |
   [!include[](includes/1-introduction.md)]
-
+

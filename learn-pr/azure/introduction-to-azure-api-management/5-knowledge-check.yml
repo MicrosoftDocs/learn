@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.introduction-to-azure-api-management.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge of Azure API Management
   ms.date: 04/07/2023
   author: dlepow
@@ -71,4 +69,4 @@ quiz:
     - content: "Set rate limits"
       isCorrect: true
       explanation: "Correct. By throttling API access to a specified number of calls over a defined time frame per subscription or other value, you help guard your API against customer misuse."
-
+

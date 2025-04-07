@@ -2,8 +2,6 @@
 uid: learn.wwl.apply-prompt-engineering-azure-openai.provide-context-to-improve-accuracy
 title: Provide context to improve accuracy
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Provide context to improve accuracy
   description: Provide context to improve accuracy of responses from Azure OpenAI.
   author: ivorb
@@ -20,4 +18,4 @@ metadata:
 durationInMinutes: 15
 content: |
   [!include[](includes/4-provide-context-to-improve-accuracy.md)]
-
+

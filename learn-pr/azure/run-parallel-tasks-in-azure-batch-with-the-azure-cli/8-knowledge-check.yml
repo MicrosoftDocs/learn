@@ -1,15 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli.knowledge-check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   ms.date: 04/04/2024
   author: lauradolan
   ms.author: jushiman
   ms.topic: unit
-title: Knowledge check
+title: Module assessment
 durationInMinutes: 4
 quiz:
   title: Check your knowledge
@@ -48,4 +46,4 @@ quiz:
     - content: "Application creation, management, monitoring, and debugging."
       isCorrect: true
       explanation: "Correct, you can use the Azure Batch Explorer for all four functions."   
-
+

@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.migrate-mongodb-database-to-azure-cosmos-db.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 02/06/2023
   author: wwlpublish
@@ -47,4 +45,4 @@ quiz:
       explanation: "Incorrect. If the throughput is set at the collection level, the throughput can change between Autoscale and Manual at any moment, so it isn't an immutable decision."
     - content: "Choosing the Shard Key of the collection."
       isCorrect: true
-      explanation: "Correct. One of the most important decisions to do on the collection level, is choosing the best possible shard key.  Not only because it will define the performance of the collection, but also because once the shard key is set, it can't be changed.  This choice is immutable."
+      explanation: "Correct. One of the most important decisions to do on the collection level, is choosing the best possible shard key.  Not only because it will define the performance of the collection, but also because once the shard key is set, it can't be changed.  This choice is immutable."

@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.build-your-own-ai-copilot-vcore-based-azure-cosmos-db-mongodb.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   author: wwlpublish
   ms.author: calopez
@@ -50,4 +48,4 @@ quiz:
       - content: "By direct input from database administrators"
         isCorrect: false
         explanation: "Incorrect. While database administrators configure the system, embeddings generate automatically by machine learning algorithms, not by administrators."
-
+

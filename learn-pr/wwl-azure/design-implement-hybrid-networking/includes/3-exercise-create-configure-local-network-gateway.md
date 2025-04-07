@@ -37,6 +37,7 @@ In this exercise, you configure a virtual network gateway to connect the Contoso
 > [!NOTE]
 > You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
+> [!NOTE]
+> If you have an Azure subscription detailed labs steps are available, [Create and configure a virtual network gateway](https://microsoftlearning.github.io/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/Instructions/Exercises/M02-Unit%203%20Create%20and%20configure%20a%20virtual%20network%20gateway.html)
+
 [![Screenshot of the simulation page.](../media/simulation-gateway-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Create%20and%20configure%20a%20virtual%20network%20gateway)
-
-

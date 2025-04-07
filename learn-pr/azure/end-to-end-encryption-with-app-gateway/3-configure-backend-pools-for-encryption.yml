@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.end-to-end-encryption-with-app-gateway.3-configure-backend-pools-for-encryption
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure back-end pools for encryption
   description: Configure back-end pools for encryption
   ms.date: 01/22/2024
@@ -13,4 +11,4 @@ title: Configure back-end pools for encryption
 durationInMinutes: 10
 content: |
   [!include[](includes/3-configure-backend-pools-for-encryption.md)]
-
+

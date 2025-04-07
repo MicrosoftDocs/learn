@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.startups.build-team.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Review concepts for building a startup team. Topics include cofounder agreements, founder vesting, diversity, and hiring decisions.
   ms.date: 06/06/2024
   author: vhawk85
@@ -94,4 +92,4 @@ quiz:
     - content: "All of the above."
       isCorrect: true
       explanation: "Correct. Building a diverse team has many advantages. Tapping into a highly skilled, underutilized talent pool is one example. Other examples include making better decisions, building better products, and more easily retaining employees."
-
+

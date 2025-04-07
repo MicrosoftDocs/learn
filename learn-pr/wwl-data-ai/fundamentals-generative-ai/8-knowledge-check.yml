@@ -1,52 +1,64 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.fundamentals-generative-ai.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Knowledge check
-  description: This knowledge check is based on content about generative AI, large language models, and copilots.
+  title: Module assessment
+  description: This knowledge check is based on content about generative AI and language models.
   author: sherzyang
   ms.author: sheryang
   ms.date: 11/26/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
 quiz:
   questions:
-  - content: "What are Large Language Models?"
+  - content: "What are two key components of transformer architecture that support today's generative AI?"
     choices:
-    - content: "Models that detect additional meaning in paragraphs of text."
+    - content: "Recurrent Neural Networks (RNNs) and memory retention"
       isCorrect: false
-      explanation: "Incorrect. Azure AI Language services can be used to detect additional insights such as sentiment, key phrases, etc."
-    - content: "Lists of words and code that computers use to generate text."
+      explanation: "RNNs were developed before transformer architecture. Transformer architecture is able to overcome challenges with RNNs."
+    - content: "Attention and positional encoding"
+      isCorrect: true 
+      explanation: "The most important innovations presented in the transformer architecture were *positional encoding* and *multi-head attention*."
+    - content: "Prompt engineering and groundedness"
       isCorrect: false
-      explanation: "Incorrect. Large Language Models consist of layers of neural networks. It is not a list."
-    - content: "Models that use deep learning to process and understand natural language on a massive scale."
-      isCorrect: true
-      explanation: "Correct. Large language models use deep learning to process and understand natural language on a massive scale."
-  - content: "Which Microsoft Copilot should a customer support agent use to research and resolve a support issue?"
+      explanation: Prompt engineering describes the process of prompt improvement, and while important, isn't a key component of transformer architecture. Groundedness is a metric that measures response quality.     
+  - content: "What is the main difference between Large Language Models and Small Language Models?"
     choices:
-    - content: "Microsoft Copilot for Microsoft Edge"
+    - content: "Large Language Models are trained with vast quantities of text. The text represents a wide range of general subject matter, while Small Language Models are trained with smaller, more subject-focused datasets."
+      isCorrect: true 
+      explanation: "Large Language Models are trained with vast quantities of text and have many parameters, while Small Language Models are trained with smaller datasets and have fewer parameters."
+    - content: "Large Language Models are trained to include an understanding of context, while Small Language Models aren't."
       isCorrect: false
-      explanation: "Microsoft Copilot for Microsoft Edge best used to create content based on web content, not customer data."
-    - content: "Microsoft Copilot in Dynamics 365 Customer Service"
-      isCorrect: true
-      explanation: "Customer service agents can use Copilot in Dynamics 365 Customer Service to analyze support tickets, research similar issues, find resolutions, and communicate them to users with only a few clicks and prompts."
-    - content: "Copilot for Security"
+      explanation: "Both large language models (LLMs) and small language models (SLMs) are trained to take into account context."
+    - content: "Large Language Models have fewer parameters than Small Language Models."
       isCorrect: false
-      explanation: "Copilot for Security is best used to the assess, mitigate, and respond to security threats."
-  - content: "Which tool should a professional developer use to build a custom copilot and deploy it as a service endpoint in Azure?"
+      explanation: "Incorrect. Large Language Models have many billions (even trillions) of parameters, which is more than Small Language Models."
+  - content: "What is the purpose of fine-tuning in the context of generative AI?"
     choices:
-    - content: "Copilot for Azure"
+    - content: "It's used to manage access, authentication, and data usage in AI models."
       isCorrect: false
-      explanation: "Copilot for Azure is integrated into the Azure portal and can assist infrastructure administrators as they work with Azure cloud services."
-    - content: "Microsoft Copilot Studio"
+      explanation: "This statement describes the role of security and governance controls, not fine-tuning."
+    - content: "It involves connecting a language model to an organization's proprietary database."
       isCorrect: false
-      explanation: "Copilot Studio is designed to work well for low-code development scenarios."
-    - content: "Microsoft Azure AI Foundry"
+      explanation: "This statement describes the function of Retrieval-Augmented Generation, not fine-tuning."
+    - content: "It involves further training a pretrained model on a task-specific dataset to make it more suitable for a particular application."
+      isCorrect: true 
+      explanation: "Fine-tuning allows the model to specialize and perform better at specific tasks that require domain-specific knowledge."
+  - content: "What are the four stages in the process of developing and implementing a plan for responsible AI when using generative models according to Microsoft's guidance?"
+    choices:
+    - content: "Identify potential benefits, Measure the benefits, Enhance the benefits, Operate the solution responsibly"
+      isCorrect: false
+      explanation: "While it's important to identify and enhance benefits, the focus should be on identifying, measuring, and mitigating potential harms."
+    - content: "Identify potential harms, Measure these harms, Mitigate the harms, Operate the solution responsibly"
       isCorrect: true
-      explanation: "Microsoft Azure AI Foundry is designed as a unified development portal for professional software developers to allow for full customization of language models."
+      explanation: "These stages are the four stages in the process of developing and implementing a plan for responsible AI when using generative models."
+    - content: "Define the problem, Design the solution, Develop the solution, Deploy the solution"
+      isCorrect: false
+      explanation: "These stages are general stages of software development, not specific to responsible AI development."
+  
 

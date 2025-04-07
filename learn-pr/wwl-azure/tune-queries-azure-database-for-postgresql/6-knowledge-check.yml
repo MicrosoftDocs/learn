@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.tune-queries-azure-database-for-postgresql.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 05/10/2024
   author: wwlpublish
@@ -39,4 +37,4 @@ quiz:
       explanation: "Correct. The **query_store.qs_view** view includes blocks, runtime, and query text."
     - content: "Query the **query_store.pgms_wait_sampling_view** view."
       isCorrect: false
-      explanation: "Incorrect. The **query_store.pgms_wait_sampling_view** view returns wait times for queries."
+      explanation: "Incorrect. The **query_store.pgms_wait_sampling_view** view returns wait times for queries."

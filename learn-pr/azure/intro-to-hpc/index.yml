@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.intro-to-hpc
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to high-performance computing (HPC) on Azure
   description: Discover the services available on Azure for your high-performance computing workloads.
   ms.service: azure-batch
@@ -39,4 +37,4 @@ units:
 - learn.intro-to-hpc.6-summary
 badge:
   uid: learn.intro-to-hpc.badge
-
+

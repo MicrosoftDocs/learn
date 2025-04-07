@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.apply-networking-concepts-to-windows-containers.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 02/12/2024
   author: vrapolinario
@@ -50,4 +48,4 @@ quiz:
         - content: "Manage virtual machines"
           isCorrect: false
           explanation: "Incorrect. In a Kubernetes networking configuration, Kubernetes nodes (physical or virtual machines) are managed by a control plane. The control plane communicates with the nodes through the kubelet component."
-
+

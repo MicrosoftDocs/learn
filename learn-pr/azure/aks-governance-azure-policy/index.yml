@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.aks-governance-azure-policy
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Azure Kubernetes Services Governance with Azure Policy
   description: In this module, we discuss how to use Azure Policy for Kubernetes to enforce rules and detect noncompliance in AKS clusters.
   ms.date: 04/22/2024
@@ -48,4 +46,4 @@ units:
 - learn.aks-governance-azure-policy.summary
 badge:
   uid: learn.aks-governance-azure-policy.badge
-
+

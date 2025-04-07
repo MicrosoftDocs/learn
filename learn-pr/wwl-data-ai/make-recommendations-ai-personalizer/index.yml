@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.make-recommendations-ai-personalizer
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Make recommendations with Azure AI Personalizer
   description: In this module, learn how to use Azure AI Personalizer to make recommendations.
   author: wwlpublish
@@ -49,4 +47,4 @@ units:
 - learn.make-recommendations-ai-personalize.summary
 badge:
   uid: learn.make-recommendations-ai-personalizer.badge
-
+

@@ -1,11 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.measure-performance-azure-cosmos-db-sql-api
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Measure performance in Azure Cosmos DB for NoSQL
   description: "We learn to use Azure Monitor to create and analyze monitoring data for Azure Cosmos DB."
-  ms.date: 04/23/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: module
@@ -16,7 +14,7 @@ metadata:
 title: Measure performance in Azure Cosmos DB for NoSQL
 summary: We learn to use Azure Monitor to create and analyze monitoring data for Azure Cosmos DB.
 abstract: |
-  After completing this module, you’ll be able to:
+  After completing this module, you'll be able to:
 
   -   Understand how Azure Cosmos DB uses Azure Monitor to monitor server-side metrics.
 

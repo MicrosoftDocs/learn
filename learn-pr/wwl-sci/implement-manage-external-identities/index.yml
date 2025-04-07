@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-manage-external-identities
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement and manage external identities
   description: "Inviting external users to use company Azure resources is a great benefit, but you want to do it in a secure way. Explore how to enable secure external collaboration."
   ms.date: 12/18/2024

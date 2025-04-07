@@ -2,8 +2,6 @@
 uid: learn.wwl.load-balancing-non-https-traffic-azure.explore-azure-traffic-manager
 title: Explore Azure Traffic Manager
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Azure Traffic Manager
   description: "Explore Azure Traffic Manager"
   ms.date: 02/13/2025

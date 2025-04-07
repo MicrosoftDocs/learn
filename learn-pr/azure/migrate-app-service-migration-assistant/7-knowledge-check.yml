@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.migrate-app-service-migration-assistant.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge
   ms.date: 05/21/2020
   author: rmcmurray
@@ -53,4 +51,4 @@ quiz:
     - content: Upload a record of the migration to the Azure Migrate hub
       isCorrect: false
       explanation: The Migration Assistant optionally writes information about the migration to the Azure Migrate hub.
-
+

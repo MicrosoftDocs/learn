@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.assess-sql-server-databases-for-migration-to-azure-sql
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Assess SQL Server databases for migration to Azure SQL
   description: "Learn multiple assessment tools that facilitate the migration of databases to Azure, including the Azure SQL Migration extension for Azure Data Studio, Azure Migrate, and Data Migration Assistant."
   ms.date: 05/23/2023
@@ -45,4 +43,4 @@ units:
 - learn.wwl.assess-sql-server-databases-for-migration-to-azure-sql.knowledge-check
 - learn.wwl.assess-sql-server-databases-for-migration-to-azure-sql.summary
 badge:
-  uid: learn.wwl.assess-sql-server-databases-for-migration-to-azure-sql.badge
+  uid: learn.wwl.assess-sql-server-databases-for-migration-to-azure-sql.badge

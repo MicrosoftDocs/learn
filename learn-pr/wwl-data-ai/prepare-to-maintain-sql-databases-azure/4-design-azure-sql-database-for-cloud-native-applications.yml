@@ -2,8 +2,6 @@
 uid: learn.wwl.prepare-to-maintain-sql-databases-azure.design-azure-sql-database-for-cloud-native-applications
 title: Design Azure SQL Database for cloud-native applications
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design Azure SQL Database for cloud-native applications
   description: "Design Azure SQL Database for cloud-native applications"
   ms.date: 2/12/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-design-azure-sql-database-for-cloud-native-applications.md)]
+  [!include[](includes/4-design-azure-sql-database-for-cloud-native-applications.md)]

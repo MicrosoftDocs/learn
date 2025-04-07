@@ -2,8 +2,6 @@
 uid: learn.wwl.create-manage-active-directory-objects.create-objects
 title: Create objects in Active Directory
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create objects in Active Directory
   description: "Create objects in Active Directory"
   ms.date: 10/22/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-create-objects.md)]
+  [!include[](includes/5-create-objects.md)]

@@ -2,8 +2,6 @@
 uid: learn.wwl.visualize-real-time-data-azure-stream-analytics-power-bi.power-bi-output
 title: Use a Power BI output in Azure Stream Analytics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use a Power BI output in Azure Stream Analytics
   description: "Use a Power BI output in Azure Stream Analytics"
   ms.date: 12/30/2022
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-power-bi-output.md)]
+  [!include[](includes/2-power-bi-output.md)]

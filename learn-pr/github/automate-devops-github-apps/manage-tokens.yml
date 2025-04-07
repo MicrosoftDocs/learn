@@ -2,8 +2,6 @@
 uid: learn.github.automate-devops-github-apps.manage-tokens
 title: Identify supported Access Tokens
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Identify supported Access Tokens
   description: Learn to automate DevOps processes by using GitHub Apps that handle repetitive tasks, enforce team policies, and maintain a tidy repository.
   ms.date: 04/14/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/manage-tokens.md)]
+  [!include[](includes/manage-tokens.md)]

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn-wwl.secure-data-access-in-fabric
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Secure data access in Microsoft Fabric
   description: Learn the key concepts and strategies for securing data access in Microsoft Fabric.
   ms.date: 03/20/2025
@@ -41,4 +39,4 @@ units:
 - learn-wwl.secure-data-access-in-fabric.summary
 badge:
   uid: learn-wwl.secure-data-access-in-fabric.badge
-
+

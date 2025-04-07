@@ -2,8 +2,6 @@
 uid: learn.wwl.deploy-model-batch-endpoint.deploy-your-mlflow-model-batch-endpoint
 title: Deploy your MLflow model to a batch endpoint
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deploy your MLflow model to a batch endpoint
   description: Deploy your MLflow model to a batch endpoint
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/3-deploy-your-mlflow-model-batch-endpoint.md)]
-
+

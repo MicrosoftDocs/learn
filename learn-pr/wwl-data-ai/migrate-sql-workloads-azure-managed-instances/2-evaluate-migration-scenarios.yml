@@ -2,8 +2,6 @@
 uid: learn-wwl.migrate-sql-workloads-azure-managed-instances.evaluate-migration-scenarios-sql-database-managed-instance
 title: Evaluate migration scenarios
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Evaluate migration scenarios
   description: "Learn to evaluate migration scenarios to Azure SQL Managed Instance"
   ms.date: 05/26/2021
@@ -13,4 +11,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/2-evaluate-migration-scenarios.md)]
+  [!include[](includes/2-evaluate-migration-scenarios.md)]
