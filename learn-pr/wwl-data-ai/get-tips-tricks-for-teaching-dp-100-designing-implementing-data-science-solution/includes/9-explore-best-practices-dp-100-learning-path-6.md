@@ -1,6 +1,3 @@
-
-
-
 DP-100: Learning Path 6 Track model training in Jupyter notebooks with MLflow
 
 Learning Path 6 Overview

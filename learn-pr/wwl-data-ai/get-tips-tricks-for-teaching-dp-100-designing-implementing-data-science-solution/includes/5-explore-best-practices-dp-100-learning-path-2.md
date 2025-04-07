@@ -1,6 +1,3 @@
-
-
-
 DP-100: Learning Path 2 Explore the Azure Machine Learning workspace
 
 Learning Path 2 Overview

@@ -1,6 +1,3 @@
-
-
-
 DP-100: Learning Path 4 Work with compute in Azure Machine Learning
 
 Learning Path 4 Overview

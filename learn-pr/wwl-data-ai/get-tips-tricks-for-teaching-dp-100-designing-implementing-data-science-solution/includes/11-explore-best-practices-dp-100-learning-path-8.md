@@ -1,6 +1,3 @@
-
-
-
 DP-100: Learning Path 8 Optimize model training in Azure Machine Learning
 
 Learning Path 8 Overview
@@ -14,7 +11,7 @@ This learning path consists of four focus areas:
 - Understand hyper parameters
 - Configure various hyper parameter tuning options on AML 
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=127cb419-e351-4f8b-a88f-f5b3af1dc5fa]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW14NOV]
 
 Learning Path 8 Tips and Tricks
 

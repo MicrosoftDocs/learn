@@ -1,6 +1,3 @@
-
-
-
 DP-100: Learning path 1 Design a machine learning solution
 
 Learning path 1 Overview

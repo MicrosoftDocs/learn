@@ -1,6 +1,3 @@
-
-
-
 DP-100: Learning path 10 Deploy and consuming models with Azure Machine Learning.
 
 Learning path 10 overview

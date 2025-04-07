@@ -1,6 +1,3 @@
-
-
-
 DP-100: Learning Path 11 Design an MLOps solution
 
 Learning Path 11 Overview

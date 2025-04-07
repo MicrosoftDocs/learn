@@ -1,6 +1,3 @@
-
-
-
 DP-100: Learning Path 3 Make data available in Azure Machine Learning
 
 Learning Path 3 Overview

@@ -1,6 +1,3 @@
-
-
-
 DP-100: Learning path 5 Find the best model with Automated Machine Learning
 
 Learning path 5 Overview
