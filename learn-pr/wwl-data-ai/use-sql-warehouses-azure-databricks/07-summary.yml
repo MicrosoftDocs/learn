@@ -6,10 +6,10 @@ metadata:
   description: "Summary"
   ms.date: 09/05/2024
   author: wwlpublish
-  ms.author: theresai
+  ms.author: jamesh
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/07-summary.md)]
+  [!include[](includes/07-summary.md)]
