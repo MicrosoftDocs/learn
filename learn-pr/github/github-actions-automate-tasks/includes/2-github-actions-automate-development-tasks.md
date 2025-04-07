@@ -168,4 +168,51 @@ Each type of runner has its benefits, but GitHub-hosted runners offer a quicker 
 
 GitHub Actions has some usage limits, depending on your GitHub plan and whether your runner is GitHub-hosted or self-hosted. For more information on usage limits, check out [Usage limits, billing, and administration](https://docs.github.com/actions/reference/usage-limits-billing-and-administration) in the GitHub documentation.
 
-<!-- INFOMAGNUS UPDATES for sub OD 1.2.8 go here. Source Material:  https://docs.github.com/en/actions/using-github-hosted-runners/using-larger-runners  --> 
+## Larger GitHub-hosted Runners
+
+GitHub-hosted runners come in various sizes to support different workloads. Larger runners are high-performance GitHub-hosted runners that provide **increased CPU, RAM, and disk space** compared to standard runners. These runners are useful for jobs that require more computing power or memory to complete efficiently.
+
+> Larger runners are part of the GitHub-hosted runner fleet and come with pre-installed tools and runtimes—just like standard runners.
+
+### Available Sizes
+
+| Runner Size       | vCPUs | RAM  | Storage |
+|-------------------|-------|------|---------|
+| Large             | 8     | 32 GB| 256 GB SSD |
+| XLarge            | 16    | 64 GB| 512 GB SSD |
+| 2XLarge           | 32    | 128 GB| 1 TB SSD |
+
+>  Supported OS: Ubuntu (currently `ubuntu-latest` only)
+
+
+### When to Use Larger Runners
+
+#### Build or Test Large Codebases
+
+Projects with massive source code and dependencies (e.g., game engines, enterprise microservices) can benefit from additional CPU and memory to reduce build time. Larger runners provide the necessary resources to handle complex builds, compile large codebases, and manage extensive dependency trees without bottlenecks.
+
+> Example: A monorepo with 500+ microservices takes 40+ minutes on a standard runner but completes in 10–15 minutes on a `2XLarge` runner.
+
+#### Run Parallel Test Suites or Integration Tests
+
+If your test strategy involves **running many tests in parallel** or **container-based integration tests**, you’ll need the extra compute and RAM to prevent OOM (Out of Memory) errors and improve concurrency. Larger runners allow you to execute multiple test suites simultaneously, reducing overall test execution time.
+
+> Example: Running `pytest-xdist` with 20 workers or multiple Docker containers in CI/CD.
+
+#### Use Resource-Intensive Tooling
+
+Workflows that involve resource-heavy tools, such as static code analysis, machine learning models, or data processing pipelines, can benefit significantly from larger runners. These workflows often require high CPU and memory to process large datasets or perform complex computations.
+
+> Example: Running a TensorFlow training job with a large dataset completes in half the time on a `2XLarge` runner compared to a standard runner.
+
+#### Speed Up CI/CD Pipelines for Large Teams
+
+For teams running many jobs concurrently, larger runners can reduce queue times and improve throughput by **handling more jobs in less time**. This is especially beneficial for organizations with high-frequency deployments or large development teams.
+
+> Tip: Consider using matrix strategies with larger runners to parallelize work further.
+
+#### Use Large Files or Artifacts
+
+If your workflow pulls or generates large binaries, packages, or artifacts, larger runners with higher storage help **avoid disk space issues** and improve IO performance. This is particularly useful for workflows involving large datasets, media files, or compiled binaries.
+
+> Example: Generating a 10 GB binary package completes faster on a `2XLarge` runner due to improved disk IO and storage capacity.
