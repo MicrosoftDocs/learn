@@ -25,7 +25,7 @@ quiz:
     - content: "Only by using Azure Batch can you access the most high-performing VM SKUs on Azure."
       isCorrect: false
       explanation: "You can create high-performance VMs manually without Azure Batch. Azure Batch helps by scheduling and managing nodes for HPC."
-  - content: "You've analyzed a problem and found that it has 1000 separate subtasks. To solve this problem, your manager agrees to budget 20 VM nodes to run in Azure Batch. Compared to running on a single VM node of the same size, approximately how much quicker would you expect the problem's solution to be?"
+  - content: "You've analyzed a problem and found that it has 1,000 separate subtasks. To solve this problem, your manager agrees to budget 20 VM nodes to run in Azure Batch. Compared to running on a single VM node of the same size, approximately how much quicker would you expect the problem's solution to be?"
     choices:
     - content: "1/50 of the time."
       isCorrect: false

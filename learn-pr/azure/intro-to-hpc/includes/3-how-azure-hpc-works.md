@@ -4,7 +4,7 @@ There are four main components to the HPC system: Compute, Storage, Networking, 
 
 High-performance computing resources are offered at nearly unlimited scale on Azure. You can use the different H-series, N-series, and Cray for memory, graphic, and managed applications.
 
-- **H-series virtual machines:** For memory-bound applications. HBv5 is optimized for memory bandwidth-intensive HPC applications, such as computational fluid dynamics, automotive and aerospace simulation, weather modeling, energy research, molecular dynamics, computer aided engineering, and more. Features include high core count, abundant memory, enhanced bandwidth, and cutting-edge connectivity.
+- **H-series virtual machines:** For memory-bound applications. HBv5 specifically is optimized for memory bandwidth-intensive HPC applications, such as computational fluid dynamics, automotive and aerospace simulation, weather modeling, energy research, molecular dynamics, computer aided engineering, and more. Features include high core count, abundant memory, enhanced bandwidth, and cutting-edge connectivity.
 - **N-series virtual machines:** For graphic intensive and CUDA/OpenCL based applications.
 - **Cray:** For a fully dedicated and customized supercomputer delivered as a managed service.
 
@@ -115,7 +115,7 @@ Key benefits include:
 
 - High storage capacity up to 12.5 PiB upon request.
 - Low (~2ms) latency.
-- Up to 1M IOPS, up to 500 GiB/s throughput.
+- Up to 1M IOPS and up to 500 GiB/s throughput.
 - Spin up new clusters in minutes.
 - Supports containerized workloads with AKS.
 - Integrates with Azure Blob Storage as a source for importing and exporting data for long-term storage.
@@ -148,7 +148,7 @@ The advantages of distributed storage and superior I/O performance make parallel
 
 ##### Cray ClusterStor
 
-The Cray ClusterStor in Azure storage system is a high capacity and high throughput storage solution to accelerate your HPC simulations. It's a bare metal appliance that is fully integrated in the Azure fabric and accessible by a large selection of other Azure services. Cray ClusterStor in Azure offers a Lustre-based, single-tenant, bare metal and fully managed HPC environment in Microsoft Azure.
+The Cray ClusterStor in Azure storage system is a high capacity and high throughput storage solution to accelerate your HPC simulations. It's a bare metal appliance that is fully integrated in the Azure fabric and accessible by a large selection of other Azure services. Cray ClusterStor in Azure offers a Lustre-based, single-tenant, bare metal, and fully managed HPC environment in Microsoft Azure.
 
 Key benefits include:
 

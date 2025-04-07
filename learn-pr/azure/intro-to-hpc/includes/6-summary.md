@@ -2,9 +2,9 @@ Azure high-performance computing (HPC) is a complete set of computing, networkin
 
 ![Diagram of Azure HPC Resources Stack.](../media/18-azure-hpc-resource-stack.png)
 
-As companies acquire larger volumes of data and more sophisticated methods to manipulate it, HPC becomes more popular. You learned about the solutions available on Azure for HPC workloads: Azure Batch and Azure CycleCloud.. You can now choose the best option for your HPC workloads.
+As companies acquire larger volumes of data and more sophisticated methods to manipulate it, HPC becomes more popular. You learned about the solutions available on Azure for HPC workloads: Azure Batch and Azure CycleCloud. You can now choose the best option for your HPC workloads.
 
-You've learned:
+You learned:
 
 - What is Azure HPC, the HPC architecture on Azure, and its foundational components.
 - How Azure HPC works and its various configuration options.

@@ -73,7 +73,7 @@ Common use cases for tightly coupled jobs include:
 
 ### What is Message Passing Interface (MPI)
 
-MPI is a system that aims to provide a portable and efficient standard for message passing. It's high-performing, portable and scalable, and was developed to work on networks of different parallel computers.
+MPI is a system that aims to provide a portable and efficient standard for message passing. It's high-performing, portable, scalable, and was developed to work on networks of different parallel computers.
 
 MPI has helped in networking and parallel computing on an industrial and global scale. It's also helped improve the working of large-scale parallel computer applications.
 
