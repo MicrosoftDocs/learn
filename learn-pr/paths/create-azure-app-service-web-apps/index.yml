@@ -11,7 +11,7 @@ title: 'Implement Azure App Service web apps'
 prerequisites: |
   *   At least one year of experience developing scalable solutions through all phases of software development.
   *   Have a base understanding of Azure and cloud concepts, services, and the Azure portal.
-  *   If you're new to Azure or cloud computing it's recommended you complete the [AZ-900: Azure Fundamentals](/training/paths/az-900-describe-cloud-concepts/) course.
+  *   If you're new to Azure or cloud computing, it's recommended you complete the [AZ-900: Azure Fundamentals](/training/paths/az-900-describe-cloud-concepts/) course.
 summary: |
   Learn how Azure App Service functions and how to create and update an app. Explore App Service authentication and authorization, configuring app settings, scale apps, and how to use deployment slots.
 iconUrl: /training/achievements/azure-app-service-create-web-apps.svg
