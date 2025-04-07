@@ -56,28 +56,26 @@ We can take a look at the four different classifications in more detail.
 
 ## Different types of HPC Jobs: Massively Parallel vs Tightly Coupled
 
-Parallel jobs have computational problems divided into small, simple, and independent tasks. Tasks can be run at the same
-time, often with little or no communication between them.
+Parallel jobs have computational problems divided into small, simple, and independent tasks. Tasks can be run at the same time, often with little or no communication between them.
 
-- Common use cases for parallel jobs include risk simulations, molecular modeling, contextual search, and logistics
-  simulations.
+Common use cases for parallel jobs include risk simulations, molecular modeling, contextual search, and logistics simulations.
 
-  Tightly Coupled Jobs have a large shared workload that is broken into smaller tasks that communicate continuously. The
-  different nodes in the cluster communicate with one another as they perform their processing.
+Tightly Coupled Jobs have a large shared workload that is broken into smaller tasks that communicate continuously. The different nodes in the cluster communicate with one another as they perform their processing.
 
-- Common use cases for tightly coupled jobs include:
-  - computational fluid dynamics.
-  - weather forecast modeling.
-  - material simulations.
-  - automobile collision emulations.
-  - geospatial simulations.
-  - traffic management.
+Common use cases for tightly coupled jobs include:
+
+- Computational fluid dynamics.
+- Weather forecast modeling.
+- Material simulations.
+- Automobile collision emulations.
+- Geospatial simulations.
+- Traffic management.
 
 ### What is Message Passing Interface (MPI)
 
-- MPI is a system that aims to provide a portable and efficient standard for message passing. It's high-performing, portable and scalable, and was developed to work on networks of different parallel computers.
+MPI is a system that aims to provide a portable and efficient standard for message passing. It's high-performing, portable and scalable, and was developed to work on networks of different parallel computers.
 
-- MPI has helped in networking and parallel computing on an industrial and global scale. It's also helped improve the working of large-scale parallel computer applications.
+MPI has helped in networking and parallel computing on an industrial and global scale. It's also helped improve the working of large-scale parallel computer applications.
 
 ![Diagram of the message passing interface.](../media/5-message-passing-interface.png)
 
