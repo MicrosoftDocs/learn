@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl-azure.basic-sql-manipulation.dml-commands
+title: Basic SQL Commands - DML
+metadata:
+  title: Basic SQL Commands - DML
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 4/7/2025
+  author: milenak
+  ms.author: mpopovic
+  ms.topic: unit
+###########################################################################
+###
+### ms.service value
+###
+### If your content is related to a product or service, apply one value from
+### the ms.service allowlist.
+###
+### If your content isn't about a product or service, you can omit the ms.service field.
+###
+### For the list of approved ms.service values, go to
+### `https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main`.
+###
+### To request new values, go to
+### `https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main`.
+  ms.service: azure-database-postgresql
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-dml-commands.md)]
+###########################################################################
+###
+### Optional end-of-unit knowledge check
+###
+### General guidance:
+###  - Make questions complete sentences that end with a question mark.
+###  - Don't use "not" or "except" in questions.
+###  - Provide three answers per question.
+###  - Make all answers about the same length.
+###  - List numeric answers in sorted order.
+###  - Don't use "true" or "false" as answer choices.
+###  - Don't use "All of the above" or "None of the above" as answer choices.
+###  - Don't use the second person ("you") in questions or answers.
+###  - Provide a meaningful explanation for correct and incorrect answers.
+###
+### Detailed guidance: `https://review.learn.microsoft.com/help/learn/id-guidance-knowledge-check?branch=main`
+###########################################################################
