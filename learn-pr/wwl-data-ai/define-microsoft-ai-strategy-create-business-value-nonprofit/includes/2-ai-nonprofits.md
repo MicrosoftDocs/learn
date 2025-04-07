@@ -6,8 +6,10 @@ The Microsoft Partner ecosystem provides further innovation and scale, helping n
 
 Tech for Social Impact runs as a social investment model, where incremental revenue is reinvested in nonprofit sector innovation and social good causes. These include causes such as affordable housing, skills and employability programs, and technology donations. To learn more, visit the [Microsoft for Nonprofits](https://www.microsoft.com/nonprofits) website.
 
-In the following video, learn about Microsoft Cloud for Nonprofit.
+**[CHECK THIS SECTION!]**
 
-> [!VIDEO https://www.youtube.com/embed/wWF7Z-8WaPU?si=EuMP4WGoNnnw8Trv]
+In the following video, see how Microsoft partners to support nonprofit organizations.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e9795fb8-cfc3-489b-8f9c-216961329a3c]
 
 Next, let’s explore some goals and challenged to consider when planning AI-powered nonprofit initiatives.
