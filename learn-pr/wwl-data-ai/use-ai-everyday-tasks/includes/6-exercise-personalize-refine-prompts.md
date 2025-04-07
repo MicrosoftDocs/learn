@@ -67,14 +67,14 @@ Iteration is a key part of creating effective AI prompts. In this step, you refi
 
 ![Screenshot of Copilot with the Submit button highlighted.](../media/05-think-deeper-submit.jpg)
 
-3. Ask a follow-up question for more detailed information.
+2. Ask a follow-up question for more detailed information.
 
 > **Sample prompt**:
 > I'd like to dive into the central themes and motifs of each book, to understand the underlying messages and connections between the stories. 
 
  This will take Copilot around 30 seconds to return your results.
 
-4. Review the output from Think Deeper. Consider how it compares to standard responses.
+3. Review the output from Think Deeper. Consider how it compares to standard responses.
 
 > [!NOTE]
 > **Build your AI habit**:
