@@ -4,7 +4,7 @@ There are four main components to the HPC system: Compute, Storage, Networking, 
 
 High-performance computing resources are offered at nearly unlimited scale on Azure. You can use the different H-series, N-series, and Cray for memory, graphic, and managed applications.
 
-- **H-series virtual machines:** For memory-bound applications.
+- **H-series virtual machines:** For memory-bound applications. HBv5 is optimized for memory bandwidth-intensive HPC applications, such as computational fluid dynamics, automotive and aerospace simulation, weather modeling, energy research, molecular dynamics, computer aided engineering, and more. Features include high core count, abundant memory, enhanced bandwidth, and cutting-edge connectivity.
 - **N-series virtual machines:** For graphic intensive and CUDA/OpenCL based applications.
 - **Cray:** For a fully dedicated and customized supercomputer delivered as a managed service.
 
@@ -25,7 +25,7 @@ The highly secure cloud storage is available to customers at a massive scale. It
 Azure allows you to create private virtual networks in the cloud, which simplifies the network architecture and secures the connection between endpoints by disabling the data exposure to the public internet.
 
 - Establish private, secure tunnels for hybrid cloud connectivity using Azure ExpressRoute.
-- Take advantage of Linux remote direct memory access (RDMA) with InfiniBand for message passing interface (MPI) workloads within your datacenter.
+- Take advantage of Linux remote direct memory access (RDMA) with InfiniBand for message passing interface (MPI) workloads within your datacenter. The InfiniBand enabled HB-series and N-series VMs are designed to provide the best HPC performance, MPI scalability, and cost efficiency for HPC workloads. RDMA capable HB-series and N-series VMs communicate over the low latency and high bandwidth InfiniBand network.
 
 ![Diagram of Azure networking.](../media/8-azure-networking.png)
 
