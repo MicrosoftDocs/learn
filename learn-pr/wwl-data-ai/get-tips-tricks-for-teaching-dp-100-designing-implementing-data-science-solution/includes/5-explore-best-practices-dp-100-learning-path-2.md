@@ -22,7 +22,7 @@ Learning path 2 Tips and Tricks
 
 Learning path 2 Demos
 
-- Demo the Azure Machine Learning workspace in Azure Portal
+- Demo the Azure Machine Learning workspace in Azure portal
 - Briefly show the AutoML and/or designer pipeline
 - Demo one of these for Azure Machine Learning: CLI / SDK / ARM Templates
 
