@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.intro-to-hpc
 metadata:
-  title: Introduction to high-performance computing (HPC) on Azure
+  title: Introduction to High-Performance Computing (HPC) on Azure
   description: Discover the services available on Azure for your high-performance computing workloads.
   ms.service: azure-batch
   manager: akashdubey
-  ms.date: 05/22/2023
+  ms.date: 04/07/2025
   author: padmalathas
   ms.author: padmalathas
   ms.topic: module
@@ -37,4 +37,4 @@ units:
 - learn.intro-to-hpc.6-summary
 badge:
   uid: learn.intro-to-hpc.badge
-
+

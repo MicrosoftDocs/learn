@@ -3,7 +3,7 @@ uid: learn.intro-to-hpc.4-microsoft-hpc-pack
 metadata:
   title: Microsoft HPC Pack
   description: In this unit, you learn about the Microsoft HPC Pack and how you can use it to manage high-performance resources.
-  ms.date: 05/22/2023
+  ms.date: 04/07/2025
   author: padmalathas
   ms.author: padmalathas
   ms.topic: unit
@@ -36,4 +36,4 @@ quiz:
     - content: "Windows Server 2019 or later."
       isCorrect: false
       explanation: "You can use Windows Server 2012 or any later version for the head node."
-
+

@@ -3,7 +3,7 @@ uid: learn.intro-to-hpc.2-azure-batch
 metadata:
   title: Azure Batch
   description: In this unit, you learn about the Azure Batch service and how it helps you to manage high-performance compute tasks.
-  ms.date: 05/22/2023
+  ms.date: 04/07/2025
   author: padmalathas
   ms.author: padmalathas
   ms.topic: unit
@@ -36,4 +36,4 @@ quiz:
     - content: "The same length of time, but results are more accurate."
       isCorrect: false
       explanation: "Because there are many small subtasks, Azure Batch evenly distributes the work, and 20 VMs can complete the tasks in approximately 1/20 of the time."
-
+
