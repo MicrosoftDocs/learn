@@ -38,15 +38,15 @@ When you choose this authentication method, Microsoft Entra ID handles users' si
 
 ### Federated authentication
 
-When you choose this authentication method, Microsoft Entra ID hands off the authentication process to a separate trusted authentication system, such as on-premises Active Directory Federation Services (AD FS), to validate the user’s password. The authentication system can provide other advanced authentication requirements. Examples are smartcard-based authentication or third-party multifactor authentication.
+When you choose this authentication method, Microsoft Entra ID hands off the authentication process to a separate trusted authentication system, such as on-premises Active Directory Federation Services (AD FS), to validate the user’s password. The authentication system can provide other advanced authentication requirements. Examples are smartcard-based authentication or third party multifactor authentication.
 
 - **Effort**. A federated authentication system relies on an external trusted system to authenticate users. Some companies want to reuse their existing federated system investment with their Microsoft Entra hybrid identity solution. The maintenance and management of the federated system falls outside the control of Microsoft Entra ID. It's up to the organization by using the federated system to make sure it's deployed securely and can handle the authentication load.
 - **User experience**. The user experience of federated authentication depends on the implementation of the features, topology, and configuration of the federation farm. Some organizations need this flexibility to adapt and configure the access to the federation farm to suit their security requirements. For example, it's possible to configure internally connected users and devices to sign in users automatically, without prompting them for credentials. This configuration works because they already signed into their devices. If necessary, some advanced security features make users' sign-in process more difficult.
 - **Advanced scenarios**. A federated authentication solution is required when customers have an authentication requirement that Microsoft Entra ID doesn't support natively.
     
    - Authentication that requires smartcards or certificates.
-   - On-premises MFA servers or third-party multifactor providers requiring a federated identity provider.
-   - Authentication by using third-party authentication solutions.
+   - On-premises MFA servers or third party multifactor providers requiring a federated identity provider.
+   - Authentication by using third party authentication solutions.
    - Sign in that requires a sAMAccountName, for example DOMAIN\\username, instead of a User Principal Name (UPN), for example, user@domain.com.
 
 - **Business continuity**. Federated systems typically require a load-balanced array of servers, known as a farm. This farm is configured in an internal network and perimeter network topology to ensure high availability for authentication requests.
@@ -107,7 +107,7 @@ The attribute value must follow the following rules:
 - Shouldn't be case-sensitive and avoid values that vary by case
 - Should be assigned when the object is created
 
-If you have a single forest on-premises, the attribute you should use is **objectGuid**. You can also use the objectGuid attribute when you use express settings in Microsoft Entra Connect. And also the attribute used by DirSync. If you have multiple forests and don't move users between forests and domains, then **objectGUID** is a good attribute to use. Another solution is to pick an existing attribute you know doesn't change. Commonly used attributes include **employeeID**. If you consider an attribute that contains letters, make sure there's no chance the case (upper case vs. lower case) can change for the attribute's value. Bad attributes that shouldn't be used include those attributes with the name of the user. Once the sourceAnchor attribute is decided, the wizard stores the information in your Microsoft Entra tenant. The information will be used by future installation of Microsoft Entra Connect.
+If you have a single forest on-premises, the attribute you should use is **objectGuid**. You can also use the objectGuid attribute when you use express settings in Microsoft Entra Connect. And also the attribute used by DirSync. If you have multiple forests and don't move users between forests and domains, then **objectGUID** is a good attribute to use. Another solution is to pick an existing attribute you know doesn't change. Commonly used attributes include **employeeID**. If you consider an attribute that contains letters, make sure there's no chance the case (upper case vs. lower case) can change for the attribute's value. Bad attributes include those attributes with the name of the user. Once the sourceAnchor attribute is decided, the wizard stores the information in your Microsoft Entra tenant. The information will be used by future installation of Microsoft Entra Connect.
 
 ## Microsoft Entra sign-in
 

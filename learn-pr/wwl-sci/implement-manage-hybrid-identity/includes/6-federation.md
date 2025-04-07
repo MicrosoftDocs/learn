@@ -1,6 +1,6 @@
 Federation can use a new or existing on-premises Active Directory farm in Windows Server 2012 R2 (or later), and Microsoft Entra Connect enable users to log into Microsoft Entra resources using their on-premises password.
 
-:::image type="content" source="../media/sc300-federation-flow-diagram.png" alt-text="Diagram of federation between on-premises and Microsoft Entra ID. Shows users able log into both on-premises and cloud resources with a single shared login.":::
+:::image type="content" source="../media/sc300-federation-flow-diagram.png" alt-text="Diagram of federation between on-premises and Microsoft Entra ID. Shows users able log into both on-premises and cloud resources with a single shared sign in.":::
 
 Federation is a collection of domains that have established trust. The level of trust varies, but typically includes authentication and almost always includes authorization. A typical federation might include a number of organizations that have established trust for shared access to a set of resources.
 
@@ -37,7 +37,7 @@ You can complete various AD FS-related tasks in Microsoft Entra Connect with min
 
 **Repair the trust** You can use Microsoft Entra Connect to check the current health of the AD FS and Microsoft Entra ID trust and take appropriate actions to repair the trust.
 
-**Federate with Microsoft Entra ID using AlternateID** It is recommended that the on-premises User Principal Name(UPN) and the cloud User Principal Name are kept the same. If the on-premises UPN uses a non-routable domain (ex. Contoso.local) or cannot be changed due to local application dependencies, we recommend setting up alternate sign in ID. Alternate sign in ID allows you to configure a sign-in experience where users can sign in with an attribute other than their UPN, such as mail. The choice for User Principal Name in Microsoft Entra ID Connect defaults to the userPrincipalName attribute in Active Directory. If you choose any other attribute for User Principal Name and are federating using AD FS, then Microsoft Entra Connect will configure AD FS for alternate sign in ID.
+**Federate with Microsoft Entra ID using AlternateID** It's recommended that the on-premises User Principal Name(UPN) and the cloud User Principal Name are kept the same. If the on-premises UPN uses a non-routable domain (ex. Contoso.local) or can't be changed due to local application dependencies, we recommend setting up alternate sign in ID. Alternate sign in ID allows you to configure a sign-in experience where users can sign in with an attribute other than their UPN, such as mail. The choice for User Principal Name in Microsoft Entra ID Connect defaults to the userPrincipalName attribute in Active Directory. If you choose any other attribute for User Principal Name and are federating using AD FS, then Microsoft Entra Connect will configure AD FS for alternate sign in ID.
 
 **Add a federated domain** It's easy to add a domain to be federated with Microsoft Entra ID by using Microsoft Entra Connect. Microsoft Entra Connect adds the domain for federation and modifies the claim rules to correctly reflect the issuer when you have multiple domains federated with Microsoft Entra ID.
 
@@ -47,6 +47,6 @@ Along with **Add and AD FS Server** and **Add an AD FS Web Application Proxy ser
 
 Device writeback is used to enable device-based conditional Access for ADFS-protected devices. This conditional Access provides extra security and assurance that access to applications is granted only to trusted devices. Device writeback enables this security by synchronizing all devices registered in Azure back to the on-premises Active Directory. When configured during setup, the following operations are performed to prepare the AD forest:
 
-- If they do not exist already, create and configure new containers and objects under: **CN=Device Registration Configuration,CN=Services,CN=Configuration,\[forest dn \]**.
-- If they do not exist already, create and configure new containers and objects under: **CN=RegisteredDevices,\[domain-dn\]**. Device objects will be created in this container.
+- If they don't exist already, create and configure new containers and objects under: **CN=Device Registration Configuration,CN=Services,CN=Configuration,\[forest dn \]**.
+- If they don't exist already, create and configure new containers and objects under: **CN=RegisteredDevices,\[domain-dn\]**. Device objects will be created in this container.
 - Set necessary permissions on the Microsoft Entra Connector account, to manage devices on your Active Directory.

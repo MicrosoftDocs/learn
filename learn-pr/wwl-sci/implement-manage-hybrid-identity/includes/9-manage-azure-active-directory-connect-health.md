@@ -2,7 +2,7 @@ This section describes various operations you can perform by using Microsoft Ent
 
 ## Enable email notifications
 
-You can configure the Microsoft Entra Connect Health service to send email notifications when alerts indicate that your identity infrastructure is not healthy. This occurs when an alert is generated, and when it is resolved.
+You can configure the Microsoft Entra Connect Health service to send email notifications when alerts indicate that your identity infrastructure isn't healthy. This occurs when an alert is generated, and when it's resolved.
 
 :::image type="content" source="../media/email-notifications-discover.png" alt-text="Screenshot of Microsoft Entra Connect Health email notification settings. Enter your admin's email.":::
 
@@ -11,17 +11,17 @@ You can configure the Microsoft Entra Connect Health service to send email notif
 
 ### To enable Microsoft Entra Connect Health email notifications
 
-1.  Open the **Alerts** blade for the service for which you want to receive email notification.
-2.  From the action bar, click **Notification Settings**.
+1.  Open the **Alerts** dialog for the service for which you want to receive email notification.
+2.  From the action bar, select **Notification Settings**.
 3.  At the email notification switch, select **ON**.
 4.  Select the check box if you want all global administrators to receive email notifications.
-5.  If you want to receive email notifications at any other email addresses, specify them in the **Additional Email Recipients** box. To remove an email address from this list, right-click the entry and select **Delete**.
-6.  To finalize the changes, click **Save**. Changes take effect only after you save.
+5.  If you want to receive email notifications at any other email addresses, specify them in the **Additional Email Recipients** box. To remove an email address from this list, select the entry and select **Delete**.
+6.  To finalize the changes, select **Save**. Changes take effect only after you save.
 
 > [!NOTE]
-> When there are issues processing synchronization requests in our back-end service, this service sends a notification email with the details of the error to the administrative contact email address(es) of your tenant. We heard feedback from customers that in certain cases the volume of these messages is prohibitively large so we are changing the way we send these messages.
+> When there are issues processing synchronization requests in our back-end service, this service sends a notification email with the details of the error to the administrative contact email address(es) of your tenant. We heard feedback from customers that in certain cases the volume of these messages is prohibitively large so we're changing the way we send these messages.
 
-Instead of sending a message for every sync error every time it occurs we will send out a daily digest of all errors the back-end service has returned. This enables customers to process these errors in a more efficient manner and reduces the number of duplicate error messages.
+Instead of sending a message for every sync error every time it occurs we'll send out a daily digest of all errors the back-end service has returned. This enables customers to process these errors in a more efficient manner and reduces the number of duplicate error messages.
 
 ## Delete a server or service instance
 
@@ -32,9 +32,9 @@ In some instances, you might want to remove a server from being monitored. Here'
 
 When you're deleting a server, be aware of the following:
 
-- This action stops collecting any further data from that server. This server is removed from the monitoring service. After this action, you are not able to view new alerts, monitoring, or usage analytics data for this server.
-- This action does not uninstall the Health Agent from your server. If you have not uninstalled the Health Agent before performing this step, you might see errors related to the Health Agent on the server.
-- This action does not delete the data already collected from this server. That data is deleted in accordance with the Azure data retention policy.
+- This action stops collecting any further data from that server. This server is removed from the monitoring service. After this action, you aren't able to view new alerts, monitoring, or usage analytics data for this server.
+- This action doesn't uninstall the Health Agent from your server. If you have not uninstalled the Health Agent before performing this step, you might see errors related to the Health Agent on the server.
+- This action doesn't delete the data already collected from this server. That data is deleted in accordance with the Azure data retention policy.
 - After performing this action, if you want to start monitoring the same server again, you must uninstall and reinstall the Health Agent on this server.
 
 ### Delete a server from the Microsoft Entra Connect Health service
@@ -44,21 +44,21 @@ When you're deleting a server, be aware of the following:
 
 Microsoft Entra Connect Health for Active Directory Federation Services (AD FS) and Microsoft Entra Connect (Sync):
 
-1.  Open the **Server** blade from the **Server List** blade by selecting the server name to be removed.
-2.  On the **Server** blade, from the action bar, click **Delete**.
+1.  Open the **Server** screen from the **Server List** dialog by selecting the server name to be removed.
+2.  On the **Server** screen, from the action bar, select **Delete**.
     
    :::image type="content" source="../media/delete-server-2.png" alt-text="Screenshot of Microsoft Entra Connect Health delete server. Only keep servers that are active.":::
     
 3.  Confirm by typing the server name in the confirmation box.
-4.  Click **Delete**.
+4.  Select **Delete**.
 
 Microsoft Entra Connect Health for Microsoft Entra Domain Services:
 
 1.  Open the **Domain Controllers** dashboard.
 2.  Select the domain controller to be removed.
-3.  From the action bar, click **Delete Selected**.
+3.  From the action bar, select **Delete Selected**.
 4.  Confirm the action to delete the server.
-5.  Click **Delete**.
+5.  Select **Delete**.
 
 ### Delete a service instance from Microsoft Entra Connect Health service
 
@@ -67,19 +67,19 @@ In some instances, you might want to remove a service instance. Here's what you 
 When you're deleting a service instance, be aware of the following:
 
 - This action removes the current service instance from the monitoring service.
-- This action does not uninstall or remove the Health Agent from any of the servers that were monitored as part of this service instance. If you have not uninstalled the Health Agent before performing this step, you might see errors related to the Health Agent on the servers.
+- This action doesn't uninstall or remove the Health Agent from any of the servers that were monitored as part of this service instance. If you haven't uninstalled the Health Agent before performing this step, you might see errors related to the Health Agent on the servers.
 - All data from this service instance is deleted in accordance with the Azure data retention policy.
 - After performing this action, if you want to start monitoring the service, uninstall and reinstall the Health Agent on all the servers. After performing this action, if you want to start monitoring the same server again, uninstall, reinstall, and register the Health Agent on that server.
 
 ### To delete a service instance from the Microsoft Entra Connect Health service
 
-1.  Open the **Service** blade from the **Service List** blade by selecting the service identifier (farm name) that you want to remove.
-2.  On the **Service** blade, from the action bar, click **Delete**.
+1.  Open the **Service** screen from the **Service List** dialog by selecting the service identifier (farm name) that you want to remove.
+2.  On the **Service** screen, from the action bar, select **Delete**.
     
    :::image type="content" source="../media/delete-server.png" alt-text="Screenshot of Microsoft Entra Connect Health delete service. Remove unwanted services.":::
     
 3.  Confirm by typing the service name in the confirmation box (for example: sts.contoso.com).
-4.  Click **Delete**.
+4.  Select **Delete**.
 
 ## Manage access with Azure Role Based Access Control
 
@@ -91,7 +91,7 @@ Microsoft Entra Connect Health supports the following built-in roles:
 
 | **Role**    | **Permissions**                                                                                                                                                                                                                                                                                                                                      |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Owner       | Owners can *manage access* (for example, assign a role to a user or group), *view all information* (for example, view alerts) from the portal, and *change settings* (for example, email notifications) within Microsoft Entra Connect Health. By default, Microsoft Entra global administrators are assigned this role, and this cannot be changed. |
+| Owner       | Owners can *manage access* (for example, assign a role to a user or group), *view all information* (for example, view alerts) from the portal, and *change settings* (for example, email notifications) within Microsoft Entra Connect Health. By default, Microsoft Entra global administrators are assigned this role, and this can't be changed. |
 | Contributor | Contributors can *view all information* (for example, view alerts) from the portal, and *change settings* (for example, email notifications) within Microsoft Entra Connect Health.                                                                                                                                                                  |
 | Reader      | Readers can *view all information* (for example, view alerts) from the portal within Microsoft Entra Connect Health.                                                                                                                                                                                                                                 |
 
@@ -112,11 +112,11 @@ The following steps show how to allow access.
 
 **Step 1: Select the appropriate access scope**
 
-To allow a user access at the *all service instances* level within Microsoft Entra Connect Health, open the main blade in Microsoft Entra Connect Health.
+To allow a user access at the *all service instances* level within Microsoft Entra Connect Health, open the main screen in Microsoft Entra Connect Health.
 
 **Step 2: Add users and groups, and assign roles**
 
-1.  From the **Configure** section, click **Users**.
+1.  From the **Configure** section, select **Users**.
     
    :::image type="content" source="../media/start-role-based-access-control.png" alt-text="Screenshot of Microsoft Entra Connect Health resource sidebar. Add the users you need.":::
     
@@ -125,7 +125,7 @@ To allow a user access at the *all service instances* level within Microsoft Ent
     
    :::image type="content" source="../media/role-based-access-control-add.png" alt-text="Screenshot of Microsoft Entra Connect Health and Azure RBAC configure menu.":::
     
-4.  Type the name or identifier of the targeted user or group. You can select one or more users or groups at the same time. Click **Select**.
+4.  Type the name or identifier of the targeted user or group. You can select one or more users or groups at the same time. select **Select**.
     
    :::image type="content" source="../media/role-based-access-control-select-users.png" alt-text="Screenshot of Microsoft Entra Connect Health and Azure RBAC and new users highlighted.":::
     
@@ -133,18 +133,18 @@ To allow a user access at the *all service instances* level within Microsoft Ent
 6.  After the role assignment is complete, the users and groups appear in the list.
 
 Now the listed users and groups have access, according to their assigned roles.
-- The Invite Users feature is not supported within Microsoft Entra Connect Health.
+- The Invite Users feature isn't supported within Microsoft Entra Connect Health.
 
-**Step 3: Share the blade location with users or groups**
+**Step 3: Share the location with users or groups**
 
 1.  After you assign permissions, a user can access Microsoft Entra Connect Health by going [here](https://aka.ms/aadconnecthealth).
-2.  On the blade, the user can pin the blade, or different parts of it, to the dashboard. Simply click the **Pin to dashboard** icon.
+2.  On the screen, the user can pin the screen, or different parts of it, to the dashboard. Select the **Pin to dashboard** icon.
     
-   :::image type="content" source="../media/role-based-access-control-pin-blade.png" alt-text="Screenshot of Microsoft Entra Connect Health and Azure RBAC pin blade, with pin icon highlighted.":::
+   :::image type="content" source="../media/role-based-access-control-pin-blade.png" alt-text="Screenshot of Microsoft Entra Connect Health and Azure RBAC pin dialog, with pin icon highlighted.":::
 
 ### Remove users or groups
 
-You can remove a user or a group added to Microsoft Entra Connect Health and Azure RBAC. Simply right-click the user or group, and select **Remove**.
+You can remove a user or a group added to Microsoft Entra Connect Health and Azure RBAC. Select the user or group with the secondary action, and select **Remove**.
 
 :::image type="content" source="../media/role-based-access-control-remove.png" alt-text="Screenshot of Microsoft Entra Connect Health and Azure RBAC with Remove highlighted.":::
 
