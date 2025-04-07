@@ -4,9 +4,9 @@ There are four main components to the HPC system: Compute, Storage, Networking, 
 
 High-performance computing resources are offered at nearly unlimited scale on Azure. You can use the different H-series, N-series, and Cray for memory, graphic, and managed applications.
 
-- *H-series virtual machines* for memory-bound applications.
-- *N-series virtual machines* for graphic intensive and CUDA/OpenCL based applications.
-- *Cray* for a fully dedicated and customized supercomputer delivered as a managed service.
+- **H-series virtual machines:** For memory-bound applications.
+- **N-series virtual machines:** For graphic intensive and CUDA/OpenCL based applications.
+- **Cray:** For a fully dedicated and customized supercomputer delivered as a managed service.
 
 ![Diagram of Azure computing.](../media/6-azure-computing.png)
 
@@ -91,12 +91,14 @@ Key design features include:
 - Also, Azure Files SMB file shares can be cached on Windows Servers with Azure File Sync for fast access near where the data is being used.
 
 Useful for:
+
 - Replacing or supplementing on-premises file servers.
 - Lift and shift applications.
 - Simplifying cloud development.
 - Containerization.
 
 Key benefits include:
+
 - Shared access
 - Fully Managed
 - Scripting and Tooling
@@ -120,7 +122,9 @@ Key benefits include:
 
 #### VM-based file systems
 
-**Single VM NAS:** Cloud-based Network Attached Storage (NAS) helps you address storage needs in the cloud using the same constructs as an on-premises NAS system. It gives organizations storage that's as performant as their on-premises NAS with the added ability to scale in the cloud-and all without having to make major changes to their existing application interfaces and processes.
+##### Single VM NAS
+
+Cloud-based Network Attached Storage (NAS) helps you address storage needs in the cloud using the same constructs as an on-premises NAS system. It gives organizations storage that's as performant as their on-premises NAS with the added ability to scale in the cloud-and all without having to make major changes to their existing application interfaces and processes.
 
 NAS is a centralized storage appliance that allows applications and services to access data from a centralized location in the network. Virtual NAS is the virtual appliance version of NAS systems that can run on virtualization platforms such as VMware, Hyper-V, etc.
 
@@ -129,7 +133,9 @@ Key benefits include:
 - Network devices accessing Virtual NAS storage can continue to do so using the same protocols without any reconfiguration.
 - Capacity management is also easier since any required storage can be allocated from the underlying virtualization layer.
 
-**Multi-node Parallel file systems:** Parallel file systems distribute block level storage across multiple networked storage nodes. File data is spread among these nodes, meaning file data is spread among multiple storage devices. It pools any individual storage I/O requests across multiple storage nodes that are accessible through a common namespace.
+##### Multi-node Parallel file systems
+
+Parallel file systems distribute block level storage across multiple networked storage nodes. File data is spread among these nodes, meaning file data is spread among multiple storage devices. It pools any individual storage I/O requests across multiple storage nodes that are accessible through a common namespace.
 
 Multiple storage devices and multiple paths to data are utilized to provide a high degree of parallelism, reducing bottlenecks imposed by accessing only a single node at a time. Parallel file systems are broken up into two main pieces:
 
@@ -140,7 +146,9 @@ The advantages of distributed storage and superior I/O performance make parallel
 
     ![Diagram of Azure object storage.](../media/10-azure-object-storage.png)
 
-**Cray ClusterStor:** The Cray ClusterStor in Azure storage system is a high capacity and high throughput storage solution to accelerate your HPC simulations. It's a bare metal appliance that is fully integrated in the Azure fabric and accessible by a large selection of other Azure services. Cray ClusterStor in Azure offers a Lustre-based, single-tenant, bare metal and fully managed HPC environment in Microsoft Azure.
+##### Cray ClusterStor
+
+The Cray ClusterStor in Azure storage system is a high capacity and high throughput storage solution to accelerate your HPC simulations. It's a bare metal appliance that is fully integrated in the Azure fabric and accessible by a large selection of other Azure services. Cray ClusterStor in Azure offers a Lustre-based, single-tenant, bare metal and fully managed HPC environment in Microsoft Azure.
 
 Key benefits include:
 
