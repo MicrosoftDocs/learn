@@ -58,7 +58,7 @@ There are several [load balancer SKUs](/azure/load-balancer/skus): Basic, Standa
 | Diagnostics | Azure Monitor multi-dimensional metrics. | [Azure Monitor logs](/azure/load-balancer/load-balancer-monitor-log) |
 | Secure by default | Closed to inbound flows unless allowed by a network security group. Internal traffic from the virtual network to the internal load balancer is allowed.  | Open by default. Network security group optional. |
 | Multiple front ends | Inbound and outbound | Inbound only |
-| SLA | 99.99% | Not available |
+
 
 > [!TIP]
 > Learn more about the Load Balancer check out the [Introduction to Azure Load Balancer](/training/modules/intro-to-azure-load-balancer/) module.
