@@ -6,8 +6,8 @@ metadata:
   description: "Exercise - Create an Azure Databricks Workflow"
   ms.date: 07/29/2024
   author: wwlpublish
-  ms.author: theresai
+  ms.author: jamesh
   ms.topic: unit
 durationInMinutes: 40
 content: |
-  [!include[](includes/6-exercise-workflows.md)]
+  [!include[](includes/6-exercise-workflows.md)]
