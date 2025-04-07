@@ -6,10 +6,10 @@ metadata:
   description: "Exercise - Use Delta Lake in Azure Databricks"
   ms.date: 08/07/2024
   author: wwlpublish
-  ms.author: theresai
+  ms.author: jamesh
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 40
 content: |
-  [!include[](includes/07-exercise-use-delta-lake.md)]
+  [!include[](includes/07-exercise-use-delta-lake.md)]
