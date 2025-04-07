@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.az-204-implement-iaas-solutions
 metadata:
-  title: 'AZ-204: Implement containerized solutions'
-  description: Learn how to create and deploy virtual machine, deploy resources using Azure Resource Manager templates, and manage and deploy containers.
+  title: 'Implement containerized solutions'
+  description: Learn how to create and deploy containerized solutions to Azure by using the Azure Container Registry, Azure Container Instances, and Azure Container Apps.
   ms.date: 02/06/2024
   author: wwlpublish
   ms.author: jeffko
   ms.topic: learning-path
-title: 'AZ-204: Implement containerized solutions'
+title: 'Implement containerized solutions'
 prerequisites: |
   *   At least one year of experience developing scalable solutions through all phases of software development.
   *   Have a base understanding of Azure and cloud concepts, services, and the Azure portal.

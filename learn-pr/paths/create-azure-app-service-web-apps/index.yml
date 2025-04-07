@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.create-azure-app-service-web-apps
 metadata:
-  title: 'AZ-204: Implement Azure App Service web apps'
+  title: 'Implement Azure App Service web apps'
   description: Learn how Azure App Service functions and how to create and update an app. Explore App Service authentication and authorization, configuring app settings, scale apps, and how to use deployment slots.
   ms.date: 04/25/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: learning-path
-title: 'AZ-204: Implement Azure App Service web apps'
+title: 'Implement Azure App Service web apps'
 prerequisites: |
   *   At least one year of experience developing scalable solutions through all phases of software development.
   *   Have a base understanding of Azure and cloud concepts, services, and the Azure portal.

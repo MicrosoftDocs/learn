@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.az-204-develop-message-based-solutions
 metadata:
-  title: 'AZ-204: Develop message-based solutions'
-  description: 'AZ-204: Develop message-based solutions'
+  title: 'Develop message-based solutions'
+  description: 'Learn how to build applications with message-based architectures by integrating Azure Service Bus and Azure Queue Storage in to your solution.'
   ms.date: 12/09/2021
   author: wwlpublish
   ms.author: jeffko
   ms.topic: learning-path
-title: 'AZ-204: Develop message-based solutions'
+title: 'Develop message-based solutions'
 prerequisites: |
   * At least one year of experience developing scalable solutions through all phases of software development.
   * Have a base understanding of Azure and cloud concepts, services, and the Azure portal.

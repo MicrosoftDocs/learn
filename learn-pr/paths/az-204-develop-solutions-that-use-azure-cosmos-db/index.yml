@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.az-204-develop-solutions-that-use-azure-cosmos-db
 metadata:
-  title: 'AZ-204: Develop solutions that use Azure Cosmos DB'
+  title: 'Develop solutions that use Azure Cosmos DB'
   description: Learn how to create Azure Cosmos DB resources with the appropriate consistency levels, and perform data operations by using the .NET SDK V3 for Azure Cosmos DB.
   ms.date: 04/25/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: learning-path
-title: 'AZ-204: Develop solutions that use Azure Cosmos DB'
+title: 'Develop solutions that use Azure Cosmos DB'
 prerequisites: |
   *   At least one year of experience developing scalable solutions through all phases of software development.
   *   Have a base understanding of Azure and cloud concepts, services, and the Azure portal.
