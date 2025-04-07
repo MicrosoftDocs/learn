@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-generative-ai-center-excellence.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: Validate your understanding of the Generative AI Center of Excellence.
+  ms.date: 04/05/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 3
+content: Choose the best response for each question.
+quiz:
+  questions:
+    - content: "What is a primary responsibility of a Generative AI Center of Excellence?"
+      choices:
+        - content: "Developing custom LLM models for all organizational needs."
+          isCorrect: false
+          explanation: "While the CoE may provide guidance on AI development, developing custom LLMs isn't a primary responsibility. A generative AI CoE can focus on execution responsibilities like developing models or serve as a guiding body."
+        - content: "Aligning generative AI initiatives with organizational and business priorities."
+          isCorrect: true
+          explanation: "One of the key responsibilities of an AI CoE, is aligning generative AI initiatives with organizational and business priorities."
+        - content: "Replacing existing security teams with AI specialists."
+          isCorrect: false
+          explanation: "The CoE should work 'in close and constant collaboration' with security teams rather than replacing them."
+    - content: "Which of the following best describes how a generative AI CoE approaches cost management?"
+      choices:
+        - content: "By focusing exclusively on using open-source models to minimize expenses."
+          isCorrect: false
+          explanation: "Organizations should assess factors such as 'cost integration complexity and adaptability' when making decisions between custom solutions and off-the-shelf alternatives."
+        - content: "By promoting FinOps principles and collaboration between finance, engineering, and business teams."
+          isCorrect: true
+          explanation: "The CoE contributes to cost efficiency by promoting FinOps principles, driving collaboration between finance, engineering, and business teams."
+        - content: "By centralizing all AI development to avoid departmental duplication."
+          isCorrect: false
+          explanation: "Execution is often decentralized, especially in larger organizations."
+    - content: "Which role is designs and optimizes inputs for generative AI models to guide their behavior?"
+      choices:
+        - content: "AI Agent Engineer"
+          isCorrect: false
+          explanation: "AI Agent Engineers develop 'autonomous AI systems that can perceive, reason, and act to achieve specific goals' rather than focusing on prompt design."
+        - content: "Generative AI Operations"
+          isCorrect: false
+          explanation: "Operations are responsible for 'deploying, managing, monitoring, backup, and recovery of AI workloads' rather than prompt design."
+        - content: "Prompt Engineer"
+          isCorrect: true
+          explanation: "Prompt engineers 'design and optimizes inputs for generative AI models to guide their behavior and produce accurate, desired outputs.'"

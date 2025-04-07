@@ -6,10 +6,10 @@ metadata:
   description: "Introduction"
   ms.date: 09/05/2024
   author: wwlpublish
-  ms.author: theresai
+  ms.author: jamesh
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/01-introduction.md)]
+  [!include[](includes/01-introduction.md)]
