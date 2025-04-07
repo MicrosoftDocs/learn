@@ -32,7 +32,7 @@ prerequisites: |
 
   -   A basic understanding of file input and output operations using the System.IO classes.
 
-  -   A basic understanding of JSON serialization and deserialization&nbsp;using System.Text.Json classes and Data Transfer Objects.
+  -   A basic understanding of JSON&nbsp;serialization and deserialization&nbsp;using System.Text.Json classes and Data Transfer Objects.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
