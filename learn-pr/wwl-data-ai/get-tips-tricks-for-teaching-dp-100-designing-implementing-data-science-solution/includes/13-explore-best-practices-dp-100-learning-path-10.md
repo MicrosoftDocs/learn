@@ -29,3 +29,4 @@ Learning path 10 labs
 
 - [Lab 10.1: Log and register models with MLflow](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/10-Log-mlflow-models.html)
 - [Lab 10.2: Deploy a model to a batch endpoint](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/11-Deploy-batch-endpoint.html)
+

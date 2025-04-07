@@ -30,3 +30,4 @@ Learning path 2 Labs
 
 - [Lab 2.1: Explore the Azure Machine Learning workspace](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/02-Explore-Azure-Machine-Learning.html)
 - [Lab 2.2: Explore developer tools for workspace interaction](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/02-Explore-developer-tools.html)
+

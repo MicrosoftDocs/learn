@@ -11,7 +11,7 @@ This learning path consists of four focus areas:
 - Understand hyper parameters
 - Configure various hyper parameter tuning options on AML 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW14NOV]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=127cb419-e351-4f8b-a88f-f5b3af1dc5fa]
 
 Learning Path 8 Tips and Tricks
 
@@ -27,3 +27,4 @@ Learning Path 8 Labs (optional)
 
 - Lab 8.1: [Perform hyperparameter tuning with a sweep job](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/09-Hyperparameter-tuning.html)
 - [Lab 8.2: Run pipelines in Azure Machine Learning](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/09-Run-pipelines.html)
+

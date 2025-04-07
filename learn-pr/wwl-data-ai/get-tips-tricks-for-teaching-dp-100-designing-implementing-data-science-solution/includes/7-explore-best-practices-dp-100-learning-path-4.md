@@ -31,3 +31,4 @@ Learning Path 4 Labs
 - [Lab 4.1: Work with compute resources in Azure Machine Learning ](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/04-Work-with-compute.html)
 - [Lab 4.2: Work with environments in Azure Machine Learning](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/04-Work-with-environments.html)
 
+

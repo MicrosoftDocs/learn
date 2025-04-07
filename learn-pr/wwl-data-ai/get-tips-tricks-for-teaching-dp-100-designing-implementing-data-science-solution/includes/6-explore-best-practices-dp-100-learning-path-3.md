@@ -28,3 +28,4 @@ Learning Path 3 Demos (optional)
 Learning Path 3 Labs
 
 - [Lab 3.1: Make data available in Azure Machine Learning](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/03-Make-data-available.html) 
+

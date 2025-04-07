@@ -28,3 +28,4 @@ Learning Path 11 Lab
 
 - Lab 11.1: [Deploy a model to a managed online endpoint](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/11-Deploy-online-endpoint.html)
 - Lab 11.2: Case study: design an MLOps solution (optional)
+
