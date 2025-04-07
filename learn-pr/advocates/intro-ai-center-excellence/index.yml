@@ -11,9 +11,9 @@ metadata:
     - ce-advocates-ai-copilot
   ms.service: artificial-intelligence
 title: Introduction to Generative AI Center of Excellence
-summary: Overview of the purpose of a Generative AI Center of Excellence including how a center of excellence can assist with adopting generative AI, deployment, operations, and governance of generative AI applications, determining appropriate organizational roles to assist an organization with generative AI workloads, function as a hub for learning resources and skilling, and provide a knowledge base for generative AI best practices.
+summary: Overview of the purpose of a Generative AI Center of Excellence. Includes how a center of excellence can assist with adopting generative AI, deployment, operations, and governance of generative AI applications. Also how a Generative AI Center of Excellence can determine appropriate organizational roles to assist with generative AI workloads, function as a hub for learning resources and skilling, and provide a knowledge base for generative AI best practices.
 abstract: |
-  In this module you learn the purpose of a Generative AI Center of Excellence, including how a center of excellence can:
+  In this module, you learn the purpose of a Generative AI Center of Excellence, including how a center of excellence can:
   - Assist with adopting generative AI.
   - Assist with deployment, operations, and governance of generative AI applications.
   - Determine appropriate organizational roles to assist an organization with generative AI workloads
