@@ -6,6 +6,7 @@
 Traffic Manager offers the several key features.
 
 | **Feature** | **Description** |
+| --- | ---  |
 | Increase application availability | Traffic Manager delivers high availability for your critical applications by monitoring your endpoints and providing automatic failover when an endpoint goes down. |
 | Improve application performance | Azure allows you to run cloud services and websites in datacenters located around the world. Traffic Manager can improve the responsiveness of your website by directing traffic to the endpoint with the lowest latency. |
 | Service maintenance without downtime |  You can plan maintenance on your applications without downtime. Traffic Manager can direct traffic to alternative endpoints while the maintenance is in progress. |

@@ -9,7 +9,7 @@ A [**public load balancer**](/azure/load-balancer/components) can provide outbou
 
 An [**internal load balancer**](/azure/load-balancer/components) is used where private IPs are needed at the frontend only. Internal load balancers are used to load balance traffic from internal Azure resources to other Azure resources inside a virtual network. A load balancer frontend can also be accessed from an on-premises network in a hybrid scenario.
 
-This diagram shows how public and internal load balance can work together.
+This diagram shows how public and internal load balancers can work together.
 
 :::image type="content" source="../media/load-balancer-3cfca04c.png" alt-text="Diagram that shows a public and internal load balancer.":::
 
