@@ -1,7 +1,6 @@
 Federation can use a new or existing on-premises Active Directory farm in Windows Server 2012 R2 (or later), and Microsoft Entra Connect enable users to log into Microsoft Entra resources using their on-premises password.
 
-:::image type="content" source="../media/sc300-federation-flow-diagram-8eb4c413.png" alt-text="Diagram of federation between on-premises and Microsoft Entra ID. Shows users able log into both on-premises and cloud resources with a single shared login.":::
-
+:::image type="content" source="../media/sc300-federation-flow-diagram.png" alt-text="Diagram of federation between on-premises and Microsoft Entra ID. Shows users able log into both on-premises and cloud resources with a single shared login.":::
 
 Federation is a collection of domains that have established trust. The level of trust varies, but typically includes authentication and almost always includes authorization. A typical federation might include a number of organizations that have established trust for shared access to a set of resources.
 
@@ -13,14 +12,13 @@ With federated sign-in, your users can sign in to Microsoft Entra based services
 
 Deploying to an AD FS farm, you need:
 
- -  Local administrator credentials on your federation servers.
- -  Local administrator credentials on any workgroup servers (not domain-joined) that you intend to deploy the Web Application Proxy role on.
- -  The machine that you run the wizard on to be able to connect to any other machines that you want to install AD FS or Web Application Proxy on by using Windows Remote Management.
+- Local administrator credentials on your federation servers.
+- Local administrator credentials on any workgroup servers (not domain-joined) that you intend to deploy the Web Application Proxy role on.
+- The machine that you run the wizard on to be able to connect to any other machines that you want to install AD FS or Web Application Proxy on by using Windows Remote Management.
 
 ## Set up your federation using Microsoft Entra Connect to connect to an AD FS farm
 
-:::image type="content" source="../media/sc300-federation-setup-dialog-f995542d.png" alt-text="Screenshot of Microsoft Entra Connect application showing the create and connect to an AD FS farm dialog.":::
-
+:::image type="content" source="../media/sc300-federation-setup-dialog.png" alt-text="Screenshot of Microsoft Entra Connect application showing the create and connect to an AD FS farm dialog.":::
 
 **Specify the AD FS servers** Specify the servers where you want to install AD FS. You can add one or more servers, depending on your capacity needs. Before you set up this configuration, join all AD FS servers to Active Directory. This step isn't required for the Web Application Proxy servers. Microsoft recommends installing a single AD FS server for test and pilot deployments. After the initial configuration, you can add and deploy more servers to meet your scaling needs by running Microsoft Entra Connect again.
 
@@ -28,8 +26,8 @@ Deploying to an AD FS farm, you need:
 
 **Specify the service account for the AD FS service** The AD FS service requires a domain service account to authenticate users and to look up user information in Active Directory. It can support two types of service accounts:
 
- -  Group managed service account
- -  Domain user account
+- Group managed service account
+- Domain user account
 
 **Select the Microsoft Entra domain that you want to federate** Use the Microsoft Entra domain page to set up the federation relationship between AD FS and Microsoft Entra ID. Here, you configure AD FS to provide security tokens to Microsoft Entra ID. You also configure Microsoft Entra ID to trust the tokens from this AD FS instance. On this page, you can configure only a single domain in the initial installation. You can configure more domains later by running Microsoft Entra Connect again.
 
@@ -49,6 +47,6 @@ Along with **Add and AD FS Server** and **Add an AD FS Web Application Proxy ser
 
 Device writeback is used to enable device-based conditional Access for ADFS-protected devices. This conditional Access provides extra security and assurance that access to applications is granted only to trusted devices. Device writeback enables this security by synchronizing all devices registered in Azure back to the on-premises Active Directory. When configured during setup, the following operations are performed to prepare the AD forest:
 
- -  If they do not exist already, create and configure new containers and objects under: **CN=Device Registration Configuration,CN=Services,CN=Configuration,\[forest dn \]**.
- -  If they do not exist already, create and configure new containers and objects under: **CN=RegisteredDevices,\[domain-dn\]**. Device objects will be created in this container.
- -  Set necessary permissions on the Microsoft Entra Connector account, to manage devices on your Active Directory.
+- If they do not exist already, create and configure new containers and objects under: **CN=Device Registration Configuration,CN=Services,CN=Configuration,\[forest dn \]**.
+- If they do not exist already, create and configure new containers and objects under: **CN=RegisteredDevices,\[domain-dn\]**. Device objects will be created in this container.
+- Set necessary permissions on the Microsoft Entra Connector account, to manage devices on your Active Directory.

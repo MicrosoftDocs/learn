@@ -4,10 +4,12 @@ title: Implement manage pass-through authentication (PTA)
 metadata:
   title: Implement manage pass-through authentication (PTA)
   description: "Implement manage pass-through authentication (PTA)"
-  ms.date: 01/04/2024
+  ms.date: 04/07/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 8
 content: |
   [!include[](includes/4-pass-through-authentication.md)]
