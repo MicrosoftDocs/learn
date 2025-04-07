@@ -6,7 +6,7 @@ Here, you learn how the HPC Pack can manage HPC infrastructure.
 
 ## What is HPC Pack?
 
-In researching options for the engineering organization, you looked at Azure Batch and Azure HPC Instances. But what if you want to have full control of the management and scheduling of your clusters of VMs? What if you have significant investment in on-premises infrastructure in your datacenter? HPC Pack offers a series of installers for Windows that allows you to configure your own control and management plane, and highly flexible deployments of on-premises and cloud nodes. By contrast with the exclusively cloud-based Batch, HPC Pack has the flexibility to deploy to on-premises and the cloud. It uses a hybrid of both to expand to the cloud when your on-premises reserves are insufficient.
+In researching options for the engineering organization, you looked at Azure Batch and Azure HPC Instances. But what if you want to have full control of the management and scheduling of your clusters of VMs? What if you have significant investment in on-premises infrastructure in your datacenter? HPC Pack offers a series of installers for Windows that allows you to configure your own control and management plane, and highly flexible deployments of on-premises and cloud nodes. By contrast, with the exclusively cloud-based Batch, HPC Pack has the flexibility to deploy to on-premises and the cloud. It uses a hybrid of both to expand to the cloud when your on-premises reserves are insufficient.
 
 ![Diagram of HPC Pack hybrid.](../media/4-hpc-pack-hybrid.svg)
 
@@ -18,7 +18,7 @@ Typically, you should prepare for the installation of HPC Pack with a full revie
 
 When you install HPC Pack, it shows a job scheduler with support for both HPC and parallel jobs. The scheduler appears in the Microsoft Message Passing Interface. HPC Pack is highly integrated with Windows, so you can use Visual Studio for parallel debugging. You can see all of the application, networking, and operating system events from the compute nodes in the cluster in a single, debugger view.
 
-HPC Pack also offers an advanced job scheduler. You can rapidly deploy, even to nodes not exclusively dedicated to HPC Pack, to Linux-based nodes, and Azure nodes. That means you can use spare capacity within your datacenter. HPC Pack provides an ideal way to use existing infrastructure investments, and keep more discrete control over how work gets divided up than is possible with Batch.
+HPC Pack also offers an advanced job scheduler. You can rapidly deploy, even to nodes not exclusively dedicated to HPC Pack, to Linux-based nodes and Azure nodes. That means you can use spare capacity within your datacenter. HPC Pack provides an ideal way to use existing infrastructure investments, and keep more discrete control over how work gets divided up than is possible with Batch.
 
 ## Use a mix of technologies
 
@@ -56,20 +56,16 @@ Azure HPC workloads offer machine learning, visualization, and rendering, all of
 
 The following best practices can help you get the expected performance, and value.
 
-- **Distribute Deployments Across Cloud Services:**
-Distributing large deployments across cloud services can help you avoid limitations created by overloading or relying on a single service. By splitting your deployment into smaller segments, you can:
+- **Distribute Deployments Across Cloud Services:** Distributing large deployments across cloud services can help you avoid limitations created by overloading or relying on a single service. By splitting your deployment into smaller segments, you can:
 
-  - Stop idle instances after job completion without interrupting other processes
-  - Flexibly start and stop node clusters
-  - More easily find available nodes in your clusters
-  - Use multiple data centers to ensure disaster recovery
+  - Stop idle instances after job completion without interrupting other processes.
+  - Flexibly start and stop node clusters.
+  - More easily find available nodes in your clusters.
+  - Use multiple data centers to ensure disaster recovery.
 
-- **Use Multiple Azure Storage Accounts for Node Deployments:** 
-Similar to spreading deployments across services, it’s recommended to attach multiple storage accounts to each deployment. It can provide better performance for large deployments, applications restricted by input/output operations, and custom applications. When setting up your storage accounts, you should have one account for node provisioning and another for moving job or task data to ensure consistency and low latency.
-- **Increase Proxy Node Instances to Match Deployment Size:** 
-Proxy nodes enable communication between head nodes you're operating on-premises and Azure worker nodes. These nodes are attached automatically when you deploy workers in Azure. If you're running large jobs that meet or exceed the resources provided by the proxy nodes, consider increasing the number you have running. Increasing is especially important as your deployment gets bigger.
-- **Connect to Your Head Node With the HPC Client Utilities:**  
-The HPC Pack client utilities are the preferred method for connecting to your head node, particularly if you're running large jobs. You can install these utilities on your users’ workstations and remotely access the head node as needed rather than using Remote Desktop Services (RDS). These utilities are especially helpful if many users are connecting at once.
+- **Use Multiple Azure Storage Accounts for Node Deployments:** Similar to spreading deployments across services, it's recommended to attach multiple storage accounts to each deployment. It can provide better performance for large deployments, applications restricted by input/output operations, and custom applications. When setting up your storage accounts, you should have one account for node provisioning and another for moving job or task data to ensure consistency and low latency.
+- **Increase Proxy Node Instances to Match Deployment Size:** Proxy nodes enable communication between head nodes you're operating on-premises and Azure worker nodes. These nodes are attached automatically when you deploy workers in Azure. If you're running large jobs that meet or exceed the resources provided by the proxy nodes, consider increasing the number you have running. Increasing is especially important as your deployment gets bigger.
+- **Connect to Your Head Node With the HPC Client Utilities:** The HPC Pack client utilities are the preferred method for connecting to your head node, particularly if you're running large jobs. You can install these utilities on your users' workstations and remotely access the head node as needed rather than using Remote Desktop Services (RDS). These utilities are especially helpful if many users are connecting at once.
 
 ### Task scheduling
 
@@ -83,7 +79,7 @@ Another HPC service that's offered is task scheduling. You can use the scheduler
 
 Users submit non-interactive batch jobs to the scheduler. The scheduler stores the batch jobs, evaluates their resource requirements and priorities, and distributes the jobs to suitable compute nodes. They make up the bulk of HPC clusters (about 98%) as the most power consuming.
 
-Unlike the sign-in nodes and their interactive usage, compute nodes aren't directly accessible over ssh. The scheduler on the sign-in node, acts as an interface between compute node and user. The user is required to specify the application inside a job script based on time and memory resources.
+Unlike the sign-in nodes and their interactive usage, compute nodes aren't directly accessible over ssh. The scheduler on the sign-in node acts as an interface between compute node and user. The user is required to specify the application inside a job script based on time and memory resources.
 
 The job script submitted through the scheduler adds the job to a job queue. Depending on the available resources the job needs, the scheduler decides when the job leaves the queue, and on which (part of the) back-end nodes it runs.
 
@@ -94,7 +90,7 @@ The user must ensure that the requested resources are within the system's limits
 
 ![Diagram of User accessing the batch system.](../media/16-user-batch-accessing-system.png)
 
-**Illustration**
+#### Illustration
 
 Assuming that the batch system you're using consists of six nodes, the scheduler uses IT to place the nine jobs in the queue onto the available nodes. The goal is to eliminate wasted resources, depicted in the following diagram as the free areas showing nodes without any job execution on them.
 
@@ -102,37 +98,28 @@ Therefore, the jobs may not be distributed among the nodes in the same order in 
 
 ![Diagram of Scheduler distribution of jobs onto nodes.](../media/17-job-distribution-onto-nodes.png)
 
-**Scheduling Algorithms**
+#### Scheduling Algorithms
 
 There are two basic strategies that schedulers can use to determine which job to run next. Modern schedulers don't stick strictly to just one of these algorithms, but rather employ a combination of the two. Besides, there are many more aspects a scheduler has to take into consideration, e. g. the current system load.
 
-- **First Come, First Serve**
-    Jobs are run in the exact same order in which they first enter the queue. The advantage is that every job is definitely run. However, a small set of jobs might wait for an inadequately long time compared to their actual execution time.
+- **First Come, First Serve:** Jobs are run in the exact same order in which they first enter the queue. The advantage is that every job is definitely run. However, a small set of jobs might wait for an inadequately long time compared to their actual execution time.
 
-- **Shortest Job First**
-    Based on the execution time declared in the job script, the scheduler estimates the job execution time. The jobs are ranked in the ascending order of the execution time. While short jobs will start after a short waiting time, long running jobs (or at least jobs declared as such) might never actually start.
+- **Shortest Job First:** Based on the execution time declared in the job script, the scheduler estimates the job execution time. The jobs are ranked in the ascending order of the execution time. While short jobs will start after a short waiting time, long running jobs (or at least jobs declared as such) might never actually start.
 
-- **Backfilling:**
-    The scheduler maintains the concept of *First Come, First Serve* without preventing long running jobs from executing. The scheduler runs the job only when the first job in the queue can be executed. If otherwise, the scheduler goes through the rest of the queue to check whether another job can be executed without extending the waiting time of the first job in queue. If it finds such a job, the scheduler runs that job. Small jobs usually encounter short queue times.
+- **Backfilling:** The scheduler maintains the concept of *First Come, First Serve* without preventing long running jobs from executing. The scheduler runs the job only when the first job in the queue can be executed. If otherwise, the scheduler goes through the rest of the queue to check whether another job can be executed without extending the waiting time of the first job in queue. If it finds such a job, the scheduler runs that job. Small jobs usually encounter short queue times.
 
 ### Workflow management
 
-- **Task pipelining & automation**
+- **Task pipelining:** Repeated operations such as tool usage and software process task sequence executions can be organized into a pipeline. Automating it can make the overall software and tool usage more efficient. It creates efficiencies by making the task itself faster and reducing the burden upon the knowledge worker for its management.
 
-    Repeated operations such as, tool usage and software process task sequence executions can be organized into a pipeline. Automating it can make the overall software and tool usage more efficient. It creates efficiencies by making the task itself faster and reducing the burden upon the knowledge worker for its management.
+- **Task automation:** Automation can reduce the error rate of a process by eliminating variance in how it's performed. Pipelining and automation of a task can open the door for further process innovations like parallelization and cloud deployment.
 
-    Automation can reduce the error rate of a process by eliminating variance in how it's performed. And pipelining and automation of a task can open the door for further process innovations like parallelization and cloud deployment.
+### Tools for workflow management
 
-- **Tools for workflow management**
-
-## Use Azure Batch
-
-Use Azure Batch to run large-scale parallel and high-performance computing (HPC) batch jobs efficiently in Azure. Azure Batch creates and manages a pool of compute nodes (virtual machines), installs the applications you want to run, and schedules jobs to run on the nodes. There's no cluster or job scheduler software to install, manage, or scale. Instead, you use Batch APIs and tools, command-line scripts, or the Azure portal to configure, manage, and monitor your jobs.
+- **Azure Batch:** Use Azure Batch to run large-scale, parallel, and high-performance computing (HPC) batch jobs efficiently in Azure. Azure Batch creates and manages a pool of compute nodes (virtual machines), installs the applications you want to run, and schedules jobs to run on the nodes. There's no cluster or job scheduler software to install, manage, or scale. Instead, you use Batch APIs and tools, command-line scripts, or the Azure portal to configure, manage, and monitor your jobs.
 
 For full details on Azure Batch, including more capabilities and how it works, see [Azure Batch](/azure/batch).
 
-## Use Azure CycleCloud
-
-Azure CycleCloud is an enterprise-friendly tool for orchestrating and managing High Performance Computing (HPC) environments on Azure. With CycleCloud, users can plan infrastructure for HPC systems, deploy familiar HPC schedulers, and automatically scale the infrastructure to run jobs efficiently at any scale. Through CycleCloud, users can create different types of file systems and mount them to the compute cluster nodes to support HPC workloads.
+- **Azure CycleCloud:** Azure CycleCloud is an enterprise-friendly tool for orchestrating and managing High Performance Computing (HPC) environments on Azure. With CycleCloud, users can plan infrastructure for HPC systems, deploy familiar HPC schedulers, and automatically scale the infrastructure to run jobs efficiently at any scale. Through CycleCloud, users can create different types of file systems and mount them to the compute cluster nodes to support HPC workloads.
 
 For more information on Azure CycleCloud, see [Azure CycleCloud](/azure/cyclecloud).

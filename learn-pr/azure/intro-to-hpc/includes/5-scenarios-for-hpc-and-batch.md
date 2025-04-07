@@ -1,6 +1,6 @@
 Each high-performance computing (HPC) challenge has its own requirements, and often requires a unique solution.
 
-As the solution architect for the engineering organization, you need to use HPC solutions on Azure to solve the complex tasks that the organization faces. These tasks include rendering 3D models of the facilities the company designs, and storing large amounts of statistical data. The essence of HPC is to use many computers, or computers that have highly specified CPU, GPU, and memory configurations, to deal with complex, time-consuming tasks.
+As the solution architect for the engineering organization, you need to use HPC solutions on Azure to solve the complex tasks that the organization faces. These tasks include rendering 3D models of the facilities the company designs and storing large amounts of statistical data. The essence of HPC is to use many computers, or computers that have highly specified CPU, GPU, and memory configurations, to deal with complex and time-consuming tasks.
 
 Here, you learn about some typical HPC use cases. This knowledge should help you to identify future problems that might be addressed by using HPC solutions.
 
@@ -44,9 +44,9 @@ Computational fluid dynamics use mathematics to model fluid flows, both free-flo
 
 ### What Candidate Service Do I Use?
 
-- **Lift and shift** is a strategy for migrating a workload to the cloud without redesigning the application or making code changes. Also called rehosting. For more information, see Azure migration center.
+- **Lift and shift:** A strategy for migrating a workload to the cloud without redesigning the application or making code changes. Also called rehosting. For more information, see Azure migration center.
 
-- Cloud optimized is a strategy for migrating to the cloud by refactoring an application to take advantage of cloud-native features and capabilities.
+- **Cloud-optimized:** A strategy for migrating to the cloud by refactoring an application to take advantage of cloud-native features and capabilities.
 
 ![Diagram of Azure Candidate Service Decision.](../media/11-service-criteria.png)
 
@@ -56,35 +56,36 @@ Computational fluid dynamics use mathematics to model fluid flows, both free-flo
 
 #### CPU-based vs GPU-based Computing
 
-- A CPU (the brain) can work on various different calculations, while a GPU (the brawn) is best at focusing all the computing abilities on a specific task.
+A CPU (the brain) can work on various different calculations, while a GPU (the brawn) is best at focusing all the computing abilities on a specific task.
 
-- While individual CPU cores are faster as measured by CPU clock speed, and smarter as measured by available instruction sets. The sheer number of GPU cores and the massive amount of parallelism that they offer, make up the single-core clock speed difference and limited instruction sets.
+Individual CPU cores are faster as measured by CPU clock speed and smarter as measured by available instruction sets. The sheer number of GPU cores and the massive amount of parallelism they offer make up the single-core clock speed difference and limited instruction sets.
 
-- **CPU**  
+##### CPU
 
-  - CPU consists of some cores  optimized for sequential serial processing. It's designed to maximize the performance of a single task within a job.
-  - Steps to find the right CPU VM:
-    - Determine if one job for the HPC application runs on less than one machine or uses MPI across multiple machines.
-    - Determine the job’s RAM per core usage (for example, 6 GB of RAM per core), and benchmark the instances that fit.  
-    - If the workload requires Physical Cores, use the VM families (shown in purple).  
-    - Check on availability of preferred machines.
-    - Cray is applicable for any workloads:
-      - Where a workable VM type isn’t regionally available
-      - Which are high utilization, servers are used 80+%  
-      - Where we have no working VM configuration
+CPU consists of some cores optimized for sequential serial processing. It's designed to maximize the performance of a single task within a job. Steps to find the right CPU VM:
+
+- Determine if one job for the HPC application runs on less than one machine or uses MPI across multiple machines.
+- Determine the job's RAM per core usage (for example, 6 GB of RAM per core), and benchmark the instances that fit.  
+- If the workload requires Physical Cores, use the VM families (shown in purple).  
+- Check on availability of preferred machines.
+- Cray is applicable for any workloads:
+  - Where a workable VM type isn't regionally available.
+  - Which are high utilization, servers are used 80%+.
+  - Where we have no working VM configuration.
 
 ![Diagram of CPU storage utilization.](../media/13-cpu-storage-utilization.png)
 
-- **GPU**  
+##### GPU
 
-  - A GPU uses thousands of smaller and more efficient cores for a massively parallel architecture aimed at handling multiple functions at the same time.
-  - Modern GPUs provide superior processing power, memory bandwidth and efficiency over their CPU counterparts. They're 50–100 times faster in tasks that require multiple parallel processes.
+A GPU uses thousands of smaller and more efficient cores for a massively parallel architecture aimed at handling multiple functions at the same time.
+
+Modern GPUs provide superior processing power, memory bandwidth, and efficiency over their CPU counterparts. They're 50-100 times faster in tasks that require multiple parallel processes.
 
 ![Diagram of GPU visualization.](../media/14-gpu-vizuatlization.png)
 
-### Why low-latency networking is important for tightly coupled jobs?
+### Why is low-latency networking important for tightly coupled jobs?
 
-- Many HPC applications are highly parallel and have tightly coupled communication. Means during an applications parallel simulation run, all parallel processes must communicate with each other frequently.  
+- Many HPC applications are highly parallel and have tightly coupled communication. This means during an applications parallel simulation run, all parallel processes must communicate with each other frequently.  
 
 - These types of applications usually perform best when the inter-communication between the parallel processes is done on high bandwidth/low latency networks like InfiniBand.  
 
