@@ -35,7 +35,7 @@ Use the [priority routing method](/azure/traffic-manager/traffic-manager-routing
 
 #### Weighted routing method
 
-Use the [**Weighted** routing method](/azure/traffic-manager/traffic-manager-routing-methods#weighted-traffic-routing-methods) when you want to distribute traffic across a set of endpoints based on their importance. Set the weight the same to distribute evenly across all endpoints.
+Use the [**Weighted** routing method](/azure/traffic-manager/traffic-manager-routing-methods?branch=main#weighted-traffic-routing-method) when you want to distribute traffic across a set of endpoints based on their importance. Set the weight the same to distribute evenly across all endpoints.
 
 :::image type="content" source="../media/routing-method-weighted-2d93e136.png" alt-text="Diagram that shows the 'Weighted' routing method.":::
 
