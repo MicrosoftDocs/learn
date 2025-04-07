@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn-m365.wwl.purview-ai-protect-sensitive-data.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your knowledge."
+  ms.date: 04/07/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How do sensitivity labels help protect content accessed by Copilot?"
+    choices:
+    - content: "By blocking users from opening labeled files in Microsoft 365 apps."
+      isCorrect: false
+      explanation: "Sensitivity labels don't block users from opening files in Microsoft 365 apps unless specific access restrictions are configured."
+    - content: "By enabling Copilot to follow data protection settings such as encryption and access control."
+      isCorrect: true
+      explanation: "Sensitivity labels enforce protection settings that Copilot respects, such as encryption and user permissions."
+    - content: "By requiring multi-factor authentication before users can view labeled content."
+      isCorrect: false
+      explanation: "Sensitivity labels don't enforce multi-factor authentication directly. That control is managed through identity and access policies."
+
+  - content: "Why is blocking pasting of sensitive data into generative AI websites important in Microsoft Purview Endpoint DLP?"
+    choices:
+    - content: "It enhances the efficiency of data processing on AI websites."
+      isCorrect: false
+      explanation: "The purpose isn't to improve efficiency of AI platforms."
+    - content: "It streamlines the workflow for content creation on AI platforms."
+      isCorrect: false
+      explanation: "DLP restrictions focus on security, not workflow optimization."
+    - content: "It prevents the potential exposure of sensitive information on unsecured platforms."
+      isCorrect: true
+      explanation: "Blocking pasting helps prevent unintentional exposure of sensitive content to external or unmanaged tools."
+
+  - content: "What is the purpose of AI data assessments in DSPM for AI?"
+    choices:
+    - content: "To block AI-generated content from being saved in SharePoint."
+      isCorrect: false
+      explanation: "Data assessments don't block content. They provide visibility into risks."
+    - content: "To delete all files accessed by AI tools."
+      isCorrect: false
+      explanation: "Assessments provide analysis but don't take destructive actions like deleting files."
+    - content: "To identify sensitive data that AI tools might access and help enforce security controls."
+      isCorrect: true
+      explanation: "Data assessments identify risk areas and inform decisions about applying protections."

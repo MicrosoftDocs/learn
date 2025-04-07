@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn-m365.wwl.purview-ai-protect-sensitive-data
+metadata:
+  title: Protect sensitive data from AI-related risks
+  description: Protect sensitive data from AI-related risks
+  ms.date: 04/07/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ai-usage: ai-assisted
+  ms.service: purview
+title: Protect sensitive data from AI-related risks
+summary: |
+  Microsoft Purview helps organizations protect sensitive data as AI tools change how people access, use, and share information. Lean how to reduce data security risks in AI environments, including label-based protections, browser restrictions, and risk-based assessments.
+abstract: |
+  In this module you learn how to:
+  - Use sensitivity labels to control how AI tools access and handle content
+  - Configure endpoint DLP to restrict risky actions in browsers
+  - Run data assessments to detect oversharing risks in SharePoint
+prerequisites: |
+  None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- auditor
+products:
+- m365
+- microsoft-purview
+subjects:
+- data-management
+- threat-protection
+units:
+- learn-m365.wwl.purview-ai-protect-sensitive-data.introduction
+- learn-m365.wwl.purview-ai-protect-sensitive-data.sensitivity-label-copilot
+- learn-m365.wwl.purview-ai-protect-sensitive-data.endpoint-dlp-block-paste-ai
+- learn-m365.wwl.purview-ai-protect-sensitive-data.insider-risk-management-generative-ai-usage
+- learn-m365.wwl.purview-ai-protect-sensitive-data.adaptive-protection-ai
+- learn-m365.wwl.purview-ai-protect-sensitive-data.knowledge-check
+- learn-m365.wwl.purview-ai-protect-sensitive-data.summary
+badge:
+  uid: learn-m365.wwl.purview-ai-protect-sensitive-data.badge
