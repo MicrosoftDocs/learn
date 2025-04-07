@@ -4,7 +4,7 @@ By using holograms, you learned how digital content can be made, placed, and int
 
 ## Next steps
 
-The journey isn't over yet. Consider following up on [mixed-reality case studies](https://learn.microsoft.com/windows/mixed-reality/discover/case-studies-overview).
+The journey isn't over yet. Consider following up on [mixed-reality case studies](/windows/mixed-reality/discover/case-studies-overview).
 
 ## Further reading
 
