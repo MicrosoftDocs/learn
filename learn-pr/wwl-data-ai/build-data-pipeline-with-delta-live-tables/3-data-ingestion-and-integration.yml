@@ -6,8 +6,8 @@ metadata:
   description: "Data ingestion and integration"
   ms.date: 07/23/2024
   author: wwlpublish
-  ms.author: theresai
+  ms.author: jamesh
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-data-ingestion-and-integration.md)]
+  [!include[](includes/3-data-ingestion-and-integration.md)]
