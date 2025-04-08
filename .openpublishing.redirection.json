@@ -46493,6 +46493,66 @@
       "source_path": "learn-pr/azure/build-cosmos-db-java-app/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-high-availability/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-high-availability/2-backup-restore.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-high-availability/3-exercise-restore-point-in-time.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-high-availability/4-high-availability-architecture.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-high-availability/5-exercise-general-purpose-high-availability.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-high-availability/6-exercise-business-critical-high-availability.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-high-availability/7-higher-availablity-options.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-high-availability/8-exercise-auto-failover-groups.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-high-availability/9-availability-consistency.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-high-availability/10-configure-monitor.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-high-availability/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-high-availability/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
     }
  ]
 }

@@ -30,7 +30,6 @@ modules:
 - learn.azure-sql-deploy-configure
 - learn.azure-sql-secure-data
 - learn.azure-sql-performance
-- learn.azure-sql-high-availability
 - learn.azure-sql-case-studies
 trophy:
   uid: learn.azure-sql-fundamentals.trophy
