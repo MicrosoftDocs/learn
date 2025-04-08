@@ -1,6 +1,8 @@
 
 
-Organizations with large scale operations create connections between different parts of their virtual network infrastructure. Virtual network peering enables you to seamlessly connect separate VNets with optimal network performance, whether they are in the same Azure region (VNet peering) or in different regions (Global VNet peering). Network traffic between peered virtual networks is private. The virtual networks appear as one for connectivity purposes. The traffic between virtual machines in peered virtual networks uses the Microsoft backbone infrastructure, and no public Internet, gateways, or encryption is required in the communication between the virtual networks.
+Organizations with large scale operations create connections between different parts of their virtual network infrastructure. Virtual network peering enables you to seamlessly connect separate VNets with optimal network performance, whether they are in the same Azure region (VNet peering) or in different regions (Global VNet peering). 
+
+Network traffic between peered virtual networks is private. The virtual networks appear as one for connectivity purposes. The traffic between virtual machines in peered virtual networks uses the Microsoft backbone infrastructure, and no public Internet, gateways, or encryption is required in the communication between the virtual networks.
 
 Virtual network peering enables you to seamlessly connect two Azure virtual networks. Once peered, the virtual networks appear as one, for connectivity purposes. There are two types of VNet peering.
 
@@ -8,6 +10,8 @@ Virtual network peering enables you to seamlessly connect two Azure virtual netw
 - **Global VNet peering** connects Azure virtual networks in different regions. The peered virtual networks can exist in any Azure public cloud region or China cloud regions, but not in Government cloud regions. You can only peer virtual networks in the same region in Azure Government cloud regions.
 
 :::image type="content" source="../media/global-vnet-peering-2368962c.png" alt-text="Diagram with VNet1 in Region 1, and VNet2 and VNet3 in Region 2. VNet2 and VNet3 are connected with regional VNet peering. VNet1 and VNet2 are connected with a global VNet peering.":::
+
+### Benefits of virtual network peering
 
 The benefits of using virtual network peering, whether local or global, include:
 
@@ -26,25 +30,21 @@ This video reviews the basics of virtual network peering types. The entire video
 
 ## Configure VNet Peering
 
-Here are the steps to configure VNet peering. Notice you need two virtual networks. To test the peering, you need a virtual machine in each network. Initially, the VMs won't be able to communicate, but after configuration the communication works. The step that is new is configuring the peering of the virtual networks.
+Here are the steps to configure VNet peering. Notice you need two virtual networks. To test the peering, you need a virtual machine in each network. Initially, the VMs won't be able to communicate, but after peering the communication works. 
 
 1. Create two virtual networks.
 2. **Peer the virtual networks**.
 3. Create virtual machines in each virtual network.
 4. Test the communication between the virtual machines.
 
-To configure the peering, use the **Add peering** page. There are only a few optional configuration parameters to consider.
-
-:::image type="content" source="../media/configure-vnet-peering.png" alt-text="Screenshot of virtual network peering configuration page.":::
-
 > [!NOTE]
 > When you add a peering on one virtual network, the second virtual network configuration is automatically added.
 
-## Gateway Transit and Connectivity
+### Gateway Transit and Connectivity
 
-When virtual networks are peered, you configure a VPN gateway in the peered virtual network as a transit point. In this case, a peered virtual network uses the remote gateway to gain access to other resources. A virtual network can have only one gateway. Gateway transit is supported for both VNet Peering and Global VNet Peering.
+When virtual networks are peered, you configure a VPN gateway in the peered virtual network as a [gateway transit](/azure/vpn-gateway/vpn-gateway-peering-gateway-transit) point. In this case, a peered virtual network uses the remote gateway to gain access to other resources. A virtual network can have only one gateway. Gateway transit is supported for both VNet Peering and Global VNet Peering.
 
-When you Allow Gateway Transit the virtual network can communicate to resources outside the peering. For example, the subnet gateway could:
+When you allow gateway transit Gateway Transit the virtual network can communicate to resources outside the peering. For example, the subnet gateway could:
 
 - Use a site-to-site VPN to connect to an on-premises network.
 - Use a VNet-to-VNet connection to another virtual network.
@@ -52,20 +52,10 @@ When you Allow Gateway Transit the virtual network can communicate to resources 
 
 In these scenarios, gateway transit allows peered virtual networks to share the gateway and get access to resources. This means you don't need to deploy a VPN gateway in the peer virtual network.
 
+:::image type="content" source="../media/configure-vnet-peering.png" alt-text="Screenshot of virtual network peering configuration page.":::
+
 > [!NOTE]
->
 > Network security groups can be applied in either virtual network to block access to other virtual networks or subnets. When configuring virtual network peering, you can either open or close the network security group rules between the virtual networks.
 
-## Use service chaining to direct traffic to a gateway
-
-Suppose you want to direct traffic from the Contoso VNet to a specific network virtual appliance (NVA). Create user-defined routes to direct traffic from the Contoso VNet to the NVA in the Fabrikam VNet. This technique is known as service chaining.
-
-To enable service chaining, add user-defined routes pointing to virtual machines in the peered virtual network as the next hop IP address. User-defined routes can also point to virtual network gateways.
-
-Azure virtual networks can be deployed in a hub-and-spoke topology, with the hub VNet acting as a central point of connectivity to all the spoke VNets. The hub virtual network hosts infrastructure components such as an NVA, virtual machines, and a VPN gateway. All the spoke virtual networks peer with the hub virtual network. Traffic flows through network virtual appliances or VPN gateways in the hub virtual network. The benefits of using a hub and spoke configuration include cost savings, overcoming subscription limits, and workload isolation.
-
-The following diagram shows a scenario in which hub VNet hosts a VPN gateway that manages traffic to the on-premises network, enabling controlled communication between the on-premises network and the peered Azure VNets.
-
-:::image type="content" source="../media/service-chaining-be9346d4.png" alt-text="Diagram of Contoso and Fabrikam hub and spoke configuration.":::
 
 Choose the best response for each question.
