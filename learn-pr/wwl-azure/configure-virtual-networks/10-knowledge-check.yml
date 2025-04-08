@@ -2,6 +2,7 @@
 uid: learn.wwl.configure-virtual-networks.knowledge-check
 title: Module assessment
 metadata:
+  hidden_question_numbers: ["EDD34630_34","EDD34630_46","EDD34630_63","EDD34630_79","EDD34630_83","EDD34630_87"]
   ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
