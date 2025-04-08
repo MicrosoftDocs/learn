@@ -2,9 +2,11 @@
 uid: learn.wwl.implement-initial-configuration-of-azure-active-directory.configure-manage-roles
 title: Configure and manage Microsoft Entra roles
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure and manage Microsoft Entra roles
   description: "Configure and manage Microsoft Entra roles"
-  ms.date: 09/03/2024
+  ms.date: 04/08/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
@@ -12,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-configure-manage-roles.md)]
+  [!include[](includes/3-configure-manage-roles.md)]
