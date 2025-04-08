@@ -29,16 +29,16 @@ quiz:
 
   - content: What are the four ingredients of writing a good prompt?
     choices:
-    - content: subject, source, context and expectations
+    - content: Subject, source, context, and expectations
       isCorrect: false
       explanation: Incorrect. One of these is incorrect.
-    - content: goal, source, context and expectations
+    - content: Goal, source, context, and expectations
       isCorrect: true
       explanation: Correct!
-    - content: goal, theme, context and expectations
+    - content: Goal, theme, context, and expectations
       isCorrect: false
       explanation: Incorrect. One of these is incorrect.
-    - content: goal, theme, scene and expectations
+    - content: Goal, theme, scene, and expectations
       isCorrect: false
       explanation: Incorrect. Two of these is incorrect.
 
