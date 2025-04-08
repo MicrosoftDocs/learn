@@ -6,7 +6,7 @@ Microsoft Entra Connect performs three types of operations from the directories 
 
 ## Errors during export to Microsoft Entra ID
 
-The following section describes different types of synchronization errors that can occur during the export operation to Microsoft Entra ID using the Microsoft Entra connector. This connector can be identified by the name format being `contoso.onmicrosoft.com`. Errors during export to Microsoft Entra ID indicate that the operation (add, update, delete etc.) attempted by Microsoft Entra Connect (Sync Engine) on Microsoft Entra directory failed.
+The following section describes different types of synchronization errors that can occur during the export operation to Microsoft Entra ID using the Microsoft Entra connector. This connector can be identified by the name format being `contoso.onmicrosoft.com`. Errors during export to Microsoft Entra ID indicate that the operation (add, update, delete etc.,) attempted by Microsoft Entra Connect (Sync Engine) on Microsoft Entra directory failed.
 
 :::image type="content" source="../media/export-errors-overview.png" alt-text="Screenshot of the Export Errors Overview page in Microsoft Entra Connect.":::
 
@@ -47,7 +47,7 @@ Microsoft Entra directory schema doesn't allow two or more objects to have the s
 2.  Bob Smith's **UserPrincipalName** is set as **bobs@contoso.com**.
 3.  **"abcdefghijklmnopqrstuv=="** is the **SourceAnchor** calculated by Microsoft Entra Connect using Bob Smith's **objectGUID** from on premises Active Directory, which is the **immutableId** for Bob Smith in Microsoft Entra ID.
 4.  Bob also has following values for the **proxyAddresses** attribute:
-    
+
    -  smtp: bobs@contoso.com
    -  smtp: bob.smith@contoso.com
    -  **smtp: bob@contoso.com**
@@ -56,15 +56,15 @@ Microsoft Entra directory schema doesn't allow two or more objects to have the s
 6.  Bob Taylor's **UserPrincipalName** is set as **bobt@contoso.com**.
 7.  **"abcdefghijkl0123456789==""** is the **sourceAnchor** calculated by Microsoft Entra Connect using Bob Taylor's **objectGUID** from on premises Active Directory. Bob Taylor's object has NOT synced to Microsoft Entra ID yet.
 8.  Bob Taylor has the following values for the proxyAddresses attribute
-    
+
    -  smtp: bobt@contoso.com
    -  smtp: bob.taylor@contoso.com
    -  **smtp: bob@contoso.com**
 
 9.  During sync, Microsoft Entra Connect will recognize the addition of Bob Taylor in on premises Active Directory and ask Microsoft Entra ID to make the same change.
-10. Microsoft Entra ID will first perform hard match. That is, it will search if there's any object with the immutableId equal to "abcdefghijkl0123456789==". Hard Match will fail, since no other object in Microsoft Entra ID will have that immutableId.
-11. Microsoft Entra ID will then attempt to soft-match Bob Taylor. That is, it will search if there's any object with proxyAddresses equal to the three values, including smtp: bob@contoso.com
-12. Microsoft Entra ID will find Bob Smith's object to match the soft-match criteria. But this object has the value of immutableId = "abcdefghijklmnopqrstuv==". which indicates this object was synced from another object from on premises Active Directory. Thus, Microsoft Entra ID can't soft-match these objects and results in an **InvalidSoftMatch** sync error.
+10.  Microsoft Entra ID will first perform hard match. That is, it will search if there's any object with the immutableId equal to "abcdefghijkl0123456789==". Hard Match will fail, since no other object in Microsoft Entra ID will have that immutableId.
+11.  Microsoft Entra ID will then attempt to soft-match Bob Taylor. That is, it will search if there's any object with proxyAddresses equal to the three values, including smtp: bob@contoso.com
+12.  Microsoft Entra ID will find Bob Smith's object to match the soft-match criteria. But this object has the value of immutableId = "abcdefghijklmnopqrstuv==". which indicates this object was synced from another object from on premises Active Directory. Thus, Microsoft Entra ID can't soft-match these objects and results in an **InvalidSoftMatch** sync error.
 
 **How to fix InvalidSoftMatch error**
 
@@ -127,7 +127,7 @@ Duplicate value is assigned to an already synced object, which conflicts with an
 1.  **Bob Smith** is a synced user in Microsoft Entra ID from on premises Active Directory of contoso.com
 2.  Bob Smith's **UserPrincipalName** on premises is set as **bobs@contoso.com**.
 3.  Bob also has following values for the **proxyAddresses** attribute:
-    
+
    -  smtp: bobs@contoso.com
    -  smtp: bob.smith@contoso.com
    -  **smtp: bob@contoso.com**
