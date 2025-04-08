@@ -1,12 +1,17 @@
 ### YamlMime:Module
 uid: learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution
 metadata:
-  title: '6-Get tips and tricks for teaching DP-100: Designing and implementing a data science solution on Azure'
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: 'Get Tips and Tricks for Teaching DP-100: Designing and Implementing a Data Science Solution on Azure'
   description: "Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials."
-  ms.date: 05/23/2024
+  ms.date: 04/07/2025
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: module
+  ms.collection: N/A
+  ms.custom:
+  - N/A
   ms.service: azure
   ai-usage: human-only
 title: 'Get tips and tricks for teaching DP-100: Designing and implementing a data science solution on Azure'
@@ -22,7 +27,7 @@ abstract: |
 
   -   Discover additional resources and materials to prepare students for success on their Microsoft certification exams.
 prerequisites: None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/designing-implementing-data-science-solution-azure.svg
 levels:
 - advanced
 roles:
@@ -48,4 +53,4 @@ units:
 - learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.knowledge-check
 - learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.summary
 badge:
-  uid: learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.badge
+  uid: learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.badge
