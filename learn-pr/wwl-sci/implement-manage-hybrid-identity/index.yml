@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-manage-hybrid-identity
 metadata:
-  title: Implement and manage hybrid identity
+  title: Implement and Manage Hybrid Identity
   description: "Creating a hybrid-identity solution to use your on-premises active directory can be challenging. Explore how to implement a secure hybrid-identity solution."
-  ms.date: 04/07/2025
+  ms.date: 04/08/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: module
