@@ -2,6 +2,7 @@
 uid: learn.wwl.discover-devops.knowledge-check
 title: Module assessment
 metadata:
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
   ms.date: 02/05/2024
@@ -46,4 +47,3 @@ quiz:
         - content: "To apply changes in small increments through automated testing and build."
           isCorrect: true
           explanation: "Correct. Continuous integration (CI) during the development phase involves applying changes in small increments through automated testing and build."
-
