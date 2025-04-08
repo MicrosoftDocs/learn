@@ -1,10 +1,10 @@
-In this unit, you'll deploy an Azure SQL logical server and create databases to utilize the features discussed to secure your Azure SQL Database.
+In this unit, you deploy an Azure SQL logical server and create databases to utilize the features discussed to secure your Azure SQL Database.
 
 ## Set up: Use scripts to deploy Azure SQL Database
 
-At the right is Azure Cloud Shell, which is a way to interact with Azure by using a browser. Before you start the exercise, you'll run a script in Cloud Shell to create your environment with the sample `AdventureWorks` database in Azure SQL Database. In the script, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
+At the right is Azure Cloud Shell, which is a way to interact with Azure by using a browser. Before you start the exercise, you run a script in Cloud Shell to create your environment with the sample `AdventureWorks` database in Azure SQL Database. In the script, you're prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
 
-These scripts should take three to five minutes to complete. Be sure to note your `password`, `unique ID`, and `region`, because they won't be shown again.
+These scripts should take three to five minutes to complete. Be sure to note your `password`, `unique ID`, and `region`, because they aren't shown again.
 
 1. Start by obtaining your local IP address. Ensure that you're disconnected from any VPN service, and **open a local PowerShell terminal on your device**. Run the following command and note the resulting IP address.
 
@@ -12,7 +12,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     (Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content
     ```
 
-1. Run the following commands in Cloud Shell. Enter a complex password and, at the prompt, enter your local public IP address, which you obtained in the preceding step. 
+1. Run the following commands in Cloud Shell. Enter a complex password and, at the prompt, enter your local public IP address, which you obtained in the preceding step.
 
     ```powershell
     $adminSqlLogin = "cloudadmin"
@@ -29,7 +29,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     $serverName = "aw-server$($uniqueID)"
     ```
 
-1. Output and store in a text file the information you'll need throughout the module by running the following code in Cloud Shell. You'll likely need to press `Enter` after you paste the code, because the last line won't be run by default.
+1. Output and store in a text file the information you need throughout the module by running the following code in Cloud Shell. You'll likely need to press `Enter` after you paste the code, because the last line won't be run by default.
 
     ```powershell
     Write-Host "Your unique ID for future exercises in this module:" $uniqueID
@@ -39,9 +39,9 @@ These scripts should take three to five minutes to complete. Be sure to note you
     ```
 
     > [!NOTE]
-    > Remember to note your `password`, `unique ID`, and `region`. You'll use them throughout the module.
+    > Remember to note your `password`, `unique ID`, and `region`. You use them throughout the module.
 
-1. Run the following script to deploy an Azure SQL Database logical server with the `AdventureWorks` sample, as well as a ledger database that we'll discuss in future units. The script also adds your IP address as a firewall rule, enables [Microsoft Defender for SQL](/azure/azure-sql/database/azure-defender-for-sql), and creates a storage account for use in future units. Allow several minutes for this script to complete.
+1. Run the following script to deploy an Azure SQL Database logical server with the `AdventureWorks` sample, and a ledger database that we'll discuss in future units. The script also adds your IP address as a firewall rule, enables [Microsoft Defender for SQL](/azure/azure-sql/database/azure-defender-for-sql), and creates a storage account for use in future units. Allow several minutes for this script to complete.
 
     ```powershell
     # The sample database name
@@ -100,7 +100,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     :::image type="content" source="../media/3-connect-azure-sql.png" alt-text="Screenshot of how to connect to SQL Database in SSMS.":::  
 
     > [!NOTE]
-    > Depending on your local configuration (for example, VPN), your client IP address might differ from the IP address that the Azure portal used during deployment. If it does differ, you'll get a pop-up message that reads, "Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access." If you get this message, sign in with the account you're using for the sandbox and add a firewall rule for your client IP address. You can complete all of these steps by using the pop-up wizard in SSMS.  
+    > Depending on your local configuration (for example, VPN), your client IP address might differ from the IP address that the Azure portal used during deployment. If it does differ, you get a pop-up message that reads, "Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access." If you get this message, sign in with the account you're using for the sandbox and add a firewall rule for your client IP address. You can complete all of these steps by using the pop-up wizard in SSMS.  
 
 1. Once connected to your Azure SQL logical server, expand the **Databases** folder.
 

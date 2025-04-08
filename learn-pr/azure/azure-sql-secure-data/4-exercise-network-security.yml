@@ -3,7 +3,7 @@ uid: learn.azure-sql-secure-data.4-exercise-network-security
 metadata:
   title: Exercise - Secure your network
   description: Exercise - Secure your network
-  ms.date: 11/13/2023
+  ms.date: 04/01/2025
   author: VanMSFT
   ms.author: vanto
   ms.topic: unit
@@ -12,4 +12,4 @@ durationInMinutes: 10
 interactive: powershell
 azureSandbox: true
 content: |
-  [!include[](includes/4-exercise-network-security.md)]
+  [!include[](includes/4-exercise-network-security.md)]
