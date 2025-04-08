@@ -18,7 +18,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "When one needs the resources in one VNet to communicate with resources in a subnet in a different VNet. Which Azure network feature should be used?"
+  - content: "Which feature allows one VNet to communicate with resources in a subnet in a different virtual network?"
     choices:
     - content: "Internal Domain Name System (DNS)."
       isCorrect: false

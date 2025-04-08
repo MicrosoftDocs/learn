@@ -71,7 +71,7 @@ This video reviews the basics of IP addressing and subnetting.
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=3813e403-1608-4af1-9876-da95c1703230]
 
 > [!TIP]
-> It's mportant to plan your naming convention for your resources. A well-chosen name helps you quickly identify the resource's type, its associated workload, its deployment environment, and the Azure region hosting it. For example, a public IP resource for a production SharePoint workload residing in the West US region might be pip-sharepoint-prod-westus-001
+> It's important to plan your naming convention for your resources. A well-chosen name helps you quickly identify the resource's type, its associated workload, its deployment environment, and the Azure region hosting it. For example, a public IP resource for a production SharePoint workload residing in the West US region might be pip-sharepoint-prod-westus-001
 
 :::image type="content" source="../media/components-azure-resource-name-e0dedd6c.png" alt-text="Diagram of a resource naming example.":::
 

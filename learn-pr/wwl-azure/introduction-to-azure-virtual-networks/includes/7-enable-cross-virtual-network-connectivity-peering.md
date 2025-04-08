@@ -42,9 +42,9 @@ Here are the steps to configure VNet peering. Notice you need two virtual networ
 
 ### Gateway Transit and Connectivity
 
-When virtual networks are peered, you configure a VPN gateway in the peered virtual network as a [gateway transit](/azure/vpn-gateway/vpn-gateway-peering-gateway-transit) point. In this case, a peered virtual network uses the remote gateway to gain access to other resources. A virtual network can have only one gateway. Gateway transit is supported for both VNet Peering and Global VNet Peering.
+You can configure a VPN gateway in the peered virtual network as a [gateway transit](/azure/vpn-gateway/vpn-gateway-peering-gateway-transit) point. In this case, a peered virtual network uses the remote gateway to gain access to other resources. A virtual network can have only one gateway. Gateway transit is supported for both VNet Peering and Global VNet Peering.
 
-When you allow gateway transit Gateway Transit the virtual network can communicate to resources outside the peering. For example, the subnet gateway could:
+Gateway Transit allows the virtual network to communicate to resources outside the peering. For example, the subnet gateway could:
 
 - Use a site-to-site VPN to connect to an on-premises network.
 - Use a VNet-to-VNet connection to another virtual network.
@@ -55,7 +55,7 @@ In these scenarios, gateway transit allows peered virtual networks to share the 
 :::image type="content" source="../media/configure-vnet-peering.png" alt-text="Screenshot of virtual network peering configuration page.":::
 
 > [!NOTE]
-> Network security groups can be applied in either virtual network to block access to other virtual networks or subnets. When configuring virtual network peering, you can either open or close the network security group rules between the virtual networks.
+> Network security groups can be applied in either virtual network to block access to other virtual networks or subnets. 
 
 
 Choose the best response for each question.

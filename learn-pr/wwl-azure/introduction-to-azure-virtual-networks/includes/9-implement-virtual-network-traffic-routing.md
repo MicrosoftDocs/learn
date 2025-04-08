@@ -1,6 +1,6 @@
 
 
-Azure automatically creates a route table for each subnet within an Azure virtual network and adds system default routes to the table. You can override some of Azure's system routes with [custom routes](/azure/virtual-network/virtual-networks-udr-overview), and add more custom routes to route tables. Azure routes outbound traffic from a subnet based on the routes in a subnet's route table.
+Azure automatically creates a route table for each subnet within an Azure virtual network. The route table has the default system routes and any user defined routes you require. and adds system default routes to the table. 
 
 ## System routes
 
@@ -11,6 +11,7 @@ Azure automatically creates system routes and assigns the routes to each subnet 
 Whenever a virtual network is created, Azure automatically creates the following default system routes for each subnet within the virtual network. Each system route contains an address prefix and next hop type. 
 
 | **Source** | **Address prefixes** | **Next hop type** |
+| --- | --- | --- |
 | Default | Unique to the virtual network | Virtual network |
 | Default | 0.0.0.0/0 | Internet |
 | Default | 10.0.0.0/8 | None |
@@ -40,13 +41,9 @@ Azure adds default system routes for any Azure capabilities that you enable. Dep
 - **Virtual network gateway:** When you add a virtual network gateway to a virtual network, Azure adds one or more routes with Virtual network gateway as the next hop type. The source is listed as virtual network gateway because the gateway adds the routes to the subnet.
 - **VirtualNetworkServiceEndpoint:** Azure adds the public IP addresses for certain services to the route table when you enable a service endpoint to the service. Service endpoints are enabled for individual subnets within a virtual network, so the route is only added to the route table of a subnet a service endpoint is enabled for. The public IP addresses of Azure services change periodically, and Azure manages the updates to the routing tables when necessary.
 
-## Custom routes
+## User defined routes
 
-To control the way network traffic is routed more precisely, you can override the default routes that Azure creates by using your own user-defined routes (UDR). This technique can be useful when you want to ensure that traffic between two subnets passes through a firewall appliance.
-
-### User-defined routes
-
-You can create custom, or user-defined(static), routes. These custom routes override Azure's default system routes. In Azure, each subnet can have zero or one associated route table. When you create a route table and associate it to a subnet, the routes within it are combined with, or override, the default routes Azure adds to a subnet.
+You can override the default routes that Azure creates with [user-defined routes (UDR)](/azure/virtual-network/virtual-networks-udr-overview). This technique can be useful when you want to ensure that traffic between two subnets passes through a firewall appliance. These custom routes override Azure's default system routes. In Azure, each subnet can have zero or one associated route table. When you create a route table and associate it to a subnet, the routes within it are combined with, or override, the default routes Azure adds to a subnet.
 
 You can specify the following next hop types when creating a user-defined route:
 
@@ -56,7 +53,7 @@ You can specify the following next hop types when creating a user-defined route:
 - **Virtual network**: Specify when you want to override the default routing within a virtual network.
 - **Internet:** Specify when you want to explicitly route traffic destined to an address prefix to the Internet.
 
-### Uses for custom routes (video)
+### Cases for user defined routes (video)
 
 This video reviews different usage cases for custom routes. 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=cdcb25bb-d79c-4fbb-8389-09ad07293679]
