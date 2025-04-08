@@ -2,6 +2,7 @@
 uid: learn.wwl.implement-desired-state-configuration-dsc.knowledge-check
 title: Module assessment
 metadata:
+  hidden_question_numbers: ["A7F778C2_26","A7F778C2_46","A7F778C2_104"]
   ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
