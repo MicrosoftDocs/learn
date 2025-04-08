@@ -1,10 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-manage-active-directory-objects.knowledge-check
-title: Module assessment
+title: Knowledge check
 metadata:
-  title: Module assessment
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/22/2024
+  ms.date: 04/08/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
@@ -29,15 +31,15 @@ quiz:
       explanation: "Correct. Group managed service accounts provide automatic password maintenance and simplified SPN management for services running on multiple servers."
   - content: "Which of the following is a built-in container in an AD DS domain that can hold computer accounts?"
     choices:
-    - content: "The Domain Controllers OU"
+    - content: "Computers container"
       isCorrect: true
-      explanation: "That's correct. Although the Domain Controllers OU is an OU, it's created by default and is therefore built in."
-    - content: "The IT OU"
+      explanation: "That's correct. The Computers container holds all computers joined to the domain without a computer account. It is the default location for new computer accounts created in the domain."
+    - content: "Users container"
       isCorrect: false
-      explanation: "That's incorrect. OUs aren't built-in objects but are manually created (with one exception)."
-    - content: "System"
+      explanation: "That's incorrect. The Users container holds additional predefined user and group accounts (besides those in the Builtin container). Users and groups are pre-assigned membership and permissions for completing domain and forest management tasks.."
+    - content: "System container"
       isCorrect: false
-      explanation: "That's incorrect. Although this is a built-in container, it doesn't contain computer objects."
+      explanation: "That's incorrect. The System container holds configuration information about the domain including security groups and permissions, the domain SYSVOL share, DFS configuration information, and IP security policies."
   - content: "A system administrator needs to manage a collection of users, computers, contacts, and other groups as a single entity in Active Directory. What should the administrator do to accomplish this task?"
     choices:
     - content: "Create a new user account"
@@ -48,4 +50,4 @@ quiz:
       explanation: "Incorrect. While creating an Organizational Unit provides a hierarchical framework for organizing objects, it doesn't directly allow for managing a collection of users and resources as a single entity."
     - content: "Create a new group"
       isCorrect: true
-      explanation: "Correct. Creating a group in Active Directory allows for managing a collection of users, computers, contacts, and other groups as a single entity."
+      explanation: "Correct. Creating a group in Active Directory allows for managing a collection of users, computers, contacts, and other groups as a single entity."

@@ -2,9 +2,11 @@
 uid: learn.wwl.create-manage-active-directory-objects.manage-objects-their-properties
 title: Manage objects and their properties in Active Directory
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Manage objects and their properties in Active Directory
   description: "Manage objects and their properties in Active Directory"
-  ms.date: 10/22/2024
+  ms.date: 04/08/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
@@ -12,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-manage-objects-their-properties.md)]
+  [!include[](includes/4-manage-objects-their-properties.md)]

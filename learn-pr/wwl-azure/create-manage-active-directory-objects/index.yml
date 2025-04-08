@@ -1,9 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.create-manage-active-directory-objects
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create and manage Active Directory objects
   description: "This module focuses on the tasks associated with managing Active Directory objects and AD domain services domain controllers."
-  ms.date: 10/22/2024
+  ms.date: 04/08/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
@@ -59,4 +61,4 @@ units:
 - learn.wwl.create-manage-active-directory-objects.knowledge-check
 - learn.wwl.create-manage-active-directory-objects.summary
 badge:
-  uid: learn.wwl.create-manage-active-directory-objects.badge
+  uid: learn.wwl.create-manage-active-directory-objects.badge

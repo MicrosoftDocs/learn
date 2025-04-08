@@ -2,9 +2,11 @@
 uid: learn.wwl.create-manage-active-directory-objects.define-users-groups-computers
 title: Define users, groups, and computers
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Define users, groups, and computers
   description: "Define users, groups, and computers"
-  ms.date: 10/22/2024
+  ms.date: 04/08/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
@@ -12,4 +14,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-define-users-groups-computers.md)]
+  [!include[](includes/2-define-users-groups-computers.md)]
