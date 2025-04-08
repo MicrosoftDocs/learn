@@ -1,6 +1,6 @@
 AI tools like Microsoft 365 Copilot are changing how users interact with Microsoft 365 apps such as Word, Excel, PowerPoint, Outlook, and Teams. These tools use large language models like GPT-4 to generate content, summarize communications, and assist in meetings. Because Copilot can access and process large amounts of business data, it's important to ensure that sensitive information is consistently protected in line with your organization's policies. One way to help protect this content is by using sensitivity labels in Microsoft 365.
 
-## What are sensitivity labels?
+## Understand sensitivity labels
 
 Sensitivity labels are part of Microsoft Purview Information Protection. They allow organizations to classify and protect their content based on its sensitivity level. Each label can apply a set of protection settings, including:
 
