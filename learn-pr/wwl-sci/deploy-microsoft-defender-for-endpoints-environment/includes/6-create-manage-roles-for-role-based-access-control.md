@@ -1,6 +1,9 @@
 The following steps guide you on how to create roles in the Microsoft Defender portal. It assumes that you have already created Microsoft Entra user groups.
 
-1. Access the Microsoft Defender portal using an account with a Security administrator or Global administrator role assigned.
+> [!IMPORTANT]
+> Microsoft recommends that you use roles with the fewest permissions. This helps improve security for your organization. Global Administrator is a highly privileged role that should be limited to emergency scenarios when you can't use an existing role.
+
+1. Access the Microsoft Defender portal using an account the Security administrator role assigned.
 1. In the navigation pane, select **Settings** then select **Endpoints**. Under the **Permissions** category, select **Roles**.
 1. Select the **Turn on roles** button.
 1. Select **+ Add item**.
@@ -8,7 +11,6 @@ The following steps guide you on how to create roles in the Microsoft Defender p
 1. Select **Next** to assign the role to a Microsoft Entra Security group.
 1. Use the filter to select the Microsoft Entra group that you would like to add this role to.
 1. Select **Save**.
-
 
 > [!IMPORTANT]
 > After creating roles, you'll need to create a device group and provide access to the device group by assigning it to a role that you just created.

@@ -3,7 +3,7 @@ uid: learn.wwl.implement-non-relational-data-model
 metadata:
   title: Implement a non-relational data model
   description: "Implement a non-relational data model"
-  ms.date: 04/16/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: module
@@ -44,4 +44,4 @@ units:
 - learn.wwl.implement-non-relational-data-model.knowledge-check
 - learn.wwl.implement-non-relational-data-model.summary
 badge:
-  uid: learn.wwl.implement-non-relational-data-model.badge
+  uid: learn.wwl.implement-non-relational-data-model.badge

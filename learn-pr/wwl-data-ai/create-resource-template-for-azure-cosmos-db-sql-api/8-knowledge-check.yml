@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api.knowledge-check
-title: Module assessment
+title: Knowledge check
 metadata:
-  title: Module assessment
+  title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/18/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -13,7 +13,7 @@ labModal: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "Which property should you set, in Bicep, to establish a relationship between a container and its corresponding database?"
+  - content: "Which property should be set in Bicep to establish a relationship between a container and its corresponding database?"
     choices:
     - content: "``name``"
       isCorrect: false
@@ -24,7 +24,7 @@ quiz:
     - content: "``parent``"
       isCorrect: true
       explanation: "Correct. The ``parent`` property establishes a relationship between two resources in Bicep."
-  - content: "Which command should you use to deploy a Bicep or JSON template to Azure Resource Manager?"
+  - content: "Which command should be used to deploy a Bicep or JSON template to Azure Resource Manager?"
     choices:
     - content: "``az deployment group create``"
       isCorrect: true
@@ -35,14 +35,14 @@ quiz:
     - content: "``az bicep deploys``"
       isCorrect: false
       explanation: "Incorrect. The ``az bicep`` command group only contains commands relevant to building and decompiling Bicep files."
-  - content: "You have an Azure Cosmos DB for NoSQL account name **adventureworksllc**, a database named **cosmicworks**, and a container named **products**. In a JSON Azure Resource Manager template, how do you specify the **name** property of this resource?"
+  - content: "The sales team has an Azure Cosmos DB for NoSQL account name **adventureworksllc**, a database named **cosmicworks**, and a container named **products**. In a JSON Azure Resource Manager template, how does the team specify the **name** property of this resource?"
     choices:
     - content: "``products``"
       isCorrect: false
-      explanation: "Incorrect. The ``products`` name won't uniquely and correctly identify this resource."
+      explanation: "Incorrect. The ``products`` name doesn't uniquely and correctly identify this resource."
     - content: "``adventureworksllc/cosmicworks/products``"
       isCorrect: true
       explanation: "Correct. The name of a container resource is defined in the ``<account>/<database>/<container>`` syntax."
     - content: "``databaseAccounts/adventureworksllc/sqlDatabases/cosmicworks/containers/products``"
       isCorrect: false
-      explanation: "Incorrect. The ``databaseAccounts/sqlDatabases/containers`` is used to define the resource type, not the name."
+      explanation: "Incorrect. The ``databaseAccounts/sqlDatabases/containers`` is used to define the resource type, not the name."

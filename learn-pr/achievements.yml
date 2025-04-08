@@ -5625,3 +5625,8 @@ achievements:
   title: Guided project langstons ant
   summary: This module will guide you through the steps required to develop your own Langston's Ant project. Your code will use interfaces to represent the functions the ants can perform.
   iconUrl: /training/achievements/guided-project-langstons-ant.svg
+- uid: learn.cosmos-db-java-app.badge
+  type: badge
+  title: Build a Java app with cloud-scale NoSQL Cosmos DB
+  summary: Learn how to build a Java-language database app to store and query data in Azure Cosmos DB.
+  iconUrl: /training/achievements/cosmos-db-java-app.svg

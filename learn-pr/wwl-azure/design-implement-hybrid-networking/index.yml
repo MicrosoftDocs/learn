@@ -1,11 +1,13 @@
 ### YamlMime:Module
 uid: learn.wwl.design-implement-hybrid-networking
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design and implement hybrid networking
   description: "You learn how to design and implement hybrid networking solutions such as Site-to-Site VPN connections, Point-to-Site VPN connections, Azure Virtual WAN, and Virtual WAN hubs."
-  ms.date: 01/09/2025
+  ms.date: 04/04/2025
   author: wwlpublish
-  ms.author: jileary
+  ms.author: cynthist
   ms.topic: module
   ms.collection: N/A
   ms.custom:

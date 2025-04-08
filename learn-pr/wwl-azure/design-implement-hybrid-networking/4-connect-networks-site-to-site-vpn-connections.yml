@@ -2,14 +2,30 @@
 uid: learn.wwl.design-implement-hybrid-networking.connect-networks-site-to-site-vpn-connections
 title: Connect networks with Site-to-site VPN connections
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Connect networks with Site-to-site VPN connections
   description: "Connect networks with Site-to-site VPN connections"
-  ms.date: 01/09/2025
+  ms.date: 04/04/2025
   author: wwlpublish
-  ms.author: jileary
+  ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 3
+durationInMinutes: 6
 content: |
   [!include[](includes/4-connect-networks-site-to-site-vpn-connections.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is a site-to-site VPN Gateway connection?"
+    choices:
+    - content: "A site-to-site VPN Gateway connection securely connects two networks."
+      isCorrect: true
+      explanation: "Correct. A site-to-site (S2S) VPN gateway connection lets you create a secure connection to your virtual network from another virtual network or a physical network."
+    - content: "A site-to-site VPN Gateway connection securely connects an individual client computer to a network."
+      isCorrect: false
+      explanation: "Incorrect. A **point-to-site** (P2S) VPN gateway connection lets you create a secure connection to your virtual network from an individual client computer."
+    - content: "A site-to-site VPN Gateway connection securely connects two individual computers."
+      isCorrect: false
+      explanation: "Incorrect. A site-to-site (S2S) VPN gateway connection doesn't connect two individual computers."

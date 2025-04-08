@@ -6,10 +6,10 @@ metadata:
   description: "Exercise - Explore Azure Databricks"
   ms.date: 08/05/2024
   author: wwlpublish
-  ms.author: theresai
+  ms.author: jamesh
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 30
 content: |
-  [!include[](includes/06-exercise-explore-databricks.md)]
+  [!include[](includes/06-exercise-explore-databricks.md)]

@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 03/20/2025
+  ms.date: 04/01/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -48,4 +48,4 @@ quiz:
       explanation: "Incorrect. The provider doesn't configure this option."
     - content: "Maintenance plan"
       isCorrect: false
-      explanation: "Incorrect. While you can configure backups, you can't configure maintenance plans."
+      explanation: "Incorrect. While you can configure backups, you can't configure maintenance plans."

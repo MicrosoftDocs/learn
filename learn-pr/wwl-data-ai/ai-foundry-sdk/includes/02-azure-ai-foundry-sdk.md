@@ -84,4 +84,4 @@ var projectClient = new AIProjectClient(connectionString, new DefaultAzureCreden
 ::: zone-end
 
 > [!TIP]
-> To access the project successfully, the Python code must be run in the context of an authenticated Azure session. For example, you could use the Azure command-line interface (CLI) `az-login`  command to sign in before running the code.
+> To access the project successfully, the code must be run in the context of an authenticated Azure session. For example, you could use the Azure command-line interface (CLI) `az-login`  command to sign in before running the code.
