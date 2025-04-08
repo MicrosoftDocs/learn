@@ -4,10 +4,12 @@ title: Exercise - Serialize and deserialize JavaScript Object Notation files
 metadata:
   title: Exercise - Serialize and deserialize JavaScript Object Notation files
   description: "Exercise - Serialize and deserialize JavaScript Object Notation files"
-  ms.date: 04/03/2025
+  ms.date: 04/08/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 30
 content: |
   [!include[](includes/7-exercise-serialize-deserialize-javascript-object-notation-files.md)]
