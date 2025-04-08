@@ -2,9 +2,11 @@
 uid: learn.wwl.implement-monitor-integration-of-enterprise-apps-for-sso.create-manage-application-collections
 title: Create and manage application collections
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create and manage application collections
   description: "Create and manage application collections"
-  ms.date: 12/16/2024
+  ms.date: 04/08/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit

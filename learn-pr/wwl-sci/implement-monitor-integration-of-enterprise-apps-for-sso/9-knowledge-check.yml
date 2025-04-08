@@ -1,10 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-monitor-integration-of-enterprise-apps-for-sso.knowledge-check
-title: Module assessment
+title: Knowledge check
 metadata:
-  title: Module assessment
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/16/2024
+  ms.date: 04/08/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit

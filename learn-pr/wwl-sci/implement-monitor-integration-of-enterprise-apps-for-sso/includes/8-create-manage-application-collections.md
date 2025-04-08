@@ -9,16 +9,16 @@ Admin collections are managed through the Azure portal. For example, if you assi
 3.  Under **Manage**, select **App Launchers**.
 4.  Select **New collection**.
     
-    
-     -  In the New collection page, enter a Name for the collection (we recommend not using "collection" in the name. Then enter a Description.
+   - In the New collection page, enter a Name for the collection (we recommend not using "collection" in the name. Then enter a Description.
+
 5.  Select the **Applications tab**. Select **+ Add application** to open the Add applications page.
     
-    
-     -  Select all the applications you want to add to the collection, or use the Search box to find applications.
+   - Select all the applications you want to add to the collection, or use the Search box to find applications.
+
 6.  When you're finished adding applications, select **Add**.
     
-    
-     -  The list of selected applications appears. You can use the arrows to change the order of applications in the list.
+   - The list of selected applications appears. You can use the arrows to change the order of applications in the list.
+
 7.  Select the **Owners tab**. Select **+ Add users and groups**, to open the Add users and groups page
 8.  Select the users or groups you want to assign ownership to.
 9.  When you're finished selecting users and groups, choose **Select**.
@@ -30,10 +30,10 @@ You can also use the [My Apps](https://myapps.microsoft.com) portal (`https://my
 
 Users access the My Apps portal to:
 
- -  Discover applications to which they have access
- -  Request new applications that the organization supports for self-service
- -  Create personal collections of applications
- -  Manage access to applications
+- Discover applications to which they have access
+- Request new applications that the organization supports for self-service
+- Create personal collections of applications
+- Manage access to applications
 
 By default, all applications are listed together on a single page. Collections can be used to group together related applications and present them on a separate tab, making them easier to find. For example, use collections to create logical groupings of applications for specific job roles, tasks, projects, and so on. Every application to which a user has access appears in the default Apps collection, but a user can remove applications from the collection.
 
