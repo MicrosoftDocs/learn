@@ -1,9 +1,9 @@
-Now that you have reviewed this module, you should be able to:
+You have finished this module, you should be able to:
 
 - Implement token customizations
 - Implement and configure consent settings
 - Integrate on-premises apps by using Microsoft Entra application proxy
-- Integrate custom SaaS apps for SSO
+- Integrate custom SaaS apps for SSO (single sign on)
 - Implement application user provisioning
 - Create and manage application collections
 - Monitor and audit access/sign-on to Microsoft Entra ID integrated enterprise applications

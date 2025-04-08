@@ -13,7 +13,7 @@ In complex deployments, organizations might have a need to restrict authenticati
 
 Conditional Access controls allow you to create policies that target specific use cases within your organization without affecting all users.
 
-For more information see the link in the resources at the end of this module.
+For more information, see the link in the resources at the end of this module.
 
 ## Customize Tokens for Microsoft Entra ID
 
