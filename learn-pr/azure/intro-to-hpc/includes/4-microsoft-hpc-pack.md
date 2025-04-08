@@ -1,4 +1,4 @@
-One of the key concepts of cloud computing is *Orchestration*. It refers to overseeing the deployment, running and monitoring of all the components of an application in the cluster.
+One of the key concepts of cloud computing is *Orchestration*. It refers to overseeing the deployment, running, and monitoring of all the components of an application in the cluster.
 
 Additionally, an orchestrator can perform other tasks like healing (managing errors), scaling, and logging. Orchestrators like the well-known Kubernetes or Mesos can access cloud cluster resources directly by virtualization.
 
@@ -75,20 +75,20 @@ There are two basic strategies that schedulers can use to determine which job to
 
 - **Shortest Job First:** Based on the execution time declared in the job script, the scheduler estimates the job execution time. The jobs are ranked in the ascending order of the execution time. While short jobs will start after a short waiting time, long running jobs (or at least jobs declared as such) might never actually start.
 
-- **Backfilling:** The scheduler maintains the concept of *First Come, First Serve* without preventing long running jobs from executing. The scheduler runs the job only when the first job in the queue can be executed. If otherwise, the scheduler goes through the rest of the queue to check whether another job can be executed without extending the waiting time of the first job in queue. If it finds such a job, the scheduler runs that job. Small jobs usually encounter short queue times.
+In addition, there is the practice of **Backfilling.** The scheduler maintains the concept of *First Come, First Serve* without preventing long running jobs from executing. The scheduler runs the job only when the first job in the queue can be executed. If otherwise, the scheduler goes through the rest of the queue to check whether another job can be executed without extending the waiting time of the first job in queue. If it finds such a job, the scheduler runs that job. Small jobs usually encounter short queue times.
 
 ### Workflow management
 
-- **Task pipelining:** Repeated operations such as tool usage and software process task sequence executions can be organized into a pipeline. Automating it can make the overall software and tool usage more efficient. It creates efficiencies by making the task itself faster and reducing the burden upon the knowledge worker for its management.
+**Task pipelining:** Repeated operations such as tool usage and software process task sequence executions can be organized into a pipeline. Automating it can make the overall software and tool usage more efficient. It creates efficiencies by making the task itself faster and reducing the burden upon the knowledge worker for its management.
 
-- **Task automation:** Automation can reduce the error rate of a process by eliminating variance in how it's performed. Pipelining and automation of a task can open the door for further process innovations like parallelization and cloud deployment.
+**Task automation:** Automation can reduce the error rate of a process by eliminating variance in how it's performed. Pipelining and automation of a task can open the door for further process innovations like parallelization and cloud deployment.
 
 ### Tools for workflow management
 
-- **Azure Batch:** Use Azure Batch to run large-scale, parallel, and high-performance computing (HPC) batch jobs efficiently in Azure. Azure Batch creates and manages a pool of compute nodes (virtual machines), installs the applications you want to run, and schedules jobs to run on the nodes. There's no cluster or job scheduler software to install, manage, or scale. Instead, you use Batch APIs and tools, command-line scripts, or the Azure portal to configure, manage, and monitor your jobs.
+**Azure Batch:** Use Azure Batch to run large-scale, parallel, and high-performance computing (HPC) batch jobs efficiently in Azure. Azure Batch creates and manages a pool of compute nodes (virtual machines), installs the applications you want to run, and schedules jobs to run on the nodes. There's no cluster or job scheduler software to install, manage, or scale. Instead, you use Batch APIs and tools, command-line scripts, or the Azure portal to configure, manage, and monitor your jobs.
 
 For full details on Azure Batch, including more capabilities and how it works, see [Azure Batch](/azure/batch).
 
-- **Azure CycleCloud:** Azure CycleCloud is an enterprise-friendly tool for orchestrating and managing High Performance Computing (HPC) environments on Azure. With CycleCloud, users can plan infrastructure for HPC systems, deploy familiar HPC schedulers, and automatically scale the infrastructure to run jobs efficiently at any scale. Through CycleCloud, users can create different types of file systems and mount them to the compute cluster nodes to support HPC workloads.
+**Azure CycleCloud:** Azure CycleCloud is an enterprise-friendly tool for orchestrating and managing High Performance Computing (HPC) environments on Azure. With CycleCloud, users can plan infrastructure for HPC systems, deploy familiar HPC schedulers, and automatically scale the infrastructure to run jobs efficiently at any scale. Through CycleCloud, users can create different types of file systems and mount them to the compute cluster nodes to support HPC workloads.
 
 For more information on Azure CycleCloud, see [Azure CycleCloud](/azure/cyclecloud).
