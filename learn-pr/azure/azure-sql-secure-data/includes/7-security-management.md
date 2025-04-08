@@ -2,13 +2,13 @@ After your Azure SQL Database is secured on the networking, authentication, and 
 
 ## Auditing
 
-Auditing can help you maintain regulatory compliance, understand database activity, and gain insight into discrepancies and anomalies that could indicate potential security violations. In this activity, you'll set up auditing at the server level, though it's also available at the database level.
+Auditing can help you maintain regulatory compliance, understand database activity, and gain insight into discrepancies and anomalies that could indicate potential security violations. In this activity, you set up auditing at the server level, though it's also available at the database level.
 
 As an alternative to SQL Server audit, Azure SQL Database has *Azure SQL auditing*. It's powered by SQL Server audit and, like SQL Server, it supports Audit Action Groups and Actions. The auditing feature tracks database and server events and writes events to an audit log in either Azure storage, Log Analytics, or to an Azure Event Hubs. If you point to an Azure Blob storage account, you can store and analyze your results in XEvents files. With Log Analytics, you unlock the ability to query your logs with Kusto Query Language (KQL) and take advantage of the Log Analytics auditing dashboards.
 
 ### Configure auditing
 
-In an earlier exercise for deploying SQL Database, you set up auditing at the server level, but it's also available at the database level. In a future exercise, you'll see how to access and utilize the files that are sent to Azure Blob storage, KQL, and the Log Analytics dashboards. 
+In an earlier exercise for deploying SQL Database, you set up auditing at the server level, but it's also available at the database level. In a future exercise, you see how to access and utilize the files that are sent to Azure Blob storage, KQL, and the Log Analytics dashboards. 
 
 Complete the following steps to set up a Log Analytics workspace:
 
@@ -29,7 +29,7 @@ Complete the following steps to set up a Log Analytics workspace:
 
     [!INCLUDE [](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)] 
 
-1. Select **Review + create**, wait until your inputs have been validated, and then select **Create**. Wait until the resource is deployed.
+1. Select **Review + create**, wait until your inputs are validated, and then select **Create**. Wait until the resource is deployed.
   
 1. Select **Go to resource**. The **Overview** pane for your Log Analytics workspace appears.
 
@@ -37,7 +37,7 @@ Complete the following steps to set up a Log Analytics workspace:
 
 1. On the menu, under **Security**, select **Auditing**. Review the options.
 
-    You can apply auditing at the server level, which applies to all databases within the Azure SQL Database logical server. If you also apply auditing at the database level (which you will do in this unit), both audits occur in parallel; one doesn't override the other.
+    You can apply auditing at the server level, which applies to all databases within the Azure SQL Database logical server. If you also apply auditing at the database level (which you do in this unit), both audits occur in parallel; one doesn't override the other.
 
 1. Select the slide toggle to **Enable Azure SQL Auditing**.
 
@@ -46,7 +46,7 @@ Complete the following steps to set up a Log Analytics workspace:
      - For **Storage Account**, from the dropdown list, select the account that starts with `sql` followed by a random string of letters and numbers.
      - Leave the **Storage Authentication Type** as the default **Storage Access Keys** option.
 
-   The `sql` storage account is used to collect XEvent log files, which are saved as a collection of blob files within a container named **sqldbauditlogs**. In a later activity, you'll review the container to learn how log files differ from Log Analytics.
+   The `sql` storage account is used to collect XEvent log files, which are saved as a collection of blob files within a container named **sqldbauditlogs**. In a later activity, you review the container to learn how log files differ from Log Analytics.
 
     > [!TIP]
     > If you don't see any storage accounts, create a new account. You might need to refresh your page after a couple minutes before it shows up.  
@@ -66,9 +66,9 @@ Complete the following steps to set up a Log Analytics workspace:
 
 1. Select **Save**.  
 
-    It may take a few minutes for the configuration to process.
+    It might take a few minutes for the configuration to process.
 
-You've now enabled auditing for a storage account and an Azure Log Analytics workspace. Later, you'll dive deeper into the auditing capabilities in Azure SQL. You'll see how to analyze the audit logs to view all the changes you've made throughout the module, as well as some other interesting use cases.  
+Now that you completed these steps, auditing is enabled for a storage account and an Azure Log Analytics workspace. Later, you dive deeper into the auditing capabilities in Azure SQL, and see how to analyze the audit logs. Allowing you to view all the changes you made throughout the module, and some other interesting use cases.  
 
 ## Ledger for Azure SQL Database
 
@@ -87,7 +87,7 @@ Both updatable ledger tables and append-only ledger tables provide tamper-eviden
 
 In the exercise to create the Azure SQL Database, we added a database called `myLedgerDatabase` and created a table called `Account.Balance`. In this exercise, we're going to insert data, make updates to the data, and query the history table and ledger views to see the tracking that's taking place and the relationship between the tables.
 
-1. Open SSMS and connect to your Azure SQL Database logical server.
+1. Open SQL Server Management Studio (SSMS) and connect to your Azure SQL Database logical server.
 1. Right-click the `myLedgerDatabase` database, then select **New Query**.
 
 1. Insert the name `Nick Jones` as a new customer with an opening balance of $50.
@@ -120,10 +120,10 @@ In the exercise to create the Azure SQL Database, we added a database called `my
     FROM [Account].[Balance];  
    ```
 
-   In the results window, you'll first see the values inserted by your T-SQL commands, along with the system metadata that's used for data lineage purposes.
+   In the results window, you first see the values inserted by your T-SQL commands, along with the system metadata that's used for data lineage purposes.
 
-   - The `ledger_start_transaction_id` column notes the unique transaction ID associated with the transaction that inserted the data. Because `John`, `Joe`, and `Mary` were inserted by using the same transaction, they share the same transaction ID.
-   - The `ledger_start_sequence_number` column notes the order by which values were inserted by the transaction.
+   - The `ledger_start_transaction_id` column notes the unique transaction ID associated with the transaction that inserted the data. `John`, `Joe`, and `Mary` share the same transaction ID because they're inserted using the same transaction.
+   - The `ledger_start_sequence_number` column notes the order in which the transaction inserted the values.
 
 1. Update `Nick`'s balance from `50` to `100`.
 
@@ -132,7 +132,7 @@ In the exercise to create the Azure SQL Database, we added a database called `my
    WHERE [CustomerID] = 1;
    ```
 
-1. View the `[Account].[Balance]` ledger view, along with the transaction ledger system view to identify users that made the changes. Select **Execute** to run the query.
+1. To identify the users that made changes, view the `[Account].[Balance]` ledger view, along with the transaction ledger system view. Select **Execute** to run the query.
 
     ```sql
   	SELECT
@@ -188,11 +188,11 @@ Microsoft Defender for Cloud is a unified package for advanced SQL security capa
 
 #### Vulnerability Assessment
 
-At the highest level, SQL Vulnerability Assessment is a scanning service that provides visibility into your security state and provides actionable steps to address any potential concerns. When you configure periodic recurring scans, you're enabling the service to scan your databases every seven days and check for any vulnerabilities. You can then choose to send those reports to the admins, subscription owners, or anyone else who might need to be notified of changes. For this service to operate, you have to specify a storage account where the results will be stored.
+At the highest level, SQL Vulnerability Assessment is a scanning service that provides visibility into your security state and provides actionable steps to address any potential concerns. When you configure periodic recurring scans, you're enabling the service to scan your databases every seven days and check for any vulnerabilities. You can then choose to send those reports to the admins, subscription owners, or anyone else who might need to be notified of changes. For this service to operate, you have to specify a storage account where the results are stored.
 
 #### Advanced Threat Protection
 
-With Advanced Threat Protection, you can detect and respond to potential threats as they occur by receiving security alerts on anomalous activities. Advanced Threat Protection applies advanced monitoring and machine-learning technologies to detect whether any of the following threats have occurred:
+With Advanced Threat Protection, you can detect and respond to potential threats as they occur by receiving security alerts on anomalous activities. Advanced Threat Protection applies advanced monitoring and machine-learning technologies to detect whether any of the following threats occurred:
 
 - SQL injection
 - SQL injection vulnerability
@@ -201,7 +201,7 @@ With Advanced Threat Protection, you can detect and respond to potential threats
 - Brute force attempt
 - Anomalous client login
 
-In the next two exercises, you'll dive into the capabilities and scenarios that Microsoft Defender for Cloud, and Azure SQL in general, enables and protects against.
+In the next two exercises, you dive into the capabilities and scenarios that Microsoft Defender for Cloud, and Azure SQL in general, enables and protects against.
 
 #### Row-level Security
 
@@ -209,7 +209,7 @@ Row-Level Security enables you to use group membership or execution context to c
 
 Row-Level Security (RLS) helps you implement restrictions on data row access. For example, you can ensure that workers access only those data rows that are pertinent to their department. Another example is to restrict customers' data access to only the data relevant to their company.
 
-The access restriction logic is located in the database tier rather than away from the data in another application tier. The database system applies the access restrictions every time that data access is attempted from any tier. This makes your security system more reliable and robust by reducing the surface area of your security system.
+The access restriction logic is located in the database tier rather than away from the data in another application tier. The database system applies the access restrictions every time that data access is attempted from any tier, making your security system more reliable and robust by reducing the surface area of your security system.
 
 RLS supports two types of security predicates.
 
