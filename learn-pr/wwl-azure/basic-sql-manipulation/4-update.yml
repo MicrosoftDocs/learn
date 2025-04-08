@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl-azure.basic-sql-manipulation.insert
-title: INSERT command
+uid: learn.wwl-azure.basic-sql-manipulation.update
+title: UPDATE command
 metadata:
-  title: INSERT command
+  title: UPDATE command
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 4/8/2025
   author: milenak
@@ -25,7 +25,7 @@ metadata:
   ms.service: azure-database-postgresql
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-insert.md)]
+  [!include[](includes/4-update.md)]
 ###########################################################################
 ###
 ### Optional end-of-unit knowledge check
