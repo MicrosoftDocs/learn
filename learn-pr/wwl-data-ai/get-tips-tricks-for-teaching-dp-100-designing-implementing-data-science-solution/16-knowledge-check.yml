@@ -1,13 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.knowledge-check
-title: Module assessment
+title: Knowledge check
 metadata:
-  title: Module assessment
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/23/2024
+  ms.date: 04/07/2025
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/16-knowledge-check.md)]
@@ -46,4 +50,4 @@ quiz:
       explanation: "Feedback: Incorrect: The four types of compute targets that Azure Machine Learning supports are compute instance, compute cluster, Kubernetes cluster, and attached compute."
     - content: "Compute instance, compute cluster, Kubernetes cluster, and attached compute"
       isCorrect: true
-      explanation: "Feedback: Correct. The four types of compute targets that Azure Machine Learning supports are compute instance, compute cluster, Kubernetes cluster, and attached compute."
+      explanation: "Feedback: Correct. The four types of compute targets that Azure Machine Learning supports are compute instance, compute cluster, Kubernetes cluster, and attached compute."

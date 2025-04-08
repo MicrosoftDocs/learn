@@ -5,7 +5,7 @@ metadata:
   description: Explore Azure Databricks
   ms.date: 08/05/2024
   author: wwlpublish
-  ms.author: theresai
+  ms.author: jamesh
   ms.topic: module
   ms.service: azure
 title: Explore Azure Databricks
@@ -36,4 +36,4 @@ units:
 - learn.wwl.explore-azure-databricks.summary
 badge:
   uid: learn.wwl.explore-azure-databricks.badge
-
+
