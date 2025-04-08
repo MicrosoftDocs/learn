@@ -27,17 +27,17 @@ The following tables show requirements for specific attributes and claims that m
 
 Required attributes for the SAML 2.0 response from the IdP:
 
-| **Attribute**            | **Value**                                                                                    |
-| ------------------------ | -------------------------------------------------------------------------------------------- |
-| AssertionConsumerService | `https://login.microsoftonline.com/login.srf`                                                |
-| Audience                 | `urn:federation:MicrosoftOnline`                                                             |
+| **Attribute**            | **Value**                                |
+| ------------------------ | ---------------------------------------- |
+| AssertionConsumerService | `https://login.microsoftonline.com/login.srf` |
+| Audience                 | `urn:federation:MicrosoftOnline`         |
 | Issuer                   | The issuer URI of the partner IdP, for example `https://www.example.com/exk10l6w90DHM0yi...` |
 
 Required claims for the SAML 2.0 token issued by the IdP:
 
-| **Attribute** | **Value**                                                             |
-| ------------- | --------------------------------------------------------------------- |
-| NameID Format | `urn:oasis:names:tc:SAML:2.0:nameid-format:persistent`                |
+| **Attribute** | **Value**                                |
+| ------------- | ---------------------------------------- |
+| NameID Format | `urn:oasis:names:tc:SAML:2.0:nameid-format:persistent` |
 | emailaddress  | `https://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress` |
 
 ## WS-Federation configuration
@@ -52,16 +52,16 @@ The following tables show requirements for specific attributes and claims that m
 
 Required attributes in the WS-Fed message from the IdP:
 
-| **Attribute**            | **Value**                                                                                    |
-| ------------------------ | -------------------------------------------------------------------------------------------- |
-| PassiveRequestorEndpoint | `https://login.microsoftonline.com/login.srf`                                                |
-| Audience                 | `urn:federation:MicrosoftOnline`                                                             |
+| **Attribute**            | **Value**                                |
+| ------------------------ | ---------------------------------------- |
+| PassiveRequestorEndpoint | `https://login.microsoftonline.com/login.srf` |
+| Audience                 | `urn:federation:MicrosoftOnline`         |
 | Issuer                   | The issuer URI of the partner IdP, for example `https://www.example.com/exk10l6w90DHM0yi...` |
 
 Required claims for the WS-Fed token issued by the IdP:
 
-| **Attribute** | **Value**                                                             |
-| ------------- | --------------------------------------------------------------------- |
+| **Attribute** | **Value**                                |
+| ------------- | ---------------------------------------- |
 | ImmutableID   | `https://schemas.microsoft.com/LiveID/Federation/2008/05/ImmutableID` |
 | emailaddress  | `https://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress` |
 
@@ -81,7 +81,7 @@ When you send an invitation to Google Gmail users, the guest users should access
 
 Guest users who see a *header too long* error can clear their cookies or open a private or incognito window and try to sign in again.
 
-:::image type="content" source="../media/google-sign-in-3086918d-4b07f997.png" alt-text="Screenshot of shows the Google sign-in page. Users have to sign-in for access.":::
+:::image type="content" source="../media/google-sign-in.png" alt-text="Screenshot of shows the Google sign-in page. Users have to sign-in for access.":::
 
 
 ## Deprecation of WebView sign-in support
@@ -125,34 +125,34 @@ First, create a new project in the Google Developers Console to obtain a client 
 1.  Go to the Google APIs at [https://console.developers.google.com](https://console.developers.google.com/), and sign in with your Google account. We recommend that you use a shared team Google account.
 2.  Accept the terms of service if you're prompted to do so.
 3.  Create a new project: On the dashboard, select **Create Project**, give the project a name (for example, **Microsoft Entra B2B**), and then select **Create**:
-    
+
    :::image type="content" source="../media/google-new-project.png" alt-text="Screenshot of the New Project page within the Google developers page.":::
-    
+​    
 4.  On the **APIs and Services** page, select **View** under your new project.
 5.  Select **Go to APIs overview** on the APIs card. Select **OAuth consent screen**.
 6.  Select **External**, and then select **Create**.
 7.  On the **OAuth consent screen**, enter an **Application name**:
-    
+
    :::image type="content" source="../media/google-oauth-consent-screen.png" alt-text="Screenshot of the Google OAuth consent screen. Users have to confirm their usage.":::
-    
+​    
 8.  Scroll to the **Authorized domains** section and enter **microsoftonline.com**:
-    
+
    :::image type="content" source="../media/google-oauth-authorized-domains.png" alt-text="Screenshot of the Authorized domains section, showing with Google domains are valid.":::
-    
+​    
 9.  Select **Save**.
-10. Select **Credentials**. On the **Create credentials** menu, select **OAuth client ID**:
-    
+10.  Select **Credentials**. On the **Create credentials** menu, select **OAuth client ID**:
+
    :::image type="content" source="../media/google-api-credentials.png" alt-text="Screenshot of the Google APIs Create credentials menu. Configure your credentials here.":::
-    
+​    
 11. Under **Application type**, select **Web application**. Give the application a suitable name, like **Microsoft Entra B2B**. Under **Authorized redirect URIs**, enter the following URIs:
-    
+
    -  `https://login.microsoftonline.com`
    -  `https://login.microsoftonline.com/te/ tenant ID /oauth2/authresp` (where **tenant ID** is your tenant ID in Azure)
-    
+
    :::image type="content" source="../media/google-create-oauth-client-id.png" alt-text="Screenshot of the Authorized redirect URIs section. Where do users go to validate authorization.":::
-    
+​    
 12. Select **Create**. Copy the client ID and client secret. You'll use them when you add the identity provider in the Azure portal.
-    
+
    :::image type="content" source="../media/google-auth-client-id-secret.png" alt-text="Screenshot of the OAuth client ID and client secret. Set your access secret.":::
 
 ## Step 2: Configure Google federation in Microsoft Entra ID
@@ -165,9 +165,9 @@ You'll now set the Google client ID and client secret. You can use the Azure por
 2.  Select **External Identities**.
 3.  Select **All identity providers**, and then select the **Google** button.
 4.  Enter the client ID and client secret you obtained earlier. Select **Save**:
-    
+
    :::image type="content" source="../media/google-identity-provider.png" alt-text="Screenshot of Add Google identity provider page. You have to enter the Client ID and Client secret from previous steps.":::
-    
+​    
 ## How do I remove Google federation?
 
 You can delete your Google federation setup. If you do so, Google guest users who have already redeemed their invitation won't be able to sign in. But you can give them access to your resources again by deleting them from the directory and reinviting them.
@@ -178,9 +178,9 @@ You can delete your Google federation setup. If you do so, Google guest users wh
 2.  Select **External Identities**.
 3.  Select **All identity providers**.
 4.  On the **Google** line, select the ellipsis button (**...**) and then select **Delete**.
-    
+
    :::image type="content" source="../media/google-social-identity-providers.png" alt-text="Screenshot of the Delete the Google identity provider page. Use the ellipsis at the end to open the delete command.":::
-    
+​    
 5.  Select **Yes** to confirm the deletion.
 
 ## Add Facebook as an identity provider for external identities
@@ -209,15 +209,15 @@ To use a Facebook account as an identity provider, you need to create an applica
 7.  Choose a **Category**, for example Business and Pages. This value is required by Facebook, but not used for Microsoft Entra ID.
 8.  At the bottom of the page, select **Add Platform**, and then select **Website**.
 9.  In **Site URL**, enter the appropriate URL (noted above).
-10. In **Privacy Policy URL**, enter the URL for the page where you maintain privacy information for your application, for example https://www.contoso.com.
-11. Select **Save Changes**.
-12. At the top of the page, copy the value of **App ID**.
-13. Select **Show** and copy the value of **App Secret**. You use both of them to configure Facebook as an identity provider in your tenant. **App Secret** is an essential security credential.
-14. Select the plus sign next to **PRODUCTS**, and then select **Set up** under **Facebook Login**.
-15. Under **Facebook Login**, select **Settings**.
-16. In **Valid OAuth redirect URIs**, enter the appropriate URL (noted above).
-17. Select **Save Changes** at the bottom of the page.
-18. To make your Facebook application available to Microsoft Entra ID, select the Status selector at the top right of the page and turn it **On** to make the Application public, and then select **Switch Mode**. At this point, the Status should change from **Development** to **Live**.
+10.  In **Privacy Policy URL**, enter the URL for the page where you maintain privacy information for your application, for example https://www.contoso.com.
+11.  Select **Save Changes**.
+12.  At the top of the page, copy the value of **App ID**.
+13.  Select **Show** and copy the value of **App Secret**. You use both of them to configure Facebook as an identity provider in your tenant. **App Secret** is an essential security credential.
+14.  Select the plus sign next to **PRODUCTS**, and then select **Set up** under **Facebook Login**.
+15.  Under **Facebook Login**, select **Settings**.
+16.  In **Valid OAuth redirect URIs**, enter the appropriate URL (noted above).
+17.  Select **Save Changes** at the bottom of the page.
+18.  To make your Facebook application available to Microsoft Entra ID, select the Status selector at the top right of the page and turn it **On** to make the Application public, and then select **Switch Mode**. At this point, the Status should change from **Development** to **Live**.
 
 ## Configure a Facebook account as an identity provider
 
@@ -231,9 +231,9 @@ Now you'll set the Facebook client ID and client secret, either by entering it i
 4.  Select **All identity providers**, then select **Facebook**.
 5.  For the **Client ID**, enter the **App ID** of the Facebook application that you created earlier.
 6.  For the **Client secret**, enter the **App Secret** that you recorded.
-    
+
    :::image type="content" source="../media/add-social-identity-provider-page.png" alt-text="Screenshot of the Add social identity provider page. Pick your social media provider.":::
-    
+​    
 7.  Select **Save**.
 
 ## How do I remove Facebook federation?
