@@ -5630,3 +5630,8 @@ achievements:
   title: Build a Java app with cloud-scale NoSQL Cosmos DB
   summary: Learn how to build a Java-language database app to store and query data in Azure Cosmos DB.
   iconUrl: /training/achievements/cosmos-db-java-app.svg
+- uid: learn.azure-sql-secure-data.badge
+  type: badge
+  title: Secure your data with Azure SQL
+  summary: Ensuring the security and compliance of data is always a top priority. In this module, you learn how to use Azure SQL to secure your data, configure logins and users, use tools and techniques for monitoring security, ensure that your data meets industry and regulatory compliance standards, and take advantage of the extra benefits and intelligence that Azure provides. We also cover some of the networking considerations for securing SQL.
+  iconUrl: /training/achievements/azure-sql-secure-data.svg
