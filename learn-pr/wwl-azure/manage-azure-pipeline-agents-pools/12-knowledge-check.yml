@@ -2,6 +2,7 @@
 uid: learn.wwl.manage-azure-pipeline-agents-pools.knowledge-check
 title: Module assessment
 metadata:
+  hidden_question_numbers: ["4025D253_100","4025D253_132"]
   ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
