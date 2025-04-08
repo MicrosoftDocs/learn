@@ -18,16 +18,12 @@ The highly secure cloud storage is available to customers at a massive scale. It
 - **Azure NetApp Files:** Access large amounts of I/O with a submillisecond latency delivered as an Azure service natively within an Azure datacenter.
 - **Cray ClusterStor:** A Lustre-based, bare-metal HPC storage solution that's fully integrated with Azure for a high throughput storage solution.
 
-![Diagram of Azure storage.](../media/7-azure-storage.png)
-
 ## Networking
 
 Azure allows you to create private virtual networks in the cloud, which simplifies the network architecture and secures the connection between endpoints by disabling the data exposure to the public internet.
 
 - Establish private, secure tunnels for hybrid cloud connectivity using Azure ExpressRoute.
 - Take advantage of Linux remote direct memory access (RDMA) with InfiniBand for message passing interface (MPI) workloads within your datacenter. The InfiniBand enabled HB-series and N-series VMs are designed to provide the best HPC performance, MPI scalability, and cost efficiency for HPC workloads. RDMA capable HB-series and N-series VMs communicate over the low latency and high bandwidth InfiniBand network.
-
-![Diagram of Azure networking.](../media/8-azure-networking.png)
 
 ## Visualization
 
