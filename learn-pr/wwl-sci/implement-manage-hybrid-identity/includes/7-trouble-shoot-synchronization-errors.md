@@ -78,7 +78,7 @@ The most common reason for the InvalidSoftMatch error is two objects with differ
 Sync error reports within Microsoft Entra Connect Health for sync are updated every 30 minutes and include the errors from the latest synchronization attempt.
 
 > [!NOTE]
-> ImmutableId, by definition, shouldn't change in the lifetime of the object. If Microsoft Entra Connect wasn't configured with some of the scenarios in mind from the above list, you could end up in a situation where Microsoft Entra Connect calculates a different value of the SourceAnchor for the AD object that represents the same entity (same user/group/contact etc) that has an existing Microsoft Entra Object that you wish to continue using.
+> ImmutableId, by definition, shouldn't change in the lifetime of the object. If Microsoft Entra Connect wasn't configured with some of the scenarios in mind from the above list, you could end up in a situation where Microsoft Entra Connect calculates a different value of the SourceAnchor for the AD object that represents the same entity (same user/group/contact etc.,) that has an existing Microsoft Entra Object that you wish to continue using.
 
 ### ObjectTypeMismatch
 
