@@ -5630,3 +5630,8 @@ achievements:
   title: Build a Java app with cloud-scale NoSQL Cosmos DB
   summary: Learn how to build a Java-language database app to store and query data in Azure Cosmos DB.
   iconUrl: /training/achievements/cosmos-db-java-app.svg
+- uid: learn.azure-sql-performance.badge
+  type: badge
+  title: Deliver consistent performance with Azure SQL
+  summary: Azure SQL has the capabilities and tools to allow you to deliver consistent performance for your application. In this module, you will learn key aspects of configuration, monitoring, and intelligent performance for Azure SQL.
+  iconUrl: /training/achievements/azure-sql-performance.svg

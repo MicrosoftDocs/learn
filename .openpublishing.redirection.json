@@ -46493,6 +46493,61 @@
       "source_path": "learn-pr/azure/build-cosmos-db-java-app/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-performance/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/monitor-optimize-operational-resources-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-performance/2-performance-capabilities.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/monitor-optimize-operational-resources-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-performance/3-configure-maintain-performance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/monitor-optimize-operational-resources-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-performance/4-monitor-troubleshoot-performance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/monitor-optimize-operational-resources-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-performance/5-exercise-monitor-troubleshoot-performance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/monitor-optimize-operational-resources-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-performance/6-accelerate-tune-performance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/monitor-optimize-operational-resources-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-performance/7-exercise-scale-performance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/monitor-optimize-operational-resources-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-performance/8-exercise-optimize-app-performance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/monitor-optimize-operational-resources-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-performance/9-intelligent-performance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/monitor-optimize-operational-resources-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-performance/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/monitor-optimize-operational-resources-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-performance/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/monitor-optimize-operational-resources-sql-server/",
+      "redirect_document_id": false
     }
  ]
 }
