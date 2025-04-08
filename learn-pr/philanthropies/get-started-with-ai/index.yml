@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.philanthropies.get-started-with-ai
+
+metadata:
+  title: Get started with AI
+  description: Learn the best practices for interacting with AI tools, including how to effectively prompt AI, summarize articles, and create images. This module provides you with basic AI terms and practical skills to enhance your understanding and usage of artificial intelligence. Perfect for beginners aiming to improve their AI capabilities.
+  ms.date: 04/08/2025
+  author: CourtneyHMicrosoft
+  ms.author: cohodge
+  ms.topic: module
+  ms.service: artificial-intelligence
+
+title: Get started with AI
+summary: This module covers basic AI terms and prompting best practices. You'll learn to summarize articles and create images using AI tools.
+
+abstract: |
+  - Define basic AI terms
+  - Demonstrate prompting best Practices when interacting with AI tools
+  - Summarize articles Using AI tools
+  - Create images using AI tools
+prerequisites: None
+products:
+  - ms-copilot
+iconUrl: /training/achievements/get-started-with-ai.svg
+levels:
+- beginner
+roles:
+- student
+units:
+- learn.philanthropies.get-started-with-ai.introduction
+- learn.philanthropies.get-started-with-ai.basic-ai-terms
+- learn.philanthropies.get-started-with-ai.prompting-best-practices
+- learn.philanthropies.get-started-with-ai.summarizing-article
+- learn.philanthropies.get-started-with-ai.creating-images
+- learn.philanthropies.get-started-with-ai.knowledge-check
+- learn.philanthropies.get-started-with-ai.summary
+badge:
+  uid: learn.philanthropies.get-started-with-ai.badge
