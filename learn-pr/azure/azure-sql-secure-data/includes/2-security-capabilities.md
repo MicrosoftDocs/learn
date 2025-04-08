@@ -81,7 +81,7 @@ Aliases:    aw-server.database.windows.net
 Under the nonauthoritative answer, there are some important things to look at:  
 
 - **Name**: The endpoint starting with `cr2` is part of the public DNS hierarchy. Without getting too much into the hierarchy, let's say that `cr2` is *control ring 2* and that there are multiple data "slices" below it.  
-- **Address**: The IP address returned here should match the public IP address of your Azure VM. Although the final hop of a tool such as SSMS might be through your virtual machine's (VMs) private IP address, your VMs public IP address is still being used to connect in some capacity.  
+- **Address**: The IP address returned here should match the public IP address of your Azure VM. Although the final hop of a tool such as SSMS might be through the private IP address of your VM, the public IP address of your VM is still being used to connect in some capacity.
 - **Aliases**: Aliases are various points within the DNS hierarchy; in this case, the specific data "slice" and endpoint you connect to.  
 
 > [!NOTE]
