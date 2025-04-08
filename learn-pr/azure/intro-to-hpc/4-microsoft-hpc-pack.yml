@@ -7,7 +7,7 @@ metadata:
   author: padmalathas
   ms.author: padmalathas
   ms.topic: unit
-title: Microsoft HPC Pack
+title: Deploy and Manage HPC Systems
 durationInMinutes: 10
 content: |
   [!include[](includes/4-microsoft-hpc-pack.md)]
