@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-hpc.4-microsoft-hpc-pack
 metadata:
-  title: Deploy and Manage HPC Systems
+  title: Orchestrate, Deploy, and Manage HPC Systems
   description: In this unit, you learn how to deploy, manage, and orchsetrate HPC systems as well as review best practices, task scheduling, and workflow management guidance.
   ms.date: 04/07/2025
   author: padmalathas
   ms.author: padmalathas
   ms.topic: unit
-title: Deploy and Manage HPC Systems
+title: Orchestrate, Deploy, and Manage HPC Systemss
 durationInMinutes: 10
 content: |
   [!include[](includes/4-microsoft-hpc-pack.md)]
