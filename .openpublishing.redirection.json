@@ -46493,6 +46493,46 @@
       "source_path": "learn-pr/azure/build-cosmos-db-java-app/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-model-ai-vision-image-classification/index.md",
+      "redirect_url": "/training/modules/classify-images/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-model-ai-vision-image-classification/3-create-custom-project.md",
+      "redirect_url": "/training/modules/classify-images/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-model-ai-vision-image-classification/5-exercise.md",
+      "redirect_url": "/training/modules/classify-images/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-model-ai-vision-image-classification/1-introduction.md",
+      "redirect_url": "/training/modules/classify-images/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-model-ai-vision-image-classification/6-knowledge-check.md",
+      "redirect_url": "/training/modules/classify-images/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-model-ai-vision-image-classification/4-label-train-custom-model.md",
+      "redirect_url": "/training/modules/classify-images/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-model-ai-vision-image-classification/7-summary.md",
+      "redirect_url": "/training/modules/classify-images/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-model-ai-vision-image-classification/2-understand-custom-model-types.md",
+      "redirect_url": "/training/modules/classify-images/",
+      "redirect_document_id": false
     }
- ]
+  ]
 }
