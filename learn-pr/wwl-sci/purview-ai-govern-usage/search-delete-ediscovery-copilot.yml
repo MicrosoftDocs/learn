@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-m365.wwl.purview-ai-govern-usage.search-delete-ediscovery-copilot
+title: Investigate and delete Copilot interactions with Microsoft Purview eDiscovery
+metadata:
+  title: Investigate and delete Copilot interactions with Microsoft Purview eDiscovery
+  description: "Investigate and delete Copilot interactions with Microsoft Purview eDiscovery"
+  ms.date: 04/09/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/search-delete-ediscovery-copilot.md)]
