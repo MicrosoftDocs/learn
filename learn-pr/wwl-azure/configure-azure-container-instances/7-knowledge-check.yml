@@ -2,6 +2,7 @@
 uid: learn.wwl.configure-azure-container-instances.knowledge-check
 title: Module assessment
 metadata:
+  hidden_question_numbers: ["AB864330_46","AB864330_51","AB864330_59","AB864330_79","AB864330_95"]
   ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
