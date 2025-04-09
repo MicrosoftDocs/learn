@@ -28,7 +28,6 @@ roles:
 products: 
   - ai-vision
 units:
-- learn.wwl.custom-model-ai-vision-image-classification.understand-custom-model-types
 badge:
   uid: learn.wwl.custom-model-ai-vision-image-classification.badge
 
