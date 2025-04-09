@@ -2,10 +2,9 @@
 uid: learn.wwl.configure-azure-files-file-sync.knowledge-check
 title: Knowledge check
 metadata:
-  ai_generated_module_assessment: true
-  title: Module assessment
   adobe-target: true
   prefetch-feature-rollout: true
+  title: Knowledge check
   description: "Knowledge check"
   ms.date: 04/03/2025
   author: wwlpublish
