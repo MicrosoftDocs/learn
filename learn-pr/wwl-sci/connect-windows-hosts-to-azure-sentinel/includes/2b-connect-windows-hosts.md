@@ -1,6 +1,6 @@
-The Security Events via Legacy Agent connector lets you stream all security events from your Windows systems (servers and workstations, physical and virtual) to your Microsoft Sentinel workspace. This enables you to view Windows security events in your dashboards, use them to create custom alerts, and rely on them to improve your investigations. You now have more insight into your organization's network and expanding your security operations capabilities. You can select which events to stream from among the following sets:
+The *Windows Security Events via AMA* connector lets you stream all security events from the Windows machines connected to your Microsoft Sentinel workspace using the Windows agent. This connection enables you to view dashboards, create custom alerts, and improve investigation. These events give you more insight into your organization’s network and improves your security operation capabilities.
 
-- All events - All Windows security and AppLocker events.
+- All Security Events - All Windows security and AppLocker events.
 
 - Common - A standard set of events for auditing purposes. A full user audit trail is included in this set. For example, it contains both user sign-in and user sign-out events (event IDs 4624, 4634). There are also auditing actions such as security group changes, key domain controller Kerberos operations, and other types of events in line with accepted best practices.
 
@@ -8,7 +8,11 @@ The Security Events via Legacy Agent connector lets you stream all security even
 
 - Minimal - A small set of events that might indicate potential threats. This set doesn't contain a full audit trail. It covers only events that might indicate a successful breach and other significant events with low rates of occurrence. For example, it contains successful and failed user logons (event IDs 4624, 4625). Still, it doesn't contain sign-out information (4634), which, while important for auditing, isn't meaningful for breach detection and has a relatively high volume. Most of this set's data volume comprises sign-in events and process creation events (event ID 4688).
 
-- None - No security or AppLocker events. (This setting is used to disable the connector.)
+- Custom - Custom allows you to specify other logs or to filter events using XPath queries.
+
+    >**Note:** Query the *SecurityEvents* table in Microsoft Sentinel *Logs* to see the events collected by the connector.
+
+- The *Windows Security Events via AMA* connector uses Data Collection Rules (DCRs) to define the data to collect, and installs the Azure Monitor Agent (AMA) extension on the selected machines.
 
 :::image type="content" source="../media/security-events-connector.png" alt-text="Screenshot of the Security Events Connector Page." lightbox="../media/security-events-connector.png":::
 
@@ -18,40 +22,68 @@ To view the connector page:
 
 1. Select **Data connectors page**.
 
-1. Select **Security Events via Legacy Agent**.
+1. Select **Windows Security Events via AMA**.
 
-1. Then select the **Open connector** page on the preview pane.
+1. Then select the **Open connector page** button on the preview pane.
 
 1. Verify that you have the appropriate permissions as described under Prerequisites.
 
-1. Select **Install agent on Azure Windows Virtual Machine**, and then on the link that appears below.
+1. In the *Configuration* section, select the **+Create data collection rule** button.
 
-1. For each virtual machine that you want to connect, select its name in the list that appears on the right, and then select **Connect**.
+1. Enter a *Rule name*, select the appropriate *Subscription* and *Resource group* where the data collection rule (DCR) will be created.
 
-1. Select which event set ([All, Common, or Minimal](/azure/sentinel/connect-windows-security-events?azure-portal=true)) you want to stream.
+1.vSelect **Next: Resources**.
 
-1. Select **Apply Changes**.
+1. Expand your *Subscription* under *Scope* on the *Resources* tab.
+
+    >**Hint:** You can expand the whole *Scope* hierarchy by selecting the ">" before the *Scope* column.
+
+1. Expand the resource group, and then select Azure virtual machines.
+
+1. Select **Next: Collect**.
+
+1. Review the different Security Event collection option. The default is Keep *All Security Events*.
+
+1. Select **Next: Review + create**.
+
+1. Select **Create** to save the Data Collection Rule.
+
+1. Wait a minute and then select **Refresh** to see the new data collection rule listed.
 
 ## Connect non-Azure Windows Machines
+
+In this task, you add an Azure Arc connected, non-Azure Windows virtual machine to Microsoft Sentinel.  
+
+   >**Note:** The *Windows Security Events via AMA* data connector requires Azure Arc for non-Azure devices.
+
+1. Make sure you are in the *Windows Security Events via AMA* data connector configuration in your Microsoft Sentinel workspace.
 
 To view the connector page:
 
 1. Select **Data connectors** page.
 
-1. Select **Security Events via Legacy Agent**.
+1. Select **Windows Security Events via AMA**.
 
 1. Then select the **Open connector** page on the preview pane.
 
 1. Verify that you have the appropriate permissions as described under Prerequisites.
 
-1. Select **Install agent on non-Azure Windows Machine**, and then on the link that appears below.
+1. In the *Configuration* section, edit the previously completed *data collection rule* by selecting the *pencil* icon.
 
-1. Select the appropriate download links that appear on the right, under Windows Computers.
+1. Expand your *Subscription* under *Scope* on the *Resources* tab.
 
-1. Using the downloaded executable file, install the agent on the Windows systems of your choice, and configure it using the Workspace ID and Keys that appear below the download links mentioned above.
+    >**Hint:** You can expand the whole *Scope* hierarchy by selecting the ">" before the *Scope* column.
 
-1. Select which event set (All, Common, or Minimal) you want to stream.
+1. Expand the resource group, and then select Azure virtual machines.
 
-1. Select **Apply Changes**.
+    >**Important:** If you do not see any non-Azure Windows machines, open *Azure Arc* to verify the machines are connected to Azure Arc.
 
-:::image type="content" source="../media/agent-download.png" alt-text="Screenshot of the Log Analytics agent download." lightbox="../media/agent-download.png":::
+1. Select **Next: Collect**.
+
+1. Review the different Security Event collection option. The default is Keep *All Security Events*.
+
+1. Select **Next: Review + create**.
+
+1. Select **Create** to save the Data Collection Rule.
+
+1. Wait a minute and then select **Refresh** to see the new data collection rule listed.
