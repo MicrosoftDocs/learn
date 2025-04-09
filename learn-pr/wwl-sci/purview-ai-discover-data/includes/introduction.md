@@ -1,11 +1,8 @@
-AI tools like Microsoft 365 Copilot, enterprise AI apps, and other generative services create new ways to work with data. They also introduce risks, particularly when organizations lack visibility into how these tools are used or what data is accessed.
+AI tools like Microsoft 365 Copilot, enterprise AI apps, and other generative services are changing how people interact with data. These tools can improve productivity but also introduce risks when there's limited visibility into how they're used or what information they access.
 
-Microsoft Purview provides capabilities that help security and compliance teams identify how AI tools interact with data and assess whether those interactions align with policy. This includes:
+Microsoft Purview helps organizations discover how AI tools interact with sensitive content. Using tools like **Microsoft Purview Data Security Posture Management (DSPM) for AI** and **Microsoft Purview Audit**, security teams can identify activity patterns, surface potential exposure risks, and review detailed logs of AI-related interactions.
 
-- **Data Security Posture Management (DSPM) for AI**, which surfaces potential data exposure risks and provides recommendations to strengthen security posture
-- **Microsoft Purview Audit**, which records user and admin interactions with Microsoft 365 Copilot across supported applications
-
-These tools support analysis of AI activity and help organizations take informed action to reduce risks related to sensitive data access, oversharing, and regulatory compliance.
+These capabilities support early insight into AI usage, helping organizations understand risk before applying controls.
 
 ## Learning objectives
 
@@ -13,6 +10,4 @@ By the end of this module, you'll be able to:
 
 - Identify security risks in AI interactions
 - Discover AI activity using Microsoft Purview tools
-- Evaluate reports and recommendations to assess compliance and security risks
-- Run data assessments to detect oversharing and labeling issues
 - Apply policies to protect sensitive data in AI-generated content
