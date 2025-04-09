@@ -2,8 +2,6 @@
 uid: learn.azdo.assess-your-development-process.2-meet-the-team
 title: Meet the team
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Meet the team
   description: Meet the team at Tailspin Toys and hear about some of their latest challenges.
   ms.date: 10/07/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/2-meet-the-team.md)]
-
+

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-arc-for-servers
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to Azure Arc-enabled servers
   description: This module introduces you to Azure Arc-enabled servers and describes its characteristics, capabilities, and use cases.
   manager: rayoflores
@@ -42,4 +40,4 @@ units:
 - learn.azure.intro-to-arc-for-servers.summary
 badge:
   uid: learn.azure.intro-to-arc-for-servers.badge
-
+

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.build-your-own-ai-copilot-vcore-based-azure-cosmos-db-mongodb
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Build your own AI copilot with vCore-based Azure Cosmos DB for MongoDB and Azure OpenAI
   description: Build your own AI copilot with vCore-based Azure Cosmos DB for MongoDB and Azure OpenAI.
   author: wwlpublish
@@ -41,4 +39,4 @@ units:
 - learn.wwl.build-your-own-ai-copilot-vcore-based-azure-cosmos-db-mongodb.summary
 badge:
   uid: learn.wwl.build-your-own-ai-copilot-vcore-based-azure-cosmos-db-mongodb.badge
-
+

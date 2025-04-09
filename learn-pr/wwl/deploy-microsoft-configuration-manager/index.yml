@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-microsoft-configuration-manager
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: MD-102 3-Deploy using Endpoint Configuration Manager
   description: "This module explains the common day to day tasks that Administrators would use Configuration Manager to perform."
   ms.date: 05/15/2023
@@ -39,4 +37,4 @@ units:
 - learn.wwl.deploy-microsoft-configuration-manager.knowledge-check
 - learn.wwl.deploy-microsoft-configuration-manager.summary
 badge:
-  uid: learn.wwl.deploy-microsoft-configuration-manager.badge
+  uid: learn.wwl.deploy-microsoft-configuration-manager.badge

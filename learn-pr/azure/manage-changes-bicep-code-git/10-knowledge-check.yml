@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.manage-changes-bicep-code-git.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   ms.date: 01/31/2025
   author: mumian
@@ -61,4 +59,4 @@ quiz:
     - content: "`git remote add upstream`"
       isCorrect: false
       explanation: Incorrect. Because you're making a copy of a repository that's already on GitHub, you should use the `git clone` command.
-
+

@@ -2,8 +2,6 @@
 uid: learn.azure.publish-reusable-bicep-code-using-azure-pipelines.publish-bicep-code-deployment-pipeline
 title: Publish Bicep code from a deployment pipeline
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Publish Bicep code from a deployment pipeline
   description: Learn how to automate publishing a template spec to Azure and publishing a Bicep module to a registry.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/2-publish-bicep-code-deployment-pipeline.md)]
-
+

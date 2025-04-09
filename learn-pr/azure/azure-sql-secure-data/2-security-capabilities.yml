@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-secure-data.2-security-capabilities
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Security capabilities and tasks
   description: Security capabilities and tasks
-  ms.date: 11/13/2023
+  ms.date: 04/01/2025
   author: VanMSFT
   ms.author: vanto
   ms.topic: unit
@@ -20,27 +18,27 @@ quiz:
       choices:
       - content: "Allow access to Azure services"
         isCorrect: false
-        explanation: "This will allow all services in Azure to connect."
+        explanation: "This method allows all services in Azure to connect."
       - content: "Firewall rules"
         isCorrect: false
-        explanation: "This still maintains a public DNS hierarchy."
+        explanation: "This method still maintains a public DNS hierarchy."
       - content: "Virtual network rules"
         isCorrect: false
-        explanation: "This still maintains a public DNS hierarchy."
+        explanation: "This method still maintains a public DNS hierarchy."
       - content: "Private Link"
         isCorrect: true
-        explanation: "This will create a DNS hierarchy without information related to the Azure SQL Database logical server, and will create a truly private endpoint."
-    - content: "Consider the example from the unit where the Azure VM public IP address is 203.0.113.1 and the Azure VM private IP address is 10.0.0.2. When you use virtual network rules to configure network access to Azure SQL Database, what will be returned from `SELECT client_net_address FROM sys.dm_exec_connections WHERE session_id=@@SPID;`?"
+        explanation: "This method creates a Domain Name System (DNS) hierarchy without information related to the Azure SQL Database logical server, and creates a truly private endpoint."
+    - content: "Consider the example from the unit where the public IP address of the Azure virtual machine (VM) is 203.0.113.1 and the private IP address of the Azure VM is 10.0.0.2. When you use virtual network rules to configure network access to Azure SQL Database, what is returned from `SELECT client_net_address FROM sys.dm_exec_connections WHERE session_id=@@SPID;`?"
       choices:
       - content: "203.0.113.1"
         isCorrect: false
-        explanation: "This would be returned if firewall rules and/or Allow Azure Services is enabled."
+        explanation: "This IP address is returned if firewall rules and/or Allow Azure Services is enabled."
       - content: "10.0.0.2"
         isCorrect: true
-        explanation: "This will be returned if virtual network rules or private endpoints are enabled."
+        explanation: "This IP address is returned if virtual network rules or private endpoints are enabled."
       - content: "Both IP addresses"
         isCorrect: false
-        explanation: "Only one IP address will be returned."
+        explanation: "Only one IP address is returned."
       - content: "Neither IP address"
         isCorrect: false
         explanation: "Review the unit again for more information."

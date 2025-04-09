@@ -2,8 +2,6 @@
 uid: learn.wwl.monitor-manage-performance-health.customize-azure-monitor-workbooks-azure-virtual-desktop
 title: Customize Azure Monitor workbooks for Azure Virtual Desktop Insights
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Customize Azure Monitor workbooks for Azure Virtual Desktop Insights
   description: "Customize Azure Monitor workbooks for Azure Virtual Desktop Insights"
   ms.date: 08/13/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-customize-azure-monitor-workbooks-azure-virtual-desktop.md)]
+  [!include[](includes/4-customize-azure-monitor-workbooks-azure-virtual-desktop.md)]

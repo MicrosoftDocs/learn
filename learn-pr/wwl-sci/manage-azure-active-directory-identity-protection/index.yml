@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-azure-ad-identity-protection
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage Microsoft Entra Identity Protection
   description: "Protecting a user's identity by monitoring their usage and sign-in patterns will ensure a secure cloud solution. Explore how to design and implement Microsoft Entra Identity protection."
   ms.date: 02/21/2025

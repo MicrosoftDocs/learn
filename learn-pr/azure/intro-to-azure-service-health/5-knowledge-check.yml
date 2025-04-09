@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-service-health.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check for intro to Azure Service Health."
   ms.date: 02/26/2024
   author: ricmmartins
@@ -44,4 +42,4 @@ quiz:
       explanation: "Incorrect: It's possible to choose for which subscription you will be getting health information."
     - content: "You can choose among which subscriptions, region, and services you would like to receive health information."
       isCorrect: true
-      explanation: "Correct: This is the correct answer."
+      explanation: "Correct: This is the correct answer."

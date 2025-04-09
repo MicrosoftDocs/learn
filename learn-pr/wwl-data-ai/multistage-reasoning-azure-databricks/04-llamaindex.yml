@@ -2,8 +2,6 @@
 uid: learn.wwl.multistage-reasoning-azure-databricks.llamaindex
 title: Explore LlamaIndex
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore LlamaIndex
   description: "Explore LlamaIndex"
   ms.date: 03/20/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/04-llamaindex.md)]
+  [!include[](includes/04-llamaindex.md)]

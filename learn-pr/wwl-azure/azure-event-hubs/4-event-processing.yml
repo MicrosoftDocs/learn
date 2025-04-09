@@ -2,8 +2,6 @@
 uid: learn.wwl.azure-event-hubs.scale-your-processing-application
 title: Scale your processing application
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Scale your processing application
   description: "Scale your processing application"
   ms.date: 07/17/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-event-processing.md)]
+  [!include[](includes/4-event-processing.md)]

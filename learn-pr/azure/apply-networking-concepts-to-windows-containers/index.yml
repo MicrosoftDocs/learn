@@ -2,8 +2,6 @@
 uid: learn.azure.apply-networking-concepts-to-windows-containers
 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Apply Networking concepts to Windows containers running on Azure Kubernetes Service (AKS) and AKS Hybrid
   description: Learn networking concepts that help you solve real problems with Windows containers running on Azure Kubernetes Service (AKS) and AKS Hybrid.
   ms.date: 02/12/2024
@@ -43,4 +41,4 @@ units:
 - learn.azure.apply-networking-concepts-to-windows-containers.summary
 badge:
   uid: learn.azure.apply-networking-concepts-to-windows-containers.badge
-
+

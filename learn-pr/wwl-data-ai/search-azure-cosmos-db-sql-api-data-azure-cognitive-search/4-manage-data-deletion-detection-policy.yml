@@ -2,11 +2,9 @@
 uid: learn.wwl.search-azure-cosmos-db-sql-api-data-azure-cognitive-search.manage-data-deletion-detection-policy
 title: Manage a data deletion detection policy
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage a data deletion detection policy
   description: "Manage a data deletion detection policy"
-  ms.date: 07/10/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

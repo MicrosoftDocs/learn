@@ -2,8 +2,6 @@
 uid: learn.startups.revenue.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: See an overview of concepts on revenue models. Topics include how to choose a model for your startup and how to make early sales.
   ms.date: 06/18/2024
@@ -13,4 +11,4 @@ metadata:
   ms.collection: learn-startups
 durationInMinutes: 2
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/1-introduction.md)]

@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.troubleshoot-vpn-gateways.knowledge-check
-title: Knowledge Check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge Check
+  title: Module assessment
   description: "Knowledge Check"
   ms.date: 04/27/2023
   author: mistoyanwork
@@ -48,4 +46,4 @@ quiz:
       explanation: "That answer is incorrect. Microsoft Sentinel is used for security."
     - content: "Azure Monitor and Tracert"
       isCorrect: true
-      explanation: "That answer is correct. Both tools can help to identify issues."
+      explanation: "That answer is correct. Both tools can help to identify issues."

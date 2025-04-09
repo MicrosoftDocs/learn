@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-java-app-enable-authentication-authorization.knowledge-check
-title: Knowledge Check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge Check
+  title: Module assessment
   description: Knowledge check
   ms.date: 11/21/2023
   author: KarlErickson
@@ -51,4 +49,4 @@ quiz:
       isCorrect: false
       explanation: "No. The URL where the identity provider will send the tokens to is the **Redirect URI**."
       
-
+

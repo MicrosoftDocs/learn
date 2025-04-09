@@ -2,8 +2,6 @@
 uid: learn.wwl.detect-objects-images.train-object-detector
 title: Train an object detector
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Train an object detector
   description: Train an object detector
   author: ivorb
@@ -18,4 +16,4 @@ labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/3-train-object-detector.md)]
-
+

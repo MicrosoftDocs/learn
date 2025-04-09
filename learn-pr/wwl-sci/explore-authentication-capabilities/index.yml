@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-authentication-capabilities-of-azure-ad
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe the authentication capabilities of Microsoft Entra ID
   description: "Describe the authentication capabilities of Microsoft Entra ID"
   ms.date: 09/23/2024
@@ -44,4 +42,4 @@ units:
 - learn.wwl.explore-authentication-capabilities-of-azure-ad.summary-resources
 badge:
   uid: learn.wwl.explore-authentication-capabilities-of-azure-ad.badge
-
+

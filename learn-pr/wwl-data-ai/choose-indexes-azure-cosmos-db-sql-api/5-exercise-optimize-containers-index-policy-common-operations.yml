@@ -2,11 +2,9 @@
 uid: learn.wwl.choose-indexes-azure-cosmos-db-sql-api.exercise-optimize-containers-index-policy-for-common-operations
 title: Exercise - Optimize an Azure Cosmos DB for NoSQL container's index policy for common operations
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Optimize an Azure Cosmos DB for NoSQL container's index policy for common operations
   description: "Exercise - Optimize an Azure Cosmos DB for NoSQL container's index policy for common operations"
-  ms.date: 10/28/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

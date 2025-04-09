@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-report-aad-security-events.2-use-logs-detect-suspicious-activity
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use sign-in, audit, and risky sign-in logs to detect suspicious activity
   description: Use sign-in, audit, and risky sign-in logs to detect suspicious activity.
   ms.date: 03/01/2023
@@ -38,4 +36,4 @@ quiz:
     - content: Risky sign-in log
       isCorrect: false
       explanation: The risky sign-in log file holds information about users whose behavior has been flagged as inconsistent.
-
+

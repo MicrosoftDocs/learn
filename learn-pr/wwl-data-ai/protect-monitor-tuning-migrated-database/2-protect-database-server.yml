@@ -2,8 +2,6 @@
 uid: learn.wwl.protecting-monitoring-tuning-migrated-database.protecting-database-server
 title: Protect a database and server
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Protect a database and server
   description: "Protect a database and server"
   ms.date: 10/14/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 9
 content: |
-  [!include[](includes/2-protect-database-server.md)]
+  [!include[](includes/2-protect-database-server.md)]

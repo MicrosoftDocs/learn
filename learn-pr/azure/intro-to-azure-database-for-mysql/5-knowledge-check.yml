@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-database-for-mysql.5-knowledge-check  
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   ms.date: 08/21/2024
   author: shreyaaithal
@@ -73,4 +71,4 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. Automatic backups are a feature of Azure Database for MySQL."
       
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.use-apache-spark-azure-databricks.use-spark-notebooks
 title: Use Spark in notebooks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use Spark in notebooks
   description: "Use Spark in notebooks"
   ms.date: 12/12/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/04-use-spark.md)]
+  [!include[](includes/04-use-spark.md)]

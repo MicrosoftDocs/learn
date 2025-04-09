@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-policy.when-to-use-azure-policy
 title: When to use Azure Policy
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: When to use Azure Policy
   description: "Learn ways that you can use Azure Policy to manage resources."
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/4-when-to-use-azure-policy.md)]
-
+

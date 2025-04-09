@@ -2,8 +2,6 @@
 uid: learn.wwl.understand-app-service-deployment-slots.route-traffic
 title: Route traffic in App Service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Route traffic in App Service
   description: "Route traffic in App Service"
   ms.date: 02/13/2025

@@ -2,12 +2,10 @@
 uid: learn.wwl.evaluate-performance-improvements.exercise-isolate-problem-areas-poor-performing-queries
 title: 'Exercise: Isolate problem areas in poorly performing queries'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Isolate problem areas in poorly performing queries'
   description: "Exercise: Isolate problem areas in poorly performing queries"
-  ms.date: 07/13/2022
-  author: wwlpublish
+  ms.date: 03/31/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false

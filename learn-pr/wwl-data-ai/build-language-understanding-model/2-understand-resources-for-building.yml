@@ -2,8 +2,6 @@
 uid: learn.wwl.build-language-understanding-model.understand-resources-for-building
 title: Understand resources for building a conversational language understanding model
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand resources for building a conversational language understanding model
   description: Understand resources for building a conversational language understanding model
   author: wwlpublish
@@ -17,4 +15,4 @@ labModal: false
 durationInMinutes: 9
 content: |
   [!include[](includes/2-understand-resources-for-building.md)]
-
+

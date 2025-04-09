@@ -2,13 +2,11 @@
 uid: learn.wwl.explore-azure-databricks.data-governance
 title: Data governance using Unity Catalog and Microsoft Purview
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Data governance using Unity Catalog and Microsoft Purview
   description: "Data governance using Unity Catalog and Microsoft Purview"
   ms.date: 08/05/2024
   author: wwlpublish
-  ms.author: theresai
+  ms.author: jamesh
   ms.topic: unit
 azureSandbox: false
 labModal: false

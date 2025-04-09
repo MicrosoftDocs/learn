@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-authorization-microsoft-entra-id.azure-management-groups
 title: Azure management groups
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Azure management groups
   description: "Azure management groups"
   ms.date: 08/07/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-azure-management-groups.md)]
+  [!include[](includes/2-azure-management-groups.md)]

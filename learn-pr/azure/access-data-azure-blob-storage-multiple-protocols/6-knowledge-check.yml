@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.access-data-azure-blob-storage-multiple-protocols.6-knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: Knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: This is a knowledge check unit.
   ms.date: 11/07/2023
   author: rmcmurray
@@ -49,4 +47,4 @@ quiz:
       explanation: "Correct. To grant access to a connecting client, the storage account must have an identity associated with that credential. That identity is called a local user."
 content: |
   [!include[](includes/6-knowledge-check.md)]
-
+

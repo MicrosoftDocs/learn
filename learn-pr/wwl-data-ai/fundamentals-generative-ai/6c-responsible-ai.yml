@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-generative-ai.responsible-generative-ai
+title: Create responsible generative AI solutions
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Create responsible generative AI solutions
+  description: Understand the principles of responsible AI and how to create responsible generative AI solutions.
+  author: sherzyang
+  ms.author: sheryang
+  ms.date: 03/21/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+content: |
+  [!include[](includes/6c-responsible-ai.md)]

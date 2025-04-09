@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery.2-azure-site-recovery-overview
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Azure Site Recovery overview
   description: Investigate how Azure Site Recovery can help achieve these goals by harnessing the power of the cloud. Then, study the tools that can make the failover and recovery of resources possible.
   ms.date: 01/25/2025
@@ -37,4 +35,4 @@ quiz:
       explanation: Running on an isolated VM is best practice, but you should use an isolated network to ensure live services aren't affected.
     - content: Run a disaster recovery drill for a single isolated VM, on an isolated network.
       isCorrect: true
-      explanation: If you run the recovery drill on a single VM, on an isolated network, it ensures that live services aren't affected and proves the recoveries are set up correctly.
+      explanation: If you run the recovery drill on a single VM, on an isolated network, it ensures that live services aren't affected and proves the recoveries are set up correctly.

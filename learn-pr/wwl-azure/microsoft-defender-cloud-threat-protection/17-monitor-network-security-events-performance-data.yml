@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Monitor network security events and performance data by configuring data collection rules (DCRs) in Azure Monitor
   description: "Monitor network security events and performance data by configuring data collection rules (DCRs) in Azure Monitor"
-  ms.date: 02/28/2025
+  ms.date: 04/03/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

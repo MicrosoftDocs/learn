@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.ai-foundry-sdk.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge.
   author: wwlpublish
   ms.author: gmalc
@@ -49,4 +47,4 @@ quiz:
       isCorrect: true
       explanation: "Correct. Use the Azure AI Inference library to chat with an Azure AI model inference model."
 
-
+

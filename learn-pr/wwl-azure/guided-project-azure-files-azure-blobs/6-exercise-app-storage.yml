@@ -2,8 +2,6 @@
 uid: learn.wwl.guided-project-azure-files-azure-blobs.exercise5
 title: Exercise - Provide storage for a new company app
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Provide storage for a new company app
   description: "Exercise - Provide storage for a new company app"
   ms.date: 09/02/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 15
 content: |
-  [!include[](includes/6-exercise-app-storage.md)]
+  [!include[](includes/6-exercise-app-storage.md)]

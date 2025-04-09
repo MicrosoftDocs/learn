@@ -1,4 +1,5 @@
 
+
 Organizations with large scale operations create connections between different parts of their virtual network infrastructure. Virtual network peering enables you to seamlessly connect separate VNets with optimal network performance, whether they are in the same Azure region (VNet peering) or in different regions (Global VNet peering). Network traffic between peered virtual networks is private. The virtual networks appear as one for connectivity purposes. The traffic between virtual machines in peered virtual networks uses the Microsoft backbone infrastructure, and no public Internet, gateways, or encryption is required in the communication between the virtual networks.
 
 Virtual network peering enables you to seamlessly connect two Azure virtual networks. Once peered, the virtual networks appear as one, for connectivity purposes. There are two types of VNet peering.
@@ -17,17 +18,11 @@ The benefits of using virtual network peering, whether local or global, include:
 - The ability to peer a virtual network created through Resource Manager to one created through the classic deployment model.
 - No downtime to resources in either virtual network is required when creating the peering, or after the peering is created.
 
-The following diagram shows a scenario where resources on the Contoso VNet and resources on the Fabrikam virtual network need to communicate. The Contoso subscription in the US West region is connected to the Fabrikam subscription in the US East region.
+### Fundamentals of virtual network peering (video)
 
-:::image type="content" source="../media/vnet-peering-ad980907.png" alt-text="Diagram of Contoso VNet and resources on the Fabrikam VNet.":::
+This video reviews the basics of virtual network peering types. The entire video is available in the [On Demand Instructor-led Training Series](/shows/on-demand-instructor-led-training-series/?terms=700).
 
-The routing tables show the routes known to the resources in each subscription. The following routing table shows the routes known to Contoso, with the final entry being the Global VNet peering entry to the Fabrikam 10.10.26.0/24 subnet.
-
-:::image type="content" source="../media/contoso-vm-routes-peering-annotated-e9d34a07.png" alt-text="Screenshot of the routing table.":::
-
-The following routing table shows the routes known to Fabrikam. Again, the final entry is the Global VNet peering entry, this time to the Contoso 10.17.26.0/24 subnet.
-
-:::image type="content" source="../media/fabrikam-vm-routes-peering-annotated-54cba14c.png" alt-text="Screenshot of the Fabrikam route table.":::
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=357cd4fa-19fa-4022-b8e5-1992bb485fcc]
 
 ## Configure VNet Peering
 

@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-azure-private-5g-core-service.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Checks that you grasped what is taught about the monitoring capabilities and tools of Azure Private 5G Core.
   ms.date: 07/31/2024
   author: joemarshall
@@ -57,4 +55,4 @@ quiz:
       explanation: "Try again. The number of SIM policies isn't a health and performance metric. It depends on the business needs of the enterprise that uses the user equipment (UE)."
     - content: "The numbers of packets sent/received on the N3/N6 interfaces"
       isCorrect: true
-      explanation: "Azure Private 5G Core uses the N3/N6 interfaces to communicate with the data network. For issues related to the data network, checking the numbers of packets sent/received on the N3/N6 interfaces might help."
+      explanation: "Azure Private 5G Core uses the N3/N6 interfaces to communicate with the data network. For issues related to the data network, checking the numbers of packets sent/received on the N3/N6 interfaces might help."

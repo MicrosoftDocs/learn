@@ -2,8 +2,6 @@
 uid: learn.app-service-autoscale-rules.4-identify-factors
 title: Identify factors for implementing autoscaling
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Identify factors for implementing autoscaling
   description: Describe factors that can be used to autoscale a service.
   ms.date: 05/04/2022
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/4-identify-factors.md)]
-
+

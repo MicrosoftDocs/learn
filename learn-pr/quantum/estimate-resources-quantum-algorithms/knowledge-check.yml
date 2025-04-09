@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.quantum.estimate-resources-quantum-algorithms.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Check your understanding so far.
   author: azure-quantum-content
   ms.author: quantumdocwriters
@@ -54,4 +52,4 @@ quiz:
     - content: "The Resource Estimator outputs physical and logical estimates, such as number of rotation gates, QEC estimates, T factory parameters, and total physical qubits and runtime."
       isCorrect: true
       explanation: "Correct. The Resource Estimator computes pre-layout and post-layout logical and physical estimations for a quantum technology and an error correction scheme."
-
+

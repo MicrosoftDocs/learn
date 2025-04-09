@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.load-balancing-non-https-traffic-azure.exercise-create-configure-azure-load-balancer
-title: 'Exercise: create and configure an Azure load balancer'
+title: 'Exercise: Create and configure an Azure load balancer'
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: 'Exercise: create and configure an Azure load balancer'
-  description: "Exercise: create and configure an Azure load balancer"
-  ms.date: 02/13/2025
+  title: 'Exercise: Create and configure an Azure load balancer'
+  description: "Exercise: Create and configure an Azure load balancer"
+  ms.date: 04/07/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

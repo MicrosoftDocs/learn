@@ -16073,7 +16073,37 @@
     {
       "source_path_from_root": "/learn-pr/languages/python-if-elif-else/index.md",
       "redirect_url": "/training/modules/python-boolean-types"
-    }, 
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/fundamentals-machine-learning/9-azure-machine-learning.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/fundamentals-generative-ai/3-language models.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/fundamentals-generative-ai/4-azure-openai.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/fundamentals-generative-ai/5-copilots.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/fundamentals-generative-ai/5a-microsoft-copilot.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/fundamentals-generative-ai/6a-building-custom-copilots.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-openai/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/prepare-azure-ai-development/",
@@ -46040,6 +46070,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/intro-to-microsoft-purview/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-microsoft-purview/2-what-is-microsoft-purview.yml",
+      "redirect_url": "https://learn.microsoft.com/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-microsoft-purview/3-how-microsoft-purview-works.yml",
+      "redirect_url": "https://learn.microsoft.com/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-microsoft-purview/4-when-to-use-microsoft-purview.yml",
+      "redirect_url": "https://learn.microsoft.com/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-microsoft-purview/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-microsoft-purview/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-microsoft-purview/index.yml",
+      "redirect_url": "https://learn.microsoft.com/purview/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/improve-api-developer-experience-with-swagger/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/aspnet/core/fundamentals/openapi/aspnetcore-openapi",
       "redirect_document_id": false
@@ -46392,6 +46457,41 @@
     {
       "source_path": "learn-pr/wwl-azure/guided-project-langstons-ant/06-summary.md",
       "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-cosmos-db-java-app/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-cosmos-db-java-app/2-setup.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-cosmos-db-java-app/3-crud-operations.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-cosmos-db-java-app/4-query.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-cosmos-db-java-app/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-cosmos-db-java-app/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-cosmos-db-java-app/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
       "redirect_document_id": false
     }
  ]

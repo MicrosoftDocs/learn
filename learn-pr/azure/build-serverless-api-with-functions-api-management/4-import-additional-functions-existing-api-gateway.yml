@@ -2,8 +2,6 @@
 uid: learn.build-serverless-api-with-functions-api-management.4-import-additional-functions-existing-api-gateway
 title: The benefits of using Azure API Management to compose your API
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: The benefits of using Azure API Management to compose your API
   description: In this unit, you'll learn about common issues with the microservices architecture and how you can address them by adding functions to existing APIs in API Management.
   ms.date: 11/03/2023
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/4-import-additional-functions-existing-api-gateway.md)]
-
+

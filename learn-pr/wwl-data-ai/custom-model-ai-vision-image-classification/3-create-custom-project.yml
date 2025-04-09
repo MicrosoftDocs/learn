@@ -2,8 +2,6 @@
 uid: learn.wwl.custom-model-ai-vision-image-classification.create-custom-project
 title: Create a custom project
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create a custom project
   description: Create a custom project in Azure AI Vision.
   author: ivorb
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/3-create-custom-project.md)]
-
+

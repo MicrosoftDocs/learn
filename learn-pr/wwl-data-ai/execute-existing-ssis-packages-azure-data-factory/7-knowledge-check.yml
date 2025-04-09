@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.execute-existing-ssis-packages-azure-data-factory.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 06/07/2023
   author: wwlpublish
@@ -47,4 +45,4 @@ quiz:
       explanation: "Incorrect. SQL Server Management Studio is used to manage database instances and databases. SQL Server Data Tools is typically used to create and deploy SQL Server Integration Services (SSIS) packages."
     - content: "dtexec."
       isCorrect: false
-      explanation: "Incorrect. The dtexec command prompt utility is used to configure and execute SQL Server Integration Services packages. SQL Server Data Tools is typically used to create and deploy SQL Server Integration Services (SSIS) packages."
+      explanation: "Incorrect. The dtexec command prompt utility is used to configure and execute SQL Server Integration Services packages. SQL Server Data Tools is typically used to create and deploy SQL Server Integration Services (SSIS) packages."

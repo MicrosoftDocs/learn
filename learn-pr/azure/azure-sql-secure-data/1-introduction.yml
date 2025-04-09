@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-secure-data.1-introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
-  ms.date: 11/13/2023
+  ms.date: 04/01/2025
   author: VanMSFT
   ms.author: vanto
   ms.topic: unit

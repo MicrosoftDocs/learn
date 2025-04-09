@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-access-management-capabilities-of-azure-ad.describe-azure-role-based-access-control-rbac
 title: Describe Microsoft Entra roles and role-based access control (RBAC)
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe Microsoft Entra roles and role-based access control (RBAC)
   description: "Describe Microsoft Entra roles and role-based access control (RBAC)"
   ms.date: 08/02/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-describe-azure-role-based-access-control.md)]
+  [!include[](includes/3-describe-azure-role-based-access-control.md)]

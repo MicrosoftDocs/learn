@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-cache-for-redis.5-knowledge-check  
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Test your knowledge.
   ms.date: 04/04/2024  
   author: flang-msft
@@ -71,4 +69,4 @@ quiz:
     - content: "It creates global caches with local latency across regions, improving performance at all locations."
       isCorrect: true
       explanation: "Correct. It's a feature of geo-replication."
-
+

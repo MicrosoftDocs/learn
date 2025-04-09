@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-virtual-machine-availability
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure virtual machine availability
   description: "Learn how to configure virtual machine availability including vertical and horizontal scaling."
   ms.date: 02/12/2025

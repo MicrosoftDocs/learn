@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.azure-event-hubs
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Azure Event Hubs
   description: "Learn how Azure Event Hubs captures events and how to scale your processing application."
   ms.date: 07/17/2024
@@ -46,4 +44,4 @@ units:
 - learn.wwl.azure-event-hubs.knowledge-check
 - learn.wwl.azure-event-hubs.summary
 badge:
-  uid: learn.wwl.azure-event-hubs.badge
+  uid: learn.wwl.azure-event-hubs.badge

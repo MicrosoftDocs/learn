@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.connect-azure-server-private-endpoint-using-azure-portal.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 10/29/2024
   author: wwlpublish
@@ -61,4 +59,4 @@ quiz:
       explanation: "Incorrect. Azure Private Endpoints are not limited to a specific Azure region, but each SQL server requires its own Private Endpoint regardless of region."
     - content: "No, Private Endpoints are limited to a single SQL server."
       isCorrect: false
-      explanation: "Incorrect. Private Endpoints are not limited to a single SQL server, but each SQL server needs its own Private Endpoint for secure connectivity."
+      explanation: "Incorrect. Private Endpoints are not limited to a single SQL server, but each SQL server needs its own Private Endpoint for secure connectivity."

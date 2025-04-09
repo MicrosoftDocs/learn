@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-configure-azure-developer-cli-templates.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge of the Azure Developer CLI
   ms.date: 07/17/2024
   author: alexwolfmsft
@@ -72,4 +70,4 @@ quiz:
     - content: "The definition files are platform agnostic."
       isCorrect: false
       explanation: "Incorrect. Whether or not a tool is cross platform doesn't determine if it's idempotent."
-
+

@@ -2,8 +2,6 @@
 uid: learn.containerize-deploy-java-app-aks.setup
 title: Set up your Azure environment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: Set up
   title: Set up your Azure environment
   description: Set up your Azure environment.
@@ -19,4 +17,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/2-setup.md)]
-
+

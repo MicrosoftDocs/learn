@@ -6,37 +6,37 @@ metadata:
   prefetch-feature-rollout: true
   title: Design and implement Azure load balancer using the Azure portal
   description: "Design and implement Azure load balancer using the Azure portal"
-  ms.date: 02/13/2025
+  ms.date: 04/07/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - references_regions
-durationInMinutes: 17
+durationInMinutes: 9
 content: |
   [!include[](includes/3-design-implement-azure-load-balancer-using-azure-portal.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following statement about external load balancers is correct?"
+  - content: "The Azure Load Balancer operates at which OSI model layer?"
     choices:
-    - content: "They have a public IP address."
+    - content: "Layer 3"
+      isCorrect: false
+      explanation: "Incorrect. The Azure Load Balancer operates in Layer 4."
+    - content: "Layer 4"
       isCorrect: true
-      explanation: "Correct. External load balancers have public IP addresses."
-    - content: "They don't have a listener IP address."
+      explanation: "Correct. The Azure Load Balancer operates in Layer 4."
+    - content: "Layer 7"
       isCorrect: false
-      explanation: "Incorrect. External load balancers have public IP addresses."
-    - content: "They have a private, front-facing IP address."
-      isCorrect: false
-      explanation: "Incorrect. External load balancers have public IP addresses."
-  - content: "When deploying a new Azure Load Balancer that must support outbound traffic rules. Which SKU should be selected?"
+      explanation: "Incorrect. The Azure Load Balancer operates in Layer 4."
+  - content: "You're deploying a new Azure Load Balancer that must support availability zones. Which SKU should be selected?"
     choices:
     - content: "Standard"
       isCorrect: true
-      explanation: "Correct. Standard SKU supports outbound rules through declarative outbound NAT configuration."
+      explanation: "Correct. Standard SKU supports availability zones."
     - content: "Basic"
       isCorrect: false
-      explanation: "Incorrect. Basic SKU doesn't support outbound rules."
+      explanation: "Incorrect. Basic SKU doesn't support availability zones."
     - content: "Either Standard or Basic"
       isCorrect: false
-      explanation: "Incorrect. Basic SKU doesn't support outbound rules."
+      explanation: "Incorrect. Basic SKU doesn't support availability zones."

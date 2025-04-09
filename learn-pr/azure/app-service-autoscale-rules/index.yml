@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.app-service-autoscale-rules
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Dynamically meet changing web app performance requirements with autoscale rules
   description: Respond to periods of high activity by incrementally adding resources, and then removing these resources when activity drops, to reduce costs.
   ms.date: 04/15/2024
@@ -43,4 +41,4 @@ units:
 - learn.app-service-autoscale-rules.7-exercise-autoscale-a-web-app
 - learn.app-service-autoscale-rules.8-summary
 badge:
-  uid: learn.app-service-autoscale-rules.badge
+  uid: learn.app-service-autoscale-rules.badge
