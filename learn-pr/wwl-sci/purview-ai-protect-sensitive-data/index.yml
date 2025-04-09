@@ -3,7 +3,7 @@ uid: learn-m365.wwl.purview-ai-protect-sensitive-data
 metadata:
   title: Protect sensitive data from AI-related risks
   description: Protect sensitive data from AI-related risks
-  ms.date: 04/08/2025
+  ms.date: 04/10/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
@@ -11,12 +11,12 @@ metadata:
   ms.service: purview
 title: Protect sensitive data from AI-related risks
 summary: |
-  Microsoft Purview helps organizations protect sensitive data as AI tools change how people access, use, and share information. Lean how to reduce data security risks in AI environments, including label-based protections, browser restrictions, and risk-based assessments.
+  Microsoft Purview helps organizations protect sensitive data in environments that use AI tools. Learn how to reduce data security risks by applying sensitivity labels, using data loss prevention controls, and deploying recommended protections through DSPM for AI.
 abstract: |
   In this module you learn how to:
   - Use sensitivity labels to control how AI tools access and handle content
   - Configure endpoint DLP to restrict risky actions in browsers
-  - Run data assessments to detect oversharing risks in SharePoint
+  - Apply DSPM for AI recommendations to protect sensitive data across Microsoft Purview solutions
 prerequisites: |
   None
 iconUrl: /training/achievements/generic-badge.svg
@@ -33,10 +33,9 @@ subjects:
 - threat-protection
 units:
 - learn-m365.wwl.purview-ai-protect-sensitive-data.introduction
+- learn-m365.wwl.purview-ai-protect-sensitive-data.dspm-ai-recommendations
 - learn-m365.wwl.purview-ai-protect-sensitive-data.sensitivity-label-copilot
 - learn-m365.wwl.purview-ai-protect-sensitive-data.endpoint-dlp-block-paste-ai
-- learn-m365.wwl.purview-ai-protect-sensitive-data.insider-risk-management-generative-ai-usage
-- learn-m365.wwl.purview-ai-protect-sensitive-data.adaptive-protection-ai
 - learn-m365.wwl.purview-ai-protect-sensitive-data.knowledge-check
 - learn-m365.wwl.purview-ai-protect-sensitive-data.summary
 badge:

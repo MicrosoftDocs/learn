@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Check your knowledge."
-  ms.date: 04/08/2025
+  ms.date: 04/10/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
@@ -37,15 +37,3 @@ quiz:
     - content: "By detecting and deleting AI-generated files stored in SharePoint."
       isCorrect: false
       explanation: "Incorrect: Endpoint DLP doesn't delete files or focus on storage cleanup."
-
-  - content: "What is the purpose of AI data assessments in DSPM for AI?"
-    choices:
-    - content: "To block AI-generated content from being saved in SharePoint."
-      isCorrect: false
-      explanation: "Incorrect: Data assessments don't block content. They provide visibility into risks."
-    - content: "To delete all files accessed by AI tools."
-      isCorrect: false
-      explanation: "Incorrect: Assessments provide analysis but don't take destructive actions like deleting files."
-    - content: "To identify sensitive data that AI tools might access and help enforce security controls."
-      isCorrect: true
-      explanation: "Correct: Data assessments identify risk areas and inform decisions about applying protections."
