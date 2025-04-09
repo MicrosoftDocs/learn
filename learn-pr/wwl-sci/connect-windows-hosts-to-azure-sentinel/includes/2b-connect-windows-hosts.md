@@ -1,16 +1,17 @@
-The *Windows Security Events via AMA* connector lets you stream all security events from the Windows machines connected to your Microsoft Sentinel workspace using the Windows agent. This connection enables you to view dashboards, create custom alerts, and improve investigation. These events give you more insight into your organization’s network and improves your security operation capabilities.
+The *Windows Security Events via AMA* connector lets you stream all security events from the Windows machines connected to your Microsoft Sentinel workspace using the Windows agent. This connection enables you to view dashboards, create custom alerts, and improve investigation. These events give you more insight into your organization’s network and improve your security operation capabilities.
 
 - All Security Events - All Windows security and AppLocker events.
 
 - Common - A standard set of events for auditing purposes. A full user audit trail is included in this set. For example, it contains both user sign-in and user sign-out events (event IDs 4624, 4634). There are also auditing actions such as security group changes, key domain controller Kerberos operations, and other types of events in line with accepted best practices.
 
-- The Common event set may contain some types of events that aren't so common. This is because the main point of the Common set is to reduce the volume of events to a more manageable level while still maintaining full audit trail capability.
+- The Common event set can contain some types of events that aren't so common. This is because the main point of the Common set is to reduce the volume of events to a more manageable level while still maintaining full audit trail capability.
 
 - Minimal - A small set of events that might indicate potential threats. This set doesn't contain a full audit trail. It covers only events that might indicate a successful breach and other significant events with low rates of occurrence. For example, it contains successful and failed user logons (event IDs 4624, 4625). Still, it doesn't contain sign-out information (4634), which, while important for auditing, isn't meaningful for breach detection and has a relatively high volume. Most of this set's data volume comprises sign-in events and process creation events (event ID 4688).
 
 - Custom - Custom allows you to specify other logs or to filter events using XPath queries.
 
-    >**Note:** Query the *SecurityEvents* table in Microsoft Sentinel *Logs* to see the events collected by the connector.
+    > [!NOTE]
+    > Query the *SecurityEvents* table in Microsoft Sentinel *Logs* to see the events collected by the connector.
 
 - The *Windows Security Events via AMA* connector uses Data Collection Rules (DCRs) to define the data to collect, and installs the Azure Monitor Agent (AMA) extension on the selected machines.
 
@@ -32,11 +33,12 @@ To view the connector page:
 
 1. Enter a *Rule name*, select the appropriate *Subscription* and *Resource group* where the data collection rule (DCR) will be created.
 
-1.vSelect **Next: Resources**.
+1. Select **Next: Resources**.
 
 1. Expand your *Subscription* under *Scope* on the *Resources* tab.
 
-    >**Hint:** You can expand the whole *Scope* hierarchy by selecting the ">" before the *Scope* column.
+    > [!TIP]
+    > You can expand the whole *Scope* hierarchy by selecting the ">" before the *Scope* column.
 
 1. Expand the resource group, and then select Azure virtual machines.
 
@@ -54,9 +56,8 @@ To view the connector page:
 
 In this task, you add an Azure Arc connected, non-Azure Windows virtual machine to Microsoft Sentinel.  
 
-   >**Note:** The *Windows Security Events via AMA* data connector requires Azure Arc for non-Azure devices.
-
-1. Make sure you are in the *Windows Security Events via AMA* data connector configuration in your Microsoft Sentinel workspace.
+   > [!NOTE]
+   > The *Windows Security Events via AMA* data connector requires Azure Arc for non-Azure devices.
 
 To view the connector page:
 
@@ -72,11 +73,13 @@ To view the connector page:
 
 1. Expand your *Subscription* under *Scope* on the *Resources* tab.
 
-    >**Hint:** You can expand the whole *Scope* hierarchy by selecting the ">" before the *Scope* column.
+    > [!TIP]
+    > You can expand the whole *Scope* hierarchy by selecting the ">" before the *Scope* column.
 
 1. Expand the resource group, and then select Azure virtual machines.
 
-    >**Important:** If you do not see any non-Azure Windows machines, open *Azure Arc* to verify the machines are connected to Azure Arc.
+    > [!IMPORTANT]
+    > If you don't see any non-Azure Windows machines, open *Azure Arc* to verify the machines are connected to Azure Arc.
 
 1. Select **Next: Collect**.
 
