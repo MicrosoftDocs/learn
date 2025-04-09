@@ -29,7 +29,6 @@ products:
   - ai-vision
 units:
 - learn.wwl.custom-model-ai-vision-image-classification.understand-custom-model-types
-- learn.wwl.custom-model-ai-vision-image-classification.summary
 badge:
   uid: learn.wwl.custom-model-ai-vision-image-classification.badge
 
