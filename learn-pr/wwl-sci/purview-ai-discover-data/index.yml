@@ -3,22 +3,20 @@ uid: learn.wwl.purview-ai-discover-data
 metadata:
   title: Discover AI interactions with Microsoft Purview
   description: "Discover AI interactions with Microsoft Purview."
-  ms.date: 04/04/2025
+  ms.date: 04/10/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
   ms.service: purview
   hidden: false
 title: Discover AI interactions with Microsoft Purview
-summary: Microsoft Purview helps organizations discover how Microsoft 365 Copilot and enterprise AI tools interact with data. Through Microsoft Purview Data Security Posture Management (DSPM) for AI and Audit, security teams can identify AI activity, review potential risks, and use insights to support compliance and data protection efforts.
+summary: Microsoft Purview helps organizations discover how Microsoft 365 Copilot and other AI tools interact with data. Using Data Security Posture Management (DSPM) for AI and Audit, security teams can detect AI activity, assess potential risks, and gather insights to support data protection and compliance strategies.
 abstract: |
   After completing this module, you'll be able to:
-  - Explain the purpose and benefits of Microsoft Purview DSPM for AI and Audit.
-  - Set up and configure DSPM for AI to detect activity from Microsoft 365 Copilot and enterprise AI tools.
-  - Use Microsoft Purview Audit to search and review Copilot activity.
-  - Identify and analyze AI security risks using reports and insights.
-  - Run and review AI data assessments to detect oversharing risks.
-  - Apply security policies, such as DLP and sensitivity labels, to protect data referenced by AI tools.
+  - Explain how Microsoft Purview DSPM for AI and Audit help identify AI-related data risks
+  - Set up DSPM for AI to detect activity from Microsoft 365 Copilot and enterprise AI tools
+  - Use Microsoft Purview Audit to search for and review Copilot interactions
+  - Analyze AI activity and risks using built-in reports and insights
 prerequisites: |
   - Familiarity with Microsoft 365 services.
   - Basic understanding of AI tools, including Microsoft 365 Copilot.

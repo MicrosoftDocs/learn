@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 04/04/2025
+  ms.date: 04/10/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
@@ -37,18 +37,6 @@ quiz:
     - content: "Install the Microsoft Purview browser extension."
       isCorrect: true
       explanation: "Correct: The browser extension is required to monitor non-Microsoft AI site visits and interactions."
-
-  - content: "Your organization wants to prevent AI tools from summarizing sensitive files in SharePoint. Which DSPM for AI feature helps with this?"
-    choices:
-    - content: "AI-generated content review"
-      isCorrect: false
-      explanation: "Incorrect: While DSPM for AI helps monitor AI-generated content, DLP policies specifically enforce restrictions on AI interactions."
-    - content: "Data loss prevention (DLP) policies"
-      isCorrect: true
-      explanation: "Correct: DSPM for AI integrates with DLP policies to prevent AI tools like Copilot from summarizing labeled or classified content."
-    - content: "Activity Explorer tracking"
-      isCorrect: false
-      explanation: "Incorrect: Activity Explorer helps investigate AI interactions but doesn't enforce data security policies."
 
   - content: "A security analyst needs to review AI usage trends across Microsoft 365 Copilot and non-Microsft AI tools. Which report should they use?"
     choices:
