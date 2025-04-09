@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ai-protect-sensitive-data.data-assessments
+title: Use Data assessments (preview) to detect oversharing risks
+metadata:
+  title: Use Data assessments (preview) to detect oversharing risks
+  description: "Use Data assessments (preview) to detect oversharing risks."
+  ms.date: 04/08/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/data-assessments.md)]
