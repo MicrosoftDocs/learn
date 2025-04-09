@@ -46528,6 +46528,11 @@
       "source_path": "learn-pr/wwl-data-ai/custom-model-ai-vision-image-classification/7-summary.md",
       "redirect_url": "/training/modules/classify-images/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-model-ai-vision-image-classification/2-understand-custom-model-types.md",
+      "redirect_url": "/training/modules/classify-images/",
+      "redirect_document_id": false
     }
   ]
 }
