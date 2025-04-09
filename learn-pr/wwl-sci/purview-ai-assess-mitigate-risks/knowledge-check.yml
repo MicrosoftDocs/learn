@@ -1,32 +1,19 @@
 ### YamlMime:ModuleUnit
-uid: learn-m365.wwl.purview-ai-data-security.knowledge-check
+uid: learn-m365.wwl.purview-ai-assess-mitigate-risks.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
   description: "Check your knowledge."
-  ms.date: 10/02/2024
+  ms.date: 04/10/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6
-content: |
-  [!include[](includes/knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "How do sensitivity labels in Microsoft 365 enhance the functionality of Copilot?"
-    choices:
-    - content: "By automatically translating content into multiple languages."
-      isCorrect: false
-      explanation: "Automatic translation isn't related to sensitivity labels."
-    - content: "By enabling Copilot to adhere to data protection settings in content generation."
-      isCorrect: true
-      explanation: "Sensitivity labels enable Copilot to adhere to data protection settings, ensuring the content it generates is compliant and secure."
-    - content: "By optimizing the speed of content creation in Copilot."
-      isCorrect: false
-      explanation: "Optimization of content creation speed isn't a function of sensitivity labels."
   - content: "Considering the **Risky browser usage (preview)** policy template in Microsoft Purview, what aspect of organizational risk management does it address?"
     choices:
     - content: "Externally originated cyber threats."
@@ -49,14 +36,3 @@ quiz:
     - content: "An approach to balance innovation with data security."
       isCorrect: true
       explanation: "Implementing Adaptive Protection to manage risks associated with external AI tools shows Contoso's effort to balance innovation with data security."
-  - content: "In the context of Microsoft Purview Endpoint DLP, why is the use case to block pasting of sensitive data into generative AI websites important?"
-    choices:
-    - content: "It enhances the efficiency of data processing on AI websites."
-      isCorrect: false
-      explanation: "Efficiency of data processing on AI websites isn't the primary concern of this feature."
-    - content: "It streamlines the workflow for content creation on AI platforms."
-      isCorrect: false
-      explanation: "Streamlining content creation isn't the main function of this DLP feature."
-    - content: "It prevents the potential exposure of sensitive information on unsecured platforms."
-      isCorrect: true
-      explanation: "Blocking sensitive data pasting is important for preventing exposure of sensitive information on potentially unsecured external platforms."

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn-m365.wwl.purview-ai-data-security.insider-risk-management-generative-ai-usage
+uid: learn-m365.wwl.purview-ai-assess-mitigate-risks.insider-risk-management-generative-ai-usage
 title: Detect generative AI usage with Insider Risk Management
 metadata:
   title: Detect generative AI usage with Insider Risk Management
   description: "Detect generative AI usage with Insider Risk Management"
-  ms.date: 10/02/2024
+  ms.date: 04/10/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
