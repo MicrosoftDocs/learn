@@ -25,11 +25,11 @@ There are many aspects to building and deploying secure applications. Here are t
 
 Security isn't something you can just add later to an application or a system. Secure development must be part of every stage of the software-development life cycle. This concept is even more important for critical applications and those applications that process sensitive or highly confidential information.
 
-In practice, to hold teams accountable for what they develop, processes need to **shift left**, or be completed earlier, in the development lifecycle. By moving steps from a final gate at deployment time to an earlier step, fewer mistakes are made, and developers can move more quickly.
+In practice, to hold teams accountable for what they develop, processes need to **shift left**, or be completed earlier in the development lifecycle. By moving steps from a final gate at deployment time to an earlier step, fewer mistakes are made, and developers can move more quickly.
 
 Application-security concepts weren't a focus for developers in the past. Apart from the education and training issues, it's because their organizations emphasized fast development of features.
 
-With the introduction of DevOps practices however, security testing is easier to integrate into the pipeline. Rather than being a task performed by security specialists, security testing should just be part of the day-to-day delivery processes.
+However, with the introduction of DevOps practices, security testing is easier to integrate into the pipeline. Rather than being a task performed by security specialists, security testing should just be part of the day-to-day delivery processes.
 
 Overall, when the time for rework is taken into account, adding security to your DevOps practices earlier in the development lifecycle allows development teams to catch issues earlier. Catching issues earlier can actually reduce the overall time it takes to develop quality software.
 
@@ -53,9 +53,6 @@ From the Security tab, you can add features to your GitHub workflow to help avoi
 - **Code scanning** that helps you find, triage, and fix vulnerabilities and errors in your code.
 
 For more information, see [GitHub security features](https://docs.github.com/code-security/getting-started/github-security-features).
-
-> [!NOTE]
-> Dependabot alert advisories for malware are currently in beta and subject to change. Only advisories that have been reviewed by GitHub will trigger Dependabot alerts.
 
 Next, we explore some of these features and learn ways to distribute security and operational responsibilities across all phases of the software-development lifecycle.
 
@@ -99,11 +96,11 @@ x86/
 
 Your repository might include multiple `.gitignore` files. Settings are inherited from parent directories, with overriding fields in new `.gitignore` files taking precedence over parent settings for their folders and subfolders. It's significant effort to maintain the root `.gitignore` file, although adding a `.gitignore` file into a project directory can be helpful when that project has specific requirements that are easier to maintain separately from the parent, such as files that should *not* be ignored.
 
-To learn more about `.gitignore`, see [Ignoring files](https://docs.github.com/get-started/getting-started-with-git/ignoring-files). Also check out the collection of starter `.gitignore` files offered for various platforms in the [gitignore repository](https://github.com/github/gitignore).
+To learn more about `.gitignore`, see [Ignoring files](https://docs.github.com/get-started/git-basics/ignoring-files). Also check out the collection of starter `.gitignore` files offered for various platforms in the [gitignore repository](https://github.com/github/gitignore).
 
 ## Remove sensitive data from a repository
 
-While `.gitignore` files can be useful in helping contributors avoid committing sensitive data, it's just a strong suggestion. Developers can still work around it to add files if they're motivated enough, and sometimes files might slip through because they don't meet the `.gitignore` file configuration. Project participants should always be on the lookout for commits that contain data that shouldn't be included in the repository or its history.
+While `.gitignore` files can be useful in helping contributors avoid committing sensitive data, they're just a strong suggestion. Developers can still work around a `.gitignore` file to add files if they're motivated enough, and sometimes files might slip through because they don't meet the `.gitignore` file configuration. Project participants should always be on the lookout for commits that contain data that shouldn't be included in the repository or its history.
 
 > [!IMPORTANT]
 > You should assume that any data committed to GitHub at any point has been compromised. Simply overwriting a commit isn't enough to ensure the data won't be accessible in the future. For the complete guide to removing sensitive data from GitHub, see [Removing sensitive data from a repository](https://docs.github.com/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository).
@@ -114,14 +111,14 @@ You can create a [branch protection rule](https://docs.github.com/repositories/c
 
 You can use the workflows that protect the branch to:
 
-- Run a build to verify the code changes can be built
-- Run a linter to check for typos and conformation to the internal coding conventions
-- Run automated tests to check for any behavior changes of the code
-- And so on
+- Run a build to verify the code changes can be built;
+- Run a linter to check for typos and conformation to the internal coding conventions;
+- Run automated tests to check for any behavior changes of the code;
+- And so on.
 
 ## Add a CODEOWNERS file
 
-By adding a [CODEOWNERS](https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-code-owners#codeowners-syntax) file to your repository, you can assign individual team members or entire teams as code owners to paths in your repository. These code owners are then required for pull-request reviews on any changes to files in a path for which they're configured.
+By adding a [CODEOWNERS](https://docs.github.com/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners#codeowners-syntax) file to your repository, you can assign individual team members or entire teams as code owners to paths in your repository. These code owners are then required for pull-request reviews on any changes to files in a path for which they're configured.
 
 ```
 # Changes to files with the js extensions need to be reviewed by the js-owner user/group:
