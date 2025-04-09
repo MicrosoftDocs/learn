@@ -46493,6 +46493,11 @@
       "source_path": "learn-pr/azure/build-cosmos-db-java-app/index.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-model-ai-vision-image-classification/index.md",
+      "redirect_url": "/training/modules/classify-images/",
+      "redirect_document_id": false
     }
- ]
+  ]
 }
