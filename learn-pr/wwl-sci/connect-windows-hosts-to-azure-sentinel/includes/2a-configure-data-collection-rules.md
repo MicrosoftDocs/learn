@@ -12,9 +12,9 @@ The Windows Security Events via AMA Connector uses Data Collection Rules (DCRs) 
 
 These include:
 
-    - Windows servers installed on physical machines
-    - Windows servers installed on on-premises virtual machines
-    - Windows servers installed on virtual machines in non-Azure clouds
+- Windows servers installed on physical machines
+- Windows servers installed on on-premises virtual machines
+- Windows servers installed on virtual machines in non-Azure clouds
 
 ## Connect Windows Hosts
 
