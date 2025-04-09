@@ -4,12 +4,13 @@ Imagine yourself in the role of a network engineer at an organization that is in
 
 In this module, you will:
 
-- Implement virtual networks.
+- Explore virtual networks and subnets
 - Configure public IP services.
-- Design and implement name resolution.
-- Design and implement cross-VNET connectivity.
-- Implement virtual network routing.
-- Design and implement an Azure Virtual Network NAT.
+- Explore domain name resolution.
+- Explore virtual network peering. 
+- Explore virtual network routing.
+- Learn about Azure Virtual Network NAT.
+
 
 ## Prerequisites
 
