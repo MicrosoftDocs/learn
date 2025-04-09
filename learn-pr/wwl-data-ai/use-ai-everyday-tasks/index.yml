@@ -3,7 +3,7 @@ uid: learn.wwl.use-ai-everyday-tasks
 metadata:
   title: Use AI for everyday tasks
   description: "In this module, you dive into the fascinating world of generative AI and discover how it can simplify your daily tasks. You learn the essentials of crafting effective prompts, explore various AI tools, and understand how to analyze and build on AI-generated results. By the end, you'll be equipped with the knowledge to use AI responsibly and ethically, making this an exciting journey for any AI enthusiast!"
-  ms.date: 03/17/2025
+  ms.date: 04/09/2025
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module-intro-to-product
@@ -24,7 +24,6 @@ abstract: |
   -   Write effective prompts and find helpful resources.
 prerequisites: None
 iconUrl: /training/achievements/explore-microsoft-copilot-business-users.svg
-hidden: true
 levels:
 - beginner
 roles:

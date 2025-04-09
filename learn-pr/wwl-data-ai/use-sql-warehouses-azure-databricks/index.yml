@@ -5,7 +5,7 @@ metadata:
   description: Use SQL Warehouses in Azure Databricks
   ms.date: 09/05/2024
   author: wwlpublish
-  ms.author: theresai
+  ms.author: jamesh
   ms.topic: module
   ms.service: azure
 title: Use SQL Warehouses in Azure Databricks
@@ -38,4 +38,4 @@ units:
 - learn.wwl.use-sql-warehouses-azure-databricks.summary
 badge:
   uid: learn.wwl.use-sql-warehouses-azure-databricks.badge
-
+

@@ -1,15 +1,15 @@
-In this exercise, you'll review and manage your firewall rules by using the Azure portal. You'll also configure the most secure connection while you're using the public endpoint.
+In this exercise, you review and manage your firewall rules by using the Azure portal. You also configure the most secure connection while you're using the public endpoint.
 
-Open the Azure portal using the following button if you haven't already done so.
+Use the following button to open the Azure portal:
 
 > [!div class="nextstepaction"]
 > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
 ## Secure the network
 
-When you deployed your database in Azure SQL Database, the script you ran enabled **Allow Azure services and resources access to this server**, which allows any resource from any region or subscription access to your resource. It's important to uncheck the setting to ensure the most secure configuration of the public endpoint. When the setting **Allow Azure services and resources access to this server** is unchecked, it blocks all connections and networks other than the ones you've added.
+When you deployed your database in Azure SQL Database, you ran a script that enabled **Allow Azure services and resources access to this server**. This setting allows any resource from any region or subscription access to your resource. It's important to uncheck the setting to ensure the most secure configuration of the public endpoint. When the setting **Allow Azure services and resources access to this server** is unchecked, it blocks all connections and networks other than the ones you added.
 
-In this exercise, you'll learn how to view and edit firewall rules. Setting up firewall rules can be complicated, because you'll need to specify a range of IP addresses for all your connections, which can sometimes use dynamic IP addresses. Alternative methods for securing your network are provided in a demonstration video at the end of this exercise.  
+In this exercise, you learn how to view and edit firewall rules. Setting up firewall rules can be complicated. You need to specify a range of IP addresses for all your connections, some of which can use dynamic IP addresses. Alternative methods for securing your network are provided in a demonstration video at the end of this exercise.  
 
 ### Manage firewall rules in the Azure portal
 
@@ -21,11 +21,11 @@ In this exercise, you'll learn how to view and edit firewall rules. Setting up f
 
 1. For **Allow Azure services and resources to access this server**, uncheck the box next to the setting.
 
-1. The system should have added your computer's Client IP address during deployment, but if none of the rules match your Client IP, add your IP address under **Rule name** to enable you to log in from SQL Server Management Studio (SSMS).  
+1. The system should add your computer's Client IP address during deployment, but if none of the rules match your Client IP, add your IP address under **Rule name** to enable you to log in from SQL Server Management Studio (SSMS).  
 
 1. Select **Save** to save your changes. In the SQL database menu, select **Overview** to return to the overview page.  
 
-1. To confirm that you still have access from your local machine, go to SSMS. Right-click your database in **Object Explorer** and select **Refresh** to refresh your connection to the Azure SQL Database logical server. If no error occurs, you've successfully configured secure access to your Azure SQL Database logical server for your IP address.  
+1. To confirm that you still have access from your local machine, go to SSMS. Right-click your database in **Object Explorer** and select **Refresh** to refresh your connection to the Azure SQL Database logical server. If no error occurs, you successfully configured secure access to your Azure SQL Database logical server for your IP address.  
 
     :::image type="content" source="../media/4-db-refresh.png" alt-text="Screenshot of how to refresh the database connection.":::  
 
@@ -67,15 +67,15 @@ Setting up server-level firewall rules by using either the Azure portal or Cloud
 
 ## Go further
 
-You've now learned how to update firewall rules for specific IP addresses or ranges of IP addresses on the server and at the database level. In a production environment, you might also need access from various virtual networks or resources, such as Azure apps or Azure VMs. Azure VMs have dynamic IP addresses, which means that the addresses change. You can set up static IP addresses, which can be difficult to maintain using firewall rules. Alternatively, you can use virtual network rules to manage access from specific subnets that contain your VMs or other services. You could also configure a private endpoint, the most secure way to connect to an Azure SQL Database logical server.
+In this unit, you learned how to update firewall rules for specific IP addresses or ranges of IP addresses on the server and at the database level. In a production environment, you might also need access from various virtual networks or resources, such as Azure apps or Azure VMs. Azure VMs have dynamic IP addresses, which means that the addresses change. You can set up static IP addresses, which can be difficult to maintain using firewall rules. Alternatively, you can use virtual network rules to manage access from specific subnets that contain your VMs or other services. You could also configure a private endpoint, the most secure way to connect to an Azure SQL Database logical server.
 
 You can also set the **Minimum TLS version** allowed from client connections to the logical server using the **Networking** menu and going to the **Connectivity** tab of the Azure SQL logical server.
 
-In this video, you'll learn how to create, configure, and compare the various methods of connecting to a database in Azure SQL Database:
+In this video, you learn how to create, configure, and compare the various methods of connecting to a database in Azure SQL Database:
 
-* Allow access to Azure resources
-* Firewall rules
-* Virtual network rules
-* Private endpoint
+- Allowing access to Azure services
+- Using firewall rules
+- Using virtual network rules
+- Connecting through a private endpoint
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=b809eaa2-1212-48dc-8b65-7f3ab88aa048]
