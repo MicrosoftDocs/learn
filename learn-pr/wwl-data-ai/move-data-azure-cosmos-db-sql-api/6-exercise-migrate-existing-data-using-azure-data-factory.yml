@@ -4,10 +4,10 @@ title: 'Exercise: Migrate existing data using Azure Data Factory'
 metadata:
   title: 'Exercise: Migrate existing data using Azure Data Factory'
   description: "Exercise: Migrate existing data using Azure Data Factory"
-  ms.date: 10/28/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/6-exercise-migrate-existing-data-using-azure-data-factory.md)]
+  [!include[](includes/6-exercise-migrate-existing-data-using-azure-data-factory.md)]

@@ -5,7 +5,7 @@ metadata:
   description: AI agents represent the next generation of intelligent applications. Learn how they can be developed and used on Microsoft Azure.
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 02/12/2025
+  ms.date: 04/03/2025
   ms.service: azure-ai-services
   ms.topic: module-standard-task-based
   ms.collection:
@@ -41,4 +41,4 @@ units:
 - learn.wwl.ai-agent-fundamentals.summary
 badge:
   uid: learn.wwl.ai-agent-fundamentals.badge
-
+

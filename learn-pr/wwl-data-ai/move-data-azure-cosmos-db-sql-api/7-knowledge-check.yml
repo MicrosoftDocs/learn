@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.moving-data-into-out-of-azure-cosmos-db-sql-api.knowledge-check
-title: Module assessment
+title: Knowledge check
 metadata:
-  title: Module assessment
+  title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/17/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -13,25 +13,25 @@ labModal: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "Which type of component in Azure Data Factory will load data out to Azure Cosmos DB for NoSQL after it has been transformed?"
+  - content: "Which type of component in Azure Data Factory will load data out to Azure Cosmos DB for NoSQL after it transforms?"
     choices:
     - content: "Sink"
       isCorrect: true
-      explanation: "Correct. A sink is the destination for data after it has been transformed."
+      explanation: "Correct. A sink is the destination for data after it transforms."
     - content: "Source"
       isCorrect: false
-      explanation: "Incorrect. A source is the data that has been ingested prior to transformation."
+      explanation: "Incorrect. A source is the data that is ingested before the transformation."
     - content: "Input"
       isCorrect: false
-      explanation: "Incorrect. An input is additional data that can be used in the ETL process."
-  - content: "After enabling Synapse Link at the Azure Cosmos DB for NoSQL account level, what should you do before you can use the Spark connector with a specific container?"
+      explanation: "Incorrect. An input is extra data that can be used in the ETL (Extract, Transform, and Load) process."
+  - content: "After Azure Synapse Link is enabled at the Azure Cosmos DB for NoSQL account level, what should be done before the Spark connector can be used with a specific container?"
     choices:
     - content: "Install Apache Spark in Azure Cosmos DB for NoSQL"
       isCorrect: false
-      explanation: "Incorrect. You can't install Apache Spark in Azure Cosmos DB for NoSQL."
-    - content: "No further action is necessary after enabling Synapse Link"
+      explanation: "Incorrect. Apache Spark can't be installed in Azure Cosmos DB for NoSQL."
+    - content: "No further action is necessary after enabling Azure Synapse Link"
       isCorrect: false
-      explanation: "Incorrect. Enabling Synapse Link isn't enough to use the Spark connector with a specific container."
+      explanation: "Incorrect. Enabling Azure Synapse Link isn't enough to use the Spark connector with a specific container."
     - content: "Enable analytical storage at the container level"
       isCorrect: true
-      explanation: "Correct. Each container should have analytical storage enabled."
+      explanation: "Correct. Each container should have analytical storage enabled."

@@ -3,7 +3,7 @@ uid: learn.wwl.query-azure-cosmos-db-sql-api
 metadata:
   title: Query the Azure Cosmos DB for NoSQL
   description: "Author queries for Azure Cosmos DB for NoSQL using the SQL query language."
-  ms.date: 03/10/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: module-standard-task-based
@@ -39,4 +39,4 @@ units:
 - learn.wwl.query-azure-cosmos-db-sql-api.knowledge-check
 - learn.wwl.query-azure-cosmos-db-sql-api.summary
 badge:
-  uid: learn.wwl.query-azure-cosmos-db-sql-api.badge
+  uid: learn.wwl.query-azure-cosmos-db-sql-api.badge
