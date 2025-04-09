@@ -20,4 +20,7 @@ Contoso Ltd, a fictitious organization, is in the process of migrating infrastru
 > [!NOTE]
 > You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
+> [!NOTE]
+> You can view the [Design and implement a Virtual Network in Azure](https://microsoftlearning.github.io/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/Instructions/Exercises/M01-Unit%204%20Design%20and%20implement%20a%20Virtual%20Network%20in%20Azure.html) instructions directly. 
+
 [![Screenshot of the simulation page.](../media/simulation-vnet-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Design%20and%20implement%20a%20virtual%20network%20in%20Azure)

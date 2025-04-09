@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Understand Azure Pipelines
   description: Learn about pipelines, jobs, and steps. Also, learn how pipelines run on agents.
-  ms.date: 01/30/2023
+  ms.date: 04/01/2025
   author: mumian
   ms.author: jgao
   ms.topic: unit
@@ -14,4 +14,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/2-understand-azure-pipelines.md)]
-
+
