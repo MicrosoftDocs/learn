@@ -21,7 +21,7 @@ abstract: |
 prerequisites: None
 products:
   - ms-copilot
-iconUrl: /training/achievements/get-started-with-ai.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
