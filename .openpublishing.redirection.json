@@ -46518,6 +46518,11 @@
       "source_path": "learn-pr/wwl-data-ai/custom-model-ai-vision-image-classification/6-knowledge-check.md",
       "redirect_url": "/training/modules/classify-images/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-model-ai-vision-image-classification/4-label-train-custom-model.md",
+      "redirect_url": "/training/modules/classify-images/",
+      "redirect_document_id": false
     }
   ]
 }
