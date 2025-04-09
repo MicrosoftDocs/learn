@@ -52,7 +52,7 @@ jobs:
 ## Pass custom environment variables to a workflow
 <!-- INFOMAGNUS UPDATES for sub OD 1.6.5 go here. Source Material: Infomagnus team to find source material and cite sources when they update material  --> 
 ## Add environment variables
-<!-- INFOMAGNUS END
+<!-- INFOMAGNUS END -->
 ## Scripts in your workflow
 
 In the preceding workflow snippet examples, the `run` keyword is used to print a string of text. Because the `run` keyword tells the job to execute a command on the runner, you use the `run` keyword to run actions or scripts.
