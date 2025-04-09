@@ -2,6 +2,7 @@
 uid: learn.wwl.configure-azure-files-file-sync.knowledge-check
 title: Knowledge check
 metadata:
+  hidden_question_numbers: ["D3680F1B_26","D3680F1B_43","D3680F1B_51","D3680F1B_79","D3680F1B_136"]
   ai_generated_module_assessment: true
   adobe-target: true
   prefetch-feature-rollout: true
