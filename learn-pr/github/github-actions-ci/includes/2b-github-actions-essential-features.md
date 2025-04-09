@@ -27,7 +27,8 @@ jobs:
 This example is using the `github.ref` context to check the branch that triggered the workflow. If the branch is `main`, the runner is executed and prints out "Deploying to production server on branch $GITHUB_REF". The default environment variable `$GITHUB_REF` is used in the runner to refer to the branch. Notice that default environment variables are all uppercase where context variables are all lowercase.
 
 <!-- INFOMAGNUS UPDATES for sub OD 1.4.2 go here. Source Material: https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs --> 
-
+## Identify the available contextual information in a workflow
+<!-- INFOMAGNUS 1.4.2 END
 ## Custom environment variables
 
 Similar to using default environment variables, you can use custom environment variables in your workflow file. To create a custom variable, you need to define it in your workflow file using the `env` context. If you want to use the value of an environment variable inside a runner, you can use the runner operating system's normal method for reading environment variables.
@@ -45,9 +46,13 @@ jobs:
           First_Name: Mona
 ```
 
-<!-- INFOMAGNUS UPDATES for sub OD 1.4.3, 1.4.6, and 1.4.7 go here. Source Material: Infomagnus team to find source material and cite sources when they update material  --> 
+<!-- INFOMAGNUS UPDATES for sub OD 1.4.3, 1.4.6, and 1.4.7 go here. Source Material: Infomagnus team to find source material and cite sources when they update material  -->
+## Identify where to set custom environment variables in a workflow
+## Use default context in a workflow
+## Pass custom environment variables to a workflow
 <!-- INFOMAGNUS UPDATES for sub OD 1.6.5 go here. Source Material: Infomagnus team to find source material and cite sources when they update material  --> 
-
+## Add environment variables
+<!-- INFOMAGNUS END
 ## Scripts in your workflow
 
 In the preceding workflow snippet examples, the `run` keyword is used to print a string of text. Because the `run` keyword tells the job to execute a command on the runner, you use the `run` keyword to run actions or scripts.
@@ -158,3 +163,5 @@ GET /repos/{owner}/{repo}/actions/runs/{run_id}/logs
 ```
 
 <!-- INFOMAGNUS UPDATES for sub OD 1.4.4 go here. Source Material: Infomagnus team to find source material and cite sources when they update material  --> 
+## Identify where to use an an installation token from a GitHub App
+
