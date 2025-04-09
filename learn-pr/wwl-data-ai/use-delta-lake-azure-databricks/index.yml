@@ -5,7 +5,7 @@ metadata:
   description: "Manage data with Delta Lake"
   ms.date: 08/06/2024
   author: wwlpublish
-  ms.author: theresai
+  ms.author: jamesh
   ms.topic: module-standard-task-based
   ms.service: azure-databricks
 title: Manage data with Delta Lake
@@ -39,4 +39,4 @@ units:
 - learn.wwl.use-delta-lake-azure-databricks.summary
 badge:
   uid: learn.wwl.use-delta-lake-azure-databricks.badge
-
+

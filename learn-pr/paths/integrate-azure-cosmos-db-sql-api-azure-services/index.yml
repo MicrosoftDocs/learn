@@ -3,7 +3,7 @@ uid: learn.wwl.integrate-azure-cosmos-db-sql-api-azure-services
 metadata:
   title: Integrate Azure Cosmos DB for NoSQL with Azure services
   description: Integrate Azure Cosmos DB for NoSQL with Azure services
-  ms.date: 10/17/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: learning-path
@@ -19,8 +19,10 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+- azure-cognitive-search
 subjects:
 - databases
+- artificial-intelligence
 modules:
 - learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk
 - learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed

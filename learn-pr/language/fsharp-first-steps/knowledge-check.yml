@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Module assessment
   description: "Review your knowledge of F#"
-  ms.date: 02/22/2023
+  ms.date: 03/26/2025
   author: baronfel
   ms.author: chethusk 
   ms.topic: unit
@@ -15,20 +15,20 @@ quiz:
   questions:
   - content: "What is F#?"
     choices:
-    - content: "A programming language for the Java Virtual Machine (JVM)"
+    - content: "A programming language for the Java Virtual Machine (JVM)."
       isCorrect: false
-      explanation: "While F# is a programming language, it is not a programming language for the Java Virtual Machine (JVM)"
-    - content: "A musical note"
+      explanation: "While F# is a programming language, it isn't a programming language for the Java Virtual Machine (JVM)."
+    - content: "A musical note."
       isCorrect: false
-      explanation: "While it is true that F# is a musical note, it's not a musical note in this context."
-    - content: "F# is an open-source, cross-platform programming language that makes it easy to write succinct, performant, robust, and practical code"
+      explanation: "While it's true that F# is a musical note, it's not a musical note in this context."
+    - content: "F# is an open-source, cross-platform programming language that makes it easy to write succinct, performant, robust, and practical code."
       isCorrect: true
       explanation: "F#"
   - content: "What is a feature in F# that can help you write less code?"
     choices:
     - content: "Type inference"
       isCorrect: true
-      explanation: "With type inference, you don't have to explicitly define your data types resulting in less code"
+      explanation: "With type inference, you don't have to explicitly define your data types resulting in less code."
     - content: "Asynchronous programming"
       isCorrect: false
       explanation: "F#'s built-in support for asynchronous programming simplifies asynchronous workflows, but it doesn't directly translate to less code."
@@ -40,31 +40,31 @@ quiz:
     - content: "Debugger"
       isCorrect: false
       explanation: "While the debugger can help you write bug-free code, it doesn't directly have an impact on performance."
-    - content: "Built-in parallelism & concurrency"
+    - content: "Built-in parallelism and concurrency."
       isCorrect: true
-      explanation: "F# simplifies writing performant code by having features like `async` expressions built into the language"
-    - content: "Strong functional & object programming support"
+      explanation: "F# simplifies writing performant code by having features like `async` expressions built into the language."
+    - content: "Strong functional and object programming support."
       isCorrect: false
       explanation: "Having the choice to use whichever patterns are best for the job doesn't directly translate into performant code."
   - content: "What is a feature in F# that can help you write robust code?"
     choices:
     - content: "Lightweight syntax"
       isCorrect: false
-      explanation: "F#'s lightweight syntax can help you write less code, but that does not mean it is robust."
+      explanation: "F#'s lightweight syntax can help you write less code, but that doesn't mean it's robust."
     - content: "Sequences"
       isCorrect: false
       explanation: "Sequences are a language feature, but not one that directly impacts how robust your code is."
     - content: "Immutable by default"
       isCorrect: true
-      explanation: "Values that can't change during the execute your code are simpler to test and reason about help build robust code."
+      explanation: "Values that can't change during the execution of your code are simpler to test, and help you write robust code."
   - content: "What is F# Interactive?"
     choices:
-    - content: "A notebook computing environment for F#"
+    - content: "A notebook computing environment for F#."
       isCorrect: false
       explanation: ".NET has a notebook computing environment (.NET Interactive) where you can run F#, C#, and other languages, it's not the same as F# Interactive."
-    - content: "A programming environment to run F# code interactively at the console, or to execute F# scripts"
+    - content: "A programming environment to run F# code interactively at the console, or to execute F# scripts."
       isCorrect: true
-      explanation: "Correct! In F# Interactive, you can use the REPL directly or write your code in script with the .fsx file extension."
-    - content: "A video game"
+      explanation: "Correct! In F# Interactive, you can use the Read-Evaluate-Print-Loop (REPL) directly or write your code in a script with the *.fsx* file extension."
+    - content: "A video game."
       isCorrect: false
-      explanation: "Although building applications with F# interactive can be a lot of fun, it's not a video game."
+      explanation: "Although building applications with F# interactive can be great fun, it's not a video game."

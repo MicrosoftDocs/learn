@@ -3,7 +3,7 @@ uid: learn.wwl.configure-azure-cosmos-db-sql-api
 metadata:
   title: Configure Azure Cosmos DB for NoSQL
   description: "Select between the various throughput offerings in Azure Cosmos DB for NoSQL."
-  ms.date: 10/22/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: module-standard-task-based
@@ -38,4 +38,4 @@ units:
 - learn.wwl.configure-azure-cosmos-db-sql-api.summary
 badge:
   uid: learn.wwl.configure-azure-cosmos-db-sql-api.badge
-
+

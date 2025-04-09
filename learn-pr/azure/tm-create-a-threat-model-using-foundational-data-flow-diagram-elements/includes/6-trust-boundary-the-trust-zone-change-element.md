@@ -14,7 +14,7 @@ Examples include:
 - Connections to third-party services
 - Parts of your system only available to administrators
 
-Areas with changing trust zones are the most targeted by attackers, and should be carefully designed.
+Areas with changing trust zones are the most targeted by attackers and should be carefully designed.
 
 Microsoft has predefined trust-zone requirements for engineers to use internally. It takes the guesswork out of which boundaries to apply. If you work at Microsoft, contact your security team to learn more.
 

@@ -4,11 +4,11 @@ title: 'Exercise: Configure the Azure Cosmos DB for NoSQL SDK for offline develo
 metadata:
   title: 'Exercise: Configure the Azure Cosmos DB for NoSQL SDK for offline development'
   description: "Exercise: Configure the Azure Cosmos DB for NoSQL SDK for offline development"
-  ms.date: 03/09/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
   zone_pivot_groups: dev-lang-csharp-node-python
 durationInMinutes: 15
 content: |
-  [!include[](includes/6-exercise-for-offline-development.md)]
+  [!include[](includes/6-exercise-for-offline-development.md)]

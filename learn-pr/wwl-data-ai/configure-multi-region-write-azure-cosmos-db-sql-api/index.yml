@@ -3,7 +3,7 @@ uid: learn.wwl.configure-multi-region-write-azure-cosmos-db-sql-api
 metadata:
   title: Configure multi-region write in Azure Cosmos DB for NoSQL
   description: "Write data to multiple regions using Azure Cosmos DB for NoSQL."
-  ms.date: 10/18/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: module-standard-task-based
@@ -36,4 +36,4 @@ units:
 - learn.wwl.configure-multi-region-write-azure-cosmos-db-sql-api.knowledge-check
 - learn.wwl.configure-multi-region-write-azure-cosmos-db-sql-api.summary
 badge:
-  uid: learn.wwl.configure-multi-region-write-azure-cosmos-db-sql-api.badge
+  uid: learn.wwl.configure-multi-region-write-azure-cosmos-db-sql-api.badge

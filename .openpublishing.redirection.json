@@ -16073,7 +16073,12 @@
     {
       "source_path_from_root": "/learn-pr/languages/python-if-elif-else/index.md",
       "redirect_url": "/training/modules/python-boolean-types"
-    }, 
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/fundamentals-machine-learning/9-azure-machine-learning.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-machine-learning/",
+      "redirect_document_id": false
+    },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/fundamentals-generative-ai/3-language models.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
@@ -46452,6 +46457,41 @@
     {
       "source_path": "learn-pr/wwl-azure/guided-project-langstons-ant/06-summary.md",
       "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-cosmos-db-java-app/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-cosmos-db-java-app/2-setup.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-cosmos-db-java-app/3-crud-operations.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-cosmos-db-java-app/4-query.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-cosmos-db-java-app/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-cosmos-db-java-app/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-cosmos-db-java-app/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
       "redirect_document_id": false
     }
  ]

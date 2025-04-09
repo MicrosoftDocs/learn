@@ -2,6 +2,8 @@
 uid: learn.wwl.manage-git-branches-workflows.knowledge-check
 title: Module assessment
 metadata:
+  hidden_question_numbers: ["2DB15F8E_2","2DB15F8E_34","2DB15F8E_47","2DB15F8E_132"]
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
   ms.date: 05/24/2024
@@ -46,4 +48,4 @@ quiz:
       explanation: "Incorrect. Create a new feature branch by using git checkout -b feature_branch."
     - content: "git feature start feature_branch."
       isCorrect: false
-      explanation: "Incorrect. Create a new feature branch by using git checkout -b feature_branch."
+      explanation: "Incorrect. Create a new feature branch by using git checkout -b feature_branch."

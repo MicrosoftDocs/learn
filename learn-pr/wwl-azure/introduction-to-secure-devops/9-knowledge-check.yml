@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-to-secure-devops.knowledge-check
 title: Module assessment
 metadata:
+  hidden_question_numbers: ["CE0F2202_34","CE0F2202_42","CE0F2202_46","CE0F2202_71"]
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
   ms.date: 05/22/2024
@@ -70,4 +72,4 @@ quiz:
       explanation: "Incorrect. There are five major threat modeling steps. Defining security requirements, Creating an application diagram, Identifying threats, Mitigating threats, and Validating that threats have been mitigated."
     - content: "Mitigating threats."
       isCorrect: false
-      explanation: "Incorrect. There are five major threat modeling steps. Defining security requirements, Creating an application diagram, Identifying threats, Mitigating threats, and Validating that threats have been mitigated."
+      explanation: "Incorrect. There are five major threat modeling steps. Defining security requirements, Creating an application diagram, Identifying threats, Mitigating threats, and Validating that threats have been mitigated."
