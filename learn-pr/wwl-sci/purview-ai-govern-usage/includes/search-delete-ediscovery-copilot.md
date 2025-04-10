@@ -105,7 +105,7 @@ You can delete Copilot data by using Microsoft Graph Explorer or PowerShell. Mak
 
    When successful, a confirmation appears in a green banner with the HTTP response code.
 
-#### Option 2:Use PowerShell (for government tenants)
+#### Option 2: Use PowerShell (for government tenants)
 
 If your organization is in a US Government cloud where Graph Explorer isn't supported, connect to Microsoft Graph and submit a request using PowerShell:
 
