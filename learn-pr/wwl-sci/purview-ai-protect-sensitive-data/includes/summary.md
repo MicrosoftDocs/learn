@@ -14,6 +14,6 @@ These capabilities support responsible AI use by helping organizations apply con
 
 - [Data, Privacy, and Security for Microsoft 365 Copilot](/copilot/microsoft-365/microsoft-365-copilot-privacy?azure-portal=true)
 - [Microsoft Purview data security and compliance protections for generative AI apps](/purview/ai-microsoft-purview?azure-portal=true)
-- [Learn about sensitivity labels](/purview/sensitivity-labels?azure-portal=true)
+- [Get started with sensitivity labels](/purview/get-started-with-sensitivity-labels?azure-portal=true)
 - [Get started with Microsoft 365 Copilot - admin guide](/copilot/microsoft-365/microsoft-365-copilot-setup?azure-portal=true)
 - [Get started with endpoint data loss prevention](/purview/endpoint-dlp-getting-started?azure-portal=true)
