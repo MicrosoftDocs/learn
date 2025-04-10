@@ -1,21 +1,13 @@
-In an age where artificial intelligence (AI) is increasingly being integrated into business processes, ensuring data security becomes a complex task. 
+AI tools introduce new challenges for protecting sensitive data. Information might be accessed without the right protections in place, shared too broadly, or exposed through risky user behavior. Traditional security controls often lack the visibility or flexibility to manage these risks effectively.
 
-Imagine this scenario: The adoption of generative AI technologies brought about improvements in efficiency and productivity. With these advancements, there's a growing concern about how to protect sensitive information that AI systems process and handle. Ensuring data security and addressing privacy issues are now more important than ever. How do you safeguard this data effectively? What strategies can be used to mitigate risks associated with generative AI?
+Microsoft Purview includes tools that help security teams identify, evaluate, and respond to AI-related risks. Data assessments in Data Security Posture Management for AI (DSPM) for AI detect oversharing issues in SharePoint and OneDrive. Insider Risk Management policies detect risky AI activity, such as sensitive prompts or browsing to generative AI sites. Adaptive Protection uses those insights to apply different enforcement actions based on each user’s risk level.
 
-In this module, you learn how to navigate these challenges by using Microsoft Purview. These solutions help your organization govern, protect, and manage data, wherever it lives. You learn about effective strategies to oversee, protect, and manage your data in an AI-enhanced environment.
+These capabilities work together to strengthen data protection in environments where AI tools are actively used.
 
 ## Learning objectives
 
-Upon completion of this module, you should be able to:
+By the end of this module, you'll be able to:
 
-- Apply sensitivity labels in Microsoft 365 Copilot for data security.
-- Protect data from AI threats using DLP strategies.
-- Detect AI usage risks with Insider Risk Management.
-- Implement Adaptive Protection against evolving AI threats.
-
-## Prerequisites
-
-- Basic understanding of sensitivity labels in Microsoft Purview
-- Fundamental knowledge of data loss prevention (DLP) in Microsoft Purview
-- An understanding of insider risk management (IRM) in Microsoft Purview
-- Familiarity with Adaptive Protection in Microsoft Purview
+- Detect oversharing risks with data assessments in DSPM for AI
+- Use Insider Risk Management to identify risky AI usage
+- Apply adaptive protection based on user risk levels to enforce DLP policies
