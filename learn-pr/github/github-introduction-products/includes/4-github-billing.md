@@ -11,8 +11,6 @@ The bill for each account is a combination of charges for your subscriptions and
 
 Understanding GitHub's billing structures is crucial for effective administration and cost management. This document focuses on differentiating how GitHub products are billed, including seat licenses, GitHub Actions, GitHub Packages, and the new billing platform's capabilities.
 
----
-
 ## Pricing for GitHub Actions
 
 GitHub Actions enables automation of workflows directly within repositories. Its pricing model varies based on repository visibility and account type:
@@ -21,11 +19,7 @@ GitHub Actions enables automation of workflows directly within repositories. Its
     
 - **Private Repositories**: Each account receives a certain amount of free minutes and storage for GitHub-hosted runners, depending on the account's plan. For example, GitHub Free for personal accounts includes 2,000 CI/CD minutes per month. Usage beyond the included amounts is controlled by spending limits.
     
-    
-
 It's important to monitor usage to avoid unexpected costs, especially for private repositories with high activity.
-
----
 
 ## Pricing and Support Options for Organizations
 
@@ -61,8 +55,6 @@ GitHub offers various plans tailored to organizational needs, each with distinct
 
 Organizations should evaluate their collaboration needs and security priorities to choose the plan that best fits their goals.
 
----
-
 ## Usage-Based Billing for Licenses (Metered Billing)
 
 With the enhanced billing platform, GitHub has introduced a usage-based billing model for licenses:
@@ -75,9 +67,6 @@ With the enhanced billing platform, GitHub has introduced a usage-based billing 
     
 
 This model eliminates the need to purchase a predefined number of licenses in advance, offering flexibility and cost efficiency.
-
-
----
 
 ## Billing Platform’s New Capabilities
 
