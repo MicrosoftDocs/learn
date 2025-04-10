@@ -2,9 +2,11 @@
 uid: learn.wwl.introduction-to-azure-virtual-networks.exercise-design-implement-virtual-network-azure
 title: 'Exercise: Design and implement a virtual network in Azure'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Design and implement a virtual network in Azure'
   description: "Exercise: Design and implement a virtual network in Azure"
-  ms.date: 03/28/2025
+  ms.date: 04/08/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
