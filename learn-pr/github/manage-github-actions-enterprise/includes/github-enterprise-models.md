@@ -32,7 +32,7 @@ This is the model designed for organizations requiring centralized user account 
 
 ###  GitHub Enterprise Cloud (GHEC) with **Data Residency**
 
-GitHub Enterprise Cloud (GHEC) with **Data Residency** is an important  is an important feature of GHEC for organizations that must comply with data protection regulations by ensuring specific data is stored in particular geographical regions.
+GitHub Enterprise Cloud (GHEC) with **Data Residency** is an important feature of GHEC for organizations that must comply with data protection regulations by ensuring specific data is stored in particular geographical regions.
 
 **It allows users to**: 
 
