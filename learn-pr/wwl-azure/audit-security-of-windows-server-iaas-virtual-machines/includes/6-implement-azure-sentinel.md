@@ -3,7 +3,7 @@ In addition to assessing and addressing problems with their hybrid environment's
 > [!NOTE]
 > SIEM solutions provide storage and analysis of logs, events, and alerts that other systems generate, and you can configure these solutions to raise their own alerts. SOAR solutions support the remediation of vulnerabilities and the overall automation of security processes.
 
-## What is Sentinel?
+## What is Microsoft Sentinel?
 
 Sentinel meets the needs of both SIEM and SOAR solutions through:
 
@@ -12,7 +12,7 @@ Sentinel meets the needs of both SIEM and SOAR solutions through:
 - Detecting threats with fewer false positives.
 - Responding to incidents quickly and automatically.
 
-### Prerequisites for Sentinel
+### Prerequisites for Microsoft Sentinel
 
 To enable Sentinel, you'll need:
 
