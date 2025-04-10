@@ -2,9 +2,11 @@
 uid: learn.wwl.introduction-to-azure-virtual-networks.exercise-configure-dns-settings-azure
 title: 'Exercise: Configure domain name servers settings in Azure'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: Configure domain name servers settings in Azure'
   description: "Exercise: Configure domain name servers settings in Azure"
-  ms.date: 03/28/2025
+  ms.date: 04/08/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
