@@ -12,7 +12,7 @@ This approach supports responsible AI use and aligns with organizational data go
 
 ### Prerequisites
 
-| **Step** | **Description** | **Learn more** |
+| Step | Description | Learn more |
 |------|-------------|------------|
 | Understand how Copilot data is stored | Copilot interactions are stored in a hidden folder within each user's Exchange mailbox.  | [Content stored in Exchange Online mailboxes for eDiscovery](/purview/ediscovery-what-is-stored-in-a-mailbox?azure-portal=true) |
 | Assign eDiscovery roles | To create a case, assign the **eDiscovery Manager** role. To delete Copilot data, assign the **Search And Purge** role.  | [Assign eDiscovery permissions in the Microsoft Purview portal](/purview/ediscovery-assign-permissions?azure-portal=true) |
