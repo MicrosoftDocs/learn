@@ -5,7 +5,7 @@ GitHub Enterprise Cloud (GHEC) is a cloud-based solution tailored for organizati
 
 GHEC is ideal for globally distributed teams, as it ensures high availability, automated backups, and seamless access to GitHub’s robust collaboration tools. It supports regulatory compliance and provides detailed audit logs for governance. With GHEC, organizations can leverage GitHub’s advanced capabilities without managing on-premises infrastructure.
 
-### 1. Standard User Model
+### Standard User Model
 This is the traditional user model on GitHub, where users manage their own account.
 
 **Characteristics of standard user model**:
@@ -48,7 +48,7 @@ GitHub Enterprise Cloud (GHEC) with **Data Residency** is an important feature o
     - Data is stored in the selected region with high availability and disaster recovery mechanisms.
     - Certain types of backup data may be replicated outside the region but remain encrypted.
 
-## 2. GitHub Enterprise Server (GHES)
+## GitHub Enterprise Server (GHES)
 GitHub Enterprise Server (GHES) is a self-hosted version of GitHub designed for organizations that require complete control over their GitHub instance. It is ideal for companies that want to host their repositories and associated data on-premises or in a private cloud environment for compliance, security, or performance reasons.
 
 ### Key Features of GitHub Enterprise Server
