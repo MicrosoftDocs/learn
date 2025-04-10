@@ -3,10 +3,9 @@ In this unit, you'll explore the different GitHub Enterprise deployment models�
 ## How users are managed
 GitHub Enterprise Cloud (GHEC) is a cloud-based solution tailored for organizations that need the flexibility and scalability of GitHub's infrastructure while maintaining enterprise-grade security and compliance. It offers features such as centralized user management, data residency options, and integration with identity providers like SAML and SCIM for single sign-on and user provisioning. 
 
-GHEC is ideal for globally distributed teams, as it ensures high availability, automated backups, and seamless access to GitHub’s robust collaboration tools. It supports regulatory compliance (e.g., GDPR) and provides detailed audit logs for governance. With GHEC, organizations can leverage GitHub’s advanced capabilities without managing on-premises infrastructure.
+GHEC is ideal for globally distributed teams, as it ensures high availability, automated backups, and seamless access to GitHub’s robust collaboration tools. It supports regulatory compliance and provides detailed audit logs for governance. With GHEC, organizations can leverage GitHub’s advanced capabilities without managing on-premises infrastructure.
 
-###  Standard User Model
-
+### 1. Standard User Model
 This is the traditional user model on GitHub, where users manage their own account.
 
 **Characteristics of standard user model**:
@@ -18,7 +17,6 @@ This is the traditional user model on GitHub, where users manage their own accou
 
 
 ###  The Enterprise Managed User (EMU) model
-
 This is the model designed for organizations requiring centralized user account management, offering better control and compliance features.
 
 **In EMU model**:
@@ -30,8 +28,7 @@ This is the model designed for organizations requiring centralized user account 
 
 
 
-###  GitHub Enterprise Cloud (GHEC) with **Data Residency**
-
+### GitHub Enterprise Cloud (GHEC) with **Data Residency**
 GitHub Enterprise Cloud (GHEC) with **Data Residency** is an important feature of GHEC for organizations that must comply with data protection regulations by ensuring specific data is stored in particular geographical regions.
 
 **It allows users to**: 
@@ -52,8 +49,6 @@ GitHub Enterprise Cloud (GHEC) with **Data Residency** is an important feature o
     - Certain types of backup data may be replicated outside the region but remain encrypted.
 
 ## 2. GitHub Enterprise Server (GHES)
-
-
 GitHub Enterprise Server (GHES) is a self-hosted version of GitHub designed for organizations that require complete control over their GitHub instance. It is ideal for companies that want to host their repositories and associated data on-premises or in a private cloud environment for compliance, security, or performance reasons.
 
 ### Key Features of GitHub Enterprise Server
