@@ -14,6 +14,20 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
+    - content: "Which of the following is a feature unique to GitHub Enterprise Cloud (GHEC)?"
+    choices:
+    - content: "Requires on-premises deployment and infrastructure management"
+      isCorrect: false
+      explanation: "Incorrect. This describes GitHub Enterprise Server (GHES), not GHEC. GHEC is hosted and managed by GitHub in the cloud."
+    - content: "Provides centralized user management with identity provider integration"
+      isCorrect: true
+      explanation: "GHEC supports centralized user management and integrates with identity providers using SAML (for SSO) and SCIM (for user provisioning), which is a key feature of cloud-hosted enterprise solutions."
+    - content: "Must be installed and maintained by the organization's IT team"
+      isCorrect: false
+      explanation: "Incorrect. GHEC is maintained by GitHub and requires no installation or infrastructure management by the organization."
+    - content: "Operates entirely within a private cloud environment"
+      isCorrect: false
+      explanation: "Incorrect. GHEC operates in GitHub’s public cloud infrastructure, not a private cloud."
   - content: "What actions can you take at enterprise level to manage the use of GitHub Actions in your enterprise instance?"
     choices:
     - content: "Create workflow templates"
