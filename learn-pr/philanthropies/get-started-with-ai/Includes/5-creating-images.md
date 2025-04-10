@@ -1,6 +1,6 @@
 You learned about the ingredients of a good prompt in Unit 3. There are ingredients to a good prompt for creating images. 
 
-Here is an image created using [Microsoft Designer](https://designer.microsoft.com/).
+Here's an image created using [Microsoft Designer](https://designer.microsoft.com/).
 
 :::image type="content" source="../media/dog.png" alt-text="Screenshot of the dog." lightbox="../media/dog.png":::
 
@@ -23,15 +23,15 @@ Let's explore the key parts of the prompt used to create this image:
 ### Additional elements 
 
 - These are the details that improve the image. They provide context and add depth. 
-- The green ball is an additional element. 
+- The green ball is an other element. 
 
 ### Specific style 
 
 - Think about the style you want to use. Is it realistic, impressionistic, or abstract?
-- Let's choose a hyper-realistic drawing style for our terrier image. That means we'll aim to include lots of tiny details.
+- Let's choose a hyper-realistic drawing style for our terrier image. That means we aim to include lots of tiny details.
 
 ## Crafting the image description 
 
-When describing images, try to make the reader feel like they are there. Use words to help them see and feel the scene. Whether it's a playful dog or a peaceful landscape, your words should create a clear picture in their mind.
+When describing images, try to make the reader feel like they're there. Use words to help them see and feel the scene. Whether it's a playful dog or a peaceful landscape, your words should create a clear picture in their mind.
 
 Use these tips to write great image descriptions!
