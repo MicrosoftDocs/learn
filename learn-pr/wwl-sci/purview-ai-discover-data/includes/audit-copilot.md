@@ -69,10 +69,10 @@ The following examples show how different types of Copilot interactions appear i
 
 | Scenario | Operation | RecordType | AppIdentity | AppHost |
 |-----|-----|-----|-----|-----|
-| Microsoft 365 Copilot in Chat | CopilotInteraction | CopilotInteraction | Copilot.MicrosoftCopilot.BizChat | BizChat |
-| Security Copilot in Microsoft Defender | CopilotInteraction | CopilotInteraction | Copilot.Security.SecurityCopilot | Defender |
-| Custom Copilot Studio app in Teams | CopilotInteraction | CopilotInteraction | Copilot.Studio.<GUID> | Teams |
-| AI Notes or Live Notes updated in Teams | AINotesUpdate / LiveNotesUpdate | TeamCopilotInteraction | Copilot.TeamCopilot.* | Teams |
+| Microsoft 365 Copilot in Chat | CopilotInteraction | CopilotInteraction | `Copilot.MicrosoftCopilot.BizChat` | BizChat |
+| Security Copilot in Microsoft Defender | CopilotInteraction | CopilotInteraction | `Copilot.Security.SecurityCopilot` | Defender |
+| Custom Copilot Studio app in Teams | CopilotInteraction | CopilotInteraction | `Copilot.Studio.<GUID>` | Teams |
+| AI Notes or Live Notes updated in Teams | AINotesUpdate / LiveNotesUpdate | TeamCopilotInteraction | `Copilot.TeamCopilot.*` | Teams |
 
 ## Scope and limitations
 
