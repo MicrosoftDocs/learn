@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn-m365.wwl.purview-ai-assess-mitigate-risks.adaptive-protection-ai
+uid: learn.wwl.purview-ai-assess-mitigate-risks.adaptive-protection-ai
 title: "Case study: Implement Adaptive Protection for AI data security"
 metadata:
   title: "Case study: Implement Adaptive Protection for AI data security"
   description: "Case study: Implement Adaptive Protection for AI data security"
-  ms.date: 10/02/2024
+  ms.date: 04/10/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit

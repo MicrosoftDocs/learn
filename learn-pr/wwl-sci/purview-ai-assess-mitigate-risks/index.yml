@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn-m365.wwl.purview-ai-assess-mitigate-risks
+uid: learn.wwl.purview-ai-assess-mitigate-risks
 metadata:
   title: Assess and mitigate AI risks with Microsoft Purview
   description: Microsoft Purview helps you strengthen data security in AI environments, providing tools to handle challenges from AI technology. Learn to safeguard your data and adapt to evolving security challenges in AI technology.
@@ -33,11 +33,11 @@ subjects:
 - data-management
 - threat-protection
 units:
-- learn-m365.wwl.purview-ai-assess-mitigate-risks.introduction
-- learn-m365.wwl.purview-ai-assess-mitigate-risks.data-assessments
-- learn-m365.wwl.purview-ai-assess-mitigate-risks.insider-risk-management-generative-ai-usage
-- learn-m365.wwl.purview-ai-assess-mitigate-risks.adaptive-protection-ai
-- learn-m365.wwl.purview-ai-assess-mitigate-risks.knowledge-check
-- learn-m365.wwl.purview-ai-assess-mitigate-risks.summary
+- learn.wwl.purview-ai-assess-mitigate-risks.introduction
+- learn.wwl.purview-ai-assess-mitigate-risks.data-assessments
+- learn.wwl.purview-ai-assess-mitigate-risks.insider-risk-management-generative-ai-usage
+- learn.wwl.purview-ai-assess-mitigate-risks.adaptive-protection-ai
+- learn.wwl.purview-ai-assess-mitigate-risks.knowledge-check
+- learn.wwl.purview-ai-assess-mitigate-risks.summary
 badge:
-  uid: learn-m365.wwl.purview-ai-assess-mitigate-risks.badge
+  uid: learn.wwl.purview-ai-assess-mitigate-risks.badge
