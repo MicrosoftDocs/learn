@@ -7,7 +7,7 @@ GHEC is ideal for globally distributed teams, as it ensures high availability, a
 
 ###  Standard User Model
 
-	This is the traditional user model on GitHub, where users manage their own account.
+This is the traditional user model on GitHub, where users manage their own account.
 
 **Characteristics of standard user model**:
 - Users manage their accounts, including usernames, email addresses, and personal settings.
