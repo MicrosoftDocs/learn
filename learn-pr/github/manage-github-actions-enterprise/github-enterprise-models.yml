@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-introduction-products.what-are-github-products
+title: GitHub accounts and plans
+metadata:
+  title: GitHub accounts and plans
+  description: This content is part of the "Introduction to GitHub's products" module.
+  ms.date: 09/19/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-what-are-github-products.md)]
