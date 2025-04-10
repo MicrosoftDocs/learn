@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-m365.wwl.purview-ai-protect-sensitive-data.endpoint-dlp-block-paste-ai
+uid: learn.wwl.purview-ai-protect-sensitive-data.endpoint-dlp-block-paste-ai
 title: Use Endpoint DLP to prevent generative AI data exposure
 metadata:
   title: Use Endpoint DLP to prevent generative AI data exposure
