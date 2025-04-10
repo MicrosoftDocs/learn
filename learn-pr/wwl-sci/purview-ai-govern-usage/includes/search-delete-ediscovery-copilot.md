@@ -29,6 +29,7 @@ Copilot interaction data is stored in Exchange Online mailboxes. This includes:
 Each supported application uses a distinct item class. Examples include:
 
 | Application | Item class |
+|-----|-----|
 | Teams (Chat, Channel, Meeting) | `IPM.SkypeTeams.Message.Copilot.Teams` |
 | Word | `IPM.SkypeTeams.Message.Copilot.Word` |
 | Outlook | `IPM.SkypeTeams.Message.Copilot.Outlook` |
