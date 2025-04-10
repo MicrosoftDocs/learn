@@ -111,4 +111,9 @@ quiz:
       explanation: "Incorrect. The authentication tokens you can create in your account settings are personal access tokens (PATs)."
     - content: "Encrypted secrets are the equivalent of SSH keys in GitHub."
       isCorrect: false
+      explanation: "Incorrect. SSH keys are also called SSH keys in GitHub."
+    - content: "Encrypted secrets are encrypted environment variables you can create to store sensitive information."
+      isCorrect: true
+      explanation: "Correct. Once created, encrypted secrets become available for use in your workflows and actions at the level at which they were created (organization or repository)."
+
 
