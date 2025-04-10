@@ -8,6 +8,7 @@ metadata:
   author: a-a-ron
   ms.author: aastewar
   ms.topic: unit
+  ms.custom: references_regions
 durationInMinutes: 8
 content: |
   [!include[](includes/github-enterprise-models.md)]
