@@ -2,8 +2,6 @@ In this unit, you'll learn how to track and manage GitHub Enterprise license usa
 
 As a **GitHub Enterprise administrator**, tracking **license usage** is crucial for managing costs, optimizing resources, and ensuring compliance. GitHub provides various methods for obtaining license statistics at **organization, enterprise, and instance levels**.
 
----
-
 ## Finding License Usage for a Specific Organization**
 
 To find **license usage statistics** for a single **GitHub organization**:
@@ -35,9 +33,6 @@ For more granular data, admins can use **GraphQL API**:
 }
 ```
 
-
----
-
 ## Method 2. Finding License Usage Across Multiple Organizations
 
 For organizations under the same **enterprise account**, admins can analyze usage across all organizations.
@@ -68,9 +63,6 @@ To fetch usage data for all organizations in an enterprise:
 }
 
 ```
-
-
----
 
 ## Method 3. Finding License Usage for Enterprise Accounts
 
@@ -116,8 +108,6 @@ curl -H "Authorization: token YOUR-TOKEN" \
     - **Total enterprise-wide licenses**
     - **Usage per GitHub instance**
     - **Available capacity per region**
-
----
 
 ## Best Practices for License Usage Management
 The following strategies can help you manage licenses more efficiently across your organization:
