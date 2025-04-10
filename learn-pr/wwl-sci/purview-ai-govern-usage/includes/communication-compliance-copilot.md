@@ -90,4 +90,4 @@ To create this one-click policy in DSPM for AI:
 1. Select **Solutions** > **DSMP for AI** > **Recommendations**
 1. Select the **Detect unethical behavior in AI apps** recommendation, then select **Create policies**.
 
-   :::image type="content" source="../media/dspm-ai-communication-compliance.png" alt-text="Screenshot showing the AI signals in communication compliance." lightbox=" ../media/dspm-ai-communication-compliance.png":::
+   :::image type="content" source="../media/dspm-ai-communication-compliance.png" alt-text="Screenshot showing locations to detect communications in communication compliance." lightbox=" ../media/dspm-ai-communication-compliance.png":::
