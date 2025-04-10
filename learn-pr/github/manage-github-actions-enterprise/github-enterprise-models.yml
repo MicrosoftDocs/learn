@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.github-introduction-products.what-are-github-products
-title: GitHub accounts and plans
+uid: learn.github.manage-github-actions-enterprise.manage-actions-workflows
+title: Understanding GitHub enterprise models
 metadata:
-  title: GitHub accounts and plans
-  description: This content is part of the "Introduction to GitHub's products" module.
-  ms.date: 09/19/2024
-  author: rmcmurray
-  ms.author: robmcm
+  title: Understandig GitHub enterprise models
+  description: 
+  ms.date: 04/10/2025
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: unit
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
-  [!include[](includes/2-what-are-github-products.md)]
+  [!include[](includes/github-enterprise-models.md)]
