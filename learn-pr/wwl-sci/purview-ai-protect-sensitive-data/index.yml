@@ -32,11 +32,11 @@ subjects:
 - data-management
 - threat-protection
 units:
-- learn-m365.wwl.purview-ai-protect-sensitive-data.introduction
-- learn-m365.wwl.purview-ai-protect-sensitive-data.dspm-ai-recommendations
-- learn-m365.wwl.purview-ai-protect-sensitive-data.sensitivity-label-copilot
-- learn-m365.wwl.purview-ai-protect-sensitive-data.endpoint-dlp-block-paste-ai
-- learn-m365.wwl.purview-ai-protect-sensitive-data.knowledge-check
-- learn-m365.wwl.purview-ai-protect-sensitive-data.summary
+- learn.wwl.purview-ai-protect-sensitive-data.introduction
+- learn.wwl.purview-ai-protect-sensitive-data.dspm-ai-recommendations
+- learn.wwl.purview-ai-protect-sensitive-data.sensitivity-label-copilot
+- learn.wwl.purview-ai-protect-sensitive-data.endpoint-dlp-block-paste-ai
+- learn.wwl.purview-ai-protect-sensitive-data.knowledge-check
+- learn.wwl.purview-ai-protect-sensitive-data.summary
 badge:
-  uid: learn-m365.wwl.purview-ai-protect-sensitive-data.badge
+  uid: learn.wwl.purview-ai-protect-sensitive-data.badge
