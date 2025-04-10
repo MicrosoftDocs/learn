@@ -32,11 +32,11 @@ subjects:
 - data-management
 - threat-protection
 units:
-- learn-m365.wwl.purview-ai-govern-usage.introduction
-- learn-m365.wwl.purview-ai-govern-usage.retention-copilot
-- learn-m365.wwl.purview-ai-govern-usage.search-delete-ediscovery-copilot
-- learn-m365.wwl.purview-ai-govern-usage.communication-compliance-copilot
-- learn-m365.wwl.purview-ai-govern-usage.knowledge-check
-- learn-m365.wwl.purview-ai-govern-usage.summary
+- learn.wwl.purview-ai-govern-usage.introduction
+- learn.wwl.purview-ai-govern-usage.retention-copilot
+- learn.wwl.purview-ai-govern-usage.search-delete-ediscovery-copilot
+- learn.wwl.purview-ai-govern-usage.communication-compliance-copilot
+- learn.wwl.purview-ai-govern-usage.knowledge-check
+- learn.wwl.purview-ai-govern-usage.summary
 badge:
-  uid: learn-m365.wwl.purview-ai-govern-usage.badge
+  uid: learn.wwl.purview-ai-govern-usage.badge
