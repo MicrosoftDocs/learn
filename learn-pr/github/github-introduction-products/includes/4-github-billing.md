@@ -26,15 +26,11 @@ It's important to monitor usage to avoid unexpected costs, especially for privat
 GitHub offers various plans tailored to organizational needs, each with distinct features and support options:
 
 - **GitHub Free for Organizations**:
-    
-    - **Price**: $0 per month
     - **Features**:
         - Unlimited public/private repositories
         - Community support
         - 2,000 CI/CD minutes per month
 - **GitHub Team**:
-    
-    - **Price**: $4 per user/month
     - **Features**:
         - Everything in Free, plus:
         - Additional collaboration tools
@@ -43,8 +39,6 @@ GitHub offers various plans tailored to organizational needs, each with distinct
         - Enforced branch protections
         - Email support
 - **GitHub Enterprise**:
-    
-    - **Price**: $21 per user/month
     - **Features**:
         - Everything in Team, plus:
         - SAML single sign-on
@@ -52,6 +46,7 @@ GitHub offers various plans tailored to organizational needs, each with distinct
         - GitHub Connect
         - 24/7 support
         - Enterprise-level security features
+For more information about available features and pricing tiers, see GitHub’s [pricing page](https://github.com/pricing).
 
 Organizations should evaluate their collaboration needs and security priorities to choose the plan that best fits their goals.
 
