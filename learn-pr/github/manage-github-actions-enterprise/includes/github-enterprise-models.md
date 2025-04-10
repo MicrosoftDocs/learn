@@ -74,7 +74,7 @@ GitHub Enterprise Server (GHES) is a self-hosted version of GitHub designed for 
     - Ideal for industries with strict regulatory requirements (e.g., healthcare, finance).
     - Offers audit logs, user activity monitoring, and data encryption to meet compliance standards.
     
-### Components of GHES**
+### Components of GHES
 
 1. **GitHub Application**:
     - The interface and core functionality (e.g., repositories, pull requests, issues) are similar to GitHub.com.
