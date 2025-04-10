@@ -52,7 +52,7 @@ The **Protect** tab helps security teams limit access to high-risk data and enfo
 
 - **Restrict all items**: Use [SharePoint Restricted Content Discoverability](/sharepoint/restricted-content-discovery?azure-portal=true) to prevent Microsoft 365 Copilot from indexing specified SharePoint sites.
 
-   :::image type="content" source="../media/data-assessment-dlp-restrict-items.png" alt-text="Screenshot showing the options in the Protect tab in Data assessments to restrict access to sensitive data." lightbox="../media/data-assessment-dlp-restrict-items.png":::
+   :::image type="content" source="../media/data-assessment-restrict-items.png" alt-text="Screenshot showing the options in the Protect tab in Data assessments to restrict access to sensitive data." lightbox="../media/data-assessment-dlp-restrict-items.png":::
 
 - **Apply auto-labeling policies**: [Automatically apply sensitivity labels](/purview/apply-sensitivity-label-automatically?azure-portal=true#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) to unlabeled files containing sensitive information.
 
