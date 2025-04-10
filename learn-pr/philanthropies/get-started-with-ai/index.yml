@@ -9,11 +9,13 @@ metadata:
   ms.author: cohodge
   ms.topic: module
   ms.service: artificial-intelligence
+  ai-usage: ai-assisted
 
 title: Get started with AI
 summary: This module covers basic AI terms and prompting best practices. You'll learn to summarize articles and create images using AI tools.
 
 abstract: |
+  In this module you'll learn to:
   - Define basic AI terms
   - Demonstrate prompting best Practices when interacting with AI tools
   - Summarize articles Using AI tools
