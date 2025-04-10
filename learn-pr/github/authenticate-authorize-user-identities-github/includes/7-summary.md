@@ -8,7 +8,7 @@ You learned:
 - What options users have to identify with two-factor authentication.
 - How team synchronization through your IdP can automate team membership and help keep access to your data secure.
 
-The goal of managing access to your enterprise is to create a strong and secure GitHub development environment for your users. Without these authorization and authentication tools in place, your enterprise could be compromised by bad actors who take advantage of the susceptibility of username and password vulnerabilities to access your data. Use the security features you learned about in this module to build a secure way to authenticate and authorize your users within your organization. These systems of authentication and authorization, along with team synchronization, will allow you to ensure organizational security, control user lifecycle management, and automate the user onboarding and off-boarding process with efficiency and security.
+The goal of managing access to your enterprise is to create a strong and secure GitHub development environment for your users. Without these authorization and authentication tools in place, your enterprise could be compromised by bad actors who take advantage of the susceptibility of username and password vulnerabilities to access your data. Use the security features you learned about in this module to build a secure way to authenticate and authorize your users within your organization. These systems of authentication and authorization, along with team synchronization, allow you to ensure organizational security, control user lifecycle management, and automate the user onboarding and off-boarding process with efficiency and security.
 
 ## Learn more
 
