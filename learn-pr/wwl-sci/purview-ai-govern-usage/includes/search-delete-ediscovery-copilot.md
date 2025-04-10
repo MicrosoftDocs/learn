@@ -81,7 +81,7 @@ You can delete Copilot data by using Microsoft Graph Explorer or PowerShell. Mak
 
 #### Option 1: Graph Explorer
 
-1. Go to [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer?azure-portal=true) and sign in with an account that has the necessary permissions.
+1. Go to [Microsoft Graph Explorer](/graph/graph-explorer?azure-portal=true) and sign in with an account that has the necessary permissions.
 1. Enter this GET request to view the list of eDiscovery cases in your organization:
 
    ```bash
