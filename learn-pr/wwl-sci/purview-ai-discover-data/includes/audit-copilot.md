@@ -25,8 +25,8 @@ Audit records contain structured fields to help you interpret each interaction o
   - `CopilotInteraction`: User interacted with a Microsoft Copilot app
   - `ConnectedAIAppInteraction`: User interacted with a deployed non-Microsoft or custom Copilot app
   - `AIAppInteraction`: User interacted with a non-Microsoft AI app not deployed in the tenant
-- **Workload**: Describes the app category (such as Copilot, ConnectedAIApp, or AIApp)
-- **AppIdentity**: Identifies the specific app in the format workloadName.appGroup.appName
+- **Workload**: Describes the app category (such as `Copilot`, `ConnectedAIApp`, or `AIApp`)
+- **AppIdentity**: Identifies the specific app in the format `workloadName.appGroup.appName`
 - **AppHost**: Indicates which host application was used during the interaction, such as:
   - `Word`, `Excel`, `PowerPoint`, `Outlook`
   - `BizChat` (for Microsoft 365 Chat)
