@@ -40,13 +40,12 @@ GitHub Packages allows storing artifacts, container images, and dependencies. St
 ### Billing Details
 
 - **Free Allocation:**
-    - **Public repositories:** Free storage and bandwidth.
-    - **Private repositories:**
-        - Free storage up to **2GB**
-        - Free data transfer up to **1GB/month**
-- **Additional Costs:**
-    - Storage beyond free limits: **$0.25 per GB/month**
-    - Outbound data transfer beyond free limit: **$0.50 per GB**
+  - **Public repositories:** Free storage and bandwidth.  
+  - **Private repositories:**
+    - Storage up to 2GB  
+    - Data transfer up to 1GB per month  
+
+For details on storage limits and usage beyond the free allocation, see [GitHub’s pricing page](https://github.com/pricing).
 
 ### Optimization Strategies
 - Regularly **delete unused packages** or enable retention policies.
@@ -99,12 +98,13 @@ GitHub Copilot provides **AI-driven code completion** and suggestions, billed pe
 
 ### Billing Details
 
-- **Pricing Model:**
-    - **Copilot for Individuals:** $10/month
-    - **Copilot for Business:** $19/user/month
+- **Access Model:**
+  - Available for individuals and businesses with different subscription options.
 - **Free Access:**
-    - Free for students and verified open-source maintainers.
-    - Free for **select enterprise customers** (trial-based).
+  - Free for students and verified open-source maintainers.
+  - Free for **select enterprise customers** (trial-based).
+
+For current Copilot plans and subscription details, see [GitHub Copilot pricing](https://github.com/features/copilot#pricing).
 
 ### Optimization Strategies
 
@@ -123,11 +123,10 @@ GitHub LFS is used for storing large binary files separately from Git repositori
 ### Billing Details
 
 - **Free Tier:**
-    - **1GB** free storage per repository.
-    - **1GB** free bandwidth per month.
-- **Additional Costs:**
-    - Extra storage: **$5 per 50GB/month**
-    - Extra bandwidth: **$5 per 50GB**
+  - 1GB of storage per repository
+  - 1GB of bandwidth per month
+
+For more information on Git Large File Storage (LFS) usage and limits, see [GitHub's LFS documentation](https://docs.github.com/en/github/managing-large-files/about-git-large-file-storage#about-storage-and-bandwidth-usage).
 
 ### **Optimization Strategies**
 
