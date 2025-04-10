@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn-m365.wwl.purview-ai-govern-usage
+uid: learn.wwl.purview-ai-govern-usage
 metadata:
   title: Govern AI usage with Microsoft Purview
   description: Learn how to apply policies and manage the lifecycle of AI-generated content using Microsoft Purview. This module shows how to retain, delete, investigate, and review content created in Microsoft 365 Copilot and other AI apps.
