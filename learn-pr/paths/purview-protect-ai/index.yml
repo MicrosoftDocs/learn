@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.purview-protect-ai
 metadata:
-  title: 'Protect data in AI environments (SC-401)'
+  title: 'Protect data in AI environments with Microsoft Purview (SC-401)'
   description: 'AI tools like Microsoft Copilot are changing the way people work, but they also increase the risk of oversharing and accidental data exposure. Microsoft Purview helps organizations apply the right controls to keep sensitive data protected across AI-enabled environments. This learning path aligns with exam SC-401: Microsoft Information Security Administrator.'
-  ms.date: 03/25/2025
+  ms.date: 04/10/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: learning-path
-title: 'Protect data in AI environments'
+title: 'Protect data in AI environments with Microsoft Purview'
 prerequisites: |
   - Foundational knowledge of Microsoft security and compliance technologies
   - Basic knowledge of information protection concepts
@@ -25,9 +25,11 @@ products:
 subjects:
 - security
 modules:
-- learn-m365.wwl.purview-ai-data-security
-- learn-m365.wwl.purview-ai-data-compliance
-- learn.wwl.purview-identify-mitigate-ai-risks
+- learn.wwl.purview-ai-discover-data
+- learn.wwl.purview-ai-protect-sensitive-data
+- learn.wwl.purview-ai-govern-usage
+- learn.wwl.purview-ai-assess-mitigate-risks
+
 
 trophy:
   uid: learn.wwl.purview-protect-ai.trophy
