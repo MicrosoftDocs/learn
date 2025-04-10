@@ -1,5 +1,4 @@
-
-# GitHub Enterprise Models
+In this unit, you'll explore the different GitHub Enterprise deployment models—GitHub Enterprise Cloud (GHEC) and GitHub Enterprise Server (GHES)—and learn how user management, security, and compliance differ across standard and enterprise-managed user setups.
 
 ## 1. How users are managed
 GitHub Enterprise Cloud (GHEC) is a cloud-based solution tailored for organizations that need the flexibility and scalability of GitHub's infrastructure while maintaining enterprise-grade security and compliance. It offers features such as centralized user management, data residency options, and integration with identity providers like SAML and SCIM for single sign-on and user provisioning. 
