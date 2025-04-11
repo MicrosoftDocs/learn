@@ -2,9 +2,11 @@
 uid: learn.wwl.manage-security-controls-identity-access.microsoft-entra-role-based-access-control
 title: Microsoft Entra role-based access control
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Microsoft Entra role-based access control
   description: "Microsoft Entra role-based access control"
-  ms.date: 03/10/2025
+  ms.date: 04/11/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.purview-ai-discover-data.audit-copilot
-title: Audit Microsoft 365 Copilot interactions with Microsoft Purview
+title: Audit Microsoft 365 Copilot activities and AI interactions with Microsoft Purview
 metadata:
-  title: Audit Microsoft 365 Copilot interactions with Microsoft Purview
-  description: "Audit Microsoft 365 Copilot interactions with Microsoft Purview"
+  title: Audit Microsoft 365 Copilot activities and AI interactions with Microsoft Purview
+  description: "Audit Microsoft 365 Copilot activities and AI interactions with Microsoft Purview"
   ms.date: 04/10/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 6
+durationInMinutes: 9
 content: |
   [!include[](includes/audit-copilot.md)]
