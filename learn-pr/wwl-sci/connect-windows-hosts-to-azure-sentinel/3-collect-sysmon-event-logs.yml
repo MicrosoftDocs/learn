@@ -4,8 +4,8 @@ title: Collect Sysmon event logs
 metadata:
   title: Collect Sysmon event logs
   description: "Collect Sysmon event logs"
-  ms.date: 08/16/2022
-  author: wwlpublish
+  ms.date: 04/10/2025
+  author: KenMAG
   ms.author: kelawson
   ms.topic: unit
 azureSandbox: false
