@@ -27,7 +27,7 @@ jobs:
 This example is using the `github.ref` context to check the branch that triggered the workflow. If the branch is `main`, the runner is executed and prints out "Deploying to production server on branch $GITHUB_REF". The default environment variable `$GITHUB_REF` is used in the runner to refer to the branch. Notice that default environment variables are all uppercase where context variables are all lowercase.
 
 <!-- INFOMAGNUS UPDATES for sub OD 1.4.2 go here. Source Material: https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs --> 
-## Contextual information Available in a workflow
+## Contextual information available in a workflow
 Different contexts are available throughout a workflow run. For example, the secrets context may only be used at certain places within a job.
 
 In addition, some functions may only be used in certain places. For example, the hashFiles function is not available everywhere.
@@ -89,7 +89,7 @@ jobs:
           First_Name: Mona
 ```
 
-<!-- INFOMAGNUS UPDATES for sub OD 1.4.3, 1.4.6, and 1.4.7 go here. Source Material: Infomagnus team to find source material and cite sources when they update material  -->
+<!-- INFOMAGNUS UPDATES for sub OD 1.4.3, 1.4.6, and 1.4.7 go here. Source Material: Infomagnus team to find source material and cite sources when they update material  --> https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables
 ## Identify where to set custom environment variables in a workflow
 ## Use default context in a workflow
 ## Pass custom environment variables to a workflow
