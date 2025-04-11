@@ -1,10 +1,10 @@
 Over the last decades, multiple developments in the field of **natural language processing** (**NLP**) have resulted in achieving **large language models** (**LLMs**). The development and availability of language models led to new ways to interact with applications and systems, such as through generative AI assistants and agents.
 
-Let's take a look back at historical developments for language models:
+Let's take a look back at historical developments for language models which include:
 
-- **Tokenization**: enables machines to *read*.
-- **Embeddings**: enables machines to capture the relationship between words. 
-- **Architectural developments**: (changes in the design of language models) enabled them to capture word context.  
+- **Tokenization**: enabling machines to *read*.
+- **Word embeddings**: enabling machines to capture the relationship between words. 
+- **Architectural developments**: (changes in the design of language models) enabling them to capture word context.  
 
 ## Tokenization
 
@@ -21,17 +21,15 @@ One important development to allow machines to more easily work with text has be
 
 Tokenization allowed for text to be labeled. As a result, statistical techniques could be used to let computers find patterns in the data instead of applying rule-based models.
 
-## Embeddings
+## Word embeddings
 
-One of the key concepts introduced by applying deep learning techniques to NLP is **word embeddings**. Word embeddings address the problem of not being able to define the semantic relationship between words.
+One of the key concepts introduced by applying deep learning techniques to NLP is **word embeddings**. Word embeddings address the problem of not being able to define the **semantic relationship** between words.
 
-Before word embeddings, a prevailing challenge with NLP was to detect the semantic relationship between words. Word embeddings represent words in a vector space, so that the relationship between words can be easily described and calculated.
-
-Word embeddings are created during **self-supervised learning**. During the training process, the model analyzes the cooccurrence patterns of words in sentences and learns to represent them as **vectors**. A vector represents a path through a point in n-dimensional space (in other words, a line). Semantic similarity is defined by how similar the angles of the lines are (i.e. the direction of the path).
+Word embeddings are created during the deep learning model training process. During training, the model analyzes the cooccurrence patterns of words in sentences and learns to represent them as **vectors**. A vector represents a path through a point in n-dimensional space (in other words, a line). Semantic relationships are defined by how similar the angles of the lines are (i.e. the direction of the path). Because word embeddings represent words in a vector space, the relationship between words can be easily described and calculated.
 
 To create a vocabulary that encapsulates semantic relationships between the tokens, we define contextual vectors, known as embeddings, for them. Vectors are multi-valued numeric representations of information, for example [10, 3, 1] in which each numeric element represents a particular attribute of the information. For language tokens, each element of a token's vector represents some semantic attribute of the token. The specific categories for the elements of the vectors in a language model are determined during training based on how commonly words are used together or in similar contexts.
  
-Vectors represent lines in multidimensional space, describing direction and distance along multiple axes (you can impress your mathematician friends by calling these amplitude and magnitude). It can be useful to think of the elements in an embedding vector for a token as representing steps along a path in multidimensional space. For example, a vector with three elements represents a path in 3-dimensional space in which the element values indicate the units traveled forward/back, left/right, and up/down. Overall, the vector describes the direction and distance of the path from origin to end.
+Vectors represent lines in multidimensional space, describing direction and distance along multiple axes (you can impress your mathematician friends by calling these amplitude and magnitude). Overall, the vector describes the direction and distance of the path from origin to end.
 
 :::image type="content" source="../media/word-embeddings.png" alt-text="A screenshot showing a simple example of word embeddings.":::
  
