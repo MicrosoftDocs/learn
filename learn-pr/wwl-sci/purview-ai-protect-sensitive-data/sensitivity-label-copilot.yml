@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.purview-ai-protect-sensitive-data.sensitivity-label-copilot
-title: Understand how sensitivity labels apply in Microsoft 365 Copilot
+title: Use sensitivity labels to protect Microsoft 365 Copilot content
 metadata:
-  title: Understand how sensitivity labels apply in Microsoft 365 Copilot
-  description: "Understand how sensitivity labels apply in Microsoft 365 Copilot"
+  title: Use sensitivity labels to protect Microsoft 365 Copilot content
+  description: "Use sensitivity labels to protect Microsoft 365 Copilot content"
   ms.date: 04/10/2025
   author: wwlpublish
   ms.author: riswinto
