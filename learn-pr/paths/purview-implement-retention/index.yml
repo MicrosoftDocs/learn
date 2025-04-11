@@ -25,7 +25,7 @@ products:
 subjects:
 - security
 modules:
-- learn-m365.m365-compliance-information-governance
+- learn.wwl.purview-understand-retention
 - learn.wwl.purview-implement-manage-retention
 trophy:
   uid: learn.wwl.purview-implement-retention.trophy

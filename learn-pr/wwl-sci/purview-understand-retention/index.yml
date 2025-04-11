@@ -15,8 +15,8 @@ summary: |
 abstract: |
   In this unit you learn how to:
   - Identify common use cases for applying retention
-  - Understand the differences between retention and data loss prevention
-  - Scope retention to specific users, locations, and content types
+  - Explain how retention supports data protection alongside tools like data loss prevention
+  - Apply retention settings to specific users, sites, or content types
   - Recognize what retention does and doesn't control
 prerequisites: |
   None
