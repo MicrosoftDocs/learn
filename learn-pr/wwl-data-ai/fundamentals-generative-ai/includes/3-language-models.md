@@ -10,11 +10,10 @@ As you may expect, machines have a hard time deciphering text as they mostly rel
 
 One important development to allow machines to more easily work with text has been tokenization. **Tokens** are strings with a known meaning, usually representing a word. **Tokenization** is turning words into tokens, which are then converted to numbers. A statistical approach to tokenization is by using a pipeline:
 
-:::image type="content" source="../media/tokenization-pipeline.gif" alt-text="Animation showing the pipeline of tokenization of a sentence.":::
+:::image type="content" source="../media/tokenization-pipeline.png" alt-text="Animation showing the pipeline of tokenization of a sentence.":::
 
 1. Start with the text you want to **tokenize**.
 1. **Split** the words in the text based on a rule. For example, split the words where there's a white space.
-1. **Stemming**. Merge similar words by removing the end of a word.
 1. **Stop word removal**. Remove noisy words that have little meaning like `the` and `a`. A dictionary of these words is provided to structurally remove them from the text.
 1. **Assign a number** to each unique token.
 
