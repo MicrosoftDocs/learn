@@ -27,7 +27,50 @@ jobs:
 This example is using the `github.ref` context to check the branch that triggered the workflow. If the branch is `main`, the runner is executed and prints out "Deploying to production server on branch $GITHUB_REF". The default environment variable `$GITHUB_REF` is used in the runner to refer to the branch. Notice that default environment variables are all uppercase where context variables are all lowercase.
 
 <!-- INFOMAGNUS UPDATES for sub OD 1.4.2 go here. Source Material: https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs --> 
-## Identify the available contextual information in a workflow
+## Contextual information Available in a workflow
+Different contexts are available throughout a workflow run. For example, the secrets context may only be used at certain places within a job.
+
+In addition, some functions may only be used in certain places. For example, the hashFiles function is not available everywhere.
+
+The following table lists the restrictions on where each context and special function can be used within a workflow. The listed contexts are only available for the given workflow key, and may not be used anywhere else. Unless listed below, a function can be used anywhere.
+
+|Worflow Key | Context | Special Functions|
+:----|:-----|:----------
+run-name  | github, inputs, vars |None |
+concurrency | github, imputs, vars | None|
+env  | github, secrets, inputs, vars | None |
+jobs.<job_id>.concurrency | github, needs, strategy, matrix, inputs, vars | None |
+jobs.<job_id>.container |	github, needs, strategy, matrix, vars, inputs |	None
+jobs.<job_id>.container.credentials |	github, needs, strategy, matrix, env, vars, secrets, inputs |	None
+jobs.<job_id>.container.env.<env_id>	github, needs, strategy, matrix, job, runner, env, vars, secrets, inputs	None
+jobs.<job_id>.container.image	github, needs, strategy, matrix, vars, inputs	None
+jobs.<job_id>.continue-on-error	github, needs, strategy, vars, matrix, inputs	None
+jobs.<job_id>.defaults.run	github, needs, strategy, matrix, env, vars, inputs	None
+jobs.<job_id>.env	github, needs, strategy, matrix, vars, secrets, inputs	None
+jobs.<job_id>.environment	github, needs, strategy, matrix, vars, inputs	None
+jobs.<job_id>.environment.url	github, needs, strategy, matrix, job, runner, env, vars, steps, inputs	None
+jobs.<job_id>.if	github, needs, vars, inputs	always, cancelled, success, failure
+jobs.<job_id>.name	github, needs, strategy, matrix, vars, inputs	None
+jobs.<job_id>.outputs.<output_id>	github, needs, strategy, matrix, job, runner, env, vars, secrets, steps, inputs	None
+jobs.<job_id>.runs-on	github, needs, strategy, matrix, vars, inputs	None
+jobs.<job_id>.secrets.<secrets_id>	github, needs, strategy, matrix, secrets, inputs, vars	None
+jobs.<job_id>.services	github, needs, strategy, matrix, vars, inputs	None
+jobs.<job_id>.services.<service_id>.credentials	github, needs, strategy, matrix, env, vars, secrets, inputs	None
+jobs.<job_id>.services.<service_id>.env.<env_id>	github, needs, strategy, matrix, job, runner, env, vars, secrets, inputs	None
+jobs.<job_id>.steps.continue-on-error	github, needs, strategy, matrix, job, runner, env, vars, secrets, steps, inputs	hashFiles
+jobs.<job_id>.steps.env	github, needs, strategy, matrix, job, runner, env, vars, secrets, steps, inputs	hashFiles
+jobs.<job_id>.steps.if	github, needs, strategy, matrix, job, runner, env, vars, steps, inputs	always, cancelled, success, failure, hashFiles
+jobs.<job_id>.steps.name	github, needs, strategy, matrix, job, runner, env, vars, secrets, steps, inputs	hashFiles
+jobs.<job_id>.steps.run	github, needs, strategy, matrix, job, runner, env, vars, secrets, steps, inputs	hashFiles
+jobs.<job_id>.steps.timeout-minutes	github, needs, strategy, matrix, job, runner, env, vars, secrets, steps, inputs	hashFiles
+jobs.<job_id>.steps.with	github, needs, strategy, matrix, job, runner, env, vars, secrets, steps, inputs	hashFiles
+jobs.<job_id>.steps.working-directory	github, needs, strategy, matrix, job, runner, env, vars, secrets, steps, inputs	hashFiles
+jobs.<job_id>.strategy	github, needs, vars, inputs	None
+jobs.<job_id>.timeout-minutes	github, needs, strategy, matrix, vars, inputs	None
+jobs.<job_id>.with.<with_id>	github, needs, strategy, matrix, inputs, vars	None
+on.workflow_call.inputs.<inputs_id>.default	github, inputs, vars	None
+on.workflow_call.outputs.<output_id>.value	github, jobs, vars, inputs	None
+
 <!-- INFOMAGNUS 1.4.2 END
 ## Custom environment variables
 
