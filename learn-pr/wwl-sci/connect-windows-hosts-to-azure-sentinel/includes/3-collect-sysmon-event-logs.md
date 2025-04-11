@@ -25,15 +25,15 @@ After the solution is installed, connect the data connector.
 
 1. Select **+Create data collections rule**.
 
-:::image type="content" source="../media/windows-forwarded-events.png" lightbox="../media/windows-forwarded-events.png" alt-text="Screenshot that shows the Basics tab for a new data collection rule.":::
+    :::image type="content" source="../media/windows-forwarded-events.png" lightbox="../media/windows-forwarded-events.png" alt-text="Screenshot that shows the Basics tab for a new data collection rule.":::
 
 1. Fill in the following fields of the *Basic* tab:
 
-| Setting | Description |
-|:---|:---|
-| **Rule Name** | A name for the DCR. The name should be something descriptive that helps you identify the rule. |
-| **Subscription** | The subscription to store the DCR. The subscription doesn't need to be the same subscription as the virtual machines. |
-| **Resource group** | A resource group to store the DCR. The resource group doesn't need to be the same resource group as the virtual machines. |
+    | Setting | Description |
+    |:---|:---|
+    | **Rule Name** | A name for the DCR. The name should be something descriptive that helps you identify the rule. |
+    | **Subscription** | The subscription to store the DCR. The subscription doesn't need to be the same subscription as the virtual machines. |
+    | **Resource group** | A resource group to store the DCR. The resource group doesn't need to be the same resource group as the virtual machines. |
 
 1. Select **Next:Resources >**.
 
@@ -45,18 +45,18 @@ After the solution is installed, connect the data connector.
 
 1. As an example, you can enter the following events log location (XPath format) to collect Sysmon events:
 
- ```xml
- Microsoft-Windows-Sysmon/Operational!*
- ```
+     ```xml
+     Microsoft-Windows-Sysmon/Operational!*
+     ```
 
 1. Select the **Add** button to add the Sysmon events log location.
 
 1. Select the **Next: Review + create >** button, after validation passes, select **Create**.
 
-:::image type="content" source="../media/sysmon-log-location.png" alt-text="Screenshot of Log Analytics Sysmon configuration." lightbox="../media/sysmon-log-location.png":::
+    :::image type="content" source="../media/sysmon-log-location.png" alt-text="Screenshot of Log Analytics Sysmon configuration." lightbox="../media/sysmon-log-location.png":::
 
- > [!NOTE]
- > At the end of this process, the Azure Monitor Agent is installed on any selected machines that don't already have the agent.
+     > [!NOTE]
+     > At the end of this process, the Azure Monitor Agent is installed on any selected machines that don't already have the agent.
 
 1. After the DCR is created, select the **Refresh** button to see the rule. You can also edit or delete existing rules from the **Configuration** section of the connector page.
 
