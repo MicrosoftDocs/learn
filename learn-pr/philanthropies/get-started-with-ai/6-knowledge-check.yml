@@ -48,11 +48,11 @@ quiz:
       isCorrect: false
       explanation: Yes, but there are more.
     - content: Scene
-      isCorrect: true
+      isCorrect: false
       explanation: Yes, but there are more.
     - content: Style
       isCorrect: false
       explanation: Yes, but there are more.
     - content: All the above
-      isCorrect: false
+      isCorrect: true
       explanation: Correct.
