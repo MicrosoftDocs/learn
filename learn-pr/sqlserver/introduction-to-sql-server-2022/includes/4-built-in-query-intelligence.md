@@ -102,7 +102,7 @@ In SQL Server 2014 with database compatibility level 120, Microsoft started usin
 
 In SQL Server 2022 with the Query Store enabled, the optimizer will evaluate highly repetitive queries that match patterns for CE model scenarios where the model may be making an incorrect assumption. The optimizer will then attempt to test and verify whether a query hint could be used to allow the query to perform faster. Upon verification of faster performance, a query hint will be persisted in the Query Store to be used for future query executions. You can see any applied query hints for CE feedback in the **sys.query_store_query_hints** catalog view and CE feedback details in the **sys.query_store_plan_feedback** catalog view. CE feedback will not be used if the legacy CE model has been enabled, if a query plan is forced in the query store, or if a query has existing query store hints.
 
-For more information, see [Cardinality Estimation](https://aka.ms/cefeedback).
+For more information, see [Cardinality estimation (CE) feedback](/sql/relational-databases/performance/intelligent-query-processing-cardinality-estimation-feedback).
 
 ### Degree of parallelism (DOP) feedback
 
