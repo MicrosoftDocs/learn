@@ -52,7 +52,7 @@ The **Protect** tab helps security teams limit access to high-risk data and enfo
 
 - **Restrict all items**: Use [SharePoint Restricted Content Discoverability](/sharepoint/restricted-content-discovery?azure-portal=true) to prevent Microsoft 365 Copilot from indexing specified SharePoint sites.
 
-   :::image type="content" source="../media/data-assessment-dlp-restrict-items.png" alt-text="Screenshot showing the options in the Protect tab in Data assessments to restrict access to sensitive data." lightbox="../media/data-assessment-dlp-restrict-items.png":::
+   :::image type="content" source="../media/data-assessment-restrict-items.png" alt-text="Screenshot showing the options in the Protect tab in Data assessments to restrict access to sensitive data." lightbox="../media/data-assessment-restrict-items.png":::
 
 - **Apply auto-labeling policies**: [Automatically apply sensitivity labels](/purview/apply-sensitivity-label-automatically?azure-portal=true#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) to unlabeled files containing sensitive information.
 
@@ -70,3 +70,45 @@ The **Monitor** tab provides visibility into how data is shared and accessed acr
    :::image type="content" source="../media/data-assessment-monitor.png" alt-text="Screenshot showing the options in the Monitor tab in Data assessments to Run a site access review and Run an identity access review." lightbox="../media/data-assessment-monitor.png":::
 
 By regularly reviewing assessment results in both the **Protect** and **Monitor** tabs, organizations can enforce security policies, reduce oversharing risks, and ensure compliance with data protection requirements.
+
+## Respond to assessment findings
+
+After reviewing a data assessment, it's important to act on the insights to reduce risk and strengthen data protection. While tools like the Protect and Monitor tabs help apply controls, some decisions require investigation and follow-up outside the portal.
+
+Consider the following actions based on what you find in your assessment results:
+
+### Investigate frequently accessed or unlabeled sites
+
+If a site shows a high volume of activity or contains a large number of unlabeled files, review the site to determine:
+
+- Whether the data is still needed
+- If it contains sensitive content that should be labeled
+- If access should be limited to fewer users or groups
+
+Sites that receive frequent access but contain no labeled items might require manual classification or a review of auto-labeling coverage.
+
+### Review broad internal sharing
+
+Sites shared with “People in your organization” might still be too permissive. Follow up with site owners to confirm whether that level of access is necessary. If not, adjust permissions or run a SharePoint site access review to delegate cleanup.
+
+### Apply protections to sensitive files
+
+When sensitive data is found with no labels or protections applied, consider:
+
+- Running an auto-labeling policy to apply the appropriate sensitivity level
+- Restricting access to high-risk data using DLP or Restricted Content Discoverability
+- Applying retention policies to remove stale content no longer in use
+
+### Clean up unused or empty data sources
+
+If a site shows no scanned items or access activity, determine whether it's still needed. Inactive sites can be archived or restricted to reduce your organization's overall exposure risk.
+
+### Follow up with content owners
+
+For sites with unclear or outdated access patterns, notify data owners and provide guidance on how to:
+
+- Review and update sharing settings
+- Label content correctly
+- Remove unused files or folders
+
+Creating a process to follow up with site owners can help maintain long-term control over shared and sensitive content.
