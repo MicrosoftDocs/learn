@@ -35,7 +35,7 @@ In addition, some functions may only be used in certain places. For example, the
 The following table lists the restrictions on where each context and special function can be used within a workflow. The listed contexts are only available for the given workflow key, and may not be used anywhere else. Unless listed below, a function can be used anywhere.
 
 |Worflow Key | Context | Special Functions|
-:----|:-----|:----------
+:--------------------|:----------|:------------------
 run-name  | github, inputs, vars |None |
 concurrency | github, imputs, vars | None|
 env  | github, secrets, inputs, vars | None |
