@@ -168,51 +168,55 @@ Each type of runner has its benefits, but GitHub-hosted runners offer a quicker 
 
 GitHub Actions has some usage limits, depending on your GitHub plan and whether your runner is GitHub-hosted or self-hosted. For more information on usage limits, check out [Usage limits, billing, and administration](https://docs.github.com/actions/reference/usage-limits-billing-and-administration) in the GitHub documentation.
 
-## Larger GitHub-hosted Runners
+## GitHub Hosted Larger Runners
+GitHub offers larger runners for workflows that require more resources. These runners are GitHub-hosted and provide increased CPU, memory, and disk space compared to standard runners. They are designed to handle resource-intensive workflows efficiently, ensuring optimal performance for demanding tasks.
 
-GitHub-hosted runners come in various sizes to support different workloads. Larger runners are high-performance GitHub-hosted runners that provide **increased CPU, RAM, and disk space** compared to standard runners. These runners are useful for jobs that require more computing power or memory to complete efficiently.
+### Runner Sizes and Labels
+Larger runners are available in multiple configurations, providing enhanced vCPUs, RAM, and SSD storage to meet diverse workflow requirements. These configurations are ideal for scenarios such as:
+- Compiling large codebases with extensive source files.
+- Running comprehensive test suites, including integration and end-to-end tests.
+- Processing large datasets for data analysis or machine learning tasks.
+- Building applications with complex dependencies or large binary outputs.
+- Performing high-performance simulations or computational modeling.
+- Executing video encoding, rendering, or other multimedia processing workflows.
 
-> Larger runners are part of the GitHub-hosted runner fleet and come with pre-installed tools and runtimes—just like standard runners.
+To use a larger runner, specify the desired runner label in the `runs-on` attribute of your workflow file. For example, to use a runner with 16 vCPUs and 64 GB of RAM, you would set `runs-on: ubuntu-latest-16core`. 
 
-### Available Sizes
+```yml
+jobs:
+  build:
+    runs-on: ubuntu-latest-16core
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build project
+        run: make build
+```
+These larger runners maintain compatibility with existing workflows by including the same preinstalled tools as standard `ubuntu-latest` runners.
 
-| Runner Size       | vCPUs | RAM  | Storage |
-|-------------------|-------|------|---------|
-| Large             | 8     | 32 GB| 256 GB SSD |
-| XLarge            | 16    | 64 GB| 512 GB SSD |
-| 2XLarge           | 32    | 128 GB| 1 TB SSD |
-
->  Supported OS: Ubuntu (currently `ubuntu-latest` only)
+For more details on runner sizes for larger runners, refer to the GitHub documentation [https://docs.github.com/en/actions/using-github-hosted-runners/using-larger-runners/about-larger-runners#machine-sizes-for-larger-runners]
 
 
-### When to Use Larger Runners
+### Managing Larger Runners
+GitHub provides tools to manage larger runners effectively, ensuring optimal resource utilization and cost management. Here are some key aspects of managing larger runners:
 
-#### Build or Test Large Codebases
+#### Monitoring Usage
+You can monitor the usage of larger runners through the GitHub Actions usage page in your repository or organization settings. This page provides insights into the number of jobs run, the total runtime, and the associated costs.
 
-Projects with massive source code and dependencies (e.g., game engines, enterprise microservices) can benefit from additional CPU and memory to reduce build time. Larger runners provide the necessary resources to handle complex builds, compile large codebases, and manage extensive dependency trees without bottlenecks.
+#### Managing Access
+To control access to larger runners, you can configure repository or organization-level policies. This ensures that only authorized workflows or teams can use these high-resource runners.
 
-> Example: A monorepo with 500+ microservices takes 40+ minutes on a standard runner but completes in 10–15 minutes on a `2XLarge` runner.
+#### Cost Management
+Larger runners incur additional costs based on their usage. To manage costs, consider the following:
+- Use larger runners only for workflows that require high resources.
+- Optimize workflows to reduce runtime.
+- Monitor billing details regularly to track expenses.
 
-#### Run Parallel Test Suites or Integration Tests
+#### Scaling Workflows
+If your workflows require frequent use of larger runners, consider scaling strategies such as:
+- Using self-hosted runners for predictable workloads.
+- Splitting workflows into smaller jobs to distribute the load across standard runners.
 
-If your test strategy involves **running many tests in parallel** or **container-based integration tests**, you’ll need the extra compute and RAM to prevent OOM (Out of Memory) errors and improve concurrency. Larger runners allow you to execute multiple test suites simultaneously, reducing overall test execution time.
 
-> Example: Running `pytest-xdist` with 20 workers or multiple Docker containers in CI/CD.
 
-#### Use Resource-Intensive Tooling
 
-Workflows that involve resource-heavy tools, such as static code analysis, machine learning models, or data processing pipelines, can benefit significantly from larger runners. These workflows often require high CPU and memory to process large datasets or perform complex computations.
 
-> Example: Running a TensorFlow training job with a large dataset completes in half the time on a `2XLarge` runner compared to a standard runner.
-
-#### Speed Up CI/CD Pipelines for Large Teams
-
-For teams running many jobs concurrently, larger runners can reduce queue times and improve throughput by **handling more jobs in less time**. This is especially beneficial for organizations with high-frequency deployments or large development teams.
-
-> Tip: Consider using matrix strategies with larger runners to parallelize work further.
-
-#### Use Large Files or Artifacts
-
-If your workflow pulls or generates large binaries, packages, or artifacts, larger runners with higher storage help **avoid disk space issues** and improve IO performance. This is particularly useful for workflows involving large datasets, media files, or compiled binaries.
-
-> Example: Generating a 10 GB binary package completes faster on a `2XLarge` runner due to improved disk IO and storage capacity.
