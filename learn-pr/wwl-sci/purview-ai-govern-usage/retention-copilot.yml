@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.purview-ai-govern-usage.retention-copilot
-title: Configure retention for AI-generated content with Microsoft Purview
+title: Apply retention policies to Microsoft 365 Copilot prompts and responses
 metadata:
-  title: Configure retention for AI-generated content with Microsoft Purview
-  description: "Configure retention for AI-generated content with Microsoft Purview."
+  title: Apply retention policies to Microsoft 365 Copilot prompts and responses
+  description: "Apply retention policies to Microsoft 365 Copilot prompts and responses."
   ms.date: 04/10/2025
   author: wwlpublish
   ms.author: riswinto
