@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.purview-understand-retention
+metadata:
+  title: Understand retention in Microsoft Purview
+  description: Understand retention in Microsoft Purview
+  ms.date: 04/11/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ai-usage: ai-assisted
+  ms.service: purview
+title: Understand retention in Microsoft Purview
+summary: |
+  Microsoft Purview retention helps organizations manage how long data is kept and when it can be deleted. Learn how to apply retention strategically to meet compliance requirements, reduce risk, and protect important information throughout its lifecycle.
+abstract: |
+  In this unit you learn how to:
+  - Identify common use cases for applying retention
+  - Understand the differences between retention and data loss prevention
+  - Scope retention to specific users, locations, and content types
+  - Recognize what retention does and doesn't control
+prerequisites: |
+  None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- auditor
+products:
+- m365
+- microsoft-purview
+subjects:
+- data-management
+units:
+- learn.wwl.purview-understand-retention.introduction
+- learn.wwl.purview-understand-retention.retention-overview
+- learn.wwl.purview-understand-retention.retention-labels-retention-policies
+- learn.wwl.purview-understand-retention.decide-apply-retention
+- learn.wwl.purview-understand-retention.knowledge-check
+- learn.wwl.purview-understand-retention.summary
+badge:
+  uid: learn.wwl.purview-understand-retention.badge
