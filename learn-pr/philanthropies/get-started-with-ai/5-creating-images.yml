@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.get-started-with-ai.creating-images
+title: Creating images
+metadata:
+  title: Creating images
+  description: This content is a part of the Get started with AI.
+  ms.date: 04/08/2025
+  author: CourtneyHMicrosoft
+  ms.author: cohodge
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-creating-images.md)]
