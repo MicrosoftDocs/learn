@@ -2,9 +2,11 @@
 uid: learn.wwl.manage-security-controls-identity-access.microsoft-entra-id-single-sign-on
 title: Microsoft Entra ID single sign-on
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Microsoft Entra ID single sign-on
   description: "Microsoft Entra ID single sign-on"
-  ms.date: 03/10/2025
+  ms.date: 04/11/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
