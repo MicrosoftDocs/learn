@@ -9,7 +9,7 @@ metadata:
   ms.topic: module
   ms.service: microsoft-sentinel
 title: Connect Windows hosts to Microsoft Sentinel
-summary: Two of the most common logs to collect is Windows security events and Sysmon.  Learn how Microsoft Sentinel makes this easy with the Microsoft Windows Events data connectors.
+summary: Two of the most common logs to collect are Windows security events and Sysmon. Learn how Microsoft Sentinel makes this easy with the Microsoft Windows Events data connectors.
 abstract: |
   Upon completion of this module, the learner is able to:
   - Connect Azure Windows Virtual Machines to Microsoft Sentinel
