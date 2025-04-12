@@ -1,12 +1,60 @@
-Properly managing the lifecycle of your organization's content is essential for meeting legal and regulatory requirements and minimizing risks. Automating the application of retention labels streamlines this process. It systematically organizes how content is retained or deleted according to specific rules. This process ensures crucial information is protected until it's no longer needed.
+Automatically apply retention labels in Microsoft Purview
+Automatically applying retention labels helps ensure that important content is retained or deleted according to organizational policies, without relying on users to classify items manually. You can configure policies that detect specific types of content and apply labels based on the conditions you define.
 
-## Understand automatic retention
+This approach supports consistency, reduces the risk of human error, and simplifies the user experience by applying compliance requirements in the background.
 
-Automatic retention applies predefined labels to content without manual intervention. This system identifies and labels content based on defined criteria such as sensitivity, keywords, or data type, enabling:
+## How automatic labeling works
 
-- **Simplified user experience**: Reduces the need for extensive training as the system handles content classification.
-- **Enhanced consistency**: Ensures content is uniformly managed according to defined policies.
-- **Increased productivity**: Allows users to focus on their primary responsibilities without compliance distractions.
+Auto-apply retention label policies use service-side conditions to label content. You choose a retention label and configure conditions that determine when and where it's applied. Once applied, the label governs how long the content is kept and what happens afterward.
+
+These policies are especially useful when content matches patterns that are hard for users to identify on their own, such as financial data or sensitive keywords.
+
+A retention label can only be applied automatically if:
+
+- The item doesn't already have a retention label.
+- The item matches one or more of the configured conditions.
+
+Once applied, an auto-label can't be replaced or removed by another auto-apply policy, even if the content changes or a new policy is created.
+
+## Conditions you can use
+
+Auto-apply retention labels work by identifying specific types of content based on defined conditions. You can use one or more of the these conditions in your policy:
+
+- **Sensitive information types**: Detect patterns like credit card numbers, Social Security numbers, or health-related data. You can customize the detection by adjusting the required confidence level and number of instances.
+
+- **Keywords or searchable properties**: Use Keyword Query Language (KQL) to match specific terms, phrases, or document metadata. You can refine the query with logical operators like AND, OR, and NOT for more targeted results.
+
+- **Trainable classifiers**: Identify content based on patterns learned from example documents. You can use pre-trained classifiers or custom ones built from your organization’s own content to automatically label items that don’t follow predictable formats.
+- **Cloud attachments**: Apply labels to files shared through Outlook, Teams, Viva Engage, or Copilot when those files are stored in OneDrive or SharePoint. A copy of the shared file is labeled and stored in the Preservation Hold library for compliance purposes.
+
+## Use simulation mode to test your policy
+
+Simulation mode lets you preview which content would be labeled before turning on the policy. This helps you fine-tune your conditions and avoid unexpected results.
+
+Simulation mode is optional, but it's useful for verifying accuracy. Here's how it works:
+
+1. Create the auto-labeling policy with your chosen label and conditions.
+1. Run the policy in simulation mode.
+1. Review the results, including how many items match and where they're located.
+1. Adjust the conditions if needed and rerun simulation.
+1. When ready, turn on the policy to start labeling content.
+
+### Simulation mode limitations and considerations
+
+Here are a few things to keep in mind when testing policies with simulation mode:
+
+- Simulations expire after 7 days.
+- You can have up to 30 simulation jobs active within a 12-hour period.
+- Each mailbox can return up to 100 sample items.
+- Only items that exist at the time the simulation job runs are evaluated. Items that are deleted or moved beforehand won't be included.
+- Adaptive scopes are supported, but may take a few days to fully populate. It’s a good idea to verify scope membership before running the simulation.
+
+When a simulation is running or complete, its status appears as **In simulation** in the Label policies list. Select the policy and choose V**iew simulation** to inspect sample items and review match counts.
+
+
+
+
+
 
 ## Understand simulation mode
 
