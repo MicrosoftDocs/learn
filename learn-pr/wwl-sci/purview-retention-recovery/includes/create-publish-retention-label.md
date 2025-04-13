@@ -54,7 +54,7 @@ Retention labels can be created in the **Data lifecycle management** and **Recor
 
 To create a new retention label:
 
-1. In the [Microsoft Purview portal](https://purview.microsoft.com/), go to **Solutions** > **Data lifecycle management** > **Retention labels**.
+1. In the [Microsoft Purview portal](https://purview.microsoft.com/?azure-portal=true), go to **Solutions** > **Data lifecycle management** > **Retention labels**.
 
 1. Select **Create a label**.
 
@@ -94,11 +94,11 @@ To make a retention label available for users to apply, include it in a retentio
 
 To publish labels:
 
-1. Go to **Records management** or **Data lifecycle management**, then select **Policies** > **Retention policies**.
+1. Go to **Data lifecycle management** or **Records management**, then select **Policies** > **Label policies**.
 
-1. Select **New retention policy**.
+1. Select **Publish labels**.
 
-1. On the **Name your retention policy** page, enter a name and optional description.
+1. On the **Choose labels to publish** page, add the retention label you'd like to publish.
 
 1. On the **Policy scope** page, optionally add admin units.
 
@@ -106,19 +106,11 @@ To publish labels:
 
    - Adaptive scopes require separate setup and allow targeting by user, site, or group attributes.
 
-1. On the **Choose where to apply this policy** page, select the locations where the labels should be available.
+1. On the **Choose where to apply this policy** page, select to publish the label to all locations or select specific locations for the label.
 
    :::image type="content" source="../media/retention-label-policy-locations.png" alt-text="Screenshot showing locations available to apply a retention label policy." lightbox="../media/retention-label-policy-locations.png":::
 
-1. On the **Decide if you want to retain content, delete it, or both** page, choose:
-
-   - **Retain items for a specific period** to keep content for a set duration, starting from when it was created, modified, labeled, or tied to an event
-
-   - **Retain items forever** to ensure content is never permanently deleted
-
-   - **Only delete items when they reach a certain age** to automatically remove content after a set time without retaining it first
-
-1. Review your settings, then create the retention label policy.
+1. Name your retention label policy, then review and submit your settings to publish your retention label to a retention label policy.
 
 ## Edit or delete retention labels
 
@@ -137,7 +129,7 @@ The visibility of retention labels can vary based on the service:
 - **SharePoint and OneDrive**: Labels usually appear within one day, but it can take up to seven days.
 - **Exchange**: Labels can take up to seven days to appear and require the mailbox to have at least 10 MB of data.
 
-:::image type="content" source="../media/retention-labels-published-timings.png" alt-text="Diagram illustrating when retention label policies are available to apply.":::
+:::image type="content" source="../media/retention-labels-published-timings.png" alt-text="Diagram illustrating when retention label policies are available to apply." lightbox="../media/retention-labels-published-timings.png":::
 
 If labels don't appear as expected, check the policy status in the Microsoft Purview portal. You can also use PowerShell to troubleshoot or retry distribution.
 

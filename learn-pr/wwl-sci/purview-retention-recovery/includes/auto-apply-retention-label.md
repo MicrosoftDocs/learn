@@ -1,5 +1,4 @@
-Automatically apply retention labels in Microsoft Purview
-Automatically applying retention labels helps ensure that important content is retained or deleted according to organizational policies, without relying on users to classify items manually. You can configure policies that detect specific types of content and apply labels based on the conditions you define.
+Automatically applying retention labels helps retain or delete content based on organizational policies—without relying on users to classify items manually. You can configure policies that detect specific types of content and apply labels based on the conditions you define.
 
 This approach supports consistency, reduces the risk of human error, and simplifies the user experience by applying compliance requirements in the background.
 
@@ -18,13 +17,13 @@ Once applied, an auto-label can't be replaced or removed by another auto-apply p
 
 ## Conditions you can use
 
-Auto-apply retention labels work by identifying specific types of content based on defined conditions. You can use one or more of the these conditions in your policy:
+Auto-apply retention labels work by identifying specific types of content based on defined conditions. You can use one or more of these conditions in your policy:
 
 - **Sensitive information types**: Detect patterns like credit card numbers, Social Security numbers, or health-related data. You can customize the detection by adjusting the required confidence level and number of instances.
 
 - **Keywords or searchable properties**: Use Keyword Query Language (KQL) to match specific terms, phrases, or document metadata. You can refine the query with logical operators like AND, OR, and NOT for more targeted results.
 
-- **Trainable classifiers**: Identify content based on patterns learned from example documents. You can use pre-trained classifiers or custom ones built from your organization’s own content to automatically label items that don’t follow predictable formats.
+- **Trainable classifiers**: Identify content based on patterns learned from example documents. You can use pretrained classifiers or custom ones built from your organization's own content to automatically label items that don't follow predictable formats.
 - **Cloud attachments**: Apply labels to files shared through Outlook, Teams, Viva Engage, or Copilot when those files are stored in OneDrive or SharePoint. A copy of the shared file is labeled and stored in the Preservation Hold library for compliance purposes.
 
 ## Use simulation mode to test your policy
@@ -47,72 +46,54 @@ Here are a few things to keep in mind when testing policies with simulation mode
 - You can have up to 30 simulation jobs active within a 12-hour period.
 - Each mailbox can return up to 100 sample items.
 - Only items that exist at the time the simulation job runs are evaluated. Items that are deleted or moved beforehand won't be included.
-- Adaptive scopes are supported, but may take a few days to fully populate. It’s a good idea to verify scope membership before running the simulation.
+- Adaptive scopes are supported, but might take a few days to fully populate. It's a good idea to verify scope membership before running the simulation.
 
-When a simulation is running or complete, its status appears as **In simulation** in the Label policies list. Select the policy and choose V**iew simulation** to inspect sample items and review match counts.
+When a simulation is running or complete, its status appears as **In simulation** in the Label policies list. Select the policy and choose **View simulation** to inspect sample items and review match counts.
 
+## Create an auto-apply policy
 
+To automatically apply a retention label:
 
+1. In the [Microsoft Purview portal](https://purview.microsoft.com/?azure-portal=true), go to **Solutions** > **Data lifecycle management** or **Records management**.
+1. Select **Policies** > **Label policies** > **Auto-apply a label**.
+1. On the **Let's get started** page, enter a name and optional description.
+1. On the **Choose the type of content you want to apply this label to** page, choose the condition to trigger labeling:
+   - Sensitive info types
+   - Keywords or searchable properties
+   - Trainable classifiers
+   - Cloud attachments
+1. On the **Policy scope** page, keep the default of **Full directory**. Currently, admin units aren't supported for this policy.
+1. Choose a **Static** or **Adaptive** policy scope:
+   - Adaptive scopes require separate setup and allow targeting by user, site, or group attributes.
 
+1. On the **Choose where to automatically apply the label** page, choose whether to include all locations or specify only certain ones.
 
+1. On the **Choose a label to auto-apply** page, select **Add label** and select the label for your auto-apply policy.
 
-## Understand simulation mode
+1. On the **Decide whether to test or run your policy** page, choose to run your policy in simulation mode, or turn the policy on right away.
 
-Simulation mode offers an environment to test and refine retention policies using conditions similar to the WhatIf parameter in PowerShell. This feature allows administrators to:
+1. Review your settings, then submit your configuration to create the auto-apply label.
 
-- **Preview policies before implementation**: Simulate the effects of a policy on your content before full deployment.
-- **Refine and adjust**: Modify the policy based on simulation outcomes to better meet organizational needs.
-- **Scale cautiously**: Gradually expand the scope of the policy, making adjustments based on iterative simulations.
+## When labels take effect
 
-## Before you begin
+Auto-labeling policies can take up to 7 days to apply labels after activation. Timing depends on content volume and location.
 
-Before implementing auto-apply retention label policies, ensure:
+:::image type="content" source="../media/auto-apply-labels-published-timings.png" alt-text="Diagram illustrating when auto-apply retention label policies are available." lightbox="../media/auto-apply-labels-published-timings.png":::
 
-- **Permissions**: Ensure you have the necessary permissions within the **Compliance Administrator** role group to create and manage retention labels. Alternative roles include **Retention Management** for active management and **View-Only Retention Management** for read-only access.
-- **Enable Auditing**: Auditing must be active to use simulation mode effectively.
-- **Retention labels**: Confirm that necessary retention labels are created and available for use.
+If expected labels don't appear after 7 days, check the policy's **Status** in the **Label policies** list. If necessary, use PowerShell to retry distribution:
 
-## Implement automatic retention labels
+```powershell
+Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+```
 
-To apply automatic retention labels:
+## Location behavior and limitations
 
-1. Navigate to **Auto-apply a label** in either the Microsoft Purview portal or Microsoft Purview compliance portal.
+- Auto-labeling works only on content without an existing retention label.
+- Some conditions apply only to new or modified content.
+- Simulation runs against data at rest but is based on current content only.
+- Draft SharePoint items aren't supported.
+- Policies for cloud attachments label a stored copy of the shared file, not the message or original file.
 
-   - **Microsoft Purview portal**: [Sign in to the Microsoft Purview portal](https://purview.microsoft.com/?azure-portal=true)
+Auto-apply retention labels help enforce consistent retention policies by labeling content automatically, based on content types and patterns that are easy to miss manually. Simulation mode provides a safe way to test policies before deployment, while static and adaptive scopes give you flexible targeting options.
 
-      - If you're using records management: **Records management** > **Label policies** > **Auto-apply a label**.
-      - If you're using data lifecycle management: **Data Lifecycle Management** > **Policies** > **Label policies** > **Auto-apply a label**.
-
-   - **Microsoft Purview compliance portal**: [Sign in to the Microsoft Purview compliance portal](https://compliance.microsoft.com/?azure-portal=true)
-
-      - If you're using records management: **Solutions** > **Label policies** > **Auto-apply a label**.
-      - If you're using data lifecycle management: **Solutions** > **Data lifecycle management** > **Policies** > **Retention labels** > **Auto-apply a label**.
-
-1. Enter a name and description for your new auto-labeling policy.
-1. **Choose the type of content to apply the label to** by selecting one of the available conditions that describe your content.
-1. If your organization uses administrative units and you want to restrict the policy to specific users, select the appropriate units. If not, select **Full directory** to include all locations.
-1. On the **Choose the type of retention policy to create** page, select either **Adaptive** or **Static**. If you want to use adaptive scopes, you need to have one created before selecting this option.
-1. Depending on if you selected adaptive or static scope:
-   - **For adaptive**: On the **Choose adaptive policy scopes and locations page**, add scopes, and select locations. If you don't have any adaptive scopes created, no options appear on this page.
-   - **For static**: On the **Choose locations page**, adjust location settings as needed.
-1. Confirm the retention label to apply, decide if you want to run the policy in simulation mode or turn it on immediately. Review your settings before submitting.
-
-After content is labeled using an auto-apply label policy, the applied label can't be automatically removed or changed. This restriction applies whether altering the content or the policy, or implementing a new auto-apply label policy.
-
-## Configure conditions for auto-apply retention labels
-
-Tailor your retention strategies by setting conditions based on:
-
-### Sensitive information types
-
-Enable retention labels to automatically apply when content meets predefined sensitive information types like financial data or personal identifiers. You can customize these settings by adjusting confidence levels and instance counts, which helps balance the precision of detections and minimize false positives effectively.
-
-### Keywords or searchable properties
-
-Use Keyword Query Language (KQL) to identify content that includes specific words, phrases, or metadata properties. For instance, create policies to automatically label documents containing terms like `"contract agreement"` or `"confidential"`. Enhance the specificity of these searches by using logical operators like AND, OR, and NOT, allowing for more accurate categorization of content.
-
-### Trainable classifiers
-
-For more dynamic and adaptable content management, you can use trainable classifiers to enhance your auto-apply retention label configurations. These classifiers learn to recognize different types of documents, from business communications to legal agreements, by analyzing examples. Once trained, they can automatically label new, similar content, facilitating consistent and automated compliance management.
-
-These conditions can be combined to develop a comprehensive and layered retention policy, ensuring thorough coverage across various data types and content categories. For example, a policy might use both sensitive information types for detecting any financial data and trainable classifiers to catch complex patterns like specific forms or reports not covered by simpler keyword or metadata matches.
+Use auto-labeling to protect sensitive content, reduce manual effort, and support compliance across Microsoft 365.
