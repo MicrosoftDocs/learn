@@ -1,16 +1,18 @@
-Over the last decades, multiple developments in the field of **natural language processing** (**NLP**) have resulted in achieving **large language models** (**LLMs**). The development and availability of language models led to new ways to interact with applications and systems, such as through generative AI assistants and agents. There are a few key concepts to understand about modern language models: 
+Over the last decades, multiple developments in the field of **natural language processing** (**NLP**) have resulted in achieving **large language models** (**LLMs**). The development and availability of language models led to new ways to interact with applications and systems, such as through generative AI assistants and agents.
 
-- How they *read*  
-- How they understand the relationship between words 
-- How they remember what was said  
+Let's take a look back at historical developments for language models which include:
 
-## Understanding tokenization
+- **Tokenization**: enabling machines to *read*.
+- **Word embeddings**: enabling machines to capture the relationship between words. 
+- **Architectural developments**: (changes in the design of language models) enabling them to capture word context.  
+
+## Tokenization
 
 As you may expect, machines have a hard time deciphering text as they mostly rely on numbers. To *read* text, we therefore need to convert the presented text to numbers.
 
 One important development to allow machines to more easily work with text has been tokenization. **Tokens** are strings with a known meaning, usually representing a word. **Tokenization** is turning words into tokens, which are then converted to numbers. A statistical approach to tokenization is by using a pipeline:
 
-:::image type="content" source="../media/tokenization-pipeline.png" alt-text="Animation showing the pipeline of tokenization of a sentence.":::
+:::image type="content" source="../media/tokenization-pipeline.png" alt-text="A screenshot showing the pipeline of tokenization of a sentence.":::
 
 1. Start with the text you want to **tokenize**.
 1. **Split** the words in the text based on a rule. For example, split the words where there's a white space.
@@ -19,40 +21,27 @@ One important development to allow machines to more easily work with text has be
 
 Tokenization allowed for text to be labeled. As a result, statistical techniques could be used to let computers find patterns in the data instead of applying rule-based models.
 
-## Understand word embeddings
+## Word embeddings
 
-One of the key concepts introduced by applying deep learning techniques to NLP is **word embeddings**. Word embeddings solved the problem of not being able to define the semantic relationship between words.
+One of the key concepts introduced by applying deep learning techniques to NLP is **word embeddings**. Word embeddings address the problem of not being able to define the **semantic relationship** between words.
 
-Before word embeddings, a prevailing challenge with NLP was to detect the semantic relationship between words. Word embeddings represent words in a vector space, so that the relationship between words can be easily described and calculated.
+Word embeddings are created during the deep learning model training process. During training, the model analyzes the cooccurrence patterns of words in sentences and learns to represent them as **vectors**. A vector represents a path through a point in n-dimensional space (in other words, a line). Semantic relationships are defined by how similar the angles of the lines are (i.e. the direction of the path). Because word embeddings represent words in a vector space, the relationship between words can be easily described and calculated.
 
-Word embeddings are created during **self-supervised learning**. During the training process, the model analyzes the cooccurrence patterns of words in sentences and learns to represent them as **vectors**. The vectors represent the words with coordinates in a multidimensional space. The distance between words can then be calculated by determining the distance between the relative vectors, describing the semantic relationship between words.
+To create a vocabulary that encapsulates semantic relationships between the tokens, we define contextual vectors, known as embeddings, for them. Vectors are multi-valued numeric representations of information, for example [10, 3, 1] in which each numeric element represents a particular attribute of the information. For language tokens, each element of a token's vector represents some semantic attribute of the token. The specific categories for the elements of the vectors in a language model are determined during training based on how commonly words are used together or in similar contexts.
+ 
+Vectors represent lines in multidimensional space, describing direction and distance along multiple axes (you can impress your mathematician friends by calling these amplitude and magnitude). Overall, the vector describes the direction and distance of the path from origin to end.
 
-Imagine you train a model on a large corpus of text data. During the training process, the model finds that the words `bike` and `car` are often used in the same patterns of words. Next to finding `bike` and `car` in the same text, you can also find each of them to be used when describing similar things. For example, someone may drive a `bike` or a `car`, or buy a `bike` or a `car` at a shop.
+:::image type="content" source="../media/word-embeddings.png" alt-text="A screenshot showing a simple example of word embeddings.":::
+ 
+The elements of the tokens in the embeddings space each represent some semantic attribute of the token, so that semantically similar tokens should result in vectors that have a similar orientation – in other words they point in the same direction. a technique called cosine similarity is used to determine if two vectors have similar directions (regardless of distance), and therefore represent semantically linked words. For example, the embedding vectors for "dog" and "puppy" describe a path along an almost identical direction, which is also fairly similar to the direction for "cat". The embedding vector for "skateboard" however describes journey in a very different direction.
 
-The model learns that the two words are often found in similar contexts and therefore plots the word vectors for `bike` and `car` close to each other in the vector space.
+## Architectural developments 
 
-Imagine we have a three-dimensional vector space where each dimension corresponds to a semantic feature. In this case, let's say the dimensions represent factors like *vehicle type*, *mode of transportation*, and *activity*. We can then assign hypothetical vectors to the words based on their semantic relationships:
+The architecture, or design, of a machine learning model describes the structure and organization of its various components and processes. It defines how data is processed, how models are trained and evaluated, and how predictions are generated. One of the first breakthroughs in language model architecture was the **Recurrent Neural Networks** (**RNNs**). 
 
-:::image type="content" source="../media/word-embeddings-vectors.png" alt-text="Diagram showing word embeddings for bike and car in a vector space, compared to drive and shop.":::
+To understand text isn't just to understand individual words, presented in isolation. Words can differ in their meaning depending on the **context** they're presented in. In other words, the sentence around a word matters to the meaning of the word. 
 
-1. `Boat` [2, 1, 4] is close to `drive` and `shop`, reflecting that you can drive a boat and visit shops near bodies of water.
-1. `Car` [7, 5, 1] closer to `bike` than `boat` as cars and bikes are both used on land rather than on water.
-1. `Bike` [6, 8, 0] is closer to `drive` in the *activity* dimension and close to `car` in the *vehicle type* dimension.
-1. `Drive` [8, 4, 3] is close to `boat`, `car` and `bike`, but far from `shop` as it describes a different kind of activity.
-1. `Shop` [1, 3, 5] is closest to `bike` as these words are most commonly used together.
-
-> [!Note]
-> In the example, a three-dimensional plane is used to describe word embeddings and vector spaces in simple terms. Vector spaces are often multidimensional planes with vectors representing a position in that space, similar to coordinates in a two-dimensional plane.
-
-Though word embeddings are a great approach to detecting the semantic relationship between words, it still has its problems. For example, words with different intents like `love` and `hate` often appear related because they're used in similar context. Another problem was that the model would only use one entry per word, resulting in a word with different meanings like `bank` to be semantically related to a wild array of words.
-
-## Understand the need for context 
-
-To understand text isn't just to understand individual words, presented in isolation. Words can differ in their meaning depending on the **context** they're presented in. In other words, the sentence around a word matters to the meaning of the word.
-
-Before deep learning, including the context of a word was a task too complex and costly. One of the first breakthroughs in including the context were **Recurrent Neural Networks** (**RNNs**).
-
-RNNs consist of multiple sequential steps. Each step takes an **input** and a **hidden state**. Imagine the input at each step to be a new word. Each step also produces an **output**. The hidden state can serve as a memory of the network, storing the output of the previous step and passing it as input to the next step.
+RNNs are able to take into account the context of words through multiple sequential steps. Each step takes an **input** and a **hidden state**. Imagine the input at each step to be a new word. Each step also produces an **output**. The hidden state can serve as a memory of the network, storing the output of the previous step and passing it as input to the next step. 
 
 Imagine a sentence like:
 

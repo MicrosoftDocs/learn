@@ -2,13 +2,13 @@
 uid: learn.machinelearning.optimize-model-performance-roc-auc-dropout.comparing-optimizing-curves
 title: Compare and optimize ROC curves
 metadata:
-  title: Compare and optimize ROC curves
+  title: Compare and Optimize ROC Curves
   description: Conceptual unit about comparing and optimizing machine learning models ROC curves
-  ms.date: 07/20/2024
+  ms.date: 04/03/2025
   author: s-polly
   ms.author: scottpolly
   ms.topic: unit
 durationInMinutes: 4
 content: |
   [!include[](includes/4-compare-optimize-curves.md)]
-
+
