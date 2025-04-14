@@ -205,6 +205,12 @@ For example, a `GET` request to view a specific workflow run log would follow th
 GET /repos/{owner}/{repo}/actions/runs/{run_id}/logs
 ```
 
-<!-- INFOMAGNUS UPDATES for sub OD 1.4.4 go here. Source Material: Infomagnus team to find source material and cite sources when they update material  --> https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/generating-an-installation-access-token-for-a-github-app
+<!-- INFOMAGNUS UPDATES for sub OD 1.4.4 go here. Source Material: Infomagnus team to find source material and cite sources when they update material  --> https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/generating-an-installation-access-token-for-a-github-app  ,  https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/authenticating-as-a-github-app-installation
 ## Identify when to use an an installation token from a GitHub App
 
+Once your GitHub App is installed on an account, you can authenticate it as an app installation for REST and GraphQL API requests. This allows the app to access resources owned by the installation, assuming the app was granted the necessary repository access and permissions. REST or GraphQL API requests made by an app installation are attributed to the app.
+
+example here
+
+You can also use an installation access token to authenticate for HTTP-based Git access. Your app must have the "Contents" repository permission. You can then use the installation access token as the HTTP password. You replace TOKEN in the example  elow with the installation access token: 
+'''git clone https://x-access-token:TOKEN@github.com/owner/repo.git.'''
