@@ -208,7 +208,7 @@ GET /repos/{owner}/{repo}/actions/runs/{run_id}/logs
 <!-- INFOMAGNUS UPDATES for sub OD 1.4.4 go here. Source Material: Infomagnus team to find source material and cite sources when they update material   https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/generating-an-installation-access-token-for-a-github-app  ,  https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/authenticating-as-a-github-app-installation -->
 ## Identify when to use an an installation token from a GitHub App
 
-Once your GitHub App is installed on an account, you can authenticate it as an app installation for REST and GraphQL API requests. This allows the app to access resources owned by the installation, assuming the app was granted the necessary repository access and permissions. REST or GraphQL API requests made by an app installation are attributed to the app.  In the following example, you replace `INSTALLATION_ACCESS_TOKEN` with the installation access token:
+Once your GitHub App is installed on an account, you can authenticate it as an app installation using the 'installation access token' for REST and GraphQL API requests. This allows the app to access resources owned by the installation, assuming the app was granted the necessary repository access and permissions. REST or GraphQL API requests made by an app installation are attributed to the app.  In the following example, you replace `INSTALLATION_ACCESS_TOKEN` with the installation access token:
 
 ```
 curl --request GET \
