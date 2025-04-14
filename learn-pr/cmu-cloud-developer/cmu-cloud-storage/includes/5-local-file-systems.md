@@ -90,7 +90,8 @@ Although the servers share the disk array, they cannot physically share data res
 ***
 ### References
 
-1. _Thomas Rivera (2012). [The Evolution of File Systems SNIA Tutorial](https://www.snia.org/sites/default/education/tutorials/2012/spring/file/ThomasRivera_The_Evolution_of_File_Systems-v3.pdf)_
+1. _Thomas Rivera (2012). [The Evolution of File Systems SNIA Tutorial](https://www.cse.msu.edu/~cse820/lectures/lecturesS08/Bandulet-C_The_Storage_Evolution.pdf
+)_
 2. _Sanjay Ghemawat, Howard Gobioff, and Shun-Tak Leung (2003). [The Google File Systems 19th ACM Symposium on Operating Systems Principles](https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf)_
 
 ***
