@@ -6,7 +6,7 @@ Let's update the hiking recommendation application we started in the previous ex
 
 When classifying a product review, we only want the model to tell us if the review is positive, neutral, or negative. Let's update the prompt the model receives so it has the best chance of providing a high-quality response.
 
-The current system prompt is OK, but we can get the model to recommend more appropriate and exciting hikes by following best practices in prompt construction. Let's make the instructions on how the model should act a bit more clear
+The current system prompt is OK, but we can get the model to recommend more appropriate and exciting hikes by following best practices in prompt construction. Let's make the instructions on how the model should act clearer.
 
 ### Add instructions
 
@@ -26,7 +26,7 @@ The current system prompt is OK, but we can get the model to recommend more appr
 
 ### Add primary content
 
-The primary content refers to the text that is being transformed by the model and what to do with it. In this case the hiking recommendations themselves.
+The primary content refers to the text that the model is transforming and what to do with it. In this case, the hiking recommendations themselves.
 
 1. Update the `systemPrompt` variable to instruct the model what to do with the content.
 
@@ -59,7 +59,7 @@ The previous request only said the hike should be strenuous with a great view. L
     a view that is amazing. I don't mind driving for a long time, even if it's over the pass.
     I've heard the Enchantments are nice.
     I don't want the hike to be over 10 miles round trip. I'd consider a point-to-point hike.
-    I want the hike to be as seculuded as possible. I don't want to see many people.
+    I want the hike to be as secluded as possible. I don't want to see many people.
     I would like it to be as bug free as possible. I would also like to avoid any Forest Service roads.
     """;
     ```
@@ -80,7 +80,7 @@ The previous request only said the hike should be strenuous with a great view. L
 
 This is much better! The response is following the rules of the system prompt and providing detailed information of the hike description requested.
 
-If you look closely, hike recommendation number 3 says it is both a point-to-point and a round trip hike. Let's change recommendation request prompt to see if we can avoid that mis-information.
+If you look closely, hike recommendation number three says it's both a point-to-point and a round trip hike. Let's change recommendation request prompt to see if we can avoid that mis-information.
 
 ### Chain-of-thought
 

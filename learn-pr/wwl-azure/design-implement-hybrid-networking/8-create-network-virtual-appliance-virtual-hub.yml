@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Create a network virtual appliance (NVA) in a virtual hub
   description: "Create a network virtual appliance (NVA) in a virtual hub"
-  ms.date: 04/04/2025
+  ms.date: 04/14/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
