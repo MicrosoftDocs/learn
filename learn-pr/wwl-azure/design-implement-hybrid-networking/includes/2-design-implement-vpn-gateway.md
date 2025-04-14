@@ -59,7 +59,7 @@ To provide better availability for your VPN connections, consider one of these o
 
 ### Active-standby Azure VPN gateways
 
-You can create an Azure VPN gateway in an active-standby configuration. Active-active is the default configuration. In this configuration there are two instances, active and standby. The standby connection takes over when the active connection is disrupted. Switching to the standby connection causes a service disruption. 
+You can create an Azure VPN gateway in an active-standby configuration. Active-standby is the default configuration. In this configuration there are two instances, active and standby. The standby connection takes over when the active connection is disrupted. Switching to the standby connection causes a service disruption. 
 
 - For planned maintenance, connectivity is restored in seconds.
 - For unplanned interruptions, connectivity is restored in minutes.
