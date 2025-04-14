@@ -167,15 +167,6 @@ You must have the following prerequisites installed on your computer:
     Sending a message to the Sales Messages queue...
     Sending message: $10,000 order for bicycle parts from retailer Adventure Works.
     Message was sent successfully.    ```
-1. When the app is finished, run the following command, replacing \<namespace-name\> with the name of your Service Bus namespace. This command returns the number of messages that are in the queue.
-
-    ```azurecli
-    az servicebus queue show \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
-        --name salesmessages \
-        --query messageCount \
-        --namespace-name <namespace-name>
-    ```
   
 ## Write code to receive messages from the queue
 
@@ -373,20 +364,6 @@ You must have the following prerequisites installed on your computer:
     Received: $10,000 order for bicycle parts from retailer Adventure Works.
     ```
 1. When you see that the messages have been received in the Cloud Shell, <kbd>ENTER</kbd> to stop the app.
-
-### Check the message count
-
-Run the following code to confirm that all the messages have been removed from the queue, remembering to replace \<namespace-name\> with your Service Bus namespace.
-
-```azurecli
-az servicebus queue show \
-    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
-    --name salesmessages \
-    --query messageCount \
-    --namespace-name <namespace-name>
-```
-
-The output is `0` if all the messages have been removed.
 
 You've written code that sends a message about individual sales to a Service Bus queue. In the salesforce distributed application, you should write this code in the mobile app that sales personnel use on devices.
 
