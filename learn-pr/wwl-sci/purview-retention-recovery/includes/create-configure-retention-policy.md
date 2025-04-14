@@ -1,83 +1,101 @@
-Effectively managing your organization's data is critical. Microsoft Purview helps with this through retention policies, which ensure data is handled in compliance with regulatory requirements. These policies dictate whether to keep, delete, or retain data temporarily.
+Retention policies in Microsoft Purview help you manage the lifecycle of data across Microsoft 365. These policies define whether to retain or delete content, and for how long. By using retention policies, you can meet regulatory requirements, reduce risk, and apply consistent governance across workloads.
 
 ## Understand retention policies
 
-A retention policy in Microsoft Purview helps your organization manage its data more effectively. It can be applied to various services such as emails, documents, and chats, simplifying compliance with legal requirements.
+Retention policies apply broad retention settings to containers such as mailboxes, sites, and Microsoft 365 Groups. They help you automatically retain or delete content based on age or events, supporting regulatory compliance and consistent lifecycle management across your organization.
 
-### Permissions for managing retention policies
+Unlike retention labels, which apply to individual items and offer more granularity, retention policies are best for applying uniform rules across entire workloads.
 
-To manage retention policies and retention labels in Microsoft Purview, you need the appropriate access permissions. This includes access to the Microsoft Purview portal or the Microsoft Purview compliance portal. To obtain these permissions, you should be added to the **Compliance Administrator** role group.
+> [!TIP]
+> If content is subject to multiple retention settings, whether through policies, labels, or both, Microsoft Purview follows a defined precedence order. For details, see Principles of retention.
 
-If the default role doesn't suit your needs, a new role group can be created to include the **Retention Management** role for active policy management. For viewing settings without the ability to make changes, the **View-Only Retention Management** role is recommended.
+## Supported locations
 
-## Create and configure a retention policy
+Retention policies can apply to these locations. You can't include all of them in a single policy, so plan your policy scope accordingly:
 
-Microsoft Purview enables you to apply retention policies across various services, identified as "locations," within your organization. However, it's important to understand that a single retention policy can't include all locations in a single retention policy. Here are the locations you can manage with these policies:
+- Exchange mailboxes and public folders
+- SharePoint sites, including classic and communication sites
+- OneDrive accounts
+- Microsoft 365 Group mailboxes and sites
+- Teams chats, private channel messages, and channel messages
+- Microsoft Copilot interactions
+- Enterprise AI apps
+- Viva Engage user messages and community messages
+- Skype for Business
 
-- **Exchange mailboxes**
-- **SharePoint sites** or **SharePoint classic and communication sites**
-- **OneDrive accounts**
-- **Microsoft 365 Group mailboxes & sites**
-- **Exchange public folders**
-- **Teams channel messages**
-- **Teams chats and Copilot interactions**
-- **Teams private channel messages**
-- **Viva Engage community messages**
-- **Viva Engage user messages**
+> [!NOTE]
+> If you select Teams or Viva Engage locations, the other locations will be excluded from the same policy unless you use an adaptive scope.
 
-Selecting either Teams or Viva Engage as a location automatically excludes the other locations from the same policy. This exclusion highlights the importance of careful planning and strategic decision-making when setting up your retention policies.
+### Static and adaptive scopes
 
-### Steps to create a retention policy
+Before you begin, make sure you've selected the right scope type for your policy: **static** or **adaptive**. Scope type controls how policy membership is defined and whether it updates automatically.
 
-1. Navigate to **Retention polices** in either the Microsoft Purview portal or Microsoft Purview compliance portal:
+Some locations only support static scopes, and others behave differently depending on the scope you choose.
 
-   - **Microsoft Purview portal**: [Sign in to the Microsoft Purview portal](https://purview.microsoft.com/?azure-portal=true) > **Data Lifecycle Management** card > **Policies** > **Retention policies**.
+## Create a retention policy
 
-        If you don't see the **Data Lifecycle Management** card, select **View all solutions** and find **Data Lifecycle Management** under the **Data Governance** section.
+To configure a new retention policy:
 
-        :::image type="content" source="../media/purview-portal-data-lifecycle-management-card.png" alt-text="Screenshot showing the Data Lifecycle card in the Microsoft Purview portal.":::
+1. Go to **Data lifecycle management**, then select **Policies** > **Retention policies**.
 
-   - **Microsoft Purview compliance portal**: [Sign in to the Microsoft Purview compliance portal](https://compliance.microsoft.com/?azure-portal=true) > **Solutions** > **Data lifecycle management** > **Microsoft 365** > **Retention Policies**.
+1. Select **New retention policy**.
 
-1. Select **New retention policy** to start the **Create retention policy** configuration, and name your new retention policy.
+1. On the **Name your retention policy** page, enter a name and optional description.
 
-1. On the **Assign admin units** page: If your organization uses administrative units in Microsoft Entra ID, you can restrict the retention policy to specific users by selecting these units. If administrative units are assigned to your account, choose the relevant ones.
+1. On the **Policy scope** page, optionally add admin units.
 
-    If you don't want to use administrative units or if they aren't set up in your organization, keep the default setting as **Full directory**.
+1. On the **Choose the type of retention policy to create​** page, choose between an **Adaptive** or **Static** policy scope.
 
-1. Select the scope type for your retention policy.
+   - Adaptive scopes require separate setup and allow targeting by user, site, or group attributes.
 
-1. On the **Decide if you want to retain content, delete it, or both** page:
+1. On the **Choose where to apply this policy** page, select the locations where the labels should be available.
 
-   - **Retain items for a specific period**: Items are retained for a defined time frame. After this period, they're automatically deleted, helping manage data efficiently and ensuring compliance.
+   :::image type="content" source="../media/retention-policy-locations.png" alt-text="Screenshot showing locations available to apply a retention label policy." lightbox="../media/retention-label-policy-locations.png":::
 
-   - **Retain items forever**: Items are kept indefinitely without an automatic deletion timeline.
+1. On the **Decide if you want to retain content, delete it, or both** page, choose whether to retain items, delete them, or do both. Options include:
 
-   - **Only delete items when they reach a certain age**: Items aren't retained but are scheduled for automatic deletion once they reach a specified age, helping manage data lifecycle without long-term retention.
+   - **Retain content for a specific period**, with optional deletion after that period.
+   - **Retain content forever**.
+   - **Delete content when it reaches a specified age**.
 
-1. Complete the configuration and save your settings.
+1. Review your settings, then create the retention label policy.
 
-### Specific configurations for services
+## Policy deployment timing and troubleshooting
 
-**Teams and Copilot for Microsoft 365**:
+It can take up to seven days for a newly created retention policy to be fully distributed and applied to content.
 
-- For Teams, including shared channels, configure retention settings that inherit from the parent team.
-- For Copilot interactions, apply settings that manage the data lifecycle of chat and interaction records.
+:::image type="content" source="../media/retention-policy-timings.png" alt-text="Diagram illustrating when retention policies are available to apply." lightbox= "../media/retention-policy-timings.png":::
 
-**Viva Engage**:
+If a policy doesn't take effect as expected:
 
-- Configure policies that address both community messages and private interactions.
-- Ensure that retention settings don't inform users directly about data deletions.
+- Check the **Status** on the **Retention policies** page in the Microsoft Purview portal.
+- If deployment is stuck, retry distribution using PowerShell:
 
-**Other Services (Exchange, SharePoint, OneDrive)**:
+   ```powershell
+   Set-RetentionCompliancePolicy -Identity "<PolicyName>" -RetryDistribution
+   ```
 
-- Tailor policies to handle email, site content, and personal storage in ways that meet organizational and regulatory needs.
-- Consider the unique aspects of each service to ensure comprehensive coverage.
+   For Teams private channel messages or Viva Engage content, use:
 
-## How long it takes for retention policies to take effect
+   ```powershell
+   Set-AppRetentionCompliancePolicy -Identity "<PolicyName>" -RetryDistribution
+   ```
 
-:::image type="content" source="../media/retention-policy-timings.png" alt-text="Diagram illustrating retention policy timing.":::
+## Updating or deleting a policy
 
-It can take up to seven days for a retention policy to be fully applied. During this period, the policy is distributed to the specified locations and begins to affect the data. Regularly monitor the policy's application to address any issues promptly.
+While most settings can be edited later, a few can't be changed once the policy is created:
 
-Retention policies are essential for robust data governance. By carefully setting up and managing these policies, organizations can ensure compliance, mitigate risks, and optimize their data management strategies.
+- Policy name
+- Scope type (static or adaptive)
+- Retention action type (retain, delete, or both)
+
+If you no longer need a policy to apply retention settings, release the policy instead of modifying it.
+
+## Limitations and considerations
+
+- Some retention settings, such as starting retention when content is last modified, might not be enforced. For example, Teams always uses the creation date instead.
+- When configuring Copilot and AI app locations, all subcategories must be selected. Individual configuration isn't supported.
+- Draft items in SharePoint aren't supported by retention policies.
+- Teams, Copilot, and Viva Engage might require separate policies unless adaptive scopes are used.
+- You might need additional policies to manage files, chats, or meeting recordings that aren't stored directly in the primary app.
+- Retention behavior and timing can vary across services. Always consult the latest Microsoft guidance when accuracy is critical.
