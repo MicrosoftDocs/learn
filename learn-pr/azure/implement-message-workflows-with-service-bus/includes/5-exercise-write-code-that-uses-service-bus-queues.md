@@ -13,7 +13,6 @@ In this unit, you build two console applications: one application places message
 1. Run the following command to clone the Git project solution:
 
     ```bash
-    cd ~
     git clone https://github.com/MicrosoftDocs/mslearn-connect-services-together.git
     ```
 1. Launch VS Code on your computer. 
