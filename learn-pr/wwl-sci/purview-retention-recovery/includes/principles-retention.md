@@ -11,7 +11,7 @@ These outcomes are calculated separately. For example, an item might be retained
 
 Microsoft Purview follows a consistent set of rules when deciding how retention and deletion actions interact:
 
-:::image type="content" source="../media/principles-of-retention.png" alt-text="Diagram illustrating the principles of retention in Microsoft Purview." lightbox="../media/principles-of-retention.png":::
+:::image type="content" source="../media/principles-retention.png" alt-text="Diagram illustrating the principles of retention in Microsoft Purview." lightbox="../media/principles-retention.png":::
 
 ### 1. Retention takes priority over deletion
 
@@ -54,7 +54,7 @@ If multiple retention settings apply to the same item, you can use the Microsoft
 
 This tool helps you apply the principles covered above to more complex scenarios.
 
-:::image type="content" source="../media/retention-flowchart.svg" alt-text="Flowchart for determining retention and deletion outcomes when multiple settings apply." lightbox="../media/retention-flowchart.svg":::
+:::image type="content" source="../media/retention-flowchart.png" alt-text="Flowchart for determining retention and deletion outcomes when multiple settings apply." lightbox="../media/retention-flowchart.png":::
 
 ## Special case: eDiscovery holds
 
