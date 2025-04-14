@@ -46470,6 +46470,86 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/2-comprehensive-experience-for-all-cloud-environments.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/3-get-high-level-insights-permissions-management-dashboard.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/4-knowledge-check-insights.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/5-dive-deeper-with-analytics-tab.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/6-knowledge-check-analytics.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/7-develop-better-understanding-of-your-environment-with-reports.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/8-analyze-historical-data-with-audit-tab.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/9-act-on-your-findings-with-remediation-tab.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/10-knowledge-check-remediation.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/11-stay-informed-with-continuous-monitoring.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/12-knowledge-check-monitoring.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/13-manage-access-to-microsoft-entra-permissions-management.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/14-put-it-all-together.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/15-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/index.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },    
+    {
       "source_path": "learn-pr/azure/build-cosmos-db-java-app/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
       "redirect_document_id": false

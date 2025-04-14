@@ -4,6 +4,13 @@ In the previous exercise, you implemented the necessary objects in your Azure su
 
 In this unit, you build two console applications: one application places messages into a Service Bus queue, and one application retrieves messages from a Service Bus queue. The applications are part of a single .NET Core solution.
 
+## Prerequisites
+You must have the following prerequisites installed on your computer:
+
+- [GitBash](https://git-scm.com/downloads).
+- [Visual Studio Code](https://code.visualstudio.com/) installed on one of the [supported platforms](https://code.visualstudio.com/docs/supporting/requirements#_platforms)
+- The [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code.
+
 ## Clone and open the starter application
 
 > [!NOTE]
@@ -13,11 +20,10 @@ In this unit, you build two console applications: one application places message
 1. Run the following command to clone the Git project solution:
 
     ```bash
-    cd ~
     git clone https://github.com/MicrosoftDocs/mslearn-connect-services-together.git
     ```
 1. Launch VS Code on your computer. 
-1. Select **File** -> **Open Folder ...**, and then select the folder: C:\Program Files\Git\learn-pr\learn-pr\azure\implement-message-workflows-with-service-bus (assuming that C:\Program Files\Git is the Git folder). You should see **final** and **start** subfolders. You work with code in the **start** folder to write code to send and receive messages. The **final** folder contains the code that's complete. 
+1. Select **File** -> **Open Folder ...**, and then select the folder: C:\Program Files\Git\mslearn-connect-services-together\implement-message-workflows-with-service-bus\src (assuming that C:\Program Files\Git is the Git folder). You should see **final** and **start** subfolders. You work with code in the **start** folder to write code to send and receive messages. The **final** folder contains the code that's complete. 
 
 
 ## Write code to send a message to a queue
@@ -161,15 +167,6 @@ In this unit, you build two console applications: one application places message
     Sending a message to the Sales Messages queue...
     Sending message: $10,000 order for bicycle parts from retailer Adventure Works.
     Message was sent successfully.    ```
-1. When the app is finished, run the following command, replacing \<namespace-name\> with the name of your Service Bus namespace. This command returns the number of messages that are in the queue.
-
-    ```azurecli
-    az servicebus queue show \
-        --resource-group "<rgn>[sandbox resource group name]</rgn>" \
-        --name salesmessages \
-        --query messageCount \
-        --namespace-name <namespace-name>
-    ```
   
 ## Write code to receive messages from the queue
 
@@ -367,20 +364,6 @@ In this unit, you build two console applications: one application places message
     Received: $10,000 order for bicycle parts from retailer Adventure Works.
     ```
 1. When you see that the messages have been received in the Cloud Shell, <kbd>ENTER</kbd> to stop the app.
-
-### Check the message count
-
-Run the following code to confirm that all the messages have been removed from the queue, remembering to replace \<namespace-name\> with your Service Bus namespace.
-
-```azurecli
-az servicebus queue show \
-    --resource-group "<rgn>[sandbox resource group name]</rgn>" \
-    --name salesmessages \
-    --query messageCount \
-    --namespace-name <namespace-name>
-```
-
-The output is `0` if all the messages have been removed.
 
 You've written code that sends a message about individual sales to a Service Bus queue. In the salesforce distributed application, you should write this code in the mobile app that sales personnel use on devices.
 
