@@ -37,5 +37,5 @@ quiz:
       explanation: "The self-hosted integrated runtime connects SQL Server to Azure for Azure Synapse Link, but isn't part of SQL Server setup."
     - content: "Azure extension for SQL Server"
       isCorrect: true
-      explanation: "The Azure extension for SQL Server can be configured a part of SQL Server 2022 setup and connects SQL Server to Azure for Purview, Azure Active Directory, Microsoft Defender, and pay-as-you-go licensing."
+      explanation: "The Azure extension for SQL Server can be configured a part of SQL Server 2022 setup and connects SQL Server to Azure for Purview, Microsoft Entra ID, Microsoft Defender, and pay-as-you-go licensing."
       

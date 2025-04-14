@@ -6,7 +6,7 @@ Just like in SQL Server 2017 and SQL Server 2019, SQL Server 2022 can be deploye
 
 SQL Server 2022 is supported on Windows 10, Windows 11, and Windows Server. SQL Server 2022 for Linux is supported on Red Hat Enterprise Linux 8.0 - 8.5 Server, SUSE Enterprise Linux Server v15, and Ubuntu 20.04 LTS.
 
-You can deploy SQL Server using the same methods as in previous versions, such as the Windows graphical setup wizard, command line options, Linux package managers, and container runtime engines, such as Docker. SQL Server 2022 is also available through Azure Virtual Machine marketplace images.
+You can deploy SQL Server using the same methods as in previous versions. Including the Windows graphical setup wizard, command line options, Linux package managers, and container runtime engines, such as Docker. SQL Server 2022 is also available through Azure Virtual Machine marketplace images.
 
 ## Editions for SQL Server 2022
 
@@ -32,7 +32,7 @@ SQL Server 2022 paid editions are licensed on individual instances using models 
 
 ## Feature differences for SQL Server 2022 from previous releases
 
-In future units, you'll learn about all the new features and capabilities in SQL Server 2022 compared to previous releases:
+In future units, you learn about all the new features and capabilities in SQL Server 2022 compared to previous releases:
 
 - Cloud connected
 - Built-in query intelligence
@@ -40,22 +40,20 @@ In future units, you'll learn about all the new features and capabilities in SQL
 - Data virtualization
 - Transact-SQL (T-SQL) enhancements
 
-Some of the differences for features that have been removed, deprecated, or enhanced from SQL Server in SQL Server 2022 from a perspective of deployment are listed below.
-
 > [!TIP]
 > Stay up to date with all the latest release notes at [SQL Server 2022 release notes](https://aka.ms/sqlserver2022releasenotes).
 
 ### Features removed or deprecated in SQL Server 2022
 
-The following features have been removed from SQL Server 2022 that were available in previous releases:
+The following features that were available in previous releases were removed from SQL Server 2022:
 
 - R, Python, and Java runtimes - R, Python, and Java runtimes are no longer included as part of the setup for SQL Server 2022. The Machine Learning Services feature is still supported, but you'll need to add your own packages that include runtimes you need.
 
 - Polybase Hadoop Connectivity with Java - The Polybase feature with Hadoop connectivity is removed from SQL Server 2022. You can still use Polybase services with ODBC drivers or new REST API based connectors for Azure Blob storage, Azure Data Lake Storage, or S3 compatible object storage.
 
-- Polybase scale out groups - The Polybase scale out group feature has been removed from SQL Server 2022. Queries using external tables or OPENROWSET for data virtualization can take advantage of scale-up processing built into SQL Server.
+- Polybase scale out groups - The Polybase scale out group feature is removed from SQL Server 2022. Queries using external tables or OPENROWSET for data virtualization can take advantage of scale-up processing built into SQL Server.
 
-- Machine Learning Server - Machine Learning Server was retired in July of 2022. Therefore, the Machine Learning Server feature has been removed from the SQL Server setup.
+- Machine Learning Server - The Machine Learning Server feature was retired in July of 2022 and is removed from the SQL Server setup.
 
 - Distributed Replay - Distributed Replay is no longer available to configure with the setup for SQL Server 2022 on Windows.
 

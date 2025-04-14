@@ -1,6 +1,6 @@
-As well as the Query Store and Intelligent Query Processing features built into the SQL Server engine, SQL Server 2022 continues a tradition of an industry-proven database engine with new capabilities in security, scalability, and availability.
+In addition to the Query Store and Intelligent Query Processing features built into the SQL Server engine, SQL Server 2022 continues a tradition of an industry-proven database engine with new capabilities in security, scalability, and availability.
 
-In this unit, you'll learn about some of the new major features in the SQL Server engine. For more information on SQL Server 2022 and new features introduced, see [What's new in SQL Server 2022](/sql/sql-server/what-s-new-in-sql-server-2022).
+In this unit, you learn about some of the new major features in the SQL Server engine. For more information on SQL Server 2022 and new features introduced, see [What's new in SQL Server 2022](/sql/sql-server/what-s-new-in-sql-server-2022).
 
 ## Security
 
@@ -14,9 +14,9 @@ The following figure shows the flow and components of Ledger for SQL Server:
 
 :::image type="content" source="../media/ledger-for-sql-server-2022.png" alt-text="Diagram showing the components and flow of Ledger for SQL Server.":::
 
-Any table you create as an **updatable ledger table** using the Transact-SQL (T-SQL) **CREATE TABLE** statement will result in the automatic creation of a **history table** and **ledger view**. All modifications to the ledger table will be recorded in the history table. The ledger view allows you to see all data in the ledger table, along with a historical record of changes. Ledger history includes a timestamp of any change, the type of change, and a transaction identifier.
+Any table you create as an **updatable ledger table** using the Transact-SQL (T-SQL) **CREATE TABLE** statement results in the automatic creation of a **history table** and **ledger view**. All modifications to the ledger table are recorded in the history table. The ledger view allows you to see all data in the ledger table, along with a historical record of changes. Ledger history includes a timestamp of any change, the type of change, and a transaction identifier.
 
-Inside the database are a series of system tables called the **database ledger**. The database ledger includes audit details across all ledger tables of which SQL principal was responsible for the modification and a hash value of the changes with the associated transaction identifier. In addition, the database ledger contains a cryptographic hash in the form of a blockchain to verify ledger table data. A database digest can be generated (including the ability to be auto generated and stored by the engine) to be used as an independent verification against the database ledger.
+Inside the database, are a series of system tables called the **database ledger**. The database ledger includes audit details across all ledger tables of which SQL principal was responsible for the modification and a hash value of the changes with the associated transaction identifier. In addition, the database ledger contains a cryptographic hash in the form of a blockchain to verify ledger table data. A database digest can be generated (including the ability to be auto generated and stored by the engine) to be used as an independent verification against the database ledger.
 
 Ledger tables can also be created as append-only tables. Append-only ledger tables will only allow T-SQL **INSERT** statements against the table, and are also verified with the database ledger and digests.
 
@@ -26,7 +26,7 @@ For more information, see [Ledger documentation](https://aka.ms/sqlledger).
 
 SQL Server provides fixed server roles to simplify providing permissions for certain server based activities. For example, a SQL principal can be assigned to the **sysadmin** fixed server role, which gives the principal the broadest set of permissions possible across the SQL Server instance.
 
-In SQL Server 2022, new fixed server roles have been added that provide more granular permissions for specific tasks. For example, the new fixed server role **##MS_ServerPerformanceStateReader##** allows any member to view key performance metrics through Dynamic Management Views (DMV), but not the same full rights as members of the sysadmin role. New fixed server roles provide the concept of *principle of least privilege*.
+In SQL Server 2022, there are new fixed server roles that provide more granular permissions for specific tasks. For example, the new fixed server role **##MS_ServerPerformanceStateReader##** allows any member to view key performance metrics through Dynamic Management Views (DMV), but not the same full rights as members of the sysadmin role. New fixed server roles provide the concept of *principle of least privilege*.
 
 For more information, see [Fixed server-level roles introduced in SQL Server 2022](/sql/relational-databases/security/authentication-access/server-level-roles#fixed-server-level-roles-introduced-in-sql-server-2022).
 

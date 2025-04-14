@@ -26,7 +26,7 @@ quiz:
       explanation: "Ledger for SQL Server doesn't encrypt data in user tables, and there isn't a database option called LEDGER. Always Encrypted is a feature to encrypt data end-to-end."
     - content: "Built-in auditing and cryptographic hashes of transactions against a ledger table."
       isCorrect: true
-      explanation: "Ledger for SQL Server uses auditing and crypto hashes to provide tamper evidence proof for tables declared as ledger tables."
+      explanation: "Ledger for SQL Server uses auditing and crypto hashes to provide tamper-evident proof for tables declared as ledger tables."
   - content: "Contained availability groups replicate what new types of data in SQL Server 2022 for a normal availability group?"
     choices: 
     - content: "SQL Server Agent Jobs"

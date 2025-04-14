@@ -23,10 +23,10 @@ quiz:
       explanation: "SQL Server 2022 provides built-in REST API support for S3 compatible object storage providers"
     - content: "Oracle data sources using ODBC"
       isCorrect: false
-      explanation: "SQL Server 2022 does support Oracle data sources, but uses ODBC with Polybase services and not the REST API."
+      explanation: "SQL Server 2022 does support Oracle data sources, but uses Open Database Connectivity (ODBC) with Polybase services and not the REST API."
     - content: "Hadoop data sources using Java"
       isCorrect: false
-      explanation: "Polybase support for Hadoop using Java has been removed in SQL Server 2022."
+      explanation: "Polybase support for Hadoop using Java is removed in SQL Server 2022."
   - content: "SQL Server 2022 data virtualization now supports which file format popular for data lakes?"
     choices: 
     - content: "JSON"
@@ -37,4 +37,4 @@ quiz:
       explanation: "Parquet files are natively supported in SQL Server 2022 without the need to create a file format definition."
     - content: "HDFS"
       isCorrect: false
-      explanation: "HDFS is a file system and not a file or data format."
+      explanation: "Hadoop Distributed File System (HDFS) is a file system and not a file or data format."

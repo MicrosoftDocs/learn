@@ -26,7 +26,7 @@ The following new connectors are supported using REST API:
 
 - S3 compatible object storage providers
 
-  Using the data source connector **s3** you can access file stored in S3 compatible object storage. S3 has become a popular object storage protocol and is supported by many providers, both in clouds and on-premises. S3 object storage offers scale, lower cost, geo-distribution, and a reliable data transport. For more information, see [data virtualization with S3 compatible object storage providers](/sql/relational-databases/polybase/polybase-configure-s3-compatible).
+  Using the data source connector **s3** you can access files stored in S3 compatible object storage. S3 is now a popular object storage protocol supported by many providers, both in clouds and on-premises. S3 object storage offers scale, lower cost, geo-distribution, and a reliable data transport. For more information, see [data virtualization with S3 compatible object storage providers](/sql/relational-databases/polybase/polybase-configure-s3-compatible).
 
 ### Using T-SQL for data virtualization
 
@@ -42,7 +42,7 @@ T-SQL provides the following statements to support data virtualization with REST
 
 - **CREATE EXTERNAL TABLE AS SELECT**
 
-  A new capability in SQL Server 2022 is to create an external table based on a query from an existing SQL Server table (or another external table) also known as **CREATE EXTERNAL TABLE AS SELECT**. The result of the query will be a new external table and files will be created to the remote data source based on the results of the SELECT statement. You can use this method to export SQL Server data to files in a remote data source.
+  A new capability in SQL Server 2022 is to create an external table based on a query from an existing SQL Server table (or another external table) also known as **CREATE EXTERNAL TABLE AS SELECT**. The result of the query is a new external table and files that are created to the remote data source based on the results of the SELECT statement. You can use this method to export SQL Server data to files in a remote data source.
 
 ### New native file format support
 
