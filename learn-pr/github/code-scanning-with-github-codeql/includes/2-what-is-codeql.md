@@ -38,7 +38,7 @@ There are two built-in query suites for CodeQL:
 * `default`: These are the queries run by default in CodeQL code scanning on GitHub, available with the default setup of code scanning. The queries in this query suite are highly precise and return few false positive code scanning results. Relative to the `security-extended` query suite, the default suite returns fewer low-confidence code scanning results.
 * `security-extended`: This suite contains all of the queries from the `default` suite, plus extra security queries with slightly lower precision and severity. It's available with the default setup of code scanning and is listed as the "Extended" option in the query suites dropdown. Relative to the `default` query suite, this suite may return a greater number of false positive code scanning results.
 
-The default setup of code scanning will use the `default` query suite. This can be changed by selecting the overflow icon to view the CodeQL configuration, and then selecting to the edit button. Under "Scan settings," you may choose one of the above two options as the query suite.
+The default setup of code scanning will use the `default` query suite. This can be changed by selecting the overflow icon to view the CodeQL configuration, and then selecting to the edit button. Under "Scan settings," you may choose one of the two options outlined as the query suite.
 
 ## CodeQL packs
 
@@ -47,8 +47,8 @@ CodedQL packs are used to organize the files used in CodeQL analysis so you can 
 There are three types of CodeQL packs: query packs, library packs, and model packs.
 
 * Query packs are designed to be run. When a query pack is published, the bundle includes all the transitive dependencies and pre-compiled representations of each query, in addition to the query sources. This ensures consistent and efficient execution of the queries in the pack.
-* Library packs are designed to be used by query packs (or other library packs) and do not contain queries themselves. The libraries are not compiled separately.
-* Model packs can be used to expand code scanning analysis to include dependencies that are not supported by default. Model packs are currently in beta and subject to change. During the beta, model packs are available for Java analysis at the repository level. For more information about creating your own model packs, see "Creating a CodeQL model pack."
+* Library packs are designed to be used by query packs (or other library packs) and don't contain queries themselves. The libraries aren't compiled separately.
+* Model packs can be used to expand code scanning analysis to include dependencies that aren't supported by default. Model packs are currently in beta and subject to change. During the beta, model packs are available for Java analysis at the repository level. For more information about creating your own model packs, see "Creating a CodeQL model pack."
 
 ### CodeQL pack structure
 

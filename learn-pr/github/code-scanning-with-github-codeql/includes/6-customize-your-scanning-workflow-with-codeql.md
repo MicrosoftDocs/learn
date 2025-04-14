@@ -29,7 +29,7 @@ We don't recommend referencing query suites directly from the `github/codeql` re
 
 To add one or more CodeQL query packs (beta), add a `with: packs:` entry within the `uses: github/codeql-action/init@v1` section of the workflow. Within packs, you can specify one or more packages to use and, optionally, which version to download. Where you don't specify a version, the latest version is downloaded. If you want to use packages that aren't publicly available, you need to set the `GITHUB_TOKEN` environment variable to a secret that has access to the packages.
 
-In the following example, scope is the organization or personal account that published the package. When the workflow runs, the three CodeQL query packs download from GitHub and the default queries or query suite for each pack run. In the below example, each of the packs in the list will download based on their specifications:
+In the following example, scope is the organization or personal account that published the package. When the workflow runs, the three CodeQL query packs download from GitHub and the default queries or query suite for each pack run. In the following example, each of the packs in the list will download based on their specifications:
 * The latest version of `pack1` is downloaded, and all default queries are run.
 * Version 1.2.3 of `pack2` is downloaded, and all default queries are run.
 * The latest version of `pack3` that is compatible with version 3.2.1 is downloaded, and all queries are run.

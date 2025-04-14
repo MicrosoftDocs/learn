@@ -40,10 +40,10 @@ quiz:
     choices:
     - content: "Scheduled events are more difficult to configure than triggered events."
       isCorrect: false
-      explanation: "Incorrect. Scheduled events are not more difficult to configure than triggered events. Both can be configured easily. "
+      explanation: "Incorrect. Scheduled events aren't more difficult to configure than triggered events. Both can be configured easily. "
     - content: "Scheduled events run based on a specified schedule and triggered events run on code events such a push. "
       isCorrect: true
-      explanation: "Correct. Scheduled events are specified by the developer and triggered events are set by default but can also be configured by the developer."
+      explanation: "Correct. The developer specifies scheduled events and triggered events are set by default but can also be developer configured."
     - content: "Triggered events run less frequently than scheduled events."
       isCorrect: false
       explanation: "Incorrect. The frequency of both triggered events and scheduled events varies depending on how often pushes and pull requests occur, as well as how the developer may have configured the frequency."

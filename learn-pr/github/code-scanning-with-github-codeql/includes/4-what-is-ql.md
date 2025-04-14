@@ -17,7 +17,7 @@ The syntax of QL is similar to SQL. However, the semantics of QL are based on Da
 1. Find a descendant of the given person; that is, a child or a descendant of a child.
 2. Count the number of descendants found using the previous step.
 
-When you write this process in QL, it closely resembles the above structure. Notice that the example used recursion to find all descendants of the given person, and an aggregate to count the number of descendants. Translating these steps into the final query without adding any procedural details is possible due to the declarative nature of the language. The QL code would look something like this:
+When you write this process in QL, it closely resembles this described structure. Notice that the example used recursion to find all descendants of the given person, and an aggregate to count the number of descendants. Translating these steps into the final query without adding any procedural details is possible due to the declarative nature of the language. The QL code would look something like this:
 
 ```ql
 Person getADescendant(Person p) {
@@ -38,7 +38,7 @@ Object orientation is an important feature of QL. The benefits of object orienta
 
 Here are a few prominent conceptual and functional differences between general purpose programming languages and QL:
 
-* QL does not have any imperative features such as assignments to variables or file system operations.
+* QL doesn't have any imperative features such as assignments to variables or file system operations.
 * QL operates on sets of tuples, and a query can be viewed as a complex sequence of set operations that defines the result of the query.
 * QL's set-based semantics makes it very natural to process collections of values without having to worry about efficiently storing, indexing, and traversing them.
 

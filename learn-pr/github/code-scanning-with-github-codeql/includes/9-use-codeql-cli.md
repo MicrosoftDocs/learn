@@ -48,9 +48,9 @@ The full list of parameters for the `database create` command is shown in the fo
 |---|---|
 |`<database>` | Specify the name and location of a directory to create for the CodeQL database. The command will fail if you try to overwrite an existing directory. If you also specify `--db-cluster`, this is the parent directory, and a subdirectory is created for each language analyzed. |
 | `--language` | Specify the identifier for the language to create a database for one of `cpp`, `csharp`, `go`, `java`, `javascript`, `python`, and `ruby` (use JavaScript to analyze TypeScript code). When used with `--db-cluster`, the option accepts a comma-separated list, or can be specified more than once. |
-| `--command` | Recommended. Use to specify the build command or script that invokes the build process for the codebase. Commands are run from the current folder or, where it is defined, from `--source-root`. Not needed for Python and JavaScript/TypeScript analysis. |
+| `--command` | Recommended. Use to specify the build command or script that invokes the build process for the codebase. Commands are run from the current folder or, where it's defined, from `--source-root`. Not needed for Python and JavaScript/TypeScript analysis. |
 | `--db-cluster` | Optional. Use in multi-language codebases to generate one database for each language specified by `--language`.|
-| `--no-run-unnecessary-builds`	| Recommended. Use to suppress the build command for languages where the CodeQL CLI does not need to monitor the build (for example, Python and JavaScript/TypeScript).|
+| `--no-run-unnecessary-builds`	| Recommended. Use to suppress the build command for languages where the CodeQL CLI doesn't need to monitor the build (for example, Python and JavaScript/TypeScript).|
 | `--source-root` | Optional. Use if you run the CLI outside the checkout root of the repository. By default, the database create command assumes that the current directory is the root directory for the source files; use this option to specify a different location.|
 
 ### Single language example
@@ -156,9 +156,9 @@ $ codeql database analyze /codeql-dbs/example-repo  \
 
 ## Upload results to GitHub
 
-SARIF upload supports a maximum of 25,000 results per upload. However, only the top 5,000 results will be displayed, prioritized by severity. If a tool generates too many results, you should update the configuration to focus on results for the most important rules or queries.
+SARIF upload supports a maximum of 25,000 results per upload. However, only the top 5,000 results are displayed, prioritized by severity. If a tool generates too many results, you should update the configuration to focus on results for the most important rules or queries.
 
-For each upload, SARIF upload supports a maximum size of 10 MB for the gzip-compressed SARIF file. Any uploads over this limit will be rejected. If your SARIF file is too large because it contains too many results, you should update the configuration to focus on results for the most important rules or queries. For more information on limitations and validating SARIF files see the documentation<sup>[6]</sup>.
+For each upload, SARIF upload supports a maximum size of 10 MB for the gzip-compressed SARIF file. Any uploads over this limit will be rejected. If your SARIF file is too large because it contains too many results, you should update the configuration to focus on results for the most important rules or queries. For more information on limitations and validating SARIF files, see the documentation<sup>[6]</sup>.
 
 Before you can upload results to GitHub, you must determine the best way to pass the GitHub App or personal access token you created earlier to the CodeQL CLI. We recommend that you review your CI system's guidance on the secure use of a secret store. The CodeQL CLI supports:
 
@@ -182,7 +182,7 @@ codeql github upload-results \
     --sarif=<file> 
 ```
 
-The full list of parameters for the `github upload-results` command is shown in the table below.
+The full list of parameters for the `github upload-results` command is shown in the table as follows.
 
 |Option	|Required Usage|
 |---|---|
