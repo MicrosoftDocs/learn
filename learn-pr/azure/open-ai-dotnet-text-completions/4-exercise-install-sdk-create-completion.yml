@@ -2,10 +2,10 @@
 uid: learn.azure.open-ai-dotnet-text-completions.4-exercise-install-sdk-create-completion
 title: Exercise - Install the .NET SDK for Azure OpenAI and create your first app
 metadata:
-  title: Exercise - Install the .NET SDK for Azure OpenAI and create your first app
+  title: Exercise - Install the .NET SDK for Azure OpenAI and Create Your First App
   description: Install the .NET SDK for Azure OpenAI and create your first app with text completions
   zone_pivot_groups: azure-shell-interface
-  ms.date: 08/29/2024
+  ms.date: 04/01/2025
   author: codemillmatt
   ms.author: masoucou
   ms.topic: unit
