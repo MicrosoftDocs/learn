@@ -6,7 +6,7 @@ metadata:
   description: "Knowledge check"
   ms.date: 10/31/2023
   author: wwlpublish
-  ms.author: jupadrao
+  ms.author: JulianePadrao
   ms.topic: unit
   ms.custom:
   - N/A
@@ -47,4 +47,4 @@ quiz:
     - content: To create a Windows Server Failover Cluster on the source and target.
       isCorrect: false
       explanation: Incorrect. This isn't required when using a distributed AG to migrate a standalone instance.
-
+

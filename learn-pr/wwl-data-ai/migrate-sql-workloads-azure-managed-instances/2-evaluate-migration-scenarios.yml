@@ -4,11 +4,11 @@ title: Evaluate migration scenarios
 metadata:
   title: Evaluate migration scenarios
   description: "Learn to evaluate migration scenarios to Azure SQL Managed Instance"
-  ms.date: 05/26/2021
-  author: jupadrao
-  ms.author: jupadrao
+  ms.date: 04/14/2025
+  author: JulianePadrao
+  ms.author: JulianePadrao
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/2-evaluate-migration-scenarios.md)]
+  [!include[](includes/2-evaluate-migration-scenarios.md)]
