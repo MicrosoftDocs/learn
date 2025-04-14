@@ -4,6 +4,13 @@ In the previous exercise, you implemented the necessary objects in your Azure su
 
 In this unit, you build two console applications: one application places messages into a Service Bus queue, and one application retrieves messages from a Service Bus queue. The applications are part of a single .NET Core solution.
 
+## Prerequisites
+You must have the following prerequisites installed on your computer:
+
+- [GitBash](https://git-scm.com/downloads).
+- [Visual Studio Code](https://code.visualstudio.com/) installed on one of the [supported platforms](https://code.visualstudio.com/docs/supporting/requirements#_platforms)
+- The [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code.
+
 ## Clone and open the starter application
 
 > [!NOTE]
