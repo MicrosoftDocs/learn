@@ -21,7 +21,7 @@ To get expert guidance to help plan, deploy, and migrate your organization to Mi
 
 To learn about the latest Microsoft Business Security solutions:
 
-- [Microsoft Business Security solutions](https://go.microsoft.com/fwlink/?linkid=845167)
+- [Microsoft Business Security solutions](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing)
 
 ## Learn more
 
