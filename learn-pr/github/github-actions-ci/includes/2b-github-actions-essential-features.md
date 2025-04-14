@@ -89,11 +89,11 @@ jobs:
           First_Name: Mona
 ```
 
-<!-- INFOMAGNUS UPDATES for sub OD 1.4.3, 1.4.6, and 1.4.7 go here. Source Material: Infomagnus team to find source material and cite sources when they update material -->  https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables 
+<!-- INFOMAGNUS UPDATES for sub OD 1.4.3, 1.4.6, and 1.4.7 go here. Source Material: Infomagnus team to find source material and cite sources when they update material  https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables --> 
 ## Identify where to set custom environment variables in a workflow
 ## Use default context in a workflow
 ## Pass custom environment variables to a workflow
-<!-- INFOMAGNUS UPDATES for sub OD 1.6.5 go here. Source Material: Infomagnus team to find source material and cite sources when they update material  --> https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables
+<!-- INFOMAGNUS UPDATES for sub OD 1.6.5 go here. Source Material: Infomagnus team to find source material and cite sources when they update material   https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables -->
 ## Add environment protections
 <!-- INFOMAGNUS END -->
 ## Scripts in your workflow
