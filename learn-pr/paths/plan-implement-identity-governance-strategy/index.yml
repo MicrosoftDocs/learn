@@ -31,6 +31,5 @@ modules:
 - learn.wwl.plan-implement-manage-access-review
 - learn.wwl.plan-implement-privileged-access
 - learn.wwl.monitor-maintain-azure-active-directory
-- learn.permissions-management.explore-features-of-permissions-management
 trophy:
   uid: learn.wwl.plan-implement-identity-governance-strategy.trophy
