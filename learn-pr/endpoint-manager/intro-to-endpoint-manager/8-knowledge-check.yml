@@ -1,6 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-endpoint-manager.8-knowledge-check
 metadata:
+  hidden_question_numbers: ["52414BDE_2","52414BDE_34","52414BDE_51","52414BDE_71","52414BDE_79","52414BDE_95","52414BDE_104","52414BDE_108","52414BDE_124","52414BDE_140"]
   ai_generated_module_assessment: true
   title: Module assessment
   description: Knowledge Check
