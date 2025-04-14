@@ -1,5 +1,48 @@
-1. create-publish-retention-label
-2. auto-apply-retention-label
-3. create-configure-adaptive-scope
-4. create-configure-retention-policy
-5. principles-retention
+### YamlMime:Module
+uid: learn.wwl.purview-retention-recovery
+metadata:
+  title: Implement and manage retention and recovery in Microsoft Purview
+  description: "Implement and manage retention and recovery in Microsoft Purview."
+  ms.date: 04/14/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: purview
+  ai-usage: ai-assisted
+  hidden: false
+title: Implement and manage retention and recovery in Microsoft Purview
+summary: Microsoft Purview helps reduce data exposure by providing tools to control how long content is kept and when it’s permanently deleted. Through retention labels, policies, adaptive scopes, and recovery capabilities, organizations can apply consistent lifecycle rules across Microsoft 365 and reduce the risk of keeping unnecessary or outdated data. This approach supports both compliance and information security goals by minimizing what data is available to unauthorized access or misuse.
+abstract: |
+  After completing this module, you'll be able to:
+  - Plan retention and disposition using retention labels.
+  - Create, publish, and automatically apply retention labels.
+  - Use adaptive scopes to target users, groups, or sites dynamically.
+  - Configure retention policies for Microsoft 365 workloads.
+  - Interpret the outcome when multiple retention settings apply.
+  - Restore deleted items and previous versions of content across SharePoint, OneDrive, and Teams.
+prerequisites: |
+  - Basic understanding of data management concepts.
+  - Familiarity with the Microsoft Purview portal.
+iconUrl: /training/achievements/manage-records.svg
+levels:
+- intermediate
+roles:
+- risk-practitioner
+products:
+- microsoft-purview
+- m365
+subjects:
+- information-protection-governance
+units:
+- learn.wwl.purview-retention-recovery.introduction
+- learn.wwl.purview-retention-recovery.plan-retention-disposition
+- learn.wwl.purview-retention-recovery.create-publish-retention-label
+- learn.wwl.purview-retention-recovery.auto-apply-retention-label
+- learn.wwl.purview-retention-recovery.create-configure-adaptive-scope
+- learn.wwl.purview-retention-recovery.create-configure-retention-policy
+- learn.wwl.purview-retention-recovery.principles-retention
+- learn.wwl.purview-retention-recovery.recover-content-microsoft-365-workloads
+- learn.wwl.purview-retention-recovery.knowledge-check
+- learn.wwl.purview-retention-recovery.summary
+badge:
+  uid: learn.wwl.purview-retention-recovery.badge

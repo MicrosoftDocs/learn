@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.manage-data-retention-microsoft-365.recover-content-microsoft-365-workloads
+uid: learn.wwl.purview-retention-recovery.recover-content-microsoft-365-workloads
 title: Recover content in Microsoft 365 workloads
 metadata:
   title: Recover content in Microsoft 365 workloads
   description: "Recover content in Microsoft 365 workloads"
-  ms.date: 05/30/2024
+  ms.date: 04/14/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: unit

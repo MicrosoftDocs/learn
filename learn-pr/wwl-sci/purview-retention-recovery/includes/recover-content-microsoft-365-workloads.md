@@ -40,7 +40,7 @@ Maintaining data consistency across collaboration platforms like SharePoint and 
 
 1. To open the Recycle Bin in SharePoint, you can:
 
-   - Select **Recycle bin** from the **Quick Launch bar**
+   - Select **Recycle bin** from the **Quick Launch bar**.
    - Or go to **Settings**, choose **Site contents**, then select **Recycle bin** at the top of the page:
 
    :::image type="content" source="../media/sharepoint-recycle-bin.png" alt-text="Screenshot showing the SharePoint Recycle bin.":::

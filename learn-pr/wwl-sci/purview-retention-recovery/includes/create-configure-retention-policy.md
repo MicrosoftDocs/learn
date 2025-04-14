@@ -97,5 +97,5 @@ If you no longer need a policy to apply retention settings, release the policy i
 - When configuring Copilot and AI app locations, all subcategories must be selected. Individual configuration isn't supported.
 - Draft items in SharePoint aren't supported by retention policies.
 - Teams, Copilot, and Viva Engage might require separate policies unless adaptive scopes are used.
-- You might need additional policies to manage files, chats, or meeting recordings that aren't stored directly in the primary app.
+- You might need more policies to manage files, chats, or meeting recordings that aren't stored directly in the primary app.
 - Retention behavior and timing can vary across services. Always consult the latest Microsoft guidance when accuracy is critical.
