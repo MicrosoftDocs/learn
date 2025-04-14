@@ -44,7 +44,7 @@ Computational fluid dynamics use mathematics to model fluid flows, both free-flo
 
 ### What Candidate Service Do I Use?
 
-**Lift and shift:** A strategy for migrating a workload to the cloud without redesigning the application or making code changes. Also called rehosting. For more information, see [HPC Migration](.../azure/high-performance-computing/lift-and-shift-overview#lift-and-shift-architecture-overview).
+**Lift and shift:** A strategy for migrating a workload to the cloud without redesigning the application or making code changes. Also called rehosting. For more information, see [HPC Migration](/azure/high-performance-computing/lift-and-shift-overview#lift-and-shift-architecture-overview).
 
 **Cloud-optimized:** A strategy for migrating to the cloud by refactoring an application to take advantage of cloud-native features and capabilities.
 
