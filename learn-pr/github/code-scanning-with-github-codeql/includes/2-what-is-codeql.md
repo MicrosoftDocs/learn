@@ -6,13 +6,13 @@ In this unit, you'll learn about the CodeQL static analysis tool and how it uses
 
 ## Variant analysis
 
-Variant analysis is the process of using a known security vulnerability as a seed to find similar problems in your code. It’s a technique that security engineers use to identify potential vulnerabilities and ensure these threats are properly fixed across multiple codebases.
+Variant analysis is the process of using a known security vulnerability as a seed to find similar problems in your code. It's a technique that security engineers use to identify potential vulnerabilities and ensure these threats are properly fixed across multiple codebases.
 
 Querying code using CodeQL is the most efficient way to perform variant analysis. You can use the standard CodeQL queries to identify seed vulnerabilities, or find new vulnerabilities by writing your own custom CodeQL queries. Then, you can develop or iterate over the query to automatically find logical variants of the same bug that could be missed using traditional manual techniques.
 
 ## CodeQL databases
 
-CodeQL databases contain queryable data extracted from a codebase, for a single language at a particular point in time. The database contains a full, hierarchical representation of the code, including a representation of the abstract syntax tree, the data-flow graph, and the control-flow graph.
+CodeQL databases contain queryable data extracted from a codebase for a single language at a particular point in time. The database contains a full, hierarchical representation of the code, including a representation of the abstract syntax tree, the data-flow graph, and the control-flow graph.
 
 Each language has its own unique database schema that defines the relations used to create a database. The schema provides an interface between the initial lexical analysis performed during the extraction process and the actual complex analysis of the CodeQL query evaluator. The schema specifies, for instance, that there's a table for every language construct.
 
@@ -27,7 +27,7 @@ The CodeQL library defines classes to provide a layer of abstraction over each o
 
 ## Query suites
 
-CodeQL query suites provide a way of selecting queries, based on their filename, location on disk or in a QL pack, or metadata properties. Create query suites for the queries that you want to frequently use in your CodeQL analyses.
+CodeQL query suites provide a way of selecting queries based on their filename, metadata properties, or location on disk or in a QL pack. Create query suites for the queries that you want to frequently use in your CodeQL analyses.
 
 Query suites allow you to pass multiple queries to CodeQL without having to specify the path to each query file individually. Query suite definitions are stored in YAML files with the extension `.qls`. A suite definition is a sequence of instructions where each instruction is a YAML mapping with (usually) a single key. The instructions are executed in the order they appear in the query suite definition. After all the instructions in the suite definition have been executed, the result is a set of selected queries.
 
@@ -36,9 +36,9 @@ Query suites allow you to pass multiple queries to CodeQL without having to spec
 There are two built-in query suites for CodeQL:
 
 * `default`: These are the queries run by default in CodeQL code scanning on GitHub, available with the default setup of code scanning. The queries in this query suite are highly precise and return few false positive code scanning results. Relative to the `security-extended` query suite, the default suite returns fewer low-confidence code scanning results.
-* `security-extended`: This suite contains all of the queries from the `default` suite, plus extra security queries with slightly lower precision and severity. It is available with the default setup of code scanning and is listed as the "Extended" option in the query suites dropdown. Relative to the `default` query suite, this suite may return a greater number of false positive code scanning results.
+* `security-extended`: This suite contains all of the queries from the `default` suite, plus extra security queries with slightly lower precision and severity. It's available with the default setup of code scanning and is listed as the "Extended" option in the query suites dropdown. Relative to the `default` query suite, this suite may return a greater number of false positive code scanning results.
 
-The default setup of code scanning will use the `default` query suite. This can be changed by selecting the overflow icon to view the CodeQL configuration and then selecting to the edit button. Under "Scan settings" you may choose one of the above two options as the query suite.
+The default setup of code scanning will use the `default` query suite. This can be changed by selecting the overflow icon to view the CodeQL configuration, and then selecting to the edit button. Under "Scan settings," you may choose one of the above two options as the query suite.
 
 ## CodeQL packs
 
@@ -52,11 +52,11 @@ There are three types of CodeQL packs: query packs, library packs, and model pac
 
 ### CodeQL pack structure
 
-The CodeQL CLI can be used to being developing and publishing a pack using the `pack init` command. This command will create the directory structure and files required, including the main file called `qlpack.yml` in its root directory. The metadata in each `qlpack.yml` file tells CodeQL how to compile any queries in the pack, what libraries the pack depends on, and where to find query suite definitions.
+The CodeQL CLI can be used to develop and publish a pack using the `pack init` command. This command will create the directory structure and files required, including the main file called `qlpack.yml` in its root directory. The metadata in each `qlpack.yml` file tells CodeQL how to compile any queries in the pack, what libraries the pack depends on, and where to find query suite definitions.
 
 The contents of the CodeQL pack (queries or libraries used in CodeQL analysis) is included in the same directory as `qlpack.yml`, or its subdirectories.
 
-The directory containing the qlpack.yml file serves as the root directory for the content of the CodeQL pack. That is, for all `.ql` and `.qll`s files in the pack, CodeQL will resolve all import statements relative to the directory containing the qlpack.yml file at the pack’s root.
+The directory containing the qlpack.yml file serves as the root directory for the content of the CodeQL pack. That is, for all `.ql` and `.qll`s files in the pack, CodeQL will resolve all import statements relative to the directory containing the qlpack.yml file at the pack's root.
 
 Here's an example `qlpack.yml` file:
 

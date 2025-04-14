@@ -12,7 +12,7 @@ In this unit, you'll learn about the basic features of the QL programming langua
 
 ## The QL syntax
 
-The syntax of QL is similar to SQL, but the semantics of QL are based on Datalog, a declarative logic programming language often used as a query language. This makes QL primarily a logic language, and all operations in QL are logical operations. Furthermore, QL inherits recursive predicates from Datalog and adds support for aggregates, making even complex queries concise and simple. For example, consider a database containing parent-child relationships for people. If you want to find the number of descendants of a person, typically you would:
+The syntax of QL is similar to SQL. However, the semantics of QL are based on Datalog, a declarative logic programming language often used as a query language. This makes QL primarily a logic language, and all operations in QL are logical operations. Furthermore, QL inherits recursive predicates from Datalog and adds support for aggregates, making even complex queries concise and simple. For example, consider a database containing parent-child relationships for people. If you want to find the number of descendants of a person, typically you'd:
 
 1. Find a descendant of the given person; that is, a child or a descendant of a child.
 2. Count the number of descendants found using the previous step.
@@ -32,14 +32,14 @@ int getNumberOfDescendants(Person p) {
 
 ## Object orientation
 
-Object orientation is an important feature of QL. The benefits of object orientation are well-known: it increases modularity, enables information hiding, and allows code reuse. QL offers all these benefits without compromising on its logical foundation. This is achieved by defining a simple object model where classes are modeled as predicates and inheritance as implication. The libraries made available for all supported languages make extensive use of classes and inheritance.
+Object orientation is an important feature of QL. The benefits of object orientation are well-known. It increases modularity, enables information hiding, and allows code reuse. QL offers all these benefits without compromising on its logical foundation. This is achieved by defining a simple object model where classes are modeled as predicates and inheritance as implication. The libraries made available for all supported languages make extensive use of classes and inheritance.
 
 ## QL and general purpose programming languages
 
 Here are a few prominent conceptual and functional differences between general purpose programming languages and QL:
 
 * QL does not have any imperative features such as assignments to variables or file system operations.
-* QL operates on sets of tuples and a query can be viewed as a complex sequence of set operations that defines the result of the query.
-* QL’s set-based semantics makes it very natural to process collections of values without having to worry about efficiently storing, indexing and traversing them.
+* QL operates on sets of tuples, and a query can be viewed as a complex sequence of set operations that defines the result of the query.
+* QL's set-based semantics makes it very natural to process collections of values without having to worry about efficiently storing, indexing, and traversing them.
 
 In object-oriented programming languages, instantiating a class involves creating an object by allocating physical memory to hold the state of that instance of the class. In QL, classes are just logical properties describing sets of already existing values.

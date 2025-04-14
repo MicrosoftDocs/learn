@@ -2,7 +2,7 @@ Code scanning workflows that use CodeQL have various configuration options you c
 
 When you use CodeQL to scan code, the CodeQL analysis engine generates a database from the code and runs queries on it. CodeQL analysis uses a default set of queries, but you can specify more queries to run in addition to the default queries.
 
-You can run extra queries if they're part of a CodeQL pack (beta) published to the GitHub Container registry or a QL pack stored in a repository.
+You can run extra queries if they're part of a CodeQL pack (beta) published to the GitHub Container registry, or a QL pack stored in a repository.
 
 There are two options for specifying which queries you want to run with CodeQL code scanning:
 
@@ -30,10 +30,10 @@ We don't recommend referencing query suites directly from the `github/codeql` re
 To add one or more CodeQL query packs (beta), add a `with: packs:` entry within the `uses: github/codeql-action/init@v1` section of the workflow. Within packs, you can specify one or more packages to use and, optionally, which version to download. Where you don't specify a version, the latest version is downloaded. If you want to use packages that aren't publicly available, you need to set the `GITHUB_TOKEN` environment variable to a secret that has access to the packages.
 
 In the following example, scope is the organization or personal account that published the package. When the workflow runs, the three CodeQL query packs download from GitHub and the default queries or query suite for each pack run. In the below example, each of the packs in the list will download based on their specifications:
-* The latest version of `pack1` is downloaded and all default queries are run.
-* Version 1.2.3 of `pack2` is downloaded and all default queries are run.
-* The latest version of `pack3` that is compatible with version 3.2.1 is downloaded and all queries are run.
-* Version 4.5.6 of `pack4` is downloaded and only the queries found in path/to/queries are run.
+* The latest version of `pack1` is downloaded, and all default queries are run.
+* Version 1.2.3 of `pack2` is downloaded, and all default queries are run.
+* The latest version of `pack3` that is compatible with version 3.2.1 is downloaded, and all queries are run.
+* Version 4.5.6 of `pack4` is downloaded, and only the queries found in path/to/queries are run.
 
 ```yml
 - uses: github/codeql-action/init@v3

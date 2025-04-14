@@ -50,7 +50,7 @@ packs:
   - scope/pack6:path/to/suite.qls
 ```
 
-The full format for specifying a query pack is `scope/name[@version][:path]`. Both `version` and `path` are optional. `version` is semver version range. If it is missing, the latest version is used. 
+The full format for specifying a query pack is `scope/name[@version][:path]`. Both `version` and `path` are optional. `version` is semver version range. If it's missing, the latest version is used.
 
 If you have a workflow that generates more than one CodeQL database, you can specify any CodeQL query packs to run in a custom configuration file using a nested map of packs.
 
@@ -107,7 +107,7 @@ If you only want to run custom queries, you can disable the default security que
 
 ## Excluding specific queries from analysis
 
-You can add `exclude` and `include` filters to your custom configuration file, to specify the queries you want to exclude or include in the analysis, such as: 
+You can add `exclude` and `include` filters to your custom configuration file, to specify the queries you want to exclude or include in the analysis, such as:
 
 * Specific queries from the default suites (`security`, `security-extended` and `security-and-quality`).
 * Specific queries whose results do not interest you.
@@ -122,9 +122,11 @@ query-filters:
   - exclude:
       id: js/useless-assignment-to-local
 ```
+
 To find the ID of a query, you can click the alert in the list of alerts in the Security tab. This opens the alert details page. The Rule ID field contains the query ID.
 
 Things to keep in mind when working with the `excludes` filter:
+
 * The order of the filters is important. The first filter instruction that appears after the instructions about the queries and query packs determines whether the queries are included or excluded by default.
 * Subsequent instructions are executed in order and the instructions that appear later in the file take precedence over the earlier instructions.
 

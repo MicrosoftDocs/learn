@@ -4,7 +4,7 @@ Depending on which tool you want to use for analysis and how you want to generat
 * Use advanced setup to add the CodeQL workflow to your repository. This generates a customizable workflow file which uses the github/codeql-action to run the CodeQL CLI. For more information, see "Configuring advanced setup for code scanning."
 * Run the CodeQL CLI directly in an external CI system and upload the results to GitHub. For more information, see "Using code scanning with your existing CI system."<sup>[2]</sup>
 
-Previously, we learned about getting started with the default setup and configurations. Now you'll learn how to set up code scanning with the advanced setup, as well as how to perform bulk setup of a code scanning workflow for multiple repositories.
+Previously, we learned about getting started with the default setup and configurations. Now, you'll learn how to set up code scanning with the advanced setup, as well as how to perform bulk setup of a code scanning workflow for multiple repositories.
 
 ## Code scanning with GitHub Actions and CodeQL
 

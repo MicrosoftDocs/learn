@@ -18,7 +18,7 @@ Uploading SARIF data to display as code-scanning results in GitHub is supported 
 
 ## Create CodeQL databases to analyze
 
-Follow the steps below to create CodeQL databases to analyze:
+Follow these steps to create CodeQL databases to analyze.
 
 1. Check out the code that you want to analyze:
     * For a branch, check out the head of the branch that you want to analyze.
@@ -47,7 +47,7 @@ The full list of parameters for the `database create` command is shown in the fo
 | Option | Required Usage |
 |---|---|
 |`<database>` | Specify the name and location of a directory to create for the CodeQL database. The command will fail if you try to overwrite an existing directory. If you also specify `--db-cluster`, this is the parent directory, and a subdirectory is created for each language analyzed. |
-| `--language` | Specify the identifier for the language to create a database for, one of: `cpp`, `csharp`, `go`, `java`, `javascript`, `python`, and `ruby` (use JavaScript to analyze TypeScript code). When used with `--db-cluster`, the option accepts a comma-separated list, or can be specified more than once. |
+| `--language` | Specify the identifier for the language to create a database for one of `cpp`, `csharp`, `go`, `java`, `javascript`, `python`, and `ruby` (use JavaScript to analyze TypeScript code). When used with `--db-cluster`, the option accepts a comma-separated list, or can be specified more than once. |
 | `--command` | Recommended. Use to specify the build command or script that invokes the build process for the codebase. Commands are run from the current folder or, where it is defined, from `--source-root`. Not needed for Python and JavaScript/TypeScript analysis. |
 | `--db-cluster` | Optional. Use in multi-language codebases to generate one database for each language specified by `--language`.|
 | `--no-run-unnecessary-builds`	| Recommended. Use to suppress the build command for languages where the CodeQL CLI does not need to monitor the build (for example, Python and JavaScript/TypeScript).|
@@ -78,7 +78,7 @@ This example creates two CodeQL databases for the repository checked out at `/ch
 * `--db-cluster` to request analysis of more than one language.
 * `--language` to specify which languages to create databases for.
 * `--command` to tell the tool the build command for the codebase, here make.
-* `--no-run-unnecessary-builds` to tell the tool to skip the build command for languages where it is not needed (like Python).
+* `--no-run-unnecessary-builds` to tell the tool to skip the build command for languages where it's not needed (like Python).
 
 The resulting databases are stored in `python` and `cpp` subdirectories of `/codeql-dbs/example-repo-multi`.
 
@@ -107,7 +107,7 @@ $
 After creating your CodeQL database, follow these steps to analyze it:
 
 1. Optionally run `codeql pack download <packs>` to download any CodeQL packs (beta) that you want to run during analysis.
-2. Run `codeql database analyze` on the database and specify which packs and/or queries to use.
+2. Run `codeql database analyze` on the database, and specify which packs and/or queries to use.
 
 ```bash
 codeql database analyze <database> --format=<format> \
@@ -156,7 +156,7 @@ $ codeql database analyze /codeql-dbs/example-repo  \
 
 ## Upload results to GitHub
 
-SARIF upload supports a maximum of 25,000 results per upload, but only the top 5,000 results will be displayed, prioritized by severity. If a tool generates too many results, you should update the configuration to focus on results for the most important rules or queries.
+SARIF upload supports a maximum of 25,000 results per upload. However, only the top 5,000 results will be displayed, prioritized by severity. If a tool generates too many results, you should update the configuration to focus on results for the most important rules or queries.
 
 For each upload, SARIF upload supports a maximum size of 10 MB for the gzip-compressed SARIF file. Any uploads over this limit will be rejected. If your SARIF file is too large because it contains too many results, you should update the configuration to focus on results for the most important rules or queries. For more information on limitations and validating SARIF files see the documentation<sup>[6]</sup>.
 
