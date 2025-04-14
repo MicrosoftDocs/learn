@@ -22,7 +22,6 @@ metadata:
 ###
 ### To request new values, go to
 ### `https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main`.
-  ms.service: azure-database-postgresql
 durationInMinutes: 1
 content: |
   [!include[](includes/2-data-types.md)]
