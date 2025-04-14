@@ -17,7 +17,7 @@ In this unit, you build two console applications: one application places message
     git clone https://github.com/MicrosoftDocs/mslearn-connect-services-together.git
     ```
 1. Launch VS Code on your computer. 
-1. Select **File** -> **Open Folder ...**, and then select the folder: C:\Program Files\Git\learn-pr\learn-pr\azure\implement-message-workflows-with-service-bus (assuming that C:\Program Files\Git is the Git folder). You should see **final** and **start** subfolders. You work with code in the **start** folder to write code to send and receive messages. The **final** folder contains the code that's complete. 
+1. Select **File** -> **Open Folder ...**, and then select the folder: C:\Program Files\Git\mslearn-connect-services-together\implement-message-workflows-with-service-bus\src (assuming that C:\Program Files\Git is the Git folder). You should see **final** and **start** subfolders. You work with code in the **start** folder to write code to send and receive messages. The **final** folder contains the code that's complete. 
 
 
 ## Write code to send a message to a queue
