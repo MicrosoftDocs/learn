@@ -94,7 +94,7 @@ jobs:
 ## Use default context in a workflow
 ## Pass custom environment variables to a workflow
 <!-- INFOMAGNUS UPDATES for sub OD 1.6.5 go here. Source Material: Infomagnus team to find source material and cite sources when they update material  --> https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables
-## Add environment variables
+## Add environment protections
 <!-- INFOMAGNUS END -->
 ## Scripts in your workflow
 
@@ -205,6 +205,6 @@ For example, a `GET` request to view a specific workflow run log would follow th
 GET /repos/{owner}/{repo}/actions/runs/{run_id}/logs
 ```
 
-<!-- INFOMAGNUS UPDATES for sub OD 1.4.4 go here. Source Material: Infomagnus team to find source material and cite sources when they update material  --> 
-## Identify where to use an an installation token from a GitHub App
+<!-- INFOMAGNUS UPDATES for sub OD 1.4.4 go here. Source Material: Infomagnus team to find source material and cite sources when they update material  --> https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/generating-an-installation-access-token-for-a-github-app
+## Identify when to use an an installation token from a GitHub App
 
