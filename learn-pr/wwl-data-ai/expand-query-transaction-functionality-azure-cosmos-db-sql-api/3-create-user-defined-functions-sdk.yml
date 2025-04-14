@@ -4,7 +4,7 @@ title: Create user-defined functions with the SDK
 metadata:
   title: Create user-defined functions with the SDK
   description: "Create user-defined functions with the SDK"
-  ms.date: 02/06/2023
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-create-user-defined-functions-sdk.md)]
+  [!include[](includes/3-create-user-defined-functions-sdk.md)]

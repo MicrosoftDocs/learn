@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-introduction-products.license-usage-stats
+title: License Usage Stats
+metadata:
+  title: License Usage Stats
+  description: This content is part of the "Introduction to GitHub's products" module.
+  ms.date: 04/10/2025
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-license-usage-stats.md)]

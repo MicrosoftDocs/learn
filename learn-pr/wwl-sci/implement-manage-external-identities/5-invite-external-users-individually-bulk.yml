@@ -2,9 +2,11 @@
 uid: learn.wwl.implement-manage-external-identities.invite-external-users-individually-bulk
 title: Invite external users - individually and in bulk
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Invite external users - individually and in bulk
   description: "Invite external users - individually and in bulk"
-  ms.date: 12/18/2024
+  ms.date: 04/08/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit

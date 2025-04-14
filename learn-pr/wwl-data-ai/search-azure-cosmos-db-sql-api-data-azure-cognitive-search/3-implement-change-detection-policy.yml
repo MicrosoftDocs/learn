@@ -4,7 +4,7 @@ title: Implement a change detection policy
 metadata:
   title: Implement a change detection policy
   description: "Implement a change detection policy"
-  ms.date: 07/10/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 2
 content: |
-  [!include[](includes/3-implement-change-detection-policy.md)]
+  [!include[](includes/3-implement-change-detection-policy.md)]

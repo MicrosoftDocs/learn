@@ -5,7 +5,7 @@ metadata:
   unitType: summary
   title: Summary
   description: Summary for building a basic deployment pipeline for Bicep by using Azure Pipelines.
-  ms.date: 01/30/2023
+  ms.date: 04/01/2025
   author: mumian
   ms.author: jgao
   ms.topic: unit
@@ -14,4 +14,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/10-summary.md)]
-
+
