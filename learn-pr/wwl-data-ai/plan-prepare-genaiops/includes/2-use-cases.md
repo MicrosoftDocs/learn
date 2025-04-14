@@ -35,7 +35,7 @@ To understand what is happening behind the scenes, let's explore the architectur
 
 When an authenticated user inputs the required information, the Creative Writer app uses a combination of multiple agents to generate the article:
 
-- A **research** agent that uses the [Bing Grounding Tool](/azure/ai-services/agents/how-to/tools/bing-grounding?azure-portal=true) in [Azure AI Agent Service](/azure/ai-services/agents/overview?azure-portal=true) to research the product, and uses [Azure AI Search](/products/ai-services/ai-search?azure-portal=true) to do a semantic similarity search for related products from a vector store.
+- A **research** agent that uses the [Bing Grounding Tool](/azure/ai-services/agents/how-to/tools/bing-grounding?azure-portal=true) in [Azure AI Agent Service](/azure/ai-services/agents/overview?azure-portal=true) to research the product, and uses [Azure AI Search](/azure/search) to do a semantic similarity search for related products from a vector store.
 - A **writer** agent that combines the researched and retrieved product information into a helpful article.
 - An **editor** agent that refines the article before presenting it to the user.
 
