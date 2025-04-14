@@ -23,7 +23,7 @@ abstract: |
   - Describe responsible generative AI concepts.
 prerequisites: |
   - Familiarity with Azure and the Azure portal.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/fundamentals-generative-ai.svg
 levels:
   - beginner
 roles: 

@@ -4,7 +4,7 @@ title: Implement variables in queries
 metadata:
   title: Implement variables in queries
   description: "Implement variables in queries"
-  ms.date: 03/10/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-implement-variables-queries.md)]
+  [!include[](includes/4-implement-variables-queries.md)]

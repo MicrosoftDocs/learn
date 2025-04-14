@@ -3,7 +3,7 @@ uid: learn.wwl.implement-azure-cosmos-db-sql-api-point-operations
 metadata:
   title: Implement Azure Cosmos DB for NoSQL point operations
   description: "Write code to create, read, update, and delete items in Azure Cosmos DB for NoSQL."
-  ms.date: 03/09/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: module-standard-task-based
@@ -39,4 +39,4 @@ units:
 - learn.wwl.implement-azure-cosmos-db-sql-api-point-operations.knowledge-check
 - learn.wwl.implement-azure-cosmos-db-sql-api-point-operations.summary
 badge:
-  uid: learn.wwl.implement-azure-cosmos-db-sql-api-point-operations.badge
+  uid: learn.wwl.implement-azure-cosmos-db-sql-api-point-operations.badge

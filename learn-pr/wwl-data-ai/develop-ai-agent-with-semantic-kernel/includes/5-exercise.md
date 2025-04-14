@@ -4,7 +4,7 @@ Now you're ready to build an agent with the Semantic Kernel Agent Framework. In 
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-ai-agents/Instructions/04-semantic-kernel.html)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2313222&azure-portal=true)
 
 > [!TIP]
 > After completing the exercise, if you're finished exploring Azure AI Agents, delete the Azure resources that you created during the exercise.
