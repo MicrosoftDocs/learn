@@ -10,9 +10,6 @@ The OneDrive Recycle Bin allows users to recover files they have accidentally de
 
 1. Go to the OneDrive website and sign in with the appropriate account.
 1. Select **Recycle bin** from the left-side pane.
-
-   :::image type="content" source="../media/onedrive-recycle-bin.png" alt-text="Screenshot showing the OneDrive Recycle bin.":::
-
 1. Select the item you want to restore, then choose **Restore** from the top pane.
 
 The item has been successfully restored to its original location.
