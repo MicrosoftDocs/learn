@@ -1,9 +1,7 @@
 # Enterprise Permissions and Policies via Ruleset
-
 This unit covers how to manage enterprise permissions and policies through rulesets. We'll explore best practices for structuring organizations, setting default permissions, synchronizing teams via Active Directory (AD), automating multi-org scripting, and aligning policies with your company’s trust and control positions.
 
 ## Weighing the pros and cons of deploying a single versus multiple organizations
-
 When structuring your enterprise, one of the key decisions is whether to use a single organization or multiple organizations. Each approach has unique benefits and trade-offs.
 
 ### Single Organization
@@ -24,7 +22,6 @@ When structuring your enterprise, one of the key decisions is whether to use a s
 | **Decentralized Administration:** Teams can manage their own policies and permissions. | **Inter-Org Collaboration:** May require extra tools or processes for cross-organization projects. |
 
 ## Setting default read versus default write across organizations
-
 Deciding on the default permission level is critical to balancing security and collaboration within your enterprise.
 ### Default Read vs Default Write
 
@@ -38,29 +35,24 @@ Deciding on the default permission level is critical to balancing security and c
 Use a default read permission model and grant write access selectively, ensuring adherence to the principle of least privilege.
 
 ## Team synchronization through Active Directory (AD)
-
 Using Active Directory (AD) for team synchronization makes user management and access control easier and more efficient.
 
-### **Why use AD sync?**
-
+### Why use AD sync?
 - **Single source of truth:** Keeps user identities consistent across your organization.  
 - **Automated access management:** Streamlines onboarding, offboarding, and role updates.  
 - **Seamless role alignment:** Ensures AD groups match enterprise roles and permissions.  
 
-### **Things to consider before implementing**
-
+### Things to consider before implementing
 - **Role mapping:** Clearly define how AD groups align with your organization's roles.  
 - **Sync frequency:** Set a schedule that balances performance and security.  
 - **Compliance & auditing:** Log all changes to meet compliance requirements.  
 
 By planning ahead, you can ensure a smooth integration that keeps your organization secure and well-organized.
 
-## 4.1.4 Maintainability: scripting for multiple organizations and access rights
-
+## Maintainability: scripting for multiple organizations and access rights
 As your enterprise scales, automating the management of permissions across multiple organizations is essential for maintainability.
 
 ### Key Practices:
-
 Automating the management of permissions across multiple organizations is crucial for maintaining efficiency and security as your enterprise grows. This section provides key practices for scripting and automation to ensure consistent and scalable permission management. By following these practices, you can streamline administrative tasks, reduce manual errors, and maintain a secure and well-organized environment.
 
 - **Modularity:** Develop scripts in modular components to handle different organizations with minimal changes.
@@ -70,11 +62,9 @@ Automating the management of permissions across multiple organizations is crucia
 - **Version Control:** Use version control systems (like Git) to manage script revisions and collaborate with team members.
 
 ## Adjusting enterprise policies and organization permissions
-
 Aligning enterprise policies with your company’s trust and control position is an ongoing process that must evolve with your organization’s risk posture.
 
 ### Fundamental principles for managing enterprise permissions and policies
-
 Managing enterprise permissions and policies is crucial for maintaining security and operational efficiency. This section provides fundamental principles and best practices for adjusting permissions and policies to align with your organization's trust and control positions. By adhering to these principles, you can ensure that your enterprise remains secure, compliant, and adaptable to changing needs.
 
 - **Least Privilege:** Grant users the minimum permissions necessary.
@@ -84,7 +74,6 @@ Managing enterprise permissions and policies is crucial for maintaining security
 - **Documentation:** Maintain clear documentation of policy changes to support audits and continuous improvement.
 
 ### Implementing Policy Adjustments:
-
 Implementing policy adjustments is a critical aspect of maintaining a secure and efficient enterprise environment. This section outlines the steps and considerations necessary for evaluating and updating permission structures to align with organizational needs and security requirements. By following a structured approach, organizations can ensure that their policies remain effective and adaptable to changing circumstances.
 
 - **Assessment:** Continuously evaluate the current permission structure and identify areas for enhancement.
