@@ -46623,6 +46623,46 @@
       "source_path": "learn-pr/wwl-data-ai/custom-model-ai-vision-image-classification/2-understand-custom-model-types.md",
       "redirect_url": "/training/modules/classify-images/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/intro-to-entra-permissions-management/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/intro-to-entra-permissions-management/2-what-is-ciem.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/intro-to-entra-permissions-management/3-what-is-entra-permissions-management.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/intro-to-entra-permissions-management/4-how-entra-permissions-management-works.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/intro-to-entra-permissions-management/5-when-to-use-permissions-management.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/intro-to-entra-permissions-management/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/intro-to-entra-permissions-management/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/intro-to-entra-permissions-management/index.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
     }
   ]
 }
