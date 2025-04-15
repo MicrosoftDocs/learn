@@ -4,7 +4,7 @@ title: Exercise - Use the string's IndexOf() and LastIndexOf() helper methods
 metadata:
   title: Exercise - Use the string's IndexOf() and LastIndexOf() helper methods
   description: "Use IndexOf() and LastIndexOf() to find the first and last instances of a character or substring in a string. Explore IndexOfAny() to find multiple characters."
-  ms.date: 01/15/2025
+  ms.date: 04/15/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
