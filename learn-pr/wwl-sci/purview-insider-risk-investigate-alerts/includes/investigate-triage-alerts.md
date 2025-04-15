@@ -37,7 +37,7 @@ Each alert is assigned a risk severity score based on multiple factors, includin
 > [!TIP]
 > You can select and dismiss multiple low-priority alerts in bulk using the command bar. Up to 400 alerts can be dismissed at once.
 
-## Use Copilot to accelerate triage
+## Use Security Copilot to accelerate triage
 
 If enabled, Security Copilot embedded in Microsoft Purview can summarize an alert to help you triage faster. Without opening the alert, you can select **Summarize with Copilot** to generate an overview that includes:
 
