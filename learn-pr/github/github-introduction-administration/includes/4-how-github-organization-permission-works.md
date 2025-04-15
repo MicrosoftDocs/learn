@@ -34,7 +34,7 @@ A user’s effective permissions in a repository are influenced by various facto
 
 When you combine these different permission sources, GitHub applies the highest level of access granted to the user. For example, if a user has Read access through a team but also has Write access directly assigned as a collaborator, they will effectively have Write permissions.
 
-### 4.4.2 Repository Membership Options
+### Repository Membership Options
 
 When granting access to a repository, there are several ways a user can become a collaborator:
 
