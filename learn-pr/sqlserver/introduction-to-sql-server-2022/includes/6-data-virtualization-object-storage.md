@@ -1,8 +1,8 @@
-SQL Server 2022 provides data virtualization capabilities to access data stored in formats such as parquet and delta tables over sources such as Azure Blob Storage, Azure Data Lake Storage, and S3 compatible object storage providers. In addition, SQL Server 2022 enhances remote backup and restore capabilities by supporting S3 compatible object storage providers.
+SQL Server 2022 provides data virtualization capabilities to access data stored in parquet and delta tables over sources such as Azure Blob Storage, Azure Data Lake Storage, and S3 compatible object storage providers. In addition, SQL Server 2022 enhances remote backup and restore capabilities by supporting S3 compatible object storage providers.
 
 ## Data virtualization in SQL Server
 
-Polybase, introduced with SQL Server 2016, supports accessing data outside of SQL Server using Transact-SQL (T-SQL) statements like **OPENROWSET** and **CREATE EXTERNAL TABLE**. This concept is known as *data virtualization*, since users can access data outside of SQL Server without moving the data into SQL Server. SQL Server 2019 added support for data virtualization using ODBC drivers. This data access uses software called Polybase services. SQL Server 2022 adds support within the database engine using REST API interfaces to access data in Azure Blob Storage, Azure Data Lake Storage, and S3 compatible object storage providers.
+Polybase, introduced with SQL Server 2016, supports accessing data outside of SQL Server using Transact-SQL (T-SQL) statements like **OPENROWSET** and **CREATE EXTERNAL TABLE**. This concept is known as *data virtualization*, since users can access data outside of SQL Server without moving the data into SQL Server. SQL Server 2019 added support for data virtualization using Open Database Connectivity (ODBC) drivers. This data access uses software called Polybase services. SQL Server 2022 adds support within the database engine using REST API interfaces to access data in Azure Blob Storage, Azure Data Lake Storage, and S3 compatible object storage providers.
 
 The following figure shows the full extent of data virtualization support in SQL Server 2022.
 
@@ -22,7 +22,7 @@ The following new connectors are supported using REST API:
 
 - Azure Data Lake Storage
 
-  Using the data source connector `adls`, you can access file stored in Azure Data Lake Storage (ADLS). ADLS is built on top of Azure Blob Storage and provides file system semantics, file-level security, and scale. All these capabilities are built on top of Azure Blob Storage providing low cost, tiered access, high security, high availability, and durability. For more information, see [data virtualization with Azure Data Lake Storage](/sql/relational-databases/polybase/virtualize-delta).
+  Using the data source connector `adls`, you can access files stored in Azure Data Lake Storage (ADLS). ADLS is built on top of Azure Blob Storage and provides file system semantics, file-level security, and scale. All these capabilities are built on top of Azure Blob Storage providing low cost, tiered access, high security, high availability, and durability. For more information, see [data virtualization with Azure Data Lake Storage](/sql/relational-databases/polybase/virtualize-delta).
 
 - S3 compatible object storage providers
 

@@ -1,4 +1,4 @@
-SQL Server 2022 offers similar deployment, edition, and licensing options as with previous releases of SQL Server. There are some differences, which you'll learn about in this module.
+While SQL Server 2022 offers deployment, edition, and licensing options that are similar to previous releases of SQL Server, there are some differences that you learn about in this module.
 
 ## Deployment options for SQL Server 2022
 
@@ -24,7 +24,7 @@ As with previous versions of SQL Server, SQL Server 2022 can be deployed using t
 
 - **SQL Server Enterprise** edition includes all features and capabilities of SQL Server with unlimited access to resources, such as CPU and memory.
 
-For more information, and a list of all the capabilities for each edition, see our documentation, [Editions and supported features of SQL Server](https://aka.ms/sql2022editions).
+For more information, and a list of all the capabilities for each edition, see [Editions and supported features of SQL Server 2022](https://aka.ms/sql2022editions).
 
 ## Licensing for SQL Server 2022
 
@@ -47,7 +47,7 @@ In future units, you learn about all the new features and capabilities in SQL Se
 
 The following features that were available in previous releases were removed from SQL Server 2022:
 
-- R, Python, and Java runtimes - R, Python, and Java runtimes are no longer included as part of the setup for SQL Server 2022. The Machine Learning Services feature is still supported, but you'll need to add your own packages that include runtimes you need.
+- R, Python, and Java runtimes - R, Python, and Java runtimes are no longer included as part of the setup for SQL Server 2022. The Machine Learning Services feature is still supported, but you must add your own packages that include the runtimes you need.
 
 - Polybase Hadoop Connectivity with Java - The Polybase feature with Hadoop connectivity is removed from SQL Server 2022. You can still use Polybase services with ODBC drivers or new REST API based connectors for Azure Blob storage, Azure Data Lake Storage, or S3 compatible object storage.
 
@@ -55,7 +55,7 @@ The following features that were available in previous releases were removed fro
 
 - Machine Learning Server - The Machine Learning Server feature was retired in July of 2022 and is removed from the SQL Server setup.
 
-- Distributed Replay - Distributed Replay is no longer available to configure with the setup for SQL Server 2022 on Windows.
+- The Distributed Replay feature - Distributed Replay is no longer available to configure with the setup for SQL Server 2022 on Windows.
 
 - Stretch Database - Stretch Database is deprecated in SQL Server 2022. This feature will be removed in a future version of Microsoft SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature.
 

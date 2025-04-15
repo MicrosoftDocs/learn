@@ -12,17 +12,17 @@ SQL Server 2022 includes important enhancements to the Query Store to reduce the
 
 ### Query Store on by default
 
-Prior to SQL Server 2022, the Query Store must be enabled using the T-SQL [**ALTER DATABASE**](/sql/t-sql/statements/alter-database-transact-sql) statement. For SQL Server 2022, any new database that's created has the Query Store enabled by default. Databases that are restored from previous versions of SQL Server retain the Query Store settings captured when the database was backed up. The Query Store has had several enhancements since its inception in SQL Server 2016 that allow users to enable the Query Store without significantly affecting application performance. In addition, several new settings are possible in the Query Store to allow users to more easily control how query performance information is captured and cleaned up. Users can disable the Query Store at any time by using the T-SQL **ALTER DATABASE** statement.
+Before SQL Server 2022, the Query Store was enabled using the T-SQL [**ALTER DATABASE**](/sql/t-sql/statements/alter-database-transact-sql) statement. For SQL Server 2022, any newly created database has the Query Store enabled by default. Databases that are restored from previous versions of SQL Server retain the Query Store settings captured when the database was backed up. Several enhancements were made to the Query Store since its inception in SQL Server 2016 that allow users to enable the Query Store without significantly affecting application performance. In addition, several new settings are possible in the Query Store to allow users to more easily control how query performance information is captured and cleaned up. Users can disable the Query Store at any time by using the T-SQL **ALTER DATABASE** statement.
 
 ### Query Store hints
 
 Query Store hints provide an easy-to-use method for shaping query plans without changing application code. You can take any query that is stored in the Query Store and use system stored procedures to apply a query hint. The query hint affects the query plan with the intention of improving query performance, without changing application code. For example, you could apply a query store hint to require a query to use a specific `MAXDOP` value without changing the query text.
 
-Query store hints aren't intended to be used as a normal step to tune query performance. However, they can be a useful tool for query tuning, especially if you can't change the query text in an application.. In addition, some new Intelligent Query Processing features use a query store hint. You can view any persisted query store hints in the **sys.query_store_query_hints** catalog view. For more information, see [Query Store hints](https://aka.ms/querystorehints).
+Query store hints aren't intended to be used as a normal step to tune query performance. However, they can be a useful tool for query tuning, especially if you can't change the query text in an application. In addition, some new Intelligent Query Processing features use a query store hint. You can view any persisted query store hints in the **sys.query_store_query_hints** catalog view. For more information, see [Query Store hints](https://aka.ms/querystorehints).
 
 ### Query Store for read replicas
 
-While the Query Store is beneficial for reducing the amount of time required to tune queries or to easily identify query performance issues, performance information is only available for queries executed against the primary replica in an Always On availability group. In SQL Server 2022, a new option is available using the T-SQL **ALTER DATABASE** statement to enable the Query Store to collect performance information for read-only queries executed on secondary replicas. All performance information for all replicas is persisted on the primary replica. New information is captured in the Query Store to indicate which replica is associated with a query or query plan.
+The Query Store is beneficial for reducing the amount of time required to tune queries or to easily identify query performance issues. However, performance information is only available for queries executed against the primary replica in an Always On availability group. In SQL Server 2022, a new option is available using the T-SQL **ALTER DATABASE** statement to enable the Query Store to collect performance information for read-only queries executed on secondary replicas. All performance information for all replicas is persisted on the primary replica. New information is captured in the Query Store to indicate which replica is associated with a query or query plan.
 
 > [!NOTE]
 > Trace flag 12606 is required to enable Query Store for secondary replicas.
@@ -42,7 +42,7 @@ As you can see, there were several IQP features in SQL Server 2017 and SQL Serve
 The database engine uses two principles to make decisions for Intelligent Query Processing:
 
 - Avoid causing any query performance regressions by using a new method or automation.
-- Provide a method at the database or query level to disable a specific IQP capability. You can pick and choose which IQP feature you want enabled at the database or query level, while using other IQP features depending on your database compatibility level.
+- Provide a method at the database or query level for disabling a specific IQP capability. You can select which IQP feature you want enabled at the database or query level while using other IQP features, depending on your database compatibility level.
 
 ## Capabilities after upgrading to SQL Server 2022
 
@@ -76,7 +76,7 @@ You can get more Intelligent Query Processing capabilities to enhance memory gra
 
 ### Memory grant feedback percentiles
 
-In versions before SQL Server 2022, memory grant feedback was based on the most recent execution for a specific query. This could result in some cases of different feedback adjustments, which could lead the query processor to disable memory grant feedback for a specific query. In SQL Server 2022, memory grant feedback uses a percentile method to look at memory grants over several executions before using a memory grant feedback.
+In versions before SQL Server 2022, memory grant feedback was based on the most recent execution for a specific query. This method could result in some cases of different feedback adjustments, which could lead the query processor to disable memory grant feedback for a specific query. In SQL Server 2022, memory grant feedback uses a percentile method to look at memory grants over several executions before using a memory grant feedback.
 
 ### Memory grant feedback persistence
 
@@ -98,9 +98,15 @@ For more information, see [Parameter Sensitive Plan optimization](https://aka.ms
 
 ### Cardinality Estimation (CE) Feedback
 
-In SQL Server 2014 with database compatibility level 120, Microsoft started using a new *model* within the query processor to make certain assumptions about cardinality estimation for certain query patterns. In some cases, the new model generated a more correct query plan but might result in slower performance than with the *legacy* CE model. The CE model scenarios include correlation, join containment, and row goal. Since SQL Server 2014, several options were included to use the legacy CE model or control CE behavior at the database level or query level with trace flags or query hints.
+In SQL Server 2014 with database compatibility level 120, Microsoft started using a new *model* within the query processor to make certain assumptions about cardinality estimation for certain query patterns. In some cases, the new model generated a more correct query plan but might result in slower performance than with the *legacy* CE model. The CE model scenarios include correlation, join containment, and row goal. Since SQL Server 2014, several options were included to use the legacy CE model or to control CE behavior at the database level or query level with trace flags or query hints.
 
-In SQL Server 2022 with the Query Store enabled, the optimizer evaluates highly repetitive queries that match patterns for CE model scenarios where the model might be making an incorrect assumption. The optimizer attempts to test and verify whether a query hint could be used to allow the query to perform faster. Upon verification of faster performance, a query hint will be persisted in the Query Store to be used for future query executions. You can see any applied query hints for CE feedback in the **sys.query_store_query_hints** catalog view and CE feedback details in the **sys.query_store_plan_feedback** catalog view. CE feedback isn't used if the legacy CE model is enabled, if a query plan is forced in the query store, or if a query has existing query store hints.
+In SQL Server 2022 with the Query Store enabled, the optimizer evaluates highly repetitive queries that match patterns for CE model scenarios where the model might be making an incorrect assumption. The optimizer attempts to test and verify whether a query hint could be used to allow the query to perform faster. Upon verification of faster performance, a query hint will be persisted in the Query Store to be used for future query executions. You can see any applied query hints for CE feedback in the **sys.query_store_query_hints** catalog view and CE feedback details in the **sys.query_store_plan_feedback** catalog view.
+
+CE feedback isn't used if:
+
+- The legacy CE model is enabled.
+- A query plan is forced in the query store.
+- A query has existing query store hints.
 
 For more information, see [Cardinality estimation (CE) feedback](/sql/relational-databases/performance/intelligent-query-processing-cardinality-estimation-feedback).
 
@@ -110,7 +116,7 @@ In some cases, the optimizer in SQL Server runs pieces of the query plan (called
 
 In SQL Server 2022, the optimizer can use a technique called DOP feedback to find the *parallel efficiency* for a query. Parallel efficiency is the minimum DOP for a query that can result in the same overall query duration (factoring out common waits). Reducing the DOP for a query can provide more threads and CPU resources for other queries or applications.
 
-DOP feedback requires the Query Store to be enabled, database compatibility level 160, and a database setting called `DOP_FEEDBACK` to be turned on. With these settings, the optimizer works in coordination with Query Store background tasks to look for repetitive and long-running queries that can benefit from a lower DOP. A feedback cycle is used to validate that an adjusted query duration doesn't regress with a lower DOP value, and that a lower overall CPU is observed for the query. After a period of validation, a lower DOP is considered stabilized and will be persisted in the Query Store. The optimizer continues to validate lower DOP values in a stepwise down fashion to find the best parallel efficiency or a minimum DOP, which is 2. DOP feedback never increases DOP. It honors the MAXDOP setting for a query depending on any server, database, resource governor, or query hint that is applied.
+DOP feedback requires the Query Store to be enabled, database compatibility level 160, and a database setting called `DOP_FEEDBACK` to be turned on. With these settings, the optimizer works in coordination with Query Store background tasks to look for repetitive and long-running queries that can benefit from a lower DOP. A feedback cycle is used to validate that an adjusted query duration doesn't regress with a lower DOP value. It also validates that a lower overall CPU is observed for the query. After a period of validation, a lower DOP is considered stabilized and will be persisted in the Query Store. The optimizer continues to validate lower DOP values in a stepwise down fashion to find the best parallel efficiency or a minimum DOP, which is 2. DOP feedback never increases DOP. It honors the MAXDOP setting for a query depending on any server, database, resource governor, or query hint that is applied.
 
 DOP feedback doesn't require recompilation, but validation is examined on any new query compilation. You can observe persisted DOP feedback values in the **sys.query_store_plan_feedback** catalog view. You can see what is the most recent DOP used for a query using the `last_dop` column from the Dynamic Management View **sys.dm_exec_query_stats** and the **sys.query_store_runtime_stats** catalog view.
 
