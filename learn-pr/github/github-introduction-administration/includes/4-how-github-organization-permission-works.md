@@ -26,6 +26,47 @@ After you create a repository with the correct permissions, you can make it a te
 
 1. Select **Template repository**.
 
+A user’s effective permissions in a repository are influenced by various factors, including:
+
+- **Repository Role:** (e.g., Admin, Write, Read)
+- **Team Membership:** (e.g., inherited permissions from a team)
+- **Organization Membership:** (e.g., default organization permissions, SSO requirements)
+
+When you combine these different permission sources, GitHub applies the highest level of access granted to the user. For example, if a user has Read access through a team but also has Write access directly assigned as a collaborator, they will effectively have Write permissions.
+
+### 4.4.2 Repository Membership Options
+
+When granting access to a repository, there are several ways a user can become a collaborator:
+
+| Membership Type             | Description                                                                                     |
+|-----------------------------|-------------------------------------------------------------------------------------------------|
+| **Direct Collaborator**     |  Added explicitly to the repository with a specific role (Read, Triage, Write, Maintain, or Admin). <br>  Recommended for external contributors or small teams. |
+| **Team Membership**         |  A user inherits repository access via their team membership. <br>  Team permissions are often set at the organization level for consistent, scalable management. |
+| **Organization Default Permissions** |  If the repository is part of an organization, there may be a default permission level for all organization members (e.g., None, Read). <br>  Owners can override these defaults for specific teams or users. |
+| **Outside Collaborator**    |  A user who is not a member of the organization but has explicit access to a repository. <br>  Useful for contractors, freelancers, or open-source contributors needing limited access. |
+
+## Audit Access to a Repository
+
+Regularly auditing who has access to a repository ensures proper security and compliance. Here are some recommended steps and tools:
+
+- **View Access in Repository Settings:**
+  - Navigate to Settings > Manage access (for the repository).
+  - Review the list of users and teams, along with their permission levels.
+
+- **Organization Audit Log (GitHub Enterprise or Organization-level):**
+  - Organization owners can view changes to membership, repository access, and permissions in the Audit log.
+  - Filter events by repository name or access changes for a more focused view.
+
+- **Enterprise Audit Log (GitHub Enterprise):**
+  - If you manage multiple organizations, use the Enterprise account’s audit log to track changes across all organizations and repositories.
+  - This is especially valuable for compliance reporting or large-scale security reviews.
+
+- **Automated Scripting:**
+  - Use the GitHub REST API or GraphQL API to programmatically list collaborators, teams, and permissions.
+  - Integrate scripts with your CI/CD pipeline or security dashboards to continuously monitor and flag anomalies.
+
+**Tip:** Set up branch protection rules and required reviews to add another layer of security and accountability for all code changes.
+
 ## Team permission levels
 A team in a GitHub organization is a group of users who collaborate on shared repositories. Teams help streamline access management and communication by applying consistent permissions across multiple repositories at once. Key benefits include:
 
