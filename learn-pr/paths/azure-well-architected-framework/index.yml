@@ -37,10 +37,10 @@ subjects:
 - architecture
 modules:
 - learn.azure-well-architected-introduction
+- learn.azure-well-architected-reliability
+- learn.azure-well-architected-security
 - learn.azure-well-architected-cost-optimization
 - learn.azure-well-architected-operational-excellence
 - learn.azure-well-architected-performance-efficiency
-- learn.azure-well-architected-reliability
-- learn.azure-well-architected-security
 trophy:
   uid: learn.azure-well-architected-framework.trophy
