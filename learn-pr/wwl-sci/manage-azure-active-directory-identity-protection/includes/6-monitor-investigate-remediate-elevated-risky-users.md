@@ -1,4 +1,6 @@
-Identity Protection provides organizations with three reports they can use to **investigate identity risks** in their environment: *risky users*, *risky sign-ins*, and *risk detections*. Investigating events is key to better understanding and identifying any weak points in your security strategy.
+## Investigate risk
+
+Identity Protection provides organizations with three reports they can use to investigate identity risks in their environment: **risky users**, **risky sign-ins**, and **risk detections**. Investigating events is key to better understanding and identifying any weak points in your security strategy.
 
 All three reports allow for downloading of events in .CSV format for further analysis outside of the Azure portal. The risky users and risky sign-ins reports allow for downloading the most recent 2,500 entries, while the risk detections report allows for downloading the most recent 5,000 records.
 
@@ -20,18 +22,18 @@ Selecting individual entries expands a details window below the detections. The 
 
 With the information provided by the risky users report, administrators can find:
 
-- Which users are at risk, have had risk remediated, or have had risk dismissed?
-- Details about detections.
-- History of all risky sign-ins.
-- Risk history.
+ - Which users are at risk, have had risk remediated, or have had risk dismissed?
+ - Details about detections.
+ - History of all risky sign-ins.
+ - Risk history.
 
 Administrators can then choose to take action on these events. They can choose to:
 
-- Reset the user password.
-- Confirm user compromise.
-- Dismiss user risk.
-- Block user from signing in.
-- Investigate further using Azure ATP.
+ - Reset the user password.
+ - Confirm user compromise.
+ - Dismiss user risk.
+ - Block user from signing in.
+ - Investigate further using Azure ATP.
 
 ### Risky sign-ins
 
@@ -39,19 +41,19 @@ The risky sign-ins report contains filterable data for up to the past 30 days (o
 
 With the information provided by the risky sign-ins report, administrators can find:
 
-- Which sign-ins are classified as at risk, confirmed compromised, confirmed safe, dismissed, or remediated.
-- Real-time and aggregate risk levels associated with sign-in attempts.
-- Detection types triggered.
-- Conditional Access policies applied.
-- MFA details.
-- Device information.
-- Application information.
-- Location information.
+ - Which sign-ins are classified as at risk, confirmed compromised, confirmed safe, dismissed, or remediated.
+ - Real-time and aggregate risk levels associated with sign-in attempts.
+ - Detection types triggered.
+ - Conditional Access policies applied.
+ - MFA details.
+ - Device information.
+ - Application information.
+ - Location information.
 
 Administrators can then choose to take action on these events. Administrators can choose to:
 
-- Confirm sign-in compromise.
-- Confirm sign-in safe.
+ - Confirm sign-in compromise.
+ - Confirm sign-in safe.
 
 ### Risk detections
 
@@ -59,9 +61,9 @@ The risk detections report contains filterable data for up to the past 90 days (
 
 With the information provided by the risk detections report, administrators can find:
 
-- Information about each risk detection including type.
-- Other risks triggered at the same time.
-- Sign-in attempt location.
+ - Information about each risk detection including type.
+ - Other risks triggered at the same time.
+ - Sign-in attempt location.
 
 Administrators can then choose to return to the user's risk or sign-ins report to take actions based on information gathered.
 
@@ -82,10 +84,10 @@ Some risk detections are marked by Identity Protection as "Closed (system)" beca
 
 Administrators have the following options to remediate:
 
-- Self-remediation with risk policy.
-- Manual password reset.
-- Dismiss user risk.
-- Close individual risk detections manually.
+ - Self-remediation with risk policy.
+ - Manual password reset.
+ - Dismiss user risk.
+ - Close individual risk detections manually.
 
 ### Self-remediation with risk policy
 
@@ -99,9 +101,9 @@ If requiring a password reset using a user risk policy isn't an option, administ
 
 Administrators are given two options when resetting a password for their users:
 
-**Generate a temporary password** - By generating a temporary password, you can immediately bring an identity back into a safe state. This method requires contacting the affected users since they need to know what the temporary password is. Because the password is temporary, the user is prompted to change the password to something new during the next sign-in.
+**Generate a temporary password** \- By generating a temporary password, you can immediately bring an identity back into a safe state. This method requires contacting the affected users since they need to know what the temporary password is. Because the password is temporary, the user is prompted to change the password to something new during the next sign-in.
 
-**Require the user to reset password** - Requiring the users to reset passwords enables self-recovery without contacting help desk or an administrator. This method only applies to users who are registered for MFA and SSPR. For users who haven't been registered, this option isn't available.
+**Require the user to reset password** \- Requiring the users to reset passwords enables self-recovery without contacting help desk or an administrator. This method only applies to users who are registered for MFA and SSPR. For users who haven't been registered, this option isn't available.
 
 ### Dismiss user risk
 
@@ -115,10 +117,10 @@ By closing individual risk detections manually, you can lower the user risk leve
 
 When closing risk detections manually, you can choose to take any of the following actions to change the status of a risk detection:
 
-- Confirm user compromised.
-- Dismiss user risk.
-- Confirm sign-in safe.
-- Confirm sign-in compromised.
+ - Confirm user compromised.
+ - Dismiss user risk.
+ - Confirm sign-in safe.
+ - Confirm sign-in compromised.
 
 ### Unblocking users
 
@@ -128,18 +130,18 @@ An administrator chooses to block a sign-in based on their risk policy or invest
 
 To unblock an account blocked due to user risk, administrators have the following options:
 
-- **Reset password** - You can reset the user's password.
-- **Dismiss user risk** - The user risk policy blocks a user if the configured user risk level for blocking access has been reached. You can reduce a user's risk level by dismissing user risk or manually closing reported risk detections.
-- **Exclude the user from policy** - If you think that the current configuration of your sign-in policy is causing issues for specific users, you can exclude the users from it.
-- **Disable policy** - If you think that your policy configuration is causing issues for all your users, you can disable the policy.
+ - **Reset password** - You can reset the user's password.
+ - **Dismiss user risk** - The user risk policy blocks a user if the configured user risk level for blocking access has been reached. You can reduce a user's risk level by dismissing user risk or manually closing reported risk detections.
+ - **Exclude the user from policy** - If you think that the current configuration of your sign-in policy is causing issues for specific users, you can exclude the users from it.
+ - **Disable policy** - If you think that your policy configuration is causing issues for all your users, you can disable the policy.
 
 ### Unblocking based on sign-in risk
 
 To unblock an account based on sign-in risk, administrators have the following options:
 
-- **Sign in from a familiar location or device** - A common reason for blocked suspicious sign-ins are sign-in attempts from unfamiliar locations or devices. Your users can quickly determine whether this reason is the blocking reason by trying to sign in from a familiar location or device.
-- **Exclude the user from policy** - If you think that the current configuration of your sign-in policy is causing issues for specific users, you can exclude the users from it.
-- **Disable policy** - If you think that your policy configuration is causing issues for all your users, you can disable the policy.
+ - **Sign in from a familiar location or device** - A common reason for blocked suspicious sign-ins are sign-in attempts from unfamiliar locations or devices. Your users can quickly determine whether this reason is the blocking reason by trying to sign in from a familiar location or device.
+ - **Exclude the user from policy** - If you think that the current configuration of your sign-in policy is causing issues for specific users, you can exclude the users from it.
+ - **Disable policy** - If you think that your policy configuration is causing issues for all your users, you can disable the policy.
 
 ### PowerShell preview
 
@@ -176,7 +178,8 @@ There are four steps to accessing Identity Protection data through Microsoft Gra
    1. In the **Name** textbox, type a name for your application (for example: Microsoft Entra Risk Detection API).
    2. Under **Supported account types**, select the type of accounts that will use the APIs.
    3. Select **Register**.
-4. Copy the **Application ID**.
+
+4.  Copy the **Application ID**.
 
 ### Configure API permissions
 
@@ -190,7 +193,7 @@ There are four steps to accessing Identity Protection data through Microsoft Gra
    2. Select the checkboxes next to IdentityRiskEvent.Read.All and IdentityRiskyUser.Read.All.
    3. Select **Add permissions**.
 
-6. Select **Grant admin consent for domain.**
+6.  Select **Grant admin consent for domain.**
 
 ### Configure a valid credential
 
@@ -207,21 +210,22 @@ There are four steps to accessing Identity Protection data through Microsoft Gra
 
 At this point, you should have:
 
-- The name of your tenant's domain
-- The Application (client) ID
-- The client secret or certificate
+ - The name of your tenant's domain
+ - The Application (client) ID
+ - The client secret or certificate
 
 To authenticate, send a post request to `https://login.microsoft.com` with the following parameters in the body:
 
-- grant\_type: `client_credentials`
-- resource: `https://graph.microsoft.com`
-- client\_id:
-- client\_secret:
+ - grant\_type: `client_credentials`
+ - resource: `https://graph.microsoft.com`
+ - client\_id:
+ - client\_secret:
 
 If successful, this request returns an authentication token. To call the API, create a header with the following parameter:
 
 ```http
 Authorization`="<token_type> <access_token>"
+
 
 ```
 
@@ -276,6 +280,10 @@ Here’s sample code for authenticating and calling the API using PowerShell. Ju
 
     }
 
+
+
+
+
 ```
 
 ### Get all of the offline risk detections (riskDetection API)
@@ -285,6 +293,9 @@ With Identity Protection sign-in risk policies, you can apply conditions when ri
 ```http
 GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=detectionTimingType eq 'offline'
 
+
+
+
 ```
 
 ### Get all of the users who successfully passed an MFA challenge triggered by risky sign-ins policy (riskyUsers API)
@@ -293,5 +304,8 @@ To understand the value Identity Protection risk-based policies have on your org
 
 ```http
 GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers?$filter=riskDetail eq 'userPassedMFADrivenByRiskBasedPolicy'
+
+
+
 
 ```

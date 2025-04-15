@@ -1,10 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.manage-azure-ad-identity-protection.enable-sign-in-risk-policy
+uid: learn-pr/wwl-sci/manage-azure-active-directory-identity-protection.enable-sign-in-risk-policy
 title: Exercise enable sign-in risk policy
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Exercise enable sign-in risk policy
   description: "Exercise enable sign-in risk policy"
-  ms.date: 02/21/2025
+  ms.date: 04/15/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit

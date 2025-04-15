@@ -1,8 +1,8 @@
 Identity Protection is a service that enables organizations to view the security posture of any account. Organizations can accomplish three key tasks:
 
-- Automate the detection and remediation of identity-based risks.
-- Investigate risks using data in the portal.
-- Export risk detection data to third-party utilities for further analysis.
+ - Automate the detection and remediation of identity-based risks.
+ - Investigate risks using data in the portal.
+ - Export risk detection data to third-party utilities for further analysis.
 
 Always remember that Microsoft Entra Identity Protection requires a Microsoft Entra ID Premium P2 license to operate. Licensing is covered in more detail in a later unit.
 
@@ -29,11 +29,10 @@ Identity Protection identifies risks in the following classifications:
 
 ## Permissions
 
-Identity Protection requires users be a Security Reader, Security Operator, Security Administrator, Global Reader, or Global Administrator in order to access.
+Identity Protection requires users be a Security Reader, Security Operator, Security Administrator, Global Reader Administrator in order to access.
 
 | **Role**               | **Can do**                                                                                                            | **Can't do**                                                                                           |
 | ---------------------- | --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| Global Administrator   | Full access to Identity Protection                                                                                    |                                                                                                        |
 | Security Administrator | Full access to Identity Protection                                                                                    | Reset password for a user                                                                              |
 | Security Operator      | View all Identity Protection reports and Overview screen, Dismiss user risk, confirm safe sign-in, confirm compromise | Configure or change policies, Reset password for a user, Configure alerts                              |
 | Security Reader        | View all Identity Protection reports and Overview screen                                                              | Configure or change policies, Reset password for a user, Configure alerts, Give feedback on detections |

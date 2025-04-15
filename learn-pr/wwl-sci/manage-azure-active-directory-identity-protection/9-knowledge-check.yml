@@ -1,10 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.manage-azure-ad-identity-protection.knowledge-check
-title: Module assessment
+uid: learn-pr/wwl-sci/manage-azure-active-directory-identity-protection.knowledge-check
+title: Module Assessment
 metadata:
-  title: Module assessment
-  description: "Knowledge check"
-  ms.date: 02/21/2025
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Module Assessment
+  description: "Module Assessment"
+  ms.date: 04/15/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
@@ -38,7 +40,7 @@ quiz:
     - content: "Hybrid identity sign-in risk policy"
       isCorrect: false
       explanation: "Incorrect. There's no directory policy for hybrid identity."
-  - content: "In Microsoft Graph, which three APIs expose information about risky users and sign-ins?"
+  - content: "In Microsoft Graph, which three APIs expose information about risky users and sign-ins"
     choices:
     - content: "`riskDetection, riskyUsers, signIns`"
       isCorrect: true
