@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.discover-microsoft-sentinel-solution-for-sap-btp.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Check what you learn in this module."
   ms.date: 01/13/2025
   author: wwlpublish

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.choose-storage-approach-in-azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Choose a data storage approach in Azure
   description: Learn how to use Azure Storage, Azure SQL Database, Azure Cosmos DB, or a combination of Azure resources for a performant solution in your business scenario.
   manager: akashdubey
@@ -40,4 +38,4 @@ units:
 - learn.choose-storage-approach-in-azure.6-summary
 badge:
   uid: learn.choose-storage-approach-in-azure.badge
-
+

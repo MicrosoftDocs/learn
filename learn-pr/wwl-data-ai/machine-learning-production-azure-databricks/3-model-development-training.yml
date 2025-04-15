@@ -2,8 +2,6 @@
 uid: learn.wwl.machine-learning-production-azure-databricks.model-development-training
 title: Explore model development
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore model development
   description: "Explore model development"
   ms.date: 07/17/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 9
 content: |
-  [!include[](includes/3-model-development-training.md)]
+  [!include[](includes/3-model-development-training.md)]

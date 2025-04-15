@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-data-privacy-and-governance-with-azure-databricks.implement-governance-automation
 title: Implement governance automation in Azure Databricks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement governance automation in Azure Databricks
   description: "Learn ways to automate governance within Azure Databricks."
   ms.date: 08/14/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/07-implement-governance-automation.md)]
+  [!include[](includes/07-implement-governance-automation.md)]

@@ -6,37 +6,37 @@ metadata:
   prefetch-feature-rollout: true
   title: Explore Azure Traffic Manager
   description: "Explore Azure Traffic Manager"
-  ms.date: 02/13/2025
+  ms.date: 04/07/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - references_regions
-durationInMinutes: 14
+durationInMinutes: 12
 content: |
   [!include[](includes/5-explore-azure-traffic-manager.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What are two benefits of Traffic Manager?"
+  - content: "The Azure Traffic Manager operates at which OSI model layer?"
     choices:
-    - content: "Distribution of traffic and continuous monitoring of endpoint health."
+    - content: "Layer 3"
+      isCorrect: false
+      explanation: "Incorrect. Traffic Manager works at the application level, Layer 7 ."
+    - content: "Layer 4"
+      isCorrect: false
+      explanation: "Incorrect. Traffic Manager works at the application level, Layer-7."
+    - content: "Layer 7"
       isCorrect: true
-      explanation: "Correct. Distribution of traffic according to one of several traffic-routing methods and continuous monitoring of endpoint health and automatic failover when endpoints fail."
-    - content: "Resolution of DNS queries and reduced need for DNS servers."
-      isCorrect: false
-      explanation: "Incorrect. Traffic Manager uses DNS to direct clients to specific service endpoints based on the rules of the traffic-routing method."
-    - content: "Supports one traffic-routing method and integrates with DNS."
-      isCorrect: false
-      explanation: "Incorrect. Azure Traffic Manager supports six traffic-routing methods. The traffic-routing method determines which endpoint is returned in the DNS response."
-  - content: "Which traffic-routing method should be use when end users need to use the \"closest\" endpoint for the lowest network latency?"
+      explanation: "Correct. Traffic Manager works at the application level, Layer-7."
+  - content: "Which traffic-routing method provides the lowest network latency by selecting the users closest location?"
     choices:
     - content: "Performance"
       isCorrect: true
-      explanation: "Correct. Use for endpoints in different geographic locations, and you want end users to use the \"closest\" endpoint for the lowest network latency."
+      explanation: "Correct. Performance routing uses the closest endpoint for the lowest network latency."
     - content: "Geographic"
       isCorrect: false
-      explanation: "Incorrect. Select this routing method to direct users to specific endpoints (Azure, External, or Nested) based on where their DNS queries originate from geographically."
+      explanation: "Incorrect. Geographic routing directs users to specific endpoints based on where the query originated."
     - content: "Priority"
       isCorrect: false
-      explanation: "Incorrect. Select this routing method for one primary service endpoint for all traffic. You can provide multiple backup endpoints in case the primary or one of the backup endpoints is unavailable."
+      explanation: "Incorrect. Priority routing directs all traffic to one primary service endpoint."

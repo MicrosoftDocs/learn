@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Implement virtual network traffic routing
   description: "Implement virtual network traffic routing"
-  ms.date: 03/28/2025
+  ms.date: 04/08/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -18,23 +18,23 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What type of routes enable traffic to override routes that Azure configures?"
+  - content: "Which is a valid next hop for a user defined custom route?"
     choices:
-    - content: "User-defined routes (UDR)"
+    - content: "Internet"
       isCorrect: true
-      explanation: "Correct. You can create custom user-defined routes in Azure to override Azure's default system routes, or to add other routes to a subnet's route table."
-    - content: "System routes"
+      explanation: "Correct. Internet is a valid next hop."
+    - content: "Subnet"
       isCorrect: false
-      explanation: "Incorrect. Azure automatically creates system routes and assigns the routes to each subnet in a virtual network."
-    - content: "Default routes"
+      explanation: "Incorrect. Subnet is not a valid next hop."
+    - content: "Tunnel"
       isCorrect: false
-      explanation: "Incorrect. Azure automatically creates default system routes for each subnet within the virtual network."
+      explanation: "Incorrect. Tunnel is not a valid next hop."
   - content: "A VNet is experiencing some routing problems. What would an engineer do to begin to diagnose the problem?"
     choices:
     - content: "Configure every resource with a static IP address."
       isCorrect: false
       explanation: "Incorrect. There is a better solution."
-    - content: "View the effective routes for each NIC. (UDR)"
+    - content: "View the effective routes for each NIC."
       isCorrect: true
       explanation: "Correct. You can use Azure portal, Azure CLI, or Azure PowerShell to view the Effective Routes for each NIC."
     - content: "Use forced tunneling to control traffic flow."

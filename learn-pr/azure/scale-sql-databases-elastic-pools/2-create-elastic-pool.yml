@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-scale-azure-sql-databases-elastic-pools.create-elastic-pool
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create a SQL elastic pool
   description: Learn how to create an Azure SQL Database elastic pool.
   ms.date: 12/15/2023
@@ -17,4 +15,4 @@ title: Create a SQL elastic pool
 durationInMinutes: 7
 content: |
   [!include[](includes/2-create-elastic-pool.md)]
-
+

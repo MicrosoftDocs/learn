@@ -2,11 +2,9 @@
 uid: learn.wwl.search-azure-cosmos-db-sql-api-data-azure-cognitive-search.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/10/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -15,7 +13,7 @@ labModal: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "To enable the ability to index changes in Azure Cosmos DB for NoSQL items, which field should you include in the data source's SQL query?"
+  - content: "To enable the ability to index changes in Azure Cosmos DB for NoSQL items, which field should be included in the data source's SQL query?"
     choices:
     - content: "``partitionKey``"
       isCorrect: false
@@ -26,14 +24,14 @@ quiz:
     - content: "``_ts``"
       isCorrect: true
       explanation: "Correct. The ``_ts`` field is required to enable the high watermark policy to track changes to existing items."
-  - content: "Your Azure Cosmos DB for NoSQL solution regularly uses a time-to-live value to automatically delete items after a set amount of time. Which strategy should you use to ensure that the deleted items are also deleted in the search index?"
+  - content: "The Azure Cosmos DB for NoSQL sales application regularly uses a time-to-live value to automatically delete items after a set amount of time. Which strategy should the application use to ensure that the deleted items are also deleted in the search index?"
     choices:
     - content: "Configure a soft-delete policy with a tracked column and value"
       isCorrect: true
-      explanation: "Correct. A soft-delete column and value is required to enable the soft-delete column deletion detection policy."
-    - content: "No configuration is required, Azure Cognitive Search will automatically remove data from the index"
+      explanation: "Correct. A soft-delete column and value is required to enable the soft-deleted column deletion detection policy."
+    - content: "No configuration is required. Azure Cognitive Search automatically removes data from the index"
       isCorrect: false
-      explanation: "Incorrect. Azure Cognitive Search will not automatically remove JSON from an index if the corresponding item is deleted in Azure Cosmos DB."
+      explanation: "Incorrect. Azure Cognitive Search doesn't automatically remove JSON from an index if the corresponding item is deleted in Azure Cosmos DB."
     - content: "Configure a high watermark policy that is mapped to the timestamp (_ts) field"
       isCorrect: false
       explanation: "Incorrect. The high watermark policy is related to tracking changes, not deleting items."

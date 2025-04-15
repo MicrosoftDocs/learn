@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-agent-with-semantic-kernel.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Learn how to create Azure AI Agent Service agents with Semantic Kernel.
+  author: buzahid
+  ms.author: buzahid
+  ms.date: 03/25/2025
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

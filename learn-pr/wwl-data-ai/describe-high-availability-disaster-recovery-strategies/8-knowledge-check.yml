@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-high-availability-disaster-recovery-strategies.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 03/27/2025
   author: JulianePadrao
@@ -48,4 +46,4 @@ quiz:
       explanation: "That's incorrect. Agent jobs aren't protected."
     - content: "Whatever is in the databases; anything outside must be dealt with manually"
       isCorrect: true
-      explanation: "That's correct. Database-level protection means that anything that is captured in the transaction log for a user or application database is accounted for as part of the availability feature. Anything that exists outside of the database or that isn't captured as part of the transaction log such as SQL Server Agent jobs and linked servers must be manually dealt with to ensure the destination server can function like the primary in a planned or unplanned failover event."
+      explanation: "That's correct. Database-level protection means that anything that is captured in the transaction log for a user or application database is accounted for as part of the availability feature. Anything that exists outside of the database or that isn't captured as part of the transaction log such as SQL Server Agent jobs and linked servers must be manually dealt with to ensure the destination server can function like the primary in a planned or unplanned failover event."

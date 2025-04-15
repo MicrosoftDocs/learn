@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Design name resolution for your virtual network
   description: "Design name resolution for your virtual network"
-  ms.date: 03/28/2025
+  ms.date: 04/08/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -18,25 +18,25 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the difference between a static public IP address and a dynamic public IP address?"
+  - content: "Which DNS service is appropriate for public-facing applications and global services like email servers?"
     choices:
-    - content: "A dynamic IP address remains the same over the lifespan of the resource."
-      isCorrect: false
-      explanation: "Incorrect. A dynamic public IP address is an assigned address that can change over the lifespan of the Azure resource. The dynamic IP address is allocated when you create or start a VM."
-    - content: "A static IP address can use an IPv4 address only."
-      isCorrect: false
-      explanation: "Incorrect. Static IP addresses are created with either an IPv4 or an IPv6 address."
-    - content: "A static IP address remains the same over the lifespan of the resource."
+    - content: "Azure public DNS"
       isCorrect: true
-      explanation: "Correct. A static public IP address is an assigned address that won't change over the lifespan of the Azure resource. To configure a static IP address, set the allocation method explicitly to static."
-  - content: "Application owners need to use dynamic IP addresses for specific resources on their VNet. Which SKU must they choose?"
+      explanation: "Correct. Azure public DNS is best for public and global solutions."
+    - content: "Azure private DNS"
+      isCorrect: false
+      explanation: "Incorrect. Azure public DNS is best for public and global solutions."
+    - content: "Combination of Azure public and private DNS"
+      isCorrect: false
+      explanation: "Incorrect. Azure public DNS is best for public and global solutions."
+  - content: "Which DNS service is appropriate for hostname resolution within a virtual network for resources like virtual machines?"
     choices:
-    - content: "Basic SKU"
+    - content: "Azure public DNS"
+      isCorrect: false
+      explanation: "Incorrect. Azure private DNS is best to manage domains for virtual machines or other resources within and across virtual networks."
+    - content: "Azure private DNS"
       isCorrect: true
-      explanation: "Correct. Basic SKU public IPs can be assigned by using static or dynamic allocation methods."
-    - content: "Standard SKU"
+      explanation: "Correct. Azure private DNS is best to manage domains for virtual machines or other resources within and across virtual networks."
+    - content: "Combination of Azure public and private DNS"
       isCorrect: false
-      explanation: "Incorrect. Standard SKU public IP addresses always use the static allocation method."
-    - content: "Either Basic or Standard SKU"
-      isCorrect: false
-      explanation: "Incorrect. Standard SKU public IP addresses always use the static allocation method. Basic SKU public IPs can be assigned by using static or dynamic allocation methods."
+      explanation: "Incorrect. Azure private DNS is best to manage domains for virtual machines or other resources within and across virtual networks."

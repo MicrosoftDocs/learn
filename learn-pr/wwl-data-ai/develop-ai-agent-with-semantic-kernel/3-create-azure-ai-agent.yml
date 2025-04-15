@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-agent-with-semantic-kernel.create-azure-ai-agent
+title: Create an Azure AI agent with Semantic Kernel
+metadata:
+  title: Create an Azure AI agent with Semantic Kernel
+  description: Learn how to use the Semantic Kernel Agent Framework to create an Azure AI agent
+  author: buzahid
+  ms.author: buzahid
+  ms.date: 03/25/2025
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-create-azure-ai-agent.md)]

@@ -6,12 +6,12 @@ metadata:
   prefetch-feature-rollout: true
   title: Enable just-in-time access
   description: "Enable just-in-time access"
-  ms.date: 03/28/2025
+  ms.date: 04/15/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
   ms.custom:
   - references_regions
-durationInMinutes: 7
+durationInMinutes: 8
 content: |
   [!include[](includes/20-enable-just-in-time-access.md)]

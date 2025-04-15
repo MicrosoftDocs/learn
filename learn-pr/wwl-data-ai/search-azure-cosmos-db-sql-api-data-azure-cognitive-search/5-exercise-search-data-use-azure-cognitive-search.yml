@@ -2,11 +2,9 @@
 uid: learn.wwl.search-azure-cosmos-db-sql-api-data-azure-cognitive-search.exercise-search-data-using-azure-cognitive-search
 title: Exercise - Search data using Azure Cognitive Search and Azure Cosmos DB for NoSQL
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Search data using Azure Cognitive Search and Azure Cosmos DB for NoSQL
   description: "Exercise - Search data using Azure Cognitive Search and Azure Cosmos DB for NoSQL"
-  ms.date: 10/28/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

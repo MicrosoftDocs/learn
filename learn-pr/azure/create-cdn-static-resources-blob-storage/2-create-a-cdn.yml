@@ -2,8 +2,6 @@
 uid: learn.azure.create-content-delivery-network-azure-cdn-blob-services.2-create-a-cdn
 title: Create an Azure CDN
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create an Azure CDN
   description: Use an Azure Content Delivery Network to Optimize Website Performance
   ms.date: 01/10/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/2-create-a-cdn.md)]
-
+

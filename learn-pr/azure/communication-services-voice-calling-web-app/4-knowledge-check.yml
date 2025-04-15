@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.communication-services-voice-calling-webapp.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: "Review concepts around using Azure Communication Services to create a voice calling web application."
   ms.date: 07/26/2024
   author: rmcmurray
@@ -38,4 +36,4 @@ quiz:
     - content: "The user's Azure Communication Services user ID"
       isCorrect: true
       explanation: 'To make a non-PSTN voice call, you only need to know the user ID of the user you want to call.'
-
+

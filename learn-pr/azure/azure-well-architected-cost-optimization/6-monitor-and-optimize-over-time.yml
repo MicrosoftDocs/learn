@@ -2,8 +2,6 @@
 uid: learn.azure-well-architected-cost-optimization.monitor-and-optimize-over-time
 title: Monitor and optimize over time
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Monitor and optimize over time
   description: Learn how to continuously right-size investment as your workload evolves with the ecosystem.
   ms.date: 10/23/2023
@@ -60,4 +58,4 @@ quiz:
         - content: "Using the Developer SKU for the Dev/Test environment's API Management instance,"
           isCorrect: true
           explanation: "Correct. Using the Developer SKU for the Dev/Test environment's API Management instance is the most cost-effective option."
-
+

@@ -2,8 +2,6 @@
 uid: learn.execute-azure-function-with-triggers.6-create-http-trigger
 title: Exercise - Create an HTTP trigger
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create an HTTP trigger and run an Azure Function with an HTTP request
   description: Create an HTTP trigger
   ms.date: 09/25/2023
@@ -14,4 +12,4 @@ azureSandbox: true
 durationInMinutes: 15
 content: |
   [!include[](includes/6-create-http-trigger.md)]
-
+

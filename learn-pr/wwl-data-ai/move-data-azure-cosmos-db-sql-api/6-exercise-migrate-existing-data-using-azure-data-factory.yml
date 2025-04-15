@@ -2,11 +2,9 @@
 uid: learn.wwl.moving-data-into-out-of-azure-cosmos-db-sql-api.exercise-migrate-existing-data-using-azure-data-factory
 title: 'Exercise: Migrate existing data using Azure Data Factory'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Migrate existing data using Azure Data Factory'
   description: "Exercise: Migrate existing data using Azure Data Factory"
-  ms.date: 10/28/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

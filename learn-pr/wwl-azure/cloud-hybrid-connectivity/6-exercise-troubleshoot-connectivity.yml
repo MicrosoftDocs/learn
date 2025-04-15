@@ -2,8 +2,6 @@
 uid: learn.wwl.cloud-hybrid-connectivity.lab-exercise
 title: 'Exercise: Troubleshoot cloud and hybrid connectivity'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Troubleshoot cloud and hybrid connectivity'
   description: "Exercise: Troubleshoot cloud and hybrid connectivity"
   ms.date: 04/27/2023
@@ -15,4 +13,4 @@ labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-troubleshoot-connectivity.md)]
-interactive: powershell
+interactive: powershell

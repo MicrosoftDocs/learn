@@ -2,8 +2,6 @@
 uid: learn.migrate-vmware-workloads-on-premises-azure-vmware-solution.plan-hcx-deployment
 title: Plan HCX deployment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Plan HCX deployment
   description: Plan HCX deployment.
@@ -52,4 +50,4 @@ quiz:
     - content: "8"
       isCorrect: false
       explanation: "The VMware HCX Advanced Connector doesn't support 8 site connections."
-
+

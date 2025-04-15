@@ -2,11 +2,9 @@
 uid: learn.wwl.introduction-to-azure-cosmos-db-sql-api.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/21/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -21,32 +19,32 @@ quiz:
     choices:
     - content: "MongoDB API"
       isCorrect: false
-      explanation: "That's incorrect. While the MongoDB API implements the wire protocol for MongoDB, it isn't the native API for Azure Cosmos DB."
+      explanation: "Incorrect. While the MongoDB API implements the wire protocol for MongoDB, it isn't the native API for Azure Cosmos DB."
     - content: "Cassandra API"
       isCorrect: false
-      explanation: "That's incorrect. While the Cassandra API implements the much of the native Apache Cassandra wire protocol, it isn't the native API for Azure Cosmos DB."
+      explanation: "Incorrect. While the Cassandra API implements the much of the native Apache Cassandra wire protocol, it isn't the native API for Azure Cosmos DB."
     - content: "NoSQL API"
       isCorrect: true
-      explanation: "That's correct. The NoSQL API is the native API for Azure Cosmos DB. All other APIs map to the NoSQL API in their implementations."
+      explanation: "Correct. The NoSQL API is the native API for Azure Cosmos DB. All other APIs map to the NoSQL API in their implementations."
   - content: "Which property is required to be specified when creating a new Azure Cosmos DB for NoSQL container?"
     choices:
     - content: "Partition key path"
       isCorrect: true
-      explanation: "That's correct. All containers in an Azure Cosmos DB for NoSQL database must have a partition key path defined."
+      explanation: "Correct. All containers in an Azure Cosmos DB for NoSQL database must have a partition key path defined."
     - content: "Time-to-live"
       isCorrect: false
-      explanation: "That's incorrect. You can create a container without a time-to-live value. The container won't expire items automatically."
+      explanation: "Incorrect. A container can be created without a time-to-live value. The container doesn't expire items automatically."
     - content: "Indexing policy"
       isCorrect: false
-      explanation: "That's incorrect. You can create a container without specifying an indexing policy. Azure Cosmos DB will automatically index every property of every item."
-  - content: "Your team has an existing Azure Cosmos DB account, database, and container. A new team member would like to configure Azure Cosmos DB for a different team with unique needs for regional replication and default consistency levels. Which new resource should that member of the team create?"
+      explanation: "Incorrect. A container can be created without specifying an indexing policy. Azure Cosmos DB automatically indexes every property of every item."
+  - content: "The accounting team has an existing Azure Cosmos DB account, database, and container. A new team member would like to configure Azure Cosmos DB for a different team with unique needs for regional replication and default consistency levels. Which new resources should that member of the team create?"
     choices:
     - content: "Container"
       isCorrect: false
-      explanation: "That's incorrect. If your team member creates a new container, the default consistency level and global replication settings will remain the same between both teams."
+      explanation: "Incorrect. If the accounting team member creates a new container, the default consistency level and global replication settings remain the same between both teams."
     - content: "Account"
       isCorrect: true
-      explanation: "That's correct. In order to have different behavior for replication and default consistency, your team member must create a new account."
+      explanation: "Correct. In order to have different behavior for replication and default consistency, the accounting team member must create a new account."
     - content: "Database"
       isCorrect: false
-      explanation: "That's incorrect. If your team member creates a new database, the default consistency level and global replication settings will remain the same between both teams."
+      explanation: "Incorrect. If the accounting team member creates a new database, the default consistency level and global replication settings remain the same between both teams."

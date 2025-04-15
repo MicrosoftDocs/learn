@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.connect-vm-with-azure-bastion.introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   ms.date: 03/25/2025
@@ -13,4 +11,4 @@ title: Introduction
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
-
+

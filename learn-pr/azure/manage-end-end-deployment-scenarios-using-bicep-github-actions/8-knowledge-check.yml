@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.manage-end-end-deployment-scenarios-using-bicep-github-actions.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check.
   ms.date: 07/18/2024
   author: mumian
@@ -60,4 +58,4 @@ quiz:
     - content: You need to add an output to your Bicep template for the host name.
       isCorrect: true
       explanation: Correct. Information from your Bicep file needs to be published as an output in your Bicep file before it's accessible by the rest of the workflow.
-
+

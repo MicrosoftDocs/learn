@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-identities-microsoft-entra-id.secure-external-microsoft-entra-identities
 title: Secure external identities
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Secure external identities
   description: "Secure external identities"
   ms.date: 07/03/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 15
 content: |
-  [!include[](includes/7-secure-external-microsoft-entra-identities.md)]
+  [!include[](includes/7-secure-external-microsoft-entra-identities.md)]

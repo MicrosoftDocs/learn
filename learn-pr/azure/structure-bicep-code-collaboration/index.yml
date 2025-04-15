@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.structure-bicep-code-collaboration
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: standard
   title: Structure your Bicep code for collaboration
   description: Learn how to create modular, reusable, and documented infrastructure as code by using Bicep, and enable team collaboration in the process.
@@ -52,4 +50,4 @@ units:
 - learn.azure.structure-bicep-code-collaboration.summary
 badge:
   uid: learn.azure.structure-bicep-code-collaboration.badge
-
+

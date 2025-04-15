@@ -2,8 +2,6 @@
 uid: learn.wwl.use-own-data-azure-openai.exercise
 title: Exercise - Add your data for RAG with Azure OpenAI Service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Add your data for RAG with Azure OpenAI Service
   description: Complete a hands-on exercise to learn how to use your own data with Azure OpenAI services.
   author: ivorb
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 25
 content: |
   [!include[](includes/5-exercise.md)]
-
+

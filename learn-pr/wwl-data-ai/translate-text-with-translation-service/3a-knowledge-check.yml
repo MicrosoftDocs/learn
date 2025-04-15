@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.translate-text-with-translation-service.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 09/13/2024
   author: wwlpublish
@@ -48,4 +46,4 @@ quiz:
       explanation: "Correct. Azure AI Speech can translate audio from one language into audio in another language."
     - content: "Speech-to-text"
       isCorrect: false
-      explanation: "Incorrect. Azure AI Speech does have speech-to-text capabilities, but you will want to use another capability."
+      explanation: "Incorrect. Azure AI Speech does have speech-to-text capabilities, but you will want to use another capability."

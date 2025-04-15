@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.intro-mlops-iot-edge.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: In this section, we create interactive questions that validate if the learner has understood the learning objectives
   ms.date: 11/28/2023
   author: PatAltimore
@@ -48,4 +46,4 @@ quiz:
     - content: "Developers should follow CI/CD processes before MLOps is deployed."
       isCorrect: false
       explanation: "Incorrect. The ability to use CI/CD isn't a prerequisite for MLOps on edge devices."
-
+

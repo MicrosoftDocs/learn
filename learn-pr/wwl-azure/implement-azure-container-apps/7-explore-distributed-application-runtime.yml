@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-azure-container-apps.explore-distributed-application-runtime
 title: Explore Dapr integration with Azure Container Apps
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Dapr integration with Azure Container Apps
   description: "Explore Dapr integration with Azure Container Apps"
   ms.date: 07/16/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 5
 content: |
-  [!include[](includes/7-explore-distributed-application-runtime.md)]
+  [!include[](includes/7-explore-distributed-application-runtime.md)]

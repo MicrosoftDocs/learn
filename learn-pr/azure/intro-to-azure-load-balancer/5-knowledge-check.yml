@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-azure-load-balancer.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check.
   ms.date: 01/12/2024
   author: Orin-Thomas
@@ -50,4 +48,4 @@ quiz:
         - content: Health probe
           isCorrect: true
           explanation: Correct. Health probes allow you to determine whether a back-end pool instance is responding to traffic.
-          
+          

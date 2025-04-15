@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.moderate-content-detect-harm-azure-ai-content-safety.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Test your knowledge of content moderation and harm detection with Azure AI Content Safety.
   author: aprilspeight
   ms.author: apspeigh

@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.define-foundation-pillars.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: knowledge check
+  title: Module assessment
   description: "knowledge check"
   ms.date: 09/20/2020
   author: wwlpublish
@@ -60,4 +58,4 @@ quiz:
       explanation: "Sorry, that’s incorrect. Azure Test Plans and Azure Key Vault aren't modern Azure DevOps Services."
     - content: "Azure Artifacts and App Insights"
       isCorrect: false
-      explanation: "Sorry, that’s incorrect. Azure Artifacts and App Insights aren't modern Azure DevOps Services."
+      explanation: "Sorry, that’s incorrect. Azure Artifacts and App Insights aren't modern Azure DevOps Services."

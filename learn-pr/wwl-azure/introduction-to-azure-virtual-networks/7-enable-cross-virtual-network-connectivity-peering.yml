@@ -6,19 +6,19 @@ metadata:
   prefetch-feature-rollout: true
   title: Enable cross-virtual network connectivity with peering
   description: "Enable cross-virtual network connectivity with peering."
-  ms.date: 03/28/2025
+  ms.date: 04/08/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 8
+durationInMinutes: 10
 content: |
   [!include[](includes/7-enable-cross-virtual-network-connectivity-peering.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "When one needs the resources in one VNet to communicate with resources in a subnet in a different VNet. Which Azure network feature should be used?"
+  - content: "Which feature allows one VNet to communicate with resources in a subnet in a different virtual network?"
     choices:
     - content: "Internal Domain Name System (DNS)."
       isCorrect: false
@@ -29,14 +29,3 @@ quiz:
     - content: "VNet peering."
       isCorrect: true
       explanation: "Correct, virtual network peering enables you to seamlessly connect separate VNets with optimal network performance, whether they are in the same Azure region (VNet peering) or in different regions (Global VNet peering)."
-  - content: "When you're configuring global peering, what changes occur in the peered VNets?"
-    choices:
-    - content: "A peering entry is added to the routing table in the source VNet only."
-      isCorrect: false
-      explanation: "Incorrect, the VNets communicate as peers, so resources in each VNet must be able to communicate with each other. Adding a single peering entry only allows traffic to be routed one way."
-    - content: "All traffic on the Vnet must be routed through a Gateway."
-      isCorrect: false
-      explanation: "Incorrect, resources on each VNet can communicate seamlessly with one another."
-    - content: "A peering entry is added to the routing table in each VNet."
-      isCorrect: true
-      explanation: "Correct, VNet Global Peering entries are added to the routing tables in each VNet to direct traffic to the peered VNet."

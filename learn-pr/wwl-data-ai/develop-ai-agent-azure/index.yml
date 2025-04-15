@@ -5,7 +5,7 @@ metadata:
   description: Learn how to start using Azure AI Agent Service.
   author: ivorb
   ms.author: berryivor
-  ms.date: 02/24/2025
+  ms.date: 04/03/2025
   ms.service: azure-ai-openai
   ms.topic: module-standard-task-based
 title: Develop an AI agent with Azure AI Agent Service

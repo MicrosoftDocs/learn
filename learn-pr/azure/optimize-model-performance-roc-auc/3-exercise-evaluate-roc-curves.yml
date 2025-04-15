@@ -2,11 +2,9 @@
 uid: learn.machinelearning.optimize-model-performance-roc-auc-dropout.exercise-evaluate-roc-curves
 title: Exercise - Evaluate ROC curves
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Exercise - Evaluate ROC curves
+  title: Exercise - Evaluate ROC Curves
   description: Exercise about good and bad ROC curves in machine learning
-  ms.date: 07/20/2024
+  ms.date: 04/03/2025
   author: s-polly
   ms.author: scottpolly
   ms.topic: unit

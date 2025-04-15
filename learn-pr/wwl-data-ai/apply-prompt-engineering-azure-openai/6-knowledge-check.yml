@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.apply-prompt-engineering-azure-openai.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Check your understanding of the content presented in this module.
   author: ivorb
   ms.author: berryivor
@@ -52,4 +50,4 @@ quiz:
     - content: "To enable the model to continue responding in a similar way and allow the user to reference previous content in subsequent queries"
       isCorrect: true
       explanation: "Conversation history enables the model to continue responding in a similar way (such as tone or formatting) and allow the user to reference previous content in subsequent queries."
-
+

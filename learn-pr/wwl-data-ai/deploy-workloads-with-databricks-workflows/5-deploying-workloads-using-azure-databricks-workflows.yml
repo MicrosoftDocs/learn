@@ -2,13 +2,11 @@
 uid: learn.wwl.deploy-workloads-with-databricks-workflows.deploy-workloads-using-azure-databricks-workflows
 title: Deploy workloads using Azure Databricks Workflows
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deploy workloads using Azure Databricks Workflows
   description: "Deploy workloads using Azure Databricks Workflows"
   ms.date: 07/29/2024
   author: wwlpublish
-  ms.author: theresai
+  ms.author: jamesh
   ms.topic: unit
 durationInMinutes: 5
 content: |

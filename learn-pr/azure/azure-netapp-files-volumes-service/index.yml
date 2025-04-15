@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.azure-netapp-files-volumes-service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: introduction        
   title: Understand how Azure NetApp Files provides volumes as a service     
   description: Understand network attached storage (NAS) concepts and various NAS protocols supported in Azure NetApp Files.      
@@ -44,4 +42,4 @@ units:
 - learn.azure.azure-netapp-files-volumes-service.summary
 badge:
   uid: learn.azure.azure-netapp-files-volumes-service.badge
-
+

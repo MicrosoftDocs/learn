@@ -2,8 +2,6 @@
 uid: learn.wwl.set-up-microsoft-defender-cloud.activate-just-in-time-access-on-your-virtual-machines-from-azure-portal
 title: Exercise - Enable just-in-time access on Virtual Machines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Enable just-in-time access on Virtual Machines
   description: "Exercise - Enable just-in-time access on Virtual Machines"
   ms.date: 04/24/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 30
 content: |
-  [!include[](includes/19-activate-just-in-time-access-on-your-virtual-machines-from-azure-portal.md)]
+  [!include[](includes/19-activate-just-in-time-access-on-your-virtual-machines-from-azure-portal.md)]

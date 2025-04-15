@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-azure-monitoring-for-sap-workloads-azure-vms.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction to the module."
   ms.date: 03/28/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/1-introduction.md)]

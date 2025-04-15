@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.publish-reusable-bicep-code-using-azure-pipelines.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge.
   ms.date: 05/13/2024
   author: mumian
@@ -54,4 +52,4 @@ quiz:
     - content: You add a new output.
       isCorrect: false
       explanation: Incorrect. Adding a new output isn't a breaking change, so you don't need to update the major version.
-
+

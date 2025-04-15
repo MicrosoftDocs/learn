@@ -2,8 +2,6 @@
 uid: learn.wwl.deploy-devices-windows-autopilot.use-autopilot-for-modern-deployment
 title: Use Autopilot for modern deployment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use Autopilot for modern deployment
   description: "Use Autopilot for modern deployment"
   ms.date: 01/24/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-use-autopilot-for-modern-deployment.md)]
+  [!include[](includes/2-use-autopilot-for-modern-deployment.md)]

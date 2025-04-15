@@ -2,8 +2,6 @@
 uid: learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 07/30/2024
@@ -19,4 +17,4 @@ labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]
-
+

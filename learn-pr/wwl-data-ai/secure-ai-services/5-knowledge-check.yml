@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.secure-ai-services.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   author: wwlpublish
   ms.author: berryivor
@@ -48,4 +46,4 @@ quiz:
     - content: "In Access control, add your Microsoft Entra ID user account to a role."
       isCorrect: false
       explanation: "Incorrect. The Access control sets access for viewing or managing the service, not the network access."
-
+

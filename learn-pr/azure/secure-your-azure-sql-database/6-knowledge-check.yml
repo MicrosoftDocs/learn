@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-your-azure-sql-database.6-knowledge-check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Test your knowledge 
   ms.date: 11/07/2023
   author: VanMSFT
   ms.author: vanto
   manager: jroth
   ms.topic: unit
-title: Knowledge check
+title: Module assessment
 durationInMinutes: 5
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -60,4 +58,4 @@ quiz:
       isCorrect: true
       explanation: Azure SQL Database enforces encryption (SSL/TLS) at all times for all connections.
     - content: "No"
-      isCorrect: false
+      isCorrect: false

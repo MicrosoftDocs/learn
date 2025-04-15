@@ -1,14 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.responsible-ai-studio.exercise-content-filters
-title: Exercise - Explore content filters in Azure AI Studio
+title: Exercise - Apply content filters to prevent the output of harmful content
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Exercise - Explore content filters in Azure AI Studio
-  description: Hands-on exercise to explore content filters in Azure AI Studio.
+  title: Exercise - Apply content filters to prevent the output of harmful content
+  description: Hands-on exercise to explore content filters in Azure AI Foundry Portal.
   author: ivorb
   ms.author: berryivor
-  ms.date: 11/28/2024
+  ms.date: 04/07/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

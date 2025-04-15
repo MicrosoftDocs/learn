@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Implement single sign-on (SSO)
   description: "Implement single sign-on (SSO)"
-  ms.date: 03/10/2025
+  ms.date: 04/11/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

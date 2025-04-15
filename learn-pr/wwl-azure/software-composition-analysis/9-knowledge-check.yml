@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.software-composition-analysis.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 05/13/2024
   author: wwlpublish
@@ -48,4 +46,4 @@ quiz:
       explanation: "Incorrect. GitHub Dependabot detects vulnerable dependencies and sends Dependabot alerts about them in several situations: A new vulnerability is added to the GitHub Advisory database, New vulnerability data from Mend is processed, Dependency graph for a repository changes."
     - content: "A deployment succeeds."
       isCorrect: false
-      explanation: "Incorrect. GitHub Dependabot detects vulnerable dependencies and sends Dependabot alerts about them in several situations: A new vulnerability is added to the GitHub Advisory database, New vulnerability data from Mend is processed, Dependency graph for a repository changes."
+      explanation: "Incorrect. GitHub Dependabot detects vulnerable dependencies and sends Dependabot alerts about them in several situations: A new vulnerability is added to the GitHub Advisory database, New vulnerability data from Mend is processed, Dependency graph for a repository changes."

@@ -6,12 +6,12 @@ metadata:
   prefetch-feature-rollout: true
   title: Configure Microsoft Defender plans for Servers, Databases, and Storage
   description: "Configure Microsoft Defender plans for Servers, Databases, and Storage"
-  ms.date: 03/28/2025
+  ms.date: 04/15/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
   ms.custom:
   - references_regions
-durationInMinutes: 7
+durationInMinutes: 4
 content: |
   [!include[](includes/9-configure-defender-servers-storage.md)]

@@ -2,8 +2,6 @@
 uid: learn.monitor-authentication-methods.exercise-write-kql-queries
 title: Exercise - Write KQL queries
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Write KQL queries
   description: Exercise - Write KQL queries
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/exercise-write-kql-queries.md)]
+  [!include[](includes/exercise-write-kql-queries.md)]

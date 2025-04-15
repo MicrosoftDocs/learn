@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.design-health-model-mission-critical-workload
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design a health model for your mission-critical workload
   description: Improve your observability practices by defining a health model for mission-critical applications. A health model helps you quickly identify and troubleshoot issues that might affect the health of your mission-critical solution.
   ms.date: 08/05/2024
@@ -50,4 +48,4 @@ units:
 - learn.design-health-model-mission-critical-workload.summary
 badge:
  uid: learn.design-health-model-mission-critical-workload.badge 
-
+

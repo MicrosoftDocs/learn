@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-sk-multi-agent-solution.create-agent-group-chat
+title: Create an agent group chat
+metadata:
+  title: Create an agent group chat
+  description: Learn how to create an agent group chat for multi-agent collaboration.
+  author: buzahid
+  ms.author: buzahid
+  ms.date: 03/14/2025
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-create-agent-group-chat.md)]

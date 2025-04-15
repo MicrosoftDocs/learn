@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.modernize-explore-azure-network.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 01/09/2024
   author: wwlpublish
@@ -48,4 +46,4 @@ quiz:
       explanation: "Incorrect. virtual network-to-virtual network is a method for establishing direct connectivity to another Azure virtual network."
     - content: "Azure ExpressRoute"
       isCorrect: true
-      explanation: "Correct. Azure ExpressRoute connects an Azure virtual network to an on-premises network via a private connection. It's also possible to establish connectivity using point-to-site VPN, site-to-site VPN, and Azure Virtual WAN. virtual network peering and virtual network-to-virtual network are both methods for establishing direct connectivity to another Azure virtual network."
+      explanation: "Correct. Azure ExpressRoute connects an Azure virtual network to an on-premises network via a private connection. It's also possible to establish connectivity using point-to-site VPN, site-to-site VPN, and Azure Virtual WAN. virtual network peering and virtual network-to-virtual network are both methods for establishing direct connectivity to another Azure virtual network."
