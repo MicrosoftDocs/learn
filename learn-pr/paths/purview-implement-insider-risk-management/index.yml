@@ -28,6 +28,7 @@ modules:
 - learn.wwl.purview-explore-insider-risk-management
 - learn.wwl.purview-prepare-insider-risk-management
 - learn.wwl.purview-create-manage-insider-risk-policy
+- learn.wwl.purview-insider-risk-investigate-alerts
 - learn-m365.m365-compliance-irm-adaptive-protection
 trophy:
   uid: learn.wwl.purview-implement-insider-risk-management.trophy
