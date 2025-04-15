@@ -1,30 +1,31 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-insider-risk-investigate-alerts
 metadata:
-  title: Prepare for Microsoft Purview Insider Risk Management
-  description: "Prepare for Microsoft Purview Insider Risk Management."
-  ms.date: 1/3/2025
+  title: Investigate insider risk alerts and related activity
+  description: "Investigate insider risk alerts and related activity."
+  ms.date: 04/15/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
   ms.service: purview
   hidden: false
-title: Prepare for Microsoft Purview Insider Risk Management
-summary: Discover strategies for planning and configuring Microsoft Purview Insider Risk Management to meet organizational needs and protect privacy.
+title: Investigate insider risk alerts and related activity
+summary: Investigate insider risk alerts and manage related cases in Microsoft Purview to assess user behavior, take appropriate action, and coordinate deeper reviews across teams.
 abstract: |
   After completing this module, you'll be able to:
-  - Collaborate with stakeholders to prepare for insider risk management.
-  - Understand what's needed to meet prerequisites for implementation.
-  - Configure settings to align with compliance and privacy needs.
-  - Explore how connecting tools and data sources enhances risk management.
+  - Understand how alerts are generated and prioritized in Insider Risk Management.
+  - Tune policies and thresholds to manage alert volume effectively.
+  - Use the Alerts dashboard and alert details to triage and respond to risky activity.
+  - Investigate behavior using tabs like All risk factors, Activity explorer, and User activity.
+  - Integrate with Microsoft Defender XDR for broader threat investigation.
+  - Create, manage, and resolve Insider Risk Management cases.
 prerequisites: |
-  - Understanding of insider risk concepts.
-  - Familiarity with organizational compliance and privacy practices.
+  - Familiarity with Microsoft Purview Insider Risk Management policies and indicators
+  - Basic understanding of Microsoft 365 compliance and security tools
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
-- auditor
 - administrator
 - risk-practitioner
 products:
@@ -35,13 +36,15 @@ subjects:
 - security
 units:
 - learn.wwl.purview-insider-risk-investigate-alerts.introduction
-- learn.wwl.purview-insider-risk-investigate-alerts.plan-insider-risk-management
-- learn.wwl.purview-insider-risk-investigate-alerts.insider-risk-management-prerequisites
-- learn.wwl.purview-insider-risk-investigate-alerts.configure-insider-risk-settings
-- learn.wwl.purview-insider-risk-investigate-alerts.insider-risk-management-integrations
+- learn.wwl.purview-insider-risk-investigate-alerts.understand-insider-risk-alerts
+- learn.wwl.purview-insider-risk-investigate-alerts.manage-alert-volume
+- learn.wwl.purview-insider-risk-investigate-alerts.investigate-triage-alerts
+- learn.wwl.purview-insider-risk-investigate-alerts.all-risk-factors-tab
+- learn.wwl.purview-insider-risk-investigate-alerts.activity-explorer-tab
+- learn.wwl.purview-insider-risk-investigate-alerts.user-activity-tab
+- learn.wwl.purview-insider-risk-investigate-alerts.investigate-alerts-defender
+- learn.wwl.purview-insider-risk-investigate-alerts.insider-risk-cases
 - learn.wwl.purview-insider-risk-investigate-alerts.knowledge-check
 - learn.wwl.purview-insider-risk-investigate-alerts.summary
-
-
 badge:
   uid: learn.wwl.purview-insider-risk-investigate-alerts.badge

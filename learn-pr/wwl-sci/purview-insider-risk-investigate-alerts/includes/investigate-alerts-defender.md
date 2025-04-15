@@ -4,7 +4,7 @@ Use this view to correlate insider risk alerts with data from other services lik
 
 ## Access insider risk alerts in Defender XDR
 
-To review alerts in the [Microsoft Defender portal](https://security.microsoft.com/):
+To review alerts in the [Microsoft Defender portal](https://security.microsoft.com/?azure-portal=true):
 
 1. Go to **Investigation & response** > **Incidents & alerts** > **Incidents**.
 1. Use the **Service source** filter to select **Microsoft Purview Insider Risk Management**
@@ -67,7 +67,7 @@ Before alerts appear in the Microsoft Defender portal:
 
 The setting **Share user risk details with other security solutions** must be enabled in the Microsoft Purview portal. To enable this setting:
 
-1. Go to the [Microsoft Purview portal](https://purview.microsoft.com/).
+1. Go to the [Microsoft Purview portal](https://purview.microsoft.com/?azure-portal=true).
 1. Select **Settings** > **Insider Risk Management** > **Data sharing**.
 1. Enable **Share user risk details with other security solutions**.
 

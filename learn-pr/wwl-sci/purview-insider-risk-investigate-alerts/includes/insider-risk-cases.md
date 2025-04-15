@@ -52,7 +52,7 @@ Selecting a case opens a detailed investigation view with multiple tabs:
 - **User activity**: Timeline of scored risk activity from the alert or broader user history
 - **Activity explorer (preview)**: Detailed timeline and metadata for each associated event
 
-   **User activity** shows the overall timeline of user risk behavior, while A**ctivity explorer** focuses on event-level details within the case scope.
+   **User activity** shows the overall timeline of user risk behavior, while **Activity explorer** focuses on event-level details within the case scope.
 
 - **Forensic evidence**: Screen captures from activity that triggered the alert
 - **Content explorer**: Copies of files and email messages associated with risk alerts
@@ -91,7 +91,7 @@ Trigger flows for common tasks such as:
 
 If Teams integration is enabled in Insider Risk Management settings, a team is created automatically when a case is opened. Teams are archived when a case is resolved. To enable Teams integration:
 
-1. Go to the [Microsoft Purview portal](https://purview.microsoft.com/).
+1. Go to the [Microsoft Purview portal](https://purview.microsoft.com/?azure-portal=true).
 1. Select **Settings** > **Insider Risk Management** > **Microsoft Teams**.
 1. Select the toggle to enable integration with Microsoft Teams.
 
