@@ -47,4 +47,4 @@ quiz:
     - content: To create a Windows Server Failover Cluster on the source and target.
       isCorrect: false
       explanation: Incorrect. This isn't required when using a distributed AG to migrate a standalone instance.
-
+
