@@ -6,13 +6,13 @@ Here you'll learn what your organization's audit log records, and how to access 
 
 ## What are log records?
 
-Your organization's log records actions taken by organization members. The log is available to organization owners, and records information about actions that affect the organization including:
+Your organization's log records actions taken by organization members. The log is available to organization owners, and records information about actions that affect the organization, including:
 
 - The repository in which the action was performed.
 - The user that performed the action.
 - The action that was performed.
 - Which country/region in which the action took place.
-- The date and time of the action.
+- The action date and time.
 
 You can access the audit log through GitHub.com, GitHub Enterprise Server, or GitHub AE to review actions from the past 90 days. However, interacting with the audit log using either the GraphQL API or the Rest API can allow easy retrieval of specific information types, with other limitations.
 
