@@ -32,6 +32,7 @@ According to the [2024 State of the Nonprofit Sector Report](https://www.forvism
 
 >[!TIP]
 >Take a moment to identify the goals and challenges specific to _your_ organization. To start, consider what legacy or in-house apps AI might help optimize.
+> 
 >![Screenshot of people working and talking around a table.](../media/2-reflection.jpg)
 
 Next, let’s explore common scenarios in which AI can help you attain these goals.
