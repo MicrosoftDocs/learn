@@ -43,7 +43,6 @@ Some features are supported in Azure SQL Database that aren't available in other
 | [**Automatic tuning (indexes)**](/azure/azure-sql/database/automatic-tuning-overview) | This built-in feature automatically identifies and creates indexes that can improve the performance of your workload. It also verifies that query performance has improved and removes unused or duplicate indexes. |
 | [**Elastic query**](/azure/azure-sql/database/elastic-query-overview) | Allows you to run T-SQL queries that bridge multiple databases in SQL Database. This feature is useful for applications using three- and four-part names that can't be changed. |
 | [**Elastic jobs**](/azure/azure-sql/database/job-automation-overview) | The elastic job feature is the SQL Server Agent replacement for Azure SQL Database. To some extent, elastic job is equivalent to the Multi Server Administration feature available on SQL Server instance. |
-| [**SQL Data Sync**](/azure/azure-sql/database/sql-data-sync-data-sql-server-sql-database) | It allows you to incrementally synchronize data across multiple databases running on SQL Database or SQL Server. |
 | [**Query Performance Insights (QPI)**](/azure/azure-sql/database/query-performance-insight-use) | This tool helps find the queries to optimize to improve overall workload performance and efficiently use the resource that you're paying for. |
 
 > [!IMPORTANT]
@@ -58,7 +57,6 @@ There are two modes of migration to Azure SQL Database: **Online** and **Offline
 | [Azure Database Migration Service](/azure/dms/dms-overview) | **Offline** |
 | [Transactional replication](/sql/relational-databases/replication/transactional/transactional-replication) | **Online** |
 | [Azure Migrate](/azure/migrate/migrate-services-overview) | **Offline** |
-| [SQL Data Sync](/azure/azure-sql/database/sql-data-sync-data-sql-server-sql-database) | **\* Offline** |
 | [Import Export Wizard/BACPAC](/azure/azure-sql/database/database-export) | **Offline** |
 | [Bulk copy (bcp utility)](/sql/relational-databases/import-export/import-and-export-bulk-data-by-using-the-bcp-utility-sql-server) | **Offline** |
 | [Azure Data Factory](/azure/data-factory/quickstart-get-started) | **Offline** |
