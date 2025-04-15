@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-how-github-authentication-works.md)]
+  [!include[](includes/4-how-github-authentication-works.md)]
