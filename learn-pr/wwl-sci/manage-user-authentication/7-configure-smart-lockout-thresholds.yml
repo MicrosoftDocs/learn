@@ -2,12 +2,16 @@
 uid: learn.wwl.manage-user-authentication.configure-smart-lockout-thresholds
 title: Configure smart lockout thresholds
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure smart lockout thresholds
   description: "Configure smart lockout thresholds"
-  ms.date: 10/25/2023
+  ms.date: 04/15/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
-  [!include[](includes/7-configure-smart-lockout-thresholds.md)]
+  [!include[](includes/7-configure-smart-lockout-thresholds.md)]

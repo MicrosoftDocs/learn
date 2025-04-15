@@ -1,7 +1,6 @@
 As part of the sign-in experience for accounts in Microsoft Entra ID, there are several ways that users can authenticate themselves. Historically, a username and password is the most common way a user would provide credentials. With modern authentication and security features in Microsoft Entra ID, that basic password should be supplemented or replaced with more secure authentication methods.
 
-:::image type="content" source="../media/authentication-methods-4b9b6734.png" alt-text="Screenshot of the strengths and preferred authentication methods in Microsoft Entra ID.":::
-
+:::image type="content" source="../media/authentication-methods.png" alt-text="Screenshot of the strengths and preferred authentication methods in Microsoft Entra ID.":::
 
 Passwordless authentication methods such as Windows Hello, FIDO2 security keys, and the Microsoft Authenticator app provide the most secure sign-in events.
 
@@ -15,7 +14,7 @@ When you deploy features like multifactor authentication in your organization, r
 
 The following table outlines the security considerations for the available authentication methods. Availability is an indication of the user being able to use the authentication method, not of the service availability in Microsoft Entra ID:
 
-:::image type="content" source="../media/authentication-method-strength-security-c8fdb55b.png" alt-text="Diagram of an X Y grid that shows inconvenient to convenient side to side and low security to high security top to bottom.":::
+:::image type="content" source="../media/authentication-method-strength-security.png" alt-text="Diagram of an X Y grid that shows inconvenient to convenient side to side and low security to high security top to bottom.":::
 
 
 | **Authentication method**      | **Security** | **Usability** | **Availability** |
@@ -56,40 +55,39 @@ All of these authentication methods can be configured in the Azure portal and in
 
 The following verification methods can be used in certain scenarios:
 
- -  App passwords - used for old applications that don't support modern authentication and can be configured for per-user multifactor authentication.
- -  Security questions - only used for SSPR.
- -  Email address - only used for SSPR.
+ - App passwords - used for old applications that don't support modern authentication and can be configured for per-user multifactor authentication.
+ - Security questions - only used for SSPR.
+ - Email address - only used for SSPR.
 
 ## What is FIDO2
 
 The FIDO (Fast IDentity Online) Alliance helps to promote open authentication specifications and reduce the use of passwords as a form of authentication. FIDO2 is the latest specification that incorporates the web authentication (WebAuthn) specification. Users can register and then select a FIDO2 security key at the sign-in interface as their main means of authentication. These FIDO2 security keys are typically USB devices, but could also use Bluetooth or NFC (near field communication). With a hardware device that handles the authentication, the security of an account is increased as there's no password that could be exposed or guessed. FIDO2 security keys can be used to sign into their Microsoft Entra ID or hybrid Microsoft Entra joined Windows 10 or 11 devices and get single-sign on to their cloud and on-premises resources. Users can also sign into supported browsers. FIDO2 security keys are a great option for enterprises who are very security sensitive or have scenarios or employees who aren't willing or able to use their phone as a second factor.
 
- -  FIDO2 security keys are an unphishable specification-based passwordless authentication method that can come in any form factor
- -  Fast Identity Online (FIDO) is an open specification for passwordless authentication
- -  FIDO allows users and organizations to leverage the specification to sign into their resources without a username or password using an external security key or a platform key built into a device
+ - FIDO2 security keys are an unphishable specification-based passwordless authentication method that can come in any form factor
+ - Fast Identity Online (FIDO) is an open specification for passwordless authentication
+ - FIDO allows users and organizations to leverage the specification to sign into their resources without a username or password using an external security key or a platform key built into a device
 
 ## Enable FIDO2 security key method
 
-1.  Sign into the Microsoft Entra admin center.
-2.  Browse to **Protection** \- **Authentication methods** \- **Authentication method policy**.
-3.  Under the method **FIDO2 Security Key**, choose the following options:
+1. Sign into the Microsoft Entra admin center.
+2. Browse to **Protection** - **Authentication methods** - **Authentication method policy**.
+3. Under the method **FIDO2 Security Key**, choose the following options:
     
-    
-     -  **Enable** \- Yes or No
-     -  **Target** \- All users or Select users
-4.  **Save** the configuration.
+   - **Enable** - Yes or No
+   - **Target** - All users or Select users
+4. **Save** the configuration.
 
 ### Manage user registration and FIDO2 security keys
 
-1.  Browse to **https://myprofile.microsoft.com**.
-2.  Sign in if you haven't already.
-3.  Select **Security Info**.
-4.  If the user already has at least one multifactor authentication method registered, they can immediately register a FIDO2 security key.
-5.  If they don't have at least one multifactor Authentication method registered, they must add one.
-6.  Add a FIDO2 security key by selecting **Add method** and choosing **Security key**.
-7.  Choose **USB device** or **NFC device**.
-8.  Have your key ready and choose **Next**.
-9.  A box will appear and ask the user to create/enter a PIN for your security key and then perform the required gesture for the key, either biometric or touch.
+1. Browse to **https://myprofile.microsoft.com**.
+2. Sign in if you haven't already.
+3. Select **Security Info**.
+4. If the user already has at least one multifactor authentication method registered, they can immediately register a FIDO2 security key.
+5. If they don't have at least one multifactor Authentication method registered, they must add one.
+6. Add a FIDO2 security key by selecting **Add method** and choosing **Security key**.
+7. Choose **USB device** or **NFC device**.
+8. Have your key ready and choose **Next**.
+9. A box will appear and ask the user to create/enter a PIN for your security key and then perform the required gesture for the key, either biometric or touch.
 10. The user will be returned to the combined registration experience and asked to provide a meaningful name for the key so the user can identify which one if they have multiple. Select **Next**.
 11. Select **Done** to complete the process.
 
@@ -97,14 +95,13 @@ The FIDO (Fast IDentity Online) Alliance helps to promote open authentication sp
 
 In the example below a user has already provisioned their FIDO2 security key. The user can choose to sign in on the web with their FIDO2 security key inside of a supported browser on Windows 10 version 1903 or higher or Windows 11.
 
-:::image type="content" source="../media/fast-identity-windows-edge-sign-in-6c0f9eb8.png" alt-text="Screenshot of the security key sign-in for Microsoft Edge. Great multifactor verification process.":::
-
+:::image type="content" source="../media/fast-identity-windows-edge-sign-in.png" alt-text="Screenshot of the security key sign-in for Microsoft Edge. Great multifactor verification process.":::
 
 ## Prerequisites for cloud-only deployment
 
- -  Windows 10, version 1511 or later or Windows 11
- -  Microsoft Azure account
- -  Microsoft Entra ID
- -  Multifactor authentication
- -  Modern Management - *optional,* Microsoft Intune, or supported third-party mobile-device management (MDM)
- -  Microsoft Entra ID Premium subscription - *optional*, needed for automatic MDM enrollment when the device joins Microsoft Entra ID
+ - Windows 10, version 1511 or later or Windows 11
+ - Microsoft Azure account
+ - Microsoft Entra ID
+ - Multifactor authentication
+ - Modern Management - *optional,* Microsoft Intune, or supported third-party mobile-device management (MDM)
+ - Microsoft Entra ID Premium subscription - *optional*, needed for automatic MDM enrollment when the device joins Microsoft Entra ID
