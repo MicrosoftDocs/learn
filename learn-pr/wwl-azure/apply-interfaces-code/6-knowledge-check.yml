@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.apply-interfaces-code.knowledge-check
-title: Module assessment
+title: Knowledge check
 metadata:
-  title: Module assessment
+  title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/17/2025
+  ms.date: 04/15/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -16,15 +16,15 @@ quiz:
   questions:
   - content: "What is a key benefit of using default implementations in interfaces?"
     choices:
-    - content: "They allow for code reuse across different implementations."
-      isCorrect: true
-      explanation: "Correct. Default implementations enable sharing common functions across different classes without copying code, promoting code reuse."
     - content: "They automatically apply to all classes without any need for implementation."
       isCorrect: false
       explanation: "Incorrect. Classes must still implement the interface and can choose to use or override the default methods."
     - content: "They prevent any changes to the interface once defined."
       isCorrect: false
       explanation: "Incorrect. Default implementations actually allow adding new methods to interfaces without breaking existing implementations."
+    - content: "They allow for code reuse across different implementations."
+      isCorrect: true
+      explanation: "Correct. Default implementations enable sharing common functions across different classes without copying code, promoting code reuse."
   - content: "What is the purpose of the IDisposable interface in C#?"
     choices:
     - content: "To release unmanaged resources."
@@ -38,12 +38,12 @@ quiz:
       explanation: "Incorrect. The IEnumerable interface is used for iterating over collections, not releasing unmanaged resources."
   - content: "What is the main advantage of using system-defined interfaces like IEnumerable and IDisposable in C#?"
     choices:
+    - content: "They prevent the need for any implementation in classes."
+      isCorrect: false
+      explanation: "Incorrect. Classes implementing system-defined interfaces must still provide implementations for the interface methods."
     - content: "They provide standard methods that ensure consistent behavior across different types."
       isCorrect: true
       explanation: "Correct. System-defined interfaces provide standard methods that can be implemented across different types, ensuring uniformity and predictability in behavior."
     - content: "They allow for the automatic generation of code."
       isCorrect: false
       explanation: "Incorrect. System-defined interfaces do not automatically generate code; they provide standard methods for consistent behavior."
-    - content: "They prevent the need for any implementation in classes."
-      isCorrect: false
-      explanation: "Incorrect. Classes implementing system-defined interfaces must still provide implementations for the interface methods."
