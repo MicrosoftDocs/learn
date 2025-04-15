@@ -223,9 +223,9 @@ Artifact attestations ae used to establish provenance for builds.  By establishi
 
 ##### Generating an attestation for build provenance of binaries
 
-#### Generating an attestation for build provenance of container images
+##### Generating an attestation for build provenance of container images
 
-### SBOM Attestations
-#### Generating an SBOM attestation for binaries
+#### SBOM Attestations
+##### Generating an SBOM attestation for binaries
 
-#### Generating an SBOM attestation for container images
+##### Generating an SBOM attestation for container images
