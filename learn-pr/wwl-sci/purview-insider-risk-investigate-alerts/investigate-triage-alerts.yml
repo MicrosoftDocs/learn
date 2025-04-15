@@ -10,6 +10,6 @@ metadata:
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 6
+durationInMinutes: 10
 content: |
   [!include[](includes/investigate-triage-alerts.md)]
