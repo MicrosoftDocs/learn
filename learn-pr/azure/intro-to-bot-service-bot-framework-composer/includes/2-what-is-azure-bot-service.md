@@ -62,9 +62,9 @@ Composer offers a visual design experience that makes it easy to model sophistic
 
 You can use other bot-building tools in Azure to create bots. Two of these bot-building tools are Power Virtual Agents and QnA Maker:
 
-- **Power Virtual Agents** is a web app you can use to create chat bots. Using its guided, no-code graphical interface eliminates the need for code-based or developer expertise. The chat bots you create can answer questions posed by your customers, other employees, or visitors to your website or service. Power Virtual Agents also provides full testing and publishing capabilities for your bot.
+- **Power Virtual Agents**: A web app you can use to create chat bots. Using its guided, no-code graphical interface eliminates the need for code-based or developer expertise. The chat bots you create can answer questions posed by your customers, other employees, or visitors to your website or service. Power Virtual Agents also provides full testing and publishing capabilities for your bot.
 
-- **QnA Maker** is an Azure-based Natural Language Processing service you can use to create a natural conversational layer over your data. QnA Maker is used to find the most appropriate answer for any input from your custom knowledge base of information.
+- **QnA Maker**: An Azure-based Natural Language Processing service you can use to create a natural conversational layer over your data. QnA Maker is used to find the most appropriate answer for any input from your custom knowledge base of information.
 
     > [!NOTE]
     > This course doesn't cover the Web App Bot and Bot Channels. Registration of these resources are deprecated as of 9/1/2021, but existing resources will continue to work beyond that date. You should use the Azure Bot when creating new resources.
