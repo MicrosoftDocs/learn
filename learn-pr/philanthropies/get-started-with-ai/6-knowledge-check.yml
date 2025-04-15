@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.get-started-with-ai.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Answer the following questions to see what you learned.
+  ms.date: 04/08/2025
+  author: CourtneyHMicrosoft
+  ms.author: cohodge
+  ms.topic: unit
+durationInMinutes: 9
+quiz:
+  title: Knowledge check
+  questions:
+  - content: Which term describes a type of AI where machines learn from data to make decisions?
+    choices:
+    - content: Deep Learning
+      isCorrect: false
+      explanation: Incorrect. Deep Learning is a kind of machine learning that uses layers of networks to understand difficult problems.
+    - content: Neural Networks
+      isCorrect: false
+      explanation: Incorrect. Neural networks are computer systems that work to find patterns and solve problems.
+    - content: Machine Learning (ML)
+      isCorrect: true
+      explanation: Correct.
+    - content: Generative AI
+      isCorrect: false
+      explanation: Incorrect. Generative AI is AI that can create new things like stories, pictures, or music by learning from examples.
+
+  - content: What are the four ingredients of writing a good prompt?
+    choices:
+    - content: Subject, source, context, and expectations
+      isCorrect: false
+      explanation: Incorrect. One of these is incorrect.
+    - content: Goal, source, context, and expectations
+      isCorrect: true
+      explanation: Correct!
+    - content: Goal, theme, context, and expectations
+      isCorrect: false
+      explanation: Incorrect. One of these is incorrect.
+    - content: Goal, theme, scene, and expectations
+      isCorrect: false
+      explanation: Incorrect. Two of these is incorrect.
+
+  - content: Which of the following is helpful in writing a prompt to create images?
+    choices:
+    - content: Detailed subject
+      isCorrect: false
+      explanation: Yes, but there are more.
+    - content: Scene
+      isCorrect: true
+      explanation: Yes, but there are more.
+    - content: Style
+      isCorrect: false
+      explanation: Yes, but there are more.
+    - content: All the above
+      isCorrect: false
+      explanation: Correct.

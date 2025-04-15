@@ -1,12 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-monitor-integration-of-enterprise-apps-for-sso
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement and monitor the integration of enterprise apps for SSO
   description: "Deploying and monitoring enterprise applications to Azure solutions can ensure security. Explore how to deploy on-premises and cloud based apps to users."
-  ms.date: 12/16/2024
+  ms.date: 04/14/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: module
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: azure
