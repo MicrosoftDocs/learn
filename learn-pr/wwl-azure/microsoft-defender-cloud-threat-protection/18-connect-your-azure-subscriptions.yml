@@ -6,12 +6,12 @@ metadata:
   prefetch-feature-rollout: true
   title: Connect your Azure subscriptions
   description: "Connect your Azure subscriptions"
-  ms.date: 04/03/2025
+  ms.date: 04/15/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
   ms.custom:
   - references_regions
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/18-connect-your-azure-subscriptions.md)]
