@@ -6,7 +6,7 @@ metadata:
   description: "Learn to evaluate migration scenarios to Azure SQL Managed Instance"
   ms.date: 04/14/2025
   author: JulianePadrao
-  ms.author: JulianePadrao
+  ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 8

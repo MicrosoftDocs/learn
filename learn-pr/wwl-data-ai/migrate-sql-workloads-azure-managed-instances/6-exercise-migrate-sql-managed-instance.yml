@@ -6,7 +6,7 @@ metadata:
   description: "Learn how to perform an online migration of a SQL Server database to Azure SQL Managed Instance using Log Replay Service (LRS)."
   ms.date: 04/14/2025
   author: JulianePadrao
-  ms.author: JulianePadrao
+  ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 15
