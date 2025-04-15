@@ -28,7 +28,6 @@ subjects:
 modules:
 - learn.azure-sql-intro
 - learn.azure-sql-deploy-configure
-- learn.azure-sql-high-availability
 - learn.azure-sql-case-studies
 trophy:
   uid: learn.azure-sql-fundamentals.trophy
