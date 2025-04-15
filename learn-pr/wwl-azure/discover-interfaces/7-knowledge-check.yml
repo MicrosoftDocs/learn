@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.discover-interfaces.knowledge-check
-title: Module assessment
+title: Knowledge check
 metadata:
-  title: Module assessment
+  title: Knowledge check
   description: "Knowledge check."
-  ms.date: 02/17/2025
+  ms.date: 04/15/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -38,15 +38,15 @@ quiz:
       explanation: "Incorrect. Interface members should be implemented as nonstatic."
   - content: "In a scenario where you need to implement an interface in a class, what syntax is used?"
     choices:
-    - content: "class ClassName : InterfaceName"
-      isCorrect: true
-      explanation: "Correct. The correct syntax to implement an interface in a class is 'class ClassName : InterfaceName'."
-    - content: "class ClassName implements InterfaceName"
+    - content: "`class ClassName implements InterfaceName`"
       isCorrect: false
       explanation: "Incorrect. The 'implements' keyword isn't used in C#; the correct keyword is ':'."
-    - content: "class ClassName extends InterfaceName"
+    - content: "`class ClassName extends InterfaceName`"
       isCorrect: false
       explanation: "Incorrect. The 'extends' keyword isn't used in C#; the correct keyword is ':'."
+    - content: "`class ClassName : InterfaceName`"
+      isCorrect: true
+      explanation: "Correct. The correct syntax to implement an interface in a class is 'class ClassName : InterfaceName'."
   - content: "What is a key benefit of using interfaces in C# programming?"
     choices:
     - content: "They allow for better code organization and flexibility."
