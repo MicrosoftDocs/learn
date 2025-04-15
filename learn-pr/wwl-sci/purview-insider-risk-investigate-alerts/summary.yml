@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.purview-insider-risk-investigate-alerts.introduction
-title: Introduction
+uid: learn.wwl.purview-insider-risk-investigate-alerts.summary
+title: Summary
 metadata:
-  title: Introduction
-  description: "Introduction."
+  title: Summary
+  description: "Summary."
   ms.date: 04/15/2025
   author: wwlpublish
   ms.author: riswinto
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/introduction.md)]
+  [!include[](includes/summary.md)]
