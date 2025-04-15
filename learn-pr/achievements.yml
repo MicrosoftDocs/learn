@@ -5625,6 +5625,16 @@ achievements:
   title: Guided project langstons ant
   summary: This module will guide you through the steps required to develop your own Langston's Ant project. Your code will use interfaces to represent the functions the ants can perform.
   iconUrl: /training/achievements/guided-project-langstons-ant.svg
+- uid: learn.permissions-management.intro-to-entra-permissions-management.badge
+  type: badge
+  title: Introduction to Microsoft Entra Permissions Management 
+  summary: Microsoft Entra Permissions Management gives security operation administrators insight into over-privileged workload and user identities, actions, and resources across multicloud infrastructures.
+  iconUrl: /training/achievements/1-intro-to-entra-permissions-management.svg
+- uid: learn.permissions-management.explore-features-of-permissions-management.badge
+  type: badge
+  title: Explore the many features of Microsoft Entra Permissions Management
+  summary: While diving deeper into the features of Microsoft Entra Permissions Management, we use the framework of discover, remediate, monitor as a guide to help walkthrough how the Permissions Management features set can benefit your organization.
+  iconUrl: /training/achievements/2-explore-features-of-permissions-management.svg
 - uid: learn.cosmos-db-java-app.badge
   type: badge
   title: Build a Java app with cloud-scale NoSQL Cosmos DB
@@ -5635,3 +5645,18 @@ achievements:
   title: Deploy highly available solutions by using Azure SQL
   summary: Whatever SLA, RTO, and RPO your business requires, Azure SQL has the options and built-in capabilities to meet that availability. In this module, you'll learn how to translate your knowledge of backup and restore, failover cluster instances, and Always On availability groups to the options for business continuity in Azure SQL. You'll also peek under the hood at the architectures and how they affect availability.
   iconUrl: /training/achievements/azure-sql-high-availability.svg
+- uid: learn.azure-sql-performance.badge
+  type: badge
+  title: Deliver consistent performance with Azure SQL
+  summary: Azure SQL has the capabilities and tools to allow you to deliver consistent performance for your application. In this module, you will learn key aspects of configuration, monitoring, and intelligent performance for Azure SQL.
+  iconUrl: /training/achievements/azure-sql-performance.svg
+- uid: learn.azure-sql-secure-data.badge
+  type: badge
+  title: Secure your data with Azure SQL
+  summary: Ensuring the security and compliance of data is always a top priority. In this module, you learn how to use Azure SQL to secure your data, configure logins and users, use tools and techniques for monitoring security, ensure that your data meets industry and regulatory compliance standards, and take advantage of the extra benefits and intelligence that Azure provides. We also cover some of the networking considerations for securing SQL.
+  iconUrl: /training/achievements/azure-sql-secure-data.svg
+- uid: learn.wwl.custom-model-ai-vision-image-classification.badge
+  type: badge
+  title: Image classification with custom Azure AI Vision models
+  summary: Classify images by training a custom model with Azure AI Vision.
+  iconUrl: /learn/achievements/generic-badge.svg

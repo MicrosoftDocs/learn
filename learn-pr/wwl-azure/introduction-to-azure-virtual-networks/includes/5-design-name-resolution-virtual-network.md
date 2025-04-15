@@ -1,33 +1,24 @@
 
 
-DNS is split into two areas: Public, and Private DNS for resources accessible from your own internal networks.
+Azure provides both public and private DNS services.  
+
+:::image type="content" source="../media/create-private-dns-zone-48970f32.png" alt-text="Screenshot of the portal DNS selection page.":::
+
+
+
 
 ## Public DNS services
 
-Public DNS services resolve names and IP addresses for resources and services accessible over the internet such as web servers. Azure DNS is a hosting service for DNS domain that provides name resolution by using Microsoft Azure infrastructure. DNS domains in Azure DNS are hosted on Azure's global network of DNS name servers. Azure DNS uses anycast networking. Each DNS query is directed to the closest available DNS server.
+[Azure public DNS](/azure/dns/public-dns-overview) is a hosting service for DNS domains that provides name resolution by using Microsoft Azure infrastructure. DNS domains in Azure DNS are hosted on Azure's global network of DNS name servers. Each DNS query is directed to the closest available DNS server. Azure DNS provides a reliable, secure DNS service to manage and resolve domain names in a virtual network without needing to add a custom DNS solution.
 
-In Azure DNS, you can create address records manually within relevant zones. The records most frequently used are:
+### Configuration considerations
 
-- Host records: A/AAAA (IPv4/IPv6)
-- Alias records: CNAME
-
-Azure DNS provides a reliable, secure DNS service to manage and resolve domain names in a virtual network without needing to add a custom DNS solution.
-
-A DNS zone hosts the DNS records for a domain. So, to start hosting your domain in Azure DNS, you need to create a DNS zone for that domain name. Each DNS record for your domain is then created inside this DNS zone.
-
-## Considerations
-
-- The name of the zone must be unique within the resource group, and the zone must not exist already.
+- The name of the DNS zone must be unique within the resource group, and the zone must not exist already.
 - The same zone name can be reused in a different resource group or a different Azure subscription.
 - Where multiple zones share the same name, each instance is assigned different name server addresses.
-- Root/Parent domain is registered at the registrar and pointed to Azure NS.
-- Child domains are registered in AzureDNS directly.
+- The root/parent zone is registered at the registrar and pointed to Azure NS name servers.
 
-> [!NOTE]
->
-> You do not have to own a domain name to create a DNS zone with that domain name in Azure DNS. However, you do need to own the domain to configure the domain.
-
-## Delegate DNS Domains
+### Delegate DNS Domains
 
 Azure DNS allows you to host a DNS zone and manage the DNS records for a domain in Azure. In order for DNS queries for a domain to reach Azure DNS, the domain has to be delegated to Azure DNS from the parent domain. Keep in mind Azure DNS isn't the domain registrar.
 
@@ -39,7 +30,7 @@ Once the DNS zone is created, and you have the name servers, you need to update 
 >
 > When delegating a domain to Azure DNS, you must use the name server names provided by Azure DNS. You should always use all four name server names, regardless of the name of your domain.
 
-## Child Domains
+### Child Domains
 
 If you want to set up a separate child zone, you can delegate a subdomain in Azure DNS. For example, after configuring contoso.com in Azure DNS, you could configure a separate child zone for partners.contoso.com.
 
@@ -47,103 +38,33 @@ Setting up a subdomain follows the same process as typical delegation. The only 
 
 > [!NOTE]
 >
-> The parent and child zones can be in the same or different resource group. Notice that the record set name in the parent zone matches the child zone name, in this case *partners*.
-
-It's important to understand the difference between DNS record sets and individual DNS records. A record set is a collection of records in a zone that have the same name and are the same type.
-
-:::image type="content" source="../media/dns-record-set-1-1f2861b3.png" alt-text="Screenshot of the Add a record set page.":::
-
-A record set can't contain two identical records. Empty record sets (with zero records) can be created, but don't appear on the Azure DNS name servers. Record sets of type CNAME can contain one record at most.
-
-The **Add record set** page changes depending on the type of record you select. For an A record, you need the TTL (Time to Live) and IP address. The time to live, or TTL, specifies how long each record is cached.
-
-:::image type="content" source="../media/dns-record-set.png" alt-text="Screenshot of the Add a record page.":::
+> The parent and child zones can be in the same or different resource group. 
 
 ## Private DNS services
 
-Private DNS services resolve names and IP addresses for resources and services
+[Private DNS services](/azure/dns/private-dns-overview) provides a reliable and secure DNS service for your virtual networks. Azure Private DNS manages and resolves domain names in the virtual network without the need to configure a custom DNS solution. By using private DNS zones, you can use your own custom domain name instead of the Azure-provided names during deployment. Using a custom domain name helps you tailor your virtual network architecture to best suit your organization's needs. It provides a naming resolution for virtual machines (VMs) within a virtual network and connected virtual networks.
 
-When resources deployed in virtual networks need to resolve domain names to internal IP addresses, they can use one the three methods:
+### Considerations
 
-- Azure DNS Private Zones
-- Azure-provided name resolution
-- Name resolution that uses your own DNS server
-
-The type of name resolution you use depends on how your resources need to communicate with each other.
-
-Your name resolution needs might go beyond the features provided by Azure. For example, you might need to use Microsoft Windows Server Active Directory domains to resolve DNS names between virtual networks. To cover these scenarios, Azure provides the ability for you to use your own DNS servers.
-
-DNS servers within a virtual network can forward DNS queries to the recursive resolvers in Azure. For example, a domain controller (DC) running in Azure can respond to DNS queries for its domains and forward all other queries to Azure. Forwarding queries allows VMs to see both your on-premises resources (via the DC) and Azure-provided host names (via the forwarder). Access to the recursive resolvers in Azure is provided via the virtual IP 168.63.129.16.
-
-DNS forwarding also enables DNS resolution between virtual networks and allows your on-premises machines to resolve Azure-provided host names. In order to resolve a VM's host name, the DNS server VM must reside in the same virtual network and be configured to forward host name queries to Azure. Because the DNS suffix is different in each virtual network, you can use conditional forwarding rules to send DNS queries to the correct virtual network for resolution.
-
-### Azure provided DNS
-
-Azure provides its own free default internal DNS. Azure provided name resolution provides only basic authoritative DNS capabilities. If you use this option, the DNS zone names and records are automatically managed by Azure. You can't control the DNS zone names or the life cycle of DNS records.
-
-Internal DNS defines a namespace as follows: .internal.cloudapp.net.
-
-Any VM created in the VNet is registered in the internal DNS zone and gets a DNS domain name like myVM.internal.cloudapp.net. It's important to recognize that it's the Azure Resource name that is registered, not the name of the guest OS on the VM.
-
-**Limitations of Internal DNS**
-
-- Can't resolve across different VNets.
-- Registers resource names, not guest OS names.
-- Doesn't allow manual record creation.
+- Removes the need for creating custom DNS solutions. 
+- Hosts your custom DNS records, including hostname records. 
+- Provides hostname resolution between virtual networks.
+- Private DNS zones can be shared between virtual networks. This capability simplifies cross-network and service-discovery scenarios, such as virtual network peering.
+- The Azure DNS private zones feature is available in all Azure regions in the Azure public cloud.
 
 ### Azure Private DNS Zones
 
-Private DNS zones in Azure are available to internal resources only. They're global in scope, so you can access them from any region, any subscription, any VNet, and any tenant. If you have permission to read the zone, you can use it for name resolution. Private DNS zones are highly resilient, being replicated to regions all throughout the world. They aren't available to resources on the internet.
+Private DNS zones in Azure are available for internal resources only. They're global in scope, so you can access them from any region, any subscription, any VNet, and any tenant. If you have permission to read the zone, you can use it for name resolution. Private DNS zones are highly resilient, being replicated to regions all throughout the world. They aren't available to resources on the internet.
 
-For scenarios which require more flexibility than Internal DNS allows, you can create your own private DNS zones. These zones enable you to:
+For scenarios which require more flexibility than internal DNS allows, you can create your own private DNS zones. These zones enable you to:
 
 - Configure a specific DNS name for a zone.
 - Create records manually when necessary.
 - Resolve names and IP addresses across different zones.
 - Resolve names and IP addresses across different VNets.
 
-### Create a private DNS zone by using the portal
+> [!TIP]
+> Learn more about Azure DNS in the [Host your domain on Azure DNS](/training/modules/host-domain-azure-dns/) module. 
 
-You can create a private DNS zone using the Azure portal, Azure PowerShell, or Azure CLI.
-:::image type="content" source="../media/search-private-dns.png" alt-text="Screenshot of private DNS zone search.":::
 
-When the new DNS zone is deployed, you can manually create resource records, or use autoregistration. Autoregistration creates resource records based on the Azure resource name.
-
-Private DNS zones support the full range of records including pointers, MX, SOA, service, and text records.
-
-### Link VNets to private DNS zones
-
-In Azure, a VNet represents a group of one or more subnets, as defined by a CIDR range. Resources such as VMs are added to subnets.
-
-At the VNet level, default DNS configuration is part of the DHCP assignments made by Azure, specifying the special address 168.63.129.16 to use Azure DNS services.
-
-If necessary, you can override the default configuration by configuring an alternate DNS server at the VM NIC.
-
-:::image type="content" source="../media/dns-config-4456c8a1.png" alt-text="Screenshot of the DNS default configuration.":::
-
-Two ways to link VNets to a private zone:
-
-- **Registration:** Each VNet can link to one private DNS zone for registration. However, up to 100 VNets can link to the same private DNS zone for registration.
-- **Resolution:** There may be many other private DNS zones for different namespaces. You can link a VNet to each of those zones for name resolution. Each VNet can link to up to 1000 private DNS Zones for name resolution.
-
-:::image type="content" source="../media/dns-zones-d964f066.png" alt-text="Screenshot of the private DNS resolution zones.":::
-
-### Integrating on-premises DNS with Azure VNets
-
-If you have an external DNS server, for example an on-premises server, you can use custom DNS configuration on your VNet to integrate the two.
-
-Your external DNS can run on any DNS server: BIND on UNIX, Active Directory Domain Services DNS, and so on. If you want to use an external DNS server and not the default Azure DNS service, you must configure the desired DNS servers.
-
-Organizations often use an internal Azure private DNS zone for auto registration, and then use a custom configuration to forward queries external zones from an external DNS server.
-
-Forwarding takes two forms:
-
-- Forwarding - specifies another DNS server (SOA for a zone) to resolve the query if the initial server can't.
-- Conditional forwarding - specifies a DNS server for a named zone, so that all queries for that zone are routed to the specified DNS server.
-
-> [!NOTE]
-> If the DNS server is outside Azure, it doesn't have access to Azure DNS on 168.63.129.16. In this scenario, setup a DNS resolver inside your VNet, forward queries for to it, and then have it forward queries to 168.63.129.16 (Azure DNS). Essentially, you're using forwarding because 168.63.129.16 is not routable, and therefore not accessible to external clients.
-
-:::image type="content" source="../media/external-dns-fwd-7c81c29f.png" alt-text="Diagram of how conditional forwarding works.":::
-
-Choose the best response for question.
+Choose the best response for each question.

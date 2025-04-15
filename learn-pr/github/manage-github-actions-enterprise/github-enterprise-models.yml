@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.manage-github-actions-enterprise.github-enterprise-models
+title: Understanding GitHub enterprise models
+metadata:
+  title: Understandig GitHub enterprise models
+  description: Learn the key differences between GitHub Enterprise Cloud (GHEC) and GitHub Enterprise Server (GHES), including how user accounts are managed, data residency options, and security features.
+  ms.date: 04/10/2025
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+  ms.custom: references_regions
+durationInMinutes: 8
+content: |
+  [!include[](includes/github-enterprise-models.md)]

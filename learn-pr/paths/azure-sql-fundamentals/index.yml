@@ -28,8 +28,6 @@ subjects:
 modules:
 - learn.azure-sql-intro
 - learn.azure-sql-deploy-configure
-- learn.azure-sql-secure-data
-- learn.azure-sql-performance
 - learn.azure-sql-case-studies
 trophy:
   uid: learn.azure-sql-fundamentals.trophy

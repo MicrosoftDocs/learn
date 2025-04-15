@@ -1,159 +1,40 @@
 
 
-Application Gateway has a series of components that combine to route requests to a pool of web servers and to check the health of these web servers.
+This diagram provides more detail on how the Azure Application Gateway components work together.
 
-:::image type="content" source="../media/app-gateway-config-f068f2b5.png" alt-text="Diagram showing how Azure Application Gateway routes requests to a pool of web servers.":::
+:::image type="content" source="../media/application-gateway-components.png" alt-text="Diagram showing how Azure Application Gateway routes requests to a pool of web servers.":::
 
+This video uses the digram to explain how the gateway works. 
 
-### Frontend configuration
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=cda9bcad-587b-4182-b8eb-3c1d66111dda]
 
-You can configure the application gateway to have a public IP address, a private IP address, or both. A public IP address is required when you host a back end that clients must access over the Internet via an Internet-facing virtual IP.
 
-### Backend configuration
+## Routing configuration
 
-The backend pool is used to route requests to the backend servers that serve the request. You can create an empty backend pool with your application gateway and then add backend targets to the backend pool. Targets can include NICs, public and private IP addresses, and virtual machine scale sets. 
+One of the most important gateway configuration settings is the routing rules. The Azure Application Gateway has two primary methods of routing client requests: path-based  and multiple sites.
 
-## Configure health probes
+### Path-based routing
 
-Azure Application Gateway by default monitors the health of all resources in its back-end pool and automatically removes any resource considered unhealthy from the pool. Application Gateway continues to monitor the unhealthy instances and adds them back to the healthy back-end pool once they become available and respond to health probes. By default, Application gateway sends the health probes with the same port that is defined in the back-end HTTP settings. A custom probe port can be configured using a custom health probe.
+[Path-based routing](/azure/application-gateway/url-route-overview) sends requests with different URL paths to different pools of back-end servers. For example, you could direct video requests to a back-end pool  optimized to handle video streaming. You could also direct image requests to a pool of servers that handles image retrieval.
 
-The source IP address that the Application Gateway uses for health probes depends on the backend pool:
+:::image type="content" source="../media/path-based-routing.png" alt-text="Diagram that depicts path-based routing in Azure Application Gateway.":::
 
- -  If the server address in the backend pool is a public endpoint, then the source address is the application gateway's frontend public IP address.
- -  If the server address in the backend pool is a private endpoint, then the source IP address is from the application gateway subnet's private IP address space. :::image type="content" source="../media/app-gateway-probe-6300f27a.png" alt-text="Screenshot of a health probe for Azure Application Gateway.":::
-    
+### Multiple site routings
 
-### Default health probe
+[Multiple site routing](/azure/application-gateway/multiple-site-overview) configures more than one web application on the same Application Gateway instance. In a multiple site configuration, you register multiple DNS names (CNAMEs) for the IP address of the application gateway, specifying the name of each site. Application Gateway uses separate listeners to wait for requests for each site. Each listener passes the request to a different rule, which can route the requests to servers in a different back-end pool. For example, you could direct all requests for `http://contoso.com` to a specific backend pool.
 
-An application gateway automatically configures a default health probe when you don't set up any custom probe configurations. The monitoring behavior works by making an HTTP GET request to the IP addresses or FQDN configured in the back-end pool. For default probes if the backend http settings are configured for HTTPS, the probe uses HTTPS to test health of the backend servers.
+:::image type="content" source="../media/multi-site-routing.png" alt-text="Diagram that depicts multi-site routing in Azure Application Gateway.":::
 
-For example: You configure your application gateway to use back-end servers A, B, and C to receive HTTP network traffic on port 80. The default health monitoring tests the three servers every 30 seconds for a healthy HTTP response with a 30-second timeout for each request. A healthy HTTP response has a status code between 200 and 399. In this case, the HTTP GET request for the health probe looks like http://127.0.0.1/.
+This video reviews the routing methods. 
 
-If the default probe check fails for server A, the application gateway stops forwarding requests to this server. The default probe continues to check for server A every 30 seconds. When server A responds successfully to one request from a default health probe, application gateway starts forwarding the requests to the server again.
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=d4048c34-14df-4c86-a217-daf80ca9ea8c]
 
-**Default health probe settings**
+## Other routing capabilities
+Along with path-based routing and multiple site hosting, there are a few other capabilities when routing with Application Gateway.
 
-The following table lists the default health probe settings:
+- [Redirection](/azure/application-gateway/redirect-overview). Redirection can be used to another site, or from HTTP to HTTPS. For example, redirecting HTTP requests to a secure HTTPS shopping site. 
+- Rewrite HTTP headers. HTTP headers allow the client and server to pass additional information with the request or the response.
+- Custom error pages. Application Gateway allows you to create custom error pages instead of displaying default error pages. You can use your own branding and layout using a custom error page.
 
-| **Probe property**  |            **Value**             |                                                                                                                                                                                                        **Description**                                                                                                                                                                                                        |
-|:-------------------:|:--------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-|      Probe URL      | `<protocol>://127.0.0.1:<port>/` |                                                                                                                                                              The protocol and port are inherited from the backend HTTP settings to which the probe is associated                                                                                                                                                              |
-|      Interval       |                30                |                                                                                                                                                                          The amount of time in seconds to wait before the next health probe is sent.                                                                                                                                                                          |
-|      Time-out       |                30                |                                                                                                      The amount of time in seconds the application gateway waits for a probe response before marking the probe as unhealthy. If a probe returns as healthy, the corresponding backend is immediately marked as healthy.                                                                                                       |
-| Unhealthy threshold |                3                 | Governs how many probes to send in case there's a failure of the regular health probe. In the v2 SKU, the health probes wait the probe interval before checking again. The back-end server is marked unreachable after the consecutive probe failure count reaches the unhealthy threshold. |
-
-**Probe intervals**
-
-All instances of Application Gateway probe the backend independent of each other. The same probe configuration applies to each Application Gateway instance. For example, if the probe configuration is to send health probes every 30 seconds and the application gateway has two instances, then both instances send the health probe every 30 seconds.
-
-If there are multiple listeners, then each listener probes the backend independent of each other.
-
-### Custom health probe
-
-Custom probes give you more granular control over the health monitoring. When using custom probes, you can configure a custom hostname, URL path, probe interval, and how many failed responses to accept before marking the back-end pool instance as unhealthy, etc.
-
-**Custom health probe settings**
-
-The following table provides definitions for the properties of a custom health probe.
-
-| **Probe property**  |                                                                                  **Description**                                                                                  |
-|:-------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-|        Name         |                                        Name of the probe. This name is used to identify and refer to the probe in back-end HTTP settings.                                         |
-|      Protocol       |                           Protocol used to send the probe. This property must match with the protocol defined in the back-end HTTP settings.                   |
-|        Host         | Host name to send the probe.               |
-|        Path         |                                                             Relative path of the probe. A valid path starts with '/.'                                                              |
-|        Port         |  If defined, this property is used as the destination port. Otherwise, it uses the same port as the HTTP settings that it's associated to. This property is only available in the v2 SKU.  |
-|      Interval       |                                             Probe interval in seconds. This value is the time interval between two consecutive probes                                             |
-|      Time-out       |                             Probe time-out in seconds. If a valid response isn't received within this time-out period, the probe is marked as failed.                            |
-| Unhealthy threshold |                          Probe retry count. The back-end server is marked down after the consecutive probe failure count reaches the unhealthy threshold.                         |
-
-### Probe matching
-
-By default, an HTTP(S) response with status code between 200 and 399 is considered healthy. Custom health probes additionally support two matching criteria. Matching criteria can be used to optionally modify the default interpretation of what makes a healthy response.
-
-The following are matching criteria:
-
- -  HTTP response status code match - Probe matching criterion for accepting user specified http response code or response code ranges. Individual comma-separated response status codes or a range of status code is supported.
- -  HTTP response body match - Probe matching criterion that looks at HTTP response body and matches with a user specified string. The match only looks for presence of user specified string in response body and isn't a full regular expression match.
-
-Match criteria can be specified using the New-AzApplicationGatewayProbeHealthResponseMatch cmdlet.
-
-## Configure listeners
-
-A listener is a logical entity that checks for incoming connection requests by using the port, protocol, host, and IP address. When you configure a listener, you must enter values that match the corresponding values in the incoming request on the gateway.
-
-When you create an application gateway by using the Azure portal, you also create a default listener by choosing the protocol and port for the listener. You can choose whether to enable HTTP2 support on the listener. After you create the application gateway, you can edit the settings of that default listener (appGatewayHttpListener) or create new listeners.
-
-:::image type="content" source="../media/app-gateway-error-codes-acd1bd6a.png" alt-text="Screenshot of the Application Gateway listener configuration.":::
-
-
-### Listener type
-
-When you create a new listener, you must choose between basic and multi-site.
-
- -  **Basic:** All requests are accepted and forwarded to backend pools.
- -  **Multi-site:** Forward requests to different backend pools based on the host header or host names. You must specify a host name that matches with the incoming request. 
-
-### Order of processing listeners
-
-For the v1 SKU, requests are matched according to the order of the rules and the type of listener. For the v2 SKU, multi-site listeners are processed before basic listeners.
-
-### Front-end IP address
-
-Choose the front-end IP address that you plan to associate with this listener. The listener listens for incoming requests on this IP address.
-
-### Front-end port
-
-Choose the front-end port. Select an existing port or create a new one. Choose any value from the allowed range of ports. You can use not only well-known ports, such as 80 and 443, but any allowed custom port that's suitable. A port can be used for public-facing listeners or private-facing listeners.
-
-### Protocol
-
-Choose HTTP or HTTPS:
-
- -  **HTTP:** traffic between the client and the application gateway is unencrypted.
- -  **HTTPS:** enables TLS termination or end-to-end TLS encryption. The TLS connection terminates at the application gateway. Traffic between the client and the application gateway is encrypted. If you want end-to-end TLS encryption, you must choose HTTPS and configure the back-end HTTP setting. 
-
-To configure TLS termination and end-to-end TLS encryption, you must add a certificate to the listener to enable the application gateway to derive a symmetric key. The symmetric key is used to encrypt and decrypt the gateway traffic. The gateway certificate must be in Personal Information Exchange (PFX) format. This format lets you export the private key that the gateway uses to encrypt and decrypt traffic.
-
-## Redirection overview
-
-You can use application gateway to redirect traffic. The gateway has a generic redirection mechanism which allows for redirecting traffic received at one listener to another listener or to an external site. Redirection simplifies application configuration and optimizes the resource usage. These redirection types are supported:
-
- -  301 Permanent Redirect
- -  302 Found
- -  303 See Other
- -  307 Temporary Redirect
-
-Application Gateway redirection support offers the following capabilities:
-
- -  **Global redirection:** Redirects from one listener to another listener on the gateway. This enables HTTP to HTTPS redirection on a site.
- -  **Path-based redirection:** Enables HTTP to HTTPS redirection only on a specific site area, for example a shopping cart area denoted by /cart/\*.
- -  **Redirect to external site:** Requires a new redirect configuration object, which specifies the target listener or external site to which redirection is desired. The configuration element also supports options to enable appending the URI path and query string to the redirected URL. The redirect configuration is attached to the source listener via a new rule.
-
-For more information on configuring redirection in Application Gateway, see [URL path-based redirection using PowerShell - Azure Application Gateway \| Microsoft Learn](/azure/application-gateway/tutorial-url-redirect-powershell).
-
-## Application Gateway request routing rules
-
-A request routing rule is a key component of an application gateway because it determines how to route traffic on the listener. The rule binds the listener, the backend server pool, and the backend HTTP settings.
-
-When a listener accepts a request, the request routing rule forwards the request to the backend or redirects it elsewhere. If the request is forwarded to the backend, the request routing rule defines which backend server pool to forward it to. The request routing rule also determines if the headers in the request are to be rewritten. One listener can be attached to one rule.
-
-There are two types of request routing rules:
-
-- **Basic:** All requests on the associated listener (for example, blog.contoso.com/*) are forwarded to the associated backend pool by using the associated HTTP setting.
-
-- **Path-based:** This routing rule lets you route the requests on the associated listener to a specific backend pool, based on the URL in the request. If the path of the URL in a request matches the path pattern in a path-based rule, the rule routes that request. It applies the path pattern only to the URL path, not to its query parameters. If the URL path on a listener request doesn't match any of the path-based rules, it routes the request to the default backend pool and HTTP settings.
-
-## HTTP settings
-
-An application gateway routes traffic to the backend servers (specified in the request routing rule that include HTTP settings) by using the port number, protocol, and other settings detailed in this component.
-
-The port and protocol used in the HTTP settings determine whether the traffic between the application gateway and backend servers is encrypted (providing end-to-end TLS) or unencrypted.
-
-This component is also used to:
-
-- Determine whether a user session is to be kept on the same server by using the cookie-based session affinity.
-
-- Gracefully remove backend pool members by using connection draining.
-
-- Associate a custom probe to monitor the backend health, set the request timeout interval, override host name and path in the request, and provide one-select ease to specify settings for the App Service backend.
+> [!TIP]
+> Learn more about Azure Application Gateway routing check out the [Load balance your web service traffic with Application Gateway](/training/modules/load-balance-web-traffic-with-application-gateway/) module.
