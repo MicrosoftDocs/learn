@@ -231,3 +231,6 @@ With GitHub Actions, you can attest to build provenance of binaries and containe
 ##### Generating an SBOM attestation for binaries
 
 ##### Generating an SBOM attestation for container images
+
+#### Verifying artifact attestations with the GitHub CLI
+You can validate the artifact attestations outlined above using the GitHub CLI.  For more information, see the [attestation section](https://cli.github.com/manual/gh_attestation) of the GitHub CLI manual.
