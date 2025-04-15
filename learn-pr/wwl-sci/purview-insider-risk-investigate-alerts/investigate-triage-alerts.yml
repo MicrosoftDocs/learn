@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-insider-risk-investigate-alerts.investigate-triage-alerts
+title: Investigate and triage insider risk alerts in Microsoft Purview
+metadata:
+  title: Investigate and triage insider risk alerts in Microsoft Purview
+  description: "Investigate and triage insider risk alerts in Microsoft Purview."
+  ms.date: 04/15/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/investigate-triage-alerts.md)]
