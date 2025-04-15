@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-introduction-products.license-usage-machine
+title: License Usage Stats in Machine and Peripehral Devices
+metadata:
+  title: License Usage Stats in Machine and Peripehral Devices
+  description: This content is part of the "Introduction to GitHub's products" module.
+  ms.date: 04/10/2025
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-license-usage-machine.md)]

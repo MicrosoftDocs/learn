@@ -4,11 +4,11 @@ title: Move data to SQL Managed Instance
 metadata:
   title: Move data to SQL Managed Instance
   description: "Learn how to move data to SQL Managed Instance."
-  ms.date: 05/26/2021
-  author: jupadrao
+  ms.date: 04/14/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-synchronize-data.md)]
+  [!include[](includes/5-synchronize-data.md)]
