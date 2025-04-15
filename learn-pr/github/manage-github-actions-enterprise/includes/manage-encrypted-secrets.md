@@ -234,3 +234,6 @@ With GitHub Actions, you can attest to build provenance of binaries and containe
 
 #### Verifying artifact attestations with the GitHub CLI
 You can validate the artifact attestations outlined above using the GitHub CLI.  For more information, see the [attestation section](https://cli.github.com/manual/gh_attestation) of the GitHub CLI manual.
+
+> [!WARNING]
+> It is important to remember that artifact attestations are not a guarantee that an artifact is secure. Instead, artifact attestations link you to the source code and the build instructions that produced them. It is up to you to define your policy criteria, evaluate that policy by evaluating the content, and make an informed risk decision when you are consuming software.
