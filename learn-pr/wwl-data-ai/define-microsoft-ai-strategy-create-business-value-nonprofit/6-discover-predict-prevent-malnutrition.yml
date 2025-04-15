@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit.discover-predict-prevent-malnutrition
+title: Discover how Microsoft AI enables predicting and preventing malnutrition - an Amref Health Africa success story
+metadata:
+  title: Discover how Microsoft AI enables predicting and preventing malnutrition - an Amref Health Africa success story
+  description: "Discover how Microsoft AI enables predicting and preventing malnutrition - an Amref Health Africa success story"
+  ms.date: 04/15/2025
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-discover-predict-prevent-malnutrition.md)]

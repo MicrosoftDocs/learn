@@ -1,5 +1,3 @@
-**Microsoft Teams, Outlook, Microsoft 365 Copilot**
-
 Nonprofit organizations can use Microsoft 365 Copilot to enhance productivity and support staff creativity. Discover how Microsoft 365 Copilot helps RTI staff focus on mission-critical tasks, streamline workflows, and drive impactful research.
 
 ## The organization
@@ -24,4 +22,4 @@ Ultimately, support from AI helps RTI staff do more of what moves the needle on 
 
 To learn more, read [Research nonprofit RTI International improves the human condition with Microsoft 365 Copilot](https://www.microsoft.com/customers/story/1802830664758543360-rti-international-microsoft-teams-nonprofit-en-united-states).
 
-Next, let’s discover how Veteran's Wellbeing Network help members of the Australian Defense Force (ADF).
+Next, let’s explore how Microsoft AI enables predicting and preventing malnutrition.
