@@ -1,14 +1,5 @@
 In this module, you learned some basic prompt creation techniques, explored some of the capabilities of Copilot, and were introduced to the capabilities of generative AI. Interacting with and exploring generative AI is essential to understanding these capabilities and applying them in your everyday work.
 
-> [!NOTE]
-> **April 8, 2025 only**: Join us as we attempt a **GUINNESS WORLD RECORDS<sup>TM</sup>** title for "Most users to take an online multi-level artificial intelligence lesson in 24 hours!"
-> To participate, you must:
-> 1. **Register** for the [Microsoft AI Skills Fest](https://aka.ms/AISkillsFest?azure-portal=true).
-> 2. **Complete this module**. You do not need to get the knowledge check questions correct, you just need to attempt them.
-> 3. **Verify** [your involvement](https://aka.ms/AISkillsFest_TrainingAffirmation?azure-portal=true) and download your badge.
-> 
-> ![Screenshot of the Microsoft AI Skills Fest 2025 timeline.](../media/10-skillsfest.jpg)
-
 **Continue your learning journey**
 
 - Learn more about powerful prompts in [Copilot Lab](https://copilot.cloud.microsoft/prompts).

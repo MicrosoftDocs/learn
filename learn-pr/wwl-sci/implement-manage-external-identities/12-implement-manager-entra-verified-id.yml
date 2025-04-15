@@ -2,9 +2,11 @@
 uid: learn.wwl.implement-manage-external-identities.implement-manager-entra-verified-id
 title: Implement and manage Microsoft Entra Verified ID
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement and manage Microsoft Entra Verified ID
   description: "Implement and manage Microsoft Entra Verified ID"
-  ms.date: 12/18/2024
+  ms.date: 04/08/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit

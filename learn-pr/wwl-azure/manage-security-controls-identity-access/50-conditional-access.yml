@@ -2,9 +2,11 @@
 uid: learn.wwl.manage-security-controls-identity-access.conditional-access
 title: Implement Conditional Access policies
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Implement Conditional Access policies
   description: "Implement Conditional Access policies"
-  ms.date: 03/10/2025
+  ms.date: 04/11/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

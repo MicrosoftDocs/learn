@@ -52,4 +52,4 @@ Once you completed the exercise, return to this module for:
 > You don't need to modify any of the workflow files to complete this exercise. **Altering the contents in this workflow can break the exercise's ability to validate your actions, provide feedback, or grade the results**.
 
 > [!div class="nextstepaction"]
-> [Start the exercise on GitHub](https://github.com/continuous-copilot/build-applications-w-copilot-agent-mode)
+> [Start the exercise on GitHub](https://github.com/skills/build-applications-w-copilot-agent-mode)

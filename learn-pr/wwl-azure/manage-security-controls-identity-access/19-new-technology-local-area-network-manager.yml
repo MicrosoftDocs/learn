@@ -2,9 +2,11 @@
 uid: learn.wwl.manage-security-controls-identity-access.new-technology-local-area-network-manager
 title: New Technology Local Area Network Manager (NTLM)
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: New Technology Local Area Network Manager (NTLM)
   description: "New Technology Local Area Network Manager (NTLM)"
-  ms.date: 03/10/2025
+  ms.date: 04/11/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

@@ -199,7 +199,7 @@ Several Azure products and services support IoT device security:
 
 - The [Edge Secured-core program (preview)](/azure/certification/program-requirements-edge-secured-core) validates whether devices meet security requirements for device identity, secure boot, operating system hardening, device updates, data protection, and vulnerability disclosures. The Edge Secured-core program requirements are distilled from various industry requirements and security engineering points of view.
 
-- [Windows for IoT](https://www.microsoft.com/WindowsForBusiness/windows-iot) helps ensure security across key pillars of the IoT security spectrum.
+- [Windows for IoT](https://developer.microsoft.com/windows/iot) helps ensure security across key pillars of the IoT security spectrum.
 
 - [Microsoft Defender for IoT](/azure/defender-for-iot) is an agentless, network layer security platform that delivers continuous asset discovery, vulnerability management, and threat detection for IoT and OT devices. Defender for IoT continuously monitors network traffic using IoT-aware behavioral analytics to identify unauthorized or compromised components.
 
