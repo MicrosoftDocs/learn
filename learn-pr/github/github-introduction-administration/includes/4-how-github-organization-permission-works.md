@@ -45,7 +45,7 @@ When granting access to a repository, there are several ways a user can become a
 | **Organization Default Permissions** |  If the repository is part of an organization, there may be a default permission level for all organization members (e.g., None, Read). <br>  Owners can override these defaults for specific teams or users. |
 | **Outside Collaborator**    |  A user who is not a member of the organization but has explicit access to a repository. <br>  Useful for contractors, freelancers, or open-source contributors needing limited access. |
 
-## Audit Access to a Repository
+### Audit Access to a Repository
 
 Regularly auditing who has access to a repository ensures proper security and compliance. Here are some recommended steps and tools:
 
