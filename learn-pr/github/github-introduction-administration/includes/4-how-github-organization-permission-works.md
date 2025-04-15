@@ -26,6 +26,7 @@ After you create a repository with the correct permissions, you can make it a te
 
 1. Select **Template repository**.
 
+### Actions of a User Given a List of Their Repository Permissions
 A user’s effective permissions in a repository are influenced by various factors, including:
 
 - **Repository Role:** (e.g., Admin, Write, Read)
