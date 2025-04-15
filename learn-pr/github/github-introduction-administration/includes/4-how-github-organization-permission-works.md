@@ -44,6 +44,7 @@ To audit access to a repository that you administer, you can view a combined lis
 :::image type="content" source="../media/manage-access-overview.png" alt-text="Screenshot of the manage access screen.":::
 
 ## Organization permission levels
+GitHub organizations provide a centralized way for teams to collaborate on projects while maintaining controlled access to repositories and sensitive data. Organization permissions determine what members and teams can do within the organization, ensuring that each user has the appropriate level of access.
 
 There are multiple levels of permissions at the organizational level:
 
