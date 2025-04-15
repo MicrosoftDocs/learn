@@ -26,6 +26,7 @@ quiz:
     - content: "Team maintainer"
       isCorrect: true
       explanation: "Correct! As a team maintainer, the user can add and remove organization members to and from a team."
+
   - content: "As an organization owner, you want to ensure that everyone who is signed in to your corporate network can access the GitHub website without requiring a second sign-in. Which technology would you enable to accomplish this?"
     choices:
     - content: "Single sign-on"
@@ -40,6 +41,7 @@ quiz:
     - content: "SSH keys"
       isCorrect: false
       explanation: "Incorrect. SSH keys provide access for the git client through a username and password. You don't use them to access the GitHub website."
+
   - content: "What's the appropriate repository permission level for contributors who need to actively push changes to your repository?"
     choices:
     - content: "Admin"
@@ -54,3 +56,63 @@ quiz:
     - content: "Maintain"
       isCorrect: false
       explanation: "Incorrect. The maintain permission is for contributors who need to manage the repository without access to sensitive or destructive actions. It provides too much access for other users."
+
+  - content: "What is a benefit of integrating Active Directory (AD) for team synchronization?"
+    choices:
+    - content: "Centralized Identity Management"
+      isCorrect: true
+      explanation: "Correct. Integrating AD leverages existing infrastructure for consistent user identities."
+    - content: "Increased administrative overhead"
+      isCorrect: false
+      explanation: "Incorrect. AD integration aims to reduce administrative overhead."
+    - content: "Decentralized administration"
+      isCorrect: false
+      explanation: "Incorrect. AD integration centralizes identity management."
+    - content: "Enhanced isolation"
+      isCorrect: false
+      explanation: "Incorrect. Enhanced isolation is not a direct benefit of AD integration."
+
+  - content: "Which of the following actions is exclusive to Organization Owners in GitHub?"
+    choices:
+    - content: "Collaborate on repositories based on assigned roles or team memberships"
+      isCorrect: false
+      explanation: "Incorrect. Organization Members can collaborate on repositories if granted the appropriate roles or added to teams."
+    - content: "Contribute code and participate in discussions"
+      isCorrect: false
+      explanation: "Incorrect. Any Organization Member with sufficient permissions can contribute code and join discussions."
+    - content: "Manage organization settings, including security and billing"
+      isCorrect: true
+      explanation: "Correct. Only Organization Owners have the authority to manage organization-wide settings, including security policies and billing configurations."
+    - content: "Access resources as defined by team or repository-specific permissions"
+      isCorrect: false
+      explanation: "Incorrect. Organization Members can access resources if permissions are granted through team or repository-level settings."
+
+  - content: "What is a key difference between an organization member and an outside collaborator?"
+    choices:
+    - content: "Organization members are included in the organization’s internal directory."
+      isCorrect: true
+      explanation: "Correct. Organization members are included in the internal directory and can be assigned to teams, while outside collaborators are not."
+    - content: "Outside collaborators have access to all repositories."
+      isCorrect: false
+      explanation: "Incorrect. Outside collaborators have explicit access to specific repositories only."
+    - content: "Organization members do not appear in the organization’s internal member list."
+      isCorrect: false
+      explanation: "Incorrect. Organization members do appear in the internal member list."
+    - content: "Outside collaborators inherit organization-wide settings."
+      isCorrect: false
+      explanation: "Incorrect. Outside collaborators do not inherit organization-wide settings."
+
+  - content: "Which permission level allows users to manage repository settings but not delete or transfer the repository?"
+    choices:
+    - content: "Maintain"
+      isCorrect: true
+      explanation: "Correct. The Maintain permission level allows users to manage repository settings but not delete or transfer the repository."
+    - content: "Write"
+      isCorrect: false
+      explanation: "Incorrect. The Write permission level allows users to push code and manage issues and pull requests but not manage repository settings."
+    - content: "Admin"
+      isCorrect: false
+      explanation: "Incorrect. The Admin permission level grants full control over the repository, including deleting or transferring it."
+    - content: "Triage"
+      isCorrect: false
+      explanation: "Incorrect. The Triage permission level allows users to manage issues and pull requests but not manage repository settings."
