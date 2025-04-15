@@ -29,34 +29,34 @@ quiz:
       explanation: "Correct. Interfaces define a set of methods and properties that implementing classes must provide, promoting loose coupling and making the code easier to test and maintain."
   - content: "How can the issue of tightly coupled code be addressed?"
     choices:
-    - content: "By modifying existing code to add new features"
+    - content: "By modifying existing code to add new features."
       isCorrect: false
       explanation: "Incorrect. Modifying existing code to add new features violates the Open/Closed Principle."
-    - content: "By refactoring the code using interfaces to make it more modular and flexible"
+    - content: "By refactoring the code using interfaces to make it more modular and flexible."
       isCorrect: true
       explanation: "Correct. Using interfaces to decouple components can make the code more modular and flexible, addressing the issue of tightly coupled code."
-    - content: "By increasing dependencies between components"
+    - content: "By increasing dependencies between components."
       isCorrect: false
       explanation: "Incorrect. Increasing dependencies would lead to more tightly coupled code, not less."
   - content: "What is the main advantage of using an interface in programming?"
     choices:
-    - content: "It allows to modify the class without adding new type items"
+    - content: "It allows you to modify the class without adding new type items."
       isCorrect: false
       explanation: "Incorrect. An interface does not allow modification of the class, but it does allow adding new type items without modifying the class."
-    - content: "It makes the system more complex and difficult to understand"
+    - content: "It makes the system more complex and difficult to understand."
       isCorrect: false
       explanation: "Incorrect. An interface actually simplifies maintenance by making the system easier to understand, test, and extend."
-    - content: "It isolates behavior, ensuring the class doesn't depend on specific implementations"
+    - content: "It isolates behavior, ensuring the class doesn't depend on specific implementations."
       isCorrect: true
       explanation: "Correct. An interface sets a contract for behavior without detailing its implementation, thus reducing dependencies and improving modularity."
   - content: "How does an interface contribute to the principle of Separation of Concerns?"
     choices:
-    - content: "By isolating behavior and ensuring responsibilities are clearly divided"
+    - content: "By isolating behavior and ensuring responsibilities are clearly divided."
       isCorrect: true
       explanation: "Correct. An interface isolates behavior, which aligns with the principle of Separation of Concerns by ensuring responsibilities are clearly divided."
-    - content: "By complicating the system's understanding, testing, and extension"
+    - content: "By complicating the system's understanding, testing, and extension."
       isCorrect: false
       explanation: "Incorrect. An interface simplifies maintenance by clearly dividing responsibilities."
-    - content: "By allowing the class to depend on specific implementations"
+    - content: "By allowing the class to depend on specific implementations."
       isCorrect: false
       explanation: "Incorrect. An interface actually ensures that the class doesn't depend on specific implementations."
