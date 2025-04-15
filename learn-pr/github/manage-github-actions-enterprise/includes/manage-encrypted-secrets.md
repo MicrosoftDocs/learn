@@ -214,3 +214,18 @@ The type of action, when it was run, and which personal account performed the ac
 You can configure workflows to authenticate directly with a cloud provider using OIDC (OpenID Connect). In this case, there is no longer the need to store credentials as secrets.  
 
 ### Artifact attestions for GitHub Actions
+
+Artifact attestations ae used to establish provenance for builds.  By establishing where and how software was built, attestations help to increase software supply chain security.
+
+#### What to attest
+
+#### Build Provenance Attestations
+
+##### Generating an attestation for build provenance of binaries
+
+#### Generating an attestation for build provenance of container images
+
+### SBOM Attestations
+#### Generating an SBOM attestation for binaries
+
+#### Generating an SBOM attestation for container images
