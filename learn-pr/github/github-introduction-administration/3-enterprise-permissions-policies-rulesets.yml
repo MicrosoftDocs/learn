@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-introduction-administration.enterprise-permissions-policies-rulesets
+title: How to manage enterprise permissions policies through rulesets?
+metadata:
+  title: How to manage enterprise permissions policies through rulesets?
+  description: Discover how to streamline and secure access control across your organization by leveraging rulesets to manage enterprise permissions policies. 
+  ms.date: 09/20/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-how-github-authentication-works.md)]
