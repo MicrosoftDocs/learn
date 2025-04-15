@@ -215,9 +215,11 @@ You can configure workflows to authenticate directly with a cloud provider using
 
 ### Artifact attestions for GitHub Actions
 
-Artifact attestations ae used to establish provenance for builds.  By establishing where and how software was built, attestations help to increase software supply chain security.
+Artifact attestations are used to establish provenance for builds.  By establishing what, where and how software was built, attestations help to increase software supply chain security.
 
 #### What to attest
+
+With GitHub Actions, you can attest to build provenance of binaries and container images as well as SBOM's for binaries and container images.
 
 #### Build Provenance Attestations
 
