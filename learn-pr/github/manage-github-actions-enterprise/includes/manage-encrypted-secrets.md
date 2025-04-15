@@ -58,12 +58,12 @@ If you need to access the encrypted secret in your action's code, the action cod
 > When authoring your own actions, make sure not to include any encrypted secrets in your action's source code, because actions are sharable units of work. If your action needs to use encrypted secrets or other user-supplied inputs, it's best to use the core module from the [Actions Toolkit](https://github.com/actions/toolkit).
 >
 
-<!-- INFOMAGNUS UPDATES for all of sub OD 4.3 go here! Source Material: https://www.google.com/url?q=https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions&sa=D&source=editors&ust=1742484244534691&usg=AOvVaw30HJhmh-nnnssWIlwRCI_5 -->
+<!-- INFOMAGNUS UPDATES for all of sub OD 4.3 go here! Source Material: https://www.google.com/url?q=https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions , https://docs.github.com/en/actions/security-for-github-actions/using-artifact-attestations/using-artifact-attestations-to-establish-provenance-for-builds -->
 ## Configure Security Hardening for GitHub Actions
 
-### Best Practices for Mitigating Script Injection Attacks
+### Identify best practices for mitigating script injection attacks
 
-#### Use Javascript Actions Instead of Inline Scripts
+#### Use javascript actions instead of inline scripts
 
 It is recommended that you use Javascript actions that processe context values as arguments.  By definition, this usage of Javascript actions mitigates the script injection attacks as the context values are not used to generate a shell script that is executed.
 
@@ -75,7 +75,7 @@ with:
     title: ${{ github.event.pull_request.title }} 
 ```
 
-#### Use Intermediate Environment Variables In Inline Scripts
+#### Use intermediate environment variables in inline scripts
 
 In instances where you are using inline scripts, variables that must be injected into the action should be evaluated as environment variables.  As environment variables are evaluated before the script is generated and evaluated, using an intermediate environment variable mitigates the risk of a script injection attack.  An example is displayed below using the `github.event.pull_request.title` variable:
 
@@ -93,15 +93,15 @@ In instances where you are using inline scripts, variables that must be injected
           fi
 ```
 
-#### Leverage Worflow Templates to Implement Code Scanning
+#### Leverage worflow templates to implement code scanning
 
 If you click on the **Actions tab of any repository, you will be able to select **New Workflow** button on the left side of the pane.  Within the **Choose a Workflow** page that is displayed as a result of clicking the button, there is a **Security** section where workflow templates can be selected to instantiate as a workflow file in the current repository.  The CodeQL scanner, specifically, can be configured to trigger on an appropriate event to scan a branch's files & flag exposures (CWE's) in actions within workflows; including "script injection".
 
-#### Restrict Permissions for Tokens
+#### Restrict permissions for tokens
 
 You should be sure to always apply 'rule of least privilege' to any created token.  In other words, ensure the token is assigned the minimum privileges to achieve the task for which it was created.
 
-### Best Practices for Using Third-party Actions Securely 
+### Identify best practices for using third-party actions securely 
 
 #### Pin Actions to a Tag Only if The Author is Trusted
 
@@ -121,17 +121,17 @@ By pinning an action to a full length commit SHA, you ensure, in the only way cu
         uses: actions/checkout@1e31de5234b9f8995739874a8ce0492dc87873e2  # pinned to specific commit SHA
 ```
 
-#### Audit the Source Code of the Action
+#### Audit the Source Code of the action
 You should review the source code of the action to verify that data is handled as expected and there is no unexpected malicious activity.
 
-### Indicators of a Trustworthy Third-Party Action
+### Define the indicators of a trustworthy third-party action
 The following are indicators of a trustworthy third-party action.
 
 - The action appears in the GitHub Marketplace
 - The action's entry in the GitHub Marketplace shows the 'Verified creator' badge to the right of its title. This indicates that the vendor has been verified by GitHub.
 - The action.yml file defining the action is well documented.
 
-### Use Dependabot Version Updates to Keep Actions Up-To-Date
+### Use Dependabot version ipdates to keep actions up-to-date
 
 You should enable Dependabot version updates for GitHub actions.  
 
@@ -212,3 +212,5 @@ The type of action, when it was run, and which personal account performed the ac
 ### Using OIDC with GitHub Actions
 
 You can configure workflows to authenticate directly with a cloud provider using OIDC (OpenID Connect). In this case, there is no longer the need to store credentials as secrets.  
+
+### Artifact attestions for GitHub Actions
