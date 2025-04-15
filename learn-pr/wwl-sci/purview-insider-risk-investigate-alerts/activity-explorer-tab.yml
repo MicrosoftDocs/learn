@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-insider-risk-investigate-alerts.activity-explorer-tab
+title: Investigate activity details with the Activity explorer tab
+metadata:
+  title: Investigate activity details with the Activity explorer tab
+  description: "Investigate activity details with the Activity explorer tab."
+  ms.date: 04/15/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/activity-explorer-tab.md)]
