@@ -1,6 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.protect-endpoints-with-endpoint-manager.7-knowledge-check
 metadata:
+  hidden_question_numbers: ["2CCBE701_10","2CCBE701_14","2CCBE701_18","2CCBE701_51","2CCBE701_59","2CCBE701_63","2CCBE701_83","2CCBE701_87"]
   ai_generated_module_assessment: true
   title: Module assessment
   description: Knowledge check
