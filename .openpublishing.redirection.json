@@ -46585,6 +46585,61 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/azure-sql-secure-data/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-secure-environment-database-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-secure-data/2-security-capabilities.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-secure-environment-database-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-secure-data/3-exercise-configure-sql-database.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-secure-environment-database-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-secure-data/4-exercise-network-security.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-secure-environment-database-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-secure-data/5-exercise-configure-authentication.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-secure-environment-database-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-secure-data/6-data-protection.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-secure-environment-database-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-secure-data/7-security-management.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-secure-environment-database-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-secure-data/8-exercise-advanced-data-security.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-secure-environment-database-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-secure-data/9-exercise-data-classification-masking-audit.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-secure-environment-database-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-secure-data/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-secure-environment-database-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-secure-data/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-secure-environment-database-service/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/custom-model-ai-vision-image-classification/index.md",
       "redirect_url": "/training/modules/classify-images/",
       "redirect_document_id": false

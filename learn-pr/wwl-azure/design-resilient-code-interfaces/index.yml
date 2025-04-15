@@ -3,7 +3,7 @@ uid: learn.wwl.design-resilient-code-interfaces
 metadata:
   title: Design Resilient Code with Interfaces
   description: "In this module, you explore advanced concepts of interfaces in C#. You learn how to implement explicit interface members, combine multiple interfaces, and reduce code dependencies using interfaces."
-  ms.date: 02/17/2025
+  ms.date: 04/15/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: module-intro-to-product
