@@ -27,6 +27,11 @@ After you create a repository with the correct permissions, you can make it a te
 1. Select **Template repository**.
 
 ## Team permission levels
+A team in a GitHub organization is a group of users who collaborate on shared repositories. Teams help streamline access management and communication by applying consistent permissions across multiple repositories at once. Key benefits include:
+
+- **Centralized Access Control:** Assign repository permissions (e.g., Read, Write) to the entire team instead of managing each user individually.
+- **Structured Collaboration:** Organize members by department, project, or role for more efficient collaboration.
+- **Visibility & Communication:** Each team can have its own discussion board, making it easier to share updates and coordinate efforts.
 
 Teams provide an easy way to assign repository permissions to several related users at once. Members of a child team also inherit the permission settings of the parent team, providing an easy way to cascade permissions based on the natural structure of a company.
 
@@ -42,6 +47,19 @@ An organization owner can also promote any member of the organization to be a ma
 To audit access to a repository that you administer, you can view a combined list of teams and users with access to your repository in your settings:
 
 :::image type="content" source="../media/manage-access-overview.png" alt-text="Screenshot of the manage access screen.":::
+
+GitHub offers several permission levels that can be assigned to teams. When you grant a team access to a repository, you can choose from the following permission models:
+### Permission Models
+
+| Permission Level | Description                                                                 | Best For                                                                 |
+|------------------|-----------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| **Read**         | Users can view and clone the repository. Can open and comment on issues and pull requests. | Individuals who need read-only or review access.                         |
+| **Triage**       | Users can manage issues and pull requests (e.g., label, assign, comment). Cannot push changes to the repository. | Project managers or contributors who need to triage and organize issues without contributing code. |
+| **Write**        | Users can push to branches (except protected branches). Can manage issues and pull requests. | Active contributors who need to commit code or update documentation.     |
+| **Maintain**     | Users can manage repository settings, issues, and pull requests. Cannot delete or transfer the repository. | Project maintainers who handle routine repository management but don’t require full admin rights. |
+| **Admin**        | Users have full control over the repository, including setting permissions, deleting the repository, and managing all settings. | Those who need top-level administrative access.                          |
+
+**Tip:** Always follow the Principle of Least Privilege—assign the lowest permission level necessary for each team to perform its tasks effectively. This approach reduces the risk of accidental or unauthorized changes.
 
 ## Organization permission levels
 GitHub organizations provide a centralized way for teams to collaborate on projects while maintaining controlled access to repositories and sensitive data. Organization permissions determine what members and teams can do within the organization, ensuring that each user has the appropriate level of access.
@@ -80,6 +98,11 @@ In addition to these three levels, you can also set a policy of default reposito
 :::image type="content" source="../media/enterprise-base-permissions.png" alt-text="Screenshot of the policies screen with the default permissions dropdown displayed.":::
 
 For improved management and security, you can give default read permissions to all members of your enterprise and adjust their access to repositories on a case-by-case basis. In a smaller enterprise, such as one with a single, relatively small organization, you might prefer to trust all members with write permissions by default.
+
+To further streamline enterprise-scale access control:
+
+- **Nested Teams:** Enterprise accounts can use nested team structures to reflect departmental hierarchies. A parent team’s permissions cascade down to child teams, simplifying complex access management.
+- **Automation & Auditing:** You can use GitHub’s API or GitHub Actions to automate team creation and permission assignments, and audit access via organization or enterprise audit logs.
 
 ## Repository security and management
 
