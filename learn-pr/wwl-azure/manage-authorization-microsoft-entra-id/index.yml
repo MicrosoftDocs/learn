@@ -38,7 +38,6 @@ subjects:
 - cloud-security
 units:
 - learn.wwl.manage-authorization-microsoft-entra-id.introduction
-- learn.wwl.manage-authorization-microsoft-entra-id.configure-azure-role-permissions
 - learn.wwl.manage-authorization-microsoft-entra-id.microsoft-entra-built-in-roles
 - learn.wwl.manage-authorization-microsoft-entra-id.microsoft-entra-role-based-access-control
 - learn.wwl.manage-authorization-microsoft-entra-id.create-new-custom-roles-microsoft-entra-id
