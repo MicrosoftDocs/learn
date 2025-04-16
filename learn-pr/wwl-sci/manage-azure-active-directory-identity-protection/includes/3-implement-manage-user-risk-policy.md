@@ -12,7 +12,7 @@ Both policies work to automate the response to risk detections in your environme
 
 In this video, learn how to deploy Microsoft Entra Identity Protection by configuring risk-based policies (user risk and sign-in risk) in your organization. You also learn best practices on how to gradually roll out these policies and MFA registration in your organization.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MxmD]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c1974080-b372-4051-8100-ad7eb5b1bfb0]
 
 ## Prerequisites
 
