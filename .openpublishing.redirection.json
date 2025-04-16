@@ -47193,6 +47193,11 @@
       "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/6-recommend-when-to-use-external-identities.md",
       "redirect_url": "/training/modules/manage-security-controls-identity-access/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/7-secure-external-microsoft-entra-identities.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
     }
   ]
 }
