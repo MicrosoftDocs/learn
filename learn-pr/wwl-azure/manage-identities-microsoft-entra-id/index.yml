@@ -37,7 +37,6 @@ products:
 subjects:
 - cloud-security
 units:
-- learn.wwl.manage-identities-microsoft-entra-id.introduction
 - learn.wwl.manage-identities-microsoft-entra-id.microsoft-entra-id-overview
 - learn.wwl.manage-identities-microsoft-entra-id.secure-microsoft-entra-users
 - learn.wwl.manage-identities-microsoft-entra-id.secure-microsoft-entra-groups
