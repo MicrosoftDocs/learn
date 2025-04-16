@@ -1,10 +1,9 @@
-In the previous unit, you explored the different tools and strategies available to manage the use of GitHub Actions runners in your enterprise. In this unit, you'll learn how to configure and monitor self-hosted runners for advanced enterprise use, including:
+In the previous unit, you explored how to choose and manage GitHub-hosted and self-hosted runners at a high level. In this unit, you'll learn how to configure, organize, monitor, and secure self-hosted runners for enterprise-scale use. This includes:
 
-- Setting up self-hosted runners with proxy and network configurations  
-- Using labels and runner groups to organize and control workflows  
-- Monitoring runner health, usage, and performance  
-- Troubleshooting and updating runners effectively  
-- Managing secure access and enforcing policy-based controls  
+- Setting up runners with proxies and custom labels
+- Managing runner groups
+- Monitoring runner health and performance
+- Configuring secure access using labels and IP allowlists
 
 ## Configure Self-Hosted Runners for Enterprise Use  
 
