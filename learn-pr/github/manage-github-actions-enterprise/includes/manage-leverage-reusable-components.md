@@ -141,3 +141,35 @@ uses: org-actions-repo/setup-node@v1.2.0
 - **Deprecation plan**:
   - Notify users before removing older versions.
   - Offer migration guides for major changes.
+
+## How to distribute actions for an enterprise
+
+GitHub Actions enable **automation of workflows**, such as testing, deployment, and security scanning. In an enterprise, distributing actions efficiently allows multiple teams to **reuse common automation tasks** instead of reinventing the same workflows.
+
+There are three main methods for distributing GitHub Actions within an enterprise:
+
+1. **Publishing Actions in GitHub Marketplace** (for public distribution).
+2. **Hosting Actions in Organization-Owned Repositories** (for internal enterprise distribution).
+3. **Using GitHub Packages to Distribute Containerized Actions** (for more controlled distribution).
+
+### Best Practices for Distributing Actions in an Enterprise
+
+| **Best Practice**    | **Recommendation**                                                                  |
+| -------------------- | ----------------------------------------------------------------------------------- |
+| **Standardization**  | Maintain a **single repository** for reusable actions with **clear documentation**. |
+| **Versioning**       | Use **semantic versioning** (`v1.0.0`, `v2.0.0`) and avoid `latest` for stability.  |
+| **Security Reviews** | Require **code reviews and automated security scans** before publishing actions.    |
+| **Access Control**   | Restrict **who can modify and use** internal actions via repository settings.       |
+| **Regular Updates**  | Maintain **a changelog** and notify users of updates to prevent breaking changes.   |
+
+
+### Comparison of Distribution Methods
+
+| **Method**                                  | **Use Case**            | **Access Control**         | **Security Considerations**                |
+| ------------------------------------------- | ----------------------- | -------------------------- | ------------------------------------------ |
+| **GitHub Marketplace**                      | Public distribution     | No restrictions            | Publicly accessible, must be secure        |
+| **Organization-Owned Repositories**         | Internal enterprise use | Teams and repository roles | Requires strict permission control         |
+| **GitHub Packages (Containerized Actions)** | Secure internal use     | Authentication required    | Images must be protected against tampering |
+
+Choosing the right method depends on **business requirements, security needs, and scalability considerations**. Enterprises should implement a **structured approach** to distributing GitHub Actions, ensuring **efficiency, security, and compliance** across their DevOps workflows.
+
