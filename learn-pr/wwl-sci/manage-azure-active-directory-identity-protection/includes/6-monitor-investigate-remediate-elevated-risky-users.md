@@ -174,12 +174,12 @@ There are four steps to accessing Identity Protection data through Microsoft Gra
 1. In the Microsoft Entra admin center, browse to **Identity and Applications**, then **App registrations**.
 2. Select **New registration**.
 3. On the **Create** page, perform the following steps:
-    
+
    1. In the **Name** textbox, type a name for your application (for example: Microsoft Entra Risk Detection API).
    2. Under **Supported account types**, select the type of accounts that will use the APIs.
    3. Select **Register**.
 
-4.  Copy the **Application ID**.
+4. Copy the **Application ID**.
 
 ### Configure API permissions
 
@@ -188,21 +188,21 @@ There are four steps to accessing Identity Protection data through Microsoft Gra
 3. On the **Add API access** page, choose **Select an API**.
 4. On the **Select an API** page, select **Microsoft Graph**, and then select **Select**.
 5. On the **Request API permissions** page:
-    
+
    1. Select **Application permissions**.
    2. Select the checkboxes next to IdentityRiskEvent.Read.All and IdentityRiskyUser.Read.All.
    3. Select **Add permissions**.
 
-6.  Select **Grant admin consent for domain.**
+6. Select **Grant admin consent for domain.**
 
 ### Configure a valid credential
 
 1. From the **Application** you created, select **Certificates and secrets**.
 2. Under **Client secrets**, select **New client secret**.
-    
+
    1. Give the client secret a **Description** and set the expiration time period according to your organizational policies.
    2. Select **Add**.
-        
+
       > [!NOTE]
       > If you lose this key, you'll have to return to this section and create a new key. Keep this key a secret: Anyone who has it can access your data.
 

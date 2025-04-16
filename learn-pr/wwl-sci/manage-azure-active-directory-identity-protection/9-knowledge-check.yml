@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn-pr/wwl-sci/manage-azure-active-directory-identity-protection.knowledge-check
-title: Module Assessment
+uid: learn.wwl.manage-azure-active-directory-identity-protection.knowledge-check
+title: Module assessment
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Module Assessment
-  description: "Module Assessment"
-  ms.date: 04/15/2025
+  title: Module assessment
+  description: "Module assessment"
+  ms.date: 04/16/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit

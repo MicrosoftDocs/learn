@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Manage Microsoft Entra Identity Protection
   description: "Protecting a user's identity by monitoring their usage and sign-in patterns will ensure a secure cloud solution. Explore how to design and implement Microsoft Entra Identity protection."
-  ms.date: 04/15/2025
+  ms.date: 04/16/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: module
@@ -13,7 +13,7 @@ metadata:
   ms.custom:
   - N/A
   ms.service: azure
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Manage Microsoft Entra Identity Protection
 summary: Protecting a user's identity by monitoring their usage and sign-in patterns ensure a secure cloud solution. Explore how to design and implement Microsoft Entra Identity protection.
 abstract: |
@@ -42,15 +42,15 @@ products:
 subjects:
 - identity-access
 units:
-- learn-pr/wwl-sci/manage-azure-active-directory-identity-protection.introduction
-- learn-pr/wwl-sci/manage-azure-active-directory-identity-protection.review-identity-protection-basics
-- learn-pr/wwl-sci/manage-azure-active-directory-identity-protection.implement-manage-user-risk-policy
-- learn-pr/wwl-sci/manage-azure-active-directory-identity-protection.enable-sign-in-risk-policy
-- learn-pr/wwl-sci/manage-azure-active-directory-identity-protection.implement-manage-sign-risk-policies
-- learn-pr/wwl-sci/manage-azure-active-directory-identity-protection.monitor-investigate-remediate-elevated-risky-users
-- learn-pr/wwl-sci/manage-azure-active-directory-identity-protection.implement-security-workload-identities
-- learn-pr/wwl-sci/manage-azure-active-directory-identity-protection.explore-microsoft-defender-identity
-- learn-pr/wwl-sci/manage-azure-active-directory-identity-protection.knowledge-check
-- learn-pr/wwl-sci/manage-azure-active-directory-identity-protection.summary-resources
+- learn.wwl.manage-azure-active-directory-identity-protection.introduction
+- learn.wwl.manage-azure-active-directory-identity-protection.review-identity-protection-basics
+- learn.wwl.manage-azure-active-directory-identity-protection.implement-manage-user-risk-policy
+- learn.wwl.manage-azure-active-directory-identity-protection.enable-sign-in-risk-policy
+- learn.wwl.manage-azure-active-directory-identity-protection.implement-manage-sign-risk-policies
+- learn.wwl.manage-azure-active-directory-identity-protection.monitor-investigate-remediate-elevated-risky-users
+- learn.wwl.manage-azure-active-directory-identity-protection.implement-security-workload-identities
+- learn.wwl.manage-azure-active-directory-identity-protection.explore-microsoft-defender-identity
+- learn.wwl.manage-azure-active-directory-identity-protection.knowledge-check
+- learn.wwl.manage-azure-active-directory-identity-protection.summary-resources
 badge:
   uid: learn.wwl.manage-azure-ad-identity-protection.badge

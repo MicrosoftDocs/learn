@@ -13,7 +13,7 @@ Defender for Identity consists of the following components:
 
  - **Defender for Identity portal** \- The Defender for Identity portal allows the creation of your Defender for Identity instance, displays the data received from Defender for Identity sensors, and enables you to monitor, manage, and investigate threats in your network environment.
  - **Defender for Identity sensor** \- Defender for Identity sensors can be directly installed on the following servers:
-    
+
    - Domain controllers: The sensor directly monitors domain controller traffic, without the need for a dedicated server, or configuration of port mirroring.
    - Active Directory Federated Services (AD FS): The sensor directly monitors network traffic and authentication events.
 
