@@ -232,14 +232,14 @@ The attestation establishes build provenance.  You can view attestations in the 
 
 ##### Generating an attestation for build provenance of binaries
 
-1. dsdas
+1. You must add the following permissions to the workflow that builds the binary for which you intend to attest:
    ```yml
       permissions:
        id-token: write
        contents: read
        attestations: write
    ```
-2. dss
+2. You must add the step below after the step where the binary is built:
    ```yml
       - name: Generate artifact attestation
         uses: actions/attest-build-provenance@v2
@@ -249,7 +249,7 @@ The attestation establishes build provenance.  You can view attestations in the 
 
 ##### Generating an attestation for build provenance of container images
 
-1. dfsd
+1. You must add the following permissions to the workflow that builds the container image for which you intend to attest:
    ```yml
        permissions:
         id-token: write
@@ -257,7 +257,7 @@ The attestation establishes build provenance.  You can view attestations in the 
         attestations: write
         packages: write
    ```
-2.  dsdas
+2.  You must add the step below after the step where the continer image is built:
     ```yml
         - name: Generate artifact attestation
         uses: actions/attest-build-provenance@v2
@@ -278,14 +278,14 @@ You have the ability to generate SBOM attestions for an SBOM.  To generate and a
 
 ##### Generating an SBOM attestation for binaries
 
-1. You must add the following permissions to the workflow that builds the binary that you intend to attest:
+1. You must add the following permissions to the workflow that builds the binary for which you will generate an SBOM attestation:
    ```yml
        permissions:
         id-token: write
         contents: read
         attestations: write
    ```
-2. You must add the step below following the step where the binary is built:
+2. You must add the step below following the steps where the binary is built and SBOM generated:
     ```yml
         - name: Generate SBOM attestation
         uses: actions/attest-sbom@v1
@@ -296,7 +296,7 @@ You have the ability to generate SBOM attestions for an SBOM.  To generate and a
 
 ##### Generating an SBOM attestation for container images
 
-1. dss
+1. You must add the following permissions to the workflow that builds the binary for which you will generate an SBOM attestation:
     ```yml
        permissions:
         id-token: write
@@ -304,7 +304,7 @@ You have the ability to generate SBOM attestions for an SBOM.  To generate and a
         attestations: write
         packages: write
     ```
-3. dsdsa
+3. You must add the step below following the steps where the binary is built and SBOM generated:
     ```yml
         - name: Generate SBOM attestation
         uses: actions/attest-sbom@v1
