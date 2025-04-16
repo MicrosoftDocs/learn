@@ -41,7 +41,6 @@ units:
 - learn.wwl.manage-identities-microsoft-entra-id.secure-microsoft-entra-groups
 - learn.wwl.manage-identities-microsoft-entra-id.recommend-when-to-use-external-identities
 - learn.wwl.manage-identities-microsoft-entra-id.secure-external-microsoft-entra-identities
-- learn.wwl.manage-identities-microsoft-entra-id.microsoft-entra-identity-protection
 - learn.wwl.manage-identities-microsoft-entra-id.summary
 badge:
   uid: learn.wwl.manage-identities-microsoft-entra-id.badge
