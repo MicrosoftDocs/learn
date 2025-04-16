@@ -119,7 +119,7 @@ One of the **primary security policies** enterprises should enforce is controlli
 - **Restrict usage to organization-owned actions**.
 - **Create an allowlist for approved external actions**.
 
-![alt text](image.png)
+:::image type="content" source="../media/general-actions-permissions.png" alt-text="Screenshot of the genral actions permissions screen with default options selected" source="../media/general-actions-permissions.png":::
 
 ## Configuring allowed actions policy
 
