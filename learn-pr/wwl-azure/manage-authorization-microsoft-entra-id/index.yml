@@ -38,6 +38,5 @@ subjects:
 - cloud-security
 units:
 - learn.wwl.manage-authorization-microsoft-entra-id.zero-trust-security
-- learn.wwl.manage-authorization-microsoft-entra-id.summary
 badge:
   uid: learn.wwl.manage-authorization-microsoft-entra-id.badge
