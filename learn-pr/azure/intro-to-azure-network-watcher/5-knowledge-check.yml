@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-azure-network-watcher.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check.
   ms.date: 01/31/2024
   author: halkazwini
@@ -50,4 +48,4 @@ quiz:
           isCorrect: true
           explanation: Correct. VPN troubleshoot allows you to troubleshoot virtual network gateways and their connections.
           
-
+

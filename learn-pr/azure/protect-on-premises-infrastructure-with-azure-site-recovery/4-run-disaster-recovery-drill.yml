@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery.4-run-disaster-recovery-drill
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Run a disaster recovery drill
   description: Understand recovery time and recovery point objectives. Then, see how a recovery drill can test that Azure Site Recovery was configured correctly to meet these objectives.
   ms.date: 01/25/2025
@@ -40,4 +38,4 @@ quiz:
       explanation: These items can't be viewed from the Recovery Services dashboard.
     - content: Monitoring of configuration issues, vault status, and DHCP replication status
       isCorrect: false
-      explanation: These items can't be viewed from the Recovery Services dashboard.
+      explanation: These items can't be viewed from the Recovery Services dashboard.

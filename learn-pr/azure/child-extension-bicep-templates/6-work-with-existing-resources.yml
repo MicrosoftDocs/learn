@@ -2,8 +2,6 @@
 uid: learn.azure.child-extension-bicep-templates.work-with-existing-resources
 title: Work with existing resources
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Work with existing resources
   description: Learn how to refer to existing resources within your Bicep template.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/6-work-with-existing-resources.md)]
-
+

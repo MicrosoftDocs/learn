@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn-wwl.perform-sentiment-analysis-opinion-mining-azure-database-postgresql
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Perform sentiment analysis and opinion mining with Azure Database for PostgreSQL
   description: Learn how to perform sentiment analysis and opinion mining with Azure Database for PostgreSQL.
   author: wwlpublish
@@ -42,4 +40,4 @@ units:
 - learn-wwl.perform-sentiment-analysis-opinion-mining-azure-database-postgresql.summary
 badge:
   uid: learn-wwl.perform-sentiment-analysis-opinion-mining-azure-database-postgresql.badge
-
+

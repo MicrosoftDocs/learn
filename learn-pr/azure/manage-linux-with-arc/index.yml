@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.manage-linux-with-arc
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage Linux with Arc
   description: Learn how to use Azure Arc with Linux systems, including SSH and Ansible.
   manager: rayoflores
@@ -41,4 +39,4 @@ units:
 - learn.manage-linux-with-arc.summary
 badge:
   uid: learn.manage-linux-with-arc.badge
-
+

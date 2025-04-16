@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-asynchronous-tasks.run-asynchronous-tasks-parallel
+title: Run asynchronous tasks in parallel
+metadata:
+  title: Run asynchronous tasks in parallel
+  description: "Run asynchronous tasks in parallel."
+  ms.date: 04/07/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-run-asynchronous-tasks-parallel.md)]

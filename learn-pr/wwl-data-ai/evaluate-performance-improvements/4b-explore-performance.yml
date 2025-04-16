@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-performance-improvements.explore-performance
+title: Explore performance scenarios
+metadata:
+  title: Explore performance scenarios
+  description: "Explore performance scenarios"
+  ms.date: 03/31/2025
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4b-explore-performance.md)]

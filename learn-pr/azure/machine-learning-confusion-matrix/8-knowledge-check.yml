@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.machinelearning.evaluate-real-world-models.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Multiple-choice questions
   ms.date: 03/13/2025
   author: s-polly
@@ -47,4 +45,4 @@ quiz:
     - content: "Both of these answers."
       isCorrect: true
       explanation: "Correct. In fact, these answers are often related. Methods like gradient descent rely on measures of slope, which don't exist for nonsmooth functions like accuracy."
-
+

@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-access.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 08/20/2024
   author: wwlpublish
@@ -61,4 +59,4 @@ quiz:
       explanation: "Incorrect. Passwordless authentication is not required for smart card authentication. The key step is to configure Microsoft Entra certificate based authentication."
     - content: "Configure AD FS for user certificate authentication or configure Microsoft Entra certificate based authentication"
       isCorrect: true
-      explanation: "Correct. To use a smart card to authenticate to Microsoft Entra ID, the system administrator must either configure AD FS for user certificate authentication or configure Microsoft Entra certificate based authentication."
+      explanation: "Correct. To use a smart card to authenticate to Microsoft Entra ID, the system administrator must either configure AD FS for user certificate authentication or configure Microsoft Entra certificate based authentication."

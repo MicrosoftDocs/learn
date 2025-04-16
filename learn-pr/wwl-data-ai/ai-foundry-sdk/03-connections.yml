@@ -2,8 +2,6 @@
 uid: learn.wwl.ai-foundry-sdk.connections
 title: Work with project connections
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Work with project connections
   description: Use the Azure AI Foundry SDK to work with connections in a project.
   author: wwlpublish

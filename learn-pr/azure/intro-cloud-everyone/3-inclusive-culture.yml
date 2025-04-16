@@ -2,8 +2,6 @@
 uid: learn.azure.intro-cloud-everyone.inclusive-culture
 title: What is inclusive culture?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is inclusive culture?
   description: You learn about inclusive culture.
   ms.date: 04/30/2024
@@ -14,4 +12,4 @@ durationInMinutes: 2
 content: |
   [!include[](includes/3-inclusive-culture.md)]
 
-
+

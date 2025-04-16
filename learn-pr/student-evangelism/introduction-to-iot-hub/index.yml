@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.oxford.intro-to-iot-hub
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: "Introduction to Azure IoT Hub"
   description: "Learn how to assess the characteristics of Azure IoT Hub and determine scenarios when to use IoT Hub."
   ms.date: 07/20/2024
@@ -41,4 +39,4 @@ units:
 - learn.oxford.intro-to-iot-hub.when-to-use-iot-hub
 - learn.oxford.intro-to-iot-hub.knowledge-check
 - learn.oxford.intro-to-iot-hub.summary
-
+

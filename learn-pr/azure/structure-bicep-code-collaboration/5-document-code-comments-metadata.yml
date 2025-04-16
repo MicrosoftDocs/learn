@@ -2,8 +2,6 @@
 uid: learn.azure.structure-bicep-code-collaboration.document-code-comments-metadata
 title: Document your code by adding comments and metadata
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Document your code by adding comments and metadata
   description: Learn how to use comments, metadata, and tags in your Bicep code.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/5-document-code-comments-metadata.md)]
-
+

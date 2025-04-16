@@ -2,8 +2,6 @@
 uid: learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.query-files
 title: Query files using a serverless SQL pool
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Query files using a serverless SQL pool
   description: "Query files using a serverless SQL pool"
   ms.date: 09/07/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-query-files.md)]
+  [!include[](includes/3-query-files.md)]

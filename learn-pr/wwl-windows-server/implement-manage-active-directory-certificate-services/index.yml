@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-manage-active-directory-certificate-services
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement and manage Active Directory Certificate Services
   description: "Implement and manage Active Directory Certificate Services"
   ms.date: 06/11/2024
@@ -54,4 +52,4 @@ units:
 - learn.wwl.implement-manage-active-directory-certificate-services.knowledge-check
 - learn.wwl.implement-manage-active-directory-certificate-services.summary
 badge:
-  uid: learn.wwl.implement-manage-active-directory-certificate-services.badge
+  uid: learn.wwl.implement-manage-active-directory-certificate-services.badge

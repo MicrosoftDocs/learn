@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Introduction
   description: In this unit, you learn about a business problem that can be addressed by using API Management to control access to an API.
-  ms.date: 06/13/2023
+  ms.date: 03/26/2025
   author: dlepow
   ms.author: danlep
   ms.topic: unit

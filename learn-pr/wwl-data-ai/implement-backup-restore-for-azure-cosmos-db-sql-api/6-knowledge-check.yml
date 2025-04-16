@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implementing-backup-restore-for-azure-cosmos-db-sql-api.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 02/27/2024
   author: wwlpublish
@@ -47,4 +45,4 @@ quiz:
       explanation: "That's correct. Currently continuous backups are only supported for an Azure Cosmos DB account configured for single-write region."
     - content: "Firewall and VNET settings are only recovered for the restored Azure Cosmos DB account region."
       isCorrect: false
-      explanation: "That's incorrect. Continuous backup mode doesn't restore any Firewall, VNET, private endpoint settings."
+      explanation: "That's incorrect. Continuous backup mode doesn't restore any Firewall, VNET, private endpoint settings."

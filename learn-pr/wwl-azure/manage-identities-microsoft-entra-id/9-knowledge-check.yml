@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-identities-microsoft-entra-id.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 07/03/2024
   author: wwlpublish
@@ -72,4 +70,4 @@ quiz:
       explanation: "Correct. As part of the sign-up flow, a company can provide options for different social or enterprise identity providers."
     - content: "API connectors cannot be used to integrate self-service sign-up user flows with external cloud systems."
       isCorrect: false
-      explanation: "Incorrect. API connectors can be used to integrate self-service sign-up user flows with external cloud systems."
+      explanation: "Incorrect. API connectors can be used to integrate self-service sign-up user flows with external cloud systems."

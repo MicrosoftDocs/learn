@@ -2,13 +2,11 @@
 uid: learn.wwl.use-delta-lake-azure-databricks.exercise
 title: Exercise - Use Delta Lake in Azure Databricks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Use Delta Lake in Azure Databricks
   description: "Exercise - Use Delta Lake in Azure Databricks"
   ms.date: 08/07/2024
   author: wwlpublish
-  ms.author: theresai
+  ms.author: jamesh
   ms.topic: unit
 azureSandbox: false
 labModal: false

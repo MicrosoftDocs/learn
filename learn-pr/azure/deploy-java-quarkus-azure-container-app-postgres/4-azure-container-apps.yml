@@ -2,8 +2,6 @@
 uid: learn.azure.deploy-java-quarkus-azure-container-app-postgres.4-aca
 title: Set up Azure Container Apps
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Set up Azure Container Apps
   description: Learn about setting up the Azure Container Apps resources and the PostgreSQL database.
   ms.date: 03/06/2025
@@ -18,4 +16,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/4-azure-container-apps.md)]
-
+

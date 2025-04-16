@@ -3,8 +3,6 @@ uid: learn.azure.child-extension-bicep-templates.exercise-define-child-resources
 title: Exercise - Define child resources
 sandbox: true
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Define child resources
   description: Learn how to create child resources in your Bicep template.
@@ -17,4 +15,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-define-child-resources.md)]
-
+

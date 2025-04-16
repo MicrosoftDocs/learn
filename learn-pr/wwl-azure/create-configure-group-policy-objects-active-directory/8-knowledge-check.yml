@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-configure-group-policy-objects-active-directory.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 09/22/2024
   author: wwlpublish
@@ -59,4 +57,4 @@ quiz:
       explanation: "Incorrect. Local GPOs are primarily used when computers aren't connected to domain environments."
     - content: "Default Domain Policy"
       isCorrect: true
-      explanation: "Correct. The Default Domain Policy GPO is linked to the domain, and it applies to Authenticated Users. It contains policy settings that specify password, account lockout, and Kerberos version 5 authentication protocol policies."
+      explanation: "Correct. The Default Domain Policy GPO is linked to the domain, and it applies to Authenticated Users. It contains policy settings that specify password, account lockout, and Kerberos version 5 authentication protocol policies."

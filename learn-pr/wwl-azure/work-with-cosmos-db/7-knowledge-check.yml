@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.work-with-cosmos-db.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 07/15/2024
   author: wwlpublish
@@ -48,4 +46,4 @@ quiz:
       explanation: "Incorrect. The lease container does not process the change feed, it coordinates the processing across multiple workers."
     - content: "It acts as a state storage and coordinates processing the change feed across multiple workers."
       isCorrect: true
-      explanation: "Correct. The lease container acts as a state storage and coordinates processing the change feed across multiple workers."
+      explanation: "Correct. The lease container acts as a state storage and coordinates processing the change feed across multiple workers."

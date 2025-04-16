@@ -3,8 +3,6 @@ uid: learn.advocates.cv-classify-bird-species.3b-train-model
 title: Exercise - Train the model
 azureSandbox: true
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Train the model
   description: Train the model
   author: cassiebreviu
@@ -19,4 +17,4 @@ metadata:
 durationInMinutes: 15
 content: |
   [!include[](includes/3b-train-model.md)]
-
+

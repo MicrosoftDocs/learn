@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.business-continuity.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 04/27/2023
   author: mistoyanwork
@@ -50,4 +48,4 @@ quiz:
       explanation: "That's correct. The Azure VM can't be in a Stopped state if you want to replicate it."
     - content: "Crash-consistent recovery points couldn't be created every five minutes."
       isCorrect: false
-      explanation: "That's incorrect. This won't necessarily stop the VM from being replicated."
+      explanation: "That's incorrect. This won't necessarily stop the VM from being replicated."

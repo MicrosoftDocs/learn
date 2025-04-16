@@ -2,8 +2,6 @@
 uid: learn.app-package-management-using-helm
 title: Application and package management using Helm
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   description: Helm is an application package manager for Kubernetes that you use to standardize and simplify the deployment of cloud-native applications on Kubernetes. Here, you learn how to install third-party packages, called Helm charts, and how to create and install Helm charts for the workloads your teams develop.
   title: Application and package management using Helm
   author: schaffererin
@@ -46,4 +44,4 @@ units:
 - learn.app-package-management-using-helm.exercise-install-helm-chart
 - learn.app-package-management-using-helm.manage-helm-release
 - learn.app-package-management-using-helm.summary
-
+

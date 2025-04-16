@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-identity-access-labs.create-conditional-access-policy
+title: Perform basic Conditional Access policy tasks
+metadata:
+  title: Perform basic Conditional Access policy tasks
+  description: "Perform the lab to explore creating and evaluating the impact of Conditional Access policies."
+  ms.date: 04/02/2025
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-create-conditional-access-policy.md)]

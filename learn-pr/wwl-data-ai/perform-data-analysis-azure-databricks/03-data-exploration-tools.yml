@@ -2,8 +2,6 @@
 uid: learn.wwl.perform-data-analysis-azure-databricks.data-exploration-tools
 title: Data exploration tools in Azure Databricks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Data exploration tools in Azure Databricks
   description: "Data exploration tools in Azure Databricks"
   ms.date: 12/12/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/03-data-exploration-tools.md)]
+  [!include[](includes/03-data-exploration-tools.md)]

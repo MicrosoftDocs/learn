@@ -2,8 +2,6 @@
 uid: learn.control-and-organize-with-resource-manager.3-use-tagging-to-organize-resources
 title: Use tagging to organize resources
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use tagging to organize resources
   description: In this unit, we'll discuss how to use tagging to organize resources.
   ms.date: 10/29/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/3-use-tagging-to-organize-resources.md)]
-
+

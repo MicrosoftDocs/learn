@@ -2,8 +2,6 @@
 uid: learn.wwl.just-in-time-access.enable-just-in-time-virtual-machine-access
 title: Enable just-in-time access on virtual machines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Enable just-in-time access on virtual machines
   description: "Enable just-in-time access on virtual machines"
   ms.date: 05/31/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 15
 content: |
-  [!include[](includes/3-enable-just-in-time-virtual-machine-access.md)]
+  [!include[](includes/3-enable-just-in-time-virtual-machine-access.md)]

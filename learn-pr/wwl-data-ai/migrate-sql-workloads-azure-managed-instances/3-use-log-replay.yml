@@ -2,12 +2,10 @@
 uid: learn-wwl.migrate-sql-workloads-azure-managed-instances.use-log-replay
 title: Use Log Replay Service (LRS) to migrate
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use Log Replay to migrate
   description: "Learn to use Log Replay Services to migrate to Azure SQL Managed Instance"
-  ms.date: 05/26/2021
-  author: jupadrao
+  ms.date: 04/14/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false

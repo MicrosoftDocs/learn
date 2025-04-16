@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.connect-on-premises-network-with-vpn-gateway
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Connect your on-premises network to Azure with VPN Gateway
   description: Learn about the virtual private network (VPN) gateway options in Azure and typical scenarios for using a VPN. Create and test VPNs to securely connect sites to Azure.
   manager: kumud
@@ -40,4 +38,4 @@ units:
 - learn.connect-on-premises-network-with-vpn-gateway.5-summary
 badge:
   uid: learn.connect-on-premises-network-with-vpn-gateway.badge
-
+

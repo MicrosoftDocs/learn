@@ -13685,6 +13685,11 @@
       "redirect_url": "https://learn.microsoft.com/training/modules/github-introduction-products/6-summary"
     },
     {
+      "source_path_from_root": "/learn-pr/github/github-introduction-administration/5-knowledge-check.yml",
+      "redirect_url": "/training/modules/github-introduction-administration/knowledge-check",
+      "redirect_document_id": true
+    },
+    {
       "source_path_from_root": "/learn-pr/github/introduction-to-github-visual-studio-code/1-introduction.yml",
       "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview"
     },
@@ -16073,7 +16078,37 @@
     {
       "source_path_from_root": "/learn-pr/languages/python-if-elif-else/index.md",
       "redirect_url": "/training/modules/python-boolean-types"
-    }, 
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/fundamentals-machine-learning/9-azure-machine-learning.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-machine-learning/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/fundamentals-generative-ai/3-language models.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/fundamentals-generative-ai/4-azure-openai.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/fundamentals-generative-ai/5-copilots.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/fundamentals-generative-ai/5a-microsoft-copilot.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/fundamentals-generative-ai/6a-building-custom-copilots.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/fundamentals-generative-ai/",
+      "redirect_document_id": false
+    },
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-openai/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/prepare-azure-ai-development/",
@@ -26871,6 +26906,16 @@
     {
       "source_path_from_root": "/learn-pr/wwl-azure/manage-system-health-azure-stack-hub/11-summary.md",
       "redirect_url": "/training/modules/manage-system-health-azure-stack-hub/12-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/github/github-introduction-products/5-knowledge-check.yml",
+      "redirect_url": "/training/modules/github-introduction-products/8-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/github/github-introduction-products/6-summary.yml",
+      "redirect_url": "/training/modules/github-introduction-products/9-summary",
       "redirect_document_id": true
     },
     {
@@ -46040,6 +46085,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/intro-to-microsoft-purview/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-microsoft-purview/2-what-is-microsoft-purview.yml",
+      "redirect_url": "https://learn.microsoft.com/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-microsoft-purview/3-how-microsoft-purview-works.yml",
+      "redirect_url": "https://learn.microsoft.com/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-microsoft-purview/4-when-to-use-microsoft-purview.yml",
+      "redirect_url": "https://learn.microsoft.com/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-microsoft-purview/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-microsoft-purview/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/purview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-microsoft-purview/index.yml",
+      "redirect_url": "https://learn.microsoft.com/purview/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/improve-api-developer-experience-with-swagger/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/aspnet/core/fundamentals/openapi/aspnetcore-openapi",
       "redirect_document_id": false
@@ -46393,6 +46473,371 @@
       "source_path": "learn-pr/wwl-azure/guided-project-langstons-ant/06-summary.md",
       "redirect_url": "/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/2-comprehensive-experience-for-all-cloud-environments.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/3-get-high-level-insights-permissions-management-dashboard.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/4-knowledge-check-insights.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/5-dive-deeper-with-analytics-tab.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/6-knowledge-check-analytics.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/7-develop-better-understanding-of-your-environment-with-reports.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/8-analyze-historical-data-with-audit-tab.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/9-act-on-your-findings-with-remediation-tab.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/10-knowledge-check-remediation.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/11-stay-informed-with-continuous-monitoring.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/12-knowledge-check-monitoring.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/13-manage-access-to-microsoft-entra-permissions-management.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/14-put-it-all-together.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/15-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "learn-pr/permissions-managements/explore-features-of-permissions-management/index.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "learn-pr/azure/build-cosmos-db-java-app/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-cosmos-db-java-app/2-setup.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-cosmos-db-java-app/3-crud-operations.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-cosmos-db-java-app/4-query.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-cosmos-db-java-app/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-cosmos-db-java-app/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-cosmos-db-java-app/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/cosmos-db/nosql/quickstart-java",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-high-availability/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-high-availability/2-backup-restore.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-high-availability/3-exercise-restore-point-in-time.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-high-availability/4-high-availability-architecture.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-high-availability/5-exercise-general-purpose-high-availability.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-high-availability/6-exercise-business-critical-high-availability.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-high-availability/7-higher-availablity-options.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-high-availability/8-exercise-auto-failover-groups.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-high-availability/9-availability-consistency.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-high-availability/10-configure-monitor.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-high-availability/11-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-high-availability/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-high-availability-disaster-recovery-strategies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-performance/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/monitor-optimize-operational-resources-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-performance/2-performance-capabilities.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/monitor-optimize-operational-resources-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-performance/3-configure-maintain-performance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/monitor-optimize-operational-resources-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-performance/4-monitor-troubleshoot-performance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/monitor-optimize-operational-resources-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-performance/5-exercise-monitor-troubleshoot-performance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/monitor-optimize-operational-resources-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-performance/6-accelerate-tune-performance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/monitor-optimize-operational-resources-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-performance/7-exercise-scale-performance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/monitor-optimize-operational-resources-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-performance/8-exercise-optimize-app-performance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/monitor-optimize-operational-resources-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-performance/9-intelligent-performance.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/monitor-optimize-operational-resources-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-performance/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/monitor-optimize-operational-resources-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-performance/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/monitor-optimize-operational-resources-sql-server/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-secure-data/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-secure-environment-database-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-secure-data/2-security-capabilities.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-secure-environment-database-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-secure-data/3-exercise-configure-sql-database.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-secure-environment-database-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-secure-data/4-exercise-network-security.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-secure-environment-database-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-secure-data/5-exercise-configure-authentication.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-secure-environment-database-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-secure-data/6-data-protection.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-secure-environment-database-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-secure-data/7-security-management.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-secure-environment-database-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-secure-data/8-exercise-advanced-data-security.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-secure-environment-database-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-secure-data/9-exercise-data-classification-masking-audit.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-secure-environment-database-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-secure-data/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-secure-environment-database-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-secure-data/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-secure-environment-database-service/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-model-ai-vision-image-classification/index.md",
+      "redirect_url": "/training/modules/classify-images/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-model-ai-vision-image-classification/3-create-custom-project.md",
+      "redirect_url": "/training/modules/classify-images/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-model-ai-vision-image-classification/5-exercise.md",
+      "redirect_url": "/training/modules/classify-images/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-model-ai-vision-image-classification/1-introduction.md",
+      "redirect_url": "/training/modules/classify-images/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-model-ai-vision-image-classification/6-knowledge-check.md",
+      "redirect_url": "/training/modules/classify-images/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-model-ai-vision-image-classification/4-label-train-custom-model.md",
+      "redirect_url": "/training/modules/classify-images/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-model-ai-vision-image-classification/7-summary.md",
+      "redirect_url": "/training/modules/classify-images/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/custom-model-ai-vision-image-classification/2-understand-custom-model-types.md",
+      "redirect_url": "/training/modules/classify-images/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/intro-to-entra-permissions-management/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/intro-to-entra-permissions-management/2-what-is-ciem.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/intro-to-entra-permissions-management/3-what-is-entra-permissions-management.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/intro-to-entra-permissions-management/4-how-entra-permissions-management-works.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/intro-to-entra-permissions-management/5-when-to-use-permissions-management.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/intro-to-entra-permissions-management/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/intro-to-entra-permissions-management/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/permissions-managements/intro-to-entra-permissions-management/index.yml",
+      "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
     }
- ]
+  ]
 }

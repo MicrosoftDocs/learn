@@ -2,8 +2,6 @@
 uid: learn.improve-reliability-deployment
 title: "Improve your reliability with modern operations practices: Deployment"
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: "Improve your reliability with modern operations practices: Deployment"
   description: Learn about deployment practices that can help you sustainably achieve the appropriate level of reliability in your systems, services, and products.
   ms.date: 06/07/2024
@@ -47,4 +45,4 @@ units:
 
 badge:
   uid: learn.improve-reliability-deployment.badge
-
+

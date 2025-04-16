@@ -2,13 +2,11 @@
 uid: learn.wwl.use-delta-lake-azure-databricks.data-integrity-with-delta-lake
 title: Data integrity with Delta Lake
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Data integrity with Delta Lake
   description: "Data integrity with Delta Lake"
   ms.date: 08/07/2024
   author: wwlpublish
-  ms.author: theresai
+  ms.author: jamesh
   ms.topic: unit
 azureSandbox: false
 labModal: false

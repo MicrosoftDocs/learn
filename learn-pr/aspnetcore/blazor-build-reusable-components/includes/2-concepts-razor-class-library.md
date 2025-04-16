@@ -1,10 +1,10 @@
 Components in web applications give developers the ability to reuse portions of an application user interface throughout the application. By using Razor class libraries, developers can share and reuse these components across many applications.
 
-In this unit, you'll learn how to create a Razor class library and then use it to share rendered and static content for Blazor applications to customize and display.
+In this unit, you learn how to create a Razor class library. You then use it to share rendered and static content for Blazor applications to customize and display.
 
-## About Razor class libraries
+## Razor class libraries
 
-A Razor class library is a .NET project type that contains Razor components, pages, HTML, Cascading Style Sheet (CSS) files, JavaScript, images, and other static web content that can be referenced by a Blazor application. Like other .NET class library projects, Razor class libraries can be bundled as a NuGet package and shared on NuGet package repositories such as NuGet.org.
+A Razor class library is a .NET project type. It contains Razor components, pages, HTML, Cascading Style Sheet (CSS) files, JavaScript, images, and other static web content that a Blazor application can reference. Like other .NET class library projects, Razor class libraries can be bundled as a NuGet package and shared on NuGet package repositories such as NuGet.org.
 
 Let's look at the default template for creating a Razor class library.
 
@@ -55,11 +55,11 @@ A class library is a common package delivery structure in .NET applications, and
 
 - The project file contains an SDK reference to *Microsoft.NET.Sdk.Razor* to declare that it contains and creates Razor content as a Razor class library.
 - The `SupportedPlatform` entry declares that this library can be used in a `browser` platform, namely WebAssembly.
-- The `PackageReference` to the `Microsoft.AspNetCore.Components.Web` library gives access to the base Blazor components that are shipped with the framework. This lets you use those simple components to help you build more complex components.
+- The `PackageReference` to the `Microsoft.AspNetCore.Components.Web` library gives access to the base Blazor components that are shipped with the framework. This access lets you use those simple components to help you build more complex components.
 
 ### Razor component contents
 
-The initial Razor component that's delivered is simple. It contains only an HTML `div` element with a short block of text:
+This initial Razor component is simple. It contains only an HTML `div` element with a short block of text:
 
 ```razor
 <div class="my-component">
@@ -71,7 +71,7 @@ This component interacts with other Blazor components and pages that reference i
 
 ### Static asset delivery
 
-You can reference the contents of the *wwwroot* folder relatively among the other contents of that folder and the components' individual CSS files, such as *Component1.razor.css*, as files in the same base folder. For example, the default CSS adds a 2 pixel dashed red border and a background image style that uses the *background.png* image in the *wwwroot* folder. No path is required to make this reference from the CSS to the content that resides in the *wwwroot* folder.
+You can reference the contents of the *wwwroot* folder relatively among the other contents of that folder. You can also relatively reference the components' individual CSS files, such as *Component1.razor.css*, as files in the same base folder. For example, the default CSS adds a two pixel dashed red border and a background image style that uses the *background.png* image in the *wwwroot* folder. No path is required to make this reference from the CSS to the content that resides in the *wwwroot* folder.
 
 ```css
 .my-component {
@@ -82,7 +82,7 @@ You can reference the contents of the *wwwroot* folder relatively among the othe
 }
 ```
 
-The contents of the *wwwroot* folder are available to be referenced by hosted Blazor applications with an absolute folder reference in the format:
+The contents of the *wwwroot* folder are available for referencing by hosted Blazor applications with an absolute folder reference in the format:
 
 ```dotnetcli
 /_content/{PACKAGE_ID}/{PATH_AND_FILENAME_INSIDE_WWWROOT}

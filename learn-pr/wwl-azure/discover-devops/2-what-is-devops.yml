@@ -2,8 +2,6 @@
 uid: learn.wwl.discover-devops.what-is-devops
 title: 'What is DevOps?'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'What is DevOps?'
   description: "Understanding the meaning and benefits of breaking down silos between development and operations teams."
   ms.date: 02/05/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-what-is-devops.md)]
+  [!include[](includes/2-what-is-devops.md)]

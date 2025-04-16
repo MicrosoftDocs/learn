@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-cost-management-azure.describe-purpose-of-tags
 title: Describe the purpose of tags
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe the purpose of tags
   description: "Describe the purpose of tags"
   ms.date: 09/19/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/7-describe-purpose-of-tags.md)]
+  [!include[](includes/7-describe-purpose-of-tags.md)]

@@ -2,8 +2,6 @@
 uid: learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.explore-best-practices-for-solution-learning-path-6
 title: Explore the best practices for Solution Learning Path 6
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore the best practices for Solution Learning Path 6
   description: Explore the best practices for Solution Learning Path 6
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/9-explore-best-practices-for-solution-learning-path-6.md)]
-
+

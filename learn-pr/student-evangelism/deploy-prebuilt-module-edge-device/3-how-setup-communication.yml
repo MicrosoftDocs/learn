@@ -2,8 +2,6 @@
 uid: learn.oxford.deploy-prebuilt-module-edge-device.3-how-setup-communication
 title: Set up communication between IoT Hub and IoT Edge
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Set up communication between IoT Hub and IoT Edge
   description: In this unit, we provide the definition of resource group, how to create an IoT Edge device, an IoT Hub, and how to set up communication between IoT Edge and IoT Hub
   ms.date: 11/27/2023
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 7 # dummy number at present
 content: |
   [!include[](includes/3-how-setup-communication.md)]
-
+

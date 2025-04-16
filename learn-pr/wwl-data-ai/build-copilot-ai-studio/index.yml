@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.build-copilot-ai-studio
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Build a RAG-based agent with your own data using Azure AI Foundry
   description: Agents can work alongside you to provide suggestions, generate content, or help you make decisions. Agents use language models as a form of generative artificial intelligence (AI) and will answer your questions using the data they were trained on. To ensure an agent retrieves information from a specific source, you can add your own data when building an agent with the Azure AI Foundry.
   author: madiepev
@@ -46,4 +44,4 @@ units:
 - learn.wwl.build-copilot-ai-studio.summary
 badge:
   uid: learn.wwl.build-copilot-ai-studio.badge
-
+

@@ -2,8 +2,6 @@
 uid: learn.introduction-to-linux-on-azure.identify-azure-paas-options-for-linux-deployments
 title: Identify Azure PaaS options for Linux deployments
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Identify Azure PaaS options for Linux deployments
   description: Learn about the Azure PaaS options for Linux deployments.
   ms.date: 10/31/2024
@@ -30,4 +28,4 @@ quiz:
       explanation: "Incorrect. The Azure portal is a core Azure configuration tool and not a PaaS-specific service."
     - content: "Azure App Service"
       isCorrect: true
-      explanation: "Correct. Azure App Service is a managed, web application-hosting platform that can host applications on Linux."
+      explanation: "Correct. Azure App Service is a managed, web application-hosting platform that can host applications on Linux."

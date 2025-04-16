@@ -2,8 +2,6 @@
 uid: learn.azure.intro-to-form-recognizer.what-is-form-recognizer
 title: What is Azure AI Document Intelligence?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is Azure AI Document Intelligence?
   description: What is Azure AI Document Intelligence?
   author: laujan
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!INCLUDE[](includes/2-what-is-form-recognizer.md)]
-
+

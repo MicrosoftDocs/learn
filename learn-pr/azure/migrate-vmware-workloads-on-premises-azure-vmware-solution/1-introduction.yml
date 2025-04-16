@@ -2,8 +2,6 @@
 uid: learn.migrate-vmware-workloads-on-premises-azure-vmware-solution.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: Introduction.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/1-introduction.md)]
-
+

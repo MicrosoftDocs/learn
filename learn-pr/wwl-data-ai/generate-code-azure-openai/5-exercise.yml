@@ -2,8 +2,6 @@
 uid: learn.wwl.generate-code-azure-openai.exercise
 title: Exercise - Generate and improve code with Azure OpenAI Service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Generate and improve code with Azure OpenAI Service
   description: Get hands on experience with Azure OpenAI Service to generate and improve code.
   author: ivorb
@@ -18,4 +16,4 @@ labId: 152390
 labModal: true
 content: |
   [!include[](includes/5-exercise.md)]
-
+

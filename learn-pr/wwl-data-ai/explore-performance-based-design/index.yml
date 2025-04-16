@@ -1,16 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-performance-based-design
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Explore performance-based design
-  description: Explore performance-based design
-  ms.date: 04/28/2022
-  author: wwlpublish
+  title: Explore performance-based database design
+  description: Explore performance-based database design
+  ms.date: 03/31/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module
   ms.service: azure
-title: Explore performance-based design
+title: Explore performance-based database design
 summary: Explore normalization for relational databases. Investigate the impact of proper datatype usage. Compare types of indexes.
 abstract: |
   After completing this module, you will be able to:

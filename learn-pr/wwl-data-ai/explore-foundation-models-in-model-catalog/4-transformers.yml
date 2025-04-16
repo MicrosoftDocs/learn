@@ -2,8 +2,6 @@
 uid: learn.explore-foundation-models-in-model-catalog.transformers
 title: Understand the transformer architecture used for natural language processing (NLP)
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand the transformer architecture used for natural language processing
   description: Learn about the transformer architecture used in deep learning techniques for NLP.
   author: madiepev
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/4-transformers.md)]
-
+

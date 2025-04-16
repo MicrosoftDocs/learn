@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.training-certification-course-planning-microsoft-learn-educators.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 07/19/2024
   author: wwlpublish
@@ -48,4 +46,4 @@ quiz:
       explanation: "Feedback: Incorrect. Microsoft Learn for Educators does not offer certification exam testing. Advanced role-based certification exams are delivered at a Pearson VUE Testing Center or via their Online Proctoring option."
     - content: "Pearson VUE Testing Center or Online Proctoring."
       isCorrect: true
-      explanation: "Feedback: Correct. Advanced role-based certification exams are delivered at a Pearson VUE Testing Center or via their Online Proctoring option."
+      explanation: "Feedback: Correct. Advanced role-based certification exams are delivered at a Pearson VUE Testing Center or via their Online Proctoring option."

@@ -2,8 +2,6 @@
 uid: learn.wwl.use-delta-lake-azure-synapse-analytics.catalog-tables
 title: Create catalog tables
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create catalog tables
   description: "Create catalog tables"
   ms.date: 10/11/2023
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-catalog-tables.md)]
+  [!include[](includes/4-catalog-tables.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.store-retrieve-json-files.customize-deserialization-behavior
+title: Customize deserialization behavior
+metadata:
+  title: Customize deserialization behavior
+  description: "Customize deserialization behavior"
+  ms.date: 04/08/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-customize-deserialization-behavior.md)]
