@@ -1,4 +1,4 @@
-## Control Access to Actions Within the Enterprise
+## Control access to actions within the enterprise
 Access control in GitHub Actions determines:
 
 - **Who can run workflows that use actions.**
@@ -8,15 +8,15 @@ Access control in GitHub Actions determines:
 
 Enterprise administrators need to **strike a balance** between giving developers flexibility and ensuring security and governance over automation workflows.
 
-### Organization-Wide Policies for Controlling Actions
+### Organization-wide policies for controlling actions
 
 GitHub Enterprise enables administrators to set **organization-wide policies** that control how actions are used across all repositories within an organization. These policies help organizations **restrict the use of third-party actions, enforce security measures, and standardize automation workflows.**
 
-## Repository-Level Permissions for Actions
+## Repository-level permissions for actions
 
 While organization-wide settings apply globally, **repository-level permissions** provide fine-grained control over **who can run workflows and modify actions**.
 
-## Managing Repository-Level Workflow Permissions
+## Managing repository-level workflow permissions
 
 Each repository can define **who can create, edit, and execute workflows**.
 
@@ -29,7 +29,7 @@ Each repository can define **who can create, edit, and execute workflows**.
 By default, GitHub sets workflow permissions to **"Read and Write"**, but enterprises should **restrict it to "Read" unless explicitly required** to prevent unauthorized modifications.
 
 
-### Restricting Who Can Modify Organization-Owned Actions
+### Restricting who can modify organization-owned actions
 
 If an organization hosts **reusable GitHub Actions** in a dedicated repository, access should be **limited to authorized users**.
 
@@ -39,17 +39,17 @@ If an organization hosts **reusable GitHub Actions** in a dedicated repository, 
 
 This ensures that any modifications to **core automation actions** are **reviewed before deployment**.
 
-### Restricting Access to External Actions
+### Restricting access to external actions
 
 GitHub Actions allows the use of **third-party actions**, but external actions **can pose security risks** if not properly vetted. Organizations should control which external actions can be used.
 
-### Risks of Using External Actions
+### Risks of using external actions
 
 - **Malicious Code Execution**: An untrusted external action could introduce vulnerabilities.
 - **Dependency Tampering**: A third-party action may introduce **supply chain attacks**.
 - **Secrets Exposure**: External actions may inadvertently log secrets.
 
-### Configuring External Action Restrictions
+### Configuring external action restrictions
 
 Administrators can **allow or block external actions** in **Organization Settings → Actions → Policies**.
 
@@ -67,7 +67,7 @@ Example: **Allowing Only Verified External Actions**
     - **Manually approve any third-party actions before use**.
 - Save the settings.
 
-### Implementing an Allowlist for External Actions
+### Implementing an allowlist for external actions
 
 Organizations that need specific third-party actions can **create an allowlist** by specifying trusted repositories.
 
@@ -81,11 +81,11 @@ Example: Allow only GitHub’s official `checkout` action:
 Administrators can define this allowlist in **Organization Settings → Actions → Policies**.
 
 
-### Securing Self-Hosted Runners
+### Securing self-hosted runners
 
 Enterprises that use **self-hosted runners** to execute GitHub Actions need to enforce **additional security measures**.
 
-### Risks of Self-Hosted Runners
+### Risks of self-hosted runners
 
 |**Risk**|**Description**|**Mitigation**|
 |---|---|---|
@@ -93,7 +93,7 @@ Enterprises that use **self-hosted runners** to execute GitHub Actions need to e
 |**Secret Exposure**|Sensitive credentials may be leaked to compromised runners.|Store secrets in **GitHub Secrets Management** instead of environment variables.|
 |**Runner Compromise**|If runners are not isolated, workflows from different teams could interfere.|Use **ephemeral runners** that reset after each job.|
 
-### Restricting Access to Self-Hosted Runners
+### Restricting access to self-hosted runners
 
 1. **Navigate to Organization Settings → Actions → Runners**.
 2. **Create a Runner Group** to limit access.
@@ -101,7 +101,7 @@ Enterprises that use **self-hosted runners** to execute GitHub Actions need to e
     - Allow runners only for internal repositories.
     - Restrict usage to specific teams.
 
-## Configure Organizational Use Policies for GitHub Actions
+## Configure organizational use policies for GitHub actions
 
 This guide provides a detailed explanation of how to configure organizational use policies for GitHub Actions, covering:
 
@@ -111,7 +111,7 @@ This guide provides a detailed explanation of how to configure organizational us
 4. Secrets management and access control.
 5. Monitoring and auditing workflows.
 
-### Allowed Actions and Reusable Workflows
+### Allowed actions and reusable workflows
 
 One of the **primary security policies** enterprises should enforce is controlling **which GitHub Actions can be used within an organization**. Administrators can configure policies to:
 
@@ -121,7 +121,7 @@ One of the **primary security policies** enterprises should enforce is controlli
 
 ![alt text](image.png)
 
-## Configuring Allowed Actions Policy
+## Configuring allowed actions policy
 
 1. Navigate to Organization Settings → Actions → Policies.
 
@@ -140,11 +140,11 @@ One of the **primary security policies** enterprises should enforce is controlli
    
 4. Save the settings.
    
-## Configuring Workflow Permissions and Security Policies**
+## Configuring workflow permissions and security policies
 
 Workflow permissions define **what access levels GitHub Actions workflows have in repositories**. These settings determine whether workflows **can modify repository content** or **only read** repository data.
 
-### Configuring Default Workflow Permissions
+### Configuring default workflow permissions
 
 GitHub provides two options:
 
@@ -155,7 +155,7 @@ GitHub provides two options:
     - Workflows **can push commits, create issues, and modify settings**.
     - Should only be enabled for **trusted workflows**.
 
-#### Steps to Configure Default Workflow Permissions
+#### Steps to configure default workflow permissions
 
 1. **Navigate to Organization Settings → Actions → General**.
 2. **Under "Workflow Permissions"**, choose:
@@ -163,11 +163,11 @@ GitHub provides two options:
     - **Read and write** (Only for specific cases).
 3. **Save the settings**.
 
-### Enforcing Approval for Workflow Runs
+### Enforcing approval for workflow runs
 
 To **prevent unauthorized workflow executions**, administrators can **require manual approval** before workflows run in **forked repositories**.
 
-#### Steps to Require Approval for External Contributions
+#### Steps to require approval for external contributions
 
 1. **Navigate to Organization Settings → Actions → Policies**.
 2. **Under "Fork Pull Request Workflows"**, select:
@@ -177,7 +177,7 @@ To **prevent unauthorized workflow executions**, administrators can **require ma
 
 This policy **prevents security risks** associated with running workflows from **untrusted forks**.
 
-### Self-Hosted Runner Restrictions
+### Self-hosted runner restrictions
 
 Self-hosted runners provide more control over CI/CD execution but **introduce security risks** if not properly configured. Organizations should enforce policies to:
 
@@ -185,7 +185,7 @@ Self-hosted runners provide more control over CI/CD execution but **introduce se
 - **Limit access to specific teams**.
 - **Use ephemeral (temporary) runners** for security.
 
-### Configuring Runner Access
+### Configuring runner access
 
 Administrators can **limit which repositories** have access to self-hosted runners.
 
@@ -199,18 +199,18 @@ Administrators can **limit which repositories** have access to self-hosted runne
 4. **Save the settings**.
 
 
-### Managing Secrets and Access Control
+### Managing secrets and access control
 
 GitHub Actions often require **API keys, credentials, and environment variables**. These should be **securely stored using GitHub Secrets Management**.
 
-#### Organizational Secrets vs. Repository Secrets
+#### Organizational secrets vs. repository secrets
 
 |**Type**|**Scope**|**Best Use Case**|
 |---|---|---|
 |**Repository Secrets**|Specific to one repository.|For repository-specific credentials.|
 |**Organization Secrets**|Available to multiple repositories.|For shared enterprise credentials.|
 
-### Configuring Organizational Secrets
+### Configuring organizational secrets
 
 1. **Navigate to Organization Settings → Secrets and Variables → Actions**.
 2. **Click "New Secret"**.
@@ -220,7 +220,7 @@ GitHub Actions often require **API keys, credentials, and environment variables*
     - Selected repositories.
 5. **Save the secret**.
 
-### Best Practices for Managing Secrets
+### Best practices for managing secrets
 
 - **Use environment variables carefully** to prevent secret exposure.
 - **Rotate secrets regularly** to enhance security.
@@ -230,7 +230,7 @@ GitHub Actions often require **API keys, credentials, and environment variables*
 
 Organizations must **monitor** the usage of GitHub Actions to ensure compliance and detect unauthorized activity.
 
-#### Enabling Audit Logs for GitHub Actions
+#### Enabling audit logs for GitHub actions
 
 Audit logs provide insights into:
 
@@ -238,16 +238,16 @@ Audit logs provide insights into:
 - Which actions were executed.
 - What permissions workflows used.
 
-##### Steps to Enable Audit Logs
+##### Steps to enable audit logs
 
 1. Navigate to Organization Settings → Security → Audit Log.
 2. Filter logs by "actions" to see workflow execution history.
 
-### Enforcing Log Retention Policies
+### Enforcing log retention policies
 
 Enterprises should configure **log retention** to comply with security policies. Retaining logs ensures that organizations can review historical workflow executions, detect suspicious activities, and comply with industry regulations.
 
-#### Steps to Configure Log Retention Policies
+#### Steps to configure log retention policies
 
 1. Navigate to Organization Settings → Security → Audit Log.
 2. Set the log retention period to match compliance requirements:
