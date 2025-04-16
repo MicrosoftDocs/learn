@@ -39,7 +39,6 @@ products:
 subjects:
 - cloud-security
 units:
-- learn.wwl.governance-security.provide-access-key-vault-keys-certificates-secrets
 - learn.wwl.governance-security.summary
 badge:
   uid: learn.wwl.governance-security.badge
