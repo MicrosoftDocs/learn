@@ -5665,3 +5665,8 @@ achievements:
   title: Plan, implement, and manage governance for security
   summary: This module focuses on enabling administrators to effectively plan, implement, and manage security governance in Azure, ensuring compliance with organizational policies and best practices.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.manage-authentication-microsoft-entra-id.badge
+  type: badge
+  title: Manage authentication by using Microsoft Entra ID
+  summary: This module is designed to provide administrators with the knowledge and skills needed to manage authentication effectively using Microsoft Entra ID, ensuring secure access to resources and enhancing user experience.
+  iconUrl: /training/achievements/generic-badge.svg
