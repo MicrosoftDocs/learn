@@ -41,7 +41,6 @@ units:
 - learn.wwl.manage-authorization-microsoft-entra-id.azure-management-groups
 - learn.wwl.manage-authorization-microsoft-entra-id.configure-azure-role-permissions
 - learn.wwl.manage-authorization-microsoft-entra-id.azure-role-based-access-control
-- learn.wwl.manage-authorization-microsoft-entra-id.azure-built-in-roles
 - learn.wwl.manage-authorization-microsoft-entra-id.microsoft-entra-built-in-roles
 - learn.wwl.manage-authorization-microsoft-entra-id.built-roles-microsoft-entra-id
 - learn.wwl.manage-authorization-microsoft-entra-id.microsoft-entra-role-based-access-control
