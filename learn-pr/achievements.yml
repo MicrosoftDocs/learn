@@ -5680,3 +5680,8 @@ achievements:
   title: Manage identities in Microsoft Entra ID
   summary: This module focuses on effectively managing identities and enhancing security in Microsoft Entra ID, ensuring that users, groups, and external identities are protected against security threats and unauthorized access.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.manage-identity-access-new.trophy
+  type: trophy
+  title: 'AZ-500: Manage identity and access'
+  summary: Master identity and access management in Microsoft Entra ID, securing users, groups, and external identities, implementing authentication and authorization controls, and managing application access and security.
+  iconUrl: /training/achievements/generic-trophy.svg
