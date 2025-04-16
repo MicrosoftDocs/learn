@@ -46973,6 +46973,11 @@
       "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/19-knowledge-check.md",
       "redirect_url": "/training/modules/manage-security-controls-identity-access/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/3-microsoft-entra-cloud-sync.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
     }
   ]
 }
