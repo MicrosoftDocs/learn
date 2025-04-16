@@ -47093,6 +47093,11 @@
       "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/21-delegation-and-roles-in-entitlement-management.md",
       "redirect_url": "/training/modules/manage-security-controls-identity-access/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/12-enable-microsoft-entra-permissions-management-your-organization.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
     }
   ]
 }
