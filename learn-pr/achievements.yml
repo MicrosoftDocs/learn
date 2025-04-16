@@ -5670,3 +5670,8 @@ achievements:
   title: Manage authentication by using Microsoft Entra ID
   summary: This module is designed to provide administrators with the knowledge and skills needed to manage authentication effectively using Microsoft Entra ID, ensuring secure access to resources and enhancing user experience.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.manage-authorization-microsoft-entra-id.badge
+  type: badge
+  title: Manage authorization by using Microsoft Entra ID
+  summary: This module is designed to provide administrators with the knowledge and skills required to effectively manage authorization using Microsoft Entra ID, ensuring that users have the appropriate access to resources and data.
+  iconUrl: /training/achievements/generic-badge.svg
