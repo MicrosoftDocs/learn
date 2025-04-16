@@ -46888,6 +46888,11 @@
       "source_path": "learn-pr/wwl-azure/governance-security/13-configure-cryptographic-key-auto-rotation-azure-key-vault.md",
       "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/3-create-custom-azure-security-initiatives-policies.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/",
+      "redirect_document_id": false
     }
   ]
 }
