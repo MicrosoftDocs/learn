@@ -20,11 +20,11 @@ The following table compares GitHub-hosted runners versus self-hosted runners. U
 
 ## Manage runners for the enterprise
 
-Managing runners for the enterprise involves configuring and securing both GitHub-hosted and self-hosted runners to ensure efficient and secure CI/CD workflows. This includes setting up IP allow lists to control access, enhancing security by restricting runner access to specific IP addresses, and ensuring compliance with organizational policies. Proper configuration of IP allow lists for both GitHub-hosted and self-hosted runners is crucial for maintaining secure and reliable interactions between internal applications and GitHub Actions runners. Regular updates and reviews of these configurations are necessary to adapt to changes in IP address ranges and maintain optimal security.
+Managing runners for the enterprise involves configuring and securing both GitHub-hosted and self-hosted runners to ensure efficient and secure CI/CD workflows. This includes setting up IP allowlists to control access, enhancing security by restricting runner access to specific IP addresses, and ensuring compliance with organizational policies. Proper configuration of IP allowlists for both GitHub-hosted and self-hosted runners is crucial for maintaining secure and reliable interactions between internal applications and GitHub Actions runners. Regular updates and reviews of these configurations are necessary to adapt to changes in IP address ranges and maintain optimal security.
 
-### Configuring IP allow lists on GitHub-hosted and self-hosted runners
+### Configuring IP allowlists on GitHub-hosted and self-hosted runners
 
-Configuring IP allow lists helps control access to runners by restricting them to specific IP addresses. This enhances security by preventing unauthorized access but may require additional network configurations.
+Configuring IP allowlists helps control access to runners by restricting them to specific IP addresses. This enhances security by preventing unauthorized access but may require additional network configurations.
 
 | **This guide provides a detailed explanation of how** | **Self-hosted runners**                                                                 |
 |-------------------------------------------------------|------------------------------------------------------------------------------------------|
@@ -35,7 +35,7 @@ Configuring IP allow lists helps control access to runners by restricting them t
 
 #### Allowed IP list
 
-An **allowed IP list** is a security feature that restricts access to services or resources based on predefined IP addresses. By configuring an IP allow list, organizations can:
+An **allowed IP list** is a security feature that restricts access to services or resources based on predefined IP addresses. By configuring an IP allowlist, organizations can:
 
 - **Enhance security:** Prevent unauthorized access by allowing only trusted IP addresses.
 - **Control network Traffic:** Restrict inbound and outbound requests to known and verified IPs.
@@ -47,12 +47,12 @@ An **allowed IP list** is a security feature that restricts access to services o
 | GitHub-hosted runners can be configured via GitHub’s security settings.                      | Self-hosted runners work well with firewalls, VPNs, or cloud security groups.            |
 
 
-### Configuring IP allow lists for internal applications to interact with GitHub-Hosted Runners
+### Configuring IP allowlists for internal applications to interact with GitHub-Hosted Runners
 
-To configure IP allow lists for internal applications and systems to interact with GitHub-hosted runners, you can refer to the following official GitHub documentation:
+To configure IP allowlists for internal applications and systems to interact with GitHub-hosted runners, you can refer to the following official GitHub documentation:
 
 #### 1. Understand GitHub's IP address ranges
-GitHub-hosted runners operate within specific IP address ranges. To ensure your internal applications can communicate with these runners, you need to allow these IP ranges through your firewall. GitHub provides a meta API endpoint https://api.github.com/meta that lists all current IP address ranges used by GitHub services, including those for Actions runners. Regularly updating your allow lists based on this information is essential, as IP ranges can change.
+GitHub-hosted runners operate within specific IP address ranges. To ensure your internal applications can communicate with these runners, you need to allow these IP ranges through your firewall. GitHub provides a meta API endpoint https://api.github.com/meta that lists all current IP address ranges used by GitHub services, including those for Actions runners. Regularly updating your allowlists based on this information is essential, as IP ranges can change.
 
 :::image type="content" source="../media/github-runners-ip-ranges.png" alt-text="Screenshot of API response showing GitHub runners IP ranges.":::
 
@@ -61,16 +61,16 @@ GitHub-hosted runners operate within specific IP address ranges. To ensure your 
 ##### a. Obtain GitHub's IP ranges:
 - Use the meta API endpoint to retrieve the latest IP address ranges used by GitHub Actions runners.
 
-##### b. Update rirewall rules:
+##### b. Update firewall rules:
 - Add rules to your firewall to permit inbound and outbound traffic to and from these IP ranges. This ensures that your internal systems can interact with GitHub-hosted runners without connectivity issues.
 
 #### 3. Consider using self-hosted runners
-If maintaining an IP allow list for GitHub-hosted runners is challenging due to frequent changes in IP ranges, consider setting up self-hosted runners within your network. This approach allows you to have more control over the runner environment and network configurations. However, be aware that using self-hosted runners requires additional maintenance and infrastructure management.
+If maintaining an IP allowlist for GitHub-hosted runners is challenging due to frequent changes in IP ranges, consider setting up self-hosted runners within your network. This approach allows you to have more control over the runner environment and network configurations. However, be aware that using self-hosted runners requires additional maintenance and infrastructure management.
 
 :::image type="content" source="../media/github-self-hosted-runners.png" alt-text="Screenshot of an empty runners screen.":::
 
-#### 4. Regularly review and update allow lists
-Since GitHub's IP address ranges can change, it's crucial to periodically review and update your firewall's IP allow lists. Automating this process by scripting the retrieval of IP ranges from GitHub's meta API can help ensure your allow lists remain current without manual intervention.
+#### 4. Regularly review and update allowlists
+Since GitHub's IP address ranges can change, it's crucial to periodically review and update your firewall's IP allowlists. Automating this process by scripting the retrieval of IP ranges from GitHub's meta API can help ensure your allowlists remain current without manual intervention.
 
 ### Effects and potential abuse vectors of enabling self-hosted runners on public repositories  
 
