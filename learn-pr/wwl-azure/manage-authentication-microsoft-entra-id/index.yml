@@ -50,7 +50,6 @@ units:
 - learn.wwl.manage-authentication-microsoft-entra-id.microsoft-entra-id-single-sign-on
 - learn.wwl.manage-authentication-microsoft-entra-id.integrate-applications-with-microsoft-entra-id
 - learn.wwl.manage-authentication-microsoft-entra-id.microsoft-entra-verified-id
-- learn.wwl.manage-authentication-microsoft-entra-id.configure-microsoft-entra-verified-id
 - learn.wwl.manage-authentication-microsoft-entra-id.microsoft-entra-id-authentication-verification-methods
 - learn.wwl.manage-authentication-microsoft-entra-id.knowledge-check
 - learn.wwl.manage-authentication-microsoft-entra-id.summary
