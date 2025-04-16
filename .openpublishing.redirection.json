@@ -47178,6 +47178,11 @@
       "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/9-knowledge-check.md",
       "redirect_url": "/training/modules/manage-security-controls-identity-access/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/2-microsoft-entra-id-overview.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
     }
   ]
 }
