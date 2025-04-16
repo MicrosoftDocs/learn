@@ -28,7 +28,7 @@ Configuring IP allow lists helps control access to runners by restricting them t
 
 | **This guide provides a detailed explanation of how** | **Self-hosted runners**                                                                 |
 |-------------------------------------------------------|------------------------------------------------------------------------------------------|
-| GitHub-hosted runners use dynamic IP addresses, making it challenging to whitelist specific IPs. | Use static or controlled IPs, allowing precise IP allowlisting or IP-based access control.                         |
+| GitHub-hosted runners use dynamic IP addresses, making it challenging to configure precise IP allowlists. | Use static or controlled IPs, allowing precise IP allowlisting or IP-based access control.                         |
 | Organizations must allow GitHub’s published IP ranges. | Can be placed behind firewalls or VPNs for added security.                              |
 | GitHub-hosted runners can be restricted using GitHub’s enterprise security settings. | Require explicit configuration to communicate with external services, enhancing security. |
 
