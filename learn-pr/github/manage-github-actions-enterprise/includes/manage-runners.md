@@ -54,7 +54,7 @@ To configure IP allow lists for internal applications and systems to interact wi
 #### 1. Understand GitHub's IP address ranges
 GitHub-hosted runners operate within specific IP address ranges. To ensure your internal applications can communicate with these runners, you need to allow these IP ranges through your firewall. GitHub provides a meta API endpoint https://api.github.com/meta that lists all current IP address ranges used by GitHub services, including those for Actions runners. Regularly updating your allow lists based on this information is essential, as IP ranges can change.
 
-![alt text](image-8.png)
+:::image type="content" source="../media/github-runners-ip-ranges.png" alt-text="Screenshot of API response showing GitHub runners IP ranges.":::
 
 #### 2. Configure your firewall
 
@@ -67,7 +67,7 @@ GitHub-hosted runners operate within specific IP address ranges. To ensure your 
 #### 3. Consider using self-hosted runners
 If maintaining an IP allow list for GitHub-hosted runners is challenging due to frequent changes in IP ranges, consider setting up self-hosted runners within your network. This approach allows you to have more control over the runner environment and network configurations. However, be aware that using self-hosted runners requires additional maintenance and infrastructure management.
 
-![alt text](image-5.png)
+:::image type="content" source="../media/github-self-hosted-runners.png" alt-text="Screenshot of an empty runners screen.":::
 
 #### 4. Regularly review and update allow lists
 Since GitHub's IP address ranges can change, it's crucial to periodically review and update your firewall's IP allow lists. Automating this process by scripting the retrieval of IP ranges from GitHub's meta API can help ensure your allow lists remain current without manual intervention.
@@ -141,7 +141,7 @@ GitHub Actions supports two types of runners:
    - Recommended for **private repositories, enterprise workloads, and performance-intensive tasks**.  
 
 
-#### Choosing Between GitHub-hosted and Self-hosted Runners  
+#### Choosing between GitHub-hosted and Self-hosted Runners  
 
 Two types of runners can execute GitHub Actions workflows: GitHub-hosted runners or self-hosted runners.
 
