@@ -226,7 +226,7 @@ With GitHub Actions, you can attest to build provenance & SBOM's for binaries an
 When you generate an artifact attestation for builds you must ensure:
 
 *You have the appropriate permissions configured in the workflow
-*You have included a step in your workflow that uses the  attest-buildprovenance action.
+*You have included a step in your workflow that uses the  [attest-build-provenance](https://github.com/actions/attest-build-provenance) action.
 
 The attestation establishes build provenance.  You can view attestations in the repository's **Actions** tab. 
 
