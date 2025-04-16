@@ -239,6 +239,7 @@ The attestation establishes build provenance.  You can view attestations in the 
        contents: read
        attestations: write
    ```
+   
 2. You must add the following step after the step where the binary is built:
    ```yml
       - name: Generate artifact attestation
@@ -290,6 +291,7 @@ You have the ability to generate SBOM attestions for an SBOM.  To generate and a
         contents: read
         attestations: write
    ```
+   
 2. You must add the following step after the steps where the binary is built and SBOM generated:
     ```yml
         - name: Generate SBOM attestation
@@ -309,6 +311,7 @@ You have the ability to generate SBOM attestions for an SBOM.  To generate and a
         attestations: write
         packages: write
     ```
+    
 3. You must add the following step after the steps where the binary is built and SBOM generated:
     ```yml
         - name: Generate SBOM attestation
@@ -319,6 +322,7 @@ You have the ability to generate SBOM attestions for an SBOM.  To generate and a
           sbom-path: 'sbom.json'
           push-to-registry: true
     ```
+    
 #### Verifying artifact attestations with the GitHub CLI
 
 You can validate the artifact attestations outlined above using the GitHub CLI.  For more information, see the [attestation section](https://cli.github.com/manual/gh_attestation) of the GitHub CLI manual.
