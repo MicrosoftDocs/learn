@@ -13685,6 +13685,11 @@
       "redirect_url": "https://learn.microsoft.com/training/modules/github-introduction-products/6-summary"
     },
     {
+      "source_path_from_root": "/learn-pr/github/github-introduction-administration/5-knowledge-check.yml",
+      "redirect_url": "/training/modules/github-introduction-administration/knowledge-check",
+      "redirect_document_id": true
+    },
+    {
       "source_path_from_root": "/learn-pr/github/introduction-to-github-visual-studio-code/1-introduction.yml",
       "redirect_url": "https://code.visualstudio.com/docs/sourcecontrol/overview"
     },
@@ -46832,6 +46837,391 @@
     {
       "source_path": "learn-pr/permissions-managements/intro-to-entra-permissions-management/index.yml",
       "redirect_url": "https://learn.microsoft.com/entra/permissions-management/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/index.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/4-azure-blueprints.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/10-azure-dedicated-hardware-security-module.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/2-azure-governance-and-management.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/6-azure-key-vault.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/8-azure-key-vault-authentication.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/14-azure-key-vault-backup-restore.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/12-azure-key-vault-keys-secrets-certificates.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/7-azure-key-vault-security.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/13-configure-cryptographic-key-auto-rotation-azure-key-vault.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/3-create-custom-azure-security-initiatives-policies.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/9-create-key-vault-use-azure-portal.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/5-infrastructure-security-architecture.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/1-introduction.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/15-knowledge-check.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/11-provide-access-key-vault-keys-certificates-secrets.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/16-summary.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/index.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/4-authentication-options.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/9-configure-microsoft-entra-multifactor-authentication-settings.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/14-configure-microsoft-entra-single-sign-on.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/17-configure-microsoft-entra-verified-id.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/12-enforce-premises-microsoft-entra-password-protection.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/7-federation-with-microsoft-entra-id.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/15-integrate-applications-with-microsoft-entra-id.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/1-introduction.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/19-knowledge-check.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/3-microsoft-entra-cloud-sync.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/2-microsoft-entra-connect.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/18-microsoft-entra-id-authentication-verification-methods.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/13-microsoft-entra-id-single-sign-on.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/6-microsoft-entra-pass-through-authentication.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/16-microsoft-entra-verified-id.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/5-password-hash-synchronization-with-microsoft-entra-id.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/11-passwordless-authentication.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/10-passwordless-authentication-options.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/20-summary.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/8-what-is-microsoft-entra-authentication.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/index.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/18-access-reviews.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/6-assign-azure-role-permissions.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/5-azure-built-in-roles.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/2-azure-management-groups.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/4-azure-role-based-access-control.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/8-built-roles-microsoft-entra-id.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/23-conditional-access.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/3-configure-azure-role-permissions.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/15-configure-privileged-identity-management.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/22-create-access-review-azure-resource-microsoft-entra-roles.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/10-create-new-custom-roles-microsoft-entra-id.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/21-delegation-and-roles-in-entitlement-management.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/12-enable-microsoft-entra-permissions-management-your-organization.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/17-entitlement-management.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/19-identity-lifecycle-management.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/1-introduction.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/24-knowledge-check.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/20-lifecycle-workflows.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/7-microsoft-entra-built-in-roles.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/16-microsoft-entra-id-governance.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/11-microsoft-entra-permissions-management.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/14-microsoft-entra-privileged-identity-management.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/9-microsoft-entra-role-based-access-control.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/25-summary.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/13-zero-trust-security.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/index.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/4-create-a-new-user.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/1-introduction.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/9-knowledge-check.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/2-microsoft-entra-id-overview.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/8-microsoft-entra-identity-protection.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/6-recommend-when-to-use-external-identities.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/7-secure-external-microsoft-entra-identities.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/5-secure-microsoft-entra-groups.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/3-secure-microsoft-entra-users.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/10-summary.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/manage-identity-access-new/index.md",
+      "redirect_url": "/training/paths/secure-identity-access/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/manage-security-operations-new/index.md",
+      "redirect_url": "/training/paths/secure-azure-using-microsoft-defender-cloud-sentinel/",
       "redirect_document_id": false
     }
   ]
