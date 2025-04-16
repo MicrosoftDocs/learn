@@ -46948,6 +46948,11 @@
       "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/17-configure-microsoft-entra-verified-id.md",
       "redirect_url": "/training/modules/manage-security-controls-identity-access/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/12-enforce-premises-microsoft-entra-password-protection.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
     }
   ]
 }
