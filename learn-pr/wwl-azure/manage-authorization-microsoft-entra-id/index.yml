@@ -44,7 +44,6 @@ units:
 - learn.wwl.manage-authorization-microsoft-entra-id.microsoft-entra-privileged-identity-management
 - learn.wwl.manage-authorization-microsoft-entra-id.microsoft-entra-id-governance
 - learn.wwl.manage-authorization-microsoft-entra-id.lifecycle-workflows
-- learn.wwl.manage-authorization-microsoft-entra-id.knowledge-check
 - learn.wwl.manage-authorization-microsoft-entra-id.summary
 badge:
   uid: learn.wwl.manage-authorization-microsoft-entra-id.badge
