@@ -121,7 +121,7 @@ Reusable templates in GitHub Actions refer to **predefined actions and workflows
 | ---------------------- | ------------------------------------------------ | ------------------------------------------ |
 | **Reusable Workflows** | Standardize CI/CD pipelines across repositories. | `ci-pipeline.yml`, `deploy-app.yml`        |
 | **Reusable Actions**   | Encapsulate common automation logic.             | `setup-env-action`, `security-scan-action` |
-| **Worflow Templates**  | Define reusable job structures.                  | `test-job.yml`, `build-job.yml`            |
+| **Workflow Templates**  | Define reusable job structures.                  | `test-job.yml`, `build-job.yml`            |
 
 ### Reusable workflows
 
