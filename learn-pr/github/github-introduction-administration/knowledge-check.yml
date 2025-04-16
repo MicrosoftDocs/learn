@@ -1,0 +1,148 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-introduction-administration.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: Review what you've learned.
+  ms.date: 09/20/2024
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: unit
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "You want to grant a user the permissions required to add and remove organization members to and from a team. Which permission would you need to grant that user?"
+    choices:
+    - content: "The admin permission on a repository"
+      isCorrect: false
+      explanation: "Incorrect. The admin permission on a repository only allows you to perform full administration-related tasks on a specific repository. It doesn't affect membership on a team."
+    - content: "The maintain permission on a repository"
+      isCorrect: false
+      explanation: "Incorrect. The maintain permission on a repository only allows you to perform limited administration-related tasks on a specific repository. It doesn't affect membership on a team."
+    - content: "Organization billing manager"
+      isCorrect: false
+      explanation: "Incorrect. The organization billing manager permission only allows the user to handle billing related tasks. It doesn't affect membership on a team."
+    - content: "Team maintainer"
+      isCorrect: true
+      explanation: "Correct! As a team maintainer, the user can add and remove organization members to and from a team."
+
+  - content: "As an organization owner, you want to ensure that everyone who is signed in to your corporate network can access the GitHub website without requiring a second sign-in. Which technology would you enable to accomplish this?"
+    choices:
+    - content: "Single sign-on"
+      isCorrect: true
+      explanation: "Correct! Single sign-on is the right technology to allow network users to access the GitHub website without extra sign-ins."
+    - content: "Two-factor authentication"
+      isCorrect: false
+      explanation: "Incorrect. Two-factor authentication requires each user to sign in by using a second means of identifying themselves, like using an authenticator app on their phones."
+    - content: "Personal Access Tokens"
+      isCorrect: false
+      explanation: "Incorrect. Personal Access Tokens provide access for the git client or web API by using a cryptographic key. You don't use them to access the GitHub website."
+    - content: "SSH keys"
+      isCorrect: false
+      explanation: "Incorrect. SSH keys provide access for the git client through a username and password. You don't use them to access the GitHub website."
+
+  - content: "What's the appropriate repository permission level for contributors who need to actively push changes to your repository?"
+    choices:
+    - content: "Admin"
+      isCorrect: false
+      explanation: "Incorrect. The admin permission isn't appropriate because it provides too much access to the administration functions of the repository."
+    - content: "Write"
+      isCorrect: true
+      explanation: "Correct! The write permission is the appropriate permission level."
+    - content: "Triage"
+      isCorrect: false
+      explanation: "Incorrect. The triage permission is for contributors who need to proactively manage issues and pull requests without making changes."
+    - content: "Maintain"
+      isCorrect: false
+      explanation: "Incorrect. The maintain permission is for contributors who need to manage the repository without access to sensitive or destructive actions. It provides too much access for other users."
+
+  - content: "Which role within a team can add or remove team members?"
+    choices:
+    - content: "Team Maintainer"
+      isCorrect: true
+      explanation: "Correct. Team Maintainers can add or remove team members and edit the team’s settings."
+    - content: "Team Member"
+      isCorrect: false
+      explanation: "Incorrect. Team Members can view and participate in team discussions but cannot manage team membership."
+    - content: "Organization Owner"
+      isCorrect: false
+      explanation: "Incorrect. Organization Owners have broader administrative privileges but are not specific to team management."
+    - content: "Billing Manager"
+      isCorrect: false
+      explanation: "Incorrect. Billing Managers focus on billing details and do not manage team membership."
+
+  - content: "What permission level is best for project managers who need to triage and organize issues without contributing code?"
+    choices:
+    - content: "Triage"
+      isCorrect: true
+      explanation: "Correct. The Triage permission level allows users to manage issues and pull requests without pushing changes to the repository."
+    - content: "Read"
+      isCorrect: false
+      explanation: "Incorrect. The Read permission level only allows users to view and clone the repository and comment on issues and pull requests."
+    - content: "Write"
+      isCorrect: false
+      explanation: "Incorrect. The Write permission level allows users to push to branches and manage issues and pull requests."
+    - content: "Maintain"
+      isCorrect: false
+      explanation: "Incorrect. The Maintain permission level allows users to manage repository settings, issues, and pull requests but not delete or transfer the repository."
+
+  - content: "What is a benefit of integrating Active Directory (AD) for team synchronization?"
+    choices:
+    - content: "Centralized Identity Management"
+      isCorrect: true
+      explanation: "Correct. Integrating AD leverages existing infrastructure for consistent user identities."
+    - content: "Increased administrative overhead"
+      isCorrect: false
+      explanation: "Incorrect. AD integration aims to reduce administrative overhead."
+    - content: "Decentralized administration"
+      isCorrect: false
+      explanation: "Incorrect. AD integration centralizes identity management."
+    - content: "Enhanced isolation"
+      isCorrect: false
+      explanation: "Incorrect. Enhanced isolation is not a direct benefit of AD integration."
+
+  - content: "Which of the following actions is exclusive to Organization Owners in GitHub?"
+    choices:
+    - content: "Collaborate on repositories based on assigned roles or team memberships"
+      isCorrect: false
+      explanation: "Incorrect. Organization Members can collaborate on repositories if granted the appropriate roles or added to teams."
+    - content: "Contribute code and participate in discussions"
+      isCorrect: false
+      explanation: "Incorrect. Any Organization Member with sufficient permissions can contribute code and join discussions."
+    - content: "Manage organization settings, including security and billing"
+      isCorrect: true
+      explanation: "Correct. Only Organization Owners have the authority to manage organization-wide settings, including security policies and billing configurations."
+    - content: "Access resources as defined by team or repository-specific permissions"
+      isCorrect: false
+      explanation: "Incorrect. Organization Members can access resources if permissions are granted through team or repository-level settings."
+
+  - content: "What is a key difference between an organization member and an outside collaborator?"
+    choices:
+    - content: "Organization members are included in the organization’s internal directory."
+      isCorrect: true
+      explanation: "Correct. Organization members are included in the internal directory and can be assigned to teams, while outside collaborators are not."
+    - content: "Outside collaborators have access to all repositories."
+      isCorrect: false
+      explanation: "Incorrect. Outside collaborators have explicit access to specific repositories only."
+    - content: "Organization members do not appear in the organization’s internal member list."
+      isCorrect: false
+      explanation: "Incorrect. Organization members do appear in the internal member list."
+    - content: "Outside collaborators inherit organization-wide settings."
+      isCorrect: false
+      explanation: "Incorrect. Outside collaborators do not inherit organization-wide settings."
+
+  - content: "Which permission level allows users to manage repository settings but not delete or transfer the repository?"
+    choices:
+    - content: "Maintain"
+      isCorrect: true
+      explanation: "Correct. The Maintain permission level allows users to manage repository settings but not delete or transfer the repository."
+    - content: "Write"
+      isCorrect: false
+      explanation: "Incorrect. The Write permission level allows users to push code and manage issues and pull requests but not manage repository settings."
+    - content: "Admin"
+      isCorrect: false
+      explanation: "Incorrect. The Admin permission level grants full control over the repository, including deleting or transferring it."
+    - content: "Triage"
+      isCorrect: false
+      explanation: "Incorrect. The Triage permission level allows users to manage issues and pull requests but not manage repository settings."
