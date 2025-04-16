@@ -47068,6 +47068,11 @@
       "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/23-conditional-access.md",
       "redirect_url": "/training/modules/manage-security-controls-identity-access/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/3-configure-azure-role-permissions.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
     }
   ]
 }
