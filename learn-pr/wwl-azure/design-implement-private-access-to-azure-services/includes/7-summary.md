@@ -2,11 +2,11 @@ In this module, you learned about service endpoints, private endpoints, private 
 
 **The main takeaways from this module are:**
 - **Service Endpoints** limit the Azure service's access to the allowed virtual network and subnet. Service endpoints provide network-level security and isolation of the Azure service traffic.
-- **Service Endpoint policies** allow you to filter egress virtual network traffic to Azure Storage accounts over Service Endpoint, and allow data exfiltration to only specific Azure Storage accounts.
+- **Service Endpoint policies** allow you to filter egress virtual network trafficto the Service Endpoint. Policies 
 - **Azure Private Link** enables you to access Azure PaaS Services and Azure hosted customer-owned/partner services over a Private Endpoint in your virtual network. Private Link is designed to eliminate security risks by removing the public part of the connection.
 - **Azure private endpoint** is the key technology behind private link. Private endpoint is a network interface that enables a private and secure connection between your virtual network and an Azure service. 
 - **Azure Private Link service** lets you offer Private Link connections to your custom Azure services. Consumers of your custom services can then access those services privately—that is, without using the internet—from their own Azure virtual networks.
-- **Azure DNS Private Resolver** that enables you to query Azure DNS private zones from an on-premises environment and vice versa without deploying VM based DNS servers. When you use DNS Private Resolver, you don't need a DNS forwarder, and Azure DNS is able to resolve on-premises domain names.
+- **Azure DNS Private Resolver** lets you query Azure DNS private zones from an on-premises environment and vice versa without deploying VM based DNS servers. When you use DNS Private Resolver, you don't need a DNS forwarder, and Azure DNS is able to resolve on-premises domain names.
 
 ### Learn more with Copilot
 
@@ -21,7 +21,7 @@ Copilot can assist you in configuring Azure infrastructure solutions. Copilot ca
 
 Use these resources to discover more.
 
- -  [Secure and isolate access to Azure resources by using network security groups and service endpoints](/training/modules/secure-and-isolate-with-nsg-and-service-endpoints/). Learn how network security groups and service endpoints help you secure your virtual machines and Azure services from unauthorized network access.
+ - [Secure and isolate access to Azure resources by using network security groups and service endpoints](/training/modules/secure-and-isolate-with-nsg-and-service-endpoints/). Learn how network security groups and service endpoints help you secure your virtual machines and Azure services from unauthorized network access.
  - [Introduction to Azure Private Link](/training/modules/introduction-azure-private-link/). Learn how  Azure Private Link enables private connectivity to Azure services, including its features, how it works, and its use cases.
  - [Introduction to Azure DNS](/training/modules/intro-to-azure-dns/). This module explains what Azure DNS does, how it works, and when you should choose to use Azure DNS as a solution to meet your organization’s needs.
  - [Design and implement private access to Azure Services](/training/modules/design-implement-private-access-to-azure-services/). Learn to design and implement private access to Azure Services with Azure Private Link, and virtual network service endpoints.

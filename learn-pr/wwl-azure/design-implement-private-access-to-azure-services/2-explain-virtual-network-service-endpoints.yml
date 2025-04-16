@@ -25,10 +25,10 @@ quiz:
       explanation: "Correct. Service Endpoints allow your VNet to directly interact with the services."
     - content: "Service Endpoints enable the creation and teardown of environments for application hosting."
       isCorrect: false
-      explanation: "Incorrect. This is more related to infrastructure as code, not Service Endpoints."
+      explanation: "Incorrect. This feature is more related to infrastructure as code, not Service Endpoints."
     - content: "Service Endpoints provide a direct connection to public cloud services."
       isCorrect: false
-      explanation: "Incorrect. While Service Endpoints do connect to services, they do not provide a direct connection to public cloud services."
+      explanation: "Incorrect. While Service Endpoints do connect to services, they don't provide a direct connection to public cloud services."
   - content: "How do virtual network service endpoints enhance security?"
     choices:
     - content: "Service Endpoints allow you to secure Azure service resources to only your virtual network."
@@ -44,10 +44,10 @@ quiz:
     choices:
     - content: "It reduces the bandwidth available for other services."
       isCorrect: false
-      explanation: "Incorrect. Service endpoints do not affect the bandwidth available for other services."
+      explanation: "Incorrect. Service endpoints don't affect the bandwidth available for other services."
     - content: "It routes network traffic between your virtual network and the service through an optimized path."
       isCorrect: true
       explanation: "Correct. Service endpoints optimize the path for network traffic, improving performance."
     - content: "It significantly increases network latency."
       isCorrect: false
-      explanation: "Incorrect. Service endpoints do not significantly increase network latency."
+      explanation: "Incorrect. Service endpoints don't significantly increase network latency."

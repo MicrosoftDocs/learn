@@ -23,9 +23,9 @@ quiz:
     - content: "By encrypting all data"
       isCorrect: false
       explanation: "Incorrect. While encryption may be part of the process, it's not the primary way private link DNS enhances security."
-    - content: "By restricting access to services to only those within the private network"
+    - content: "By restricting access to services within the private network"
       isCorrect: true
-      explanation: "Correct. Private link DNS enhances security by restricting access to services to only those within the private network."
+      explanation: "Correct. Private link DNS enhances security by restricting access to services within the private network."
     - content: "By blocking all incoming traffic"
       isCorrect: false
       explanation: "Incorrect. Blocking all traffic would prevent legitimate access as well."

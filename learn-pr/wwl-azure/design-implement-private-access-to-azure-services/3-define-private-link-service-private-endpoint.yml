@@ -22,32 +22,32 @@ quiz:
     choices:
     - content: "It allows public access to a private network"
       isCorrect: false
-      explanation: "Incorrect. A private endpoint does not allow public access, it provides private connectivity."
+      explanation: "Incorrect. A private endpoint provides private connectivity."
     - content: "It provides a public IP address for a private network"
       isCorrect: false
-      explanation: "Incorrect. A private endpoint does not provide a public IP, it provides a private IP in the VNet."
+      explanation: "Incorrect. A private endpoint provides a private IP in the VNet."
     - content: "It enables a private and secure connection to a service powered by Azure Private Link"
       isCorrect: true
-      explanation: "Correct. A private endpoint provides a secure and private IP address within a Virtual Network (VNet)."
+      explanation: "Correct. A private endpoint provides a secure and private IP address within a virtual network."
   - content: "What is a key benefit of using a private link service private endpoint?"
     choices:
     - content: "It provides a secure and private IP address within a Virtual Network (VNet)"
       isCorrect: true
-      explanation: "Correct. The key benefit of a private endpoint is that it provides a secure and private IP address within a VNet."
+      explanation: "Correct. The key benefit of a private endpoint is that it provides a secure and private IP address within a virtual network."
     - content: "It increases the speed of data transfer"
       isCorrect: false
       explanation: "Incorrect. While a private endpoint may improve performance, its key benefit is related to security and privacy."
     - content: "It reduces the cost of data transfer"
       isCorrect: false
-      explanation: "Incorrect. A private endpoint does not directly impact the cost of data transfer."
+      explanation: "Incorrect. A private endpoint doesn't directly impact the cost of data transfer."
   - content: "How does a private link service private endpoint enhance security?"
     choices:
     - content: "By providing firewall protection"
       isCorrect: false
-      explanation: "Incorrect. A private endpoint does not provide firewall protection, it provides private connectivity."
+      explanation: "Incorrect. A private endpoint doesn't provide firewall protection."
     - content: "By encrypting all data in transit"
       isCorrect: false
       explanation: "Incorrect. While encryption can be part of the solution, the primary security enhancement is through private connectivity."
     - content: "By ensuring that traffic between your virtual network and the service travels across the Microsoft backbone network"
       isCorrect: true
-      explanation: "Correct. A private endpoint ensures that traffic does not traverse over the public internet, enhancing security."
+      explanation: "Correct. A private endpoint ensures that traffic doesn't traverse over the public internet."
