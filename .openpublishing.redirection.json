@@ -47028,6 +47028,11 @@
       "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/8-what-is-microsoft-entra-authentication.md",
       "redirect_url": "/training/modules/manage-security-controls-identity-access/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/index.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
     }
   ]
 }
