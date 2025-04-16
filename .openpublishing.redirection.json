@@ -47078,6 +47078,11 @@
       "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/15-configure-privileged-identity-management.md",
       "redirect_url": "/training/modules/manage-security-controls-identity-access/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/22-create-access-review-azure-resource-microsoft-entra-roles.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
     }
   ]
 }
