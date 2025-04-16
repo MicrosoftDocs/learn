@@ -58,7 +58,7 @@ Use the following PowerShell commands:
 
 Labels help organize and route jobs to specific self-hosted runners based on OS, hardware, or project requirements.
 
-![Screenshot of runner groups screen with default label](github-runner-label.png)
+:::image type="content" source="../media/github-runner-label.png" alt-text="Screenshot of runner groups screen with default label.":::
 
 #### Assigning labels to a runner
 
@@ -86,7 +86,7 @@ GitHub-hosted runners operate on dynamic IPs, but self-hosted runners need firew
 ```
 curl -s https://api.github.com/meta | jq .actions
 ```
-Whitelist these IPs in your firewall settings to ensure connectivity.
+Allow these IPs in your firewall settings to ensure connectivity.
 
 #### Private network & VPN access
 For enterprise workloads requiring access to private systems, configure the runner to connect via VPN or an internal network.
@@ -122,7 +122,7 @@ Runner groups help **organize and control** self-hosted runners within a **GitHu
 4. Choose **who can access the group** (entire organization or specific repositories).  
 5. Click **Save**.  
 
-![Screenshot of the create runner group from screen](github-create-runner-group.png)
+:::image type="content" source="../media/github-create-runner-group.png" alt-text="Screenshot of the create runner group form screen.":::
 
 ### 3. Adding Runners to a Group 
 Once the group is created, you can **add runners manually or during registration**.
