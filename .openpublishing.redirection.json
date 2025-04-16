@@ -46898,6 +46898,11 @@
       "source_path": "learn-pr/wwl-azure/governance-security/9-create-key-vault-use-azure-portal.md",
       "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/5-infrastructure-security-architecture.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/",
+      "redirect_document_id": false
     }
   ]
 }
