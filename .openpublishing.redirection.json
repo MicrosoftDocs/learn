@@ -47153,6 +47153,11 @@
       "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/25-summary.md",
       "redirect_url": "/training/modules/manage-security-controls-identity-access/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/13-zero-trust-security.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
     }
   ]
 }
