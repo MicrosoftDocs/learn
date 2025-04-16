@@ -26,7 +26,6 @@ products:
 subjects:
 - cloud-security
 modules:
-- learn.wwl.governance-security
 - learn.wwl.microsoft-defender-cloud-security-posture
 - learn.wwl.microsoft-defender-cloud-threat-protection
 - learn.wwl.security-monitoring-automation-solutions
