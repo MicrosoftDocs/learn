@@ -56,8 +56,7 @@ Both files must be placed in a public .github repository and in a directory name
 
 The following is an example of a basic workflow file:
 
-```
-yml
+```yml
 name: Octo Organization CI
 
 on:
@@ -80,8 +79,7 @@ jobs:
 Note that the preceding file uses a $default-branch placeholder. When a workflow is created using your template, this placeholder is automatically replaced with the name of the repository's default branch.
 
 Following is the metadata file you would create for the workflow file:
-```
-json
+```json
 {
     "name": "Octo Organization Workflow",
     "description": "Octo Organization CI workflow template.",
