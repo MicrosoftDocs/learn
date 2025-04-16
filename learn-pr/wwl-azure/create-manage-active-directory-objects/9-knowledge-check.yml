@@ -33,10 +33,10 @@ quiz:
     choices:
     - content: "Computers container"
       isCorrect: true
-      explanation: "That's correct. The Computers container holds all computers joined to the domain without a computer account. It is the default location for new computer accounts created in the domain."
+      explanation: "That's correct. The Computers container holds all computers joined to the domain without a computer account. It's the default location for new computer accounts created in the domain."
     - content: "Users container"
       isCorrect: false
-      explanation: "That's incorrect. The Users container holds additional predefined user and group accounts (besides those in the Builtin container). Users and groups are pre-assigned membership and permissions for completing domain and forest management tasks.."
+      explanation: "That's incorrect. The Users container holds additional predefined user and group accounts (besides those in the Builtin container). Users and groups are pre-assigned membership and permissions for completing domain and forest management tasks."
     - content: "System container"
       isCorrect: false
       explanation: "That's incorrect. The System container holds configuration information about the domain including security groups and permissions, the domain SYSVOL share, DFS configuration information, and IP security policies."
