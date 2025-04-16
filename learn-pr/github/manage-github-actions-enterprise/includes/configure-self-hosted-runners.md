@@ -58,7 +58,7 @@ Use the following PowerShell commands:
 
 Labels help organize and route jobs to specific self-hosted runners based on OS, hardware, or project requirements.
 
-![alt text](image-6.png)
+![Screenshot of runner groups screen with default label](github-runner-label.png)
 
 #### Assigning labels to a runner
 
@@ -122,7 +122,7 @@ Runner groups help **organize and control** self-hosted runners within a **GitHu
 4. Choose **who can access the group** (entire organization or specific repositories).  
 5. Click **Save**.  
 
-![alt text](image-7.png)
+![Screenshot of the create runner group from screen](github-create-runner-group.png)
 
 ### 3. Adding Runners to a Group 
 Once the group is created, you can **add runners manually or during registration**.
