@@ -239,7 +239,7 @@ The attestation establishes build provenance.  You can view attestations in the 
        contents: read
        attestations: write
    ```
-2. You must add the step below after the step where the binary is built:
+2. You must add the following step after the step where the binary is built:
    ```yml
       - name: Generate artifact attestation
         uses: actions/attest-build-provenance@v2
@@ -257,7 +257,7 @@ The attestation establishes build provenance.  You can view attestations in the 
         attestations: write
         packages: write
    ```
-2.  You must add the step below after the step where the continer image is built:
+2.  You must add the following step after the step where the container image is built:
     ```yml
         - name: Generate artifact attestation
         uses: actions/attest-build-provenance@v2
@@ -285,7 +285,7 @@ You have the ability to generate SBOM attestions for an SBOM.  To generate and a
         contents: read
         attestations: write
    ```
-2. You must add the step below following the steps where the binary is built and SBOM generated:
+2. You must add the following step after the steps where the binary is built and SBOM generated:
     ```yml
         - name: Generate SBOM attestation
         uses: actions/attest-sbom@v1
@@ -304,7 +304,7 @@ You have the ability to generate SBOM attestions for an SBOM.  To generate and a
         attestations: write
         packages: write
     ```
-3. You must add the step below following the steps where the binary is built and SBOM generated:
+3. You must add the following step after the steps where the binary is built and SBOM generated:
     ```yml
         - name: Generate SBOM attestation
         uses: actions/attest-sbom@v1
