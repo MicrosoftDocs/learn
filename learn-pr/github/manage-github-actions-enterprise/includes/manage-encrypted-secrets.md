@@ -301,9 +301,12 @@ You have the ability to generate SBOM attestions for an SBOM.  To generate and a
           sbom-path: 'PATH/TO/SBOM'
     ```
 
+Note that the value of the `subject-path` parameter should be set to the path of the binary the SBOM describes. The value of the `sbom-path` parameter should be set to the path of the SBOM file you generated.
+
 ##### Generating an SBOM attestation for container images
 
 1. You must add the following permissions to the workflow that builds the binary for which you will generate an SBOM attestation:
+   
     ```yml
        permissions:
         id-token: write
@@ -312,7 +315,8 @@ You have the ability to generate SBOM attestions for an SBOM.  To generate and a
         packages: write
     ```
     
-3. You must add the following step after the steps where the binary is built and SBOM generated:
+2. You must add the following step after the steps where the binary is built and SBOM generated:
+   
     ```yml
         - name: Generate SBOM attestation
         uses: actions/attest-sbom@v1
@@ -322,6 +326,12 @@ You have the ability to generate SBOM attestions for an SBOM.  To generate and a
           sbom-path: 'sbom.json'
           push-to-registry: true
     ```
+
+Note that the value of the `subject-name` parameter specifies the fully-qualified image name. For example, `ghcr.io/user/app` or `acme.azurecr.io/user/app`. Do not include a tag as part of the image name.
+
+The value of the `subject-digest` parameter should be set to the `SHA256` digest of the subject for the attestation, in the form s`ha256:HEX_DIGEST`. If your workflow uses `docker/build-push-action`, you can use the digest output from that step to supply the value (see [build-push-action](https://github.com/docker/build-push-action?tab=readme-ov-file#outputs)). For more information on using outputs, see [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#jobsjob_idoutputs).
+
+The value of the `sbom-path` parameter should be set to the path to the JSON-formatted SBOM file for which you intend to attest.
     
 #### Verifying artifact attestations with the GitHub CLI
 
