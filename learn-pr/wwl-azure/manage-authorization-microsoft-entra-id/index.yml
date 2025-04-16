@@ -39,7 +39,6 @@ subjects:
 units:
 - learn.wwl.manage-authorization-microsoft-entra-id.microsoft-entra-role-based-access-control
 - learn.wwl.manage-authorization-microsoft-entra-id.zero-trust-security
-- learn.wwl.manage-authorization-microsoft-entra-id.microsoft-entra-privileged-identity-management
 - learn.wwl.manage-authorization-microsoft-entra-id.summary
 badge:
   uid: learn.wwl.manage-authorization-microsoft-entra-id.badge
