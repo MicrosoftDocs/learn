@@ -271,7 +271,7 @@ Note that the value of the `subject-path` parameter should be set to the path to
     
 Note that the value of the `subject-name` parameter should specify the fully-qualified image name. For example, `ghcr.io/user/app` or `acme.azurecr.io/user/app`. DO NOT include a tag as part of the image name.
 
-The value of the `subject-digest` parameter should be set to the `SHA256` digest of the subject for the attestation, in the form sha256:HEX_DIGEST. If your workflow uses `docker/build-push-action`, you can use the digest output from that step to supply the value. For more information on using outputs, see [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#jobsjob_idoutputs).    
+The value of the `subject-digest` parameter should be set to the `SHA256` digest of the subject for the attestation, in the form `sha256:HEX_DIGEST`. If your workflow uses `docker/build-push-action`, you can use the digest output from that step to supply the value. For more information on using outputs, see [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#jobsjob_idoutputs).    
    
 #### Generating attestations for SBOMs
 
