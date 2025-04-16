@@ -83,7 +83,7 @@ The FIDO (Fast IDentity Online) Alliance helps to promote open authentication sp
 2. Sign in if you haven't already.
 3. Select **Security Info**.
 4. If the user already has at least one multifactor authentication method registered, they can immediately register a FIDO2 security key.
-5. If they don't have at least one multifactor Authentication method registered, they must add one.
+5. If they don't have at least one multifactor authentication method registered, they must add one.
 6. Add a FIDO2 security key by selecting **Add method** and choosing **Security key**.
 7. Choose **USB device** or **NFC device**.
 8. Have your key ready and choose **Next**.

@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-user-authentication.knowledge-check
-title: Module Assessment
+title: Module assessment
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Module Assessment
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 04/15/2025
+  ms.date: 04/16/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
