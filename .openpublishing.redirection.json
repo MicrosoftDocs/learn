@@ -46848,6 +46848,11 @@
       "source_path": "learn-pr/wwl-azure/governance-security/4-azure-blueprints.md",
       "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/10-azure-dedicated-hardware-security-module.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/",
+      "redirect_document_id": false
     }
   ]
 }
