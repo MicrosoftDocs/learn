@@ -48,7 +48,6 @@ units:
 - learn.wwl.manage-authorization-microsoft-entra-id.entitlement-management
 - learn.wwl.manage-authorization-microsoft-entra-id.identity-lifecycle-management
 - learn.wwl.manage-authorization-microsoft-entra-id.lifecycle-workflows
-- learn.wwl.manage-authorization-microsoft-entra-id.delegation-and-roles-in-entitlement-management
 - learn.wwl.manage-authorization-microsoft-entra-id.knowledge-check
 - learn.wwl.manage-authorization-microsoft-entra-id.summary
 badge:
