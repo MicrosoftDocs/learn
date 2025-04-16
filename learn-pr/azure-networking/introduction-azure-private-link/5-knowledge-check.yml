@@ -14,7 +14,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Suppose a company wants clients in their Azure virtual network to have secure and nonpublic access to a particular Azure resource. Which of the following technologies should their IT staff add to their virtual network?"
+  - content: "Suppose a company wants to give clients in their Azure virtual network secure and nonpublic access to a particular Azure resource. Which of the following technologies should their IT staff add to their virtual network?"
     choices:
     - content: "Azure Service Endpoint"
       isCorrect: false
@@ -47,4 +47,4 @@ quiz:
     - content: "Azure Standard Load Balancer"
       isCorrect: true
       explanation: "Correct. Azure's standard version of its load balancer is the one you must use for Private Link Service."
-
+
