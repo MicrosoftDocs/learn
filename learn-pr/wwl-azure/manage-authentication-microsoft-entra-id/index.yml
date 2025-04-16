@@ -40,7 +40,6 @@ units:
 - learn.wwl.manage-authentication-microsoft-entra-id.introduction
 - learn.wwl.manage-authentication-microsoft-entra-id.microsoft-entra-connect
 - learn.wwl.manage-authentication-microsoft-entra-id.microsoft-entra-cloud-sync
-- learn.wwl.manage-authentication-microsoft-entra-id.authentication-options
 - learn.wwl.manage-authentication-microsoft-entra-id.password-hash-synchronization-with-microsoft-entra-id
 - learn.wwl.manage-authentication-microsoft-entra-id.microsoft-entra-pass-through-authentication
 - learn.wwl.manage-authentication-microsoft-entra-id.federation-with-microsoft-entra-id
