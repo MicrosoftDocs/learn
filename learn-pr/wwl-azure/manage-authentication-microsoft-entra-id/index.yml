@@ -44,7 +44,6 @@ units:
 - learn.wwl.manage-authentication-microsoft-entra-id.microsoft-entra-pass-through-authentication
 - learn.wwl.manage-authentication-microsoft-entra-id.federation-with-microsoft-entra-id
 - learn.wwl.manage-authentication-microsoft-entra-id.what-is-microsoft-entra-authentication
-- learn.wwl.manage-authentication-microsoft-entra-id.configure-microsoft-entra-multifactor-authentication-settings
 - learn.wwl.manage-authentication-microsoft-entra-id.passwordless-authentication-options
 - learn.wwl.manage-authentication-microsoft-entra-id.passwordless-authentication
 - learn.wwl.manage-authentication-microsoft-entra-id.enforce-premises-microsoft-entra-password-protection
