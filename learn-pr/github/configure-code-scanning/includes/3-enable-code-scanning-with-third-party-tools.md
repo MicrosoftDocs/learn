@@ -28,11 +28,11 @@ curl -L \
   https://api.github.com/orgs/ORG/code-scanning/alerts
 ```
 
-Review the [GitHub REST API docs](https://docs.github.com/rest/reference/code-scanning) for more information about the using the code scanning API. 
+Review the [GitHub REST API docs](https://docs.github.com/rest/code-scanning/code-scanning) for more information about the using the code scanning API.
 
 #### CodeQL CLI
 
-The CodeQL CLI is a standalone product that you can use to analyze code. Its main purpose is to generate a database representation of a codebase, a CodeQL database. Once the database is ready, you can query it interactively, or run a suite of queries to generate a set of results in SARIF format and upload the results to GitHub.com. The CodeQL CLI is free to use on public repositories that are maintained on GitHub.com, and available to use on private repositories that are owned by customers with an Advanced Security license. Download the CodeQL bundle from https://github.com/github/codeql-action/releases.
+The CodeQL CLI is a standalone product that you can use to analyze code. Its main purpose is to generate a database representation of a codebase, a CodeQL database. Once the database is ready, you can query it interactively, or you can run a suite of queries to generate a set of results in SARIF format and upload the results to GitHub.com. The CodeQL CLI is free to use on public repositories that are maintained on GitHub.com, and available to use on private repositories that are owned by customers with an Advanced Security license. Download the CodeQL bundle from https://github.com/github/codeql-action/releases.
 
 The bundle contains:
 

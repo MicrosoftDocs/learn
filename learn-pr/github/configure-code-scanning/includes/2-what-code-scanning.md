@@ -14,7 +14,7 @@ CodeQL is the code analysis engine GitHub developed to automate security checks.
   
 CodeQL treats code like data, allowing you to find potential vulnerabilities in your code with greater confidence than traditional static analyzers. You generate a CodeQL database to represent your codebase, then run CodeQL queries on that database to identify problems in the codebase. The query results are shown as code scanning alerts in GitHub when you use CodeQL with code scanning.
 
-CodeQL supports both compiled and interpreted languages, and can find vulnerabilities and errors in code written in the following supported languages:
+CodeQL supports both compiled and interpreted languages, and it can find vulnerabilities and errors in code written in the following supported languages:
 
 - C or C++
 - C#
@@ -40,7 +40,7 @@ Follow these steps to set up code scanning using the CodeQL GitHub Actions workf
      :::image type="content" source="../media/2-security-tab-screenshot.png" alt-text="Screenshot of the security tab.":::
 
 3. Select **Set up code scanning**. If this option isn't available, ask an organization owner or repository administrator to enable GitHub Advanced Security.
- 
+
      :::image type="content" source="../media/3-set-up-code-scanning-button-screenshot.png" alt-text="Screenshot of the set up code scanning button.":::
 
 4. In the **Set up** drop-down, select **Default**.
