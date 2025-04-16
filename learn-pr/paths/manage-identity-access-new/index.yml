@@ -25,7 +25,6 @@ subjects:
 - identity-access
 modules:
 - learn.wwl.manage-identities-microsoft-entra-id
-- learn.wwl.manage-authentication-microsoft-entra-id
 - learn.wwl.manage-authorization-microsoft-entra-id
 - learn.wwl.manage-application-access-microsoft-entra-id
 trophy:
