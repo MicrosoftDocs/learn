@@ -46928,6 +46928,11 @@
       "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/index.md",
       "redirect_url": "/training/modules/manage-security-controls-identity-access/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/4-authentication-options.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
     }
   ]
 }
