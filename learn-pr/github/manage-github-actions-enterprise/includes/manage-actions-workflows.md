@@ -65,7 +65,7 @@ GitHub Actions allows for **workflow automation**, and a key part of managing wo
 
 Reusable templates in GitHub Actions refer to **predefined actions and workflows** that can be referenced and used across multiple projects. They ensure consistency and compliance with enterprise-wide standards.
 
-## Types of Reusable Templates
+## Types of reusable templates
 
 | **Template Type**      | **Purpose**                                      | **Example**                                |
 | ---------------------- | ------------------------------------------------ | ------------------------------------------ |
@@ -73,15 +73,15 @@ Reusable templates in GitHub Actions refer to **predefined actions and workflows
 | **Reusable Actions**   | Encapsulate common automation logic.             | `setup-env-action`, `security-scan-action` |
 | **Worflow Templates**  | Define reusable job structures.                  | `test-job.yml`, `build-job.yml`            |
 
-## Reusable Workflows
+## Reusable workflows
 
 A **reusable workflow** is a workflow defined in a separate repository that can be referenced in multiple projects. This allows organizations to **centralize** their CI/CD logic.
 
-####  Structure of a Reusable Workflow
+####  Structure of a reusable workflow
 
 A reusable workflow is stored in `.github/workflows/` and uses the **`workflow_call`** trigger.
 
-#### Example: Standardized CI Workflow (ci-pipeline.yml)
+#### Example: Standardized CI workflow (ci-pipeline.yml)
 
 ```yaml
 name: CI Pipeline
@@ -110,11 +110,11 @@ jobs:
         run: npm test
 ```
 
-#### Using a Reusable Workflow in Another Repository
+#### Using a reusable workflow in another repository
 
 Once defined, the reusable workflow can be used in any repository via the **`uses:`** keyword.
 
-##### Example: Calling the Reusable Workflow
+##### Example: Calling the reusable workflow
 
 ```yaml
 name: Reusable CI Pipeline
@@ -134,13 +134,11 @@ jobs:
 - Reduces redundancy and maintenance overhead.  
 - Allows for **centralized updates** without modifying each repository.
 
-## Reusable Actions
-
-#### What Are Reusable Actions?
+## Reusable actions
 
 A **GitHub Action** is a modular, reusable unit that executes specific automation tasks. Organizations often create custom actions to **encapsulate frequently used logic**.
 
-#### Structure of a Reusable Action
+#### Structure of a reusable action
 
 A reusable action is defined in an **action repository** with an `action.yml` file.
 
@@ -162,7 +160,7 @@ runs:
   main: "index.js"
 ```
 
-#### Using a Reusable Action in a Workflow
+#### Using a reusable action in a workflow
 
 Instead of repeating setup steps in every workflow, we use our custom action:
 
@@ -180,9 +178,10 @@ jobs:
           node-version: '16'
 ```
 
-**Benefits:** Reduces duplication of setup logic across repositories.  
-Simplifies workflow files, making them more readable.  
-Centralizes updates—fixes or improvements in one place reflect across all workflows.
+**Benefits:** 
+- Reduces duplication of setup logic across repositories.  
+- Simplifies workflow files, making them more readable.  
+- Centralizes updates—fixes or improvements in one place reflect across all workflows.
 
 ## Workflow templates
 
@@ -199,36 +198,33 @@ By leveraging workflow templates, enterprises can:
 
 :::image type="content" source="../media/workflow-template.png" alt-text="Workflow template example." border="false":::
 
-### Define an Approach for Managing and Leveraging Reusable Components in GitHub Actions
+### Managing and leveraging reusable components in GitHub Actions
 
 Reusable components in GitHub Actions refer to **workflows, actions, and scripts** that are used across multiple repositories to streamline development and automation. They help standardize CI/CD pipelines, improve maintainability, and reduce redundant configuration efforts.
 
-## Types of Reusable Components
+## Types of reusable components
 
 1. Reusable Workflows
-    
     - Defined once and referenced in multiple repositories.
     - Example: A standard build-and-deploy workflow for all projects in an enterprise.
 2. Custom GitHub Actions
-    
     - Created for repeated tasks (e.g., setting up dependencies, running security checks).
     - Example: A company-wide action for enforcing code linting.
 3. Shared Scripts
-    
     - Bash, PowerShell, or Python scripts used in workflows to automate tasks.
     - Example: A script to generate compliance reports for code repositories.
 
-## Creating Centralized Repositories for Reusable Components
+## Creating centralized repositories for reusable components
 
 A well-structured repository for reusable workflows and actions ensures easy access and standardization. Consider creating the following:
 
-| **Repository Type**      | **Purpose**                                        | **Example Naming Convention** |
+| **Repository type**      | **Purpose**                                        | **Example naming convention** |
 | ------------------------ | -------------------------------------------------- | ----------------------------- |
 | **Actions Repository**   | Stores custom GitHub Actions used across projects. | `org-actions-repo`            |
 | **Workflows Repository** | Contains reusable workflows for CI/CD automation.  | `org-reusable-workflows`      |
 | **Scripts Repository**   | Maintains reusable scripts for automation.         | `org-scripts-library`         |
 
-**Example Structure for an Actions Repository:**
+**Example structure for an actions repository:**
 
 ```
 org-actions-repo/
@@ -244,11 +240,11 @@ org-actions-repo/
 │── README.md
 ```
 
-## Naming Conventions for Files and Folders
+## Naming conventions for files and folders
 
 To ensure maintainability and ease of use, follow **consistent naming conventions**.
 
-#### Repository Naming
+#### Repository naming
 
 - Use **descriptive and consistent** names for repositories:
     - `org-actions-repo`
@@ -258,7 +254,7 @@ To ensure maintainability and ease of use, follow **consistent naming convention
     - `ci-pipeline`
     - `CIPipeline`
 
-#### Workflow and Action Naming
+#### Workflow and action naming
 
 - Follow a structured format:
     
@@ -279,7 +275,7 @@ To ensure maintainability and ease of use, follow **consistent naming convention
     │   ├── deploy-app.yml
     ```
 
-#### Action Naming
+#### Action naming
 
 - **Use PascalCase or kebab-case** for action names:
     
@@ -293,9 +289,9 @@ To ensure maintainability and ease of use, follow **consistent naming convention
     description: "A reusable action to run lint checks on JavaScript projects."
     ```
 
-## Plans for Ongoing Maintenance of Reusable Components
+## Plans for ongoing maintenance of reusable components
 
-## Versioning and Dependency Management
+### 1. Versioning and dependency management
 
 - **Tag releases** using GitHub releases (`v1.0.0`, `v2.0.0`).
 - **Avoid using `latest` tags** in workflows to prevent unexpected breaking changes.
@@ -304,7 +300,7 @@ To ensure maintainability and ease of use, follow **consistent naming convention
     - **Minor Updates:** `v1.1.0` → New features, backward-compatible.
     - **Major Updates:** `v2.0.0` → Breaking changes.
 
-#### Referencing Versions in Workflows
+#### Referencing versions in workflows
 
 Instead of:
 
@@ -318,12 +314,12 @@ Use a stable version:
 uses: org-actions-repo/setup-node@v1.2.0
 ```
 
-## Automating Updates and Maintenance
+### 2. Automating updates and maintenance
 
 - Implement a **GitHub Action to automatically test workflows and actions** before merging.
 - Use **Dependabot** to detect outdated dependencies in reusable actions.
 
-## Documenting and Providing Usage Guidelines
+### 3. Documenting and providing usage guidelines
 
 - Each repository should include:
     - **README.md** explaining:
@@ -333,12 +329,13 @@ uses: org-actions-repo/setup-node@v1.2.0
     - **CHANGELOG.md** to track updates.
     - **CONTRIBUTING.md** outlining best practices for modifications.
 
-## 3.4 Security and Access Control
+## 4. Security and access control
 - Restrict write access to action repositories.
 - Require code reviews and **GitHub CODEOWNERS** for managing changes.
 - Use **GitHub Secret Scanning** to prevent hardcoding secrets in workflows.
-## 3.5 Monitoring and Deprecation Strategy
+- 
+## 5. Monitoring and deprecation strategy
 - **Set up GitHub Issues and Discussions** for feedback.
-- **Deprecation Plan**:
+- **Deprecation plan**:
   - Notify users before removing older versions.
   - Offer migration guides for major changes.
