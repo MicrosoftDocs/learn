@@ -54,8 +54,6 @@ To configure IP allowlists for internal applications and systems to interact wit
 #### 1. Understand GitHub's IP address ranges
 GitHub-hosted runners operate within specific IP address ranges. To ensure your internal applications can communicate with these runners, you need to allow these IP ranges through your firewall. GitHub provides a meta API endpoint https://api.github.com/meta that lists all current IP address ranges used by GitHub services, including those for Actions runners. Regularly updating your allowlists based on this information is essential, as IP ranges can change.
 
-:::image type="content" source="../media/github-runners-ip-ranges.png" alt-text="Screenshot of API response showing GitHub runners IP ranges.":::
-
 #### 2. Configure your firewall
 
 ##### a. Obtain GitHub's IP ranges:
