@@ -48,7 +48,6 @@ units:
 - learn.wwl.manage-authentication-microsoft-entra-id.passwordless-authentication
 - learn.wwl.manage-authentication-microsoft-entra-id.enforce-premises-microsoft-entra-password-protection
 - learn.wwl.manage-authentication-microsoft-entra-id.microsoft-entra-id-single-sign-on
-- learn.wwl.manage-authentication-microsoft-entra-id.configure-microsoft-entra-single-sign-on
 - learn.wwl.manage-authentication-microsoft-entra-id.integrate-applications-with-microsoft-entra-id
 - learn.wwl.manage-authentication-microsoft-entra-id.microsoft-entra-verified-id
 - learn.wwl.manage-authentication-microsoft-entra-id.configure-microsoft-entra-verified-id
