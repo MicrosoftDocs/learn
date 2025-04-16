@@ -237,7 +237,7 @@ jobs:
 
 As discussed earlier, workflow templates help standardize automation across your organization by providing predefined structures for common tasks. These templates are a key part of the broader category of reusable workflows.
 
-In the earlier section "Create workflow templates," we outlined how to build these templates from a `yml` file and a corresponding `.properties.json` metadata file. That section also detailed where to store them and how they appear in the GitHub Actions UI for reuse.
+In the earlier section "Create workflow templates," we outlined how to build these templates from a `yml` file and a corresponding `.properties.json` metadata file. 
 
 To further connect the concept: workflow templates are a form of reusable workflow. When you create and store them in a public `.github` repository under the `workflow-templates/` directory, they allow other organization members to create consistent workflows for their repositories without having to define them from scratch.
 
