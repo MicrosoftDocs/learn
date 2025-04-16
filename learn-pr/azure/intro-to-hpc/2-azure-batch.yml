@@ -3,7 +3,7 @@ uid: learn.intro-to-hpc.2-azure-batch
 metadata:
   title: Azure Batch
   description: In this unit, you learn about the Azure Batch service and how it helps you to manage high-performance compute tasks.
-  ms.date: 05/22/2023
+  ms.date: 04/07/2025
   author: padmalathas
   ms.author: padmalathas
   ms.topic: unit
@@ -25,7 +25,7 @@ quiz:
     - content: "Only by using Azure Batch can you access the most high-performing VM SKUs on Azure."
       isCorrect: false
       explanation: "You can create high-performance VMs manually without Azure Batch. Azure Batch helps by scheduling and managing nodes for HPC."
-  - content: "You've analyzed a problem and found that it has 1000 separate subtasks. To solve this problem, your manager agrees to budget 20 VM nodes to run in Azure Batch. Compared to running on a single VM node of the same size, approximately how much quicker would you expect the problem's solution to be?"
+  - content: "You've analyzed a problem and found that it has 1,000 separate subtasks. To solve this problem, your manager agrees to budget 20 VM nodes to run in Azure Batch. Compared to running on a single VM node of the same size, approximately how much quicker would you expect the problem's solution to be?"
     choices:
     - content: "1/50 of the time."
       isCorrect: false
@@ -36,4 +36,4 @@ quiz:
     - content: "The same length of time, but results are more accurate."
       isCorrect: false
       explanation: "Because there are many small subtasks, Azure Batch evenly distributes the work, and 20 VMs can complete the tasks in approximately 1/20 of the time."
-
+

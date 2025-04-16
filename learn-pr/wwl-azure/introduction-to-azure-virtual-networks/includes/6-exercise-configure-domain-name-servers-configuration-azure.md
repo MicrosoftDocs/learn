@@ -21,4 +21,7 @@ In this lab, you configure DNS name resolution for Contoso Ltd. You create a pri
 > [!NOTE]
 >You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
+> [!NOTE]
+> You can view the [Configure DNS settings in Azure](https://microsoftlearning.github.io/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/Instructions/Exercises/M01-Unit%206%20Configure%20DNS%20settings%20in%20Azure.html) instructions directly. 
+
 [![Screenshot of the simulation page.](../media/simulation-dns-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Configure%20DNS%20settings%20in%20Azure)
