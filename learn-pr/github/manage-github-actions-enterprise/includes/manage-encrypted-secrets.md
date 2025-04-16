@@ -219,19 +219,101 @@ Artifact attestations are used to establish provenance for builds.  By establish
 
 #### What to attest
 
-With GitHub Actions, you can attest to build provenance of binaries and container images as well as SBOM's for binaries and container images.
+With GitHub Actions, you can attest to build provenance & SBOM's for binaries and container images.
 
-#### Build Provenance Attestations
+#### Generating artifact attestations for builds
+
+When you generate an artifact attestation for builds you must ensure:
+
+*You have the appropriate permissions configured in the workflow
+*You have included a step in your workflow that uses the  attest-buildprovenance action.
+
+The attestation establishes build provenance.  You can view attestations in the repository's **Actions** tab. 
 
 ##### Generating an attestation for build provenance of binaries
 
+1. dsdas
+   ```yml
+      permissions:
+       id-token: write
+       contents: read
+       attestations: write
+   ```
+2. dss
+   ```yml
+      - name: Generate artifact attestation
+        uses: actions/attest-build-provenance@v2
+        with:
+         subject-path: 'PATH/TO/ARTIFACT'
+   ```
+
 ##### Generating an attestation for build provenance of container images
 
-#### SBOM Attestations
+1. dfsd
+   ```yml
+       permissions:
+        id-token: write
+        contents: read
+        attestations: write
+        packages: write
+   ```
+2.  dsdas
+    ```yml
+        - name: Generate artifact attestation
+        uses: actions/attest-build-provenance@v2
+        with:
+          subject-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          subject-digest: 'sha256:fedcba0...'
+          push-to-registry: true
+    ```
+    
+   
+#### Generating attestations for SBOMs
+
+You have the ability to generate SBOM attestions for an SBOM.  To generate and attest to an SBOM you must perform the following:
+
+*  Ensure you have set the appropriate permissions in the workflow (see examples below).
+*  You must generation an SBOM for the artifact in a step in the workflow.  For an example, see anchore-sbom-action in the GitHub Marketplace.
+*  Include a step in your workflow that uses the attest-sbom action (see examples below)
+
 ##### Generating an SBOM attestation for binaries
+
+1. dss
+   ```yml
+       permissions:
+        id-token: write
+        contents: read
+        attestations: write
+   ```
+2. dsdsa
+  ```yml
+        - name: Generate SBOM attestation
+        uses: actions/attest-sbom@v1
+        with:
+          subject-path: 'PATH/TO/ARTIFACT'
+          sbom-path: 'PATH/TO/SBOM'
+    ```
 
 ##### Generating an SBOM attestation for container images
 
+1. dss
+   ```yml
+       permissions:
+        id-token: write
+        contents: read
+        attestations: write
+        packages: write
+   ```
+2. dsdsa
+  ```yml
+        - name: Generate SBOM attestation
+        uses: actions/attest-sbom@v1
+        with:
+          subject-name: ${{ env.REGISTRY }}/PATH/TO/IMAGE
+          subject-digest: 'sha256:fedcba0...'
+          sbom-path: 'sbom.json'
+          push-to-registry: true
+    ```
 #### Verifying artifact attestations with the GitHub CLI
 You can validate the artifact attestations outlined above using the GitHub CLI.  For more information, see the [attestation section](https://cli.github.com/manual/gh_attestation) of the GitHub CLI manual.
 
