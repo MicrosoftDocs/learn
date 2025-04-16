@@ -47143,6 +47143,11 @@
       "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/14-microsoft-entra-privileged-identity-management.md",
       "redirect_url": "/training/modules/manage-security-controls-identity-access/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/9-microsoft-entra-role-based-access-control.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
     }
   ]
 }
