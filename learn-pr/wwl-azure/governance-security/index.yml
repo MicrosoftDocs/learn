@@ -44,7 +44,6 @@ units:
 - learn.wwl.governance-security.infrastructure-security-architecture
 - learn.wwl.governance-security.create-key-vault-use-azure-portal
 - learn.wwl.governance-security.provide-access-key-vault-keys-certificates-secrets
-- learn.wwl.governance-security.configure-cryptographic-key-auto-rotation-azure-key-vault
 - learn.wwl.governance-security.knowledge-check
 - learn.wwl.governance-security.summary
 badge:
