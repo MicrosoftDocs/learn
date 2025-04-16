@@ -64,3 +64,49 @@ quiz:
         - content: "Encrypted secrets are encrypted environment variables you can create to store sensitive information."
           isCorrect: true
           explanation: "Correct. Once created, encrypted secrets become available for use in your workflows and actions at the level at which they were created (organization or repository)."
+
+    - content: What is a key benefit of using **reusable workflows** in GitHub Actions?
+      choices:
+        - content: Prevents any external contributors from running workflows
+          isCorrect: false
+          explanation: Reusable workflows improve standardization, but they do not automatically block external contributors. Security settings must be configured separately.
+        - content: Reduces redundancy and maintenance overhead
+          isCorrect: true
+          explanation: Reusable workflows help avoid repetitive configuration across multiple repositories, reducing maintenance effort.
+        - content: Can only be used in the same repository where they are defined
+          isCorrect: false
+          explanation: Reusable workflows can be referenced from a different repository, allowing broader reuse.
+        - content: Automatically restricts all workflows to internal users
+          isCorrect: false
+          explanation: GitHub does not enforce internal-only workflow execution unless explicitly configured.
+
+    - content: What is a primary benefit of using **GitHub-hosted runners** instead of self-hosted runners?
+      choices:
+        - content: Full control over hardware and software configuration
+          isCorrect: false
+          explanation: Full control is a feature of self-hosted runners.
+        - content: Ability to access internal/private networks
+          isCorrect: false
+          explanation: GitHub-hosted runners do not have direct access to internal networks.
+        - content: Automatic updates for the OS and preinstalled packages
+          isCorrect: true
+          explanation: GitHub-hosted runners are automatically updated by GitHub, including OS patches and preinstalled tools.
+        - content: Custom installation of non-standard software
+          isCorrect: false
+          explanation: Custom installation is supported with self-hosted runners, not GitHub-hosted ones.
+
+    - content: What is the best practice when managing **encrypted secrets** in GitHub Actions?
+      choices:
+        - content: Print secrets in workflow logs to assist with debugging
+          isCorrect: false
+          explanation: Secrets should never be exposed in logs.
+        - content: Use the same secret across all repositories for consistency
+          isCorrect: false
+          explanation: Sharing the same secret increases security risk and violates the principle of least privilege.
+        - content: Limit access by defining secrets at the lowest necessary level
+          isCorrect: true
+          explanation: Scoping secrets appropriately minimizes exposure and enhances security.
+        - content: Store secrets in the GitHub Actions log archive
+          isCorrect: false
+          explanation: Storing secrets in logs is unsafe and not a recommended practice.
+
