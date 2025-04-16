@@ -286,7 +286,7 @@ You have the ability to generate SBOM attestions for an SBOM.  To generate and a
         attestations: write
    ```
 2. dsdsa
-  ```yml
+    ```yml
         - name: Generate SBOM attestation
         uses: actions/attest-sbom@v1
         with:
@@ -297,15 +297,15 @@ You have the ability to generate SBOM attestions for an SBOM.  To generate and a
 ##### Generating an SBOM attestation for container images
 
 1. dss
-   ```yml
+    ```yml
        permissions:
         id-token: write
         contents: read
         attestations: write
         packages: write
-   ```
-2. dsdsa
-  ```yml
+    ```
+3. dsdsa
+    ```yml
         - name: Generate SBOM attestation
         uses: actions/attest-sbom@v1
         with:
@@ -315,7 +315,9 @@ You have the ability to generate SBOM attestions for an SBOM.  To generate and a
           push-to-registry: true
     ```
 #### Verifying artifact attestations with the GitHub CLI
+
 You can validate the artifact attestations outlined above using the GitHub CLI.  For more information, see the [attestation section](https://cli.github.com/manual/gh_attestation) of the GitHub CLI manual.
 
 > [!WARNING]
 > It is important to remember that artifact attestations are not a guarantee that an artifact is secure. Instead, artifact attestations link you to the source code and the build instructions that produced them. It is up to you to define your policy criteria, evaluate that policy by evaluating the content, and make an informed risk decision when you are consuming software.
+>
