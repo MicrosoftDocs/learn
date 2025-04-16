@@ -2,13 +2,13 @@ Secrets are encrypted environment variables you can create to store tokens, cred
 
 In this section, you'll explore the different tools and strategies available in GitHub Enterprise Cloud and GitHub Enterprise Server in order to manage the use of encrypted secrets. We'll also explain how to access encrypted secrets in your workflows and actions.
 
-## 6.3 Manage Encrypted Secrets in the Enterprise
+## Manage Encrypted Secrets in the Enterprise
 
 GitHub Actions provides a way to securely store and use sensitive information like API keys, authentication tokens, passwords, and certificates using **encrypted secrets**. These secrets are securely stored and injected into workflows, ensuring they are never exposed in logs or code repositories.
 
 In an enterprise environment, managing secrets effectively is crucial for security, compliance, and operational efficiency. Secrets in GitHub are managed at different scopes, including **enterprise, organization, repository, and environment levels**.
 
-### 6.3.1 Identify the Scope of Encrypted Secrets
+### Scope of Encrypted Secrets
 
 Understanding the **scope** of secrets is key to managing them securely in an enterprise environment.
 
@@ -40,9 +40,7 @@ The access policy appears underneath the secret in the secret list once it's sav
 
 You can select **Update** for more details on the configured permissions for your secret.
 
-### 6.3.3 Manage Organization-Level Encrypted Secrets
-
-#### Managing Organization Secrets via GitHub CLI
+### Manage Organization-Level Encrypted Secrets Via GitHub CLI
 
 - **Create a secret for an organization:**
   ```sh
@@ -74,9 +72,7 @@ To create a secret at repository level, go to your repository **Settings** and f
 
 :::image type="content" source="../media/secret-repo.png" alt-text="New secret screen for repositories.":::
 
-### 6.3.4 Manage Repository-Level Encrypted Secrets
-
-#### Managing Repository Secrets via CLI
+### Manage Repository-Level Encrypted Secrets via CLI
 - **List repository secrets:**
   ```sh
   gh secret list --repo my-repo
@@ -121,7 +117,7 @@ If you need to access the encrypted secret in your action's code, the action cod
 > [!WARNING]
 > When authoring your own actions, make sure not to include any encrypted secrets in your action's source code, because actions are sharable units of work. If your action needs to use encrypted secrets or other user-supplied inputs, it's best to use the core module from the [Actions Toolkit](https://github.com/actions/toolkit).
 
-### 6.3.2 Access Encrypted Secrets Within Actions and Workflows
+### Access Encrypted Secrets Within Actions and Workflows
 
 #### Example: Using a Secret in a Workflow
 
@@ -150,7 +146,7 @@ jobs:
 - **Limit access** by defining secrets at the **lowest necessary level**.
 - **Rotate secrets periodically** and update workflows accordingly.
 
-## 6.3.5 Describe How to Use 3rd Party Vaults
+## How to Use third party Vaults
 
 Many enterprises integrate GitHub Actions with external secret management solutions like **HashiCorp Vault, AWS Secrets Manager, and Azure Key Vault**.
 
