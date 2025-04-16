@@ -46858,6 +46858,11 @@
       "source_path": "learn-pr/wwl-azure/governance-security/2-azure-governance-and-management.md",
       "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/governance-security/6-azure-key-vault.md",
+      "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/",
+      "redirect_document_id": false
     }
   ]
 }
