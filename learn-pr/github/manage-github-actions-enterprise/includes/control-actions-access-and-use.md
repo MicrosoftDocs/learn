@@ -238,7 +238,7 @@ Audit logs provide insights into:
 - Which actions were executed.
 - What permissions workflows used.
 
-##### Steps to enable audit logs
+#### Steps to enable audit logs
 
 1. Navigate to Organization Settings → Security → Audit Log.
 2. Filter logs by "actions" to see workflow execution history.
