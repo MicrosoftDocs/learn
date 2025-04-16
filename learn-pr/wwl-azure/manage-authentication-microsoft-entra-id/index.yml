@@ -37,6 +37,5 @@ products:
 subjects:
 - cloud-security
 units:
-- learn.wwl.manage-authentication-microsoft-entra-id.what-is-microsoft-entra-authentication
 badge:
   uid: learn.wwl.manage-authentication-microsoft-entra-id.badge
