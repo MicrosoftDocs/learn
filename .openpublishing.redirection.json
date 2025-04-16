@@ -47008,6 +47008,11 @@
       "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/5-password-hash-synchronization-with-microsoft-entra-id.md",
       "redirect_url": "/training/modules/manage-security-controls-identity-access/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/11-passwordless-authentication.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
     }
   ]
 }
