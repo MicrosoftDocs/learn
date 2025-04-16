@@ -263,10 +263,12 @@ curl -o actions-runner-linux-x64.tar.gz -L \
      https://github.com/actions/runner/releases/latest/download/actions-runner-linux-x64.tar.gz
 ```
 **3.Extract and reconfigure:**
+```
 tar xzf ./actions-runner-linux-x64.tar.gz
 ./config.sh --url https://github.com/<org-name> --token <generated-token>
 ./svc.sh install
 ./svc.sh start
+```
 
 #### Automated Updates with GitHub Actions
 To automatically check for and update runners:
