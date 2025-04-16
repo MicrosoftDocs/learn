@@ -39,7 +39,6 @@ products:
 subjects:
 - cloud-security
 units:
-- learn.wwl.governance-security.introduction
 - learn.wwl.governance-security.provide-access-key-vault-keys-certificates-secrets
 - learn.wwl.governance-security.knowledge-check
 - learn.wwl.governance-security.summary
