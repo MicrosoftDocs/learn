@@ -47218,6 +47218,11 @@
       "source_path": "learn-pr/paths/manage-identity-access-new/index.md",
       "redirect_url": "/training/paths/secure-identity-access/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/manage-security-operations-new/index.md",
+      "redirect_url": "/training/paths/secure-azure-using-microsoft-defender-cloud-sentinel/",
+      "redirect_document_id": false
     }
   ]
 }
