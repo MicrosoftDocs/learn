@@ -47168,6 +47168,11 @@
       "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/4-create-a-new-user.md",
       "redirect_url": "/training/modules/manage-security-controls-identity-access/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-identities-microsoft-entra-id/1-introduction.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
     }
   ]
 }
