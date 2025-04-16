@@ -5660,3 +5660,8 @@ achievements:
   title: Image classification with custom Azure AI Vision models
   summary: Classify images by training a custom model with Azure AI Vision.
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.governance-security.badge
+  type: badge
+  title: Plan, implement, and manage governance for security
+  summary: This module focuses on enabling administrators to effectively plan, implement, and manage security governance in Azure, ensuring compliance with organizational policies and best practices.
+  iconUrl: /training/achievements/generic-badge.svg
