@@ -45,7 +45,6 @@ units:
 - learn.wwl.manage-authorization-microsoft-entra-id.enable-microsoft-entra-permissions-management-your-organization
 - learn.wwl.manage-authorization-microsoft-entra-id.zero-trust-security
 - learn.wwl.manage-authorization-microsoft-entra-id.microsoft-entra-privileged-identity-management
-- learn.wwl.manage-authorization-microsoft-entra-id.configure-privileged-identity-management
 - learn.wwl.manage-authorization-microsoft-entra-id.microsoft-entra-id-governance
 - learn.wwl.manage-authorization-microsoft-entra-id.entitlement-management
 - learn.wwl.manage-authorization-microsoft-entra-id.identity-lifecycle-management
