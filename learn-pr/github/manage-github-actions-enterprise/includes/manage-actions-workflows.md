@@ -49,63 +49,296 @@ Creating a workflow template is done in two steps:
 1. Create a `yml` workflow file.
 2. Create a `json` metadata file that describes how the template should be presented to users when they're creating a workflow.
 
-    > [!Note]
-    > The metadata file must have the same name as the workflow file. Instead of the `.yml` extension, it must be appended with `.properties.json`. For example, a file named `octo-organization-ci.properties.json` contains the metadata for the workflow file named `octo-organization-ci.yml`.
+:::note
+The metadata file must have the same name as the workflow file. Instead of the `.yml` extension, it must be appended with `.properties.json`. For example, a file named `octo-organization-ci.properties.json` contains the metadata for the workflow file named `octo-organization-ci.yml`.
+:::
 
 Both files must be placed in a public `.github` repository and in a directory named `workflow-templates`. You might have to create these if they don't already exist in your organization.
-
-The following is an example of a basic workflow file:
-
-```yml
-name: Octo Organization CI
-
-on:
-  push:
-    branches: [ $default-branch ]
-  pull_request:
-    branches: [ $default-branch ]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Run a one-line script
-        run: echo Hello from Octo Organization
-```
-
-Note that the preceding file uses a `$default-branch` placeholder. When a workflow is created using your template, this placeholder is automatically replaced with the name of the repository's default branch.
-
-Following is the metadata file you would create for the workflow file:
-
-```json
-{
-    "name": "Octo Organization Workflow",
-    "description": "Octo Organization CI workflow template.",
-    "iconName": "example-icon",
-    "categories": [
-        "Go"
-    ],
-    "filePatterns": [
-        "package.json$",
-        "^Dockerfile",
-        ".*\\.md$"
-    ]
-}
-```
-
-Metadata files use the following parameters:
-
-|   Parameter    |                                                                                                                   Description                                                                                                                   |      Required      |
-|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
-|     `name`     |                                                                                   Name of the workflow template displayed in the list of available templates.                                                                                    | Yes |
-| `description`  |                                                                                Description of the workflow template displayed in the list of available templates.                                                                                | Yes |
-|   `iconName`   | Defines an icon for the workflow's entry in the template list. Must be an SVG icon of the same name, and must be stored in the `workflow-templates` directory. For example, an SVG file named `example-icon.svg` is referenced as `example-icon`. | No |
-|  `categories`  |                                      Defines the language category of the workflow. When a user views the available templates, the templates that match the same language will feature more prominently.                                      |        No         |
-| `filePatterns` |                                                       Enables the template to be used if the user's repository has a file in its root directory that matches a defined regular expression.                                                       |        No         |
 
 Once a workflow template is created, users in your organization can find it under **Actions > New workflow > Workflows created by _your_organization_name**.
 
 :::image type="content" source="../media/workflow-template.png" alt-text="Workflow template example." border="false":::
+
+### Identify Reuse Templates for Actions and Workflows
+
+GitHub Actions allows for **workflow automation**, and a key part of managing workflows efficiently is using **reusable templates**. Reusable templates help standardize and streamline development across multiple repositories, reducing redundancy and improving maintainability.
+
+Reusable templates in GitHub Actions refer to **predefined actions and workflows** that can be referenced and used across multiple projects. They ensure consistency and compliance with enterprise-wide standards.
+
+## Types of Reusable Templates
+
+| **Template Type**      | **Purpose**                                      | **Example**                                |
+| ---------------------- | ------------------------------------------------ | ------------------------------------------ |
+| **Reusable Workflows** | Standardize CI/CD pipelines across repositories. | `ci-pipeline.yml`, `deploy-app.yml`        |
+| **Reusable Actions**   | Encapsulate common automation logic.             | `setup-env-action`, `security-scan-action` |
+| **Worflow Templates**  | Define reusable job structures.                  | `test-job.yml`, `build-job.yml`            |
+
+## Reusable Workflows
+
+A **reusable workflow** is a workflow defined in a separate repository that can be referenced in multiple projects. This allows organizations to **centralize** their CI/CD logic.
+
+####  Structure of a Reusable Workflow
+
+A reusable workflow is stored in `.github/workflows/` and uses the **`workflow_call`** trigger.
+
+#### Example: Standardized CI Workflow (ci-pipeline.yml)
+
+```yaml
+name: CI Pipeline
+on:
+  workflow_call:
+    inputs:
+      node-version:
+        required: true
+        type: string
+    secrets:
+      npm-token:
+        required: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ inputs.node-version }}
+          registry-url: 'https://npm.pkg.github.com/'
+      - name: Install Dependencies
+        run: npm install
+      - name: Run Tests
+        run: npm test
+```
+
+#### Using a Reusable Workflow in Another Repository
+
+Once defined, the reusable workflow can be used in any repository via the **`uses:`** keyword.
+
+##### Example: Calling the Reusable Workflow
+
+```yaml
+name: Reusable CI Pipeline
+on: push
+jobs:
+  test:
+    uses: org/reusable-workflows/.github/workflows/ci-pipeline.yml@v1
+    with:
+      node-version: '16'
+    secrets:
+      npm-token: ${{ secrets.NPM_TOKEN }}
+```
+
+#### Benefits of using a reusable workflow
+
+- Ensures all repositories follow the same CI/CD structure.  
+- Reduces redundancy and maintenance overhead.  
+- Allows for **centralized updates** without modifying each repository.
+
+## Reusable Actions
+
+#### What Are Reusable Actions?
+
+A **GitHub Action** is a modular, reusable unit that executes specific automation tasks. Organizations often create custom actions to **encapsulate frequently used logic**.
+
+#### Structure of a Reusable Action
+
+A reusable action is defined in an **action repository** with an `action.yml` file.
+
+#### Example: Custom Setup Environment Action
+
+```yaml
+name: "Setup Environment"
+description: "Sets up Node.js and installs dependencies"
+inputs:
+  node-version:
+    description: "Node.js version"
+    required: true
+  registry-url:
+    description: "NPM Registry URL"
+    required: false
+    default: "https://registry.npmjs.org/"
+runs:
+  using: "node16"
+  main: "index.js"
+```
+
+#### Using a Reusable Action in a Workflow
+
+Instead of repeating setup steps in every workflow, we use our custom action:
+
+```yaml
+name: Build & Test
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Environment
+        uses: org/actions/setup-env@v1
+        with:
+          node-version: '16'
+```
+
+**Benefits:** Reduces duplication of setup logic across repositories.  
+Simplifies workflow files, making them more readable.  
+Centralizes updates—fixes or improvements in one place reflect across all workflows.
+
+## Workflow templates
+
+As discussed earlier, workflow templates help standardize automation across your organization by providing predefined structures for common tasks. These templates are a key part of the broader category of reusable workflows.
+
+In the earlier section "Create workflow templates," we outlined how to build these templates from a `yml` file and a corresponding `.properties.json` metadata file. That section also detailed where to store them and how they appear in the GitHub Actions UI for reuse.
+
+To further connect the concept: workflow templates are a form of reusable workflow. When you create and store them in a public `.github` repository under the `workflow-templates/` directory, they allow other organization members to create consistent workflows for their repositories without having to define them from scratch.
+
+By leveraging workflow templates, enterprises can:
+- Enforce best practices across repositories.
+- Accelerate onboarding and setup for new projects.
+- Maintain consistency in CI/CD processes.
+
+:::image type="content" source="../media/workflow-template.png" alt-text="Workflow template example." border="false":::
+
+### Define an Approach for Managing and Leveraging Reusable Components in GitHub Actions
+
+Reusable components in GitHub Actions refer to **workflows, actions, and scripts** that are used across multiple repositories to streamline development and automation. They help standardize CI/CD pipelines, improve maintainability, and reduce redundant configuration efforts.
+
+## Types of Reusable Components
+
+1. Reusable Workflows
+    
+    - Defined once and referenced in multiple repositories.
+    - Example: A standard build-and-deploy workflow for all projects in an enterprise.
+2. Custom GitHub Actions
+    
+    - Created for repeated tasks (e.g., setting up dependencies, running security checks).
+    - Example: A company-wide action for enforcing code linting.
+3. Shared Scripts
+    
+    - Bash, PowerShell, or Python scripts used in workflows to automate tasks.
+    - Example: A script to generate compliance reports for code repositories.
+
+## Creating Centralized Repositories for Reusable Components
+
+A well-structured repository for reusable workflows and actions ensures easy access and standardization. Consider creating the following:
+
+| **Repository Type**      | **Purpose**                                        | **Example Naming Convention** |
+| ------------------------ | -------------------------------------------------- | ----------------------------- |
+| **Actions Repository**   | Stores custom GitHub Actions used across projects. | `org-actions-repo`            |
+| **Workflows Repository** | Contains reusable workflows for CI/CD automation.  | `org-reusable-workflows`      |
+| **Scripts Repository**   | Maintains reusable scripts for automation.         | `org-scripts-library`         |
+
+**Example Structure for an Actions Repository:**
+
+```
+org-actions-repo/
+│── setup-node/         # Custom GitHub Action for Node.js setup
+│   ├── action.yml
+│   ├── Dockerfile
+│   ├── README.md
+│── security-scan/      # Custom GitHub Action for security scanning
+│   ├── action.yml
+│   ├── scan.py
+│   ├── README.md
+│── LICENSE
+│── README.md
+```
+
+## Naming Conventions for Files and Folders
+
+To ensure maintainability and ease of use, follow **consistent naming conventions**.
+
+#### Repository Naming
+
+- Use **descriptive and consistent** names for repositories:
+    - `org-actions-repo`
+    - `org-reusable-workflows`
+    - `my-random-actions`
+- Prefer **hyphenated names** for clarity:
+    - `ci-pipeline`
+    - `CIPipeline`
+
+#### Workflow and Action Naming
+
+- Follow a structured format:
+    
+    - `[scope]-[purpose]`
+    - Examples:
+        - `ci-test.yml` → For Continuous Integration testing
+        - `deploy-app.yml` → Deployment workflow
+        - `build-container.yml` → Builds Docker containers
+- Use **versioned directories** for long-term maintainability:
+    
+    ```
+    reusable-workflows/
+    ├── v1/
+    │   ├── ci-test.yml
+    │   ├── deploy-app.yml
+    ├── v2/
+    │   ├── ci-test.yml
+    │   ├── deploy-app.yml
+    ```
+
+#### Action Naming
+
+- **Use PascalCase or kebab-case** for action names:
+    
+    - `Run-Linter`
+    - `run-linter`
+    - `Runlinter`
+- **Provide clear descriptions in `action.yml`:**
+    
+    ```yaml
+    name: "Run Linter"
+    description: "A reusable action to run lint checks on JavaScript projects."
+    ```
+
+## Plans for Ongoing Maintenance of Reusable Components
+
+## Versioning and Dependency Management
+
+- **Tag releases** using GitHub releases (`v1.0.0`, `v2.0.0`).
+- **Avoid using `latest` tags** in workflows to prevent unexpected breaking changes.
+- **Use semantic versioning**:
+    - **Patch Updates:** `v1.0.1` → Fixes bugs, minor updates.
+    - **Minor Updates:** `v1.1.0` → New features, backward-compatible.
+    - **Major Updates:** `v2.0.0` → Breaking changes.
+
+#### Referencing Versions in Workflows
+
+Instead of:
+
+```yaml
+uses: org-actions-repo/setup-node@latest
+```
+
+Use a stable version:
+
+```yaml
+uses: org-actions-repo/setup-node@v1.2.0
+```
+
+## Automating Updates and Maintenance
+
+- Implement a **GitHub Action to automatically test workflows and actions** before merging.
+- Use **Dependabot** to detect outdated dependencies in reusable actions.
+
+## Documenting and Providing Usage Guidelines
+
+- Each repository should include:
+    - **README.md** explaining:
+        - Purpose of the component.
+        - How to use it.
+        - Example workflows.
+    - **CHANGELOG.md** to track updates.
+    - **CONTRIBUTING.md** outlining best practices for modifications.
+
+## 3.4 Security and Access Control
+- Restrict write access to action repositories.
+- Require code reviews and **GitHub CODEOWNERS** for managing changes.
+- Use **GitHub Secret Scanning** to prevent hardcoding secrets in workflows.
+## 3.5 Monitoring and Deprecation Strategy
+- **Set up GitHub Issues and Discussions** for feedback.
+- **Deprecation Plan**:
+  - Notify users before removing older versions.
+  - Offer migration guides for major changes.
