@@ -46988,6 +46988,11 @@
       "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/18-microsoft-entra-id-authentication-verification-methods.md",
       "redirect_url": "/training/modules/manage-security-controls-identity-access/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/13-microsoft-entra-id-single-sign-on.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
     }
   ]
 }
