@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.manage-github-actions-enterprise.manage-leverage-reusable-actions
+title: Managing and leveraging reusable components in GitHub Actions
+metadata:
+  title: Managing and leveraging reusable components in GitHub Actions
+  description: Learn how to structure, version, and maintain reusable workflows, custom actions, and scripts across your GitHub Enterprise environment for scalable automation.
+  ms.date: 04/15/2025
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 9
+content: |
+  [!include[](includes/manage-leverage-reusable-actions.md)]
