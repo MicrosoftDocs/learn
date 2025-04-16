@@ -2,7 +2,7 @@ Azure Machine Learning is a cloud-based environment where you can build and mana
 
 Azure Machine Learning is structured to help teams of data scientists and ML engineers make the most of their existing data-processing and model-development skills. Whether you use Python or R—or have previous experience with other open-source platforms such as PyTorch and TensorFlow—Azure Machine Learning is flexible enough to support these platforms and accelerate your work.
 
-With in-built services like Azure Machine Learning Studio that provides a user-friendly interface, and Automated Machine Learning capabilities that assist you in model selection and training, Azure Machine Learning has tools and features to suit every level of experience.
+With in-built services like Azure Machine Learning studio that provides a user-friendly interface, and Automated Machine Learning capabilities that assist you in model selection and training, Azure Machine Learning has tools and features to suit every level of experience.
 
 ## Prerequisites
 

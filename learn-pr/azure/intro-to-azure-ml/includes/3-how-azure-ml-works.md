@@ -1,6 +1,6 @@
 Using Azure Machine Learning requires an Azure account and Azure subscription. The subscription has standard and free pricing tiers and provides an endpoint and subscription key to access the service.
 
-You can access Azure Machine Learning on the cloud or on your local machine through the Python SDK, REST API, and Command Line Interface (CLI) extension. If you prefer low or no-code options, then you can use Azure Machine Learning Studio to quickly train and deploy machine learning models.
+You can access Azure Machine Learning on the cloud or on your local machine through the Python SDK, REST API, and Command Line Interface (CLI) extension. If you prefer low or no-code options, then you can use Azure Machine Learning studio to quickly train and deploy machine learning models.
 
 Azure Machine Learning manages all the resources you need for the machine learning lifecycle inside a workspace. Multiple people can share workspaces, and they can include things like the computing resources available for your notebooks, training clusters, and pipelines. Workspaces are also the logical containers for your data stores and a repository for models and anything else within the model lifecycle.
 
@@ -8,13 +8,13 @@ Azure Machine Learning manages all the resources you need for the machine learni
 
 ## How to create machine learning models
 
-You can create models using the SDK, import them from ML frameworks, or create them without code using the Azure Machine Learning Studio. When you connect to a workspace, you can select various development environments with preloaded packages that contain curated environments for popular frameworks, such as TensorFlow and PyTorch. You can then choose compute targets to run a training script locally or on a virtual machine to create a model. Compute targets within Azure Machine Learning can automatically scale up and manage jobs to use GPU and CPU resources efficiently.
+You can create models using the SDK, import them from ML frameworks, or create them without code using the Azure Machine Learning studio. When you connect to a workspace, you can select various development environments with preloaded packages that contain curated environments for popular frameworks, such as TensorFlow and PyTorch. You can then choose compute targets to run a training script locally or on a virtual machine to create a model. Compute targets within Azure Machine Learning can automatically scale up and manage jobs to use GPU and CPU resources efficiently.
 
-You can log and monitor the status of runs natively via the SDK, Azure Monitor, and Azure Machine Learning Studio, or by installing packages to run MLFlow and TensorBoard. You can then view visualizations of training runs within the Azure Studio or workspace to drill down on results and metrics.
+You can log and monitor the status of runs natively via the SDK, Azure Monitor, and Azure Machine Learning studio, or by installing packages to run MLFlow and TensorBoard. You can then view visualizations of training runs within the Azure Studio or workspace to drill down on results and metrics.
 
-The following example shows how you can customize Azure Machine Learning Studio's visualization to add charts, compare data, and apply filters to better analyze your results and metrics.
+The following example shows how you can customize Azure Machine Learning studio's visualization to add charts, compare data, and apply filters to better analyze your results and metrics.
 
-:::image type="content" source="../media/3-studio-chart.gif" alt-text="Screenshot of visualizing a model in Azure Machine Learning Studio." lightbox="../media/3-studio-chart.gif":::
+:::image type="content" source="../media/3-studio-chart.gif" alt-text="Screenshot of visualizing a model in Azure Machine Learning studio." lightbox="../media/3-studio-chart.gif":::
 
 ### Experiments
 
@@ -32,11 +32,11 @@ Azure Machine Learning can periodically check for newly stored data with an *inc
 
 ### Labeling
 
-*Data labeling* is a centralized place to create, manage, and monitor labeling tasks. You can administer all data labeling projects via the Azure Machine Learning Studio or workspace dashboard, where team members can view progress and assist in collaborative labeling projects. Human-in-the-loop labeling can take place here, allowing team members to manually add tags to train the ML-labeling models. After enough labels are submitted, a classification model is used to predict tags. Team members can then accept or reject instances of ML-tagged data to help train the labeling model's accuracy. Eventually, the model will be capable of labeling the data without assistance.
+*Data labeling* is a centralized place to create, manage, and monitor labeling tasks. You can administer all data labeling projects via the Azure Machine Learning studio or workspace dashboard, where team members can view progress and assist in collaborative labeling projects. Human-in-the-loop labeling can take place here, allowing team members to manually add tags to train the ML-labeling models. After enough labels are submitted, a classification model is used to predict tags. Team members can then accept or reject instances of ML-tagged data to help train the labeling model's accuracy. Eventually, the model will be capable of labeling the data without assistance.
 
-The following shows an example of a labeling task underway in Azure Machine Learning Studio.
+The following shows an example of a labeling task underway in Azure Machine Learning studio.
 
-:::image type="content" source="../media/3-labeling.gif" alt-text="Screenshot of Azure Machine Learning Studio data labeling." lightbox="../media/3-labeling.gif":::
+:::image type="content" source="../media/3-labeling.gif" alt-text="Screenshot of Azure Machine Learning studio data labeling." lightbox="../media/3-labeling.gif":::
 
 ## Deploying machine learning models
 
