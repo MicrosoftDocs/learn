@@ -278,14 +278,14 @@ You have the ability to generate SBOM attestions for an SBOM.  To generate and a
 
 ##### Generating an SBOM attestation for binaries
 
-1. dss
+1. You must add the following permissions to the workflow that builds the binary that you intend to attest:
    ```yml
        permissions:
         id-token: write
         contents: read
         attestations: write
    ```
-2. dsdsa
+2. You must add the step below following the step where the binary is built:
     ```yml
         - name: Generate SBOM attestation
         uses: actions/attest-sbom@v1
