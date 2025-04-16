@@ -42,18 +42,70 @@ As a best practice, we recommend you document the following in a GitHub wiki or 
 
 ### Create workflow templates
 
-Workflow templates are a great way to ensure automation is reused and maintained in your enterprise. Both in Enterprise Cloud and Enterprise Server, users with write access to an organization's `.github` repository can create workflow templates that will be available for use to the other organization's members with the same write access. Workflow templates can then be used to create new workflows in the public and private repositories of the organization.
+Workflow templates are a great way to ensure automation is reused and maintained in your enterprise. Both in Enterprise Cloud and Enterprise Server, users with write access to an organization's .github repository can create workflow templates that will be available for use to the other organization's members with the same write access. Workflow templates can then be used to create new workflows in the public and private repositories of the organization.
 
 Creating a workflow template is done in two steps:
 
-1. Create a `yml` workflow file.
-2. Create a `json` metadata file that describes how the template should be presented to users when they're creating a workflow.
+1. Create a yml workflow file.
+2. Create a json metadata file that describes how the template should be presented to users when they're creating a workflow.
 
-:::note
-The metadata file must have the same name as the workflow file. Instead of the `.yml` extension, it must be appended with `.properties.json`. For example, a file named `octo-organization-ci.properties.json` contains the metadata for the workflow file named `octo-organization-ci.yml`.
-:::
+    > [!Note]
+    > The metadata file must have the same name as the workflow file. Instead of the .yml extension, it must be appended with .properties.json. For example, a file named octo-organization-ci.properties.json contains the metadata for the workflow file named octo-organization-ci.yml.
 
-Both files must be placed in a public `.github` repository and in a directory named `workflow-templates`. You might have to create these if they don't already exist in your organization.
+Both files must be placed in a public .github repository and in a directory named workflow-templates. You might have to create these if they don't already exist in your organization.
+
+The following is an example of a basic workflow file:
+
+```
+yml
+name: Octo Organization CI
+
+on:
+  push:
+    branches: [ $default-branch ]
+  pull_request:
+    branches: [ $default-branch ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run a one-line script
+        run: echo Hello from Octo Organization
+```
+
+Note that the preceding file uses a $default-branch placeholder. When a workflow is created using your template, this placeholder is automatically replaced with the name of the repository's default branch.
+
+Following is the metadata file you would create for the workflow file:
+```
+json
+{
+    "name": "Octo Organization Workflow",
+    "description": "Octo Organization CI workflow template.",
+    "iconName": "example-icon",
+    "categories": [
+        "Go"
+    ],
+    "filePatterns": [
+        "package.json$",
+        "^Dockerfile",
+        ".*\\.md$"
+    ]
+}
+```
+
+Metadata files use the following parameters:
+
+|   Parameter    |                                                                                                                   Description                                                                                                                   |      Required      |
+|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
+|     name     |                                                                                   Name of the workflow template displayed in the list of available templates.                                                                                    | Yes |
+| description  |                                                                                Description of the workflow template displayed in the list of available templates.                                                                                | Yes |
+|   iconName   | Defines an icon for the workflow's entry in the template list. Must be an SVG icon of the same name, and must be stored in the workflow-templates directory. For example, an SVG file named example-icon.svg is referenced as example-icon. | No |
+|  categories  |                                      Defines the language category of the workflow. When a user views the available templates, the templates that match the same language will feature more prominently.                                      |        No         |
+| filePatterns |                                                       Enables the template to be used if the user's repository has a file in its root directory that matches a defined regular expression.                                                       |        No         |
 
 Once a workflow template is created, users in your organization can find it under **Actions > New workflow > Workflows created by _your_organization_name**.
 
@@ -195,8 +247,6 @@ By leveraging workflow templates, enterprises can:
 - Enforce best practices across repositories.
 - Accelerate onboarding and setup for new projects.
 - Maintain consistency in CI/CD processes.
-
-:::image type="content" source="../media/workflow-template.png" alt-text="Workflow template example." border="false":::
 
 ## Managing and leveraging reusable components in GitHub Actions
 
