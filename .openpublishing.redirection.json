@@ -47123,6 +47123,11 @@
       "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/20-lifecycle-workflows.md",
       "redirect_url": "/training/modules/manage-security-controls-identity-access/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authorization-microsoft-entra-id/7-microsoft-entra-built-in-roles.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
     }
   ]
 }
