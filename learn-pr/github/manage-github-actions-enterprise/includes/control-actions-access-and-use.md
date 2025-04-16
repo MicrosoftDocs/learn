@@ -243,11 +243,11 @@ Audit logs provide insights into:
 1. Navigate to Organization Settings → Security → Audit Log.
 2. Filter logs by "actions" to see workflow execution history.
 
-## 5.2 Enforcing Log Retention Policies
+### Enforcing Log Retention Policies
 
 Enterprises should configure **log retention** to comply with security policies. Retaining logs ensures that organizations can review historical workflow executions, detect suspicious activities, and comply with industry regulations.
 
-##### Steps to Configure Log Retention Policies
+#### Steps to Configure Log Retention Policies
 
 1. Navigate to Organization Settings → Security → Audit Log.
 2. Set the log retention period to match compliance requirements:
