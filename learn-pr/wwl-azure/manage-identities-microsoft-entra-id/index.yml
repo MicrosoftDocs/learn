@@ -39,7 +39,6 @@ subjects:
 units:
 - learn.wwl.manage-identities-microsoft-entra-id.secure-microsoft-entra-users
 - learn.wwl.manage-identities-microsoft-entra-id.secure-microsoft-entra-groups
-- learn.wwl.manage-identities-microsoft-entra-id.secure-external-microsoft-entra-identities
 - learn.wwl.manage-identities-microsoft-entra-id.summary
 badge:
   uid: learn.wwl.manage-identities-microsoft-entra-id.badge
