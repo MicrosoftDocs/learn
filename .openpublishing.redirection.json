@@ -46923,6 +46923,11 @@
       "source_path": "learn-pr/wwl-azure/governance-security/16-summary.md",
       "redirect_url": "/training/modules/implement-manage-enforcement-cloud-governance-policies/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-authentication-microsoft-entra-id/index.md",
+      "redirect_url": "/training/modules/manage-security-controls-identity-access/",
+      "redirect_document_id": false
     }
   ]
 }
