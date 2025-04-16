@@ -5685,3 +5685,8 @@ achievements:
   title: 'AZ-500: Manage identity and access'
   summary: Master identity and access management in Microsoft Entra ID, securing users, groups, and external identities, implementing authentication and authorization controls, and managing application access and security.
   iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.manage-security-operations-new.trophy
+  type: trophy
+  title: 'AZ-500: Manage security operations'
+  summary: Master the art of managing security operations in Azure, from governance and policy creation to infrastructure security, key management, security posture, threat protection, and advanced security monitoring and automation.
+  iconUrl: /training/achievements/generic-trophy.svg
