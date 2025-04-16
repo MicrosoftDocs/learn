@@ -76,7 +76,7 @@ Since GitHub's IP address ranges can change, it's crucial to periodically review
 
 ### Effects and Potential Abuse Vectors of Enabling Self-Hosted Runners on Public Repositories  
 
-### Effects of Enabling Self-Hosted Runners  
+#### Effects of Enabling Self-Hosted Runners  
 1. **Customization & Performance Optimization**  
    - Self-hosted runners allow control over hardware, installed software, and environment settings.  
    - Workflows can be optimized for performance by using dedicated, high-performance machines.  
