@@ -1,7 +1,7 @@
 
 ## Azure Network Watcher
 
-[Azure Network Watcher](/azure/network-watcher/network-watcher-overview) is a regional service that enables you to monitor and diagnose network conditions. Monitoring enables you to diagnose problems at an end-to-end network level view. Network diagnostic and visualization tools available with Network Watcher help you understand, diagnose, and gain insights to your network in Azure. Network Watcher is designed to monitor and repair the network health of IaaS products which includes virtual machines, virtual networks, Application Gateways, and Load Balancers.
+[Azure Network Watcher](/azure/network-watcher/network-watcher-overview) is a regional service that enables you to monitor and diagnose network conditions. Network diagnostic and visualization tools help you understand, diagnose, and gain insights to your network in Azure. Network Watcher is designed to monitor and repair the network health of IaaS products which includes virtual machines, virtual networks, Application Gateways, and Load Balancers.
 
 ## Azure Network Watcher (video)
 
@@ -27,7 +27,7 @@
 
 - **Effective security rules** shows you all security rules applied to the network interface, the subnet the network interface is in, and the aggregate of both.
 
-- **Connection troubleshoot** tests connections between a virtual machine, a virtual machine scale set, an application gateway, or a Bastion host and a virtual machine, an FQDN, a URI, or an IPv4 address. 
+- **Connection troubleshoot** tests connections between resources. For example, a virtual machine, a virtual machine scale set, or an application gateway. 
 
 - **Packet Capture** lets you remotely create packet capture sessions to record all network traffic to and from a virtual machine (VM) or a virtual machine scale set.
 
@@ -40,4 +40,4 @@
 - **Traffic analytics** provides rich visualizations of flow logs data.
 
 > [!TIP]
-> Learn more about Azure Network Watcher in the [Introduction to Network Watcher(/training/modules/intro-to-azure-network-watcher/) training module.
+> Learn more about Azure Network Watcher in the [Introduction to Network Watcher](/training/modules/intro-to-azure-network-watcher/) training module.

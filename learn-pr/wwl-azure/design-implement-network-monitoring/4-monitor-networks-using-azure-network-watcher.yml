@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-implement-network-monitoring.monitor-your-networks-using-azure-network-watcher
-title: Monitor your networks using Azure network watcher
+title: Monitor your networks using Azure Network Watcher
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Monitor your networks using Azure network watcher
-  description: "Monitor your networks using Azure network watcher"
+  title: Monitor your networks using Azure Network Watcher
+  description: "Monitor your networks using Azure Network Watcher"
   ms.date: 04/17/2025
   author: wwlpublish
   ms.author: cynthist
@@ -33,10 +33,10 @@ quiz:
     choices:
     - content: "By managing user access and permissions."
       isCorrect: false
-      explanation: "Incorrect. Azure Network Watcher does not manage user access and permissions."
+      explanation: "Incorrect. Azure Network Watcher doesn't manage user access and permissions."
     - content: "By providing firewall and antivirus solutions."
       isCorrect: false
-      explanation: "Incorrect. While Azure does offer firewall and antivirus solutions, these are not features of Azure Network Watcher."
+      explanation: "Incorrect.These aren't features of Azure Network Watcher."
     - content: "By enabling the monitoring and diagnosing of network traffic patterns."
       isCorrect: true
       explanation: "Correct. Azure Network Watcher can help identify potential security risks by monitoring and diagnosing network traffic patterns."

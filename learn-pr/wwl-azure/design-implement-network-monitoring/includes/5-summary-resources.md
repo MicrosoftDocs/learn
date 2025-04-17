@@ -21,9 +21,9 @@ Copilot can assist you in configuring Azure infrastructure solutions. Copilot ca
 
 - [Design and implement network monitoring](/training/modules/analyze-infrastructure-with-azure-monitor-logs/). Use Azure Monitor logs to extract valuable information about your infrastructure from log data.
 
-- [Introduction to Network Watcher(/training/modules/intro-to-azure-network-watcher/). This module explains what Network Watcher does, how it works, and when you should choose to use Network Watcher as a solution to meet your organization's needs.
+- [Introduction to Network Watcher](/training/modules/intro-to-azure-network-watcher/). This module explains what Network Watcher does, how it works, and when you should choose to use Network Watcher as a solution to meet your organization's needs.
 
 - [Monitor and troubleshoot your end-to-end Azure network infrastructure by using network monitoring tools](/training/modules/design-implement-network-monitoring/). You learn to design and implement network monitoring solutions such as Azure Monitor and Network Watcher. 
 
-- [Configure monitoring for virtual networks](training/modules/configure-monitoring-virtual-networks/). Understand how to use Azure Network Watcher Connection Monitor, flow logs, NSG diagnostics, and packet capture to monitor connectivity across your Azure IaaS network resources.
+- [Configure monitoring for virtual networks](training/modules/configure-monitoring-virtual-networks/). Understand how to use Azure Network Watcher Connection Monitor, flow logs, NSG diagnostics, and packet capture.
 
