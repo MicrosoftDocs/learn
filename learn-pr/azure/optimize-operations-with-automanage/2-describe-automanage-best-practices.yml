@@ -2,9 +2,9 @@
 uid: learn.optimize-operations-with-automanage.describe-automanage-best-practices
 title: Describe concepts around Azure Automanage best practices
 metadata:
-  title: Describe concepts around Azure Automanage best practices
+  title: Describe Concepts Around Azure Automanage Best Practices
   description: Describe the benefits and services of using Azure Automanage.
-  ms.date: 01/20/2025
+  ms.date: 04/17/2025
   author: johnmarco
   ms.author: johnmarc
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/2-describe-automanage-best-practices.md)]
-
+

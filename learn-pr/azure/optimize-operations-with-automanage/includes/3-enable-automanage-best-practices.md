@@ -6,7 +6,6 @@ If you don't have an Azure subscription, [create an account](https://azure.micro
 
 > [!NOTE]
 > Free trial accounts don't have access to the virtual machines used in this tutorial. Please upgrade to a pay-as-you-go subscription.
-
 > [!IMPORTANT]
 > You need to have the **Contributor** role on the resource group containing your VMs to enable Automanage. If you're enabling Automanage for the first time on a subscription, you need the following permissions: **Owner** role or **Contributor** along with **User Access Administrator** roles on your subscription.
 
@@ -73,7 +72,7 @@ You can enable Automanage for multiple VMs using a built-in Azure policy.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 1. In the search bar, search for and select **Policy**.
-1. In the menu, select **Definitions**.
+1. In the menu, select **Authoring > Definitions**.
 1. In the **Categories** drop-down, select **Automanage**.
     The list updates to include the following policies:
     - Configure virtual machines to be onboarded to Azure Automanage 
@@ -81,7 +80,7 @@ You can enable Automanage for multiple VMs using a built-in Azure policy.
 1. Select the applicable policy. After selection, you're able to view its **Definition** tab.
     > [!NOTE]
     > The Azure Policy definition is used to set Automanage parameters like the configuration profile. It also sets filters that ensure the policy applies only to the correct VMs.
-1. Select the **Assign** button to create an assignment.
+1. Select the **Assign Policy** button to create an assignment.
 1. Under the **Basics** tab, fill out **Scope** by setting the *Subscription* and *Resource Group*.
     > [!NOTE]
     > The Scope lets you define which VMs this policy applies to. Policies can be applied at the subscription level or the resource group level. If you set a resource group, all VMs that are currently in that resource group or any future VMs added to it will have Automanage automatically enabled.
