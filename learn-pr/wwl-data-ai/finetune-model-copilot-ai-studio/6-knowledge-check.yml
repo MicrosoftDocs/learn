@@ -6,7 +6,7 @@ metadata:
   description: Knowledge check about fine-tuning a language model.
   author: madiepev
   ms.author: madiepev
-  ms.date: 11/28/2024
+  ms.date: 04/17/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -47,4 +47,4 @@ quiz:
     - content: "n_epochs"
       isCorrect: true
       explanation: "Correct. When you set the number of epochs, you set the number of full cycles to run through the dataset."
-
+

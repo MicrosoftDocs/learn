@@ -6,11 +6,11 @@ metadata:
   description: Consider the tools and SDKs you'll use to develop your AI solution.
   author: wwlpublish
   ms.author: gmalc
-  ms.date: 01/31/2025
+  ms.date: 04/17/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 5
 content: |
   [!include[](includes/5-tools-and-sdks.md)]
-
+
