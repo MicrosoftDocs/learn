@@ -2,7 +2,7 @@ Azure Monitor and Azure Network Watcher are powerful tools provided by Microsoft
 
 Imagine you're a cloud engineer for a large organization. The organization's applications and services are now running on various virtual machines and containers, and it's your responsibility to ensure their availability and performance. 
 
-You're facing challenges in collecting, analyzing, understanding, and responding proactively to system events. The lack of a comprehensive monitoring solution has led to frequent downtime and user dissatisfaction.
+You're facing challenges in collecting, analyzing, understanding, and responding proactively to system events. You need a comprehensive monitoring solution to avoid downtime and user dissatisfaction.
 
 ## Learning objectives
 

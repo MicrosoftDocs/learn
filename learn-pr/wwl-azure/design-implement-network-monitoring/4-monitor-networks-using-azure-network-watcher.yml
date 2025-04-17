@@ -36,7 +36,7 @@ quiz:
       explanation: "Incorrect. Azure Network Watcher doesn't manage user access and permissions."
     - content: "By providing firewall and antivirus solutions."
       isCorrect: false
-      explanation: "Incorrect.These aren't features of Azure Network Watcher."
+      explanation: "Incorrect. Firewall and antivirus aren't features of Azure Network Watcher."
     - content: "By enabling the monitoring and diagnosing of network traffic patterns."
       isCorrect: true
       explanation: "Correct. Azure Network Watcher can help identify potential security risks by monitoring and diagnosing network traffic patterns."
