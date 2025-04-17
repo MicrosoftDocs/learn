@@ -69,7 +69,7 @@ In this section you will learn best practices for mitigating script injection at
 
 #### Use javascript actions instead of inline scripts
 
-It is recommended that you use Javascript actions that process context values as arguments.  By definition, this usage of Javascript actions mitigates the script injection attacks as the context values are not used to generate a shell script that is executed.
+It is recommended that you use Javascript actions that process context values as arguments, over using values in inline scripts.  By definition, this usage of Javascript actions mitigates the script injection attacks as the context values are not used to generate a shell script that is executed.
 
 In the example below, the use of the variable as the input to a Javascript action mitigates the potential of the variable being used to facilitate a script injection attack.
 
@@ -81,7 +81,7 @@ with:
 
 #### Use intermediate environment variables in inline scripts
 
-In instances where you are using inline scripts, variables that must be injected into the action should be evaluated as environment variables.  As environment variables are evaluated before the script is generated and evaluated. Using an intermediate environment variable mitigates the risk of a script injection attack.  An example is displayed below using the `github.event.pull_request.title` variable:
+In instances where you are using inline scripts, variables that must be injected into the action should be evaluated as environment variables. Environment variables are evaluated before the script is generated and evaluated. Using an intermediate environment variable mitigates the risk of a script injection attack.  An example is displayed below using the `github.event.pull_request.title` variable:
 
 ```yml
 - name: Check PR title
@@ -99,11 +99,11 @@ In instances where you are using inline scripts, variables that must be injected
 
 #### Leverage workflow templates to implement code scanning
 
-If you click on the **Actions** tab of any repository, you will be able to select the **New Workflow** button on the left side of the pane.  Within the **Choose a Workflow** page that is displayed as a result of clicking on the button, there is a **Security** section where workflow templates can be selected to instantiate as a workflow file in the current repository.  The CodeQL scanner, specifically, can be configured to trigger on an appropriate event to scan a branch's files & flag exposures (CWE's) in actions within workflows; including "script injection".
+If you click on the **Actions** tab of any repository, you will be able to select the **New Workflow** button on the left side of the pane.  Within the **Choose a Workflow** page that is displayed as a result of clicking on the button, there is a **Security** section where workflow templates can be selected to instantiate as a workflow file in the current repository.  The CodeQL scanner, specifically, can be configured to trigger on an appropriate event to scan a branch's files & flag exposures (CWE's) in actions within workflows; including `script injection`.
 
 #### Restrict permissions for tokens
 
-You should be sure to always apply 'rule of least privilege' to any created token.  In other words, ensure the token is assigned the minimum privileges to achieve the task for which it was created.
+You should be sure to always apply the `rule of least privilege` to any created token.  In other words, ensure the token is assigned the minimum privileges to achieve the task for which it was created.
 
 ### Identify best practices for using third-party actions securely 
 
@@ -128,14 +128,16 @@ By pinning an action to a full length commit SHA, you ensure, in the only way cu
 ```
 
 #### Audit the Source Code of the action
+
 You should review the source code of the action to verify that data is handled as expected and there is no unexpected malicious activity.
 
 ### Define the indicators of a trustworthy third-party action
+
 The following are indicators of a trustworthy third-party action.
 
 - The action appears in the GitHub Marketplace
 - The action's entry in the GitHub Marketplace shows the 'Verified creator' badge to the right of its title. This indicates that the vendor has been verified by GitHub.
-- The action.yml file defining the action is well documented.
+- The `action.yml` file defining the action is well documented.
 
 ### Use Dependabot version updates to keep actions up-to-date
 
@@ -148,6 +150,7 @@ The following subsections outline potential attack vectors that could advantage 
 #### Exfiltration of Data from a Runner
 
 Although GitHub actions automatically redact secrets printed to the log, this is not a true security boundary.  Once a runner is compromised, secrets can intentionally be sent to the log.  A simple example of exfiltrating secrets via script are:
+
 ```yml
       echo ${SOME_SECRET:0:4}; 
       echo ${SOME_SECRET:4:200};
@@ -157,12 +160,10 @@ The compromised runner can be utilized to forward secrets, or other repository d
 
 #### Access to Secrets
 
-Workflows triggered from a forked repository using the 'pull_request' event have read-only permissions and have no access to secrets. However, these permissions differ for various event triggers such as 'issue_comment', 'issues', 'push' and 'pull_request' from a branch within the repository. If a runner is compromised, there is a risk that repository secrets could be stolen or a job's GITHUB_TOKEN 'write' permissions could be compromised.
+Workflows triggered from a forked repository using the `pull_request` event have read-only permissions and have no access to secrets. However, these permissions differ for various event triggers such as `issue_comment`, `issues`, `push` and `pull_request` from a branch within the repository. If a runner is compromised, there is a risk that repository secrets could be stolen or a job's GITHUB_TOKEN `write` permissions could be compromised.
 
 -If the secret or token is set to an environment variable, it can be directly accessed through the environment using `printenv`.
-
 -If the secret is used directly in an expression, the generated shell script is stored on-disk and is accessible.
-
 -For a custom action, the risk can vary depending on how an action is using the secret it obtained from the argument:
 
 ```yml
@@ -203,13 +204,13 @@ GitHub Apps can be installed on select repositories. They have granular permissi
 
   4. **Personal Access Tokens**
 
-You should never use a "personal access token (classic)" to access a repository from a GitHub action. These tokens grant access to all repositories within the organizations that you have access to, as well as all personal repositories in your personal account. This indirectly grants broad access to all write-access users of the repository the workflow is in.
+You should never use a `personal access token (classic)` to access a repository from a GitHub action. These tokens grant access to all repositories within the organizations that you have access to, as well as all personal repositories in your personal account. This indirectly grants broad access to all write-access users of the repository the workflow is in.
 
 A "fine-grained personal access token" should be used that is for a new account that belongs to your organization and that is only granted access to the specific repositories that are needed for the workflow. Note that this approach is not scalable and should be avoided in favor of alternatives, such as deploy keys.
   
   5. **SSH Keys on Personal Accounts**
 
-Workflows should never use the SSH keys on a personal account. Similar to personal access tokens (classic), they grant read/write permissions to all of your personal repositories as well as all the repositories you have access to through organization membership. This indirectly grants broad access to all write-access users of the repository the workflow is in. If you're intending to use an SSH key because you only need to perform repository clones or pushes, and do not need to interact with public APIs, then you should use individual deploy keys instead.
+Workflows should never use the SSH keys on a personal account. Similar to `personal access tokens (classic)`, they grant read/write permissions to all of your personal repositories as well as all the repositories you have access to through organization membership. This indirectly grants broad access to all write-access users of the repository the workflow is in. If you're intending to use an SSH key because you only need to perform repository clones or pushes, and do not need to interact with public APIs, then you should use individual deploy keys instead.
 
 ### Audit GitHub Action Events
 
