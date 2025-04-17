@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.evaluate-models-azure-ai-studio.automated-evaluations
+title: Automated evaluations
+metadata:
+  title: Automated evaluations
+  description: "Learn how use autmated evaluations in the Azure AI Foundry portal."
+  ms.date: 04/16/2025
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/3b-automated-evaluations.md)]
