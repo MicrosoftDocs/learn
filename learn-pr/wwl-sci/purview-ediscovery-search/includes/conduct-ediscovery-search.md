@@ -1,6 +1,6 @@
 As an information security administrator, one of your responsibilities might be to investigate activity that could indicate a data leak or misuse of sensitive information. eDiscovery searches in Microsoft Purview help you locate potentially relevant content across Microsoft 365 services, such as email, files, and Teams messages.
 
-For example, you might need to identify messages and documents shared externally by the Sales department over a specific time period. To do that, you'll create a search in an eDiscovery case, define the locations to search, and configure your query to find the relevant content.
+For example, you might need to identify messages and documents shared externally by members of the Sales department during a specific time period. To do that, you'll create a search in an eDiscovery case, define the locations to search, and configure your query to find the relevant content.
 
 ## Supported Microsoft 365 workloads
 
@@ -14,7 +14,20 @@ When you conduct a search, the results might include content from the following 
   - **Files shared in chat and channels**
 - **Microsoft 365 Groups and Viva Engage**: Group conversations and shared documents
 
-## Define search criteria
+## Conduct an eDiscovery search
+
+eDiscovery searches in Microsoft Purview are typically conducted in phases. Each phase helps narrow the focus of the investigation and ensures that the results are accurate and relevant.
+
+The phases include:
+
+1. Define the scope of your search
+1. Identify data sources
+1. Build the query
+1. Run and review the results
+
+You might return to earlier phases to adjust sources or refine your query based on the results. Once you're confident in the results, you can move on to the next steps in the investigation, such as exporting data or adding it to a review set.
+
+### Phase 1: Define search criteria
 
 When configuring a search, you'll specify:
 
@@ -24,7 +37,7 @@ When configuring a search, you'll specify:
 
 You can use the **Conditions** tab to apply filters like date range or sender, and the Keywords tab to build your query using text or KQL.
 
-## Add data sources
+### Phase 2: Identify data sources
 
 Before you can run a search, you need to specify the sources where content should be collected. In Microsoft Purview eDiscovery, this includes users, groups, SharePoint sites, OneDrive accounts, and Teams.
 
@@ -42,9 +55,9 @@ To add sources:
 
 You can select individual sources or include all active users and groups in the tenant. For most investigations, narrowing the scope of your data sources helps return more relevant results and improves performance.
 
-## Add conditions
+### Phase 3: Build the query
 
-The Condition builder lets you define filters to narrow the results returned by your search. You can use simple matching logic or combine conditions to focus on specific types of content.
+The **Condition builder** lets you define filters to narrow the results returned by your search. You can use simple matching logic or combine conditions to focus on specific types of content.
 
 To add conditions:
 
@@ -60,7 +73,7 @@ Each condition supports different operators, such as **equals**, **contains**, o
 
 You can add multiple conditions and adjust or remove them as needed. When using both the condition builder and a keyword query, the system will apply both sets of criteria to your results.
 
-### Use Copilot to generate queries (preview)
+#### Use Copilot to generate queries (preview)
 
 If available, Microsoft Security Copilot can help build a query from a natural language prompt. For example:
 
@@ -68,7 +81,7 @@ _Find Teams messages sent by Alex Wilber between March 1 and March 15 that conta
 
 Copilot generates a suggested KQL query that you can review and edit.
 
-## Search by file (preview)
+#### Search by file (preview)
 
 If you're working with evidence like chat logs, documents, or audit exports, you can use the Search by file option to find related content. This preview feature lets you upload sample data and use it as the basis for your search instead of writing manual queries.
 
@@ -83,3 +96,17 @@ To use Search by file:
 Each file must be 10 MB or smaller and in `.txt` or `.csv` format. When using this method, KQL and condition builder options are disabled. Instead, Microsoft Purview analyzes the uploaded content to find matches.
 
 This feature is especially useful when you're investigating suspicious behavior and already have sample evidence to work from.
+
+### Phase 4: Run and review the results
+
+After you've configured your search criteria, you're ready to run the query and review the results.
+
+1. Select **Run query**.
+1. Choose your preferred result type:
+
+   - **Statistics**: View summary data about the search, including the number of items found, size of the results, and breakdown by location.
+   - **Sample**: View a random sample of the search results to validate your query before proceeding.
+
+Results appear in the **Query** and **Statistics** tabs. If the results don't match what you expected, you can update your conditions or data sources and run the query again.
+
+After confirming that the results are accurate, you can export the content or add it to a review set, depending on what your investigation requires.
