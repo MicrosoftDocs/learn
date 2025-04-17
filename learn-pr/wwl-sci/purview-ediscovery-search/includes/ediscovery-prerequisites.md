@@ -2,7 +2,7 @@ Before using eDiscovery to search for content, certain roles and access must be 
 
 ## Required roles
 
-Even if someone is a **Global Administrator** or **Compliance Administrator**, they won't be able to access eDiscovery cases or search user content unless they've been explicitly assigned to the **eDiscovery Manager** or **eDiscovery Administrator** role group. This permission model ensures that access to sensitive data is intentional and auditable.
+**Global** and **Compliance Administrators** can't access eDiscovery cases or search user content unless they're explicitly assigned to the **eDiscovery Manager** or **eDiscovery Administrator** role group. This permission model ensures that access to sensitive data is intentional and auditable.
 
 To access eDiscovery, users need to be assigned one of the following roles:
 
@@ -11,11 +11,11 @@ To access eDiscovery, users need to be assigned one of the following roles:
 
 These roles can be assigned in the Microsoft Purview portal under **Permissions > Roles**.
 
-## Assign access in the Microsoft Purview portal
+## Assign users to eDiscovery roles
 
 Administrators can assign users to eDiscovery roles by doing the following:
 
-1. In the [Microsoft Purview portal](https://purview.microsoft.com/), select **Settings** > **Roles and Scopes** > **Role groups**.
+1. In the [Microsoft Purview portal](https://purview.microsoft.com/?azure-portal=true), select **Settings** > **Roles and Scopes** > **Role groups**.
 1. Search for and select the appropriate eDiscovery role group.
 1. Add users or groups to the role group.
 

@@ -1,4 +1,4 @@
-To search for content in Microsoft Purview eDiscovery, you must first create a case. A case provides the workspace where searches, holds, and exports are managed. When you create a search, you're also required to create a case as part of the process. This ensures that access to investigation data is controlled and auditable.
+To search for content in Microsoft Purview eDiscovery, you must first create a case. A case provides the workspace where searches, holds, and exports are managed. Creating a search also creates a case, which ensures that access to investigation data is controlled and auditable. This ensures that access to investigation data is controlled and auditable.
 
 ## Why cases are required
 
@@ -16,7 +16,7 @@ You can either create a case and search in a single step or create a search thro
 
 ### Create a search directly
 
-1. In the [Microsoft Purview portal](https://purview.microsoft.com/), go to **Solutions** > **eDiscovery** > **Cases**.
+1. In the [Microsoft Purview portal](https://purview.microsoft.com/?azure-portal=true), go to **Solutions** > **eDiscovery** > **Cases**.
 1. Select the arrow next to **+ Create case**, then select **Create search**.
 
    :::image type="content" source="../media/create-search-split-button.png" alt-text="Screenshot showing split button and where to create a search in eDiscovery." lightbox=" ../media/create-search-split-button.png":::
@@ -43,3 +43,5 @@ If you prefer to create the case first and then add a search from within it:
 1. On the **Searches** tab of your case, select **Create search**.
 1. Enter a **name** and optional **description**.
 1. Select **Create** to create the search.
+
+Once the search is created, you can begin configuring the search criteria to locate the content relevant to your investigation.

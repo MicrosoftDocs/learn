@@ -53,6 +53,8 @@ To add sources:
 1. Optionally, select **Exclude inactive users** to limit the results.
 1. Choose your sources, then select **Save and close**.
 
+   :::image type="content" source="../media/select-data-sources.png" alt-text="Screenshot showing where to select data sources in eDiscovery." lightbox=" ../media/select-data-sources.png":::
+
 You can select individual sources or include all active users and groups in the tenant. For most investigations, narrowing the scope of your data sources helps return more relevant results and improves performance.
 
 ### Phase 3: Build the query
@@ -63,13 +65,15 @@ To add conditions:
 
 1. In the **Query** tab, under **Condition builder**, select **Add conditions**.
 1. Choose from the available options:
-   - KeyQL: Write advanced queries using Keyword Query Language.
-   - Date: Filter content based on sent, received, or modified dates.
-   - Subject/Title: Match specific terms in email subjects or document titles.
-   - Participants: Filter by sender, recipient, or other participants.
-   - Type: Filter by message kind, such as Email, Chat, or Teams.
+   - **KeyQL**: Write advanced queries using Keyword Query Language.
+   - **Date**: Filter content based on sent, received, or modified dates.
+   - **Subject/Title**: Match specific terms in email subjects or document titles.
+   - **Participants**: Filter by sender, recipient, or other participants.
+   - **Type**: Filter by message kind, such as Email, Chat, or Teams.
 
 Each condition supports different operators, such as **equals**, **contains**, or **starts with**. Conditions are combined using **AND**, meaning content must meet all specified criteria to be included.
+
+   :::image type="content" source="../media/condition-builder.png" alt-text="Screenshot showing an example query in the condition builder in eDiscovery." lightbox=" ../media/condition-builder.png":::
 
 You can add multiple conditions and adjust or remove them as needed. When using both the condition builder and a keyword query, the system will apply both sets of criteria to your results.
 
@@ -79,7 +83,9 @@ If available, Microsoft Security Copilot can help build a query from a natural l
 
 _Find Teams messages sent by Alex Wilber between March 1 and March 15 that contain attachments related to budget planning._
 
-Copilot generates a suggested KQL query that you can review and edit.
+:::image type="content" source="../media/generate-keyql-copilot.png" alt-text="Screenshot showing Copilot generating KeyQL code with Copilot." lightbox=" ../media/generate-keyql-copilot.png":::
+
+Copilot generates a suggested KeyQL query that you can review and edit.
 
 #### Search by file (preview)
 
