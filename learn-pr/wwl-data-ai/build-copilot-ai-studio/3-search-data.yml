@@ -6,11 +6,11 @@ metadata:
   description: Learn how to use Azure AI Search to make your data searchable and create an index.
   author: madiepev
   ms.author: madiepev
-  ms.date: 11/26/2024
+  ms.date: 04/17/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 7
 content: |
   [!include[](includes/3-search-data.md)]
-
+

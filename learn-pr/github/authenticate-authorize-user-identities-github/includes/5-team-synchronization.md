@@ -36,7 +36,7 @@ You can enable and use team synchronization, but only with the following support
 
 The steps to enable team synchronization depend on the IdP you want to use. There are prerequisites to enable team synchronization that apply to each IdP. To enable team synchronization with your IdP, you must obtain administrative access or work with your IdP administrator to configure the IdP integration and groups. After you enable team synchronization, team maintainers and organization owners can connect a team to an IdP group on GitHub or through the API.
 
-**Microsoft Entra ID**: The GitHub System Admin for the GitHub organization will need to identify and work with the Microsoft Entra Administrator to configure Team Synchronization. On the Microsoft Entra ID side, the service is called "automatic user account provisioning." To enable team synchronization for Microsoft Entra ID, the installation needs the following permissions:
+**Microsoft Entra ID**: The GitHub System Admin for the GitHub organization needs to identify and work with the Microsoft Entra Administrator to configure Team Synchronization. On the Microsoft Entra ID side, the service is called *automatic user account provisioning*. To enable team synchronization for Microsoft Entra ID, the installation needs the following permissions:
 
 - Read all users’ full profiles
 - Sign in and read user profiles
@@ -50,6 +50,6 @@ The steps to enable team synchronization depend on the IdP you want to use. Ther
 
 ## Disable team synchronization
 
-When you disable team synchronization, any team members who were assigned to a GitHub team through the IdP group are removed from the team and may lose access to your organization's repositories. You can disable this feature through the organization settings by selecting **Your organization** and selecting **Settings**. Next, select **Organization security** and choose **Disable team synchronization**.
+When you disable team synchronization, any team members who were assigned to a GitHub team through the IdP group are removed from the team and may lose access to your organization's repositories. You can disable this feature through the organization settings by selecting **Your organization** and selecting **Settings**. Next, select **Authentication security** and choose **Disable team synchronization**.
 
 :::image type="content" source="../media/disable-team-synchronization.png" alt-text="Screenshot of the organization setting to disable team synchronization." :::
