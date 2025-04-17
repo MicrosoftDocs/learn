@@ -26,7 +26,7 @@ subjects:
 - security
 modules:
 - learn.wwl.purview-audit-search-investigate
-- learn.wwl.search-for-content-security-compliance-center
+- learn.wwl.purview-ediscovery-search
 
 trophy:
   uid: learn.wwl.purview-audit-search.trophy
