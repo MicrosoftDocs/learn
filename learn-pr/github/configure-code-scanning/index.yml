@@ -2,7 +2,7 @@
 uid: learn.github.configure-code-scanning 
 metadata:
   title: "Configure Code Scanning on GitHub"
-  description: This module introduces you to code scanning and its features. You will learn how to implement code scanning using CodeQL, third party tools, and GitHub Actions.
+  description: This module introduces you to code scanning and its features. You'll learn how to implement code scanning using CodeQL, third party tools, and GitHub Actions.
   manager: mkluck
   ms.date: 04/16/2025
   author: rmcmurray

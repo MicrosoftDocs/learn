@@ -14,7 +14,7 @@ The code-scanning API lets you retrieve information on code scanning alerts, ana
 
 You can access the GitHub API over HTTPS from `https://api.github.com`. All data is sent and received as JSON. The API uses custom media types to let consumers choose the format of the data they wish to receive. Media types are specific to resources, allowing them to change independently and support formats that other resources don't.
 
-There is one supported custom media type for the code scanning REST API, `application/sarif+json`.
+There's one supported custom media type for the code scanning REST API, `application/sarif+json`.
 
 You can use this media type with GET requests sent to the `/analyses/{analysis_id}` endpoint. When you use this media type with this operation, the response includes a subset of the actual data that was uploaded for the specified analysis, rather than the summary of the analysis that's returned when you use the default media type. The response also includes additional data such as the `github/alertNumber` and `github/alertUrl` properties. The data is formatted as SARIF version 2.1.0.
 
@@ -32,7 +32,7 @@ Review the [GitHub REST API docs](https://docs.github.com/rest/code-scanning/cod
 
 #### CodeQL CLI
 
-The CodeQL CLI is a standalone product that you can use to analyze code. Its main purpose is to generate a database representation of a codebase, a CodeQL database. Once the database is ready, you can query it interactively, or you can run a suite of queries to generate a set of results in SARIF format and upload the results to GitHub.com. The CodeQL CLI is free to use on public repositories that are maintained on GitHub.com, and available to use on private repositories that are owned by customers with an Advanced Security license. Download the CodeQL bundle from https://github.com/github/codeql-action/releases.
+The CodeQL CLI is a standalone product that you can use to analyze code. Its main purpose is to generate a database representation of a codebase, a CodeQL database. Once the database is ready, you can query it interactively, or you can run a suite of queries to generate a set of results in SARIF format and upload the results to GitHub.com. The CodeQL CLI is free to use on public repositories maintained on GitHub.com, and it's available to use on customer owned private repositories with an Advanced Security license. Download the CodeQL bundle from https://github.com/github/codeql-action/releases.
 
 The bundle contains:
 
@@ -92,7 +92,7 @@ Each time the results of a new code scan are uploaded, the results are processed
 
 If your SARIF file doesn't include `partialFingerprints`, the `upload-sarif` action will calculate the `partialFingerprints` field for you and attempt to prevent duplicate alerts. GitHub can only create `partialFingerprints` when the repository contains both the SARIF file and the source code used in the static analysis.
 
-SARIF upload supports a maximum of 5000 results per upload. Any results over this limit are ignored. If a tool generates too many results, you should update the configuration to focus on results for the most important rules or queries.
+SARIF upload supports a maximum of 5,000 results per upload. Any results over this limit are ignored. If a tool generates too many results, you should update the configuration to focus on results for the most important rules or queries.
 
 For each upload, SARIF upload supports a maximum size of 10 MB for the gzip-compressed SARIF file. Any uploads over this limit will be rejected. If your SARIF file is too large because it contains too many results, you should update the configuration to focus on results for the most important rules or queries.
 
