@@ -34,7 +34,7 @@ quiz:
     - content: "Risk and safety"
       isCorrect: false
       explanation: "Incorrect. "
-  - content: "YYou want to evaluate the grammatical and linguistic quality of responses. What kind of metrics should you specify for automated evaluations?"
+  - content: "You want to evaluate the grammatical and linguistic quality of responses. What kind of metrics should you specify for automated evaluations?"
     choices:
     - content: "AI quality (AI-assisted)"
       isCorrect: true

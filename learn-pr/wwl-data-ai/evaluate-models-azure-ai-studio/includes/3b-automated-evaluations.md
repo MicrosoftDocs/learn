@@ -4,7 +4,7 @@ Automated evaluations in Azure AI Foundry portal enable you to assess the qualit
 
 To evaluate a model, you need a dataset of prompts and responses (and optionally, expected responses as "ground truth"). You can compile this dataset manually or use the output from an existing application; but a useful way to get started is to use an AI model to generate a set of prompts and responses related to a specific subject. You can then edit the generated prompts and responses to reflect your desired output, and use them as ground truth to evaluate the responses from another model.
 
-![Screenshot of AI-generated evaluation data](../media/ai-generated-test-data.png)
+![Screenshot of AI-generated evaluation data.](../media/ai-generated-test-data.png)
 
 ## Evaluation metrics
 
