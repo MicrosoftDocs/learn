@@ -1,144 +1,207 @@
-<!--GitHub Administration for Enterprise support and adoption-->
+# GitHub Administration for Enterprise Support and Adoption
 
-In this unit, you learn the difference between the two types of GitHub Enterprise features: *upkeep* and *automation*. As an administrator, you're responsible for knowing how and when to use them to make development easier.
+As a GitHub Enterprise administrator, you're responsible for establishing development environments that are both secure and scalable. This unit explores how to distinguish between GitHub Enterprise’s *upkeep* and *automation* features, and how to configure your organization for efficient collaboration.
 
-Let's say your organization forms a major partnership with a contractor who helps implement a new feature. As an administrator, you want to integrate each contractor employee with the internal team and help all collaborators cut down on repetitive tasks as they rapidly expand the code base. To accomplish these goals, you want to build a secure knowledge base by creating limited-access sites on GitHub Pages. You also need to keep track of the number of GitHub Actions minutes that collaborators use. Limited-access GitHub pages are an upkeep feature, and GitHub Actions minutes enable automation.
+We also introduce standards-based developer workflows and rulesets—powerful tools for centralized policy enforcement.
 
-GitHub Enterprise is the GitHub product that provides the most assistance and features to developers. In addition to its unique benefits, GitHub Enterprise also has all the features included at the GitHub Team pricing level.
 
-:::image type="content" source="../media/enterprise-features-dichotomy.png" alt-text="Graphic with title 'GitHub Enterprise features categories' that separates two lists: 'Upkeep' and 'Automation'":::
+## GitHub Enterprise: Upkeep vs. Automation
 
-## Developer workflow basics
+GitHub Enterprise includes all features from GitHub Team, plus enterprise-specific capabilities categorized as:
 
-:::image type="content" source="../media/pr-retargeting-diagram.png" alt-text="merge-pull-request-button":::
+- **Upkeep**: Features that improve security, access, and support.
+- **Automation**: Features that reduce manual workload for developers and improve code quality at scale.
 
-Before we go further, you should understand the standard developer workflows that form the basis of GitHub collaboration. This knowledge helps you make sense of how GitHub Enterprise features facilitate those workflows. A *workflow* that we discuss in this unit is distinct from *script workflows* that we discuss in unit 4.
+### Practical Example
 
-- When you create a repository, it has a *default* or *main* branch, which is the base branch for new pull requests and code commits.
-- You create new branches from the default branch of your repository, usually to isolate the development of a feature. Authenticated users who have privileges in the repository can merge the changes after review of a pull request.
-- As an administrator, you protect certain branches against deletion or force pushes to those branches. You can designate *code owners* who must review pull requests on those branches.
-- Authenticated users without privileges in a public repository that wish to work with the repository's code base can *fork* the repository, creating an independent copy of the code base for outside use.
-- Before they commit changes, release new versions, and at other regular intervals, collaborators often run scripts on GitHub to complete common tasks, like scanning code for security issues. You can also automate these scripts.
+Imagine your organization has brought in an external contractor team to deliver a new product feature. As an administrator, your responsibilities might include:
 
-## Upkeep features
+- Enabling private GitHub Pages for controlled documentation sharing (an upkeep feature).
+- Monitoring GitHub Actions usage to ensure efficient automation across the expanding team (an automation feature).
 
-One of your primary roles as an administrator for a GitHub organization is to help minimize the friction users feel when interacting with GitHub. *Friction* refers to problems like difficulty signing in, finding files in the code base, and sharing project knowledge within the right circles.
+:::image type="content" source="../media/enterprise-features-dichotomy.png" alt-text="GitHub Enterprise features categories split between Upkeep and Automation":::
 
-If you enable your collaborators to manage a limited number of authentication credentials and portals, build a knowledge base without worrying about breaking non-disclosure agreements, and feel safe against threat actors, then they can get down to the business of the real work--coding and deployment. Upkeep features help achieve these tasks, and they include:
 
-- GitHub Enterprise Support - The most in-depth level of support GitHub provides.
-- Authentication with Security Assertion Markup Language (SAML) single sign-on and access provisioning with SAML or SCIM - Makes it easier for users to authenticate and for administrators to ensure everyone has the appropriate level of access.
-- GitHub Connect - Shares data between a GitHub Enterprise Server instance and the GitHub Enterprise Cloud, enabling more redundancy.
-- Access control for GitHub Pages sites - Allows you to limit the sharing of your organization's documentation.
+## Establishing Developer Workflow Standards
 
-Some features are available to organizations running an instance of GitHub Enterprise Server on their own local server, but more features are available to organizations using GitHub Enterprise Cloud.
+To ensure consistency, security, and scalability, GitHub Enterprise organizations should follow these workflow standards:
 
-### How can you enable upkeep features?
+### 1. Collaboration Models
 
-:::image type="content" source="../media/your-organizations.png" alt-text="Your organizations in the profile menu":::
+| Workflow             | When to Use                                             |
+|----------------------|---------------------------------------------------------|
+| **Fork-and-Pull**    | Open source or cross-organization collaboration.        |
+| **Branching**        | Internal team development within shared repositories.   |
 
-You need to prepare to use upkeep features. Start with authentication using SAML single sign-on.
+### 2. Branching Conventions
 
-1. Connect your identity provider to your GitHub organization.
-1. Access the settings for your organization.
-1. Review the existing security configurations for that organization.
-1. If you want to unify all the Enterprise organizations under SAML single sign-on, select **Require SAML authentication** and provide the requested technical information (sign on URL, optional issuer, and public certificate).
+- Adopt a consistent naming scheme (e.g., `feature/*`, `bugfix/*`).
+- Use `main` or `develop` as stable integration branches for CI/CD pipelines.
 
-Then, secure the knowledge base for any of your private repositories that exist on the GitHub Enterprise Cloud.
 
-:::image type="content" source="../media/public-or-private-visibility.png" alt-text="Drop-down to choose a visibility for your site":::
+## 3. Rulesets: Modern Policy Enforcement
 
-1. Navigate to your site's repository and access its settings.
-1. Change **GitHub Pages visibility** to *Private*.
-1. Verify your privacy by checking that no URLs appear under **GitHub Pages**.
+**Rulesets** are GitHub's recommended mechanism for enforcing policy at scale. Unlike traditional branch protection rules, rulesets allow you to centrally manage policies across multiple repositories and teams.
 
-Finally, if you're running an instance of GitHub Enterprise Server and also using the GitHub Enterprise Cloud, use GitHub Connect to enable unified search and contributions between the two platforms.
+:::image type="content" source="../media/ruleset-primary-foucs.png" alt-text="Rulesets overview":::
 
-:::image type="content" source="../media/enable-github-connect-button.png" alt-text="Enable GitHub Connect button":::
+### Benefits of Rulesets
 
-1. Sign in to GitHub Enterprise Server and GitHub.com.
-1. In Enterprise Server, access **Enterprise settings** and select "Enable GitHub Connect."
-1. Choose the organizations you want to connect from the list.
+- **Centralized control** over repository policies.
+- **Consistency** in enforcement across teams.
+- **Scalability** for growing organizations.
+- **Granular flexibility** through layered combinations.
 
-GitHub Support can assist you with managing users' accounts, security threats, and abuse of social features. You learn more about these use cases in the next unit.
+### Example Policies
 
-## Automation features
+- Require pull request reviews.
+- Enforce CI/CD checks before merge.
+- Restrict access to protected branches.
 
-While upkeep features make using GitHub easier for your organization, automation features make collaborating on creative work easier and safer. Automation features decrease the need for manual intervention in common programming tasks. For example, programmers have a strong demand for automated processes that increase the security of the code bases for their projects. As an administrator, you can enable and track the use of several built-in GitHub processes that serve this purpose.
+:::image type="content" source="../media/example-ruleset-policies.png" alt-text="Example ruleset enforcement dashboard":::
 
-Automation features include:
+#### Combining Rulesets and Branch Protection (Legacy Support)
 
-- GitHub Advanced Security (GHAS) - A specialized add-on to GitHub Enterprise that scans code and other resources for errors, security vulnerabilities, and potential sensitive data.
-- GitHub Actions minutes - Expand the kinds of actions you can automate in response to common GitHub events.
-- Automatic security and version updates.
+- Use rulesets as the **primary mechanism**.
+- Layer branch protection rules for **repository-specific exceptions**.
+- Avoid overlap between both to reduce policy conflicts.
 
-Like with upkeep, certain automation features are limited to organizations using GitHub Enterprise Cloud.
 
-### What are your automation responsibilities as an administrator?
+## Upkeep Features: Supporting Secure Access and Operations
 
-During new feature development, collaborators across your organization can take advantage of GitHub Actions scripts, Advanced Security scanning (if purchased), and automatic updates to dependencies. Because GitHub provides these features to a specific number of seats within a given runtime, you're responsible for keeping track of the rate at which your coworkers are using these services.
+Upkeep features reduce friction in user experience, ensure secure access control, and support hybrid-cloud environments.
 
-You can track your GitHub Enterprise organization's use of GitHub Advanced Security scanning by checking in the settings for **Your enterprises**.
+### Key Upkeep Features
 
-:::image type="content" source="../media/enterprise-licensing-tab-ghas.png" alt-text="screenshot showing GitHub Advanced Security in enterprise licensing settings":::
+| Feature                              | Description                                                                 |
+|--------------------------------------|-----------------------------------------------------------------------------|
+| **Enterprise Support**               | Direct support from GitHub.                                                |
+| **SAML/SCIM Authentication**         | Centralizes identity and access management.                                |
+| **GitHub Connect**                   | Enables integration between Enterprise Cloud and Server.                   |
+| **Access Controls for GitHub Pages** | Restricts documentation visibility to internal collaborators.              |
 
-1. Select an Enterprise organization in **Your enterprises** and access **Settings**.
-1. Check the number of seats your Enterprise organization is using. If you're near to or exceeding the limit your organization purchased, discuss with organizational stakeholders.
-1. Select "GitHub Advanced Security" in **Billing** in the left sidebar to learn more details about Advanced Security use, like whether an Enterprise organization has many committers using GHAS only in that organization.
+### Configuration Walkthrough
 
-It's even easier to track the use of GitHub Actions by your users. Your Enterprise account allows 50,000 minutes of GitHub Actions runtime per month and 50 GB of Actions storage. Check in the settings for **Your enterprises** to learn how much of that allotment your organizations have that month.
+#### Enable SAML SSO
 
-:::image type="content" source="../media/actions-minutes.png" alt-text="Details of minute usage":::
+1. Connect your identity provider (IdP) to GitHub.
+2. In your organization settings, select **Require SAML authentication**.
+3. Provide your sign-on URL, issuer, and certificate.
 
-1. Select an Enterprise organization in **Your enterprises** and access **Settings**.
-1. Select *GitHub Actions* in **Billing** to see how many minutes or how much storage your organizations uses. If you're near to or exceeding the limit, discuss with organizational stakeholders.
-1. Keep your collaborators' operating systems in mind; Windows runners use minutes at twice the rate of Linux runners, and macOS runners use minutes at 10 times the rate of Linux runners.
+#### Restrict GitHub Pages Access
 
-### Identify organization strengths with activity statistics
+1. Go to your private repository settings.
+2. Set **GitHub Pages visibility** to *Private*.
+3. Confirm no public URLs are accessible.
 
-You can track more statistics than just feature use. If you're a user within a GitHub Enterprise Cloud organization, you can learn about the overall health of your organization. The beta feature *organization activity insights* and the feature *organization dependency insights*, give you a wealth of data. As an administrator, leaders of your GitHub Enterprise Cloud organization might expect you to track these insights.
+#### Enable GitHub Connect
 
-Organization activity insights display issue and pull request activity, top programming languages used, and other data about where collaborators spend their time. This knowledge is useful when deciding where to direct collaborators to serve as extra resources for a complex feature deployment. Or, whether more training might expand a team's language capabilities.
+1. Sign in to both GitHub Enterprise Server and GitHub.com.
+2. In Server settings, select **Enable GitHub Connect**.
+3. Choose organizations to link for unified search and contributions.
 
-Access your organization's activity insights by choosing an Enterprise Cloud organization in **Your organizations**. Then, select **Insights**. You can view the past week, month, or year's data for up to three organizations at once.
 
-Organization dependency insights are available when you enable the Dependency Graph. The insights display information about vulnerabilities, licenses, and other data about open source projects integrated into or related to your organization's projects. These insights can help identify if too many of your dependencies have outstanding security advisories, prompting a discussion about how to better secure your code base.
+## Automation Features: Secure and Scalable Workflows
 
-Access your organization's dependency insights by choosing an Enterprise Cloud organization in **Your organizations**. Then, select **Insights** and select the **Dependencies** tab. You can view all dependency insights, **Open security advisories**, or explore more granular data.
+Automation features help reduce human error, enforce coding standards, and streamline CI/CD.
 
-## Help use tools as an administrator
+### Core Automation Features
 
-In addition to managing the built-in features that GitHub provides to Enterprise organizations, administrators can help choose and implement tools built by independent developers.
+| Feature                              | Description                                                                 |
+|--------------------------------------|-----------------------------------------------------------------------------|
+| **GitHub Advanced Security (GHAS)**  | Scans code for vulnerabilities and secrets.                                |
+| **GitHub Actions Minutes**           | Automate builds, tests, and deployments.                                   |
+| **Automatic Security Updates**       | Keeps dependencies secure and up-to-date.                                  |
 
-In this context, a *tool* is usually an extension (sometimes called an *integration*) or an action that helps improve a user or team's interaction with the GitHub workflow. An extension might connect GitHub with a full-featured editor like Visual Studio Code, allowing easier pull request management. Or, with a project management tool like Jira Cloud, making it possible to quickly respond to Jira tracking tickets.
+### Track Automation Usage
 
-### What are your tooling responsibilities as an administrator?
+#### GitHub Advanced Security (GHAS)
 
-You can install integrations in your personal account or in organizations that you own. You can also install GitHub Apps from a third-party in a specific repository where you have admin permissions or that your organization owns. These permissions mean that, as an administrator, you're in a position to approve or deny adding integrations or tools to the GitHub workflow.
+1. Navigate to **Your enterprises > Settings**.
+2. Review seat usage under **GitHub Advanced Security**.
+3. If nearing limits, evaluate usage by team and prioritize.
 
-Third-party tools usually require permissions at the repository level, and these permissions might change. If a tool's developer changes its permissions, and the permissions are for a repository only, then you can review and accept the new permissions.
+:::image type="content" source="../media/enterprise-licensing-tab-ghas.png" alt-text="GHAS usage dashboard":::
 
-The best way to find trustworthy tools for your Enterprise organization, and to construct workflows from trustworthy tools, is to take advantage of the GitHub Marketplace's categorization system. Using this system, you can find tools that receive independent security verification.
+#### GitHub Actions
 
-Although anyone can publish an action in the GitHub Marketplace, publishers must complete a verification process in order to be listed under the **Verified Creator** category in the Marketplace. This process includes establishing a line of communication between GitHub and the publisher, demonstrating that the publisher meets basic security requirements, and verifying the publisher's domain. (However, GitHub doesn't analyze apps and actions on the GitHub Marketplace.)
+1. Navigate to **Your enterprises > Settings > Billing > GitHub Actions**.
+2. Monitor usage against your monthly 50,000 minutes and 50 GB storage.
+3. Note runner usage costs:
+   - Linux: baseline.
+   - Windows: 2x Linux rate.
+   - macOS: 10x Linux rate.
 
-:::image type="content" source="../media/apps-with-verified-publisher-badge-tooltip.png" alt-text="Marketplace badge for GitHub Apps":::
+:::image type="content" source="../media/actions-minutes.png" alt-text="GitHub Actions minutes usage":::
 
-The verified creator badge, which appears as a check mark next to the publisher's name in a listing on the GitHub Marketplace, signifies verification status.
 
-- For GitHub Apps, the badge means that GitHub verified the publisher's domain and email address, and the publisher requires two-factor authentication for their organization.
-- For GitHub Actions, the badge means that GitHub is in [active partnership](https://partner.github.com/) with the organization.
+## CI/CD Strategy in GitHub Enterprise
 
-### Tools that focus on continuous integration and continuous delivery
+GitHub Enterprise enables secure and scalable CI/CD practices using **GitHub Actions** and integrations with external tools.
 
-Your team probably places a high priority on building a *CI/CD pipeline*--a series of automated workflows that help DevOps teams cut down on manual tasks:
+### Key Capabilities
 
-- Continuous integration (CI) automatically **builds**, **tests**, and **integrates** code changes within a shared repository.
-- Then, continuous delivery (CD) automatically **delivers** code changes to production-ready environments for approval.
-- Or, continuous deployment (CD) automatically **deploys** code changes to customers directly.
+- **GitHub Actions**: Define workflows in YAML to automate builds, tests, and deployments triggered by GitHub events (e.g., pushes, pull requests).
+- **Build Pipelines**: Automate code compilation, unit testing, artifact creation, and PR validation.
+- **Automated Testing**: Integrate unit, integration, and security tests to ensure quality before merge.
+- **Continuous Deployment (CD)**: Automatically release to staging or production with optional approvals.
+- **Toolchain Flexibility**: Support for Jenkins, CircleCI, Azure Pipelines, and more via webhooks and GitHub Marketplace apps.
+- **Release Automation**: Trigger tagged releases with changelogs and versioned artifacts from CI workflows.
+- **Security in CI/CD**: Integrate Dependabot, secret scanning, and compliance checks directly into pipelines.
+- **Monitoring & Notifications**: Configure alerts and integrate observability tools to track deployment health and performance.
 
-Your administrative duties are likely to extend to approving, implementing, and maintaining tools that focus entirely on improving this pipeline. With that in mind, GitHub Enterprise organizations that make the most of their GitHub Actions minutes and automatic security and version updates choose tools that meet these criteria:
+> **Tip**: Define reusable workflows and environments (e.g., staging, production) to ensure consistency and control.
 
-- Tools should use **open standards**, because these tools are easiest to teach.
-- Tools should use **dynamic variables**, so you can define variables externally and effect major improvements with minor changes.
-- Tools should be **portable and flexible**, to adapt easily to a change in cloud architecture.
+### Getting Started
+
+To automate deployment:
+1. Create a `.github/workflows/` directory in your repository.
+2. Define a CI/CD pipeline using GitHub Actions YAML (e.g., `ci-cd.yml`).
+3. Use secrets to manage credentials securely.
+4. Leverage environments and manual approvals for deployment gating.
+
+
+
+## Monitoring Organizational Health
+
+Use insights to identify usage trends, collaboration patterns, and risk areas:
+
+### Organization Activity Insights
+
+- View trends in pull requests, issues, and code languages.
+- Evaluate team distribution and developer engagement.
+
+### Dependency Insights
+
+- Identify vulnerabilities in third-party dependencies.
+- Review license risks and assess security posture.
+
+
+## Tooling: Extending GitHub Workflows
+
+Administrators can approve, configure, and maintain third-party tools and GitHub Marketplace integrations.
+
+### Responsibilities
+
+- Approve apps at the org/repo level.
+- Monitor permission changes.
+- Prefer tools with **Verified Creator** badges for higher trust.
+
+:::image type="content" source="../media/apps-with-verified-publisher-badge-tooltip.png" alt-text="Verified Creator badge in GitHub Marketplace":::
+
+### Marketplace Guidelines
+
+| Category             | Criteria                                                                 |
+|----------------------|--------------------------------------------------------------------------|
+| **CI/CD Tools**       | Portable, dynamic, open standards-compliant tools for automation.       |
+| **Verified Creators** | Require 2FA, verified domains, and GitHub partnership.                  |
+
+
+## CI/CD Tools: What to Look For
+
+Choose tools that support continuous integration, delivery, or deployment with:
+
+- **Open standards**: Easy to adopt and train.
+- **Dynamic variables**: Centralized control for scaling workflows.
+- **Flexibility**: Adaptable across hybrid or cloud-native environments.
+
