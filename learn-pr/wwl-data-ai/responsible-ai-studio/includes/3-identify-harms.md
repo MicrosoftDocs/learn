@@ -1,4 +1,4 @@
-The first stage in a responsible generative AI process is to identify the potential harms that could affect your planned solution. There are four steps in this stage, as shown here:
+The first stage in a responsible generative AI process is to map the potential harms that could affect your planned solution. There are four steps in this stage, as shown here:
 
 ![Diagram showing steps to identify, prioritize, test, and share potential harms.](../media/identify-harms.png)
 

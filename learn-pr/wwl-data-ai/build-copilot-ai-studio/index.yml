@@ -1,25 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.build-copilot-ai-studio
 metadata:
-  title: Build a RAG-based agent with your own data using Azure AI Foundry
-  description: Agents can work alongside you to provide suggestions, generate content, or help you make decisions. Agents use language models as a form of generative artificial intelligence (AI) and will answer your questions using the data they were trained on. To ensure an agent retrieves information from a specific source, you can add your own data when building an agent with the Azure AI Foundry.
+  title: Develop a RAG-based solution with your own data using Azure AI Foundry
+  description: Retrieval Augmented Generation (RAG) is a common pattern used in generative AI solutions to *ground* prompts with your data. Azure AI Foundry provides support for adding data, creating indexes, and integrating them with generative AI models to help you build RAG-based solutions.
   author: madiepev
   ms.author: madiepev
-  ms.date: 11/26/2024
+  ms.date: 04/17/2025
   ms.service: azure-ai-services
   ms.topic: module-standard-task-based
   ms.custom: ai-learning-hub
   ms.collection:
     - wwl-ai-copilot
-title: Build a RAG-based agent with your own data using Azure AI Foundry
-summary: Agents can work alongside you to provide suggestions, generate content, or help you make decisions. Agents use language models as a form of generative artificial intelligence (AI) and will answer your questions using the data they were trained on. To ensure an agent retrieves information from a specific source, you can add your own data when building an agent with the Azure AI Foundry.
+title: Develop a RAG-based solution with your own data using Azure AI Foundry
+summary: Retrieval Augmented Generation (RAG) is a common pattern used in generative AI solutions to *ground* prompts with your data. Azure AI Foundry provides support for adding data, creating indexes, and integrating them with generative AI models to help you build RAG-based solutions.
 abstract: |
   By the end of this module, you'll be able to:
     - Identify the need to ground your language model with Retrieval Augmented Generation (RAG)
     - Index your data with Azure AI Search to make it searchable for language models
     - Build an agent using RAG on your own data in the Azure AI Foundry portal
 prerequisites: |
-  Before starting this module, you should be familiar with fundamental AI concepts and services in Azure. Consider completing the [Get started with artificial intelligence](/training/paths/get-started-with-artificial-intelligence-on-azure) learning path first.
+  Before starting this module, you should be familiar with fundamental AI concepts and services in Azure.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - intermediate
@@ -38,10 +38,11 @@ units:
 - learn.wwl.build-copilot-ai-studio.introduction
 - learn.wwl.build-copilot-ai-studio.ground-language-model
 - learn.wwl.build-copilot-ai-studio.search-data
+- learn.wwl.build-copilot-ai-studio.openai-client
 - learn.wwl.build-copilot-ai-studio.build-copilot
 - learn.wwl.build-copilot-ai-studio.exercise
 - learn.wwl.build-copilot-ai-studio.knowledge-check
 - learn.wwl.build-copilot-ai-studio.summary
 badge:
   uid: learn.wwl.build-copilot-ai-studio.badge
-
+
