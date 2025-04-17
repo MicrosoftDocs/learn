@@ -2,14 +2,16 @@
 uid: learn.wwl.design-implement-network-monitoring.exercise-monitor-load-balancer-resource-using-azure-monitor
 title: 'Exercise: monitor a load balancer resource using Azure monitor'
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: 'Exercise: monitor a load balancer resource using Azure monitor'
   description: "Exercise: monitor a load balancer resource using Azure monitor"
-  ms.date: 12/03/2024
+  ms.date: 04/17/2025
   author: wwlpublish
-  ms.author: jileary
+  ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 25
+durationInMinutes: 20
 content: |
   [!include[](includes/3-exercise-monitor-load-balancer-resource-using-azure-monitor.md)]
