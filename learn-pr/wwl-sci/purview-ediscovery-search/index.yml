@@ -2,7 +2,7 @@
 uid: learn.wwl.purview-ediscovery-search
 metadata:
   title: Search for content with Microsoft Purview eDiscovery
-  description: Learn how to apply policies and manage the lifecycle of AI-generated content using Microsoft Purview. This module shows how to retain, delete, investigate, and review content created in Microsoft 365 Copilot and other AI apps.
+  description: Use Microsoft Purview eDiscovery to search for content across Microsoft 365. This module covers how to configure cases, define search criteria, and locate messages, files, and other organizational data.
   ms.date: 04/17/2025
   author: wwlpublish
   ms.author: riswinto
@@ -10,26 +10,31 @@ metadata:
   ms.service: purview
 title: Search for content with Microsoft Purview eDiscovery
 summary: |
-  Learn how to apply policies and manage the lifecycle of AI-generated content using Microsoft Purview. This module shows how to retain, delete, investigate, and review content created in Microsoft 365 Copilot and other AI apps.
+  Use Microsoft Purview eDiscovery to search for content across Microsoft 365. This module covers how to configure cases, define search criteria, and locate messages, files, and other organizational data.
 abstract: |
   In this module you learn how to:
-  - Apply retention policies to manage the lifecycle of Copilot and other AI-generated content using Data Lifecycle Management
-  - Investigate and delete Copilot interaction history using eDiscovery (Premium)
-  - Create policies to assess Copilot messages and other AI-related communications using Communication Compliance
+  - Assign the roles and permissions to access Microsoft Purview eDiscovery
+  - Create and manage cases used to run eDiscovery searches
+  - Define search scope and build queries using conditions, keywords, and Copilot-generated prompts
+  - Run searches and validate results using statistics or random samples
 prerequisites: |
-  None
+  - Familiarity with Microsoft 365 workloads such as Exchange, SharePoint, and Teams
+  - Basic understanding of Microsoft Purview portal
+  - Knowledge of access control in Microsoft 365
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
 - administrator
 - auditor
+- ip-admin
 products:
 - m365
 - microsoft-purview
 subjects:
-- data-management
-- threat-protection
+- information-protection-governance
+- compliance
+- security
 units:
 - learn.wwl.purview-ediscovery-search.introduction
 - learn.wwl.purview-ediscovery-search.understand-ediscovery
