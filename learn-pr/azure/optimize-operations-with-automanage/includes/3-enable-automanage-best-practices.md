@@ -6,6 +6,7 @@ If you don't have an Azure subscription, [create an account](https://azure.micro
 
 > [!NOTE]
 > Free trial accounts don't have access to the virtual machines used in this tutorial. Please upgrade to a pay-as-you-go subscription.
+
 > [!IMPORTANT]
 > You need to have the **Contributor** role on the resource group containing your VMs to enable Automanage. If you're enabling Automanage for the first time on a subscription, you need the following permissions: **Owner** role or **Contributor** along with **User Access Administrator** roles on your subscription.
 

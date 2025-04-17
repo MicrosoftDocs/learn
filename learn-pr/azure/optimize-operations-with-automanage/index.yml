@@ -5,8 +5,8 @@ metadata:
   description: Learn how to use Azure Automanage to optimize IT operations and management.
   manager: rayoflores
   ms.date: 04/17/2025
-  author: johnmarco
-  ms.author: johnmarc
+  author: robmcm
+  ms.author: robmcm
   ms.topic: module
   ms.service: azure-automanage
 title: Optimizing IT operations and management with Azure Automanage

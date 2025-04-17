@@ -5,8 +5,8 @@ metadata:
   title: Extend Azure Automanage Across Non-Azure Infrastructure with Azure Arc
   description: Learn how to extend Azure Automanage across non-Azure infrastructure using Azure Arc.
   ms.date: 04/17/2025
-  author: johnmarco
-  ms.author: johnmarc
+  author: robmcm
+  ms.author: robmcm
   ms.topic: unit
 durationInMinutes: 5
 content: |
