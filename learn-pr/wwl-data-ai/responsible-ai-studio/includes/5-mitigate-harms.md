@@ -26,7 +26,7 @@ Other safety system layer mitigations can include abuse detection algorithms to 
 
 ## 3: The *system message and grounding* layer
 
-The system message and grounding layer focuses on the construction of prompts that are submitted to the model. Harm mitigation techniques that you can apply at this layer include:
+This layer focuses on the construction of prompts that are submitted to the model. Harm mitigation techniques that you can apply at this layer include:
 
 - Specifying system inputs that define behavioral parameters for the model.
 - Applying prompt engineering to add grounding data to input prompts, maximizing the likelihood of a relevant, nonharmful output.
