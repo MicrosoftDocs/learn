@@ -10,6 +10,6 @@ metadata:
   ms.topic: unit
 azureSandbox: false
 labModal: false
-durationInMinutes: 10
+durationInMinutes: 4
 content: |
   [!include[](includes/create-ediscovery-search.md)]
