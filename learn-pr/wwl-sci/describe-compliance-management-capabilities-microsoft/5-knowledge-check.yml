@@ -2,6 +2,7 @@
 uid: learn.wwl.describe-compliance-management-capabilities-microsoft.knowledge-check
 title: Module assessment
 metadata:
+  hidden_question_numbers: ["DB04FD11_10","DB04FD11_30","DB04FD11_42","DB04FD11_79","DB04FD11_83","DB04FD11_124"]
   ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
