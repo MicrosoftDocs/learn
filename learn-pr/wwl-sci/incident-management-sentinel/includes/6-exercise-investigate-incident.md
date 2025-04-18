@@ -133,7 +133,7 @@ In this exercise you walk through the process of reviewing, modifying, investiga
 
 1. Within the Incident Queue, filter the incidents for high severity and a status of active.
 1. Select "add filter."
-1. Set the filter to categories and set the value to ***Ransomware**.
+1. Set the filter to categories and set the value to **Ransomware**.
 1. Select the "User account compromise identified from a known attack pattern" incident and view the summary on the right hand menu
 
 ## Task: Generate an Incident Summary with Copilot for Security
