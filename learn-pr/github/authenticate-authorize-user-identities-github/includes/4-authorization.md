@@ -127,7 +127,6 @@ Bringing your own IdP requires it isSAML 2.0 support. The advantage of this is t
 | **Paved Path:**    | 1. Navigate to enterprise security settings. <br>2. Select your IdP. <br>3. Follow setup instructions. |
 | **Custom IdP:**    | 1. Go to security settings. <br>2. Choose custom IdP. <br>3. Enter SAML metadata. 4. Validate the connection. |
 
-:::image type="content" source="../media/image-7.png" alt-text="Diagram showing the steps to integrate a pre-configured identity provider." :::
 
 ## Comparing IdP Integration Paths
 
