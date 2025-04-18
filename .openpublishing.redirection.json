@@ -47283,6 +47283,11 @@
       "source_path": "learn-pr/wwl-azure/develop-for-storage-cdns/2-azure-content-delivery-network-overview.md",
       "redirect_url": "/azure/frontdoor/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-for-storage-cdns/4-azure-cdn-libraries-dotnet.md",
+      "redirect_url": "/azure/frontdoor/",
+      "redirect_document_id": false
     }
   ]
 }
