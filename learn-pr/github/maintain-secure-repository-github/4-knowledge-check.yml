@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Check what you've learned.
-  ms.date: 04/22/2024
+  ms.date: 04/09/2025
   author: a-a-ron
   ms.author: aastewar
   ms.topic: unit
@@ -18,7 +18,7 @@ quiz:
     choices:
     - content: "Configure your package files to always use the latest versions of dependencies."
       isCorrect: false
-      explanation: "This practice is generally a bad idea because it can introduce breaking changes or unexpected behavior in your software."
+      explanation: "This practice is generally a bad idea, because it can introduce breaking changes or unexpected behavior in your software."
     - content: "Check each project's security details closely before adding it to your dependencies by confirming its version status across multiple advisory sites."
       isCorrect: false
       explanation: "Even if this practice helps you start off with a secure version of a given dependency, it won't ensure that you're safe from future vulnerabilities. You would need to constantly monitor every package to ensure compliance, which might be infeasible."
