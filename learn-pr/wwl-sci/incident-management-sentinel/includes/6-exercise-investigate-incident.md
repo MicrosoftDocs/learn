@@ -119,6 +119,11 @@ In this exercise you walk through the process of reviewing, modifying, investiga
 
 1. Open the simulated environment by selecting this link: **[Microsoft Defender portal](https://app.highlights.guide/start/1e5185e8-b314-48fe-b848-965232192baa?token=bba5e99b-3887-4a6c-b0d8-3099d15a4c23)**.
 
+   > [!NOTE]
+   > The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message displays stating, "This feature isn't available within the simulation." When this occurs, select OK and continue the exercise steps.  
+   >
+   >:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature isn't available within the simulation.":::
+
 ## Task: Review the Incident Queue and Apply Filters
 
 1. In the Microsoft Defender portal navigation menu:
