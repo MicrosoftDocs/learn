@@ -311,6 +311,16 @@
       {
         "source_path_from_root": "/learn-pr/paths/purview-implement-manage-dlp-retention/index.yml",
         "redirect_url": "/training/paths/purview-implement-manage-dlp/"
-      } 
+      }, 
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/design-solutions-secure-privileged-access/5-design-solution-cloud-infrastructure-entitlement-management.yml",
+        "redirect_url": "https://learn.microsoft.com/training/modules/design-solutions-secure-privileged-access/",
+        "redirect_document_id": false
+      },
+      {
+        "source_path_from_root": "/learn-pr/wwl-sci/describe-identity-protection-governance-capabilities/5a-describe-entra-permissions-management.yml",
+        "redirect_url": "https://learn.microsoft.com/training/paths/describe-capabilities-of-microsoft-identity-access/",
+        "redirect_document_id": false
+      }
     ]
 }

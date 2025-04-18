@@ -6,7 +6,7 @@ metadata:
   description: "Knowledge check"
   ms.date: 08/07/2024
   author: wwlpublish
-  ms.author: theresai
+  ms.author: jamesh
   ms.topic: unit
 azureSandbox: false
 labModal: false
@@ -45,4 +45,4 @@ quiz:
       explanation: "Correct. The OPTIMIZE command in Delta Lake reorganizes data into fewer, larger files, which can significantly improve the efficiency of read queries. This command also helps manage and reduce the number of small files in a Delta table."
     - content: "MERGE"
       isCorrect: false
-      explanation: "Incorrect. MERGE command in Delta Lake is used to upsert data from a source table, view, or DataFrame to a target Delta Lake table."
+      explanation: "Incorrect. MERGE command in Delta Lake is used to upsert data from a source table, view, or DataFrame to a target Delta Lake table."

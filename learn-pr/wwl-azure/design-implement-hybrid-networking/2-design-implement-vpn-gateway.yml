@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Design and implement Azure VPN Gateway
   description: "Design and implement Azure VPN Gateway"
-  ms.date: 04/02/2025
+  ms.date: 04/14/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -26,7 +26,7 @@ quiz:
     - content: "Policy-based and static."
       isCorrect: false
       explanation: "Incorrect. VPNs can be route or policy based."
-    - content: "RouteBR-based and dynamic."
+    - content: "Route-based and dynamic."
       isCorrect: false
       explanation: "Incorrect. VPNs can be route or policy based."
   - content: "What is the default high availability configuration for VPN gateways?"

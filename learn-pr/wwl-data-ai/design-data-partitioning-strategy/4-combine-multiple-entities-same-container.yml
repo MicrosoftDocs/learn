@@ -4,7 +4,7 @@ title: Combine multiple entities in the same container
 metadata:
   title: Combine multiple entities in the same container
   description: "Combine multiple entities in the same container"
-  ms.date: 04/16/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-combine-multiple-entities-same-container.md)]
+  [!include[](includes/4-combine-multiple-entities-same-container.md)]

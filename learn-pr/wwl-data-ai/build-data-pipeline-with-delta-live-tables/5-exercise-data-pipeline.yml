@@ -6,8 +6,8 @@ metadata:
   description: "Exercise - Create a data pipeline with Delta Live Tables"
   ms.date: 07/23/2024
   author: wwlpublish
-  ms.author: theresai
+  ms.author: jamesh
   ms.topic: unit
 durationInMinutes: 60
 content: |
-  [!include[](includes/5-exercise-data-pipeline.md)]
+  [!include[](includes/5-exercise-data-pipeline.md)]

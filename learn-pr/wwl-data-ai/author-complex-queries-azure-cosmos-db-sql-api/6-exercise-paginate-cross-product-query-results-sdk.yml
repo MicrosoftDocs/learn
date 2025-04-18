@@ -4,11 +4,11 @@ title: 'Exercise: Paginate cross-product query results with the Azure Cosmos DB 
 metadata:
   title: 'Exercise: Paginate cross-product query results with the Azure Cosmos DB for NoSQL SDK'
   description: "Exercise: Paginate cross-product query results with the Azure Cosmos DB for NoSQL SDK"
-  ms.date: 03/10/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
   zone_pivot_groups: dev-lang-csharp-node-python
 durationInMinutes: 15
 content: |
-  [!include[](includes/6-exercise-paginate-cross-product-query-results-sdk.md)]
+  [!include[](includes/6-exercise-paginate-cross-product-query-results-sdk.md)]

@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.build-copilot-ai-studio.exercise
-title: Exercise - Create a custom agent that uses your own data
+title: Exercise - Create a generative AI app that uses your own data
 metadata:
-  title: Exercise - Create a custom agent that uses your own data
-  description: Create a custom agent that uses your own data with the Azure AI Foundry portal.
+  title: Exercise - Create a generative AI app that uses your own data
+  description: Create a generative AI app that uses your own data with the Azure AI Foundry portal.
   author: madiepev
   ms.author: madiepev
-  ms.date: 11/26/2024
+  ms.date: 04/17/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 15
+durationInMinutes: 45
 content: |
   [!include[](includes/5-exercise.md)]
-
+

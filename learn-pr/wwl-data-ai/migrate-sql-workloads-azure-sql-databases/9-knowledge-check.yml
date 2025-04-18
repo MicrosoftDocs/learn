@@ -4,8 +4,8 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 10/31/2023
-  author: wwlpublish
+  ms.date: 04/14/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
   ms.custom:
@@ -57,4 +57,4 @@ quiz:
       explanation: "Incorrect. Transactional replication can't be configured from the Azure portal."
     - content: "No, transactional replication can't be configured from the Azure portal."
       isCorrect: true
-      explanation: "Correct. Transactional replication can't be configured from the Azure portal."
+      explanation: "Correct. Transactional replication can't be configured from the Azure portal."

@@ -29,7 +29,7 @@ To configure an end-to-end virtual WAN, you create:
 
 ### Virtual WAN usage cases
 
-This video reviews the basics of how Virtual WANs work. 
+This video reviews several Virtual WAN usage cases. 
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=70d2fdaa-8b19-4e08-9845-71426ce0504e]
 

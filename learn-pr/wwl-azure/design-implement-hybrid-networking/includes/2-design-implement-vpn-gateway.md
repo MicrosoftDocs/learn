@@ -1,23 +1,13 @@
 
 
-A virtual private network (VPN) provides secure encrypted connections. VPNs typically are deployed to connect two or more trusted private networks over an untrusted network such as the internet. Traffic is encrypted while traveling over the untrusted network to prevent another entity from eavesdropping on the network communication.
-
-One option for connecting an on-premises network to an Azure virtual network is a VPN connection. A [VPN gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways) provides an endpoint for incoming connections to an Azure virtual network. 
-
-## Azure VPN Gateways
-
-An Azure VPN gateway is a specific type of virtual network gateway that is used to send and receive encrypted traffic. The traffic is often between an Azure virtual network and an on-premises location over the public Internet. Azure VPN gateways are also used to connect separate Azure virtual networks using an encrypted tunnel across the Microsoft network backbone.
+Azure [VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways) is a service that can be used to send encrypted traffic between an Azure virtual network and on-premises locations over the public Internet. You can also use VPN Gateway to send encrypted traffic between Azure virtual networks over the Microsoft network. VPN Gateway uses a specific type of Azure virtual network gateway called a VPN gateway. Multiple connections can be created to the same VPN gateway. When you create multiple connections, all VPN tunnels share the available gateway bandwidth.
 
 > [!NOTE] 
 > A virtual network gateway is composed of two or more special virtual machines that are deployed to a specific subnet called the gateway subnet. Azure manages the virtual machines so they don't require administrative attention.
 
-Creating a virtual network gateway can take some time to complete, so it's vital that you plan appropriately. When you create a virtual network gateway, the provisioning process generates the gateway VMs and deploys them to the gateway subnet. These VMs have the settings that you configure on the gateway.
-
-Now, let's look at the factors you need to consider for planning your VPN gateway deployment.
-
 ## Plan a VPN gateway
 
-Factors that you need to consider during your planning process include:
+Creating a virtual network gateway can take some time to complete, so it's vital that you plan appropriately. Factors that you need to consider during your planning process include:
 
  -  Throughput - Mbps or Gbps
  -  Backbone - Internet or private?
@@ -29,7 +19,7 @@ Factors that you need to consider during your planning process include:
 
 ### VPN Gateway planning (video)
 
-This video reviews the gateway basics of IP addressing and subnetting. 
+This video summarizes scenarios for VPN gateways. These scenarios include on-premises and point-to-site connections. 
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=f67524cf-ba8b-4e81-8fe3-29f75213d740]
 
@@ -62,14 +52,14 @@ Route-based VPNs were previously called dynamic routing gateways. Route-based VP
 
 ## High availability options for VPN connections
 
-To provide better availability for your VPN connections, there are a few options available. 
+To provide better availability for your VPN connections, consider one of these options. 
 
  -  VPN Gateway redundancy (active-standby)
  -  Active-active Azure VPN gateway
 
 ### Active-standby Azure VPN gateways
 
-You can create an Azure VPN gateway in an active-standby configuration. Active-active is the default configuration. In this configuration there are two instances, active and standby. The standby connection takes over when the active connection is disrupted. Switching to the standby connection causes a service disruption. 
+You can create an Azure VPN gateway in an active-standby configuration. Active-standby is the default configuration. In this configuration there are two instances, active and standby. The standby connection takes over when the active connection is disrupted. Switching to the standby connection causes a service disruption. 
 
 - For planned maintenance, connectivity is restored in seconds.
 - For unplanned interruptions, connectivity is restored in minutes.

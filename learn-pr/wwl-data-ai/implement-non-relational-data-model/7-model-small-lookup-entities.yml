@@ -4,7 +4,7 @@ title: Model small lookup entities
 metadata:
   title: Model small lookup entities
   description: "Model small lookup entities"
-  ms.date: 04/16/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/7-model-small-lookup-entities.md)]
+  [!include[](includes/7-model-small-lookup-entities.md)]
