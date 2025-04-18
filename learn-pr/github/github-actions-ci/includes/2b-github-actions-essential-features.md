@@ -127,7 +127,7 @@ jobs:
 
 ## Use default context in a workflow
 
-Default environment variables are set by GitHub and not defined in a workflow.  They are thus available to use in a workflow.  Most of these variables, other than `CI`, begin with `GITHUB_*` or `RUNNER_*`.  The latter two types cannot be overwritten.  As well, these default variables have a corresponding, and similarly named, context property. For instance, the `RUNNER_*` series of default variables have a matching context property of `runner.*`.  An example of accessing this variable in a workflow levaraging these methods can be viewed below:
+Default environment variables are set by GitHub and not defined in a workflow.  They are thus available to use in a workflow in the appropriate context.  Most of these variables, other than `CI`, begin with `GITHUB_*` or `RUNNER_*`.  The latter two types cannot be overwritten.  As well, these default variables have a corresponding, and similarly named, context property. For instance, the `RUNNER_*` series of default variables have a matching context property of `runner.*`.  An example of accessing default variables in a workflow levaraging these methods can be viewed below:
 
 ```yml
 on: workflow_dispatch
@@ -144,7 +144,8 @@ jobs:
         run: echo "The operating system on the runner is not Windows, it's $RUNNER_OS."
 ```
 
-For more information see [Default environement variables](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables#default-environment-variables)
+For more information see [Default environment variables](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables#default-environment-variables) in the GitHub user documentation.
+
 ## Pass custom environment variables to a workflow
 <!-- INFOMAGNUS UPDATES for sub OD 1.6.5 go here. Source Material: Infomagnus team to find source material and cite sources when they update material   https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables -->
 ## Add environment protections
