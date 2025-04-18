@@ -81,7 +81,7 @@ GitHub processes this request and adds the user to your organization.
 2. Enable SCIM provisioning.
 3. Provide GitHub’s SCIM base URL and bearer token.
 
-:::image type="content" source="../media/image-6.png" alt-text="Screenshot of SCIM configuration steps in IdP's administrative console." :::
+:::image type="content" source="../media/scim-configuration-steps.png" alt-text="Screenshot of SCIM configuration steps in IdP's administrative console." :::
 
 #### For Custom IdPs:
 1. Use GitHub's SCIM REST API.
