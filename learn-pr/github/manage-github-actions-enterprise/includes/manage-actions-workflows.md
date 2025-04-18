@@ -95,6 +95,8 @@ Following is the metadata file you would create for the workflow file:
 }
 ```
 
+<!-- INFOMAGNUS UPDATES for sub OD 4.1.1. go here. Source Material:https://docs.github.com/en/enterprise-cloud@latest/actions/sharing-automations/sharing-actions-and-workflows-with-your-enterprise -->
+
 Metadata files use the following parameters:
 
 |   Parameter    |                                                                                                                   Description                                                                                                                   |      Required      |
@@ -109,6 +111,7 @@ Once a workflow template is created, users in your organization can find it unde
 
 :::image type="content" source="../media/workflow-template.png" alt-text="Workflow template example." border="false":::
 
+<!-- INFOMAGNUS UPDATES for sub OD 4.1.8. go here. Source Material: Infomagnus team to find source material and cite it. -->
 ## Reusable Templates for Actions and Workflows
 
 GitHub Actions allows for **workflow automation**, and a key part of managing workflows efficiently is using **reusable templates**. Reusable templates help standardize and streamline development across multiple repositories, reducing redundancy and improving maintainability.
