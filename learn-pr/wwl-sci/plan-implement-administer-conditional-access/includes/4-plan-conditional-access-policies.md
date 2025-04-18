@@ -6,7 +6,7 @@ Microsoft Entra Conditional Access (CA) analyzes signals, such as user, device, 
 
 :::image type="content" source="../media/conditional-access-overview-how-it-works.png" alt-text="Diagram of how Conditional Access works. Centralize identity provider verifies rules before access is granted.":::
 
-Although security defaults ensure a basic level of security, your organization needs more flexibility than security defaults offer. You can use CA to customize security defaults with more granularity and to configure new policies that meet your requirements.
+Although security defaults ensure a basic level of security, your organization needs more flexibility than security defaults offer. You can use CA to customize security defaults with more granularities and to configure new policies that meet your requirements.
 
 ### Benefits
 
@@ -40,7 +40,7 @@ Access tokens enable clients to securely call protected web APIs, and they're us
 
 It’s important to understand how access tokens are issued.
 
-:::image type="content" source="../media/access-policy-token-issuance.png" alt-text="Diagram of the flow of issues an access token for conditional access, and how it is used.":::
+:::image type="content" source="../media/access-policy-token-issuance.png" alt-text="Diagram of the flow of issues an access token for conditional access, and how it's used.":::
 
 > [!NOTE]
 > If no assignment is required, and no CA policy is in effect, the default behavior is to issue an access token.
@@ -109,7 +109,7 @@ The test plan is important to have a comparison between the expected results and
 
 | **Name of policy**              | **Scenario**                                                                         | **Expected result**                                                                                                                                   |
 | ------------------------------- | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Require MFA when working        | Authorized user signs into app while on a trusted location / work                    | User is not prompted to MFA. User is authorized for access. User is connecting from a trusted location. You could choose to require MFA in this case. |
+| Require MFA when working        | Authorized user signs into app while on a trusted location / work                    | User isn't prompted to MFA. User is authorized for access. User is connecting from a trusted location. You could choose to require MFA in this case. |
 | Require MFA when working        | Authorized user signs into app while not on a trusted location / work                | User is prompted to MFA and can sign in successfully                                                                                                  |
 | Require MFA (for admin)         | Global Admin signs into app                                                          | Admin is prompted to MFA                                                                                                                              |
 | Risky sign-ins                  | User signs into app using an unapproved browser                                      | User is prompted to MFA                                                                                                                               |
