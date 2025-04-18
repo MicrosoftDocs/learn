@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.plan-your-linux-environment-in-azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   ms.author: carols
   author: fossygirl
   manager: rayoflores
@@ -37,4 +35,4 @@ units:
 - learn.plan-your-linux-environment-in-azure.summary
 badge:
   uid: learn.plan-your-linux-environment-in-azure-badge
-
+

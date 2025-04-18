@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-azure-monitor.knowledge-check
-title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: "Azure Monitor knowledge check" # user input: module title for browser tab and search results
+  title: Module assessment
   description: "Check your knowledge of Azure Monitor." # user input: a description for site search and SEO.
   ms.date: 11/13/2024
   author: guywi-ms
@@ -72,4 +70,4 @@ quiz:
       isCorrect: true
       explanation: "Correct. Dashboards can combine different kinds of data into a single pane in the Azure portal."
   
-
+

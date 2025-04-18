@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-intro.2-azure-sql-history
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: The history of Azure SQL
   description: Learn about the history of Azure SQL and how database services have evolved on Azure.
   ms.date: 10/03/2024
@@ -12,4 +10,4 @@ metadata:
 title: Azure SQL history
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-azure-sql-history.md)]
+  [!include[](includes/2-azure-sql-history.md)]

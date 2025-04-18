@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.develop-azure-functions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Develop Azure Functions
   description: "Learn how to create and deploy Azure Functions."
   ms.date: 02/14/2025

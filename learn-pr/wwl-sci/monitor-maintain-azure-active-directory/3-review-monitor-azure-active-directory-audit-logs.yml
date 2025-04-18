@@ -2,8 +2,6 @@
 uid: learn.wwl.monitor-maintain-azure-active-directory.review-monitory-azure-ad-audit-logs
 title: Review and monitor Microsoft Entra audit logs
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Review and monitor Microsoft Entra audit logs
   description: "Review and monitor Microsoft Entra audit logs"
   ms.date: 12/23/2024

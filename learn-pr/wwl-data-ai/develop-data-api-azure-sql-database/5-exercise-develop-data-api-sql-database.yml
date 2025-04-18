@@ -2,8 +2,6 @@
 uid: learn-wwl.develop-data-api-azure-sql-database.exercise-develop-data-api-sql-database
 title: 'Exercise: Develop a Data API for Azure SQL Database'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Develop a Data API for Azure SQL Database'
   description: "Learn how to develop and deploy a data API for an Azure SQL Database using Azure Static Web Apps."
   ms.date: 10/10/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 30
 content: |
-  [!include[](includes/5-exercise-develop-data-api-sql-database.md)]
+  [!include[](includes/5-exercise-develop-data-api-sql-database.md)]

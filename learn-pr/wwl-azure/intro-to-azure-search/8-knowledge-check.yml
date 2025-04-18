@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-introduction-to-azure-search.8-knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Test your knowledge by answering questions about skills you learned in this module.
   author: wwlpublish
   ms.author: sheryang
@@ -51,4 +49,4 @@ quiz:
     - content: "The AI-generated image captions."
       isCorrect: false
       explanation: "Incorrect. Creating captions for images requires a skillset that includes the Image Analysis skill."
-
+

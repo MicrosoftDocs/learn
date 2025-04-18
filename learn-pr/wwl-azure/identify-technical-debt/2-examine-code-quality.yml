@@ -2,8 +2,6 @@
 uid: learn.wwl.identify-technical-debt.examine-code-quality
 title: Examine code quality
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Examine code quality
   description: "Examine code quality"
   ms.date: 05/06/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-examine-code-quality.md)]
+  [!include[](includes/2-examine-code-quality.md)]

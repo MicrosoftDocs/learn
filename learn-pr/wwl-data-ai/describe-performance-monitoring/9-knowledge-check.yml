@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-performance-monitoring.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 03/19/2025
   author: JulianePadrao
@@ -61,4 +59,4 @@ quiz:
       explanation: "Incorrect. The *event_file* writes event session output from buffer to a disk file."
     - content: "The *event_counter* target"
       isCorrect: true
-      explanation: "Correct. The *event_counter* target counts how many times each specified event occurs."
+      explanation: "Correct. The *event_counter* target counts how many times each specified event occurs."

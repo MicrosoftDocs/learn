@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-java-azure-pipeline-terraform.6-knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   ms.date: 08/02/2023
   author: roryp
@@ -74,4 +72,4 @@ quiz:
     - content: "All of the above"
       isCorrect: true
       explanation: "All of the above automation tools are supported." 
-
+

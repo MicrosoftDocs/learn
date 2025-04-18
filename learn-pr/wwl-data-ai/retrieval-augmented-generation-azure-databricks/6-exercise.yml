@@ -2,8 +2,6 @@
 uid: learn.wwl.retrieval-augmented-generation-azure-databricks.exercise
 title: Exercise - Set up RAG
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Set up RAG
   description: "Exercise - Set up RAG"
   ms.date: 03/20/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 30
 content: |
-  [!include[](includes/6-exercise.md)]
+  [!include[](includes/6-exercise.md)]

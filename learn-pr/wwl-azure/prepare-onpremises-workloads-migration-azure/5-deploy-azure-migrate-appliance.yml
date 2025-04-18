@@ -2,8 +2,6 @@
 uid: learn.wwl.prepare-onpremises-workloads-migration-azure.deploy-azure-migrate-appliance
 title: Deploy the Azure Migrate appliance
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deploy the Azure Migrate appliance
   description: "Deploy the Azure Migrate appliance"
   ms.date: 09/25/2020
@@ -38,4 +36,4 @@ quiz:
       explanation: "You do need to verify Azure URL and port requirements. However, you do this before starting the appliance, not when importing the Hyper-V VHD file."
     - content: "Configure the appliance computer time to be synchronized with the internet time server."
       isCorrect: false
-      explanation: "Configuring the appliance computer time synchronization doesn't ensure that the appliance can communicate with the Hyper-V host. Computer time synchronization occurs automatically when setting up the appliance prerequisites."
+      explanation: "Configuring the appliance computer time synchronization doesn't ensure that the appliance can communicate with the Hyper-V host. Computer time synchronization occurs automatically when setting up the appliance prerequisites."

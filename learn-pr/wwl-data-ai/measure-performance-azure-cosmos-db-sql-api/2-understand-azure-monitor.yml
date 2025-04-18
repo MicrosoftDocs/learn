@@ -2,11 +2,9 @@
 uid: learn.wwl.measure-performance-azure-cosmos-db-sql-api.understand-azure-monitor
 title: Understand Azure Monitor
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand Azure Monitor
   description: "Understand Azure Monitor"
-  ms.date: 04/23/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

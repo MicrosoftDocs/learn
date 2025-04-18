@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-azure-communication-services
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: introduction
   title: Introduction to Azure Communication Services
   description: Discover the key products and services that can help you create communication applications on Azure with Communication Services.
@@ -46,4 +44,4 @@ units:
   - learn.azure.intro-to-azure-communication-services.summary
 badge:
   uid: learn.azure.intro-to-azure-communication-services.badge
-
+

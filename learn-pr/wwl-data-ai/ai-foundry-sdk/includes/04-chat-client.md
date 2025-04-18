@@ -87,7 +87,7 @@ namespace my_foundry_client
                 ChatCompletionsClient chatClient = projectClient.GetChatCompletionsClient();
         
                 // Get a chat completion based on a user-provided prompt
-                onsole.WriteLine("Enter a question:");
+                Console.WriteLine("Enter a question:");
                 var user_prompt = Console.ReadLine();
         
                 var requestOptions = new ChatCompletionsOptions()

@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-azure-arc-enabled-servers-scripting.connect-machines-scale-powershell-scripts
 title: Connect machines at scale by running PowerShell scripts with Configuration Manager
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Connect machines at scale by running PowerShell scripts with Configuration Manager
   description: "Connect machines at scale by running PowerShell scripts with Configuration Manager"
   ms.date: 02/14/2025

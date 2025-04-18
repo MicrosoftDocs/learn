@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.train-evaluate-classification-models
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Train and evaluate classification models
   description: "Train and evaluate classification models"
   ms.collection: TBD
@@ -42,4 +40,4 @@ units:
 - learn.wwl.train-evaluate-classification-models.summary
 badge:
   uid: learn.wwl.train-evaluate-classification-models.badge
-
+

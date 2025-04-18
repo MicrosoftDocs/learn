@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-manage-application-state.3-exercise-create-resources
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Host a new database by using Azure Cosmos DB
   description: Host a new database using Azure Cosmos DB and create a new AKS cluster to save your API changes to the database.
   ms.date: 01/04/2024
@@ -41,4 +39,4 @@ content: |
 #           addonProfiles:
 #             httpApplicationRouting:
 #               enabled: true
-
+

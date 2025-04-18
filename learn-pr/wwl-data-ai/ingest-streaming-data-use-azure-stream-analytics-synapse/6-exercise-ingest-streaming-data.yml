@@ -2,8 +2,6 @@
 uid: learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse.exercise-ingest-streaming-data
 title: Exercise - Ingest streaming data into Azure Synapse Analytics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Ingest streaming data into Azure Synapse Analytics
   description: "Exercise - Ingest streaming data into Azure Synapse Analytics"
   ms.date: 12/12/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 45
 content: |
-  [!include[](includes/6-exercise-ingest-streaming-data.md)]
+  [!include[](includes/6-exercise-ingest-streaming-data.md)]

@@ -2,8 +2,6 @@
 uid: learn.wwl.perform-data-analysis-azure-databricks.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 12/12/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/07-summary.md)]
+  [!include[](includes/07-summary.md)]

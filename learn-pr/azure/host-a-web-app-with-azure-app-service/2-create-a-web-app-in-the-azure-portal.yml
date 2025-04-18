@@ -2,8 +2,6 @@
 uid: learn.host-a-web-application-with-azure-web-apps.2-create-a-web-app-in-the-azure-portal
 title: Create a web app in the Azure portal
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create a web app in the Azure portal
   description: Create a web application in the Azure portal.
   ms.date: 10/3/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/2-create-a-web-app-in-the-azure-portal.md)]
-
+

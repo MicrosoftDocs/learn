@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.use-system-catalogs-system-views-postgresql.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 09/29/2022
   author: wwlpublish
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. pg_catalog is a schema."
     - content: "pg_system_view."
       isCorrect: false
-      explanation: "Incorrect. pg_system_view isn't a system view in PostgreSQL."
+      explanation: "Incorrect. pg_system_view isn't a system view in PostgreSQL."

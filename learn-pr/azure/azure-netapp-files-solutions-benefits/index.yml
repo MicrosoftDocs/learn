@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.azure-netapp-files-solutions-benefits
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: introduction        
   title: Solutions and benefits for using Azure NetApp Files     
   description: Learn about applications for Azure NetApp Files with Linux OSS applications and databases, Windows applications and SQL Server solutions, SAP on Azure solutions, and other products.   
@@ -39,4 +37,4 @@ units:
 - learn.azure.azure-netapp-files-solutions-benefits.summary
 badge:
   uid: learn.azure.azure-netapp-files-solutions-benefits.badge
-
+

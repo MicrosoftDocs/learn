@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.publish-azure-web-app-with-azure-toolkit-intellij
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Develop Java web app on Azure using IntelliJ
   description: In this module, you will learn how to use Azure to host your Java web apps, built by using IntelliJ IDEA.
   ms.date: 03/18/2024
@@ -42,4 +40,4 @@ units:
 - learn.azure.publish-azure-web-app-with-azure-toolkit-intellij.8-summary
 badge:
   uid: learn.azure.publish-azure-web-app-with-azure-toolkit-intellij.badge
-
+

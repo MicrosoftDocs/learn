@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.explore-data-manipulation-azure-sql-database.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 10/1/2024
   author: jupadrao
@@ -46,4 +44,4 @@ quiz:
     - content: It enables the function to run without any dependencies
       isCorrect: false
       explanation: Incorrect. The isolated worker model doesn't eliminate dependencies. It allows a compiled function to run in a process isolated from the runtime.
-
+

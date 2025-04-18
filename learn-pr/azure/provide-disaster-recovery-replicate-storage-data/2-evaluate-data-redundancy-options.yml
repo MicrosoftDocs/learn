@@ -2,8 +2,6 @@
 uid: learn.azure.provide-disaster-recovery-replicate-storage-data.evaluate-data-redundancy-options
 title: Evaluate data redundancy options for Azure Storage
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Evaluate data redundancy options for Azure Storage
   description: Learn about data redundancy options for Azure Storage.
   ms.date: 11/03/2023
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/2-evaluate-data-redundancy-options.md)]
-
+

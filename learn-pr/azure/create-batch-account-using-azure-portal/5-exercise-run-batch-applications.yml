@@ -2,8 +2,6 @@
 uid: learn.azure.create-batch-account-using-azure-portal.exercise-run-batch-applications
 title: Exercise - Add a new application package to a Batch account in the Azure portal 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Add a new application package to a Batch account in the Azure portal 
   description: Create an application package and a Batch job.
   ms.date: 08/05/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-run-batch-applications.md)]
-
+

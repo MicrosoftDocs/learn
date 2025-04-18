@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.strategic-platform-road-mapping
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Strategic Platform Road Mapping
   description: "This module covers the principles of strategic platform road mapping, including aligning platform initiatives with business objectives, preparing for technological advancements, and fostering innovation. Learners will understand how to develop actionable roadmaps that guide the platform’s evolution, ensuring it remains efficient, reliable, and capable of evolving with future innovations."
   ms.date: 01/14/2025
@@ -66,4 +64,4 @@ units:
 - learn.wwl.strategic-platform-road-mapping.knowledge-check
 - learn.wwl.strategic-platform-road-mapping.summary
 badge:
-  uid: learn.wwl.strategic-platform-road-mapping.badge
+  uid: learn.wwl.strategic-platform-road-mapping.badge

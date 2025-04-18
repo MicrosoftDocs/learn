@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.generate-code-azure-openai.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge of the code generation capabilities covered in this module.
   author: ivorb
   ms.author: berryivor
@@ -49,4 +47,4 @@ quiz:
     - content: "Azure OpenAI models can only translate code from Python to C# or Java."
       isCorrect: false
       explanation: "Incorrect. Azure OpenAI models can translate code from one language to another regardless of the original language."
-
+

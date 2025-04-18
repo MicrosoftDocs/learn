@@ -2,8 +2,6 @@
 uid: learn.make-recommendations-ai-personalize.create-ai-personalizer-resource
 title: Create Azure AI Personalizer resource
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create Azure AI Personalizer resource
   description: Create Azure AI Personalizer resource using the Azure portal, and Azure CLI.
   author: wwlpublish
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/2-create-ai-personalizer-resource.md)]
-
+

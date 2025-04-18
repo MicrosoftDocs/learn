@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-azure-ml
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to Azure Machine Learning
   description: Azure Machine Learning provides your software with automated data identification and extraction from your documents. Using an SDK or REST, the AI-powered service decreases, or can completely eliminate, time spent on and errors in data entry, while also making it easier to utilize your data.
   ms.date: 07/20/2024
@@ -42,4 +40,4 @@ units:
 - learn.azure.intro-to-azure-ml.summary
 badge:
   uid: learn.azure.intro-to-azure-ml.badge
-
+

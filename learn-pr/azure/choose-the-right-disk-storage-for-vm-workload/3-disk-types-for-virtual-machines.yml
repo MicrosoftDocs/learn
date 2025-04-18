@@ -2,8 +2,6 @@
 uid: learn.choose-the-right-disk-storage-for-vm-workload.3-disk-types-for-virtual-machines
 title: Disk types for virtual machines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Disk types for virtual machines
   description: Disk types for virtual machines
   ms.date: 09/05/2023
@@ -40,4 +38,4 @@ quiz:
     - content: "Standard HDD"
       isCorrect: false
       explanation: "Although standard HDDs can easily support the required throughput, that performance is not guaranteed."
-
+

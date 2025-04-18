@@ -2,8 +2,6 @@
 uid: learn.wwl.custom-name-entity-recognition.exercise-extract-custom-entities
 title: Exercise - Extract custom entities
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Extract custom entities
   description: Exercise - Extract custom entities
   author: wwlpublish
@@ -18,4 +16,4 @@ labId: 152402
 durationInMinutes: 35
 content: |
   [!include[](includes/5-exercise-extract-custom-entities.md)]
-
+

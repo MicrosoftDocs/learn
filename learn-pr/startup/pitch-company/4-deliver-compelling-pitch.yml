@@ -2,8 +2,6 @@
 uid: learn.startups.pitch-company.deliver-compelling-pitch
 title: Deliver a compelling pitch
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deliver a compelling pitch
   description: Learn the attributes of successful pitches, including tips for making PowerPoint presentations.
   ms.date: 04/22/2024
@@ -13,4 +11,4 @@ metadata:
   ms.collection: learn-startups
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-deliver-compelling-pitch.md)]
+  [!include[](includes/4-deliver-compelling-pitch.md)]

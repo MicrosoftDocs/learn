@@ -2,8 +2,6 @@
 uid: learn.wwl.secure-data-warehouse-azure-synapse-analytics.exercise-manage-authorization-through-column-row-level-security
 title: Exercise - Manage authorization through column and row level security
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Manage authorization through column and row level security
   description: "Exercise - Manage authorization through column and row level security"
   ms.date: 07/04/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 9
 content: |
-  [!include[](includes/6-exercise-manage-authorization-through-column-row-level-security.md)]
+  [!include[](includes/6-exercise-manage-authorization-through-column-row-level-security.md)]

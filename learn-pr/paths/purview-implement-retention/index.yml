@@ -1,13 +1,13 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.purview-implement-retention
 metadata:
-  title: 'Implement and manage retention in Microsoft Purview (SC-401)'
+  title: 'Implement and manage retention and recovery in Microsoft Purview (SC-401)'
   description: 'Retention is key to meeting compliance requirements and managing the lifecycle of organizational data. Microsoft Purview enables organizations to apply retention policies and labels that preserve or delete data based on business, legal, or regulatory needs. This learning path aligns with exam SC-401: Microsoft Information Security Administrator.'
-  ms.date: 03/25/2025
+  ms.date: 04/14/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: learning-path
-title: 'Implement and manage retention in Microsoft Purview'
+title: 'Implement and manage retention and recovery in Microsoft Purview'
 prerequisites: |
   - Foundational knowledge of Microsoft security and compliance technologies
   - Basic knowledge of Microsoft 365 data governance capabilities
@@ -25,7 +25,8 @@ products:
 subjects:
 - security
 modules:
-- learn-m365.m365-compliance-information-governance
-- learn.wwl.purview-implement-manage-retention
+- learn.wwl.purview-understand-retention
+- learn.wwl.purview-retention-recovery
+
 trophy:
   uid: learn.wwl.purview-implement-retention.trophy

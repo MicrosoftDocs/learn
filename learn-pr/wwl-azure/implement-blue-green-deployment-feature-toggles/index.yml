@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-blue-green-deployment-feature-toggles
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement blue-green deployment and feature toggles
   description: Implement blue-green deployment and feature toggles
   ms.date: 05/27/2024
@@ -56,4 +54,4 @@ units:
 - learn.wwl.implement-blue-green-deployment-feature-toggles.summary
 badge:
   uid: learn.wwl.implement-blue-green-deployment-feature-toggles.badge
-
+

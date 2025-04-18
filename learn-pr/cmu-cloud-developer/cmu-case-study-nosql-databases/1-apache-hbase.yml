@@ -2,8 +2,6 @@
 uid: learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage.1-apache-hbase
 title: Apache HBase
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Apache HBase
   description: Apache HBase
   ms.date: 03/09/2022
@@ -55,4 +53,4 @@ quiz:
     - content: "0"
       isCorrect: false
       explanation: "That's not quite right. Because the modification is atomic, each row would be modified correctly. However, the Scan operation is not atomic and could be affected by the row modifications. Therefore some rows can be zeroed out and others could left intact. We cannot be certain that the scan result is 0. What are the consistency guarantees offered by HBase? Do they differ for different types of operations?"
-    
+    

@@ -2,8 +2,6 @@
 uid: learn.azure.create-composable-bicep-files-using-modules.add-parameters-outputs-modules
 title: Add parameters and outputs to modules
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Add parameters and outputs to modules
   description: Learn how to plan the parameters and outputs of your Bicep modules.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/3-add-parameters-outputs-modules.md)]
-
+

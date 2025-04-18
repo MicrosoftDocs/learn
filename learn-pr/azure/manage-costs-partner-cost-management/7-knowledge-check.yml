@@ -2,13 +2,13 @@
 uid: >-
   learn.manage-costs-partner-cost-management.knowledge-check
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Review what you've learned
   ms.date: 11/19/2024
   author: bandersmsft
   ms.author: banders
   ms.topic: unit
-title: Knowledge check
+title: Module assessment
 durationInMinutes: 2
 quiz:
   title: Check your knowledge

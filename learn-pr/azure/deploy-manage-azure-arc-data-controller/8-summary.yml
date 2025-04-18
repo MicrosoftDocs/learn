@@ -2,8 +2,6 @@
 uid: learn.azure.deploy-manage-azure-arc-data-controller.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summarizes the deploy and manage Azure Arc data controller module.
   ms.date: 07/22/2024
@@ -14,4 +12,4 @@ durationInMinutes: 2
 content: |
   [!include[](includes/summary.md)]
   
-
+

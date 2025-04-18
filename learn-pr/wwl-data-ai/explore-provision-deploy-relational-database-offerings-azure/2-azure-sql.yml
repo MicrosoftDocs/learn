@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-provision-deploy-relational-database-offerings-azure.describe-azure-sql
 title: Describe Azure SQL services and capabilities
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe Azure SQL services and capabilities
   description: "Describe Azure SQL services and capabilities"
   ms.date: 10/09/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-azure-sql.md)]
+  [!include[](includes/2-azure-sql.md)]

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.create-azure-resources-by-using-azure-cli
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create Azure resources by using Azure CLI
   description: "Create Azure resources by using Azure CLI"
   ms.date: 02/17/2025
@@ -56,4 +54,4 @@ units:
 - learn.wwl.create-azure-resources-by-using-azure-cli.knowledge-check
 - learn.wwl.create-azure-resources-by-using-azure-cli.summary
 badge:
-  uid: learn.wwl.create-azure-resources-by-using-azure-cli.badge
+  uid: learn.wwl.create-azure-resources-by-using-azure-cli.badge

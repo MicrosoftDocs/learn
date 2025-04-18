@@ -2,8 +2,6 @@
 uid: learn.azure.intro-to-bot-service-bot-framework-composer.3-how-azure-bot-service-works
 title: How Azure Bot Service works
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: How Azure Bot Service works
   description: How Azure Bot Service works
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 11
 content: |
   [!include[](includes/3-how-azure-bot-service-works.md)]
-
+

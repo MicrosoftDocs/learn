@@ -2,8 +2,6 @@
 uid: learn.oxford.void-detection-edge-devices-lva.how-deploy-iot-edge
 title: How to deploy IoT Edge device
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: How to deploy IoT Edge device
   description: The module helps learner deploy edge modules to edge device.
   ms.date: 07/20/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4 # dummy number at present
 content: |
-  [!include[](includes/3-how-deploy-edge-device.md)]
+  [!include[](includes/3-how-deploy-edge-device.md)]

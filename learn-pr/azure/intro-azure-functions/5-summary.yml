@@ -2,8 +2,6 @@
 uid: learn.intro-azure-functions.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: This unit contains a summary of what you learned about Azure Functions.
   ms.date: 12/03/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/5-summary.md)]
-
+

@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.deploy-azure-vmware-solution.connect-on-premises-vmware
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Connect to an on-premises VMware vSphere environment
   description: Connect to an on-premises VMware vSphere environment.
   ms.date: 08/01/2024
@@ -40,4 +38,4 @@ quiz:
     - content: "Load balancer"
       isCorrect: false
       explanation: "A load balancer provides high availability by distributing incoming traffic among healthy VMs. This functionality isn't required for on-premises network traffic to reach Azure VMware Solution."
-
+

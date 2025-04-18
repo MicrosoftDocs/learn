@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.train-evaluate-classification-models.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 08/25/2024
   author: madiepev
@@ -48,4 +46,4 @@ quiz:
       explanation: "Incorrect. This information would be found using the Precision metric."
     - content: "The model correctly identified 81% of positive cases as positive."
       isCorrect: true
-      explanation: "Correct. Recall indicates the proportion of actual positive cases that the classifier correctly identified."
+      explanation: "Correct. Recall indicates the proportion of actual positive cases that the classifier correctly identified."

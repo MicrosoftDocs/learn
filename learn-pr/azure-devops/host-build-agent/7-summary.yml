@@ -2,8 +2,6 @@
 uid: learn.azdo.host-build-agent.7-summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: This unit summarizes what you've learned and provides more learning resources.
   ms.custom: devdivchpfy22
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/7-summary.md)]
-
+

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-security-management-capabilities-of-azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe the security management capabilities in Azure
   description: Describe the security management capabilities in Azure.
   ms.date: 08/05/2024
@@ -44,4 +42,4 @@ units:
 - learn.wwl.describe-security-management-capabilities-of-azure.summary-resources
 badge:
   uid: learn.wwl.describe-security-management-capabilities-of-azure.badge
-
+

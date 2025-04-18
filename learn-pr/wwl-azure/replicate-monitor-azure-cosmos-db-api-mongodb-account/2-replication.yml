@@ -2,8 +2,6 @@
 uid: learn.wwl.replicate-monitor-azure-cosmos-db-api-mongodb-account.replication
 title: Replication
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Replication
   description: "Replication"
   ms.date: 12/12/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-replication.md)]
+  [!include[](includes/2-replication.md)]

@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-remote-rendering.4-when-to-use-azure-remote-rendering  
 title: When to use Azure Remote Rendering  
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content  
   title: When to use Azure Remote Rendering
   description: When to use Azure Remote Rendering
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-when-to-use-azure-remote-rendering.md)]
+  [!include[](includes/4-when-to-use-azure-remote-rendering.md)]

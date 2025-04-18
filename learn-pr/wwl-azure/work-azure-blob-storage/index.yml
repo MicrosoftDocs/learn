@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.work-azure-blob-storage
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Work with Azure Blob storage
   description: "Learn how to use the Azure Blob storage client library to create and update Blob storage resources."
   ms.date: 07/12/2024
@@ -47,4 +45,4 @@ units:
 - learn.wwl.work-azure-blob-storage.knowledge-check
 - learn.wwl.work-azure-blob-storage.summary
 badge:
-  uid: learn.wwl.work-azure-blob-storage.badge
+  uid: learn.wwl.work-azure-blob-storage.badge

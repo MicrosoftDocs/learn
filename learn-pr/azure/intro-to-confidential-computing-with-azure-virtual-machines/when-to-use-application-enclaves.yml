@@ -2,8 +2,6 @@
 uid: learn.azure.intro-to-confidential-computing-with-azure-virtual-machines.when-to-use-application-enclaves
 title: When to use application enclaves versus VM-level confidentiality
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: When to use application enclaves versus VM-level confidentiality
   description: In this unit, you'll learn when to use application enclaves versus VM-level confidentiality.
   ms.date: 03/15/2024
@@ -38,4 +36,4 @@ quiz:
     - content: Azure Key Vault Managed HSM.
       isCorrect: false
       explanation: "Incorrect: This might be used in your solution, but virtual machine-level confidentiality is the correct answer."
-
+

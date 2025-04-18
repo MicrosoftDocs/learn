@@ -2,8 +2,6 @@
 uid: learn.wwl.develop-with-devops.summary
 title: 'Summary'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Summary'
   description: "In this module, you have learned about the importance of source control and version control in DevOps."
   ms.date: 02/06/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/10-summary.md)]
+  [!include[](includes/10-summary.md)]

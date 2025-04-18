@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook.trigger-function-with-github-event
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Trigger an Azure Function with a GitHub event
   description: Trigger an Azure Function with a GitHub event
   ms.date: 10/27/2022
@@ -13,4 +11,4 @@ title: Trigger an Azure Function with a GitHub event
 durationInMinutes: 5
 content: |
   [!include[](includes/6-trigger-function-with-github-event.md)]
-
+

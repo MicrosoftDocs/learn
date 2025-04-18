@@ -2,8 +2,6 @@
 uid: learn.azure-sql-replication.exercise-track-data-changes-with-cdc
 title: Exercise - Work with change data capture
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Work with change data capture
   description: "Learning how to enable change data capture (CDC) and query the CDC change tables for data changes and understanding common use cases. This section also includes a sandbox exercise to practice CDC lessons."
@@ -18,4 +16,4 @@ interactive: powershell
 sandbox: true
 content: |
   [!include[](includes/3-exercise-track-data-changes-with-cdc.md)]
-
+

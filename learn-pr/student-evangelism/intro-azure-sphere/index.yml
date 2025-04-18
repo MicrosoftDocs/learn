@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.oxford.intro-azure-sphere
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: "Introduction to Azure Sphere"
   description: "Learn how to evaluate whether Azure Sphere is the right product for creating IoT applications."
   ms.date: 07/20/2024
@@ -42,4 +40,4 @@ units:
 - learn.oxford.intro-azure-sphere.when-to-use-azure-sphere
 - learn.oxford.intro-azure-sphere.knowledge-check
 - learn.oxford.intro-azure-sphere.summary
-
+

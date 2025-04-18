@@ -2,8 +2,6 @@
 uid: learn.azure.introduction-to-azure-api-management.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: Summary unit for the Introduction to Azure API Management module
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]
-
+

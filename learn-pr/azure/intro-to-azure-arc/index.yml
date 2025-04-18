@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-azure-arc
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to Azure Arc
   description: Introduction to Azure Arc
   manager: rayoflores
@@ -46,4 +44,4 @@ units:
 - learn.azure.intro-to-azure-arc.7-summary
 badge:
   uid: learn.azure.intro-to-azure-arc.badge
-
+

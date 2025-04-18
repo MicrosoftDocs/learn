@@ -2,13 +2,11 @@
 uid: learn.wwl.responsible-ai-studio.mitigate-harms
 title: Mitigate potential harms
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Mitigate potential harms
   description: Mitigate potential harms at multiple levels of a responsible AI solution.
   author: ivorb
   ms.author: berryivor
-  ms.date: 11/28/2024
+  ms.date: 04/16/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

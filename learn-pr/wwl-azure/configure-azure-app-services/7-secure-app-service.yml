@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-azure-app-services.secure-app-service
 title: Secure your App Service app
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Secure your App Service app
   description: "Secure your app with authentication and authorization in App Service."
   ms.date: 12/18/2024

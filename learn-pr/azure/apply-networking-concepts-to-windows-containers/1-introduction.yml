@@ -2,8 +2,6 @@
 uid: learn.azure.apply-networking-concepts-to-windows-containers.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: Containers are a common development approach for microservice architectures and applications. A containers-based implementation uses hardware efficiently because the security features allow multiple instances to run simultaneously on the same host without affecting each other.
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]
-
+

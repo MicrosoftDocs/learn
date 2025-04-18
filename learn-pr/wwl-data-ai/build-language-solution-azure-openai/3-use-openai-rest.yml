@@ -2,8 +2,6 @@
 uid: learn.wwl.build-language-solution-azure-openai.use-openai-rest
 title: Use Azure OpenAI REST API
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use Azure OpenAI REST API
   description: Understand how to use the REST API to connect to the available endpoints of an Azure OpenAI resource.
   author: ivorb
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/3-use-openai-rest.md)]
-
+

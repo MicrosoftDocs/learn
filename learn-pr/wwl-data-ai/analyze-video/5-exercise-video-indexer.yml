@@ -2,8 +2,6 @@
 uid: learn.wwl.analyze-video.exercise-video-indexer
 title: Exercise - Analyze video
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Analyze video
   description: Exercise - Analyze video
   author: wwlpublish
@@ -18,4 +16,4 @@ labModal: true
 durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise-video-indexer.md)]
-
+

@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.azure-functions-and-signalr.1-introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Learn to update an application to implement automatic updates that are nearly instantaneous.
   ms.date: 01/22/2025
@@ -13,4 +11,4 @@ title: Introduction
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-
+

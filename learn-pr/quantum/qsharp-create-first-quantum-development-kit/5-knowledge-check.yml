@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.quantum.qsharp-create-first-quantum-development-kit.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Check your understanding so far.
   author: azure-quantum-content
   ms.author: quantumdocwriters
@@ -54,4 +52,4 @@ quiz:
       explanation: "You first allocate a qubit using `use` and then apply `A` to the qubit allocated using `A(q);`."
     - content: "You allocate a qubit using `use q = Qubit();` and then apply `A` to `q` using `A[q];`."
       isCorrect: false
-      explanation: "To apply an operation to a qubit, you must use parentheses, `A(q);`."
+      explanation: "To apply an operation to a qubit, you must use parentheses, `A(q);`."
