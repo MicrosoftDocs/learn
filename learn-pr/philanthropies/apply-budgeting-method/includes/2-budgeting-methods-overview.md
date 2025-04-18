@@ -3,7 +3,7 @@
 - Benefits: Helps you stay in control of your money by ensuring nothing is unplanned.
 - Example: If you have 20 dollars, you might assign 10 dollars to savings, 5 dollars to snacks, and 5 dollars to activities.
 
-`embed Zero-Based Budgeting graphic`
+:::image type="content" source="../media/zero-based-budgeting.png" alt-text="Screenshot of a section explaining zero-based budgeting." lightbox="../media/zero-based-budgeting.png":::
 
 Ask Copilot Activity: 
 
@@ -23,7 +23,7 @@ Ask Copilot Activity:
 - Prioritize saving money before spending on anything else.
 - Benefits: Builds a habit of saving and ensures you focus on future goals.
 
-`embed Pay-Yourself-First Budgeting graphic`
+:::image type="content" source="../media/pay-yourself-first.png" alt-text="Screenshot of a section explaining the pay yourself first strategy." lightbox="../media/pay-yourself-first.png":::
 
 Reflection Activity: Why is saving first important?
 
@@ -32,7 +32,7 @@ Reflection Activity: Why is saving first important?
 - Use envelopes labeled with spending categories to visually manage money.
 - Benefits: Helps limit overspending and makes budgeting tangible.
 
-`embed Envelope System Budgeting graphic`
+:::image type="content" source="../media/envelope-system-budgeting.png" alt-text="Screenshot of an explanation of the Envelope System Budgeting method." lightbox="../media/envelope-system-budgeting.png":::
 
 
 ### Microsoft designer activity: AI-Powered Budgeting with Virtual Envelopes
@@ -58,7 +58,7 @@ Reflection Activity: Why is saving first important?
 
 1. **Customize Your Envelopes**
 
-   - Use **Microsoft Designer’s AI-powered tools** to generate visuals that match each category.
+   - Use **Microsoft Designer's AI-powered tools** to generate visuals that match each category.
    - Add **icons, colors, or images** to make your envelopes visually appealing and easy to understand.
    - Adjust text, font, and layout to personalize your design.
 
@@ -79,7 +79,7 @@ Reflection Activity: Why is saving first important?
 - Divide income into 50% needs, 30% wants, and 20% savings.
 - Benefits: A simple formula for balanced spending and saving.
 
-`embed 50/30/20 Budgeting graphic`
+:::image type="content" source="../media/saving-needs-wants.png" alt-text="Screenshot of saving for needs and wants." lightbox="../media/saving-needs-wants.png":::
 
 Ask Copilot Activity:
 

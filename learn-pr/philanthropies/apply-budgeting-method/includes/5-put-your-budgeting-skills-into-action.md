@@ -32,6 +32,6 @@ Ask Copilot Activities:
   1. Write down or save your updated budget for future reference.
   1. Reflect on how planning for surprises can help you stay on track with your money goals.
 
-`graphic: comparison chart showing the strengths and weaknesses of each budgeting method`
+:::image type="content" source="../media/set-goal.png" alt-text="Screenshot of set a goal." lightbox="../media/set-goal.png":::
 
 Budgeting isn't about restricting what you can do—it's about making sure your money helps you do more. By starting small and staying consistent, you can build habits that help you achieve both short-term and long-term goals. Remember, every dollar counts, and the choices you make today can set you up for success in the future.
