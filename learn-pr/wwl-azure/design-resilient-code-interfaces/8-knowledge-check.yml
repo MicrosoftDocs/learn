@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 02/17/2025
+  ms.date: 04/15/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -16,36 +16,47 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which solution allows access for explicit interface members in C#?"
-    choices:
-    - content: "By casting the class instance to the interface type."
-      isCorrect: true
-      explanation: "Correct. Explicit interface members are only accessible through the interface instance, so you need to cast the class instance to the interface type."
-    - content: "By using the `this` keyword within the class."
-      isCorrect: false
-      explanation: "Incorrect. Explicit interface members can't be accessed using the `this` keyword within the class; they're only accessible through the interface instance."
-    - content: "By using reflection to invoke the members."
-      isCorrect: false
-      explanation: "Incorrect. While reflection can be used to invoke members, it is not the standard way to access explicit interface members. The correct approach is to cast the class instance to the interface type."
   - content: "What is a key benefit of using interfaces to reduce code dependencies?"
     choices:
-    - content: "Interfaces promote loose coupling and easier testing."
-      isCorrect: true
-      explanation: "Correct. Interfaces define a set of methods and properties that implementing classes must provide, promoting loose coupling and making the code easier to test and maintain."
     - content: "Interfaces provide default implementations for all methods."
       isCorrect: false
       explanation: "Incorrect. Interfaces do not provide default implementations for methods; they only define the contract that implementing classes must follow."
     - content: "Interfaces allow for multiple inheritance of classes."
       isCorrect: false
       explanation: "Incorrect. C# does not support multiple inheritance of classes. Interfaces allow a class to inherit behavior from multiple sources without multiple inheritance."
-  - content: "Imagine the scenario of developing a home automation application with different types of lights. Which approach allows mix and match capabilities in a single class?"
-    choices:
-    - content: "Implement multiple interfaces in the class."
+    - content: "Interfaces promote loose coupling and easier testing."
       isCorrect: true
-      explanation: "Correct. Implementing multiple interfaces in a class allows mix and match capabilities, providing a common API supported by various types."
-    - content: "Use multiple inheritance of classes."
+      explanation: "Correct. Interfaces define a set of methods and properties that implementing classes must provide, promoting loose coupling and making the code easier to test and maintain."
+  - content: "How can the issue of tightly coupled code be addressed?"
+    choices:
+    - content: "By modifying existing code to add new features."
       isCorrect: false
-      explanation: "Incorrect. C# does not support multiple inheritance of classes. Implementing multiple interfaces is the correct approach."
-    - content: "Define all functionalities within a single interface."
+      explanation: "Incorrect. Modifying existing code to add new features violates the Open/Closed Principle."
+    - content: "By refactoring the code using interfaces to make it more modular and flexible."
+      isCorrect: true
+      explanation: "Correct. Using interfaces to decouple components can make the code more modular and flexible, addressing the issue of tightly coupled code."
+    - content: "By increasing dependencies between components."
       isCorrect: false
-      explanation: "Incorrect. Defining all functionalities within a single interface can lead to a bloated interface. Implementing multiple interfaces is a better approach."
+      explanation: "Incorrect. Increasing dependencies would lead to more tightly coupled code, not less."
+  - content: "What is the main advantage of using an interface in programming?"
+    choices:
+    - content: "It allows you to modify the class without adding new type items."
+      isCorrect: false
+      explanation: "Incorrect. An interface does not allow modification of the class, but it does allow adding new type items without modifying the class."
+    - content: "It makes the system more complex and difficult to understand."
+      isCorrect: false
+      explanation: "Incorrect. An interface actually simplifies maintenance by making the system easier to understand, test, and extend."
+    - content: "It isolates behavior, ensuring the class doesn't depend on specific implementations."
+      isCorrect: true
+      explanation: "Correct. An interface sets a contract for behavior without detailing its implementation, thus reducing dependencies and improving modularity."
+  - content: "How does an interface contribute to the principle of Separation of Concerns?"
+    choices:
+    - content: "By isolating behavior and ensuring responsibilities are clearly divided."
+      isCorrect: true
+      explanation: "Correct. An interface isolates behavior, which aligns with the principle of Separation of Concerns by ensuring responsibilities are clearly divided."
+    - content: "By complicating the system's understanding, testing, and extension."
+      isCorrect: false
+      explanation: "Incorrect. An interface simplifies maintenance by clearly dividing responsibilities."
+    - content: "By allowing the class to depend on specific implementations."
+      isCorrect: false
+      explanation: "Incorrect. An interface actually ensures that the class doesn't depend on specific implementations."

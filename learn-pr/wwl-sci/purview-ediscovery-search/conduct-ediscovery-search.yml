@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ediscovery-search.conduct-ediscovery-search
+title: Conduct an eDiscovery search
+metadata:
+  title: Conduct an eDiscovery search
+  description: "Conduct an eDiscovery search."
+  ms.date: 04/17/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/conduct-ediscovery-search.md)]

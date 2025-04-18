@@ -6,7 +6,7 @@ metadata:
   description: Test your knowledge.
   author: wwlpublish
   ms.author: gmalc
-  ms.date: 01/31/2025
+  ms.date: 04/17/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -47,4 +47,4 @@ quiz:
     - content: "Azure AI Foundry SDK"
       isCorrect: true
       explanation: "Correct. The Azure AI Foundry SDK provides the AI Projects client library, which you can use to access connections in a project or hub."
-
+
