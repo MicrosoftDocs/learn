@@ -47238,6 +47238,11 @@
       "source_path": "learn-pr/wwl-azure/develop-for-azure-cache-for-redis/3-configure-azure-cache-redis.md",
       "redirect_url": "/azure/azure-cache-for-redis/cache-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-for-azure-cache-for-redis/5-console-app-azure-cache-redis.md",
+      "redirect_url": "/azure/azure-cache-for-redis/cache-overview",
+      "redirect_document_id": false
     }
   ]
 }
