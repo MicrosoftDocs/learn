@@ -37,7 +37,6 @@ subjects:
 - cloud-computing
 units:
 - learn.wwl.develop-for-storage-cdns.introduction
-- learn.wwl.develop-for-storage-cdns.interact-azure-content-delivery-networks-by-using-net
 - learn.wwl.develop-for-storage-cdns.knowledge-check
 - learn.wwl.develop-for-storage-cdns.summary
 badge:
