@@ -5690,3 +5690,13 @@ achievements:
   title: 'AZ-500: Manage security operations'
   summary: Master the art of managing security operations in Azure, from governance and policy creation to infrastructure security, key management, security posture, threat protection, and advanced security monitoring and automation.
   iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.az-204-integrate-caching-content-delivery-within-solutions.trophy
+  type: trophy
+  title: 'AZ-204: Implement caching for solutions'
+  summary: Learn how to improve the performance and scalability of your applications by integrating Azure Cache for Redis and Azure Content Delivery Network in to your solution.
+  iconUrl: /training/achievements/integrate-content-delivery.svg
+- uid: learn.wwl.develop-for-azure-cache-for-redis.badge
+  type: badge
+  title: Develop for Azure Cache for Redis
+  summary: Learn how to configure Azure Cache for Redis, interact with the cache, and connect an application to Azure Cache for Redis by using .NET.
+  iconUrl: /training/achievements/azure-cache-redis.svg
