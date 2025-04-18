@@ -47223,6 +47223,11 @@
       "source_path": "learn-pr/paths/manage-security-operations-new/index.md",
       "redirect_url": "/training/paths/secure-azure-using-microsoft-defender-cloud-sentinel/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/az-204-integrate-caching-content-delivery-within-solutions/index.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
     }
   ]
 }
