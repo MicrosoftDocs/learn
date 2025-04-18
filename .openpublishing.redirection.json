@@ -47223,6 +47223,86 @@
       "source_path": "learn-pr/paths/manage-security-operations-new/index.md",
       "redirect_url": "/training/paths/secure-azure-using-microsoft-defender-cloud-sentinel/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/az-204-integrate-caching-content-delivery-within-solutions/index.md",
+      "redirect_url": "/training/browse/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-for-azure-cache-for-redis/index.md",
+      "redirect_url": "/azure/azure-cache-for-redis/cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-for-azure-cache-for-redis/3-configure-azure-cache-redis.md",
+      "redirect_url": "/azure/azure-cache-for-redis/cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-for-azure-cache-for-redis/5-console-app-azure-cache-redis.md",
+      "redirect_url": "/azure/azure-cache-for-redis/cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-for-azure-cache-for-redis/2-azure-cache-redis-overview.md",
+      "redirect_url": "/azure/azure-cache-for-redis/cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-for-azure-cache-for-redis/4-interact-redis-api.md",
+      "redirect_url": "/azure/azure-cache-for-redis/cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-for-azure-cache-for-redis/1-introduction.md",
+      "redirect_url": "/azure/azure-cache-for-redis/cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-for-azure-cache-for-redis/6-knowledge-check.md",
+      "redirect_url": "/azure/azure-cache-for-redis/cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-for-azure-cache-for-redis/7-summary.md",
+      "redirect_url": "/azure/azure-cache-for-redis/cache-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-for-storage-cdns/index.md",
+      "redirect_url": "/azure/frontdoor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-for-storage-cdns/3-control-cache-behavior.md",
+      "redirect_url": "/azure/frontdoor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-for-storage-cdns/2-azure-content-delivery-network-overview.md",
+      "redirect_url": "/azure/frontdoor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-for-storage-cdns/4-azure-cdn-libraries-dotnet.md",
+      "redirect_url": "/azure/frontdoor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-for-storage-cdns/1-introduction.md",
+      "redirect_url": "/azure/frontdoor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-for-storage-cdns/5-knowledge-check.md",
+      "redirect_url": "/azure/frontdoor/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-for-storage-cdns/6-summary.md",
+      "redirect_url": "/azure/frontdoor/",
+      "redirect_document_id": false
     }
   ]
 }
