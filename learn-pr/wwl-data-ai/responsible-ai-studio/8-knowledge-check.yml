@@ -6,7 +6,7 @@ metadata:
   description: Check your understanding of the content presented in this module.
   author: ivorb
   ms.author: berryivor
-  ms.date: 11/28/2024
+  ms.date: 04/16/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -41,10 +41,10 @@ quiz:
     - content: "To enable you to gather feedback and identify issues before releasing the solution more broadly"  
       isCorrect: true  
       explanation: "An initial release to a restricted user base enables you to minimize harm by gather feedback and identifying issues before broad release."  
-    - content: "To eliminate the need to identify, measure, and mitigate potential harms"  
+    - content: "To eliminate the need to map, measure, mitigate, and manage potential harms"  
       isCorrect: false  
       explanation: "A phased delivery plan doesn't eliminate the need to identify, measure, and mitigate potential harms."  
     - content: "To enable you to charge more for the solution"  
       isCorrect: false  
       explanation: "The goal of a phased delivery plan is to reduce potential harm, not to maximize revenue."  
-
+

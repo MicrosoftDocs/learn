@@ -4,7 +4,7 @@ title: Implement type-checking in queries
 metadata:
   title: Implement type-checking in queries
   description: "Implement type-checking in queries"
-  ms.date: 03/10/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 9
 content: |
-  [!include[](includes/5-implement-type-checking-queries.md)]
+  [!include[](includes/5-implement-type-checking-queries.md)]

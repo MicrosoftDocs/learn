@@ -2,9 +2,11 @@
 uid: learn.wwl.configure-storage-tools.use-storage-explorer1
 title: Use Azure Storage Explorer
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Use Azure Storage Explorer
   description: "Use Azure Storage Explorer"
-  ms.date: 01/10/2025
+  ms.date: 04/03/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

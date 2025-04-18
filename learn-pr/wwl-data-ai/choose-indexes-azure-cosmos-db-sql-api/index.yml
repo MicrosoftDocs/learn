@@ -3,7 +3,7 @@ uid: learn.wwl.choose-indexes-azure-cosmos-db-sql-api
 metadata:
   title: Customize an indexing policy in Azure Cosmos DB for NoSQL
   description: "Tune the indexing policy based on your SQL queries in Azure Cosmos DB for NoSQL."
-  ms.date: 10/18/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: module-standard-task-based
@@ -35,4 +35,4 @@ units:
 - learn.wwl.choose-indexes-azure-cosmos-db-sql-api.knowledge-check
 - learn.wwl.choose-indexes-azure-cosmos-db-sql-api.summary
 badge:
-  uid: learn.wwl.choose-indexes-azure-cosmos-db-sql-api.badge
+  uid: learn.wwl.choose-indexes-azure-cosmos-db-sql-api.badge

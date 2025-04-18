@@ -22,4 +22,7 @@ In this lab, you configure connectivity between the CoreServicesVnet and the Man
 > [!NOTE]
 > You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
+> [!NOTE]
+> You can view the [Connect two Azure Virtual Networks using global virtual network peering](https://microsoftlearning.github.io/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/Instructions/Exercises/M01-Unit%208%20Connect%20two%20Azure%20Virtual%20Networks%20using%20global%20virtual%20network%20peering.html) instructions directly. 
+
 [![Screenshot of the simulation page.](../media/simulation-peer-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Connect%20two%20Azure%20virtual%20networks%20using%20global%20virtual%20network%20peering)

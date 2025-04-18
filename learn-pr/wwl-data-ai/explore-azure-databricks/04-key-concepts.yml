@@ -6,10 +6,10 @@ metadata:
   description: "Understand key concepts"
   ms.date: 08/05/2024
   author: wwlpublish
-  ms.author: theresai
+  ms.author: jamesh
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/04-key-concepts.md)]
+  [!include[](includes/04-key-concepts.md)]

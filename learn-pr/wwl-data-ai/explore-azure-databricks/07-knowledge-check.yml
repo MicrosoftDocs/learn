@@ -6,7 +6,7 @@ metadata:
   description: "Knowledge check"
   ms.date: 08/02/2024
   author: wwlpublish
-  ms.author: theresai
+  ms.author: jamesh
   ms.topic: unit
 azureSandbox: false
 labModal: false
@@ -46,4 +46,4 @@ quiz:
     - content: "Terminate the cluster"
       isCorrect: true
       explanation: "Correct. To minimize costs, it's crucial to terminate the Spark clusters in Azure Databricks when they aren't in use. Clusters consume resources and incur costs as long as they're running, regardless of activity."
-
+

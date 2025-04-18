@@ -6,8 +6,6 @@ Public IP addresses enable Internet resources to communicate with Azure resource
 
 As an example, public resources like web servers must be accessible from the internet. You want to ensure that you plan IP addresses that support these requirements.
 
-In this unit, you learn about requirements for IP addressing when integrating an Azure network with on-premises networks, and you explore the constraints and limitations for public and private IP addresses in Azure. You also examine at the capabilities that are available in Azure to reassign IP addresses in your network.
-
 ## Use dynamic and static public IP addresses
 
 In Azure Resource Manager, a [public IP](/azure/virtual-network/virtual-network-public-ip-address) address is a resource that has its own properties. Some of the resources you can associate a public IP address resource with:
@@ -35,18 +33,10 @@ Public IP addresses are created with one of the following SKUs:
 | Public IP address | **Standard** | **Basic**|
 | --- | --- |--- |
 | Allocation method | Static |  For IPv4: Dynamic or Static; For IPv6: Dynamic. |
-| Idle Timeout | Have an adjustable inbound originated flow idle time out of 4-30 minutes, with a default of 4 minutes, and fixed outbound originated flow idle time out of 4 minutes. |  Have an adjustable inbound originated flow idle time out of 4-30 minutes, with a default of 4 minutes, and fixed outbound originated flow idle time out of 4 minutes. |
+| Idle time-out | Have an adjustable inbound originated flow idle time out of 4-30 minutes, with a default of 4 minutes, and fixed outbound originated flow idle time out of 4 minutes. |  Have an adjustable inbound originated flow idle time out of 4-30 minutes, with a default of 4 minutes, and fixed outbound originated flow idle time out of 4 minutes. |
 |Security | Secure by default model and be closed to inbound traffic when used as a frontend. Allow traffic with network security group (NSG) is required (for example, on the NIC of a virtual machine with a Standard SKU Public IP attached). |Open by default. Network security groups are recommended but optional for restricting inbound or outbound traffic|
 |Availability zones | Supported. Standard IPs can be nonzonal, zonal, or zone-redundant. Zone redundant IPs can only be created in regions where there are three availability zones.| Not supported.|
 |Routing preference | Supported to enable more granular control of how traffic is routed between Azure and the Internet.| Not supported.|
 |Global tier | Supported via cross-region load balancers.| Not supported.|
-
-## Create a public IP address prefix
-
-Public IP prefixes are assigned from a pool of addresses in each Azure region. You create a public IP address prefix in an Azure region and subscription by specifying a name and prefix size. The prefix size is the number of addresses available for use. Public IP address prefixes consist of IPv4 or IPv6 addresses. In regions with Availability Zones, Public IP address prefixes can be created as zone-redundant or associated with a specific availability zone. After the public IP prefix is created, you can create public IP addresses.
-
-## Custom IP address prefix (BYOIP)
-
-Addresses from a custom IP address prefix can be used in the same way as Azure owned public IP address prefixes. Addresses from a custom IP address prefix can be associated to Azure resources, interact with internal/private IPs and virtual networks, and reach external destinations outbound from the Azure Wide Area Network.
 
 Choose the best response for each question.

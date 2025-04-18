@@ -12,12 +12,15 @@ These capabilities can be categorized into the following security emphases:
 
 Some of the features of Microsoft Defender for Office 365 that help organizations prevent and detect email and collaboration based threats include:
 
-- Policies for anti-malware, anti-spam, and anti-phishing
+- Anti-malware protection that protects against major categories of malware, including viruses, spyware, and ransomware.
+- Anti-spam protection that uses content filtering technologies to identify and separate junk email from legitimate email.
+- Anti-phishing (spoofing) protection to protect against phishing (spoofed) email attacks that try to steal sensitive information in messages that appear to be from legitimate or trusted senders.
 - Outbound spam filtering
 - Connection filtering to help identify good or bad source email servers by IP addresses.
 - Quarantine policies to define the user experience for quarantined messages
-- Submit messages, URLs, and attachments to Microsoft for analysis.
-- Safe attachments that provide an additional layer of protection against malware. After files are scanned by the common virus detection engine in Microsoft 365, Safe Attachments opens files in a virtual environment to see what happens (a process known as detonation). 
+- The Submissions page in the Microsoft Defender portal to submit messages, URLs, and attachments to Microsoft for analysis.
+- Safe attachments that provide an additional layer of protection against malware. After files are scanned by the common virus detection engine in Microsoft 365, Safe Attachments opens files in a virtual environment to see what happens (a process known as detonation).
+- Safe Links scanning that protects your organization from malicious links that are used in phishing and other attacks.
 - Email and collaboration alerts
 - Attack simulation training, which allows admins to run realistic attack scenarios in your organization. These simulated attacks help identify and train vulnerable users before a real attack impacts your bottom line.
 - Security information and event management (SIEM) integration for alerts.

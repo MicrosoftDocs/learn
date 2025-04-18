@@ -2,14 +2,30 @@
 uid: learn.wwl.introduction-to-azure-virtual-networks.understand-azure-virtual-networks
 title: Explore Azure Virtual Networks
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explore Azure Virtual Networks
   description: "Explore Azure Virtual Networks"
-  ms.date: 03/28/2025
+  ms.date: 04/08/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 10
+durationInMinutes: 12
 content: |
   [!include[](includes/2-explore-azure-virtual-networks.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following statements about Azure VNets is correct?"
+    choices:
+    - content: "Outbound communication with the internet must be configured for each resource on the VNet."
+      isCorrect: false
+      explanation: "Incorrect. All resources in a VNet can communicate outbound to the internet, by default."
+    - content: "Azure VNets enable communication between Azure resources."
+      isCorrect: true
+      explanation: "Correct. Virtual Networks can connect Azure resources including VMs, the App Service Environment, Azure Kubernetes Service, and Azure Virtual Machine Scale Sets."
+    - content: "Azure VNets can't be configured to communicate with on-premises resources."
+      isCorrect: false
+      explanation: "Incorrect. You can connect your on-premises computers and networks to a virtual network using any of the following options: Point-to-site virtual private network (VPN), Site-to-site VPN, Azure ExpressRoute."

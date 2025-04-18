@@ -34,7 +34,7 @@ The features that power Semantic Kernel are also still available within the Agen
 
 The Semantic Kernel Agent Framework supports several different types of agents, including:
 
-- **Azure AI Agent** - a specialized agent within the Semantic Kernel Agent Framework. The `AsureAIAgent` type is designed to provide advanced conversational capabilities with seamless tool integration. It automates tool calling and securely manages conversation history using threads, reducing the overhead of maintaining state. The `AzureAIAgent` also supports a variety of built-in tools, including file retrieval, code execution, and data interaction via Bing, Azure AI Search, Azure Functions, and OpenAPI.
+- **Azure AI Agent** - a specialized agent within the Semantic Kernel Agent Framework. The `AzureAIAgent` type is designed to provide advanced conversational capabilities with seamless tool integration. It automates tool calling and securely manages conversation history using threads, reducing the overhead of maintaining state. The `AzureAIAgent` also supports a variety of built-in tools, including file retrieval, code execution, and data interaction via Bing, Azure AI Search, Azure Functions, and OpenAPI.
 
 - **Chat Completion Agent**: designed for chat completion and conversation interfaces. The `ChatCompletionAgent` type mirrors the features and patterns in the underlying AI Service to support natural language processing, contextual understanding, and dialogue management.
 

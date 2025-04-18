@@ -1,24 +1,23 @@
-One feature of relational databases is locking, which is essential to maintain the atomicity, consistency, and isolation properties of the ACID model. All RDBMSs will block actions that would violate the consistency and isolation of writes to a database. SQL programmers are responsible for starting and ending transactions at the right point, in order to ensure the logical consistency of their data. In turn, the database engine provides locking mechanisms that also protect the logical consistency of the tables affected by those queries. These actions are a foundational part of the relational model.
+Locking is a key feature of relational databases, essential for maintaining the atomicity, consistency, and isolation properties of the ACID model. All RDBMSs block actions that would violate the consistency and isolation of database writes. SQL programmers must start and end transactions at the right points to ensure data consistency. The database engine provides locking mechanisms to protect the logical consistency of the affected tables, which is foundational to the relational model.
 
-On SQL Server, blocking occurs when one process holds a lock on a specific resource (row, page, table, database), and a second process attempts to acquire a lock with an incompatible lock type on the same resource. Typically, locks are held for a short period, and when the process holding the lock releases it, the blocked process can then acquire the lock and complete its transaction.
+In SQL Server, blocking occurs when one process holds a lock on a specific resource (row, page, table, database), and a second process attempts to acquire a lock with an incompatible lock type on the same resource. Typically, locks are held for a short period, and once the process holding the lock releases it, the blocked process can acquire the lock and complete its transaction.
 
-SQL Server locks the smallest amount of data needed to successfully complete the transaction. This behavior allows maximum concurrency. For example, if SQL Server is locking a single row, all other rows in the table are available for other processes to use, so concurrent work can go on. However, each lock requires memory resources, so it’s not cost-effective for one process to have thousands of individual locks on a single table. SQL Server tries to balance concurrency with cost. One technique used is called lock escalation. If SQL Server needs to lock more than 5000 rows on a single object in a single statement, it will escalate the multiple row locks to a single table lock.
+SQL Server locks the smallest amount of data needed to complete a transaction, allowing for maximum concurrency. For example, if SQL Server locks a single row, all other rows in the table remain available for other processes, enabling concurrent work. However, each lock requires memory resources, so it's not cost-effective for one process to hold thousands of individual locks on a single table. To balance concurrency with cost, SQL Server uses a technique called lock escalation. If more than 5,000 rows on a single object need to be locked in a single statement, SQL Server escalates the multiple row locks to a single table lock.
 
-Locking is normal behavior and happens many times during a normal day. Locking only become a problem when it causes blocking that isn't quickly resolved. There are two types of performance issues that can be caused by blocking:
+Locking is a normal behavior and occurs frequently throughout the day. It only becomes problematic when it causes blocking that isn't quickly resolved. There are two types of performance issues caused by blocking:
 
-- A process holds locks on a set of resources for an extended period of time before releasing them. These locks cause other processes to block, which can degrade query performance and concurrency.
+- A process holds locks on a set of resources for an extended period before releasing them, causing other processes to block and degrading query performance and concurrency.
+- A process acquires locks on a set of resources and never releases them, requiring administrator intervention to resolve.
 
-- A process gets locks on a set of resources, and never releases them. This problem requires administrator intervention to resolve.
+Deadlocking is another blocking scenario that occurs when one transaction holds a lock on a resource, and another transaction holds a lock on a different resource. Each transaction then attempts to acquire a lock on the resource currently locked by the other transaction, leading to an infinite wait as neither transaction can complete. The SQL Server engine detects these scenarios and resolves the deadlock by killing one of the transactions, based on which transaction has performed the least amount of work that needs to be rolled back. The transaction that is killed is known as the deadlock victim. Deadlocks are recorded in the *system_health* extended event session, which is enabled by default.
 
-Another blocking scenario is deadlocking, which occurs when one transaction has a lock on a resource, and another transaction has a lock on a second resource. Each transaction then attempts to take a lock on the resource, which is currently locked by the other transaction. Theoretically, this scenario would lead to an infinite wait, as neither transaction could complete. However, the SQL Server engine has a mechanism for detecting these scenarios and will kill one of the transactions in order to alleviate the deadlock, based on which transaction has performed the least of amount of work that would need to be rolled back. The transaction that is killed is known as the deadlock victim. Deadlocks are recorded in the *system_health* extended event session, which is enabled by default.
-
-It's important to understand the concept of a transaction. Auto-commit is the default mode of SQL Server and Azure SQL Database, which means the changes made by the statement below would automatically be recorded in the database's transaction log.
+It's important to understand the concept of a transaction. Autocommit is the default mode of SQL Server and Azure SQL Database, which means the changes made by the following statement would automatically be recorded in the database's transaction log.
 
 ```SQL
 INSERT INTO DemoTable (A) VALUES (1);
 ```
 
-In order to allow developers to have more granular control over their application code, SQL Server also allows you to explicitly control your transactions. The query below would take a lock on a row in the *DemoTable* table what wouldn't be released until a subsequent command to commit the transaction was added.
+In order to allow developers to have more granular control over their application code, SQL Server also allows you to explicitly control your transactions. The following query would take a lock on a row in the *DemoTable* table what wouldn't be released until a subsequent command to commit the transaction was added.
 
 ```SQL
 BEGIN TRANSACTION
@@ -26,7 +25,7 @@ BEGIN TRANSACTION
 INSERT INTO DemoTable (A) VALUES (1);
 ```
 
-The proper way to write the above query is as follows:
+The proper way to write the following query is as follows:
 
 ```SQL
 BEGIN TRANSACTION
@@ -36,7 +35,7 @@ INSERT INTO DemoTable (A) VALUES (1);
 COMMIT TRANSACTION
 ```
 
-The `COMMIT TRANSACTION` command explicitly commits a record of the changes to the transaction log. The changed data will eventually make its way into the data file asynchronously. These transactions represent a unit of work to the database engine. If the developer forgets to issue the `COMMIT TRANSACTION` command, the transaction will stay open and the locks won't be released. This is one of the main reasons for long running transactions.
+The `COMMIT TRANSACTION` command explicitly commits a record of the changes to the transaction log. The changed data will eventually make its way into the data file asynchronously. These transactions represent a unit of work to the database engine. If the developer forgets to issue the `COMMIT TRANSACTION` command, the transaction stays open and the locks won't be released. This is one of the main reasons for long running transactions.
 
 The other mechanism the database engine uses to help the concurrency of the database is row versioning. When a row versioning isolation level is enabled to the database, the engine maintains versions of each modified row in TempDB. This is typically used in mixed use workloads, in order to prevent reading queries from blocking queries that are writing to the database.
 
@@ -75,7 +74,7 @@ ORDER BY tat.transaction_begin_time DESC;
 
 ## Isolation levels
 
-SQL Server offers several isolation levels to allow you to define the level of consistency and correctness you need guaranteed for your data. Isolation levels let you find a balance between concurrency and consistency. The isolation level doesn't affect the locks taken to prevent data modification, a transaction will always get an exclusive lock on the data that is modifying. However, your isolation level can affect the length of time that your locks are held. Lower isolation levels increase the ability of multiple user process to access data at the same time, but increase the data consistency risks that can occur. The isolation levels in SQL Server are as follows:
+SQL Server offers several isolation levels to allow you to define the level of consistency and correctness you need guaranteed for your data. Isolation levels let you find a balance between concurrency and consistency. The isolation level doesn't affect the locks taken to prevent data modification. A transaction will always get an exclusive lock on the data that is modifying. However, your isolation level can affect the length of time that your locks are held. Lower isolation levels increase the ability of multiple user process to access data at the same time, but increase the data consistency risks that can occur. The isolation levels in SQL Server are as follows:
 
 - **Read uncommitted** – Lowest isolation level available. Dirty reads are allowed, which means one transaction may see changes made by another transaction that haven't yet been committed.
 
@@ -113,14 +112,13 @@ There's no way to set a global isolation level all queries running in a database
 
 ## Monitoring for blocking problems
 
-Identifying blocking problem can be troublesome as they can be sporadic in nature. There's a DMV called `sys.dm_tran_locks`, which can be joined with `sys.dm_exec_requests` in order to provide further information on locks that each session is holding. A better way to monitor for blocking problems is to do so on an ongoing basis using the Extended Events engine.
+Identifying blocking problems can be challenging due to their sporadic nature. The DMV `sys.dm_tran_locks`, when joined with `sys.dm_exec_requests`, provides information on the locks held by each session. A more effective way to monitor blocking problems is to use the Extended Events engine on an ongoing basis.
 
 Blocking problems typically fall into two categories:
 
-- Poor transactional design. As shown above, a transaction that has no `COMMIT TRANSACTION` will never end. While that is a simple example, trying to do too much work in a single transaction or having a distributed transaction, which uses a linked server connection, can lead to unpredictable performance.
+- Poor transactional design: For example, a transaction without a `COMMIT TRANSACTION` will never end. Trying to do too much work in a single transaction or having a distributed transaction using a linked server connection can lead to unpredictable performance.
+- Long-running transactions caused by schema design: This often involves an update on a column with a missing index or a poorly designed update query.
 
-- Long running transactions caused by schema design. Frequently this can be an update on a column with a missing index, or poorly designed update query.
-
-Monitoring for locking-related performance problems allows you to quickly identity performance degradation related to locking.
+Monitoring for locking-related performance problems allows you to quickly identify performance degradation related to locking.
 
 For more information about how to monitor blocking, see [Understand and resolve SQL Server blocking problems](/troubleshoot/sql/performance/understand-resolve-blocking).

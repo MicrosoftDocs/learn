@@ -2,9 +2,11 @@
 uid: learn.wwl.manage-security-controls-identity-access.recommend-when-use-external-identities
 title: Recommend when to use external identities
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Recommend when to use external identities
   description: "Recommend when to use external identities"
-  ms.date: 03/10/2025
+  ms.date: 04/11/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit
