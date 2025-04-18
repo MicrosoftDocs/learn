@@ -37,7 +37,6 @@ subjects:
 - cache
 units:
 - learn.wwl.develop-for-azure-cache-for-redis.introduction
-- learn.wwl.develop-for-azure-cache-for-redis.interact-by-using-net
 - learn.wwl.develop-for-azure-cache-for-redis.knowledge-check
 - learn.wwl.develop-for-azure-cache-for-redis.summary
 badge:
