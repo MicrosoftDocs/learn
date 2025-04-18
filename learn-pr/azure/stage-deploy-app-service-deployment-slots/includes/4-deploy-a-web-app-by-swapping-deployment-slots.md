@@ -1,4 +1,4 @@
-When you swap slots, you can precisely control the behavior and configuration of web apps. 
+When you swap slots, you can precisely control the behavior and configuration of web apps.
 
 Suppose you set up deployment slots for production and staging. You test a new version of your social media web app in the staging slot. Now it's time to deploy that new version to production. You want to deploy the app smoothly and in the correct configuration.
 
@@ -34,13 +34,13 @@ To swap two slots in the Azure portal:
 
 1. Select **Swap**.
 
-1. In the **Swap** dialog box, you can select the source and target slots, and see a summary of the settings that will be applied to the swapped slots.
+1. In the **Swap** dialog box, you can select the source and target slots, and see a summary of the settings to be applied to the swapped slots.
 
     ![Screenshot of swapping two slots in the Azure portal.](../media/4-swap-slots.png)
 
 ## Understand the slot-swapping preview
 
-When you swap slots, the settings in the target slot (which is typically the production slot) are applied to the app version in the source slot before the hostnames are swapped. You might discover problems at this point. For example, if the database connection string is configured as a slot setting, the new version of the web app will use the existing production database. If you forgot to upgrade the database schema in the production database before the swap, you could see errors and exceptions when the new app version attempts to use the old schema.
+When you swap slots, the settings in the target slot (which is typically the production slot) are applied to the app version in the source slot before the hostnames are swapped. You might discover problems at this point. For example, if the database connection string is configured as a slot setting, the new version of the web app uses the existing production database. If you forgot to upgrade the database schema in the production database before the swap, you could see errors and exceptions when the new app version attempts to use the old schema.
 
 To help you discover problems before your app goes live into production, Azure App Service offers a swap-with-preview feature. When you choose this option, the swap proceeds in two phases:
 
@@ -64,10 +64,10 @@ Auto swap brings the zero-downtime and easy rollback benefits of swap-based depl
 
 When you use auto swap, you can't test the new app version in the staging slot before the swap. Auto swap mainly benefits users who want zero-downtime deployments and simple automated deployment pipelines.
 
-If you want to be able to test before you swap, you need a more complex deployment pipeline that requests the slot swap itself. Alternatively, you can deploy to a separate slot that's dedicated for testing.
+If you want to be able to test before you swap, you need a more complex deployment pipeline that requests the slot swap itself. Alternatively, you can deploy to a separate slot dedicated for testing.
 
 > [!NOTE]
-> Auto swap is not available in App Service on Linux.
+> Auto swap isn't available in App Service on Linux.
 
 ### Configure auto swap
 
