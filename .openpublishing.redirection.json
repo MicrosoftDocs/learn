@@ -47263,6 +47263,11 @@
       "source_path": "learn-pr/wwl-azure/develop-for-azure-cache-for-redis/6-knowledge-check.md",
       "redirect_url": "/azure/azure-cache-for-redis/cache-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-for-azure-cache-for-redis/7-summary.md",
+      "redirect_url": "/azure/azure-cache-for-redis/cache-overview",
+      "redirect_document_id": false
     }
   ]
 }
