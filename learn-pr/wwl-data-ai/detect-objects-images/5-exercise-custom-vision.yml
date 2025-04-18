@@ -2,8 +2,6 @@
 uid: learn.wwl.detect-objects-images.exercise-custom-vision
 title: Exercise - Detect objects in images with Azure AI Custom Vision
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Detect objects in images with Azure AI Custom Vision
   description: Exercise - Detect objects in images with Azure AI Custom Vision
   author: ivorb
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise-custom-vision.md)]
-
+

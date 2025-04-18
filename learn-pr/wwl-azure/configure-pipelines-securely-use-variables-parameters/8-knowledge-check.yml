@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-pipelines-securely-use-variables-parameters.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check."
   ms.date: 1/25/2023
   author: LuizMacedo
@@ -46,4 +44,4 @@ quiz:
       explanation: "Correct. Templates are YAML files that can contain steps, jobs, stages, or parameters that can be imported and customized in other pipeline definitions. They allow the user to avoid duplication and inconsistency, and follow the DRY (Don't Repeat Yourself) principle."
     - content: "To store sensitive information such as passwords and tokens."
       isCorrect: false
-      explanation: "Incorrect. Sensitive information should be stored in pipeline variables or variable groups, and marked as secrets, not in templates. Templates are YAML files that can be stored in a repository or a library, and can be viewed or edited by anyone who has access to them."
+      explanation: "Incorrect. Sensitive information should be stored in pipeline variables or variable groups, and marked as secrets, not in templates. Templates are YAML files that can be stored in a repository or a library, and can be viewed or edited by anyone who has access to them."

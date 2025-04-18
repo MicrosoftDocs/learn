@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-manage-ai-services.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check.
   author: wwlpublish
   ms.author: berryivor
@@ -37,4 +35,4 @@ quiz:
     - content: "HTML"
       isCorrect: false
       explanation: "Incorrect. Client apps submit JSON requests and receive JSON responses."
-
+

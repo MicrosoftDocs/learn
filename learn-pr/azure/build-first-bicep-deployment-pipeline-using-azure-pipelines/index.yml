@@ -1,13 +1,11 @@
 ### YamlMime:Module
 uid: learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: standard
-  title: Build your first Bicep deployment pipeline by using Azure Pipelines
+  title: Build Your First Bicep Deployment Pipeline by Using Azure Pipelines
   description: Build a basic deployment pipeline for Bicep infrastructure as code templates by using Azure DevOps and Azure Pipelines.
   manager: jasongroce
-  ms.date: 01/30/2023
+  ms.date: 04/01/2025
   author: mumian
   ms.author: jgao
   ms.topic: module
@@ -18,9 +16,9 @@ summary: |
   Create an automated pipeline in Azure Pipelines that securely deploys resources to Azure from Bicep code. Configure your pipeline to run on a schedule or when your configuration changes.
 abstract: |
   After completing this module, you'll be able to:
-    - Automate Bicep deployments by using a pipeline in Azure Pipelines
-    - Set up a service connection to authenticate a pipeline to Azure
-    - Select an appropriate pipeline trigger and set of tasks for a Bicep deployment
+    - Automate Bicep deployments by using a pipeline in Azure Pipelines.
+    - Set up a service connection to authenticate a pipeline to Azure.
+    - Select an appropriate pipeline trigger and set of tasks for a Bicep deployment.
 prerequisites: |
   You should be familiar with using:
 
@@ -28,7 +26,7 @@ prerequisites: |
   - Azure, including the Azure portal, subscriptions, resource groups, and resources.
   - Basic Git commands, including cloning, committing files, and pushing changes to Azure Repos.
 
-  To work through the exercises in the module, you'll need an Azure account, with the ability to create resource groups, Azure Active Directory applications, and service principals.
+  To work through the exercises in the module, you'll need an Azure account with the ability to create resource groups, Azure Active Directory applications, and service principals.
 
   You'll also need the following installed locally:
 

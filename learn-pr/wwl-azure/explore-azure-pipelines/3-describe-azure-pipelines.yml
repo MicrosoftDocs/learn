@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-azure-pipelines.describe-azure-pipelines
 title: Describe Azure Pipelines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe Azure Pipelines
   description: "Describe Azure Pipelines"
   ms.date: 05/07/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-describe-azure-pipelines.md)]
+  [!include[](includes/3-describe-azure-pipelines.md)]

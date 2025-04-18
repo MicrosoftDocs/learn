@@ -2,8 +2,6 @@
 uid: learn.azure-sql-replication.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
   title: Knowledge check
   description: "Reviewing and assessing lessons learned on change data capture (CDC) and change tracking."
@@ -59,4 +57,4 @@ quiz:
     - content: "Change tracking"
       isCorrect: true
       explanation: "Correct! Change tracking should be used to verify whether a row has changed and to get information about the change."
-
+

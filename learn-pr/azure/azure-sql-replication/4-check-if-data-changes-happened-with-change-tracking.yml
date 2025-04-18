@@ -2,8 +2,6 @@
 uid: learn.azure-sql-replication.check-if-data-changes-happened-with-change-tracking
 title: Track data changes on Azure SQL Database with change tracking
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Track data changes on Azure SQL Database with change tracking
   description: "Learning how change tracking helps track whether a changed happened on a database table and understanding the steps to enable and disable it."
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/4-check-if-data-changes-happened-with-change-tracking.md)]
-
+

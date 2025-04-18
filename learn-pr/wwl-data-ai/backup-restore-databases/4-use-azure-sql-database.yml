@@ -2,8 +2,6 @@
 uid: learn.wwl.backup-restore-databases.backup-restore-database-using-azure-sql-database
 title: Back up and restore a database for SQL Database and SQL Managed Instance
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Back up and restore a database for SQL Database and SQL Managed Instance
   description: "Back up and restore a database SQL Database and SQL Managed Instance"
   ms.date: 03/25/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-use-azure-sql-database.md)]
+  [!include[](includes/4-use-azure-sql-database.md)]

@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-relational-data-offerings.relational-data
 title: Understand relational data
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand relational data
   description: "Understand relational data"
   ms.date: 08/28/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-understand-relational-data.md)]
+  [!include[](includes/2-understand-relational-data.md)]

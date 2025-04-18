@@ -2,8 +2,6 @@
 uid: learn.wwl.detect-analyze-faces.exercise
 title: Exercise - Detect faces in Vision Studio
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Detect faces in Vision Studio
   description: "Exercise - Detect faces in Vision Studio"
   ms.date: 09/13/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-exercise.md)]
+  [!include[](includes/4-exercise.md)]

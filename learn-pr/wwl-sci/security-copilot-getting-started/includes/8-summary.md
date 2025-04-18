@@ -18,3 +18,6 @@ Now that you've completed this module, you should be able to:
 - [What is Microsoft Security Copilot?](/security-copilot/microsoft-security-copilot)
 - [Microsoft Security Copilot experiences](/security-copilot/experiences-security-copilot)
 - [Understand authentication in Microsoft Security Copilot](/security-copilot/authentication)
+- [Describe workspaces](/training/modules/security-copilot-describe-core-features/2b-describe-workspaces)
+- [Manage security compute unit usage in Security Copilot](/copilot/security/manage-usage)
+- [Microsoft Security Copilot pricing](https://azure.microsoft.com/pricing/details/microsoft-security-copilot/)

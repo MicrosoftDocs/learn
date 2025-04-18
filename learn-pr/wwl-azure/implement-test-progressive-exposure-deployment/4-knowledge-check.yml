@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-testing-progressive-exposure-deployment.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 05/27/2024
   author: wwlpublish
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. A/B testing isn't part of Continuous Delivery or a pre-requisite for Continuous Delivery. It's more the other way around."
     - content: "A/B testing is a pre-requisite and part of Continuous Delivery."
       isCorrect: false
-      explanation: "Incorrect. A/B testing isn't part of Continuous Delivery or a pre-requisite for Continuous Delivery. It's more the other way around."
+      explanation: "Incorrect. A/B testing isn't part of Continuous Delivery or a pre-requisite for Continuous Delivery. It's more the other way around."

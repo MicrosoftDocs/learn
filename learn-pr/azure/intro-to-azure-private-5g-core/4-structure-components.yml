@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-private-5g-core.structure-components
 title: Structure and components
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Structure and components
   description: "Explains how Azure Private 5G Core works by describing its structure and listing its key components."
   ms.date: 05/16/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-structure-components.md)]
+  [!include[](includes/4-structure-components.md)]

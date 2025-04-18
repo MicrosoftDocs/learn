@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-tips-tricks-teach-sc-400-information-protection-administrator.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 11/17/2023
   author: wwlpublish
@@ -48,4 +46,4 @@ quiz:
       explanation: "Incorrect: Sensitivity labels can be created by an admin through either the Microsoft Purview compliance portal UI or PowerShell."
     - content: "Administrator Feedback:"
       isCorrect: true
-      explanation: "Correct. Sensitivity labels can be created by an admin through either the Microsoft Purview compliance portal UI or PowerShell."
+      explanation: "Correct. Sensitivity labels can be created by an admin through either the Microsoft Purview compliance portal UI or PowerShell."

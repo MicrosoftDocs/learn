@@ -2,8 +2,6 @@
 uid: learn.wwl.automate-inspection-of-health.explore-service-hooks
 title: Explore service hooks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore service hooks
   description: "Explore service hooks"
   ms.date: 05/28/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-explore-service-hooks.md)]
+  [!include[](includes/4-explore-service-hooks.md)]

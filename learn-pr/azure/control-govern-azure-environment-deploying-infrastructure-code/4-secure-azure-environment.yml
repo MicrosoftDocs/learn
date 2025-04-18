@@ -2,8 +2,6 @@
 uid: learn.azure.control-govern-azure-environment-deploying-infrastructure-code.secure-azure-environment
 title: Secure your Azure environment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Secure your Azure environment
   description: Learn how to apply controls to your Azure environment to avoid manual and uncontrolled changes.
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/4-secure-azure-environment.md)]
-
+

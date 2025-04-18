@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.choose-the-right-disk-storage-for-vm-workload
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Choose the right disk storage for your virtual machine workload
   description: Azure provides a variety of disk storage options for virtual machine workloads. Identify the features of capabilities of each type to ensure your application performs optimally.
   ms.service: azure-disk-storage
@@ -42,4 +40,4 @@ units:
 - learn.choose-the-right-disk-storage-for-vm-workload.3-disk-types-for-virtual-machines
 - learn.choose-the-right-disk-storage-for-vm-workload.4-select-disk-type-for-your-workload
 - learn.choose-the-right-disk-storage-for-vm-workload.5-summary
-
+

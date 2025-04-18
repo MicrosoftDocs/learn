@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.create-composed-form-recognizer-model
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create a composed Azure AI Document Intelligence model
   description: Create a composed Document intelligence model.
   author: wwlpublish
@@ -42,4 +40,4 @@ units:
 - learn.wwl.create-composed-form-recognizer-model.summary
 badge:
   uid: learn.wwl.create-composed-form-recognizer-model.badge
-
+

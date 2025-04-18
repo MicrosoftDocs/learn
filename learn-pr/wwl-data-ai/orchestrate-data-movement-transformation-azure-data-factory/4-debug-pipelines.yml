@@ -2,8 +2,6 @@
 uid: learn.wwl.orchestrate-data-movement-transformation-azure-data-factory.debug-pipelines
 title: Debug data factory pipelines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Debug data factory pipelines
   description: "Debug data factory pipelines"
   ms.date: 04/19/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-debug-pipelines.md)]
+  [!include[](includes/4-debug-pipelines.md)]

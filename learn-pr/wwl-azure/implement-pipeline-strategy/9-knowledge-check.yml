@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-pipeline-strategy.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 05/26/2024
   author: wwlpublish
@@ -50,4 +48,4 @@ quiz:
       explanation: "Correct. The supported source control types in YAML are Azure Repos Git, BitBucket Cloud, GitHub, GitHub Enterprise Server."
     - content: "Other Git (generic)."
       isCorrect: false
-      explanation: "Incorrect. The supported source control types in YAML are Azure Repos Git, BitBucket Cloud, GitHub, GitHub Enterprise Server."
+      explanation: "Incorrect. The supported source control types in YAML are Azure Repos Git, BitBucket Cloud, GitHub, GitHub Enterprise Server."

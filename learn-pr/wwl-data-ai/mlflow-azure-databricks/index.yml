@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.mlflow-azure-databricks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use MLflow in Azure Databricks
   description: Learn how to use MLflow in Azure Databricks to track machine learning experiments and deploy models.
   author: wwlpublish
@@ -40,4 +38,4 @@ units:
 - learn.wwl.mlflow-azure-databricks.summary
 badge:
   uid: learn.wwl.mlflow-azure-databricks.badge
-
+

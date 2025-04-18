@@ -3,8 +3,6 @@ uid: learn.intro-to-azure-service-fabric.introduction
 title: Introduction
 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to Azure Service Fabric
   description: Learn about Azure Service Fabric, a distributed systems platform for deploying and managing microservices and containers.
   ms.date: 01/03/2024
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-
+

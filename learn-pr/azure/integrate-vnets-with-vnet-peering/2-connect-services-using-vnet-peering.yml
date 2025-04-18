@@ -2,8 +2,6 @@
 uid: learn.integrate-vnets-with-vnet-peering.2-connect-services-using-vnet-peering
 title: Connect services by using virtual network peering
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Connect services by using virtual network peering
   description: Connect services by using virtual network peering
   ms.date: 10/14/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/2-connect-services-using-vnet-peering.md)]
+  [!include[](includes/2-connect-services-using-vnet-peering.md)]

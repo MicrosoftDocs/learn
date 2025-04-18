@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Ingest streaming data using Azure Stream Analytics and Azure Synapse Analytic
   description: "Azure Stream Analytics provides a real-time data processing engine that you can use to ingest streaming event data into Azure Synapse Analytics for further analysis and reporting."
   ms.date: 12/12/2024
@@ -43,4 +41,4 @@ units:
 - learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse.knowledge-check
 - learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse.summary
 badge:
-  uid: learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse.badge
+  uid: learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse.badge

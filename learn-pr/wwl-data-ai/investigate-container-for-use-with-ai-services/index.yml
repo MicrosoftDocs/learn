@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.investigate-container-for-use-with-ai-services
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deploy Azure AI services in containers
   description: Learn to deploy Azure AI services in containers
   author: wwlpublish
@@ -46,4 +44,4 @@ units:
 - learn.wwl.investigate-container-for-use-with-ai-services.summary
 badge:
   uid: learn.wwl.investigate-container-for-use-with-ai-services.badge
-
+

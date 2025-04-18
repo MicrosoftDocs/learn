@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 08/01/2024
   author: wwlpublish
@@ -49,4 +47,4 @@ quiz:
     - content: "Hybrid identity"
       isCorrect: false
       explanation: "Incorrect. A hybrid identity refers to a common user identity for authentication and authorization to all resources, regardless of location."
-
+

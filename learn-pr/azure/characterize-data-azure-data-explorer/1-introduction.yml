@@ -2,8 +2,6 @@
 uid: learn.azure.characterize-dataset-azure-data-explorer.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: "Introduction to how to characterize data using Azure Data Explorer."
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/1-introduction.md)]

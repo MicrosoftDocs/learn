@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure-well-architected-introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to the Microsoft Azure Well-Architected Framework
   description: Learn how using key principles throughout your cloud architecture can help you design and build a solid architectural foundation that you can continuously improve.
   ms.date: 04/17/2023
@@ -39,4 +37,4 @@ units:
 - learn.azure-well-architected-introduction.8-summary
 badge:
   uid: learn.azure-well-architected-introduction.badge
-
+

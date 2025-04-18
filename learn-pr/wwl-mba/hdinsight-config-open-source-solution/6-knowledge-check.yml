@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions.6-knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 04/06/2024
   author: wwlpublish
@@ -47,4 +45,4 @@ quiz:
       explanation: "Autosize or Autobot isn't a feature of a HDInsight Cluster."
     - content: "Autobot"
       isCorrect: false
-      explanation: "This option isn't available in a HDInsight Cluster."
+      explanation: "This option isn't available in a HDInsight Cluster."

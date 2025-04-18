@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.work-with-form-recognizer.knowledge-check-summary
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   author: wwlpublish
   ms.author: berryivor
@@ -51,4 +49,4 @@ quiz:
     - content: "Nothing else is required."
       isCorrect: false
       explanation: "Incorrect: Labeled training requires JSON files to be provided when training a model, or those JSON files need to be generated before training your model."
-
+

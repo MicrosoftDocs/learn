@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.migrate-modernize-explore-azure-governance-manageability.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 01/11/2024
   author: wwlpublish
@@ -48,4 +46,4 @@ quiz:
       explanation: "Incorrect. Defender for Cloud continually assesses resources, subscriptions, and organization for security issues. It then aggregates all the findings into a single \"secure score\" of a security situation: the higher the score, the lower the identified risk level."
     - content: "Security alerts"
       isCorrect: false
-      explanation: "Incorrect. Defender for Cloud continually assesses resources, subscriptions, and organization for security issues. It then aggregates all the findings into a single \"secure score\" of a security situation: the higher the score, the lower the identified risk level."
+      explanation: "Incorrect. Defender for Cloud continually assesses resources, subscriptions, and organization for security issues. It then aggregates all the findings into a single \"secure score\" of a security situation: the higher the score, the lower the identified risk level."

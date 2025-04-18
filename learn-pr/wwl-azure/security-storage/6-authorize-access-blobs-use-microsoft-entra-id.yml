@@ -2,8 +2,6 @@
 uid: learn.wwl.security-storage.authorize-access-blobs-use-microsoft-entra-id
 title: Select and configure an appropriate method for access to Azure Blobs
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Select and configure an appropriate method for access to Azure Blobs
   description: "Select and configure an appropriate method for access to Azure Blobs"
   ms.date: 06/25/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/6-authorize-access-blobs-use-microsoft-entra-id.md)]
+  [!include[](includes/6-authorize-access-blobs-use-microsoft-entra-id.md)]

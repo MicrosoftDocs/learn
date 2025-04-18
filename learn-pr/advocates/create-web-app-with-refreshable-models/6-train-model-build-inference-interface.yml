@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.create-web-app-with-refreshable-models.6-train-model-build-inference-interface
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Train your machine learning model and build the web interface to use it
   description: Exercise - Train your machine learning model and build the web interface to use it
   author: GitHubber17
@@ -17,4 +15,4 @@ title: Exercise -  Train your machine learning model and build the web interface
 durationInMinutes: 15
 content: |
   [!include[](includes/6-train-model-build-inference-interface.md)]
-
+

@@ -2,8 +2,6 @@
 uid: learn.azure.cna-stream-iot-data.3-exercise-set-up-azure-iot-central
 title: Exercise - Set up Azure IoT Central
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Set up Azure IoT Central
   description: Setup of Azure IoT Central
   ms.date: 04/05/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-set-up-azure-iot-central.md)]
-
+

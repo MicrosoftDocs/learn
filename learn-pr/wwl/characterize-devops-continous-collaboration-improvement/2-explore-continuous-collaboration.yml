@@ -2,8 +2,6 @@
 uid: learn.wwl.characterize-devops-continous-collaboration-improvement.explore-continuous-collaboration
 title: Explore Continuous Collaboration
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Continuous Collaboration
   description: "Explore Continuous Collaboration"
   ms.date: 04/16/2021
@@ -13,4 +11,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-explore-continuous-collaboration.md)]
+  [!include[](includes/2-explore-continuous-collaboration.md)]

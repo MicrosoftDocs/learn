@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.provide-disaster-recovery-replicate-storage-data.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Summary
   ms.date: 11/03/2023
   author: stevenmatthew
@@ -47,4 +45,4 @@ quiz:
     - content: "After you fail over, the data is still protected with geo-replication."
       isCorrect: false
       explanation: "The storage account is updated to use locally redundant storage (LRS). You'll need to update the replication type to geo-redundant storage like geographically redundant storage (GRS) or GZRS."
-
+

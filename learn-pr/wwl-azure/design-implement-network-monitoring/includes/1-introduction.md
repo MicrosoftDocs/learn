@@ -1,18 +1,20 @@
-Network engineers monitor and analyze network infrastructures. There are several tools in Azure to ensure the network resources are in good health. For example, suppose you're tasked with diagnosing network connectivity issues for a virtual machine. You need to learn how to troubleshoot and ensure reliable connections to the virtual machine.
+Azure Monitor and Azure Network Watcher are powerful tools provided by Microsoft Azure to monitor, diagnose, and gain insights into your cloud and on-premises environments.
 
-In this module, you learn how to monitor and gain insights into network traffic. These insights are provided by Network Watcher and Azure Monitor.
+Imagine you're a cloud engineer for a large organization. The organization's applications and services are now running on various virtual machines and containers, and it's your responsibility to ensure their availability and performance. 
+
+You're facing challenges in collecting, analyzing, understanding, and responding proactively to system events. You need a comprehensive monitoring solution to avoid downtime and user dissatisfaction.
 
 ## Learning objectives
 
-In this module, you learn to:
+The topics covered in this module include:
+- Understanding Azure Monitor capabilities.
+- Monitoring a Load Balancer resource with Azure Monitor.
+- Understanding Azure Network Watcher capabilities.
 
- -  Configure a monitoring environment for networking.
- -  Configure network health alerts and logging.
- -  Create and configure a Connection Monitor instance.
- -  Configure and use Traffic Analytics.
- -  Configure Network Security Group flow logs.
- -  Enable and configure diagnostic logging.
- -  Configure Azure Network Watcher.
+After completing this module, you're able to: 
+- Understand the features and functionalities of Azure Monitor and Azure Network Watcher. 
+- Set up and monitor an internal load balancer using Azure Monitor. 
+- Use Azure Network Watcher to monitor and diagnose network conditions. 
 
 ## Prerequisites
 
@@ -20,3 +22,4 @@ In this module, you learn to:
  -  You should have experience with network connectivity methods, such as VPN or WAN.
  -  You should have experience with the Azure portal and Azure PowerShell.
  
+

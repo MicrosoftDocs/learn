@@ -2,8 +2,6 @@
 uid: learn.build-serverless-api-with-functions-api-management.5-exercise-import-additional-functions-existing-api-gateway
 title: Exercise - Add another Azure Functions app to an existing API
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Add another Azure Functions app to an existing API
   description: In this unit, you will add an second function to a product in Azure API Management and test your integrated API.
   ms.date: 11/03/2023
@@ -15,4 +13,4 @@ interactive: bash
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-import-additional-functions-existing-api-gateway.md)]
-
+

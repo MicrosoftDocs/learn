@@ -2,8 +2,6 @@
 uid: learn.wwl.get-tips-tricks-for-teach-az-500-microsoft-azure-security-technologies.understand-objective-domains
 title: Understand the objective domains
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand the objective domains
   description: "Understand the objective domains"
   ms.date: 11/15/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-understand-objective-domains.md)]
+  [!include[](includes/2-understand-objective-domains.md)]

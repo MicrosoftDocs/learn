@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-azure-app-services.backup-app-service
 title: Back up and restore your App Service app
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Back up and restore your App Service app
   description: "Back up and restore your App Service app"
   ms.date: 12/18/2024

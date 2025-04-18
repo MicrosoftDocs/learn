@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.plan-form-recognizer-solution
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Plan an Azure AI Document Intelligence solution
   description: Learn how to use Azure AI Document Intelligence to build solutions that analyze forms and output data for storage or further processing.
   author: ivorb
@@ -40,4 +38,4 @@ units:
 - learn.wwl.plan-form-recognizer-solution.summary
 badge:
   uid: learn.wwl.plan-form-recognizer-solution.badge
-
+

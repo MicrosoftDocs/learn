@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-log-analytics-workspace-microsoft-defender-cloud.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 10/16/2024
   author: wwlpublish
@@ -61,4 +59,4 @@ quiz:
       explanation: "Correct. Organizations can access and query data stored in a Log Analytics workspace using the Log Analytics Query Language (KQL). KQL is a query language designed for searching, analyzing, and visualizing data in Log Analytics workspaces."
     - content: "By exporting data to external storage"
       isCorrect: false
-      explanation: "Incorrect. While data can be exported from a Log Analytics workspace, it is not the primary method for accessing and querying data within the workspace."
+      explanation: "Incorrect. While data can be exported from a Log Analytics workspace, it is not the primary method for accessing and querying data within the workspace."

@@ -2,8 +2,6 @@
 uid: learn.wwl.monitor-maintain-azure-active-directory.monitor-security-posture-identity-secure-score
 title: Monitor security posture with Identity Secure Score
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Monitor security posture with Identity Secure Score
   description: "Monitor security posture with Identity Secure Score"
   ms.date: 12/23/2024

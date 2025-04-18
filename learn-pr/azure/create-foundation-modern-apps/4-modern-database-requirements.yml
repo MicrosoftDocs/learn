@@ -2,8 +2,6 @@
 uid: learn.azure.create-foundation-modern-apps.modern-database-requirements
 title: Address modern database requirements with Azure SQL Database
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Address modern database requirements with Azure SQL Database
   description: Dive deeper into some of the requirements of databases to support modern applications. Give an overview of Azure SQL Database and how it addresses those requirements. Revisit the scenario and discuss the elements that will be used from Azure SQL Database.
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/4-modern-database-requirements.md)]
-
+

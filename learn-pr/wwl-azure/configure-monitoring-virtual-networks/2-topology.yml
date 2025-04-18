@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-monitoring-virtual-networks.topology
 title: Topology
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Topology
   description: "Topology"
   ms.date: 10/25/2023
@@ -14,4 +12,4 @@ metadata:
   - references_regions
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-topology.md)]
+  [!include[](includes/2-topology.md)]

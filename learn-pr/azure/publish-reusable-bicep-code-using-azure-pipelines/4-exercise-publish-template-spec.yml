@@ -2,8 +2,6 @@
 uid: learn.azure.publish-reusable-bicep-code-using-azure-pipelines.exercise-publish-template-spec
 title: Exercise - Publish a template spec
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Publish a template spec
   description: Create an Azure Pipelines pipeline to publish a template spec to Azure.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/4-exercise-publish-template-spec.md)]
-
+

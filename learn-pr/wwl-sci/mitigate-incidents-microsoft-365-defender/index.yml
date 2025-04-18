@@ -3,8 +3,8 @@ uid: learn.wwl.mitigate-incidents-microsoft-365-defender
 metadata:
   title: Mitigate incidents using Microsoft Defender
   description: "Mitigate incidents using Microsoft Defender"
-  ms.date: 02/25/2025
-  author: wwlpublish
+  ms.date: 04/4/2025
+  author: KenMAG
   ms.author: kelawson
   ms.topic: module
   ms.service: microsoft-365-security

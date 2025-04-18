@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.generate-images-azure-openai
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Generate images with Azure OpenAI Service
   description: Use DALL-E in Azure OpenAI service to generate images
   author: ivorb
@@ -45,4 +43,4 @@ units:
 - learn.wwl.generate-images-azure-openai.summary
 badge:
   uid: learn.wwl.generate-images-azure-openai.badge
-
+

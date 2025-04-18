@@ -4,13 +4,13 @@ In this unit, you learn how Azure Front Door works and how it:
 - Helps protect your cloud-based apps.
 - Provides high-bandwidth content.
 
-Azure Front Door optimizes access times to content. In the following diagram, users are connecting to content hosted in the custom domain `contoso.com`. Azure Front Door is implemented at multiple edge locations. Azure Front Door provides CDN features that optimize access to backend contents, while the firewall helps to secure that access.
+Azure Front Door optimizes access times to content. In the following diagram, users are connecting to content hosted in the custom domain `contoso.com`. Azure Front Door is implemented at multiple edge locations. Azure Front Door provides CDN features that optimize access to backend content, while the firewall helps to secure that access.
 
 :::image type="content" source="../media/front-door-standard-premium.png" alt-text="Diagram depicting the Azure Front Door Standard/Premium architecture as previously described.":::
 
 ## How Azure Front Door optimizes content delivery
 
-Azure Front Door uses the anycast protocol with split TCP at layer 7 to route HTTP/S client requests to the most available and fastest application backend. The way Azure Front Door routes requests depend on the routing method you select, and on backend health. Azure Front Door supports four routing methods, as the following table describes:
+Azure Front Door uses the anycast protocol with split TCP at layer 7 to route HTTP/S client requests to the most available and fastest application backend. The way Azure Front Door routes requests depend on the routing method you select and on backend health. Azure Front Door supports four routing methods, as the following table describes:
 
 | Routing method   | Description                                                  |
 | ---------------- | ------------------------------------------------------------ |
@@ -24,7 +24,7 @@ Azure Front Door also provides backend health monitoring options. Azure Front Do
 > [!NOTE]
 > Azure Front Door is resilient to failures, including failures of an entire Azure region due to the many edge locations strategically placed around the world.
 
-A *CDN* is a distributed collection of web servers. These servers deliver web-based content to users. To help minimize latency, CDN's use point-of-presence locations that are next to users, to cache content.
+A *CDN* is a distributed collection of web servers. These servers deliver web-based content to users. To help minimize latency, CDN's use point-of-presence locations that are next to users to cache content.
 
 Azure Front Door provides the following key CDN features:
 
@@ -41,8 +41,8 @@ Azure Front Door provides web-application firewall capabilities to help protect 
 
 Azure Front Door operates at the network's edge, close to potential attacks. This helps prevent attacks before they can enter your network. Azure Front Door's web application firewall is based on policies you can associate with one or more instances of Azure Front Door. These firewall policies consist of:
 
-- *Managed rule sets*, which are a collection of preconfigured rules
-- Custom rules that you can configure
+- *Managed rule sets*, which are a collection of preconfigured rules.
+- Custom rules that you can configure.
 
 > [!NOTE]
 > If present, custom rules are processed first.
@@ -52,7 +52,7 @@ A rule consists of:
 - A *condition*, which determines whether a rule applies to traffic.
 - A *priority*, which determines the order in which a rule gets processed, based on importance.
 - An *action*, which can be Allow, Block, Log, or Redirect.
-- A *mode*. There are two modes:
+- A *mode*, which there are two:
   - *Detection*: Azure Web Application Firewall only monitors and logs when in this mode. However, it takes no other action.
   - *Prevention*: Azure Web Application Firewall takes the defined action while in this mode.
 

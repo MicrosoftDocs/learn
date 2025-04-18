@@ -2,8 +2,6 @@
 uid: learn.wwl.analyze-video.understand-video-indexer-capabilities
 title: Understand Azure Video Indexer capabilities
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand Azure Video Indexer capabilities
   description: Understand Azure Video Indexer capabilities
   author: wwlpublish
@@ -17,4 +15,4 @@ labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/2-understand-video-indexer-capabilities.md)]
-
+

@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.extract-insights-using-azure-ai-language-azure-database-postgresql.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   author: wwlpublish
   ms.author: calopez
@@ -51,4 +49,4 @@ quiz:
     - content: "Country of residence."
       isCorrect: false
       explanation: "Incorrect. Somebody's country of residence is too broad to identify them uniquely, so it isn't PII. A primary key identifier, while very specific, is only meaningful in its database or application of origin. A phone number, however, typically identifies an individual or household, and so is PII."
-
+

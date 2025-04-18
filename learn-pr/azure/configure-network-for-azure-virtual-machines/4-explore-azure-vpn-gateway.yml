@@ -2,8 +2,6 @@
 uid: learn.configure-the-network-for-your-virtual-machines.4-explore-azure-vpn-gateway
 title: Explore Azure VPN Gateway
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Azure VPN Gateway
   description: Explore Azure VPN Gateway
   ms.date: 11/01/2023
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/4-explore-azure-vpn-gateway.md)]
-
+

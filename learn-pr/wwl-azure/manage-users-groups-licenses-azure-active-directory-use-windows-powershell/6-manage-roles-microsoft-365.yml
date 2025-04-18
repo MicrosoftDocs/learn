@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-users-groups-licenses-azure-active-directory-use-windows-powershell.manage-roles-microsoft-365
 title: Manage roles in Microsoft 365 by using Windows PowerShell
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage roles in Microsoft 365 by using Windows PowerShell
   description: "Manage roles in Microsoft 365 by using Windows PowerShell"
   ms.date: 10/26/2022
@@ -16,4 +14,4 @@ labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/6-manage-roles-microsoft-365.md)]
-
+

@@ -2,8 +2,6 @@
 uid: learn.azure.manage-multiple-environments-using-bicep-azure-pipelines.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: Summary for managing multiple environments by using Bicep and Azure Pipelines.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]
-
+

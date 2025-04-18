@@ -1,5 +1,3 @@
-
-
 Intune includes some features in the Microsoft Intune admin center to help monitor and manage your device configuration profiles. For example, you can check the status of a profile, see which devices are assigned to it, and update the properties of a profile.
 
 ### View existing profiles

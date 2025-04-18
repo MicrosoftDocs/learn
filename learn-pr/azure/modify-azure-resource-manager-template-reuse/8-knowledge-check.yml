@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.resource-manager-template-reuse.8-knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge.
   ms.date: 03/05/2025
   author: mumian
@@ -55,4 +53,4 @@ quiz:
     - content: "All of these sections."
       isCorrect: true
       explanation: "Template expressions can be used in any section of an ARM template."
-
+

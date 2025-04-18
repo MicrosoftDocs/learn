@@ -2,8 +2,6 @@
 uid: learn.startups.build-team.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Gain an overview of how to build a high-performing startup team. See topics like attributes of successful teams and how to use mentors.
   ms.date: 06/06/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
-
+

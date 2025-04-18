@@ -2,8 +2,6 @@
 uid: learn.app-service-autoscale-rules.5-knowledge-check-identify-factors
 title: Knowledge check - Identify factors for implementing autoscaling
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check - Identify factors for implementing autoscaling
   description: Knowledge check - Identify factors for implementing autoscaling
   ms.date: 03/24/2024
@@ -35,4 +33,4 @@ quiz:
       explanation: "Incorrect. The autoscale rule can run again without scaling in first, but only after the *cool-down* period for the rule expires."
     - content: "The autoscale rule doesn't trigger the action again until the *cool-down* period for the rule expires. If the disk queue length is still over 10 at that time, the action is performed."
       isCorrect: true
-      explanation: "Correct."
+      explanation: "Correct."

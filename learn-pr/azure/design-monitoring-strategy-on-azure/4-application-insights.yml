@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-monitoring-strategy-on-azure.5-application-insights
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Monitor applications by using Application Insights
   description: Learn how to monitor applications by using Azure Monitor Application Insights.
   ms.date: 01/22/2025
@@ -38,4 +36,4 @@ quiz:
     - content: View the Performance screen in Application Insights.
       isCorrect: false
       explanation: The Performance page shows many application operations, but doesn't show data from different geographic locations.
-
+

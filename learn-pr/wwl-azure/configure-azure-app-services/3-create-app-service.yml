@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-azure-app-services.create-app-service
 title: Create an app with App Service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create an app with App Service
   description: "Create an app with App Service"
   ms.date: 12/18/2024

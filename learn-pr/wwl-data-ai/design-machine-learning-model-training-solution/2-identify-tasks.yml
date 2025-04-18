@@ -2,8 +2,6 @@
 uid: learn.wwl.design-machine-learning-model-training-solution.identify-tasks
 title: Define the problem
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Define the problem
   description: Define the problem
   author: wwlpublish
@@ -17,4 +15,4 @@ labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/2-identify-tasks.md)]
-
+

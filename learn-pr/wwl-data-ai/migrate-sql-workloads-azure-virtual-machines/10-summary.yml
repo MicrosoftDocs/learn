@@ -2,8 +2,6 @@
 uid: learn-wwl.migrate-sql-workloads-azure-virtual-machines.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 08/02/2024
@@ -13,4 +11,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 2
 content: |
-  [!include[](includes/10-summary.md)]
+  [!include[](includes/10-summary.md)]

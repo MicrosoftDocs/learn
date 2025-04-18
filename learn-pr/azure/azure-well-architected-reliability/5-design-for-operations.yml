@@ -2,8 +2,6 @@
 uid: learn.azure-well-architected-reliability.design-for-operations
 title: Design for operations
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design for operations
   description: Learn strategies for designing your Azure workload to support operations.
   ms.date: 12/18/2023
@@ -52,5 +50,3 @@ quiz:
     - content: "By running a security audit."
       isCorrect: false
       explanation: "Incorrect. A security audit is a good way to ensure that the workload is secure, but won't prove that the workload can operate in a degraded state."
-
-

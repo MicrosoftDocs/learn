@@ -2,8 +2,6 @@
 uid: learn.migrate-vmware-workloads-on-premises-azure-vmware-solution.migrate-vm-workloads
 title: Migrate virtual machine workloads into Azure VMware Solution
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Migrate virtual machine workloads into Azure VMware Solution
   description: Migrate virtual machine workloads into Azure VMware Solution.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/6-migrate-vm-workloads.md)]
-
+

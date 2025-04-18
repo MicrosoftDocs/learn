@@ -2,8 +2,6 @@
 uid: learn.azure.deploy-resources-different-scopes.exercise-deploy-subscription-scoped-resource
 title: Exercise - Deploy a subscription-scoped resource
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Deploy a subscription-scoped resource
   description: Learn how to create Bicep files that deploy resources to a subscription.
@@ -18,4 +16,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/4-exercise-deploy-subscription-scoped-resource.md)]
-
+

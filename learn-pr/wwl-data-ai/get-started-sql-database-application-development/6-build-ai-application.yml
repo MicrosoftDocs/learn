@@ -2,8 +2,6 @@
 uid: learn-wwl.get-started-sql-database-application-development.build-ai-application
 title: Understand AI capabilities for Azure SQL Database
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand AI capabilities for Azure SQL Database
   description: "Learn the AI capabilities for Azure SQL Database."
   ms.date: 10/02/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/6-build-ai-application.md)]
+  [!include[](includes/6-build-ai-application.md)]

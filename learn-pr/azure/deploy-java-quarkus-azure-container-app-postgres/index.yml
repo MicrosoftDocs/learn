@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.deploy-java-quarkus-azure-container-app-postgres
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deploy a Quarkus application to Azure Container Apps
   description: Create a Quarkus application, connect it to a PostgreSQL database, and then deploy it to Azure Container Apps.
   ms.date: 03/06/2025
@@ -49,4 +47,4 @@ units:
 - learn.azure.deploy-java-quarkus-azure-container-app-postgres.9-summary
 badge:
   uid: learn.azure.deploy-java-quarkus-azure-container-app-postgres.badge
-
+

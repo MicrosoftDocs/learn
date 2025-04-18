@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.translate-text-with-translation-service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Fundamentals of language translation '
   description: "Use Azure AI Speech and Azure AI Translator to translate text and speech."
   ms.date: 09/13/2024
@@ -40,4 +38,4 @@ units:
 - learn.wwl.translate-text-with-translation-service.knowledge-check
 - learn.wwl.translate-text-with-translation-service.summary
 badge:
-  uid: learn.wwl.translate-text-with-translation-service.badge
+  uid: learn.wwl.translate-text-with-translation-service.badge

@@ -2,8 +2,6 @@
 uid: learn.azure.get-started-azure-advisor.9-summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary and resources.
   ms.date: 10/20/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/9-summary.md)]
+  [!include[](includes/9-summary.md)]

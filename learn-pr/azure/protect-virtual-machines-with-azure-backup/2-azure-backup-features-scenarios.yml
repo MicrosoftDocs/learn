@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.protect-virtual-machines-with-azure-backup.2-azure-backup-features-scenarios
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Azure Backup features and scenarios
   description: Learn how Azure Backup works, and some of the supported use cases for it.
   ms.date: 09/05/2024
@@ -14,4 +12,4 @@ durationInMinutes: 5
 content: |
   [!include[](includes/2-azure-backup-features-scenarios.md)]
   
-
+

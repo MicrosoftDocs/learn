@@ -2,8 +2,6 @@
 uid: learn.wwl.analyze-images-computer-vision.exercise
 title: Exercise - Analyze images in Azure AI Foundry portal
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Analyze images in Azure AI Foundry portal
   description: Exercise - Analyze images in Azure AI Foundry portal
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 20
 content: |
   [!include[](includes/4-exercise.md)]
-
+

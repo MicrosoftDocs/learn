@@ -5,8 +5,8 @@ In this exercise, set up your F# development environment by installing the .NET 
 To get started writing code with F#, install the .NET SDK.
 
 1. [Download and install .NET SDK](https://dotnet.microsoft.com/download/dotnet) for your operating system.
-1. Verify that the .NET SDK has installed successfully
-    1. Open the terminal
+1. Verify that the .NET SDK is installed successfully.
+    1. Open the terminal.
     1. Enter the following .NET CLI command
 
         ```dotnetcli
@@ -16,7 +16,7 @@ To get started writing code with F#, install the .NET SDK.
     1. The following output is similar to what displays in the console. Your version might be different, but as long as the version information is output to the console, it means everything is installed correctly.
 
         ```console
-        5.0.302
+        9.0.201
         ```
 
 ## Install Visual Studio Code & Ionide F# extension

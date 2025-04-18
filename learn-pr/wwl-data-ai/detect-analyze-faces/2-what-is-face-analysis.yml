@@ -2,8 +2,6 @@
 uid: learn.wwl.detect-analyze-faces.understand-face-analysis
 title: Understand facial analysis
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand facial analysis
   description: "Understand facial analysis"
   ms.date: 09/13/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 2
 content: |
-  [!include[](includes/2-what-is-face-analysis.md)]
+  [!include[](includes/2-what-is-face-analysis.md)]
