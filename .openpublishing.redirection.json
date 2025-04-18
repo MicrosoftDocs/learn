@@ -47253,6 +47253,11 @@
       "source_path": "learn-pr/wwl-azure/develop-for-azure-cache-for-redis/4-interact-redis-api.md",
       "redirect_url": "/azure/azure-cache-for-redis/cache-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-for-azure-cache-for-redis/1-introduction.md",
+      "redirect_url": "/azure/azure-cache-for-redis/cache-overview",
+      "redirect_document_id": false
     }
   ]
 }
