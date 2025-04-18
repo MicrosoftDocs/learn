@@ -36,7 +36,7 @@ search_key = searchConnection.key
 
 # Initialize prompt with system message
 prompt = [
-    {"role": "system", "content": "You are a helful AI assistant."}
+    {"role": "system", "content": "You are a helpful AI assistant."}
 ]
 
 # Add a user input message to the prompt
@@ -109,7 +109,7 @@ using OpenAI.Chat;
     // Initialize prompt with system message
     var prompt = new List<ChatMessage>()
     {
-        new SystemChatMessage("You are a helful AI assistant.")
+        new SystemChatMessage("You are a helpful AI assistant.")
     };
     
     // Add a user input message to the prompt
