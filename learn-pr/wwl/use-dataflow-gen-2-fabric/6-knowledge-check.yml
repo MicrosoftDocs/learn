@@ -2,6 +2,7 @@
 uid: learn.wwl.ingest-dataflows-gen2-fabric.knowledge-check
 title: Module assessment
 metadata:
+  hidden_question_numbers: ["4F8AA18B_22","4F8AA18B_26","4F8AA18B_112","4F8AA18B_140"]
   ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
