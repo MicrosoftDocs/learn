@@ -27,7 +27,9 @@ jobs:
 This example is using the `github.ref` context to check the branch that triggered the workflow. If the branch is `main`, the runner is executed and prints out "Deploying to production server on branch $GITHUB_REF". The default environment variable `$GITHUB_REF` is used in the runner to refer to the branch. Notice that default environment variables are all uppercase where context variables are all lowercase.
 
 <!-- INFOMAGNUS UPDATES for sub OD 1.4.2 go here. Source Material: https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs --> 
+
 ## Identify the available contextual information in a workflow
+
 Different contexts are available throughout a workflow run. For example, the secrets context may only be used at certain places within a job.
 
 In addition, some functions may only be used in certain places. For example, the hashFiles function is not available everywhere.
@@ -67,11 +69,12 @@ jobs.<job_id>.steps.with	|	github, needs, strategy, matrix, job, runner, env, va
 jobs.<job_id>.steps.working-directory	|	github, needs, strategy, matrix, job, runner, env, vars, secrets, steps, inputs	|	hashFiles
 jobs.<job_id>.strategy	|	github, needs, vars, inputs	|	None
 jobs.<job_id>.timeout-minutes	|	github, needs, strategy, matrix, vars, inputs	|	None
-jobs.<job_id>.with.<with_id>	|	github, needs, strategy, matrix, inputs, vars	|	None
+jobs.<job_id>.with.<with_id>	|	github, needs, strategy, matrix, inputs, vars	|	Nonehttps://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 on.workflow_call.inputs.<inputs_id>.default	|	github, inputs, vars	|	None
 on.workflow_call.outputs.<output_id>.value	|	github, jobs, vars, inputs	|	None
 
 <!-- INFOMAGNUS 1.4.2 END
+
 ## Custom environment variables
 
 Similar to using default environment variables, you can use custom environment variables in your workflow file. To create a custom variable, you need to define it in your workflow file using the `env` context. If you want to use the value of an environment variable inside a runner, you can use the runner operating system's normal method for reading environment variables.
@@ -94,17 +97,58 @@ jobs:
 
 You can define environment variables that are scoped for:
 
-*The entire workflow utilixing env at the top level of the workflow file.
+*The entire workflow utilizing `env` at the top level of the workflow file.
 *The contents of a job within a workflow, by utilizing the jobs.<job_id>.env . 
 *A specific step within a job, by using jobs.<job_id>.steps[*].env .
 
 Below is an example displaying all three scenarios in a workflow file:
 
+```yml
+name: Greeting on variable day
+
+on:
+  workflow_dispatch
+
+env:
+  DAY_OF_WEEK: Monday
+
+jobs:
+  greeting_job:
+    runs-on: ubuntu-latest
+    env:
+      Greeting: Hello
+    steps:
+      - name: "Say Hello Mona it's Monday"
+        run: echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
+        env:
+          First_Name: Mona
+```
+
 
 ## Use default context in a workflow
+
+Default environment variables are set by GitHub and not defined in a workflow.  They are thus available to use in a workflow.  Most of these variables, other than `CI`, begin with `GITHUB_*` or `RUNNER_*`.  The latter two types cannot be overwritten.  As well, these default variables have a corresponding, and similarly named, context property. For instance, the `RUNNER_*` series of default variables have a matching context property of `runner.*`.  An example of accessing this variable in a workflow levaraging these methods can be viewed below:
+
+```yml
+on: workflow_dispatch
+
+jobs:
+  if-Windows-else:
+    runs-on: macos-latest
+    steps:
+      - name: condition 1
+        if: runner.os == 'Windows'
+        run: echo "The operating system on the runner is $env:RUNNER_OS."
+      - name: condition 2
+        if: runner.os != 'Windows'
+        run: echo "The operating system on the runner is not Windows, it's $RUNNER_OS."
+```
+
+For more information see [Default environement variables](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables#default-environment-variables)
 ## Pass custom environment variables to a workflow
 <!-- INFOMAGNUS UPDATES for sub OD 1.6.5 go here. Source Material: Infomagnus team to find source material and cite sources when they update material   https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables -->
 ## Add environment protections
+
 <!-- INFOMAGNUS END -->
 ## Scripts in your workflow
 
@@ -216,6 +260,7 @@ GET /repos/{owner}/{repo}/actions/runs/{run_id}/logs
 ```
 
 <!-- INFOMAGNUS UPDATES for sub OD 1.4.4 go here. Source Material: Infomagnus team to find source material and cite sources when they update material   https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/generating-an-installation-access-token-for-a-github-app  ,  https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/authenticating-as-a-github-app-installation -->
+
 ## Identify when to use an an installation token from a GitHub App
 
 Once your GitHub App is installed on an account, you can authenticate it as an app installation using the 'installation access token' for REST and GraphQL API requests. This allows the app to access resources owned by the installation, assuming the app was granted the necessary repository access and permissions. REST or GraphQL API requests made by an app installation are attributed to the app.  In the following example, you replace `INSTALLATION_ACCESS_TOKEN` with the installation access token:
