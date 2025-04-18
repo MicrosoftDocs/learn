@@ -5695,3 +5695,8 @@ achievements:
   title: 'AZ-204: Implement caching for solutions'
   summary: Learn how to improve the performance and scalability of your applications by integrating Azure Cache for Redis and Azure Content Delivery Network in to your solution.
   iconUrl: /training/achievements/integrate-content-delivery.svg
+- uid: learn.wwl.develop-for-azure-cache-for-redis.badge
+  type: badge
+  title: Develop for Azure Cache for Redis
+  summary: Learn how to configure Azure Cache for Redis, interact with the cache, and connect an application to Azure Cache for Redis by using .NET.
+  iconUrl: /training/achievements/azure-cache-redis.svg
