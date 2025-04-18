@@ -38,7 +38,6 @@ subjects:
 units:
 - learn.wwl.develop-for-azure-cache-for-redis.introduction
 - learn.wwl.develop-for-azure-cache-for-redis.explore
-- learn.wwl.develop-for-azure-cache-for-redis.configure
 - learn.wwl.develop-for-azure-cache-for-redis.interact-by-using-net
 - learn.wwl.develop-for-azure-cache-for-redis.exercise-connect-app-to-by-using-net-core
 - learn.wwl.develop-for-azure-cache-for-redis.knowledge-check
