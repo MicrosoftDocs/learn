@@ -11,24 +11,20 @@ The following code example shows how to implement this pattern.
 ::: zone pivot="python"
 
 ```python
-import os
-from dotenv import load_dotenv
 from azure.identity import DefaultAzureCredential
 from azure.ai.projects import AIProjectClient
 from azure.ai.projects.models import ConnectionType
 import openai
 
-# Get configuration settings
-load_dotenv()
-project_connection = os.getenv("PROJECT_CONNECTION")
-model_deployment = os.getenv("MODEL_DEPLOYMENT")
-index_name = os.getenv("INDEX_NAME")
 
 # Initialize the project client
 projectClient = AIProjectClient.from_connection_string(
-    conn_str=project_connection,
+    conn_str="<region>.api.azureml.ms;<project_id>;<hub_name>;<project_name>",
     credential=DefaultAzureCredential()
 )
+
+# Get an Azure OpenAI chat client
+chat_client = projectClient.inference.get_azure_openai_client(api_version="2024-10-21")
 
 # Use the AI search service connection to get service details
 searchConnection = projectClient.connections.get_default(
@@ -38,16 +34,13 @@ searchConnection = projectClient.connections.get_default(
 search_url = searchConnection.endpoint_url
 search_key = searchConnection.key
 
-# Get an Azure OpenAI chat client
-chat_client = projectClient.inference.get_azure_openai_client(api_version="2024-10-21")
-
 # Initialize prompt with system message
 prompt = [
-    {"role": "system", "content": "You are a travel assistant that provides information on travel services available from Margie's Travel."}
+    {"role": "system", "content": "You are a helful AI assistant."}
 ]
 
 # Add a user input message to the prompt
-input_text = input("Enter a travel-related question: ")
+input_text = input("Enter a question: ")
 prompt.append({"role": "user", "content": input_text})
 
 # Additional parameters to apply RAG pattern using the AI Search index
@@ -57,7 +50,7 @@ rag_params = {
             "type": "azure_search",
             "parameters": {
                 "endpoint": search_url,
-                "index_name": index_name,
+                "index_name": "<azure_ai_search_index_name>",
                 "authentication": {
                     "type": "api_key",
                     "key": search_key,
@@ -69,7 +62,7 @@ rag_params = {
 
 # Submit the prompt with the index information
 response = chat_client.chat.completions.create(
-    model=model_deployment,
+    model="<model_deployment_name>",
     messages=prompt,
     extra_body=rag_params
 )
@@ -84,12 +77,6 @@ print(completion)
 ::: zone pivot="csharp"
 
 ```csharp
-using System;
-using Azure;
-using System.IO;
-using System.Text;
-using System.Collections.Generic;
-using Microsoft.Extensions.Configuration;
 using Azure.Identity;
 using Azure.AI.Projects;
 using Azure.AI.OpenAI;
@@ -100,15 +87,15 @@ using OpenAI.Chat;
 ...
 
 {
-    // Get configuration settings
-    IConfigurationBuilder builder = new ConfigurationBuilder().AddJsonFile("appsettings.json");
-    IConfigurationRoot configuration = builder.Build();
-    string project_connection = configuration["PROJECT_CONNECTION"];
-    string model_deployment = configuration["MODEL_DEPLOYMENT"];
-    string index_name = configuration["INDEX_NAME"];
     
     // Initialize the project client
-    var projectClient = new AIProjectClient(project_connection, new DefaultAzureCredential());
+    var projectClient = new AIProjectClient(
+        "<region>.api.azureml.ms;<project_id>;<hub_name>;<project_name>",
+        new DefaultAzureCredential()
+    );
+
+    // Get an Azure OpenAI chat client
+    ChatClient chatClient = projectClient.GetAzureOpenAIChatClient("<model_deployment_name>");
     
     // Use the AI search service connection to get service details
     var connectionsClient = projectClient.GetConnectionsClient();
@@ -117,28 +104,29 @@ using OpenAI.Chat;
     string search_url = searchProperties.Target;
     string search_key = searchProperties.Credentials.Key;
     
-    // Get an Azure OpenAI chat client
-    ChatClient chatClient = projectClient.GetAzureOpenAIChatClient(model_deployment);
+
     
     // Initialize prompt with system message
     var prompt = new List<ChatMessage>()
     {
-        new SystemChatMessage("You are a travel assistant that provides information on travel services available from Margie's Travel.")
+        new SystemChatMessage("You are a helful AI assistant.")
     };
     
     // Add a user input message to the prompt
-    Console.WriteLine("Enter a travel-related question: ");
+    Console.WriteLine("Enter a question: ");
     input_text = Console.ReadLine();
     prompt.Add(new UserChatMessage(input_text));
     
     // Additional parameters to apply RAG pattern using the AI Search index
     ChatCompletionOptions options = new();
-    options.AddDataSource(new AzureSearchChatDataSource()
-    {
-        Endpoint = new Uri(search_url),
-        IndexName = index_name,
-        Authentication = DataSourceAuthentication.FromApiKey(search_key),
-    });
+    options.AddDataSource(
+        new AzureSearchChatDataSource()
+        {
+            Endpoint = new Uri(search_url),
+            IndexName = "<azure_ai_search_index_name>",
+            Authentication = DataSourceAuthentication.FromApiKey(search_key),
+        }
+    );
     
     // Submit the prompt with the index information
     ChatCompletion completion = chatClient.CompleteChat(prompt, options);
@@ -146,6 +134,59 @@ using OpenAI.Chat;
     
     // Print the contextualized response
     Console.WriteLine(completionText);
+}
+```
+
+::: zone-end
+
+In this example, the search against the index is *keyword-based* - in other words, the query consists of the text in the user prompt, which is matched to text in the indexed documents. When using an index that supports it, an alternative approach is to use a *vector-based* query in which the index and the query use numeric vectors to represent text tokens. Searching with vectors enables matching based on semantic similarity as well as literal text matches.
+
+To use a vector-based query, you can modify the specification of the Azure AI Search data source details to include an embedding model; which is then used to vectorize the query text.
+
+::: zone pivot="python"
+
+```python
+rag_params = {
+    "data_sources": [
+        {
+            "type": "azure_search",
+            "parameters": {
+                "endpoint": search_url,
+                "index_name": "<azure_ai_search_index_name>",
+                "authentication": {
+                    "type": "api_key",
+                    "key": search_key,
+                },
+                # Params for vector-based query
+                "query_type": "vector",
+                "embedding_dependency": {
+                    "type": "deployment_name",
+                    "deployment_name": "<embedding_model_deployment_name>",
+                },
+            }
+        }
+    ],
+}
+```
+
+
+
+::: zone pivot="csharp"
+
+```csharp
+{
+    ChatCompletionOptions options = new();
+    options.AddDataSource(
+        new AzureSearchChatDataSource()
+        {
+            Endpoint = new Uri(search_url),
+            IndexName = "<azure_ai_search_index_name>",
+            Authentication = DataSourceAuthentication.FromApiKey(search_key),
+            // Params for vector-based query
+            QueryType = "vector",
+            VectorizationSource = DataSourceVectorizer.FromDeploymentName("<embedding_model_deployment_name>"),
+        },
+    );
 }
 ```
 
