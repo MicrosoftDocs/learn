@@ -35,4 +35,12 @@ According to the [2024 State of the Nonprofit Sector Report](https://www.forvism
 > 
 >![Screenshot of people working and talking around a table.](../media/2-reflection.jpg)
 
-Next, let’s explore common scenarios in which AI can help you attain these goals.
+## Security and privacy
+
+Ensuring the privacy, security, and ethical use of AI is vital for nonprofits. Microsoft provides robust security and governance solutions to help you maintain compliance and protect your data. By prioritizing data security, you can build confidence among your supporters and beneficiaries, demonstrating your commitment to ethical and responsible data management.
+
+![Screenshot of end-to-end security for AI investments.](../media/4-security.jpg)
+
+You can learn more by reviewing [Security Program for Nonprofits](https://www.microsoft.com/nonprofits/data-security).
+
+Next, let’s explore some common scenarios where AI can help you attain these goals.

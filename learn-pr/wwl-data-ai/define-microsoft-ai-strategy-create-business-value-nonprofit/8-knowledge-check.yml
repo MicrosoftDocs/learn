@@ -1,13 +1,49 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.define-microsoft-ai-strategy-create-business-value-nonprofit.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 04/15/2025
+  title: Module assessment
+  description: "Module assessment"
+  ms.date: 04/18/2025
   author: wwlpublish
   ms.author: rcaper
   ms.topic: unit
 durationInMinutes: 3
 content: |
   [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the role of AI in strategic planning for nonprofits?"
+    choices:
+    - content: "AI supports strategic goals by analyzing data to identify trends, optimize resources, and predict outcomes, boosting donor engagement and developing growth plans."
+      isCorrect: true
+      explanation: "Correct. AI aids in strategic planning by providing data-driven insights to optimize resources and predict outcomes."
+    - content: "AI is used to eliminate the need for strategic planning in nonprofits."
+      isCorrect: false
+      explanation: "Incorrect. AI supports strategic planning, it doesn't eliminate the need for it."
+    - content: "AI is used to replace human decision-making in strategic planning."
+      isCorrect: false
+      explanation: "Incorrect. While AI can provide valuable insights, it does not replace human decision-making in strategic planning."
+  - content: "What is the main goal for AI projects in the Nonprofit industry?"
+    choices:
+    - content: "To replace human workers with AI technology"
+      isCorrect: false
+      explanation: "Incorrect. The goal is not to replace human workers, but to enhance the impact and efficiency of nonprofit organizations."
+    - content: "To enhance the impact and efficiency of nonprofit organizations"
+      isCorrect: true
+      explanation: "Correct. The main goal is to use AI technology to enhance the impact and efficiency of nonprofit organizations."
+    - content: "To reduce the number of volunteers needed"
+      isCorrect: false
+      explanation: "Incorrect. The goal is not to reduce the number of volunteers, but to improve various aspects such as donor engagement and decision-making."
+  - content: "What are some of the opportunities for AI-driven transformation in the nonprofit sector?"
+    choices:
+    - content: "Limit program delivery"
+      isCorrect: false
+      explanation: "Incorrect. AI is used to expand program delivery, not limit it."
+    - content: "Enrich staff experiences, reinvent donor engagement, expand program delivery, and accelerate mission impact"
+      isCorrect: true
+      explanation: "Correct. These are the top opportunities for AI-driven transformation in the nonprofit sector."
+    - content: "Decrease staff experiences"
+      isCorrect: false
+      explanation: "Incorrect. AI is used to enrich staff experiences, not decrease them."

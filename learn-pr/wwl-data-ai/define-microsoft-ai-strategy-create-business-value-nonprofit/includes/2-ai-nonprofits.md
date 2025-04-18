@@ -23,6 +23,8 @@ Microsoft Tech for Social Impact provides grants and discounts on Microsoft clou
 
 The Microsoft Partner ecosystem provides further innovation and scale, helping nonprofits of all sizes with sector-specific solutions and support. We also offer digital skills training to help nonprofits be successful with their technology.
 
+![Screenshot of the tech for social impact business model.](../media/2-tech-social-impact.jpg)
+
 Tech for Social Impact runs as a social investment model, where incremental revenue is reinvested in nonprofit sector innovation and social good causes. These include causes such as affordable housing, skills and employability programs, and technology donations. To learn more, visit the [Microsoft for Nonprofits](https://www.microsoft.com/nonprofits) website.
 
 In the following video, see how Microsoft partners to support nonprofit organizations.
