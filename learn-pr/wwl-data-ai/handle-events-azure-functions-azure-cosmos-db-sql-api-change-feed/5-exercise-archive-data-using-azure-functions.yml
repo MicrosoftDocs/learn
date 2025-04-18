@@ -4,10 +4,10 @@ title: 'Exercise: Process Azure Cosmos DB for NoSQL data using Azure Functions'
 metadata:
   title: 'Exercise: Process Azure Cosmos DB for NoSQL data using Azure Functions'
   description: "Exercise: Process Azure Cosmos DB for NoSQL data using Azure Functions"
-  ms.date: 10/28/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-exercise-archive-data-using-azure-functions.md)]
+  [!include[](includes/5-exercise-archive-data-using-azure-functions.md)]

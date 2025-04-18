@@ -6,7 +6,7 @@ metadata:
   description: "Knowledge check"
   ms.date: 07/23/2024
   author: wwlpublish
-  ms.author: theresai
+  ms.author: jamesh
   ms.topic: unit
 azureSandbox: false
 labModal: false
@@ -45,4 +45,4 @@ quiz:
       explanation: "Incorrect. Azure Synapse Analytics is an enterprise analytics service that accelerates time to insight across data warehouses and big data systems. It isn't used to enhance performance and scalability of data operations on Delta Lake."
     - content: "Delta Engine"
       isCorrect: true
-      explanation: "Correct. Delta Engine significantly enhances the performance and scalability of operations on Delta Lake in Azure Databricks. It optimizes the execution of queries by utilizing a high-performance, in-memory execution environment, which is crucial for processing large datasets efficiently."
+      explanation: "Correct. Delta Engine significantly enhances the performance and scalability of operations on Delta Lake in Azure Databricks. It optimizes the execution of queries by utilizing a high-performance, in-memory execution environment, which is crucial for processing large datasets efficiently."

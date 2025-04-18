@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.purview-ai-govern-usage
+metadata:
+  title: Govern AI usage with Microsoft Purview
+  description: Learn how to apply policies and manage the lifecycle of AI-generated content using Microsoft Purview. This module shows how to retain, delete, investigate, and review content created in Microsoft 365 Copilot and other AI apps.
+  ms.date: 04/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ai-usage: ai-assisted
+  ms.service: purview
+title: Govern AI usage with Microsoft Purview
+summary: |
+  Learn how to apply policies and manage the lifecycle of AI-generated content using Microsoft Purview. This module shows how to retain, delete, investigate, and review content created in Microsoft 365 Copilot and other AI apps.
+abstract: |
+  In this module you learn how to:
+  - Apply retention policies to manage the lifecycle of Copilot and other AI-generated content using Data Lifecycle Management
+  - Investigate and delete Copilot interaction history using eDiscovery (Premium)
+  - Create policies to assess Copilot messages and other AI-related communications using Communication Compliance
+prerequisites: |
+  None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- auditor
+products:
+- m365
+- microsoft-purview
+subjects:
+- data-management
+- threat-protection
+units:
+- learn.wwl.purview-ai-govern-usage.introduction
+- learn.wwl.purview-ai-govern-usage.retention-copilot
+- learn.wwl.purview-ai-govern-usage.search-delete-ediscovery-copilot
+- learn.wwl.purview-ai-govern-usage.communication-compliance-copilot
+- learn.wwl.purview-ai-govern-usage.knowledge-check
+- learn.wwl.purview-ai-govern-usage.summary
+badge:
+  uid: learn.wwl.purview-ai-govern-usage.badge

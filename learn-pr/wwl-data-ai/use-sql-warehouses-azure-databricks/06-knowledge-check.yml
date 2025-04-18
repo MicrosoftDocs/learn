@@ -6,7 +6,7 @@ metadata:
   description: "Knowledge check"
   ms.date: 09/05/2024
   author: wwlpublish
-  ms.author: theresai
+  ms.author: jamesh
   ms.topic: unit
 azureSandbox: false
 labModal: false
@@ -45,4 +45,4 @@ quiz:
       explanation: "Incorrect. Creating a query does not enable you to share data visualizations."
     - content: "A dashboard"
       isCorrect: true
-      explanation: "Correct. A dashboard can be used to share data visualizations with other users."
+      explanation: "Correct. A dashboard can be used to share data visualizations with other users."

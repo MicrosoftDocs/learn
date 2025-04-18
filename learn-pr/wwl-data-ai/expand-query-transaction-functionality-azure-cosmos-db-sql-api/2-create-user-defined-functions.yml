@@ -4,7 +4,7 @@ title: Create user-defined functions
 metadata:
   title: Create user-defined functions
   description: "Create user-defined functions"
-  ms.date: 02/06/2023
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-create-user-defined-functions.md)]
+  [!include[](includes/2-create-user-defined-functions.md)]

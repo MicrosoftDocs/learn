@@ -4,7 +4,7 @@ title: Create custom conflict resolution policy
 metadata:
   title: Create custom conflict resolution policy
   description: "Create custom conflict resolution policy"
-  ms.date: 10/18/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/5-create-custom-conflict-resolution-policy.md)]
+  [!include[](includes/5-create-custom-conflict-resolution-policy.md)]

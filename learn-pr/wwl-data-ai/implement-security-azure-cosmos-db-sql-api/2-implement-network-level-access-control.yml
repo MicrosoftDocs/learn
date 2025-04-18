@@ -4,7 +4,7 @@ title: Implement network-level access control
 metadata:
   title: Implement network-level access control
   description: "Implement network-level access control"
-  ms.date: 10/18/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-implement-network-level-access-control.md)]
+  [!include[](includes/2-implement-network-level-access-control.md)]

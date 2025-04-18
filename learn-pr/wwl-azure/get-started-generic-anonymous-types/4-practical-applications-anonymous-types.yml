@@ -4,7 +4,7 @@ title: Practical applications of anonymous types
 metadata:
   title: Practical applications of anonymous types
   description: "Learn how to use anonymous types in C# for temporary data structures, LINQ queries, and efficient grouping of related data."
-  ms.date: 04/01/2025
+  ms.date: 04/03/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

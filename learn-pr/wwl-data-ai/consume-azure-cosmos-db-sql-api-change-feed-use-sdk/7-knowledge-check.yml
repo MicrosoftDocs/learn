@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk.knowledge-check
-title: Module assessment
+title: Knowledge check
 metadata:
-  title: Module assessment
+  title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/18/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -17,21 +17,21 @@ quiz:
     choices:
     - content: "``GetChangeFeedProcessorBuilder<>``"
       isCorrect: false
-      explanation: "That's incorrect. The processor builder is used to create the actual change feed processor, not the estimator."
+      explanation: "Incorrect. The processor builder is used to create the actual change feed processor, not the estimator."
     - content: "``GetChangeFeedEstimatorBuilder``"
       isCorrect: true
-      explanation: "That's correct. The ``GetChangeFeedEstimatorBuilder`` method constructs an estimator that will run side by side with a processor."
+      explanation: "Correct. The ``GetChangeFeedEstimatorBuilder`` method constructs an estimator that runs side by side with a processor."
     - content: "``GetChangeFeedIterator<>``"
       isCorrect: false
-      explanation: "That's incorrect. This method creates an iterator to manually consume a change feed."
-  - content: "Which method of the **ChangeFeedProcessor** class should you invoke to start consuming changes from the change feed?"
+      explanation: "Incorrect. This method creates an iterator to manually consume a change feed."
+  - content: "Which method of the **ChangeFeedProcessor** class should be invoked to start consuming changes from the change feed?"
     choices:
     - content: "``GetChangeFeedProcessorBuilder<>``"
       isCorrect: false
-      explanation: "That's incorrect. This is a method of the **Container** class that creates the builder to eventually build a change feed processor."
+      explanation: "Incorrect. This method from the **Container** class creates the builder to eventually build a change feed processor."
     - content: "``StartAsync``"
       isCorrect: true
-      explanation: "That's correct. This method is a member of the **ChangeFeedProcessor** class and is invoked to start consuming changes from the change feed."
+      explanation: "Correct. This method is a member of the **ChangeFeedProcessor** class and is invoked to start consuming changes from the change feed."
     - content: "``Build``"
       isCorrect: false
-      explanation: "That's incorrect. This method is invoked at the end of building a change feed processor (or estimator) and isn't a method of the **ChangeFeedProcessor** class."
+      explanation: "Incorrect. This method is invoked at the end of building a change feed processor (or estimator) and isn't a method of the **ChangeFeedProcessor** class."

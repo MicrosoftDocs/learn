@@ -2,14 +2,52 @@
 uid: learn.wwl.design-implement-private-access-to-azure-services.explain-virtual-network-service-endpoints
 title: Explain virtual network service endpoints
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Explain virtual network service endpoints
   description: "Explain virtual network service endpoints"
-  ms.date: 01/30/2025
+  ms.date: 04/16/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 11
+durationInMinutes: 10
 content: |
   [!include[](includes/2-explain-virtual-network-service-endpoints.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary function of virtual network service endpoints?"
+    choices:
+    - content: "Service Endpoints extend your virtual network private address space and the identity of your VNet to the services."
+      isCorrect: true
+      explanation: "Correct. Service Endpoints allow your VNet to directly interact with the services."
+    - content: "Service Endpoints enable the creation and teardown of environments for application hosting."
+      isCorrect: false
+      explanation: "Incorrect. This feature is more related to infrastructure as code, not Service Endpoints."
+    - content: "Service Endpoints provide a direct connection to public cloud services."
+      isCorrect: false
+      explanation: "Incorrect. While Service Endpoints do connect to services, they don't provide a direct connection to public cloud services."
+  - content: "How do virtual network service endpoints enhance security?"
+    choices:
+    - content: "Service Endpoints allow you to secure Azure service resources to only your virtual network."
+      isCorrect: true
+      explanation: "Correct. Service Endpoints help secure your resources by limiting access to your VNet."
+    - content: "Service Endpoints provide firewall services for the virtual network."
+      isCorrect: false
+      explanation: "Incorrect. Firewall services are separate from Service Endpoints."
+    - content: "Service Endpoints encrypt all data in transit."
+      isCorrect: false
+      explanation: "Incorrect. Encryption is not a primary function of Service Endpoints."
+  - content: "What is the impact of enabling service endpoints on network traffic?"
+    choices:
+    - content: "It reduces the bandwidth available for other services."
+      isCorrect: false
+      explanation: "Incorrect. Service endpoints don't affect the bandwidth available for other services."
+    - content: "It routes network traffic between your virtual network and the service through an optimized path."
+      isCorrect: true
+      explanation: "Correct. Service endpoints optimize the path for network traffic, improving performance."
+    - content: "It significantly increases network latency."
+      isCorrect: false
+      explanation: "Incorrect. Service endpoints don't significantly increase network latency."

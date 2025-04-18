@@ -4,7 +4,15 @@ Azure AI Agent Service is a fully managed service designed to empower developers
 
 Azure AI Agent Service allows developers to create AI agents tailored to their needs through custom instructions and advanced tools like code interpreters and custom functions. These agents can answer questions, perform actions, or automate workflows by combining generative AI models with tools that interact with real-world data sources. The service simplifies the development process by reducing the amount of code required and managing the underlying infrastructure.
 
-Previously, developers could create an agent-like experience by using standard APIs in Azure AI Foundry and connect to custom functions or other tools, but doing so would take a significant coding effort. Azure AI Agent Service handles all of that for you through AI Foundry to build agents via the portal or in your own app in fewer than 50 lines of code. The exercise in the module explores both methods of building an agent.
+Previously, developers could create an agent-like experience by using standard APIs in Azure AI Foundry and connect to custom functions or other tools, but doing so would take a significant coding effort. Azure AI Agent Service handles all of that for you through AI Foundry to build agents via the portal or in your own app in fewer than 50 lines of code. The exercise in the module explores both methods of building an agent.e
+
+Azure AI Agent Service is ideal for scenarios requiring advanced language models for workflow automation. It can be used to:
+
+- Answer questions using real-time or proprietary data sources.
+- Make decisions and perform actions based on user inputs.
+- Automate complex workflows by combining generative AI models with tools that interact with real-world data.
+
+For example, an AI agent can be created to generate reports, analyze data, or even interact with users through apps or chatbots, making it suitable for customer support, data analysis, and automated reporting.
 
 ## Key features of Azure AI Agent Service
 
@@ -19,36 +27,17 @@ Azure AI Agent Service offers several key features:
 
 Azure AI Agent Service provides a more streamlined and secure way to build and deploy AI agents compared to developing with the Inference API directly.
 
-## Setting up your agent
+## Azure AI Agent Service resources
 
-To set up Azure AI Agent Service, follow these steps:
+Azure AI Agent Service is fully managed and designed to help developers build agents without having to worry about underlying resources. Through Azure, AI Foundry and the Agent Service will provision the necessary cloud resources. If desired, you can choose to connect your own resources when building your agent, giving you the flexibility to utilize Azure however works best for you.
 
-1. **Create an Azure AI Foundry hub and project**: Start by creating an AI hub and project in your Azure subscription.
-1. **Deploy a compatible model**: Deploy a model such as GPT-4o to your project.
-1. **Define parameters and instructions**: Once the model is deployed, you can define instructions for your agent and connect tools for enhanced functionality.
-1. **Call your agent**: Once you're set up, you can chat with your agent in Azure AI Foundry portal or integrate it into your app.
+At a minimum, you need to create an Azure AI hub with an Azure AI project for your agent. You can add more Azure services as required. You can create the resources using the Azure AI Foundry portal, or you can use [predefined bicep templates](https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.azure-ai-agent-service) to deploy the resources in your subscription. Two common architectures for Azure AI Agent Service solutions are:
 
-## Tools available to your agent
+- **Basic agent setup**: A minimal configuration that includes Azure AI hub,  Azure AI project, and Azure AI Services resources.
 
-Much of the enhanced functionality of an agent comes from the agent's ability to determine when and how to use *tools*. Tools are additional functionality available to your agent, and if the conversation or task warrants the use of one or more of the tools, the agent calls that tool and handle the response.
+    ![Diagram showing the basic setup of Azure AI Agent Service resources.](../media/basic-agent-setup-resources.png)
 
-![Screenshot of adding tools in Foundry portal for agents.](../media/portal-tools.png)
+- **Standard agent setup**: A more comprehensive configuration that includes the basic agent setup plus Azure Key Vault, Azure AI Search, and Azure Storage.
 
-For example, one of the tools available is the *code interpreter*. This tool enables your agent to run custom code it writes to achieve something, such as MATLAB code to create a graph or solve a data analytics problem.
+    ![Diagram showing the standard setup of Azure AI Agent Service resources.](../media/standard-agent-setup-resources.png)
 
-Available tools are split into two categories:
-
-- **Knowledge tools**: These tools enhance the context or knowledge of your agent. This can include things like Azure AI Search for grounding context (effectively implementing a RAG pattern), uploading files for context, or integrating with Bing to provide real-time data.
-
-    ![Screenshot of knowledge tools available in the Agent Service.](../media/knowledge-tools-list.png)
-
-- **Action tools**: These tools perform an action or run a function. This includes the code interpreter to execute code and custom function calling through OpenAPI specifications, Azure Functions, and more.
-
-By connecting built-in and custom tools, you can allow your agent to perform countless tasks on your behalf.
-
-> [!NOTE]
-> For more information on integrating Azure AI Agent Service with Azure Functions, see the [integration guide](/azure/ai-services/agents/how-to/tools/azure-functions?azure-portal=true).
-
-## Integrating an agent in your app
-
-Azure AI Agent Service provides several SDKs and a REST API for you to integrate agents into your app using your preferred programming language. This module focuses mostly on Python and C#, but the process will be the same for REST or other language SDKs.

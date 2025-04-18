@@ -2,12 +2,16 @@
 uid: learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
-  ms.date: 05/23/2024
+  ms.date: 04/07/2025
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/1-introduction.md)]
