@@ -47228,6 +47228,11 @@
       "source_path": "learn-pr/paths/az-204-integrate-caching-content-delivery-within-solutions/index.md",
       "redirect_url": "/training/browse/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/develop-for-azure-cache-for-redis/index.md",
+      "redirect_url": "/azure/azure-cache-for-redis/cache-overview",
+      "redirect_document_id": false
     }
   ]
 }
