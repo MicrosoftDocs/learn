@@ -38,7 +38,6 @@ subjects:
 units:
 - learn.wwl.develop-for-storage-cdns.introduction
 - learn.wwl.develop-for-storage-cdns.explore-azure-content-delivery-networks
-- learn.wwl.develop-for-storage-cdns.control-cache-behavior-azure-content-delivery-networks
 - learn.wwl.develop-for-storage-cdns.interact-azure-content-delivery-networks-by-using-net
 - learn.wwl.develop-for-storage-cdns.knowledge-check
 - learn.wwl.develop-for-storage-cdns.summary
