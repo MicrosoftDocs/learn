@@ -4,7 +4,7 @@ title: Exercise - Replace code with .NET MAUI bindings
 metadata:
   title: Exercise - Replace code with .NET MAUI bindings
   description: Learn how to convert a XAML UI that uses event handlers to display data, to a UI that uses data binding.
-  ms.date: 02/15/2024
+  ms.date: 04/16/2025
   author: adegeo
   ms.author: adegeo
   ms.topic: unit

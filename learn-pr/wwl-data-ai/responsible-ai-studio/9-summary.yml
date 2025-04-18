@@ -6,11 +6,11 @@ metadata:
   description: Summarize a responsible approach for generative AI.
   author: ivorb
   ms.author: berryivor
-  ms.date: 11/28/2024
+  ms.date: 04/16/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]
-
+

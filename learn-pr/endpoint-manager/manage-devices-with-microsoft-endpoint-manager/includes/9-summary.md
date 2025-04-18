@@ -16,7 +16,7 @@ To learn more about Microsoft Intune, continue to the next learning module in th
 
 To evaluate Microsoft Intune and the Microsoft technologies available with Microsoft's Enterprise Mobility + Security (EMS), continue with the free trial:
 
-- [Get a free trial, evaluate Enterprise Mobility + Security (EMS)](https://go.microsoft.com/fwlink/?linkid=845167)
+- [Get a free trial, evaluate Enterprise Mobility + Security (EMS)](https://go.microsoft.com/fwlink/?linkid=723565)
 
 To get expert guidance to help plan, deploy, and migrate your organization to Microsoft Intune, continue by learning more about FastTrack:
 
