@@ -2,8 +2,8 @@
 
 Enterprise organizations often face challenges when managing employee access to resources such as:
 
- -  Users don't know what access they should have, and even if they do, they can have difficulty locating the right individuals to approve their access
- -  Once users find and receive access to a resource, they hold on to access longer than is required for business purposes
+ - Users don't know what access they should have, and even if they do, they can have difficulty locating the right individuals to approve their access
+ - Once users find and receive access to a resource, they hold on to access longer than is required for business purposes
 
 These problems are compounded for users who need access from another organization, such as external users who are from supply chain organizations or other business partners. For example, Microsoft Entra entitlement management can help organizations ensure that everyone has access to the correct directories and that all user access is managed consistently.
 
@@ -11,7 +11,7 @@ This video provides an overview of entitlement management and its value:
 
 **Watch this video to learn more about Microsoft Entra entitlement management**
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7688733a-4672-4c14-a811-98e324ceeb0b]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MFIb]
 
 ## What can I do with entitlement management?
 
@@ -43,16 +43,16 @@ Before exploring entitlement management and its documentation in depth, you shou
 
 Entitlement management introduces to Microsoft Entra ID the concept of an *access package*. An access package is a bundle of all the resources with the access a user needs to work on a project or perform their task. Access packages are used to govern access for your internal employees and users outside your organization. You can manage user access to the following resources with entitlement management:
 
- -  Membership of Microsoft Entra security groups.
- -  Membership of Microsoft 365 Groups and Teams.
- -  Assignment to Microsoft Entra enterprise applications, including SaaS applications and custom-integrated applications that support federation/single-sign-on and/or provisioning.
- -  Membership of SharePoint Online sites.
+ - Membership of Microsoft Entra security groups.
+ - Membership of Microsoft 365 Groups and Teams.
+ - Assignment to Microsoft Entra enterprise applications, including SaaS applications and custom-integrated applications that support federation/single-sign-on and/or provisioning.
+ - Membership of SharePoint Online sites.
 
 You can also control access to other resources that rely upon Microsoft Entra security groups or Microsoft 365 Groups. For example, you can provide:
 
- -  Licenses for Microsoft 365 by using a security group in an access package and configuring group-based licensing for that group.
- -  Access to manage Azure resources by using a security group in an access package and creating an Azure role assignment for that group.
- -  Access to manage Microsoft Entra roles by using groups assignable to roles in an access package and assigning a role to that group.
+ - Licenses for Microsoft 365 by using a security group in an access package and configuring group-based licensing for that group.
+ - Access to manage Azure resources by using a security group in an access package and creating an Azure role assignment for that group.
+ - Access to manage Microsoft Entra roles by using groups assignable to roles in an access package and assigning a role to that group.
 
 ## How do I control who gets access?
 
@@ -60,8 +60,7 @@ With an **access package**, an administrator or delegated access package manager
 
 Access packages also include one or more *policies*. A policy defines the rules or guardrails for assignment to access package. Each policy can be used to ensure that only the appropriate users are able to request access, that there are approvers for their request, and that their access to those resources is time-limited and will expire if not renewed.
 
-:::image type="content" source="../media/entitlement-management-overview-access-package-003dc7e6.png" alt-text="Screenshot of a list of Access packages and policies they might include.":::
-
+:::image type="content" source="../media/entitlement-management-overview-access-package.png" alt-text="Screenshot of a list of Access packages and policies they might include.":::
 
 Within each policy, an administrator or access package manager defines the already existing users who are eligible to request access, the process to approve or deny access, and the duration of a user's access.
 
@@ -69,14 +68,13 @@ Within each policy, an administrator or access package manager defines the alrea
 
 Access packages don't replace other mechanisms for access assignment. They're most appropriate in situations such as when:
 
- -  Employees need time-limited access for a particular task. For example, you might use group-based licensing and a dynamic group to ensure all employees have an Exchange Online mailbox, and then use access packages for situations in which employees need additional access, such as to read departmental resources from another department.
- -  Access requires the approval of an employee's manager or other designated individuals.
- -  Departments wish to manage their own access policies for their resources without IT involvement.
- -  Two or more organizations are collaborating on a project, and as a result, multiple users from one organization will need to be brought in via Microsoft Entra B2B to access another organization's resources.
+ - Employees need time-limited access for a particular task. For example, you might use group-based licensing and a dynamic group to ensure all employees have an Exchange Online mailbox, and then use access packages for situations in which employees need additional access, such as to read departmental resources from another department.
+ - Access requires the approval of an employee's manager or other designated individuals.
+ - Departments wish to manage their own access policies for their resources without IT involvement.
+ - Two or more organizations are collaborating on a project, and as a result, multiple users from one organization will need to be brought in via Microsoft Entra B2B to access another organization's resources.
 
 The following diagram shows an example of the elements in entitlement management:
 
-:::image type="content" source="../media/entitlement-management-overview-922c5de8.png" alt-text="Diagram of the Entitlement management overview. Process flow and components of entitlement.":::
-
+:::image type="content" source="../media/entitlement-management-overview.png" alt-text="Diagram of the Entitlement management overview. Process flow and components of entitlement.":::
 
 In **Access package 1**, there's only one single group as a resource. Access is defined with a policy that enables a set of users in the directory to request access. **Access package 2** includes a group, an application, and a SharePoint Online site as resources. Access is defined with two different policies. The first policy enables a set of users in the directory to request access. The second policy enables users in an external directory to request access.

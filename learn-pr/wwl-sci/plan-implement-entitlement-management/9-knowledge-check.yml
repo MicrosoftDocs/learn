@@ -3,11 +3,13 @@ uid: learn.wwl.plan-implement-entitlement-management.knowledge-checks
 title: Module assessment
 metadata:
   title: Module assessment
-  description: "Knowledge check"
-  ms.date: 01/18/2024
+  description: "Module assessment"
+  ms.date: 04/18/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 2
 content: |
   [!include[](includes/9-knowledge-check.md)]

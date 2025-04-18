@@ -4,10 +4,12 @@ title: Exercise manage the lifecycle of external users with Microsoft Entra iden
 metadata:
   title: Exercise manage the lifecycle of external users with Microsoft Entra identity governance
   description: "Exercise manage the lifecycle of external users with Microsoft Entra identity governance"
-  ms.date: 01/18/2024
+  ms.date: 04/18/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 4
 content: |
   [!include[](includes/6-manage-lifecycle-of-external-users.md)]
