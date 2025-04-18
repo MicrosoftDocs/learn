@@ -150,6 +150,21 @@ For more information see [Default environment variables](https://docs.github.com
 
 If you generate a value in one step of a job, you can use the value in subsequent steps of the same job by assigning the value to an existing or new environment variable and then writing this to the GITHUB_ENV environment file. The environment file can be used directly by an action, or from a shell command in the workflow file by using the run keyword. 
 
+You can make an environment variable available to any subsequent steps in a workflow job by defining or updating the environment variable and writing this to the GITHUB_ENV environment file. The step that creates or updates the environment variable does not have access to the new value, but all subsequent steps in a job will have access.
+
+You can't overwrite the value of the default environment variables named GITHUB_* and RUNNER_*. Currently you can overwrite the value of the CI variable. However, it's not guaranteed that this will always be possible. For more information about the default environment variables, see
+
+```yml
+steps:
+  - name: Set the value
+    id: step_one
+    run: |
+      echo "action_state=yellow" >> "$GITHUB_ENV"
+  - name: Use the value
+    id: step_two
+    run: |
+      printf '%s\n' "$action_state" # This will output 'yellow'
+```
 
 <!-- INFOMAGNUS UPDATES for sub OD 1.6.5 go here. Source Material: Infomagnus team to find source material and cite sources when they update material   https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables -->
 ## Add environment protections
