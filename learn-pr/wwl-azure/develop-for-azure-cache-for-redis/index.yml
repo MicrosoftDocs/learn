@@ -36,6 +36,5 @@ products:
 subjects:
 - cache
 units:
-- learn.wwl.develop-for-azure-cache-for-redis.summary
 badge:
   uid: learn.wwl.develop-for-azure-cache-for-redis.badge
