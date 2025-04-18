@@ -4,10 +4,10 @@ title: Exercise - Search data using Azure Cognitive Search and Azure Cosmos DB f
 metadata:
   title: Exercise - Search data using Azure Cognitive Search and Azure Cosmos DB for NoSQL
   description: "Exercise - Search data using Azure Cognitive Search and Azure Cosmos DB for NoSQL"
-  ms.date: 10/28/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-exercise-search-data-use-azure-cognitive-search.md)]
+  [!include[](includes/5-exercise-search-data-use-azure-cognitive-search.md)]

@@ -6,7 +6,7 @@ You can think of Copilot Workspaces fitting into this analogy. A Copilot workspa
 
 Through the tenant-switching capability in Security Copilot, a user can select in which tenant they'll be working. In our analogy, this is a Copilot user getting access to the house. Once the tenant is selected, a Copilot user can access and work in any workspace (room in the house) to which they have access, within the context of their role permissions in that workspace.
 
-:::image type="content" source="../media/workspace-overview.png" lightbox="../media/workspace-overview.png" alt-text="Illustration of city as an organization, tenant as a house, and workspace as a room in a house.":::
+:::image type="content" source="../media/workspace-overview.png" lightbox="../media/workspace-overview.png" alt-text="Illustration of a house which is like a tenant and a room in the house is like a workspace in Security Copilot.":::
 
 There are many benefits to Copilot workspaces.  
 

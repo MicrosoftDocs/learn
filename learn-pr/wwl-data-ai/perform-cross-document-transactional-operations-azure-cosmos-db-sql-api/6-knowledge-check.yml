@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.perform-cross-document-transactional-operations-azure-cosmos-db-sql-api.knowledge-check
-title: Module assessment
+title: Knowledge check
 metadata:
-  title: Module assessment
+  title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/09/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -45,4 +45,4 @@ quiz:
       explanation: "Correct. This property returns the HTTP status code of type **HTTPStatusCode** from the underlying communication infrastructure with specific information about why the operation failed."
     - content: "IsSuccessStatusCode"
       isCorrect: false
-      explanation: "Incorrect. This property only returns a boolean indicating that the operation succeeded."
+      explanation: "Incorrect. This property only returns a boolean indicating that the operation succeeded."

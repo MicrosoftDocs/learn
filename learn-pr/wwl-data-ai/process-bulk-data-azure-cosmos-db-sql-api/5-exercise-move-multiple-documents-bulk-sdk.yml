@@ -4,7 +4,7 @@ title: 'Exercise: Move multiple documents in bulk with the Azure Cosmos DB for N
 metadata:
   title: 'Exercise: Move multiple documents in bulk with the Azure Cosmos DB for NoSQL SDK'
   description: "Exercise: Move multiple documents in bulk with the Azure Cosmos DB for NoSQL SDK"
-  ms.date: 10/28/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-exercise-move-multiple-documents-bulk-sdk.md)]
+  [!include[](includes/5-exercise-move-multiple-documents-bulk-sdk.md)]

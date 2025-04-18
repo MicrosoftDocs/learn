@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Check your knowledge of building an agent with custom tools."
-  ms.date: 3/11/2025
+  ms.date: 04/03/2025
   author: ivorb
   ms.author: berryivor
   ms.topic: unit
@@ -12,37 +12,37 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "What is one of the primary benefits of using custom tools in Azure AI Agent Service?"  
+  - content: "What are custom tools, and how can they help you develop effective agents with Azure AI Agent Service?"  
     choices:  
-    - content: "They eliminate the need for any coding knowledge."  
-      isCorrect: false  
-      explanation: "Incorrect. While custom tools simplify many processes, some level of coding knowledge may still be required for advanced configurations."  
-    - content: "They enhance productivity by automating repetitive tasks."  
+    - content: "Callable functions that an agent can use to extend its capabilities."  
       isCorrect: true  
-      explanation: "Correct. Custom tools in Azure AI services can automate repetitive tasks, saving time and resources, which enhance productivity."  
-    - content: "They provide free access to all Azure AI services."  
+      explanation: "Correct. Custom tools extend the capabilities of your agents by enabling them to call external functions."  
+    - content: "Extensions for Visual Studio Code that make it easier to create and deploy agents."  
       isCorrect: false  
-      explanation: "Incorrect. While some Azure AI services offer a free tier, not all services are free, and custom tools don't inherently provide free access."
-  - content: "A company wants to integrate its AI agents with existing patient management systems securely that they have a standard specification for already. Which tool should they use?"  
+      explanation: "Incorrect. Custom tools aren't extensions for Visual Studio Code."  
+    - content: "Fine-tuned models that the agent can use to generate custom output."  
+      isCorrect: false  
+      explanation: "Incorrect. Custom tools aren't fine-tuned models."
+  - content: "You need to integrate functionality from an OpenAPI 3.0-based web service into an agent solution. What should you do?"  
     choices:  
-    - content: "Custom question answering"  
+    - content: "Add the JSON schema of the web service to the agent's instructions."  
       isCorrect: false  
-      explanation: "Incorrect. Custom question answering is designed for creating FAQ bots, not for integrating AI agents with existing systems."  
-    - content: "Azure AI Search tool"  
+      explanation: "Incorrect. Adding the schema of the web service to the instructions wouldn't result in the desired integration."  
+    - content: "Rewrite the web service as a Python function and hard-code it in your agent app."  
       isCorrect: false  
-      explanation: "Incorrect. The Azure AI Search tool is used for performing searches on large datasets, not for system integration."  
-    - content: "OpenAPI specified tools"  
+      explanation: "Incorrect. Rewriting the web service as a Python function and hard-coding it isn't an effective solution."  
+    - content: "Add the web service as an OpenAPI specification tool to the agent definition"  
       isCorrect: true  
-      explanation: "Correct. OpenAPI specified tools enable scalable interoperability with various applications, making them suitable for integrating AI agents with existing systems securely."  
-  - content: "What is a key advantage of using custom tools in Azure AI Agent Service?"  
+      explanation: "Correct. OpenAPI specification tools enable scalable interoperability with external services."  
+  - content: "Your agent application code includes a local function that you want the agent to call. What kind of tool should you add to the agent's definition?"  
     choices:  
-    - content: "They provide standardized, automated, and scalable integrations."  
+    - content: "Function calling"  
       isCorrect: true  
-      explanation: "Correct. Custom tools in Azure AI services offer standardized, automated, and scalable integrations, improving the function calling experience and overall efficiency."  
-    - content: "They eliminate the need for any human intervention."  
+      explanation: "Correct. Use a Function calling tool to access functions in your application code."  
+    - content: "Code interpreter"  
       isCorrect: false  
-      explanation: "Incorrect. While custom tools automate many processes, some level of human intervention may still be required for configuration and maintenance."  
-    - content: "They guarantee 100% accuracy in all predictions."  
+      explanation: "Incorrect. The code interpreter tool is used to enable the agent to generate its own code in a sandbox environment."  
+    - content: "Azure Functions"  
       isCorrect: false  
-      explanation: "Incorrect. No AI tool can guarantee 100% accuracy in all predictions; however, custom tools can significantly improve accuracy by fine-tuning models with specific data."  
+      explanation: "Incorrect. Azure Functions tools are used to enable the agent to call an Azure Function, not a function in your application code."  
   

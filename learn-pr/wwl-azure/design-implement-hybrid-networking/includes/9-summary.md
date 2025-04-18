@@ -1,4 +1,4 @@
-In this module, you learned about the Azure VPN gateway. The Azure VPN gateway enables secure, encrypted connections between an Azure virtual network and an on-premises network. You  also learned about the two types of VPN gateways: policy-based and route-based. YSite-to-Site (S2S) and Point-to-Site (P2S) VPN gateways, their benefits, and potential limitations were described. Lastly, the module introduced Azure Virtual WAN, a networking service that provides various networking, security, and routing functionalities.
+In this module, you learned about the Azure VPN gateway. The Azure VPN gateway enables secure, encrypted connections between an Azure virtual network and an on-premises network. You  also learned about the two types of VPN gateways: policy-based and route-based. Site-to-Site (S2S) and Point-to-Site (P2S) VPN gateways, their benefits, and potential limitations were described. Lastly, the module introduced Azure Virtual WAN, a networking service that provides various networking, security, and routing functionalities.
 
 **The main takeaways from this module are:**
 

@@ -4,7 +4,7 @@ title: Configure default consistency model in the portal
 metadata:
   title: Configure default consistency model in the portal
   description: "Configure default consistency model in the portal"
-  ms.date: 10/17/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-configure-default-consistency-model-portal.md)]
+  [!include[](includes/3-configure-default-consistency-model-portal.md)]

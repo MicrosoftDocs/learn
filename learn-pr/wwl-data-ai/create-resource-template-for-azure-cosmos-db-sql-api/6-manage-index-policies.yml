@@ -4,7 +4,7 @@ title: Manage index policies through Azure Resource Manager templates
 metadata:
   title: Manage index policies through Azure Resource Manager templates
   description: "Manage index policies through Azure Resource Manager templates"
-  ms.date: 10/22/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -16,4 +16,4 @@ labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/6-manage-index-policies.md)]
-
+

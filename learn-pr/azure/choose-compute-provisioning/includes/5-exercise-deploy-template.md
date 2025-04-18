@@ -14,6 +14,8 @@ In the following exercise, you use a Resource Manager template to provision a vi
 
 Let's start by obtaining a configuration file and an Azure Resource Manager template from GitHub.
 
+1. 1. In the Cloud Shell window on the right side of the screen, select the **More** icon (**...**), then select **Settings** > **Go to Classic version**.
+
 1. In Azure Cloud Shell instance on the right, run the following command to clone the GitHub repository.
 
     ```bash
@@ -106,6 +108,40 @@ The GitHub repository that you cloned, also contains a Resource Manager template
             "description": "URL for the DSC configuration module."
         }
     },
+    ```
+
+1. Let's also update the virtual machine image in the template. Find the following code in the *template.json* file:
+
+    ```json
+    "imageSKU": {
+            "type": "string",
+            "defaultValue": "2012-R2-Datacenter",
+            "allowedValues": [
+                "2008-R2-SP1",
+                "2012-Datacenter",
+                "2012-R2-Datacenter"
+            ],
+            "metadata": {
+                "description": "Image SKU"
+            }
+        },
+    ```
+
+1. Update the code as follows so that it looks like this code:
+
+    ```json
+    "imageSKU": {
+            "type": "string",
+            "defaultValue": "2019-Datacenter",
+            "allowedValues": [
+                "2008-R2-SP1",
+                "2012-Datacenter",
+                "2019-Datacenter"
+            ],
+            "metadata": {
+                "description": "Image SKU"
+            }
+        },
     ```
 
 1. Save the template by pressing <kbd>Ctrl+S</kbd>.

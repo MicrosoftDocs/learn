@@ -4,10 +4,12 @@ title: Perform basic Multifactor Authentication tasks
 metadata:
   title: Perform basic Multifactor Authentication tasks
   description: "Perform the lab to enable multifactor authentication to protect users and company data."
-  ms.date: 03/29/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/6-add-multifactor-authentication.md)]

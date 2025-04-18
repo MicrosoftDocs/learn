@@ -6,10 +6,10 @@ metadata:
   description: "Exercise - Use a SQL Warehouse in Azure Databricks"
   ms.date: 09/05/2024
   author: wwlpublish
-  ms.author: theresai
+  ms.author: jamesh
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 30
 content: |
-  [!include[](includes/05-exercise-databricks-sql.md)]
+  [!include[](includes/05-exercise-databricks-sql.md)]

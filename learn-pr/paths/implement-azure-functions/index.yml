@@ -1,17 +1,17 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-azure-functions
 metadata:
-  title: 'AZ-204: Implement Azure Functions'
+  title: 'Implement Azure Functions'
   description: Learn how to create and deploy Azure Functions. Explore hosting options, bindings, and triggers.
   ms.date: 05/05/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: learning-path
-title: 'AZ-204: Implement Azure Functions'
+title: 'Implement Azure Functions'
 prerequisites: |
   * At least one year of experience developing scalable solutions through all phases of software development.
   * Have a base understanding of Azure and cloud concepts, services, and the Azure portal.
-  * If you are new to Azure or cloud computing it's recommended you complete the [AZ-900: Azure Fundamentals](/training/paths/az-900-describe-cloud-concepts/) course.
+  * If you're new to Azure or cloud computing it's recommended you complete the [AZ-900: Azure Fundamentals](/training/paths/az-900-describe-cloud-concepts/) course.
 summary: |
   Learn how to create and deploy Azure Functions. Explore hosting options, bindings, and triggers.
 iconUrl: /training/achievements/az-204-implement-azure-functions.svg

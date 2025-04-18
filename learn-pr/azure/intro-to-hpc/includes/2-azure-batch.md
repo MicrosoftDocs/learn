@@ -1,11 +1,8 @@
 High Performance Computing (HPC) is the practice of using significant computing power that provides high performance compared to what you can get when using your laptop and/or workstation. It solves large problems that need to run on multiple cores simultaneously.
 
-It's done by splitting up a problem into smaller computable units and distributing those units into a distributed
-system. It continuously communicates between them to reach the final solution way faster than running the same
-computation on fewer cores.
+It's done by splitting up a problem into smaller computable units and distributing those units into a distributed system. It continuously communicates between them to reach the final solution faster than running the same computation on fewer cores.
 
-There are several HPC and batch processing choices available on Azure. If you talk with an Azure expert, they would advise you to focus on three options: Azure Batch, Azure CycleCloud, and Microsoft HPC Pack. The following units in this module focus on each option. It's important to note that these choices aren't mutually exclusive. They build upon one another and can
-be thought of as different tools in a toolbox.
+There are several HPC and batch processing choices available on Azure. If you talk with an Azure expert, they would advise you to focus on three options: Azure Batch, Azure CycleCloud, and Microsoft HPC Pack. The following units in this module focus on each option. It's important to note that these choices aren't mutually exclusive. They build upon one another and can be thought of as different tools in a toolbox.
 
 Here, you learn about high-performance computing in general, and learn about Azure HPC.
 
@@ -19,7 +16,7 @@ There are many different industries that require powerful computing resources fo
 - In engineering, physical system modeling.
 - In meteorology, weather modeling.
 
-These tasks require processors that can carry out instructions fast. HPC applications on Azure can scale to thousands of compute cores, extend on-premises large compute, or run as a 100% cloud native solution. This HPC solution including the head node, compute nodes, and storage nodes, runs in Azure with no hardware infrastructure to maintain. This solution is built on the Azure-managed services: Virtual Machine Scale Sets, Virtual Network and Storage Accounts.
+These tasks require processors that can carry out instructions fast. HPC applications on Azure can scale to thousands of compute cores, extend on-premises large compute, or run as a 100% cloud native solution. This HPC solution including the head node, compute nodes, and storage nodes, runs in Azure with no hardware infrastructure to maintain. This solution is built on the Azure-managed services: Virtual Machine Scale Sets, Virtual Network, and Storage Accounts.
 
 These services run in a high-availability environment, patched and supported, allowing you to focus on your solution instead of the environment they run in. An Azure HPC system also has the advantage that you can dynamically add resources as they're needed, and remove them when demand falls.
 
@@ -59,34 +56,30 @@ We can take a look at the four different classifications in more detail.
 
 ## Different types of HPC Jobs: Massively Parallel vs Tightly Coupled
 
-Parallel jobs have computational problems divided into small, simple, and independent tasks that can be run at the same
-time, often with little or no communication between them.
+Parallel jobs have computational problems divided into small, simple, and independent tasks. Tasks can be run at the same time, often with little or no communication between them.
 
-- Common use cases for parallel jobs include risk simulations, molecular modeling, contextual search, and logistics
-  simulations.
+Common use cases for parallel jobs include risk simulations, molecular modeling, contextual search, and logistics simulations.
 
-  Tightly Coupled Jobs have a large shared workload that is broken into smaller tasks that communicate continuously. The
-  different nodes in the cluster communicate with one another as they perform their processing.
+Tightly Coupled Jobs have a large shared workload that is broken into smaller tasks that communicate continuously. The different nodes in the cluster communicate with one another as they perform their processing.
 
-- Common use cases for tightly coupled jobs include:
-  - computational fluid dynamics
-  - weather forecast modeling
-  - material simulations
-  - automobile collision emulations
-  - geospatial simulations
-  - traffic management
+Common use cases for tightly coupled jobs include:
+
+- Computational fluid dynamics.
+- Weather forecast modeling.
+- Material simulations.
+- Automobile collision emulations.
+- Geospatial simulations.
+- Traffic management.
 
 ### What is Message Passing Interface (MPI)
 
-- MPI is a system that aims to provide a portable and efficient standard for message passing. It's high-performing,
-  portable and scalable, and was developed to work on networks of different parallel computers.
+MPI is a system that aims to provide a portable and efficient standard for message passing. It's high-performing, portable, scalable, and was developed to work on networks of different parallel computers.
 
-- MPI has helped in networking and parallel computing on an industrial and global scale, and helped improve the working
-  of large-scale parallel computer applications.
+MPI has helped in networking and parallel computing on an industrial and global scale. It's also helped improve the working of large-scale parallel computer applications.
 
 ![Diagram of the message passing interface.](../media/5-message-passing-interface.png)
 
-### Microsoft MPI benefits:
+Benefits of Microsoft MPI include:
 
 - Ease of porting existing code that uses MPICH.
 - Security based on Active Directory Domain Services.

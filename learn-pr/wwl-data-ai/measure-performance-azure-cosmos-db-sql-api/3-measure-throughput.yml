@@ -4,7 +4,7 @@ title: Measure throughput
 metadata:
   title: Measure throughput
   description: "Measure throughput"
-  ms.date: 04/23/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -14,4 +14,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-measure-throughput.md)]
+  [!include[](includes/3-measure-throughput.md)]

@@ -6,11 +6,11 @@ metadata:
   description: A high-level overview of Azure AI Agent Service.
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 02/12/2025
+  ms.date: 04/03/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 5
 content: |
   [!include[](includes/4-azure-ai-agent-service.md)]
-
+

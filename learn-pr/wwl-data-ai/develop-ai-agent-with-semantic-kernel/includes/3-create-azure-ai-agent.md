@@ -19,7 +19,7 @@ from azure.identity.aio import DefaultAzureCredential
 from semantic_kernel.agents import AzureAIAgent, AzureAIAgentThread, AzureAIAgentSettings
 
 # Create an AzureAIAgentSettings object
-ai_agent_settings = AzureAIAgentSettings.create()
+ai_agent_settings = AzureAIAgentSettings()
 
 # Create an AzureAIAgent client
 async with (@

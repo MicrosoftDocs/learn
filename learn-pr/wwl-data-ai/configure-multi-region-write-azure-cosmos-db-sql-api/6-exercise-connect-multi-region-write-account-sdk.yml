@@ -4,10 +4,10 @@ title: 'Exercise: Connect multi-region write account with the Azure Cosmos DB fo
 metadata:
   title: 'Exercise: Connect multi-region write account with the Azure Cosmos DB for NoSQL SDK'
   description: "Exercise: Connect multi-region write account with the Azure Cosmos DB for NoSQL SDK"
-  ms.date: 10/28/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/6-exercise-connect-multi-region-write-account-sdk.md)]
+  [!include[](includes/6-exercise-connect-multi-region-write-account-sdk.md)]

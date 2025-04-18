@@ -4,7 +4,7 @@ title: Customize the indexing policy
 metadata:
   title: Customize the indexing policy
   description: "Customize the indexing policy"
-  ms.date: 10/17/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/2-customize-indexing-policy.md)]
+  [!include[](includes/2-customize-indexing-policy.md)]

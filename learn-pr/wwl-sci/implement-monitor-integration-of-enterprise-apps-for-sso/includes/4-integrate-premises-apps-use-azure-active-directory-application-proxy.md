@@ -4,11 +4,11 @@ The Application Proxy for Microsoft Entra ID provides secure remote access to on
 
 Application Proxy works with:
 
- -  Web applications that use [Integrated Windows Authentication](/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd) for authentication.
- -  Web applications that use form-based or [header-based](/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-headers) access.
- -  Web APIs that you want to expose to rich applications on different devices.
- -  Applications hosted behind a [Remote Desktop Gateway](/azure/active-directory/manage-apps/application-proxy-integrate-with-remote-desktop-services).
- -  Rich client apps that are integrated with the Microsoft Authentication Library (MSAL).
+- Web applications that use [Integrated Windows Authentication](/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd) for authentication.
+- Web applications that use form-based or [header-based](/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-headers) access.
+- Web APIs that you want to expose to rich applications on different devices.
+- Applications hosted behind a [Remote Desktop Gateway](/azure/active-directory/manage-apps/application-proxy-integrate-with-remote-desktop-services).
+- Rich client apps that are integrated with the Microsoft Authentication Library (MSAL).
 
 Application Proxy is recommended for giving remote users access to internal resources. Application Proxy replaces the need for a virtual private network (VPN) or reverse proxy. It is not intended for internal users on the corporate network. These users who unnecessarily use Application Proxy can introduce unexpected and undesirable performance issues.
 
@@ -16,8 +16,7 @@ Application Proxy is recommended for giving remote users access to internal reso
 
 The following diagram shows how Microsoft Entra ID and Application Proxy work together to provide single sign-on to on-premises applications.
 
-:::image type="content" source="../media/azure-app-proxxy-1e86d179.png" alt-text="Diagram of the Microsoft Entra Application Proxy process flow. A successful configuration is shown.":::
-
+:::image type="content" source="../media/azure-app-proxxy.png" alt-text="Diagram of the Microsoft Entra Application Proxy process flow. A successful configuration is shown.":::
 
 1.  After the user has accessed the application through an endpoint, the user is directed to the Microsoft Entra sign-in page.
 2.  After a successful sign-in, Microsoft Entra ID sends a token to the user's client device.

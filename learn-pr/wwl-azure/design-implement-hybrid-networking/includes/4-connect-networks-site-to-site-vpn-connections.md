@@ -27,6 +27,6 @@ This architecture isn't applicable in all situations because it uses an existing
 
 ### Implement a site-to-site VPN connection (video)
 
-This video reviews site-to-site connections. 
+This video reviews site-to-site connections. The diagram builds over the video. 
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=cce9cc6b-a7b7-4b5b-9661-b5c666ce1bd7]
