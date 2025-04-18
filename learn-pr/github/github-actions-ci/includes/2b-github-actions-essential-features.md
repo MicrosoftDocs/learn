@@ -39,7 +39,7 @@ The following table lists the restrictions on where each context and special fun
 |Worflow Key | Context | Special Functions|
 :--------------------|:----------|:------------------
 run-name  | github, inputs, vars |None |
-concurrency | github, imputs, vars | None|
+concurrency | github, inputs, vars | None|
 env  | github, secrets, inputs, vars | None |
 jobs.<job_id>.concurrency | github, needs, strategy, matrix, inputs, vars | None |
 jobs.<job_id>.container |	github, needs, strategy, matrix, vars, inputs |	None
