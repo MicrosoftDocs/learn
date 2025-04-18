@@ -92,7 +92,7 @@ jobs:
           First_Name: Mona
 ```
 
-<!-- INFOMAGNUS UPDATES for sub OD 1.4.3, 1.4.6, and 1.4.7 go here. Source Material: Infomagnus team to find source material and cite sources when they update material  https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables --> 
+<!-- INFOMAGNUS UPDATES for sub OD 1.4.3, 1.4.6, and 1.4.7 go here. Source Material: Infomagnus team to find source material and cite sources when they update material , https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables , https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/workflow-commands-for-github-actions#setting-an-environment-variable --> 
 ## Identify where to set custom environment variables in a workflow
 
 You can define environment variables that are scoped for:
@@ -147,6 +147,10 @@ jobs:
 For more information see [Default environment variables](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables#default-environment-variables) in the GitHub user documentation.
 
 ## Pass custom environment variables to a workflow
+
+If you generate a value in one step of a job, you can use the value in subsequent steps of the same job by assigning the value to an existing or new environment variable and then writing this to the GITHUB_ENV environment file. The environment file can be used directly by an action, or from a shell command in the workflow file by using the run keyword. 
+
+
 <!-- INFOMAGNUS UPDATES for sub OD 1.6.5 go here. Source Material: Infomagnus team to find source material and cite sources when they update material   https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables -->
 ## Add environment protections
 
