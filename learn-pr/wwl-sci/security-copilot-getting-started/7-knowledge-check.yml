@@ -2,6 +2,7 @@
 uid: learn-wwl.security-copilot-getting-started.knowledge-check
 title: Module assessment
 metadata:
+  hidden_question_numbers: ["BC4FE001_2","BC4FE001_6","BC4FE001_43","BC4FE001_55","BC4FE001_67","BC4FE001_71","BC4FE001_79","BC4FE001_128","BC4FE001_92"]
   ai_generated_module_assessment: true
   title: Module assessment
   description: Microsoft Security Copilot knowledge check
