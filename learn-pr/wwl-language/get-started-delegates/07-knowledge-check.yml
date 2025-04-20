@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-implementing-delegates.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check what you've learned in this module."
+  ms.date: 04/20/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/07-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the main purpose of delegates in C#?"
+    choices:
+    - content: "To determine at compile time which method will be called."
+      isCorrect: false
+      explanation: "Incorrect. Delegates are used for late binding, where the method to be called is determined at runtime."
+    - content: "To encapsulate methods and instantiate them as objects, allowing methods to be stored in variables, passed as arguments, and invoked at a later time."
+      isCorrect: true
+      explanation: "Correct. Delegates in C# are used to encapsulate methods, enabling dynamic method invocation."
+    - content: "To encapsulate classes and instantiate them as objects."
+      isCorrect: false
+      explanation: "Incorrect. Delegates are used to encapsulate methods, not classes."
+  - content: "What is the purpose of using delegates in C#?"
+    choices:
+    - content: "To encapsulate a method with a specific signature and allow for flexible and dynamic method invocation."
+      isCorrect: true
+      explanation: "Correct. Delegates in C# are used to encapsulate a method with a specific signature, allowing for flexible and dynamic method invocation."
+    - content: "To create and manage databases in C#."
+      isCorrect: false
+      explanation: "Incorrect. Delegates are not used for creating or managing databases. They are used to encapsulate a method with a specific signature."
+    - content: "To design user interfaces in C#."
+      isCorrect: false
+      explanation: "Incorrect. Delegates are not used for designing user interfaces. They are used to encapsulate a method with a specific signature."
+  - content: "What is the main difference between `Action` and `Func` delegates in C#?"
+    choices:
+    - content: "`Action` delegates can take up to 16 parameters, while `Func` delegates can only take up to 8 parameters."
+      isCorrect: false
+      explanation: "Incorrect. Both `Action` and `Func` delegates can take up to 16 parameters."
+    - content: "`Action` delegates are used for methods that return a value, while `Func` delegates are used for methods that do not return a value."
+      isCorrect: false
+      explanation: "Incorrect. This answer choice describes the opposite of the actual definitions. `Action` delegates are used for methods that do not return a value, while `Func` delegates are used for methods that return a value."
+    - content: "`Action` delegates are used for methods that do not return a value, while `Func` delegates are used for methods that return a value."
+      isCorrect: true
+      explanation: "Correct. This answer choice describes the main difference between `Action` and `Func` delegates in C#."
+  - content: "What does variance in C# allow?"
+    choices:
+    - content: "It allows to assign methods to delegates even if their parameter types or return types are completely different."
+      isCorrect: false
+      explanation: "Incorrect. Variance allows assignment of methods to delegates if their parameter types or return types are not exactly the same, but they must follow certain rules."
+    - content: "It allows to use a more derived type than the one specified in a delegate or interface and to assign methods to delegates even if their parameter types or return types are not exactly the same, as long as they follow certain rules."
+      isCorrect: true
+      explanation: "Correct. Variance in C# allows more flexible method signatures with delegates and enables the use of a more derived type than the one specified in a delegate or interface."
+    - content: "It allows to use a less derived type than the one specified in a delegate or interface."
+      isCorrect: false
+      explanation: "Incorrect. Variance allows to use a more derived type than the one specified in a delegate or interface."
+  - content: "What is the purpose of using delegates in a C# application?"
+    choices:
+    - content: "To perform mathematical operations."
+      isCorrect: false
+      explanation: "Incorrect. Delegates are not specifically used for mathematical operations, they are used to encapsulate a method with a specific signature and return type."
+    - content: "To encapsulate a method with a specific signature and return type."
+      isCorrect: true
+      explanation: "Correct. Delegates in C# are used to encapsulate a method with a specific signature and return type. They can be used to implement callback methods that run when an asynchronous operation completes."
+    - content: "To create user interfaces."
+      isCorrect: false
+      explanation: "Incorrect. Delegates are not used to create user interfaces. They are used to encapsulate a method with a specific signature and return type."

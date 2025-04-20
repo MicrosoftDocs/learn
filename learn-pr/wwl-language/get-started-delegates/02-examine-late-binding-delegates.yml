@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.examine-implementing-delegates.examine-late-binding-delegates
+title: Examine late binding with delegates
+metadata:
+  title: Examine late binding with delegates
+  description: "Examine late binding with delegates."
+  ms.date: 04/20/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 13
+content: |
+  [!include[](includes/02-examine-late-binding-delegates.md)]
