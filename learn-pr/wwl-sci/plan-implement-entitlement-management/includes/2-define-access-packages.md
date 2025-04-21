@@ -11,33 +11,33 @@ This video provides an overview of entitlement management and its value:
 
 **Watch this video to learn more about Microsoft Entra entitlement management**
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MFIb]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7688733a-4672-4c14-a811-98e324ceeb0b]
 
 ## What can I do with entitlement management?
 
 Capabilities of entitlement management include:
 
-| **Entitlement management capability**                                 | **Description and value**                                                                                                                                                                                                                                                                          |
-| --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Delegate to non-administrators the ability to create access packages. | These access packages contain resources that users can request, and the delegated access package managers can define policies with rules for which users can request, who must approve their access, and when access expires.                                                                      |
-| Select connected organizations whose users can request access.        | When a user who isn't yet in your directory requests access and is approved, they're automatically invited into your directory and assigned access. When their access expires, if they have no other access package assignments, their B2B account in your directory can be automatically removed. |
+| **Entitlement management capability**    | **Description and value**                |
+| ---------------------------------------- | ---------------------------------------- |
+| Delegate to non-administrators the ability to create access packages. | These access packages contain resources that users can request, and the delegated access package managers can define policies with rules for which users can request, who must approve their access, and when access expires. |
+| Select connected organizations whose users can request access. | When a user who isn't yet in your directory requests access and is approved, they're automatically invited into your directory and assigned access. When their access expires, if they have no other access package assignments, their B2B account in your directory can be automatically removed. |
 
 ## Summary of terminology
 
 Before exploring entitlement management and its documentation in depth, you should know the terms below. Feel free to reference back to this list at any time during this course.
 
-| **Term**               | **Description**                                                                                                                                                                                                                                                                                                                                |
-| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| access package         | A bundle of resources that a team or project needs and is governed with policies. An access package is always contained in a catalog. You would create a new access package for a scenario in which users need to request access.                                                                                                              |
-| access request         | A request to access the resources in an access package. A request typically goes through an approval workflow. If approved, the requesting user receives an access package assignment.                                                                                                                                                         |
-| assignment             | An assignment of an access package to a user ensures the user has all the resource roles of that access package. Access package assignments typically have a time limit before they expire.                                                                                                                                                    |
-| catalog                | A container of related resources and access packages. Catalogs are used for delegation so non-administrators can create their own access packages. Catalog owners can add resources they own to a catalog.                                                                                                                                     |
-| catalog creator        | A collection of users who are authorized to create new catalogs. When a non-administrator user who is authorized to be a catalog creator creates a new catalog, they automatically become the owner of that catalog.                                                                                                                           |
-| connected organization | An external Microsoft Entra directory or domain that you have a relationship with. The users from a connected organization can be specified in a policy as being allowed to request access.                                                                                                                                                    |
+| **Term**               | **Description**                          |
+| ---------------------- | ---------------------------------------- |
+| access package         | A bundle of resources that a team or project needs and is governed with policies. An access package is always contained in a catalog. You would create a new access package for a scenario in which users need to request access. |
+| access request         | A request to access the resources in an access package. A request typically goes through an approval workflow. If approved, the requesting user receives an access package assignment. |
+| assignment             | An assignment of an access package to a user ensures the user has all the resource roles of that access package. Access package assignments typically have a time limit before they expire. |
+| catalog                | A container of related resources and access packages. Catalogs are used for delegation so non-administrators can create their own access packages. Catalog owners can add resources they own to a catalog. |
+| catalog creator        | A collection of users who are authorized to create new catalogs. When a non-administrator user who is authorized to be a catalog creator creates a new catalog, they automatically become the owner of that catalog. |
+| connected organization | An external Microsoft Entra directory or domain that you have a relationship with. The users from a connected organization can be specified in a policy as being allowed to request access. |
 | policy                 | A set of rules that defines the access lifecycle, such as how users get access, who can approve, and how long users have access through an assignment. A policy is linked to an access package. For example, an access package could have two policies: one for employees to request access and a second for external users to request access. |
-| resource               | An asset, such as an Office group, a security group, an application, or a SharePoint Online site, with a role that a user can be granted permissions to.                                                                                                                                                                                       |
-| resource directory     | A directory that has one or more resources to share.                                                                                                                                                                                                                                                                                           |
-| resource role          | A collection of permissions associated with and defined by a resource. A group has two roles: member and owner. SharePoint sites typically have three roles but can have additional custom roles. Applications can have custom roles.                                                                                                          |
+| resource               | An asset, such as an Office group, a security group, an application, or a SharePoint Online site, with a role that a user can be granted permissions to. |
+| resource directory     | A directory that has one or more resources to share. |
+| resource role          | A collection of permissions associated with and defined by a resource. A group has two roles: member and owner. SharePoint sites typically have three roles but can have additional custom roles. Applications can have custom roles. |
 
 ## What are access packages and what resources can I manage with them?
 
