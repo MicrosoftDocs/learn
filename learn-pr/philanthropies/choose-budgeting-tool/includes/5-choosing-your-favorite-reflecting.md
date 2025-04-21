@@ -6,7 +6,7 @@ After trying out different tools, pick your favorite. Write down:
 
 Share your choice and thoughts with a friend or the class. 
 
-`embed Budget Like a Pro graphic`
+:::image type="content" source="../media/budget-like-pro.png" alt-text="Screenshot of budget like pro." lightbox="../media/budget-like-pro.png":::
 
 Budgeting tools make managing money fun, easy, and effective. From apps to games, these tools help you:
 

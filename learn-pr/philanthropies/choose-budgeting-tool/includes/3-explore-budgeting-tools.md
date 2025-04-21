@@ -1,4 +1,4 @@
-`embed Popular Budgeting Apps graphic`
+:::image type="content" source="../media/popular-budgeting-apps-graphic.png" alt-text="Screenshot of popular budgeting apps." lightbox="../media/popular-budgeting-apps-graphic.png":::
 
 Let's explore some age-appropriate tools! Below are examples of apps, websites, and games you can try:
 
