@@ -18,10 +18,10 @@ This training focuses on the `Action` and `Func` delegates.
 
 The `Action` and `Func` delegates are generic types that can be used to define methods with different signatures without the need for custom delegate types. These delegates offer the following benefits:
 
-- Ease of Use: With `Action` and `Func`, you can quickly create delegates without worrying about defining custom types. This makes your code more concise and easier to understand.
+- Ease of use: With `Action` and `Func`, you can quickly create delegates without worrying about defining custom types. This makes your code more concise and easier to understand.
 - Consistency: Using predefined delegate types ensures consistency across the codebase, as developers use the same delegate types for similar tasks.
-- Improved Readability: Code that uses Action and Func is generally more readable because the delegate types clearly indicate the number and types of parameters, as well as the return type.
-- Enhanced Maintainability: When the code is easier to read and consistent, it becomes easier to maintain and debug. This is especially important in large projects with multiple developers.
+- Improved readability: Code that uses `Action` and `Func` is generally more readable because the delegate types clearly indicate the number and types of parameters, as well as the return type.
+- Enhanced maintainability: When the code is easier to read and consistent, it becomes easier to maintain and debug. Enhanced maintainability is important in large projects with multiple developers.
 
 ### Examine the `Action` delegate
 
@@ -39,7 +39,7 @@ Action<int, string> actionWithTwoParameters;
 
 In this code, `action` is a delegate that takes no parameters, `actionWithOneParameter` is a delegate that takes one integer parameter, and `actionWithTwoParameters` is a delegate that takes an integer and a string as parameters.
 
-An `Action` delegate can be used to replace a custom delegate type that's used to perform a similar operation. This is useful when you want to pass methods as parameters or assign them to variables without defining a custom delegate. `Action` delegates can reduce the amount of boilerplate code and make the code more concise and easier to read.
+An `Action` delegate can be used to replace a custom delegate type that's used to perform a similar operation. This ability is useful when you want to pass methods as parameters or assign them to variables without defining a custom delegate. `Action` delegates can reduce the amount of boilerplate code and make the code more concise and easier to read.
 
 Consider the following code that defines and implements a custom delegate type named `PrintMessageDelegate` to print a message:
 
@@ -178,7 +178,7 @@ Func<int, string, bool> funcWithTwoParameters;
 
 This code defines a `Func` delegate with no parameters (`funcWithNoParameters` returns an `int`), one parameter (`funcWithOneParameter` returns a `string`), and two parameters (`funcWithTwoParameters` returns a `bool`). The last type parameter specifies the return type of the delegate.
 
-Consider the following code that defines and implements a custom delegate type named `CompareCustomers`. The `CompareCustomers` delegate takes two `Customer` objects as parameters and returns an integer indicating their relative order. The criteria used for comparison is defined using a lambda expression when the delegate is instantiated.
+Consider the following code that defines and implements a custom delegate type named `CompareCustomers`. The `CompareCustomers` delegate takes two `Customer` objects as parameters and returns an integer indicating their relative order. The criteria used for comparison are defined using a lambda expression when the delegate is instantiated.
 
 ```csharp
 
@@ -223,7 +223,7 @@ public class Customer
 
 ```
 
-This code defines a `Customer` class with properties for `CustomerId` and `Age`. The `Main` method creates a list of 10 customers with random ages and IDs. A `CompareCustomers` delegate is defined at the top of the file and then instantiated using a lambda expression to define the sorting criteria. The lambda expression `(c1, c2) => c2.Age.CompareTo(c1.Age)` compares the `Age` properties of two `Customer` objects. The `CompareTo` method returns a positive number if `c2` is older than `c1`, a negative number if `c1` is older than `c2`, and zero if they are the same age. This means that the customers will be sorted in descending order based on their ages. The `customers.Sort` method is called with a lambda expression that uses the `compare` delegate to sort the customers based on their ages in descending order.
+This code defines a `Customer` class with properties for `CustomerId` and `Age`. The `Main` method creates a list of 10 customers with random ages and IDs. A `CompareCustomers` delegate is defined at the top of the file and then instantiated using a lambda expression to define the sorting criteria. The lambda expression `(c1, c2) => c2.Age.CompareTo(c1.Age)` compares the `Age` properties of two `Customer` objects. The `CompareTo` method returns a positive number if `c2` is older than `c1`, a negative number if `c1` is older than `c2`, and zero if they're the same age. This means that the customers will be sorted in descending order based on their ages. The `customers.Sort` method is called with a lambda expression that uses the `compare` delegate to sort the customers based on their ages in descending order.
 
 Using a delegate enables you to easily switch from sorting by `Age` to sorting by `CustomerId`. For example, the following lambda expression could be used to sort by `CustomerId`.
 
@@ -290,7 +290,7 @@ Func<Customer, Customer, int> compare = (c1, c2) => string.Compare(c1.CustomerId
 ## Key Points
 
 - Strongly typed delegates, such as `Action` and `Func`, simplify the process of working with delegates by allowing you to use generic types instead of defining custom delegate types for each method signature.
-- `Action` delegates are used for methods that do not return a value, while `Func` delegates are used for methods that return a value.
+- `Action` delegates are used for methods that don't return a value, while `Func` delegates are used for methods that return a value.
 - Using `Action` and `Func` delegates reduces boilerplate code, improves readability, and enhances maintainability.
 - Lambda expressions provide a concise syntax for defining delegates, making the code more readable and easier to understand.
 - Strongly typed delegates can often be used to replace custom delegate types, making the code more concise and easier to read.

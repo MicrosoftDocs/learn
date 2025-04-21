@@ -1,15 +1,15 @@
-Variance in C# allows you to use more flexible method signatures with delegates. It enables you to assign methods to delegates even if their parameter types or return types are not exactly the same, as long as they follow certain rules. Variance is particularly useful when working with inheritance hierarchies.
+Variance in C# allows you to use more flexible method signatures with delegates. It enables you to assign methods to delegates even if their parameter types or return types aren't exactly the same, as long as they follow certain rules. Variance is useful when working with inheritance hierarchies.
 
 ## What is variance?
 
-Variance is a concept in C# that allows you to use a more derived type than the one specified in a delegate or interface. It enables you to create more flexible and reusable code by allowing methods to be assigned to delegates even if their signatures do not match exactly.
+Variance is a concept in C# that allows you to use a more derived type than the one specified in a delegate or interface. It enables you to create more flexible and reusable code by allowing methods to be assigned to delegates even if their signatures don't match exactly.
 
 There are two types of variance:
 
-- Covariance: Allows a method to have a return type that is more derived than that defined in the delegate.
-- Contravariance: Allows a method to accept parameters that are less derived than those in the delegate type.
+- Covariance: Allows a method to have a return type that is more derived than the type defined in the delegate.
+- Contravariance: Allows a method to accept parameters that are less derived than the parameters in the delegate type.
 
-Variance support includes generic and non-generic delegates.
+Variance support includes generic and nongeneric delegates.
 
 ## Variance with custom delegates
 
@@ -58,9 +58,9 @@ public class Program
 
 In this example, `GetDog` can be assigned to `AnimalDelegate` because `Dog` is a more derived type than `Animal` (covariance). Similarly, `GetAnimalFromAnimal` can be assigned because `Animal` is a less derived type than `Dog` (contravariance).
 
-## Variance with strongly-typed delegates
+## Variance with strongly typed delegates
 
-Variance also applies to strongly-typed delegates like `Action` and `Func`.
+Variance also applies to strongly typed delegates like `Action` and `Func`.
 
 ### Covariance with `Func`
 
@@ -118,7 +118,7 @@ Variance can also be applied to generic type parameters using the `in` and `out`
 
 ### Covariant generic type
 
-The `out` keyword is used to declare a covariant generic type parameter. This allows you to use a more derived type as a return type.
+The `out` keyword is used to declare a covariant generic type parameter. This feature allows you to use a more derived type as a return type.
 
 The following example demonstrates covariance in generics:
 
@@ -150,7 +150,7 @@ In this example, `ICovariant<out T>` allows `ICovariant<Dog>` to be assigned to 
 
 ### Contravariant generic type
 
-The `in` keyword is used to declare a contravariant generic type parameter. This allows you to use a less derived type as a parameter type.
+The `in` keyword is used to declare a contravariant generic type parameter. This feature allows you to use a less derived type as a parameter type.
 
 The following example demonstrates contravariance in generics:
 
@@ -182,7 +182,7 @@ Here, `IContravariant<in T>` allows `IContravariant<Animal>` to be assigned to `
 ## Key points
 
 - Variance allows you to use more flexible method signatures with delegates.
-- Covariance allows a method to have a return type that is more derived than that defined in the delegate.
-- Contravariance allows a method to accept parameters that are less derived than those in the delegate type.
-- Custom and strongly-typed delegates can use variance to be more flexible.
+- Covariance allows a method to have a return type that is more derived than the type defined in the delegate.
+- Contravariance allows a method to accept parameters that are less derived than the parameters in the delegate type.
+- Custom and strongly typed delegates can use variance to be more flexible.
 - Generics can use variance with the `in` and `out` keywords to declare contravariant and covariant generic type parameters.

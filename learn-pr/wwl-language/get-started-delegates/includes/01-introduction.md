@@ -5,7 +5,7 @@ Imagine you're a software developer working for a financial technology company. 
 The topics covered in this module include:
 
 - Understanding what delegates are and the coding scenarios that use delegates.
-- Understanding strongly typed delegates and how they are used in C#.
+- Understanding strongly typed delegates and how they're used in C#.
 - Understanding variance in delegates and generics in C#.
 - Declaring, instantiating, and invoking delegates in a C# application.
 
