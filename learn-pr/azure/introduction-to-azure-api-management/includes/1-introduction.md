@@ -1,30 +1,18 @@
-Publishing an application programming interface (API) is a great way to increase market share, generate revenue, and foster innovation. However, maintaining even one API brings significant challenges such as:
+Publishing an application programming interface (API) is a great way to increase market share, generate revenue, and foster innovation. However, maintaining even one API brings significant challenges such as, onboarding users, managing revisions, implementing security, and running analytics
 
-- Onboarding users
-- Managing revisions
-- Implementing security
-- Running analytics
-
-Now imagine that like many of today's leading companies, your organization publishes multiple APIs for different types of users including partners, developers, and employees. These APIs are used in multiple settings, including mobile and web apps, and Internet of Things (IoT) devices.
+Imagine that your organization publishes multiple APIs for different types of users including partners, developers, and employees. These APIs are used in multiple settings, including mobile and web apps, and Internet of Things (IoT) devices.
 
 :::image type="content" source="../media/1-introduction-before.png" alt-text="Multiple APIs connect to multiple servers, where each API maintains its own set of users, security policies, and analytics data." lightbox="../media/1-introduction-before.png":::
 
-How do you reduce the complexity inherent in having numerous APIs? Microsoft Azure API Management acts as a "front door" for all your APIs. Azure API Management manages all your API traffic and offers intuitive portals for managing your APIs and surfacing them to developers. It also provides tools for implementing security, managing revisions, and performing analytics.
+Microsoft Azure API Management reduces the complexity of managing all your API traffic and offers intuitive portals for managing your APIs and surfacing them to developers. It also provides tools for implementing security, managing revisions, and performing analytics.
 
 :::image type="content" source="../media/1-introduction-after.png" alt-text="Azure API Management acts as a 'front door' for all of an organization's APIs. API calls are then routed to the server where the API is deployed." lightbox="../media/1-introduction-after.png":::
 
 ## Example scenario
 
-Suppose you work at a company that operates a food-delivery platform. Your customers use your mobile app or website to browse the menus of multiple restaurants. They then place an order for the food they want, which your company delivers. The backbone of your platform is a large collection of APIs. For example, the APIs that you publish are used by:
+Suppose you work at a company that operates a food-delivery platform. Your customers use your mobile app or website to browse the menus of multiple restaurants and place an order. The APIs that you publish are used by your mobile app, web app, partner restaurants, IoT devices on your delivery vehicles, and others among a large collection of APIs.
 
-- Your mobile app
-- Your web app
-- Your partner restaurants
-- The IoT devices on your delivery vehicles
-- Your in-house development team
-- Your employees, such as business analysts
-
-Each published API resides on a different server, has its own process for onboarding users, and has its own policies for security, revisions, analytics, and more. You've been tasked to find a way to reduce this complexity. Here you learn how Azure API Management can standardize, centralize, and help secure all the aspects of publishing and maintaining APIs across the full API lifecycle.
+Each published API resides on a different server, has its own user onboarding process, and polices for security, revisions, analytics, and more. Here you learn how Azure API Management can standardize, centralize, and help secure all the aspects of publishing and maintaining APIs across the full API lifecycle to reduce complexity.
 
 ## What will we be doing?
 
