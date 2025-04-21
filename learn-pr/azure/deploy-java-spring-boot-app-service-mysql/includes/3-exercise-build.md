@@ -61,7 +61,7 @@ This script creates a small MySQL server that uses the variables you set up earl
 
 ### Configure a firewall rule for your MySQL server
 
-Azure Database for MySQL is secured by default. Its firewall allows no incoming connections. So add a firewall rule to allow the local IP address to access the database server.
+Azure Database for MySQL is secured by default. Its firewall allows no incoming connections, so add a firewall rule to allow the local IP address to access the database server.
 
 Run the following command to open the server's firewall:
 
