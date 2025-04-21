@@ -1,65 +1,45 @@
 
 
+## Choose a peering scheme
 
-An ExpressRoute circuit has two peering options associated with it: Azure private, and Microsoft. Each peering is configured identically on a pair of routers (in active-active or load sharing configuration) for high availability. Azure services are categorized as Azure public and Azure private to represent the IP addressing schemes.
+You can use two different peering schemes with ExpressRoute: **Private Peering** and **Microsoft Peering**. 
 
 :::image type="content" source="../media/expressroute-peerings-31290ff8.png" alt-text="Diagram of ExpressRoute peering use cases.":::
 
 
-**Create Peering configuration**
+- [**Private peering**](/azure/expressroute/expressroute-circuit-peerings#privatepeering). Private Peering is ideal for scenarios where you need secure, high-performance connectivity to Azure resources. Private peering allows you to connect on premises hosts with Azure IaaS and PaaS services configured to work with Azure virtual networks. All resources must be located in Azure virtual networks and allocated IP addresses in a private address space that doesn't overlap with your on-premises address space. You can’t connect to an Azure resource’s public IP address, such as an IaaS VM’s public IP address through private peering. 
 
- -  You can configure private peering and Microsoft peering for an ExpressRoute circuit. Peering can be configured in any order you choose. However, you must make sure that you complete the configuration of each peering one at a time.
- -  You must have an active ExpressRoute circuit. To configure peerings, the ExpressRoute circuit must be in a provisioned and enabled state.
- -  If you plan to use a shared key/MD5 hash, be sure to use the key on both sides of the tunnel. The limit is a maximum of 25 alphanumeric characters. Special characters aren't supported.
+- **[Microsoft peering](/azure/expressroute/expressroute-faqs#microsoft-peering)**. Microsoft Peering is suitable for accessing Microsoft SaaS and PaaS services. Microsoft peering allows you to connect over ExpressRoute with Azure PaaS services, Microsoft 365 services, and Dynamics 365. 
 
-## Choose between private peering only, Microsoft peering only, or both
+### Choose between Private peering and Microsoft peering 
 
-The following table compares the two peering. Public peering is deprecated for new peering.
+This comparison table compares Private peering with Microsoft peering. 
 
-| **Features**                               |                                    **Private Peering**                                     |                                  **Microsoft Peering**                                   |
-|:------------------------------------------:|:------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------:|
-|   Max. \# prefixes supported per peering   |                     4000 by default, 10,000 with ExpressRoute Premium                      |                                           200                                            |
-|         IP address ranges supported        |                           Any valid IP address within your WAN.                            |             Public IP addresses owned by you or your connectivity provider.              |
-|           AS Number requirements           | Private and public AS numbers. You must own the public AS number if you choose to use one. | Private and public AS numbers. However, you must prove ownership of public IP addresses. |
-|       IP protocols supported               |                                    IPv4, IPv6 (preview)                                    |                                        IPv4, IPv6                                        |
-|       Routing Interface IP addresses       |                              RFC1918 and public IP addresses                               |               Public IP addresses registered to you in routing registries.               |
-|              MD5 Hash support              |                                            Yes                                             |                                           Yes                                            |
-
-You may enable one or more of the routing domains as part of your ExpressRoute circuit. You can choose to have all the routing domains put on the same VPN if you want to combine them into a single routing domain. The recommended configuration is that private peering is connected directly to the core network, and the public and Microsoft peering links are connected to your DMZ.
-
-Each peering requires separate BGP sessions (one pair for each peering type). The BGP session pairs provide a highly available link. If you're connecting through layer 2 connectivity providers, you're responsible for configuring and managing routing.
-
-> [!Important]
->
-> IPv6 support for private peering is currently in Public Preview. If you would like to connect your virtual network to an ExpressRoute circuit with IPv6-based private peering configured, please make sure that your virtual network is dual stack and follows the guidelines for [IPv6 for Azure VNet](/azure/virtual-network/ipv6-overview).
-
-## Configure private peering
-
-Azure compute services, namely virtual machines, and cloud services, that are deployed within a virtual network can be connected through the private peering domain. The private peering domain is a trusted extension of your core network into Microsoft Azure. You can set up bi-directional connectivity between your core network and Azure virtual networks (VNets). This peering lets you connect to virtual machines and cloud services directly on their private IP addresses.
-
-You can connect more than one virtual network to the private peering domain. You can visit the [Azure Subscription and Service Limits, Quotas, and Constraints](/azure/azure-resource-manager/management/azure-subscription-service-limits) page for up-to-date information on limits.
+| Feature                     | ExpressRoute Private Peering                  | ExpressRoute Microsoft Peering                |
+|-----------------------------|-----------------------------------------------|-----------------------------------------------|
+| **Purpose**                 | Connects directly to Azure virtual networks   | Connects to Microsoft services like Office 365, Dynamics 365, and Azure PaaS services |
+| **Traffic Type**            | Private IP traffic                            | Public IP traffic                             |
+| **Access**                  | Direct access to Azure VMs and services within virtual networks | Access to Microsoft SaaS services and Azure PaaS services |
+| **Security**                | Traffic stays on private network, not exposed to the internet | Traffic is routed over public IPs but through a private connection |
+| **Use Cases**               | Enterprise applications, databases, and other workloads requiring secure, high-performance connectivity | Access to Microsoft services like Office 365, Dynamics 365, and Azure PaaS services |
+| **Network Isolation**       | Provides network isolation from the public internet | Doesn't provide network isolation from the public internet, but ensures traffic doesn't traverse the public internet |
+| **Bandwidth Options**       | Offers scalable bandwidth options             | Offers scalable bandwidth options             |
 
 
-## Configure Microsoft peering
+## Choose a peering location
 
-Connectivity to Microsoft online services (Microsoft 365 and Azure PaaS services) occurs through Microsoft peering. You can enable bidirectional connectivity between your WAN and Microsoft cloud services through the Microsoft peering routing domain. You must connect to Microsoft cloud services only over public IP addresses owned by you or your connectivity provider and you must adhere to all the defined rules.
+ExpressRoute locations, also known as peering locations or meet-me locations, are colocation facilities where Microsoft Enterprise Microsoft Edge (MSEE) devices are situated. These locations serve as the entry points to Microsoft's network and are globally distributed, offering the ability to connect to Microsoft's network worldwide. To choose an Azure ExpressRoute [peering location](/azure/expressroute/expressroute-locations?tabs=america%2Ca-c%2Cus-government-cloud%2Ca-C), consider: 
 
+- **Proximity to your data centers**. Choose a peering location that is geographically close to your on-premises data centers or office locations. Proximity to the data center minimizes latency and can improve the performance of your applications.
 
-## Configure route filters for Microsoft Peering
+- **Azure region connectivity**: Ensure that the peering location provides connectivity to the Azure regions you need to access. Different peering locations can offer connectivity to different sets of Azure regions, especially if you're using the Local or Standard SKU.
 
-Route filters are a way to consume a subset of supported services through Microsoft peering.
+- **Network Service Provider availability**: Check which network service providers (NSPs) are available at the peering location. You'll need to work with an NSP to establish the physical connection to Azure ExpressRoute. Choose a provider that offers competitive pricing and reliable service.
 
-Microsoft 365 services such as Exchange Online, SharePoint Online, and Skype for Business, are accessible through the Microsoft peering. When Microsoft peering gets configured in an ExpressRoute circuit, all prefixes related to these services gets advertised through the BGP sessions that are established. A BGP community value is attached to every prefix to identify the service that is offered through the prefix.
+- **Bandwidth requirements**: Consider your bandwidth needs and ensure that the peering location can support the required capacity. Different locations may have different bandwidth options available.
 
-Connectivity to all Azure and Microsoft 365 services causes many prefixes to gets advertised through BGP. The large number of prefixes significantly increases the size of the route tables maintained by routers within your network. If you plan to consume only a subset of services offered through Microsoft peering, you can reduce the size of your route tables in two ways. You can:
+- **Cost Ccnsiderations**: Costs can vary based on the peering location, the NSP chosen, and the bandwidth required. To find the most cost-effective solution for your needs, compare costs across different locations and providers.
 
- -  Filter out unwanted prefixes by applying route filters on BGP communities. Route filtering is a standard networking practice and is used commonly within many networks.
- -  Define route filters and apply them to your ExpressRoute circuit. A route filter is a new resource that lets you select the list of services you plan to consume through Microsoft peering. ExpressRoute routers only send the list of prefixes that belong to the services identified in the route filter.
+- **Compliance and regulatory requirements**: If your organization has specific compliance or regulatory requirements, ensure that the peering location meets these standards. Compliance requirements might include data residency or industry-specific regulations.
 
-**About route filters**
-
-When Microsoft peering gets configured on your ExpressRoute circuit, the Microsoft Edge routers establish a pair of BGP sessions with your edge routers through your connectivity provider. No routes are advertised to your network. To enable route advertisements to your network, you must associate a route filter.
-
-A route filter lets you identify services you want to consume through your ExpressRoute circuit's Microsoft peering. It's essentially an allowed list of all the BGP community values. Once a route filter resource gets defined and attached to an ExpressRoute circuit, all prefixes that map to the BGP community values gets advertised to your network.
-
-To attach route filters with Microsoft 365 services, you must have authorization to consume Microsoft 365 services through ExpressRoute. If you aren't authorized to consume Microsoft 365 services through ExpressRoute, the operation to attach route filters fails.
+- **Future growth and scalability**: Consider your future growth plans and ensure that the peering location can accommodate increased bandwidth and other connections as your needs evolve.
