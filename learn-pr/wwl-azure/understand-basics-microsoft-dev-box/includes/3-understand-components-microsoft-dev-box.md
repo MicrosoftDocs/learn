@@ -6,7 +6,7 @@ Conceptually there are several components for an end-to-end Dev Box service setu
 
 A Dev Center is the first resource which must be set up in Azure when starting the process of deploying the Dev Box service. It is the central management entity for Dev Box infrastructure. It acts as a control plane that organizes and applies configuration settings across multiple projects. Think of it as the headquarters for all Dev Box-related resources.
 
-### <br>Key functions of a Dev center
+### Key functions of a Dev center
 
 - Resource Management: Hosts **Projects**, **Dev Box definitions**, **and Azure Compute Gallery** references.
 - Network Oversight: Links to predefined Network Connections used by all Dev Box machines in associated **Projects**
@@ -20,7 +20,7 @@ A Project in Microsoft Dev Box defines a development context typically for a tea
 
 Project policy can be used to control which projects get access to which resources and project customizations and imaging capabilities can be used to further customize base images for specific project needs.
 
-### <br>Each Project includes
+### Each Project includes
 
 - Dev Box Pools: Groupings of Dev Box machines based on size, region, or purpose.
 - User Access: Developers assigned to the Dev Box User role can provision Dev Box machines in Dev Box pools
