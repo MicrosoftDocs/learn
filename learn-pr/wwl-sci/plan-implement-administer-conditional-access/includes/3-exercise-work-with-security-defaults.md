@@ -1,6 +1,7 @@
 In this exercise, try enabling security defaults.
 
- **Note**: Security Defaults are enabled on new subscriptions, so you can review the process of enabling and disabling.
+ > [!Note] 
+ > Security Defaults are enabled on new subscriptions, so you can review the process of enabling and disabling.
 
 To enable security defaults in your directory:
 
