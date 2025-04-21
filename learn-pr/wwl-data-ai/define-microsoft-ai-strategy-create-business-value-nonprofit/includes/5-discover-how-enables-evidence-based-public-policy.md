@@ -10,7 +10,7 @@ RTI International is an independent, nonprofit research institute dedicated to i
 
 By 2030, RTI aims to improve the well-being of 1 billion people worldwide through its science-based solutions. With such an ambitious goal, every bit of gained productivity matters. To become more efficient and to support their staff members’ creativity, RTI decided to experiment with Microsoft 365 Copilot, the AI-powered assistant.
 
-"Ultimately, what we have to offer is our energy and our time," says Amanda Greenway, Manager of Collaboration Technologies at RTI. “As much as we can route away from tasks like finding the perfect wording for emails and reading chats, the more we can focus on finding solutions for our clients."
+> "Ultimately, what we have to offer is our energy and our time. As much as we can route away from tasks like finding the perfect wording for emails and reading chats, the more we can focus on finding solutions for our clients." - _Amanda Greenway, Manager of Collaboration Technologies at RTI_
 
 ## The solution
 
