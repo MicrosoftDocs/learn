@@ -1,7 +1,6 @@
+Conceptually there are several components for an end-to-end Dev Box service setup. Platform engineer or an IT Admin sets up the **Dev center**, **project**, and the **Dev box definition**. Once the project is created Dev team leads can be delegated the administration of projects which allows them to create **Dev Box pools** for their development teams. 
 
-Conceptually there are several components for an end-to-end Dev Box service setup. Platform engineer or an IT Admin sets up the **Dev center,** **project,** and the **Dev box definition**. Once the project is created Dev team leads can be delegated the administration of projects which allows them to create **Dev Box pools** for their development teams. 
-
-![A screenshot of a computer  AI-generated content may be incorrect.](../media/image2.png)
+![Screenshot of a computer  AI-generated content may be incorrect.](../media/image-2.png)
 
 ## Dev center
 
@@ -17,17 +16,16 @@ A single Dev center can support multiple **Projects**, enabling centralized gove
 
 ## Projects
 
-A Project in Microsoft Dev Box defines a development context—typically for a team, department, or an application. Projects are tied to a Dev Center, allowing them to inherit standardized resources like network access, images, and setup tasks. Projects can be on different Azure subscriptions within the tenant. If there is a separation within the company based on functions, divisions, or billing, the projects can be created in the appropriate subscriptions while keeping the centralized management of the Dev center. 
+A Project in Microsoft Dev Box defines a development context typically for a team, department, or an application. Projects are tied to a Dev Center, allowing them to inherit standardized resources like network access, images, and setup tasks. Projects can be on different Azure subscriptions within the tenant. If there is a separation within the company based on functions, divisions, or billing, the projects can be created in the appropriate subscriptions while keeping the centralized management of the Dev center. 
 
 Project policy can be used to control which projects get access to which resources and project customizations and imaging capabilities can be used to further customize base images for specific project needs.
 
-### <br>Each Project includes:
+### <br>Each Project includes
 
 - Dev Box Pools: Groupings of Dev Box machines based on size, region, or purpose.
 - User Access: Developers assigned to the Dev Box User role can provision Dev Box machines in Dev Box pools
 - Project Admins: Assigned to configure pools, Image definitions, and access control.
 
-  
 
 Projects enforce boundaries and permissions, ensuring developers can only use resources relevant to their team or product.
 
@@ -52,14 +50,12 @@ Network Connections are critical to ensure that Dev Box machines have access to 
 
 1. Microsoft-Hosted Network: Microsoft provisions and maintains a secure infrastructure on which the Dev Box machines are deployed. Great for fast setup and simple needs. You, however, do control the Dev box machines that are installed on this infrastructure. 
 
-   
-
 1. Azure network connection: Your organization manages the network infrastructure on which the Dev Box machines will be deployed. This is an option when you want to control and manage the infrastructure along with connecting it to your other virtual networks within Azure or to your on-premises infrastructure. 
 
 With Azure network connection you can configure:
 
-- Native Entra ID Join: For cloud-native apps and services
-  - Hybrid Entra ID Join: For accessing on-premises resources like shared drives, legacy systems, and internal APIs.
+- Native Entra ID Joins: For cloud-native apps and services
+- Hybrid Entra ID Joins: For accessing on-premises resources like shared drives, legacy systems, and internal APIs.
 
 ## Catalogs
 
@@ -107,4 +103,4 @@ This is a preconfigured virtual machine that a developer creates by using the de
 
 Now that you understand the various components of the service, this diagram shows how various components of the service are connected and work end-to-end.
 
-![A diagram of a network  AI-generated content may be incorrect.](../media/image3.png)
+![Diagram of a network  AI-generated content may be incorrect.](../media/image-3.png)

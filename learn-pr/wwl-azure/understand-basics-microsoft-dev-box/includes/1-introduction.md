@@ -1,9 +1,9 @@
 
-In this module you will explore how Platform Engineering empowers development teams through the creation and operation of Internal Developer Platforms (IDP). You'll learn how Microsoft Dev Box fits into this ecosystem—providing a scalable, self-service developer workstation environment that's aligned with Platform Engineering principles.
+In this module you will explore how Platform Engineering empowers development teams through the creation and operation of Internal Developer Platforms (IDP). You'll learn how Microsoft Dev Box fits into this ecosystem providing a scalable, self-service developer workstation environment that's aligned with Platform Engineering principles.
 
 ## What is Platform Engineering
 
-Platform engineering is a discipline that focuses on building and maintaining the foundational systems and services that development teams use to deliver software. It emphasizes security, consistency, reusability, and self-service, creating a high-velocity environment where developers can focus on understanding business requirements and writing code rather than deploying, managing, and maintaining infrastructure. In most organizations, currently the IT team is playing the dual role of both an IT admin and Platform Engineering team, if the platform engineering team or related roles don't exist.<br><br>A Platform Engineering team builds a "platform" — can be a hybrid of both internal and external products that integrates tooling, services, and workflows into a cohesive user experience. This platform abstracts away repetitive and low-level configuration tasks while providing standardized, secure environments for building, testing, and deploying applications.<br><br>The benefits of platform engineering include:
+Platform engineering is a discipline that focuses on building and maintaining the foundational systems and services that development teams use to deliver software. It emphasizes security, consistency, reusability, and self-service, creating a high-velocity environment where developers can focus on understanding business requirements and writing code rather than deploying, managing, and maintaining infrastructure. In most organizations, currently the IT team is playing the dual role of both an IT admin and Platform Engineering team, if the platform engineering team or related roles don't exist.<br><br>A Platform Engineering team builds a "platform" can be a hybrid of both internal and external products that integrates tooling, services, and workflows into a cohesive user experience. This platform abstracts away repetitive and low-level configuration tasks while providing standardized, secure environments for building, testing, and deploying applications.<br><br>The benefits of platform engineering include:
 
 - Empowering developers with tools and environments they can control independently.
 - Reducing cognitive load by standardizing and automating manual and operational tasks.
@@ -11,7 +11,7 @@ Platform engineering is a discipline that focuses on building and maintaining th
 
 ## Introduction to Internal Developer Platforms
 
-An Internal Developer Platform (IDP) is the result of a Platform Engineering effort. It's not a single tool or system, but rather a curated suite of tools, services, and workflows made available to developers.<br><br>Think of an IDP as a self-service interface that developers use to provision resources, deploy code, monitor applications, and manage configurations—all within approved boundaries.<br><br>Key components typically include:
+An Internal Developer Platform (IDP) is the result of a Platform Engineering effort. It's not a single tool or system, but rather a curated suite of tools, services, and workflows made available to developers.<br><br>Think of an IDP as a self-service interface that developers use to provision resources, deploy code, monitor applications, and manage configurations all within approved boundaries.<br><br>Key components typically include:
 
 - Standardized infrastructure and templates
 - Infrastructure as Code (IaC) to define and deploy cloud infrastructure consistently.
@@ -32,7 +32,7 @@ Microsoft Dev Box is a managed service that delivers secure, cloud-hosted workst
 - Project-scoped customizable environments for different projects and teams 
 - Preconfigured and standardized environments: Teams can create and manage base images with SDKs, dependencies, and pre-installed tools.
 - Security and governance: Dev Box integrates with Microsoft Entra ID (formerly Azure AD), Microsoft Intune, and role-based access control to ensure compliance.
-- CLI and API support: Dev Boxes machines can be deployed and managed via APIs, making them scriptable and automatable—ideal for platform teams embedding Dev Box into larger workflows.
+- CLI and API support: Dev Boxes machines can be deployed and managed via APIs, making them scriptable and automatable ideal for platform teams embedding Dev Box into larger workflows.
 
 ## Strategic benefits of using Dev Box in a Platform Engineering model
 
@@ -49,4 +49,4 @@ Integrating Dev Box into your platform strategy provides several benefits:
 | **Security & Governance** | Centralized identity management, role-based access, and policies ensure Dev Box machines meet compliance standards. |
 | **Consistency** | All team members use standardized tools and environments. |
 | **Integration** | Dev Box integrates with IDP workflows (CI/CD, Git, monitoring). |
-| **Developer Experience** | Devs get flexibility with multi-monitor support, remote access, Do It Yourself (DIY) troubleshooting, and full admin rights (if enabled). |
+| **Developer Experience** | Devs get flexibility with multimonitor support, remote access, Do It Yourself (DIY) troubleshooting, and full admin rights (if enabled). |

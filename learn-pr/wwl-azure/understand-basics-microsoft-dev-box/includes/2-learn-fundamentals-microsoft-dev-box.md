@@ -1,5 +1,4 @@
-
-Microsoft Dev Box is a fully managed service that allows developers to quickly spin up pre-configured, cloud-based development environments with appropriate guardrails. These Dev Box virtual machines are secure, scalable, and customizable virtual machines that provide everything a developer needs to start coding—within minutes.<br><br>Organizations can use the standard virtual machine images via the Azure Marketplace, or can bring in their existing base images, or pick an existing Azure Compute gallery image as a base image. They can utilize the team customizations and imaging capabilities to further customize images for different projects that have been created in the service. Team customizations and imaging features of the service allow you to include source code, SDKs, tools, and libraries tailored to specific projects in the virtual machines images. These customized images can be made available via the Azure Compute gallery. These images can then be deployed as Dev Box machines by the developer in the developer portal. <br><br>Unlike traditional development machines, Dev Box is accessible from anywhere via a browser or Remote Desktop application like Windows App. It also supports multi-monitor setups, copy-paste, and file sharing—providing a native desktop-like experience over the cloud.<br><br>Key features include:
+Microsoft Dev Box is a fully managed service that allows developers to quickly spin up pre-configured, cloud-based development environments with appropriate guardrails. These Dev Box virtual machines are secure, scalable, and customizable virtual machines that provide everything a developer needs to start coding within minutes.<br><br>Organizations can use the standard virtual machine images via the Azure Marketplace, or can bring in their existing base images, or pick an existing Azure Compute gallery image as a base image. They can utilize the team customizations and imaging capabilities to further customize images for different projects that have been created in the service. Team customizations and imaging features of the service allow you to include source code, SDKs, tools, and libraries tailored to specific projects in the virtual machines images. These customized images can be made available via the Azure Compute gallery. These images can then be deployed as Dev Box machines by the developer in the developer portal. <br><br>Unlike traditional development machines, Dev Box is accessible from anywhere via a browser or Remote Desktop application like Windows App. It also supports multi-monitor setups, copy-paste, and file sharing—providing a native desktop-like experience over the cloud.<br><br>Key features include:
 
 - Dev Box machines scoped to different projects of developer teams.
 - Secure and role-based access to projects. 
@@ -16,9 +15,9 @@ Microsoft Dev Box is a fully managed service that allows developers to quickly s
 
 There are several roles in an organization that get involved in deploying and managing Microsoft Dev Box end to end. They include platform engineers or IT administrators who are responsible for configuring the service. Developer team leads or Project Admins who are on point to configure the service for their team of developers for specific projects, assigning and managing permissions along with managing cost controls within the service. Developers are the end users, who typically use the developer portal to set up their Dev Box machines, access, and then manage them as appropriate. 
 
-![A screenshot of a computer  AI-generated content may be incorrect.](../media/image1.png)
+![Screenshot of a computer AI-generated content may be incorrect.](../media/image-1.png)
 
-### Platform engineers or IT administrators:
+### Platform engineers or IT administrators
 
 - These teams are responsible for infrastructure and policy.
 - Create and manage Dev Centers, Projects, and Dev Box pools.
@@ -27,7 +26,7 @@ There are several roles in an organization that get involved in deploying and ma
 - Publish and manage VM images in Azure Compute Gallery.
 - This role will require Azure owner or contributor role to configure the service in Azure.
 
-### Developer team leads (Project Admins):
+### Developer team leads (Project Admins)
 
 Team leads ensure that Dev Box machines are aligned with development goals:
 
@@ -36,7 +35,7 @@ Team leads ensure that Dev Box machines are aligned with development goals:
 - Configure setup scripts that automatically install required tools and dependencies for different projects.
 - Monitor usage and optimize for cost by enabling auto-shutdown policies.
 
-### Developers (Dev Box Users):
+### Developers (Dev Box Users)
 
 Developers benefit the most from Dev Box:
 
@@ -45,7 +44,6 @@ Developers benefit the most from Dev Box:
 - Avoid local setup conflicts and gain access to consistent, isolated environments.
 - Work from anywhere with secure, performant access.
 
-  
 
 ## Scenarios for utilizing Microsoft Dev Box
 
@@ -53,7 +51,7 @@ Developers benefit the most from Dev Box:
 
 New hire developers often wait days for local machine provisioning. With Dev Box, onboarding is reduced to minutes. Developers sign in, provision a Dev Box machine with all the tools they need and begin contributing on day one.
 
-**Scenario 2: Multi-Project Development**
+**Scenario 2: MultiProject Development**
 
 Developers can create one or multiple Dev Box machines for their project to isolate dependencies and avoid software conflicts. This is especially useful when switching between microservices or legacy applications.
 
@@ -63,4 +61,4 @@ For industries with high compliance needs, Dev Boxes can be configured to preven
 
 **Scenario 4: Global Developer Teams**
 
-Teams spread across the world can create Dev Box machines in Azure regions close to their location, reducing latency and improving development experience.
+Teams spreads across the world can create Dev Box machines in Azure regions close to their location, reducing latency and improving development experience.

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.understand-basics-microsoft-dev-box.learn-the-fundamentals-of-microsoft-dev-box
+uid: learn.wwl.understand-basics-microsoft-dev-box.learn-fundamentals-microsoft-dev-box
 title: Learn the fundamentals of Microsoft Dev Box
 metadata:
   title: Learn the fundamentals of Microsoft Dev Box
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-learn-the-fundamentals-of-microsoft-dev-box.md)]
+  [!include[](includes/2-learn-fundamentals-microsoft-dev-box.md)]

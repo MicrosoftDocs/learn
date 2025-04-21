@@ -3,7 +3,7 @@ In this module, you explored how **Platform Engineering** enables organizations 
 
 You were introduced to **Microsoft Dev Box**, a managed service that aligns with platform engineering goals by providing secure, cloud-hosted, ready-to-code workstations. Dev Box enables developers to independently create development environments through a self-service portal or automation, while platform teams manage the configurations, security, and network access behind the scenes.
 
-## Key Takeaways
+## Key takeaways
 
 **Platform engineering** enables developers to focus on delivering business value by abstracting infrastructure complexity and offering consistent tooling.
 
@@ -31,9 +31,9 @@ Key roles involved in Dev Box implementation include:
 
 **Developers** - Create and use Dev Boxes to start coding instantly
 
-Dev Box supports global teams, multi-project workflows, and high-compliance scenarios, making it a strong fit for medium to large enterprise environments.
+Dev Box supports global teams, multiproject workflows, and high-compliance scenarios, making it a strong fit for medium to large enterprise environments.
 
-## **Additional Resources**
+## Additional resources
 
 Here are some helpful links to deepen your understanding and support implementation:
 
