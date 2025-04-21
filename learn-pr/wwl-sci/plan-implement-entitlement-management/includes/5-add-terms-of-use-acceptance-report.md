@@ -37,7 +37,7 @@ Once you finalize your terms of use document, use the following procedure to add
 | Date in the future     | Monthly       | The users must accept the terms of use, starting today. When the future date occurs, consents expire and then users must reaccept every month. |
 
 For example, if you set the expire starting on date to **Jan 1** and frequency to **Monthly**, here's how expirations might occur for two users:
-​    
+
 | **User** | **First accept date** | **First expire date** | **Second expire date** | **Third expire date** |
 | -------- | --------------------- | --------------------- | ---------------------- | --------------------- |
 | Alice    | January 1             | February 1            | March 1                | April 1               |
