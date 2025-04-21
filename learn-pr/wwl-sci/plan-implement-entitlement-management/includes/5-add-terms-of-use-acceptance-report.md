@@ -28,6 +28,7 @@ Once you finalize your terms of use document, use the following procedure to add
     :::image type="content" source="../media/new-terms-of-use-create.png" alt-text="Screenshot of the Expire consents settings to set start date, frequency, and duration.":::
 ​    
 12. Use the **Expire starting on** and **Frequency** settings to specify the schedule for terms of use expirations. The following table shows the result for a couple of example settings:
+
       | **Expire starting on** | **Frequency** | **Result**                               |
       | ---------------------- | ------------- | ---------------------------------------- |
       | Today's date           | Monthly       | The users must accept the terms of use and then reaccept every month, starting today. |
