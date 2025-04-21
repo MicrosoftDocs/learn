@@ -16,9 +16,9 @@ The gateway performs many tasks from the consumer's point of view, but the follo
 
 ## Azure API Management for API providers
 
-If you're an API provider, you still have a great deal of work to do after your APIs have been published. This work includes setting API policies, managing API consumers, managing API revisions and versions, and monitoring and analyzing your APIs. You can perform these tasks using the Azure API Management administration interface, Azure CLI, or Azure Powershell.
+If you're an API provider, you still have work to do after your APIs have been published. This work includes setting API policies, managing API consumers, managing API revisions and versions, and monitoring and analyzing your APIs. You can perform these tasks using the Azure API Management administration interface, Azure CLI, or Azure Powershell.
 
-The administration interface also enables you to perform the following tasks:
+The administration interface enables you to perform the following tasks:
 
 - **Define and import API specs**: Import an OpenAPI specification, a REST API, a Simple Object Access Protocol (SOAP) API, a WebSocket API, or a GraphQL API. You can also create an API by importing instances of the following Azure services: Web App, Container App, Function App, Logic App, and Service Fabric. You can also create a blank API and define it manually.
 - **Manage users and groups**: A *user* is a developer account for an API consumer that you can add manually or invite to create an account. A *group* is a collection of related users that you can associate with a particular API product, and then each group's user has access to the product.
