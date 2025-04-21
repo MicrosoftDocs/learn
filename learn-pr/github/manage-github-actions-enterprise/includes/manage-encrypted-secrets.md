@@ -61,3 +61,73 @@ If you need to access the encrypted secret in your action's code, the action cod
 <!-- INFOMAGNUS UPDATES for all of sub OD 4.3 go here! Source Material:https://www.google.com/url?q=https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions&sa=D&source=editors&ust=1742484244534691&usg=AOvVaw30HJhmh-nnnssWIlwRCI_5 -->
 
 <!-- Test -->
+=======
+
+### Access Encrypted Secrets Within Actions and Workflows
+
+#### Example: Using a Secret in a Workflow
+
+```yaml
+name: Deploy Application
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Use secret in a script
+        run: echo "Deploying with API_KEY=${{ secrets.DEPLOYMENT_KEY }}"
+```
+
+#### Best Practices for Using Secrets in Workflows
+- **Do not print secrets** in logs using `echo ${{ secrets.SECRET_NAME }}`.
+- **Use secrets within script commands**, rather than assigning them to environment variables.
+- **Limit access** by defining secrets at the **lowest necessary level**.
+- **Rotate secrets periodically** and update workflows accordingly.
+
+## How to Use third party Vaults
+
+Many enterprises integrate GitHub Actions with external secret management solutions like **HashiCorp Vault, AWS Secrets Manager, and Azure Key Vault**.
+
+### 1. HashiCorp Vault
+```yaml
+- name: Fetch secret from Vault
+  id: vault
+  uses: hashicorp/vault-action@v2
+  with:
+    url: https://vault.example.com
+    token: ${{ secrets.VAULT_TOKEN }}
+    secret: secret/data/github/my-secret
+```
+
+### 2. AWS Secrets Manager
+```yaml
+- name: Retrieve AWS Secret
+  run: |
+    SECRET_VALUE=$(aws secretsmanager get-secret-value --secret-id my-secret | jq -r .SecretString)
+    echo "SECRET_VALUE=${SECRET_VALUE}" >> $GITHUB_ENV
+```
+
+### 3. Azure Key Vault
+```yaml
+- name: Retrieve Azure Secret
+  uses: Azure/get-keyvault-secrets@v1
+  with:
+    keyvault: "my-keyvault"
+    secrets: "my-secret"
+    azureCredentials: ${{ secrets.AZURE_CREDENTIALS }}
+```
+
+### Benefits of Using Third-Party Vaults
+- **Centralized secret management** reduces security risks.  
+- **Automated secret rotation** helps comply with security policies.  
+- **Audit logs and access control** enhance security monitoring.  
+- **Least privilege access** prevents unauthorized use of secrets.
+<!-- Test -->
