@@ -9,4 +9,4 @@ Each method has unique benefits. For example, a piggy bank is great for quick sa
 
 Reflection Activity: Explore which strategy fits your goals best. Which one would you use for short-term goals? What about long-term ones?
 
-`embed Saving Strategies graphic`
+:::image type="content" source="../media/saving-strategies.png" alt-text="Screenshot of saving strategies graphic." lightbox="../media/saving-strategies.png":::
