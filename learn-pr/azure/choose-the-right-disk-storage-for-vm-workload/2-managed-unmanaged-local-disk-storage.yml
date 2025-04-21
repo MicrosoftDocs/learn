@@ -4,7 +4,7 @@ title: Managed, unmanaged, and local disk storage
 metadata:
   title: Managed, unmanaged, and local disk storage
   description: Managed, unmanaged, and local disk storage
-  ms.date: 09/05/2023
+  ms.date: 04/18/2025
   author: roygara
   ms.author: rogarana
   ms.topic: unit
@@ -33,4 +33,4 @@ quiz:
     - content: "A managed disk"
       isCorrect: true
       explanation: "Managed disks guarantee 99.999% availability because data is automatically replicated."
-
+
