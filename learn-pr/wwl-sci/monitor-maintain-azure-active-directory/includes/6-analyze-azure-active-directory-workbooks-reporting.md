@@ -9,8 +9,10 @@ With the usage and insights report, you can get an application-centric view of y
 To access the data from the usage and insights report, you need:
 
  - A Microsoft Entra tenant.
- - A Microsoft Entra ID premium (P1/P2) license to view the sign-in data.
- - A user in the Security Administrator, Security Reader or Report Reader roles. In addition, any user (non-admins) can access their own sign-ins.
+ - A Microsoft Entra ID P1 or P2 license.
+ - A user in the Security Administrator, Security Reader or Report Reader roles.
+
+In addition, any user (non-admins) can access their own sign-ins.
 
 ## Access the usage and insights report
 

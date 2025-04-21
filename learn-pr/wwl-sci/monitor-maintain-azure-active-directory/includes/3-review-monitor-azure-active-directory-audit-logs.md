@@ -15,7 +15,7 @@ You can customize the list view by clicking **Columns** in the toolbar.
 
 :::image type="content" source="../media/columns.png" alt-text="Screenshot of the Audit columns, so you can pick the specific data you need to see in your report.":::
 
-This enables you to display additional fields or remove fields that are already displayed.
+Custom columns enables you to display other fields or remove fields that are already displayed.
 
 :::image type="content" source="../media/column-select.png" alt-text="Screenshot of the Remove fields dialog. Set up the reports to show and review just the data you need.":::
 
@@ -45,7 +45,7 @@ The **Service** filter allows you to select from a drop-down list of the followi
  - Account Provisioning
  - Application Proxy
  - Authentication Methods
- - B2C
+ - Business to Customer (B2C)
  - Conditional Access
  - Core Directory
  - Entitlement Management
@@ -54,7 +54,7 @@ The **Service** filter allows you to select from a drop-down list of the followi
  - Invited Users
  - MIM Service
  - MyApps
- - PIM
+ - Privileged Identity Management (PIM)
  - Self-service Group Management
  - Self-service Password Management
  - Terms of Use
@@ -86,7 +86,7 @@ The **Activity** filter is based on the category and activity resource type sele
 
 You can get the list of all Audit Activities using the Graph API: `https://graph.windows.net/<tenantdomain>/activities/auditActivityTypesV2?api-version=beta`
 
-The **Status** filter allows you to filter based on the status of an audit operation. The status can be one of the following:
+The **Status** filter allows you to filter based on the status of an audit operation. The status can be one of the following values:
 
  - All
  - Success
@@ -96,7 +96,7 @@ The **Target** filter allows you to search for a particular target by the starti
 
 The **Initiated by** filter enables you to define what an actor's name or a universal principal name (UPN) starts with. The name and UPN are case-sensitive.
 
-The **Date range** filter enables to you to define a timeframe for the returned data.Possible values are:
+The **Date range** filter enables to you to define a timeframe for the returned `data.Possible` values are:
 
  - 7 days
  - 24 hours
@@ -110,7 +110,7 @@ You can also choose to download the filtered data, up to 250,000 records, by sel
 
 ## Audit logs shortcuts
 
-In addition to **Microsoft Entra ID**, the Azure portal provides you with two additional entry points to audit data:
+In addition to **Microsoft Entra ID**, the Azure portal provides you with two other entry points to audit data:
 
  - Users and groups
  - Enterprise applications
@@ -119,14 +119,14 @@ In addition to **Microsoft Entra ID**, the Azure portal provides you with two ad
 
 With user and group-based audit reports, you can get answers to questions such as:
 
- - What types of updates have been applied to users?
+ - What types of updates were applied to users?
  - How many users were changed?
  - How many passwords were changed?
  - What has an administrator done in a directory?
- - What are the groups that have been added?
+ - What are the groups that were added?
  - Are there groups with membership changes?
  - Have the owners of a group been changed?
- - What licenses have been assigned to a group or a user?
+ - What licenses were assigned to a group or a user?
 
 If you want to review only auditing data that is related to users, you can find a filtered view under **Audit logs** in the **Monitoring** section of the **Users** tab. This entry point has **UserManagement** as preselected category.
 
@@ -140,8 +140,8 @@ If you want to review only auditing data that is related to groups, you can find
 
 With application-based audit reports, you can get answers to questions such as:
 
- - What applications have been added or updated?
- - What applications have been removed?
+ - What applications were added or updated?
+ - What applications were removed?
  - Has a service principal for an application changed?
  - Have the names of applications been changed?
  - Who gave consent to an application?
@@ -152,4 +152,4 @@ If you want to review audit data related to your applications, you can find a fi
 
 ## Microsoft 365 activity logs
 
-You can view Microsoft 365 activity logs from the Microsoft 365 admin center. Even though Microsoft 365 activity and Microsoft Entra activity logs share a lot of the directory resources, only the Microsoft 365 admin center provides a full view of the Microsoft 365 activity logs. You can also access the Microsoft 365 activity logs programmatically by using the Office 365 Management APIs.
+You can view Microsoft 365 activity logs from the Microsoft 365 admin center. Even though Microsoft 365 activity and Microsoft Entra activity logs share numerous directory resources, only the Microsoft 365 admin center provides a full view of the Microsoft 365 activity logs. You can also access the Microsoft 365 activity logs programmatically by using the Office 365 Management APIs.
