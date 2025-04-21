@@ -21,41 +21,39 @@ Once you finalize your terms of use document, use the following procedure to add
 8. Select the language for your terms of use document. The language option allows you to upload multiple terms of use, each with a different language. The version of the terms of use that an end user sees, is based on their browser preferences.
 9. To require end users to view the terms of use before accepting them, set **Require users to expand the terms of use** to **On**.
 10. To require end users to accept your terms of use on every device they're accessing from, set **Require users to consent on every device** to **On**. Users are required to install other applications if this option is enabled.
-
-   > [!WARNING]
-   > Consent on every device requires users to register each device with Microsoft Entra ID before getting access.
+    > [!WARNING]
+    > Consent on every device requires users to register each device with Microsoft Entra ID before getting access.
 
 11. If you want to expire terms of use consents on a schedule, set **Expire consents** to **On**. When set to On, two extra schedule settings are displayed.
-
-   :::image type="content" source="../media/new-terms-of-use-create.png" alt-text="Screenshot of the Expire consents settings to set start date, frequency, and duration.":::
+    :::image type="content" source="../media/new-terms-of-use-create.png" alt-text="Screenshot of the Expire consents settings to set start date, frequency, and duration.":::
 ​    
 12. Use the **Expire starting on** and **Frequency** settings to specify the schedule for terms of use expirations. The following table shows the result for a couple of example settings:
 
-| **Expire starting on** | **Frequency** | **Result**                               |
-| ---------------------- | ------------- | ---------------------------------------- |
-| Today's date           | Monthly       | The users must accept the terms of use and then reaccept every month, starting today. |
-| Date in the future     | Monthly       | The users must accept the terms of use, starting today. When the future date occurs, consents expire and then users must reaccept every month. |
+      | **Expire starting on** | **Frequency** | **Result**                               |
+      | ---------------------- | ------------- | ---------------------------------------- |
+      | Today's date           | Monthly       | The users must accept the terms of use and then reaccept every month, starting today. |
+      | Date in the future     | Monthly       | The users must accept the terms of use, starting today. When the future date occurs, consents expire and then users must reaccept every month. |
 
-For example, if you set the expire starting on date to **Jan 1** and frequency to **Monthly**, here's how expirations might occur for two users:
+    For example, if you set the expire starting on date to **Jan 1** and frequency to **Monthly**, here's how expirations might occur for two users:
 
-| **User** | **First accept date** | **First expire date** | **Second expire date** | **Third expire date** |
-| -------- | --------------------- | --------------------- | ---------------------- | --------------------- |
-| Alice    | January 1             | February 1            | March 1                | April 1               |
-| Bob      | January 15            | February 1            | March 1                | April 1               |
+      | **User** | **First accept date** | **First expire date** | **Second expire date** | **Third expire date** |
+      | -------- | --------------------- | --------------------- | ---------------------- | --------------------- |
+      | Alice    | January 1             | February 1            | March 1                | April 1               |
+      | Bob      | January 15            | February 1            | March 1                | April 1               |
 
 13. Use the **Duration before reacceptance requires (days)** setting to specify the number of days before the user must reaccept the terms of use. This setting allows users to follow their own schedule. For example, if you set the duration to **30** days, here's how expirations might occur for two users:
 
-| **User** | **First accept date** | **First expire date** | **Second expire date** | **Third expire date** |
-| -------- | --------------------- | --------------------- | ---------------------- | --------------------- |
-| Alice    | January 1             | January 31            | March 2                | April 1               |
-| Bob      | January 15            | February 14           | March 16               | April 15              |
+      | **User** | **First accept date** | **First expire date** | **Second expire date** | **Third expire date** |
+      | -------- | --------------------- | --------------------- | ---------------------- | --------------------- |
+      | Alice    | January 1             | January 31            | March 2                | April 1               |
+      | Bob      | January 15            | February 14           | March 16               | April 15              |
 
 14. Under **Conditional Access**, select **Custom policy**.
 
-| **Template**                           | **Description**                          |
-| -------------------------------------- | ---------------------------------------- |
-| Custom policy                          | Select the users, groups, and apps that the terms of use apply to. |
-| Create Conditional Access policy later | Terms of use appear in the grant control list when creating a Conditional Access policy. |
+      | **Template**                           | **Description**                          |
+      | -------------------------------------- | ---------------------------------------- |
+      | Custom policy                          | Select the users, groups, and apps that the terms of use apply to. |
+      | Create Conditional Access policy later | Terms of use appear in the grant control list when creating a Conditional Access policy. |
 
 15. When complete, select **Create**.
 
@@ -72,7 +70,7 @@ For example, if you set the expire starting on date to **Jan 1** and frequency t
 24. Under **Enable policy**, select **On**.
 25. When complete, select **Create**.
 
-:::image type="content" source="../media/terms-of-use-conditional-access-policy.png" alt-text="Screenshot of the Conditional Access policy with configuration options highlighted.":::
+      :::image type="content" source="../media/terms-of-use-conditional-access-policy.png" alt-text="Screenshot of the Conditional Access policy with configuration options highlighted.":::
 ​    
 26. If you chose to use your own account, you can refresh your browser. You're prompted to sign in again. When you sign in, you again must accept the terms of use.
 
