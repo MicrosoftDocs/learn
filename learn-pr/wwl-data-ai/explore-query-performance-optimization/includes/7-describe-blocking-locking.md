@@ -17,7 +17,7 @@ It's important to understand the concept of a transaction. Autocommit is the def
 INSERT INTO DemoTable (A) VALUES (1);
 ```
 
-In order to allow developers to have more granular control over their application code, SQL Server also allows you to explicitly control your transactions. The following query would take a lock on a row in the *DemoTable* table what wouldn't be released until a subsequent command to commit the transaction was added.
+In order to allow developers to have more granular control over their application code, SQL Server also allows you to explicitly control your transactions. The following query would take a lock on a row in the *DemoTable* table that wouldn't be released until a subsequent command to commit the transaction was added.
 
 ```SQL
 BEGIN TRANSACTION
