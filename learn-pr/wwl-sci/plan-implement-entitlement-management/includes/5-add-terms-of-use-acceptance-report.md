@@ -36,7 +36,7 @@ Once you finalize your terms of use document, use the following procedure to add
 | Today's date           | Monthly       | The users must accept the terms of use and then reaccept every month, starting today. |
 | Date in the future     | Monthly       | The users must accept the terms of use, starting today. When the future date occurs, consents expire and then users must reaccept every month. |
 
-   For example, if you set the expire starting on date to **Jan 1** and frequency to **Monthly**, here's how expirations might occur for two users:
+For example, if you set the expire starting on date to **Jan 1** and frequency to **Monthly**, here's how expirations might occur for two users:
 ​    
 | **User** | **First accept date** | **First expire date** | **Second expire date** | **Third expire date** |
 | -------- | --------------------- | --------------------- | ---------------------- | --------------------- |
@@ -59,7 +59,7 @@ Once you finalize your terms of use document, use the following procedure to add
 
 15. When complete, select **Create**.
 
-   :::image type="content" source="../media/new-terms-of-use-create.png" alt-text="Screenshot of the New terms of use page with configured options highlighted.":::
+    :::image type="content" source="../media/new-terms-of-use-create.png" alt-text="Screenshot of the New terms of use page with configured options highlighted.":::
 ​    
 16. When the terms of use are created, you're redirected to the Conditional Access policy page. On the page, in the **Name** box, enter **Enforce ToU**.
 17. Under **Assignments**, select **Users and groups**.
@@ -72,7 +72,7 @@ Once you finalize your terms of use document, use the following procedure to add
 24. Under **Enable policy**, select **On**.
 25. When complete, select **Create**.
 
-   :::image type="content" source="../media/terms-of-use-conditional-access-policy.png" alt-text="Screenshot of the Conditional Access policy with configuration options highlighted.":::
+:::image type="content" source="../media/terms-of-use-conditional-access-policy.png" alt-text="Screenshot of the Conditional Access policy with configuration options highlighted.":::
 ​    
 26. If you chose to use your own account, you can refresh your browser. You're prompted to sign in again. When you sign in, you again must accept the terms of use.
 
