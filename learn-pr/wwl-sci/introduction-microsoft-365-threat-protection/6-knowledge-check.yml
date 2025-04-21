@@ -2,6 +2,9 @@
 uid: learn.wwl.introduction-microsoft-365-threat-protection.knowledge-check
 title: Module assessment
 metadata:
+  hidden_question_numbers: ["82512DD8_10","82512DD8_22","82512DD8_26","82512DD8_30","82512DD8_34","82512DD8_42","82512DD8_51","82512DD8_63","82512DD8_67","82512DD8_79","82512DD8_83","82512DD8_91","82512DD8_100","82512DD8_104","82512DD8_116","82512DD8_120","82512DD8_96"]
+  module_assessment_regen_label: regen-1744836390558
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
   ms.date: 05/10/2023
