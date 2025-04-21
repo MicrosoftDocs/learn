@@ -13,7 +13,7 @@ You can use two different peering schemes with ExpressRoute: **Private Peering**
 
 ### Choose between Private peering and Microsoft peering 
 
-This comparison table compares Private peeing with Microsoft peering. 
+This comparison table compares Private peering with Microsoft peering. 
 
 | Feature                     | ExpressRoute Private Peering                  | ExpressRoute Microsoft Peering                |
 |-----------------------------|-----------------------------------------------|-----------------------------------------------|

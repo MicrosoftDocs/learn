@@ -2,9 +2,7 @@
 
 Reliability consists of two principles: resiliency and availability. The goal of resiliency is to prevent failures and, in the event they do occur, to restore your applications to a fully operational state. The objective of availability is to provide consistent access to your application or workloads. It's important to proactively plan for reliability based on your business needs and application requirements.
 
-An ExpressRoute circuit in three different [resiliency](/azure/expressroute/design-architecture-for-resiliency#standard-resiliency) types: **Standard** Resiliency, **High** Resiliency, and **Maximum** Resiliency. 
-
-This video reviews ExpressRoute resiliency examples.
+An ExpressRoute circuit in three different [resiliency](/azure/expressroute/design-architecture-for-resiliency#standard-resiliency) types: **Standard** Resiliency, **High** Resiliency, and **Maximum** Resiliency. This video reviews ExpressRoute resiliency examples.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=de4ed81c-1748-47f6-b5b1-ad1636848b6a]
 
@@ -14,7 +12,7 @@ Standard resiliency in ExpressRoute is a single circuit with two connections con
 
 The subsequent diagram illustrates the logical architecture of an ExpressRoute circuit designed for standard resiliency.
 
-:::image type="content" source="../media/standard-resiliency.png" alt-text="Diagram of ExpressRoute standard resiliency architecture":::
+:::image type="content" source="../media/standard-resiliency.png" alt-text="Diagram of ExpressRoute standard resiliency architecture.":::
 
 ### High resiliency
 
@@ -23,8 +21,6 @@ High resiliency, also referred to as ExpressRoute Metro, enables the use of mult
 The subsequent diagram illustrates the logical architecture of an ExpressRoute circuit designed for high resiliency.
 
 :::image type="content" source="../media/high-resiliency.png" alt-text="Diagram of ExpressRoute high resiliency architecture.":::
-image high-resiliency
-
 
 ### Maximum resiliency
 

@@ -1,7 +1,4 @@
 
-## ExpressRoute Global Reach capabilities and usage cases
-
-This video reviews ExpressRoute Global Reach.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=750c807c-1fec-4665-abf0-25608c92ead8]
 
