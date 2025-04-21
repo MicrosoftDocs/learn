@@ -133,7 +133,7 @@ This example demonstrates how to create a delegate instance using a lambda expre
 
 Delegates can be invoked like regular methods. When a delegate is invoked, it calls the method(s) it points to, passing any arguments specified in the delegate's signature. The invocation of a delegate is similar to calling a method directly.
 
-Delegates can be combined to create multicast delegates, which allow multiple methods to be invoked in a single call.The ability to multicast is useful when you want to perform multiple actions, such as notifying multiple event subscribers or executing multiple methods in a specific order.
+Delegates can be combined to create multicast delegates, which allow multiple methods to be invoked in a single call. The ability to multicast is useful when you want to perform multiple actions, such as notifying multiple event subscribers or executing multiple methods in a specific order.
 
 Multiple objects can be assigned to one delegate instance by using the `+` operator. The multicast delegate contains a list of the assigned delegates. When the multicast delegate is called, it invokes the delegates in the list, in order. Only delegates of the same type can be combined.
 
