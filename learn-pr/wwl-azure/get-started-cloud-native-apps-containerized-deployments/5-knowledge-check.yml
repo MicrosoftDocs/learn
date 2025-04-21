@@ -2,6 +2,7 @@
 uid: learn.wwl.get-started-cloud-native-apps-containerized-deployments.knowledge-check
 title: Module assessment
 metadata:
+  hidden_question_numbers: ["3A276806_30","3A276806_75"]
   ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
