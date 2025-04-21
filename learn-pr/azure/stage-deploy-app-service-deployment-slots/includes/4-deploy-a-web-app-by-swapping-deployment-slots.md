@@ -8,7 +8,7 @@ Here, you learn the correct configuration to swap the web app into production.
 
 When you swap two slots, the app's configuration travels to the new slot along with the app. You can override this behavior for individual application settings and configuration strings by configuring them as **slot settings**.
 
-Suppose, for example, you have two databases. You use one for production and the other for acceptance testing. You always want the app version in the staging slot to use the testing database. The app version in the production slot should always use the production database. To achieve this, you can configure the database connection string as a slot setting.
+Suppose, for example, you have two databases. You use one for production and the other for acceptance testing. You always want the app version in the staging slot to use the testing database. The app version in the production slot should always use the production database. You can achieve this overall configuration by configuring the database connection string as a slot setting.
 
 ### Configure slot settings
 
@@ -40,7 +40,7 @@ To swap two slots in the Azure portal:
 
 ## Understand the slot-swapping preview
 
-When you swap slots, the settings in the target slot (which is typically the production slot) are applied to the app version in the source slot before the hostnames are swapped. You might discover problems at this point. For example, if the database connection string is configured as a slot setting, the new version of the web app uses the existing production database. If you forgot to upgrade the database schema in the production database before the swap, you could see errors and exceptions when the new app version attempts to use the old schema.
+When you swap slots, the settings in the target slot (typically the production slot) are applied to the app version in the source slot, before the hostnames are swapped. You might discover problems at this point. For example, if the database connection string is configured as a slot setting, the new version of the web app uses the existing production database. If you forgot to upgrade the database schema in the production database before the swap, you could see errors and exceptions when the new app version attempts to use the old schema.
 
 To help you discover problems before your app goes live into production, Azure App Service offers a swap-with-preview feature. When you choose this option, the swap proceeds in two phases:
 
@@ -48,7 +48,7 @@ To help you discover problems before your app goes live into production, Azure A
 - **Phase 2**: The hostnames for the two sites are swapped. The version of the app now in the source slot receives its slot settings.
 
 > [!IMPORTANT]
-> Test your web app thoroughly while it's in the staging slot. Eliminate code bugs and problems with non-slot settings. The swap-with-preview feature can only help you spot and eliminate problems caused by the production-slot settings. Make sure everything else is sound before you start any kind of swap into production.
+> Test your web app thoroughly while it's in the staging slot. Eliminate code bugs and problems with nonslot settings. The swap-with-preview feature can only help you spot and eliminate problems caused by the production-slot settings. Make sure everything else is sound before you start any kind of swap into production.
 
 ### Preview slot swapping
 

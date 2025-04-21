@@ -14,13 +14,13 @@ To configure slot settings:
 
 1. Navigate to the **Configuration** pane for the deployment slot.
 
-1. Select **+ New application setting**. Add a new setting with the name **ENVIRONMENT_NAME**, and a value of **production**. Check the **deployment slot setting** box to make this a slot setting. Select **OK**.
+1. Select **+ New application setting**. Add a new setting with the name **ENVIRONMENT_NAME**, and a value of **production**. Check the **deployment slot setting** box to make this setting a slot setting. Select **OK**.
 
-1. Add another setting called **APP_VERSION**, and enter the value *1*. *Don't* make this a slot setting. Select **OK**.
+1. Add another setting called **APP_VERSION**, and enter the value *1*. *Don't* make this setting a slot setting. Select **OK**.
 
 1. In the top menu bar, select **Save**, then select **Continue**.
 
-1. Repeat the preceding steps on the **Staging** slot, but use the following values:
+1. Repeat the preceding steps on the **staging** slot, but use the following values:
 
     | Name | Value | Deployment slot setting |
     |---|---|---|
@@ -29,7 +29,7 @@ To configure slot settings:
 
 ## Swap the slots
 
-Now that you've tested version 2 of the web app in the staging slot, you can deploy it by swapping the slots. Follow these steps:
+Now that you tested version 2 of the web app in the staging slot, you can deploy it by swapping the slots. Follow these steps:
 
 1. To make sure you're configuring the production slot, select **All resources**, and then select the production slot of the web app.
 
@@ -47,7 +47,7 @@ Now that you've tested version 2 of the web app in the staging slot, you can dep
 
 ## Configure auto swap for the staging slot
 
-Suppose that now that you're using deployment slots, you want to enable continuous deployment. You do this by using the auto swap feature for your web app. In a system that uses auto swap, when you deploy new code to the staging slot, Azure automatically warms it up and deploys it to production by swapping the staging and production slots. To configure auto swap, follow these steps:
+Now that you're using deployment slots, you can use the auto swap feature for your web app to enable continuous deployment. When auto swap is enabled, you can deploy new code to the staging slot and Azure automatically warms it up and deploys it to production by swapping the staging and production slots. To configure auto swap, follow these steps:
 
 1. Go to the **Configuration** pane of the staging slot's web app and go to the **General settings** tab.
 
@@ -92,9 +92,9 @@ Now, you modify the code to create version 3 of the web app. When you deploy it 
     git push staging
     ```
 
-    Wait for the deployment to finish. Near the end of the text output, you see a message that indicates that the deployment has requested an auto swap to the production slot.
+    Wait for the deployment to finish. Near the end of the text output, you see a message that indicates that the deployment requested an auto swap to the production slot.
 
-1. In the Azure portal, go to the **Overview** page for the production slot's web app, and select **Browse**. The third version of the web app appears on a new browser tab. If the old version is shown, you mightneed to wait briefly and then refresh the page. The swap operation is atomic and occurs instantly, but it takes App Service a few moments to prepare the swap operation before running it.
+1. In the Azure portal, go to the **Overview** page for the production slot's web app, and select **Browse**. The third version of the web app appears on a new browser tab. If the old version is shown, you might need to wait briefly and then refresh the page. The swap operation is atomic and occurs instantly, but it takes App Service a few moments to prepare the swap operation before running it.
 
 ## Roll back the new version
 
@@ -104,4 +104,4 @@ Suppose that deploying version 3 of your app to production revealed an unexpecte
 
 1. Swap the staging and production slots.
 
-1. When the swap finishes, on the **Overview** page, select **Browse** to view the app one last time. You'll see that version 2 was redeployed to production.
+1. When the swap finishes, on the **Overview** page, select **Browse** to view the app one last time. You can see that version 2 was redeployed to production.

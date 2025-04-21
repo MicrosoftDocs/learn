@@ -33,11 +33,13 @@ Start by creating a new web app resource in the Azure portal.
     | Windows Plan | Accept default. |
     | Sku and size | Accept default. |
 
+1. Select **Next : Database**.
+1. 
 1. Select **Next : Deployment**.
 
 1. Select **Next : Networking**.
 
-1. Select **Next : Monitoring**, and enter the following value for the setting.
+1. Select **Next : Monitoring + secure**, and enter the following value for the setting.
 
     | Setting | Value |
     |---|---|
@@ -108,7 +110,7 @@ We're going to use git to deploy the source code to the web app's production slo
     :::image type="content" source="../media/3-copy-git-clone-url.png" alt-text="Screenshot of the Essentials section, where you Copy the git clone URL." lightbox="../media/3-copy-git-clone-url.png":::
 
     > [!NOTE]
-    > If you don't see a git clone URL where it's shown in the preceding screenshot, refresh the portal.
+    > If you don't see a git clone URL in the location shown in the preceding screenshot, refresh the portal.
 
 1. Hover over the  **Git clone url** and select the *Copy to clipboard* icon. This value also contains your deployment username.
 
@@ -147,7 +149,7 @@ For your web app, you created one slot, the production slot, and you deployed so
 
 1. In the command bar, select **+ Add Slot**. The **Add a slot** pane appears.
 
-1. In the **Name** field, enter *Staging*, accept the default for **Clone settings from**, and then select **Add**.
+1. In the **Name** field, enter *staging*, accept the default for **Clone settings from**, and then select **Add**.
 
 1. After the deployment slot is successfully created, select **Close**.
 
