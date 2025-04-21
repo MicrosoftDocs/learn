@@ -2,7 +2,7 @@ GitHub Actions is a powerful feature that helps you to go from code to cloud, al
 
 ## Types of GitHub actions
 
-:::image type="content" source="../media/action-types.png" alt-text="Diagram that displays the three types of GitHub Actions; Docker, JavaScript, and composite run steps actions." border="false":::
+![alt text](../media/action-types.png) 
 
 Actions are individual tasks that you can use to customize your development workflows. You can create your own actions by writing custom code that interacts with your repository to perform custom tasks, or by using actions the GitHub community shares. Navigating through various actions, you'll notice that there are three different types of actions: _Docker container actions_, _JavaScript actions_, and _composite run steps actions_. Let's take a closer look at each action type.
 
@@ -36,9 +36,9 @@ Composite run steps actions allow you to reuse actions by using shell scripts. Y
 
 # Packaged Composite Action
 
-Packaged composite actions are a way to bundle multiple steps into a reusable unit. These actions are defined in a repository and can be referenced in workflows across different repositories. By packaging a composite action, you can simplify workflows, reduce duplication, and improve maintainability.
+Packaged composite actions bundle multiple steps into a reusable unit. These actions are defined in a repository and can be referenced in workflows across different repositories. By packaging a composite action, workflows are simplified, duplication is reduced, and maintainability is improved.
 
-When creating a packaged composite action, you define the steps in a single `action.yml` file. This file specifies the inputs, outputs, and the sequence of commands or actions to execute. Packaged composite actions are particularly useful for automating repetitive tasks or combining multiple shell commands into a single reusable action.
+When creating a packaged composite action, the steps are defined in a single `action.yml` file. This file specifies the inputs, outputs, and the sequence of commands or actions to execute. Packaged composite actions are particularly useful for automating repetitive tasks or combining multiple shell commands into a single reusable action.
 
 ## Create a Composite Action
 
@@ -47,11 +47,14 @@ When creating a packaged composite action, you define the steps in a single `act
 You must place your composite action in its own directory inside the repository.
 
 **Example Directory Structure:**
-.github/actions/my-composite-action/ ├── action.yml └── scripts/ └── my-script.sh
+.github/actions/my-composite-action/
+├── action.yml
+└── scripts/
+    └── my-script.sh
 
 ### 2. Define the `action.yml` File
 
-Inside the **composite action directory**, create an `action.yml` file to define the action.
+Inside the **my-composite-action directory**, create an `action.yml` file.
 
 ```yaml
 name: "My Composite Action"
@@ -87,7 +90,7 @@ jobs:
         with:
           node-version: '18'
 ```
-If your composite action is in **another repository**, reference it like this:
+If your composite action is shared from **another repository**, reference it like this:
 ```
 uses: owner/repository/.github/actions/my-composite-action@v1
 ```
@@ -127,26 +130,25 @@ jobs:
 
 | **Best Practice**       | **Description**                                                                 |
 |--------------------------|---------------------------------------------------------------------------------|
-| **Use Versioning**       | Use a `v1` tag to reference stable versions.                                   |
+| **Use Versioning**       | Use a `v1` tag to reference stable version 1.                                   |
 | **Keep Actions Modular** | Group related steps inside a composite action.                                 |
 | **Document Inputs & Outputs** | Add descriptions for inputs/outputs in `action.yml`.                          |
 | **Test Before Publishing** | Validate the composite action in a test repository.                           |
 
 ## Composite Action in a Workflow
+![alt text](../media/composite-action-workflow.png)
 
-![alt text](../media/composite-action-workflow.png) 
 ## Benefits of Composite Actions:
 - **Reusability** - Define actions once and use them in multiple workflows.  
 - **Maintainability** - Reduce duplication by centralizing logic in a single action.  
 - **Modularity** - Combine multiple shell commands or other actions into a single unit. 
 
 # Develop an Action to Set Up a CLI on GitHub Actions Runners
-Many CI/CD workflows need a **specific CLI tool** to interact with cloud services, manage infrastructure, or execute scripts.  
-Instead of manually installing a CLI in every workflow, you can create a **reusable GitHub Action** that:
+Many CI/CD workflows require a **specific version of a CLI tool** to interact with cloud services, manage infrastructure, or execute scripts. While GitHub-hosted runners come preinstalled with many tools, they may not include the exact version your workflow needs, especially if it's an older or unsupported version. Instead of installing the required CLI version in every workflow, you can create a **reusable GitHub Action** that:
 
-- Ensures consistent CLI installation across jobs.  
-- Simplifies workflows by reducing repeated installation steps.  
-- Optimizes caching for faster workflow execution.  
+- Ensures consistent installation of the required CLI version across jobs.  
+- Simplifies workflows by centralizing the installation logic.  
+- Optimizes caching for faster workflow execution. 
 
 ## How to Develop a CLI Setup Action
 
@@ -156,12 +158,36 @@ A **CLI setup action** is a **JavaScript-based action** that installs and config
 
 ### Step 1: Set Up the Action Directory
 
-Create a new directory inside your GitHub repository:
+To manually create the directory for your CLI setup action, follow these steps:
 
-```sh
-mkdir my-cli-action
-cd my-cli-action
-```
+1. **Navigate to Your Repository**  
+  Open your terminal or command prompt and navigate to the root directory of your GitHub repository. For example:
+  ```sh
+  cd /path/to/your/repository
+  ```
+
+2. **Create a New Directory for the Action**  
+  Use the `mkdir` command to create a new directory named `my-cli-action` inside the `.github/actions` folder. This ensures your action is organized and follows GitHub's recommended structure for custom actions.
+  ```sh
+  mkdir -p .github/actions/my-cli-action
+  ```
+
+3. **Navigate to the New Directory**  
+  Change into the newly created directory to start adding files for your action:
+  ```sh
+  cd .github/actions/my-cli-action
+  ```
+
+4. **Verify the Directory Structure**  
+  After creating the directory, your repository structure should look like this:
+  ```
+  your-repository/
+  ├── .github/
+  │   ├── actions/
+  │   │   ├── my-cli-action/
+  ```
+
+You are now ready to proceed with creating the `action.yml` file and other necessary files for your CLI setup action.
 ### Step 2: Define the action.yml Metadata File
 Create an action.yml file to describe the action.
 
@@ -180,7 +206,7 @@ runs:
   using: "node16"
   main: "index.js"
 ```
-Why use using: node16?
+Why use *using: node16?*
 This action runs JavaScript code using Node.js 16.
 
 ### Step 3: Create a JavaScript Script to Install the CLI
@@ -216,7 +242,11 @@ Create a workflow file (.github/workflows/test.yml) in your repository:
 ```yaml
 name: Test MyCLI Setup
 
-on: push
+on:
+  push:
+    branches:
+      - main
+      - feature/*
 
 jobs:
   test:
@@ -230,20 +260,33 @@ jobs:
         with:
           version: '1.2.3'
 
-      - name: Check CLI Version
-        run: mycli --version
+      - name: Verify CLI Installation
+        run: |
+          echo "Checking MyCLI version..."
+          mycli --version
 ```
-**Caching the CLI Installation (Optimization)**
-To speed up workflows, you can cache the CLI installation using the actions/cache action.
-Modify test.yml:
+### Key Notes:
+1. **Branch Selection**: The workflow triggers on pushes to the `main` branch and any branch matching the `feature/*` pattern. Adjust this as needed for your repository.
+2. **Action Reference**: The `uses: ./.github/actions/my-cli-action` line references the custom action locally. Ensure the action directory and `action.yml` file are correctly set up.
+3. **CLI Version Input**: The `version` input specifies the CLI version to install. Update this value as required.
 
-```yaml
-- name: Cache MyCLI
-  uses: actions/cache@v4
-  with:
-    path: ~/.mycli
-    key: mycli-${{ runner.os }}-${{ inputs.version }}
+### Testing Locally
+To test this workflow locally, use the [`act`](https://github.com/nektos/act) CLI tool:
+```bash
+act -j test
 ```
+This simulates the GitHub Actions environment on your local machine, allowing you to debug and validate the workflow before pushing changes.
+
+### Optimization Tip: Caching
+To improve workflow performance, cache the CLI installation directory using the `actions/cache` action:
+```yaml
+      - name: Cache MyCLI
+        uses: actions/cache@v4
+        with:
+          path: ~/.mycli
+          key: mycli-${{ runner.os }}-${{ inputs.version }}
+```
+This ensures that subsequent runs reuse the cached CLI installation, reducing setup time.
 
 ### Best Practices for CLI Setup Actions
 
@@ -341,12 +384,11 @@ try {
 
 
 ### Best Practices for Debugging JavaScript Actions
-
 | **Practice**            | **Description**                                                              |
 |--------------------------|------------------------------------------------------------------------------|
 | **Use core.debug()**     | Hide verbose logs unless debugging is enabled.                              |
 | **Validate action.yml**  | Ensure inputs and outputs are correctly defined.                            |
-| **Bundle code**          | Use `@vercel/ncc` to compile JavaScript into a single file.                 |
+| **Bundle code**          | Use `@vercel/ncc` to compile JavaScript into a single file. This reduces dependencies and ensures all required modules are included, preventing runtime errors caused by missing files. |
 | **Test with act**        | Simulate runs locally for faster iterations.                                |
 | **Use try/catch**        | Prevent workflows from failing silently.                                    |
 
