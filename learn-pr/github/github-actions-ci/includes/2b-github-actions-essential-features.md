@@ -148,11 +148,11 @@ For more information see [Default environment variables](https://docs.github.com
 
 ## Pass custom environment variables to a workflow
 
-If you generate a value in one step of a job, you can use the value in subsequent steps of the same job by assigning the value to an existing or new environment variable and then writing this to the GITHUB_ENV environment file. The environment file can be used directly by an action, or from a shell command in the workflow file by using the run keyword. 
+You can pass customer environment variables from one step of a workflow job to subsequent steps within the job. Simply generate a value in one step of a job, and assign the value to an existing or new environment variable.  Next, you write the variable/value pair to the GITHUB_ENV environment file. The environment file can then be used directly by an action, or from a shell command in the workflow job by using the run keyword. 
 
-You can make an environment variable available to any subsequent steps in a workflow job by defining or updating the environment variable and writing this to the GITHUB_ENV environment file. The step that creates or updates the environment variable does not have access to the new value, but all subsequent steps in a job will have access.
+The step that creates or updates the environment variable does not have access to the new value, but all subsequent steps in a job will have access.
 
-You can't overwrite the value of the default environment variables named GITHUB_* and RUNNER_*. Currently you can overwrite the value of the CI variable. However, it's not guaranteed that this will always be possible. For more information about the default environment variables, see
+You can view an example below:
 
 ```yml
 steps:
@@ -165,6 +165,8 @@ steps:
     run: |
       printf '%s\n' "$action_state" # This will output 'yellow'
 ```
+
+Note that you can't overwrite the value of the default environment variables named GITHUB_* and RUNNER_*. Currently you can overwrite the value of the CI variable. However, it's not guaranteed that this will always be possible. For more information about the default environment variables, see
 
 <!-- INFOMAGNUS UPDATES for sub OD 1.6.5 go here. Source Material: Infomagnus team to find source material and cite sources when they update material  https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/using-environments-for-deployment#about-environments , https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-deployments/managing-environments-for-deployment  -->
 ## Add environment protections
