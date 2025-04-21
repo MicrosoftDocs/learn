@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-basics-microsoft-dev-box.understand-the-components-of-microsoft-dev-box
+title: Understand the components of Microsoft Dev Box
+metadata:
+  title: Understand the components of Microsoft Dev Box
+  description: "Understand the components of Microsoft Dev Box"
+  ms.date: 04/21/2025
+  author: wwlpublish
+  ms.author: fkhan
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-understand-the-components-of-microsoft-dev-box.md)]
