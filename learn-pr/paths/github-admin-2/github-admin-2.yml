@@ -1,5 +1,5 @@
 ### YamlMime:LearningPath
-uid: learn.github.github-administration-products-1
+uid: learn.github.github-administration-products-2
 metadata:
   title: GitHub fundamentals - Administration basics and product features Part 2 of 2
   description: In this learning path, learn the basics of GitHub administration and discover the products that GitHub offers. This is the second learning path in a two part series.
@@ -25,5 +25,4 @@ modules:
 - learn.github-administration-for-enterprise-support-adoption
 - learn.github.manage-github-actions-enterprise
 - learn.github.github-actions-packages
-trophy:
-  uid: learn.github-administration-products.trophy
+
