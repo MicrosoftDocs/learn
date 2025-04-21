@@ -58,10 +58,15 @@ If you need to access the encrypted secret in your action's code, the action cod
 > When authoring your own actions, make sure not to include any encrypted secrets in your action's source code, because actions are sharable units of work. If your action needs to use encrypted secrets or other user-supplied inputs, it's best to use the core module from the [Actions Toolkit](https://github.com/actions/toolkit).
 >
 
+<<<<<<< main
+>
+
 <!-- INFOMAGNUS UPDATES for all of sub OD 4.3 go here! Source Material:https://www.google.com/url?q=https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions&sa=D&source=editors&ust=1742484244534691&usg=AOvVaw30HJhmh-nnnssWIlwRCI_5 -->
 
 <!-- Test -->
 =======
+=======
+>>>>>>> main
 
 ### Access Encrypted Secrets Within Actions and Workflows
 
@@ -130,4 +135,7 @@ Many enterprises integrate GitHub Actions with external secret management soluti
 - **Automated secret rotation** helps comply with security policies.  
 - **Audit logs and access control** enhance security monitoring.  
 - **Least privilege access** prevents unauthorized use of secrets.
+<<<<<<< main
 <!-- Test -->
+=======
+>>>>>>> main
