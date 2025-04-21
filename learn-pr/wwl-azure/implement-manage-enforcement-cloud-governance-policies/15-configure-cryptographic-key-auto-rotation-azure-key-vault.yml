@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-manage-enforcement-cloud-governance-policies.configure-cryptographic-key-auto-rotation-azure-key-vault
 title: Configure key rotation
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure key rotation
   description: "Configure key rotation"
   ms.date: 02/07/2025

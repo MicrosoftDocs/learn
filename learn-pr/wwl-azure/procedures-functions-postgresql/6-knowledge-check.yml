@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.procedures-functions-postgresql.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 05/10/2024
   author: wwlpublish
@@ -50,4 +48,4 @@ quiz:
       explanation: "Correct. A function returns a single value that can be used in a SELECT statement."
     - content: "Creating a stored procedure or a function doesn't address this requirement."
       isCorrect: false
-      explanation: "Incorrect. One of these two options can be used to fulfill these requirements."
+      explanation: "Incorrect. One of these two options can be used to fulfill these requirements."

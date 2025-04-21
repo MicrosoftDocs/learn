@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 06/23/2022
   author: wwlpublish
@@ -47,4 +45,4 @@ quiz:
       explanation: "Incorrect. This is an invalid function."
     - content: "COUNT"
       isCorrect: false
-      explanation: "Incorrect. The COUNT function performs a count of all the objects in a range."
+      explanation: "Incorrect. The COUNT function performs a count of all the objects in a range."

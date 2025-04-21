@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.secure-ai-services
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Secure Azure AI services
   description: Learn to secure Azure AI services.
   author: wwlpublish
@@ -46,4 +44,4 @@ units:
 - learn.wwl.secure-ai-services.summary
 badge:
   uid: learn.wwl.secure-ai-services.badge
-
+

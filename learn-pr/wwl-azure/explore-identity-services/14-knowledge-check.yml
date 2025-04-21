@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-identity-services.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Check what you learn in this module."
   ms.date: 08/01/2024
   author: wwlpublish
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. With Kerberos 5 Authentication and LDAP Authorization, users can change their passwords from the Linux client."
     - content: "Winbind Authentication / Authorization"
       isCorrect: false
-      explanation: "Incorrect. With Winbind Authentication and Authorization, users can change their passwords from the Linux client."
+      explanation: "Incorrect. With Winbind Authentication and Authorization, users can change their passwords from the Linux client."

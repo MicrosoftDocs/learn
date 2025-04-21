@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.protect-virtual-desktop-deployment-azure-firewall.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   ms.date: 01/05/2024
   author: vhorne
@@ -48,4 +46,4 @@ quiz:
     - content: "A default route to send all traffic to a firewall."
       isCorrect: false
       explanation: "Incorrect. After you deploy Azure Firewall, route all network traffic for the workload's virtual network to the firewall."
-
+

@@ -2,8 +2,6 @@
 uid: learn.azure.app-service-scale-up-scale-out.4-scale-up-a-web-app
 title: Scale up a web app
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Scale up a web app
   description: Describe how to use the Azure portal to scale a web up and down.
   ms.date: 11/08/2023
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/4-scale-up-a-web-app.md)]
-
+

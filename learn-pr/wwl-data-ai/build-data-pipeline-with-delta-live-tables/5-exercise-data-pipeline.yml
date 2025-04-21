@@ -2,13 +2,11 @@
 uid: learn.wwl.build-data-pipeline-with-delta-live-tables.exercise-data-pipeline
 title: Exercise - Create a data pipeline with Delta Live Tables
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create a data pipeline with Delta Live Tables
   description: "Exercise - Create a data pipeline with Delta Live Tables"
   ms.date: 07/23/2024
   author: wwlpublish
-  ms.author: theresai
+  ms.author: jamesh
   ms.topic: unit
 durationInMinutes: 60
 content: |

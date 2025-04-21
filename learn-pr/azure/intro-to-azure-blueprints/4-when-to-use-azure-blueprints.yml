@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-blueprints.when-to-use-azure-blueprints
 title: When to use Azure Blueprints
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: When to use Azure Blueprints
   description: "Learn the scenarios where you should consider using Azure Blueprints."
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-when-to-use-azure-blueprints.md)]
+  [!include[](includes/4-when-to-use-azure-blueprints.md)]

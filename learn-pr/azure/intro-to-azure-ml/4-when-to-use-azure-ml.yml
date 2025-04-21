@@ -2,8 +2,6 @@
 uid: learn.azure.intro-to-azure-ml.when-to-use-azure-ml
 title: When to use Azure Machine Learning
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: When to user Azure Machine Learning
   description: When to use Azure Machine Learning
   ms.date: 07/20/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-when-to-use-azure-ml.md)]
+  [!include[](includes/4-when-to-use-azure-ml.md)]

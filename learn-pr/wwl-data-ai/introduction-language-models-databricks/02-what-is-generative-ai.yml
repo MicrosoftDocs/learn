@@ -2,8 +2,6 @@
 uid: learn.wwl.introduction-language-models-databricks.what-is-generative-ai
 title: Understand Generative AI
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand Generative AI
   description: "Understand Generative AI"
   ms.date: 03/20/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/02-what-is-generative-ai.md)]
+  [!include[](includes/02-what-is-generative-ai.md)]

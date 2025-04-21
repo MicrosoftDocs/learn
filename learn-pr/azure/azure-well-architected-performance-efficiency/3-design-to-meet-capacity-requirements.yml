@@ -2,13 +2,11 @@
 uid: learn.azure-well-architected-performance-efficiency.design-to-meet-capacity-requirements
 title: Design to meet capacity requirements
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design to meet capacity requirements
   description: Learn how to design your workload to meet capacity requirements.
   ms.date: 12/13/2023
-  author: claytonsiemens77
-  ms.author: csiemens
+  author: PageWriter-MSFT
+  ms.author: prwilk
   ms.topic: unit
 durationInMinutes: 15
 content: |

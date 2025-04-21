@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-policy.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: "Summary of Azure Policy and other reading."
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]
-
+

@@ -6,37 +6,26 @@ metadata:
   prefetch-feature-rollout: true
   title: Configure Azure Application Gateway
   description: "Configure Azure Application Gateway"
-  ms.date: 01/10/2025
+  ms.date: 04/14/2025
   author: wwlpublish
-  ms.author: jileary
+  ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 20
+durationInMinutes: 9
 content: |
   [!include[](includes/3-configure-azure-application-gateway.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You're configuring Azure Application Gateway for your organization and you want to ensure that users don't experience performance degradation during peak times. Which setting should you configure?"
+  - content: "Which criteria does Application Gateway use to route requests to a web server?"
     choices:
-    - content: "Autoscaling"
+    - content: "The IP address of the web server that is the target of the request"
+      isCorrect: false
+      explanation: "Incorrect. The listener routes requests based on the hostname, port, and path in the URL of the request."
+    - content: "The region in which the servers hosting the web application are located"
+      isCorrect: false
+      explanation: "Incorrect. The listener routes requests based on the hostname, port, and path in the URL of the request."
+    - content: "The hostname, port, and path in the URL of the request"
       isCorrect: true
-      explanation: "Correct. With autoscaling enabled, the Application Gateway scales up or down based on application traffic requirements."
-    - content: "Manual scaling"
-      isCorrect: false
-      explanation: "Incorrect. The gateway doesn't autoscale. If there's more traffic than the Application Gateway can handle, it could result in traffic loss."
-    - content: "Health probes"
-      isCorrect: false
-      explanation: "Incorrect. Health probes monitor the health of all resources in the back-end pool."
-  - content: "What is a listener?"
-    choices:
-    - content: "A listener is an entity that checks for incoming connection requests."
-      isCorrect: true
-      explanation: "Correct. A listener is a logical entity that checks for incoming connection requests by using the port, protocol, host, and IP address."
-    - content: "A listener is an entity that routes traffic based on basic or path-based rules."
-      isCorrect: false
-      explanation: "Incorrect. A routing rule routes traffic based on basic or path-based rules."
-    - content: "A listener is a collection of servers that respond to requests."
-      isCorrect: false
-      explanation: "Incorrect. A backend pool responds to requests."
+      explanation: "Correct. The listener routes requests based on the hostname, port, and path in the URL of the request."

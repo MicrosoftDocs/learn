@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-alerts-blameless-retrospectives-just-culture.understand-server-response-time-degradation
 title: Understand server response time degradation
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand server response time degradation
   description: "Understand server response time degradation"
   ms.date: 05/08/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 2
 content: |
-  [!include[](includes/6-understand-server-response-time-degradation.md)]
+  [!include[](includes/6-understand-server-response-time-degradation.md)]

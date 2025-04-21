@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.work-with-form-recognizer
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Extract data from forms with Azure Document intelligence
   description: Azure Document intelligence extracts data at scale to enable the submission of documents in real time, at scale, with accuracy. This module gives users the tools to use the Azure Document intelligence vision API.
   author: wwlpublish
@@ -51,4 +49,4 @@ units:
 - learn.wwl.work-with-form-recognizer.summary
 badge:
   uid: learn.wwl.work-with-form-recognizer.badge
-
+

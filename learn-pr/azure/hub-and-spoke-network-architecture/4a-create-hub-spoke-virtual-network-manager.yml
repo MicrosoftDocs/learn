@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.hub-and-spoke-network-architecture.4a-create-hub-spoke-virtual-network-manager
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create a hub-spoke network topology with Azure Virtual Network Manager
   description: Learn about the benefits of creating a hub-spoke network topology using Azure Virtual Network Manager.
   ms.date: 02/19/2024
@@ -13,4 +11,4 @@ title: Create a hub-spoke network topology with Azure Virtual Network Manager
 durationInMinutes: 2
 content: |
   [!include[](includes/4a-create-hub-spoke-virtual-network-manager.md)]
-
+

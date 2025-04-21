@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.improve-app-scalability-resiliency-with-load-balancer.4-exercise-configure-public-load-balancer
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Configure a public load balancer
   description: Exercise - Configure a public load balancer
   ms.date: 10/14/2024
@@ -19,4 +17,4 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/4-exercise-configure-public-load-balancer.md)]
-
+

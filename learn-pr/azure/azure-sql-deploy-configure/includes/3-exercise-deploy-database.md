@@ -38,6 +38,9 @@ In this activity, you deploy Azure SQL Database by using the Azure portal. Throu
     |**Compute + storage**             | Leave the default of **General Purpose**, **Gen5, 2 vCores, 32 GB storage**. |
     |**Backup storage redundancy**     | Leave the default of **Geo-redundant backup storage**. |
 
+   > [!CAUTION]
+   > This training module uses the less-secure SQL password authentication to simplify the demo. For improved security, Microsoft Entra authentication is the recommended authentication method for Azure SQL products. 
+
 1. Select **Next: Networking**.  
 
 1. For **Connectivity method**, select **Public endpoint**. Select **Yes** for both **Allow Azure services and resources to access this server** and **Add current client IP address**.

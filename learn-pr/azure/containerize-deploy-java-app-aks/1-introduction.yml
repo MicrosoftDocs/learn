@@ -2,8 +2,6 @@
 uid: learn.containerize-deploy-java-app-aks.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: Introduction
   title: Introduction
   description: Introduction to containerizing Java apps.
@@ -18,4 +16,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]
-
+

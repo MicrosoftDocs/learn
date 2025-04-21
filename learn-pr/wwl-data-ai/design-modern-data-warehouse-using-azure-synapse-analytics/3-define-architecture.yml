@@ -2,8 +2,6 @@
 uid: learn.wwl.design-modern-data-warehouse-using-azure-synapse-analytics.define-architecture
 title: Define a modern data warehouse architecture
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Define a modern data warehouse architecture
   description: "Define a modern data warehouse architecture"
   ms.date: 07/30/2024
@@ -19,4 +17,4 @@ labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/3-define-architecture.md)]
-
+

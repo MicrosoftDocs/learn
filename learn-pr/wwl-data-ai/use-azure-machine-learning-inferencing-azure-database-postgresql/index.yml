@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.use-azure-machine-learning-inferencing-azure-database-postgresql
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use Azure Machine Learning for inferencing from Azure Database for PostgreSQL
   description: Learn how to use Azure Machine Learning for inferencing from Azure Database for PostgreSQL.
   author: wwlpublish
@@ -43,4 +41,4 @@ units:
 - learn.wwl.use-azure-machine-learning-inferencing-azure-database-postgresql.summary
 badge:
   uid: learn.wwl.use-azure-machine-learning-inferencing-azure-database-postgresql.badge
-
+

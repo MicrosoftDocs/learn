@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-mongodb-database-for-azure-cosmos-db.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 12/28/2022
   author: wwlpublish
@@ -47,4 +45,4 @@ quiz:
       explanation: "Incorrect. While a compound index would have the same filtering cost than single indexes per field, it would have higher indexing cost than the single indexes per field."
     - content: "One single field index for **lastName** and one single field index for **firstName**."
       isCorrect: true
-      explanation: "Correct. Single indexes per field would have the same filtering cost as a compound index of those fields, but would have a lower indexing cost than the indexing cost of the compound index."
+      explanation: "Correct. Single indexes per field would have the same filtering cost as a compound index of those fields, but would have a lower indexing cost than the indexing cost of the compound index."

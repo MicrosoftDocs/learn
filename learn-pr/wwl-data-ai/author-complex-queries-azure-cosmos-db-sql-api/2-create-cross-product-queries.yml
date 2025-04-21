@@ -2,11 +2,9 @@
 uid: learn.wwl.author-complex-queries-azure-cosmos-db-sql-api.implement-correlated-subqueries
 title: Create cross-product queries
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create cross-product queries
   description: "Create cross-product queries"
-  ms.date: 03/10/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

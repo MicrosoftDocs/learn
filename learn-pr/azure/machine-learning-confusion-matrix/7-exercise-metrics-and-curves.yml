@@ -2,15 +2,13 @@
 uid: learn.machinelearning.evaluate-real-world-models.exercise-metrics-and-curves
 title: Exercise - Multiple metrics and ROC curves
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Multiple metrics and ROC curves
   description: Exercise unit about multiple metrics and ROC curves in machine learning
-  ms.date: 07/20/2024
+  ms.date: 03/13/2025
   author: s-polly
   ms.author: scottpolly
   ms.topic: unit
 durationInMinutes: 12
 sandbox: true
 notebook: notebooks/8-7-exercise-metrics-and-curves.ipynb
-
+

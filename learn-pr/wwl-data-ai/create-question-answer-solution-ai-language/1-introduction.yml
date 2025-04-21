@@ -2,8 +2,6 @@
 uid: learn.wwl.create-question-answer-solution-ai-language.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
-
+

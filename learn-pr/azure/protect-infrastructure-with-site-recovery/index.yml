@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.protect-infrastructure-with-azure-site-recovery
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Protect your Azure infrastructure with Azure Site Recovery
   description: Provide disaster recovery for your Azure infrastructure by customizing replication, failover, and failback of Azure virtual machines with Azure Site Recovery.
   manager: jsuri
@@ -44,4 +42,4 @@ units:
 - learn.protect-infrastructure-with-azure-site-recovery.9-summary
 badge:
   uid: learn.protect-infrastructure-with-azure-site-recovery.badge
-
+

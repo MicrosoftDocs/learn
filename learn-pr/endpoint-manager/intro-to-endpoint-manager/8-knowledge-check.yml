@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-endpoint-manager.8-knowledge-check
 metadata:
-  title: Knowledge Check
+  title: Module assessment
   description: Knowledge Check
   ms.date: 06/05/2024
   author: Erikre 
   ms.author: erikre
   ms.topic: unit
-title: Knowledge Check
+title: Module assessment
 durationInMinutes: 3
 quiz:
   title: Check your knowledge

@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-provision-environments.set-up-run-availability-tests
 title: Set up and run availability tests
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Set up and run availability tests
   description: "Set up and run availability tests"
   ms.date: 05/06/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 60
 content: |
-  [!include[](includes/6-set-up-run-availability-tests.md)]
+  [!include[](includes/6-set-up-run-availability-tests.md)]

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-project-repository-structure-support-secure-pipelines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure a project and repository structure to support secure pipelines
   description: Configure a project and repository structure to support secure pipelines.
   ms.date: 01/18/2024
@@ -58,4 +56,4 @@ units:
 - learn.wwl.configure-project-repository-structure-support-secure-pipelines.summary
 badge:
   uid: learn.wwl.configure-project-repository-structure-support-secure-pipelines.badge
-
+

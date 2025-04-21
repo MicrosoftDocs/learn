@@ -2,8 +2,6 @@
 uid: learn.wwl.discover-devops.explore-devops-goals-benefits
 title: 'Explore DevOps goals and benefits'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Explore devOps goals and benefits'
   description: "DevOps brings significant value to organizations relying on technology, improving innovation pace, deployment, and maintenance. Explore its benefits and goals."
   ms.date: 02/05/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 2
 content: |
-  [!include[](includes/4-explore-devops-goals-benefits.md)]
+  [!include[](includes/4-explore-devops-goals-benefits.md)]

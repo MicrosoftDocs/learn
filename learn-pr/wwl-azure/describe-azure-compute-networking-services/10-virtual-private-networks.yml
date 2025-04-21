@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-azure-compute-networking-services.virtual-private-networks
 title: Describe Azure virtual private networks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe Azure virtual private networks
   description: "Describe Azure virtual private networks"
   ms.date: 09/20/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 5
 content: |
-  [!include[](includes/10-virtual-private-networks.md)]
+  [!include[](includes/10-virtual-private-networks.md)]

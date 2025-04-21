@@ -2,8 +2,6 @@
 uid: learn.wwl.create-speech-enabled-apps.text-to-speech
 title: Use the text to speech API
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use the text to speech API
   description: Use the text to speech API
   author: wwlpublish
@@ -17,4 +15,4 @@ labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/4-text-to-speech.md)]
-
+

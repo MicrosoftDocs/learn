@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-provision-deploy-relational-database-offerings-azure.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 10/09/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-summary.md)]
+  [!include[](includes/6-summary.md)]

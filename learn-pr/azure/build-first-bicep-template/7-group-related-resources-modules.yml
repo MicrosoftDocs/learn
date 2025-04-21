@@ -2,8 +2,6 @@
 uid: learn.azure.deploy-azure-resources-bicep.group-related-resources-modules
 title: Group related resources by using modules
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Group related resources by using modules
   description: Learn how to create self-contained, reusable modules for your Bicep code.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/7-group-related-resources-modules.md)]
-
+

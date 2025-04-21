@@ -2,8 +2,6 @@
 uid: learn.wwl.azure-virtual-desktop-architecture.vm-sizing
 title: Virtual machine sizing for Azure Virtual Desktop
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Virtual machine sizing for Azure Virtual Desktop
   description: "Virtual machine sizing for Azure Virtual Desktop"
   ms.date: 06/21/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/7-virtual-machine-sizing.md)]
+  [!include[](includes/7-virtual-machine-sizing.md)]

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.optimize-operations-with-automanage
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Optimizing IT operations and management with Azure Automanage
   description: Learn how to use Azure Automanage to optimize IT operations and management.
   manager: rayoflores
@@ -44,4 +42,4 @@ units:
 - learn.optimize-operations-with-automanage.summary
 badge:
   uid: learn.optimize-operations-with-automanage.badge
-
+

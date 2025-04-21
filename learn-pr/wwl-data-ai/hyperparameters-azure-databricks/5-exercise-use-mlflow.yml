@@ -2,8 +2,6 @@
 uid: learn.wwl.hyperparameters-azure-databricks.exercise-use-mlflow
 title: Exercise - Optimize hyperparameters for machine learning in Azure Databricks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Optimize hyperparameters for machine learning in Azure Databricks
   description: Exercise - Optimize hyperparameters for machine learning in Azure Databricks
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 45
 content: |
   [!include[](includes/5-exercise-use-mlflow.md)]
-
+

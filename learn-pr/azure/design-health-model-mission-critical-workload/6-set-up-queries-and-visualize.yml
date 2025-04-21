@@ -2,8 +2,6 @@
 uid: learn.design-health-model-mission-critical-workload.set-up-queries-and-visualize
 title: Collect, query, and visualize health states
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Collect, query, and visualize health states
   description: Learn how to collect data, run queries, and visualize health states in a health model.
   ms.date: 08/05/2024
@@ -49,4 +47,4 @@ quiz:
       explanation: "Incorrect. Azure Dashboards is a suitable technology for using dashboards, but it might not fully support all necessary customizations."
     - content: "Azure Managed Grafana"
       isCorrect: false
-      explanation: "Incorrect. Azure Managed Grafana is a powerful dashboard technology that has rich customization options, but using it to build and manage the right visualization is more complex."
+      explanation: "Incorrect. Azure Managed Grafana is a powerful dashboard technology that has rich customization options, but using it to build and manage the right visualization is more complex."

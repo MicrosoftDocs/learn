@@ -2,8 +2,6 @@
 uid: learn.machinelearning.introduction-to-data-for-machine-learning.evaluate-image-language-data
 title: One-hot vectors
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: One-hot vectors
   description: Conceptual unit about one-hot vectors in machine learning
   ms.date: 10/10/2024
@@ -13,4 +11,4 @@ metadata:
   ms.reviewer: franksolomon
 durationInMinutes: 5
 content: |
-  [!include[](includes/6-evaluate-image-language-data.md)] 
+  [!include[](includes/6-evaluate-image-language-data.md)] 

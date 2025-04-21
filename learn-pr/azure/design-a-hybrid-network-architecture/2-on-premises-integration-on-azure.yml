@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-a-hybrid-network-architecture.2-on-premises-integration-on-azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: On-premises network integration on Azure
   description: Explore on-premises connectivity in the Azure platform, get an overview of Azure Virtual Networks, and how to use VPN gateways to secure traffic to an on-premises network.
   ms.date: 02/16/2024
@@ -59,4 +57,4 @@ quiz:
     - content: A VPN tunnel
       isCorrect: false
       explanation: A VPN tunnel, such as IPsec, is the method for connecting between on-premises and Azure.
-
+

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.enable-semantic-search-azure-database-postgresql
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Enable semantic search in Azure Database for PostgreSQL
   description: Learn to enable semantic search in Azure Database for PostgreSQL.
   author: wwlpublish
@@ -47,4 +45,4 @@ units:
 - learn.wwl.enable-semantic-search-azure-database-postgresql.summary
 badge:
   uid: learn.wwl.enable-semantic-search-azure-database-postgresql.badge
-
+

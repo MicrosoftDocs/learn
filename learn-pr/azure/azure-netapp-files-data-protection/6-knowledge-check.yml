@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-netapp-files-data-protection.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge of Azure NetApp Files data replication and resiliency. 
   ms.date: 11/22/2024
   author: b-ahibbard

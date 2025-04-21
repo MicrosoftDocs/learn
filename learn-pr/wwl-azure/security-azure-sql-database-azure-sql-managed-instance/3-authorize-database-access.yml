@@ -2,8 +2,6 @@
 uid: learn.wwl.security-azure-sql-database-azure-sql-managed-instance.authorize-database-access
 title: Enable Microsoft Entra database authentication
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Enable Microsoft Entra database authentication
   description: "Enable SQL database authentication"
   ms.date: 02/24/2025

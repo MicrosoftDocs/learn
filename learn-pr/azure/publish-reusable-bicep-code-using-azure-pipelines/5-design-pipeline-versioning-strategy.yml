@@ -2,8 +2,6 @@
 uid: learn.azure.publish-reusable-bicep-code-using-azure-pipelines.design-pipeline-versioning-strategy
 title: Design a pipeline and versioning strategy
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Design a pipeline and versioning strategy
   description: Learn about how to version your reusable Bicep code within a pipeline, and whether to use a single pipeline or multiple pipelines.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/5-design-pipeline-versioning-strategy.md)]
-
+

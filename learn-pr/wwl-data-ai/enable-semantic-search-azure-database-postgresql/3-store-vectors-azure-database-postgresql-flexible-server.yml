@@ -2,8 +2,6 @@
 uid: learn.wwl.enable-semantic-search-azure-database-postgresql.store-vectors-azure-database-postgresql-flexible-server
 title: Store vectors in Azure Database for PostgreSQL
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Store vectors in Azure Database for PostgreSQL
   description: Store vectors in Azure Database for PostgreSQL
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/3-store-vectors-azure-database-postgresql-flexible-server.md)]
-
+

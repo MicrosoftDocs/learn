@@ -2,8 +2,6 @@
 uid: learn.containerize-deploy-java-app-aks.containerize
 title: Containerize a Java app
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: Containerize a Java app
   title: Containerize a Java app
   description: Containerize a Java app.
@@ -18,4 +16,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-containerize.md)]
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.build-language-understanding-model.exercise
 title: Exercise - Build an Azure AI services conversational language understanding model
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Build an Azure AI services conversational language understanding model
   description: Exercise - Build an Azure AI services conversational language understanding model
   author: wwlpublish
@@ -17,4 +15,4 @@ labId: 152404
 labModal: true
 content: |
   [!include[](includes/7-exercise.md)]
-
+

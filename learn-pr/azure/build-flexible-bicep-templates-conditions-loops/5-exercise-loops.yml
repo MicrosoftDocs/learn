@@ -3,8 +3,6 @@ uid: learn.azure.bicep-conditions-loops.exercise-loops
 title: Exercise - Deploy multiple resources by using loops
 sandbox: true
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Deploy multiple resources by using loops
   description: Learn how to use loops to deploy multiple instances of resources.
@@ -18,4 +16,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/5-exercise-loops.md)]
-
+

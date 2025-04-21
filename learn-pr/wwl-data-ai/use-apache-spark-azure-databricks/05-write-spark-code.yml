@@ -2,8 +2,6 @@
 uid: learn.wwl.use-apache-spark-azure-databricks.use-spark-to-work-data-files
 title: Use Spark to work with data files
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use Spark to work with data files
   description: "Use Spark to work with data files"
   ms.date: 12/12/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/05-write-spark-code.md)]
+  [!include[](includes/05-write-spark-code.md)]

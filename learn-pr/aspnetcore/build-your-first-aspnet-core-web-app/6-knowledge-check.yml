@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-your-first-aspnet-core-web-app.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge about creating and running an ASP.NET Core app using the .NET CLI.
   ms.date: 9/9/2024
   author: wadepickett

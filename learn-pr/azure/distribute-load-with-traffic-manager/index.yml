@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.distribute-load-with-traffic-manager
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Enhance your service availability and data locality by using Azure Traffic Manager
   description: Discover how Azure Traffic Manager provides DNS load balancing for your application to improve the performance and availability of your application.
   manager: kumud
@@ -42,4 +40,4 @@ units:
 - learn.distribute-load-with-traffic-manager.6-summary
 badge:
   uid: learn.distribute-load-with-traffic-manager.badge
-
+

@@ -2,8 +2,6 @@
 uid: learn.azure.deploy-java-spring-boot-app-service-mysql.5-exercise-deploy
 title: Exercise - Deploy a Spring Boot application
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Deploy a Spring Boot application
   description: Follow this exercise to learn how to deploy a Spring Boot application.
   ms.date: 11/08/2023
@@ -17,4 +15,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/5-exercise-deploy.md)]
-
+

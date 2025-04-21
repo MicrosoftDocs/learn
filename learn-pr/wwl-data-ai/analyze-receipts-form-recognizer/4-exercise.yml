@@ -2,8 +2,6 @@
 uid: learn.wwl.analyze-receipts-form-recognizer.exercise
 title: Exercise - Extract data from documents in Azure AI Foundry portal
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Extract data from documents in Azure AI Foundry portal
   description: "Exercise - Extract data from documents in Azure AI Foundry portal"
   ms.date: 02/06/2025
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-exercise.md)]
+  [!include[](includes/4-exercise.md)]

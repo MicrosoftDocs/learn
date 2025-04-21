@@ -2,8 +2,6 @@
 uid: learn.wwl.investigate-container-for-use-with-ai-services.use-ai-services-containers
 title: Use Azure AI services containers
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use Azure AI services containers
   description: Use Azure AI services containers
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/3-use-ai-services-container.md)]
-
+

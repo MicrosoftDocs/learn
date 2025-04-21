@@ -2,8 +2,6 @@
 uid: learn.azure.azure-netapp-files-essentials.metrics
 title: Monitor Azure NetApp Files
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-module
   title: Metrics for Azure NetApp Files
   description: Learn about the metric assessments provided in Azure NetApp Files to better understand capacity, throughput, and performance. 
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/6-metrics.md)]
+  [!include[](includes/6-metrics.md)]

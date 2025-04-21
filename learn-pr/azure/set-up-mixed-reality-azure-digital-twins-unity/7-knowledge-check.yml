@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.set-up-mixed-reality-azure-digital-twins-unity.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Three multiple choice questions to test your knowledge.
   ms.date: 01/24/2024
   author: JBrentJ
@@ -45,4 +43,4 @@ quiz:
       explanation: "While Azure SignalR does deal with pushing data to connected clients, it is unrelated to mesh objects in Unity."
     - content: "Extends the Unity editor's functionality to include data persistence"
       isCorrect: false
-      explanation: "Azure SignalR is a cloud service for pushing content updates to connected clients and is not a part of the Unity engine or editor."
+      explanation: "Azure SignalR is a cloud service for pushing content updates to connected clients and is not a part of the Unity engine or editor."

@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.chain-azure-functions-data-using-input-output-bindings.4-read-data-with-input-bindings-portal-lesson
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Read data with input bindings
   description: In this hands-on unit, we read data from Azure Cosmos DB in our Azure function by using an Azure Cosmos DB input binding.
   ms.date: 06/06/2024
@@ -13,4 +11,4 @@ title: Read data with input bindings
 durationInMinutes: 5
 content: |
   [!include[](includes/4-read-data-with-input-bindings-portal-lesson.md)]
-
+

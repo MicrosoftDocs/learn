@@ -2,8 +2,6 @@
 uid: learn.azure.move-azure-resources-to-another-resource-group.identify-incorrectly-assigned-resources
 title: Identify incorrectly assigned resources in Azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Identify incorrectly assigned resources in Azure
   description: Identify incorrectly assigned resources in Azure
   ms.date: 10/18/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/2-identify-incorrectly-assigned-resources.md)]
-
+

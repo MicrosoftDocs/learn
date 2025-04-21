@@ -2,8 +2,6 @@
 uid: learn.azure.bicep-conditions-loops.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: Learn how to build flexible Bicep templates by using conditions and loops. 
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-
+

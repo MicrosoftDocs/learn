@@ -2,8 +2,6 @@
 uid: learn.azure.intro-to-azure-route-server.5-deploy-azure-route-server
 title: Deploy Azure Route Server
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Deploy Azure Route Server
   description: This unit provides an overview of deploying Azure Route Server.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/5-deploy-azure-route-server.md)]
-
+

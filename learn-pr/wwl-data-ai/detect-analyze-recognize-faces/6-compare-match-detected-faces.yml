@@ -2,8 +2,6 @@
 uid: learn.wwl.detect-analyze-recognize-faces.compare-match-detected-faces
 title: Compare and match detected faces
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Compare and match detected faces
   description: Compare and match detected faces
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/6-compare-match-detected-faces.md)]
-
+

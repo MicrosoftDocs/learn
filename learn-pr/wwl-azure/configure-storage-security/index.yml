@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-storage-security
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure Azure Storage security
   description: "Learn how to configure common Azure Storage security features like storage access signatures."
   ms.date: 03/04/2025

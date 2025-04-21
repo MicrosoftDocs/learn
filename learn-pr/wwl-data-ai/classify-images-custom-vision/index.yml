@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.classify-images-custom-vision
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Classify images with Azure AI Custom Vision
   description: Explore Azure AI Custom Vision's classification capabilities.
   author: wwlpublish
@@ -41,4 +39,4 @@ units:
 - learn.wwl.classify-images-custom-vision.summary
 badge:
   uid: learn.wwl.classify-images-custom-vision.badge
-
+
