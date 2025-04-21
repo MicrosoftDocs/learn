@@ -12,7 +12,7 @@ The output is:
 
 :::image type="content" alt-text="Screenshot that shows a histogram of all the columns." source="../media/normalize-1.png" loc-scope="Azure":::
 
-There's no bell curve in sight. Worse, a lot of the data is clustered at or around 0. We'll use the [Box-Cox Transformation](https://www.statisticshowto.datasciencecentral.com/box-cox-transformation/?azure-portal=true) on the data, but it requires entirely positive input. So we'll add 1 to every value in each column.
+There's no bell curve in sight. Worse, a lot of the data is clustered at or around 0. We'll use the [Box-Cox Transformation](https://www.statisticshowto.com/probability-and-statistics/normal-distributions/box-cox-transformation) on the data, but it requires entirely positive input. So we'll add 1 to every value in each column.
 
 ```python
 nutr_df = nutr_df + 1
