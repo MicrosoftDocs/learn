@@ -1,4 +1,4 @@
-In this unit, you'll create a basic Spring Boot application. You'll use the Azure CLI and an integrated development environment (IDE) of your choice to edit the code. Use a terminal of your choice to run the code.
+In this unit, you'll create a basic Spring Boot application. You'll use the Azure CLI and an integrated development environment (IDE) of your choice to edit the code. Use a terminal of your choice to run the code. Make sure you're signed in to your Azure account in your IDE and terminal before you proceed.
 
 ## Prepare the working environment
 
@@ -46,11 +46,11 @@ Now you'll create a managed MySQL server.
 Run the following script to create a small instance of Azure Database for MySQL. The database has 1 CPU and 2 GB of RAM.
 
 ```bash
-az mysql server create \
+az mysql flexible-server create \
     --resource-group $AZ_RESOURCE_GROUP \
     --name $AZ_DATABASE_NAME \
     --location $AZ_LOCATION \
-    --sku-name B_Gen5_1 \
+    --sku-name Standard_B1ms \
     --storage-size 5120 \
     --admin-user $AZ_MYSQL_USERNAME \
     --admin-password $AZ_MYSQL_PASSWORD \
@@ -61,15 +61,15 @@ This script creates a small MySQL server that uses the variables you set up earl
 
 ### Configure a firewall rule for your MySQL server
 
-Azure Database for MySQL is secured by default. Its firewall allows no incoming connections, so add a firewall rule to allow the local IP address to access the database server.
+Azure Database for MySQL is secured by default. Its firewall allows no incoming connections. So add a firewall rule to allow the local IP address to access the database server.
 
 Run the following command to open the server's firewall:
 
 ```bash
-az mysql server firewall-rule create \
+az mysql flexible-server firewall-rule create \
     --resource-group $AZ_RESOURCE_GROUP \
-    --name $AZ_DATABASE_NAME-database-allow-local-ip \
-    --server-name $AZ_DATABASE_NAME \
+    --name $AZ_DATABASE_NAME \
+    --rule-name database-allow-local-ip \
     --start-ip-address $AZ_LOCAL_IP_ADDRESS \
     --end-ip-address $AZ_LOCAL_IP_ADDRESS \
     | jq
@@ -78,10 +78,10 @@ az mysql server firewall-rule create \
 Run the following command to allow firewall access from Azure resources:
 
 ```bash
-az mysql server firewall-rule create \
+az mysql flexible-server firewall-rule create \
     --resource-group $AZ_RESOURCE_GROUP \
-    --name allAzureIPs \
-    --server-name $AZ_DATABASE_NAME \
+    --name $AZ_DATABASE_NAME \
+    --rule-name allAzureIPs \
     --start-ip-address 0.0.0.0 --end-ip-address 0.0.0.0 \
     | jq
 ```
@@ -91,9 +91,9 @@ az mysql server firewall-rule create \
 The MySQL server that you created earlier is empty. It has no database that you can use with the Spring Boot application. Create a new database called `demo`:
 
 ```bash
-az mysql db create \
+az mysql flexible-server db create \
     --resource-group $AZ_RESOURCE_GROUP \
-    --name demo \
+    --database-name demo \
     --server-name $AZ_DATABASE_NAME \
     | jq
 ```
@@ -131,7 +131,7 @@ spring.jpa.hibernate.ddl-auto=create-drop
 > The configuration property `spring.jpa.hibernate.ddl-auto=create-drop` means that Spring Boot will automatically create a database schema at application start-up and will try to delete the database schema when it shuts down. This property is great for testing, but it shouldn't be used in production!
 
 > [!NOTE]
-> You append `?serverTimezone=UTC` to the configuration property `spring.datasource.url`. This setup tells the Java Database Connectivity (JDBC) driver to use the Coordinated Universal Time (UTC) date format when you connect to the database. Otherwise, your Java server won't use the same date format as the database, which will result in an error.
+> Appending `?serverTimezone=UTC` to the configuration property `spring.datasource.url` tells the Java Database Connectivity (JDBC) driver to use the Coordinated Universal Time (UTC) date format when you connect to the database. Otherwise, your Java server won't use the same date format as the database, which will result in an error.
 
 Now start your application by using the provided Maven wrapper:
 
