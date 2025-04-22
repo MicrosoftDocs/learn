@@ -1,4 +1,4 @@
-[!VIDEO https://learn-video.azurefd.net/vod/player?id=51e75820-38bb-4c1d-9fec-5ad2c670e42e]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=51e75820-38bb-4c1d-9fec-5ad2c670e42e]
 
 Have you ever wanted to buy something but didn't have enough money? What if you could make a plan that helps you stretch your money further? That's what budgeting is all about! Today, we learn some easy ways to take control of your money, so you can learn how to cover your needs, avoid those "uh-oh" moments when you're out of cash, and even save up for something special. Let's find out how you can start making smart choices with your money today!
 

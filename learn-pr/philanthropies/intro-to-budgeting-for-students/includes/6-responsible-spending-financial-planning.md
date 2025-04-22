@@ -1,4 +1,4 @@
-[!VIDEO https://learn-video.azurefd.net/vod/player?id=7e4bfc63-55f2-424b-8086-a8ba26c72eb9]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7e4bfc63-55f2-424b-8086-a8ba26c72eb9]
 
 Responsible spending is all about making smart choices with your money so you can cover your needs, enjoy your wants, and still have enough left over to save for the future. It means thinking carefully before you buy something, asking yourself if it's really necessary or if it's just an impulse.
 
