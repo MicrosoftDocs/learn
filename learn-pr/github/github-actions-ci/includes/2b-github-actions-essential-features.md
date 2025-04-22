@@ -169,7 +169,10 @@ steps:
 Note that you can't overwrite the value of the default environment variables named GITHUB_* and RUNNER_*. Currently you can overwrite the value of the CI variable. However, it's not guaranteed that this will always be possible. For more information about the default environment variables, see
 
 <!-- INFOMAGNUS UPDATES for sub OD 1.6.5 go here. Source Material: Infomagnus team to find source material and cite sources when they update material  https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/using-environments-for-deployment#about-environments , https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-deployments/managing-environments-for-deployment  -->
+
 ## Add environment protections
+
+You can add protection rules for environments defined for your GitHub repository.
 
 ### About environments
 Environments are used to describe a general deployment target like production, staging, or development. When a GitHub Actions workflow deploys to an environment, the environment is displayed on the main page of the repository. You can use environments to require approval for a job to proceed, restrict which branches can trigger a workflow, gate deployments with custom deployment protection rules, or limit access to secrets. For more information about creating environments, see Managing environments for deployment.
@@ -185,6 +188,14 @@ Deployment protection rules require specific conditions to pass before a job ref
 Third-party systems can be observability systems, change management systems, code quality systems, or other manual configurations that you use to assess readiness before deployments are safely rolled out to environments.
 
 #### Required reviewers protection rules
+
+Use required reviewers to require a specific person or team to approve workflow jobs that reference the environment. You can list up to six users or teams as reviewers. The reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed.
+
+You also have the option to prevent self-reviews for deployments to protected environments. If you enable this setting, users who initiate a deployment cannot approve the deployment job, even if they are a required reviewer. This ensures that deployments to protected environments are always reviewed by more than one person.
+
+For more information on reviewing jobs that reference an environment with required reviewers, see Reviewing deployments.
+
+
 
 #### Wait timer protection rules
 
