@@ -1,6 +1,6 @@
 Budgeting methods make it easier to manage your money effectively and achieve your goals. They help you prioritize needs, avoid overspending, and build good habits.
 
-`include graphic that compares all methods`
+:::image type="content" source="../media/saving-helps.png" alt-text="Screenshot of saving helps." lightbox="../media/saving-helps.png":::
 
 Reflection Activity: Which method do you think would work best for you? Why?
 
@@ -27,7 +27,7 @@ Ask Copilot Activities:
 1. Review the budget Copilot generates, which will divide the income into different spending and saving categories.
 1. Check if the budget aligns with your needs and financial goals.
 1. Ask Copilot: "What adjustments can I make to save more or balance my spending better?"
-1. Modify the budget based on Copilot’s recommendations.
+1. Modify the budget based on Copilot's recommendations.
 1. Write down or save your final budget for future reference.
 1. Consider how you would follow this budget in real life.
 1. Reflect on how budgeting can help you manage money effectively.
