@@ -47,11 +47,12 @@ When creating a packaged composite action, the steps are defined in a single `ac
 You must place your composite action in its own directory inside the repository.
 
 **Example Directory Structure:**
+```
 .github/actions/my-composite-action/
 ├── action.yml
 └── scripts/
     └── my-script.sh
-
+```
 ### 2. Define the `action.yml` File
 
 Inside the **my-composite-action directory**, create an `action.yml` file.
