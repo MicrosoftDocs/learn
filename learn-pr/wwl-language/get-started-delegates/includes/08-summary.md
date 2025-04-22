@@ -2,8 +2,8 @@ In this module, you learned about the role and implementation of delegates in C#
 
 The main takeaways from this module include your understanding of how delegates enhance code flexibility and reusability by encapsulating methods and passing them as parameters. You learned about the use of strongly typed delegates like `Action` and `Func` that simplify code, improve readability, and enhance maintainability. The module also introduced the concept of variance in C#, which enhances flexibility in method signatures with delegates, allowing methods to be assigned to delegates even if their parameter types or return types aren't identical. You also learned about the practical application of these concepts through an exercise involving the implementation of delegates in a C# app.
 
-Other reading:
+## Other reading
 
-1. [Delegates (C# Programming Guide)](/dotnet/csharp/programming-guide/delegates/)
-1. [Covariance and Contravariance in C#](/dotnet/standard/generics/covariance-and-contravariance)
-1. [Lambda expressions (C# Programming Guide)](/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions)
+- [Delegates (C# Programming Guide)](/dotnet/csharp/programming-guide/delegates/)
+- [Covariance and Contravariance in C#](/dotnet/standard/generics/covariance-and-contravariance)
+- [Lambda expressions (C# Programming Guide)](/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions)

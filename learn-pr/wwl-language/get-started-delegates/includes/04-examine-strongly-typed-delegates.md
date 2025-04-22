@@ -287,7 +287,7 @@ Func<Customer, Customer, int> compare = (c1, c2) => string.Compare(c1.CustomerId
 
 ```
 
-## Key Points
+## Key points
 
 - Strongly typed delegates, such as `Action` and `Func`, simplify the process of working with delegates by allowing you to use generic types instead of defining custom delegate types for each method signature.
 - `Action` delegates are used for methods that don't return a value, while `Func` delegates are used for methods that return a value.

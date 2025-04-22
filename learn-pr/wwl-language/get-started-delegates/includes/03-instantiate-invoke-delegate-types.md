@@ -235,7 +235,7 @@ Here are some common scenarios where delegates are used:
 > [!NOTE]
 > The event handling scenario is covered in a separate module along with an introduction to using events in C# apps.
 
-## Key Points
+## Key points
 
 - Delegate instances can be created using named methods, method group conversion, anonymous methods, or lambda expressions.
 - Delegates can be invoked like regular methods and can be combined to create multicast delegates.
