@@ -1,9 +1,9 @@
 ### YamlMime:Module
-uid: learn.wwl.examine-implementing-delegates
+uid: learn.wwl.get-started-delegates
 metadata:
   title: Get started with delegates
   description: "Learn how to declare, instantiate, and invoke delegates for scenarios that require dynamic method invocation, such as callback methods and custom sorting or filtering. Learn how to use delegates to create flexible and extensible code that can adapt to changing requirements."
-  ms.date: 04/21/2025
+  ms.date: 04/22/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module-intro-to-product
@@ -48,13 +48,13 @@ subjects:
 - app-development
 - custom-app-development
 units:
-- learn.wwl.examine-implementing-delegates.introduction
-- learn.wwl.examine-implementing-delegates.examine-late-binding-delegates
-- learn.wwl.examine-implementing-delegates.instantiate-invoke-delegate-types
-- learn.wwl.examine-implementing-delegates.examine-strongly-typed-delegates
-- learn.wwl.examine-implementing-delegates.examine-variance-delegates
-- learn.wwl.examine-implementing-delegates.exercise-implement-delegates-csharp-app
-- learn.wwl.examine-implementing-delegates.knowledge-check
-- learn.wwl.examine-implementing-delegates.summary
+- learn.wwl.get-started-delegates.introduction
+- learn.wwl.get-started-delegates.examine-late-binding-delegates
+- learn.wwl.get-started-delegates.instantiate-invoke-delegate-types
+- learn.wwl.get-started-delegates.examine-strongly-typed-delegates
+- learn.wwl.get-started-delegates.examine-variance-delegates
+- learn.wwl.get-started-delegates.exercise-implement-delegates-csharp-app
+- learn.wwl.get-started-delegates.knowledge-check
+- learn.wwl.get-started-delegates.summary
 badge:
-  uid: learn.wwl.examine-implementing-delegates.badge
+  uid: learn.wwl.get-started-delegates.badge
