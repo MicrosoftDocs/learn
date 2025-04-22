@@ -1,4 +1,4 @@
-`embed Exploring Different Budgeting Methods video`
+[!VIDEO https://learn-video.azurefd.net/vod/player?id=5eb4a865-da16-4a8b-89ef-d9ce91445b2f]
 
 Have you ever wished your money could last longer or help you save for something special? Budgeting methods are like tools to make the most of your money, helping you cover your needs, save for goals, and plan for the unexpected. Let's explore some popular budgeting methods and find out how to choose one that works best for you!
 
@@ -15,4 +15,4 @@ Here's what we explore today:
 
 Each of these methods can help you make the most out of what you have, whether it's allowance, chore money, or gifts from family. By the end of this lesson, you'll have the tools to pick a method that fits your goals and lifestyle.
 
-`embed Exploring Different Budgeting Methods Video`
+[!VIDEO https://learn-video.azurefd.net/vod/player?id=5eb4a865-da16-4a8b-89ef-d9ce91445b2f]
