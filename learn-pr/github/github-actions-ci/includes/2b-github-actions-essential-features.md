@@ -195,11 +195,21 @@ You also have the option to prevent self-reviews for deployments to protected en
 
 For more information on reviewing jobs that reference an environment with required reviewers, see Reviewing deployments.
 
-
+> [Note]
+> If you are on a GitHub Free, GitHub Pro, or GitHub Team plan, required reviewers are only available for public repositories.
+>
 
 #### Wait timer protection rules
 
+Use a wait timer to delay a job for a specific amount of time after the job is initially triggered. The time (in minutes) must be an integer between 1 and 43,200 (30 days). Wait time will not count towards your billable time.
+
+> [Note]
+> If you are on a GitHub Free, GitHub Pro, or GitHub Team plan, required reviewers are only available for public repositories.
+>
+
 #### Branches and tages protection rules
+
+#### Custom deployment projection rules
 
 <!-- INFOMAGNUS END -->
 
