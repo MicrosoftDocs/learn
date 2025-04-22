@@ -34,7 +34,7 @@ Start by creating a new web app resource in the Azure portal.
     | Sku and size | Accept default. |
 
 1. Select **Next : Database**.
-1. 
+
 1. Select **Next : Deployment**.
 
 1. Select **Next : Networking**.
