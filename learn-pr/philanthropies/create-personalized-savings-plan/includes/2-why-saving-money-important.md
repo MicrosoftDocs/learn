@@ -2,4 +2,4 @@ Saving money gives you more control and freedom over your future. It helps you p
 
 When you save, you're creating options for yourself. You can choose how and when to use your money, which makes life less stressful and more exciting. Saving isn't just about having more—it's about being ready for opportunities when they come your way.
 
-`embed Why Save Money? graphic`
+:::image type="content" source="../media/saving-helps.png" alt-text="Screenshot of why save money." lightbox="../media/saving-helps.png":::

@@ -1,4 +1,4 @@
-`embed Building a Strong Financial Foundation video`
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7e4bfc63-55f2-424b-8086-a8ba26c72eb9]
 
 Saving money isn't just about putting away what's left over—it's about making a plan to reach the goals that matter most to you. Whether you're saving for a game, a school trip, or something bigger like college, having a strategy can make it easier to stick to your plan and achieve what you want.
 
