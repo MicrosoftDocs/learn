@@ -9,7 +9,7 @@ Ask Copilot Activities:
     1. Adjust your budget if needed:
        - If you want to save faster, ask Copilot: "Can you suggest a way to save more each week?"
        - If you have other expenses, ask: "How can I balance my savings with other spending needs?"
-    5. Copy the budget Copilot provided into a notebook, document, or budgeting app.
+    1. Copy the budget Copilot provided into a notebook, document, or budgeting app.
 
 - **Explore Budgeting Tools:** 
     1. Open Microsoft Copilot on your device. 

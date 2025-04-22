@@ -6,4 +6,4 @@ Budgeting also helps you avoid that feeling of wondering where all your money we
 
 Plus, budgeting isn't just about cutting back—it's about making sure you have enough for the things that really matter to you, whether that's hanging out with friends, buying something special, or just having some extra cash saved up for later.
 
-`embed What is Budgeting? graphic`
+:::image type="content" source="../media/what-is-budgeting.png" alt-text="Screenshot of what budgeting means." lightbox="../media/what-is-budgeting.png":::

@@ -6,5 +6,4 @@ Budgeting also reduces stress and keeps you prepared for unexpected situations. 
 
 Plus, knowing that you're in control of your finances and working towards your goals can give you a sense of confidence and security. Budgeting is not just about limiting what you spend; it's about making your money work for you and helping you feel good about your choices.
 
-
-`embed Why Budgeting is Important graphic`
+:::image type="content" source="../media/why-budgeting-is-important.png" alt-text="Screenshot of an explanation of why budgeting is important." lightbox="../media/why-budgeting-is-important.png":::

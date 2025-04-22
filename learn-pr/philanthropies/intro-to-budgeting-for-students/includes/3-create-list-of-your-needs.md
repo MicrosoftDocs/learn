@@ -22,5 +22,5 @@ Ask Copilot Activity:
 1. Prompt Copilot to categorize you needs and wants list into two categories.
 1. Compare the Copilot result with your original list.
 
-`embed needs vs. wants graphic`
+:::image type="content" source="../media/needs-vs-wants.png" alt-text="Screenshot of a comparison between needs and wants." lightbox="../media/needs-vs-wants.png":::
  
