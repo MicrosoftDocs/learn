@@ -54,17 +54,17 @@ Now that we know of all the ingredients, let’s review the GitHub flow.
 
 :::image type="content" source="../media/2-branching.png" alt-text="Screenshot showing a visual representation of the GitHub Flow in a linear format that includes a new branch, commits, pull request, and merging the changes back to main in that order." border="false":::
 
-The GitHub flow can be defined as a lightweight workflow that allows for safe experimentation. You can test new ideas and collaboration with your team by using branching, pull requests, and merging.
+The GitHub flow is a simple workflow that helps you safely make and share changes. It’s great for trying out ideas and collaborating with your team using branches, pull requests, and merges.
 
 Now that we know the basics of GitHub we can walk through the GitHub flow and its components.
 
-1. Start by creating a branch so that the changes, features, and fixes you create don't affect the main branch.
-2. Next, make your changes. We recommend deploying changes to your feature branch before merging into the main branch. Doing so ensures the changes are valid in a production environment.
-3. Now, create a pull request to ask collaborators for feedback. Pull request review is so valuable that some repositories require an approving review before pull requests can be merged.
-4. Then review and implement your feedback from your collaborators.
-5. Once you feel great about your changes, it's time to get your pull request approved and merge it into the main branch.
-6. Finally, you can delete your branch. Deleting your branch signals your work on the branch is complete and prevents you or others from accidentally using old branches.
+1. Start by creating a branch so your changes, features, or fixes don’t affect the main branch.
+2. Next, make your updates in the branch. If your workflow supports it, you can deploy changes from this branch to test them before merging.
+3. Now, open a pull request to invite feedback and begin a review.
+4. Then, review the comments and make any necessary updates based on your team’s feedback.
+5. Finally, once you’re confident in your changes, get approval and merge the pull request into the main branch.
+6. After that, delete the branch to keep your repository clean and avoid using outdated branches.
 
-That’s it, you’ve been through a GitHub flow cycle!  
+That’s it—you’ve completed a full GitHub flow cycle!
 
 Let’s move onto the next section where we’ll cover the differences between issues and discussions.
