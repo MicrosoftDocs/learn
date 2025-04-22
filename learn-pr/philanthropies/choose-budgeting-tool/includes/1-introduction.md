@@ -1,4 +1,4 @@
-`embed Why Use Budgeting Tools? graphic`
+:::image type="content" source="../media/set-goal.png" alt-text="Screenshot of why Use budgeting tools." lightbox="../media/set-goal.png":::
 
 Do you ever feel like managing money is a large challenge, especially when you're trying to save for something exciting? What if there were apps, games, and tools that made it easy—and even fun—to keep track of your money and reach your goals?
 
