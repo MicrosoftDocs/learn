@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.review-intro-events.examine-events-csharp
+title: Examine events in C#
+metadata:
+  title: Examine events in C#
+  description: "Learn how events in C# enable communication between objects and streamline user interactions."
+  ms.date: 04/22/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-examine-events-csharp.md)]

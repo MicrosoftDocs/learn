@@ -1,0 +1,60 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.review-intro-events.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check what you've learned in this module."
+  ms.date: 04/22/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary purpose of events in C#?"
+    choices:
+    - content: "Store data in memory for efficient access during runtime."
+      isCorrect: false
+      explanation: "Incorrect. Storing data in memory is not the purpose of events; this is typically handled by variables or collections."
+    - content: "Define the structure of a class and its methods."
+      isCorrect: false
+      explanation: "Incorrect. Defining the structure of a class and its methods is the role of classes and interfaces, not events."
+    - content: "Enable communication between objects by notifying subscribers when something significant happens."
+      isCorrect: true
+      explanation: "Correct. Events allow a publisher to notify subscribers about important occurrences, facilitating interaction between components."
+  - content: "Which of the following statements correctly describes the relationship between events and delegates in C#?"
+    choices:
+    - content: "Events use delegates to define the method signature for event handlers."
+      isCorrect: true
+      explanation: "Correct. Delegates provide the type-safe function pointer mechanism that events rely on to define the method signature for event handlers."
+    - content: "Use delegates only for subscribing to events but not for raising them."
+      isCorrect: false
+      explanation: "Incorrect. Delegates are integral to both subscribing to and raising events, as they define the method signature for event handlers."
+    - content: "Treat events and delegates as unrelated concepts in C# programming."
+      isCorrect: false
+      explanation: "Incorrect. Events and delegates are closely related; events are built on the language support for delegates."
+  - content: "Imagine a developer creates a graphical user interface with a button. The button notifies other components when selected. What should the developer use to implement this functionality?"
+    choices:
+    - content: "Use a static method in the button class to directly call methods in other components."
+      isCorrect: false
+      explanation: "Incorrect. Using a static method creates tight coupling between components, which goes against the design goals of events."
+    - content: "Define an event in the button class and allow other components to subscribe to it."
+      isCorrect: true
+      explanation: "Correct. Defining an event in the button class allows other components to subscribe and respond to the button select action."
+    - content: "Create a global variable to store the state of the button and let other components check its value periodically."
+      isCorrect: false
+      explanation: "Incorrect. This approach is inefficient and does not provide real-time notification, unlike events."
+  - content: "Why is unsubscribing from events in C# important?"
+    choices:
+    - content: "Prevent the event from being raised multiple times."
+      isCorrect: false
+      explanation: "Incorrect. Unsubscribing does not prevent the event from being raised; it only detaches the handler."
+    - content: "Ensure that the event publisher raises the event without errors."
+      isCorrect: false
+      explanation: "Incorrect. Unsubscribing is not required for the publisher to raise the event."
+    - content: "Avoid memory leaks when the event publisher outlives the subscriber."
+      isCorrect: true
+      explanation: "Correct. Failing to unsubscribe leads to memory leaks if the publisher holds a reference to the subscriber longer than necessary."
