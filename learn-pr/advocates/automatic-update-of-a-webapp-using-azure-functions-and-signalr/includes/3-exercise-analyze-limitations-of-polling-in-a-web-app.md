@@ -2,7 +2,7 @@ Before you change the prototype, you need to run it to validate the assumptions.
 
 ## Create Azure resources
 
-1. In a separate browser tab or window, fork the sample repository on GitHub with the following link: [mslearn-advocates.azure-functions-and-signalr](https://github.com/MicrosoftDocs/mslearn-advocates.azure-functions-and-signalr/fork). This allows you to push your changes to your own version of the source code. This is a required step in order to deploy the source code to Azure later in the module.
+1. In a separate browser tab or window, fork the sample repository on GitHub with the following link: [mslearn-advocates.azure-functions-and-signalr](https://github.com/MicrosoftDocs/mslearn-advocates.azure-functions-and-signalr/fork). This fork allows you to push your changes to your own version of the source code. This step is required in order to deploy the source code to Azure later in the module.
 
 1. In the terminal, clone your forked repository. In the following command, replace `MicrosoftDocs` with your account:
 
@@ -40,7 +40,7 @@ Before you change the prototype, you need to run it to validate the assumptions.
 
     This default subscription is used to create the Azure resources.
 
-1. Create the Azure resources and upload the sample data to the database. The process may take a few minutes to complete.
+1. Create the Azure resources and upload the sample data to the database. The process can take a few minutes to complete.
 
     ```bash
     bash create-start-resources.sh "<YOUR-SUBSCRIPTION-NAME>"
@@ -69,7 +69,6 @@ Before you change the prototype, you need to run it to validate the assumptions.
     Seed data added. Symbol DEF
     Seed data added. Symbol GHI
     ```
-    
 
 1. In the terminal, navigate to the **root** folder.
 
@@ -86,17 +85,16 @@ Before you change the prototype, you need to run it to validate the assumptions.
     cd start/server && npm install && cd ../..
     ```
 
-1. If the notification asks you to select an Azure functions app for the workspace, select `start/server`. This is the function app that you'll use to run the server-side code. 
+1. If the notification asks you to select an Azure functions app for the workspace, select `start/server`. This is the function app that you'll use to run the server-side code.
 
 1. If you receive a notification about installing the latest Azure Functions Core Tools, select **Install**.
 
 ## Get the client and server URLs
 
-When running locally, the client and server applications need to know where to find each other. The URLs are:
+When you're running locally, the client and server applications need to know where to find each other. The URLs are:
 
 - **Client**: http://localhost:3000
 - **Server**: http://localhost:7071
-
 
 ## Update local settings for the Azure Functions app
 
@@ -105,7 +103,6 @@ Add the connection strings to the prototype's Azure Functions app.
 1. Create the **./start/server/local.settings.json** file and paste in the following. This file has the configuration settings for the local functions project. 
 
     :::code language="json" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/start/server/sample.local.settings.json" :::
-    
 
 1. Update the following variables with values you copied from above.
 
@@ -128,7 +125,7 @@ BACKEND_URL=http://localhost:7071
 
 ## Run the server application
 
-1. In the terminal, start the Azure Functions application.
+1. Start the Azure Functions application by entering the following command in the terminal.
 
     ```bash
     cd start/server && npm start
@@ -157,10 +154,10 @@ BACKEND_URL=http://localhost:7071
 
 1. Arrange your browser windows so you can see the terminal and the prototype of the stock prices at the same time.
 1. In the prototype browser window, open the browser's developer tools. Notice the browser is making a request to the API every 5 seconds for all the data, even though the data hasn't changed.
-1. In the browser window, watch the output for the Azure Functions app. A single stock price changes every minute. When the price in the API changes, the next client fetch of all data includes that change. 
+1. In the browser window, watch the output for the Azure Functions app. A single stock price changes every minute. When the price in the API changes, the next client fetch of all data includes that change.
 
     :::image type="content" source="../media/visual-studio-code-terminal-output-stock-change.png" alt-text="Screenshot of Visual Studio Code terminal showing console output of the stock price change.":::
 
 1. In both the terminals for client and server, stop the applications with <kbd>Ctrl</kbd> + <kbd>C</kbd> or kill the terminal by selecting the trashcan icon.
 
-In this unit, you ran the prototype. While the client does run successfully, it isn't efficient. While each individual client may not notice this with such a small number of stocks, that will change as the number of stocks grows and the number of clients pull from the server. The prototype can be improved. Let's learn how in the next unit.
+In this unit, you ran the prototype. While the client does run successfully, it isn't efficient. While each individual client might not notice this with such a small number of stocks, that will change as the number of stocks grows and the number of clients pull from the server. The prototype can be improved. Let's learn how in the next unit.

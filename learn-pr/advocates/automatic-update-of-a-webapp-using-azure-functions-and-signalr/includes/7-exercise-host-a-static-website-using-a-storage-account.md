@@ -10,7 +10,7 @@ Now that the API is deployed to the cloud, as a Tailwind Traders engineer, you n
 
     :::code language="html" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/solution/client/index.html" :::
 
-    This markup includes a transition element, which allows Vue.js to run a subtle animation as stock data changes. When a stock is updated, the tile fades out and quickly back in to view. This way if the page is full of stock data, users can easily see which stocks have changed.
+    This markup includes a transition element, which allows Vue.js to run a subtle animation as stock data changes. When a stock is updated, the tile fades out and quickly back in to view. This way if the page is full of stock data, users can easily see which stocks changed.
 
 1. Add the following script block just above the reference to *bundle.js* to include the SignalR SDK.
 
