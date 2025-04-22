@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Plan, implement, and administer Conditional Access
   description: "Conditional Access gives a fine granularity of control over which users can do specific activities, access which resources, and how to ensure data and systems are safe."
-  ms.date: 04/21/2025
+  ms.date: 04/22/2025
   author: wwlpublish
   ms.author: roberts
   ms.topic: module-standard-task-based
