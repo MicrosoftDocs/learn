@@ -40,10 +40,10 @@ The *Azure API Management developer portal* is a fully customizable website that
 
 One of the biggest problems with having multiple published APIs is that each API requires a separate set of policies, which is a setting or action that controls the behavior of the API. Azure API Management solves the API policy problem by enabling you to set policies for all your APIs in a single place. You can set policies in many categories, but a partial list includes:
 
-- **Access restriction**. These policies determine when an API request is allowed through the gateway. For example, enforce rate limits and usage quotas, filter caller IPs, and check for a valid JSON Web Token (JWT).
-- **Authentication**. Authenticate API calls by using Basic authentication, a client certificate, or a managed identity as examples.
-- **Caching**. Improve API performance by storing and retrieving responses in the cache.
-- **Validation**. Validate API calls by comparing certain parameters to what's in your API specification. For example, validate the request or response body, the request header parameters, and the response headers.
+- **Access restriction**: These policies determine when an API request is allowed through the gateway. For example, enforce rate limits and usage quotas, filter caller IPs, and check for a valid JSON Web Token (JWT).
+- **Authentication**: Authenticate API calls by using Basic authentication, a client certificate, or a managed identity.
+- **Caching**: Improve API performance by storing and retrieving responses in the cache.
+- **Validation**: Validate API calls by comparing certain parameters to what's in your API specification. For example, you can validate the request or response body, the request header parameters, and the response headers.
 
 Flexibly combine your policies in *policy definitions*, which are XML documents that consist of a series of statements representing a policy and its parameters. Policy definitions let you configure separate policies at different stages of the API request-response pipeline as shown here:
 

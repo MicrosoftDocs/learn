@@ -1,6 +1,6 @@
-Now let's discuss some scenarios that illustrate when it's appropriate to use Azure API Management. Let's investigate API lifecycle management with respect to standardizing APIs, centralizing API management and exposure, and enhancing API security. These don't apply equally to all use cases, but let's look deeper at each one.
+Now let's discuss some scenarios that illustrate when it's appropriate to use Azure API Management. Let's investigate API lifecycle management with respect to standardizing APIs, centralizing API management and exposure, and enhancing API security. These don't apply equally to all use cases, but we'll look deeper at each one.
 
-### Should you use Azure API Management to standardize APIs?
+### Standardize APIs
 
 By enabling  management of multiple APIs from a single administrative interface, Azure API Management makes it easier to create consistency across multiple APIs. You can standardize many API features, including:
 
@@ -14,13 +14,13 @@ By enabling  management of multiple APIs from a single administrative interface,
 
 This is true of the food delivery scenario, which requires consistency across the APIs for consumers.
 
-### Should you use Azure API Management to centralize API operations?
+### Centralize API operations
 
 Azure API Management enhances the centralization of all API operations by bringing multiple APIs under a single administrative umbrella. Centralizing API operations can result in better admin operations, deployment centralization, and enhanced developer access.
 
 All these factors apply to our food delivery scenario. Centralized consumer access through the developer portal makes it easier to sign up new developers, enhancing the monetization of the platform's APIs.
 
-### Should you use Azure API Management to secure access to your APIs?
+### Secure access to your APIs
 
 Azure API Management was designed with API security in mind. So many organizations rely on APIs for the internal and external exchange of data between apps and devices. A proper API security strategy covers the following bases:
 
