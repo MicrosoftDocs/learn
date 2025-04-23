@@ -13,7 +13,7 @@ metadata:
 title: Integrate Microsoft Defender XDR with Microsoft Sentinel
 summary: "In this module, you learn about the Unified Security Operations Platform that integrates Microsoft Defender XDR with Microsoft Sentinel."
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
     - Understand the differences between Microsoft Sentinel capabilities in Azure and Defender portals
     - Know the prerequisites for integrating Microsoft Defender XDR with Microsoft Sentinel
     - Connect a Microsoft Sentinel workspace to Microsoft Defender XDR
