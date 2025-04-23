@@ -174,7 +174,7 @@ Note that you can't overwrite the value of the default environment variables nam
 
 You can add protection rules for environments defined for your GitHub repository.
 
-To add an environment, in your repository click on **Settings** and then **Environment** on the left panel. You then use the **New Environment** button to add and configure an environment with protections.
+To add an environment, in your repository click on **Settings** and then **Environment** on the left panel. You then use the **New Environment** button to add and configure an environment and add protections.
 
 ### About environments
 
