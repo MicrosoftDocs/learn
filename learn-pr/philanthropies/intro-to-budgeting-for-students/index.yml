@@ -21,7 +21,7 @@ abstract: |
 prerequisites: Access to Microsoft Copilot and an Editor.
 products:
   - azure
-iconUrl: /training/achievements/intro-to-budgeting-for-students.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
