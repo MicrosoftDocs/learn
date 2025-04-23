@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.review-intro-events.subscribe-unsubscribe-events-csharp
+uid: learn.wwl.create-manage-events.subscribe-unsubscribe-events-csharp
 title: Subscribe and unsubscribe from events in C#
 metadata:
   title: Subscribe and unsubscribe from events in C#
   description: "Learn how to manage event subscriptions and unsubscriptions to ensure efficient resource usage."
-  ms.date: 04/22/2025
+  ms.date: 04/23/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

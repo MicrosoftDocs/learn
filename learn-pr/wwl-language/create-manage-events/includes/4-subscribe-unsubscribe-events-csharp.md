@@ -35,6 +35,8 @@ public class Program
 }
 ```
 
+Notice the previous code demonstrates how to subscribe to an event using the `+=` operator. The `Clicked` event is triggered from the `OnClick` method, and the `Button_Clicked` method handles the event. The `?.Invoke` syntax ensures the event is only raised if there are subscribers.
+
 ## Unsubscribing from events
 
 Unsubscribing from an event involves detaching a method from the event using the `-=` operator. Unsubscribing events is important to prevent memory leaks, especially when the event publisher has a longer lifetime than the subscriber.
@@ -72,9 +74,11 @@ public class Program
 }
 ```
 
+Examination of this code shows how to unsubscribe from an event using the `-=` operator. After unsubscribing, the event handler is no longer invoked when the event is raised.
+
 ## Managing subscriptions dynamically
 
-In some scenarios, you need to dynamically add or remove event handlers based on specific conditions. Removeing event handlers dynamically can be useful for managing complex workflows or ensuring that only relevant handlers are attached at any given time.
+In some scenarios, you need to dynamically add or remove event handlers based on specific conditions. Removing event handlers dynamically can be useful for managing complex workflows or ensuring that only relevant handlers are attached at any given time.
 
 **Example: Dynamic subscription management**
 
@@ -117,9 +121,11 @@ public class Program
 }
 ```
 
+In this example, code contains dynamically managed event subscriptions. The `isSubscribed` flag ensures that the handler is added or removed based on specific conditions.
+
 ## Avoiding memory leaks
 
-Memory leaks can occur when event handlers aren't unsubscribed, especially if the event publisher outlives the subscriber. To avoid this, always unsubscribe from events when they're no longer needed.
+Memory leaks can occur when event handlers aren't unsubscribed, especially if the event publisher outlives the subscriber. To avoid memory leaks, always unsubscribe from events when they're no longer needed.
 
 **Best practices for avoiding memory leaks:**
 
@@ -151,6 +157,8 @@ public class Subscriber : IDisposable
     }
 }
 ```
+
+This code example highlights how to unsubscribe from events in the `Dispose` method. This approach ensures that event handlers are properly removed, preventing memory leaks when the object is disposed.
 
 ## Summary
 

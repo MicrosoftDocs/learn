@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.review-intro-events.exercise-events-csharp
+uid: learn.wwl.create-manage-events.exercise-events-csharp
 title: 'Exercise: Implement events in C#'
 metadata:
   title: 'Exercise: Implement events in C#'
   description: "Practice creating, subscribing to, and raising events in C# using delegates and custom event data classes."
-  ms.date: 04/22/2025
+  ms.date: 04/23/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

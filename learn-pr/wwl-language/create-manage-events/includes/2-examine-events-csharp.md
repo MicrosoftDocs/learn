@@ -8,7 +8,7 @@ Events let one part of a program inform other parts when something important occ
 
 The following diagram illustrates the relationship between a publisher and subscribers in an event-driven model:
 
-![Publisher and Subscriber](PublisherSubscriber.png "Diagram showing the relationship between a publisher and subscribers in an event-driven model.")
+![Publisher and Subscriber relationship](../media/PublisherSubscriber.png)
 
 - The **publisher** raises an event when a specific action occurs, such as the selection of a button.
 - The **subscribers** handle the event by executing their respective event handler methods.
@@ -26,10 +26,11 @@ This model ensures that the publisher and subscribers remain loosely coupled, al
 ```csharp
 public class Button
 {
-    public event EventHandler Selected;
+    public event EventHandler? Selected; // Nullable to indicate no subscribers initially
 
     public void OnClick()
     {
+        // If subscribers exist, ?.Invoke syntax triggers an event
         Selected?.Invoke(this, EventArgs.Empty);
     }
 }
@@ -42,8 +43,9 @@ button.Selected += (sender, e) => Console.WriteLine("Button Selected!");
 button.OnClick(); // Output: "Button Selected!"
 ```
 
-> [!NOTE]
-> Events provide a mechanism for decoupling components, allowing them to interact without tight dependencies.
+In this example, the `Selected` event is declared as `EventHandler?`, using a nullable reference type which explicitly indicates that the event might not have any subscribers, ensuring that the code handles such scenarios gracefully. The `?.Invoke` syntax further ensures that the event is only raised if there are subscribers, preventing potential `NullReferenceException` errors.
+
+Lambda expressions (`=>`) are used in the subscription to define the event handler inline. Lambda expressions provide a concise and readable way to define event handlers, especially when the logic is simple and doesn't require a separate method.
 
 ## Delegates: The foundation of events
 
@@ -67,7 +69,7 @@ public class Button
 
     public void OnClick()
     {
-        Clicked?.Invoke(this, EventArgs.Empty);
+        Clicked?.Invoke(this, EventArgs.Empty); 
     }
 }
 ```

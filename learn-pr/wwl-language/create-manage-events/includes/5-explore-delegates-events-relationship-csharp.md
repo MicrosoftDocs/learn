@@ -1,10 +1,10 @@
 Events in C# are built on the foundation of delegates, which define the method signature for event handlers. While earlier units introduced the basics of events and delegates, this unit focuses on advanced concepts, including the use of `EventHandler<T>`, multicast delegates, and best practices for managing complex event-driven systems.
 
-As you continue developing the retail store application, your team is now focused on handling more complex scenarios, such as notifying multiple systems when a significant event occurs or passing detailed event data to subscribers. By learning these advanced concepts, you can build robust and maintainable applications.
+As you continue developing the retail store application, your team is now focused on handling more complex scenarios, such as notifying multiple systems when a significant event occurs or passing detailed event data to subscribers. By learning these concepts, you can build robust and maintainable applications.
 
 ## Advanced Delegate-Event Relationship
 
-Delegates are type-safe function pointers that allow methods to be passed as parameters and invoked dynamically. Events encapsulate delegates, providing a structured way to notify subscribers when something significant occurs. This unit explores how to use built-in delegates like `EventHandler` and `EventHandler<T>` to simplify event handling.
+Delegates are type-safe function pointers that allow methods to be passed as parameters and invoked dynamically. In other words, a delegate acts like a "contract" that specifies the method's signature, allowing you to pass methods around like variables. Events encapsulate delegates, providing a structured way to notify subscribers when something significant occurs. This unit explores how to use built-in delegates like `EventHandler` and `EventHandler<T>` to simplify event handling.
 
 ### Using `EventHandler<T>` with Custom Event Data
 
@@ -21,7 +21,9 @@ public class OrderEventArgs : EventArgs
 
 public class OrderProcessor
 {
-    public event EventHandler<OrderEventArgs> OrderProcessed;
+    // Using EventHandler<T> to define an event with custom event data
+    // Nullable to indicate no subscribers initially
+    public event EventHandler<OrderEventArgs>? OrderProcessed; 
 
     protected virtual void OnOrderProcessed(OrderEventArgs e)
     {
@@ -56,16 +58,20 @@ public class Program
 }
 ```
 
+In this example, the `OrderProcessed` event is declared as `EventHandler<OrderEventArgs>?`, using a nullable reference type. The nullable reference type explicitly indicates that the event might not have any subscribers, ensuring that the code handles such scenarios gracefully. The `?.Invoke` syntax ensures that the event is only raised if there are subscribers, preventing potential `NullReferenceException` errors.
+
+Lambda expressions, as shown in the subscription to the `OrderProcessed` event, are a standard way to concisely define event handlers inline.
+
 ### Multicast Delegates
 
-Multicast delegates allow multiple methods to be invoked for a single event. Multicast delegates are useful when multiple subscribers need to respond to the same event.
+Multicast delegates allow multiple methods to be invoked for a single event. Multicast delegates are useful when multiple subscribers need to respond to the same event, such as notifying different systems or components.
 
 **Example: Using multicast delegates**
 
 ```csharp
 public class NotificationService
 {
-    public event EventHandler NotificationSent;
+    public event EventHandler? NotificationSent; // Nullable to indicate no subscribers initially
 
     public void SendNotification()
     {
@@ -80,26 +86,18 @@ public class Program
         NotificationService service = new NotificationService();
 
         // Subscribing multiple methods to the event
-        service.NotificationSent += EmailNotification;
-        service.NotificationSent += SmsNotification;
+        service.NotificationSent += (sender, e) => Console.WriteLine("Email notification sent!");
+        service.NotificationSent += (sender, e) => Console.WriteLine("SMS notification sent!");
 
         service.SendNotification();
         // Output:
         // "Email notification sent!"
         // "SMS notification sent!"
     }
-
-    private static void EmailNotification(object sender, EventArgs e)
-    {
-        Console.WriteLine("Email notification sent!");
-    }
-
-    private static void SmsNotification(object sender, EventArgs e)
-    {
-        Console.WriteLine("SMS notification sent!");
-    }
 }
 ```
+
+In this example, lambda expressions (`=>`) are used to define the event handlers for the `NotificationSent` event. Lambda expressions are frequently encountered with delegates and provide a concise and readable way to define event handlers, especially when the logic for each handler is straightforward.
 
 ### Best Practices for Managing Events
 
@@ -124,17 +122,12 @@ public class Subscriber : IDisposable
     public Subscriber(NotificationService service)
     {
         _service = service;
-        _service.NotificationSent += HandleNotification;
-    }
-
-    private void HandleNotification(object sender, EventArgs e)
-    {
-        Console.WriteLine("Notification received!");
+        _service.NotificationSent += (sender, e) => Console.WriteLine("Notification received!");
     }
 
     public void Dispose()
     {
-        _service.NotificationSent -= HandleNotification;
+        _service.NotificationSent -= (sender, e) => Console.WriteLine("Notification received!");
     }
 }
 ```
@@ -144,6 +137,7 @@ public class Subscriber : IDisposable
 In this unit, you explored advanced concepts of delegates and events in C#, including:
 
 - Using `EventHandler<T>` with custom event data.
+- Using lambda expressions to simplify event handling.
 - Using multicast delegates to notify multiple subscribers.
 - Best practices for managing event subscriptions, avoiding memory leaks, and ensuring thread safety.
 
