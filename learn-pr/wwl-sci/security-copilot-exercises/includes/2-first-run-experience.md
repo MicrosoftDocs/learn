@@ -40,7 +40,7 @@ Once you're assigned the User Access Administrator role in Azure, you can assign
 
 1. Now that you can view all resources and assign access in any subscription or management group in the directory, assign yourself the Owner role for the Azure subscription.
     1. From the blue banner on the top of the page, select **Microsoft Azure** to return to the landing page of the Azure portal.
-    1. Select **Subscriptions** then select the subscription listed **Woodgrove - GTP Demos (Exernal/Sponsored)**.
+    1. Select **Subscriptions** then select the subscription listed **Woodgrove - GTP Demos (External/Sponsored)**.
     1. Select **Access control (IAM)**.
     1. Select **Add**, then **Add role assignment**.
     1. From the Role tab, select **Privileged administrator roles**.
