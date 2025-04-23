@@ -4,7 +4,7 @@ In this unit, we're learning about issues and discussions. These are features th
 
 ## Issues
 
-GitHub Issues are used to to track ideas, feedback, tasks, or bugs for work on GitHub. Issues can be created in various ways, so you can choose the most convenient method for your workflow.
+GitHub Issues are used to track ideas, feedback, tasks, or bugs for work on GitHub. Issues can be created in various ways, so you can choose the most convenient method for your workflow.
 
 This walkthrough covers how to create an issue from a repository. Issues can also be created from:
 

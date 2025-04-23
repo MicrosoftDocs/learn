@@ -5,6 +5,12 @@ In this unit, we're reviewing the following components of the GitHub flow:
 - Pull Requests
 - The GitHub Flow
 
+## Components of GitHub Flow
+
+Before we get into GitHub-specific workflows, it's helpful to understand that GitHub Flow builds directly on Git’s foundational concepts.
+
+Git provides tools to track and manage changes in your code over time. GitHub builds on this by making it easier to use those tools with features like branches, commits, pull requests, and visual interfaces for collaboration. Let’s start by looking at how these concepts work in GitHub.
+
 ## What are branches
 
 In the last section, we created a new file and a new branch in your repository.
@@ -22,6 +28,13 @@ Your branch is a safe place to experiment with new features or fixes. If you mak
 In the previous unit, you added a new file into the repository by pushing a commit. Let’s briefly review what commits are.
 
 A **commit** is a change to one or more files on a branch. Each commit is tracked by a unique ID, timestamp, and contributor, whether it's made via the command line or directly in GitHub's web interface. Commits provide a clear audit trail for anyone reviewing the history of a file or linked item, such as an issue or pull request.
+
+A **commit** is a change to one or more files on a branch. Each commit is tracked by a unique ID, timestamp, and contributor, whether it's made via the command line or directly in GitHub's web interface. Commits provide a clear audit trail for anyone reviewing the history of a file or linked item, such as an issue or pull request.
+
+> You can create a commit using Git in your terminal with:
+> ```
+> git commit -m "Add a helpful commit message"
+> ```
 
 :::image type="content" source="../media/2-commits.png" alt-text="A screenshot of a list of GitHub commits to a main branch." border="false":::
 
@@ -44,7 +57,7 @@ A **pull request** is the mechanism used to signal that the commits from one bra
 
 The team member submitting the **pull request** asks one or more reviewers to verify the code and approve the merge. These reviewers have the opportunity to comment on changes, add their own, or use the pull request itself for further discussion.
 
-GtHub also supports _Draft Pull Requests_, which let you open a pull request that's not yet ready for review.
+GitHub also supports _Draft Pull Requests_, which let you open a pull request that's not yet ready for review.
 
 Once the changes have been approved (if required), the pull request's source branch (the compare branch) is merged into the base branch.
 

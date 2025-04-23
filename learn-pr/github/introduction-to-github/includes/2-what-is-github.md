@@ -8,11 +8,16 @@ In this unit, we review the following learning objectives:
 
 ## GitHub
 
+Before we explore the GitHub platform in detail, it's important to understand what it's built on: Git.
+
+**Git** is a distributed version control system that lets developers track changes, collaborate on code, and manage revisions over time. GitHub builds on top of Git by adding collaboration tools, automation features, and a user-friendly web interface. Understanding Git basics—like commits, branches, and merging—will help you use GitHub more effectively.
+
 :::image type="content" source="../media/github-enterprise-platform.png" alt-text="A conceptual image of the GitHub Platform with layers from top to bottom: AI, Collaboration, Productivity, Security, and Scale." border="false":::
 
 **GitHub** is a cloud-based platform that uses Git, a distributed version control system, at its core. The GitHub platform simplifies the process of collaborating on projects and provides a website, command-line tools, and overall flow that allows developers and users to work together.
 
 As we learned earlier, GitHub provides an AI powered developer platform to build, scale, and deliver secure software. Let’s break down each one of the core pillars of the GitHub Enterprise platform, AI, Collaboration, Productivity, Security, and Scale.
+
 
 ### AI
 
