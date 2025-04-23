@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 09/27/2024
+  ms.date: 4/23/2025
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit
@@ -35,4 +35,4 @@ quiz:
       explanation: "Correct. Question Answering is part of the Azure AI Language service and enables you to create a knowledge base of question and answer pairs"
     - content: "Optical Character Recognition"
       isCorrect: false
-      explanation: "Incorrect. Optical Character Recognition (OCR) identifies text in images. It can't be used to create a knowledge base for bots."
+      explanation: "Incorrect. Optical Character Recognition (OCR) identifies text in images. It can't be used to create a knowledge base for bots."
