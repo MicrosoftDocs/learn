@@ -20,7 +20,7 @@ abstract: |
 prerequisites: Access to Microsoft Designer and Microsoft Copilot.
 products:
   - azure
-iconUrl: /training/achievements/choose-budgeting-tool.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
