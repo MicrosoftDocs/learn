@@ -36,7 +36,7 @@ To create a ruleset:
 
 :::image type="content" source="../media/new-branch-ruleset.png" alt-text="Create a new branch ruleset page from the left hand navigation bar.":::
 
-When creating a ruleset you can grant bypass permissions, choose which branches or tags to target, and select the rules to include.
+When creating a ruleset, you can grant bypass permissions, choose which branches or tags to target, and select the rules to include.
 
 ## Manage a ruleset
 
@@ -66,7 +66,7 @@ A ruleset doesn't have a priority. Instead, if multiple rulesets target the same
 For example, consider the following situation for the `my-feature` branch of the `octo-org/octo-repo` repository:
 
 - A repository administrator has set up a ruleset targeting the `my-feature` branch. This ruleset requires signed commits, and three reviews on pull requests before they can be merged.
-- An existing branch protection rule for the `my-feature` branch requires a linear commit history, and two reviews on pull requests before they can be merged.
+- An existing branch protection rule for the `my-feature` branch requires a linear commit history and two reviews on pull requests before they can be merged.
 
 The rules from each source are aggregated, and all rules apply. Where multiple different versions of the same rule exist, the result is that the most restrictive version of the rule applies. Therefore, the `my-feature` branch requires signed commits and a linear commit history, and pull requests targeting the branch will require three reviews before they can be merged.
 
