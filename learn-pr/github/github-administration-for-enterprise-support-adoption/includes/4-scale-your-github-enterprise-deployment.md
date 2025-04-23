@@ -3,7 +3,7 @@ As your GitHub Enterprise organization grows—whether due to team expansion or 
 
 ## Secure Access with Single Sign-On (SSO)
 
-To maintain centralized identity control and streamline user management, enable SAML-based Single Sign-On (SSO) with your identity provider (IdP), such as Okta or Microsoft Entra ID.
+To maintain centralized identity control and streamline user management, enable SAML-based single sign-on (SSO) with your identity provider (IdP), such as Okta or Microsoft Entra ID.
 
 > [!TIP] 
 > From your organization’s **People** tab, you can review and revoke individual SAML credentials under the **SAML identity linked** section.

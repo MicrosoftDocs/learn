@@ -61,7 +61,7 @@ You can configure SAML SSO at either the **organization** or **enterprise** leve
 ### Enforcing 2FA
 
 - Navigate to your org’s **Security** settings.
-- Enable the checkbox laballed **Require two-factor authentication**.
+- Enable the checkbox labeled **Require two-factor authentication**.
 - Communicate the requirement in advance to prevent loss of access.
 
 :::image type="content" source="../media/require-2fa-checkbox.png" alt-text="Screenshot of the checkbox requiring two-factor authentication for members in the organization.":::
