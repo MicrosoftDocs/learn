@@ -2,7 +2,7 @@
 uid: learn.philanthropies.create-personalized-savings-plan.knowledge-check
 title: Knowledge check
 metadata:
-  title: Knowledge check
+  title: Knowledge Check
   description: Answer the following questions to see what you learned.
   ms.date: 04/02/2025
   author: kprks
@@ -10,7 +10,6 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 quiz:
-  title: Knowledge check
   questions:
   - content: Why is saving money important?
     choices:
