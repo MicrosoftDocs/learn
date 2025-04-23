@@ -7,9 +7,9 @@ In this unit, we're reviewing the following components of the GitHub flow:
 
 ## What are branches
 
-In the last section, we created a new file and a new branch in your repositories.
+In the last section, we created a new file and a new branch in your repository.
 
-Branches are an essential part to the GitHub experience because they're where we can make changes without affecting the entire project we're working on.
+Branches are an essential part of the GitHub experience. They let you make changes without affecting the main project.
 
 Your branch is a safe place to experiment with new features or fixes. If you make a mistake, you can revert your changes or push more changes to fix the mistake. Your changes won't update on the default branch until you merge your branch.
 
@@ -21,7 +21,7 @@ Your branch is a safe place to experiment with new features or fixes. If you mak
 
 In the previous unit, you added a new file into the repository by pushing a commit. Let’s briefly review what commits are.
 
-A **commit** is a change to one or more files on a branch. Every time a commit is created, it's assigned a unique ID and tracked along with the time and contributor. Commits provide a clear audit trail for anyone reviewing the history of a file or linked item, such as an issue or pull request.
+A **commit** is a change to one or more files on a branch. Each commit is tracked by a unique ID, timestamp, and contributor, whether it's made via the command line or directly in GitHub's web interface. Commits provide a clear audit trail for anyone reviewing the history of a file or linked item, such as an issue or pull request.
 
 :::image type="content" source="../media/2-commits.png" alt-text="A screenshot of a list of GitHub commits to a main branch." border="false":::
 
@@ -36,7 +36,7 @@ Within a git repository, a file can exist in several valid states as it goes thr
 - **Staged:** The file has been modified, and the changes have been added to the staging area (also known as the index). These changes are ready to be committed.
 - **Committed:** The file is in the repository's database. It represents the latest committed version of the file.
 
-These states and substates are important to collaborating with your team to know where each and every commit is in the process of your project. Now let’s move on to pull requests.
+These states help your team understand the status of each file and where it is in the version control process.
 
 ## What are pull requests?
 
@@ -44,17 +44,21 @@ A **pull request** is the mechanism used to signal that the commits from one bra
 
 The team member submitting the **pull request** asks one or more reviewers to verify the code and approve the merge. These reviewers have the opportunity to comment on changes, add their own, or use the pull request itself for further discussion.
 
+GtHub also supports _Draft Pull Requests_, which let you open a pull request that's not yet ready for review.
+
 Once the changes have been approved (if required), the pull request's source branch (the compare branch) is merged into the base branch.
 
 :::image type="content" source="../media/2-pull-request.png" alt-text="A screenshot of a pull request and a comment within the pull request." border="false":::
 
-Now that we know of all the ingredients, let’s review the GitHub flow.
+Now that you’ve seen how branches, commits, and pull requests work, let’s walk through how they come together in GitHub Flow.
 
 ## The GitHub flow
 
 :::image type="content" source="../media/2-branching.png" alt-text="Screenshot showing a visual representation of the GitHub Flow in a linear format that includes a new branch, commits, pull request, and merging the changes back to main in that order." border="false":::
 
 The GitHub flow is a simple workflow that helps you safely make and share changes. It’s great for trying out ideas and collaborating with your team using branches, pull requests, and merges.
+
+Note: GitHub Flow is one of several popular workflows. Others include Git Flow and trunk-based development.
 
 Now that we know the basics of GitHub we can walk through the GitHub flow and its components.
 
@@ -64,6 +68,41 @@ Now that we know the basics of GitHub we can walk through the GitHub flow and it
 4. Then, review the comments and make any necessary updates based on your team’s feedback.
 5. Finally, once you’re confident in your changes, get approval and merge the pull request into the main branch.
 6. After that, delete the branch to keep your repository clean and avoid using outdated branches.
+
+## Git Flow
+
+:::image type="content" source="../media/2-git-flow-image.png" alt-text="Diagram illustrating the Git Flow workflow with parallel lanes for feature branches, develop, release branches, hotfixes, and master. It shows how features are merged into develop, release branches are created from develop, hotfixes are branched from master, and all changes are eventually merged back into master and develop with tagged versions.
+" border="false":::
+
+While GitHub Flow is a lightweight workflow designed for continuous delivery, **Git Flow** is a more structured branching model often used in release-driven environments. Git Flow has been around longer than GitHub Flow, and you may still see the term **`master`** used instead of **`main`** as the default branch.
+
+### Git Flow Branch Types
+
+Git Flow uses several long-lived and temporary branches:
+
+- **master**: Always reflects production-ready code.
+- **develop**: Contains the latest development work for the next release.
+- **feature/***: Used to create new features; branched from `develop` and merged back when complete.
+- **release/***: Prepares a new production release from `develop`; allows final testing and minor bug fixes.
+- **hotfix/***: Used to quickly patch production issues; branched from `master`.
+
+### How the Git Flow Process Works
+
+1. Developers create **feature branches** from `develop` to build new functionality.
+2. When it's time for a release, a **release branch** is created from `develop`. This isolates release preparation work so development can continue uninterrupted.
+3. Bug fixes can be added to the release branch, but major features should wait for a future release.
+4. Once ready, the release branch is merged into `master` and tagged with a version number. GitHub can use these tags to help you generate release notes.
+5. The same release branch should be merged back into `develop` to keep it in sync.
+6. If a critical production bug arises, a **hotfix branch** is created from `master`. Once fixed, it’s merged into both `master` and `develop`.
+
+### When to Use Git Flow
+
+- Best suited for projects with **scheduled or versioned releases**
+- Helpful if you maintain **multiple production versions**
+- Ideal for **slower, more structured development cycles**
+- Considered more "heavyweight" than GitHub Flow due to additional branch management
+
+> For many teams using GitHub, GitHub Flow is simpler and faster. But if your team values predictability and needs more release planning, Git Flow may be a better fit.
 
 That’s it—you’ve completed a full GitHub flow cycle!
 

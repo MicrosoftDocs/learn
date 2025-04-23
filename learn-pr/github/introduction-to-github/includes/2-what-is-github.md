@@ -16,31 +16,31 @@ As we learned earlier, GitHub provides an AI powered developer platform to build
 
 ### AI
 
-Generative AI is dramatically transforming software development as we speak. The GitHub Enterprise platform is enhancing collaboration through AI-powered pull requests and issues, productivity through Copilot, and security by automating security checks faster.
+Generative AI is dramatically transforming software development. The GitHub Enterprise platform **enhances collaboration** through AI-powered pull requests and issues, productivity through Copilot, **Copilot Chat**, and **Copilot Agents**, and security by automating security checks faster.
 
 ### Collaboration
 
-Collaboration is at the core of everything GitHub does. We know inefficient collaboration results in wasted time and money. We counteract that with a suite of seamless tools that allow collaboration to happen effortlessly.
+Collaboration is at the core of everything GitHub does. GitHub offers tools that help teams work together efficiently, reducing delays and streamlining workflows.
 
-Repositories, Issues, Pull Requests, and other tools help to enable developers, project managers, operation leaders, and others at the same company. It enables them to work faster together, cut down approval times, and ship more quickly.
+Repositories, Issues, Pull Requests, and other tools help to support faster collaboration across roles, shorten approval cycles, and improve delivery speed.
 
 ### Productivity
 
-Productivity is accelerated with automation that the GitHub Enterprise Platform provides. With built-in CI/CD (Continuous Integration and Continuous Delivery) tools directly integrated into the workflow, the platform gives users the ability to set tasks and forget them, taking care of routine administration and speeding up day-to-day work. This gives your developers more time to focus on what matters most, creating innovative solutions.
+Productivity is accelerated with automation that the GitHub Enterprise Platform provides. With built-in CI/CD (Continuous Integration and Continuous Delivery) tools directly integrated into the workflow, the platform lets users automate repetitive tasks and speed up daily work. This allows developers to focus more on coding and solving problems.
 
 ### Security
 
-GitHub focuses on integrating security directly into the development process from the start. GitHub Enterprise platform includes native, first-party security features that minimize security risk with a built-in security solution. Plus, your code remains private within your organization. At the same time, you're able to take advantage of security overview and Dependabot.
+GitHub integrates security directly into the development process from the start. GitHub Enterprise includes native, first-party features like **CodeQL**, **secret scanning**, **Dependabot**, and **security overview** to minimize risks. Code remains private, while still benefiting from integrated security checks.
 
 GitHub has continued to make investments to ensure that our features are enterprise-ready. Microsoft and highly regulated industries trust GitHub, and we meet global compliance requirements.
 
 ### Scale
 
-GitHub is the largest developer community of its kind with real-time data on over 100M+ developers, 330M+ repositories, and countless deployments. We’ve been able to understand the shifting needs of developers and make changes to our product to match.
+GitHub is the largest developer community of its kind with real-time data on over 100M+ developers, 330M+ repositories, and countless deployments. This scale helps GitHub stay aligned with developer needs and trends.
 
-This has translated into an incredible scale that is unmatched and unparalleled by any other company on the planet. Everyday we're gaining more insights from this impressive community and evolving the platform to meet their needs.
+This has translated into an incredible scale that is unmatched and unparalleled by any other company on the planet. Insights from this large developer base help GitHub continuously evolve the platform.
 
-In essence, the GitHub Enterprise Platform focuses on the developer experience. It has the scale to provide industry-changing insights, collaboration capabilities for transformative efficiency, the tools for increased productivity, security at every step, and AI to power it all to new heights in a single, integrated platform.
+In essence, the GitHub Enterprise Platform focuses on the developer experience. It provides collaboration tools, automation, and AI-driven features that support productivity, security, and scalability in a unified developer experience.
 
 Now let’s get into the backbone of GitHub, repositories.
 
@@ -62,7 +62,7 @@ A repository contains all of your project's files and each file's revision histo
 
 You can create a new repository on your personal account or any organization where you have sufficient permissions.
 
-Let’s tackle creating a repository from github.com.
+Let’s walk through how to create a repository from github.com.
 
 1. In the upper-right corner of any page, use the drop-down menu, and select **New repository**.
 
