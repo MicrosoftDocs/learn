@@ -15,7 +15,7 @@ Microsoft Dev Box is a fully managed service that allows developers to quickly s
 
 There are several roles in an organization that get involved in deploying and managing Microsoft Dev Box end to end. They include platform engineers or IT administrators who are responsible for configuring the service. Developer team leads or Project Admins who are on point to configure the service for their team of developers for specific projects, assigning and managing permissions along with managing cost controls within the service. Developers are the end users, who typically use the developer portal to set up their Dev Box machines, access, and then manage them as appropriate. 
 
-![Screenshot of a computer AI-generated content may be incorrect.](../media/image-1.png)
+![Diagram of key roles required for Microsoft Dev Box.](../media/image-1.png)
 
 ### Platform engineers or IT administrators
 

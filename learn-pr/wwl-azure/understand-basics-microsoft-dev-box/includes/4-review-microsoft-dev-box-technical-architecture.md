@@ -4,7 +4,7 @@ The diagram shows how Microsoft Dev Box service fits in a typical organizationâ€
 
   
 
-![Diagram of a computer  AI-generated content may be incorrect.](../media/image-4.png)
+![Diagram of High level architecture diagram of Microsoft Dev Box.](../media/image-4.png)
 
 The various components of this typical architecture include:
 
