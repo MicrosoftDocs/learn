@@ -210,9 +210,24 @@ Use a wait timer to delay a job for a specific amount of time after the job is i
 > If you are on a GitHub Free, GitHub Pro, or GitHub Team plan, required reviewers are only available for public repositories.
 >
 
-#### Branches and tages protection rules
+#### Branch and tag protection rules
+
+Use deployment branches and tags to restrict which branches and tags can deploy to the environment. Below are the options for deployment branches and tags for an environment:
+
+-No restriction: No restriction on which branch or tag can deploy to the environment.
+
+-Protected branches only: Only branches with branch protection rules enabled can deploy to the environment. If no branch protection rules are defined for any branch in the repository, then all branches can deploy. For more information about branch protection rules, see About protected branches.
+
+-Selected branches and tags: Only branches and tags that match your specified name patterns can deploy to the environment.
+
+If you specify releases/* as a deployment branch or tag rule, only a branch or tag whose name begins with releases/ can deploy to the environment. (Wildcard characters will not match /. To match branches or tags that begin with release/ and contain an additional single slash, use release/*/*.) If you add main as a branch rule, a branch named main can also deploy to the environment. For more information about syntax options for deployment branches
+
 
 #### Custom deployment projection rules
+
+You can enable your own custom protection rules to gate deployments with third-party services. For example, you can use services such as Datadog, Honeycomb, and ServiceNow to provide automated approvals for deployments to GitHub. For more information, see Creating custom deployment protection rules.
+
+Once custom deployment protection rules have been created and installed on a repository, you can enable the custom deployment protection rule for any environment in the repository. For more information about configuring and enabling custom deployment protection rules, see Configuring custom deployment protection rules.
 
 <!-- INFOMAGNUS END -->
 
