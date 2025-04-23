@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.create-manage-events.exercise-events-csharp
+uid: learn.wwl.create-manage-events.exercise-implement-events-csharp
 title: 'Exercise: Implement events in C#'
 metadata:
   title: 'Exercise: Implement events in C#'
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 25
 content: |
-  [!include[](includes/6-exercise-events-csharp.md)]
+  [!include[](includes/6-exercise-implement-events-csharp.md)]

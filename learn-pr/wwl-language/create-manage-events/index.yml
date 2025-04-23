@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.create-manage-events
 metadata:
-  title: Create and manage events
+  title: Create and Manage Events
   description: "Discover how events facilitate communication between objects in C#, and how their integration with delegates creates robust, decoupled code."
   ms.date: 04/23/2025
   author: wwlpublish
@@ -14,13 +14,13 @@ metadata:
 title: Create and manage events
 summary: Learn the fundamentals of events in C#, including their reliance on delegates and their role in enabling communication between objects.
 abstract: |
-  -   Understand Events and Delegates in C#
+  -   Understand Events and Delegates in C#.
 
-  -   Examine and Declare Events in C#
+  -   Examine and Declare Events in C#.
 
-  -   Encapsulate and Raise Events in C#
+  -   Encapsulate and Raise Events in C#.
 
-  -   Manage Event Subscription and Unsubscription in C#
+  -   Manage Event Subscription and Unsubscription in C#.
 prerequisites: |
   -   An installation of Visual Studio Code with the C# Dev Kit extension installed.
 
@@ -47,7 +47,7 @@ units:
 - learn.wwl.create-manage-events.declare-events-csharp
 - learn.wwl.create-manage-events.subscribe-unsubscribe-events-csharp
 - learn.wwl.create-manage-events.explore-delegates-events-relationship-csharp
-- learn.wwl.create-manage-events.exercise-events-csharp
+- learn.wwl.create-manage-events.exercise-implement-events-csharp
 - learn.wwl.create-manage-events.knowledge-check
 - learn.wwl.create-manage-events.summary
 badge:

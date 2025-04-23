@@ -8,7 +8,7 @@ Events let one part of a program inform other parts when something important occ
 
 The following diagram illustrates the relationship between a publisher and subscribers in an event-driven model:
 
-![Publisher and Subscriber relationship](../media/PublisherSubscriber.png)
+:::image type="content" source="../media/publisher-subscriber.png" alt-text="Diagram showing publisher and subscriber relationship.":::
 
 - The **publisher** raises an event when a specific action occurs, such as the selection of a button.
 - The **subscribers** handle the event by executing their respective event handler methods.
@@ -51,7 +51,7 @@ Lambda expressions (`=>`) are used in the subscription to define the event handl
 
 Delegates are type-safe function pointers that allow methods to be passed as parameters and invoked dynamically. Events in C# are built on the foundation of delegates, which define the method signature for event handlers.
 
-**How delegates relate to events:**
+**How delegates relate to events**:
 
 - Delegates define the method signature that event handlers must match.
 - Events use delegates to notify subscribers when something significant occurs.
@@ -83,8 +83,8 @@ The design of events in C# aims to facilitate minimal coupling between component
 
 **Goals of event design**
 
-- **Minimal coupling:** Events enable interaction between an event source and an event sink without requiring tight dependencies. Minimal coupling, using events, is especially useful when components developed by different teams or updated independently.
-- **Ease of subscription and unsubscription:** The syntax for subscribing (`+=`) and unsubscribing (`-=`) is straightforward.
-- **Support for multiple subscribers:** Events can have zero, one, or multiple subscribers, making them versatile for various scenarios.
+- **Minimal coupling**: Events enable interaction between an event source and an event sink without requiring tight dependencies. Minimal coupling, using events, is especially useful when components developed by different teams or updated independently.
+- **Ease of subscription and unsubscription**: The syntax for subscribing (`+=`) and unsubscribing (`-=`) is straightforward.
+- **Support for multiple subscribers**: Events can have zero, one, or multiple subscribers, making them versatile for various scenarios.
 
 Events are often used in scenarios where user actions or system changes need to be communicated across components. For example, a `Closing` event might allow subscribers to cancel the close operation or modify its behavior.

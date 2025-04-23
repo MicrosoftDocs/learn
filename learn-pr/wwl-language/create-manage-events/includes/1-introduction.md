@@ -4,10 +4,10 @@ Imagine you're a developer working on a desktop application for a retail store. 
 
 ## Learning objectives
 
-- Understand Events and Delegates in C#
-- Examine and Declare Events in C#
-- Encapsulate and Raise Events in C#
-- Manage Event Subscription and Unsubscription in C#
+- Understand Events and Delegates in C#.
+- Examine and Declare Events in C#.
+- Encapsulate and Raise Events in C#.
+- Manage Event Subscription and Unsubscription in C#.
 
 ## Prerequisites
 

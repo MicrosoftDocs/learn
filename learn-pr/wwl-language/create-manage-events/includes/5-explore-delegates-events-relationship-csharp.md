@@ -6,7 +6,7 @@ As you continue developing the retail store application, your team is now focuse
 
 Delegates are type-safe function pointers that allow methods to be passed as parameters and invoked dynamically. In other words, a delegate acts like a "contract" that specifies the method's signature, allowing you to pass methods around like variables. Events encapsulate delegates, providing a structured way to notify subscribers when something significant occurs. This unit explores how to use built-in delegates like `EventHandler` and `EventHandler<T>` to simplify event handling.
 
-### Using `EventHandler<T>` with Custom Event Data
+### Using `EventHandler<T>` with custom event data
 
 The `EventHandler<T>` delegate is a built-in delegate that simplifies event handling when custom event data needs to be passed to subscribers. It allows you to define event handlers that include additional information about the event.
 
@@ -62,7 +62,7 @@ In this example, the `OrderProcessed` event is declared as `EventHandler<OrderEv
 
 Lambda expressions, as shown in the subscription to the `OrderProcessed` event, are a standard way to concisely define event handlers inline.
 
-### Multicast Delegates
+### Multicast delegates
 
 Multicast delegates allow multiple methods to be invoked for a single event. Multicast delegates are useful when multiple subscribers need to respond to the same event, such as notifying different systems or components.
 
@@ -99,18 +99,23 @@ public class Program
 
 In this example, lambda expressions (`=>`) are used to define the event handlers for the `NotificationSent` event. Lambda expressions are frequently encountered with delegates and provide a concise and readable way to define event handlers, especially when the logic for each handler is straightforward.
 
-### Best Practices for Managing Events
+### Best practices for managing events
 
 Managing events effectively is critical for building robust and maintainable applications. Here are some best practices to follow:
 
-1. **Avoid Memory Leaks:**  
-   Always unsubscribe from events when they're no longer needed, especially if the event publisher has a longer lifetime than the subscriber.
+- **Avoid Memory Leaks**:  
 
-2. **Use Weak References:**  
-   In scenarios where the subscriber's lifetime is shorter than the publisher's, consider using weak references or the `WeakEventManager` to avoid memory leaks.
+  Always unsubscribe from events when they're no longer needed, especially if the event publisher has a longer lifetime than the subscriber.
 
-3. **Ensure Thread Safety:**  
-   If events are raised in a multithreaded environment, ensure thread safety by using synchronization mechanisms like locks or thread-safe collections.
+
+- **Use Weak References**:  
+
+  In scenarios where the subscriber's lifetime is shorter than the publisher's, consider using weak references or the `WeakEventManager` to avoid memory leaks.
+
+
+- **Ensure Thread Safety**:  
+
+  If events are raised in a multithreaded environment, ensure thread safety by using synchronization mechanisms like locks or thread-safe collections.
 
 **Example: Unsubscribing to avoid memory leaks**
 
@@ -132,7 +137,7 @@ public class Subscriber : IDisposable
 }
 ```
 
-### Summary
+## Summary
 
 In this unit, you explored advanced concepts of delegates and events in C#, including:
 

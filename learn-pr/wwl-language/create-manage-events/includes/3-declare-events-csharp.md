@@ -85,8 +85,8 @@ This example demonstrates how a derived class can override the base class's even
 
 ## Best practices for declaring events
 
-- **Encapsulation:** Use the `protected` access modifier for event-raising methods to ensure events are raised only within the declaring class or its derived classes.
-- **Virtual methods:** Use `protected virtual` methods to allow derived classes to customize event-raising logic.
-- **Event naming:** Use meaningful names for events to clearly indicate their purpose.
+- **Encapsulation**: Use the `protected` access modifier for event-raising methods to ensure events are raised only within the declaring class or its derived classes.
+- **Virtual methods**: Use `protected virtual` methods to allow derived classes to customize event-raising logic.
+- **Event naming**: Use meaningful names for events to clearly indicate their purpose.
 
 By understanding how to declare and use events in practical scenarios, you can build flexible and maintainable applications that respond effectively to user actions and system changes.

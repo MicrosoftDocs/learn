@@ -127,7 +127,7 @@ In this example, code contains dynamically managed event subscriptions. The `isS
 
 Memory leaks can occur when event handlers aren't unsubscribed, especially if the event publisher outlives the subscriber. To avoid memory leaks, always unsubscribe from events when they're no longer needed.
 
-**Best practices for avoiding memory leaks:**
+**Best practices for avoiding memory leaks**:
 
 - Use weak references or `WeakEventManager` in scenarios where the subscriber's lifetime is shorter than the publisher's.
 - Unsubscribe from events in the `Dispose` method of disposable objects.
