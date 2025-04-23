@@ -25,4 +25,5 @@ modules:
 - learn.github-administration-for-enterprise-support-adoption
 - learn.github.manage-github-actions-enterprise
 - learn.github.github-actions-packages
-
+trophy:
+  uid: learn.introduction-to-github-actions-social.trophy
