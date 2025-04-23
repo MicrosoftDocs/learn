@@ -55,7 +55,7 @@ Now that the API is deployed to the cloud, as a Tailwind Traders engineer, you n
 
 1. Select **Review + Create**, then select **Create** to create the resource. Wait for the deployment to complete before continuing.
 1. Select **Go to resource** to open the new Azure Static Web App resource.
-1. On the **Overview** page, copy the **URL** value. This is the base URL of the deployed static web app.
+1. On the **Overview** page, copy the **URL** value. This value is the base URL of the deployed static web app.
 
 ## Add the BACKEND_URL variable to the repository
 
@@ -113,6 +113,7 @@ By default, function apps don't allow CORS requests. You need to update the func
 ## Test the deployment of the client
 
 1. In a browser, use the URL of the deployed static web app to open the client.
-1. Open developer tools to watch the Console to see when the SignalR data for updated stock is received. Remember these aren't HTTP requests, so you won't see them in the Network tab.
 
-Congratulations! You've deployed your stock app improved with SignalR!
+1. In the Azure portal, open developer tools and watch the Console to see when the SignalR data for updated stock is received. Remember, SignalR data aren't HTTP requests, so the updates don't appear in the Network tab.
+
+Congratulations! You deployed your stock app improved with SignalR!

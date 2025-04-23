@@ -4,11 +4,11 @@ metadata:
   title: Introduction
   description: Learn to update an application to implement automatic updates that are nearly instantaneous.
   ms.date: 01/22/2025
-  author: craigshoemaker
-  ms.author: cshoe
+  author: glenga
+  ms.author: glenga
   ms.topic: unit
 title: Introduction
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-
+

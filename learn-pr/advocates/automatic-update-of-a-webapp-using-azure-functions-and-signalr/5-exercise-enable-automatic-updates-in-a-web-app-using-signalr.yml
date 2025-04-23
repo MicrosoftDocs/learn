@@ -4,11 +4,11 @@ metadata:
   title: Exercise – Enable automatic updates in a web application using SignalR Service
   description: Implement integration with Azure Functions and SignalR Service for fast and targeted automatic updates.
   ms.date: 01/22/2025
-  author: craigshoemaker
-  ms.author: cshoe
+  author: glenga
+  ms.author: glenga
   ms.topic: unit
 title: Exercise – Enable automatic updates in a web application using SignalR Service
 durationInMinutes: 12
 content: |
   [!include[](includes/5-exercise-enable-automatic-updates-in-a-web-app-using-signalr.md)]
-
+

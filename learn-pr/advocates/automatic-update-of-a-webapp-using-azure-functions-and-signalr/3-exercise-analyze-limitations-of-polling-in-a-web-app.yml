@@ -4,12 +4,12 @@ metadata:
   title: Exercise - Analyze the limitations of a polling-based web app
   description: Review the implementation of polling website and run the app on your machine.
   ms.date: 01/22/2025
-  author: craigshoemaker
-  ms.author: cshoe
+  author: glenga
+  ms.author: glenga
   ms.topic: unit
   ms.custom:
 title: Exercise - Analyze the limitations of a polling-based web app
 durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-analyze-limitations-of-polling-in-a-web-app.md)]
-
+
