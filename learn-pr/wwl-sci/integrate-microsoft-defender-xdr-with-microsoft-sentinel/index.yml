@@ -3,11 +3,11 @@ uid: learn.wwl.integrate-microsoft-defender-xdr-with-microsoft-sentinel
 metadata:
   title: Integrate Microsoft Defender XDR with Microsoft Sentinel
   description: "In this module, you learn how to integrate Microsoft Defender XDR with Microsoft Sentinel."
-  ms.date: 10/2/2024
-  author: wwlpublish
+  ms.date: 04/23/2025
+  author: KenMAG
   ms.author: kelawson
   ms.topic: module
-  ms.collection: wwl-ai-copilot
+  ms.collection: security-operations
   ai-usage: ai-assisted
   ms.service: defender-xdr
 title: Integrate Microsoft Defender XDR with Microsoft Sentinel
