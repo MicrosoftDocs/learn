@@ -2,7 +2,7 @@
 uid: learn.philanthropies.intro-to-budgeting-for-students.knowledge-check
 title: Knowledge check
 metadata:
-  title: Knowledge check
+  title: Knowledge Check
   description: Answer the following questions to see what you learned.
   ms.date: 04/01/2025
   author: kprks
@@ -10,7 +10,6 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 quiz:
-  title: Knowledge check
   questions:
   - content: What is a budget?
     choices:
