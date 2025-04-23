@@ -1,10 +1,8 @@
-<!--Manage sensitive data and security policies in GitHub-->
-
 In this unit, you’ll learn how to create and manage rulesets, and understand the advantages they offer over traditional protection rules.
 
 As a GitHub administrator, you need granular control over who can push, delete, or rename branches and tags. **Repository rulesets** let you bundle multiple rules under a single name, apply them to selected branches or tags, and toggle them on or off without deleting them. They complement existing branch- and tag-protection rules, giving you a unified, layered approach to repository security.
 
-## What Are Repository Rulesets?
+## What are repository Rulesets?
 
 A **ruleset** is a named collection of rules that apply to one or more branches or tags in your repository.
 
@@ -14,7 +12,7 @@ A **ruleset** is a named collection of rules that apply to one or more branches 
 
 For example, a ruleset for your `feature/*` branches can require signed commits and block force pushes for everyone except admins. You can also import existing tag-protection rules into a ruleset to reuse your current settings.
 
-## Comparing Rulesets, Branch Protection, and Protected Tags
+## Comparing Rulesets, branch protection, and protected tags
 
 | Capability                                   | Protection Rules | Rulesets             |
 |----------------------------------------------|------------------|----------------------|
@@ -28,7 +26,7 @@ For example, a ruleset for your `feature/*` branches can require signed commits 
 - **Statuses:** Enable, disable, or evaluate (test) rulesets without deletion.  
 - **Transparency:** Developers and auditors can view active rulesets with read access, without admin rights.  
 
-## Creating Your First Ruleset
+## Creating your first Ruleset
 
 1. On GitHub.com, navigate to **Settings > Code and automation > Rules > Rulesets**.  
 2. Click **New ruleset**, then select **Branch** or **Tag**.  
@@ -42,14 +40,14 @@ For example, a ruleset for your `feature/*` branches can require signed commits 
 > [!TIP]  
 > For release branches (`release/*`), require two successful status checks and block force pushes to enforce stability.
 
-## Managing and Editing Rulesets
+## Managing and editing Rulesets
 
 - **View active rulesets:** On the *Rulesets* page, see which sets target a given branch or tag.  
 - **Edit a ruleset:** Click its name, adjust rules or targets, then **Save changes**.  
 - **Toggle status:** Enable or disable a ruleset without deleting it.  
 - **Delete:** Remove obsolete rulesets when they’re no longer needed.
 
-## Available Rules
+## Available rules
 
 Repository rulesets support many of the same protections as branch and tag protection:
 
@@ -64,7 +62,7 @@ Common examples:
 > [!TIP]  
 > Enforce your CI/CD pipeline by requiring key workflows as status checks before merges.
 
-## Layering Rulesets and Protections
+## Layering Rulesets and protections
 
 GitHub aggregates all applicable rules—branch protection, tag protection, and multiple rulesets—and applies the most restrictive setting.
 
@@ -74,11 +72,11 @@ GitHub aggregates all applicable rules—branch protection, tag protection, and 
 
 **Outcome:** Pull requests need three reviews, and commits must be both signed and linear.
 
-## Impacts of Policy and Ruleset Choices in GitHub Enterprise
+## Impacts of policy and Ruleset choices in GitHub Enterprise
 
 Your policies and rulesets affect security, compliance, developer experience, and operational efficiency. Finding the right balance between control and flexibility is essential.
 
-### Security and Compliance Enforcement
+### Security and compliance enforcement
 
 | **Pros**                     | **Cons**               |
 |------------------------------|------------------------|
@@ -86,7 +84,7 @@ Your policies and rulesets affect security, compliance, developer experience, an
 | Branch protections ensure every code change is reviewed. | Manual security checks increase administrative overhead.          |
 | Audit-logging rulesets support SOC 2 and ISO 27001 compliance. |               |
 
-### Developer Productivity and Workflow Efficiency
+### Developer productivity and workflow efficiency
 
 | **Pros**                 | **Cons**                |
 |--------------------------|-------------------------|
@@ -94,7 +92,7 @@ Your policies and rulesets affect security, compliance, developer experience, an
 | Security rulesets automate compliance without manual steps. | Blocking force pushes can complicate emergency hotfixes. |
 | Flexible protections (e.g., reviews only on critical branches) maintain agility. |              |
 
-### Governance and Access Control
+### Governance and access control
 
 | **Pros**              | **Cons**                  |
 |-----------------------|---------------------------|
@@ -102,7 +100,7 @@ Your policies and rulesets affect security, compliance, developer experience, an
 | Fine-grained permissions ensure proper access levels. | Blocking forks in open-source projects hinders contributions. |
 | Fork restrictions reduce intellectual property risks.      |         |
 
-### CI/CD and Automation Impact
+### CI/CD and automation impact
 
 | **Pros**             | **Cons**                   |
 |-----------------------|---------------------------|
@@ -110,11 +108,11 @@ Your policies and rulesets affect security, compliance, developer experience, an
 | Integrating GitHub Actions with rulesets enforces compliance automatically. | Blocking third-party Actions limits automation options. |
 | Built-in Code Scanning and Dependency Management embed security into pipelines. |           |
 
-## GitHub Audit Log APIs for Investigating Missing Assets
+## GitHub audit log APIs for investigating missing assets
 
 Audit logs provide visibility into events such as repository deletions or member removals. Use REST or GraphQL to query and remediate.
 
-### Steps to Troubleshoot Missing Assets
+### Steps to troubleshoot missing assets
 
 1. **Identify the asset:** (e.g., `repository.deleted`).  
 2. **Query the Audit Log API (REST):**  

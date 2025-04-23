@@ -51,7 +51,7 @@ Enterprise rules override org rules; org owners can’t change locked settings.
 - **All repos:** Access controls, SECURITY.md, Dependabot alerts/updates, advisories
 - **With Advanced Security:** Code scanning, secret scanning, dependency review
 
-## Enhancing Enterprise Security with GitHub
+## Enhancing enterprise security with GitHub
 GitHub’s enterprise features bolster your security posture and compliance.
 
 - Security Features
@@ -60,7 +60,7 @@ GitHub’s enterprise features bolster your security posture and compliance.
 - Compliance Support
   - **Compliance reports:** SOC 1 Type 2, SOC 2 Type 2, ISO/IEC 27001:2013 certifications available for audits and regulatory needs
 
-## Scrubbing Sensitive Data from GitHub Repositories
+## Scrubbing sensitive data from GitHub repositories
 When secrets leak, you must rewrite history or engage GitHub support.
 
 ### Rewrite history
@@ -104,7 +104,7 @@ When vulnerabilities arise, use GitHub security advisories to:
 
 A good advisory lists the affected versions, severity, patch status, and CVE references. Use GitHub’s built-in workflow to manage and publish advisories efficiently.
 
-## Enabling Secure Software Development and Ensuring Compliance
+## Enabling secure software development and ensuring compliance
 
 Each policy is designed to balance security and usability, offering options that range from minimal restrictions to highly controlled environments.
 The table below provides an overview of various security policies categorized by their level of control.
@@ -115,7 +115,7 @@ The table below provides an overview of various security policies categorized by
 | **Moderate Control** (Enforced Rules) | Required branch protection; Commit signing; Org-wide security policies; Monitoring webhooks | Teams needing governance with developer autonomy |
 | **High Control** (Strict Compliance & Governance) | Enforce SAML SSO & 2FA; Restrict visibility & forking; Mandatory PR approvals; Prevent force pushes; CI/CD security checks | Organizations with strict compliance requirements (e.g., SOC 2, ISO 27001) |
 
-### Key Security and Compliance Features in GitHub Enterprise
+### Key security and compliance features in GitHub Enterprise
 
 1. Secure Code Development
    - **Code Scanning (GHAS):** Automatically detect vulnerabilities via CodeQL.
@@ -130,16 +130,16 @@ The table below provides an overview of various security policies categorized by
    - **Restrict Repository Visibility:** Control who can view, fork, or clone.
    - **Fine-Grained Access Control:** Assign roles per team or project.
 
-### When to Use Different Security and Compliance Profiles
+### When to use different security and compliance profiles
 - **Startups & Agile Teams:** Moderate control with branch protection, Dependabot, and secret scanning.
 - **Enterprises & Regulated Industries:** High control with SAML SSO, audit logging, security rulesets, and strict repo controls.
 - **Open Source Projects:** Low to moderate control with code scanning, dependency updates, and community guidance.
 
-## Defining Organization and Enterprise Policies
+## Defining Organization and Enterprise policies
 
 Organization policies and enterprise policies set governance, access, and workflow rules to ensure security and compliance.
 
-### Key Aspects
+### Key aspects
 1. **Security & Access Control:** SAML SSO, 2FA, RBAC, repo visibility.
 2. **Compliance & Governance:** Audit logging, branch protection, commit signing.
 3. **Development Workflow & Automation:** PR approvals, security rulesets, Actions policies.

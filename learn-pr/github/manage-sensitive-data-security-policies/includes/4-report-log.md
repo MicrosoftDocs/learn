@@ -5,7 +5,7 @@ You can access the audit log through GitHub.com, GitHub Enterprise Server, or Gi
 > [!TIP]
 > Suppose a critical repository vanished overnight. You’ll use the audit logs to pinpoint the deletion event and restore continuity.
 
-## What Are Log Records?
+## What are Log Records?
 
 Your organization’s audit log records actions taken by organization members. Available to organization owners, the log provides information about actions that affect the organization, including:
 
@@ -18,7 +18,7 @@ Your organization’s audit log records actions taken by organization members. A
 > [!NOTE]
 > Logs are retained for up to 90 days in GitHub Enterprise Cloud (120 days via GraphQL on Enterprise Server).
 
-## Viewing and Exporting Audit Logs via the GitHub UI
+## Viewing and exporting Audit Logs via the GitHub UI
 
 1. On GitHub.com, navigate to your organization’s **Settings > Audit log**.  
 2. Use the **Filters** field to narrow results by qualifier (actor, repo, action, date).  
@@ -66,7 +66,7 @@ query {
 }
 ```
 
-## Investigating Missing Assets
+## Investigating missing assets
 
 To recover or audit missing resources like repositories or teams:
 
@@ -93,21 +93,21 @@ query {
 }
 ```
 
-## Use Cases for Audit Logs
+## Use cases for Audit Logs
 
 - **Security incidents:** Trace unauthorized access or data exfiltration.  
 - **Compliance audits:** Demonstrate policy enforcement (SOC 2, ISO 27001).  
 - **Operational troubleshooting:** Diagnose CI/CD failures or permission errors.  
 - **Access monitoring:** Review API token usage and SSH/Git activity.  
 
-## Security & Compliance
+## Security and compliance
 
 - **Data Retention:** 90 days on Enterprise Cloud; 120 days on Enterprise Server.  
 - **Access Control:** Only owners and security managers can view logs.  
 - **IP Logging:** Records source IP to detect suspicious access.  
 - **GDPR & Regional Compliance:** Meets data-handling requirements.  
 
-## Audit Log Streaming
+## Audit Log streaming
 
 Stream logs in real time to SIEM platforms (Splunk, Datadog) for long-term storage:
 
@@ -115,14 +115,14 @@ Stream logs in real time to SIEM platforms (Splunk, Datadog) for long-term stora
 2. Under **Streaming**, configure a destination (AWS S3, Azure Event Hubs).  
 3. Verify events arrive in your SIEM.  
 
-## Additional Audit Log Types
+## Additional Audit Log types
 
 - **Git Activity Log:** Tracks pushes, pulls, merges (`phrase=git.push`).  
 - **API Activity Log:** Tracks REST/GraphQL requests (`phrase=api.request`).  
 - **Enterprise Managed Users (EMU):** Includes `user.login`, `repository.permissions_updated`, `repository.forked`.  
 - **Token Usage:** Filter by `phrase=token` to identify compromised credentials.  
 
-## Key Security Features of a GitHub Repository
+## Key security features of a GitHub Repository
 
 - **SECURITY.md:** Define reporting process and supported versions.  
 - **Branch Protection:** Enforce reviews, status checks, and commit signing.  
@@ -133,7 +133,7 @@ Stream logs in real time to SIEM platforms (Splunk, Datadog) for long-term stora
 - **Dependency Graph:** Visualize and audit dependencies.  
 - **2FA & RBAC:** Enforce strong authentication and least privilege.  
 
-## API Access and Integrations
+## API access and integrations
 
 | **Token Type**            | **Description**                                                       |
 | ------------------------- | --------------------------------------------------------------------- |
