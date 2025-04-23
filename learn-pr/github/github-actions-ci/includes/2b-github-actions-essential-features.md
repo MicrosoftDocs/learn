@@ -190,6 +190,10 @@ Deployment protection rules require specific conditions to pass before a job ref
 
 Third-party systems can be observability systems, change management systems, code quality systems, or other manual configurations that you use to assess readiness before deployments are safely rolled out to environments.
 
+> **Note**
+> If you are on a GitHub Free, GitHub Pro, or GitHub Team plan, the enviroment deployment projection rules below are only available for public repositories; with the exception of branch & tag protection rules.  For users of GitHub Pro or GitHub Team plans, branch and tag protection rules are also available for private repositories.
+>
+
 #### Required reviewers protection rules
 
 Use required reviewers to require a specific person or team to approve workflow jobs that reference the environment. You can list up to six users or teams as reviewers. The reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed.
@@ -198,17 +202,9 @@ You also have the option to prevent self-reviews for deployments to protected en
 
 For more information on reviewing jobs that reference an environment with required reviewers, see Reviewing deployments.
 
-> [Note]
-> If you are on a GitHub Free, GitHub Pro, or GitHub Team plan, required reviewers are only available for public repositories.
->
-
 #### Wait timer protection rules
 
 Use a wait timer to delay a job for a specific amount of time after the job is initially triggered. The time (in minutes) must be an integer between 1 and 43,200 (30 days). Wait time will not count towards your billable time.
-
-> [Note]
-> If you are on a GitHub Free, GitHub Pro, or GitHub Team plan, required reviewers are only available for public repositories.
->
 
 #### Branch and tag protection rules
 
