@@ -6,7 +6,7 @@ metadata:
   description: Knowledge check
   author: wwlpublish
   ms.author: sheryang
-  ms.date: 03/05/2024
+  ms.date: 04/23/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -36,4 +36,4 @@ quiz:
     - content: "Results arranged by pages that have photographs first, then pages that exclusively have text"
       isCorrect: false
       explanation: "Incorrect: The Read API returns results in the order of the pages submitted regardless of their content."
-
+
