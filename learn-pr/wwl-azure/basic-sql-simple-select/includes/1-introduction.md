@@ -1,4 +1,5 @@
-## Introduction
+# Introduction
+
 <!-- 1. Topic sentences ----------------------------------------------------------------------------------
 
     Goal: Orient the learner to the area covered in this module.
@@ -11,8 +12,8 @@
     Recommended: Add a visual like an image, table, or list that supports the topic sentences.
 
     Detailed guidance: `https://review.learn.microsoft.com/help/learn/id-guidance-introductions?branch=main#module-introduction`
--->
-Understanding the fundamentals of SQL commands and the Data Manipulation Language (DML) in PostgreSQL is essential for professionals working with this powerful database system. Mastering DML empowers you to efficiently manage data by providing commands to insert, update, and delete records within a database.
+--->
+Learning how to query data effectively is a fundamental skill for anyone working with databases. In this tutorial, you'll gain hands-on experience with the SELECT statement in PostgreSQL, a powerful tool for retrieving and analyzing data. By mastering these foundational querying techniques, you'll be equipped to access specific information, generate meaningful insights, and lay the groundwork for more advanced database operations. Whether you're a beginner or looking to sharpen your skills, this tutorial will help you build confidence in working with SQL queries.
 
 <!-- 2. Motivation ---------------------------------------------------------------------------------------
 
@@ -29,7 +30,6 @@ Understanding the fundamentals of SQL commands and the Data Manipulation Languag
              structures. The relational model provides a standard way of representing and querying
              data that can be used by any application."
 -->
-By developing a strong foundation in DML, you can enhance data integrity, streamline database operations, and ensure optimal performance in data-driven applications. Additionally, knowledge of DML is beneficial for enabling seamless collaboration between teams, as it provides a standardized approach to managing and manipulating data. It also equips professionals with the skills to handle complex data workflows, troubleshoot issues effectively, and optimize database performance, making it a critical competency in today's data-centric industries.
 
 <!-- 4. Prose table of contents --------------------------------------------------------------------------
 
@@ -46,11 +46,18 @@ By developing a strong foundation in DML, you can enhance data integrity, stream
              and authorization. Then we'll put the concepts into context by describing some common
              authentication-based attacks. We'll also define some effective authorization security techniques."
  -->
- # What will we be doing?
+## What will we be doing?
 
- This tutorial provides a comprehensive overview data of basic SQL commands, specifically focusing on Data Manipulation Language (DML) in PostgreSQL. It begins with brief explanation on what commands we will be covering in this tutorial such as : INSERT, UPDATE, DELETE, UPSERT. This tutorial will guide you through the syntax and practical applications of these commands. All examples will be demonstrated using the built-in "Sales" database, providing a hands-on learning experience in a structured enviroment.
+In this tutorial, we'll explore the fundamentals of querying data using the SELECT statement in PostgreSQL. You'll learn how to:
 
- <!-- 5. Terminal learning objective ----------------------------------------------------------------------
+- Retrieve all columns from a table.
+- Query specific columns to focus on relevant data.
+- Use the DISTINCT keyword to eliminate duplicate values.
+- Create calculated columns to derive new insights from your data.
+- Concatenate columns to combine data into a single output.
+
+
+<!-- 5. Terminal learning objective ----------------------------------------------------------------------
 
     Goal: Restate the module title as a complete sentence. You have more room here to convey the main goal
           than in a space-limited title. Make it outcome-focused so it describes the main skills and
@@ -63,4 +70,4 @@ By developing a strong foundation in DML, you can enhance data integrity, stream
  -->
 ## What is the main goal?
 
-By the end of this tutorial, you will have a comprehensive understanding of basic Data Manipulation Language (DML) commands in PostgreSQL. You will be equipped with the knowledge and skills to effectively insert, update, delete, and manage data within a database. This foundational expertise will enable you to confidently handle data-driven tasks, optimize database operations, and contribute to the success of data-centric projects.
+By the end of this tutorial, you'll be able to confidently use the SELECT command to retrieve and query data from a PostgreSQL database, laying the foundation for more advanced querying techniques.

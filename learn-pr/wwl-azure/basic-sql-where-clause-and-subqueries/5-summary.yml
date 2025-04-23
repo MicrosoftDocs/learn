@@ -1,10 +1,9 @@
-### YamlMime:ModuleUnit
-uid: learn.wwl-azure.basic-sql-querying.summary
+uid: learn.wwl-azure.basic-sql-where-clause-and-subqueries.summary
 title: Summary
 metadata:
-  title: summary
+  title: Summary
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 3/16/2025
+  ms.date: 4/22/2025
   author: milenak
   ms.author: mpopovic
   ms.topic: unit
@@ -20,6 +19,7 @@ metadata:
 ###
 ### To request new values, go to
 ### https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main.
+
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/5-summary.md)]

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl-azure.basic-sql-querying.aggregate-functions-and-grouping
-title: Aggregate Functions and Grouping
+uid: learn.wwl-azure.basic-sql-simple-select.concatenation-and-calculated-columns
+title: Concatenation and calculated columns
 metadata:
-  title: Aggregate Functions and Grouping
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 3/16/2025
+  title: Concatenation and Calculated Columns
+  description: "Learn how to concatenate columns and create calculated columns in SQL queries. This unit covers the syntax and examples of using concatenation and calculated columns in SQL statements."
+  ms.date: 4/22/2025
   author: milenak
   ms.author: mpopovic
   ms.topic: unit
@@ -24,7 +24,7 @@ metadata:
 ### `https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main`.
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-aggregate-functions-and-grouping.md)]
+  [!include[](includes/4-concatenation-and-calculated-columns.md)]
 ###########################################################################
 ###
 ### Optional end-of-unit knowledge check

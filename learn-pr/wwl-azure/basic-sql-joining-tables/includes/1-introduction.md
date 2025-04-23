@@ -1,5 +1,4 @@
-# Introduction
-
+## Introduction
 <!-- 1. Topic sentences ----------------------------------------------------------------------------------
 
     Goal: Orient the learner to the area covered in this module.
@@ -13,7 +12,7 @@
 
     Detailed guidance: `https://review.learn.microsoft.com/help/learn/id-guidance-introductions?branch=main#module-introduction`
 -->
-Learning to query SQL data properly is essential for anyone working with databases. It enables you to quickly access specific information, generate reports, and identify data discrepancies, leading to improved efficiency and data integrity. Moreover, proficiency in DQL opens doors to numerous career opportunities in fields like data analysis and database administration. The motivation to learn stems from the desire to empower yourself with data-driven skills, solve complex problems, and continuously grow in the ever-evolving landscape of data management. This tutorial, using a practical sales database, provides a structured approach to mastering the core concepts of PostgreSQL DQL.
+In addition to managing individual tables, the ability to join tables is a critical skill for working with relational databases. By mastering table joins, such as IINNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN, and NATURAL JOIN, you can efficiently combine data from multiple tables to derive meaningful insights and streamline complex queries. This tutorial will guide you through these essential concepts, equipping you with the knowledge to handle real-world data scenarios effectively.
 
 <!-- 2. Motivation ---------------------------------------------------------------------------------------
 
@@ -46,11 +45,11 @@ Learning to query SQL data properly is essential for anyone working with databas
              and authorization. Then we'll put the concepts into context by describing some common
              authentication-based attacks. We'll also define some effective authorization security techniques."
  -->
-## What will we be doing?
+ # What will we be doing?
 
-This tutorial takes a hands-on approach, using the Sales database to illustrate key DQL concepts. We'll start with basic SELECT statements and gradually progress to more complex queries involving joins, aggregations, and subqueries.
+In this section, we’ll learn how to combine data from multiple related tables using various types of SQL joins. You’ll understand how to use INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN, and NATURAL JOIN to retrieve connected data across tables. Through practical examples using the "sales" database, you'll gain the skills to query and interpret relationships between entities like customers, orders, and employees.
 
-<!-- 5. Terminal learning objective ----------------------------------------------------------------------
+ <!-- 5. Terminal learning objective ----------------------------------------------------------------------
 
     Goal: Restate the module title as a complete sentence. You have more room here to convey the main goal
           than in a space-limited title. Make it outcome-focused so it describes the main skills and
@@ -63,4 +62,4 @@ This tutorial takes a hands-on approach, using the Sales database to illustrate 
  -->
 ## What is the main goal?
 
-By the end of this tutorial, you'll have a solid understanding of how to retrieve and manipulate data using PostgreSQL DQL.
+The main goal of this section is to help you master how to retrieve meaningful, connected data from multiple tables in a relational database using SQL joins. By understanding different types of joins and when to use them, you'll be able to write efficient queries that reflect real-world relationships between entities, enabling more complete and insightful data analysis.

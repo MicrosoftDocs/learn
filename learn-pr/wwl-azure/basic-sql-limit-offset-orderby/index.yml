@@ -1,9 +1,9 @@
 ### YamlMime:Module
-uid: learn.wwl-azure.basic-sql-querying
+uid: learn.wwl-azure.basic-sql-limit-offset-orderby
 metadata:
-  title: basic-sql-querying
-  description: "desc for baic-sql-querying" # Describe the module in 120 to 165 characters. Include relevant search keywords.
-  ms.date: 3/16/2025
+  title: basic-sql-limit-offset-orderby
+  description: "Description for basic-sql-limit-offset-orderby" # Describe the module in 120 to 165 characters. Include relevant search keywords.
+  ms.date: 4/23/2025
   author: mpopovic
   ms.author: mpopovic
   ms.topic: module-standard-task-based
@@ -22,7 +22,7 @@ metadata:
 ### To request new values, go to
 ### `https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main`.
   ms.service: azure-database-postgresql
-title: basic-sql-querying
+title: basic-sql-limit-offset-orderby
 ###########################################################################
 ###
 ### Introductory summary
@@ -165,12 +165,10 @@ products:
 subjects:
   - databases
 units:
-- learn.wwl-azure.basic-sql-querying.introduction
-- learn.wwl-azure.basic-sql-querying.sample-database-overview
-- learn.wwl-azure.basic-sql-querying.select-and-where
-- learn.wwl-azure.basic-sql-querying.sorting-tables
-- learn.wwl-azure.basic-sql-querying.joining-tables
-- learn.wwl-azure.basic-sql-querying.aggregate-functions-and-grouping
-- learn.wwl-azure.basic-sql-querying.summary
+- learn.wwl-azure.basic-sql-limit-offset-orderby.introduction
+- learn.wwl-azure.basic-sql-limit-offset-orderby.sample-database-overview
+- learn.wwl-azure.basic-sql-limit-offset-orderby.orderby
+- learn.wwl-azure.basic-sql-limit-offset-orderby.limit-offset
+- learn.wwl-azure.basic-sql-limit-offset-orderby.summary
 badge:
-  uid: learn.wwl-azure.basic-sql-querying.badge
+  uid: learn.wwl-azure.basic-sql-limit-offset-orderby.badge

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl-azure.basic-sql-querying.sample-database-overview
-title: Sample Database Overview
+uid: learn.wwl-azure.basic-sql-simple-select.querying-columns-and-distinct
+title: Simple SELECT
 metadata:
-  title: Sample Database Overview
+  title: Simple SELECT
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 3/16/2025
+  ms.date: 4/22/2025
   author: milenak
   ms.author: mpopovic
   ms.topic: unit
@@ -24,7 +24,7 @@ metadata:
 ### `https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main`.
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-sample-database-overview.md)]
+  [!include[](includes/3-querying-columns-and-distinct.md)]
 ###########################################################################
 ###
 ### Optional end-of-unit knowledge check
