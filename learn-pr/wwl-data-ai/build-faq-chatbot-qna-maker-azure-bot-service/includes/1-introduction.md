@@ -2,5 +2,5 @@ We are used to being able to communicate at any time of the day or night, anywhe
 
 *Conversational AI* describes solutions that enable a dialog between an AI agent and a human. Generically, conversational AI agents are known as bots. People can engage with bots through channels such as web chat interfaces, email, social media platforms, and more.
 
-**Azure AI Language**'s question answering feature provides you with the ability to create conversational AI solutions. Next you'll learn about question answering.
+**Azure AI Language**'s question answering feature provides you with the ability to create conversational AI solutions. Next you'll learn about **question answering**.
 
