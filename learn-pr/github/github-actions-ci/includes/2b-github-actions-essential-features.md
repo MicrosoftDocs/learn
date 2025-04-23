@@ -174,7 +174,10 @@ Note that you can't overwrite the value of the default environment variables nam
 
 You can add protection rules for environments defined for your GitHub repository.
 
+To add an environment, in your repository click on **Settings** and then **Environment** on the left panel. You then use the **New Environment** button to add and configure an environment with protections.
+
 ### About environments
+
 Environments are used to describe a general deployment target like production, staging, or development. When a GitHub Actions workflow deploys to an environment, the environment is displayed on the main page of the repository. You can use environments to require approval for a job to proceed, restrict which branches can trigger a workflow, gate deployments with custom deployment protection rules, or limit access to secrets. For more information about creating environments, see Managing environments for deployment.
 
 Each job in a workflow can reference a single environment. Any protection rules configured for the environment must pass before a job referencing the environment is sent to a runner. The job can access the environment's secrets only after the job is sent to a runner.
