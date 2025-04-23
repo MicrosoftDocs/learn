@@ -6,11 +6,11 @@ metadata:
   description: Exercise - Read text in Vision Studio
   author: wwlpublish
   ms.author: sheryang
-  ms.date: 03/05/2024
+  ms.date: 04/23/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 15
 content: |
   [!include[](includes/4-read-text-computer-vision.md)]
-
+
