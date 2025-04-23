@@ -18,7 +18,7 @@ Your organization’s audit log records actions taken by organization members. A
 > [!NOTE]
 > Logs are retained for up to 90 days in GitHub Enterprise Cloud (120 days via GraphQL on Enterprise Server).
 
-## Viewing Audit Logs in the GitHub UI
+## Viewing and Exporting Audit Logs via the GitHub UI
 
 1. On GitHub.com, navigate to your organization’s **Settings > Audit log**.  
 2. Use the **Filters** field to narrow results by qualifier (actor, repo, action, date).  
@@ -35,7 +35,17 @@ Your organization’s audit log records actions taken by organization members. A
 | `repo`    | octo-org/documentation          |
 | `created` | 2019-06-01                      |
 
-## Accessing Audit Logs via APIs
+## Accessing Audit Logs via API
+
+### REST API
+
+- **Scope:** Enterprise Cloud (up to 90 days; Git events for 7 days).  
+- **Monitors:** Settings changes, permission updates, team membership, application changes, plus Git events (push, pull, merge).  
+
+```http
+GET /orgs/{org}/audit-log?phrase=git.push
+Authorization: Bearer YOUR_TOKEN
+```
 
 ### GraphQL API
 
@@ -43,7 +53,6 @@ Your organization’s audit log records actions taken by organization members. A
 - **Monitors:** Settings changes, permission updates, team membership, application changes.  
 - **Limitations:** Does _not_ include Git events (pushes, pulls).  
 
-**Sample Query:**
 ```graphql
 query {
   auditLogEntries(first: 20, query: "org:octo-org action:repo.cleanup") {
@@ -57,28 +66,16 @@ query {
 }
 ```
 
-### REST API
-
-- **Scope:** Enterprise Cloud (up to 90 days; Git events for 7 days)
-- **Monitors:** Same as GraphQL plus Git events (push, pull, merge)
-
-**Sample Request:**
-```http
-GET /orgs/{org}/audit-log?phrase=git.push
-Authorization: Bearer YOUR_TOKEN
-```
-
-
-## Investigating Missing Assets with Audit Log APIs
+## Investigating Missing Assets
 
 To recover or audit missing resources like repositories or teams:
 
-1. **Identify the asset** (e.g., `repository.deleted`).
-2. **Query the API** with event filters:
-   - **REST:** `?phrase=repository.deleted`
-   - **GraphQL:** `query auditLogEntries(query: "repository.deleted")`
-3. **Inspect metadata:** actor, timestamp, repository/team name.
-4. **Remediate:** restore from backup or revisit permissions.
+1. Identify the asset (e.g., `repository.deleted`).  
+2. Query the API with event filters:  
+   - **REST:** `?phrase=repository.deleted`  
+   - **GraphQL:** `query auditLogEntries(query: "repository.deleted")`  
+3. Inspect metadata: actor, timestamp, repository/team name.  
+4. Remediate: restore from backup or revisit permissions.  
 
 ```http
 GET /orgs/{org}/audit-log?phrase=repository.deleted
@@ -96,55 +93,68 @@ query {
 }
 ```
 
-
 ## Use Cases for Audit Logs
 
-- **Security incidents:** Trace unauthorized access or data exfiltration.
-- **Compliance audits:** Demonstrate policy enforcement (SOC 2, ISO 27001).
-- **Operational troubleshooting:** Diagnose CI/CD failures or permission errors.
-- **Access monitoring:** Review API token usage and SSH/Git activity.
+- **Security incidents:** Trace unauthorized access or data exfiltration.  
+- **Compliance audits:** Demonstrate policy enforcement (SOC 2, ISO 27001).  
+- **Operational troubleshooting:** Diagnose CI/CD failures or permission errors.  
+- **Access monitoring:** Review API token usage and SSH/Git activity.  
 
+## Security & Compliance
 
-## Security & Compliance with Audit Logs
-
-- **Data Retention:** 90 days on Enterprise Cloud; 120 days on Enterprise Server.
-- **Access Control:** Only owners and security managers view logs.
-- **IP Logging:** Records source IP to detect suspicious access.
-- **GDPR & Compliance:** Meets regional data-handling requirements.
-
+- **Data Retention:** 90 days on Enterprise Cloud; 120 days on Enterprise Server.  
+- **Access Control:** Only owners and security managers can view logs.  
+- **IP Logging:** Records source IP to detect suspicious access.  
+- **GDPR & Regional Compliance:** Meets data-handling requirements.  
 
 ## Audit Log Streaming
 
 Stream logs in real time to SIEM platforms (Splunk, Datadog) for long-term storage:
 
-1. Go to **Settings > Audit log**.
-2. Under **Streaming**, configure a destination (AWS S3, Azure Event Hubs).
-3. Verify events arrive in your SIEM.
-
+1. Go to **Settings > Audit log**.  
+2. Under **Streaming**, configure a destination (AWS S3, Azure Event Hubs).  
+3. Verify events arrive in your SIEM.  
 
 ## Additional Audit Log Types
 
-- **Git Activity Log:** Tracks pushes, pulls, merges (`phrase=git.push`).
-- **API Activity Log:** Tracks REST/GraphQL requests (`phrase=api.request`).
-- **Enterprise Managed Users (EMU):** Includes `user.login`, `repository.permissions_updated`, `repository.forked`.
-- **Token Usage:** Filter by `phrase=token` to identify compromised credentials.
+- **Git Activity Log:** Tracks pushes, pulls, merges (`phrase=git.push`).  
+- **API Activity Log:** Tracks REST/GraphQL requests (`phrase=api.request`).  
+- **Enterprise Managed Users (EMU):** Includes `user.login`, `repository.permissions_updated`, `repository.forked`.  
+- **Token Usage:** Filter by `phrase=token` to identify compromised credentials.  
 
+## Key Security Features of a GitHub Repository
 
-## Exporting Audit Logs via the Web UI
+- **SECURITY.md:** Define reporting process and supported versions.  
+- **Branch Protection:** Enforce reviews, status checks, and commit signing.  
+- **Dependabot Alerts:** Automatic vulnerability detection and updates.  
+- **Code Scanning:** Continuous analysis via CodeQL.  
+- **Secret Scanning & Push Protection:** Real-time prevention and alerts.  
+- **Security Advisories:** Draft, collaborate, and publish advisories.  
+- **Dependency Graph:** Visualize and audit dependencies.  
+- **2FA & RBAC:** Enforce strong authentication and least privilege.  
 
-1. In the upper-right corner, click your profile photo, then **Your organizations**.
-2. Next to your organization, click **Settings**.
-3. In **Archive** sidebar, select **Logs**, then click **Audit log**.
+## API Access and Integrations
 
+| **Token Type**            | **Description**                                                       |
+| ------------------------- | --------------------------------------------------------------------- |
+| **Personal Access Tokens (PATs)** | Tied to a user account; simple scripts; broad scope. |
+| **Installation Tokens**    | For GitHub Apps installations; fine-grained permissions.            |
+| **OAuth Tokens**           | For OAuth apps; scoped access; requires least privilege.            |
+| **Device Tokens**          | For device-based authentication flows.                               |
+| **Refresh Tokens**         | To renew expired tokens without re-authentication.                   |
 
-Use the **Filters** field and **Export** menu to customize and download logs.
+| **Rate Limit Type**        | **Limit**                       |
+| -------------------------- | ------------------------------- |
+| **Unauthenticated**        | 60 requests per hour.           |
+| **Authenticated**          | 5,000 requests per hour.        |
+| **Apps**                   | Varies by installation.         |
 
-
-## Exporting Audit Logs via API
-
-To ensure administrators to programmatically retrieve audit log data for analysis, compliance, or monitoring purposes, GitHub provides an API endpoint for exporting audit logs. Below is the REST endpoint used for fetching audit logs:
-
-```http
-GET /orgs/{org}/audit-log
-Authorization: Bearer YOUR-TOKEN
+Check via API:
+```sh
+curl -H "Authorization: token YOUR_TOKEN" \
+     -H "Accept: application/vnd.github.v3+json" \
+     https://api.github.com/rate_limit
 ```
+
+GitHub Apps offer fine-grained permissions ideal for organizational integrations, while PATs suit basic scripts. OAuth Apps should be granted least privilege, with event subscriptions managed and reviewed regularly. Organizations can restrict untrusted apps through settings to enhance security. Enterprise Managed Users provide managed accounts with limited scope, ensuring compliance. Data residency policies help organizations store logs in specified regions, aligning with regulatory requirements.
+
