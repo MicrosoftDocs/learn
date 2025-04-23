@@ -1,10 +1,10 @@
-When you bake a cake, you need the right ingredients. When writing a useful prompt you need the right ingredients.  
+When you bake a cake, you need the right ingredients. When writing a useful prompt, you need the right ingredients.  
 
 :::image type="content" source="../media/cake-baking.png" alt-text="Screenshot of the cake baking." lightbox="../media/cake-baking.png":::
 
 Image created using [Microsoft Designer](https://designer.microsoft.com/).
 
-Making good prompts helps the AI give better answers. If your prompts are clear, the AI will understand what you want and give correct information. Here are some tips for making great prompts.
+Making good prompts help the AI give better answers. If your prompts are clear, the AI understands what you want. Here are some tips for making great prompts.
 
 ### Goal
 
