@@ -1,6 +1,6 @@
 Conceptually there are several components for an end-to-end Dev Box service setup. Platform engineer or an IT Admin sets up the **Dev center**, **project**, and the **Dev box definition**. Once the project is created Dev team leads can be delegated the administration of projects which allows them to create **Dev Box pools** for their development teams. 
 
-![Diagram of key steps required to create a Dev Box machine.](../media/image-2.png)
+:::image type="content" source="../media/image-2.png" alt-text="Diagram of key steps required to create a Dev Box machine.":::
 
 ## Dev center
 
@@ -103,4 +103,4 @@ This is a preconfigured virtual machine that a developer creates by using the de
 
 Now that you understand the various components of the service, this diagram shows how various components of the service are connected and work end-to-end.
 
-![Diagram of the various components of Microsoft Dev Box.](../media/image-3.png)
+:::image type="content" source="../media/image-3.png" alt-text="Diagram of the various components of Microsoft Dev Box.":::
