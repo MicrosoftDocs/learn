@@ -1,3 +1,4 @@
+
 Let's go over the fundamentals of semantic search:
 
 - How it differs from standard lexical search.
@@ -34,7 +35,7 @@ The numerical similarity of two *n*-dimensional vectors `v1` and `v2` is given b
 
 ```sql
 dot_product(v1, v2) = SUM(
- v1[0] * v2[0] +
+ v1[0] * v2[0],
  v1[1] * v2[1],
  ...,
  v1[n-1] * v2[n-1],
@@ -72,3 +73,4 @@ There are many native vector databases and database extensions to choose from. T
 - [Azure PostgreSQL Server pgvector Extension](/azure/postgresql/flexible-server/how-to-use-pgvector)
 - [Azure Cosmos DB Vector Database Extension](/azure/cosmos-db/introduction)
 - [Azure AI Search](/azure/search/search-what-is-azure-search)
+
