@@ -47,7 +47,8 @@ Consider the following scenario to understand how team synchronization works in 
 - Alice is added to the IdP group → automatically added to the GitHub team
 - If she leaves the group → automatically removed from the team
 
-**Note:** Team Sync in GHES doesn’t provision accounts. Users must already be GitHub organization members.
+> [!NOTE]
+> Team Sync in GHES doesn’t provision accounts. Users must already be GitHub organization members.
 
 ### Team Sync Configuration
 
@@ -68,7 +69,8 @@ To disable:
 
 :::image type="content" source="../media/disable-team-synchronization.png" alt-text="Screenshot of the organization setting to disable team synchronization." :::
 
-> Note: Disabling sync removes users from teams if they were added via IdP mapping.
+> [!NOTE]
+> Disabling sync removes users from teams if they were added via IdP mapping.
 
 ### SCIM in GHES
 SCIM is an open standard protocol designed to automate the exchange of user identity information between identity domains and IT systems. In the context of GHES, SCIM enables administrators to provision, update, and deprovision user accounts directly through the GitHub API. This means you can create, update, and delete user accounts, and sync group information to map GitHub team memberships.

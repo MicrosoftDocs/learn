@@ -1,15 +1,15 @@
-# GitHub Enterprise: Scalable Administration and Governance
-
 As your GitHub Enterprise organization grows—whether due to team expansion or new contractor engagements—administrators are responsible for ensuring secure access, managing identity lifecycles, monitoring compliance, and optimizing deployment pipelines. This unit introduces key GitHub Enterprise features and governance tools to help you scale securely and efficiently.
 
 
 ## Secure Access with Single Sign-On (SSO)
 
-To maintain centralized identity control and streamline user management, enable SAML-based single sign-on (SSO) with your identity provider (IdP), such as Okta or Microsoft Entra ID.
+To maintain centralized identity control and streamline user management, enable SAML-based Single Sign-On (SSO) with your identity provider (IdP), such as Okta or Microsoft Entra ID.
 
-> **Tip:** From your organization’s **People** tab, you can review and revoke individual SAML credentials under the **SAML identity linked** section.
+> [!TIP] 
+> From your organization’s **People** tab, you can review and revoke individual SAML credentials under the **SAML identity linked** section.
 
-> **Important:** If you use team synchronization, revoking a user’s SSO identity automatically removes them from any teams mapped to IdP groups.
+> [!IMPORTANT] 
+> If you use team synchronization, revoking a user’s SSO identity automatically removes them from any teams mapped to IdP groups.
 
 
 ## Automate Identity Management with SCIM and APIs
@@ -72,7 +72,7 @@ GraphQL enables you to fetch only the data you need or mutate enterprise setting
 
 Enterprise Apps enhance oversight and control over GitHub Apps installed across your organizations.
 
-### Setup Overview:
+### Setup Overview
 
 | Platform | Steps |
 |----------|-------|
@@ -101,7 +101,8 @@ The [GitHub Marketplace](https://github.com/marketplace) offers reusable automat
 | **Auth Model**  | Uses temporary `GITHUB_TOKEN`              | Uses JWT + installation token                 |
 | **Billing**     | Billed per Action minute                   | SaaS-based (subscription/licensing)           |
 
-> **Tip:** Use GitHub Actions for ephemeral, event-based automation. Choose GitHub Apps when building persistent services with deeper API interactions or advanced permission scopes.
+> [!TIP] 
+> Use GitHub Actions for ephemeral, event-based automation. Choose GitHub Apps when building persistent services with deeper API interactions or advanced permission scopes.
 
 
 ### How Marketplace Tools Work Under the Hood

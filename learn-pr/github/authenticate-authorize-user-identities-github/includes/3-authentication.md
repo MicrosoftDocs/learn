@@ -19,6 +19,7 @@ You can configure SAML SSO at either the **organization** or **enterprise** leve
 - **Enforcement**: Select **Require SAML SSO authentication** to remove non-compliant members automatically.
 - **Use Case**: Ideal for phased rollouts or testing with limited impact.
 
+> [!NOTE]
 > GitHub removes only organization members who fail to authenticate. Enterprise members remain until they next access the resource.
 
 #### Enterprise-Level SAML SSO
@@ -79,6 +80,7 @@ You can configure SAML SSO at either the **organization** or **enterprise** leve
 #### Github SMS support
 :::image type="content" source="../media/two-factor-authentication-sms-six-digit-code-example.png" alt-text="Screenshot of the SMS code." :::
 
+> [!NOTE]
 > Security keys store credentials locally and never expose secrets. GitHub recommends FIDO2/U2F keys.
 
 ### Auditing 2FA Compliance

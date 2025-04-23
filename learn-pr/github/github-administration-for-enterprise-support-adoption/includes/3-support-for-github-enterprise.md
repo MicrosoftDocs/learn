@@ -1,7 +1,5 @@
 :::image type="content" source="../media/premium-support.png" alt-text="A graphic that shows a stylized support engineer, with icons that represent different times of day":::
 
-# GitHub Enterprise Support
-
 This unit explains the enhanced support options available with GitHub Enterprise and outlines key responsibilities of administrators when working with GitHub Support. You'll apply this knowledge whether you're using GitHub Enterprise Server (self-hosted) or GitHub Enterprise Cloud (hosted by GitHub).
 
 
@@ -44,7 +42,8 @@ GitHub Support typically assists with issues across three areas: accounts, secur
 - Security Incidents: GitHub Support can help mitigate damage from compromised accounts, roll back repository changes, and assist with security recovery.
 - Abuse Cases: Support investigates violations of GitHub’s terms, such as harassment or inappropriate content, and can remove users or content as needed.
 
-> ⚠️ Administrators are responsible for infrastructure configuration, CI/CD integrations, third-party auth systems (like SAML), internal scripting, hardware setup, and immediate on-prem issue resolution.
+> [!NOTE]
+> Administrators are responsible for infrastructure configuration, CI/CD integrations, third-party auth systems (like SAML), internal scripting, hardware setup, and immediate on-prem issue resolution.
 
 
 
@@ -58,7 +57,7 @@ Include the following:
 - Context (e.g., first occurrence, frequency, business impact)  
 - Error messages (verbatim)  
 
-### 🔥 GitHub Support Priority Levels
+### GitHub Support Priority Levels
 
 | Priority | Description | Typical Response Time |
 |----------|-------------|------------------------|

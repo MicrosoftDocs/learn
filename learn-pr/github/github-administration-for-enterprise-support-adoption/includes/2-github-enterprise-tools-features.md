@@ -1,5 +1,3 @@
-# GitHub Administration for Enterprise Support and Adoption
-
 As a GitHub Enterprise administrator, you're responsible for establishing development environments that are both secure and scalable. This unit explores how to distinguish between GitHub Enterprise’s *upkeep* and *automation* features, and how to configure your organization for efficient collaboration.
 
 We also introduce standards-based developer workflows and rulesets—powerful tools for centralized policy enforcement.
@@ -19,7 +17,7 @@ Imagine your organization has brought in an external contractor team to deliver 
 - Enabling private GitHub Pages for controlled documentation sharing (an upkeep feature).
 - Monitoring GitHub Actions usage to ensure efficient automation across the expanding team (an automation feature).
 
-:::image type="content" source="../media/enterprise-features-dichotomy.png" alt-text="GitHub Enterprise features categories split between Upkeep and Automation":::
+:::image type="content" source="../media/enterprise-features-dichotomy.png" alt-text="Diagram of GitHub Enterprise features categories split between Upkeep and Automation.":::
 
 
 ## Establishing Developer Workflow Standards
@@ -43,7 +41,7 @@ To ensure consistency, security, and scalability, GitHub Enterprise organization
 
 **Rulesets** are GitHub's recommended mechanism for enforcing policy at scale. Unlike traditional branch protection rules, rulesets allow you to centrally manage policies across multiple repositories and teams.
 
-:::image type="content" source="../media/ruleset-primary-foucs.png" alt-text="Rulesets overview":::
+:::image type="content" source="../media/ruleset-primary-focus.png" alt-text="Screenshot of Rulesets overview.":::
 
 ### Benefits of Rulesets
 
@@ -58,7 +56,7 @@ To ensure consistency, security, and scalability, GitHub Enterprise organization
 - Enforce CI/CD checks before merge.
 - Restrict access to protected branches.
 
-:::image type="content" source="../media/example-ruleset-policies.png" alt-text="Example ruleset enforcement dashboard":::
+:::image type="content" source="../media/example-ruleset-policies.png" alt-text="Screenshot of the ruleset enforcement dashboard.":::
 
 #### Combining Rulesets and Branch Protection (Legacy Support)
 
@@ -118,10 +116,10 @@ Automation features help reduce human error, enforce coding standards, and strea
 #### GitHub Advanced Security (GHAS)
 
 1. Navigate to **Your enterprises > Settings**.
-2. Review seat usage under **GitHub Advanced Security**.
+2. Review user usage under **GitHub Advanced Security**.
 3. If nearing limits, evaluate usage by team and prioritize.
 
-:::image type="content" source="../media/enterprise-licensing-tab-ghas.png" alt-text="GHAS usage dashboard":::
+:::image type="content" source="../media/enterprise-licensing-tab-ghas.png" alt-text="Screenshot of GHAS usage dashboard.":::
 
 #### GitHub Actions
 
@@ -132,7 +130,7 @@ Automation features help reduce human error, enforce coding standards, and strea
    - Windows: 2x Linux rate.
    - macOS: 10x Linux rate.
 
-:::image type="content" source="../media/actions-minutes.png" alt-text="GitHub Actions minutes usage":::
+:::image type="content" source="../media/actions-minutes.png" alt-text="Screenshot of GitHub Actions minutes usage.":::
 
 
 ## CI/CD Strategy in GitHub Enterprise
@@ -150,7 +148,8 @@ GitHub Enterprise enables secure and scalable CI/CD practices using **GitHub Act
 - **Security in CI/CD**: Integrate Dependabot, secret scanning, and compliance checks directly into pipelines.
 - **Monitoring & Notifications**: Configure alerts and integrate observability tools to track deployment health and performance.
 
-> **Tip**: Define reusable workflows and environments (e.g., staging, production) to ensure consistency and control.
+> [!TIP]
+> Define reusable workflows and environments (e.g., staging, production) to ensure consistency and control.
 
 ### Getting Started
 
@@ -187,7 +186,7 @@ Administrators can approve, configure, and maintain third-party tools and GitHub
 - Monitor permission changes.
 - Prefer tools with **Verified Creator** badges for higher trust.
 
-:::image type="content" source="../media/apps-with-verified-publisher-badge-tooltip.png" alt-text="Verified Creator badge in GitHub Marketplace":::
+:::image type="content" source="../media/apps-with-verified-publisher-badge-tooltip.png" alt-text="Screenshot of Verified Creator badge in GitHub Marketplace.":::
 
 ### Marketplace Guidelines
 

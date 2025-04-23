@@ -119,7 +119,7 @@ Some advantages of using the supported IdPs are:
 - Lower setup effort
 
 ### Bring Your Own IdP:
-Bringing your own IdP requires it isSAML 2.0 support. The advantage of this is that if allows for full flexibility.
+Bringing your own IdP requires it isSAML 2.0 support. The advantage of this is that it allows for full flexibility.
 
 ### Integration Steps
 | Type               | Steps                 |
