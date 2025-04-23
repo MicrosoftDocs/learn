@@ -2,7 +2,7 @@ You can easily create a question answering solution on Microsoft Azure using **A
 
 ## Creating a custom question answering knowledge base
 
-You can use *Azure AI Language Studio* to create, train, publish, and manage question answering projects.
+You can use *Azure AI Language Studio* to create, train, publish, and manage low-code question answering projects.
 
 > [!NOTE]
 > You can write code to create and manage projects using the Azure AI Language REST API or SDK. However, in most scenarios it is easier to use the Language Studio.
