@@ -1,13 +1,13 @@
-When it comes to user authentication, security should be the number one consideration that comes to mind. Strong security is essential. It seems like every month or so, a company reports a data breach. Credentials are stolen because of inefficient security processes, or simply because of a lack of up-to-date security features within the company. Establishing secure user authentication can be a difficult task if user adoption requires long and frustrating steps to authenticate. Ask any security professional and they'll mention several ways that companies authenticate their users.
+When it comes to user authentication, security should be the number one consideration that comes to mind. Strong security is essential. It seems like every month or so, a company reports a data breach. Credentials are stolen because of inefficient security processes, or simply because of a lack of up-to-date security features within the company. Establishing secure user authentication can be a difficult task if user adoption requires long and frustrating steps to authenticate.
 
 GitHub Enterprise supports two recommended methods for secure user authentication:
 
-- **SAML Single Sign-On (SSO)**
-- **Two-Factor Authentication (2FA)**
+- **SAML Single Sign-On(SSO)**
+- **Two-Factor Authentication(2FA)**
 
 ## SAML SSO Authentication
 
-SAML SSO integrates GitHub with your organization’s identity provider (IdP), allowing centralized access control and improved compliance. When enabled, GitHub redirects users to the IdP for authentication before granting access to organization resources.
+SAML(Security Assertion Markup Language) SSO integrates GitHub with your organization’s identity provider (IdP), allowing centralized access control, and improved compliance. When enabled, GitHub redirects users to the IdP for authentication before granting access to organization resources.
 
 ### Enabling and Enforcing SAML SSO
 
@@ -16,7 +16,7 @@ You can configure SAML SSO at either the **organization** or **enterprise** leve
 #### Organization-Level SAML SSO
 
 - **Setup**: In your org settings under **Security**, input your IdP’s SAML SSO URL and public certificate. Test and save the configuration.
-- **Enforcement**: Select **Require SAML SSO authentication** to remove non-compliant members automatically.
+- **Enforcement**: Select **Require SAML SSO authentication** to remove noncompliant members automatically.
 - **Use Case**: Ideal for phased rollouts or testing with limited impact.
 
 > [!NOTE]
@@ -27,7 +27,7 @@ You can configure SAML SSO at either the **organization** or **enterprise** leve
 - **Setup**: In your enterprise account settings, enable SAML SSO similarly to org-level.
 - **Enforcement**: Apply SSO across all organizations in your enterprise.
 - **Benefits**: Ensures unified policies and reduces risk from fragmented configurations.
-- **Note**: GitHub does **not** immediately remove non-compliant enterprise members. They’ll be prompted to authenticate upon access.
+- **Note**: GitHub does **not** immediately remove noncompliant enterprise members. They are prompted to authenticate upon access.
 
 ### Choosing the Right SSO Scope
 
@@ -43,8 +43,8 @@ You can configure SAML SSO at either the **organization** or **enterprise** leve
 
 | Scope | Steps |
 |-------|-------|
-| **Organization** | 1. Navigate to **Your organizations** → **Settings** → **Security**.<br>2. Enable SAML with your IdP’s details.<br>3. Test configuration and save.<br>4. Select **Require SAML SSO**, then remove non-compliant users. |
-| **Enterprise** | 1. Navigate to **Your enterprises** → **Settings** → **Security**.<br>2. Enable SAML with your IdP’s details.<br>3. Test configuration and save.<br>4. Enforce SSO across all orgs and review non-compliant users. |
+| **Organization** | 1. Navigate to **Your organizations** → **Settings** → **Security**.<br>2. Enable SAML with your IdP’s details.<br>3. Test configuration and save.<br>4. Select **Require SAML SSO**, then remove noncompliant users. |
+| **Enterprise** | 1. Navigate to **Your enterprises** → **Settings** → **Security**.<br>2. Enable SAML with your IdP’s details.<br>3. Test configuration and save.<br>4. Enforce SSO across all orgs and review noncompliant users. |
 
 :::image type="content" source="../media/require-saml-sso-authentication.png" alt-text="Screenshot of the setting to require SSO authentication for all members of an organization." :::
 
@@ -53,15 +53,15 @@ You can configure SAML SSO at either the **organization** or **enterprise** leve
 2FA adds a second verification step beyond username and password. You can require 2FA for organization members, outside collaborators, and billing managers.
 
 > [!WARNING]
-> When you require the use of two-factor authentication for your organization, all accounts that don't use 2FA will be removed from the organization and lose access to its repositories. This includes bot accounts.
+> When you require the use of two-factor authentication for your organization, all accounts that don't use 2FA is removed from the organization and lose access to its repositories. Accounts that are affected include bot accounts.
 >
 > 
-> For more detailed information about 2FA, see [Securing your account with two-factor authentication (2FA)](https://docs.github.com/authentication/securing-your-account-with-two-factor-authentication-2fa).
+> For more detailed information about 2FA, see [Securing your account with two-factor authentication (2FA)](https://docs.GitHub.com/authentication/securing-your-account-with-two-factor-authentication-2fa).
 
 ### Enforcing 2FA
 
 - Navigate to your org’s **Security** settings.
-- Enable the **Require two-factor authentication** checkbox.
+- Enable the checkbox laballed **Require two-factor authentication**.
 - Communicate the requirement in advance to prevent loss of access.
 
 :::image type="content" source="../media/require-2fa-checkbox.png" alt-text="Screenshot of the checkbox requiring two-factor authentication for members in the organization.":::
@@ -70,14 +70,14 @@ You can configure SAML SSO at either the **organization** or **enterprise** leve
 
 | Method | Description |
 |--------|-------------|
-| **Security Keys** | Most secure method. Physical USB or NFC devices that prevent phishing. Requires prior setup with TOTP or SMS. |
+| **Security Keys** | Most secure method. Physical USB or NFC devices that prevent phishing. Requires prior setup with TOTP(Time-based one-time passwords) or SMS(Short Message Service). |
 | **TOTP Apps** | Recommended. Generates time-based one-time passwords, supports backup, and works offline. |
-| **SMS** | Least secure. Should only be used where TOTP is not viable. GitHub SMS support varies by region. |
+| **SMS** | Least secure. Should only be used where TOTP isn't viable. GitHub SMS support varies by region. |
 
 #### Time-based one-time passwords
 :::image type="content" source="../media/two-factor-identification-totp-example.png" alt-text="Screenshot of the time-based one-time password code." :::
 
-#### Github SMS support
+#### GitHub SMS support
 :::image type="content" source="../media/two-factor-authentication-sms-six-digit-code-example.png" alt-text="Screenshot of the SMS code." :::
 
 > [!NOTE]
@@ -90,6 +90,6 @@ To review who has enabled 2FA:
 1. Go to **Your organizations** → select org → **People** tab.
 2. Select the **2FA** filter.
 
-From here, you can identify non-compliant users and follow up outside of GitHub, typically via email.
+From here, you can identify noncompliant users and follow up outside of GitHub, typically via email.
 
 :::image type="content" source="../media/two-factor-authentication-enabled-example.png" alt-text="Screenshot of the account-security setting." :::

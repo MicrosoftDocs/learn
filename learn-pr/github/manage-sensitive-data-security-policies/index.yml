@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: learn.github.manage-sensitive-data-security-policies
 metadata:
-  title: Manage sensitive data and security policies within GitHub
+  title: Manage Sensitive Data and Security Policies Within GitHub
   description: Familiarize yourself with GitHub's basic security tools, which prepare repositories for secure development and industry-standard response to threats.
   ms.service: github
   manager: mkluck
-  ms.date: 02/02/2024
+  ms.date: 04/14/2025
   author: rmcmurray
   ms.author: robmcm
   ms.topic: module

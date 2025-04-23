@@ -2,31 +2,33 @@
 uid: learn.wwl.design-implement-azure-expressroute.configure-peering-for-expressroute-deployment
 title: Configure peering for an ExpressRoute deployment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure peering for an ExpressRoute deployment
   description: "Configure peering for an ExpressRoute deployment"
-  ms.date: 12/06/2024
+  ms.date: 04/21/2025
   author: wwlpublish
-  ms.author: jileary
+  ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/6-configure-peering-for-expressroute-deployment.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "An engineer wants to consume a specific set of services through Microsoft peering. Which feature should be configured?"
+  - content: "What is the primary purpose of Microsoft ExpressRoute peering?"
     choices:
-    - content: "Network Firewall."
+    - content: "To provide a direct connection to the internet from Azure services."
       isCorrect: false
-      explanation: "Incorrect. Network Firewall allows control traffic flow using rules that specify allowed or blocked IP address and ports."
-    - content: "Route filters."
+      explanation: "Incorrect. ExpressRoute peering isn't designed to provide direct internet access."
+    - content: "To enable load balancing between Azure and on-premises resources."
+      isCorrect: false
+      explanation: "Incorrect. ExpressRoute peering doesn't inherently provide load balancing capabilities."
+    - content: "To establish private, high-bandwidth network connections between Azure datacenters and infrastructure on your premises or in a colocation environment."
       isCorrect: true
-      explanation: "Correct. Route filters are a way to consume a subset of supported services through Microsoft peering."
-    - content: "You can't consume only a subset of services."
-      isCorrect: false
-      explanation: "Incorrect. You can configure Microsoft peering to consume only a subset of services."
+      explanation: "Correct. ExpressRoute peering is used to create private network connections between Azure and other environments."
   - content: "To provide connectivity to Microsoft 365 and PaaS services. Which peering service should select?"
     choices:
     - content: "Private peering."
