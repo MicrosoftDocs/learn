@@ -2,7 +2,7 @@
 uid: learn.philanthropies.intro-to-budgeting-for-students.check
 title: Knowledge check
 metadata:
-  title: Knowledge check
+  title: Knowledge Check
   description: Answer the following questions to see what you learned.
   ms.date: 04/01/2025
   author: kprks
@@ -10,7 +10,6 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 quiz:
-  title: Knowledge check
   questions:
   - content: Why is budgeting helpful?
     choices:
