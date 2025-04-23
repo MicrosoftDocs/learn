@@ -17,9 +17,9 @@ summary: |
   You'll also learn how to grant them permission to your Azure resources so that your pipelines can deploy your Bicep files.
 abstract: |
   After completing this module, you'll be able to:
-  - Explain what a service principal is, how it works, and how it compares to a managed identity
-  - Create a service principal and manage its keys
-  - Configure the appropriate authorization for a service principal to deploy Azure resources
+  - Explain what a service principal is, how it works, and how it compares to a managed identity.
+  - Create a service principal and manage its keys.
+  - Configure the appropriate authorization for a service principal to deploy Azure resources.
 prerequisites: |
   You should be familiar with:
   - Creating and deploying basic Bicep templates.

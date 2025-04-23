@@ -2,21 +2,21 @@ Now that you understand the concept of a service principal, you might wonder how
 
 ## Understand how service principals are authenticated
 
-When a service principal needs to communicate with Azure, it signs in to Microsoft Entra ID. After Microsoft Entra ID verifies the service principal's identity, it issues a _token_ that the client application stores and uses when it makes any requests to Azure. 
+When a service principal needs to communicate with Azure, it signs in to Microsoft Entra ID. After Microsoft Entra ID verifies the service principal's identity, it issues a _token_ that the client application stores and uses when it makes any requests to Azure.
 
 Broadly speaking, this process is similar to how things work when you sign in to Azure yourself as a user. However, compared to users, service principals have a slightly different type of credential to prove their identity. Service principals use two main credentials: keys and certificates.
 
 > [!NOTE]
-> Remember that managed identities are special service principals that work within Azure. They have a different type of authentication process that doesn't require that you know or handle credentials at all.
+> Remember that managed identities are special service principals that work within Azure. They have a different type of authentication process that doesn't require you know or handle credentials at all.
 
 ### Keys
 
 Keys are similar to passwords. However, keys are much longer and more complex. In fact, for most situations, Microsoft Entra ID generates keys itself to ensure that:
 
 - The keys are _cryptographically random_. That is, they're extremely hard to guess.
-- Humans don't accidentally use weak passwords as keys. 
+- Humans don't accidentally use weak passwords as keys.
 
-Service principals often have highly privileged permissions, so it's essential that they're secure. Typically, you only need to handle the key briefly when first configuring the service principal and your pipeline. So the key doesn't need to be memorable or easy to type. 
+Service principals often have highly privileged permissions, so it's essential that they're secure. Typically, you only need to handle the key briefly when first configuring the service principal and your pipeline. So the key doesn't need to be memorable or easy to type.
 
 A single service principal can have multiple keys at the same time, but users can't have multiple passwords. Like passwords, keys have an expiration date. You'll learn more about that soon.
 
@@ -25,7 +25,7 @@ A single service principal can have multiple keys at the same time, but users ca
 
 ### Certificates
 
-Certificates are another way to authenticate service principals. They're very secure but can be hard to manage. Some organizations require the use of certificates for certain types of service principals. 
+Certificates are another way to authenticate service principals. They're very secure but can be hard to manage. Some organizations require the use of certificates for certain types of service principals.
 
 We won't discuss certificates in this module. However, if you work with a service principal that uses certificate authentication, it basically works the same way as any other service principal in terms of managing it and granting it permission for your pipeline.
 
@@ -37,15 +37,15 @@ We won't discuss certificates in this module. However, if you work with a servic
 When you create a service principal, you generally ask Azure to create a key at the same time. Azure typically generates a random key for you.
 
 > [!NOTE]
-> Remember our earlier discussion about how service principals work? Keys are stored as part of the application registration object. If you open the Azure portal, look within the Microsoft Entra configuration, and then go to the application registrations, you can create and delete keys there too.
+> Remember our earlier discussion about how service principals work? Keys are stored as part of the application registration object. If you open the Azure portal, look within the Microsoft Entra configuration, and then go to the application registrations. You can create and delete keys there too.
 
 Azure shows you the key when you create the service principal. This is the only time that Azure will ever show you the key. After that, you can't retrieve it anymore. It's important that you securely copy the key so you can use it when you configure your pipeline. Don't share the key by email or another non-secure means. If you lose a key, you must delete it and create a new one.
 
 ## Manage service principals for Azure Pipelines
 
-When you create a key for a pipeline's service principal, it's a good idea to immediately copy the key into the pipeline's configuration. That way, you avoid storing or transmitting the key unnecessarily. 
+When you create a key for a pipeline's service principal, it's a good idea to immediately copy the key into the pipeline's configuration. That way, you avoid storing or transmitting the key unnecessarily.
 
-Pipeline tools include secure ways to specify your service principal's application ID and key. Never store credentials of any kind in source control. Instead, use *service connections* when you work with Azure Pipelines. In this module, we only discuss how to create a service principal and key. You'll learn how to configure your pipeline with the key in a later module.
+Pipeline tools include secure ways to specify your service principal's application ID and key. Never store credentials of any kind in source control. Instead, use _service connections_ when you work with Azure Pipelines. In this module, we only discuss how to create a service principal and key. You'll learn how to configure your pipeline with the key in a later module.
 
 > [!TIP]
 > Azure Pipelines can create service principals for you automatically. In this module, you'll manually create and manage your service principals to gain a better understanding of what's happening. In other modules, you'll use the automatic creation method for simplicity.
@@ -108,7 +108,7 @@ Service principals have several identifiers and names that you use to identify a
 
 > [!TIP]
 > Use a clear, descriptive display name for your service principal. It's important to help your team understand what the service principal is for, so that nobody accidentally deletes it or changes its permissions.
-
+>
 > [!CAUTION]
 > A display name isn't unique. Multiple service principals might share the same display name. Be careful when you grant permissions to a service principal by using its display name to identify it. You might accidentally give permissions to the wrong service principal. It's a good practice to use the application ID instead.
 
@@ -154,17 +154,17 @@ $newKey = $newCredential.SecretText
 
 ## Manage the lifecycle of your service principal
 
-It's important to consider the whole lifecycle of each service principal that you create. When you build a service principal for a pipeline, what will happen if the pipeline is eventually deleted or is no longer used? 
+It's important to consider the whole lifecycle of each service principal that you create. When you build a service principal for a pipeline, what will happen if the pipeline is eventually deleted or is no longer used?
 
-Service principals aren't removed automatically, so you need to audit and remove old service principals. It's important to remove old service principals for the same reason that you delete old user accounts: attackers might gain access to their keys. It's best not to have credentials that aren't actively used.
+Service principals aren't removed automatically, so you need to audit and remove old ones. It's important to remove old service principals for the same reason that you delete old user accounts: attackers might gain access to their keys. It's best not to have credentials that aren't actively used.
 
 It's a good practice to document your service principals in a place that you and your team can easily access. You should include the following information for each service principal:
 
 > [!div class="checklist"]
 > * Essential identifying information, including its name and application ID.
-> * The purpose of the service principal.
-> * Who created it, who's responsible for managing it and its keys, and who might have answers if there's a problem.
-> * The permissions that it needs, and a clear justification for why it needs them.
-> * What its expected lifetime is.
+> - The purpose of the service principal.
+> - Who created it, who's responsible for managing it and its keys, and who might have answers if there's a problem.
+> - The permissions that it needs, and a clear justification for why it needs them.
+> - What its expected lifetime is.
 
 You should regularly audit your service principals to ensure that they're still being used and that the permissions they've been assigned are still correct.
