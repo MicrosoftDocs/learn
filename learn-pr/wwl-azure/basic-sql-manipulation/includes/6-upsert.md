@@ -1,5 +1,3 @@
-## UPSERT operation
-
 # UPSERT - insert or update multiple columns
 
 EXCLUDED - a special table alias in PostgreSQL used within the ON CONFLICT clause. It refers to the row that was proposed for insertion but caused a conflict. You can use EXCLUDED to access the values from the conflicting INSERT and use them in the DO UPDATE statement.

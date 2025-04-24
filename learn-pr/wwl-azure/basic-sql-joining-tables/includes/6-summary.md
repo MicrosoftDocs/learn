@@ -1,5 +1,3 @@
-## Summary
-
 This tutorial is designed to equip learners with the essential skills for retrieving related data from multiple tables using SQL JOIN operations in PostgreSQL. 
 You should now be able to:
 

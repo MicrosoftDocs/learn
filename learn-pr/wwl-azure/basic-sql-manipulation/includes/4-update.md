@@ -1,5 +1,3 @@
-## UPDATE command
-
 # UPDATE single column (Simple UPDATE)
 
 This query updates the price of the `Wireless Mouse` in the `Sales.Products` table to 100.99. 

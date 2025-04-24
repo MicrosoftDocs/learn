@@ -1,5 +1,3 @@
-## Filtering data with WHERE clause
-
 The WHERE clause in PostgreSQL is used to filter rows in a query based on specified conditions, enabling the retrieval of just the data that meets your needs. 
 
 It is a powerful filtering tool with a wide range of options, allowing users to combine conditions, apply logical operators, and format outputs to meet complex query requirements. 

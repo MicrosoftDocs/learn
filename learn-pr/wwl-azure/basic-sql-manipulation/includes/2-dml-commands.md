@@ -1,5 +1,3 @@
-## Basic SQL Commands - DML (Data manipulation Language)
-
 In this tutorial, we will focus on basic SQL commands for data manipulation, known as DML (Data Manipulation Language). DML commands allow you to insert, update and delete data from a database. These are fundamental operations commonly used in everyday database management. 
 
 ## The commands we will cover include: 

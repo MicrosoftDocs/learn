@@ -1,4 +1,3 @@
-# Summary
 
 This tutorial provides a foundational understanding of how to use the SELECT statement in PostgreSQL to retrieve and manipulate data effectively. By the end of this tutorial, you should be able to:
 

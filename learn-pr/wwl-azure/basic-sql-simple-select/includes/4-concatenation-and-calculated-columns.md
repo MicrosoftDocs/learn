@@ -1,5 +1,3 @@
-# Concatenation and calculated columns
-
 
 #  Querying data with calculated columns
 

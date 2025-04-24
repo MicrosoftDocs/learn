@@ -1,5 +1,3 @@
-## Summary
-
 This tutorial provides a practical foundation for filtering and retrieving data in PostgreSQL using the WHERE clause and Subqueries. You should now be able to:
 
     Filter data effectively using the WHERE clause, leveraging a range of conditions including comparison operators, logical operators (AND, OR), pattern matching with LIKE, range filtering with BETWEEN, value lists with IN and NOT IN, and null checks using IS NULL / IS NOT NULL.

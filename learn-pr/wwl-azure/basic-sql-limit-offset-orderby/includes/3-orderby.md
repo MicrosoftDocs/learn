@@ -1,7 +1,4 @@
-## Sorting data with ORDER BY
-
 The ORDER BY clause is used in SQL to sort the result set of a SELECT statement. This means it arranges the rows of the output based on the values of one or more columns. This is essential for organizing data in a way that makes it easier to interpret and use. You can specify the column(s) to sort by, and you have control over the sort order: ascending (from smallest to largest or A to Z) or descending (from largest to smallest or Z to A). Without ORDER BY, the order of the returned rows is generally unpredictable. 
-
 
 # Sorting in ascending order (default)
 

@@ -1,4 +1,4 @@
-## Introduction
+
 <!-- 1. Topic sentences ----------------------------------------------------------------------------------
 
     Goal: Orient the learner to the area covered in this module.

@@ -1,5 +1,3 @@
-## Simple SELECT examples
-
 
 # Querying all columns from a table 
 

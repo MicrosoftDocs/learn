@@ -1,5 +1,3 @@
-## INSERT command
-
 # INSERT data into specific column/columns
 
 ```sql

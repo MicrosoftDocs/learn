@@ -1,6 +1,3 @@
-## NATURAL and FULL JOIN
-
-
 # FULL OUTER JOIN
 
 A FULL OUTER JOIN, also referred to as a FULL JOIN, combines the characteristics of both LEFT JOIN and RIGHT JOIN, including all rows from both tables in the result set. 

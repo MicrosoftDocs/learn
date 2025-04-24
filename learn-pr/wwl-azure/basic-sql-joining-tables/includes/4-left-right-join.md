@@ -1,5 +1,3 @@
-## LEFT and RIGHT JOIN
-
 # LEFT JOIN
 
 A LEFT JOIN, also known as a LEFT OUTER JOIN, is a type of SQL operation that preserves all the rows from the left-hand (or first) table in the query, regardless of whether there is a matching row in the right-hand (or second) table.

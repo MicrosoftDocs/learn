@@ -1,4 +1,4 @@
-## Joining tables
+# Joining tables
 
 In relational databases, data is frequently organized into multiple tables to minimize redundancy and enhance data integrity. This design approach, known as normalization, avoids repeating the same information in different places. However, this means that useful information is often spread across multiple tables.  
 

@@ -1,4 +1,3 @@
-# Sample Database Overview
 
 The sales database is designed to simulate a typical sales environment for a company that sells various products to customers. It's structured to store information about customers, products, suppliers, orders, employees, and shipping. This database allows us to:
 

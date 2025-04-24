@@ -1,5 +1,3 @@
-## DELETE command
-
 One possible error when using the DELETE command occurs due to foreign key constraints.
 
 If a product exists in the `Sales.OrderDetails` table as a reference, attempting to delete it from the `Sales.Products` table will result in an error to prevent data inconsistency.

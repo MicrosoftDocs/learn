@@ -1,5 +1,3 @@
-## Summary
-
 This tutorial is designed to equip learners with the essential skills for controlling result sets in PostgreSQL using the LIMIT and OFFSET clauses. You should now be able to:
 
 Retrieve a specific number of rows from a query using the LIMIT clause.

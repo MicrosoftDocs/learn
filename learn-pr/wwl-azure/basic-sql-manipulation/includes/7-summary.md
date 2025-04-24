@@ -1,5 +1,3 @@
-## Summary
-
 This tutorial is designed to equip learners with the essential skills for manipulating data in PostgreSQL databases using DML (Data Manipulation Language) commands. You should now be able to:
 
 Insert new records into tables using the INSERT statement, whether adding single rows, multiple rows, or data derived from other tables via subqueries.

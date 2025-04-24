@@ -1,8 +1,4 @@
-## Subqueries
-
 Often, you need to retrieve data based on conditions that are themselves derived from the data in your database. Subqueries allow you to do this by letting you use the result of one SELECT statement as part of another. This is useful for tasks like finding all customers who placed orders exceeding a certain average or identifying products supplied by a specific set of suppliers. 
-
- 
 
 Subqueries can be used in the following contexts: 
 
