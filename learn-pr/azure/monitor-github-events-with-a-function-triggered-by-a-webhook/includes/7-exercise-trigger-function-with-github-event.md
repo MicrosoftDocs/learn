@@ -4,11 +4,11 @@ In this exercise, you'll update your function to parse information from the GitH
 
 1. In the Azure portal, go to the Function App that you created earlier.
 
-1. On the **Function App** pane, in the left menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your *Function App*.
+1. On the **Function App** pane, select your Function App under **Functions** in the center pane.
 
-1. Select the HttpTrigger1 you created. The **HtttpTrigger1** pane appears for your *Function*.
+1. Select the **HttpTrigger1** you created. The **HtttpTrigger1** pane appears for your *Function*.
 
-1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane for your *Function* appears.
+1. Select **Code + Test** at the top of the screen. The **Code + Test** pane for your *Function* appears.
 
 1. In the path above the code, from the dropdown list, select **index.js**. The JavaScript for your trigger appears.
 
