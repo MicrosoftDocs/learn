@@ -34,4 +34,6 @@ Each field and data pair has a confidence level, indicating the likely level of 
 ## Using Azure AI Document Intelligence
 To use Azure AI Document Intelligence, create either a **Document Intelligence** or **Azure AI services** resource in your Azure subscription. If you have not used Document Intelligence before, select the free tier when you create the resource. There are some restrictions with the free tier, for example only the first two pages are processed for PDF or TIFF documents.
 
-After the resource has been created, you can use the resource in the [Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/studio?azure-portal=true), a user interface for testing document analysis, prebuilt models, and creating custom models. 
+There are several ways you can use Azure AI Document Intelligence. After the resource has been created, you can use the resource in the [Document Intelligence Studio](https://formrecognizer.appliedai.azure.com/studio?azure-portal=true), a user interface for testing document analysis, prebuilt models, and creating custom models. 
+
+You can also test out Azure AI Document Intelligence in [Azure AI Foundry portal](https://ai.azure.com?azure-portal=true), a unified platform for enterprise AI operations, model builders, and application development.

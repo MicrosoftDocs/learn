@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Check your knowledge.
-  ms.date: 11/08/2023
+  ms.date: 04/18/2025
   author: roryp
   ms.author: ropreddy
   ms.topic: unit
@@ -48,4 +48,4 @@ quiz:
     - content: "package"
       isCorrect: false
       explanation: "This command bundles your application into an executable JAR file."
-
+
