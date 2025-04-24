@@ -53,7 +53,7 @@ The scanner runs under a service account that needs specific permissions to func
 
 ## Install required software and enable connectivity
 
-Install the full Microsoft Purview Information Protection client on the scanner server, not just the PowerShell module. You'll also need the Microsoft Office iFilter to support file types like .zip, and the scanner server needs access to the following endpoints over HTTPS unless configured for offline use:
+Install the full Microsoft Purview Information Protection client on the scanner server, not just the PowerShell module. You'll also need the Microsoft Office IFilter to support file types like .zip, and the scanner server needs access to the following endpoints over HTTPS unless configured for offline use:
 
 - *.aadrm.com
 - *.azurerms.com
