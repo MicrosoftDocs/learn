@@ -1,4 +1,4 @@
-In this exercise, you'll update the Bicep template you previously created so it:\
+In this exercise, you'll update the Bicep file you previously created so it:\
 
 - Accepts parameters for the resource locations and names.
 - Uses your business rules to select the right SKUs for the resources being deployed.
@@ -7,11 +7,11 @@ During the process, you'll:
 
 > [!div class="checklist"]
 >
-> - Update the template to include a `location` parameter.
-> - Update the template to include parameters and variables for the resource names.
+> - Update the file to include a `location` parameter.
+> - Update the file to include parameters and variables for the resource names.
 > - Use expressions to set default values for the parameters.
-> - Update the template to include variables for the SKU of each resource.
-> - Test the deployment to ensure that the template is valid.
+> - Update the file to include variables for the SKU of each resource.
+> - Test the deployment to ensure that the file is valid.
 
 ## Add the location and resource name parameters
 
@@ -19,13 +19,13 @@ During the process, you'll:
 
    :::code language="bicep" source="code/6-template-1.bicep" range="1-5":::
 
-   The Bicep linter adds yellow squiggly lines underneath each parameter and variable name to indicate they're not used in the template. You'll fix this issue soon.
+   The Bicep linter adds yellow squiggly lines underneath each parameter and variable name to indicate they're not used in the file. You'll fix this issue soon.
 
-   Notice that you're using expressions that include string interpolation and the `uniqueString()` function to define default parameter values. Someone deploying this template can override the default parameter values by specifying the values at deployment time, but they can't override the variable values.
+   Notice that you're using expressions that include string interpolation and the `uniqueString()` function to define default parameter values. Someone deploying this file can override the default parameter values by specifying the values at deployment time, but they can't override the variable values.
 
    Also notice that you're using a variable for the Azure App Service plan name, but you're using parameters for the other names. Storage accounts and App Service apps need globally unique names, but App Service plan names need to be unique only within their resource group. This difference means it's not a concern to use the same App Service plan name across different deployments, as long as the deployments are all going into different resource groups.
 
-   [!INCLUDE [Sandbox location note](../../includes/azure-template-bicep-exercise-sandbox-location.md)]
+   [!INCLUDE [Sandbox location note](../../includes/azure-file-bicep-exercise-sandbox-location.md)]
 
 1. Find the places within the resource definitions where the `location` and `name` properties are set, and update them to use the parameter values. After you're finished, the resource definitions within your Bicep file should look like this:
 
@@ -63,7 +63,7 @@ After you've completed all of the preceding changes, your _main.bicep_ file shou
 
 If your file doesn't match, copy the example or adjust your file to match the example.
 
-### Deploy the updated Bicep template
+### Deploy the updated Bicep file
 
 ::: zone pivot="cli"
 

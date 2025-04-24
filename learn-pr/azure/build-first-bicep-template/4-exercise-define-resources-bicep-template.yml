@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.deploy-azure-resources-bicep.define-resources-bicep-template
-title: Exercise - Define resources in a Bicep template
+uid: learn.azure.deploy-azure-resources-bicep.define-resources-bicep-file
+title: Exercise - Define resources in a Bicep file
 sandbox: true
 metadata:
   unitType: exercise
-  title: Exercise - Define resources in a Bicep template
+  title: Exercise - Define resources in a Bicep file
   description: Learn how to define resources in Bicep and understand how Bicep treats dependencies between resources.
   ms.date: 01/31/2025
   author: mumian
@@ -14,5 +14,5 @@ metadata:
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 12
 content: |
-  [!include[](includes/4-exercise-define-resources-bicep-template.md)]
-
+  [!include[](includes/4-exercise-define-resources-bicep-file.md)]
+

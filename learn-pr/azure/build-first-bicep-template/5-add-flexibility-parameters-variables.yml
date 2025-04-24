@@ -4,7 +4,7 @@ title: Add flexibility by using parameters and variables
 metadata:
   unitType: learning-content
   title: Add flexibility by using parameters and variables
-  description: Learn how to build reusable templates by using parameters to accept input, and variables to store and reuse values within the template.
+  description: Learn how to build reusable files by using parameters to accept input, and variables to store and reuse values within the file.
   ms.date: 01/31/2025
   author: mumian
   ms.author: jgao
@@ -14,4 +14,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/5-add-flexibility-parameters-variables.md)]
-
+

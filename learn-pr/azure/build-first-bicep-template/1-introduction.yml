@@ -4,7 +4,7 @@ title: Introduction
 metadata:
   unitType: introduction
   title: Introduction
-  description: Learn how to create Bicep templates and create reusable infrastructure as code.
+  description: Learn how to create Bicep files and create reusable infrastructure as code.
   ms.date: 01/31/2025
   author: mumian
   ms.author: jgao
@@ -14,4 +14,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
-
+
