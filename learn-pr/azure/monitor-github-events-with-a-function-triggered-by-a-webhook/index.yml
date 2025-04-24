@@ -10,7 +10,7 @@ metadata:
   ms.service: azure-functions
   manager: susanpotter
 title: Monitor GitHub events by using a webhook with Azure Functions
-summary: Webhooks offer a lightweight mechanism for your app to be notified by another service when something of interest happens. In this module. you'll learn how to trigger an Azure function with a GitHub webhook and parse the payload for insights.
+summary: Webhooks offer a lightweight mechanism for your app to be notified by another service when something of interest happens. In this module, you'll learn how to trigger an Azure function with a GitHub webhook and parse the payload for insights.
 abstract: | 
   In this module, you will:
   - Trigger your function with a webhook.

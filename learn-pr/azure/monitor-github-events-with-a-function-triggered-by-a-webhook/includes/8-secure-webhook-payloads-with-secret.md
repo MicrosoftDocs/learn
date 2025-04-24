@@ -1,6 +1,6 @@
 After your function is configured to receive payloads, it listens for any payload sent to the endpoint you configured. For security reasons, you might want to limit requests to those coming from GitHub. There are a few ways to go about this. For example, you could opt to approve requests from GitHub's IP address. An easier method is to set up a secret token and validate the request using this token.
 
-In the example scenario, your IT Department's management are happy with the webhook-triggered function that you've created in an Azure Functions app. All of the information regarding updates to the company wiki are being parsed by that function and sent to the business each time the *Gollum* event is triggered. The management has asked how secure is the information passed from GitHub. They've asked you to find a way to secure the information, and verify it's GitHub that is sending updates.
+In the example scenario, your IT Department's management is happy with the webhook-triggered function that you've created in an Azure Functions app. All of the information regarding updates to the company wiki are being parsed by that function and sent to the business each time the *Gollum* event is triggered. The management has asked how secure is the information passed from GitHub. They've asked you to find a way to secure the information, and verify it's GitHub that is sending updates.
 
 In this unit, you'll learn how to secure your webhook payload with a secret and validate payloads from GitHub.
 
