@@ -4,13 +4,13 @@ title: Train models with PyTorch
 metadata:
   title: Train models with PyTorch
   description: Train models with PyTorch
-  author: wwlpublish
-  ms.author: madiepev
-  ms.date: 08/26/2024
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.date: 4/24/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 7
 content: |
   [!include[](includes/3-pytorch.md)]
-
+
