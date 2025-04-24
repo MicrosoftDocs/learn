@@ -26,7 +26,7 @@ Before you change the prototype, you need to run it to validate the assumptions.
 
 1. In the browser that opens, sign in to your Azure account.
 
-The Visual Studio Code terminal displays a list of the subscriptions associated with this account.
+   The Visual Studio Code terminal displays a list of the subscriptions associated with this account.
 
 1. In the list, find the subscription that you want to use for this exercise.
 
