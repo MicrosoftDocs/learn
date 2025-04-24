@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Module assessment
   description: "Evaluate whether Azure Data Explorer is appropriate to process and analyze your big data."
-  ms.date: 08/21/2023
+  ms.date: 04/24/2025
   author: shsagir
   ms.author: shsagir
   ms.topic: unit
@@ -81,4 +81,4 @@ quiz:
       isCorrect: false
       explanation: "Azure Data Explorer is optimized for high query concurrency."
   
-
+
