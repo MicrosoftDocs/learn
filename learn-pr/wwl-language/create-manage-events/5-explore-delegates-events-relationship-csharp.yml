@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-manage-events.explore-delegates-events-relationship-csharp
-title: Explore Delegates and Events Relationship in C#
+title: Explore delegates and events relationship in C#
 metadata:
-  title: Explore Delegates and Events Relationship in C#
+  title: Explore delegates and events relationship in C#
   description: "Understand advanced concepts of delegates and events in C#, including custom event data, multicast delegates, and best practices."
   ms.date: 04/24/2025
   author: wwlpublish
