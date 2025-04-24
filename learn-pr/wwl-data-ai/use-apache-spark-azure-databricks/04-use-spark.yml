@@ -6,10 +6,10 @@ metadata:
   description: "Use Spark in notebooks"
   ms.date: 12/12/2024
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: jamesh
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/04-use-spark.md)]
+  [!include[](includes/04-use-spark.md)]
