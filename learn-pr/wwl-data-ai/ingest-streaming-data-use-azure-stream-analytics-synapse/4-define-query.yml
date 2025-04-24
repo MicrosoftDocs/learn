@@ -6,8 +6,8 @@ metadata:
   description: "Define a query to select, filter, and aggregate data"
   ms.date: 12/12/2024
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: jamesh
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-define-query.md)]
+  [!include[](includes/4-define-query.md)]
