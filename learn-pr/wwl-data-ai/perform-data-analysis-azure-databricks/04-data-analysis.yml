@@ -6,10 +6,10 @@ metadata:
   description: "Data analysis using DataFrame APIs"
   ms.date: 12/12/2024
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: jamesh
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/04-data-analysis.md)]
+  [!include[](includes/04-data-analysis.md)]
