@@ -3,7 +3,7 @@ uid: learn.advocates.azure-functions-and-signalr.6-host-a-static-website-using-a
 metadata:
   title: Use a storage account to host a static website
   description: Learn how an Azure Storage account is able to host static files over a secure server.
-  ms.date: 01/22/2025
+  ms.date: 04/24/2025
   author: glenga
   ms.author: glenga
   ms.topic: unit

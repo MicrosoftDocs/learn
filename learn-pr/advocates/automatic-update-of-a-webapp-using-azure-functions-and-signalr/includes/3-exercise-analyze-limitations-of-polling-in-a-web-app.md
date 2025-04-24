@@ -10,10 +10,10 @@ Before you change the prototype, you need to run it to validate the assumptions.
     git clone https://github.com/<YOUR-GITHUB-ALIAS>/mslearn-advocates.azure-functions-and-signalr stock-prototype
     ```
 
-1. Ensure that you're in the **stock-prototype** repo and install the dependencies in the **setup-resources** folder.
+1. Ensure that you're in the **stock-prototype** folder `cd stock-prototype` if needed). Install the dependencies in the **setup-resources** folder.
 
     ```bash
-    cd stock-prototype/setup-resources && npm install
+    cd setup-resources && npm install
     ```
 
     If you receive warnings about `EBADENGINE`,  you can ignore them.
@@ -29,7 +29,7 @@ Before you change the prototype, you need to run it to validate the assumptions.
     View the subscriptions.
 
     ```bash
-    az account list --output json | jq -r '.[] | .name' | sort
+    az account list
     ```
 
     To set the default subscription, replace `YOUR-SUBSCRIPTION-ID` with a subscription ID from the previous Azure CLI output.
