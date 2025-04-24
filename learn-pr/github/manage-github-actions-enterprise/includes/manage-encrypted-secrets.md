@@ -103,17 +103,17 @@ Some best practices for third-party actions securely:
 
 1. Pin Actions to a Tag Only if The Author is Trusted: You should only pin an action to a tag ONLY if the author is trusted.  A common example is displayed below:
 
-```yml
-- name: Checkout
+    ```yml
+    - name: Checkout
         uses: actions/checkout@v4  # pinned to specific version tag
-```
+    ```
 
 2. Pin Actions to a Full Length Commit SHA: By pinning an action to a full length commit SHA, you ensure, in the only way currently, you are using an immutable release of an action. You should be sure to verify that the SHA version of the action is in fact from the intended repository. An example of the same action used previously is displayed below:
 
-```yml
-- name: Checkout
+    ```yml
+      - name: Checkout
         uses: actions/checkout@1e31de5234b9f8995739874a8ce0492dc87873e2  # pinned to specific commit SHA
-```
+    ```
 
 3. Audit the Source Code of the action: You should review the source code of the action to verify that data is handled as expected and there is no unexpected malicious activity.
 
