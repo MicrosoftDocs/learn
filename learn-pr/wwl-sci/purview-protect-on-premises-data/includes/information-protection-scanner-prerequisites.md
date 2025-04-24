@@ -21,7 +21,7 @@ The supported operating systems for production use include:
 - Windows Server 2022
 - Windows Server 2025
 
-While you can test the scanner on any operating system [supported by the information protection client](/purview/information-protection-client?tabs=devices%2Cinstall-client-exe%2Cclassification-file-types%2Cexcluded-folders#requirements-for-deploying-the-information-protection-client), this configuration isn't supported for production use. Server Core and Nano Server aren't supported in any scenario.
+While you can test the scanner on any operating system [supported by the information protection client](/purview/information-protection-client?azure-portal=true#requirements-for-deploying-the-information-protection-client), this configuration isn't supported for production use. Server Core and Nano Server aren't supported in any scenario.
 
 If your data includes NFS shares, make sure the server has the NFS feature enabled.
 
@@ -34,7 +34,7 @@ Make sure your SQL Server setup meets these requirements:
 - **SQL Server version**: SQL Server 2016 or later
 - **Collation**: Must be case-insensitive
 - **Sysadmin access**: Required to install the scanner and automatically create the database
-- **Alternative setup**: If Sysadmin rights aren't allowed, the database and permissions can be configured manually with an [alternative configuration](/purview/deploy-scanner-prereqs#deploying-the-scanner-with-alternative-configurations)
+- **Alternative setup**: If Sysadmin rights aren't allowed, the database and permissions can be configured manually with an [alternative configuration](/purview/deploy-scanner-prereqs?azure-portal=true#deploying-the-scanner-with-alternative-configurations)
 - **Performance at scale**: For environments with more than 10 scanners, use a SQL Server machine with at least 8 CPU cores and 16-GB RAM
 
 ## Grant the correct permissions to the scanner service account

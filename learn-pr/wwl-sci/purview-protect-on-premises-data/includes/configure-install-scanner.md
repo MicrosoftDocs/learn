@@ -13,7 +13,7 @@ You need one of these Microsoft Purview roles to configure the scanner in the po
 
 ### Steps to configure scanner settings
 
-1. Go to the [Microsoft Purview portal](https://purview.microsoft.com/) > **Settings** > **Information Protection** > **Information protection scanner**.
+1. Go to the [Microsoft Purview portal](https://purview.microsoft.com/?azure-portal=true) > **Settings** > **Information Protection** > **Information protection scanner**.
 1. On the Clusters tab, select **Add**.
 1. Give your cluster a **name** and optional **description**.
 1. Select **Save** to save your changes.
