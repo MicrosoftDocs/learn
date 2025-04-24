@@ -39,7 +39,7 @@ When you create a service principal, you generally ask Azure to create a key at 
 > [!NOTE]
 > Remember our earlier discussion about how service principals work? Keys are stored as part of the application registration object. If you open the Azure portal, look within the Microsoft Entra configuration, and then go to the application registrations. You can create and delete keys there too.
 
-Azure shows you the key when you create the service principal. This is the only time that Azure will ever show you the key. After that, you can't retrieve it anymore. It's important that you securely copy the key so you can use it when you configure your pipeline. Don't share the key by email or another non-secure means. If you lose a key, you must delete it and create a new one.
+Azure shows you the key when you create the service principal. This is the only time that Azure will ever show you the key. After that, you can't retrieve it anymore. It's important that you securely copy the key so you can use it when you configure your pipeline. Don't share the key by email or another nonsecure means. If you lose a key, you must delete it and create a new one.
 
 ## Manage service principals for Azure Pipelines
 
@@ -167,4 +167,4 @@ It's a good practice to document your service principals in a place that you and
 > - The permissions that it needs, and a clear justification for why it needs them.
 > - What its expected lifetime is.
 
-You should regularly audit your service principals to ensure that they're still being used and that the permissions they've been assigned are still correct.
+You should regularly audit your service principals to ensure that they're still in use and that the permissions they've been assigned are still correct.

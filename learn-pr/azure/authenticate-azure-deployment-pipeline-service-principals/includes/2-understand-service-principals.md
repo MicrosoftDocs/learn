@@ -31,7 +31,7 @@ Microsoft Entra ID is the service that manages identities for Azure. Microsoft E
 
 A service principal is a type of account. It can sign in to Microsoft Entra ID, but there's no human to sign in and interact with the authentication process. Service principals don't have MFA or similar protections, because those require a person to do something to prove their identity.
 
-In Microsoft Entra ID, a service principal is identified by an _application ID_ and a credential. The application ID is a globally unique ID (GUID). For pipelines, the credential is usually a strong password called a _key_. Alternatively, you can use a _certificate_ as a credential.
+In Microsoft Entra ID, an _application ID_ and a credential identifies a service principal. The application ID is a globally unique ID (GUID). For pipelines, the credential is usually a strong password called a _key_. Alternatively, you can use a _certificate_ as a credential.
 
 ### Managed identities
 
@@ -68,7 +68,7 @@ You might see a few different terms in use when you work with service principals
 
 Service principals are a feature of Microsoft Entra ID. Microsoft Entra ID is a global identity service. Many companies use Microsoft Entra ID, and each company is called a _tenant_.
 
-Microsoft Entra ID has a concept of an _application_, which represents a system, piece of software, process, or some other non-human agent. You can think of a deployment pipeline as an application.
+Microsoft Entra ID has a concept of an _application_, which represents a system, piece of software, process, or some other nonhuman agent. You can think of a deployment pipeline as an application.
 
 In Microsoft Entra ID, applications can do many things that are beyond the scope of authentication and pipeline deployments. When you create an application and tell Microsoft Entra ID about it, you create an object called an _application registration_. An application registration represents the application in Microsoft Entra ID.
 

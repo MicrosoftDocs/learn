@@ -9,7 +9,7 @@ Until now, you've focused on what service principals are and how they can be use
 After Microsoft Entra ID has authenticated a service principal, the next question becomes: what can this service principal do? This is the concept of _authorization_. It's the responsibility of the Azure role-based access control (RBAC) system, sometimes called identity and access management (IAM). By using Azure RBAC, you can grant a service principal access to a specific resource group, subscription, or management group.
 
 > [!NOTE]
-> Everything you're doing here is using the Azure RBAC system to grant access to create and manage Azure resources, like your storage accounts, App Service plan, and virtual networks. Microsoft Entra ID also has its own role system, which is sometimes called _directory roles_. You use these roles to grant permissions for service principals to manage Microsoft Entra ID. This module doesn't discuss this subject in depth, but be aware that the term _role_ can be used for both situations in some documentation.
+> Here, everything you're doing is using the Azure RBAC system to grant access to create and manage Azure resources, like your storage accounts, App Service plan, and virtual networks. Microsoft Entra ID also has its own role system, which is sometimes called _directory roles_. You use these roles to grant permissions for service principals to manage Microsoft Entra ID. This module doesn't discuss this subject in depth, but be aware that the term _role_ can be used for both situations in some documentation.
 
 ## Select the right role assignment for your pipeline
 
@@ -65,7 +65,7 @@ You can create multiple role assignments that provide different permissions at d
 
 You likely work with multiple environments, like development, test, and production environments for your applications. The resources for each environment should be deployed to different resource groups or subscriptions.
 
-You should create separate service principals for each environment, and grant each service principal the minimum set of permissions that it needs for its deployments. Be especially careful to avoid mixing permissions for production deployments with those for deployments to non-production environments.
+You should create separate service principals for each environment, and grant each service principal the minimum set of permissions that it needs for its deployments. Be especially careful to avoid mixing permissions for production deployments with those for deployments to nonproduction environments.
 
 ## Create a role assignment for a service principal
 
@@ -135,7 +135,7 @@ You can also create a role assignment at the same time that you create a service
 
 ## Grant access using Bicep
 
-Role assignments are Azure resources. This means that you can create a role assignment by using Bicep. You might do this if you initialize your resource groups using Bicep, and then deploy the resources into the resource group using a service principal. Here's an example Bicep definition for the role assignment above:
+Role assignments are Azure resources. This means that you can create a role assignment by using Bicep. You might do this if you initialize your resource groups using Bicep, and then deploy the resources into the resource group using a service principal. Here's an example Bicep definition for the role assignment discussed:
 
 ```bicep
 resource roleAssignment 'Microsoft.Authorization/roleAssignments@2023-04-01-preview' = {
