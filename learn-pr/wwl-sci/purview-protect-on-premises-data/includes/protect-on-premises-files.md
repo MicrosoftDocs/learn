@@ -58,4 +58,3 @@ This functionality helps organizations apply the same data loss prevention strat
 - Use **discovery mode** to evaluate the potential effect of label application before making changes.
 - For large SharePoint farms, you might need to adjust the list view threshold and network port settings to avoid performance issues.
 - Default protection applies only to Office files and PDFs. Other file types must be manually configured for encryption or DLP actions if needed.
-
