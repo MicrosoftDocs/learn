@@ -204,7 +204,7 @@ For more information on reviewing jobs that reference an environment with requir
 
 #### Wait timer protection rules
 
-Use a wait timer to delay a job for a specific amount of time after the job is initially triggered. The time (in minutes) must be an integer between 1 and 43,200 (30 days). Wait time will not count towards your billable time.
+You can use a wait timer protection rule to delay a job for a specific amount of time after the job is initially triggered before the environment deployment is allowed to proceed. The time (in minutes) must be an integer between 1 and 43,200 (30 days). Wait time will not count towards your billable time.
 
 #### Branch and tag protection rules
 
