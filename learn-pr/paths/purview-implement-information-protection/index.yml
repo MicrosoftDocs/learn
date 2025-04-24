@@ -31,6 +31,7 @@ modules:
 - learn.wwl.create-manage-sensitive-information-types
 - learn-m365.m365-compliance-information-protect-information
 - learn.wwl.apply-manage-sensitivity-labels
+- learn.wwl.purview-protect-on-premises-data
 - learn-m365.audit-encryption
 - learn.wwl.deploy-message-encryption-microsoft-365
 
