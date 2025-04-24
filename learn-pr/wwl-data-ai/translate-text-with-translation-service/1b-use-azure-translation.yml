@@ -4,7 +4,7 @@ title: Understand translation in Azure
 metadata:
   title: Understand translation in Azure
   description: "Understand translation in Azure"
-  ms.date: 09/13/2024
+  ms.date: 04/23/2025
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/1b-use-azure-translation.md)]
+  [!include[](includes/1b-use-azure-translation.md)]
