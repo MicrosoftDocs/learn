@@ -140,6 +140,55 @@ curl -X POST \
 | `client_payload`          | object               | Arbitrary JSON payload to send custom data to the workflow (github.event.client_payload) | No
                                                        |        No         |
 
+#### repository_dispatch Parameters Breakdown
+When making a POST request to the GitHub API endpoint, you must pass a JSON body with two main parameters:
+- event_type
+- client_payload
+
+##### event_type
+
+This is a required custom string you define that GitHub will treat as the "action" or "type" of the dispatch. It’s used to identify what triggered the workflow and filter workflows that are listening for specific types.
+
+- Format:
+  - Type: string
+  - Example: "deploy", "run-tests", "sync-db", "build-docker"
+
+- Use in Workflow: Used in listening for specific event types and accessing the value inside the workflow. This helps with the reuse of a single workflow for multiple purposes and makes automation more organized and event-driven. 
+- Example:
+```
+- name: Print event type
+  run: echo "Event type: ${{ github.event.action }}"
+```
+
+##### client_payload
+This is a free-form JSON object that lets you send custom data along with the dispatch. You define the structure, and it's accessible inside the workflow.
+- Format:
+  - Type: object
+  - Custom keys and values 
+
+- Use in Workflow: Used for multi-environment deployments, versioned releases, or passing context from another system or pipeline and enables parameterized workflows, similar to input arguments.
+- Example:
+```
+- name: Show payload values
+  run: |
+    echo "Environment: ${{ github.event.client_payload.env }}"
+    echo "Version: ${{ github.event.client_payload.version }}"
+
+```
+
+##### Example Payload Breakdown
+```
+{
+  "event_type": "deploy-to-prod",
+  "client_payload": {
+    "env": "production",
+    "build_id": "build-456",
+    "initiator": "admin_user",
+    "services": ["web", "api", "worker"]
+  }
+}
+
+```
 ## Use conditional keywords
 
 Within your workflow file, you can access context information and evaluate expressions. Although expressions are commonly used with the conditional `if` keyword in a workflow file to determine whether a step should run or not, you can use any supported context and expression to create a conditional. It's important to know that when using conditionals in your workflow, you need to use the specific syntax `${{ <expression> }}`. This tells GitHub to evaluate an expression rather than treat it as a string.
