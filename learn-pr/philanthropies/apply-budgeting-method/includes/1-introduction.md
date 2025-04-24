@@ -14,5 +14,3 @@ Here's what we explore today:
 1. **50/30/20 Budgeting** - A simple rule to balance your needs, wants, and savings.
 
 Each of these methods can help you make the most out of what you have, whether it's allowance, chore money, or gifts from family. By the end of this lesson, you'll have the tools to pick a method that fits your goals and lifestyle.
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=5eb4a865-da16-4a8b-89ef-d9ce91445b2f]
