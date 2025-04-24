@@ -96,7 +96,7 @@ GitHub Pro accounts include all of the features of a GitHub Free account, plus t
 
 ### GitHub Team
 
-GitHub Team is the version of GitHub Pro for organizations. GitHub Team is better than GitHub Free for organizations because it provides increased GitHub Actions minutes and extra GitHub Packages storage.
+GitHub Team is the version of GitHub Pro for organizations. GitHub Team includes additional features not available in GitHub Free for organizations because it provides increased GitHub Actions minutes and extra GitHub Packages storage.
 
 Let's go over the extra features in GitHub Team that help with team collaboration:
 
@@ -118,19 +118,19 @@ Let's go over the extra features in GitHub Team that help with team collaboratio
 
 ### GitHub Enterprise
 
-GitHub Enterprise accounts enjoy a greater level of support and extra security, compliance, and deployment controls.
+GitHub Enterprise accounts provide enhanced support, stronger security, compliance capabilities, and advanced deployment controls.
 
-You can create one or more *enterprise accounts* by signing up for the paid GitHub Enterprise product. When you create an enterprise account, you're assigned the role of *enterprise owner*. As an enterprise owner, you can add and remove organizations to and from the enterprise account. You can manage other administrators, enforce security policies across organizations, and so on.
+You can create one or more *enterprise accounts* by signing up for GitHub Enterprise. When you create an enterprise account, you're assigned the role of *enterprise owner*. As an enterprise owner, you can add and remove organizations from the enterprise account, manage other administrators, and enforce security policies across all connected organizations.
 
-In addition to the features available with GitHub Team, GitHub Enterprise includes:
+In addition to all GitHub Team features, GitHub Enterprise includes:
 
 - GitHub Enterprise Support
-- More security, compliance, and deployment controls
-- Authentication with security assertion markup language (SAML) single sign-on
-- Access provisioning with SAML or System for Cross-domain Identity Management (SCIM)
-- Deployment protection rules with GitHub Actions for private or internal repositories
-GitHub Connect
-- The option to purchase GitHub Advanced Security
+- Expanded security, compliance, and deployment controls
+- Authentication with SAML (Security Assertion Markup Language) single sign-on
+- Access provisioning with SAML or SCIM (System for Cross-domain Identity Management)
+- Deployment protection rules for private or internal repositories
+- **GitHub Connect**, which allows administrators to securely share selected data between GitHub Enterprise Server and GitHub Enterprise Cloud. This enables unified contributions, centralized user identity, and improved visibility across environments.
+- Option to purchase GitHub Advanced Security
 
 #### GitHub Enterprise options
 
@@ -150,3 +150,11 @@ Here are the extra features of GitHub Enterprise Cloud:
 - A service level agreement for 99.9% monthly uptime
 - Option to centrally manage policy and billing for multiple GitHub.com organizations with an enterprise account
 - Option to provision and manage the user accounts for your developers, by using Enterprise Managed Users
+
+### Additional Notes
+
+**GitHub Copilot Availability**  
+GitHub Copilot is not included in any plan by default. However, Copilot Business and Copilot Enterprise can be added to eligible plans.
+
+**Enterprise Managed Users (EMU)**  
+Enterprise Managed Users allow organizations to control identities using their identity provider, enabling central access management and increased security.
