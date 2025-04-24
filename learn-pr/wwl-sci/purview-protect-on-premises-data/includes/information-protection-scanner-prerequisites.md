@@ -1,4 +1,8 @@
-Before deploying the Microsoft Purview Information Protection scanner, it's important to prepare the right infrastructure. The scanner works with your existing environment. It connects to Microsoft Purview, scans on-premises locations like file shares and SharePoint Server, and stores configuration data in SQL Server. To ensure successful deployment, your scanner server, service account, and supporting systems must meet a defined set of requirements.
+Before deploying the Microsoft Purview Information Protection scanner, it's important to prepare the right infrastructure. The scanner works with your existing environment. It connects to Microsoft Purview, scans on-premises locations like file shares and SharePoint Server, and stores configuration data in SQL Server. 
+
+:::image type="content" source="../media/scanner-architecture.png" alt-text="Diagram showing scanner cluster communication with Microsoft Purview, file shares, SharePoint Server, and SQL Server." lightbox="../media/scanner-architecture.png":::
+
+The scanner connects to Microsoft Purview to retrieve label and DLP policies, scans local file shares and SharePoint Server content over SMB, and stores configuration data in SQL Server.
 
 ## Configure a supported scanner server
 

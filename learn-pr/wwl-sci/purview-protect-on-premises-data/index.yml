@@ -1,5 +1,49 @@
-- protect-on-premises-files
-- information-protection-scanner-prerequisites
-- configure-install-scanner
-- run-scanner
-- data-loss-prevention-on-premises
+### YamlMime:Module
+uid: learn.wwl.purview-protect-on-premises-data
+metadata:
+  title: Classify and protect on-premises data with Microsoft Purview
+  description: "Classify and protect on-premises data with Microsoft Purview."
+  ms.date: 04/24/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: purview
+  hidden: false
+title: Classify and protect on-premises data with Microsoft Purview
+summary: Learn how to classify and protect sensitive data stored on-premises using Microsoft Purview. This module guides you through deploying the Information Protection scanner, applying sensitivity labels, and enforcing DLP policies to reduce data exposure risks.
+abstract: |
+  After completing this module, you'll be able to:
+  - Prepare your environment to support the Microsoft Purview Information Protection scanner
+  - Configure scanner settings, authentication, and deployment prerequisites
+  - Run scans in discovery or enforcement mode
+  - Apply sensitivity labels and protection to on-premises files
+  - Use data loss prevention (DLP) rules to restrict access or quarantine files based on policy
+prerequisites: |
+  - Familiarity with Microsoft Purview Information Protection concepts
+  - Basic understanding of data classification, labeling, and compliance requirements
+  - Experience managing Windows Server and Microsoft 365 environments
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- auditor
+- administrator
+- risk-practitioner
+products:
+- microsoft-purview
+- m365
+subjects:
+- information-protection-governance
+- security
+units:
+- learn.wwl.purview-protect-on-premises-data.introduction
+- learn.wwl.purview-protect-on-premises-data.protect-on-premises-files
+- learn.wwl.purview-protect-on-premises-data.information-protection-scanner-prerequisites
+- learn.wwl.purview-protect-on-premises-data.configure-install-scanner
+- learn.wwl.purview-protect-on-premises-data.run-scanner
+- learn.wwl.purview-protect-on-premises-data.data-loss-prevention-on-premises
+- learn.wwl.purview-protect-on-premises-data.knowledge-check
+- learn.wwl.purview-protect-on-premises-data.summary
+
+badge:
+  uid: learn.wwl.purview-protect-on-premises-data.badge

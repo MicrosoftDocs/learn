@@ -1,0 +1,75 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-protect-on-premises-data.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your knowledge."
+  ms.date: 04/25/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Your organization uses SharePoint Server 2019 to store HR documents. You want to automatically apply a sensitivity label to files containing employee Social Security numbers. What must be in place for the scanner to apply the label?"
+    choices:
+    - content: "Configure SharePoint search service with custom IFilters."
+      isCorrect: false
+      explanation: "Incorrect: While IFilters help read file content, labeling requires published label policies."
+    - content: "Create a sensitivity label with matching conditions and enable enforcement in the scan job."
+      isCorrect: true
+      explanation: "Correct: The scanner uses label policies to apply labels and encryption."
+    - content: "Enable document versioning and metadata tagging in SharePoint."
+      isCorrect: false
+      explanation: "Incorrect: These features don't affect sensitivity labeling by the scanner."
+
+  - content: "You've enabled data loss prevention (DLP) rules for a shared finance folder. A team member asks why access to a file was suddenly restricted. What likely triggered this action?"
+    choices:
+    - content: "The file matched a DLP policy condition and triggered a restriction action."
+      isCorrect: true
+      explanation: "Correct: DLP can restrict access to files that match sensitive conditions."
+    - content: "The file was added to a retention policy with a delete action."
+      isCorrect: false
+      explanation: "Incorrect: Retention policies manage deletion, not access control."
+    - content: "The scanner ran in discovery mode and flagged the file."
+      isCorrect: false
+      explanation: "Incorrect: Discovery mode doesn't take enforcement actions."
+
+  - content: "You're reviewing scan results in the Reports folder. What would you find in the '.csv' report that isn't included in the '.txt' summary?"
+    choices:
+    - content: "The total number of scanned files."
+      isCorrect: false
+      explanation: "Incorrect: Summary data is in the `.txt` file."
+    - content: "Each file's sensitivity label and DLP actions taken."
+      isCorrect: true
+      explanation: "Correct: The '.csv' file includes file-level detail and actions taken."
+    - content: "Scan duration and scanner service logs."
+      isCorrect: false
+      explanation: "Incorrect: Scanner logs are stored separately and not in these report files."
+
+  - content: "You're configuring DLP for a new on-premises document library. What must be enabled in the scan job for DLP enforcement to work?"
+    choices:
+    - content: "Enforce sensitivity labeling policy."
+      isCorrect: false
+      explanation: "Incorrect: This setting is for labeling, not DLP enforcement."
+    - content: "Enable DLP rules."
+      isCorrect: true
+      explanation: "Correct: DLP enforcement must be turned on in the scan job."
+    - content: "Relabel all previously labeled content."
+      isCorrect: false
+      explanation: "Incorrect: Relabeling doesn't affect DLP detection or enforcement."
+
+  - content: "You updated your DLP policy to include new file types and ran a full rescan. Where can you verify which files triggered DLP matches?"
+    choices:
+    - content: "In Activity explorer or the scanner's '.csv' report."
+      isCorrect: true
+      explanation: "Correct: Both tools show detailed DLP detection results."
+    - content: "In Microsoft Entra audit logs, under identity protection events."
+      isCorrect: false
+      explanation: "Incorrect: Microsoft Entra audit logs don't include scanner DLP data."
+    - content: "In the classification overview under sensitivity label analytics."
+      isCorrect: false
+      explanation: "Incorrect: That view shows labeled items, not DLP matches."
