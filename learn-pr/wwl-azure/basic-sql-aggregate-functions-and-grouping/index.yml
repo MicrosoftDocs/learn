@@ -53,10 +53,10 @@ title: basic-sql-aggregate-functions-and-grouping
 ###
 ### Detailed guidance: `https://review.learn.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main`
 ###
-summary: "TODO"
+summary: "This module introduces aggregate functions in SQL, which are essential for data analysis. You'll learn how to use COUNT, SUM, AVG, MIN, and MAX functions, as well as how to group data with GROUP BY and filter results with HAVING."                                                                                                                                              
 ###########################################################################
-###
-### Learning objectives
+###                                                                                                                                                               
+### Learning objectives                                                                                                                                                                                                                                                                                                                         
 ###
 ### Guidelines:
 ###   - Base remember-level objectives on expressing that the user can recall
@@ -86,10 +86,14 @@ summary: "TODO"
 ###
 abstract: |
   By the end of this module, you'll be able to:
-  - TODO
-  - TODO
-  - ...
-  - TODO
+  -Understand the role of aggregate functions in data analysis.
+  -Use COUNT to count all rows or distinct values in a column.
+  -Use SUM to calculate the total of values in a numeric column.
+  -Use AVG to compute the average of numeric values in a column.
+  -Use MIN and MAX to find the lowest and highest values in a column.
+  -Group data using GROUP BY to apply aggregate functions to each group.
+  -Differentiate between GROUP BY and DISTINCT, and use GROUP BY even without aggregate functions to list unique values.
+  -Use HAVING to filter grouped results based on aggregate function outcomes.
 ###########################################################################
 ###
 ### Prerequisites
@@ -111,10 +115,7 @@ abstract: |
 ### Detailed guidance: `https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites`
 ###
 prerequisites: |
-  - TODO
-  - TODO
-  - ...
-  - TODO
+  Before starting this module, learners should have a basic understanding of SQL SELECT statement.
 ###########################################################################
 ###
 ### Icon URL

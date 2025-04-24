@@ -6,7 +6,7 @@ Subqueries can be used in the following contexts:
 
     2. Within data manipulation statements (INSERT, UPDATE, DELETE statement) 
 
-# Key points to emphasize: 
+## Key points to emphasize: 
 
 A subquery is always a SELECT statement. 
 
@@ -14,7 +14,7 @@ The subquery is enclosed in parentheses ().
 
 The subquery's result is used by the outer query.    
 
-# Subquery examples
+## Subquery examples
 
 ```sql
 SELECT product_name, price 

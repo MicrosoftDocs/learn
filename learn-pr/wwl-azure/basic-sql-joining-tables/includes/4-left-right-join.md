@@ -1,4 +1,5 @@
-# LEFT JOIN
+
+## LEFT JOIN
 
 A LEFT JOIN, also known as a LEFT OUTER JOIN, is a type of SQL operation that preserves all the rows from the left-hand (or first) table in the query, regardless of whether there is a matching row in the right-hand (or second) table.
 When a match is found, the columns from the right table are populated with the corresponding values. However, if no match exists, the result will include nulls in the columns originating from the right table. 
@@ -14,7 +15,7 @@ The SQL query using a LEFT JOIN retrieves all customers from the `sales.customer
 For customers who have placed orders, the `order_id` from the `orders` table is displayed. However, if a customer does not have any orders, the result still includes the customer, with the `order_id` column displaying null values.  
 
 
-# RIGHT JOIN
+## RIGHT JOIN
 
 A RIGHT JOIN, also known as a RIGHT OUTER JOIN, is an SQL operation that ensures all rows from the right-hand (or second) table are included in the result, regardless of whether there is a matching row in the left-hand (or first) table. 
 In cases where no match is found, the columns from the left table display null values.

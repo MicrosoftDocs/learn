@@ -53,7 +53,7 @@ title: basic-sql-limit-offset-orderby
 ###
 ### Detailed guidance: `https://review.learn.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main`
 ###
-summary: "TODO"
+summary: "Explore how to use the LIMIT and OFFSET clauses in SQL to control the number of rows returned by a query. Learn how to implement pagination and maintain consistent results with ORDER BY."
 ###########################################################################
 ###
 ### Learning objectives
@@ -86,10 +86,10 @@ summary: "TODO"
 ###
 abstract: |
   By the end of this module, you'll be able to:
-  - TODO
-  - TODO
-  - ...
-  - TODO
+  -Use LIMIT to retrieve a specific number of rows.
+  -Combine OFFSET with LIMIT to implement pagination.
+  -Load data incrementally using LIMIT and OFFSET.
+  -Maintain consistent results with ORDER BY.
 ###########################################################################
 ###
 ### Prerequisites
@@ -111,10 +111,7 @@ abstract: |
 ### Detailed guidance: `https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites`
 ###
 prerequisites: |
-  - TODO
-  - TODO
-  - ...
-  - TODO
+  - Before starting this module, learners should have a basic understanding of SQL, including the use of SELECT, FROM, and WHERE clauses.
 ###########################################################################
 ###
 ### Icon URL

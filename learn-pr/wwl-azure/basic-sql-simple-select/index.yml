@@ -53,7 +53,7 @@ title: basic-sql-simple-select
 ###
 ### Detailed guidance: `https://review.learn.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main`
 ###
-summary: "TODO"
+summary: "This module provides an introduction to the SQL SELECT statement. You'll learn how to select specific columns, remove duplicates with DISTINCT, and create calculated columns as well as using concatenation."
 ###########################################################################
 ###
 ### Learning objectives
@@ -86,10 +86,10 @@ summary: "TODO"
 ###
 abstract: |
   By the end of this module, you'll be able to:
-  - TODO
-  - TODO
-  - ...
-  - TODO
+  -Select all or specific columns from a table.
+  -Use DISTINCT to remove duplicates.
+  -Create calculated columns with expressions or functions.
+  -Concatenate values into a single output.
 ###########################################################################
 ###
 ### Prerequisites
@@ -111,10 +111,7 @@ abstract: |
 ### Detailed guidance: `https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites`
 ###
 prerequisites: |
-  - TODO
-  - TODO
-  - ...
-  - TODO
+  None
 ###########################################################################
 ###
 ### Icon URL

@@ -1,4 +1,5 @@
-# Joining tables
+
+## Joining tables
 
 In relational databases, data is frequently organized into multiple tables to minimize redundancy and enhance data integrity. This design approach, known as normalization, avoids repeating the same information in different places. However, this means that useful information is often spread across multiple tables.  
 
@@ -8,7 +9,7 @@ Note: A primary key is a unique identifier for each record in a table, ensuring 
 
 There are multiple 'flavors' of joins (INNER, LEFT, RIGHT, FULL OUTER, NATURAL), each designed to combine tables in slightly different ways. They provide control over which rows are included in the result set based on the presence or absence of matching values in the joined tables. 
 
-# INNER JOIN
+## INNER JOIN
 
 An INNER JOIN is one of the most commonly used types of SQL joins. It combines rows from multiple tables based on a condition that specifies matching values in a shared column.
 

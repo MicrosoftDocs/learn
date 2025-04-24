@@ -1,5 +1,5 @@
 
-#  Querying data with calculated columns
+##  Querying data with calculated columns
 
 ```sql
 SELECT employee_id, first_name, last_name, birth_date, EXTRACT(YEAR FROM CURRENT_DATE) - EXTRACT(YEAR FROM birth_date) AS age  
@@ -10,7 +10,7 @@ This query retrieves employee details such as `employee_id`, `first_name`, `last
 It also calculates the age of each employee by subtracting the year of birth (extracted from their `birth_date`) from the current year (extracted using `CURRENT_DATE`). 
 The calculated age is given an alias `age`, which serves as a temporary, user-defined label for the resulting column. This alias simplifies reference to the column in the query results or subsequent operations, providing a clearer and more intuitive way to identify the calculated data. 
 
-# Querying data with column concatenation
+## Querying data with column concatenation
 
 ```sql
 SELECT CONCAT(address,' ', city, ' ', postalcode, ' ', country) AS billing_address FROM sales.customers; 

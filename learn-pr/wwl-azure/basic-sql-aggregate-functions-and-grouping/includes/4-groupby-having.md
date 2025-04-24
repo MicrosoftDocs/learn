@@ -1,7 +1,8 @@
 To gain deeper insights and better organize data within a database, SQL introduces the powerful GROUP BY and HAVING clauses. 
 These tools allow you to transform raw data into meaningful summaries by categorizing rows and applying aggregate functions, making it easier to analyze trends, identify patterns, or generate reports tailored to specific categories. 
 
-# GROUP BY
+
+## GROUP BY
 
 To analyze data by category or group, SQL provides the GROUP BY clause. This clause categorizes rows based on the values in specified columns, effectively partitioning the data into subsets.  
 
@@ -24,7 +25,8 @@ SELECT category_id FROM sales.products GROUP BY category_id;
 ```
 This query groups the rows by `category_id` without performing any aggregation, simply listing each distinct `category_id` present in the `sales.products` table. 
 
-# HAVING
+
+## HAVING
 
 In SQL, the WHERE clause cannot be used to filter the results of aggregate functions. 
 To filter groups created by the GROUP BY clause based on aggregate function results, you use the HAVING clause. 

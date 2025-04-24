@@ -1,5 +1,5 @@
 
-# Querying all columns from a table 
+## Querying all columns from a table 
 
 ```sql
 SELECT * FROM sales.customers;
@@ -9,7 +9,7 @@ This query retrieves all rows and columns from the sales.customers table. Howeve
 
 Selecting specific columns is more efficient because it reduces the amount of data transmitted and processed. When you query all columns from a table, the database retrieves every piece of information regardless of whether it is needed. This increases the load on both the database server and the network, as more data has to be fetched, stored in memory, and transmitted to the client. 
 
-# Querying specific columns
+## Querying specific columns
 
 ```sql
 SELECT customer_name, city, country FROM sales.customers;
@@ -17,7 +17,7 @@ SELECT customer_name, city, country FROM sales.customers;
 
 This query retrieves only the customer_name,  city and country columns from the sales.customers table. 
 
-# Querying distinct values 
+## Querying distinct values 
 
 ```sql
 SELECT DISTINCT country FROM sales.customers;

@@ -1,4 +1,5 @@
-# FULL OUTER JOIN
+
+## FULL OUTER JOIN
 
 A FULL OUTER JOIN, also referred to as a FULL JOIN, combines the characteristics of both LEFT JOIN and RIGHT JOIN, including all rows from both tables in the result set. 
 If there is a matching row between the tables based on the `ON` clause, the columns from both tables are populated. However, if a row in one table does not have a match in the other table, the columns from the unmatched table will display null values.

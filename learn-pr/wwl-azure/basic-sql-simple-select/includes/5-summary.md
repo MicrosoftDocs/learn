@@ -1,5 +1,6 @@
 
-This tutorial provides a foundational understanding of how to use the SELECT statement in PostgreSQL to retrieve and manipulate data effectively. By the end of this tutorial, you should be able to:
+This tutorial provides a foundational understanding of how to use the SELECT statement in PostgreSQL to retrieve and manipulate data effectively. 
+You should now be able to:
 
 - Select all columns or specific columns from a table to retrieve relevant data.
 - Use the DISTINCT keyword to eliminate duplicate values in query results.
