@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-agent-with-semantic-kernel.exercise
+title: Exercise - Develop an Azure AI agent with the Semantic Kernel SDK
+metadata:
+  title: Exercise - Develop an Azure AI agent with the Semantic Kernel SDK
+  description: Learn how to build an agent using the Semantic Kernel SDK. This unit provides an exercise to build an agent using the Semantic Kernel SDK.
+  author: buzahid
+  ms.author: buzahid
+  ms.date: 03/25/2025
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/5-exercise.md)]

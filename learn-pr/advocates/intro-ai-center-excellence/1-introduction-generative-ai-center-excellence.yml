@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-generative-ai-center-excellence.introduction-generative-ai-center-excellence
+title: Introduction to the Generative AI Center of Excellence
+metadata:
+  title: Introduction to the Generative AI Center of Excellence
+  description: Introduction to the Generative AI Center of Excellence
+  ms.date: 04/05/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-introduction-generative-ai-center-excellence.md)]

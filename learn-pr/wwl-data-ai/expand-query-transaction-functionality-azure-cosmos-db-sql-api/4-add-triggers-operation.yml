@@ -4,7 +4,7 @@ title: Add triggers to an operation
 metadata:
   title: Add triggers to an operation
   description: "Add triggers to an operation"
-  ms.date: 02/06/2023
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-add-triggers-operation.md)]
+  [!include[](includes/4-add-triggers-operation.md)]

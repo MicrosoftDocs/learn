@@ -6,7 +6,7 @@ metadata:
   description: Understand how to customize the model's behavior for batch scoring and save it to the Microsoft Fabric workspace.
   author: JulianePadrao
   ms.author: jupadrao
-  ms.date: 10/25/2023
+  ms.date: 4/24/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

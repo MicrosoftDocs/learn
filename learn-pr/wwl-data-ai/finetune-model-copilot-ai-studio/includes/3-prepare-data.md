@@ -1,3 +1,7 @@
+Fine-tuning involves combining a suitable *foundation* model to use as a base, and with a set of *training data* that includes example prompts and responses that the model can learn from.
+
+![Diagram of a base model plus training data resulting in a fine-tuned model.](../media/fine-tuning.png)
+
 When you decide you want to fine-tune a language model, you need to identify the dataset you can use to fine-tune your language model.
 
 Similar to any machine learning model, the quality of the dataset has a large effect on the quality of your model. Though you need less data than when you would train a language model from scratch, you still might need enough data to maximize the consistency of your desired model's behavior. How much data you need depends on your use case.
@@ -6,7 +10,7 @@ When you fine-tune a language model for chat completion, the data you use to fin
 
 - The system message
 - The user message
-- The assistant's answer
+- The assistant's response
 
 The three variables come together in a JSON Lines or JSONL file. For example, one line in such a dataset might look like:
 

@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Review what you learned.
-  ms.date: 04/09/2024
+  ms.date: 04/09/2025
   author: a-a-ron
   ms.author: aastewar
   ms.topic: unit
@@ -60,4 +60,4 @@ quiz:
           explanation: "This form of 2FA relies on the assumption that the user is the only person with access to their mobile device."
         - content: "Security Key"
           isCorrect: false
-          explanation: "A user can register a new security key through accessing their profile settings and following the security key’s documentation."
+          explanation: "A user can register a new security key through accessing their profile settings and following the security key's documentation."

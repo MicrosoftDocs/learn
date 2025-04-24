@@ -4,7 +4,7 @@ title: Exercise - Use the string's IndexOf() and Substring() helper methods
 metadata:
   title: Exercise - Use the string's IndexOf() and Substring() helper methods
   description: "Use the IndexOf() and Substring() helper methods to locate the position of one or more characters inside a larger string, and return the part of the larger string that follows the character positions you specify."
-  ms.date: 01/15/2025
+  ms.date: 04/15/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: unit

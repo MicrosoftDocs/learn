@@ -4,7 +4,7 @@ title: Time-to-live (TTL)
 metadata:
   title: Time-to-live (TTL)
   description: "Time-to-live (TTL)"
-  ms.date: 03/20/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/5-time-to-live.md)]
+  [!include[](includes/5-time-to-live.md)]

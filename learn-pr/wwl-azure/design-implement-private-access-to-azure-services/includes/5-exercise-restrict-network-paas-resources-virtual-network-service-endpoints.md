@@ -29,5 +29,9 @@ Virtual network service endpoints enable you to limit network access to Azure se
 > [!NOTE]
 > You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
+> [!NOTE]
+> You can view the [Restricted network access to PaaS resources with virtual network service endpoints](https://microsoftlearning.github.io/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/Instructions/Exercises/M07-Unit%205%20Restrict%20network%20access%20to%20PaaS%20resources%20with%20virtual%20network%20service%20endpoints.html) instructions directly. 
+
+
 [![Screenshot of the simulation page.](../media/simulation-paas-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Restrict%20network%20access%20to%20PaaS%20resources%20with%20virtual%20network%20service%20endpoints)
 

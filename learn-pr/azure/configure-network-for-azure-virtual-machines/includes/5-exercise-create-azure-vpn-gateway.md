@@ -70,7 +70,7 @@ $GWIPconfName = "gwipconf"
 1. Run the following command to request a dynamically assigned public IP address.
 
     ```PowerShell
-    $pip = New-AzPublicIpAddress -Name $GWIPName -ResourceGroupName $ResourceGroup -Location $Location -AllocationMethod Dynamic
+    $pip = New-AzPublicIpAddress -Name $GWIPName -ResourceGroupName $ResourceGroup -Location $Location -AllocationMethod Static -Sku Standard -Zone 1,2,3
     $ipconf = New-AzVirtualNetworkGatewayIpConfig -Name $GWIPconfName -Subnet $subnet -PublicIpAddress $pip
     ```
 
@@ -88,7 +88,7 @@ This part of the exercise can take up to 45 minutes to complete.
     ```PowerShell
     New-AzVirtualNetworkGateway -Name $GWName -ResourceGroupName $ResourceGroup `
     -Location $Location -IpConfigurations $ipconf -GatewayType Vpn `
-    -VpnType RouteBased -EnableBgp $false -GatewaySku VpnGw1 -VpnClientProtocol "IKEv2"
+    -VpnType RouteBased -EnableBgp $false -GatewaySku VpnGw1AZ -VpnClientProtocol "IKEv2"
     ```
 
 1. Wait for the command output to appear.

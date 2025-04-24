@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.challenge-project-work-variable-data-c-sharp
 metadata:
-  title: Challenge project - Work with variable data in C#
+  title: Challenge Project - Work with Variable Data in C#
   description: "A challenge project to test C# skills working with variable data."
-  ms.date: 03/26/2024
+  ms.date: 04/08/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: module
@@ -16,26 +16,26 @@ metadata:
 title: Challenge project - Work with variable data in C#
 summary: Demonstrate your ability to develop a console app that implements data formatting and using arrays to deliver a multiple term search feature.
 abstract: |
-  - Apply iteration statements using data input.
+  -   Apply iteration statements using data input.
 
-  - Process data.
+  -   Process data.
 
-  - Format data output.
+  -   Format data output.
 
-  - Choose the correct data types and safely converting data types.
+  -   Choose the correct data types and safely converting data types.
 
-  - Create and manipulate string arrays, and sort array data.
+  -   Create and manipulate string arrays, and sort array data.
 
-  - Modify and build complex strings from multiple data sources, and format data for display.
+  -   Modify and build complex strings from multiple data sources, and format data for display.
 prerequisites: |
-  - Experience using Visual Studio Code to develop, build, and run C# console applications that include console I/O and access the methods of .NET classes.
+  -   Experience using Visual Studio Code to develop, build, and run C# console applications that include console I/O and access the methods of .NET classes.
 
-  - Experience using C# code to evaluate conditional expressions and manage variable scope inside and outside of code blocks.
+  -   Experience using C# code to evaluate conditional expressions and manage variable scope inside and outside of code blocks.
 
-  - Experience using if-elseif-else and switch-case statements in C# to match a variable or expression against several possible outcomes.
+  -   Experience using if-elseif-else and switch-case statements in C# to match a variable or expression against several possible outcomes.
 
-  - Experience using foreach and for statements in C# to loop through a block of code and access elements of array variables.
-iconUrl: /training/achievements/generic-badge.svg
+  -   Experience using foreach and for statements in C# to loop through a block of code and access elements of array variables.
+iconUrl: /training/achievements/challenge-project-work-variable-data-c-sharp.svg
 levels:
 - beginner
 roles:

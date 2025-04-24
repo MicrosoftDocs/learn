@@ -4,12 +4,12 @@ title: Describe blocking and locking
 metadata:
   title: Describe blocking and locking
   description: "Describe blocking and locking"
-  ms.date: 06/28/2023
-  author: wwlpublish
+  ms.date: 04/1/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 12
 content: |
-  [!include[](includes/7-describe-blocking-locking.md)]
+  [!include[](includes/7-describe-blocking-locking.md)]

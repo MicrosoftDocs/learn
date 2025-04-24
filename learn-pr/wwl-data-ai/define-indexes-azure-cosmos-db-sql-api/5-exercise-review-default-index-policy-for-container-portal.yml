@@ -4,10 +4,10 @@ title: 'Exercise: Review the default index policy for an Azure Cosmos DB for NoS
 metadata:
   title: 'Exercise: Review the default index policy for an Azure Cosmos DB for NoSQL container with the portal'
   description: "Exercise: Review the default index policy for an Azure Cosmos DB for NoSQL container with the portal"
-  ms.date: 10/28/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
 durationInMinutes: 15
 content: |
-  [!include[](includes/5-exercise-review-default-index-policy-for-container-portal.md)]
+  [!include[](includes/5-exercise-review-default-index-policy-for-container-portal.md)]

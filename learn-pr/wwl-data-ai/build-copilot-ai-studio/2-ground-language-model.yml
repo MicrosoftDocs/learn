@@ -6,11 +6,11 @@ metadata:
   description: Learn about the grounding language models to get factually accurate responses.
   author: madiepev
   ms.author: madiepev
-  ms.date: 11/26/2024
+  ms.date: 04/17/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 6
 content: |
   [!include[](includes/2-ground-language-model.md)]
-
+

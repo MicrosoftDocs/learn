@@ -4,8 +4,8 @@ title: 'Exercise: Identify and resolve blocking issues'
 metadata:
   title: 'Exercise: Identify and resolve blocking issues'
   description: "Exercise: Identify and resolve blocking issues"
-  ms.date: 06/28/2023
-  author: wwlpublish
+  ms.date: 04/1/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
@@ -13,4 +13,4 @@ labId: 119404
 labModal: true
 durationInMinutes: 10
 content: |
-  [!include[](includes/8-exercise-identify-resolve-blocking-issues.md)]
+  [!include[](includes/8-exercise-identify-resolve-blocking-issues.md)]

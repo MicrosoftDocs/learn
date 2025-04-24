@@ -1,39 +1,39 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-hpc.4-microsoft-hpc-pack
 metadata:
-  title: Microsoft HPC Pack
-  description: In this unit, you learn about the Microsoft HPC Pack and how you can use it to manage high-performance resources.
-  ms.date: 05/22/2023
+  title: Orchestrate HPC Systems
+  description: In this unit, you learn how to deploy, manage, and orchsetrate HPC systems as well as review best practices, task scheduling, and workflow management guidance.
+  ms.date: 04/07/2025
   author: padmalathas
   ms.author: padmalathas
   ms.topic: unit
-title: Microsoft HPC Pack
+title: Orchestrate HPC Systems
 durationInMinutes: 10
 content: |
   [!include[](includes/4-microsoft-hpc-pack.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You're trying to advise your organization on whether to choose Azure Batch or Microsoft HPC Pack. What might be a key factor in choosing HPC Pack?"
+  - content: "You're looking to dispatch work in your application efficiently. What best practice helps optimize CPU utilization, maximize job throughput, and minimize time between job submission and finish?"
     choices:
-    - content: "There's a significant on-premises infrastructure that your organization doesn't want to waste. It can be used for HPC problems."
+    - content: "Task scheduling"
       isCorrect: true
-      explanation: "HPC Pack enables you to manage both on-premises and cloud infrastructure."
-    - content: "You don't want to be responsible for deciding how to optimize the way the HPC work gets allocated."
+      explanation: "Correct"
+    - content: "Work arrangement"
       isCorrect: false
-      explanation: "In HPC Pack, you have full responsibility for the allocation of work. If you don't want this control, consider Azure Batch instead."
-    - content: "There's no remaining licensing budget for the year."
+      explanation: "Incorrect"
+    - content: "Deploying tasks"
       isCorrect: false
-      explanation: "HPC Pack incurs no extra licensing cost, although you must carefully consider the costs of licensing the VMs it manages."
-  - content: "You're trying to set up an HPC Pack topology, starting with on-premises resources. Which version of Windows Server should you use for the head node?"
+      explanation: "Incorrect"
+  - content: "What tools can be utilized for more effective workflow management?"
     choices:
-    - content: "Windows Server 2012 R2 or later."
+    - content: "Azure CycleCloud and Azure Batch"
       isCorrect: true
-      explanation: "You can use Windows Server 2012 or any later version for the head node."
-    - content: "Windows Server 2016 or later."
+      explanation: "Correct"
+    - content: "Azure Storage Accounts and Head Nodes"
       isCorrect: false
-      explanation: "You can use Windows Server 2012 or any later version for the head node."
-    - content: "Windows Server 2019 or later."
+      explanation: "Incorrect"
+    - content: "Azure Resource Manager and Virtual Machines"
       isCorrect: false
-      explanation: "You can use Windows Server 2012 or any later version for the head node."
-
+      explanation: "Incorrect"
+

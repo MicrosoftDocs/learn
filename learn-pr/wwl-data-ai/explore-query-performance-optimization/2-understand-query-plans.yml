@@ -4,12 +4,12 @@ title: Understand query plans
 metadata:
   title: Understand query plans
   description: "Understand query plans"
-  ms.date: 06/28/2023
-  author: wwlpublish
+  ms.date: 04/1/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 11
 content: |
-  [!include[](includes/2-understand-query-plans.md)]
+  [!include[](includes/2-understand-query-plans.md)]

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.customize-indexes-azure-cosmos-db-sql-api.knowledge-check
-title: Module assessment
+title: Knowledge check
 metadata:
-  title: Module assessment
+  title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/17/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -13,25 +13,25 @@ labModal: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "You are writing a C# application that interfaces with Azure Cosmos DB for NoSQL and are now tasked with creating a custom indexing policy in code. Which class should you use to author your new indexing policy and customize the indexing mode, enable automatic updates, and set the include/exclude paths?"
+  - content: "The application team is writing a C# application that interfaces with Azure Cosmos DB for NoSQL and are now tasked with creating a custom indexing policy in code. Which class should the team use to author the new indexing policy and customize the indexing mode, enable automatic updates, and set the include/exclude paths?"
     choices:
     - content: "IndexingPolicy"
       isCorrect: true
-      explanation: "That's correct. The **IndexingPolicy** class is used to define a custom indexing policy in code."
+      explanation: "Correct. The **IndexingPolicy** class is used to define a custom indexing policy in code."
     - content: "ContainerProperties"
       isCorrect: false
-      explanation: "That's incorrect. The **ContainerProperties** class is used to configure the properties of a new container."
+      explanation: "Incorrect. The **ContainerProperties** class is used to configure the properties of a new container."
     - content: "IndexingMode"
       isCorrect: false
-      explanation: "That's incorrect. The **IndexingMode** enum contains potential values to configure the indexing mode of an indexing policy."
-  - content: "The most used query in your Azure Cosmos DB for NoSQL application is ``SELECT * FROM products p ORDER BY p.name ASC, p.price ASC``. You would like to define a composite index to make the query more efficient and consume fewer RU/s. Which composite index should you use to support this query?"
+      explanation: "Incorrect. The **IndexingMode** enum contains potential values to configure the indexing mode of an indexing policy."
+  - content: "The most used query in the company's Azure Cosmos DB for NoSQL sales application is ``SELECT * FROM products p ORDER BY p.name ASC, p.price ASC``. The sales team would like to define a composite index to make the query more efficient and consume fewer RU/s. Which composite index should the team use to support this query?"
     choices:
     - content: "``(price ASC, name ASC)``"
       isCorrect: false
-      explanation: "That's incorrect. The sequence of properties in the composite index must exactly match the ``ORDER BY`` clause."
+      explanation: "Incorrect. The sequence of properties in the composite index must exactly match the ``ORDER BY`` clause."
     - content: "``(price DESC, name ASC)``"
       isCorrect: false
-      explanation: "That's incorrect. The sequence of properties in the composite index must exactly match the ``ORDER BY`` clause."
+      explanation: "Incorrect. The sequence of properties in the composite index must exactly match the ``ORDER BY`` clause."
     - content: "``(name ASC, price ASC)``"
       isCorrect: true
-      explanation: "That's correct. This composite index will support the SQL query."
+      explanation: "Correct. This composite index supports the SQL query."

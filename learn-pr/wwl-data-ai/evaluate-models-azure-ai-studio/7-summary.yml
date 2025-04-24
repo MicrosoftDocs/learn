@@ -4,10 +4,10 @@ title: Summary
 metadata:
   title: Summary
   description: "Summary of key learning points on evaluating generative AI apps with the Azure AI Foundry portal."
-  ms.date: 11/28/2024
+  ms.date: 04/16/2025
   author: madiepev
   ms.author: madiepev
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/7-summary.md)]

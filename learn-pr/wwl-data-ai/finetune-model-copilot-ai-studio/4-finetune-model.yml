@@ -6,11 +6,11 @@ metadata:
   description: Explore fine-tuning foundation models from the model catalog in Azure AI Studio
   author: madiepev
   ms.author: madiepev
-  ms.date: 11/28/2024
+  ms.date: 04/17/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 8
 content: |
   [!include[](includes/4-finetune-model.md)]
-
+

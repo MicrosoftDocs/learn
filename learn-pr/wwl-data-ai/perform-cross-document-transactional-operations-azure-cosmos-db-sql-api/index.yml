@@ -3,7 +3,7 @@ uid: learn.wwl.perform-cross-document-transactional-operations-azure-cosmos-db-s
 metadata:
   title: Perform cross-document transactional operations with the Azure Cosmos DB for NoSQL
   description: "Perform operations on multiple items in single logical units of work."
-  ms.date: 03/09/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: module-standard-task-based
@@ -34,4 +34,4 @@ units:
 - learn.wwl.perform-cross-document-transactional-operations-azure-cosmos-db-sql-api.knowledge-check
 - learn.wwl.perform-cross-document-transactional-operations-azure-cosmos-db-sql-api.summary
 badge:
-  uid: learn.wwl.perform-cross-document-transactional-operations-azure-cosmos-db-sql-api.badge
+  uid: learn.wwl.perform-cross-document-transactional-operations-azure-cosmos-db-sql-api.badge

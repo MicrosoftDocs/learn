@@ -4,11 +4,11 @@ title: 'Exercise: Configure throughput for Azure Cosmos DB for NoSQL with the Az
 metadata:
   title: 'Exercise: Configure throughput for Azure Cosmos DB for NoSQL with the Azure portal'
   description: "Exercise: Configure throughput for Azure Cosmos DB for NoSQL with the Azure portal"
-  ms.date: 10/28/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/7-exercise-configure-throughput-for-azure-portal.md)]
-
+

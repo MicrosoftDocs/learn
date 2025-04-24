@@ -11,10 +11,10 @@ mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
 ```
 
 1. When you're prompted with the **Subscription** option, select a subscription by entering the appropriate number at the beginning of the line.
-1. When you're prompted with the **Web App** option, accept the default option `<create>` by pressing Enter.
+1. When you're prompted with the **Web App** option, accept the default option `<create>` by pressing **Enter**.
 1. When you're prompted with the **OS** option, select `linux` by pressing Enter.
-1. Choose the default Java version, 1.8, by pressing Enter.
-1. At the last prompt, press Enter to confirm your selections.
+1. Choose the default Java version, 1.8, by pressing **Enter**.
+1. At the last prompt, press **Enter** to confirm your selections.
 
     ```bash
     Please confirm webapp properties
@@ -36,11 +36,10 @@ mvn com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
     [INFO] ------------------------------------------------------------------------
     ```
 
-
 > [!IMPORTANT]
-> The default value for the region is `westeurope`. For the best performance, change the value to `eastus` because your database is located in this region.
+> The default value for the region is `westeurope`. For the best performance, change the value to the region in which your database is located.
 
-In your project's *pom.xml* file, change the following field.
+In your project's *pom.xml* file, change the following field. We've used `eastus` in this example, but use the region where you set up your resources in the previous exercise.
 
 ```xml
     <configuration>
@@ -59,13 +58,14 @@ Next, deploy your Spring Boot application to Azure by using the following comman
 ```bash
 mvn package com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:deploy
 ```
+
 This screenshot shows the application deployed to Azure App Service:
 
 ![Screenshot showing the deployed application.](../media/5-spring-boot-01.png)
 
 ## Test the Azure App Service application
 
-When the deployment finishes, your application is ready at `http://<appName>.azurewebsites.net/`. 
+When the deployment finishes, your application is ready at `http://<appName>.azurewebsites.net/`.
 
 To test the application, you can use `cURL`.
 
