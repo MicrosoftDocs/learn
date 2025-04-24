@@ -24,15 +24,19 @@ Before you change the prototype, you need to run it to validate the assumptions.
     az login
     ```
 
-1. View your subscriptions and set your default Azure subscription.
+1. In the browser that opens, sign in to your Azure account.
 
-    View the subscriptions.
+The Visual Studio Code terminal displays a list of the subscriptions associated with this account.
+
+1. In the list, find the subscription that you want to use for this exercise.
+
+   If you missed the list from the sign-in, you can use the following snippet to list your subscriptions again.
 
     ```bash
-    az account list
+    az account list --output table
     ```
 
-    To set the default subscription, replace `YOUR-SUBSCRIPTION-ID` with a subscription ID from the previous Azure CLI output.
+1. To set the default subscription, replace `YOUR-SUBSCRIPTION-ID` with a subscription ID from the previous Azure CLI output.
 
     ```bash
     az account set --subscription <YOUR-SUBSCRIPTION-ID>
