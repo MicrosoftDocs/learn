@@ -22,4 +22,4 @@ The tables are interconnected using foreign keys, allowing for comprehensive dat
 
 Foreign keys are a concept in relational databases, used to establish and enforce a link between two tables. A foreign key is one table uniquely identifies a row in another table, creating relationships that enable data integrity and efficient cross-table queries.
 
-![Sample Database Schema](C:\GitHub\mileninrepo\learn-pr\learn-pr\wwl-azure\basic-sql-querying\media\sampe-database.png)
+![Sample Database Schema](learn-pr\wwl-azure\media\sampe-database.png)

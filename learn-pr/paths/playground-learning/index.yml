@@ -3,7 +3,7 @@ uid: learn.wwl-azure.playground-learning
 metadata:
   title: 'Playground tutorials'
   description: "Learn PostgreSQL with Azure Playground. Explore our tutorials to focus on a specific topic, or discover a subject that interest you and delve deeper."
-  ms.date: 01/21/2025
+  ms.date: 04/24/2025
   author: milenak
   ms.author: mpopovic
   ms.topic: learning-path
@@ -24,7 +24,11 @@ subjects:
 - databases
 modules:
 - learn.wwl-azure.basic-sql-commands
-- learn.wwl-azure.basic-sql-querying
+- learn.wwl-azure.basic-sql-simple-select
+- learn.wwl-azure.basic-sql-where-clause-and-subqueries
+- learn.wwl-azure.basic-sql-limit-offset-orderby
+- learn.wwl-azure.basic-sql-joining-tables
+- learn.wwl-azure.basic-sql-aggregate-functions-and-grouping
 - learn.wwl-azure.basic-sql-manipulation
 trophy:
   uid: learn.wwl-azure.azure-pg-playground.trophy
