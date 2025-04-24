@@ -51,7 +51,7 @@ quiz:
     choices:
     - content: "Control commands can be used for maintenance and policy tasks."
       isCorrect: true
-      explanation: "Control commands include: The creation of new clusters or databases, data connections, auto scaling, cluster configurations, entities, metadata objects, and security policies."
+      explanation: "Control commands include the creation of new clusters or databases, data connections, auto scaling, cluster configurations, entities, metadata objects, and security policies."
     - content: "A query."
       isCorrect: false
       explanation: "Queries are used for interactive data analytics."

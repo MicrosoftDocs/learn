@@ -2,9 +2,9 @@ Let's start by defining the service and taking a tour of the core features of Az
 
 ## What is Azure Data Explorer?
 
-Azure Data Explorer is a big data analytics platform that makes it easy to analyze high volumes of data in near real time. Allowing you to extract key insights, spot patterns and trends, and create forecasting models.
+Azure Data Explorer is a big data analytics platform that makes it easy to analyze high volumes of data in near real time. It allows you to extract key insights, spot patterns and trends, and create forecasting models.
 
-The Azure Data Explorer toolbox gives you an end-to-end solution for data ingestion, query, visualization, and management. These tools allow you to analyze structured, semi-structured, and unstructured data across time series, and apply Machine Learning.
+The Azure Data Explorer toolbox gives you an end-to-end solution for data ingestion, query, visualization, and management. These tools allow you to analyze structured, semi-structured, and unstructured data across time series and apply Machine Learning.
 
 Azure Data Explorer is fully managed, scalable, secure, robust, and enterprise-ready. It's useful for log analytics, time series analytics, IoT, and general-purpose exploratory analytics.
 
@@ -14,9 +14,9 @@ If you remember our example clothing company, they have many types of data comin
 
 **Production** analyzes their product logs to manage their inventory and make manufacturing decisions. Geospatial analytics informs these decisions, which are used to identify geographical areas of high-performing ads and anticipate inventory.
 
-The company's warehouses are outfitted with IoT devices, some of which are used by **security** to manage warehouse entry/exit logs, while others are used by operations to monitor the environment inside the warehouse. Individual stores use time series analytics to identify sales anomalies and predict future inventory events. 
+The company's warehouses are outfitted with IoT devices, some of which are used by **security** to manage warehouse entry/exit logs. Others are used by operations to monitor the environment inside the warehouse. Individual stores use time series analytics to identify sales anomalies and predict future inventory events.
 
-The global **marketing** team uses clickstream data (also a form of log analytics) to optimize and scan online both ad campaigns and the customer funnel, while the customer success department uses text search to analyze user feedback on social media.
+The global **marketing** team uses clickstream data (also a form of log analytics) to optimize and scan online ad campaigns and the customer funnel. The customer success department uses text search to analyze user feedback on social media.
 
 Every minute of the day, a company decision is being made based on data flowing into Azure Data Explorer.
 
@@ -30,11 +30,11 @@ Azure Data Explorer can ingest terabytes of data in minutes in batch or streamin
 
 ### User-friendly query language
 
-Azure Data explorer uses the Kusto Query Language (KQL), an open-source language initially invented by the team. The language is simple to understand and learn, and highly productive. You can use simple operators and advanced analytics.
+Azure Data explorer uses the Kusto Query Language (KQL), an open-source language initially invented by the team. The language is simple to understand and learn, and it's highly productive. You can use simple operators and advanced analytics.
 
 ### Advanced analytics
 
-Azure Data Explorer has a large set of functions for time series analysis. Including, adding and subtracting time series, filtering, regression, seasonality detection, geospatial analysis, anomaly detection, scanning, and forecasting. Time series functions are optimized for processing thousands of time series in seconds. Pattern detection is made easy with cluster plugins that can diagnose anomalies and do root cause analysis. You can also extend Azure Data Explorer capabilities by embedding python code in KQL queries.
+Azure Data Explorer has a large set of functions for time series analysis. Functions includes adding and subtracting time series, filtering, regression, seasonality detection, geospatial analysis, anomaly detection, scanning, and forecasting. Time series functions are optimized for processing thousands of time series in seconds. Pattern detection is made easy with cluster plugins that can diagnose anomalies and do root cause analysis. You can also extend Azure Data Explorer capabilities by embedding python code in KQL queries.
 
 ### Easy-to-use wizard
 
@@ -42,7 +42,7 @@ The ingestion wizard makes the data ingestion process easy, fast, and intuitive.
 
 ### Versatile data visualization
 
-Data visualization helps you gain important insights. Azure Data Explorer offers built-in visualization and dashboarding out of the box, with support for various charts and visualizations. It has native integration with Power BI, native connectors for Grafana, Kibana and Databricks, ODBC support for Tableau, Sisense, Qlik and more.
+Data visualization helps you gain important insights. Azure Data Explorer offers built-in visualization and dashboarding out of the box, with support for various charts and visualizations. It has native integration with Power BI, native connectors for Grafana, Kibana and Databricks, ODBC support for Tableau, Sisense, Qlik, and more.
 
 ### Automatic ingest, process, and export
 
