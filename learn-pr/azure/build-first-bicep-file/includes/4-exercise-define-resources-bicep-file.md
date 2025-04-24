@@ -1,4 +1,4 @@
-[!INCLUDE [Sandbox explanation](../../includes/azure-file-exercise-sandbox-subscription.md)]
+[!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
 
 For your toy-launch website, you decide to first create a proof of concept by creating a basic Bicep file. In this exercise, you'll create a storage account, Azure App Service plan, and app. Later, you'll modify the file to make it more reusable.
 
@@ -11,7 +11,7 @@ During the process, you'll:
 > - Add an App Service plan and app to the file.
 > - Provision the infrastructure again to see the new resources.
 
-[!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-file-bicep-exercise-vscode-extension.md)]
+[!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
 
 ## Create a Bicep file that contains a storage account
 
@@ -25,7 +25,7 @@ During the process, you'll:
 
 1. Add the following Bicep code into the file. You'll deploy the file soon. It's a good idea to type the code yourself instead of copying and pasting so you can see how the tooling helps you to write your Bicep files.
 
-   :::code language="bicep" source="code/4-file.bicep" range="1-11":::
+   :::code language="bicep" source="code/4-template.bicep" range="1-11":::
 
    > [!TIP]
    > Bicep is strict about where you put line breaks, so make sure you don't put line breaks in different places than listed here.
@@ -43,7 +43,7 @@ During the process, you'll:
 
 ::: zone pivot="cli"
 
-[!INCLUDE [Bootstrapping instructions for first Bicep exercise - CLI](../../includes/azure-file-bicep-exercise-sandbox-deploy-cli.md)]
+[!INCLUDE [Bootstrapping instructions for first Bicep exercise - CLI](../../includes/azure-template-bicep-exercise-sandbox-deploy-cli.md)]
 
 ### Deploy the file to Azure
 
@@ -59,7 +59,7 @@ You'll see `Running...` in the terminal.
 
 ::: zone pivot="powershell"
 
-[!INCLUDE [Bootstrapping instructions for first Bicep exercise - PowerShell](../../includes/azure-file-bicep-exercise-sandbox-deploy-powershell.md)]
+[!INCLUDE [Bootstrapping instructions for first Bicep exercise - PowerShell](../../includes/azure-template-bicep-exercise-sandbox-deploy-powershell.md)]
 
 ### Deploy the file to Azure
 
