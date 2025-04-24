@@ -1,5 +1,3 @@
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7e4bfc63-55f2-424b-8086-a8ba26c72eb9]
-
 Responsible spending is all about making smart choices with your money so you can cover your needs, enjoy your wants, and still have enough left over to save for the future. It means thinking carefully before you buy something, asking yourself if it's really necessary or if it's just an impulse.
 
 For example, instead of spending all your birthday money on snacks or small treats, responsible spending would have you set some of that money aside for more important things, like saving for a new gadget or helping out with something at home. It's about finding a balance between enjoying your money now and making sure you have enough for later.
