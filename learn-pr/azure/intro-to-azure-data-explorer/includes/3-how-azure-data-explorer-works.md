@@ -41,7 +41,7 @@ Azure Data Explorer uses the proprietary Kusto Query Language (KQL) to analyze d
 
 ### How does the Kusto Query Language work?
 
-Kusto Query Language is an expressive, intuitive, and highly productive query language. It offers a smooth transition from simple one-liners to complex data processing scripts, and supports querying structured, semi-structured, and unstructured (text search) data. There's a wide variety of query language operators and functions (aggregation, filtering, time series functions, geospatial functions, joins, unions, and more) in the language. KQL supports cross-cluster and cross-database queries, and it's feature rich from a parsing (json, XML etc.) perspective. In addition, the language natively supports advanced analytics.
+Kusto Query Language is an expressive, intuitive, and highly productive query language. It offers a smooth transition from simple one-liners to complex data processing scripts, and supports querying structured, semi-structured, and unstructured (text search) data. There's a wide variety of query language operators and functions (aggregation, filtering, time series functions, geospatial functions, joins, unions, and more) in the language. KQL supports cross-cluster and cross-database queries, and it's feature rich from a parsing (json, XML, etc.) perspective. In addition, the language natively supports advanced analytics.
 
 ### How can I display my query results?
 

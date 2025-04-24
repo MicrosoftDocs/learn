@@ -34,7 +34,7 @@ Azure Data explorer uses the Kusto Query Language (KQL), an open-source language
 
 ### Advanced analytics
 
-Azure Data Explorer has a large set of functions for time series analysis. Functions includes adding and subtracting time series, filtering, regression, seasonality detection, geospatial analysis, anomaly detection, scanning, and forecasting. Time series functions are optimized for processing thousands of time series in seconds. Pattern detection is made easy with cluster plugins that can diagnose anomalies and do root cause analysis. You can also extend Azure Data Explorer capabilities by embedding python code in KQL queries.
+Azure Data Explorer has a large set of functions for time series analysis. Functions include adding and subtracting time series, filtering, regression, seasonality detection, geospatial analysis, anomaly detection, scanning, and forecasting. Time series functions are optimized for processing thousands of time series in seconds. Pattern detection is made easy with cluster plugins that can diagnose anomalies and do root cause analysis. You can also extend Azure Data Explorer capabilities by embedding python code in KQL queries.
 
 ### Easy-to-use wizard
 
