@@ -69,18 +69,18 @@ Some best practices for mitigating script injection attacks on GitHub actions in
 
 1. Use javascript actions instead of inline scripts: It is recommended that you use Javascript actions that process context values as arguments, over using values in inline scripts.  By definition, this usage of Javascript actions mitigates the script injection attacks as the context values are not used to generate a shell script that is executed.
 
-In the example below, the use of the variable as the input to a Javascript action mitigates the potential of the variable being used to facilitate a script injection attack.
+   In the example below, the use of the variable as the input to a Javascript action mitigates the potential of the variable being used to facilitate a script injection attack.
 
-```yml
-uses: fakeaction/checktitle@v3
-with:
-    title: ${{ github.event.pull_request.title }} 
-```
+   ```yml
+    uses: fakeaction/checktitle@v3
+    with:
+      title: ${{ github.event.pull_request.title }} 
+   ```
 
 2. Use intermediate environment variables in inline scripts: In instances where you are using inline scripts, variables that must be injected into the action should be evaluated as environment variables. Environment variables are evaluated before the script is generated and evaluated. Using an intermediate environment variable mitigates the risk of a script injection attack.  An example is displayed below using the `github.event.pull_request.title` variable:
 
-```yml
-- name: Check PR title
+    ```yml
+    - name: Check PR title
         env:
           TITLE: ${{ github.event.pull_request.title }}
         run: |
@@ -91,7 +91,7 @@ with:
           echo "PR title did not start with 'octocat'"
           exit 1
           fi
-```
+    ```
 
 3. Leverage workflow templates to implement code scanning: If you click on the **Actions** tab of any repository, you will be able to select the **New Workflow** button on the left side of the pane.  Within the **Choose a Workflow** page that is displayed as a result of clicking on the button, there is a **Security** section where workflow templates can be selected to instantiate as a workflow file in the current repository.  The CodeQL scanner, specifically, can be configured to trigger on an appropriate event to scan a branch's files & flag exposures (CWE's) in actions within workflows; including `script injection`.
 
@@ -240,12 +240,12 @@ The attestation establishes build provenance.  You can view attestations in the 
    ```
    
 2. You must add the following step after the step where the binary is built:
-   ```yml
+    ```yml
       - name: Generate artifact attestation
         uses: actions/attest-build-provenance@v2
         with:
          subject-path: 'PATH/TO/ARTIFACT'
-   ```
+     ```
 
 Note that the value of the `subject-path` parameter should be set to the path to the binary you will attest.
 
