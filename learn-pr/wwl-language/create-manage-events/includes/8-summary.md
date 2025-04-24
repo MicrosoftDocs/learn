@@ -11,5 +11,5 @@ After completing this module, you're now able to:
 Now that you have a basic understanding of events, consider reviewing the following resources:
 
 - [Events (C# Programming Guide)](/dotnet/csharp/programming-guide/events/)  
-- [Delegates and Events in C#](/dotnet/csharp/programming-guide/delegates-and-events/)  
+- [Delegates (C# Programming Guide)](/dotnet/csharp/programming-guide/delegates)  
 - [Event Handling in .NET](/dotnet/standard/events/)

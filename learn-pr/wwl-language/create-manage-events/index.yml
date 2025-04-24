@@ -3,7 +3,7 @@ uid: learn.wwl.create-manage-events
 metadata:
   title: Create and Manage Events
   description: "Discover how events facilitate communication between objects in C#, and how their integration with delegates creates robust, decoupled code."
-  ms.date: 04/23/2025
+  ms.date: 04/24/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: module-intro-to-product
