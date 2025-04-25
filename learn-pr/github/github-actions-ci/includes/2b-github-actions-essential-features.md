@@ -198,11 +198,11 @@ Environment deployment protection rules require specific conditions to pass befo
 
 3. Branch and tag protction rules: You can use deployment branch and tag protection rules to restrict which branches and tags are utilized to deploy to the environment. Below are the options for deployment branch and tag protection rules for an environment:
 
-- **No restriction**: No restriction on which branch or tag can deploy to the environment.
+    - **No restriction**: No restriction on which branch or tag can deploy to the environment.
 
-- **Protected branches only**: Only branches with branch protection rules enabled can deploy to the environment. If no branch protection rules are defined for any branch in the repository, then all branches can deploy. For more information about branch protection rules, see About protected branches.
+    - **Protected branches only**: Only branches with branch protection rules enabled can deploy to the environment. If no branch protection rules are defined for any branch in the repository, then all branches can deploy. For more information about branch protection rules, see About protected branches.
 
-- **Selected branches and tags**: Only branches and tags that match your specified name patterns can deploy to the environment.
+    - **Selected branches and tags**: Only branches and tags that match your specified name patterns can deploy to the environment.
 
     If you specify `releases/*` as a deployment branch or tag rule, only a branch or tag whose name begins with `releases/` can deploy to the environment. (Wildcard characters will not match `/`. To match branches or tags that begin with `release/` and contain an additional single slash, use `release/*/*`.) If you add `main` as a branch rule, a branch named `main` can also deploy to the environment. For more information about syntax options for deployment branches
 
