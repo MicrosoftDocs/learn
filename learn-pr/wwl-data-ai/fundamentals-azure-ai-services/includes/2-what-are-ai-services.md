@@ -24,7 +24,7 @@ For example, in sport, athletes, and coaches are customizing Azure AI Vision to 
 
 ## Azure AI services are accessed through APIs
 
-Azure AI services are designed to be used in different development environments. Developers can access AI services through REST APIs, client libraries, or integrate them with tools such as Logic Apps and Power Automate. APIs are application programming interfaces that define the information that is required for one component to use the services of the other. APIs enable software components to communicate, so one side can be updated without stopping the other from working. Find out more about development options for Azure AI services [here](/azure/ai-services/what-are-ai-services#use-azure-ai-services-in-different-development-environments?azure-portal=true).
+Azure AI services are designed to be used in different development environments. Developers can access AI services through REST APIs, client libraries, or integrate them with tools such as Logic Apps and Power Automate. APIs are application programming interfaces that define the information that is required for one component to use the services of the other. APIs enable software components to communicate, so one side can be updated without stopping the other from working.
 
 ![Screenshot of how Azure AI services are consumed by APIs.](../media/endpoints-keys.png)
 
