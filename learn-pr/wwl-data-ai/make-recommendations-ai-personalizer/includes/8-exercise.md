@@ -2,7 +2,7 @@
 
 To complete the lab, launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-ai-services/Instructions/Exercises/05-personalizer-exercise.html?azure-portal=true)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-ai-services/Instructions/Exercises/01-use-azure-ai-services.html)
 
 > [!TIP]
 > After completing the exercise, if you've finished exploring Azure AI services, delete the Azure resources that you created during the exercise.
