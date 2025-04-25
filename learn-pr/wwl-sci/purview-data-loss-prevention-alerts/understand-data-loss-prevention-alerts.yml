@@ -1,1 +1,15 @@
-- Understand data loss prevention (DLP) alerts
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-loss-prevention-alerts.understand-data-loss-prevention-alerts
+title: Understand data loss prevention (DLP) alerts
+metadata:
+  title: Understand data loss prevention (DLP) alerts
+  description: "Understand data loss prevention (DLP) alerts"
+  ms.date: 04/25/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/understand-data-loss-prevention-alerts.md)]
