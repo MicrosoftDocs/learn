@@ -6,7 +6,7 @@ metadata:
   unitType: exercise
   title: Exercise - Deploy multiple resources by using loops
   description: Learn how to use loops to deploy multiple instances of resources.
-  ms.date: 01/30/2025
+  ms.date: 04/18/2025
   author: mumian
   ms.author: jgao
   ms.topic: unit
@@ -16,4 +16,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/5-exercise-loops.md)]
-
+
