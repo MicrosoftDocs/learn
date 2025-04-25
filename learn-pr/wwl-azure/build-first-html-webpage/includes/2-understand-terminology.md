@@ -2,15 +2,15 @@ You'll soon be writing code to create a web page.
 
 :::image type="content" source="../media/html-to-webpage.png" alt-text="Diagram showing HTML Code and the resulting webpage for an example resume.":::
 
-When getting started with a new technology there are different terms you'll need to be familiar with. While your vocabulary will expand as you continue to grow as a web developer, there are certain core concepts which will help you get started.
+When getting started with a new technology there are different terms, you need to be familiar with. While your vocabulary expands as you continue to grow as a web developer, there are certain core concepts which help you get started.
 
 ## Web Pages and Websites
 
-Web pages, HTML pages, or simply pages are similar to a page in an e-book. They're a single screen that displays information. You might scroll up and down on the page, but it's made to be a collection of similar data. Software developers create pages in HTML *files*. A file is like a document you might create in a word processor. Instead of writing in a language like English or Spanish, you create files using the languages designed for websites.
+Web pages, HTML pages, or simply pages are similar to a page in an e-book. They're a single screen that displays information. You might scroll up and down on the page, but the page was designed to be a collection of similar data. Software developers create pages in HTML *files*. A file is like a document you might create in a word processor. Instead of writing in a language like English or Spanish, you create files using the languages designed for websites.
 
 In web development, a web page can be a single file or the result of bringing two or more files together. In the next section, you'll learn about the different files that can be used to create a web page.
 
-A website is a set of pages. Returning to our e-book analogy, the e-book itself would be the website. It has all of the pages and is read by a user one page at a time. A website could be a single page, thousands of pages, and everything in between.
+A website is a set of pages. As we return to our e-book analogy, the e-book itself would be the website. It has all of the pages and is read by a user one page at a time. A website could be a single page, thousands of pages, and everything in between.
 
 As you read this unit, you're reading a web page. You scroll up and down to examine the information you want. You eventually navigate to a different page to review the next unit. All of these pages make up the site that is Microsoft Learn.
 
@@ -34,11 +34,11 @@ The "strong" tags tell the browser that the text in between should be bold. It w
 
 ### CSS
 
-CSS adds more style to the page, like what color to make something or what font to use. CSS has become very powerful. It can even tell the browser where the information should be displayed on the page.
+CSS adds more styles to the page, like what color to make something or what font to use. CSS is powerful, can even tell the browser where the information should be displayed on the page.
 
 ### JavaScript
 
 Finally, JavaScript lets you do things to items on a page. JavaScript can tell the browser to create things like buttons or to display the date. But a script also tells the browser what to do when the button is clicked, like submitting data in a form.
 
 > [!IMPORTANT]
-> This module will focus solely on HTML and a single file for a web page. As you continue to grow as a developer, you will learn how to divide a page up into multiple files and why you might decide to do this.
+> This module focuses solely on HTML and a single file for a web page. As you continue to grow as a developer, you learn how to divide up a page into multiple files and why you might decide to do this.

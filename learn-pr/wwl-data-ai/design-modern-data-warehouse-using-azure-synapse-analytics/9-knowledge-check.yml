@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 07/30/2024
+  ms.date: 04/25/2025
   author: wwlpublish
   ms.author: jamesh
   ms.topic: unit
@@ -61,4 +61,4 @@ quiz:
     - content: "Sink."
       isCorrect: true
       explanation: "Correct. A Sink transformation allows you to choose a dataset definition for the destination output data. You can have as many sink transformations as your data flow requires."
-
+

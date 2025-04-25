@@ -4,7 +4,7 @@ title: Exercise - Identify modern data warehouse architecture components
 metadata:
   title: Exercise - Identify modern data warehouse architecture components
   description: "Exercise - Identify modern data warehouse architecture components"
-  ms.date: 07/30/2024
+  ms.date: 04/25/2025
   author: wwlpublish
   ms.author: jamesh
   ms.topic: unit
@@ -17,4 +17,4 @@ labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-identify-architecture-components.md)]
-
+
