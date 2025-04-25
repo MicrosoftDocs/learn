@@ -186,29 +186,17 @@ When a workflow references an environment, the environment will appear in the re
 
 ### Environment protection rules
 
-Deployment protection rules require specific conditions to pass before a job referencing the environment can proceed. You can use deployment protection rules to require a manual approval, delay a job, or restrict the environment to certain branches. You can also create and implement custom protection rules powered by GitHub Apps to use third-party systems to control deployments referencing environments configured on GitHub.
+Environment deployment protection rules require specific conditions to pass before a job referencing the environment can proceed. You can use deployment protection rules to require a manual approval, delay a job, or restrict the environment to certain branches. You can also create and implement custom protection rules powered by GitHub Apps to use third-party systems to control deployments referencing environments configured on GitHub. Below you will find further explanation of these protection rules:
 
-Third-party systems can be observability systems, change management systems, code quality systems, or other manual configurations that you use to assess readiness before deployments are safely rolled out to environments.
-
-> **Note**
-> If you are on a GitHub Free, GitHub Pro, or GitHub Team plan, the enviroment deployment projection rules below are only available for public repositories; with the exception of branch & tag protection rules.  For users of GitHub Pro or GitHub Team plans, branch and tag protection rules are also available for private repositories.
->
-
-#### Required reviewers protection rules
-
-Use required reviewers to require a specific person or team to approve workflow jobs that reference the environment. You can list up to six users or teams as reviewers. The reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed.
+1. Required reviewers protection rules: Use required reviewers to require a specific person or team to approve workflow jobs that reference the environment. You can list up to six users or teams as reviewers. The reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed.
 
 You also have the option to prevent self-reviews for deployments to protected environments. If you enable this setting, users who initiate a deployment cannot approve the deployment job, even if they are a required reviewer. This ensures that deployments to protected environments are always reviewed by more than one person.
 
 For more information on reviewing jobs that reference an environment with required reviewers, see Reviewing deployments.
 
-#### Wait timer protection rules
+2. Wait timer projection rules: You can use a wait timer protection rule to delay a job for a specific amount of time after the job is initially triggered before the environment deployment is allowed to proceed. The time (in minutes) must be an integer between 1 and 43,200 (30 days). Wait time will not count towards your billable time.
 
-You can use a wait timer protection rule to delay a job for a specific amount of time after the job is initially triggered before the environment deployment is allowed to proceed. The time (in minutes) must be an integer between 1 and 43,200 (30 days). Wait time will not count towards your billable time.
-
-#### Branch and tag protection rules
-
-You can use deployment branch and tag protection rules to restrict which branches and tags are utilized to deploy to the environment. Below are the options for deployment branch and tag protection rules for an environment:
+3. Branch and tag protction rules: You can use deployment branch and tag protection rules to restrict which branches and tags are utilized to deploy to the environment. Below are the options for deployment branch and tag protection rules for an environment:
 
 - **No restriction**: No restriction on which branch or tag can deploy to the environment.
 
@@ -218,12 +206,13 @@ You can use deployment branch and tag protection rules to restrict which branche
 
 If you specify `releases/*` as a deployment branch or tag rule, only a branch or tag whose name begins with `releases/` can deploy to the environment. (Wildcard characters will not match `/`. To match branches or tags that begin with `release/` and contain an additional single slash, use `release/*/*`.) If you add `main` as a branch rule, a branch named `main` can also deploy to the environment. For more information about syntax options for deployment branches
 
-#### Custom deployment projection rules
-
-You can enable your own custom protection rules to gate deployments with third-party services. For example, you can use services such as Datadog, Honeycomb, and ServiceNow to provide automated approvals for deployments to GitHub. For more information, see Creating custom deployment protection rules.
+4. Custom deployment protection rules: You can enable your own custom protection rules to gate deployments with third-party services. For example, you can use services such as Datadog, Honeycomb, and ServiceNow to provide automated approvals for deployments to GitHub. For more information, see Creating custom deployment protection rules.
 
 Once custom deployment protection rules have been created and installed on a repository, you can enable the custom deployment protection rule for any environment in the repository. For more information about configuring and enabling custom deployment protection rules, see Configuring custom deployment protection rules.
 
+> **Note**
+> If you are on a GitHub Free, GitHub Pro, or GitHub Team plan, the enviroment deployment projection rules below are only available for public repositories; with the exception of branch & tag protection rules.  For users of GitHub Pro or GitHub Team plans, branch and tag protection rules are also available for private repositories.
+>
 <!-- INFOMAGNUS END -->
 
 ## Scripts in your workflow
