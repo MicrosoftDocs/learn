@@ -133,3 +133,18 @@ To learn more about gists, see the linked article in our Resources section at th
 Every repository on GitHub.com comes equipped with a section for hosting documentation, called a wiki. You can use your repository's wiki to share long-form content about your project, such as how to use it, how you designed it, or its core principles. While a README file quickly tells what your project can do, you can use a wiki to provide additional documentation.
 
 It’s worth a reminder that if your repository is private, only people who have at least read access to your repository will have access to your wiki.
+
+### What are Feature Previews?
+
+Feature Previews allow you to try out experimental features on GitHub before they are officially released. These previews give you early access to new functionality and allow you to provide feedback to help shape the final product.
+
+To enable or disable a feature preview:
+
+1. Navigate to your GitHub account by selecting your profile picture in the top-right corner of GitHub.com.
+1. Select **Feature Preview** from the drop-down menu.
+1. Browse the list of available previews and toggle the features you want to try.
+
+Feature Previews are a great way to stay ahead of the curve and explore new tools that can enhance your GitHub experience.
+
+> [!TIP]
+> Keep an eye on the **Feature Preview** section regularly, as GitHub frequently adds new experimental features for users to explore.
