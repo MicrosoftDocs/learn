@@ -95,11 +95,7 @@ jobs:
 <!-- INFOMAGNUS UPDATES for sub OD 1.4.3, 1.4.6, and 1.4.7 go here. Source Material: Infomagnus team to find source material and cite sources when they update material , https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables , https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/workflow-commands-for-github-actions#setting-an-environment-variable --> 
 ## Identify where to set custom environment variables in a workflow
 
-You can define environment variables that are scoped for:
-
-*The entire workflow utilizing `env` at the top level of the workflow file.
-*The contents of a job within a workflow, by utilizing the jobs.<job_id>.env . 
-*A specific step within a job, by using jobs.<job_id>.steps[*].env .
+You can define environment variables that are scoped the entire workflow utilizing `env` at the top level of the workflow file.  Scoping the contents of a job within a workflow using `jobs.<job_id>.env`.  As well you can scope an environment variable within at a specific step within a job utilizing `jobs.<job_id>.steps[*].env`.
 
 Below is an example displaying all three scenarios in a workflow file:
 
