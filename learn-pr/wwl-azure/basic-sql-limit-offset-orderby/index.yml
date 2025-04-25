@@ -86,10 +86,10 @@ summary: "Explore how to use the LIMIT and OFFSET clauses in SQL to control the 
 ###
 abstract: |
   By the end of this module, you'll be able to:
-  -Use LIMIT to retrieve a specific number of rows.
-  -Combine OFFSET with LIMIT to implement pagination.
-  -Load data incrementally using LIMIT and OFFSET.
-  -Maintain consistent results with ORDER BY.
+  - Use LIMIT to retrieve a specific number of rows
+  - Combine OFFSET with LIMIT to implement pagination
+  - Load data incrementally using LIMIT and OFFSET
+  - Maintain consistent results with ORDER BY
 ###########################################################################
 ###
 ### Prerequisites
@@ -111,7 +111,7 @@ abstract: |
 ### Detailed guidance: `https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites`
 ###
 prerequisites: |
-  - Before starting this module, learners should have a basic understanding of SQL, including the use of SELECT, FROM, and WHERE clauses.
+  Before starting this module, learners should have a basic understanding of SQL, including the use of SELECT, FROM and WHERE clauses.
 ###########################################################################
 ###
 ### Icon URL

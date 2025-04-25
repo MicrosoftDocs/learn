@@ -53,7 +53,7 @@ title: basic-sql-aggregate-functions-and-grouping
 ###
 ### Detailed guidance: `https://review.learn.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main`
 ###
-summary: "This module introduces aggregate functions in SQL, which are essential for data analysis. You'll learn how to use COUNT, SUM, AVG, MIN, and MAX functions, as well as how to group data with GROUP BY and filter results with HAVING."                                                                                                                                              
+summary: "This module introduces aggregate functions in SQL, which are essential for analyzing data. You'll learn how to use functions like COUNT, SUM, AVG, MIN and MAX, group data using the GROUP BY clause and filter grouped results with the HAVING clause."                                                                                                                                              
 ###########################################################################
 ###                                                                                                                                                               
 ### Learning objectives                                                                                                                                                                                                                                                                                                                         
@@ -86,14 +86,14 @@ summary: "This module introduces aggregate functions in SQL, which are essential
 ###
 abstract: |
   By the end of this module, you'll be able to:
-  -Understand the role of aggregate functions in data analysis.
-  -Use COUNT to count all rows or distinct values in a column.
-  -Use SUM to calculate the total of values in a numeric column.
-  -Use AVG to compute the average of numeric values in a column.
-  -Use MIN and MAX to find the lowest and highest values in a column.
-  -Group data using GROUP BY to apply aggregate functions to each group.
-  -Differentiate between GROUP BY and DISTINCT, and use GROUP BY even without aggregate functions to list unique values.
-  -Use HAVING to filter grouped results based on aggregate function outcomes.
+  - Understand the role of aggregate functions in data analysis
+  - Use COUNT to count all rows or distinct values in a column
+  - Use SUM to calculate the total of values in a numeric column
+  - Use AVG to compute the average of numeric values in a column
+  - Use MIN and MAX to find the lowest and highest values in a column
+  - Group data using GROUP BY to apply aggregate functions to each group
+  - Differentiate between GROUP BY and DISTINCT, and use GROUP BY even without aggregate functions to list unique values
+  - Use HAVING to filter grouped results based on aggregate function outcomes
 ###########################################################################
 ###
 ### Prerequisites

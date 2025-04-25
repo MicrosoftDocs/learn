@@ -12,7 +12,7 @@
 
     Detailed guidance: `https://review.learn.microsoft.com/help/learn/id-guidance-introductions?branch=main#module-introduction`
 --->
-Learning how to query data effectively is a fundamental skill for anyone working with databases. In this tutorial, you'll gain hands-on experience with the SELECT statement in PostgreSQL, a powerful tool for retrieving and analyzing data. By mastering these foundational querying techniques, you'll be equipped to access specific information, generate meaningful insights, and lay the groundwork for more advanced database operations. Whether you're a beginner or looking to sharpen your skills, this tutorial will help you build confidence in working with SQL queries.
+Learning how to query data effectively is a fundamental skill for anyone working with databases. In this tutorial, you'll gain hands-on experience with the SELECT statement in PostgreSQL, a powerful tool for retrieving and analyzing data. By mastering these foundational querying techniques, you'll be equipped to access specific information, generate meaningful insights and lay the groundwork for more advanced database operations. Whether you're a beginner or looking to sharpen your skills, this tutorial will help you build confidence in working with SQL queries.
 
 <!-- 2. Motivation ---------------------------------------------------------------------------------------
 
@@ -49,11 +49,11 @@ Learning how to query data effectively is a fundamental skill for anyone working
 
 In this tutorial, we'll explore the fundamentals of querying data using the SELECT statement in PostgreSQL. You'll learn how to:
 
-- Retrieve all columns from a table.
-- Query specific columns to focus on relevant data.
-- Use the DISTINCT keyword to eliminate duplicate values.
-- Create calculated columns to derive new insights from your data.
-- Concatenate columns to combine data into a single output.
+- Retrieve all columns from a table
+- Query specific columns to focus on relevant data
+- Use the DISTINCT keyword to eliminate duplicate values
+- Create calculated columns to derive new insights from your data
+- Concatenate columns to combine data into a single output
 
 
 <!-- 5. Terminal learning objective ----------------------------------------------------------------------

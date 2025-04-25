@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl-azure.basic-sql-simple-select
 metadata:
-  title: basic-sql-simple-select
+  title: Getting started:An introduction to SQL and reading data
   description: "desc for baic-sql-simple-select" # Describe the module in 120 to 165 characters. Include relevant search keywords.
   ms.date: 4/22/2025
   author: mpopovic
@@ -22,7 +22,7 @@ metadata:
 ### To request new values, go to
 ### `https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main`.
   ms.service: azure-database-postgresql
-title: basic-sql-simple-select
+title: Getting started:An introduction to SQL and reading data
 ###########################################################################
 ###
 ### Introductory summary
@@ -53,7 +53,7 @@ title: basic-sql-simple-select
 ###
 ### Detailed guidance: `https://review.learn.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main`
 ###
-summary: "This module provides an introduction to the SQL SELECT statement. You'll learn how to select specific columns, remove duplicates with DISTINCT, and create calculated columns as well as using concatenation."
+summary: "This module provides an introduction to the SQL SELECT statement. You'll learn how to select specific columns, remove duplicates with DISTINCT, create calculated columns and use concatenation."
 ###########################################################################
 ###
 ### Learning objectives
@@ -86,10 +86,10 @@ summary: "This module provides an introduction to the SQL SELECT statement. You'
 ###
 abstract: |
   By the end of this module, you'll be able to:
-  -Select all or specific columns from a table.
-  -Use DISTINCT to remove duplicates.
-  -Create calculated columns with expressions or functions.
-  -Concatenate values into a single output.
+  - Select all or specific columns from a table
+  - Use DISTINCT to remove duplicates
+  - Create calculated columns with expressions or functions
+  - Concatenate values into a single output
 ###########################################################################
 ###
 ### Prerequisites
@@ -111,7 +111,7 @@ abstract: |
 ### Detailed guidance: `https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites`
 ###
 prerequisites: |
-  None
+   There are no prerequisites for this module.
 ###########################################################################
 ###
 ### Icon URL

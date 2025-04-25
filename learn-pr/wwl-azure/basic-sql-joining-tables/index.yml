@@ -53,7 +53,7 @@ title: basic-sql-joining-tables
 ###
 ### Detailed guidance: `https://review.learn.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main`
 ###
-summary: "This module introduces SQL joins, which are essential for combining data from multiple tables. You'll learn about INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN, and NATURAL JOIN."
+summary: "This module introduces SQL joins, which are essential for combining data from multiple tables. You'll learn about INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN and NATURAL JOIN."
 ###########################################################################
 ###
 ### Learning objectives
@@ -86,11 +86,11 @@ summary: "This module introduces SQL joins, which are essential for combining da
 ###
 abstract: |
   By the end of this module, you'll be able to:
-  -Understand the purpose of joins in databases.
-  -Use INNER JOIN to return matching rows.
-  -Apply LEFT and RIGHT JOIN to include all rows from one table.
-  -Use FULL OUTER JOIN to combine all rows from both tables.
-  -Use NATURAL JOIN to join tables by columns with the same name.
+  - Understand the purpose of joins in databases
+  - Use INNER JOIN to return matching rows
+  - Apply LEFT and RIGHT JOIN to include all rows from one table
+  - Use FULL OUTER JOIN to combine all rows from both tables
+  - Use NATURAL JOIN to join tables by columns with the same name
 ###########################################################################
 ###
 ### Prerequisites
@@ -112,7 +112,7 @@ abstract: |
 ### Detailed guidance: `https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites`
 ###
 prerequisites: |
- Before starting this tutorial, you should be familiar with basic SQL syntax, including the SELECT, FROM, and WHERE clauses, as well as core relational database concepts and the use of primary and foreign keys to define relationships between tables.
+ Before starting this tutorial, you should be familiar with basic SQL syntax, including the SELECT, FROM and WHERE clauses, as well as core relational database concepts and the use of primary and foreign keys to define relationships between tables.
 ###########################################################################
 ###
 ### Icon URL

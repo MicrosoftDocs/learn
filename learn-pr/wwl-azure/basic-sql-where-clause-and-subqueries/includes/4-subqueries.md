@@ -2,9 +2,9 @@ Often, you need to retrieve data based on conditions that are themselves derived
 
 Subqueries can be used in the following contexts: 
 
-    1. Within clauses of SELECT statements (FROM, WHERE, HAVING clause) 
+     Within clauses of SELECT statements (FROM, WHERE, HAVING clause) 
 
-    2. Within data manipulation statements (INSERT, UPDATE, DELETE statement) 
+     Within data manipulation statements (INSERT, UPDATE, DELETE statement) 
 
 ## Key points to emphasize: 
 

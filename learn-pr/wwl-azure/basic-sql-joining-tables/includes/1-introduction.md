@@ -45,9 +45,9 @@ In addition to managing individual tables, the ability to join tables is a criti
              and authorization. Then we'll put the concepts into context by describing some common
              authentication-based attacks. We'll also define some effective authorization security techniques."
  -->
- # What will we be doing?
+ ## What will we be doing?
 
-In this section, we’ll learn how to combine data from multiple related tables using various types of SQL joins. You’ll understand how to use INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN, and NATURAL JOIN to retrieve connected data across tables. Through practical examples using the "sales" database, you'll gain the skills to query and interpret relationships between entities like customers, orders, and employees.
+In this section, we’ll learn how to combine data from multiple related tables using various types of SQL joins. You’ll understand how to use INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN and NATURAL JOIN to retrieve connected data across tables. Through practical examples using the "sales" database, you'll gain the skills to query and interpret relationships between entities like customers, orders and employees.
 
  <!-- 5. Terminal learning objective ----------------------------------------------------------------------
 

@@ -22,7 +22,7 @@ metadata:
 ###
 ### To request new values, go to
 ### `https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main`.
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/3-querying-columns-and-distinct.md)]
 ###########################################################################

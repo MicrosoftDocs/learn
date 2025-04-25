@@ -12,7 +12,7 @@
 
     Detailed guidance: `https://review.learn.microsoft.com/help/learn/id-guidance-introductions?branch=main#module-introduction`
 --->
-Learning how to manage and organize query results is crucial when working with databases. In this tutorial, you'll explore the LIMIT, OFFSET, and ORDER BY clauses in PostgreSQL, essential tools for controlling the number of rows returned, skipping rows, and sorting data. We'll cover how to use LIMIT to restrict the result set, OFFSET to skip a specific number of rows, and ORDER BY to sort data in ascending or descending order.
+Learning how to manage and organize query results is crucial when working with databases. In this tutorial, you'll explore the LIMIT, OFFSET, and ORDER BY clauses in PostgreSQL, essential tools for controlling the number of rows returned, skipping rows, and sorting data. We'll cover how to use LIMIT to restrict the result set, OFFSET to skip a specific number of rows and ORDER BY to sort data in ascending or descending order.
 <!-- 2. Motivation ---------------------------------------------------------------------------------------
 
     Goal: Explain why the concepts that the module covers are important and how they're used. Consider
@@ -44,14 +44,16 @@ Learning how to manage and organize query results is crucial when working with d
              and authorization. Then we'll put the concepts into context by describing some common
              authentication-based attacks. We'll also define some effective authorization security techniques."
  -->
+
+ ## What will we be doing?
 In this tutorial, we'll explore the fundamentals of managing query results using the LIMIT, OFFSET, and ORDER BY clauses in PostgreSQL. You'll learn how to:
 
-- Limit the number of rows returned in a query using the LIMIT clause.
-- Skip a specific number of rows in the result set with the OFFSET clause.
-- Sort query results in ascending or descending order using the ORDER BY clause.
-- Combine LIMIT and OFFSET for precise control over pagination.
-- Use ORDER BY with multiple columns for advanced sorting scenarios.
-- Optimize query performance when working with large datasets.
+- Limit the number of rows returned in a query using the LIMIT clause
+- Skip a specific number of rows in the result set with the OFFSET clause
+- Sort query results in ascending or descending order using the ORDER BY clause
+- Combine LIMIT and OFFSET for precise control over pagination
+- Use ORDER BY with multiple columns for advanced sorting scenarios
+- Optimize query performance when working with large datasets
 
 
 <!-- 5. Terminal learning objective ----------------------------------------------------------------------
