@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.finetune-model-copilot-ai-studio.exercise
-title: Exercise - Fine-tune a foundation model
+title: Exercise - Fine-tune a language model
 metadata:
-  title: Exercise - Fine-tune a foundation model
-  description: Exercise - Fine-tune a foundation model in the Azure AI Foundry portal.
+  title: Exercise - Fine-tune a language model
+  description: Exercise - Fine-tune a language model in the Azure AI Foundry portal.
   author: madiepev
   ms.author: madiepev
-  ms.date: 11/28/2024
+  ms.date: 04/17/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 15
+durationInMinutes: 60
 content: |
   [!include[](includes/5-exercise.md)]
-
+

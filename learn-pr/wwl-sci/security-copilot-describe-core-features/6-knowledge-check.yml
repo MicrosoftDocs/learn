@@ -18,6 +18,31 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
+  
+  - content: A security analyst is using Microsoft Security Copilot and wants to generate insights from their security data. They want to use natural language to do this. Where should they input their request?
+    choices:
+    - content: In the 'Prompt bar'
+      isCorrect: true
+      explanation: Correct. The 'Prompt bar' is where users can input their requests in natural language to generate insights from their security data.
+    - content: In the 'Prompts to try' section
+      isCorrect: false
+      explanation: Incorrect. The 'Prompts to try' section provides a set of prompts and promptbooks that are immediately available on the home screen, but it's not where users input their requests.
+    - content: In the 'Workspaces' section
+      isCorrect: false
+      explanation: Incorrect. The 'Workspaces' section is for selecting available workspaces and setting preferred workspace, not for inputting requests.
+
+  - content: A team member needs to set up a new workspace in Copilot for a specific project. What role must this team member have in order to create a new workspace?
+    choices:
+    - content: Security Reader
+      isCorrect: false
+      explanation: Incorrect. A security reader doesn't have the permissions to create a new workspace in Copilot. A user must have the security administrator role, as a minimum.
+    - content: Security Administrator
+      isCorrect: true
+      explanation: Correct. A Security Administrator has the necessary permissions to create new workspaces in Copilot.
+    - content: Billing Administrator
+      isCorrect: false
+      explanation: Incorrect. A billing administrator doesn't have the permissions to create a new workspace in Copilot. A user must have the security administrator role, as a minimum.
+
   - content: A security analyst needs to review past sessions created in Microsoft Security Copilot. After accessing the standalone experience, which option should they select to manage and review these sessions?
     choices:
     - content: Select the My sessions option from the home menu.
@@ -29,28 +54,19 @@ quiz:
     - content: Select settings.
       isCorrect: false
       explanation: Incorrect. The settings option is for adjusting preferences and data privacy, not for reviewing past interactions.
-  - content: After enabling the Defender EASM plugin in Copilot, a security analyst wants to assess the organization's exposure to a specific vulnerability; which prompt should they use to obtain this information?
+  
+  - content: A team member is trying to use a non-Microsoft plugin with Microsoft Security Copilot but it appears greyed out and restricted. What could be the possible reason?
     choices:
-    - content: Get assets by CVSS score.
+    - content: The plugin isn't supported by Microsoft Security Copilot.
       isCorrect: false
-      explanation: Incorrect. This prompt provides assets based on their CVSS scores, not specific vulnerabilities.
-    - content: Get expired SSL certificates.
+      explanation: Incorrect. The plugin might be supported but appears restricted due to certain settings.
+    - content: The plugin requires an account and license to the specific service.
       isCorrect: false
-      explanation: Incorrect. This prompt retrieves information about expired SSL certificates, not vulnerabilities.
-    - content: Is my external attack surface impacted by CVE-2023-21709?
+      explanation: Incorrect. While some plugins do require an account and license, this wouldn't cause the plugin to appear grayed out and restricted.
+    - content: The Copilot owner has restricted plugin access.
       isCorrect: true
-      explanation: Correct. This prompt specifically checks for the impact of a given CVE on the organization's external attack surface.
-  - content: A security analyst needs to integrate ServiceNow incident management with Microsoft Security Copilot. Which authentication method should be configured to enable this integration?
-    choices:
-    - content: Anonymous authentication
-      isCorrect: false
-      explanation: Incorrect. Anonymous authentication is used for website plugins, not for ServiceNow integration.
-    - content: OAuth authorization
-      isCorrect: true
-      explanation: Correct. The ServiceNow plugin offers a Basic sign-in or OAuth authorization for authentication.
-    - content: Copilot uses on-behalf-of authentication so no other authentication is required for ServiceNow integration.
-      isCorrect: false
-      explanation: Incorrect. On-behalf-of authentication is used for integration with Microsoft solutions, not for ServiceNow integration.
+      explanation: Correct. If a Copilot owner has restricted plugin access, then those plugins that have been set to restricted will show greyed out.
+
   - content: A security analyst is tasked with automating investigation flows to streamline repetitive steps in Copilot. After selecting relevant prompts from an existing session, the analyst wants to create a promptbook. What should the analyst do next to accomplish this task?
     choices:
     - content: Select the 'Create promptbook' icon to open the page where they can name, tag, and further customize the promptbook.
@@ -62,14 +78,3 @@ quiz:
     - content: Choose the 'Save session' option to preserve the current state of the session for later use. 
       isCorrect: false
       explanation: Incorrect. Saving the session preserves its state but doesn't result in the creation of a promptbook.
-  - content: After uploading a PDF file to Microsoft Security Copilot, an analyst wants to ensure the file is included as a source in their current session. What should the analyst do next?
-    choices:
-    - content: Toggle the button on the right-hand side of the file until the toggle is lit up.
-      isCorrect: true
-      explanation: Correct. Toggling the button includes the file as a source in the current session.
-    - content: Delete the file and reupload it to automatically include it as a source.
-      isCorrect: false
-      explanation: Incorrect. Deleting and reuploading the file is unnecessary for including it as a source.
-    - content: Navigate to the Files section and select on the file name to open it.
-      isCorrect: false
-      explanation: Incorrect. Opening the file doesn't include it as a source in the session.

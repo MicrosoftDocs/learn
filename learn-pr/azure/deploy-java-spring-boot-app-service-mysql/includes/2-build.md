@@ -2,7 +2,7 @@ In this unit, you'll learn how to create a Spring application, connect it to a M
 
 ## Introduction to Azure App Service
 
-Azure App Service allows you to host your company's websites, web applications, REST APIs, and other application code on Azure.  Running your web application in Azure App Service provides you with all the benefits of running on Azure: your application is available, it scales, and it has built-in security and compliance.
+Azure App Service allows you to host your company's websites, web applications, REST APIs, and other application code on Azure. Running your web application in Azure App Service provides you with all the benefits of running on Azure: your application is available, it scales, and it has built-in security and compliance.
 
 You want to create a Spring Boot application that hosts its logic in Azure App Service and hosts its database in an Azure MySQL database.
 
@@ -12,13 +12,11 @@ Spring is a great framework to host and manage your applications. You just wire 
 
 You've decided to use Spring Boot. This framework is self-hosted, and it provides support services to run your application.
 
-The Spring injection annotations use dependency injection to process the components.
-You can use Azure Spring Starter integration libraries to configure and set up connections to Azure services.
+The Spring injection annotations use dependency injection to process the components. You can use Azure Spring Starter integration libraries to configure and set up connections to Azure services.
 
 ## Create your resources by using the Azure CLI and Maven
 
-You can use the Azure CLI to create and manage Azure resources.
-It runs on Linux, macOS, and Windows. The CLI allows administrators and developers to run commands by using a terminal or command-line prompt (or script) instead of a web browser. 
+You can use the Azure CLI to create and manage Azure resources. It runs on Linux, macOS, and Windows. The CLI allows administrators and developers to run commands by using a terminal or command-line prompt (or script) instead of a web browser.
 
 For example, to get the details of a subscription, you can use the following command:
 

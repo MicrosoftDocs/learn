@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-replication-manage-failovers-azure-cosmos-db.knowledge-check
-title: Module assessment
+title: Knowledge check
 metadata:
-  title: Module assessment
+  title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/06/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -13,17 +13,17 @@ labModal: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "You've created a brand new Azure Cosmos DB account with a write region in **West US** and two read regions in **UK South** and **Japan East**. You have made no further configuration changes from the default configuration for a new account. There's a current data center outage in **West US**. What will Azure Cosmos DB do as a failover action?"
+  - content: "The application team created a brand new Azure Cosmos DB account with a write region in **West US** and two read regions in **UK South** and **Japan East**. The team made no further configuration changes from the default configuration for a new account. There's a current data center outage in **West US**. What failover action does Azure Cosmos DB do?"
     choices:
-    - content: "Failover to **UK South**"
+    - content: "Fail over to **UK South**"
       isCorrect: false
-      explanation: "Incorrect. Automatic failover is not enabled for new accounts by default."
+      explanation: "Incorrect. Automatic failover isn't enabled for new accounts by default."
     - content: "Nothing"
       isCorrect: true
-      explanation: "Correct. You must enable automatic failover before a failover can occur."
-    - content: "Failover to **Japan East**"
+      explanation: "Correct. The team must enable automatic failover before a failover can occur."
+    - content: "Fail over to **Japan East**"
       isCorrect: false
-      explanation: "Incorrect. Automatic failover is not enabled for new accounts by default."
+      explanation: "Incorrect. Automatic failover isn't enabled for new accounts by default."
   - content: "Which property of the **CosmosClientOptions** class in the .NET SDK for Azure Cosmos DB for NoSQL is used to configure a list of preferred geo-replication regions?"
     choices:
     - content: "``ApplicationRegion``"
@@ -34,4 +34,4 @@ quiz:
       explanation: "Correct. The **ApplicationPreferredRegions** property sets a list of regions in priority order."
     - content: "``ConnectionMode``"
       isCorrect: false
-      explanation: "Incorrect. This property is used to configure the connection mode to either **direct** or **gateway**."
+      explanation: "Incorrect. This property is used to configure the connection mode to either **direct** or **gateway**."

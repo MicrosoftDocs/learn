@@ -3,8 +3,8 @@ uid: learn.wwl.explore-query-performance-optimization
 metadata:
   title: Explore query performance optimization
   description: Explore query performance optimization
-  ms.date: 06/28/2023
-  author: wwlpublish
+  ms.date: 04/1/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: module
   ms.service: azure
@@ -45,4 +45,4 @@ units:
 - learn.wwl.explore-query-performance-optimization.summary
 badge:
   uid: learn.wwl.explore-query-performance-optimization.badge
-
+

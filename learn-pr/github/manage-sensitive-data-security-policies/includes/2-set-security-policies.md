@@ -1,6 +1,6 @@
 In this unit, you'll learn more about the preventive measures you can take to maintain the health of your GitHub repositories.
 
-Suppose you're an administrator who is helping to onboard many new collaborators to your organization. You need to make sure they contribute to the proper repositories and have easy access to assistance if they discover a security threat. To do this, you set security policies.
+Suppose you're an administrator who's helping to onboard many new collaborators to your organization. You need to make sure they contribute to the proper repositories and have easy access to assistance if they discover a security threat. To do this, you set security policies.
 
 :::image type="content" source="../media/setting-security-policies.png" alt-text="Three screenshots stacked on each other, slightly offset, which show community health files in a repository and settings for an organization.":::
 
@@ -63,15 +63,34 @@ GitHub uses and displays these default files for any repository owned by the acc
 
 ## Security settings
 
-The other component of creating robust security policies is taking advantage of GitHub's built-in security settings and features. Imagine you're onboarding collaborators whose scope of work varies; some are part of focused teams to implement a feature, while others are responsible for watching over the code base for issues, and a few others might need to assist you with administrative duties. In this section, you'll learn about settings that define user permissions and allow automation of common security tasks.
+The other component of creating robust security policies is taking advantage of GitHub's built-in security settings and features. Imagine you're onboarding collaborators whose scope of work varies; some are part of focused teams to implement a feature, while others are responsible for watching over the code base for issues, and a few others might need to assist you with administrative duties. In this section, you'll learn about settings that define user permissions and allow you to automate common security tasks.
 
 ### Change settings according to a trust and control position
 
-Every organization has a trust and control position: circumstances that determine how much trust you can safely extend to individual collaborators and teams, and how much control you need to maintain over basic permissions.
+Every organization has a trust and control position: circumstances that determine how much trust you can safely extend to individual collaborators and teams and how much control you need to maintain over basic permissions.
 
 If your organization is a new business with a small team, it likely has few moving parts and few areas of potential security vulnerability. After all, when team members work in the same office or in nearby time zones, it's easy to identify who can take specific actions and how to contact them. In this case, you can safely trust most or all collaborators with high levels of access and capability.
 
 On the other hand, if your organization is very large, with teams in many separate time zones or continents, determining who to contact to resolve incidents can be difficult. Even getting in touch with the right person once you've identified them might require significant planning. This means that team leaders are in a position to trust fewer people with high levels of access and capability, because troubleshooting problems takes more time as the team extends privileges to more users.
+
+Aligning enterprise policies with your company’s trust and control position is an ongoing process that must evolve with your organization’s risk posture.
+
+### Fundamental principles for managing enterprise permissions and policies
+Managing enterprise permissions and policies is crucial for maintaining security and operational efficiency. This section provides fundamental principles and best practices for adjusting permissions and policies to align with your organization's trust and control positions. By adhering to these principles, you can ensure that your enterprise remains secure, compliant, and adaptable to changing needs.
+
+- **Least Privilege:** Grant users the minimum permissions necessary.
+- **Risk-Based Adjustments:** Regularly assess and adjust policies based on evolving security risks.
+- **Periodic Reviews:** Schedule reviews of permissions and policies to ensure they remain effective.
+- **Customizability:** Allow for flexibility to accommodate the specific needs of different teams or projects.
+- **Documentation:** Maintain clear documentation of policy changes to support audits and continuous improvement.
+
+### Implementing Policy Adjustments:
+Implementing policy adjustments is a critical aspect of maintaining a secure and efficient enterprise environment. This section outlines the steps and considerations necessary for evaluating and updating permission structures to align with organizational needs and security requirements. By following a structured approach, organizations can ensure that their policies remain effective and adaptable to changing circumstances.
+
+- **Assessment:** Continuously evaluate the current permission structure and identify areas for enhancement.
+- **Stakeholder Engagement:** Collaborate with team leaders and security experts to understand the practical needs.
+- **Incremental Rollout:** Implement changes in stages to minimize disruptions.
+- **Feedback Loop:** Set up mechanisms to gather feedback and iterate on the policies as needed.
 
 ### At what levels can administrators change security settings?
 
@@ -87,8 +106,7 @@ As you can see, settings that Enterprise administrators enforce cascade down to 
 Changing security settings at the organization level or for all organizations covered by the Enterprise plan is powerful, because it can standardize user capabilities during unusual circumstances. In the preceding example, you might need to restrict capabilities to all but a few users for an organization—or even for the whole enterprise—in response to a security threat. In contrast, you could temporarily allow greater capabilities to all users in an organization during a rare development effort where you need help from extra personnel.
 
 > [!NOTE]
-> Available settings and tools differ based on the type of repository. In addition,
-> these settings and features differ in their level of required user interaction.
+> Available settings and tools differ based on the type of repository. In addition, these settings and features differ in their level of required user interaction.
 
 :::image type="content" source="../media/availability-interaction.png" alt-text="Diagram of a four-quadrant graph, divided by x and y axes, which categorizes security settings by availability to users (x axis) and required level of interaction (y axis).":::
 
@@ -96,13 +114,13 @@ Changing security settings at the organization level or for all organizations co
 
 Access restrictions, security documentation, advisories, Dependabot alerts and security updates, Dependabot version updates, and the GitHub dependency graph are available for all repositories. Documentation and advisories require the most significant manual interaction, but applying Dependabot to your code base automates parts of the security process, up to and including updating dependencies.
 
-Code scanning alerts, secret scanning alerts, and dependency review provide further automation to the security process. Enabling these GitHub features will flag vulnerabilities in code submitted to a repository, highlighting suspicious code. However, these features are only available for private repositories with an Advanced Security license or public repositories.
+Code scanning alerts, secret scanning alerts, and dependency review provide further automation to the security process. Enabling these GitHub features flags vulnerabilities in code submitted to a repository, highlighting suspicious code. However, these features are only available for private repositories with an Advanced Security license or public repositories.
 
 If you have a security vulnerability, you can create a security advisory to privately discuss and fix the vulnerability.
 
 ## Security advisories
 
-You've been vigilant in your efforts to maintain healthy code, establishing clear policies and enacting settings to help collaborators work within their scope. But despite your team's efforts, someone identified a vulnerability in published code. This happens to every team sooner or later--no one is perfect.
+You've been vigilant in your efforts to maintain healthy code, establishing clear policies and enacting settings to help collaborators work within their scope. But despite your team's efforts, someone identified a vulnerability in published code. This happens to every team sooner or later; no one is perfect.
 
 When you identify a security threat, your team's response will go beyond patching offending sections of code. In this section, you'll learn the basics of the GitHub security advisory tools that allow you to draft and publish comprehensive documentation on the nature of the threat.
 

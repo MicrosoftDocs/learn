@@ -5,7 +5,7 @@ metadata:
   description: Implement LLMOps in Azure Databricks
   ms.date: 03/20/2025
   author: wwlpublish
-  ms.author: madiepev
+  ms.author: theresai
   ms.topic: module
   ms.service: azure
   ai-usage: ai-assisted
@@ -37,4 +37,4 @@ units:
 - learn.wwl.implement-llmops-azure-databricks.summary
 badge:
   uid: learn.wwl.implement-llmops-azure-databricks.badge
-
+

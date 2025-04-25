@@ -4,7 +4,7 @@ title: How to add orchestration to an existing .NET app
 metadata:
   title: How to add orchestration to an existing .NET app
   description: "See how using .NET Aspire orchestration brings benefits to your existing cloud-native apps. Then enroll an app in .NET Aspire orchestration and examine the changes made to a solution."
-  ms.date: 2/6/2024
+  ms.date: 04/02/2025
   author: camsoper
   ms.author: casoper
   ms.topic: unit

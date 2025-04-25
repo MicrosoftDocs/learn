@@ -1,17 +1,17 @@
 ### YamlMime:Module
 uid: learn.wwl.ai-agent-fundamentals
 metadata:
-  title: Fundamentals of AI agents on Azure
+  title: Get started with AI agent development on Azure
   description: AI agents represent the next generation of intelligent applications. Learn how they can be developed and used on Microsoft Azure.
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 02/12/2025
+  ms.date: 04/03/2025
   ms.service: azure-ai-services
   ms.topic: module-standard-task-based
   ms.collection:
     - wwl-ai-copilot
   ms.custom: ai-learning-hub
-title: Fundamentals of AI agents on Azure
+title: Get started with AI agent development on Azure
 summary: "AI agents represent the next generation of intelligent applications. Learn how they can be developed and used on Microsoft Azure."
 abstract: |
   By the end of this module, you'll be able to:
@@ -41,4 +41,4 @@ units:
 - learn.wwl.ai-agent-fundamentals.summary
 badge:
   uid: learn.wwl.ai-agent-fundamentals.badge
-
+

@@ -22,5 +22,9 @@ In this lab, you use the Azure portal to create an application gateway. Then you
 > [!NOTE]
 > You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
+> [!NOTE]
+> You can view the [Deploy Azure Application Gateway](https://microsoftlearning.github.io/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/Instructions/Exercises/M05-Unit%204%20Deploy%20Azure%20application%20gateway.html) instructions directly. 
+
+
 [![Screenshot of the simulation page.](../media/simulation-appgw-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Deploy%20Azure%20Application%20Gateway)
 

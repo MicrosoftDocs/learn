@@ -16,23 +16,22 @@ What is a permission? The dictionary definition of permission is the **consent o
 
 |                                                                                    **User settings**                                                                                     |                                                                                           **Roles and administrators**                                                                                            |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| :::image type="content" source="../media/permission-users-9c8de910-40133c9b.png" alt-text="Screenshot of the Microsoft Entra ID user settings, where permissions can be restricted.":::  | :::image type="content" source="../media/permissions-role-admin-767d4208-4e747bee.png" alt-text="Screenshot of the Roles and administrators screen in Microsoft Entra ID. List of roles that can be applied.":::  |
+| :::image type="content" source="../media/permission-users.png" alt-text="Screenshot of the Microsoft Entra ID user settings, where permissions can be restricted.":::  | :::image type="content" source="../media/permissions-role-admin.png" alt-text="Screenshot of the Roles and administrators screen in Microsoft Entra ID. List of roles that can be applied.":::  |
 
 You can use the **User Settings** inside of Microsoft Entra ID – Manage menu to restrict or control the default permissions of the default users. Or you can use Roles and administrators to add new permissions onto your users and group. Always use the concept of Least Privilege and make sure the users only have the rights they need. In User settings you can restrict the user's ability to:
 
- -  Register applications
- -  Access the Azure portal
- -  Block LinkedIn connections
- -  Manage settings for external collaboration
+- Register applications
+- Access the Azure portal
+- Block LinkedIn connections
+- Manage settings for external collaboration
 
 By adding roles to a given user account or group, you can add permissions on to member users, guest users, and service principals. Adding roles gives permissions to perform specific activities. Actions are limited, which allows the rule of least privilege.
 
 ### Exploring available permissions
 
-:::image type="content" source="../media/permissions-attribute-reader-9af1b539-061978bf.png" alt-text="Screenshot of the Attribute definition reader.  You can see which permissions a built-in role grants.":::
-
+:::image type="content" source="../media/permissions-attribute-reader.png" alt-text="Screenshot of the Attribute definition reader.  You can see which permissions a built-in role grants.":::
 
 If possible, you only want to grant the minimum permissions a user needs. So be sure to know what all permissions are granted when you assign a role. You can see the list of permissions in the description of each role. To open, launch Microsoft Entra ID, then open the **Roles and administrators** screen. Next select a role, and open its description page from the ellipsis (...) menu. Depending on the role you chose, you'll see a large or small number of permissions. Two sets of permissions:
 
- -  Role permissions
- -  Guest and service principal basic read permissions
+- Role permissions
+- Guest and service principal basic read permissions

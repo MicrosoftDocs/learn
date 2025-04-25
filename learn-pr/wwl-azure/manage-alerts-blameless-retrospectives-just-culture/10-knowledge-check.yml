@@ -2,6 +2,7 @@
 uid: learn.wwl.manage-alerts-blameless-retrospectives-just-culture.knowledge-check
 title: Module assessment
 metadata:
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
   ms.date: 05/08/2024
@@ -48,4 +49,4 @@ quiz:
       explanation: "Correct. The response time degradation notification tells you: How many users are affected, the Correlation between degradation in this operation and degradations in related dependencies, the Count of operation requests on the day of the detection and seven days before, and some others."
     - content: "Correlation between degradation in this operation and degradations in related dependencies."
       isCorrect: false
-      explanation: "Incorrect. The response time degradation notification tells you: How many users are affected, the Correlation between degradation in this operation and degradations in related dependencies, the Count of operation requests on the day of the detection and seven days before, and some others."
+      explanation: "Incorrect. The response time degradation notification tells you: How many users are affected, the Correlation between degradation in this operation and degradations in related dependencies, the Count of operation requests on the day of the detection and seven days before, and some others."

@@ -2,9 +2,11 @@
 uid: learn.wwl.manage-security-controls-identity-access.entitlement-management
 title: Entitlement management
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Entitlement management
   description: "Entitlement management"
-  ms.date: 03/10/2025
+  ms.date: 04/11/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

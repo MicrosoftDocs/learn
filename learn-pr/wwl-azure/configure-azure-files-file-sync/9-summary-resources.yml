@@ -2,9 +2,11 @@
 uid: learn.wwl.configure-azure-files-file-sync.summary-resources
 title: Summary and resources
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary and resources
   description: "Summary and resources"
-  ms.date: 01/10/2025
+  ms.date: 04/03/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

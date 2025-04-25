@@ -4,7 +4,7 @@ title: Control SQL Server resources
 metadata:
   title: Control SQL Server resources
   description: "Control SQL Server resources"
-  ms.date: 03/20/2025
+  ms.date: 04/01/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/5-control.md)]
+  [!include[](includes/5-control.md)]

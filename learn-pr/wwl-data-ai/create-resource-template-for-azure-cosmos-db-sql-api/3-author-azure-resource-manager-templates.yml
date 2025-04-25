@@ -4,7 +4,7 @@ title: Author Azure Resource Manager templates
 metadata:
   title: Author Azure Resource Manager templates
   description: "Author Azure Resource Manager templates"
-  ms.date: 10/22/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -15,4 +15,4 @@ labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/3-author-azure-resource-manager-templates.md)]
-
+

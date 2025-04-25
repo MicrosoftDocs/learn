@@ -3,7 +3,7 @@ uid: learn.wwl.author-complex-queries-azure-cosmos-db-sql-api
 metadata:
   title: Author complex queries with the Azure Cosmos DB for NoSQL
   description: "Create SQL queries for Azure Cosmos DB for NoSQL that uses subqueries or cross-products."
-  ms.date: 03/10/2025
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: module-standard-task-based
@@ -35,4 +35,4 @@ units:
 - learn.wwl.author-complex-queries-azure-cosmos-db-sql-api.knowledge-check
 - learn.wwl.author-complex-queries-azure-cosmos-db-sql-api.summary
 badge:
-  uid: learn.wwl.author-complex-queries-azure-cosmos-db-sql-api.badge
+  uid: learn.wwl.author-complex-queries-azure-cosmos-db-sql-api.badge

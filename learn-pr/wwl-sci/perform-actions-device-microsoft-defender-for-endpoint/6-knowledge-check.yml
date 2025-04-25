@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 11/28/2023
+  ms.date: 04/01/2025
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: unit
 azureSandbox: false
 labModal: false
@@ -31,10 +31,10 @@ quiz:
     choices:
     - content: "Reboot"
       isCorrect: false
-      explanation: "Incorrect.  You can't issue a reboot action."
+      explanation: "Incorrect. You can't issue a reboot action."
     - content: "Reformat device"
       isCorrect: false
-      explanation: "Incorrect.  You can't issue a reformat action."
+      explanation: "Incorrect. You can't issue a reformat action."
     - content: "Isolate device"
       isCorrect: true
-      explanation: "Correct.  You can isolate a device."
+      explanation: "Correct. You can isolate a device."

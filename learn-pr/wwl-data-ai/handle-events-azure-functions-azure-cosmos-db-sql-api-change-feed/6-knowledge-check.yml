@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.handle-events-azure-functions-azure-cosmos-db-sql-api-change-feed.knowledge-check
-title: Module assessment
+title: Knowledge check
 metadata:
-  title: Module assessment
+  title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/18/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -13,22 +13,22 @@ labModal: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "You're creating an Azure Function to monitor a container for new items and changes to existing items. Which type of binding should you use to start executing the function where there are changes to items?"
+  - content: "The application team is creating an Azure Function to monitor a container for new items and changes to existing items. Which type of binding should the team use to start executing the function where there are changes to items?"
     choices:
     - content: "Input binding"
       isCorrect: false
-      explanation: "Incorrect. An input binding won't start the execution of a function."
+      explanation: "Incorrect. An input binding doesn't start the execution of a function."
     - content: "Trigger binding"
       isCorrect: true
-      explanation: "Correct. A trigger binding will start executing a function when the change feed has a new batch of changes to process."
+      explanation: "Correct. A trigger binding starts executing a function when the change feed has a new batch of changes to process."
     - content: "Output binding"
       isCorrect: false
-      explanation: "Incorrect. An output binding will write new items to a container, not monitor for changes."
-  - content: "You have an output binding configured for Azure Cosmos DB for NoSQL named **items**. You would like to add multiple items to a container using this binding. Which function method parameter should you use to add more than one item to a container?"
+      explanation: "Incorrect. An output binding writes new items to a container. The binding doesn't monitor for changes."
+  - content: "The application team configured an output binding for Azure Cosmos DB for NoSQL named **items**. The team would like to add multiple items to a container using this binding. Which function method parameter should the team use to add more than one item to a container?"
     choices:
     - content: "``out Product items``"
       isCorrect: false
-      explanation: "Incorrect. An out parameter with a type will only add a single item to the container."
+      explanation: "Incorrect. An `out` parameter with a type only adds a single item to the container."
     - content: "``IAsyncCollector<Product> items``"
       isCorrect: true
       explanation: "Correct. The **IAsyncCollector** class contains the **AddAsync** method to add items to a container."
@@ -39,10 +39,10 @@ quiz:
     choices:
     - content: "Assign the **type** to `AzureCosmosDBTrigger`"
       isCorrect: false
-      explanation: "Incorrect. The **type** will always be set to *`cosmosDBTrigger`."
+      explanation: "Incorrect. The **type** always sets to `cosmosDBTrigger`."
     - content: "Set the **direction** to **in**."
       isCorrect: true
-      explanation: "Correct. For a trigger, this will be set to in."
-    - content: "Set the `leaseCollectionName` to the name of the container that will contain all the new leased documents"
+      explanation: "Correct. For a trigger, this **direction** is set to **in**."
+    - content: "Set the `leaseCollectionName` to the name of the container that contains all the new leased documents"
       isCorrect: false
-      explanation: "Incorrect. The name of the container used to manage change feed leases."
+      explanation: "Incorrect. The name of the container used to manage change feed leases."
