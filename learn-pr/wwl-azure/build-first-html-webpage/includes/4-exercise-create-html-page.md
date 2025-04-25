@@ -8,22 +8,22 @@ You start by creating a folder, setting up your tooling, and creating a "swing" 
 
 The following video demonstrates how to install CodeSwing in Visual Studio Code. These steps are also in the exercise steps.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE5amMI]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=7bd2894a-bd6f-4a57-8298-9c2c57a1ad45]
 
 1. Create a folder on your desktop named **resume**.
-1. Open [vscode.dev](https://vscode.dev).
-1. Select **Open Folder**.
-1. Navigate to the **resume** folder you created earlier and select **Select Folder**.
-1. When prompted to **Let site view files**, select **View Files**.
-1. Select the **Extensions** button.
+2. Open [vscode.dev](https://vscode.dev).
+3. Select **Open Folder**.
+4. Navigate to the **resume** folder you created earlier and select **Select Folder**.
+5. When prompted to **Let site view files**, select **View Files**.
+6. Select the **Extensions** button.
     >:::image type="content" source="../media/extensions.png" alt-text="Screenshot of Extensions icon.":::
-1. In the **Search Extensions in Marketplace** text box, type **CodeSwing**.
-1. Select **Install** to install **CodeSwing**.
-1. Open the Command Palette by selecting **Ctl-Shift-P** or **Cmd-Shift-P** on a Mac.
-1. Type **CodeSwing** in the Command Palette and select **CodeSwing: New Swing in Directory...**.
-1. Select **Select Folder** to use the current directory (which is the one you created in a prior step).
-1. Select **Basic: HTML-Only**.
-1. When prompted to **Save changes to resume** select **Save changes**.
+7. In the **Search Extensions in Marketplace** text box, type **CodeSwing**.
+8. Select **Install** to install **CodeSwing**.
+9. Open the Command Palette by selecting **Ctl-Shift-P** or **Cmd-Shift-P** on a Mac.
+10. Type **CodeSwing** in the Command Palette and select **CodeSwing: New Swing in Directory...**.
+11. Select **Select Folder** to use the current directory (which is the one you created in a prior step).
+12. Select **Basic: HTML-Only**.
+13. When prompted to **Save changes to resume** select **Save changes**.
 
 Visual Studio Code creates two windows side by side. The left side is your editor, where you can enter your HTML. The right behaves like a browser, displaying the results of your HTML code.
 
@@ -33,7 +33,7 @@ Next, you add the HTML to create the structure of your page. You create the thre
 
 The following video demonstrates how to author HTML in Visual Studio Code and have the code render in CodeSwing. These steps are also in the exercise steps.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE5amMJ]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=256625d1-5672-4bbc-b04d-33f4fb7eb1ed]
 
 Feel free to replace **Your name** with your name. In other exercises, you create lists and links to your email address, social media handles, and education and experience.
 
@@ -61,9 +61,9 @@ After adding the code, you'll review what code has been added.
 
 Each of the elements in the HTML does specific things. The following table describes the tags you used in your HTML and how the browser understands them.
 
-|Tag|Description|
-|---|---|
-|`<html>`|The "container" tag for the entire HTML document. All other tags are written inside the HTML element.|
+| Tag      | Description                              |
+| -------- | ---------------------------------------- |
+| `<html>` | The "container" tag for the entire HTML document. All other tags are written inside the HTML element. |
 |
 |`<head>`|The header container. The header typically includes references to other files the page or site needs. It also can include data that search engines and social media sites use to better find your website.|
 |`<body>`|This tag creates the body container for the web page. Most of the display elements go in the body element.|

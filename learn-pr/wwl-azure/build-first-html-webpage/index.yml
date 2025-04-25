@@ -24,7 +24,7 @@ abstract: |
   -   Create a basic HTML page
 
   -   Make linked lists in HTML
-prerequisites: Basic knowledge of computer terminology.
+prerequisites: '- Basic knowledge of computer terminology.'
 iconUrl: /training/achievements/build-first-html-webpage.svg
 levels:
 - beginner
