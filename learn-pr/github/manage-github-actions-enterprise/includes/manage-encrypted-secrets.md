@@ -61,7 +61,7 @@ If you need to access the encrypted secret in your action's code, the action cod
 <!-- INFOMAGNUS UPDATES for all of sub OD 4.3 go here! Source Material: https://www.google.com/url?q=https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions , https://docs.github.com/en/actions/security-for-github-actions/using-artifact-attestations/using-artifact-attestations-to-establish-provenance-for-builds -->
 ## Configure Security Hardening for GitHub Actions
 
-Cyber hardening GitHub Actions plays a role in keeping your software supply chain secure.  The next subsections will walk you through practices to cyber harden GitHub actions that you utilize in your workflows.
+Security hardening for GitHub Actions plays a role in keeping your software supply chain secure.  The next subsections will walk you through practices to cyber harden GitHub actions that you utilize in your workflows.
 
 ### Identify best practices for mitigating script injection attacks
 
