@@ -2,6 +2,7 @@
 uid: learn.wwl.create-plugins-semantic-kernel.knowledge-check
 title: Module assessment
 metadata:
+  hidden_question_numbers: ["E5FD1D00_38","E5FD1D00_100","E5FD1D00_104","E5FD1D00_108","E5FD1D00_92"]
   ai_generated_module_assessment: true
   title: Module assessment
   description: "Check your knowledge"
