@@ -44,4 +44,3 @@ quiz:
     - content: "Data Factory"
       isCorrect: true
       explanation: "Correct. The Data Factory experience is used to move and transform data using Power Query."
-
