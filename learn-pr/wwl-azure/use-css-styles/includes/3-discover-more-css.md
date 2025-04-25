@@ -6,10 +6,10 @@ As with any computer language, CSS supports comments. To comment in a section of
 
 > [!IMPORTANT]
 > CSS comments are public, and accessible by both the browser and users of your website. **Do not** store sensitive information in comments.
-> 
+>
 > CSS comments are formatted differently from HTML comments. Comments in HTML use the `<!--comment-->` syntax.
 
-## Setting Fonts
+## Setting fonts
 
 You can use CSS to tell the browser what font you want to use for specific text. Sometimes you want to use Arial for readability or something fancier for style. The following image shows some text in Arial and other text in a font called "Impact."
 
@@ -19,10 +19,10 @@ The most common option for setting the font to use on a page is `font-family`. `
 
 You can also use other options, such as the style, weight, and decoration. `font-style` is used to italicize text by setting the value to `italic`. `font-weight` supports different bold settings, with `bold` being the most common. And finally, `text-decoration` is used to `underline`, `overline`, or `line-through` text.
 
-| CSS                           | Result      |
-| ----------------------------- | ----------- |
-| `font-weight: bold;`          | **Demo**    |
-| `font-style: italic;`         | *Demo*      |
+| CSS                              | Result   |
+| -------------------------------- | -------- |
+| `font-weight: bold;`             | **Demo** |
+| `font-style: italic;`            | *Demo*   |
 | `text-decoration: line-through;` | ~~Demo~~ |
 
 `text-decoration` can feel different from the other options used to modify a font's display. The key difference is that `text-decoration` is used to apply style around or on the text but doesn't modify the actual font itself. Bold and italics are modifying the font.
@@ -30,7 +30,7 @@ You can also use other options, such as the style, weight, and decoration. `font
 > [!NOTE]
 > Using underline on a webpage should typically be avoided because the text can appear to be a hyperlink.
 
-## Sizing Fonts
+## Sizing fonts
 
 The `font-size` allows you to indicate the font size you wish to use. CSS offers the ability to use absolute or relative sizing. Absolute sizing is typically set in pixels and always use the specified size. Relative sizing can be based on the default size for the browser and measured in percent or based on the sizing of the reference element.
 
