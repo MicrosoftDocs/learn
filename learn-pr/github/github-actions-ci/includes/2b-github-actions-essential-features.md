@@ -148,7 +148,7 @@ For more information see [Default environment variables](https://docs.github.com
 
 ## Pass custom environment variables to a workflow
 
-You can pass customer environment variables from one step of a workflow job to subsequent steps within the job. Simply generate a value in one step of a job, and assign the value to an existing or new environment variable.  Next, you write the variable/value pair to the GITHUB_ENV environment file. The environment file can then be used directly by an action, or from a shell command in the workflow job by using the run keyword. 
+You can pass customer environment variables from one step of a workflow job to subsequent steps within the job. Simply generate a value in one step of a job, and assign the value to an existing or new environment variable.  Next, you write the variable/value pair to the GITHUB_ENV environment file. The environment file can then be used directly by an action, or from a shell command in the workflow job by using the `run` keyword. 
 
 The step that creates or updates the environment variable does not have access to the new value, but all subsequent steps in a job will have access.
 
@@ -166,8 +166,6 @@ steps:
       printf '%s\n' "$action_state" # This will output 'yellow'
 ```
 
-Note that you can't overwrite the value of the default environment variables named GITHUB_* and RUNNER_*. Currently you can overwrite the value of the CI variable. However, it's not guaranteed that this will always be possible. For more information about the default environment variables, see
-
 <!-- INFOMAGNUS UPDATES for sub OD 1.6.5 go here. Source Material: Infomagnus team to find source material and cite sources when they update material  https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/using-environments-for-deployment#about-environments , https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-deployments/managing-environments-for-deployment  -->
 
 ## Add environment protections
@@ -178,11 +176,11 @@ To add an environment, in your repository click on **Settings** and then **Envir
 
 ### About environments
 
-Environments are used to describe a general deployment target like production, staging, or development. When a GitHub Actions workflow deploys to an environment, the environment is displayed on the main page of the repository. You can use environments to require approval for a job to proceed, restrict which branches can trigger a workflow, gate deployments with custom deployment protection rules, or limit access to secrets. For more information about creating environments, see Managing environments for deployment.
+Environments are used to describe a general deployment target like production, staging, or development. When a GitHub Actions workflow deploys to an environment, the environment is displayed on the main page of the repository. You can use environments to require approval for a job to proceed, restrict which branches can trigger a workflow, gate deployments with custom deployment protection rules, or limit access to secrets.
 
-Each job in a workflow can reference a single environment. Any protection rules configured for the environment must pass before a job referencing the environment is sent to a runner. The job can access the environment's secrets only after the job is sent to a runner.
+Each job in a workflow can reference a single environment. Any protection rules configured for the environment must pass before a job referencing the environment is sent to a runner. Note that the job can access the environment's secrets only after the job is sent to a runner.
 
-When a workflow references an environment, the environment will appear in the repository's deployments. For more information about viewing current and previous deployments, see Viewing deployment history.
+When a workflow references an environment, the environment will appear in the repository's deployments. 
 
 ### Environment protection rules
 
@@ -208,7 +206,7 @@ Environment deployment protection rules require specific conditions to pass befo
 
 4. Custom deployment protection rules: You can enable your own custom protection rules to gate deployments with third-party services. For example, you can use services such as Datadog, Honeycomb, and ServiceNow to provide automated approvals for deployments to GitHub. For more information, see Creating custom deployment protection rules.
 
-    Once custom deployment protection rules have been created and installed on a repository, you can enable the custom deployment protection rule for any environment in the repository. For more information about configuring and enabling custom deployment protection rules, see Configuring custom deployment protection rules.
+    Once custom deployment protection rules have been created and installed on a repository, you can enable the custom deployment protection rule for any environment in the repository. For more information about configuring and enabling custom deployment protection rules.
 
 > **Note**
 > If you are on a GitHub Free, GitHub Pro, or GitHub Team plan, the enviroment deployment projection rules below are only available for public repositories; with the exception of branch & tag protection rules.  For users of GitHub Pro or GitHub Team plans, branch and tag protection rules are also available for private repositories.
