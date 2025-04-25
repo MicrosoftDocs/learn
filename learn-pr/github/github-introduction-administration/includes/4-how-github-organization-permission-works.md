@@ -10,12 +10,12 @@ In the previous unit, you explored the different ways that users can authenticat
 You can customize access to a given repository by assigning permissions. There are five repository-level permissions:
 
 - **Read**: Recommended for non-code contributors who want to view or discuss your project. This level is good for anyone that needs to view the content within the repository but doesn't need to actually make contributions or changes.
-- **Triage**: Recommended for contributors who need to proactively manage issues and pull requests without write access. This level could be good for some project managers who manage tracking issues but don't make any changes.
+- **Triage**: Recommended for contributors who need to proactively manage issues and pull requests without write access. This level is useful for project managers who track issues and discussions without modifying code.
 - **Write**: Recommended for contributors who actively push to your project. Write is the standard permission for most developers.
 - **Maintain**: Recommended for project managers who need to manage the repository without access to sensitive or destructive actions.
 - **Admin**: Recommended for people who need full access to the project, including sensitive and destructive actions like managing security or deleting a repository. These people are repository owners and administrators.
 
-You can give organization members, outside collaborators, and teams different levels of access to repositories owned by an organization. Each permission level progressively increases access to a repository's content and settings. Choose the level that best fits each person or team's role in your project without giving more access to the project than necessary.
+You can give organization members, outside collaborators, and teams different levels of access to repositories owned by an organization. Each permission level grants progressively more access to repository content and settings. Choose the level that best fits each person or team's role in your project without giving more access to the project than necessary.
 
 After you create a repository with the correct permissions, you can make it a template so that anyone who has access to the repository can generate a new repository that has the same directory structure and files as your default branch. To make a template:
 
