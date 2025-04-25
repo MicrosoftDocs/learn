@@ -21,7 +21,7 @@ h1 {
 
 All HTML elements enable you to add a `class` attribute. `class` is used to group elements together and enable you to mark them for applying CSS settings.
 
-When creating a resume, you'll likely have sections for your education and employment history. Using a class would allow you to format those elements with the same style.
+When creating a resume, you have sections for your education and employment history. Using a class would allow you to format those elements with the same style.
 
 ```html
 <div class="history">
@@ -49,12 +49,12 @@ To identify a class in CSS, you prefix a `.` in front of the name. In our exampl
 
 If using a CSS file, you would write the class style definition in the CSS file. The class attribute in HTML references the definition from the CSS file.
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=d6df02cb-e0bd-4e52-b75b-7c519d84c9e4]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE5amMK]
 ### Pseudo-classes
 
 Pseudo-classes enable you to identify elements based on their location on a page or how the user is interacting with them.
 
-As a user interacts with a web page, the state of various elements will change. A user could be hovering their mouse over an item, and you want the color to change when they hover. Or the user may have clicked a link. After they've visited that link, you may want to let them know by changing the style. CSS supports many *pseudo-classes*, which are applied dynamically based on what the user does or has done. Pseudo-classes are prefixed by a `:`, and are placed after another selector.
+As a user interacts with a web page, the state of various elements change. A user could be hovering their mouse over an item, and you want the color to change when they hover. Or if the user selected a link. After they visit that link, you can want to let them know by changing the style. CSS supports many *pseudo-classes*, which are applied dynamically based on what the user does or has done. Pseudo-classes are prefixed by a `:`, and are placed after another selector.
 
 For example, to set the background color of a link to yellow when a user hovers their cursor over it, you could use the following CSS:
 
@@ -69,7 +69,7 @@ Some of the most common pseudo-classes are listed in the following table:
 | Pseudo-class  | Description                                          |
 | ------------- | ---------------------------------------------------- |
 | `hover`       | User is hovering their cursor over an item           |
-| `visited`     | A link that has been previously clicked              |
+| `visited`     | A link that was previously clicked              |
 | `link`        | An unvisited link                                    |
 | `first-child` | The first child matching the selector in a hierarchy |
 | `last-child`  | The last child matching the selector in a hierarchy  |
