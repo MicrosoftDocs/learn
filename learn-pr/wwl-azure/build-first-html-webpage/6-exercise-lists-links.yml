@@ -4,7 +4,7 @@ title: Exercise - Lists and links
 metadata:
   title: Exercise - Lists and links
   description: "Add information to your resume using lists and links."
-  ms.date: 05/08/2024
+  ms.date: 04/25/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 6
 content: |
-  [!include[](includes/7-exercise-lists-links.md)]
+  [!include[](includes/6-exercise-lists-links.md)]
