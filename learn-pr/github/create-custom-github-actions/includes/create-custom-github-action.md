@@ -2,7 +2,7 @@ GitHub Actions is a powerful feature that helps you to go from code to cloud, al
 
 ## Types of GitHub actions
 
-![alt text](../media/action-types.png) 
+:::image type="content" source="../media/action-types.png" alt-text="Diagram that displays the three types of GitHub Actions; Docker, JavaScript, and composite run steps actions." border="false":::
 
 Actions are individual tasks that you can use to customize your development workflows. You can create your own actions by writing custom code that interacts with your repository to perform custom tasks, or by using actions the GitHub community shares. Navigating through various actions, you'll notice that there are three different types of actions: _Docker container actions_, _JavaScript actions_, and _composite run steps actions_. Let's take a closer look at each action type.
 
@@ -137,7 +137,8 @@ jobs:
 | **Test Before Publishing** | Validate the composite action in a test repository.                           |
 
 ## Composite Action in a Workflow
-![alt text](../media/composite-action-workflow.png)
+
+Composite actions are a powerful way to simplify workflows by bundling multiple steps into a reusable unit. These actions allow you to define a sequence of commands or actions in a single `action.yml` file, making it easier to maintain and reuse logic across workflows. 
 
 ## Benefits of Composite Actions:
 - **Reusability** - Define actions once and use them in multiple workflows.  
@@ -232,10 +233,8 @@ async function run() {
 
 run();
 ```
-**Explanation:**
-Uses core.getInput() to get the CLI version input.
-Runs a curl command to download and install the CLI.
-Uses core.setFailed() to fail the workflow if the installation fails.
+**Explanation:**  
+The JavaScript action uses `core.getInput()` to retrieve the CLI version specified as input. It then executes a `curl` command to download and install the CLI. If the installation process fails, the action uses `core.setFailed()` to mark the workflow as failed.
 
 ### Step 4: Test the Action Locally
 Before using the action in a workflow, test it on a GitHub-hosted runner.   
@@ -338,18 +337,19 @@ ACTIONS_RUNNER_DEBUG=true
 
 ### How to Set Secrets for Debugging
 1. Go to your GitHub repository.
-2. Navigate to Settings > Secrets and variables > Actions.
-3.Add new secrets named:
-  . ACTIONS_STEP_DEBUG → true
-  . ACTIONS_RUNNER_DEBUG → true
+2. Navigate to **Settings** > **Secrets and variables** > **Actions**.
+3. Add new secrets with the following names and values:
+   - **ACTIONS_STEP_DEBUG**: `true`
+   - **ACTIONS_RUNNER_DEBUG**: `true`
+
 
 ### Inspect Workflow Logs
 When a workflow fails, click on the failed job in the Actions tab. Expand each step to:
 
-. View detailed logs
-. Check standard output (stdout)
-. See the exit code of scripts
-. Identify unhandled exceptions
+- View detailed logs
+- Check standard output (stdout)
+- See the exit code of scripts
+- Identify unhandled exceptions
 
 🔍 Example Log Output
 ```plaintext
@@ -378,11 +378,6 @@ try {
 }
 ```
 🔁 This ensures GitHub stops the workflow on error and provides readable logs.
-
-### Failure and Troubleshoot workflow
-
-![alt text](../media/github-workflow-failure-debug-flow.png)
-
 
 ### Best Practices for Debugging JavaScript Actions
 | **Practice**            | **Description**                                                              |
