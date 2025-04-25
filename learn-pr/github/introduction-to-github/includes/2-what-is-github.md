@@ -84,6 +84,31 @@ Let’s tackle creating a repository from github.com.
 
 1. Select **Create repository** and congratulations! You just created a repository!
 
+### How to clone a repository
+
+Cloning a repository allows you to create a local copy of a repository on your computer. This is useful for making changes locally and syncing them back to the remote repository.
+
+1. On GitHub.com, navigate to the main page of the repository you want to clone.
+1. Above the list of files, click the **Code** button.
+
+    :::image type="content" source="../media/2-selecting-code-button.png" alt-text="Screenshot of the Code button dropdown menu with clone options." border="false":::
+
+1. Copy the URL for the repository using the HTTPS, SSH, or GitHub CLI option.
+1. Open your terminal and navigate to the directory where you want to clone the repository.
+1. Run the following command, replacing `<repository-url>` with the URL you copied:
+
+    ```bash
+    git clone <repository-url>
+    ```
+
+1. Once the cloning process is complete, navigate into the repository folder:
+
+    ```bash
+    cd <repository-name>
+    ```
+
+Congratulations! You now have a local copy of the repository.
+
 Next up, let’s review how to add files to your repository.
 
 ### How to add a file to your repository
