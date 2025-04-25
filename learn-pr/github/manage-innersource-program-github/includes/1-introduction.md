@@ -2,6 +2,10 @@ Not long ago, the software-development world offered two sharply distinct models
 
 Suppose you're a leader at a company that made significant investments in its proprietary software. It doesn't need to be a technology company; businesses of all shapes and sizes build and maintain their own software and other IP to enjoy a competitive edge in their industry. However, you developed a great respect for the patterns used in open source, such as source-code visibility, project bug awareness, and feature request transparency. You also like the pull-request model that simplifies the integration of external contributions. You'd really like to bring those benefits to your development teams, but don't want to open source the company's valuable software. What you really need is a hybrid that delivers the advantages of both approaches. What you need is InnerSource.
 
+Suppose you're a leader at a company that made significant investments in its proprietary software. It doesn't need to be a technology company—businesses of all shapes and sizes build and maintain their own software and IP to enjoy a competitive edge in their industry.
+
+However, you developed a great respect for the patterns used in open source, such as source-code visibility, project bug awareness, and feature request transparency. You also like the pull-request model that simplifies the integration of external contributions. You'd really like to bring those benefits to your development teams, but don't want to open source the company's valuable software. What you really need is a hybrid that delivers the advantages of both approaches. What you need is InnerSource.
+
 In this module, learn how to manage a successful InnerSource program on GitHub through effective discoverability, guidance, and maintenance.
 
 ## Learning objectives
