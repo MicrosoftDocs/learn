@@ -20,7 +20,7 @@ Role-based access control also applies. Users must be assigned appropriate Defen
 
 ### Step 1: Open the incidents queue
 
-1. Go to the [Microsoft Defender portal](https://security.microsoft.com).
+1. Go to the [Microsoft Defender portal](https://security.microsoft.com?azure-portal=true).
 1. In the left navigation pane, select **Incidents & alerts** > **Incidents**.
 1. Use the **Service/detection source** filter to select **Data Loss Prevention**.
 
@@ -109,7 +109,7 @@ If your organization uses Microsoft Sentinel, you can integrate DLP alerts from 
 
 To get started:
 
-1. Use the [Microsoft Defender XDR connector](https://learn.microsoft.com/azure/sentinel/connect-microsoft-365-defender) in Microsoft Sentinel to import DLP alerts and incidents.
+1. Use the [Microsoft Defender XDR connector](/azure/sentinel/connect-microsoft-365-defender?azure-portal=true) in Microsoft Sentinel to import DLP alerts and incidents.
 1. Enable the **CloudAppEvents** connector to ingest audit logs.
 1. Use KQL queries in Microsoft Sentinel to correlate alerts and investigate root causes.
 

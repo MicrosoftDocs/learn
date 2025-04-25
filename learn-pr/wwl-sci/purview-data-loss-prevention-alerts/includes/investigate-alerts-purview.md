@@ -21,7 +21,7 @@ The dashboard displays alerts from DLP policies configured across:
 
 ## Review and investigate alerts
 
-To begin an investigation, go to the [Microsoft Purview portal](https://purview.microsoft.com/) and go to **Data loss prevention** > **Alerts**. The dashboard shows all recent DLP alerts. You can filter and customize the view to focus on what matters most.
+To begin an investigation, go to the [Microsoft Purview portal](https://purview.microsoft.com/?azure-portal=true) and go to **Data loss prevention** > **Alerts**. The dashboard shows all recent DLP alerts. You can filter and customize the view to focus on what matters most.
 
 ### Step 1: Filter and find relevant alerts
 

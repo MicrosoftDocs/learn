@@ -31,7 +31,7 @@ You can use tags, comments, and filters to manage the incident queue. To focus o
 
 If your organization shares Insider Risk Management signals with Defender, you can also see the user's insider risk severity level next to their DLP alerts. This helps prioritize which alerts might require immediate action.
 
-Microsoft Security Copilot is also available in some tenants and can help analyze alert context and suggest next steps. This feature is embedded in the [DLP Alerts dashboard](/purview/dlp-alerts-dashboard-get-started#investigate-a-dlp-alert) and in [Data Security Posture Management (preview)](/purview/data-security-posture-management-copilot#use-microsoft-security-copilot-with-data-security-posture-management-preview).
+Microsoft Security Copilot is also available in some tenants and can help analyze alert context and suggest next steps. This feature is embedded in the [DLP Alerts dashboard](/purview/dlp-alerts-dashboard-get-started?azure-portal=true#investigate-a-dlp-alert) and in [Data Security Posture Management (preview)](/purview/data-security-posture-management-copilot?azure-portal=true#use-microsoft-security-copilot-with-data-security-posture-management-preview).
 
 ## Investigate
 

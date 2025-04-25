@@ -11,8 +11,8 @@ Without a structured investigation and response process, small issues could be m
 
 ## Resources
 
-- [Learn about investigating data loss prevention alerts](/purview/dlp-alert-investigation-learn)
-- [Get started with the data loss prevention Alerts dashboard](/purview/dlp-alerts-dashboard-get-started)
-- [Get started with the data loss prevention alerts](/purview/dlp-alerts-get-started)
-- [Investigate data loss prevention alerts with Microsoft Defender XDR](/defender-xdr/dlp-investigate-alerts-defender)
-- [Investigate data loss prevention alerts with Microsoft Sentinel](/defender-xdr/dlp-investigate-alerts-sentinel)
+- [Learn about investigating data loss prevention alerts](/purview/dlp-alert-investigation-learn?azure-portal=true)
+- [Get started with the data loss prevention Alerts dashboard](/purview/dlp-alerts-dashboard-get-started?azure-portal=true)
+- [Get started with the data loss prevention alerts](/purview/dlp-alerts-get-started?azure-portal=true)
+- [Investigate data loss prevention alerts with Microsoft Defender XDR](/defender-xdr/dlp-investigate-alerts-defender?azure-portal=true)
+- [Investigate data loss prevention alerts with Microsoft Sentinel](/defender-xdr/dlp-investigate-alerts-sentinel?azure-portal=true)
