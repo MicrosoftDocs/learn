@@ -38,14 +38,14 @@ Windows 10 or Windows 11 Enterprise multi-session VMs are treated as a separate 
 
 ## Create the configuration profile
 
-To configure configuration policies for Windows 10 or Windows 11 Enterprise multi-session VMs, you'll need to use the [Settings catalog](https://github.com/MicrosoftDocs/memdocs/blob/main/memdocs/intune/configuration/settings-catalog.md) in the Microsoft Endpoint Manager admin center.
+To configure configuration policies for Windows 10 or Windows 11 Enterprise multi-session VMs, you'll need to use the [Settings catalog](https://github.com/MicrosoftDocs/memdocs/blob/main/intune/intune-service/configuration/settings-catalog.md) in the Microsoft Endpoint Manager admin center.
 
 The existing device configuration profile templates aren't supported for Windows 10 or Windows 11 Enterprise multi-session VMs, except for the following templates:
 
- -  [Trusted certificate](https://github.com/MicrosoftDocs/memdocs/blob/main/memdocs/intune/protect/certificates-trusted-root.md#create-trusted-certificate-profiles) \- Device (machine) only
- -  [SCEP certificate](https://github.com/MicrosoftDocs/memdocs/blob/main/memdocs/intune/protect/certificates-profile-scep.md#create-a-scep-certificate-profile) \- Device (machine) only
- -  [PKCS certificate](https://github.com/MicrosoftDocs/memdocs/blob/main/memdocs/intune/protect/certificates-pfx-configure.md#create-a-pkcs-certificate-profile) \- Device (machine) only
- -  [VPN](https://github.com/MicrosoftDocs/memdocs/blob/main/memdocs/intune/configuration/vpn-settings-configure.md#create-the-profile) \- Device Tunnel only
+ -  [Trusted certificate](https://github.com/MicrosoftDocs/memdocs/blob/main/intune/intune-service/protect/certificates-trusted-root.md) \- Device (machine) only
+ -  [SCEP certificate](https://github.com/MicrosoftDocs/memdocs/blob/main/intune/intune-service/protect/certificates-profile-scep.md) \- Device (machine) only
+ -  [PKCS certificate](https://github.com/MicrosoftDocs/memdocs/blob/main/intune/intune-service/protect/certificates-pfx-configure.md) \- Device (machine) only
+ -  [VPN](https://github.com/MicrosoftDocs/memdocs/blob/main/intune/intune-service/configuration/vpn-settings-configure.md) \- Device Tunnel only
 
 Microsoft Intune won't deliver unsupported templates to multi-session devices, and those policies appear as *Not applicable* in reports.
 

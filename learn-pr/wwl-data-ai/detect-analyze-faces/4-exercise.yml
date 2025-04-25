@@ -4,7 +4,7 @@ title: Exercise - Detect faces in Vision Studio
 metadata:
   title: Exercise - Detect faces in Vision Studio
   description: "Exercise - Detect faces in Vision Studio"
-  ms.date: 09/13/2024
+  ms.date: 04/25/2025
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-exercise.md)]
+  [!include[](includes/4-exercise.md)]

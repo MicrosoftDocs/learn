@@ -6,10 +6,10 @@ metadata:
   description: "Data exploration tools in Azure Databricks"
   ms.date: 12/12/2024
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: jamesh
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/03-data-exploration-tools.md)]
+  [!include[](includes/03-data-exploration-tools.md)]
