@@ -45,17 +45,17 @@ Service-level agreements (SLAs) vary by service. Not all services and features a
 
 **When you break down your workload into parts, document all internal and external dependencies, and identify how problems with these dependencies might disrupt your flows.**
 
-Keeping track of dependent infrastructure, services, APIs, and functions developed by other teams or third parties helps you determine whether the workload can operate in absence of those dependencies. It also helps you understand cascading failures and improve downstream operations. Developers can implement resilient design patterns to handle potential failures when you use external services that might be susceptible to failures.
+Keeping track of dependent infrastructure, services, APIs, and functions that other teams or partners develop helps you determine whether the workload can run without them. It also helps you understand cascading failures and improve downstream operations. Developers can design resilient systems to handle potential failures when you use external services.
 
 *Contoso's challenge*
 
-- The Claim Submission and Approval flow has a dependency on a small reference dataset that is hosted and managed by a different department within Contoso Insurance.
+- The Claim Submission and Approval flow relies on a small reference dataset that's hosted and managed by a different department within Contoso Insurance.
 
-- The dataset is updated multiple times a day, during normal working hours.
-- The app is being designed to tolerate some staleness in the reference data, but the data must always be available to the app.
+- The dataset is updated multiple times a day during normal working hours.
+- The app is being designed to handle some outdated reference data, but the data must always be available to the app.
 
 *Applying the approach and outcomes*
 
-- The workload team engages the team supporting the reference dataset and learns that the reliability target for the dataset is lower than that of flow that will use it.
+- The workload team talks to the team that supports the reference dataset. They learn that the reliability target for the dataset is lower than the flow that will use it.
 
-- The team adds design tasks to the backlog to add a local cache of the dataset and a background job to update the cache nightly. The staleness tolerance allowed by the design won't be breached by this solution.
+- The team adds design tasks to the backlog to create a local cache of the dataset and a background job to update the cache nightly. This solution ensures the data doesn't become too outdated.
