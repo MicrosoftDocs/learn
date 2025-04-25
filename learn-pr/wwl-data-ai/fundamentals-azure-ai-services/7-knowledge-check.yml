@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 10/03/2024
+  ms.date: 04/25/2025
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit
@@ -45,4 +45,4 @@ quiz:
       explanation: "Incorrect. The Azure AI Face resource is one of many Azure AI services."
     - content: "A single-service resource for Azure AI Search"
       isCorrect: false
-      explanation: "Incorrect. Azure AI Search is the single-service resource for Azure AI Search."
+      explanation: "Incorrect. Azure AI Search is the single-service resource for Azure AI Search."

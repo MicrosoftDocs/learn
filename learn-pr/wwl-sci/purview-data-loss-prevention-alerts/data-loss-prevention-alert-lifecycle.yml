@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-data-loss-prevention-alerts.data-loss-prevention-alert-lifecycle
+title: Understand the DLP alert lifecycle
+metadata:
+  title: Understand the DLP alert lifecycle
+  description: "Understand the DLP alert lifecycle"
+  ms.date: 04/25/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/data-loss-prevention-alert-lifecycle.md)]
