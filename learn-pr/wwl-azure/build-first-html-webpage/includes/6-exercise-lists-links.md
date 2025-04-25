@@ -1,4 +1,4 @@
-In this exercise, you'll add the rest of the information to your resume. You'll include your email address, social media links, and list of experience. The exercise will use generic text, but you should feel free to customize the content to match your details.
+In this exercise, you add the rest of the information to your resume. You include your email address, social media links, and list of experience. The exercise uses generic text, but you should feel free to customize the content to match your details.
 
 ## Add Your Email Address and Social Media
 
@@ -14,7 +14,7 @@ Let's start by adding your email address and social media links to your resume.
 >1. When prompted to **Let site view files**, select **View Files**.
 >1. In the Explorer pane on the left, select the **index.html** file.
 >1. Press Ctrl + Shift + P on Windows or Linux or Cmd + Shift + P on Mac.
->1. In the box that appears at the top, type **codeswing: open swing** and press enter or return on your keyboard.
+>1. In the box that appears at the top, type `codeswing: open swing` and press enter or return on your keyboard.
 >1. When prompted, select the **resume** folder you selected earlier.
 
 2. Inside **index.html**, and below the comment that reads `<!-- email address -->`, add the following HTML to add a link to your email, replacing **your-email@example.com** with your email address:
@@ -34,7 +34,7 @@ Let's start by adding your email address and social media links to your resume.
     </ul>
     ```
 
-5. The page will update to display the list of social media accounts you add.
+5. The page updates to display the list of social media accounts you add.
 
 ## Adding Education and Experience
 
