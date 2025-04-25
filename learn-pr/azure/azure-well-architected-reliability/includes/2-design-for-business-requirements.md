@@ -1,4 +1,4 @@
-| :::image type="icon" source="../media/goal.svg"::: Gather business requirements with a focus on the intended utility of the workload. |
+| :::image type="icon" source="../media/goal.svg"::: Gather business requirements based on what the workload needs to do. |
 | :----------------------------------------------------------------------------------------------------------------------------------------- |
 
 Start by figuring out what your workload needs to do. Work together with business stakeholders and architects to set realistic and achievable business requirements based on your budget. These requirements should cover user experience, data, workflows, and any unique characteristics of your workload. Make sure everyone agrees on what's expected and document these requirements to guide your design and operations. Make sure that they properly address the reliability targets that the workload must meet.
@@ -29,7 +29,7 @@ Compliance requirements should have clear outcomes for important flows. Focus on
 
 ## Understand platform commitments
 
-**Understand the guaranteed reliability metrics provided by your cloud platform and consider the limits, quotas, and capacity constraints for services.**
+**Understand the reliability metrics that your cloud platform guarantees, and consider the limits, quotas, and capacity constraints for services.**
 
 Service-level agreements (SLAs) vary by service. Not all services and features are covered equally. Having a good understanding of coverage and limits can help you detect drift and build resiliency and recovery mechanisms.
 
