@@ -23,7 +23,7 @@ prerequisites: |
   - Basic understanding of Microsoft Purview Data Loss Prevention (DLP) policies
   - Familiarity with Microsoft Purview portal and Microsoft Defender portal
   - Awareness of how DLP policies are created and configured
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/respond-to-data-loss-prevention-alerts-in-microsoft-365.svg
 levels:
 - intermediate
 roles:
