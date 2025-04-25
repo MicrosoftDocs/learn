@@ -12,7 +12,7 @@ The resource being referenced is indicated by using an **attribute** called `hre
 <a href="some url">clickable text</a>
 ```
 
-Key-value pairs are used in forms. If you fill out a form, you may be asked for your first name and last name separately. The form will have a label **First name** and a blank space and another label **Last name** and a blank space. The labels are like *keys* in HTML attributes, and whatever you put in the blank space is the *value*. In HTML attributes, the key and the value are joined by an equal sign to show they belong together.
+Key-value pairs are used in forms. If you fill out a form, you may be asked for your first name and last name separately. The form has a label **First name** and a blank space and another label **Last name** and a blank space. The labels are like *keys* in HTML attributes, and whatever you put in the blank space is the *value*. In HTML attributes, the key and the value are joined by an equal sign to show they belong together.
 
 ### Resource Indicators
 
@@ -32,7 +32,7 @@ It's possible to link to an email address. This type of link will automatically 
 
 ### Accessibility and Links
 
-If you put a link in the HTML page you're creating, you'll notice that the text between (not inside) the opening and closing tag turns blue. You'll also notice that the address is hidden. Finally, you'll notice that the word is now selectable. That is, you select the word to be taken to the resource.
+If you put a link in the HTML page you're creating, you notice that the text between (not inside) the opening and closing tag turns blue. You'll also notice that the address is hidden. Finally, you notice that the word is now selectable. That is, you select the word to be taken to the resource.
 
 The text that is displayed as the link is known as link text. Using good link text is a key to ensuring your page is accessible to all users. Phrases like "click here" are disruptive to screen readers and other non-browser tools used to navigate the web. As a best practice, always use link text that briefly describes the resource being referenced. You can learn more about ensuring accessibility by exploring the Accessibility Learn module.
 
@@ -41,7 +41,7 @@ The text that is displayed as the link is known as link text. Using good link te
 The `img` tag is used to display images on a page. Unlike most other elements, `img` has no closing tag. The `src` attribute is used to point to the location of the image to display on the page, and the `alt` describes the contents of the image for things like search engines and screen readers.
 
 > [!IMPORTANT]
-> While the `height` and `width` attributes can be used to specify the display height and width of the image, they do not resize the image file itself. The best practice is to make the image file the dimensions you will use on the page.
+> While the `height` and `width` attributes can be used to specify the display height and width of the image, they do not resize the image file itself. The best practice is to make the image file the dimensions you use on the page.
 
 ```html
 <img src="headshot.png" alt="Picture of an employee.">
@@ -49,7 +49,7 @@ The `img` tag is used to display images on a page. Unlike most other elements, `
 
 ## Creating Lists
 
-You will quite frequently need to display a list of information on a page. When building your resume, you will want to list prior roles or qualifications. HTML provides two different types of lists, ordered and unordered.
+You will frequently need to display a list of information on a page. When building your resume, you want to list prior roles or qualifications. HTML provides two different types of lists, ordered and unordered.
 
 To create a list, you will first decide the type of list you wish to create. An ordered list is ordered with numbers (the default) or letters and uses `ol` for **ordered list**. An unordered list uses bullet points and is identified with `ul` for **unordered list**. The items are indicated with `li` for **list item**.
 
