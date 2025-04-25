@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.purview-data-loss-prevention-alerts
 metadata:
-  title: Investigate and respond to Microsoft Purview DLP alerts
-  description: Investigate and respond to Microsoft Purview DLP alerts.
+  title: Investigate and respond to Microsoft Purview Data Loss Prevention alerts
+  description: Investigate and respond to Microsoft Purview Data Loss Prevention alerts.
   ms.date: 04/25/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
   ai-usage: ai-assisted
   ms.service: purview
-title: Investigate and respond to Microsoft Purview DLP alerts
+title: Investigate and respond to Microsoft Purview Data Loss Prevention alerts
 summary: |
   Microsoft Purview and Microsoft Defender XDR help organizations detect potential data loss risks and respond quickly to protect sensitive information. Investigation and response activities include reviewing DLP alerts, applying appropriate remediation actions, and documenting findings in a structured and consistent way.
 abstract: |
