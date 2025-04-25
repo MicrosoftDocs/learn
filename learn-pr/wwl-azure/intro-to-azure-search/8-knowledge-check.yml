@@ -6,7 +6,7 @@ metadata:
   description: Test your knowledge by answering questions about skills you learned in this module.
   author: wwlpublish
   ms.author: sheryang
-  ms.date: 07/25/2024
+  ms.date: 04/25/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -49,4 +49,4 @@ quiz:
     - content: "The AI-generated image captions."
       isCorrect: false
       explanation: "Incorrect. Creating captions for images requires a skillset that includes the Image Analysis skill."
-
+
