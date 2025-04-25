@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl-azure.basic-sql-where-clause-and-subqueries
 metadata:
-  title: basic-sql-where-clause-and-subqueries
+  title: Filtering data:The WHERE clause and subqueries
   description: "basic-sql-where-clause-and-subqueries description" # Describe the module in 120 to 165 characters. Include relevant search keywords.
   ms.date: 4/24/2025
   author: mpopovic
@@ -22,7 +22,7 @@ metadata:
 ### To request new values, go to
 ### `https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main`.
   ms.service: azure-database-postgresql
-title: basic-sql-where-clause-and-subqueries
+title: Filtering data:The WHERE clause and subqueries
 ###########################################################################
 ###
 ### Introductory summary
@@ -53,7 +53,7 @@ title: basic-sql-where-clause-and-subqueries
 ###
 ### Detailed guidance: `https://review.learn.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main`
 ###
-summary: "This module introduces the WHERE clause and subqueries in SQL. You'll learn how to filter data, combine conditions and use functions like EXTRACT, NOW(), and CAST."
+summary: "This module introduces the WHERE clause and subqueries in SQL. You'll learn how to filter data, combine conditions and use functions like EXTRACT, NOW() and CAST."
 ###########################################################################
 ###
 ### Learning objectives
