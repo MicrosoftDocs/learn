@@ -26,6 +26,29 @@ After you create a repository with the correct permissions, you can make it a te
 
 1. Select **Template repository**.
 
+## Viewing Repository Insights
+
+GitHub provides repository insights to help you monitor and understand the activity, contributions, and dependencies of your repository. These insights are useful for tracking project health, identifying bottlenecks, and ensuring security.
+
+### Steps to View Repository Insights
+
+1. Navigate to the repository on GitHub.
+2. Under the repository name, click on the **Insights** tab.
+3. Explore the following sections within the Insights tab:
+   - **Contributors**: View a graph of contributions over time, including commits, additions, and deletions by each contributor.
+   - **Traffic**: Monitor repository traffic, including unique visitors and page views.
+   - **Commits**: Analyze commit activity over time.
+   - **Code Frequency**: Track the number of lines added and deleted over time.
+   - **Dependency Graph**: View the dependencies of your repository and identify potential security vulnerabilities.
+
+### Best Practices for Using Repository Insights
+
+- **Monitor Contributions**: Use the Contributors section to identify active contributors and areas of the repository that are receiving the most attention.
+- **Track Traffic**: Use the Traffic section to understand how users are interacting with your repository and identify trends in engagement.
+- **Address Vulnerabilities**: Regularly review the Dependency Graph to ensure your repository remains secure.
+
+By leveraging repository insights, you can make data-driven decisions to improve collaboration, security, and project management.
+
 ## Ways Users Receive Repository Access
 
 ### Actions of a User Given a List of Their Repository Permissions
