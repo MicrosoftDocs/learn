@@ -188,7 +188,7 @@ Environment deployment protection rules require specific conditions to pass befo
 
     For more information on reviewing jobs that reference an environment with required reviewers, see Reviewing deployments.
 
-2. Wait timer projection rules: You can use a wait timer protection rule to delay a job for a specific amount of time after the job is initially triggered before the environment deployment is allowed to proceed. The time (in minutes) must be an integer between 1 and 43,200 (30 days). Wait time will not count towards your billable time.
+2. Wait timer projection rules: You can use a wait timer protection rule to delay a job for a specific amount of time after the job is initially triggered before the environment deployment is allowed to proceed. The time (in minutes) must be an integer between 1 and 43,200 (30 days).The wait time will not count towards your billable time.
 
 3. Branch and tag protection rules: You can use deployment branch and tag protection rules to restrict which branches and tags are utilized to deploy to the environment. You have several options for deployment branch and tag protection rules for an environment.
 
@@ -196,12 +196,12 @@ Environment deployment protection rules require specific conditions to pass befo
 
     If you specify `releases/*` as a deployment branch or tag rule, only a branch or tag whose name begins with `releases/` can deploy to the environment. (Wildcard characters will not match `/`. To match branches or tags that begin with `release/` and contain an additional single slash, use `release/*/*`.) If you add `main` as a branch rule, a branch named `main` can also deploy to the environment. For more information about syntax options for deployment branches
 
-4. Custom deployment protection rules: You can enable your own custom protection rules to gate deployments with third-party services. For example, you can use services such as Datadog, Honeycomb, and ServiceNow to provide automated approvals for deployments to GitHub. For more information, see Creating custom deployment protection rules.
+4. Custom deployment protection rules: You can enable your own custom protection rules to gate deployments with third-party services. For instance, you can use observability systems, change management systems, code quality systems, or other manual configurations that you use to assess readiness and provide automated approvals for deployments to GitHub. 
 
-    Once custom deployment protection rules have been created and installed on a repository, you can enable the custom deployment protection rule for any environment in the repository. For more information about configuring and enabling custom deployment protection rules.
+    Once custom deployment protection rules have been created and installed on a repository, you can enable the custom deployment protection rule for any environment in the repository.
 
 > **Note**
-> If you are on a GitHub Free, GitHub Pro, or GitHub Team plan, the enviroment deployment projection rules below are only available for public repositories; with the exception of branch & tag protection rules.  For users of GitHub Pro or GitHub Team plans, branch and tag protection rules are also available for private repositories.
+> If you are on a GitHub Free, GitHub Pro, or GitHub Team plan, the enviroment deployment projection rules are only available for public repositories; with the exception of branch & tag protection rules.  For users of GitHub Pro or GitHub Team plans, branch and tag protection rules are also available for private repositories.
 >
 <!-- INFOMAGNUS END -->
 
