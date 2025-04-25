@@ -6,32 +6,36 @@ Your goal is to set up a Linux virtual machine (VM) and create an activity log m
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you used to activate the sandbox.
 
+1. Select your user icon in the top right corner, then go to **Switch directory** and **Switch** to **Microsoft Learn Sandbox**.
+
 1. On the Azure portal resource menu or under **Azure services**, select **Monitor**. The **Overview** pane for Monitor appears.
 
 1. In the Monitor menu, select **Alerts**. The **Monitor | Alerts** pane appears.
 
-1. On the command bar, select **Create +** and select **Alert rule**. The **Create an alert rule** pane appears with the **Scope** section open and the **Select a resource** pane open on the right-hand side of your screen.
+1. On the command bar, select **+ Create** and select **Alert rule**. The **Create an alert rule** pane appears in the background with the **Scope** section open, and the **Select a resource** overlay pane open on the right-hand side of your screen.
 
-1. In the **Resource type** dropdown list, search for and select **Virtual machines**.
+1. In the **Resource types** dropdown list, search for and select **Virtual machines**.
 
 1. You want an alert when any virtual machine in your resource group is deleted. Select the box for the **<rgn>[sandbox resource group name]</rgn>** resource group, then select **Apply**.
 
    :::image type="content" source="../media/7-alert-select-resource.png" alt-text="Screenshot that shows the Select a scope pane with the sandbox resource group selected.":::
 
-1. The **Create an alert rule** pane reappears with the Scope target resource showing **All Virtual machines**. Select the **Condition** tab. The **Select a signal** pane appears.
+1. Back on the **Create an alert rule** pane, the Scope target resource now shows **All Virtual machines**. Select the **Condition** tab.
 
-1. Select the **See all signals** link, then search for and select **Delete Virtual Machine (Virtual Machines)**. Select **Apply**
+1. Select the **See all signals** link, which opens the **Select a signal** overlay pane to the right-hand side of your screen. Search for and select **Delete Virtual Machine (Virtual Machines)**. Select **Apply**
 
-1. The **Create an alert rule** pane reappears. You want to receive alerts of all types, so leave **Alert logic** settings at their default of **All selected**. Leave the **Create an alert rule** pane open for the next section.
+1. You're back on the **Create an alert rule** pane. To receive alerts of all types, leave **Alert logic** settings at their default of **All selected**. Leave the **Create an alert rule** pane open for the next section.
 
 ## Add an email alert action
 
 For the previous Azure Monitor alert, you didn't add any actions. You just viewed triggered alerts in the Azure portal. Actions let you send an email for notifications, to trigger an Azure function, or to call a webhook. In this exercise, we're adding an email alert when VMs are deleted.
 
-1. On the **Create an alert rule** pane, select the **Next: Actions** button, and select **Use action groups**. 
+1. On the **Create an alert rule** pane, select the **Next: Actions** button.
 
-1. Select **Create action group** in the **Select action group** pane. The **Create an action group** pane appears.
+1. Close the **Use quick actions (preview)** overlay pane. Then, select **Use action group** on the **Actions** tab. The **Select action groups** overlay pane appears.
 
+1. Select **+ Create action group**.
+<!-- I'm here! -->
 1. On the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value |
