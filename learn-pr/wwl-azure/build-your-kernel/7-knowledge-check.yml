@@ -2,6 +2,7 @@
 uid: learn.wwl.build-your-kernel.knowledge-check
 title: Module assessment
 metadata:
+  hidden_question_numbers: ["935FE417_38","935FE417_59","935FE417_79","935FE417_87","935FE417_116","935FE417_140"]
   ai_generated_module_assessment: true
   title: Module assessment
   description: "Check your knowledge"
