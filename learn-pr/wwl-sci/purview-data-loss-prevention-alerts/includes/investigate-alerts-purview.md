@@ -93,7 +93,7 @@ Security Copilot is integrated into the DLP Alerts dashboard for organizations w
 
   :::image type="content" source="../media/data-loss-prevention-alert-security-copilot.png" alt-text="Screenshot showing the Security Copilot pane embedded in the data loss prevention alerts dashboard." lightbox="../media/data-loss-prevention-alert-security-copilot.png":::
 
-You can interact with Security Copilot directly in the DLP alert view. Use the options to copy or regenerate the summary, or open it in the standalone experience for additional context.
+You can interact with Security Copilot directly in the DLP alert view. Use the options to copy or regenerate the summary, or open it in the standalone experience for more context.
 
 ## Share alert events
 

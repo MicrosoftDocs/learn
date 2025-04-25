@@ -1,10 +1,10 @@
-When a single user downloads multiple files to an unmanaged device, that might be a policy violation. But what if they also shared sensitive documents externally or bypassed a policy warning earlier in the day? Viewing alerts one at a time can make it hard to see the bigger picture. Microsoft Defender XDR helps security teams by grouping DLP alerts into incidents, correlating them across sources, and surfacing suspicious patterns.
+Downloading multiple files to an unmanaged device might trigger a policy violation. But what if the same user also shared sensitive documents externally or bypassed a policy warning earlier that day? Viewing alerts one at a time can make it hard to spot these broader patterns. Microsoft Defender XDR helps security teams connect the dots by grouping related alerts into incidents and surfacing risky behavior across data sources.
 
-## Why use Microsoft Defender XDR to investigate DLP alerts?
+## Why use Microsoft Defender XDR to investigate data loss prevention alerts?
 
 Microsoft Defender XDR helps you move from isolated alerts to a broader view of incidents. Defender XDR:
 
-- Automatically correlates related DLP alerts into incidents
+- Automatically correlates related data loss prevention (DLP) alerts into incidents
 - Extends investigation capabilities across endpoints, email, cloud apps, and identities
 - Enables response actions like disabling accounts or revoking access
 
@@ -30,21 +30,21 @@ This view shows incidents that include one or more DLP alerts. Each incident can
 
 ## Step 2: Investigate a DLP alert
 
-When you open a DLP incident, select an individual alert to investigate. From the alert details view, you can:
+After an incident is identified in the queue, the next step is to examine the details of an individual alert. This helps you confirm what happened, determine whether the alert is valid, and decide what to do next.
 
-- Review the **Alert story** to understand what triggered the alert, including the matched policy and detected sensitive information types
-- Explore the **Related Events** section to examine user activity, such as downloads or shares
-- View the **Sensitive info types** tab to see what types of sensitive data were involved
-- If permissions allow, use the **Source** tab to review the file involved in the alert
+- Review the **Alert story** to understand what triggered the policy match.
+- Use the **Related events** section to explore user activity like downloads, shares, or overrides.
+- Open the **Sensitive info types** tab to see what types of sensitive content were detected.
+- If permissions allow, access the **Source tab** to inspect the file involved in the alert.
 
-If your tenant has access to Security Copilot (preview), select **Summarize** to generate an AI-based alert summary. This summary includes:
+You can copy the summary, regenerate it, or open the Security Copilot pane for deeper insights. The summary includes:
 
 - Alert title and severity
 - Matched policy and rule
 - File details and access path
 - User identity and associated activities
 
-You can copy or refresh the summary, or open it in the Security Copilot pane for additional context.
+You can copy or refresh the summary, or open it in the Security Copilot pane for more context.
 
 :::image type="content" source="../media/investigate-alert-defender.png" alt-text="Screenshot showing the Microsoft Defender XDR alert details page with attack story and Security Copilot pane." lightbox="../media/investigate-alert-defender.png":::
 
@@ -62,15 +62,23 @@ To respond at the user level, select the **User card** to view profile details a
 
 For device-based DLP alerts, select the **Device card** to view device details and isolate or manage the device.
 
-To complete incident handling, return to the incident summary page and select **Manage Incident** to:
+### Step 4: Manage the incident
 
-- Add tags
-- Assign ownership
-- Set the incident status
+To complete incident handling, return to the incident summary page and select **Manage incident**. You can:
+
+- Set the incident **Severity**
+- Add or create **Incident tags**
+- Assign the incident to an analyst or response team
+- Update the **Status** to reflect progress (for example: In Progress, Resolved)
+- Choose a **Classification**, such as True Positive or False Positive, and specify a reason (like Malicious user activity or Security testing)
+
+:::image type="content" source="../media/defender-manage-incident.png" alt-text="Screenshot showing the Manage incident flyout page in Microsoft Defender." lightbox="../media/defender-manage-incident.png":::
+
+These fields help organize and close out the investigation for future reference and auditing.
 
 ## Use advanced hunting for deeper investigation
 
-Advanced hunting lets you query user, file, and activity data across workloads using the **CloudAppEvents** table. This table includes logs from:
+Advanced hunting lets you query user, file, and activity data across workloads using the **CloudAppEvents** table. This table contains audit logs from across Microsoft 365 workloads, including:
 
 - Exchange
 - SharePoint
@@ -80,8 +88,8 @@ Advanced hunting lets you query user, file, and activity data across workloads u
 To start hunting:
 
 1. In the Defender portal, select **Advanced hunting**.
-2. Use a built-in query, or select **Go Hunt** from an event in the alert details.
-3. Defender provides contextual queries based on the event source, such as:
+1. Use a built-in query, or select **Go Hunt** from an event in the alert details.
+1. Defender provides contextual queries based on the event source, such as:
    - File shared with
    - File activities
    - Site activity
@@ -89,9 +97,11 @@ To start hunting:
 
 You can run, customize, or save the query to track related activity.
 
-## Extend your investigation with Microsoft Sentinel (optional)
+## Extend your investigation with Microsoft Sentinel
 
-If your organization uses Microsoft Sentinel, you can integrate DLP alerts from Defender XDR into Sentinel for:
+While Defender XDR offers deep alert-level investigation, Microsoft Sentinel adds cross-platform correlation and automation. Microsoft Sentinel can bring DLP insights into broader investigations and workflows alongside other Microsoft and non-Microsoft data sources.
+
+If your organization uses Microsoft Sentinel, you can integrate DLP alerts from Microsoft Defender XDR into Microsoft Sentinel for:
 
 - Cross-platform investigation
 - Custom correlation rules
@@ -100,15 +110,15 @@ If your organization uses Microsoft Sentinel, you can integrate DLP alerts from 
 To get started:
 
 1. Use the [Microsoft Defender XDR connector](https://learn.microsoft.com/azure/sentinel/connect-microsoft-365-defender) in Microsoft Sentinel to import DLP alerts and incidents.
-2. Enable the **CloudAppEvents** connector to ingest audit logs.
-3. Use KQL queries in Sentinel to correlate alerts and investigate root causes.
+1. Enable the **CloudAppEvents** connector to ingest audit logs.
+1. Use KQL queries in Microsoft Sentinel to correlate alerts and investigate root causes.
 
-### Example query
+Example query:
 
 ```kusto
 let Alert = SecurityAlert
 | where TimeGenerated > ago(30d)
-| where SystemAlertId == "INSERT_ALERT_ID";
+| where SystemAlertId == "INSERT_ALERT_ID"; // insert the systemAlertID here
 CloudAppEvents
 | extend correlationId1 = parse_json(tostring(RawEventData.Data)).cid
 | extend correlationId = tostring(correlationId1)
@@ -118,8 +128,6 @@ CloudAppEvents
 
 This query identifies activity related to a specific alert using the **CloudAppEvents** table.
 
-## Summary
-
 Microsoft Defender XDR helps security teams respond to data loss incidents by grouping alerts, enriching them with context, and enabling fast investigation. With integrated advanced hunting and response actions, DLP alert handling becomes part of a broader security operations workflow.
 
-For extended correlation and automation, DLP alerts can be imported into Microsoft Sentinel. Whether you investigate in Defender or Sentinel, both tools give you the visibility and control needed to reduce data risk.
+Whether you're managing alerts in Microsoft Defender or extending your investigation with Microsoft Sentinel, these tools help bring clarity to complex data loss events. With capabilities for alert correlation, activity analysis, and automated response, security teams can act faster and with greater confidence to reduce data risk.
