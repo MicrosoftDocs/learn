@@ -8,7 +8,7 @@ GitHub Mobile gives you a way to do high-impact work on GitHub quickly and from 
 
 With GitHub Mobile you can:
 
-- Manage, triage, and clear notifications from github.com.
+- Manage, triage, and clear notifications from github.com by marking them as read, muting threads, or filtering notifications by type.
 - Read, review, and collaborate on issues and pull requests.
 - Edit files in pull requests.
 - Search for, browse, and interact with users, repositories, and organizations.
