@@ -20,7 +20,7 @@ If you deployed this Bicep file, you'd see that three storage accounts were crea
 
 ## Loop based on a count
 
-You might sometimes need to loop to create a specific number of resources, and not use an array as the source. Bicep provides the `range()` function, which creates an array of numbers. For example, if you need to create four storage accounts called `sa1` through `sa4`, you could use a resource definition like this:
+You might sometimes need to loop to create a specific number of resources and not use an array as the source. Bicep provides the `range()` function, which creates an array of numbers. For example, if you need to create four storage accounts called `sa1` through `sa4`, you could use a resource definition like this:
 
 ::: code language="bicep" source="code/4-loop-range.bicep" highlight="1" :::
 
@@ -31,7 +31,7 @@ When you use the `range()` function, you specify its start value and the number 
 
 ## Access the iteration index
 
-With Bicep, you can iterate through arrays and retrieve the index of the current element in the array. For example, let's say you want to create a logical server in each location that's specified by an array, and you want the names of the servers to be `sqlserver-1`, `sqlserver-2`, and so on. You could achieve this by using the following Bicep code:
+With Bicep, you can iterate through arrays and retrieve the index of the current element in the array. For example, let's say you want to create a logical server in each location that's specified by an array, and you want the server names to be `sqlserver-1`, `sqlserver-2`, and so on. You could achieve this by using the following Bicep code:
 
 ::: code language="bicep" source="code/4-loop-index.bicep" highlight="7-8" :::
 
