@@ -1,4 +1,4 @@
-Imagine that you work for the motor-vehicle department of a governmental organization. The department runs several public websites that allow drivers to register their vehicles and renew their driver's licenses online.
+Imagine that you work for the motor-vehicle department of a government organization. The department runs several public websites that allow drivers to register their vehicles and renew their driver's licenses online.
 
 The vehicle-registration website has been running on a single server and has suffered multiple outages because of server failures. This results in frustrated drivers trying to register their vehicles by month's end before their registrations expire.
 
