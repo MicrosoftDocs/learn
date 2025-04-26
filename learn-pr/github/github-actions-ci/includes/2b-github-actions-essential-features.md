@@ -28,6 +28,53 @@ This example is using the `github.ref` context to check the branch that triggere
 
 <!-- INFOMAGNUS UPDATES for sub OD 1.4.2 go here. Source Material: https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs --> 
 
+## Identify the available contextual information in a workflow
+
+Different contexts are available throughout a workflow run. For example, the secrets context may only be used at certain places within a job.
+
+In addition, some functions may only be used in certain places. For example, the hashFiles function is not available everywhere.
+
+The following table lists the restrictions on where each context and special function can be used within a workflow. The listed contexts are only available for the given workflow key, and may not be used anywhere else. Unless listed below, a function can be used anywhere.
+
+|Worflow Key | Context | Special Functions|
+:--------------------|:----------|:------------------
+run-name  | github, inputs, vars |None |
+concurrency | github, inputs, vars | None|
+env  | github, secrets, inputs, vars | None |
+jobs.<job_id>.concurrency | github, needs, strategy, matrix, inputs, vars | None |
+jobs.<job_id>.container |	github, needs, strategy, matrix, vars, inputs |	None
+jobs.<job_id>.container.credentials |	github, needs, strategy, matrix, env, vars, secrets, inputs |	None
+jobs.<job_id>.container.env.<env_id> |	github, needs, strategy, matrix, job, runner, env, vars, secrets, inputs |	None
+jobs.<job_id>.container.image	|	github, needs, strategy, matrix, vars, inputs |	None
+jobs.<job_id>.continue-on-error	|	github, needs, strategy, vars, matrix, inputs	|	None
+jobs.<job_id>.defaults.run	|	github, needs, strategy, matrix, env, vars, inputs	|	None
+jobs.<job_id>.env	|	github, needs, strategy, matrix, vars, secrets, inputs	|	None
+jobs.<job_id>.environment	|	github, needs, strategy, matrix, vars, inputs	|	None
+jobs.<job_id>.environment.url	|	github, needs, strategy, matrix, job, runner, env, vars, steps, inputs	|	None
+jobs.<job_id>.if	|	github, needs, vars, inputs	|	always, cancelled, success, failure
+jobs.<job_id>.name	|	github, needs, strategy, matrix, vars, inputs	|	None
+jobs.<job_id>.outputs.<output_id>	|	github, needs, strategy, matrix, job, runner, env, vars, secrets, steps, inputs	|	None
+jobs.<job_id>.runs-on	|	github, needs, strategy, matrix, vars, inputs	|	None
+jobs.<job_id>.secrets.<secrets_id>	|	github, needs, strategy, matrix, secrets, inputs, vars	|	None
+jobs.<job_id>.services	|	github, needs, strategy, matrix, vars, inputs	|	None
+jobs.<job_id>.services.<service_id>.credentials	|	github, needs, strategy, matrix, env, vars, secrets, inputs	|	None
+jobs.<job_id>.services.<service_id>.env.<env_id>	|	github, needs, strategy, matrix, job, runner, env, vars, secrets, inputs	|	None
+jobs.<job_id>.steps.continue-on-error	|	github, needs, strategy, matrix, job, runner, env, vars, secrets, steps, inputs	|	hashFiles
+jobs.<job_id>.steps.env	|	github, needs, strategy, matrix, job, runner, env, vars, secrets, steps, inputs	|	hashFiles
+jobs.<job_id>.steps.if	|	github, needs, strategy, matrix, job, runner, env, vars, steps, inputs	|	always, cancelled, success, failure, hashFiles
+jobs.<job_id>.steps.name	|	github, needs, strategy, matrix, job, runner, env, vars, secrets, steps, inputs	|	hashFiles
+jobs.<job_id>.steps.run	|	github, needs, strategy, matrix, job, runner, env, vars, secrets, steps, inputs	|	hashFiles
+jobs.<job_id>.steps.timeout-minutes	|	github, needs, strategy, matrix, job, runner, env, vars, secrets, steps, inputs	|	hashFiles
+jobs.<job_id>.steps.with	|	github, needs, strategy, matrix, job, runner, env, vars, secrets, steps, inputs	|	hashFiles
+jobs.<job_id>.steps.working-directory	|	github, needs, strategy, matrix, job, runner, env, vars, secrets, steps, inputs	|	hashFiles
+jobs.<job_id>.strategy	|	github, needs, vars, inputs	|	None
+jobs.<job_id>.timeout-minutes	|	github, needs, strategy, matrix, vars, inputs	|	None
+jobs.<job_id>.with.<with_id>	|	github, needs, strategy, matrix, inputs, vars	|	Nonehttps://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+on.workflow_call.inputs.<inputs_id>.default	|	github, inputs, vars	|	None
+on.workflow_call.outputs.<output_id>.value	|	github, jobs, vars, inputs	|	None
+
+<!-- INFOMAGNUS 1.4.2 END
+
 ## Custom environment variables
 
 Similar to using default environment variables, you can use custom environment variables in your workflow file. To create a custom variable, you need to define it in your workflow file using the `env` context. If you want to use the value of an environment variable inside a runner, you can use the runner operating system's normal method for reading environment variables.
@@ -45,8 +92,118 @@ jobs:
           First_Name: Mona
 ```
 
-<!-- INFOMAGNUS UPDATES for sub OD 1.4.3, 1.4.6, and 1.4.7 go here. Source Material: Infomagnus team to find source material and cite sources when they update material  --> 
-<!-- INFOMAGNUS UPDATES for sub OD 1.6.5 go here. Source Material: Infomagnus team to find source material and cite sources when they update material  --> 
+<!-- INFOMAGNUS UPDATES for sub OD 1.4.3, 1.4.6, and 1.4.7 go here. Source Material: Infomagnus team to find source material and cite sources when they update material , https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables , https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/workflow-commands-for-github-actions#setting-an-environment-variable --> 
+## Identify where to set custom environment variables in a workflow
+
+You can define environment variables that are scoped the entire workflow utilizing `env` at the top level of the workflow file.  Scoping the contents of a job within a workflow using `jobs.<job_id>.env`.  As well you can scope an environment variable within at a specific step within a job utilizing `jobs.<job_id>.steps[*].env`.
+
+Below is an example displaying all three scenarios in a workflow file:
+
+```yml
+name: Greeting on variable day
+
+on:
+  workflow_dispatch
+
+env:
+  DAY_OF_WEEK: Monday
+
+jobs:
+  greeting_job:
+    runs-on: ubuntu-latest
+    env:
+      Greeting: Hello
+    steps:
+      - name: "Say Hello Mona it's Monday"
+        run: echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
+        env:
+          First_Name: Mona
+```
+
+
+## Use default context in a workflow
+
+Default environment variables are set by GitHub and not defined in a workflow.  They are thus available to use in a workflow in the appropriate context.  Most of these variables, other than `CI`, begin with `GITHUB_*` or `RUNNER_*`.  The latter two types cannot be overwritten.  As well, these default variables have a corresponding, and similarly named, context property. For instance, the `RUNNER_*` series of default variables have a matching context property of `runner.*`.  An example of accessing default variables in a workflow levaraging these methods can be viewed below:
+
+```yml
+on: workflow_dispatch
+
+jobs:
+  if-Windows-else:
+    runs-on: macos-latest
+    steps:
+      - name: condition 1
+        if: runner.os == 'Windows'
+        run: echo "The operating system on the runner is $env:RUNNER_OS."
+      - name: condition 2
+        if: runner.os != 'Windows'
+        run: echo "The operating system on the runner is not Windows, it's $RUNNER_OS."
+```
+
+For more information see [Default environment variables](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables#default-environment-variables) in the GitHub user documentation.
+
+## Pass custom environment variables to a workflow
+
+You can pass customer environment variables from one step of a workflow job to subsequent steps within the job. Simply generate a value in one step of a job, and assign the value to an existing or new environment variable.  Next, you write the variable/value pair to the GITHUB_ENV environment file. The environment file can then be used directly by an action, or from a shell command in the workflow job by using the `run` keyword. 
+
+The step that creates or updates the environment variable does not have access to the new value, but all subsequent steps in a job will have access.
+
+You can view an example below:
+
+```yml
+steps:
+  - name: Set the value
+    id: step_one
+    run: |
+      echo "action_state=yellow" >> "$GITHUB_ENV"
+  - name: Use the value
+    id: step_two
+    run: |
+      printf '%s\n' "$action_state" # This will output 'yellow'
+```
+
+<!-- INFOMAGNUS UPDATES for sub OD 1.6.5 go here. Source Material: Infomagnus team to find source material and cite sources when they update material  https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/using-environments-for-deployment#about-environments , https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-deployments/managing-environments-for-deployment  -->
+
+## Add environment protections
+
+You can add protection rules for environments defined for your GitHub repository.
+
+To add an environment, in your repository click on **Settings** and then **Environment** on the left panel. You then use the **New Environment** button to add and configure an environment and add protections.
+
+### About environments
+
+Environments are used to describe a general deployment target like production, staging, or development. When a GitHub Actions workflow deploys to an environment, the environment is displayed on the main page of the repository. You can use environments to require approval for a job to proceed, restrict which branches can trigger a workflow, gate deployments with custom deployment protection rules, or limit access to secrets.
+
+Each job in a workflow can reference a single environment. Any protection rules configured for the environment must pass before a job referencing the environment is sent to a runner. Note that the job can access the environment's secrets only after the job is sent to a runner.
+
+When a workflow references an environment, the environment will appear in the repository's deployments. 
+
+### Environment protection rules
+
+Environment deployment protection rules require specific conditions to pass before a job referencing the environment can proceed. You can use deployment protection rules to require a manual approval, delay a job, or restrict the environment to certain branches. You can also create and implement custom protection rules powered by GitHub Apps to use third-party systems to control deployments referencing environments configured on GitHub. Below you will find further explanation of these protection rules:
+
+1. Required reviewers protection rules: Use required reviewers to require a specific person or team to approve workflow jobs that reference the environment. You can list up to six users or teams as reviewers. The reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed.
+
+    You also have the option to prevent self-reviews for deployments to protected environments. If you enable this setting, users who initiate a deployment cannot approve the deployment job, even if they are a required reviewer. This ensures that deployments to protected environments are always reviewed by more than one person.
+
+    For more information on reviewing jobs that reference an environment with required reviewers, see Reviewing deployments.
+
+2. Wait timer projection rules: You can use a wait timer protection rule to delay a job for a specific amount of time after the job is initially triggered before the environment deployment is allowed to proceed. The time (in minutes) must be an integer between 1 and 43,200 (30 days).The wait time will not count towards your billable time.
+
+3. Branch and tag protection rules: You can use deployment branch and tag protection rules to restrict which branches and tags are utilized to deploy to the environment. You have several options for deployment branch and tag protection rules for an environment.
+
+    **No restriction** sets no restriction on which branch or tag can deploy to the environment.  **Protected branches only** allows only branches with branch protection rules enabled to deploy to the environment. If no branch protection rules are defined for any branch in the repository, then all branches can deploy. The **Selected branches and tags** setting ensures Only branches and tags that match your specified name patterns can deploy to the environment.
+
+    If you specify `releases/*` as a deployment branch or tag rule, only a branch or tag whose name begins with `releases/` can deploy to the environment. (Wildcard characters will not match `/`. To match branches or tags that begin with `release/` and contain an additional single slash, use `release/*/*`.) If you add `main` as a branch rule, a branch named `main` can also deploy to the environment. For more information about syntax options for deployment branches
+
+4. Custom deployment protection rules: You can enable your own custom protection rules to gate deployments with third-party services. For instance, you can use observability systems, change management systems, code quality systems, or other manual configurations that you use to assess readiness and provide automated approvals for deployments to GitHub. 
+
+    Once custom deployment protection rules have been created and installed on a repository, you can enable the custom deployment protection rule for any environment in the repository.
+
+> **Note**
+> If you are on a GitHub Free, GitHub Pro, or GitHub Team plan, the enviroment deployment projection rules are only available for public repositories; with the exception of branch & tag protection rules.  For users of GitHub Pro or GitHub Team plans, branch and tag protection rules are also available for private repositories.
+>
+<!-- INFOMAGNUS END -->
 
 ## Scripts in your workflow
 
@@ -157,4 +314,22 @@ For example, a `GET` request to view a specific workflow run log would follow th
 GET /repos/{owner}/{repo}/actions/runs/{run_id}/logs
 ```
 
-<!-- INFOMAGNUS UPDATES for sub OD 1.4.4 go here. Source Material: Infomagnus team to find source material and cite sources when they update material  --> 
+<!-- INFOMAGNUS UPDATES for sub OD 1.4.4 go here. Source Material: Infomagnus team to find source material and cite sources when they update material   https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/generating-an-installation-access-token-for-a-github-app  ,  https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/authenticating-as-a-github-app-installation -->
+
+## Identify when to use an an installation token from a GitHub App
+
+Once your GitHub App is installed on an account, you can authenticate it as an app installation using the 'installation access token' for REST and GraphQL API requests. This allows the app to access resources owned by the installation, assuming the app was granted the necessary repository access and permissions. REST or GraphQL API requests made by an app installation are attributed to the app.  In the following example, you replace `INSTALLATION_ACCESS_TOKEN` with the installation access token:
+
+```
+curl --request GET \
+--url "https://api.github.com/meta" \
+--header "Accept: application/vnd.github+json" \
+--header "Authorization: Bearer INSTALLATION_ACCESS_TOKEN" \
+--header "X-GitHub-Api-Version: 2022-11-28"
+```
+
+You can also use an installation access token to authenticate for HTTP-based Git access. Your app must have the 'Contents' repository permission. You can then use the installation access token as the HTTP password. You replace TOKEN in the example below with the with the installation access token: 
+
+```
+git clone https://x-access-token:TOKEN@github.com/owner/repo.git
+```
