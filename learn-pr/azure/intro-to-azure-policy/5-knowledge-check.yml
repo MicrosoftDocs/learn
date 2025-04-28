@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Module assessment
   description: "Check your knowledge about Azure Policy."
-  ms.date: 07/19/2024
+  ms.date: 04/28/2025
   author: ricmmartins
   ms.author: ricardomac
   ms.topic: unit
@@ -46,4 +46,4 @@ quiz:
     - content: "Adding required configuration at scale."
       isCorrect: true
       explanation: "Correct. As example, you can create a policy to enable Azure Backup for all virtual machines within an Azure subscription."
-
+
