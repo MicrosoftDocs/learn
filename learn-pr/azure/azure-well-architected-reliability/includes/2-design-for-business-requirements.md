@@ -1,11 +1,11 @@
 | :::image type="icon" source="../media/goal.svg"::: Gather business requirements based on what the workload needs to do. |
 | :----------------------------------------------------------------------------------------------------------------------------------------- |
 
-Start by figuring out what your workload needs to do. Work together with business stakeholders and architects to set realistic and achievable business requirements based on your budget. These requirements should cover user experience, data, workflows, and any unique characteristics of your workload. Make sure everyone agrees on what's expected and document these requirements to guide your design and operations. Make sure that they properly address the reliability targets that the workload must meet.
+Start by figuring out what your workload needs to do. Work together with business stakeholders and architects to set realistic and achievable business requirements based on your budget. These requirements should cover user experience, data, workflows, and any unique characteristics of your workload. The team must have a common understanding of what's expected to fulfill those requirements and the reliability targets that must be met.
 
 **Example scenario**
 
-Contoso Insurance is in the early design phase of developing a web application to process claims for their policyholders. They've figured out their core user and system flows. The workload team has identified several Azure services that they'll use to create the app: Azure App Service, Azure SQL Database, Azure AI services, Azure Event Grid, and Azure Logic Apps.
+Contoso Insurance is in the early design phase of developing a web application to process claims for their policyholders. They've figured out their core user and system flows. The workload team has identified several Azure services that they'll use: Azure App Service, Azure SQL Database, Azure AI services, Azure Event Grid, and Azure Logic Apps.
 
 ## Identify reliability targets
 
@@ -19,7 +19,7 @@ Compliance requirements should have clear outcomes for important flows. Focus on
 
 - The workload team wants to optimize resource spending to make the workload reliable.
 
-- They've broken down the workload into flows and rated them based on importance.
+- They've divided the workload into flows and rated them based on importance.
 
 *Applying the approach and outcomes*
 

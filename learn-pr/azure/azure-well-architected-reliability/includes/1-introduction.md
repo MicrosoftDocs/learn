@@ -17,10 +17,10 @@ Each unit in this module dives into one [design principle](/azure/well-architect
 
 By the end of this module, you'll be more familiar with the five principles of the Reliability pillar and learn three approaches for each pillar. You'll learn how to:
 
-- Figure out your business's reliability requirements, and apply those requirements to your workload design.
+- Apply your business's reliability requirements to your workload design.
 - Design your system to handle faults smoothly and keep working even when things go wrong.
 - Make sure that your workload can recover from malfunctions, whether it's a small glitch or major disaster.
-- Include ways to monitor and test your workload in both its design and daily operations.
+- Include monitoring and testing capabilities in your workload's design and daily operations.
 - Keep your workload simple to minimize risks.
 
 ## Prerequisites
