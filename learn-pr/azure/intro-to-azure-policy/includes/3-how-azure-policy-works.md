@@ -8,7 +8,7 @@ Here, we cover some concepts you need to understand in advance to work with Azur
 
 **Definitions:** The definitions are the list of built-in or custom initiatives and policies available to be assigned.
 
-**Assignments:** The assignments are the associations of initiatives or policies with scopes. A scope for Azure Policy could be a Management Group, an Azure Subscription or a Resource Group. All child resources inherit the assignments of the parent resource.
+**Assignments:** The assignments are the associations of initiatives or policies with scopes. A scope for Azure Policy could be a Management Group, an Azure Subscription, or a Resource Group. All child resources inherit the assignments of the parent resource.
 
 **Exemptions:**: The exemptions are used to exempt a resource hierarchically or an individual resource from the evaluation of initiatives or definitions.
 
