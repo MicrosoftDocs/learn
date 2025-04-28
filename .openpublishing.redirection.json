@@ -603,6 +603,46 @@
       "redirect_url": "/training/modules/intro-to-azure-data-science-virtual-machine"
     },
     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/classify-images-custom-vision/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-images-computer-vision/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/classify-images-custom-vision/1a-overview-classification.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-images-computer-vision/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/classify-images-custom-vision/2-azure-image-classification.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-images-computer-vision/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/classify-images-custom-vision/3-create-image-classifier.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-images-computer-vision/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/classify-images-custom-vision/3a-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-images-computer-vision/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/classify-images-custom-vision/4-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-images-computer-vision/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/classify-images-custom-vision/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-images-computer-vision/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/achievements/learn.wwl.classify-images-custom-vision.badge.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-images-computer-vision/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
       "redirect_document_id": false
