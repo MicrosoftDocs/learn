@@ -7,7 +7,7 @@ metadata:
   author: kprks
   ms.author: v-kperkes
   ms.topic: learning-path
-title: Introduction to budgeting for student
+title: Fundamentals of budgeting for student
 prerequisites: None
 summary: |
   Learn the fundamentals of budgeting and how to leverage tools such as Microsoft Copliot to manage your money effectively, save for future goals, and reduce financial stress.
@@ -17,6 +17,7 @@ levels:
 roles:
 - student
 products:
+- azure
 - ms-copilot
 
 modules:
