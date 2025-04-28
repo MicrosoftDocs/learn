@@ -30,7 +30,7 @@ Run a template that sets up your Azure DevOps organization.
 
 1. Enter a project name such as *Space Game - web - Delivery plans*, then press **Enter**.
 
-1. Once your project is created, go to your Azure DevOps organization in your browser (at https://dev.azure.com/your-organization-name/) and select the project.
+1. Once your project is created, go to your Azure DevOps organization in your browser (at `https://dev.azure.com/<your-organization-name>/`) and select the project.
 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/training/modules/manage-delivery-plans/7-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Be sure to follow the cleanup steps even if you don't complete this module.
