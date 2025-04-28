@@ -1,9 +1,7 @@
 
+This diagram explains how the Azure Application Gateway components work together.
+
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=cda9bcad-587b-4182-b8eb-3c1d66111dda]
-
-This diagram provides more detail on how the Azure Application Gateway components work together.
-
-:::image type="content" source="../media/application-gateway-components.png" alt-text="Diagram showing how Azure Application Gateway routes requests to a pool of web servers.":::
 
 ## Routing configuration
 
