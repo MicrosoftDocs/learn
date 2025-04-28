@@ -638,11 +638,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path_from_root": "/learn-pr/achievements/learn.wwl.classify-images-custom-vision.badge.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/analyze-images-computer-vision/",
-      "redirect_document_id": false
-    },
-    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
       "redirect_document_id": false
