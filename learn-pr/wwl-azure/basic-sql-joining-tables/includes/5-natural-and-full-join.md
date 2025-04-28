@@ -15,7 +15,7 @@ If a row in one table has no corresponding match in the other table, the unmatch
 You would use this approach for a comprehensive view of all customers and orders, including scenarios where one does not have an associated record in the other. 
 
 
-# NATURAL JOIN
+## NATURAL JOIN
 
 NATURAL JOIN is a type of SQL join that simplifies the process of combining tables by automatically matching columns with the same name and compatible data types from both tables.
 Unlike explicit joins, where the relationship between tables is defined using an `ON` clause, NATURAL JOIN relies on column names to identify shared attributes. It ensures that only rows with identical values in the matched columns are included in the result set, effectively filtering out mismatches.

@@ -27,6 +27,7 @@ Foreign keys are a concept in relational databases, used to establish and enforc
     <summary>Click to expand</details>
 
 ```sql
+
 CREATE SCHEMA Sales;
 
 CREATE TABLE Sales.Categories
@@ -1044,6 +1045,8 @@ INSERT INTO Sales.OrderDetails VALUES(515,10442,54,80);
 INSERT INTO Sales.OrderDetails VALUES(516,10442,66,60);
 INSERT INTO Sales.OrderDetails VALUES(517,10443,11,6);
 INSERT INTO Sales.OrderDetails VALUES(518,10443,28,12);
+
+
 ```
 </details>
 

@@ -40,10 +40,10 @@ SELECT customer_name, country FROM sales.customers WHERE country NOT IN ('USA');
 This query finds customers not based in USA.
 
 ```sql
-SELECT order_id, order_date, EXTRACT(MONTH FROM order_date) AS order_month FROM sales.orders WHERE EXTRACT(MONTH FROM order_date) = 3;
+SELECT order_id, order_date, EXTRACT(MONTH FROM order_date) AS order_month FROM sales.orders WHERE EXTRACT(MONTH FROM order_date) = 1;
 ```
 
-This query retrieves orders made in March by using the EXTRACT function to isolate the month from the order_date column and display it as order_month. 
+This query retrieves orders made in January by using the EXTRACT function to isolate the month from the order_date column and display it as order_month. 
 
 ## Using LIKE for pattern matching
 
