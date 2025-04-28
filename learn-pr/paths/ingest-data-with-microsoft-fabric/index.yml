@@ -5,7 +5,7 @@ metadata:
   description: Explore how Microsoft Fabric enables you to ingest and orchestrate data from various sources (such as files, databases, or web services) through dataflows, notebooks, and pipelines.
   ms.date: 01/29/2025
   author: wwlpublish
-  ms.author: jamesh
+  ms.author: theresai
   ms.topic: learning-path
 title: Ingest data with Microsoft Fabric
 prerequisites: |
