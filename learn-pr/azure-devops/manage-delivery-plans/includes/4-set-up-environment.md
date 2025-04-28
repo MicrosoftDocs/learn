@@ -15,20 +15,22 @@ The modules in this learning path are part of a progression. You follow the Tail
 
 Run a template that sets up your Azure DevOps organization.
 
-> [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=deliveryplans&azure-portal=true)
+1. [Get and run the ADOGenerator project](https://github.com/microsoft/AzDevOpsDemoGenerator/blob/main/docs/RunApplication.md) in Visual Studio or the IDE of your choice.
 
-On the Azure DevOps Demo Generator site, follow these steps to run the template:
+1. When prompted to **Enter the template number from the list of templates**, enter **37** for **Manage Agile software delivery plans across teams**, then press **Enter**.
 
-1. Select **Sign In** and accept the usage terms.
-1. On the **Create New Project** page, enter a project name, such as *Space Game - web - Delivery plans*. Then, select your Azure DevOps organization.
+1. Choose your authentication method. You can [set up and use a Personal Access Token (PAT)](s/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops#create-a-pat) or use device login.
 
-    :::image type="content" source="../media/4-create-new-project.png" alt-text="Screenshot of creating a project through the Azure DevOps Demo Generator.":::
+    > [!NOTE]
+    > If you set up a PAT, make sure to authorize the necessary [scopes](/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops#scopes). In this case, you can use **Full access**.
 
-1. Select **Create Project**.
+1. Enter your Azure DevOps organization name, then press **Enter**.
 
-    The template takes a few moments to run.
-1. Select **Navigate to project** to go to your project in Azure DevOps.
+1. If prompted, enter your Azure DevOps PAT, then press **Enter**.
+
+1. Enter a project name such as *Space Game - web - Delivery plans*, then press **Enter**.
+
+1. Once your project is created, go to your Azure DevOps organization in your browser (at https://dev.azure./com/<your organization name>/) and select the project.
 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/training/modules/manage-delivery-plans/7-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Be sure to follow the cleanup steps even if you don't complete this module.
