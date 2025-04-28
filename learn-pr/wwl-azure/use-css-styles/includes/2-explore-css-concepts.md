@@ -47,7 +47,7 @@ When viewed in a browser, the "Welcome" text in the `<h1>` tag displays gray.
 
 ### Apply styles to HTML using CSS
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE5ax20]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=89e525bc-d3de-4252-816b-9df5b3acbb84]
 
 ## Link to a CSS file
 
