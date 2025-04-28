@@ -8,7 +8,7 @@ metadata:
   ms.author: theresai
   ms.topic: module
   ms.collection: 
-  ms.service: azure
+  ms.service: fabric
 title: Secure data access in Microsoft Fabric
 summary: Microsoft Fabric uses a multi-layer security model with access controls at different levels. 
 abstract: |
@@ -39,4 +39,4 @@ units:
 - learn-wwl.secure-data-access-in-fabric.summary
 badge:
   uid: learn-wwl.secure-data-access-in-fabric.badge
-
+
