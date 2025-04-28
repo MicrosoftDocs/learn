@@ -2,9 +2,11 @@
 uid: learn.wwl.configure-azure-app-services.create-deployment-slots
 title: Create deployment slots
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Create deployment slots
   description: "Create deployment slots"
-  ms.date: 12/18/2024
+  ms.date: 04/28/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
