@@ -105,7 +105,7 @@ query {
 - **Data Retention:** 90 days on Enterprise Cloud; 120 days on Enterprise Server.  
 - **Access Control:** Only owners and security managers can view logs.  
 - **IP Logging:** Records source IP to detect suspicious access.  
-- **GDPR & Regional Compliance:** Meets data-handling requirements.  
+- **Regional Compliance:** Meets data-handling requirements.  
 
 ## Audit Log streaming
 
