@@ -10,7 +10,7 @@ There are many advantages to using App Service to develop and deploy your web, m
 
 | Benefit | Description |
 | --- | --- |
-| **Multiple languages and frameworks** | App Service has first-class support for ASP.NET, Java, Ruby, Node.js, PHP, and Python. You can also run PowerShell and other scripts or executables as background services. |
+| **Multiple languages and frameworks** | App Service has first-class support for ASP.NET, Java, Node.js, PHP, and Python. You can also run PowerShell and other scripts or executables as background services. |
 | **DevOps optimization** | App Service supports continuous integration and deployment with Azure DevOps, GitHub, BitBucket, Docker Hub, and Azure Container Registry. You can promote updates through test and staging environments. Manage your apps in App Service by using Azure PowerShell or the cross-platform command-line interface (CLI). |
 | **Global scale with high availability** | App Service helps you scale up or out manually or automatically. You can host your apps anywhere within the Microsoft global datacenter infrastructure, and the App Service SLA offers high availability. |
 | **Connections to SaaS platforms and on-premises data** | App Service lets you choose from more than 50 connectors for enterprise systems (such as SAP), SaaS services (such as Salesforce), and internet services (such as Facebook). You can access on-premises data by using Hybrid Connections and Azure Virtual Networks. |
