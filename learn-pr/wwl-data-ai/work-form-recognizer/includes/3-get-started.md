@@ -29,11 +29,8 @@ More input requirements can be found in the [documentation](/azure/cognitive-ser
 
 After you have collected your files, decide what you need to accomplish. 
 
-- To use OCR capabilities to capture document analysis, use the [Layout model](/azure/applied-ai-services/form-recognizer/concept-model-overview#layout), [Read model](/azure/applied-ai-services/form-recognizer/concept-model-overview#read-preview), or [General Document model](/azure/applied-ai-services/form-recognizer/concept-model-overview#general-document-preview). 
-
-- To create an application that extracts data from W-2s, Invoices, Receipts, ID documents, Health insurance, vaccination, and business cards, use a prebuilt model. These models do not need to be trained. Azure Document Intelligence services analyze the documents and return a JSON output. 
-
-- To create an application to extract data from your industry-specific forms, create a custom model. This model needs to be trained on sample documents. After training, the custom model can analyze new documents and return a JSON output. 
-
-
-   
+|**Use case**| Recommended features to use|
+|-|-|
+| Use OCR capabilities to capture document analysis| Use the [Layout model](/azure/applied-ai-services/form-recognizer/concept-model-overview#layout), [Read model](/azure/applied-ai-services/form-recognizer/concept-model-overview#read-preview), or [General Document model](/azure/applied-ai-services/form-recognizer/concept-model-overview#general-document-preview). |
+| Create an application that extracts data from W-2s, Invoices, Receipts, ID documents, Health insurance, vaccination, and business cards | Use a *prebuilt model*. These models do not need to be trained. Azure Document Intelligence services analyze the documents and return a JSON output.| 
+| Create an application to extract data from your industry-specific forms | Create a custom model. This model needs to be trained on sample documents. After training, the custom model can analyze new documents and return a JSON output.|
