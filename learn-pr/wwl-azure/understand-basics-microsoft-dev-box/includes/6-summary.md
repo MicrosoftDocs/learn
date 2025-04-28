@@ -13,23 +13,17 @@ An **Internal Developer Platform (IDP)** typically includes CI/CD pipelines, Inf
 
 Dev Box empowers developers with:
 
-Self-service provisioning
-
-Custom base images
-
-Secure, policy-enforced access
-
-Browser and Remote Desktop access
-
-Snapshot restore and built-in troubleshooting
+- Self-service provisioning
+- Custom base images
+- Secure, policy-enforced access
+- Browser and Remote Desktop access
+- Snapshot restore and built-in troubleshooting
 
 Key roles involved in Dev Box implementation include:
 
-**Platform Engineers/IT Admins** - Configure Dev Centers, networks, and policy
-
-**Project Admins/Team Leads** - Manage projects, assign users, and control Dev Box pools
-
-**Developers** - Create and use Dev Boxes to start coding instantly
+- **Platform Engineers/IT Admins** - Configure Dev Centers, networks, and policy
+- **Project Admins/Team Leads** - Manage projects, assign users, and control Dev Box pools
+- **Developers** - Create and use Dev Boxes to start coding instantly
 
 Dev Box supports global teams, multiproject workflows, and high-compliance scenarios, making it a strong fit for medium to large enterprise environments.
 
@@ -37,16 +31,16 @@ Dev Box supports global teams, multiproject workflows, and high-compliance scena
 
 Here are some helpful links to deepen your understanding and support implementation:
 
-[Microsoft Dev Box Documentation](/azure/dev-box/)
+- [Microsoft Dev Box Documentation](/azure/dev-box/)
 
-[Quickstart: Create and connect to a Dev Box](/azure/dev-box/quickstart-create-dev-box)
+- [Quickstart: Create and connect to a Dev Box](/azure/dev-box/quickstart-create-dev-box)
 
-[Configure Dev Box definitions and pools](/azure/dev-box/how-to-manage-dev-box-pools)
+- [Configure Dev Box definitions and pools](/azure/dev-box/how-to-manage-dev-box-pools)
 
-[Platform Engineering Learn Path](/training/paths/designing-implementing-platform-engineering/)
+- [Platform Engineering Learn Path](/training/paths/designing-implementing-platform-engineering/)
 
-[Microsoft Dev Box Architecture](/azure/dev-box/concept-dev-box-architecture)
+- [Microsoft Dev Box Architecture](/azure/dev-box/concept-dev-box-architecture)
 
-[Intune Overview](/mem/intune/fundamentals/what-is-intune)
+- [Intune Overview](/mem/intune/fundamentals/what-is-intune)
 
-[Microsoft Entra ID (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis)
+- [Microsoft Entra ID (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis)

@@ -47,18 +47,11 @@ Developers benefit the most from Dev Box:
 
 ## Scenarios for utilizing Microsoft Dev Box
 
-**Scenario 1: Onboarding New Developers**
-
-New hire developers often wait days for local machine provisioning. With Dev Box, onboarding is reduced to minutes. Developers sign in, provision a Dev Box machine with all the tools they need and begin contributing on day one.
-
-**Scenario 2: MultiProject Development**
-
-Developers can create one or multiple Dev Box machines for their project to isolate dependencies and avoid software conflicts. This is especially useful when switching between microservices or legacy applications.
-
-**Scenario 3: Security and Compliance**
-
-For industries with high compliance needs, Dev Boxes can be configured to prevent data theft, enforce MFA, and ensure all traffic flows through corporate networks.
-
-**Scenario 4: Global Developer Teams**
-
-Teams spreads across the world can create Dev Box machines in Azure regions close to their location, reducing latency and improving development experience.
+- **Scenario 1: Onboarding New Developers**
+  New hire developers often wait days for local machine provisioning. With Dev Box, onboarding is reduced to minutes. Developers sign in, provision a Dev Box machine with all the tools they need and begin contributing on day one.
+- **Scenario 2: MultiProject Development**
+  Developers can create one or multiple Dev Box machines for their project to isolate dependencies and avoid software conflicts. This is especially useful when switching between microservices or legacy applications.
+- **Scenario 3: Security and Compliance**
+  For industries with high compliance needs, Dev Boxes can be configured to prevent data theft, enforce MFA, and ensure all traffic flows through corporate networks.
+- **Scenario 4: Global Developer Teams**
+  Teams spreads across the world can create Dev Box machines in Azure regions close to their location, reducing latency and improving development experience.
