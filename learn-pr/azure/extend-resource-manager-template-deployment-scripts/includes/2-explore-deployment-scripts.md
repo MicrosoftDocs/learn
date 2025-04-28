@@ -6,7 +6,7 @@ ARM templates are wonderful things. You can use them to declare the desired stat
 
 `deploymentScripts` resources are either PowerShell or Bash scripts that run in a Docker container as part of your template deployment. The default container images have either the Azure CLI or Azure PowerShell available. These scripts run during the ARM template processing, so you can add custom behavior to the deployment process.
 
-Deployment scripts use a [managed identity](/azure/active-directory/managed-identities-azure-resources/overview) to authenticate to Azure. A managed identity is a service principal whose credential and lifecycle are managed by the Azure platform. This identity is what the Azure PowerShell or Azure CLI commands use to act on the environment. Because you assign the identity, you control the scope of what a `deploymentScripts` resource can affect.
+Deployment scripts use a [managed identity](/azure/active-directory/managed-identities-azure-resources/overview) to authenticate to Azure. A managed identity is a service principal whose credential and lifecycle the Azure platform manages. This identity is what the Azure PowerShell or Azure CLI commands use to act on the environment. Because you assign the identity, you control the scope of what a `deploymentScripts` resource can affect.
 
 The `deploymentScripts` resource produces output that other resources in the deployment can use. You can then look up information from an external system or provide data based on the current state of your environment to affect the rest of the deployment.
 
