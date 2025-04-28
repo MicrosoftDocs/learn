@@ -23,7 +23,7 @@ Azure evaluates each NSG configuration to determine the effective security rules
 | **VM 1** | Subnet 1 <br> _NSG 1_ | NIC <br> _NSG 2_ | _NSG 1_ subnet rules have precedence over _NSG 2_ NIC rules | _NSG 2_ NIC rules have precedence over _NSG 1_ subnet rules |
 | **VM 2** | Subnet 1 <br> _NSG 1_ | NIC <br> _none_ | _NSG 1_ subnet rules apply to both subnet and NIC | Azure default rules apply to NIC <br> and _NSG 1_ subnet rules apply to subnet only |
 | **VM 3** | Subnet 2 <br> _none_ | NIC <br> _NSG 2_ | Azure default rules apply to subnet <br> and _NSG 2_ rules apply to NIC | _NSG 2_ NIC rules apply to NIC and subnet |
-| **VM 4** | Subnet 3 <br> _none_ | NIC <br> _none_ | Azure default rules apply to both subnet and NIC <br> and all inbound traffic is allowed | Azure default rules apply to both subnet and NIC <br> and all outbound traffic is allowed |
+| **VM 4** | Subnet 3 <br> _none_ | NIC <br> _none_ | Azure default rules apply to both subnet and NIC | Azure default rules apply to both subnet and NIC |
 
 #### Inbound traffic effective rules
 

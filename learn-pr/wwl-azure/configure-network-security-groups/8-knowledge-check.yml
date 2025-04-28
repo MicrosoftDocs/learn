@@ -2,9 +2,11 @@
 uid: learn.wwl.configure-network-security-groups.knowledge-check
 title: Module assessment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 02/12/2025
+  ms.date: 04/28/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

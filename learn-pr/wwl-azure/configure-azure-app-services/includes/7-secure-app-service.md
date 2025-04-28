@@ -13,8 +13,6 @@ Let's take a closer look at how App Service helps you provide security for your 
 
 - The security module is configured by using app settings. No SDKs, specific languages, or changes to your application code are required.
 
-- When you enable the security module, every incoming HTTP request passes through the module before it's handled by your application code.
-
 - The security module handles several tasks for your app:
    - Authenticate users with the specified provider
    - Validate, store, and refresh tokens
