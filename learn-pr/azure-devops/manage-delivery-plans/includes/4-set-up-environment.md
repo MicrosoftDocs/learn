@@ -19,10 +19,10 @@ Run a template that sets up your Azure DevOps organization.
 
 1. When prompted to **Enter the template number from the list of templates**, enter **37** for **Manage Agile software delivery plans across teams**, then press **Enter**.
 
-1. Choose your authentication method. You can [set up and use a Personal Access Token (PAT)](s/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops#create-a-pat) or use device login.
+1. Choose your authentication method. You can [set up and use a Personal Access Token (PAT)](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate#create-a-pat) or use device login.
 
     > [!NOTE]
-    > If you set up a PAT, make sure to authorize the necessary [scopes](/azure/devops/integrate/get-started/authentication/oauth?view=azure-devops#scopes). In this case, you can use **Full access**.
+    > If you set up a PAT, make sure to authorize the necessary [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes). In this case, you can use **Full access**.
 
 1. Enter your Azure DevOps organization name, then press **Enter**.
 
@@ -30,7 +30,7 @@ Run a template that sets up your Azure DevOps organization.
 
 1. Enter a project name such as *Space Game - web - Delivery plans*, then press **Enter**.
 
-1. Once your project is created, go to your Azure DevOps organization in your browser (at https://dev.azure./com/<your organization name>/) and select the project.
+1. Once your project is created, go to your Azure DevOps organization in your browser (at https://dev.azure.com/your-organization-name/) and select the project.
 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/training/modules/manage-delivery-plans/7-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Be sure to follow the cleanup steps even if you don't complete this module.
