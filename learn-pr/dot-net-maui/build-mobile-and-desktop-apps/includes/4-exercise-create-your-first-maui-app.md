@@ -15,7 +15,7 @@ In this exercise, you start to build the .NET MAUI (Multi-platform Application U
 
     :::image type="content" source="../media/4-configure-project.png" alt-text="A screenshot of the Configure your new project dialog box. The user names the project Phoneword and selects a location on their hard drive to store it.":::
 
-1. Select **.NET 9.0 (Long Term Support)** in the **Framework** drop-down, then select **Create** to create the app.
+1. Select **.NET 9.0 (Standard Term Support)** in the **Framework** drop-down, then select **Create** to create the app.
 
 ## Examine the solution structure
 
@@ -76,7 +76,7 @@ In this exercise, you start to build the .NET MAUI (Multi-platform Application U
 1. Switch back to the app and select the **Click me** button. Verify that the count is now incrementing by 5.
 
     > [!NOTE]
-    > Visual Studio's *Hot Reload* feature allows you to modify your code while the app is running in Debug mode. You don't need to stop the app to see the changes. As well as modifying code, you can also make changes to the XAML markup for a page, and these changes will become visible in the running app.
+    > Visual Studio's *Hot Reload* feature allows you to modify your code while the app is running in Debug mode. You don't need to stop the app to see the changes. You can also make changes to the XAML markup for a page, and these changes become visible in the running app.
 
 1. Close the app and return to Visual Studio.
 
@@ -92,7 +92,7 @@ In this exercise, you start to build the .NET MAUI (Multi-platform Application U
 1. In the **Android Device Manager** window, select **+ New**. In the **New Device** window, select the **Pixel 7 (+ Store)** base device, select the **API 35** OS, and select **Create**. Wait while the various libraries are downloaded and the device is configured.
 
     > [!NOTE]
-    > The example in this exercise uses the **Pixel 7 (+ Store)** base device, but you can use other devices. For example the **Pixel 5 - API 31** or **Pixel 5 - API 34**.
+    > The example in this exercise uses the **Pixel 7 (+ Store)** base device, but you can use other devices. For example, the **Pixel 5 - API 31** or **Pixel 5 - API 34**.
 
     :::image type="content" source="../media/4-new-device.png" alt-text="A screenshot of the New Device window from the Android SDK. The user is creating a new Pixel 7 device with API 35 selected.":::
 

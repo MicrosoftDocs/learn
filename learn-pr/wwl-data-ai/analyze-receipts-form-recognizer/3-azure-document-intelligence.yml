@@ -4,7 +4,7 @@ title: Understand Azure AI Document Intelligence capabilities
 metadata:
   title: Understand Azure AI Document Intelligence capabilities
   description: "Understand Azure AI Document Intelligence capabilities"
-  ms.date: 10/04/2024
+  ms.date: 4/23/2025
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-azure-document-intelligence.md)]
+  [!include[](includes/3-azure-document-intelligence.md)]
