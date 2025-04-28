@@ -2,7 +2,7 @@ In this unit, you learn how the various Microsoft technology components form the
 
 The diagram shows how Microsoft Dev Box service fits in a typical organization’s IT infrastructure with their on-premises systems connected to the Azure cloud. This high-level architecture guides you on how to deploy Microsoft Dev Box service for a mid-sized to a large enterprise. 
 
-:::image type="content" source="../media/image-4.png" alt-text="Diagram of High level architecture diagram of Microsoft Dev Box." lightbox="../media/image-4.png" :::
+:::image type="content" source="../media/High-level-architecture-of-Microsoft-Dev-Box.png" alt-text="Diagram of High level architecture of Microsoft Dev Box." lightbox="../media/High-level-architecture-of-Microsoft-Dev-Box.png" :::
 
 The various components of this typical architecture include:
 
