@@ -2,7 +2,7 @@
 uid: learn.fundamentals-budgeting-students
 metadata:
   title: 'Fundamentals of budgeting for student'
-  description: Learn the fundamentals of budgeting and how to leverage tools such as Microsoft Copliot to manage your money effectively, save for future goals, and reduce financial stress.
+  description: Learn the fundamentals of budgeting and how to use tools such as Microsoft Copilot to manage your money effectively, save for future goals, and reduce financial stress.
   ms.date: 04/28/2025
   author: kprks
   ms.author: v-kperkes
@@ -10,7 +10,7 @@ metadata:
 title: Fundamentals of budgeting for student
 prerequisites: None
 summary: |
-  Learn the fundamentals of budgeting and how to leverage tools such as Microsoft Copliot to manage your money effectively, save for future goals, and reduce financial stress.
+  Learn the fundamentals of budgeting and how to use tools such as Microsoft Copilot to manage your money effectively, save for future goals, and reduce financial stress.
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - beginner
