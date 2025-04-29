@@ -33,14 +33,12 @@ Here are some helpful links to deepen your understanding and support implementat
 
 - [Microsoft Dev Box Documentation](/azure/dev-box/)
 
-- [Quickstart: Create and connect to a Dev Box](/azure/dev-box/quickstart-create-dev-box)
+- [Quickstart: Configure a Dev Box](/azure/dev-box/quickstart-configure-dev-box-service)
 
-- [Configure Dev Box definitions and pools](/azure/dev-box/how-to-manage-dev-box-pools)
-
-- [Platform Engineering Learn Path](/training/paths/designing-implementing-platform-engineering/)
+- [Platform Engineering Microsoft Learn module](/training/modules/foundations-platform-engineering/)
 
 - [Microsoft Dev Box Architecture](/azure/dev-box/concept-dev-box-architecture)
 
-- [Intune Overview](/mem/intune/fundamentals/what-is-intune)
+- [Intune Overview](/intune/intune-service/fundamentals/what-is-intune)
 
-- [Microsoft Entra ID (Azure AD)](/azure/active-directory/fundamentals/active-directory-whatis)
+- [Microsoft Entra ID (Azure AD)](/entra/fundamentals/whatis)
