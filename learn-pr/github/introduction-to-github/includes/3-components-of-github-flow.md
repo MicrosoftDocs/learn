@@ -29,8 +29,6 @@ In the previous unit, you added a new file into the repository by pushing a comm
 
 A **commit** is a change to one or more files on a branch. Each commit is tracked by a unique ID, timestamp, and contributor, whether it's made via the command line or directly in GitHub's web interface. Commits provide a clear audit trail for anyone reviewing the history of a file or linked item, such as an issue or pull request.
 
-A **commit** is a change to one or more files on a branch. Each commit is tracked by a unique ID, timestamp, and contributor, whether it's made via the command line or directly in GitHub's web interface. Commits provide a clear audit trail for anyone reviewing the history of a file or linked item, such as an issue or pull request.
-
 > You can create a commit using Git in your terminal with:
 > ```
 > git commit -m "Add a helpful commit message"
