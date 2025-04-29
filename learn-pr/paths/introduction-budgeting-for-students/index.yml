@@ -1,0 +1,29 @@
+### YamlMime:LearningPath
+uid: learn.fundamentals-budgeting-students
+metadata:
+  title: 'Introduction to budgeting for students'
+  description: Learn the fundamentals of budgeting and how to use tools such as Microsoft Copilot to manage your money effectively, save for future goals, and reduce financial stress.
+  ms.date: 04/28/2025
+  author: kprks
+  ms.author: v-kperkes
+  ms.topic: learning-path
+title: Introduction to budgeting for students
+prerequisites: None
+summary: |
+  Learn the fundamentals of budgeting and how to use tools such as Microsoft Copilot to manage your money effectively, save for future goals, and reduce financial stress.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- student
+products:
+- azure
+- ms-copilot
+
+modules:
+- learn.philanthropies.intro-to-budgeting-for-students
+- learn.philanthropies.apply-budgeting-method
+- learn.philanthropies.choose-budgeting-tool
+- learn.philanthropies.create-personalized-savings-plan
+trophy:
+  uid: learn.introduction-budgeting-students.trophy
