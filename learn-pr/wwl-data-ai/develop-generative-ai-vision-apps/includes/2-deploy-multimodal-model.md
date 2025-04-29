@@ -2,7 +2,8 @@ To handle prompts that include images, you need to deploy a *multimodal* generat
 
 - Microsoft **Phi-4-multimodal-instruct**
 - OpenAI **gpt-4o**
-- OpenAi **gpt-4o-mini**
+- OpenAI **gpt-4o-mini**
+
 
 > [!TIP]
 > To learn more about available models in Azure AI Foundry, see the **[Model catalog and collections in Azure AI Foundry portal](/azure/ai-foundry/how-to/model-catalog-overview)** article in the Azure AI Foundry documentation.
