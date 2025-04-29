@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl-azure.basic-sql-aggregate-functions-and-grouping
 metadata:
-  title: Summarizing data:Aggregate functions and grouping
+  title: "Summarizing data: Aggregate functions and grouping"
   description: "Description for basic-sql-aggregate-functions-and-grouping" # Describe the module in 120 to 165 characters. Include relevant search keywords.
   ms.date: 4/24/2025
   author: mpopovic
@@ -22,7 +22,7 @@ metadata:
 ### To request new values, go to
 ### `https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main`.
   ms.service: azure-database-postgresql
-title: Summarizing data:Aggregate functions and grouping
+title: "Summarizing data: Aggregate functions and grouping"
 ###########################################################################
 ###
 ### Introductory summary
@@ -115,7 +115,7 @@ abstract: |
 ### Detailed guidance: `https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites`
 ###
 prerequisites: |
-  Before starting this module, learners should have a basic understanding of SQL SELECT statement.
+  Before starting this module, you should have a basic understanding of SQL SELECT statement.
 ###########################################################################
 ###
 ### Icon URL

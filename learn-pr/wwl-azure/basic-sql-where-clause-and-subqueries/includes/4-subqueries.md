@@ -25,7 +25,7 @@ WHERE price > (
 ); 
 ```
 
-This query retrieves the names and prices of products from the `sales.products` table where the product's price is greater than the average `price` of all products in the same table. It uses a subquery within the `WHERE` clause to calculate the average `price` by selecting the `AVG(price)` from the `sales.products` table. The result of this subquery is then compared against the `price` column in the outer query to filter and display only those products whose prices exceed this calculated average. 
+This query retrieves the names and prices of products from the `sales.products` table where the product's `price` is greater than the average `price` of all products in the same table. It uses a subquery within the `WHERE` clause to calculate the average `price` by selecting the `AVG(price)` from the `sales.products` table. The result of this subquery is then compared against the `price` column in the outer query to filter and display only those products whose prices exceed this calculated average. 
 
 ```sql
 SELECT customer_id, customer_name 
@@ -40,17 +40,24 @@ This query retrieves the IDs and names of customers from the `sales.customers` t
 
 ```sql
 SELECT supplier_id, AVG (price) AS avg_price 
-FROM ( SELECT supplier_id, price FROM sales.products) AS product_prices 
+FROM ( 
+	SELECT supplier_id, price 
+	FROM sales.products
+) AS product_prices 
 GROUP BY supplier_id; 
 ```
 
-This query calculates the average product price for each supplier. It uses a subquery in the `FROM` clause to select the `supplier_id` and price from the `sales.products table`. The outer query then groups the result by supplier_id and calculates the average `price` for each group. This approach can be helpful when you want to perform aggregation on a filtered or preprocessed set of data. 
+This query calculates the average product price for each supplier. It uses a subquery in the `FROM` clause to select the `supplier_id` and price from the `sales.products table`. The outer query then groups the result by `supplier_id` and calculates the average `price` for each group. This approach can be helpful when you want to perform aggregation on a filtered or preprocessed set of data. 
 
 ```sql
 UPDATE sales.products 
 SET price = price * 1.1 
-WHERE category_id = (SELECT category_id FROM sales.products GROUP BY category_id                   
-ORDER BY AVG(price) DESC LIMIT 1); 
+WHERE category_id = (
+	SELECT category_id 
+	FROM sales.products 
+	GROUP BY category_id                   
+	ORDER BY AVG(price) DESC LIMIT 1
+); 
 ```
 
 This query increases the prices of products in the category with the highest average price by 10%. The `UPDATE` statement modifies the `price` column in the `sales.products` table, multiplying it by 1.1 for rows matching the condition in the `WHERE` clause.  

@@ -1,5 +1,5 @@
 
-The sales database is designed to simulate a typical sales environment for a company that sells various products to customers. It's structured to store information about customers, products, suppliers, orders, employees, and shipping. This database allows us to:
+The sales database is designed to simulate a typical sales environment for a company that sells various products to customers. It's structured to store information about customers, products, suppliers, orders, employees, and shipping. This database allows you to:
 
 * Track customer orders and purchase history
 * Manage product inventory and pricing

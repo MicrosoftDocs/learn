@@ -12,7 +12,7 @@
 
     Detailed guidance: `https://review.learn.microsoft.com/help/learn/id-guidance-introductions?branch=main#module-introduction`
 -->
-In addition to managing individual tables, the ability to join tables is a critical skill for working with relational databases. By mastering table joins, such as IINNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN, and NATURAL JOIN, you can efficiently combine data from multiple tables to derive meaningful insights and streamline complex queries. This tutorial will guide you through these essential concepts, equipping you with the knowledge to handle real-world data scenarios effectively.
+In addition to managing individual tables, the ability to join tables is a critical skill for working with relational databases. By mastering table joins, such as `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN`, `FULL OUTER JOIN`, and `NATURAL JOIN`, you can efficiently combine data from multiple tables to derive meaningful insights and streamline complex queries. This tutorial will guide you through these essential concepts, equipping you with the knowledge to handle real-world data scenarios effectively.
 
 <!-- 2. Motivation ---------------------------------------------------------------------------------------
 
@@ -45,9 +45,9 @@ In addition to managing individual tables, the ability to join tables is a criti
              and authorization. Then we'll put the concepts into context by describing some common
              authentication-based attacks. We'll also define some effective authorization security techniques."
  -->
- ## What will we be doing?
+ ## What will you be doing?
 
-In this section, we’ll learn how to combine data from multiple related tables using various types of SQL joins. You’ll understand how to use INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN and NATURAL JOIN to retrieve connected data across tables. Through practical examples using the "sales" database, you'll gain the skills to query and interpret relationships between entities like customers, orders and employees.
+In this section, you’ll learn how to combine data from multiple related tables using various types of SQL joins. You’ll understand how to use `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN`, `FULL OUTER JOIN` and `NATURAL JOIN` to retrieve connected data across tables. Through practical examples using the `sales` database, you'll gain the skills to query and interpret relationships between entities like `customers`, `orders` and `employees`.
 
  <!-- 5. Terminal learning objective ----------------------------------------------------------------------
 

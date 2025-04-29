@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl-azure.basic-sql-joining-tables
 metadata:
-  title: Combining data from multiple tables:SQL Joins Explained
+  title: "Combining data from multiple tables: SQL Joins Explained"
   description: "Description for basic-sql-joining-tables" # Describe the module in 120 to 165 characters. Include relevant search keywords.
   ms.date: 4/23/2025
   author: mpopovic
@@ -22,7 +22,7 @@ metadata:
 ### To request new values, go to
 ### `https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main`.
   ms.service: azure-database-postgresql
-title: Combining data from multiple tables:SQL Joins Explained
+title: "Combining data from multiple tables: SQL Joins Explained"
 ###########################################################################
 ###
 ### Introductory summary

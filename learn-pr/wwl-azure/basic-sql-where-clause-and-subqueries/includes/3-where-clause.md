@@ -33,13 +33,12 @@ OR category_id = 8;
 ```
 This query selects products belonging to either category 1 (Beverages) or category 8 (Seafood). Additionally, the `CAST` function is used to convert the `price` column into text format, presenting it as `price_text` in the results. 
 
-## Filtering based on multiple conditions(IN, NOT IN)
+## Filtering based on multiple conditions (IN, NOT IN)
 
 ```sql
 SELECT product_name, category_id, CAST(price as VARCHAR) as price_text 
 FROM sales.products 
-WHERE category_id 
-    IN (1,8); 
+WHERE category_id IN (1,8); 
 ```
 
 This query produces the same result as the previous query, but it uses the `IN` clause instead of `OR`. The `IN` clause filters records by checking if a column matches any value within a specified list. 
@@ -47,8 +46,7 @@ This query produces the same result as the previous query, but it uses the `IN` 
 ```sql
 SELECT customer_name, country 
 FROM sales.customers 
-WHERE country 
-    NOT IN ('USA');
+WHERE country NOT IN ('USA');
 ```
 
 This query finds customers not based in USA.
@@ -66,17 +64,15 @@ This query retrieves orders made in January by using the `EXTRACT` function to i
 ```sql
 SELECT customer_name, address 
 FROM sales.customers 
-WHERE customer_name 
-    LIKE 'A%';
+WHERE customer_name LIKE 'A%';
 ```
-This query retrieves customers whose names start with `A`. The symbol `%` in the string literal is a wildcard used by the `LIKE` operator for pattern matching. It represents zero or more characters, allowing the query to match any `customer_name` that begins with the letter `A` followed by any sequence of characters. For instance, names like "Alice" or "Andrew" would be included in the query results. 
+This query retrieves customers whose names start with 'A'. The symbol `%` in the string literal is a wildcard used by the `LIKE` operator for pattern matching. It represents zero or more characters, allowing the query to match any `customer_name` that begins with the letter 'A' followed by any sequence of characters. For instance, names like "Alice" or "Andrew" would be included in the query results. 
 
 
 ```sql
 SELECT product_id, product_name 
 FROM sales.products 
-WHERE product_name 
-    LIKE '%Chocolate%';
+WHERE product_name LIKE '%Chocolate%';
 ```
 
 This query retrieves products whose names contain the word "Chocolate". When placed before and after the word "Chocolate" in the query, it allows for matches where "Chocolate" appears anywhere in the product name—whether at the beginning, middle, or end. For instance, product names such as "Teatime Chocolate Biscuits," or "Chocolate” would be included in the query results.  
@@ -86,8 +82,7 @@ This query retrieves products whose names contain the word "Chocolate". When pla
 ```sql
 SELECT customer_name AS full_name 
 FROM sales.customers 
-WHERE country 
-    IN ('Germany', 'France', 'UK');
+WHERE country IN ('Germany', 'France', 'UK');
 ```
 
 This query retrieves a list of customers whose `country` is specified as either Germany, France, or the UK. By using the SQL operator `IN`, the query checks the country column for matches against the specified set of values ('Germany', 'France', 'UK'). If the value in the country column corresponds to any of these three options, the corresponding customer names are returned and displayed under the alias `full_name`. 
@@ -95,8 +90,7 @@ This query retrieves a list of customers whose `country` is specified as either 
 ```sql
 SELECT * 
 FROM sales.products 
-WHERE category_id 
-    NOT IN (1, 3);
+WHERE category_id NOT IN (1, 3);
 ```
 
 This query retrieves products that are not classified under categories 1 or 3.
@@ -106,8 +100,7 @@ This query retrieves products that are not classified under categories 1 or 3.
 ```sql
 SELECT * 
 FROM sales.products 
-WHERE price 
-    BETWEEN 20 and 40;
+WHERE price BETWEEN 20 and 40;
 ```
 
 This query retrieves products priced between 20 and 40 currency units, inclusive.

@@ -1,7 +1,7 @@
 
 ## FULL OUTER JOIN
 
-A FULL OUTER JOIN, also referred to as a FULL JOIN, combines the characteristics of both LEFT JOIN and RIGHT JOIN, including all rows from both tables in the result set. 
+A `FULL OUTER JOIN`, also referred to as a `FULL JOIN`, combines the characteristics of both `LEFT JOIN` and `RIGHT JOIN`, including all rows from both tables in the result set. 
 If there is a matching row between the tables based on the `ON` clause, the columns from both tables are populated. However, if a row in one table does not have a match in the other table, the columns from the unmatched table will display null values.
 
 ```sql
@@ -17,8 +17,8 @@ You would use this approach for a comprehensive view of all customers and orders
 
 ## NATURAL JOIN
 
-NATURAL JOIN is a type of SQL join that simplifies the process of combining tables by automatically matching columns with the same name and compatible data types from both tables.
-Unlike explicit joins, where the relationship between tables is defined using an `ON` clause, NATURAL JOIN relies on column names to identify shared attributes. It ensures that only rows with identical values in the matched columns are included in the result set, effectively filtering out mismatches.
+`NATURAL JOIN` is a type of SQL join that simplifies the process of combining tables by automatically matching columns with the same name and compatible data types from both tables.
+Unlike explicit joins, where the relationship between tables is defined using an `ON` clause, `NATURAL JOIN` relies on column names to identify shared attributes. It ensures that only rows with identical values in the matched columns are included in the result set, effectively filtering out mismatches.
 
 This approach is particularly useful when the tables being joined have clearly defined relationships and matching column names, as it reduces the need for manual specification of join conditions. 
 However, users must exercise caution, as relying purely on column names can lead to unintended results if the tables contain columns with identical names but unrelated data. 

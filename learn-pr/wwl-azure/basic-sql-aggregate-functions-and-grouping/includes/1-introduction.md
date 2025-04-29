@@ -11,7 +11,7 @@
 
     Detailed guidance: `https://review.learn.microsoft.com/help/learn/id-guidance-introductions?branch=main#module-introduction`
 -->
-Understanding how to summarize and categorize data is essential for extracting insights from relational databases. In PostgreSQL, aggregate functions combined with GROUP BY and HAVING clauses provide powerful tools for analyzing trends, computing totals or averages and filtering grouped results. These techniques form the backbone of meaningful data reporting and help transform raw data into actionable information.
+Understanding how to summarize and categorize data is essential for extracting insights from relational databases. In PostgreSQL, aggregate functions combined with `GROUP BY` and `HAVING` clauses provide powerful tools for analyzing trends, computing totals or averages and filtering grouped results. These techniques form the backbone of meaningful data reporting and help transform raw data into actionable information.
 
 <!-- 2. Motivation ---------------------------------------------------------------------------------------
 
@@ -43,9 +43,9 @@ Understanding how to summarize and categorize data is essential for extracting i
              and authorization. Then we'll put the concepts into context by describing some common
              authentication-based attacks. We'll also define some effective authorization security techniques."
  -->
-## What will we be doing?
+## What will you be doing?
 
-In this section, we’ll explore how to summarize and analyze data in PostgreSQL using aggregate functions like COUNT, SUM, AVG, MIN and MAX. You'll learn how to group data with the GROUP BY clause and filter grouped results using HAVING. Through hands-on examples with the "sales" database, you’ll gain the skills needed to extract meaningful insights from large datasets by turning detailed records into clear, summarized reports. 
+In this section, you’ll explore how to summarize and analyze data in PostgreSQL using aggregate functions like `COUNT`, `SUM`, `AVG`, `MIN` and `MAX`. You'll learn how to group data with the `GROUP BY` clause and filter grouped results using `HAVING`. Through hands-on examples with the `sales` database, you’ll gain the skills needed to extract meaningful insights from large datasets by turning detailed records into clear, summarized reports. 
 
 <!-- 5. Terminal learning objective ----------------------------------------------------------------------
 
@@ -60,4 +60,4 @@ In this section, we’ll explore how to summarize and analyze data in PostgreSQL
  -->
 ## What is the main goal?
 
-The main goal of this section is to help you master the use of aggregate functions and grouping techniques in SQL to summarize, analyze and filter data effectively. By learning how to apply GROUP BY and HAVING in combination with functions like COUNT, SUM and AVG, you'll be able to turn raw data into actionable insights, making your queries more powerful and relevant for real-world analysis.
+The main goal of this section is to help you master the use of aggregate functions and grouping techniques in SQL to summarize, analyze and filter data effectively. By learning how to apply `GROUP BY` and `HAVING` in combination with functions like `COUNT`, `SUM` and `AVG`, you'll be able to turn raw data into actionable insights, making your queries more powerful and relevant for real-world analysis.

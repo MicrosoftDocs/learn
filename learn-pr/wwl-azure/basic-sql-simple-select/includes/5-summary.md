@@ -1,5 +1,5 @@
 
-This tutorial provides a practical foundation for retrieving and manipulating data in PostgreSQL using the `SELECT` statement.
+This tutorial provided a practical foundation for retrieving and manipulating data in PostgreSQL using the `SELECT` statement.
 
 You should now be able to select all or specific columns from a table, eliminate duplicates using the `DISTINCT` keyword, create calculated columns through arithmetic operations or functions and concatenate values to produce more readable outputs.
 
