@@ -76,10 +76,12 @@ To learn more about npm, check out the npm documentation:
 <!-- INFOMAGNUS UPDATES for sub OD 1.5.9. Source Material: https://docs.github.com/en/actions/sharing-automations/reusing-workflows -->
 ## Utilize reusable workflows to avoid duplication
 
-<!-- INFOMAGNUS UPDATES for sub OD 2.1.1, 2.1.2, 2.1.3, and 2.1.4 go here. Source Material: Infomagnus team to find source material and cite it. 
--->
+<!-- INFOMAGNUS UPDATES for sub OD 2.1.1, 2.1.2, 2.1.3, and 2.1.4 go here. Source Material: Infomagnus team to find source material and cite it.
+https://docs.github.com/en/actions/writing-workflows/about-workflows , https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs , https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/triggering-a-workflow , https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/monitoring-workflows/viewing-workflow-run-history , https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/troubleshooting-workflows/about-troubleshooting-workflows -->
 
 ## Identify the event that triggered a workflow from its effects in a respository, issue, or pull request
+
+
 
 ## Describe a workflow's effects from reading its configuration file
 
