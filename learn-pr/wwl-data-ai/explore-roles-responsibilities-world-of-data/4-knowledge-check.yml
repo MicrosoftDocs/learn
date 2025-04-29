@@ -2,6 +2,7 @@
 uid: learn.wwl.explore-roles-responsibilities-world-of-data.knowledge-check
 title: Module assessment
 metadata:
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
   ms.date: 10/09/2024
@@ -48,4 +49,4 @@ quiz:
       explanation: "Incorrect. Azure Databricks is a PaaS service, not a SaaS solution."
     - content: "Microsoft Fabric"
       isCorrect: true
-      explanation: "Correct. Microsoft Fabric is a SaaS platform for data analytics."
+      explanation: "Correct. Microsoft Fabric is a SaaS platform for data analytics."
