@@ -2,31 +2,22 @@
 uid: learn.wwl.design-implement-network-security-monitoring.secure-your-virtual-networks-azure-portal
 title: Get network security recommendations with Microsoft Defender for Cloud
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Get network security recommendations with Microsoft Defender for Cloud
   description: "Get network security recommendations with Microsoft Defender for Cloud"
-  ms.date: 11/29/2024
+  ms.date: 04/29/2025
   author: wwlpublish
-  ms.author: jileary
+  ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 13
+durationInMinutes: 7
 content: |
   [!include[](includes/2-secure-your-virtual-networks-azure-portal.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What Azure service can we use to create a private connection between Azure PaaS and hosted services?"
-    choices:
-    - content: "Azure Private Link"
-      isCorrect: true
-      explanation: "Correct. Azure Private Link lets you privately access Azure PaaS Services."
-    - content: "Azure Service Endpoint"
-      isCorrect: false
-      explanation: "Incorrect. Azure Service Endpoint provides secure and direct connectivity to Azure PaaS services over an optimized route."
-    - content: "Azure NaaS (network as a service)"
-      isCorrect: false
-      explanation: "Incorrect. There's no Azure NaaS service."
   - content: "Which tool in Azure automatically collects, analyzes, and integrates log data from your Azure resources?"
     choices:
     - content: "Microsoft Defender for Cloud"

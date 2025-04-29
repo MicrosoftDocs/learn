@@ -23,3 +23,6 @@ In this exercise, you're going to run a mock DDoS attack on the virtual network.
 
 [![Screenshot of the simulation page.](../media/simulation-ddos-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Configure%20Azure%20DDoS%20Protection%20on%20a%20virtual%20network)
 
+  
+> [!NOTE]
+> You can view the [Configure DDoS Protection on a virtual network using the Azure portal](https://microsoftlearning.github.io/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/Instructions/Exercises/M06-Unit%204%20Configure%20DDoS%20Protection%20on%20a%20virtual%20network%20using%20the%20Azure%20portal.html) instructions directly on the GitHub. 

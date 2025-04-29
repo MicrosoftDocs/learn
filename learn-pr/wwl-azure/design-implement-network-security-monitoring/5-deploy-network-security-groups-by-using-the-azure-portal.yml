@@ -2,15 +2,17 @@
 uid: learn.wwl.design-implement-network-security-monitoring.deploy-network-security-groups-by-using-the-azure-portal
 title: Deploy Network Security Groups by using the Azure portal
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy Network Security Groups by using the Azure portal
   description: "Deploy Network Security Groups by using the Azure portal"
-  ms.date: 11/29/2024
+  ms.date: 04/29/2025
   author: wwlpublish
-  ms.author: jileary
+  ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 14
+durationInMinutes: 7
 content: |
   [!include[](includes/5-deploy-network-security-groups-by-using-the-azure-portal.md)]
 quiz:
@@ -27,14 +29,3 @@ quiz:
     - content: "Permit all, monitor, and deny as needed."
       isCorrect: false
       explanation: "Incorrect. Allowing all access can result in unwanted access."
-  - content: "Which is a default NSG security rule?"
-    choices:
-    - content: "AllowAllInbound."
-      isCorrect: false
-      explanation: "Incorrect. There's no default rule to allow all inbound traffic."
-    - content: "DenyVnetOutBound."
-      isCorrect: false
-      explanation: "Incorrect. VNet outbound traffic is allowed (not denied) where the source and destination is a virtual network."
-    - content: "AllowInternetOutBound."
-      isCorrect: true
-      explanation: "Correct. Network Security Group rules allow all internet (destination) outbound traffic by default."

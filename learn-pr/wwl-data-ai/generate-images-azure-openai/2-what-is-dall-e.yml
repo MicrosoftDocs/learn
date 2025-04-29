@@ -3,14 +3,14 @@ uid: learn.wwl.generate-images-azure-openai.what-is-dall-e
 title: What is DALL-E?
 metadata:
   title: What is DALL-E?
-  description: Explore image generation capabilities of DALL-E in Azure OpenAI service
+  description: Explore DALL-E models
   author: ivorb
   ms.author: berryivor
-  ms.date: 03/18/2025
+  ms.date: 04/29/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 2
 content: |
   [!include[](includes/2-what-is-dall-e.md)]
-
+
