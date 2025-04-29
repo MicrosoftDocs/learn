@@ -1,4 +1,4 @@
-Here, you learn about GitHub Actions and workflows for CI. 
+ Here, you learn about GitHub Ac. ions and workflows for CI. 
 
 You learn how to:
 
@@ -74,7 +74,20 @@ To learn more about npm, check out the npm documentation:
 - [npm test](https://docs.npmjs.com/cli/test.html?azure-portal=true)
 
 <!-- INFOMAGNUS UPDATES for sub OD 1.5.9. Source Material: https://docs.github.com/en/actions/sharing-automations/reusing-workflows -->
-<!-- INFOMAGNUS UPDATES for sub OD 2.1.1, 2.1.2, 2.1.3, and 2.1.4 go here. Source Material: Infomagnus team to find source material and cite it. -->
+## Utilize reusable workflows to avoid duplication
+
+<!-- INFOMAGNUS UPDATES for sub OD 2.1.1, 2.1.2, 2.1.3, and 2.1.4 go here. Source Material: Infomagnus team to find source material and cite it. 
+-->
+
+## Identify the event that triggered a workflow from its effects in a respository, issue, or pull request
+
+## Describe a workflow's effects from reading its configuration file
+
+## Diagnose a failed workflow run
+
+## Identify ways to access the workflow logs from the user interface
+
+<<!-- InfoMagnus END -->
 
 ## Action Logs for the build
 
@@ -126,6 +139,10 @@ test:
 
 <!-- INFOMAGNUS UPDATES for sub OD 2.2.1 go here. Source Material: Infomagnus team to find source material and cite sources when they update material -->
 
+## Locate a workflow in a repository
+
+<!-- InfoMagnus END -->
+
 ## What are artifacts?
 
 When a workflow produces something other than a log entry, the product is called an *artifact*. For example, the Node.js build produces a Docker container that can be deployed. This artifact, the container, can be uploaded to storage by using the action [actions/upload-artifact](https://github.com/actions/upload-artifact?azure-portal=true) and later downloaded from storage by using the action [actions/download-artifact](https://github.com/actions/download-artifact?azure-portal=true).
@@ -176,6 +193,10 @@ For more information about using artifacts in workflows, see [Storing workflow d
 
 <!-- INFOMAGNUS UPDATES for sub OD 1.6.4 go here. Source Material: Infomagnus team to find source material and cite sources when they update material -->
 
+## Add a workflow status badge
+
+<!-- InfoMagnus END -->
+
 ## Automate reviews in GitHub using workflows
 
 So far, we described starting the workflow with GitHub events such as *push* or *pull-request*. We could also run a workflow on a schedule, or on some event outside of GitHub.
@@ -200,4 +221,14 @@ Adding a label could be an event that starts another workflow, such as a merge. 
 
 <!-- INFOMAGNUS UPDATES for sub OD 2.2.2 go here. Source Material: Infomagnus team to find source material and cite sources when they update material -->
 
+## Contrast disabling and deleting of workflows
+
 <!-- INFOMAGNUS UPDATES for sub OD 1.3.1 ,1.3.2, and 1.4.1 go here. Source Material: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository -->
+
+## Configure Actions and Workflow permissions
+
+## Set up Secrets and variables for Actions
+
+## Use encrypted secrets to store sensitive information
+
+<!-- InfoMagnus END -->
