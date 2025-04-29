@@ -139,7 +139,8 @@ test:
       CI: true
 ```
 
-<!-- INFOMAGNUS UPDATES for sub OD 2.2.1 go here. Source Material: Infomagnus team to find source material and cite sources when they update material -->
+<!-- INFOMAGNUS UPDATES for sub OD 2.2.1 go here. Source Material: Infomagnus team to find source material and cite sources when they update material 
+https://docs.github.com/en/actions/writing-workflows/about-workflows -->
 
 ## Locate a workflow in a repository
 
@@ -193,7 +194,8 @@ steps:
 
 For more information about using artifacts in workflows, see [Storing workflow data as artifacts](https://docs.github.com/en/enterprise-cloud@latest/actions/using-workflows/storing-workflow-data-as-artifacts) in the GitHub documentation.
 
-<!-- INFOMAGNUS UPDATES for sub OD 1.6.4 go here. Source Material: Infomagnus team to find source material and cite sources when they update material -->
+<!-- INFOMAGNUS UPDATES for sub OD 1.6.4 go here. Source Material: Infomagnus team to find source material and cite sources when they update material 
+https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/monitoring-workflows/adding-a-workflow-status-badge -->
 
 ## Add a workflow status badge
 
