@@ -16,11 +16,11 @@ quiz:
   - content: To address the Tailwind Traders CIO's risks and concerns, which of the following steps would you start with?
     choices:
     - content: Select a small and diverse cloud governance team.
-      isCorrect: false
-      explanation: Incorrect. Tailwind Traders already has an established cloud governance team.
-    - content: Analyze the risks, determine the risk levels, and document and share the data related to the risks.
       isCorrect: true
-      explanation: Correct! Rank the risks to determine which ones are most critical to address first.
+      explanation: Correct! The first step is to establish a cloud governance team.
+    - content: Analyze the risks, determine the risk levels, and document and share the data related to the risks.
+      isCorrect: false
+      explanation: Incorrect. You should rank the risks to determine which ones are most critical to address first only after you establish your cloud governance team.
     - content: Distribute your policies to inform everyone who needs to adhere to cloud governance.
       isCorrect: false
       explanation: Incorrect. To create your policies, you must first perform a risk analysis to determine the most critical risks to address.
