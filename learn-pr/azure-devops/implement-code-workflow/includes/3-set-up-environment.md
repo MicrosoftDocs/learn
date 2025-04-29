@@ -37,8 +37,6 @@ Run a template that sets up your Azure DevOps organization.
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/training/modules/implement-code-workflow/9-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
 
-[!include[](../../shared/includes/project-visibility.md)]
-
 ## Fork the repository
 
 If you haven't already, fork the **mslearn-tailspin-spacegame-web** repository.
@@ -48,6 +46,8 @@ If you haven't already, fork the **mslearn-tailspin-spacegame-web** repository.
 1. Select **Fork** at the top-right of the screen.
 
 1. Choose your GitHub account as the **Owner**, then select **Create fork**.
+
+[!include[](../../shared/includes/project-visibility.md)]
 
 ## Move the work item to Doing
 
