@@ -29,4 +29,5 @@ In this lab, you secure your virtual hub with Azure Firewall Manager.
 [![Screenshot of the simulation page.](../media/simulation-fwmanager-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Secure%20your%20virtual%20hub%20using%20Azure%20Firewall%20Manager)
 
 
-
+> [!NOTE]
+> You can view the [Secure your virtual hub using Azure Firewall Manager](https://microsoftlearning.github.io/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/Instructions/Exercises/M06-Unit%209%20Secure%20your%20virtual%20hub%20using%20Azure%20Firewall%20Manager.html) instructions directly on the GitHub. 

@@ -2,15 +2,17 @@
 uid: learn.wwl.design-implement-network-security-monitoring.deploy-azure-ddos-protection-by-using-azure-portal
 title: Deploy Azure DDoS Protection by using the Azure portal
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Deploy Azure DDoS Protection by using the Azure portal
   description: "Deploy Azure DDoS Protection by using the Azure portal"
-  ms.date: 11/29/2024
+  ms.date: 04/29/2025
   author: wwlpublish
-  ms.author: jileary
+  ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 15
+durationInMinutes: 8
 content: |
   [!include[](includes/3-deploy-azure-ddos-protection-by-using-azure-portal.md)]
 quiz:
@@ -27,14 +29,3 @@ quiz:
     - content: "HTTP 400 Bad Request"
       isCorrect: false
       explanation: "Incorrect. HTTP 400 Bad Request response status code indicates the server can't process the request."
-  - content: "Which action shall we take when under DDoS attack?"
-    choices:
-    - content: "Monitor Alerts and review attack profile."
-      isCorrect: true
-      explanation: "Correct. You should look at any alerts sent out and review the attack profile. For example, what type of attack, where is it originating, and is it targeting a particular resource."
-    - content: "Scale out your Azure resources to keep systems running."
-      isCorrect: false
-      explanation: "Incorrect. Adding more resources helps only temporarily. The attacker could just ramp up the attack to overwhelm new resources."
-    - content: "Email your IT team."
-      isCorrect: false
-      explanation: "Incorrect. Letting your IT team know is a good idea, but you need to monitor and protect your resources first."
