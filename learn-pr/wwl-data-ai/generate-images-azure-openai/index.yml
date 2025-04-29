@@ -10,10 +10,10 @@ metadata:
   ms.topic: module-standard-task-based
   ms.collection:
     - wwl-ai-copilot
-title: Generate images with Azure OpenAI Service
-summary: "In Azure AI Foundry you can use the openAI DALL-E model to generate original images based on natural language prompts."
+title: Generate images with AI
+summary: "In Azure AI Foundry, you can use the OpenAI DALL-E model to generate original images based on natural language prompts."
 abstract: |
-  By the end of this module, you'll be able to:
+  After completing this module, you'll be able to:
     - Describe the capabilities of DALL-E models
     - Use the Images playground in Azure AI Foundry portal
     - Integrate DALL-E model image generation into your apps
