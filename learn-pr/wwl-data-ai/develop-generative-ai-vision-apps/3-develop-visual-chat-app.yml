@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.develop-generative-ai-vision-apps.develop-visual-chat-apps
-title: Develop a vision-basec chat app
+title: Develop a vision-based chat app
 metadata:
-  title: Develop a vision-basec chat app
+  title: Develop a vision-based chat app
   description: "Use Azure AI Foundry, Azure AI Model Inference, and Azure OpenAI SDKs to develop a vision-based chat app."
   ms.date: 04/29/2025
   author: gmalc
