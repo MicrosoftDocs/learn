@@ -2,6 +2,7 @@
 uid: learn.wwl.migrate-premises-mysql-databases-azure-database-mysql.knowledge-check
 title: Module assessment
 metadata:
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
   ms.date: 11/09/2022
@@ -67,4 +68,4 @@ quiz:
       explanation: "That's correct. You'll find the connection information for your Azure Database for MySQL service in the Azure portal, on the **Connection strings** page for your Azure Database for MySQL service."
     - content: "In the **Connection settings** page for your Azure portal."
       isCorrect: false
-      explanation: "That's incorrect. This isn't the place to find those settings."
+      explanation: "That's incorrect. This isn't the place to find those settings."

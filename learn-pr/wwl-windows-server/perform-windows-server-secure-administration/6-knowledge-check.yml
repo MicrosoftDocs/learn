@@ -2,6 +2,8 @@
 uid: learn.wwl.perform-windows-server-secure-administration.knowledge-check
 title: Module assessment
 metadata:
+  hidden_question_numbers: ["C955F7C6_18","C955F7C6_6","C955F7C6_79","C955F7C6_104","C955F7C6_108","C955F7C6_112","C955F7C6_120","C955F7C6_124","C955F7C6_84","C955F7C6_92","C955F7C6_96"]
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
   ms.date: 01/01/2025
