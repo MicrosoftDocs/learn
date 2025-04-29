@@ -32,6 +32,6 @@ Copilot can assist you in configuring Azure infrastructure solutions. Copilot ca
 
 - [Introduction to Azure Firewall Manager](/training/modules/introduction-azure-firewall/). Describe whether you can use Azure Firewall Manager to provide central security policy and route management. Evaluate whether Azure Firewall Manager can help secure your cloud perimeters.
 
-- [Introduction to Azure Web Application Firewall](/training/modules/introduction-azure-web-application-firewall/). Describe how Azure Web Application Firewall protects Azure web applications from common attacks, including the features, how it's deployed, and common use cases.
+- [Introduction to Azure Web Application Firewall](/training/modules/introduction-azure-web-application-firewall/). Describe how Azure Web Application Firewall protects Azure web applications from common attacks.
 
 
