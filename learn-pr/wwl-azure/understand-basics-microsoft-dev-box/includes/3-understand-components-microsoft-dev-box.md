@@ -49,7 +49,6 @@ Organizations typically maintain Dev Box machine images in an Azure compute gall
 Network Connections are critical to ensure that Dev Box machines have access to the right services and stay secure. There are two main types of networking connection options available in Microsoft Dev Box:
 
 - Microsoft-Hosted Network: Microsoft provisions and maintains a secure infrastructure on which the Dev Box machines are deployed. Great for fast setup and simple needs. You, however, do control the Dev box machines that are installed on this infrastructure. 
-
 - Azure network connection: Your organization manages the network infrastructure on which the Dev Box machines will be deployed. This is an option when you want to control and manage the infrastructure along with connecting it to your other virtual networks within Azure or to your on-premises infrastructure. 
 
 With Azure network connection you can configure:
