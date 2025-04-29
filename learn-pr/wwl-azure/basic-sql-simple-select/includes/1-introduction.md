@@ -12,7 +12,10 @@
 
     Detailed guidance: `https://review.learn.microsoft.com/help/learn/id-guidance-introductions?branch=main#module-introduction`
 --->
-Learning how to query data effectively is a fundamental skill for anyone working with databases. In this tutorial, you'll gain hands-on experience with the SELECT statement in PostgreSQL, a powerful tool for retrieving and analyzing data. By mastering these foundational querying techniques, you'll be equipped to access specific information, generate meaningful insights and lay the groundwork for more advanced database operations. Whether you're a beginner or looking to sharpen your skills, this tutorial will help you build confidence in working with SQL queries.
+Learning how to query data effectively is a fundamental skill for anyone working with databases. 
+In this tutorial, you'll gain hands-on experience with the `SELECT` statement in PostgreSQL, a powerful tool for retrieving and analyzing data. 
+By mastering these foundational querying techniques, you'll be equipped to access specific information, generate meaningful insights and lay the groundwork for more advanced database operations. 
+Whether you're a beginner or looking to sharpen your skills, this tutorial will help you build confidence in working with SQL queries.
 
 <!-- 2. Motivation ---------------------------------------------------------------------------------------
 
@@ -45,13 +48,13 @@ Learning how to query data effectively is a fundamental skill for anyone working
              and authorization. Then we'll put the concepts into context by describing some common
              authentication-based attacks. We'll also define some effective authorization security techniques."
  -->
-## What will we be doing?
+## What will you be doing?
 
-In this tutorial, we'll explore the fundamentals of querying data using the SELECT statement in PostgreSQL. You'll learn how to:
+In this tutorial, you'll explore the fundamentals of querying data using the `SELECT` statement in PostgreSQL. You'll learn how to:
 
 - Retrieve all columns from a table
 - Query specific columns to focus on relevant data
-- Use the DISTINCT keyword to eliminate duplicate values
+- Use the `DISTINCT` keyword to eliminate duplicate values
 - Create calculated columns to derive new insights from your data
 - Concatenate columns to combine data into a single output
 
@@ -69,4 +72,4 @@ In this tutorial, we'll explore the fundamentals of querying data using the SELE
  -->
 ## What is the main goal?
 
-By the end of this tutorial, you'll be able to confidently use the SELECT command to retrieve and query data from a PostgreSQL database, laying the foundation for more advanced querying techniques.
+By the end of this tutorial, you'll be able to confidently use the `SELECT` command to retrieve and query data from a PostgreSQL database, laying the foundation for more advanced querying techniques.

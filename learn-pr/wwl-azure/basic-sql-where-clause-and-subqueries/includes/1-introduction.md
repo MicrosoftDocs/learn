@@ -12,7 +12,8 @@
 
     Detailed guidance: `https://review.learn.microsoft.com/help/learn/id-guidance-introductions?branch=main#module-introduction`
 --->
-Learning how to filter data effectively is essential for working with databases. In this tutorial, you'll explore the WHERE clause in PostgreSQL, a critical component for refining query results. We'll cover how to apply single and multiple conditions, use operators like IN, NOT IN, AND, OR, and LIKE and work with ranges using BETWEEN. You'll also learn how to handle NULL values with IS NULL and IS NOT NULL and leverage subqueries for more advanced filtering.
+Learning how to filter data effectively is essential for working with databases. 
+In this tutorial, you'll explore the `WHERE` clause in PostgreSQL, a critical component for refining query results. You'll cover how to apply single and multiple conditions, use operators like `IN`, `NOT IN`, `AND`, `OR`, and `LIKE` and work with ranges using `BETWEEN`. You'll also learn how to handle `NULL` values with `IS NULL` and `IS NOT NULL` and leverage subqueries for more advanced filtering.
 
 <!-- 2. Motivation ---------------------------------------------------------------------------------------
 
@@ -45,14 +46,14 @@ Learning how to filter data effectively is essential for working with databases.
              and authorization. Then we'll put the concepts into context by describing some common
              authentication-based attacks. We'll also define some effective authorization security techniques."
  -->
-## What will we be doing?
-In this tutorial, we'll explore the fundamentals of filtering data using the WHERE clause in PostgreSQL. You'll learn how to:
+## What will you be doing?
+In this tutorial, you'll explore the fundamentals of filtering data using the `WHERE` clause in PostgreSQL. You'll learn how to:
 
 - Apply single and multiple conditions to refine query results
-- Use logical operators like AND, OR, IN, and NOT IN for complex filtering
-- Work with pattern matching using the LIKE operator
-- Filter data within a range using the BETWEEN operator
-- Handle NULL values effectively with IS NULL and IS NOT NULL
+- Use logical operators like `AND`, `OR`, `IN`, and `NOT IN` for complex filtering
+- Work with pattern matching using the `LIKE` operator
+- Filter data within a range using the `BETWEEN` operator
+- Handle `NULL` values effectively with `IS NULL` and `IS NOT NULL`
 - Leverage subqueries for advanced filtering scenarios
 
 
@@ -69,4 +70,4 @@ In this tutorial, we'll explore the fundamentals of filtering data using the WHE
  -->
 ## What is the main goal?
 
-By the end of this tutorial, you'll have a solid understanding of how to use the WHERE clause to extract precise and meaningful data from your database.
+By the end of this tutorial, you'll have a solid understanding of how to use the `WHERE` clause to extract precise and meaningful data from your database.

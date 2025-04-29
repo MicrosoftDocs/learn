@@ -13,7 +13,8 @@ The calculated age is given an alias `age`, which serves as a temporary, user-de
 ## Querying data with column concatenation
 
 ```sql
-SELECT CONCAT(address,' ', city, ' ', postal_code, ' ', country) AS billing_address FROM sales.customers; 
+SELECT CONCAT(address, ' ', city, ' ', postal_code, ' ', country) AS billing_address 
+FROM sales.customers; 
 ```
 
 This SQL query combines multiple columns: `address`, `city`, `postal_code` and `country` from the `sales.customers` table into a single concatenated field labeled as `billing_address`. 
