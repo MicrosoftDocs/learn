@@ -2,6 +2,7 @@
 uid: learn.wwl.explore-provision-deploy-non-relational-data-services-azure.knowledge-check
 title: Module assessment
 metadata:
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
   ms.date: 09/17/2024
@@ -48,4 +49,4 @@ quiz:
       explanation: "That's correct. You can create a file share in Azure File storage, upload files to this file share, and grant access to the file share to remote users."
     - content: "To store large binary data files containing images or other unstructured data."
       isCorrect: false
-      explanation: "That's incorrect. Large binary data files are best stored as blobs in Azure Blob storage."
+      explanation: "That's incorrect. Large binary data files are best stored as blobs in Azure Blob storage."

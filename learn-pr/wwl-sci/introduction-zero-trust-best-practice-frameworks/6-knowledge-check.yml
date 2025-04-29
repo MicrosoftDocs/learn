@@ -2,6 +2,8 @@
 uid: learn.wwl.introduction-zero-trust-best-practice-frameworks.knowledge-check
 title: Module assessment
 metadata:
+  hidden_question_numbers: ["944F9AAF_22","944F9AAF_34","944F9AAF_79","944F9AAF_87"]
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check for module on the topic: Introduction to Zero Trust and best practice frameworks."
   ms.date: 09/26/2024
