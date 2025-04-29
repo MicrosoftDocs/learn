@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ediscovery-search.export-results
+title: Export eDiscovery search results
+metadata:
+  title: Export eDiscovery search results
+  description: "Export eDiscovery search results."
+  ms.date: 04/17/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/export-results.md)]

@@ -777,6 +777,11 @@ achievements:
   title: Use containers for your Language Understanding Intelligent Service (LUIS) Apps
   summary: Use containers for your Language Understanding Intelligent Service (LUIS) Apps
   iconUrl: /training/achievements/use-containers-for-your-language-understanding-intelligent-service-luis-apps.svg
+- uid: learn.wwl.classify-images-custom-vision.badge
+  type: badge 
+  title: Classify images with Azure AI Custom Vision
+  summary: Explore Azure AI Custom Vision's classification capabilities
+  iconUrl: /training/achievements/classify-images-custom-vision.svg
 - uid: learn.wwl.process-classify-images-with-azure-cognitive-vision-services.trophy
   type: trophy
   title: Process and classify images with the Azure cognitive vision services
@@ -5640,6 +5645,11 @@ achievements:
   title: Build a Java app with cloud-scale NoSQL Cosmos DB
   summary: Learn how to build a Java-language database app to store and query data in Azure Cosmos DB.
   iconUrl: /training/achievements/cosmos-db-java-app.svg
+- uid: learn.azure-sql-high-availability.badge
+  type: badge
+  title: Deploy highly available solutions by using Azure SQL
+  summary: Whatever SLA, RTO, and RPO your business requires, Azure SQL has the options and built-in capabilities to meet that availability. In this module, you'll learn how to translate your knowledge of backup and restore, failover cluster instances, and Always On availability groups to the options for business continuity in Azure SQL. You'll also peek under the hood at the architectures and how they affect availability.
+  iconUrl: /training/achievements/azure-sql-high-availability.svg
 - uid: learn.azure-sql-performance.badge
   type: badge
   title: Deliver consistent performance with Azure SQL
@@ -5655,3 +5665,48 @@ achievements:
   title: Image classification with custom Azure AI Vision models
   summary: Classify images by training a custom model with Azure AI Vision.
   iconUrl: /learn/achievements/generic-badge.svg
+- uid: learn.wwl.governance-security.badge
+  type: badge
+  title: Plan, implement, and manage governance for security
+  summary: This module focuses on enabling administrators to effectively plan, implement, and manage security governance in Azure, ensuring compliance with organizational policies and best practices.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.manage-authentication-microsoft-entra-id.badge
+  type: badge
+  title: Manage authentication by using Microsoft Entra ID
+  summary: This module is designed to provide administrators with the knowledge and skills needed to manage authentication effectively using Microsoft Entra ID, ensuring secure access to resources and enhancing user experience.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.manage-authorization-microsoft-entra-id.badge
+  type: badge
+  title: Manage authorization by using Microsoft Entra ID
+  summary: This module is designed to provide administrators with the knowledge and skills required to effectively manage authorization using Microsoft Entra ID, ensuring that users have the appropriate access to resources and data.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.manage-identities-microsoft-entra-id.badge
+  type: badge
+  title: Manage identities in Microsoft Entra ID
+  summary: This module focuses on effectively managing identities and enhancing security in Microsoft Entra ID, ensuring that users, groups, and external identities are protected against security threats and unauthorized access.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.wwl.manage-identity-access-new.trophy
+  type: trophy
+  title: 'AZ-500: Manage identity and access'
+  summary: Master identity and access management in Microsoft Entra ID, securing users, groups, and external identities, implementing authentication and authorization controls, and managing application access and security.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.manage-security-operations-new.trophy
+  type: trophy
+  title: 'AZ-500: Manage security operations'
+  summary: Master the art of managing security operations in Azure, from governance and policy creation to infrastructure security, key management, security posture, threat protection, and advanced security monitoring and automation.
+  iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.az-204-integrate-caching-content-delivery-within-solutions.trophy
+  type: trophy
+  title: 'AZ-204: Implement caching for solutions'
+  summary: Learn how to improve the performance and scalability of your applications by integrating Azure Cache for Redis and Azure Content Delivery Network in to your solution.
+  iconUrl: /training/achievements/integrate-content-delivery.svg
+- uid: learn.wwl.develop-for-azure-cache-for-redis.badge
+  type: badge
+  title: Develop for Azure Cache for Redis
+  summary: Learn how to configure Azure Cache for Redis, interact with the cache, and connect an application to Azure Cache for Redis by using .NET.
+  iconUrl: /training/achievements/azure-cache-redis.svg
+- uid: learn.wwl.develop-for-storage-cdns.badge
+  type: badge
+  title: Develop for storage on CDNs
+  summary: Learn how the Azure Content Delivery Network (CDN) functions, how to control cache behavior, and how to perform actions by using .NET.
+  iconUrl: /training/achievements/cdn-develop-storage.svg

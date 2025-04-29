@@ -23,6 +23,8 @@ Azure AI Translator's application programming interface (API) offers some option
 - **Profanity filtering**.  Without any configuration, the service will translate the input text, without filtering out profanity. Profanity levels are typically culture-specific but you can control profanity translation by either marking the translated text as profane or by omitting it in the results.
 - **Selective translation**. You can tag content so that it isn't translated. For example, you may want to tag code, a brand name, or a word/phrase that doesn't make sense when localized.
 
+You can use *Azure AI Translator* in **Azure AI Foundry**, a unified platform for enterprise AI operations, model builders, and application development. The service is also available for use in **Microsoft Translator Pro** a mobile application, designed specifically for enterprises, that enables seamless real-time speech-to-speech translation. 
+
 ## Speech translation with Azure AI Speech
 
 Azure AI Speech includes the following capabilities:

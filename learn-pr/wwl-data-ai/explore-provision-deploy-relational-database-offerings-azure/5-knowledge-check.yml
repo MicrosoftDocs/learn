@@ -2,6 +2,7 @@
 uid: learn.wwl.explore-provision-deploy-relational-database-offerings-azure.knowledge-check
 title: Module assessment
 metadata:
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
   ms.date: 10/09/2024
@@ -48,4 +49,4 @@ quiz:
       explanation: "Correct. LAMP standard for Linux, Apache, MySQL, and PHP."
     - content: "Azure Database for PostgreSQL"
       isCorrect: false
-      explanation: "Incorrect. That's incorrect. LAMP standard for Linux, Apache, MySQL, and PHP."
+      explanation: "Incorrect. That's incorrect. LAMP standard for Linux, Apache, MySQL, and PHP."

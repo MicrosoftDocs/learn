@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-hpc.5-scenarios-for-hpc-and-batch
 metadata:
-  title: Scenarios for HPC and Batch technologies
+  title: Scenarios for HPC and Batch Technologies
   description: In this unit, you learn about some uses that HPC resources are often put to, and how the technologies you've learned about can address these scenarios.
-  ms.date: 05/22/2023
+  ms.date: 04/07/2025
   author: padmalathas
   ms.author: padmalathas
   ms.topic: unit
@@ -36,4 +36,4 @@ quiz:
     - content: "Azure H-Series VMs"
       isCorrect: false
       explanation: "Batch also lets you use some of the most important 3D rendering packages, like Maya, 3D Studio Max, and Chaos V-Ray."
-
+

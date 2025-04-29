@@ -4,7 +4,7 @@ title: Exercise - Extract data from documents in Azure AI Foundry portal
 metadata:
   title: Exercise - Extract data from documents in Azure AI Foundry portal
   description: "Exercise - Extract data from documents in Azure AI Foundry portal"
-  ms.date: 02/06/2025
+  ms.date: 4/23/2025
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 15
 content: |
-  [!include[](includes/4-exercise.md)]
+  [!include[](includes/4-exercise.md)]
