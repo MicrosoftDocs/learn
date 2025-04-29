@@ -31,7 +31,7 @@ Run a template that sets up your Azure DevOps organization.
 
 1. When prompted to **Enter the template number from the list of templates**, enter **29** for **Create a release pipeline with Azure Pipelines**, then press **Enter**.
 
-1. Choose your authentication method. You can [set up and use a Personal Access Token (PAT)](s/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops#create-a-pat) or use device login.
+1. Choose your authentication method. You can [set up and use a Personal Access Token (PAT)](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate#create-a-pat) or use device login.
 
     > [!NOTE]
     > If you set up a PAT, If you set up a PAT, make sure to authorize the necessary [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes). In this module, you can use **Full access**, but in a real-world situation, you should ensure you grant only the necessary scopes.
