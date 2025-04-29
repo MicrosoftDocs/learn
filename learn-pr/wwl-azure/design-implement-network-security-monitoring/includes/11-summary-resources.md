@@ -6,7 +6,7 @@ In this module, you explored a range of network security features.
 
 - Azure DDoS Protection protects resources in a virtual network. Protection includes virtual machine public IP addresses, load balancers, and application gateways. DDoS Protection can mitigate volumetric attacks, protocol attacks, and resource layer attacks. DDoS Protection offers two tiers: DDoS IP Protection, and DDoS Network Protection.
 
-- An Network Security Group (NSG) in Azure allows you to filter network traffic to and from Azure resources in an Azure virtual network. A NSG contains default security rules that allow or deny inbound or outbound network traffic. 
+- A Network Security Group (NSG) in Azure allows you to filter network traffic to and from Azure resources in an Azure virtual network. An NSG contains default security rules that allow or deny inbound or outbound network traffic. 
 
 - Azure Firewall is a managed, cloud-based network security service that protects your Azure virtual network resources. Azure Firewall has three SKUs: Basic, Standard, and Premium. In the Azure Firewall, you can configure NAT rules, network rules, and applications rules.
 
