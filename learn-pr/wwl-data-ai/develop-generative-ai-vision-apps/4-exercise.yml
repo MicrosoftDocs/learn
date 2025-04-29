@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-generative-ai-vision-apps.exercise
+title: Exercise - Develop a vision-enabled chat app
+metadata:
+  title: Exercise - Develop a vision-enabled chat app
+  description: "Get practical experience of deploying a multimodal model and creating a vision-enabled chat app."
+  ms.date: 04/29/2025
+  author: gmalc
+  ms.author: gmalc
+  ms.topic: unit
+durationInMinutes: 30
+content: |
+  [!include[](includes/4-exercise.md)]

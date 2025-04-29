@@ -29,6 +29,6 @@ modules:
 - learn.wwl.create-plugins-semantic-kernel
 - learn.wwl.give-your-ai-agent-skills
 - learn.wwl.combine-prompts-functions
-- learn.wwl.guided-project-create-ai-travel-agent
+- learn.wwl.guided-project-create-sk-assistant
 trophy:
   uid: learn.wwl.develop-ai-agents-azure-open-ai-semantic-kernel-sdk.trophy

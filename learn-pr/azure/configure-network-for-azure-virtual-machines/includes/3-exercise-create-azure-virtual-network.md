@@ -1,7 +1,7 @@
 In this exercise, you'll create a virtual network in Microsoft Azure. You'll then create two virtual machines (VMs), and use the virtual network to connect to the VMs and to the internet.
 
 > [!IMPORTANT]
-> The exercises in this module require a full Azure subscription. The exercises are optional, and are not required to complete this module. Participating in the interactive exercises in this module will result in charges billed to the Azure subscription you use to complete them. Incurred charges can be minimized by cleaning up the resources you create as soon as possible. Cleanup directions are in the final unit.
+> The exercises in this module require a full Azure subscription. The exercises are optional, and are not required to complete this module. Participating in the interactive exercises in this module will result in charges billed to the Azure subscription you use to complete them. You can minimize incurred charges by cleaning up the resources you create as soon as possible. Cleanup directions are in the final unit.
 
 ## Sign in to your subscription
 
@@ -27,7 +27,7 @@ To create a subnet and virtual network, run the following command.
 
 ## Create two virtual machines
 
-All Azure VMs are connected to a virtual network. If you create a VM using Azure PowerShell, and don't specify the name of an existing virtual network, Azure PowerShell creates a new virtual network automatically.
+All Azure VMs are connected to a virtual network. If you create a VM using Azure PowerShell and don't specify the name of an existing virtual network, Azure PowerShell creates a new virtual network automatically.
 
 Here, we create two VMs and specify the virtual network.
 
@@ -44,7 +44,7 @@ Here, we create two VMs and specify the virtual network.
     -PublicIPAddressName "dataProcStage1"
     ```
 
-    Port 3389 is opened automatically by default when you create a Windows VM in Azure. 
+    Port 3389 is opened automatically by default when you create a Windows VM in Azure.
 
 1. Enter a user name and password for the VM. Write down user name and password. You need it later to sign in to the server.
 
@@ -92,7 +92,7 @@ Configure the Windows Firewall on `dataProcStage2` using a new remote desktop se
 
 1. In the `dataProcStage1` remote session, open Remote Desktop.
 
-1. Connect to `dataProcStage2` by name. Based on the default network configuration, `dataProcStage1` can resolve the address for `dataProcStage2` using the computer name.
+1. Connect to `dataProcStage2` by name (by using `mstsc /v:dataProcStage2`). Based on the default network configuration, `dataProcStage1` can resolve the address for `dataProcStage2` using the computer name.
 
 1. Sign in to `dataProcStage2` with the username and the password you created.
 
