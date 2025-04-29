@@ -12,13 +12,11 @@ Before we add the Orders function app to the API, let's test the function it hos
 
 1. From the list of functions for your function app, select **OrderDetails**. The **OrderDetails** Function Overview pane appears.
 
-1. In the Order Details menu, under **Developer**, select **Code + Test**. The **Code + Test** pane for the OrderDetails function appears, showing the contents of the `function.json` file.
+1. In Order Details, the **Code + Test** pane shows the contents of the `function.json` file. On the command bar, select **Test/Run**. The **Input** parameters tab for your OrderDetails function appears.
 
     :::image type="content" source="../media/5-test-order-details.png" alt-text="OrderDetails JSON code, with Code + Test in menu and Test/Run in command bar highlighted.":::
 
-1. On the command bar, select **Test/Run**.  The **Input** parameters tab for your OrderDetails function appears.
-
-1. In the **HTTP method** field, select **GET** from the dropdown list, and then under **Query**, select **Add parameter**, and in the **Name** field, enter *name*, and in the **Value** field, enter *Chiba* (value is case-sensitive), and then select **Run**.
+1. In the **HTTP method** field, select **GET** from the dropdown list. Under **Query** in the **Name** field enter *name*. In the **Value** field enter *Chiba* (value is case-sensitive) and then select **Run**.
 
 1. A log console opens and displays the status of the request. The **Output** tab displays the HTTP response code and content in JSON format.
 
@@ -48,15 +46,15 @@ In this step, we add the Order function to the API Management resource that we c
 
 1. To select your function app, select **Browse**. The **Import Azure Functions** pane appears.
 
-1. On the **Configure required settings** field, select **Select**.
+1. On the **Configure required settings** field choose **Select**.
 
     ![Screenshot of the Import Azure Functions dialog box with Configure required settings field and Select button highlighted.](../media/5-import-azure-function-app-03-inline.png)(../media/5-import-azure-function-app-03-expanded.png#lightbox)
 
     The **Select Azure Function App** pane appears.
 
-1. Select **OrderFunctionNNNNNNN**, and then select **Select**. The **Import Azure Functions** pane reappears with your OrderDetails function app configured.
+1. Select your **OrderFunction**, and then choose **Select**. The **Import Azure Functions** pane reappears with your OrderDetails function app configured.
 
-1. Ensure that **OrderDetails** is checked, and then, at the bottom of the page, select **Select** to add the function. The **Create from Function App** dialog box appears.
+1. Ensure that **OrderDetails** is checked, and then at the bottom of the page choose **Select** to add the function. The **Create from Function App** dialog box appears.
 
 1. Replace the value in the **API URL suffix** field with *orders*. Notice how this change updates the Base URL. Select **Create** to create your API.
 
@@ -68,7 +66,7 @@ In this step, we add the Order function to the API Management resource that we c
 
 Now that we added OrderDetails to our API, let's test it by using the API Management tools in the Azure portal.
 
-1. On the OrderFunctionNNNNNN APIs Design tab, under **All operations**, select **GET OrderDetails**, and then select the **Test** tab.
+1. On your **OrderFunction** APIs Design tab under **All operations**, select **GET OrderDetails**, and then select the **Test** tab.
 
 1. In the **Query parameters** section, select **Add parameter**, and enter *name* in the **NAME** field and *Chiba* and in the **VALUE** field. Select **Send**.
 

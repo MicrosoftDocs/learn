@@ -47,9 +47,7 @@ Now, let's test the ProductDetails function to see how it behaves before we add 
 
 1. On the **Input** tab, in the **HTTP method** field dropdown list, select **GET**.
 
-1. Under **Query**, Select **Add parameter**
-
-1. In the **Name** field, enter *id*, and in the **Value** field, enter *3*, and then select **Run**.
+1. Under **Query** in the **Name** field, enter *id*, and in the **Value** field, enter *3*. Then select **Run**.
 
    :::image type="content" source="../media/3-test-input.png" alt-text="Screenshot of the input pane for Test + Run, with the input parameter for the HTTP GET method highlighted.":::
 
@@ -59,7 +57,7 @@ Now, let's test the ProductDetails function to see how it behaves before we add 
 
     Optionally, you can also test the function by inputting ID values 1 and 2.
 
-1. Select **Close** to close the Input Output tabs for Code + Test.
+1. Select **Close** to close the Input/Output tabs for Code + Test.
 
 1. On the command bar of the ProductDetails Code + Test pane, select **Get function URL**. Notice that the URL subdomain is the name of your function app, followed by the  **azurewebsites.net** domain.
 
@@ -73,14 +71,14 @@ After the function app is deployed and tested, let's export it as an API using A
 1. In the resource menu, select **All resources**. The **All resources** pane appears.
 
 1. Sort the list of resources by type. Notice you have an OrderFunction app and a ProductFunction app.
- 
+
 1. Select the **ProductFunction** function app.
 
 1. In the Function App menu, scroll to the **API** category, and then select **API Management**. The **API Management** pane for ProductFunction function app appears.
 
     :::image type="content" source="../media/3-create-api.png" alt-text="Screenshot showing menu selection to open the API Management app service.":::
 
-1. Under the **API Management** field, select **Create new**. The **Install API Management gateway** pane appears.
+1. Under the **API Management** field, select **Create new**. The **Create API Management service** pane appears.
 
     :::image type="content" source="../media/3-api-details.png" alt-text="Screenshot showing settings for an API Management service.":::
 
@@ -96,7 +94,7 @@ After the function app is deployed and tested, let's export it as an API using A
     | Administrator email | Enter an email address. |
     | Pricing tier | Consumption (99.95% SLA) |
 
-1. Select **Next: Monitoring** and clear the **Application Insights** option.
+1. Select **Next: Monitor + secure** and clear the **Application Insights** option.
 
 1. Select **Review + Create**. When the validation completes, select **Create** to create a linked API Management instance. Allow several minutes for the export to complete.
 
