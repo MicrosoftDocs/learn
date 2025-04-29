@@ -84,7 +84,11 @@ At a minimum, you'll need to complete the following steps:
 
 ## Set up your project in Visual Studio Code
 
- When you ran the template to set up your Azure DevOps project, the process forked the [mslearn-tailspin-spacegame-web-deploy](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy) repository automatically for you. Now you'll download, or *clone*, a copy to your computer so you can work with it.
+1. On GitHub, go to the [mslearn-tailspin-spacegame-web-deploy](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy) repository.
+
+1. Select **Fork** at the top-right of the screen.
+
+1. Choose your GitHub account as the **Owner**, then select **Create fork**.
 
 ### Clone your fork locally
 
