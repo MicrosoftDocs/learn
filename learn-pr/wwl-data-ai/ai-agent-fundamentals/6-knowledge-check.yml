@@ -36,7 +36,7 @@ quiz:
     - content: "Microsoft 365 Copilot Chat"
       isCorrect: false
       explanation: "Incorrect. Microsoft 365 Copilot Chat doesn't offer a selection of models for agent development."
-  - content: "Whet element of an Azure AI Agent Service agent enables it to *ground* prompts with contextual data?"
+  - content: "What element of an Azure AI Agent Service agent enables it to *ground* prompts with contextual data?"
     choices:
     - content: "Model"
       isCorrect: false
