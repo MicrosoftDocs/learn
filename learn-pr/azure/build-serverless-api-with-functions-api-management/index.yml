@@ -9,13 +9,13 @@ metadata:
   ms.topic: module-standard-task-based
   ms.service: azure-api-management
   manager: susanpotter
-title: Expose multiple Azure Function apps as a consistent API by using Azure API Management
+title: Expose multiple Azure Function apps as a consistent API by using Azure API Management
 summary: Combine multiple Azure Functions apps into a unified interface by importing them into a single Azure API Management instance.
 abstract: | 
-  In this module, you will:
-  - Identify the value of Azure API Management in a serverless application
-  - Import an Azure Functions app as an API in Azure API Management
-  - Import multiple Azure Functions apps as a single API in Azure API Management
+  In this module, you'll:
+  - Identify the value of Azure API Management in a serverless application.
+  - Import an Azure Functions app as an API in Azure API Management.
+  - Import multiple Azure Functions apps as a single API in Azure API Management.
 prerequisites: |
   - Basic knowledge of Azure API Management and Azure Functions
 iconUrl: /training/achievements/build-serverless-api-with-functions-api-management.svg
