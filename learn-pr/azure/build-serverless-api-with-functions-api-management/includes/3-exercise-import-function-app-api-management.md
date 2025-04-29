@@ -43,7 +43,7 @@ Now, let's test the ProductDetails function to see how it behaves before we add 
 
     :::image type="content" source="../media/3-code-test-product-details-function.png" alt-text="Screenshot of the ProductDetails Code and Test pane, with Test/Run selected in the command bar.":::
 
-1. On the command bar, select **Test/Run**.  The Input/Output pane appears for testing your HTTP request.
+1. On the command bar, select **Test/Run**. The Input/Output pane appears for testing your HTTP request.
 
 1. On the **Input** tab, in the **HTTP method** field dropdown list, select **GET**.
 

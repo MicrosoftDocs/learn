@@ -16,7 +16,7 @@ Before we add the Orders function app to the API, let's test the function it hos
 
     :::image type="content" source="../media/5-test-order-details.png" alt-text="OrderDetails JSON code, with Code + Test in menu and Test/Run in command bar highlighted.":::
 
-1. In the **HTTP method** field, select **GET** from the dropdown list. Under **Query** in the **Name** field enter *name*. In the **Value** field enter *Chiba* (value is case-sensitive) and then select **Run**.
+1. In the **HTTP method** field, select **GET** from the dropdown list. Under **Query** in the **Name** field enter *name*. In the **Value** field, enter *Chiba* (value is case-sensitive) and then select **Run**.
 
 1. A log console opens and displays the status of the request. The **Output** tab displays the HTTP response code and content in JSON format.
 
@@ -46,7 +46,7 @@ In this step, we add the Order function to the API Management resource that we c
 
 1. To select your function app, select **Browse**. The **Import Azure Functions** pane appears.
 
-1. On the **Configure required settings** field choose **Select**.
+1. On the **Configure required settings** field, choose **Select**.
 
     ![Screenshot of the Import Azure Functions dialog box with Configure required settings field and Select button highlighted.](../media/5-import-azure-function-app-03-inline.png)(../media/5-import-azure-function-app-03-expanded.png#lightbox)
 
