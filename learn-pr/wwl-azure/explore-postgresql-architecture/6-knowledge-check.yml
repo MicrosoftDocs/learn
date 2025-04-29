@@ -2,6 +2,7 @@
 uid: learn.wwl.explore-postgresql-architecture.knowledge-check
 title: Module assessment
 metadata:
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
   ms.date: 05/08/2024
@@ -48,4 +49,4 @@ quiz:
       explanation: "Correct. The postmaster daemon is the server process that is responsible for server start-up processes and shutting down the server."
     - content: "PostgreSQL backend processes."
       isCorrect: false
-      explanation: "Incorrect. The PostgreSQL backend processes are responsible for connection handling, and not starting and shutting down the server."
+      explanation: "Incorrect. The PostgreSQL backend processes are responsible for connection handling, and not starting and shutting down the server."

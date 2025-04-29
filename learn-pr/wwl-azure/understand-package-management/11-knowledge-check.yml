@@ -2,6 +2,8 @@
 uid: learn.wwl.understand-package-management.knowledge-check
 title: Module assessment
 metadata:
+  hidden_question_numbers: ["36170A3A_18","36170A3A_63","36170A3A_71","36170A3A_79","36170A3A_116"]
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
   ms.date: 05/07/2024
@@ -48,4 +50,4 @@ quiz:
       explanation: "Incorrect. Azure Artifacts currently supports feeds that can store five different package types such as NuGet packages, npm packages, Maven, Universal packages, and Python."
     - content: "Python."
       isCorrect: false
-      explanation: "Incorrect. Azure Artifacts currently supports feeds that can store five different package types such as NuGet packages, npm packages, Maven, Universal packages, and Python."
+      explanation: "Incorrect. Azure Artifacts currently supports feeds that can store five different package types such as NuGet packages, npm packages, Maven, Universal packages, and Python."
