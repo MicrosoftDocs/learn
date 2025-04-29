@@ -4,7 +4,7 @@ title: Exercise - Create an Azure virtual network
 metadata:
   title: Exercise - Create an Azure virtual network
   description: Exercise - Create an Azure virtual network
-  ms.date: 11/01/2023
+  ms.date: 04/22/2025
   author: mbender-ms
   ms.author: mbender
   ms.topic: unit
@@ -13,4 +13,4 @@ metadata:
 durationInMinutes: 20
 content: |
   [!include[](includes/3-exercise-create-azure-virtual-network.md)]
-
+
