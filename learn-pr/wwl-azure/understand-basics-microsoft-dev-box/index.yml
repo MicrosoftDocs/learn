@@ -3,7 +3,7 @@ uid: learn.wwl.understand-basics-microsoft-dev-box
 metadata:
   title: Understand the Basics of Microsoft Dev Box
   description: "This module discusses the fundamentals of the Microsoft dev Box, its key concepts, and architecture."
-  ms.date: 04/28/2025
+  ms.date: 04/29/2025
   author: wwlpublish
   ms.author: fkhan
   ms.topic: module
@@ -23,7 +23,6 @@ abstract: |
   -   Detail out network connectivity, Intune integration, identity service, and user connectivity for the service.
 prerequisites: '-   You should be familiar with basic cloud computing concepts and terminology.'
 iconUrl: /training/achievements/generic-badge.svg
-hidden: true
 levels:
 - intermediate
 roles:
