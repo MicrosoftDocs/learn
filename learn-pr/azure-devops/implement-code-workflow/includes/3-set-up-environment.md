@@ -39,6 +39,16 @@ Run a template that sets up your Azure DevOps organization.
 
 [!include[](../../shared/includes/project-visibility.md)]
 
+## Fork the repository
+
+If you haven't already, fork the **mslearn-tailspin-spacegame-web** repository.
+
+1. On GitHub, go to the [mslearn-tailspin-spacegame-web](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web) repository.
+
+1. Select **Fork** at the top-right of the screen.
+
+1. Choose your GitHub account as the **Owner**, then select **Create fork**.
+
 ## Move the work item to Doing
 
 In this section, you'll assign yourself a work item that relates to this module on Azure Boards. You'll also move the work item to the **Doing** state. In practice, you and your team would create work items at the start of each sprint or work iteration.
