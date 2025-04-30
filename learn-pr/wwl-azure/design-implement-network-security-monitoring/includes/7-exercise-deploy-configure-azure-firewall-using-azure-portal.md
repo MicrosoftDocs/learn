@@ -26,3 +26,6 @@ Being part of the Network Security team at Contoso, your next task is to create 
 > You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
 [![Screenshot of the simulation page.](../media/simulation-firewall-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Deploy%20and%20configure%20Azure%20Firewall%20using%20the%20Azure%20portal)
+
+> [!NOTE]
+> You can view the [Deploy and configure Azure Firewall using the Azure portal](https://microsoftlearning.github.io/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/Instructions/Exercises/M06-Unit%207%20Deploy%20and%20configure%20Azure%20Firewall%20using%20the%20Azure%20portal.html) instructions directly on the GitHub. 

@@ -2,6 +2,7 @@
 uid: learn.run-docker-containers-aci.7-knowledge-check
 title: Module assessment
 metadata:
+  ai_generated_module_assessment: true
   title: Module assessment
   description: Knowledge check
   ms.date: 01/15/2025
@@ -48,4 +49,3 @@ quiz:
     - content: "`az container exec`"
       isCorrect: false
       explanation: "The `az container exec` command executes a command from within a running container of a container group."
-
