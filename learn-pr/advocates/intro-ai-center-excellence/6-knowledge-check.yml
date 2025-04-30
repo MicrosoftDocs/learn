@@ -34,7 +34,7 @@ quiz:
         - content: "By centralizing all AI development to avoid departmental duplication."
           isCorrect: false
           explanation: "Execution is often decentralized, especially in larger organizations."
-    - content: "Which role is designs and optimizes inputs for generative AI models to guide their behavior?"
+    - content: "Which role designs and optimizes inputs for generative AI models to guide their behavior?"
       choices:
         - content: "AI Agent Engineer"
           isCorrect: false
