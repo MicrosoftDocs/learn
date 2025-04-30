@@ -44,7 +44,7 @@ Create a dedicated branch and issue pull requests to pull changes from your bran
 For development using a separate, isolated workspace:
 
 1. Connect a development workspace to the main branch, following the instructions in the section on this page entitled "Connect to a Git Repository". 
-2. If you're a developer who works in the Fabric web interface, create an isolated branch for your work from the development workspace that's connected to the main branch by selecting **Source control** and **Branch out to new workspace**. Name the branch and associate it with another workspace.  The new workspace syncs with the main branch and become an isolated work environment for your work.
+2. If you're a developer who works in the Fabric web interface, create an isolated branch for your work from the development workspace that's connected to the main branch by selecting **Source control** and **Branch out to new workspace**. Name the branch and associate it with another workspace.  The new workspace syncs with the new branch you create and become an isolated work environment for your work.
 
     :::image type="content" source="../media/branch-out-to-new-workspace.png" alt-text="Screenshot of creating new workspace and branch." :::
 
