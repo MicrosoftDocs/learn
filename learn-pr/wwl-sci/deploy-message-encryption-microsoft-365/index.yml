@@ -42,6 +42,6 @@ units:
 - learn.wwl.deploy-message-encryption-microsoft-365.implement-advanced-message-encryption
 - learn.wwl.deploy-message-encryption-microsoft-365.mail-flow-rules-encryption
 - learn.wwl.deploy-message-encryption-microsoft-365.knowledge-check
-- learn.wwl.deploy-message-encryption-microsoft-365.summary-resources
+- learn.wwl.deploy-message-encryption-microsoft-365.summary
 badge:
   uid: learn.wwl.deploy-message-encryption-microsoft-365.badge
