@@ -7,7 +7,14 @@ The following guide provides you with a getting started and expanded checklist o
 - Project
 - Developers
 
-Using the provided checklists, pick one of these categories and compare the list of items to one of your existing repositories. If you're focusing on the repository itself, what files do you need to add or remove to add clarity around its purpose? How do you contribute to the repository or open up issues?
+Using the provided checklists, choose one category and compare it to one of your current repositories. For example, if you're focusing on the repository itself, which files should be added or removed to clarify its purpose and contribution process?**
+
+**Example checklist – Repository:**
+- [ ] Add or update `README.md`
+- [ ] Include `LICENSE`
+- [ ] Provide a clear contribution guide (`CONTRIBUTING.md`)
+- [ ] Set repository visibility (public/internal/private)
+- [ ] Include issue and pull request templates
 
 After reading through the guide and identifying ways to improve your own GitHub repositories, return here for:
 

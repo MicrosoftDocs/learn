@@ -10,11 +10,13 @@ Anyone can freely use, modify, and share open-source software. Using open-source
 
 An InnerSource program can offer numerous benefits beyond what traditional closed-source models provide.
 
-First, they *encourage transparency*. Access to the source code of other company projects can help developers be more productive when working on their own projects. They can see how different teams solve problems similar to the ones they're facing, and often find code and other assets that they can reuse. Access to team issues, pull requests, and project plans also provide better data for them to understand the velocity and direction of the project.
+First, they *support internal visibility*. Access to the source code of other company projects can help developers be more productive when working on their own projects. They can see how different teams solve problems similar to the ones they're facing, and often find code and other assets that they can reuse. Access to team issues, pull requests, and project plans also provide better data for them to understand the velocity and direction of the project.
 
-Next, they *reduce friction*. Let's say that a consumer team is dependent on a bug fix or new feature for a project owned by a different team. IN an InnerSource program, they have a channel through which they can propose the changes they need. And if those changes can't be merged in for any reason, the consumer team has the option of forking the project to meet their needs.
+Next, they *reduce friction*. Let's say that a consumer team is dependent on a bug fix or new feature for a project owned by a different team. In an InnerSource program, they have a channel through which they can propose the changes they need. And if those changes can't be merged in for any reason, the consumer team has the option of forking the project to meet their needs.
 
 Finally, they *standardize practices*. A common challenge development organizations face is that different teams often diverge in the ways they operate. Building an InnerSource program is a great opportunity to adopt standard conventions that can be used across every development team, even if they don't follow identical practices. For example, two teams might prefer different processes for accepting contributions. Having them standardize on the way they communicate their different processes makes it much easier for anyone to contribute to either.
+
+**Tip:** Consider using GitHub Discussions and GitHub Projects to further support InnerSource collaboration across teams.
 
 These examples are just a few of the benefits enjoyed by InnerSource programs. To learn more, see [An introduction to InnerSource](https://resources.github.com/whitepapers/introduction-to-innersource/?azure-portal=true).
 
