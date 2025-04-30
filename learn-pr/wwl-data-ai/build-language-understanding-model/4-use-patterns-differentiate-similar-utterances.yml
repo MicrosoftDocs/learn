@@ -4,9 +4,9 @@ title: Use patterns to differentiate similar utterances
 metadata:
   title: Use patterns to differentiate similar utterances
   description: Use patterns to differentiate similar utterances
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 08/20/2024
+  ms.date: 04/30/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -15,4 +15,4 @@ labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/4-use-patterns-differentiate-similar-utterances.md)]
-
+
