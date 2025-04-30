@@ -27,7 +27,8 @@ These examples are just a few of the benefits enjoyed by InnerSource programs. T
 You can configure GitHub repositories with three levels of visibility. Users who don't meet the visibility requirement see "not found" pages when they try to access your repository. The levels are:
 
 - **Public** repositories are visible to everyone. Use this visibility for projects that are truly open source and offer access to people inside and outside of your organization.
-- **Internal** repositories are only visible to members of the organization that owns them. Use this visibility for InnerSource projects.
+- **Internal** repositories are only visible to members of the enterprise that owns them.
+**Note:** Internal repositories are only available to GitHub Enterprise customers. Use this visibility for InnerSource projects
 - **Private** repositories are only visible to the owner and any teams or individuals they add. Use this visibility for projects that only specific users and groups should have access to.
 
 Once you establish repository visibility, you can configure permissions on an individual or team basis. There are five permission levels:
