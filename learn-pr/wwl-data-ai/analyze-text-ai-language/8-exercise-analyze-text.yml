@@ -4,9 +4,9 @@ title: Exercise - Analyze text
 metadata:
   title: Exercise - Analyze text
   description: Exercise - Analyze text
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 08/31/2023
+  ms.date: 04/30/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -15,4 +15,4 @@ labId: 152406
 labModal: true
 content: |
   [!include[](includes/8-exercise-analyze-text.md)]
-
+
