@@ -3,7 +3,7 @@ uid: learn.intro-to-azure-ad.2-overview
 metadata:
   title: Microsoft Entra overview
   description: Microsoft Entra overview
-  ms.date: 12/18/2023
+  ms.date: 04/30/2025
   author: MicrosoftGuyJFlo
   ms.author: joflore
   ms.topic: unit
@@ -36,4 +36,4 @@ quiz:
     - content: It's a percentage between 1 and 100 that indicates how well your organization's tenants align with each other.
       isCorrect: false
       explanation: An identity security score indicates how aligned your security is with Microsoft best practices.
-
+
