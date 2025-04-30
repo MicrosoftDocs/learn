@@ -1,4 +1,4 @@
-In the previous unit, you learned about typical administration tasks at the team, organization, and enterprise level. In this unit, you'll deep dive into one of the most common administrative tasks performed by organization owners, which is setting up and controlling users' authentication to GitHub.
+In the previous unit, you learned about typical administration tasks at the team, organization, and enterprise level. In this unit, you’ll explore one of the most common administrative tasks performed by organization owners, which is setting up and controlling users' authentication to GitHub.
 
 ## GitHub's authentication options
 
@@ -6,7 +6,7 @@ There are several options for authenticating with GitHub:
 
 ### Username and password
 
-Administrators can allow users to continue using the default username and password authentication method, sometimes known as the "basic" HTTP authentication scheme. In recent years, basic authentication has proven to be too risky when dealing with highly sensitive information. We strongly recommend using one (or several) of the other options listed in this unit.
+Administrators can allow users to continue using the default username and password authentication method, sometimes known as the "basic" HTTP authentication scheme. **Note: GitHub no longer supports password authentication for Git operations or API usage.** We strongly recommend using one (or several) of the other options listed in this unit.
 
 ### Personal access tokens
 
