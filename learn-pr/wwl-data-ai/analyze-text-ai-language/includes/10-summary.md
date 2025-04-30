@@ -9,4 +9,4 @@ To learn more about Azure AI Language and some of the concepts covered in this m
 
 - [Azure AI Language documentation](/azure/ai-services/language-service/)
 - [Build a conversational language understanding model](/training/modules/build-language-understanding-model/)
-- [Create a custom named entity extraction solution](/training/modules/custom-name-entity-recognition/?ns-enrollment-type=learningpath&ns-enrollment-id=learn.wwl.build-custom-text-analytics)
+- [Create a custom named entity extraction solution](/training/modules/custom-name-entity-recognition/)
