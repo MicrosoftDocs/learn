@@ -6,7 +6,7 @@ metadata:
   description: Knowledge check
   author: ivorb
   ms.author: berryivor
-  ms.date: 11/5/2024
+  ms.date: 04/30/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -37,4 +37,4 @@ quiz:
     - content: "Azure AI Services"
       isCorrect: true
       explanation: "That's correct. You can publish a trained Azure AI Custom Vision model to either an Azure AI Custom Vision (Prediction) resource or an Azure AI Services multi-service resource."
-
+
