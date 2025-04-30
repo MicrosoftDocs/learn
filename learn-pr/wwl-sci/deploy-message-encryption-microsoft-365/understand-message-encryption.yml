@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-message-encryption-microsoft-365.message-encryption-overview
+title: Understand message encryption
+metadata:
+  title: Understand message encryption
+  description: "Understand message encryption"
+  ms.date: 04/30/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/message-encryption-overview.md)]

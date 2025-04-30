@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-message-encryption-microsoft-365
 metadata:
-  title: Deploy Microsoft Purview Message Encryption
-  description: "Deploy Microsoft Purview Message Encryption"
-  ms.date: 06/28/2022
+  title: Implement secure email with Microsoft Purview Message Encryption
+  description: "Implement secure email with Microsoft Purview Message Encryption"
+  ms.date: 04/30/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
@@ -27,12 +27,16 @@ products:
 - microsoft-purview
 - office-365
 subjects:
+- security
 - communication
 units:
 - learn.wwl.deploy-message-encryption-microsoft-365.introduction
-- learn.wwl.deploy-message-encryption-microsoft-365.plan-encryption-solutions-based-methods-available
-- learn.wwl.deploy-message-encryption-microsoft-365.implement-encryption-solutions-available
-- learn.wwl.deploy-message-encryption-microsoft-365.implement-office-365-message-encryption
+- learn.wwl.deploy-message-encryption-microsoft-365.understand-message-encryption
+- learn.wwl.deploy-message-encryption-microsoft-365.plan-message-encryption
+- learn.wwl.deploy-message-encryption-microsoft-365.implement-message-encryption
+- learn.wwl.deploy-message-encryption-microsoft-365.branding-template
+- learn.wwl.deploy-message-encryption-microsoft-365.implement-advanced-message-encryption
+- learn.wwl.deploy-message-encryption-microsoft-365.mail-flow-rules-encryption
 - learn.wwl.deploy-message-encryption-microsoft-365.knowledge-check
 - learn.wwl.deploy-message-encryption-microsoft-365.summary-resources
 badge:
