@@ -1,5 +1,6 @@
 
 
+
 Azure automatically creates a route table for each subnet within an Azure virtual network. The route table has the default system routes and any user defined routes you require. and adds system default routes to the table. 
 
 ## System routes
