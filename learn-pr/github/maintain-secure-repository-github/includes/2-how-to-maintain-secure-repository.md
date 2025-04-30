@@ -1,7 +1,7 @@
 Here, we discuss some of the essential security tools and techniques available to GitHub repository administrators. 
 
 >[!Note]
-> The following content doesn't cover the fundamentals of writing secure code, but rather important security considerations, tools, and features to use within a GitHub repository.
+> This content focuses on** important security considerations, tools, and features to use within a GitHub repository.
 
 ## The importance of a secure development strategy
 
@@ -51,6 +51,7 @@ From the Security tab, you can add features to your GitHub workflow to help avoi
 - **Dependabot alerts** that notify you when GitHub detects that your repository is using a vulnerable dependency or malware.
 - **Security advisories** that you can use to privately discuss, fix, and publish information about security vulnerabilities in your repository.
 - **Code scanning** that helps you find, triage, and fix vulnerabilities and errors in your code.
+- **Secret scanning** that detects tokens, credentials, and secrets committed to your repo and can block them before the push. **Push protection** is enabled by default on public repositories.
 
 For more information, see [GitHub security features](https://docs.github.com/code-security/getting-started/github-security-features).
 
