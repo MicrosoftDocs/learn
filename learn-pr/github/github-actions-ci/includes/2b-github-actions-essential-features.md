@@ -69,7 +69,7 @@ jobs.<job_id>.steps.with	|	github, needs, strategy, matrix, job, runner, env, va
 jobs.<job_id>.steps.working-directory	|	github, needs, strategy, matrix, job, runner, env, vars, secrets, steps, inputs	|	hashFiles
 jobs.<job_id>.strategy	|	github, needs, vars, inputs	|	None
 jobs.<job_id>.timeout-minutes	|	github, needs, strategy, matrix, vars, inputs	|	None
-jobs.<job_id>.with.<with_id>	|	github, needs, strategy, matrix, inputs, vars	|	Nonehttps://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+jobs.<job_id>.with.<with_id>	|	github, needs, strategy, matrix, inputs, vars	|	None
 on.workflow_call.inputs.<inputs_id>.default	|	github, inputs, vars	|	None
 on.workflow_call.outputs.<output_id>.value	|	github, jobs, vars, inputs	|	None
 
