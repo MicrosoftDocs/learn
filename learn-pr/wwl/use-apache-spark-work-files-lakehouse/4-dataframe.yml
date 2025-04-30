@@ -6,7 +6,7 @@ metadata:
   description: "Work with data in a Spark dataframe"
   ms.date: 04/16/2025
   author: wwlpublish
-  ms.author: anrudduc
+  ms.author: theresai
   ms.topic: unit
   ms.custom:
   - build-2023

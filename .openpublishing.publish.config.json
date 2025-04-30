@@ -129,5 +129,6 @@
     ".openpublishing.redirection.json",
     "learn-pr/wwl-data-ai/.openpublishing.redirection.wwl-data-ai.json",
     "learn-pr/wwl-sci/.openpublishing.redirection.wwl-sci.json"
-  ]
+  ],
+  "enable_ai_generated_module_assessment" : true
 }
