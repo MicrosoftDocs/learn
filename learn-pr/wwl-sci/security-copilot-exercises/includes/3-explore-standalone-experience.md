@@ -17,6 +17,21 @@ This exercise should take approximately **15** minutes to complete.
 > [!NOTE]
 > When a lab instruction calls for opening a link to the simulated environment, it is generally recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
 
+#### Task: Explore Prompts to try
+
+In this task, you start exploration in the center portion of the on landing page, where it says Prompts to try.
+
+1. Open the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/2cac767e-42c4-4058-afbb-a9413aac461d?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
+
+1. Note the options available beneath where it says Prompts to try.  Here you can search for prompts or promptbooks, based on the option you select and you can filter based on role and/or plugin.  Note: for the purpose of this simulation, 
+1. Select prompts  – in parallel, user should be able to select any role and/or plugin filter.
+1. Once a prompt is selected, user can select the X to close  
+1. select another prompt.
+1. Select promptbooks (any promptbook) - in parallel, user should be able to select any role and/or plugin filter.  
+
+
+
+
 #### Task: Explore the menu options
 
 In this task, you start your exploration in the home menu.
