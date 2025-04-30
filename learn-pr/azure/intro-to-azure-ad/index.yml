@@ -11,7 +11,7 @@ metadata:
 title: Secure your identities by using Microsoft Entra ID
 summary: Secure internal resources, external resources, SaaS applications, and more by using Microsoft Entra ID. Learn about the features and capabilities of Microsoft Entra ID.
 abstract: | 
-  In this module, you will:
+  In this module, you'll:
   - Describe the core terminology of Microsoft Entra ID.
   - Describe the core features of Microsoft Entra ID.
   - Describe the licensing models for Microsoft Entra ID.

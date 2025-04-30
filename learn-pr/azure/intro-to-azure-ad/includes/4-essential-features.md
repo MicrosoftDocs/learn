@@ -26,7 +26,7 @@ This feature is available for all licensing tiers in Microsoft Entra ID.
 
 You can also use Azure AD B2C to manage your customers' identities and access. You want to give your doctors' accounts protected access to resources and services. Use Azure AD B2C to securely authenticate the doctors through their preferred identity providers.
 
-AD B2C also helps you monitor for threats&mdash;like brute force attacks and denial-of-service attacks&mdash;on doctors' user accounts. To use Azure AD B2C, you first register your apps. Then, you configure user flows to set up the user's journey to access an app.
+AD B2C also helps you monitor for threats like brute force attacks and denial-of-service attacks on doctors' user accounts. To use Azure AD B2C, you first register your apps. Then, you configure user flows to set up the user's journey to access an app.
 
 For example, a flow for the sign-in process might go like this:
 
@@ -61,56 +61,46 @@ This feature is available for pay-as-you-go, based on the total number of object
 
 Your company might provide many apps that internal and external users rely on. Users might want to access these apps from different devices and locations. You can use Microsoft Entra ID as a cloud-based solution to manage user access for all of these apps.
 
-You can manage different categories of apps in Microsoft Entra ID:
+You can manage different categories of apps in Microsoft Entra ID in **Enterprise Applications** > **+ New Application**:
 
-- **Microsoft Entra App Gallery applications**. Thousands of SaaS apps are integrated with Microsoft Entra ID. Find these apps in Azure Marketplace.
+- **Microsoft Entra App Gallery applications**. Thousands of SaaS apps are integrated with Microsoft Entra ID.
+- **Non-gallery applications**. You can manually add any apps that you don't see in the gallery.
+- **On-premises applications**. You can add on-premises apps by configuring the Microsoft Entra application proxy. This process creates secure remote access for your on-premises apps. To connect them, download and install the Application Proxy connector on-premises.
 
-    ![Azure Marketplace.](../media/4-azure-ad-marketplace.png)
+    ![Browse Microsoft Entra Gallery.](../media/4-microsoft-entra-gallery.png)
 
-- **Custom applications**. You can register your company-built apps with Microsoft Entra ID. You can then control and monitor authentication for these apps.
+- **Custom applications**. You can register your company-built apps with Microsoft Entra ID in **App Registrations**. You can then control and monitor authentication for these apps.
 
     ![Add a custom application.](../media/4-applications.png)
 
-- **Non-gallery applications**. You can manually add any apps that you don't see in the gallery.
-
-    ![Add a non-gallery application.](../media/4-non-gallery-applications.png)
-
-- **On-premises applications**. You can add on-premises apps by configuring the Microsoft Entra application proxy. This process creates secure remote access for your on-premises apps. To connect them, download and install the Application Proxy connector on-premises.
-
-    ![Add an on-premises application.](../media/4-add-on-premises-application.png)
-
 In the following sections, you learn about other Microsoft Entra features you can use to benefit your apps.
 
-### Protect your apps through conditional-access policies
+### Protect your apps through Conditional Access policies
 
-You can use conditional-access policies to require users to pass more authentication challenges before they access an app. For example, you can configure a conditional-access policy to require users to complete a multifactor authentication challenge after their credentials are verified and before they access the app.
+You can use Conditional Access policies to require users to pass more authentication challenges before they access an app. For example, you can configure a Conditional Access policy to require users to complete a multifactor authentication challenge after their credentials are verified, and before they access the app.
 
-![Require multi-factor authentication in Azure AD.](../media/4-conditional-access-policy.png)
+![Conditional Access menu.](../media/4-conditional-access.png)
 
-Conditional-access policies are available for Premium P1 and Premium P2 license tiers.
+Conditional Access policies are available for Premium P1 and Premium P2 license tiers.
 
 ### Monitor your app access
 
-Microsoft Entra ID can help monitor your app sign-ins by generating reports that cover sign-in dates, user details, the apps a user uses, risk detection, location, and more. You can access those reports through the Azure portal or specific APIs for programmatic usage.
+Microsoft Entra ID can help monitor your app sign-ins by generating reports that cover sign-in dates, user details, the apps a user uses, risk detection, location, and more. You can access those reports through the Azure portal as shown, specific APIs for programmatic usage, or in Microsoft Entra admin center under **Monitoring & health**. Reports are available for all licensing tiers.
 
 ![Microsoft Entra reports.](../media/4-reports.png)
-
-Reports are available for all licensing tiers.
 
 <a name='azure-ad-identity-protection'></a>
 
 ## Microsoft Entra ID Protection
 
-Microsoft Entra ID Protection helps you to automatically detect, investigate, and remediate identity risks for users. Identity Protection also lets you export all the information collected about risks. You can export the information to non-Microsoft tools and solutions so that you can further analyze it.
+Microsoft Entra ID Protection helps you to automatically detect, investigate, and remediate identity risks for users. It also lets you export all the information collected about risks. You can export the information to non-Microsoft tools and solutions so that you can further analyze it.
 
-Identity Protection uses risk policies to automatically detect and respond to threats. You can configure a risk policy to set up how Identity Protection should respond to a particular type of risk. Use policies in this way to save time and give you peace of mind.
+Microsoft Entra ID Protection uses risk policies to automatically detect and respond to threats. You can configure a risk policy to set up how it should respond to a particular type of risk. Use policies in this way to save time and give you peace of mind.
 
-![Identity Protection flow in Azure AD.](../media/4-identity-protection-flow.svg)
+![Microsoft Entra ID Protection flow in Azure AD.](../media/4-identity-protection-flow.svg)
 
-First, the admin configures the risk policies by using automated risk detection and remediation through Identity Protection. The policies then monitor for identity risks. When a risk is detected, the policies enforce measures to remediate it. For example, a policy might require a user to reset their password in response to a detected risk. The user then resets their password, and the risk is remediated.
+First, the Administrator configures the risk policies by using automated risk detection and remediation through Microsoft Entra ID Protection. The policies then monitor for identity risks. When a risk is detected, the policies enforce measures to remediate it. For example, a policy might require a user to reset their password in response to a detected risk. The user then resets their password, and the risk is remediated.
 
-You can configure risk policies through the Azure portal. For example, the following risk policy detects user risks and remediates them by requiring the user to reset their password.
+You can configure risk policies through the Azure portal as shown or through the Microsoft Entra admin center. For example, the following risk policy detects user risks and remediates them by requiring the user to reset their password. Microsoft Entra ID Protection is available for the Premium P2 licensing tier.
 
 ![Risk policy in Microsoft Entra ID Protection.](../media/4-risk-policy.png)
-
-Identity Protection is available for the Premium P2 licensing tier.
