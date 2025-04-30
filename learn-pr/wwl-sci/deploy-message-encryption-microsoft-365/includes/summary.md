@@ -14,8 +14,8 @@ Without encryption, sensitive information shared via email can be intercepted, m
 
 Use these resources to discover more background details of the described articles from this module:
 
-- [Email encryption](/purview/email-encryption)
-- [Message encryption](/purview/ome)
-- [Set up Message Encryption](/purview/set-up-new-message-encryption-capabilities)
-- [Advanced Message Encryption](/purview/ome-advanced-message-encryption)
-- [Define mail flow rules to encrypt email messages](/purview/define-mail-flow-rules-to-encrypt-email)
+- [Email encryption](/purview/email-encryption?azure-portal=true)
+- [Message encryption](/purview/ome?azure-portal=true)
+- [Set up Message Encryption](/purview/set-up-new-message-encryption-capabilities?azure-portal=true)
+- [Advanced Message Encryption](/purview/ome-advanced-message-encryption?azure-portal=true)
+- [Define mail flow rules to encrypt email messages](/purview/define-mail-flow-rules-to-encrypt-email?azure-portal=true)

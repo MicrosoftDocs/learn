@@ -10,13 +10,13 @@ Your Microsoft 365 tenant must have a supported license to use Advanced Message 
 - Office 365 E5
 - Office 365 Education A5
 
-If your organization uses Microsoft 365 E3, you can add this capability through the Microsoft 365 E5 Compliance add-on or another eligible compliance SKU. For full details, see the [message policy and compliance service description](https://learn.microsoft.com/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance).
+If your organization uses Microsoft 365 E3, you can add this capability through the Microsoft 365 E5 Compliance add-on or another eligible compliance SKU. For full details, see the [message policy and compliance service description](/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance?azure-portal=true).
 
 ## Set expiration dates for encrypted emails
 
 You can configure encrypted emails to expire after a specific number of days. This helps limit how long recipients can access the content.
 
-1. Connect to [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Connect to [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell?azure-portal=true).
 1. Run the following command to create a custom branding template that includes an expiration policy:
 
    ```powershell
@@ -70,7 +70,7 @@ To enable and search for audit logs:
    Set-IrmConfiguration -EnablePortalTrackingLogs $true
    ```
 
-1. In the [Microsoft Purview portal](https://purview.microsoft.com), go to the **Audit** solution.
+1. In the [Microsoft Purview portal](https://purview.microsoft.com?azure-portal=true), go to the **Audit** solution.
 1. Under **Search**, select **Encrypted message portal activities**, apply filters, and run your search.
 
 Microsoft Purview Advanced Message Encryption adds time-bound and post-send controls to standard encryption features. By setting expiration dates, revoking access, and auditing encrypted message activity, organizations can enforce tighter controls over sensitive communications while maintaining a seamless user experience for recipients.

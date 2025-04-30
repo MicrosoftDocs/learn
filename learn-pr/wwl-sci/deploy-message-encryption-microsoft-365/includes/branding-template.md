@@ -87,6 +87,6 @@ Use standard hex codes or supported color names like `white`, `aliceblue`, or `l
 -BackgroundColor "#ffffff"
 ```
 
-For a full list of supported color names and hex values, see [Microsoft documentation](/powershell/module/exchange/set-omeconfiguration).
+For a full list of supported color names and hex values, see [Microsoft documentation](/powershell/module/exchange/set-omeconfiguration?azure-portal=true).
 
 Branding templates help reinforce your organization's identity and build recipient trust. With support for custom logos, disclaimers, colors, and portal messaging, Microsoft Purview makes it easy to create a secure and familiar experience for encrypted communications.

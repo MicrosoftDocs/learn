@@ -8,7 +8,7 @@ Microsoft Purview Message Encryption uses Azure Rights Management to apply encry
 
 To confirm that Azure RMS is active in your environment, you can use PowerShell:
 
-1. [Connect to Exchange Online PowerShell](https://learn.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell?azure-portal=true)
 1. Run the following command to verify that Azure RMS licensing is enabled:
 
    ```powershell
@@ -25,7 +25,7 @@ To confirm that Azure RMS is active in your environment, you can use PowerShell:
 
    You should see confirmation that RMS templates are available and that encryption and decryption were successful.
 
-If encryption isn't working or RMS templates aren't available, follow the [Azure RMS activation guidance](https://learn.microsoft.com/azure/information-protection/activate-service).
+If encryption isn't working or RMS templates aren't available, follow the [Azure RMS activation guidance](/azure/information-protection/activate-service?azure-portal=true).
 
 > [!NOTE]
 > If your organization still uses Active Directory Rights Management Services (AD RMS), you need to migrate to Azure RMS before enabling message encryption.
