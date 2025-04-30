@@ -30,29 +30,34 @@ The modules in this learning path form a progression as you follow the Tailspin 
 
 ### Run the template
 
-1. Run a template that sets up your Azure DevOps organization:
+Run a template that sets up your Azure DevOps organization.
 
-   > [!div class="nextstepaction"]
-   > [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=DeployAzureFunction&azure-portal=true)
+1. [Get and run the ADOGenerator project](https://github.com/microsoft/AzDevOpsDemoGenerator/blob/main/docs/RunApplication.md) in Visual Studio or the IDE of your choice.
 
-1. From the Azure DevOps Demo Generator site, select **Sign In**. If prompted, accept the usage terms. The **Create New Project** page appears.
+1. When prompted to **Enter the template number from the list of templates**, enter **38** for **Automate Azure Function deployments with Azure Pipelines**, then press **Enter**.
 
-1. On the **Create New Project** page, enter a project name, such as *Space Game - web - Azure Functions*, and then for **Select Organization**, select the organization that you use for your Azure subscription.
+1. Choose your authentication method. You can [set up and use a Personal Access Token (PAT)](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate#create-a-pat) or use device login.
 
-    :::image type="content" source="../media/3-create-new-project.png" alt-text="A screenshot of the Azure DevOps Demo Generator showing how to create the project.":::
+    > [!NOTE]
+    > If you set up a PAT, If you set up a PAT, make sure to authorize the necessary [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes). For this module, you can use **Full access**, but in a real-world situation, you should ensure you grant only the necessary scopes.
 
-1. In the next section, select **Yes, I want to fork this repository**, and then select **Authorize**.
+1. Enter your Azure DevOps organization name, then press **Enter**.
 
-    If a window appears, authorize access to your GitHub account.
+1. If prompted, enter your Azure DevOps PAT, then press **Enter**.
 
-    > [!IMPORTANT]
-    > The enabling this fork option is necessary for the template to connect to your GitHub repository. Select it even if you've already forked the *Space Game* website project. The template uses your existing fork.
+1. Enter a project name such as *Space Game - web - Azure Functions*, then press **Enter**.
 
-1. Select **Create Project**.
+1. Once your project is created, go to your Azure DevOps organization in your browser (at `https://dev.azure.com/<your-organization-name>/`) and select the project.
 
-    The template takes a few moments to run.
+### Fork the repository
 
-1. When the project is successfully provisioned, select **Navigate to project** to go to your project in Azure DevOps.
+If you haven't already, create a fork of the **mslearn-tailspin-spacegame-web-azure-functions** repository.
+
+1. On GitHub, go to the [mslearn-tailspin-spacegame-web-azure-functions](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-azure-functions) repository.
+
+1. Select **Fork** at the top-right of the screen.
+
+1. Choose your GitHub account as the **Owner**, then select **Create fork**.
 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/training/modules/deploy-azure-functions/5-clean-up-environment?azure-portal=true) page in this module contains **important steps** that you must complete, even if you don't complete this module. Cleaning up helps ensure that you don't run out of free build minutes. 
