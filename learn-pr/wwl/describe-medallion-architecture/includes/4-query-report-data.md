@@ -15,7 +15,7 @@ In addition to using the SQL analytics endpoint for data exploration, you can us
 
 ![Screenshot of the Power BI semantic model with relationships between tables.](../media/dataset-relationships.png)
 
-Data analysts can connect to the semantic model using **Direct Lake** mode, in which the semantic model accesses data directly from Delta tables in a lakehouse. In Direct Lake mode, data doesn't have to be imported or duplicated into a semantic model, making data more quickly available for analysis.
+Data analysts can connect to the semantic model using **Direct Lake** mode, in which the semantic model accesses data directly from Delta tables in a lakehouse.
 
 ## Tailor your medallion layers for different needs
 
