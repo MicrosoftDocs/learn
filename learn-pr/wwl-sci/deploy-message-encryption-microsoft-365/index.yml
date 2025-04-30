@@ -1,21 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.deploy-message-encryption-microsoft-365
 metadata:
-  title: Implement secure email with Microsoft Purview Message Encryption
-  description: "Implement secure email with Microsoft Purview Message Encryption"
+  title: Protect email with Microsoft Purview Message Encryption
+  description: "Protect email with Microsoft Purview Message Encryption"
   ms.date: 04/30/2025
   author: wwlpublish
   ms.author: riswinto
   ms.topic: module
   ms.service: purview
-title: Deploy Microsoft Purview Message Encryption
-summary: Learn about the different encryption methods Microsoft Purview provides to protect messages.
+title: Protect email with Microsoft Purview Message Encryption
+summary: Learn how to configure Microsoft Purview Message Encryption to protect sensitive email, apply encryption with mail flow rules, and customize the recipient experience with branded templates.
 abstract: |
-  After completing this module, you will be able to:
-  - Configure Microsoft Purview Message Encryption for end users
-  - Implement Microsoft Purview Advanced Message Encryption
+  After completing this module, you'll be able to:
+  - Enable Microsoft Purview Message Encryption using Azure Rights Management
+  - Apply encryption automatically using mail flow rules
+  - Customize branding for encrypted messages and the encryption portal
+  - Use Advanced Message Encryption to control message expiration and revocation
 prerequisites: |
-  Fundamental knowledge of encryption in Microsoft 365
+  - Basic understanding of encryption concepts in Microsoft 365
+  - Familiarity with Microsoft Purview Information Protection
+  - Experience using Exchange admin center and Exchange Online PowerShell
 iconUrl: /training/achievements/deploy-message-encryption-microsoft-365.svg
 levels:
 - intermediate
