@@ -24,7 +24,7 @@ Foreign keys are a concept in relational databases, used to establish and enforc
 ## Sample Database Creation Script
 
 <details>
-    <summary>Click to expand</details>
+    <summary>Click to expand</summary>
 
 ```sql
 
