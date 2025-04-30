@@ -5,7 +5,7 @@ In this module, you learned how to use Azure AI Language to:
 - Analyze text sentiment.
 - Extract key phrases, entities, and linked entities.
 
-To learn more about Azure AI Language and some of the concepts covered in this module, you can explore the following:
+To learn more about Azure AI Language and some of the concepts covered in this module, you can explore the following documentation pages:
 
 - [Azure AI Language documentation](/azure/ai-services/language-service/)
 - [Build a conversational language understanding model](/training/modules/build-language-understanding-model/)
