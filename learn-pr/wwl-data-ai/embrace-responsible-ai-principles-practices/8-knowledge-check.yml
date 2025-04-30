@@ -19,7 +19,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which if the following capabilities of Azure Machine Learning can help mitigate bias issues related to the principle of fairness?"
+  - content: "Which of the following capabilities of Azure Machine Learning can help mitigate bias issues related to the principle of fairness?"
     choices:
     - content: "Models can be trained using data that is stored securely in cloud data stores."
       isCorrect: false
