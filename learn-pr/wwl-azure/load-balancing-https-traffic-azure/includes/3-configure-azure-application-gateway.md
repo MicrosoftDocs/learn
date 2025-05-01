@@ -1,4 +1,5 @@
 
+
 This diagram explains how the Azure Application Gateway components work together.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=cda9bcad-587b-4182-b8eb-3c1d66111dda]
