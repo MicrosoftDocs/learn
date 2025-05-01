@@ -1,4 +1,4 @@
-In this unit, you'll get a brief overview about how you can use Azure Artifacts to securely create and manage packages that your apps can consume.
+In this unit, you get a brief overview about how you can use Azure Artifacts to securely create and manage packages that your apps can consume.
 
 Let's check back in with the team as they decide whether Azure Artifacts is the appropriate way to host their .NET package.
 
@@ -42,9 +42,9 @@ Our app might want to use this newer version of the package. In that case, we up
 
 ## Include a versioning strategy in your build pipeline
 
-When you use a build pipeline, packages need versions before they can be consumed and tested. However, only after you've tested the package can you know its quality. Because package versions should never be changed, it becomes challenging to choose a certain version beforehand.
+When you use a build pipeline, packages need versions before they can be consumed and tested. However, only after you tested the package can you know its quality. Because package versions should never be changed, it becomes challenging to choose a certain version beforehand.
 
-Azure Artifacts associates a quality level with each package in its feeds, and distinguishes between prerelease and release versions. Azure Artifacts offers different views on the list of packages and their versions, which separate them based on their quality level. This approach works well with semantic versioning, which is useful for predicting the intent of a particular version. Azure Artifacts also uses a descriptor to include additional metadata from the Azure Artifacts feed. A common use for views is to share package versions that have been tested, validated, or deployed, but hold back packages still under development and not ready for public consumption.
+Azure Artifacts associates a quality level with each package in its feeds, and distinguishes between prerelease and release versions. Azure Artifacts offers different views on the list of packages and their versions, which separate them based on their quality level. This approach works well with semantic versioning, which is useful for predicting the intent of a particular version. Azure Artifacts also uses a descriptor to include more metadata from the Azure Artifacts feed. A common use for views is to share package versions that have been tested, validated, or deployed, but hold back packages still under development and not ready for public consumption.
 
 Feeds in Azure Artifacts have three different views by default. These views are added at the moment a new feed is created. The three views are:
 

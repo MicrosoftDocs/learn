@@ -30,7 +30,7 @@ For compiled languages, a package typically contains the compiled binary code, s
 
 Either way, packages are typically compressed to ZIP or a similar format. Package systems often define a unique file extension, such as *.nupkg* or *.jar*, to make the package's use clear. Compression can help reduce download time and also produce a single file to simplify management.
 
-Packages also often contain one or more files that provide metadata, or information about the package. This metadata might describe what the package does, specify its license terms, the author's contact information, and the package's version.
+Packages also often contain one or more files that provide metadata, or information about the package. This metadata might describe what the package does, specify its license terms, the author's contact information, and the package version.
 
 ## Why should I build a package?
 
@@ -48,7 +48,7 @@ When multiple apps can benefit from the same code, the advantages far outweigh t
 
 ## How can I identify dependencies?
 
-If the goal is to reorganize your code into separate components, you need to identify those pieces of your app that can be removed, packaged to be made reusable, stored in a central location, and versioned. You might even want to replace your own code with third-party components that are either open source or that you license.
+If the goal is to reorganize your code into separate components, you need to identify those pieces of your app that can be removed, packaged to be made reusable, stored in a central location, and versioned. You might even want to replace your own code with partner components that are either open source or that you license.
 
 There are many ways to identify the potential dependencies in your codebase. These include scanning your code for patterns of reuse, and analyzing the architecture of your solution. Here are some ways to identify dependencies:
 
@@ -62,7 +62,7 @@ There are many ways to identify the potential dependencies in your codebase. The
 
 * **Individual lifecycle**.
 
-    Look for parts of the code that have a similar lifecycle that you can deploy and release individually. If this code can be maintained by a separate team, it's a good indication you can package it as a component outside of the solution.
+    Look for parts of the code that have a similar lifecycle that you can deploy and release individually. If a separate team can maintain this code, it's a good indication you can package it as a component outside of the solution.
 
 * **Stable parts**.
 
@@ -72,7 +72,7 @@ There are many ways to identify the potential dependencies in your codebase. The
 
     Whenever code and components are independent and unrelated to other parts of the system, you can potentially isolate them into separate dependencies.
 
-You can use various tools to assist you in scanning and examining your codebase. These range from tools that scan for duplicate code and draw solution dependency graphs to tools that can compute metrics for coupling and cohesion.
+You can use various tools to assist you in scanning and examining your codebase. Examples range from tools that scan for duplicate code and draw solution dependency graphs to tools that can compute metrics for coupling and cohesion.
 
 ## What kinds of packages are there?
 
@@ -105,7 +105,7 @@ Here are some popular hosting services for the package types we just described:
 
 * [Docker Hub](https://hub.docker.com/?azure-portal=true)
 
-    Docker packages are called images, and contain complete, self-contained deployments. Most commonly, a Docker image represents a software component that can be hosted and executed by itself, without any dependencies on other images. Docker images are layered and might be dependent on other images.
+    Docker packages are called images, and contain complete, self-contained deployments. Most commonly, a Docker image represents a software component that can be hosted and run by itself, without any dependencies on other images. Docker images are layered and might be dependent on other images.
 
 A _package feed_ refers to your package repository server. This server can be on the internet or behind your firewall on your network. For example, you can [host your own NuGet feeds](/nuget/hosting-packages/overview?azure-portal=true) by using hosting products such as Azure Artifacts and MyGet. You can also host packages on a file share.
 
@@ -117,7 +117,7 @@ A good dependency management strategy depends on these three elements:
 
 * **Standardization**.
 
-    Standardizing how you declare and resolve dependencies will help your automated release process remain repeatable and  predictable.
+    Standardizing how you declare and resolve dependencies helps your automated release process remain repeatable and  predictable.
 
 * **Packaging formats and sources**.
 
@@ -143,12 +143,12 @@ Semantic Versioning is a popular versioning scheme. Here's the format:
 
 > **Major.Minor.Patch[-Suffix]**
 
-Here is what each of these parameters means:
+Here's what each of these parameters means:
 
 * A new **Major** version introduces breaking changes. Apps typically need to update how they use the package to work with a new major version.
 * A new **Minor** version introduces new features, but is backward-compatible with earlier versions.
 * A new **Patch** introduces backward-compatible bug fixes, but not new features.
-* The **-Suffix** part is optional and identifies the package as a pre-release version. For example, 1.0.0-beta1 might identify the package as the first beta prerelease build for the 1.0.0 release.
+* The **-Suffix** part is optional and identifies the package as a prerelease version. For example, 1.0.0-beta1 might identify the package as the first beta prerelease build for the 1.0.0 release.
 
 When you reference a package, you do so by version number.
 
@@ -177,7 +177,7 @@ Here are a few other examples:
 
 As each maintainer releases a new package version, you can evaluate what's changed and test your app against it. When you're ready, you can update the package's version number in your configuration and submit the change to your build pipeline.
 
-Here's an example of how you might include the Newtonsoft.Json package in your C# application's project (.csproj) file. This example specifies version 13.0.1 of that package:
+Here's an example of how you might include the *Newtonsoft.Json* package in your C# application's project (*.csproj*) file. This example specifies version 13.0.1 of that package:
 
 ```xml
 <ItemGroup>

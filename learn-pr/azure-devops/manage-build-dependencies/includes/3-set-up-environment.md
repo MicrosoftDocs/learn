@@ -1,6 +1,6 @@
-In this unit, you'll ensure that your Microsoft Azure DevOps organization is set up to complete the rest of this module.
+In this unit, you ensure that your Microsoft Azure DevOps organization is set up to complete the rest of this module.
 
-To do this, you'll:
+To do this configuration, you:
 
 > [!div class="checklist"]
 > * Set up an Azure DevOps project for this module.
@@ -9,13 +9,13 @@ To do this, you'll:
 
 ## Get the Azure DevOps project
 
-Here, you'll make sure that your Azure DevOps organization is set up to complete the rest of this module. You'll do this by running a template that creates a project for you in Azure DevOps.
+Here, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You do this set up by running a template that creates a project for you in Azure DevOps.
 
 The modules in this learning path form a progression, where you follow the Tailspin web team through their DevOps journey. For learning purposes, each module has an associated Azure DevOps project.
 
 ### Run the template
 
-To set up everything for you in your Azure DevOps organization, you'll run a template.
+To set up everything for you in your Azure DevOps organization, you run a template.
 
 > [!div class="nextstepaction"]
 > [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=manage-build-dependencies&azure-portal=true)
@@ -43,7 +43,7 @@ From the Azure DevOps demo generator site, to run the template, perform these st
 
 ## Move the work item to Doing
 
-In this section, you'll assign a work item to yourself that relates to this module on Azure Boards. You'll also move the work item to the **Doing** state. In practice, you and your team would create work items at the start of each sprint, or work iteration.
+In this section, you assign a work item to yourself that relates to this module on Azure Boards. You also move the work item to the **Doing** state. In practice, you and your team would create work items at the start of each sprint, or work iteration.
 
 Assigning work in this way gives you a checklist from which to work. It gives others on your team visibility into what you're working on and how much work is left. It also helps the team enforce work-in-progress limits so that the team doesn't take on too much work at one time.
 
@@ -54,7 +54,7 @@ Recall that the team settled on these seven top issues:
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
 
-Here, you'll move the sixth item, **Move model data to its own package** to the **Doing** column, and assign yourself to the work item.
+Here, you move the sixth item, **Move model data to its own package** to the **Doing** column, and assign yourself to the work item.
 
 Recall that **Move model data to its own package** relates to moving reusable code to its own NuGet package, so that package can be shared among multiple apps.
 
@@ -74,6 +74,6 @@ To set up the work item:
 
     :::image type="content" source="../media/3-azure-boards-wi6-doing.png" alt-text="A screenshot of Azure Boards, showing the card in the Doing column.":::
 
-At the end of this module, after you've completed the task, you'll move the card to the **Done** column.
+At the end of this module, after you complete the task, you move the card to the **Done** column.
 
 [!include[](../../shared/includes/build-local-setup.md)]
