@@ -28,27 +28,34 @@ In this section, you run a template to create your project in Azure DevOps.
 
 ### Run the template
 
-Run the template to set up your Azure DevOps project for this module:
+Run a template that sets up your Azure DevOps organization.
 
-> [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=Deploymulti-containersolutionstoKubernetes&azure-portal=true)
+1. [Get and run the ADOGenerator project](https://github.com/microsoft/AzDevOpsDemoGenerator/blob/main/docs/RunApplication.md) in Visual Studio or the IDE of your choice.
 
-From the Azure DevOps Demo Generator portal, follow these steps to run the template:
+1. When prompted to **Enter the template number from the list of templates**, enter **40** for **Automate multi-container deployments to Azure Kubernetes Services with Azure Pipelines**, then press **Enter**.
 
-1. Select **Sign In** and agree to the terms of use.
+1. Choose your authentication method. You can [set up and use a Personal Access Token (PAT)](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate#create-a-pat) or use device login.
 
-1. On the **Create New Project** page, select your Azure DevOps organization and provide a project name, such as *Space Game - web - Kubernetes*.
+    > [!NOTE]
+    > If you set up a PAT, If you set up a PAT, make sure to authorize the necessary [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes). For this module, you can use **Full access**, but in a real-world situation, you should ensure you grant only the necessary scopes.
 
-    :::image type="content" source="../media/3-create-new-project.png" alt-text="Screenshot of the Azure DevOps Demo Generator showing the process to create the project.":::
+1. Enter your Azure DevOps organization name, then press **Enter**.
 
-1. Select **Yes, I want to fork this repository**, and then **Authorize**. If a window pops up, grant permission to access your GitHub account.
+1. If prompted, enter your Azure DevOps PAT, then press **Enter**.
 
-    > [!IMPORTANT]
-    > Selecting this option is necessary for the template to connect to your GitHub repository. Please choose it even if you have already forked the *Space Game* repository as the template will use your existing fork.
+1. Enter a project name such as *Space Game - web - Kubernetes*, then press **Enter**.
 
-1. Select **Create Project** and wait for the template to finish running, which might take a few minutes.
+1. Once your project is created, go to your Azure DevOps organization in your browser (at `https://dev.azure.com/<your-organization-name>/`) and select the project.
 
-1. Select **Navigate to project** to access your project in Azure DevOps.
+### Fork the repository
+
+If you haven't already, create a fork of the **mslearn-tailspin-spacegame-web-kubernetes** repository.
+
+1. On GitHub, go to the [mslearn-tailspin-spacegame-web-kubernetes](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-kubernetes) repository.
+
+1. Select **Fork** at the top-right of the screen.
+
+1. Choose your GitHub account as the **Owner**, then select **Create fork**.
 
 > [!IMPORTANT]
 > The unit [Clean up your Azure DevOps environment](/training/modules/deploy-kubernetes/5-clean-up-environment?azure-portal=true) in this module includes crucial steps for cleanup. It is recommended to perform these steps to avoid running out of free build minutes. Even if you don't finish this module, it is important to follow the cleanup steps.
