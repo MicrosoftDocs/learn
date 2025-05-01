@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Module assessment
   description: Check what you learned - Manage sensitive data and security policies module
-  ms.date: 05/03/2024
+  ms.date: 04/14/2025
   author: a-a-ron
   ms.author: aastewar
   ms.topic: unit
@@ -45,13 +45,13 @@ quiz:
       explanation: "A security advisory should be comprehensive, including the following information: product and versions affected, severity, types of security weaknesses addressed by the project owners' actions, impact, status of patches, and workarounds."
     - content: "Severity and exposure list."
       isCorrect: false
-      explanation: "Exposure list research can help to determine if the vulnerability you're patching matches an existing entry, but not needed for the security advisory."
+      explanation: "Exposure list research can help to determine if the vulnerability you're patching matches an existing entry, but it's not needed for the security advisory."
     - content: "Administrator name and severity."
       isCorrect: false
-      explanation: "The administrator name would be unneeded and a security risk if provided publicly. Exposure list research can help to determine if the vulnerability you're patching matches an existing entry, but not needed for the security advisory."
+      explanation: "The administrator name would be unneeded and a security risk if provided publicly. Exposure list research can help to determine if the vulnerability you're patching matches an existing entry, but it's not needed for the security advisory."
     - content: "Exposures list and administrator name."
       isCorrect: false
-      explanation: "Exposure list research can help to determine if the vulnerability you're patching matches an existing entry, but not needed for the security advisory. The administrator name would be unneeded and a security risk if provided publicly."
+      explanation: "Exposure list research can help to determine if the vulnerability you're patching matches an existing entry, but it's not needed for the security advisory. The administrator name would be unneeded and a security risk if provided publicly."
   - content: "Which two pieces of information are included in your organization's log?"
     choices:
     - content: "The user that performed the action and the date and time of the action."

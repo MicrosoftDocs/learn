@@ -4,9 +4,9 @@ title: Provision an Azure AI Language resource
 metadata:
   title: Provision an Azure AI Language resource
   description: Provision an Azure AI Language resource
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 08/31/2023
+  ms.date: 04/30/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -15,4 +15,4 @@ labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/2-provision-resource.md)]
-
+

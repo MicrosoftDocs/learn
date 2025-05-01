@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Knowledge check
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 08/20/2024
+  ms.date: 04/30/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -49,4 +49,4 @@ quiz:
     - content: "Use Learned entity components."
       isCorrect: false
       explanation: "Incorrect. When a language model needs to detect a common entity, use prebuilt components to have the Azure AI Language service automatically detect the entity."
-
+

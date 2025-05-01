@@ -3,9 +3,9 @@ uid: learn.wwl.monitor-ai-services
 metadata:
   title: Monitor Azure AI services
   description: Learn to monitor Azure AI services.
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 09/20/2024
+  ms.date: 05/01/2025
   ms.service: azure-ai-services
   ms.topic: module-standard-task-based
   ms.custom: ai-learning-hub
@@ -46,4 +46,4 @@ units:
 - learn.monitor-ai-services.summary
 badge:
   uid: learn.wwl.monitor-ai-services.badge
-
+

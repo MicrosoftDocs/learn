@@ -2,6 +2,8 @@
 uid: learn.wwl.implement-desired-state-configuration-dsc.knowledge-check
 title: Module assessment
 metadata:
+  hidden_question_numbers: ["A7F778C2_26","A7F778C2_46","A7F778C2_104"]
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
   ms.date: 05/23/2024
@@ -48,4 +50,4 @@ quiz:
       explanation: "Correct. There are two methods of implementing DSC: Push mode and Pull mode."
     - content: "Push mode."
       isCorrect: false
-      explanation: "Incorrect. There are two methods of implementing DSC: Push mode and Pull mode."
+      explanation: "Incorrect. There are two methods of implementing DSC: Push mode and Pull mode."
