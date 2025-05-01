@@ -24,7 +24,7 @@ Microsoft Entra ID stores your users in a *tenant* that represents an organizati
 
 Microsoft Entra ID meets the needs of many types of users. For instance, an IT Administrator can use Microsoft Entra ID to determine who should have access to applications and resources, based on company requirements. An Administrator can add another layer of protection to applications and services by enforcing multifactor authentication on sign-ins.
 
-Application developers can use Microsoft Entra ID to allow users to use pre-existing credentials to access applications. Developers can also use Microsoft Entra ID to create personalized end-user experiences by accessing organizational user data through APIs that are specific to Microsoft Entra ID.
+Application developers can use Microsoft Entra ID to allow users to use preexisting credentials to access applications. Developers can also use Microsoft Entra ID to create personalized end-user experiences by accessing organizational user data through APIs that are specific to Microsoft Entra ID.
 
 If you subscribe to services like Azure or Microsoft 365, you're already taking advantage of Microsoft Entra ID. You could use Microsoft Entra ID to further manage access to your cloud applications.
 
