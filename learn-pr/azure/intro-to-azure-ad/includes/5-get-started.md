@@ -63,13 +63,13 @@ Now you can address how much privilege your Administrators should have, and you 
 
 After you lay the groundwork for your instance of Microsoft Entra ID, you can begin to configure and start using it. You need to create a tenant, which is considered a resource in Azure.
 
-Use the Azure portal to create a tenant and a new Microsoft Entra resource.
+Use the Microsoft Entra admin center to create a tenant.
 
-![Create a resource in the Azure portal.](../media/5-create-resource.png)
+![Create a tenant in Microsoft Entra admin center.](../media/5-create-resource.png)
 
-Use a form in the Azure portal to create your Microsoft Entra directory.
+Use the form to create your Microsoft Entra resource.
 
-![Create a Microsoft Entra directory in the Azure portal.](../media/5-create-azure-ad.png)
+![Create a Microsoft Entra resource.](../media/5-create-azure-ad.png)
 
 ## Associate a subscription
 
