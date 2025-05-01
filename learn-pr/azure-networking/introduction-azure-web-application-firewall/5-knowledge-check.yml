@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Check your knowledge.
-  ms.date: 02/14/2024
+  ms.date: 05/01/2025
   author: vhorne
   ms.author: victorh
   ms.topic: unit
@@ -47,4 +47,4 @@ quiz:
     - content: "Your web app development team lacks security expertise, time, and money."
       isCorrect: false
       explanation: "Incorrect. A lack of expertise, time, and money can prevent your team from covering all possible exploits, which can leave your app vulnerable. Azure Web Application Firewall protects against all OWASP exploits and can be deployed quickly and cost-effectively."
-
+
