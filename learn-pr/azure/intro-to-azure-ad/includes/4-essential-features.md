@@ -101,6 +101,6 @@ Microsoft Entra ID Protection uses risk policies to automatically detect and res
 
 First, the Administrator configures the risk policies by using automated risk detection and remediation through Microsoft Entra ID Protection. The policies then monitor for identity risks. When a risk is detected, the policies enforce measures to remediate it. For example, a policy might require a user to reset their password in response to a detected risk. The user then resets their password, and the risk is remediated.
 
-You can configure risk policies through the Azure portal as shown or through the Microsoft Entra admin center. For example, the following risk policy detects user risks and remediates them by requiring the user to reset their password. Microsoft Entra ID Protection is available for the Premium P2 licensing tier.
+You can configure risk policies through the Microsoft Entra admin center. There are two types of risk policies in Microsoft Entra Conditional Access you can set up. You can use these policies to automate the response to risks allowing users to self-remediate when risk is detected. Microsoft Entra ID Protection is available for the Premium P2 licensing tier.
 
 ![Risk policy in Microsoft Entra ID Protection.](../media/4-risk-policy.png)
