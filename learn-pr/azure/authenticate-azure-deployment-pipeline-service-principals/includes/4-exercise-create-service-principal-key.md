@@ -15,13 +15,13 @@ This exercise requires that you have permission to create applications and servi
 
 ::: zone pivot="cli"
 
-To work with service principals in Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. 
+To work with service principals in Azure, you need to sign in to your Azure account from the Visual Studio Code terminal.
 
 [!include[](../../includes/azure-exercise-terminal-cli.md)]
 
 ### Sign in to Azure by using the Azure CLI
 
-1. In the Visual Studio Code terminal, sign in to Azure by running the following command: 
+1. In the Visual Studio Code terminal, sign in to Azure by running the following command:
 
     ```azurecli
     az login
@@ -33,7 +33,7 @@ To work with service principals in Azure, you need to sign in to your Azure acco
 
 ::: zone pivot="powershell"
 
-To deploy this template to Azure, sign in to your Azure account from the Visual Studio Code terminal. 
+To deploy this template to Azure, sign in to your Azure account from the Visual Studio Code terminal.
 
 [!include[](../../includes/azure-exercise-terminal-powershell.md)]
 
@@ -67,7 +67,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
    * `password`: The service principal's key.
    * `tenant`: Your Microsoft Entra tenant ID.
 
-   Copy these values somewhere safe. You'll use them soon. 
+   Copy these values somewhere safe. You'll use them soon.
 
 ::: zone-end
 
@@ -79,9 +79,10 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
    $servicePrincipal = New-AzADServicePrincipal `
      -DisplayName ToyWebsitePipeline
    ```
+
 1. Run the following command to get the service principal's key:
 
-   ```azurepowershell 
+   ```azurepowershell
    $servicePrincipalKey = $servicePrincipal.PasswordCredentials.SecretText
    ```
 

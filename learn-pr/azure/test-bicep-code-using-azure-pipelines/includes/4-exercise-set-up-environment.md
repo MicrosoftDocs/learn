@@ -21,26 +21,34 @@ The modules in this learning path are part of a progression. For learning purpos
 
 ### Run the template
 
-Run a template that sets up your Azure DevOps project.
+Run a template that sets up your Azure DevOps organization.
 
-> [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=testbicep&azure-portal=true)
+1. [Get and run the ADOGenerator project](https://github.com/microsoft/AzDevOpsDemoGenerator/blob/main/docs/RunApplication.md) in Visual Studio or the IDE of your choice.
 
-On the Azure DevOps Demo Generator site, follow these steps to run the template:
+1. When prompted to **Enter the template number from the list of templates**, enter **41** for **Test your Bicep code by using Azure Pipelines**, then press **Enter**.
 
-1. Select **Sign In** and accept the usage terms.
+1. Choose your authentication method. You can [set up and use a Personal Access Token (PAT)](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate#create-a-pat) or use device login.
 
-1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as **toy-website-test**.
+   > [!NOTE]
+   > If you set up a PAT, make sure to authorize the necessary [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes). For this module, you can use **Full access**, but in a real-world situation, you should ensure you grant only the necessary scopes.
 
-    :::image type="content" source="../media/4-create-new-project.png" alt-text="Screenshot that shows creating a project through the Azure DevOps Demo Generator.":::
+1. Enter your Azure DevOps organization name, then press **Enter**.
 
-1. Select **Create Project**.
+1. If prompted, enter your Azure DevOps PAT, then press **Enter**.
 
-    The template takes a few moments to run. It automatically creates a pipeline and Bicep file for you to work with in the subsequent exercises.
+1. Enter a project name such as *toy-website-test*, then press **Enter**.
 
-1. Select **Navigate to project** to go to your project in Azure DevOps.
+1. Once your project is created, go to your Azure DevOps organization in your browser (at `https://dev.azure.com/<your-organization-name>/`) and select the project.
 
-[!include[](../../includes/cleanup-steps.md)]
+### Fork the repository
+
+If you haven't already, create a fork of the **mslearn-test-bicep-code-using-github-actions** repository.
+
+1. On GitHub, go to the [mslearn-tailspin-spacegame-web](https://github.com/MicrosoftDocs/mslearn-test-bicep-code-using-github-actions) repository.
+
+1. Select **Fork** at the top-right of the screen.
+
+1. Choose your GitHub account as the **Owner**, then select **Create fork**.
 
 ## Clone the repository
 
