@@ -22,7 +22,7 @@ quiz:
     choices:
     - content: "Layer 3"
       isCorrect: false
-      explanation: "Incorrect. Traffic Manager works at the application level, Layer 7 ."
+      explanation: "Incorrect. Traffic Manager works at the application level, Layer 7."
     - content: "Layer 4"
       isCorrect: false
       explanation: "Incorrect. Traffic Manager works at the application level, Layer-7."

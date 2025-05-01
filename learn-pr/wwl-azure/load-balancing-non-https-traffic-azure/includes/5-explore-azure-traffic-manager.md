@@ -23,6 +23,10 @@ Azure Traffic Manager enables you to control how network traffic is distributed 
 
 Azure Traffic Manager supports different traffic-routing methods to determine how to route network traffic to the various service endpoints. You select the method that best fits your requirements. 
 
+This video reviews Traffic Manager routing methods. 
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=de489673-af9f-4474-842b-f6b13807065c]
+
 #### Priority routing method
 
 Use the [priority routing method](/azure/traffic-manager/traffic-manager-routing-methods#priority-traffic-routing-method) for a primary service endpoint for all traffic. You can provide multiple backup endpoints in case the primary or one of the backup endpoints is unavailable.
@@ -48,11 +52,6 @@ Use the [**Geographic** routing method](/azure/traffic-manager/traffic-manager-r
 
 :::image type="content" source="../media/routing-method-geographic-c04c1141.png" alt-text="Diagram that shows the 'Geographic' routing method.":::
 
-## Traffic Manager routing methods (video)
-
-This video reviews Traffic Manager routing methods. 
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=de489673-af9f-4474-842b-f6b13807065c]
 
 > [!TIP]
 > Learn more about Traffic Manager check out the [Enhance your service availability and data locality by using Azure Traffic Manager](/training/modules/distribute-load-with-traffic-manager/) module.
