@@ -16,7 +16,7 @@ Three of the prebuilt models are designed to handle general documents and extrac
 
     :::image type="content" source="../media/04-read-model.png" alt-text="Screenshot showing the read model analyzing a document in German in Azure AI Document Intelligence Studio." lightbox="../media/04-read-model.png":::
 
-- **General document.** Use this model to extract key-value pairs and tables in your documents.
+- **General document.** _Deprecated in v4_. Use this model to extract key-value pairs and tables in your documents.
 
     :::image type="content" source="../media/04-general-document-model.png" alt-text="Screenshot showing the general document model analyzing a document in Azure AI Document Intelligence Studio." lightbox="../media/04-general-document-model.png":::
  
