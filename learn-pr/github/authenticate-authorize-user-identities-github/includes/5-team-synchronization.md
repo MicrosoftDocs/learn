@@ -15,7 +15,22 @@ Managing a team via your service provider allows you to save time and resources 
 
 Team synchronization is also available for organizations and enterprise accounts that use GitHub Enterprise Cloud. Enterprise Managed Users is a feature of GitHub Enterprise Cloud that provides even greater control over enterprise members and resources.
 
-When you use Enterprise Managed Users, all members are provisioned and managed through your IdP. Users don't create their own accounts on GitHub. You can manage organization and team membership by using groups on your IdP. Managed user accounts are restricted to their enterprise and can't push code, collaborate, or interact with users, repositories, or organizations outside of their enterprise. For more information, see [Getting started with GitHub Enterprise Cloud](https://docs.github.com/get-started/onboarding/getting-started-with-github-enterprise-cloud).
+## Enterprise Managed Users
+
+Enterprise Managed Users (EMUs) are a GitHub Enterprise Cloud feature that gives enterprises complete control over user identity and account lifecycle. With EMUs, GitHub accounts are **fully managed by the enterprise’s identity provider (IdP)**. This means users do not sign up for GitHub manually — all user provisioning, access, and offboarding is automated through tools like Microsoft Entra ID or Okta.
+
+EMUs are ideal for organizations with strict compliance, audit, or user governance needs. They help ensure that:
+- All accounts are owned by the enterprise
+- Access is automatically granted or removed based on IdP membership
+- No external collaboration happens unintentionally
+
+When using EMUs:
+- Managed users cannot push code to or fork repositories outside the enterprise
+- They can only interact with other users and resources inside the enterprise
+
+You can manage EMU-based organization and team membership using groups in your IdP, and optionally integrate [team synchronization](#enable-team-synchronization) to automate group-to-team mapping.  
+
+For more details, see [Getting started with GitHub Enterprise Cloud](https://docs.github.com/get-started/onboarding/getting-started-with-github-enterprise-cloud).
 
 ## Usage limits
 
