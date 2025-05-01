@@ -26,6 +26,41 @@ After you create a repository with the correct permissions, you can make it a te
 
 1. Select **Template repository**.
 
+### What is repository forking?
+
+Forking is a way to create a personal copy of someone else's repository under your own GitHub account. When you fork a repository, you get your own version that you can freely modify without affecting the original project. This is a common workflow for contributing to open source or experimenting with changes safely.
+
+You can also keep your fork up to date by pulling in changes from the original repository, often called the “upstream” repo.
+
+Here’s how to fork a repository:
+
+1. On GitHub.com, navigate to the main page of the repository you want to fork.
+1. In the upper-right corner, select **Fork**.
+1. Choose an owner for the fork (your personal account or an organization).
+1. Optionally, rename the forked repository or include all branches.
+1. Select **Create fork**.
+
+    :::image type="content" source="../media/fork-repo-option.png" alt-text="Screenshot showing the fork button in the top-right corner of a GitHub repository." border="false":::
+
+### Managing fork permissions (for admins)
+
+For organization-owned repositories, administrators can control whether repositories can be forked:
+
+- **Public repositories**: Forking is always allowed.
+- **Private repositories**: Forking can be disabled or restricted to organization members only.
+- **Internal repositories**: These can only be forked within the same enterprise account.
+
+To configure fork settings:
+
+1. Go to the repository’s **Settings**.
+1. Scroll to the **Danger Zone**.
+1. Locate the fork control options and update them as needed.
+
+**Tip:** If you disable forking for a private repository, no one (including organization members) will be able to fork it.
+
+To learn more, see the GitHub Docs article on [Fork a repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
+
+
 ## Ways Users Receive Repository Access
 
 ### Actions of a User Given a List of Their Repository Permissions
