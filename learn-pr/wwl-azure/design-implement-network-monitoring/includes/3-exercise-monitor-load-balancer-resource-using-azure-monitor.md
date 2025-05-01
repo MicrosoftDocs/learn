@@ -22,7 +22,7 @@ In this exercise, you create an internal load balancer for the fictional Contoso
 - View resource health status.
 - Configure diagnostic settings.
 
-Launch the exercise and follow the instructions. When finished, be sure to return to this page so you can continue learning.
+Launch the exercise, and follow the instructions. When finished, be sure to return to this page so you can continue learning.
 
 > [!NOTE]
 > To complete this exercise you'll need an [Azure subscription](https://azure.microsoft.com/free/).
