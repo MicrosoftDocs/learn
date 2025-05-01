@@ -1,5 +1,6 @@
 
 
+
 Globally, IPv4 address ranges are in short supply, and can be an expensive way to grant access to Internet resources. [Azure Network Address Translation (NAT)](/azure/nat-gateway/nat-overview) lets internal resources on a private network to share routable IPv4 addresses. Rather than purchasing an IPv4 address for each resource that requires internet access, you can use a NAT service to map outgoing requests from internal resources to an external IP address.
 
 The following diagram shows outbound traffic flow from Subnet 1 through the NAT gateway to be mapped to a Public IP address or a Public IP prefix.

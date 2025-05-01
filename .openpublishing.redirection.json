@@ -47358,6 +47358,36 @@
       "source_path": "learn-pr/wwl-azure/build-first-html-webpage/9-summary.md",
       "redirect_url": "/training/modules/build-first-html-webpage/6-research-links-lists-images/8-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/deploy-message-encryption-microsoft-365/1-introduction.md",
+      "redirect_url": "/training/modules/deploy-message-encryption-microsoft-365/introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/deploy-message-encryption-microsoft-365/2-implement-microsoft-purview-message-encryption.md",
+      "redirect_url": "/training/modules/deploy-message-encryption-microsoft-365/implement-message-encryption",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/deploy-message-encryption-microsoft-365/3-implement-microsoft-purview-advanced-message-encryption.md",
+      "redirect_url": "/training/modules/deploy-message-encryption-microsoft-365/implement-advanced-message-encryption",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/deploy-message-encryption-microsoft-365/4-use-microsoft-purview-message-encryption-templates-mail-flow-rules.md",
+      "redirect_url": "/training/modules/deploy-message-encryption-microsoft-365/mail-flow-rules-encryption",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/deploy-message-encryption-microsoft-365/5-knowledge-check.md",
+      "redirect_url": "/training/modules/deploy-message-encryption-microsoft-365/knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/deploy-message-encryption-microsoft-365/6-summary-resources.md",
+      "redirect_url": "/training/modules/deploy-message-encryption-microsoft-365/summary",
+      "redirect_document_id": false
     }
   ]
 }
