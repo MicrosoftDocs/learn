@@ -156,6 +156,48 @@ The last part of this workflow file sets the `MY_NAME` variable value for this w
 
 For more information on workflow syntax, see [Workflow syntax for GitHub Actions](https://docs.github.com/actions/using-workflows/workflow-syntax-for-github-actions?azure-portal=true)
 
+## Referencing Actions in Workflows
+
+When creating workflows in GitHub Actions, you can reference actions from various sources. These actions can be used to automate tasks in your workflows. Below are the primary sources where workflows can reference actions:
+
+1. **A published Docker container image on Docker Hub**  
+   Workflows can reference actions that are published as Docker container images on Docker Hub. These actions are containerized and include all dependencies required to execute the action. To use such an action, you specify the Docker image in the `uses` attribute of your workflow step. For example:
+   ```yml
+   steps:
+     - name: Run a Docker action
+       uses: docker://<docker-image-name>:<tag>
+   ```
+
+2. **Any public repository**  
+   Actions hosted in public repositories can be directly referenced in your workflows. These actions are accessible to anyone and can be used by specifying the repository name and version (Git ref, SHA, or tag) in the `uses` attribute. For example:
+   ```yml
+   steps:
+     - name: Use a public action
+       uses: actions/checkout@v3
+   ```
+
+3. **The same repository as your workflow file**  
+   You can reference actions stored in the same repository as your workflow file. This is useful for custom actions that are specific to your project. To reference such actions, use a relative path to the action's directory. For example:
+   ```yml
+   steps:
+     - name: Use a local action
+       uses: ./path-to-action
+   ```
+
+4. **An enterprise marketplace**  
+   If your organization uses GitHub Enterprise, you can reference actions from your enterprise's private marketplace. These actions are curated and managed by your organization, ensuring compliance with internal standards. For example:
+   ```yml
+   steps:
+     - name: Use an enterprise marketplace action
+       uses: enterprise-org/action-name@v1
+   ```
+
+### Additional Notes
+- Actions in private repositories can also be referenced, but they require proper authentication and permissions.
+- When referencing actions, always specify a version (Git ref, SHA, or tag) to ensure consistency and avoid unexpected changes.
+
+For more information, see [Referencing actions in workflows](https://docs.github.com/actions/using-workflows/referencing-actions-in-workflows?azure-portal=true).
+
 ## GitHub-hosted versus self-hosted runners
 
 We briefly mentioned runners as being associated with a job. A runner is simply a server that has the GitHub Actions runner application installed. In the previous workflow example, there was a `runs-on: ubuntu-latest` attribute within the jobs block, which told the workflow that the job will run using the GitHub-hosted runner that's running in the `ubuntu-latest` environment.
