@@ -48,7 +48,7 @@ The other prebuilt models expect a common type of form or document, such as:
 - Health insurance card
 
 > [!IMPORTANT]
-> This list shows a subset of the prebuilt models available. Check the Azure AI Document Intelligence documentation for [all available models](/azure/ai-services/document-intelligence/model-overview?view=doc-intel-4.0.0&azure-portal=true#model-overview).
+> This list shows a subset of the prebuilt models available. Check the Azure AI Document Intelligence documentation for [all available models](/azure/ai-services/document-intelligence/model-overview?azure-portal=true#model-overview).
 
 If you have an unusual or unique type of form, you can use the above general document analysis prebuilt models to extract information from them. However, if you want to extract more specific information than the prebuilt models support, you can create a **custom model** and train it by using examples of completed forms. 
 
