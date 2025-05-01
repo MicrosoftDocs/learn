@@ -23,8 +23,8 @@ In this task, you start exploration in the center portion of the on landing page
 
 1. Open the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/2cac767e-42c4-4058-afbb-a9413aac461d?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
 
-1. Note the options available beneath where it says Prompts to try.  Here you can search for prompts or promptbooks, based on the option you select and you can filter based on role and/or plugin.  Note: for the purpose of this simulation, 
-1. Select prompts  – in parallel, user should be able to select any role and/or plugin filter.
+1. Note the options available beneath where it says Prompts to try.  Here you can search for prompts or promptbooks, and based on the option you select you can filter for a specific  on role and/or plugin.  Note: for the purpose of this simulation, you can filter for role or plugin. Filtering for both role and plugin is limited to the SOC Analyst role and the Microsoft Sentinel Plugin.
+1. Select prompts 
 1. Once a prompt is selected, user can select the X to close  
 1. select another prompt.
 1. Select promptbooks (any promptbook) - in parallel, user should be able to select any role and/or plugin filter.  
