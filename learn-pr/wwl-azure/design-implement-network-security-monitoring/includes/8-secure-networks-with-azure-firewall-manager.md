@@ -1,4 +1,5 @@
 
+
 If you manage multiple firewalls, it's often difficult to keep the firewall rules in sync. Central IT teams need a way to define base firewall policies and enforce them across multiple business units. At the same time, DevOps teams want to create their own local derived firewall policies that are implemented across organizations.
 
 [Azure Firewall Manager](/azure/firewall-manager/overview) helps solve these problems. Azure Firewall Manager provides centralized configuration and management across multiple Azure Firewall instances. Azure Firewall Manager lets you create one or more firewall policies and rapidly apply them to multiple firewalls.

@@ -1,4 +1,5 @@
 
+
 [Web Application Firewall (WAF)](/azure/web-application-firewall/overview) provides centralized protection of your web applications from common exploits and vulnerabilities. SQL injections and cross-site scripting are among the most common attacks.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=b23e4db1-5007-4f42-ae55-3a564a4ab7d3]

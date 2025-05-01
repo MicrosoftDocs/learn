@@ -3,7 +3,7 @@ uid: learn.azure.monitor-github-events-with-a-function-triggered-by-a-webhook.ex
 metadata:
   title: Exercise - Trigger an Azure Function with a GitHub event
   description: Exercise - Trigger an Azure Function with a GitHub event
-  ms.date: 10/27/2022
+  ms.date: 04/24/2025
   author: ggailey777
   ms.author: glenga
   ms.topic: unit
@@ -12,4 +12,4 @@ durationInMinutes: 6
 azureSandbox: true
 content: |
   [!include[](includes/7-exercise-trigger-function-with-github-event.md)]
-
+
