@@ -10,7 +10,7 @@ Now that the API is deployed to the cloud, as a Tailwind Traders engineer, you n
 
     :::code language="html" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/solution/client/index.html" :::
 
-    This markup includes a transition element, which allows Vue.js to run a subtle animation as stock data changes. When a stock is updated, the tile fades out and quickly back in to view. This way if the page is full of stock data, users can easily see which stocks have changed.
+    This markup includes a transition element, which allows Vue.js to run a subtle animation as stock data changes. When a stock is updated, the tile fades out and quickly back in to view. This way if the page is full of stock data, users can easily see which stocks changed.
 
 1. Add the following script block just above the reference to *bundle.js* to include the SignalR SDK.
 
@@ -55,7 +55,7 @@ Now that the API is deployed to the cloud, as a Tailwind Traders engineer, you n
 
 1. Select **Review + Create**, then select **Create** to create the resource. Wait for the deployment to complete before continuing.
 1. Select **Go to resource** to open the new Azure Static Web App resource.
-1. On the **Overview** page, copy the **URL** value. This is the base URL of the deployed static web app.
+1. On the **Overview** page, copy the **URL** value. This value is the base URL of the deployed static web app.
 
 ## Add the BACKEND_URL variable to the repository
 
@@ -113,6 +113,7 @@ By default, function apps don't allow CORS requests. You need to update the func
 ## Test the deployment of the client
 
 1. In a browser, use the URL of the deployed static web app to open the client.
-1. Open developer tools to watch the Console to see when the SignalR data for updated stock is received. Remember these aren't HTTP requests, so you won't see them in the Network tab.
 
-Congratulations! You've deployed your stock app improved with SignalR!
+1. In the Azure portal, open developer tools and watch the Console to see when the SignalR data for updated stock is received. Remember, SignalR data aren't HTTP requests, so the updates don't appear in the Network tab.
+
+Congratulations! You deployed your stock app improved with SignalR!
