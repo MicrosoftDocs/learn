@@ -9,4 +9,4 @@ You can test your knowledge base interactively in Language Studio, submitting qu
 
 ## Deploying a knowledge base
 
-When you are happy with the performance of your knowledge base, you can deploy it to a REST endpoint that client applications can use to submit questions and receive answers. You can deploy it directly from  Language Studio.
+When you are happy with the performance of your knowledge base, you can deploy it to a REST endpoint that client applications can use to submit questions and receive answers. You can deploy it directly from Language Studio.
