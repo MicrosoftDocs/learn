@@ -1,6 +1,6 @@
 The Azure OpenAI chat baseline application published in the Azure Architecture Center on the Microsoft website illustrates an example of how you can use Azure Landing Zones with AI workloads. 
 
-![Diagram of all elements of a complex AI application deployment](../media/ai-landing-zone-network-diagram.png)
+![Diagram of all elements of a complex AI application deployment.](../media/ai-landing-zone-network-diagram.png)
 
 In the AI chatbot landing zone implementation, the workload team is mostly responsible for the configuration, management, and deployment of the workload components, including all AI services that are used in this architecture.
 
@@ -21,7 +21,7 @@ In the AI chatbot landing zone implementation, the workload team is responsible 
 - **Azure Monitor, Azure Monitor Logs, and Application Insights.** Used to collect, store, and visualize observability data.
 - **Azure Policy.** Used to apply policies that are specific to the workload to help govern, secure, and apply controls at scale.
 
-![Diagram of the part of the AI workload that is the responsibility of the workload team](../media/workload-resources.png)
+![Diagram of the part of the AI workload that is the responsibility of the workload team.](../media/workload-resources.png)
 
 In this architecture the workload team is also responsible for maintaining the following resources:
 
@@ -41,7 +41,7 @@ In this architecture the platform team owns and maintains the following centrali
 - **DNS resolution service for spoke virtual networks and cross-premises workstations.** That service usually takes the form of Azure Firewall as a DNS proxy or Azure DNS Private Resolver. In this architecture, this service resolves private endpoint DNS records for all DNS requests that originate in the spoke.
 - **Azure DDoS Protection.** Used to protect public IP addresses against distributed attacks.
 
-![Diagram of the part of the AI workload that is the responsibility of the platform team](../media/platform-resources.png)
+![Diagram of the part of the AI workload that is the responsibility of the platform team.](../media/platform-resources.png)
 
 ## Critical dependencies
 
