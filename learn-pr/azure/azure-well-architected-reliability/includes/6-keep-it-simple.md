@@ -7,7 +7,7 @@ It's often what you take away rather than what you add that makes solutions more
 
 Contoso Travel is buying and integrating a small startup company that has a popular web-based travel app. The app is popular because it gets great deals with hotels and airlines and uses social media for targeted marketing.
 
-The startup's app was built by using Node.js and runs on VMs hosted both in their datacenter and on Amazon Web Services (AWS).
+The startup's app was built by using Node.js and runs on virtual machines (VMs) hosted both in their datacenter and on Amazon Web Services (AWS).
 
 ## Keep workload components simple
 
@@ -36,7 +36,7 @@ Standards help keep things consistent and reduce human errors. Using standard na
 - The startup's development team lacks defined standards. They use overlapping libraries, don't enforce coding styles, and their release pipelines lack formal, automated testing gates.
 
 - The Contoso team finds the new codebase hard to maintain because of inconsistent styles and library usage.
-- There are a lot of problems after major updates in production. Sometimes the team needs to roll back the updates or apply hot-fixes during deployment. Because of these frequent problems, the entire teams needs to help whenever they release updates to production. To make matters worse, these problems are hurting Contoso's reputation and giving users a bad experience.
+- There are a lot of problems after major updates in production. Sometimes the team needs to roll back the updates or apply hot-fixes during deployment. Because of these frequent problems, the entire team needs to help whenever they release updates to production. To make matters worse, these problems are hurting Contoso's reputation and giving users a bad experience.
 
 *Applying the approach and outcomes*
 
