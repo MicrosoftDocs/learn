@@ -43,7 +43,7 @@ Service-level agreements (SLAs) vary by service. Not all services and features a
 
 ## Determine dependencies and their effect on resiliency
 
-**When you break down your workload into parts, document all internal and external dependencies, and identify how problems with these dependencies might disrupt your flows.**
+**When you divide your workload into components, document all internal and external dependencies, and identify how problems with these dependencies might disrupt your flows.**
 
 Keeping track of dependent infrastructure, services, APIs, and functions that other teams or partners develop helps you determine whether the workload can run without them. It also helps you understand cascading failures and improve downstream operations. Developers can design resilient systems to handle potential failures when you use external services.
 
