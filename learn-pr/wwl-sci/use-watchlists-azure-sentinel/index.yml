@@ -9,9 +9,9 @@ metadata:
   ms.topic: module
   ms.service: microsoft-sentinel
 title: Use watchlists in Microsoft Sentinel
-summary: Learn how to create Microsoft Sentinel watchlists that are a named list of imported data.  Once created, you can easily use the named watchlist in KQL queries.
+summary: Learn how to create Microsoft Sentinel watchlists that are a named list of imported data. Once created, you can easily use the named watchlist in KQL queries.
 abstract: |
-  Upon completion of this module, the learner will be able to:
+  Upon completion of this module, the learner is able to:
   - Create a watchlist in Microsoft Sentinel
   - Use KQL to access the watchlist in Microsoft Sentinel
 prerequisites: ""
