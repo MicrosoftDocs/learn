@@ -13,11 +13,11 @@ metadata:
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "Which service should you use to locate and read text in signs within a photograph of a street."
+  - content: "Which service should you use to locate and read text in signs within a photograph of a street?"
     choices:
     - content: "Azure AI Language"
       isCorrect: false
-      explanation: "Incorrect: Azure AI Language aren't able to perform OCR."
+      explanation: "Incorrect: Azure AI Language isn't able to do OCR."
     - content: "Azure AI Document Intelligence"
       isCorrect: false
       explanation: "Incorrect: Azure Document Intelligence is designed to extract text from documents and forms."
@@ -42,7 +42,7 @@ quiz:
       explanation: "Incorrect: The location and text of individual words are returned, but that's not the only level."
     - content: "A single *block* containing all of the text in the image."
       isCorrect: false
-      explanation: "Incorrect:  single block is returned, but it includes smaller location areas for the text detected in the image."
+      explanation: "Incorrect:  A single block is returned, but it includes smaller location areas for the text detected in the image."
     - content: "A *block* containing the location of *lines* of text as well as individual *words*."
       isCorrect: true
       explanation: "Correct: The image analysis OCR results include a block in which each line of text is located, and within each line the location of each word is returned."

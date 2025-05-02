@@ -57,7 +57,7 @@ ImageAnalysisResult result = client.Analyze(
 
 ::: zone-end
 
-The results of the Read OCR function are returned synchronously, either as JSON or the language specific object of a similar structure. These results are broken down in *blocks* (with the current service only using one block), then *lines*, and then *words*. Additionally, the text values are included at both the *line* and *word* levels, making it easier to read entire lines of text if you don't need to extract text at the individual *word* level.
+The results of the Read OCR function are returned synchronously, either as JSON or the language-specific object of a similar structure. These results are broken down in *blocks* (with the current service only using one block), then *lines*, and then *words*. Additionally, the text values are included at both the *line* and *word* levels, making it easier to read entire lines of text if you don't need to extract text at the individual *word* level.
 
 ```JSON
 {
