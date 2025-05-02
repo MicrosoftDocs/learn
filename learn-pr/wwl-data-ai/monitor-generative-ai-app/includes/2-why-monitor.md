@@ -42,7 +42,7 @@ To measure, is to **monitor**. Monitoring isn't just a technical tool, but also 
 
 Through monitoring, you iteratively improve the performance of your generative AI solution:
 
-1. **Deploy your app** with a specific VM size or architecture.
+1. **Deploy your app** with a specific Virtual Machine (VM) size or architecture.
 2. **Simulate traffic** to generate real usage data.
 3. **Monitor performance** in terms of latency, throughput, and cost.
 4. **Reflect on trade-offs** based on the metrics.
