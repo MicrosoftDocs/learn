@@ -117,7 +117,7 @@ https://docs.github.com/en/actions/writing-workflows/about-workflows , https://d
 
 ## Identify the Event that Triggered a Workflow from its Effects
 Understanding what triggered a GitHub Actions workflow—whether it was a push to a branch, a pull request, a scheduled job, or a manual dispatch—is crucial for debugging, auditing, and improving CI/CD pipelines. You can identify the triggering event by examining the workflow run, the repository changes, or the issue/pull request involved.
-![Events that trigger workflow](../images/workflow-triggers.png)
+![Events that trigger workflow](../media/workflow-triggers.png)
 ###  What Is a Workflow Trigger?
 A workflow trigger is an event that causes a workflow to start. GitHub supports various types of triggers, including:
 - push or pull_request (based on code changes)
