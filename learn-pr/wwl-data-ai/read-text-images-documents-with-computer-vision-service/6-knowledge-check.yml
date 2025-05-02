@@ -10,44 +10,40 @@ metadata:
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-azureSandbox: false
-labModal: false
-durationInMinutes: 4
-content: |
-  [!include[](includes/6-knowledge-check.md)]
+durationInMinutes: 3
 quiz:
   questions:
-  - content: "Which API would be best for this scenario? You need to read a large number of files with high accuracy. The text is short sections of handwritten text, some in English and some of it is in multiple languages."
+  - content: "Which service should you use to locate and read text in signs within a photograph of a street."
     choices:
-    - content: "A custom Language API"
+    - content: "Azure AI Language"
       isCorrect: false
-      explanation: "Incorrect: Azure AI Language custom models aren't able to perform OCR."
-    - content: "Document Intelligence API"
+      explanation: "Incorrect: Azure AI Language aren't able to perform OCR."
+    - content: "Azure AI Document Intelligence"
       isCorrect: false
-      explanation: "Incorrect: Document Intelligence is the best choice for large amounts of structured text and multiple languages, however isn't the best choice for shorter, unstructured handwritten text."
-    - content: "Image Analysis API"
+      explanation: "Incorrect: Azure Document Intelligence is designed to extract text from documents and forms."
+    - content: "Azure AI Vision"
       isCorrect: true
-      explanation: "Correct: The Image Analysis service OCR feature is best suited for short sections of handwritten text."
-  - content: "What levels of division are the OCR results returned?"
+      explanation: "Correct: The Image Analysis feature on Azure AI Vision includes OCR capabilities that can extract text from images."
+  - content: "Which visual feature enumeration should you use to return OCR results from an image analysis call?"
     choices:
-    - content: "Only total content and pages of text."
+    - content: "VisualFeatures.Caption"
       isCorrect: false
-      explanation: "Incorrect: Results contain blocks, words and lines, as well as bounding boxes for each word and line."
-    - content: "Blocks, words and lines of text."
+      explanation: "Incorrect: The VisualFeatures.Caption enumeration returns a suggested caption for the image."
+    - content: "VisualFeatures.Read"
       isCorrect: true
-      explanation: "Correct: Results contain blocks, words and lines, as well as bounding boxes for each word and line."
-    - content: "Total content, image tags, pages, words and lines of text."
+      explanation: "Correct: The VisualFeatures.Read enumeration returns text and its location in the image."
+    - content: "VisualFeatures.Tags"
       isCorrect: false
-      explanation: "Incorrect: Results contain blocks, words and lines, as well as bounding boxes for each word and line."
-  - content: "You've scanned a letter into PDF format and need to extract the text it contains. What should you do?"
+      explanation: "Incorrect: The VisualFeatures.Tags enumeration returns suggested tags to help categorize the image."
+  - content: "Text location information in an image is returned at which levels by the Azure AI Vision image analysis API?"
     choices:
-    - content: "Use the Azure AI Custom Vision service"
+    - content: "The location of individual *words* only."
       isCorrect: false
-      explanation: "Incorrect: The Azure AI Custom Vision service is used to build and deploy image identification applications by applying labels to classes or objects."
-    - content: "Use the Image Analysis API of the Azure AI Vision service."
+      explanation: "Incorrect: The location and text of individual words are returned, but that's not the only level."
+    - content: "A single *block* containing all of the text in the image."
       isCorrect: false
-      explanation: "Incorrect: The Image Analysis API isn't well suited to process PDF formatted files."
-    - content: "Use the Document Intelligence API."
+      explanation: "Incorrect:  single block is returned, but it includes smaller location areas for the text detected in the image."
+    - content: "A *block* containing the location of *lines* of text as well as individual *words*."
       isCorrect: true
-      explanation: "Correct: The Document Intelligence API can be used to process PDF formatted files."
-
+      explanation: "Correct: The image analysis OCR results include a block in which each line of text is located, and within each line the location of each word is returned."
+
