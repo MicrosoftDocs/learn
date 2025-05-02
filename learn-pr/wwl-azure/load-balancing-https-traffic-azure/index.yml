@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Load balance HTTP(S) traffic in Azure
   description: "You learn how to design load balancer solutions for HTTP(S) traffic and how to implement Azure Application gateway and Azure Front Door."
-  ms.date: 04/28/2025
+  ms.date: 05/01/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module
