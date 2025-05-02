@@ -1,14 +1,14 @@
 
-ExpressRoute extends on-premises networks into the Microsoft cloud over a private connection with the help of a connectivity provider. ExpressRoute establishes connections to various Microsoft cloud services, such as Microsoft Azure and Microsoft 365. Connectivity can be from an any-to-any (IP VPN) network, a point-to-point Ethernet network, or a virtual cross-connection through a connectivity provider at a colocation facility. Since ExpressRoute connections don't go over the public Internet, this approach offers more reliability, faster speeds, consistent latencies, and higher security.
-
-:::image type="content" source="../media/expressroute-connection-overview.png" alt-text="Diagram of the ExpressRoute components.":::
-
-## Basic ExpressRoute architecture
-
 This video summarizes the usage cases for Azure Expressroute. The video also covers the main components from the customer's network to the Microsoft Edge. 
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=b5e2293e-ac31-4916-a402-22374950d4dd]
 
+
+## Basic ExpressRoute architecture
+
+ExpressRoute extends on-premises networks into the Microsoft cloud over a private connection with the help of a connectivity provider. ExpressRoute establishes connections to various Microsoft cloud services, such as Microsoft Azure and Microsoft 365. Connectivity can be from an any-to-any (IP VPN) network, a point-to-point Ethernet network, or a virtual cross-connection through a connectivity provider at a colocation facility. Since ExpressRoute connections don't go over the public Internet, this approach offers more reliability, faster speeds, consistent latencies, and higher security.
+
+:::image type="content" source="../media/expressroute-connection-overview.png" alt-text="Diagram of the ExpressRoute components.":::
 
 ## ExpressRoute connectivity models
 
