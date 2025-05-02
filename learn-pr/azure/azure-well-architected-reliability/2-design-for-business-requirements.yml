@@ -14,7 +14,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which aspect of the workload do you **not** need to define reliability targets for?"
+  - content: "Which aspect of the workload do you NOT need to define reliability targets for?"
     choices:
     - content: "The workload's system and user flows."
       isCorrect: false
