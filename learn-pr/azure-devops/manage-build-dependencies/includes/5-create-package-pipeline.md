@@ -2,7 +2,7 @@ Here, you get the team's new code for the **Tailspin.SpaceGame.Web.Models** proj
 
 ## What changes were made to the project?
 
-Recall that the _Space Game_ website is an ASP.NET Core app. It uses the Model-View-Controller (MVC) pattern to separate data from how that data is displayed in the user interface. Andy and Mara want to move the model classes to a separate library so that multiple projects can use those classes.
+Recall that the *Space Game* website is an ASP.NET Core app. It uses the Model-View-Controller (MVC) pattern to separate data from how that data is displayed in the user interface. Andy and Mara want to move the model classes to a separate library so that multiple projects can use those classes.
 
 To do that, they create a new C# project called **Tailspin.SpaceGame.Web.Models** that contains only the model classes. At the same time, they remove the model classes from their existing project, **Tailspin.SpaceGame.Web**. They replace the model classes in their existing project with a reference to the **Tailspin.SpaceGame.Web.Models** project.
 
@@ -43,6 +43,7 @@ To clone the **mslearn-tailspin-spacegame-web-models** projects to your computer
 1. Select **Code**. Then, from the **HTTPS** tab, select the button next to the URL to copy the URL to your clipboard.
 
     :::image type="content" source="../../shared/media/github-clone-button.png" alt-text="Screenshot showing the URL and copy button from the GitHub repository.":::
+
 1. From Visual Studio Code, go to the terminal window, and run this `git clone` command. Replace the URL with the contents of your clipboard.
 
     ```bash
@@ -66,6 +67,7 @@ In Visual Studio Code, your terminal window points to the root directory of the 
     ```
 
     You see the directory and file tree in the file explorer.
+
 1. Reopen the integrated terminal. The terminal places you at the root of your web project.
 1. Open the *azure-pipelines.yml* file.
 
@@ -113,7 +115,7 @@ In Visual Studio Code, your terminal window points to the root directory of the 
 
     `feedPublish` specifies the name of the feed to publish to. The format of the name is `<projectName>/<feedName>`, where:
 
-      * `$(System.TeamProject)` is a predefined variable that refers to your project name; for example, "Space Game - web - Dependencies".
+      * `$(System.TeamProject)` is a predefined variable that refers to your project name, for example, "Space Game - web - Dependencies".
       * `Tailspin.SpaceGame.Web.Models` is the feed name that you provided in the previous exercise.
 
 ## Set permissions
@@ -152,8 +154,8 @@ Here's how to set up a second pipeline to build the package, and upload that pac
 
     :::image type="content" source="../media/5-artifacts-package.png" alt-text="A screenshot of the package in Azure Artifacts, showing version 1.0 of the package.":::
 
-1. Select the package to go to the details page. Then, copy the version number to a location where you can easily access it later.
+1. Select the package to go to the details page. Then, copy the version number to a location where you can access it later.
 
     :::image type="content" source="../media/5-package-details.png" alt-text="A screenshot of Azure Artifacts showing package details. Highlighted is the version number for the package.":::
 
-    You'll use this version number in the next unit.
+    Use this version number in the next unit.

@@ -4,9 +4,9 @@ It's likely that you used open-source or other partner components in your softwa
 
 You might also have your own app code that you can move into a library or package so that others can use it. This code might be an open-source project, or software that only your team can access.
 
-There are many ways to build and host your packages. The right solution depends both on the kinds of programming languages and frameworks you use and who you want to access your packages. Here, you continue your work with the Tailspin web team by creating a NuGet package for .NET that's hosted on Azure Artifacts.
+There are many ways to build and host your packages. The right solution depends both on the kinds of programming languages and frameworks you use and who you want to access your packages. Here, you continue your work with the Tailspin web team by creating a NuGet package for .NET that Azure Artifacts hosts.
 
-After completing this module, you'll be able to:
+After you complete this module, you'll be able to:
 
 - Create and share packages that multiple applications can use.
 - Create a build pipeline for your package and publish your package to Azure Artifacts.
@@ -17,7 +17,7 @@ After completing this module, you'll be able to:
 
 The modules in this learning path form a progression.
 
-To follow the progression from the beginning, be sure to first complete the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path.
+To follow the progression from the beginning, first complete the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path.
 
 We also recommend you start at the beginning of this learning path, [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true).
 

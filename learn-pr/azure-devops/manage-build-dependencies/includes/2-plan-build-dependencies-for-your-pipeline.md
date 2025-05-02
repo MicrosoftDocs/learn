@@ -1,8 +1,8 @@
-In this unit, you'll learn about packaging code to make it easier to share. You'll discover why you should make packages, the kinds of packages you can create, where you can host the packages, and how you can access them when they're hosted. You'll also learn about package versioning.
+In this unit, you learn about packaging code to make it easier to share. You discover why you should make packages, the kinds of packages you can create, where you can host the packages, and how you can access them when they're hosted. You also learn about package versioning.
 
-Codebases are always growing larger and more complex. It's unusual for a team to write all the code that their app uses. Instead, the team includes existing code written by other developers. There can be many of these packages, or dependencies, in an app. It's important to actively manage these dependencies to be able to maintain them properly and make sure they meet security requirements.
+Codebases are always growing larger and more complex. It's unusual for a team to write all the code that their app uses. Instead, the team includes existing code written by other developers. There can be many of these packages, or *dependencies*, in an app. It's important to actively manage dependencies to be able to maintain them properly and make sure they meet security requirements.
 
-Let's check in and see how the team is doing. Andy has called the team together to talk about a potential change to their code that would help out another team.
+Check in and see how the team is doing. Andy called the team together to talk about a potential change to their code that would help out another team.
 
 ## Team meeting
 
@@ -24,9 +24,9 @@ Let's check in and see how the team is doing. Andy has called the team together 
 
 ## What is a package?
 
-A _package_ contains reusable code that other developers can use in their own projects, even though they didn't write it.
+A *package* contains reusable code that other developers can use in their own projects, even though they didn't write it.
 
-For compiled languages, a package typically contains the compiled binary code, such as .dll files in .NET, or .class files in Java. For languages that are interpreted instead of compiled, such as JavaScript or Python, a package might include source code.
+For compiled languages, a package typically contains the compiled binary code, such as *.dll* files in .NET or *.class* files in Java. For languages that are interpreted instead of compiled, such as JavaScript or Python, a package might include source code.
 
 Either way, packages are typically compressed to ZIP or a similar format. Package systems often define a unique file extension, such as *.nupkg* or *.jar*, to make the package's use clear. Compression can help reduce download time and also produce a single file to simplify management.
 
@@ -36,11 +36,11 @@ Packages also often contain one or more files that provide metadata, or informat
 
 There are advantages to building a package as opposed to duplicating the code.
 
-One reason to create a package instead of duplicating code is to prevent _drift_. When code is duplicated, each copy can quickly diverge to satisfy the requirements of a particular app. It becomes difficult to migrate changes from one copy to the others. In other words, you lose the ability to improve the code in ways that benefit everyone.
+One reason to create a package instead of duplicating code is to prevent *drift*. When code is duplicated, each copy can quickly diverge to satisfy the requirements of a particular app. It becomes difficult to migrate changes from one copy to the others. In other words, you lose the ability to improve the code in ways that benefit everyone.
 
 Packages also group related functionality into one reusable component. Depending on the programming language, a package can provide apps with access to certain types and functions, while restricting access to their implementation details.
 
-Another reason to build a package is to provide a consistent way to build and test that package's functionality. When code is duplicated, each app might build and test that code in different ways. One set of tests might include checks from which another set could benefit.
+Another reason to build a package is to provide a consistent way to build and test the functionality of that package. When code is duplicated, each app might build and test that code in different ways. One set of tests might include checks from which another set could benefit.
 
 One tradeoff is that you have another codebase to test and maintain with a package. You must also be careful when adding features. Generally speaking, a package should contain features that benefit many kinds of apps. For example, [Json.NET](https://www.newtonsoft.com/json?azure-portal=true) is a popular NuGet package for .NET that allows you to work with JSON files. Json.NET is open source, so the community can propose improvements and report issues.
 
@@ -50,7 +50,7 @@ When multiple apps can benefit from the same code, the advantages far outweigh t
 
 If the goal is to reorganize your code into separate components, you need to identify those pieces of your app that can be removed, packaged to be made reusable, stored in a central location, and versioned. You might even want to replace your own code with partner components that are either open source or that you license.
 
-There are many ways to identify the potential dependencies in your codebase. These include scanning your code for patterns of reuse, and analyzing the architecture of your solution. Here are some ways to identify dependencies:
+There are many ways to identify the potential dependencies in your codebase. These approaches include scanning your code for patterns of reuse, and analyzing the architecture of your solution. Here are some ways to identify dependencies:
 
 * **Duplicate code**.
 
@@ -83,11 +83,11 @@ You might already be familiar with these popular package systems:
 * **NuGet**: packages .NET libraries
 * **NPM**: packages JavaScript libraries
 * **Maven**: packages Java libraries
-* **Docker**: packages software in isolated units called _containers_
+* **Docker**: packages software in isolated units called *containers*
 
 ## Where are packages hosted?
 
-You can host packages on your own network, or you can use a hosting service. A hosting service is often called a _package repository_ or _package registry_. Many of these services provide free hosting for open-source projects.
+You can host packages on your own network, or you can use a hosting service. A hosting service is often called a *package repository* or *package registry*. Many of these services provide free hosting for open-source projects.
 
 Here are some popular hosting services for the package types we just described:
 
@@ -107,7 +107,7 @@ Here are some popular hosting services for the package types we just described:
 
     Docker packages are called images, and contain complete, self-contained deployments. Most commonly, a Docker image represents a software component that can be hosted and run by itself, without any dependencies on other images. Docker images are layered and might be dependent on other images.
 
-A _package feed_ refers to your package repository server. This server can be on the internet or behind your firewall on your network. For example, you can [host your own NuGet feeds](/nuget/hosting-packages/overview?azure-portal=true) by using hosting products such as Azure Artifacts and MyGet. You can also host packages on a file share.
+A *package feed* refers to your package repository server. This server can be on the internet or behind your firewall on your network. For example, you can [host your own NuGet feeds](/nuget/hosting-packages/overview?azure-portal=true) by using hosting products such as Azure Artifacts and MyGet. You can also host packages on a file share.
 
 When you host packages behind the firewall, you can include feeds to your own packages. You can also cache packages that you trust on your network when your systems can't connect to the internet.
 
@@ -117,7 +117,7 @@ A good dependency management strategy depends on these three elements:
 
 * **Standardization**.
 
-    Standardizing how you declare and resolve dependencies helps your automated release process remain repeatable and  predictable.
+    Standardize how you declare and resolve dependencies helps your automated release process remain repeatable and  predictable.
 
 * **Packaging formats and sources**.
 
@@ -131,7 +131,7 @@ A good dependency management strategy depends on these three elements:
 
 Many package feeds provide unrestricted access to packages. For example, you can download [Json.NET](https://www.nuget.org/packages/Newtonsoft.Json/?azure-portal=true) from nuget.org, without the need to sign in or authenticate.
 
-Other package feeds require authentication. You can authenticate access to feeds in a few ways. For example, some kinds of feeds require a username and password. Other feeds require an _access token_, which is typically a long series of characters that identifies who you are and to what resources you have access. You can set access tokens to expire after a given time period.
+Other package feeds require authentication. You can authenticate access to feeds in a few ways. For example, some feeds require a username and password. Other feeds require an *access token*, which is typically a long series of characters that identifies who you are and to what resources you have access. You can set access tokens to expire after a given period.
 
 ## How are packages versioned?
 
@@ -160,9 +160,9 @@ Install-Package Newtonsoft.Json -Version 13.0.1
 
 ## What happens when the package changes?
 
-When you reference a package from your app, you typically _pin_—or specify—the version of that package you want to use.
+When you reference a package from your app, you typically *pin*, or specify, the version of that package you want to use.
 
-Many frameworks let you specify allowable ranges of package versions to install. Some also allow you to specify wildcards, which we call a _floating version_.
+Many frameworks let you specify allowable ranges of package versions to install. Some also allow you to specify wildcards, which we call a *floating version*.
 
 For example, in NuGet, version "1.0" means the first version that's equal to or greater than 1.0. "[1.0]" specifies to install version 1.0 only, and not a newer version.
 

@@ -19,6 +19,6 @@ In this unit, you set up Azure Artifacts and create a new feed. You use this fee
     This option has a list of links, commands, and a credential provider you could use if you wanted to run this process locally by using Visual Studio.
 
     > [!NOTE]
-    > In practice, you'd connect your application to the feed so that you can pull down packages and include them when you build and run your application locally. For brevity, we'll skip this part.
+    > In practice, you'd connect your application to the feed so that you can pull down packages and include them when you build and run your application locally. For brevity, we skip this part.
 
 **Andy:** I've got Azure Artifacts set up. Now, we need to create a pipeline that creates the new package there.
