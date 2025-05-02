@@ -1,5 +1,6 @@
 
 
+
 As an Azure network engineer supporting an ExpressRoute deployment, you have to diagnose and resolve any ExpressRoute connection issues that arise.
 
 At the highest level, there are three main ExpressRoute routing domains. You should consider each area when trying to resolve an issue. 
