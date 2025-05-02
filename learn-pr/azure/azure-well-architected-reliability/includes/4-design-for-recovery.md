@@ -9,7 +9,7 @@ Contoso hosts a large amount of data on an on-premises SQL Server database and r
 
 The new analytics solution uses Azure Analysis Services, Azure Data Factory, Azure Synapse Analytics, Power BI, and Azure Virtual Machines. All users are internal. After thinking about availability needs, the team decides to keep everything in one region. 
 
-The data is ingested by using Azure Data Factory, processed, and then saved to the Analysis Services storage. Part of the process requires a legacy windows process, deployed to a VM in the cloud.
+The data is ingested by using Azure Data Factory, processed, and then saved to the Analysis Services storage. Part of the process requires a legacy windows process, deployed to a virtual machine (VM) in the cloud.
 
 ## Be prepared for disasters
 
@@ -53,18 +53,18 @@ Immutable and transactionally consistent backups ensure that data can't be chang
 
 **Use design patterns to add resilience to your workload through self-healing mechanisms.**
 
-Self-healing capabilities let parts of the workload fix themselves by recovering affected components and, if needed, switching to backup infrastructure. 
+Self-healing capabilities enable parts of the workload fix themselves by recovering affected components and, if needed, switching to backup infrastructure. 
 
-Self-healing automation helps reduce risks from external factors like human intervention and shortens the time that it takes to fix problems.
+Self-healing automation helps reduce risks from external factors like human intervention and fixes problems faster.
 
 *Contoso's challenge*
 
-- The Windows process invoked from Azure Data Factory when ingesting data was initially deployed to multiple VMs for increased availability.
+- The Windows process that Azure Data Factory used for data ingestion was initially deployed to multiple VMs for increased availability.
 
-- There have been a few cases where the legacy Windows process has crashed, requiring a restart of the VM. While the processing time overall has been minimally affected (because of the level of redundancy), the team would like to implement a solution that automates the detection of the failure and the recovery.
+- The legacy Windows process has crashed a few times, which requires a VM restart. The overall processing time hasn't been affected much because of the level of redundancy. But the team wants to use a solution that automates the detection of the failure and recovery.
 
 *Applying the approach and outcomes*
 
-- The team decides to implement an Azure Virtual Machine Scale Set solution, which is configured to deploy the Application Health Extension to continuously monitor the health of the VM process.
+- The team decides to implement an Azure Virtual Machine Scale Set solution. This solution is configured to deploy the Application Health Extension to continuously monitor the health of the VM process.
 
-- With Automatic Instance Repair enabled, the scale set is now able to repair the component by restarting the VM or creating a new instance based on the same image.
+- With Automatic Instance Repair enabled, the scale set can repair the component by restarting the VM or creating a new instance based on the same image.
