@@ -10,10 +10,7 @@ metadata:
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-azureSandbox: false
-labId: 152408
-labModal: true
-durationInMinutes: 20
+durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise.md)]
-
+
