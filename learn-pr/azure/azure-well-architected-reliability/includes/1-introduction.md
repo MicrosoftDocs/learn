@@ -1,6 +1,7 @@
-The Azure Well-Architected Framework is a guide that helps you build a solid and reliable workload. The Reliability pillar helps ensure that your workload is:
+The Azure Well-Architected Framework is a guide that helps ensure that your workload is: 
 
 - **Resilient, available, and recoverable.**
+- As secure as you need it to be.
 - Worth the investment.
 - Developed and operated responsibly.
 - Meeting its goals on time.
