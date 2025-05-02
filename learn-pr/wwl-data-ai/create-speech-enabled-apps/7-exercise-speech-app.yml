@@ -4,9 +4,9 @@ title: Exercise - Create a speech-enabled app
 metadata:
   title: Exercise - Create a speech-enabled app
   description: Exercise - Create a speech-enabled app
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 08/25/2024
+  ms.date: 05/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -16,4 +16,4 @@ labModal: true
 durationInMinutes: 30
 content: |
   [!include[](includes/7-exercise-speech-app.md)]
-
+
