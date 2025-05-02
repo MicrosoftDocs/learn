@@ -21,7 +21,7 @@ These Azure landing zone design areas are as follows:
 - **Governance.** This design area addresses ensuring that governance policies and auditing are enforced and automated. An example would be notifications and alerts being generated when an element of the deployment's configuration drifts out of compliance due to configuration changes.
 - **Platform automation and DevOps.** This design element ensures that your organization leverages the right alignment of tools and templates to deploy landing zones and supporting resources.
 
-![Table showing the eight different Azure landing zone design areas.](../media/landing-zone-decision-areas.png)
+![Diagram showing the eight different Azure landing zone design areas.](../media/landing-zone-decision-areas.png)
 
 As a general rule, be prepared to balance requirements and functionality. Your journey to the most effective architecture for your organization's AI workloads will evolve over time as requirements change and you learn from your implementation.
 
