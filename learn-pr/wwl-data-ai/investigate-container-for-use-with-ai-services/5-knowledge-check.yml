@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Knowledge check
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 08/25/2024
+  ms.date: 05/02/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -47,4 +47,4 @@ quiz:
     - content: "mcr.microsoft.com/azure-ai-services/textanalytics/language"
       isCorrect: true
       explanation: "Correct. You must deploy the image that is specific to language detection."
-
+
