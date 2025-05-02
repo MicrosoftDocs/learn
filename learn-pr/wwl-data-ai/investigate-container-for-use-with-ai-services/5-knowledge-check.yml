@@ -21,7 +21,7 @@ quiz:
       explanation: "Incorrect. The container does not require client applications to authenticate with a subscription key."
     - content: "The container must be able to connect to the Azure resource endpoint to send usage data for billing."
       isCorrect: true
-      explanation: "Correct. container usage metrics are sent to the Azure AI services resource in Azure to calculate billing."
+      explanation: "Correct. Container usage metrics are sent to the Azure AI services resource in Azure to calculate billing."
     - content: "All data passed from the client application to the container is forwarded to the Azure resource endpoint."
       isCorrect: false
       explanation: "Incorrect. The data submitted in a request is processed by the containerized service, and not forwarded to Azure."
