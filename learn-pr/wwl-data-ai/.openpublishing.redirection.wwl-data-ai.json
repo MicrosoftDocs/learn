@@ -5040,6 +5040,10 @@
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/7-summary.yml",
       "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution/8-summary"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/analyze-images/4-generate-smart-cropped-thumbnail.yml",
+      "redirect_url": "/azure/ai-services/computer-vision/overview-image-analysis"
     }
   ]
 }
