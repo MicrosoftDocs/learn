@@ -16,9 +16,9 @@ Azure AI Vision includes an *image analysis* capability that supports *optical c
 
 Azure AI Document Intelligence is a service that you can use to extract information from complex digital documents. Azure AI Document Intelligence is designed for extracting text, key-value pairs, tables, and structures from documents automatically and accurately. Key considerations for choosing Azure AI Document Intelligence include:
 
-- **Form Processing**: Azure AI Document Intelligence is specifically designed to extract data from forms, invoices, receipts, and other structured documents.
-- **Prebuilt Models**: Azure AI Document Intelligence provides prebuilt models for common document types to reduce complexity and integrate into workflows or applications.
-- **Custom Models**: Creating custom models tailored to your specific documents, makes Azure AI Document Intelligence a flexible solution that can be used in many business scenarios.
+- **Form processing**: Azure AI Document Intelligence is specifically designed to extract data from forms, invoices, receipts, and other structured documents.
+- **Prebuilt models**: Azure AI Document Intelligence provides prebuilt models for common document types to reduce complexity and integrate into workflows or applications.
+- **Custom models**: Creating custom models tailored to your specific documents, makes Azure AI Document Intelligence a flexible solution that can be used in many business scenarios.
 
 ## Azure AI Content Understanding
 
