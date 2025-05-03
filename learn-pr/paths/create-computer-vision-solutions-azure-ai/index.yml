@@ -1,20 +1,19 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.create-computer-vision-solutions-azure-ai
 metadata:
-  title: Create computer vision solutions with Azure AI Vision AI-3004
-  description: How to create computer vision solutions with Azure AI Vision (AI-3004)
-  ms.date: 1/29/2024
+  title: Create computer vision solutions in Azure
+  description: How to create computer vision solutions in Azure
+  ms.date: 4/29/2025
   author: wwlpublish
   ms.author: berryivor
   ms.topic: learning-path
-title: Create computer vision solutions with Azure AI Vision
+title: Create computer vision solutions in Azure
 prerequisites: |
   Before starting this learning path, you should already have:
   - Familiarity with Azure and the Azure portal.
   - Experience programming with C# or Python.
-  If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path before starting this one.
 summary: |
-  Computer vision is an area of artificial intelligence that deals with visual perception. Azure AI Vision includes multiple services that support common computer vision scenarios.
+  Computer vision is an area of artificial intelligence that deals with visual perception. Azure AI includes multiple services that support common computer vision scenarios.
 iconUrl: /training/achievements/cognitive-services-computer-vision.svg
 levels:
 - intermediate
@@ -30,10 +29,12 @@ subjects:
 - artificial-intelligence
 modules:
 - learn.wwl.analyze-images
+- learn.wwl.read-text-images-documents-with-computer-vision-service
+- learn.wwl.detect-analyze-recognize-faces
 - learn.wwl.classify-images
 - learn.wwl.detect-objects-images
-- learn.wwl.detect-analyze-recognize-faces
-- learn.wwl.read-text-images-documents-with-computer-vision-service
 - learn.wwl.analyze-video
+- learn.wwl.develop-generative-ai-vision-apps
+- learn.wwl.generate-images-azure-openai
 trophy:
   uid: learn.wwl.create-computer-vision-solutions-azure-ai.trophy

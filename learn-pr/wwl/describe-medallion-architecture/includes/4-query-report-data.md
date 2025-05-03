@@ -2,7 +2,7 @@ Now that your medallion architecture is in place, data teams and the business ca
 
 ## Query data in your lakehouse
 
-Teams can use SQL to explore and query data in the gold layer. You can analyze data in delta tables at any layer of the medallion architecture using the T-SQL language, save functions, generate views, and apply SQL security. You can also use the SQL analytics endpoint to connect to your lakehouse from third-party tools and applications.
+Teams can use SQL to explore and query data in the gold layer. You can analyze data in delta tables at any layer of the medallion architecture using the T-SQL language, save functions, generate views, and apply SQL security. You can also use the SQL analytics endpoint to connect to your lakehouse from querying tools and applications.
 
 The SQL analytics endpoint in Fabric enables you to write queries,  manage the semantic model, and query data using the visual query experience.
 
@@ -11,11 +11,11 @@ The SQL analytics endpoint in Fabric enables you to write queries,  manage the s
 > [!NOTE]
 > The SQL analytics endpoint operates in **read-only** mode over lakehouse delta tables. To modify data in your lakehouse you can use dataflows, notebooks, or pipelines.
 
-In addition to using the SQL analytics endpoint for data exploration, you can also create a Power BI semantic model in Direct Lake mode to query data in your lakehouse. When you create a lakehouse, the system also creates an associated default semantic model. The default semantic model is a semantic model with metrics on top of lakehouse data.
+In addition to using the SQL analytics endpoint for data exploration, you can use a Power BI semantic model to explore data. A semantic model is a way of viewing data using business friendly terminology.  It's typically represented as a star schema with facts that represent a domain of data relevant to a particular business area, and dimensions that allow you to analyze data in the data domain. A default semantic model is created automatically when you create a lakehouse. You can also create a non-default, custom Power BI semantic model.
 
 ![Screenshot of the Power BI semantic model with relationships between tables.](../media/dataset-relationships.png)
 
-Data analysts connect to the semantic model using **Direct Lake mode**, in which the semantic model accesses data from a lakehouse. Direct Lake mode caches often-used data and refreshes it as required, combining the speed of a semantic model with the up-to-date data from a lakehouse.
+Data analysts can connect to the semantic model using **Direct Lake** mode, in which the semantic model accesses data directly from Delta tables in a lakehouse.
 
 ## Tailor your medallion layers for different needs
 

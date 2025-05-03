@@ -25,26 +25,24 @@ The modules in this learning path form a progression as you follow the Tailspin 
 
 ### Run the template
 
-Run a template that sets up everything for you in your Azure DevOps organization.
+Run a template that sets up your Azure DevOps organization.
 
-> [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=create-release-pipeline&azure-portal=true)
+1. [Get and run the ADOGenerator project](https://github.com/microsoft/AzDevOpsDemoGenerator/blob/main/docs/RunApplication.md) in Visual Studio or the IDE of your choice.
 
-From the Azure DevOps Demo Generator site, follow these steps to run the template:
+1. When prompted to **Enter the template number from the list of templates**, enter **29** for **Create a release pipeline with Azure Pipelines**, then press **Enter**.
 
-1. Select **Sign In** and accept the usage terms.
-1. From the **Create New Project** page, select your Azure DevOps organization and enter a project name, such as *Space Game - web - Release*.
+1. Choose your authentication method. You can [set up and use a Personal Access Token (PAT)](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate#create-a-pat) or use device login.
 
-    :::image type="content" source="../media/4-create-new-project.png" alt-text="Screenshot of the Azure DevOps Demo Generator web site showing the process to create the project.":::
+    > [!NOTE]
+    > If you set up a PAT, make sure to authorize the necessary [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes). In this module, you can use **Full access**, but in a real-world situation, you should ensure you grant only the necessary scopes.
 
-1. Select **Yes, I want to fork this repository** > **Authorize**. If a window appears, authorize access to your GitHub account.
+1. Enter your Azure DevOps organization name, then press **Enter**.
 
-    > [!IMPORTANT]
-    > You need to select this option so the template will connect to your GitHub repository. Select it even if you've already forked the *Space Game* website project. The template uses your existing fork.
+1. If prompted, enter your Azure DevOps PAT, then press **Enter**.
 
-1. Select **Create Project**. The template takes a few moments to run.
+1. Enter a project name such as *Space Game - web - Release*, then press **Enter**.
 
-1. Select **Navigate to project** to go to your project in Azure DevOps.
+1. Once your project is created, go to your Azure DevOps organization in your browser (at `https://dev.azure.com/<your-organization-name>/`) and select the project.
 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/training/modules/create-release-pipeline/8-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
@@ -86,7 +84,11 @@ At a minimum, you'll need to complete the following steps:
 
 ## Set up your project in Visual Studio Code
 
- When you ran the template to set up your Azure DevOps project, the process forked the [mslearn-tailspin-spacegame-web-deploy](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy) repository automatically for you. Now you'll download, or *clone*, a copy to your computer so you can work with it.
+1. On GitHub, go to the [mslearn-tailspin-spacegame-web-deploy](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy) repository.
+
+1. Select **Fork** at the top-right of the screen.
+
+1. Choose your GitHub account as the **Owner**, then select **Create fork**.
 
 ### Clone your fork locally
 

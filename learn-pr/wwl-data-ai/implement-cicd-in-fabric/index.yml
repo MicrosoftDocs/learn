@@ -8,7 +8,7 @@ metadata:
   ms.author: theresai
   ms.topic: module
   ms.collection: 
-  ms.service: azure
+  ms.service: fabric
 title: Implement continuous integration and continuous delivery (CI/CD) in Microsoft Fabric
 summary: Microsoft Fabric implements CI/CD using Git integration and deployment pipelines. These tools help you collaborate with your development team and provide you with an efficient process for delivering and updating content.  
 abstract: |

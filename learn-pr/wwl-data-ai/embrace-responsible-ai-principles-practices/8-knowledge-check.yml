@@ -2,6 +2,8 @@
 uid: learn.wwl.embrace-responsible-ai-principles-practices.knowledge-check
 title: Module assessment
 metadata:
+  hidden_question_numbers: ["25105B69_63","25105B69_87"]
+  ai_generated_module_assessment: true
   title: Module assessment
   description: "Knowledge check"
   ms.date: 02/13/2025
@@ -17,7 +19,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which if the following capabilities of Azure Machine Learning can help mitigate bias issues related to the principle of fairness?"
+  - content: "Which of the following capabilities of Azure Machine Learning can help mitigate bias issues related to the principle of fairness?"
     choices:
     - content: "Models can be trained using data that is stored securely in cloud data stores."
       isCorrect: false

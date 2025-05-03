@@ -3,12 +3,12 @@ uid: learn.advocates.azure-functions-and-signalr.8-summary
 metadata:
   title: Summary
   description: Review changes made to your application that removed polling and added server push technologies.
-  ms.date: 01/22/2025
-  author: craigshoemaker
-  ms.author: cshoe
+  ms.date: 04/24/2025
+  author: glenga
+  ms.author: glenga
   ms.topic: unit
 title: Summary
 durationInMinutes: 2
 content: |
   [!include[](includes/8-summary.md)]
-
+
