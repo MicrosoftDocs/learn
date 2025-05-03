@@ -2,6 +2,8 @@ There are multiple Azure AI services that read text from documents and images, e
 
 ## Azure AI Vision
 
+![Azure AI Vision icon](../media/ai-vision.png)
+
 Azure AI Vision includes an *image analysis* capability that supports *optical character recognition* (OCR). Consider using Azure AI Vision in the following scenarios:
 
 - **Text location and extraction from scanned documents**: Azure AI Vision is a great solution for general, unstructured documents that have been scanned as images. For example, reading text in labels, menus, or business cards.
@@ -10,13 +12,17 @@ Azure AI Vision includes an *image analysis* capability that supports *optical c
 
 ## Azure AI Document Intelligence
 
+![Azure AI Document Intelligence icon](../media/document-intelligence.png)
+
 Azure AI Document Intelligence is a service that you can use to extract information from complex digital documents. Azure AI Document Intelligence is designed for extracting text, key-value pairs, tables, and structures from documents automatically and accurately. Key considerations for choosing Azure AI Document Intelligence include:
 
-- **Form Processing**: Azure AI Document Intelligence is specifically designed to extract data from forms, invoices, receipts, and other structured documents.
-- **Prebuilt Models**: Azure AI Document Intelligence provides prebuilt models for common document types to reduce complexity and integrate into workflows or applications.
-- **Custom Models**: Creating custom models tailored to your specific documents, makes Azure AI Document Intelligence a flexible solution that can be used in many business scenarios.
+- **Form processing**: Azure AI Document Intelligence is specifically designed to extract data from forms, invoices, receipts, and other structured documents.
+- **Prebuilt models**: Azure AI Document Intelligence provides prebuilt models for common document types to reduce complexity and integrate into workflows or applications.
+- **Custom models**: Creating custom models tailored to your specific documents, makes Azure AI Document Intelligence a flexible solution that can be used in many business scenarios.
 
 ## Azure AI Content Understanding
+
+![Azure AI Content Understanding icon](../media/content-understanding.png)
 
 Azure AI Content Understanding is a service that you can use to analyze and extract information from multiple kinds of content; including documents, images, audio streams, and video. It is suitable for:
 
