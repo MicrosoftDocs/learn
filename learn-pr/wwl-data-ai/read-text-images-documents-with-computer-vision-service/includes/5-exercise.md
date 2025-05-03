@@ -1,6 +1,6 @@
 Now it's your turn to try using the OCR capabilities of Azure AI Vision.
 
-In this exercise, you use the Azure AI Vision SDK to develop a client application that extracts text from images.
+In this exercise, you use the Azure AI Vision Image Analysis SDK to develop a client application that extracts text from images.
 
 > [!NOTE]
 > To complete this lab, you need an **[Azure subscription](https://azure.microsoft.com/free?azure-portal=true)** in which you have administrative access.
