@@ -3,7 +3,7 @@ uid: learn.wwl.explore-microsoft-dev-box-improve-developer-productivity
 metadata:
   title: Explore Microsoft Dev Box and improve developer productivity
   description: Explore Microsoft Dev Box and improve developer productivity
-  ms.date: 04/24/2025
+  ms.date: 05/03/2025
   author: wwlpublish
   ms.author: fkhan
   ms.topic: learning-path
@@ -13,8 +13,7 @@ prerequisites: |
   You should be familiar with cloud and compute services such as Azure Virtual machines.
 summary: |
   This learning path introduces the Microsoft Dev Box service, geared towards developers. It includes an enterprise deployment guide along with key concepts of customization and imaging.
-iconUrl: /training/achievements/generic-trophy.svg
-hidden: true
+iconUrl: /training/achievements/explore-microsoft-dev-box-improve-developer-productivity.svg
 levels:
 - intermediate
 roles:
