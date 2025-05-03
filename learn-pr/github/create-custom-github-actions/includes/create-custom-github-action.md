@@ -36,7 +36,7 @@ Composite run steps actions allow you to reuse actions by using shell scripts. Y
 
 # Packaged Composite Action
 
-Packaged composite actions bundle multiple steps into a reusable unit. These actions are defined in a repository and can be referenced in workflows across different repositories. By packaging a composite action, workflows are simplified, duplication is reduced, and maintainability is improved.
+Packaged composite actions bundle multiple steps into a reusable unit. These actions are defined in a repository and can be referenced in workflows across different repositories. Packaging a composite action simplifies workflows, reduces duplication, and improves maintainability.
 
 When creating a packaged composite action, the steps are defined in a single `action.yml` file. This file specifies the inputs, outputs, and the sequence of commands or actions to execute. Packaged composite actions are particularly useful for automating repetitive tasks or combining multiple shell commands into a single reusable action.
 
@@ -96,9 +96,13 @@ If your composite action is shared from **another repository**, reference it lik
 uses: owner/repository/.github/actions/my-composite-action@v1
 ```
 ## Adding Outputs to a Composite Action
-Composite actions can define outputs that can be used in workflows.
+Composite actions can define outputs that workflows can use to pass data between steps or jobs. Outputs are particularly useful for sharing results or computed values from one action to another.
 
-### 1. Define an Output in action.yml
+The following example demonstrates how to define and use an output in a composite action:
+
+#### Define an Output in `action.yml`
+
+The `action.yml` file specifies an output named `script-result`. This output retrieves its value from the `result` output of the `run-script` step. The `run-script` step runs a Bash command to set the output value.
 
 ```yaml
 outputs:
@@ -113,7 +117,11 @@ runs:
       run: echo "result=Success" >> $GITHUB_OUTPUT
       shell: bash
 ```
-### 2. Access the Output in a Workflow
+
+#### Use the Output in a Workflow
+
+Once the composite action is created, its output can be accessed in a workflow. Here's an example:
+
 ```yaml
 jobs:
   test:
@@ -126,6 +134,13 @@ jobs:
       - name: Display result
         run: echo "Script Result: ${{ steps.my-action.outputs.script-result }}"
 ```
+
+In this example:
+- The composite action is invoked using the `uses` keyword.
+- Access the output `script-result` using the `steps.<step-id>.outputs.<output-name>` syntax.
+- Display the result in the workflow logs.
+
+Define outputs in composite actions to create reusable and modular workflows. This approach simplifies data sharing and improves maintainability.
 
 ## Best Practices for Composite Actions
 
@@ -233,8 +248,7 @@ async function run() {
 
 run();
 ```
-**Explanation:**  
-The JavaScript action uses `core.getInput()` to retrieve the CLI version specified as input. It then executes a `curl` command to download and install the CLI. If the installation process fails, the action uses `core.setFailed()` to mark the workflow as failed.
+The JavaScript code above uses core.getInput() to retrieve the CLI version specified as input. It then executes a curl command to download and install the CLI. If the installation process fails, the action uses core.setFailed() to mark the workflow as failed.
 
 ### Step 4: Test the Action Locally
 Before using the action in a workflow, test it on a GitHub-hosted runner.   
@@ -247,28 +261,38 @@ on:
     branches:
       - main
       - feature/*
+```
+**a. Triggering the Workflow**    
+The workflow is triggered on pushes to the main branch and any branch matching the feature/* pattern. You can adjust this to match your repository's branching strategy.
 
+```yaml
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+```
+**b. Checkout the Repository**   
+ The *actions/checkout@v4* action is used to clone the repository onto the runner. This ensures that the workflow has access to the repository's files.
 
+```yaml
       - name: Install MyCLI
         uses: ./.github/actions/my-cli-action
         with:
           version: '1.2.3'
+```
+**c. Run the Custom Action**   
+The uses: *./.github/actions/my-cli-action* line references the custom action locally. Ensure that the action directory and action.yml file are correctly set up. The version input specifies the CLI version to install—in this case, version 1.2.3.
 
+```yaml
       - name: Verify CLI Installation
         run: |
           echo "Checking MyCLI version..."
           mycli --version
 ```
-### Key Notes:
-1. **Branch Selection**: The workflow triggers on pushes to the `main` branch and any branch matching the `feature/*` pattern. Adjust this as needed for your repository.
-2. **Action Reference**: The `uses: ./.github/actions/my-cli-action` line references the custom action locally. Ensure the action directory and `action.yml` file are correctly set up.
-3. **CLI Version Input**: The `version` input specifies the CLI version to install. Update this value as required.
+**d. Verify the CLI Installation**   
+This step runs a shell command to verify that the CLI was installed successfully. It checks the version of the installed CLI by running mycli --version.
 
 ### Testing Locally
 To test this workflow locally, use the [`act`](https://github.com/nektos/act) CLI tool:
