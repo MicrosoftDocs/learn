@@ -10,7 +10,7 @@ from azure.ai.vision.face.models import *
 from azure.core.credentials import AzureKeyCredential
 
 face_client = FaceClient(
-    endpoint="<YOUR_RESOURCE_ENDPOINT">,
+    endpoint="<YOUR_RESOURCE_ENDPOINT>",
     credential=AzureKeyCredential("<YOUR_RESOURCE_KEY>"))
 ```
 
@@ -23,7 +23,7 @@ using Azure;
 using Azure.AI.Vision.Face;
 
 FaceClient faceClient = new FaceClient(
-    new Uri("<YOUR_RESOURCE_ENDPOINT">),
+    new Uri("<YOUR_RESOURCE_ENDPOINT>"),
     new AzureKeyCredential("<YOUR_RESOURCE_KEY>"));
 ```
 
