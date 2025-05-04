@@ -43,7 +43,7 @@ An item can be shared and item permissions can be configured by selecting on the
 
 In the **Grant people access** window that appears after selecting **Manage permissions**, if you add the user and don't select any of the checkboxes under **Additional permissions**, the user will have read access to the lakehouse metadata. The user won't have access to the underlying data in the lakehouse. To grant the engineer the ability to read data and not just metadata, **Read all SQL endpoint data** or **Read all Apache Spark** can be selected. 
 
- :::image type="content" source="../media/manage-people-access.png" alt-text="Screenshot of grant people lakehouse read all access." lightbox="../media/manage-people-access.png":::
+ :::image type="content" source="../media/grant-people-access-lakehouse.png" alt-text="Screenshot of grant people lakehouse read all access." lightbox="../media/grant-people-access-lakehouse.png":::
 
 > [!Tip]
 > Each Fabric data item has its own security model. To learn more about permissions that can be granted when a lakehouse or other Fabric data item is shared see:
