@@ -21,8 +21,8 @@ quiz:
       explanation: "Incorrect. The Image Analysis service enables you to analyze images, but not to identify faces."
     - content: "Azure AI Vision Custom Vision."
       isCorrect: false
-      explanation: "Incorrect. The Custom Vision service enables you to train image classification and object detection models.."
-    - content: "Azure Ai Vision Face."
+      explanation: "Incorrect. The Custom Vision service enables you to train image classification and object detection models."
+    - content: "Azure AI Vision Face."
       isCorrect: true
       explanation: "Correct. Use the Face service to create a facial recognition solution."
   - content: "What should you return when analyzing an image to see the spatial points related to facial features?"
@@ -32,7 +32,7 @@ quiz:
       explanation: "Incorrect. Accessories include facial accessories, like glasses or masks."
     - content: "Landmarks"
       isCorrect: true
-      explanation: "Correct. Facial landmarks consist of sparial points for facial features.."
+      explanation: "Correct. Facial landmarks consist of spatial points for facial features."
     - content: "HeadPose"
       isCorrect: false
       explanation: "Incorrect. HeadPose describes the position of the head in regard to yaw, tilt, and roll."

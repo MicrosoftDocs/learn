@@ -1,4 +1,4 @@
-In addition to detecting and analyzing faces, you can use the Azure AI Face APi to compare and recognize faces.
+In addition to detecting and analyzing faces, you can use the Azure AI Vision Face service to compare and recognize faces.
 
 > [!IMPORTANT]
 > Usage of facial recognition, comparison, and verification requires approval through a **[Limited Access policy](https://aka.ms/cog-services-limited-access)**.
@@ -7,7 +7,7 @@ In addition to detecting and analyzing faces, you can use the Azure AI Face APi 
 
 When a face is detected by the Face service, a unique ID is assigned to it and retained in the service resource for 24 hours. The ID is a GUID, with no indication of the individual's identity other than their facial features.
 
-While the detected face ID is cached, subsequent images can be used to compare the new faces to the cached identity and determine if they are *similar* (in other words, they share similar facial features) or to *verify* that the same person appears in two images.
+While the detected face ID is cached, subsequent images can be used to compare the new faces to the cached identity and determine if they're *similar* (in other words, they share similar facial features) or to *verify* that the same person appears in two images.
 
 ![Diagram of a detected face matched in two images.](../media/face-matching.png)
 

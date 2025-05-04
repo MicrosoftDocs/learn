@@ -15,10 +15,10 @@ title: Detect, analyze, and recognize faces
 summary: The ability for applications to detect human faces, analyze facial features and emotions, and identify individuals is a key artificial intelligence capability.
 abstract: |
   After completing this module, you'll be able to:
-  - Describe capabilities of the Azure AI Vision Face service.
+  - Describe the capabilities of the Azure AI Vision Face service.
   - Write code to detect and analyze faces in an image.
-  - Decsribe facial recognition support in Azure AI Vision Face.
-  - Describe respinsible AI considerations when developing facial solutions.
+  - Describe facial recognition support in Azure AI Vision Face.
+  - Describe responsible AI considerations when developing facial solutions.
 prerequisites: |
   Before starting this module, you should already have:
   - Familiarity with Azure and the Azure portal.

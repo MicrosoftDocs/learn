@@ -83,7 +83,7 @@ The response from the service depends on:
 - The model-specific features requested.
 - The number of faces detected in the image.
 
-A response for an image containing a single face might looks similar to the following example:
+A response for an image containing a single face might look similar to the following example:
 
 ```json
 [
