@@ -5,7 +5,7 @@ metadata:
   description: Detect objects in images
   author: ivorb
   ms.author: berryivor
-  ms.date: 11/5/2024
+  ms.date: 05/05/2024
   ms.service: azure-ai-vision
   ms.topic: module-standard-task-based
   ms.collection:
@@ -13,16 +13,15 @@ metadata:
 title: Detect objects in images
 summary: Object detection is used to locate and identify objects in images. You can use Azure AI Custom Vision to train a model to detect specific classes of object in images.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
   - Provision Azure resources for Azure AI Custom Vision
   - Understand object detection
   - Train an object detector
-  - Consider options for labeling images
+  - Use the Azure AI Custom Vision SDK to create an object detection client application
 prerequisites: |
   Before starting this module, you should already have:
   - Familiarity with Azure and the Azure portal.
   - Experience programming with C# or Python.
-  If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path first.
 iconUrl: /training/achievements/artificial-intelligence-detect-objects.svg
 levels:
 - intermediate
@@ -38,10 +37,10 @@ units:
 - learn.wwl.detect-objects-images.introduction
 - learn.wwl.detect-objects-images.understand-object-detection
 - learn.wwl.detect-objects-images.train-object-detector
-- learn.wwl.detect-objects-images.consider-options-for-labeling-images
+- learn.wwl.detect-objects-images.use-treined-detector
 - learn.wwl.detect-objects-images.exercise-custom-vision
 - learn.wwl.detect-objects-images.knowledge-check
 - learn.wwl.detect-objects-images.summary
 badge:
   uid: learn.wwl.detect-objects-images.badge
-
+
