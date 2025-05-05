@@ -9,7 +9,7 @@ metadata:
   ms.topic: learning-path
 title: Explore Microsoft Dev Box and improve developer productivity
 prerequisites: |
-  You should be familiar with cloud and compute services such as Azure Virtual machines.
+  -   You should be familiar with cloud and compute services such as Azure Virtual machines.
 summary: |
   This learning path introduces the Microsoft Dev Box service, geared towards developers. It includes an enterprise deployment guide along with key concepts of customization and imaging.
 iconUrl: /training/achievements/explore-microsoft-dev-box-improve-developer-productivity.svg
