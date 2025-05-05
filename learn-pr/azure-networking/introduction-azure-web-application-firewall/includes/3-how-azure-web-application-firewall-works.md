@@ -15,7 +15,7 @@ Azure Web Application Firewall thwarts known exploits by applying rules to an ap
 
 The rules that Azure Web Application Firewall uses to detect and block common vulnerabilities are mostly managed rules that belong to various rule groups. Each rule group is a collection of rules and a managed rule set is collection of rule groups. Managed rule sets include Microsoft Threat Intelligence based rule groups, CVE (Common Vulnerabilities and Exposures) rule groups, and core rule groups (CRS).
 
-The CRS rules are defined by the Open Web Application Security Project (OWASP). Microsoft's team of security experts codes, maintains, and updates managed rules. The rules are modified or added to as needed. When a managed rule changes, Microsoft updates Azure Web Application Firewall automatically and without app downtime.
+Open Web Application Security Project (OWASP) defines the CRS rules. Microsoft's team of security experts codes, maintains, and updates managed rules. The rules are modified or added to as needed. When a managed rule changes, Microsoft updates Azure Web Application Firewall automatically and without app downtime.
 
 The following screenshot shows some of the rules and rule groups in Microsoft Default Rule set 2.1 (DRS2.1). This should give you a sense of the depth of protection offered by Azure Web Application Firewall.
 
@@ -57,7 +57,7 @@ By default, your web application is accessible from the Internet. However, somet
 
 Azure Web Application Firewall custom rules support rate limiting to control access based on matching conditions and the rates of incoming requests.
 
-This custom rule enables you to detect abnormally high levels of traffic and block some types of application layer denial of service attacks. Rate limiting also protects you against clients that have accidentally been misconfigured to send large volumes of requests in a short time period. The custom rule is defined by the rate limit counting duration (either one minute or five-minute intervals) and the rate limit threshold (the maximum number of requests allowed in the rate limit duration).
+This custom rule enables you to detect abnormally high levels of traffic and block some types of application layer denial of service attacks. Rate limiting also protects you against clients that have accidentally been misconfigured to send large volumes of requests in a short time period. Rate limit counting duration (either one minute or five-minute intervals) defines the custom rule and the rate limit threshold (the maximum number of requests allowed in the rate limit duration).
 
 ## Detection mode vs prevention mode
 
@@ -75,7 +75,7 @@ Once the app is ready to be deployed, you switch to prevention mode.
 
 ## Using Microsoft Sentinel with Azure WAF
 
-Azure WAF combined with Microsoft Sentinel can provide security information event management for WAF resources.  Using Microsoft Sentinel, you can access the WAF data connector to Sentinel using Log Analytics.  The WAF workbooks show analytics for WAF on Azure Front Door and WAF on Application Gateway. The WAF analytic rules detect SQLi and XSS attacks from AFD and Application Gateway logs. The WAF Notebook allows investigation of SQL injection incidents on Azure Front Door.
+Azure WAF combined with Microsoft Sentinel can provide security information event management for WAF resources. Using Microsoft Sentinel, you can access the WAF data connector to Sentinel using Log Analytics. The WAF workbooks show analytics for WAF on Azure Front Door and WAF on Application Gateway. The WAF analytic rules detect SQL and XSS attacks from AFD and Application Gateway logs. The WAF Notebook allows investigation of SQL injection incidents on Azure Front Door.
 
 :::image type="content" source="../media/3-waf-sentinel-1.png" alt-text="Screenshot showing Sentinel WAF settings.":::
 

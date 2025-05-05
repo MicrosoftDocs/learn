@@ -13,7 +13,7 @@ As part of your Azure Web Application Firewall evaluation, you know that Contoso
 
 ## You have web apps that contain sensitive or proprietary data
 
-Some web attackers are motivated only by the challenge of breaking into a system. However, most malicious hackers use injection, protocol attacks, and similar exploits with payoff in mind. That payoff might be any of the following items:
+The challenge of breaking into a system is some web attackers only motivation. However, most malicious hackers use injection, protocol attacks, and similar exploits with payoff in mind. That payoff might be any of the following items:
 
 - Customer credit card numbers
 - Sensitive personal information, such as driver's license numbers or passport numbers
@@ -49,7 +49,7 @@ Coding against the full range of potential web app exploits requires significant
 - Front-end web technologies, such as HTML, CSS, and JavaScript
 - Server-side web technologies, such as SQL, PHP, and user sessions
 
-What if your company's web-development team lacks knowledge in one or more of these concepts? In that case, your web apps are vulnerable to multiple exploits. By contrast, Azure Web Application Firewall is maintained and updated by a team of Microsoft security experts.
+What if your company's web-development team lacks knowledge in one or more of these concepts? In that case, your web apps are vulnerable to multiple exploits. By contrast, a team of Microsoft security experts maintain and update Azure Web Application Firewall.
 
 ## Your web-app developers have other priorities
 

@@ -26,7 +26,7 @@ You can deploy Azure Web Application Firewall in minutes. Your web apps immediat
 
 To help you evaluate Azure Web Application Firewall, here are some of its important features:
 
-- **Managed rules**: The rules that Azure Web Application Firewall uses to detect and prevent common exploits are created, maintained, and updated by Microsoft's security team. If a rule changes, or a rule set (refer to the following description) is modified, Microsoft updates Azure Web Application Firewall automatically and seamlessly.
+- **Managed rules**: Microsoft's security team creates, maintains, and updates the rules that Azure Web Application Firewall uses to detect and prevent common exploits. If a rule changes, or a rule set (refer to the following description) is modified, Microsoft updates Azure Web Application Firewall automatically and seamlessly.
 
     > [!NOTE]
     > You can't modify or delete the managed rules offered by Azure Web Application Firewall. However, if a particular rule is problematic for your environment (for example, it blocks legitimate traffic to your web app) you can create exclusions or disable the rule or rule set. You can also create custom rules to overwrite the default behavior.
