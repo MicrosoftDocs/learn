@@ -37,7 +37,7 @@ units:
 - learn.wwl.detect-objects-images.introduction
 - learn.wwl.detect-objects-images.understand-object-detection
 - learn.wwl.detect-objects-images.train-object-detector
-- learn.wwl.detect-objects-images.use-treined-detector
+- learn.wwl.detect-objects-images.use-trained-detector
 - learn.wwl.detect-objects-images.exercise-custom-vision
 - learn.wwl.detect-objects-images.knowledge-check
 - learn.wwl.detect-objects-images.summary
