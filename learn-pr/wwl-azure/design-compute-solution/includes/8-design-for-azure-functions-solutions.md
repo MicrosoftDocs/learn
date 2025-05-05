@@ -38,4 +38,5 @@ Let's look at some best practices for using Azure Functions. As you consider the
 
 Take a few minutes to read about other [Azure Functions best practices](/azure/azure-functions/functions-best-practices).
 
-You can get more ideas on how to use Azure Functions by checking out the [code samples](/samples/browse/?expanded=azure&languages=csharp&products=azure-functions) page.
+> [!TIP]
+> Learn more about Azure Functions in the [Explore Azure Functions](/training/modules/explore-azure-functions/) module.

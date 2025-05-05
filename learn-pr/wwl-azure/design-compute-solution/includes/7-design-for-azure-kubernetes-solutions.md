@@ -37,3 +37,7 @@ There are several factors to consider when deciding whether Azure Kubernetes Ser
 #### Business application
 
 Take a few minutes to read about how [Mercedes-Benz R&D is using Azure Kubernetes Service](https://customers.microsoft.com/story/784791-mercedes-benz-r-and-d-creates-container-driven-cars-powered-by-microsoft-azure).
+
+
+> [!TIP]
+> Learn more about Kubernetes in the [Introduction to Kubernetes Service](/training/modules/intro-to-azure-kubernetes-service/ module. 
