@@ -40,4 +40,4 @@ Take a few minutes to read about how [Mercedes-Benz R&D is using Azure Kubernete
 
 
 > [!TIP]
-> Learn more about Kubernetes in the [Introduction to Kubernetes Service](/training/modules/intro-to-azure-kubernetes-service/ module. 
+> Learn more about Kubernetes in the [Introduction to Kubernetes Service](/training/modules/intro-to-azure-kubernetes-service/) module. 

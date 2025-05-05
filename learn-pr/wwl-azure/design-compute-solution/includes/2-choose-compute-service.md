@@ -1,7 +1,7 @@
 Azure offers several compute services. _Compute_ refers to the hosting model for the computing resources that your applications run on. Azure provides a decision [flowchart](/azure/architecture/guide/technology-choices/compute-decision-tree) with high-level guidance for how to select the appropriate Azure compute service for your scenario. 
 
 > [!NOTE]
-> The following diagram has been edited to show only the Azure services described in this module. 
+> The following diagram only shows the Azure services described in this module. 
 
 The output from this decision flowchart is a **starting point** for your planning. You need to do a detailed evaluation of the services to determine exactly which solution meets your requirements. As you work through this module, refer to this diagram to become familiar with the considerations and options. 
 
@@ -64,7 +64,7 @@ The [hosting option](/azure/security/fundamentals/shared-responsibility) of your
 
 - **[Platform-as-a-Service (PaaS)](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-paas)** provides a managed hosting environment, where you can deploy your application without needing to manage virtual machines or networking resources. Azure compute services that offer PaaS hosting include Azure Batch, App Service, Container Instances, and Azure Kubernetes Service.
 
-- **[Software-as-a-Service (SaaS)](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-saas) operates on a cloud-based model where software applications are hosted by a service provider and accessed over the internet. 
+- **[Software-as-a-Service (SaaS)](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-saas)** operates on a hosted cloud-based model where software applications are accessed over the internet. 
 
 > [!TIP]
 > You can being your study of Azure AI-ready compute solutions with the [Describe Azure compute and networking services](/training/modules/describe-azure-compute-networking-services/) module.
