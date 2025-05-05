@@ -3,11 +3,10 @@ uid: learn.wwl.explore-microsoft-dev-box-improve-developer-productivity
 metadata:
   title: Explore Microsoft Dev Box and improve developer productivity
   description: Explore Microsoft Dev Box and improve developer productivity
-  ms.date: 05/03/2025
+  ms.date: 05/05/2025
   author: wwlpublish
   ms.author: fkhan
   ms.topic: learning-path
-  ms.service: dev-box
 title: Explore Microsoft Dev Box and improve developer productivity
 prerequisites: |
   You should be familiar with cloud and compute services such as Azure Virtual machines.
