@@ -46,7 +46,7 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 
 - Complete the [Configure Container Instance](/training/modules/configure-azure-container-instances/) module.
 
-- Complete the [introduction to Azure Kubernetes Service](/training/modules/intro-to-azure-kubernetes-service/).
+- Complete the [Introduction to Azure Kubernetes Service](/training/modules/intro-to-azure-kubernetes-service/).
 
 - Complete the [Explore Azure Functions](/training/modules/explore-azure-functions/) module.
 

@@ -1,5 +1,7 @@
 [Azure Functions](/azure/azure-functions/functions-overview) is a serverless application platform. Functions are used when you want to run a small piece of code in the cloud, without worrying about the infrastructure.
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=bd90a678-3c03-4e0f-9470-f6f0626373e0]
+
 ### Things to know about Azure Functions
 
 Let's review some benefits and scenarios of Azure Functions that make it a great compute solution for building new workloads.
