@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.analyze-images.exercise-computer-vision
-title: Exercise - Analyze images with Azure AI Vision
+title: Exercise - Analyze images
 metadata:
-  title: Exercise - Analyze images with Azure AI Vision
+  title: Exercise - Analyze images
   description: Exercise - Analyze images with Azure AI Vision
   author: wwlpublish
   ms.author: berryivor

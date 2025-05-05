@@ -38,6 +38,5 @@ Let's look at some best practices for using Azure Batch. As you review the sugge
 
 - **Consider jobs**. Uniquely name your jobs so you can accurately monitor and log the activity. Consider grouping your tasks into efficiently sized jobs. It's more efficient to use a single job that contains 1,000 tasks rather than creating 100 jobs that have 10 tasks each. 
 
-#### Business application
-
-Take a few minutes to read about other [Azure Batch best practices](/azure/batch/best-practices).
+> [!TIP]
+> Continue your learning with the [Create an Azure Batch account by using the Azure portal](/training/modules/create-batch-account-using-azure-portal/) module. 
