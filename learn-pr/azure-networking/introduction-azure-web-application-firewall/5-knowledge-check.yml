@@ -40,7 +40,7 @@ quiz:
     choices:
     - content: "Your web app includes user accounts and stores sensitive or proprietary data."
       isCorrect: false
-      explanation: "Incorrect. User credentials, sensitive personal information, and proprietary company data are coveted by malicious users, so Azure Web Application Firewall is a good choice for protecting that data."
+      explanation: "Incorrect. User credentials, sensitive personal information, and proprietary company data are coveted by malicious users. Azure Web Application Firewall is a good choice for protecting that data."
     - content: "Your web app is made available to employees, customers, and vendors using a private network connection."
       isCorrect: true
       explanation: "Correct. Private access to the virtual network where the web app resides means that app traffic never goes over the public internet. There is no need to protect the app against common web exploits."

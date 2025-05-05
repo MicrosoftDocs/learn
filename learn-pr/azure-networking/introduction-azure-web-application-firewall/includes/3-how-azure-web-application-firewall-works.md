@@ -15,8 +15,7 @@ Azure Web Application Firewall thwarts known exploits by applying rules to an ap
 
 The rules that Azure Web Application Firewall uses to detect and block common vulnerabilities are mostly managed rules that belong to various rule groups. Each rule group is a collection of rules and a managed rule set is collection of rule groups. Managed rule sets include Microsoft Threat Intelligence based rule groups, CVE (Common Vulnerabilities and Exposures) rule groups, and core rule groups (CRS).
 
-The CRS rules are defined by the Open Web Application Security Project (OWASP).
-Microsoft's team of security experts codes, maintains, and updates managed rules. The rules are modified or added to as needed. When a managed rule changes, Microsoft updates Azure Web Application Firewall automatically and without app downtime.
+The CRS rules are defined by the Open Web Application Security Project (OWASP). Microsoft's team of security experts codes, maintains, and updates managed rules. The rules are modified or added to as needed. When a managed rule changes, Microsoft updates Azure Web Application Firewall automatically and without app downtime.
 
 The following screenshot shows some of the rules and rule groups in Microsoft Default Rule set 2.1 (DRS2.1). This should give you a sense of the depth of protection offered by Azure Web Application Firewall.
 
@@ -35,7 +34,7 @@ The managed rules Azure Web Application Firewall offers might not cover a specif
 - Match type such as geo location, IP address, size, string
 - Match variables such as RequestHeader, QueryString, RequestUri, RequestBody, Cookies, or PostArgs
 - HTTP/HTTPS request methods such as POST or PUT
-- Operators such as **Equal** **Contains**, **Regex**, **Begins with**, **Any**, **Ends with**
+- Operators such as **Equal**, **Contains**, **Regex**, **Begins with**, **Any**, **Ends with**
 - An action such as **Allow**, **Block**, **Log or Redirect**
 
 ## Geo-filtering
@@ -52,7 +51,7 @@ Azure Web Application Firewall custom rules control access to web applications b
 
 The IP restriction custom rule lets you control access to your web applications. It does this by specifying an IP address or an IP address range in Classless Inter-Domain Routing(CIDR) format.
 
-By default, your web application is accessible from the Internet. However sometimes, you want to limit access to clients from a list of known IP address or IP address ranges. You can achieve this by creating an IP matching rule that blocks access to your web app from IP addresses s not listed in the custom rule.
+By default, your web application is accessible from the Internet. However, sometimes you want to limit access to clients from a list of known IP address or IP address ranges. You can achieve this by creating an IP matching rule that blocks access to your web app from IP addresses not listed in the custom rule.
 
 ## Rate limiting
 

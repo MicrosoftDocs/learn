@@ -6,7 +6,7 @@ The Contoso IT staff is concerned that their web applications are the target of 
 
 Suppose you're a senior Contoso web developer. You're responsible for researching and recommending a way to protect Contoso's web applications. You've been asked to evaluate whether Azure Web Application Firewall can protect your web apps from attacks that use common exploits.
 
-In this module, you learn the basics of Azure Web Application Firewall. Those basics consist of what it is, how it works, and when you should use it. By the end of this module, you'll have the knowledge needed evaluate whether Azure Web Application Firewall can protect Contoso's web apps from common attacks.
+In this module, you learn the basics of Azure Web Application Firewall. Those basics consist of what it is, how it works, and when you should use it. By the end of this module, you'll have the knowledge needed to evaluate whether Azure Web Application Firewall can protect Contoso's web apps from common attacks.
 
 ## Learning objectives
 
