@@ -11,6 +11,7 @@ metadata:
   ms.contributors: stmuraws-12142021
   ms.custom: team=cloud_advocates
   ms.devlang: bicep
+  ms.service: azure-resource-manager
 title: Extend Bicep and ARM templates using deployment scripts
 summary: |
   Add custom steps to your Bicep or JSON Azure Resource Manager templates (ARM templates).
