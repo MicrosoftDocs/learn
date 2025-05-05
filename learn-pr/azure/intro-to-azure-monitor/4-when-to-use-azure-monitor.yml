@@ -6,7 +6,7 @@ metadata:
   title: Azure Monitor Insights, visualizations, and actions
   description: Learn how Azure Monitor Insights and visualizations can consume and transmit monitoring data, and automated actions can proactively respond to issues.
   ms.date: 11/13/2024
-  author: EliotSeaattle
+  author: EliotSeattle
   ms.author: eliotgra
   ms.topic: unit
 durationInMinutes: 10
