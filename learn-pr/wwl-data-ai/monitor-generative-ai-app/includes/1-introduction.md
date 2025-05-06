@@ -1,4 +1,4 @@
-In the early stages of working with generative AI, it's common to focus on getting something that works. Whether it's a demo, a prototype, or a proof-of-concept. These milestones can all feel significant. However, making something production-ready is a different challenge.
+In the early stages of working with generative AI, it's common to focus on getting something that works. Whether it's a demo, a prototype, or a proof-of-concept, these milestones can all feel significant. However, making something production-ready is a different challenge.
 
 Without proper monitoring, even seemingly stable generative AI applications can face issues in real-world conditions:
 
