@@ -2,9 +2,11 @@
 uid: learn.wwl.design-compute-solution.introduction
 title: Introduction
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
-  ms.date: 12/06/2024
+  ms.date: 05/05/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
