@@ -1,7 +1,5 @@
 The **Azure AI Custom Vision** service enables you to build your own computer vision models for *image classification* or *object detection*.
 
-## Custom Vision Azure resources
-
 To use the Custom Vision service to create a solution, you need *two* Custom Vision resources in your Azure subscription:
 
 - An **Azure AI Custom Vision *training*** resource - used to train a custom model based on your own training images.
