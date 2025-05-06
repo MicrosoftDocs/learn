@@ -1,13 +1,14 @@
 ## Enable the cluster autoscaler on an AKS cluster
 
 1. Open the [Azure Cloud Shell](https://shell.azure.com) in your browser and select **Bash**.
-2. Create an Azure resource group using the `az group create` command.
+1. In the Cloud Shell window on the right side of the screen, select the **More** icon (**...**), then select **Settings** > **Go to Classic version**.
+1. Create an Azure resource group using the `az group create` command.
 
     ```azurecli-interactive
     az group create --name myResourceGroup --location eastus
     ```
 
-3. Create a new Azure Kubernetes Service (AKS) cluster with the cluster autoscaler enabled using the `az aks create` command and the `--enable-cluster-autoscaler` flag.
+1. Create a new Azure Kubernetes Service (AKS) cluster with the cluster autoscaler enabled using the `az aks create` command and the `--enable-cluster-autoscaler` flag.
 
     ```azurecli-interactive
     az aks create --resource-group myResourceGroup --name myAKSCluster --enable-addons monitoring --enable-msi-auth-for-monitoring --enable-cluster-autoscaler --min-count 1 --max-count 10 --generate-ssh-keys
@@ -15,13 +16,13 @@
 
     It takes a few minutes to create the cluster.
 
-4. Connect to your cluster using the `az aks get-credentials` command.
+1. Connect to your cluster using the `az aks get-credentials` command.
 
     ```azurecli-interactive
     az aks get-credentials --resource-group myResourceGroup --name myAKSCluster
     ```
 
-5. View the nodes in your cluster using the `kubectl get nodes` command.
+1. View the nodes in your cluster using the `kubectl get nodes` command.
 
     ```azurecli-interactive
     kubectl get nodes
@@ -44,13 +45,13 @@
     touch deployment.yml
     ```
 
-2. Open the manifest file using the `code` command.
+1. Open the manifest file using the `code` command.
 
     ```azurecli-interactive
     code deployment.yml
     ```
 
-3. Paste the following code into the manifest file.
+1. Paste the following code into the manifest file.
 
     ```yml
     apiVersion: apps/v1
@@ -82,7 +83,12 @@
                   name: http
     ```
 
-4. Save the file and close the editor.
+1. Save the file and close the editor.
+1. Run the deployment by using the following code:
+
+    ```azurecli-interactive
+    kubectl apply -f deployment.yml
+    ```
 
 ## Update the cluster autoscaler profile
 
