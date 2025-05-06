@@ -47388,6 +47388,81 @@
       "source_path": "learn-pr/wwl-sci/deploy-message-encryption-microsoft-365/6-summary-resources.md",
       "redirect_url": "/training/modules/deploy-message-encryption-microsoft-365/summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/use-sql-server-query-tuning-assistant/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/use-sql-server-query-tuning-assistant/2-decide-qta-right.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/use-sql-server-query-tuning-assistant/3-get-started-qta.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/use-sql-server-query-tuning-assistant/4-tune-queries-qta.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/use-sql-server-query-tuning-assistant/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/use-sql-server-query-tuning-assistant/6-module-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/use-sql-server-query-tuning-assistant/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-replication/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-replication/2-track-data-changes-with-cdc.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-replication/3-exercise-track-data-changes-with-cdc.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-replication/4-check-if-data-changes-happened-with-change-tracking.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-replication/5-exercise-check-if-data-changes-happened-with-change-tracking.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-replication/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-replication/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-replication/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
     }
   ]
 }
