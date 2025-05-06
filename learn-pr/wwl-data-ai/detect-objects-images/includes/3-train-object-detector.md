@@ -11,7 +11,7 @@ To train an object detection model, you can use the Azure AI Custom Vision porta
 
 ## Image labeling
 
-You can use Azure AI Custom Vision to create projects for *image classification* or *object detection*. The most significant difference between training an image classification model and training an *object detection* model is the labeling of the images with tags. While image classification requires one or more tags that apply to the whole image, object detection requires that each label consists of a tag and a *region* that defines the bounding box for each object in an image.
+You can use Azure AI Custom Vision to create projects for *image classification* or *object detection*. The most significant difference between training an image classification model and training an object detection model is the labeling of the images with tags. While image classification requires one or more tags that apply to the whole image, object detection requires that each label consists of a tag and a *region* that defines the bounding box for each object in an image.
 
 ### Labeling images in the Azure AI Custom Vision portal
 
