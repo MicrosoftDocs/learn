@@ -4,11 +4,11 @@ metadata:
   title: Introduction
   description: Introduction
   ms.date: 10/15/2024
-  author: guywi-ms
-  ms.author: guywild
+  author: EliotSeattle
+  ms.author: eliotgra
   ms.topic: unit
 title: Introduction
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
-
+
