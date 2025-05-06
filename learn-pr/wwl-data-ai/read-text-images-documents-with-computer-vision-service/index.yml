@@ -10,7 +10,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.collection:
     - wwl-ai-copilot
-  ai-usage: ai-assieted
+  ai-usage: ai-assisted
 title: Read text in images and documents with the Azure AI Vision Service
 summary: Azure's AI Vision service uses algorithms to process images and return information. This module teaches you how to use the Image Analysis API for optical character recognition (OCR).
 abstract: |
