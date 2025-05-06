@@ -1,6 +1,6 @@
-When you move from experimentation to production with a generative AI solution, one of the earliest and most important decisions you face is choosing the optimal *deployment configuration*. Specifically, what kind of compute should you allocate to your model? This decision directly affects performance, cost, and scalability.
+When you move from experimentation to production with a generative AI solution, one of the earliest and most important decisions you face is **how to deploy** it. Specifically, what kind of compute should you allocate to your model? This decision directly affects performance, cost, and scalability.
 
-## Explore the importance of deployment configurations
+## Why deployment choices matter
 
 In Azure AI Foundry, like many cloud platforms, deploying a generative AI application means binding it to a **compute resource**. That resource defines the horsepower behind your app: how fast it can respond, how many requests it can handle at once, and ultimately how much it costs to operate.
 
@@ -16,9 +16,9 @@ Let’s consider two extremes:
   - Can be overkill for low-traffic applications.
   - Doesn’t guarantee better *token efficiency*.
 
-The problem is: you can't know what’s right for your use case until you see it in action.
+The problem is: **you can't know what’s right for your use case until you see it in action**.
 
-## Define your objectives
+## Understand the objectives generative AI workloads
 
 Generative AI workloads are different from traditional web apps:
 
@@ -52,6 +52,6 @@ Monitoring and adjusting iteratively is the same process production teams use to
 
 By starting this process with simulated traffic, you can test in a safe, lightweight way, while already ensuring your decisions are data-driven.
 
-Choosing a deployment option isn't just a checkbox, it's a design decision. The only way to make the right choice *for you*, is to observe your system under real (or simulated) load, and use performance data to guide your next steps.
+Choosing a deployment option isn't just a checkbox, it's a **design decision**. The only way to make the right choice *for you*, is to **observe your system under real (or simulated) load**, and use performance data to guide your next steps.
 
 Next, let's explore *what* to observe in your generative AI solution.

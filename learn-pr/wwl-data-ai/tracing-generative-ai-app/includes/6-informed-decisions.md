@@ -4,9 +4,14 @@ This unit focuses on interpretation, not prescribing specific actions, but helpi
 
 ## Monitoring is a feedback loop
 
-Monitoring should never be a passive activity. Instead, it forms a feedback loop. After you deploy a service, you observe how it behaves, compare it to your objectives, and adjust as needed.
+Monitoring should never be a passive activity. Instead, it forms a feedback loop:
 
-This feedback loop can be repeated when needed, where each round helps you narrow in on the right balance between performance and cost.
+1. **Deploy something** (for example, a model with a specific VM size)
+2. **Observe how it behaves**
+3. **Compare behavior to goals** (for example, acceptable latency or cost)
+4. **Adjust as needed**, then repeat
+
+Each round helps you narrow in on the right balance between performance and cost.
 
 ## Visualize insights with workbooks
 

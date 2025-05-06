@@ -2,14 +2,14 @@ Before you can optimize performance or make informed decisions about deployment,
 
 Let's explore the key performance signals you should monitor in your generative AI system and how they connect to real-world outcomes like user experience, reliability, and cost.
 
-## Monitor generative AI apps
+## Understand why monitoring in generative AI is different
 
 Traditional monitoring for web services focuses on uptime, memory use, and API failure rates. While some of those still matter here, generative AI systems have unique dynamics. Each request can vary drastically in how much compute it uses depending on factors like:
 
-- Prompt and response length
-- Model complexity
-- Backend resource configuration
-- User traffic patterns
+- Prompt and response length.
+- Model complexity.
+- Backend resource configuration.
+- User traffic patterns.
 
 That means monitoring needs to focus on **behavioral metrics** tied directly to how the language model performs under different conditions.
 
@@ -67,6 +67,6 @@ These metrics don’t exist in isolation. For example:
 - Token usage spikes might lead to higher latency and higher cost.
 - Failure rates can rise when throughput is too high for the infrastructure.
 
-Monitoring helps you observe these trade-offs in real-time, which is essential if you want to adjust deployment parameters intelligently.
+Monitoring helps you **observe these trade-offs in real-time**, which is essential if you want to adjust deployment parameters intelligently.
 
 In the next section, you explore the tools available to you when building generative AI systems with Azure AI Foundry.

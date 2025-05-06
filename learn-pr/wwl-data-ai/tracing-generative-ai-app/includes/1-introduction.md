@@ -2,9 +2,9 @@ In the early stages of working with generative AI, it's common to focus on getti
 
 Without proper monitoring, even seemingly stable generative AI applications can face issues in real-world conditions:
 
-- **Latency** can become unpredictable.
-- **Costs** can increase due to inefficient prompt design or scaling.
-- **Compute resources** aren't aligned with actual usage needs.
+- Latency can become unpredictable.
+- Costs can increase due to inefficient prompt design or scaling.
+- Compute resources aren't aligned with actual usage needs.
 
 Many teams fall into the trap of deploying without fully understanding how their system performs under real conditions. Monitoring transforms guesswork into engineering.
 

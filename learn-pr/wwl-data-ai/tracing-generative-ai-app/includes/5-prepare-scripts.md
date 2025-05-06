@@ -6,7 +6,7 @@ To integrate monitoring into your code, you need to:
 
 - Use the Azure AI Foundry SDK to **run model inference** and emit telemetry.
 - Use the OpenTelemetry standard to **capture spans** representing each inference call and execution step.
-- **Export data automatically** to Azure Monitor and store it automatically with Application Insights.
+- Export data automatically to Azure Monitor and store it automatically with Application Insights.
 
 > [!Note]
 > The code snippets provided here are just to highlight what parts of the code would do. A complete working example is provided in the exercise.
