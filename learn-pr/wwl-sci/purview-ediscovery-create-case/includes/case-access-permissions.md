@@ -17,7 +17,7 @@ To add users to a case:
 1. Select the **Permissions** tab.
 1. Under **Users**, select **Add**, then choose the users you want to assign.
 
-You can also assign a role group to a case. However, you can only assign role groups that you're a member of. If a role is removed from a role group after assignment, the group is automatically removed from the case to prevent overexposure.
+You can also assign a role group to a case. However, you can only assign role groups you belong to. If a role is removed from a role group after assignment, the group is automatically removed from the case to prevent overexposure.
 
 ## Remove users from a case
 
@@ -40,7 +40,7 @@ Once enabled, follow these steps to invite a guest:
 1. In the **Guest users** section, select **Invite**.
 1. Provide the guest's full name, email, organization, and justification.
 1. Assign the guest the **Reviewer** role (the only available role for guests).
-1. Submit the request for admin approval.
+1. Submit the request for approval by an eDiscovery Administrator.
 
    :::image type="content" source="../media/ediscovery-guest-access.png" alt-text="Screenshot showing where to add guest users to an eDiscovery case." lightbox="../media/ediscovery-guest-access.png":::
 
@@ -48,7 +48,7 @@ Once enabled, follow these steps to invite a guest:
 
 Only **eDiscovery Administrators** can approve or deny guest access. Admins can manage guest requests from **Settings** > **eDiscovery** > **Guest users**.
 
-   :::image type="content" source="../media/guest-access-request.png" alt-text="Screenshot showing a guest access request." lightbox="../media/guest-access-request.png":::
+:::image type="content" source="../media/guest-access-request.png" alt-text="Screenshot showing a guest access request." lightbox="../media/guest-access-request.png":::
 
 If the guest is new to the tenant, a two-step approval is required. After their account is created, a second approval step is needed to assign case access.
 
