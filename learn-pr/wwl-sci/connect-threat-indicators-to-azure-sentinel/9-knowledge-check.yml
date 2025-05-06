@@ -4,15 +4,15 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 06/27/2022
-  author: wwlpublish
+  ms.date: 05/06/2025
+  author: KenMAG
   ms.author: kelawson
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-knowledge-check.md)]
+  [!include[](includes/9-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
@@ -31,21 +31,21 @@ quiz:
     choices:
     - content: "1.1"
       isCorrect: false
-      explanation: "Incorrect.  TAXII version 2.0 and 2.1 are supported."
+      explanation: "Incorrect. TAXII version 2.0 and 2.1 are supported."
     - content: "1.0"
       isCorrect: false
-      explanation: "Incorrect.  TAXII version 2.0 and 2.1 are supported."
+      explanation: "Incorrect. TAXII version 2.0 and 2.1 are supported."
     - content: "2.1"
       isCorrect: true
-      explanation: "Correct.  TAXII version 2.0 and 2.1 are supported."
-  - content: "Threat Intelligence Platform connector uses which technology to send data to Microsoft Sentinel?"
+      explanation: "Correct. TAXII version 2.0 and 2.1 are supported."
+  - content: "Threat Intelligence Upload API uses which technology to authenticate with Microsoft Entra ID?"
     choices:
-    - content: "Azure Functions"
+    - content: "Microsoft Azure managed identities"
       isCorrect: false
-      explanation: "Incorrect.  The Microsoft Graph Security API is utilized."
-    - content: "App Service"
+      explanation: "Incorrect. OAuth 2.0 authentication is utilized."
+    - content: "Multifactor authentication"
       isCorrect: false
-      explanation: "Incorrect.  The Microsoft Graph Security API is utilized."
-    - content: "Microsoft Graph Security API"
+      explanation: "Incorrect. OAuth 2.0 authentication is utilized."
+    - content: "OAuth 2.0 authentication"
       isCorrect: true
-      explanation: "Correct.  The Microsoft Graph Security API is utilized."
+      explanation: "Correct. OAuth 2.0 authentication is utilized."
