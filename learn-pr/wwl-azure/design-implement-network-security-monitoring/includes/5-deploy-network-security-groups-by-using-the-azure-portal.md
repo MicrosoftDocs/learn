@@ -1,4 +1,5 @@
 
+
 A [Network Security Group (NSG)](/azure/virtual-network/network-security-groups-overview) in Azure allows you to filter network traffic to and from Azure resources in an Azure virtual network. 
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=748c6bdf-7cee-4d80-9140-7ecb4426bb2c]

@@ -10,9 +10,10 @@ metadata:
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
+  zone_pivot_groups: dev-lang-csharp-python
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 6
 content: |
   [!include[](includes/4-use-read-api.md)]
-
+

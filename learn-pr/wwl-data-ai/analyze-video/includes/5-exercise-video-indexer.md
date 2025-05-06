@@ -1,8 +1,13 @@
-[!INCLUDE [Lab note](../../../includes/wwl/lab-note.md)]
+Now it's your turn to try using the Azure AI Video Indexer service.
 
-If you're completing this exercise on your own computer, follow these [exercise instructions](https://microsoftlearning.github.io/mslearn-ai-vision/Instructions/Exercises/06-video-indexer.html?azure-portal=true).
+In this exercise, you analyze a video using the Azure AI Video Indexer portal and its API.
 
-When you finish the exercise, end the lab to close the VM. Don't forget to come back and complete the knowledge check to earn points for completing this module!
+> [!NOTE]
+> To complete this lab, you need an **[Azure subscription](https://azure.microsoft.com/free?azure-portal=true)** in which you have administrative access.
+
+Launch the exercise and follow the instructions.
+
+[![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2319530&azure-portal=true)
 
 > [!TIP]
 > After completing the exercise, if you've finished exploring Azure AI services, delete the Azure resources that you created during the exercise.

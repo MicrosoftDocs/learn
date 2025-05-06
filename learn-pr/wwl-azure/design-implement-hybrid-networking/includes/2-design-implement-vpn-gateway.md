@@ -1,6 +1,10 @@
 
-
 Azure [VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways) is a service that can be used to send encrypted traffic between an Azure virtual network and on-premises locations over the public Internet. You can also use VPN Gateway to send encrypted traffic between Azure virtual networks over the Microsoft network. VPN Gateway uses a specific type of Azure virtual network gateway called a VPN gateway. Multiple connections can be created to the same VPN gateway. When you create multiple connections, all VPN tunnels share the available gateway bandwidth.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f67524cf-ba8b-4e81-8fe3-29f75213d740]
+
+
+
 
 > [!NOTE] 
 > A virtual network gateway is composed of two or more special virtual machines that are deployed to a specific subnet called the gateway subnet. Azure manages the virtual machines so they don't require administrative attention.
@@ -16,12 +20,6 @@ Creating a virtual network gateway can take some time to complete, so it's vital
  -  Multiple client connections or a site-to-site link?
  -  VPN gateway type
  -  VPN Gateway SKU
-
-### VPN Gateway planning (video)
-
-This video summarizes scenarios for VPN gateways. These scenarios include on-premises and point-to-site connections. 
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f67524cf-ba8b-4e81-8fe3-29f75213d740]
 
 ### VPN Gateway SKUs
 
@@ -52,10 +50,16 @@ Route-based VPNs were previously called dynamic routing gateways. Route-based VP
 
 ## High availability options for VPN connections
 
+
 To provide better availability for your VPN connections, consider one of these options. 
 
  -  VPN Gateway redundancy (active-standby)
  -  Active-active Azure VPN gateway
+
+ 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=bc399061-c874-4da9-8cb7-282d6d01f816]
+
+
 
 ### Active-standby Azure VPN gateways
 
@@ -73,9 +77,3 @@ You can create an Azure VPN gateway in an active-standby configuration. Active-s
 You can create an Azure VPN gateway in an active-active configuration. In the active-active configuration, both instances of the gateway establish VPN tunnels to your on-premises VPN device. The traffic from your Azure virtual network to your on-premises network is routed through both tunnels simultaneously. If an outage occurs, Azure automatically switches to the other tunnel. 
 
 :::image type="content" source="../media/vpn-active-active-89241ba7.png" alt-text="Diagram of an Azure VPN Gateway in active-active configuration.":::
-
-### Gateway redundancy comparison (video)
-
-This video reviews VPN gateway redundancy options. 
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=bc399061-c874-4da9-8cb7-282d6d01f816]
