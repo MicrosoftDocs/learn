@@ -4,10 +4,12 @@ title: Review Microsoft Dev Box technical architecture
 metadata:
   title: Review Microsoft Dev Box technical architecture
   description: "Review Microsoft Dev Box technical architecture"
-  ms.date: 05/02/2025
+  ms.date: 05/06/2025
   author: wwlpublish
   ms.author: fkhan
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 3
 content: |
   [!include[](includes/4-review-microsoft-dev-box-technical-architecture.md)]

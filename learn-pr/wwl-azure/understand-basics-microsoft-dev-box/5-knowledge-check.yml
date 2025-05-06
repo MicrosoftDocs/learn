@@ -4,10 +4,12 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Module assessment"
-  ms.date: 05/02/2025
+  ms.date: 05/06/2025
   author: wwlpublish
   ms.author: fkhan
   ms.topic: unit
+  ms.custom:
+  - N/A
 durationInMinutes: 5
 content: |
   [!include[](includes/5-knowledge-check.md)]
