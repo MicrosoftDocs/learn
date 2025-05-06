@@ -23,7 +23,7 @@ You can use the workbooks that Azure Monitor Insights provide, use the workbook 
 
 When you connect an Application Insights instance to your Azure AI Foundry project, important metrics are already visualized for you in the **Insights for Generative AI applications dashboard**.
 
-:::image type="content" source="../media/open-generative-ai-workbook.gif" alt-text="Animation the Insights for Generative AI applications dashboard linking to the workbook." lightbox="../media/custom-generative-ai-workbook.gif":::
+:::image type="content" source="../media/open-generative-ai-workbook.gif" alt-text="Animation the Insights for Generative AI applications dashboard linking to the workbook." lightbox="../media/open-generative-ai-workbook.gif":::
 
 When selecting the dashboard, you're linked to a prebuilt Azure Workbook in Azure Monitor that provides real-time insights into the performance metrics, usage patterns, and operational efficiency of your AI applications. You can track data such as execution times, token consumption, and error rates across sessions. You can use these detailed logs and visualizations to identify bottlenecks and optimize workflows.
 
