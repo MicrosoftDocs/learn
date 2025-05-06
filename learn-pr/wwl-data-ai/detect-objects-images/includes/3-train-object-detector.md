@@ -1,6 +1,6 @@
 *Object detection* is a form of computer vision in which a model is trained to detect the presence and location of one or more classes of object in an image.
 
-![Image with the location and type of fruits detected.](../media/detected-objects.png)
+![Photograph with the location and type of fruits detected.](../media/detected-objects.png)
 
 There are two components to an object detection prediction:
 
@@ -38,4 +38,4 @@ This defines a box in which the left is located 0.1 (one tenth) from the left ed
 
 The following image shows labeling information in JSON format for objects in an image.
 
-![Image with JSON labels for the objects it contains.](../media/object-labels.png)
+![Photograph with JSON labels for the objects it contains.](../media/object-labels.png)
