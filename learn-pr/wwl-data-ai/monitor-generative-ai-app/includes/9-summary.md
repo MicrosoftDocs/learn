@@ -1,4 +1,5 @@
-In this module, you explored some of the key considerations when planning and preparing for AI application development. You've also had the opportunity to become familiar with Azure AI Foundry, the recommended platform for developing AI solutions on Azure.
+Monitoring generative AI applications is crucial for maintaining their reliability, performance, and cost-effectiveness in production environments.
 
-> [!TIP]
-> For latest news and information about developing AI applications on Azure, see **[Azure AI](https://azure.microsoft.com/solutions/ai?azure-portal=true)**.
+This module has outlined the importance of continuous monitoring through tracing, online evaluation, and the use of Azure Monitor Application Insights. By implementing these best practices, businesses can proactively manage AI agents like Trail Guide, optimize their real-world effectiveness, and ensure customer satisfaction. The insights provided by Azure Monitor's dashboards and alerts enable teams to detect anomalies, optimize performance, and align AI systems with business objectives and user expectations. 
+
+As generative AI continues to evolve, ongoing monitoring will remain a key component in harnessing its full potential.
