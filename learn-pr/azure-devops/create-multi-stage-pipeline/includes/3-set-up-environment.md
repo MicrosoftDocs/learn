@@ -37,8 +37,8 @@ Run a template that sets up your Azure DevOps organization.
 
 1. Choose your authentication method. You can [set up and use a Personal Access Token (PAT)](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate#create-a-pat) or use device login.
 
-	> [!NOTE]
-	> If you set up a PAT, make sure to authorize the necessary [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes). For this module, you can use **Full access**, but in a real-world situation, you should ensure you grant only the necessary scopes.
+    > [!NOTE]
+    > If you set up a PAT, make sure to authorize the necessary [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes). For this module, you can use **Full access**, but in a real-world situation, you should ensure you grant only the necessary scopes.
 
 1. Enter your Azure DevOps organization name, then press **Enter**.
 
@@ -67,7 +67,7 @@ If you haven't already, create a fork of the **mslearn-tailspin-spacegame-web-de
 
 Here, you assign a work item to yourself on Azure Boards. You also move the work item to the **Doing** state. In practice, you and your team would create work items at the start of each *sprint* or work iteration.
 
-This work assignment gives you a checklist to work from. It gives other team members visibility into what you're working on and how much work is left. The work item also helps enforce work-in-progress (WIP) limits so that the team doesn't take on too much work at one time.
+This work assignment gives you a checklist from which to work. It gives other team members visibility into what you're working on and how much work is left. The work item also helps enforce work-in-progress (WIP) limits so that the team doesn't take on too much work at one time.
 
 Recall that the team settled on the following top issues for the current sprint.
 
@@ -82,7 +82,7 @@ To set up the work item:
 
 1. From Azure DevOps, go to **Boards**. Then, from the menu, select **Boards**.
 
-    :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="A screenshot of Azure DevOps showing the location of the Boards menu.":::
+    :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="Screenshot of Azure DevOps showing the location of the Boards menu.":::
 
 1. In the **Create a multistage pipeline** card, select the down arrow. Then, assign the work item to yourself.
 
@@ -90,7 +90,7 @@ To set up the work item:
 
 1. Move the work item from the **To Do** column to the **Doing** column.
 
-    :::image type="content" source="../media/3-azure-boards-wi1-doing.png" alt-text="A screenshot of Azure Boards showing the card in the Doing column.":::
+    :::image type="content" source="../media/3-azure-boards-wi1-doing.png" alt-text="Screenshot of Azure Boards showing the card in the Doing column.":::
 
 At the end of this module, you'll move the card to the **Done** column, after you complete the task.
 
@@ -109,7 +109,7 @@ In this module, you use the Azure CLI to bring up three App Service instances. Y
 
 ### Bring up Cloud Shell through the Azure portal
 
-1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true), and sign in.
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. From the menu, select **Cloud Shell**. When prompted, select the **Bash** experience.
 
     :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" alt-text="A screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
@@ -165,7 +165,7 @@ Here, you create the App Service instances for the three stages you deploy to: *
 1. Verify that each environment is running, and that the home page is accessible.
 
    > [!NOTE]
-   > For learning purposes, here, you use the default network settings. These settings make your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a network that's not internet routable, and that only you and your team can access. Later, you could reconfigure your network to make the website available to your users.
+   > For learning purposes, you use the default network settings here. These settings make your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a network that's not internet routable, and that only you and your team can access. Later, you could reconfigure your network to make the website available to your users.
 
 To create your App Service instances, follow these steps:
 
@@ -203,28 +203,28 @@ To create your App Service instances, follow these steps:
       --name tailspin-space-game-web-dev-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-asp \
-      --runtime "DOTNET|6.0"
+      --runtime "DOTNETCORE|8.0"
 
     az webapp create \
       --name tailspin-space-game-web-test-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-asp \
-      --runtime "DOTNET|6.0"
+      --runtime "DOTNETCORE|8.0"
 
     az webapp create \
       --name tailspin-space-game-web-staging-$webappsuffix \
       --resource-group tailspin-space-game-rg \
       --plan tailspin-space-game-asp \
-      --runtime "DOTNET|6.0"
+      --runtime "DOTNETCORE|8.0"
     ```
 
-    For learning purposes, here, you apply the same App Service plan, B1 Basic, to each App Service instance. In practice, you would assign a plan that matches your expected workload.
+    For learning purposes, you apply the same App Service plan, B1 Basic, to each App Service instance here. In practice, you'd assign a plan that matches your expected workload.
 
     For example, for the environments that map to the *Dev* and *Test* stages, B1 Basic might be appropriate because you want only your team to access the environments.
 
-    For the *Staging* environment, you would select a plan that matches your production environment. That plan would likely provide greater CPU, memory, and storage resources. Under the plan, you can run performance tests, like load tests, in an environment that resembles your production environment. You can run the tests without affecting live traffic to your site.
+    For the *Staging* environment, you'd select a plan that matches your production environment. That plan would likely provide greater CPU, memory, and storage resources. Under the plan, you can run performance tests, like load tests, in an environment that resembles your production environment. You can run the tests without affecting live traffic to your site.
 
-1. To list the host name and state of each App Service instance, run the following `az webapp list` command.
+1. To list each App Service instance's host name and state, run the following `az webapp list` command.
 
     ```azurecli
     az webapp list \
@@ -280,7 +280,7 @@ To add the variables:
     > [!IMPORTANT]
     > Set the name of the App Service instance, not its host name. In this example, you would enter *tailspin-space-game-web-dev-1234* and not *tailspin-space-game-web-dev-1234.azurewebsites.net*.
 
-1. Near the beginning of the page, select **Save** to save your variable in the pipeline.
+1. Near the top of the page, select **Save** to save your variable in the pipeline.
 
     Your variable group resembles this one:
 
@@ -317,8 +317,8 @@ Here, you create a service connection that enables Azure Pipelines to access you
 1. In Azure DevOps, go to your **Space Game - web - Multistage** project.
 1. From the lower-left corner of the page, select **Project settings**.
 1. Under **Pipelines**, select **Service connections**.
-1. Select **New service connection**, then select **Azure Resource Manager**, and then select **Next**.
-1. At the beginning of the page, select **Service principal (automatic)**. Then, select **Next**.
+1. Select **Create service connection**, then select **Azure Resource Manager**, and then select **Next**.
+1. At the beginning of the page, select **App registration (automatic)**. Then, select **Next**.
 1. Fill in these fields:
 
     | Field                   | Value                                      |
