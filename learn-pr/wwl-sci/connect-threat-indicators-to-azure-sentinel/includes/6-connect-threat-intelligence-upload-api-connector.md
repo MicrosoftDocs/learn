@@ -24,7 +24,7 @@ Follow these steps to import threat intelligence STIX objects to Microsoft Senti
 
 ## Register a Microsoft Entra application
 
-The [default user role permissions](../active-directory/fundamentals/users-default-permissions.md#restrict-member-users-default-permissions) allow users to create application registrations. If this setting was switched to **No**, you need permission to manage applications in Microsoft Entra. Any of the following Microsoft Entra roles include the required permissions:
+The [default user role permissions](/entra/fundamentals/users-default-permissions) allow users to create application registrations. If this setting was switched to **No**, you need permission to manage applications in Microsoft Entra. Any of the following Microsoft Entra roles include the required permissions:
 
 - Application administrator
 - Application developer

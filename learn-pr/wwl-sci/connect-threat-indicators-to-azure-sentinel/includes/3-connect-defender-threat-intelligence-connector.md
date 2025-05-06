@@ -23,7 +23,7 @@ Enable the Microsoft Defender Threat Intelligence data connector to start ingest
 1. Under **Configuration**, select **Data connectors**.
 1. Search for the **Defender Threat Intelligence** data connector (either standard or premium version).
 
-    :::image type="content" source="../media/premium-microsoft-defender-threat-intelligence-data-connector-config.png" alt-text="Screenshot that shows the Defender Threat Intelligence Data connector page and the Connect button." lightbox="../media/premium-microsoft-defender-threat-intelligence-data-connector-config.png":::
+    :::image type="content" source="../media/premium-microsoft-defender-threat-intelligence-data-connector-config.png" alt-text="Screenshot that shows the Defender Threat Intelligence Data connectors." lightbox="../media/premium-microsoft-defender-threat-intelligence-data-connector-config.png":::
 
 1. Select the data connector and select the **Open connector page** button.
 1. On the connector page, select the **Connect** button to enable the feed.

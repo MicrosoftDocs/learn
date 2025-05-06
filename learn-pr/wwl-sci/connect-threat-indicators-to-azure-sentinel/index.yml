@@ -38,8 +38,8 @@ units:
 - learn.wwl.connect-threat-indicators-to-azure-sentinel.intelligence-taxii-connector
 - learn.wwl.connect-threat-indicators-to-azure-sentinel.intelligence-platforms-connector
 - learn.wwl.connect-threat-indicators-to-azure-sentinel.intelligence-upload-api-connector
-- learn.wwl.connect-threat-indicators-to-azure-sentinel.view-your-with-kql
-- learn.wwl.connect-threat-indicators-to-azure-sentinel.knowledge-check
-- learn.wwl.connect-threat-indicators-to-azure-sentinel.summary-resources
+- learn.wwl.connect-threat-indicators-to-azure-sentine.view-your-threat-indicators
+- learn.wwl.connect-threat-indicators-to-azure-sentine.knowledge-check
+- learn.wwl.connect-threat-indicators-to-azure-sentine.summary-resources
 badge:
   uid: learn.wwl.connect-threat-indicators-to-azure-sentinel.badge
