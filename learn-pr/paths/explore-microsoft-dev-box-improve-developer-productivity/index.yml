@@ -1,9 +1,12 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.explore-microsoft-dev-box-improve-developer-productivity
 metadata:
-  title: Explore Microsoft Dev Box and improve developer productivity
-  description: Explore Microsoft Dev Box and improve developer productivity
-  ms.date: 05/05/2025
+  title: Explore and Learn about Microsoft Dev Box
+  description: |-
+    This learning path provides a comprehensive introduction to Microsoft Dev Box, covering core service fundamentals, deployment best practices, key customization and imaging features, and guidance for using and optimizing your experience in the developer portal.
+
+    &nbsp;
+  ms.date: 05/06/2025
   author: wwlpublish
   ms.author: fkhan
   ms.topic: learning-path
@@ -24,8 +27,11 @@ roles:
 products:
 - azure
 subjects:
+- cloud-computing
+- devops
 - infrastructure
 - platform-engineering
+- virtual-machine
 modules:
 - learn.wwl.understand-basics-microsoft-dev-box
 trophy:
