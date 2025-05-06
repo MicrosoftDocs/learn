@@ -9,9 +9,9 @@ metadata:
   ms.topic: module
   ms.service: microsoft-sentinel
 title: Query logs in Microsoft Sentinel
-summary: As a Security Operations Analyst, you must understand the tables, fields, and data ingested in your workspace.  Learn how to query the most used data tables in Microsoft Sentinel.
+summary: As a Security Operations Analyst, you must understand the tables, fields, and data ingested in your workspace. Learn how to query the most used data tables in Microsoft Sentinel.
 abstract: |
-  Upon completion of this module, the learner will be able to:
+  Upon completion of this module, the learner is able to:
   - Use the Logs page to view data tables in Microsoft Sentinel
   - Query the most used tables using Microsoft Sentinel
 prerequisites: |
@@ -22,7 +22,7 @@ levels:
 roles:
 - security-operations-analyst
 products:
-- azure
+- microsoft-sentinel
 subjects:
 - cloud-security
 units:
