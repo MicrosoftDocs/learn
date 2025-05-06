@@ -5710,3 +5710,13 @@ achievements:
   title: Develop for storage on CDNs
   summary: Learn how the Azure Content Delivery Network (CDN) functions, how to control cache behavior, and how to perform actions by using .NET.
   iconUrl: /training/achievements/cdn-develop-storage.svg
+- uid: learn.backup-restore-azure-sql.badge
+  type: badge
+  title: Back up and restore your Azure SQL database
+  summary: Protect the data in your Azure SQL database and recover from data loss or corruption with backup and restore.
+  iconUrl: /training/achievements/backup-restore-azure-sql.svg
+- uid: learn.azure.create-foundation-modern-apps.badge
+  type: badge
+  title: Architect modern applications using Azure SQL Database
+  summary: Break down a scenario for an application and build a multi-service solution based on the microservices approach. Learn how to use modern database capabilities to build a foundation for applications.
+  iconUrl: /training/achievements/create-foundation-modern-apps.svg
