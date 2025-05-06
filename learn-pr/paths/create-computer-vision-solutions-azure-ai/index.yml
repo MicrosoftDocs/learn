@@ -29,10 +29,10 @@ subjects:
 - artificial-intelligence
 modules:
 - learn.wwl.analyze-images
+- learn.wwl.read-text-images-documents-with-computer-vision-service
+- learn.wwl.detect-analyze-recognize-faces
 - learn.wwl.classify-images
 - learn.wwl.detect-objects-images
-- learn.wwl.detect-analyze-recognize-faces
-- learn.wwl.read-text-images-documents-with-computer-vision-service
 - learn.wwl.analyze-video
 - learn.wwl.develop-generative-ai-vision-apps
 - learn.wwl.generate-images-azure-openai

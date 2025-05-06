@@ -15,26 +15,34 @@ The modules in this learning path form a progression, where you follow the Tails
 
 ### Run the template
 
-To set up everything for you in your Azure DevOps organization, you'll run a template.
+Run a template that sets up your Azure DevOps organization.
 
-> [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=manage-build-dependencies&azure-portal=true)
+1. [Get and run the ADOGenerator project](https://github.com/microsoft/AzDevOpsDemoGenerator/blob/main/docs/RunApplication.md) in Visual Studio or the IDE of your choice.
 
-From the Azure DevOps demo generator site, to run the template, perform these steps.
+1. When prompted to **Enter the template number from the list of templates**, enter **27** for **Manage build dependencies with Azure Artifacts**, then press **Enter**.
 
-1. Select **Sign In** and accept the usage terms.
-1. From the **Create New Project** page, select your Azure DevOps organization, and enter a project name. For example, enter *Space Game - web - Dependencies*.
-1. Select **Yes, I want to fork this repository**, then select **Authorize**. If a window appears, authorize access to your GitHub account.
+1. Choose your authentication method. You can [set up and use a Personal Access Token (PAT)](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate#create-a-pat) or use device login.
 
-    > [!IMPORTANT]
-    > You need to select this option for the template to connect to your GitHub repository. Select this option even if you've already forked the _Space Game_ website project. The template uses your existing fork.
+    > [!NOTE]
+    > If you set up a PAT, make sure to authorize the necessary [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes). For this module, you can use **Full access**, but in a real-world situation, you should ensure you grant only the necessary scopes.
 
-1. Select **Create Project**.
+1. Enter your Azure DevOps organization name, then press **Enter**.
 
-    :::image type="content" source="../media/3-create-new-project.png" alt-text="A screenshot of the Azure DevOps Demo Generator showing how to create a new project.":::
+1. If prompted, enter your Azure DevOps PAT, then press **Enter**.
 
-    It takes a few moments for the template to run.
-1. To go to your project in Azure DevOps, select **Navigate to project** when the project finishes building.
+1. Enter a project name such as *Space Game - web - Dependencies*, then press **Enter**.
+
+1. Once your project is created, go to your Azure DevOps organization in your browser (at `https://dev.azure.com/<your-organization-name>/`) and select the project.
+
+### Fork the repository
+
+If you haven't already, create a fork of the **mslearn-tailspin-spacegame-web** repository.
+
+1. On GitHub, go to the [mslearn-tailspin-spacegame-web](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web) repository.
+
+1. Select **Fork** at the top-right of the screen.
+
+1. Choose your GitHub account as the **Owner**, then select **Create fork**.
 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/training/modules/manage-build-dependencies/8-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps even if you don't complete this module.
