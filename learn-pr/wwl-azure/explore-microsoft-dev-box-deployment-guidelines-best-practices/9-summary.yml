@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-microsoft-dev-box-deployment-guidelines-best-practices.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 05/06/2025
+  author: wwlpublish
+  ms.author: fkhan
+  ms.topic: unit
+durationInMinutes: 8
+content: |
+  [!include[](includes/9-summary.md)]
