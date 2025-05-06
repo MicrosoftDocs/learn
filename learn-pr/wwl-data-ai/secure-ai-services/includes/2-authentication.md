@@ -1,4 +1,6 @@
-By default, access to Azure AI services resources is restricted by using subscription keys. Management of access to these keys is a primary consideration for security.
+In the past, access to Azure AI services resources is restricted by using subscription keys by default. When using keys for authentication, management of access to these keys is a primary consideration for security.
+
+Some services, most notably when working with Azure AI Foundry, depend on Azure credentials for authentication through Microsoft Entra. This module focuses mostly on keys for security, while other modules focusing on Azure AI Foundry show examples of using Azure credentials for access to you AI services.
 
 ## Regenerate keys
 
