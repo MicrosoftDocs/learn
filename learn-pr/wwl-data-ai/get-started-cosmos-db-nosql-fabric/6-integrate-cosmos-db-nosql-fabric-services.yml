@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric.integrate-cosmos-db-nosql-fabric-services
+title: Introduction
+metadata:
+  title: Integrate Cosmos DB NoSQL with other Fabric services
+  description: "Learn how Cosmos DB NoSQL in Fabric connects with pipelines, Spark, GraphQL, and other Fabric services to enable end-to-end solutions."
+  ms.date: 04/15/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-integrate-cosmos-db-nosql-fabric-services.md)]

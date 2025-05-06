@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric.4-build-operational-workloads-cosmos-db-nosql-fabric
+title: Introduction
+metadata:
+  title: Build operational workloads with Cosmos DB NoSQL in Fabric
+  description: "Discover how Cosmos DB NoSQL in Fabric supports real-time application scenarios such as fraud detection and real-time product recommendations."
+  ms.date: 04/15/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-build-operational-workloads-cosmos-db-nosql-fabric.md)]

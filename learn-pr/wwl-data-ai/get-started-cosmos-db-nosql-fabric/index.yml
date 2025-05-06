@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric
+metadata:
+  title: Get started with SQL Database in Microsoft Fabric
+  description: "Learn how SQL Database in Microsoft Fabric works, the key concepts, and practical examples to help users SQL Database effectively as part of their analytics solutions."
+  ms.date: 04/15/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: module-standard-task-based
+  ms.service: fabric
+  ai-usage: ai-assisted
+title: Get started with SQL Database in Microsoft Fabric
+summary: Learn how Cosmos DB NoSQL in Fabric supports operational workloads within the Fabric platform, and how to use it to build and manage scalable, transactional applications.
+abstract: |
+  By the end of this module, you'll be able to:
+  *   Understand what Cosmos DB NoSQL in Fabric is and how it's used to support operational workloads within Fabric.
+  *   Create and explore a Cosmos DB NoSQL in Fabric database using the web experience.
+  *   Use Cosmos DB NoSQL in Fabric for operational scenarios such as real-time recommendations and event processing.
+  *   Configure access, monitor performance, and understand backup and restore options.
+  *   Connect Cosmos DB NoSQL in Fabric with other Fabric services, including pipelines, Spark, and event streams.
+prerequisites: |
+  *   Familiarity with navigating the Fabric portal.
+  *   Basic understanding of NoSQL data structures and JSON documents.
+  *   General knowledge of transactional database workloads.
+iconUrl: /training/achievements/1-prepare-to-maintain-databases-on-azure.svg
+levels:
+- beginner
+roles:
+- data-engineer
+- solution-architect
+products:
+- fabric
+- azure-cosmos-db
+subjects: 
+  - databases
+  - cloud-computing
+units:
+- learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric.introduction
+- learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric.understand-cosmos-db-nosql-fabric
+- learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric.create-explore-cosmos-db-nosql-fabric-database
+- learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric.build-operational-workloads-cosmos-db-nosql-fabric
+- learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric.secure-monitor-cosmos-db-nosql-fabric
+- learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric.integrate-cosmos-db-nosql-fabric-services
+- learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric.exercise-create-populate-query-cosmos-db-nosql-fabric-database
+- learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric.knowledge-check
+- learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric.summary
+badge:
+  uid: learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric.badge

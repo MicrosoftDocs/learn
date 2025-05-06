@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric.secure-monitor-cosmos-db-nosql-fabric
+title: Introduction
+metadata:
+  title: Secure and monitor Cosmos DB NoSQL in Fabric
+  description: "Learn how access to Cosmos DB NoSQL in Fabric is managed through workspace roles, and how to monitor performance, usage, and availability using tools in the Fabric platform."
+  ms.date: 04/15/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-secure-monitor-cosmos-db-nosql-fabric.md)]

@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.learn-wwl.get-started-cosmos-db-nosql-fabric.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Knowledge check"
+  ms.date: 04/15/2025
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: unit
+durationInMinutes: 8
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: What interface in Fabric allows users to browse, update, and delete items in a Cosmos DB NoSQL collection?
+    choices:
+    - content: Metrics app
+      isCorrect: false
+      explanation: Incorrect. The Metrics app shows usage metrics, not document-level content.
+    - content: Data Explorer
+      isCorrect: true
+      explanation: Correct. Data Explorer is used to view collections and manage documents in Cosmos DB NoSQL in Fabric.
+    - content: Azure Monitor
+      isCorrect: false
+      explanation: Incorrect. Azure Monitor isn't part of the Cosmos DB NoSQL in Fabric experience.
+  - content: How does Cosmos DB NoSQL in Fabric handle increasing demand on the database?
+    choices:
+    - content: Manual scale settings must be applied per collection
+      isCorrect: false
+      explanation: Incorrect. No manual scaling or RU provisioning is required.
+    - content: The database automatically scales based on load
+      isCorrect: true
+      explanation: Correct. Cosmos DB NoSQL in Fabric scales up or down automatically without manual intervention.
+    - content: Performance is capped unless a higher pricing tier is selected
+      isCorrect: false
+      explanation: Incorrect. The system is designed to handle scale automatically.
+  - content: What must be specified when creating a new container in Cosmos DB NoSQL in Fabric?
+    choices:
+    - content: A manual throughput setting
+      isCorrect: false
+      explanation: Incorrect. Throughput is managed automatically and not required during setup.
+    - content: A custom indexing policy
+      isCorrect: false
+      explanation: Incorrect. Indexing is handled automatically without custom setup.
+    - content: A partition key
+      isCorrect: true
+      explanation: Correct. A partition key is the only required setting when creating a container.
