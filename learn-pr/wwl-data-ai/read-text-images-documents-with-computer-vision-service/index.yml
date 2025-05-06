@@ -3,9 +3,9 @@ uid: learn.wwl.read-text-images-documents-with-computer-vision-service
 metadata:
   title: Read text in images and documents with the Azure AI Vision Service
   description: Azure's AI Vision service uses advanced algorithms to process images and return information based on the visual features you're interested in. This module teaches you how to use the Azure AI Vision's Image Analysis OCR feature.
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 02/05/2024
+  ms.date: 05/06/2025
   ms.service: azure-ai-vision
   ms.topic: module-standard-task-based
   ms.collection:
