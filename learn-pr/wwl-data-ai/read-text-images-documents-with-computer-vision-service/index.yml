@@ -5,7 +5,7 @@ metadata:
   description: Azure's AI Vision service uses advanced algorithms to process images and return information based on the visual features you're interested in. This module teaches you how to use the Azure AI Vision Image Analysis OCR feature.
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 05/05/2024
+  ms.date: 05/06/2025
   ms.service: azure-ai-vision
   ms.topic: module-standard-task-based
   ms.collection:
