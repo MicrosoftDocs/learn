@@ -57,10 +57,10 @@ foreach (var prediction in result.Predictions)
 {
     if (prediction.Probability > 0.5)
     {
-        int left = prediction.BoundingBox.Left;
-        int top = prediction.BoundingBox.Top;
-        int height = prediction.BoundingBox.Height;
-        int width =  prediction.BoundingBox.Width;
+        var left = prediction.BoundingBox.Left;
+        var top = prediction.BoundingBox.Top;
+        var height = prediction.BoundingBox.Height;
+        var width =  prediction.BoundingBox.Width;
         Console.WriteLine($"{prediction.TagName} ({prediction.Probability})");
         Console.WriteLine($"  Left:{left}, Top:{top}, Height:{height}, Width:{width}");
     }
