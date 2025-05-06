@@ -2,7 +2,7 @@
 uid: learn.wwl.read-text-images-documents-with-computer-vision-service
 metadata:
   title: Read text in images
-  description: Azure's AI Vision service uses advanced algorithms to process images and return information based on the visual features you're interested in. This module teaches you how to use the Azure AI Vision's Image Analysis OCR feature.
+  description: Azure's AI Vision service uses advanced algorithms to process images and return information based on the visual features you're interested in. This module teaches you how to use the Azure AI Vision Image Analysis OCR feature.
   author: wwlpublish
   ms.author: berryivor
   ms.date: 05/05/2024
@@ -12,7 +12,7 @@ metadata:
     - wwl-ai-copilot
   ai-usage: ai-assisted
 title: Read text in images
-summary: The Azure AI Vision Image Analysis ervice uses algorithms to process images and return information. This module teaches you how to use the Image Analysis API for optical character recognition (OCR).
+summary: The Azure AI Vision Image Analysis service uses algorithms to process images and return information. This module teaches you how to use the Image Analysis API for optical character recognition (OCR).
 abstract: |
   In this module, you'll learn how to:
   - Describe the OCR capabilities of Azure AI Vision's Image Analysis API.
