@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.purview-understand-ediscovery.summary
-title: Summary
+uid: learn.wwl.purview-ediscovery-understand.introduction
+title: Introduction
 metadata:
-  title: Summary
-  description: "Summary"
+  title: Introduction
+  description: "Introduction"
   ms.date: 5/09/2025
   author: wwlpublish
   ms.author: riswinto
@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/summary.md)]
+  [!include[](includes/introduction.md)]
