@@ -21,7 +21,7 @@ prerequisites: |
   - An Azure subscription
   - An Azure DevOps organization with access to parallel jobs
   - Visual Studio Code
-  - .NET 6.0 SDK
+  - .NET 8.0 SDK
   - Git
   - A GitHub account
 iconUrl: /training/achievements/azure-devops/create-multi-stage-pipeline.svg
