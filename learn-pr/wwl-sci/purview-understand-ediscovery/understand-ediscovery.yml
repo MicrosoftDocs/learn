@@ -1,2 +1,15 @@
-What is eDiscovery?
-6 mins
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-understand-ediscovery.understand-ediscovery
+title: What is eDiscovery?
+metadata:
+  title: What is eDiscovery?
+  description: "What is eDiscovery?"
+  ms.date: 5/09/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/understand-ediscovery.md)]

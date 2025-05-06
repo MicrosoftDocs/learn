@@ -1,1 +1,15 @@
-Understand eDiscovery roles and permissions
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-understand-ediscovery.understand-ediscovery-permissions
+title: Understand eDiscovery roles and permissions
+metadata:
+  title: Understand eDiscovery roles and permissions
+  description: "Understand eDiscovery roles and permissions"
+  ms.date: 5/09/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/understand-ediscovery-permissions.md)]

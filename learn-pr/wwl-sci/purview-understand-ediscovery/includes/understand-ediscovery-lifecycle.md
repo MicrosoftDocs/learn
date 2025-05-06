@@ -24,7 +24,7 @@ Once results are in, you have a few paths depending on the goals of the investig
 - **Add content to a review set** if you need to organize, filter, or analyze it further.
 - **Place a hold** on relevant content to preserve it during the investigation.
 
-Holds can target full content locations or specific items based on a query. They help prevent deletion or changes while the case is ongoing.
+A **legal hold** prevents content from being deleted or altered, even if retention policies or user actions would normally allow it. Holds can apply to entire content locations, like a mailbox or SharePoint site, or to specific items returned by a query. They help maintain the integrity of evidence while a case is ongoing.
 
 ## Step 5: Review and take action
 

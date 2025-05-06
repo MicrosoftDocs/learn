@@ -1,2 +1,15 @@
-Compare the classic and new eDiscovery experiences
-6 mins
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-understand-ediscovery.compare-classic-new-ediscovery
+title: Compare the classic and new eDiscovery experiences
+metadata:
+  title: Compare the classic and new eDiscovery experiences
+  description: "Compare the classic and new eDiscovery experiences"
+  ms.date: 5/09/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/compare-classic-new-ediscovery.md)]
