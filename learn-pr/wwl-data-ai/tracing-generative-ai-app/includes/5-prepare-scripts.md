@@ -13,7 +13,7 @@ To integrate monitoring into your code, you need to:
 
 ## Run model inference
 
-To begin monitoring your generative AI application, you first use the [Azure AI Foundry SDK](/azure/ai-foundry/how-to/develop/sdk-overview?tabs=sync&pivots=programming-language-python?azure-portal=true) to run model inference. Model inference could be anything from a single language model completion to a full multi-turn assistant.
+To begin monitoring your generative AI application, you need to use the [Azure AI Foundry SDK](/azure/ai-foundry/how-to/develop/sdk-overview?tabs=sync&pivots=programming-language-python?azure-portal=true) to run model inference. Model inference could be anything from a single language model completion to a full multi-turn assistant.
 
 The Azure AI Foundry SDK allows you to connect with a specific Azure AI hub and project. With Python, this may look like the following code sample:
 
@@ -64,7 +64,7 @@ os.environ['AZURE_TRACING_GEN_AI_CONTENT_RECORDING_ENABLED'] = 'true'
 
 ```
 
-Then, you can use the tracer to create a span named `generate_completion` to represent the process of generating a response from the AI model:
+Then, you can use the tracer to create a span named `generate_completion` to represent the process of generating a response from the AI model. The span is used before you interact with the deployed service, so you **update** the code with:
 
 ```python
 # Generate a chat completion about camping supplies
