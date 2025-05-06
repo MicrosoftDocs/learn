@@ -1,4 +1,4 @@
-In the past, access to Azure AI services resources is restricted by using subscription keys by default. When using keys for authentication, management of access to these keys is a primary consideration for security.
+In the past, access to Azure AI services resources is restricted by using subscription keys by default. When developers use keys for authentication, management of access to these keys is a primary consideration for security.
 
 Some services, most notably when working with Azure AI Foundry, depend on Azure credentials for authentication through Microsoft Entra. This module focuses mostly on keys for security, while other modules focusing on Azure AI Foundry show examples of using Azure credentials for access to you AI services.
 
@@ -21,7 +21,7 @@ For example, to regenerate keys in the Azure portal, you can do the following:
 
 ## Protect keys with Azure Key Vault
 
-Azure Key Vault is an Azure service in which you can securely store secrets (such as passwords and keys). Access to the key vault is granted to *security principals*, which you can think of user identities that are authenticated using Microsoft Entra ID. Administrators can assign a security principal to an application (in which case it is known as a *service principal*) to define a *managed identity* for the application. The application can then use this identity to access the key vault and retrieve a secret to which it has access. Controlling access to the secret in this way minimizes the risk of it being compromised by being hard-coded in an application or saved in a configuration file.
+Azure Key Vault is an Azure service in which you can securely store secrets (such as passwords and keys). Access to the key vault is granted to *security principals*, which you can think of user identities that are authenticated using Microsoft Entra ID. Administrators can assign a security principal to an application (in which case it's known as a *service principal*) to define a *managed identity* for the application. The application can then use this identity to access the key vault and retrieve a secret to which it has access. Controlling access to the secret in this way minimizes the risk of it being compromised by being hard-coded in an application or saved in a configuration file.
 
 You can store the subscription keys for an AI services resource in Azure Key Vault, and assign a managed identity to client applications that need to use the service. The applications can then retrieve the key as needed from the key vault, without risk of exposing it to unauthorized users.
 
@@ -36,7 +36,7 @@ When using the REST interface, some AI services support (or even *require*) toke
 
 ## Microsoft Entra ID authentication
 
-Azure AI services supports Microsoft Entra ID authentication, enabling you to grant access to specific service principals or managed identities for apps and services running in Azure.
+Azure AI services support Microsoft Entra ID authentication, enabling you to grant access to specific service principals or managed identities for apps and services running in Azure.
 
 > [!NOTE]
 > For more information about authentication options for AI services, see the [AI services documentation](/azure/ai-services/authentication).
