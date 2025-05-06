@@ -6,5 +6,5 @@ Understanding how eDiscovery works in Microsoft Purview helps organizations hand
 
 ## References
 
-- [Learn about eDiscovery](/purview/edisc)
-- [Learn about the eDiscovery workflow](/purview/edisc-workflow)
+- [Learn about eDiscovery](/purview/edisc?azure-portal=true)
+- [Learn about the eDiscovery workflow](/purview/edisc-workflow?azure-portal=true)
