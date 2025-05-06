@@ -16,9 +16,9 @@ content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
   questions:
-  - content: What's the best way for the team to create a file that deploys to both test and production environments?
+  - content: What's the best way for the team to create a Bicep file that deploys to both test and production environments?
     choices:
-    - content: Create a file that deploys all of the resources for the manufacturing application. Add file parameters for the values that might change between environments.
+    - content: Create a Bicep file that deploys all of the resources for the manufacturing application. Add template parameters for the values that might change between environments.
       isCorrect: true
       explanation: Correct. File parameters are a great way to manage multiple environments. You can specify different values for the parameters when you deploy the file into the test and production environments.
     - content: Create a module that deploys all of the resources for the manufacturing application. Create separate Bicep files for each environment, and add the shared module to each environment's file.
