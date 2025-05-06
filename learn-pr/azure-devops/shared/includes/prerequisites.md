@@ -2,5 +2,5 @@
 - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
 - A [GitHub](https://github.com/join?azure-portal=true) account
 - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) with the [Azure Pipelines for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines) extension.
-- [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0?azure-portal=true)
+- [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0?azure-portal=true)
 - [Git](https://git-scm.com/downloads?azure-portal=true)
