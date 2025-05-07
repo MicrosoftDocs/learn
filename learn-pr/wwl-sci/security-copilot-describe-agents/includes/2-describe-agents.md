@@ -1,11 +1,13 @@
 Microsoft Security Copilot provides a range of agents designed to enhance security workflows and streamline operations. These agents assist security engineers by automating tasks, providing insights, and integrating with other Microsoft security tools.
 
 ### Define agents in Microsoft Security Copilot
+
 Agents in Microsoft Security Copilot help automate repetitive tasks, reduce manual workloads, and optimize security operations. Agents consist of predefined workflows and capabilities tailored to address particular security challenges. They're designed to perform specific tasks, such as analyzing threats, triaging phishing incidents, or optimizing conditional access policies.
 
 Agents utilize security compute units (SCUs) to operate just like other features in Security Copilot. They integrate seamlessly with Microsoft Security solutions and the broader supported partner ecosystem and fit naturally into existing workflows. Agents learn based on feedback and keep you in control on the actions it takes.
 
 ### Agent terminology in Microsoft Security Copilot
+
 To effectively use Security Copilot agents, it's essential to understand the terminology used when working with agents.
 
 | Term         | Description |
