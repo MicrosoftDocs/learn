@@ -172,9 +172,10 @@ You can add protection rules for environments defined for your GitHub repository
 ![image](../media/2b-settings.png)
    
 **2.** Click on **Environment** on the left panel.
+
 ![image](../media/2b-environments.png)   
 
-**3.** Use the **New Environment** button to add and configure an environment and add protections.
+**3.** Use the **New environment** button to add and configure an environment and add protections.
 ![image](../media/2b-newenvironment.png)
 
 ### About environments
