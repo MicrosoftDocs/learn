@@ -19,11 +19,11 @@ Several key things are making datacenters even more important in 2025:
 
 AI and heavy computing
 
-- Artificial Intelligence (AI) is becoming a big part of our daily lives (think smart assistants, video games, or even self-driving cars). All of this requires a lot of computing power. As AI grows, datacenters are getting bigger and need more energy to support it. It's like the amount of electricity needed to run a huge gaming server or an online game that millions of people play at once.
+- Artificial Intelligence (AI) is becoming a large part of our daily lives (think smart assistants, video games, or even self-driving cars). All of this requires numerous computing power. As AI grows, datacenters are getting bigger and need more energy to support it. It's like the amount of electricity needed to run a huge gaming server or an online game that millions of people play at once.
 
 Green and renewable energy
 
-- Datacenters use a lot of power, which is why many companies are trying to switch to renewable energy sources (like solar or wind power) to run their operations. For example, Amazon plans to be carbon neutral (no net carbon emissions) by 2040. This means they'll use green energy to power their datacenters to reduce their environmental impact.
+- Datacenters use numerous power, which is why many companies are trying to switch to renewable energy sources (like solar or wind power) to run their operations. For example, Amazon plans to be carbon neutral (no net carbon emissions) by 2040. This means they'll use green energy to power their datacenters to reduce their environmental impact.
 
 Cooler, smarter datacenters
 

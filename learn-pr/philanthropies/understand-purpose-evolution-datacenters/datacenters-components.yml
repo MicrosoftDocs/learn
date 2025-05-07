@@ -10,5 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
- [!include[](../includes/unit-banner.md)]
  [!include[](includes/datacenters-components.md)]

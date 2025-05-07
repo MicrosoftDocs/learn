@@ -9,7 +9,6 @@ metadata:
  ms.topic: module-standard-task-based
 title: Understand the purpose and evolution of datacenters
 summary: |
-    [!include[](../includes/module-banner.md)]
     This module covers the basics of datacenters—what they are, why they exist, and their critical role in modern IT infrastructure.
 abstract: |
     - Understand what data and a datacenter are, why data matters, and why datacenters exist.

@@ -9,7 +9,7 @@ An average household uses around 10,000 kilowatt-hours (kWh) per year, which tra
 
 1. Power consumption is key for datacenters
 
-   - Datacenters consume a lot of electricity to run the thousands of servers and keep the equipment cool. The power usage is a key factor in determining how big a datacenter is in terms of its ability to handle heavy workloads.
+   - Datacenters consume numerous electricity to run the thousands of servers and keep the equipment cool. The power usage is a key factor in determining how large a datacenter is in terms of its ability to handle heavy workloads.
    - Megawatts (MW) represent the electrical power a datacenter needs to operate. For example, a large datacenter may need 100 MW of power to run all its equipment. This tells you how much electricity it consumes and how much computing capacity it can handle.
 
 1. Square feet alone don't tell the full story
@@ -20,7 +20,7 @@ An average household uses around 10,000 kilowatt-hours (kWh) per year, which tra
 1. Efficiency and power density
 
    - Modern datacenters are becoming much more efficient in using space. They can fit more servers and computing power into smaller spaces, which means the same amount of physical space (measured in square feet) can house a datacenter with a high MW capacity.
-   - For instance, new hyperscale datacenters (super-large datacenters built by companies like Amazon, Microsoft and Google) can be very powerful but might not necessarily take up significantly more space than older, smaller facilities. They use technology to pack a lot of computing power into a smaller area, so the MW rating gives a clearer idea of their capability.
+   - For instance, new hyperscale datacenters (super-large datacenters built by companies like Amazon, Microsoft, and Google) can be very powerful but might not necessarily take up significantly more space than older, smaller facilities. They use technology to pack numerous computing power into a smaller area, so the MW rating gives a clearer idea of their capability.
 
 1. Industry standard for power consumption
 
