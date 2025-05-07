@@ -26,7 +26,7 @@ quiz:
       explanation: "Correct. Azure AI Vision Image Analysis is designed to help you extract information from images."
     - content: "To support video conferencing and web-cam communication"
       isCorrect: false
-      explanation: "Incorrect. Azure AI Vision CImage Analysis isn't designed for web-cam and video conferencing management."
+      explanation: "Incorrect. Azure AI Vision Image Analysis isn't designed for web-cam and video conferencing management."
   - content: "You want to use Azure AI Vision Image Analysis to generate suggested text descriptions for an image. Which visual feature should you specify?"
     choices:
     - content: "Tags"
