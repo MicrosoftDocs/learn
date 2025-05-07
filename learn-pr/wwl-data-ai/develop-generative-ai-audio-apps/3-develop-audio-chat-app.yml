@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-generative-ai-audio-apps.develop-visual-chat-apps
+title: Develop an audio-based chat app
+metadata:
+  title: Develop an audio-based chat app
+  description: "Use Azure AI Foundry, Azure AI Model Inference, and Azure OpenAI SDKs to develop an audio-based chat app."
+  ms.date: 05/6/2025
+  author: buzahid
+  ms.author: buzahid
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-develop-visual-chat-app.md)]
