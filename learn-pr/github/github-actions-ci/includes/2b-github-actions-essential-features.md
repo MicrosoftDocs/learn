@@ -32,7 +32,7 @@ This example is using the `github.ref` context to check the branch that triggere
 
 Different contexts are available throughout a workflow run. For example, the secrets context may only be used at certain places within a job.
 
-In addition, some functions may only be used in certain places. For example, the hashFiles function is not available everywhere.
+In addition, some functions may only be used in certain places. For example, the `hashFiles` function is not available everywhere.
 
 The following table lists the restrictions on where each context and special function can be used within a workflow. The listed contexts are only available for the given workflow key, and may not be used anywhere else. Unless listed below, a function can be used anywhere.
 
