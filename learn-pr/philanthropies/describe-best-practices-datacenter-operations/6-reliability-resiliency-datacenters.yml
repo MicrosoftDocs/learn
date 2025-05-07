@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.describe-best-practices-datacenter-operations.reliability-resiliency-datacenters
+title: Reliability and Resiliency in Datacenters
+metadata:
+  title: Reliability and Resiliency in Datacenters
+  description: This content is a part of the Describe the best practices for datacenter operations.
+  ms.date: 05/07/2025
+  author: kiranchandratrey
+  ms.author: elenasim
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-reliability-resiliency-datacenters.md)]

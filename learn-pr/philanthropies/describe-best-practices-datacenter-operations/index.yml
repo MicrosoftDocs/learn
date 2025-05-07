@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.philanthropies.describe-best-practices-datacenter-operations
+
+metadata:
+  title: Describe the best practices for datacenter operations
+  description: In this module, we'll explore the essential operations that ensure the efficiency, reliability, and security of datacenters. Topics include the importance of monitoring key systems like environmental conditions, performance, and security, using tools like the DCIM (Datacenter Infrastructure Management). You'll learn how KPIs such as uptime and energy efficiency are tracked to optimize performance. We'll also cover maintenance practices for hardware, software, cooling systems, and power systems to prevent downtime. The end of the module will touch on regulations, reliability strategies, and disaster recovery.
+  ms.date: 05/07/2025
+  author: kiranchandratrey
+  ms.author: elenasim
+  ms.topic: module
+  ms.service: artificial-intelligence
+
+title: Describe the best practices for datacenter operations
+summary: This module covers the essential operations that ensure the efficiency, reliability, and security of datacenters. Monitoring, Learn who is responsible for datacenter monitoring. KPIs - Understand how Key Performance Indicators (KPIs) track datacenter health.Maintenance - Explore the importance of regular maintenance in hardware, software, power systems, cooling systems, and fire protection systems.Disaster recovery and low latency - Discover how datacenters recover after unexpected disruptions and how to minimize delays in data transmission.By the end of this module, you will have a solid understanding of maintenance and monitoring best practices. 
+
+abstract: |
+  - Gain knowledge of how datacenters are monitored in real-time, including environmental, performance, security, and infrastructure monitoring.
+  - Learn about key performance indicators (KPIs) used to track datacenter health and operational efficiency.
+  - Understand the role of automation and predictive monitoring in preventing downtime and ensuring reliability.
+  - Explore the importance of regular maintenance in hardware, software, power systems, cooling systems, and fire protection systems.
+  - Learn about strategies for disaster recovery and low latency operations.
+prerequisites: |
+  - Basic familiarity with computers.
+  - Basic understanding of IT infrastructure and data management.
+  - Knowledge of computer hardware and networking basics.
+  - Basic knowledge of system monitoring and maintenance.
+products:
+  - azure
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- student
+units:
+- learn.philanthropies.describe-best-practices-datacenter-operations.datacenter-monitoring
+- learn.philanthropies.describe-best-practices-datacenter-operations.key-aspects-datacenter-monitoring
+- learn.philanthropies.describe-best-practices-datacenter-operations.datacenter-maintenance
+- learn.philanthropies.describe-best-practices-datacenter-operations.key-aspects-datacenter-maintenance
+- learn.philanthropies.describe-best-practices-datacenter-operations.key-aspects-datacenter-maintenance-continued
+- learn.philanthropies.describe-best-practices-datacenter-operations.reliability-resiliency-datacenters
+- learn.philanthropies.describe-best-practices-datacenter-operations.disaster-recovery-datacenters
+- learn.philanthropies.describe-best-practices-datacenter-operations.low-latency-operations-datacenters
+- learn.philanthropies.describe-best-practices-datacenter-operations.check
+- learn.philanthropies.describe-best-practices-datacenter-operations.summary
+badge:
+  uid: learn.philanthropies.describe-best-practices-datacenter-operations.badge
