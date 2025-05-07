@@ -11,7 +11,7 @@ metadata:
   ms.service: artificial-intelligence
 
 title: Describe the best practices for datacenter operations
-summary: This module covers the essential operations that ensure the efficiency, reliability, and security of datacenters. Monitoring, Learn who is responsible for datacenter monitoring. KPIs - Understand how Key Performance Indicators (KPIs) track datacenter health.Maintenance - Explore the importance of regular maintenance in hardware, software, power systems, cooling systems, and fire protection systems.Disaster recovery and low latency - Discover how datacenters recover after unexpected disruptions and how to minimize delays in data transmission.By the end of this module, you will have a solid understanding of maintenance and monitoring best practices. 
+summary: This module covers the essential operations that ensure the efficiency, reliability, and security of datacenters. Monitoring, Learn who is responsible for datacenter monitoring. KPIs - Understand how Key Performance Indicators (KPIs) track datacenter health. Maintenance - Explore the importance of regular maintenance in hardware, software, power systems, cooling systems, and fire protection systems. Disaster recovery and low latency - Discover how datacenters recover after unexpected disruptions and how to minimize delays in data transmission. By the end of this module, you will have a solid understanding of maintenance and monitoring best practices. 
 
 abstract: |
   - Gain knowledge of how datacenters are monitored in real-time, including environmental, performance, security, and infrastructure monitoring.

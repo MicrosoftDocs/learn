@@ -6,7 +6,7 @@ Datacenter maintenance is a vital component of datacenter operations. It focuses
 
 **Who is responsible for datacenter maintenance?**
 
-It is important to discuss who is responsible for maintenance in datacenters as this varies depending on the type of datacenter. Note that the individuals or groups that are responsible for datacenter maintenance are similar to those that are responsible for datacenter monitoring.
+It's important to discuss who is responsible for maintenance in datacenters as this varies depending on the type of datacenter. Note that the individuals or groups that are responsible for datacenter maintenance are similar to those that are responsible for datacenter monitoring.
 
 - **Enterprise datacenters**:
 
@@ -18,7 +18,7 @@ It is important to discuss who is responsible for maintenance in datacenters as 
 
 - **Hyperscale datacenters:**
 
-  - In hyperscale datacenters maintenance is fully managed by the provider. These companies (e.g., Amazon, Google, Microsoft) have largescale operations with specialized teams responsible for all aspects of the datacenter's maintenance.
+  - In hyperscale datacenters maintenance is fully managed by the provider. These companies (for example, Amazon, Google, Microsoft) have large-scale operations with specialized teams responsible for all aspects of the datacenter's maintenance.
 
 - **Edge datacenters**:
 
@@ -30,4 +30,4 @@ It is important to discuss who is responsible for maintenance in datacenters as 
 
 - **Managed services datacenters**:
 
-  - In managed service datacenters, the responsibility for maintenance primarily lies with the service provider. Managed service providers (MSPs) are responsible for maintaining both the physical infrastructure and the customer's hardware if it is part of the managed service.
+  - In managed service datacenters, the responsibility for maintenance primarily lies with the service provider. Managed service providers (MSPs) are responsible for maintaining both the physical infrastructure and the customer's hardware if it's part of the managed service.

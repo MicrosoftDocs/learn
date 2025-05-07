@@ -5,7 +5,7 @@ The module also discussed key performance indicators (KPIs) used to track datace
 **References for this module include:**
 
 - Encor: Data Center Environmental Monitoring Ultimate Guide [2024]: https://encoradvisors.com/data-center-environmental-monitoring/ 
-- DCSMI: Top 5 Data Center Environmental Monitoring Systems: https://www.dcsmi.com/data-center-sales-and-marketing-blog/top-5-data-center-environmental-monitoring-systems 
+- DCSMI: Top five Data Center Environmental Monitoring Systems: https://www.dcsmi.com/data-center-sales-and-marketing-blog/top-5-data-center-environmental-monitoring-systems 
 - Navisite: Best Practices for Monitoring and Measuring Data Center Performance: https://www.navisite.com/blog/best-practices-for-monitoring-and-measuring-data-center-performance/ 
 - Stealth Monitoring: Top Strategies for Enhancing Data Center Security: https://stealthmonitoring.com/video-monitoring/top-strategies-for-enhancing-data-center-security 
 - IBM: What is infrastructure monitoring?: https://www.ibm.com/think/topics/infrastructure-monitoring 
@@ -34,7 +34,7 @@ The module also discussed key performance indicators (KPIs) used to track datace
 - DataCenterDynamics: Hyperscale data centers require 24/7 reliability: https://www.datacenterdynamics.com/en/whitepapers/hyperscale-data-centers-require-247-reliability/ 
 - Neyworkworld: Why Data Center Management Responsibilities Must Include Edge Data Centers: https://www.networkworld.com/article/967077/why-data-center-management-responsibilities-must-include-edge-data-centers.html 
 - 123Net: Data Center Managed Services: A Comprehensive Guide: https://www.123.net/blog/data-center-managed-services-a-comprehensive-guide/ 
-- DatacenterKnowledge: 7 Tips for Managing Preventive Maintenance at Data Centers: https://www.datacenterknowledge.com/operations-and-management/7-tips-for-managing-preventive-maintenance-at-data-centers 
+- DatacenterKnowledge: Seven Tips for Managing Preventive Maintenance at Data Centers: https://www.datacenterknowledge.com/operations-and-management/7-tips-for-managing-preventive-maintenance-at-data-centers 
 - Evernex: Corrective maintenance: what is it and why is it necessary?: https://evernex.com/industry-guide/corrective-maintenance/ 
 - FGC: Effective Data Center Maintenance Strategies for Ideal Performance: https://www.fgcbuilds.com/effective-data-center-maintenance-strategies-for-ideal-performance/
 - Thomastech: Data center maintenance best practices: https://www.thomastechllc.com/articles/data-center-maintenance-best-practices 
@@ -54,7 +54,7 @@ The module also discussed key performance indicators (KPIs) used to track datace
 - Dgtl Infra: Data Center Disaster Recovery: Plan and Best Practices: https://dgtlinfra.com/data-center-disaster-recovery/ 
 - Dgtl Infra: Data Center Redundancy: N, N+1, 2N, and 2N+1 Explained: https://dgtlinfra.com/data-center-redundancy/ 
 - CoreSite: What is Data Center Redundancy? N, N+1, 2N, 2N+1: https://www.coresite.com/blog/data-center-redundancy-n-1-vs-2n-1 
-- DTUC: Understanding the 7 Tiers of Disaster Recovery: https://www.dtuc.com/blog/understanding-the-7-tiers-of-disaster-recovery 
+- DTUC: Understanding the seven Tiers of Disaster Recovery: https://www.dtuc.com/blog/understanding-the-7-tiers-of-disaster-recovery 
 - PureStorage: Without A Tiered Backup Architecture, Are You Truly Resilient?: https://blog.purestorage.com/perspectives/bounce-back-faster-with-tiered-backups-and-bunkers/ 
 - Enterprise Storage Forum: RPO and RTO: Understanding the Differences: https://www.enterprisestorageforum.com/management/rpo-and-rto-understanding-the-differences/ 
 - Rubrik: What's the Difference Between RTO and RPO?: https://www.rubrik.com/insights/rto-rpo-whats-the-difference 

@@ -18,22 +18,22 @@ quiz:
       explanation: Correct! Environment, Performance, Security, Infrastructure, Network & Connectivity, Compliance 
     - content: Access Control, generators and Battery Backups, Water Leakage, Redundancy, Digital Security 
       isCorrect: false
-      explanation: Incorrect. While access control, generators, battery backups, and water leakage are important aspects of datacenter operations, they do not encompass the full scope of monitoring. Datacenter monitoring involves tracking environmental conditions, performance metrics, security protocols, infrastructure health, network connectivity, and compliance with regulations.
+      explanation: Incorrect. While access control, generators, battery backups, and water leakage are important aspects of datacenter operations, they don't encompass the full scope of monitoring. Datacenter monitoring involves tracking environmental conditions, performance metrics, security protocols, infrastructure health, network connectivity, and compliance with regulations.
     - content: Environment, Security, Network & Connectivity, Access Control, Compliance 
       isCorrect: false
       explanation: Incorrect. This answer omits critical aspects such as performance and infrastructure monitoring. Performance monitoring is essential for ensuring that servers, storage devices, and applications are functioning optimally. Infrastructure monitoring includes power systems, cooling systems, and fire suppression systems, which are vital for maintaining continuous operation.
     - content: Performance, Infrastructure, Network & Compliance, Water Leakage, Humidity 
       isCorrect: false
-      explanation: Incorrect. This answer does not include security monitoring, which is crucial for protecting data and infrastructure from unauthorized access and cyber threats. Additionally, while water leakage and humidity are part of environmental monitoring, they do not cover the full range of environmental factors such as temperature and airflow.
+      explanation: Incorrect. This answer doesn't include security monitoring, which is crucial for protecting data and infrastructure from unauthorized access and cyber threats. Additionally, while water leakage and humidity are part of environmental monitoring, they don't cover the full range of environmental factors such as temperature and airflow.
 
   - content: What are some of the KPIs of datacenter infrastructure? 
     choices:
-    - content: CPU Utilization, Memory usage, Disk health and usage, Network throughput, Latency, Availability  
+    - content: CPU Utilization, Memory usage, Disk health, and usage, Network throughput, Latency, Availability  
       isCorrect: false
       explanation: Incorrect. These KPIs are related to the performance of IT systems rather than the infrastructure itself. Power utilization, UPS battery health, energy efficiency, cooling efficiency, and fire suppression system readiness are critical for maintaining the physical infrastructure of a datacenter.
     - content: Temperature, Humidity, Airflow, Water leakage detection 
       isCorrect: false
-      explanation: Incorrect. These KPIs are related to environmental monitoring rather than infrastructure. While important, they do not cover the broader aspects of infrastructure health such as power utilization, UPS battery health, energy efficiency, cooling efficiency, and fire suppression system readiness.
+      explanation: Incorrect. These KPIs are related to environmental monitoring rather than infrastructure. While important, they don't cover the broader aspects of infrastructure health such as power utilization, UPS battery health, energy efficiency, cooling efficiency, and fire suppression system readiness.
     - content: Network bandwidth utilization, latency, Packet loss, Network downtime, Jitter 
       isCorrect: false
       explanation: Incorrect. These KPIs are related to network performance rather than infrastructure. Infrastructure KPIs focus on the physical systems that support the datacenter, including power, cooling, and fire suppression.
@@ -45,23 +45,23 @@ quiz:
     choices:
     - content: Add high-speed connections like fiber-optic cables and optimized routing. 
       isCorrect: true
-      explanation: Incorrect. While high-speed connections and optimized routing are essential for reducing network latency, they do not directly address queuing and processing times within the datacenter. Queuing and processing times are more influenced by server design, processor performance, and software optimization.
+      explanation: Incorrect. While high-speed connections and optimized routing are essential for reducing network latency, they don't directly address queuing and processing times within the datacenter. Queuing and processing times are more influenced by server design, processor performance, and software optimization.
     - content: Implement server designs with high-performance processors, optimize software to minimize processing delays, ensure proper resource allocation. 
       isCorrect: false
       explanation: Correct. Implement server designs with high-performance processors, optimize software to minimize processing delays, ensure proper resource allocation.   
     - content: Upgrade to faster storage technologies to reduce access times and improve overall data transfer speeds.  
       isCorrect: false
-      explanation: Incorrect. Upgrading to faster storage technologies like SSDs or NVMe drives can reduce storage latency and improve data transfer speeds. However, this does not directly impact queuing and processing times, which are more related to server design, processor performance, and software optimization.
+      explanation: Incorrect. Upgrading to faster storage technologies like SSDs or NVMe drives can reduce storage latency and improve data transfer speeds. However, this doesn't directly impact queuing and processing times, which are more related to server design, processor performance, and software optimization.
     - content: Place servers closer to end-users and prioritize traffic.  
       isCorrect: false
-      explanation: Incorrect. Placing servers closer to end-users and prioritizing traffic can reduce network latency and improve the user experience. However, this approach does not address the internal queuing and processing times within the datacenter, which are influenced by server design, processor performance, and software optimization.
+      explanation: Incorrect. Placing servers closer to end-users and prioritizing traffic can reduce network latency and improve the user experience. However, this approach doesn't address the internal queuing and processing times within the datacenter, which are influenced by server design, processor performance, and software optimization.
 
   - content: What are the benefits of predictive maintenance in preventing downtime? 
     choices:
-    - content: Predictive maintenance is reactive, meaning it is performed when a failure or issue is detected. This type of maintenance involves troubleshooting, identifying the root cause of the problem, and restoring the system to its normal operation. 
+    - content: Predictive maintenance is reactive, meaning it's performed when a failure or issue is detected. This type of maintenance involves troubleshooting, identifying the root cause of the problem, and restoring the system to its normal operation. 
       isCorrect: true
       explanation: Incorrect. This describes corrective or reactive maintenance, not predictive maintenance. Corrective maintenance is performed after a failure has occurred, focusing on troubleshooting and fixing the issue. Predictive maintenance, on the other hand, aims to predict and prevent failures before they happen using data analytics and machine learning.
-    - content: Predictive maintenance is a proactive approach that involves using routine tasks designed to prevent issues before they occur. It is typically scheduled and planned well in advance.  
+    - content: Predictive maintenance is a proactive approach that involves using routine tasks designed to prevent issues before they occur. It's typically scheduled and planned well in advance.  
       isCorrect: false
       explanation: Incorrect. This describes preventive maintenance, not predictive maintenance. Preventive maintenance involves routine, scheduled tasks to prevent issues, whereas predictive maintenance uses advanced technologies to predict and address potential failures before they occur.
     - content: Predictive maintenance is a newer and more advanced concept in datacenter maintenance. It uses technology, data analytics, and machine learning to predict potential failures before they occur, allowing for proactive intervention. 
@@ -76,12 +76,12 @@ quiz:
     - content: Distance, Network infrastructure, Datacenter architecture, storage systems, congestion 
       isCorrect: true
       explanation: Correct. Distance, Network infrastructure, Datacenter architecture, storage systems, congestion
-    - content: Recovery time objective, Disaster recovery plans, backup and restore, redundancy 
+    - content: Recovery time objective, Disaster recovery plans, backup, and restore, redundancy 
       isCorrect: false
-      explanation: Incorrect. These factors are related to disaster recovery and business continuity rather than latency. Recovery time objective (RTO), disaster recovery plans, backup and restore, and redundancy are crucial for ensuring that systems can be restored quickly after a failure, but they do not directly impact the latency of data transmission and processing.
+      explanation: Incorrect. These factors are related to disaster recovery and business continuity rather than latency. Recovery time objective (RTO), disaster recovery plans, backup and restore, and redundancy are crucial for ensuring that systems can be restored quickly after a failure, but they don't directly impact the latency of data transmission and processing.
     - content: VAC, cooling systems, server health, surveillance 
       isCorrect: false
-      explanation: Incorrect. VAC (Heating, Ventilation, and Air Conditioning), cooling systems, server health, and surveillance are important for maintaining the physical environment and security of a datacenter. However, they do not directly influence latency, which is primarily affected by network infrastructure, server design, and data transmission speeds.
+      explanation: Incorrect. VAC (Heating, Ventilation, and Air Conditioning), cooling systems, server health, and surveillance are important for maintaining the physical environment and security of a datacenter. However, they don't directly influence latency, which is primarily affected by network infrastructure, server design, and data transmission speeds.
     - content: Firewall logs, Security incident response time, Access control events, Intrusion detection 
       isCorrect: false
-      explanation: Incorrect. Firewall logs, security incident response time, access control events, and intrusion detection are related to security monitoring and incident response. While they are essential for protecting the datacenter from cyber threats, they do not directly impact latency, which is influenced by factors such as network infrastructure, server performance, and data congestion.
+      explanation: Incorrect. Firewall logs, security incident response time, access control events, and intrusion detection are related to security monitoring and incident response. While they're essential for protecting the datacenter from cyber threats, they don't directly impact latency, which is influenced by factors such as network infrastructure, server performance, and data congestion.
