@@ -36,8 +36,12 @@ roles:
 products:
 - azure
 subjects:
+- architecture
+- cloud-computing
+- devops
 - infrastructure
 - platform-engineering
+- virtual-machine
 units:
 - learn.wwl.explore-microsoft-dev-box-deployment-guidelines-best-practices.introduction
 - learn.wwl.explore-microsoft-dev-box-deployment-guidelines-best-practices.review-service-components-architecture-configuration

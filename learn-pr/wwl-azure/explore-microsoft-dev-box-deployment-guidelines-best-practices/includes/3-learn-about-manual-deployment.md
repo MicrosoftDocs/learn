@@ -81,12 +81,12 @@ You'll see that you already have a default definition that you created when you 
 
 Select **Create** on the **Dev Box Definitions** tab and fill in the following configuration:
 
-1. **Name**: a name for your definition
-1. **Image**: Choose the image that you'd like to use as your base image for Dev Box machines when they're created.
-1. **Image Version**: Choose whether you want a specific version of this image from the list, or choose latest.
-1. **Compute**: Choose the CPU and RAM configuration you would like your Dev Box machines to have when they're created.
-1. **Storage**: Choose the amount of storage you would like your Dev Box machines to have when they're created.
-1. **Hibernation**: Choose whether you would like to enable hibernation support for your Dev Box machines. Hibernation is a great feature that saves power when you disconnect or close your session to the Dev Box. When your machine is in hibernation mode, you only pay for any storage you're using on the Dev Box and not for the compute. 
+- **Name**: a name for your definition
+- **Image**: Choose the image that you'd like to use as your base image for Dev Box machines when they're created.
+- **Image Version**: Choose whether you want a specific version of this image from the list, or choose latest.
+- **Compute**: Choose the CPU and RAM configuration you would like your Dev Box machines to have when they're created.
+- **Storage**: Choose the amount of storage you would like your Dev Box machines to have when they're created.
+- **Hibernation**: Choose whether you would like to enable hibernation support for your Dev Box machines. Hibernation is a great feature that saves power when you disconnect or close your session to the Dev Box. When your machine is in hibernation mode, you only pay for any storage you're using on the Dev Box and not for the compute. 
 
 Hibernation is like closing your laptop's lid at the end of your workday. When you open the laptop again all of your windows and configuration remain the same from when you finished working the previous day.
 
@@ -113,11 +113,11 @@ To create a Dev Box pool, navigate to your **Dev Box project** that you created 
 
 You can also choose which region you'd like the Dev Box to be created in. It's advisable to create the Dev Box in a region closest to where your developers will connect from, thus reducing any latency.
 
-1. **Enable Single Sign-on**: Choose whether you'd like single sign-on for your Dev Box machines.
-1. **Dev Box Creator Privileges**: Choose whether developers will receive local admin privileges or Standard User privileges upon creation of their Dev Box. It's advised to disable this, as you can use a feature called ‘Team Customizations' to install packages or extensions in a safe and controlled way later in this course.
-1. **Enable auto-stop on schedule**: Choose whether you would like to enable auto-stop or not. You can enable this or choose a schedule of when your Dev Box machines power off at certain times. These settings help you control compute costs.
-1. **Enable hibernate on disconnect**: Choose whether you would like your Dev Box machines to hibernate. You can also choose how long you want to wait after disconnection, for the machine to hibernate. This option again will help you reduce compute costs.
-1. **Licensing**: Confirm you have the required licenses for the image chosen in the definition created, for example Windows 11.
+- **Enable Single Sign-on**: Choose whether you'd like single sign-on for your Dev Box machines.
+- **Dev Box Creator Privileges**: Choose whether developers will receive local admin privileges or Standard User privileges upon creation of their Dev Box. It's advised to disable this, as you can use a feature called ‘Team Customizations' to install packages or extensions in a safe and controlled way later in this course.
+- **Enable auto-stop on schedule**: Choose whether you would like to enable auto-stop or not. You can enable this or choose a schedule of when your Dev Box machines power off at certain times. These settings help you control compute costs.
+- **Enable hibernate on disconnect**: Choose whether you would like your Dev Box machines to hibernate. You can also choose how long you want to wait after disconnection, for the machine to hibernate. This option again will help you reduce compute costs.
+- **Licensing**: Confirm you have the required licenses for the image chosen in the definition created, for example Windows 11.
 
 :::image type="content" border="true" source="../media/create-dev-box-pool.png" alt-text="Screenshot of Dev Box pool creation.":::
 
