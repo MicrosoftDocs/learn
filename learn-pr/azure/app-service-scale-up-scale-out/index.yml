@@ -10,13 +10,13 @@ metadata:
   ms.service: azure-app-service
   manager: susanpotter
 title: Scale an App Service web app to efficiently meet demand with App Service scale up and scale out
-summary: Respond to periods of increased activity by incrementally increasing the resources available and then, to reduce costs, decreasing these resources when activity drops.
+summary: Respond to periods of increased activity by incrementally increasing the resources available. Then decreasing these resources when activity drops to reduce costs.
 abstract: |
-  In this module, you will:
+  In this module, you'll:
   - Scale a web app in and out manually.
   - Scale a web app up and down.
 prerequisites: |
-  - Navigate the Azure portal.
+  - Able to navigate the Azure portal.
   - Use the Azure portal to create a new App Service web app.
 iconUrl: /training/achievements/app-service-scale-up-scale-out.svg
 levels:
