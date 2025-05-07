@@ -15,15 +15,15 @@ In this section, you:
 
 ## The meeting
 
-The entire Tailspin web team is gathered together. In [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), the team planned their tasks for the current sprint. Each task relates to building their release pipeline for the *Space Game* website.
+The entire Tailspin web team is gathered together. In [Create a release pipeline in Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), the team planned their tasks for the current sprint. Each task relates to building their release pipeline for the *Space Game* website.
 
 Recall that the team decided on these five tasks for their sprint:
 
-- Create a multistage pipeline.
-- Connect the web app to a database.
-- Automate quality tests.
-- Automate performance tests.
-- Improve release cadence.
+- Create a multistage pipeline
+- Connect the web app to a database
+- Automate quality tests
+- Automate performance tests
+- Improve release cadence
 
 The team meets to talk about the first task, *Create a multistage pipeline*. After the team defines the pipeline, it can move from its basic proof of concept to a release pipeline that includes more stages, quality checks, and approvals.
 
@@ -76,11 +76,11 @@ In Azure Pipelines, **use a condition to run** task or job based on the state of
 Remember, some of the conditions that you can specify are:
 
 > [!div class="checklist"]
-> - Only when all previous dependent tasks have succeeded.
-> - Even if a previous dependency has failed, unless the run was canceled.
-> - Even if a previous dependency has failed, even if the run was canceled.
-> - Only when a previous dependency has failed.
-> - Some custom condition.
+> - Only when all previous dependent tasks have succeeded
+> - Even if a previous dependency has failed, unless the run was canceled
+> - Even if a previous dependency has failed, even if the run was canceled
+> - Only when a previous dependency has failed
+> - Some custom condition
 
 Here's a basic example:
 
@@ -151,7 +151,7 @@ Mara adds the *Test* stage to her drawing on the whiteboard.
 
 **Mara:** That sounds good. We can always manually trigger the process as well if we need to. For example, we can trigger it if we need you to verify an important bug fix right away.
 
-Mara updates her drawing to show that the build moves from the *Dev* stage to the *Test* stage at 3 A.M. each morning.
+Mara updates her drawing to show that the build moves from the *Dev* stage to the *Test* stage at 3 A.M. each day.
 
 :::image type="content" source="../media/2-add-test-stage-schedule.png" alt-text="Diagram that shows the whiteboard showing Build, Dev, and Test stages. The schedule promotes the change from Dev to Test at 3 A.M. each morning.":::
 
@@ -170,7 +170,7 @@ CI and PR triggers let you control which branches participate in the overall pro
 
 ### What are scheduled triggers?
 
-A *scheduled trigger* uses [cron syntax](/azure/devops/pipelines/process/scheduled-triggers?azure-portal=true&tabs=yaml#supported-cron-syntax) to cause a build to run on a defined schedule.
+A *scheduled trigger* uses [cron syntax](/azure/devops/pipelines/process/scheduled-triggers?azure-portal=true&tabs=yaml#cron-syntax) to cause a build to run on a defined schedule.
 
 On Unix and Linux systems, cron is a popular way to schedule jobs to run on a set time interval or at a specific time. In Azure Pipelines, scheduled triggers use the cron syntax to define when a stage runs.
 
@@ -265,7 +265,7 @@ Mara updates her drawing to show that the build moves from *Test* to *Staging* o
 
 A *release approval* is a way to pause the pipeline until an approver accepts or rejects the release. To define your release workflow, you can combine approvals, conditions, and triggers.
 
-Recall that in [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you defined an environment in your pipeline configuration to represent your deployment environment. Here's an example from your existing pipeline:
+Recall that in [Create a release pipeline in Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you defined an environment in your pipeline configuration to represent your deployment environment. Here's an example from your existing pipeline:
 
 [!code-yml[](code/2-azure-pipelines.yml?highlight=8)]
 
@@ -316,7 +316,7 @@ Finally, we test only one release at a time. We never change releases in the mid
 
 You just saw the team design a pipeline that takes their app all the way from build to staging. The whole point of this pipeline isn't just to make their lives easier. It's to ensure the quality of the software they're delivering to their customers.
 
-How do you measure the quality of your release process? The quality of your release process can't be measured directly. What you can measure is how well your process works. If you're constantly changing the process, it might be an indication that there's something wrong. Releases that fail consistently at a particular point in the pipeline might also indicate that there's a problem with the release process.
+How do you measure the quality of your release process? You can't measure it directly. What you can measure is how well your process works. If you're constantly changing the process, it might be an indication that there's something wrong. Releases that fail consistently at a particular point in the pipeline might also indicate that there's a problem with the release process.
 
 Do the releases always fail on a particular day or time? Do they always fail after you deploy to a particular environment? Look for these and other patterns to see if some aspects of the release process are dependent or related.
 
@@ -324,8 +324,10 @@ A good way to keep track of your release process quality is to create visualizat
 
 When you want to measure the quality of a release itself, you can perform all kinds of checks within the pipeline. For example, you can execute different types of tests, such as load tests and UI tests while running your pipeline.
 
-Using a quality gate is also a great way to check the quality of your release. There are many different quality gates. For example, work item gates can verify the quality of your requirements process. You can also add more security and compliance checks. For example, do you comply with the four-eyes principle or do you have the proper traceability?
+Using a quality gate is also a great way to check the quality of your release. There are many different quality gates. For example, work item gates can verify the quality of your requirements process.
+
+You can also add more security and compliance checks. For example, do you comply with the four-eyes principle or do you have the proper traceability?
 
 As you progress through this learning path, you see many of these techniques put into practice.
 
-Lastly, when you design a quality release process, think about what kind of documentation or release notes that you need to provide to the user. Keeping your documentation current can be difficult. You might want to consider using a tool, such as the [Azure DevOps Release Notes Generator](/samples/azure-samples/azure-devops-release-notes/azure-devops-release-notes-generator/?azure-portal=true). The generator is a function app that contains an HTTP-triggered function. By using Azure Blob Storage, it creates a Markdown file whenever a new release is created in Azure DevOps.
+Lastly, when you design a quality release process, think about what kind of documentation or release notes that you need to provide to the user. Keeping your documentation current can be difficult. You might want to consider using a tool, such as the [Azure DevOps Release Notes Generator](/samples/azure-samples/azure-devops-release-notes/azure-devops-release-notes-generator/?azure-portal=true), which is a function app that contains an HTTP-triggered function. By using Azure Blob Storage, it creates a Markdown file whenever a new release is created in Azure DevOps.
