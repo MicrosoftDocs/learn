@@ -1,7 +1,7 @@
 ### Set up environment
 
 > [!NOTE]
-> To complete this exercise, you will need a [Microsoft Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative access.
+> To complete this exercise, you'll need a [Microsoft Azure subscription](https://azure.microsoft.com/free?azure-portal=true) in which you have administrative access.
 
 To set up the lab environment for this exercise, sign into your Azure subscription and follow these instructions to provision your Azure resources:
 

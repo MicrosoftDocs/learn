@@ -34,7 +34,7 @@ quiz:
       explanation: "Correct. Setting the ``indexingMode`` property to ``none`` disables all indexing."
     - content: "``excludedPaths``"
       isCorrect: false
-      explanation: "Incorrect. The ``excludedPaths`` property determines which paths are excluded from the index, not whether the indexer will run."
+      explanation: "Incorrect. The ``excludedPaths`` property determines which paths are excluded from the index, not whether the indexer runs."
     - content: "``automatic``"
       isCorrect: false
       explanation: "Incorrect. Disabling ``automatic`` indexing using a boolean value of ``false`` doesn't disable all indexing for the container."
