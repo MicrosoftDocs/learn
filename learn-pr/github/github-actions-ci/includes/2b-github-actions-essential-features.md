@@ -168,7 +168,14 @@ steps:
 
 You can add protection rules for environments defined for your GitHub repository.
 
-To add an environment, in your repository click on **Settings** and then **Environment** on the left panel. You then use the **New Environment** button to add and configure an environment and add protections.
+To add an environment, in your repository:
+
+1. Click on **Settings**
+   
+3. Click on **Environment** on the left panel.
+   
+5. Use the **New Environment** button to add and configure an environment and add protections.
+   
 
 ### About environments
 
