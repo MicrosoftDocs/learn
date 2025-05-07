@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.search-organize-repository-history-github.4-knowledge-check
+uid: learn.github.search-organize-repository-history-github.6-knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
@@ -47,3 +47,25 @@ quiz:
     - content: "Add a comment to the bug report that links the pull request to it using the #ID syntax."
       isCorrect: false
       explanation: "This linking is a good practice as it provides transparency to the issue author and anyone who might end up working on it."
+  - content: "Which of the following is a valid reason to pin an issue in your repository?"
+    choices:
+    - content: "To prevent the issue from being edited by other users."
+      isCorrect: false
+      explanation: "Pinning doesn’t affect edit permissions; it simply highlights the issue."
+    - content: "To keep high-priority or frequently referenced issues at the top of the Issues tab."
+      isCorrect: true
+      explanation: "Pinning helps improve visibility for important issues."
+    - content: "To automatically assign the issue to the repository owner."
+      isCorrect: false
+      explanation: "Pinning does not assign or automate ownership."
+  - content: "Which keyword in a pull request description will automatically close a linked issue when the pull request is merged?"
+    choices:
+    - content: "`#42 linked`"
+      isCorrect: false
+      explanation: "The correct syntax includes a keyword like `Fixes` followed by the issue number."
+    - content: "`Fixes #42`"
+      isCorrect: true
+      explanation: "`Fixes #42` is one of the supported keywords that automatically closes the linked issue."
+    - content: "`Update issue 42`"
+      isCorrect: false
+      explanation: "This does not follow the recognized keyword format used by GitHub."

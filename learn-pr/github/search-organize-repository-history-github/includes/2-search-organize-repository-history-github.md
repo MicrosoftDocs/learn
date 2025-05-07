@@ -12,7 +12,7 @@ There are two search methods available on GitHub: the global search at the top o
 
 ### Global search
 
-The global search lets you use [the complete search syntax](https://docs.github.com/enterprise-cloud@latest/search-github/searching-on-github?azure-portal=true) to search across all of GitHub.
+The global search lets you use [the complete search syntax](https://docs.github.com/enterprise-cloud@latest/search-github/searching-on-github) to search across all of GitHub.
 
 ![A screenshot of a search across GitHub.](../media/2-global-search.png)
 

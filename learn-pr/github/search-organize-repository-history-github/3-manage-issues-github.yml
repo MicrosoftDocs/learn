@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.github.search-organize-repository-history-github.3-manage-issues-github
+title: Manage issues in GitHub
+metadata:
+  title: How to manage issues in GitHub
+  description: "Learn how to create branches, assign, pin, and manage issues effectively in GitHub."
+  ms.date: 05/07/2025
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-manage-issues-github.md)]

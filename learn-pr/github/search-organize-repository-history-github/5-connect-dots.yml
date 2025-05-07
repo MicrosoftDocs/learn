@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.search-organize-repository-history-github.3-connect-dots
+uid: learn.github.search-organize-repository-history-github.5-connect-dots
 title:  Exercise - Connect the dots in a GitHub repository
 metadata:
   title:  Exercise - Connect the dots in a GitHub repository
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 24
 content: |
-  [!include[](includes/3-connect-dots.md)]
+  [!include[](includes/5-connect-dots.md)]
