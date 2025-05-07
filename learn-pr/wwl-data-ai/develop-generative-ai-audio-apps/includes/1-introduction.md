@@ -1,3 +1,3 @@
-Generative AI models enable you to develop chat-based applications that reason over and respond to input. Often this input takes the form of a text-based prompt, but increasingly multimodal models that can respond to visual input are becoming available.
+Generative AI models make it possible to build intelligent chat-based applications that can understand and reason over input. Traditionally, text input is the primary mode of interaction with AI models, but multimodal models are increasingly becoming available. These models make it possible for chat applications to respond to audio input as well as text.
 
-In this module, we'll discuss vision-enabled generative AI and explore how you can use Azure AI Foundry to create generative AI solutions that respond to prompts that include a mix of text and image data.
+In this module, we'll discuss audio-enabled generative AI and explore how you can use Azure AI Foundry to create generative AI solutions that respond to prompts that include a mix of text and audio data.
