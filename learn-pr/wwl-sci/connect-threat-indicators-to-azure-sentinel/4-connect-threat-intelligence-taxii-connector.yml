@@ -4,12 +4,12 @@ title: Connect the threat intelligence TAXII connector
 metadata:
   title: Connect the threat intelligence TAXII connector
   description: "Connect the threat intelligence TAXII connector"
-  ms.date: 06/27/2022
-  author: wwlpublish
+  ms.date: 05/06/2025
+  author: KenMAG
   ms.author: kelawson
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-connect-threat-intelligence-taxii-connector.md)]
+  [!include[](includes/4-connect-threat-intelligence-taxii-connector.md)]

@@ -5068,6 +5068,14 @@
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/detect-analyze-recognize-faces/3-understand-considerations-for-face-analysis.yml",
       "redirect_url": "/training/modules/detect-analyze-recognize-faces/5-understand-considerations-for-face-analysis"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/classify-images/4-train-image-classifier.yml",
+      "redirect_url": "/training/modules/classify-images/4-use-trained-image-classifier"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-objects-images/4-consider-options-for-labeling-images.yml",
+      "redirect_url": "/training/modules/detect-objects-images/4-use-trained-detector"
     }
   ]
 }

@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Knowledge check
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 12/05/2023
+  ms.date: 05/06/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -36,4 +36,4 @@ quiz:
     - content: "Transliterate"
       isCorrect: true
       explanation: "Correct. Transliteration converts text from one script to another."
-
+
