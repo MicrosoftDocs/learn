@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.understand-purpose-evolution-datacenters.datacenters-size
+title: Megawatts or Square feet?
+metadata:
+  title: Megawatts or Square feet?
+  description: Learn about the size of datacenters.
+  ms.date: 05/06/2025
+  author: kiranchandratrey
+  ms.author: elenasim
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+ [!include[](../includes/unit-banner.md)]
+ [!include[](includes/datacenters-size.md)]

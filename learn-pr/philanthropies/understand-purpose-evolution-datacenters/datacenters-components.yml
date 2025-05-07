@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.understand-purpose-evolution-datacenters.datacenters-components
+title: Datacenter components
+metadata:
+  title: Datacenter Components
+  description: Learn about the datacenter components.
+  ms.date: 05/06/2025
+  author: kiranchandratrey
+  ms.author: elenasim
+  ms.topic: unit
+durationInMinutes: 5
+content: |
+ [!include[](../includes/unit-banner.md)]
+ [!include[](includes/datacenters-components.md)]

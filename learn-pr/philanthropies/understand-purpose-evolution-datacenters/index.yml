@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.philanthropies.understand-purpose-evolution-datacenters
+metadata:
+ title: Understand the purpose and evolution of datacenters
+ description: In this module, you'll learn the basics of datacenters—what they are, why they exist, and their critical role in modern IT infrastructure. We'll explore the evolution of datacenters from mainframes to the cloud and look at different types, such as enterprise, colocation, cloud, and edge datacenters. You'll also discover the core components that make up a datacenter, including power supply, cooling, security. By the end, you'll have a clear understanding of the purpose and structure of datacenters.
+ ms.date: 05/06/2025
+ author: kiranchandratrey
+ ms.author: elenasim
+ ms.topic: module-standard-task-based
+title: Understand the purpose and evolution of datacenters
+summary: |
+    [!include[](../includes/module-banner.md)]
+    This module covers the basics of datacenters—what they are, why they exist, and their critical role in modern IT infrastructure.
+abstract: |
+    - Understand what data and a datacenter are, why data matters, and why datacenters exist.
+    - Identify the historical evolution of datacenters from mainframes to the cloud.
+    - Recognize the different types of datacenters and their use cases.
+    - Understand the core components of a datacenter.
+prerequisites: |
+    -	Basic familiarity with computers.
+    -	Basic understanding of IT infrastructure and data management.
+iconUrl: /training/achievements/understand-purpose-evolution-datacenters.svg
+levels:
+- beginner
+roles:
+- business-user
+- data-engineer
+- developer
+- higher-ed-educator
+- school-leader
+- student
+products:
+- azure
+units:
+- learn.philanthropies.understand-purpose-evolution-datacenters.introduction
+- learn.philanthropies.understand-purpose-evolution-datacenters.datacenters-exist-reason
+- learn.philanthropies.understand-purpose-evolution-datacenters.datacenters-type
+- learn.philanthropies.understand-purpose-evolution-datacenters.datacenters-components
+- learn.philanthropies.understand-purpose-evolution-datacenters.datacenters-history
+- learn.philanthropies.understand-purpose-evolution-datacenters.datacenters-industry-market
+- learn.philanthropies.understand-purpose-evolution-datacenters.datacenters-size
+- learn.philanthropies.understand-purpose-evolution-datacenters.check
+- learn.philanthropies.understand-purpose-evolution-datacenters.summary
+badge:
+  uid: learn.philanthropies.understand-purpose-evolution-datacenters.badge

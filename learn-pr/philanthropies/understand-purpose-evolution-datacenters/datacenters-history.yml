@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.understand-purpose-evolution-datacenters.datacenters-history
+title: History of datacenters
+metadata:
+  title: History of Datacenters
+  description: Learn about the history of datacenters.
+  ms.date: 05/06/2025
+  author: kiranchandratrey
+  ms.author: elenasim
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+ [!include[](../includes/unit-banner.md)]
+ [!include[](includes/datacenters-history.md)]
