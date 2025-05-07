@@ -16,17 +16,17 @@ durationInMinutes: 2
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the purpose of the Azure AI Vision service?"
+  - content: "What is the purpose of the Azure AI Vision Computer Vision service?"
     choices:
     - content: "To provide functionality for audio transcription"
       isCorrect: false
-      explanation: "Incorrect. The Azure AI Vision service is designed to extract information from images, not audio."
+      explanation: "Incorrect. The Azure AI Vision Computer Vision service is designed to extract information from images, not audio."
     - content: "To extract information from images"
       isCorrect: true
       explanation: "The Azure AI Vision service is designed to help you extract information from images through various functionalities."
     - content: "To detect the presence and location of specific sounds within an audio file"
       isCorrect: false
-      explanation: "Incorrect. The Azure AI Vision service is designed to extract information from images, not audio."
+      explanation: "Incorrect. The Azure AI Vision Computer Vision service is designed to extract information from images, not audio."
   - content: "You want to use the Azure AI Vision Analyze Image function to generate an appropriate caption for an image. Which visual feature should you specify?"
     choices:
     - content: "Tags"
