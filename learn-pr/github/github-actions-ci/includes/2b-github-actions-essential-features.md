@@ -191,7 +191,7 @@ Environment deployment protection rules require specific conditions to pass befo
 
     You also have the option to prevent self-reviews for deployments to protected environments. If you enable this setting, users who initiate a deployment cannot approve the deployment job, even if they are a required reviewer. This ensures that deployments to protected environments are always reviewed by more than one person.
 
-    For more information on reviewing jobs that reference an environment with required reviewers, see Reviewing deployments.
+    For more information on reviewing jobs that reference an environment with required reviewers, see [Reviewig deployments](https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-deployments/reviewing-deployments#bypassing-environment-protection-rules).
 
 **2.** Wait timer projection rules: You can use a wait timer protection rule to delay a job for a specific amount of time after the job is initially triggered before the environment deployment is allowed to proceed. The time (in minutes) must be an integer between 1 and 43,200 (30 days).The wait time will not count towards your billable time.
 
