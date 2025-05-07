@@ -6,14 +6,14 @@ metadata:
   description: Knowledge check
   author: ivorb
   ms.author: berryivor
-  ms.date: 11/5/2024
+  ms.date: 05/05/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 azureSandbox: false
 sandbox: false
 labModal: false
-durationInMinutes: 5
+durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
@@ -32,11 +32,11 @@ quiz:
     choices:
     - content: "Create a JSON file containing bounding box coordinates."
       isCorrect: false
-      explanation: "That's incorrect. To take advantage of the smart labeler, tag some images and train an initial model. Subsequently, the portal will suggest tags for new images."
+      explanation: "That's incorrect. To take advantage of the smart labeler, tag some images and train an initial model. Then, the portal will suggest tags for new images."
     - content: "Tag some images with objects of each class and train an initial object detection model."
       isCorrect: true
-      explanation: "That's correct. To take advantage of the smart labeler, tag some images and train an initial model. Subsequently, the portal will suggest tags for new images."
+      explanation: "That's correct. To take advantage of the smart labeler, tag some images and train an initial model. Then, the portal will suggest tags for new images."
     - content: "Train an image classification (multilabel) model."
       isCorrect: false
-      explanation: "That's incorrect. To take advantage of the smart labeler, tag some images and train an initial model. Subsequently, the portal will suggest tags for new images."
-
+      explanation: "That's incorrect. To take advantage of the smart labeler, tag some images and train an initial model. Then, the portal will suggest tags for new images."
+

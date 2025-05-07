@@ -1,9 +1,10 @@
-You should have learned how to connect Threat Intelligence Indicators to the Microsoft Sentinel workspace using the provided data connectors.
+You learned how to connect Threat Intelligence Indicators to the Microsoft Sentinel workspace using the provided data connectors.
 
 You should now be able to:
 
-- Configure the TAXII connector in Microsoft Sentinel
-- Configure the Threat Intelligence Platform connector in Microsoft Sentinel
+- Configure the Defender Threat Intelligence connector in Microsoft Sentinel
+- Configure the TAXII connector in Microsoft SentinelPlatforms connector
+- Configure the Threat Intelligence Upload API in Microsoft Sentinel
 - View threat indicators in Microsoft Sentinel
 
 ## Learn more
