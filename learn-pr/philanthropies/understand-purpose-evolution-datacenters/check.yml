@@ -39,7 +39,7 @@ quiz:
       explanation: Incorrect. VMs and containers are software-defined computing units that optimize resource utilization by running multiple isolated applications on a single physical server. However, they rely on the underlying physical servers to provide the necessary computational power, data processing, and application hosting capabilities. VMs and containers enhance the efficiency and flexibility of servers but aren't the backbone themselves.
     - content: Operating Systems (OS)
       isCorrect: false
-      explanation: Incorrect. Operating systems are critical software that manage hardware resources and provide services for applications. They enable servers to run applications and manage resources effectively. However, the OS itself isn't the backbone of a datacenter; it's the servers that provide the physical infrastructure for computations, data processing, and application hosting, with the OS facilitating these processes.
+      explanation: Incorrect. Operating systems are critical software packages that manage hardware resources and provide services for applications. They enable servers to run applications and manage resources effectively. However, the OS itself isn't the backbone of a datacenter; it's the servers that provide the physical infrastructure for computations, data processing, and application hosting, with the OS facilitating these processes.
   - content: The rise of software-defined datacenters (SDDCs) in the 2010s allowed for greater flexibility, automation, and scalability in managing infrastructure.
     choices:
     - content: Yes, the statement is true.
