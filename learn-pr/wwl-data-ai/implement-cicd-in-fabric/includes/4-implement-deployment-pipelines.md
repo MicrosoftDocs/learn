@@ -17,7 +17,7 @@ Follow these steps to create a deployment pipeline:
 3. Define, and name the stages in your pipeline. Then select **Create and continue.**
 
     :::image type="content" source="../media/create-stages.png" alt-text="Screenshot of pipeline stage selector." :::
-4. Assign a workspace to a stage. The select the green check mark next to the stage. Then you're ready to deploy content to the pipeline.
+4. Assign a workspace to a stage. Then select the green check mark next to the stage. Then you're ready to deploy content to the pipeline.
 
     :::image type="content" source="../media/assign-workspace.png" alt-text="Screenshot of workspace assignment interface." :::
 
