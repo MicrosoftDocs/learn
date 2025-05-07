@@ -109,3 +109,4 @@ Suppose your application is write-heavy and only ever does point reads using the
   "indexingMode": "none",
 }
 ```
+
