@@ -1,6 +1,6 @@
 To develop a client app that engages in audio-based chats with a multimodal model, you can use the same basic techniques used for text-based chats. You require a connection to the endpoint where the model is deployed, and you use that endpoint to submit prompts that consists of messages to the model and process the responses.
 
-The key difference is that prompts for a audio-based chat include multi-part user messages that contain both a *text* content item and an *audio* content item.
+The key difference is that prompts for an audio-based chat include multi-part user messages that contain both a *text* content item and an *audio* content item.
 
 ![Diagram of a multi-part prompt being submitted to a model.](../media/multi-part-prompt.png)
 
