@@ -7,6 +7,7 @@ metadata:
  author: kiranchandratrey
  ms.author: elenasim
  ms.topic: module-standard-task-based
+ ms.service: artificial-intelligence
 title: Understand the purpose and evolution of datacenters
 summary: |
     This module covers the basics of datacenters—what they are, why they exist, and their critical role in modern IT infrastructure.
