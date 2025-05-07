@@ -12,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-connect-threat-intelligence-upload-api-connector.md)]
+  [!include[](includes/5-connect-threat-intelligence-upload-api-connector.md)]
