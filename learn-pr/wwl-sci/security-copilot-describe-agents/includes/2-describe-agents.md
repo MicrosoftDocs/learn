@@ -30,9 +30,9 @@ To access the full list of available agents, select Agents from the home menu. C
 
 Security Copilot includes agents that are seamlessly integrated with Microsoft security solutions. Microsoft agents include:
 
+- **Threat Intelligence Briefing Agent**: Curates relevant threat intelligence based on an organization's attributes and exposure.
 - **Conditional Access Optimization Agent**: Embedded in Microsoft Entra, the  Conditional Access optimization agent ensures all users are protected by policy. It recommends policies and changes based on best practices aligned with Zero Trust and Microsoft's learnings. In preview, the agent evaluates policies requiring multifactor authentication (MFA), enforces device based controls (device compliance, app protection policies, and Domain Joined Devices), and blocks legacy authentication and device code flow.
 - **Phishing Triage Agent**: Embedded in Microsoft Defender, the Phishing Triage Agent helps security operations analysts to triage and classify user-submitted phishing incidents. The agent operates autonomously, provides a transparent rationale for its classification verdicts in natural language, and continuously learns and improves its accuracy based on feedback provided by analysts.
-- **Threat Intelligence Briefing Agent**: Curates relevant threat intelligence based on an organization's attributes and exposure.
 
 This list isn't all-inclusive. More Microsoft agents are planned.
 
