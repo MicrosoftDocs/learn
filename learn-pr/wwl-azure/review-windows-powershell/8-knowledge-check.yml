@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.review-windows-powershell.knowledge-check
-title: Module assessment
+title: Knowledge check
 metadata:
-  title: Module assessment
+  title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/15/2024
+  ms.date: 05/07/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
