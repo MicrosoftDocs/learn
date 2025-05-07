@@ -20,18 +20,18 @@ quiz:
     choices:
     - content: "To provide reporting and auditing of virtual machines in your Azure subscriptions"
       isCorrect: false
-      explanation: "Incorrect. The Azure AI Vision Computer Vision service does not audit virtual machines."
+      explanation: "Incorrect. The Azure AI Vision Computer Vision service doesn't audit virtual machines."
     - content: "To extract information about visual features in images"
       isCorrect: true
       explanation: "Correct. The Azure AI Vision service is designed to help you extract information from images."
     - content: "To support video conferencing and web-cam communication"
       isCorrect: false
-      explanation: "Incorrect. The Azure AI Vision Computer Vision service is not designed for web-cam and video conferencing management."
+      explanation: "Incorrect. The Azure AI Vision Computer Vision service isn't designed for web-cam and video conferencing management."
   - content: "You want to use the Azure AI Vision Computer Vision service to generate suggested text descriptions for an image. Which visual feature should you specify?"
     choices:
     - content: "Tags"
       isCorrect: false
-      explanation: "Incorrect. Tags are individual categries that you can apply to images - not descriptions."
+      explanation: "Incorrect. Tags are individual categories that you can apply to images - not descriptions."
     - content: "DenseCaptions"
       isCorrect: true
       explanation: "Correct. To generate a list of captions, include the DenseCaptions visual feature in your analysis."
