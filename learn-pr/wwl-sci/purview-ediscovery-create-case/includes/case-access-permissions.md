@@ -8,7 +8,7 @@ After role group assignment, you can add them to individual cases. Being added t
 
 To add users to a case:
 
-1. Go to the [Microsoft Purview portal](https://purview.microsoft.com) and sign in with eDiscovery permissions.
+1. Go to the [Microsoft Purview portal](https://purview.microsoft.com?azure-portal=true) and sign in with eDiscovery permissions.
 1. Navigate to **Solutions** > **eDiscovery** > **Cases**.
 1. Select a case, then open **Case settings**.
 
@@ -32,7 +32,7 @@ To remove users:
 
 You can invite external users to participate in a case as guests. This is useful when external reviewers, such as legal counsel, need access.
 
-Guest access must first be enabled in your environment. For more information, see [Enable guest access in eDiscovery](/purview/edisc-settings-guest-users).
+Guest access must first be enabled in your environment. For more information, see [Enable guest access in eDiscovery](/purview/edisc-settings-guest-users?azure-portal=true).
 
 Once enabled, follow these steps to invite a guest:
 

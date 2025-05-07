@@ -1,2 +1,15 @@
-Manage case access and permissions
-6 mins
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ediscovery-create-case.case-access-permissions
+title: Manage case access and permissions
+metadata:
+  title: Manage case access and permissions
+  description: "Manage case access and permissions."
+  ms.date: 05/09/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/case-access-permissions.md)]

@@ -1,2 +1,15 @@
-Create an manage an eDiscovery case
-7 mins
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ediscovery-create-case.create-manage-ediscovery-case
+title: Create and manage eDiscovery cases
+metadata:
+  title: Create and manage eDiscovery cases
+  description: "Create and manage eDiscovery cases."
+  ms.date: 05/09/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/create-manage-ediscovery-case.md)]

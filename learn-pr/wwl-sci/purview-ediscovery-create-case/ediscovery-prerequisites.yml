@@ -1,2 +1,15 @@
-Understand prerequisites for creating a case
-8 mins
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ediscovery-create-case.ediscovery-prerequisites
+title: Configure eDiscovery prerequisites
+metadata:
+  title: Configure eDiscovery prerequisites
+  description: "Configure eDiscovery prerequisites."
+  ms.date: 05/09/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/ediscovery-prerequisites.md)]
