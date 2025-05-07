@@ -28,7 +28,7 @@ This example is using the `github.ref` context to check the branch that triggere
 
 <!-- INFOMAGNUS UPDATES for sub OD 1.4.2 go here. Source Material: https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs --> 
 
-## Identify the available contextual information in a workflow
+## The contextual information available in a workflow
 
 Different contexts are available throughout a workflow run. For example, the secrets context may only be used at certain places within a job.
 
