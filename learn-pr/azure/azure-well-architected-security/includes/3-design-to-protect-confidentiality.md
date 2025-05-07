@@ -61,15 +61,15 @@ Sensitive data includes configuration information that's used to gain further ac
 
 *Contoso's challenge*
 
-- Contoso Rise Up takes per-tenant backups of the PostgreSQL databases using the built-in point-in-time restores. Additionally, for added assurances they make one transactionally consistent backup per day to an isolated storage account for full disaster recovery preparedness.
+- Contoso Rise Up backs up each PostgreSQL database by using the built-in point-in-time restores. To be safe, they also make a daily backup that's consistent and store it separately in a storage account.
 
-- The storage account used for DR is restricted with just-in-time access and few Microsoft Entra ID accounts are allowed to access it.
-- During a recovery drill, an employee went through the process to access a backup, and accidentally copied a backup to network share in the Contoso organization.
-- This backup was discovered and reported to Contoso's privacy team a few months later, launching an investigation into how it was accessed between the point of the incident and the time of discovery. Luckily there was no confidentiality breach detected, and the file was deleted after the forensics and audit review was complete.
+- The disaster recovery storage account is restricted with just-in-time access and only a few Microsoft Entra ID accounts can access it.
+- During a recovery drill, an employee tried to access a backup and accidentally copied the backup to network share in the Contoso organization.
+- A few months later, this backup was discovered and reported to Contoso's privacy team. They did a full investigation into how it was accessed and what happened to it up to the time when the incident was discovered. Luckily, no sensitive information was exposed, and the file was deleted after they finished their investigation and audit.
 
 *Applying the approach and outcomes*
 
-- The team has formalized a new process dictating that all backups must be encrypted at rest and the encryption keys must be secured in Key Vault.
+- The team now has a clear rule that all backups must be encrypted at rest, and the encryption keys must be secured in Azure Key Vault.
 
-- Now incidents like this will have a lower chance of privacy breach, as the data contained in the backup file would be useless without the ability to decrypt.
-- Additionally, the DR plan now includes standard guidance dictating proper handling of the backups, including how and when to safely decrypt a backup.
+- Even if a backup ends up somewhere it shouldn't, the data inside it is useless without the decryption key. So a privacy breach is much less likely.
+- The disaster recovery plan now includes standard guidance about how to properly handle backups, including how and when to safely decrypt a backup.
