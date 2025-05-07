@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 10/18/2024
+  ms.date: 05/06/2025
   author: wwlpublish
   ms.author: theresai
   ms.topic: unit
@@ -43,4 +43,4 @@ quiz:
       explanation: Incorrect. Data Control language (DCL) is used to provide granular T-SQL permissions. DML is used to manipulate data.
     - content: Column-level security in the semantic model
       isCorrect: false
-      explanation: Incorrect. There isn't column-level security in the semantic model.
+      explanation: Incorrect. There isn't column-level security in the semantic model.
