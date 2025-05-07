@@ -16,18 +16,18 @@ durationInMinutes: 2
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the purpose of the Azure AI Vision Computer Vision service?"
+  - content: "What is the purpose of Azure AI Vision Image Analysis?"
     choices:
-    - content: "To provide reporting and auditing of virtual machines in your Azure subscriptions"
+    - content: "To provide reporting and auditing of virtual machine templates in your Azure subscriptions"
       isCorrect: false
-      explanation: "Incorrect. The Azure AI Vision Computer Vision service doesn't audit virtual machines."
+      explanation: "Incorrect. Azure AI Vision Image Analysis doesn't audit virtual machines."
     - content: "To extract information about visual features in images"
       isCorrect: true
-      explanation: "Correct. The Azure AI Vision service is designed to help you extract information from images."
+      explanation: "Correct. Azure AI Vision Image Analysis is designed to help you extract information from images."
     - content: "To support video conferencing and web-cam communication"
       isCorrect: false
-      explanation: "Incorrect. The Azure AI Vision Computer Vision service isn't designed for web-cam and video conferencing management."
-  - content: "You want to use the Azure AI Vision Computer Vision service to generate suggested text descriptions for an image. Which visual feature should you specify?"
+      explanation: "Incorrect. Azure AI Vision CImage Analysis isn't designed for web-cam and video conferencing management."
+  - content: "You want to use Azure AI Vision Image Analysis to generate suggested text descriptions for an image. Which visual feature should you specify?"
     choices:
     - content: "Tags"
       isCorrect: false
