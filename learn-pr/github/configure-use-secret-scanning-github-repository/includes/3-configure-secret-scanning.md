@@ -74,3 +74,23 @@ Repository and organization administrators can give view access to security aler
 If you want to give view access to security alerts to additional people in your team, type their name in the **Search for people of teams** field, select their name in the list of matches that appear, and select **Save changes**.
 
 Alert recipients are notified according to their notification settings.
+
+## Review and manage secret protection settings
+
+After enabling secret scanning, GitHub offers additional settings to fine-tune how secrets are detected, verified, and managed:
+
+* **Validity checks** – Verifies whether exposed secrets are still active by querying the relevant provider.
+* **Non-provider patterns** – Scans for custom or non-partnered secret formats beyond the standard provider patterns.
+* **Scan for generic passwords** – Uses AI to detect weak or generic passwords in your code.
+* **Push protection** – Blocks commits containing supported secret types and prevents them from being pushed.
+
+You can also manage:
+
+* **Bypass rules** – Let specific roles or teams bypass push protection and review bypass requests.
+* **Alert dismissal rules** – Require justification before users can dismiss alerts (if enabled).
+* **Custom patterns** – Define up to 100 custom patterns to detect internal secrets.
+
+To access these options, go to **Settings > Code security and analysis > Secret Protection** on your repository or organization.
+
+> \[!NOTE]
+> These settings provide more granular control and are helpful when scaling secret scanning across multiple repositories.

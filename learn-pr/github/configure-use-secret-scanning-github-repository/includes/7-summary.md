@@ -12,6 +12,13 @@ GitHub will alert you when secrets are detected so the appropriate actions can b
 
 For private repositories, the secret scanning configuration options also enable you to exclude specific files from scans, choose the people to notify of alerts, and create custom patterns for the secrets in your project that aren't automatically detected by GitHub.
 
+In addition to secret scanning, GitHub Advanced Security offers other features to improve your software security posture:
+
+- **Dependency Graph:** Understand how your project depends on open-source libraries and get notified when vulnerable packages are detected.
+- **Dependabot Security Updates:** Automatically open pull requests that fix vulnerabilities in your dependencies.**
+- **Dependabot Version Updates:** Keep dependencies up to date with automatic PRs for the latest versions.
+- **Code Scanning:** Scan your code for security vulnerabilities and coding errors using CodeQL and other engines.
+
 With secret scanning in GitHub, you can be aware of exposed secrets and respond accordingly to protect your assets.
 
 ## Learn more
@@ -28,3 +35,7 @@ Here are some links to more information on the topics we discussed in this modul
 - [Defining custom patterns for secret scanning](https://docs.github.com/code-security/secret-scanning/defining-custom-patterns-for-secret-scanning)
 - [Learning about Hyperscan Pattern Support](http://intel.github.io/hyperscan/dev-reference/compilation.html#pattern-support)
 - [Secret scanning patterns](https://docs.github.com/code-security/secret-scanning/secret-scanning-patterns)
+- [About the dependency graph](https://docs.github.com/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph)
+- [About Dependabot security updates](https://docs.github.com/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/about-dependabot-security-updates)
+- [About Dependabot version updates](https://docs.github.com/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/about-dependabot-version-updates)
+- [About code scanning](https://docs.github.com/code-security/code-scanning/overview-of-code-scanning)
