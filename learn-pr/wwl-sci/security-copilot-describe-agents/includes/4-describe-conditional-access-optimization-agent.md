@@ -53,7 +53,7 @@ The agent runs under the Identity and permissions of the user who enabled the ag
 
 You can tailor policy to your needs using the optional Custom Instructions field. This allows you to provide a prompt to the agent as part of its execution. For example: "The user "Break Glass" should be excluded from policies created." When you save the custom instruction prompt Security Copilot will attempt to interpret and the results appear in the settings page.
 
-:::image type="content" source="../media/conditional-access-agent-settings-page.png" lightbox="../media/conditional-access-agent-settings-page.png" alt-text="Screenshot showing the Conditional Access Optimization Agent policy details page.":::
+:::image type="content" source="../media/conditional-access-agent-settings-page.png" lightbox="../media/conditional-access-agent-settings-page.png" alt-text="Screenshot showing the Conditional Access Optimization Agent settings page.":::
 
 #### Feedback
 

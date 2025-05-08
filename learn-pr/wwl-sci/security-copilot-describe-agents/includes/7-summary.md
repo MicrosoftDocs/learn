@@ -12,7 +12,9 @@ After completing this module, you are able to:
 - Describe the Phishing Triage agent.
 
 Additional Reading:  
-- [Microsoft Security Copilot Overview](https://www.microsoft.com/security/blog/2023/03/28/introducing-microsoft-security-copilot/)  
-- [Microsoft Defender Documentation](https://learn.microsoft.com/en-us/microsoft-365/security/defender/)  
-- [Microsoft Entra Documentation](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/)  
-- [Zero Trust Principles](https://www.microsoft.com/security/business/zero-trust)  
+- [Microsoft Security Copilot agents](/copilot/security/agents-security-copilot)
+- [Microsoft Security Copilot agents overview](/copilot/security/agents-overview)
+- [Microsoft Security Copilot Agents in Microsoft Defender](/defender-xdr/security-copilot-agents-defender)  
+- [Microsoft Security Copilot Phishing Triage Agent in Microsoft Defender](/defender-xdr/phishing-triage-agent)  
+- [Microsoft Security Copilot agents in Microsoft Entra](/entra/fundamentals/agents)
+- [Microsoft Entra Conditional Access optimization agent](/entra/identity/conditional-access/agent-optimization)

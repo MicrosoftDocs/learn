@@ -41,7 +41,7 @@ Follow these steps to configure the Threat Intelligence Briefing Agent:
 :::image type="content" source="../media/threat-intelligence-agent-setup2.png" lightbox="../media/threat-intelligence-agent-setup2.png" alt-text="Screenshot of Threat Intelligence Briefing Agent set up parameters page.":::
 
 # [Step 5 - Run](#tab/run)
-:::image type="content" source="../media/threat-intelligence-agent-run-first.png" lightbox="../media/threat-intelligence-agent-first-run.png" alt-text="Screenshot of Threat Intelligence Briefing Agent overview page.":::
+:::image type="content" source="../media/threat-intelligence-agent-first-run.png" lightbox="../media/threat-intelligence-agent-first-run.png" alt-text="Screenshot of Threat Intelligence Briefing Agent overview page.":::
 
 ---
 
@@ -55,12 +55,10 @@ Once the agent runs, the generated reports appear under **Activity** in the Thre
 
 Select a report to assess its content and view the agent’s progress by clicking **View activity**.
 
-:::image type="content" source="../media/8-ti-brief-agent-page.png" alt-text="Screenshot of Threat Intelligence Briefing Agent sample report.":::
-
 # [Generated reports](#tab/generated-reports)
 :::image type="content" source="../media/threat-intelligence-agent-generated-reports.png" lightbox="../media/threat-intelligence-agent-generated-reports.png" alt-text="Screenshot of Threat Intelligence Briefing Agent's list of generated reports.":::
 
-# [Report](#tab/generated-reports)
+# [Report](#tab/report)
 :::image type="content" source="../media/threat-intelligence-agent-report.png" lightbox="../media/threat-intelligence-agent-report.png" alt-text="Screenshot of a Threat Intelligence Briefing Agent report.":::
 
 # [Activity](#tab/activity)

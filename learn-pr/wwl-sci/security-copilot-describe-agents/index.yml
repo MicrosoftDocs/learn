@@ -46,4 +46,4 @@ units:
 - learn.security-copilot-describe-agents.module-assessment
 - learn.security-copilot-describe-agents.summary
 badge:
-  uid: wwl-sci.security-copilot-core-features.badge
+  uid: learn.security-copilot-describe-agents.badge
