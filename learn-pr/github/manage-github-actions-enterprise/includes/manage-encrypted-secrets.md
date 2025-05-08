@@ -121,7 +121,7 @@ Some best practices for third-party actions securely:
 
 You should have situational awareness of indicators of a trustworthy third-party action to be better able to manage risk.  The action should appear on the Github Marketplace. When you view the action's entry in the GitHub Marketplace, ensure that it shows the 'Verified creator' badge to the right of the title (highlighted red in the image below).  This indicates that the vendor has been verified by GitHub.  In addition, the `action.yml` file defining the action should be well documented.
 
-
+![Marketplace](../media/manage-encrypted-secrets_marketplace.png)
 
 ### Use Dependabot version updates to keep actions up-to-date
 
