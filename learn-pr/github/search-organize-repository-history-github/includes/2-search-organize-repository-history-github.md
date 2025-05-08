@@ -88,3 +88,40 @@ Learn more about [Autolinked references and URLs](https://docs.github.com/get-st
 Besides linking issues and commits, it's often helpful to associate other people with discussions. The easiest way to do this is by using an `@mention`. This kind of mention notifies the mentioned user so that they can participate in the discussion. It's also a good way to identify people associated with issues long after they have been closed.
 
 ![Screenshot of an @ mention.](../media/2-user-mention.png)
+
+## Save repositories with stars
+
+If you come across a repository you’d like to keep track of, you can "star" it. Starring helps you save useful repos for later, show appreciation to maintainers, and get updates in your GitHub feed.
+
+To star a repository:
+
+1. Visit the repository's main page.
+2. Select the ⭐ **Star** button in the top-right corner.
+
+You can view your starred repositories anytime by going to your GitHub profile and selecting the **Stars** tab.
+
+> \[!TIP]
+> Starred repos are also used by GitHub’s recommendation engine to suggest related content to you.
+
+## Use keyboard shortcuts to save time
+
+GitHub includes keyboard shortcuts that help you navigate faster without needing to reach for your mouse.
+
+To view available shortcuts:
+
+* Press `?` on most GitHub pages.
+
+You’ll see a full list organized by category—navigation, editing, search, and more.
+
+Here are a few helpful ones:
+
+| Shortcut  | Action                     |
+| --------- | -------------------------- |
+| `t`       | Open file finder in a repo |
+| `s`       | Focus the search bar       |
+| `g` + `i` | Go to your Issues          |
+| `g` + `p` | Go to your Pull Requests   |
+
+> \[!NOTE]
+> Keyboard shortcuts may vary slightly depending on your GitHub feature access and the current page context.
+
