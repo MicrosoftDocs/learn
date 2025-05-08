@@ -1,6 +1,6 @@
 Pipelines enable a continuous integration/continuous deployment (CI/CD) approach that ensures content is updated, tested, and regularly refreshed. Pipelines are a way to automate the movement of content through the development, test, and production stages of the content development lifecycle.
 
-## What are Fabric deployment pipelines
+## What are deployment pipelines
 
 Fabric deployment pipelines help you deploy your Fabric items across different environments like development, test, and production. They let you develop and test content in Fabric before it reaches end users.
 
