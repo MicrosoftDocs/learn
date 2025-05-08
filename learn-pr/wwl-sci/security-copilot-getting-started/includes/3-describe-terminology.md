@@ -6,7 +6,7 @@ The following terms are important for understanding the way Microsoft Security C
 
 - Session – A particular conversation within Copilot. Copilot maintains context within a session.
 - Prompt – A specific statement or question within a session. A user enters a prompt in the prompt bar.
-- Capability – A function Copilot uses to solve part of a problem.  A capability may sometimes be referred to as a skill.
+- Capability – A function Copilot uses to solve part of a problem. A capability may sometimes be referred to as a skill.
 - Plugin – A collection of capabilities by a particular resource.
 - Workspace - Copilot workspaces are separate Copilot work environments within the tenant in which your Copilot instance is operating.
 - Agents - Microsoft Security Copilot agents are AI-powered tools that autonomously manage security and IT tasks, enhancing threat response, reducing manual workloads, and improving efficiency across cybersecurity operations at scale.
@@ -34,11 +34,11 @@ A plugin for Microsoft Sentinel may have similar capabilities but runs only with
 
 Copilot currently supports plug-ins for Microsoft services and non-Microsoft services, including websites and custom plug-ins that can be enabled.
 
-:::image type="content" source="../media/microsoft-plugins-updated.png" lightbox="../media/microsoft-plugins-updated.png" alt-text="A screen capture of the plugins window, showing the Microsoft plugins, including Entra, Intune, Microsoft Defender XDR, and more.":::
+:::image type="content" source="../media/microsoft-plugins-updated.png" lightbox="../media/microsoft-plugins-updated.png" alt-text="A screen capture of the plugins window, showing the Microsoft plugins, including Microsoft Entra, Intune, Microsoft Defender XDR, and more.":::
 
 :::image type="content" source="../media/non-microsoft-plugins-updated.png" lightbox="../media/non-microsoft-plugins-updated.png" alt-text="A screen capture of the plugins window, showing the non-Microsoft plugins, including ServiceNow, Splunk, the public web, and custom plugins.":::
 
-Some plugins require setup and configuration, as depicted by the Set up button or the gear icon. For Microsoft plugins, set up may be required where resource specific information needs to be specified. For non-Microsoft sources, set up may be required for account authentication.
+Some plugins require setup and configuration, as depicted by the Setup button or the gear icon. For Microsoft plugins, set up may be required where resource specific information needs to be specified. For non-Microsoft sources, set up may be required for account authentication.
 
 ***Workspaces***
 
@@ -58,7 +58,7 @@ Workspaces are powered by capacities and each workspace must have its own capaci
 
 Using workspaces, you can efficiently map and monitor costs based on team needs and budgets, ensuring that teams have the capacity they need and resources are allocated effectively. Having workspaces also allows you to store session data according to geo-specific regulations and adhere to local data protection laws. These are just a few of the benefits of using workspaces.
 
-Refer to the training unit, "Describe workspaces", which is linked in the Summary and resource section of this module, for more information on Copilot workspaces.
+For more information, see "Describe workspaces", which is linked in the Summary and resource section of this module.
 
 ***Agents***
 
