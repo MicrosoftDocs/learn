@@ -40,6 +40,7 @@ subjects: # see subject taxonomy https://review.learn.microsoft.com/help/contrib
   - security
 units:
 - learn.security-copilot-describe-agents.introduction
+- learn.security-copilot-describe-agents.describe-security-copilot-agents
 - learn.security-copilot-describe-agents.describe-threat-intelligence-briefing-agent
 - learn.security-copilot-describe-agents.describe-conditional-access-optimization-agent  
 - learn.security-copilot-describe-agents.describe-phishing-triage-agent
