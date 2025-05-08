@@ -64,3 +64,17 @@ quiz:
     - content: "5"
       isCorrect: false
       explanation: "Each operating system is paired with each version of Node for a total of 6 builds."
+  - content: "How can you pass data between jobs in a GitHub Actions workflow?" 
+    choices:
+    - content: "By storing the data in environment variables."
+      isCorrect: false
+      explanation: "Environment variables are scoped to the job or step in which they are defined and cannot be directly shared between jobs."
+    - content: "By using the ```needs``` keyword and artifact actions."
+      isCorrect: true
+      explanation: "To share data between jobs in GitHub Actions, you can use the needs keyword to establish job dependencies and use actions/upload-artifact and actions/download-artifact to pass data between jobs."
+    - content: "By using the cache action."
+      isCorrect: false
+      explanation: "While the cache action can persist files between workflow runs, it's not designed specifically for passing data between jobs in the same workflow."
+    - content: "By defining global variables in the workflow file."
+      isCorrect: false
+      explanation: "GitHub Actions workflows don't support global variables that can be accessed across different jobs in the same workflow."
