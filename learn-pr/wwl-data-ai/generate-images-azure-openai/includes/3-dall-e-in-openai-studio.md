@@ -1,4 +1,4 @@
-To experiment with image generation models, you can create an Azure AI Foundry project (or provision an Azure OpenAI Service resource in an Azure subscription) and use the *Images playground* in Azure AI Foundry portal to submit prompts and view the resulting generated images.
+To experiment with image generation models, you can create an Azure AI Foundry project and use the *Images playground* in Azure AI Foundry portal to submit prompts and view the resulting generated images.
 
 ![A screenshot of the Images playground in Azure AI Studio.](../media/images-playground.png)
 
