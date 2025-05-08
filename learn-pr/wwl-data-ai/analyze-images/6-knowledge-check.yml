@@ -16,26 +16,26 @@ durationInMinutes: 2
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What is the purpose of the Azure AI Vision service?"
+  - content: "What is the purpose of Azure AI Vision Image Analysis?"
     choices:
-    - content: "To provide functionality for audio transcription"
+    - content: "To provide reporting and auditing of virtual machine templates in your Azure subscriptions"
       isCorrect: false
-      explanation: "Incorrect. The Azure AI Vision service is designed to extract information from images, not audio."
-    - content: "To extract information from images"
+      explanation: "Incorrect. Azure AI Vision Image Analysis doesn't audit virtual machines."
+    - content: "To extract information about visual features in images"
       isCorrect: true
-      explanation: "The Azure AI Vision service is designed to help you extract information from images through various functionalities."
-    - content: "To detect the presence and location of specific sounds within an audio file"
+      explanation: "Correct. Azure AI Vision Image Analysis is designed to help you extract information from images."
+    - content: "To support video conferencing and web-cam communication"
       isCorrect: false
-      explanation: "Incorrect. The Azure AI Vision service is designed to extract information from images, not audio."
-  - content: "You want to use the Azure AI Vision Analyze Image function to generate an appropriate caption for an image. Which visual feature should you specify?"
+      explanation: "Incorrect. Azure AI Vision Image Analysis isn't designed for web-cam and video conferencing management."
+  - content: "You want to use Azure AI Vision Image Analysis to generate suggested text descriptions for an image. Which visual feature should you specify?"
     choices:
     - content: "Tags"
       isCorrect: false
-      explanation: "Incorrect. To generate a caption, include the DenseCaptions visual feature in your analysis."
+      explanation: "Incorrect. Tags are individual categories that you can apply to images - not descriptions."
     - content: "DenseCaptions"
       isCorrect: true
-      explanation: "Correct. To generate a caption, include the DenseCaptions visual feature in your analysis."
-    - content: "Objects"
+      explanation: "Correct. To generate a list of captions, include the DenseCaptions visual feature in your analysis."
+    - content: "Read"
       isCorrect: false
-      explanation: "Incorrect. To generate a caption, include the DenseCaptions visual feature in your analysis."
+      explanation: "Incorrect. The Read visual feature is used to read text in an image, not to generate a description."
 

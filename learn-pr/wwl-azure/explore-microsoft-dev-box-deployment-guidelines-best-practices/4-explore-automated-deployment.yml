@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-microsoft-dev-box-deployment-guidelines-best-practices.explore-automated-deployment
+title: Explore automated deployment
+metadata:
+  title: Explore automated deployment
+  description: "Explore automated deployment"
+  ms.date: 05/08/2025
+  author: wwlpublish
+  ms.author: fkhan
+  ms.topic: unit
+durationInMinutes: 20
+content: |
+  [!include[](includes/4-explore-automated-deployment.md)]
