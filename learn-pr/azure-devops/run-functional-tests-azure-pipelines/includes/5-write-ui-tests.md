@@ -65,7 +65,7 @@ This diagram shows the `IWebDriver` interface and a few of the classes that impl
 
 The diagram shows three of the methods that `IWebDriver` provides: `Navigate`, `FindElement`, and `Close`.
 
-The three classes shown here, `ChromeDriver`, `FirefoxDriver`, and `EdgeDriver`, each implement `IWebDriver` and its methods. There are other classes, such as `SafariDriver`, that also implement `IWebDriver`. Each driver class can control the web browser that it represents.
+The three classes shown here—`ChromeDriver`, `FirefoxDriver`, and `EdgeDriver`—each implement `IWebDriver` and its methods. There are other classes, such as `SafariDriver`, that also implement `IWebDriver`. Each driver class can control the web browser that it represents.
 
 Andy adds a member variable named `driver` to the `HomePageTest` class, like this code:
 
@@ -224,7 +224,7 @@ private void ClickElement(IWebElement element)
 
 ### Define the test method
 
-**Andy:** Now, we're ready to define the test method. Based on the manual tests that we ran earlier, let's call this method `ClickLinkById_ShouldDisplayModalById`. It's a good practice to give test methods descriptive names that define precisely what the test accomplishes. Here, we want to click a link defined by its `id` attribute. Then we want to verify that the proper modal window appears, also by using its `id` attribute.
+**Andy:** Now, we're ready to define the test method. Based on the manual tests that we ran earlier, let's call this method `ClickLinkById_ShouldDisplayModalById`. It's a good practice to give test methods descriptive names that define precisely what the test accomplishes. Here, we want to select a link defined by its `id` attribute. Then we want to verify that the proper modal window appears, also by using its `id` attribute.
 
 Andy adds starter code for the test method:
 
@@ -238,7 +238,7 @@ public void ClickLinkById_ShouldDisplayModalById(string linkId, string modalId)
 
 **Amita:** I can handle this part. We want to:
 
-1. Locate the link by its `id` attribute and then click the link.
+1. Locate the link by its `id` attribute and select the link.
 1. Locate the resulting modal.
 1. Close the modal.
 1. Verify that the modal was displayed successfully.
@@ -283,7 +283,7 @@ public void ClickLinkById_ShouldDisplayModalById(string linkId, string modalId)
 }
 ```
 
-**Amita:** The coding looks great so far. But how do we connect this test to the `id` attributes that we collected earlier?
+**Amita:** The coding looks great so far, but how do we connect this test to the `id` attributes that we collected earlier?
 
 **Andy:** Great question. We'll handle that next.
 
@@ -291,7 +291,7 @@ public void ClickLinkById_ShouldDisplayModalById(string linkId, string modalId)
 
 **Andy:** In NUnit, you can provide data to your tests in a few ways. Here, we use the `TestCase` attribute. This attribute takes arguments that it later passes back to the test method when it runs. We can have multiple `TestCase` attributes that each test a different feature of our app. Each `TestCase` attribute produces a test case that's included in the report that appears at the end of a pipeline run.
 
-Andy adds these `TestCase` attributes to the test method. These attributes describe the **Download game** button, one of the game screens, and the top player on the leaderboard. Each attribute specifies two `id` attributes: one for the link to click and one for the corresponding modal window.
+Andy adds these `TestCase` attributes to the test method. These attributes describe the **Download game** button, one of the game screens, and the top player on the leaderboard. Each attribute specifies two `id` attributes: one for the link to select and one for the corresponding modal window.
 
 ```cs
 // Download game
@@ -306,7 +306,7 @@ public void ClickLinkById_ShouldDisplayModalById(string linkId, string modalId)
 ...
 ```
 
-**Andy:** For each `TestCase` attribute, the first parameter is the `id` attribute for the link to click on. The second parameter is the `id` attribute for the modal window that we expect to appear. You can see how these parameters correspond to the two-string arguments in our test method.
+**Andy:** For each `TestCase` attribute, the first parameter is the `id` attribute for the link to select. The second parameter is the `id` attribute for the modal window that we expect to appear. You can see how these parameters correspond to the two-string arguments in our test method.
 
 **Amita:** I do see that. With some practice, I think I can add my own tests. When can we see these tests running in our pipeline?
 
