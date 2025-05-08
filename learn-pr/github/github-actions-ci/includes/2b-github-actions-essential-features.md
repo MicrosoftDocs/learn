@@ -32,6 +32,20 @@ This example is using the `github.ref` context to check the branch that triggere
 
 Contexts allow you to access information about workflow runs, variables, runner environments, jobs, and steps.  Each context is is an object that contains properties which can be other objects or strings.  The contexts available include: `github`, `env`, `vars`, `job`, `jobs`, `steps`, `runner`, `secrets`, `strategy`, `matrix`, `needs` and `inputs`.  The table below presents these contexts with their definitions.
 
+| Context |	Description |
+:---------|:--------------------------------------------------
+github | Information about the workflow run. For more information, see github context.
+env |	Contains variables set in a workflow, job, or step. For more information, see env context.
+vars |	Contains variables set at the repository, organization, or environment levels. For more information, see vars context.
+job	|	Information about the currently running job. For more information, see job context.
+jobs |	For reusable workflows only, contains outputs of jobs from the reusable workflow. For more information, see jobs context.
+steps	|	Information about the steps that have been run in the current job. For more information, see steps context.
+runner	|	Information about the runner that is running the current job. For more information, see runner context.
+secrets	|	Contains the names and values of secrets that are available to a workflow run. For more information, see secrets context.
+strategy	|	Information about the matrix execution strategy for the current job. For more information, see strategy context.
+matrix	|	Contains the matrix properties defined in the workflow that apply to the current job. For more information, see matrix context.
+needs	|	Contains the outputs of all jobs that are defined as a dependency of the current job. For more information, see needs context.
+inputs	|	Contains the inputs of a reusable or manually triggered workflow. For more information, see inputs context.
 
 
 Different contexts are available throughout a workflow run. For example, the secrets context may only be used at certain places within a job.  In addition, you may only use some functions in certain places. For example, the `hashFiles` function is not available everywhere.
