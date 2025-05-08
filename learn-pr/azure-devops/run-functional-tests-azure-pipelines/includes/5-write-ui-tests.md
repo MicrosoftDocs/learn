@@ -1,6 +1,6 @@
 In this section, you help Andy and Amita write Selenium tests that verify the UI behaviors that Amita described.
 
-Amita normally runs tests on Chrome, Firefox, and Microsoft Edge. Here, you do the same. The Microsoft-hosted agent that you'll use is preconfigured to work with each of these browsers.
+Amita normally runs tests on Chrome, Firefox, and Microsoft Edge. Here, you do the same. The Microsoft-hosted agent that you use is preconfigured to work with each of these browsers.
 
 ## Fetch the branch from GitHub
 
@@ -17,7 +17,7 @@ This branch contains the _Space Game_ project that you worked with in previous m
     ```
 
    > [!TIP]
-   > If you followed along with Amita's manual test in the previous unit, you may have run these commands already. If you already ran them in the previous unit, you may still run them again now.
+   > If you followed along with Amita's manual test in the previous unit, you may have run these commands already. If you already ran them in the previous unit, you can still run them again now.
 
     Recall that *upstream* refers to the Microsoft GitHub repository. Your project's Git configuration understands the upstream remote because you set up that relationship. You set it up when you forked the project from the Microsoft repository and cloned it locally.
 
@@ -33,7 +33,7 @@ This branch contains the _Space Game_ project that you worked with in previous m
 
 Amita is excited to learn to write code that controls the web browser.
 
-She and Andy will work together to write the Selenium tests. Andy has already set up an empty NUnit project. Throughout the process, they refer to the Selenium documentation, a few online tutorials, and the notes that they took when Amita did the tests manually. At the end of this module, you'll find more resources to help get you through the process.
+She and Andy work together to write the Selenium tests. Andy has already set up an empty NUnit project. Throughout the process, they refer to the Selenium documentation, a few online tutorials, and the notes that they took when Amita did the tests manually. At the end of this module, you'll find more resources to help get you through the process.
 
 Let's review the process that Andy and Amita use to write their tests. You can follow along by opening *HomePageTest.cs* in the *Tailspin.SpaceGame.Web.UITests* directory in Visual Studio Code.
 
