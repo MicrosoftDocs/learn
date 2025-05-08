@@ -1,24 +1,24 @@
-:::image type="content" source="../media/rooftop-inspection.png" alt-text="Screenshot of two workers on a rooftop with a drone flying overhead." lightbox="../media/rooftop-inspection.png":::
+:::image type="content" source="../media/rooftop-inspection.png" alt-text="Photograph of two workers on a rooftop with a drone flying overhead." lightbox="../media/rooftop-inspection.png":::
 
-**Renewable energy innovations:** 
+## Renewable energy innovations
 
 - Integration of solar, wind, and geothermal energy ensures that power needs don't strain local ecosystems. 
 
 - Floating solar farms can coexist with aquatic ecosystems, minimizing land use and supporting aquatic biodiversity.
 
-**Water-free cooling systems:** 
+## Water-free cooling systems
 
-- Advanced liquid cooling systems use non-water-based coolants or recycled wastewater to eliminate the need for freshwater in cooling processes.
+Advanced liquid cooling systems use non-water-based coolants or recycled wastewater to eliminate the need for freshwater in cooling processes.
 
-**Carbon capture and storage (CCS):** 
+## Carbon capture and storage (CCS)
 
-- Direct air capture systems integrated into datacenters remove carbon dioxide from the atmosphere, benefiting surrounding ecosystems.
+Direct air capture systems integrated into datacenters remove carbon dioxide from the atmosphere, benefiting surrounding ecosystems.
 
-**Blockchain for supply chain transparency:** 
+## Blockchain for supply chain transparency
 
-- Blockchain technology ensures that all materials used in construction and operations are sustainably sourced and ethically produced.
+Blockchain technology ensures that all materials used in construction and operations are sustainably sourced and ethically produced.
 
-**Future trends:**
+## Future trends
 
 - Nature-positive design: 
 

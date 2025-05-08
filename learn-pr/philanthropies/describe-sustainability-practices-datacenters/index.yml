@@ -30,14 +30,14 @@ levels:
 roles:
 - student
 units:
-- learn.philanthropies.describe-sustainability-practices-datacenters.embracing-environmental-sustainability
+- learn.philanthropies.describe-sustainability-practices-datacenters.embrace-environmental-sustainability
 - learn.philanthropies.describe-sustainability-practices-datacenters.renewable-energy-efficiency
 - learn.philanthropies.describe-sustainability-practices-datacenters.advanced-cooling-resource-conservation
-- learn.philanthropies.describe-sustainability-practices-datacenters.monitoring-reporting-sustainability
-- learn.philanthropies.describe-sustainability-practices-datacenters.carbon-neutrality-offsetting
+- learn.philanthropies.describe-sustainability-practices-datacenters.monitor-reporting-sustainability
+- learn.philanthropies.describe-sustainability-practices-datacenters.carbon-neutrality-offset
 - learn.philanthropies.describe-sustainability-practices-datacenters.circular-economy-principles
 - learn.philanthropies.describe-sustainability-practices-datacenters.sustainability
-- learn.philanthropies.describe-sustainability-practices-datacenters.emerging-technologies-sustainability
+- learn.philanthropies.describe-sustainability-practices-datacenters.emerge-technologies-sustainability
 - learn.philanthropies.describe-sustainability-practices-datacenters.cross-cutting-innovations-across-all-areas
 - learn.philanthropies.describe-sustainability-practices-datacenters.check
 - learn.philanthropies.describe-sustainability-practices-datacenters.summary

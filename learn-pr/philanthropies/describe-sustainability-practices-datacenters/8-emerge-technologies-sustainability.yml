@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.philanthropies.describe-sustainability-practices-datacenters.emerging-technologies-sustainability
+uid: learn.philanthropies.describe-sustainability-practices-datacenters.emerge-technologies-sustainability
 title: Emerging technologies for sustainability
 metadata:
   title: Emerging technologies for sustainability
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/8-emerging-technologies-sustainability.md)]
+  [!include[](includes/8-emerge-technologies-sustainability.md)]

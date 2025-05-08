@@ -1,8 +1,8 @@
-:::image type="content" source="../media/solar-wind-farm.png" alt-text="Screenshot of a solar farm with wind turbines in the background." lightbox="../media/solar-wind-farm.png":::
+:::image type="content" source="../media/solar-wind-farm.png" alt-text="Photograph of a solar farm with wind turbines in the background." lightbox="../media/solar-wind-farm.png":::
 
 One of the primary strategies for achieving sustainability in datacenters is the adoption of renewable energy sources. Many datacenters are now powered by solar, wind, and hydroelectric energy, significantly reducing their reliance on fossil fuels. Additionally, energy efficiency measures, such as optimizing server utilization and implementing advanced power management systems, are crucial. These efforts not only lower energy consumption but also reduce operational costs. Here are two of the primary considerations when adopting more sustainable practices:
 
-- **Adoption of solar, wind, and other green energy sources**
+## Adoption of solar, wind, and other green energy sources
 
   - Solar and wind power: Many datacenters now directly procure renewable energy from solar and wind farms or through Power Purchase Agreements (PPAs). Examples include Google's wind energy contracts and Microsoft's solar investments. 
 
@@ -12,7 +12,7 @@ One of the primary strategies for achieving sustainability in datacenters is the
 
   - Battery storage innovations: Advanced battery systems, such as Tesla's Megapack, store renewable energy for consistent power delivery during fluctuations.
 
-- **Optimizing energy usage and emergency power systems**
+## Optimizing energy usage and emergency power systems
 
   - Energy-efficient hardware: Adoption of low-power servers, energy efficient processors, and intelligent power supplies reduces energy consumption.
 

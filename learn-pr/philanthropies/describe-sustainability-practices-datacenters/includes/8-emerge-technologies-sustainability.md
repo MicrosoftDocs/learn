@@ -1,16 +1,16 @@
-:::image type="content" source="../media/workflow-presentation.png" alt-text="Screenshot of a person presenting a flowchart on a large screen." lightbox="../media/workflow-presentation.png":::
+:::image type="content" source="../media/workflow-presentation.png" alt-text="Photograph of a person presenting a flowchart on a large screen." lightbox="../media/workflow-presentation.png":::
 
 The future of datacenters is being shaped by several emerging technologies. AI and machine learning are playing a pivotal role in optimizing datacenter operations, from predictive maintenance to dynamic energy management. 
 
 Edge computing is another trend, bringing data processing closer to the source of data generation, which reduces latency and energy consumption. Additionally, the integration of blockchain technology is enhancing data security and transparency.
 
-**AI and machine learning for efficiency**
+## AI and machine learning for efficiency
 
 - **Energy optimization**: AI dynamically adjusts cooling systems, power usage, and workload distribution to minimize energy consumption. 
 
 - **Predictive cooling systems**: ML algorithms predict temperature hotspots and adjust cooling resources in advance.
 
-**Blockchain for transparency**
+## Blockchain for transparency
 
 - **Renewable energy verification**: Blockchain ensures that energy consumed is directly tied to renewable energy production, providing traceability for RECs.
 
@@ -22,37 +22,40 @@ Edge computing is another trend, bringing data processing closer to the source o
 
 - **Energy trading:** Surplus energy from microgrids is sold back to the grid or shared with other facilities.
 
-**Sustainable design innovations**
+## Sustainable design innovations
 
 - **AI-optimized layouts:** Using AI to design data center layouts that improve airflow and energy efficiency. 
 
 - **3D-printed components**: Reducing waste by using additive manufacturing to produce parts as needed.
 
-**Sustainable energy storage**
+## Sustainable energy storage
 
 - **Solid-state batteries**: Next-generation batteries with higher energy density and lower environmental impact. 
 
-- **Green hydrogen**: Fuel cells powered by hydrogen generated from renewable sources for backup energy systems. Of note for green hydrogen, as of September 2024, Microsoft announced it “entered into an agreement with ESB that will see its data center power control and administration building in Dublin be powered by zero emissions green hydrogen power.”
+- **Green hydrogen**: Fuel cells powered by hydrogen generated from renewable sources for backup energy systems. 
+  
+  > [!NOTE] 
+  > for green hydrogen, as of September 2024, Microsoft announced it "entered into an agreement with ESB that will see its data center power control and administration building in Dublin be powered by zero emissions green hydrogen power."
 
-**Biodiversity**
+## Biodiversity
 
 - **IoT sensors for ecosystem monitoring:** IoT devices equipped with sensors can monitor biodiversity in real-time, tracking wildlife, air quality, water quality, and vegetation health around datacenters.
 
 - Example: Smart beehives and wildlife monitoring cameras to track pollinators and other species.
 
-**Drones and aerial mapping:**
+## Drones and aerial mapping:
 
 - Drones can survey large areas around datacenters to assess vegetation health, identify invasive species, or map habitats for conservation planning.
 
-**AI-driven biodiversity analysis:**
+## AI-driven biodiversity analysis:
 
 - AI models analyze environmental data to assess how datacenter operations are impacting biodiversity and recommend mitigation strategies.
 
-**Native vegetation management apps:**
+## Native vegetation management apps:
 
 - Apps powered by machine learning can recommend native plant species to restore degraded ecosystems, design pollinator gardens, and support local wildlife.
 
-**Biomimicry**
+## Biomimicry
 
 - Biomimetic cooling systems:
 
@@ -72,7 +75,7 @@ Edge computing is another trend, bringing data processing closer to the source o
 
   - Designs mimicking photosynthesis optimize energy harvesting efficiency, such as light-capturing surfaces that adapt to sunlight angles like sunflowers.
 
-**Replenishing and revitalizing local ecosystems**
+## Replenishing and revitalizing local ecosystems
 
 - Hydroponic and aeroponic green roof systems: 
 
@@ -90,7 +93,7 @@ Edge computing is another trend, bringing data processing closer to the source o
 
   - AI platforms optimize reforestation projects near datacenters, ensuring that the right tree species are planted in the right locations to maximize ecosystem benefits.
 
-**Protecting and preserving local ecosystems**
+## Protecting and preserving local ecosystems
 
 - Predictive environmental modeling: 
 

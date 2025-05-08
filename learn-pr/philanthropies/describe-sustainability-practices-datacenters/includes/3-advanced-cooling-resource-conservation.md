@@ -1,4 +1,4 @@
-:::image type="content" source="../media/cooling-fans.png" alt-text="Screenshot of industrial cooling fans with protective grilles." lightbox="../media/cooling-fans.png":::
+:::image type="content" source="../media/cooling-fans.png" alt-text="Photograph of industrial cooling fans with protective grilles." lightbox="../media/cooling-fans.png":::
 
 **Cooling** is a key focus for datacenters, and exciting advancements in cooling technologies are making a significant positive impact. Liquid cooling systems, which use water or other coolants to dissipate heat, are becoming increasingly popular. These systems are more efficient than traditional air cooling and can support higher server densities. Additionally, AI-driven cooling solutions are emerging, utilizing machine learning algorithms to optimize cooling in real-time, further enhancing efficiency and sustainability.
 

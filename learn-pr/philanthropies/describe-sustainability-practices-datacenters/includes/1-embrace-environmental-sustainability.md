@@ -1,4 +1,4 @@
-:::image type="content" source="../media/industrial-facility.png" alt-text="Screenshot of an industrial facility surrounded by farmland." lightbox="../media/industrial-facility.png":::
+:::image type="content" source="../media/industrial-facility.png" alt-text="Photograph of an industrial facility surrounded by farmland." lightbox="../media/industrial-facility.png":::
 
 Datacenters are making significant strides in addressing environmental considerations, including energy usage, water use, and carbon emissions. Many companies are leading the way by switching to renewable energy and adopting energy-efficient technologies like advanced cooling systems. 
 
