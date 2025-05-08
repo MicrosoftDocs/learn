@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ediscovery-manage-data-sources-holds.mange-holds
+title: Manage and maintain eDiscovery holds
+metadata:
+  title: Manage and maintain eDiscovery holds
+  description: "Manage and maintain eDiscovery holds"
+  ms.date: 05/09/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/mange-holds.md)]

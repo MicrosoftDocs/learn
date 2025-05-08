@@ -15,6 +15,8 @@ Microsoft 365 stores user and group data across several services. When you add a
 
 Unified groups can include several containers depending on how they're used. A Microsoft Team, for example, might include a group mailbox and multiple SharePoint sites for standard and private channels.
 
+In addition to defining where to search, data sources also determine which content can be preserved. When you place content on hold, the policy applies only to the selected sources. Choosing the right ones ensures that relevant data is available for both search and preservation.
+
 ## How sources are added and scoped
 
 You can scope data sources in two ways:

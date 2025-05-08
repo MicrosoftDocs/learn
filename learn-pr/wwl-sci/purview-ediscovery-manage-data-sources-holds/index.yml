@@ -1,2 +1,48 @@
-- understand-data-sources
-- add-data-source
+### YamlMime:Module
+uid: learn.wwl.purview-ediscovery-manage-data-sources-holds
+metadata:
+  title: Manage data sources and holds in Microsoft Purview eDiscovery
+  description: Manage data sources and holds in Microsoft Purview eDiscovery
+  ms.date: 05/09/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ai-usage: ai-assisted
+  ms.service: purview
+title: Manage data sources and holds in Microsoft Purview eDiscovery
+summary: |
+  Managing data sources and applying holds in Microsoft Purview eDiscovery helps ensure that investigations are scoped correctly and that relevant content is preserved. Defining where to search, applying hold policies, and using PowerShell to confirm preservation are key steps in supporting legal and regulatory requirements.
+abstract: |
+  In this module you learn how to:
+  - Identify and configure the content sources used in eDiscovery searches and holds
+  - Apply tenant-wide or scoped holds based on the needs of an investigation
+  - Review and adjust existing hold policies as cases progress
+  - Use PowerShell to verify hold settings and data preservation
+prerequisites: |
+  - Experience with creating cases and running searches in Microsoft Purview eDiscovery
+  - Understanding of Microsoft 365 content locations (Exchange, SharePoint, OneDrive)
+  - Familiarity with Exchange Online or Security & Compliance PowerShell
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- auditor
+products:
+- m365
+- microsoft-purview
+subjects:
+- data-management
+- threat-protection
+units:
+- learn.wwl.purview-ediscovery-manage-data-sources-holds.introduction
+- learn.wwl.purview-ediscovery-manage-data-sources-holds.understand-data-sources
+- learn.wwl.purview-ediscovery-manage-data-sources-holds.add-data-source
+- learn.wwl.purview-ediscovery-manage-data-sources-holds.create-holds
+- learn.wwl.purview-ediscovery-manage-data-sources-holds.manage-holds
+- learn.wwl.purview-ediscovery-manage-data-sources-holds.preserve-data-under-hold
+- learn.wwl.purview-ediscovery-manage-data-sources-holds.identify-report-mailbox-holds
+- learn.wwl.purview-ediscovery-manage-data-sources-holds.knowledge-check
+- learn.wwl.purview-ediscovery-manage-data-sources-holds.summary
+badge:
+  uid: learn.wwl.purview-ediscovery-manage-data-sources-holds.badge

@@ -7,11 +7,11 @@ You create a hold by defining a policy in an eDiscovery case. The policy determi
 
 ## Step 1: Create the hold policy
 
-Every hold begins with a policy. The policy lives inside the case and acts as a container for the data sources and query conditions.
+Every hold begins with a policy. The policy is stored in the case and defines which data sources and filters to apply.
 
 To create a hold policy:
 
-1. In the Microsoft Purview portal, go to **eDiscovery** > **Cases** and open the case you want to work in.
+1. In the [Microsoft Purview portal](https://purview.microsoft.com/), go to **eDiscovery** > **Cases** and open the case you want to work in.
 1. Select the **Hold policies** tab.
 1. Select **Create policy**.
 1. Give the policy a name (required) and an optional description.
@@ -25,9 +25,7 @@ The hold policy is now part of the case but doesn't preserve any data yet. You'l
 
 To preserve content, you need to specify where it lives. This means selecting the mailboxes, OneDrive accounts, or SharePoint sites that contain the data you want to keep.
 
-From the **Hold policy** tab:
-
-1. Select the policy you created.
+1. From the **Hold policy** tab, select the policy you created.
 1. Choose **Add data sources**.
 1. Use the **Manage data sources** panel to select the users, groups, or sites you want to preserve.
 
@@ -49,7 +47,7 @@ There are two ways to define a query-based hold:
 
 1. In the **Hold policy** tab, use the **Condition builder** to define filters that match the content you want to preserve.
 
-1. To switch to KeyQL, select it from the **Add conditions** menu. This replaces the visual builder with a single text box for advanced query input.
+1. To switch to KeyQL, select it from the **Add conditions** menu. This replaces the condition builder with a single query field for advanced query input.
 
 1. Select **Apply hold** to finalize the scope.
 
@@ -60,7 +58,7 @@ There are two ways to define a query-based hold:
 
 ## Step 4: Confirm the hold
 
-After applying the hold, select the **Details** tab for the policy to confirm that the hold was successfully applied.
+After applying the hold, go to the **Details** tab to confirm that the policy is active and functioning as expected.
 
 You can view:
 
