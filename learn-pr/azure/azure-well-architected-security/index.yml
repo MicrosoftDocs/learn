@@ -20,8 +20,8 @@ abstract:  |
  - Ensure that your workload stays available during security incidents.
  - Maintain and improve your workload's security posture continuously.
 prerequisites: |
-  - Experience with core infrastructure technology such as data storage, compute, and networking
-  - Experience building or operating technology systems to solve business problems
+ - Experience with core infrastructure technology such as data storage, compute, and networking
+ - Experience building or operating technology systems to solve business problems
 iconUrl: /training/achievements/azure-well-architected-security.svg
 levels:
 - intermediate
