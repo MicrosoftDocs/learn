@@ -9,7 +9,6 @@ The Azure Well-Architected Framework is a design framework that can improve the 
 A Well-Architected workload must be built with a zero-trust approach. A secure workload is resilient to attacks and incorporates the interrelated security principles of confidentiality, integrity, and availability (also known as the CIA triad) in addition to meeting business goals. Any security incident has the potential to become a major breach that damages the brand and reputation of the workload or organization. To measure the security efficacy of your overall strategy for a workload, start with these questions:
 
 - Do your defensive investments provide meaningful cost and friction to prevent attackers from compromising your workload?
-
 - Will your security measures be effective in restricting the blast radius of an incident?
 - Do you understand how controlling the workload could be valuable for an attacker? Do you understand the impact to your business if the workload and its data are stolen, unavailable, or tampered with?
 - Can the workload and operations quickly detect, respond to, and recover from disruptions?
