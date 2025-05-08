@@ -7,8 +7,8 @@ This module examined the vital role datacenters play in shaping local economies 
 - [Enterprise.gov: New Statement on the Role of datacenters in Ireland's Enterprise Strategy published](https://enterprise.gov.ie/en/news-and-events/department-news/2022/july/new-statement-on-the-role-of-data-centres-in-irelands-enterprise-strategy-published.html)
 - [Microsoft Datacenters in Washington](https://local.microsoft.com/wp-content/uploads/2024/04/Microsoft-datacenters-in-Washington.pdf) 
 - [Oxford Economics: Data Center Impacts](https://www.oxfordeconomics.com/resource/data-center-impacts/)
-- [Datacenter Coalition](https://www.datacentercoalition.org/cpages/press-release-national-impact-study-2023 
-- [OFC: Data centers contribute $2.1T to the U.S. economy]https://www.ofcconference.org/en-us/home/news-and-press/ofc-blog/2023/november/data-centers-contribute-$2-1t-to-the-u-s-economy/)
+- [Datacenter Coalition](https://www.datacentercoalition.org/cpages/press-release-national-impact-study-2023)
+- [OFC: Data centers contribute $2.1T to the U.S. economy](https://www.ofcconference.org/en-us/home/news-and-press/ofc-blog/2023/november/data-centers-contribute-$2-1t-to-the-u-s-economy/)
 - [AWS: Learn about AWS's long-term commitment to Virginia](https://www.aboutamazon.com/news/aws/aws-commitment-to-virginia)
 - [Governor of Virginia: Amazon Web Services Plans to Invest $35 Billion in the Commonwealth by 2040 to Expand Data Center Campuses](https://www.governor.virginia.gov/newsroom/news-releases/2023/january/name-991808-en.html)
 - [EU STEM Coalition: Programs](https://www.stemcoalition.eu/programmes/)
