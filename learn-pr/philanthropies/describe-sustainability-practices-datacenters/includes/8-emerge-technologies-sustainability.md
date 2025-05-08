@@ -35,7 +35,7 @@ Edge computing is another trend, bringing data processing closer to the source o
 - **Green hydrogen**: Fuel cells powered by hydrogen generated from renewable sources for backup energy systems. 
   
   > [!NOTE] 
-  > for green hydrogen, as of September 2024, Microsoft announced it "entered into an agreement with ESB that will see its data center power control and administration building in Dublin be powered by zero emissions green hydrogen power."
+  > For green hydrogen, as of September 2024, Microsoft announced it "entered into an agreement with ESB that will see its data center power control and administration building in Dublin be powered by zero emissions green hydrogen power."
 
 ## Biodiversity
 
