@@ -10,6 +10,6 @@ Now that you reviewed this module, you should be able to:
 
 [!INCLUDE[](../../../includes/open-link-in-new-tab-note.md)]
 
-- [Document Intelligence documentation](/azure/ai-services/document-intelligence/)
-- [Microsoft Learn - Analyze receipts with the Document Intelligence service](/training/modules/analyze-receipts-form-recognizer/)
-- [Microsoft Learn - Implement knowledge mining with Azure Cognitive Search](/training/paths/implement-knowledge-mining-azure-cognitive-search/)
+- [Azure AI Document Intelligence documentation](/azure/ai-services/document-intelligence/)
+- [Microsoft Learn - Fundamentals of Azure AI Document Intelligence](/training/modules/analyze-receipts-form-recognizer/)
+- [Microsoft Learn - Implement knowledge mining with Azure AI Search](/training/paths/implement-knowledge-mining-azure-cognitive-search/)

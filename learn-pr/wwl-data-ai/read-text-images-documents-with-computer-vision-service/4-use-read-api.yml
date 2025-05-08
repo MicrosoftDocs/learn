@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.read-text-images-documents-with-computer-vision-service.using-read-api
-title: Use the Read API
+title: Read text with Azure AI Vision Image Analysis
 metadata:
-  title: Use the Read API
-  description: Use the Read API
-  author: wwlpublish
+  title: Read text with Azure AI Vision Image Analysis
+  description: Use the Read Visual Feature of Azure AI Vision Image Analysis
+  author: ivorb
   ms.author: berryivor
-  ms.date: 02/05/2024
+  ms.date: 05/06/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

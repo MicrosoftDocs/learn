@@ -5720,3 +5720,13 @@ achievements:
   title: Architect modern applications using Azure SQL Database
   summary: Break down a scenario for an application and build a multi-service solution based on the microservices approach. Learn how to use modern database capabilities to build a foundation for applications.
   iconUrl: /training/achievements/create-foundation-modern-apps.svg
+- uid: learn-sqlserver.use-sql-server-query-tuning-assistant.badge
+  type: badge
+  title: Use the SQL Server Query Tuning Assistant
+  summary: Learn how the Query Tuning Assistant (QTA) works alongside the Query Store to compare query performance statistics and find queries that are regressing due to changing compatibility levels.
+  iconUrl: /training/achievements/sqlserver/using-the-sql-server-query-tuning-assistant.svg
+- uid: learn.azure-sql-replication.badge
+  type: badge
+  title: Data tracking and synchronization with Azure SQL Database
+  summary: "This module introduces you to several data tracking, loading, and streaming tools that you can use to track or synchronize data changes from your Azure SQL Database to other destinations. More specifically, we cover: change data capture (CDC) and change tracking."
+  iconUrl: /training/achievements/learn-azure-sql-replication.svg
