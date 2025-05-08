@@ -2,7 +2,6 @@ _Caching_ is a common technique that aims to improve the performance and scalabi
 
 Caching is most effective when a client instance repeatedly reads the same data, especially when the following conditions apply to the original data store:
 - The original data store remains relatively static.
-- It's slow compared to the speed of the cache.
 - It's subject to a high level of contention.
 - It's far away, and network latency can result in slow access to the store.
 
@@ -26,11 +25,10 @@ Let's review the characteristics of the service:
 
 #### How Azure Cache for Redis works
 
-Azure Cache for Redis is hosted on Azure, and usable by any application within or outside of Azure. The following illustration shows how Azure Cache for Redis works in applications.
+Azure Cache for Redis is hosted on Azure, and usable by any application within or outside of Azure. As indicated in the following graphic, Azure Cache for Redis can help improve performance in apps that interface with many database solutions, including Azure SQL Database, Azure Cosmos DB, and Azure Database for MySQL.
 
 :::image type="content" source="../media/azure-cache-for-redis.png" alt-text="Illustration that shows a typical use case for Azure Cache for Redis." border="false":::
 
-Application instance A has a cache with a snapshot of the data at time `X`. It retrieves data at time `X` and caches it in-memory. Application instance B has a cache with a snapshot of the data at time `Y`. It retrieves data at time `Y` and caches it in-memory. Information in the SQL database changes between time `X` and time `Y`.
 
 ### Things to consider when using Azure Cache for Redis
 
@@ -43,3 +41,7 @@ Azure Cache for Redis improves application performance by supporting common appl
 | **Session store** | _A session store is commonly used with shopping carts and other user history data that a web application might associate with user cookies. Storing too much in a cookie can have a negative effect on performance as the cookie size grows and is passed and validated with every request_. | A typical solution uses the cookie as a key to query the data in a database. It's faster to use an in-memory cache like Azure Cache for Redis to associate information with a user than interacting with a full relational database. |
 | **Job and message queuing** | _Some application operations take significant time to complete, which might prevent other unrelated jobs or messages from starting_. | Applications often add tasks to a queue when the operations associated with the request take time to execute. Longer running operations are queued to be processed in sequence, often by another server. This method of deferring work is called _task queuing_. Azure Cache for Redis provides a distributed queue to enable this pattern in your application. |
 | **Distributed transactions** | _Applications sometimes require a series of commands against a back-end datastore to execute as a single atomic operation. All commands must succeed, or all commands must be rolled back to the initial state_. | Azure Cache for Redis supports executing a batch of commands as a single transaction. |
+
+> [!TIP]
+> There's more to learn in the [Introduction to Azure Cache for Redis](/training/modules/intro-to-azure-cache-for-redis/) module.
+

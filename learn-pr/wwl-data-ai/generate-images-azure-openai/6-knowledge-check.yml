@@ -3,7 +3,7 @@ uid: learn.wwl.generate-images-azure-openai.knowledge-check
 title: Module assessment
 metadata:
   title: Module assessment
-  description: Check your knowledge of using DALL-E in Azure OpenAI service
+  description: Check your knowledge of image generation models.
   author: ivorb
   ms.author: berryivor
   ms.date: 04/29/2025
@@ -25,14 +25,14 @@ quiz:
     - content: "text-embedding-ada-002"
       isCorrect: false
       explanation: "The text-embedding-ada-002 model is used to generate embeddings (vectors that represent text tokens)."
-  - content: "Which playground in Azure AI Foundry portal should you use to utilize the DALL-E model?"
+  - content: "Which playground in Azure AI Foundry portal should you use to test an image-generation model?"
     choices:
     - content: "Agents"
       isCorrect: false
       explanation: "The Agents playground is used to test AI agents."
     - content: "Chat"
       isCorrect: false
-      explanation: "The Chat playground is used to explore GPT 3 and earlier language generation models."
+      explanation: "The Chat playground is used to explore natural language generation models."
     - content: "Images"
       isCorrect: true
       explanation: "The Images playground is used to explore image generation models."
