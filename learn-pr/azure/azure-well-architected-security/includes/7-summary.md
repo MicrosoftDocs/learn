@@ -8,5 +8,5 @@ To learn more about workload security, see the following articles:
 
 - [Security design principles](/azure/well-architected/security/principles)
 - [Design review checklist for Security](/azure/well-architected/security/checklist)
-- [Cost Optimization tradeoffs](/azure/well-architected/security/tradeoffs)
+- [Security tradeoffs](/azure/well-architected/security/tradeoffs)
 - [Cloud design patterns that support security](/azure/well-architected/security/design-patterns)

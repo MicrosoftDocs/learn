@@ -12,14 +12,15 @@ metadata:
 title: Microsoft Azure Well-Architected Framework - Security
 summary: Learn how to incorporate security into your architecture design, and discover the tools that Azure provides to help you create a secure environment through all the layers of your architecture.
 abstract:  | 
- By the end of this module, you'll understand the five principles of the Security pillar and learn three approaches for each of the following:
-  - Create a security readiness plan that's aligned with business priorities.
-  - Properly handle confidentiality requirements.
-  - Strengthen the integrity of your workload against security risks.
-  - Strengthen the availability of your workload against security incidents.
-  - Continuously maintain and improve your workload's security posture
+ By the end of this module, you'll be more familiar with the five principles of the Security pillar and learn three approaches for each pillar. You'll learn how to:
+
+ - Create a security readiness plan that matches your business priorities.
+ - Handle confidentiality requirements properly.
+ - Strengthen your workload's integrity against security risks.
+ - Ensure that your workload stays available during security incidents.
+ - Maintain and improve your workload's security posture continuously.
 prerequisites: |
-  - Experience building or operating solutions by using core infrastructure technology such as data storage, compute, and networking
+  - Experience with core infrastructure technology such as data storage, compute, and networking
   - Experience building or operating technology systems to solve business problems
 iconUrl: /training/achievements/azure-well-architected-security.svg
 levels:

@@ -21,7 +21,7 @@ Using this approach helps you create a report that ranks attack paths by how ser
 
 - Even though they haven't had a security problem yet, the workload team doesn't have a clear way to check if all possible threats are covered by their current security setup. 
 
-- They realize that there's a blind spot in their security, and if something goes wrong, they might not be ready.
+- They realize that there's a gap in their security, and if something goes wrong, they might not be ready.
 
 *Applying the approach and outcomes*
 
@@ -34,7 +34,7 @@ Using this approach helps you create a report that ranks attack paths by how ser
 
 ## Test controls yourself
 
-**Have security experts try to safely hack your system occassionally to find weak spots. Regularly scan your infrastructure, code, and tools to catch any vulnerabilities before they become real problems.**
+**Have security experts try to safely hack your system occasionally to find weak spots. Regularly scan your infrastructure, code, and tools to catch any vulnerabilities before they become real problems.**
 
 Running security tests that mimic real-world attacks, like penetration testing, helps you see if your defenses actually work.
 
@@ -51,7 +51,7 @@ Threats can sneak in during updates or changes, so it's smart to build vulnerabi
 - The team contacts a well-known Microsoft partner that specializes in cloud security to talk about penetration testing.
 
 - The workload team signs a Statement of Work for quarterly penetration testing, including one *white-box test* each year for extra confidence.
-- The consulting team also helps the dev team install antimalware on dev boxes and the self-hosted build agents.
+- The consulting team also helps the dev team install anti-malware on dev boxes and the self-hosted build agents.
 - Now, both the team and stakeholders feel a lot more confident that they're ready for potential threats.
 
 ## Get current, and stay current

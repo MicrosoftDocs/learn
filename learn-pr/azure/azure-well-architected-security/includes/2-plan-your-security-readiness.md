@@ -32,7 +32,7 @@ Isolation limits exposure of sensitive flows to only roles and assets that need 
 
 - Luckily, the compromised environment was just an early test prototype for the new customer loyalty program, so no production systems were affected.
 
-- The security team plans to invest time and money to isolate components that handle personally identifiable information (PII), like addresses and emails, from components that don't, like coupons. They'll design access controls that are need-to-know and just-in-time (JIT) where possible, and isolate networks within the workload and back into Contoso to protect the organization.
+- The security team plans to invest time and money to isolate components that handle personal data, like addresses and emails, from components that don't, like coupons. They'll design access controls that are need-to-know and just-in-time (JIT) where possible, and isolate networks within the workload and back into Contoso to protect the organization.
 
 - Segmentation helps contain the impact of a compromise. 
 
@@ -50,7 +50,7 @@ During a crisis, avoid confusion with a clear plan. Responsible roles can focus 
 
 *Applying the approach and outcomes*
 
-- The workload team works with the Contoso security team to understand compliance requirements for handling PII from both an organization perspective and external compliance perspective.
+- The workload team works with the Contoso security team to understand compliance requirements for handling personal data from both an organization perspective and external compliance perspective.
 
 - The team builds a security detection, mitigation, and escalation plan, including communication for incidents.
 - The workload team now feels just as comfortable with security incident preparedness as they do with their reliability support. They plan to practice handling incidents before they go live.

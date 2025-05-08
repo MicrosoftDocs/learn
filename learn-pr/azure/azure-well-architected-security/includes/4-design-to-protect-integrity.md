@@ -24,7 +24,7 @@ Knowing where your software comes from and checking that it's legit throughout t
 
 - The team updates their build processes for both firmware and back-end cloud systems to include security scans for common vulnerabilities and exposures (CVEs) and malware in dependencies, code, and packages.
 
-- They also look at antimalware options for their Azure Stack HCI setup, such as Windows Defender Application Control.
+- They also look at anti-malware options for their Azure Stack HCI setup, such as Windows Defender Application Control.
 - These steps help make sure the software and firmware that they ship doesn't do anything unexpected, and that their customers' reporting stays accurate and secure.
 
 ## Employ strong cryptographic mechanisms
@@ -61,7 +61,7 @@ When you adopt this approach, if you ever need to recover data, you can trust th
 
 *Applying the approach and outcomes*
 
-- After doing a security gap analysis, the team realizes that the unecrypted backup is a risk.
+- After doing a security gap analysis, the team realizes that the unencrypted backup is a risk.
 
 - They now encrypt the report and store it in Azure Blob Storage by using the Write Once, Read Many (WORM) setting, which keeps the file from being changed.
 - They also add a check. The system now compares a Secure Hash Algorithm (SHA) hash of the report with the backup to make sure nothing is altered.

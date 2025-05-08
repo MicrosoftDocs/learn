@@ -24,7 +24,7 @@ This approach helps keep the system up and running, even if someone tries to tak
 
 *Applying the approach and outcomes*
 
-- The team changed the design so the app servers no longer handle folio requests directly. Instead, they're using a Valet Key approach to limit access. This approach wouldn't have stopped the attack completely, but it would've kept the damage contained.
+- The team changed the design so the app servers no longer handle folio requests directly. Instead, they're using a Valet Key approach to limit access. This approach wouldn't have stopped the attack completely, but it would have kept the damage contained.
 
 - They also added better input checks to clean up anything suspicious before it reaches the system.
 - With stronger input filtering and a smarter design, they've reduced the risk of this kind of attack happening again.
@@ -33,11 +33,11 @@ This approach helps keep the system up and running, even if someone tries to tak
 
 **Set up protections ahead of time to block common ways that attackers try to break in, like bugs in your code, weak network setups, or missing antivirus.**
 
-Regularly scan your code, install security updates, keep software current, and run antivirus tools. These practices help reduce the ways that attackers can get in and helps keep things running smoothly.
+Regularly scan your code, install security updates, keep software current, and run antivirus tools. These practices help reduce the ways that attackers can get in, and they help keep things running smoothly.
 
 *Contoso's challenge*
 
-- The system runs on Azure VMs (virtual machines) that use the latest Ubuntu images from the Azure Marketplace. When each VM starts up, it installs some certificates, adjusts a few SSH settings, and loads the app code. But it doesn't use any antivirus or antimalware tools.
+- The system runs on Azure VMs (virtual machines) that use the latest Ubuntu images from Azure Marketplace. When each VM starts up, it installs some certificates, adjusts a few SSH settings, and loads the app code. But it doesn't use any antivirus or anti-malware tools.
 
 - Azure Application Gateway fronts the solution, but it's only used as an internet gateway. The web application firewall (WAF) function isn't enabled currently.
 - These choices leave the system exposed to potential risks, like vulnerabilities in the code or accidental malware installs.
