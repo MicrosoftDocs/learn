@@ -12,12 +12,13 @@ metadata:
 title: Microsoft Azure Well-Architected Framework - Reliability
 summary: Apply reliability guidance in your architecture to improve your workload's availability and resilience.
 abstract: |
-  By the end of this module, you'll understand the five principles of the Reliability pillar and learn three approaches for each of the following:
-  - Determine the reliability requirements from the business and apply those requirements to your workload design.
-  - Design your workload to be fault-tolerant and able to degrade gracefully.
-  - Design your workload to recover from malfunctions ranging from component-level faults to disasters.
-  - Build observability and testing into your workload design and operations practices.
-  - Design your workload with a focus on simplicity to minimize risks.
+ By the end of this module, you'll be more familiar with the five principles of the Reliability pillar and learn three approaches for each pillar. You'll learn how to:
+
+  - Apply your business's reliability requirements to your workload design.
+  - Design your system to handle faults smoothly and keep working even when things go wrong.
+  - Make sure that your workload can recover from malfunctions, whether it's a small glitch or major disaster.
+  - Include monitoring and testing capabilities in your workload's design and daily operations.
+  - Keep your workload simple to minimize risks.
 prerequisites: |
   - Experience with core infrastructure technologies such as data storage, computing, and networking.
   - Experience building or operating technology systems to solve business problems.

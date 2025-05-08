@@ -13,18 +13,3 @@ Your workload's architecture should include **reliability measures in its applic
 The concepts described in this module aren't all-inclusive of reliability in a workload, but they represent the core principles and some of their key approaches. For a complete overview of the Well-Architected Framework pillars, check out the [Azure Well-Architected Framework](/azure/well-architected) as you start planning and designing your architecture.
 
 Each unit in this module dives into one [design principle](/azure/well-architected/reliability/principles) and three approaches for that principle. You can find examples of the approaches in each unit to see how they can be applied to real-world scenarios. The examples are all based on a fictional company.
-
-## Learning objectives
-
-By the end of this module, you'll be more familiar with the five principles of the Reliability pillar and learn three approaches for each pillar. You'll learn how to:
-
-- Apply your business's reliability requirements to your workload design.
-- Design your system to handle faults smoothly and keep working even when things go wrong.
-- Make sure that your workload can recover from malfunctions, whether it's a small glitch or major disaster.
-- Include monitoring and testing capabilities in your workload's design and daily operations.
-- Keep your workload simple to minimize risks.
-
-## Prerequisites
-
-- Experience with core infrastructure technologies such as data storage, computing, and networking.
-- Experience building or operating technology systems to solve business problems.
