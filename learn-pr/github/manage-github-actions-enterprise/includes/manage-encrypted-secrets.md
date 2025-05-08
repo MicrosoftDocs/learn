@@ -119,7 +119,9 @@ Some best practices for third-party actions securely:
 
 ### Define the indicators of a trustworthy third-party action
 
-You should have situational awareness of indicators of a trustworthy third-party action to be better able to manage risk.  The action should appear on the Github Marketplace. When you view the action's entry in the GitHub Marketplace, ensure that it shows the 'Verified creator' badge to the right of the title.  This indicates that the vendor has been verified by GitHub.  In addition, the `action.yml` file defining the action should be well documented.
+You should have situational awareness of indicators of a trustworthy third-party action to be better able to manage risk.  The action should appear on the Github Marketplace. When you view the action's entry in the GitHub Marketplace, ensure that it shows the 'Verified creator' badge to the right of the title (highlighted red in the image below).  This indicates that the vendor has been verified by GitHub.  In addition, the `action.yml` file defining the action should be well documented.
+
+
 
 ### Use Dependabot version updates to keep actions up-to-date
 
@@ -144,9 +146,9 @@ The compromised runner can be utilized to forward secrets, or other repository d
 
 Workflows triggered from a forked repository using the `pull_request` event have read-only permissions and have no access to secrets. However, these permissions differ for various event triggers such as `issue_comment`, `issues`, `push` and `pull_request` from a branch within the repository. If a runner is compromised, there is a risk that repository secrets could be stolen or a job's GITHUB_TOKEN `write` permissions could be compromised.
 
--If the secret or token is set to an environment variable, it can be directly accessed through the environment using `printenv`.
--If the secret is used directly in an expression, the generated shell script is stored on-disk and is accessible.
--For a custom action, the risk can vary depending on how an action is using the secret it obtained from the argument:
+- If the secret or token is set to an environment variable, it can be directly accessed through the environment using `printenv`.
+- If the secret is used directly in an expression, the generated shell script is stored on-disk and is accessible.
+- For a custom action, the risk can vary depending on how an action is using the secret it obtained from the argument:
 
 ```yml
 uses: exampleaction/publish@v3
@@ -214,8 +216,8 @@ With GitHub Actions, you can attest to build provenance & SBOM's for binaries an
 
 When you generate an artifact attestation for builds you must ensure:
 
-*You have the appropriate permissions configured in the workflow
-*You have included a step in your workflow that uses the  [attest-build-provenance](https://github.com/actions/attest-build-provenance) action.
+* You have the appropriate permissions configured in the workflow
+* You have included a step in your workflow that uses the  [attest-build-provenance](https://github.com/actions/attest-build-provenance) action.
 
 The attestation establishes build provenance.  You can view attestations in the repository's **Actions** tab. 
 
