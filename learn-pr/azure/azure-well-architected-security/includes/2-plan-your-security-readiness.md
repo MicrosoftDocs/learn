@@ -1,7 +1,7 @@
 | :::image type="icon" source="../media/goal.svg"::: Make security a part of your design and operations with minimal hassle.  |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
-As a workload owner, you share the responsibility to protect assets with your organization. Create a security readiness plan that aligns with business priorities. It should lead to clear processes, proper investments, and defined responsibilities. The plan should include workload requirements and factor into your strategy for reliability, health modeling, and self-preservation.
+As a workload owner, you share the responsibility to protect assets with your organization. You should create a security readiness plan that aligns with business priorities and leads to clear processes, proper investments, and defined responsibilities. The plan should include workload requirements and factor into your strategy for reliability, health modeling, and self-preservation.
 
 You need to protect the organizational assets and the workload itself from attacks by using Zero Trust principles and the CIA Triad.
 
@@ -17,13 +17,13 @@ Contoso Supermarket wants to create a customer loyalty program by using Near Fie
 
 **Base your segmentation strategy on business needs, like the importance of components, division of labor, privacy concerns, and other factors.**
 
-To reduce operational friction, define roles and responsibility clearly. This exercise helps you identify the level of access for each role, especially for critical accounts.
+To reduce operational friction, define roles and responsibility clearly. This exercise helps you identify the level of access for each role, especially for important accounts.
 
 Isolation limits exposure of sensitive flows to only roles and assets that need access. Too much exposure can lead to information leaks.
 
 *Contoso's challenge*
 
-- In the spirit of simplicity, the team has historically favored low overhead approaches. These approaches have included colocating different components and organizing individuals into security groups to simplify access management.
+- In the spirit of simplicity, the team has historically favored low overhead approaches. These approaches have included grouping components and organizing individuals into security groups to simplify access management.
 
 - A QA intern had broad access because of their security group membership. Unfortunately, their account was compromised in a social engineering attack.
 - This attack compromised the confidentiality of that deployment and all other deployments on the same application platform.
@@ -40,7 +40,7 @@ Isolation limits exposure of sensitive flows to only roles and assets that need 
 
 **Make sure there's an incident response plan for your workload. Use industry frameworks that define the standard operating procedure for preparedness, detection, containment, mitigation, and post-incident activity.**
 
-During a crisis, avoid confusion with a clear plan. Responsible roles can focus on execution without wasting time on uncertain actions. A comprehensive plan helps you meet remediation requirements.
+During a crisis, avoid confusion by having a clear security incident response plan. Responsible roles can focus on execution without wasting time on uncertain actions. A comprehensive plan helps you meet remediation requirements.
 
 *Contoso's challenge*
 
@@ -53,13 +53,13 @@ During a crisis, avoid confusion with a clear plan. Responsible roles can focus 
 - The workload team works with the Contoso security team to understand compliance requirements for handling personal data from both an organization perspective and external compliance perspective.
 
 - The team builds a security detection, mitigation, and escalation plan, including communication for incidents.
-- The workload team now feels just as comfortable with security incident preparedness as they do with their reliability support. They plan to practice handling incidents before they go live.
+- The team now feels just as comfortable with security incident preparedness as they do with their reliability support. They plan to practice handling incidents before they go live.
 
 ## Codify secure operations and development practices
 
 **Set clear team-level security standards for your workload's life cycle and operations, including how to write code, approve changes, release updates, and handle data.**
 
-Having solid security habits helps avoid mistakes and keeps things running smoothly. When everyone follows the same approach, it's easier to stay on track and work efficiently.
+Having robust security habits helps avoid mistakes and keeps things running smoothly. When everyone follows the same approach, it's easier to stay on track and work efficiently.
 
 Over time, sticking to these standards helps you spot ways to improve and maybe even automate steps to save time and boost consistency.
 

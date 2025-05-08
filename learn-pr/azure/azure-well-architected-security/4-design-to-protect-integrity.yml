@@ -30,7 +30,7 @@ quiz:
       explanation: "Incorrect. Scanning doesn't ensure that your code is free of malware, but it helps you identify malware before you release code to production."
   - content: "Which of these are examples of cryptographic controls?"
     choices:
-    - content: "Using Azure SQL Database's firewall function to block access to a database."
+    - content: "Using the Azure SQL Database firewall function to block access to a database."
       isCorrect: false
       explanation: "Incorrect. A firewall isn't a cryptographic control, it's a network control."
     - content: "Using code signing and encryption."
@@ -53,6 +53,6 @@ quiz:
     - content: "The report is automatically deleted after 30 days."
       isCorrect: false
       explanation: "Incorrect. The report isn't automatically deleted after 30 days, and even if it was, that wouldn't make it immutable."
-    - content: "The report is backed up to Azure Storage by using the write-once, read-many (WORM) feature."
+    - content: "The report is backed up to Azure Storage by using the WORM feature."
       isCorrect: true
       explanation: "Correct. The WORM feature of Azure Storage ensures that the report is immutable."

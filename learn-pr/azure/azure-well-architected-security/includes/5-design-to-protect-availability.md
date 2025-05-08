@@ -18,7 +18,7 @@ This approach helps keep the system up and running, even if someone tries to tak
 
 - The workload team and the workload's stakeholders know that this system must be extremely reliable because hotel guests rely on it for both business and leisure travel. If it goes down, hotels can't run properly.
 
-- They team has put a lot of effort into testing functional and nonfunctional requirements to make sure the system works well and stays operational, including using safe ways to roll out updates.
+- The team has put a lot of effort into testing functional and nonfunctional requirements to make sure the system works well and stays operational, including using safe ways to roll out updates.
 - They've focused on keeping things reliable, but they haven't paid as much attention to security. A recent update had a bug that hackers took advantage of, crashing the system for several hotels. The attack overloaded servers in one region for over four hours, causing major problems for guests and staff.
 - The attacker used the app's servers to sneak in requests to a regional storage system and pull up fake folio data. One of those fake folios was huge and caused the servers to run out of memory. Then, when users tried again, it spread the problem to all the servers.
 
@@ -62,12 +62,12 @@ If your recovery process isn't well-designed, a security problem like encrypted 
 - The system runs in active-active mode across regions, and the team has a disaster recovery plan to help restore operations in worst case scenarios.
 
 - Part of this plan involves sending backups to a third region in the United States.
-- But during a recent drill, they found out those backups were being stored in a system that wasn't checked often and didn't have strong security
-- All of the backups have been infected with malware. If they had a real disaster at that time, they wouldn't have been able to recover successfully.
+- During a recent drill, they found out those backups were being stored in a system that wasn't checked often and didn't have strong security.
+- All the backups have been infected with malware. If they had a real disaster at that time, they wouldn't have been able to recover successfully.
 
 *Applying the approach and outcomes*
 
 - The team invested time and effort to secure the backup location. They added stronger network and identity protections, and now backups are stored in a way that can't be changed or tampered with.
 
 - After reviewing their security controls, the team finds that during the recovery process, the application runs without a WAF for a period of time. They change the order of operations to close that gap.
-- Now the team is confident that the backups and the recovery process are much more secure and not easy targets anymore.
+- The team is confident that the backups and the recovery process are much more secure and not easy targets anymore.

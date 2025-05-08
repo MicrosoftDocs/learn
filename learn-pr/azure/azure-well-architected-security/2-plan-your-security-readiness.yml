@@ -42,7 +42,7 @@ quiz:
     - content: "A DDoS mitigation plan"
       isCorrect: false
       explanation: "Incorrect. Although a DDoS attack is a type of security incident, you should have a plan that focuses on all types of security incidents."
-  - content: "True or false: Contoso's use of secure development practices will help the team ensure that all code is developed in a consistent standard manner."
+  - content: "True or false: Contoso's secure development practices help the team ensure that all code is developed in a consistent standard manner."
     choices:
     - content: "True"
       isCorrect: true

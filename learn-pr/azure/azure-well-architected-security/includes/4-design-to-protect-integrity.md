@@ -1,7 +1,7 @@
 | :::image type="icon" source="../media/goal.svg":::  Make sure your system stays reliable and does what it's supposed to, without getting tampered with or disrupted. The system should keep your data safe and trustworthy from start to finish. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
-Add controls to protect everything from your code and workflows to your data and even the underlying infrastructure like the OS and run process. If any part of the system is compromised, it can open the door to bigger problems like data leaks or outages.
+Add controls to protect everything from your code and workflows to your data, and even the underlying infrastructure like the OS and run process. If any part of the system is compromised, it can open the door to bigger problems like data leaks or outages.
 
 **Example scenario**
 
@@ -11,13 +11,13 @@ Contoso Paint Systems creates vapor sensing and ventilation control systems for 
 
 **Make sure your tools, libraries, and build systems are safe from tampering. Scan for vulnerabilities during builds and while things are running.**
 
-Knowing where your software comes from and checking that it's legit throughout the life cycle helps you catch problems early and fix them before they become a problem.
+Knowing where your software comes from and checking that it's legitimate throughout the life cycle helps you catch problems early and fix them before they reach production.
 
 *Contoso's challenge*
 
 - The engineering team is setting up their build and release pipelines, but they haven't made sure the build system is secure or reliable yet.
 
-- They're using some open-source tools in both their firmware and cloud systems
+- They're using some open-source tools in both their firmware and cloud systems.
 - They've heard how supply chain attacks or insider threats can sneak in bad code that could mess with systems or leak data. If their customer's environmental reporting gets compromised, it could be a huge problem for both Contoso and the customers.
 
 *Applying the approach and outcomes*
@@ -29,7 +29,7 @@ Knowing where your software comes from and checking that it's legit throughout t
 
 ## Employ strong cryptographic mechanisms
 
-**Use strong cryptography, like encryption, certificate, and code signing, to build trust. Make sure only trusted sources can decrypt these mechanisms.**
+**Use strong cryptography, like encryption, certificates, and code signing, to build trust. Make sure only trusted sources can decrypt these mechanisms.**
 
 When you adopt this approach, only trusted sources can access or change your system and data.
 
@@ -63,5 +63,5 @@ When you adopt this approach, if you ever need to recover data, you can trust th
 
 - After doing a security gap analysis, the team realizes that the unencrypted backup is a risk.
 
-- They now encrypt the report and store it in Azure Blob Storage by using the Write Once, Read Many (WORM) setting, which keeps the file from being changed.
+- They now encrypt the report and store it in Azure Blob Storage by using the write-once, read-many (WORM) setting, which keeps the file from being changed.
 - They also add a check. The system now compares a Secure Hash Algorithm (SHA) hash of the report with the backup to make sure nothing is altered.

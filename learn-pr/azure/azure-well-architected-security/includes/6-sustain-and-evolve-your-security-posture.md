@@ -15,7 +15,7 @@ These teams are very protective of their data. They want to know that Contoso is
 
 **Analyze each part of your workflow and consider what could go wrong. Use an industry-standard methodology to classify the identified threats.**
 
-Using this approach helps you create a report that ranks attack paths by how serious they are. It also makes it easier to spot threats and weak spots quickly, and put fixes in place before they become problems.
+Threat modeling is the process of identifying, understanding, and addressing potential security threats before they become real problems. Analyzing your workload helps you create a report that ranks attack paths by how serious they are and makes it easier to spot threats and weak spots quickly.
 
 *Contoso's challenge*
 
@@ -30,7 +30,7 @@ Using this approach helps you create a report that ranks attack paths by how ser
 - After their first exercise, they find that they have well-designed controls for most threat vectors, but there are some gaps:
   - One problem was in a data cleanup task that runs after Apache Spark jobs. It had two insider threat risks for data leaks.
   - An old system used by a race team that's no longer active still had access to sensitive race data.
-- They've scheduled fixes for the next development cycle, including shutting down the legacy system.
+- They've scheduled fixes for the next development cycle, including shutting down the old system.
 
 ## Test controls yourself
 
@@ -51,7 +51,7 @@ Threats can sneak in during updates or changes, so it's smart to build vulnerabi
 - The team contacts a well-known Microsoft partner that specializes in cloud security to talk about penetration testing.
 
 - The workload team signs a Statement of Work for quarterly penetration testing, including one *white-box test* each year for extra confidence.
-- The consulting team also helps the dev team install anti-malware on dev boxes and the self-hosted build agents.
+- The consulting team also helps the development team install anti-malware on dev boxes and the self-hosted build agents.
 - Now, both the team and stakeholders feel a lot more confident that they're ready for potential threats.
 
 ## Get current, and stay current
@@ -60,15 +60,15 @@ Threats can sneak in during updates or changes, so it's smart to build vulnerabi
 
 Keeping your security strong takes ongoing effort. By learning from real-world attacks and test results, you can stay ahead of attackers who are always finding new ways to break in. Automating repetitive tasks also helps reduce human mistakes that could create risks.
 
-SDL reviews bring clarity around security features. It also helps you keep track of your workload's assets and their security reports, which cover where they came from, how they're used, and any weak spots they might have.
+SDL reviews bring clarity around security features. They also help you keep track of your workload's assets and their security reports, which cover where they came from, how they're used, and any weak spots they might have.
 
 *Contoso's challenge*
 
-- The developers that write the Apache Spark jobs are hesitant to make changes. Their mindset is "If it's not broken, don't fix it." But this means that the Python and R packages they bring into the solution are likely to get stale over time.
+- The developers that write the Apache Spark jobs are hesitant to make changes. They don't think that it's necessary. But this means that the Python and R packages they bring into the solution are likely to get stale over time.
 
 *Applying the approach and outcomes*
 
-- After the workload team reviews internal processes, they realize that if they don't keep the Apache Spark jobs up to date, they could end up with unpatched components in their system.
+- After the workload team reviews internal processes, they realize that if they don't keep the Apache Spark jobs up-to-date, they could end up with unpatched components in their system.
 
 - The teams use a new standard for the Apache Spark jobs that all technologies in use must be updated, along with their regular update and patch schedules.
-- This method helps close the security gap and lowers the risk of the entire workload running outdated software. The workload as a whole is less likely to be at risk of unpatched components. Plus, their PaaS and SaaS services help limit their exposure to this risk because they don't have to patch underlying infrastructure.
+- This method helps close the security gap and lowers the risk of the entire workload running outdated software. Plus, their PaaS and SaaS services help limit their exposure to this risk because they don't have to patch underlying infrastructure.

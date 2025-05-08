@@ -1,11 +1,11 @@
 | :::image type="icon" source="../media/goal.svg"::: Keep privacy, regulatory, application, and proprietary information safe by limiting who can access it and hiding details when needed. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
-You can classify workload data by user, usage, configuration, compliance, intellectual property, and other criteria. But no matter how it's classified, it should only be shared within trusted boundaries. To protect confidentiality, focus on access controls, opacity, and keeping an audit trail of activities related to data and the system.
+You can classify workload data by user, usage, configuration, compliance, intellectual property, and other criteria. But no matter how it's classified, it should only be shared within trusted boundaries. To protect confidentiality, focus on access controls, opacity, and keeping an audit trail of activities related to the data and system.
 
 **Example scenario**
 
-Contoso Rise Up provides a multitenant, software as a service offering that helps nonprofits manage fundraising and donations. They've been in the market for a few years and have a solid client base. The solution is built on Azure Red Hat OpenShift and Azure Database for PostgreSQL. It offers both isolated and shared tenants options to meet different budget needs. 
+Contoso Rise Up provides a multitenant, software as a service (SaaS) offering that helps nonprofits manage fundraising and donations. They've been in the market for a few years and have a solid client base. The solution is built on Azure Red Hat OpenShift and Azure Database for PostgreSQL. It offers both isolated and shared tenant options to meet different budget needs. 
 
 ## Strictly limit access
 
@@ -31,7 +31,7 @@ Even trusted users shouldn't have open-ended access. Keep permissions tight and 
 
 **Figure out what kind of data you have, how sensitive it is, and what could go wrong if it got out. Label the data accordingly so that you can apply the right level of protection where needed.**
 
-This evaluation helps you rightsize security measures. You can also identify high-risk data and components that might impact your workload or be exposed. This exercise helps get everyone on the same page about how to handle different types of data.
+This evaluation helps you rightsize security measures. You can also identify high-risk data and components that might affect your workload or be exposed. This exercise helps get everyone on the same page about how to handle different types of data.
 
 *Contoso's challenge*
 
@@ -48,7 +48,7 @@ This evaluation helps you rightsize security measures. You can also identify hig
 - The workload team follows Contoso's data classification guidelines and flags data stores, columns, storage accounts, and other storage resources with metadata to indicate the type and sensitivity of the data.
 
 - This activity helps make sure that each level of sensitive data is properly handled throughout the entire system, including logging statements and backups.
-- The team finds relatively sensitive data in a lower security database and nonsensitive data in a higher security database. So they're reorganizing to match security levels with the data type.
+- The team finds relatively sensitive data in a lower security database and nonsensitive data in a higher security database. They're reorganizing the data to match security levels with the data type.
 - They also plan to use data masking on key fields to better protect data confidentiality, so even authorized users only see what they need.
 
 ## Apply encryption at every step of the data life cycle
@@ -69,7 +69,7 @@ Sensitive data includes configuration information that's used to gain further ac
 
 *Applying the approach and outcomes*
 
-- The team now has a clear rule that all backups must be encrypted at rest, and the encryption keys must be secured in Azure Key Vault.
+- The team now has a clear rule that all backups must be encrypted at rest by using Azure Storage Service Encryption. And the encryption keys must be secured in Azure Key Vault.
 
 - Even if a backup ends up somewhere it shouldn't, the data inside it is useless without the decryption key. So a privacy breach is much less likely.
 - The disaster recovery plan now includes standard guidance about how to properly handle backups, including how and when to safely decrypt a backup.
