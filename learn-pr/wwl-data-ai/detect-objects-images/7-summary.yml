@@ -6,7 +6,7 @@ metadata:
   description: Summary
   author: ivorb
   ms.author: berryivor
-  ms.date: 11/5/2024
+  ms.date: 05/05/2024
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -16,4 +16,4 @@ labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
-
+
