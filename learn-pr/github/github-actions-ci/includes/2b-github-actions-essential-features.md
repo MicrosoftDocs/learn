@@ -30,9 +30,11 @@ This example is using the `github.ref` context to check the branch that triggere
 
 ## The contextual information available in a workflow
 
-Different contexts are available throughout a workflow run. For example, the secrets context may only be used at certain places within a job.
+Contexts allow you to access information about workflow runs, variables, runner environments, jobs, and steps.  Each context is is an object that contains properties which can be other objects or strings.  The contexts available include: `github`, `env`, `vars`, `job`, `jobs`, `steps`, `runner`, `secrets`, `strategy`, `matrix`, `needs` and `inputs`.  The table below presents these contexts with their definitions.
 
-In addition, you may only use some functions in certain places. For example, the `hashFiles` function is not available everywhere.
+
+
+Different contexts are available throughout a workflow run. For example, the secrets context may only be used at certain places within a job.  In addition, you may only use some functions in certain places. For example, the `hashFiles` function is not available everywhere.
 
 The following table lists the restrictions on where each context and special function can be used within a workflow. The listed contexts are only available for the given workflow key, and you may not use them anywhere else. Unless listed below, you may use a function anywhere.
 
