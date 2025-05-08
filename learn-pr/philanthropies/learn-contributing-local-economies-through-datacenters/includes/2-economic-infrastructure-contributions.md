@@ -1,4 +1,4 @@
-:::image type="content" source="../media/smart-city-network.png" alt-text="Screenshot of a cityscape with icons representing digital connectivity." lightbox="../media/smart-city-network.png":::
+:::image type="content" source="../media/smart-city-network.png" alt-text="Photograph of a cityscape with icons representing digital connectivity." lightbox="../media/smart-city-network.png":::
 
 As societies and economies become more digitized, the demand for digital infrastructure continues to rise. The growth and development of this infrastructure brings a wide range of benefits, both direct and indirect, to the communities where they operate. 
 
@@ -82,7 +82,7 @@ The datacenter sector represents a significant evolution of the Information and 
 
 **Supporting development of local infrastructure:**
 
-:::image type="content" source="../media/digital-skyline.png" alt-text="Screenshot of a cityscape with glowing digital lines in the foreground." lightbox="../media/digital-skyline.png":::
+:::image type="content" source="../media/digital-skyline.png" alt-text="Photograph of a cityscape with glowing digital lines in the foreground." lightbox="../media/digital-skyline.png":::
 
 Datacenter facilities play a vital role in boosting local, regional, and national economies. They contribute significantly to tax revenues through various channels such as business taxes, income taxes, goods and services taxes, and infrastructure levies. This, in turn, supports the funding of public services and enhances the overall well-being of communities. 
 
@@ -102,4 +102,4 @@ Better connectivity and internet access for residents, businesses, and schools i
 
   - By partnering with local internet service providers and leveraging datacenter infrastructure, the initiative has successfully expanded high speed internet access, benefiting residents, businesses, and schools.
 
-:::image type="content" source="../media/connected-cityscape.png" alt-text="Screenshot of a cityscape with wireless connectivity icons at dusk." lightbox="../media/connected-cityscape.png":::
+:::image type="content" source="../media/connected-cityscape.png" alt-text="Photograph of a cityscape with wireless connectivity icons at dusk." lightbox="../media/connected-cityscape.png":::

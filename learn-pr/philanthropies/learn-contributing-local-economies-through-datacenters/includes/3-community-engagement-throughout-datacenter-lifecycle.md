@@ -1,4 +1,4 @@
-:::image type="content" source="../media/financial-skyscrapers.png" alt-text="Screenshot of skyscrapers with overlaid financial charts and graphs." lightbox="../media/financial-skyscrapers.png":::
+:::image type="content" source="../media/financial-skyscrapers.png" alt-text="Photograph of skyscrapers with overlaid financial charts and graphs." lightbox="../media/financial-skyscrapers.png":::
 
 Datacenter facilities play a vital role in boosting local, regional, and national economies. They contribute significantly to tax revenues through various channels such as business taxes, income taxes, goods and services taxes, and infrastructure levies. This, in turn, supports the funding of public services and enhances the overall well-being of communities. 
 

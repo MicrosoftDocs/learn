@@ -1,4 +1,4 @@
-:::image type="content" source="../media/urban-tech-collage.png" alt-text="Screenshot of a collage combining cityscape, network cables, and digital connectivity graphics." lightbox="../media/urban-tech-collage.png":::
+:::image type="content" source="../media/urban-tech-collage.png" alt-text="Photograph of a collage combining cityscape, network cables, and digital connectivity graphics." lightbox="../media/urban-tech-collage.png":::
 
 **Opportunities and community collaboration:**
 
@@ -8,7 +8,7 @@ These contributions to local community infrastructure are developing areas and o
 
 Supporting community infrastructure is not just limited to construction, build and utilities infrastructure but also extends to supporting environmental improvements through NGO partnerships and supporting community-wide environmental, landscaping and eco-system performance improvements.
 
-:::image type="content" source="../media/green-smart-city.png" alt-text="Screenshot of a cityscape with icons representing sustainability and smart city concepts." lightbox="../media/green-smart-city.png":::
+:::image type="content" source="../media/green-smart-city.png" alt-text="Photograph of a cityscape with icons representing sustainability and smart city concepts." lightbox="../media/green-smart-city.png":::
 
 **Energy system optimization:** 
 

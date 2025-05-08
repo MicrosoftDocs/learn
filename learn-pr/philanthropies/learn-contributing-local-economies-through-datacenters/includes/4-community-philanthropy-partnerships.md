@@ -1,4 +1,4 @@
-:::image type="content" source="../media/digital-learning-icons.png" alt-text="Screenshot of a laptop keyboard with digital learning icons projected above it." lightbox="../media/digital-learning-icons.png":::
+:::image type="content" source="../media/digital-learning-icons.png" alt-text="Photograph of a laptop keyboard with digital learning icons projected above it." lightbox="../media/digital-learning-icons.png":::
 
 Datacenter developers and operators actively engage with local communities through partnerships and programs that support education, business growth, and local NGOs (Non-Governmental Organization is a non-profit organization that addresses various social, environmental, or community issues).
 
@@ -20,7 +20,7 @@ Datacenter developers and operators actively engage with local communities throu
 
 - Microsoft created the Datacenter Academy, a global initiative offering training, mentorship, practical learning through Datacenter Labs, and work experience via internship and apprenticeship. Students graduate with certifications that make them highly employable in the growing industry
 
-:::image type="content" source="../media/tech-data-icons.png" alt-text="Screenshot of a person typing on a laptop with digital icons representing technology and data." lightbox="../media/tech-data-icons.png":::
+:::image type="content" source="../media/tech-data-icons.png" alt-text="Photograph of a person typing on a laptop with digital icons representing technology and data." lightbox="../media/tech-data-icons.png":::
 
 **Philanthropic activities:** 
 
@@ -56,4 +56,4 @@ Datacenters serve as key technology hubs and drivers of innovation within commun
 
   - Meta sources materials for its datacenter from local suppliers, boosting small and medium enterprises. They also supported local farmers by funding irrigation projects
 
-:::image type="content" source="../media/server-rack-closeup.png" alt-text="Screenshot of a close-up view of a server rack with visible cables and hardware." lightbox="../media/server-rack-closeup.png":::
+:::image type="content" source="../media/server-rack-closeup.png" alt-text="Photograph of a close-up view of a server rack with visible cables and hardware." lightbox="../media/server-rack-closeup.png":::

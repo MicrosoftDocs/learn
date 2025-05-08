@@ -1,4 +1,4 @@
-:::image type="content" source="../media/team-safety-discussion.png" alt-text="Screenshot of three people in safety vests engaged in a discussion." lightbox="../media/team-safety-discussion.png":::
+:::image type="content" source="../media/team-safety-discussion.png" alt-text="Photograph of three people in safety vests engaged in a discussion." lightbox="../media/team-safety-discussion.png":::
 
 **Business support and strategy**
 
