@@ -10,7 +10,7 @@ The module also discussed key performance indicators (KPIs) used to track datace
 - Stealth Monitoring: Top Strategies for Enhancing Data Center Security: https://stealthmonitoring.com/video-monitoring/top-strategies-for-enhancing-data-center-security 
 - IBM: What is infrastructure monitoring?: https://www.ibm.com/think/topics/infrastructure-monitoring 
 - Securetech: Monitoring and Troubleshooting Data Center Networks: https://securetechinstitute.com/monitoring-and-troubleshooting-data-center-networks/ 
-- Security Journa lAmericas: Data center compliance in a complex regulatory landscape: https://securityjournalamericas.com/data-center-compliance-regulatory/ 
+- Security Journal Americas: Data center compliance in a complex regulatory landscape: https://securityjournalamericas.com/data-center-compliance-regulatory/ 
 - Sunbird: Top 10 Data Center KPIs: https://www.sunbirddcim.com/infographic/top-10-data-center-kpis 
 - Sunbird: Top 40 Data Center KPIs: https://assets.new.siemens.com/siemens/assets/api/uuid:a963b0d3-b03c-4b6d-91f5-048eee169be9/top-40-data-center-kpis-ebook-sunbird.pdf 
 - Enconnex: Data Center Performance Metrics: Understanding the KPIs: https://blog.enconnex.com/data-center-performance-metrics-kpis-examples 

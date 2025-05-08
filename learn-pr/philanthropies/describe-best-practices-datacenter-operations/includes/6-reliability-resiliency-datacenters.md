@@ -1,4 +1,4 @@
-**What are reliability and resiliency in datacenters:**
+**What are reliability and resiliency in datacenters?**
 
 Reliability and resiliency are critical to datacenter operations, as they ensure consistent and uninterrupted delivery of services.
 

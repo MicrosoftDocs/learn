@@ -16,8 +16,9 @@
 
 **What are the key concepts of disaster recovery?**
 
-| **Recovery time objective (RTO)**  | The maximum acceptable time that systems can be  down after a disaster. <br />**Example**: A 4-hour RTO means systems must be operational within 4 hours of an outage. |
+|                                    |                                                              |
 | ---------------------------------- | ------------------------------------------------------------ |
+| **Recovery time objective (RTO)**  | The maximum acceptable time that systems can be  down after a disaster. <br />**Example**: A 4-hour RTO means systems must be operational within 4 hours of an outage. |
 | **Recovery point objective (RPO)** | The maximum acceptable amount of data loss, measured in time. <br />**Example**: A 1-hour RPO means no more than 1 hour's worth of data can be lost. |
 | **Disaster recovery plans (DRPs)** | A disaster recovery plan is a documented strategy detailing how to respond to various disaster scenarios. |
 | **Backup and restore**             | Backing up data and restoring it after an incident is the foundation of disaster recovery.  <br />Types of backups: Full, incremental, differential  Backup locations: On-site, off-site, or cloud-based |

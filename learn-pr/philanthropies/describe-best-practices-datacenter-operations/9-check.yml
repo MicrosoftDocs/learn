@@ -44,10 +44,10 @@ quiz:
   - content: Improper datacenter architecture can impact latency. What features reduce queuing and processing times? 
     choices:
     - content: Add high-speed connections like fiber-optic cables and optimized routing. 
-      isCorrect: true
+      isCorrect: false
       explanation: Incorrect. While high-speed connections and optimized routing are essential for reducing network latency, they don't directly address queuing and processing times within the datacenter. Queuing and processing times are more influenced by server design, processor performance, and software optimization.
     - content: Implement server designs with high-performance processors, optimize software to minimize processing delays, ensure proper resource allocation. 
-      isCorrect: false
+      isCorrect: true
       explanation: Correct. Implement server designs with high-performance processors, optimize software to minimize processing delays, ensure proper resource allocation.   
     - content: Upgrade to faster storage technologies to reduce access times and improve overall data transfer speeds.  
       isCorrect: false
@@ -59,13 +59,13 @@ quiz:
   - content: What are the benefits of predictive maintenance in preventing downtime? 
     choices:
     - content: Predictive maintenance is reactive, meaning it's performed when a failure or issue is detected. This type of maintenance involves troubleshooting, identifying the root cause of the problem, and restoring the system to its normal operation. 
-      isCorrect: true
+      isCorrect: false
       explanation: Incorrect. This describes corrective or reactive maintenance, not predictive maintenance. Corrective maintenance is performed after a failure has occurred, focusing on troubleshooting and fixing the issue. Predictive maintenance, on the other hand, aims to predict and prevent failures before they happen using data analytics and machine learning.
     - content: Predictive maintenance is a proactive approach that involves using routine tasks designed to prevent issues before they occur. It's typically scheduled and planned well in advance.  
       isCorrect: false
       explanation: Incorrect. This describes preventive maintenance, not predictive maintenance. Preventive maintenance involves routine, scheduled tasks to prevent issues, whereas predictive maintenance uses advanced technologies to predict and address potential failures before they occur.
     - content: Predictive maintenance is a newer and more advanced concept in datacenter maintenance. It uses technology, data analytics, and machine learning to predict potential failures before they occur, allowing for proactive intervention. 
-      isCorrect: false
+      isCorrect: true
       explanation: Correct. Predictive maintenance is a newer and more advanced concept in datacenter maintenance. It uses technology, data analytics, and machine learning to predict potential failures before they occur, allowing for proactive intervention. 
     - content: Predictive maintenance refers to the daily, weekly, or monthly operational tasks that keep everything running smoothly, even when no major issues have been identified.  
       isCorrect: false
