@@ -1,4 +1,4 @@
-Scaling out enables you to run more instances of a web app. The resources available to each instance are determined by the pricing tier used by the App Service plan that hosts the web service. Each pricing tier specifies the computing power provided, together with the memory and maximum number of instances that can be created.
+Scaling out enables you to run more instances of a web app. The pricing tier determines resources available to each instance used by the App Service plan that hosts the web service. Each pricing tier specifies the computing power provided, together with the memory and maximum number of instances that can be created.
 
 If you initially deploy a web app using a relatively cheap pricing tier, you might find the resources are sufficient to start with. But the resources might become too limited if demand for your web service grows, or if you add features that require more power. In this case, you can scale up to a more powerful pricing tier.
 
