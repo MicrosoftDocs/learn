@@ -75,3 +75,4 @@ Over time, sticking to these standards helps you spot ways to improve and maybe 
 
 - The team invests in learning about current industry-standard secure development and operations practices and starts using measures that they hadn't used before.
 - The team also shares their learnings with the Contoso security team so that everyone across the company can benefit from the improvements.
+

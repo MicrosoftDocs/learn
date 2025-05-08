@@ -14,39 +14,39 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Which of the following is an example of a user with a need to have access to confidential customer data?'
+  - content: "Which type of user needs access to confidential customer data?"
     choices:
-    - content: 'A customer service representative who needs to resolve customer issues.'
+    - content: "A customer service representative who needs to resolve customer problems."
       isCorrect: true
-      explanation: 'Correct. A customer service representative may have a legitimate need to access customer data to resolve customer issues.'
-    - content: 'A marketing employee who sends out marketing emails to customers.'
+      explanation: "Correct. A customer service representative might legitimately need to access customer data to resolve customer problems."
+    - content: "A marketing employee who sends out marketing emails to customers."
       isCorrect: false
-      explanation: 'Incorrect. A marketing employee does not have a legitimate need to access customer data.'
-    - content: 'A sales executive who needs to create a report for management.'
+      explanation: "Incorrect. A marketing employee doesn't have a legitimate need to access customer data."
+    - content: "A sales executive who needs to create a report for management."
       isCorrect: false
-      explanation: 'Incorrect. A sales executive does not have a legitimate need to access customer data.'
-    - content: 'A finance employee who needs to create invoices for customers.'  
+      explanation: "Incorrect. A sales executive doesn't have a legitimate need to access customer data."
+    - content: "A finance employee who needs to create invoices for customers."  
       isCorrect: false
-      explanation: 'Incorrect. A finance employee does not have a legitimate need to access customer data.'
-  - content: 'True of false: data classification is a process that you should perform only once.'
+      explanation: "Incorrect. A finance employee doesn't have a legitimate need to access customer data."
+  - content: "True of false: Data classification is a process that you should perform only once."
     choices:
     - content: "True"
       isCorrect: false
       explanation: "Incorrect. Data classification is an ongoing process that you should perform regularly."
-    - content: 'False'
+    - content: "False"
       isCorrect: true
-      explanation: 'Correct. Data classification is an ongoing process that you should perform regularly.'
-  - content: 'What is an example of how Contoso applied encryption to protect data integrity?'
+      explanation: "Correct. Data classification is an ongoing process that you should perform regularly."
+  - content: "What is an example of how Contoso applied encryption to protect data integrity?"
     choices:
     - content: "They used Azure Disk Encryption to encrypt data on their virtual machines."
       isCorrect: false
       explanation: "Incorrect, the workload doesn't use virtual machines."
-    - content: 'All of the data was encrypted by default.'
+    - content: "All of the data was encrypted by default."
       isCorrect: false
-      explanation: 'Incorrect, the storage accounts were not encrypted by default.'
-    - content: 'They used Azure Storage Service Encryption to encrypt data in their storage accounts.'
+      explanation: "Incorrect, the storage accounts weren't encrypted by default."
+    - content: "They used Azure Storage Service Encryption to encrypt data in their storage accounts."
       isCorrect: true
-      explanation: "Correct, the team encrypted the storage account used for their DR backup."
-    - content: 'They used Azure Key Vault to encrypt data in their storage accounts.'
+      explanation: "Correct, the team encrypted the storage account used for their disaster recovery backup."
+    - content: "They used Azure Key Vault to encrypt data in their storage accounts."
       isCorrect: false
       explanation: "Incorrect. Azure Key Vault is used to store encryption keys, not to encrypt data."
