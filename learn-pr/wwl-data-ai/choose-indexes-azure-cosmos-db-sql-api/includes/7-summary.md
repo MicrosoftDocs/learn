@@ -13,3 +13,4 @@ For more information about the topics discussed in this module, see:
 
 [/azure/cosmos-db/index-overview]: /azure/cosmos-db/index-overview
 [/azure/cosmos-db/index-policy]: /azure/cosmos-db/index-policy
+

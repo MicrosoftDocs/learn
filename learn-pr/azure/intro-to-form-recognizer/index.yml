@@ -6,7 +6,7 @@ metadata:
   author: laujan
   ms.author: lajanuar
   manager: nitinme
-  ms.date: 07/30/2024
+  ms.date: 04/29/2025
   ms.service: azure-ai-document-intelligence
   ms.topic: module
   ms.collection:
@@ -45,4 +45,4 @@ units:
 - learn.azure.intro-to-form-recognizer.summary
 badge:
   uid: learn.azure.intro-to-form-recognizer.badge
-
+

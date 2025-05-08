@@ -6,7 +6,7 @@ metadata:
   description: Check your knowledge of using DALL-E in Azure OpenAI service
   author: ivorb
   ms.author: berryivor
-  ms.date: 03/18/2025
+  ms.date: 04/29/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -14,22 +14,22 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "You want to use a model in Azure OpenAI to generate images. Which model should you use?"
+  - content: "You want to use a model in Azure AI Foundry to generate images. Which model should you use?"
     choices:
     - content: "DALL-E"
       isCorrect: true
       explanation: "The DALL-E model is used to generate images based on natural language prompts."
-    - content: "GPT-35-Turbo"
+    - content: "GPT-4o"
       isCorrect: false
-      explanation: "The GPT 3.5 Turbo model is used to generate natural language text."
-    - content: "Text-Davinci"
+      explanation: "The GPT 4o model is used to generate natural language text."
+    - content: "text-embedding-ada-002"
       isCorrect: false
-      explanation: "The Text-Davinci model is used to generate natural language text."
-  - content: "Which playground in Azure AI Studio should you use to utilize the DALL-E model?"
+      explanation: "The text-embedding-ada-002 model is used to generate embeddings (vectors that represent text tokens)."
+  - content: "Which playground in Azure AI Foundry portal should you use to utilize the DALL-E model?"
     choices:
-    - content: "Completions"
+    - content: "Agents"
       isCorrect: false
-      explanation: "The Completions playground is used to explore GPT 3 and earlier language generation models."
+      explanation: "The Agents playground is used to test AI agents."
     - content: "Chat"
       isCorrect: false
       explanation: "The Chat playground is used to explore GPT 3 and earlier language generation models."
@@ -48,4 +48,4 @@ quiz:
       isCorrect: false
       explanation: "The size of the desired image is specified in the **size** parameter"
  
-
+

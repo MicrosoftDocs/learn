@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Define Private Link Service and private endpoint
   description: "Define Private Link Service and private endpoint"
-  ms.date: 04/16/2025
+  ms.date: 05/01/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

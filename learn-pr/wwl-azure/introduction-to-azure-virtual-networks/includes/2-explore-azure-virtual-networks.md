@@ -1,7 +1,10 @@
 
-Azure Virtual Networks (VNets) are the fundamental building block of your private network in Azure. VNets enable you to build complex virtual networks that are similar to an on-premises network, with other benefits of Azure infrastructure such as scale, availability, and isolation.
 
-Each VNet you create has its own CIDR block and can be linked to other VNets and on-premises networks as long as the CIDR blocks don't overlap. You also have control of DNS server settings for VNets, and segmentation of the virtual network into subnets.
+[Azure Virtual Networks (VNets)](/azure/virtual-network/virtual-networks-overview) are the fundamental building block of your private network in Azure. VNets enable you to build complex virtual networks that are similar to an on-premises network, with other benefits of Azure infrastructure such as scale, availability, and isolation.
+
+This video reviews the basics of IP addressing and subnetting. 
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3813e403-1608-4af1-9876-da95c1703230]
 
 ## Capabilities of Azure Virtual Networks
 
@@ -35,15 +38,6 @@ In addition, these address ranges are reserved.
 - 169.254.0.0/16 (Link-local)
 - 168.63.129.16/32 (Internal DNS)
 
-Azure assigns resources in a virtual network a private IP address from the address space that you create. For example, if you deploy a VM in a VNet with subnet address space 192.168.1.0/24, the VM is assigned a private IP like 192.168.1.4. Azure reserves the first four and last IP address for a total of five IP addresses within each subnet. These addresses are x.x.x.0-x.x.x.3 and the last address of the subnet.
-
-For example, the IP address range of 192.168.1.0/24 has the following reserved addresses:
-
-- 192.168.1.0 
-- 192.168.1.1 (Reserved by Azure for the default gateway.)
-- 192.168.1.2, 192.168.1.3 (Reserved by Azure to map the Azure DNS IPs to the VNet space.)
-- 192.168.1.255 (Network broadcast address.)
-
 **Subnets**
 
 A subnet is a range of IP address in the VNet. You segment VNets into different size subnets. You then deploy Azure resources in a specific subnet. Just like in a traditional network, subnets allow you to segment your VNet address space into segments that are appropriate for the organization's internal network. The smallest supported IPv4 subnet is /29, and the largest is /2 (using CIDR subnet definitions). IPv6 subnets must be exactly /64 in size. When planning to implement subnets, consider:
@@ -64,15 +58,6 @@ When planning to implement virtual networks, you need to consider:
 - Is there any isolation required for administrative purposes?
 - Are you using any Azure services that create their own VNets?
 
-### Fundamental IP addressing and subnetting (video)
 
-This video reviews the basics of IP addressing and subnetting. 
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3813e403-1608-4af1-9876-da95c1703230]
-
-> [!TIP]
-> It's important to plan your naming convention for your resources. A well-chosen name helps you quickly identify the resource's type, its associated workload, its deployment environment, and the Azure region hosting it. For example, a public IP resource for a production SharePoint workload residing in the West US region might be pip-sharepoint-prod-westus-001
-
-:::image type="content" source="../media/components-azure-resource-name-e0dedd6c.png" alt-text="Diagram of a resource naming example.":::
 
 Choose the best response for each question.
