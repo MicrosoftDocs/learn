@@ -9,7 +9,7 @@ Data is crucial because it helps make informed decisions in many areas. By analy
 ## What is a datacenter?
 
 >[!div class="mx-imgBorder"]
->[![Screenshot of a datacenter.](../media/datacenter.jpg)](../media/datacenter.jpg#lightbox)
+>[![Screenshot of a large-scale, secure datacenter campus with multiple identical buildings, extensive cooling infrastructure.](../media/datacenter.jpg)](../media/datacenter.jpg#lightbox)
 
 A datacenter is a **specialized facility** designed to house computers, servers, storage systems, and networking equipment. Its purpose is to provide a secure, reliable, and efficient environment for storing, managing, and processing large amounts of data. Datacenters power a wide range of digital services, including hosting websites, cloud computing, data storage, and online applications, ensuring that data is accessible and services are operational 24/7.
 

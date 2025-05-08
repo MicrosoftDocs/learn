@@ -3,7 +3,7 @@ The history of datacenters is closely linked to the development of computing tec
 ## Early Computing (1940s - 1950s)
 
 >[!div class="mx-imgBorder"]
->[![Screenshot of early computing.](../media/early-computing.png)](../media/early-computing.png#lightbox)
+>[![Screenshot of a historical photograph of early computing equipment, showcasing large machines and punch card systems.](../media/early-computing.png)](../media/early-computing.png#lightbox)
 
 Mainframes and Early Computing:
 
@@ -19,7 +19,7 @@ Challenges:
 ## The Birth of Modern Datacenters (1960s - 1970s)
 
 >[!div class="mx-imgBorder"]
->[![Screenshot of the birth of modern datacenters.](../media/birth-of-modern-datacenters.png)](../media/birth-of-modern-datacenters.png#lightbox)
+>[![Screenshot of a historical photograph of early mainframe computers in a data center, showcasing large machines and punch card systems.](../media/birth-of-modern-datacenters.png)](../media/birth-of-modern-datacenters.png#lightbox)
 
 Early Data Storage Needs:
 
@@ -33,7 +33,7 @@ Cooling and Power Management:
 ## Growth and Expansion of Commercial Datacenters (1980s)
 
 >[!div class="mx-imgBorder"]
->[![Screenshot of the growth and expansion of commercial datacenters.](../media/growth-and-expansion-of-commerical-datacenters.png)](../media/growth-and-expansion-of-commerical-datacenters.png#lightbox)
+>[![Screenshot of a historical photograph of two technicians working on early computing equipment in a data center.](../media/growth-and-expansion-of-commerical-datacenters.png)](../media/growth-and-expansion-of-commerical-datacenters.png#lightbox)
 
 First Commercial Datacenters:
 
@@ -47,7 +47,7 @@ Client-Server Architecture:
 ## Internet Explosion and the Dot-Com Boom (1990s)
 
 >[!div class="mx-imgBorder"]
->[![Screenshot of the Internet explosion and the Dot-Com boom.](../media/internet-explosion-and-dot-com-boom.png)](../media/internet-explosion-and-dot-com-boom.png#lightbox)
+>[![Screenshot of a historical photograph of a modern skyscraper with the AT&T logo, representing the era of the Internet Explosion and the Dot-Com Boom.](../media/internet-explosion-and-dot-com-boom.png)](../media/internet-explosion-and-dot-com-boom.png#lightbox)
 
 Internet and Web Hosting:
 
@@ -89,7 +89,7 @@ Early Network Connectivity:
 ## The Cloud Era and Virtualization (2000s)
 
 >[!div class="mx-imgBorder"]
->[![Screenshot of the Cloud Era and Virtualization.](../media/cloud-era-and-virtualization.png)](../media/cloud-era-and-virtualization.png#lightbox)
+>[![Screenshot of a historical photograph of a computer room with multiple monitors and storage units, representing the Cloud Era and Virtualization.](../media/cloud-era-and-virtualization.png)](../media/cloud-era-and-virtualization.png#lightbox)
 
 Virtualization Technology:
 
@@ -103,7 +103,7 @@ Cloud Computing Emerges:
 ## Software-Defined Datacenters and Hyper-Scale Growth (2010s)
 
 >[!div class="mx-imgBorder"]
->[![Screenshot of the Software-Defined Datacenters and Hyper-Scale Growth.](../media/software-defined-datacenters-hyper-scale-growth.jpg)](../media/software-defined-datacenters-hyper-scale-growth.jpg#lightbox)
+>[![Screenshot of a modern data center with multiple buildings and extensive infrastructure, representing the era of Software-Defined Datacenters and Hyper-Scale Growth.](../media/software-defined-datacenters-hyper-scale-growth.jpg)](../media/software-defined-datacenters-hyper-scale-growth.jpg#lightbox)
 
 Software-Defined Infrastructure (SDI):
 
@@ -121,7 +121,7 @@ Energy Efficiency and Sustainability:
 ## The Current State and Future Trends (2020s and beyond)
 
 >[!div class="mx-imgBorder"]
->[![Screenshot of the Current State and Future Trends.](../media/current-state-and-future-trends.png)](../media/current-state-and-future-trends.png#lightbox)
+>[![Screenshot of a modern data center with rows of server racks, representing the current state and future trends in data center technology.](../media/current-state-and-future-trends.png)](../media/current-state-and-future-trends.png#lightbox)
 
 Edge Computing:
 

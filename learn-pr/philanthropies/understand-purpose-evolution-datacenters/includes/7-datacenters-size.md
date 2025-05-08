@@ -1,5 +1,5 @@
 >[!div class="mx-imgBorder"]
->[![Screenshot of Megawatts or Square feet.](../media/megawatts-square-feet.jpg)](../media/megawatts-square-feet.jpg#lightbox)
+>[![Screenshot of a modern datacenter's server rack, highlighting the significant power capacity measured in megawatts (MW) compared to physical space.](../media/megawatts-square-feet.jpg)](../media/megawatts-square-feet.jpg#lightbox)
 
 **Did you notice** that when news articles or industry reports talk about the size of datacenters, they usually mention megawatts (MW) instead of square feet? This is for a very important reason: megawatts measure the power capacity of the datacenter, while square feet measure its physical space.
 

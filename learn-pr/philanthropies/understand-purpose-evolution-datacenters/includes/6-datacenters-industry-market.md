@@ -1,5 +1,5 @@
 >[!div class="mx-imgBorder"]
->[![Screenshot of the diagram shows the Data Center Market Size To Hit Around USD 364.62 Bn by 2034.](../media/data-center-market-size.png)](../media/data-center-market-size.png#lightbox)
+>[![Screenshot of a bar chart showing the projected growth in the datacenter industry from 2023 to 2034, highlighting the rapid expansion and increasing investment in data storage and internet services.](../media/data-center-market-size.png)](../media/data-center-market-size.png#lightbox)
 
 The datacenter industry is growing faster than ever. Datacenters are massive buildings where companies store huge amounts of data, run websites, and support all kinds of internet services (like social media, gaming, or shopping platforms).
 
@@ -11,7 +11,7 @@ The datacenter industry is growing faster than ever. Datacenters are massive bui
 ## What's driving the growth of datacenters?
 
 >[!div class="mx-imgBorder"]
->[![Screenshot of the datacenters.](../media/driving-the-growth-of-datacenters.jpg)](../media/driving-the-growth-of-datacenters.jpg#lightbox)
+>[![Screenshot of a modern datacenter's server rack, showcasing the intricate network of cables and illuminated components that drive the growth of datacenters.](../media/driving-the-growth-of-datacenters.jpg)](../media/driving-the-growth-of-datacenters.jpg#lightbox)
 
 Several key things are making datacenters even more important in 2025:
 
