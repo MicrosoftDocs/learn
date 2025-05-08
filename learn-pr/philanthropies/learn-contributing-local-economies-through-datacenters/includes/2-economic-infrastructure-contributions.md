@@ -4,7 +4,7 @@ As societies and economies become more digitized, the demand for digital infrast
 
 The datacenter sector represents a significant evolution of the Information and Communication Technology (ICT) and broader technology sectors. For example, the computing industry in Ireland supported more than 90,000 jobs in 2020, with these jobs growing at more than twice the rate of overall jobs growth and being amongst the best-paying jobs in Ireland. Datacenter development in Ireland and other countries reflects the growing complexity and scale of technological needs in our increasingly digital world.
 
-**Examples include:**
+## Examples include
 
 - **Economic growth:**
 
@@ -12,7 +12,7 @@ The datacenter sector represents a significant evolution of the Information and 
 
   - Indirect employment in sectors like design, construction, logistics, and maintenance, particularly during construction and setup phases. 
 
-  - Development of new “cloud regions” and cloud infrastructure leads to large opportunities for new employment both directly within the delivery and management of this infrastructure but also indirectly across the ICT and digital sectors enabling organizations to leverage the latest technologies to develop new products, solutions, tools and platforms. 
+  - Development of new "cloud regions" and cloud infrastructure leads to large opportunities for new employment both directly within the delivery and management of this infrastructure but also indirectly across the ICT and digital sectors enabling organizations to leverage the latest technologies to develop new products, solutions, tools and platforms. 
 
   - Datacenter construction and operations bring significant investments into local economies and create new opportunities to grow local supply chains. 
 
@@ -80,7 +80,7 @@ The datacenter sector represents a significant evolution of the Information and 
 
       - The aim is to create a landscape where the community has the flexibility to grow in different directions.
 
-**Supporting development of local infrastructure:**
+## Supporting development of local infrastructure
 
 :::image type="content" source="../media/digital-skyline.png" alt-text="Photograph of a cityscape with glowing digital lines in the foreground." lightbox="../media/digital-skyline.png":::
 
@@ -102,4 +102,4 @@ Better connectivity and internet access for residents, businesses, and schools i
 
   - By partnering with local internet service providers and leveraging datacenter infrastructure, the initiative has successfully expanded high speed internet access, benefiting residents, businesses, and schools.
 
-:::image type="content" source="../media/connected-cityscape.png" alt-text="Photograph of a cityscape with wireless connectivity icons at dusk." lightbox="../media/connected-cityscape.png":::
+    :::image type="content" source="../media/connected-cityscape.png" alt-text="Photograph of a cityscape with wireless connectivity icons at dusk." lightbox="../media/connected-cityscape.png":::

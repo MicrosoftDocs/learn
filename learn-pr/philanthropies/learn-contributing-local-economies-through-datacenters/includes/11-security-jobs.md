@@ -1,4 +1,4 @@
-**Security:**
+## Security
 
 - **Physical security managers** oversee the identification, mitigation, and management of physical and operational security threats to protect infrastructure, people, and assets of the datacenter. They design and implement security controls, develop procedures, and monitor daily security activities across networks, systems, tools, and physical environments. This role involves preparing for and responding to safety and security risks, collaborating with internal stakeholders and external authorities, and driving innovation through process and technology improvements. Security managers analyze long-term, high-impact risks, develop mitigation strategies, and lead teams in executing security operations, including protection services for senior leadership. They also focus on employee development, fostering partnerships, and aligning security capabilities with organizational needs to enhance overall security operations.
 

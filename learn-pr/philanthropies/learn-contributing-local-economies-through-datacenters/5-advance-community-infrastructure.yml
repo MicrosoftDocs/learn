@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.philanthropies.learn-contributing-local-economies-through-datacenters.advancing-community-infrastructure
+uid: learn.philanthropies.learn-contributing-local-economies-through-datacenters.advance-community-infrastructure
 title: Advancing community infrastructure
 metadata:
   title: Advancing community infrastructure
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-advancing-community-infrastructure.md)]
+  [!include[](includes/5-advance-community-infrastructure.md)]

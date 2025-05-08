@@ -1,6 +1,6 @@
 :::image type="content" source="../media/cable-connection.png" alt-text="Photograph of a hand connecting cables in an electronic device." lightbox="../media/cable-connection.png":::
 
-**Operations:**
+## Operations
 
 Datacenter operations (DCOps) includes management and maintenance of the day-to-day activities and infrastructure of a datacenter, ensuring its systems, equipment, and services operate smoothly and efficiently. From an organizational standpoint, DCOps consists of multiple teams managing different aspects of datacenter operations, from physical infrastructure to IT services. Their primary focus is maintaining uptime, ensuring efficiency, and providing continuous support to both internal and external clients.
 

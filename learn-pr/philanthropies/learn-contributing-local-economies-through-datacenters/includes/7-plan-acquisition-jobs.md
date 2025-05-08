@@ -1,6 +1,6 @@
 :::image type="content" source="../media/business-handshake.png" alt-text="Photograph of a close-up handshake in an indoor setting." lightbox="../media/business-handshake.png":::
 
-**Planning and acquisition:**
+## Planning and acquisition
 
 - **Lease and land development careers**: Lease strategy and execution strategy managers, land acquisition managers, land due diligence managers
 

@@ -28,7 +28,7 @@ Datacenter developers recognize the need to engage with communities throughout t
 
 - These initiatives complement or are part of existing local planning engagement requirements. Developers must meet these requirements to secure planning consent, facilitate public engagement, and keep stakeholders informed as mandated by local planning laws.
 
-**Examples**: 
+## Examples
 
 - In Tennessee, Google transformed unused land near its datacenters into parks and recreational spaces, turning potential challenges into valuable community assets. 
 

@@ -1,6 +1,6 @@
 :::image type="content" source="../media/industrial-tablet-check.png" alt-text="Photograph of a person using a tablet in an industrial facility." lightbox="../media/industrial-tablet-check.png":::
 
-**Construction:**
+## Construction
 
 - **Construction Project Managers, Site Leaders, and Electrical and Mechanical Engineers** are key players in building a datacenter's physical infrastructure. They oversee construction, design, and installation, ensuring the facility meets specifications, operates efficiently, and adheres to safety and performance standards.
 

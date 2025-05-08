@@ -1,6 +1,6 @@
 :::image type="content" source="../media/team-safety-discussion.png" alt-text="Photograph of three people in safety vests engaged in a discussion." lightbox="../media/team-safety-discussion.png":::
 
-**Business support and strategy**
+## Business support and strategy
 
 Roles like Business Program Managers, Technical Program Managers, CSR, Community and Government affairs, Communications, HR, Finance, Legal etc. 
 

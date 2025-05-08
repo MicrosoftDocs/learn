@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.philanthropies.learn-contributing-local-economies-through-datacenters.planning-acquisition-jobs
+uid: learn.philanthropies.learn-contributing-local-economies-through-datacenters.plan-acquisition-jobs
 title: Planning and acquisition jobs
 metadata:
   title: Planning and acquisition jobs
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/7-planning-acquisition-jobs.md)]
+  [!include[](includes/7-plan-acquisition-jobs.md)]
