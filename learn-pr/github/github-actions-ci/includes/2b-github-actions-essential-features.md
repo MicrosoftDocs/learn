@@ -34,18 +34,18 @@ Contexts allow you to access information about workflow runs, variables, runner 
 
 | Context |	Description |
 :---------|:--------------------------------------------------
-github | Information about the workflow run. For more information, see github context.
-env |	Contains variables set in a workflow, job, or step. For more information, see env context.
-vars |	Contains variables set at the repository, organization, or environment levels. For more information, see vars context.
-job	|	Information about the currently running job. For more information, see job context.
-jobs |	For reusable workflows only, contains outputs of jobs from the reusable workflow. For more information, see jobs context.
-steps	|	Information about the steps that have been run in the current job. For more information, see steps context.
-runner	|	Information about the runner that is running the current job. For more information, see runner context.
-secrets	|	Contains the names and values of secrets that are available to a workflow run. For more information, see secrets context.
-strategy	|	Information about the matrix execution strategy for the current job. For more information, see strategy context.
-matrix	|	Contains the matrix properties defined in the workflow that apply to the current job. For more information, see matrix context.
-needs	|	Contains the outputs of all jobs that are defined as a dependency of the current job. For more information, see needs context.
-inputs	|	Contains the inputs of a reusable or manually triggered workflow. For more information, see inputs context.
+github | Information about the workflow run. For more information, see [github context](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#github-context).
+env |	Contains variables set in a workflow, job, or step. For more information, see [env context](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#env-context).
+vars |	Contains variables set at the repository, organization, or environment levels. For more information, see [vars context](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#vars-context).
+job	|	Information about the currently running job. For more information, see [job context](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#job-context).
+jobs |	For reusable workflows only, contains outputs of jobs from the reusable workflow. For more information, see [jobs context](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#jobs-context).
+steps	|	Information about the steps that have been run in the current job. For more information, see [steps context](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#steps-context).
+runner	|	Information about the runner that is running the current job. For more information, see [runner context](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#runner-context).
+secrets	|	Contains the names and values of secrets that are available to a workflow run. For more information, see [secrets context](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#secrets-context).
+strategy	|	Information about the matrix execution strategy for the current job. For more information, see [strategy context](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#strategy-context).
+matrix	|	Contains the matrix properties defined in the workflow that apply to the current job. For more information, see [matrix context](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#matrix-context).
+needs	|	Contains the outputs of all jobs that are defined as a dependency of the current job. For more information, see [needs context](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#needs-context).
+inputs	|	Contains the inputs of a reusable or manually triggered workflow. For more information, see [inputs context](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#inputs-context).
 
 
 Different contexts are available throughout a workflow run. For example, the secrets context may only be used at certain places within a job.  In addition, you may only use some functions in certain places. For example, the `hashFiles` function is not available everywhere.
