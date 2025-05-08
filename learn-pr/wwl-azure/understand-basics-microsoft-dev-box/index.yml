@@ -3,7 +3,7 @@ uid: learn.wwl.understand-basics-microsoft-dev-box
 metadata:
   title: Understand the basics of Microsoft Dev Box
   description: "This module discusses the fundamentals of the Microsoft dev Box, its key concepts, and architecture."
-  ms.date: 05/06/2025
+  ms.date: 05/08/2025
   author: wwlpublish
   ms.author: fkhan
   ms.topic: module
@@ -13,7 +13,7 @@ metadata:
   ms.service: dev-box
   ai-usage: human-only
 title: Understand the basics of Microsoft Dev Box
-summary: This module describes the basics of platform engineering and IDP and how Microsoft Dev Box service fits in that ecosystem. It covers fundamentals of the service along with an architectural review and key concepts.
+summary: In this module, you explore how Microsoft Dev Box supports platform engineering initiatives by enabling the rapid delivery of secure, cloud-based development environments. You learn how Dev Box fits into Internal Developer Platforms (IDPs) by offering self-service provisioning, customizable images, and built-in integration with tools like Microsoft Entra ID and Intune. Through this introduction, discover how platform engineering principles—such as standardization, automation, and governance—empower development teams to focus on building software while IT and platform teams ensure consistency, security, and scalability.
 abstract: |
   By the end of this module, you'll be able to:
 
@@ -37,8 +37,11 @@ roles:
 products:
 - azure
 subjects:
+- cloud-computing
+- devops
 - infrastructure
 - platform-engineering
+- virtual-machine
 units:
 - learn.wwl.understand-basics-microsoft-dev-box.introduction
 - learn.wwl.understand-basics-microsoft-dev-box.learn-fundamentals-microsoft-dev-box
