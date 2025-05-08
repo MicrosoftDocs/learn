@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.security-copilot-describe-agents-module-assessment
+uid: learn.security-copilot-describe-agents.module-assessment
 title: Module assessment
 metadata:
   title: Module assessment
@@ -10,7 +10,7 @@ metadata:
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-  I doai_generated_module_assessment: false
+  ai_generated_module_assessment: false
 durationInMinutes: 2
 
 content: |
