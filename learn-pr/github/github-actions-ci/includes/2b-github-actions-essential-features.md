@@ -30,7 +30,7 @@ This example is using the `github.ref` context to check the branch that triggere
 
 ## The contextual information available in a workflow
 
-Contexts allow you to access information about workflow runs, variables, runner environments, jobs, and steps.  Each context is is an object that contains properties which can be other objects or strings.  The contexts available include: `github`, `env`, `vars`, `job`, `jobs`, `steps`, `runner`, `secrets`, `strategy`, `matrix`, `needs` and `inputs`.  The table below presents these contexts with their description.
+Contexts allow you to access information about workflow runs, variables, runner environments, jobs, and steps.  Each context is is an object that contains properties which can be other objects or strings.  The contexts available include: `github`, `env`, `vars`, `job`, `jobs`, `steps`, `runner`, `secrets`, `strategy`, `matrix`, `needs` and `inputs`.  The table below presents these contexts with their descriptions.
 
 | Context |	Description |
 :---------|:---------------------------------------------------------------------------------
