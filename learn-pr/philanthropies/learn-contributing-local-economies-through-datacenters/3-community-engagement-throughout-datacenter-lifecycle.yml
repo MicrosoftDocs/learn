@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.learn-contributing-local-economies-through-datacenters.community-engagement-throughout-datacenter-lifecycle
+title: Community engagement throughout the datacenter lifecycle
+metadata:
+  title: Community engagement throughout the datacenter lifecycle
+  description: This content is a part of the Learn about contributing to local economies through datacenters.
+  ms.date: 05/08/2025
+  author: kiranchandratrey
+  ms.author: elenasim
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/community-engagement-throughout-datacenter-lifecycle.md)]

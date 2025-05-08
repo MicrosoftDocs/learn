@@ -1,0 +1,87 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.learn-contributing-local-economies-through-datacenters.check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Answer the following questions to see what you learned.
+  ms.date: 05/08/2025
+  author: kiranchandratrey
+  ms.author: elenasim
+  ms.topic: unit
+durationInMinutes: 9
+quiz:
+  questions:
+  - content: How do datacenters contribute to job creation and infrastructure development?
+    choices:
+    - content: By centralizing all operations in one location to reduce the need for local employment opportunities
+      isCorrect: false
+      explanation: Centralizing operations in one location does not reduce the need for local employment opportunities. In fact, datacenters create numerous local jobs in IT, engineering, and operations, as well as indirect employment in construction, logistics, and maintenance.
+    - content: By creating direct jobs in IT, engineering, and operations while generating indirect employment in construction, logistics, and maintenance
+      isCorrect: true
+      explanation: By creating direct jobs in IT, engineering, and operations while generating indirect employment in construction, logistics, and maintenance.
+    - content: By focusing exclusively on automation to eliminate the demand for physical infrastructure improvements
+      isCorrect: false
+      explanation: While automation is a significant aspect of modern datacenters, it does not eliminate the need for physical infrastructure improvements. Datacenters still require substantial investments in physical infrastructure, including power, cooling, and network systems, which contribute to local infrastructure development.
+    - content: By supporting only large-scale enterprises without significant impact on small businesses
+      isCorrect: false
+      explanation: Datacenters support a wide range of businesses, including small and medium-sized enterprises (SMEs). They create opportunities for local suppliers and contractors, stimulating small business growth and contributing to the local economy.
+
+  - content: What types of community investments are typically made by datacenters?
+    choices:
+    - content: Education and training programs, philanthropic initiatives, and support for local businesses
+      isCorrect: true
+      explanation: Datacenters typically engage in broader community initiatives that include education and training programs for local residents, philanthropic activities, and support for local businesses to foster community development.
+    - content: Expanding proprietary training centers for in-house employees without community involvement
+      isCorrect: false
+      explanation: While proprietary training centers for in-house employees are important, they do not represent community investments.
+    - content: Providing financial assistance solely for infrastructure without focusing on education or workforce development
+      isCorrect: false
+      explanation: Datacenters do invest in infrastructure, but community investments also encompass education and workforce development.
+    - content: Partnering only with large corporations to drive digital transformation
+      isCorrect: false
+      explanation: While partnerships with large corporations can drive digital transformation, datacenters also focus on supporting local businesses and community organizations.
+
+  - content: How can datacenters improve digital equity and data privacy in the communities they serve?
+    choices:
+    - content: By prioritizing corporate data protection over community-focused security solutions
+      isCorrect: false
+      explanation: Prioritizing corporate data protection alone does not address the specific needs of the community.
+    - content: By limiting access to cloud-based technologies to ensure security and minimize risks
+      isCorrect: false
+      explanation: Limiting access to cloud-based technologies can actually hinder digital equity.
+    - content: By exclusively supporting urban centers with high technology adoption rates
+      isCorrect: false
+      explanation: Exclusively supporting urban centers neglects the needs of rural and underserved areas
+    - content: By investing in sustainability efforts, enforcing strict data privacy measures, and expanding access to digital services for underserved populations
+      isCorrect: true
+      explanation: These actions directly improve digital equity and data privacy in underserved communities.
+
+  - content: Describe the role of datacenters in supporting emergency and local resilience efforts.
+    choices:
+    - content: By maintaining internal energy reserves without contributing to local power stability
+      isCorrect: false
+      explanation: Maintaining internal energy reserves is important, but datacenters can also support local power grids and provide backup power during emergencies.
+    - content: By offering temporary relocation services for businesses during disasters
+      isCorrect: false
+      explanation: This is helpful, but not the primary role of datacenters in emergencies.
+    - content: By strengthening connectivity, providing backup power, and assisting communities during crises
+      isCorrect: true
+      explanation: These actions directly enhance the resilience of local infrastructure and ensure continuity of essential services.
+    - content: By ensuring all data is backed up in remote locations without engaging in local emergency response
+      isCorrect: false
+      explanation: Remote data backup is important, but local engagement and support are essential during emergencies.
+
+  - content: Datacenter technicians are responsible for...
+    choices:
+    - content: ...ensuring the reliable and efficient functioning of the facility's electrical systems to maintain continuous uptime and support critical IT infrastructure.
+      isCorrect: false
+      explanation: This is typically the role of electrical engineers.
+    - content: ...designing, maintaining, and optimizing the mechanical systems that ensure efficient and reliable environmental control to support IT infrastructure.
+      isCorrect: false
+      explanation: This is primarily the responsibility of mechanical engineers.
+    - content: ...installing, troubleshooting, and decommissioning equipment following standardized processes.
+      isCorrect: true
+      explanation: This is the core responsibility of datacenter technicians.
+    - content: ...ensuring the smooth functioning, compliance, and alignment of datacenter operations with broader organizational goals.
+      isCorrect: false
+      explanation: This is typically the responsibility of operations or business program managers.

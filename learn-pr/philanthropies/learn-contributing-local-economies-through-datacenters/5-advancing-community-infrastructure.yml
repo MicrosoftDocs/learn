@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.learn-contributing-local-economies-through-datacenters.advancing-community-infrastructure
+title: Advancing community infrastructure
+metadata:
+  title: Advancing community infrastructure
+  description: This content is a part of the Learn about contributing to local economies through datacenters.
+  ms.date: 05/08/2025
+  author: kiranchandratrey
+  ms.author: elenasim
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-advancing-community-infrastructure.md)]
