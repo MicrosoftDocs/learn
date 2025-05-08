@@ -2,7 +2,7 @@
 
 As societies and economies become more digitized, the demand for digital infrastructure continues to rise. The growth and development of this infrastructure brings a wide range of benefits, both direct and indirect, to the communities where they operate. 
 
-The datacenter sector represents a significant evolution of the Information and Communication Technology (ICT) and broader technology sectors. For example, the computing industry in Ireland supported more than 90,000 jobs in 2020, with these jobs growing at more than twice the rate of overall jobs growth and being amongst the best-paying jobs in Ireland. Datacenter development in Ireland and other countries reflects the growing complexity and scale of technological needs in our increasingly digital world.
+The datacenter sector represents a significant evolution of the Information and Communication Technology (ICT) and broader technology sectors. For example, the computing industry in Ireland supported more than 90,000 jobs in 2020, with these jobs growing at more than twice the rate of overall jobs growth and being among the best-paying jobs in Ireland. Datacenter development in Ireland and other countries reflects the growing complexity and scale of technological needs in our increasingly digital world.
 
 ## Examples include
 
@@ -12,7 +12,7 @@ The datacenter sector represents a significant evolution of the Information and 
 
   - Indirect employment in sectors like design, construction, logistics, and maintenance, particularly during construction and setup phases. 
 
-  - Development of new "cloud regions" and cloud infrastructure leads to large opportunities for new employment both directly within the delivery and management of this infrastructure but also indirectly across the ICT and digital sectors enabling organizations to leverage the latest technologies to develop new products, solutions, tools and platforms. 
+  - Development of new "cloud regions" and cloud infrastructure leads to large opportunities for new employment both directly within the delivery and management of this infrastructure but also indirectly across the ICT and digital sectors enabling organizations to apply the latest technologies to develop new products, solutions, tools and platforms. 
 
   - Datacenter construction and operations bring significant investments into local economies and create new opportunities to grow local supply chains. 
 
@@ -62,7 +62,7 @@ The datacenter sector represents a significant evolution of the Information and 
 
       - Electricians 
 
-      - Plumbers and pipefitters 
+      - Plumbers and pipe fitters 
 
       - Carpenters 
 
@@ -72,7 +72,7 @@ The datacenter sector represents a significant evolution of the Information and 
 
       - Earth movers
 
-  - Many datacenter developers will support initiatives to support pathways into these roles throughout the datacenter lifecycle for the communities they are located particularly in construction and operations.
+  - Many datacenter developers will support initiatives to support pathways into these roles throughout the datacenter lifecycle for the communities they're located particularly in construction and operations.
 
     - **Example**: Microsoft's Datacenter Academy
 
@@ -96,10 +96,10 @@ Better connectivity and internet access for residents, businesses, and schools i
 
   - This investment makes AWS one of the state's largest tax contributors, helping fund schools, emergency services, and infrastructure improvements.
 
-- **Example**: Microsoft Airband Initiative 
+- **Example**: Microsoft Air band Initiative 
 
   - This initiative aims to bring broadband access to rural and underserved communities in the United States. 
 
-  - By partnering with local internet service providers and leveraging datacenter infrastructure, the initiative has successfully expanded high speed internet access, benefiting residents, businesses, and schools.
+  - By partnering with local internet service providers and applying datacenter infrastructure, the initiative has successfully expanded high speed internet access, benefiting residents, businesses, and schools.
 
     :::image type="content" source="../media/connected-cityscape.png" alt-text="Photograph of a cityscape with wireless connectivity icons at dusk." lightbox="../media/connected-cityscape.png":::

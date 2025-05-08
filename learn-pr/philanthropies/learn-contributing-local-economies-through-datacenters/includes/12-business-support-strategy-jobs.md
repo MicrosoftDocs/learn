@@ -2,7 +2,7 @@
 
 ## Business support and strategy
 
-Roles like Business Program Managers, Technical Program Managers, CSR, Community and Government affairs, Communications, HR, Finance, Legal etc. 
+Roles like Business Program Managers, Technical Program Managers, CSR, Community and Government affairs, Communications, HR, Finance, Legal, etc. 
 
 Business Support and Strategy professionals focus on ensuring the smooth functioning, compliance, and alignment of datacenter operations with broader organizational goals.
 
@@ -54,4 +54,4 @@ Business Support and Strategy professionals focus on ensuring the smooth functio
 
   - Address legal matters such as permitting, land acquisition, vendor agreements, and intellectual property protection.
 
-Datacenters are not just technological hubs; they are significant contributors to the economic, social, and environmental landscapes of the communities they inhabit. By balancing innovation with sustainability and community engagement, datacenters can serve as engines for progress while minimizing their impact on people and the planet.
+Datacenters aren't just technological hubs; they're significant contributors to the economic, social, and environmental landscapes of the communities they inhabit. By balancing innovation with sustainability and community engagement, datacenters can serve as engines for progress while minimizing their impact on people and the planet.

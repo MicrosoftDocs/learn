@@ -15,13 +15,13 @@ quiz:
     choices:
     - content: By centralizing all operations in one location to reduce the need for local employment opportunities
       isCorrect: false
-      explanation: Centralizing operations in one location does not reduce the need for local employment opportunities. In fact, datacenters create numerous local jobs in IT, engineering, and operations, as well as indirect employment in construction, logistics, and maintenance.
+      explanation: Centralizing operations in one location doesn't reduce the need for local employment opportunities. In fact, datacenters create numerous local jobs in IT, engineering, and operations, as well as indirect employment in construction, logistics, and maintenance.
     - content: By creating direct jobs in IT, engineering, and operations while generating indirect employment in construction, logistics, and maintenance
       isCorrect: true
       explanation: By creating direct jobs in IT, engineering, and operations while generating indirect employment in construction, logistics, and maintenance.
     - content: By focusing exclusively on automation to eliminate the demand for physical infrastructure improvements
       isCorrect: false
-      explanation: While automation is a significant aspect of modern datacenters, it does not eliminate the need for physical infrastructure improvements. Datacenters still require substantial investments in physical infrastructure, including power, cooling, and network systems, which contribute to local infrastructure development.
+      explanation: While automation is a significant aspect of modern datacenters, it doesn't eliminate the need for physical infrastructure improvements. Datacenters still require substantial investments in physical infrastructure, including power, cooling, and network systems, which contribute to local infrastructure development.
     - content: By supporting only large-scale enterprises without significant impact on small businesses
       isCorrect: false
       explanation: Datacenters support a wide range of businesses, including small and medium-sized enterprises (SMEs). They create opportunities for local suppliers and contractors, stimulating small business growth and contributing to the local economy.
@@ -33,7 +33,7 @@ quiz:
       explanation: Datacenters typically engage in broader community initiatives that include education and training programs for local residents, philanthropic activities, and support for local businesses to foster community development.
     - content: Expanding proprietary training centers for in-house employees without community involvement
       isCorrect: false
-      explanation: While proprietary training centers for in-house employees are important, they do not represent community investments.
+      explanation: While proprietary training centers for in-house employees are important, they don't represent community investments.
     - content: Providing financial assistance solely for infrastructure without focusing on education or workforce development
       isCorrect: false
       explanation: Datacenters do invest in infrastructure, but community investments also encompass education and workforce development.
@@ -45,7 +45,7 @@ quiz:
     choices:
     - content: By prioritizing corporate data protection over community-focused security solutions
       isCorrect: false
-      explanation: Prioritizing corporate data protection alone does not address the specific needs of the community.
+      explanation: Prioritizing corporate data protection alone doesn't address the specific needs of the community.
     - content: By limiting access to cloud-based technologies to ensure security and minimize risks
       isCorrect: false
       explanation: Limiting access to cloud-based technologies can actually hinder digital equity.
