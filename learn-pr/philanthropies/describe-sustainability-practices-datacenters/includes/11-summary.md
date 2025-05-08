@@ -36,12 +36,12 @@ The module also covered advanced cooling techniques, including waste heat reuse 
 - ITExchange: Sustainable Datacenters: Innovations in Energy Efficiency: https://www.itexchangeweb.com/blog/sustainable-data-centers/ 
 - NREL: Hydrogen and Fuel Cells for Data Center Applications Project Meeting: Workshop Report: https://www.nrel.gov/docs/fy20osti/75355.pdf 
 - DataCenter Knowledge: Hydrogen Power: Microsoft, Caterpillar Data Center Partnership Earns Top DOE Award: https://www.datacenterknowledge.com/energy-power-supply/hydrogen-power-microsoft-caterpillar-data-center-partnership-earns-top-doe-award 
-- Springler Nature: Hydrogen as power storage technology, polymeric and interconnect material innovations for future AI datacenter applications: a review: https://link.springer.com/article/10.1007/s10854-024-13705-y 
+- Springler Nature: Hydrogen as power storage technology, polymeric, and interconnect material innovations for future AI datacenter applications: a review: https://link.springer.com/article/10.1007/s10854-024-13705-y 
 - BNGAi: Using remote sensing and IoT sensors to measure biodiversity: https://www.bng.ai/blog/using-remote-sensing-and-iot-sensors-to-measure-biodiversity/ 
 - FutureBridge: Biomimicry in datacenter design: https://netzero-events.com/biomimicry-in-data-center-design-learning-from-nature-efficiency/ 
-- Datacenter Dynamics: Google claims it will replenish 120 percent of the water it uses by 2030: https://www.datacenterdynamics.com/en/news/google-claims-it-will-replenish-120-percent-of-the-water-it-uses-by-2030/ 
+- Datacenter Dynamics: Google claims it replenishes 120 percent of the water it uses by 2030: https://www.datacenterdynamics.com/en/news/google-claims-it-will-replenish-120-percent-of-the-water-it-uses-by-2030/ 
 - EY: How to enable data center growth and advance sustainability simultaneously: https://www.ey.com/en_us/data-centers/enable-data-center-growth-and-advance-sustainability
 - Jacobs: Driving sustainability in data centers: https://www.jacobs.com/sites/default/files/2023-10/wp_-_driving_sustainable_data_centres_--_2023_05_17.pdf 
-- World Economic Forum: 6 ways data centres can cut their emissions — without compromising the AI boom: https://www.weforum.org/stories/2025/01/6-ways-data-centres-can-cut-emissions/ 
+- World Economic Forum: Six ways data centres can cut their emissions-without compromising the AI boom: https://www.weforum.org/stories/2025/01/6-ways-data-centres-can-cut-emissions/ 
 - MIT: The multifaceted challenge of powering AI: https://news.mit.edu/2025/multifaceted-challenge-of-powering-ai-0121 
-- MIT Management Sloan School: AI has high data center energy costs — but there are solutions: https://mitsloan.mit.edu/ideas-made-to-matter/ai-has-high-data-center-energy-costs-there-are-solutions 
+- MIT Management Sloan School: AI has high data center energy costs-but there are solutions: https://mitsloan.mit.edu/ideas-made-to-matter/ai-has-high-data-center-energy-costs-there-are-solutions 

@@ -36,7 +36,7 @@ Datacenters can contribute positively to local ecosystems by:
 
 **Water management**: Implementing sustainable water management practices to minimize water use and preserve local water resources.
 
-- **Microsoft**: At their datacenter in Quincy, Washington, Microsoft uses a closed loop water system that recirculates water for cooling, significantly reducing water consumption and minimizing the impact on local water resources.
+- **Microsoft**: At their datacenter in Quincy, Washington, Microsoft uses a closed loop water system that recirculates water for cooling, significantly reducing water consumption, and minimizing the impact on local water resources.
 
 **Protecting and Preserving Local Ecosystems**
 
@@ -44,7 +44,7 @@ To protect and preserve local ecosystems, datacenters can:
 
 - Environmental monitoring: Conducting regular environmental assessments to understand and mitigate their impact on local ecosystems. 
 
-- Sustainable sourcing: Ensuring that materials and resources used in construction and operation are sustainably sourced and do not contribute to habitat destruction or biodiversity loss.
+- Sustainable sourcing: Ensuring that materials and resources used in construction and operation are sustainably sourced and don't contribute to habitat destruction or biodiversity loss.
 
 - Community engagement: Engaging with local communities to understand their concerns and collaborate on initiatives that benefit both the environment and the community
 
