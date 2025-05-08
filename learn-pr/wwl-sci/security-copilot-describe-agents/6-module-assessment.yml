@@ -1,0 +1,82 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-describe-agents-module-assessment
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: Describe Microsoft Security Copilot agents.
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.date: 05/08/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+  I doai_generated_module_assessment: false
+durationInMinutes: 2
+
+content: |
+  [!include[](includes/6-module-assessment.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: What is the primary purpose of agents in Microsoft Security Copilot?
+    choices:
+      - content: To replace Microsoft Defender and Microsoft Entra.
+        isCorrect: false
+        explanation: "Incorrect. Agents integrate with Microsoft Defender and Microsoft Entra to enhance their functionality, not replace them."
+      - content: To automate and optimize security operations.
+        isCorrect: true
+        explanation: "Correct. Agents are specialized tools designed to streamline security workflows by automating tasks and providing insights."
+      - content: To manage organizational permissions for all users.
+        isCorrect: false
+        explanation: "Incorrect. While permissions are important for agent functionality, managing organizational permissions is not their primary purpose."
+
+  - content: Which of the following describes how plugins extend the capabilities of agents in Microsoft Security Copilot?
+    choices:
+      - content: Plugins replace agents to perform specialized tasks.
+        isCorrect: false
+        explanation: "Incorrect. Plugins do not replace agents; they complement them by extending their capabilities."
+      - content: Plugins are used exclusively for managing permissions within the environment.
+        isCorrect: false
+        explanation: "Incorrect. While permissions are important, plugins are primarily used to expand agent functionality rather than manage permissions."
+      - content: Plugins allow agents to connect with external systems and analyze additional data sources.
+        isCorrect: true
+        explanation: "Correct. Plugins enhance agent functionality by enabling integration with external services and expanding their analytical capabilities."
+
+  - content: Which component of a Security Copilot agent determines when an action should be initiated?
+    choices:
+      - content: Plugins
+        isCorrect: false
+        explanation: "Incorrect. Plugins extend the agent's capabilities but do not determine when actions are initiated."
+      - content: Triggers
+        isCorrect: true
+        explanation: "Correct. Triggers are events or conditions that initiate an agent's actions, such as a scheduled interval or manual activation."
+      - content: Permissions
+        isCorrect: false
+        explanation: "Incorrect. Permissions define what the agent is authorized to access or perform, not when actions are initiated."
+
+  - content: A security engineer wants to classify and triage user-reported phishing emails. Which Microsoft Defender agent should they use?
+    choices:
+      - content: Microsoft Defender XDR
+        isCorrect: false
+        explanation: "Incorrect. Microsoft Defender XDR is a broader tool for extended detection and response, not specifically for phishing email triage."
+      - content: Threat Intelligence Briefing Agent
+        isCorrect: false
+        explanation: "Incorrect. The Threat Intelligence Briefing Agent focuses on gathering and analyzing threat intelligence, not phishing email classification."
+      - content: Phishing Triage Agent
+        isCorrect: true
+        explanation: "Correct. The Phishing Triage Agent is specifically designed to classify and triage user-reported phishing incidents, helping reduce false positives and prioritize threats."
+
+  - content: What is the primary function of the intelligence briefing agent in Microsoft Security Copilot?
+    choices:
+      - content: To monitor network traffic for suspicious activity.
+        isCorrect: false
+        explanation: "Incorrect. While monitoring network traffic is a security task, it is not the specific role of the intelligence briefing agent."
+      - content: To automate threat intelligence gathering and reporting.
+        isCorrect: true
+        explanation: "Correct. The intelligence briefing agent automates the process of collecting, analyzing, and correlating threat data to streamline threat intelligence reporting."
+      - content: To manage user permissions within Microsoft Defender.
+        isCorrect: false
+        explanation: "Incorrect. Managing user permissions is not the primary function of the intelligence briefing agent; its focus is on threat intelligence gathering and reporting."
+
