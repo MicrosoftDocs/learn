@@ -15,13 +15,13 @@ quiz:
   questions:
   - content: "Which service should you use to locate and read text in signs within a photograph of a street?"
     choices:
-    - content: "Azure AI Language"
+    - content: "Azure AI Language Named Entity Recognition"
       isCorrect: false
       explanation: "Incorrect: Azure AI Language isn't able to do OCR."
     - content: "Azure AI Document Intelligence"
       isCorrect: false
       explanation: "Incorrect: Azure Document Intelligence is designed to extract text from documents and forms."
-    - content: "Azure AI Vision"
+    - content: "Azure AI Vision Image Analysis"
       isCorrect: true
       explanation: "Correct: The Image Analysis feature on Azure AI Vision includes OCR capabilities that can extract text from images."
   - content: "Which visual feature enumeration should you use to return OCR results from an image analysis call?"
@@ -35,7 +35,7 @@ quiz:
     - content: "VisualFeatures.Tags"
       isCorrect: false
       explanation: "Incorrect: The VisualFeatures.Tags enumeration returns suggested tags to help categorize the image."
-  - content: "Text location information in an image is returned at which levels by the Azure AI Vision image analysis API?"
+  - content: "Text location information in an image is returned at which levels by Azure AI Vision Image Analysis?"
     choices:
     - content: "The location of individual *words* only."
       isCorrect: false
