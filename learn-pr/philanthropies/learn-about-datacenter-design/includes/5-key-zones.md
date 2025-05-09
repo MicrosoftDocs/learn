@@ -1,3 +1,6 @@
+>[!div class="mx-imgBorder"]
+>[![Screenshot of a datacenter floor plan, highlighting key zones such as white space for IT equipment and grey space for supporting infrastructure, essential for efficient datacenter operations.](../media/datacenter-floor-plan-key-zones.jpg)](../media/datacenter-floor-plan-key-zones.jpg#lightbox)
+
 Before we dive into the primary zones on the datacenter floor plan, it's important we define two commonly used terms in datacenter design and space allocation: grey space and white space.
 
 - White space: Refers to the areas in a datacenter that are dedicated to IT equipment, such as servers, racks, storage devices, and networking equipment. This is the space where customers (or the datacenter operator) can install their hardware.

@@ -1,3 +1,6 @@
+>[!div class="mx-imgBorder"]
+>[![Screenshot of a datacenter's physical infrastructure, showcasing the importance of space planning, rack configurations, and security measures in creating a secure and efficient environment.](../media/datacenter-physical-infrastructure-planning.jpg)](../media/datacenter-physical-infrastructure-planning.jpg#lightbox)
+
 Designing the physical infrastructure involves evaluating space requirements, rack configurations, data cabling systems, and physical security measures for the datacenter. Careful planning at this stage establishes the foundation for a secure and efficient environment. The choices made during this process will influence operational costs, maintenance demands, and overall data security.
 
 A well-thought-out physical infrastructure provides a stable, secure platform for IT equipment, ensuring optimal performance and reliable support for business operations.
