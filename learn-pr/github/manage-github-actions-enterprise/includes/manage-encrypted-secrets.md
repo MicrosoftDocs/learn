@@ -280,7 +280,7 @@ The value of the `subject-digest` parameter should be set to the `SHA256` digest
 You have the ability to generate SBOM attestions for an SBOM.  To generate and attest to an SBOM you must perform the following:
 
 *  Ensure you have set the appropriate permissions in the workflow (see examples below).
-*  You must generation an SBOM for the artifact in a step in the workflow.  For an example, see anchore-sbom-action in the GitHub Marketplace.
+*  You must generate an SBOM for the artifact in a step in the workflow.  For an example, see anchore-sbom-action in the GitHub Marketplace.
 *  Include a step in your workflow that uses the attest-sbom action (see examples below)
 
 ##### Generating an SBOM attestation for binaries
