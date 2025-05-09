@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.configure-entra-external-native-authenable-public-client-native-authentication-flows
+title: Enable public client and native authentication flows
+metadata:
+  title: Enable public client and native authentication flows
+  description: Enable public client and native authentication flows.
+  ms.date: 04/10/2025
+  author: S2FrdQ
+  ms.author: joylynnkirui
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-enable-public-client-native-authentication-flows.md)]

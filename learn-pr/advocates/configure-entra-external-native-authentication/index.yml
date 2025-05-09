@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.intro-entra-external-native-auth
+metadata:
+  ms.author: joylynnkirui
+  author: S2FrdQ
+  ms.date: 04/10/2025
+  title: Guided project - Add sign-up in an Android mobile app and iOS/macOS app using native authentication
+  description: Discover how Microsoft Entra native authentication allows you to have full control over the design of your mobile and desktop application sign-in experiences. With this approach, you can fully customize the user interface, including design elements, logo placement, and layout, ensuring a consistent and branded look while also providing a secure, seamless sign-in experience for your consumers and business customers.
+  ms.topic: module
+  ms.service: entra-external-id
+title: Guided project - Add sign-up in an Android mobile app and iOS/macOS app using native authentication
+summary: |
+  Discover how Microsoft Entra External ID native authentication allows you to have full control over the design of your mobile and desktop application sign-in experiences. With this approach, you can fully customize the user interface, including design elements, logo placement, and layout, ensuring a consistent and branded look while also providing a secure, seamless sign-in experience for your consumers and business customers.
+abstract:  |
+  In this module, learn how to:
+  -	Add the MSAL dependencies to an Android or iOS/macOS app.
+  -	Create SDK instance.
+  -	Sign up a user by using email one-time passcode or username (email) and password.
+  -	Collect user attributes during sign-up.
+  -	Handle sign-up errors.
+prerequisites: |
+  -	Xcode for iOS/macOS or Android Studio for Android.
+  -	An Azure subscription and Azure account. 
+  -	An Android or iOS/macOS project. 
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- entra-external-id
+units:
+- learn.configure-entra-external-native-authintroduction
+- learn.configure-entra-external-native-authcreate-external-tenant
+- learn.configure-entra-external-native-authenable-public-client-native-authentication-flows
+- learn.configure-entra-external-native-authprepare-app-native-authentication
+- learn.configure-entra-external-native-authadd-mobile-app-native-authentication
+- learn.configure-entra-external-native-authadd-credential-mobile-app-using-native-authentication
+- learn.configure-entra-external-native-authknowledge-check
+- learn.configure-entra-external-native-authsummary
+badge:
+  uid: learn.intro-entra-external-native-auth-badge
