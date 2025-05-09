@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.configure-entra-external-native-authadd-mobile-app-native-authentication
-title: Add sign-up in a mobile app using native authentication.
+title: Add sign-up in a mobile app using native authentication
 metadata:
-  title: Add sign-up in a mobile app using native authentication.
-  description: Add sign-up in a mobile app using native authentication.
+  title: Add sign-up in a mobile app using native authentication
+  description: Understand how to add user sign-up in a mobile app using native authentication.
   ms.date: 04/10/2025
   author: S2FrdQ
   ms.author: joylynnkirui
