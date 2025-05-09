@@ -1,4 +1,4 @@
-The steps below summarize how to set up and configure IoT Edge, an IoT Hub, and an IoT device to deploy a module to it.
+The following steps summarize how to set up and configure IoT Edge, an IoT Hub, and an IoT device to deploy a module to it.
 
 1. Define a resource group or use an existing one.
 1. Create an Azure IoT Edge device.
@@ -38,7 +38,7 @@ Azure IoT Hub lets the virtual device communicate with the cloud. To create a ne
 
 ## Ensure the IoT Edge device is ready to run prebuilt modules
 
-Once the edge device is configured, check if it is ready to run a pre-built module.
+Once the edge device is configured, check if it's ready to run a prebuilt module.
 
 * Sign in to the edge device using the public IP address for the device and run the `ssh command`.
 * Use `iotedge` commands to check if the IoT Edge security daemon is running as a system service.
