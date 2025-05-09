@@ -1,6 +1,6 @@
 ::: zone pivot="android"
 
-# Sign up a user
+## Sign up a user
 
 To sign up a user using the email one-time passcode or username (email) and password, you collect an email from the user, then send an email containing an email one-time passcode to the user. The user enters a valid email one-time passcode to validate their username.
 
