@@ -5,8 +5,8 @@ metadata:
   description: Learn how to use Azure Arc with Linux systems, including SSH and Ansible.
   manager: rayoflores
   ms.date: 07/30/2024
-  author: johnmarco
-  ms.author: johnmarc
+  author: JnHs
+  ms.author: jenhayes
   ms.topic: module
   ms.service: azure-arc
 title: Manage Linux with Arc
@@ -39,4 +39,4 @@ units:
 - learn.manage-linux-with-arc.summary
 badge:
   uid: learn.manage-linux-with-arc.badge
-
+
