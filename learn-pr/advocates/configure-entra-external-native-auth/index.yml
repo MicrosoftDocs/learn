@@ -33,7 +33,6 @@ units:
 - learn.configure-entra-external-native-authintroduction
 - learn.configure-entra-external-native-authcreate-external-tenant
 - learn.configure-entra-external-native-authenable-public-client-native-authentication-flows
-- learn.configure-entra-external-native-authcreate-user-flow-external-tenant
 - learn.configure-entra-external-native-authprepare-app-native-authentication
 - learn.configure-entra-external-native-authadd-mobile-app-native-authentication
 - learn.configure-entra-external-native-authadd-credential-mobile-app-using-native-authentication

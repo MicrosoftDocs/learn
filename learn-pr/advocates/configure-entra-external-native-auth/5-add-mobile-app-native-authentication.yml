@@ -8,7 +8,7 @@ metadata:
   author: S2FrdQ
   ms.author: joylynnkirui
   ms.topic: unit
-  zone_pivot_groups: microsoft-entra-external-identities-native-auth-platforms
+  zone_pivot_groups: mobile-os-android-ios
 durationInMinutes: 17
 content: |
   [!include[](includes/5-add-mobile-app-native-authentication.md)]

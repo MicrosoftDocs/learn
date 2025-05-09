@@ -476,3 +476,11 @@ groups:
       title: Maven Plugin for Azure App Service
     - id: azure-cli
       title: Azure CLI
+- id: mobile-os-android-ios
+  title: Mobile Operating system
+  prompt: Choose your mobile device operating system
+  pivots:
+    - id: androd
+      title: Android (Kotlin)
+    - id: iosmacos
+      title: iOS/macOS (Swift)
