@@ -95,6 +95,10 @@ Some best practices for mitigating script injection attacks on GitHub actions in
 
 3. Leverage workflow templates to implement code scanning: If you click on the **Actions** tab of any repository, you will be able to select the **New Workflow** button on the left side of the pane.  Within the **Choose a Workflow** page that is displayed as a result of clicking on the button, there is a **Security** section where workflow templates can be selected to instantiate as a workflow file in the current repository.  The CodeQL scanner, specifically, can be configured to trigger on an appropriate event to scan a branch's files & flag exposures (CWE's) in actions within workflows; including `script injection`.
 
+![New Workflow](../media/manage-encrypted-secrets_newworkflow.png)
+
+![CodeQL](../media/manage-encrypted-secrets_codeql.png)
+
 4. Restrict permissions for tokens: You should be sure to always apply the `rule of least privilege` to any created token.  In other words, ensure the token is assigned the minimum privileges to achieve the task for which it was created.
 
 ### Identify best practices for using third-party actions securely 
