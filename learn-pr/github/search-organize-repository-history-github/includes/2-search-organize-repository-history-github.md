@@ -1,4 +1,4 @@
-Here, we'll discuss how you can use filters, blame, and cross-linking to search and organize repository history.
+Here, we'll discuss how you can use filters, blame, cross-linking, labels, milestones, saved replies, and assignees to search and organize repository history.
 
 Put yourself in the position of a developer who has just joined a large project. Someone just posted a new issue reporting a bug related to the web app's sidebar, and you've been assigned to fix it. You've already read through the report a few times and understand the problem being described, so now you need to figure out how to get started with the fix.
 
@@ -50,6 +50,68 @@ Query|Explanation
 
 Learn more about [Understanding the search syntax](https://docs.github.com/enterprise-cloud@latest/search-github/getting-started-with-searching-on-github/understanding-the-search-syntax?azure-portal=true)
 
+## Using Milestones
+
+Milestones let you group issues and pull requests into shared goals, like a sprint, a product release, or a project phase.
+
+### Create a milestone
+
+1. Navigate to the Issues tab of your repository.
+2. Select Milestones from the top menu.
+3. Click New milestone.
+4. Enter a title, description, and optionally a due date.
+5. Click Create milestone.
+
+### Assign a milestone to an issue or pull request
+
+1. Open any issue or PR.
+2. In the right sidebar, select Milestone.
+3. Choose from the list of available milestones.
+
+When you view a milestone, GitHub shows how many issues/PRs are complete and how many remain—making it a helpful planning and tracking tool.
+
+> You can filter by milestone in GitHub Projects or with advanced search queries like:
+>
+> ```
+> is:open is:pr milestone:"Release v1.0"
+> ```
+
+Milestones work best when used consistently across your team's planning workflow.
+
+## Labels and Milestones in Search
+
+Labels and milestones are metadata tools that help teams organize issues and pull requests. They also improve the accuracy of search queries.
+
+### Filter by label
+
+You can narrow down issues by filtering with the `label:` keyword.
+
+For example:
+
+```
+is:open is:issue label:bug
+```
+
+This returns all open issues labeled as "bug." Labels can reflect issue type, priority, team, or workflow status.
+
+> Tip: You can combine labels with other filters for precise queries, such as:
+>
+> ```
+> is:pr label:"ready for review" author:@me
+> ```
+
+### Filter by milestone
+
+Milestones help you group issues and pull requests toward a target release or goal. Use the `milestone:` keyword in your query to return items within a specific milestone.
+
+For example:
+
+```
+is:open is:issue milestone:"Sprint 1"
+```
+
+> Note: Only open milestones will match unless you include closed ones by searching with `milestone:*`.
+
 ## What is git blame?
 
 Despite its ominous name, `git blame` is a command that displays the commit history for a file. It makes it easy for you to see who made what changes and when. This makes it much easier to track down other people who have worked on a file in order to seek out their input or participation.
@@ -68,6 +130,50 @@ In our scenario, there are a few ways you might get to this view. You might've f
 ## Cross-linking issues, commits, and more
 
 Part of what makes GitHub great for collaborative software projects is its support for linking disparate pieces of information together. Some of this happens automatically, such as when you create a pull request from a series of commits on a branch. Other times, you can use the interface to manually link pull requests or projects to issues using the dropdown options.
+
+## Saved replies
+
+Saved replies let you quickly respond to issues and pull requests with prewritten messages. They’re especially helpful for project maintainers who often give the same feedback or instructions.
+
+### Create or edit a saved reply
+
+1. Click your profile photo in the top right corner and select Settings.
+2. In the left sidebar, click Saved replies.
+3. Select New saved reply.
+4. Enter a title and your message.
+5. Click Save reply.
+
+To edit or delete a saved reply, return to the Saved replies settings and use the options beside each one.
+
+## Using a saved reply
+
+When writing a comment on an issue or pull request, you can insert a saved reply:
+
+1. Click the comment box.
+2. Select the Insert a saved reply icon (speech bubble with lines).
+3. Choose a saved reply from the list.
+4. Modify the text if needed, then click Comment.
+
+Saved replies save time and help ensure consistency when responding across your project.
+
+## Adding assignees
+
+You can assign one or more people to an issue or pull request to show who’s responsible for working on it.
+
+### Add an assignee
+
+1. Open the issue or pull request.
+2. In the right sidebar, click Assignees.
+3. Select one or more users from the dropdown.
+
+You can also assign people directly from the list view using the checkboxes beside each issue and selecting Assign from the top bar.
+
+> Tip: Use the `assignee:` filter in your searches to find items assigned to yourself or others.
+
+Example:
+```
+is:open is:issue assignee:@me
+```
 
 ### Autolinked references
 

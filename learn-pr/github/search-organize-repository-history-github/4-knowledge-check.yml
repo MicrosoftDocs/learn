@@ -47,3 +47,47 @@ quiz:
     - content: "Add a comment to the bug report that links the pull request to it using the #ID syntax."
       isCorrect: false
       explanation: "This linking is a good practice as it provides transparency to the issue author and anyone who might end up working on it."
+  - content: "What is a benefit of assigning a milestone to issues or pull requests?"
+    choices:
+    - content: "It prevents other users from editing the issue or PR."
+      isCorrect: false
+      explanation: "Milestones are used for grouping, not for permissions."
+    - content: "It helps track progress toward a shared goal, such as a release."
+      isCorrect: true
+      explanation: "Milestones group issues/PRs to track completion toward goals."
+    - content: "It sends email notifications to the entire repository."
+      isCorrect: false
+      explanation: "Milestones don't change notification behavior."
+  - content: "Which query shows all open issues labeled as bugs in a specific milestone?"
+    choices:
+    - content: "is:open is:issue label:bug milestone:\"Sprint 1\""
+      isCorrect: true
+      explanation: "This query filters by both label and milestone."
+    - content: "label:bug milestone:closed"
+      isCorrect: false
+      explanation: "This query is invalid; milestone:closed is not a valid value."
+    - content: "is:pr label:bug"
+      isCorrect: false
+      explanation: "This filters pull requests, not issues."
+  - content: "How do you insert a saved reply in an issue or pull request comment?"
+    choices:
+    - content: "Click the saved reply icon in the comment field and select from your saved replies."
+      isCorrect: true
+      explanation: "The saved reply icon (speech bubble) lets you select from predefined replies."
+    - content: "Type `@saved` and select from the reply dropdown."
+      isCorrect: false
+      explanation: "There is no `@saved` shortcut for replies."
+    - content: "Use the slash command `/reply` to open your saved replies."
+      isCorrect: false
+      explanation: "GitHub does not support slash commands for saved replies."
+  - content: "What does assigning someone to an issue or pull request indicate?"
+    choices:
+    - content: "That the person is responsible for working on it."
+      isCorrect: true
+      explanation: "Assigning a user shows they're expected to take ownership."
+    - content: "That the person is the original author."
+      isCorrect: false
+      explanation: "Authorship and assignment are separate."
+    - content: "That the person will automatically receive a badge."
+      isCorrect: false
+      explanation: "GitHub doesn't award badges for assignments."
