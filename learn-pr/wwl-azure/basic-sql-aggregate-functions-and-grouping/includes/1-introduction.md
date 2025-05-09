@@ -45,7 +45,7 @@ Understanding how to summarize and categorize data is essential for extracting i
  -->
 ## What will you be doing?
 
-In this section, you’ll explore how to summarize and analyze data in PostgreSQL using aggregate functions like `COUNT`, `SUM`, `AVG`, `MIN` and `MAX`. You'll learn how to group data with the `GROUP BY` clause and filter grouped results using `HAVING`. Through hands-on examples with the `sales` database, you’ll gain the skills needed to extract meaningful insights from large datasets by turning detailed records into clear, summarized reports. 
+In this section, you explore how to summarize and analyze data in PostgreSQL using aggregate functions like `COUNT`, `SUM`, `AVG`, `MIN` and `MAX`. You learn how to group data with the `GROUP BY` clause and filter grouped results using `HAVING`. Through hands-on examples with the `sales` database, you gain the skills needed to extract meaningful insights from large datasets by turning detailed records into clear, summarized reports. 
 
 <!-- 5. Terminal learning objective ----------------------------------------------------------------------
 
@@ -60,4 +60,4 @@ In this section, you’ll explore how to summarize and analyze data in PostgreSQ
  -->
 ## What is the main goal?
 
-The main goal of this section is to help you master the use of aggregate functions and grouping techniques in SQL to summarize, analyze and filter data effectively. By learning how to apply `GROUP BY` and `HAVING` in combination with functions like `COUNT`, `SUM` and `AVG`, you'll be able to turn raw data into actionable insights, making your queries more powerful and relevant for real-world analysis.
+The main goal of this section is to help you master the use of aggregate functions and grouping techniques in SQL to summarize, analyze, and filter data effectively. By learning how to apply `GROUP BY` and `HAVING` in combination with functions like `COUNT`, `SUM`, and `AVG`, you're able to turn raw data into actionable insights, making your queries more powerful and relevant for real-world analysis.

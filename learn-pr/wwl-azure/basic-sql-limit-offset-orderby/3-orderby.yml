@@ -3,7 +3,7 @@ uid: learn.wwl-azure.basic-sql-limit-offset-orderby.orderby
 title: ORDER BY
 metadata:
   title: ORDER BY
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "This unit explains how to use the ORDER BY clause in PostgreSQL to sort query results by one or multiple columns in ascending or descending order. It includes practical examples to help you organize and prioritize data for clearer analysis."
   ms.date: 4/23/2025
   author: milenak
   ms.author: mpopovic

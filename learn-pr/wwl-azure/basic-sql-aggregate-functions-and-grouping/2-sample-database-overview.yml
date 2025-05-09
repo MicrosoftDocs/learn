@@ -3,7 +3,7 @@ uid: learn.wwl-azure.basic-sql-aggregate-functions-and-grouping.sample-database-
 title: Sample Database Overview
 metadata:
   title: Sample Database Overview
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "This unit introduces the structure and purpose of the sales sample database used throughout the module. It describes the key tables, their relationships via foreign keys, and how the database supports tracking orders, inventory, and customer activity. A schema diagram and SQL script are provided to help learners explore and understand the data model."
   ms.date: 4/23/2025
   author: milenak
   ms.author: mpopovic

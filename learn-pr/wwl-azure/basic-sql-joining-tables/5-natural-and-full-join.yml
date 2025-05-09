@@ -3,7 +3,7 @@ uid: learn.wwl-azure.basic-sql-joining-tables.natural-and-full-join
 title: NATURAL and FULL JOIN
 metadata:
   title: NATURAL and FULL JOIN
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "This unit explores the use of FULL OUTER JOIN and NATURAL JOIN in PostgreSQL to combine data from related tables. Learners discover how to retrieve all rows from both tables using FULL OUTER JOIN, and how NATURAL JOIN simplifies joins by automatically matching columns with the same name. Practical examples illustrate when and how to use each join effectively."
   ms.date: 4/23/2025
   author: milenak
   ms.author: mpopovic

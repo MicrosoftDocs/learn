@@ -2,7 +2,7 @@
 uid: learn.wwl-azure.basic-sql-joining-tables
 metadata:
   title: "Combining data from multiple tables: SQL Joins Explained"
-  description: "Description for basic-sql-joining-tables" # Describe the module in 120 to 165 characters. Include relevant search keywords.
+  description: "Combine data across multiple PostgreSQL tables using SQL JOINs. Learn INNER, LEFT, RIGHT, FULL OUTER, and NATURAL joins with real examples." # Describe the module in 120 to 165 characters. Include relevant search keywords.
   ms.date: 4/23/2025
   author: mpopovic
   ms.author: mpopovic
@@ -53,7 +53,7 @@ title: "Combining data from multiple tables: SQL Joins Explained"
 ###
 ### Detailed guidance: `https://review.learn.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main`
 ###
-summary: "This module introduces SQL joins, which are essential for combining data from multiple tables. You'll learn about INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN and NATURAL JOIN."
+summary: "This module introduces SQL joins, which are essential for combining data from multiple tables. You learn about INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN, and NATURAL JOIN."
 ###########################################################################
 ###
 ### Learning objectives

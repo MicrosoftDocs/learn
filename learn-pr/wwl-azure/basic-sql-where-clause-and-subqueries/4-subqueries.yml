@@ -3,7 +3,7 @@ uid: learn.wwl-azure.basic-sql-where-clause-and-subqueries.subqueries
 title: Subqueries
 metadata:
   title: Subqueries
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "This unit teaches how to use subqueries in PostgreSQL to filter, calculate, and manipulate data within SELECT, UPDATE, and WHERE clauses using nested queries."
   ms.date: 4/22/2025
   author: milenak
   ms.author: mpopovic

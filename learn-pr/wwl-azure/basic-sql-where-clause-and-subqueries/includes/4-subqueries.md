@@ -62,4 +62,4 @@ WHERE category_id = (
 
 This query increases the prices of products in the category with the highest average price by 10%. The `UPDATE` statement modifies the `price` column in the `sales.products` table, multiplying it by 1.1 for rows matching the condition in the `WHERE` clause.  
 
-The subquery inside the `WHERE` clause determines the `category_id` of the category with the highest average `price` by grouping the products by their `category_id`, calculating the average `price` for each group, and ordering them in descending order of average `price`. The `LIMIT 1` ensures that only the top result, i.e., the category with the highest average `price`, is selected and used to filter the rows for the update. 
+The subquery inside the `WHERE` clause determines the `category_id` of the category with the highest average `price` by grouping the products by their `category_id`, calculating the average `price` for each group, and ordering them in descending order of average `price`. The `LIMIT 1` ensures that only the top result, that is, the category with the highest average `price`, is selected and used to filter the rows for the update. 

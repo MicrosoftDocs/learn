@@ -13,9 +13,9 @@
     Detailed guidance: `https://review.learn.microsoft.com/help/learn/id-guidance-introductions?branch=main#module-introduction`
 --->
 Learning how to query data effectively is a fundamental skill for anyone working with databases. 
-In this tutorial, you'll gain hands-on experience with the `SELECT` statement in PostgreSQL, a powerful tool for retrieving and analyzing data. 
-By mastering these foundational querying techniques, you'll be equipped to access specific information, generate meaningful insights and lay the groundwork for more advanced database operations. 
-Whether you're a beginner or looking to sharpen your skills, this tutorial will help you build confidence in working with SQL queries.
+In this tutorial, you gain hands-on experience with the `SELECT` statement in PostgreSQL, a powerful tool for retrieving and analyzing data. 
+By learning these foundational querying techniques, you're equipped to access specific information, generate meaningful insights, and lay the groundwork for more advanced database operations. 
+Whether you're a beginner or looking to sharpen your skills, this tutorial helps you build confidence in working with SQL queries.
 
 <!-- 2. Motivation ---------------------------------------------------------------------------------------
 
@@ -50,7 +50,7 @@ Whether you're a beginner or looking to sharpen your skills, this tutorial will 
  -->
 ## What will you be doing?
 
-In this tutorial, you'll explore the fundamentals of querying data using the `SELECT` statement in PostgreSQL. You'll learn how to:
+In this tutorial, you explore the fundamentals of querying data using the `SELECT` statement in PostgreSQL. You learn how to:
 
 - Retrieve all columns from a table
 - Query specific columns to focus on relevant data

@@ -1,6 +1,6 @@
 The `WHERE` clause in PostgreSQL is used to filter rows in a query based on specified conditions, enabling the retrieval of just the data that meets your needs. 
 
-It is a powerful filtering tool with a wide range of options, allowing users to combine conditions, apply logical operators, and format outputs to meet complex query requirements. 
+It's a powerful filtering tool with a wide range of options, allowing users to combine conditions, apply logical operators, and format outputs to meet complex query requirements. 
 
 ## Filtering based on a single condition
 
@@ -12,7 +12,7 @@ WHERE price > 50;
 
 This query retrieves products with a `price` greater than 50.
 
-## Filtering based on multiple conditions(AND, OR)
+## Filtering based on multiple conditions (AND, OR)
 
 ```sql
 SELECT customer_name, country, city, NOW() AS query_time 
@@ -93,7 +93,7 @@ FROM sales.products
 WHERE category_id NOT IN (1, 3);
 ```
 
-This query retrieves products that are not classified under categories 1 or 3.
+This query retrieves products that aren't classified under categories 1 or 3.
 
 ## Using BETWEEN for range values
 
@@ -105,7 +105,7 @@ WHERE price BETWEEN 20 and 40;
 
 This query retrieves products priced between 20 and 40 currency units, inclusive.
 
-The `BETWEEN` statement in SQL is used to filter the data within a specified range of values. It is inclusive, meaning it includes the boundary values given in the range. This is particularly useful for narrowing down datasets based on numerical, date, or even text values (if applicable). It provides a concise and readable way to define a range, as opposed to using multiple conditional operators like `>=` and `<=`. 
+The `BETWEEN` statement in SQL is used to filter the data within a specified range of values. It's inclusive, meaning it includes the boundary values given in the range. This is useful for narrowing down datasets based on numerical, date, or even text values (if applicable). It provides a concise and readable way to define a range, as opposed to using multiple conditional operators like `>=` and `<=`. 
 
 ## Using IS NULL and IS NOT NULL for null values
 
@@ -118,6 +118,6 @@ WHERE postal_code IS NULL;
 This query retrieves customers with a missing `postal_code`.
 
 In SQL, `NULL` represents missing or undefined data in a database. 
-It is not equivalent to zero, an empty string, or any other type of value, but rather indicates the absence of a value. 
+It isn't equivalent to zero, an empty string, or any other type of value, but rather indicates the absence of a value. 
 To handle `NULL`, you can use filters such as `IS NULL` to identify records with missing values or `IS NOT NULL` to find entries with determined data. 
-These filters are particularly useful in cleansing data, as they help segregate records for correction, exclusion, or specialized treatment.  
+These filters are useful in cleansing data, as they help segregate records for correction, exclusion, or specialized treatment.  

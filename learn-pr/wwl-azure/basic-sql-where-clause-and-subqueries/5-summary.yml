@@ -3,7 +3,7 @@ uid: learn.wwl-azure.basic-sql-where-clause-and-subqueries.summary
 title: Summary
 metadata:
   title: Summary
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "This unit summarizes how to filter and retrieve data in PostgreSQL using the WHERE clause, logical operators, functions like EXTRACT, and subqueries for advanced query control."
   ms.date: 4/22/2025
   author: milenak
   ms.author: mpopovic

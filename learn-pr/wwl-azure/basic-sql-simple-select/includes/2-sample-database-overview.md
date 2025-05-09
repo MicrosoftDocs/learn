@@ -10,7 +10,7 @@ The sales database is designed to simulate a typical sales environment for a com
 ## Key tables in this Database:
 
 * customers: Stores customer details like names, addresses, and contact information
-* products : Contains product information, including names, prices, and categories
+* products: Contains product information, including names, prices, and categories
 * categories: Lists the categories to which the products belong
 * suppliers: Holds information about the companies supplying the products
 * orders: Records customer order details, including dates and customer IDs

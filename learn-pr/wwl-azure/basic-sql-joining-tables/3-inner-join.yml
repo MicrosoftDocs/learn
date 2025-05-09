@@ -3,7 +3,7 @@ uid: learn.wwl-azure.basic-sql-joining-tables.inner-join
 title: INNER JOIN
 metadata:
   title: INNER JOIN
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "This unit explains the importance of joining tables in PostgreSQL and introduces the INNER JOIN clause. It covers how to combine related data across multiple normalized tables using shared keys like primary and foreign keys. A practical example shows how to retrieve unified records from orders, customers, and employees tables."
   ms.date: 4/23/2025
   author: milenak
   ms.author: mpopovic

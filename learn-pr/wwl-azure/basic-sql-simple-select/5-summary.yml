@@ -3,7 +3,7 @@ uid: learn.wwl-azure.basic-sql-simple-select.summary
 title: Summary
 metadata:
   title: Summary
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "This unit summarizes key techniques for querying data in PostgreSQL using the SELECT statement, including selecting columns, using DISTINCT, and creating calculated or concatenated fields."
   ms.date: 4/22/2025
   author: milenak
   ms.author: mpopovic

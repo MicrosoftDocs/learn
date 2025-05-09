@@ -1,6 +1,6 @@
 When dealing with large datasets, it's often necessary to retrieve only a portion of the results. 
 The `LIMIT` clause allows you to specify the maximum number of rows to return, preventing overwhelming your application or user. 
-`OFFSET` is used in conjunction with `LIMIT` to navigate through these results, enabling you to retrieve 'pages' of data. This is particularly valuable for applications that display data in chunks, such as web pages or reports, and for performance optimization when you only need a sample of the data. 
+`OFFSET` is used with `LIMIT` to navigate through these results, enabling you to retrieve 'pages' of data. This is valuable for applications that display data in chunks, such as web pages or reports, and for performance optimization when you only need a sample of the data. 
 
 ## Limiting the number of rows returned
 

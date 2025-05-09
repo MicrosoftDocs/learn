@@ -12,7 +12,7 @@
 
     Detailed guidance: `https://review.learn.microsoft.com/help/learn/id-guidance-introductions?branch=main#module-introduction`
 --->
-Learning how to manage and organize query results is crucial when working with databases. In this tutorial, you'll explore the `LIMIT`, `OFFSET`, and `ORDER BY` clauses in PostgreSQL, essential tools for controlling the number of rows returned, skipping rows and sorting data. We'll cover how to use `LIMIT` to restrict the result set, `OFFSET` to skip a specific number of rows and `ORDER BY` to sort data in ascending or descending order.
+Learning how to manage and organize query results is crucial when working with databases. In this tutorial, you explore the `LIMIT`, `OFFSET`, and `ORDER BY` clauses in PostgreSQL, essential tools for controlling the number of rows returned, skipping rows and sorting data. We cover how to use `LIMIT` to restrict the result set, `OFFSET` to skip a specific number of rows and `ORDER BY` to sort data in ascending or descending order.
 <!-- 2. Motivation ---------------------------------------------------------------------------------------
 
     Goal: Explain why the concepts that the module covers are important and how they're used. Consider
@@ -46,7 +46,7 @@ Learning how to manage and organize query results is crucial when working with d
  -->
 
  ## What will you be doing?
-In this tutorial, you'll explore the fundamentals of managing query results using the `LIMIT`, `OFFSET`, and `ORDER BY` clauses in PostgreSQL. You'll learn how to:
+In this tutorial, you explore the fundamentals of managing query results using the `LIMIT`, `OFFSET`, and `ORDER BY` clauses in PostgreSQL. You learn how to:
 
 - Limit the number of rows returned in a query using the `LIMIT` clause
 - Skip a specific number of rows in the result set with the `OFFSET` clause

@@ -3,7 +3,7 @@ uid: learn.wwl-azure.basic-sql-simple-select.querying-columns-and-distinct
 title: Simple SELECT
 metadata:
   title: Simple SELECT
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "This unit explains how to use the SQL SELECT statement in PostgreSQL to retrieve all or specific columns, and how to filter out duplicates using DISTINCT for efficient data queries."
   ms.date: 4/22/2025
   author: milenak
   ms.author: mpopovic

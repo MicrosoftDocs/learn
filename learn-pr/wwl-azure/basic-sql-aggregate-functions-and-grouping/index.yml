@@ -2,7 +2,7 @@
 uid: learn.wwl-azure.basic-sql-aggregate-functions-and-grouping
 metadata:
   title: "Summarizing data: Aggregate functions and grouping"
-  description: "Description for basic-sql-aggregate-functions-and-grouping" # Describe the module in 120 to 165 characters. Include relevant search keywords.
+  description: "Analyze data in PostgreSQL with aggregate functions and grouping. Learn COUNT, SUM, AVG, and filter results using GROUP BY and HAVING." # Describe the module in 120 to 165 characters. Include relevant search keywords.
   ms.date: 4/24/2025
   author: mpopovic
   ms.author: mpopovic
@@ -53,7 +53,7 @@ title: "Summarizing data: Aggregate functions and grouping"
 ###
 ### Detailed guidance: `https://review.learn.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main`
 ###
-summary: "This module introduces aggregate functions in SQL, which are essential for analyzing data. You'll learn how to use functions like COUNT, SUM, AVG, MIN and MAX, group data using the GROUP BY clause and filter grouped results with the HAVING clause."                                                                                                                                              
+summary: "This module introduces aggregate functions in SQL, which are essential for analyzing data. You learn how to use functions like COUNT, SUM, AVG, MIN and MAX, group data using the GROUP BY clause and filter grouped results with the HAVING clause."                                                                                                                                              
 ###########################################################################
 ###                                                                                                                                                               
 ### Learning objectives                                                                                                                                                                                                                                                                                                                         

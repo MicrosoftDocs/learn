@@ -24,4 +24,4 @@ INNER JOIN sales.employees AS employees ON orders.employee_id = employees.employ
 
 The provided query employs multiple `INNER JOIN` operations to retrieve a unified result set containing details about `orders`, `customers`, and `employees`.  
 
-It matches the `customer_id` in the `orders` table with the corresponding `customer_id` in the `customers` table, and the `employee_id` in the `orders` table with the `employee_id` in the `employees` table. As a result, the query outputs each order's id alongside the names of the customer and employee involved. 
+It matches the `customer_id` in the `orders` table with the corresponding `customer_id` in the `customers` table, and the `employee_id` in the `orders` table with the `employee_id` in the `employees` table. As a result, the query outputs each order's ID alongside the names of the customer and employee involved. 

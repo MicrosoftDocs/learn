@@ -3,7 +3,7 @@ uid: learn.wwl-azure.basic-sql-aggregate-functions-and-grouping.groupby-having
 title: GROUP BY and HAVING
 metadata:
   title: GROUP BY and HAVING
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "This unit explains how to use the GROUP BY and HAVING clauses in PostgreSQL to categorize data and filter grouped results. Learners explore how to combine these clauses with aggregate functions to analyze trends and summarize information within distinct groups. Practical examples from the sales database illustrate how to generate meaningful reports from raw data."
   ms.date: 4/24/2025
   author: milenak
   ms.author: mpopovic
