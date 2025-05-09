@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.configure-entra-external-native-authcreate-external-tenant
+title: Create an external tenant
+metadata:
+  title: Create an external tenant
+  description: Create an external tenant
+  ms.date: 04/10/2025
+  author: S2FrdQ
+  ms.author: joylynnkirui
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-create-external-tenant.md)]
