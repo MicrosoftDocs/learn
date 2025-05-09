@@ -14,7 +14,7 @@ Firewall rules are configured at the server or database level. The rules specifi
   - IP address rules
 
 > [!NOTE]
-> SQL Data Warehouse only supports server-level IP firewall rules, and not database-level IP firewall rules.
+> SQL Data Warehouse only supports server-level IP firewall rules and not database-level IP firewall rules.
 
 Take a closer look at how these rules work.
 
@@ -47,11 +47,11 @@ For server-level rules, all of these rules can be created and manipulated throug
 
 ### Database-level firewall rules
 
-These rules allow access to an individual database on a logical server and are stored in the database itself. For database-level rules, you can configure only **IP address rules**. They function the same as when applied at the server-level, but are scoped to the database only.
+These rules allow access to an individual database on a logical server and are stored in the database itself. For database-level rules, you can configure only **IP address rules**. They function the same as when applied at the server-level but are scoped to the database only.
 
 :::image type="content" source="../media/2-db-ip-rule-1.png" alt-text="Diagram represents a database IP address network rule.":::
 
-The benefits of database-level rules are their portability. When you replicate a database to another server, the database-level rules are replicated, since they're stored in the database itself.
+The benefits of database-level rules are their portability. When you replicate a database to another server, the database-level rules are replicated since they're stored in the database itself.
 
 The downside to database-level rules is that you can only use IP address rules. These rules might limit the flexibility you have and can increase administrative overhead.
 
@@ -59,7 +59,7 @@ Database-level firewall rules can be created and manipulated only through T-SQL.
 
 ## Restrict network access in practice
 
-As a best practice, use database-level IP firewall rules to enhance security and to make your database more portable. Use server-level IP firewall rules for administrators and when you have several databases with the same access requirements so that you don't want to spend time configuring each database individually.
+As a best practice, use database-level IP firewall rules to enhance security and to make your database more portable. Use server-level IP firewall rules for administrators and when you have several databases with the same access requirements. This way you don't spend time configuring each database individually.
 
 Take a look at how these rules work in practice, and how you can secure network access to only allow what is necessary. Recall that you created an Azure SQL Database logical server, a database, and the _appServer_ Linux VM that acts as an application server. This scenario is often seen when a database has been migrated to Azure SQL Database and resources inside of a virtual network need to access it. The firewall feature of Azure SQL Database can be used in many scenarios, but this example has practical applicability and demonstrates how each of the rules functions.
 
@@ -97,7 +97,7 @@ Because your VM has outbound internet access, you can use the **Allow access to 
 
 1. In the **Search resources, services, and docs** box at the top, search for your database server name, `server-name`. Select the SQL server.
 
-1. In the SQL server pane, in the left menu pane, under **Security**, select **Networking**.
+1. In the SQL server pane, in the left menu pane under **Security**, select **Networking**.
 
 1. Scroll down to **Exceptions**, select the checkbox for **Allow Azure services and resources to access this server**, and then select **Save**. Wait until the system acknowledges this change.
 
@@ -168,7 +168,7 @@ Use a server-level IP rule to restrict the systems that can connect.
 
     After the command completes, enter `exit` to exit sqlcmd. Remain connected over SSH.
 
-1. Back in the Azure portal, on the **Networking** pane for your SQL server, under **Firewall rules**, select **add a firewall rule**. Name the rule **Allow appServer**, enter the public IP address of the _appServer_ VM for the **Start IP** and **End IP**, and then select **OK**.
+1. Back in the Azure portal, on the **Networking** pane for your SQL server under **Firewall rules**, select **Add a firewall rule**. Name the rule **Allow appServer**, enter the public IP address of the _appServer_ VM for the **Start IP** and **End IP**, and then select **OK**.
 
 1. Select **Save**.
 
@@ -207,7 +207,7 @@ In this case, because your VM is running in Azure, you can use a server-level vi
     | **Virtual network**              | appServerVNET                            |
     | **Subnet name / Address prefix** | appServerSubnet / 10.0.0.0/24            |
 
-1. Select **Enable** to enable the service endpoint on the subnet, then select **OK** after the endpoint is enabled to create the rule.
+1. Select **Enable** to enable the service endpoint on the subnet, and then select **OK** after the endpoint is enabled to create the rule.
 
 1. Remove the IP address rule. Select the **...** next to your **Allow appServer** rule, select **Delete**, and then select **Save**.
 

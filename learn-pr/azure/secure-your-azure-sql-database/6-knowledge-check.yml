@@ -24,7 +24,7 @@ quiz:
       isCorrect: false
     - content: A server-level virtual network rule
       isCorrect: true
-      explanation: A server-level virtual network rule will allow you to allow connectivity from specific Azure VNet subnets, and will block access from the internet. This is the most efficient manner to secure this configuration.
+      explanation: A server-level virtual network rule will allow you to allow connectivity from specific Azure VNet subnets and will block access from the internet. This is the most efficient manner to secure this configuration.
     - content: A database-level IP address rule
       isCorrect: false
       

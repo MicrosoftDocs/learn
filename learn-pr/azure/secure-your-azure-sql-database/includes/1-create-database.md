@@ -51,7 +51,7 @@ In this unit, you set up the resources that you use throughout this module. Envi
 
 ## Create and configure a Linux virtual machine
 
-Create the Linux VM that to use through some examples.
+Create the Linux VM to use through some examples.
 
 1. Run the following command to create the VM. This command might take several minutes to complete.
 

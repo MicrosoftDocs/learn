@@ -1,18 +1,18 @@
-Even though you might be able to connect to the database over the network that doesn't mean you can actually gain access to the data itself. Following a layered approach, you want to ensure that only users who need access to the data can actually access it. This access is where authentication and authorization come in to play.
+Even though you might be able to connect to the database over the network, that doesn't mean you can actually gain access to the data itself. Following a layered approach, you want to ensure that only users who need access to the data can actually access it. This access is where authentication and authorization come in to play.
 
 ## Authentication
 
-Authentication is the process of verifying an identity. This identity could be a user, a service that runs on a system, or a system itself, such as a virtual machine. Through the process of authentication, you ensure that the person or system is who they claim to be. SQL Database supports two types of authentication: _SQL authentication_ and _Microsoft Entra authentication_.
+Authentication is the process of verifying an identity. This identity could be a user, a service that runs on a system, or a system itself like a virtual machine. Through the process of authentication, you ensure that the person or system is who they claim to be. SQL Database supports two types of authentication: _SQL authentication_ and _Microsoft Entra authentication_.
 
 ### SQL authentication
 
-The SQL authentication method uses a username and password. User accounts can be created in the main database and can be granted permissions in all databases on the server. You can also create users in the database itself, called contained users, and give them access to only that database. When you created the logical server for your database, you specified a _server admin_ sign-in with a username and password. Using these credentials, you can authenticate to any database on that server as the database owner, or _dbo_.
+The SQL authentication method uses a username and password. User accounts can be created in the main database and can be granted permissions in all databases on the server. You can also create users in the database itself, called contained users, and give them access to only that database. When you created the logical server for your database, you specified a _server admin_ sign-in with a username and password. Using these credentials, you can authenticate to any database on that server as the database owner or _dbo_.
 
 <a name='azure-active-directory-authentication'></a>
 
 ### Microsoft Entra authentication
 
-This authentication method uses identities managed by Microsoft Entra ID and is supported for managed and integrated domains. Use Microsoft Entra authentication (integrated security) whenever possible. With Microsoft Entra authentication, you can manage the identities of database users and other Microsoft services in one central location. Central ID management provides a single place to manage database users and simplifies permission management. If you want to use Microsoft Entra authentication, you must create another server administrator called the *Microsoft Entra admin*, which is allowed to administer Microsoft Entra users and groups. This admin can also perform all operations that a regular server admin can.
+This authentication method uses identities managed by Microsoft Entra ID and is supported for managed and integrated domains. Use Microsoft Entra authentication (integrated security) whenever possible. With Microsoft Entra authentication, you can manage the identities of database users and other Microsoft services in one central location. Central ID management provides a single place to manage database users and simplifies permission management. If you want to use Microsoft Entra authentication, you must create another server administrator called the _Microsoft Entra admin_, which is allowed to administer Microsoft Entra users and groups. This admin can also perform all operations that a regular server admin can.
 
 ## Authorization
 
@@ -38,7 +38,7 @@ Create a new user that you can use to grant access to.
     sqlcmd -S tcp:[server-name].database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30
     ```
 
-1. Run the following command to create a new user. This user is a _contained user_ that has only allow access to the _marketplace_ database. Feel free to adjust the password as necessary, but be sure and note it because you need it for a future step.
+1. Run the following command to create a new user. This user is a _contained user_ that only has allow access to the _marketplace_ database. Feel free to adjust the password as necessary, but be sure and note it because you need it for a future step.
 
     ```sql
     CREATE USER ApplicationUser WITH PASSWORD = 'YourStrongPassword1';
@@ -66,11 +66,11 @@ Make the user a member of the `db_datareader` and `db_datawriter` roles, grantin
     GO
     ```
 
-Now sign in as that user and take a look at this configuration in action.
+Now sign in as that user, and take a look at this configuration in action.
 
 1. While still at the T-SQL prompt, enter `exit` to exit your session.
 
-1. Now sign back in to the database, but as the user you created.
+1. Now sign back in to the database but as the user you created.
 
     ```bash
     sqlcmd -S tcp:[server-name].database.windows.net,1433 -d marketplaceDb -U 'ApplicationUser' -P '[password]' -N -l 30
