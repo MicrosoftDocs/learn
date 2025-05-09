@@ -1,4 +1,4 @@
-# Introduction to Native authentication in Microsoft Entra External ID
+## Introduction to Native authentication in Microsoft Entra External ID
 
 Microsoft Entra's native authentication allows you to have full control over the design of your mobile and desktop application sign-in experiences. Unlike browser-based solutions, native authentication enables you to create visually appealing, pixel-perfect authentication screens that seamlessly blend into your app's interface. With this approach, you can fully customize the user interface, including design elements, logo placement, and layout, ensuring a consistent and branded look.
 

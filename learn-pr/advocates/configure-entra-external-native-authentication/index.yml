@@ -30,13 +30,13 @@ roles:
 products:
 - entra-external-id
 units:
-- learn.configure-entra-external-native-authintroduction
-- learn.configure-entra-external-native-authcreate-external-tenant
-- learn.configure-entra-external-native-authenable-public-client-native-authentication-flows
-- learn.configure-entra-external-native-authprepare-app-native-authentication
-- learn.configure-entra-external-native-authadd-mobile-app-native-authentication
-- learn.configure-entra-external-native-authadd-credential-mobile-app-using-native-authentication
-- learn.configure-entra-external-native-authknowledge-check
-- learn.configure-entra-external-native-authsummary
+- learn.configure-entra-external-native-auth.introduction
+- learn.configure-entra-external-native-auth.create-external-tenant
+- learn.configure-entra-external-native-auth.enable-public-client-native-authentication-flows
+- learn.configure-entra-external-native-auth.prepare-app-native-authentication
+- learn.configure-entra-external-native-auth.add-mobile-app-native-authentication
+- learn.configure-entra-external-native-auth.add-credential-mobile-app-using-native-authentication
+- learn.configure-entra-external-native-auth.knowledge-check
+- learn.configure-entra-external-native-auth.summary
 badge:
   uid: learn.intro-entra-external-native-auth-badge
