@@ -19,7 +19,7 @@ This exercise should take approximately **30** minutes to complete.
 
 You're an identity admin with Woodgrove. You believe there are some users at the company that might be compromised by phishing attacks. You want to use Copilot in Microsoft Entra to review any risky users. If you find any, you can use Copilot to help you remediate the issue and prevent future occurrences. The primary user you suspect at being compromised is Serena Markunaite.
 
-1. Open the simulated environment by selecting this link: **[Microsoft Entra admin center](https://app.highlights.guide/start/3d46b3b8-e0cc-4fad-95dc-1018bc8feafc&azure-portal=true)**.
+1. Open the simulated environment by selecting this link: **[Microsoft Entra admin center](https://app.highlights.guide/start/3d46b3b8-e0cc-4fad-95dc-1018bc8feafc?token=045faae1-1078-4eac-bf56-e12472eddaf9&azure-portal=true)**.
 1. From the menu on the left, scroll down and open the **Protection** menu.
 1. Select **Identity Protection** from the submenu.
 
@@ -64,7 +64,7 @@ You're an identity admin with Woodgrove. You believe there are some users at the
 
    - Review the steps provided.
    > [!NOTE]
-   > The instructions generated are for a single user policy. Microsoft doesn't recommend that you make a policy for each user, but to create them using security groups to help with maintenance.
+   > The instruction generated are for a single user policy. Microsoft doesn't recommend that you make a policy for each user, but to create them using security groups to help with maintenance.
 
 1. Close the **simulated environment** by exiting the browser.
 
@@ -74,7 +74,7 @@ You're an identity admin with Woodgrove. You believe there are some users at the
 
 You're an identity admin with Woodgrove. You're a member of the helpdesk, and just got a request to help a user with a sign in challenge. You have a user that is required to use phone-based MFA to access the site. However, they're working from a location that doesn't allow phones. You can use copilot to help investigate the user sign in attempt, and see if other worrisome attempts have happened recently. Then research how to quickly resolve the user sign in challenge. The user is Khamala Ervello.
 
-1. Open the simulated environment by selecting this link: **[Microsoft Entra admin center](https://app.highlights.guide/start/c07ee752-8668-4ff3-a53f-202ff9a945ef&azure-portal=true)**.
+1. Open the simulated environment by selecting this link: **[Microsoft Entra admin center](https://app.highlights.guide/start/c07ee752-8668-4ff3-a53f-202ff9a945ef?token=045faae1-1078-4eac-bf56-e12472eddaf9&azure-portal=true)**.
 1. Select the **Security Copilot** button in the upper right of the screen.
 1. Enter the prompt **Tell me more about kher40@woodgrove.ms** to get details on Khamala.
 
@@ -82,7 +82,7 @@ You're an identity admin with Woodgrove. You're a member of the helpdesk, and ju
 
 1. We need to research the failed sign in attempt. Use the prompt **Show me kher40@woodgrove.ms most recent failed sign in‌** to get a view into sign in failure.
 
-   - Notice that the exact failure the user described did happen, MFA time-out.
+   - Notice that the exact failure the user described did happen, MFA timeout.
    - Can we check to see if there's any other suspicious activity?
 
 1. Enter the prompt in Security Copilot **Was there any unusual or risky behaviors for kher40@woodgrove.ms sign in attempt?**.
@@ -94,23 +94,23 @@ You're an identity admin with Woodgrove. You're a member of the helpdesk, and ju
 
    - Note the list of available MFA methods and the provided links to research their value and strength.
 
-1. FIDO2 passkey is the most secure option, without the need for phone verification. Can we check to see if Khamala is registered for FIDO2?
+1. FIDO2 passkey is the most secure option, without the need for phone verification. Can we check to see if Khamala is registered for FIDO2.
 1. Check with Copilot using the prompt **Is kher40@woodgrove.ms registered for FIDO2 authentication?‌**.
 
-   - The user isn't set up for FIDO2, can we get them set up for passwordless?
+   - The user is not set up for FIDO2, can we get them set up for passwordless?
 
 1. Ask copilot how to set this up with the prompt **How would I go about getting kher40@woodgrove.ms set up for passwordless authentication?**.
 1. Review the step provide by Security Copilot to help Khamala set up passwordless sign in, so this issue is resolved.
 1. After you review the steps with Khamala, you can send an email with a copy of the instructions.
 1. Close the **simulated environment** by exiting the browser.
 
-**Review**: Security Copilot in Microsoft Entra is your companion at the helpdesk. With a few simple prompts, you can confirm a user’s role in the company, research that their account is not showing risky activities, and help them resolve sign in issues.
+**Review**: Security Copilot in Microsoft Entra is your companion at the helpdesk. With a few simple prompts you can confirm a user’s role in the company, research that their account is not showing risky activities, and help them resolve sign in issues.
 
 #### Task: Remediating app security issues with Security Copilot in Microsoft Entra
 
 You're an identity admin with Woodgrove. Your company has used many enterprise applications over the years, and some are no longer used. Your job is to track down unused application in your Microsoft Entra tenant, and remove them. You should research if there's any suspicious activity associated with the apps or their data as part of the work. Security Copilot in Microsoft Entra can help.
 
-1. Open the simulated environment by selecting this link: **[Microsoft Entra admin center](https://app.highlights.guide/start/104c6555-1915-48d6-a05e-0783017959a0&azure-portal=true)**.
+1. Open the simulated environment by selecting this link: **[Microsoft Entra admin center](https://app.highlights.guide/start/fdc34222-f2a2-4eb6-a8d0-b1085754e463?token=045faae1-1078-4eac-bf56-e12472eddaf9&azure-portal=true)**.
 1. Review the data provided on the **Microsoft Entra dashboard**.
 1. Find the section on your **Identity Secure Score**.
 
@@ -131,7 +131,7 @@ You're an identity admin with Woodgrove. Your company has used many enterprise a
 1. Review the steps provided to remove the application manually using the Microsoft Entra admin center or view PowerShell scripts.
 
    > [!NOTE]
-   > While this simulation doesn't actively use these steps to remove application, you can see how Security Copilot can quickly help you remove unused applications.
+   > While this simulation does not actively use these steps to remove application, you can see how Security Copilot can quickly help you remove unused applications.
 
 1. Scroll up in the **Copilot window** to see the list of apps originally provided.
 1. Find the application called **Woodgrove Intranet**, and then copy the owner’s name into your clipboard: **Braden Goudy (Corp)**.
@@ -158,13 +158,13 @@ You're an identity admin with Woodgrove. Your company has used many enterprise a
 
 You're an identity admin with Woodgrove. You have been advised that the user Rovshan Hasanli might have some strange behavior when connecting to the Woodgrove site. You want to use the Audit Logs to research the activities.
 
-1. Open the simulated environment by selecting this link: **[Microsoft Entra admin center](https://app.highlights.guide/start/fdc34222-f2a2-4eb6-a8d0-b1085754e463&azure-portal=true)**.
+1. Open the simulated environment by selecting this link: **[Microsoft Entra admin center](https://app.highlights.guide/start/104c6555-1915-48d6-a05e-0783017959a0?token=045faae1-1078-4eac-bf56-e12472eddaf9&azure-portal=true)**.
 1. In the upper right side of the screen select the **Security Copilot button**.
 1. Let’s start with a simple prompt like **Tell me about user Rovshan Hasanli?**.
 1. We need to find out information about the user from the **Audit Logs**. Use the prompt **Show me Microsoft Entra audit log events initiated by that user in the last week** to find more information.
 
    - Review the information about User Administrator role being assigned in PIM.
-   - Notice the Security Copilot remembered that we asked about Rovshan already, and kept that context. You could have specified the name in the prompt also.
+   - Notice the Security Copilot remembered that we asked about Rovshan already, and kept that context.  You could have specified the name in the prompt also.
    - Without Security Copilot would have to open the logs and manually search for entries.
 
 1. Let’s check the user’s sign-in with the prompt **Show me sign-ins from that user?**.
@@ -202,4 +202,4 @@ You're an identity admin with Woodgrove. You have been advised that the user Rov
 
 1. Close the **simulated environment** by exiting the browser.
 
-**Review**: In this short simulation you can see how Security Copilot in Microsoft Entra is able to quickly share information about a specific user’s activity. Then Security Copilot includes links to where more details can be found to get more details. This feature lets you ask questions about Microsoft Entra data, without having to guess where to go next.
+**Review**: In this short simulation you can see how Security Copilot in Microsoft Entra is able to quickly share information about a specific user’s activity.  Then Security Copilot includes links to where more details can be found to get more details. This feature lets you ask questions about Microsoft Entra data, without having to guess where to go next. 
