@@ -4,6 +4,10 @@ You learned how to:
 
 - Build an organization Project
 - Automate and organize your Project
+- Compare Projects vs Projects (Classic)
+- Use layout options like boards, tables, and timelines
+- Enable default workflows to automate project tasks
+- Convert checklist items into sub-issues for better tracking
 
 ## Learn more
 

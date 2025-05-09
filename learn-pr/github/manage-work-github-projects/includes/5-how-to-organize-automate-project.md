@@ -102,4 +102,16 @@ Here are steps on how to navigate to them:
 
    :::image type="content" source="../media/5-danger-zone-options.png" alt-text="Screenshot of the Danger zone section with the option to change visibility, close Project and delete Project with delete Project highlighted.":::
 
+## Converting checklist items to sub-issues
+
+GitHub Projects now supports converting checklist items into sub-issues for better task tracking and hierarchy.
+
+To use this feature:
+
+1. Open any issue that includes a checklist.
+2. Hover over a checklist item and click the **...** (more options) button.
+3. Select **Convert to sub-issue**.
+
+This creates a dedicated issue linked back to the original one, which will also appear in your Projects view for tracking.
+
 Next up, we'll review insights and automation in Projects.

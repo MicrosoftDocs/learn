@@ -1,4 +1,6 @@
-﻿Imagine you want to organize your team's feature backlog. Projects, GitHub's built-in program-management tool, is a perfect way to organize and prioritize your team's work in a single space.
+﻿GitHub Projects is a powerful planning and tracking tool that gives your team flexible views—like tables, boards, and timelines—to organize your work and see the bigger picture.
+
+Imagine you want to manage your team’s feature backlog in one place. This built-in tool makes it easy to organize, prioritize, and track everything in a single view.
 
 In this unit, you learn how to:
 
@@ -77,5 +79,30 @@ You can bulk add issues and pull requests to an existing repository to save time
    :::image type="content" source="../media/3-bulk-add-issues-and-pr.png" alt-text="Screenshot of bulk adding issues and pull requests from a repository, with the option to search for specific issues or pull requests highlighted.":::
 
 1. Once you're ready to add the issues and pull requests to your Project, select the green button titled **Add selected items** in the bottom right corner.
+
+## Project workflows
+
+To help streamline work, GitHub Projects supports **default workflows**. These allow items like issues and pull requests to be automatically added to a Project and marked with an initial status, like "Todo".
+
+To enable a workflow:
+
+1. Open your Project.
+2. Select the three-dot menu in the top-right and choose **Workflows**.
+3. Choose a trigger like “Item added to project”.
+4. Set values, such as **Status: Todo**.
+5. Select **Save and turn on workflow**.
+
+## Convert checklist items into sub-issues
+
+As of February 2025, GitHub Projects supports converting checklist items into sub-issues. This feature makes it easier to break down tasks into smaller, trackable work items—directly from an issue.
+
+To convert a checklist item:
+
+1. Create or open an issue that contains a checklist.
+2. Hover over the checklist item.
+3. Click the **...** menu next to the item.
+4. Select **Convert to sub-issue**.
+
+This creates a linked issue that appears in your Projects view with its own status, metadata, and tracking. Sub-issues provide better visibility into related work and replace the older tasklist block feature, which was deprecated on April 30, 2025.
 
 In the next unit, you'll learn how to organize and prioritize your Project in order to keep your tasks on track.

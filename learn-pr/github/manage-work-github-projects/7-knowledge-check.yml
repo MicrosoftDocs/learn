@@ -68,3 +68,25 @@ quiz:
     - content: "Danger zone"
       isCorrect: true
       explanation: "Correct!"
+  - content: "What is the benefit of converting checklist items into sub-issues?"
+    choices:
+    - content: "It allows you to embed a checklist within an issue."
+      isCorrect: false
+      explanation: "Checklists are already supported in issues. Converting items creates trackable sub-issues."
+    - content: "It turns checklist items into standalone issues with status and metadata."
+      isCorrect: true
+      explanation: "Sub-issues appear as separate items with their own tracking in Projects."
+    - content: "It automatically resolves the parent issue."
+      isCorrect: false
+      explanation: "Sub-issues are linked but don't auto-close the parent issue."
+  - content: "Where can you go to enable default workflows for a Project?"
+    choices:
+    - content: "In the Project's README editor"
+      isCorrect: false
+      explanation: "README is for documentation, not automation."
+    - content: "From the three-dot menu in the top-right of your Project"
+      isCorrect: true
+      explanation: "The three-dot menu contains the Workflows option where default automation can be configured."
+    - content: "Under repository settings"
+      isCorrect: false
+      explanation: "Project workflows are configured within the Project view itself, not the repo settings."

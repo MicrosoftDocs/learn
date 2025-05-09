@@ -88,3 +88,5 @@ Learn more about automating workflows for your Project in the article *Automatin
 ### GraphQL API
 
 If you're using GraphQL in GitHub, you can utilize an API to help automate your Project. For more information on using GraphQL API, see the article, *Using the API to Manage Projects* at the end of this module.
+
+
