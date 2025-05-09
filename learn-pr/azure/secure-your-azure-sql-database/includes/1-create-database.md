@@ -90,7 +90,7 @@ Create the Linux VM to use through some examples.
     Where `nnn.nnn.nnn.nnn` is the value from the `publicIpAddress` output in the previous step.
 
     > [!NOTE]
-    > Two things to note. First, you don't need a password because you generated an SSH key pair as part of the VM creation. Second, on the first shell connection into the VM, you are prompted about the authenticity of the host. This occurs because you are connecting to an IP address instead of a host name. Answering _yes_ saves the IP address as a valid host for connection and allows the connection to proceed.
+    > Two things to note. First, you don't need a password because you generated an SSH key pair as part of the VM creation. Second, on the first shell connection into the VM, you're prompted about the authenticity of the host. This occurs because you're connecting to an IP address instead of a host name. Answering _yes_ saves the IP address as a valid host for connection and allows the connection to proceed.
 
 1. Finish things by installing mssql-tools on the Linux VM so you can connect to your database through sqlcmd.
 

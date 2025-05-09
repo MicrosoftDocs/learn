@@ -101,7 +101,7 @@ Because your VM has outbound internet access, you can use the **Allow access to 
 
 1. Scroll down to **Exceptions**, select the checkbox for **Allow Azure services and resources to access this server**, and then select **Save**. Wait until the system acknowledges this change.
 
-1. Back in your SSH session, try to connect to your database again.
+1. Back in your SSH session try to connect to your database again.
 
     ```bash
     sqlcmd -S tcp:[server-name].database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30

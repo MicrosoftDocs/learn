@@ -23,7 +23,7 @@ Take a look in the Azure portal at where TDE is configured on your _marketplaceD
 Because new databases are encrypted by default, you can be sure that your data is encrypted on disk from as soon as you create the database.
 
 > [!NOTE]
-> Azure includes a built in service called Microsoft Defender for Cloud that gives you visibility into the security of your environment, including Azure SQL databases. Microsoft Defender for Cloud flags any databases that don't have TDE enabled on them, giving you the ability to report and take action to secure your data.
+> Azure includes a built-in service called Microsoft Defender for Cloud that gives you visibility into the security of your environment, including Azure SQL databases. Microsoft Defender for Cloud flags any databases that don't have TDE enabled on them, giving you the ability to report and take action to secure your data.
 
 ## Dynamic data masking
 

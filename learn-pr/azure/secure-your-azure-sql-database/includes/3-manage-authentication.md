@@ -1,4 +1,4 @@
-Even though you might be able to connect to the database over the network, that doesn't mean you can actually gain access to the data itself. Following a layered approach, you want to ensure that only users who need access to the data can actually access it. This access is where authentication and authorization come in to play.
+Even though you might be able to connect to the database over the network that doesn't mean you can actually gain access to the data itself. Following a layered approach, you want to ensure that only users who need access to the data can actually access it. This access is where authentication and authorization come in to play.
 
 ## Authentication
 
@@ -16,13 +16,13 @@ This authentication method uses identities managed by Microsoft Entra ID and is 
 
 ## Authorization
 
-Authorization refers to what an identity can do within an Azure SQL Database. This authorization is controlled by permissions granted directly to the user account and database role memberships. A database role is used to group permissions together to ease administration. Add a user to a role to grant the permissions the role has. These permissions can include the ability to sign in to the database, the ability to read a table, and the ability to add and remove columns from a database. As a best practice, you should grant users the least privileges necessary. The process of granting authorization to both SQL and Microsoft Entra users is the same.
+Authorization refers to what an identity can do within an Azure SQL Database. Permissions granted directly to the user account and database role memberships control this authorization. A database role is used to group permissions together to ease administration. Add a user to a role to grant the permissions the role has. These permissions can include the ability to sign in to the database, the ability to read a table, and the ability to add and remove columns from a database. As a best practice, you should grant users the least privileges necessary. The process of granting authorization to both SQL and Microsoft Entra users is the same.
 
 In the example here, the server admin account that you connect with is a member of the db_owner role, which has authority to do anything within the database.
 
 ## Authentication and authorization in practice
 
-As a best practice, your application should use a dedicated account to authenticate. This way, you can limit the permissions granted to the application and reduce the risks of malicious activity in case the application code is vulnerable to a SQL injection attack. We recommend that you create a contained database user, which allows your app to authenticate directly to the database. For more information, see [Contained Database Users - Making Your Database Portable](/sql/relational-databases/security/contained-database-users-making-your-database-portable).
+As a best practice, your application should use a dedicated account to authenticate. This way, you can limit the permissions granted to the application and reduce the risks of malicious activity in case the application code is vulnerable to a SQL injection attack. We recommend that you create a contained database user, which allows your app to authenticate directly to the database. For more information, see [Make your Database Portable by Using Contained Databases](/sql/relational-databases/security/contained-database-users-making-your-database-portable).
 
 Use Microsoft Entra authentication to centrally manage identities of database users and as an alternative to SQL Server authentication.
 
