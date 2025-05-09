@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.security-copilot-describe-agents.describe-phishing-triage-agent
+title: Describe the Phishing Triage agent
+metadata:
+  title: Describe the Phishing Triage agent
+  description: Describe the Phishing Triage agent.
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.date: 05/08/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-describe-phishing-triage-agent.md)]
+
+
+
