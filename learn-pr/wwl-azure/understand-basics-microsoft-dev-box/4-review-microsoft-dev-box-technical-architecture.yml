@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-basics-microsoft-dev-box.review-microsoft-dev-box-technical-architecture
+title: Review Microsoft Dev Box technical architecture
+metadata:
+  title: Review Microsoft Dev Box technical architecture
+  description: "Review Microsoft Dev Box technical architecture"
+  ms.date: 05/02/2025
+  author: wwlpublish
+  ms.author: fkhan
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-review-microsoft-dev-box-technical-architecture.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-microsoft-dev-box-deployment-guidelines-best-practices.execute-your-rollout-strategy
+title: Execute your rollout strategy
+metadata:
+  title: Execute your rollout strategy
+  description: "Execute your rollout strategy"
+  ms.date: 05/08/2025
+  author: wwlpublish
+  ms.author: fkhan
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-execute-your-rollout-strategy.md)]

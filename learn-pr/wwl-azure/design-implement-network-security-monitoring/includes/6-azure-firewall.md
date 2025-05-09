@@ -1,4 +1,5 @@
 
+
 [Azure Firewall](/azure/firewall/overview) is a managed, cloud-based network security service that protects your Azure virtual network resources. Azure firewall has built-in high availability and unrestricted cloud scalability. Azure Firewall works not only for traffic to and from the internet, but also internally. Internal traffic filtering includes spoke-to-spoke traffic and hybrid cloud traffic between your on-premises network and your Azure virtual network.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=84af3f87-d43d-42bd-b794-7bcb658abf81]

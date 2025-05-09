@@ -1,4 +1,5 @@
 
+
 A denial of service attack (DoS) is an attack that has the goal of preventing access to services or systems. A DoS attack originates from one location. A distributed denial of service (DDoS) attack originates from multiple networks and systems.
 
 DDoS attacks are one of the security concerns facing customers that are moving their applications to the cloud. A DDoS attack tries to drain an APIs or application's resources, making that application unavailable to legitimate users. DDoS attacks can be targeted at any endpoint that is publicly reachable through the internet.

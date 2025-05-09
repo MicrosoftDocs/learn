@@ -34,5 +34,6 @@ modules:
 - learn.wwl.translate-text-with-translator-service
 - learn.wwl.create-speech-enabled-apps
 - learn.wwl.translate-speech-speech-service
+- learn.wwl.develop-generative-ai-audio-apps
 trophy:
   uid: learn.wwl.develop-language-solutions-azure-ai.trophy

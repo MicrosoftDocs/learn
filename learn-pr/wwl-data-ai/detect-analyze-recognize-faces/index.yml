@@ -5,36 +5,24 @@ metadata:
   description: Detect, analyze, and recognize faces
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 12/13/2024
+  ms.date: 05/03/2025
   ms.service: azure
   ms.topic: module
   ms.collection:
     - wwl-ai-copilot
-  ai-usage: human-only
+  ai-usage: ai-assisted
 title: Detect, analyze, and recognize faces
 summary: The ability for applications to detect human faces, analyze facial features and emotions, and identify individuals is a key artificial intelligence capability.
 abstract: |
   After completing this module, you'll be able to:
-
-  - Identify options for face detection, analysis, and identification.
-
-  - Understand considerations for face analysis.
-
-  - Detect faces with the Computer Vision service.
-
-  - Understand capabilities of the Face service.
-
-  - Compare and match detected faces.
-
-  - Implement facial recognition.
+  - Describe the capabilities of the Azure AI Vision Face service.
+  - Write code to detect and analyze faces in an image.
+  - Describe facial recognition support in Azure AI Vision Face.
+  - Describe responsible AI considerations when developing facial solutions.
 prerequisites: |
   Before starting this module, you should already have:
-
   - Familiarity with Azure and the Azure portal.
-
   - Experience programming with C# or Python.
-
-  If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path first.
 iconUrl: /training/achievements/artificial-intelligence-detect-faces.svg
 levels:
 - intermediate
@@ -45,18 +33,16 @@ products:
 - azure-computer-vision
 - azure-face
 subjects:
-- classification-analysis
+- artificial-intelligence
 units:
 - learn.wwl.detect-analyze-recognize-faces.introduction
-- learn.wwl.detect-analyze-recognize-faces.identify-options-for-face-detection-analysis-identification
-- learn.wwl.detect-analyze-recognize-faces.understand-considerations-for-face-analysis
-- learn.wwl.detect-analyze-recognize-faces.detect-faces-computer-vision-service
 - learn.wwl.detect-analyze-recognize-faces.understand-capabilities-of-face-service
+- learn.wwl.detect-analyze-recognize-faces.detect-analyze-faces
 - learn.wwl.detect-analyze-recognize-faces.compare-match-detected-faces
-- learn.wwl.detect-analyze-recognize-faces.implement-facial-recognition
+- learn.wwl.detect-analyze-recognize-faces.understand-considerations-for-face-analysis
 - learn.wwl.detect-analyze-recognize-faces.exercise-identify-faces
 - learn.wwl.detect-analyze-recognize-faces.knowledge-check
 - learn.wwl.detect-analyze-recognize-faces.summary
 badge:
   uid: learn.wwl.detect-analyze-recognize-faces.badge
-
+

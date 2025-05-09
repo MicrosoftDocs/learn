@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Knowledge check
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 2/21/2024
+  ms.date: 05/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -47,4 +47,4 @@ quiz:
     - content: "Diversity"
       isCorrect: true
       explanation: "That answer's correct. Having the right data diversity will lead to better extraction performance."
-
+
