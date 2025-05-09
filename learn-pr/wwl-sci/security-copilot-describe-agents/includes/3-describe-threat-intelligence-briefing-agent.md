@@ -16,31 +16,31 @@ The Threat Intelligence Briefing Agent, which is available through the standalon
 
 ### Set up
 
-Follow these steps to configure the Threat Intelligence Briefing Agent:
+Follow these steps to configure the Threat Intelligence Briefing Agent, corresponding images are shown in the tabbed images that follow:
 
-1. Navigate to the **Agents** page in the Microsoft Security Copilot portal and select **View details** under the Threat Intelligence Briefing Agent.
-2. Review the agent details and select **Set up**.
-3. Connect a user account by selecting **Next** and choosing the appropriate account.
-4. Specify parameters to customize the output, such as:
+1. Agents - Navigate to the **Agents** page in the Microsoft Security Copilot portal and select **View details** under the Threat Intelligence Briefing Agent.
+2. Details page - Review the agent details and select **Set up**.
+3. Set up - Connect a user account by selecting **Next** and choosing the appropriate account.
+4. Parameters - Specify parameters to customize the output, such as:
    - Number of insights to research.
    - Look-back period for threats.
    - Email address for report delivery.
    - Geographical region and industry scope.0
-5. After setup, access the agent overview page to run the agent manually or schedule it to run automatically.
+5. Run - After setup, access the agent overview page to run the agent manually or schedule it to run automatically.
 
-# [Step 1 - Agents](#tab/agents)
+# [Agents](#tab/agents)
 :::image type="content" source="../media/agents-copilot-v2.png" lightbox="../media/agents-copilot-v2.png" alt-text="Screen capture showing the navigation flow to access the Agents page in Microsoft Security Copilot. ":::
 
-# [Step 2 - Details page](#tab/details-page)
+# [Details page](#tab/details-page)
 :::image type="content" source="../media/threat-intelligence-agent-view-details.png" lightbox="../media/threat-intelligence-agent-view-details.png" alt-text="Screenshot of Threat Intelligence Briefing Agent details page.":::
 
-# [Step 3 - Set up](#tab/set-up-agent)
-:::image type="content" source="../media/threat-intelligence-agent-setup1.png" lightbox="../media/threat-intelligence-agent-setup1.png"alt-text="Screenshot of Threat Intelligence Briefing Agent set up page that provides information on the permissions and identity needed to run the agent.":::
+# [Set up](#tab/set-up-agent)
+:::image type="content" source="../media/threat-intelligence-agent-setup-1.png" lightbox="../media/threat-intelligence-agent-setup-1.png"alt-text="Screenshot of Threat Intelligence Briefing Agent set up page that provides information on the permissions and identity needed to run the agent.":::
 
-# [Step 4 - Parameters](#tab/parameters)
-:::image type="content" source="../media/threat-intelligence-agent-setup2.png" lightbox="../media/threat-intelligence-agent-setup2.png" alt-text="Screenshot of Threat Intelligence Briefing Agent set up parameters page.":::
+# [Parameters](#tab/parameters)
+:::image type="content" source="../media/threat-intelligence-agent-setup-2.png" lightbox="../media/threat-intelligence-agent-setup-2.png" alt-text="Screenshot of Threat Intelligence Briefing Agent set up parameters page.":::
 
-# [Step 5 - Run](#tab/run)
+# [Run](#tab/run)
 :::image type="content" source="../media/threat-intelligence-agent-first-run.png" lightbox="../media/threat-intelligence-agent-first-run.png" alt-text="Screenshot of Threat Intelligence Briefing Agent overview page.":::
 
 ---
@@ -62,7 +62,7 @@ Select a report to assess its content and view the agent’s progress by clickin
 :::image type="content" source="../media/threat-intelligence-agent-report.png" lightbox="../media/threat-intelligence-agent-report.png" alt-text="Screenshot of a Threat Intelligence Briefing Agent report.":::
 
 # [Activity](#tab/activity)
-:::image type="content" source="../media/threat-intelligence-agent-activity2.png" lightbox="../media/threat-intelligence-agent-activity2.png" alt-text="Screenshot of a Threat Intelligence Briefing Agent activity diagram.":::
+:::image type="content" source="../media/threat-intelligence-agent-activity-2.png" lightbox="../media/threat-intelligence-agent-activity-2.png" alt-text="Screenshot of a Threat Intelligence Briefing Agent activity diagram.":::
 
 ---
 

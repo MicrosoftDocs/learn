@@ -5,7 +5,7 @@ Imagine you're a security engineer at a mid-sized financial institution. Your te
 In this module, you get an introduction to some of the Microsoft Security Copilot agents, including the Threat Intelligence briefing agent, the Conditional Access Optimization agent, and the Phishing Triage agent.
 
 > [!NOTE]
->This module is intended to give you a flavor of just a few of the Microsoft agents available in Security Coplot, through both the standalone and embedded experience. Agents that are available through the embedded Copilot experience, are described in training that relates to the specific security solution in which it's embedded. For example, agents that are embedded in Microsoft Purview solutions are described in the training that relates to that Microsoft Purview solution.  
+>This module is intended to give you a flavor of just a few of the Microsoft agents available in Security Coplot, through both the standalone and embedded experience. Agents that are available through the embedded Copilot experience, are described in training that relates to the specific security solution in which it's embedded. For example, agents that are embedded in Microsoft Purview solutions are described in the training that relates to that Microsoft Purview solution. 
 
 After completing this module, you’ll be able to:
 

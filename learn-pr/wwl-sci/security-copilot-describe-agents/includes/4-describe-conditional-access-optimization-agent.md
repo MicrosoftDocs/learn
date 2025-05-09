@@ -21,24 +21,27 @@ The Conditional Access Optimization Agent, which is available in Microsoft Entra
 
 Follow these steps to configure and run the Conditional Access optimization agent:
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) with at least a Security Administrator role.
-1. From the home page, select **Go to agents** from the agent notification card.
-1. Select **View details** and under the Conditional Access Optimization Agent, then select **Start agent** to being your first run.
-1. When the agent overview page loads, you see most recent and next scheduled runtimes, performance highlights, recent suggestions, and recent activity.
-1. Selecting a suggestion takes you to the policy details page where you can view the agent summary, user impact, policy details, make edits, and more. 
+1. Go to agents - Once you sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) with at least a Security Administrator role, from the Microsoft Entra home page, select **Go to agents** from the agent notification card.
+1. Available agents - The Security Copilot agents page, shows tiles for the available agents. The page currently only shows the Conditional Access Optimization Agent, but more agents are coming soon.
+1. Start Agent - In the Conditional Access Optimization Agent tile, select **View details**. If you have not previously run the agent, you'll see the option to **Star agent** to begin the agent's first run.
+1. Overview page - If you have previously run the agent, selecting view details, brings you to the Overview page. The Overview page shows you see most recent and next scheduled runtimes, performance highlights, recent suggestions, and recent activity.
+1. Policy details - Selecting a suggestion takes you to the policy details page where you can view the agent summary, user impact, policy details, make edits, and more.
    1. Newly created policies are created in report-only mode. As a best practice organizations should exclude their break-glass accounts from policy to avoid being locked out due to misconfiguration.
    1. After administrators evaluate the policy settings using policy impact or report-only mode, they can move the Enable policy toggle from Report-only to On. Policies created by the agent are tagged with Conditional Access Optimization Agent in the Conditional Access policies pane.
 
-# [Step 2 - Go to agents](#tab/go-to-agents)
-:::image type="content" source="../media/conditional-access-agent-home-page.png" lightbox="../media/conditional-access-agent-home-page.png" alt-text="Screenshot showing the Microsoft Entra home page with the Copilot agent tile.":::
+# [Go to agents](#tab/go-to-agents)
+:::image type="content" source="../media/conditional-access-agent-home-page.png" lightbox="../media/conditional-access-agent-home-page.png" alt-text="Screenshot of the Microsoft Entra home page that includes the agent notification tile.":::
 
-# [Step 3 - Agent details](#tab/agent-details)
-:::image type="content" source="../media/conditional-access-agent-view-details.png" lightbox="../media/conditional-access-agent-view-details.png" alt-text="Screenshot showing the Conditional Access Optimization Agent details page.":::
+# [Available agents](#tab/available-agents)
+:::image type="content" source="../media/conditional-access-agent-tile.png" lightbox="../media/conditional-access-agent-tile.png" alt-text="Screenshot of the Security Copilot agents page showing that lists available agents.":::
 
-# [Step 4 - Overview](#tab/overview)
-:::image type="content" source="../media/conditional-access-agent-overview-page.png" lightbox="../media/conditional-access-agent-overview-page.png" alt-text="Screenshot showing the Conditional Access Optimization Agent overview page showing the most recent and next scheduled runtimes, performance highlights, recent suggestions, and recent activity.":::
+# [Start agent](#tab/start-agent)
+:::image type="content" source="../media/conditional-access-agent-view-details.png" lightbox="../media/conditional-access-agent-view-details.png" alt-text="Screenshot showing the Conditional Access Optimization Agent details page. From here, you can select start if you haven't previously run the agent.":::
 
-# [Step 5 - Policy details](#tab/policy-details)
+# [Overview page](#tab/overview-page)
+:::image type="content" source="../media/conditional-access-agent-overview-page-v2.png" lightbox="../media/conditional-access-agent-overview-page-v2.png" alt-text="Screenshot showing the Conditional Access Optimization Agent overview page showing the most recent and next scheduled runtimes, performance highlights, recent suggestions, and recent activity.":::
+
+# [Policy details](#tab/policy-details)
 :::image type="content" source="../media/conditional-access-agent-policy-details-page.png" lightbox="../media/conditional-access-agent-policy-details-page.png" alt-text="Screenshot showing the Conditional Access Optimization Agent policy details page.":::
 
 ---
@@ -49,7 +52,7 @@ The agent is configured to run every 24 hours based on when it's initially confi
 
 Use the checkboxes under Objects to specify what the agent should monitor when making policy recommendations. By default the agent looks for both new users and applications in your tenant over the previous 24 hour period.
 
-The agent runs under the Identity and permissions of the user who enabled the agent in your tenant. Because of this requirement you should avoid using an account that requires elevation like those that use PIM for just-in-time elevation.
+The agent runs under the Identity and permissions of the user who enabled the agent in your tenant. Because of this requirement, you should avoid using an account that requires elevation like those that use Privileged Identity Management (PIM) for just-in-time elevation.
 
 You can tailor policy to your needs using the optional Custom Instructions field. This allows you to provide a prompt to the agent as part of its execution. For example: "The user "Break Glass" should be excluded from policies created." When you save the custom instruction prompt Security Copilot will attempt to interpret and the results appear in the settings page.
 

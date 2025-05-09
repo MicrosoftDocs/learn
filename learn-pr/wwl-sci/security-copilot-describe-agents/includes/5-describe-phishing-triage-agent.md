@@ -16,9 +16,9 @@ The Phishing Triage Agent uses advanced large language model (LLM)-based analysi
 The Phishing Triage Agent, which is available in Microsoft Defender XDR as part of the Copilot embedded experience, is characterized as follows:
 
 - **Trigger**: The agent is triggered when a user in your organization submits a phishing incident. The agent autonomously analyzes the submitted email to classify them as either phishing or not phishing based on its training and the context of the organization.
-- **Permissions**: This agent can read data from Defender XDR adn Microsoft Threat Intelligence.
+- **Permissions**: This agent can read data from Defender XDR and Microsoft Threat Intelligence.
 - **Identity**: Connection to an existing user account.
-- **Products**: Microsoft Defender for Office 365 Plan 2 and Microsoft Security Copilot with provisioned capacity is necessary to run the agent.  The following Microsoft Defender capabilities are required:
+- **Products**: Microsoft Defender for Office 365 Plan 2 and Microsoft Security Copilot with provisioned capacity is necessary to run the agent. The following Microsoft Defender capabilities are required:
   - Unified role-based access control (URBAC) must be enabled for managing permissions.
   - The *Monitor reported messages in Outlook* must be enabled in the User reported settings page.
   - Enable the "Email reported by user as malware or phish" alert policy.
