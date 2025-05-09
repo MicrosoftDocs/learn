@@ -8,8 +8,6 @@ Admins can also make use of the *scanner API* to scan Fabric items for sensitive
 
 **Promoted** Fabric content appears with a Promoted badge in the Fabric portal. Workspace members with the contributor or admin role can promote content within a workspace. The Fabric admin can promote content across the organization.
 
-![Screenshot of Promoted Fabric content in the workspace view.](../media/content-endorsement.png)
-
 **Certified** content requires a more formal process that involves a review of the content by a designated reviewer. Content appears with a Certified badge in the Fabric portal. Admins manage the certification process and can customize it to meet the needs of your organization.
 
 If you aren't an admin, you need to request item certification from an admin. You can perform request certification by selecting the item in the Fabric portal, and then selecting **Request certification** from the **More** menu.
