@@ -54,14 +54,14 @@ First, you create the Azure Batch account and pool of worker nodes for your test
      --shared-key-auth
     ```
 
-1. Create a pool of three Standard A1 v2 VMs running Ubuntu 18.04:
+1. Create a pool of three Standard A1 v2 VMs running Ubuntu 22.04:
 
     ```azurecli
     az batch pool create \
      --id mypool --vm-size Standard_A1_v2 \
      --target-dedicated-nodes 3 \
-     --image canonical:ubuntuserver:18.04-LTS \
-     --node-agent-sku-id "batch.node.ubuntu 18.04"  
+     --image canonical:ubuntuserver:22.04-LTS \
+     --node-agent-sku-id "batch.node.ubuntu 22.04"  
     ```
 
 1. Run the following command to periodically determine whether the nodes are ready:
