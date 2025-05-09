@@ -23,12 +23,10 @@ products:
 subjects:
 - databases
 modules:
-- learn.wwl-azure.basic-sql-commands
 - learn.wwl-azure.basic-sql-simple-select
 - learn.wwl-azure.basic-sql-where-clause-and-subqueries
 - learn.wwl-azure.basic-sql-limit-offset-orderby
 - learn.wwl-azure.basic-sql-joining-tables
 - learn.wwl-azure.basic-sql-aggregate-functions-and-grouping
-- learn.wwl-azure.basic-sql-manipulation
 trophy:
   uid: learn.wwl-azure.azure-pg-playground.trophy
