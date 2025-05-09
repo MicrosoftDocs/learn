@@ -12,7 +12,7 @@ Admins can also make use of the *scanner API* to scan Fabric items for sensitive
 
 **Certified** content requires a more formal process that involves a review of the content by a designated reviewer. Content appears with a Certified badge in the Fabric portal. Admins manage the certification process and can customize it to meet the needs of your organization.
 
-If you aren't an admin, you need to request item certification from an admin. You can do request certification by selecting the item in the Fabric portal, and then selecting **Request certification** from the **More** menu.
+If you aren't an admin, you need to request item certification from an admin. You can perform request certification by selecting the item in the Fabric portal, and then selecting **Request certification** from the **More** menu.
 
 > [!NOTE]
 > For more detailed information on the content endorsement process, see [Promote or certify content](/fabric/get-started/endorsement-promote-certify).
@@ -28,5 +28,5 @@ If you aren't an admin, you need to request item certification from an admin. Yo
 
 *Data lineage* is the ability to track the flow of data through Fabric, also known as *impact analysis*. Data lineage allows you to see where data comes from, how it's transformed, and where it goes. The lineage view in workspaces helps you understand the data that is available in Fabric, and how it's being used.
 
-> [!TIP]
-> Fabric can be included in your Microsoft Purview environment for a complete data governance solution for your entire data estate.
+## Report on sensitive data
+With the Microsoft Purview hub (preview) in Fabric, you can manage and govern your organization's Fabric data estate. It contains reports that provide insights about sensitive data, item endorsement, and domains, and also serves as a gateway to more advanced capabilities in the Microsoft Purview portal such as Data Catalog, Information Protection, Data Loss Prevention, and Audit.

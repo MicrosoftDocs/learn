@@ -2,7 +2,7 @@
 uid: learn.wwl.administer-fabric
 metadata:
   title: Administer a Microsoft Fabric environment
-  description: "Microsoft Fabric is a SaaS solution for end-to-end data analytics. As an administrator, you can configure features and manage access to suit your organization's needs."
+  description: "Microsoft Fabric is a SaaS solution for end-to-end data analytics. As an administrator, you can configure features and manage access to accommodate your organization's needs."
   ms.date: 10/02/2024
   author: wwlpublish
   ms.author: theresai
@@ -19,7 +19,7 @@ abstract: |
   -   Navigate the admin center
   -   Manage user access
   -   Govern data in Fabric
-prerequisites: Understand the Microsoft Fabric platform and its capabilities and administrative tasks. Introductory knowledge of PowerShell is helpful, but not required.
+prerequisites: An understanding of the Microsoft Fabric platform and its capabilities and administrative tasks.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
