@@ -101,6 +101,8 @@ Some best practices for mitigating script injection attacks on GitHub actions in
 
 4. Restrict permissions for tokens: You should be sure to always apply the `rule of least privilege` to any created token.  In other words, ensure the token is assigned the minimum privileges to achieve the task for which it was created.
 
+![New Workflow](../media/manage-encrypted-secrets_newworkflow.png)
+
 ### Identify best practices for using third-party actions securely 
 
 Some best practices for third-party actions securely:
@@ -224,6 +226,8 @@ When you generate an artifact attestation for builds you must ensure:
 * You have included a step in your workflow that uses the  [attest-build-provenance](https://github.com/actions/attest-build-provenance) action.
 
 The attestation establishes build provenance.  You can view attestations in the repository's **Actions** tab. 
+
+![Attestations](../media/manage-encrypted-secrets_attestations.png)
 
 ##### Generating an attestation for build provenance of binaries
 
