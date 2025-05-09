@@ -13,7 +13,7 @@ metadata:
   ms.service: dev-box
   ai-usage: human-only
 title: Explore Microsoft Dev Box deployment guidelines and best practices
-summary: In this module, you learn how to plan, deploy, and operationalize Microsoft Dev Box in an enterprise environment using both manual and automated methods. You explore key deployment considerations such as licensing prerequisites, network configuration, role responsibilities, and service architecture. This module also introduces best practices for security and compliance using Microsoft Entra ID, Intune, Defender, and Sentinel, along with guidance on testing, validation, and phased rollout strategies. Whether you're an IT admin or platform engineer, this module equips you with the foundational knowledge to deliver a scalable and secure Dev Box implementation across your organization.
+summary: In this module, you'll learn to plan, deploy, and manage Microsoft Dev Box using manual or automated methods, covering prerequisites, architecture, security, and rollout—empowering IT admins and platform engineers to implement at scale.
 abstract: |
   By the end of this module, you'll be able to:
 
