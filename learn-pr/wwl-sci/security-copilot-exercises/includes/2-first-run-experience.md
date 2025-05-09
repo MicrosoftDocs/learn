@@ -30,7 +30,7 @@ Why is this needed? As a Global Administrator in Microsoft Entra ID, you might n
 
 Once you're assigned the User Access Administrator role in Azure, you can assign a user the necessary access to provision SCUs for Copilot. For the purpose of this exercise only, which is to show you the steps involved,  you'll be assigning yourself the necessary access. The steps that follow will guide you through the process.
 
-1. Open the simulated environment by selecting this link: **[Azure portal](https://app.highlights.guide/start/6d7270b9-7187-456a-ac16-97bc227d5c27&azure-portal=true)**.
+1. Open the simulated environment by selecting this link: **[Azure portal](https://app.highlights.guide/start/6d7270b9-7187-456a-ac16-97bc227d5c27?token=045faae1-1078-4eac-bf56-e12472eddaf9&link=1&azure-portal=true)**.
 
 1. You'll start by enabling Access management for Azure resources. To access this setting:
     1. From the Azure portal, select **Microsoft Entra ID**.
@@ -63,7 +63,7 @@ In order to start using Security Copilot, you must provision the capacity, which
 
 For this exercise, you provision capacity through Security Copilot. When you first open Security Copilot (the first run experience), a wizard guides you through the steps in setting up capacity for your organization and the initial configuration of some settings.
 
-1. Open the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/6373500f-1f10-4584-a14e-ca0b4aa7399f?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
+1. Open the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/6d7270b9-7187-456a-ac16-97bc227d5c27?token=045faae1-1078-4eac-bf56-e12472eddaf9&azure-portal=true)**.
 
 1. Follow the steps in the Wizard, select **Get started**.
 1. On this page, you set up your security capacity. For any of the fields listed below, you can select the information icon for more information.

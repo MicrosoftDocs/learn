@@ -1,6 +1,8 @@
 The security administrator for your organization provisioned Copilot. Since you're the senior analyst on the team, the administrator added you as a Copilot owner and asked you to familiarize yourself with the solution.
 
-In this exercise, you explore all the key landmarks in the landing page of the standalone experience of Security Copilot.
+In this exercise, you explore all the key landmarks in the landing page of the standalone experience of Security Copilot.  The tasks are organized by landmark and start with the landmark at the top left corner of the screen (the home menu) and then progress from left to right and top to bottom, but you can choose to go do the tasks in any order, just make sure you access the simulated environment in first step of the first task.
+
+As you explore, keep in mind that unless otherwise stated, the information displayed and the configuration settings are for the currently selected workspace.  For this exercise, all your exploration is done in the SecurityCopilot_Workspace, which is shown on the 
 
 > [!NOTE]
 > The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message will display stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.  
@@ -17,26 +19,11 @@ This exercise should take approximately **15** minutes to complete.
 > [!NOTE]
 > When a lab instruction calls for opening a link to the simulated environment, it is generally recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
 
-#### Task: Explore Prompts to try
-
-In this task, you start exploration in the center portion of the on landing page, where it says Prompts to try.
-
-1. Open the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/2cac767e-42c4-4058-afbb-a9413aac461d?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
-
-1. Note the options available beneath where it says Prompts to try.  Here you can search for prompts or promptbooks, and based on the option you select you can filter for a specific  on role and/or plugin.  Note: for the purpose of this simulation, you can filter for role or plugin. Filtering for both role and plugin is limited to the SOC Analyst role and the Microsoft Sentinel Plugin.
-1. Select **Prompts**
-1. Once a prompt is selected, user can select the X to close  
-1. select another prompt.
-1. Select promptbooks (any promptbook) - in parallel, user should be able to select any role and/or plugin filter.  
-
-
-
-
 #### Task: Explore the menu options
 
-In this task, you start your exploration in the home menu.
+In this task, you start your exploration in the home menu.  
 
-1. Open the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/2cac767e-42c4-4058-afbb-a9413aac461d?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
+1. Open the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/7608581a-ee3a-4fe0-be03-309a58b78c60?token=045faae1-1078-4eac-bf56-e12472eddaf9&azure-portal=true)**.
 
 1. Select the **Menu** icon ![home menu icon](../media/home-menu-icon.png), which is sometimes referred to as the hamburger icon.
 
@@ -49,14 +36,18 @@ In this task, you start your exploration in the home menu.
     1. Select My promptbooks. A subsequent task dives deeper into promptbooks.
     1. Select Woodgrove.
     1. Select Microsoft.
-    1. Select filter to view the available options, then select the X to close.
+    1. Select the filter icon, then select **Tag** to view the available options.  For the purpose of this simulation, only the cveid tag is enabled.
+        1. Select the Tag drop-down, then scroll-down and select cveid.
+        1. Select Apply. Note: If you don't see the Apply button, use your mouse to select the space outside of the drop-down, then select Apply.
+        1. To clear that filter, select the X next to cveid.
     1. Select the home menu icon to open the home menu.
 
 1. Select **Owner settings**. These settings are available to you as a Copilot owner. A Copilot contributor doesn't have access to these menu options.
     1. For plugins for Security Copilot, select the drop-down for Who can add and manage their own custom plugins to view the available options.
     1. Select drop-down for Who can add and manage custom plugins for everyone in the organization to view the available options. Note, this option is greyed out if Who can add and manage their own custom plugins is set to owners only.
     1. Select the information icon next to "Allow Security Copilot to access data from your Microsoft 365 Services."  This setting must be enabled if you want to use the Microsoft Purview plugin. You work with this setting in a later exercise.
-    1. Select the drop-down for who can upload files to view the available options.
+    1. Logging audit data in Microsoft Purview - Review the description.  This setting applies to all workspaces for the tenant in which you are using Copilot. Select the information icon next to the toggle for an information tip.
+    1. Files - using File uploads is one of the mechanisms by which you can integrate your organization’s knowledge base as another source of information. Select the drop-down arrow to view options for who can upload files.
     1. Select the home menu icon to open the home menu.
 
 1. Select **Role assignment**.
@@ -78,6 +69,20 @@ In this task, you start your exploration in the home menu.
 1. Select where it says **Woodgrove** at the bottom left of the home menu.
     1. When you select this option, you see your tenants. This option is referred to as the tenant switcher. In this case, Woodgrove is the only available tenant.
     1. Select the **Home** to return to the landing page.
+
+
+#### Task: Explore Prompts to try
+
+In this task, you start exploration in the center portion of the on landing page, where it says Prompts to try.
+
+1. Open the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/7608581a-ee3a-4fe0-be03-309a58b78c60?token=045faae1-1078-4eac-bf56-e12472eddaf9&azure-portal=true)**.
+
+1. Note the options available beneath where it says Prompts to try.  Here you can search for prompts or promptbooks, and based on the option you select you can filter for a specific role and/or plugin.  Note: for the purpose of this simulation, you can filter for role or plugin. Filtering for both role and plugin is limited to the SOC Analyst role and the Microsoft Sentinel Plugin.
+1. Select **Prompts**
+1. Once a prompt is selected, user can select the X to close  
+1. Select another prompt.
+1. Select promptbooks (any promptbook) - in parallel, user should be able to select any role and/or plugin filter.  
+
 
 #### Task: Explore access to recent sessions
 

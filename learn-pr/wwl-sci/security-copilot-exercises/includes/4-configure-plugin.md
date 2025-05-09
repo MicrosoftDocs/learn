@@ -19,7 +19,7 @@ This exercise should take approximately **15** minutes to complete.
 
 When working with technology, it's not  uncommon to try use a feature and then realize, after some trouble-shooting, that you forgot to enable that feature. In this first task, you test a Microsoft Sentinel prompt with the Microsoft Sentinel plugin disabled. You go through this task so that you can get exposure to the information provided in the process log that helps you troubleshoot the issue.
 
-1. Open the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/89f9d04d-283c-4788-8214-22e4d5b4b171?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
+1. Open the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/f7107adc-8d47-43ae-a7f7-f9e9a35881c4?token=045faae1-1078-4eac-bf56-e12472eddaf9&azure-portal=true)**.
 
 1. From the prompt bar, enter the prompt **Summarize the Microsoft Sentinel incident 30342**. You can copy and paste the prompt into prompt bar. Then select the run icon.
 
@@ -35,7 +35,7 @@ In this task, you'll configure the Sentinel plugin. To do this, you need to acce
 
 1. Select the **Set up** button and note the parameters that need to be configured. Select the information icon next to any of the parameters. Keep this browser tab open, you'll come back to this page for each parameter to be configured.
 
-1. Use your right mouse key to open the link to the Azure portal in a new tab or window: **[Azure portal](https://app.highlights.guide/start/89f9d04d-283c-4788-8214-22e4d5b4b171?link=1&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**. It's important that access to the Azure portal and access to Security Copilot be available as separate browser tabs, as you'll be accessing both tabs for this task.
+1. Use your right mouse key to open the link to the Azure portal in a new tab or window: **[Azure portal](https://app.highlights.guide/start/f7107adc-8d47-43ae-a7f7-f9e9a35881c4?token=045faae1-1078-4eac-bf56-e12472eddaf9&link=1&azure-portal=true)**. It's important that access to the Azure portal and access to Security Copilot be available as separate browser tabs, as you'll be accessing both tabs for this task.
     1. Select **Log Analytics workspaces**, it should be displayed as an icon under Azure services.
     1. Select the workspace associated with your Sentinel deployment. For this exercise, select **Woodgrove-LogAnalyticsWorkspace**.
     1. You should be on the overview page, if not select it now. From here you copy the information required to configure the Sentinel plugin. 

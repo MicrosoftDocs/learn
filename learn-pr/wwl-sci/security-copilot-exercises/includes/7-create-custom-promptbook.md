@@ -20,7 +20,7 @@ This exercise should take approximately **10** minutes to complete.
 
 In this task, you create the promptbook. As part of the process, you templatize one of the prompts by editing the prompt with an input parameter, and then add a new prompt.
 
-1. Open the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/2507f304-e91c-4234-bc76-b66ed1d13995?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
+1. Open the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/105b8e59-c9d3-4486-8a83-e132f8157b20?token=045faae1-1078-4eac-bf56-e12472eddaf9&azure-portal=true)**.
 
 1. There’s a session from earlier in the day that identified failed logins that you want to use. Since that session isn't listed on the landing page, select **View all sessions**.
 

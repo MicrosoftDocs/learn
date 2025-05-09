@@ -54,7 +54,7 @@ In this task, you investigate an alert related to potential data exfiltration. Y
 
 Microsoft Copilot assumes the permissions of the user when it tries to access the data to answer queries. To access data associated with the Microsoft Purview Insider Risk Management solution, the Copilot user must be assigned an appropriate role.
 
-1. Open the environment by selecting this link: **[Microsoft Purview Portal](https://app.highlights.guide/start/6fca2b1c-bf14-4c26-9eda-48be3c0b5013?token=045faae1-1078-4eac-bf56-e12472eddaf9&azure-portal=true)**. A pop-up window appears that says, "Welcome to the new Microsoft Purview portal!"
+1. Open the environment by selecting this link: **[Microsoft Purview Portal](https://app.highlights.guide/start/f7107adc-8d47-43ae-a7f7-f9e9a35881c4?token=045faae1-1078-4eac-bf56-e12472eddaf9&azure-portal=true)**. A pop-up window appears that says, "Welcome to the new Microsoft Purview portal!"
     1. Select the box where it says **"This is a public preview. I agree to the terms of data flow disclosure, the preview section of the Product Terms, and Privacy Statements."**
     1. Select **Try now**.
     1. You can close the Explore all solutions pop-up by selecting the **X**. Alternatively, you can select Next to go through the information. If you go through all six information windows, you need to scroll-up to get back to the top of the page, when you're done.
@@ -111,13 +111,7 @@ In this task, you use Security Copilot to investigate a DLP alert and examine us
 
 1. In the Microsoft Purview portal, go to **Solutions** > **Data Loss Prevention** > **Alerts**.
 
-1. Scroll through the alert list and select the alert for **DLP policy match for document 'Document 3.docx' in OneDrive**.
-
-<!--- 
-
-Note: If this alert is no longer available, use "Alert: DLP policy match for document 'User experience design document - Project Rho.docx' on a device" at 11:21 PM
-
---->
+1. Scroll through the alert list and select the alert for **DLP policy match for document 'POS-Leavers_0325.xlsx' on a device**.
 1. When the alert opens:
     1. Review the tabs for **Details**, **Events**, and **User activity summary**.
     1. The Security Copilot pane should open. Use it to investigate the alert further.
@@ -138,8 +132,7 @@ Note: If this alert is no longer available, use "Alert: DLP policy match for doc
     1. Select **Show key actions performed by the user in the last 10 days**.
     1. Review the user activity for broader context.
 
-1. Go to the **Events** tab:
-    1. Select the link labeled **Sensitive info found in 'Document 3.docx'** to view the detected content.
+1. Go to the **Events** tab and view the file that triggered the alert.
 
 1. Go to the **User activity summary** tab:
     1. Scroll through to view any related insider risk activities.
