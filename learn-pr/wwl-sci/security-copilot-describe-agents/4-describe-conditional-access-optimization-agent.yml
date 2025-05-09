@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.security-copilot-describe-agents.describe-conditional-access-optimization-agent
-title: Describe
+title: Describe the Conditional Access Optimization Agent
 metadata:
-  title: Describe the Threat Intelligence Briefing Agent
-  description: Describe the Threat Intelligence Briefing Agent.
+  title: Describe the Conditional Access Optimization Agent
+  description: Describe the Conditional Access Optimization Agent.
   author: wwlpublish
   ms.author: ceperezb
   ms.date: 05/08/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 1
+durationInMinutes: 6
 content: |
   [!include[](includes/4-describe-conditional-access-optimization-agent.md)]

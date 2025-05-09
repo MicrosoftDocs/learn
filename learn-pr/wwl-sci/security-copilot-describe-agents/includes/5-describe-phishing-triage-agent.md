@@ -13,7 +13,7 @@ The Phishing Triage Agent uses advanced large language model (LLM)-based analysi
 
 ### Information about the agent and prerequisites
 
-The Phishing Triage Agent is characterized as follows:
+The Phishing Triage Agent, which is available in Microsoft Defender XDR as part of the Copilot embedded experience, is characterized as follows:
 
 - **Trigger**: The agent is triggered when a user in your organization submits a phishing incident. The agent autonomously analyzes the submitted email to classify them as either phishing or not phishing based on its training and the context of the organization.
 - **Permissions**: This agent can read data from Defender XDR adn Microsoft Threat Intelligence.

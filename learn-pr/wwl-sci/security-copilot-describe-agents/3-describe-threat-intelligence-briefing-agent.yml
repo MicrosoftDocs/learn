@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.security-copilot-describe-agents.describe-threat-intelligence-briefing-agent
-title: Describe
+title: Describe the Threat Intelligence Briefing Agent
 metadata:
   title: Describe the Threat Intelligence Briefing Agent
   description: Describe the Threat Intelligence Briefing Agent.
@@ -10,6 +10,6 @@ metadata:
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
   [!include[](includes/3-describe-threat-intelligence-briefing-agent.md)]

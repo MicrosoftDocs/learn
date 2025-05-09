@@ -5,7 +5,7 @@ The Threat Intelligence Briefing Agent addresses these challenges by applying dy
 
 ### Information about the agent and prerequisites
 
-The Threat Intelligence Briefing Agent is characterized as follows:
+The Threat Intelligence Briefing Agent, which is available through the standalone experience in Security Copilot, is characterized as follows:
 
 - **Trigger**: The agent can be triggered manually or set to run at scheduled intervals.
 - **Permissions**: This agent can read data from Defender External Attack Surface Management and Defender Vulnerability Management.

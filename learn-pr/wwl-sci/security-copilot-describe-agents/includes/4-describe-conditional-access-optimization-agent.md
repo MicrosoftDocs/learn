@@ -8,12 +8,12 @@ The Conditional Access optimization agent, a Security Copilot Agent embedded in 
 
 ### Information about the agent and prerequisites
 
-The Conditional Access Optimization Agent is characterized as follows:
+The Conditional Access Optimization Agent, which is available in Microsoft Entra as part of the Copilot embedded experience, is characterized as follows:
 
 - **Trigger**: The agent runs every 24 hours but can also run manually.
 - **Permissions**: The agent reviews your policy configuration but acts only with your approval of the suggestions.
 - **Identity**: The agent runs in the context of the administrator who configured the agent.
-- **Products**: You must have Microsoft Entra Conditional Access (at least Microsoft Entra ID P1). Device-based controls in Conditional Access require Microsoft Intune licenses. You must also have Security Copilot available provisioned with security compute units (SCU). On average, each agent run consumes less than one SCU. 
+- **Products**: You must have Microsoft Entra Conditional Access (at least Microsoft Entra ID P1). Device-based controls in Conditional Access require Microsoft Intune licenses. You must also have Security Copilot available and provisioned with security compute units (SCU). On average, each agent run consumes less than one SCU. 
 - **Plugins**: The Microsoft Entra is mandatory.
 - **Role-based access**: You must be assigned the Security Administrator or Global Administrator role during the preview. These roles also have access to Security Copilot by default.
 

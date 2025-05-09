@@ -20,7 +20,7 @@ To effectively use Security Copilot agents, it's essential to understand the ter
 
 ### Agents in Microsoft Security Copilot
 
- You can discover Microsoft Security Copilot agents through the standalone and embedded experiences. Copilot agents are also available from partners.
+You can discover Microsoft Security Copilot agents through the standalone and embedded experiences. Copilot agents are also available from partners.
 
 To access the full list of available agents, select Agents from the home menu. Copilot displays the list of available Microsoft and partner agents.
 
@@ -34,7 +34,7 @@ Security Copilot includes agents that are seamlessly integrated with Microsoft s
 - **Conditional Access Optimization Agent**: Embedded in Microsoft Entra, the  Conditional Access optimization agent ensures all users are protected by policy. It recommends policies and changes based on best practices aligned with Zero Trust and Microsoft's learnings. In preview, the agent evaluates policies requiring multifactor authentication (MFA), enforces device based controls (device compliance, app protection policies, and Domain Joined Devices), and blocks legacy authentication and device code flow.
 - **Phishing Triage Agent**: Embedded in Microsoft Defender, the Phishing Triage Agent helps security operations analysts to triage and classify user-submitted phishing incidents. The agent operates autonomously, provides a transparent rationale for its classification verdicts in natural language, and continuously learns and improves its accuracy based on feedback provided by analysts.
 
-This list isn't all-inclusive. More Microsoft agents are planned.
+This list is not all-inclusive.
 
 ### Partner agents
 
@@ -51,4 +51,4 @@ Helps organizations forecast and prioritize the most critical threat alerts to r
 - Privacy Breach Response Agent by OneTrust
 Analyzes data breaches to generate guidance for the privacy team on how to meet regulatory requirements.
 
-This list isn't all-inclusive. More partner agents
+This list is not all-inclusive.
