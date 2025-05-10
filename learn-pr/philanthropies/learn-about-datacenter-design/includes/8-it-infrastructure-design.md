@@ -11,7 +11,7 @@ The hardware and network configurations choices will have a direct impact on fac
 ## Selecting the right hardware
 
 - **Servers**: Choose servers based on processing power, scalability, and energy efficiency. Servers must be capable of handling the applications, data load, and processing requirements, while also allowing for future upgrades.
-- **Storage solutions**: Select between traditional hard drives (HDDs), solidstate drives (SSDs), or hybrid solutions based on performance needs and cost considerations. SSDs are faster and more reliable but come at a higher cost per gigabyte than HDDs.  
+- **Storage solutions**: Select between traditional hard drives (HDDs), solid-state drives (SSDs), or hybrid solutions based on performance needs and cost considerations. SSDs are faster and more reliable but come at a higher cost per gigabyte than HDDs.  
 - **Switches & routers**: These network devices direct traffic between servers, storage systems, and other devices in the datacenter. High capacity and low-latency switches and routers are essential to ensure minimal delays in data transfer and the ability to handle increasing data volumes.  
 - **Cybersecurity solutions**: As data breaches become increasingly sophisticated, selecting the right cybersecurity hardware (e.g., firewalls, intrusion detection/prevention systems) is crucial to safeguard the datacenter from potential threats.
 
@@ -33,7 +33,7 @@ Every component of the IT infrastructure, from servers to network devices, influ
 - **Energy-efficient hardware**: Selecting power-efficient servers and storage can significantly reduce operational costs over the long term. Energy-efficient designs and systems such as those that minimize power usage in idle states can contribute to a reduced total cost of ownership (TCO).  
 - **Cooling systems**: With high-performance servers comes the need for effective cooling systems. Proper placement of equipment helps optimize cooling, reducing energy consumption related to temperature control. Airflow management through proper rack layouts and cooling systems further supports energy savings.
 
-## Futureproofing for growth
+## Future proofing for growth
 
 IT infrastructure design shouldn't only address the present but also anticipate future needs. As technology evolves and businesses expand, the datacenter will need to scale to support new applications, higher traffic volumes, and more complex data processing requirements.
 

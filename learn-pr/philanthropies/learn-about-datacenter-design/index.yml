@@ -2,7 +2,7 @@
 uid: learn.philanthropies.learn-about-datacenter-design
 metadata:
  title: Learn about datacenter design, architecture, and infrastructure management
- description: In this module, we'll explore the key factors of datacenter design, delving into why they're crucial for building a reliable, scalable, and efficient infrastructure. You'll learn about site selection considerations such as power availability, climate, and risks from natural disasters. We'll also look at the layout of a datacenter, covering important elements like topologies, IT infrastructure, and space allocation. By the end of this module, you'll understand the importance of a well-architected datacenter.
+ description: In this module, we'll explore the key factors of datacenter design, delving into why they're crucial for building a reliable, scalable, and efficient infrastructure. You'll learn about site selection considerations such as power availability, climate, and risks from natural disasters. We'll also look at the layout of a datacenter, covering important elements like topologies, IT infrastructure, and space allocation. By the end of this module, you understand the importance of a well-architected datacenter.
  ms.date: 05/08/2025
  author: kiranchandratrey
  ms.author: elenasim
@@ -15,7 +15,7 @@ abstract: |
     - Learn the factors involved in site selection for a datacenter, including power, climate, and natural disaster risks.
     - Understand the different datacenter topologies and network architecture.
     - Grasp the importance of critical infrastructure, such as power and cooling systems, in datacenter design.
-    - Learn about data center infrastructure management (dcim) and building management systems (bms) and their role in datacenter monitoring.
+    - Learn about data center infrastructure management (DCIM) and building management systems (BMS) and their role in datacenter monitoring.
     - Identify key health and safety considerations, including fire protection systems, emergency lighting, and security protocols.
 prerequisites: |
     -	Basic familiarity with computers.
