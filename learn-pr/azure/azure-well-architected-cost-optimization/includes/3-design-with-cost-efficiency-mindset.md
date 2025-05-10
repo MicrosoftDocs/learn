@@ -1,66 +1,73 @@
-| :::image type="icon" source="../media/goal.svg"::: Spend only on what you need to achieve the highest return on your investments. |
+| :::image type="icon" source="../media/goal.svg"::: Spend only on what you need to get the most return on investment. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
-Every architectural decision has direct and indirect financial implications. Understand the costs associated with build versus buy options, technology choices, the billing model and licensing, training, operations, and so on.
+Every architectural decision affects your budget, such as whether you build or buy, what tools you use, or how you license and train.
 
-Given a set of requirements, optimize and make tradeoff decisions, in relation to costs, that still effectively address the cross-cutting concerns of the workload.
+It's important to weigh those options and make trade-offs that still meet your app's needs without overspending.
 
 **Example scenario**
 
-Contoso Manufacturing (CM) runs a custom-built warehouse management system (WMS) to handle its four warehouses across South America and they have decided that it's time to update the solution and move it to the cloud. They're considering a lift-and-shift move of the current solution or a green field build with modern cloud tools. CM's senior leadership wants to control costs and has asked the workload team's leaders how they'll approach the migration with a goal of maintaining cost efficiency.
+Contoso Manufacturing runs a custom-built warehouse management system (WMS) that handles its four warehouses across South America. They want to update and move the WMS to the cloud. They're deciding between lifting and shifting the current setup or building something new with modern tools. Leadership wants to keep costs under control, so the team needs a plan that balances cost with performance.
 
-The WMS solution is a .NET application running on IIS and uses SQL Server for its databases.
+The WMS solution is a .NET application that runs on Internet Information Services (IIS) and uses SQL Server for its databases.
 
-## Measure the workload design's total cost
+## Understand the full cost of your design
 
-**Measure the total cost incurred by technology and automation choices, taking into account the impact on return on investment (ROI). The design must work within the acceptable boundaries for all functional and nonfunctional requirements. The design must also be flexible to accommodate predicted evolution. Factor in the cost of acquisition, training, and change management.**
+**Make sure you look at the total cost of your design, not just the technology and automation, but also the acquisition, training, and changes needed to make it work. Your design should meet all the key requirements including return on investment (ROI) and still be flexible enough to grow with your needs.**
 
-Implementing a balanced approach that takes ROI into account prevents over-engineering, which might increase costs.
+Keeping ROI in mind helps avoid overbuilding something that ends up costing more than it's worth.
 
 *Contoso's challenge*
 
-- The workload engineering team is excited to get this workload into the cloud, joining other CM teams who have already been doing cloud-native development.
-- They're aware of the technical debt in the application and expect to address it by rewriting a significant amount of application code and moving to new cloud-native solutions for many components.
-- The engineering team hopes to take this opportunity to completely redesign the system into microservices and host it on AKS, a new but exciting technology for the team.
+- The engineering team at Contoso is excited to move their warehouse system to the cloud, just like other teams have done.
+
+- They know the current app has some technical debt, so they're planning to rewrite a lot of it and switch to newer cloud-native tools.
+- They also want to redesign everything into microservices and run it on Azure Kubernetes Service (AKS), which is a new and exciting platform for them.
 
 *Applying the approach and outcomes*
 
-- While the workload team has a clear desire to do large-scale refactoring as part of the cloud migration, they realize that the workload needs to maintain it’s ROI. Maintaining the workload's ROI will likely point the team toward using solutions that don't require extensive new engineering team training, and they'll be unable to make large rewrites to the workload as part of the migration.
-- The workload team takes a pragmatic approach to the design of the system, making sure it stays cost effective, and works within expected parameters, and isn't over-engineered. To ensure that the ROI is maintained and the migration is performed efficiently, they decided the best approach is to go with a like-for-like solution in the cloud, such as Azure App Service.
-- During the migration, they'll selectively address some technical debt that will enable them to further evolve the platform once it is on Azure, and will consider the ROI as part of the selection process.
+- The team is excited about doing a big redesign during the cloud move, but they know that they need to maintain the workload's ROI. That means sticking with tools that they already know and avoiding major rewrites that require a lot of extra engineering team training.
+
+- The workload team takes a practical approach to designing the system. They want it to be cost-effective, meet expectations, and avoid overcomplicating things. To keep the ROI in check and make the migration smooth, they decide to go with an equivalent solution in the cloud, such as Azure App Service.
+
+- During the migration, the team plans to clean up some of the technical debt that makes sense to tackle now. That way, once everything's running on Azure, they'll be in a better spot to keep improving the platform while still keeping the ROI in mind when making those choices.
 
 ## Refine the design
 
-**Fine-tune the design by prioritizing services that can reduce the overall cost, don't need additional investment, or don't have a significant impact on functionality. Prioritization should account for the business model and technology choices that bring high ROI.**
+**Fine-tune the design by focusing on services that save money, don't need extra investment, or won't affect how things work. Prioritize based on what suits your business model and the technology choices that provide the most value.**
 
-You'll be able to explore cheaper options that might enable resource flexibility or dynamic scaling, or you might justify the use of existing investments. The prioritization parameters might factor in costs that are required for critical workloads, runtime, and operations, and other costs that might help the team work more efficiently.
+You might find cheaper options that let you scale up or down easily, or you might decide to stick with tools that you've already invested in. When prioritizing, think about what's critical for running the workload, what affects runtime and operations, and what helps the team work smarter.
 
 *Contoso's challenge*
 
-- The existing workload is hosted on a hyper-converged (HCI) appliance and the team's cost center is charged back for compute, network, and storage costs.
+- The existing workload runs on a hyper-converged (HCI) appliance, and Contoso get billed for compute, network, and storage. 
+
 - The workload has deployed the pre-production and production environments on Windows virtual machines.
-- GitHub Actions with self-hosted runners is used for executing GitHub Actions jobs.
+- They use GitHub Actions with self-hosted runners to run GitHub Actions jobs.
 
 *Applying the approach and outcomes*
 
-- After evaluating several cloud-native options, the team decides that moving the web components to Azure App Service would provide Windows IIS application compatibility without significant changes and wouldn't require significant training.
-- The team decides to continue using GitHub Actions with self-hosted runners, but they'll migrate to a virtual machine scale set with the ability to scale to zero nodes when they aren't being used.
+- After checking out several cloud-native options, they chose App Service for the web components. It supports Windows IIS apps with minimal changes and no major training needed.
+
+- They're sticking with GitHub Actions and self-hosted runners, but moving them to a virtual machine scale set that can scale down to zero nodes when idle.
 
 ## Design your architecture to support cost guardrails
 
-**Implement cost guardrails through platform solutions, policies, infrastructure and application design patterns, or automation to help ensure that your cloud environment costs are kept within budgets.**
+**Build your architecture in a way that helps keep costs under control. You can use platform tools, policies, design patterns, or automation to stay within budget.**
 
-Enforcement via governance policies or built-in application design patterns can prevent incidental or unapproved charges.
+Using governance policies or built-in design patterns can help avoid surprise charges or unapproved spending.
 
 *Contoso's challenge*
 
-- The existing system has no cost guardrails but rarely changes, so there's been little motivation to build such guardrails.
-- The owners of the HCI environment have set a resource limit that applies to this workload, effectively stopping the workload from consuming excess compute and storage resources.
-- The team is concerned that moving to the cloud will pose the risk of incurring unexpected costs, and are unsure of how to minimize that risk.
+- Their current system doesn't have cost guardrails, but since it rarely changes, no one's pushed to add them.
+
+- The HCI environment owners have set a resource cap, so the workload can't use more compute or storage than allowed.
+- The team's worried that moving to the cloud could lead to unexpected costs, and they're not sure how to avoid that.
 
 *Applying the approach and outcomes*
 
-- The team educates themselves about Microsoft Cost Management solutions.
-- The team plans to set up scale limits for the Azure App Service plans.
-- The team plans to set up a Deny policy for certain higher priced virtual machine SKUs to disallow those SKUs from being deployed.
-- The team plans to implement automation to help control storage costs. Certain data types will automatically move from hot storage to cold or archive storage based on criteria like date of last access. This type of automation isn't possible in the HCI environment.
+- The team learns how to use Microsoft Cost Management solutions.
+
+- They plan to set scale limits for the App Service plans.
+- They plan to set up a Deny policy to block certain expensive virtual machine SKUs from being used.
+- They plan to add automation to save on storage. Older or less-used data will automatically move to cheaper storage tiers like cold or archive. This kind of automation wasn't possible in their old HCI environment.

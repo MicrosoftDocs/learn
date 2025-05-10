@@ -1,65 +1,72 @@
-| :::image type="icon" source="../media/goal.svg"::: Build a team culture that has awareness of budget, expenses, reporting, and cost tracking. |
+| :::image type="icon" source="../media/goal.svg"::: Build a cost-aware team culture. |
 | :----------------------------------------------------------------------------------------------------------------------------------------- |
 
-Cost optimization is conducted at various levels of the organization. It's important to understand how your workload is aligned with organizational goals and FinOps practices. A view into the business units, resource organization, and centralized audit policies allows you to apply a standardized financial system and approach to your workload.
+Help your team get comfortable thinking about budgets, spending, and tracking costs. Cost optimization happens at different levels of the organization. So it's important to understand how your work fits into the bigger picture and supports company goals and FinOps practices. Having visibility into how resources are organized and how financial policies are applied helps you manage your workload in a consistent, efficient way.
 
 **Example scenario**
 
-Contoso organizes and hosts trade shows. Contoso sees an opportunity to gain efficiencies with their ticket sales process for trade shows by developing a mobile app in-house. The scenarios below follow the development process from ideation through implementation, focusing on cost optimization concerns. The mobile app is a web app written in .NET that is hosted on Azure App Service infrastructure and uses Azure SQL Database for its database.
+Contoso organizes and hosts trade shows. They want to improve how they sell tickets and decide to build a mobile app in-house. The following scenarios walk through how they go from idea to launch, with a focus on making smart cost decisions along the way. The web app is written in .NET, hosted on Azure App Service, and uses Azure SQL Database for its database.
 
-## Develop a cost model
+## Create a cost model
 
-**Develop a cost model. This fundamental exercise is a prerequisite to setting up a financial tracking system.**
+**Before you can track spending properly, you must build a basic cost model.**
 
-A cost model helps segment expenses and estimate and forecast the total cost of ownership, including infrastructure, support, and implementation. It enables you to identify cost drivers early and predict how usage growth or shrinkage will affect overall revenue and spending in your projected business model for the workload.
-
-*Contoso's challenge*
-
-- Going into the ideation phase, the workload team cannot predict what the total cost of ownership for delivering an experience like this might be, especially as a ticketing system usually deals with burst demand. They know they want to start small and grow over time, but they don't know how to model this to predict the cost of an incremental approach to building and maintaining the workload. 
-- Without these initial estimates, it will be hard to get initial funding for the project and predict long term funding needs.
-
-*Applying the approach and outcomes*
-
-- The workload team spends some time to model estimated costs in various scenarios: they know the types of resources that will be needed to build the workload and they look at different configurations that could support varying load patterns to understand what their Azure costs may look like initially and over time.
-- They use the rough estimated infrastructure costs, combined with estimates for team expenditures and revenue from the offering to build a cost model.
-- This model then allows them to start predicting cost, and understand how costs will increase as usage increases over time. They know they can refine the model as architectural and operational decisions are decided to increase its predictive power.
-
----
-
-## Estimate realistic budgets
-
-**Estimate realistic budgets that cover all non-negotiable functional and nonfunctional requirements, personnel and training costs, and processes that provide for anticipated growth.**
-
-You'll be able to set financial boundaries and establish ways to check your spending against the allocated budget. You'll also get notifications when certain thresholds are exceeded, which prevents overspending at the tenant scope, resource scope, and other scopes that are applied to the budget.
+A cost model gives you a clearer picture of what things might cost, like infrastructure, support, and setup. It also helps you identify what's driving those costs early on to estimate how changes in usage could affect your budget and revenue over time.
 
 *Contoso's challenge*
 
-- In this scenario, the app is in the design phase and initial resource SKUs have been determined.
-- Contoso needs to allocate funding to the mobile ticketing workload.
-- The workload can't be allowed to run with a blank check. A realistic budget needs to be determined for the workload because having a pre-allocation shortfall could put the workload timeline and success in jeopardy, and over-allocating can lead to unnecessary up-front expenditures that don't align with the short term needs of the workload.
+- Contoso wants to build a mobile app to handle ticket sales for their trade shows, but they're not sure what it'll cost, especially since demand can spike.
+
+- They plan to start small and grow, but without a cost model, it's tough to get funding or plan ahead.
 
 *Applying the approach and outcomes*
 
-- As the cost model is refined with more precise numbers, the team provides stakeholders with a budget that is estimated with a high degree of confidence and can be defended.
-- With a budget in place, the workload architect can start designing against financial constraints. As more is learned about the implementation and the operations necessary, the workload team expects to need to renegotiate a bit.
-- They want a small buffer, but ultimately will be driving toward fiscal responsibility by adhering to the budget allocation.
+- The team maps out different cost scenarios based on the resources they'd need and how usage might grow. They explore a few setups that could handle different traffic levels to get a sense of what their Azure costs might be now and later on.
+
+- They combine rough estimates for infrastructure, team costs, and expected revenue to build a starting model.
+- This model helps them predict costs over time as usage increases and gives them a tool that they can keep refining as they make more decisions.
 
 ---
 
-## Encourage upstream communication
+## Set a realistic budget
+
+**Make sure your budget covers everything that you have to include, like key features, support, training, and room to grow.**
+
+After you set a budget, you can set spending limits and get alerts if you're about to go over budget for a specific resource or the whole project.
+
+*Contoso's challenge*
+
+- In this scenario, the app is in the design phase and Contoso has picked out the basic resources they'll need.
+
+- Contoso needs to figure out their budget for the mobile ticketing workload.
+- Without a solid budget, they risk running out of money, wasting it on things that they don't need yet, delaying the project timeline, or even putting the entire workload at risk.
+
+*Applying the approach and outcomes*
+
+- As the team refines their cost model, they come up with a confident budget that they can share with stakeholders.
+
+- This model gives their architect a clear financial target to design around.  As more is learned about the implementation and the operations necessary, the workload team expects to need to renegotiate a bit.
+- They also left a small buffer, knowing that they might need to adjust later when they know more details.
+- The goal is to stay flexible, but stick to the budget as closely as possible.
+
+---
+
+## Encourage open communication
 
 **Encourage upstream communication from architects to application owners.**
 
-Costs are reduced when you act on feedback, which should be considered as meaningful as numeric data. You'll empower employees by using their input to drive realistic design changes and business strategies.
+Cost-saving ideas often come from the ground up, and that feedback can be just as valuable as the numbers. You give your team more power when you use their ideas to shape designs and business decisions.
 
 *Contoso's challenge*
 
-- Contoso's mobile ticketing workload has been successfully implemented and is in production.
-- After analyzing the usage patterns over time, the workload team members find that the implementation isn't really as optimized for cost efficiency as it could be.
-- Since project management and finance seems pleased with the workload's success so far, they don't know if they should say anything.
+- Contoso's mobile ticketing app is live and working well. 
+
+- After reviewing how it's being used, the team realizes that it could be more cost-efficient.
+- Since project management and finance seems happy with the results, they're unsure if it's worth bringing up.
 
 *Applying the approach and outcomes*
 
-- The workload team is encouraged to "spend it like it's theirs" and as such are empowered to speak up to product management when they see alternative approaches to the current design that can address the functional requirements of the application without sacrificing security, reliability or performance, but in a more cost efficient way.
-- The workload team therefore brings their findings to stakeholders and talks over what the design change pros and cons would be.
-- The design changes are approved and the cost savings are realized.
+- The team is encouraged to treat the budget like it's their own and speak up to product management when they see a better way to meet the app's needs without sacrificing security, reliability, or performance.
+
+- The workload team shares their ideas with stakeholders and talks about the pros and cons of making changes.
+- The changes are approved, and the savings follow.
