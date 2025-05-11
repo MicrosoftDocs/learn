@@ -12,7 +12,7 @@ title: Identify key hardware and IT infrastructure components of datacenters
 summary: |
     In this module, we explored the essential hardware and IT infrastructure that power datacenters. We learned about different types of servers and storage systems, including SAN, NAS, and object storage.
 abstract: |
-    - Understand the different types of servers and storage systems (san, nas, object storage) used in datacenters.
+    - Understand the different types of servers and storage systems (SAN, NAS, object storage) used in datacenters.
     - Learn about the key components of network infrastructure within a datacenter (switches, routers, firewalls, and external connectivity).
     - Explore the role of it apparatus in a datacenter, such as racks, enclosures, and application delivery controllers.
     - Understand the integration of storage and network systems to support the operational needs of a datacenter.
