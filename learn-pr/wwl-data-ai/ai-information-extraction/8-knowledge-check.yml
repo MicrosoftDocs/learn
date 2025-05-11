@@ -17,7 +17,7 @@ quiz:
   - content: "Which service should you use to build a mobile app with which a user can take a photograph of a street sign and extract text to send to a translation service?"
     choices:
     - content: "Azure AI Vision Image Analysis"
-    - isCorrect: true
+      isCorrect: true
       explanation: "Correct. Azure AI Vision Image Analysis uses OCR to extract text from images."
     - content: "Azure AI Content Understanding"
       isCorrect: false
@@ -28,7 +28,7 @@ quiz:
   - content: "Which service should you use to analyze a recording of a customer service call to extract key points that were discussed?"
     choices:
     - content: "Azure AI Vision Image Analysis"
-    - isCorrect: false
+      isCorrect: false
       explanation: "Incorrect. Azure AI Vision Image Analysis uses OCR to extract text from images."
     - content: "Azure AI Content Understanding"
       isCorrect: true
@@ -39,7 +39,7 @@ quiz:
   - content: "Which service should you use to extract fields from standard US tax forms for automated processing?"
     choices:
     - content: "Azure AI Vision Image Analysis"
-    - isCorrect: false
+      isCorrect: false
       explanation: "Incorrect. Azure AI Vision Image Analysis uses OCR to extract text from images."
     - content: "Azure AI Content Understanding"
       isCorrect: false

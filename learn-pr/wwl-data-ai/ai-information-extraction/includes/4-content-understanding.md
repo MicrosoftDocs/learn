@@ -1,4 +1,4 @@
-Azure AI Content Understanding uses state of the art AI models to analyze content in multiple formats, including:
+Azure AI Content Understanding uses state-of-the-art AI models to analyze content in multiple formats, including:
 
 - Text-based forms and documents
 - Audio
@@ -30,7 +30,7 @@ Now suppose you need to extract this information from the following invoice:
 
 ![Photograph of an invoice.](../media/invoice.png)
 
-Azure AI Content Understanding can apply the invoice schema to your invoice and identify the corresponding fields, even when they are labeled with different names (or not labeled at all). The resulting analysis produces a result like this:
+Azure AI Content Understanding can apply the invoice schema to your invoice and identify the corresponding fields, even when they're labeled with different names (or not labeled at all). The resulting analysis produces a result like this:
 
 ![Photograph of an analyzed invoice with detected fields highlighted.](../media/analyzed-invoice.png)
 
@@ -111,7 +111,7 @@ You can use Azure AI Content Understanding to analyze the following still image 
 
 ![Photograph of a person in a conference room on a call with three remote attendees.](../media/conference-call.jpg)
 
-When applying the schema above to this image, Azure AI Content Understanding produces the following results:
+When applying the preceding schema to this image, Azure AI Content Understanding produces the following results:
 
 - **Location**: Conference room
 - **In-person attendees**: 1

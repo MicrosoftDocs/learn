@@ -42,7 +42,7 @@ The AI Vision Image Analysis service generates the following descriptive text va
 
 Azure AI Vision Image Analysis can also detect common objects and people in an image.
 
-For example consider the following image:
+For example, consider the following image:
 
 ![Photograph of an apple, a banana, and an orange.](../media/produce.png).
 
@@ -52,7 +52,7 @@ Azure AI Vision Image Analysis detects the types and locations of objects in thi
 
 ## Optical character recognition (OCR)
 
-When an image contains printed or handwritten text, Azure AI Vision Image Analysis can use a technique called *optical character recognition* (OCR) to determine the location and contents of each *line* of text, and each individual *word*. The OCR capabilities of Azure Ai Vision Image Analysis are particularly useful when you need to read text in an image for further processing, for example to translate a menu using a cellphone application. Azure AI Vision Image Analysis can also be useful to extract small volumes of free-form text from simple documents; for example to extract contact details from a business card.
+When an image contains printed or handwritten text, Azure AI Vision Image Analysis can use a technique called *optical character recognition* (OCR) to determine the location and contents of each *line* of text, and each individual *word*. The OCR capabilities of Azure AI Vision Image Analysis are useful when you need to read text in an image for further processing, for example to translate a menu using a cellphone application. Azure AI Vision Image Analysis can also be useful to extract small volumes of free-form text from simple documents; for example, to extract contact details from a business card.
 
 Consider the following scanned business card:
 

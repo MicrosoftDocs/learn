@@ -9,7 +9,7 @@ In this module, you've explored Azure AI services that you can use to extract in
 > [!TIP]
 > Learn more about the Azure AI services discussed in this module:
 >
-> - **[Azure AI Vision Image Analysis](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview-image-analysis)**
-> - **[Azure AI Content Understanding](https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/)**
-> - **[Azure AI Document Intelligence](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence)**
-> - **[Azure AI Search](https://learn.microsoft.com/en-us/azure/search/)**
+> - **[Azure AI Vision Image Analysis](/azure/ai-services/computer-vision/overview-image-analysis/)**
+> - **[Azure AI Content Understanding](/azure/ai-services/content-understanding/)**
+> - **[Azure AI Document Intelligence](/azure/ai-services/document-intelligence/)**
+> - **[Azure AI Search](/azure/search/)**
