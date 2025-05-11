@@ -3,7 +3,7 @@ uid: learn.oxford.deploy-prebuilt-module-edge-device
 metadata:
   title: "Deploy a pre-built module to the Edge device"
   description: "Deploy a pre-built temperature simulator module to an IoT Edge device using a container. Check that the module was successfully created and deployed and view simulated data."
-  ms.date: 07/08/2024
+  ms.date: 05/09/2025
   author: orin-thomas
   ms.author: orthomas
   ms.topic: module
@@ -43,4 +43,4 @@ units:
 - learn.oxford.deploy-prebuilt-module-edge-device.6-exercise-deploying-prebuilt-module
 - learn.oxford.deploy-prebuilt-module-edge-device.7-knowledge-check
 - learn.oxford.deploy-prebuilt-module-edge-device.8-summary
-
+
