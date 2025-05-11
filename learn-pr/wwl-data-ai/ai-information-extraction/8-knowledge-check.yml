@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ai-information-extraction.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: Knowledge check
+  author: graememalcolm
+  ms.author: gmalc
+  ms.date: 05/11/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which service should you use to build a mobile app with which a user can take a photograph of a street sign and extract text to send to a translation service?"
+    choices:
+    - content: "Azure AI Vision Image Analysis"
+    - isCorrect: true
+      explanation: "Correct. Azure AI Vision Image Analysis uses OCR to extract text from images."
+    - content: "Azure AI Content Understanding"
+      isCorrect: false
+      explanation: "Incorrect. Azure AI Content Understanding uses a schema to extract data from multimodal content."
+    - content: "Azure AI Document Intelligence"
+      isCorrect: false
+      explanation: "Incorrect. Azure AI Document Intelligence is used to extract fields and values from complex forms and documents."
+  - content: "Which service should you use to analyze a recording of a customer service call to extract key points that were discussed?"
+    choices:
+    - content: "Azure AI Vision Image Analysis"
+    - isCorrect: false
+      explanation: "Incorrect. Azure AI Vision Image Analysis uses OCR to extract text from images."
+    - content: "Azure AI Content Understanding"
+      isCorrect: true
+      explanation: "Correct. Azure AI Content Understanding uses a schema to extract data from multimodal content."
+    - content: "Azure AI Document Intelligence"
+      isCorrect: false
+      explanation: "Incorrect. Azure AI Document Intelligence is used to extract fields and values from complex forms and documents."
+  - content: "Which service should you use to extract fields from standard US tax forms for automated processing?"
+    choices:
+    - content: "Azure AI Vision Image Analysis"
+    - isCorrect: false
+      explanation: "Incorrect. Azure AI Vision Image Analysis uses OCR to extract text from images."
+    - content: "Azure AI Content Understanding"
+      isCorrect: false
+      explanation: "Incorrect. Azure AI Content Understanding uses a schema to extract data from multimodal content."
+    - content: "Azure AI Document Intelligence"
+      isCorrect: true
+      explanation: "Correct. Azure AI Document Intelligence is used to extract fields and values from complex forms and documents."
+
+
