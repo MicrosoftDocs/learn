@@ -7,6 +7,7 @@ metadata:
   ms.author: gmalc
   ms.date: 05/11/2025
   ai-usage: ai-assisted
+  ms.service: azure-ai-services
   ms.topic: module-standard-task-based
   ms.collection:
     - wwl-ai-copilot
