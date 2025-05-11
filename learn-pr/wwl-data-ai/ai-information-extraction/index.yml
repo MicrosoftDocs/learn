@@ -35,7 +35,7 @@ subjects:
 units:
 - learn.wwl.ai-information-extraction.introduction
 - learn.wwl.ai-information-extraction.azure-ai-services
-- learn.wwl.aai-information-extraction.azure-ai-vision
+- learn.wwl.ai-information-extraction.azure-ai-vision
 - learn.wwl.ai-information-extraction.content-understanding
 - learn.wwl.ai-information-extraction.document-intelligence
 - learn.wwl.ai-information-extraction.ai-search
