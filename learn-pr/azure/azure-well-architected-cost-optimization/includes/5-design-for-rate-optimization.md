@@ -31,7 +31,7 @@ When you pack more utility into fewer systems, you use less hardware and spend l
 
 *Applying the approach and outcomes*
 
-- After testing, the team decides that they can combine all the API into a single cluster with three user node pools while achieving the same performance and OS characteristics of their original cluster.
+- After the team does testing, they decide to combine all the API into a single cluster with three user node pools while achieving the same performance and OS characteristics of their original cluster.
 
 - They also consolidate to four nodes for their system node pool, saving the costs of five virtual machines.
 - Now they only have one cluster to patch and update, which saves even more time.

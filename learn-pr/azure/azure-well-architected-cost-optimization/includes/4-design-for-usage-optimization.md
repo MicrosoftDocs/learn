@@ -46,7 +46,7 @@ Active-passive can leave some resources sitting idle, which isn't great for your
 
 *Applying the approach and outcomes*
 
-- The team takes another look at whether the high availability setup is worth the extra cost. It's basically double the price of running just one instance.
+- The team takes another look at whether the high availability setup is worth the extra cost. It basically doubles the price of running just one instance.
 
 - They test building a new instance and recovering the database from a backup. Everything works fine and still meets their recovery goals, so they decide to remove the standby instance.
 - The team updates the disaster recovery plan to match the new setup and start saving money right away.
@@ -59,7 +59,7 @@ Shutting down resources that you're not using and deleting data that you don't n
 
 *Contoso's challenge*
 
-- The university has been pretty cautious about shutting resources down, just in case they ever need to roll back to a previous configuration. But that decision has led to some old services being left on for months, sometimes completely forgotten.
+- The university has been cautious about shutting down resources, just in case they ever need to roll back to a previous configuration. But that decision has led to some old services being left on for months, sometimes forgotten.
 
 - There's no formal process to review what's still running, so these abandoned services usually only get noticed by accident.
 
@@ -68,4 +68,4 @@ Shutting down resources that you're not using and deleting data that you don't n
 - The team adds shutting down the App Service to their to-do list as part of moving the durable function to a consumption-based setup. In the next sprint, they'll shut down those App Service deployments across all environments.
 
 - To catch unused resources early, they set up alerts in Azure Advisor to flag anything that's not being used.
-- They also apply a new policy. The team must do a full review of pre-production environments every month and production every quarter. If they find any abandoned resources, they go straight into the backlog to be decommissioned.
+- They also apply a new policy. The team must do a full review of preproduction environments every month and production every quarter. If they find any abandoned resources, they go straight into the backlog to be decommissioned.

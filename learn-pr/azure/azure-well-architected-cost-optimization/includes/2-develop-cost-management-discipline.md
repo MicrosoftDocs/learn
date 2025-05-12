@@ -36,7 +36,7 @@ After you set a budget, you can set spending limits and get alerts if you're abo
 
 *Contoso's challenge*
 
-- In this scenario, the app is in the design phase and Contoso has picked out the basic resources they'll need.
+- In this scenario, the app is in the design phase and Contoso picked out the basic resources that they need.
 
 - Contoso needs to figure out their budget for the mobile ticketing workload.
 - Without a solid budget, they risk running out of money, wasting it on things that they don't need yet, delaying the project timeline, or even putting the entire workload at risk.
@@ -45,7 +45,7 @@ After you set a budget, you can set spending limits and get alerts if you're abo
 
 - As the team refines their cost model, they come up with a confident budget that they can share with stakeholders.
 
-- This model gives their architect a clear financial target to design around.  As more is learned about the implementation and the operations necessary, the workload team expects to need to renegotiate a bit.
+- This model gives their architect a clear financial target to design around. As more is learned about the implementation and the operations necessary, the workload team expects to need to renegotiate a bit.
 - They also left a small buffer, knowing that they might need to adjust later when they know more details.
 - The goal is to stay flexible, but stick to the budget as closely as possible.
 
@@ -62,7 +62,7 @@ Cost-saving ideas often come from the ground up, and that feedback can be just a
 - Contoso's mobile ticketing app is live and working well. 
 
 - After reviewing how it's being used, the team realizes that it could be more cost-efficient.
-- Since project management and finance seems happy with the results, they're unsure if it's worth bringing up.
+- Since project management and finance seem happy with the results, they're unsure if it's worth bringing up.
 
 *Applying the approach and outcomes*
 

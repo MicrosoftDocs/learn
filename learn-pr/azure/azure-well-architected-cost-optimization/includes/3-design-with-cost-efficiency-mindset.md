@@ -21,16 +21,16 @@ Keeping ROI in mind helps avoid overbuilding something that ends up costing more
 
 - The engineering team at Contoso is excited to move their warehouse system to the cloud, just like other teams have done.
 
-- They know the current app has some technical debt, so they're planning to rewrite a lot of it and switch to newer cloud-native tools.
+- They know the current app has some technical debt, so they're planning to rewrite much it and switch to newer cloud-native tools.
 - They also want to redesign everything into microservices and run it on Azure Kubernetes Service (AKS), which is a new and exciting platform for them.
 
 *Applying the approach and outcomes*
 
-- The team is excited about doing a big redesign during the cloud move, but they know that they need to maintain the workload's ROI. That means sticking with tools that they already know and avoiding major rewrites that require a lot of extra engineering team training.
+- The team is excited about doing a significant redesign during the cloud move, but they know that they need to maintain the workload's ROI. So they must stick with tools that they already know and avoid major rewrites that require extra engineering team training.
 
 - The workload team takes a practical approach to designing the system. They want it to be cost-effective, meet expectations, and avoid overcomplicating things. To keep the ROI in check and make the migration smooth, they decide to go with an equivalent solution in the cloud, such as Azure App Service.
 
-- During the migration, the team plans to clean up some of the technical debt that makes sense to tackle now. That way, once everything's running on Azure, they'll be in a better spot to keep improving the platform while still keeping the ROI in mind when making those choices.
+- During the migration, the team plans to clean up some of the technical debt that makes sense to tackle now. That way, after everything's running on Azure, they'll be in a better spot to keep improving the platform while still keeping the ROI in mind when making those choices.
 
 ## Refine the design
 
@@ -42,12 +42,12 @@ You might find cheaper options that let you scale up or down easily, or you migh
 
 - The existing workload runs on a hyper-converged (HCI) appliance, and Contoso get billed for compute, network, and storage. 
 
-- The workload has deployed the pre-production and production environments on Windows virtual machines.
+- The workload has deployed the preproduction and production environments on Windows virtual machines.
 - They use GitHub Actions with self-hosted runners to run GitHub Actions jobs.
 
 *Applying the approach and outcomes*
 
-- After checking out several cloud-native options, they chose App Service for the web components. It supports Windows IIS apps with minimal changes and no major training needed.
+- After the team checks out several cloud-native options, they choose App Service for the web components. It supports Windows IIS apps with minimal changes and no major training needed.
 
 - They're sticking with GitHub Actions and self-hosted runners, but moving them to a virtual machine scale set that can scale down to zero nodes when idle.
 
