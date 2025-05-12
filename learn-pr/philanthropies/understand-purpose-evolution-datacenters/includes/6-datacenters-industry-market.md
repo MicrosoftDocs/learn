@@ -1,7 +1,8 @@
+The datacenter industry is growing faster than ever. Datacenters are massive buildings where companies store huge amounts of data, run websites, and support all kinds of internet services (like social media, gaming, or shopping platforms).
 >[!div class="mx-imgBorder"]
 >[![Screenshot of a bar chart showing the projected growth in the datacenter industry from 2023 to 2034, highlighting the rapid expansion and increasing investment in data storage and internet services.](../media/data-center-market-size.png)](../media/data-center-market-size.png#lightbox)
 
-The datacenter industry is growing faster than ever. Datacenters are massive buildings where companies store huge amounts of data, run websites, and support all kinds of internet services (like social media, gaming, or shopping platforms).
+**Graph Source: Data Center Market Size To Hit Around USD 364.62 Bn by 2034**
 
 ## How big is the datacenter market?
 

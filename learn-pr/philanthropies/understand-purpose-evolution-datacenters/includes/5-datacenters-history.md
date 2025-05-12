@@ -1,9 +1,6 @@
 The history of datacenters is closely linked to the development of computing technology, the internet, and the increasing demand for data storage and processing. Here's a timeline of the key milestones in the evolution of datacenters:
 
-## Early Computing (1940s - 1950s)
-
->[!div class="mx-imgBorder"]
->[![Screenshot of a historical photograph of early computing equipment, showcasing large machines and punch card systems.](../media/early-computing.png)](../media/early-computing.png#lightbox)
+## Early computing (1940s - 1950s)
 
 Mainframes and Early Computing:
 
@@ -16,10 +13,7 @@ Challenges:
 - Early computing systems were huge, expensive, and required specialized conditions like temperature control and regular maintenance.
 - Data processing was limited, and the concept of a centralized location for large-scale data management didn't emerge yet.
 
-## The Birth of Modern Datacenters (1960s - 1970s)
-
->[!div class="mx-imgBorder"]
->[![Screenshot of a historical photograph of early mainframe computers in a data center, showcasing large machines and punch card systems.](../media/birth-of-modern-datacenters.png)](../media/birth-of-modern-datacenters.png#lightbox)
+## The birth of modern datacenters (1960s - 1970s)
 
 Early Data Storage Needs:
 
@@ -30,10 +24,7 @@ Cooling and Power Management:
 
 - The need for dedicated facilities to house this equipment started becoming clear, and organizations began to focus more on cooling, power, and physical security to support these large machines.
 
-## Growth and Expansion of Commercial Datacenters (1980s)
-
->[!div class="mx-imgBorder"]
->[![Screenshot of a historical photograph of two technicians working on early computing equipment in a data center.](../media/growth-and-expansion-of-commerical-datacenters.png)](../media/growth-and-expansion-of-commerical-datacenters.png#lightbox)
+## Growth and expansion of commercial datacenters (1980s)
 
 First Commercial Datacenters:
 
@@ -44,10 +35,7 @@ Client-Server Architecture:
 
 - The shift from mainframe computing to client-server architectures began. This allowed businesses to move from relying on a single, centralized mainframe to having distributed networks of personal computers and servers.
 
-## Internet Explosion and the Dot-Com Boom (1990s)
-
->[!div class="mx-imgBorder"]
->[![Screenshot of a historical photograph of a modern skyscraper with the AT&T logo, representing the era of the Internet Explosion and the Dot-Com Boom.](../media/internet-explosion-and-dot-com-boom.png)](../media/internet-explosion-and-dot-com-boom.png#lightbox)
+## Internet explosion and the dot-com boom (1990s)
 
 Internet and Web Hosting:
 
@@ -65,7 +53,7 @@ The Birth of Commercial Datacenters:
 - While mainframe computers and client-server architectures were already in use by the late 1980s and early 1990s, the true rise of commercial datacenters came with the explosion of the internet and web hosting services in the mid-to-late 1990s, during the dot-com boom. This is when companies started to build large facilities specifically designed to house multiple organizations' servers, providing storage, power, cooling, and internet connectivity.
 - While there isn't a single “first” datacenter from the dot-com era, companies like Equinix (founded in 1998), Yahoo!, and AOL were key pioneers in the creation of commercial datacenters that helped power the internet explosion during the dot-com boom. These datacenters laid the groundwork for the vast, interconnected, and highly scalable datacenters we rely on today for cloud computing and other digital services.
 
-### Key companies and pioneers
+Key companies and pioneers:
 
 Equinix (Founded in 1998)
 
@@ -86,10 +74,7 @@ Early Network Connectivity:
 
 - By the late 1990s, fiber-optic cables and high-speed internet connections started making their way to datacenters, significantly improving the speed and capacity for data transmission.
 
-## The Cloud Era and Virtualization (2000s)
-
->[!div class="mx-imgBorder"]
->[![Screenshot of a historical photograph of a computer room with multiple monitors and storage units, representing the Cloud Era and Virtualization.](../media/cloud-era-and-virtualization.png)](../media/cloud-era-and-virtualization.png#lightbox)
+## The cloud era and virtualization (2000s)
 
 Virtualization Technology:
 
@@ -100,10 +85,7 @@ Cloud Computing Emerges:
 - Major players like Amazon (AWS), Microsoft (Azure), and Google began offering cloud computing services, which essentially turned their datacenters into vast, distributed networks of servers that could provide storage, computing power, and software as a service over the internet.
 - Cloud services allowed businesses and individuals to rent computing resources on-demand, reducing the need for them to build and maintain their own datacenters.
 
-## Software-Defined Datacenters and Hyper-Scale Growth (2010s)
-
->[!div class="mx-imgBorder"]
->[![Screenshot of a modern data center with multiple buildings and extensive infrastructure, representing the era of Software-Defined Datacenters and Hyper-Scale Growth.](../media/software-defined-datacenters-hyper-scale-growth.jpg)](../media/software-defined-datacenters-hyper-scale-growth.jpg#lightbox)
+## Software-defined datacenters and hyper-scale growth (2010s)
 
 Software-Defined Infrastructure (SDI):
 
@@ -118,10 +100,7 @@ Energy Efficiency and Sustainability:
 
 - The focus on energy-efficient designs became critical, as massive datacenters consume notable amounts of electricity. Companies began to focus on green technologies, such as using renewable energy sources and improving cooling efficiency. (See PUE/WUE and Module 5)
 
-## The Current State and Future Trends (2020s and beyond)
-
->[!div class="mx-imgBorder"]
->[![Screenshot of a modern data center with rows of server racks, representing the current state and future trends in data center technology.](../media/current-state-and-future-trends.png)](../media/current-state-and-future-trends.png#lightbox)
+## The current state and future trends (2020s and beyond)
 
 Edge Computing:
 
