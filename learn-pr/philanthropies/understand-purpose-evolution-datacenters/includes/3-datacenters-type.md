@@ -1,6 +1,5 @@
 Now that we've seen the incredible range of possibilities enabled by datacenters, let's dive into the different types of datacenters that make all this possible. Datacenters come in various forms, each designed to meet specific needs and requirements. From hyperscale datacenters that support massive cloud services to edge datacenters that bring computing power closer to users, we'll explore the unique characteristics and functions of each type. Understanding these distinctions will give you a clearer picture of how datacenters operate and the critical roles they play in our interconnected world.
->[!div class="mx-imgBorder"]
->[![Screenshot of the server rack in a data center showcases densely packed, high-performance computing hardware with active status lights and efficient cooling infrastructure.](../media/datacenters-type.jpg)](../media/datacenters-type.jpg#lightbox)
+<a href="../media/datacenters-type.jpg" target="_blank"><img src="../media/datacenters-type.jpg" alt="Screenshot of the server rack in a data center showcases densely packed, high-performance computing hardware with active status lights and efficient cooling infrastructure." width="60%"></a>
 
 ### Enterprise datacenter
 

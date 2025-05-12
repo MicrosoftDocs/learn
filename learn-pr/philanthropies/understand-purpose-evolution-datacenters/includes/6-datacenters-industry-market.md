@@ -11,8 +11,7 @@ The datacenter industry is growing faster than ever. Datacenters are massive bui
 
 ## What's driving the growth of datacenters?
 
->[!div class="mx-imgBorder"]
->[![Screenshot of a modern datacenter's server rack, showcasing the intricate network of cables and illuminated components that drive the growth of datacenters.](../media/driving-the-growth-of-datacenters.jpg)](../media/driving-the-growth-of-datacenters.jpg#lightbox)
+<a href="../media/driving-the-growth-of-datacenters.jpg" target="_blank"><img src="../media/driving-the-growth-of-datacenters.jpg" alt="Screenshot of a modern datacenter's server rack, showcasing the intricate network of cables and illuminated components that drive the growth of datacenters." width="60%"></a>
 
 Several key things are making datacenters even more important in 2025:
 
