@@ -13,7 +13,7 @@ metadata:
   ms.service: dev-box
   ai-usage: human-only
 title: Understand the basics of Microsoft Dev Box
-summary: In this module, you explore how Microsoft Dev Box supports platform engineering initiatives by enabling the rapid delivery of secure, cloud-based development environments. You learn how Dev Box fits into Internal Developer Platforms (IDPs) by offering self-service provisioning, customizable images, and built-in integration with tools like Microsoft Entra ID and Intune. Through this introduction, discover how platform engineering principles—such as standardization, automation, and governance—empower development teams to focus on building software while IT and platform teams ensure consistency, security, and scalability.
+summary: This module describes the basics of platform engineering and IDP and how Microsoft Dev Box service fits in that ecosystem. It covers fundamentals of the service along with an architectural review and key concepts.
 abstract: |
   By the end of this module, you'll be able to:
 
