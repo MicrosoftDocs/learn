@@ -68,7 +68,7 @@ You can change the default values of any of the strategies by specifying new opt
 
 This code changes the retry strategy defaults to have a maximum number of retires of 10, to use a linear back off, and use a base delay of 1 second.
 
-The options you choose have to be compatible with each other. For example, if the total time remains as its default of 30 seconds, then the retry options above will cause an exception. This is an error because the exponential backoff setting would cause the total time to complete the 10 retries to be 2,046 seconds. This is a runtime exception, not a compile time error.
+The options you choose have to be compatible with each other. For example, if the total time remains as its default of 30 seconds, then the retry options will cause an exception. This is an error because the exponential backoff setting would cause the total time to complete the 10 retries to be 2,046 seconds. This is a runtime exception, not a compile time error.
 
 The following table lists the options available for each of the strategies.
 
@@ -108,4 +108,4 @@ The following table lists the options available for each of the strategies.
 
 :::image type="content" source="../media/3-calling-pattern-with-resiliency.png" alt-text="A sequence diagram showing the flow of events in an application using a resiliency strategy." border="false":::
 
-The sequence diagram shows how each of the strategies work together in a standard resiliency strategy. To begin with, the total timeout strategy controls the limiting factor of how long a request can take. The retry strategy must then be set to have a maximum number of retries that will complete within the total timeout. The circuit breaker strategy will open the circuit if the failure ratio exceeds the threshold set for it. The attempt timeout strategy sets a timeout for each individual request. If the request takes longer than this time then an exception is thrown.
+The sequence diagram shows how each of the strategies work together in a standard resiliency strategy. To begin with, the total timeout strategy controls the limiting factor of how long a request can take. The retry strategy must then be set to have a maximum number of retries that will complete within the total timeout. The circuit breaker strategy will open the circuit if the failure ratio exceeds the threshold set for it. The attempt timeout strategy sets a timeout for each individual request. If the request takes longer than this time, then an exception is thrown.
