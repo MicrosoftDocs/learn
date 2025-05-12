@@ -28,11 +28,11 @@ A *Circuit Breaker* strategy gives a target service a break after a repeated num
 
 ### Infrastructure-based resiliency
 
-To implement infrastructure-based resiliency, you can use a *service mesh*. Aside from resiliency without changing code, a service mesh provides traffic management, policy, security, strong identity, and observability. Your app is decoupled from these operational capabilities, which are moved to the infrastructure layer. 
+To implement infrastructure-based resiliency, you can use a *service mesh*. Aside from resiliency without changing code, a service mesh provides traffic management, policy, security, strong identity, and observability. Your app is decoupled from these operational capabilities, which are moved to the infrastructure layer.
 
 #### Comparison to code-based approaches
 
-An infrastructure-based resiliency approach can use a metrics-based view that allows it to adapt dynamically to cluster conditions in real time. This approach adds another dimension to managing the cluster, but doesn't add any code.
+An infrastructure-based resiliency approach can use a metrics-based view that allows it to adapt dynamically to cluster conditions in real time. This approach adds another dimension to managing the cluster but doesn't add any code.
 
 With a code-based approach you:
 
@@ -43,4 +43,4 @@ There's no reasonable way to respond to an infrastructure failure in your app's 
 
 In contrast, infrastructure-based approaches are unaware of app internals. For example, complex database transactions are invisible to service meshes. Such transactions can only be protected from failure with a code based approach.
 
-In upcoming units, you'll implement resilience for a microservice based app  using .NET HTTP resiliency in code and a Linkerd service mesh.
+In upcoming units, you'll implement resilience for a microservice based app using .NET HTTP resiliency in code and a Linkerd service mesh.

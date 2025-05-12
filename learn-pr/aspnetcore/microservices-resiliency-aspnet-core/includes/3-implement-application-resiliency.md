@@ -43,7 +43,7 @@ You can add this standard strategy, with all the default values by adding this e
 .AddStandardResilienceHandler();
 ```
 
-For example if you have declared a `WebApplication`, and you want to add a resilience strategy to the HttpClient service use this code: 
+For example if you have declared a `WebApplication`, and you want to add a resilience strategy to the HttpClient service use this code:
 
 ```csharp
 builder.Services.AddHttpClient<ServiceBeingCalled>(httpClient =>

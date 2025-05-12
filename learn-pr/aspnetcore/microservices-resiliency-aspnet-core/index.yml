@@ -11,7 +11,7 @@ metadata:
 title: Implement resiliency in a cloud-native .NET microservice
 summary: Learn how to make your cloud-native .NET Core microservices app fault-tolerant with minimal impact on the user.
 abstract: |
-  In this module, you will:
+  In this module, you'll:
   - Understand foundational resiliency concepts.
   - Observe the behavior of a microservice with no resiliency strategy.
   - Implement failure handling code for HTTP requests in one microservice.
