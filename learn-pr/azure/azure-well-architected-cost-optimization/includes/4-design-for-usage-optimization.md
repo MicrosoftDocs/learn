@@ -11,7 +11,7 @@ The technology solution of the COTS offering is generally treated like a black b
 
 ## Use consumption-based pricing when it makes sense
 
-**Some services only charge consumption-based pricing, which means that you only pay for what you use. You can turn the service off when you don't need it and avoid extra costs. That's great for things that you only use now and then, instead of paying for them to run all the time.**
+**Some services only charge consumption-based pricing, which means that you only pay for what you use. You can turn the service off when you don't need it and avoid extra costs. This option is great for services that you only use now and then, instead of paying for them to run all the time.**
 
 With consumption-based pricing, you only get charged for what you actually use. It's a smart option if your workload doesn't need to run all the time.
 
@@ -19,7 +19,7 @@ With consumption-based pricing, you only get charged for what you actually use. 
 
 - The sync job runs every night for about an hour at a set time, and it usually works just fine. Problems are rare, and the current setup handles transient faults well.
 
-- The job only needs compute power for about an hour a day, but they're paying for continuous use. The team started looks for a better setup.
+- The job only needs compute power for about an hour a day, but they're paying for continuous use. The team looked for a better setup.
 
 - They thought about writing a script to shut down the service after each run and redeploy it the next day, but that felt too risky and complicated.
 
@@ -33,7 +33,7 @@ With consumption-based pricing, you only get charged for what you actually use. 
 
 ## Optimize your high availability design
 
-**If you already paid for resources, it's better to go with active-active or active-only setups instead of active-passive.**
+**If you already paid for resources, it's better to go with active-active or active-only setups instead of active-passive setups.**
 
 Active-passive can leave some resources sitting idle, which isn't great for your budget. Switching to active-active can help handle traffic spikes without overspending. And if active-only still meets your recovery goals, you might be able to remove those costs entirely.
 

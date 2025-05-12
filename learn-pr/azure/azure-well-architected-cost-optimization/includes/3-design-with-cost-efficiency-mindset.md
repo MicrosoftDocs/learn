@@ -1,9 +1,7 @@
-| :::image type="icon" source="../media/goal.svg"::: Spend only on what you need to get the most return on investment. |
+| :::image type="icon" source="../media/goal.svg"::: Buy only what you need to get the most return on investment. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
-Every architectural decision affects your budget, such as whether you build or buy, what tools you use, or how you license and train.
-
-It's important to weigh those options and make trade-offs that still meet your app's needs without overspending.
+Every architectural decision affects your budget, such as whether you build or buy, what tools you use, or how you license and train. It's important to weigh those options and make trade-offs that still meet your app's needs without overspending.
 
 **Example scenario**
 
@@ -21,8 +19,8 @@ Keeping ROI in mind helps avoid overbuilding something that ends up costing more
 
 - The engineering team at Contoso is excited to move their warehouse system to the cloud, just like other teams have done.
 
-- They know the current app has some technical debt, so they're planning to rewrite much it and switch to newer cloud-native tools.
-- They also want to redesign everything into microservices and run it on Azure Kubernetes Service (AKS), which is a new and exciting platform for them.
+- They know the current app has some technical debt, so they're planning to rewrite much of the application code and switch to newer cloud-native tools.
+- The engineering team wants to redesign everything into microservices and run it on Azure Kubernetes Service (AKS), which is a new and exciting platform for them.
 
 *Applying the approach and outcomes*
 
@@ -36,11 +34,11 @@ Keeping ROI in mind helps avoid overbuilding something that ends up costing more
 
 **Fine-tune the design by focusing on services that save money, don't need extra investment, or won't affect how things work. Prioritize based on what suits your business model and the technology choices that provide the most value.**
 
-You might find cheaper options that let you scale up or down easily, or you might decide to stick with tools that you've already invested in. When prioritizing, think about what's critical for running the workload, what affects runtime and operations, and what helps the team work smarter.
+You might find cheaper options that let you scale up or down easily, or you might decide to use tools that you've already invested in. When prioritizing, think about what's critical for running the workload, what affects runtime and operations, and what helps the team work smarter.
 
 *Contoso's challenge*
 
-- The existing workload runs on a hyper-converged (HCI) appliance, and Contoso get billed for compute, network, and storage. 
+- The existing workload runs on a hyper-converged (HCI) appliance, and Contoso gets billed for compute, network, and storage. 
 
 - The workload has deployed the preproduction and production environments on Windows virtual machines.
 - They use GitHub Actions with self-hosted runners to run GitHub Actions jobs.
@@ -59,7 +57,7 @@ Using governance policies or built-in design patterns can help avoid surprise ch
 
 *Contoso's challenge*
 
-- Their current system doesn't have cost guardrails, but since it rarely changes, no one's pushed to add them.
+- The current system doesn't have cost guardrails, but since it rarely changes, no one's pushed to add them.
 
 - The HCI environment owners have set a resource cap, so the workload can't use more compute or storage than allowed.
 - The team's worried that moving to the cloud could lead to unexpected costs, and they're not sure how to avoid that.
@@ -69,5 +67,5 @@ Using governance policies or built-in design patterns can help avoid surprise ch
 - The team learns how to use Microsoft Cost Management solutions.
 
 - They plan to set scale limits for the App Service plans.
-- They plan to set up a Deny policy to block certain expensive virtual machine SKUs from being used.
+- They plan to set up a deny policy to block certain expensive virtual machine SKUs from being used.
 - They plan to add automation to save on storage. Older or less-used data will automatically move to cheaper storage tiers like cold or archive. This kind of automation wasn't possible in their old HCI environment.

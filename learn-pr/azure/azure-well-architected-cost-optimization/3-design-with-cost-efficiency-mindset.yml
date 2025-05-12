@@ -14,7 +14,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Which factor should you take into account when measuring your workload's total cost?"
+    - content: "Which of these is one of the factors that you should take into account when measuring your workload's total cost?"
       choices:
         - content: "The cost of marketing for the product launch"
           isCorrect: false

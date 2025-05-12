@@ -43,7 +43,7 @@ quiz:
 
     - content: "How can the workload team ensure that they catch abandoned resources, like MySQL servers, that are no longer used?"
       choices:
-        - content: "Review the monthly Azure bill."
+        - content: "Review the monthly Azure bill"
           isCorrect: false
           explanation: "Incorrect. The Azure bill doesn't provide information about the usage of a given resource."
         - content: "Set up Azure budget alerts"

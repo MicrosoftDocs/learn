@@ -12,11 +12,11 @@ title: Microsoft Azure Well-Architected Framework - Cost Optimization
 summary: Apply cost optimization guidance in your architecture to sustain and improve your return on investment (ROI).
 abstract: |
   By the end of this module, you'll be more familiar with the five principles of the Cost Optimization and learn three approaches for each pillar. You'll learn how to:
-    - Build a team mindset that keeps an eye on budgets, spending, and tracking costs
-    - Focus your spending on what really matters to get the best value
-    - Make the most of your tools, systems, and processes
-    - Boost efficiency without having to start from scratch or cut corners
-    - Keep adjusting your investments as your needs grow or change
+    - Build a team mindset that keeps an eye on budgets, spending, and tracking costs.
+    - Focus your spending on what really matters to get the best value.
+    - Make the most of your tools, systems, and processes.
+    - Boost efficiency without having to start from scratch or cut corners.
+    - Keep adjusting your investments as your needs grow or change.
 prerequisites: |
   - Experience with core infrastructure technology such as data storage, compute, and networking
   - Experience building or operating technology systems to solve business problems

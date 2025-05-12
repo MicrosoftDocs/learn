@@ -29,7 +29,7 @@ quiz:
           isCorrect: false
           explanation: "Incorrect. Azure reservations can't be purchased for Azure Container Apps."
 
-    - content: "When might it be a good idea to switch from consumption-based billing to a flat-rate billing model?"
+    - content: "When might it be a good idea to switch from consumption-based billing to a fixed-rate billing model?"
       choices:
         - content: "Your workload is heavily used during weekdays and lightly used on weekends."
           isCorrect: false
@@ -39,10 +39,10 @@ quiz:
           explanation: "Incorrect. Scaling up to handle the morning peak and scaling down the rest of the day is a better way to save money."
         - content: "Your workload is moderately used all day and night."
           isCorrect: true
-          explanation: "Correct. This scenario could be a good use case for a flat-rate billing model because the usage pattern is consistent."
+          explanation: "Correct. This scenario could be a good use case for a fixed-rate billing model because the usage pattern is consistent."
         - content: "Your workload is seasonal and is only heavily used for three months of the year."
           isCorrect: false
-          explanation: "Incorrect. You might be able to run your workload with far fewer resources for the other nine months of the year, so a flat-rate billing model isn't a good fit."
+          explanation: "Incorrect. You might be able to run your workload with far fewer resources for the other nine months of the year, so a fixed-rate billing model isn't a good fit."
 
     - content: "Contoso's SQL databases are spread across multiple VMs, each with its own SQL Server Enterprise license. Which of the following cost-saving measures should Contoso consider?"
       choices:

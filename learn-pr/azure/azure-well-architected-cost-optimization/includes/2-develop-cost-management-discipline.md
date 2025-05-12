@@ -15,7 +15,7 @@ A cost model gives you a clearer picture of what things might cost, like infrast
 
 *Contoso's challenge*
 
-- Contoso wants to build a mobile app to handle ticket sales for their trade shows, but they're not sure what it'll cost, especially since demand can spike.
+- Contoso wants to build a mobile app to handle ticket sales for their trade shows, but they're not sure what it'll cost, especially because demand can spike.
 
 - They plan to start small and grow, but without a cost model, it's tough to get funding or plan ahead.
 
@@ -45,8 +45,7 @@ After you set a budget, you can set spending limits and get alerts if you're abo
 
 - As the team refines their cost model, they come up with a confident budget that they can share with stakeholders.
 
-- This model gives their architect a clear financial target to design around. As more is learned about the implementation and the operations necessary, the workload team expects to need to renegotiate a bit.
-- They also left a small buffer, knowing that they might need to adjust later when they know more details.
+- This budget gives their architect a clear financial target to design around. As more is learned about the implementation and the operations necessary, the workload team expects to need to renegotiate budget a bit so they leave a small buffer.
 - The goal is to stay flexible, but stick to the budget as closely as possible.
 
 ---
@@ -68,5 +67,5 @@ Cost-saving ideas often come from the ground up, and that feedback can be just a
 
 - The team is encouraged to treat the budget like it's their own and speak up to product management when they see a better way to meet the app's needs without sacrificing security, reliability, or performance.
 
-- The workload team shares their ideas with stakeholders and talks about the pros and cons of making changes.
+- The workload team shares their ideas with stakeholders, and they talk about the pros and cons of making changes.
 - The changes are approved, and the savings follow.

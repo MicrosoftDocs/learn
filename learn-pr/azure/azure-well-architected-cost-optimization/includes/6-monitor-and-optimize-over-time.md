@@ -55,7 +55,7 @@ Review your metrics, performance, billing, and feature usage regularly. You migh
 
 You can save money by understanding that not all environments need to match production. Nonproduction environments can have different features, SKUs, instance counts, and even logging.
 
-You also can save costs by creating preproduction environments only when you need them, and shutting them down when you're done.
+You can also save costs by creating preproduction environments only when you need them, and shutting them down when you're done.
 
 *Contoso's challenge*
 

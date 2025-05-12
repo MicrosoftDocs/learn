@@ -5,7 +5,7 @@ You don't always need to redesign or renegotiate to save money. Sometimes, you c
 
 **Example scenario**
 
-Contoso's business intelligence (BI) team hosts a suite of GraphQL APIs  so that different departments can access data without accessing the databases directly. Over time, they've added versioning and now run everything through a single Azure API Management gateway on the Consumption tier.
+Contoso's business intelligence (BI) team hosts a suite of GraphQL APIs  so that different departments can access data without touching the databases directly. Over time, they've added versioning and now run everything through a single Azure API Management gateway on the Consumption tier.
 
 Three AKS clusters are behind the API Management instances:
   - One runs a Windows node pool for APIs written in .NET 4.5.
@@ -19,7 +19,7 @@ The BI team is a cost center in the business, so they're looking for ways to opt
 
 ## Combine infrastructure where it makes sense
 
-**Try to run things in the same place, whether it's resources, workloads, or teams. Use services that help you pack more into less space. Consider any tradeoffs, especially around security.**
+**Try to run things in the same place, whether it's resources, workloads, or teams. Use services that help you pack more into less space. Consider any trade-offs, especially around security.**
 
 When you pack more utility into fewer systems, you use less hardware and spend less on managing it all. That means lower costs and less complexity.
 
@@ -31,7 +31,7 @@ When you pack more utility into fewer systems, you use less hardware and spend l
 
 *Applying the approach and outcomes*
 
-- After the team does testing, they decide to combine all the API into a single cluster with three user node pools while achieving the same performance and OS characteristics of their original cluster.
+- After the team does testing, they decide to combine all the APIs into a single cluster with three user node pools while achieving the same performance and OS characteristics of their original cluster.
 
 - They also consolidate to four nodes for their system node pool, saving the costs of five virtual machines.
 - Now they only have one cluster to patch and update, which saves even more time.
