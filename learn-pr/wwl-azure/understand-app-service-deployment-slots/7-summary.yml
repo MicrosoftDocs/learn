@@ -2,9 +2,11 @@
 uid: learn.wwl.understand-app-service-deployment-slots.summary
 title: Summary
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
-  ms.date: 02/13/2025
+  ms.date: 05/12/2025
   author: wwlpublish
   ms.author: jeffko
   ms.topic: unit

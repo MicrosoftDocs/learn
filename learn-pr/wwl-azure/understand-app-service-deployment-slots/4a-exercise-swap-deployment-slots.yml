@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.exercise-swap-deployment-slots
+title: Swap deployment slots in Azure App Service
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Swap deployment slots in Azure App Service
+  description: "Swap deployment slots in Azure App Service"
+  ms.date: 05/12/2025
+  author: wwlpublish
+  ms.author: jeffko
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 30
+content: |
+  [!include[](includes/4a-exercise-swap-deployment-slots.md)]
