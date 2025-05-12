@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Check your knowledge.
-  ms.date: 02/14/2024
+  ms.date: 05/01/2025
   author: vhorne
-  ms.author: victorh
+  ms.author: robmcm
   ms.topic: unit
 durationInMinutes: 4
 content: |
@@ -40,11 +40,11 @@ quiz:
     choices:
     - content: "Your web app includes user accounts and stores sensitive or proprietary data."
       isCorrect: false
-      explanation: "Incorrect. User credentials, sensitive personal information, and proprietary company data are coveted by malicious users, so Azure Web Application Firewall is a good choice for protecting that data."
+      explanation: "Incorrect. Malicious users covet user credentials, sensitive personal information, and proprietary company data. Azure Web Application Firewall is a good choice for protecting that data."
     - content: "Your web app is made available to employees, customers, and vendors using a private network connection."
       isCorrect: true
-      explanation: "Correct. Private access to the virtual network where the web app resides means that app traffic never goes over the public internet. There is no need to protect the app against common web exploits."
+      explanation: "Correct. Private access to the virtual network where the web app resides means that app traffic never goes over the public internet. There's no need to protect the app against common web exploits."
     - content: "Your web app development team lacks security expertise, time, and money."
       isCorrect: false
       explanation: "Incorrect. A lack of expertise, time, and money can prevent your team from covering all possible exploits, which can leave your app vulnerable. Azure Web Application Firewall protects against all OWASP exploits and can be deployed quickly and cost-effectively."
-
+
