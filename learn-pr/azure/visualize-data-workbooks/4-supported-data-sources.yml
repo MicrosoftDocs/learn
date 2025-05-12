@@ -5,9 +5,9 @@ metadata:
   title: Supported data sources
   description: Use Azure Workbooks to query data from multiple data sources and use visualizations such as graphs, charts, and grids to build visual reports for data analysis and reporting.
   ms.date: 10/27/2022
-  author: AbbyMSFT
-  ms.author: abbyweisberg
+  author: EliotSeattle
+  ms.author: eliotgra
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-supported-data-sources.md)]
+  [!include[](includes/4-supported-data-sources.md)]

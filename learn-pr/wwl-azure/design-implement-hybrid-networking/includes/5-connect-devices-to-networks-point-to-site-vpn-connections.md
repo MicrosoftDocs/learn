@@ -1,4 +1,9 @@
-A [Point-to-Site (P2S) VPN gateway](/azure/vpn-gateway/point-to-site-about) connection lets you create a secure connection to your virtual network from an individual client computer. A P2S connection is established by starting it from the client computer. This solution is useful for telecommuters who want to connect to Azure VNets from a remote location, such as from home or a conference. P2S VPN is also a useful solution to use instead of S2S VPN when you have only a few clients that need to connect to a VNet.
+A [Point-to-Site (P2S) VPN gateway](/azure/vpn-gateway/point-to-site-about) connection lets you create a secure connection to your virtual network from an individual client computer.
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=d71189fa-2a1e-406d-baef-3e58adfa907a]
+
+
+ A P2S connection is established by starting it from the client computer. This solution is useful for telecommuters who want to connect to Azure VNets from a remote location, such as from home or a conference. P2S VPN is also a useful solution to use instead of S2S VPN when you have only a few clients that need to connect to a VNet.
 
 :::image type="content" source="../media/point-site-diagram.png" alt-text="Diagram of a point-to-site connection.":::
 
@@ -26,10 +31,6 @@ This authentication is a popular option because it allows users to connect to Az
 The RADIUS server is deployed either on-premises or in your Azure VNet. During authentication, the Azure VPN Gateway passes authentication messages back and forth between the RADIUS server and the connecting device. Thus, the Gateway must be able to communicate with the RADIUS server. If the RADIUS server is present on-premises, then a VPN S2S connection from Azure to the on-premises site is required for reachability.
 
 
-### Point-to-site connections (video)
 
-This video reviews the basics of point-to-site connections. 
-
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=d71189fa-2a1e-406d-baef-3e58adfa907a]
 
 

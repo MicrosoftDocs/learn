@@ -4,9 +4,9 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Check your knowledge.
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 09/20/2024
+  ms.date: 05/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -46,4 +46,4 @@ quiz:
     - content: "Clone the chart."
       isCorrect: false
       explanation: "Incorrect. Cloning the chart creates a copy in the Resource Metrics page."
-
+

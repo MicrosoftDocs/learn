@@ -1,11 +1,8 @@
-Face detection, analysis, and recognition are all common computer vision challenges for AI systems. The ability to detect when a person is present, identify a person's facial location, or recognize an individual based on their facial features is a key way in which AI systems can exhibit human-like behavior and build empathy with users.
+Face detection, analysis, and recognition are all common computer vision challenges for AI systems. The ability to detect when a person is present, analyze a person's facial features, or recognize an individual based on their face is a key way in which AI systems can exhibit human-like behavior and build empathy with users.
 
-In this module, you'll learn how to detect, analyze, and recognize faces using Azure AI Services.
+In this module, you'll explore how the Azure AI Vision *Face API* enables you to build solutions that analyze faces in images.
 
-After completing this module, you’ll be able to:
+![Diagram of faces being detected from an image by the Azure AI Vision Face API.](../media/face-api.png)
 
-- Identify options for face detection analysis.
-- Describe considerations for face analysis.
-- Detect faces with the Azure AI Vision service.
-- Describe the capabilities of the Face service.
-- Learn about facial recognition.
+> [!NOTE]
+> Access to the full capabilities of the Face API is restricted in accordance with Microsoft's responsible AI policies. For details, see **[Limited Access to Face API](/legal/cognitive-services/computer-vision/limited-access-identity)**. This module describes some capabilities that require explicit access. The practical exercise in the module is based on unrestricted features of the service.
