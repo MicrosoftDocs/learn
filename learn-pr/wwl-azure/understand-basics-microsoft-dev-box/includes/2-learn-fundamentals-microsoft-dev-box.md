@@ -20,7 +20,7 @@ There are several roles in an organization that get involved in deploying and ma
 ### Platform engineers or IT administrators
 
 - These teams are responsible for infrastructure and policy.
-- Create and manage Dev Centers, Projects, and Dev Box pools.
+- Create and manage Dev centers, Projects, and Dev Box pools.
 - Configure network access, including DNS, subnets, and private endpoints.
 - Set up governance, including conditional access, Multifactor Authentication (MFA) and compliance policies.
 - Publish and manage VM images in Azure Compute Gallery.
