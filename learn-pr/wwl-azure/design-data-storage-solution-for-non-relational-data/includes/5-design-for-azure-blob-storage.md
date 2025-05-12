@@ -1,6 +1,6 @@
 [Azure Blob Storage](/azure/storage/blobs/storage-blobs-overview) is a cloud-based object storage service offered by Microsoft Azure. Blob storage is designed to store large amounts of unstructured data, such as text, images, documents, videos, and audio files. This video from the Developer course covers the basics of blob storage. 
 
-> [! VIDEO https://learn-video.azurefd.net/vod/player?id=335682c0-7869-4eb7-ac14-bc3b8c4d84a4]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=335682c0-7869-4eb7-ac14-bc3b8c4d84a4]
 
 There are two main points to consider in an implementation plan for Azure Blob Storage. First, you need to identify which Azure _blob access tier_ satisfies your organization's storage availability, latency, and cost requirements. The second consideration is to decide if you need access to immutable storage.
 

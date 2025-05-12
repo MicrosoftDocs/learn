@@ -1,6 +1,6 @@
 Azure Storage provides a layered security model that lets you secure and control the level of access to your storage accounts. The model consists of several storage security options, including firewall policies, customer-managed keys, and endpoints. This video from the Developers course highlights storage security features. 
 
-> [! VIDEO https://learn-video.azurefd.net/vod/player?id=70edcdd1-7dab-478a-83ea-d07f4f883d67]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=70edcdd1-7dab-478a-83ea-d07f4f883d67]
 
 ### Things to know about storage security
 
