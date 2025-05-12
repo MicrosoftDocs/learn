@@ -1,51 +1,32 @@
-Scalable analytics can be complex, fragmented, and expensive. With Microsoft Fabric, you don't have to spend all of your time combining various services from different vendors. Instead, you can use a single product that is easy to understand, set up, create, and manage. Fabric offers persona-optimized experiences and tools in an integrated user interface.
+Scalable analytics can be complex, fragmented, and expensive. Microsoft Fabric simplifies analytics solutions by providing a single, easy-to-use product that integrates various tools and services into one platform.
 
-In addition to a simple, shared user experience, Fabric is a unified *software-as-a-service* (SaaS) offering, with all your data stored in a single open format in OneLake. OneLake is accessible by all of the analytics engines in the platform. Fabric offers scalability, cost-effectiveness, accessibility from anywhere with an internet connection, and continuous updates and maintenance provided by Microsoft.
+Fabric is a unified _software-as-a-service_ (SaaS) platform where all data is stored in a single open format in OneLake. OneLake is accessible by all analytics engines in the platform, ensuring scalability, cost-effectiveness, and accessibility from anywhere with an internet connection.
 
-## Explore OneLake
+## OneLake
 
-*OneLake* is Fabric's lake-centric architecture that provides a single, integrated environment for data professionals and the business to collaborate on data projects. Fabric's OneLake architecture facilitates collaboration between data team members and saves time by eliminating the need to move and copy data between different systems and teams. OneCopy is a key component of OneLake that allows you to read data from a single copy, without moving or duplicating data.
+_OneLake_ is Fabric's centralized data storage architecture that enables collaboration by eliminating the need to move or copy data between systems. OneLake unifies your data across regions and clouds into a single logical lake without moving or duplicating data.
 
-Think of it like OneDrive for data; OneLake combines storage locations across different regions and clouds into a single logical lake, without moving or duplicating data. Similar to how Office applications are prewired to use your organizational OneDrive, all the compute workloads in Fabric are preconfigured to work with OneLake. Fabric's data warehousing, data engineering (lakehouses and notebooks), data integration (pipelines and dataflows), real-time intelligence, and Power BI all use OneLake as their native store without needing any extra configuration.
+OneLake is built on _Azure Data Lake Storage_ (ADLS) and supports various formats, including Delta, Parquet, CSV, and JSON. All compute engines in Fabric automatically store their data in OneLake, making it directly accessible without the need for movement or duplication. For tabular data, the analytical engines in Fabric write data in delta-parquet format and all engines interact with the format seamlessly.
 
-![Screenshot of the Fabric architecture built on OneLake.](../media/fabric-introduction.png)
+_Shortcuts_ are references to files or storage locations external to OneLake, allowing you to access existing cloud data without copying it. Shortcuts ensure data consistency and enable Fabric to stay in sync with the source.
 
-OneLake is built on top of *Azure Data Lake Storage* (ADLS) and data can be stored in any format, including Delta, Parquet, CSV, JSON, and more.
+:::image type="content" border="true" source="../media/onelake-architecture.png" alt-text="Diagram of the OneLake architecture with workloads accessing the same OneLake data storage and Delta-Parquet storage format as the foundation for serverless compute.":::
 
-What this means is that all of the compute engines in Fabric automatically store their data in OneLake. Data that is stored in OneLake is then directly accessible by all of the compute engines without needing to be moved or copied. For tabular data, the analytical engines in Fabric write data in delta-parquet format and all engines interact with the format seamlessly.
+## Workspaces
 
-One important feature of OneLake is the ability to create shortcuts, which are embedded references within OneLake that point to other files or storage locations. Shortcuts allow you to quickly source your existing cloud data without having to copy it, and enables Fabric experiences to derive data from the same source to always be in sync.
+In Microsoft Fabric, workspaces serve as logical containers that help you organize and manage your data, reports, and other assets. They provide a clear separation of resources, making it easier to control access and maintain security.
 
-![Screenshot of the OneLake architecture displaying the Delta-Parquet storage format as the foundation for serverless compute.](../media/onelake-storage.png)
+Each workspace has its own set of permissions, ensuring that only authorized users can view or modify its contents. This structure supports team collaboration while maintaining strict access control for both business and IT users.
 
-## Explore Fabric's experiences
+Workspaces allow you to manage compute resources and integrate with Git for version control. You can optimize performance and cost by configuring compute settings, while Git integration helps track changes, collaborate on code, and maintain a history of your work.
 
-Fabric offers a set of analytics experiences that are designed to accomplish specific tasks and work together seamlessly. Fabric's experiences include:
+## Administration and governance
 
-- **Synapse Data Engineering**: data engineering with a Spark platform for data transformation at scale.
-- **Synapse Data Warehouse**: data warehousing with industry-leading SQL performance and scale to support data use.
-- **Synapse Data Science**: data science with Azure Machine Learning and Spark for model training and execution tracking in a scalable environment.
-- **Synapse Real-Time Intelligence**: real-time intelligence to query and analyze large volumes of data in real-time.
-- **Data Factory**: data integration combining Power Query with the scale of Azure Data Factory to move and transform data.
-- **Power BI**: business intelligence for translating data to decisions through interactive reports.
+Fabric's OneLake is centrally governed and open for collaboration. Data is secured and governed in one place, which allows users to easily find and access the data they need. Fabric administration is centralized in the _Admin portal_.
 
-Fabric provides a comprehensive data analytics solution by unifying all these experiences on a single platform.
+In the admin portal you can manage groups and permissions, configure data sources and gateways, and monitor usage and performance. You can also access the Fabric admin APIs and SDKs in the admin portal, which can automate common tasks and integrate Fabric with other systems.
 
-## Explore workspaces <!-- new -->
-
-Fabric uses workspaces to contain the different items created across the different experiences. Each organization can customize how to separate and control access to the items. Some possibilities include a dedicated workspace for lakehouse development and a separate workspace for the production lakehouse.
-
-In Microsoft Fabric, workspaces serve as logical containers that help you organize and manage your data, reports, and other assets. They provide a clear separation of resources, making it easier to control access and maintain security. Each workspace can have its own set of permissions, ensuring that only authorized users can view or modify the contents. This structure supports collaboration within teams while maintaining strict access control, which is crucial for both business and IT users.
-
-Workspaces in Microsoft Fabric also offer settings to manage compute resources and integrate with Git for version control. You can configure compute settings to optimize performance and cost, ensuring that your resources are used efficiently. Git integration allows you to track changes, collaborate on code, and maintain a history of your work, which is essential for development and data management. Additionally, workspaces support features like data lineage and impact analysis, providing a comprehensive view of data flow and dependencies, which enhances transparency and decision-making.
-
-## Explore security and governance
-
-Fabric's OneLake is centrally governed and open for collaboration. Data is secured and governed in one place, which allows users to easily find and access the data they need. Fabric administration is centralized in the *admin center*.
-
-In the admin center you can manage groups and permissions,  configure data sources and gateways, and monitor usage and performance. You can also access the Fabric admin APIs and SDKs in the admin center, which you'd use to automate common tasks and integrate Fabric with other systems.
+The _OneLake catalog_ helps you analyze, monitor, and maintain data governance. It provides guidance on sensitivity labels, item metadata, and data refresh status, offering insights into the governance status and actions for improvement.
 
 > [!NOTE]
-> For more information about Fabric administration, see [What is Microsoft Fabric admin](/fabric/admin/microsoft-fabric-admin).
-
-Your Fabric tenant is natively integrated with Microsoft Purview Information Protection. Fabric uses Microsoft Purview Information Protection’s sensitivity labels to help your organization classify and protect sensitive data, from ingestion to export.
+> Review the [Microsoft Fabric administration](/fabric/admin) documentation for more information.

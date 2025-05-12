@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.customize-clusters-azure-cyclecloud.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: This is a knowledge check unit.
   ms.date: 02/01/2024
   author: anhoward
@@ -48,4 +46,4 @@ quiz:
     - content: "SSH keys"
       isCorrect: true
       explanation: "This connection relies on SSH key-based authentication."
-
+

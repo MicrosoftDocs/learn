@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.deploy-model-managed-online-endpoint.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   author: wwlpublish
   ms.author: madiepev
@@ -37,4 +35,4 @@ quiz:
     - content: "`init()` and `run()`"
       isCorrect: true
       explanation: "Correct. You must implement init and run functions in the entry (scoring) script."
-
+

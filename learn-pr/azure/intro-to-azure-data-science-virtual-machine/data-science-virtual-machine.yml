@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-data-science-virtual-machine.data-science-virtual-machine
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is the Data Science Virtual Machine?
   description: Learn about the components and intended uses of the Data Science Virtual Machine.
   ms.date: 04/09/2024
@@ -14,4 +12,4 @@ title: What is the Data Science Virtual Machine?
 durationInMinutes: 4
 content: |
   [!include[](includes/data-science-virtual-machine.md)]
-
+

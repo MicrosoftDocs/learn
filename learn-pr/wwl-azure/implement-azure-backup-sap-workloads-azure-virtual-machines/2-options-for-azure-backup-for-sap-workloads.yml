@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-azure-backup-for-sap-workloads-azure-vms.options-for
 title: Options for Azure Backup for SAP workloads on Azure VMs
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Options for Azure Backup for SAP workloads on Azure VMs
   description: "Explore three backup possibilities for SAP HANA on Azure Virtual Machines."
   ms.date: 03/27/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-options-for-azure-backup-for-sap-workloads.md)]
+  [!include[](includes/2-options-for-azure-backup-for-sap-workloads.md)]

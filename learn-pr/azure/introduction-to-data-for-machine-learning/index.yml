@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.machinelearning.introduction-to-data-for-machine-learning
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to data for machine learning
   description: The power of machine learning models comes from the data that is used to train them. Through content and exercises, we explore how to understand your data, how to encode it so that the computer can interpret it properly, how to clean it of errors, and tips that will help you create models that perform well.
   ms.date: 10/10/2024
@@ -48,4 +46,4 @@ units:
 
 badge: 
   uid: learn.machinelearning.introduction-to-data-for-machine-learning.badge #add the uid for your achievement badge.
-
+

@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-government-its-structure.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 04/29/2022
   author: wwlpublish
@@ -84,4 +82,4 @@ quiz:
       explanation: "That is incorrect. The United States Department of Defense is a cabinet-level agency charged with coordinating and supervising all agencies and functions of the government directly related to national security and the United States Armed Forces."
     - content: "Department of Homeland Security"
       isCorrect: true
-      explanation: "That is correct. The Department of Homeland Security includes the National Cyber Security Division (NCSD), which is responsible for the response system, risk management program, and requirements for cyber-security in the U.S."
+      explanation: "That is correct. The Department of Homeland Security includes the National Cyber Security Division (NCSD), which is responsible for the response system, risk management program, and requirements for cyber-security in the U.S."

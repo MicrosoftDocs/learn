@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-security-active-directory.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 10/22/2024
   author: wwlpublish
@@ -61,4 +59,4 @@ quiz:
       explanation: "Incorrect. Accounts should have a minimal set of permissions to conform to the principle of least privilege rather than being loaded with permissions. If an account is compromised, it's better to have the compromised account be as limited as possible rather than over-privileged."
     - content: "Users with complex passwords."
       isCorrect: false
-      explanation: "Incorrect. Accounts should have complex passwords rather than simple ones that are easy to guess or attack using brute force methods."
+      explanation: "Incorrect. Accounts should have complex passwords rather than simple ones that are easy to guess or attack using brute force methods."

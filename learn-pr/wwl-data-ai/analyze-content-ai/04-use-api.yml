@@ -2,8 +2,6 @@
 uid: learn.wwl.analyze-content-ai.use-api
 title: Use the Content Understanding REST API
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use the Content Understanding REST API
   description: Use the REST API to create a client application for an analyzer.
   author: wwlpublish

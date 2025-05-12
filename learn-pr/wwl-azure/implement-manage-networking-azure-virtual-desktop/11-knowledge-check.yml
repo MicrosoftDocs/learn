@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-manage-networking-for-azure-virtual-desktop.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 08/22/2024
   author: wwlpublish
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. Disabling the firewall would expose the network to potential threats."
     - content: "The administrator should specify the source port or range as 3390 and select Finish."
       isCorrect: true
-      explanation: "Correct. Specifying the source port or range as 3390 and selecting Finish would open the required port."
+      explanation: "Correct. Specifying the source port or range as 3390 and selecting Finish would open the required port."

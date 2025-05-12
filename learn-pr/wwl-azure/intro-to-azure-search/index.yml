@@ -1,13 +1,11 @@
 ### YamlMime:Module
 uid: learn.azure-introduction-to-azure-search
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Fundamentals of Knowledge Mining and Azure AI Search
   description: Explore Azure AI Search to discover how to create an index, import data, and query the index for better search results.
   author: wwlpublish
   ms.author: sheryang
-  ms.date: 07/25/2024
+  ms.date: 04/25/2025
   ms.service: azure
   ms.topic: module
   ms.collection:
@@ -17,14 +15,10 @@ title: Fundamentals of Knowledge Mining and Azure AI Search
 summary: Use Azure AI Search to make your data searchable.
 abstract: |
   In this module, you will:
-
-  -   Explore Azure AI Search
-
-  -   Create an Azure AI Search index
-
-  -   Import data to the index
-
-  -   Query the Azure AI Search index
+  - Understand how Azure AI Search implements AI through skillsets
+  - Learn how indexers automate data ingestion steps, including JSON serialization
+  - Describe the purpose of a knowledge store
+  - Understand how to build and query a search index
 prerequisites: None
 iconUrl: /training/achievements/azure-introduction-to-azure-search.svg
 levels:

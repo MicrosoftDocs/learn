@@ -2,8 +2,6 @@
 uid: learn.azure.accelerate-migration-journey.7-azure-migrate-modernize-innovate
 title: Azure Migrate and Modernize and Azure Innovate
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Azure Migrate and Modernize and Azure Innovate
   description: Learn about the programs provided by Microsoft to provide expert help for successful moves to Azure. 
   ms.date: 05/15/2023
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/7-azure-migration-programs.md)]
-
+

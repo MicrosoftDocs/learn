@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.deploy-manage-active-directory-domain-services-domain-controllers.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 06/18/2024
   author: wwlpublish
@@ -48,4 +46,4 @@ quiz:
       explanation: "That's correct. Domain naming master is a forest-level operations master."
     - content: "RID"
       isCorrect: false
-      explanation: "That's incorrect. RID master is a domain-level operations master."
+      explanation: "That's incorrect. RID master is a domain-level operations master."

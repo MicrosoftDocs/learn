@@ -27,6 +27,9 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 
      :::image type="content" source="../media/6-configure-app-type.png" alt-text="Screenshot of locating ASP.NET Core from the list of provided application types.":::
 
+    > [!NOTE]
+    > If your repository has an `azure-pipelines.yml` file at the root level, Azure DevOps may skip the **Configure** step. To resolve this issue, remove or rename the file.
+
 1. On the **Review** tab, note the initial build configuration.
 
     :::image type="content" source="../media/6-initial-pipeline-yml.png" alt-text="Screenshot of Azure Pipelines showing the initial build configuration.":::

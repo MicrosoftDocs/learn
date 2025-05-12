@@ -2,11 +2,9 @@
 uid: learn.wwl.security-virtual-networks.secure-virtual-private-network-connectivity-point-to-site-site-to-site
 title: Secure VPN connectivity, including point-to-site and site-to-site
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Secure VPN connectivity, including point-to-site and site-to-site
   description: "Secure VPN connectivity, including point-to-site and site-to-site"
-  ms.date: 02/25/2025
+  ms.date: 03/25/2025
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: unit

@@ -2,8 +2,6 @@
 uid: learn.azure.create-content-delivery-network-azure-cdn-blob-services.1-introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   ms.date: 01/10/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
-
+

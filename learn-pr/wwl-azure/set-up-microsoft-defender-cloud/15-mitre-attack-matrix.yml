@@ -2,8 +2,6 @@
 uid: learn.wwl.set-up-microsoft-defender-cloud.mitre-attack-matrix
 title: MITRE Attack matrix
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: MITRE Attack matrix
   description: "MITRE Attack matrix"
   ms.date: 04/24/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/15-mitre-attack-matrix.md)]
+  [!include[](includes/15-mitre-attack-matrix.md)]

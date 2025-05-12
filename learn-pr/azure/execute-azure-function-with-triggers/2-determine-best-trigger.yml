@@ -2,8 +2,6 @@
 uid: learn.execute-azure-function-with-triggers.2-determine-best-trigger
 title: Determine the best trigger for your Azure function 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Determine the best trigger for your Azure function
   description: Determine the best trigger for your Azure function
   ms.date: 09/25/2023
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/2-determine-best-trigger.md)]
-
+

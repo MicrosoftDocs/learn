@@ -2,13 +2,11 @@
 uid: learn.wwl.ai-agent-fundamentals.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary of key learning points and further reading for AI agents.
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 02/12/2025
+  ms.date: 04/03/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

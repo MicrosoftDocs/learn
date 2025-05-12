@@ -26,11 +26,11 @@ These features are all automatically enabled under compatibility mode 150 and re
 
 ## Table variable deferred compilation
 
-Like MSTVFs, table variables in SQL Server execution plans carry a fixed row count estimate of one row. Much like MSTVFs, this fixed estimate led to poor performance when the variable had a much larger row count than expected. With SQL Server 2019, table variables are now analyzed and have an actual row count. Deferred compilation is similar in nature to interleaved execution for MSTVFs, except that it's performed at the first compilation of the query rather than dynamically within the execution plan.
+Like MSTVFs, table variables in SQL Server execution plans carry a fixed row count estimate of one row. Much like MSTVFs, this fixed estimate led to poor performance when the variable had a larger row count than expected. With SQL Server 2019, table variables are now analyzed and have an actual row count. Deferred compilation is similar in nature to interleaved execution for MSTVFs, except that it's performed at the first compilation of the query rather than dynamically within the execution plan.
 
 ## Batch mode on row store
 
-Batch execution mode allows data to be processed in batches instead of row by row. Queries that incur significant CPU costs for calculations and aggregations will see the largest benefit from this processing model. By separating batch processing and columnstore indexes, more workloads can benefit from batch mode processing.
+Batch execution mode allows data to be processed in batches instead of row by row. Queries that incur significant CPU costs for calculations and aggregations see the largest benefit from this processing model. By separating batch processing and columnstore indexes, more workloads can benefit from batch mode processing.
 
 ## Scalar user-defined function inlining
 
@@ -38,4 +38,4 @@ In older versions of SQL Server, scalar functions performed poorly for several r
 
 ## Approximate count distinct
 
-A common data warehouse query pattern is to execute a distinct count of orders or users. This query pattern can be expensive against a large table. Approximate count distinct introduces a much faster approach to gathering a distinct count by grouping rows. This function guarantees a 2% error rate with a 97% confidence interval.
+A common data warehouse query pattern is to execute a distinct count of orders or users. This query pattern can be expensive against a large table. Approximate count distinct introduces a faster approach to gathering a distinct count by grouping rows. This function guarantees a 2% error rate with a 97% confidence interval.

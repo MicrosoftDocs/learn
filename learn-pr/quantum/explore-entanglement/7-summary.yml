@@ -2,15 +2,13 @@
 uid: learn.quantum.explore-entanglement.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 01/22/2025
-  author: SoniaLopezBravo
-  ms.author: sonialopez
-  manager: tedhudek
+  author: azure-quantum-content
+  ms.author: quantumdocwriters
+  
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/7-summary.md)]

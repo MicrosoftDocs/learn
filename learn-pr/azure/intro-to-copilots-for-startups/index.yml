@@ -2,8 +2,6 @@
 uid: learn.azure.intro-build-copilots-for-startups
 title: Introduction to building copilots for startups
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to building copilots for startups
   description: In the rapidly advancing landscape of generative AI, the technology behind copilots continues to evolve. Understanding their potential and harnessing their capabilities is essential for any forward-looking entrepreneur. Whether you're a technologist, writer, entrepreneur, or innovator, we invite you to embark on an enlightening exploration of copilots and their potential to reshape the future of startups in the realm of generative AI. This module offers a comprehensive exploration of the transformational concept of copilots for startups. Discover how these applications, empowered by modern AI and expansive language models, can revolutionize complex cognitive tasks. Learn how startups can strategically use the Azure OpenAI Service to construct and deploy their own copilot to re-imagine user experiences, elevate content development, and harness the power of generative AI to drive innovation and growth.  Explore the foundational aspects of copilots, their flexible and customizable platforms, and high-quality text and image generation.
   ms.date: 07/30/2024
@@ -44,4 +42,4 @@ units:
   - learn.azure.intro-build-copilots-for-startups.summary
 badge:
   uid: learn.azure.intro-build-copilots-for-startups.badge
-
+

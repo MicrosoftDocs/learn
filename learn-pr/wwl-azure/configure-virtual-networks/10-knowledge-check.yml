@@ -1,12 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-virtual-networks.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
+  hidden_question_numbers: ["EDD34630_34","EDD34630_46","EDD34630_63","EDD34630_79","EDD34630_83","EDD34630_87"]
+  ai_generated_module_assessment: true
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 02/14/2025
+  ms.date: 04/28/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

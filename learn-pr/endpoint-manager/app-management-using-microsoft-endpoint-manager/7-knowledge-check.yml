@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.app-management-using-microsoft-endpoint-manager.7-knowledge-check
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   ms.date: 10/22/2024
   author: Erikre 
   ms.author: erikre
   ms.topic: unit
-title: Knowledge Check
+title: Module assessment
 durationInMinutes: 3
 quiz:
   title: Check your knowledge

@@ -4,23 +4,23 @@ metadata:
   ms.author: debbieobrien
   author: debs-obrien
   ms.manager: jamont
-  ms.date: 05/08/2024
-  title: Build Your first end-to-end test with Playwright
+  ms.date: 03/19/2025
+  title: Build your first end-to-end test with Playwright
   description: In this module, you'll learn how to use Playwright to test a sample web application. You'll learn how to run tests, view test reports, and understand the structure of a Playwright project. You'll also learn how to use Visual Studio Code to run tests, debug tests, and record new tests.
   ms.topic: module
   ms.service: vs-code
-title: Build Your first end-to-end test with Playwright
+title: Build your first end-to-end test with Playwright
 summary: In this module, you'll learn how to use Playwright to test a sample web application. You'll learn how to run tests, view test reports, and understand the structure of a Playwright project. You'll also learn how to use Visual Studio Code to run tests, debug tests, and record new tests.
 abstract: |
-  In this module, you will learn
+  In this module, you'll learn:
   - How to use Playwright to test a sample web application.
   - How to run tests, view test reports, and understand the structure of a Playwright project.
   - How to use Visual Studio Code to run tests, debug tests, and record new tests.
 prerequisites: |
-  To get started with Playwright,
-  - Visual Studio Code installed
-  - Latest version of node
-  - Latest version of npm
+  To get started with Playwright, you should have:
+  - [Visual Studio Code](https://code.visualstudio.com/) installed
+  - [Latest version of node](https://nodejs.org/en/download/current)
+  - [Latest version of npm](https://docs.npmjs.com/try-the-latest-stable-version-of-npm)
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner

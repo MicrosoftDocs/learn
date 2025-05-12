@@ -2,12 +2,10 @@
 uid: learn.wwl.configure-manage-automation-microsoft-defender-for-endpoint.block-at-risk-devices
 title: Block at risk devices
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Block at risk devices
   description: "Block at risk devices"
-  ms.date: 1/7/2025
-  author: wwlpublish
+  ms.date: 04/02/2025
+  author: KenMAG
   ms.author: kelawson
   ms.topic: unit
 azureSandbox: false

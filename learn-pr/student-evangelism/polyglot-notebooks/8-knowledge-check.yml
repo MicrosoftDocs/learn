@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-to-polyglot-notebooks.knowledge-check
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Check your understanding.
   author: japhletnwamu
   ms.author: japhletnwamu
@@ -10,7 +10,7 @@ metadata:
   ms.collection:
     - ce-advocates-ai-copilot
   ms.custom: team=nextgen
-title: Knowledge check
+title: Module assessment
 durationInMinutes: 3
 content: |
   Choose the best response for each question.

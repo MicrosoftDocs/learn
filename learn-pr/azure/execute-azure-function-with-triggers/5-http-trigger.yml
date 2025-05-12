@@ -2,8 +2,6 @@
 uid: learn.execute-azure-function-with-triggers.5-http-trigger
 title: Execute an Azure function with an HTTP request 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Execute an Azure function with an HTTP request
   description: Execute an Azure function with an HTTP request
   ms.date: 09/25/2023
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/5-http-trigger.md)]
-
+

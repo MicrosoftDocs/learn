@@ -2,8 +2,6 @@
 uid: learn.hpc-storage-considerations.4-traffic-considerations
 title: File-system traffic considerations
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: File-system traffic considerations
   description: A discussion of the various file-access traffic patterns and how each can affect your HPC workload. 
   ms.date: 04/04/2024
@@ -37,4 +35,4 @@ quiz:
       explanation: "Correct. A working set is the potential maximum file count and size that your workload requires."
     - content: "Directory"
       isCorrect: false
-      explanation: "Incorrect. A directory is a data structure that records file information in a file system."
+      explanation: "Incorrect. A directory is a data structure that records file information in a file system."

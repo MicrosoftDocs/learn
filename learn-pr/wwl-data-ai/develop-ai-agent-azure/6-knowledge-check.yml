@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.develop-ai-agent-azure.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
-  description: This unit contains a knowledge check which can help learners reinforce their understanding of the material.
+  title: Module assessment
+  description: This unit contains a knowledge check, which can help learners reinforce their understanding of the material.
   author: ivorb
   ms.author: berryivor
-  ms.date: 02/24/2025
+  ms.date: 04/03/2025
   ms.topic: unit
 durationInMinutes: 3
 content: |
@@ -23,26 +23,26 @@ quiz:
       - content: "Make API calls using SDKs"  
         isCorrect: false  
         explanation: "Incorrect. Making API calls using SDKs is the third step after deploying a compatible model."  
-  - content: "Which feature of Azure AI Agent Service ensures data privacy and compliance?"  
+  - content: "Which element of an agent definition is used to specify its behavior and restrictions?"  
     choices:  
-      - content: "Automatic tool calling"  
+      - content: "Model"  
         isCorrect: false  
-        explanation: "Incorrect. Automatic tool calling handles the tool-calling lifecycle but does not specifically ensure data privacy and compliance."  
-      - content: "Enterprise-grade security"  
+        explanation: "Incorrect. The model is used to interpret and respond to prompts."  
+      - content: "Instructions"  
         isCorrect: true  
-        explanation: "Correct. Enterprise-grade security ensures data privacy and compliance with secure data handling and keyless authentication."  
-      - content: "Customizable storage solutions"  
+        explanation: "Correct. You use instructions to tell the agent how to behave."  
+      - content: "Tools"  
         isCorrect: false  
-        explanation: "Incorrect. Customizable storage solutions provide visibility and control over storage but do not specifically ensure data privacy and compliance."  
-  - content: "You are tasked with creating an AI agent that can interpret code and interact with data sources like Bing. Which feature of Azure AI Agent Service should you utilize?"  
+        explanation: "Incorrect. Tools are used to enable the agent to retrieve data and perform tasks."  
+  - content: "Which tool should you use to enable an agent to dynamically generate code to perform tasks or access data in files?"  
     choices:  
-      - content: "Out-of-the-box tools"  
+      - content: "Code Interpreter"  
         isCorrect: true  
-        explanation: "Correct. Out-of-the-box tools include capabilities for code interpretation and interaction with data sources like Bing, making them ideal for this task."  
-      - content: "Securely managed data"  
+        explanation: "Correct. The code interpreter tool enables agents to generate code in a sandbox."  
+      - content: "Azure Functions"  
         isCorrect: false  
-        explanation: "Incorrect. Securely managed data handles conversation states but does not specifically provide tools for code interpretation or data source interaction."  
-      - content: "Enterprise-grade security"  
+        explanation: "Incorrect. Azure Function tools are used to enable the agent to call serveless Azure Functions."  
+      - content: "Azure AI Search"  
         isCorrect: false  
-        explanation: "Incorrect. Enterprise-grade security ensures data privacy and compliance but does not specifically provide tools for code interpretation or data source interaction."  
+        explanation: "Incorrect. The Azure AI Search tool enables the agent to ground prompts using data from an index in Azure AI Search."  
   

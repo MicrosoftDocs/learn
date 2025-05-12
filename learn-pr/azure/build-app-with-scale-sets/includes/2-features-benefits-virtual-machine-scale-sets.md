@@ -1,4 +1,4 @@
-Azure Virtual Machine Scale Sets provide a scalable way to run applications on a set of virtual machines (VMs). The VMs in a scale set can all have the same configuration and run the same applications or have different configurations and run different applications. As demand grows, the number of VMs that run in the scale set increases. As demand shrinks, excess VMs can be removed. Virtual Machine Scale Set is ideal for scenarios that include compute workloads, big-data workloads, and container workloads.
+Azure Virtual Machine Scale Sets provide a scalable way to run applications on a set of virtual machines (VMs). The VMs in a scale set can all have the same configuration and run the same applications or have different configurations and run different applications. As demand grows, the number of VMs that run in the scale set increases. As demand shrinks, excess VMs can be removed. A Virtual Machine Scale Set is ideal for scenarios that include compute workloads, Big data workloads, and container workloads.
 
 In our example scenario, your customers use one of the company's websites to manage and check the status of their shipments. Because the website is accessed globally, the load is sometimes difficult to predict at any particular time of day. Additionally, loading might vary seasonally, with December being busy because of the holidays at the end of the year. You decide to use a Virtual Machine Scale Set to handle the fluctuating load while maintaining a low response time for customer requests.
 
@@ -6,7 +6,7 @@ In this unit, you explore the features of Virtual Machine Scale Sets. By the end
 
 ## What is a Virtual Machine Scale Set?
 
-Virtual Machine Scale Sets in Azure are designed to allow you to deploy and manage many load-balanced VMs. Virtual Machine Scale Sets are intelligent enough to automatically scale up or down the number of VM instances.
+Virtual Machine Scale Sets in Azure are designed to allow you to deploy and manage many load-balanced VMs. Virtual Machine Scale Sets are intelligent enough to automatically scale up or down the number of virtual machine (VM) instances.
 
 The criteria used to activate the upscale or downscale can depend on a customized schedule or actual demand and usage. Scale sets can apply the same configuration to a group of VMs simultaneously. They don't require you to manually configure instances individually if you don't want to.
 
@@ -48,7 +48,7 @@ For this scenario, you can use metrics-based autoscaling. This type of autoscali
 
 Azure Spot Virtual Machines allows you to take advantage of our unused capacity at a significant cost savings. At any time when Azure needs the capacity back, the Azure infrastructure evicts Azure Spot Virtual Machines. Therefore, these virtual machines are great for workloads that can handle interruptions like batch processing jobs, dev/test environments, and large compute workloads.
 
-The amount of available capacity can vary based on size, region, time of day, and other factors. When it deploys Azure Spot Virtual Machines, Azure allocates the VMs if there's capacity available, but there's no SLA for these VMs. An Azure Spot Virtual Machine offers no high-availability guarantees. At any point in time when Azure needs the capacity back, the Azure infrastructure evicts Azure Spot Virtual Machines with 30-seconds notice.
+The amount of available capacity can vary based on size, region, time of day, and other factors. When it deploys Azure Spot Virtual Machines, Azure allocates the VMs if there's capacity available, but there's no service level agreement (SLA) for these VMs. An Azure Spot Virtual Machine offers no high-availability guarantees. At any point in time when Azure needs the capacity back, the Azure infrastructure evicts Azure Spot Virtual Machines with 30-seconds notice.
 
 When Azure needs the computing power again, you receive a notification about the VM Azure removes from your scale set. If you need to clean up or gracefully exit code on your VM, you can use Azure Scheduled Events to react to the notification within the VM. You can also make the scale set try to create another VM to replace the one that's being removed. The creation of the new VM is, however, not guaranteed.
 

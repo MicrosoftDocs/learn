@@ -2,15 +2,13 @@
 uid: learn.introduction-to-azure-files.identity-and-access-control
 title: Identity and Access Control
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Identity and Access Control
   description: In this unit, you'll learn about the various identity and access control options that are available for Azure Files.
-  ms.date: 11/10/2023
+  ms.date: 03/20/2025
   author: khdownie
   ms.author: kendownie
   ms.topic: unit
 durationInMinutes: 9
 content: |
   [!include[](includes/4-identity-and-access-control.md)]
-
+

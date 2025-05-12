@@ -2,14 +2,12 @@
 uid: learn.quantum.choose-the-best-azure-quantum.use-qdk
 title: Exercise - Use the Quantum Development Kit to run a quantum program
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Use the Quantum Development Kit to run a quantum program
   description: Use the Quantum Development Kit to run a quantum program
   ms.date: 10/30/2024
-  author: SoniaLopezBravo
-  ms.author: sonialopez
+  author: azure-quantum-content
+  ms.author: quantumdocwriters
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-use-quantum-development-kit.md)]
+  [!include[](includes/4-use-quantum-development-kit.md)]

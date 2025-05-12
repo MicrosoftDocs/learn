@@ -2,8 +2,6 @@
 uid: learn.wwl.datacenter-integration-for-azure-stack-hub.hybrid-connectivity-options
 title: Hybrid connectivity options
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Hybrid connectivity options
   description: "Hybrid connectivity options"
   ms.date: 03/15/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/10-hybrid-connectivity-options.md)]
+  [!include[](includes/10-hybrid-connectivity-options.md)]

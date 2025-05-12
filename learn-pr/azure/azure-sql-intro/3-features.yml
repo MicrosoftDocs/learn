@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-intro.3-features
+metadata:
+  title: Azure SQL features
+  description: Learn about available features of the Azure SQL platform.
+  ms.date: 04/18/2025
+  author: MashaMSFT
+  ms.author: mathoma
+  ms.topic: unit
+title: Azure SQL features
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-features.md)]
+quiz:
+    title: Knowledge check
+    questions:
+    - content: "What mechanism provides high availability for all three Azure SQL products?"
+      choices:
+      - content: "Local redundancy"
+        isCorrect: false
+        explanation: "While local redundancy facilitates the availability of your service, it doesn't provide high availability."
+      - content: "Failover groups"
+        isCorrect: false
+        explanation: "While failover groups make your data available on secondary replicas, these are typically used for disaster recovery or read-scale, not high availability."
+      - content: "Always On availability groups"
+        isCorrect: false
+        explanation: "Always On availability groups are only available for SQL Server on Azure VMs, and while they make your databases highly available by replicating them to secondary replicas, they don't provide high availability for the VM itself. "
+      - content: "Zone redundancy"
+        isCorrect: true
+        explanation: "Correct. Configuring your database or instance to be zone redundant makes your data highly available in the event of a zone failure. Deploy your virtual machine to an availability zone to make it zone-redundant."
+    - content: "What monitoring solution is available for all three Azure SQL products?"
+      choices:
+      - content: "Database watcher"
+        isCorrect: false
+        explanation: "Database watcher is only available for Azure SQL Database and Azure SQL Managed Instance."
+      - content: "Intelligent Insights"
+        isCorrect: false
+        explanation: "Intelligent Insight is only available for Azure SQL Database and Azure SQL Managed Instance."
+      - content: "Azure Monitor"
+        isCorrect: true
+        explanation: "Correct. You can use Azure Monitor to configure alerts based on predefined metrics to monitor the performance of your Azure SQL resources."
+      - content: "Fabric mirrored databases"
+        isCorrect: false
+        explanation: "Fabric mirrored databases are a data replication technology, not a monitoring technology."
+

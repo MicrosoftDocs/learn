@@ -8,6 +8,9 @@ metadata:
   ms.author: carols
   ms.topic: module
   ms.service: azure
+  ms.collection: 
+   - migration
+   - aws-to-azure
 title: Introduction to migrating from Amazon Web Services to Microsoft Azure
 summary: "When planning a transition from AWS to Azure it's helpful to understand what the equivalent services are on each platform, and where services differ. You need to know the differences in terminology, how Azure handles the tasks you're familiar with in AWS, and where to go to get more detailed information."
 abstract: |

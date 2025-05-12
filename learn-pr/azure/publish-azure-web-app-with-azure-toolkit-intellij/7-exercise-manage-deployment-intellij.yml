@@ -2,8 +2,6 @@
 uid: learn.azure.publish-azure-web-app-with-azure-toolkit-intellij.7-exercise-manage-deployment-intellij
 title: Exercise - Manage app deployments from IntelliJ IDE
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Manage app deployments from IntelliJ IDE
   description: In this unit, you'll manage your deployed web apps using the Azure Toolkit for IntelliJ.
   ms.date: 03/18/2024
@@ -15,4 +13,4 @@ durationInMinutes: 10
 azureSandbox: true
 content: |
   [!include[](includes/7-exercise-manage-deployment-intellij.md)]
-
+

@@ -1,21 +1,21 @@
-To add SignalR to this prototype, you need to create:
+To add SignalR to this prototype, you need to:
 
-* An Azure SignalR resource
-* A few new functions to support SignalR
-* Update the client to support SignalR
+- Create an Azure SignalR resource.
+- Support SignalR by creating a few new functions.
+- Update the client so that it supports SignalR.
 
 ## Create a SignalR resource
 
 You need to create an Azure SignalR resource.
 
 1. Return to the terminal to create the SignalR resource. 
-1. Navigate to the `setup-resources` subdirectory to create the resource.
+1. Navigate to the `setup-resources` subdirectory and create the resource.
 
     ```bash
     cd setup-resources && bash create-signalr-resources.sh & cd ..
     ```
 
-1. Copy the connection string for the SignalR resource. You'll need this to update the server code.
+1. Copy and save the connection string for the SignalR resource. You need this value to update the server code.
 
     | Resource Type | Environment variable |
     |--|--|
@@ -48,7 +48,6 @@ The web client uses the SignalR client SDK to establish a connection to the serv
 
     :::code language="typescript" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/solution/server/src/functions/signalr-open-connection.ts" :::
 
-
     The SignalR connection information is returned from the function.
 
 ## Create the `signalr-send-message` function
@@ -68,15 +67,16 @@ The web client uses the SignalR client SDK to establish a connection to the serv
     | Collection name | `stocks` |
     | Checks for existence and automatically creates the leases collection|true|
 
-    Refresh the Explorer window in Visual Studio Code to see the updates. A file named *signalr-open-connection* is now available at `./start/server/src/functions`.
-1. Open *signalr-send-message.ts* and replace the everything with the following code. 
+    Refresh the Explorer window in Visual Studio Code and view the updates. A file named *signalr-open-connection* is now available at `./start/server/src/functions`.
+
+1. Open *signalr-send-message.ts* and replace the everything with the following code.
 
     :::code language="typescript" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/solution/server/src/functions/signalr-send-message.ts" :::
 
-* **Define incoming data**: The `comingFromCosmosDB` object defines the Cosmos DB trigger to watch for changes.
-* **Define outgoing transport**: The `goingOutToSignalR` object defines the same SignalR connection. The hubName is the same hub `default`.
-* **Connect data to transport**: The `dataToMessage` gets the _changed_ items in the `stocks` table and sends each changed item individually through SignalR using the `extraOutputs` using the same hub `default`. 
-* **Connect to app**: The `app.CosmosDB` ties the bindings to the function name `send-signalr-messages`. 
+- **Define incoming data**: The `comingFromCosmosDB` object defines the Cosmos DB trigger to watch for changes.
+- **Define outgoing transport**: The `goingOutToSignalR` object defines the same SignalR connection. The hubName is the same hub `default`.
+- **Connect data to transport**: The `dataToMessage` gets the _changed_ items in the `stocks` table and sends each changed item individually through SignalR using the `extraOutputs` using the same hub `default`. 
+- **Connect to app**: The `app.CosmosDB` ties the bindings to the function name `send-signalr-messages`. 
 
 ## Commit changes and push to GitHub
 
@@ -112,7 +112,7 @@ Create a function app and related resources in Azure to which you can publish th
 
 ## Configure the GitHub deployment
 
-Connect your new function app to the GitHub repository to enable continuous deployment. In a production environment, you would instead deploy code changes to a staging slot before swapping them into production. 
+To enable continuous deployment, connect your new function app to the GitHub repository. In a production environment, you would instead deploy code changes to a staging slot before swapping them into production.
 
 1. In the Azure portal page for the new function app, select **Deployment Center** from the left-hand menu.
 1. Select **Source** of **GitHub**.
@@ -127,7 +127,7 @@ Connect your new function app to the GitHub repository to enable continuous depl
     | Subscription | Select the same subscription as seen at the top of the page. |
     | Identity | Select **Create new**.|
 
-1. Select **Save** at the top of the section to save the settings. This creates a new workflow file in your forked repository.
+1. Select **Save** at the top of the section to save the settings. A new workflow file is created in your forked repository.
 1. This deployment configuration creates a GitHub Actions workflow file in the repository. You need to update the workflow file to use the correct package path for the function app.
 
 ## Edit GitHub deployment workflow
@@ -138,10 +138,10 @@ Connect your new function app to the GitHub repository to enable continuous depl
     git pull origin main
     ```
 
-    This should place a new folder at **.github** with a path to your workflow file: `.github/workflows/main_RESOURCE_NAME.yml` where `RESOURCE_NAME` is the function app name. 
+    This command should place a new folder at `.github` with a path to your workflow file: `.github/workflows/main_RESOURCE_NAME.yml` where `RESOURCE_NAME` is the function app name.
 
 1. Open the workflow file and change the `name` value at the top of the file to `Server`.
-   
+
 1. Because the source repository has the function app in a subdirectory, the action file needs to change to reflect that. In the **env** section, add a new variable named `PACKAGE_PATH` to use the package path. 
 
     ```YAML
@@ -152,7 +152,7 @@ Connect your new function app to the GitHub repository to enable continuous depl
 1. Find the **Resolve Project Dependencies Using Npm** step and replace the contents with the following YAML to also use the package subdirectory path. The critical change is the path in the `pushd` command to include the `env.PACKAGE_PATH` variable.
 
     :::code language="yaml" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/example-server-workflow.yml" range="29-36":::
-    
+
 1. Find the **Zip artifact for deployment** step and replace the contents with the following YAML to also use the package subdirectory path. 
 
     :::code language="yaml" source="~/../microsoftdocs-mslearn-advocates-azure-functions-and-signalr/example-server-workflow.yml" range="38-43":::
@@ -167,7 +167,7 @@ Connect your new function app to the GitHub repository to enable continuous depl
     git push origin main
     ```
 
-    This change will trigger the workflow to run. You can watch the workflow from the **Actions** section of the fork on GitHub.
+    This change triggers the workflow to run. You can watch the workflow from the **Actions** section of the fork on GitHub.
 
 ## Configure the environment variables for the API functions
 
@@ -185,6 +185,6 @@ Connect your new function app to the GitHub repository to enable continuous depl
 
 1. In the Azure portal, select **Overview** and select **Default domain** to open the app in a browser to test the API functions.
 1. Append `/api/getStocks` to the URL in the browser and press **Enter**. You should see a JSON array with stock data.
-1. Copy the URL, you'll need that when you update the client `.env` file for the `BACKEND_URL` value when you work in Unit 7. 
+1. Copy the URL, you need it later when you update the client `.env` file for the `BACKEND_URL` value when you work in Unit 7.
 
-You've updated the server code to return stocks with SignalR and you've deployed to a function app. Next, you'll update the client to use SignalR to receive updates.
+You updated the server code to return stocks with SignalR and you deployed to a function app. Next, you update the client to use SignalR to receive updates.

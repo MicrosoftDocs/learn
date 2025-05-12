@@ -2,14 +2,12 @@
 uid: learn.azure.intro-to-azure-monitor.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: Discover what this module covers.
   ms.date: 11/13/2024
-  author: guywi-ms
-  ms.author: guywild
+  author: EliotSeattle
+  ms.author: eliotgra
   ms.topic: unit
 durationInMinutes: 2
 content: |

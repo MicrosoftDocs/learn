@@ -2,8 +2,6 @@
 uid: learn.azure.azure-netapp-files-essentials.service-levels
 title: Service levels for Azure NetApp Files
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-module
   title: Service levels for Azure NetApp Files
   description: Understand how service levels determine volume throughput in Azure NetApp Files.     
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-service-levels.md)]
+  [!include[](includes/2-service-levels.md)]

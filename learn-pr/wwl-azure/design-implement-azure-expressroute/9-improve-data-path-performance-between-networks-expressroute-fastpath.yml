@@ -2,39 +2,30 @@
 uid: learn.wwl.design-implement-azure-expressroute.improve-data-path-performance-between-networks-expressroute-fastpath
 title: Improve data path performance between networks with ExpressRoute FastPath
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Improve data path performance between networks with ExpressRoute FastPath
   description: "Improve data path performance between networks with ExpressRoute FastPath"
-  ms.date: 12/06/2024
+  ms.date: 05/02/2025
   author: wwlpublish
-  ms.author: jileary
+  ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 10
+durationInMinutes: 3
 content: |
   [!include[](includes/9-improve-data-path-performance-between-networks-expressroute-fastpath.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "How does ExpressRoute FastPath send network traffic?"
+  - content: "What is the primary function of ExpressRoute FastPath?"
     choices:
-    - content: "Directly to virtual machines in the virtual network."
+    - content: "FastPath accelerates the speed of internet connections."
+      isCorrect: false
+      explanation: "Incorrect. While FastPath can improve performance, it doesn't directly accelerate internet connections."
+    - content: "FastPath optimizes the path for network traffic from Azure to on-premises networks."
       isCorrect: true
-      explanation: "Correct. FastPath sends network traffic directly to virtual machines in the virtual network, bypassing the gateway."
-    - content: "Through the gateway to Virtual machines."
+      explanation: "Correct. FastPath primarily optimizes the path for network traffic from Azure to on-premises networks."
+    - content: "FastPath provides a secure VPN tunnel for data transmission."
       isCorrect: false
-      explanation: "Incorrect. ExpressRoute FastPath does not send traffic through the gateway to virtual machines."
-    - content: "Through the public internet."
-      isCorrect: false
-      explanation: "Incorrect. ExpressRoute FastPath does not send traffic through the public internet."
-  - content: "A network has multiple virtual networks peered with a virtual network that is connected to ExpressRoute. How should the ExpressRoute FastPath deployment be modified?"
-    choices:
-    - content: "Connect the virtual network gateways to ExpressRoute FastPath."
-      isCorrect: false
-      explanation: "Incorrect. The virtual network gateways still support VNet-to-Vnet peering and should not be connected directly to FastPath."
-    - content: "Connect all the virtual networks to the ExpressRoute FastPath circuit directly."
-      isCorrect: true
-      explanation: "Correct. To avoid traffic being routed through the VNet gateways, connect all the VNets to ExpressRoute FastPath circuit directly."
-    - content: "Modify the virtual network peering configuration."
-      isCorrect: false
-      explanation: "Incorrect. The virtual network gateways support VNet-to-Vnet peering and do not have to be modified."
+      explanation: "Incorrect. FastPath doesn't create a VPN tunnel."

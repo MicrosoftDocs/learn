@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-government-its-structure.describe-federal-government-cio-council
 title: Describe the Federal Government Chief Information Officer (CIO) Council
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe the Federal Government Chief Information Officer (CIO) Council
   description: "Describe the Federal Government Chief Information Officer (CIO) Council"
   ms.date: 04/29/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/11-describe-federal-government-cio-council.md)]
+  [!include[](includes/11-describe-federal-government-cio-council.md)]

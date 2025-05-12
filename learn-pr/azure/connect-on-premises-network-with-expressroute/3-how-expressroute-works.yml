@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.connect-on-premises-network-with-expressroute.3-how-expressroute-works
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: How Azure ExpressRoute works
   description: How Azure ExpressRoute works
   ms.date: 10/18/2023
@@ -58,4 +56,4 @@ quiz:
     - content: "ExpressRoute uses a proprietary transmission protocol that constantly varies, so it's difficult to intercept traffic."
       isCorrect: false
       explanation: "No. ExpressRoute uses a dedicated, private network to connect to the Microsoft cloud. Traffic doesn't traverse the internet, so it's difficult to intercept."
-
+

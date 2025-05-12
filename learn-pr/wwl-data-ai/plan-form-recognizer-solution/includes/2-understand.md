@@ -33,13 +33,12 @@ Use a model to inform Azure AI Document Intelligence about the type of data you 
 
 Azure AI Document Intelligence includes several prebuilt models for common types of forms and documents. If your forms are of one of these types, you can extract information from them without training your own custom models. It's very quick to create and deploy an Azure AI Document Intelligence solution when you use prebuilt models.
 
-In Azure AI Document Intelligence, three of the prebuilt models are for general document analysis:
+In Azure AI Document Intelligence, there are prebuilt models are for general document analysis:
 
 - Read
-- General document
 - Layout
 
-The other prebuilt models expect a common type of form or document:
+The other prebuilt models expect a common type of form or document, such as:
 
 - Invoice
 - Receipt
@@ -49,7 +48,7 @@ The other prebuilt models expect a common type of form or document:
 - Health insurance card
 
 > [!IMPORTANT]
-> This list shows the documented prebuilt models avaiable at the time of writing. More prebuilt models are in development will be deployed soon. Check the Azure AI Document Intelligence documentation for the latest models.
+> This list shows a subset of the prebuilt models available. Check the Azure AI Document Intelligence documentation for [all available models](/azure/ai-services/document-intelligence/model-overview?azure-portal=true#model-overview).
 
 If you have an unusual or unique type of form, you can use the above general document analysis prebuilt models to extract information from them. However, if you want to extract more specific information than the prebuilt models support, you can create a **custom model** and train it by using examples of completed forms. 
 

@@ -2,13 +2,11 @@
 uid: learn.azure.intro-to-arc-for-servers.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
   ms.date: 11/13/2023
-  author: johnmarco
-  ms.author: johnmarc
+  author: JnHs
+  ms.author: jenhayes
   ms.topic: unit
   ms.custom: e2e-hybrid
 durationInMinutes: 3

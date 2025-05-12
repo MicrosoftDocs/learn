@@ -2,8 +2,6 @@
 uid: learn.introduction-to-azure-compute-gallery.how-azure-compute-gallery-works
 title: How does Azure Compute Gallery Work?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What does Azure Compute Gallery work?
   description: In this unit, you'll learn how Azure Compute Gallery works.
   ms.date: 08/16/2023
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/3-how-azure-compute-gallery-works.md)]
-
+

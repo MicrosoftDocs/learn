@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.troubleshoot-windows-server-virtual-machines-azure.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 08/02/2024
   author: wwlpublish
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. The VM must be operational for RDP connectivity."
     - content: "Connect to the VM with the Azure Serial Console."
       isCorrect: false
-      explanation: "Incorrect. This is a potentially useful step, but it's important to know why a VM failed to start first."
+      explanation: "Incorrect. This is a potentially useful step, but it's important to know why a VM failed to start first."

@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.get-started-with-devops.2-what-is-devops
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is DevOps?
   description: What is DevOps?
   ms.date: 10/02/2024
@@ -14,4 +12,4 @@ title: What is DevOps?
 durationInMinutes: 5
 content: |
  [!include[](includes/2-what-is-devops.md)]
-
+

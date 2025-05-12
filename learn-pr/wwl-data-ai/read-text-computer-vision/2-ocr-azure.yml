@@ -2,13 +2,11 @@
 uid: learn.wwl.read-text-computer-vision.get-started
 title: Get started with Azure AI Vision
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Get started with Azure AI Vision
   description: Get started with Azure AI Vision
   author: wwlpublish
   ms.author: sheryang
-  ms.date: 03/05/2024
+  ms.date: 04/23/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

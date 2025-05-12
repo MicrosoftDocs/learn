@@ -1,4 +1,4 @@
-After you have a key vault, you can start using it to store keys and secrets. Your applications no longer need to persist this confidential data, but can request them from the vault as needed. A key vault allows you to update keys and secrets without affecting the behavior of your application, which opens up a breadth of possibilities for your key, secret, and certificate management.
+After you have a key vault, you can start using it to store keys and secrets. Your applications no longer need to persist this confidential data but can request them from the vault as needed. A key vault allows you to update keys and secrets without affecting the behavior of your application, which opens up a breadth of possibilities for your key, secret, and certificate management.
 
 In this module, you've learned about several security benefits of AKV:
 
@@ -15,5 +15,5 @@ Read Azure Key Vault documentation about subjects we covered in this module.
 
 - [What is Azure Key Vault?](/azure/key-vault/key-vault-overview)
 - [Azure Key Vault pricing](https://azure.microsoft.com/pricing/details/key-vault/)
-- [Certificate operations](/rest/api/keyvault/certificate-operations)
+- [About Azure Key Vault certificates](/azure/key-vault/certificates/about-certificates)
 - [Implementing bring your own key (BYOK) for Azure Key Vault](/azure/key-vault/key-vault-hsm-protected-keys)

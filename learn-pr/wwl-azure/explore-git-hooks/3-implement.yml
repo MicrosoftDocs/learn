@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-git-hooks.implement
 title: Implement Git hooks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement Git hooks
   description: "Implement Git hooks"
   ms.date: 05/08/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-implement.md)]
+  [!include[](includes/3-implement.md)]

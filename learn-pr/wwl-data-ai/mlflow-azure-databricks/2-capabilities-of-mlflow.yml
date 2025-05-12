@@ -2,13 +2,11 @@
 uid: learn.wwl.mlflow-azure-databricks.capabilities-of-mlflow
 title: Capabilities of MLflow
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Capabilities of MLflow
   description: Capabilities of MLflow
-  author: wwlpublish
-  ms.author: madiepev
-  ms.date: 08/26/2024
+  author: JulianePadrao
+  ms.author: jupadrao
+  ms.date: 4/24/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

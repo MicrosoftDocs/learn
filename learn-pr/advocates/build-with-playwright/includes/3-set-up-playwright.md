@@ -1,20 +1,20 @@
-Let’s begin by installing Playwright, then we explore the tool and validate that we can run the example tests that come when installing Playwright.
+Let’s begin by installing Playwright, then let's explore the tool and validate that we can run the example tests that come when installing Playwright.
 
-## Installing Playwright
+## Install Playwright
 
-Start by opening the terminal and creating a new directory for your project. Playwright can also be installed in an existing project but for this workshop we create a new one. Let's call it learn-playwright.
+Start by opening the terminal and creating a new directory for your project. You can also install Playwright in an existing project, but for this exercise, let's create a new one and call it *learn-playwright*.
 
 ```bash
 mkdir learn-playwright
 ```
 
-Let's navigate into the new directory:
+Navigate into the new directory:
 
 ```bash
 cd learn-playwright
 ```
 
-In this new empty directory, let's install Playwright and explore what got installed.
+In this new empty directory, install Playwright and explore what got installed.
 
 ```bash
 npm init playwright@latest
@@ -22,14 +22,14 @@ npm init playwright@latest
 
 When you run this command, you're asked a few questions to configure the Playwright project:
 
-- Select the language you want to use for your tests. We recommend TypeScript.
-- Select the name of the test directory. We recommend tests.
-- Add a GitHub Action for automating tests. We recommend Yes.
-- Install Playwright browsers. We recommend selecting the default of true.
+- Select the language you want to use for your tests. We recommend **TypeScript**.
+- Select the name of the test directory. We recommend **tests**.
+- Add a GitHub Action for automating tests. We recommend **Yes**.
+- Install Playwright browsers. We recommend selecting the default of **True**.
 
 You should now see the following output in the terminal:
 
-```js
+```output
 Initializing NPM project (npm init -y)…
 
 Wrote to /learn-playwright/package.json:
@@ -100,29 +100,29 @@ Visit https://playwright.dev/docs/intro for more information. ✨
 Happy hacking! 🎭
 ```
 
-The output tells us that a new npm project is created with a package.json file, and that Playwright Test is installed. It also tells us the files that have been created:
+The output tells us that a new npm project was created with a package.json file, and that Playwright Test was installed. It also tells us the files that were created:
 
-- `playwright.config.ts` - the Playwright Test Configuration file.
-- `.github/workflows/playwright.yml` - GitHub Action for automating tests
-- `tests/` - top-level folder that Playwright searches recursively for tests with an example test script.
-- `tests-examples/` - staging folder with a demo todo app test script to try out.
-- `package.json` - the npm project file.
+- `playwright.config.ts`: The Playwright Test Configuration file.
+- `.github/workflows/playwright.yml`: GitHub Action for automating tests
+- `tests/`: Top-level folder that Playwright searches recursively for tests with an example test script.
+- `tests-examples/`: Staging folder with a demo todo app test script to try out.
+- `package.json`: The npm project file.
 
-Next it tells us that Playwright is downloading browsers. Playwright downloads the latest version of the browsers that we can use to run our tests on. It uses browser binaries that are installed locally, so you don't need to have the browsers installed on your machine.
+Next, it tells us that Playwright has downloaded browsers. Playwright downloads the latest version of the browsers on which we can run our tests. It uses browser binaries that are installed locally, so you don't need to have the browsers installed on your machine.
 
 When finished, we get a success message and a list of commands we can run to interact with the Playwright Test project.
 
-## Validate Playwright Test Runner
+## Validate Playwright test runner
 
-To run tests in Playwright, we use the npx playwright test command. The command runs all the tests in the tests/ folder, which is the folder name we defined in step 2 when installing.
+To run tests in Playwright, use the npx playwright test command. The command runs all the tests in the `tests/` folder, which is the folder name we defined in step 2 when installing.
 
 ```bash
 npx playwright test
 ```
 
-When we run the command, you see the following output:
+When you run the command, you see the following output:
 
-```bash
+```output
 Running 6 tests using 5 workers
       6 passed (4.0s)
 
@@ -131,7 +131,7 @@ To open last HTML report run:
   npx playwright show-report
 ```
 
-The output tells us that 6 tests were run using five workers. By default, Playwright runs tests in parallel. It uses workers for it. The number of CPU cores available determines the number of workers. Playwright uses half of the available CPU cores.
+The output tells us that six tests were run using five workers. By default, Playwright runs tests in parallel by using workers. The number of CPU cores available determines the number of workers. Playwright uses half of the available CPU cores.
 
 Let's open the HTML report to see more details about the test run.
 
@@ -139,9 +139,9 @@ Let's open the HTML report to see more details about the test run.
 npx playwright show-report
 ```
 
-We should then get the following message telling us the report is being served locally and a browser window opens with the report.
+The following message tells us the report is being served locally, and a browser window opens with the report.
 
-```bash
+```output
 Serving HTML report at http://localhost:9323. Press Ctrl+C to quit.
 ```
 
@@ -149,20 +149,21 @@ Serving HTML report at http://localhost:9323. Press Ctrl+C to quit.
 
 The report gives us the following insights:
 
-- We have two test cases ("has title", "get started link")
+- We have two test cases (*has title* and *get started link*)
 - We ran each across three browser engines (chromium, Firefox, webkit)
-- The test cases were defined in the ```example.spec.ts``` file
-- The test run took *4.0s* with all six tests passing (none skipped)
+- The test cases were defined in the `example.spec.ts` file
+- The test run took *5.2s* with all six tests passing (none skipped)
 
-Clicking on a particular row gives you the detailed run of that test case. For example, if we select on the first one, we get the following details:
-- The test is called "has title"
-- The file name is ```example.spec.ts``` and the line number is ``3``
+Selecting a particular row gives you the detailed run of that test case. For example, if we select the first row, we get the following details:
+
+- The test is called *has title*.
+- The file name is `example.spec.ts` and the line number is `3`.
 - The test case was run on Chromium
-- The "Before Hooks" ran first. It launches the browser and sets the browser and page *context* (fixtures) for test isolation.
-- The Test "Action" on line 4 ran next. It resulted in *navigation* to a specific page.
-- Then the Test "Assertion" on line 7 executes. It *validates* that the page has a specific title.
-- The "After Hooks" run last. They take any context *cleanup* actions needed.
-- The test case took "424 ms" to complete.
+- The *Before Hooks* test ran first. It launched the browser and set the browser and page *context* (fixtures) for test isolation.
+- The *Action* test on line `4` ran next. It resulted in *navigation* to a specific page.
+- Then, the *Assertion* test on line `7` executed. It *validated* that the page has a specific title.
+- The *After Hooks* test ran last. It took any context *cleanup* actions needed.
+- The test case took *661ms* to complete.
 
 :::image type="content" source="../media/run-report-detail.png" alt-text="A screenshot showing an example of a detailed Playwright spec report.":::
 
@@ -174,4 +175,4 @@ npx playwright test --project chromium
 
 Go ahead and run the command. Notice that two tests were run using two workers. When you open the report, you see that the tests were only run on the Chromium browser.
 
-🚀 | Congratulations we successfully installed Playwright and run the example test. In the next section, we'll look at the test in more detail and the Playwright configuration file.
+Congratulations! You successfully installed Playwright and ran the example test. In the next section, we'll look at the test in more detail, as well as the Playwright configuration file.

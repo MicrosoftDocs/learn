@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.migrate-modernize-implement-disaster-recovery-sap-workloads-azure.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 01/09/2024
   author: wwlpublish
@@ -48,4 +46,4 @@ quiz:
       explanation: "Correct. Simple availability between two regions doesn't allow for RPO = 0, because of asynchronous replication. Multi-tier system replication allows RPO = 0 with synchronous replication and auto-failover within Region 1, while still maintaining a Region 2 secondary site at a sufficient distance to be unaffected by regional disasters."
     - content: "Either configuration is suitable"
       isCorrect: false
-      explanation: "Incorrect. Simple availability between two regions doesn't allow for RPO = 0, because of asynchronous replication. Multi-tier system replication allows RPO = 0 with synchronous replication and auto-failover within Region 1, while still maintaining a Region 2 secondary site at a sufficient distance to be unaffected by regional disasters."
+      explanation: "Incorrect. Simple availability between two regions doesn't allow for RPO = 0, because of asynchronous replication. Multi-tier system replication allows RPO = 0 with synchronous replication and auto-failover within Region 1, while still maintaining a Region 2 secondary site at a sufficient distance to be unaffected by regional disasters."

@@ -1,10 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-provision-deploy-relational-database-offerings-azure.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  ai_generated_module_assessment: true
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 10/09/2024
   author: wwlpublish

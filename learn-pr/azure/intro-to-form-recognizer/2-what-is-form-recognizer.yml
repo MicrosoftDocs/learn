@@ -2,13 +2,11 @@
 uid: learn.azure.intro-to-form-recognizer.what-is-form-recognizer
 title: What is Azure AI Document Intelligence?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is Azure AI Document Intelligence?
   description: What is Azure AI Document Intelligence?
   author: laujan
   ms.author: lajanuar
-  ms.date: 07/30/2024
+  ms.date: 04/29/2025
   ms.topic: unit
   ms.collection:
     - ce-skilling-ai-copilot

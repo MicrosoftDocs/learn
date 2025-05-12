@@ -2,8 +2,6 @@
 uid: learn.azure-spring-cloud-workshop.4-build-spring-boot-microservice
 title: Build a Spring Boot microservice
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Build a Spring Boot microservice
   description: Learn how to build a Spring Boot microservice.
   author: judubois
@@ -46,4 +44,4 @@ quiz:
     - content: "The endpoint isn't available at all on the internet, so you must use a private network to access it."
       isCorrect: false
       explanation: "By default, it's available on the internet, using a secure token."
-
+
