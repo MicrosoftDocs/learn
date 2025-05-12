@@ -1,6 +1,7 @@
+
 Azure Storage provides a layered security model that lets you secure and control the level of access to your storage accounts. The model consists of several storage security options, including firewall policies, customer-managed keys, and endpoints.
 
-:::image type="content" source="../media/storage-security.png" alt-text="Diagram that shows storage security options, including firewall policies, customer-managed keys, and endpoints." border="false":::
+[! VIDEO https://learn-video.azurefd.net/vod/player?id=70edcdd1-7dab-478a-83ea-d07f4f883d67]
 
 ### Things to know about storage security
 
@@ -8,7 +9,7 @@ Let's take a look at some best practices for storage security. Think about optio
 
 - [Azure security baseline for Azure Storage](/security/benchmark/azure/baselines/storage-security-baseline) grants limited access to Azure Storage resources. Azure security baseline provides a comprehensive list of ways to secure your Azure storage. 
 
-- [Shared access signatures](/azure/storage/common/storage-sas-overview) provide secure delegated access to resources in your storage account. With a SAS, you have granular control over how a client can access your data.
+- [Shared access signatures (SAS)](/azure/storage/common/storage-sas-overview) provide secure delegated access to resources in your storage account. With a SAS, you have granular control over how a client can access your data.
 
 - [Firewall policies and rules](/azure/storage/common/storage-network-security) limit access to your storage account. Requests can be limited to specific IP addresses or ranges, or to a list of subnets in an Azure virtual network. The Azure Storage firewall provides access control for the public endpoint of your storage account.
 
@@ -31,10 +32,6 @@ You review some of the security options for Azure Storage. Take a few minutes to
 - **Consider shared access signatures**. Specify what Tailwind Traders resources clients can access. Define the access permissions for resources. Configure how long the SAS remains valid.
 
 - **Consider firewall policies and rules**. Limit requests to IP addresses or subnets in an Azure virtual network. Use the Azure Storage firewall to block all access through the public endpoint when using private endpoints. Select trusted Azure platform services to access the storage account securely.
-
-- **Consider service endpoints**. Secure Azure storage accounts to your virtual networks by using service endpoints. You can provide optimal routing by always keeping traffic destined to Azure Storage on the Azure backbone network. Enable private IP addresses in the virtual network to reach the service endpoint without requiring a public IP address. Allow on-premises networks to access resources by using NAT IP addresses.
-
-   :::image type="content" source="../media/storage-endpoints.png" alt-text="Diagram of a virtual machine that uses an endpoint to access an Azure storage account." border="false":::
 
 - **Consider private endpoints**. Add private endpoints to create a special network interface for an Azure service in your virtual network. When you implement a private endpoint for your storage account, it provides secure connectivity between clients on your virtual network and your storage.
 

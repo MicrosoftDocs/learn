@@ -2,14 +2,30 @@
 uid: learn.wwl.design-data-storage-solution-for-non-relational-data.design-for-azure-storage-accounts
 title: Design for Azure storage accounts
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for Azure storage accounts
   description: "Design for Azure storage accounts"
-  ms.date: 12/10/2024
+  ms.date: 05/12/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 5
+durationInMinutes: 6
 content: |
   [!include[](includes/3-design-for-azure-storage-accounts.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "Which Azure storage account type is recommended for applications with high transaction rates and requires consistently low storage latency?"
+    choices:
+    - content: "Standard general-purpose v2"
+      isCorrect: false
+      explanation: "Incorrect. The Standard general-purpose v2 storage account is suitable for most scenarios but does not specifically cater to applications with high transaction rates and low storage latency."
+    - content: "Premium block blobs"
+      isCorrect: true
+      explanation: "Correct. Premium block blobs storage account is recommended for applications with high transaction rates and requires consistently low storage latency."
+    - content: "Premium file shares"
+      isCorrect: false
+      explanation: "Incorrect. Premium file shares storage account doesn't specifically address the need for high transaction rates and low storage latency."

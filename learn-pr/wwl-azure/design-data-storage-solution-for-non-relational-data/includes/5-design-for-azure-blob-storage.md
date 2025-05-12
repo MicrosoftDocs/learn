@@ -1,4 +1,8 @@
-There are two main points to consider in an implementation plan for [Azure Blob Storage](/azure/storage/blobs/storage-blobs-overview). First, you need to identify which Azure _blob access tier_ satisfies your organization's storage availability, latency, and cost requirements. The second consideration is to decide if you need access to immutable storage.
+[Azure Blob Storage](/azure/storage/blobs/storage-blobs-overview) is a cloud-based object storage service offered by Microsoft Azure. Blob storage is designed to store large amounts of unstructured data, such as text, images, documents, videos, and audio files. 
+
+[! VIDEO https://learn-video.azurefd.net/vod/player?id=335682c0-7869-4eb7-ac14-bc3b8c4d84a4]
+
+There are two main points to consider in an implementation plan for Azure Blob Storage. First, you need to identify which Azure _blob access tier_ satisfies your organization's storage availability, latency, and cost requirements. The second consideration is to decide if you need access to immutable storage.
 
 There are four access options: Hot, Cool, Cold, and Archive access tiers. All four options support availability and latency, but they have differing costs depending on the level of support. All options also support immutable storage, but the storage is implemented differently for the Hot, Cool, and Archive access tiers.
 
@@ -15,21 +19,13 @@ The four access options for Azure Blob Storage offer a range of features and sup
 
 Think about your data sets, and which access options can satisfy the requirements for Tailwind Traders.
 
-#### Hot tier
+- **Hot tier**. The Hot tier is optimized for frequent reads and writes of objects in the Azure storage account. A good usage case is data that is actively being processed. By default, new storage accounts are created in the Hot tier. This tier has the lowest access costs, but higher storage costs than the Cool and Archive tiers. 
 
-The Hot tier is optimized for frequent reads and writes of objects in the Azure storage account. A good usage case is data that is actively being processed. By default, new storage accounts are created in the Hot tier. This tier has the lowest access costs, but higher storage costs than the Cool and Archive tiers. 
+- **Cool tier**. The Cool tier is optimized for storing large amounts of infrequently used data. This tier is intended for data that remains in the Cool tier for at least 30 days. A usage case for the Cool tier is short-term backup and disaster recovery datasets and older media content. This content shouldn't be viewed frequently, but it needs to be immediately available. Storing data in the Cool tier is more cost-effective. Accessing data in the Cool tier can be more expensive than accessing data in the Hot tier.
 
-#### Cool tier
+- **Cold tier**. The Cold tier is also optimized for storing large amounts of infrequently used data. This tier is intended for data that can remain in the tier for at least 90 days. 
 
-The Cool tier is optimized for storing large amounts of infrequently used data. This tier is intended for data that remains in the Cool tier for at least 30 days. A usage case for the Cool tier is short-term backup and disaster recovery datasets and older media content. This content shouldn't be viewed frequently, but it needs to be immediately available. Storing data in the Cool tier is more cost-effective. Accessing data in the Cool tier can be more expensive than accessing data in the Hot tier.
-
-#### Cold tier
-
-The Cold tier is also optimized for storing large amounts of infrequently used data. This tier is intended for data that can remain in the tier for at least 90 days. 
-
-#### Archive tier
-
-The Archive tier is an offline tier that's optimized for data that can tolerate several hours of retrieval latency. Data must remain in the Archive tier for at least 180 days or be subject to an early deletion charge. Data for the Archive tier includes secondary backups, original raw data, and legally required compliance information. This tier is the most cost-effective option for storing data. Accessing data is more expensive in the Archive tier than accessing data in the other tiers. 
+- **Archive tier**. The Archive tier is an offline tier that's optimized for data that can tolerate several hours of retrieval latency. Data must remain in the Archive tier for at least 180 days or be subject to an early deletion charge. Data for the Archive tier includes secondary backups, original raw data, and legally required compliance information. This tier is the most cost-effective option for storing data. Accessing data is more expensive in the Archive tier than accessing data in the other tiers. 
 
 ### Things to know about Azure Blob immutable storage
 
@@ -42,10 +38,6 @@ Azure Blob Storage supports two forms of immutability policies for implementing 
 - **[Time-based retention policies](/azure/storage/blobs/immutable-time-based-retention-policy-overview)** let users set policies to store data for a specified interval. When a time-based retention policy is in place, objects can be created and read, but not modified or deleted. After the retention period expires, objects can be deleted, but not overwritten. The Hot, Cool, and Archive access tiers support immutable storage by using time-retention policies.
 
 - **[Legal hold policies](/azure/storage/blobs/immutable-legal-hold-overview)** store immutable data until the legal hold is explicitly cleared. When a legal hold is set, objects can be created and read, but not modified or deleted. Premium Blob Storage uses legal holds to support immutable storage.
-
-The following diagram shows how time-based retention policies and legal holds prevent write and delete operations.
-
-:::image type="content" source="../media/legal-hold.png" alt-text="Diagram shows time-based retention policies versus legal holds." border="false":::
 
 ### Things to consider when implementing Azure Blob Storage
 

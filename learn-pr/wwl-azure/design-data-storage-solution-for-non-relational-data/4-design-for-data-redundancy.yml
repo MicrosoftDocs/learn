@@ -2,14 +2,30 @@
 uid: learn.wwl.design-data-storage-solution-for-non-relational-data.design-for-data-redundancy
 title: Design for data redundancy
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for data redundancy
   description: "Design for data redundancy"
-  ms.date: 12/10/2024
+  ms.date: 05/12/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 5
+durationInMinutes: 8
 content: |
   [!include[](includes/4-design-for-data-redundancy.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "Which Azure storage redundancy model replicates data synchronously across three Azure availability zones within a region?"
+    choices:
+    - content: "Locally Redundant Storage (LRS)"
+      isCorrect: false
+      explanation: "Incorrect. LRS replicates data three times within a single data center in a region. It provides high durability and availability within the same data center but doesn't protect against data center failures or regional outages."
+    - content: "Zone-Redundant Storage (ZRS)"
+      isCorrect: true
+      explanation: "Correct. ZRS replicates data synchronously across three Azure availability zones in a region. This model provides higher durability and availability by protecting against data center failures within a region."
+    - content: "Geo-Redundant Storage (GRS)"
+      isCorrect: false
+      explanation: "Incorrect. GRS replicates data to a secondary region, hundreds of miles away from the primary location. This model provides the highest level of durability and availability by protecting against regional outages."
