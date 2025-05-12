@@ -1,4 +1,3 @@
-
 After you determine the data storage requirements for your organization, you need to create storage accounts for Tailwind Traders.
 
 An [Azure storage account](/azure/storage/common/storage-account-overview?azure-portal=true) groups together all of your Azure Storage services. The storage account provides a unique namespace that's accessible from anywhere (assuming you have the correct permissions) in the world over HTTPS. Data in your storage account is durable and highly available, secure, and massively scalable.
@@ -35,3 +34,5 @@ You review Azure storage account options and some scenarios for when to use diff
 - **Consider data sensitivity**. Protect sensitive and proprietary Tailwind Traders data in your data storage. You can enable virtual networks for proprietary data and not for public data. This scenario might require separate storage accounts.
 
 - **Consider data isolation**. Segregate regulatory and compliance data, or local policies by using multiple storage accounts for Tailwind Traders. You can separate data in one application from data in another application to ensure data isolation.
+
+

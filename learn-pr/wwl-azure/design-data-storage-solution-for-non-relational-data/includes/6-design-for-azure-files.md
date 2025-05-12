@@ -1,6 +1,6 @@
-[Azure Files](/azure/storage/files/storage-files-introduction) provides fully managed cloud-based file shares that are hosted on Azure. Shared files are accessible by using the industry standard Server Message Block (SMB) protocol, Network File System (NFS) protocol, and the Azure Files REST API. You can mount or connect to an Azure file share at the same time on all the main operating systems.
+[Azure Files](/azure/storage/files/storage-files-introduction) provides fully managed cloud-based file shares that are hosted on Azure. Shared files are accessible by using the industry standard Server Message Block (SMB) protocol, Network File System (NFS) protocol, and the Azure Files REST API. You can mount or connect to an Azure file share at the same time on all the main operating systems. This video compares files storage to blob storage. 
 
-[! VIDEO https://learn-video.azurefd.net/vod/player?id=020ad252-b21d-40bd-8885-c0ca0093bc41]
+> [! VIDEO https://learn-video.azurefd.net/vod/player?id=020ad252-b21d-40bd-8885-c0ca0093bc41]
 
 ### Things to know about Azure Files
 
@@ -51,6 +51,9 @@ The following table compares features and uses cases for these three implementat
 | Comparison | Azure Blob Storage | Azure Files | Azure NetApp Files |
 | --- | --- | --- | --- |
 | **Description** | Azure Blob Storage is best suited for large scale read-heavy sequential access workloads where data is ingested once and modified later. <br><br>Blob Storage offers the lowest total cost of ownership, if there's little or no maintenance. | Azure Files is a highly available service best suited for random access workloads. <br><br>For NFS shares, Azure Files provides full POSIX file system support and can easily be used from container platforms like Azure Container Instance (ACI) and Azure Kubernetes Service (AKS). | Azure NetApp Files is a fully managed file service in the cloud, powered by NetApp, with advanced management capabilities. <br><br>Azure NetApp Files is suited for workloads that require random access and provides broad protocol support and data protection capabilities. |
-| **Use cases** | Large scale analytical data, Throughput sensitive high-performance computing, Backup and archive, Autonomous driving, Media rendering, or Genomic sequencing | Shared files, Databases, Home directories, Traditional applications, ERP, CMS, NAS migrations that don't require advanced management, Custom applications that require scale-out file storage | On-premises enterprise NAS migration that requires rich management capabilities, Latency sensitive workloads like SAP HANA, Latency-sensitive or IOPS intensive high performance compute, Workloads that require simultaneous multi-protocol access |
+| **Use cases** | Large scale analytical data, Throughput sensitive high-performance computing, Backup and archive, Autonomous driving, Media rendering, or Genomic sequencing | Shared files, Databases, Home directories, Traditional applications, ERP, CMS, NAS migrations that don't require advanced management, Custom applications that require scale-out file storage | On-premises enterprise NAS migration that requires rich management capabilities, Latency sensitive workloads like SAP HANA, Latency-sensitive, or IOPS intensive high performance compute, Workloads that require simultaneous multi-protocol access |
 | **Available protocols** | - NFS 3.0 <br> - REST <br> - Data Lake Storage Gen2 | - SMB <br> - NFS 4.1 <br> - REST | - NFS 3.0 and 4.1 <br> - SMB |
 | **Performance (per volume)** | Up to 20,000 IOPS. Up to 15 GiB/s throughput. | Up to 100,000 IOPS. Up to 10 GiB/s throughput | Up to 460,000 IOPS. Up to 4.5 GiB/s throughput for regular volumes. Up to 10 GiB/s throughput for large volumes. |
+
+> [!TIP]
+> Learn more about file based workloads in the [Introduction to Azure NetApp Files](/training/modules/introduction-to-azure-netapp-files/) training module. 

@@ -1,6 +1,6 @@
-[Azure Blob Storage](/azure/storage/blobs/storage-blobs-overview) is a cloud-based object storage service offered by Microsoft Azure. Blob storage is designed to store large amounts of unstructured data, such as text, images, documents, videos, and audio files. 
+[Azure Blob Storage](/azure/storage/blobs/storage-blobs-overview) is a cloud-based object storage service offered by Microsoft Azure. Blob storage is designed to store large amounts of unstructured data, such as text, images, documents, videos, and audio files. This video from the Developer course covers the basics of blob storage. 
 
-[! VIDEO https://learn-video.azurefd.net/vod/player?id=335682c0-7869-4eb7-ac14-bc3b8c4d84a4]
+> [! VIDEO https://learn-video.azurefd.net/vod/player?id=335682c0-7869-4eb7-ac14-bc3b8c4d84a4]
 
 There are two main points to consider in an implementation plan for Azure Blob Storage. First, you need to identify which Azure _blob access tier_ satisfies your organization's storage availability, latency, and cost requirements. The second consideration is to decide if you need access to immutable storage.
 
@@ -50,3 +50,6 @@ You review the different access options for Azure Blob Storage, and how to use i
 - **Consider Blob Storage costs**. Weigh your options for total cost. Factor in data storage minimum durations, and potential charges for transactions and access. Premium Blob Storage and the Hot access tier have higher overall storage costs, but lower charges for access and transactions. The Cool and Archive access tiers offer lower storage costs, but tend to have higher charges for access and transactions.
 
 - **Consider immutable storage**. Review your business scenarios to identify where you might need immutable storage. Consider the different types immutability policies and which form satisfies your organization's requirements.
+
+> [!TIP]
+> Continue your learning with the [Configure Azure Blob Storage](/training/modules/configure-blob-storage/) training module. 

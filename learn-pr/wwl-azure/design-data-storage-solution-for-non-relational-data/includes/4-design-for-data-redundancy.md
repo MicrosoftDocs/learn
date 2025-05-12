@@ -1,7 +1,6 @@
-
 Azure Storage always stores multiple copies of your Tailwind Traders data. This redundancy ensures the data is protected from planned and unplanned events. These events can include transient hardware failures, network or power outages, and massive natural disasters. [Storage redundancy](/azure/storage/common/storage-redundancy?azure-portal=true) ensures your storage account meets its availability and durability targets. This video reviews the data redundancy options. 
 
-[! VIDEO https://learn-video.azurefd.net/vod/player?id=6e6c2595-326b-4a7b-9891-ef108eecd9e8]
+> [! VIDEO https://learn-video.azurefd.net/vod/player?id=6e6c2595-326b-4a7b-9891-ef108eecd9e8]
 
 
 ### Things to know about data redundancy
@@ -59,3 +58,6 @@ You review the different options for implementing replication. Data redundancy i
 - **Consider secondary regions**. For applications requiring high durability, you can choose to additionally copy the data in your storage account to a secondary region that is hundreds of miles away from the primary region. If your storage account is copied to a secondary region, then your data is durable even if a complete regional outage or a disaster in which the primary region isn't recoverable.
 
 - **Consider read access requirements**. Identify Tailwind Traders applications that require read access to the replicated data in the secondary region, if the primary region becomes unavailable for any reason. Configure your storage account with read access to the secondary region. Your applications can seamlessly shift to reading data from the secondary region if the primary region becomes unavailable.
+
+> [!TIP]
+> Continue your learning with the [Describe Azure storage services](/training/modules/describe-azure-storage-services/) training module. 

@@ -1,7 +1,6 @@
+Azure Storage provides a layered security model that lets you secure and control the level of access to your storage accounts. The model consists of several storage security options, including firewall policies, customer-managed keys, and endpoints. This video from the Developers course highlights storage security features. 
 
-Azure Storage provides a layered security model that lets you secure and control the level of access to your storage accounts. The model consists of several storage security options, including firewall policies, customer-managed keys, and endpoints.
-
-[! VIDEO https://learn-video.azurefd.net/vod/player?id=70edcdd1-7dab-478a-83ea-d07f4f883d67]
+> [! VIDEO https://learn-video.azurefd.net/vod/player?id=70edcdd1-7dab-478a-83ea-d07f4f883d67]
 
 ### Things to know about storage security
 
@@ -12,8 +11,6 @@ Let's take a look at some best practices for storage security. Think about optio
 - [Shared access signatures (SAS)](/azure/storage/common/storage-sas-overview) provide secure delegated access to resources in your storage account. With a SAS, you have granular control over how a client can access your data.
 
 - [Firewall policies and rules](/azure/storage/common/storage-network-security) limit access to your storage account. Requests can be limited to specific IP addresses or ranges, or to a list of subnets in an Azure virtual network. The Azure Storage firewall provides access control for the public endpoint of your storage account.
-
-- [Virtual network service endpoints](/azure/virtual-network/virtual-network-service-endpoints-overview) restrict network access and provide direct connection to your Azure storage. You can secure storage accounts to your virtual network, and enable private IP addresses in the virtual network to reach the service endpoint. With [private endpoints](/azure/storage/common/storage-private-endpoints), you can create a special network interface for an Azure service in your virtual network.
 
 - [Secure transfer](/azure/storage/common/storage-require-secure-transfer) enables an Azure storage account to accept requests from secure connections. When you require secure transfer, any requests originating from nonsecure connections are rejected. Microsoft recommends that you always require secure transfer for all your storage accounts.
 
@@ -40,3 +37,7 @@ You review some of the security options for Azure Storage. Take a few minutes to
 - **Consider secure transfer**. (Microsoft recommended) Always require secure transfer for all your Azure storage accounts. In the Azure portal, choose **Enable secure transfer** for your storage accounts. The `Secure transfer required` property is enabled by default when an Azure storage account is created.
 
 - **Consider customer-managed keys**. Manage encryption keys for your storage account by using customer-managed keys stored in Azure Key Vault. Customer-managed keys give you full control over access to your encryption keys and encrypted data.
+
+
+> [!TIP]
+> There is a lot more to learn about storage security in the [Plan and implement security for storage](/training/modules/security-storage/) training module. 
