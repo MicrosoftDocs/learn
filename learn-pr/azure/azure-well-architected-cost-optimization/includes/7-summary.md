@@ -1,12 +1,12 @@
-In this module, you've looked at the five key principles of the Cost Optimization pillar of the Azure Well-Architected Framework.
+In this module, you learned about the five key principles of the Cost Optimization pillar in the Azure Well-Architected Framework.
 
-A cost-optimized workload isn't necessarily a low-cost workload. There are significant tradeoffs. Tactical approaches are reactive and can reduce costs only in the short term. To achieve long-term financial responsibility, you need to create a strategy with prioritization, continuous monitoring, and repeatable processes that focuses on optimization.
+A cost-optimized workload isn't necessarily a low-cost workload. There are significant tradeoffs. Quick fixes might save money short-term, but for long-term savings, you need a solid plan. It should include prioritization, continuous monitoring, and repeatable processes that focus on optimization.
 
-As you prioritize business requirements to align with technology needs, you can adjust costs. However, you should expect a series of tradeoffs in areas in which you want to optimize cost, such as security, scalability, resilience, and operability. If the cost of addressing the challenges in those areas is high and these principles aren't applied properly, you might make risky choices in favor of a cheaper solution, ultimately affecting your organization's business goals and reputation.
+As you prioritize business requirements to align with technology needs, you can adjust costs. But expect tradeoffs in areas like security, scalability, resilience, and operability. If the cost of addressing the challenges in those areas is high and these principles aren't applied properly, you might make risky choices in favor of a cheaper solution. These choices can hurt your goals or reputation.
 
 ## Learn more
 
-To learn more about workload cost optimization, review the following documentation:
+To learn more about workload cost optimization, see the following articles:
 
 - [Cost Optimization design principles](/azure/well-architected/cost-optimization/principles)
 - [Design review checklist for Cost Optimization](/azure/well-architected/cost-optimization/checklist)
