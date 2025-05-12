@@ -14,47 +14,47 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Which of the following scenarios is a good use case for purchasing a reserved instance?"
+    - content: "Which scenario is a good use case for purchasing a reserved instance?"
       choices:
-        - content: "My workload is running on VMs and is accessed 24/7."
+        - content: "Your workload is running on VMs and is accessed 24/7."
           isCorrect: true
-          explanation: "Correct.  Purchasing reserved instances for VMs that are running 24/7 is a good way to save money."
-        - content: "My workload is running on Azure App Service and is only accessed during business hours."
+          explanation: "Correct. Purchasing reserved instances for VMs that are running 24/7 is a good way to save money."
+        - content: "Your workload is running on Azure App Service and is only accessed during business hours."
           isCorrect: false
-          explanation: "Incorrect. Being able to stop the App Service instances when they are not in use is a better way to save money."
-        - content: "My workload is running on VMs and will only be in service for six months."
+          explanation: "Incorrect. Being able to stop the App Service instances when they aren't in use is a better way to save money."
+        - content: "Your workload is running on VMs and will only be in service for six months."
           isCorrect: false
-          explanation: "Incorrect. Reservations can only be purchased on one or three-year terms, so this isn’t a good use case for a reservation."
-        - content: "My workload is running on Azure Container Apps and is accessed 24/7."
+          explanation: "Incorrect. Reservations can only be purchased on one-year or three-year terms, so this isn't a good use case for a reservation."
+        - content: "Your workload is running on Azure Container Apps and is accessed 24/7."
           isCorrect: false
-          explanation: "Incorrect.  Azure reservations can’t be purchased for Azure Container Apps."
+          explanation: "Incorrect. Azure reservations can't be purchased for Azure Container Apps."
 
     - content: "When might it be a good idea to switch from consumption-based billing to a flat-rate billing model?"
       choices:
-        - content: "My workload is heavily used during weekdays and lightly used on weekends."
+        - content: "Your workload is heavily used during weekdays and lightly used on weekends."
           isCorrect: false
-          explanation: "Incorrect.  In this case, you may be able to scale down your workload on weekends to save money."
-        - content: "My workload is heavily used each morning and moderately used the rest of the day."
+          explanation: "Incorrect. In this case, you might be able to scale down your workload on weekends to save money."
+        - content: "Your workload is heavily used each morning and moderately used the rest of the day."
           isCorrect: false
-          explanation: "Incorrect.  Scaling up to handle the morning peak and scaling down the rest of the day is a better way to save money."
-        - content: "My workload is moderately used all day and night."
+          explanation: "Incorrect. Scaling up to handle the morning peak and scaling down the rest of the day is a better way to save money."
+        - content: "Your workload is moderately used all day and night."
           isCorrect: true
-          explanation: "Correct.  This scenario could be a good use case for a flat-rate billing model because the usage pattern is consistent."
-        - content: "My workload is seasonal and is only heavily used for three months of the year."
+          explanation: "Correct. This scenario could be a good use case for a flat-rate billing model because the usage pattern is consistent."
+        - content: "Your workload is seasonal and is only heavily used for three months of the year."
           isCorrect: false
-          explanation: "Incorrect.  You may be able to run your workload with far fewer resources for the other 9 months of the year, so a flat-rate billing model is not a good fit."
+          explanation: "Incorrect. You might be able to run your workload with far fewer resources for the other nine months of the year, so a flat-rate billing model isn't a good fit."
 
     - content: "Contoso's SQL databases are spread across multiple VMs, each with its own SQL Server Enterprise license. Which of the following cost-saving measures should Contoso consider?"
       choices:
         - content: "Switch all of the SQL Enterprise licenses to SQL Server Developer."
           isCorrect: false
-          explanation: "Incorrect.  SQL Server Developer is only for development and testing purposes and can’t be used in production environments."
+          explanation: "Incorrect. SQL Server Developer is only for development and testing purposes and can't be used in production environments."
         - content: "Consolidate the databases onto fewer VMs and apply Azure Hybrid Benefit to each Windows and SQL Server license."
           isCorrect: true
-          explanation: "Correct.  Consolidating the databases onto fewer VMs and applying Azure Hybrid Benefit to each Windows and SQL Server license cuts down the number of VMs and licenses to pay for."
+          explanation: "Correct. Consolidating the databases onto fewer VMs and applying Azure Hybrid Benefit to each Windows and SQL Server license cuts down the number of VMs and licenses to pay for."
         - content: "Add all of the database servers into an Always On failover cluster."
           isCorrect: false
-          explanation: "Incorrect.  This scenario may be a good idea for high availability, but it won’t save Contoso any money."
+          explanation: "Incorrect. This scenario might be a good idea for high availability, but it won't save Contoso any money."
         - content: "Disable SQL backups."
           isCorrect: false
-          explanation: "Incorrect.  Disabling backups isn’t a good idea because it puts the databases at risk of data loss."
+          explanation: "Incorrect. Disabling backups isn't a good idea because it puts the databases at risk of data loss."
