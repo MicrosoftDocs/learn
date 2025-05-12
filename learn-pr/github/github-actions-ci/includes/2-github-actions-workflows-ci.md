@@ -1,4 +1,4 @@
- Here, you learn about GitHub Ac. ions and workflows for CI. 
+ Here, you learn about GitHub Actions and workflows for CI. 
 
 You learn how to:
 
@@ -73,11 +73,14 @@ To learn more about npm, check out the npm documentation:
 - [npm run](https://docs.npmjs.com/cli/run-script?azure-portal=true)
 - [npm test](https://docs.npmjs.com/cli/test.html?azure-portal=true)
 
-<<!-- InfoMagnus Starts -->
+Beyond individual npm commands, teams can benefit from reusable workflows to streamline and standardize repeated automation steps. By leveraging reusable workflows, you can reduce redundancy, improve maintainability, and ensure consistency across your CI/CD pipelines.
+
+<!-- InfoMagnus Starts -->
 <!-- INFOMAGNUS UPDATES for sub OD 1.5.9. Source Material: https://docs.github.com/en/actions/sharing-automations/reusing-workflows -->
 ## How to Utilize Reusable Workflows to Avoid Duplication
  As teams scale and projects grow, it's common to see the same steps such as code checkout, dependency installation, testing, and deployment—repeated across multiple workflow files. This kind of duplication not only clutters your codebase but also increases maintenance time when changes are needed. Reusable workflows solve this problem by allowing you to define automation logic once and call it from other workflows. Reusable workflows are special GitHub Actions workflows that can be called by other workflows, much like functions in programming. You create them with the purpose of sharing repeated logic like build steps, testing procedures, or deployment strategies. Once created, you can reference them from any other workflow in the same repository or even across different repositories.
- ![Reusable Workflows Illustration](../media/reusable-workflow.png)
+ 
+:::image type="content" source="../media/reusable-workflow.png" alt-text="Diagram illustrating the concept of reusable workflows in GitHub Actions, showing how a central workflow can be referenced by multiple repositories or workflows." border="true":::
 
 ###  Why Use Them?
 - Consistency: Teams can follow the same automation standards across all projects.
@@ -91,6 +94,8 @@ To utilize reusable workflows:
 - You must explicitly enable a workflow to be reusable by configuring it with the workflow_call event.
 - In your main workflows (caller workflows), you then reference this reusable file and provide any required inputs or secrets.
 
+To illustrate the advantages of reusable workflows, consider the following real-world scenario. By implementing reusable workflows, teams can streamline their CI/CD processes, reduce redundancy, and ensure consistent automation practices across multiple projects.
+
 ### Real-World Example
 Imagine your organization has 10 microservices and all of them need the same steps to:
 - Run tests
@@ -102,6 +107,8 @@ Without reusable workflows, every repo contains duplicated logic. With reusable 
 - Call this file from every service’s own workflow, passing in variables like environment or app name
 
 Now, if a new security step or tool is added (like scanning for vulnerabilities), you only need to add it once in the reusable workflow. All 10 services will immediately use the updated process without modifying each one.
+
+By understanding how reusable workflows function and their benefits, you can adopt best practices to maximize their effectiveness and ensure seamless integration into your CI/CD pipelines.
 
 ### Best Practices
 - Centralize your reusable workflows in one repository if you plan to share them across teams.
@@ -117,7 +124,9 @@ https://docs.github.com/en/actions/writing-workflows/about-workflows , https://d
 
 ## Identify the Event that Triggered a Workflow from its Effects
 Understanding what triggered a GitHub Actions workflow—whether it was a push to a branch, a pull request, a scheduled job, or a manual dispatch—is crucial for debugging, auditing, and improving CI/CD pipelines. You can identify the triggering event by examining the workflow run, the repository changes, or the issue/pull request involved.
-![Events that trigger workflow](../media/workflow-triggers.png)
+
+:::image type="content" source="../media/workflow-triggers.png" alt-text="Diagram illustrating various workflow triggers in GitHub Actions, such as push, pull request, schedule, and manual dispatch." border="true":::
+
 ###  What Is a Workflow Trigger?
 A workflow trigger is an event that causes a workflow to start. GitHub supports various types of triggers, including:
 - push or pull_request (based on code changes)
@@ -147,7 +156,7 @@ You can identify the trigger event in several ways:
 
 ### Inferring the Trigger from Repository Effects
 Sometimes you may not have direct access to the workflow run but want to infer what triggered it based on repository activity. Here's how:
-| Effect Seen | Likely Trigger |
+| Observed Behavior | Trigger Event |
 |-------------|----------------|
 | A new commit pushed to `main` and workflow ran | `push` event |
 | A new pull request opened or updated | `pull_request` event |
