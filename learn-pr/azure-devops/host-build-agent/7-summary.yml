@@ -5,7 +5,7 @@ metadata:
   title: Summary
   description: This unit summarizes what you've learned and provides more learning resources.
   ms.custom: devdivchpfy22
-  ms.date: 04/02/2024
+  ms.date: 05/08/2025
   author: steved0x
   ms.author: sdanie
   ms.topic: unit
@@ -13,4 +13,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/7-summary.md)]
-
+
