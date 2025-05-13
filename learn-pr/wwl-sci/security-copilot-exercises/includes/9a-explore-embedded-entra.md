@@ -1,10 +1,9 @@
 In this exercise, you explore multiple, real world scenarios that highlight the benefits and value of Copilot in Microsoft Entra.
 
 > [!NOTE]
-> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message will display stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.  
->:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature is not available within the simulation.":::
->
-> Also, Microsoft Security Copilot was previously referred to as Microsoft Copilot for Security. Throughout this simulation, you'll find that the user interface still reflects the original name.
+> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message displays stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.  
+>:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature isn't available within the simulation.":::
+
 
 ### Exercise
 
@@ -64,7 +63,7 @@ You're an identity admin with Woodgrove. You believe there are some users at the
 
    - Review the steps provided.
    > [!NOTE]
-   > The instruction generated are for a single user policy. Microsoft doesn't recommend that you make a policy for each user, but to create them using security groups to help with maintenance.
+   > The instructions generated are for a single user policy. Microsoft doesn't recommend that you make a policy for each user, but to create them using security groups to help with maintenance.
 
 1. Close the **simulated environment** by exiting the browser.
 
@@ -94,7 +93,7 @@ You're an identity admin with Woodgrove. You're a member of the helpdesk, and ju
 
    - Note the list of available MFA methods and the provided links to research their value and strength.
 
-1. FIDO2 passkey is the most secure option, without the need for phone verification. Can we check to see if Khamala is registered for FIDO2.
+1. FIDO2 passkey is the most secure option, without the need for phone verification. Can we check to see if Khamala is registered for FIDO2?
 1. Check with Copilot using the prompt **Is kher40@woodgrove.ms registered for FIDO2 authentication?‌**.
 
    - The user is not set up for FIDO2, can we get them set up for passwordless?
@@ -115,7 +114,7 @@ You're an identity admin with Woodgrove. Your company has used many enterprise a
 1. Find the section on your **Identity Secure Score**.
 
    - Note there are recommendations  on how you can make your tenant even more secure.
-   - Notice one of the items is “Removed unused application.”
+   - Notice one of the items is "Removed unused application."
 
 1. Select the **Security Copilot** button on the upper right of the screen.
 1. Use the prompt **Show me unused applications** to find any unused applications.
@@ -131,7 +130,7 @@ You're an identity admin with Woodgrove. Your company has used many enterprise a
 1. Review the steps provided to remove the application manually using the Microsoft Entra admin center or view PowerShell scripts.
 
    > [!NOTE]
-   > While this simulation does not actively use these steps to remove application, you can see how Security Copilot can quickly help you remove unused applications.
+   > While this simulation doesn't actively use these steps to remove application, you can see how Security Copilot can quickly help you remove unused applications.
 
 1. Scroll up in the **Copilot window** to see the list of apps originally provided.
 1. Find the application called **Woodgrove Intranet**, and then copy the owner’s name into your clipboard: **Braden Goudy (Corp)**.
@@ -164,7 +163,7 @@ You're an identity admin with Woodgrove. You have been advised that the user Rov
 1. We need to find out information about the user from the **Audit Logs**. Use the prompt **Show me Microsoft Entra audit log events initiated by that user in the last week** to find more information.
 
    - Review the information about User Administrator role being assigned in PIM.
-   - Notice the Security Copilot remembered that we asked about Rovshan already, and kept that context.  You could have specified the name in the prompt also.
+   - Notice the Security Copilot remembered that we asked about Rovshan already, and kept that context. You could have specified the name in the prompt also.
    - Without Security Copilot would have to open the logs and manually search for entries.
 
 1. Let’s check the user’s sign-in with the prompt **Show me sign-ins from that user?**.
@@ -202,4 +201,4 @@ You're an identity admin with Woodgrove. You have been advised that the user Rov
 
 1. Close the **simulated environment** by exiting the browser.
 
-**Review**: In this short simulation you can see how Security Copilot in Microsoft Entra is able to quickly share information about a specific user’s activity.  Then Security Copilot includes links to where more details can be found to get more details. This feature lets you ask questions about Microsoft Entra data, without having to guess where to go next. 
+**Review**: In this short simulation you can see how Security Copilot in Microsoft Entra is able to quickly share information about a specific user’s activity. Then Security Copilot includes links to where more details can be found to get more details. This feature lets you ask questions about Microsoft Entra data, without having to guess where to go next. 

@@ -1,19 +1,18 @@
 In this exercise, you investigate an incident in Microsoft Defender XDR. As part of the investigation, you explore the key features of Copilot in Microsoft Defender XDR, including incident summary, device summary, script analysis, and more. You also pivot your investigation to the standalone experience and use the pin board as a way to share details of your investigation with your colleagues.
 
 > [!NOTE]
-> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message will display stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.  
->:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature is not available within the simulation.":::
->
-> Also, Microsoft Security Copilot was previously referred to as Microsoft Copilot for Security. Throughout this simulation, you'll find that the user interface still reflects the original name.
+> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message displays stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.  
+>:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature isn't available within the simulation.":::
+
 
 ### Exercise
 
-For this exercise, you're logged in as Avery Howard and have the Copilot owner role. You'll work in Microsoft Defender, using the new unified security operations platform, to access the embedded Copilot capabilities in Microsoft Defender XDR. Towards the end of the exercise, you pivot to the standalone experience of Microsoft Security Copilot.
+For this exercise, you're logged in as Avery Howard and have the Copilot owner role. You work in Microsoft Defender, using the new unified security operations platform, to access the embedded Copilot capabilities in Microsoft Defender XDR. Towards the end of the exercise, you pivot to the standalone experience of Microsoft Security Copilot.
 
 This exercise should take approximately **30** minutes to complete.
 
 > [!NOTE]
-> When a lab instruction calls for opening a link to the simulated environment, it is generally recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
+> When a lab instruction calls for opening a link to the simulated environment, it's recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
 
 #### Task: Explore Incident summary and guided responses
 
@@ -28,7 +27,7 @@ This exercise should take approximately **30** minutes to complete.
 
 1. This incident is complex. Defender XDR provides a great deal of information, but with 50 alerts it can be a challenge to know where to focus. On the right side of the incident page, Copilot automatically generates an **Incident summary** that helps guide your focus and response. Select **See more**.
     1. Copilot's summary describes how this incident evolved, including initial access, lateral movement, collection, credential access, and exfiltration. It identifies specific devices, indicates that the PsExec tool was used to launch executable files, and more.
-    1. These items are all you can leverage for further investigation. You explore some of them in subsequent tasks.
+    1. This information can be used for further investigation. You explore some of them in subsequent tasks.
 
 1. Scroll down on the Copilot panel and just beneath the summary are **Guided responses**. Guided responses recommend actions in support of triage, containment, investigation, and remediation.
     1. The first item in the triage category it to Classify this incident. Select **Classify** to view the options. Review the guided responses in the other categories.
@@ -41,7 +40,7 @@ This exercise should take approximately **30** minutes to complete.
 
 1. Copilot  automatically generates an **Alert summary**, which provides a wealth of information for further analysis. For example, the summary identifies suspicious activity, it identifies data collection activities, credential access, malware, discovery activities, and more.
 
-1. There's a lot of information on the page, so to get a better view of this alert, select **Open alert page**. It's on the third panel on the alert page, next to the incident graph and below the alert title.
+1. There's much information on the page, so to get a better view of this alert, select **Open alert page**. It's on the third panel on the alert page, next to the incident graph and below the alert title.
 
 1. On the top of the page, is card for the device **parkcity-win10v**. Select the ellipses and note the options. Select **Summarize**. Copilot generates a **Device summary**. It's worth nothing that there are many ways you can access device summary and this way is just one convenient method. The summary shows the device is a VM, identifies the owner of the device, it shows its compliance status against Intune policies, and more.
 
@@ -55,7 +54,7 @@ This exercise should take approximately **30** minutes to complete.
 
 1. Expand the first instance of **powershell.exe executed a script**. Copilot has the capability to analyze scripts. Select **Analyze**.
     1. Copilot generates an analysis of the script and suggests it could be a phishing attempt or used to deliver a web-based exploit.
-    1. Select **Show code**. The code shows nested PowerShell modules an versions.
+    1. Select **Show code**. The code shows nested PowerShell modules and versions.
 
 1. There are several other items that indicate powershell.exe executed a script. Expand the one labeled **powershell.exe -EncodedCommand...**. The original script was base 64 encoded, but Defender decoded that for you. For the decoded version, select **Analyze**. The analysis highlights the sophistication of the script used in this attack.
 
@@ -69,7 +68,7 @@ This exercise should take approximately **30** minutes to complete.
 
 #### Task:  Explore file analysis
 
-1. You're back at the incident page. In the alert summary, , Copilot identified the file mimikatz.exe, which is associated with the 'Mimikatz' malware. You can use the file analysis capability in Defender XDR to see what other insights you can get. There are several ways to access files. From the top of the page, select the **Evidence and Response** tab.
+1. You're back at the incident page. In the alert summary, Copilot identified the file mimikatz.exe, which is associated with the 'Mimikatz' malware. You can use the file analysis capability in Defender XDR to see what other insights you can get. There are several ways to access files. From the top of the page, select the **Evidence and Response** tab.
 
 1. From the left side of the screen select **Files**.
 1. Select the first item from the list with the entity named **mimkatz.exe**.
@@ -100,13 +99,13 @@ This task is complex and requires the involvement of more senior analysts. In th
 
 #### Task: Create and run a KQL query
 
-Next, we will use Copilot to help us create a KQL (Kusto Query Language) query to use with Advanced hunting in Defender XDR.
+Next, we'll use Copilot to help us create a KQL (Kusto Query Language) query to use with Advanced hunting in Defender XDR.
 
 1. While still in standalone Security Copilot, enter the following prompt in the prompt form:
 *Based on this incident, create a query to proactively hunt for this type of malware attack. Use the woodgrove-loganalyticsworkspace.*
 
 1. Press the Submit prompt icon to run your prompt.
-Copilot will choose Natural language to KQL for advanced hunting.
+Copilot chooses Natural language to KQL for advanced hunting.
 
 1. Copilot generates a KQL query and a response:
 

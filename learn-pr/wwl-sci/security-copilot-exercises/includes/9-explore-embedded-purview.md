@@ -3,12 +3,10 @@ Microsoft Security Copilot is accessible within Microsoft Purview data security 
 In this exercise, you explore the Copilot summarization capabilities available in each of these solutions. You start by verifying that the Microsoft Purview plugin is enabled.
 
 > [!NOTE]
-> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page might not be enabled and text-based inputs that fall outside of the specified script might not be supported. A pop-up message displays stating, "This feature isn't available within the simulation." When this message occurs, select OK and continue the exercise steps.  
+> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page might not be enabled and text-based inputs that fall outside of the specified script might not be supported. A pop-up message displays stating, "This feature is not available within the simulation." When this message occurs, select OK and continue the exercise steps.  
 >:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature isn't available within the simulation.":::
->
-> Also, Microsoft Security Copilot was previously referred to as Microsoft Copilot for Security. Throughout this simulation, you might find that the user interface still reflects the original name.
 
-## Exercise
+### Exercise
 
 For this exercise, you're logged in as Avery Howard. You have the Copilot owner role and the specific role permissions required to access each of the Microsoft Purview solutions used in this exercise.
 
@@ -17,14 +15,9 @@ You work with specific Microsoft Purview solutions, using the new Microsoft Purv
 This exercise should take approximately **30** minutes to complete.
 
 > [!NOTE]
-> When a lab instruction calls for opening a link to the simulated environment, open the link in a new browser window. This allows you to view the instructions and the exercise environment at the same time. To do so, select the right mouse key and select the option.
+> When a lab instruction calls for opening a link to the simulated environment, it's recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
 
-<!--- 
-
-Note: I didn't script in this section to Zarmada, but it still feels relevant. Please leave in if this is still relevant to the lab.
-
---->
-### Task: Enable the Microsoft Purview plugin
+#### Task: Enable the Microsoft Purview plugin
 
 In this task, you enable the Microsoft Purview plugin. For this task, you work in the standalone experience.
 
@@ -46,7 +39,7 @@ In this task, you enable the Microsoft Purview plugin. For this task, you work i
     1. Enable the toggle switch next to Microsoft Purview to enable the plugin.
     1. Close the manage sources window by selecting the **X**.
 
-### Task: Investigate risky activity using Security Copilot
+#### Task: Investigate risky activity using Security Copilot
 
 For this and all subsequent tasks, you explore the Copilot functionality embedded in Microsoft Purview.
 
@@ -54,18 +47,15 @@ In this task, you investigate an alert related to potential data exfiltration. Y
 
 Microsoft Copilot assumes the permissions of the user when it tries to access the data to answer queries. To access data associated with the Microsoft Purview Insider Risk Management solution, the Copilot user must be assigned an appropriate role.
 
-1. Open the environment by selecting this link: **[Microsoft Purview Portal](https://app.highlights.guide/start/6fca2b1c-bf14-4c26-9eda-48be3c0b5013?token=045faae1-1078-4eac-bf56-e12472eddaf9&azure-portal=true)**. A pop-up window appears that says, "Welcome to the new Microsoft Purview portal!"
-    1. Select the box where it says **"This is a public preview. I agree to the terms of data flow disclosure, the preview section of the Product Terms, and Privacy Statements."**
-    1. Select **Try now**.
-    1. You can close the Explore all solutions pop-up by selecting the **X**. Alternatively, you can select Next to go through the information. If you go through all six information windows, you need to scroll-up to get back to the top of the page, when you're done.
+1. Open the environment by selecting this link: **[Microsoft Purview Portal](https://app.highlights.guide/start/6fca2b1c-bf14-4c26-9eda-48be3c0b5013?token=045faae1-1078-4eac-bf56-e12472eddaf9&azure-portal=true)**.
 
-1. From the Microsoft Purview portal, **Solutions** > **Insider Risk Management** > **Alerts**.
+1. In the Microsoft Purview portal, **Solutions** > **Insider Risk Management** > **Alerts**.
 
 1. Select the first alert on the list with alert ID **ad18a3a1**.
 
 1. Review the alert:
    1. Check the alert name, associated policy, severity, and risk score. Review when the alert was triggered and why.
-   1. Open **User details** to view the user profile, including group membership and priority status. Then close the panel.
+   1. Select **View all details** to view the user profile, including group membership and priority status. Then close the panel.
    1. In the **All risk factors** tab, look at exfiltration activity, sequence activity, priority content, and sensitive info types.
    1. Select the **Activity explorer** tab and examine key events around the alert date.
    1. Use the **User activity** tab to review patterns in user behavior across a broader time range.
@@ -73,13 +63,13 @@ Microsoft Copilot assumes the permissions of the user when it tries to access th
 1. Use **Security Copilot** to guide deeper review:
    1. From the alert page, select **Summarize** to generate a quick summary of the alert and the user's recent behavior.
    1. In the Copilot pane, select the predefined prompt **Summarize user's last 30 days of activity**.
-   1. When the summary loads, select **View activity** to open the full user activity view.
+   1. When the summary loads, review the response, then select **View activity** to open the full user activity view.
    1. In the left pane, select **Unusual activities**.
    1. Expand the first sequence activity listed for **February 25, 2025**.
    1. Select the **2 events** link to view the actions included in that sequence.
    1. Find the entry for **EmployeeInfo_EDM.csv**. Expand the details and review the associated actions for this file.
 
-### Task: Review data loss prevention policy insights using Security Copilot
+#### Task: Review data loss prevention policy insights using Security Copilot
 
 For this task, you explore how Security Copilot can help identify strengths and gaps in your Data Loss Prevention (DLP) policy coverage.
 
@@ -99,13 +89,15 @@ In large environments, it can be difficult to quickly assess whether existing po
     1. Select **Insights by Administrative units** and review the results.
     1. Select **Insights by Classification of data** and review the results.
 
-1. At the bottom of the Copilot pane, select each of the predefined prompts to run them and review the responses.
+1. At the bottom of the Copilot pane, select the predefined prompt **What types of sensitive information are we protecting with these DLP policies?** and review the results.
+
+1. In the Copilot pane, select the predefined prompt **Does this DLP policy apply to all users in my organization?** and review the results.
 
 1. In the Copilot input field, type **Are there any gaps based on the policies I currently have created?** and review the answer provided.
 
 Use these insights to understand how your current DLP policies are distributed and whether they align with your organization's data protection needs. Review the results to identify any opportunities to improve coverage.
 
-### Task: Investigate data loss prevention alerts using Security Copilot
+#### Task: Investigate data loss prevention alerts using Security Copilot
 
 In this task, you use Security Copilot to investigate a DLP alert and examine user activity and sensitive information involved in the alert. You explore different views available in the alert pane and use predefined Copilot prompts to guide your investigation.
 
@@ -114,11 +106,10 @@ In this task, you use Security Copilot to investigate a DLP alert and examine us
 1. Scroll through the alert list and select the alert for **DLP policy match for document 'POS-Leavers_0325.xlsx' on a device**.
 1. When the alert opens:
     1. Review the tabs for **Details**, **Events**, and **User activity summary**.
-    1. The Security Copilot pane should open. Use it to investigate the alert further.
 
 1. On the **Details** tab:
-    1. Scroll through the alert details.
-    1. Select **Summarize** > **Summarize alert**.
+    1. Review the alert details.
+    1. At the bottom of the tab, select **Summarize** > **Summarize alert**.
     1. Review the generated summary in the Copilot pane.
 
 1. In the Copilot pane, select the prompt **What activity was performed on the data in this alert?** and review the response.
@@ -139,7 +130,7 @@ In this task, you use Security Copilot to investigate a DLP alert and examine us
 
 Use this information to build a clearer picture of what triggered the alert, how sensitive data was handled, and whether user behavior suggests further review is needed.
 
-### Task: Investigate eDiscovery cases and build a query using Security Copilot
+#### Task: Investigate eDiscovery cases and build a query using Security Copilot
 
 In this task, you explore how Security Copilot supports case investigation and query creation in Microsoft Purview eDiscovery. You start by reviewing a case summary, then create a custom search to locate files labeled as confidential and shared externally.
 
@@ -147,7 +138,7 @@ In this scenario, you're assisting with a case investigating the possible exposu
 
 1. In the Microsoft Purview portal, go to **Solutions** > **eDiscovery** > **Cases**.
 
-1. On the **Cases** page, select **Sensitive content review**.
+1. On the **Cases** page, select **Sensitive Information Discovery**.
 
 1. At the top of the case page, select **Summarize this case**.
 
@@ -157,25 +148,26 @@ In this scenario, you're assisting with a case investigating the possible exposu
    1. **How many hold policies in this case have errors?**
    1. **Which hold policies in this case have errors?**
 
-   The response should confirm that no hold policies are associated with the case, and therefore, no hold policies have errors.
-
 1. Based on the case summary and current findings, you're asked to search for confidential files that might be shared externally. To begin this part of the investigation, select the **Create a search** button.
 
-1. Name the search **Confidential data search**.
+1. Name the search **Confidential data search**, then select **Create**.
 
-1. Under the query input, select **Draft a query with Copilot**.
+1. On the **Search** page, under the query input, select **Draft a query with Copilot**.
 
-1. Explore the available options in the Copilot promptbook. You can select each option and choose **Generate KeyQL** to view how the query is built.
+1. Explore the available options in the Copilot promptbook:
+   1. Select **View prompts**, then select **Find all emails containing the words budget and finance and have attachments.** Select **Generate KeyQL** to view how the query is built.
+   1. Repeat this process for prompt **Search all chats in the month of January 2020 that contain the word 'financial year'**.
+   1. Repeat this process for prompt **Search for files of type .docx that contain the words confidential and budget**.
 
 1. In the query input box, type **Search for files marked as confidential that were shared with external users.**
 
 1. Select **Generate KeyQL** to convert the prompt into a query.
 
-Once your query is generated, continue the investigation by reviewing the search results. Identify files that match your criteria and determine whether they need to be added to a review set or exported for further examination.
+Once your query is generated, you can continue the investigation by reviewing the search results. Identify files that match your criteria and determine whether they need to be added to a review set or exported for further examination.
 
 This task shows how Security Copilot can support your investigative process by summarizing key details and offering relevant prompts. It also helps construct searches that reflect the scope of the case.
 
-## Review
+### Review
 
 In this exercise, you used Security Copilot to support investigations in Microsoft Purview. You reviewed insider risk alerts, explored DLP policies and alerts, and worked with an eDiscovery case.
 

@@ -1,19 +1,18 @@
 In this exercise, you create a custom promptbook from an existing session and then run that promptbook.
 
 > [!NOTE]
-> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message will display stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.  
->:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature is not available within the simulation.":::
->
-> Also, Microsoft Security Copilot was previously referred to as Microsoft Copilot for Security. Throughout this simulation, you'll find that the user interface still reflects the original name.
+> The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message displays stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.  
+>:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature isn't available within the simulation.":::
+
 
 ### Exercise
 
-For this exercise, you're logged in as Avery Howard and have the Copilot owner role. You'll work in the standalone experience of Microsoft Security Copilot.
+For this exercise, you're logged in as Avery Howard and have the Copilot owner role. You work in the standalone experience of Microsoft Security Copilot.
 
 This exercise should take approximately **10** minutes to complete.
 
 > [!NOTE]
-> When a lab instruction calls for opening a link to the simulated environment, it is generally recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
+> When a lab instruction calls for opening a link to the simulated environment, it's recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
 
 
 #### Task: Create the promptbook from an existing session
@@ -39,7 +38,7 @@ In this task, you create the promptbook. As part of the process, you templatize 
     1. The first prompt is to show the last three failed logins. For your custom promptbook, you want to replace the number three with an input parameter. To configure the input parameter, place your mouse over the first prompt, then select the **edit** ![edit icon](../media/edit-icon.png) icon.
         1. Replace the word three with an easily understood parameter that contains no spaces and is delineated with angle brackets. For this simulation, enter **\<number>**.
         1. To confirm the edit, select the checkmark ![checkmark icon](../media/check-mark-icon.png) icon. The number parameter is now listed in the section labeled "Inputs you’ll need." For this promptbook, this is the only input needed, but you can create promptbooks that use multiple inputs.
-    1. For your promptbook, you'll add a new prompt. Select **+ Add prompt**.
+    1. For your promptbook, you add a new prompt. Select **+ Add prompt**.
         1. Select the **edit** ![edit icon](../media/edit-icon.png) icon.
         1. Enter **What are the authentication methods for the failed logins**.
         1. Select the checkmark ![checkmark icon](../media/check-mark-icon.png) icon.
