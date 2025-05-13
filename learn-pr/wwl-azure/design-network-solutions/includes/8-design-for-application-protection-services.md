@@ -1,4 +1,7 @@
-Azure offers several networking services to help protect your network resources. You can protect your applications by using one service or a combination of services. In this unit, we examine Azure DDoS Protection, Azure Firewall, Private Link, Web Application Firewall, and Virtual Network security groups and service endpoints. 
+
+Azure offers several networking services to help protect your network resources. You can protect your applications by using one service or a combination of services. In this unit, we examine Azure DDoS Protection, Azure Firewall, Private Link, Web Application Firewall, and Virtual Network security groups. This diagram illustrates network defense in depth in the private cloud. 
+
+:::image type="content" source="../media/network-defense-in-depth-private.png" alt-text="Diagram showing the network elements at different protection levels." lightbox="../media/network-defense-in-depth-private-highres.png" border="false":::
 
 ### Azure DDoS Protection (distributed denial of service protection)
 
@@ -10,6 +13,10 @@ Azure offers several networking services to help protect your network resources.
 - Access multi-layered protection, including attack analytics, metrics, and alerting.
 - Receive support from the DDoS rapid response team.
 
+> [!Tip]
+> Learn more with the [Introduction to Azure DDoS Protection](/training/modules/introduction-azure-ddos-protection/) training module. 
+
+
 ### Azure Private Link
 
 [Azure Private Link](/azure/private-link/private-link-overview) enables you to access Azure PaaS services (such as Azure Storage and SQL Database) and Azure hosted customer-owned/partner services over a private endpoint in your virtual network. Traffic between your virtual network and the service travels the Microsoft backbone network. Exposing your service to the public internet is no longer necessary. You can create your own private link service in your virtual network and deliver it to your customers. Private Link is used to access PaaS services, such as Azure Storage, Azure SQL, App Services, and more. 
@@ -20,6 +27,9 @@ Azure offers several networking services to help protect your network resources.
 - Integrate with on-premises and peered networks.
 - Restrict traffic to the Microsoft network with no public internet access.
 
+> [!Tip]
+> Learn more with the [Introduction to Azure Private Link](/training/modules/introduction-azure-private-link/) training module. 
+
 ### Azure Firewall
 
 Azure Firewall is a managed, cloud-based network security service that protects your Azure Virtual Network resources. It's a fully stateful firewall as a service with built-in high availability and unrestricted cloud scalability. Azure Firewall uses a static public IP address for your virtual network resources, which allows outside firewalls to identify traffic originating from your virtual network. Azure Firewall provides inbound protection for non-HTTP/S protocols (such as RDP, SSH, and FTP), outbound network-level protection for all ports and protocols, and application-level protection for outbound HTTP/S.
@@ -28,16 +38,22 @@ Azure Firewall is a managed, cloud-based network security service that protects 
 
 - Implement centralized creation, enforcement, and logging of application and network connectivity policies.
 - Apply connectivity policies across subscriptions and virtual networks.
-- Combine Azure Firewall rules with just in time (JIT) access to restrict access to your virtual machine management ports.
+- To restrict access to your virtual machine management ports, combine Azure Firewall rules with just in time (JIT) access.
+
+> [!Tip]
+> Learn more with the [Introduction to Azure Firewall](/training/modules/introduction-azure-firewall/) training module. 
 
 ### Azure Web Application Firewall
 
-[Azure Web Application Firewall](/azure/web-application-firewall/overview) provides protection to your web applications from common web exploits and vulnerabilities such as SQL injection, and cross-site scripting. Web Application Firewall provides out of box protection from OWASP top 10 vulnerabilities via managed rules. Configure customer-managed rules for extra protection based on source IP range and request attributes (headers, cookies, form data fields, query string parameters). Preventing similar attacks in your application code can be challenging. The process can require rigorous maintenance, patching, and monitoring at multiple layers of the application topology. A centralized web application firewall helps to simplify security management. A web application firewall gives application administrators better assurance of protection against threats and intrusions.
+[Azure Web Application Firewall (WAF)](/azure/web-application-firewall/overview) provides protection to your web applications from common web exploits and vulnerabilities such as SQL injection, and cross-site scripting. Web Application Firewall provides out of box protection from OWASP top 10 vulnerabilities via managed rules. Configure customer-managed rules for extra protection based on source IP range and request attributes (headers, cookies, form data fields, query string parameters). Preventing similar attacks in your application code can be challenging. The process can require rigorous maintenance, patching, and monitoring at multiple layers of the application topology. A centralized web application firewall helps to simplify security management. A web application firewall gives application administrators better assurance of protection against threats and intrusions.
 
 #### Business scenarios
 
 - React faster to security threats by centrally patching known vulnerabilities instead of securing individual web apps.
 - Deploy Web Application Firewall with Application Gateway, Front Door, and Content Delivery Network.
+
+> [!Tip]
+> Learn more with the [Introduction to Azure Web Application Firewall](/training/modules/introduction-azure-web-application-firewall/) training module. 
 
 ### Azure virtual network security groups
 
@@ -53,14 +69,3 @@ NSGs contain two sets of rules: inbound and outbound. The priority for a rule mu
 - Limit the users in an organization who can work with resources in virtual networks.
 - Restrict traffic to an individual NIC by associating an NSG directly to a NIC.
 - Combine NSGs with JIT access to restrict access to your virtual machine management ports.
-
-### Azure Virtual Network - Service endpoints
-
-Azure Virtual Network service endpoints extend your virtual network private address space and the identity of your virtual network to the Azure services over a direct connection. You can use endpoints to secure your critical Azure service resources to have access to only your virtual networks. Traffic from your virtual network to the Azure service always remains on the Microsoft Azure backbone network. Service endpoints are easy to set up and have less management overhead than other strategies.
-
-#### Business scenarios
-
-- Secure your critical Azure service resources to only your virtual networks.
-- Increase security for your Azure service resources.
-- Implement optimal routing for Azure service traffic from your virtual network.
-
