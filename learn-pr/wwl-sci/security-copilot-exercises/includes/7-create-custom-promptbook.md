@@ -22,9 +22,11 @@ In this task, you create the promptbook. As part of the process, you templatize 
 
 1. Open the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/105b8e59-c9d3-4486-8a83-e132f8157b20?token=045faae1-1078-4eac-bf56-e12472eddaf9&azure-portal=true)**.
 
-1. There’s a session from earlier in the day that identified failed logins that you want to use. Since that session isn't listed on the landing page, select **View all sessions**.
+1. There’s a session from earlier in the day that identified failed logins that you want to use. Select the **Menu** icon ![home menu icon](../media/home-menu-icon.png), which is sometimes referred to as the hamburger icon.
 
-1. Select the session labeled, **what are the last three failed logins**, it's the last session on the My Sessions list.
+1. Select **My sessions**.
+
+1. Select the session labeled, **what are the last three failed logins**.
 
 1. The complete session is displayed. Scroll up/down to verify two prompts are listed.
 

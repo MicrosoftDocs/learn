@@ -36,11 +36,9 @@ In this task, you configure Copilot so that Copilot owners and contributors can 
 
 1. Select the **Home menu** (hamburger) icon
 
-1. Select **Owner settings**.
-
-1. Under Plugins for Security Copilot,
-    1. Set "Who can add and manage their own custom plugins" to **Contributors and owners**.
-    1. Set "Who can add and manage custom plugins for everyone in the organization" to **Contributors and owners**.
+1. Select **Plugin settings**.
+    1. Set "Who can add and manage their own custom plugins?" to **Contributors and owners**.
+    1. Set "Who can add and manage custom plugins for users of this workspace?" to **Contributors and owners**.
 
 1. Return to the landing page. Select **Microsoft Security Copilot** next to the home menu (hamburger) icon.
 
