@@ -70,7 +70,7 @@ on:
 <!-- INFOMAGNUS UPDATES for sub OD 1.1.4 go here. Source Material:  https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#repository_dispatch  --> 
 
 ## Repository_dispatch
-repository_dispatch is a custom event in GitHub Actions that allows external systems (or even other GitHub workflows) to manually trigger workflows by sending a POST request to the GitHub API.
+`repository_dispatch` is a custom event in GitHub Actions that allows external systems (or even other GitHub workflows) to manually trigger workflows by sending a POST request to the GitHub API.
 It enables flexible automation and integration with outside tools, scripts, or systems that need to start workflows in your repo.
 
 ### Use Cases
