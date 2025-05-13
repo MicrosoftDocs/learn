@@ -1,13 +1,17 @@
-:::image type="content" source="../media/technician-datacenter.png" alt-text="Screenshot of a technician in a data center." lightbox="../media/technician-datacenter.png":::
+## What is datacenter monitoring?
 
+Datacenter monitoring is a critical aspect of datacenter operations. It ensures that all systems and infrastructure components are functioning optimally. Monitoring involves continuous tracking of factors such as environmental conditions, equipment performance, security, and overall system health. 
 
-**What is datacenter monitoring?**
+By using advanced monitoring tools and technologies, datacenters can:
 
-Datacenter monitoring is a critical aspect of datacenter operations. It ensures that all systems and infrastructure components are functioning optimally. Monitoring involves continuous tracking of factors such as environmental conditions, equipment performance, security, and overall system health. By using advanced monitoring tools and technologies, datacenters can (1) detect potential issues before they cause damage, (2) maintain uptime, (3) prevent failures, and (4) optimize resource utilization. 
+- detect potential issues before they cause damage
+- maintain uptime
+- prevent failures
+- optimize resource utilization. 
 
 Proper datacenter monitoring helps ensure that servers, storage devices, cooling systems, power units, and networks operate within safe and efficient parameters, making it an essential practice for maintaining reliable and high-performance datacenter operations.
 
-**Who is responsible for datacenter monitoring?**  
+## Who is responsible for datacenter monitoring?
 
 Next let's review who is responsible for monitoring in each type of datacenter.
 

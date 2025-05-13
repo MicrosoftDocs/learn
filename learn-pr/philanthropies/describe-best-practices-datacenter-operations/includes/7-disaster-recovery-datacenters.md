@@ -1,7 +1,3 @@
-:::image type="content" source="../media/equipment-maintenance.png" alt-text="Screenshot of a person servicing equipment in a server room." lightbox="../media/equipment-maintenance.png":::
-
-**What is datacenter disaster recovery?** 
-
 **Disaster recovery (DR)** is a critical component of datacenter operations. It ensures that systems, applications, and data can be restored quickly and effectively after an unexpected disruption. DR is a structured approach to maintaining business continuity during and after events like natural disasters, hardware failures, or cyberattacks. Essentially, DR in Datacenters is a set of policies, tools, and procedures designed to quickly restore IT systems and data after a disruption or failure.
 
 **Disaster scenarios may include:** 
@@ -14,7 +10,7 @@
 
   - Hardware failures: Server crashes, power outages, or cooling system breakdowns.
 
-**What are the key concepts of disaster recovery?**
+## What are the key concepts of disaster recovery? To Key concepts of disaster recovery
 
 |                                    |                                                              |
 | ---------------------------------- | ------------------------------------------------------------ |

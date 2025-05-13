@@ -1,5 +1,3 @@
-**What are reliability and resiliency in datacenters?**
-
 Reliability and resiliency are critical to datacenter operations, as they ensure consistent and uninterrupted delivery of services.
 
 - **Reliability:** Reliability refers to the ability of the datacenter to consistently perform its functions without failure. It focuses on ensuring that all systems operate correctly and deliver the expected outcomes over time.
@@ -22,7 +20,7 @@ Reliability and resiliency are critical to datacenter operations, as they ensure
 
     - Fault-tolerant infrastructure.
 
-**What are key concepts of reliability and resiliency in datacenters?**
+## What are key concepts of reliability and resiliency in datacenters? To Key concepts of reliability and resiliency
 
 Reliability and resiliency are critical to datacenter operations, as they ensure consistent and uninterrupted delivery of services.
 
