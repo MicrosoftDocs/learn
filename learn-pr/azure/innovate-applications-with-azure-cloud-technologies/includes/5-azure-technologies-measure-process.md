@@ -30,17 +30,17 @@ Notifications typically report that there might be a problem without context abo
 
 After you formulate a hypothesis with the data provided by Azure Application Insights, you can analyze telemetry to measure whether the situation is now better or worse. You can embed custom business events in the application so that telemetry data contains additional information that helps in the measure process.
 
-[Funnels](/azure/azure-monitor/app/usage-funnels?azure-portal=true) can be an insightful tool. With funnels, you can predefine the *flows* that you expect users to follow when they use the application. Then you can monitor which patterns users follow, and identify problems in the applications if users behave in unexpected ways.
+[Funnels](/azure/azure-monitor/app/usage?tabs=aspnetcore#the-retention-tool?azure-portal=true) can be an insightful tool. With funnels, you can predefine the *flows* that you expect users to follow when they use the application. Then you can monitor which patterns users follow, and identify problems in the applications if users behave in unexpected ways.
 
 ### Retain users
 
-The Application Insights [retention tool](/azure/azure-monitor/app/usage-retention#the-retention-tool?azure-portal=true) offers specific functionality around user churn. It contains valuable learning data when combined with business events. For example, understanding which actions that customers who left the application unexpectedly took, allows you to formulate hypotheses with maximum business impact.
+The Application Insights [retention tool](/azure/azure-monitor/app/usage?tabs=aspnetcore#the-retention-tool?azure-portal=true) offers specific functionality around user churn. It contains valuable learning data when combined with business events. For example, understanding which actions that customers who left the application unexpectedly took, allows you to formulate hypotheses with maximum business impact.
 
 For example, if most users who abandoned your website did so from the payment method page, you'd suspect a business problem there. Maybe the payment options are insufficient or not clearly displayed, or another problem is preventing users from moving forward in their shopping process.
 
 ### Impact analysis
 
-[Impact analysis](/azure/azure-monitor/app/usage-impact?azure-portal=true) is a feature in Azure Application Insights that correlates technical aspects of the application to tangible business metrics.
+[Impact analysis](/azure/azure-monitor/app/usage?tabs=aspnetcore#the-retention-tool?azure-portal=true) is a feature in Azure Application Insights that correlates technical aspects of the application to tangible business metrics.
 
 For example, how fast should the product page load so that most users continue with their shopping process? With impact analysis, you can show the relationship between page load time and the rate of users who purchase the product shown. This information can help you to validate or reject an innovation hypothesis, and to convert business requirements into technical specifications.
 
