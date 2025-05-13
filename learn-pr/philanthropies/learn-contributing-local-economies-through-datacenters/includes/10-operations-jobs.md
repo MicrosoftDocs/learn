@@ -1,5 +1,3 @@
-:::image type="content" source="../media/cable-connection.png" alt-text="Photograph of a hand connecting cables in an electronic device." lightbox="../media/cable-connection.png":::
-
 ## Operations
 
 Datacenter operations (DCOps) includes management and maintenance of the day-to-day activities and infrastructure of a datacenter, ensuring its systems, equipment, and services operate smoothly and efficiently. From an organizational standpoint, DCOps consists of multiple teams managing different aspects of datacenter operations, from physical infrastructure to IT services. Their primary focus is maintaining uptime, ensuring efficiency, and providing continuous support to both internal and external clients.
@@ -57,5 +55,3 @@ Datacenter operations (DCOps) includes management and maintenance of the day-to-
 - **Learning and technical trainers** are responsible for ensuring the reliable and efficient functioning of the facility's electrical systems to maintain continuous uptime and support critical IT infrastructure. Their key responsibilities include:
 
   - A technical trainer in datacenters designs, delivers, and refines highly technical training programs for diverse audiences, focusing on skills such as infrastructure management, application development, or datacenter hardware operations. They develop lesson plans, stay updated on the latest technologies, and use engaging teaching methods to ensure effective knowledge transfer, whether in person or virtually. Trainers analyze learner feedback and performance metrics to improve course content and delivery, while also supporting team members by guiding content updates, overseeing course quality, and sharing best practices. Additionally, they ensure training offerings align with learner goals, certifications, and organizational objectives, while fostering collaboration within learning teams to enhance the overall training experience.
-
-  :::image type="content" source="../media/data-center-discussion.png" alt-text="Photograph of two people discussing in a data center." lightbox="../media/data-center-discussion.png":::

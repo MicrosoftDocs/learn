@@ -55,5 +55,3 @@ Datacenters serve as key technology hubs and drivers of innovation within commun
 - Facebook (Meta) in New Mexico, USA
 
   - Meta sources materials for its datacenter from local suppliers, boosting small and medium enterprises. They also supported local farmers by funding irrigation projects
-
-:::image type="content" source="../media/server-rack-closeup.png" alt-text="Photograph of a close-up view of a server rack with visible cables and hardware." lightbox="../media/server-rack-closeup.png":::

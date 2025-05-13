@@ -1,5 +1,3 @@
-:::image type="content" source="../media/industrial-tablet-check.png" alt-text="Photograph of a person using a tablet in an industrial facility." lightbox="../media/industrial-tablet-check.png":::
-
 ## Construction
 
 - **Construction Project Managers, Site Leaders, and Electrical and Mechanical Engineers** are key players in building a datacenter's physical infrastructure. They oversee construction, design, and installation, ensuring the facility meets specifications, operates efficiently, and adheres to safety and performance standards.
@@ -13,8 +11,6 @@
   - **Mechanical Engineers:** Design and implement mechanical systems, especially cooling and HVAC solutions, to maintain optimal environmental conditions for the datacenter's operations.
 
 - **Engineering** plays a vital role in designing and integrating the core infrastructure of a datacenter, from power systems and advanced cooling technologies to network infrastructure, security, and critical system monitoring. Experts in fields like electrical and mechanical engineering work alongside architects, design managers, and network specialists to ensure the facility is efficient, reliable, and built to support mission-critical operations. Key roles in this field include Architects, Professional Engineers, 3D Designers, Network Specialists (RCDD), and Operations Engineers, each contributing to the seamless functionality of modern datacenters.
-
-  :::image type="content" source="../media/steel-structure-lift.png" alt-text="Photograph of a steel structure under construction with a beam being lifted by a crane." lightbox="../media/steel-structure-lift.png":::
 
   - **Architects and Professional Engineers**: Design the overall structure and technical systems of the datacenter, ensuring they meet performance, safety, and regulatory standards. 
 
@@ -39,8 +35,6 @@
   - **Demand planning**: Forecast and plan the required quantities and timing of materials, equipment, and labor to align with the construction schedule and avoid shortages or overstocking.
 
 - **Project controllers** play a critical role in the planning, monitoring, and execution of datacenter construction projects. This function ensures that projects are completed on time, within budget, and meet quality standards. By tracking progress, managing risks, and providing key data, Project Controls help teams make informed decisions and maintain efficiency throughout the construction process. Their responsibilities can include:
-
-  :::image type="content" source="../media/spreadsheet-workspace.png" alt-text="Photograph of a person working on a laptop with a spreadsheet and folders nearby." lightbox="../media/spreadsheet-workspace.png":::
 
   - Plan and optimize resources: Develop integrated planning strategies to improve decision-making, manage risks, optimize resources, and enhance project predictability. 
 

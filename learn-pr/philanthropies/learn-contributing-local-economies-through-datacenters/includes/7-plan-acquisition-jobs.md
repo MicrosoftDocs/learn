@@ -1,5 +1,3 @@
-:::image type="content" source="../media/business-handshake.png" alt-text="Photograph of a close-up handshake in an indoor setting." lightbox="../media/business-handshake.png":::
-
 ## Planning and acquisition
 
 - **Lease and land development careers**: Lease strategy and execution strategy managers, land acquisition managers, land due diligence managers
@@ -35,8 +33,6 @@
   - They focus on managing the power infrastructure needed to ensure the reliable and efficient operation of datacenters. They oversee the design, implementation, and maintenance of electrical systems that supply uninterrupted, high-capacity power to datacenters, which is one of the most critical aspects of their functionality.
 
 - **Network infrastructure management**: Network acquisition, OSP telecom engineering (On Site Planning), sourcing engineering (Purchasing), Subsea Operations, fiber delivery engineering. These roles are essential for ensuring the connectivity, scalability, and reliability of the network systems that support datacenters. Each role focuses on specific aspects of planning, acquiring, implementing, and maintaining the network infrastructure.
-
-  :::image type="content" source="../media/electrical-panel-work.png" alt-text="Photograph of a hand working on an electrical panel with colored wires." lightbox="../media/electrical-panel-work.png":::
 
   - **Network acquisition**:
 
@@ -82,8 +78,6 @@
 
 - **Sustainability managers:** These roles focus on developing and implementing strategies to minimize the environmental impact of datacenter operations while ensuring efficiency and compliance with sustainability goals. Datacenters are known for their high energy and water consumption, so sustainability managers play a critical part in reducing carbon footprints, optimizing resource usage, and advancing green initiatives.
   
-  :::image type="content" source="../media/solar-panel-inspection.png" alt-text="Photograph of a person inspecting solar panels on a rooftop." lightbox="../media/solar-panel-inspection.png":::
-
   - Energy efficiency management: Involves improving datacenter energy efficiency by optimizing cooling systems, server layouts, and power usage, achieving lower PUE ratios, and leveraging advanced technologies like liquid cooling and AI-driven energy management. 
 
   - Renewable energy integration: Sourcing renewable energy, negotiating Power Purchase Agreements (PPAs), and reducing reliance on fossil fuels to achieve carbon-neutral or net-zero energy goals for datacenters. 
