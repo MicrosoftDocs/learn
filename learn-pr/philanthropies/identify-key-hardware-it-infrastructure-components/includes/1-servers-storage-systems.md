@@ -1,21 +1,17 @@
+In datacenters, hardware and IT infrastructure form the foundation for hosting, managing, and delivering critical applications and services. Let us explore the essential components of a datacenter, including servers, storage systems, network infrastructure, and IT apparatus. Understanding these elements is vital to designing, implementing, and maintaining efficient, scalable, and secure datacenter environments.
 >[!div class="mx-imgBorder"]
 >[![Photograph of a server in a datacenter showcasing the critical hardware components essential for hosting and managing applications and services.](../media/server-in-datacenter-hardware-components.jpg)](../media/server-in-datacenter-hardware-components.jpg#lightbox)
 
-In datacenters, hardware and IT infrastructure form the foundation for hosting, managing, and delivering critical applications and services. Let us explore the essential components of a datacenter, including servers, storage systems, network infrastructure, and IT apparatus. Understanding these elements is vital to designing, implementing, and maintaining efficient, scalable, and secure datacenter environments.
-
-## What are a couple types of servers and recent innovations for each?
+## Types of servers
 
 Datacenter servers continue to evolve with innovations that enhance efficiency, scalability, and performance. New designs integrate advanced cooling solutions, high-speed connectivity, and AI accelerators to support demanding workloads. Modular and energy-efficient features also improve flexibility, making it easier to manage resources while reducing power consumption.
-
->[!div class="mx-imgBorder"]
->[![Photograph of modern datacenter servers featuring advanced cooling solutions and high-speed connectivity to enhance efficiency and performance.](../media/modern-datacenter-servers-advanced-cooling.jpg)](../media/modern-datacenter-servers-advanced-cooling.jpg#lightbox)
 
 | Server type and component | Description | Recent innovations |
 | --- | --- | --- |
 | **Blade servers** | Compact and power-efficient, blade servers are used in high-density environments to maximize processing power in limited space. They're modular servers that fit into a shared chassis, which provides power, cooling, and networking resources. | <li>Integrated fabric switching: Advanced chassis systems now include integrated fabric switches, reducing external cabling and improving network performance.<br><li>Increased density: New blade designs enable even higher core density, such as the Cisco UCS X-Series and HPE Synergy, which can host multiple high-performance CPUs and GPUs in a single chassis.<br><li>Energy efficiency: Blade systems use shared cooling and power infrastructure, leading to lower energy consumption compared to standalone servers.<br><li>Support for AI workloads: Modern blade servers include specialized GPUs or accelerators, such as NVIDIA A100, to handle artificial intelligence (AI) and machine learning (ML) tasks. |
 | **Rack servers** | Mounted in standard racks (measured in units, e.g., 1U, 2U), these servers provide scalability and flexibility for a wide range of applications. These are highly versatile and scalable, making them suitable for a wide range of applications, from small businesses to large datacenters. | <li>Advanced Cooling Solutions: New designs integrate liquid cooling and direct-to-chip cooling options to support high-power CPUs and GPUs, such as AMD EPYC or Intel Xeon Scalable processors.<br><li>Composable Infrastructure: Modern rack servers can be disaggregated into compute, storage, and networking modules, enabling better resource utilization and flexibility.<br><li>Accelerator Integration: Support for AI/ML accelerators, including Intel Habana, AMD Instinct, or NVIDIA GPUs, allows these servers to handle complex computational tasks efficiently.<br><li>High-Speed Connectivity: Many rack servers now include PCIe 5.0 slots and support for 400Gbps Ethernet or InfiniBand for faster data transfer. |
 
-## What are key server components and recent innovations for each?
+## Key server components
 
 Key server components include processors (CPUs), memory (RAM), storage (HDDs/SSDs), power supplies, and cooling systems.  
 
@@ -27,7 +23,7 @@ Key server components include processors (CPUs), memory (RAM), storage (HDDs/SSD
 | **Power supplies innovations** | <li>High-efficiency units: Power supplies with 80 PLUS Titanium certification enable higher efficiency levels, translating to less power wasted as heat for lower electricity usage and cooling requirements, resulting in operational cost savings.<br><li>Redundancy and failover: Modular power supplies with N+1 or N+2 configurations ensure uninterrupted power delivery. |
 | **Cooling systems innovations** | <li>Liquid cooling: Direct liquid cooling (DLC) and immersion cooling are increasingly used in high-density servers to manage heat more efficiently than traditional air cooling.<br><li>Smart cooling: AI-driven cooling systems dynamically adjust airflow and temperatures based on real-time workload demands.<br>  **Example:** Google’s Data Centers – Google has implemented AI-driven cooling systems in its data centers, using machine learning algorithms to analyze data from thousands of sensors. These systems adjust cooling settings in real time to optimize energy efficiency and maintain optimal temperatures, significantly reducing energy consumption. |
 
-## What are a few storage options and recent innovations for each?
+## Storage options
 
 Data storage is a critical aspect of datacenter operations, supporting a wide range of applications and services. Each storage option—SAN, NAS, and object storage— serves distinct purposes in datacenters, and innovations in this field continue to enhance their performance, scalability, and efficiency. SANs lead in high-performance environments, NAS excels in shared file storage, and object storage dominates in unstructured data and cloud-native applications.  
 
