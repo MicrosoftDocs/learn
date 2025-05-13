@@ -15,7 +15,7 @@ To sign in a user, you need to create a user interface (UI) to:
 
 In your UI, add a button, whose select event starts a sign-in as shown in the following code snippet:
 
-  ```Kotlin
+      ```Kotlin
       CoroutineScope(Dispatchers.Main).launch {
            val parameters = NativeAuthSignInParameters(username = email)
            // Assign 'password' param if you sign in with username (email) and password
@@ -41,7 +41,7 @@ In your UI, add a button, whose select event starts a sign-in as shown in the fo
                }
            }
        }
-      ```
+      ``` 
 
 If the user isn't required to submit a passcode, such as where a user signs in with email and password, use the following code snippet:
 
