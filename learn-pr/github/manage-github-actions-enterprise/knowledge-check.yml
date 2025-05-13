@@ -47,3 +47,31 @@ quiz:
     - content: "Encrypted secrets are encrypted environment variables you can create to store sensitive information."
       isCorrect: true
       explanation: "Correct. Once created, encrypted secrets become available for use in your workflows and actions at the level at which they were created (organization or repository)."
+  - content: "What type of credential should be avoided for accessing repositories from GitHub Actions?"
+    choices:
+    - content: "Repository deploy keys"
+      isCorrect: false
+      explanation: "Incorrect. Repository deploy keys are actually recommended as they grant access only to a single repository."
+    - content: "Personal access token (classic)"
+      isCorrect: true
+      explanation: "Correct. Personal access tokens (classic) grant broad access to all repositories you have access to, creating unnecessary security risks."
+    - content: "GitHub App tokens"
+      isCorrect: false
+      explanation: "Incorrect. GitHub App tokens provide granular permissions and are recommended for cross-repository access."
+    - content: "GITHUB_TOKEN"
+      isCorrect: false
+      explanation: "Incorrect. GITHUB_TOKEN is recommended as it's intentionally scoped to a single repository."
+  - content: "Which feature in GitHub allows you to enforce that automated tests must pass before code can be merged to the main branch?"
+    choices:
+    - content: "Organization secrets"
+      isCorrect: false
+      explanation: "Incorrect. Organization secrets store sensitive information like API keys and credentials for use in GitHub Actions workflows. While important for security, they don't enforce automated test requirements before merging code."
+    - content: "Repository rule sets"
+      isCorrect: true
+      explanation: "Correct. Repository rule sets allow you to enforce policies across branches, including requiring status checks (which represent automated tests) to pass before merging. As stated in the content: \"Rule Sets can enforce that certain Actions (e.g., tests) must pass before merges\" and under Components of Rule Sets, it mentions \"Require status checks to pass before merging\" as a Pull Request Requirement."
+    - content: "Workflow templates"
+      isCorrect: false
+      explanation: "Incorrect. Workflow templates help standardize automation across an organization by providing predefined workflow structures, but they don't enforce that those workflows must pass before merging. They simply make it easier to create consistent workflows."
+    - content: "Runner groups"
+      isCorrect: false
+      explanation: "Incorrect. Runner groups organize self-hosted runners in GitHub Actions, allowing you to control which repositories can use specific runners. They don't enforce test requirements before merging code."
