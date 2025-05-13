@@ -29,10 +29,10 @@ There are two options for provisioning capacity:
 > Regardless of the method you choose, you'll need to purchase a minimum of 1 and a maximum of 100 SCUs.
 
 # [Provision through Copilot](#tab/provision-through-copilot)
-:::image type="content" source="../media/set-up-capacity-new-v2.png" lightbox="../media/set-up-capacity-new-v2.png" alt-text="Screen capture showing the page for capacity provisioning through Copilot.":::
+:::image type="content" source="../media/create-security-capacity-page.png" lightbox="../media/create-security-capacity-page.png" alt-text="Screen capture showing the page for capacity provisioning through Copilot.":::
 
 # [Provision through Azure portal](#tab/provision-through-azure)
-:::image type="content" source="../media/set-up-capacity-azure-portal.png" lightbox="../media/set-up-capacity-azure-portal.png" alt-text="Screen capture showing the page for capacity provisioning through Azure.":::
+:::image type="content" source="../media/create-capacity-in-azure.png" lightbox="../media/create-capacity-in-azure.png" alt-text="Screen capture showing the page for capacity provisioning through Azure.":::
 
 ---
 
