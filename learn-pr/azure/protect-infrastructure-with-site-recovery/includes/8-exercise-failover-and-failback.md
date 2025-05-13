@@ -1,8 +1,8 @@
 You can fail over protected resources in three ways: using the portal, using PowerShell, or automating the failover with an Azure Automation runbook.
 
-With all your resources protected, you can run a real failover of your *patient-records* VM. With the DR drill complete, you'll do the failover with PowerShell and the portal. After completion, you'll be in a better position to recommend which approach your company should use.
+With all your resources protected, you can run a real failover of your *patient-records* virtual machine (VM). With the disaster recovery drill complete, you do the failover with PowerShell and the portal. After completion, you're in a better position to recommend which approach your company should use.
 
-In this exercise, you'll complete failover for a VM using PowerShell, and fail back the VM using the Azure portal.
+In this exercise, you complete failover for a VM using PowerShell, and fail back the VM using the Azure portal.
 
 ## Fail over a VM to a secondary region using PowerShell
 
@@ -46,13 +46,13 @@ In this exercise, you'll complete failover for a VM using PowerShell, and fail b
     > [!NOTE]
     > You can view the progress of the failover job at the same time as the script is running.
 
-1. When the failover completes, select **Virtual machines** from the Azure home page to check that the *patient-record* VM has been failed over to the east coast region.
+1. When the failover completes, select **Virtual machines** from the Azure home page to check that the *patient-record* VM was failed over to the east coast region.
 
 1. There are now three VMs, with two named **patient-records**.
 
 ## Reprotect the VM using PowerShell
 
-1. After the failover has completed successfully, you can reprotect the VM.
+1. After the failover completes successfully, you can reprotect the VM.
 
 1. Run the following commands:
 
@@ -67,7 +67,7 @@ In this exercise, you'll complete failover for a VM using PowerShell, and fail b
     ```
 
     These PowerShell commands:
-    - Set up variables that the `Update-AzRecoveryServicesAsrProtectionDirection` command will use.
+    - Set up variables that the `Update-AzRecoveryServicesAsrProtectionDirection` command uses.
     - Require a storage account to store the reprotected logs and data. This storage needs to be in the same region as the VM that is being protected.
     - Start the reprotect job using the last line, and store a reference to it.
 
@@ -118,7 +118,7 @@ The job to reprotect the VM can take approximately 10 minutes to complete.
 
 1. Select **patient-records**.
 
-    You can't fail back the VM until the replication has completed, and synchronization is 100% completed. The synchronization process can take several minutes to complete.
+    You can't fail back the VM until the replication completes, and synchronization is 100% completed. The synchronization process can take several minutes to complete.
 
 1. After synchronization completes, select **Failover**.
 

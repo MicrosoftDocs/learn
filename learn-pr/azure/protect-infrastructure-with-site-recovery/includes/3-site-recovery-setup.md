@@ -9,17 +9,17 @@ Here, we explore how to take advantage of the automated features in Site Recover
 We need to set up our environment for exercises in subsequent units. Because this setup takes a few minutes to complete, let's start the process now, and then we can work through some of the theory while the configuration completes in the background.
 
 > [!NOTE]
-> If you want to complete the following setup, but you don't have an Azure subscription or prefer not to use your account, you need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+> If you want to complete the following setup, but you don't have an Azure subscription or prefer not to use your account. You need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
-Let's assume we have two virtual machines (VMs) configured in the organization. We'll configure the following services in the West US region to simulate the configured VMs.
+Let's assume we have two virtual machines (VMs) configured in the organization. To simulate the configured VMs, let's configure the following services in the West US region.
 
 - A virtual network
 - Two VMs
 - A storage account
 
-We'll also configure a resource group in East US. We'll later configure Site Recovery to use the East US region as our target environment.
+Let's also configure a resource group in the East USregion. Later, we configure Site Recovery to use the East US region as our target environment.
 
-Our first step is to create our exercise environment. We'll run a script that creates our company's infrastructure in Azure. After the script completes, we'll have a virtual network, two VMs, and a storage account that we'll use for our Recovery Services vault.
+Our first step is to create our exercise environment. We run a script that creates our company's infrastructure in Azure. After the script completes, we'll have a virtual network, two VMs, and a storage account that we'll use for our Recovery Services vault.
 
 1. Sign in to the [Azure portal](https://portal.azure.com) with your credentials, and start a Cloud Shell session.
 
@@ -79,10 +79,10 @@ Site Recovery doesn't support controlling network connectivity via an authentica
 
 | URL | Description |
 | --- | --- |
-| login.microsoftonline.com | For the Azure Site Recovery URLs to authenticate |
-| *.blob.core.windows.net | To write VM data to the source storage account cache |
-| *.hypervrecoverymanager.windowsazure.com | For Site Recovery to communicate with the VM |
-| *.servicebus.windows.net | For Site Recovery monitoring and diagnostic data from the VM |
+| login.microsoftonline.com | For Site Recovery to authenticate URLs. |
+| *.blob.core.windows.net | To write VM data to the source storage account cache. |
+| *.hypervrecoverymanager.windowsazure.com | For Site Recovery to communicate with the VM. |
+| *.servicebus.windows.net | For Site Recovery monitoring and diagnostic data from the VM. |
 
 If you prefer to control the connectivity using IP addresses instead, you need to add the IP address ranges for:
 
