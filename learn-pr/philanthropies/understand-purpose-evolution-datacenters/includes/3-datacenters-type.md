@@ -23,11 +23,11 @@ These facilities lease (rent out) space, power, cooling, and networking to multi
 
 - **Example**: Companies renting server racks in a third-party facility such as Equinix, Digital Realty, NTT Global Data Centers.
 
-    In a colocation datacenter, clients rent space (rack space, cabinets, or even entire rooms) within the datacenter facility but own and manage their own servers, storage, and networking equipment.
+- In a colocation datacenter, clients rent space (rack space, cabinets, or even entire rooms) within the datacenter facility but own and manage their own servers, storage, and networking equipment.
 
-    The responsibility for hardware management, configuration, updates, and maintenance lies with the client.
+- The responsibility for hardware management, configuration, updates, and maintenance lies with the client.
 
-    The datacenter provider is responsible for physical infrastructure (such as power, cooling, security, and connectivity), but not the client's IT systems.
+- The datacenter provider is responsible for physical infrastructure (such as power, cooling, security, and connectivity), but not the client's IT systems.
 
 ### Cloud datacenter
 
@@ -57,7 +57,7 @@ Massive facilities operated by tech giants to handle extremely high levels of da
 
 - **Example**: Datacenters owned by Meta, Google, Microsoft or Amazon.
 
-    These datacenters are built to scale rapidly and accommodate thousands or even millions of servers to handle massive computing workloads. They're often associated with cloud service providers like Amazon Web Services (AWS), Google Cloud, or Microsoft Azure, and are designed to support highly scalable, global services. The infrastructure is massive, typically spanning hundreds of thousands of square feet or more.
+- These datacenters are built to scale rapidly and accommodate thousands or even millions of servers to handle massive computing workloads. They're often associated with cloud service providers like Amazon Web Services (AWS), Google Cloud, or Microsoft Azure, and are designed to support highly scalable, global services. The infrastructure is massive, typically spanning hundreds of thousands of square feet or more.
 
 ### Managed services datacenter
 
@@ -65,11 +65,11 @@ These datacenters are managed by a third-party provider, handling operations lik
 
 - **Example**: IT service companies managing datacenters for small businesses. Rackspace Technology, IBM Cloud Managed Services, CenturyLink (Lumen Technologies), Tata Communications etc.
 
-    In a managed service data center, the client outsources both their infrastructure and management to the service provider.
+- In a managed service data center, the client outsources both their infrastructure and management to the service provider.
 
-    The service provider owns, manages, and maintains the hardware, software, network configurations, and other IT services, providing comprehensive IT management for the client.
+- The service provider owns, manages, and maintains the hardware, software, network configurations, and other IT services, providing comprehensive IT management for the client.
 
-    The client simply rents fully managed servers or IT systems, which can include cloud hosting, storage, and backup services.
+- The client simply rents fully managed servers or IT systems, which can include cloud hosting, storage, and backup services.
 
 ### Software-defined datacenter (SDDC)
 
