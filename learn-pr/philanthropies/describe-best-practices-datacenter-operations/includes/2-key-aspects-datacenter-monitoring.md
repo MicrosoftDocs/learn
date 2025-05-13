@@ -1,6 +1,4 @@
-:::image type="content" source="../media/engineer-servers.png" alt-text="Screenshot of an engineer in front of servers." lightbox="../media/engineer-servers.png":::
-
-**What are the key aspects of datacenter monitoring?**
+## What are the key aspects of datacenter monitoring?
 
 - **Environmental:** It is important to maintain optimal conditions that prevent equipment failure and improve efficiency.
 

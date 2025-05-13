@@ -1,6 +1,4 @@
-:::image type="content" source="../media/network-technician.png" alt-text="Screenshot of a network technician." lightbox="../media/network-technician.png":::
-
-**What are the key aspects of datacenter maintenance?**
+## What are the key aspects of datacenter maintenance?
 
 - **Hardware maintenance:** 
 

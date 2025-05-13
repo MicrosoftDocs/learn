@@ -1,10 +1,8 @@
-:::image type="content" source="../media/team-troubleshooting.png" alt-text="Screenshot of a team troubleshooting in a server room." lightbox="../media/team-troubleshooting.png":::
-
-**What is datacenter maintenance?**
+## What is datacenter maintenance?
 
 Datacenter maintenance is a vital component of datacenter operations. It focuses on keeping all infrastructure and equipment running smoothly and efficiently. Datacenter maintenance involves regular inspection, servicing, and updating of systems, such as servers, storage devices, power supplies, cooling units, and networking hardware. Through proactive maintenance practices, datacenters can address potential issues before they lead to failures, reduce downtime, and extend the lifespan of critical equipment. Scheduled maintenance tasks (such as software updates, hardware replacements, and system optimizations) help maintain optimal performance and ensure that datacenter services remain reliable and available for users.
 
-**Who is responsible for datacenter maintenance?**
+## Who is responsible for datacenter maintenance?
 
 It's important to discuss who is responsible for maintenance in datacenters as this varies depending on the type of datacenter. Note that the individuals or groups that are responsible for datacenter maintenance are similar to those that are responsible for datacenter monitoring.
 
