@@ -23,4 +23,5 @@ Now that you completed this module, you can:
 - [Security Copilot in Microsoft Defender XDR](/microsoft-365/security/defender/security-copilot-in-microsoft-365-defender)
 - [Security Copilot in Microsoft Purview](/purview/copilot-in-purview-overview)
 - [Security Copilot in Microsoft Entra](/entra/fundamentals/copilot-security-entra)
-- [Security Copilot in Defender for Cloud (Preview)](/azure/defender-for-cloud/copilot-security-in-defender-for-cloud)
+- [Workspaces overview](/copilot/security/workspaces-overview)
+- [Add a source by uploading a file (Preview)](/copilot/security/upload-file)
