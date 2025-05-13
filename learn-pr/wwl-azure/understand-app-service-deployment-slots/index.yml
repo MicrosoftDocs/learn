@@ -43,6 +43,7 @@ units:
 - learn.wwl.understand-app-service-deployment-slots.explore-staging-environments
 - learn.wwl.understand-app-service-deployment-slots.examine-slot-swapping
 - learn.wwl.understand-app-service-deployment-slots.swap
+- learn.wwl.exercise-swap-deployment-slots
 - learn.wwl.understand-app-service-deployment-slots.route-traffic
 - learn.wwl.understand-app-service-deployment-slots.knowledge-check
 - learn.wwl.understand-app-service-deployment-slots.summary
