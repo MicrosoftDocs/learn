@@ -28,7 +28,7 @@ Note: I didn't script in this section to Zarmada, but it still feels relevant. P
 
 In this task, you enable the Microsoft Purview plugin. For this task, you work in the standalone experience.
 
-1. Open the simulated environment by selecting this link: **[Microsoft Security Copilot]( https://app.highlights.guide/start/cccb66cb-3ca0-4d88-92dd-b6bee0f2c563?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
+1. Open the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/6fca2b1c-bf14-4c26-9eda-48be3c0b5013?token=045faae1-1078-4eac-bf56-e12472eddaf9&link=1&azure-portal=true)**.
 
 1. From the Microsoft Security Copilot landing page, select the **Sources icon** ![sources icon](../media/sources-icon.png) in the prompt bar.
     1. From the manage sources window, under the Microsoft plugins, select **Show 11 more**.
@@ -54,7 +54,7 @@ In this task, you investigate an alert related to potential data exfiltration. Y
 
 Microsoft Copilot assumes the permissions of the user when it tries to access the data to answer queries. To access data associated with the Microsoft Purview Insider Risk Management solution, the Copilot user must be assigned an appropriate role.
 
-1. Open the environment by selecting this link: **[Microsoft Purview Portal](https://app.highlights.guide/start/f7107adc-8d47-43ae-a7f7-f9e9a35881c4?token=045faae1-1078-4eac-bf56-e12472eddaf9&azure-portal=true)**. A pop-up window appears that says, "Welcome to the new Microsoft Purview portal!"
+1. Open the environment by selecting this link: **[Microsoft Purview Portal](https://app.highlights.guide/start/6fca2b1c-bf14-4c26-9eda-48be3c0b5013?token=045faae1-1078-4eac-bf56-e12472eddaf9&azure-portal=true)**. A pop-up window appears that says, "Welcome to the new Microsoft Purview portal!"
     1. Select the box where it says **"This is a public preview. I agree to the terms of data flow disclosure, the preview section of the Product Terms, and Privacy Statements."**
     1. Select **Try now**.
     1. You can close the Explore all solutions pop-up by selecting the **X**. Alternatively, you can select Next to go through the information. If you go through all six information windows, you need to scroll-up to get back to the top of the page, when you're done.
