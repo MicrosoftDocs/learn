@@ -14,12 +14,12 @@ title: Learn about contributing to local economies through datacenters
 summary: This module explores the vital role datacenters (DCs) play in shaping local economies and communities. More than just hubs of technology, datacenters serve as engines of opportunity, driving investment, innovation, and long-term prosperity. Economic impact -  Learn how datacenters contribute to job creation, enhance local services, and foster economic growth. Community engagement - Examine how datacenters work with local communities to support philanthropic and education efforts. Long-term benefits - Understand the lasting effects of datacenters on regional development and infrastructure. By the end of this module, you'll have a deeper understanding of the transformative impact datacenters have on the regions they serve.
 
 abstract: |
-  - Understanding of economic and social development principles.
-prerequisites: |
   - Understand the economic and local contributions of datacenters, including job creation and infrastructure development.
   - Learn about community philanthropy and partnerships.
   - Examine community engagement throughout the datacenter lifecycle.
   - Explore the roles and responsibilities of the people involved in datacenter design, delivery, and operations.
+prerequisites: |
+  - Understanding of economic and social development principles.
 products:
   - azure
   - azure-cloud-services
