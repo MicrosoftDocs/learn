@@ -36,13 +36,13 @@ In this task, you enable the Microsoft Purview plugin. For this task, you work i
     1. Select the **Information icon** ![screenshot of information icon](../media/information-icon.png). Note the instructions then close the plugins page by selecting the **X** on the top-right corner of the manage sources window.
 
 1. Select the **Home menu** ![screenshot of the home menu icon](../media/home-menu-icon.png), often referred to as the hamburger icon.
-    1. Select **Owner settings**.
+    1. Select **Plugin settings**.
     1. Enable the toggle switch next to **Allow Security Copilot to access data from your Microsoft 365 services**.
     1. Return to the Copilot home page, by selecting **Microsoft Security Copilot** on the top-left of the page next to the home menu (hamburger) icon.
 
 1. Now that Copilot is enabled to access data from your Microsoft 365 services, return to the plugins page and enable the Microsoft Purview plugin.
     1. From the prompt bar, select the **Sources icon**.
-    1. From the manage sources window, under the Microsoft plugins, select **Show 11 more**.
+    1. From the manage sources window, under the Microsoft plugins, select **Show 13 more**.
     1. Enable the toggle switch next to Microsoft Purview to enable the plugin.
     1. Close the manage sources window by selecting the **X**.
 
