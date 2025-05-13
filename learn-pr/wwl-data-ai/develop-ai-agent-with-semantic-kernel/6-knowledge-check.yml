@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-agent-with-semantic-kernel.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This unit contains a knowledge check which can help learners reinforce their understanding of the material.
+  author: buzahid
+  ms.author: buzahid
+  ms.date: 03/25/2025
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "What are the key steps to create an AzureAIAgent?"  
+    choices:  
+      - content: "Initialize the agent by defining an LLM model in the AzureAIAgentThread constructor."  
+        isCorrect: false  
+        explanation: "Incorrect. The agent definition specifies the model, not the thread constructor." 
+      - content: "Create an Azure AI agents client, create an agent definition, and instantiate the agent."  
+        isCorrect: true  
+        explanation: "Correct. These steps ensure that the agent is correctly defined and can interact with Azure AI Foundry services."  
+      - content: "Deploy a custom AI model before creating an AzureAIAgentSettings object."  
+        isCorrect: false  
+        explanation: "Incorrect. AzureAIAgent does not require deploying a custom AI model before setup."   
+  - content: "Which component in the Agent Framework manages conversation state and stores messages?"  
+    choices:  
+      - content: "Agent threads"  
+        isCorrect: true  
+        explanation: "Correct. Agent threads store conversations and maintain conversation state across multiple interactions."  
+      - content: "Agent chat"  
+        isCorrect: false  
+        explanation: "Incorrect. Agent chat provides the structure for multi-agent interactions but doesn't store messages."  
+      - content: "AI service connectors"  
+        isCorrect: false  
+        explanation: "Incorrect. AI service connectors allow AI models to interact with external services but don't handle conversation state."  
+  - content: "Which step is necessary to enable an AzureAIAgent to use a plugin?"  
+    choices:  
+      - content: "Modify the AI model's architecture to integrate the plugin"  
+        isCorrect: false  
+        explanation: "Incorrect. Plugins work through function calling and don't require modifications to the AI model itself."  
+      - content: "Configure the plugin in Azure portal before using it in Semantic Kernel"  
+        isCorrect: false  
+        explanation: "Incorrect. Plugins are defined and added programmatically in the codebase, not configured in the Azure portal."  
+      - content: "Define a class with methods annotated using the `kernel_function` decorator"  
+        isCorrect: true  
+        explanation: "Correct. The first step in using a plugin is defining a class and annotating its methods with the `kernel_function` decorator so the AI knows how to use them."  

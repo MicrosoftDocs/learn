@@ -1,13 +1,12 @@
 Managing security can be difficult with common identity-related attacks like password spray, replay, and phishing becoming more and more popular. Security defaults provide secure default settings that Microsoft manages on behalf of organizations to keep customers safe until organizations are ready to manage their own identity security story. Security defaults provide preconfigured security settings, such as:
 
- -  Requiring all users to register for multifactor authentication.
- -  Requiring administrators to perform multifactor authentication.
- -  Blocking legacy authentication protocols.
- -  Requiring users to perform multifactor authentication when necessary.
- -  Protecting privileged activities like access to the Azure portal.
+ - Requiring all users to register for multifactor authentication.
+ - Requiring administrators to perform multifactor authentication.
+ - Blocking legacy authentication protocols.
+ - Requiring users to perform multifactor authentication when necessary.
+ - Protecting privileged activities like access to the Azure portal.
     
-    :::image type="content" source="../media/security-defaults-azure-active-directory-portal-1d0b1406-c9280b39.png" alt-text="Screenshot of the Microsoft Entra admin center with the toggle to enable security defaults.":::
-    
+   :::image type="content" source="../media/security-defaults-azure-active-directory-portal.png" alt-text="Screenshot of the Microsoft Entra admin center with the toggle to enable security defaults.":::
 
 ## Availability
 
@@ -33,15 +32,15 @@ Users with privileged access have increased access to your environment. Due to t
 
 After registration with Multifactor Authentication is finished, the following nine Microsoft Entra administrator roles will be required to perform additional authentication every time they sign in:
 
- -  Global Administrator
- -  SharePoint Administrator
- -  Exchange Administrator
- -  Conditional Access Administrator
- -  Security Administrator
- -  Helpdesk Administrator
- -  Billing Administrator
- -  User Administrator
- -  Authentication Administrator
+ - Global Administrator
+ - SharePoint Administrator
+ - Exchange Administrator
+ - Conditional Access Administrator
+ - Security Administrator
+ - Helpdesk Administrator
+ - Billing Administrator
+ - User Administrator
+ - Authentication Administrator
 
 ### Protecting all users
 
@@ -55,8 +54,8 @@ One common method to improve protection for all users is to require a stronger f
 
 To give your users easy access to your cloud apps, Microsoft Entra ID supports a variety of authentication protocols, including legacy authentication. *Legacy authentication* is an authentication request made by:
 
- -  Clients that don't use modern authentication (for example, an Office 2010 client). Modern authentication encompasses clients that implement protocols, such as OAuth 2.0, to support features like multifactor authentication and smart cards. Legacy authentication typically only supports less secure mechanisms like passwords.
- -  Client that uses mail protocols such as IMAP, SMTP, or POP3.
+ - Clients that don't use modern authentication (for example, an Office 2010 client). Modern authentication encompasses clients that implement protocols, such as OAuth 2.0, to support features like multifactor authentication and smart cards. Legacy authentication typically only supports less secure mechanisms like passwords.
+ - Client that uses mail protocols such as IMAP, SMTP, or POP3.
 
 Today, the majority of compromising sign-in attempts come from legacy authentication. Legacy authentication does not support multifactor authentication. Even if you have a multifactor authentication policy enabled on your directory, an attacker can authenticate by using an older protocol and bypass multifactor authentication.
 

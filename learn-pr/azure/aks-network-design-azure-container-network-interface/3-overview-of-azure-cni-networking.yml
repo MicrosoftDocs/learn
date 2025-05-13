@@ -2,8 +2,6 @@
 uid: learn.aks-network-design-azure-container-network-interface.3-overview-of-azure-cni-networking
 title: Overview of Azure CNI networking
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Overview of Azure CNI networking
   description: This unit provides an overview of the key components of Azure CNI networking.
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/3-overview-of-azure-cni-networking.md)]
-
+

@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.choose-storage-approach-in-azure.5-choose-the-right-azure-service-for-your-data
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Choose a storage solution in Azure
   description: Choose a storage solution in Azure.
   ms.date: 10/18/2024
@@ -13,4 +11,4 @@ title: Choose a storage solution on Azure
 durationInMinutes: 7
 content: |
   [!include[](includes/5-choose-the-right-azure-service-for-your-data.md)]
-
+

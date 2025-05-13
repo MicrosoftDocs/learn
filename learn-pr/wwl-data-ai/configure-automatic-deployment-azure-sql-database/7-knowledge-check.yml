@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-automatic-deployment-for-azure-sql-database.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 02/26/2025
   author: JulianePadrao
@@ -61,4 +59,4 @@ quiz:
       explanation: "Correct. `az sql server create` creates a SQL Database."
     - content: "az sql db create"
       isCorrect: false
-      explanation: "Incorrect. `az sql db create` creates a database, not a logical server for Azure SQL Database."
+      explanation: "Incorrect. `az sql db create` creates a database, not a logical server for Azure SQL Database."

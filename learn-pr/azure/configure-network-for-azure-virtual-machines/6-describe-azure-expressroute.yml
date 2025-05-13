@@ -2,11 +2,9 @@
 uid: learn.configure-the-network-for-your-virtual-machines.6-describe-azure-expressroute
 title: Explore Azure ExpressRoute
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Azure ExpressRoute
   description: Explore Azure ExpressRoute
-  ms.date: 11/01/2023
+  ms.date: 04/22/2025
   author: duongau
   ms.author: duau
   ms.topic: unit

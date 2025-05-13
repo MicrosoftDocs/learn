@@ -2,17 +2,15 @@
 uid: learn.wwl.retrieval-augmented-generation-azure-databricks.prepare-data
 title: Prepare your data for RAG
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Prepare your data for RAG
   description: "Prepare your data for RAG"
-  ms.date: 08/12/2024
+  ms.date: 03/20/2025
   author: wwlpublish
-  ms.author: madiepev
+  ms.author: theresai
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/3-prepare-data.md)]
-
+

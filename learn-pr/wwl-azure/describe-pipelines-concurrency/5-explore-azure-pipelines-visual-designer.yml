@@ -2,8 +2,6 @@
 uid: learn.wwl.describe-pipelines-concurrency.explore-azure-pipelines-visual-designer
 title: Explore Azure Pipelines and Visual Designer
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Azure Pipelines and Visual Designer
   description: "Explore Azure Pipelines and Visual Designer"
   ms.date: 05/23/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/5-explore-azure-pipelines-visual-designer.md)]
+  [!include[](includes/5-explore-azure-pipelines-visual-designer.md)]

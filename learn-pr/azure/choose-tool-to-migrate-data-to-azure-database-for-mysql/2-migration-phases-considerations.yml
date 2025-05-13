@@ -2,8 +2,6 @@
 uid: learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.migration-phases-considerations
 title: Migration phases and considerations
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Migration phases and considerations
   description: "This unit covers the phases and considerations in database migrations to Azure Database for MySQL flexible servers."
   ms.date: 08/28/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/2-migration-phases-considerations.md)]
-
+

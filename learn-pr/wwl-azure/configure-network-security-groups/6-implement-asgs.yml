@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Implement application security groups
   description: "Implement application security groups for machines in your virtual network."
-  ms.date: 02/12/2025
+  ms.date: 04/28/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

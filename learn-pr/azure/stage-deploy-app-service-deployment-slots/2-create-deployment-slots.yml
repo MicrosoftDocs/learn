@@ -2,11 +2,9 @@
 uid: learn.azure.stage-deploy-app-service-deployment-slots.2-create-deployment-slots
 title: Create deployment slots
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create deployment slots
   description: Learn what deployment slots are and why they're helpful.
-  ms.date: 04/11/2023
+  ms.date: 04/22/2025
   author: cephalin
   ms.author: cephalin
   ms.topic: unit
@@ -31,11 +29,11 @@ quiz:
     choices:
     - content: "Virtual machines"
       isCorrect: false
-      explanation: "All of the slots for a web app share the same virtual machines. But they have different host names."
+      explanation: "All of the web app deployment slots share the same virtual machines. But they have different host names."
     - content: "Host names"
       isCorrect: true
-      explanation: "The slots for a web app have different host names. They share the same virtual machines and deployment plans."
+      explanation: "The deployment slots for a web app have different host names. They share the same virtual machines and deployment plans."
     - content: "Deployment plans"
       isCorrect: false
-      explanation: "All of the slots for a web app share the same deployment plan. They have different host names."
+      explanation: "All of the web app deployment slots share the same deployment plan. But they have different host names."
 

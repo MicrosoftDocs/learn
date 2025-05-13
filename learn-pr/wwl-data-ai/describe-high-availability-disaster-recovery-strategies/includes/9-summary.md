@@ -3,9 +3,6 @@ Deploying the right HADR solution in Azure is more than just picking a feature. 
 Now that you've reviewed this module, you should be able to:
 
 - Explain recovery time objective (RTO)
-
 - Explain recovery point objective (RPO)
-
 - Explain the available HADR options for both IaaS and PaaS
-
 - Devise a HADR strategy

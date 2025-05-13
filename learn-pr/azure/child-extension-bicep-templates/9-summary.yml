@@ -2,8 +2,6 @@
 uid: learn.azure.child-extension-bicep-templates.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: summary
   title: Summary
   description: This unit summarizes what you learned about using Bicep.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]
-
+

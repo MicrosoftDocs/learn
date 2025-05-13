@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.train-evaluate-regression-models.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 08/10/2024
   author: madiepev
@@ -49,4 +47,4 @@ quiz:
     - content: "On average, predictions are 0.95 higher than actual values"
       isCorrect: false
       explanation: "Incorrect. The R-squared metric is a measure of how much of the variance can be explained by the model."
-
+

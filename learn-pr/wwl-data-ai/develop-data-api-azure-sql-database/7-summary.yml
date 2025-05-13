@@ -2,8 +2,6 @@
 uid: learn-wwl.develop-data-api-azure-sql-database.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 10/10/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/7-summary.md)]

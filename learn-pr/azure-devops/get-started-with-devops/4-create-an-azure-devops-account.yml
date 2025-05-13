@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.get-started-with-devops.4-create-an-azure-devops-account
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create an Azure DevOps organization
   description: Create an Azure DevOps organization
   ms.date: 10/02/2024
@@ -14,4 +12,4 @@ title: Exercise - Create an Azure DevOps organization
 durationInMinutes: 10
 content: |
  [!include[](includes/4-create-an-azure-devops-account.md)]
-
+

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-sap-partnership.organizational-productivity-enhance-collaborate-enterprise-resource-plan
+title: Driving organizational productivity with enhanced collaborative ERP
+metadata:
+  title: Driving organizational productivity with enhanced collaborative ERP
+  description: "Driving organizational productivity with enhanced collaborative ERP"
+  ms.date: 03/26/2025
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: unit
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-organizational-productivity-enhance-collaborate-enterprise-resource-plan.md)]

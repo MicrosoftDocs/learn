@@ -2,8 +2,6 @@
 uid: learn.wwl.work-azure-blob-storage.create-client-object
 title: Create a client object
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create a client object
   description: "Create a client object"
   ms.date: 07/12/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-create-client-object.md)]
+  [!include[](includes/3-create-client-object.md)]

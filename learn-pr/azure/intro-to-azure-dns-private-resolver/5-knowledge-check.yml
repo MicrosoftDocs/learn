@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-dns-private-resolver.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Check what you learned about Azure DNS Private Resolver.
   ms.date: 01/31/2024
   author: ricmmartins
@@ -47,4 +45,4 @@ quiz:
       explanation: "Incorrect: This is what the Inbound Endpoint does."
     - content: "The DNS resolver's outbound endpoint conditionally forwards the request to on-premises or other target DNS servers."
       isCorrect: true
-      explanation: "Correct: This is an accurate explanation of what the DNS resolver's outbound endpoint does."
+      explanation: "Correct: This is an accurate explanation of what the DNS resolver's outbound endpoint does."

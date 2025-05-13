@@ -2,8 +2,6 @@
 uid: learn.wwl.deploy-manage-container-app-using-azure-container-apps.prepare-deployment-tools-resources
 title: Prepare your app deployment tools and resources
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Prepare your app deployment tools and resources
   description: "Prepare your app deployment tools and resources"
   ms.date: 10/31/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 40
 content: |
-  [!include[](includes/2-prepare-deployment-tools-resources.md)]
+  [!include[](includes/2-prepare-deployment-tools-resources.md)]

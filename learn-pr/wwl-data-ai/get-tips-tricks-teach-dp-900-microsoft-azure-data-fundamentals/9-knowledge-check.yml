@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 12/14/2023
   author: wwlpublish
@@ -48,4 +46,4 @@ quiz:
       explanation: "Feedback: Incorrect. The correct answer is a) provision labs before learning path instruction time as it can take up to 10-15 minutes for a new account to be provisioned. Therefore, by provisioning the labs prior to instructional time instructors can maximize learning in the DP-900 Microsoft Azure Data Fundamentals course."
     - content: "Provision labs following learning path instructional time"
       isCorrect: false
-      explanation: "Feedback: Incorrect. The correct answer is a) provision labs before learning path instruction time as it can take up to 10-15 minutes for a new account to be provisioned. Therefore, by provisioning the labs prior to instructional time instructors can maximize learning in the DP-900 Microsoft Azure Data Fundamentals course."
+      explanation: "Feedback: Incorrect. The correct answer is a) provision labs before learning path instruction time as it can take up to 10-15 minutes for a new account to be provisioned. Therefore, by provisioning the labs prior to instructional time instructors can maximize learning in the DP-900 Microsoft Azure Data Fundamentals course."

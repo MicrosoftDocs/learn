@@ -2,8 +2,6 @@
 uid: learn.azure.azure-netapp-files-application-volume-group.best-practices
 title: Azure NetApp Files application volume group best practices and benefits 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Azure NetApp Files application volume group best practices and benefits 
   description: Learn planning strategies to optimize your Azure NetApp Files application volume group deployment.   
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-best-practices.md)]
+  [!include[](includes/2-best-practices.md)]

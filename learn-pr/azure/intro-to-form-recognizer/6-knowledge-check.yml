@@ -1,14 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-form-recognizer.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Multiple-choice questions
   author: laujan
   ms.author: lajanuar
-  ms.date: 07/30/2024
+  ms.date: 04/29/2025
   ms.topic: unit
   ms.collection:
     - ce-skilling-ai-copilot
@@ -37,7 +35,7 @@ quiz:
     - content: Image data, with the extracted information highlighted by bounding boxes
       isCorrect: false
       explanation: Incorrect. While Azure AI Document Intelligence can return bounding box information, the data is returned in a format that programming languages can readily use.
-    - content: JSON formatting
+    - content: JSON formatted data
       isCorrect: true
       explanation: Correct. As programming languages can readily use JSON formatting, Azure AI Document Intelligence returns the extracted information in standard JSON formatting so the data is easier to work with.
   - content: What is a benefit of creating a custom model?

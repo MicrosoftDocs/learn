@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.understand-write-ahead-logging.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 05/10/2024
   author: wwlpublish
@@ -50,4 +48,4 @@ quiz:
       explanation: "Correct. Logical streaming replication provides access to data in the write ahead log."
     - content: "Configure zone redundant high availability."
       isCorrect: false
-      explanation: "Incorrect. Zone redundant high availability provides additional copies of your server that can be used in the event of a problem with your main server. However, this doesn't provide access to the write-ahead log."
+      explanation: "Incorrect. Zone redundant high availability provides additional copies of your server that can be used in the event of a problem with your main server. However, this doesn't provide access to the write-ahead log."

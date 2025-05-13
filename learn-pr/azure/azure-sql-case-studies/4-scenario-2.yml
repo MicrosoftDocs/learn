@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-case-studies.4-scenario-2
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Scenario 2 - Mission-critical application
   description: Scenario 2 - Mission-critical application
   ms.date: 03/15/2023
@@ -91,4 +89,4 @@ quiz:
         - content: "None of the above" 
           isCorrect: true
           explanation: "The answer is really a combination of the above plus a little more. Create a Microsoft Entra group called SQL DBA for the DBAs on the respective instance. Then, assign the group to the Azure RBAC role of SQL Server Contributor. Finally, set the group to be the Microsoft Entra admin on the logical server."
-
+

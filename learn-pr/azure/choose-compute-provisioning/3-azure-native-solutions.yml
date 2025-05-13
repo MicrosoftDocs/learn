@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.choose-compute-provisioning.3-azure-native-solutions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Choose a native Azure solution
   description: Choose a native Azure solution
   ms.date: 03/29/2023
@@ -15,4 +13,4 @@ title: Choose a native Azure solution
 durationInMinutes: 10
 content: |
   [!include[](includes/3-azure-native-solutions.md)]
-
+

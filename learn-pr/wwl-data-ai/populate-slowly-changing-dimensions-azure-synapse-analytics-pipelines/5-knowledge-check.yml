@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.populate-slowly-changing-dimensions-azure-synapse-analytics-pipelines.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 05/12/2022
   author: wwlpublish
@@ -36,4 +34,4 @@ quiz:
       explanation: "Incorrect. Type 2 SCD is designed to keep all historical versions of a value."
     - content: "Type 3 SCD."
       isCorrect: false
-      explanation: "Incorrect. Type 3 SCD is designed to keep some history by retaining either the original or previous version of the value."
+      explanation: "Incorrect. Type 3 SCD is designed to keep some history by retaining either the original or previous version of the value."

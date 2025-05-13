@@ -2,8 +2,6 @@
 uid: learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.create-statistics-to-improve
 title: Create statistics to improve query performance
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create statistics to improve query performance
   description: "Create statistics to improve query performance"
   ms.date: 08/05/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/7-create-statistics-to-improve.md)]
+  [!include[](includes/7-create-statistics-to-improve.md)]

@@ -2,8 +2,6 @@
 uid: learn.app-service-autoscale-rules.7-exercise-autoscale-a-web-app
 title: Exercise - Autoscale and monitor a web app
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Autoscale and monitor a web app
   description: Configure autoscaling for a web app and monitor the results.
   ms.date: 05/04/2022
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 20
 content: |
   [!include[](includes/7-exercise-autoscale-a-web-app.md)]
-
+

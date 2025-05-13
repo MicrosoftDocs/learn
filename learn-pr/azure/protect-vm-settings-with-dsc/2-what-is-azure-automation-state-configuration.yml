@@ -2,8 +2,6 @@
 uid: learn.azure.protect-vm-settings-with-dsc.what-is-azure-automation-state-configuration
 title: What is Azure Automation State Configuration?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is Azure Automation State Configuration?
   description: What is Azure Automation State Configuration?
   ms.date: 09/22/2023
@@ -48,4 +46,4 @@ quiz:
       explanation: "Push mode is easy to set up and doesn't need its own dedicated infrastructure"
     - content: "Pull mode uses the local configuration manager (LCM) to make sure that the state on each node matches the state specified by the configuration."
       isCorrect: false
-      explanation: "Both pull mode and push mode use the LCM. The LCM is responsible for updating the configuration to match the desired state on a node."
+      explanation: "Both pull mode and push mode use the LCM. The LCM is responsible for updating the configuration to match the desired state on a node."

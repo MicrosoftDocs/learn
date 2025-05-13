@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-relational-data-offerings.explore-sql
 title: Explore SQL
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore SQL
   description: "Explore SQL"
   ms.date: 08/28/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-query-with-sql.md)]
+  [!include[](includes/4-query-with-sql.md)]

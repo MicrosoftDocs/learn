@@ -2,8 +2,6 @@
 uid: learn.wwl.understand-client-server-communication-mysql.understand-mysql-query-interface-options
 title: Understand the MySQL query interface options
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand the MySQL query interface options
   description: "Understand the MySQL query interface options"
   ms.date: 11/08/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-understand-mysql-query-interface-options.md)]
+  [!include[](includes/4-understand-mysql-query-interface-options.md)]

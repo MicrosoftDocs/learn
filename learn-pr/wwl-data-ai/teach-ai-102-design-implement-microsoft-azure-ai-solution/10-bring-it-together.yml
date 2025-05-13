@@ -2,8 +2,6 @@
 uid: learn.wwl.teach-ai-102-design-implement-microsoft-azure-ai-solution.bring-it-together
 title: Bring it all together
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Bring it all together
   description: Bring it all together
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/10-bring-it-together.md)]
-
+

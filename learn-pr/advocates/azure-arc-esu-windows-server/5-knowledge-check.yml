@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.enable-windows-server-extended-security-updates-using-azure-arc.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Answer the questions to determine what you learned in the module.
   ms.date: 01/03/2024
   author: Orin-Thomas

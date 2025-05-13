@@ -2,8 +2,6 @@
 uid: learn.wwl.define-foundation-pillars.explore-last-foundation
 title: Explore DevOps Technology
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore DevOps Technology
   description: "Explore the last foundation pillar of DevOps, Technology."
   ms.date: 09/20/2020
@@ -13,4 +11,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-explore-last-foundation.md)]
+  [!include[](includes/3-explore-last-foundation.md)]

@@ -1,18 +1,16 @@
 ### YamlMime:Module
 uid: learn.wwl.responsible-ai-studio
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Responsible generative AI
+  title: Implement a responsible generative AI solution in Azure AI Foundry
   description: A practical approach to implementing generative AI responsibly, and exploring content filters in AI Foundry portal.
   author: ivorb
   ms.author: berryivor
-  ms.date: 11/28/2024
+  ms.date: 04/16/2025
   ms.service: azure-ai-openai
   ms.topic: module-standard-task-based
   ms.collection:
     - wwl-ai-copilot
-title: Responsible generative AI
+title: Implement a responsible generative AI solution in Azure AI Foundry
 summary: "Generative AI enables amazing creative solutions, but must be implemented responsibly to minimize the risk of harmful content generation."
 abstract: |
   By the end of this module, you'll be able to:

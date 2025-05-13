@@ -2,8 +2,6 @@
 uid: learn.caching-and-performance-azure-storage-and-disks.4-exercise-enable-and-configure-azure-vm-disk-cache-by-using-the-azure-portal
 title: Exercise - Enable and configure Azure VM disk cache with the Azure portal
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Enable and configure Azure VM disk cache with the Azure portal
   description: Exercise - Enable and configure Azure VM disk cache with the Azure portal
   ms.date: 12/28/2023
@@ -14,4 +12,4 @@ azureSandbox: true
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-enable-and-configure-azure-vm-disk-cache-by-using-the-azure-portal.md)]
-
+

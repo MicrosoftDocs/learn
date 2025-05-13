@@ -2,8 +2,6 @@
 uid: learn.azure.publish-app-with-maven-plugin-for-azure-web-apps.exercise-create-java-web-app
 title: Exercise - Create a Java web app
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create a Java web app
   description: In this exercise, you'll create a Java web app using Maven.
   ms.date: 05/02/2024
@@ -18,4 +16,4 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/3-exercise-create-java-web-app.md)]
-
+

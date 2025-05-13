@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-delegates.instantiate-invoke-delegate-types
+title: Instantiate and invoke delegate types
+metadata:
+  title: Instantiate and invoke delegate types
+  description: "Instantiate and invoke delegate types."
+  ms.date: 04/22/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/03-instantiate-invoke-delegate-types.md)]

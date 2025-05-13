@@ -3,8 +3,6 @@ uid: learn.advocates.cv-classify-bird-species.3-build-model
 title: Exercise - Build the model
 azureSandbox: true
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Build the model
   description: Build the model
   author: cassiebreviu
@@ -19,4 +17,4 @@ metadata:
 durationInMinutes: 15
 content: |
   [!include[](includes/3-build-model.md)]
-
+

@@ -2,8 +2,6 @@
 uid: learn.azure.network-fundamentals.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Review what you've learned about the fundamental principles of computer networking.
   ms.date: 07/09/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]
-
+

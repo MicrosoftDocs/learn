@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.identify-technical-debt
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Identify technical debt
   description: "Identify technical debt"
   ms.date: 05/06/2024
@@ -62,4 +60,4 @@ units:
 - learn.wwl.identify-technical-debt.knowledge-check
 - learn.wwl.identify-technical-debt.summary
 badge:
-  uid: learn.wwl.identify-technical-debt.badge
+  uid: learn.wwl.identify-technical-debt.badge

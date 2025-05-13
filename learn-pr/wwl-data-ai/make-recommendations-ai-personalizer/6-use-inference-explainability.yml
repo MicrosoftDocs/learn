@@ -2,8 +2,6 @@
 uid: learn.make-recommendations-ai-personalizer.use-inference-explainability
 title: Use inference explainability
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use inference explainability
   description: Learn how to enable inference explainability and interpret feature scores.
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/6-use-inference-explainability.md)]
-
+

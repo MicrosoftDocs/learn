@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.azure-stack-hub-powershell.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 03/17/2022
   author: wwlpublish
@@ -41,4 +39,4 @@ quiz:
     - content: "Azure-cli"
       isCorrect: false
       explanation: "Incorrect. Azure-cli hosts guidance for a CLI multi-platform command line experience for Azure."
-
+

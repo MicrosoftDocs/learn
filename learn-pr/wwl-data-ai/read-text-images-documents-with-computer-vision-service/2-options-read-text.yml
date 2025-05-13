@@ -1,14 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.read-text-images-documents-with-computer-vision-service.options-for-reading-text
-title: Explore Azure AI Vision options for reading text
+title: Explore Azure AI options for reading text
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Explore Azure AI Vision options for reading text
+  title: Explore Azure AI options for reading text
   description: Explore Azure AI Vision options for reading text
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 02/05/2024
+  ms.date: 05/06/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

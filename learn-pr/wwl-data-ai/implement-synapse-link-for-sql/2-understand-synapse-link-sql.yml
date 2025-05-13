@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-synapse-link-for-sql.understand-synapse-link-sql
 title: What is Azure Synapse Link for SQL?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is Azure Synapse Link for SQL?
   description: "What is Azure Synapse Link for SQL?"
   ms.date: 02/10/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-understand-synapse-link-sql.md)]
+  [!include[](includes/2-understand-synapse-link-sql.md)]

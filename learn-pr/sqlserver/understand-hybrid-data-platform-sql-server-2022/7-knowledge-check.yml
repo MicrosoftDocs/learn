@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.understand-hybrid-data-platform-sql-server-2022.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 04/19/2023
   author: wwlpublish
@@ -51,4 +49,4 @@ quiz:
     - content: "Creating a role in SQL Server that maps to a Purview policy"
       isCorrect: false
       explanation: "That's incorrect. One way is creating a policy in Purview based on a Microsoft Entra account."
-
+

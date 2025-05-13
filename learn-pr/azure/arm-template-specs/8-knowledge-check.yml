@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.arm-template-specs.knowledge-check
-title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: "Knowledge check"
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 01/18/2024
   author: mumian
@@ -48,4 +46,4 @@ quiz:
     - content: Template specs guarantee that your templates deploy.
       isCorrect: false
       explanation: Incorrect. Template specs aren't guaranteed to deploy. There are many reasons why a template spec might not deploy to a specific environment.
-
+
