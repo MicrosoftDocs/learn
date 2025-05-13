@@ -40,7 +40,7 @@ For example, if most users who abandoned your website did so from the payment me
 
 ### Impact analysis
 
-[Impact analysis](/azure/azure-monitor/app/usage?tabs=aspnetcore&branch=main#impact-analysis---discover-how-different-properties-influence-conversion-rates) is a feature in Azure Application Insights that correlates technical aspects of the application to tangible business metrics.
+[Impact analysis](/azure/azure-monitor/app/usage?tabs=aspnetcore&branch=main#impact-analysis---discover-how-different-properties-influence-conversion-ratess) is a feature in Azure Application Insights that correlates technical aspects of the application to tangible business metrics.
 
 For example, how fast should the product page load so that most users continue with their shopping process? With impact analysis, you can show the relationship between page load time and the rate of users who purchase the product shown. This information can help you to validate or reject an innovation hypothesis, and to convert business requirements into technical specifications.
 
