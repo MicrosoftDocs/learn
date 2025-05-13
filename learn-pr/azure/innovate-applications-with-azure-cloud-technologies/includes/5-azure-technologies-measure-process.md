@@ -30,11 +30,11 @@ Notifications typically report that there might be a problem without context abo
 
 After you formulate a hypothesis with the data provided by Azure Application Insights, you can analyze telemetry to measure whether the situation is now better or worse. You can embed custom business events in the application so that telemetry data contains additional information that helps in the measure process.
 
-[Funnels](/azure/azure-monitor/app/usage?tabs=aspnetcore&branch=main#funnels---discover-how-customers-use-your-application) can be an insightful tool. With funnels, you can predefine the *flows* that you expect users to follow when they use the application. Then you can monitor which patterns users follow, and identify problems in the applications if users behave in unexpected ways.
+[Funnels](/azure/azure-monitor/app/usage?tabs=aspnetcore&branch=main#impact-analysis---discover-how-different-properties-influence-conversion-rates) can be an insightful tool. With funnels, you can predefine the *flows* that you expect users to follow when they use the application. Then you can monitor which patterns users follow, and identify problems in the applications if users behave in unexpected ways.
 
 ### Retain users
 
-The Application Insights [retention tool](/azure/azure-monitor/app/usage?tabs=aspnetcore&branch=main#users-sessions-and-events---analyze-telemetry-from-three-perspectives) offers specific functionality around user churn. It contains valuable learning data when combined with business events. For example, understanding which actions that customers who left the application unexpectedly took, allows you to formulate hypotheses with maximum business impact.
+The Application Insights [retention tool](/azure/azure-monitor/app/usage?tabs=aspnetcore&branch=main#impact-analysis---discover-how-different-properties-influence-conversion-rates) offers specific functionality around user churn. It contains valuable learning data when combined with business events. For example, understanding which actions customers who left the application unexpectedly took, allows you to formulate hypotheses with maximum business impact.
 
 For example, if most users who abandoned your website did so from the payment method page, you'd suspect a business problem there. Maybe the payment options are insufficient or not clearly displayed, or another problem is preventing users from moving forward in their shopping process.
 
