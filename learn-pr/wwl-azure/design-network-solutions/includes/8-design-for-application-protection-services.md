@@ -38,14 +38,14 @@ Azure Firewall is a managed, cloud-based network security service that protects 
 
 - Implement centralized creation, enforcement, and logging of application and network connectivity policies.
 - Apply connectivity policies across subscriptions and virtual networks.
-- Combine Azure Firewall rules with just in time (JIT) access to restrict access to your virtual machine management ports.
+- To restrict access to your virtual machine management ports, combine Azure Firewall rules with just in time (JIT) access.
 
 > [!Tip]
 > Learn more with the [Introduction to Azure Firewall](/training/modules/introduction-azure-firewall/) training module. 
 
 ### Azure Web Application Firewall
 
-[Azure Web Application Firewall](/azure/web-application-firewall/overview) provides protection to your web applications from common web exploits and vulnerabilities such as SQL injection, and cross-site scripting. Web Application Firewall provides out of box protection from OWASP top 10 vulnerabilities via managed rules. Configure customer-managed rules for extra protection based on source IP range and request attributes (headers, cookies, form data fields, query string parameters). Preventing similar attacks in your application code can be challenging. The process can require rigorous maintenance, patching, and monitoring at multiple layers of the application topology. A centralized web application firewall helps to simplify security management. A web application firewall gives application administrators better assurance of protection against threats and intrusions.
+[Azure Web Application Firewall (WAF)](/azure/web-application-firewall/overview) provides protection to your web applications from common web exploits and vulnerabilities such as SQL injection, and cross-site scripting. Web Application Firewall provides out of box protection from OWASP top 10 vulnerabilities via managed rules. Configure customer-managed rules for extra protection based on source IP range and request attributes (headers, cookies, form data fields, query string parameters). Preventing similar attacks in your application code can be challenging. The process can require rigorous maintenance, patching, and monitoring at multiple layers of the application topology. A centralized web application firewall helps to simplify security management. A web application firewall gives application administrators better assurance of protection against threats and intrusions.
 
 #### Business scenarios
 

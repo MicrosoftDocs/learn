@@ -45,7 +45,7 @@ There are many networking scenarios where defining and overriding routes can be 
 
 - **Consider user defined routes**. Create custom UDRs to override Azure's default system routes, or to add more routes to a subnet's route table.
    - Enable filtering of internet traffic by using Azure Firewall or forced tunneling.
-   - Flow traffic between subnets through an Network Virtual Appliance (NVA).
+   - Flow traffic between subnets through a Network Virtual Appliance (NVA).
    - Define routes to specify how packets should be routed in a virtual network.
    - Define routes that control network traffic and specify the next hop in the traffic flow.
 
