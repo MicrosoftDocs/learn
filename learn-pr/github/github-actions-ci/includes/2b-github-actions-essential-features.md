@@ -1,4 +1,4 @@
-Here, you'll learn how to use default and custom environment variables, custom scripts, cache dependencies, and pass artifact data between jobs. You'll also learn how to access the workflow logs from both the GitHub website and REST API endpoints.
+Here, you learn how to use default and custom environment variables, custom scripts, cache dependencies, and pass artifact data between jobs. And learn how to access the workflow logs from both the GitHub website and REST API endpoints.
 
 ## Default environment variables and contexts
 
@@ -24,13 +24,13 @@ jobs:
       - run: echo "Deploying to production server on branch $GITHUB_REF"
 ```
 
-This example is using the `github.ref` context to check the branch that triggered the workflow. If the branch is `main`, the runner is executed and prints out "Deploying to production server on branch $GITHUB_REF". The default environment variable `$GITHUB_REF` is used in the runner to refer to the branch. Notice that default environment variables are all uppercase where context variables are all lowercase.
+This example is using the `github.ref` context to check the branch that triggered the workflow. If the branch is `main`, the runner is executed and prints "Deploying to production server on branch $GITHUB_REF". The default environment variable `$GITHUB_REF` is used in the runner to refer to the branch. Notice that default environment variables are all uppercase where context variables are all lowercase.
 
 <!-- INFOMAGNUS UPDATES for sub OD 1.4.2 go here. Source Material: https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs --> 
 
 ## The contextual information available in a workflow
 
-Contexts allow you to access information about workflow runs, variables, runner environments, jobs, and steps.  Each context is is an object that contains properties which can be other objects or strings.  The contexts available include: `github`, `env`, `vars`, `job`, `jobs`, `steps`, `runner`, `secrets`, `strategy`, `matrix`, `needs` and `inputs`.  The table below presents these contexts with their descriptions.
+Contexts allow you to access information about workflow runs, variables, runner environments, jobs, and steps.  Each context is is an object that contains properties which can be other objects or strings.  The contexts available include: `github`, `env`, `vars`, `job`, `jobs`, `steps`, `runner`, `secrets`, `strategy`, `matrix`, `needs` and `inputs`.  Here is a table presents these contexts with their descriptions.
 
 | Context |	Description |
 :---------|:---------------------------------------------------------------------------------
@@ -39,7 +39,7 @@ env |	Contains variables set in a workflow, job, or step. For more information, 
 vars |	Contains variables set at the repository, organization, or environment levels. For more information, see [vars context](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#vars-context).
 job	|	Information about the currently running job. For more information, see [job context](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#job-context).
 jobs |	For reusable workflows only, contains outputs of jobs from the reusable workflow. For more information, see [jobs context](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#jobs-context).
-steps	|	Information about the steps that have been run in the current job. For more information, see [steps context](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#steps-context).
+steps	|	Information about the steps that ran in the current job. For more information, see [steps context](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#steps-context).
 runner	|	Information about the runner that is running the current job. For more information, see [runner context](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#runner-context).
 secrets	|	Contains the names and values of secrets that are available to a workflow run. For more information, see [secrets context](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#secrets-context).
 strategy	|	Information about the matrix execution strategy for the current job. For more information, see [strategy context](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#strategy-context).
@@ -50,7 +50,7 @@ inputs	|	Contains the inputs of a reusable or manually triggered workflow. For m
 
 The different contexts are available throughout a workflow run. For example, the secrets context may only be used at certain places within a job.  In addition, you may only use some functions in certain places. For example, the `hashFiles` function is not available everywhere.
 
-The following table lists the restrictions on where each context and special function can be used within a workflow. The listed contexts are only available for the given workflow key, and you may not use them anywhere else. Unless listed below, you may use a function anywhere.
+The following table lists the restrictions on where each context and special function can be used within a workflow. The listed contexts are only available for the given workflow key, and you may not use them anywhere else. Unless listed in the table here, you may use a function anywhere.
 
 |Workflow Key | Context | Special Functions|
 :--------------------|:----------|:------------------
@@ -113,7 +113,7 @@ jobs:
 
 You can define environment variables that are scoped to the entire workflow utilizing `env` at the top level of the workflow file.  Scoping the contents of a job within a workflow using `jobs.<job_id>.env`.  As well you can scope an environment variable within at a specific step within a job utilizing `jobs.<job_id>.steps[*].env`.
 
-Below is an example displaying all three scenarios in a workflow file:
+Next is an example displaying all three scenarios in a workflow file:
 
 ```yml
 name: Greeting on variable day
@@ -139,7 +139,7 @@ jobs:
 
 ## Use default context in a workflow
 
-Default environment variables are set by GitHub and not defined in a workflow.  They are thus available to use in a workflow in the appropriate context.  Most of these variables, other than `CI`, begin with `GITHUB_*` or `RUNNER_*`.  The latter two types cannot be overwritten.  As well, these default variables have a corresponding, and similarly named, context property. For instance, the `RUNNER_*` series of default variables have a matching context property of `runner.*`.  An example of accessing default variables in a workflow levaraging these methods can be viewed below:
+Default environment variables are set by GitHub and not defined in a workflow.  They are thus available to use in a workflow in the appropriate context.  Most of these variables, other than `CI`, begin with `GITHUB_*` or `RUNNER_*`.  The latter two types cannot be overwritten.  As well, these default variables have a corresponding, and similarly named, context property. For instance, the `RUNNER_*` series of default variables have a matching context property of `runner.*`.  An example of accessing default variables in a workflow leveraging these methods can be viewed here:
 
 ```yml
 on: workflow_dispatch
@@ -164,7 +164,7 @@ You can pass customer environment variables from one step of a workflow job to s
 
 The step that creates or updates the environment variable does not have access to the new value, but all subsequent steps in a job will have access.
 
-You can view an example below:
+You can view an example here:
 
 ```yml
 steps:
@@ -185,14 +185,14 @@ steps:
 You can add protection rules for environments defined for your GitHub repository. To add an environment, in your repository:
 
 **1.** Click on **Settings**
-![image](../media/2b-settings.png)
+![Navigation bar of a web interface with tabs like Code, Issues, and Wiki; 'Settings' is highlighted."](../media/2b-settings.png)
    
 **2.** Click on **Environment** on the left panel.
 
-![image](../media/2b-environments.png)   
+![Screenshot of a settings menu under 'General' with sections for Access, Code and automation, Security, and Integrations. The 'Environments' option is highlighted in red.](../media/2b-environments.png)   
 
 **3.** Use the **New environment** button to add and configure an environment and add protections.
-![image](../media/2b-newenvironment.png)
+![GitHub repository settings page showing the 'Environments' section with a message indicating no environments exist and a 'New environment' button highlighted.](../media/2b-newenvironment.png)
 
 ### About environments
 
@@ -204,7 +204,7 @@ When a workflow references an environment, the environment will appear in the re
 
 ### Environment protection rules
 
-Environment deployment protection rules require specific conditions to pass before a job referencing the environment can proceed. You can use deployment protection rules to require a manual approval, delay a job, or restrict the environment to certain branches. You can also create and implement custom protection rules powered by GitHub Apps to use third-party systems to control deployments referencing environments configured on GitHub. Below you will find further explanation of these protection rules:
+Environment deployment protection rules require specific conditions to pass before a job referencing the environment can proceed. You can use deployment protection rules to require a manual approval, delay a job, or restrict the environment to certain branches. You can also create and implement custom protection rules powered by GitHub Apps to use third-party systems to control deployments referencing environments configured on GitHub. Next you will find further explanation of these protection rules:
 
 1. **Required reviewers protection rules**: Use required reviewers to require a specific person or team to approve workflow jobs that reference the environment. You can list up to six users or teams as reviewers. The reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed.
 
@@ -224,7 +224,7 @@ Environment deployment protection rules require specific conditions to pass befo
 
     Once custom deployment protection rules have been created and installed on a repository, you can enable the custom deployment protection rule for any environment in the repository.
 
-   ![image](../media/2b-protectionrules.png)
+   !["Settings page for configuring 'Environment1' with options for reviewers, wait timer, custom rules, and branch restrictions.](../media/2b-protectionrules.png)
 
 > **Note**
 > If you are on a GitHub Free, GitHub Pro, or GitHub Team plan, the enviroment deployment projection rules are only available for public repositories; with the exception of branch & tag protection rules.  For users of GitHub Pro or GitHub Team plans, branch and tag protection rules are also available for private repositories.
@@ -342,7 +342,7 @@ GET /repos/{owner}/{repo}/actions/runs/{run_id}/logs
 
 <!-- INFOMAGNUS UPDATES for sub OD 1.4.4 go here. Source Material: Infomagnus team to find source material and cite sources when they update material   https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/generating-an-installation-access-token-for-a-github-app  ,  https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/authenticating-as-a-github-app-installation -->
 
-## Identify when to use an an installation token from a GitHub App
+## Identify when to use an installation token from a GitHub App
 
 Once your GitHub App is installed on an account, you can authenticate it as an app installation using the 'installation access token' for REST and GraphQL API requests. This allows the app to access resources owned by the installation, assuming the app was granted the necessary repository access and permissions. REST or GraphQL API requests made by an app installation are attributed to the app.  In the following example, you replace `INSTALLATION_ACCESS_TOKEN` with the installation access token:
 
@@ -354,7 +354,7 @@ curl --request GET \
 --header "X-GitHub-Api-Version: 2022-11-28"
 ```
 
-You can also use an installation access token to authenticate for HTTP-based Git access. Your app must have the 'Contents' repository permission. You can then use the installation access token as the HTTP password. You replace TOKEN in the example below with the with the installation access token: 
+You can also use an installation access token to authenticate for HTTP-based Git access. Your app must have the 'Contents' repository permission. You can then use the installation access token as the HTTP password. You replace TOKEN in the example with the installation access token: 
 
 ```
 git clone https://x-access-token:TOKEN@github.com/owner/repo.git
