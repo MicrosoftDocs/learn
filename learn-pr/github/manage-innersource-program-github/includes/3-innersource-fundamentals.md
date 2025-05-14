@@ -7,7 +7,7 @@ The following guide provides you with a getting started and expanded checklist o
 - Project
 - Developers
 
-Using the provided checklists, choose one category and compare it to one of your current repositories. For example, if you're focusing on the repository itself, which files should be added or removed to clarify its purpose and contribution process?**
+Using the provided checklists, choose one category and compare it to one of your current repositories. For example, if you're focusing on the repository itself, which files should be added or removed to clarify its purpose and contribution process?
 
 **Example checklist – Repository:**
 - [ ] Add or update `README.md`
