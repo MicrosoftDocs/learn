@@ -21,7 +21,7 @@ For example, age probably predicts how sick dogs become, because older dogs get 
 
 We know that cost functions can be used to assess how well a model fits the data on which it's trained. Linear regression models have a special related measure called R<sup>2</sup> (*R-squared*). R<sup>2</sup> is a value between 0 and 1 that tells us how well a linear regression model fits the data. When people talk about correlations being strong, they often mean that the R<sup>2</sup> value was large.
 
-R<sup>2</sup> uses mathematics beyond what we intend to cover in this course, but we can think of it intuitively. Let's consider the previous exercise, where we looked at the relationship between *age* and *core_temperature*. An R<sup>2</sup> of 1 would mean we could uese years to perfectly predict who had a high temperature and who had a low temperature. By contrast, an R<sup>2</sup> of 0 would mean there was simply no relationship between years and temperature.
+R<sup>2</sup> uses mathematics beyond what we intend to cover in this course, but we can think of it intuitively. Let's consider the previous exercise, where we looked at the relationship between *age* and *core_temperature*. An R<sup>2</sup> of 1 would mean we could use years to perfectly predict who had a high temperature and who had a low temperature. By contrast, an R<sup>2</sup> of 0 would mean there was simply no relationship between years and temperature.
 
 ![Diagram showing a goodness of fit graph with many plot points.](../media/4-goodness-of-fit-graph.png)
 
