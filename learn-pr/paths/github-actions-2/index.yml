@@ -1,17 +1,17 @@
 ### YamlMime:LearningPath
-uid: learn.github-actions
+uid: learn.github-actions-2
 metadata:
-  title: Automate your workflow with GitHub Actions
-  description: Learn how GitHub Actions enables you to automate your software development cycle.
+  title: Automate your workflow with GitHub Actions Part 2 of 2
+  description: This is part two of a GitHub Action Learning Path. Learn how GitHub Actions enables you to automate your software development cycle.
   brand: github
-  ms.date: 08/15/2024
-  author: a-a-ron
-  ms.author: aastewar
+  ms.date: 05/14/2025
+  author: camihmerhar
+  ms.author: camhernandez
   ms.topic: learning-path
-title: Automate your workflow with GitHub Actions
+title: Automate your workflow with GitHub Actions Part 2 of 2
 summary: |
-  Learn how GitHub Actions enables you to automate your software development cycle.
-
+  Learn how GitHub Actions enables you to automate your software development cycle. This is part two of a GitHub Action Learning Path.
+  
   In this learning path, you'll:
 
   - Plan automation of your software development life cycle with GitHub Actions workflows.
@@ -20,7 +20,8 @@ summary: |
   - Publish automatically and securely your code libraries or Docker images with GitHub Packages.
 prerequisites: |
  - A [GitHub](https://github.com?azure-portal=true) account
-iconUrl: /training/achievements/github/automate-workflow-github-actions.svg
+iconUrl: /training/achievements/github/8-learn-continuous-integration-with-github-actions.svg
+
 levels:
 - beginner
 - intermediate
@@ -39,4 +40,4 @@ modules:
 - learn.github.create-custom-github-actions
 - learn.github.manage-github-actions-enterprise
 trophy:
-  uid: learn.github-actions.trophy
+  uid: learn.github-actions-2.trophy
