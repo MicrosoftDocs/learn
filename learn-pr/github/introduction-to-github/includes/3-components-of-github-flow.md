@@ -115,6 +115,6 @@ Git Flow uses several long-lived and temporary branches:
 
 > For many teams using GitHub, GitHub Flow is simpler and faster. But if your team values predictability and needs more release planning, Git Flow may be a better fit.
 
-That’s it—you’ve completed a full GitHub flow cycle!
+Congratulations, you’ve completed a full GitHub Flow cycle!
 
 Let’s move onto the next section where we’ll cover the differences between issues and discussions.
