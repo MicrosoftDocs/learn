@@ -23,7 +23,8 @@ GitHub Desktop is an open-source, stand-alone software application that enables 
 
 Here are a few of the many things you can do with GitHub Desktop:
 
-- Add and clone repositories to quickly set up projects locally and start working.
+- Add repositories to GitHub Desktop to manage existing projects locally.
+- Clone repositories from GitHub to quickly set up projects locally and start working.
 - Add changes to your commit interactively, making it easier to manage and review changes before committing.
 - Quickly add coauthors to your commit, ensuring proper attribution in collaborative projects.
 - Check out branches with pull requests and view CI statuses to streamline collaboration and ensure code quality.
