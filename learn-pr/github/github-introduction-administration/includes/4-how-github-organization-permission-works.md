@@ -28,6 +28,7 @@ After you create a repository with the correct permissions, you can make it a te
 
 ## Viewing Repository Insights
 
+Repository insights on GitHub offer a powerful way to monitor and analyze your project's activity, contributions, and dependencies. By leveraging these insights, you can track project health, identify bottlenecks, and ensure security. This section will guide you through the steps to access repository insights and provide best practices for using them effectively.
 GitHub provides repository insights to help you monitor and understand the activity, contributions, and dependencies of your repository. These insights are useful for tracking project health, identifying bottlenecks, and ensuring security.
 
 ### Steps to View Repository Insights
