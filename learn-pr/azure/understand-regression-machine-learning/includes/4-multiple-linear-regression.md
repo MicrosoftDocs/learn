@@ -4,7 +4,7 @@ In this unit, we'll contrast multiple linear regression with *simple linear regr
 
 *Multiple linear regression* models the relationship between several features and a single variable. Mathematically, it's the same as simple linear regression, and is usually fit using the same cost function, but with more features.
 
-Rather than modeling a single relationship, this technique simultaneously models multiple relationships, which it treats as independent of one another. For example, if we're predicting how ill a dog becomes based on their *age* and *body_fat_percentage*, two relationships are found:
+Rather than modeling a single relationship, this technique simultaneously models multiple relationships, which it treats as independent of one another. For example, if we're predicting how ill a dog becomes based on their *age* and *body_fat_percentage*, we find two relationships:
 
 * How age increases or decreases illness
 * How body_fat_percentage increases or decreases illness
@@ -15,13 +15,13 @@ If we're only working with two features, we can visualize our model as a planeâ€
 
 The fact that the model expects features to be *independent* is called a model assumption. When model assumptions aren't true, the model can make misleading predictions.
 
-For example, age probably predicts how sick dogs become, as older dogs get more sick, along with whether dogs have been taught how to play frisbee; older dogs probably all know how to play frisbee. If we included *age* and *knows_frisbee* to our model as features, it would likely tell us knows_frisbee is a good predictor of an illness and underestimate the importance of age. This is a bit absurd, because knowing frisbee isn't likely to cause disease. By contrast, *dog_breed* might also be a good predictor of illness, but there's no reason to believe age predicts dog_breed, so it would be safe to include both in a model.
+For example, age probably predicts how sick dogs become, because older dogs get more sick, along with whether dogs have been taught how to play frisbee; older dogs probably all know how to play frisbee. If we included *age* and *knows_frisbee* to our model as features, it would likely tell us knows_frisbee is a good predictor of an illness and underestimate the importance of age. This is a bit absurd, because knowing frisbee isn't likely to cause disease. By contrast, *dog_breed* might also be a good predictor of illness, but there's no reason to believe age predicts dog_breed, so it would be safe to include both in a model.
 
 ## Goodness of fit: R<sup>2</sup>
 
 We know that cost functions can be used to assess how well a model fits the data on which it's trained. Linear regression models have a special related measure called R<sup>2</sup> (*R-squared*). R<sup>2</sup> is a value between 0 and 1 that tells us how well a linear regression model fits the data. When people talk about correlations being strong, they often mean that the R<sup>2</sup> value was large.
 
-R<sup>2</sup> uses mathematics beyond what we intend to cover in this course, but we can think of it intuitively. Let's consider the previous exercise, where we looked at the relationship between *age* and *core_temperature*. An R<sup>2</sup> of 1 would mean years could be used to perfectly predict who had a high temperature and who had a low temperature. By contrast, a 0 would mean there was simply no relationship between years and temperature.
+R<sup>2</sup> uses mathematics beyond what we intend to cover in this course, but we can think of it intuitively. Let's consider the previous exercise, where we looked at the relationship between *age* and *core_temperature*. An R<sup>2</sup> of 1 would mean we could uese years to perfectly predict who had a high temperature and who had a low temperature. By contrast, an R<sup>2</sup> of 0 would mean there was simply no relationship between years and temperature.
 
 ![Diagram showing a goodness of fit graph with many plot points.](../media/4-goodness-of-fit-graph.png)
 
