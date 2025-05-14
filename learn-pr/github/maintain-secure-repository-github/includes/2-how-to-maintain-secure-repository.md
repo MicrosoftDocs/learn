@@ -1,7 +1,7 @@
 Here, we discuss some of the essential security tools and techniques available to GitHub repository administrators. 
 
 >[!Note]
-> This content focuses on** important security considerations, tools, and features to use within a GitHub repository.
+> This content focuses on **important security considerations, tools, and features to use within a GitHub repository.
 
 ## The importance of a secure development strategy
 
