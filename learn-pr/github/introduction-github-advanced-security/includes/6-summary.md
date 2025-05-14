@@ -6,6 +6,7 @@ In this module, you learned:
 - Learned about GHAS and its role in the security ecosystem
 - Reviewed how the Dependency Graph works and supports Dependabot features
 - Learned about Push Protection and how it proactively prevents secret exposure during development
+- Recognized that GitHub now offers these security features under two product SKUs: GitHub Secret Protection and GitHub Code Security
 
 ## Learn more
 
