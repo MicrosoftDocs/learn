@@ -46,13 +46,13 @@ In this task, you replicate the two VMs that you created in the previous unit.
 
 1. Enter the following values in the specified tabs, leaving other fields at their default values.
     1. On the **Source** tab, enter the following values for each setting:
-        1. In **Region**, select **(US) West US 2**.
+        1. In **Region**, select **West US 2**.
         1. Select your Azure subscription in the **Subscription** drop-down.
         1. Select **west-coast-rg** in the **Resource group** drop-down.
         1. Select **Next**.
     1. On the **Virtual machines** tab, select both VMs: **hr-records** and **patient-records**. Select **Next**.
     1. On the **Replication settings** tab, enter the following values for each setting:
-        1. In **Target location**, select **(US) East US 2**.
+        1. In **Target location**, select **East US 2**.
         1. In the **Target subscription** field, select your Azure subscription.
         1. in the **Resource group** field, select **east-coast-rg** in the drop-down list.
 

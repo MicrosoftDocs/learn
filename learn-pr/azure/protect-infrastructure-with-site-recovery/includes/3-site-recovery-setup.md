@@ -23,7 +23,7 @@ Our first step is to create our exercise environment. We run a script that creat
 
 1. Sign in to the [Azure portal](https://portal.azure.com) with your credentials, and start a Cloud Shell session.
 
-1. In Cloud Shell toolbar, make sure you're running a Bash session.
+1. Check the Cloud Shell toolbar and confirm that you're running a Bash session. The message in the top left should read **Switch to PowerShell**.
 
 1. Use the following command to copy the Azure Resource Manager JSON templates to create your company's infrastructure:
 

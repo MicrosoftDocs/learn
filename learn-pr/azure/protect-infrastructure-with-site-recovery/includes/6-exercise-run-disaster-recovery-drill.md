@@ -88,7 +88,7 @@ In this exercise, you complete the steps needed to run a disaster recovery (DR) 
 
     :::image type="content" source="../media/6-listing-all-vms.png" alt-text="Screenshot showing all the current VMs, the original patient-records, and hr-records. Also the newly created patient-records-test and hr-records-test." lightbox="../media/6-listing-all-vms.png":::
 
-1. Select one of the new test VMs.
+1. Select one of the new VMs with **-test** in the name.
 
 1. In the left menu pane, under **Settings**, select **Networking**, and then select **Topology**. The screen should look similar to the following image:
 
