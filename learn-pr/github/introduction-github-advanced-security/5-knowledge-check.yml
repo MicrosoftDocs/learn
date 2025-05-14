@@ -69,4 +69,32 @@ quiz:
       explanation: "Incorrect. This describes the purpose of Dependabot alerts, not how GHAS integrates security into each step of the software development life cycle."
     - content: "By providing access to curated security intelligence from millions of developers and security researchers around the world."
       isCorrect: false
-      explanation: "Incorrect. While GHAS provides access to curated security intelligence, this answer does not specifically mention how it integrates security into each step of the software development life cycle."
+        explanation: "Incorrect. While GHAS provides access to curated security intelligence, this answer does not specifically mention how it integrates security into each step of the software development life cycle."
+  - content: "What role does the dependency graph play in GitHub Advanced Security (GHAS)?"
+    choices:
+      - content: "It prevents developers from pushing insecure code."
+        isCorrect: false
+        explanation: "Incorrect. This is more related to Push Protection."
+      - content: "It helps manage user access roles for code scanning alerts."
+        isCorrect: false
+        explanation: "Incorrect. This is related to repository permissions, not the dependency graph."
+      - content: "It identifies dependencies and powers features like Dependabot alerts and Dependency Review."
+        isCorrect: true
+        explanation: "Correct. The dependency graph enables features such as Dependabot alerts, security updates, and Dependency Review by identifying direct and transitive dependencies."
+      - content: "It tracks usage statistics for security features."
+        isCorrect: false
+        explanation: "Incorrect. GitHub's dependency graph does not track feature usage."
+  - content: "How does Push Protection help secure your codebase?"
+    choices:
+      - content: "It runs unit tests before code is committed."
+        isCorrect: false
+        explanation: "Incorrect. This describes CI testing, not Push Protection."
+      - content: "It blocks pushes that contain detected secrets before they reach the repository."
+        isCorrect: true
+        explanation: "Correct. Push Protection scans for secrets at the time of commit and prevents the push if secrets are detected."
+      - content: "It encrypts code in private repositories."
+        isCorrect: false
+        explanation: "Incorrect. GitHub does not encrypt code using Push Protection."
+      - content: "It provides version control for dependency updates."
+        isCorrect: false
+        explanation: "Incorrect. That is related to Dependabot version updates."
