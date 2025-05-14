@@ -35,10 +35,10 @@ You can also keep your fork up to date by pulling in changes from the original r
 Here’s how to fork a repository:
 
 1. On GitHub.com, navigate to the main page of the repository you want to fork.
-1. In the upper-right corner, select **Fork**.
-1. Choose an owner for the fork (your personal account or an organization).
-1. Optionally, rename the forked repository or include all branches.
-1. Select **Create fork**.
+2. In the upper-right corner, select **Fork**.
+3. Choose an owner for the fork (your personal account or an organization).
+4. Optionally, rename the forked repository or include all branches.
+5. Select **Create fork**.
 
     :::image type="content" source="../media/fork-repo-option.png" alt-text="Screenshot showing the fork button in the top-right corner of a GitHub repository." border="false":::
 
