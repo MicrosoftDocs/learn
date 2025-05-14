@@ -1,4 +1,4 @@
- Here, you learn about GitHub Actions and workflows for CI. 
+ Here, you'll learn about GitHub Actions and workflows for CI. 
 
 You learn how to:
 
@@ -88,13 +88,15 @@ Beyond individual npm commands, teams can benefit from reusable workflows to str
 - Ease of Updates: When a process changes (e.g., a new test step), you update it in one place, and all workflows using it benefit automatically.
 - Scalability: Ideal for platform or DevOps teams managing multiple services.
 
+Let's explore how you can start using reusable workflows to improve your projects.
+
 ###  How to Implement Reusable Workflows
 To utilize reusable workflows:
 - Create a reusable workflow in your repo’s folder. This file will include the automation steps you want to share—like testing, building, or deploying.
 - You must explicitly enable a workflow to be reusable by configuring it with the workflow_call event.
 - In your main workflows (caller workflows), you then reference this reusable file and provide any required inputs or secrets.
 
-To illustrate the advantages of reusable workflows, consider the following real-world scenario. By implementing reusable workflows, teams can streamline their CI/CD processes, reduce redundancy, and ensure consistent automation practices across multiple projects.
+To illustrate the advantages of reusable workflows, consider the following real-world scenario.
 
 ### Real-World Example
 Imagine your organization has 10 microservices and all of them need the same steps to:
