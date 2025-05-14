@@ -16,8 +16,8 @@ To create a query report:
 
    You can use simple keywords or full KeyQL expressions. For example:
 
-    `confidential`<br>
-    `confidential AND Project Infinity`<br>
+    `confidential` <br>
+    `confidential AND Project Infinity` <br>
     `(((FileClass="Email") AND (InclusiveType=2 OR InclusiveType=1)) OR ((FileClass="Attachment") AND (UniqueInEmailSet="true")) OR ((FileClass="Document") AND (MarkAsRepresentative="Unique")) OR (FileClass="Conversations"))`
 
 1. Select **Generate report**.
