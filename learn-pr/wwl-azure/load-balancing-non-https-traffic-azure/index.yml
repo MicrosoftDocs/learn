@@ -5,7 +5,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Load balance non-HTTP(S) traffic in Azure
   description: "You learn the different load balancer options in Azure and how to choose and implement the right Azure solution for non-HTTP(S) traffic."
-  ms.date: 02/13/2025
+  ms.date: 04/07/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module

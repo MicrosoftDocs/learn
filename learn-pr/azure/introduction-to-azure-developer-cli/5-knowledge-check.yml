@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.introduction-to-azure-developer-cli.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge of the Azure Developer CLI.
   ms.date: 02/29/2024
   author: alexwolfmsft
@@ -72,4 +70,4 @@ quiz:
     - content: "It contains the Bicep or Terraform files that define the infrastructure as-code templates."
       isCorrect: true
       explanation: "Correct. The `infra` folder contains the Bicep or Terraform files that define the infrastructure as-code templates."
-
+

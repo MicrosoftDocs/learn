@@ -2,8 +2,6 @@
 uid: learn.wwl.monitor-maintain-azure-active-directory.export-sign-audit-logs-to-third-party-siem
 title: Export logs to third-party security information and event management system
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Export logs to third-party security information and event management system
   description: "Export logs to third-party security information and event management system"
   ms.date: 12/23/2024

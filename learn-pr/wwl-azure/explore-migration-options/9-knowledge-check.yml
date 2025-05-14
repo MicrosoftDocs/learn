@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-migration-options.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Check what you learn in this module."
   ms.date: 08/01/2024
   author: wwlpublish
@@ -61,4 +59,4 @@ quiz:
       explanation: "Incorrect. Broadly speaking, the potential for DMO performance optimizations can be seen in the following three areas: Export, file transfer, import."
     - content: "Export, file transfer, import"
       isCorrect: true
-      explanation: "Correct. Broadly speaking, the potential for DMO performance optimizations can be seen in the following three areas: Export, file transfer, import."
+      explanation: "Correct. Broadly speaking, the potential for DMO performance optimizations can be seen in the following three areas: Export, file transfer, import."

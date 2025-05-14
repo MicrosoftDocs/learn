@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-azure-kubernetes-service-cluster.create-custom-namespace
 title: Create a custom namespace for Azure Kubernetes clusters
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create a custom namespace for Azure Kubernetes clusters
   description: "Create a custom namespace for Azure Kubernetes clusters"
   ms.date: 03/08/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/6-create-custom-namespace.md)]
+  [!include[](includes/6-create-custom-namespace.md)]

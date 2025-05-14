@@ -2,16 +2,9 @@ When you're bulk loading data, it has to come from somewhere. In Azure, it's com
 
 In this scenario, Adventure Works Cycles is receiving store return data based on store identification number. This data is stored in *.dat* files, which are then pushed into Azure Blob storage. After the data is in Blob storage, Azure SQL needs a way to access it. You can do that by creating an external data source that has access to the storage account. You can control access to that storage account through Microsoft Entra ID, shared key authorization, or a shared access signature (SAS).
 
-In this exercise, we explore one scenario for bulk loading data from Azure Blob storage into Azure SQL Database. The approach uses T-SQL and shared access signatures.
+In this exercise, we explore one scenario for bulk loading data from Azure Blob storage into Azure SQL Database by using T-SQL in sqlcmd. 
 
-There are two options for completing this exercise:
-
-- `sqlcmd` in Azure Cloud Shell
-- SQL notebooks in Azure Data Studio
-
-Both exercises contain the same commands and content, so you can choose the option that you prefer.
-
-## Option 1: `sqlcmd` in Azure Cloud Shell
+## Load data into Azure SQL Database using `sqlcmd`
 
 `sqlcmd` is a command-line tool that allows you to interact with SQL Server and Azure SQL by using the command line. In this exercise, you use `sqlcmd` in the PowerShell instance of Azure Cloud Shell. `sqlcmd` is installed by default, so it's easy to use from Azure Cloud Shell.
 
@@ -30,32 +23,15 @@ Both exercises contain the same commands and content, so you can choose the opti
 1. Create a table and schema for data to be loaded into. This process is straightforward T-SQL. Run the following script in the terminal, now that you're connected to your database:
 
     ```sql
-    IF SCHEMA_ID('DataLoad') IS NULL
-    EXEC ('CREATE SCHEMA DataLoad')
-    CREATE TABLE DataLoad.store_returns
-    (
-        sr_returned_date_sk             bigint,
-        sr_return_time_sk               bigint,
-        sr_item_sk                      bigint,
-        sr_customer_sk                  bigint,
-        sr_cdemo_sk                     bigint,
-        sr_hdemo_sk                     bigint,
-        sr_addr_sk                      bigint,
-        sr_store_sk                     bigint,
-        sr_reason_sk                    bigint,
-        sr_ticket_number                bigint,
-        sr_return_quantity              integer,
-        sr_return_amt                   float,
-        sr_return_tax                   float,
-        sr_return_amt_inc_tax           float,
-        sr_fee                          float,
-        sr_return_ship_cost             float,
-        sr_refunded_cash                float,
-        sr_reversed_charge              float,
-        sr_store_credit                 float,
-        sr_net_loss                     float
-    );
-    GO
+    DROP TABLE IF EXISTS holiday
+    CREATE TABLE [dbo].[holiday](
+          [countryOrRegion] [varchar](255) NULL,
+          [holidayName] [varchar](255) NULL,
+          [normalizeHolidayName] [varchar](255) NULL,
+          [isPaidTimeOff] [varchar](255) NULL,
+          [countryRegionCode] [varchar](255) NULL,
+          [date] varchar(255) NULL
+    ) ON [PRIMARY];
     ```
 
     > [!TIP]
@@ -63,76 +39,49 @@ Both exercises contain the same commands and content, so you can choose the opti
     >
     > You know that the command has finished when you see `1>` again, which indicates that `sqlcmd` is ready for the first line of your next T-SQL entry.
 
-1. Next, create a master key:
-
-    ```sql
-    CREATE MASTER KEY 
-    ENCRYPTION BY PASSWORD='<password>';
-    GO
-    ```
-
-1. A master key is required to create a `DATABASE SCOPED CREDENTIAL` value because Blob storage isn't configured to allow public (anonymous) access. The credential refers to the Blob storage account. The data portion specifies the container for the store return data.
-
-    Use a shared access signature as the identity that Azure SQL knows how to interpret. The secret is the SAS token that you can generate from the Blob storage account. In this example, the SAS token for a storage account that you don't have access to is provided so you can access only the store return data.
-
-    ```sql
-    CREATE DATABASE SCOPED CREDENTIAL [https://azuresqlworkshopsa.blob.core.windows.net/data/]
-    WITH IDENTITY = 'SHARED ACCESS SIGNATURE',
-    SECRET = '<secret>';
-    GO
-    ```
-
 1. Create an external data source to the container:
 
     ```sql
-    CREATE EXTERNAL DATA SOURCE dataset
+    DROP EXTERNAL DATA SOURCE holiday_dataset;
+    
+    CREATE EXTERNAL DATA SOURCE holiday_dataset
     WITH
-    (
-        TYPE = BLOB_STORAGE,
-        LOCATION = 'https://azuresqlworkshopsa.blob.core.windows.net/data',
-        CREDENTIAL = [https://azuresqlworkshopsa.blob.core.windows.net/data/]
-    );
-    GO
+    (   TYPE = BLOB_STORAGE,
+        LOCATION = 'https://fabrictutorialdata.blob.core.windows.net/sampledata/Fabric/Holiday'
+    );    
     ```
 
 1. Bulk insert one of the store return files. Run the following script, and while it finishes, review the comments:
 
     ```sql
     SET NOCOUNT ON -- Reduce network traffic by stopping the message that shows the number of rows affected
-    BULK INSERT DataLoad.store_returns -- Table you created in step 3
-    FROM 'dataset/store_returns/store_returns_1.dat' -- Within the container, the location of the file
-    WITH (
-    DATA_SOURCE = 'dataset' -- Using the external data source from step 6
-    ,DATAFILETYPE = 'char'
-    ,FIELDTERMINATOR = '\|'
-    ,ROWTERMINATOR = '\|\n'
-    ,BATCHSIZE=100000 -- Reduce network traffic by inserting in batches
-    , TABLOCK -- Minimize number of log records for the insert operation
+    BULK INSERT holiday -- Table you created previously
+    FROM 'Holiday.csv' -- Within the container, the location of the file
+    WITH (DATA_SOURCE = 'holiday_dataset' -- Using the external data source from step 6
+          , FORMAT = 'CSV'
+          , FIRSTROW = 2
+          , FIELDTERMINATOR = ','
+          , ROWTERMINATOR = '0x0a'
+          , CODEPAGE = '65001'
+        ,BATCHSIZE=100000 -- Reduce network traffic by inserting in batches
+        , TABLOCK -- Minimize number of log records for the insert operation
     );
-    GO
     ```
 
 1. Check how many rows were inserted into the table:
 
     ```sql
-    SELECT COUNT(*) FROM DataLoad.store_returns;
+    SELECT COUNT(*) FROM holiday;
     GO
     ```
 
-    If everything ran correctly, you should see `2807797` returned.
+    If everything ran correctly, you should see `274` returned.
 
 This code is a simple example of how to insert data from Blob storage into Azure SQL Database. If you want to run through the exercise again, run the following code to reset what you've done:
 
 ```sql
-DROP EXTERNAL DATA SOURCE dataset;
-DROP DATABASE SCOPED CREDENTIAL [https://azuresqlworkshopsa.blob.core.windows.net/data/];
-DROP TABLE DataLoad.store_returns;
-DROP MASTER KEY;
+DROP EXTERNAL DATA SOURCE holiday_dataset
+DROP TABLE holiday
 GO
 ```
 
-## Option 2: SQL notebooks in Azure Data Studio
-
-For this activity, use the notebook called *LoadData.ipynb*. You can find it in *\mslearn-azure-sql-fundamentals\02-DeployAndConfigure\loaddata* on your device. Open this file in Azure Data Studio to complete this exercise, then return here.  
-
-If you can't complete the exercise for any reason, you can review the results in the [corresponding notebook file on GitHub](https://github.com/MicrosoftDocs/mslearn-azure-sql-fundamentals/blob/master/02-DeployAndConfigure/loaddata/LoadData.ipynb?azure-portal=true).

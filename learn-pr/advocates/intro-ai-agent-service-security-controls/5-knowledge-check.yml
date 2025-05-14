@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-ai-agent-service-security-controls.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: Check your knowledge of the Azure AI Agent Service security controls.
+  ms.date: 03/21/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 3
+content: Choose the best response for each question. 
+quiz:
+  questions:
+    - content: "You want to configure an AI Agent Service agent so that outbound data movement is restricted to approved locations. On what resource should you configure this restriction?"
+      choices:
+        - content: "Azure AI Hub."
+          isCorrect: true
+          explanation: "Correct. You configure network restrictions for Azure Agents at the Azure AI Hub level"
+        - content: "Virtual Network"
+          isCorrect: false
+          explanation: "Incorrect. You configure network restrictions for Azure Agents at the Azure AI Hub level"
+        - content: "Private Endpoint."
+          isCorrect: false
+          explanation: "Incorrect. You configure network restrictions for Azure Agents at the Azure AI Hub level"
+    - content: "You have disabled public network access to your Azure AI Hub. What steps can you take to configure and interact with the AI Agents deployed in one of the Hub's projects?"
+      choices:
+        - content: "Create a network security group."
+          isCorrect: false
+          explanation: "Incorrect. Network security groups aren't used to mediate access to Azure AI Hub."
+        - content: "Deploy Azure Bastion."
+          isCorrect: false
+          explanation: "Incorrect. Azure bastion provides secure access to virtual machines. You would need to configure a private endpoint to allow access from the virtual machine to the Azure AI Hub and the projects and AI agents it hosts."
+        - content: "Create a private endpoint."
+          isCorrect: true
+          explanation: "Correct. By creating a private endpoint, you can specify a virtual network and subnet through which you're able to access the Azure AI Hub, the projects it hosts, and AI Agents associated with those projects."
+    - content: "Which role based access control role is the Azure AI Hub's system assigned managed identity assigned to by default?"
+      choices:
+        - content: "Azure AI Administrator."
+          isCorrect: true
+          explanation: "Correct. The Azure AI Hub's system assigned managed identity is assigned to the Azure AI Administrator role by default."
+        - content: "Reader."
+          isCorrect: false
+          explanation: "Incorrect. The Azure AI Hub's system assigned managed identity is assigned to the Azure AI Administrator role by default."
+        - content: "Azure AI Developer."
+          isCorrect: false
+          explanation: "Incorrect. The Azure AI Hub's system assigned managed identity is assigned to the Azure AI Administrator role by default."

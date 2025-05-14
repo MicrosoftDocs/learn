@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-copilot-agent-mode.explore-the-power
+title: Explore the power of autonomous development assistance
+metadata:
+  title: Explore the power of autonomous development assistance
+  description: GitHub Copilot Agent Mode is an autonomous AI coding assistant that dynamically analyzes entire projects, manages complex coding tasks, iteratively improves solutions, and collaboratively streamlines software development workflows.
+  author: a-a-ron
+  ms.author: aastewar
+  ms.date: 03/17/2025
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-explore-the-power.md)]

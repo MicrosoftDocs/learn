@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.azure-netapp-files-performance
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: introduction        
   title: Understand and tune Azure NetApp Files performance       
   description: Learn about the different factors that influence performance in Azure NetApp Files and make choices to optimize the performance to meet the needs of your workloads.      
@@ -39,4 +37,4 @@ units:
 - learn.azure.azure-netapp-files-performance.summary
 badge:
   uid: learn.azure.azure-netapp-files-performance.badge
-
+

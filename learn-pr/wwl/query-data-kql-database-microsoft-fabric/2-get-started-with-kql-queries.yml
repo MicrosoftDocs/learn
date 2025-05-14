@@ -2,8 +2,6 @@
 uid: learn.wwl.query-data-kql-database-microsoft-fabric.get-started-with-kql-queries
 title: Get started with an eventhouse
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Get started with an eventhouse
   description: "Store and query real-time data in Microsoft Fabric."
   ms.date: 12/06/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 12
 content: |
-  [!include[](includes/2-get-started-with-kql-queries.md)]
+  [!include[](includes/2-get-started-with-kql-queries.md)]

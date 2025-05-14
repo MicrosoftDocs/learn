@@ -90,6 +90,7 @@ curl -H "Authorization: token YOUR-TOKEN" \
 ```
 
 ---
+
 ## Method 4: Finding License Usage Across Multiple GitHub Instances
 
 For **large enterprises** with multiple GitHub Enterprise **Server instances**, admins must track **license consumption** across deployments.

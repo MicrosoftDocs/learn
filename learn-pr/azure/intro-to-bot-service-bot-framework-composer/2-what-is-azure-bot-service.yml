@@ -2,8 +2,6 @@
 uid: learn.azure.intro-to-bot-service-bot-framework-composer.2-what-is-azure-bot-service
 title: What are bot service and bot framework?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: What are bot service and bot framework?
   description: What is Azure Bot Service?
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/2-what-is-azure-bot-service.md)]
-
+

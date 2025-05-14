@@ -1,12 +1,5 @@
-The most important skill you should acquire in database performance tuning is being able to read and understand query execution plans. The plans explain the behavior of the database engine as it executes queries and retrieves the results.
+One of the most crucial skills to acquire in database performance tuning is the ability to read and understand query execution plans. These plans provide detailed insights into the behavior of the database engine as it executes queries and retrieves results. By analyzing execution plans, you can identify inefficiencies, optimize query performance, and ensure that your database runs smoothly.
 
-Query Store helps you quickly identify your most expensive queries, and find any changes in performance. The Query Store provides a powerful data collection including the automation of query plan and execution runtime. SQL Server and Azure SQL provide locking and blocking in order to manage concurrency and ensure data consistency. Finally, you can adjust the isolation levels in SQL Server to help manage concurrency.
+The Query Store is an invaluable tool for quickly identifying your most expensive queries and tracking changes in performance over time. It offers comprehensive data collection, including automated query plan and execution runtime analysis. This allows you to pinpoint performance bottlenecks and make informed decisions to improve query efficiency.
 
-## Learning objectives:
-
-In this module, you will:
-
-- Compare the different types of execution plans
-- Understand the purpose and benefits of the Query Store
-- Investigate the available reports and data in the Query Store
-- Understand how blocking and locking work in the SQL Server database engine
+SQL Server implements locking and blocking mechanisms to manage concurrency and ensure data consistency. These mechanisms prevent conflicts and maintain the integrity of your data when multiple users access the database simultaneously. Also, you can adjust isolation levels in SQL Server to fine-tune concurrency management. By selecting the appropriate isolation level, you can balance the trade-offs between data consistency and performance, ensuring that your database operates optimally under various workloads.

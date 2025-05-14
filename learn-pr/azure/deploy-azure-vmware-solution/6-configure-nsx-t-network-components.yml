@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.deploy-azure-vmware-solution.configure-nsx-network-components
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure NSX network components
   description: Configure NSX network components.
   ms.date: 08/01/2024
@@ -15,4 +13,4 @@ title: Configure NSX network components
 durationInMinutes: 10
 content: |
   [!include[](includes/6-configure-nsx-t-network-components.md)]
-
+

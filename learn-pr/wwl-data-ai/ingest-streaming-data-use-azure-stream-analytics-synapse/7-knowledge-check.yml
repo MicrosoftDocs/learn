@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 12/12/2024
   author: wwlpublish
@@ -35,4 +33,4 @@ quiz:
       explanation: "Correct. A Blob storage/ADLS Gen2 output writes data to files in a data lake."
     - content: "Azure Event Hubs"
       isCorrect: false
-      explanation: "Incorrect. An Azure Event Hubs output does not write data to files in a data lake."
+      explanation: "Incorrect. An Azure Event Hubs output does not write data to files in a data lake."

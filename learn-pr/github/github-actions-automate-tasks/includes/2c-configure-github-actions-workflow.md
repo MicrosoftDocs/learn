@@ -67,6 +67,128 @@ on:
     types: [rerequested, requested_action]
 ```
 
+<!-- INFOMAGNUS UPDATES for sub OD 1.1.4 go here. Source Material:  https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#repository_dispatch  --> 
+
+## Repository_dispatch
+`repository_dispatch` is a custom event in GitHub Actions that allows external systems (or even other GitHub workflows) to manually trigger workflows by sending a POST request to the GitHub API.
+It enables flexible automation and integration with outside tools, scripts, or systems that need to start workflows in your repo.
+
+### Use Cases
+- Trigger workflows from external CI/CD tools.
+
+- Coordinate multi-repo deployments (e.g., Repo A finishes build → triggers Repo B).
+
+- Start automation based on external events (webhooks, monitoring alerts, CRON jobs outside GitHub).
+
+- Chain workflow executions between repositories or within monorepos.
+
+### Example Workflow That Listens to repository_dispatch
+```yml
+name: Custom Dispatch Listener
+
+on:
+  repository_dispatch:
+    types: [run-tests, deploy-to-prod]  # Optional filtering
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo the payload
+        run: |
+          echo "Event type: ${{ github.event.action }}"
+          echo "Payload value: ${{ github.event.client_payload.env }}"
+```
+### Key Elements:
+- types: Optional. Defines custom event types like run-tests, deploy-to-prod, etc.
+
+- github.event.client_payload: Access to any additional custom data passed in the dispatch event.
+
+- github.event.action: Name of the event_type sent.
+
+### Triggering the Event via API
+You must send a POST request to the GitHub REST API v3 endpoint:
+```sh
+POST https://api.github.com/repos/OWNER/REPO/dispatches
+```
+#### Authorization
+- Requires a personal access token (PAT) with repo scope.
+- For organizations, ensure proper access settings for your token.
+
+#### Sample command structure
+```sh
+curl -X POST \
+  -H "Accept: application/vnd.github+json" \
+  -H "Authorization: token YOUR_GITHUB_TOKEN" \
+  https://api.github.com/repos/OWNER/REPO/dispatches \
+  -d '{"event_type":"run-tests","client_payload":{"env":"staging"}}'
+```
+#### Payload Structure
+```json
+{
+  "event_type": "run-tests",
+  "client_payload": {
+    "env": "staging"
+  }
+}
+
+```
+#### Parameters
+| Field        | Type                                              | Description |Required|
+|----------------|----------------------------------------------------------|--------------|----------|
+| `event_type`   | string                                          | A custom name for the event. This maps to the types value in your workflow trigger | Yes
+| `client_payload`          | object               | Arbitrary JSON payload to send custom data to the workflow (github.event.client_payload) | No
+                                                       |        No         |
+
+#### repository_dispatch Parameters Breakdown
+When making a POST request to the GitHub API endpoint, you must pass a JSON body with two main parameters:
+- event_type
+- client_payload
+
+##### event_type
+
+This is a required custom string you define that GitHub will treat as the "action" or "type" of the dispatch. It’s used to identify what triggered the workflow and filter workflows that are listening for specific types.
+
+- Format:
+  - Type: string
+  - Example: "deploy", "run-tests", "sync-db", "build-docker"
+
+- Use in Workflow: Used in listening for specific event types and accessing the value inside the workflow. This helps with the reuse of a single workflow for multiple purposes and makes automation more organized and event-driven. 
+- Example:
+```
+- name: Print event type
+  run: echo "Event type: ${{ github.event.action }}"
+```
+
+##### client_payload
+This is a free-form JSON object that lets you send custom data along with the dispatch. You define the structure, and it's accessible inside the workflow.
+- Format:
+  - Type: object
+  - Custom keys and values 
+
+- Use in Workflow: Used for multi-environment deployments, versioned releases, or passing context from another system or pipeline and enables parameterized workflows, similar to input arguments.
+- Example:
+```
+- name: Show payload values
+  run: |
+    echo "Environment: ${{ github.event.client_payload.env }}"
+    echo "Version: ${{ github.event.client_payload.version }}"
+
+```
+
+##### Example Payload Breakdown
+```
+{
+  "event_type": "deploy-to-prod",
+  "client_payload": {
+    "env": "production",
+    "build_id": "build-456",
+    "initiator": "admin_user",
+    "services": ["web", "api", "worker"]
+  }
+}
+
+```
 ## Use conditional keywords
 
 Within your workflow file, you can access context information and evaluate expressions. Although expressions are commonly used with the conditional `if` keyword in a workflow file to determine whether a step should run or not, you can use any supported context and expression to create a conditional. It's important to know that when using conditionals in your workflow, you need to use the specific syntax `${{ <expression> }}`. This tells GitHub to evaluate an expression rather than treat it as a string.
@@ -87,6 +209,8 @@ jobs:
 Notice that in this example, the `${{ }}` are missing from the syntax. With some expressions, as in the case of the `if` conditional, you can omit the expression syntax. GitHub automatically evaluates some of these common expressions, but you can always include them in case you forget which expressions GitHub automatically evaluates.
 
 For more information about workflow syntax and expressions, check out [Workflow syntax for GitHub Actions](https://docs.github.com/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepsif).
+
+<!-- INFOMAGNUS UPDATES for sub OD 1.5.3, 1.5.4., 1.5.5., 1.5.6, 1.5.7, and 1.5.8 go here. Source Material: Infomagnus to find source material and cite  --> 
 
 ## Disable and delete workflows
 

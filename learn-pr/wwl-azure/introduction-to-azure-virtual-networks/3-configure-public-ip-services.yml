@@ -2,11 +2,13 @@
 uid: learn.wwl.introduction-to-azure-virtual-networks.configure-public-ip-services
 title: Configure public IP services
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Configure public IP services
   description: "Configure public IP services"
-  ms.date: 11/19/2024
+  ms.date: 04/08/2025
   author: wwlpublish
-  ms.author: jileary
+  ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
@@ -16,17 +18,6 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following statements about Azure VNets is correct?"
-    choices:
-    - content: "Outbound communication with the internet must be configured for each resource on the VNet."
-      isCorrect: false
-      explanation: "Incorrect. All resources in a VNet can communicate outbound to the internet, by default."
-    - content: "Azure VNets enable communication between Azure resources."
-      isCorrect: true
-      explanation: "Correct. Virtual Networks can connect Azure resources including VMs, the App Service Environment, Azure Kubernetes Service, and Azure Virtual Machine Scale Sets."
-    - content: "Azure VNets can't be configured to communicate with on-premises resources."
-      isCorrect: false
-      explanation: "Incorrect. You can connect your on-premises computers and networks to a virtual network using any of the following options: Point-to-site virtual private network (VPN), Site-to-site VPN, Azure ExpressRoute."
   - content: "Which of the following statements about Azure Public IP addresses is correct?"
     choices:
     - content: "Standard Public IPs are Dynamically allocated."
@@ -38,3 +29,14 @@ quiz:
     - content: "Public IP addresses allow Internet resources to communicate inbound to Azure resources."
       isCorrect: true
       explanation: "Correct. An IP address is assigned from a pool of available addresses, based on the location of the resource."
+  - content: "What is the difference between a static public IP address and a dynamic public IP address?"
+    choices:
+    - content: "A dynamic IP address remains the same over the lifespan of the resource."
+      isCorrect: false
+      explanation: "Incorrect. A dynamic public IP address is an assigned address that can change over the lifespan of the Azure resource. The dynamic IP address is allocated when you create or start a VM."
+    - content: "A static IP address can use an IPv4 address only."
+      isCorrect: false
+      explanation: "Incorrect. Static IP addresses are created with either an IPv4 or an IPv6 address."
+    - content: "A static IP address remains the same over the lifespan of the resource."
+      isCorrect: true
+      explanation: "Correct. A static public IP address is an assigned address that won't change over the lifespan of the Azure resource. To configure a static IP address, set the allocation method explicitly to static."

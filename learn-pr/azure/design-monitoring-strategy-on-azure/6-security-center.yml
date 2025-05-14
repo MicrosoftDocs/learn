@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-monitoring-strategy-on-azure.4-security-center
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage infrastructure security by using Defender for Cloud
   description: Learn how to monitor, analyze, and manage infrastructure security by using Microsoft Defender for Cloud.
   ms.date: 01/22/2025
@@ -38,4 +36,4 @@ quiz:
     - content: Use Azure Logic Apps.
       isCorrect: true
       explanation: Defender for Cloud lets you take action on alerts by triggering an automated response with Azure Logic Apps.
-
+

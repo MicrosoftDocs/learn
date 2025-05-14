@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.fsharp-lists.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge by answering four multiple-choice questions.
   ms.date: 03/24/2023
   author: baronfel

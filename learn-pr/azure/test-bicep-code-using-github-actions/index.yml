@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.test-bicep-code-using-github-actions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: standard
   title: Test your Bicep code by using GitHub Actions
   description: Build a deployment workflow for Bicep infrastructure as code templates. Lint, validate, preview, and test your Bicep code by using GitHub and GitHub Actions.
@@ -71,4 +69,4 @@ units:
 - learn.azure.test-bicep-code-using-github-actions.summary
 badge:
   uid: learn.azure.test-bicep-code-using-github-actions.badge
-
+

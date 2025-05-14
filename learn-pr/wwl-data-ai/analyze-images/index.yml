@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.analyze-images
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Analyze images
   description: Analyze images
   author: wwlpublish
@@ -45,4 +43,4 @@ units:
 - learn.wwl.analyze-images.summary
 badge:
   uid: learn.wwl.analyze-images.badge
-
+

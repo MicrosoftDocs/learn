@@ -2,13 +2,11 @@
 uid: learn.wwl.deploy-workloads-with-databricks-workflows.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 07/23/2024
   author: wwlpublish
-  ms.author: theresai
+  ms.author: jamesh
   ms.topic: unit
 durationInMinutes: 3
 content: |

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.fundamentals-azure-ai-services
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Fundamentals of Azure AI services
   description: "This module is an introduction to how Azure AI services can be used to build applications."
   ms.date: 10/03/2024
@@ -44,4 +42,4 @@ units:
 - learn.wwl.fundamentals-azure-ai-services.knowledge-check
 - learn.wwl.fundamentals-azure-ai-services.summary
 badge:
-  uid: learn.wwl.fundamentals-azure-ai-services.badge
+  uid: learn.wwl.fundamentals-azure-ai-services.badge

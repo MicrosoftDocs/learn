@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: standard
   title: Review Azure infrastructure changes by using Bicep and pull requests
   description: Learn how to protect your main Git repository branch from accidental Bicep code changes, and how to use pull requests to review your team's Bicep code.
@@ -60,4 +58,4 @@ units:
 - learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.summary
 badge:
   uid: learn.azure.review-azure-infrastructure-changes-using-bicep-pull-requests.badge
-
+

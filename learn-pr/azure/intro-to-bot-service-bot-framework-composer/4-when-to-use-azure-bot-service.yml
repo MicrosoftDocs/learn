@@ -2,8 +2,6 @@
 uid: learn.azure.intro-to-bot-service-bot-framework-composer.4-when-to-use-azure-bot-service
 title: When to use the Azure Bot Service and Bot Framework
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: When to use the Azure Bot Service and Bot Framework
   description: When to use the Azure Bot Service and Bot Framework
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/4-when-to-use-azure-bot-service.md)]
-
+

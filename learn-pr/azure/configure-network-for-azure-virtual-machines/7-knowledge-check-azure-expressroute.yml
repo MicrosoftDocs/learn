@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.configure-the-network-for-your-virtual-machines.7-knowledge-check-azure-expressroute
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   ms.date: 11/01/2023
   author: mbender-ms
@@ -58,4 +56,4 @@ quiz:
     - content: "S-key"
       isCorrect: false
       explanation: "An s-key is a GUID that defines an ExpressRoute circuit and provides the connectivity link between Microsoft, your connectivity provider, and your organization."
-
+

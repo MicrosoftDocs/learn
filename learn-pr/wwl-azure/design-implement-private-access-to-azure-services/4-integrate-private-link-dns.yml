@@ -6,37 +6,26 @@ metadata:
   prefetch-feature-rollout: true
   title: Integrate private endpoint with Domain Name Service
   description: "Integrate private endpoint with Domain Name Service"
-  ms.date: 01/30/2025
+  ms.date: 04/16/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 8
+durationInMinutes: 6
 content: |
   [!include[](includes/4-integrate-private-link-dns.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What resource is associated with a Private Endpoint and contains information to configure your Private Endpoint DNS?"
+  - content: "How does integrating private link DNS enhance security?"
     choices:
-    - content: "The virtual network"
+    - content: "By encrypting all data"
       isCorrect: false
-      explanation: "Incorrect. The virtual network doesn't include the information needed to configure your Private Endpoint DNS."
-    - content: "The network interface"
+      explanation: "Incorrect. While encryption may be part of the process, it's not the primary way private link DNS enhances security."
+    - content: "By restricting access to services within the private network"
       isCorrect: true
-      explanation: "Correct. The network interface information includes FQDN and private IP addresses for your Private Link resource."
-    - content: "The private DNS zone"
+      explanation: "Correct. Private link DNS enhances security by restricting access to services within the private network."
+    - content: "By blocking all incoming traffic"
       isCorrect: false
-      explanation: "Incorrect. The private DNS zone doesn't include the information needed to configure your Private Endpoint DNS."
-  - content: "What is the significance of IP address 168.63.129.16?"
-    choices:
-    - content: "It's a nonvirtual public IP address that is used to facilitate a communication channel to Azure platform resources."
-      isCorrect: false
-      explanation: "Incorrect. In a nonvirtual network scenario, a private IP address is used instead of 168.63.129.16. This private IP address is dynamically discovered through DHCP."
-    - content: "It's a static address of a DNS forwarder."
-      isCorrect: false
-      explanation: "Incorrect. 168.63.129.16 is a virtual public IP address that is used to facilitate a communication channel to Azure platform resources."
-    - content: "It's a virtual public IP address that is used to facilitate a communication channel to Azure platform resources."
-      isCorrect: true
-      explanation: "Correct. Additionally, customers can define any address space for their private virtual network in Azure."
+      explanation: "Incorrect. Blocking all traffic would prevent legitimate access as well."

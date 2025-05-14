@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.deploy-microsoft-configuration-manager.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 05/15/2023
   author: wwlpublish
@@ -37,4 +35,4 @@ quiz:
       explanation: "Correct. Running setup manually is not a scalable solution, even when using an unattended file. Building a task sequence is the recommended approach for large-scale deployments."
     - content: "Use Windows Autopilot"
       isCorrect: false
-      explanation: "Incorrect. Until the device is upgraded to Windows 11 or later, traditional deployment tools must be used. Once the machine is upgraded to Windows 11, solutions such as Windows Autopilot can be used for future servicing. Try again."
+      explanation: "Incorrect. Until the device is upgraded to Windows 11 or later, traditional deployment tools must be used. Once the machine is upgraded to Windows 11, solutions such as Windows Autopilot can be used for future servicing. Try again."

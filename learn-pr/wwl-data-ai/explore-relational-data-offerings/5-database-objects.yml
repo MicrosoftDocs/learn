@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-relational-data-offerings.describe-database-objects
 title: Describe database objects
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe database objects
   description: "Describe database objects"
   ms.date: 08/28/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 9
 content: |
-  [!include[](includes/5-database-objects.md)]
+  [!include[](includes/5-database-objects.md)]

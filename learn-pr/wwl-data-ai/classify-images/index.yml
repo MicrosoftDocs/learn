@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.classify-images
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Classify images
   description: Classify images
   author: ivorb
@@ -45,4 +43,4 @@ units:
 - learn.wwl.classify-images.summary
 badge:
   uid: learn.wwl.classify-images.badge
-
+

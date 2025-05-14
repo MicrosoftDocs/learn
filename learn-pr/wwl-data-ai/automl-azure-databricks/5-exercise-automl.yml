@@ -2,8 +2,6 @@
 uid: learn.wwl.automl-azure-databricks.exercise-automl
 title: Exercise - Use AutoML in Azure Databricks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Use AutoML in Azure Databricks
   description: Exercise - Use AutoML in Azure Databricks
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise-automl.md)]
-
+

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.enrich-search-index-using-language-studio
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Enrich your data with Azure AI Language
   description: Azure AI Language gives you the power of Natural Language Processing (NLP) to automatically understand and analyze text. You can use that power to enhance your search solutions.
   author: wwlpublish
@@ -44,4 +42,4 @@ units:
 - learn.wwl.enrich-search-index-using-language-studio.summary
 badge:
   uid: learn.wwl.enrich-search-index-using-language-studio.badge
-
+

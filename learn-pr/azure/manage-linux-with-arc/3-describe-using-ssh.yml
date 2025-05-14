@@ -2,8 +2,6 @@
 uid: learn.manage-linux-with-arc.describe-using-ssh
 title: Describe how to use SSH in Azure Arc to manage Linux
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe how to use SSH in Azure Arc to manage Linux
   description: Describe how to use SSH with Azure Arc to manage Linux systems
   ms.date: 07/30/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-describe-using-ssh.md)]
-
+

@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-business-benefits-azure.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 09/20/2024
   author: wwlpublish
@@ -51,4 +49,4 @@ quiz:
     - content: "The business’s data is stored on some of the most secure equipment in the world, and they can easily monitor it for compliance and proper use."
       isCorrect: true
       explanation: "Correct. Azure is one of the safest places a business can store its data, and any business can easily monitor its own cloud activity via the Internet."
-interactive: bash
+interactive: bash

@@ -2,8 +2,6 @@
 uid: learn.wwl.datacenter-integration-for-azure-stack-hub.external-monitor
 title: External monitoring
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: External monitoring
   description: "External monitoring"
   ms.date: 03/15/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/12-external-monitor.md)]
+  [!include[](includes/12-external-monitor.md)]

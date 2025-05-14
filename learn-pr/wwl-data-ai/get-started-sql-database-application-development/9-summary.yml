@@ -2,8 +2,6 @@
 uid: learn-wwl.get-started-sql-database-application-development.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 10/02/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/9-summary.md)]
+  [!include[](includes/9-summary.md)]

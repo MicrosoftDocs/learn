@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.startups.revenue.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Review concepts on startup revenue models. Topics include choosing the right pricing model and determining which customers to focus on initially.
   ms.date: 06/18/2024
   author: vhawk85
@@ -75,4 +73,4 @@ quiz:
       explanation: "Correct. Early adopters have likely experimented with alternatives. They might have created makeshift solutions themselves."
     - content: "They work for a company that you're competing with."
       isCorrect: false
-      explanation: "Incorrect. Early adopters are likely to have experimented with alternative solutions. But they can work for any company in any area."
+      explanation: "Incorrect. Early adopters are likely to have experimented with alternative solutions. But they can work for any company in any area."

@@ -1,71 +1,11 @@
-Now that you've seen how Azure SQL appears in SQL Server Management Studio (SSMS), you can explore an open-source tool called Azure Data Studio. Azure Data Studio provides a lightweight editor and other tools for interacting with Azure Data Services, such as SQL Server on-premises, Azure SQL, and Azure Database for PostgreSQL. Take a brief tour to get acquainted.
+Now that you've seen how Azure SQL appears in SQL Server Management Studio (SSMS), you can verify the deployment.
 
-## Connect with Azure Data Studio
-
-1. On your local device, open Azure Data Studio. When opening for the first time, you're prompted to make a connection.  
-
-    If you're prompted to enable preview features, select **Yes**.  
-
-    :::image type="content" source="../media/4-azure-data-studio-connection-window.png" alt-text="Screenshot of the opening view of Azure Data Studio.":::  
-
-    If you don't have this window, or at any time you want to add another connection, you can select the **New connection** button on the **Servers** bar. In the following example, you also get a preview of what a SQL Server connection would look like. In this exercise, you don't connect to SQL Server.  
-
-    :::image type="content" source="../media/4-new-connection.png" alt-text="Screenshot of how to create a new connection in Azure Data Studio.":::  
-
-1. Connect to your Azure SQL Database logical server. Complete **Connection Details** with the following values and select **Connect**.
-
-    | Parameter               | Value                                         |
-    |:------------------------|:----------------------------------------------|
-    | **Connection type**     | Microsoft SQL Server                          |
-    | **Server**              | Enter your logical server name                |
-    | **Authentication type** | SQL Login                                     |
-    | **User name**           | cloudadmin                                    |
-    | **Password**            | Enter the password for the cloudadmin account |
-    | **Remember password**   | Selected                                      |
-    | **Database**            | AdventureWorks                                |
-    | **Server group**        | Leave as `<Default>`                          |
-    | **Name (optional)**     | Leave blank                                   |
-
-1. On the **Connections** tab, under **Servers**, you should now see your Azure SQL Database connection. The SQL Server connection shown in the following image is for comparison only.
-
-    :::image type="content" source="../media/4-azure-data-studio-servers.png" alt-text="Screenshot that compares SQL Server and SQL Database in Azure Data Studio.":::  
-
-1. Running queries in Azure Data Studio is similar to SSMS. Right-click a database or server name and select **New query**.
-
-1. For Azure SQL Database, because you're not getting a full server, **USE [DatabaseName]** isn't supported to change the database context. You must either change the connection to specifically connect to the database on which you want to run a query or use the dropdown. Change to the context of your `AdventureWorks` database by selecting the option next to `master` and run `SELECT @@VERSION`.  
-
-    :::image type="content" source="../media/4-new-query-azure-data-studio.png" alt-text="Screenshot of querying in Azure Data Studio.":::
-
-    Later in this exercise, you dive in to why that result is different from what you get in SQL Server.
-
-## Set up easy file access with Azure Data Studio  
-
-Now that you're connected, you might want an easy way to access scripts and Jupyter notebooks. A Jupyter notebook is a way of integrating runnable code with text. If you aren't familiar with Jupyter notebooks, you will be soon.
-
-1. In Azure Data Studio, select **File** > **Open Folder**.  
-
-    :::image type="content" source="../media/4-open-folder.png" alt-text="Screenshot of opening a folder in Azure Data Studio.":::  
-
-1. Browse to where you extracted the zip file of the resources for this exercise. If you followed the prerequisites, the path should be similar to *C:\Users\\\<machine-username>\mslearn-azure-sql-fundamentals*. When you're there, select **Select Folder**. If prompted, select **Yes, I trust the authors**.
-
-1. Next, select the **Explorer** icon from the left taskbar to browse through the files in the module. This folder contains all of the necessary resources for the learning path about Azure SQL fundamentals, so you only need to download and configure this information once.
-
-    Throughout the module and learning path exercises, you're instructed at various points to open a *notebook* file that has the following file name extension: *.ipynb*. You can access the notebook from here directly. Alternatively, you can access it from the **Notebook** icon tab.  
 
 ## Verify deployment
 
 After you deploy an instance of SQL, you typically run queries to verify your deployment. In Azure SQL, some of these queries vary from SQL Server. In this step, you see what things change SQL Server, how they change, and what's new.  
 
-There are two options for completing this exercise:
-
-- T-SQL in SSMS
-- SQL Notebooks in Azure Data Studio
-
-Both exercises contain the same commands and content, so you can choose the option that you prefer.
-
-### Option 1: T-SQL in SSMS
-
-In this option, you walk through some common queries against system functions, dynamic management views (DMVs), and catalog views that you can use after deployment in SSMS. You see which ones work the same as SQL Server, which ones don't, and which ones are new to Azure SQL.
+In this exercise, you walk through some common queries against system functions, dynamic management views (DMVs), and catalog views that you can use after deployment in SSMS. You see which ones work the same as SQL Server, which ones don't, and which ones are new to Azure SQL.
 
 1. Connect to your Azure SQL Database logical server in SSMS if you haven't already.
 1. Right-click the `AdventureWorks` database and select **New Query**.
@@ -108,7 +48,7 @@ In this option, you walk through some common queries against system functions, d
 
     :::image type="content" source="../media/4-sys-databases-objects.png" alt-text="Screenshot of the results for sys.databases and sys.objects.":::  
 
-    In the first result set, the system databases `msdb`, `tempdb`, and `model` aren't listed. Only `master` and your user database are listed. The `master` database in an Azure SQL logical server isn't the same as the physical `master` database installed with SQL Server. In Azure SQL Managed Instance, you see the normal set of system databases, as with any SQL Server instance.
+    In the first result set, the system databases `msdb`, `tempdb`, and `model` aren't listed. Only `master` and your user database are listed. The `master` database in a logical server isn't the same as the physical `master` database installed with SQL Server. In Azure SQL Managed Instance, you see the normal set of system databases, as with any SQL Server instance.
 
     However, `sys.objects` looks similar to a normal SQL Server instance. That fact is true for system tables, internal tables, and user objects for the sample `AdventureWorksLT` database.
 
@@ -142,8 +82,4 @@ In this option, you walk through some common queries against system functions, d
 
     Using `sys.dm_exec_requests` for Azure SQL Database is different from using it for SQL Server or SQL Managed Instance. This DMV shows only active requests related to your database, including background tasks or background tasks that don't have a database context that shows up as `master`. This behavior is because of the nature of an Azure SQL Database deployment.
 
-### Option 2: SQL Notebooks in Azure Data Studio
 
-For this option, use the notebook **VerifyDeployment.ipynb**. It's under *02-DeployAndConfigure\verifydeployment\VerifyDeployment.ipynb* in the GitHub repository or the zip file you downloaded earlier. Browse to that file in Azure Data Studio to complete this part of the exercise, then return here. In the same folder, you can also find extra notebooks that contain the results of the same queries on Azure SQL Managed Instance and SQL Server 2019.  
-
-If you can't complete the exercise for any reason, you can review the results in the [corresponding notebook file on GitHub](https://github.com/MicrosoftDocs/mslearn-azure-sql-fundamentals/blob/master/02-DeployAndConfigure/verifydeployment/VerifyDeployment.ipynb?azure-portal=true).

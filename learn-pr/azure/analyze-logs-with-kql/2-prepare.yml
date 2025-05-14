@@ -2,8 +2,6 @@
 uid: learn.analyze-logs-with-kql.prepare
 title: Prepare
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Prepare
   description: "Project overview and setup requirements."
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-prepare.md)]
+  [!include[](includes/2-prepare.md)]

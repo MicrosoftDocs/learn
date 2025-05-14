@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.azure-functions-and-signalr.3-exercise-analyze-limitations-of-polling-in-a-web-app
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Analyze the limitations of a polling-based web app
   description: Review the implementation of polling website and run the app on your machine.
   ms.date: 01/22/2025
@@ -14,4 +12,4 @@ title: Exercise - Analyze the limitations of a polling-based web app
 durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-analyze-limitations-of-polling-in-a-web-app.md)]
-
+

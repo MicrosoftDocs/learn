@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-synapse-link-for-sql.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 02/10/2023
   author: wwlpublish
@@ -47,4 +45,4 @@ quiz:
       explanation: "Incorrect. You do not need Azure key Vault to use Azure Synapse Link for SQL."
     - content: "An Azure Application Insights resource"
       isCorrect: false
-      explanation: "Incorrect. You do not need Azure Application Insights to use Azure Synapse Link for SQL."
+      explanation: "Incorrect. You do not need Azure Application Insights to use Azure Synapse Link for SQL."

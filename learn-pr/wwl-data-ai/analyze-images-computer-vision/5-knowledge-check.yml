@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.analyze-images-computer-vision.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   author: wwlpublish
   ms.author: sheryang
@@ -49,4 +47,4 @@ quiz:
     - content: "Dense Captions"
       isCorrect: false
       explanation: "Incorrect. Categories provide suggested categorizations for the image as a whole, not individual items in it."
-
+

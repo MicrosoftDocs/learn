@@ -2,8 +2,6 @@
 uid: learn.azure.azure-java-app-enable-authentication-authorization.authorize-access-to-api
 title: Authorize access to APIs with Microsoft Authentication Library
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Authorize access to APIs with Microsoft Authentication Library
   description: In this unit, you will learn how Microsoft Authentication Library provides your application authorized access to protected APIs.
@@ -17,4 +15,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/6-authorize-access-to-api.md)]
-
+

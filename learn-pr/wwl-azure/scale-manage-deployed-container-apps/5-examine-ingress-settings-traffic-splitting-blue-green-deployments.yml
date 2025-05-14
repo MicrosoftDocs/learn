@@ -2,8 +2,6 @@
 uid: learn.wwl.scale-manage-deployed-container-apps.examine-ingress-settings-traffic-splitting-blue-green-deployments
 title: Examine ingress settings for traffic-splitting and blue-green deployments
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Examine ingress settings for traffic-splitting and blue-green deployments
   description: "Examine ingress settings for traffic-splitting and blue-green deployments"
   ms.date: 01/07/2025

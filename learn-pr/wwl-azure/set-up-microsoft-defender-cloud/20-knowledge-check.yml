@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.set-up-microsoft-defender-cloud.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 04/24/2024
   author: wwlpublish
@@ -61,4 +59,4 @@ quiz:
       explanation: "Correct. The MITRE Attack Matrix provides a framework for categorizing and describing various techniques used by attackers. It focuses on tactics and techniques for exploiting software vulnerabilities to gain unauthorized access or perform malicious activities."
     - content: "Network traffic monitoring"
       isCorrect: false
-      explanation: "Incorrect. Network traffic monitoring is related to detecting and analyzing network activities, but it isn't the primary focus of the MITRE Attack Matrix."
+      explanation: "Incorrect. Network traffic monitoring is related to detecting and analyzing network activities, but it isn't the primary focus of the MITRE Attack Matrix."

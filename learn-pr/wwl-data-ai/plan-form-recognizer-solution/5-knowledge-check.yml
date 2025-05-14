@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.plan-form-recognizer-solution.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   author: ivorb
   ms.author: berryivor
@@ -64,4 +62,4 @@ quiz:
     - content: "Receipt"
       isCorrect: true
       explanation: "Correct. The receipt model can identify commonly used fields and their values in scanned or photographed receipt documents."
-
+

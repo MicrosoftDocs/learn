@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-azure-storage-services
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe Azure storage services
   description: "Azure storage services, tiers, redundancy options, and migration options and tools."
   ms.date: 02/03/2025

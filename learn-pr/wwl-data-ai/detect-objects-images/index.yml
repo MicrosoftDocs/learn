@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.detect-objects-images
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Detect objects in images
   description: Detect objects in images
   author: ivorb
@@ -46,4 +44,4 @@ units:
 - learn.wwl.detect-objects-images.summary
 badge:
   uid: learn.wwl.detect-objects-images.badge
-
+

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.query-data-kql-database-microsoft-fabric
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Work with real-time data in a Microsoft Fabric eventhouse
   description: "Microsoft Fabric provides a scalable and flexible store for real-time data."
   ms.date: 12/06/2024
@@ -41,4 +39,4 @@ units:
 - learn.wwl.query-data-kql-database-microsoft-fabric.knowledge-check
 - learn.wwl.query-data-kql-database-microsoft-fabric.summary
 badge:
-  uid: learn.wwl.query-data-kql-database-microsoft-fabric.badge
+  uid: learn.wwl.query-data-kql-database-microsoft-fabric.badge

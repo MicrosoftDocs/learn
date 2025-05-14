@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-form-recognizer.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Multiple-choice questions
   author: laujan
   ms.author: lajanuar
@@ -51,4 +49,4 @@ quiz:
     - content: Custom models can be tuned to specific types of forms, but prebuilt models are generic models, not tuned to a specific type of form.
       isCorrect: false
       explanation: Incorrect. Prebuilt models can be used for invoices, receipts, IDs, and business cards.
-
+

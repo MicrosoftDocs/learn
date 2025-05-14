@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.startups.fundraising.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Review concepts of startup fundraising. Topics include pitching strategies, the differences between types of investors, and due diligence research.
   ms.date: 06/17/2024
   author: vhawk85
@@ -79,4 +77,4 @@ quiz:
     - content: "All of the above."
       isCorrect: true
       explanation: "Correct. Due diligence covers employment contracts, previous investments, disputes, and loans, among other topics."
-
+

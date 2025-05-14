@@ -2,11 +2,13 @@
 uid: learn.wwl.design-implement-azure-expressroute.connect-geographically-dispersed-networks-expressroute-global-reach
 title: Connect geographically dispersed networks with ExpressRoute global reach
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Connect geographically dispersed networks with ExpressRoute global reach
   description: "Connect geographically dispersed networks with ExpressRoute global reach"
-  ms.date: 12/06/2024
+  ms.date: 04/21/2025
   author: wwlpublish
-  ms.author: jileary
+  ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
@@ -27,14 +29,14 @@ quiz:
     - content: "Connect branch offices across the world."
       isCorrect: true
       explanation: "Correct. ExpressRoute Global Reach is designed to complement your service provider’s WAN implementation and connect your branch offices across the world."
-  - content: "How can a network engineer for a company with offices in London and Tokyo configure communications between the two offices?"
+  - content: "What is the impact of Azure's Global Reach on application performance?"
     choices:
-    - content: "Use a local service provider that has a presence in both London and Tokyo, and enable GlobalReach to connect to each local service provider location."
+    - content: "Global Reach increases the complexity of application deployment."
       isCorrect: false
-      explanation: "Incorrect. You can use different local service providers in each location."
-    - content: "Use a local service provider in London and a different local service provider in Tokyo. GlobalReach connects the branches using ExpressRoute and the Microsoft global network."
+      explanation: "Incorrect. Azure's global reach doesn't increase deployment complexity, but rather improves application performance by reducing latency."
+    - content: "Global Reach requires more resources for application maintenance."
+      isCorrect: false
+      explanation: "Incorrect. Azure's global reach doesn't necessarily require more maintenance resources, but it enhances application performance by hosting data and applications closer to users."
+    - content: "Global Reach improves application performance by reducing latency."
       isCorrect: true
-      explanation: "Correct. You can use a local service provider wherever your offices are located."
-    - content: "Use GlobalReach to connect each location to a private VPN, and use local service providers for point-to-site access."
-      isCorrect: false
-      explanation: "Incorrect. Each location should connect to GlobalNet through a local service provider."
+      explanation: "Correct. By hosting applications and data closer to end users, Azure's global reach reduces latency and improves application performance."

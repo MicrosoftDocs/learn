@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-data-platform-modernization
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design a SQL Server migration strategy
   description: Design a SQL Server migration strategy
   ms.date: 04/14/2023
@@ -48,4 +46,4 @@ units:
 - learn.wwl.introduction-data-platform-modernization.6-summary
 badge:
   uid: learn.wwl.introduction-data-platform-modernization.badge
-
+

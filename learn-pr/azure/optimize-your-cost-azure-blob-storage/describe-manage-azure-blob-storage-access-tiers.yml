@@ -2,8 +2,6 @@
 uid: learn.azure.optimize-your-cost-azure-blob-storage.describe-manage-azure-blob-storage-access-tiers
 title: Describe and manage Azure Blob Storage access tiers
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe and manage Azure Blob Storage access tiers
   description: Describe and manage Azure Blob Storage access tiers.
   ms.date: 08/14/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/describe-manage-azure-blob-storage-access-tiers.md)]
-
+

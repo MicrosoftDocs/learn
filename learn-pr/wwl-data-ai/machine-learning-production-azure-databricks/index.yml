@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.machine-learning-production-azure-databricks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage machine learning in production with Azure Databricks
   description: "Learn how to manage machine learning models in production with Azure Databricks."
   ms.date: 07/17/2024
@@ -41,4 +39,4 @@ units:
 - learn.wwl.machine-learning-production-azure-databricks.knowledge-check
 - learn.wwl.machine-learning-production-azure-databricks.summary
 badge:
-  uid: learn.wwl.machine-learning-production-azure-databricks.badge
+  uid: learn.wwl.machine-learning-production-azure-databricks.badge

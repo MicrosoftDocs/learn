@@ -2,13 +2,11 @@
 uid: learn.azure-well-architected-reliability.keep-it-simple
 title: Keep it simple
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Keep it simple
   description: Learn strategies for simplifying your workload design to optimize its reliability.
   ms.date: 12/18/2023
-  author: claytonsiemens77
-  ms.author: csiemens
+  author: PageWriter-MSFT
+  ms.author: prwilk
   ms.topic: unit
 durationInMinutes: 15
 content: |
@@ -58,4 +56,3 @@ quiz:
     - content: "It allowed the team to move to a serverless architecture."
       isCorrect: false
       explanation: "Incorrect. Azure App Services isn’t a serverless architecture."
-

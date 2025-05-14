@@ -2,8 +2,6 @@
 uid: learn.wwl.work-with-form-recognizer.what-form-recognizer
 title: What is Azure Document Intelligence?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is Azure Document Intelligence?
   description: What is Azure Document Intelligence?
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/2-what-form-recognizer.md)]
-
+

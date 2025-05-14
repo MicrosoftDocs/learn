@@ -2,13 +2,11 @@
 uid: learn.azure-well-architected-cost-optimization.design-for-usage-optimization
 title: Design for usage optimization
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design for usage optimization
   description: Learn how to maximize the use of resources and operations.
   ms.date: 10/23/2023
-  author: martinekuan
-  ms.author: martinek
+  author: PageWriter-MSFT
+  ms.author: prwilk
   ms.topic: unit
 durationInMinutes: 12
 content: |
@@ -56,4 +54,4 @@ quiz:
           explanation: "Incorrect.  The cost analysis report won’t provide information about the utilization of a given resource"
         - content: "Review the Azure Advisor cost recommendations"
           isCorrect: true
-          explanation: "Correct.  Azure Advisor cost recommendations can identify underutilized MySQL servers and will provide a recommendation when such servers are found."
+          explanation: "Correct.  Azure Advisor cost recommendations can identify underutilized MySQL servers and will provide a recommendation when such servers are found."

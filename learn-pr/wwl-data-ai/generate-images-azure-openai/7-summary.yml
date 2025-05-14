@@ -2,8 +2,6 @@
 uid: learn.wwl.generate-images-azure-openai.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summarize what you've learned about DALL-E models in the Azure OpenAI service
   author: ivorb
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
-
+

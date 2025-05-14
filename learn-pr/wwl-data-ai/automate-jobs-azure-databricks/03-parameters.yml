@@ -2,8 +2,6 @@
 uid: learn.wwl.automate-jobs-azure-databricks.parameters
 title: Optimize workflows with parameters
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Optimize workflows with parameters
   description: "Optimize workflows with parameters"
   ms.date: 08/05/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/03-parameters.md)]
+  [!include[](includes/03-parameters.md)]

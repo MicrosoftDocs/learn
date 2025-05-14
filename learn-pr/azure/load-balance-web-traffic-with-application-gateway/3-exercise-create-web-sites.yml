@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.load-balance-web-traffic-with-application-gateway.3-exercise-create-web-sites
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create web sites
   description: Create a virtual network and virtual machines for hosting the vehicle registration web app, and an App Service for hosting the license renewal web app
   ms.date: 01/31/2024
@@ -15,4 +13,4 @@ title: Exercise - Create web sites
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-create-web-sites.md)]
-
+

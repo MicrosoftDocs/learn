@@ -2,8 +2,6 @@
 uid: learn.make-recommendations-ai-personalize.exercise
 title: Use AI Personalizer with Visual Studio Code Notebooks to simulate a loop
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use AI Personalizer with Visual Studio Code Notebooks to simulate a loop
   description: Learn how to configure Azure AI Personalizer resource, and use Visual Studio Code notebooks to create and run a learning loop.
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 30
 content: |
   [!include[](includes/8-exercise.md)]
-
+

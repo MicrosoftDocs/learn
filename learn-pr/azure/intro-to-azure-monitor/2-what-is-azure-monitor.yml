@@ -2,8 +2,6 @@
 uid: learn.azure.intro-to-azure-monitor.what-is-azure-monitor
 title: Monitoring and Azure Monitor
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Monitoring and Azure Monitor
   description: Learn about monitoring and its benefits, Azure Monitor capabilities, and ways to monitor resources.
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/2-what-is-azure-monitor.md)]
-
+

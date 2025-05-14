@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.get-started-prompt-flow-ai-studio
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Get started with prompt flow in Azure AI Foundry
   description: Get started with prompt flow to develop language model apps in the Azure AI Foundry.
   author: madiepev
@@ -47,4 +45,4 @@ units:
 - learn.get-started-prompt-flow-ai-studio.summary
 badge:
   uid: learn.get-started-prompt-flow-ai-studio.badge
-
+

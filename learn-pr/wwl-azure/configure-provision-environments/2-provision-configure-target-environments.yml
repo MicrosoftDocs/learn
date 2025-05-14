@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-provision-environments.provision-configure-target-environments
 title: Provision and configure target environments
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Provision and configure target environments
   description: "Provision and configure target environments"
   ms.date: 05/06/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-provision-configure-target-environments.md)]
+  [!include[](includes/2-provision-configure-target-environments.md)]

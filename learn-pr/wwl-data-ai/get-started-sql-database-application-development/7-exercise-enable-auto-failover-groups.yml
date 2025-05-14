@@ -2,8 +2,6 @@
 uid: learn-wwl.get-started-sql-database-application-development.exercise-enable-auto-failover-groups
 title: 'Exercise: Enable application resilience with Azure SQL Database'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Enable application resilience with Azure SQL Database'
   description: "Learn how to enable application resilience with Azure SQL Database."
   ms.date: 10/02/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 30
 content: |
-  [!include[](includes/7-exercise-enable-auto-failover-groups.md)]
+  [!include[](includes/7-exercise-enable-auto-failover-groups.md)]

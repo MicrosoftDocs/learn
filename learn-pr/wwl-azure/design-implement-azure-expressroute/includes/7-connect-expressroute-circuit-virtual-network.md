@@ -1,37 +1,31 @@
-An ExpressRoute circuit represents a logical connection between your on-premises infrastructure and Microsoft cloud services through a connectivity provider. You can order multiple ExpressRoute circuits. Each circuit can be in the same or different regions and can be connected to your premises through different connectivity providers. ExpressRoute circuits don't map to any physical entities. A circuit uses a standard GUID called as a service key (s-key).
-
-## Connect a virtual network to an ExpressRoute circuit
-
- -  You must have an active ExpressRoute circuit.
- -  Ensure that you have Azure private peering configured for your circuit.
- -  Ensure that Azure private peering gets configured and establishes BGP peering between your network and Microsoft for end-to-end connectivity.
- -  Ensure that you have a virtual network and a virtual network gateway created and fully provisioned. A virtual network gateway for ExpressRoute uses the GatewayType 'ExpressRoute', not VPN.
- -  You can link up to 10 virtual networks to a standard ExpressRoute circuit. All virtual networks must be in the same geopolitical region when using a standard ExpressRoute circuit.
- -  A single virtual network can be linked to up to 16 ExpressRoute circuits. The ExpressRoute circuits can be in the same subscription, different subscriptions, or a mix of both.
- -  If you enable the ExpressRoute premium add-on, you can link virtual networks outside of the geopolitical region of the ExpressRoute circuit. The premium add-on allows you to connect more than 10 virtual networks to your ExpressRoute circuit depending on the bandwidth chosen.
- -  To create the connection from the ExpressRoute circuit to the target ExpressRoute virtual network gateway, the number of address spaces advertised from the local or peered virtual networks needs to be equal to or less than **200**. Once the connection is successfully created, you can add other address spaces, up to 1,000, to the local or peered virtual networks.
 
 
-## Add a VPN to an ExpressRoute deployment
+Reliability consists of two principles: resiliency and availability. The goal of resiliency is to prevent failures and, in the event they do occur, to restore your applications to a fully operational state. The objective of availability is to provide consistent access to your application or workloads. It's important to proactively plan for reliability based on your business needs and application requirements.
 
-This section helps you configure secure encrypted connectivity between your on-premises network and your Azure virtual networks (VNets) over an ExpressRoute private connection. You can use Microsoft peering to establish a site-to-site IPsec/IKE VPN tunnel between your selected on-premises networks and Azure VNets. Configuring a secure tunnel over ExpressRoute allows for data exchange with confidentiality, anti-replay, authenticity, and integrity.
+An ExpressRoute circuit in three different [resiliency](/azure/expressroute/design-architecture-for-resiliency#standard-resiliency) types: **Standard** Resiliency, **High** Resiliency, and **Maximum** Resiliency. This video reviews ExpressRoute resiliency examples.
 
-> [!NOTE]
-> When you set up site-to-site VPN over Microsoft peering, you are charged for the VPN gateway and VPN egress.
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=de4ed81c-1748-47f6-b5b1-ad1636848b6a]
 
-For high availability and redundancy, you can configure multiple tunnels over the two MSEE-PE pairs of an ExpressRoute circuit and enable load balancing between the tunnels.
+### Standard resiliency
 
-VPN tunnels over Microsoft peering can be terminated either using VPN gateway or using an appropriate Network Virtual Appliance (NVA) available through Azure Marketplace. You can exchange routes statically or dynamically over the encrypted tunnels without exposing the route exchange to the underlying Microsoft peering. In this section, BGP (different from the BGP session used to create the Microsoft peering) is used to dynamically exchange prefixes over the encrypted tunnels.
+Standard resiliency in ExpressRoute is a single circuit with two connections configured at a single site. Built-in redundancy (Active-Active) is configured to facilitate failover across the two connections of the circuit.
 
-> [!IMPORTANT] 
-> For the on-premises side, typically Microsoft peering is terminated on the DMZ and private peering is terminated on the core network zone. The two zones would be segregated using firewalls. If you are configuring Microsoft peering exclusively for enabling secure tunneling over ExpressRoute, remember to filter through only the public IPs of interest that are getting advertised via Microsoft peering.
+The subsequent diagram illustrates the logical architecture of an ExpressRoute circuit designed for standard resiliency.
 
-**Steps**
+:::image type="content" source="../media/standard-resiliency.png" alt-text="Diagram of ExpressRoute standard resiliency architecture.":::
 
- -  Configure Microsoft peering for your ExpressRoute circuit.
- -  Advertise selected Azure regional public prefixes to your on-premises network via Microsoft peering.
- -  Configure a VPN gateway and establish IPsec tunnels
- -  Configure the on-premises VPN device.
- -  Create the site-to-site IPsec/IKE connection.
- -  (Optional) Configure firewalls/filtering on the on-premises VPN device.
- -  Test and validate the IPsec communication over the ExpressRoute circuit.
+### High resiliency
+
+High resiliency, also referred to as ExpressRoute Metro, enables the use of multiple sites within the same metropolitan (Metro) area to connect your on-premises network through ExpressRoute to Azure. High resiliency offers site diversity by splitting a single circuit across two sites. The first connection is established at one site and the second connection at a different site. 
+
+The subsequent diagram illustrates the logical architecture of an ExpressRoute circuit designed for high resiliency.
+
+:::image type="content" source="../media/high-resiliency.png" alt-text="Diagram of ExpressRoute high resiliency architecture.":::
+
+### Maximum resiliency
+
+The Maximum resiliency architecture in ExpressRoute is structured to eliminate any single point of failure within the Microsoft network path. This set up is achieved by configuring a pair of circuits across two distinct locations for site diversity with ExpressRoute. The objective of Maximum resiliency is to enhance reliability, resiliency, and availability, as a result ensuring the highest level of resilience for business and/or mission-critical workloads. For such operations, we recommend that you configure maximum resiliency
+
+The subsequent diagram illustrates the logical architecture of an ExpressRoute circuit designed for maximum resiliency.
+
+:::image type="content" source="../media/maximum-resiliency.png" alt-text="Diagram of ExpressRoute maximum resiliency architecture.":::

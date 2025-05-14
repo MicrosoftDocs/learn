@@ -1,16 +1,25 @@
-Azure provides load balancing tools to support consistency of access. Load balancing is the process of distributing network traffic across multiple servers. This distribution ensures no single server bears too much demand. Load balancing improves application responsiveness and increases availability of applications and services for users. Load balancers also have other capabilities including application security. Azure network engineers implement load balancing solutions. 
+Azure Application Gateway and Azure Front Door are powerful tools provided by Microsoft Azure to manage web traffic, ensure high availability, and secure web applications.
 
+Imagine you're a system administrator for a large e-commerce company. Your company's website experiences heavy traffic, especially during peak shopping seasons. The website is hosted on a pool of servers, and you need to balance the load effectively to ensure smooth operation. Additionally, you need to protect your web applications from common threats and ensure secure data delivery. You also want to provide a fast and reliable user experience by delivering content swiftly to end users. To achieve these goals, you decide to use Azure Application Gateway and Azure Front Door.
 
 ## Learning objectives
 
 In this module, you learn to:
 
- -  Design and implement Azure Application Gateway.
- -  Implement Azure Front Door.
+ -  Implement Azure Application Gateway
+ -  Implement Azure Front Door
+
+The topics covered in this module include:
+- Designing and implementing Azure Application Gateway
+- Configuring Azure Application Gateway for load balancing
+- Creating and testing an Azure Application Gateway
+- Designing, configuring, and securing Azure Front Door
+
 
 ## Prerequisites
 
  -  Experience with networking concepts, such as IP addressing, Domain Name System (DNS), and routing.
  -  Experience with network connectivity methods, such as VPN or WAN.
- -  Experience with the Azure portal and Azure PowerShell.
+ -  Experience with the Azure portal.
+
 

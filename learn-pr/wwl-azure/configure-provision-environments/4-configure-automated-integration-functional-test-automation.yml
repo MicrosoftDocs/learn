@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-provision-environments.configure-automated-integration-functional-test-automation
 title: Configure automated integration and functional test automation
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure automated integration and functional test automation
   description: "Configure automated integration and functional test automation"
   ms.date: 05/06/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-configure-automated-integration-functional-test-automation.md)]
+  [!include[](includes/4-configure-automated-integration-functional-test-automation.md)]

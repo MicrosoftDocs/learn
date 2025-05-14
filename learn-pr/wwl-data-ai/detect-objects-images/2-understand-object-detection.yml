@@ -2,8 +2,6 @@
 uid: learn.wwl.detect-objects-images.understand-object-detection
 title: Understand object detection
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand object detection
   description: Understand object detection
   author: ivorb
@@ -18,4 +16,4 @@ labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/2-understand-object-detection.md)]
-
+

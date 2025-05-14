@@ -2,8 +2,6 @@
 uid: learn.wwl.design-application-architecture.design-event-hub-messaging-solution
 title: Design an Azure Event Hubs messaging solution
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design an Azure Event Hubs messaging solution
   description: "Design an Azure Event Hubs messaging solution"
   ms.date: 02/03/2025

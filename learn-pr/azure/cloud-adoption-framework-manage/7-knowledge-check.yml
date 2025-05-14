@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.cloud-adoption-framework-manage.7-knowledge-check
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   ms.date: 04/21/2023
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: unit
-title: Knowledge check
+title: Module assessment
 durationInMinutes: 10
 quiz:
   title: Check your knowledge

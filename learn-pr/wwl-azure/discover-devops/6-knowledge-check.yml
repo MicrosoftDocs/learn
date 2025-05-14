@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.discover-devops.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 02/05/2024
   author: LuizMacedo
@@ -48,4 +46,4 @@ quiz:
         - content: "To apply changes in small increments through automated testing and build."
           isCorrect: true
           explanation: "Correct. Continuous integration (CI) during the development phase involves applying changes in small increments through automated testing and build."
-
+

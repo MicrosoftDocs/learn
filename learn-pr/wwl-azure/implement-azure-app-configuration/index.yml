@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-azure-app-configuration
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement Azure App Configuration
   description: "Learn how to use Azure App Configuration service to centrally manage and secure your configuration settings, and to manage app features."
   ms.date: 07/17/2024
@@ -47,4 +45,4 @@ units:
 - learn.wwl.implement-azure-app-configuration.knowledge-check
 - learn.wwl.implement-azure-app-configuration.summary
 badge:
-  uid: learn.wwl.implement-azure-app-configuration.badge
+  uid: learn.wwl.implement-azure-app-configuration.badge

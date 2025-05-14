@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.secure-your-azure-sql-database.5-monitor-your-database
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Monitor your database
   description: Learn to audit operations on your database and use that information with Advanced Threat Monitoring to report security risks and threats.
   ms.date: 11/07/2023
@@ -15,4 +13,4 @@ azureSandbox: true
 title: Exercise - Monitor your database
 durationInMinutes: 8
 content: |
-  [!include[](includes/5-monitor-your-database.md)]
+  [!include[](includes/5-monitor-your-database.md)]

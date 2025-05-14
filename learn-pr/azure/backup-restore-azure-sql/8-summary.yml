@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.backup-restore-azure-sql.8-summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Review what you have learned about Azure SQL Database backups.
   ms.date: 12/11/2023
@@ -13,4 +11,4 @@ metadata:
 title: Summary
 durationInMinutes: 1
 content: |
-  [!include[](includes/8-summary.md)]
+  [!include[](includes/8-summary.md)]

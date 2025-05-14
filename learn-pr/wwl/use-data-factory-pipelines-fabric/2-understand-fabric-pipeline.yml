@@ -2,8 +2,6 @@
 uid: learn.wwl.use-data-factory-pipelines-fabric.understand-fabric-pipeline
 title: Understand pipelines
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand pipelines
   description: "Understand pipelines"
   ms.date: 05/08/2024
@@ -14,4 +12,4 @@ metadata:
   - build-2023
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-understand-fabric-pipeline.md)]
+  [!include[](includes/2-understand-fabric-pipeline.md)]

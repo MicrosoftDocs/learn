@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.understand-postgresql-query-process.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 05/11/2024
   author: wwlpublish
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. Adding ANALYZE before the query doesn't display the query optimizer's plan."
     - content: "Add the keywords EXPLAIN ANALYZE before the query statement."
       isCorrect: false
-      explanation: "Incorrect. EXPLAIN ANALYZE both executes the query and returns the execution plan for the query. You only want to see the execution plan, and don't want to run the query."
+      explanation: "Incorrect. EXPLAIN ANALYZE both executes the query and returns the execution plan for the query. You only want to see the execution plan, and don't want to run the query."

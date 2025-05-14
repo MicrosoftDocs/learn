@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-form-recognizer
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to Azure AI Document Intelligence
   description: Azure AI Document Intelligence enables automated data identification and extraction from your documents.
   author: laujan
@@ -47,4 +45,4 @@ units:
 - learn.azure.intro-to-form-recognizer.summary
 badge:
   uid: learn.azure.intro-to-form-recognizer.badge
-
+

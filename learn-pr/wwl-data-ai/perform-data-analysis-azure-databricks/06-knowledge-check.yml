@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.perform-data-analysis-azure-databricks.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 12/12/2024
   author: wwlpublish
@@ -47,4 +45,4 @@ quiz:
       explanation: "Correct. Databricks SQL allows users to run SQL queries directly on the data stored in Databricks and visualize results without needing to interact directly with Spark DataFrames. It provides a convenient interface for data analysts and scientists to perform complex SQL queries and view results via built-in visualizations."
     - content: "Databricks Dashboard"
       isCorrect: false
-      explanation: "Incorrect. Dashboards are used to publish graphs and visualizations derived from notebook output and share them in presentation with other users."
+      explanation: "Incorrect. Dashboards are used to publish graphs and visualizations derived from notebook output and share them in presentation with other users."

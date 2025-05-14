@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-dashboards-azure-data-explorer.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check: create dashboards in Azure Data Explorer."
   ms.date: 01/19/2024
   author: shsagir
@@ -48,4 +46,4 @@ quiz:
     - content: "There's no need to generate a list of parameter values."
       isCorrect: false
       explanation: "False. Every parameter must have a list of values."
-  
+  

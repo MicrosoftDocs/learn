@@ -2,13 +2,13 @@ You configure API Management to accept client certificates by using inbound poli
 
 Suppose your weather company has decided to secure its API through certificate authentication for certain clients who already use certificate authentication in other systems. This setup will allow those clients to use existing certificates to authenticate themselves against the API Management gateway.
 
-In this unit, you'll:
+In this exercise, you'll:
 
-- Create a self-signed certificate
-- Configure the gateway to request client certificates
-- Get the thumbprint for the certificate
-- Edit the inbound policy to allow only clients with the specified certificate in their request
-- Call the API Management gateway and pass the certificate by using `curl`
+- Create a self-signed certificate.
+- Configure the gateway to request client certificates.
+- Get the thumbprint for the certificate.
+- Edit the inbound policy to allow only clients with the specified certificate in their request.
+- Call the API Management gateway and pass the certificate by using `curl`.
 
 > [!NOTE]
 > This exercise uses the resources that you set up in the previous exercise.
@@ -46,7 +46,7 @@ Because you're using the Consumption tier for API Management, you must configure
 
 1. For **Request client certificate*, select **Yes**, and on the top menu bar, select **Save**.
 
-    ![Configure the gateway to request certificates.](../media/5-config-request-certificates.png)
+    ![Screenshot of configuring the gateway to request certificates.](../media/5-config-request-certificates.png)
 
 ## Get the thumbprint for the certificate
 
@@ -77,7 +77,7 @@ Now, create the authentication policy in the API Management gateway.
 
 1. In the **Inbound processing** box, select the **</>** icon to open **Policies code editor**. The HTML code for the policies node displays.
 
-    ![Inbound processing policy button.](../media/5-inbound-policy.png)
+    ![Screenshot of the inbound processing policy button.](../media/5-inbound-policy.png)
 
 1. Replace the `<inbound>` node of the policy file with the following XML, substituting the fingerprint you copied earlier for the `desired-fingerprint` placeholder:
 
@@ -102,7 +102,7 @@ You can now test the new authentication policy with and without the certificate.
 
 1. To test the API without the certificate, run the following command in Cloud Shell, replacing the placeholder values with your API gateway name and subscription key.
 
-    ```PowerShell
+    ```bash
     curl -X -v GET https://[api-gateway-name].azure-api.net/api/Weather/53/-1 \
       -H 'Ocp-Apim-Subscription-Key: [Subscription Key]' 
     ```
@@ -111,7 +111,7 @@ You can now test the new authentication policy with and without the certificate.
 
 1. In Cloud Shell, to test the API with the certificate, copy and paste the following cURL command, using the primary subscription key from the first exercise (you can also obtain this primary key from the Subscriptions pane for your WeatherData API Management service). Remember to include your API gateway name.
 
-    ```PowerShell
+    ```bash
     curl -X GET https://[api-gateway-name].azure-api.net/api/Weather/53/-1 \
       -H 'Ocp-Apim-Subscription-Key: [subscription-key]' \
       --cert-type pem \

@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.backup-restore-azure-sql.2-protect-database-with-backup
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Back up Azure SQL Database
   description: Learn how to plan a backup regime for your Azure SQL Database service.
   ms.date: 12/11/2023
@@ -38,4 +36,4 @@ quiz:
       explanation: "The default location for backups is a read-access geo-redundant storage account that's replicated to a paired datacenter."
     - content: "In a read-access geo-redundant storage account"
       isCorrect: true
-      explanation: "The default location for backups is a read-access geo-redundant storage account that's replicated to a paired datacenter."
+      explanation: "The default location for backups is a read-access geo-redundant storage account that's replicated to a paired datacenter."

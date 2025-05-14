@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-modernize-identify-sap-certified-configurations.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 01/09/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-summary.md)]
+  [!include[](includes/5-summary.md)]

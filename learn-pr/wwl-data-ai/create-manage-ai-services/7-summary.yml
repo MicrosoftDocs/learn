@@ -2,8 +2,6 @@
 uid: learn.wwl.create-manage-ai-services.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary of the module.
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
-
+

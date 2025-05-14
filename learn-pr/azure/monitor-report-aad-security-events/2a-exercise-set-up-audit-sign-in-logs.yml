@@ -2,8 +2,6 @@
 uid: learn.monitor-report-aad-security-events.exercise-set-up-audit-sign-in-logs
 title: Exercise - Set up and view sign-in logs and audit logs
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Set up and view sign-in logs and audit logs
   description: Exercise - Set up and view sign-in logs and audit logs.
   ms.date: 03/01/2023
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/2a-exercise-set-up-audit-sign-in-logs.md)]
-
+

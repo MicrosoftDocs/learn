@@ -2,11 +2,9 @@
 uid: learn.wwl.choose-indexes-azure-cosmos-db-sql-api.review-read-heavy-index-patterns
 title: Review read-heavy index patterns
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Review read-heavy index patterns
   description: "Review read-heavy index patterns"
-  ms.date: 10/15/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

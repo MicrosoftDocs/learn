@@ -2,8 +2,6 @@
 uid: learn.wwl.translate-text-with-translator-service.exercise
 title: Exercise - Translate text with the Azure AI Translator service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Translate text with the Azure AI Translator service
   description: Exercise - Translate text with the Azure AI Translator service
   author: wwlpublish
@@ -17,4 +15,4 @@ labId: 152401
 labModal: true
 content: |
   [!include[](includes/6-exercise-translate-text.md)]
-
+

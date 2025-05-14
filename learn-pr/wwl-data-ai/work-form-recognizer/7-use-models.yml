@@ -2,8 +2,6 @@
 uid: learn.wwl.work-with-form-recognizer.use-models
 title: Use Azure Document Intelligence models
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use Azure Document Intelligence models
   description: Use Azure Document Intelligence models
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/7-use-models.md)]
-
+

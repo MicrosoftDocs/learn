@@ -2,8 +2,6 @@
 uid: learn.manage-azure-private-5g-core.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduces the routine management tasks of Azure Private 5G Core.
   ms.date: 07/29/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/1-introduction.md)]

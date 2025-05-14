@@ -12,3 +12,4 @@ Your understanding of GitHub's product platform, accounts, plans, access options
 - [GitHub's plans](https://docs.github.com/en/get-started/learning-about-github/githubs-plans)
 - [GitHub's billing and payments](https://docs.github.com/en/enterprise-cloud@latest/billing)
 - [Managing your license for GitHub Enterprise](https://docs.github.com/en/enterprise-server@3.12/billing/managing-your-license-for-github-enterprise?azure-portal=true)
+

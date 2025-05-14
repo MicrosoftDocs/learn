@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.microsoft-learn-for-educator-program-open-house.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 07/19/2024
   author: wwlpublish
@@ -48,4 +46,4 @@ quiz:
       explanation: "Feedback: Correct. Institutions or individual educators can apply for the MSLE program by navigating to [aka.ms/MSLE](https://aka.ms/MSLE), selecting **Get started** then **Join MSLE**"
     - content: "Contact institution representative"
       isCorrect: false
-      explanation: "Feedback: Incorrect. You may have received an email from your institution to join MSLE, however institutions or individual educators can apply for the MSLE program by navigating to [aka.ms/MSLE](https://aka.ms/MSLE), selecting **Get started** then **Join MSLE**"
+      explanation: "Feedback: Incorrect. You may have received an email from your institution to join MSLE, however institutions or individual educators can apply for the MSLE program by navigating to [aka.ms/MSLE](https://aka.ms/MSLE), selecting **Get started** then **Join MSLE**"

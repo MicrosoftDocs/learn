@@ -2,8 +2,6 @@
 uid: learn.machinelearning.understand-regression-machine-learning.exercise-polynomial-regression
 title: Exercise - Polynomial regression
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Polynomial regression
   description: Exercise unit learning about polynomial regression in machine learning
   ms.date: 07/21/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 12
 sandbox: true
 notebook: notebooks/4-7-exercise-polynomial-regression.ipynb
-
+

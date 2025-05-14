@@ -2,8 +2,6 @@
 uid: learn.wwl.create-configure-host-pools-session-hosts.operating-systems-azure-regions
 title: Operating systems and Azure regions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Operating systems and Azure regions
   description: "Operating systems and Azure regions"
   ms.date: 08/22/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-operating-systems-azure-regions.md)]
+  [!include[](includes/3-operating-systems-azure-regions.md)]

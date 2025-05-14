@@ -2,8 +2,6 @@
 uid: learn.azure.extend-share-capacity-with-azure-file-sync.exercise-assess-windows-server-readiness
 title: Exercise - Assess Windows Server readiness
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Assess Windows Server readiness
   description: In this exercise, you'll run the evaluation cmdlets to check the compatibility of your file server.
   ms.date: 11/17/2023
@@ -17,4 +15,4 @@ durationInMinutes: 15
 azureSandbox: false
 content: |
   [!include[](includes/4-exercise-assess-windows-server-readiness.md)]
-
+

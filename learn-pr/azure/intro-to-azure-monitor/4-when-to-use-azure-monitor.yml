@@ -2,8 +2,6 @@
 uid: learn.azure.intro-to-azure-monitor.when-to-use-azure-monitor
 title: Azure Monitor Insights, visualizations, and actions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Azure Monitor Insights, visualizations, and actions
   description: Learn how Azure Monitor Insights and visualizations can consume and transmit monitoring data, and automated actions can proactively respond to issues.
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/4-when-to-use-azure-monitor.md)]
-
+
