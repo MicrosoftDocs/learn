@@ -25,7 +25,7 @@ Follow these steps to configure the Threat Intelligence Briefing Agent, correspo
    - Number of insights to research.
    - Look-back period for threats.
    - Email address for report delivery.
-   - Geographical region and industry scope.0
+   - Geographical region and industry scope.
 5. Run - After setup, access the agent overview page to run the agent manually or schedule it to run automatically.
 
 # [Agents](#tab/agents)

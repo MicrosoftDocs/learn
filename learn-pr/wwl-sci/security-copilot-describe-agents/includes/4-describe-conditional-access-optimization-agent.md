@@ -2,8 +2,8 @@ Microsoft Entra agents are designed to automate repetitive tasks, enhance securi
 
 The Conditional Access optimization agent, a Security Copilot Agent embedded in Microsoft Entra, ensures all users are protected by policy. It recommends policies and changes based on best practices aligned with Zero Trust and Microsoft's learnings. The agent provides the following functionality:
 
-- Evaluates policies requiring multifactor authentication (MFA),
-- Enforces device based controls (device compliance, app protection policies, and Domain Joined Devices),
+- Evaluates policies requiring multifactor authentication (MFA)
+- Enforces device based controls (device compliance, app protection policies, and Domain Joined Devices)
 - Blocks legacy authentication and device code flow.
 
 ### Information about the agent and prerequisites
