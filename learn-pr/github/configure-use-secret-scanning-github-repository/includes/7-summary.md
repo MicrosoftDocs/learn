@@ -15,7 +15,7 @@ For private repositories, the secret scanning configuration options also enable 
 In addition to secret scanning, GitHub Advanced Security offers other features to improve your software security posture:
 
 - **Dependency Graph:** Understand how your project depends on open-source libraries and get notified when vulnerable packages are detected.
-- **Dependabot Security Updates:** Automatically open pull requests that fix vulnerabilities in your dependencies.**
+- **Dependabot Security Updates:** Automatically open pull requests that fix vulnerabilities in your dependencies.
 - **Dependabot Version Updates:** Keep dependencies up to date with automatic PRs for the latest versions.
 - **Code Scanning:** Scan your code for security vulnerabilities and coding errors using CodeQL and other engines.
 
