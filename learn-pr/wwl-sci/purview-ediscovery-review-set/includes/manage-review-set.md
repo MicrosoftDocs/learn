@@ -42,9 +42,11 @@ To add data to your review set:
 
 Once processing is complete, the data is visible in the review set and ready for analysis.
 
-### What happens after creation
+### Review set behavior after creation
 
-Once a review set is created, its contents are fixed. You can add more items later using load sets, but you can't remove individual items. This immutability helps preserve the integrity of the data being reviewed.
+After a review set is created, its contents are fixed. You can add more content over time by committing new searches, but you can't remove individual items once they're added.
+
+This behavior supports defensibility by ensuring that the review set remains a consistent, auditable snapshot of the data collected for investigation.
 
 ## View and organize review sets
 
@@ -71,7 +73,7 @@ You can also download a list of actions from the **Process manager** tab.
 
 ## Start working with review set items
 
-After selecting **Open review** set, you're ready to begin analysis. From the command bar, you can:
+After selecting **Open review set**, you're ready to begin analysis. From the command bar, you can:
 
 - Search across the content
 - Group and view items in a review set
@@ -108,3 +110,5 @@ This information is helpful when reviewing content origins and the completeness 
 ## Pagination settings
 
 By default, review set items appear in pages of 50. Use the navigation controls to move between pages or enter a page number directly. If you prefer to scroll through all content without breaks, go to **Manage** and select **Turn pagination off**.
+
+Review sets are where investigative teams do their most detailed analysis. By organizing content into review sets, applying tags, and using tools like analytics and export, you create a defensible, auditable process for handling sensitive data during legal or compliance matters.

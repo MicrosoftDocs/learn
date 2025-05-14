@@ -1,2 +1,50 @@
-- introduction
-- manage-review-set
+### YamlMime:Module
+uid: learn.wwl.purview-ediscovery-review-set
+metadata:
+  title: Analyze and prepare content in eDiscovery review sets
+  description: Analyze and prepare content in eDiscovery review sets
+  ms.date: 05/15/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ai-usage: ai-assisted
+  ms.service: purview
+title: Analyze and prepare content in eDiscovery review sets
+summary: |
+  Microsoft Purview eDiscovery includes review sets to help legal and compliance teams manage, analyze, and prepare content during an investigation. Review sets provide a structured workspace where teams can filter, tag, summarize, and export case data in a repeatable, defensible way.
+
+abstract: |
+  In this module you learn how to:
+  - Create and populate review sets with case content
+  - Filter, group, and tag items for legal and compliance review
+  - Run analytics to reduce data volume and identify key documents
+  - Export reviewed items or reuse them in other review sets
+  - Generate query reports to compare keyword and KeyQL query results
+
+prerequisites: |
+  Familiarity with Microsoft Purview eDiscovery (Premium), including case creation and search configuration
+
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- auditor
+products:
+- m365
+- microsoft-purview
+subjects:
+- data-management
+- threat-protection
+units:
+- learn.wwl.purview-ediscovery-review-set.introduction
+- learn.wwl.purview-ediscovery-review-set.manage-review-set
+- learn.wwl.purview-ediscovery-review-set.search-review-set
+- learn.wwl.purview-ediscovery-review-set.tag-organize-content
+- learn.wwl.purview-ediscovery-review-set.run-analytics-review-set
+- learn.wwl.purview-ediscovery-review-set.export-reuse-review-set
+- learn.wwl.purview-ediscovery-review-set.query-keyword-reports
+- learn.wwl.purview-ediscovery-review-set.knowledge-check
+- learn.wwl.purview-ediscovery-review-set.summary
+badge:
+  uid: learn.wwl.purview-ediscovery-review-set.badge

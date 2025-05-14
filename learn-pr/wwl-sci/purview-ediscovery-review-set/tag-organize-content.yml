@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-ediscovery-review-set.tag-organize-content
+title: Tag and organize content in review sets
+metadata:
+  title: Tag and organize content in review sets
+  description: "Tag and organize content in review sets."
+  ms.date: 05/14/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/tag-organize-content.md)]
