@@ -95,7 +95,9 @@ If your composite action is shared from **another repository**, reference it lik
 ```
 uses: owner/repository/.github/actions/my-composite-action@v1
 ```
-![alt text](../media/composite-action-in-a-workflow.png)
+
+:::image type="content" source="../media/composite-action-in-a-workflow.png" alt-text="Composite action used in a workflow." border="false":::
+
 ## Adding Outputs to a Composite Action
 Composite actions can define outputs that workflows can use to pass data between steps or jobs. Outputs are particularly useful for sharing results or computed values from one action to another.
 
@@ -118,8 +120,7 @@ runs:
       run: echo "result=Success" >> $GITHUB_OUTPUT
       shell: bash
 ```
-![alt text](../media/define-an-output-in-action.png)
-
+:::image type="content" source="../media/define-an-output-in-action.png" alt-text="Define an output in a composite action." border="false":::
 
 #### Use the Output in a Workflow
 
@@ -180,7 +181,8 @@ A **CLI setup action** is a **JavaScript-based action** that installs and config
 To manually create the directory for your CLI setup action, follow these steps:
 
 1. **Navigate to Your Repository**  
-![alt text](../media/javascript-action-root-repo.png)
+
+:::image type="content" source="../media/javascript-action-root-repo.png" alt-text="Root repository structure showing .github/actions/my-cli-action directory for a JavaScript action." border="false":::
 
 2. **Create a New Directory for the Action**  
   Create a new directory named `my-cli-action` inside the `.github/actions` folder. This ensures your action is organized and follows GitHub's recommended structure for custom actions.  
@@ -197,7 +199,7 @@ To manually create the directory for your CLI setup action, follow these steps:
   │   │   ├── my-cli-action/
   ```
 
-![alt text](../media/javascript-action-directory.png)
+:::image type="content" source="../media/javascript-action-directory.png" alt-text="Directory structure for a JavaScript action inside .github/actions." border="false":::
 
 You are now ready to proceed with creating the `action.yml` file and other necessary files for your CLI setup action.
 ### Step 2: Define the action.yml Metadata File
@@ -221,7 +223,7 @@ runs:
 Why use *using: node16?*
 This action runs JavaScript code using Node.js 16.
 
-![alt text](../media/javascript-action-yaml.png)
+:::image type="content" source="../media/javascript-action-yaml.png" alt-text="YAML metadata file for a JavaScript GitHub Action." border="false":::
 
 ### Step 3: Create a JavaScript Script to Install the CLI
 In the same directory, create a file named index.js and add the following code:
@@ -246,7 +248,8 @@ async function run() {
 run();
 ```
 The JavaScript code above uses core.getInput() to retrieve the CLI version specified as input. It then executes a curl command to download and install the CLI. If the installation process fails, the action uses core.setFailed() to mark the workflow as failed.
-![alt text](../media/javascript-action-index-js.png)
+
+:::image type="content" source="../media/javascript-action-index-js.png" alt-text="JavaScript code for index.js in a GitHub Action." border="false":::
 
 ### Step 4: Test the Action Locally
 Before using the action in a workflow, test it on a GitHub-hosted runner.   
@@ -292,7 +295,7 @@ The uses: *./.github/actions/my-cli-action* line references the custom action lo
 **d. Verify the CLI Installation**   
 This step runs a shell command to verify that the CLI was installed successfully. It checks the version of the installed CLI by running mycli --version.
 
-![alt text](../media/javascript-action-test.png)
+:::image type="content" source="../media/javascript-action-test.png" alt-text="Screenshot showing the test results of a JavaScript GitHub Action." border="false":::
 
 ### Testing Locally
 To test this workflow locally, use the [`act`](https://github.com/nektos/act) CLI tool:
