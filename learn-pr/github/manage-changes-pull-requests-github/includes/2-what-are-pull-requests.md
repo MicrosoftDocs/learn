@@ -87,7 +87,7 @@ Now let’s review the different statuses of a pull request.
 
 1. Optionally, you can delete the compare branch to keep the list of branches in your repository tidy.
 
-## **Advanced pull request options**
+## Advanced pull request options
 
 In addition to creating and merging pull requests, there are a few advanced options that help teams maintain high-quality code.
 
