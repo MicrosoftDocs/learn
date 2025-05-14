@@ -30,7 +30,7 @@ This example is using the `github.ref` context to check the branch that triggere
 
 ## The contextual information available in a workflow
 
-Contexts allow you to access information about workflow runs, variables, runner environments, jobs, and steps.  Each context is is an object that contains properties which can be other objects or strings.  The contexts available include: `github`, `env`, `vars`, `job`, `jobs`, `steps`, `runner`, `secrets`, `strategy`, `matrix`, `needs` and `inputs`.  Here is a table presents these contexts with their descriptions.
+Contexts allow you to access information about workflow runs, variables, runner environments, jobs, and steps.  Each context is is an object that contains properties which can be other objects or strings.  The contexts available include: `github`, `env`, `vars`, `job`, `jobs`, `steps`, `runner`, `secrets`, `strategy`, `matrix`, `needs` and `inputs`.  Here's a table presents these contexts with their descriptions.
 
 | Context |	Description |
 :---------|:---------------------------------------------------------------------------------
@@ -48,7 +48,7 @@ needs	|	Contains the outputs of all jobs that are defined as a dependency of the
 inputs	|	Contains the inputs of a reusable or manually triggered workflow. For more information, see [inputs context](https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs#inputs-context).
 
 
-The different contexts are available throughout a workflow run. For example, the secrets context may only be used at certain places within a job.  In addition, you may only use some functions in certain places. For example, the `hashFiles` function is not available everywhere.
+The different contexts are available throughout a workflow run. For example, the secrets context may only be used at certain places within a job.  In addition, you may only use some functions in certain places. For example, the `hashFiles` function isn't available everywhere.
 
 The following table lists the restrictions on where each context and special function can be used within a workflow. The listed contexts are only available for the given workflow key, and you may not use them anywhere else. Unless listed in the table here, you may use a function anywhere.
 
@@ -139,7 +139,7 @@ jobs:
 
 ## Use default context in a workflow
 
-Default environment variables are set by GitHub and not defined in a workflow.  They are thus available to use in a workflow in the appropriate context.  Most of these variables, other than `CI`, begin with `GITHUB_*` or `RUNNER_*`.  The latter two types cannot be overwritten.  As well, these default variables have a corresponding, and similarly named, context property. For instance, the `RUNNER_*` series of default variables have a matching context property of `runner.*`.  An example of accessing default variables in a workflow applying these methods can be viewed here:
+Default environment variables are set by GitHub and not defined in a workflow. They're available to use in a workflow in the appropriate context.  Most of these variables, other than `CI`, begin with `GITHUB_*` or `RUNNER_*`.  The latter two types can't be overwritten.  As well, these default variables have a corresponding, and similarly named, context property. For instance, the `RUNNER_*` series of default variables have a matching context property of `runner.*`.  An example of accessing default variables in a workflow applying these methods can be viewed here:
 
 ```yml
 on: workflow_dispatch
@@ -160,7 +160,7 @@ For more information, see [Default environment variables](https://docs.github.co
 
 ## Pass custom environment variables to a workflow
 
-You can pass customer environment variables from one step of a workflow job to subsequent steps within the job. Simply generate a value in one step of a job, and assign the value to an existing or new environment variable.  Next, you write the variable/value pair to the GITHUB_ENV environment file. The environment file can be used by an action, or from a shell command in the workflow job by using the `run` keyword. 
+You can pass customer environment variables from one step of a workflow job to subsequent steps within the job. Generate a value in one step of a job, and assign the value to an existing or new environment variable.  Next, you write the variable/value pair to the GITHUB_ENV environment file. The environment file can be used by an action, or from a shell command in the workflow job by using the `run` keyword. 
 
 The step that creates or updates the environment variable doesn't have access to the new value, but all subsequent steps in a job have access.
 
@@ -204,7 +204,7 @@ When a workflow references an environment, the environment will appear in the re
 
 ### Environment protection rules
 
-Environment deployment protection rules require specific conditions to pass before a job referencing the environment can proceed. You can use deployment protection rules to require a manual approval, delay a job, or restrict the environment to certain branches. You can also create and implement custom protection rules powered by GitHub Apps to use third-party systems to control deployments referencing environments configured on GitHub. Next you will find further explanation of these protection rules:
+Environment deployment protection rules require specific conditions to pass before a job referencing the environment can proceed. You can use deployment protection rules to require a manual approval, delay a job, or restrict the environment to certain branches. You can also create and implement custom protection rules powered by GitHub Apps to use third-party systems to control deployments referencing environments configured on GitHub. Next you'll find further explanation of these protection rules:
 
 1. **Required reviewers protection rules**: Use required reviewers to require a specific person or team to approve workflow jobs that reference the environment. You can list up to six users or teams as reviewers. The reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed.
 
@@ -212,13 +212,13 @@ Environment deployment protection rules require specific conditions to pass befo
 
     For more information on reviewing jobs that reference an environment with required reviewers, see [Reviewing deployments](https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-deployments/reviewing-deployments#bypassing-environment-protection-rules).
 
-2. **Wait timer projection rules:** You can use a wait timer protection rule to delay a job for a specific amount of time after the job is initially triggered before the environment deployment is allowed to proceed. The time (in minutes) must be an integer between 1 and 43,200 (30 days).The wait time will not count towards your billable time.
+2. **Wait timer projection rules:** You can use a wait timer protection rule to delay a job for a specific amount of time after the job is initially triggered before the environment deployment is allowed to proceed. The time (in minutes) must be an integer between 1 and 43,200 (30 days).The wait time won't count towards your billable time.
 
 3. **Branch and tag protection rules:** You can use deployment branch and tag protection rules to restrict which branches and tags are utilized to deploy to the environment. You have several options for deployment branch and tag protection rules for an environment.
 
 - **No restriction** sets no restriction on which branch or tag can deploy to the environment.  **Protected branches only** allows only branches with branch protection rules enabled to deploy to the environment. If no branch protection rules are defined for any branch in the repository, then all branches can deploy. The **Selected branches and tags** setting ensures Only branches and tags that match your specified name patterns can deploy to the environment.
 
-- If you specify `releases/*` as a deployment branch or tag rule, only a branch or tag whose name begins with `releases/` can deploy to the environment. (Wildcard characters will not match `/`. To match branches or tags that begin with `release/` and contain an additional single slash, use `release/*/*`.) If you add `main` as a branch rule, a branch named `main` can also deploy to the environment. 
+- If you specify `releases/*` as a deployment branch or tag rule, only a branch or tag whose name begins with `releases/` can deploy to the environment. (Wildcard characters won't match `/`. To match branches or tags that begin with `release/` and contain an additional single slash, use `release/*/*`.) If you add `main` as a branch rule, a branch named `main` can also deploy to the environment. 
 
 4. **Custom deployment protection rules:** You can enable your own custom protection rules to gate deployments with third-party services. For instance, you can use observability systems, change management systems, code quality systems, or other manual configurations that you use to assess readiness and provide automated approvals for deployments to GitHub. 
 
