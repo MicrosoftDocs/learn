@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.philanthropies.identify-key-hardware-and-it-infrastructure-components
+metadata:
+ title: Identify key hardware and IT infrastructure components of datacenters
+ description: In this module, we'll dive into the essential hardware and IT infrastructure that power datacenters. You'll learn about the different types of servers and their components, as well as various storage options like SAN, NAS, and object storage. We explore the network infrastructure inside a datacenter, including key components like switches, routers, and firewalls, along with how external connectivity is managed. Additionally, you discover the important IT apparatus such as racks and enclosures and application delivery controllers that help optimize performance and organization within the datacenter. By the end, you have a solid understanding of the hardware that supports the data storage, processing, and networking needs of a modern datacenter.
+ ms.date: 05/10/2025
+ author: kiranchandratrey
+ ms.author: elenasim
+ ms.topic: module-standard-task-based
+ ms.service: artificial-intelligence
+title: Identify key hardware and IT infrastructure components of datacenters
+summary: |
+    In this module, we explored the essential hardware and IT infrastructure that power datacenters. We learned about different types of servers and storage systems, including SAN, NAS, and object storage.
+abstract: |
+    - Understand the different types of servers and storage systems (SAN, NAS, object storage) used in datacenters.
+    - Learn about the key components of network infrastructure within a datacenter (switches, routers, firewalls, and external connectivity).
+    - Explore the role of it apparatus in a datacenter, such as racks, enclosures, and application delivery controllers.
+    - Understand the integration of storage and network systems to support the operational needs of a datacenter.
+prerequisites: |
+    -	Basic familiarity with computers.
+    -	Basic understanding of IT infrastructure and data management.
+    - Knowledge of computer hardware and networking basics.
+iconUrl: /training/achievements/identify-key-hardware-and-it-infrastructure-components.svg
+levels:
+- beginner
+roles:
+- business-user
+- data-engineer
+- developer
+- higher-ed-educator
+- school-leader
+- student
+products:
+- azure
+units:
+- learn.philanthropies.identify-key-hardware-and-it-infrastructure-components.servers-storage-systems
+- learn.philanthropies.identify-key-hardware-and-it-infrastructure-components.network-infrastructure
+- learn.philanthropies.identify-key-hardware-and-it-infrastructure-components.it-apparatus-inside-datacenter
+- learn.philanthropies.identify-key-hardware-and-it-infrastructure-components.check
+- learn.philanthropies.identify-key-hardware-and-it-infrastructure-components.summary
+badge:
+  uid: learn.philanthropies.identify-key-hardware-and-it-infrastructure-components.badge
