@@ -39,8 +39,5 @@ modules:
 - learn.github.github-actions-ci
 - learn.github.github-actions-cd
 - learn.github.automate-github-using-github-script
-- learn.github.github-actions-packages 
-- learn.github.create-custom-github-actions
-- learn.github.manage-github-actions-enterprise
 trophy:
   uid: learn.github-actions.trophy
