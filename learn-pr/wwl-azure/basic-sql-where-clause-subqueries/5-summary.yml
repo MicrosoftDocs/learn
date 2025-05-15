@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl-azure.basic-sql-where-clause-and-subqueries.summary
+uid: learn.wwl-azure.basic-sql-where-clause-subqueries.summary
 title: Summary
 metadata:
   title: Summary
   description: "This unit summarizes how to filter and retrieve data in PostgreSQL using the WHERE clause, logical operators, functions like EXTRACT, and subqueries for advanced query control."
-  ms.date: 05/19/2025
+  ms.date: 05/14/2025
   author: milenak
   ms.author: mpopovic
   ms.topic: unit
