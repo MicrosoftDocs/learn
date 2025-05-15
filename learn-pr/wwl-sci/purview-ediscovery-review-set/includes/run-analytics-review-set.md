@@ -55,9 +55,7 @@ Use this filter to separate noise from potentially meaningful evidence, especial
 
 ## Review the analytics report
 
-To understand how analytics processed your content, you can open the **Analytics** report.
-
-1. In your review set, go to **Analytics** > **Show reports**.
+To understand how analytics processed your content, you can open the **Analytics** report. In your review set, go to **Analytics** > **Show reports**.
 
 You'll see breakdowns such as:
 
