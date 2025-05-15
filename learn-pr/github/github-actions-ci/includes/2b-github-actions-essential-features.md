@@ -1,4 +1,4 @@
-Here, you learn how to use default and custom environment variables, custom scripts, cache dependencies, and pass artifact data between jobs. And learn how to access the workflow logs from both the GitHub website and REST API endpoints.
+Here, you learn how to use default and custom environment variables, custom scripts, cache dependencies, and pass artifact data between jobs. You'll also learn how to access the workflow logs from both the GitHub website and REST API endpoints.
 
 ## Default environment variables and contexts
 
@@ -226,7 +226,7 @@ Environment deployment protection rules require specific conditions to pass befo
 
    ![Settings page for configuring 'Environment1' with options for reviewers, wait timer, custom rules, and branch restrictions.](../media/2b-protection-rules.png)
 
-> Note
+> [!NOTE]
 > If you are on a GitHub Free, GitHub Pro, or GitHub Team plan, the enviroment deployment projection rules are only available for public repositories; with the exception of branch & tag protection rules.  For users of GitHub Pro or GitHub Team plans, branch and tag protection rules are also available for private repositories.
 
 ## Scripts in your workflow
