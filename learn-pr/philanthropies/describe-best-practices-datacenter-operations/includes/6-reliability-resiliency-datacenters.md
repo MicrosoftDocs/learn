@@ -1,30 +1,26 @@
 Reliability and resiliency are critical to datacenter operations, as they ensure consistent and uninterrupted delivery of services.
 
-- **Reliability:** Reliability refers to the ability of the datacenter to consistently perform its functions without failure. It focuses on ensuring that all systems operate correctly and deliver the expected outcomes over time.
+**Reliability:** Reliability refers to the ability of the datacenter to consistently perform its functions without failure. It focuses on ensuring that all systems operate correctly and deliver the expected outcomes over time.
 
-  - **Example** metrics or strategies: 
+**Example** metrics or strategies: 
 
-    - Uptime percentage: Often measured using the “five nines” standard (99.999% availability), equating to less than 5.26 minutes of downtime annually. 
+- Uptime percentage: Often measured using the “five nines” standard (99.999% availability), equating to less than 5.26 minutes of downtime annually. 
+- Mean time between failures (MTBF): Average time a system operates before failing. 
+- Mean time to repair (MTTR): Average time required to fix a failure and restore services.
 
-    - Mean time between failures (MTBF): Average time a system operates before failing. 
+**Resiliency**: Resiliency refers to the ability of the datacenter to continue functioning during and after a failure, disruption, or disaster. It ensures rapid recovery and minimizes the impact on operations.
 
-    - Mean time to repair (MTTR): Average time required to fix a failure and restore services.
+**Example** metrics or strategies:
 
-- **Resiliency**: Resiliency refers to the ability of the datacenter to continue functioning during and after a failure, disruption, or disaster. It ensures rapid recovery and minimizes the impact on operations.
+- Redundancy in power, cooling, and network systems. 
+- Disaster recovery and backup systems. 
+- Fault-tolerant infrastructure.
 
-  - **Example** metrics or strategies:
+## Key concepts of reliability and resiliency in datacenters
 
-    - Redundancy in power, cooling, and network systems. 
+It's important to understand some of the key concepts for reliability and resiliency in datacenters.
 
-    - Disaster recovery and backup systems. 
-
-    - Fault-tolerant infrastructure.
-
-## What are key concepts of reliability and resiliency in datacenters? To Key concepts of reliability and resiliency
-
-Reliability and resiliency are critical to datacenter operations, as they ensure consistent and uninterrupted delivery of services.
-
-|                                                              | Examples                                                     |
+| Concept                                                             | Examples                                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | **Redundancy**: Redundancy involves duplicating critical systems or components to eliminate single points of failure. | • Redundant power supplies, such as backup generators and dual power grids. <br />• Multipath network connections for uninterrupted connectivity. <br />• Cooling system backups to maintain optimal temperatures. |
 | **Fault tolerance**: Fault tolerance ensures that a system can continue operating even if a specific component fails. | • RAID (Redundant Array of Independent Disks) for data storage. <br />• Load balancing across multiple servers to avoid overloading. |
