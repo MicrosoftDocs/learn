@@ -137,7 +137,7 @@ A workflow trigger is an event that causes a workflow to start. GitHub supports 
 - repository_dispatch (external systems)
 - Issue, discussion, and PR events (e.g., issues.opened, pull_request.closed)
 
-### Where to identify the trigger event
+### Where to identify the trigger event?
 You can identify the trigger event in several ways :  
 1 . From the GitHub Actions UI
 - Navigate to the Actions tab in your repository.
