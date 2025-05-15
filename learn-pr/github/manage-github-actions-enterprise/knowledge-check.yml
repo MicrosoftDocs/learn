@@ -46,7 +46,7 @@ quiz:
       explanation: "Incorrect. SSH keys are also called SSH keys in GitHub."
     - content: "Encrypted secrets are encrypted environment variables you can create to store sensitive information."
       isCorrect: true
-      explanation: "Correct. Once created, encrypted secrets become available for use in your workflows and actions at the level at which they were created (organization or repository)."
+      explanation: "Correct. Once created, encrypted secrets become available for use in your workflows and actions at the level at which they were created (organization, repository, or environment)."
   - content: "What type of credential should be avoided for accessing repositories from GitHub Actions?"
     choices:
     - content: "Repository deploy keys"
@@ -60,7 +60,7 @@ quiz:
       explanation: "Incorrect. GitHub App tokens provide granular permissions and are recommended for cross-repository access."
     - content: "GITHUB_TOKEN"
       isCorrect: false
-      explanation: "Incorrect. GITHUB_TOKEN is recommended as it's intentionally scoped to a single repository."
+      explanation: "Incorrect. GITHUB_TOKEN is not recommended as it's intentionally scoped to a single repository."
   - content: "Which feature in GitHub allows you to enforce that automated tests must pass before code can be merged to the main branch?"
     choices:
     - content: "Organization secrets"
