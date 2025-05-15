@@ -168,7 +168,7 @@ subjects:
 units:
 - learn.wwl-azure.basic-sql-aggregate-functions-grouping.introduction
 - learn.wwl-azure.basic-sql-aggregate-functions-grouping.sample-database-overview
-- learn.wwl-azure.basic-sql-aggregate-functions-grouping.aggregate-functions-grouping
+- learn.wwl-azure.basic-sql-aggregate-functions-grouping.aggregate-functions
 - learn.wwl-azure.basic-sql-aggregate-functions-grouping.group-by-having
 - learn.wwl-azure.basic-sql-aggregate-functions-grouping.summary
 badge:
