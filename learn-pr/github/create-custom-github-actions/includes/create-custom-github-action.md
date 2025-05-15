@@ -34,26 +34,26 @@ The steps to build a JavaScript action are minimal and straightforward:
 Composite run steps actions allow you to reuse actions by using shell scripts. You can even mix multiple shell languages within the same action. If you have many shell scripts to automate several tasks, you can now easily turn them into an action and reuse them for different workflows. Sometimes it's easier to just write a shell script than using JavaScript or wrapping your code in a Docker container.
 
 
-# Packaged Composite Action
+# Packaged composite action
 
 Packaged composite actions bundle multiple steps into a reusable unit. These actions are defined in a repository and can be referenced in workflows across different repositories. Packaging a composite action simplifies workflows, reduces duplication, and improves maintainability.
 
 When creating a packaged composite action, the steps are defined in a single `action.yml` file. This file specifies the inputs, outputs, and the sequence of commands or actions to execute. Packaged composite actions are particularly useful for automating repetitive tasks or combining multiple shell commands into a single reusable action.
 
-## Create a Composite Action
+## Create a composite qction
 
-### 1. Set Up a Directory for the Composite Action
+### 1. Set Up a directory for the composite action
 
 You must place your composite action in its own directory inside the repository.
 
-**Example Directory Structure:**
+**Example directory structure:**
 ```
 .github/actions/my-composite-action/
 ├── action.yml
 └── scripts/
     └── my-script.sh
 ```
-### 2. Define the `action.yml` File
+### 2. Define the `action.yml` file
 
 Inside the **my-composite-action directory**, create an `action.yml` file.
 
@@ -79,7 +79,7 @@ runs:
 ```        
 **Note:** The using: **"composite"** field indicates that this action is a composite action.
 
-### 3. Using the Composite Action in a Workflow  
+### 3. Using the composite action in a workflow  
 Once the composite action is created, it can be referenced in a GitHub Actions workflow.
 ```yaml
 jobs:
@@ -98,12 +98,12 @@ uses: owner/repository/.github/actions/my-composite-action@v1
 
 :::image type="content" source="../media/composite-action-in-a-workflow.png" alt-text="Composite action used in a workflow." border="false":::
 
-## Adding Outputs to a Composite Action
+## Adding outputs to a composite action
 Composite actions can define outputs that workflows can use to pass data between steps or jobs. Outputs are particularly useful for sharing results or computed values from one action to another.
 
 The following example demonstrates how to define and use an output in a composite action:
 
-#### Define an Output in `action.yml`
+#### Define an output in `action.yml`
 
 The `action.yml` file specifies an output named `script-result`. This output retrieves its value from the `result` output of the `run-script` step. The `run-script` step runs a Bash command to set the output value.
 
@@ -122,7 +122,7 @@ runs:
 ```
 :::image type="content" source="../media/define-an-output-in-action.png" alt-text="Define an output in a composite action." border="false":::
 
-#### Use the Output in a Workflow
+#### Use the output in a workflow
 
 Once the composite action is created, its output can be accessed in a workflow. Here's an example:
 
@@ -146,7 +146,7 @@ In this example:
 
 Define outputs in composite actions to create reusable and modular workflows. This approach simplifies data sharing and improves maintainability.
 
-## Best Practices for Composite Actions
+## Best practices for composite actions
 
 | **Best Practice**       | **Description**                                                                 |
 |--------------------------|---------------------------------------------------------------------------------|
@@ -155,42 +155,42 @@ Define outputs in composite actions to create reusable and modular workflows. Th
 | **Document Inputs & Outputs** | Add descriptions for inputs/outputs in `action.yml`.                          |
 | **Test Before Publishing** | Validate the composite action in a test repository.                           |
 
-## Composite Action in a Workflow
+## Composite action in a workflow
 
 Composite actions are a powerful way to simplify workflows by bundling multiple steps into a reusable unit. These actions allow you to define a sequence of commands or actions in a single `action.yml` file, making it easier to maintain and reuse logic across workflows. 
 
-## Benefits of Composite Actions:
+## Benefits of composite actions:
 - **Reusability** - Define actions once and use them in multiple workflows.  
 - **Maintainability** - Reduce duplication by centralizing logic in a single action.  
 - **Modularity** - Combine multiple shell commands or other actions into a single unit. 
 
-# Develop an Action to Set Up a CLI on GitHub Actions Runners
+# Develop an action to set up a CLI on GitHub Actions runners
 Many CI/CD workflows require a **specific version of a CLI tool** to interact with cloud services, manage infrastructure, or execute scripts. While GitHub-hosted runners come preinstalled with many tools, they may not include the exact version your workflow needs, especially if it's an older or unsupported version. Instead of installing the required CLI version in every workflow, you can create a **reusable GitHub Action** that:
 
 - Ensures consistent installation of the required CLI version across jobs.  
 - Simplifies workflows by centralizing the installation logic.  
 - Optimizes caching for faster workflow execution. 
 
-## How to Develop a CLI Setup Action
+## How to develop a CLI setup action
 
 A **CLI setup action** is a **JavaScript-based action** that installs and configures a CLI on a GitHub runner.
 
-### Steps to Create the Action:
+### Steps to create the action:
 
 ### Step 1: Set Up the Action Directory
 To manually create the directory for your CLI setup action, follow these steps:
 
-1. **Navigate to Your Repository**  
+1. **Navigate to your repository**  
 
 :::image type="content" source="../media/javascript-action-root-repo.png" alt-text="Root repository structure showing .github/actions/my-cli-action directory for a JavaScript action." border="false":::
 
-2. **Create a New Directory for the Action**  
+2. **Create a new directory for the action**  
   Create a new directory named `my-cli-action` inside the `.github/actions` folder. This ensures your action is organized and follows GitHub's recommended structure for custom actions.  
 
-3. **Navigate to the New Directory**  
+3. **Navigate to the new directory**  
   Change into the newly created directory to start adding files for your action:  
 
-4. **Verify the Directory Structure**  
+4. **Verify the directory structure**  
   After creating the directory, your repository structure should look like this:  
   ```
   your-repository/
@@ -202,7 +202,8 @@ To manually create the directory for your CLI setup action, follow these steps:
 :::image type="content" source="../media/javascript-action-directory.png" alt-text="Directory structure for a JavaScript action inside .github/actions." border="false":::
 
 You are now ready to proceed with creating the `action.yml` file and other necessary files for your CLI setup action.
-### Step 2: Define the action.yml Metadata File
+
+### Step 2: Define the action.yml metadata file
 Create an action.yml file to describe the action.
 
 ``` yaml
@@ -225,7 +226,7 @@ This action runs JavaScript code using Node.js 16.
 
 :::image type="content" source="../media/javascript-action-yaml.png" alt-text="YAML metadata file for a JavaScript GitHub Action." border="false":::
 
-### Step 3: Create a JavaScript Script to Install the CLI
+### Step 3: Create a JavaScript script to install the CLI
 In the same directory, create a file named index.js and add the following code:
 ```javascript
 const core = require('@actions/core');
@@ -251,7 +252,7 @@ The JavaScript code above uses core.getInput() to retrieve the CLI version speci
 
 :::image type="content" source="../media/javascript-action-index-js.png" alt-text="JavaScript code for index.js in a GitHub Action." border="false":::
 
-### Step 4: Test the Action Locally
+### Step 4: Test the action locally
 Before using the action in a workflow, test it on a GitHub-hosted runner.   
 Create a workflow file (.github/workflows/test.yml) in your repository:
 ```yaml
@@ -263,7 +264,7 @@ on:
       - main
       - feature/*
 ```
-**a. Triggering the Workflow**    
+**a. Triggering the workflow**    
 The workflow is triggered on pushes to the main branch and any branch matching the feature/* pattern. You can adjust this to match your repository's branching strategy.
 
 ```yaml
@@ -274,7 +275,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 ```
-**b. Checkout the Repository**   
+**b. Checkout the repository**   
  The *actions/checkout@v4* action is used to clone the repository onto the runner. This ensures that the workflow has access to the repository's files.
 
 ```yaml
@@ -283,7 +284,7 @@ jobs:
         with:
           version: '1.2.3'
 ```
-**c. Run the Custom Action**   
+**c. Run the custom action**   
 The uses: *./.github/actions/my-cli-action* line references the custom action locally. Ensure that the action directory and action.yml file are correctly set up. The version input specifies the CLI version to install—in this case, version 1.2.3.
 
 ```yaml
@@ -292,19 +293,19 @@ The uses: *./.github/actions/my-cli-action* line references the custom action lo
           echo "Checking MyCLI version..."
           mycli --version
 ```
-**d. Verify the CLI Installation**   
+**d. Verify the CLI installation**   
 This step runs a shell command to verify that the CLI was installed successfully. It checks the version of the installed CLI by running mycli --version.
 
 :::image type="content" source="../media/javascript-action-test.png" alt-text="Screenshot showing the test results of a JavaScript GitHub Action." border="false":::
 
-### Testing Locally
+### Testing locally
 To test this workflow locally, use the [`act`](https://github.com/nektos/act) CLI tool:
 ```bash
 act -j test
 ```
 This simulates the GitHub Actions environment on your local machine, allowing you to debug and validate the workflow before pushing changes.
 
-### Optimization Tip: Caching
+### Optimization tip: Caching
 To improve workflow performance, cache the CLI installation directory using the `actions/cache` action:
 ```yaml
       - name: Cache MyCLI
@@ -315,9 +316,9 @@ To improve workflow performance, cache the CLI installation directory using the 
 ```
 This ensures that subsequent runs reuse the cached CLI installation, reducing setup time.
 
-### Best Practices for CLI Setup Actions
+### Best practices for CLI setup actions
 
-| **Best Practice**         | **Description**                                                              |
+| **Best practice**         | **Description**                                                              |
 |----------------------------|------------------------------------------------------------------------------|
 | **Use Versioning**         | Allow users to specify a CLI version via `inputs.version`.                  |
 | **Handle Errors Properly** | Use `core.setFailed()` to exit on errors.                                   |
@@ -325,13 +326,13 @@ This ensures that subsequent runs reuse the cached CLI installation, reducing se
 | **Provide Documentation**  | Explain usage and inputs in `README.md`.                                    |
 
 
-# Troubleshoot JavaScript Actions
+# Troubleshoot JavaScript actions
 
 When working with JavaScript-based GitHub Actions, you may encounter unexpected behavior, errors, or failures during workflow execution. This unit provides techniques and tools to help you identify and resolve issues in your JavaScript actions.
 
-## Common Troubleshooting Scenarios
+## Common troubleshooting scenarios
 
-| Problem | Possible Cause | Suggested Fix |
+| Problem | Possible cause | Suggested fix |
 |--------|----------------|----------------|
 | Action fails with a stack trace | Syntax or runtime error in `index.js` | Use `console.log()` and check logs |
 | Inputs are `undefined` | Incorrect input name or missing input | Verify `action.yml` and how inputs are passed |
@@ -352,7 +353,7 @@ console.log("This is a raw console log");
 ```
 ✅ Use core.debug for debug logs — these only appear when ACTIONS_STEP_DEBUG is set to true.
 
-### Enable Debug Logging
+### Enable debug logging
 You can enable **step-level debug logs** by setting the following **secret**:
 ```
 ACTIONS_STEP_DEBUG=true
@@ -362,7 +363,7 @@ To enable **runner diagnostic logs**, set:
 ACTIONS_RUNNER_DEBUG=true
 ```
 
-### How to Set Secrets for Debugging
+### How to set secrets for debugging
 1. Go to your GitHub repository.
 2. Navigate to **Settings** > **Secrets and variables** > **Actions**.
 3. Add new secrets with the following names and values:
@@ -370,7 +371,7 @@ ACTIONS_RUNNER_DEBUG=true
    - **ACTIONS_RUNNER_DEBUG**: `true`
 
 
-### Inspect Workflow Logs
+### Inspect workflow logs
 When a workflow fails, click on the failed job in the Actions tab. Expand each step to:
 
 - View detailed logs
@@ -378,7 +379,7 @@ When a workflow fails, click on the failed job in the Actions tab. Expand each s
 - See the exit code of scripts
 - Identify unhandled exceptions
 
-🔍 Example Log Output
+🔍 Example log Output
 ```plaintext
 Error: Cannot find module '@actions/core'
 Require stack:
@@ -386,7 +387,7 @@ Require stack:
 ```
 ✅ Fix: Run npm install @actions/core and commit node_modules (or use ncc to bundle the action).
 
-### Test Your Action Locally
+### Test your action locally
 Use act — a CLI tool to run GitHub Actions locally.
 Example:
 ```sh
@@ -394,7 +395,7 @@ act -j test
 ```
 🛠 Make sure to simulate your GitHub environment properly when testing locally.
 
-### Handle Errors Gracefully
+### Handle errors gracefully
 Catch exceptions and fail with helpful messages:
 
 ```js
@@ -406,7 +407,7 @@ try {
 ```
 🔁 This ensures GitHub stops the workflow on error and provides readable logs.
 
-### Best Practices for Debugging JavaScript Actions
+### Best practices for debugging JavaScript actions
 | **Practice**            | **Description**                                                              |
 |--------------------------|------------------------------------------------------------------------------|
 | **Use core.debug()**     | Hide verbose logs unless debugging is enabled.                              |
@@ -416,12 +417,12 @@ try {
 | **Use try/catch**        | Prevent workflows from failing silently.                                    |
 
 
-# Troubleshoot Docker Container Actions
+# Troubleshoot Docker container actions
 Docker container actions are powerful for encapsulating complex tools and environments in GitHub Actions workflows. However, debugging these actions can be more challenging than JavaScript actions due to their isolated runtime environment. This unit will guide you through identifying, diagnosing, and resolving issues with Docker-based actions.
 
-## Common Issues in Docker Container Actions
+## Common issues in Docker container actions
 
-| Problem | Cause | Suggested Fix |
+| Problem | Cause | Suggested fix |
 |--------|-------|----------------|
 | Action fails to start | `ENTRYPOINT` or `CMD` misconfigured | Confirm Dockerfile uses `ENTRYPOINT` correctly |
 | Missing dependencies | Dependencies not installed or misconfigured | Ensure all packages are installed in the image |
@@ -430,7 +431,7 @@ Docker container actions are powerful for encapsulating complex tools and enviro
 | Permission denied | File or script lacks execution permission | Add `RUN chmod +x <script>` in Dockerfile |
 | Network-related failures | External services not accessible | Validate network settings and retry logic |
 
-## Understand the Docker Action Lifecycle
+## Understand the Docker action lifecycle
 
 Before troubleshooting, it's helpful to understand how Docker container actions run.
 ![
@@ -439,32 +440,32 @@ Before troubleshooting, it's helpful to understand how Docker container actions 
 
  Note: Docker container actions run in a clean, isolated environment. File system state, installed tools, and environment variables must all be defined within the Dockerfile.
 
-### Debugging Techniques
-### 1. Add Logging
+### Debugging techniques
+#### 1. Add Logging
 Use echo, printf, or logging statements in your entrypoint script:
 
 ```bash
 echo "Starting Docker action..."
 echo "Input VALUE: $INPUT_VALUE"
 ```
-📌 Log all critical inputs and steps to diagnose where the failure occurs.
+Log all critical inputs and steps to diagnose where the failure occurs.
 
-### 2. Build and Test Locally
+#### 2. Build and test locally
 Use Docker on your machine to simulate the container behavior:
 ```bash
 docker build -t my-action .
 docker run -e INPUT_NAME=value my-action
 ```
-⚠️ Ensure environment variables mimic the ones GitHub sets.
+Ensure environment variables mimic the ones GitHub sets.
 
-### 3. Use the act CLI to Simulate GitHub Workflows
+#### 3. Use the act CLI to simulate GitHub workflows
 Install act to run your GitHub workflows locally:
 ```bash
 act -j test-job
 ```
-🧪 Great for testing Docker actions in workflows without pushing to GitHub.
+Great for testing Docker actions in workflows without pushing to GitHub.
 
-### 4. Validate Dockerfile Configuration
+#### 4. Validate Dockerfile configuration
 Ensure you define either ENTRYPOINT or CMD.
 Copy your scripts into the image and give them execute permission:
 ```dockerfile
@@ -473,21 +474,21 @@ RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
-### 5. Inspect GitHub Logs
+### 5. Inspect GitHub logs
 Click on a failed workflow run, expand each step, and examine:
   - Docker build logs
   - Standard output and standard error from the container
   - Exit codes and stack traces
 🔍 Logs often reveal missing packages, syntax issues, or permission errors.
 
-### Example: Entry Point Error
+### Example: Entry point error
 ```plaintext
 Error: container_linux.go:380: starting container process caused "exec: \"/entrypoint.sh\": permission denied"
 ```
 ✅ Fix: Add RUN chmod +x /entrypoint.sh in your Dockerfile.
 
-### Environment Variable Mapping
-| **GitHub Input**         | **Docker Environment Variable**       |
+### Environment variable mapping
+| **GitHub input**         | **Docker environment variable**       |
 |---------------------------|---------------------------------------|
 | `with: name: test`        | `INPUT_NAME=test`                    |
 | `GITHUB_WORKSPACE`        | Mapped into `/github/workspace`      |
@@ -497,14 +498,14 @@ Error: container_linux.go:380: starting container process caused "exec: \"/entry
 echo "Input was $INPUT_NAME"
 echo "Working dir: $GITHUB_WORKSPACE"
 ```
-### Use Troubleshooting Secrets
+### Use troubleshooting secrets
 Enable additional logging by adding these secrets to your repository or org:
 | **Secret**              | **Description**                     |
 |--------------------------|-------------------------------------|
 | **ACTIONS_STEP_DEBUG**   | Enables debug logging              |
 | **ACTIONS_RUNNER_DEBUG** | Enables runner diagnostics         |
 
-### Best Practices for Docker Action Debugging
+### Best practices for Docker action debugging
 
 | **Best Practice**               | **Why**                                                   |
 |----------------------------------|----------------------------------------------------------|
