@@ -1,6 +1,6 @@
 Now it's time to put what you've learned about Content Understanding into practice!
 
-In this exercise, you use Azure AI Foundry to create a Content Understanding project and build analyzers for documents, images, audio files, and videos. 
+In this exercise, you use Azure AI Content Understanding to extract information from documents, images, audio files, and videos.
 
 > [!NOTE]
 > To complete this lab, you need an **[Azure subscription](https://azure.microsoft.com/free?azure-portal=true)** in which you have administrative access.
