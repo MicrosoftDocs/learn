@@ -6,9 +6,9 @@ To use the REST API, your client application submits HTTP calls to the Content U
 
 ## Using the REST API to analyze content
 
-One of the most common uses of the REST API is to submit content to an existing analyzer that you have previously built, and retrieve the results of analysis. The analysis request returns an operation ID value that represents an asynchronous task. Your client application must then use the GET request to pass the operation ID back to the endpoint and retrieve the operation status - potentially polling multiple times until the operation is complete and the results are returned in JSON format.
+One of the most common uses of the REST API is to submit content to an existing analyzer that you have previously built, and retrieve the results of analysis. The analysis request returns an operation ID value that represents an asynchronous task. Your client application must then use another request to pass the operation ID back to the endpoint and retrieve the operation status - potentially polling multiple times until the operation is complete and the results are returned in JSON format.
 
-For example, to analyze a document, a client application might submit a POST request to the **Analyze** operation containing the following JSON body:
+For example, to analyze a document, a client application might submit a POST request to the `analyze` function containing the following JSON body:
 
 ```json
 POST {endpoint}/contentunderstanding/analyzers/{analyzer}:analyze?api-version={api version}
@@ -31,13 +31,13 @@ Operation-Location: {endpoint}/contentunderstanding/analyzers/{analyzer}/results
 }
 ```
 
-Your client application must then use the operation ID that has been returned to check the status of the operation until it has succeeded (or failed) by submitting a GET request to the **Get Analysis Results** operation.
+Your client application must then use the operation ID that has been returned to check the status of the operation until it has succeeded (or failed) by submitting a GET request to the `results` function.
 
 ```http
 GET {endpoint}/contentunderstanding/analyzers/{analyzer}/results/1234abcd-1234-abcd-1234-abcd1234abcd?api-version={api version}
 ```
 
-When the operation has completed successfully, the response to the GET request contains a JSON payload representing the results of the analysis. The specific results depend on the content and schema.
+When the operation has completed successfully, the response contains a JSON payload representing the results of the analysis. The specific results depend on the content and schema.
 
 > [!NOTE]
 > For more information about the Content Understanding REST API, see the **[reference documentation](/rest/api/contentunderstanding/operation-groups)**.
