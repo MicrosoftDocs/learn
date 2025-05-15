@@ -192,7 +192,7 @@ You can add protection rules for environments defined for your GitHub repository
 ![Screenshot of a settings menu under 'General' with sections for Access, Code and automation, Security, and Integrations. The 'Environments' option is highlighted in red.](../media/2b-environments.png)   
 
 3. Use the **New environment** button to add and configure an environment and add protections.
-![GitHub repository settings page showing the 'Environments' section with a message indicating no environments exist and a 'New environment' button highlighted.](../media/2b-newenvironment.png)
+![GitHub repository settings page showing the 'Environments' section with a message indicating no environments exist and a 'New environment' button highlighted.](../media/2b-new-environment.png)
 
 ### About environments
 
@@ -224,7 +224,7 @@ Environment deployment protection rules require specific conditions to pass befo
 
     Once custom deployment protection rules are created and installed on a repository, you can enable the custom deployment protection rule for any environment in the repository.
 
-   !["Settings page for configuring 'Environment1' with options for reviewers, wait timer, custom rules, and branch restrictions.](../media/2b-protectionrules.png)
+   !["Settings page for configuring 'Environment1' with options for reviewers, wait timer, custom rules, and branch restrictions.](../media/2b-protection-rules.png)
 
 > Note
 > If you are on a GitHub Free, GitHub Pro, or GitHub Team plan, the enviroment deployment projection rules are only available for public repositories; with the exception of branch & tag protection rules.  For users of GitHub Pro or GitHub Team plans, branch and tag protection rules are also available for private repositories.
