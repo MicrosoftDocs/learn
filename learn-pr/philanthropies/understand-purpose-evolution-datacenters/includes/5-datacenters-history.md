@@ -3,7 +3,7 @@ The history of datacenters is closely linked to the development of computing tec
 ## Early computing (1940s - 1950s)
 
 **Mainframes and Early Computing:** The first "datacenters" didn't exist in the modern sense, but large mainframe computers were housed in controlled environments to handle data processing. These mainframes were typically stored in research facilities or corporate locations.
-- In the 1940s, the concept of data center was developed by J. Presper Eckert and John Mauchly. Eckert and Mauchly were the primary inventors of the ENIAC computer, which was the world's first data center, built in 1946 at the University of Pennsylvania in the US.  However, the ENIAC was very different from the data centers we have today.
+- In the 1940s, the concept of data center was developed by J. Presper Eckert and John Mauchly. Eckert and Mauchly were the primary inventors of the ENIAC computer, which was the world's first data center, built in 1946 at the University of Pennsylvania in the US.  However, the ENIAC was different from the data centers we have today.
 - Example: IBM 701, one of the earliest commercial computers, was installed in university and corporate facilities in the 1950s.
 
 **Challenges:**
@@ -41,7 +41,7 @@ While there isn't a single “first” datacenter from the dot-com era, companie
 
 |Companies|Details|
 |---|---|
-|Equinix (Founded in 1998)|- Equinix is often regarded as one of the first companies to establish large-scale, commercial datacenters designed for interconnecting different organizations' networks. It was founded during the dotcom boom and became a leader in datacenter interconnection and colocation services.</br>- Equinix opened its first datacenter in Silicon Valley in 1999, and it quickly expanded with other locations across the U.S. and globally. They provided secure, reliable hosting for the rapidly growing internet infrastructure and began offering colocation services, where businesses could rent space to house their own servers.|
+|Equinix (Founded in 1998)|- Equinix is often regarded as one of the first companies to establish large-scale, commercial datacenters designed for interconnecting different organizations' networks. It was founded during the dot-com boom and became a leader in datacenter interconnection and colocation services.</br>- Equinix opened its first datacenter in Silicon Valley in 1999, and it quickly expanded with other locations across the U.S. and globally. They provided secure, reliable hosting for the rapidly growing internet infrastructure and began offering colocation services, where businesses could rent space to house their own servers.|
 |Digital Equipment Corporation (DEC) and Compaq|- Digital Equipment Corporation (DEC), founded in the 1950s, was a key player in the development of early data storage and computing infrastructure. In the 1990s, DEC's systems were used in some of the earliest commercial datacenters.</br>- Compaq, after acquiring DEC, also played a significant role in providing server and storage solutions used in commercial datacenters that powered the growing internet.|
 |Yahoo! and AOL (Early Web Hosting Centers)|- During the dot-com boom, companies like Yahoo!, AOL, and others began building their own datacenters to support their rapidly growing user bases and web traffic. These early datacenters were crucial in providing email services, web hosting, and search engine operations.</br>- Yahoo! established one of the first large-scale, high-performance datacenters to handle the increasing traffic demands from its growing web portal.
 
