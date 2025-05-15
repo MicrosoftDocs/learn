@@ -16,3 +16,4 @@ After completing this module, you'll be able to:
 ## Goals
 
 The goal of this module is to teach you how to use Azure Policy to enforce policies and safeguards on your Kubernetes clusters at scale. Azure Policy Ensures that your cluster is secure, compliant, and consistent across your organization.
+
