@@ -13,7 +13,7 @@ Because Adatum is likely to deploy more subnets on its virtual networks and to a
 
 ## When not to use Azure VPN Gateway
 
-Azure VPN Gateway is not always the best solution for connecting an on-premises environment to the cloud. Azure ExpressRoute is a dedicated, high-speed private connection between an on-premises network and Microsoft cloud services, including Microsoft Azure and Microsoft 365. Azure ExpressRoute is most suitable for organizations that need to quickly and reliably transfer large volumes of data between their on-premises workload and their cloud workload.
+Azure VPN Gateway isn't always the best solution for connecting an on-premises environment to the cloud. Azure ExpressRoute is a dedicated, high-speed private connection between an on-premises network and Microsoft cloud services, including Microsoft Azure and Microsoft 365. Azure ExpressRoute is most suitable for organizations that need to quickly and reliably transfer large volumes of data between their on-premises workload and their cloud workload.
 
 Adatum should choose Azure ExpressRoute over Azure VPN Gateway as a method of connecting your on-premises environment to Azure if the following factors are true:
 
