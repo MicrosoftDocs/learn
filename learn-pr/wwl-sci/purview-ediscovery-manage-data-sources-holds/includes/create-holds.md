@@ -56,6 +56,10 @@ There are two ways to define a query-based hold:
 > [!NOTE]
 > All content is initially preserved when you create a hold. Content that doesn't match the query is cleared from the hold within 7 to 14 days, unless it's covered by another hold or can't be indexed.
 
+Use the **Apply a hold** interactive guide to walk through creating and managing a hold policy.
+
+[:::image type="content" source="../media/guide-apply-hold.png" alt-text="Image showing the opening page to the Apply a hold interactive guide." lightbox="../media/guide-apply-hold.png":::](https://mslearn.cloudguides.com/guides/Apply%20a%20hold%20with%20Microsoft%20Purview%20eDiscovery?azure-portal=true)
+
 ## Step 4: Confirm the hold
 
 After applying the hold, go to the **Details** tab to confirm that the policy is active and functioning as expected.
@@ -90,3 +94,9 @@ The new hold copies the sources from the search. Keep in mind:
 - If a user's **OneDrive URL changes** (such as from a UPN update), the existing hold still preserves the content, but you need to update the URL to reflect the new path for ongoing visibility and management.
 - Teams and group content is stored in group mailboxes and SharePoint sites, while user chats and shared files are stored in individual mailboxes and OneDrive. Hold all relevant locations to ensure complete coverage.
 - When you place a hold on a group, member content isn't preserved unless their mailboxes and OneDrive accounts are added separately.
+
+## Apply a hold interactive guide
+
+Use the **Apply a hold** interactive guide to walk through creating and applying a hold policy.
+
+[:::image type="content" source="../media/guide-apply-hold.png" alt-text="Image showing the opening page to the Apply a hold interactive guide." lightbox="../media/guide-apply-hold.png":::](https://mslearn.cloudguides.com/guides/Apply%20a%20hold%20with%20Microsoft%20Purview%20eDiscovery?azure-portal=true)
