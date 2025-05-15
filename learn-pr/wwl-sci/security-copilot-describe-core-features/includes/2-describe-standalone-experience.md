@@ -98,7 +98,7 @@ From the home menu, the user can navigate as follows:
   - The About page provides information of the app version for Copilot.
   
     # [Preferences](#tab/preferences)
-    :::image type="content" source="../media/settings-preferences.png" lightbox="../media/settings-preferences.png" alt-text="Screen capture showing the preferences that can be configured by any user.":::
+    :::image type="content" source="../media/preferences-with-workspaces.png" lightbox="../media/preferences-with-workspaces.png" alt-text="Screen capture showing the preferences that can be configured by any user.":::
 
     # [Data and privacy](#tab/data-privacy)
     :::image type="content" source="../media/settings-data-privacy.png" lightbox="../media/settings-data-privacy.png" alt-text="Screen capture showing the preferences that can be configured by any user.":::
