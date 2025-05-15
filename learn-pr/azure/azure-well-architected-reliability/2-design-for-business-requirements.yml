@@ -4,7 +4,7 @@ title: Design for business requirements
 metadata:
   title: Design for business requirements
   description: Learn about designing your workload to achieve the reliability requirements set by the business.
-  ms.date: 12/18/2023
+  ms.date: 05/15/2025
   author: PageWriter-MSFT
   ms.author: prwilk
   ms.topic:  unit
@@ -35,7 +35,7 @@ quiz:
       explanation: "Internal dependencies need to be considered, but you might also have external dependencies that can affect your workload if there's a problem."
     - content: "External dependencies only."
       isCorrect: false
-      explanation: "External dependencies need to be considered, but you might also have internal dependencies that can affect your workload if there's an issue."
+      explanation: "External dependencies need to be considered, but you might also have internal dependencies that can affect your workload if there's a problem."
     - content: "All internal and external dependencies."
       isCorrect: true
       explanation: "Both internal and external dependencies can affect your workload if there's a problem, so you should consider all dependencies in your reliability design."

@@ -3,7 +3,7 @@ uid: learn.azure-well-architected-reliability
 metadata:
   title: Microsoft Azure Well-Architected Framework - Reliability
   description: Apply reliability guidance in your architecture to improve your workload's availability and resilience.
-  ms.date: 12/18/2023
+  ms.date: 05/15/2025
   author: PageWriter-MSFT
   ms.author: prwilk
   ms.topic: module
