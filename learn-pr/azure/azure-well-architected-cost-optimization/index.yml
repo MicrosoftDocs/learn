@@ -3,7 +3,7 @@ uid: learn.azure-well-architected-cost-optimization
 metadata:
   title: Microsoft Azure Well-Architected Framework - Cost Optimization
   description: Apply cost optimization guidance in your architecture to sustain and improve your return on investment (ROI).
-  ms.date: 10/23/2023
+  ms.date: 05/15/2025
   author: PageWriter-MSFT
   ms.author: prwilk
   ms.topic: module
