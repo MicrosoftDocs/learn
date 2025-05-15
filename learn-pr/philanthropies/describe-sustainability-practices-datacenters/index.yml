@@ -30,6 +30,7 @@ levels:
 roles:
 - student
 units:
+- learn.philanthropies.describe-sustainability-practices-datacenters.introduction
 - learn.philanthropies.describe-sustainability-practices-datacenters.embrace-environmental-sustainability
 - learn.philanthropies.describe-sustainability-practices-datacenters.renewable-energy-efficiency
 - learn.philanthropies.describe-sustainability-practices-datacenters.advanced-cooling-resource-conservation

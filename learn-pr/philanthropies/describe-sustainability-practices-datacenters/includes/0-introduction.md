@@ -1,6 +1,6 @@
-This module focuses on the importance of sustainability in datacenter operations. You;ll learn about the use of renewable energy sources like solar and wind, strategies for optimizing energy usage, and emergency power systems. 
+This module focuses on the importance of sustainability in datacenter operations. You'll learn about the use of renewable energy sources like solar and wind; strategies for optimizing energy usage, and emergency power systems. 
 
-The module also explores advanced cooling techniques such as waste heat reuse and water conservation practices. Additionally, you'll understand the role of monitoring and reporting tools in tracking sustainability progress through KPIs, and examines emerging technologies for sustainability in datacenters, including AI and biomimicry. 
+The module also explores advanced cooling techniques such as waste heat reuse and water conservation practices. It also describes the role of monitoring and reporting tools in tracking sustainability progress through KPIs. In the module, you'll examine emerging technologies for sustainability in datacenters, including AI and biomimicry. 
 
 You'll learn about renewable energy sources, energy optimization strategies, emergency power systems, advanced cooling techniques, water conservation practices, and the use of monitoring and reporting tools.
 

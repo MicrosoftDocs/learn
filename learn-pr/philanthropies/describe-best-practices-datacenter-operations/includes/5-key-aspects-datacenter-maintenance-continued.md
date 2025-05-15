@@ -1,4 +1,4 @@
-Let's now look at other generic maitenance activities required for smooth operations. 
+Let's now look at other generic maintenance activities required for smooth operations. 
 
 ## Preventive maintenance 
 
@@ -14,7 +14,7 @@ Preventive maintenance is a proactive approach that involves performing routine 
 
 ## Corrective /Reactive maintenance
 
-Corrective maintenance is reactive, meaning it is performed when a failure or issue is detected. This type of maintenance involves troubleshooting, identifying the root cause of the problem, and restoring the system or equipment back to its normal operation.
+Corrective maintenance is reactive, meaning it's performed when a failure or issue is detected. This type of maintenance involves troubleshooting, identifying the root cause of the problem, and restoring the system or equipment back to its normal operation.
 
 **Examples**: 
 

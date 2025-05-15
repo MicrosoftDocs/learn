@@ -1,7 +1,7 @@
-Let's now look at some of the important aspects of datacetner monitoring
+Let's now look at some of the important aspects of datacenter monitoring
 
 ## Environmental
-It is important to maintain optimal conditions that prevent equipment failure and improve efficiency.
+It's important to maintain optimal conditions that prevent equipment failure and improve efficiency.
 
 **Key Elements:**
     
@@ -31,7 +31,7 @@ It is important to maintain optimal conditions that prevent equipment failure an
 Performance helps ensure that all IT resources (such as servers, storage, and networks) are performing as expected.
 
 **Key Elements**:
-- Server performance: Monitoring CPU usage, memory (RAM), disk health, and system load to ensure that servers are not overloaded or underperforming.
+- Server performance: Monitoring CPU usage, memory (RAM), disk health, and system load to ensure that servers are'nt overloaded or underperforming.
 - Storage performance: Tracking the health of storage devices and systems (e.g., hard drives, SSDs) to ensure efficient data retrieval and storage.
 - Network performance: Monitoring the bandwidth and latency of network connections, ensuring that data flows smoothly and that the network is not congested.
 - Application performance: Ensuring that critical applications (e.g., 
@@ -104,7 +104,7 @@ To monitor the physical systems that provide power, cooling, and fire suppressio
 - Energy usage per rack or server: The energy consumption per unit of computing resource (e.g., per rack, per server) is tracked to optimize energy use in the datacenter. 
 - Cooling efficiency: Temperature differential: Measures the difference between intake and exhaust temperatures in cooling systems. 
 - Cooling system efficiency (COP - coefficient of performance): Measures the effectiveness of the cooling system, ideally higher COP means better energy efficiency. 
-- Cooling usage effectiveness (CUE): Similar to PUE, CUE measures how efficiently cooling is used in the datacenter. It is calculated by dividing the total energy used for cooling by the energy used by the IT equipment. 
+- Cooling usage effectiveness (CUE): Similar to PUE, CUE measures how efficiently cooling is used in the datacenter. It's calculated by dividing the total energy used for cooling by the energy used by the IT equipment. 
 - Fire suppression system readiness: Fire alarm response time: Time taken for fire suppression systems to activate once an alarm is triggered. 
 - Fire drill effectiveness: Regular tests to ensure readiness in case of fire emergencies.
 
