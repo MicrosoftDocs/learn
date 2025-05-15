@@ -1,4 +1,3 @@
-## What is low latency?
 
 Low latency in datacenters refers to minimizing the delay in data transmission between systems, applications, and users. Low latency is crucial for industries and applications where speed and responsiveness are essential (e.g., financial trading, gaming, and real-time communications). Low latency ensures faster processing, improved user experiences, and enhanced performance, making it a key factor in delivering high-quality, time-sensitive services. 
 
