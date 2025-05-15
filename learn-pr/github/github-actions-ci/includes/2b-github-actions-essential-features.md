@@ -224,7 +224,7 @@ Environment deployment protection rules require specific conditions to pass befo
 
     Once custom deployment protection rules are created and installed on a repository, you can enable the custom deployment protection rule for any environment in the repository.
 
-   !["Settings page for configuring 'Environment1' with options for reviewers, wait timer, custom rules, and branch restrictions.](../media/2b-protection-rules.png)
+   ![Settings page for configuring 'Environment1' with options for reviewers, wait timer, custom rules, and branch restrictions.](../media/2b-protection-rules.png)
 
 > Note
 > If you are on a GitHub Free, GitHub Pro, or GitHub Team plan, the enviroment deployment projection rules are only available for public repositories; with the exception of branch & tag protection rules.  For users of GitHub Pro or GitHub Team plans, branch and tag protection rules are also available for private repositories.
