@@ -152,20 +152,17 @@ Some best practices for mitigating script injection attacks on GitHub actions in
           exit 1
           fi
     ```
-![Pull Request](../media/manage-encrypted-secrets_pr.png)
+:::image type="content" source="../media/manage-encrypted-secrets_pr.png" alt-text="Screenshot showing a pull request interface related to managing encrypted secrets." border="false":::
 
-![Workflow Execution](../media/manage-encrypted-secrets_workflow.png)
-
+:::image type="content" source="../media/manage-encrypted-secrets_workflow.png" alt-text="Screenshot showing a GitHub Actions workflow execution related to encrypted secrets." border="false":::
 
 3. Leverage workflow templates to implement code scanning: If you click on the **Actions** tab of any repository, you will be able to select the **New Workflow** button on the left side of the pane.  Within the **Choose a Workflow** page that is displayed as a result of clicking on the button, there is a **Security** section where workflow templates can be selected to instantiate as a workflow file in the current repository.  The CodeQL scanner, specifically, can be configured to trigger on an appropriate event to scan a branch's files & flag exposures (CWE's) in actions within workflows; including `script injection`.
 
-![New Workflow](../media/manage-encrypted-secrets_newworkflow.png)
+:::image type="content" source="../media/manage-encrypted-secrets_newworkflow.png" alt-text="Screenshot showing the creation of a new GitHub Actions workflow for managing encrypted secrets." border="false":::
 
-![CodeQL](../media/manage-encrypted-secrets_codeql.png)
+:::image type="content" source="../media/manage-encrypted-secrets_codeql.png" alt-text="Screenshot showing CodeQL configuration related to managing encrypted secrets." border="false":::
 
 4. Restrict permissions for tokens: You should be sure to always apply the `rule of least privilege` to any created token.  In other words, ensure the token is assigned the minimum privileges to achieve the task for which it was created.
-
-![New Workflow](../media/manage-encrypted-secrets_newworkflow.png)
 
 ### Identify best practices for using third-party actions securely 
 
@@ -191,7 +188,7 @@ Some best practices for third-party actions securely:
 
 You should have situational awareness of indicators of a trustworthy third-party action to be better able to manage risk.  The action should appear on the Github Marketplace. When you view the action's entry in the GitHub Marketplace, ensure that it shows the 'Verified creator' badge to the right of the title (highlighted red in the image below).  This indicates that the vendor has been verified by GitHub.  In addition, the `action.yml` file defining the action should be well documented.
 
-![Marketplace](../media/manage-encrypted-secrets_marketplace.png)
+:::image type="content" source="../media/manage-encrypted-secrets_marketplace.png" alt-text="Screenshot showing the GitHub Marketplace interface for managing encrypted secrets." border="false":::
 
 ### Use Dependabot version updates to keep actions up-to-date
 
@@ -262,7 +259,8 @@ You should never use a `personal access token (classic)` to access a repository 
 
 A `fine-grained personal access token` should be used that is for a new account that belongs to your organization and that is only granted access to the specific repositories that are needed for the workflow. Note that this approach is not scalable and should be avoided in favor of alternatives, such as deploy keys.
 
-![Attestations](../media/manage-encrypted-secrets_personalaccesstoken.png)  
+:::image type="content" source="../media/manage-encrypted-secrets_personalaccesstoken.png" alt-text="Screenshot showing a button to generate new GitHub personal access token." border="false":::
+
 
   5. **SSH keys on personal accounts**
 
@@ -293,7 +291,7 @@ When you generate an artifact attestation for builds you must ensure:
 
 The attestation establishes build provenance.  You can view attestations in the repository's **Actions** tab. 
 
-![Attestations](../media/manage-encrypted-secrets_attestations.png)
+:::image type="content" source="../media/manage-encrypted-secrets_attestations.png" alt-text="Screenshot showing attestations configuration in GitHub related to managing encrypted secrets." border="false":::
 
 ##### Generating an attestation for build provenance of binaries
 
