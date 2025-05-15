@@ -22,4 +22,4 @@ metadata:
 ### https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main.
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-aggregate-functions-grouping.md)]
+  [!include[](includes/3-aggregate-functions.md)]
