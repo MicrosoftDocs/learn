@@ -38,7 +38,7 @@ subjects:
 - threat-protection
 units:
 - learn.wwl.purview-ediscovery-review-set.introduction
-- learn.wwl.purview-ediscovery-review-set.manage-review-set
+- learn.wwl.purview-ediscovery-review-set.create-manage-review-set
 - learn.wwl.purview-ediscovery-review-set.search-review-set
 - learn.wwl.purview-ediscovery-review-set.tag-organize-content
 - learn.wwl.purview-ediscovery-review-set.run-analytics-review-set

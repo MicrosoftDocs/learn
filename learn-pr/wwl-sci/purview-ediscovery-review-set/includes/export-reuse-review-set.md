@@ -82,3 +82,9 @@ To do this:
 The process appears in the **Process manager** of the destination review set, where you can track completion.
 
 This approach is useful for running analytics on a smaller data set or separating different phases of review without duplicating effort.
+
+## Export data interactive guide
+
+Use the **Export data** interactive guide to walk through exporting search and review set data.
+
+[:::image type="content" source="../media/guide-export-data.png" alt-text="Image showing the opening page to the Export data interactive guide." lightbox="../media/guide-export-data.png":::](https://mslearn.cloudguides.com/guides/Export%20data%20with%20Microsoft%20Purview%20eDiscovery?azure-portal=true)

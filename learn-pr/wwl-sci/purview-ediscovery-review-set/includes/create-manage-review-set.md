@@ -112,3 +112,9 @@ This information is helpful when reviewing content origins and the completeness 
 By default, review set items appear in pages of 50. Use the navigation controls to move between pages or enter a page number directly. If you prefer to scroll through all content without breaks, go to **Manage** and select **Turn pagination off**.
 
 Review sets are where investigative teams do their most detailed analysis. By organizing content into review sets, applying tags, and using tools like analytics and export, you create a defensible, auditable process for handling sensitive data during legal or compliance matters.
+
+## Create and manage review sets interactive guide
+
+Use the **Create and manage review sets interactive guide** interactive guide to walk through creating a review set.
+
+[:::image type="content" source="../media/guide-create-manage-review-set.png" alt-text="Image showing the opening page to the Create and manage review sets interactive guide." lightbox="../media/guide-create-manage-review-set.png":::](https://mslearn.cloudguides.com/guides/Create%20and%20manage%20review%20sets%20with%20Microsoft%20Purview%20eDiscovery?azure-portal=true)
