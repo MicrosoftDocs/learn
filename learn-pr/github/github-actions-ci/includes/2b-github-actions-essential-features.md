@@ -30,7 +30,7 @@ This example is using the `github.ref` context to check the branch that triggere
 
 ## The contextual information available in a workflow
 
-Contexts allow you to access information about workflow runs, variables, runner environments, jobs, and steps.  Each context is is an object that contains properties which can be other objects or strings.  The contexts available include: `github`, `env`, `vars`, `job`, `jobs`, `steps`, `runner`, `secrets`, `strategy`, `matrix`, `needs` and `inputs`.  Here's a table presents these contexts with their descriptions.
+Contexts allow you to access information about workflow runs, variables, runner environments, jobs, and steps.  Each context is an object that contains properties which can be other objects or strings.  The contexts available include: `github`, `env`, `vars`, `job`, `jobs`, `steps`, `runner`, `secrets`, `strategy`, `matrix`, `needs` and `inputs`.  Here's a table presents these contexts with their descriptions.
 
 | Context |	Description |
 :---------|:---------------------------------------------------------------------------------
@@ -67,7 +67,7 @@ jobs.<job_id>.defaults.run	|	github, needs, strategy, matrix, env, vars, inputs	
 jobs.<job_id>.env	|	github, needs, strategy, matrix, vars, secrets, inputs	|	None
 jobs.<job_id>.environment	|	github, needs, strategy, matrix, vars, inputs	|	None
 jobs.<job_id>.environment.url	|	github, needs, strategy, matrix, job, runner, env, vars, steps, inputs	|	None
-jobs.<job_id>.if	|	github, needs, vars, inputs	|	always, cancelled, success, failure
+jobs.<job_id>.if	|	github, needs, vars, inputs	|	always, canceled, success, failure
 jobs.<job_id>.name	|	github, needs, strategy, matrix, vars, inputs	|	None
 jobs.<job_id>.outputs.<output_id>	|	github, needs, strategy, matrix, job, runner, env, vars, secrets, steps, inputs	|	None
 jobs.<job_id>.runs-on	|	github, needs, strategy, matrix, vars, inputs	|	None
@@ -77,7 +77,7 @@ jobs.<job_id>.services.<service_id>.credentials	|	github, needs, strategy, matri
 jobs.<job_id>.services.<service_id>.env.<env_id>	|	github, needs, strategy, matrix, job, runner, env, vars, secrets, inputs	|	None
 jobs.<job_id>.steps.continue-on-error	|	github, needs, strategy, matrix, job, runner, env, vars, secrets, steps, inputs	|	hashFiles
 jobs.<job_id>.steps.env	|	github, needs, strategy, matrix, job, runner, env, vars, secrets, steps, inputs	|	hashFiles
-jobs.<job_id>.steps.if	|	github, needs, strategy, matrix, job, runner, env, vars, steps, inputs	|	always, cancelled, success, failure, hashFiles
+jobs.<job_id>.steps.if	|	github, needs, strategy, matrix, job, runner, env, vars, steps, inputs	|	always, canceled, success, failure, hashFiles
 jobs.<job_id>.steps.name	|	github, needs, strategy, matrix, job, runner, env, vars, secrets, steps, inputs	|	hashFiles
 jobs.<job_id>.steps.run	|	github, needs, strategy, matrix, job, runner, env, vars, secrets, steps, inputs	|	hashFiles
 jobs.<job_id>.steps.timeout-minutes	|	github, needs, strategy, matrix, job, runner, env, vars, secrets, steps, inputs	|	hashFiles
@@ -184,14 +184,14 @@ steps:
 
 You can add protection rules for environments defined for your GitHub repository. To add an environment, in your repository:
 
-**1.** Click on **Settings**
+1. Click on **Settings**
 ![Navigation bar of a web interface with tabs like Code, Issues, and Wiki; 'Settings' is highlighted."](../media/2b-settings.png)
    
-**2.** Click on **Environment** on the left panel.
+2. Click on **Environment** on the left panel.
 
 ![Screenshot of a settings menu under 'General' with sections for Access, Code and automation, Security, and Integrations. The 'Environments' option is highlighted in red.](../media/2b-environments.png)   
 
-**3.** Use the **New environment** button to add and configure an environment and add protections.
+3. Use the **New environment** button to add and configure an environment and add protections.
 ![GitHub repository settings page showing the 'Environments' section with a message indicating no environments exist and a 'New environment' button highlighted.](../media/2b-newenvironment.png)
 
 ### About environments
@@ -208,7 +208,7 @@ Environment deployment protection rules require specific conditions to pass befo
 
 1. **Required reviewers protection rules**: Use required reviewers to require a specific person or team to approve workflow jobs that reference the environment. You can list up to six users or teams as reviewers. The reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed.
 
-    You also have the option to prevent self-reviews for deployments to protected environments. If you enable this setting, users who initiate a deployment cannot approve the deployment job, even if they're a required reviewer. By enabling self-reviews, it ensures that deployments to protected environments are always reviewed by more than one person.
+    You also have the option to prevent self-reviews for deployments to protected environments. If you enable this setting, users who initiate a deployment can't approve the deployment job, even if they're a required reviewer. By enabling self-reviews, it ensures that deployments to protected environments are always reviewed by more than one person.
 
     For more information on reviewing jobs that reference an environment with required reviewers, see [Reviewing deployments](https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-deployments/reviewing-deployments#bypassing-environment-protection-rules).
 
@@ -226,10 +226,8 @@ Environment deployment protection rules require specific conditions to pass befo
 
    !["Settings page for configuring 'Environment1' with options for reviewers, wait timer, custom rules, and branch restrictions.](../media/2b-protectionrules.png)
 
-> **Note**
+> Note
 > If you are on a GitHub Free, GitHub Pro, or GitHub Team plan, the enviroment deployment projection rules are only available for public repositories; with the exception of branch & tag protection rules.  For users of GitHub Pro or GitHub Team plans, branch and tag protection rules are also available for private repositories.
->
-<!-- INFOMAGNUS END -->
 
 ## Scripts in your workflow
 
