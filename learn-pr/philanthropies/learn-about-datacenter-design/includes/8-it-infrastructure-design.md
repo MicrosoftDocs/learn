@@ -17,9 +17,7 @@ The hardware and network configurations choices will have a direct impact on fac
 
 ## Optimizing placement for performance & maintenance
 
-Strategically positioning IT equipment within the datacenter is critical for maximizing performance and ensuring ease of maintenance. Proper placement helps reduce cable clutter, ensures optimal airflow, and improves accessibility for routine checks or upgrades.
-
-Considerations include:
+Strategically positioning IT equipment within the datacenter is critical for maximizing performance and ensuring ease of maintenance. Proper placement helps reduce cable clutter, ensures optimal airflow, and improves accessibility for routine checks or upgrades. Considerations include:
 
 - **Rack layouts**: Positioning servers, storage, and network equipment in optimized rack layouts maximizes available space and promotes efficient airflow. This is crucial for preventing overheating and maintaining system reliability.  
 - **Hot and cold aisles**: Implementing proper airflow management by placing servers in rows that alternate between “hot” and “cold” aisles helps maintain temperature control, reduce energy consumption, and increase cooling efficiency.  
@@ -37,5 +35,5 @@ Every component of the IT infrastructure, from servers to network devices, influ
 
 IT infrastructure design shouldn't only address the present but also anticipate future needs. As technology evolves and businesses expand, the datacenter will need to scale to support new applications, higher traffic volumes, and more complex data processing requirements.
 
-- Modular design: A modular design enables easy upgrades, adding additional servers or storage units without significant disruption.  
-- Scalability in networking: As demand for bandwidth increases, scalable networking solutions allow the datacenter to accommodate new workloads and user requirements without overhauling the existing infrastructure.
+- **Modular design:** A modular design enables easy upgrades, adding additional servers or storage units without significant disruption.  
+- **Scalability in networking:** As demand for bandwidth increases, scalable networking solutions allow the datacenter to accommodate new workloads and user requirements without overhauling the existing infrastructure.
