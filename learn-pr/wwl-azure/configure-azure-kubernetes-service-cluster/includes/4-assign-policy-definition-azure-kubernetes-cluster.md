@@ -33,3 +33,4 @@ Find the built-in policy definitions for managing your cluster using the Azure p
 11. Select **Overview** in the left pane and then search for and select **Policy**.
 12. Under **Name**, view the compliance for the Policy definition. :::image type="content" source="../media/policy-compliance-list-78b0d08d.png" alt-text="Screenshot of the policy compliance status.":::
     
+
