@@ -90,4 +90,4 @@ While optional, these settings can streamline your workflows and improve consist
 
 Use the **Configure permissions and global settings** interactive guide to walk through setting up eDiscovery roles and global settings.
 
-[:::image type="content" source="../media/guide-configure-permissions.png" alt-text="Image showing the opening page to the Configure permissions and global settings interactive guide." lightbox="../media/guide-configure-permissions.png":::](https://mslearn.cloudguides.com/guides/Configure%20permissions%20and%20global%20settings%20with%20Microsoft%20Purview%20eDiscovery?azure-portal=true)
+[:::image type="content" source="../media/guide-configure-permissions.png" alt-text="Illustration showing the opening page to the Configure permissions and global settings interactive guide." lightbox="../media/guide-configure-permissions.png":::](https://mslearn.cloudguides.com/guides/Configure%20permissions%20and%20global%20settings%20with%20Microsoft%20Purview%20eDiscovery?azure-portal=true)
