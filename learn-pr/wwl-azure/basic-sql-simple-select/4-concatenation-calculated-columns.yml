@@ -24,7 +24,7 @@ metadata:
 ### `https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main`.
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-concatenation-and-calculated-columns.md)]
+  [!include[](includes/4-concatenation-calculated-columns.md)]
 ###########################################################################
 ###
 ### Optional end-of-unit knowledge check
