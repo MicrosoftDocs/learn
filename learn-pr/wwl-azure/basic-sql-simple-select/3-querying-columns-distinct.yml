@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl-azure.basic-sql-simple-select.summary
-title: Summary
+uid: learn.wwl-azure.basic-sql-simple-select.querying-columns-and-distinct
+title: Simple SELECT
 metadata:
-  title: Summary
-  description: "This unit summarizes key techniques for querying data in PostgreSQL using the SELECT statement, including selecting columns, using DISTINCT, and creating calculated or concatenated fields."
+  title: Simple SELECT
+  description: "This unit explains how to use the SQL SELECT statement in PostgreSQL to retrieve all or specific columns, and how to filter out duplicates using DISTINCT for efficient data queries."
   ms.date: 05/19/2025
   author: milenak
   ms.author: mpopovic
@@ -22,9 +22,9 @@ metadata:
 ###
 ### To request new values, go to
 ### `https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main`.
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
-  [!include[](includes/5-summary.md)]
+  [!include[](includes/3-querying-columns-and-distinct.md)]
 ###########################################################################
 ###
 ### Optional end-of-unit knowledge check

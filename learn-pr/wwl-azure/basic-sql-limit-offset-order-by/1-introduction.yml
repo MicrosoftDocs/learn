@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl-azure.basic-sql-simple-select.introduction
+uid: learn.wwl-azure.basic-sql-limit-offset-orderby.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "This unit introduces the SQL SELECT statement in PostgreSQL and teaches how to retrieve, filter, and format data from relational tables. Learners gain foundational querying skills, including selecting specific columns, using DISTINCT, and creating calculated fields."
+  description: "This unit introduces PostgreSQL clauses LIMIT, OFFSET, and ORDER BY for controlling, paginating, and sorting SQL query results efficiently."
   ms.date: 05/19/2025
   author: milenak
   ms.author: mpopovic
@@ -20,7 +20,6 @@ metadata:
 ###
 ### To request new values, go to
 ### https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main.
-
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

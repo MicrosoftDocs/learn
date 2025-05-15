@@ -1,8 +1,8 @@
 ### YamlMime:Module
-uid: learn.wwl-azure.basic-sql-simple-select
+uid: learn.wwl-azure.basic-sql-joining-tables
 metadata:
-  title: "Getting started: An introduction to SQL and reading data"
-  description: "Learn how to use the SQL SELECT statement in PostgreSQL to retrieve, filter, and format data with specific columns, DISTINCT, and expressions."
+  title: "Combining data from multiple tables: SQL Joins Explained"
+  description: "Combine data across multiple PostgreSQL tables using SQL JOINs. Learn INNER, LEFT, RIGHT, FULL OUTER, and NATURAL joins with real examples."
   ms.date: 05/19/2025
   author: mpopovic
   ms.author: mpopovic
@@ -22,7 +22,7 @@ metadata:
 ### To request new values, go to
 ### `https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main`.
   ms.service: azure-database-postgresql
-title: "Getting started: An introduction to SQL and reading data"
+title: "Combining data from multiple tables: SQL Joins Explained"
 ###########################################################################
 ###
 ### Introductory summary
@@ -53,7 +53,7 @@ title: "Getting started: An introduction to SQL and reading data"
 ###
 ### Detailed guidance: `https://review.learn.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main`
 ###
-summary: "This module provides an introduction to the SQL SELECT statement. You learn how to select specific columns, remove duplicates with DISTINCT, create calculated columns and use concatenation."
+summary: "This module introduces SQL joins, which are essential for combining data from multiple tables. You learn about INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN, and NATURAL JOIN."
 ###########################################################################
 ###
 ### Learning objectives
@@ -86,10 +86,11 @@ summary: "This module provides an introduction to the SQL SELECT statement. You 
 ###
 abstract: |
   By the end of this module, you'll be able to:
-  - Select all or specific columns from a table
-  - Use DISTINCT to remove duplicates
-  - Create calculated columns with expressions or functions
-  - Concatenate values into a single output
+  - Understand the purpose of joins in databases
+  - Use INNER JOIN to return matching rows
+  - Apply LEFT and RIGHT JOIN to include all rows from one table
+  - Use FULL OUTER JOIN to combine all rows from both tables
+  - Use NATURAL JOIN to join tables by columns with the same name
 ###########################################################################
 ###
 ### Prerequisites
@@ -111,7 +112,7 @@ abstract: |
 ### Detailed guidance: `https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites`
 ###
 prerequisites: |
-   There are no prerequisites for this module.
+ Before starting this tutorial, you should be familiar with basic SQL syntax, including the SELECT, FROM and WHERE clauses, as well as core relational database concepts and the use of primary and foreign keys to define relationships between tables.
 ###########################################################################
 ###
 ### Icon URL
@@ -162,10 +163,11 @@ products:
 subjects:
   - databases
 units:
-- learn.wwl-azure.basic-sql-simple-select.introduction
-- learn.wwl-azure.basic-sql-simple-select.sample-database-overview
-- learn.wwl-azure.basic-sql-simple-select.querying-columns-distinct
-- learn.wwl-azure.basic-sql-simple-select.concatenation-calculated-columns
-- learn.wwl-azure.basic-sql-simple-select.summary
+- learn.wwl-azure.basic-sql-joining-tables.introduction
+- learn.wwl-azure.basic-sql-joining-tables.sample-database-overview
+- learn.wwl-azure.basic-sql-joining-tables.inner-join
+- learn.wwl-azure.basic-sql-joining-tables.left-right-join
+- learn.wwl-azure.basic-sql-joining-tables.natural-and-full-join
+- learn.wwl-azure.basic-sql-joining-tables.summary
 badge:
-  uid: learn.wwl-azure.basic-sql-simple-select.badge
+  uid: learn.wwl-azure.basic-sql-joining-tables.badge

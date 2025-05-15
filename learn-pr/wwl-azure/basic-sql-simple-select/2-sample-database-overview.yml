@@ -4,7 +4,7 @@ title: Sample Database Overview
 metadata:
   title: Sample Database Overview
   description: "This unit introduces the structure and purpose of the sales sample database used throughout the module. It describes the key tables, their relationships via foreign keys, and how the database supports tracking orders, inventory, and customer activity. A schema diagram and SQL script are provided to help learners explore and understand the data model."
-  ms.date: 4/22/2025
+  ms.date: 05/19/2025
   author: milenak
   ms.author: mpopovic
   ms.topic: unit

@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl-azure.basic-sql-simple-select.summary
+uid: learn.wwl-azure.basic-sql-where-clause-and-subqueries.summary
 title: Summary
 metadata:
   title: Summary
-  description: "This unit summarizes key techniques for querying data in PostgreSQL using the SELECT statement, including selecting columns, using DISTINCT, and creating calculated or concatenated fields."
+  description: "This unit summarizes how to filter and retrieve data in PostgreSQL using the WHERE clause, logical operators, functions like EXTRACT, and subqueries for advanced query control."
   ms.date: 05/19/2025
   author: milenak
   ms.author: mpopovic
   ms.topic: unit
 ###########################################################################
-###
-### ms.service value
 ###
 ### If your content is related to a product or service, apply one value from
 ### the ms.service allowlist.
@@ -18,10 +16,11 @@ metadata:
 ### If your content isn't about a product or service, you can omit the ms.service field.
 ###
 ### For the list of approved ms.service values, go to
-### `https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main`.
+### https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice.
 ###
 ### To request new values, go to
-### `https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main`.
+### https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main.
+
 durationInMinutes: 1
 content: |
   [!include[](includes/5-summary.md)]

@@ -1,8 +1,8 @@
 ### YamlMime:Module
-uid: learn.wwl-azure.basic-sql-simple-select
+uid: learn.wwl-azure.basic-sql-limit-offset-orderby
 metadata:
-  title: "Getting started: An introduction to SQL and reading data"
-  description: "Learn how to use the SQL SELECT statement in PostgreSQL to retrieve, filter, and format data with specific columns, DISTINCT, and expressions."
+  title: "Organizing data: Using LIMIT, OFFSET, and ORDER BY clauses"
+  description: "Learn to control the size and order of query results in PostgreSQL with the LIMIT, OFFSET, and ORDER BY clauses. Master pagination, sorting, and optimizing performance with these essential SQL tools."
   ms.date: 05/19/2025
   author: mpopovic
   ms.author: mpopovic
@@ -22,7 +22,7 @@ metadata:
 ### To request new values, go to
 ### `https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main`.
   ms.service: azure-database-postgresql
-title: "Getting started: An introduction to SQL and reading data"
+title: "Organizing data: Using LIMIT, OFFSET, and ORDER BY clauses"
 ###########################################################################
 ###
 ### Introductory summary
@@ -53,7 +53,7 @@ title: "Getting started: An introduction to SQL and reading data"
 ###
 ### Detailed guidance: `https://review.learn.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main`
 ###
-summary: "This module provides an introduction to the SQL SELECT statement. You learn how to select specific columns, remove duplicates with DISTINCT, create calculated columns and use concatenation."
+summary: "Explore how to use the LIMIT and OFFSET clauses in SQL to control the number of rows returned by a query. Learn how to implement pagination and maintain consistent results with ORDER BY."
 ###########################################################################
 ###
 ### Learning objectives
@@ -86,10 +86,10 @@ summary: "This module provides an introduction to the SQL SELECT statement. You 
 ###
 abstract: |
   By the end of this module, you'll be able to:
-  - Select all or specific columns from a table
-  - Use DISTINCT to remove duplicates
-  - Create calculated columns with expressions or functions
-  - Concatenate values into a single output
+  - Use LIMIT to retrieve a specific number of rows
+  - Combine OFFSET with LIMIT to implement pagination
+  - Load data incrementally using LIMIT and OFFSET
+  - Maintain consistent results with ORDER BY
 ###########################################################################
 ###
 ### Prerequisites
@@ -111,7 +111,7 @@ abstract: |
 ### Detailed guidance: `https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites`
 ###
 prerequisites: |
-   There are no prerequisites for this module.
+  Before starting this module, you should have a basic understanding of SQL, including the use of SELECT, FROM, and WHERE clauses.
 ###########################################################################
 ###
 ### Icon URL
@@ -162,10 +162,10 @@ products:
 subjects:
   - databases
 units:
-- learn.wwl-azure.basic-sql-simple-select.introduction
-- learn.wwl-azure.basic-sql-simple-select.sample-database-overview
-- learn.wwl-azure.basic-sql-simple-select.querying-columns-distinct
-- learn.wwl-azure.basic-sql-simple-select.concatenation-calculated-columns
-- learn.wwl-azure.basic-sql-simple-select.summary
+- learn.wwl-azure.basic-sql-limit-offset-order-by.introduction
+- learn.wwl-azure.basic-sql-limit-offset-orderby.sample-database-overview
+- learn.wwl-azure.basic-sql-limit-offset-order-by.order-by
+- learn.wwl-azure.basic-sql-limit-offset-order-by.limit-offset
+- learn.wwl-azure.basic-sql-limit-offset-order-by.summary
 badge:
-  uid: learn.wwl-azure.basic-sql-simple-select.badge
+  uid: learn.wwl-azure.basic-sql-limit-offset-orderby.badge

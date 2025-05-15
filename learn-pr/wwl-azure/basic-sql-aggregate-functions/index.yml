@@ -1,8 +1,8 @@
 ### YamlMime:Module
-uid: learn.wwl-azure.basic-sql-simple-select
+uid: learn.wwl-azure.basic-sql-aggregate-functions
 metadata:
-  title: "Getting started: An introduction to SQL and reading data"
-  description: "Learn how to use the SQL SELECT statement in PostgreSQL to retrieve, filter, and format data with specific columns, DISTINCT, and expressions."
+  title: "Summarizing data: Aggregate functions and grouping"
+  description: "Analyze data in PostgreSQL with aggregate functions and grouping. Learn COUNT, SUM, AVG, and filter results using GROUP BY and HAVING."
   ms.date: 05/19/2025
   author: mpopovic
   ms.author: mpopovic
@@ -22,7 +22,7 @@ metadata:
 ### To request new values, go to
 ### `https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main`.
   ms.service: azure-database-postgresql
-title: "Getting started: An introduction to SQL and reading data"
+title: "Summarizing data: Aggregate functions and grouping"
 ###########################################################################
 ###
 ### Introductory summary
@@ -53,10 +53,10 @@ title: "Getting started: An introduction to SQL and reading data"
 ###
 ### Detailed guidance: `https://review.learn.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main`
 ###
-summary: "This module provides an introduction to the SQL SELECT statement. You learn how to select specific columns, remove duplicates with DISTINCT, create calculated columns and use concatenation."
+summary: "This module introduces aggregate functions in SQL, which are essential for analyzing data. You learn how to use functions like COUNT, SUM, AVG, MIN and MAX, group data using the GROUP BY clause and filter grouped results with the HAVING clause."                                                                                                                                              
 ###########################################################################
-###
-### Learning objectives
+###                                                                                                                                                               
+### Learning objectives                                                                                                                                                                                                                                                                                                                         
 ###
 ### Guidelines:
 ###   - Base remember-level objectives on expressing that the user can recall
@@ -86,10 +86,14 @@ summary: "This module provides an introduction to the SQL SELECT statement. You 
 ###
 abstract: |
   By the end of this module, you'll be able to:
-  - Select all or specific columns from a table
-  - Use DISTINCT to remove duplicates
-  - Create calculated columns with expressions or functions
-  - Concatenate values into a single output
+  - Understand the role of aggregate functions in data analysis
+  - Use COUNT to count all rows or distinct values in a column
+  - Use SUM to calculate the total of values in a numeric column
+  - Use AVG to compute the average of numeric values in a column
+  - Use MIN and MAX to find the lowest and highest values in a column
+  - Group data using GROUP BY to apply aggregate functions to each group
+  - Differentiate between GROUP BY and DISTINCT, and use GROUP BY even without aggregate functions to list unique values
+  - Use HAVING to filter grouped results based on aggregate function outcomes
 ###########################################################################
 ###
 ### Prerequisites
@@ -111,7 +115,7 @@ abstract: |
 ### Detailed guidance: `https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites`
 ###
 prerequisites: |
-   There are no prerequisites for this module.
+  Before starting this module, you should have a basic understanding of SQL SELECT statement.
 ###########################################################################
 ###
 ### Icon URL
@@ -162,10 +166,10 @@ products:
 subjects:
   - databases
 units:
-- learn.wwl-azure.basic-sql-simple-select.introduction
-- learn.wwl-azure.basic-sql-simple-select.sample-database-overview
-- learn.wwl-azure.basic-sql-simple-select.querying-columns-distinct
-- learn.wwl-azure.basic-sql-simple-select.concatenation-calculated-columns
-- learn.wwl-azure.basic-sql-simple-select.summary
+- learn.wwl-azure.basic-sql-aggregate-functions-introduction
+- learn.wwl-azure.basic-sql-aggregate-functions.sample-database-overview
+- learn.wwl-azure.basic-sql-aggregate-functions.aggregate-functions
+- learn.wwl-azure.basic-sql-aggregate-functions.group-by-having
+- learn.wwl-azure.basic-sql-aggregate-functions.summary
 badge:
-  uid: learn.wwl-azure.basic-sql-simple-select.badge
+  uid: learn.wwl-azure.basic-sql-aggregate-functions.badge

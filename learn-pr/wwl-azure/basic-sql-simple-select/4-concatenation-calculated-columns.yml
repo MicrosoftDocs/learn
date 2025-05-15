@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl-azure.basic-sql-simple-select.summary
-title: Summary
+uid: learn.wwl-azure.basic-sql-simple-select.concatenation-and-calculated-columns
+title: Concatenation and calculated columns
 metadata:
-  title: Summary
-  description: "This unit summarizes key techniques for querying data in PostgreSQL using the SELECT statement, including selecting columns, using DISTINCT, and creating calculated or concatenated fields."
+  title: Concatenation and Calculated Columns
+  description: "Learn how to concatenate columns and create calculated columns in SQL queries. This unit covers the syntax and examples of using concatenation and calculated columns in SQL statements."
   ms.date: 05/19/2025
   author: milenak
   ms.author: mpopovic
@@ -22,9 +22,9 @@ metadata:
 ###
 ### To request new values, go to
 ### `https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main`.
-durationInMinutes: 1
+durationInMinutes: 3
 content: |
-  [!include[](includes/5-summary.md)]
+  [!include[](includes/4-concatenation-and-calculated-columns.md)]
 ###########################################################################
 ###
 ### Optional end-of-unit knowledge check

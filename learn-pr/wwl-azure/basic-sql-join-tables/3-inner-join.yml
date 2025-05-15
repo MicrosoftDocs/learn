@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl-azure.basic-sql-simple-select.introduction
-title: Introduction
+uid: learn.wwl-azure.basic-sql-joining-tables.inner-join
+title: INNER JOIN
 metadata:
-  title: Introduction
-  description: "This unit introduces the SQL SELECT statement in PostgreSQL and teaches how to retrieve, filter, and format data from relational tables. Learners gain foundational querying skills, including selecting specific columns, using DISTINCT, and creating calculated fields."
+  title: INNER JOIN
+  description: "This unit explains the importance of joining tables in PostgreSQL and introduces the INNER JOIN clause. It covers how to combine related data across multiple normalized tables using shared keys like primary and foreign keys. A practical example shows how to retrieve unified records from orders, customers, and employees tables."
   ms.date: 05/19/2025
   author: milenak
   ms.author: mpopovic
@@ -20,7 +20,6 @@ metadata:
 ###
 ### To request new values, go to
 ### https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main.
-
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/3-inner-join.md)]

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl-azure.basic-sql-simple-select.introduction
+uid: learn.wwl-azure.basic-sql-where-clause-and-subqueries.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: "This unit introduces the SQL SELECT statement in PostgreSQL and teaches how to retrieve, filter, and format data from relational tables. Learners gain foundational querying skills, including selecting specific columns, using DISTINCT, and creating calculated fields."
+  description: "This unit introduces the WHERE clause in PostgreSQL, teaching how to filter query results using conditions, logical operators, pattern matching, ranges, and subqueries."
   ms.date: 05/19/2025
   author: milenak
   ms.author: mpopovic

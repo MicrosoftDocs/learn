@@ -1,9 +1,8 @@
 ### YamlMime:Module
-uid: learn.wwl-azure.basic-sql-simple-select
+uid: learn.wwl-azure.basic-sql-where-clause-subqueries
 metadata:
-  title: "Getting started: An introduction to SQL and reading data"
-  description: "Learn how to use the SQL SELECT statement in PostgreSQL to retrieve, filter, and format data with specific columns, DISTINCT, and expressions."
-  ms.date: 05/19/2025
+  title: "Filtering data: The WHERE clause and subqueries"
+  description: "Learn how to filter data in PostgreSQL using the WHERE clause, logical operators, pattern matching, and subqueries for advanced query control."  ms.date: 4/24/2025
   author: mpopovic
   ms.author: mpopovic
   ms.topic: module-standard-task-based
@@ -22,7 +21,7 @@ metadata:
 ### To request new values, go to
 ### `https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main`.
   ms.service: azure-database-postgresql
-title: "Getting started: An introduction to SQL and reading data"
+title: "Filtering data: The WHERE clause and subqueries"
 ###########################################################################
 ###
 ### Introductory summary
@@ -53,7 +52,7 @@ title: "Getting started: An introduction to SQL and reading data"
 ###
 ### Detailed guidance: `https://review.learn.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main`
 ###
-summary: "This module provides an introduction to the SQL SELECT statement. You learn how to select specific columns, remove duplicates with DISTINCT, create calculated columns and use concatenation."
+summary: "This module introduces the WHERE clause and subqueries in SQL. You learn how to filter data, combine conditions and use functions like EXTRACT, NOW() and CAST."
 ###########################################################################
 ###
 ### Learning objectives
@@ -86,10 +85,10 @@ summary: "This module provides an introduction to the SQL SELECT statement. You 
 ###
 abstract: |
   By the end of this module, you'll be able to:
-  - Select all or specific columns from a table
-  - Use DISTINCT to remove duplicates
-  - Create calculated columns with expressions or functions
-  - Concatenate values into a single output
+  - Filter data using the WHERE clause
+  - Combine conditions and use functions like EXTRACT, NOW(), and CAST
+  - Use subqueries to feed one query into another
+  - Apply subqueries in SELECT, FROM, WHERE, and UPDATE statements
 ###########################################################################
 ###
 ### Prerequisites
@@ -111,7 +110,8 @@ abstract: |
 ### Detailed guidance: `https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites`
 ###
 prerequisites: |
-   There are no prerequisites for this module.
+  Before starting this module, you should have a basic understanding of SQL SELECT statement.
+  
 ###########################################################################
 ###
 ### Icon URL
@@ -162,10 +162,10 @@ products:
 subjects:
   - databases
 units:
-- learn.wwl-azure.basic-sql-simple-select.introduction
-- learn.wwl-azure.basic-sql-simple-select.sample-database-overview
-- learn.wwl-azure.basic-sql-simple-select.querying-columns-distinct
-- learn.wwl-azure.basic-sql-simple-select.concatenation-calculated-columns
-- learn.wwl-azure.basic-sql-simple-select.summary
+- learn.wwl-azure.basic-sql-where-clause-subqueries.introduction
+- learn.wwl-azure.basic-sql-where-clause-subqueries.sample-database-overview
+- learn.wwl-azure.basic-sql-where-clause-subqueries.where-clause
+- learn.wwl-azure.basic-sql-where-clause-subqueries.subqueries
+- learn.wwl-azure.basic-sql-where-clause-subqueries.summary
 badge:
-  uid: learn.wwl-azure.basic-sql-simple-select.badge
+  uid: learn.wwl-azure.basic-sql-where-clause-subqueries.badge
