@@ -77,12 +77,12 @@ Beyond individual npm commands, teams can benefit from reusable workflows to str
 
 <!-- InfoMagnus Starts -->
 <!-- INFOMAGNUS UPDATES for sub OD 1.5.9. Source Material: https://docs.github.com/en/actions/sharing-automations/reusing-workflows -->
-## How to Utilize Reusable Workflows to Avoid Duplication
+## How to utilize reusable workflows to avoid duplication
  As teams scale and projects grow, it's common to see the same steps such as code checkout, dependency installation, testing, and deployment—repeated across multiple workflow files. This kind of duplication not only clutters your codebase but also increases maintenance time when changes are needed. Reusable workflows solve this problem by allowing you to define automation logic once and call it from other workflows. Reusable workflows are special GitHub Actions workflows that can be called by other workflows, much like functions in programming. You create them with the purpose of sharing repeated logic like build steps, testing procedures, or deployment strategies. Once created, you can reference them from any other workflow in the same repository or even across different repositories.
  
 :::image type="content" source="../media/reusable-workflow.png" alt-text="Diagram illustrating the concept of reusable workflows in GitHub Actions, showing how a central workflow can be referenced by multiple repositories or workflows." border="true":::
 
-###  Why Use Them?
+###  Why use them?
 - Consistency: Teams can follow the same automation standards across all projects.
 - Efficiency: Instead of copying and pasting steps, you just point to a reusable workflow.
 - Ease of Updates: When a process changes (e.g., a new test step), you update it in one place, and all workflows using it benefit automatically.
@@ -90,7 +90,7 @@ Beyond individual npm commands, teams can benefit from reusable workflows to str
 
 Let's explore how you can start using reusable workflows to improve your projects.
 
-###  How to Implement Reusable Workflows
+###  How to implement reusable workflows
 To utilize reusable workflows:
 - Create a reusable workflow in your repo’s folder. This file will include the automation steps you want to share—like testing, building, or deploying.
 - You must explicitly enable a workflow to be reusable by configuring it with the workflow_call event.
@@ -98,7 +98,7 @@ To utilize reusable workflows:
 
 To illustrate the advantages of reusable workflows, consider the following real-world scenario.
 
-### Real-World Example
+### Real-world example
 Imagine your organization has 10 microservices and all of them need the same steps to:
 - Run tests
 - Lint code
@@ -112,7 +112,7 @@ Now, if a new security step or tool is added (like scanning for vulnerabilities)
 
 By understanding how reusable workflows function and their benefits, you can adopt best practices to maximize their effectiveness and ensure seamless integration into your CI/CD pipelines.
 
-### Best Practices
+### Best practices
 - Centralize your reusable workflows in one repository if you plan to share them across teams.
 - Use branches or tags to version your workflows (e.g., use @v1), so changes won’t break everything unexpectedly.
 - Document inputs and secrets clearly—reusable workflows often rely on inputs and secrets, and teams need to know what to supply.
@@ -124,12 +124,12 @@ Reusable workflows are a powerful way to enforce consistency, reduce duplication
 <!-- INFOMAGNUS UPDATES for sub OD 2.1.1, 2.1.2, 2.1.3, and 2.1.4 go here. Source Material: Infomagnus team to find source material and cite it.
 https://docs.github.com/en/actions/writing-workflows/about-workflows , https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/accessing-contextual-information-about-workflow-runs , https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/triggering-a-workflow , https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/monitoring-workflows/viewing-workflow-run-history , https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/troubleshooting-workflows/about-troubleshooting-workflows -->
 
-## Identify the Event that Triggered a Workflow from its Effects
+## Identify the event that triggered a workflow from its effects
 Understanding what triggered a GitHub Actions workflow—whether it was a push to a branch, a pull request, a scheduled job, or a manual dispatch—is crucial for debugging, auditing, and improving CI/CD pipelines. You can identify the triggering event by examining the workflow run, the repository changes, or the issue/pull request involved.
 
 :::image type="content" source="../media/workflow-triggers.png" alt-text="Diagram illustrating various workflow triggers in GitHub Actions, such as push, pull request, schedule, and manual dispatch." border="true":::
 
-###  What Is a Workflow Trigger?
+###  What is a workflow trigger?
 A workflow trigger is an event that causes a workflow to start. GitHub supports various types of triggers, including:
 - push or pull_request (based on code changes)
 - workflow_dispatch (manual trigger)
@@ -137,7 +137,7 @@ A workflow trigger is an event that causes a workflow to start. GitHub supports 
 - repository_dispatch (external systems)
 - Issue, discussion, and PR events (e.g., issues.opened, pull_request.closed)
 
-### Where to Identify the Trigger Event
+### Where to identify the trigger event
 You can identify the trigger event in several ways :  
 1 . From the GitHub Actions UI
 - Navigate to the Actions tab in your repository.
@@ -156,7 +156,7 @@ You can identify the trigger event in several ways :
 - If you're inspecting workflow runs programmatically (e.g., via the API), the run object includes an event property that specifies the trigger.
 - You can also find the commit SHA, actor, and timestamp to trace what caused the trigger.
 
-### Inferring the Trigger from Repository Effects
+### Inferring the trigger from repository effects
 Sometimes you may not have direct access to the workflow run but want to infer what triggered it based on repository activity. Here's how:
 | Observed Behavior | Trigger Event |
 |-------------|----------------|
@@ -176,9 +176,9 @@ To identify what triggered a workflow:
 - Use the full event context for deeper investigation.
 
 These practices help with debugging, auditing, and improving workflow reliability across your development and deployment pipelines.
-## Describe a Workflow's Effects from Reading its Configuration File
+## Describe a workflow's effects from reading its configuration file
 To describe a workflow's effects from reading its configuration file, you need to analyze the structure and contents of the .yml file stored in .github/workflows/. This file outlines when the workflow runs, what it does, and how it behaves under different conditions.
-### How to Interpret a workflow's effects:
+### How to interpret a workflow's effects:
 1 . Identify the Trigger (on:)
 This section tells you when the workflow is initiated. For example:
 ```yml
@@ -231,13 +231,13 @@ From reading a workflow’s configuration file, you can describe its effects by 
 - Why it runs (its purpose: testing, deploying, linting, etc.),
 - How it behaves under certain conditions (environment, filters, logic).
 
-## Diagnose a Failed Workflow Run
+## Diagnose a failed workflow run
 ### 1. Go to the Actions Tab
 Navigate to the Actions tab of your repository, then:
 - Find the failed run (usually marked with a red)
 - Click the failed workflow to open the run summary.
 
-### 2. Review the Error in Logs
+### 2. Review the error in logs
 In the run summary:
 - Expand each job and step until you find the one marked as failed.
 - Click to view its logs.
@@ -249,7 +249,7 @@ Look for:
 
 For example, a failed test might show npm ERR! Test failed. or exit code 1.
 
-### 3. Check the Workflow Configuration File
+### 3. Check the workflow configuration file
 Use the .yml file to determine:
 - What each step was trying to do.
 - If there are environment variables (env:) or conditionals (if:) affecting execution.
@@ -259,7 +259,7 @@ If this step failed, check:
 - Were dependencies installed successfully in the previous step?
 - Do test files exist and pass locally?
 
-### 4. Common Failure Scenarios
+### 4. Common failure scenarios
 | Symptom | Likely Cause |
 |--------|--------------|
 | Step fails with `command not found` | Missing dependency or wrong setup |
@@ -267,31 +267,31 @@ If this step failed, check:
 | Test step fails | Unit test issues, missing config or invalid test syntax |
 | `Permission denied` | Incorrect file permissions or missing secrets |
 
-## Identify Ways to Access the Workflow Logs from the User Interface
+## Identify ways to access the workflow logs from the user interface
 
-### 1. Go to the Repository
+### 1. Go to the repository
 Navigate to the repository that contains the workflow. 
-### 2. Click on the Actions Tab
+### 2. Click on the actions tab
 - Located in the top navigation bar of the repo.
 - This shows a history of all workflow runs for that repository.
 
-### 3. Select the Workflow Name
+### 3. Select the workflow name
 - Choose the relevant workflow from the list.
 For example, if your .yml file has:
 ```yml
 name: CI Workflow
 ```
 You'll see a link named CI Workflow in the list.
-### 4. Choose a Specific Run
+### 4. Choose a specific run
 - You’ll see a list of runs with status indicators
 - Click on the timestamp or commit message of the specific run you want to inspect.
 
-### 5.  Expand Each Job and Step
+### 5.  Expand each job and step
 - The run summary page displays jobs as defined in the workflow file (e.g., build, test).
 - Click on a job to expand it.
 - Inside the job, expand individual steps (e.g., "Install dependencies", "Run tests").
 
-### 6. View Log Output
+### 6. View log output
 - Clicking a step shows the full log output (e.g., console logs, error messages, debug info).
 - You can copy, search, or download these logs.
 
@@ -307,7 +307,7 @@ You'll see a link named CI Workflow in the list.
 
 <!-- InfoMagnus END -->
 
-## Action Logs for the build
+## Action logs for the build
 
 When a workflow runs, it produces a log that includes the details of what happened and any errors or test failures.
 
@@ -442,9 +442,9 @@ Adding a label could be an event that starts another workflow, such as a merge. 
 
 <!-- INFOMAGNUS UPDATES for sub OD 1.3.1 ,1.3.2, and 1.4.1 go here. Source Material: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository -->
 
-## Configure Actions and Workflow permissions
+## Configure Actions and workflow permissions
 
-## Set up Secrets and variables for Actions
+## Setup Secrets and variables for actions
 
 ## Use encrypted secrets to store sensitive information
 
