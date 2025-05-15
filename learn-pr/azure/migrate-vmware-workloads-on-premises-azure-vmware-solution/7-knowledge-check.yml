@@ -6,8 +6,8 @@ metadata:
   title: Module assessment
   description: Knowledge check.
   ms.date: 08/01/2024
-  author: amycolyer
-  ms.author: amycolyer
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.contributors: shkuehn-06182021, orthomas-08092023
   ms.custom: team=cloud_advocates
@@ -59,4 +59,4 @@ quiz:
     - content: "Redeploy VMware HCX on-premises to connect to Azure VMware Solution."
       isCorrect: false
       explanation: "Redeploying the VMware HCX appliance on-premises won't help create the service mesh."
-
+
