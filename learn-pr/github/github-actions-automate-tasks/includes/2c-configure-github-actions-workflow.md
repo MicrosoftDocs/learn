@@ -73,7 +73,7 @@ on:
 `repository_dispatch` is a custom event in GitHub Actions that allows external systems (or even other GitHub workflows) to manually trigger workflows by sending a POST request to the GitHub API.
 It enables flexible automation and integration with outside tools, scripts, or systems that need to start workflows in your repo.
 
-### Use Cases
+### Use cases
 - Trigger workflows from external CI/CD tools.
 
 - Coordinate multi-repo deployments (e.g., Repo A finishes build → triggers Repo B).
@@ -82,7 +82,7 @@ It enables flexible automation and integration with outside tools, scripts, or s
 
 - Chain workflow executions between repositories or within monorepos.
 
-### Example Workflow That Listens to repository_dispatch
+### Example workflow that listens to repository_dispatch
 ```yml
 name: Custom Dispatch Listener
 
@@ -99,14 +99,14 @@ jobs:
           echo "Event type: ${{ github.event.action }}"
           echo "Payload value: ${{ github.event.client_payload.env }}"
 ```
-### Key Elements:
+### Key elements:
 - types: Optional. Defines custom event types like run-tests, deploy-to-prod, etc.
 
 - github.event.client_payload: Access to any additional custom data passed in the dispatch event.
 
 - github.event.action: Name of the event_type sent.
 
-### Triggering the Event via API
+### Triggering the event via API
 You must send a POST request to the GitHub REST API v3 endpoint:
 ```sh
 POST https://api.github.com/repos/OWNER/REPO/dispatches
@@ -123,7 +123,7 @@ curl -X POST \
   https://api.github.com/repos/OWNER/REPO/dispatches \
   -d '{"event_type":"run-tests","client_payload":{"env":"staging"}}'
 ```
-#### Payload Structure
+#### Payload structure
 ```json
 {
   "event_type": "run-tests",
@@ -140,7 +140,7 @@ curl -X POST \
 | `client_payload`          | object               | Arbitrary JSON payload to send custom data to the workflow (github.event.client_payload) | No
                                                        |        No         |
 
-#### repository_dispatch Parameters Breakdown
+#### Repository_dispatch parameters breakdown
 When making a POST request to the GitHub API endpoint, you must pass a JSON body with two main parameters:
 - event_type
 - client_payload
@@ -176,7 +176,7 @@ This is a free-form JSON object that lets you send custom data along with the di
 
 ```
 
-##### Example Payload Breakdown
+##### Example payload breakdown
 ```
 {
   "event_type": "deploy-to-prod",
