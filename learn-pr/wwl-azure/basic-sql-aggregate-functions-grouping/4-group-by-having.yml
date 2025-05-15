@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl-azure.basic-sql-aggregate-functions.groupby-having
+uid: learn.wwl-azure.basic-sql-aggregate-functions-grouping.group-by-having
 title: GROUP BY and HAVING
 metadata:
   title: GROUP BY and HAVING

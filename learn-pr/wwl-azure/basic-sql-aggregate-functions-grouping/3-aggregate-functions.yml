@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl-azure.basic-sql-aggregate-functions.aggregate-functions
+uid: learn.wwl-azure.basic-sql-aggregate-functions-grouping.aggregate-functions
 title: Aggregate Functions
 metadata:
   title: Aggregate Functions
@@ -22,4 +22,4 @@ metadata:
 ### https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main.
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-aggregate-functions.md)]
+  [!include[](includes/3-aggregate-functions-grouping.md)]

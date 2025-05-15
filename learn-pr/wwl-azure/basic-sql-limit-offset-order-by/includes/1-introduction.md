@@ -46,6 +46,7 @@ Learning how to manage and organize query results is crucial when working with d
  -->
 
  ## What to expect?
+
 In this tutorial, you explore the fundamentals of managing query results using the `LIMIT`, `OFFSET`, and `ORDER BY` clauses in PostgreSQL. You learn how to:
 
 - Limit the number of rows returned in a query using the `LIMIT` clause
@@ -54,7 +55,6 @@ In this tutorial, you explore the fundamentals of managing query results using t
 - Combine `LIMIT` and `OFFSET` for precise control over pagination
 - Use `ORDER BY` with multiple columns for advanced sorting scenarios
 - Optimize query performance when working with large datasets
-
 
 <!-- 5. Terminal learning objective ----------------------------------------------------------------------
 
