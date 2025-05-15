@@ -31,7 +31,7 @@ It's important to maintain optimal conditions that prevent equipment failure and
 Performance helps ensure that all IT resources (such as servers, storage, and networks) are performing as expected.
 
 **Key Elements**:
-- Server performance: Monitoring CPU usage, memory (RAM), disk health, and system load to ensure that servers are'nt overloaded or underperforming.
+- Server performance: Monitoring CPU usage, memory (RAM), disk health, and system load to ensure that servers aren't overloaded or underperforming.
 - Storage performance: Tracking the health of storage devices and systems (e.g., hard drives, SSDs) to ensure efficient data retrieval and storage.
 - Network performance: Monitoring the bandwidth and latency of network connections, ensuring that data flows smoothly and that the network is not congested.
 - Application performance: Ensuring that critical applications (e.g., 
