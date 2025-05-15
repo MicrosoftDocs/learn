@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.philanthropies.learn-about-datacenter-design.subsea-cables
-title: Understand the impact of subsea cables on network architecture
+uid: learn.philanthropies.learn-about-datacenter-design.introduction
+title: Introduction
 metadata:
-  title: Subsea Cables
+  title: introduction
   description: This content is a part of the "Learn about datacenter design, architecture, and infrastructure management" module.
   ms.date: 05/08/2025
   author: kiranchandratrey
@@ -10,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 1
 content: |
- [!include[](includes/2-subsea-cables.md)]
+ [!include[](includes/0-introduction.md)]
