@@ -15,20 +15,15 @@ The datacenter industry is growing faster than ever. Datacenters are massive bui
 
 Several key things are making datacenters even more important in 2025:
 
-- AI and heavy computing
-  - Artificial Intelligence (AI) is becoming a large part of our daily lives (think smart assistants, video games, or even self-driving cars). All of this requires numerous computing power. As AI grows, datacenters are getting bigger and need more energy to support it. It's like the amount of electricity needed to run a huge gaming server or an online game that millions of people play at once.
+- **AI and heavy computing:** Artificial Intelligence (AI) is becoming a large part of our daily lives (think smart assistants, video games, or even self-driving cars). All of this requires numerous computing power. As AI grows, datacenters are getting bigger and need more energy to support it. It's like the amount of electricity needed to run a huge gaming server or an online game that millions of people play at once.
 
-- Green and renewable energy
-  - Datacenters use numerous power, which is why many companies are trying to switch to renewable energy sources (like solar or wind power) to run their operations. For example, Amazon plans to be carbon neutral (no net carbon emissions) by 2040. This means they'll use green energy to power their datacenters to reduce their environmental impact.
+- **Green and renewable energy:** Datacenters use numerous power, which is why many companies are trying to switch to renewable energy sources (like solar or wind power) to run their operations. For example, Amazon plans to be carbon neutral (no net carbon emissions) by 2040. This means they'll use green energy to power their datacenters to reduce their environmental impact.
 
-- Cooler, smarter datacenters
-  - Modern datacenters must be very efficient. One way they're improving is by using new cooling technologies to keep servers from overheating. These technologies work much like how air conditioning works in a home, but on a much larger scale. More liquid cooling and other systems are being used to manage the heat from all the computing.
+- **Cooler, smarter datacenters:** Modern datacenters must be very efficient. One way they're improving is by using new cooling technologies to keep servers from overheating. These technologies work much like how air conditioning works in a home, but on a much larger scale. More liquid cooling and other systems are being used to manage the heat from all the computing.
 
-- More investment in datacenters
-  - Datacenters are expensive to build and run, which is why companies are getting investment from private funds and credit agencies. It's like how startups get funding to help them grow; datacenter companies need this money to build new facilities and keep up with demand.
+- **More investment in datacenters:** Datacenters are expensive to build and run, which is why companies are getting investment from private funds and credit agencies. It's like how startups get funding to help them grow; datacenter companies need this money to build new facilities and keep up with demand.
 
-- New locations for datacenters
-  - As more people around the world use the internet, new datacenters are popping up in places where there's growing demand, like in Asia and Africa. These places are becoming hubs for global internet services and tech innovation.
+- **New locations for datacenters:** As more people around the world use the internet, new datacenters are popping up in places where there's growing demand, like in Asia and Africa. These places are becoming hubs for global internet services and tech innovation.
 
 ## Why does this matter?
 
