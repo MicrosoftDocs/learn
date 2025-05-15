@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl-azure.basic-sql-aggregate-functions-and-grouping.introduction
+uid: learn.wwl-azure.basic-sql-aggregate-functions.introduction
 title: Introduction
 metadata:
   title: Introduction
   description: "This unit introduces the importance of data summarization and analysis using aggregate functions in PostgreSQL. It explains how GROUP BY and HAVING clauses support meaningful reporting by transforming raw data into actionable insights."
-  ms.date: 1/20/2025
+  ms.date: 05/14/2025
   author: milenak
   ms.author: mpopovic
   ms.topic: unit

@@ -4,7 +4,7 @@ title: LEFT and RIGHT JOIN
 metadata:
   title: LEFT and RIGHT JOIN
   description: "This unit explains how to use LEFT JOIN and RIGHT JOIN in PostgreSQL to combine data from multiple tables while preserving unmatched rows. It demonstrates how LEFT JOIN retains all rows from the first table and how RIGHT JOIN retains all rows from the second table, using examples from the sales database to highlight their practical use."
-  ms.date: 05/19/2025
+  ms.date: 05/14/2025
   author: milenak
   ms.author: mpopovic
   ms.topic: unit

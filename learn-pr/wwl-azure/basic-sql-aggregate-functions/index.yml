@@ -3,7 +3,7 @@ uid: learn.wwl-azure.basic-sql-aggregate-functions
 metadata:
   title: "Summarizing data: Aggregate functions and grouping"
   description: "Analyze data in PostgreSQL with aggregate functions and grouping. Learn COUNT, SUM, AVG, and filter results using GROUP BY and HAVING."
-  ms.date: 05/19/2025
+  ms.date: 05/14/2025
   author: mpopovic
   ms.author: mpopovic
   ms.topic: module-standard-task-based

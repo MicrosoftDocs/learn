@@ -4,7 +4,7 @@ title: Concatenation and calculated columns
 metadata:
   title: Concatenation and Calculated Columns
   description: "Learn how to concatenate columns and create calculated columns in SQL queries. This unit covers the syntax and examples of using concatenation and calculated columns in SQL statements."
-  ms.date: 05/19/2025
+  ms.date: 05/14/2025
   author: milenak
   ms.author: mpopovic
   ms.topic: unit

@@ -4,7 +4,7 @@ title: INNER JOIN
 metadata:
   title: INNER JOIN
   description: "This unit explains the importance of joining tables in PostgreSQL and introduces the INNER JOIN clause. It covers how to combine related data across multiple normalized tables using shared keys like primary and foreign keys. A practical example shows how to retrieve unified records from orders, customers, and employees tables."
-  ms.date: 05/19/2025
+  ms.date: 05/14/2025
   author: milenak
   ms.author: mpopovic
   ms.topic: unit
