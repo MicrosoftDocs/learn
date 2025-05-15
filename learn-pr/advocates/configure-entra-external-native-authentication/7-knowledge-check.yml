@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.configure-entra-external-native-auth.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Display your knowledge
+  ms.date: 04/10/2025
+  author: S2FrdQ
+  ms.author: joylynnkirui
+  ms.topic: unit
+durationInMinutes: 4
+content: Choose the best response for each question. 
+quiz:
+  questions:
+    - content: "What is the primary purpose of Microsoft Entra's native authentication in mobile and desktop applications?"
+      choices:
+        - content: "To provide a secure, seamless sign-in experience for users."
+          isCorrect: true
+          explanation: "The primary purpose of Microsoft Entra's native authentication is to provide a secure, seamless sign-in experience for users by allowing full control over the design and user experience of authentication within mobile and desktop applications."
+        - content: "To redirect users to a system browser for authentication."
+          isCorrect: false
+          explanation: "Redirecting users to a system browser for authentication is a characteristic of browser-delegated authentication, not native authentication."
+        - content: "To manage user interactions through a web-based solution."
+          isCorrect: false
+          explanation: "Managing user interactions through a web-based solution isn't the primary purpose of native authentication."
+    - content: "What authentication methods does native authentication in Microsoft Entra External ID support?"
+      choices:
+        - content: "Email with one-time passcode (OTP) sign-in."
+          isCorrect: true
+          explanation: "Email with one-time passcode (OTP) sign-in is supported."
+        - content: "SSL Certificate."
+          isCorrect: false
+          explanation: "SSL certificate isn't an authentication method supported by Microsoft Entra External ID."
+        - content: "Voice recognition."
+          isCorrect: false
+          explanation: "Voice recognition isn't an authentication method supported by Microsoft Entra External ID."
+    - content: "Which method is used to initiate the user sign-up process in an Android or iOS/macOS app using Microsoft Entra's native authentication? "
+      choices:
+        - content: "signUp(parameters:delegate)"
+          isCorrect: true
+          explanation: "The signUp(parameters:delegate) method is used to initiate the user sign-up process in an Android and iOS/macOS app using Microsoft Entra's native authentication."
+        - content: "signIn(parameters:delegate)"
+          isCorrect: false
+          explanation: "signIn(parameters:delegate) method is used to initiate the user sign-in process, not the sign-up process."
+        - content: "createNativeAuthPublicClientApplication()"
+          isCorrect: false
+          explanation: "The createNativeAuthPublicClientApplication() method is used to create an MSAL instance for authentication, but it doesn't initiate the sign-up process."
+    

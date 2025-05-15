@@ -6,21 +6,7 @@ By default, Azure AI services are accessible from all networks.
 
 :::image type="content" source="../media/network-access.png" alt-text="Diagram showing a network configuration for an AI service, restricting access to a range of IP addresses.":::
 
-The following services allow for network access restrictions: 
-
-- Anomaly Detector
-- Azure OpenAI
-- Content Moderator
-- Custom Vision
-- Face
-- Language Understanding (LUIS)
-- Personalizer
-- Speech service
-- Language
-- QnA Maker
-- Translator
-
-To limit access to selected networks, you must first change the default action.
+Most of the AI services allow for network access restrictions, but not all. To limit access to selected networks, you must first change the default action.
 
 ## Changing the default action
 

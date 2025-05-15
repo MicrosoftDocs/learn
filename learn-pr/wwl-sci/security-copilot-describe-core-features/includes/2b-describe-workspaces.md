@@ -1,6 +1,6 @@
 Copilot workspaces are separate work environments within the tenant in which your Copilot instance is operating.
 
-To help you better understand the concept of workspaces, we'll use the analogy of house with multiple rooms. Each room is configured to be optimized for its function and the people that will use that room. When someone enters the house, they may have access to some rooms but not others.
+To help you better understand the concept of workspaces, we'll use the analogy of house with multiple rooms. Each room is configured to be optimized for its function and the people that will use that room. When someone enters the house, they might have access to some rooms but not others.
 
 You can think of Copilot Workspaces fitting into this analogy. A Copilot workspace is analogous to a room in a house. You can also think of the house as analogous to a tenant. In the same way that a house has multiple rooms, the tenant in which Copilot is operating can have multiple workspaces.
 
@@ -70,9 +70,9 @@ Owners can view, navigate between, manage capacity allocations, and delete works
 
 ### Use workspaces
 
-From the main landing page, users can select the current workspace, which opens the drop-down menu where users can select available workspaces to which they have access and set their preferred workspace in cases where they have access to multiple workspaces. Owners will also have the option to manage workspaces, manage capacity usage, and create a new workspace.
+From the main landing page, users can select the current workspace, which opens the drop-down menu where users can select available workspaces to which they have access. They can also set their preferred workspace in cases where they have access to multiple workspaces. Owners are also given the option to manage workspaces, manage capacity usage, and create a new workspace.
 
-Once in a workspace, can start using promptbooks, enter prompts directly in the prompt bar, and al the features of Copilot for which they have permissions.
+Once in a workspace, users can start using promptbooks, enter prompts directly in the prompt bar, and all the features of Copilot for which they have permissions.
 
 # [Workspace](#tab/workspace)
 :::image type="content" source="../media/landing-page-workspace-small.png" lightbox="../media/landing-page-workspace-small.png" alt-text="A screenshot highlighting the current workspace, on the Copilot landing page.":::

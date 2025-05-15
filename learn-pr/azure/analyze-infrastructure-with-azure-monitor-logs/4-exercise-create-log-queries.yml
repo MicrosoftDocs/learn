@@ -4,12 +4,12 @@ metadata:
   title: Exercise - Create basic Azure Monitor log queries to extract information from log data
   description: Exercise - Create basic Azure Monitor log queries to extract information from log data
   ms.date: 10/15/2024
-  author: guywi-ms
-  ms.author: guywild
+  author: EliotSeattle
+  ms.author: eliotgra
   ms.topic: unit
 title: Exercise - Create basic Azure Monitor log queries to extract information from log data
 durationInMinutes: 12
 azureSandbox: true
 content: |
   [!include[](includes/4-exercise-create-log-queries.md)]
-
+
