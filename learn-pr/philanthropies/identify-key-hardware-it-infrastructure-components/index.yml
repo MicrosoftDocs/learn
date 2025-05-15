@@ -33,6 +33,7 @@ roles:
 products:
 - azure
 units:
+- learn.philanthropies.identify-key-hardware-and-it-infrastructure-components.introduction
 - learn.philanthropies.identify-key-hardware-and-it-infrastructure-components.servers-storage-systems
 - learn.philanthropies.identify-key-hardware-and-it-infrastructure-components.network-infrastructure
 - learn.philanthropies.identify-key-hardware-and-it-infrastructure-components.it-apparatus-inside-datacenter
