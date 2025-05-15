@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.philanthropies.describe-sustainability-practices-datacenters
+
+metadata:
+  title: Describe the sustainability practices in datacenters
+  description: Datacenters are the backbone of our connected world, powering everything from social media to critical business operations. Recognizing their significant role, the datacenter industry is embracing sustainability with a strong commitment to reducing its carbon footprint and enhancing energy efficiency. These efforts are paving the way for a greener, more sustainable future while continuing to support our digital lives. In this module, we focus on the importance of sustainability in datacenter operations. Topics include the use of renewable energy sources like solar and wind, and strategies for optimizing energy usage, and emergency power systems. We'll also explore advanced cooling techniques, including waste heat reuse, and water conservation practices. Additionally, you'll learn how KPIs help track sustainability progress and discover real-world case studies showcasing successful innovations in green datacenter design and operations.
+  ms.date: 05/08/2025
+  author: kiranchandratrey
+  ms.author: elenasim
+  ms.topic: module
+  ms.service: artificial-intelligence
+
+title: Describe the sustainability practices in datacenters
+summary: This module focuses on the importance of sustainability in datacenter operations and covers the use of renewable energy sources, strategies for optimizing energy usage, and emergency power systems. Renewable energy and efficiency - Learn the primary considerations when adopting sustainable practices. Cooling and resource conservation - Review several cooling solutions, as well as water conservation and recycling practices. Monitoring and reporting - Explore how datacenters monitor, track, and report sustainability practices. Emerging technologies - Discover several emerging technologies in optimizing datacenter sustainability. By the end of this module, you'll have a solid understanding of sustainability practices in datacenters.
+
+abstract: |
+  - Understand how renewable energy sources (solar, wind, etc.) contribute to sustainable datacenter operations.
+  - Learn about strategies for improving energy efficiency and optimizing power usage in datacenters.
+  - Explore innovative cooling techniques, including waste heat reuse and water conservation practices.
+  - Understand the role of monitoring and reporting tools in tracking sustainability progress through KPIs.
+  - Explore emerging technologies for sustainability in datacenters, including ai and biomimicry.
+prerequisites: |
+  - Basic awareness of environmental sustainability practices.
+products:
+  - azure
+  - azure-cloud-services
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- student
+units:
+- learn.philanthropies.describe-sustainability-practices-datacenters.embrace-environmental-sustainability
+- learn.philanthropies.describe-sustainability-practices-datacenters.renewable-energy-efficiency
+- learn.philanthropies.describe-sustainability-practices-datacenters.advanced-cooling-resource-conservation
+- learn.philanthropies.describe-sustainability-practices-datacenters.monitor-reporting-sustainability
+- learn.philanthropies.describe-sustainability-practices-datacenters.carbon-neutrality-offset
+- learn.philanthropies.describe-sustainability-practices-datacenters.circular-economy-principles
+- learn.philanthropies.describe-sustainability-practices-datacenters.sustainability
+- learn.philanthropies.describe-sustainability-practices-datacenters.emerge-technologies-sustainability
+- learn.philanthropies.describe-sustainability-practices-datacenters.cross-cutting-innovations-across-all-areas
+- learn.philanthropies.describe-sustainability-practices-datacenters.check
+- learn.philanthropies.describe-sustainability-practices-datacenters.summary
+badge:
+  uid: learn.philanthropies.describe-sustainability-practices-datacenters.badge

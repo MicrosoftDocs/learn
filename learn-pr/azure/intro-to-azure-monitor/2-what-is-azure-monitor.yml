@@ -6,10 +6,10 @@ metadata:
   title: Monitoring and Azure Monitor
   description: Learn about monitoring and its benefits, Azure Monitor capabilities, and ways to monitor resources.
   ms.date: 11/13/2024
-  author: guywi-ms
-  ms.author: guywild
+  author: EliotSeattle
+  ms.author: eliotgra
   ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-what-is-azure-monitor.md)]
-
+
