@@ -4,11 +4,11 @@ title: Exercise - Scale up a web app
 metadata:
   title: Exercise - Scale up a web app
   description: Scale a web app up and down.
-  ms.date: 11/08/2023
+  ms.date: 05/05/2025
   author: msangapu-msft
   ms.author: msangapu
   ms.topic: unit
 durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise-scale-up-a-web-app.md)]
-
+

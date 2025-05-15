@@ -68,7 +68,7 @@ These requirements help ensure policies can detect activity related to AI usage,
 | **Requirement** | **Description** |
 |-----------------|-----------------|
 | Communication Compliance policy | (Recommended) Helps detect inappropriate messages that can serve as policy triggers. |
-| [HR connector](/purview/hr-data-connector-overview?azure-portal=true) | (Recommended) Tracks termination or resignation dates for additional risk context. |
+| [HR connector](/purview/import-hr-data?azure-portal=true) | (Recommended) Tracks termination or resignation dates for additional risk context. |
 
 ## Create an insider risk policy for AI usage
 
