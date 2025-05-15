@@ -5,8 +5,8 @@ metadata:
   title: Module assessment
   description: Knowledge check.
   ms.date: 07/30/2024
-  author: johnmarco
-  ms.author: johnmarc
+  author: JnHs
+  ms.author: jenhayes
   ms.topic: unit
   ms.custom: linux-related-content
 durationInMinutes: 4
@@ -60,4 +60,4 @@ quiz:
     - content: "Arc SSH and Microsoft Entra ID."
       isCorrect: false
       explanation: "Incorrect. Although Arc SSH and Microsoft Entra ID both work with Arc-enabled Linux machines, their primary purpose is security and connection related."
-
+

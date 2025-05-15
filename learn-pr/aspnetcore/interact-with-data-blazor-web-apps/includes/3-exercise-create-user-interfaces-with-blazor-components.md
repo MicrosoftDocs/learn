@@ -15,10 +15,10 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
 1. Run the dotnet terminal command:
 
     ```dotnetcli
-    dotnet new blazorserver -o BlazingPizza --no-https true
+    dotnet new blazor -o BlazingPizza
     ```
 
-    This command creates a new Blazor server project in a folder named **BlazingPizza**. It also tells the project to disable HTTPS.
+    This command creates a new Blazor server project in a folder named **BlazingPizza**.
 1. Select **File** > **Open folder**.
 1. In the Open dialog, go to the **BlazingPizza** folder and choose **Select Folder**.
 
