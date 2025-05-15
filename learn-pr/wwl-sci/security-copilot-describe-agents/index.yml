@@ -11,7 +11,7 @@ metadata:
   ms.topic: module-standard-task-based
   ms.collection:
     - wwl-ai-copilot
-hidden: true
+hidden: false
 title: Describe Microsoft Security Copilot agents
 summary: |
   Automate threat detection and response with Microsoft Security Copilot agents—AI-powered tools that streamline cybersecurity operations, reduce manual workloads, and scale protection across your digital environment.

@@ -1,16 +1,16 @@
 ### YamlMime:LearningPath
 uid: learn.github-actions
 metadata:
-  title: Automate your workflow with GitHub Actions
+  title: Automate your workflow with GitHub Actions Part 1 of 2
   description: Learn how GitHub Actions enables you to automate your software development cycle.
   brand: github
   ms.date: 08/15/2024
   author: a-a-ron
   ms.author: aastewar
   ms.topic: learning-path
-title: Automate your workflow with GitHub Actions
+title: Automate your workflow with GitHub Actions Part 1 of 2
 summary: |
-  Learn how GitHub Actions enables you to automate your software development cycle.
+  Learn how GitHub Actions enables you to automate your software development cycle. This is part 1 of a two part series.
 
   In this learning path, you'll:
 
