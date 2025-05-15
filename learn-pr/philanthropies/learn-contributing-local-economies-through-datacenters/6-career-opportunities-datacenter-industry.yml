@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.learn-contributing-local-economies-through-datacenters.career-opportunities-datacenter-industry
+title: Career opportunities in the datacenter industry
+metadata:
+  title: Career opportunities in the datacenter industry
+  description: This content is a part of the Learn about contributing to local economies through datacenters.
+  ms.date: 05/08/2025
+  author: kiranchandratrey
+  ms.author: elenasim
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-career-opportunities-datacenter-industry.md)]
