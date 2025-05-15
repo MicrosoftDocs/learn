@@ -82,7 +82,7 @@ Beyond individual npm commands, teams can benefit from reusable workflows to str
  
 :::image type="content" source="../media/reusable-workflow.png" alt-text="Diagram illustrating the concept of reusable workflows in GitHub Actions, showing how a central workflow can be referenced by multiple repositories or workflows." border="true":::
 
-###  Why use them?
+### Why use them?
 - Consistency: Teams can follow the same automation standards across all projects.
 - Efficiency: Instead of copying and pasting steps, you just point to a reusable workflow.
 - Ease of Updates: When a process changes (e.g., a new test step), you update it in one place, and all workflows using it benefit automatically.
