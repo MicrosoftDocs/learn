@@ -237,7 +237,7 @@ Navigate to the Actions tab of your repository, then:
 - Find the failed run (usually marked with a red)
 - Click the failed workflow to open the run summary.
 
-### 2. Review the error in logs
+### 2. Review the error in Logs
 In the run summary:
 - Expand each job and step until you find the one marked as failed.
 - Click to view its logs.
@@ -271,7 +271,7 @@ If this step failed, check:
 
 ### 1. Go to the repository
 Navigate to the repository that contains the workflow. 
-### 2. Click on the actions tab
+### 2. Click on the Actions tab
 - Located in the top navigation bar of the repo.
 - This shows a history of all workflow runs for that repository.
 
