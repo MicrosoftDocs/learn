@@ -64,7 +64,7 @@ Each case includes settings for metadata, access, and investigation behavior. To
 - Manage access for users, role groups, and guests
 - Configure advanced features such as OCR or analytics
 
-   :::image type="content" source="../media/ediscovery-case-settings.png" alt-text="Screenshot showing Security Copilot being used in an eDiscovery case." lightbox="../media/eediscovery-case-settings.png":::
+   :::image type="content" source="../media/ediscovery-case-settings.png" alt-text="Screenshot showing the case settings in an eDiscovery case." lightbox="../media/ediscovery-case-settings.png":::
 
 You can also close or delete a case from this area.
 
