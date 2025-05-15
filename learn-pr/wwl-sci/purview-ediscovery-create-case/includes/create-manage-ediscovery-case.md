@@ -82,4 +82,4 @@ To delete a case, you must first remove all hold policies, even those that are c
 
 Use the **Create and configure a case** interactive guide to walk through case eDiscovery creation and management.
 
-[:::image type="content" source="../media/guide-create-case.png" alt-text="Image showing the opening page to the Create and configure a case interactive guide." lightbox="../media/guide-create-case.png":::](https://mslearn.cloudguides.com/guides/Create%20and%20configure%20a%20case%20with%20Microsoft%20Purview%20eDiscovery?azure-portal=true)
+[:::image type="content" source="../media/guide-create-case.png" alt-text="Illustration showing the opening page to the Create and configure a case interactive guide." lightbox="../media/guide-create-case.png":::](https://mslearn.cloudguides.com/guides/Create%20and%20configure%20a%20case%20with%20Microsoft%20Purview%20eDiscovery?azure-portal=true)
