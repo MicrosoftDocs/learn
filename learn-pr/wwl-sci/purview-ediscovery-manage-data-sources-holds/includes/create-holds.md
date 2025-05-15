@@ -58,7 +58,7 @@ There are two ways to define a query-based hold:
 
 Use the **Apply a hold** interactive guide to walk through creating and managing a hold policy.
 
-[:::image type="content" source="../media/guide-apply-hold.png" alt-text="Image showing the opening page to the Apply a hold interactive guide." lightbox="../media/guide-apply-hold.png":::](https://mslearn.cloudguides.com/guides/Apply%20a%20hold%20with%20Microsoft%20Purview%20eDiscovery?azure-portal=true)
+[:::image type="content" source="../media/guide-apply-hold.png" alt-text="Illustration showing the opening page to the Apply a hold interactive guide." lightbox="../media/guide-apply-hold.png":::](https://mslearn.cloudguides.com/guides/Apply%20a%20hold%20with%20Microsoft%20Purview%20eDiscovery?azure-portal=true)
 
 ## Step 4: Confirm the hold
 
@@ -99,4 +99,4 @@ The new hold copies the sources from the search. Keep in mind:
 
 Use the **Apply a hold** interactive guide to walk through creating and applying a hold policy.
 
-[:::image type="content" source="../media/guide-apply-hold.png" alt-text="Image showing the opening page to the Apply a hold interactive guide." lightbox="../media/guide-apply-hold.png":::](https://mslearn.cloudguides.com/guides/Apply%20a%20hold%20with%20Microsoft%20Purview%20eDiscovery?azure-portal=true)
+[:::image type="content" source="../media/guide-apply-hold.png" alt-text="Illustration showing the opening page to the Apply a hold interactive guide." lightbox="../media/guide-apply-hold.png":::](https://mslearn.cloudguides.com/guides/Apply%20a%20hold%20with%20Microsoft%20Purview%20eDiscovery?azure-portal=true)
