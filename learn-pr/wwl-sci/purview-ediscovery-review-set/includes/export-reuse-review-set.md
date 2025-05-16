@@ -87,4 +87,4 @@ This approach is useful for running analytics on a smaller data set or separatin
 
 Use the **Export data** interactive guide to walk through exporting search and review set data.
 
-[:::image type="content" source="../media/guide-export-data.png" alt-text="Screenshot showing the opening page to the Export data interactive guide." lightbox="../media/guide-export-data.png":::](https://mslearn.cloudguides.com/guides/Export%20data%20with%20Microsoft%20Purview%20eDiscovery?azure-portal=true)
+[:::image type="content" source="../media/guide-export-data.png" alt-text="Screenshot showing the opening page to the Export data interactive guide.":::](https://mslearn.cloudguides.com/guides/Export%20data%20with%20Microsoft%20Purview%20eDiscovery?azure-portal=true)
