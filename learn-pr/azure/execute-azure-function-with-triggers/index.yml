@@ -11,7 +11,7 @@ metadata:
   ms.service: azure-functions
   manager: susanpotter
 title: Execute an Azure Function with triggers
-summary: A trigger is responsible for executing an Azure function and there are dozens of triggers to choose from. This module will you show you some of the most common types of triggers and how to configure them to execute your logic.
+summary: A trigger is responsible for executing an Azure function and there are dozens of triggers to choose from. This module shows you some of the most common types of triggers and how to configure them to execute your logic.
 abstract:  | 
   In this module, you will:
   - Determine which trigger works best for your business needs.
@@ -44,4 +44,4 @@ units:
 - learn.execute-azure-function-with-triggers.9-summary
 badge:
   uid: learn.execute-azure-function-with-triggers.badge
-
+
