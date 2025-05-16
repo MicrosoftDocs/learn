@@ -21,7 +21,7 @@ quiz:
       explanation: "GitHub Script isn't a programming language."
     - content: "An automation syntax for GitHub shell."
       isCorrect: false
-      explanation: "GitHub Script is not a scripting language."
+      explanation: "GitHub Script isn't a scripting language."
     - content: "A workflow action that enables GitHub API access from GitHub Actions."
       isCorrect: true
       explanation: "It allows you to script any API usage that is available through the octokit/rest.js library."
@@ -43,7 +43,7 @@ quiz:
       explanation: "This expression instructs the action to ignore issues that aren't labeled as bugs."
     - content: "To make sure that new issue names don't violate the bug reporting policy when issues are created."
       isCorrect: false
-      explanation: "This snippet won't help you enforce issue creation policy."
+      explanation: "This snippet doesn't enforce issue creation policy."
     - content: "To automatically flag any commits containing code matching the `github.event.issue.labels.*.name` namespace pattern as a bug."
       isCorrect: false
-      explanation: "This snippet won't help you enforce code commit policy."
+      explanation: "This snippet doesn't enforce code commit policy."
