@@ -39,7 +39,6 @@ units:
 - learn.make-recommendations-ai-personalizer.import-export-settings
 - learn.make-recommendations-ai-personalizer.use-inference-explainability
 - learn.make-recommendations-ai-personalizer.run-evaluations
-- learn.make-recommendations-ai-personalize.summary
 badge:
   uid: learn.make-recommendations-ai-personalizer.badge
 
