@@ -2,11 +2,9 @@
 
 In this exercise, you create a Virtual WAN for Contoso.
 
-
 ## Architecture diagram
 
 :::image type="content" source="../media/7-exercise-create-virtual-wan-by-using-azure-portal.png" alt-text="Diagram of the lab virtual network WAN architecture.":::
-
 
 ## Job skills
 
@@ -15,7 +13,8 @@ In this exercise, you create a Virtual WAN for Contoso.
 - Connect a virtual network to the virtual hub. 
 
 
-> [!NOTE]
+> [!IMPORTANT]
+> Estimated time: 65 minutes.
 > To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
 
 Launch the exercise, and follow the instructions. When finished, be sure to return to this page so you can continue learning.
