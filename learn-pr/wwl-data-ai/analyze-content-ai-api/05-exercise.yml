@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-content-ai-api.exercise
+title: Exercise - Develop a content understanding client application
+metadata:
+  title: Exercise - Develop a content understanding client application
+  description: Use the Azure AI Content Understanding REST API to extract information from content.
+  author: wwlpublish
+  ms.author: gmalc
+  ms.date: 05/15/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 40
+content: |
+  [!include[](includes/05-exercise.md)]

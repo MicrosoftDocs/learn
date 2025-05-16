@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.analyze-content-ai-api
+metadata:
+  title: Create an Azure AI Content Understanding client application 
+  description: Use the Azure AI Content Understanding REST API for multimodal content analysis and information extraction.
+  author: wwlpublish
+  ms.author: gmalc
+  ms.date: 05/15/2025
+  ms.service: azure-ai-services
+  ms.topic: module-standard-task-based
+  ai-usage: ai-assisted
+  ms.collection:
+    - wwl-ai-copilot
+title: Create an Azure AI Content Understanding client application 
+summary: Use the Azure AI Content Understanding REST API for multimodal content analysis and information extraction.
+abstract: |
+  After completing this module, you will be able to:
+  - Use the Azure AI Content Understanding REST API to build a content analyzer.
+  - Use the Azure AI Content Understanding REST API to consume an analyzer.
+prerequisites: |
+  Before starting this module, you should:
+  - Be familiar with Azure services and the Azure portal.
+  - Have some familiarity with Python and REST APIs.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- developer
+products:
+- ai-services
+subjects:
+- artificial-intelligence
+units:
+- learn.wwl.analyze-content-ai-api.introduction
+- learn.wwl.analyze-content-ai-api.prepare-content-understanding
+- learn.wwl.analyze-content-ai-api.create-analyzer
+- learn.wwl.analyze-content-ai-api.analyze
+- learn.wwl.analyze-content-ai-api.exercise
+- learn.wwl.analyze-content-ai-api.knowledge-check
+- learn.wwl.analyze-content-ai-api.summary
+badge:
+  uid: learn.wwl.analyze-content-ai-api.badge
+
