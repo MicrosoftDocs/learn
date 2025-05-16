@@ -2,7 +2,7 @@ Knowledge mining solutions provide automated information extraction from large v
 
 In AI-powered information extraction for search, content first moves through **Document cracking**. Document cracking describes opening document formats like PDFs to extract the contents as ASCII text for analysis and indexing.
 
-The contents then move through **AI enrichment**, which implements AI on your original dcontent to extract more information. Examples of AI enrichment include adding captions to a photo and evaluating text sentiment. AI enriched content can be sent to a **knowledge store**, which persists output from an AI enrichment pipeline for independent analysis or downstream processing.  
+The contents then move through **AI enrichment**, which implements AI on your original content to extract more information. Examples of AI enrichment include adding captions to a photo and evaluating text sentiment. AI enriched content can be sent to a **knowledge store**, which persists output from an AI enrichment pipeline for independent analysis or downstream processing.  
 
 The resulting data is serialized as JSON data. The JSON populates the *search index*. The populated **search index**  can be explored through queries. When users make a search query such as "coffee", the search engine looks for that information in the search index. A search index has a structure similar to a table, known as the index *schema*. A typical search index schema contains *fields*, the field's data type (such as string), and *field attributes*. The fields store searchable text, and the field attributes allow for actions such as filtering and sorting. Below is an example of a search index schema: 
 

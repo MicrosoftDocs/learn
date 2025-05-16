@@ -4,9 +4,9 @@ Forms and other documents have text data with *semantic meaning*. Semantic meani
 
 Consider an organization that needs to process large numbers of receipts for expenses claims, project costs, and other accounting purposes. Using document intelligence, the company can take a scanned image of a receipt, digitize the text with OCR, and extract semantic meaning. The semantic meaning of data in forms can be described in field-value pairs. 
 
-- The **field name**, is the key, or type of data entry.   
-- The **feild description** is the definition of what the field name represents.  
-- The **value** cooresponds with the field name and is the data specific to the content.  
+- The **field name** is the key or type of data entry.   
+- The **field description** is the definition of what the field name represents.  
+- The **value** corresponds with the field name and is the data specific to the content.  
 
 For example, in an invoice, the fields recognized may include:
 
