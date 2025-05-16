@@ -38,7 +38,6 @@ units:
 - learn.make-recommendations-ai-personalizer.introduction
 - learn.make-recommendations-ai-personalize.create-ai-personalizer-resource
 - learn.make-recommendations-ai-personalize.configure-loop
-- learn.make-recommendations-ai-personalize.configure-behavior
 - learn.make-recommendations-ai-personalizer.import-export-settings
 - learn.make-recommendations-ai-personalizer.use-inference-explainability
 - learn.make-recommendations-ai-personalizer.run-evaluations
