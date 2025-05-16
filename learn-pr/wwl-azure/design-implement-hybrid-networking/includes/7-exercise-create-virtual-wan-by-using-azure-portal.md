@@ -14,7 +14,7 @@ In this exercise, you create a Virtual WAN for Contoso.
 
 
 > [!IMPORTANT]
-> Estimated time: 65 minutes (including ~45 minutes deployment waiting time).
+> Estimated time: 65 minutes.
 > To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
 
 Launch the exercise, and follow the instructions. When finished, be sure to return to this page so you can continue learning.

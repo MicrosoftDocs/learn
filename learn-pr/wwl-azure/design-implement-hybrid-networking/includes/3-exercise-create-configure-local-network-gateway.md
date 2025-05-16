@@ -11,7 +11,7 @@ In this exercise, you configure a virtual network gateway to connect the Contoso
 
 ## Job skills
 
-- Create the .oreServicesVnet and ManufacturingVnet
+- Create the CoreServicesVnet and ManufacturingVnet.
 - Create the CoreServicesTestVM.
 - Create the ManufacturingTestVM.
 - Connect to the test VMs using RDP.
@@ -24,7 +24,7 @@ In this exercise, you configure a virtual network gateway to connect the Contoso
 - Test the connection between the VMs.
 
 > [!IMPORTANT]
-> Estimated time: 70 minutes (including ~45 minutes deployment waiting time.
+> Estimated time: 70 minutes.
 > To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
 
 Launch the exercise, and follow the instructions. When finished, be sure to return to this page so you can continue learning.
