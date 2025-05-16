@@ -3,7 +3,9 @@ The organization you work for wants to increase the efficiency and capabilities 
 In this exercise, you go through the first run experience of Security Copilot to provision Copilot with one security compute unit (SCU).
 
 > [!NOTE]
->The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message displays stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps. 
+>The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message displays stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.
+>
+>
 >:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature isn't available within the simulation.":::
 
 ### Exercise

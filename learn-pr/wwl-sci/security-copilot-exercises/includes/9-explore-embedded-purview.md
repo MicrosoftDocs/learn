@@ -4,6 +4,8 @@ In this exercise, you explore the Copilot summarization capabilities available i
 
 > [!NOTE]
 > The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page might not be enabled and text-based inputs that fall outside of the specified script might not be supported. A pop-up message displays stating, "This feature is not available within the simulation." When this message occurs, select OK and continue the exercise steps.  
+>
+>
 >:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature isn't available within the simulation.":::
 
 ### Exercise

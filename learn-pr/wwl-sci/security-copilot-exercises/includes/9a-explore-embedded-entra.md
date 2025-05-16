@@ -2,6 +2,8 @@ In this exercise, you explore multiple, real world scenarios that highlight the 
 
 > [!NOTE]
 > The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message displays stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.  
+>
+>
 >:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature isn't available within the simulation.":::
 
 
@@ -14,7 +16,7 @@ This exercise should take approximately **30** minutes to complete.
 > [!NOTE]
 > When a lab instruction calls for opening a link to the simulated environment, it's recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
 
-### Task: Research and remediation of risky users with copilot in Microsoft Entra
+#### Task: Research and remediation of risky users with Copilot in Microsoft Entra
 
 You're an identity admin with Woodgrove. You believe there are some users at the company that might be compromised by phishing attacks. You want to use Copilot in Microsoft Entra to review any risky users. If you find any, you can use Copilot to help you remediate the issue and prevent future occurrences. The primary user you suspect at being compromised is Serena Markunaite.
 

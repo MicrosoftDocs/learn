@@ -6,6 +6,8 @@ In this exercise, you explore all the key landmarks in the landing page of the s
 
 > [!NOTE]
 > The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message displays stating, "This feature isn't available within the simulation." When this occurs, select OK and continue the exercise steps. 
+>
+>
 >:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature is not available within the simulation.":::
 
 
@@ -58,7 +60,7 @@ In this task, you start your exploration in the home menu.
 1. Select **Plugin settings**
 
     1. For plugins for Security Copilot, select the drop-down for Who can add and manage their own custom plugins to view the available options. Select each available option to see how it impacts the option below.
-    1. Select drop-down for Who can add and manage custom plugins for users of this workspace to view the available options. Note, this option is greyed out if Who can add and manage their own custom plugins is set to owners only.
+    1. Select drop-down for Who can add and manage custom plugins for users of this workspace to view the available options. Note, this option is grayed out if Who can add and manage their own custom plugins is set to owners only.
     1. Manage plugin availability and restrict access:
         1. Review the description. Selecting the toggle opens a new window, review the description and enable the toggle. All plugins are restricted to owners only. You can manually change this for each plugin. 
         1. Disable the toggle to remove the restriction.
