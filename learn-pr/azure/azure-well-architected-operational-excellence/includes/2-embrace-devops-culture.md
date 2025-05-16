@@ -1,17 +1,19 @@
-| :::image type="icon" source="../media/goal.svg"::: Empower development and operations teams to continuously improve their system design and processes by working together with a mindset of collaboration, shared responsibility, and ownership. |
+| :::image type="icon" source="../media/goal.svg"::: Help development and operations teams work better together by encouraging collaboration, shared responsibility, and ownership, so they can keep improving how their systems and processes run. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
-DevOps is a community of practice where diversity of perspective and skills drives toward one mission. Teams must foster a collaborative environment of shared knowledge instead of siloed learning. Use shared functions to strive to overcome resource constraints.
+DevOps is all about teamwork, bringing together people with different skills and perspectives to work toward a shared goal. Instead of keeping knowledge siloed, teams should create a space where everyone learns from each other. Sharing tools and responsibilities can also help stretch limited resources further.
 
-A good DevOps culture thrives on shared responsibility. Development and operations teams should align their goals and priorities with the expectations of their customers and keep business focus in mind. The development team should involve the operations team in the feedback loop so the improvements are driven upstream and other teams benefit equally. Conversely, operations teams are responsible for making the development team successful in their business outcomes by sharing resources and feedback that are relevant to the workload.
+A strong DevOps culture thrives on shared responsibility. Development and operations teams should be on the same page about goals and priorities, and always keep the customer in mind. Development teams should involve the operations team in the feedback loop so other teams can also benefit from improvements. And in return, operations teams should support development teams by sharing helpful insights and resources that make it easier to reach business goals.
 
-At the same time, DevOps practices apply clear lines of ownership and accountability to each team. Regardless of where the application runs, the workload team is responsible for that application.
+DevOps helps make everyday operations smoother and less stressful. To get the most out of it, teams should use tech to streamline their processes and create a culture where open communication is the norm.
 
-DevOps optimizes operational tasks so that they're effective but not burdensome. To reap the full benefit of DevOps, the culture should optimize processes through technology and have processes for people in the organization to promote transparent communication.
+At the same time, DevOps makes it clear who’s responsible for what. No matter where the app runs, the workload team is responsible for it.
+
+DevOps makes operations effective without being a burden. To get the full benefits, the team should use technology to streamline how things work and make sure there are clear ways for everyone to communicate openly.
 
 **Example scenario**
 
-Contoso's Human Resources (HR) department is kicking off a project to develop a new line-of-business (LOB) app for their department's internal use. The app is currently in the planning phase, no design or implementation work has begun yet.
+Contoso's human resources (HR) department is kicking off a project to develop a new line-of-business (LOB) app for their department's internal use. The app is currently in the planning phase, no design or implementation work has started yet.
 
 ## Collaborate efficiently
 
