@@ -39,7 +39,7 @@ ExpressRoute locations, also known as peering locations or meet-me locations, ar
 
 - **Bandwidth requirements**: Consider your bandwidth needs and ensure that the peering location can support the required capacity. Different locations may have different bandwidth options available.
 
-- **Cost Ccnsiderations**: Costs can vary based on the peering location, the NSP chosen, and the bandwidth required. To find the most cost-effective solution for your needs, compare costs across different locations and providers.
+- **Cost Considerations**: Costs can vary based on the peering location, the NSP chosen, and the bandwidth required. To find the most cost-effective solution for your needs, compare costs across different locations and providers.
 
 - **Compliance and regulatory requirements**: If your organization has specific compliance or regulatory requirements, ensure that the peering location meets these standards. Compliance requirements might include data residency or industry-specific regulations.
 
