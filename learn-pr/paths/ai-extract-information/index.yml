@@ -1,0 +1,37 @@
+### YamlMime:LearningPath
+uid: learn.ai-extract-information
+metadata:
+  title: Develop AI information extraction solutions in Azure
+  description: Use Azure AI to extract information from content.
+  brand: azure
+  ms.date: 05/15/2025
+  author: GraemeMalcolm
+  ms.author: gmalc
+  ms.topic: learning-path
+title: Develop AI information extraction solutions in Azure
+summary: |
+  Use Azure AI to extract information from content to support scenarios like:
+  - Data capture
+  - Business process automation
+  - Meeting summarization and analysis
+  - Digital asset management (DAM)
+  - Knowledge Mining
+prerequisites: |
+  Before starting this learning path, you should already have:
+  - Familiarity with Azure and Azure AI Foundry.
+  - Experience programming with C# or Python.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+subjects:
+- artificial-intelligence
+products:
+  - ai-services
+modules:
+- learn.wwl.analyze-content-ai
+- learn.wwl.analyze-content-ai-api
+trophy:
+  uid: learn.ai-extract-information.trophy
