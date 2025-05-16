@@ -3,4 +3,4 @@ In this module you learned how modern organizations can process content using AI
 
 ## Learn more
 
-Apply these concepts in [Get started with AI-powered information extraction in Azure](https://learn.microsoft.com/training/modules/ai-information-extraction/).
+Apply these concepts in [Get started with AI-powered information extraction in Azure](/training/modules/ai-information-extraction/).

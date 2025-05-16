@@ -7,6 +7,6 @@ Computer vision is made possible by machine learning models that are trained to 
 **Optical Character Recognition (OCR)** helps computers recognize that an element in an image contains text. OCR is the foundation of processing text in images and uses machine learning models that are trained to recognize individual shapes as letters, numerals, punctuation, or other elements of text. Much of the early work on implementing this kind of capability was performed by postal services to support automatic sorting of mail based on postal codes. Since then, the state-of-the-art for reading text has moved on, and we have models that detect printed or handwritten text in an image and digitize it line-by-line and word-by-word.
 
 > [!NOTE]
-> The machine learning concepts associated with vision are covered in-depth in [Introduction to computer vision concepts](https://learn.microsoft.com/en-us/training/modules/analyze-images-computer-vision/).  
+> The machine learning concepts associated with vision are covered in-depth in [Introduction to computer vision concepts](/training/modules/analyze-images-computer-vision/).  
 
 Next, let's see how data is extracted from forms with techniques that build upon OCR. 
