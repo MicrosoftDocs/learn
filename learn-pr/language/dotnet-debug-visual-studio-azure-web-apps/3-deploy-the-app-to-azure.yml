@@ -3,8 +3,6 @@ uid: learn.dotnet-debug-visual-studio-app-service.deploy-to-azure
 sandbox: true
 title: Exercise - Create the app and deploy to Azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create the app and deploy to Azure
   description: Learn how to create and deploy a sample app to Azure App Service that can be used for remote debugging scenarios.
   ms.date: 05/29/2024
@@ -17,4 +15,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-deploy-the-app-to-azure.md)]
-
+

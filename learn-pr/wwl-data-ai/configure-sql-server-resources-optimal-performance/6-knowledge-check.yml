@@ -1,12 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-sql-server-resources-for-optimal-performance.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 03/20/2025
+  ms.date: 04/01/2025
   author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit

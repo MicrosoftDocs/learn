@@ -1,8 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.generate-documentation-using-github-copilot-tools.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  hidden_question_numbers: ["94C076B5_10","94C076B5_14","94C076B5_18","94C076B5_26","94C076B5_30","94C076B5_38","94C076B5_6","94C076B5_43","94C076B5_47","94C076B5_51","94C076B5_55","94C076B5_67","94C076B5_71","94C076B5_100","94C076B5_104","94C076B5_108","94C076B5_120","94C076B5_84","94C076B5_92","94C076B5_96"]
+  ai_generated_module_assessment: true
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 11/14/2024
   author: wwlpublish

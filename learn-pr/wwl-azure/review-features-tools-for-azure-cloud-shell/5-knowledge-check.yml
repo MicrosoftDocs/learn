@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.review-features-tools-for-azure-cloud-shell.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 10/20/2022
   author: wwlpublish
@@ -38,4 +36,4 @@ quiz:
       explanation: "Correct. When launching Cloud Shell for the first time, you are prompted to provide an Azure Storage account."
     - content: "An Azure VM running Linux"
       isCorrect: false
-      explanation: "Incorrect. When launching Cloud Shell for the first time, you are prompted to provide an Azure Storage account, not an Azure VM running Windows."
+      explanation: "Incorrect. When launching Cloud Shell for the first time, you are prompted to provide an Azure Storage account, not an Azure VM running Windows."

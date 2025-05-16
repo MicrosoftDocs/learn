@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.protect-infrastructure-with-azure-site-recovery.7-failover-and-failback
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Failover and failback using Azure Site Recovery
   description: Here, we'll explore how we can reprotection our failed over infrastructure and how to fallback to a primary region using Azure Site Recovery.
   ms.date: 01/25/2025
@@ -13,4 +11,4 @@ title: Failover and failback using Azure Site Recovery
 durationInMinutes: 6
 content: |
   [!include[](includes/7-failover-and-failback.md)]
-
+

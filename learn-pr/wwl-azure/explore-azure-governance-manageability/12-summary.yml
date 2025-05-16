@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-azure-governance-manageability.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary of the module."
   ms.date: 08/02/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 1
 content: |
-  [!include[](includes/12-summary.md)]
+  [!include[](includes/12-summary.md)]

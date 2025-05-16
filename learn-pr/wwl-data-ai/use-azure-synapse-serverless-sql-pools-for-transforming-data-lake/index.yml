@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use Azure Synapse serverless SQL pools to transform data in a data lake
   description: "Use Azure Synapse serverless SQL pools to transform data in a data lake"
   ms.date: 11/16/2023
@@ -40,4 +38,4 @@ units:
 - learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.knowledge-check
 - learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.summary
 badge:
-  uid: learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.badge
+  uid: learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.badge

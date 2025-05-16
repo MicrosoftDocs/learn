@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-llmops-azure-databricks.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 03/20/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 2
 content: |
-  [!include[](includes/01-introduction.md)]
+  [!include[](includes/01-introduction.md)]

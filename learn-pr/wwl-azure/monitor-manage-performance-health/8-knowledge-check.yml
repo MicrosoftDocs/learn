@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.monitor-manage-performance-health.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 08/13/2024
   author: wwlpublish
@@ -61,4 +59,4 @@ quiz:
       explanation: "Incorrect. The Log Analytics Writer role isn't necessary for monitoring Azure Virtual Desktop Insights."
     - content: "Desktop Virtualization Reader and Log Analytics Reader"
       isCorrect: true
-      explanation: "Correct. These are the minimum RBAC roles required for monitoring Azure Virtual Desktop Insights."
+      explanation: "Correct. These are the minimum RBAC roles required for monitoring Azure Virtual Desktop Insights."

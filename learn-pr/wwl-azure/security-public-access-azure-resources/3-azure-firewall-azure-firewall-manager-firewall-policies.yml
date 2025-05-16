@@ -2,8 +2,6 @@
 uid: learn.wwl.security-public-access-azure-resources.azure-firewall-azure-firewall-manager-firewall-policies
 title: Plan, implement, and manage an Azure Firewall, Azure Firewall Manager and firewall policies
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Plan, implement, and manage an Azure Firewall, Azure Firewall Manager and firewall policies
   description: "Plan, implement, and manage an Azure Firewall, Azure Firewall Manager and firewall policies"
   ms.date: 06/25/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-azure-firewall-azure-firewall-manager-firewall-policies.md)]
+  [!include[](includes/3-azure-firewall-azure-firewall-manager-firewall-policies.md)]

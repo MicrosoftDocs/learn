@@ -2,8 +2,6 @@
 uid: learn.azure.customize-clusters-azure-cyclecloud.exercise-create-cloud-init-script
 title: Exercise - Create a cloud-init script for use with Azure CycleCloud
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Create a cloud-init script for use with Azure CycleCloud
   description: This unit moves through the process of configuring cloud-init scripts for use with Azure CycleCloud.
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 40
 content: |
   [!include[](includes/6-exercise-create-cloud-init-script.md)]
-
+

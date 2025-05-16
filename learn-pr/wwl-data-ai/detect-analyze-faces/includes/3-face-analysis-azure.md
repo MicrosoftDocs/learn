@@ -4,7 +4,7 @@ Microsoft Azure provides multiple Azure AI services that you can use to detect a
 - **Azure AI Video Indexer**, which you can use to detect and identify faces in a video.
 - **Azure AI Face**, which offers pre-built algorithms that can detect, recognize, and analyze faces.
 
-Of these, Face offers the widest range of facial analysis capabilities. 
+Of these, Face offers the widest range of facial analysis capabilities. You can test out face detection the Face in [Azure AI Foundry](https://ai.azure.com?auzre-portal=true), a unified platform for enterprise AI operations, model builders, and application development.
 
 ## Azure AI Face service
 

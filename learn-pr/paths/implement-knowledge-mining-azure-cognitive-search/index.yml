@@ -10,7 +10,6 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
-  adobe-target: true
 title: Implement knowledge mining with Azure AI Search
 prerequisites: |
   - Familiarity with Microsoft Azure
@@ -40,4 +39,4 @@ modules:
 - learn.use-semantic-search
 - learn.improve-search-results-vector-search
 trophy:
-  uid: learn.wwl.implement-knowledge-mining-azure-cognitive-search.trophy
+  uid: learn.wwl.implement-knowledge-mining-azure-cognitive-search.trophy

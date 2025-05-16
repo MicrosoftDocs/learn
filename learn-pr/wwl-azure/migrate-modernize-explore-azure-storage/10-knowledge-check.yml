@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.migrate-modernize-explore-azure-storage.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 01/09/2024
   author: wwlpublish
@@ -48,4 +46,4 @@ quiz:
       explanation: "Incorrect. Data disks have a maximum size of 32 TB. The VM size determines the maximum number of data disks that can be attached to the VM."
     - content: "32 TB"
       isCorrect: true
-      explanation: "Correct. Data disks have a maximum size of 32 TB. The VM size determines the maximum number of data disks that can be attached to the VM."
+      explanation: "Correct. Data disks have a maximum size of 32 TB. The VM size determines the maximum number of data disks that can be attached to the VM."

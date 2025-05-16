@@ -2,8 +2,6 @@
 uid: learn.azure.extend-share-capacity-with-azure-file-sync.set-up-azure-file-sync
 title: Set up Azure File Sync in the Azure portal
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Set up Azure File Sync in the Azure portal
   description: See the components and services that Azure File Sync relies on.
   ms.date: 11/17/2023
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/5-set-up-azure-file-sync.md)]
-
+

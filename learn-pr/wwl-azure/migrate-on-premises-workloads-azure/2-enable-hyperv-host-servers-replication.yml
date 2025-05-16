@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-onpremises-workloads-azure.enable-hyperv-host-servers-replication
 title: Enable Hyper-V host servers for replication
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Enable Hyper-V host servers for replication
   description: "Enable Hyper-V host servers for replication"
   ms.date: 05/17/2021
@@ -38,4 +36,4 @@ quiz:
       explanation: "The Server Migration tool the processes the replicated data, and applies it to replica disks in the subscription. However, the replicated data is first uploaded to an Azure storage account."
     - content: "Azure storage account"
       isCorrect: true
-      explanation: "Correct. Replicated data is uploaded to an Azure storage account."
+      explanation: "Correct. Replicated data is uploaded to an Azure storage account."

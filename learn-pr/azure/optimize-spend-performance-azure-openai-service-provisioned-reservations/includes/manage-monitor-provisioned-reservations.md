@@ -86,6 +86,31 @@ If you discover that your organization's reservations are underused, you can eit
 > [!NOTE]
 > The total canceled commitment can't exceed (US dollar) \\$50,000 in a 12-month rolling window. Azure won't process any refund that exceeds the \\$50,000 limit in a 12-month window for either a billing profile or EA enrollment.
 
+## Make optimizations with exchanges or scope changes
+
+If you find that your organization's reservations are being underused, you have several ways to act.
+
+### Exchange a reservation
+
+If your reservation is consistently underutilized or if you need to move your Azure OpenAI Service workloads to a new deployment, consider exchanging them to align to your business.
+
+- For Azure OpenAI Service Provisioned reservations you can change the region, term, deployment type, and payment option when you make an exchange.
+- For example, you can exchange a quantity of 50 Global provisioned reservations with a one-year term in US West for the following:
+  - **New Deployment**: 50 Data Zone provisioned reservations with a one-year term in US West
+  - **New Region**: 50 Global provisioned reservation with a one-year term in Sweden Central
+  - **New Deployment and Regional**: 50 Data Zone provisioned reservations with a one-year term in Sweden Central
+  - **New Term**: 50 Global provisioned reservations with a three-year term in US West
+- When you exchange a reservation, The prorated reservation amount is refunded, and you're charged fully for the new purchase. The prorated reservation amount is the daily prorated residual value of the reservation being returned.
+- The new reservation's lifetime commitment should equal to or greater than the returned reservation's remaining commitment. For example, for a three-year reservation that's USD 100 per month which is exchanged after the 18th payment, the new reservation's lifetime commitment should be USD 1,800 or more (paid monthly or upfront).
+- There are no fees or penalty for exchanges.
+
+### Change the reservation scope
+
+If you scope your reservation to a single subscription or resource group, then it’s possible that another subscription or resource group has matching resources that can benefit from the reservation. Consider one of the following two actions:
+
+- Change the reservation scope to shared scope.
+- Split the reservation into smaller chunks and assign them individually to scopes that have utilization for matching resources.
+
 ## Analyze and report after reservation purchase
 
 You can create several reports to help you analyze and perform reporting after buying a reservation. When it comes to cost reporting, it is important to understand two concepts:

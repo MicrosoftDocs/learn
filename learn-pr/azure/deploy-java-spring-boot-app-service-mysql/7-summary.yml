@@ -2,11 +2,9 @@
 uid: learn.azure.deploy-java-spring-boot-app-service-mysql.7-summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Review what you learned about deploying a Spring Boot application.
-  ms.date: 11/08/2023
+  ms.date: 04/18/2025
   author: roryp
   ms.author: ropreddy
   ms.topic: unit

@@ -2,8 +2,6 @@
 uid: learn.wwl.work-with-cosmos-db.create-triggers-user-defined-functions
 title: Create triggers and user-defined functions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create triggers and user-defined functions
   description: "Create triggers and user-defined functions"
   ms.date: 07/15/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-cosmos-db-triggers-user-defined-functions.md)]
+  [!include[](includes/5-cosmos-db-triggers-user-defined-functions.md)]

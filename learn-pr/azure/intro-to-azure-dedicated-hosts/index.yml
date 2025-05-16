@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-azure-dedicated-hosts
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to Azure Dedicated Hosts
   description: Learn about what Azure dedicated hosts is, how it works, and when you should choose to use a dedicated host as a solution to meet your organization's needs.
   manager: akashdubey
@@ -41,4 +39,4 @@ units:
 - learn.introduction-to-azure-dedicated-hosts.summary
 badge:
   uid: learn.azure.intro-to-azure-dedicated-hosts.badge
-
+

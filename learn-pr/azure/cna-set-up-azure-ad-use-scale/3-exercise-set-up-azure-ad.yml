@@ -2,8 +2,6 @@
 uid: learn.azure.cna-set-up-apps-use-scale.3-exercise-set-up-azure-ad
 title: Exercise - Set up Microsoft Entra ID
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Set up Microsoft Entra ID
   description: Exercise - Set up Microsoft Entra ID
   ms.date: 08/22/2023
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-set-up-azure-ad.md)]
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-azure-synapse-studio.use
 title: Use Azure Synapse Studio
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use Azure Synapse Studio
   description: "Use Azure Synapse Studio"
   ms.date: 08/18/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-use.md)]
+  [!include[](includes/2-use.md)]

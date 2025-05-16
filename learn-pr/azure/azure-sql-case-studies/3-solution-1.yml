@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-case-studies.3-solution-1
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Scenario 1 solution - Architect global scale and secure access
   description: Scenario 1 solution - Architect global scale and secure access
   ms.date: 03/15/2023
@@ -12,4 +10,4 @@ metadata:
 title: Scenario 1 solution - Architect global scale and secure access
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-solution-1.md)]
+  [!include[](includes/3-solution-1.md)]

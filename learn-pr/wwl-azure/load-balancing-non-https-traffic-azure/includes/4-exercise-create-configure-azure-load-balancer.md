@@ -6,21 +6,17 @@ In this lab, you create an internal load balancer for the fictional Contoso Ltd 
 
 :::image type="content" source="../media/4-exercise-create-configure-azure-load-balancer.png" alt-text="Diagram of the internal standard load balancer architecture.":::
 
-## Objectives
+## Job skills
 
- -  **Task 1**: Create the virtual network
- -  **Task 2**: Create backend servers
-    - Use a template to create the virtual machines. You can review the [lab template](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/blob/master/Allfiles/Exercises/M04/azuredeploy.json).
-    - Use Azure PowerShell to deploy the template. 
- -  **Task 3**: Create the load balancer
- -  **Task 4**: Create load balancer resources
- -  **Task 5**: Test the load balancer
+- Create the virtual network.
+- Create backend servers.
+- Create the load balancer.
+- Create load balancer resources.
+- Test the load balancer.
 
 > [!NOTE]
-> Click on the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning. 
+> To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
 
-> [!NOTE]
-> You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
+Launch the exercise, and follow the instructions. When finished, be sure to return to this page so you can continue learning.
 
-[![Screenshot of the simulation page.](../media/simulation-load-balancer-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Create%20and%20configure%20an%20Azure%20load%20balancer)
-
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/Instructions/Exercises/M04-Unit%204%20Create%20and%20configure%20an%20Azure%20load%20balancer.html)

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.explore-ai-specification.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: A knowledge check for the discover AI Specification document.
   author: softchris
   ms.author: chnoring

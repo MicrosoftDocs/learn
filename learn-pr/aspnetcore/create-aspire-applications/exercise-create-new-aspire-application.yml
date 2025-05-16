@@ -4,7 +4,7 @@ title: Exercise - Create a new .NET Aspire project
 metadata:
   title: Exercise - Create a new .NET Aspire project
   description: "Install all the prerequisites, then create a new .NET Aspire Starter app. See how to add a caching integration using Redis to the app. Then test the application and quickly explore the Aspire Dashboard."
-  ms.date: 2/6/2024
+  ms.date: 04/02/2025
   author: camsoper
   ms.author: casoper
   ms.topic: unit

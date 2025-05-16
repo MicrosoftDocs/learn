@@ -2,8 +2,6 @@
 uid: learn.azure.build-reusable-bicep-templates-parameters.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: |
@@ -20,4 +18,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-
+

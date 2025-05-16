@@ -2,8 +2,6 @@
 uid: learn.wwl.design-machine-learning-model-training-solution.choose-service-train
 title: Train the model
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Train the model
   description: Train the model
   author: wwlpublish
@@ -17,4 +15,4 @@ labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/3-choose-service-train.md)]
-
+

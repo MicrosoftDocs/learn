@@ -2,8 +2,6 @@
 uid: learn.azure.deploy-java-azure-pipeline-terraform.4-exercise
 title: Exercise - Provision Azure resources
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Provision Azure resources
   description: In this exercise, you'll provision your Azure resources by configuring GitHub actions with Terraform.
   ms.date: 08/02/2023
@@ -19,4 +17,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise.md)]
-
+

@@ -2,8 +2,6 @@
 uid: learn.wwl.implementing-backup-restore-for-azure-cosmos-db-sql-api.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: "Summary"
   ms.date: 02/27/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/7-summary.md)]

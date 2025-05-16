@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.azure-stack-hub.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 08/05/2022
   author: wwlpublish
@@ -39,4 +37,4 @@ quiz:
       explanation: "Correct. The Network Resource Provider delivers a series of Software Defined Networking (SDN) and Network Function Virtualization (NFV) features for the private cloud. Use the Network Resource Provider to create resources like software load balancers, public IPs, network security groups, and virtual networks."
     - content: "Storage Resource Provider"
       isCorrect: false
-      explanation: "Incorrect. The Storage Resource Provider delivers blob, queue, table, and Key Vault account management."
+      explanation: "Incorrect. The Storage Resource Provider delivers blob, queue, table, and Key Vault account management."

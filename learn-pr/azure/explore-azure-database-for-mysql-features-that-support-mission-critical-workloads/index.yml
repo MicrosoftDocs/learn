@@ -2,8 +2,6 @@
 uid: learn.explore-azure-database-for-mysql-features-support-mission-critical-workloads
 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: "Explore Azure Database for MySQL - Flexible Server features that support mission-critical workloads"
   description: "Explore Azure Database for MySQL - Flexible Server features that support mission-critical workloads"
   ms.date: 08/27/2024
@@ -44,4 +42,4 @@ units:
 - learn.explore-azure-database-for-mysql-features-support-mission-critical-workloads.knowledge-check
 - learn.explore-azure-database-for-mysql-features-support-mission-critical-workloads.summary
 badge:
-  uid: learn.explore-azure-database-for-mysql-features-support-mission-critical-workloads.badge
+  uid: learn.explore-azure-database-for-mysql-features-support-mission-critical-workloads.badge

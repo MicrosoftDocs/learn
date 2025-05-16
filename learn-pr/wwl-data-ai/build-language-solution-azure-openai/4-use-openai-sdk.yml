@@ -2,8 +2,6 @@
 uid: learn.wwl.build-language-solution-azure-openai.use-openai-sdk
 title: Use Azure OpenAI SDK
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use Azure OpenAI SDK
   description: Understand how to use the C# and Python SDKs to connect to the available endpoints of an Azure OpenAI resource.
   author: ivorb
@@ -17,4 +15,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/4-use-openai-sdk.md)]
-
+

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-provision-deploy-non-relational-data-services-azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Azure Storage for non-relational data
   description: "This content is a part of Explore Azure Storage for non-relational data."
   ms.date: 09/17/2024
@@ -52,4 +50,4 @@ units:
 - learn.wwl.explore-provision-deploy-non-relational-data-services-azure.knowledge-check
 - learn.wwl.explore-provision-deploy-non-relational-data-services-azure.summary
 badge:
-  uid: learn.wwl.explore-provision-deploy-non-relational-data-services-azure.badge
+  uid: learn.wwl.explore-provision-deploy-non-relational-data-services-azure.badge

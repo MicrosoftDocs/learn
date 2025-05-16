@@ -2,8 +2,6 @@
 uid: learn.azure.publish-app-with-maven-plugin-for-azure-web-apps.authenticate-web-app-deployment
 title: Authenticate deployments to Azure App Service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Authenticate deployments to Azure App Service
   description: In this unit, you'll learn how to authenticate your web app deployments to Azure App Service.
   ms.date: 05/02/2024
@@ -53,4 +51,4 @@ quiz:
     - content: "Creating an Azure service principal, then modifying your Maven `settings.xml` file to use your service principal credentials."
       isCorrect: true
       explanation: "Using your service principal credentials in a Maven `settings.xml` file is the recommended method for authentication."
-
+

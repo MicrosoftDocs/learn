@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.teach-azure-204-develop-solution-microsoft-azure-academic-programs.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 06/02/2023
   author: wwlpublish
@@ -48,4 +46,4 @@ quiz:
       explanation: "Incorrect: GitHub is an Internet hosting service for software development and version control using Git. It provides the distributed version control of Git plus access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project, whereas Microsoft Graph allows you to take unique information from another security realm and bring that information forward by querying the values, always only with the appropriate permissions."
     - content: "Microsoft Graph"
       isCorrect: true
-      explanation: "Correct. Microsoft Graph allows you to take unique information from another security realm and bring that information forward by querying the values, always only with the appropriate permissions."
+      explanation: "Correct. Microsoft Graph allows you to take unique information from another security realm and bring that information forward by querying the values, always only with the appropriate permissions."

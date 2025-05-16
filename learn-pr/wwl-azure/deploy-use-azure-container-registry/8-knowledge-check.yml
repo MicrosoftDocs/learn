@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.deploy-use-azure-container-registry.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 04/01/2024
   author: wwlpublish
@@ -37,4 +35,4 @@ quiz:
       explanation: "Incorrect. The user wants to create a container registry instance, not a virtual machine instance."
     - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
       isCorrect: true
-      explanation: "Correct. An Azure Container Registry instance allows users to create a private registry service for building, storing, and managing container images and related artifacts. It also enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."
+      explanation: "Correct. An Azure Container Registry instance allows users to create a private registry service for building, storing, and managing container images and related artifacts. It also enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms."

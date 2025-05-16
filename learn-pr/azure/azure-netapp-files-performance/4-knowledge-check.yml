@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-netapp-files-performance.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge of Azure NetApp Files performance considerations. 
   ms.date: 11/18/2024
   author: b-ahibbard
@@ -59,4 +57,4 @@ quiz:
       explanation: "Incorrect. The maximum volume size allowed while using large volumes in Azure NetApp Files with Standard performance tier is 1,024."
 
 
- 
+ 

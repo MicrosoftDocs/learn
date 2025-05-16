@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-developer-self-service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement Developer Self-Service
   description: "This module focuses on enabling developers to independently manage their resources and workflows, fostering agility and innovation. Learners will understand the importance of combining flexibility with robust governance to ensure security, compliance, and operational consistency. The module also covers best practices for implementing and managing self-service capabilities within an organization."
   ms.date: 01/14/2025
@@ -65,4 +63,4 @@ units:
 - learn.wwl.implement-developer-self-service.knowledge-check
 - learn.wwl.implement-developer-self-service.summary
 badge:
-  uid: learn.wwl.implement-developer-self-service.badge
+  uid: learn.wwl.implement-developer-self-service.badge

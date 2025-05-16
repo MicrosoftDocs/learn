@@ -2,8 +2,6 @@
 uid: learn.azure.monitor-azure-arc-enabled-servers.develop-robust-data-foundation-azure-arc-enabled-servers-azure-monitor-metrics-logs
 title: Develop a robust data foundation of Azure Arc enabled servers with Azure Monitor Metrics and Logs
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Develop a robust data foundation of Azure Arc enabled servers with Azure Monitor Metrics and Logs
   description: Develop a robust data foundation of Azure Arc enabled servers with Azure Monitor Metrics and Logs
   ms.date: 08/17/2023
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/4-develop-robust-data-foundation-azure-arc-enabled-servers-azure-monitor-metrics-logs.md)]
-
+

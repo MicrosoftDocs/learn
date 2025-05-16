@@ -2,14 +2,12 @@
 uid: learn.analyze-logs-with-kql.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: "Use KQL to answer operational and business questions by interpreting and summarizing log data."
   ms.date: 02/11/2024
-  author: guywi-ms
-  ms.author: guywild
+  author: EliotSeattle
+  ms.author: eliotgra
   ms.topic: unit
 durationInMinutes: 2
 content: |

@@ -2,8 +2,6 @@
 uid: learn.azure.azure-netapp-files-data-protection.backups
 title: How does Azure NetApp Files backup work? 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-module
   title: How do Azure NetApp Files snapshot works?  
   description: Learn how Azure NetApp Files backup be used to protect and restore your data.    
@@ -13,4 +11,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-backups.md)]
+  [!include[](includes/3-backups.md)]

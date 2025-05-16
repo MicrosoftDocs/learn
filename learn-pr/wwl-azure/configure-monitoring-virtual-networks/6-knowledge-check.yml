@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-monitoring-virtual-networks.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 10/25/2023
   author: wwlpublish
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. The default warning threshold for Connection Monitor is 10 percent of result over 750 milliseconds."
     - content: "Ten percent of results over 750 milliseconds"
       isCorrect: true
-      explanation: "Correct. The default warning threshold for Connection Monitor is 10 percent of result over 750 milliseconds."
+      explanation: "Correct. The default warning threshold for Connection Monitor is 10 percent of result over 750 milliseconds."

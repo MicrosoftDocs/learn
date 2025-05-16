@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-generative-ai-center-excellence.skilling-your-organization
+title: Skilling your organization
+metadata:
+  title: Skilling your organization
+  description: Learn how the Generative AI CoE helps skilling your organization.
+  ms.date: 04/05/2025
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-skilling-your-organization.md)]

@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-command-line-tools-intro.scripting-environments
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Scripting environments
   description: Learn about command-line shells for managing and provisioning Azure resources
   ms.published: 02/27/2023
@@ -14,4 +12,4 @@ title: Scripting environments
 durationInMinutes: 3
 content: |
   [!include[](includes/scripting-environments.md)]
-
+

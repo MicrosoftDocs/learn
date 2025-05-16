@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Run parallel tasks in Azure Batch with the Azure CLI
   description: Find out about the Azure Batch capabilities designed to help you efficiently run large-scale parallel and high-performance computing applications in the cloud.
   manager: akashdubey
@@ -44,4 +42,4 @@ units:
 - learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli.summary
 badge:
   uid: learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli.badge
-
+

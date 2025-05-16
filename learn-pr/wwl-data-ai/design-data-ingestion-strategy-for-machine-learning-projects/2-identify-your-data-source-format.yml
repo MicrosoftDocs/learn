@@ -2,8 +2,6 @@
 uid: learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects.identify-your-data-source-format
 title: Identify your data source and format
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Identify your data source and format
   description: Identify your data source and format
   author: wwlpublish
@@ -17,4 +15,4 @@ labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/2-identify-your-data-source-format.md)]
-
+

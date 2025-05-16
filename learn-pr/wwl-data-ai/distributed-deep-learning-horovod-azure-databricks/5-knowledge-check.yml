@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.distributed-deep-learning-horovod-azure-databricks.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 03/27/2023
   author: wwlpublish
@@ -38,4 +36,4 @@ quiz:
       explanation: "That's incorrect. The correct callback to average metrics among workers at the end of every epoch is hvd.callbacks.MetricAverageCallback()."
     - content: "Reduce the learning rate if training plateaus."
       isCorrect: false
-      explanation: "That's incorrect. The correct callback to reduce the learning rate if training plateaus is ReduceLROnPlateau(patience=…)."
+      explanation: "That's incorrect. The correct callback to reduce the learning rate if training plateaus is ReduceLROnPlateau(patience=…)."

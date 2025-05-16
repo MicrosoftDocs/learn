@@ -2,8 +2,6 @@
 uid: learn.wwl.design-machine-learning-model-training-solution.decide-between-compute-options
 title: Integrate a model
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Integrate a model
   description: Integrate a model
   author: wwlpublish
@@ -17,4 +15,4 @@ labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/4-decide-between-compute-options.md)]
-
+

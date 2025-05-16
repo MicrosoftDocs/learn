@@ -2,8 +2,6 @@
 uid: learn.wwl.security-storage.authorize-requests-azure-storage
 title: Configure access control for storage accounts
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure access control for storage accounts
   description: "Configure access control for storage accounts"
   ms.date: 06/25/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-authorize-requests-azure-storage.md)]
+  [!include[](includes/3-authorize-requests-azure-storage.md)]

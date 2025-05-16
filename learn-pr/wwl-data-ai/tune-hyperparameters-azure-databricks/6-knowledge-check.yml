@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.tune-hyperparameters-azure-databricks.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 03/27/2023
   author: wwlpublish
@@ -38,4 +36,4 @@ quiz:
       explanation: "Incorrect. The model is not an argument for the `fmin()` function."
     - content: "The objective function, the search space, and the search algorithm."
       isCorrect: true
-      explanation: "Correct. The objective function `fn`, the search space `space`, and the search algorithm `algo` are arguments for the `fmin()` function."
+      explanation: "Correct. The objective function `fn`, the search space `space`, and the search algorithm `algo` are arguments for the `fmin()` function."

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand data warehouse developer features of Azure Synapse Analytics
   description: "Understand data warehouse developer features of Azure Synapse Analytics"
   ms.date: 06/23/2022
@@ -46,4 +44,4 @@ units:
 - learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.summary
 badge:
   uid: learn.wwl.understand-data-warehouse-developer-features-of-azure-synapse-analytics.badge
-
+

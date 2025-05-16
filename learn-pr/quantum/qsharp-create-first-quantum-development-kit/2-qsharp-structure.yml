@@ -2,8 +2,6 @@
 uid: learn.quantum.qsharp-create-first-quantum-development-kit.qsharp-structure
 title: What are the main components of a Q# program?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: How are Q# programs structured?
   description: Learn the structure of a basic Q# program.
   ms.date: 10/30/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/2-qsharp-structure.md)]
-
+

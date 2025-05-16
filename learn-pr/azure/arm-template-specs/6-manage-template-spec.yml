@@ -2,8 +2,6 @@
 uid: learn.azure.arm-template-specs.manage-template-spec
 title: Manage a template spec
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Manage a template spec
   description: Learn how to update template specs safely by using versions, and how to control access.
@@ -17,4 +15,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/6-manage-template-spec.md)]
-
+

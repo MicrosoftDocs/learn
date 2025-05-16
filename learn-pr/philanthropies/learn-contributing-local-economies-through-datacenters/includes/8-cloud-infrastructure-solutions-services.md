@@ -1,0 +1,5 @@
+## Cloud infrastructure solutions and services
+
+- **Technical Program Managers, Software Engineers**:
+
+  - Technical Program Managers and Software Engineers develop and manage the software and services essential for datacenter operations. This includes monitoring and management tools that track server performance, network traffic, and system health, as well as backup and recovery solutions like Veeam or Backup Exec for data protection. They also implement security software, including firewalls, intrusion detection/prevention systems (IDS/IPS), and antivirus solutions to safeguard against cyber threats.

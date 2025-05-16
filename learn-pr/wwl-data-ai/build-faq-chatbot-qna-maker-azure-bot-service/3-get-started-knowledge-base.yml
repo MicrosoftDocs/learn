@@ -2,11 +2,9 @@
 uid: learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service.get-started-qna-bot
 title: Get started with custom question answering
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Get started with custom question answering
   description: "Get started with custom question answering"
-  ms.date: 09/27/2024
+  ms.date: 4/23/2025
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit

@@ -2,8 +2,6 @@
 uid: learn.wwl.configure-azure-container-registry-container-app-deployments.examine-authentication-managed-identity
 title: Examine authentication with managed identity
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Examine authentication with managed identity
   description: "Examine authentication with managed identity"
   ms.date: 11/22/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 5
 content: |
-  [!include[](includes/5-examine-authentication-managed-identity.md)]
+  [!include[](includes/5-examine-authentication-managed-identity.md)]

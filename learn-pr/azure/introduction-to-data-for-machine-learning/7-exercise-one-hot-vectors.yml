@@ -2,8 +2,6 @@
 uid: learn.machinelearning.introduction-to-data-for-machine-learning.exercise-one-hot-vectors
 title: Exercise - Predict unknown values using one-hot vectors
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Predict unknown values using one-hot vectors
   description: Exercise unit using one-hot vectors to predict unknown values in machine learning
   ms.date: 10/10/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 10
 notebook: notebooks/3-7-exercise-one-hot-vectors.ipynb
 sandbox: true
-
+

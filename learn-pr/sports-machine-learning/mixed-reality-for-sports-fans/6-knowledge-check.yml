@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.sports-machine-learning.mixed-reality-for-sports-fans.knowledge-check
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Check to see how much you understood about the tools and frameworks for Mixed Reality.
   ms.date: 11/04/2022
   author: softchris
   ms.author: chnoring
   ms.topic: unit
   ms.custom: team=nextgen
-title: Knowledge check
+title: Module assessment
 durationInMinutes: 2
 content: Select the best answer for each question.
 quiz:

@@ -2,8 +2,6 @@
 uid: learn.quantum.qsharp-create-first-quantum-development-kit.8-summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 10/30/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]
-
+

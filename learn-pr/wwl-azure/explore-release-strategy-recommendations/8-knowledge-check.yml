@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-release-strategy-recommendations.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 05/21/2024
   author: wwlpublish
@@ -50,4 +48,4 @@ quiz:
       explanation: "Incorrect. Using stage you can pause and validate the pipeline with various checks."
     - content: "Quality Gate."
       isCorrect: false
-      explanation: "Incorrect. Using stage you can pause and validate the pipeline with various checks."
+      explanation: "Incorrect. Using stage you can pause and validate the pipeline with various checks."

@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.learn-best-practices-from-microsoft-technical-trainers-for-az-104.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 08/16/2022
   author: wwlpublish
@@ -50,4 +48,4 @@ quiz:
       explanation: "Correct. Case studies and labs are a feature of the Microsoft ARB certification exams."
     - content: "True or false, select one correct answer, or select multiple correct answers"
       isCorrect: false
-      explanation: "Incorrect. Microsoft ARB certification exams only include multiple-choice questions."
+      explanation: "Incorrect. Microsoft ARB certification exams only include multiple-choice questions."

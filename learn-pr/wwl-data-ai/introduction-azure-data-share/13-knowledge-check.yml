@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-to-azure-data-share.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 01/05/2022
   author: wwlpublish
@@ -37,4 +35,4 @@ quiz:
       explanation: "Correct. Since the recipient has already accepted the invitation and the share subscription has been created, you would have to revoke access in order to prevent access to the Data share"
     - content: "Perform no action. Accepted invitations time out after 30 days."
       isCorrect: false
-      explanation: "Incorrect. The invitation was already accepted, therefore deleting the invitation won’t prevent access to the Azure Data Share. Only revoking access will prevent access to the Data Share. Performing no action is not an option. Accepted invitations do not time out after 30 days, and you should revoke them."
+      explanation: "Incorrect. The invitation was already accepted, therefore deleting the invitation won’t prevent access to the Azure Data Share. Only revoking access will prevent access to the Data Share. Performing no action is not an option. Accepted invitations do not time out after 30 days, and you should revoke them."

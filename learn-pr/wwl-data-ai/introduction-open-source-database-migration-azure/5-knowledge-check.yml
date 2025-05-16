@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-open-source-database-migration-azure.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 11/07/2022
   author: wwlpublish
@@ -58,4 +56,4 @@ quiz:
       explanation: "That's incorrect. The Azure Database Migration Service is a great tool for migrating data, but currently doesn't support online migration of MySQL database."
     - content: "Upload the data to Azure storage, and configure Azure SQL Database to read the data from the storage account."
       isCorrect: false
-      explanation: "That's incorrect. This is a way to migrate your data, but there is an easier way that involves less effort."
+      explanation: "That's incorrect. This is a way to migrate your data, but there is an easier way that involves less effort."

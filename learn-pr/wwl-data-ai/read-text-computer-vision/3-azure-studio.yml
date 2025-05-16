@@ -2,13 +2,11 @@
 uid: learn.wwl.read-text-computer-vision.get-started-vision-studio
 title: Get started with Vision Studio on Azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Get started with Vision Studio on Azure
   description: Get started with the Vision Studio on Azure
   author: wwlpublish
   ms.author: sheryang
-  ms.date: 03/05/2024
+  ms.date: 04/23/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

@@ -1,11 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.try-azure-cosmos-db-sql-api
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Try Azure Cosmos DB for NoSQL
   description: "Try Azure Cosmos DB for NoSQL"
-  ms.date: 12/19/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: module-standard-task-based

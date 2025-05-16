@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.machinelearning.introduction-to-machine-learning.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Multiple-choice questions
   ms.date: 08/21/2024
   author: msakande
@@ -47,4 +45,4 @@ quiz:
     - content: "The model is used to make changes to the training data. These changes help the training data get better at achieving the objective."
       isCorrect: false
       explanation: "Incorrect. The training data and objective aren't normally changed during training."
-
+

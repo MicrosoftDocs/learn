@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.implement-cicd-iot-edge.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: In this section, we create interactive questions that validate if the learner understands the learning objectives.
   ms.date: 07/20/2024
   author: PatAltimore
@@ -36,4 +34,4 @@ quiz:
     - content: "Pipelines"
       isCorrect: true
       explanation: "CI/CD is implemented using pipelines."
-
+

@@ -1,15 +1,15 @@
 In this exercise, you add the feature "Display all dogs with a specified characteristic" (menu item #2) to the application. The exercise uses the solution project from the previous exercise that added `suggestedDonation` data.
 
 > [!NOTE]
-> This is a "minimal viable product" (MVP) feature. A MVP feature is intended to be a simple working prototype of a feature that enables quick and easy delivery. A MVP is not usually a final product, it is intended to help you work through an idea, test it, and gather further requirements.
+> This project is a "minimal viable product" (MVP) feature. MVP features are intended to be a basic working prototype of a feature that enables quick and easy delivery. An MVP isn't usually a final product, its purpose is to help you work through an idea, test it, and gather further requirements.
 
-The search feature prompts the user for a single search input term (or phrase) that describes a characteristic desired in a pet to adopt. Then, the descriptions for adoptable dogs are searched for exact matches of the user input.  Information about the dogs that match are output to the console.  If no matches are identified, then a message *"None of our dogs are a match"* is displayed along with the search term used.
+The search feature prompts the user for a single search input term (or phrase) that describes a characteristic desired in a pet to adopt. Then, the descriptions for adoptable dogs are searched for exact matches of the user input. Information about the dogs that match are output to the console. If no matches are identified, then a message *"None of our dogs are a match"* is displayed along with the search term used.
 
 The tasks that you complete during this exercise are:
 
 1. Gather user input for the pet characteristic search term
 1. Loop through the animals array and identify "dogs"
-1. For each dog, search the pet description for a term match
+1. Search each dog's pet description for a term match
 1. Display the dogs that have a term match
 
  In Visual Studio Code, open the completed Project.cs file from the previous exercise that added the donation information to get started.
@@ -27,7 +27,7 @@ The tasks that you complete during this exercise are:
         break; 
     ```
 
-1. Add code to gather user input for the `dogCharacteristic` string. Gather the input requires a `while` loop that continues to prompt the user until they submit an input. The loop instructs the user to *"Enter one desired dog characteristic to search for"*. Entering an empty string repeats the loop. Place the following code following `case "2:` just before the `break;` statement as shown:
+1. Add code to gather user input for the `dogCharacteristic` string. Gather the input requires a `while` loop that continues to prompt the user until they submit an input. The loop instructs the user to `Enter one desired dog characteristic to search for`. Entering an empty string repeats the loop. Place the following code following `case "2:` just before the `break;` statement as shown:
 
     ```csharp
     case "2":
@@ -51,7 +51,7 @@ The tasks that you complete during this exercise are:
 
     Review the added code. The main features of the `case "2":` code include:
 
-    - The code starts with a string declaration `string dogCharacteristic = "";` that is scoped to `case "2":`. You  won't be able to utilize `dogCharacteristic` anywhere outside of the case statement code.
+    - The code starts with a string declaration `string dogCharacteristic = "";` that is scoped to `case "2":`. You can't utilize `dogCharacteristic` anywhere outside of the case statement code.
     - After `Console.ReadLine()` gathers user input as `dogCharacteristic` it ensures value isn't null, and sets the string to lowercase and trims the surrounding spaces.
     - If `dogCharacteristic` has a null value, then the loop repeats gathering input.
 
@@ -59,13 +59,13 @@ The tasks that you complete during this exercise are:
 
 1. Run the code by using `dotnet run`.
 
-1. Test the search term input functionality of the app by entering `2` to select Menu Option "2" searching.
+1. To test the search term input functionality of the app, enter `2`, selecting Menu Option `2`, for searching.
 
-1. Press **"Enter"** without entering data at the *"Enter one desired dog characteristic to search for"* prompt. The program should return to the "Enter one desired dog characteristics to search for" prompt.
+1. Press **"Enter"** without entering data at the *"Enter one desired dog characteristic to search for"* prompt. The program should return to the `Enter one desired dog characteristics to search for` prompt.
 
 1. The program should return to the prompt until characters are entered.
 
-1. At the prompt test search term entry *"golden"*. The program should return to the menu without error.
+1. At the prompt, test search term entry, with `golden` as your entry. The program should return to the menu without error.
 
 1. At the menu, type "Exit" to exit the program.
 
@@ -88,7 +88,7 @@ Now you add a feature to search using the user input `dogCharacteristic` within 
 
 1. Take a minute to examine the loop added to the end of the `case "2":` code.
 
-    The code filters for "dogs" using `ourAnimals[i,`**`1`**`]`, where `animalSpecies` data is stored. If `animalSpecies` is storing *"dog"* then the code moves into the brackets of the if statement where the search of the combined descriptions can occur.
+    The code filters for "dogs" using `ourAnimals[i,`**`1`**`]`, where `animalSpecies` data is stored. If `animalSpecies` stores *"dog"*  as its value, then the code moves into the brackets of the if statement where the search of the combined descriptions can occur.
 
 1. Compile your code by using `dotnet build` and fix any errors.
 
@@ -96,10 +96,10 @@ Now you add a feature to search using the user input `dogCharacteristic` within 
 
 The previous code ensures that you search only dog descriptions. Now you need to search the dog descriptions and output information about matches.
 
-While thinking about the descriptions, you realize there are two descriptions `animalPhysicalDescription` and `animalPersonalityDescription;`. After consulting, the team decides that a combined description is appropriate for the search.
+While thinking about the descriptions, you realize there are two descriptions `animalPhysicalDescription` and `animalPersonalityDescription;`. The team discusses the functionality and decides that a combined description is appropriate for the search.
 
 > [!NOTE]
-> Some developers refer to the addition of requirements during development as "scope creep." Although combining the descriptions is not a lot of work, it still adds time and complexity. For this reason, you should let the team know that added requirements will likely delay the completion of the project.
+> Some developers refer to the addition of requirements during development as "scope creep." Although combining the descriptions isn't much work, it still adds time and complexity. For this reason, you should let the team know that added requirements often delay the completion of the project.
 
 ### Combine the dog descriptions to make it easier to search
 
@@ -110,9 +110,10 @@ You need to declare a string, `dogDescription` to hold the combined data that or
     ```csharp
     string dogDescription = "";
     ```
-    Now you can use the `dogDescription` string declared you need to populate it with the two descriptions for each animal
 
-1. Using the `dogDescription` variable populate it with `animalPhysicalDescription` and `animalPersonalityDescription;`.  
+    Now use the previously declared `dogDescription` string and populate it with the physical and personality descriptions for each animal
+
+1. Populate the `dogDescription` variable with the values for `animalPhysicalDescription` and `animalPersonalityDescription;`.  
 
     Add the following code after comment # 7:
 
@@ -178,7 +179,7 @@ Now you add the search for `dogCharacteristic` in the combined data of `dogDescr
     
     ```
 
-    That's the the final code for this exercise!
+    This code sample is the final code for this exercise!
 
 1. Save your changes.
 
@@ -190,7 +191,7 @@ Now you add the search for `dogCharacteristic` in the combined data of `dogDescr
 
 1. Run your project code in the terminal with `dotnet run`.
 
-    When the code runs two menu items are displayed.
+Once the code runs, two menu items are displayed.
 
 1. At the menu, enter "`2`" and "Enter" to test the dog search repeatedly.
 
@@ -199,6 +200,6 @@ Now you add the search for `dogCharacteristic` in the combined data of `dogDescr
         - Enter "golden" to get two matches
         - Enter "medium" to get one match
 
-    If everything worked as expected in both steps, congratulations! Otherwise, look for the errors by checking the exercise steps.  If needed, start over or check the Final folder code for solution code to this exercise.
+    If everything worked as expected in both steps, congratulations! Otherwise, look for the errors by checking the exercise steps. If needed, start over or check the Final folder code for solution code to this exercise.
 
 1. Type `exit`, at the app menu, to end the program and then close the terminal panel.
