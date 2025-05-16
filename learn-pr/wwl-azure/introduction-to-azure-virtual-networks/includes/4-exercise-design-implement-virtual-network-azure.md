@@ -16,7 +16,7 @@ Contoso Ltd, a fictitious organization, is in the process of migrating infrastru
 
 
 > [!IMPORTANT]
-> This exercise is estimated to take 30 minutes. 
+> Estimated time: 30 minutes.
 > To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
 
 [![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/Instructions/Exercises/M01-Unit%204%20Design%20and%20implement%20a%20Virtual%20Network%20in%20Azure.html)

@@ -15,7 +15,7 @@ In this lab, you configure DNS name resolution for Contoso Ltd. You create a pri
 
 
 > [!IMPORTANT]
-> This exercise is estimated to take 30 minutes. 
+> Estimated time: 30 minutes.
 > To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
 
 [![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/Instructions/Exercises/M01-Unit%206%20Configure%20DNS%20settings%20in%20Azure.html)
