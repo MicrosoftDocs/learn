@@ -3,7 +3,7 @@ uid: learn.wwl.security-copilot-and-ai
 metadata:
   title: 'Enhance security operations by using Microsoft Security Copilot (SC-5006)'
   description: 'Enhance security operations by using Microsoft Security Copilot (SC-5006).'
-  ms.date: 01/13/2025
+  ms.date: 05/20/2025
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: learning-path
@@ -39,6 +39,7 @@ modules:
 - learn-wwl.security-copilot-getting-started
 - learn.security-copilot-describe-core-features
 - learn.security-copilot-embedded-experiences
+- learn.security-copilot-describe-agents
 - learn.security-copilot-exercises
 trophy:
   uid: earn.wwl.security-copilot-and-ai.trophy
