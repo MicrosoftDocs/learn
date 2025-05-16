@@ -30,9 +30,7 @@ The transport server component provides three types of multicasting, described i
 | -- | -- |
 |   Scheduled-Cast with client count| Schedule-Cast is a multicast type that you can use to schedule a multicast session. When you specify a client count, the server waits until the defined count of connected clients is reached, and then it starts to send the information.           |
 |   Scheduled-Cast with point in time                |   When you specify a point in time, the server waits until the specified time and begins deployment to connected client computers.       |
-|    Auto-cast               |Auto-cast is a type of multicast that creates a new session automatically for each client connection received. A target can join an Auto-cast at any time, and the server repeats the transmission for as long as targets are connected.              |
-
-:::image type="content" source="../media/m4-windows-deploy-2.png" alt-text="A screenshot of SEA-ADM1 Properties dialog box in Windows Deployment Services. The administrator has selected the Multicast tab, and a specified range of IPv4 and IPv6 addresses is selected.":::
+|    Autocast               |Autocast is a type of multicast that creates a new session automatically for each client connection received. A target can join an Autocast at any time, and the server repeats the transmission for as long as targets are connected.              |
 
 ### Deployment Server
 
@@ -46,7 +44,7 @@ The deployment server provides the following functionality:
 > Sessions are created by using the Deployment Server interface to push an image that are to be applied to PXE clients.
 
 - Image store. The image store manages images uploaded to a server running WDS. You can use two types of images in Windows Deployment Services: boot images and install images.
-- WDS Client. The WDS client is an integral part of Windows PE. It is the component responsible for connecting to a server running WDS, joining a session, and applying an install image.
+- WDS Client. The WDS client is an integral part of Windows PE. It's the component responsible for connecting to a server running WDS, joining a session, and applying an install image.
 - TFT Server. WDS acts as a trivial FTP (TFTP) server. 
 
 #### Deployment images
@@ -64,9 +62,9 @@ You also can use Windows Deployment Services in conjunction with other technolog
 > [!NOTE]
 > To implement ZTI deployment, you'll also need Microsoft Endpoint Configuration Manager (former System Center Configuration Manager).
 
-## Demonstration
+## Deployment steps
 
-The following video demonstrates how to deploy Windows Server by using WDS. The main steps in the process are:
+The main steps in the deployment process are:
 
 1. Install the Windows Deployment Services role.
 2. Configure the Windows Deployment Services role:
@@ -75,13 +73,11 @@ The following video demonstrates how to deploy Windows Server by using WDS. The 
     - Configure **PXE Server Initial Settings** to **Respond to all client computers (known and unknown)**.
 
 3. Add a boot image called boot.wim from D:\Sources.
-4. Create an image group called **Windows Server 2019**.
+4. Create an image group called **Windows Server 2025**.
 5. Add an install image called install.wim from D:\Sources.
-6. Select the Windows Server 2019 SERVERSTANDARDCORE image.
+6. Select the Windows Server 2025 SERVERSTANDARDCORE image.
 7. Verify the settings for WDS:
 
     - Verify **Always continue the PXE boot** setting.
     - In the boot image section, verify **Microsoft Windows Setup (x64)** is selected.
     - Review the multicast settings.
-
- >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4McIa]

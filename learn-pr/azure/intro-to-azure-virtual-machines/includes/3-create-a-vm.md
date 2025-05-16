@@ -2,7 +2,7 @@ You've planned out the network infrastructure and identified a few VMs to migrat
 
 #### Options to create and manage VMs
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yJKx]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=8790339c-187e-4ebe-85f6-6c57b8c869cb]
 
 Let's explore the Azure portal first - it's the easiest way to start with Azure.
 

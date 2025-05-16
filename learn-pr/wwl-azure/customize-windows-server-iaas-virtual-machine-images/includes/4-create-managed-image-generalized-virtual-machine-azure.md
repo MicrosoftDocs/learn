@@ -1,11 +1,9 @@
-
-
 In this demonstration, you'll learn to:
 
 - Generalize the Windows VM using Sysprep.exe.
 - Create a managed image in the Azure portal.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CXDZ]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=3a6025aa-da85-47e6-83c3-f6b2e22d3346]
 
 ## Next steps
 

@@ -35,7 +35,7 @@ Examining these tables, you can see that they have the same columns. The only di
 
 1. Notice that you get all the rows from the three tables. Try modifying the query to add simulated data for France and combining it with the data from the other countries/regions.
 
-In the following sections, you use the `let` statement to create ad hoc tables that simulate data, with the columns required for the scenarios.
+In the following sections, you use the `let` statement to create improvised tables that simulate data, with the columns required for the scenarios.
 
 ## Use the `union` operator with tables that have different columns
 
@@ -68,7 +68,7 @@ The next month, your sales team again asks you to create the sales data from the
 
     :::image type="content" source="../media/6-union-2.png" alt-text="Screenshot of the union operator, with tables that have different columns, query, and results.":::
 
-1. Notice that you get all the rows from the three tables and all the columns that occur in any of the tables. Cells that aren't defined by an input row are set to null. Try modifying the query to add more columns and see how their values are populated in the results.
+1. Notice that you get all the rows from the three tables and all the columns that occur in any of the tables. Cells that the input row doesn't define are set to null. Try modifying the query to add more columns and see how their values are populated in the results.
 
 ## Use the `union` operator with tables that have different columns and return only the columns that occur in all tables
 

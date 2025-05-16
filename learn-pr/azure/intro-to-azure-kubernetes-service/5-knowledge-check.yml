@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-kubernetes-service.knowledge-check
-title: Knowledge check
+title: Module assessment
 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   ms.date: 11/26/2024
   author: nickomang
@@ -54,4 +52,4 @@ quiz:
     - content: "Bridge to Kubernetes"
       isCorrect: true
       explanation: "Bridge to Kubernetes allows for the development of code in isolation, and do end-to-end testing with other components without replicating or mocking up dependencies."
-
+

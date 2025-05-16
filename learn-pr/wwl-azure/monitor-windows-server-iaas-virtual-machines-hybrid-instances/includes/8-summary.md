@@ -1,5 +1,3 @@
-
-
 The Contoso IT Engineering team has been exploring how Azure services might modernize the current operational model through automation and virtualization. The IT staff understands the process of gathering event log data from on-premises Windows Servers, but there are concerns about how to mirror this process with virtualized workloads in Azure IaaS VMs. You were tasked with conducting further research into consolidating and analyzing event log data from Windows Server IaaS VMs, and configuring a task to run in Azure when a specific event is written to an event log in a Windows Server IaaS VM.
 
 In this module, you learned how to implement Azure Monitor for IaaS VMs in Azure, how to implement Azure Monitor in on-premises environments, and how to use dependency maps. Now, you and Contoso's IT Team can effectively use Azure Monitor to optimize administration of your existing deployments and to forecast capacity requirements for future deployments.

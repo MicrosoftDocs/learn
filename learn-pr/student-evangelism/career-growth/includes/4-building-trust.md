@@ -61,5 +61,5 @@ Seek specific feedback from your manager, teammates, and colleagues. What is exp
 You should know by the end of an internship how much you have grown and what people think of your performance.
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Oxol]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c97f13b2-7781-40ae-b315-0bd8e341fe14]
 > *Developer Advocate Gustavo Cordido discusses the importance of asking questions.*

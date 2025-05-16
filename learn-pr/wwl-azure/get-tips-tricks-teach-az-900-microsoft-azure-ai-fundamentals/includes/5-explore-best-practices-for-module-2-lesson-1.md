@@ -4,7 +4,7 @@ AZ-900: Module 2, Lesson 1: Azure architectural components
 
 As you're preparing to teach this lesson, get familiar with what the students will learn during the lesson. In this lesson, students will learn about Azure’s architectural hierarchy, regions and physical data centers, and Microsoft’s data center.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dSQj]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7213e86f-b1b6-4f0a-bd8e-35d6a1a5b51c]
  
 Module 2, Lesson 1 Tips and Tricks
 

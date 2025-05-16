@@ -12,7 +12,7 @@ There are three deployment models for cloud computing: public cloud, private clo
 
 ### Public versus private versus hybrid
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yEv7]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3cee4ae9-ad04-4d8c-877d-adde5b95e7c5]
 
 ## Public cloud
 

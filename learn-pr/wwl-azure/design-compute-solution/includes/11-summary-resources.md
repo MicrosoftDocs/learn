@@ -12,8 +12,6 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 
 - What is the difference between Azure Functions and Azure Logic Apps? Provide examples when to use each product. 
 
-
-
 ## Learn more with Azure documentation
 
 - Choose an [Azure compute service](/azure/architecture/guide/technology-choices/compute-decision-tree).
@@ -38,26 +36,21 @@ Copilot can assist you in designing Azure infrastructure solutions. Copilot can 
 
 ## Learn more with self-paced training
 
-- Choose the [best Azure service to automate your business processes](/training/modules/choose-azure-service-to-integrate-and-automate-business-processes/).
+- Complete the [Describe Azure compute and networking services](/training/modules/describe-azure-compute-networking-services/) module.
 
-- Align [requirements with cloud types and service models in Azure](/training/modules/align-requirements-in-azure/).
+- Complete the [Introduction to Azure virtual machines](/training/modules/intro-to-azure-virtual-machines/) module.
 
-- Complete an [introduction to Azure Logic Apps](/training/modules/intro-to-logic-apps/).
+- Complete the [Create an Azure Batch account by using the Azure portal](/training/modules/create-batch-account-using-azure-portal/) module. 
 
-- Complete an [introduction to Azure Kubernetes Service](/training/modules/intro-to-azure-kubernetes-service/).
+- Complete the [Configure Azure App Service](/training/modules/configure-azure-app-services/) module.
 
-## Learn more with optional hands-on exercises
+- Complete the [Configure Container Instance](/training/modules/configure-azure-container-instances/) module.
 
-- Practice with an [Introduction to Azure Virtual Machines (sandbox)](/training/modules/intro-to-azure-virtual-machines/).
+- Complete the [Introduction to Azure Kubernetes Service](/training/modules/intro-to-azure-kubernetes-service/).
 
-- Create an [Azure Batch account by using the Azure portal](/training/modules/create-batch-account-using-azure-portal/). _(Azure subscription required.)_
+- Complete the [Explore Azure Functions](/training/modules/explore-azure-functions/) module.
 
-- Create [serverless logic with Azure Functions (sandbox)](/training/modules/create-serverless-logic-with-azure-functions/).
+- Complete the [introduction to Azure Logic Apps](/training/modules/intro-to-logic-apps/) module.
 
-- Create a [web app in the Azure portal (sandbox)](/training/modules/host-a-web-app-with-azure-app-service/3-exercise-create-a-web-app-in-the-azure-portal?pivots=csharp).
 
-- Create a [Windows virtual machine (sandbox)](/training/modules/create-windows-virtual-machine-in-azure/3-exercise-create-a-vm).
 
-- Create the [social media tracker Logic App (sandbox)](/training/modules/route-and-process-data-logic-apps/4-ex-create-social-media-tracker).
-
-- Host a [web application with Azure App Service (sandbox)](/training/modules/host-a-web-app-with-azure-app-service/).

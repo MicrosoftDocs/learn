@@ -2,9 +2,6 @@ You can use Windows PowerShell to automate the management of most tasks involvin
 
 Group Policy management cmdlets are part of the **GroupPolicy** module for Windows PowerShell. Cmdlet names include the prefix “GP” in the names, and most have “GPO” as the noun.
 
-> [!NOTE]
-> The **GroupPolicy** module for Windows PowerShell hasn't been officially tested with PowerShell versions 6 or 7.x. It's recommended to use Windows PowerShell to run **GroupPolicy** module cmdlets.
-
 **Additional reading:** For more information on PowerShell Core module compatibility, refer to [PowerShell 7 module compatibility](https://aka.ms/powershell-7-module-compatibility).
 
 The following table lists common cmdlets for managing GPOs.

@@ -56,7 +56,7 @@ Your EQ affects your mindset, which in turn plays an important role in how you m
 
 To learn more about how you can cultivate a growth mindset, review the following short video.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OFD7]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=21897ef2-1ca9-4d28-9474-c34655ec3970]
 
 ### How does EQ affect your mindset?
 

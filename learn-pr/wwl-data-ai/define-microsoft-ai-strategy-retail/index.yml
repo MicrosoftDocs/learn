@@ -29,6 +29,8 @@ roles:
 - business-user
 products:
 - azure-openai
+- industry-solutions
+- mscloud-retail
 subjects:
 - data-management
 units:

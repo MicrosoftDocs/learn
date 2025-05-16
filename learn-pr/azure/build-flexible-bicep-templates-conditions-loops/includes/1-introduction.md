@@ -8,7 +8,7 @@ You expect that the toy will be very popular, and your company plans to launch i
 
 :::image type="content" source="../media/1-architecture-diagram.png" alt-text="Architecture diagram illustrating a resource group containing Azure SQL logical servers in multiple countries/regions." border="false":::
 
-## What will we be doing?
+## What will we learn?
 
 In this module, you'll extend a Bicep template by using conditions and loops. You'll:
 

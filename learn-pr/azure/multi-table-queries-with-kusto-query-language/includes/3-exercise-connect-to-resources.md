@@ -7,7 +7,7 @@ To complete the exercises in this module, you need one of the following accounts
 
 ## Connect to the data
 
-In this exercise, you use the Azure Data Explorer web interface to connect to the data. However, you can also use the Kusto Query Language itself in Azure Monitor Logs, Azure Sentinel, and other services. You only need to connect once. Then, continue to use this data connection for all queries throughout this module.
+In this exercise, you use the Azure Data Explorer web interface to connect to the data. However, you can also use the Kusto Query Language itself in Azure Monitor Logs, Microsoft Sentinel, and other services. You only need to connect once. Then, continue to use this data connection for all queries throughout this module.
 
 1. Use your Azure account to sign in to the [Azure Data Explorer web UI](https://dataexplorer.azure.com/).
 1. In the left pane, select the  **+ Add** dropdown, and then select **Connection**.

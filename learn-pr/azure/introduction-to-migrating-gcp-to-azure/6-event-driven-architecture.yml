@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-migrating-gcp-azure.event-driven-architecture
+title: Select event-driven architecture and messaging solutions
+metadata:
+  title: Select Event-Driven Architecture and Messaging Solutions
+  description: "Learn about solutions that you can use to queue and respond to events and messages in Azure. Compare those solutions to equivalents in Google Cloud."
+  ms.date: 01/16/2025
+  author: carols
+  ms.author: carols
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-event-driven-architecture.md)]

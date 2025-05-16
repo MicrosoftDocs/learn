@@ -1,14 +1,8 @@
-
-
 In this demonstration, you'll learn to:
 
 - Enable Microsoft Entra login in a Windows VM.
 
-
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4AD4X]
-
-
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2a160776-e4f9-4a55-897d-1cc9d70b24a4]
 
 ## Next steps
 

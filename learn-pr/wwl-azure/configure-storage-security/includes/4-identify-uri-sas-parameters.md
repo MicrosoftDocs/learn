@@ -22,3 +22,9 @@ https://myaccount.blob.core.windows.net/?restype=service&comp=properties&sv=2015
 | **IP range** | **`sip`**`=168.1.5.60-168.1.5.70` | Specifies a range of IP addresses from which a request is accepted. This example defines the IP address range 168.1.5.60 through 168.1.5.70.|
 | **Protocol** | **`spr`**`=https` | Specifies the protocols from which Azure Storage accepts the SAS. This example indicates that only requests by using HTTPS are accepted. |
 | **Signature** | **`sig`**`=F%6GRVAZ5Cdj2Pw4tgU7Il` `STkWgn7bUkkAg8P6HESXwmf%4B` | Specifies that access to the resource is authenticated by using a Hash-Based Message Authentication Code (HMAC) signature. The signature is computed with a key using the SHA256 algorithm, and encoded by using Base64 encoding. |
+
+### Things to know about this exam topic
+
+[Create and use shared access signature (SAS) tokens](/credentials/certifications/resources/study-guides/az-104) is covered on the AZ-104 Azure Administrator certification. If you are taking the exam, here is short snippet from the [Implement and manage storage](/shows/exam-readiness-zone/preparing-for-az-104-implement-and-manage-storage-2-of-5) exam preparation video. 
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=02f55e9b-5b93-4867-800b-b60d42b1c979]

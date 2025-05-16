@@ -8,10 +8,6 @@ Azure Storage includes object, file, disk, queue, and table storage. There are a
 
 With Azure AI Custom Vision (part of the Azure AI services) you can associate a set of images to Tracked Objects, train a machine-learning model on the set you created, and detect the Tracked Object.
 
-## Azure Spatial Anchors
-
-Azure Spatial Anchors is a managed cloud service and platform that enables multiuser, spatially aware mixed-reality and augmented-reality (MR/AR) apps for HoloLens, iOS devices with ARKit, and Android devices with ARCore.
-
 ## InternetClient
 
 Apps can receive incoming data from the Internet. InternetClient can't act as a server and has no local network access.

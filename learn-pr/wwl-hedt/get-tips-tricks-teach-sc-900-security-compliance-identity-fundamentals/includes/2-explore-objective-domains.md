@@ -1,6 +1,6 @@
 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWXhNN]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=43c46044-414a-499e-954b-6fa294ad177c]  
 
 All topics covered in the [SC-900: Microsoft Security, Compliance, and Identity Fundamentals](https://aka.ms/SC900Exam) course are related to foundational knowledge of cloud services and how those services are provided with Microsoft Azure and map directly to [Exam SC-900: Microsoft Security, Compliance, and Identity Fundamentals](https://aka.ms/SC900Exam). Percentages indicate the relative weight of each area on the exam. The higher the percentage, the more questions you're likely to see in that area. For the most up-to-date breakdown, access the [SC-900 study guide](https://aka.ms/SC900StudyGuide) from the [Exam SC-900: Microsoft Security, Compliance, and Identity Fundamentals](https://aka.ms/SC900Exam) page.
 

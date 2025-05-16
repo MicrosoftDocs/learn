@@ -1,4 +1,4 @@
-You can use VMware SRM and vSphere Replication with Azure VMware Solution for disaster recovery of VMware virtual machines (VMs).
+You can use VMware Site Recovery Manager (SRM) and vSphere Replication with Azure VMware Solution for disaster recovery of VMware vSphere virtual machines (VMs).
 
 ## Example scenario
 

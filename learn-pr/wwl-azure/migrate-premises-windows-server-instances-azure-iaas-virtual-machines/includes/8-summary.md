@@ -1,4 +1,3 @@
-
 Contoso has an outdated operational model with limited automation and reliance on dated technology, and with most of its compute environment running on-premises on Windows Server. Contoso wants to assess and migrate on-premises Windows Server instances to Azure.
 
 Using Azure Migrate, you can assess and migrate on-premises Windows Server instances to Azure. You were tasked with planning and testing the process of migrating server workloads to Azure.

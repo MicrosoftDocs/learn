@@ -11,7 +11,7 @@ This module consists of two lessons:
 - Lesson 1 – Explore Dynamics 365 Human Resources core capabilities
 - Lesson 2 – Explore personnel management capabilities in Microsoft Dynamics 365 Human Resources
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWXi7U]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=af68842f-9f8d-4b72-a316-8ad71a224a0e]
  
 Module 5 Tips and Tricks
 

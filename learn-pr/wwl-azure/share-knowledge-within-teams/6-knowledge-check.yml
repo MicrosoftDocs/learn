@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.share-knowledge-within-teams.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 05/24/2024
   author: wwlpublish
@@ -48,4 +46,4 @@ quiz:
       explanation: "Incorrect. You can use Create with the Azure Boards integration to create a work item."
     - content: "Unlink."
       isCorrect: false
-      explanation: "Incorrect. You can use Unlink with the Azure Boards integration to unlink a project from the channel."
+      explanation: "Incorrect. You can use Unlink with the Azure Boards integration to unlink a project from the channel."

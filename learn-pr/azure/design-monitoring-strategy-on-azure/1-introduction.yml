@@ -1,15 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-monitoring-strategy-on-azure.1-introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction
-  ms.date: 11/13/2023
+  ms.date: 01/22/2025
   author: kayodeprinceMS
   ms.author: kaprince
   ms.topic: unit
 title: Introduction
 durationInMinutes: 5
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/1-introduction.md)]

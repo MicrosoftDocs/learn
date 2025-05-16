@@ -5,8 +5,8 @@ metadata:
   title: Inputs and Outputs
   description: Inputs and Outputs
   author: patridge
-  ms.author: adpatrid
-  ms.date: 05/26/2023
+  ms.author: robmcm
+  ms.date: 03/14/2025
   ms.topic: unit
 durationInMinutes: 10
 content: |
@@ -15,44 +15,44 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which of the following data sources need to be validated?'
+  - content: "Which of the following data sources need to be validated?"
     choices:
-    - content: 'Data from a 3rd party API'
+    - content: "Data from a third-party API"
       isCorrect: false
-      explanation: 'This is just one of many sources that needs to be validated.'
-    - content: 'Data from the URL parameter'
+      explanation: "This is just one of many sources that needs to be validated."
+    - content: "Data from the URL parameter"
       isCorrect: false
-      explanation: 'This is just one of many sources that needs to be validated'
-    - content: 'Data collected from the user via an input field'
+      explanation: "This is just one of many sources that needs to be validated."
+    - content: "Data collected from the user via an input field"
       isCorrect: false
-      explanation: 'This is just one of many sources that needs to be validated.'
-    - content: 'All of the above'
+      explanation: "This is just one of many sources that needs to be validated."
+    - content: "All of the above"
       isCorrect: true
-      explanation: 'All these sources of data need to be validated. Never trust any data that could have been modified.'
+      explanation: "All these sources of data need to be validated. Never trust any data that could have been modified."
 
-  - content: 'Parameterized queries (stored procedures in SQL) are a secure way to talk to the database because:'
+  - content: "Parameterized queries (stored procedures in SQL) are a secure way to talk to the database because:"
     choices:
-    - content: 'They&#39;re more organized than inline database commands, and therefore less confusing for users.'
+    - content: "They're more organized than inline database commands, and therefore less confusing for users."
       isCorrect: false
-      explanation: 'Organization of the code is not the reason that parameterized queries are more secure than inline SQL.'
-    - content: 'There&#39;s a clear outline of the script in the stored procedure, ensuring better visibility.'
+      explanation: "Organization of the code isn't the reason that parameterized queries are more secure than inline SQL."
+    - content: "There's a clear outline of the script in the stored procedure, ensuring better visibility."
       isCorrect: false
-      explanation: 'Clear outline of the script is not the reason that parameterized queries are more secure than inline SQL.'
-    - content: 'Parameterized queries substitute variables before running queries, meaning it avoids the opportunity for code to be submitted in place of a variable.'
+      explanation: "Clear outline of the script isn't the reason that parameterized queries are more secure than inline SQL."
+    - content: "Parameterized queries substitute variables before running queries, meaning it avoids the opportunity for code to be submitted in place of a variable."
       isCorrect: true
-      explanation: 'Parameter fields used in parameterized queries are treated as data, not code, protecting against injection vulnerabilities. For more information on how to implement parameterized queries please see the [OWASP Query Parameterization Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Query_Parameterization_Cheat_Sheet.html).'
+      explanation: "Parameter fields used in parameterized queries are treated as data, not code, protecting against injection vulnerabilities. For more information on how to implement parameterized queries please see the [OWASP Query Parameterization Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Query_Parameterization_Cheat_Sheet.html)."
 
-  - content: 'Which of the following data needs to be output encoded?'
+  - content: "Which of the following data needs to be output encoded?"
     choices:
-    - content: 'Data saved to the database'
+    - content: "Data saved to the database"
       isCorrect: false
-      explanation: 'Although data saved to the database needs to be validated to ensure the data is good, we don&#39;t need to encode it for output.'
-    - content: 'Data to be output to the screen'
+      explanation: "Although data saved to the database needs to be validated to ensure the data is good, we don't need to encode it for output."
+    - content: "Data to be output to the screen"
       isCorrect: true
-      explanation: 'Data sent to the screen needs to be output encoded to ensure it&#39;s never interpreted as code.'
-    - content: 'Data sent to a 3rd party API'
+      explanation: "Data sent to the screen needs to be output encoded to ensure it's never interpreted as code."
+    - content: "Data sent to a third-party API"
       isCorrect: false
-      explanation: 'Although data sent to a 3rd party API needs to be validated to ensure the data is good, we don&#39;t need to encode it for output.'
-    - content: 'Data in the URL parameters'
+      explanation: "Although data sent to a third-party API needs to be validated to ensure the data is good, we don't need to encode it for output."
+    - content: "Data in the URL parameters"
       isCorrect: false
-      explanation: 'Although data from URL Parameters needs to be validated before it&#39;s used in our application, we don&#39;t need to encode it for output.'
+      explanation: "Although data from URL Parameters needs to be validated before it's used in our application, we don't need to encode it for output."

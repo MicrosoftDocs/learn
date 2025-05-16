@@ -1,8 +1,12 @@
-All of the data we've explored up to this point has been static data in files. However, many data analytics scenarios involve *streaming* data that must be processed in near real time. For example, you might need to capture readings emitted by internet-of-things (IoT) devices and store them in a table as they occur. Spark processes batch data and streaming data in the same way, enabling streaming data to be processed in real-time using the same API.
+All of the data we explored up to this point has been static data in files. However, many data analytics scenarios involve *streaming* data that must be processed in near real time. For example, you might need to capture readings emitted by internet-of-things (IoT) devices and store them in a table as they occur. Spark processes batch data and streaming data in the same way, enabling streaming data to be processed in real-time using the same API.
 
 ## Spark Structured Streaming
 
-A typical stream processing solution involves constantly reading a stream of data from a *source*, optionally processing it to select specific fields, aggregate and group values, or otherwise manipulate the data, and writing the results to a *sink*.
+A typical stream processing solution involves:
+
+- Constantly reading a stream of data from a *source*.
+- Optionally, processing the data to select specific fields, aggregate and group values, or otherwise manipulating the data.
+- Writing the results to a *sink*.
 
 Spark includes native support for streaming data through *Spark Structured Streaming*, an API that is based on a boundless dataframe in which streaming data is captured for processing. A Spark Structured Streaming dataframe can read data from many different kinds of streaming source, including:
 
@@ -69,7 +73,7 @@ stream_df = spark.readStream.format("delta") \
 ```
 
 > [!NOTE]
-> When using a Delta table as a streaming source, only *append* operations can be included in the stream. Data modifications will cause an error unless you specify the `ignoreChanges` or `ignoreDeletes` option.
+> When using a Delta table as a streaming source, only *append* operations can be included in the stream. Data modifications can cause an error unless you specify the `ignoreChanges` or `ignoreDeletes` option.
 
 You can check that the stream is streaming by using the `isStreaming` property which should return True:
 
@@ -131,7 +135,7 @@ When finished, stop the streaming data to avoid unnecessary processing costs usi
 
 ```python
 # Stop the streaming data to avoid excessive processing costs
-delta_stream.stop()
+deltastream.stop()
 ```
 
 > [!TIP]

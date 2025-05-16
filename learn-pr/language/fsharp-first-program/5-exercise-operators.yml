@@ -4,9 +4,8 @@ title: Exercise - Build a calculator program
 metadata:
   title: Exercise - Build a calculator program
   description: In this unit, you'll keep working on your calculator project. You'll add features like reading user input, type conversion, and performing a mathematical operation.
-  author: softchris
-  ms.author: chnoring
-  ms.manager: markl
+  author: baronfel
+  ms.author: chethusk 
   ms.date: 02/24/2023
   ms.topic: unit
   ms.custom: team=nextgen

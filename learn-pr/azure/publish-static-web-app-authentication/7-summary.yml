@@ -2,13 +2,11 @@
 uid: learn.azure.publish-static-web-app-authentication.7-summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: summary
   ms.date: 12/20/2022
-  author: sinedied
-  ms.author: yolasors
+  author: craigshoemaker
+  ms.author: cshoe
   ms.topic: unit
   ms.custom:
   - team=nextgen
@@ -18,4 +16,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
-
+

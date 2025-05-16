@@ -1,16 +1,16 @@
-Let's look at how to create and modify dashboards in the Azure portal. In this unit, you learn about creating and using dashboards. And in the next unit, you'll try out the things you've learned.
+Let's look at how to create and modify dashboards in the Azure portal. In this unit, you learn about creating and using dashboards. In the next unit, you'll try out the things you've learned.
 
 ## What is a dashboard?
 
-A *dashboard* is a customizable collection of UI tiles displayed in the Azure portal. You can add, remove, and position tiles to create the exact view you want, and then save that view as a dashboard. You can configure multiple dashboards and you can switch among them as needed. You can even share your dashboards with other team members.
+A *dashboard* is a customizable collection of UI tiles displayed in the Azure portal. You can add, remove, and position tiles to create the exact view you want, then save that view as a dashboard. You can configure multiple dashboards, and you can switch among them as needed. You can even share your dashboards with other team members.
 
 Dashboards give you flexibility in what information to display. For example, you can create dashboards for specific roles within the organization, then use role-based access control (RBAC) to control who can access each dashboard.
 
-Dashboards are stored as JavaScript Object Notation (JSON) files. This format means you can download a dashboard and edit the file directly, then upload it again to Azure, or share it with other users. Azure stores dashboards within resource groups, just like any other resource that you can manage within the portal.
+Dashboards are stored as JavaScript Object Notation (JSON) files. This format means you can download a dashboard and edit the file directly, then upload it again to Azure or share it with other users. Azure stores dashboards within resource groups, just like any other resource that you can manage within the portal.
 
 ## Explore the default dashboard
 
-The default dashboard is named "Dashboard". When you sign in to the Azure portal and select **Dashboard** from the portal menu, you see this dashboard containing five tiles.
+The default dashboard is named "Dashboard." When you sign in to the Azure portal and select **Dashboard** from the portal menu, you see this dashboard containing five tiles.
 
 :::image type="content" source="../media/6-dashboard-default-webparts.png" alt-text="Screenshot showing the default dashboard in the Azure portal.":::
 
@@ -40,7 +40,7 @@ You can also select **Export**, then select **Print** to print a copy of current
 
 ## Edit a dashboard using the portal
 
-To use the portal to make changes your current dashboard, select the **Edit** (pencil icon) button or right-click the dashboard background area and select **Edit**.
+To use the portal to make changes your current dashboard, select the **Edit** (**pencil** icon) button or right-click the dashboard background area and select **Edit**.
 
 The dashboard switches to edit mode.
 
@@ -57,7 +57,7 @@ In edit mode, the dashboard work area is divided into squares. Each tile must oc
 
 ### Change tile sizes
 
-Some tiles have a set size, and you can only edit their size  programmatically. However, if a tile has a gray bottom right-hand corner, you can resize it by dragging the corner indicator.
+Some tiles have a set size, and you can only edit their size programmatically. However, if a tile has a gray bottom right-hand corner, you can resize it by dragging the corner indicator.
 
 :::image type="content" source="../media/6-resizable-tile.png" alt-text="Screenshot of a tile with the resizable corner indicator highlighted.":::
 
@@ -97,4 +97,4 @@ Cloning is an easy way to create dashboards before sharing them. For example, if
 
 Deleting a dashboard removes it from your list of available dashboards. You're prompted to confirm that you want to delete the dashboard, but there's no way to recover a dashboard that has been deleted.
 
-Now let's try out some of these options by creating a new dashboard.
+Now, let's try out some of these options by creating a new dashboard.

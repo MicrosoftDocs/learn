@@ -1,4 +1,4 @@
-The first step in moderating content by using Azure AI Content Safety is to provision an Azure OpenAI Service resource in your Azure subscription. You can get started by creating a project resource in Azure AI Foundry.
+The first step in moderating content by using Azure AI Content Safety is to provision an Azure OpenAI Service resource in your Azure subscription. You can get started by creating a project resource in [Azure AI Foundry](https://ai.azure.com).
 
 Projects are hosted by an Azure AI hub resource that provides enterprise-grade security and a collaborative environment. A project is used to organize your work and save state while building customized AI apps.
 
@@ -12,11 +12,9 @@ In Azure, resources enable access to Azure services for individuals and teams. R
 > This exercise uses the East US region because that region supports all features that this module includes. If you select a different region, you might not be able to complete the exercises. To learn more, see [Region availability](/azure/ai-services/content-safety/overview#region-availability).
 
 1. In [Azure AI Foundry](https://ai.azure.com/), select **+Create project**.
-1. Complete the following fields:
-    - **Project name**: Provide a name for your project.
-    - **Hub**: Select **Create new hub** and enter a name for the hub.
-1. Select the arrow next to **Azure resources to be created** to review the resources that will be created.
+1. For **Project name**, provide a name for your project.
 1. Select **Customize** and modify the following fields as needed:
+    - **Hub name**: Select an existing hub or provide a name for a new one.
     - **Subscription**: Select your Azure subscription.
     - **Resource group**: Select an existing resource group or create a new one.
     - **Location**: Select **East US**.

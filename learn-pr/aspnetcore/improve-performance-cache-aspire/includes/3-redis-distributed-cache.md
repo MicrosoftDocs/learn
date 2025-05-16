@@ -1,12 +1,12 @@
-In a cloud-native app, separate teams build microservices with their preferred technologies on their own schedules. The microservices usually operate completely independently. They may benefit from caching but, if they run separate caches, they may be unable to realize the optimal performance improvement. If you provide a single cache for multiple microservices, those services can retrieve information from the cache that has been stored by another microservice.
+In a cloud-native app, separate teams build microservices with their preferred technologies on their own schedules. The microservices usually operate independently. They might benefit from caching but, if they run separate caches, they might be unable to realize the optimal performance improvement. If you provide a single cache for multiple microservices, those services can retrieve information from the cache that another microservice stored.
 
-Imagine you work for an outdoor equipment retailer. You've decided to implement caching using a Redis server in your shopping cart microservice. However, you also want to ensure that other microservices can benefit from the information you cache. 
+Imagine you work for an outdoor equipment retailer. You decide to implement caching using a Redis server in your shopping cart microservice. However, you also want to ensure that other microservices can benefit from the information you cache. 
 
-In this unit, you'll learn how a distributed Redis cache can optimize performance for multiple microservices in your app. You'll also see how .NET Aspire makes it easy to implement a distributed cache.
+In this unit, you learn how a distributed Redis cache can optimize performance for multiple microservices in your app. You also see how .NET Aspire makes it easy to implement a distributed cache.
 
 ## What is distributed caching?
 
-A distributed cache is one that is shared between several calling services. In a cloud-native application, the calling services are usually microservices. When you store some information, for example the details of a popular product in your catalog, in the distributed cache, all the microservices in your app can potentially use it and gain from the performance improvement.
+A distributed cache is one that is shared between several calling services. In a cloud-native application, the calling services are usually microservices. When you store some information, such as the details of a popular product in your catalog, in the distributed cache, all the microservices in your app can potentially use it and gain from the performance improvement.
 
 ## Setting up distributed caching in .NET Aspire
 
@@ -40,7 +40,7 @@ builder.AddProject<Projects.ConsumingProject>()
 To install the .NET Aspire Distributed Cache integration in a microservice, use a command like this one in your .NET Aspire projects:
 
 ```dotnetcli
-dotnet add package Aspire.StackExchange.Redis.DistributedCache --prerelease
+dotnet add package Aspire.StackExchange.Redis.DistributedCaching
 ```
 
 Again, you can alternatively choose to use the NuGet package manager to install the integration:
@@ -81,7 +81,7 @@ public class MyService(IDistributedCache cache)
 
 ## Configuration
 
-For the microservices to connect to the Redis distributed cache, you must tell them where it is by providing a connection string. The above call to the `AddRedisDistributedCache()` method specified a connection string called `redis`.
+For the microservices to connect to the Redis distributed cache, you must tell them where it is by providing a connection string. In the previous example, the call to the `AddRedisDistributedCache()` method specified a connection string called `redis`.
 
 Use a `ConnectionStrings` section in your configuration file, for example in _appsettings.json_, to configure the connection string:
 

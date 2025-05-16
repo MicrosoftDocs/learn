@@ -34,6 +34,9 @@ Let’s create a system message for the Contoso Camping Store chatbot that instr
 
 1. Select **Apply changes**.
 
+> [!NOTE]
+> If a notification appears warning that updating the system message will start a new chat session, select **Continue**.
+
 ## Add a safety system message
 
 When defining more safety and behavioral guardrails, it’s helpful to first identify and prioritize the harms you’d like to address. Depending on the application, the sensitivity and severity of certain harms could be more important than others. Azure AI Foundry provides pre-made **Safety system messages** that can be appended to your system message.
@@ -43,7 +46,7 @@ When defining more safety and behavioral guardrails, it’s helpful to first ide
 1. Select the **+ Add section** drop-down and select **Safety system messages**.
 1. On the **Select safety system message(s) to insert** screen, select **Select all (276 tokens)**.
 1. Select **Insert**.
-1. Within the **Safety system message**, replace the final bullet point (it starts with ‘You must always perform searches…’) within the **To Avoid Fabrication or Ungrounded Content** section with the following:
+1. Within the **To Avoid Fabrication or Ungrounded Content** of the **Safety system message**, replace the final bullet point (it starts with ‘You must always perform searches…’) within the with the following:
 
     *You must always perform searches on the product data when the user is seeking information (explicitly or implicitly), regardless of internal knowledge or information.*
 

@@ -1,4 +1,4 @@
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4U6tz] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=789389c2-90d3-41c1-8bc2-7012ba9edbaa] 
 
 The exam skills measured page gives you the details related to the exam and the skills measured. Each module in the course materials maps to the domain objectives: 
 

@@ -6,7 +6,7 @@ Self-efficacy is an idea that lies at the heart of the question, "How confident 
 
 In this unit, you learn about self-efficacy and its role in achieving successful outcomes. For an introduction to this important skill, review the following short video.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OFCs]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ea3f6deb-c533-4bfa-ac37-fef03517763f]
 
 ### Reflection
 

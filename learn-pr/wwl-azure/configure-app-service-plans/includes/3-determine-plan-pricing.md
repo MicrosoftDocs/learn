@@ -18,15 +18,15 @@ The pricing tiers are grouped into three categories:
    - This tier provides network isolation on top of compute isolation to your apps. 
    - This tier provides the maximum scale-out capabilities.
 
-Here's a sample of different plan details. For more information, use the Azure portal to select *Create App Service Plan* and then *Explore pricing plans*. 
+Here's a sample of different [plan details](/azure/app-service/overview-hosting-plans). 
 
-| Feature | Free and Shared | Basic | Standard | Premium | 
+| Feature | Free F1 | Basic B1 | Standard S1 | Premium P1V3 | 
 | --- | --- | --- | --- | --- | 
-| Usage | Development, Testing | Dedicated development, Testing | Production workloads | Enhanced scale, performance | 
-| Staging slots | n/a | 5 | 5 | 20 |
-| Disk space | 1 GB | 1 GB | 10 GB | 50 GB | 
-| Auto scale | n/a | Supported (Manual) | Supported (Rules) | Supported (Rules, Elastic) |
-| Max instances | n/a | Up to 3 | Up to 10 | Up to 30 |
+| Usage | Development, Testing | Development, Testing | Production workloads | Enhanced scale, performance | 
+| Staging slots | N/A | N/A | 5 | 20 |
+| Auto scale | N/A | Manual | Rules | Rules, Elastic |
+| Scale instances | N/A | 3 | 10 | 30 |
+| Daily backups | N/A | N/A | 10 | 50 |
 
 ### Free and Shared
 
@@ -47,3 +47,18 @@ The Premium service plan is designed to provide enhanced performance for product
 ### Isolated
 
 The Isolated service plan is designed to run mission critical workloads that are required to run in a virtual network. The Isolated plan allows customers to run their applications in a private, dedicated environment in an Azure datacenter. The plan offers Dv2-series virtual machines with faster processors, SSD storage, and a double memory-to-core ratio compared to the Standard tier. The private environment used with an Isolated plan is called the App Service Environment. The plan can scale to 100 instances with more available upon request.
+
+## Task to be done: Select an App Service plan
+
+You can view the available App Service plans in the Azure portal. You can make your choice based on hardware or feature requirements. Hardware considerations include CPU, memory, and scaling instances. Feature considerations include backups, staging slots, and zone redundancy. 
+
+> [!TIP]
+> When selecting a service plan, consider both hardware and feature requirements.
+
+1. In the Azure portal search for and select **App Service plans**. 
+1. **Create** a new App Service plan. 
+1. Select **Explore pricing plans** to view the available plans.
+
+:::image type="content" source="../media/appserviceplans.gif" alt-text="Animated graphic showing how to view app service plans in the portal.":::
+
+

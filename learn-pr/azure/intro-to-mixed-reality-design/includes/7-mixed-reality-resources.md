@@ -30,7 +30,7 @@ If you decided already to use Unity, go ahead and jump right into it. However, i
 
 MRTK is a Microsoft-led open-source project that provides a set of components and functionalities to speed up your creation of cross-platform MR apps in Unity. You can find crucial building blocks for spatial interactions and UI for mixed reality that Microsoft's mixed reality design and engineering team designed and polished.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyXHW ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=cc38bb9d-449c-4909-8ce0-ae7916a278ee ]
 
 There's no one-size-fits-all audience for MRTK. From first-time hackathons to individuals creating complicated and shared workplace experiences, it accommodates various use cases by design. Some code and APIs might be created to favor one over the other. For example, some elements of the MRTK appear to be more optimized for *one-click configure*. It's important to note that some of these differences are due to historical and resource reasons. As MRTK develops, it plans to add features that are scalable to suit various use cases.
 
@@ -49,7 +49,7 @@ MRTK offers the following features:
 
 The MRTK Figma Toolkit includes 2D versions of the Microsoft HoloLens 2 style UI controls seen in the **MRTK for Unity** and **MRTK for Unreal** toolkits. These controls can be used to make UI layouts and storyboards. For example, after you create a flat layout with MRTK's components, you can experiment with depth (z-position, rotation, and so on) in Unity or Unreal. Visit the MRTK Figma Toolkit Documentation<sup>13</sup> to learn more.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWGqke ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=077587f8-8a8c-4802-81d1-4b800393808f ]
 
 Most of the controls in this Figma file's UI Gallery are a 2D replica of controls available as prefabs in MRTK for Unity. These prefabs are available in the MRTK Toolbox. Since the building components are visually similar, you or your Unity expert can easily recreate any layouts you design here in Unity.
 
@@ -57,7 +57,7 @@ Most of the controls in this Figma file's UI Gallery are a 2D replica of control
 
 The MRTK Figma Bridge for Unity allows you to import Figma Toolkit layouts into Unity. The bridge can import a UI layout developed using the MRTK Figma Toolkit and then create the corresponding MRTK prefabs with the correct size and position. Figma Bridge aids design integration and collaboration between designers and developers.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWKiO4  ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f9f312ef-99ac-4291-9430-3f073b602d77  ]
 
 Learn more about MRTK Figma Bridge for Unity<sup>14</sup>.
 

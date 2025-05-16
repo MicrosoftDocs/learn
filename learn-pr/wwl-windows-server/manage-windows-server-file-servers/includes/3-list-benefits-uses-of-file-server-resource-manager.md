@@ -13,7 +13,7 @@ You can use FSRM to manage and classify data that is stored on file servers. FSR
 - Storage reports. This feature helps with identifying trends in disk usage and effectiveness of data classification. You can also monitor attempts by a selected group of users to save unauthorized files.
 - File Classification Infrastructure. This feature automates the data classification process. You can dynamically apply access policies to files based on their classification. Example policies include Dynamic Access Control for restricting access to files, file encryption, and file expiration. You can classify files automatically by using file classification rules, or you can classify them manually by modifying the properties of a selected file or folder.
 - File management tasks. This feature allows you to apply conditional policies and actions to files based on such criteria as file location, classification properties, in addition to file creation, modification, or access date. The actions that file management tasks support include the ability to expire files, encrypt files, or run a custom command.
-- Access-denied assistance. This feature generates custom error messages to users who are not able to access files because of insufficient permissions or FSRM-based protection mechanisms.
+- Access-denied assistance. This feature generates custom error messages to users who aren't able to access files because of insufficient permissions or FSRM-based protection mechanisms.
 
 > [!NOTE]
 > You can configure and manage FSRM by using the File Server Resource Manager Microsoft Management Console (MMC) console or by using Windows PowerShell.
@@ -29,14 +29,8 @@ The main steps in the process are:
 
 1. Create AD DS environment. Create a single-domain AD DS forest with a domain member server containing a single NTFS-formatted data volume.
 1. Configure quota management. Set the quota limit on the data volume.
-1. Validate quota management. Create a file which size is much lower than the limit and verify that the operation was successful. Try creating another file slightly higher than the quota limit and verify that the operation failed. Finally, check the amount of space available on the volume.
+1. Validate quota management. Create a file which size is lower than the limit and verify that the operation was successful. Try creating another file slightly higher than the quota limit and verify that the operation failed. Finally, check the amount of space available on the volume.
 1. Configure file screening. Configure blocking of image files.
 1. Validate quota management. Try creating a file with the extension .png and verify the operation failed.
 
- >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Mfsg]
-
----
-
-
-
----
+ >[!VIDEO https://learn-video.azurefd.net/vod/player?id=6c942c27-2f14-4418-87f2-90e1c0b2a352]

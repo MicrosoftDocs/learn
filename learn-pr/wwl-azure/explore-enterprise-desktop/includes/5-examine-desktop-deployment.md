@@ -30,4 +30,4 @@ Even with a successful deployment, data loss is almost always unacceptable. Many
 - **Use the User State Migration tool** The User State Migration Tool is used when local data or application settings migration is necessary. You can use User State Migration Tool (USMT) 10.0 to streamline and simplify user state migration during large deployments of Windows operating systems. USMT captures user accounts, user files, operating system settings, and application settings and migrates them to a new Windows installation. You can use USMT for both PC replacement and PC refresh migrations.
 
 >[!Note]
->For more information, see Common migration scenarios. "/windows/deployment/usmt/usmt-common-migration-scenarios"
+>For more information, see [Common migration scenarios](/windows/deployment/usmt/usmt-common-migration-scenarios).

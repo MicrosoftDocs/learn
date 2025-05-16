@@ -1,4 +1,4 @@
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4UfcM] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2d09d34c-06ca-47a8-ba88-3e11480f5d7b] 
 
 The Microsoft Fundamentals exams include case studies. These case studies provide detailed information on business and technical requirements needed to solve problems. Case studies require students to integrate information across multiple sources, determine what's essential, and make the best decision. Students must then answer several questions that refer to the case study.  
 

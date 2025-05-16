@@ -10,6 +10,6 @@ Become familiar with the objective domains, which are a comprehensive set of spe
 
 - **Module 4:** Security Operations 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE50u1q] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=604c2a89-2851-44be-bb45-bb98aaef5aef] 
 
 Remember that each module points back to the core theme of Azure security and how security and Azure and Cloud technologies are vitally important. Details for each module are included in the corresponding module best practice sections below. 

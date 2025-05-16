@@ -1,6 +1,6 @@
  It's important to prepare for delivering cutting-edge technical instruction in your classes. We suggest that all faculty members get certified in the content they will be teaching. As one of the benefits of MSLE, all faculty members receive a discounted Microsoft Certification exam voucher, the discount varies by program option. Achieving your own certification helps you understand the process your students will be going through, giving you first-hand experience with the exam that you're preparing them to take. 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4U5xY] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b2a1fbcf-12c5-432b-9c96-4bf120b513e2] 
 
 To request a certification exam voucher: 
 

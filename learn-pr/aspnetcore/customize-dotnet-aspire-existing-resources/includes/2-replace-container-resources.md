@@ -15,7 +15,7 @@ You can deploy to these services easily by using Visual Studio or the Azure Deve
 
 This default configuration may suit your needs. It keeps all the resources in a single location and administrators with good ACA or AKS skills are familiar with the environment. However, it also requires you to manage containers for those backing services.
 
-If you want to reduce your administrative load for those backing services, you can deploy some of those services to an Azure Platform-as-a-Service (PaaF) solution. For example, instead of running a PostgreSQL database in a container in AKS, you can choose to deploy that database to the Azure Database for PostgreSQL service.
+If you want to reduce your administrative load for those backing services, you can deploy some of those services to an Azure Platform-as-a-Service (PaaS) solution. For example, instead of running a PostgreSQL database in a container in AKS, you can choose to deploy that database to the Azure Database for PostgreSQL service.
 
 ## Using Azure PaaS database services with a .NET Aspire solution
 

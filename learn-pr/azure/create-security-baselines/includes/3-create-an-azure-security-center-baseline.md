@@ -2,32 +2,7 @@ Microsoft Defender for Cloud provides unified security management and advanced t
 
 ## Microsoft Defender for Cloud security recommendations
 
-The following sections describe the Microsoft Defender for Cloud recommendations that are in CIS Microsoft Azure Foundations Security Benchmark v. 1.3.0. Included with each recommendation are the basic steps to complete in the Azure portal. You should complete these steps for your own subscription and by using your own resources to validate each security recommendation. Keep in mind that **Level 2** options might restrict some features or activity, so carefully consider which security options you decide to enforce.
-
-### Enable enhanced security features - Level 2
-
-Microsoft Defender for Cloud is offered in two modes, **Without enhanced security features (Free)** and **With enhanced security features**. Enabling enhanced security extends the capabilities of the Free mode to workloads that run in private clouds and other public clouds. Enhanced security also provides unified security management and threat protection across your hybrid cloud workloads. This mode also adds advanced threat detection capabilities, such as:
-
-- Built-in behavioral analytics and machine learning to identify attacks and zero-day exploits.
-- Access and application controls to reduce exposure to network attacks and malware.
-
-Microsoft Defender for Cloud with all enhanced security features offers threat detection provided with Microsoft Security Response Center and supports resources deployed in:
-
-- Azure Virtual Machines
-- Virtual machine scale sets
-- Azure App Service
-- Azure SQL Server
-- Azure Storage
-
-1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Microsoft Defender for Cloud**.
-
-1. In the left menu under **General**, select **Getting started**.
-
-1. Select the **Upgrade** tab, and then select the subscription to upgrade. The **Resources** pane shows the resources that will be protected and the billing cost per resource.
-
-1. Select the **Upgrade** button.
-
-    :::image type="content" source="../media/microsoft-defender-for-cloud/upgrade-subscription.png" alt-text="Screenshot that shows the getting started with Microsoft Defender for Cloud pane.":::
+The following sections describe the Microsoft Defender for Cloud recommendations that are in CIS Microsoft Azure Foundations Security Benchmark v. 3.0.0. Included with each recommendation are the basic steps to complete in the Azure portal. You should complete these steps for your own subscription and by using your own resources to validate each security recommendation. Keep in mind that **Level 2** options might restrict some features or activity, so carefully consider which security options you decide to enforce.
 
 ### View Microsoft Defender for Cloud built-in security policies
 
@@ -44,20 +19,6 @@ To see the Microsoft Defender for Cloud security policies for your Azure subscri
 The enabled policies define the Microsoft Defender for Cloud recommendations, as shown in the following example:
 
 :::image type="content" source="../media/microsoft-defender-for-cloud/policy-settings.png" alt-text="Screenshot that shows the built-in security policies for Defender for Cloud.":::
-
-### Enable automatic provision of the Log Analytics agent - Level 1
-
-When you enable automatic provisioning, Defender for Cloud installs the Azure Log Analytics agent on all supported Azure VMs and on any new VMs you create. *Automatic provisioning is strongly recommended*.
-
-1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Microsoft Defender for Cloud**.
-
-1. In the left menu under **General**, select **Getting started**.
-
-1. Select the **Install agents** tab, and then select the subscription to install agents on.
-
-1. Select the **Install agents** button.
-
-    :::image type="content" source="../media/microsoft-defender-for-cloud/install-agents.png" alt-text="Screenshot that shows the getting started pane and the Install agents tab.":::
 
 ### Enable System Updates - Level 1
 

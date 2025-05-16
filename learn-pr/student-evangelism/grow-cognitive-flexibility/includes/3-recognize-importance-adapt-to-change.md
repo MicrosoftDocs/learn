@@ -13,7 +13,7 @@ As you progress in your learning, change can introduce obstacles or setbacks. By
 
 To better understand how cognitive flexibility helps you adapt to change, review the following video. It's about three minutes long.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OApT]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e7a85f99-95a2-432b-92c9-c9c76ab57152]
 
 Cognitive flexibility helps to reframe change as a positive thing. This process enables you to have an open mind to the various alternatives and possibilities that might reveal themselves. If you're apprehensive about change, you'll subconsciously try to block it, which might prevent you from making the most of the positive outcomes from that change.
 

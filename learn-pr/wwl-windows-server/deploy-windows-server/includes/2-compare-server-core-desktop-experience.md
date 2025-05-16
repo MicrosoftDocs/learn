@@ -1,13 +1,13 @@
-When you install Windows Server 2019, you must choose between installing the server with or without the Desktop Experience. 
+When you install Windows Server 2025, you must choose between installing the server with or without the Desktop Experience. 
 
 > [!IMPORTANT]
 > This is a critical decision because you can't add or remove the Desktop Experience after you install the server.
 
-Server Core is an installation of Windows Server without the Desktop Experience. Server Core is available for both Standard and Datacenter editions, but it isn't available for Windows Server 2019 Essentials, and the free version of Hyper-V server is only available as a Server Core installation.
+Server Core is an installation of Windows Server without the Desktop Experience. Server Core is available for both Standard and Datacenter editions, but it isn't available for Windows Server 2025 Essentials, and the free version of Hyper-V server is only available as a Server Core installation.
 
-You can administer and configure Server Core on the server itself through PowerShell, the command line, or through the text-based tool called Sconfig.
+You can administer and configure Server Core on the server itself through PowerShell, the command line, or through the text-based tool called SConfig.
 
-:::image type="content" source="../media/m4-sconfig-1.png" alt-text="A screenshot of Sconfig in an elevated Command Prompt window.":::
+:::image type="content" source="../media/m4-sconfig-1.png" alt-text="A screenshot of SConfig in an elevated Command Prompt window.":::
 
 Remote administration is the normal method of managing the server by using several tools such as PowerShell Remoting, the Remote Server Administration Tool (RSAT), and the Windows Admin Center. The following table describes the available tools locally.
 
@@ -26,13 +26,13 @@ Server Core has advantages over Windows Server with Desktop Experience and is th
 
 | Advantages                                                   | Disadvantages                                                |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Small footprint which uses fewer server resources and less disk space, as little as 5 GB for a basic installation | You can't install several applications on Server Core. The applications include System Center VM Manager 2019, System Center Data Protection Manager 2019, SharePoint Server 2019, Project Server 2019, and Exchange versions prior to Exchange 2019. |
-| Because Server Core installs fewer components, there are fewer software updates. This reduces the number of monthly restarts required and the time required for you to service Server Core. | Several roles and role services are not available, including Remote Desktop Services Session Host, Web Access, and Gateway service; Fax Server; SMTP Server; and Windows PowerShell ISE. |
+| Small footprint which uses fewer server resources and less disk space, as little as 5 GB for a basic installation | You can't install several applications on Server Core. The applications include System Center VM Manager 2025, System Center Data Protection Manager 2025, SharePoint Server 2025, Project Server, and Exchange Server. |
+| Because Server Core installs fewer components, there are fewer software updates. This reduces the number of monthly restarts required and the time required for you to service Server Core. | Several roles and role services aren't available, including Remote Desktop Services Session Host, Web Access, and Gateway service; Fax Server; and Windows PowerShell ISE. |
 | The small attack surface makes Server Core much less vulnerable to exploits | You can't install many vendor lines of business applications on Server Core. However, the App Compatibility Feature on Demand can help mitigate that in some cases. |
 
 ## Available server roles
 
-Although some server roles are not available, the following server roles are available on Server Core deployments:
+Although some server roles aren't available, the following server roles are available on Server Core deployments:
 
 - Active Directory Certificate Services
 - AD DS
@@ -61,7 +61,7 @@ After you have installed Windows Server, you typically should complete the follo
 - Enable the Remote Desktop feature.
 - Configure Windows Defender Firewall settings.
 
-You can perform this post-installation configuration using Sconfig. You can also use tools such as Windows Admin Center and PowerShell remoting to complete these tasks on Server Core.
+You can perform this post-installation configuration using SConfig. You can also use tools such as Windows Admin Center and PowerShell remoting to complete these tasks on Server Core.
 
 > [!NOTE]
 > Although you can enable Remote Desktop on Server Core, it only enables RDP connectivity to the to the command line interface.

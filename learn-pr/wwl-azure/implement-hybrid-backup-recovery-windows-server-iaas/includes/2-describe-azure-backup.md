@@ -1,4 +1,3 @@
-
 Contoso depends on computing resources for their operations and needs to maintain business continuity. To develop a business continuity plan, the IT team must identify the necessary steps to recover from a disaster that impacts computing resources availability. The two most common means of facilitating business continuity are implementing a comprehensive backup, and developing a disaster recovery strategy. Azure offers dedicated services that not only considerably simplify these tasks.
 
 ## What is Azure Backup?
@@ -28,7 +27,7 @@ All Azure Backup components (regardless of whether you're protecting data on-pre
 
 |Benefit|Description|
 |----|----|
-| Automatic storage management|Azure Backup automatically allocates and manages backup storage, using a pay-as-you-use model.|
+|Automatic storage management|Azure Backup automatically allocates and manages backup storage, using a pay-as-you-use model.|
 |Unlimited scaling|There is no need to worry about high availability for your data in the cloud.|
 |Two storage options|Azure Backup offers two types of replication: locally redundant storage (LRS), and geo-redundant storage (GRS).|
 |Unlimited data transfer|Azure Backup doesn't limit the amount of inbound or outbound data you transfer.|

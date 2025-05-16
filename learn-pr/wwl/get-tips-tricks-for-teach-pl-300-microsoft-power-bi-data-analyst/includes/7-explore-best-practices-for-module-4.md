@@ -12,7 +12,7 @@ This module consists of three lessons:
 - Lesson 2 – Working with tables 
 - Lesson 3 – Dimensions and hierarchies 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5aJzr]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3e0502c5-c38f-4fb3-ba71-d9253ad7ddd2]
 
 Module 4 Tips and Tricks 
 

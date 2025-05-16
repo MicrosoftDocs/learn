@@ -21,7 +21,7 @@ Last, there are a few servers that look similar to a standard rack-mounted serve
 The following video describes various server form factors:
 <br>
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4pXFF]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=9838a0c4-abcb-41f5-bb01-247bcf4c83d9]
 
 An important feature found in most rack-mounted servers is hot-swap capability. Components such as PSU, fans, and hard drives can be removed and replaced while the server stays running. This feature increases uptime/reliability on small- and medium-scale deployments. Large-scale application deployments require more sophisticated resiliency to be built into software layers. These large-scale systems do not use hot-swap or redundant components for individual servers, but instead consider the entire server to be failed (and replaced) as a unit.
 
@@ -142,4 +142,3 @@ InfiniBand and 40-Gbit Ethernet are also being deployed as a **converged network
 _Figure 5: An InfiniBand switch._ ([Source](https://en.wikipedia.org/wiki/File:UTP_cable.jpg))
 
 The choice of network technology and topology to deploy in a datacenter also depends on your applications but will typically include multiple tiers, with the connection between the tiers being high-speed fiber. Copper UTP cabling is prevalent within the rack and will continue to function well for low-speed management networks.
-

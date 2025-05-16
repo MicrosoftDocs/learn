@@ -1,0 +1,57 @@
+### YamlMime:LearningPath
+uid: learn.wwl.designing-implementing-platform-engineering
+metadata:
+  title: Designing and Implementing Platform Engineering
+  description: This learning path provides a comprehensive guide to designing and implementing platform engineering within modern enterprises. It covers the foundational principles, strategic alignment with business goals, and the practical aspects of building scalable, secure, and future-proof platforms. By following this path, learners will gain the knowledge and skills needed to enhance developer productivity, ensure operational excellence, and drive continuous innovation.
+  ms.date: 01/13/2025
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: learning-path
+title: Designing and Implementing Platform Engineering
+prerequisites: |
+  Successful learners will have prior knowledge and understanding of the following:
+  -   Cloud computing concepts include understanding PaaS, SaaS, and IaaS implementations.
+  -   Azure administration and Azure development with proven expertise in at least one of these areas.
+  -   Intermediate to advanced DevOps concepts, including version control, Agile software development, and core software development principles. It would be helpful to have experience in an organization that delivers software.
+summary: |
+  This learning path provides a comprehensive guide to designing and implementing platform engineering within modern enterprises. It covers the foundational principles, strategic alignment with business goals, and the practical aspects of building scalable, secure, and future-proof platforms. By following this path, learners will gain the knowledge and skills needed to enhance developer productivity, ensure operational excellence, and drive continuous innovation.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+  - advanced
+roles:
+  - administrator
+  - ai-engineer
+  - developer
+  - devops-engineer
+  - network-engineer
+  - security-engineer
+  - solution-architect
+  - startup-founder
+  - technology-manager
+products:
+  - azure
+  - azure-devops
+  - github
+subjects:
+  - app-development
+  - architecture
+  - asset-management
+  - automation
+  - cloud-computing
+  - cloud-security
+  - containers
+  - custom-app-development
+  - devops
+  - infrastructure
+  - it-management-monitoring
+  - product-lifecycle-management
+  - productivity
+  - site-reliability-engineering
+modules:
+  - learn.wwl.foundations-platform-engineering
+  - learn.wwl.design-secure-scalable-platform-architectures
+  - learn.wwl.implement-developer-self-service
+  - learn.wwl.observability-continuous-improvement
+  - learn.wwl.strategic-platform-road-mapping
+trophy:
+  uid: learn.wwl.designing-implementing-platform-engineering.trophy

@@ -2,7 +2,7 @@ You want the ability to recognize when your team members feel out of place, disr
 
 Exploring what it means to belong is an essential step on the path to living and learning authentically. To further explore the concept of belonging, watch this two-minute video.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ONA6]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c243c009-cf01-4b9a-af81-52161ed0dbe2]
 
 ## Explore the concept of belonging
 

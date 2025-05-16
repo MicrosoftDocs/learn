@@ -1,12 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.use-apache-spark-work-files-lakehouse.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  hidden_question_numbers: ["7CDA0C91_2","7CDA0C91_22","7CDA0C91_30","7CDA0C91_67","7CDA0C91_75","7CDA0C91_87","7CDA0C91_100","7CDA0C91_108","7CDA0C91_116","7CDA0C91_120","7CDA0C91_132","7CDA0C91_136","7CDA0C91_144"]
+  ai_generated_module_assessment: true
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 12/20/2024
+  ms.date: 04/16/2025
   author: wwlpublish
-  ms.author: anrudduc
+  ms.author: theresai
   ms.topic: unit
   ms.custom:
   - build-2023

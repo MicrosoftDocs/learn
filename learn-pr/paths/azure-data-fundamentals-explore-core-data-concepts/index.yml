@@ -12,7 +12,7 @@ prerequisites: |
   None
 summary: |
   Data is the foundation on which all software is built. By learning about common data formats, workloads, roles, and services, you can prepare yourself for a career as a data professional.
-  This learning path helps you prepare for the [Azure Data Fundamentals](https://learn.microsoft.com/certifications/azure-data-fundamentals?azure-portal=true) certification.
+  This learning path helps you prepare for the [Azure Data Fundamentals](/certifications/azure-data-fundamentals?azure-portal=true) certification.
 iconUrl: /training/achievements/azure-data-fundamentals-explore-core-data-concepts.svg
 levels:
 - beginner

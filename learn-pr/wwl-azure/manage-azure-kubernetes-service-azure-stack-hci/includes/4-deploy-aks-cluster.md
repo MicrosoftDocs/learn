@@ -88,4 +88,4 @@ Following the successful installation, you can proceed with deploying a Kubernet
 
 In this demonstration, you'll learn how to deploy AKS on Azure Stack HCI.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RWDzU4]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=66070c76-42e9-49c1-b5c5-7db322974df0]

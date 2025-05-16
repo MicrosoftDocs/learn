@@ -4,9 +4,9 @@ Kusto Query Language (KQL) lets you explore your data to discover patterns, iden
 
 Suppose you work at a retail company that sells a wide range of products. You're the data analyst on the sales team that's responsible for providing insights that help the team promote awareness of their products and grow sales. You want to provide the desired insights, but to do so requires data spread across several tables. You want to use KQL to gain the insights by querying data from multiple tables.
 
-## What will we be doing?
+## What are we going to do?
 
-Writing queries in Kusto Query Language (KQL) to first enrich data by combining multiple tables and then analyze that data for deeper insights. In this module, you learn how to:
+Write queries in Kusto Query Language (KQL) to first enrich data by combining multiple tables and then analyze that data for deeper insights. In this module, you learn how to:
 
 - Extend a fact table with dimension table data by using the `join` or `lookup` operators.
 - Merge or append rows from multiple tables or tabular expressions by using the `union` operator.

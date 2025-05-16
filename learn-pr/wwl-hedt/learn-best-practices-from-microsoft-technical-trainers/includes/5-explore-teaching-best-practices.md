@@ -1,4 +1,4 @@
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4UfcN]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6df3e2f0-3198-437d-b160-b0f741eb0fce]
 
 While you're teaching Microsoft Official Courseware, there are many resources you can leverage and use to teach your students, including: 
 

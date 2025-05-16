@@ -18,7 +18,7 @@ The Azure CLI is a cross-platform command-line tool that you can use to access A
 
 ### Terraform
 
-Terraform is an open-source, multiplatform Infrastructure as Code (IaC) tool that you can use to provision and configure a wide range of environments, including multivendor public and private clouds. Unlike Azure CLI&mdash;which provides an _imperative approach_ to resource management&mdash;Terraform follows a _declarative_ approach.
+Terraform is an open-source, multiplatform Infrastructure as Code (IaC) tool that you can use to provision and configure a wide range of environments, including multivendor public and private clouds. Unlike Azure CLI—which provides an _imperative approach_ to resource management—Terraform follows a _declarative_ approach.
 
 An imperative approach involves writing scripts or running a sequence of commands. You explicitly provide the steps to run to produce a desired outcome. When you use imperative deployments, it's your responsibility to manage dependencies, error handling, and resource updates. A declarative approach involves writing a definition that describes the desired outcome, rather than the steps to implement it; the tooling determines the optimal method to deliver that outcome for you. It does this by inspecting the current state of your environment, comparing it to your target state, and then implementing the changes required to make them identical.
 
@@ -40,7 +40,7 @@ Azure supports two types of templates for declarative provisioning:
 
 You can use both these templates to deploy practically any Azure resource. These templates also easily integrate into version-control systems and deployment pipelines, resulting in improved automation and reliability. However, in comparison to Azure Resource Manager templates, Bicep templates offer several additional benefits, including more concise syntax and built-in dependency management.
 
-## What will we be doing?
+## What will we learn?
 
 In this module, you'll choose the optimal deployment method of provisioning Linux VMs in Azure. Your choice will be dependent on the criteria that have been established during the deployment planning phase.
 

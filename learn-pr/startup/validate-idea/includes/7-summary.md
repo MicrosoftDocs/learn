@@ -3,7 +3,7 @@ This module outlined core concepts that relate to articulating and testing the a
 Here's a summary of what you learned:
 
 - You're engaging in business model innovation, so don't even think about writing a 50-page business plan.
-- The value that a product creates for a company's customers can be described by referencing: The jobs that it helps customers get done, the pains that it takes away, and the gains that it creates.
+- You can describe the value that a product creates for a company's customers by referencing: The jobs that it helps customers get done, the pains that it takes away, and the gains that it creates.
 - The Value Proposition Canvas is a useful tool for designing a value proposition. It helps you engage with customers to understand their jobs to be done, pains, and gains, and then create a product that accurately addresses these elements.
 - The Lean Canvas can help you capture assumptions about your business model.
 - The only way to know whether your assumptions are correct is to test them with customers.
@@ -25,11 +25,11 @@ These books can give you more guidance on testing assumptions and interviewing c
 
 ### Tools
 
-- [Value Proposition Canvas](https://www.strategyzer.com/canvas/value-proposition-canvas?azure-portal=true) by Strategyzer.com and Strategyzer AG
-- [Lean Canvas](https://leanstack.com/lean-canvas?azure-portal=true) by Ash Maurya
+- [Value Proposition Canvas](https://www.strategyzer.com/library/the-value-proposition-canvas?azure-portal=true) by Strategyzer.com and Strategyzer AG
+- [Lean Canvas](https://www.leanfoundry.com/tools/lean-canvas?azure-portal=true) by Ash Maurya
 
 ### User persona templates for inspiration
 
-- [Adobe](https://www.adobe.com/express/create/user-persona?azure-portal=true)
+- [Adobe](https://www.adobe.com/express/templates/search?tasks=%27%27&tasksx=&phformat=2:3&topics=user%20persona&q=user%20persona%20template&searchId=861013?azure-portal=true)
 - [Miro](https://miro.com/templates/personas/?azure-portal=true)
 - [Xtensio](https://xtensio.com/user-persona-template/?azure-portal=true)

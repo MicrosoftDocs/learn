@@ -1,20 +1,23 @@
 In this exercise, you'll convert an app that uses events and code-behind to one that uses mostly data binding. The sample app is a weather forecasting app that displays the weather for the day.
 
-## Download and run the sample
+## Open the starter solution
 
-To start this exercise module, download the [Weather Sample](https://github.com/MicrosoftDocs/mslearn-dotnetmaui-databinding1/raw/main/part4-exercise-start.zip) project. This project displays the weather from a fake weather reporting service. The code doesn't contain any data binding.
+1. Clone or download the exercise repo from [GitHub](https://github.com/MicrosoftDocs/mslearn-dotnetmaui-databinding1).
 
-01. Download and extract the [Weather Sample](https://github.com/MicrosoftDocs/mslearn-dotnetmaui-databinding1/raw/main/part4-exercise-start.zip) project to a temporary folder.
-01. Navigate to the _before_ folder and open the _WeatherClient.sln_ solution.
-01. Build and run the project to make sure it works. On the screen displayed, you'll see some empty weather details. Press the **Refresh** button and you'll see the weather details update.
+    > [!NOTE]
+    > It's best to clone or download the exercise content to a short folder path, such as C:\dev\, to avoid build-generated files exceeding the maximum path length.
+
+1. Open the _WeatherClient.sln_ solution from the **start** folder by using Visual Studio or by opening the **start** folder in Visual Studio Code.
+
+1. Build and run the project to make sure it works. On the screen displayed, you'll see some empty weather details. Enter a postal code and select the **Refresh** button, and you'll see the weather details update.
 
     :::image type="content" source="../media/4-exercise-replace-code-with-data-bindings/app2.png" alt-text="Screenshot of a weather app showing the weather for the day.":::
 
-01. For reference, here's a summary of the classes and files you'll work with in this exercise.
+1. For reference, here's a summary of the classes and files you'll work with in this exercise.
 
     | File                         | Description                                                                                                                                          |
     |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | _MainPage.xaml_              | Defines the UI and logic for the initial page. The **XAML** file defines the UI by using markup.                                                     |
+    | _MainPage.xaml_              | Defines the UI and logic for the initial page. The XAML file defines the UI by using markup.                                                     |
     | _MainPage.xaml.cs_           | Defines the UI and logic for the initial page. The associated code-behind file that contains the code related to the UI defined by _MainPage.xaml_. |
     | _Services\WeatherService.cs_ | This class simulates a weather reporting service. It contains a single method named `GetWeather` that returns a `WeatherData` type.                 |
     | _Models\WeatherData.cs_      | Contains the weather data. This is a simple record type that provides the day's temperature, precipitation, humidity, wind, and condition.           |
@@ -24,15 +27,15 @@ To start this exercise module, download the [Weather Sample](https://github.com/
 
 You'll need to edit the code-behind for the **Refresh** button's click event handler. The code currently gets the weather data and updates the controls directly. Instead, get the weather data and set it as the binding context for the page.
 
-01. Open the _MainPage.xaml.cs_ code file.
-01. Review the `btnRefresh_Clicked` method. This method performs the following steps:
+1. Open the _MainPage.xaml.cs_ code file.
+1. Review the `btnRefresh_Clicked` method. This method performs the following steps:
 
     - Disables the button and enables the "busy" spinner.
     - Gets the weather forecast from the weather service.
     - Updates the controls on the page with the weather information.
     - Enables the button and disables the "busy" spinner.
 
-01. Remove the code that updates the controls with data. Your event code should look like the following snippet:
+1. Remove the code that updates the controls with data. Your event code should look like the following snippet:
 
     ```csharp
     private async void btnRefresh_Clicked(object sender, EventArgs e)
@@ -47,7 +50,7 @@ You'll need to edit the code-behind for the **Refresh** button's click event han
     }
     ```
 
-01. Instead of assigning the result of the service's `GetWeather` method to a variable, assign it to the `BindingContext` of the page:
+1. Instead of assigning the result of the service's `GetWeather` method to a variable, assign it to the `BindingContext` of the page:
 
     ```csharp
     private async void btnRefresh_Clicked(object sender, EventArgs e)
@@ -62,14 +65,14 @@ You'll need to edit the code-behind for the **Refresh** button's click event han
     }
     ```
 
-01. Run the project. Notice that when you press the **Refresh** button and the weather service returns the data, none of the controls are updated with the weather forecast. You'll fix this bug in the next section.
+1. Run the project. Notice that when you select the **Refresh** button and the weather service returns the data, none of the controls are updated with the weather forecast. You'll fix this bug in the next section.
 
 ## Create bindings in XAML
 
 Now that the code-behind sets the binding context for the page, you can add the bindings to the controls to use the data on the context.
 
-01. Open the _MainPage.xaml_ file.
-01. Find the inner `Grid` that contains all the `Label` controls.
+1. Open the _MainPage.xaml_ file.
+1. Find the inner `Grid` that contains all the `Label` controls.
 
     ```xaml
     <Grid Grid.Row="2" RowDefinitions="Auto, Auto, Auto, Auto, Auto" ColumnDefinitions="Auto, Auto" Margin="0,5,0,0">
@@ -86,7 +89,7 @@ Now that the code-behind sets the binding context for the page, you can add the 
     </Grid>
     ```
 
-01. Add bindings to each of the named `Label` controls. There are four.
+1. Add bindings to each of the named `Label` controls. There are four.
 
     The `Label.Text` property should have its value changed to the `{Binding PROPERTY_NAME}` syntax where `PROPERTY_NAME` is a property from the `Models.WeatherData` type defined in _Models\WeatherData.cs_. Remember, this type is the data type returned by the weather service.
 
@@ -96,11 +99,11 @@ Now that the code-behind sets the binding context for the page, you can add the 
     <Label x:Name="lblWind" Grid.Row="4" Grid.Column="1" Text="{Binding Wind}" />
     ```
 
-01. Within the `<Grid>` of controls that lists all of the weather details, remove all of the `x:Name="..."` attributes.
+1. Within the `<Grid>` of controls that lists all of the weather details, remove all of the `x:Name="..."` attributes.
 
     The names aren't required now that the controls aren't referenced in the code-behind.
 
-01. Verify that your XAML bindings match the following snippet:
+1. Verify that your XAML bindings match the following snippet:
 
     ```xaml
     <Grid Grid.Row="2" RowDefinitions="Auto, Auto, Auto, Auto, Auto" ColumnDefinitions="Auto, Auto" Margin="0,5,0,0">
@@ -117,6 +120,6 @@ Now that the code-behind sets the binding context for the page, you can add the 
     </Grid>
     ```
 
-01. Run the app and press the **Refresh** button. The app works almost like the original.
+1. Run the app and select the **Refresh** button. The app works almost like the original.
 
-Notice that the icon representing the **Condition** doesn't update from the question mark to a sun or cloud icon. Why doesn't the icon change? Because the icon is an image resource that was chosen in code based on the `WeatherData.Condition` enumeration value. The enumeration value can't be changed to an image resource without some extra effort This is fixed in the next exercise after you learn more about bindings.
+Notice that the icon representing the **Condition** doesn't update from the question mark to a sun or cloud icon. Why doesn't the icon change? Because the icon is an image resource that was chosen in code based on the `WeatherData.Condition` enumeration value. The enumeration value can't be changed to an image resource without some extra effort. You'll fix this in the next exercise after you learn more about bindings.

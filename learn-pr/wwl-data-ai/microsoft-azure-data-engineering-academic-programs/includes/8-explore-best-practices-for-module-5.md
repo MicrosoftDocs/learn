@@ -11,7 +11,7 @@ This module consists of two lessons:
 - Lesson 1 – Use data loading best practices in Azure Synapse Analytics 
 - Lesson 2 – Petabyte-scale ingestion with Azure Data Factory 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5auXv] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=47f9f82d-c530-4a48-9dc1-16004c2baa8e] 
 
 Module 5 Tips and Tricks 
 

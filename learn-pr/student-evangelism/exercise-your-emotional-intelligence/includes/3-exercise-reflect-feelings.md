@@ -1,6 +1,6 @@
 Start this exercise by watching the following video. Then reflect on a set of questions.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ONAw]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=a48aa35f-1959-4389-9a91-d4a99778f91e]
 
 ## Reflection
 

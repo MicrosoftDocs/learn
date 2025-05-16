@@ -2,11 +2,9 @@
 uid: learn.implement-message-workflows-with-service-bus.8-summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary.
-  ms.date: 10/25/2023
+  ms.date: 01/27/2025
   author: spelluru
   ms.author: spelluru
   ms.topic: unit
@@ -45,4 +43,4 @@ quiz:
       explanation: "Incorrect. If you use the premium tier, you can send messages up to 100 MB in size. For the standard tier, the limit is 256 KB."
 
       
-
+

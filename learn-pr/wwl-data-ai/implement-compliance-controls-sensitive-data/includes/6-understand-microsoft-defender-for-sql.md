@@ -1,12 +1,10 @@
-Microsoft Defender for SQL offers a suite of protections for Azure SQL Database and Azure SQL Managed Instance as part of the advanced SQL security features, including SQL vulnerability assessment and Advanced Threat Protection. 
+[Microsoft Defender for SQL](/azure/azure-sql/database/azure-defender-for-sql) offers a suite of protections for Azure SQL Database and Azure SQL Managed Instance as part of the advanced SQL security features, including SQL vulnerability assessment and Advanced Threat Protection. 
 
 ## SQL vulnerability assessment
 
 SQL vulnerability assessment is a service that uses a knowledge base of security rules to flag items that don't comply when they're scanned. It checks your database for security best practices, and providing visibility into your security state, such as misconfigurations, excessive permissions, and exposure of sensitive data.
 
 To see recommendations for SQL Database and SQL Managed Instance, you must enable Microsoft Defender for SQL at the subscription level (recommended). You also need to provide a storage account. Alternatively, you can choose to receive emails with a summary of the scan results.
-
-:::image type="content" source="../media/module-33-security-final-23.png" alt-text="Screenshot of Advanced Threat Protection page in Azure portal.":::
 
 The vulnerability assessment feature can detect potential risks in your environment, and help you enhance database security. It also provides insight into your security state and actionable steps to resolve security alerts.
 
@@ -28,7 +26,7 @@ The following threats are supported by Advanced Threat Protection:
 |**Access from a potentially harmful application** | This alert detects common tools that are used to attack databases. |
 |**Brute force SQL credentials** | This alert is triggered when there a high number of log in failures with different credentials. |
 
-To get maximum benefit out of it you'll want to enable auditing on your databases. Although it isn't required, enabling auditing will allow for deeper investigation into the source of the problem if Advanced Threat Protection detects an anomaly.
+To get maximum benefit out of it, you want to enable auditing on your databases. Although it isn't required, enabling auditing allows for deeper investigation into the source of the problem if Advanced Threat Protection detects an anomaly.
 
 The following audit action groups are recommended:
 

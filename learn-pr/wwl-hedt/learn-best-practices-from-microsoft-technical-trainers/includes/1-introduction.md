@@ -1,4 +1,4 @@
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4U6ty]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=bd51dde4-b791-4e5e-9c54-6abe28fa530e]
 
 As you begin this journey of sharing your knowledge with others, it is imperative to set expectations for everyone when approaching and preparing to teach Microsoft curriculum and leveraging the teaching materials. This could be your students’ first experience building technical skills or preparing for a certification exam. As your students begin your class, you may be asked the following types of questions: 
 

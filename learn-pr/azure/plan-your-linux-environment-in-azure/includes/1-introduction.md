@@ -1,4 +1,4 @@
-Suppose you work as an information technology (IT) system engineer for a financial services company. The company intends to transition its existing on-premises Linux-based workloads to Azure Linux virtual machines (VMs), which will require consolidating and upgrading some of these systems.
+Suppose you work as an information technology (IT) system engineer for a financial services company. The company intends to transition its existing on-premises Linux-based workloads to Azure Linux virtual machines (VMs), which requires consolidating and upgrading some of these systems.
 
 Azure offers several options for deploying Linux-based Azure VMs. The company asks you to design a set of guidelines that will help:
 

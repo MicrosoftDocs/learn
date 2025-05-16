@@ -19,7 +19,7 @@ This exercise should take approximately **10** minutes to complete.
 
 For this exercise, you'll be using a sample file, 'Woodgrove Corporate Data Handling Policy.pdf.'
 
-1. Select the link **[Woodgrove Corporate Data Handling Policy.pdf'](https://github.com/MicrosoftLearning/SC-5006-Get-started-with-Microsoft-Copilot-for-Security/blob/master/Sample%20files/Woodgrove%20Corporate%20Data%20Handling%20Policy.pdf?azure-portal=true)** to access the sample file.
+1. Select the link **[Woodgrove Corporate Data Handling Policy.pdf'](https://github.com/MicrosoftLearning/SC-5006-Enhance-security-by-Microsoft-Security-Copilot/blob/master/Sample%20files/Woodgrove%20Corporate%20Data%20Handling%20Policy.pdf?azure-portal=true)** to access the sample file.
 
 1. Select the **Download raw file ![download raw file icon](../media/raw-file-download-icon-v2.png)** icon. Save the file on your local computer, as you'll need it later.
 

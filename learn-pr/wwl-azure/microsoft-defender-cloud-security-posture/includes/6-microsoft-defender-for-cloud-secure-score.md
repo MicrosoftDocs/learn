@@ -20,7 +20,7 @@ Defender for Cloud offers the following options for working with security initia
 
 Example: Builtin security initiative
 
-:::image type="content" source="../media/center-for-internet-security-benchmark-example-cd4ac1a6.png" alt-text="Screenshot showing an example of the CIS Microsoft Azure Foundations Benchmark.":::
+:::image type="content" source="../media/center-for-internet-security-benchmark-example-cd4ac1a6-58c5a26e.png" alt-text="Screenshot showing an example of the CIS Microsoft Azure Foundations Benchmark.":::
 
 
 ## What is a security policy?
@@ -33,7 +33,7 @@ There are different types of policies in Azure Policy. Defender for Cloud mainly
 
 Example: Built-in security policy
 
-:::image type="content" source="../media/assign-policy-basics-policy-definition-compute-90aece43.png" alt-text="Screenshot showing an example of a basic policy definition to audit VMs without managed disks.":::
+:::image type="content" source="../media/assign-policy-basics-policy-definition-compute-90aece43-faccd0c0.png" alt-text="Screenshot showing an example of a basic policy definition to audit VMs without managed disks.":::
 
 
 Defender for Cloud uses Azure role-based access control (Azure RBAC), which provides built-in roles you can assign to Azure users, groups, and services. When users open Defender for Cloud, they see only information related to the resources they can access. Users are assigned the owner, contributor, or reader role to the resource's subscription.
@@ -43,7 +43,7 @@ There are two specific roles for Defender for Cloud:
 1.  Security Administrator: Has the same view rights as security reader. Can also update the security policy and dismiss alerts.
 2.  Security reader: Has rights to view Defender for Cloud items such as recommendations, alerts, policy, and health. Can't make changes.
 
-:::image type="content" source="../media/view-edit-security-policies-17d2ecb9.png" alt-text="Diagram showing which security role can view, update, and dismiss alerts.":::
+:::image type="content" source="../media/view-edit-security-policies-17d2ecb9-762da64b.png" alt-text="Diagram showing which security role can view, update, and dismiss alerts.":::
 
 
 You can edit security policies through the Azure Policy portal via Representational State Transfer Application Programming Interface (REST API) or using Windows PowerShell.

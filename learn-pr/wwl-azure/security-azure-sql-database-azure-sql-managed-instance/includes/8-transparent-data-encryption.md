@@ -20,7 +20,7 @@ Customer-managed TDE is also referred to as Bring Your Own Key (BYOK) support fo
 
 With TDE with Azure Key Vault integration, users can control key management tasks including key rotations, key vault permissions, key backups, and enable auditing/reporting on all TDE protectors using Azure Key Vault functionality. Key Vault provides central key management, leverages tightly monitored HSMs, and enables separation of duties between management of keys and data to help meet compliance with security policies.
 
-:::image type="content" source="../media/az500-transparent-data-encryption-72235759.png" alt-text="Screenshot of Transparent Data Encryption configuration form.":::
+:::image type="content" source="../media/az500-transparent-data-encryption-72235759-45e2a172-60994355-78fd4ba3.png" alt-text="Screenshot of Transparent Data Encryption configuration form.":::
 
 
 ## Move a transparent data encryption-protected database
@@ -38,24 +38,24 @@ Taking manual COPY-ONLY backup of a database encrypted by service-managed TDE is
 
 When you export a TDE-protected database, the exported content of the database isn't encrypted. This exported content is stored in unencrypted BACPAC files. Be sure to protect the BACPAC files appropriately and enable TDE after import of the new database is finished.
 
-For example, if the BACPAC file is exported from a SQL Server instance, the imported content of the new database isn't automatically encrypted. Likewise, if the BACPAC file is imported to a SQL Server instance, the new database also isn't automatically encrypted.<br>
+For example, if the BACPAC file is exported from a SQL Server instance, the imported content of the new database isn't automatically encrypted. Likewise, if the BACPAC file is imported to a SQL Server instance, the new database also isn't automatically encrypted.
 
-The one exception is when you export a database to and from SQL Database. TDE is enabled on the new database, but the BACPAC file itself still isn't encrypted.<br>
+The one exception is when you export a database to and from SQL Database. TDE is enabled on the new database, but the BACPAC file itself still isn't encrypted.
 
 ## Manage transparent data encryption
 
 ### Manage TDE in the Azure portal.
 
-To configure TDE through the Azure portal, you must be connected as the Azure Owner, Contributor, or SQL Security Manager.<br>
+To configure TDE through the Azure portal, you must be connected as the Azure Owner, Contributor, or SQL Security Manager.
 
-Enable and disable TDE on the database level. For Azure SQL Managed Instance use Transact-SQL (T-SQL) to turn TDE on and off on a database. For Azure SQL Database and Azure Synapse, you can manage TDE for the database in the Azure portal after you've signed in with the Azure Administrator or Contributor account. Find the TDE settings under your user database. By default, server level encryption key is used. A TDE certificate is automatically generated for the server that contains the database.<br>
+Enable and disable TDE on the database level. For Azure SQL Managed Instance use Transact-SQL (T-SQL) to turn TDE on and off on a database. For Azure SQL Database and Azure Synapse, you can manage TDE for the database in the Azure portal after you've signed in with the Azure Administrator or Contributor account. Find the TDE settings under your user database. By default, server level encryption key is used. A TDE certificate is automatically generated for the server that contains the database.
 
-:::image type="content" source="../media/service-managed-transparent-data-encryption-3c249bb3.png" alt-text="Screenshot showing how to enable and disable Transparent Data Encryption on the database level.":::
+:::image type="content" source="../media/service-managed-transparent-data-encryption-3c249bb3-546bbded-88e09d77-91af5c87.png" alt-text="Screenshot showing how to enable and disable Transparent Data Encryption on the database level.":::
 
 
 You set the TDE master key, known as the TDE protector, at the server or instance level. To use TDE with BYOK support and protect your databases with a key from Azure Key Vault, open the TDE settings under your server or managed instance.
 
-:::image type="content" source="../media/bring-your-own-key-support-2741bc4b.png" alt-text="Screenshot showing how to use Transparent Data Encryption with Bring Your Own Key support.":::
+:::image type="content" source="../media/bring-your-own-key-support-2741bc4b-3b023728-48686e34-226adef8.png" alt-text="Screenshot showing how to use Transparent Data Encryption with Bring Your Own Key support.":::
 
 
 You can also use a customer-managed key for TDE on a database level for Azure SQL Database.

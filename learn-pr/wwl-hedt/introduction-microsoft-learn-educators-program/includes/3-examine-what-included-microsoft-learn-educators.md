@@ -1,4 +1,4 @@
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4U5yg]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=eb74cdb7-6ff6-4413-a60c-519f9cc396ae]
 
 Eligible educators and faculty members at colleges, universities, community colleges, polytechnics, and STEM-focused secondary schools can access Microsoft's ready-to-teach curriculum and teaching materials aligned to industry-recognized Microsoft certifications.  
 

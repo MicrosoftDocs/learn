@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-agent-with-custom-tools.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check your knowledge of building an agent with custom tools."
+  ms.date: 04/03/2025
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "What are custom tools, and how can they help you develop effective agents with Azure AI Agent Service?"  
+    choices:  
+    - content: "Callable functions that an agent can use to extend its capabilities."  
+      isCorrect: true  
+      explanation: "Correct. Custom tools extend the capabilities of your agents by enabling them to call external functions."  
+    - content: "Extensions for Visual Studio Code that make it easier to create and deploy agents."  
+      isCorrect: false  
+      explanation: "Incorrect. Custom tools aren't extensions for Visual Studio Code."  
+    - content: "Fine-tuned models that the agent can use to generate custom output."  
+      isCorrect: false  
+      explanation: "Incorrect. Custom tools aren't fine-tuned models."
+  - content: "You need to integrate functionality from an OpenAPI 3.0-based web service into an agent solution. What should you do?"  
+    choices:  
+    - content: "Add the JSON schema of the web service to the agent's instructions."  
+      isCorrect: false  
+      explanation: "Incorrect. Adding the schema of the web service to the instructions wouldn't result in the desired integration."  
+    - content: "Rewrite the web service as a Python function and hard-code it in your agent app."  
+      isCorrect: false  
+      explanation: "Incorrect. Rewriting the web service as a Python function and hard-coding it isn't an effective solution."  
+    - content: "Add the web service as an OpenAPI specification tool to the agent definition"  
+      isCorrect: true  
+      explanation: "Correct. OpenAPI specification tools enable scalable interoperability with external services."  
+  - content: "Your agent application code includes a local function that you want the agent to call. What kind of tool should you add to the agent's definition?"  
+    choices:  
+    - content: "Function calling"  
+      isCorrect: true  
+      explanation: "Correct. Use a Function calling tool to access functions in your application code."  
+    - content: "Code interpreter"  
+      isCorrect: false  
+      explanation: "Incorrect. The code interpreter tool is used to enable the agent to generate its own code in a sandbox environment."  
+    - content: "Azure Functions"  
+      isCorrect: false  
+      explanation: "Incorrect. Azure Functions tools are used to enable the agent to call an Azure Function, not a function in your application code."  
+  

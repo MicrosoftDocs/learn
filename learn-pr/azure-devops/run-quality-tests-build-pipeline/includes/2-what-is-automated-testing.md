@@ -30,7 +30,7 @@ Here's a short video where Abel Wang, Cloud Advocate at Microsoft, explains how 
 
 **Ask Abel**
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LBfM]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=90341df2-dc15-406f-af3f-52afc0d4ca76]
 
 Shifting left often requires testers to get involved in the design process, even before any code for the feature is written. Compare this to the "handoff" model, where the test team is presented with new features to test only after the software is designed and written. A bug discovered late in the process can affect the team's delivery schedule, and bugs might be discovered weeks or even months after the developer originally built the feature.
 

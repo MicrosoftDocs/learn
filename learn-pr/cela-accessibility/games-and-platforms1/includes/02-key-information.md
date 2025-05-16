@@ -27,7 +27,7 @@ Cues that are represented visually, like incoming enemy fire, the presence of ne
 
 The following video capture from the game Grounded contains both visual and audio cues that inform the player that they are under attack. Corresponding audio cues like the player grunting when hit and the low-health beep pattern should accompany visual cues like the red attack halos and health meter actively depleting to convey the same information through two different sensory channels.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWOdS6]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=a0c63709-b47a-4766-b59d-88a2e4f537e9]
 
 ### Directional cues
 
@@ -35,4 +35,4 @@ Navigating through a game is often a highly visual experience. It's important to
 
 Consider representing this visual information through other audio cues like spatial audio pings or narrated directional cues. In the following video capture from the game Sea of Thieves, a player has the nautical narration setting enabled. As the player's character turns in space, moving the compass's direction, the current direction is narrated aloud through the audio channel.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWObd2]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e1521cea-152d-4878-9509-97275b0a0003]

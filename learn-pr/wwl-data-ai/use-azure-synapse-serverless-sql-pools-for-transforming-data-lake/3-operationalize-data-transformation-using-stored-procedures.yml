@@ -2,8 +2,6 @@
 uid: learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.operationalize-data-transformation-with-using-stored-procedures
 title: Encapsulate data transformations in a stored procedure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Encapsulate data transformations in a stored procedure
   description: "Encapsulate data transformations in a stored procedure"
   ms.date: 11/16/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-operationalize-data-transformation-using-stored-procedures.md)]
+  [!include[](includes/3-operationalize-data-transformation-using-stored-procedures.md)]

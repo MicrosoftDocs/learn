@@ -1,4 +1,4 @@
-The first thing you need to understand about the composition of a network is how it's built. Servers are the workhorses of a network. Connections are achieved throughout a network through a mix of hubs, switches, and routers. This knowledge applies whether it's your own organization's network, or more extensive networks like the web. All networks are built on the same principles.
+The first thing to understand about a network's composition is how it's built. Servers are the workhorses of a network. Connections are achieved throughout a network through a mix of hubs, switches, and routers. This knowledge applies whether it's your own organization's network or more extensive networks like the web. All networks are built on the same principles.
 
 In this unit, you'll gain a better understanding of the various client options. You'll also explore the various server models and options available.
 
@@ -69,7 +69,7 @@ There are several advantages that a client-server provides an organization. Thes
 
 As with any technology, there are also disadvantages that you should consider when you use a client-server network architecture:
 
-- The failure of the server can block users from accessing resources. Because the resources are now centralized, any access disruption will affect all users.
+- Server failure can block users from accessing resources. Because the resources are now centralized, any access disruption will affect all users.
 - Setting up a client-server architecture can be expensive, because it requires dedicated hardware and software.
 - Running and maintaining a network requires IT professionals with dedicated technical knowledge.
 - Multiple requests for the same operation affect the performance of the server; for example, in a denial-of-service attack.

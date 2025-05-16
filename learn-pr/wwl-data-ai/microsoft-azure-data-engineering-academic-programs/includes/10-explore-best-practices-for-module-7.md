@@ -10,7 +10,7 @@ This module consists of one lesson:
 
 - Lesson 1 – Integrate data from notebooks with Azure Data Factory or Azure Synapse Pipelines 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5auXu]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=9caabe7e-e8a3-4a02-a149-099b7a77ef48]
 
 Module 7 Tips and Tricks 
 

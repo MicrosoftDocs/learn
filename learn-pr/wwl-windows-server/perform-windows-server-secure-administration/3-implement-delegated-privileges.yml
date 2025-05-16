@@ -4,7 +4,7 @@ title: Implement delegated privileges
 metadata:
   title: Implement delegated privileges
   description: "Implement delegated privileges"
-  ms.date: 10/20/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
@@ -20,10 +20,10 @@ quiz:
     choices:
     - content: "Create a group for the sales computer management team, and then create a custom task delegation for that team on the Sales OU. The custom task will be for Computer objects."
       isCorrect: true
-      explanation: "That's correct. This approach adheres to best practices."
+      explanation: "Correct. This approach adheres to best practices."
     - content: "Create a group for the sales computer management team, and then create a common task delegation for that team on the Sales OU."
       isCorrect: false
-      explanation: "That's incorrect. Computer objects management is not a common task, but a custom task delegation."
+      explanation: "Incorrect. Computer objects management isn't a common task, but a custom task delegation."
     - content: "Create a custom task delegation for the users in the sales computer management team on the Sales OU. The custom task will be for Computer objects."
       isCorrect: false
-      explanation: "That's incorrect. Although this approach will work, it is best practice to use groups to assign delegations. Start by adding the users to a group."
+      explanation: "Incorrect. Although this approach works, it's best practice to use groups to assign delegations. Start by adding the users to a group."

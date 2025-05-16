@@ -11,7 +11,7 @@ As a result, Planzer was able to:
 
 Watch the following video to learn more:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW14Ob9]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e85aaaf9-3669-4c3f-8a43-3225752a052f]
 
 [Read more about Planzer’s cloud transition.](https://customers.microsoft.com/story/1480535568291163641-planzer-travel-transportation-azure?azure-portal=true)
 

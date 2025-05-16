@@ -3,7 +3,7 @@ uid: learn.wwl.sc-200-utilize-kql-for-azure-sentinel
 metadata:
   title: 'SC-200: Create queries for Microsoft Sentinel using Kusto Query Language (KQL)'
   description: 'SC-200: Create queries for Microsoft Sentinel using Kusto Query Language (KQL)'
-  ms.date: 11/05/2021
+  ms.date: 02/28/2025
   author: wwlpublish
   ms.author: kelawson
   ms.topic: learning-path

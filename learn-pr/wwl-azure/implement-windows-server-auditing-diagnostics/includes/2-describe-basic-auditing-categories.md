@@ -1,9 +1,8 @@
-Auditing logs report a variety of activities in your enterprise to the Windows security log. You then can monitor these auditing logs to identify issues that warrant further investigation. Auditing successful activities also can be useful because doing so provides documentation of changes. Auditing can also log failed attempts by malicious hackers or unauthorized users to access enterprise resources. When configuring auditing, you specify audit settings, enable an audit policy, and then monitor events in the security logs.
+Auditing logs record security events and activities in the Windows security log. You then can monitor these auditing logs to identify issues that warrant further investigation. Auditing successful activities also can be useful because doing so provides documentation of changes. Auditing can also log failed attempts by malicious hackers or unauthorized users to access enterprise resources. When configuring auditing, you specify audit settings, enable an audit policy, and then monitor events in the security logs.
 
 Windows Server provides two categories of auditing:
 
 - Basic auditing. Nine values are provided that enable you to audit the fundamental security events.
-
 - Advanced auditing. Ten categories of events, which contain more detailed policy settings. There are over 60 configurable policy settings available.
 
 ## What are the basic auditing categories?
@@ -24,7 +23,7 @@ The following table describes the basic auditing categories.
 
 ## Configure basic auditing
 
-You can review and configure these basic auditing categories by using the Local Security Policy console, as displayed in the following screenshot. Here, the administrator has selected the Audit Policy node in the Local Security Policy console, and configured a number of Success and Failure audit settings.
+You can review and configure these basic auditing categories by using the Local Security Policy console, as displayed in the following screenshot. Here, the administrator has selected the Audit Policy node in the Local Security Policy console, and configure Success and Failure audit settings.
 
 ![This screenshot displays the Local Security Policy console and the basic auditing categories. The Audit Policy node is selected and various Success and Failure audit settings have been configured.](../media/local-policy.png)
 
@@ -34,11 +33,8 @@ You can review and configure these basic auditing categories by using the Local 
 Alternatively, in the Group Policy Management console:
 
 1. Locate and select the appropriate Group Policy Object (GPO), and open the GPO for editing.
-
 1. In the Group Policy Management Editor, under the **Computer Configuration** node, expand Policies\Windows Settings\Security Settings\Local Policies, and then select **Audit Policy**.
-
 1. In the Group Policy Management Editor, open any policy setting.
-
 1. Select the **Define these policy settings** check box, and then select whether to enable the auditing of success events, failure events, or both. Then select **OK**.
 
 It can be tempting to enable all auditing values across all the available settings. However, this can generate a large audit trail that you must analyze. So, think about being more focused and only enable what's useful for you.
@@ -48,10 +44,10 @@ For example, if you audit failed account logon events, you can expose attempts b
 > [!TIP]
 > Auditing failed account management events can reveal a malicious hacker who is attempting to manipulate the membership of a security-sensitive group.
 
-One of your most important tasks is to balance and align the audit policy with your corporate policies and with what is realistic for your organization. For example, your corporate policy might state that all failed logon and successful changes to Active Directory users and groups must be audited. That's easy to achieve in Active Directory Domain Services (AD DS). But you should decide how you will use that information before implementing audit policies.
+One of your most important tasks is to balance and align the audit policy with your corporate policies and with what is realistic for your organization. For example, your corporate policy might state that all failed logon and successful changes to Active Directory users and groups must be audited. That's easy to achieve in Active Directory Domain Services (AD DS). But you should decide how you'll use that information before implementing audit policies.
 
 > [!TIP]
-> Verbose auditing logs are useless if you do not know how to effectively manage those logs or do not have the tools to do so. 
+> Verbose auditing logs are useless if you don't know how to effectively manage those logs or don't have the tools to do so. 
 
 To implement auditing, you must have a well-configured audit policy and the tools with which to manage audited events.
 
@@ -64,18 +60,13 @@ To configure file or folder auditing, you must complete three steps:
 1. Define the **Audit object access** settings, and choose **Success**, **Failure**, or both.
 
     > [!NOTE]
-    > Enabling Success auditing can generate a large volume of logging data which might be of limited use. After all, it tells you that someone successfully accessed a file or folder. It's usually more interesting to know when someone fails.
+    > Enabling Success auditing can generate a large volume of logging data which might be of limited use. After all, it tells you that someone successfully accessed a file or folder. It's more interesting to know when someone fails.
 
 1. Locate the folder you want to track. Right-click the folder and then select **Properties**.
-
 1. On the **Security** tab, select **Advanced**.
-
 1. Select the **Auditing** tab on the **Advanced Security Settings** page.
-
 1. Select **Add**, choose the security principals whose activity you want to audit on the folder, and then choose the activities you want to track.
-
 1. In the **Type** list, choose **All**, **Success**, or **Fail**.
-
 1. Then choose the permissions you want to track, and finally, select **OK** twice.
 
 In the following screenshot, the administrator has selected the audit settings for a folder called SalesReports. They have selected to audit Fail access for Domain Users.
@@ -87,15 +78,12 @@ In the following screenshot, the administrator has selected the audit settings f
 You can audit successes for the following purposes:
 
 - To log resource access for reporting and billing.
-
 - To monitor access suggesting that users are performing actions greater than what you had planned, indicating that permissions are too generous.
-
 - To identify access that is out of character for a particular account, which might be a sign that a malicious hacker has breached a user account.
 
 You can audit failed events for the following purposes:
 
 - To monitor attempts to access a resource by unauthorized users.
-
 - To identify failed attempts to access a file or folder to which a user does require access. This indicates that the permissions are not sufficient to meet a business requirement.
 
 > [!WARNING]
@@ -106,4 +94,3 @@ You can audit failed events for the following purposes:
 After you enable the Audit Object Access policy setting and use object SACLs to specify the access you want to audit, Windows Server starts to log access according to the audit entries. You can view the resulting events in the server’s security event log. To do this, in Administrative Tools, open the Event Viewer console, and then expand Windows Logs\Security, as displayed in the following screenshot. The administrator has selected the Security log and has highlighted an event with the ID of 4663; this relates to an attempt to access a file object.
 
 ![This screenshot displays the Event Viewer console in Administrative Tools. Windows Logs\Security is expanded with the Security log selected. An event of ID 4336 is highlighted.](../media/security-log.png)
-

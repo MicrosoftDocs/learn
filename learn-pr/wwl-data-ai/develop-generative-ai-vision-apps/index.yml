@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.develop-generative-ai-vision-apps
+metadata:
+  title: Develop a vision-enabled generative AI application
+  description: A picture says a thousand words, and multimodal generative AI models can interpret images to respond to visual prompts. Learn how to build vision-enabled chat apps.
+  ms.date: 04/29/2025
+  author: gmalc
+  ms.author: gmalc
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.service: azure-ai-services
+title: Develop a vision-enabled generative AI application
+summary: A picture says a thousand words, and multimodal generative AI models can interpret images to respond to visual prompts. Learn how to build vision-enabled chat apps.
+abstract: |
+  After completing this module, you'll be able to:
+  - Deploy a vision-enabled generative AI model in Azure AI Foundry.
+  - Test an image-based prompt in the chat playground.
+  - Create a chat app that submits image-based prompts.
+prerequisites: |
+  Before starting this module, you should have:
+  - Experience with deploying generative AI models in Azure AI Foundry.
+  - Programming experience with Python or Microsoft C#.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles: 
+  - ai-engineer
+products: 
+  - azure
+  - ai-services
+subjects: 
+  - artificial-intelligence
+units:
+- learn.wwl.develop-generative-ai-vision-apps.introduction
+- learn.wwl.develop-generative-ai-vision-apps.deploy-multimodal-models
+- learn.wwl.develop-generative-ai-vision-apps.develop-visual-chat-apps
+- learn.wwl.develop-generative-ai-vision-apps.exercise
+- learn.wwl.develop-generative-ai-vision-apps.knowledge-check
+- learn.wwl.develop-generative-ai-vision-apps.summary
+badge:
+  uid: learn.wwl.develop-generative-ai-vision-apps.badge
+

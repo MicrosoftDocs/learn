@@ -14,7 +14,7 @@ In the terminology of distributed applications, the defining characteristic of a
 
 A message generally contains the actual data, not just a reference (like an ID or a URL) to data. Sending data as part of a datagram is less brittle than sending a reference. The messaging architecture guarantees message delivery, and because no extra lookups are required, the message is reliably handled. However, the sending application needs to know exactly what data to include to avoid sending too much data, which would require the receiving component to do unnecessary work. In this sense, the message sender and receiver are often coupled by a strict data contract.
 
-In the new architecture for Contoso Bicycles, when an order is placed, the company likely will use messages. The web front end or mobile app will send a message to the back-end processing components. On the back end, steps like routing to the store nearest the customer and charging a credit card will take place.
+In the new architecture for Contoso Bicycles, when an order is placed, the company likely uses messages. The web front end or mobile app sends a message to the back-end processing components. On the back end, steps like routing to the store nearest the customer and charging a credit card takes place.
 
 ### Events
 
@@ -44,16 +44,16 @@ A Service Bus _queue_ is a simple temporary storage location for messages. A sen
 
 Queues decouple the source and destination components to insulate destination components from high demand.
 
-During peak times, messages might come in faster than destination components can handle them. Because source components have no direct connection to the destination, the source is unaffected, and the queue will grow. Destination components will remove messages from the queue as they're able to handle them. When demand drops, destination components can catch up, and the queue shortens.
+During peak times, messages might come in faster than destination components can handle them. Because source components have no direct connection to the destination, the source is unaffected, and the queue grows. Destination components remove messages from the queue as they're able to handle them. When demand drops, destination components can catch up, and the queue shortens.
 
-A queue responds to high demand without needing to add resources to the system. However, for messages that need to be handled quickly, creating more instances of your destination component can allow them to share the load. Each message is handled by only one instance. This is an effective way to scale your entire application by only adding resources to the components that actually need it.
+A queue responds to high demand without needing to add resources to the system. However, for messages that need to be handled quickly, creating more instances of your destination component can allow them to share the load. Each message is handled by only one instance. This method is an effective way to scale your entire application by only adding resources to the components that actually need it.
 
 ### What is a topic?
 
-A Service Bus _topic_ is similar to a queue, but a topic can have multiple subscriptions. This means that multiple destination components can subscribe to a specific topic, so each message is delivered to multiple receivers. Subscriptions can also filter the messages in the topic to receive only messages that are relevant. Subscriptions provide the same decoupled communications as queues and respond to high demand in the same way. Use a topic if you want each message to be delivered to more than one destination component.
+A Service Bus _topic_ is similar to a queue, but a topic can have multiple subscriptions, which means that multiple destination components can subscribe to a specific topic, so each message is delivered to multiple receivers. Subscriptions can also filter the messages in the topic to receive only messages that are relevant. Subscriptions provide the same decoupled communications as queues and respond to high demand in the same way. Use a topic if you want each message to be delivered to more than one destination component.
 
 > [!NOTE]
-> Topics are not supported in the Basic pricing tier.
+> Topics aren't supported in the Basic pricing tier.
 
 :::image type="content" source="../media/2-service-bus-topic.png" alt-text="Diagram that shows one sender sending messages to multiple receivers through a topic that contains three subscriptions. These subscriptions are used by three receivers to retrieve the relevant messages.":::
 

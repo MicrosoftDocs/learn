@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-infrastructure-as-code-configuration-management.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 12/12/2024
   author: wwlpublish
@@ -50,4 +48,4 @@ quiz:
           explanation: Incorrect. Idempotency does not prevent scaling, but rather ensures consistent results despite scaling.
         - content: It allows for operations to be applied against a resource multiple times, resulting in the same outcome.
           isCorrect: true
-          explanation: Correct. Idempotency ensures that regardless of how many times an operation is applied, the outcome remains the same.
+          explanation: Correct. Idempotency ensures that regardless of how many times an operation is applied, the outcome remains the same.

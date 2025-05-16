@@ -1,14 +1,11 @@
-You're now ready to create a new event hub. After creating it with Azure CLI commands, you use the Azure portal to view your new hub.
+You're now ready to create a new event hub. After creating it with Azure CLI commands, you use the Azure portal to view your new hub. Activate the sandbox before you proceed further. 
 
 ## Create an Event Hubs namespace
 
 Let's create an Event Hubs namespace using Azure CLI and Bash in Azure Cloud Shell on the right.
 
-1. In the **Azure Cloud Shell** window to the right, select **Settings** on the menubar, and then select **Go to Classic version**. Some of the commands used in this Learn module work only in the Classic mode. 
-
-    :::image type="content" source="../media/3-switch-to-classic-mode.png" alt-text="Screenshot showing the menu item to switch Azure Cloud Shell to the Classic mode.":::
 1. First, let's assign default values that can be reused so that you don't have to enter these values with every command. In particular, let's set the *resource group* and *location*. Enter the following command in Cloud Shell, and feel free to replace the location value with a region close to you.
-  
+ 
     ```azurecli
     az configure --defaults group="<rgn>[sandbox resource group name]</rgn>" location=westus2  
     ```
@@ -39,7 +36,7 @@ Let's create an Event Hubs namespace using Azure CLI and Bash in Azure Cloud She
     ```
 
     > [!NOTE]
-    > It may take some time for the namespace to be created. Azure will validate the namespace name, and if the name exists or is invalid, the CLI returns **Bad Request**. In this case, try a different name by rerunning the Bash command to set the environment variable and then reissue the Azure CLI command.
+    > It can take some time for the namespace to be created. Azure validates the namespace name, and if the name exists or is invalid, the CLI returns **Bad Request**. In this case, try a different name by rerunning the Bash command to set the environment variable and then reissue the Azure CLI command.
 
 1. Fetch the connection string and primary key for your namespace by running the following command. 
 
@@ -96,7 +93,7 @@ Next, let's see what our event hub looks like in the Azure portal.
 
 1. In the search bar at the top of the portal, enter *Event Hubs*, and press <kbd>Enter</kbd>. The **Event Hubs** pane for your subscription appears.
 
-1. In the list of Event Hubs namespaces, look for your namespace. Because we assigned the namespace as an environment variable ehubns-RANDOM, look for ehubns-NNNNN. Select it. The **Overview** page for your Event Hubs Namespace appears.
+1. In the list of Event Hubs namespaces, look for your namespace. Because we assigned the namespace as an environment variable ehubns-RANDOM, look for ehubns-NNNNN. Select it. You see the **Overview** page for your Event Hubs Namespace.
 
 1. In the middle menu pane, under **Entities**, select **Event Hubs**. The **Event Hubs** pane appears with list of event hubs in your namespace.
 

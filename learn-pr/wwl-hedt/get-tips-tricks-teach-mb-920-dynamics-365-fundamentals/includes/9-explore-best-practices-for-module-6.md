@@ -11,7 +11,7 @@ This module consists of two lessons:
 - Lesson 1 – Identify project life cycle management capabilities in Microsoft Dynamics 365 Project Operations
 - Lesson 2 – Explore the project planning and execution capabilities of Microsoft Dynamics 365 Project Operations
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWXkJo]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7bc21190-ca58-4773-ab54-d69707aac9b0]
 
 Module 6 Tips and Tricks
 
@@ -27,6 +27,6 @@ Module 6 Demos
 Module 6 Labs 
 
 - No labs for this module, however you may want to consider showing these video walk-throughs:
-	- [Project pricing capabilities](https://www.microsoft.com/en-gb/videoplayer/embed/RWwJiJ?postJsllMsg=true&autoCaptions=en-gb)
-	- [Create an invoice](https://www.microsoft.com/en-gb/videoplayer/embed/RWwJiI?postJsllMsg=true&autoCaptions=en-gb)
-	- [Project cost on a time and materials project](https://www.microsoft.com/en-gb/videoplayer/embed/RWwLNF?postJsllMsg=true&autoCaptions=en-gb)
+	- [Project pricing capabilities](https://learn-video.azurefd.net/vod/player?id=929076d4-2d44-4f47-8c66-f7d3a72f438c)
+	- [Create an invoice](https://learn-video.azurefd.net/vod/player?id=8eaedd7f-f464-492a-bc52-2a5d70b4a48a)
+	- [Project cost on a time and materials project](https://learn-video.azurefd.net/vod/player?id=b4708ac2-7cc3-4859-abd5-2c3de7bf120c)

@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-adoption-framework-strategy.ai
+metadata:
+  title: AI Considerations for Your Cloud Adoption Strategy
+  description: Learn about AI considerations so that you can use advanced analytics, machine learning, and automation to optimize operations.
+  ms.date: 03/14/2025
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
+title: AI considerations for your cloud adoption strategy
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-inform-ai.md)]
+quiz:
+ title: Check your knowledge
+ questions: 
+ - content: What is one of the key principles for responsible AI at Microsoft?
+   choices:
+   - content: AI solutions should maximize user engagement and interaction.
+     isCorrect: false
+     explanation: Incorrect. While user engagement is important, responsible AI principles prioritize ethical considerations.
+   - content: AI should accelerate innovation speed and deployment.
+     isCorrect: false
+     explanation: Incorrect. Responsible AI principles prioritize ethical considerations over the speed of innovation.
+   - content: AI must be cost-effective and provide the best return on investment.
+     isCorrect: false
+     explanation: Incorrect. Responsible AI principles focus on ethical considerations, not financial metrics.
+   - content: AI systems and developers should be accountable for their actions.
+     isCorrect: true
+     explanation: Correct. AI must include accountability to promote transparency and maintain trust among users and stakeholders.

@@ -2,8 +2,6 @@
 uid: learn.azure.improve-api-performance-with-apim-caching-policy.3-knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: In this unit, you will answer questions based on a scenario.
   ms.date: 07/12/2023
@@ -49,4 +47,4 @@ quiz:
     - content: "API scope for the Board Pricing API"
       isCorrect: true
       explanation: "Use the `<json-to-xml>` policy with API scope for the Board Pricing API to ensure that all responses are sent in XML, even if developers coded them to return JSON."
-
+

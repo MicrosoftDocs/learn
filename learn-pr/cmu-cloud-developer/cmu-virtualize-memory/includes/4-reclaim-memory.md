@@ -3,7 +3,7 @@ To maintain full isolation, guest OSs are kept unaware that they are running ins
 The hypervisor deals with the situation by applying a **reclamation technique**. As its name suggests, a reclamation technique attempts to reclaim inactive real memory pages at VMs and make them available for the hypervisor when experiencing a memory shortage. This video describes a couple of techniques that can be used to reclaim memory from guest OSs:
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pNdb]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=302174cc-2661-4c4d-bca0-8ff0b6f9a3a1]
 
 One of the popular reclamation techniques is the **ballooning process** introduced in VMware ESXi, which has been the basis for similar techniques in other hypervisors.
 

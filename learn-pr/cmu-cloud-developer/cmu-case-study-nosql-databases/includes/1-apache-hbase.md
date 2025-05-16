@@ -1,7 +1,7 @@
 Apache HBase is an open-source non-relational database modeled after of Google's BigTable distributed storage system and is supported by the Apache Software Foundation. HBase is a distributed, scalable, high-performance, versioned database. HBase's infrastructure is designed to store billions of rows in columns of data in loosely defined tables, such as the webtable described earlier. The following video contains an overview of HBase. 
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pSFl]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7eb3f556-254c-4e88-b139-920a04206af9]
 
 Just as traditional RDBMSs are designed to run on top of a local file system, HBase is designed to work on top of the Hadoop Distributed File System (HDFS). As described earlier, HDFS is a distributed file system that stores files as replicated blocks across multiple servers. HDFS lends a scalable and reliable file system back end to HBase.
 

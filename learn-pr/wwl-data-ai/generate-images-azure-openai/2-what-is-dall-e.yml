@@ -1,14 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.generate-images-azure-openai.what-is-dall-e
-title: What is DALL-E?
+title: What are image-generation models?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: What is DALL-E?
-  description: Explore image generation capabilities of DALL-E in Azure OpenAI service
+  title: What are image-generation models?
+  description: Explore what image-generation models are.
   author: ivorb
   ms.author: berryivor
-  ms.date: 11/15/2024
+  ms.date: 05/08/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

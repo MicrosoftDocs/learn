@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.intro-managed-identity-azure-openai-dotnet
+metadata:
+  ms.author: sayoung
+  author: sarah-yo
+  ms.date: 01/09/2025
+  title: Introduction to using Managed Identity to authenticate to Azure OpenAI with .NET
+  description: How to implement role based access control and managed identity authentication to Azure OpenAI with .NET.
+  ms.topic: module
+  ms.collection: ce-advocates-ai-copilot
+  ms.service: azure-ai-openai
+title: Introduction to using Managed Identity to authenticate to Azure OpenAI with .NET
+summary: Learn how to use managed identity to authenticate to Azure OpenAI in .NET applications
+abstract: |
+ After completing this module, you'll be able to:
+  - Describe the different RBAC roles for use in Azure OpenAI and understand how to configure role assignments
+  - Understand the differences between using API keys and managed identities within Azure OpenAI
+  - Understand how to configure keyless authentication to Azure OpenAI for local development for .NET applications
+  - Understand how to configure keyless authentication to Azure OpenAI for Azure-hosted environments for .NET applications
+prerequisites: |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  - .NET programming
+  - Azure OpenAI
+  - Azure RBAC roles
+  - Azure Managed Identity
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.intro-managed-identity-azure-openai-dotnet.introduction
+- learn.intro-managed-identity-azure-openai-dotnet.azure-openai-rbac-roles
+- learn.intro-managed-identity-azure-openai-dotnet.keyless-authentication-methods
+- learn.intro-managed-identity-azure-openai-dotnet.using-managed-identity-to-access-azure-openai-service-resources
+- learn.intro-managed-identity-azure-openai-dotnet.knowledge-check
+- learn.intro-managed-identity-azure-openai-dotnet.summary
+badge:
+  uid: learn.intro-managed-identity-azure-openai-dotnet-badge

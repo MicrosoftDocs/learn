@@ -111,4 +111,4 @@ The VM was in a **Stopped** state. You need to start the VM and wait for it to b
 
 In this demonstration you will see how to proactively troubleshoot Conditional Access policies using the What if tool in the Azure portal:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Ubfe]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=81a1a2d8-8c91-4644-a114-86ec0f73c95a]

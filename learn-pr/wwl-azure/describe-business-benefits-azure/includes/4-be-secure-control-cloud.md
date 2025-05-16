@@ -4,7 +4,7 @@ In fact, Microsoft Azure is one of the safest, most reliable places your busines
 
 Watch this video to learn more:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW14vWG]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b9f51bbb-251e-43b8-bba8-c0624bb3dbce]
 
 ## Key takeaways
 

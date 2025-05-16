@@ -14,7 +14,7 @@ These cognitive processes might be more difficult for players with learning, att
 
 In the following video, learn how to identify common cognitive elements that can pose these barriers.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWPGaM]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=db9aa098-e11a-4b7d-800e-fd25abf62314]
 
 > [!IMPORTANT]
 > The concept of cognitive accessibility is complex. It involves a broader scope of functional tasks and accessibility considerations than those introduced in this module. The concepts introduced in this module serve as a starting point for building your cognitive accessibility subject matter expertise.

@@ -1,8 +1,8 @@
-The Azure ecosystem offers several performance and security options for SQL Server instance on Azure virtual machine. Each option provides several capabilities, such as different disk types that meet the capacity and performance requirements of your workload.
+The Azure ecosystem offers several performance and security options for SQL Server instances on Azure virtual machines. Each option provides various capabilities, such as different disk types that meet the capacity and performance requirements of your workload.
 
 ## Storage considerations
 
-SQL Server requires good storage performance to deliver robust application performance, whether it be an on-premises instance or installed in an Azure VM. Azure provides a wide variety of storage solutions to meet the needs of your workload. While Azure offers various types of storage (blob, file, queue, table) in most cases SQL Server workloads will use Azure managed disks. The exceptions are that a Failover Cluster Instance can be built on file storage and backups will use blob storage. Azure-managed disks act as a block-level storage device that is presented to your Azure VM. Managed disks offer a number of benefits including 99.999% availability, scalable deployment (you can have up to 50,000 VM disks per subscription per region), and integration with availability sets and zones to offer higher levels of resiliency in case of failure.
+SQL Server requires good storage performance to deliver robust application performance, whether it be an on-premises instance or installed in an Azure VM. Azure provides a wide variety of storage solutions to meet the needs of your workload. While Azure offers various types of storage (blob, file, queue, table), in most cases SQL Server workloads will use Azure managed disks. The exceptions are that a Failover Cluster Instance can be built on file storage and backups will use blob storage. Azure-managed disks act as a block-level storage device that is presented to your Azure VM. Managed disks offer a number of benefits including 99.999% availability, scalable deployment (you can have up to 50,000 VM disks per subscription per region), and integration with availability sets and zones to offer higher levels of resiliency in case of failure.
 
 Azure-managed disks all offer two types of encryption. Azure Server-side encryption is provided by the storage service and acts as encryption-at-rest provided by the storage service. Azure Disk Encryption uses BitLocker on Windows, and DM-Crypt on Linux to provide OS and Data disk encryption inside of the VM. Both technologies integrate with Azure Key Vault and allow you to bring your own encryption key.
 
@@ -14,17 +14,17 @@ Each VM will have at least two disks associated with it:
 
 Additionally, you can and should add additional data disks to your Azure VMs running SQL Server.
 
-- **Data disks** – The term data disk is used in the Azure portal, but in practice these are just additional managed disks added to a VM. These disks can be pooled to increase the available IOPs and storage capacity, using Storage Spaces on Windows or Logical Volume Management on Linux.
+- **Data disks** – The term data disk is used in the Azure portal, but in practice these are just additional managed disks added to a VM. These disks can be pooled to increase the available IOPS and storage capacity, using Storage Spaces on Windows or Logical Volume Management on Linux.
 
 Furthermore, each disk can be one of several types:
 
-| Feature | Ultra Disk | Premium SSD | Standard SSD | Standard HDD |
-|------------|-------------|-------------|-------------|-------------|
-| **Disk type** | SSD | SSD | SSD | HDD |
-| **Best for** | IO-intensive workload | Performance sensitive workload | Lightweight workloads | Backups, non-critical workloads |
-| **Max disk size** | 65,536 GiB | 32,767 GiB | 32,767 GiB | 32,767 GiB |
-| **Max throughput** | 2,000 MB/s | 900 MB/s | 750 MB/s | 500 MB/s |
-| **Max IOPS** | 160,000 | 20,000 | 6,000 | 2,000 |
+| Feature | Ultra Disk | Premium SSD v2 | Premium SSD | Standard SSD | Standard HDD |
+|------------|-------------|-------------|-------------|-------------|-------------|
+| **Disk type** | SSD | SSD | SSD | SSD | HDD |
+| **Best for** | IO-intensive workloads | Performance-sensitive workloads | Performance-sensitive workloads | Lightweight workloads | Backups, non-critical workloads |
+| **Max disk size** | 65,536 GiB | 64,000 GiB | 32,767 GiB | 32,767 GiB | 32,767 GiB |
+| **Max throughput** | 10,000 MB/s | 1,200 MB/s | 900 MB/s | 750 MB/s | 500 MB/s |
+| **Max IOPS** | 160,000 | 80,000 | 20,000 | 6,000 | 2,000 |
 
 The best practices for SQL Server on Azure recommend using Premium Disks pooled for increased IOPs and storage capacity. Data files should be stored in their own pool with read-caching on the Azure disks.
 
@@ -32,17 +32,17 @@ Transaction log files won't benefit from this caching, so those files should go 
 
 ## Security considerations
 
-There are several industry regulations and standards that Azure complies with that makes it possible to build a compliant solution with SQL Server running in a virtual machine.
+There are several regulations and standards that Azure complies with that makes it possible to build a compliant solution with SQL Server running in a virtual machine.
 
 ### Microsoft Defender for SQL
 
-Microsoft Defender for SQL provides Azure Security Center security features such as vulnerability assessments and security alerts.
+[Microsoft Defender for SQL](/azure/azure-sql/database/azure-defender-for-sql) provides Azure Security Center security features such as vulnerability assessments and security alerts.
 
 Azure Defender for SQL can be used to identify and mitigate potential vulnerabilities in your SQL Server instance and database. The vulnerability assessment feature can detect potential risks in your SQL Server environment and help you remediate them. It also provides insight into your security state and actionable steps to resolve security issues.
 
 ### Azure Security Center
 
-Azure Security Center is a unified security management system that evaluates and offers opportunities for improving several security aspects of your data environment. Azure Security Center provides a comprehensive view of the security health of all your hybrid cloud assets.
+Azure Security Center is a unified security management system that evaluates and offers opportunities for improving several security aspects of your data environment. Azure Security Center is a security management tool that allows you to gain insight into your security state across hybrid cloud workloads, reduce your exposure to attacks, and respond to detected threats quickly.
 
 ## Performance considerations
 
@@ -50,7 +50,7 @@ Most of the existing on-premises SQL Server performance features are also availa
 
 ### Table partitioning
 
-Table partitioning provides many benefits, but often this strategy is only considered when the table becomes large enough that starts compromising query performance. Identifying which tables are candidates for table partitioning is a good practice that could lead to fewer disruptions and interventions. When you filter your data using your partition column, only a subset of the data is accessed, not the entire table. Similarly, maintenance operations on a partitioned table will reduce maintenance duration, for example, by compressing specific data in a particular partition or rebuilding specific partitions of an index.
+[Table partitioning](/sql/relational-databases/partitions/partitioned-tables-and-indexes) provides many benefits, but often this strategy is only considered when the table becomes large enough that starts compromising query performance. Identifying which tables are candidates for table partitioning is a good practice that could lead to fewer disruptions and interventions. When you filter your data using your partition column, only a subset of the data is accessed, not the entire table. Similarly, maintenance operations on a partitioned table will reduce maintenance duration, for example, by compressing specific data in a particular partition or rebuilding specific partitions of an index.
 
 There are four main steps required when defining a table partition:
 
@@ -86,21 +86,21 @@ GO
 
 ### Data compression
 
-SQL Server offers different options for compressing data. While SQL Server still stores compressed data on 8 KB pages, when the data is compressed, more rows of data can be stored on a given page, which allows the query to read fewer pages. Reading fewer pages has a twofold benefit: it reduces the amount of physical IO performed and it allows more rows to be stored in the buffer pool, making more efficient use of memory. We recommend enabling database page compression where appropriate.
+SQL Server offers different options of [data compression](/sql/relational-databases/data-compression/data-compression). While SQL Server still stores compressed data on 8 KB pages, when the data is compressed, more rows of data can be stored on a given page, which allows the query to read fewer pages. Reading fewer pages has a twofold benefit: it reduces the amount of physical IO performed and it allows more rows to be stored in the buffer pool, making more efficient use of memory. We recommend enabling database page compression where appropriate.
 
-The tradeoffs to compression are that it does require a small amount of CPU overhead, however, in most cases the storage IO benefits far outweigh any additional processor usage.
+The tradeoffs to compression are that it does require a small amount of CPU overhead; however, in most cases, the storage IO benefits far outweigh any additional processor usage.
 
 :::image type="content" source="../media/module-55-optimize-queries-final-16.png" alt-text="Query against non-compressed and page compressed table":::
 
-The image above shows this performance benefit. These tables have same underlying indexes; the only difference is that the clustered and nonclustered indexes on the *Production.TransactionHistory_Page*table are page compressed. The query against the page compressed object performs 72% fewer logical reads than the query that uses the uncompressed objects.
+The image above shows this performance benefit. These tables have the same underlying indexes; the only difference is that the clustered and nonclustered indexes on the *Production.TransactionHistory_Page* table are page compressed. The query against the page compressed object performs 72% fewer logical reads than the query that uses the uncompressed objects.
 
-Compression is implemented in SQL Server at the object level. Each index or table can be compressed individually, and you have the option of compressing partitions within a partitioned table or index. You can evaluate how much space you'll save by using the sp_estimate_data_compression_savings system stored procedure. Prior to SQL Server 2019, this procedure didn't support columnstore indexes, or columnstore archival compression.
+Compression is implemented in SQL Server at the object level. Each index or table can be compressed individually, and you have the option of compressing partitions within a partitioned table or index. You can evaluate how much space you'll save by using the sp_estimate_data_compression_savings system stored procedure. Prior to SQL Server 2019, this procedure didn't support columnstore indexes or columnstore archival compression.
 
 - **Row compression** - Row compression is fairly basic and doesn't incur much overhead; however, it doesn't offer the same amount of compression (measured by the percentage reduction in storage space required) that page compression may offer. Row compression basically stores each value in each column in a row in the minimum amount of space needed to store that value. It uses a variable-length storage format for numeric data types like integer, float, and decimal, and it stores fixed-length character strings using variable length format.
 
 - **Page compression** - Page compression is a superset of row compression, as all pages will initially be row compressed prior to applying the page compression. Then a combination of techniques called prefix and dictionary compression are applied to the data. Prefix compression eliminates redundant data in a single column, storing pointers back to the page header. After that step, dictionary compression searches for repeated values on a page and replaces them with pointers, further reducing storage. The more redundancy in your data, the greater the space savings when you compress your data.
 
-- **Columnstore archival compression** - Columnstore objects are always compressed, however, they can be further compressed using archival compression, which uses the Microsoft *XPRESS* compression algorithm on the data. This type of compression is best used for data that is infrequently read, but needs to be retained for regulatory or business reasons. While this data is further compressed, the CPU cost of decompression tends to outweigh any performance gains from IO reduction.
+- **Columnstore archival compression** - Columnstore objects are always compressed; however, they can be further compressed using archival compression, which uses the Microsoft *XPRESS* compression algorithm on the data. This type of compression is best used for data that is infrequently read but needs to be retained for regulatory or business reasons. While this data is further compressed, the CPU cost of decompression tends to outweigh any performance gains from IO reduction.
 
 ### Additional options
 

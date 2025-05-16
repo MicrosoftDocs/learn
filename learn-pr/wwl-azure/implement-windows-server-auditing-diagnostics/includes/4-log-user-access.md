@@ -8,11 +8,9 @@ Using UAL, you can:
 - Quantify the following for local servers (physical or virtual):
 
   - Client user requests
-
   - Client user requests for installed software products
 
 - Retrieve data on a local server running Hyper-V to identify periods of high and low demand on a Hyper-V VM.
-
 - Retrieve data from multiple remote servers (physical or virtual).
 
 > [!TIP]
@@ -23,35 +21,20 @@ Using UAL, you can:
 UAL supports the following server roles and services:
 
 - Active Directory Certificate Services (AD CS)
-
 - Active Directory Rights Management Services (AD RMS)
-
 - BranchCache
-
 - Domain Name System (DNS)
-
 - Dynamic Host Configuration Protocol (DHCP)
-
 - Fax Server
-
 - File Services
-
 - File Transfer Protocol (FTP) Server
-
 - Hyper-V
-
 - Web Server (IIS)
-
 - Microsoft Message Queue (MSMQ) Services
-
 - Network Policy and Access Services
-
 - Print and Document Services
-
 - Routing and Remote Access Service (RRAS)
-
 - Windows Deployment Services (WDS)
-
 - Windows Server Update Services (WSUS)
 
 ## What data is logged?
@@ -105,4 +88,3 @@ You can use Windows PowerShell to collect UAL data. The following table describe
 | Get-UalHyperV| Provides virtual machine data relevant to the local or targeted server.|
 | Get-UalDns| Provides DNS client specific data of the local or targeted DNS server.|
 | Get-UalSystemId| Provides system specific data to uniquely identify the local or targeted server.|
-

@@ -1,6 +1,6 @@
-The core element of a Bicep template is resource, which designates an Azure resource. Each resource contains a set of generic and resource-specific properties. For example, the template used in the following example describes an Azure virtual network. While the name and location properties are generic, `addressPrefix` is resource specific. The `Microsoft.Network/virtualNetworks@2021-05-01` string next to the resource designates its API version, and the `virtualNetwork` entry represents its symbolic name, which provides a way to reference the resource within the template.
+The core element of a Bicep template is `resource`, which designates an Azure resource. Each resource contains a set of generic and resource-specific properties. For example, the template used in the following example describes an Azure virtual network. While the name and location properties are generic, `addressPrefix` is resource specific. The `Microsoft.Network/virtualNetworks@2021-05-01` string next to the resource designates its API version, and the `virtualNetwork` entry represents its symbolic name, which provides a way to reference the resource within the template.
 
-In addition to the resource element, the following sample template also includes a parameter element that enables you to assign a name to the virtual network during deployment. If you don't assign a name at that time, the default value of `lnx-bcp-vnet` applies instead. The description element is an example of a decorator, as indicated by the leading `@` character. Its purpose is to describe the parameter's role, and its output appears beside the parameter's textbox when you use the Azure portal to review or deploy the corresponding Azure Resource Manager template. Use the following code example to provision a Linux VM by using Bicep:
+In addition to the `resource` element, the following sample template also includes a parameter element that enables you to assign a name to the virtual network during deployment. If you don't assign a name at that time, the default value of `lnx-bcp-vnet` applies instead. The description element is an example of a decorator, as indicated by the leading `@` character. Its purpose is to describe the parameter's role, and its output appears beside the parameter's textbox when you use the Azure portal to review or deploy the corresponding Azure Resource Manager template. Use the following code example to provision a Linux VM by using Bicep:
 
 ```bicep
 @description('Name of the virtual network')
@@ -36,10 +36,10 @@ To identify the suitable VM image and size, follow the steps described in the ea
 
 ## Author a Bicep template
 
-To author a Bicep template, start by launching a Visual Studio Code session with the Bicep extension installed. Next, create a file named *main.bicep*. Add the following content to the file, and then save the change:
+To author a Bicep template, start by launching a Visual Studio Code session with the Bicep extension installed. Next, create a file named *main.bicep*. Add the following content to the file, then save the change:
 
 > [!NOTE]
-> The filenames that you choose for your Bicep files are arbitrary, although it's a good practice to choose a name that reflects the file content or purpose, and you should use ".bicep" for the file extension.
+> The filenames that you choose for your Bicep files are arbitrary, although it's a good practice to choose a name that reflects the file content or purpose. You should use *.bicep* for the file extension.
 
 ```bicep
 @description('The name of your virtual machine')
@@ -235,7 +235,7 @@ output sshCommand string = 'ssh ${adminUsername}@${publicIPAddress.properties.dn
 
 ## Initiate deployment of the Bicep template
 
-After saving the *main.bicep* file, you can proceed with a template-based deployment. First, launch an Azure CLI session on your local computer, and run `az login` to authenticate. You'll need to provide the credentials of a user with sufficient privileges to provision resources in your Azure subscription. Next, change the current directory to the one where the *main.bicep* file resides. Alternatively, you can start an Azure Cloud Shell Bash session and upload that file into your home directory within the Azure Cloud Shell environment.
+After saving the *main.bicep* file, you can proceed with a template-based deployment. First, launch an Azure CLI session on your local computer and run `az login` to authenticate. You'll need to provide the credentials of a user with sufficient privileges to provision resources in your Azure subscription. Next, change the current directory to the one where the *main.bicep* file resides. Alternatively, you can start an Azure Cloud Shell Bash session and upload that file into your home directory within the Azure Cloud Shell environment.
 
 Next, run the following command from an authenticated Azure CLI session to create a resource group, which will contain all resources that are part of the subsequent deployment:
 

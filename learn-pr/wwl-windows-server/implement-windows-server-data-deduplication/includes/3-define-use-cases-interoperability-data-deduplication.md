@@ -27,7 +27,7 @@ Based on potentials savings and typical resource usage in Windows Server, deploy
   - Virtualized Desktop Infrastructure VDI VHDs (only personal VDIs).
 
 > [!IMPORTANT]
-> In most VDI deployments, special planning is required to consider boot storms. This term refers to the situation in which many users try to simultaneously sign in to their VDI, typically in the beginning of a business day. A boot storm imposes a heavy load on the VDI storage system and can result in long delays for VDI users during their initial sign-in. You can minimize the impact of boot storms by enabling deduplication. This way, chunks read from the on-disk deduplication store during startup of VMs are cached in memory. As a result, subsequent reads don't require frequent access to the chunks on disk because they are available in the cache.
+> In most VDI deployments, special planning is required to consider boot storms. This term refers to the situation in which many users try to simultaneously sign in to their VDI, typically in the beginning of a business day. A boot storm imposes a heavy load on the VDI storage system and can result in long delays for VDI users during their initial sign-in. You can minimize the impact of boot storms by enabling deduplication. This way, chunks read from the on-disk deduplication store during startup of VMs are cached in memory. As a result, subsequent reads don't require frequent access to the chunks on disk because they're available in the cache.
 
 - Should be evaluated based on content:
   - Line-of-business (LOB) servers.
@@ -36,7 +36,6 @@ Based on potentials savings and typical resource usage in Windows Server, deploy
   - High-performance computing (HPC).
 
 - Not ideal candidates for deduplication:
-  - Microsoft Hyper-V hosts.
   - Windows Server Update Service (WSUS).
   - SQL Server and Exchange Server database volumes.
 
@@ -60,11 +59,11 @@ You can optimize access to data over the wide area network (WAN) by enabling Bra
 
 ### Failover Clusters
 
-Failover Clusters fully support Data Deduplication, which means deduplicated volumes will fail over gracefully between nodes in the cluster. This, however, requires that you install the Data Deduplication feature on each node in the cluster that participates in a failover.
+Failover Clusters fully support Data Deduplication, which means deduplicated volumes fail over gracefully between nodes in the cluster. This, however, requires that you install the Data Deduplication feature on each node in the cluster that participates in a failover.
 
 ### FSRM quotas
 
-Although you shouldn't create a hard quota on a volume root folder enabled for deduplication, you can use File Server Resource Manager (FSRM) to create a soft quota in such scenario. When FSRM encounters a deduplicated file, it will identify the file's logical size for quota calculations. Consequently, quota usage (including any quota thresholds) doesn't change when deduplication processes a file. All other FSRM quota functionality, including volume-root soft quotas and quotas on subfolders, will work as expected when using deduplication.
+Although you shouldn't create a hard quota on a volume root folder enabled for deduplication, you can use File Server Resource Manager (FSRM) to create a soft quota in such scenario. When FSRM encounters a deduplicated file, it identifies the file's logical size for quota calculations. Consequently, quota usage (including any quota thresholds) doesn't change when deduplication processes a file. All other FSRM quota functionality, including volume-root soft quotas and quotas on subfolders, will work as expected when using deduplication.
 
 > [!NOTE]
 > FSRM is a suite of tools that help you identify, control, and manage the type and quantity of data stored on your servers. FSRM enables you to configure hard or soft quotas on folders and volumes. A hard quota prevents users from saving files after the quota limit is reached; whereas, a soft quota doesn't enforce the quota limit, it generates a notification when the data on the volume reaches a threshold.

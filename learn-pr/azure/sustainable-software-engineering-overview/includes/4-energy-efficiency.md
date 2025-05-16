@@ -1,4 +1,4 @@
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWwMdr]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=9b78f0bd-1173-4b81-ac07-193455990aee]
 _This video's content is still valid, but the principle numbers may differ due to the Green Software Foundation's principle renumbering._
 
 ## Electricity and carbon
@@ -35,7 +35,7 @@ A common way of referring to energy consumption is _Power over a unit of Time, s
 
 ## Energy proportionality
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxdGc]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=dd731e22-fd9c-4137-8585-32f42fc99b92]
 
 Utilization measures how much of a computer's resources are being used, which is typically represented as a percentage. An idle computer has a low utilization percentage and isn't being utilized. A computer running at its maximum capacity has a high percentage and is being fully utilized.
 

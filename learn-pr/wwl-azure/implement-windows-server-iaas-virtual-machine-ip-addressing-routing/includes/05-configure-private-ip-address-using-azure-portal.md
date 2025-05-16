@@ -5,7 +5,7 @@ In this demonstration, you'll learn to:
 - Retrieve private IP address information for a VM.
 - Add a static private IP address to an existing VM.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Azyv]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=6afa918f-b409-4f3e-b987-772a80f11bc7]
 
 ## Next steps
 

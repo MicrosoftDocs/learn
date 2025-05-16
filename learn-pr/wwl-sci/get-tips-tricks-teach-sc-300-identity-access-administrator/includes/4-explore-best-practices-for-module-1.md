@@ -13,7 +13,7 @@ This module consists of six lessons:
 - Lesson 5 – Authentication and authorization topics
 - Lesson 6 – Auditing in identity and supplemental topics
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWXbXP]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=02f41636-21e7-44cb-b5a8-8310abb5a9da]  
  
 Module 1 Tips and Tricks
 

@@ -30,7 +30,7 @@ var sqlDatabaseName = 'TeddyBear'
 var auditingEnabled = environmentName == 'Production'
 var auditStorageAccountName = take('bearaudit${location}${uniqueString(resourceGroup().id)}', 24)
 
-resource sqlServer 'Microsoft.Sql/servers@2023-08-01-preview' = {
+resource sqlServer 'Microsoft.Sql/servers@2024-05-01-preview' = {
   name: sqlServerName
   location: location
   properties: {
@@ -39,7 +39,7 @@ resource sqlServer 'Microsoft.Sql/servers@2023-08-01-preview' = {
   }
 }
 
-resource sqlDatabase 'Microsoft.Sql/servers/databases@2023-08-01-preview' = {
+resource sqlDatabase 'Microsoft.Sql/servers/databases@2024-05-01-preview' = {
   parent: sqlServer
   name: sqlDatabaseName
   location: location
@@ -55,12 +55,12 @@ resource auditStorageAccount 'Microsoft.Storage/storageAccounts@2023-05-01' = if
   kind: 'StorageV2'  
 }
 
-resource sqlServerAudit 'Microsoft.Sql/servers/auditingSettings@2023-08-01-preview' = if (auditingEnabled) {
+resource sqlServerAudit 'Microsoft.Sql/servers/auditingSettings@2024-05-01-preview' = if (auditingEnabled) {
   parent: sqlServer
   name: 'default'
   properties: {
     state: 'Enabled'
     storageEndpoint: environmentName == 'Production' ? auditStorageAccount.properties.primaryEndpoints.blob : ''
-    storageAccountAccessKey: environmentName == 'Production' ? listKeys(auditStorageAccount.id, auditStorageAccount.apiVersion).keys[0].value : ''
+    storageAccountAccessKey: environmentName == 'Production' ? auditStorageAccount.listKeys().keys[0].value : ''
   }
 }

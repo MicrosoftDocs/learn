@@ -1,4 +1,4 @@
-You can automate the steps in your deployment process by using a _pipeline_. Each time you make a change to your code and commit the change to your Git repository, the pipeline runs your predefined process. A pipeline can verify that your Bicep code meets your quality standards, and then it automates the steps to deploy your resources to Azure. The process is defined in a _pipeline definition_ that you create.
+You can automate the steps in your deployment process by using a _pipeline_. Each time you make a change to your code and commit the change to your Git repository, the pipeline runs your predefined process. A pipeline can verify that your Bicep code meets your quality standards, and it then automates the steps to deploy your resources to Azure. The process is defined in a _pipeline definition_ that you create.
 
 Azure Pipelines is a feature of the Azure DevOps service. Azure DevOps also includes Azure Repos, which hosts the Git repositories you use to store and share your code with your collaborators. When you store your Bicep code in Git, Azure Pipelines can access your code to automate your deployment processes. In this unit, you'll learn about Azure Pipelines.
 
@@ -17,7 +17,7 @@ Because a pipeline YAML file is a code file, the file is stored with your Bicep 
 
 Until now, you've deployed your Bicep files from your local computer. After you write a Bicep template, you deploy it to Azure by using the Azure CLI or Azure PowerShell. These tools use your computer's resources to submit the template to Azure. They use your personal identity to authenticate you to Azure and to verify that you have the permissions to deploy the resources.
 
-A pipeline also needs access to a computer, so it can execute the deployment steps. Azure Pipelines uses a machine called an _agent_. An agent is a computer that's configured to run deployment steps for a pipeline. Each agent already has the Bicep and Azure tooling you used in earlier modules, so it can do the same things you do from your own computer. Instead of a human executing commands, the Azure Pipelines service instructs the agent to run the steps that you've defined in a YAML file.
+A pipeline also needs access to a computer so it can execute the deployment steps. Azure Pipelines uses a machine called an _agent_. An agent is a computer that's configured to run deployment steps for a pipeline. Each agent already has the Bicep and Azure tooling you used in earlier modules, so it can do the same things you do from your own computer. Instead of a human executing commands, the Azure Pipelines service instructs the agent to run the steps that you've defined in a YAML file.
 
 Azure Pipelines provides multiple types of agents for different operating systems, like Ubuntu or Windows, and different sets of tools. Microsoft runs these agents, so you don't have to maintain any compute infrastructure for the agents. The agents sometimes are called _Microsoft-hosted agents_ or _hosted agents_ because they're hosted on your behalf. When your pipeline runs, a hosted agent is automatically created. When your pipeline is finished running, the hosted agent is automatically deleted. You can't access hosted agents directly, so it's important that your pipeline contains all the steps necessary to deploy your solution.
 
@@ -40,8 +40,8 @@ A _step_ represents a single operation that the pipeline performs. A step is sim
 
 Azure Pipelines offers two types of steps:
 
-* **Scripts**. Use a script step to run a single command or a sequence of commands in Bash, PowerShell, or the Windows command shell.
-* **Tasks**. A task is a convenient way to access many different capabilities without writing script statements. For example, a built-in task can run the Azure CLI and Azure PowerShell cmdlets to test your code or upload files to an FTP server. Anyone can write a task and share it with other users by publishing the task in the Visual Studio Marketplace. A large set of commercial and open-source tasks are available.
+* **Scripts**: Use a script step to run a single command or a sequence of commands in Bash, PowerShell, or the Windows command shell.
+* **Tasks**: A task is a convenient way to access many different capabilities without writing script statements. For example, a built-in task can run the Azure CLI and Azure PowerShell cmdlets to test your code or upload files to an FTP server. Anyone can write a task and share it with other users by publishing the task in the Visual Studio Marketplace. A large set of commercial and open-source tasks are available.
 
 Some people prefer to use script statements instead of built-in tasks because they offer more control over what's executed. Other people prefer to use tasks so that they don't have to write and manage scripts. In this module, we use a mixture of both approaches.
 

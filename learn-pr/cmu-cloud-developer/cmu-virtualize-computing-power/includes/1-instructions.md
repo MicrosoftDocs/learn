@@ -1,6 +1,6 @@
 The key to virtualizing a CPU lies in the execution of both privileged and unprivileged instructions issued by guest virtual processors. The set of any processor instructions is documented and provided in the ISA. The following video outlines the issues regarding virtualizing an ISA:
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4pFkf]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=9cba4e63-6d8e-4d91-b105-589d9238d97d]
 
  Special privileges to system resources are permitted by defining modes of operations (or rings) in the ISA. Each CPU ISA usually specifies two modes of operations, system (or supervisor/kernel/privileged) mode and user mode (see Figure 1a). System mode allows a wide accessibility to system components, while user mode restricts such accessibility. In an attempt to provide security and resource isolations, OSs in traditional systems are executed in system mode, while associated applications are run in user mode. Some ISAs, however, support more than two rings. For instance, the Intel IA-32 ISA supports four rings (see Figure 1b). In traditional systems, when Linux is implemented on an IA-32 ISA, the OS is executed in Ring 0 and application processes are executed in Ring 3.
 

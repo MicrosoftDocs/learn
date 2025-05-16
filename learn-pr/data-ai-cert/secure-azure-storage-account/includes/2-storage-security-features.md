@@ -8,7 +8,7 @@ After Contoso's competitor has a data breach, Contoso tasks the network administ
 - Control who can access data
 - Audit storage access
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LHrz]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f0ef7956-ecdf-43cb-82e5-d0f9cb34bf3c]
 
 ## Encryption at rest
 

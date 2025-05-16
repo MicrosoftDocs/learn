@@ -1,4 +1,4 @@
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxeEn]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c6f1316d-f321-4557-9204-fb510bb66644]
 _This video's content is still valid, but the principle numbers might differ due to the Green Software Foundation's principle renumbering._
 
 ## Carbon awareness
@@ -7,7 +7,7 @@ Not all electricity is produced in the same way. In different locations and time
 
 ### Carbon Intensity
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWwOVB]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=29f3a363-5357-4c60-81f1-86bbf1ddf48e]
 
 Electricity's carbon intensity is a measure of how many carbon (CO₂eq) emissions are produced per kilowatt-hour of electricity consumed.
 

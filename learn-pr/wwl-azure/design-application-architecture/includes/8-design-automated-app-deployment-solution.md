@@ -24,7 +24,7 @@ There are many benefits to using ARM templates for your resource provisioning. A
 
 #### ARM template formats
 
-There are two formats available for ARM templates and Azure resource deployments, JSON and Bicep. JavaScript Object Notation (JSON) is an open-standard file format that multiple languages can use. Bicep is a new domain-specific language that was recently developed for authoring templates by using an easier syntax. You can use the Bicep CLI to decompile any JSON template into a Bicep template.
+There are two formats available for ARM templates and Azure resource deployments, JSON and Bicep. JavaScript Object Notation (JSON) is an open-standard file format that multiple languages can use. Bicep is a domain-specific language that was recently developed for authoring templates by using an easier syntax. You can use the Bicep CLI to decompile any JSON template into a Bicep template.
 
 ### Things to know about Azure Bicep templates
 
@@ -53,3 +53,7 @@ There are many reasons to choose Bicep as the main tool set for your infrastruct
 | **Process automation** | Process automation enables you to automate frequent, time-consuming, and error-prone cloud management tasks. This service helps you focus on work that adds business value. By reducing errors and boosting efficiency, it also helps to lower your operational costs. The service allows you to author runbooks graphically in PowerShell or by using Python. |
 | **Configuration management** | Configuration management enables access to two features, Change Tracking and Inventory and Azure Automation State Configuration. The service supports change tracking across services, daemons, software, registry, and files in your environment. The change tracking helps you diagnose unwanted changes and raise alerts. |
 | **Update management** | The update management service includes the Update Management feature for Windows and Linux systems across hybrid environments. The feature allows you to create scheduled deployments that orchestrate the installation of updates within a defined maintenance window. 
+
+
+> [!TIP]
+> Continue your learning in the [Deploy Azure infrastructure by using JSON ARM templates](/training/modules/create-azure-resource-manager-template-vs-code/) module.

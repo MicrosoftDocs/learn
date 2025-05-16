@@ -1,4 +1,3 @@
-
 You can protect your data by making backups at regular intervals. There are several backup options available for VMs, depending on your use-case, as described in the following table.
 
 |Backup option|Description|
@@ -22,8 +21,6 @@ Backing up Azure VMs using Azure Backup is straightforward and follows the logic
    >[!TIP]
    > VMs that you migrate from on-premises data centers would not have the VM Agent installed. In such a case, you need to install the VM Agent.
 
-   [![A screenshot of the ContosoVM1 | Backup blade in the Azure portal. An initial backup is pending. .](../media/m20-backup-2.png)](../media/m20-backup-2.png#lightbox)
-
 ## How to restore VMs
 
 After your VM snapshots are safely in the Recovery Services vault recovering them is also a straightforward process. After you trigger the restore operation, the Backup service creates a job for tracking the restore operation. The Backup service also creates and temporarily displays notifications, so you can monitor how the backup is proceeding. To restore a VM, use the following procedure:
@@ -31,8 +28,6 @@ After your VM snapshots are safely in the Recovery Services vault recovering the
 1. Select the appropriate VM in the Azure portal, and then select **Backup**. Alternatively, select the appropriate **Recovery Services vault**, and then select **Backup Items**.
 2. Select either **File recovery** or **Restore VM**.
 3. Follow the on-screen prompts to complete the process.
-
-   ![A screenshot of the ContosoVM1 | Backup Item blade in the Azure portal. One Restore point is listed.](../media/m20-restore-1.png)
 
 ## Azure Disk Level backup and restore
 

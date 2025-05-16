@@ -11,7 +11,7 @@ This module consists of two lessons:
 - Lesson 1 – Explore Dynamics 365 Sales
 - Lesson 2 – Leverage sales capabilities
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dXUF]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=570e45cd-4e0e-4b6f-900e-7e05da7d11ee]
 
 Module 3 Tips and Tricks
 

@@ -1,6 +1,6 @@
 An Azure subscription might have one or more Azure Data Factory instances. Azure Data Factory is composed of four core components. These components work together to provide the platform on which you can compose data-driven workflows with steps to move and transform data.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Mc3u]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=67d2d9f1-4edc-4299-9401-94e3f2a8be15]
 
 Data Factory supports a wide variety of data sources that you can connect to through the creation of an object known as a **Linked Service**, which enables you to ingest the data from a data source in readiness to prepare the data for transformation and/or analysis. In addition, Linked Services can fire up compute services on demand. For example, you may have a requirement to start an on-demand HDInsight cluster for the purpose of just processing data through a Hive query. So Linked Services enables you to define data sources, or compute resource that is required to ingest and prepare data.
 

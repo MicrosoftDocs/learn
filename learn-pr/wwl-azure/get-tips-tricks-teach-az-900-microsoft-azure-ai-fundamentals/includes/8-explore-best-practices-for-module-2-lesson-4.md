@@ -4,7 +4,7 @@ AZ-900: Module 2, Lesson 4: Identity, access, and security
 
 As you're preparing to teach this lesson, get familiar with what the students will learn during the lesson. In this lesson, students will learn about Microsoft Entra ID and the authorization and authentication methods available with Azure.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dSQm]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6d23f7ba-c54e-4fbf-858d-6bf97341ec00]
  
 Module 2, Lesson 4 Tips and Tricks
 

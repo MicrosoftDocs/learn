@@ -75,7 +75,7 @@ You can choose any of the prebuilt models in Azure AI Document Intelligence Stud
 
 Because Azure AI Document Intelligence implements RESTful web services, you can use web service calls from any language that supports them. However, when you use Microsoft's Azure AI Document Intelligence APIs, security and session management is simplified and you have to write less code.
 
-APIs are available for:
+Azure AI Document Intelligence is available for:
 
 - C# and other .NET languages.
 - Java.

@@ -21,17 +21,13 @@ Microsoft provides a tool, Hyper-V Resource Metering, that enables you to monito
 With Hyper-V Resource Metering, you can measure the following parameters on individual Hyper-V VMs:
 
 - Average graphics processing unit (GPU) use
-
 - Average physical memory use, including:
 
   - Minimum memory use
-
   - Maximum memory use
 
 - Maximum disk-space allocation
-
 - Incoming network traffic for a network adapter
-
 - Outgoing network traffic for a network adapter
 
 By measuring how much of these resources each VM uses, an organization can bill departments or customers based on their hosted VM use rather than charging a flat fee per VM. An organization with only internal customers can also use these measurements to observe patterns of use and to plan future expansions.
@@ -39,11 +35,8 @@ By measuring how much of these resources each VM uses, an organization can bill 
 You perform resource-metering tasks by using Windows PowerShell cmdlets with the Hyper-V module for Windows PowerShell. There's no graphical user interface (GUI) tool to perform this task. You can use the following cmdlets to perform resource metering tasks:
 
 - **Enable-VMResourceMetering**. This cmdlet starts collecting data on a per-VM basis.
-
 - **Disable-VMResourceMetering**. This cmdlet disables resource metering on a per-VM basis.
-
 - **Reset-VMResourceMetering**. This cmdlet resets VM resource-metering counters.
-
 - **Measure-VM**. This cmdlet displays resource-metering statistics for a specific VM.
 
 > [!TIP]
@@ -52,4 +45,3 @@ You perform resource-metering tasks by using Windows PowerShell cmdlets with the
 Typical output from the `measure-VM` cmdlet is displayed in the following screenshot.
 
 ![The screenshot displays a Command window where the output that results from running the measure-VM PowerShell cmdlet is displayed. This command is part of Hyper-V Resource Metering functionality and in the screenshot typical values for tracking resource utilization of VMs are displayed, such as CPU, RAM, disk, and network throughput.](../media/measure-virtual-machine.png)
-

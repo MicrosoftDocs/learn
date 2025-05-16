@@ -49,7 +49,7 @@ You start by writing code that updates a few resources stored in a page's resour
 
 1. Remove all the code from the **OnLight** method.
 
-1. Add the following code shown to the **OnLight** method. This code sets the **fgColor** resource in the page's resource dictionary to the value in the **colorNavy** variable and sets the **bgColor** resource to the value in the **colorSilver** variable. The **colorNavy** and **colorSilver** variables use the static **Color.FromRgb** method, which makes it easy to convert a hexadecimal value to a color.
+1. Add the following code to the **OnLight** method. This code sets the **fgColor** resource in the page's resource dictionary to the value in the **colorNavy** variable and sets the **bgColor** resource to the value in the **colorSilver** variable. The **colorNavy** and **colorSilver** variables use the static **Color.FromRgb** method, which makes it easy to convert a hexadecimal value to a color.
 
     ```csharp
     void OnLight(object sender, EventArgs e)
@@ -73,7 +73,7 @@ You start by writing code that updates a few resources stored in a page's resour
 
 ## Update the UI dynamically
 
-To fix the problem, modify your XAML so that updated resource values are loaded into your UI.
+To fix the problem, modify your Extensible Application Markup Language (XAML) so that updated resource values are loaded into your UI.
 
 1. Stop the app, and open the **StandardTipPage.xaml** file.
 

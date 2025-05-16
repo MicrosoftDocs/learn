@@ -2,11 +2,9 @@
 uid: learn.wwl.evaluate-storage-migration-considerations
 title: Evaluate storage migration considerations
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Evaluate storage migration considerations
   description: "Evaluate storage migration considerations"
-  ms.date: 06/01/2022
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/5-evaluate-storage-migration-considerations.md)]
+  [!include[](includes/5-evaluate-storage-migration-considerations.md)]

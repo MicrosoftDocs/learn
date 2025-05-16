@@ -38,7 +38,7 @@ The main steps in the process are:
 1. Set up iSCSI Initiator. Configure iSCSI initiators on the cluster nodes to set up shared storage.
 1. Configure CSV. Use Failover Cluster Manager to configure CSV.
 
- > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MBcx]
+ > [!VIDEO https://learn-video.azurefd.net/vod/player?id=1fa54eb1-234d-4f9c-928a-90baf88f9a9a]
 
 ---
 

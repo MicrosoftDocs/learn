@@ -1,5 +1,3 @@
-
-
 It's important for the Contoso IT security team to be able to recover data from any disk. This is true for encrypted disks as well. The Azure Backup service enables the team to perform backup and restore operations for disks encrypted with Azure Disk Encryption.
 
 ## Back up your Azure Disk Encryption–protected VMs

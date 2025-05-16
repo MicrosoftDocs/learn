@@ -1,21 +1,26 @@
-*Object detection* is a form of computer vision in which a model is trained to detect the presence and location of one or more classes of object in an image. For example, an AI-enabled checkout system in a grocery store might need to identify the type and location of items being purchased by a customer.
+To use the Custom Vision service to create an object detection solution, you need *two* Custom Vision resources in your Azure subscription:
 
-![An image with the location and type of fruits detected](../media/object-detection.png)
+- An **Azure AI Custom Vision *training*** resource - used to train a custom model based on your own training images.
+- An **Azure AI Custom Vision *prediction*** resource - used to generate predictions from new images based on your trained model.
 
-There are two components to an object detection prediction:
+When you provision the Azure AI Custom Vision service in an Azure subscription, you can choose to create one or both of these resources. This separation of training and prediction provides flexibility. For example, you can use a *training* resource in one region to train your model using your own image data; and then deploy one or more prediction resources in other regions to support computer vision applications that need to use your model.
 
-- The class label of each object detected in the image. For example, you might ascertain that an image contains one apple and two oranges.
-- The location of each object within the image, indicated as coordinates of a *bounding box* that encloses the object.
+Each resource has its own unique *endpoint* and authentication *keys*; which are used by client applications to connect and authenticate to the service.
 
-## Use the Azure AI Custom Vision service for object detection
+## The Custom Vision portal
 
-You can use the **Azure AI Custom Vision** service to train an object detection model. To use the Azure AI Custom Vision service, you must provision two kinds of Azure resource:
+Azure AI Custom Vision provides a web-based portal, in which you can train, publish, and test custom vision models.
 
-- A *training* resource used to train your models. This can be:
-    - An **Azure AI services multi-service** resource.
-    - An **Azure AI Custom Vision (Training)** resource.
-- A *prediction* resource, used by client applications to get predictions from your model. This can be:
-    - An **Azure AI services multi-service** resource.
-    - An **Azure AI Custom Vision (Prediction)** resource.
+![Screenshot of the Azure AI Custom Vision portal.](../media/custom-vision-portal.png)
 
-You can use a **Azure AI services multi-service** resource for both training and prediction, and you can mix-and-match resource types (for example, using an **Azure AI Custom Vision (Training)** resource to train a model that you then publish using an **Azure AI services multi-service** resource). If using a multi-service resource, they key and endpoint for both training and prediction will be the same.
+You can sign into the Custom Vision portal at [https://www.customvision.ai/](https://www.customvision.ai?azure-portal=true) using your Azure credentials and use it to create image classification or object detection projects that use Azure AI Custom Vision resources in your Azure subscription.
+
+Each project has a unique *project ID*; which is used by client applications to perform training or prediction tasks using code.
+
+## Custom Vision SDKs
+
+You can write code to train and consume custom models by using the Azure AI Custom Vision language-specific SDKs.
+
+For example, Microsoft C# developers can use the [Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training?azure-portal=true) and [Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction](https://www.nuget.org/packages/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction?azure-portal=true) Microsoft .NET packages for training and prediction respectively.
+
+Python developers can perform both training and prediction tasks by using the [azure-cognitiveservices-vision-customvision](https://pypi.org/project/azure-cognitiveservices-vision-customvision?azure-portal=true) package.

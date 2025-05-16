@@ -4,11 +4,10 @@ In this exercise, you add a converter to the Weather app created in the previous
 
 The current binding context of the weather app's page is a data object with properties describing the weather forecast. One of those properties is the sky condition, which is an enumeration. When weather information is displayed, the app should show an icon to help the user visualize the sky condition. To show these icons, the enumeration needs to be converted to an image resource.
 
-01. Open the Weather Sample project from the previous exercise in Visual Studio. If you don't have a copy, you can download it from [GitHub](https://github.com/MicrosoftDocs/mslearn-dotnetmaui-databinding1/raw/main/part4-exercise-finish.zip).
-
-01. Add a folder to the project named _Converters_.
-01. Add a new class to the _Converters_ folder named _WeatherConditionToImageConverter.cs_.
-01. Open _WeatherConditionToImageConverter.cs_ in the code editor and replace all the code with the following code:
+1. Open the Weather Sample project from the previous exercise in Visual Studio or Visual Studio Code.
+1. Add a folder to the project named _Converters_.
+1. Add a new class to the _Converters_ folder named _WeatherConditionToImageConverter.cs_.
+1. Open _WeatherConditionToImageConverter.cs_ in the code editor and replace all the code with the following code:
 
     ```csharp
     using System.Globalization;
@@ -37,8 +36,8 @@ The current binding context of the weather app's page is a data object with prop
 
     This code defines the `WeatherConditionToImageConverter` converter in the `WeatherClient.Converters` namespace. This converter expects the `WeatherType` enumeration as the value, and returns an image resource based on that value.
 
-01. Open the _MainPage.xaml_ file.
-01. On the root element, add a new XML namespace named `cvt` and map it to the .NET namespace `WeatherClient.Converters`.
+1. Open the _MainPage.xaml_ file.
+1. On the root element, add a new XML namespace named `cvt` and map it to the .NET namespace `WeatherClient.Converters`.
 
     ```xaml
     <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
@@ -47,7 +46,7 @@ The current binding context of the weather app's page is a data object with prop
                  x:Class="WeatherClient.MainPage">
     ```
 
-01. Add an instance of the `WeatherConditionToImageConverter` converter to the page's resources, with the key of `WeatherConditionToImageConverter`:
+1. Add an instance of the `WeatherConditionToImageConverter` converter to the page's resources, with the key of `WeatherConditionToImageConverter`:
 
     ```xaml
     <ContentPage ...
@@ -57,15 +56,15 @@ The current binding context of the weather app's page is a data object with prop
         </ContentPage.Resources>
     ```
 
-01. Find the `<Image>` control in `Grid.Row="0"`.
-01. Change the `Source="question.png"` property to the following binding:
+1. Find the `<Image>` control in `Grid.Row="0"`.
+1. Change the `Source="question.png"` property to the following binding:
 
     ```xaml
     Source="{Binding Condition, Converter={StaticResource WeatherConditionToImageConverter}}"
     ```
 
-01. Run the project.
+1. Run the project.
 
-Notice that when you press the **Refresh** button, the **Condition** field changes to an icon:
+Notice that when you select the **Refresh** button, the **Condition** field changes to an icon:
 
 :::image type="content" source="../media/6-exercise-create-converter/image-resource.png" alt-text="A screenshot of the .NET MAUI app displaying the weather forecast with a sun icon for the sky condition.":::

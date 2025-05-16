@@ -8,7 +8,7 @@ How do you stand out? The short answer is, make sure the company know of you, ei
 
 Let a Microsoft recruiter describe a few qualities that companies are looking for in a tech employee:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4NNvJ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=59b974b4-5d16-4abd-a525-b102b716ee5d]
 
 ## Scenario: meeting with company representatives
 

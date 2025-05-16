@@ -2,13 +2,11 @@
 uid: learn.wwl.enrich-search-index-using-language-studio.enrich-cognitive-search-index-custom-classes
 title: Enrich a search index in Azure AI Search with custom classes and Azure AI Language
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Enrich a search index in Azure AI Search with custom classes and Azure AI Language
   description: Enrich a search index in Azure AI Search with custom classes and Azure AI Language.
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 09/20/2024
+  ms.date: 05/02/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

@@ -11,7 +11,7 @@ It's important to foster a climate of belonging in tech because people who are m
 
 To further explore the concept of belonging in tech, review the following video, which is approximately two minutes in length.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OAoo]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c6a1a8da-2132-455b-a9e5-68f51d92a17d]
 
 ### Check in with yourself
 

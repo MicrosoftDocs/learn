@@ -1,10 +1,10 @@
-Many modern web services implement the REST architecture. This structure enables a web service to expose operations and data through a series of well-defined endpoints. The requests that client apps send to a REST web service to retrieve, modify, or create, or delete data use a predefined set of **verbs**. A REST web service responds to these requests in a standard manner. This approach makes it easier to construct client apps.
+Many modern web services implement the REST architecture. This structure enables a web service to expose operations and data through a series of well-defined endpoints. The requests that client apps send to a REST web service to retrieve, modify, create, or delete data use a predefined set of **verbs**. A REST web service responds to these requests in a standard manner. This approach makes it easier to construct client apps.
 
-The REST model is built on top of the HTTP protocol. A .NET MAUI application can send requests to a REST web service by using the `HttpClient` class. In this unit, you'll learn about `HttpClient` and how to use it to interact with a REST web service.
+The REST model is built on top of the HTTP protocol. A .NET Multi-platform App UI (MAUI) application can send requests to a REST web service by using the `HttpClient` class. In this unit, you learn about `HttpClient` and how to use it to interact with a REST web service.
 
 ## What is the HttpClient class?
 
-`HttpClient` is a .NET class that an app can use to send HTTP requests and receive HTTP responses from a REST web service.  A set of URIs identifies the resources that the web service exposes. A URI combines the address of the web service with the name of a resource available at that address.
+`HttpClient` is a .NET class that an app can use to send HTTP requests and receive HTTP responses from a REST web service. A set of Uniform Resource Identifiers (URI)s identifies the resources that the web service exposes. A URI combines the address of the web service with the name of a resource available at that address.
 
 The `HttpClient` class uses a task-based API for performance, and gives you access to information in request messages such as HTTP headers and status codes, as well as message bodies that contain the actual data being sent and received.
 
@@ -21,7 +21,7 @@ var client = new HttpClient();
 
 ## Perform CRUD operations with an HttpClient object
 
-A REST web service enables a client to perform operations against data through a set of HTTP verbs. The HTTP verb's job is to indicate the desired action to be performed on a resource. There are many HTTP verbs, but the four most common are `POST`, `GET`, `PUT`, and `DELETE`. A service can implement these verbs to enable a client application to manage the lifecycle of objects by performing Create, Read, Update, and Delete (CRUD) operations, as follows:
+A REST web service enables a client to perform operations against data through a set of HTTP verbs. The HTTP verb's job is to indicate the desired action to be performed on a resource. There are many HTTP verbs, but the four most common are `POST`, `GET`, `PUT`, and `DELETE`. A service can implement these verbs to enable a client application to manage the lifecycle of objects by performing Create, Read, Update, and Delete (CRUD) operations:
 
 - The `POST` verb indicates that you want to create a new resource.
 
@@ -80,7 +80,7 @@ In this example, the result is returned as a string and only contains the respon
 
 ### Update a resource with HttpClient
 
-To update a resource by using `HttpClient`, use an `HttpRequestMessage` initialized with a **PUT** verb. The following code is similar to that required to create a new resource:
+To update a resource by using `HttpClient`, use an `HttpRequestMessage` initialized with a **PUT** verb. The following code is similar to the code required to create a new resource:
 
 ```csharp
 HttpClient client = new HttpClient();
@@ -92,7 +92,7 @@ HttpResponseMessage response = await client.SendAsync(message);
 ```
 
 > [!NOTE]
-> The fundamental difference between `POST` and `PUT` is idempotency. If you repeat the same `PUT` request several times, the same resource will be updated with the same data, and the effect is the same as if the request had been sent only once. If you issue the same `POST` request several times, the result will be the REST service creating multiple copies of the resource.
+> The fundamental difference between `POST` and `PUT` is idempotency. If you repeat the same `PUT` request several times, the same resource is updated with the same data, and the effect is the same as if the request was sent only once. If you issue the same `POST` request several times, the REST service creates multiple copies of the resource.
 
 ### Delete a resource with HttpClient
 
@@ -113,11 +113,11 @@ All HTTP requests return a response message. The data in the response depends on
 
 The response body of a `POST` request returns a copy of the resource that was created, but the response body of a `PUT` request should be empty.
 
-You should always check and handle the status code in the response message. If this status code is in the 200 range (200, 201, 202, and so on), then the operation is deemed to have been successful, although further information might be required later.
+You should always check and handle the status code in the response message. If this status code is in the 200 range (200, 201, 202, and so on), then the operation is considered successful, although further information might be required later.
 
-A status code in the 300 range indicates that the request might have been redirected by the web service to a different address, possibly as the result of a resource moving to a different location.
+A status code in the 300 range might indicate that the web service redirected the request to a different address, possibly as the result of a resource moving to a different location.
 
-A status code in the 400 range indicates a client or application error. For example, status code 403 means that the web service requires the user to be authenticated, but the app hasn't done so. Status code 404 occurs when the app attempts to access a resource that doesn't exist.
+A status code in the 400 range indicates a client or application error. For example, status code 403 means that the web service requires the user to be authenticated, but the app didn't do the authentication. Status code 404 occurs when the app attempts to access a resource that doesn't exist.
 
 Status codes in the 500 range are indicative of a server-side error, such as the service being unavailable or too busy to handle the request.
 

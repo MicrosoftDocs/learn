@@ -3,7 +3,7 @@ The MapReduce programming model allows computational jobs to be structured in te
 The MapReduce programming model assumes the availability of a distributed storage system that is available across all the nodes of the cluster, with a single namespace, which is where a distributed file system (DFS) comes in. A DFS is collocated with the nodes of the MapReduce cluster. The DFS is designed to work in tandem with MapReduce and maintains a single namespace for the entire MapReduce cluster.
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q0qE]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=06510f26-3a38-460b-8b72-76eb78e1d85f]
 
 An open-source version of MapReduce, called Apache Hadoop<sup>[2][^2]</sup>, is very popular in big-data circles. HDFS is an open-source DFS. HDFS is designed to be a distributed, scalable, fault-tolerant file system that primarily caters to the needs of the MapReduce programming model. Video 4.12 introduces HDFS.
 
@@ -50,7 +50,7 @@ In the example in Figure 2, the distance between Node 1 and itself is zero hops 
 The following video walks through file read and write operations in HDFS.
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pSF7]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=329c4709-b55c-4b5b-b3d4-6d7a63cd9012]
 
 ![File reads in HDFS.](../media/file-reads-hadoop-1.png)
 

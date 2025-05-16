@@ -21,7 +21,7 @@ In the first unit of this module, you created a backlog in Azure DevOps by using
 
 ## Add workloads
 
-Now, we'll add some workloads to the project plan. At the end of the last unit, we identified a series of workloads from the Tailwind Traders' digital estate. When you're building actual plans, you might target ten workloads for your first migration, but for brevity, you'll only target the six workloads we identified in the last unit.
+Now, we'll add some workloads to the project plan. The Tailwind Traders' digital estate has six workloads: mobile coupon, video shelf, remote store POS, employee scheduling, virtual desktop, and backup solution. When you're building actual plans, you might target ten workloads for your first migration, but for brevity, you'll only target these six workloads.
 
 > [!NOTE]
 > The virtual-desktop and backup-solution workloads might be considered technology platforms rather than workloads. However, during migration, that distinction has little bearing on how the collection of assets is deployed to the cloud.
@@ -83,7 +83,7 @@ Asset migration is fine for small-scale, tactical efforts, but that approach doe
 
 Workload migration is much more efficient, but might also hit scale points when the effort begins to focus on thousands of VMs.
 
-**Migration factory**: For the highest scale and most repeatable option, you can build a migration factory as you and your team gain additional experience. The Cloud Adoption Framework's [process improvements section](/azure/cloud-adoption-framework/migrate/migration-considerations/?azure-portal=true) provides a number of processes to consider.
+**Migration process**: For the highest scale and most repeatable option, you can use the Cloud Adoption Framework's [migrate methodology](/azure/cloud-adoption-framework/migrate/).
 
 ### Add tasks
 
@@ -131,7 +131,3 @@ During the first few weeks of initial iteration execution, the majority of your 
 ## Integrate your digital estate at scale
 
 You can more quickly add workloads, assets, and tasks by using the Teams add-in for Microsoft Excel. The *Next steps* section in the next unit provides links to an article series that teaches you how to load a large number of workloads and assets by using the workload template provided in the initial cloud-adoption plan.
-
-## Partner engagement
-
-Microsoft partners who provide the Cloud Adoption Framework approved offers can accelerate migration planning and execution, significantly reducing the amount of recurring work required by the organization. See the [Cloud Adoption Framework partner offer site](https://www.microsoft.com/azure/partners/adopt?filters=migration&azure-portal=true) for offers from experienced partners.

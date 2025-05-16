@@ -1,18 +1,20 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-http-operations-asp-razor
 metadata:
-  title: Implement HTTP operations in ASP.NET Razor Pages
-  description: "Implement HTTP operations in ASP.NET Razor Pages"
-  ms.date: 11/13/2024
+  title: Implement HTTP operations in ASP.NET Core Blazor Web apps
+  description: "Implement HTTP operations in ASP.NET Core Blazor Web apps"
+  ms.date: 01/15/2025
   author: wwlpublish
   ms.author: jeffko
-  ms.topic: module-standard-task-based
+  ms.topic: module
+  ms.collection: N/A
   ms.custom:
   - N/A
   ms.service: aspnet-core
+  ms.subservice: blazor
   ai-usage: ai-assisted
-title: Implement HTTP operations in ASP.NET Razor Pages
-summary: Learn how to implement HTTP clients based on `HttpClient` and `IHttpClientFactory`. And how to implement code to perform HTTP operations in [ASP.NET](https://ASP.NET) Core Razor Pages.
+title: Implement HTTP operations in ASP.NET Core Blazor Web apps
+summary: Learn how to implement HTTP clients based on `HttpClient` and `IHttpClientFactory`. And how to implement code to perform HTTP operations in [ASP.NET](https://ASP.NET) Core Blazor Web apps.
 abstract: |
   After completing this module, you'll be able to:
 
@@ -20,7 +22,7 @@ abstract: |
 
   -   Use HTTP clients to perform safe and unsafe operations
 
-  -   Add code to support HTTP operations in an ASP.NET Core Razor Pages app
+  -   Add code to support HTTP operations in an ASP.NET Core Blazor Web Apps
 prerequisites: |
   -   Experience writing C# at an intermediate level
 

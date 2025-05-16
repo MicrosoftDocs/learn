@@ -87,4 +87,4 @@ The following video demonstrates how to implement IPAM by using Windows Admin Ce
     - DHCP scopes.
     - DNS Zones.
 
- >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MjvM]
+ >[!VIDEO https://learn-video.azurefd.net/vod/player?id=02460695-5a6c-4a1f-9130-5706554830da]

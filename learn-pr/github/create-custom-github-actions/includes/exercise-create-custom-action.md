@@ -13,9 +13,9 @@ When you select the _Start the exercise on GitHub_ button, you'll navigate to a 
 When you've finished the exercise in GitHub, return here for:
 
 > [!div class="checklist"]
-> * A quick knowledge check 
-> * A summary of what you've learned
-> * To earn a badge for completing this module
+> - A quick knowledge check 
+> - A summary of what you've learned
+> - To earn a badge for completing this module
 
 >[!NOTE]
 > You don't need to modify any of the workflow files to complete this exercise. **Altering the contents in this workflow can break the exercise's ability to validate your actions, provide feedback, or grade the results**.

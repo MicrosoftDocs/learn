@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-app-services.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 12/18/2024
+  ms.date: 04/28/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
@@ -33,7 +33,7 @@ quiz:
     choices:
     - content: "Continuous deployment"
       isCorrect: false
-      explanation: "Incorrect. Continuous deployment is the process of moving software that's been built and tested successfully into production."
+      explanation: "Incorrect. Continuous deployment is the process of moving software from test into production."
     - content: "Application logging"
       isCorrect: false
       explanation: "Incorrect. Enabling application logging provides authentication and authorization traces."

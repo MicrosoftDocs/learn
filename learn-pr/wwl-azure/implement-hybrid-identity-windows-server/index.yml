@@ -3,15 +3,15 @@ uid: learn.wwl.implement-hybrid-identity-with-windows-server
 metadata:
   title: Implement hybrid identity with Windows Server
   description: "Implement hybrid identity with Windows Server"
-  ms.date: 12/13/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
   ms.service: windows-server
 title: Implement hybrid identity with Windows Server
-summary: In this module, you’ll learn to configure an Azure environment so that Windows IaaS workloads requiring Active Directory are supported. You’ll also learn to integrate on-premises Active Directory Domain Services (AD DS) environment into Azure.
+summary: In this module, learn to configure an Azure environment so that Windows IaaS workloads requiring Active Directory are supported. Also learn to integrate on-premises Active Directory Domain Services (AD DS) environment into Azure.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
   - Select a Microsoft Entra integration model.
   - Plan for Microsoft Entra integration.
   - Prepare on-premises AD DS for directory synchronization.
@@ -20,7 +20,7 @@ abstract: |
   - Enable Microsoft Entra login for an Azure Windows virtual machine (VM).
   - Describe Microsoft Entra Domain Services.
   - Implement and configure Microsoft Entra Domain Services.
-  - Manage Windows Server 2019 in a Microsoft Entra Domain Services instance.
+  - Manage Windows Server in a Microsoft Entra Domain Services instance.
   - Join a Windows Server VM to a managed domain.
 prerequisites: |
   In order to get the best learning experience from this module, it's important that you have knowledge and experience of the following:
@@ -30,7 +30,7 @@ prerequisites: |
   - On-premises resiliency Windows Server-based compute and storage technologies.
   - Implementing and managing IaaS services in Microsoft Azure.
   - Microsoft Entra ID.
-  - Security-related technologies (firewalls, encryption, multi-factor authentication).
+  - Security-related technologies (firewalls, encryption, multifactor authentication).
   - Windows PowerShell scripting.
   - Automation and monitoring.
 iconUrl: /training/achievements/implement-hybrid-identity-with-windows-server.svg

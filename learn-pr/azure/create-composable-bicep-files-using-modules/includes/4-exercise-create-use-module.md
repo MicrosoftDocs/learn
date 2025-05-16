@@ -101,6 +101,14 @@ Here, you add the _app_ module to your Bicep template as a starting point.
 
 1. Save the changes to the file.
 
+## Verify your Bicep file
+
+After you've completed all of the preceding changes, your _main.bicep_ file should look like this example:
+
+:::code language="bicep" source="code/4-template-2.bicep" :::
+
+If it doesn't, either copy the example or adjust your template to match the example.
+
 ## Deploy the Bicep template to Azure
 
 ::: zone pivot="cli"
@@ -112,7 +120,7 @@ Here, you add the _app_ module to your Bicep template as a starting point.
 Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. This process can take a minute or two to finish, and then you'll get a successful deployment.
 
 ```azurecli
-az deployment group create --template-file main.bicep
+az deployment group create --name main --template-file main.bicep
 ```
 
 The status `Running...` appears in the terminal.
@@ -128,7 +136,7 @@ The status `Running...` appears in the terminal.
 Deploy the template to Azure by using the following Azure PowerShell command in the terminal. This can take a minute or two to finish, and then you'll get a successful deployment.
 
 ```azurepowershell
-New-AzResourceGroupDeployment -TemplateFile main.bicep
+New-AzResourceGroupDeployment -Name main -TemplateFile main.bicep
 ```
 
 ::: zone-end

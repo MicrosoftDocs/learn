@@ -4,6 +4,6 @@ As an educator, you play a pivotal role in empowering students for future succes
 
 Before we begin, make sure you're using the most up-to-date version of the Microsoft Official Curriculum. It's recommended that you log into the [Learning Download Center](https://techcommunity.microsoft.com/blog/mctnews/current-courseware-downloading-process/4196123) (LDC) at least quarterly. If you haven't already done so, download the course materials from the LDC before continuing with this module. 
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWXxsY]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3b643f87-8762-4fd2-83d5-7255d6feb8fe]  
 
 Now that you have the updated materials, you’re ready to prepare for your class.

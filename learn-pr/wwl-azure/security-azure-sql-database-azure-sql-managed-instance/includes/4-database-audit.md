@@ -17,7 +17,7 @@ Auditing for Azure SQL Database, Azure Synapse Analytics SQL pools, and Azure SQ
 
 Shown below is the configuration of auditing using the Azure portal.
 
-:::image type="content" source="../media/azure-database-auditing-baa1d767.png" alt-text="Screenshot showing an example of an auditing configuration using the Azure portal.":::
+:::image type="content" source="../media/azure-database-auditing-baa1d767-05f497e4-7b11192c-abd0e941.png" alt-text="Screenshot showing an example of an auditing configuration using the Azure portal.":::
 
 
 ## Auditing limitations

@@ -1,17 +1,14 @@
-
-
 With more services available online and in the cloud, Contoso IT staff needs to define and manage its users’ cloud identities. As with on-premises identities, Contoso can use cloud identities to authenticate and authorize their users when they try to access company resources. 
 
-Microsoft provides a cloud-based directory service in the Azure platform called Microsoft Entra ID, which Contoso can utilize to meet its needs. Microsoft Entra ID has many similarities to AD DS in terms of providing a solution for SSO access to thousands of cloud SaaS applications. 
+Microsoft provides a cloud-based directory service in the Azure platform called Microsoft Entra ID, which Contoso can utilize to meet its needs. Microsoft Entra ID has many similarities to AD DS in terms of providing a solution for SSO access to thousands of cloud SaaS applications.
 
-In addition to—or instead of—Microsoft Entra ID, Contoso could choose to use Microsoft Entra Domain Services. Microsoft Entra Domain Services provides managed domain services such as domain join, group policy, LDAP, and Kerberos authentication or NTLM authentication that is fully compatible with Windows Server AD DS. 
+In addition to—or instead of—Microsoft Entra ID, Contoso could choose to use Microsoft Entra Domain Services. Microsoft Entra Domain Services provides managed domain services such as domain join, group policy, LDAP, and Kerberos authentication or NTLM authentication that is fully compatible with Windows Server AD DS.
 
-Contoso could use these domain services without needing to deploy, manage, and patch domain controllers in the cloud. Microsoft Entra Domain Services can integrate with Contoso's existing Microsoft Entra tenant, which makes it possible for their users to sign in using their existing credentials. Contoso can also use existing groups and user accounts to secure access to resources, which provides a smoother lift-and-shift of on-premises resources to Azure. 
+Contoso could use these domain services without needing to deploy, manage, and patch domain controllers in the cloud. Microsoft Entra Domain Services can integrate with Contoso's existing Microsoft Entra tenant, which makes it possible for their users to sign in using their existing credentials. Contoso can also use existing groups and user accounts to secure access to resources, which provides a smoother lift-and-shift of on-premises resources to Azure.
 
-In this module, you learned how to select a Microsoft Entra integration model and plan for integration. Also, you learned to prepare and install AD DS synchronization, in addition to implement SSO and enable Microsoft Entra login for an Azure VM. Finally, you learned to plan and implement Microsoft Entra Domain Services. 
+In this module, you learned how to select a Microsoft Entra integration model and plan for integration. Also, you learned to prepare and install AD DS synchronization, in addition to implement SSO and enable Microsoft Entra login for an Azure VM. Finally, you learned to plan and implement Microsoft Entra Domain Services.
 
 Equipped with this knowledge, you are prepared to guide Contoso’s IT team as it decides how to define and manage its users’ cloud identities.
-
 
 ## Learn more
 

@@ -150,7 +150,7 @@ An event will trigger on all activity types for the event unless you specify the
 
 A workflow must have at least one *job*. A job is a section of the workflow associated with a *runner*. A runner can be GitHub-hosted or self-hosted, and the job can run on a machine or in a container. You'll specify the runner with the ```runs-on:``` attribute. Here, you're telling the workflow to run this job on ```ubuntu-latest```.
 
-Each job will have steps to complete. In our example, the step uses the action *actions/checkout@v1* to check out the repository. What's interesting is the ```uses: ./action-a``` value, which is the path to the container action that you build in an *action.yml* file. We looked at the contents of an *action.yml* file in the **What is GitHub Actions?** section.
+Each job will have steps to complete. In our example, the step uses the action *actions/checkout@v1* to check out the repository. What's interesting is the ```uses: ./action-a``` value, which is the path to the container action that you build in an *action.yml* file.
 
 The last part of this workflow file sets the `MY_NAME` variable value for this workflow. Recall the container action took an input called `MY_NAME`.
 
@@ -167,3 +167,56 @@ Each type of runner has its benefits, but GitHub-hosted runners offer a quicker 
 ### GitHub Actions may have usage limits
 
 GitHub Actions has some usage limits, depending on your GitHub plan and whether your runner is GitHub-hosted or self-hosted. For more information on usage limits, check out [Usage limits, billing, and administration](https://docs.github.com/actions/reference/usage-limits-billing-and-administration) in the GitHub documentation.
+
+## GitHub hosted larger runners
+GitHub offers larger runners for workflows that require more resources. These runners are GitHub-hosted and provide increased CPU, memory, and disk space compared to standard runners. They are designed to handle resource-intensive workflows efficiently, ensuring optimal performance for demanding tasks.
+
+### Runner sizes and labels
+Larger runners are available in multiple configurations, providing enhanced vCPUs, RAM, and SSD storage to meet diverse workflow requirements. These configurations are ideal for scenarios such as:
+- Compiling large codebases with extensive source files.
+- Running comprehensive test suites, including integration and end-to-end tests.
+- Processing large datasets for data analysis or machine learning tasks.
+- Building applications with complex dependencies or large binary outputs.
+- Performing high-performance simulations or computational modeling.
+- Executing video encoding, rendering, or other multimedia processing workflows.
+
+To use a larger runner, specify the desired runner label in the `runs-on` attribute of your workflow file. For example, to use a runner with 16 vCPUs and 64 GB of RAM, you would set `runs-on: ubuntu-latest-16core`. 
+
+```yml
+jobs:
+  build:
+    runs-on: ubuntu-latest-16core
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build project
+        run: make build
+```
+These larger runners maintain compatibility with existing workflows by including the same preinstalled tools as standard `ubuntu-latest` runners.
+
+For more details on runner sizes for larger runners, refer to the GitHub documentation [https://docs.github.com/en/actions/using-github-hosted-runners/using-larger-runners/about-larger-runners#machine-sizes-for-larger-runners]
+
+
+### Managing larger runners
+GitHub provides tools to manage larger runners effectively, ensuring optimal resource utilization and cost management. Here are some key aspects of managing larger runners:
+
+#### Monitoring usage
+You can monitor the usage of larger runners through the GitHub Actions usage page in your repository or organization settings. This page provides insights into the number of jobs run, the total runtime, and the associated costs.
+
+#### Managing access
+To control access to larger runners, you can configure repository or organization-level policies. This ensures that only authorized workflows or teams can use these high-resource runners.
+
+#### Cost management
+Larger runners incur additional costs based on their usage. To manage costs, consider the following:
+- Use larger runners only for workflows that require high resources.
+- Optimize workflows to reduce runtime.
+- Monitor billing details regularly to track expenses.
+
+#### Scaling workflows
+If your workflows require frequent use of larger runners, consider scaling strategies such as:
+- Using self-hosted runners for predictable workloads.
+- Splitting workflows into smaller jobs to distribute the load across standard runners.
+
+
+
+
+

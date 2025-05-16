@@ -2,15 +2,11 @@ Congratulations! You've containerized and deployed a Java app to Azure Kubernete
 
 You wanted to learn how to containerize and deploy a Java app to Azure. You followed these steps:
 
-1. Containerize a Java app
-
-1. Build a container image for the Java app
-
-1. Run the container image locally
-
-1. Push the container image to Azure Container Registry
-
-1. Deploy the container image to Azure Kubernetes Service
+1. Containerize a Java app.
+1. Build a container image for the Java app.
+1. Run the container image locally.
+1. Push the container image to Azure Container Registry.
+1. Deploy the container image to Azure Kubernetes Service.
 
 You're now confident that you can containerize and deploy a Java app to Azure.
 

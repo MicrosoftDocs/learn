@@ -24,7 +24,7 @@ Those are the three I was thinking about using right now. There are two other se
 
 Here's a short video where Abel explains the five parts of Azure DevOps:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LB7b]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=56738e57-286d-4e77-9ce9-06607fb7153a]
 
 **Amita:** This sounds like a lot. Where do we start?
 

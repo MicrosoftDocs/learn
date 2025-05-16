@@ -53,4 +53,4 @@ To make the best use of the guidance provided in the XAGs, it's important to und
 
 The following video introduces each XAG component and describes how developers can use the components to guide accessibility best practice implementation.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPhum]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=38603cc0-f794-4cd0-aabe-8e836707f5f6]

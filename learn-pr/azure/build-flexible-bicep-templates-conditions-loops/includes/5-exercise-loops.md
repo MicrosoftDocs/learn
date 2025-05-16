@@ -53,7 +53,7 @@ If it doesn't, either copy the example or adjust your template to match the exam
 In the Visual Studio Code terminal, deploy the Bicep template to Azure by running the following code:
 
 ```azurecli
-az deployment group create --template-file main.bicep
+az deployment group create --name main --template-file main.bicep
 ```
 
 ::: zone-end
@@ -63,7 +63,7 @@ az deployment group create --template-file main.bicep
 In the Visual Studio Code terminal, deploy the Bicep template to Azure by running the following Azure PowerShell command:
 
 ```azurepowershell
-New-AzResourceGroupDeployment -TemplateFile main.bicep
+New-AzResourceGroupDeployment -Name main -TemplateFile main.bicep
 ```
 
 ::: zone-end
@@ -102,7 +102,7 @@ The teddy bear toy team is about to launch again, this time into Asia. The team 
 1. In the Visual Studio Code terminal, redeploy the file by running the following code:
 
     ```azurecli
-    az deployment group create --template-file main.bicep
+    az deployment group create --name main --template-file main.bicep
     ```
 
 ::: zone-end
@@ -118,7 +118,7 @@ The teddy bear toy team is about to launch again, this time into Asia. The team 
 1. In the Visual Studio Code terminal, redeploy the file by running the following code:
 
     ```azurepowershell
-    New-AzResourceGroupDeployment -TemplateFile main.bicep
+    New-AzResourceGroupDeployment -Name main -TemplateFile main.bicep
     ```
 
 ::: zone-end

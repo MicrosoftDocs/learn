@@ -12,7 +12,7 @@ This module consists of three lessons:
 - Lesson 2 – Configure and manage secrets in Azure Key Vault 
 - Lesson 3 – Implement compliance controls for sensitive data 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5apB9] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c4f82d7a-5fae-4453-a1c5-3bb4e3019507] 
 
 Module 8 Tips and Tricks 
 

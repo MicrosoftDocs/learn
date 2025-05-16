@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.priva-understand-microsoft-priva
+metadata:
+  title: Understand Microsoft Priva
+  description: "Understand Microsoft Priva."
+  ms.date: 01/17/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: purview
+  hidden: false
+title: Understand Microsoft Priva
+summary: Understand how Microsoft Priva helps organizations manage privacy risks, streamline data handling, and comply with privacy requirements. Explore tools like Privacy Risk Management, Consent Management, and Subject Rights Requests, and understand how to configure settings and assign roles to ensure secure and effective use of Priva.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe the purpose and key principles of Microsoft Priva.
+  - Navigate the Priva portal and locate core features.
+  - Explain the functionality of Priva solutions, including Privacy Risk Management and Subject Rights Requests.
+  - Configure settings like anonymization and data retention for privacy tools.
+  - Understand how Priva supports compliance and promotes responsible data handling practices.
+prerequisites: |
+  - Familiarity with Microsoft 365 environments.
+  - Basic understanding of privacy management and compliance requirements.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- auditor
+- administrator
+- privacy-manager
+products:
+- priva
+- microsoft-purview
+- azure
+- m365
+subjects:
+- compliance
+- security
+units:
+- learn.wwl.priva-understand-microsoft-priva.introduction
+- learn.wwl.priva-understand-microsoft-priva.address-privacy-challenges
+- learn.wwl.priva-understand-microsoft-priva.priva-overview
+- learn.wwl.priva-understand-microsoft-priva.navigate-priva-portal
+- learn.wwl.priva-understand-microsoft-priva.configure-priva-settings
+- learn.wwl.priva-understand-microsoft-priva.knowledge-check
+- learn.wwl.priva-understand-microsoft-priva.summary
+
+badge:
+  uid: learn.wwl.priva-understand-microsoft-priva.badge

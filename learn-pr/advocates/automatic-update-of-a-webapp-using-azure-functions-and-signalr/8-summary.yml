@@ -1,13 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.azure-functions-and-signalr.8-summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Review changes made to your application that removed polling and added server push technologies.
-  ms.date: 08/12/2024
-  author: craigshoemaker
-  ms.author: cshoe
+  ms.date: 04/24/2025
+  author: glenga
+  ms.author: glenga
   ms.topic: unit
 title: Summary
 durationInMinutes: 2

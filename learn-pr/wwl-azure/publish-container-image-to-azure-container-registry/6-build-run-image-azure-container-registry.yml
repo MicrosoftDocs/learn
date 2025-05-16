@@ -2,8 +2,6 @@
 uid: learn.wwl.publish-container-image-to-azure-container-registry.exercise-build-run-container-image-by-using-tasks
 title: 'Exercise: Build and run a container image by using Azure Container Registry Tasks'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Build and run a container image by using Azure Container Registry Tasks'
   description: "Exercise: Build and run a container image by using Azure Container Registry Tasks"
   ms.date: 07/15/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-build-run-image-azure-container-registry.md)]
+  [!include[](includes/6-build-run-image-azure-container-registry.md)]

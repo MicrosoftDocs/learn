@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-prepare-genaiops.select-model
+title: Select the right generative AI model
+metadata:
+  title: Select the right generative AI model
+  description: When building an intelligent app, choosing the right generative AI model requires evaluating factors like task type, precision, performance, and scalability to meet real-world needs.
+  author: madiepev
+  ms.author: madiepev
+  ms.date: 02/21/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-select-model.md)]

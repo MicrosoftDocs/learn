@@ -6,7 +6,7 @@ By completing this module, you're able to:
 
 - Assess a generative AI app response using performance and quality metrics
 - Assess a generative AI app response using risk and safety metrics
-- Run an evaluation and track the results in Azure AI Studio
+- Run an evaluation and track the results in Azure AI Foundry portal
 - Create a custom evaluator with Prompty
 - Send queries to an endpoint and run evaluators on the resulting query and response
 - Generate a synthetic dataset using conversation starters

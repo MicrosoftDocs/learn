@@ -2,8 +2,6 @@
 uid: learn.wwl.work-environments-azure-machine-learning.explore-use-curated-environments
 title: Explore and use curated environments
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore and use curated environments
   description: Learn about curated environments in Azure Machine Learning and how to use them.
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/3-explore-use-curated-environments.md)]
-
+

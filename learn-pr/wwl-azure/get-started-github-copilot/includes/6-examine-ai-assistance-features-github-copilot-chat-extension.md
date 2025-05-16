@@ -197,7 +197,7 @@ If you like the proposed code updates, you can select **Accept** and continue co
 
 ![Screenshot showing suggested update from inline chat in Visual Studio Code.](../media/inline-chat-3.png)
 
-If you don't like the proposed updates, you can ask Copilot Chat to generate another suggestion by selecting the **Rerun...** icon. The Rerun icon is displayed as a circular arrow that and appears below the prompt textbox.
+If you don't like the proposed updates, you can ask Copilot Chat to generate another suggestion by selecting the **Rerun...** icon. The Rerun icon is displayed as a circular arrow that appears below the prompt textbox.
 
 If you rerun the prompt and still don't get the results you need, try updating your prompt with additional context. Copilot Chat generates better suggestions when the prompt is clear, succinct, and accurate. You can choose **Discard** to close the inline chat without making any changes.
 
@@ -366,8 +366,8 @@ By using a chat variable, you can be more specific about the context that you in
 
 Examples of built-in chat variables are:
 
-- `#selection`: the visible source code in the active editor.
-- `#editor`: the current selection in the active editor. The editor content is implicitly included in the Chat view context.
+- `#editor`: the visible source code in the active editor.
+- `#selection`: the current selection in the active editor. The editor content is implicitly included in the Chat view context.
 - `#file`: include a specified file in your workspace as context with your chat prompt.
 - `#terminalSelection`: the active terminal's selection.
 - `#terminalLastCommand`: the active terminal's last run command.

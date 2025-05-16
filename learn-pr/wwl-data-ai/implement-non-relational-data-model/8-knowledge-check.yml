@@ -2,11 +2,9 @@
 uid: learn.wwl.implement-non-relational-data-model.knowledge-check
 title: Knowledge check
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/16/2024
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit
@@ -20,32 +18,32 @@ quiz:
     choices:
     - content: "``Many: Many relationships``"
       isCorrect: false
-      explanation: "That's incorrect. ``Many: Many relationships`` This is especially false if the relationship is unbounded. Azure Cosmos DB has a maximum document size of 2 MB. So, in situations where the 1:Many relationship is unbounded or can grow large, data should be referenced, not embedded."
+      explanation: "Incorrect. ``Many: Many relationships`` This criteria is especially false if the relationship is unbounded. Azure Cosmos DB has a maximum document size of 2 MB. So, in situations where the 1:Many relationship is unbounded or can grow large, data should be referenced, not embedded."
     - content: "Read or updated together"
       isCorrect: true
-      explanation: "That's correct. This is correct because Data that's read or updated together is nearly always modeled as a single document. This is especially true because our objective for our NoSQL model is to reduce the number of requests to our database."
+      explanation: "Correct. This criteria is correct because Data read or updated together is nearly always modeled as a single document. This criteria is especially true because our objective for our NoSQL model is to reduce the number of requests to our database."
     - content: "Read or updated independently"
       isCorrect: false
-      explanation: "That's incorrect. This is especially false with large documents. Updates in Azure Cosmos DB require the entire item to be replaced. If a document has a few properties that are frequently updated alongside a large number of mostly static properties, it's much more efficient to split the document into two."
-  - content: "Consider the following scenario: Your company has customers across four countries/regions, with hundreds of thousands of customers for countries/regions 1 and 2, and a few thousand customers for countries/regions 3 and 4.  Requests for each country/region total approximately 50,000 RU/s every hour of the day. Your application team proposes to use ``countryId`` as the partition key for this container. This is a write-heavy application with no TTL being used. Which of the following statements is true?"
+      explanation: "Incorrect. This criteria is especially false with large documents. Updates in Azure Cosmos DB require the entire item to be replaced. If a document has a few properties that are frequently updated alongside a large number of mostly static properties, it's much more efficient to split the document into two."
+  - content: "Consider the following scenario: A company has customers across four regions, with hundreds of thousands of customers for regions 1 and 2, and a few thousand customers for regions 3 and 4. Requests for each region total approximately 50,000 RU/s every hour of the day. The application team proposes to use ``regionId`` as the partition key for this container. This application is a write-heavy application with no TTL (time to live) being used. Which of the following statements is true?"
     choices:
     - content: "This partition key prevents throughput hot partitions."
       isCorrect: false
-      explanation: "That's incorrect. Throughput hot partitions would still be possible."
-    - content: "This partition key causes fan outs when filtering by ``countryId``."
+      explanation: "Incorrect. Throughput hot partitions would still be possible."
+    - content: "This partition key causes fan outs when filtering by ``regionId``."
       isCorrect: false
-      explanation: "That's incorrect. This partition will actually prevent Fan outs since we'll always be going to one partition per ``countryId``."
+      explanation: "Incorrect. This partition actually prevents Fan outs since the access only goes to one partition per ``regionId``."
     - content: "This partition key could cause storage hot partitions"
       isCorrect: true
-      explanation: "That's correct. Storage hot partitions are likely for regions 1 or 2 since they would have to bulk of the data stored."
-  - content: "Why is understanding the access pattern of your application and how to use this information in your data model design important?"
+      explanation: "Correct. Storage hot partitions are likely for regions 1 or 2 since they would have to bulk of the data stored."
+  - content: "Why is understanding the access pattern of an application and how to use this information in the data model design important?"
     choices:
-    - content: "Understanding the access pattern of your application helps you identify where to save space when storing our data."
+    - content: "When a developer understands the access pattern of an application, it helps identify where to save space when storing our data."
       isCorrect: false
-      explanation: "That's incorrect. Since we usually embed the data of multiple related tables together, we many times increase the space used by the data compared to a relational model."
-    - content: "Understanding the access pattern of your application helps you identify how to access your data with fewer requests."
+      explanation: "Incorrect. Since we usually embed the data of multiple related tables together, we many times increase the space used by the data compared to a relational model."
+    - content: "When a developer understands the access pattern of an application, it helps identify how to access the data with fewer requests."
       isCorrect: true
-      explanation: "That's correct. The main goal of your application is usually to process the data as soon as possible, so we usually design our NoSQL databases to reduce the number of requests the app does to read and/or write the data."
-    - content: "Understanding the access pattern of your applications wouldn't help you identify the correct schema of your data."
+      explanation: "Correct. The main goal of an application is usually to process the data as soon as possible, so we usually design our NoSQL databases to reduce the number of requests the app does to read and/or write the data."
+    - content: "When a developer understands the access pattern of an application, it wouldn't help identify the correct schema of the data."
       isCorrect: false
-      explanation: "That's incorrect. By understanding the access patterns, it also allows you to understand the way your documents and containers can be design to better improve the performances."
+      explanation: "Incorrect. When a developer understands the access patterns, it also allows the developer to understand the way the documents and containers can be design to better improve the performances."

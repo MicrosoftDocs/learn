@@ -8,7 +8,7 @@ Potential participants need detailed information on what they can expect before 
 
 The following video outlines the key information that you should include in invitations. It also gives insights on the importance of providing this information.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPdo9]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=14f9a5ed-1a30-4b3e-afa2-876f65fa8bb1]
 
 ## Provide accessible accommodations
 

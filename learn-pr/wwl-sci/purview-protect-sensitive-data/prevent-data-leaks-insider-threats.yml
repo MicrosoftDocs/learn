@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-protect-sensitive-data.prevent-data-leaks-insider-threats
+title: Prevent data leaks and insider threats
+metadata:
+  title: Prevent data leaks and insider threats
+  description: "Prevent data leaks and insider threats."
+  ms.date: 03/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/prevent-data-leaks-insider-threats.md)]

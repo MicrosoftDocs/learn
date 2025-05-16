@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.prepare-azure-ai-development.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary of planning considerations for AI development on Azure.
+  author: wwlpublish
+  ms.author: gmalc
+  ms.date: 04/17/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-summary.md)]
+

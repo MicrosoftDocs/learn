@@ -2,7 +2,7 @@ Microsoft Defender XDR provides a cross-domain threat correlation and purpose-dr
 
 This short video gives an overview of incidents in Microsoft Defender XDR.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=208a5393-24b6-4f17-8523-e78bdb5a34cc?]
 
 An incident is a collection of correlated alerts that make up the story of an attack. Microsoft Defender XDR automatically aggregates malicious and suspicious events that are found in different device, user, and mailbox entities in the network. Grouping related alerts into an incident gives security defenders a comprehensive view of an attack.
 
@@ -156,4 +156,3 @@ Added comments instantly appear on the pane.
 ### Add incident tags
 
 You can add custom tags to an incident, for example, to flag a group of incidents with common characteristics. You can later filter the incidents queue for all incidents that contain a specific tag.
-

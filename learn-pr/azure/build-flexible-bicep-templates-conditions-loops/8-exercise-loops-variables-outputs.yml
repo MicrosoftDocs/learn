@@ -3,12 +3,10 @@ uid: learn.azure.bicep-conditions-loops.exercise-loops-variables-outputs
 title: Exercise - Use variable and output loops
 sandbox: true
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Use variable and output loops
   description: Learn how to use loops with variables and outputs.
-  ms.date: 09/27/2024
+  ms.date: 04/18/2025
   author: mumian
   ms.author: jgao
   ms.topic: unit

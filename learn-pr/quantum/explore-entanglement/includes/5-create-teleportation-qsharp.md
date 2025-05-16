@@ -253,3 +253,7 @@ The following code contains the `Teleport` operation, the `SetToPlus` and `SetTo
     
     Received state |0〉
     ```
+
+Congratulations! You successfully teleport the state of Alice's qubit to Bob's qubit using the quantum teleportation protocol. All thanks to quantum entanglement! 
+
+In the next unit, you'll test your knowledge of quantum teleportation and entanglement.

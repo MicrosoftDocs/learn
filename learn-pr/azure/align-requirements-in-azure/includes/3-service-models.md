@@ -6,7 +6,7 @@ Cloud computing resources are delivered using three different service models:
 
 #### IaaS versus SaaS versus PaaS
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yEbs]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7c10337d-d558-46f0-9950-4a2ff33035b0]
 
 When choosing a service model, consider which party should be responsible for the computing resource. Based on your scenario, you can decide how much shared management responsibility you want. The following illustration shows a list of resources that you manage and that your service provider manages in each cloud service category.
 

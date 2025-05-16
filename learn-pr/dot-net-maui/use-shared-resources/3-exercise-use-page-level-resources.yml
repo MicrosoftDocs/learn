@@ -4,8 +4,8 @@ title: "Exercise: Use page-level resources"
 metadata:
   unitType: exercise
   title: "Exercise: Use page-level resources"
-  description: "Create page-level resources and use them to replace repeated XAML mark-up"
-  ms.date: 11/08/2023
+  description: "Create page-level resources and use them to replace repeated values in your Extensible Application Markup Language (XAML) code."
+  ms.date: 01/13/2025
   author: codemillmatt
   ms.author: masoucou
   ms.manager: markl

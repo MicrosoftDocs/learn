@@ -1,11 +1,11 @@
-You can provide direct access to Azure NetApp Files volume from your Azure VMware Solution (AVS) virtual machines (VMs) using Network File System (NFS) or Server Message Block (SMB) file shares.
+You can provide direct access to Azure NetApp Files volume from your Azure VMware Solution virtual machines (VMs) using Network File System (NFS) or Server Message Block (SMB) file shares.
 
 ## Requirements 
 
 To provide access, you need the following resources:
 
 - Access to an Azure subscription with an Azure VMware Solution private cloud.
-- A VNet connected to your AVS private cloud via an ExpressRoute gateway.
+- A virtual network (VNet) connected to your Azure VMware Solution private cloud via an ExpressRoute gateway.
 - A subnet delegated to the `Microsoft.NetApp/volumes` service.
 - An Active Directory connection for Azure NetApp Files.
 - An Azure NetApp Files capacity pool.
@@ -16,7 +16,7 @@ To provide access, you need the following resources:
 
 1. Navigate to Azure NetApp Files in the Azure portal.
 1. Select the **Volumes** menu then **+ Add Volume** to create a volume.
-1. In the **Basics** tab, ensure the Virtual network selected is the VNet connected to your AVS private cloud.
+1. In the **Basics** tab, ensure the Virtual network selected is the VNet connected to your Azure VMware Solution private cloud.
 1. In the **Protocol** tab, select NFSv3 as the protocol type.
 1. In the **Review + create** tab, select **Create** to create the volume.
 1. Navigate to Azure NetApp Files in the Azure portal. Select **Volumes**.
@@ -34,13 +34,13 @@ Before you mount an SMB share, you must [create an Active Directory connection](
 
 1. Navigate to Azure NetApp Files in the Azure portal.
 1. Select the **Volumes** menu then **+ Add Volume** to create a volume.
-1. In the **Basics** tab, ensure the Virtual network selected is the VNet connected to your AVS private cloud.
+1. In the **Basics** tab, ensure the Virtual network selected is the VNet connected to your Azure VMware Solution private cloud.
 1. In the **Protocol** tab, select SMB as the protocol type.
 1. In the **Protocol** tab, select your Active Directory connection from the drop-down list.
 1. In the **Review + create** tab, select **Create** to create the volume.
 1. Select the **Volumes** menu. Select the volume you created. 
 1. Select **Mount instructions** to obtain the correct path to map the volume (for example, `\\anf.contoso.com/smbvol01`). 
-1. Log in to the Windows VM.
+1. Sign in to the Windows VM.
 1. Select the **Start** button then **Computer**.
 1. Select **Map Network Drive**.
 1. In the **Drive** list, select any available drive letter.

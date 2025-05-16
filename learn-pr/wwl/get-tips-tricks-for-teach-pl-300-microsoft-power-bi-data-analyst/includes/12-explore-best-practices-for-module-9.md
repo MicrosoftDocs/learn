@@ -11,7 +11,7 @@ This module consists of two lessons:
 - Lesson 1 – Advanced analytics 
 - Lesson 2 – Data insights through AI visuals 
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE5aCFV] 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ad6c2ca0-3205-4b10-ab3b-384abc0ba42c] 
 
 Module 9 Tips and Tricks 
 

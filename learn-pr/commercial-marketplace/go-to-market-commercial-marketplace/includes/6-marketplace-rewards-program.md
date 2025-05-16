@@ -2,7 +2,7 @@ Marketplace Rewards is a program that gives you access to sales, technical, and 
 
 Marketplace Rewards benefits are tiered, which means you'll unlock new benefits when your offer hits certain milestones. As you reach new milestones, you're able to choose your benefits from a menu of options in Partner Center.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ICN3]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=d9bbe199-f3c0-4ca3-afcf-b6c96c274961]
 
 ## Marketplace Rewards benefits
 

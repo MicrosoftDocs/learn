@@ -27,7 +27,7 @@ Self-regulation is your ability to control or redirect disruptive emotions and i
 
 To learn more about the importance of metacognition and self-regulation, review the following video. It's about three minutes long.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ONBM]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=77b18a3a-576c-42c9-9cca-30d05ecfccc7]
 
 After you review the video, consider these questions:
 

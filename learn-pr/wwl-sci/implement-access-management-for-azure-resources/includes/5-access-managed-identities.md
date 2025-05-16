@@ -9,11 +9,11 @@ After you've enabled managed identity on an Azure resource, such as an Azure App
 3.  Select Access control (IAM).
 4.  Select Add &gt; Add role assignment to open the Add role assignment page.
     
-    :::image type="content" source="../media/managed-identity-role-assignment-60e02730.png" alt-text="Screenshot of the Azure portal in the storage account page, adding a new role to a managed identity.":::
+    :::image type="content" source="../media/managed-identity-role-assignment-60e02730-1c04c245.png" alt-text="Screenshot of the Azure portal in the storage account page, adding a new role to a managed identity.":::
     
 5.  Pick the Owner, Contributor, or Reader based on the least privilege rules for your applications needs.
 6.  Select the managed identity you want assigned.
     
-    :::image type="content" source="../media/managed-identity-select-8adf45e1.png" alt-text="Screenshot of the Azure portal in the key vault page, choose the managed identity to grant role and access to.":::
+    :::image type="content" source="../media/managed-identity-select-8adf45e1-7eaa59b5.png" alt-text="Screenshot of the Azure portal in the key vault page, choose the managed identity to grant role and access to.":::
     
 7.  Complete the assignment with the **Review + assign** option.

@@ -11,7 +11,7 @@ This module consists of two lessons:
 - Lesson 1 – Navigate Dynamics 365 customer engagement apps
 - Lesson 2 – Explore common Dynamics 365 activities and integration options
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4UbRg]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7fc810d4-3fd1-4f9a-9bbc-ff3e86bb8175]  
 
 Module 1 Tips and Tricks
 

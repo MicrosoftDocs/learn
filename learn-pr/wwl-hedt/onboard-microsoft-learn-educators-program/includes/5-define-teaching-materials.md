@@ -1,6 +1,6 @@
 MSLE provides curriculum as well as teaching materials that are custom-built to help educators teach this content in a classroom setting. 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4U84l] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=bf794625-8581-43df-9267-e1c44ab7e0f7] 
 
 MSLE teaching materials include: 
 

@@ -1,5 +1,3 @@
-
-
 Contoso uses internet-facing DNS servers in its perimeter network to resolve DNS queries for external clients. Internal DNS servers resolve queries for internal clients. The IT team needs a way to resolve the same names for both internal and external clients in Azure. You suggest split-horizon DNS.
 
 ## What is split-horizon DNS?
@@ -47,5 +45,5 @@ The public zone for `Contoso.com` would contain the information in the following
 
 Now client computers in the internal and external networks can resolve the name `relay.contoso.com` to the appropriate internal or external IP address.
 
-> [!NOTE] 
+> [!NOTE]
 > In Windows Server DNS, split-horizon DNS is achieved using DNS policies.

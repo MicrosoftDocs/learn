@@ -76,7 +76,7 @@ The main steps in the process are:
 > There are two feature names available to use when installing HGS by using Windows PowerShell. The `HostGuardianServiceRole` feature name installs the HGS role on the Host Guardian server. The `HostGuardian` feature name installs the Host Guardian feature on the Hyper-V server, which enables the Hyper-V server to interact with the Host Guardian server.
 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MEOf]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=5523ffdc-5a4a-4277-acb6-e5d114d8d855]
 
 ---
 

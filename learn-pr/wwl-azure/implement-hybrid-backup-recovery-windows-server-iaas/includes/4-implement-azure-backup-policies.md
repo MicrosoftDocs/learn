@@ -1,4 +1,3 @@
-
 The Contoso IT Team wants control over its backup policy. They can use the Microsoft Azure Recovery Services (MARS) agent to configure this policy. The team can specify when to take snapshots of their data to create recovery points. They can also specify how long to keep recovery points.
 
 ## What is the MARS agent?
@@ -17,12 +16,9 @@ You can download the MARS agent direct from the Azure portal using the following
 3. Under **What do you want to back up?**, select **Files and folders**. You can also select **System State**. Many other options are available, but these options are supported only if you're running a secondary backup server.
 4. Select **Prepare Infrastructure**.
 5. For **Prepare infrastructure**, in the **Install Recovery Services agent** section, download the MARS agent.
-
-   ![A screenshot of the Prepare infrastructure blade in the Azure portal. Step 1 provides a link to download the MARS recovery services agent.](../media/m20-download-microsoft-azure-recovery-services.png)
-
 6. In the download menu, select **Save**. The **MARSagentinstaller.exe** file is saved automatically to your **Downloads** folder.
 7. Select **Already download or using the latest Recovery Services Agent**, and then selecting **Download** to download the vault credentials.
-8. Select **Save**. The file is downloaded to your Downloads folder. You can't open the vault credentials file, because it is not a executable or text file.
+8. Select **Save**. The file is downloaded to your Downloads folder. You can't open the vault credentials file, because it is not an executable or text file.
 
 You can install the MARS agent on your computer using the following procedure. Run the **MARSagentinstaller.exe** file on the machines that you want to back up and complete the registration process.
 
@@ -38,9 +34,6 @@ You can install the MARS agent on your computer using the following procedure. R
 6. For **Installation**, review the prerequisites, and then select **Install**.
 7. After the agent is installed, select **Proceed to Registration**.
 8. In the **Register Server Wizard**, on the **Vault Identification** blade, browse to and select the credentials file that you downloaded.
-
-   ![A screenshot of the Vault Identification page of the Register Server Wizard. The Vault Credentials have been populated..](../media/m20-registration.png)
-
 9. Select **Next**.
 10. On the **Encryption Setting** page, specify a passphrase that will be used to encrypt and decrypt backups for the machine:
     - Save the passphrase in a secure location. You will need it to restore a backup.
@@ -69,9 +62,6 @@ To create a backup policy, use the following procedure:
    - For a daily retention setting, you indicate that at the time specified for the daily retention the latest recovery point will be retained for the specified number of days. For a monthly retention policy, you could indicate that the recovery point created on the 30th of every month should be stored for 12 months.
    - Retention for daily and weekly recovery points usually coincide with the backup schedule. When the schedule triggers a backup, the recovery point that the backup creates is stored for the duration that the daily or weekly retention policy specifies.
 9. After specifying how to store the copies, select **Next**.
-
-   [![A screenshot of the Select Retention Policy (Files and Folders) page in the Schedule Backup Wizard. The administrator has selected Weekly Retention Policy, Monthly Retention Policy, and Yearly Retention Policy. ](../media/m20-retention.png)](../media/m20-retention.png#lightbox)
-
 10. On the **Choose Initial Backup Type** page, decide whether you want to perform the initial backup over the network, or use an offline backup. To perform the initial backup over the network, select **Automatically over the network**, and then select **Next**.
 11. On the **Confirmation page**, review the information, and then select **Finish**.
 12. After the wizard finishes creating the backup schedule, select **Close**.
@@ -84,5 +74,3 @@ You can also create a policy through the Azure portal. In this example, the admi
 - Backup schedule
 - Instant Restore settings
 - Retention range
-
-![A screenshot of the Backup policy blade. The administrator has named the policy **ContosoVMpolicy**. ](../media/m20-add-policy.png)

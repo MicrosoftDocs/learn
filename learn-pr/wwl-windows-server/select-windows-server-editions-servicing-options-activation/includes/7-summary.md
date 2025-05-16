@@ -5,5 +5,5 @@ Contoso IT staff are migrating Contoso on-premises servers to Windows Server 202
 You can learn more by reviewing the following documents.
 
 - [Comparison of Windows Server editions](/windows-server/get-started/editions-comparison).
-- [Windows Server Pay-as-you-go licensing](/windows-server/windows-server/get-started/windows-server-pay-as-you-go).
+- [Windows Server Pay-as-you-go licensing](/windows-server/get-started/windows-server-pay-as-you-go).
 

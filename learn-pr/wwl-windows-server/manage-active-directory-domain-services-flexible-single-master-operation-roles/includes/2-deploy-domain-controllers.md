@@ -67,7 +67,7 @@ As part of AD DS role configuration, you need to provide answers to the question
     Will the domain controller be a read-only domain controller (RODC)?
   :::column-end:::
   :::column:::
-    This option is not available for the first domain controller in a forest.
+    This option isn't available for the first domain controller in a forest.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -109,16 +109,16 @@ If you have a network connection between sites that is slow, unreliable, or cost
 
 ### Branch office considerations
 
-When you deploy a domain controller in a branch office that can't guarantee physical security, you can use additional measures to reduce the impact of a security breach. One option is to deploy an RODC. The RODC contains a read-only copy of the AD DS database, and by default, it doesn't cache any user passwords. However, you can configure the RODC to cache the passwords for users in the branch office. If an RODC is compromised, the potential loss of information risk is much lower than with a full read/write domain controller.
+When you deploy a domain controller in a branch office that can't guarantee physical security, you can use additional measures to reduce the impact of a security breach. One option is to deploy an RODC. The RODC contains a read-only copy of the AD DS database, and by default, it doesn't cache any user passwords. However, you can configure the RODC to cache the passwords for users in the branch office. If an RODC is compromised, the potential loss of information risk is lower than with a full read/write domain controller.
 
 ## Upgrade domain controllers from the previous version
 
-The process for upgrading a domain controller is the same for any version of Windows Server starting with Windows Server 2012 R2 through Windows Server 2022. You can upgrade to a Windows Server 2022 domain using either of the following methods:
+The process for upgrading a domain controller is the same for any version of Windows Server starting with Windows Server 2012 R2 through Windows Server 2025. You can upgrade to a Windows Server 2025 domain using either of the following methods:
 
- -  Upgrade the OS on existing domain controllers that are running Windows Server 2012 R2 or later.
- -  Add servers running Windows Server 2022 as domain controllers in a domain that already has domain controllers running earlier Windows Server versions.
+- Upgrade the OS on existing domain controllers that are running Windows Server 2012 R2 or later.
+- Add servers running Windows Server 2025 as domain controllers in a domain that already has domain controllers running earlier Windows Server versions.
 
-We recommend the latter method, because when you finish you'll have a clean installation of both the Windows Server 2022 OS and the AD DS database. Whenever you add a new domain controller, Windows Server automatically updates the domain DNS records so clients will be able to locate and use this domain controller.
+We recommend the latter method, because when you finish you have a clean installation of both the Windows Server 2025 OS and the AD DS database. Whenever you add a new domain controller, Windows Server automatically updates the domain DNS records so clients are able to locate and use this domain controller.
 
 ## Deploy AD DS domain controllers in Azure virtual machines (VMs)
 
@@ -126,8 +126,8 @@ Azure provides infrastructure as a service (IaaS), which is a cloud-based virtua
 
 When you implement AD DS in Azure, consider the following:
 
- -  Network topology. To meet AD DS requirements, you must create an Azure Virtual Network and attach your VMs to it. If you intend to join an existing on-premises AD DS infrastructure, you can extend network connectivity to your on-premises environment. You can achieve this through hybrid connectivity methods such as a virtual private network (VPN) connection or an Azure ExpressRoute circuit, depending on the speed, reliability, and security that your organization requires.
- -  Site topology. As with a physical site, you should define and configure an AD DS site that corresponds to the IP address space of your Azure Virtual Network.
- -  IP addressing. All Azure VMs receive Dynamic Host Configuration Protocol (DHCP) addresses by default, but you can configure static addresses that will persist across restarts and shutdowns.
- -  DNS. Azure's built-in DNS does not meet the requirements of AD DS, such as Dynamic DNS and service (SRV) resource records. To provide DNS functionality for an AD DS environment in Azure, you can use the Windows Server DNS server role or other DNS solutions available in Azure, such as Azure private DNS zones.
- -  Disks. You have control of caching Azure VM disk configurations. When you install AD DS to an Azure VM, you should place the NTDS.DIT and SYSVOL files on one of its data disks, and set the **Host Cache Preference** setting of that disk to **NONE**.
+- Network topology. To meet AD DS requirements, you must create an Azure Virtual Network and attach your VMs to it. If you intend to join an existing on-premises AD DS infrastructure, you can extend network connectivity to your on-premises environment. You can achieve this through hybrid connectivity methods such as a virtual private network (VPN) connection or an Azure ExpressRoute circuit, depending on the speed, reliability, and security that your organization requires.
+- Site topology. As with a physical site, you should define and configure an AD DS site that corresponds to the IP address space of your Azure Virtual Network.
+- IP addressing. All Azure VMs receive Dynamic Host Configuration Protocol (DHCP) addresses by default, but you can configure static addresses that will persist across restarts and shutdowns.
+- DNS. Azure's built-in DNS does not meet the requirements of AD DS, such as Dynamic DNS and service (SRV) resource records. To provide DNS functionality for an AD DS environment in Azure, you can use the Windows Server DNS server role or other DNS solutions available in Azure, such as Azure private DNS zones.
+- Disks. You have control of caching Azure VM disk configurations. When you install AD DS to an Azure VM, you should place the NTDS.DIT and SYSVOL files on one of its data disks, and set the **Host Cache Preference** setting of that disk to **NONE**.

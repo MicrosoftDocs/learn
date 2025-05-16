@@ -11,7 +11,7 @@ This module consists of two lessons:
 - Lesson 1 – Data analytics and Microsoft 
 - Lesson 2 – Getting started with Power BI 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5akqz] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=4cc97e40-85d3-4744-a2de-615636abfcc4] 
 
 Module 1 Tips and Tricks 
 

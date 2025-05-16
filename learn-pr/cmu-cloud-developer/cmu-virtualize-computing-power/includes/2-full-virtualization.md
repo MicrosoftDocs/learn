@@ -1,7 +1,7 @@
 A problem arises when an instruction that is both sensitive and unprivileged is issued by a process running on a VM in user mode. According to Popek and Goldberg (1974), sensitive instructions have to trap to the hypervisor if executed in user mode. However, as explained earlier, sensitive instructions can be privileged (e.g., LPSW) and unprivileged (e.g., POPF). Unprivileged instructions do not trap to the hypervisor. Instructions that are sensitive and unprivileged are called critical (see Figure 4). ISAs that contain critical instructions do not satisfy Popek and Goldberg's theorem.<sup>[1][^1]</sup> The following video covers this concept and ways around it:
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pPUc]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=d4873117-0dc7-42fb-a64e-7bd663bb6624]
 
 The challenge is constructing a hypervisor in the presence of critical instructions. It can be done, but Smith and Nair<sup>[2][^2]</sup> distinguish between a hypervisor that complies with Popek and Goldberg's theorem and one that does not comply by referring to the former as a **true** or an **efficient** hypervisor and to the latter simply as a hypervisor.
 
@@ -26,4 +26,3 @@ _Figure 5: Code scanning and patching to enforce critical instructions to trap t
 
 [^1]: <https://dl.acm.org/doi/10.1145/361011.361073>  "Popek, J., and Goldberg, R. (1974). *Formal Requirements for Virtualizable Third Generation Architectures*"
 [^2]: <http://www.ittc.ku.edu/~kulkarni/teaching/archieve/EECS800-Spring-2008/smith_nair.pdf> "Smith, J. E., and Nair, R. (2005). *The Architecture of Virtual Machines Computer*, 38(5), 32-38."
-

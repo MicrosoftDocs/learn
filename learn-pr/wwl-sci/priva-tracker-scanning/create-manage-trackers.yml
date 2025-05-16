@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.priva-tracker-scanning.create-manage-trackers
+title: Create and manage trackers and tracker categories
+metadata:
+  title: Create and manage trackers and tracker categories
+  description: "Create and manage trackers and tracker categories"
+  ms.date: 01/24/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/create-manage-trackers.md)]

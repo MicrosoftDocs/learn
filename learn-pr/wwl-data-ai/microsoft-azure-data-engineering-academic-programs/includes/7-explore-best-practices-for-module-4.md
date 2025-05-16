@@ -13,7 +13,7 @@ This module consists of four lessons:
 - Lesson 3 – Transform data with DataFrames in Apache Spark Pools in Azure Synapse Analytics 
 - Lesson 4 – Integrate SQL and Apache Spark pools in Azure Synapse Analytics 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5apAE] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e5c1d2b0-2244-4acb-b672-c0e1a7dde586] 
 
 Module 4 Tips and Tricks 
 

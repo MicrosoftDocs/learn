@@ -53,8 +53,7 @@ stages:
 Templated pipeline:
 
 ```YAML
-# File: stages/test.yaml
-
+# File: azure-pipelines.yaml
 stages:
 
 - template: stages/test.yaml # Template reference

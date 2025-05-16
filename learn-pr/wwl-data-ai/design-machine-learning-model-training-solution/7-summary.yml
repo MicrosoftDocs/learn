@@ -2,13 +2,11 @@
 uid: learn.wwl.design-machine-learning-model-training-solution.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   author: wwlpublish
   ms.author: madiepev
-  ms.date: 07/10/2024
+  ms.date: 01/20/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -17,4 +15,4 @@ labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
-
+

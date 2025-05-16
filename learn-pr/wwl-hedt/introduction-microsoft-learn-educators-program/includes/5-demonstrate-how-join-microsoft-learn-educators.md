@@ -1,4 +1,4 @@
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4U5yf]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b104cd07-2986-4b55-b105-17140405e3c6]
 
 As a faculty member, you can join in one of two ways: 
 

@@ -4,7 +4,7 @@ Let's get started by learning about Azure Logic Apps and this platform's ability
 
 ## What is Azure Logic Apps?
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qhug]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b73a5a71-e109-4c38-800e-31905808eac9]
 
 Azure Logic Apps is a cloud service you can use to integrate apps, services, systems, and data within your enterprise or across organizations. This integration platform helps simplify how you design and build scalable solutions in the cloud, on premises, or both.
 

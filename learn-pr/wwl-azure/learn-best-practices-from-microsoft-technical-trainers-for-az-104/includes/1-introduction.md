@@ -1,4 +1,4 @@
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4XOHK]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b9a2946c-78c1-462c-962e-889d8d2d7a9d]
 
 As you continue your journey of sharing your knowledge with others, it is imperative to set expectations for everyone when approaching and preparing to teach Microsoft curriculum and leveraging the teaching materials. The ARB courses go beyond foundation-level skills and into associate-level skills related to Microsoft Azure or associated products. As your students begin your class, you may be asked the following types of questions: 
 

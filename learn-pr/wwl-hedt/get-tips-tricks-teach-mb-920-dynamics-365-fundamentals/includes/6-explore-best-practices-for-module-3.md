@@ -12,7 +12,7 @@ This module consists of three lessons:
 - Lesson 2 – Explore warehouse and inventory management capabilities in Microsoft Dynamics 365 supply chain management
 - Lesson 3 – Explore manufacturing strategies in Microsoft Dynamics 365 supply chain management 
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWXns7]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=36d9dd19-2a12-4e87-bd43-9b4e3b4916c8]  
 
 Module 3 Tips and Tricks
 

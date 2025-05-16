@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-copilot-agent-mode.what-is-agent-mode
+title: What is GitHub Copilot Agent Mode?
+metadata:
+  title: What is GitHub Copilot Agent Mode?
+  description: GitHub Copilot Agent Mode is an advanced, autonomous AI coding assistant that dynamically analyzes entire projects, autonomously manages complex multi-step tasks, iteratively improves its output, and serves as a proactive collaborator in software development.
+  author: a-a-ron
+  ms.author: aastewar
+  ms.date: 03/17/2025
+  ms.topic: unit
+  ms.collection:
+    - ce-skilling-ai-copilot
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-what-is-agent-mode.md)]

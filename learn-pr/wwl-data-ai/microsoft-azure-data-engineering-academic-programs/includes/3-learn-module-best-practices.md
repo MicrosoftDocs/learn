@@ -6,6 +6,6 @@ Use the trainer demos and your own experience to demonstrate each module’s pur
 
 Before we begin, make sure you use the most up-to-date version of the Microsoft Official Curriculum (MOC). It is recommended that you log into the [Learning Download Center](https://techcommunity.microsoft.com/blog/mctnews/current-courseware-downloading-process/4196123) (LDC) at least quarterly. If you have not already done so, please download the course materials from the LDC before continuing in this learning path.  
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5axAp] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2b540681-5be2-42ec-8823-31a006f5c041] 
 
 Now that you have the updated materials, you’re ready to prepare for your class. 

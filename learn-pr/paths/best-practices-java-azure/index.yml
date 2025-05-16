@@ -77,6 +77,5 @@ modules:
 - learn.azure.deploy-java-azure-pipeline-terraform
 - learn.azure.publish-azure-web-app-with-azure-toolkit-intellij
 - learn.azure.publish-app-with-maven-plugin-for-azure-web-apps
-- learn.develop-azure-functions-app-with-maven-plugin
 trophy:
   uid: learn.best-practices-java-azure.trophy

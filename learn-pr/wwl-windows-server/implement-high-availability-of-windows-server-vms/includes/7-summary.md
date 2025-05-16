@@ -1,4 +1,4 @@
-Using the knowledge acquired in this module, you implemented high availability for Hyper-V VMs hosted on Windows Server Hyper-V servers that reside in Contoso’s datacenters by using host clustering, guest clustering, NLB, live migration, and storage migration.
+In this module, you learn how to implement high availability for Hyper-V VMs using host clustering, guest clustering, NLB, live migration, and storage migration.
 
 ## Learn more
 

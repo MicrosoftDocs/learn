@@ -10,7 +10,7 @@ This module consists of three lessons:
 - Lesson 2 – Manage data retention in Microsoft 365
 - Lesson 3 – Implement records management in Microsoft 365
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWXhNL]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=037770cc-edf3-4ca0-a2be-b762faff86f9]  
 
 Module 3 Tips and Tricks
 

@@ -31,6 +31,8 @@ roles:
 - business-user
 products:
 - azure-openai
+- mscloud-financial
+- industry-solutions
 units:
 - learn.wwl.define-microsoft-ai-strategy-finance.introduction
 - learn.wwl.define-microsoft-ai-strategy-finance.1b-ai-financial-services

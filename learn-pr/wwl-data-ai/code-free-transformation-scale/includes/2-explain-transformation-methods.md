@@ -1,6 +1,6 @@
 Just as Azure Data Factory provides a variety of methods for ingesting data, it also provides a range of methods to perform transformations. You can pick a method that matches the skillsets of your team or takes advantage of existing technologies that you already have in your data estate. There is also the opportunity to perform transformations without writing code at all using the Mapping Data Flow.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MeGO]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=80a1cbb9-afff-487b-8664-1d0111cb7085]
 
 ## Transforming data using Mapping Data Flow
 
@@ -24,5 +24,3 @@ Azure Data Factory can also call on compute resources to transform data by a dat
 ## Transforming data using  SQL Server Integration Services (SSIS) packages
 
 Many organizations have decades of development investment in SSIS packages that contain both ingestion and transformation logic from on-premises and cloud data stores. Azure Data Factory provides the ability to lift and shift existing SSIS workload, by creating an Azure-SSIS Integration Runtime to natively execute SSIS packages. Using Azure-SSIS Integration Runtime will enable you to deploy and manage your existing SSIS packages with little to no change using familiar tools such as SQL Server Data Tools (SSDT) and SQL Server Management Studio (SSMS), just like using SSIS on premises.
-
-

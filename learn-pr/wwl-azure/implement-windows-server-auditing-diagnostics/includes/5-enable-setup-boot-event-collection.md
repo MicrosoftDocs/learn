@@ -5,23 +5,15 @@ You can use Setup and Boot Event Collection to review startup and setup events f
 You can monitor the following events:
 
 - Loading of kernel modules and drivers
-
 - Enumeration of devices and initialization of their drivers
-
 - Verification and mounting of file systems
-
 - Starting of executable files
-
 - Starting and completions of system updates
-
 - The points when the system:
 
   - Becomes available for logon
-
   - Establishes connection with a domain controller
-
   - Completion of service starts
-
   - Availability of network shares
 
 ## Install the collector service
@@ -38,9 +30,8 @@ The Boot Event Collector service should display as Running, as displayed in the 
 
 After you've installed the collector, you must configure it. This involves two steps:
 
-- On the target computers (the ones you'll collect events from), you must enable the KDNET/EVENT-NET transport and enable the forwarding of events.
-
-- On the collector computer, specify from which computers you'll accept events and define a save location for those events.
+- On the target computers (the ones you collect events from), you must enable the KDNET/EVENT-NET transport and enable the forwarding of events.
+- On the collector computer, specify from which computers you accept events and define a save location for those events.
 
 Follow the instructions in this document for details: [Collect events with Setup and Boot Event Collection](/windows-server/administration/get-started-with-setup-and-boot-event-collection).
 
@@ -53,12 +44,9 @@ After events have begun to be collected, you can review them. You can find the l
 You can use Event Viewer for a graphical interface for the events. Use the following procedure:
 
 1. Create a new view.
-
 1. Expand **Applications and Services** Logs, then expand **Microsoft** and then **Windows**.
-
 1. Find **BootEvent-Collector**, expand it, and find **Admin**.
 
 You can also review use Windows PowerShell: `Get-WinEvent -LogName Microsoft-Windows-BootEvent-Collector/Admin`.
 
 And from a command prompt: `wevtutil qe Microsoft-Windows-BootEvent-Collector/Admin`.
-

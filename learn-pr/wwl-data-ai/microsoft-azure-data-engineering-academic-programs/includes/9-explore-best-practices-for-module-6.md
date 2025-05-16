@@ -11,7 +11,7 @@ This module consists of two lessons:
 - Lesson 1 – Data integration with Azure Factory or Azure Synapse Pipelines 
 - Lesson 2 – Code-free transformation at scale with Azure Data Factory of Azure Synapse Pipelines 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5apAr]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b6e97139-f5da-4c4b-b63e-5307785498ce]
 
 Module 6 Tips and Tricks 
 

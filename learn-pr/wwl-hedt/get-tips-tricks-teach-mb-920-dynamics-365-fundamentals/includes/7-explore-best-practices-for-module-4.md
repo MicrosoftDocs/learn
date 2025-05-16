@@ -11,7 +11,7 @@ This module consists of two lessons:
 - Lesson 1 – Explore Dynamics 365 Commerce capabilities
 - Lesson 2 – Explore Microsoft Dynamics 365 Commerce B2B e-commerce, store commerce, and clienteling capabilities
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWXcZi]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=c9ea3216-9369-4216-bb45-4274e8424911]  
 
 Module 4 Tips and Tricks
 

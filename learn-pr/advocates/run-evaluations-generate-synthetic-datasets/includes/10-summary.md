@@ -9,9 +9,7 @@ As you continue in your journey in developing AI responsibly, remember to keep r
 
 - [Evaluation of generative AI applications](/azure/ai-studio/concepts/evaluation-approach-gen-ai)
 - [Evaluation and monitoring metrics for generative AI](/azure/ai-studio/concepts/evaluation-metrics-built-in?tabs=warning)
-- [Content risk mitigation strategies with Azure AI](/azure/ai-studio/concepts/evaluation-improvement-strategies)
-- [Manually evaluate prompts in Azure AI Foundry chat playground](/azure/ai-studio/how-to/evaluate-generative-ai-app)
+- [How to evaluate generative AI models and applications with Azure AI Foundry](/azure/ai-studio/how-to/evaluate-generative-ai-app)
 - [Evaluate with the Azure AI Evaluation SDK](/azure/ai-studio/how-to/develop/evaluate-sdk)
-- [Evaluate with Azure AI Foundry](/azure/ai-studio/how-to/evaluate-generative-ai-app)
 - [View evaluation results in Azure AI Foundry](/azure/ai-studio/how-to/evaluate-results)
 - [Azure AI Evaluation client library for Python](/python/api/azure-ai-evaluation/azure.ai.evaluation)

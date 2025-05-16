@@ -15,7 +15,7 @@ This module consists of six lessons:
 - Lesson 5 – Describe eDiscovery and audit capabilities in Microsoft Purview
 - Lesson 6 – Describe resource governance capabilities in Azure
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWXpsO]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=a7167078-8aa4-4a94-b992-863758f1866e]  
 
 Module 4 Tips and Tricks
 

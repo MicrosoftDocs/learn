@@ -1,5 +1,3 @@
-
-
 Building VMs from managed images can save Contoso IT operations staff time and effort. However, as they're building a significant number of VMs, you want to extend this capability further and are investigating if *Azure VM Image Builder* (Azure Image Builder) can help them. You want to know if, by using Azure Image Builder, Contoso can provide a simple configuration that describes the image, submit it to the Azure Image Builder service, and the image is built and distributed.
 
 > [!IMPORTANT]

@@ -29,11 +29,10 @@ The transformation of a certain technology from a product to a service is not ne
 The following video discusses the transformation of IT from a product to a service:
 <br>
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4pHYL]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=aeb8a0e4-f222-445d-889a-326c404e4299]
 
 In cloud computing, users or organizations use computing resources as a service and pay for them as a utility, in a pay-as-you-go model. When a request is made for computing resources, the cloud provider typically **provisions** these resources, in a rapid manner (minutes or hours). As the need for these resources changes, users or organizations can rapidly scale up or down their resources on demand.
 
 The cloud model offers users and organizations several benefits, including: reduced upfront cost, as IT services can be obtained in a pay-as-you-go model; the convenience of fast resource provisioning, which significantly reduces the time to market for IT solutions; and rapid scalability of computing resources, as they can be scaled up and down on demand. Cloud providers' resources are shared by multiple users, thereby improving utilization and reducing carbon footprint.
 
 In spite of all of its advantages, cloud computing is an emerging technology and comes with many risks and challenges that will be covered later.
-

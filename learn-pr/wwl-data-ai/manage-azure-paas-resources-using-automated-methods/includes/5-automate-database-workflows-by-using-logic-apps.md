@@ -1,28 +1,25 @@
-Azure Logic Apps is a cloud-based platform for creating and running automated workflows that integrate your apps, data, services, and systems. With this platform, you can quickly develop highly scalable integration solutions for your enterprise and business-to-business (B2B) scenarios. As a member of Azure Integration Services, Azure Logic Apps simplifies the way that you connect legacy, modern, and cutting-edge systems across cloud, on premises, and hybrid environments.
+Azure Logic Apps is a cloud-based platform designed to create and run automated workflows that integrate your apps, data, services, and systems. This platform enables you to quickly develop highly scalable integration solutions for both enterprise and business-to-business (B2B) scenarios. As part of Azure Integration Services, Azure Logic Apps simplifies connecting legacy, modern, and cutting-edges systems across cloud, on-premises, and hybrid environments.
 
-The following list describes just a few example tasks, business processes, and workloads that you can automate using the Azure Logic Apps service:
+Here are some example tasks, business processes, and workloads you can automate using Azure Logic Apps:
 
-- Schedule and send email notifications using Office 365 when a specific event happens, for example, a new file is uploaded.
-
+- Schedule and send email notifications using Office 365 when specific events occur, such as a new file upload.
 - Route and process customer orders across on-premises systems and cloud services.
-
 - Move uploaded files from an SFTP or FTP server to Azure Storage.
+- Monitor tweets, analyze sentiment, and create alerts or tasks for items that need review.
 
-- Monitor tweets, analyze the sentiment, and create alerts or tasks for items that need review.
+## Why Use Azure Logic Apps?
 
-## Why use Azure Logic Apps?
+Azure Logic Apps provides prebuilt, Microsoft-managed API connectors and built-in operations, making it easier and quicker to connect and integrate apps, data, services, and systems. This allows you to focus on designing and implementing your solution's business logic and functionality, rather than figuring out how to access your resources.
 
-The Azure Logic Apps integration platform provides prebuilt Microsoft-managed API connectors and built-in operations so you can connect and integrate apps, data, services, and systems more easily and quickly, where you can focus on designing and implementing your solution's business logic and functionality, not on figuring out how to access your resources.
+Typically, you won't need to write any code. However, if you do, you can create code snippets using Azure Functions and run them from your workflow. You can also use the Inline Code action to run code snippets directly within your workflow. If your workflow needs to interact with events from Azure services, custom apps, or other solutions, you can monitor, route, and publish events using Azure Event Grid.
 
-You usually won't have to write any code. However, if you do need to write code, you can create code snippets using Azure Functions and run that code from your workflow. You can also create code snippets that run in your workflow by using the Inline Code action. If your workflow needs to interact with events from Azure services, custom apps, or other solutions, you can monitor, route, and publish events using Azure Event Grid.
+Logic Apps is fully managed by Microsoft Azure, freeing you from concerns about hosting, scaling, managing, monitoring, and maintaining solutions built with these services. By using these capabilities to create "serverless" apps and solutions, you can focus solely on the business logic and functionality. These services automatically scale to meet your needs, speed up integrations, and help you build robust cloud apps with little to no code.
 
-Logic Apps is fully managed by Microsoft Azure, which frees you from worrying about hosting, scaling, managing, monitoring, and maintaining solutions built with these services. When you use these capabilities to create "serverless" apps and solutions, you can just focus on the business logic and functionality. These services automatically scale to meet your needs, make integrations faster, and help you build robust cloud apps using little to no code.
+## SQL Server Connector
 
-## SQL Server connector
+The SQL Server connector in Azure Logic Apps allows you to access your SQL database and create automated workflows triggered by events in your SQL database or other systems. This enables you to manage your SQL data and resources efficiently.
 
-The SQL Server connector allows you to access your SQL database with the SQL Server connector in Azure Logic Apps. You can then create automated workflows that are triggered by events in your SQL database or other systems and manage your SQL data and resources.
-
-For example, you can use actions that get, insert, and delete data along with running SQL queries and stored procedures. You can create workflow that checks for new records in a non-SQL database, does some processing work, creates new records in your SQL database using the results, and sends email alerts about the new records in your SQL database.
+For example, you can use actions to get, insert, and delete data, as well as run SQL queries and stored procedures. You can create a workflow that checks for new records in a non-SQL database, processes the data, creates new records in your SQL database, and sends email alerts about the new records.
 
 The SQL Server connector supports the following SQL editions:
 
@@ -30,32 +27,31 @@ The SQL Server connector supports the following SQL editions:
 - Azure SQL Database
 - Azure SQL Managed Instance
 
-The SQL Server connector requires that your tables contain data so that SQL connector operations can return results when called. For example, if you use Azure SQL Database, you can use the included sample databases to try the SQL connector operations.
+The SQL Server connector requires that your tables contain data so that SQL connector operations can return results when called. For instance, if you use Azure SQL Database, you can use the included sample databases to try out the SQL connector operations.
 
-For a SQL database in Azure, the connection string has the following format:
+For an SQL database in Azure, the connection string has the following format:
 
 ```
 Server=tcp:{server-name}.database.windows.net,1433;Initial Catalog={database-name};Persist Security Info=False;User ID={user-name};Password={password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
 ```
 
-Alternatively, you can also check the connection string for your Azure SQL Database in the Azure portal. On the **Overview** section for your database, select **Show database connection strings** for **Connection strings** property.
+Alternatively, you can check the connection string for your Azure SQL Database in the Azure portal. In the **Overview** section for your database, select **Show database connection strings** under the **Connection strings** property.
 
-If you want to start your workflow with a SQL Server trigger operation, you have to start with a blank workflow.
+If you want to start your workflow with a SQL Server trigger operation, you need to begin with a blank workflow.
 
-The SQL Server connector  is available for logic app workflows in multi-tenant Azure Logic Apps, integration service environment (ISE), and single-tenant Azure Logic Apps:
+The SQL Server connector is available for logic app workflows in multitenant Azure Logic Apps, integration service environment (ISE), and single-tenant Azure Logic Apps:
 
-- **Consumption workflows in multi-tenant Azure Logic Apps –** this connector is available only as a managed connector. For more information, review the [managed SQL Server connector operations](/connectors/sql/).
+- **Consumption workflows in multi-tenant Azure Logic Apps**: This connector is available only as a managed connector. For more information, review the [managed SQL Server connector operations](/connectors/sql/?azure-portal=true) page.
 
-- **Consumption workflows in an integration service environment –** this connector is available as a managed connector and as an ISE connector that's designed to run in an ISE. For more information, review the [managed SQL Server connector operations](/connectors/sql/).
+- **Consumption workflows in an integration service environment**: This connector is available as both a managed connector and an ISE connector designed to run in an ISE. For more information, review the managed SQL Server connector operations.
 
-- **Standard workflows in single-tenant Azure Logic Apps –** this connector is available as a managed connector and as a built-in connector that's designed to run in the same process as the single-tenant Azure Logic Apps runtime. However, the built-in version differs in the following ways:
-
+- **Standard workflows in single-tenant Azure Logic Apps**: This connector is available as both a managed connector and a built-in connector designed to run in the same process as the single-tenant Azure Logic Apps runtime. However, the built-in version differs in the following ways:
     - The built-in SQL Server connector has no triggers.
-    - The built-in SQL Server connector has only one operation: Execute Query
+    - The built-in SQL Server connector has only one operation: Execute Query.
 
 ## Create a logic app workflow
 
-The following steps use the Azure portal to create logic app workflows:
+The following steps use the Azure portal to create logic app workflow.
 
 ### Add a SQL Server trigger
 
@@ -86,7 +82,7 @@ The following steps use the Azure portal, but with the appropriate Azure Logic A
 
 ### Add a SQL Server action
 
-The following steps use the Azure portal. In this example, the logic app workflow starts with the Recurrence trigger, and calls an action that gets a row from a SQL database.
+The following steps use the Azure portal. In this example, the logic app workflow starts with the Recurrence trigger, and calls an action that gets a row from an SQL database.
 
 1. In the Azure portal, open your logic app workflow in the designer.
 

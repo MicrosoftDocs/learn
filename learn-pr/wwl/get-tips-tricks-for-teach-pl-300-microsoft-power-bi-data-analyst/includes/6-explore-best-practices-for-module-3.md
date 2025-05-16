@@ -12,7 +12,7 @@ This module consists of three lessons:
 - Lesson 2 – Profiling the data 
 - Lesson 3 – Enhance the data structure 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5anz8]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=fafc84f5-86c6-4669-a5f0-855a9bdecbac]
 
 Module 3 Tips and Tricks 
 

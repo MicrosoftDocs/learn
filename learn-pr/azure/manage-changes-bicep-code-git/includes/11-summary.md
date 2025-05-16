@@ -10,7 +10,6 @@ Now, whenever you make changes to your Bicep templates, you can be sure that you
 
 There's a lot more to know about Git's capabilities for working with deployment templates and scripts. As you continue to learn about Bicep and infrastructure as code, it's important to also learn about version control:
 
-- The learning path [Introduction to version control with Git](/training/paths/intro-to-vc-git/) is a good next step to provide a deeper overview.
 - The module [Use Git version-control tools in Visual Studio Code](/training/modules/use-git-from-vs-code/) provides more information on Git integration into Visual Studio Code.
 
 The following features of Git are useful when you work with infrastructure as code:

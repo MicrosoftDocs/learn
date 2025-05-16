@@ -2,7 +2,7 @@ A public IP address resource can be associated with virtual machine network inte
 
 ### Things to consider when associating public IP addresses
 
-The following table summarizes how you can associate public IP addresses for different types of resources.
+The next table summarizes how you can associate public IP addresses for different types of resources.
 
 | Resource | Public IP address association | Dynamic IP address | Static IP address |
 | --- | --- | --- | --- |
@@ -17,7 +17,7 @@ __\*__ Static IP addresses are available on certain SKUs only.
 
 When you create a public IP address, you select the Basic or Standard SKU. Your SKU choice affects the IP assignment method, security, available resources, and redundancy options.
 
-The following table summarizes the differences between the SKU types for public IP addresses.
+The next table summarizes the differences between the SKU types for public IP addresses.
 
 | Feature | Basic SKU | Standard SKU |
 | --- | --- | --- |
@@ -25,3 +25,7 @@ The following table summarizes the differences between the SKU types for public 
 | Security | Open by default | Secure by default, closed to inbound traffic |
 | Resources | Network interfaces, VPN gateways, Application gateways, and internet-facing load balancers | Network interfaces or public standard load balancers |
 | Redundancy | Not zone redundant | Zone redundant by default |
+
+> [!IMPORTANT]
+> On September 30, 2025, Basic SKU public IPs will be retired. For more information, see the [official announcement](https://azure.microsoft.com/updates?id=upgrade-to-standard-sku-public-ip-addresses-in-azure-by-30-september-2025-basic-sku-will-be-retired). 
+

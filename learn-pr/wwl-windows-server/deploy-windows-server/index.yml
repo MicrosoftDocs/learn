@@ -3,17 +3,17 @@ uid: learn.wwl.deploy-windows-server
 metadata:
   title: Deploy Windows Server
   description: "Deploy Windows Server"
-  ms.date: 02/26/2021
+  ms.date: 12/26/2024
   author: wwlpublish
   ms.author: tonyj
   ms.topic: module
   ms.service: windows-server
 title: Deploy Windows Server
-summary: Learn to install and deploy Windows Server 2019 using deployment accelerators, features on demand, and Windows Deployment Services (WDS).
+summary: Learn to install and deploy Windows Server 2025 using deployment accelerators, features on demand, and Windows Deployment Services (WDS).
 abstract: |
   After completing this module, you'll be able to:
   - Explain the difference between Server Core and Desktop Experience.
-  - List the hardware requirements for Windows Server 2019.
+  - List the hardware requirements for Windows Server 2025.
   - Describe the available Windows Server deployment options.
   - Describe deployment accelerators.
   - Enable features on demand.

@@ -12,7 +12,7 @@ This module consists of three lessons:
 - Lesson 2 – Implement Managed Identities 
 - Lesson 3 – Implement Azure App Configuration 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5ancR]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=47e55d75-98b1-4c54-81b1-da17cff0c89f]
 
 Module 7 Tips and Tricks 
 

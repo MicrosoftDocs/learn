@@ -7,3 +7,4 @@ Let's wrap the vector embedding logic and API calls in a function. In this exerc
 Launch the exercise and follow the instructions.
 
 [![Button to launch exercise.](../media/launch-exercise.png)](https://go.microsoft.com/fwlink/?linkid=2269704&clcid=0x409)
+

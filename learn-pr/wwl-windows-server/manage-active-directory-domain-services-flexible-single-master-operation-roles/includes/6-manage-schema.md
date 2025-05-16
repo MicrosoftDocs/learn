@@ -23,12 +23,12 @@ The user class is an example of a structural class. A structural class is the on
 
 ## Manage AD DS schema
 
-When managing the AD DS schema, you can modify the schema only if you are a member of the Schema Admins group in the root domain of the AD DS forest. For this purpose, you can use the Active Directory Schema snap-in.
+When managing the AD DS schema, you can modify the schema only if you're a member of the Schema Admins group in the root domain of the AD DS forest. For this purpose, you can use the Active Directory Schema snap-in.
 
 > [!IMPORTANT]
-> AD DS schema does not support deletions.
+> AD DS schema doesn't support deletions.
 
-You should change the schema only when necessary because the schema controls the storage of information. Additionally, any changes made to the schema affect every domain controller. Before you change the schema, you should review the changes and implement them only after you've performed testing. This will help ensure that the changes Won't adversely affect the rest of the forest or any applications that use AD DS.
+You should change the schema only when necessary because the schema controls the storage of information. Additionally, any changes made to the schema affect every domain controller. Before you change the schema, you should review the changes and implement them only after you've performed testing. This helps ensure that the changes Won't adversely affect the rest of the forest or any applications that use AD DS.
 
 :::image type="content" source="../media/m7-update-schema-12083aa2.png" alt-text="Context menu for the schema container in the navigation pane of the ADSI Edit console. The Update Schema Now option is selected.":::
 

@@ -12,8 +12,8 @@ Now that you're familiar with finding and organizing information on GitHub, lear
 
 Here are some links to more information on the topics we discussed in this module:
 
-- [Searching on GitHub](https://docs.github.com/search-github/getting-started-with-searching-on-github/about-searching-on-github)
+- [About searching on GitHub](https://docs.github.com/search-github/getting-started-with-searching-on-github/about-searching-on-github)
 - [Understanding the search syntax](https://docs.github.com/search-github/getting-started-with-searching-on-github/understanding-the-search-syntax)
 - [git blame documentation](https://git-scm.com/docs/git-blame?azure-portal=true)
-- [View files and track file changes](https://docs.github.com/repositories/working-with-files/using-files/viewing-a-file)
+- [Viewing and understanding files](https://docs.github.com/repositories/working-with-files/using-files/viewing-a-file)
 - [Autolinked references and URLs](https://docs.github.com/get-started/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls)

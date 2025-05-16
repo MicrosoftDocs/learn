@@ -2,8 +2,6 @@
 uid: learn.startups.fundraising.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Review the fundamentals of startup fundraising. Concepts include finding investors versus bootstrapping, types of investors, and fundraising rounds.
   ms.date: 06/17/2024
@@ -13,4 +11,4 @@ metadata:
   ms.collection: learn-startups
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-summary.md)]
+  [!include[](includes/6-summary.md)]

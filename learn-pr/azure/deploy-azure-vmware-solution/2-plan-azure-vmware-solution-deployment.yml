@@ -1,13 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.deploy-azure-vmware-solution.plan-azure-vmware-solution
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Plan an Azure VMware Solution deployment
   description: Plan an Azure VMware Solution deployment.
   ms.date: 08/01/2024
-  author: amycolyer
-  ms.author: amycolyer
+  author: Orin-Thomas
+  ms.author: orthomas
   ms.topic: unit
   ms.custom: team=cloud_advocates
   ms.contributors: shkuehn-03222021, orthomas-08092023
@@ -22,7 +20,7 @@ quiz:
     choices:
     - content: "7.0 Update 3o"
       isCorrect: true
-      explanation: "Azure VMware Solution deploys with vSphere 7.0 Update 3c."
+      explanation: "Azure VMware Solution deploys with vSphere 7.0 Update 3o."
     - content: "7.0 Update 1"
       isCorrect: false
       explanation: "Azure VMware Solution doesn't deploy with vSphere 7.0 Update 1."
@@ -31,13 +29,13 @@ quiz:
       explanation: "Azure VMware Solution doesn't deploy with vSphere 6.5 Update 2."
   - content: "What is the minimum number of nodes required for Azure VMware Solution?"
     choices:
-    - content: "4"
+    - content: "Four"
       isCorrect: false
       explanation: "For a minimum deployment, Azure VMware Solution requires fewer than four nodes."
-    - content: "8"
+    - content: "Eight"
       isCorrect: false
       explanation: "For a minimum deployment, Azure VMware Solution requires fewer than eight nodes."
-    - content: "2"
+    - content: "Three"
       isCorrect: true
       explanation: "For a minimum deployment, Azure VMware Solution requires three nodes."
 

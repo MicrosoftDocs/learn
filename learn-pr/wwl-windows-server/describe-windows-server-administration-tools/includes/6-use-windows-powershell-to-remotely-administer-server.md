@@ -1,11 +1,11 @@
-IT administration staff at Contoso are increasingly focused on performing administrative tasks remotely from the object they're managing. One area of particular interest is the ability to leverage Windows PowerShell to remotely administer and manage Contoso's IT infrastructure. You can use Windows PowerShell remoting to achieve this. 
+Contoso's IT administration staff are increasingly focused on performing administrative tasks remotely from the object they're managing. One area of particular interest is the ability to leverage Windows PowerShell to remotely administer and manage Contoso's IT infrastructure. You can use Windows PowerShell remoting to achieve this. 
 
 ##  Requirements for remoting
 
 Remoting requires that you have Windows PowerShell on your local computer, and Windows Remote Management enabled on any remote computers to which you want to connect. You also must enable Windows PowerShell remoting.
 
 > [!NOTE]
-> Windows PowerShell remoting is enabled by default in Windows Server, but you must enable it on Windows 10.
+> Windows PowerShell remoting is enabled by default in Windows Server, but you must enable it on Windows 10 and Windows 11.
 
 To enable Windows PowerShell remoting, use one of the following procedures. At an elevated command prompt (or Windows PowerShell (Admin) prompt), run the following command:
 
@@ -25,7 +25,7 @@ Enable-PSremoting -force
 > [!NOTE]
 > Applications that use Windows Remote Management—such as Windows PowerShell—can also apply their own encryption to the data that is passed to the Windows Remote Management service.
 
-Any files and other resources that are necessary to run a particular command must be on the remote computer because the remoting commands do not copy any resources. However, you can run local scripts. This is because the script’s contents are sent to the remote computer, rather than the script file itself. 
+Any files and other resources that are necessary to run a particular command must be on the remote computer because the remoting commands don't copy any resources. However, you can run local scripts. This is because the script’s contents are sent to the remote computer, rather than the script file itself. 
 
 To perform remote administration, administrators must have permission to:
 
@@ -38,7 +38,7 @@ To perform remote administration, administrators must have permission to:
 
 ## Run cmdlets against remote computers
 
-Several cmdlets have a *ComputerName* parameter that enables you to retrieve objects from remote computers. These cmdlets do not use Windows PowerShell remoting to communicate, so you can use the ComputerName parameter in these cmdlets on any computer that runs Windows PowerShell. You do not have to configure the computers for Windows PowerShell remoting, or fulfill system requirements for remoting.
+Several cmdlets have a *ComputerName* parameter that enables you to retrieve objects from remote computers. These cmdlets don't use Windows PowerShell remoting to communicate, so you can use the ComputerName parameter in these cmdlets on any computer that runs Windows PowerShell. You don't have to configure the computers for Windows PowerShell remoting, or fulfill system requirements for remoting.
 
 The following table provides more information about the ComputerName parameter.
 
@@ -51,13 +51,13 @@ The following table provides more information about the ComputerName parameter.
 
 When you connect to a remote computer and send it a remote command, the command transmits across the network to a Windows PowerShell instance on the remote computer, and then runs on it. The command results are sent back to the local computer and display in the Windows PowerShell session on the local computer.
 
-All of the local input to a remote command is collected before any of it is sent to the remote computer. However, the output is returned to the local computer as it is generated. When you connect to a remote computer, the system uses the user name and password credentials on the local computer to authenticate you to the remote computer.
+All of the local input to a remote command is collected before any of it's sent to the remote computer. However, the output is returned to the local computer as it is generated. When you connect to a remote computer, the system uses the user name and password credentials on the local computer to authenticate you to the remote computer.
 
 > [!NOTE]
 > By default, the Kerberos version 5 (V5) authentication protocol is used to perform the authorization and authentication. Therefore, an AD DS domain is required.
 
 > [!TIP]
-> In situations where the remote computer is not in a domain or is in an untrusted domain, you can allow a client computer to connect by defining the remote computers as trusted hosts.
+> In situations where the remote computer isn't in a domain or is in an untrusted domain, you can allow a client computer to connect by defining the remote computers as trusted hosts.
 
 The following cmdlets support remoting.
 
@@ -137,7 +137,7 @@ To run a local script on remote computers, use the *FilePath* parameter with `In
 Invoke-Command -ComputerName SEA-DC1, SEA-SVR1 –FilePath C:\Test\Sample.ps1
 ```
 
-The results of the script are returned to the local computer. By using the *FilePath* parameter, you do not need to copy any files to the remote computers.
+The results of the script are returned to the local computer. By using the *FilePath* parameter, you don't need to copy any files to the remote computers.
 
 ## Demonstration
 
@@ -157,7 +157,7 @@ The following video demonstrates how to manage a remote Windows Server by using 
    Get-Service -Name IISAdmin | Restart-Service
    ```
 
- >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Mfs3]
+ >[!VIDEO https://learn-video.azurefd.net/vod/player?id=ca06d570-3461-45c2-af28-4dd01420a53d]
 
 ---
 

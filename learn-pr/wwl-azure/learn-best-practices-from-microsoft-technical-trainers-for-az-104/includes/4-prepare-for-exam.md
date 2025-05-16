@@ -1,4 +1,4 @@
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4XOHJ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7e97abe5-412a-46ba-8f9a-89d4cda3a3cc]
 
 Microsoft ARB courses are lengthy classes and the students will spend months studying and practicing for these exams. 
 

@@ -22,7 +22,7 @@ Here are some examples of multiple types of disabilities occurring simultaneousl
 
 Let's take a deeper look at the human diversity factors that makes up the framework.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LTQK]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=91e0bc60-f270-4920-b82e-1488b9b8d18e]
 
 ### Cognition
 

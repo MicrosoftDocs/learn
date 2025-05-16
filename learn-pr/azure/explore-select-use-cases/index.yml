@@ -25,6 +25,7 @@ prerequisites: |
   - Basic knowledge of Machine Teaching
   - Basic knowledge of brain design patterns
 iconUrl: /training/achievements/generic-badge.svg
+hidden: true
 levels: 
 - beginner
 roles: 

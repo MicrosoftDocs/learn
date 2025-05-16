@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-migrating-aws-azure.compare-database-services
+title: Compare database services in AWS and Azure
+metadata:
+  title: Compare database services in AWS and Azure
+  description: "Data hosting and analysis services, whether they're relational, semi-structured, or data warehouses, underpin enterprises, and are frequently business-critical. Learn how the data services you're familiar with in Amazon Web Services (AWS) map to Azure functionality."
+  ms.date: 01/16/2025
+  author: carols
+  ms.author: carols
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-compare-database-services.md)]

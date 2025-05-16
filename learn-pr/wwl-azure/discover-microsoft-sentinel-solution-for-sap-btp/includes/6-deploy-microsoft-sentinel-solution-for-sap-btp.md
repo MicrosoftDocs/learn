@@ -1,4 +1,4 @@
-This unit describes how to use the SAP BTP connector to deploy the Microsoft Sentinel solution for SAP BTP systems.
+This unit describes how to use the SAP BTP connector to deploy the Microsoft Sentinel Solution for SAP BTP systems.
 
 ## Examine prerequisites
 
@@ -11,9 +11,9 @@ Before you begin, verify that:
 - You have the SAP BTP auditlog-management service and service key (see below).
 - You have the **Microsoft Sentinel Contributor** role on the target Microsoft Sentinel workspace.
 
-## Set up the BTP account and solution
+## Set up the SAP BTP account and solution
 
-To set up the BTP account and the solution:
+To set up the SAP BTP account and the solution:
 
 1. After you verify that you meet the prerequisites and sign in to your BTP account, follow the [audit log retrieval steps](https://help.sap.com/docs/btp/sap-business-technology-platform/audit-log-retrieval-api-usage-for-subaccounts-in-cloud-foundry-environment) on the SAP BTP system.
 1. In the SAP BTP cockpit, select the **Audit Log Management Service**.
@@ -69,4 +69,4 @@ You also can retrieve the logs via the UI:
 1. View the service key and retrieve the required parameters from step 4 of the configuration instructions in the data connector UI (**url**, **uaa.url**, **uaa.clientid**, and **uaa.clientsecret**).
 
 > [!NOTE]
-> We recommend that you periodically rotate the BPT subaccount client secrets. For more information, including a sample script, see [Rotate the BTP client secret](/azure/sentinel/sap/deploy-sap-btp-solution#rotate-the-btp-client-secret).
+> We recommend that you periodically rotate the SAP BPT subaccount client secrets. For more information, including a sample script, see [Rotate the BTP client secret](/azure/sentinel/sap/deploy-sap-btp-solution#rotate-the-btp-client-secret).

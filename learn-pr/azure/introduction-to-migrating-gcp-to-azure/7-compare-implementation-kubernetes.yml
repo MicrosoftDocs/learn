@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-migrating-gcp-azure.compare-implementation-kubernetes
+title: Understand Kubernetes on Azure and Google Cloud
+metadata:
+  title: Understand Kubernetes on Azure and Google Cloud
+  description: "Learn about hosting containers by using the Kubernetes orchestrator and how you can transfer your Kubernetes knowledge from Google Cloud to Azure."
+  ms.date: 01/16/2025
+  author: carols
+  ms.author: carols
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-compare-implementation-kubernetes.md)]

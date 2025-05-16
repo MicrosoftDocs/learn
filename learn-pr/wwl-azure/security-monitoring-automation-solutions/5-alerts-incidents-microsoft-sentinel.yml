@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.security-monitoring-automation-solutions.alerts-incidents-microsoft-sentinel
+title: Alerts and Incidents from Microsoft Sentinel
+metadata:
+  title: Alerts and Incidents from Microsoft Sentinel
+  description: "Alerts and Incidents from Microsoft Sentinel"
+  ms.date: 02/03/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-alerts-incidents-microsoft-sentinel.md)]

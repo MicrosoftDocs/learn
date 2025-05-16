@@ -4,7 +4,7 @@ title: Knowledge check 1
 metadata:
   title: Knowledge check 1
   description: "Knowledge check 1"
-  ms.date: 12/13/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
@@ -20,32 +20,32 @@ quiz:
     choices:
     - content: "Microsoft Entra ID implements the same authentication protocols as on-premises AD DS."
       isCorrect: false
-      explanation: "That's incorrect. Microsoft Entra ID does not use on-premises AD DS Kerberos authentication; instead, it uses HTTP and HTTPS protocols such as SAML, WS-Federation, and OpenID Connect for authentication, and OAuth for authorization."
-    - content: "Microsoft Entra ID is essentially on-premises AD DS in the cloud."
+      explanation: "Incorrect. Microsoft Entra ID doesn't use on-premises AD DS Kerberos authentication; instead, it uses HTTP and HTTPS protocols such as SAML, WS-Federation, and OpenID Connect for authentication, and OAuth for authorization."
+    - content: "Microsoft Entra ID is the equivalent on-premises AD DS in the cloud."
       isCorrect: false
-      explanation: "That's incorrect. Although Microsoft Entra ID has many similarities to AD DS, there are also many differences. It's important to realize that using Microsoft Entra ID is different from deploying an AD DS domain controller on an Azure VM and then adding it to your on-premises domain."
+      explanation: "Incorrect. Although Microsoft Entra ID has many similarities to AD DS, there are also many differences. It's important to realize that using Microsoft Entra ID is different from deploying an AD DS domain controller on an Azure VM and then adding it to your on-premises domain."
     - content: "Microsoft Entra users and groups are created in a flat structure."
       isCorrect: true
-      explanation: "That's correct. Microsoft Entra users and groups are created in a flat structure, and there are no OUs or GPOs."
+      explanation: "Correct. Microsoft Entra users and groups are created in a flat structure, and there are no OUs or GPOs."
   - content: "Contoso IT staff have set up Microsoft Entra Connect and are beginning to synchronize accounts. Maria in IT finds a new user account in Microsoft Entra ID that has been created by the Microsoft Entra Connect process. Which of the following accounts would Maria have found?"
     choices:
     - content: "Maria found an account called `MSOL_c778af008d92`."
       isCorrect: false
-      explanation: "That's incorrect. The account with the MSOL prefix resides in on-premises AD DS, but it's created during setup of Microsoft Entra Connect."
+      explanation: "Incorrect. The account with the MSOL prefix resides in on-premises AD DS, but it's created during setup of Microsoft Entra Connect."
     - content: "Marie found an account called `Sync_CONTOSO-DC1_c778af008d92@Contoso.com`."
       isCorrect: true
-      explanation: "That's correct. An account with the prefix Sync is created in Microsoft Entra ID as part of the Microsoft Entra Connect setup."
+      explanation: "Correct. An account with the prefix Sync is created in Microsoft Entra ID as part of the Microsoft Entra Connect setup."
     - content: "Maria found an account called `AAD_c778af008d92`."
       isCorrect: false
-      explanation: "That's incorrect. The account with the Microsoft Entra ID prefix resides in on-premises AD DS, but is created during setup of Microsoft Entra Connect."
+      explanation: "Incorrect. The account with the Microsoft Entra ID prefix resides in on-premises AD DS, but is created during setup of Microsoft Entra Connect."
   - content: "Which of the following sign-in methods is NOT available for Contoso IT staff to combine with Seamless SSO?"
     choices:
     - content: "Password Hash Synchronization."
       isCorrect: false
-      explanation: "That's incorrect. You can combine Seamless SSO with both Password Hash Synchronization and Pass-Through Authentication."
+      explanation: "Incorrect. You can combine Seamless SSO with both Password Hash Synchronization and Pass-Through Authentication."
     - content: "AD FS."
       isCorrect: true
-      explanation: "That's correct. You can combine Seamless SSO with both Password Hash Synchronization and Pass-Through Authentication, but not AD FS."
+      explanation: "Correct. You can combine Seamless SSO with both Password Hash Synchronization and Pass-Through Authentication, but not AD FS."
     - content: "Pass-through authentication."
       isCorrect: false
-      explanation: "That's incorrect. You can combine Seamless SSO with both Password Hash Synchronization and Pass-Through Authentication."
+      explanation: "Incorrect. You can combine Seamless SSO with both Password Hash Synchronization and Pass-Through Authentication."

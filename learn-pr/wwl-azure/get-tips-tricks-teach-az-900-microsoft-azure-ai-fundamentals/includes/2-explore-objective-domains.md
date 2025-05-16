@@ -1,6 +1,6 @@
 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dXUm]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e9ea6982-1467-4d8a-b4d3-2d3defe02c48]
 
 All topics covered in the AZ-900: Microsoft Azure Fundamentals courses are related to foundational knowledge of cloud services and how those services are provided with Microsoft Azure and map directly to [Exam AZ-900: Microsoft Azure Fundamentals](https://aka.ms/az900exam). Percentages indicate the relative weight of each area on the exam. The higher the percentage, the more questions you're likely to see in that area. For the most up-to-date breakdown, download the [AZ-900 study guide](https://aka.ms/az900studyguide1) from the [Exam AZ-900: Microsoft Azure Fundamentals](https://aka.ms/az900exam) page.
 Become familiar with the objective domains, which are a comprehensive set of specific and measurable knowledge, skills, and abilities that are the basis for the development of both this course and the certification exam:

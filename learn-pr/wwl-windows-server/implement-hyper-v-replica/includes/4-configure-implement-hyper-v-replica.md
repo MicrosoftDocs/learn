@@ -128,7 +128,7 @@ The main steps in the process are:
 - Configure replication by using **Windows PowerShell** and **Kerberos** authentication.
 - Validate that the failover completed successfully.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MC7j]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=d679cb82-0c54-431b-ac77-99050c687dee]
 
 ---
 

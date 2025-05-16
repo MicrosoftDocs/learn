@@ -4,3 +4,4 @@ The module also introduced Azure Machine Learning; a cloud platform for end-to-e
 
 > [!TIP]
 > To learn more about Azure Machine Learning and its capabilities, see the [Azure Machine Learning](https://azure.microsoft.com/products/machine-learning/) page.
+

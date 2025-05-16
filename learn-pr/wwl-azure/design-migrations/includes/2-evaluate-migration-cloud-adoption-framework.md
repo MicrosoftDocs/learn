@@ -12,8 +12,6 @@ Tailwind Traders shouldn't undertake cloud adoption without considerable plannin
 
 - [The One Migrate approach to migrating the IT portfolio](/azure/cloud-adoption-framework/scenarios?azure-portal=true). Examine the scenarios captured in the migrate methodology. The examples demonstrate the same set of consistent guidelines and processes for migrating both Microsoft and third-party technologies.
 
-- [Azure cloud migration best practices checklist](/azure/cloud-adoption-framework/migrate/azure-best-practices?azure-portal=true). Follow this document to learn how best to address common migration needs through the application of consistent best practices.
-
 - [The Cloud Adoption Framework migration model](/azure/cloud-adoption-framework/migrate/migration-considerations?azure-portal=true). Explore this document to understand migration and why the process can be an intensive activity. As you increase your migration effort, review these process improvements to help optimize aspects of your migration.
 
 ### Things to consider when implementing migration adoption

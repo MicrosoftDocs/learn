@@ -97,7 +97,7 @@ Your GitHub account settings on GitHub.com include options for configuring GitHu
 
 ![Screenshot showing the GitHub account settings for Copilot.](../media/github-account-settings-copilot.png)
 
-GitHub Copilot can be managed through personal accounts with GitHub Copilot Individual or through organization accounts with GitHub Copilot Business.
+GitHub Copilot can be managed through personal accounts with GitHub Copilot Pro or through organization accounts with GitHub Copilot Business.
 
 ## Keyboard shortcuts for GitHub Copilot
 

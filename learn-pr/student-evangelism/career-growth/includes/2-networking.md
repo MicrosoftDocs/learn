@@ -45,7 +45,7 @@ OK, you've managed to book a number of coffee/tea chats or lunch-and-learns. Wha
 As a new employee, take the opportunity to build your network as broadly as you can from inside your organization.
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OPAi]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2b9fa68d-3baf-4103-b6b3-0e2b42eed6d1]
 > *Software engineer Eleanor Lewis encourages you to explore your options as an intern.*
 
 ## A few weeks in

@@ -67,4 +67,4 @@ Remove the resources you created in this module to avoid incurring charges. Dele
 Learn more about Azure Container Registry and Docker on Azure with the following resources:
 
 - [Azure Container Registry (ACR) documentation](/azure/container-registry/)
-- [Docker on Azure](/azure/docker/)
+- [What is Docker?](/azure/docker/)

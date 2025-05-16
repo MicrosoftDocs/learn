@@ -43,7 +43,7 @@ SaaS is any application in which the end user has access to a software applicati
 The following video reviews these services:
 <br>
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4pXEY]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=8e9b822c-d5b5-41ba-8528-f53d8373b826]
 
 ## SaaS model
 
@@ -55,7 +55,7 @@ The following video reviews these services:
 SaaS is one of the most common cloud service models in which the cloud provider delivers software as an internet service. The following video describes this scenario. SaaS users simply use their browsers to access the software, thus eliminating the need to install, run, and maintain (update, patch, reconfigure, and so on) the application on their computers. The web browser loads the SaaS application service dynamically and transparently.
 <br>
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4pKC2]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b59b8b6d-d6a7-439d-96c8-af0fa25bdfc9]
 
 SaaS has become a common software delivery model for many business applications, including accounting, collaboration, customer relationship management (CRM), management information systems (MIS), enterprise resource planning (ERP), invoicing, human resource management (HRM), content management (CM), and service desk management.
 
@@ -108,7 +108,7 @@ Another popular example of SaaS is online office suites, such as Microsoft 365, 
 PaaS-based offerings allow users to develop, deploy, and scale applications on platforms that are offered by cloud providers. PaaS is analogous to SaaS, except that rather than software delivered over the web, it is a platform for the creation of software that is delivered over the web.
 <br>
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4pHZJ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=da3d6738-f77d-4185-b387-de7acb08f5f6]
 
 ### PaaS characteristics
 
@@ -151,7 +151,7 @@ Azure Functions is an example of a PaaS. Using Azure Functions, developers can r
 In the IaaS model, providers rent out compute resources in the form of instances or virtual machines, which have some form of configurable CPU, memory, disk, and network bandwidth attached to them. After provisioning, IaaS users can remotely connect to these instances and configure their choice of platforms and applications. This model offers the most flexibility to the IaaS users in terms of software development and deployment. Rather than purchasing servers, software, datacenter space, or network equipment, users rent those resources as a fully outsourced service on demand.
 <br>
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4pKC3]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e9c2225b-9d8f-4708-80b8-1f0c7f6ae161]
 
 ## IaaS characteristics
 

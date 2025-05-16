@@ -4,11 +4,11 @@ You can pull container images from Azure Container Registry using various contai
 
 Azure Container Registry doesn't support unauthenticated access and requires authentication for all operations. Registries support two types of identities:
 
-- **Microsoft Entra identities**, including both user and service principals. Access to a registry with a Microsoft Entra identity is role-based and you can assign identities one of three roles: **reader** (pull access only), **contributor** (push and pull access), or **owner** (pull, push, and assign roles to other users).
+- **Microsoft Entra identities**, including both user and service principals. Access to a registry with a Microsoft Entra identity is role-based, and you can assign identities one of three roles: **reader** (pull access only), **contributor** (push and pull access), or **owner** (pull, push, and assign roles to other users).
 - The **admin account** included with each registry. The admin account is disabled by default.
 
 > [!IMPORTANT]
-> The admin account provides a quick option to try a new registry. You can enable the account and use the username and password in workflows and apps that need access. After you've confirmed the registry works as expected, you should disable the admin account and use Microsoft Entra identities to ensure the security of your registry. Do not share the admin account credentials with others.
+> The admin account provides a quick option to try a new registry. You can enable the account and use the username and password in workflows and apps that need access. After you've confirmed the registry works as expected, you should disable the admin account and use Microsoft Entra identities to ensure the security of your registry. Don't share the admin account credentials with others.
 
 ## Enable the registry admin account
 
@@ -31,7 +31,7 @@ Azure Container Registry doesn't support unauthenticated access and requires aut
 1. Deploy a container instance using the `az container create` command. Make sure you replace `<admin-username>` and `<admin-password>` with your admin username and password from the previous command.
 
     ```azurecli-interactive
-    az container create --resource-group learn-acr-rg --name acr-tasks --image $ACR_NAME.azurecr.io/helloacrtasks:v1 --registry-login-server $ACR_NAME.azurecr.io --ip-address Public --location eastus --registry-username <admin-username> --registry-password <admin-password>
+    az container create --resource-group learn-acr-rg --name acr-tasks --image $ACR_NAME.azurecr.io/helloacrtasks:v1 --registry-login-server $ACR_NAME.azurecr.io --ip-address Public --location eastus --registry-username <admin-username> --registry-password <admin-password> --os-type Linux --cpu 1 --memory 1
     ```
 
 2. Get the IP address of the Azure container instance using the `az container show` command.

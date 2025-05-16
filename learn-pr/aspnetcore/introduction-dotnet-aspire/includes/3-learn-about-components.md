@@ -1,4 +1,4 @@
-Although each microservice in your app is likely to be unique, they frequently have similar requirements for backing services such as databases and caches. It can be challenging to write code in each microservice that interfaces with these backing services. In .NET Aspire, that code is reduced as you add a .NET Aspire integration instead. There are built-in integrations for many commonly backing requirements that you're likely to need in microservices.
+Although each microservice in your app is likely to be unique, they frequently have similar requirements for backing services such as databases and caches. It can be challenging to write code in each microservice that interfaces with these backing services. There are built-in integrations in .NET Aspire for many of the common backing requirements that you're likely to need in microservices. With .NET Aspire, your code is reduced as you add a .NET Aspire integration instead.
 
 Imagine you work for an outdoor clothing and equipment company. Your development teams are beginning to design their microservices for the new eShop web app. Each microservice might need services such as databases, messaging services, and caches. You want to assess how .NET Aspire can help interact with these services.
 
@@ -11,7 +11,7 @@ Each .NET Aspire integration is a NuGet package, and you can add it to your proj
 :::image type="content" source="../media/add-component.png" lightbox="../media/add-component.png" alt-text="Screenshot showing the NuGet package manager in Visual Studio displaying .NET Aspire integrations.":::
 
 > [!NOTE]
-> You'll see how to use this integration tools in the exercise later in this module.
+> You see how to use these integration tools in the exercise later in this module.
 
 Visual Studio Code with the C# Dev Kit extension also supports adding .NET Aspire integrations.
 

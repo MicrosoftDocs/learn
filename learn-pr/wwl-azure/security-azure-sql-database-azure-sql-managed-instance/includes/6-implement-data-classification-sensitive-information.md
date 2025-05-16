@@ -10,7 +10,7 @@ Labeling in the Microsoft Purview Data Map is currently in PREVIEW.
 
 Azure may include preview, beta, or other pre-release features, services, software, or regions offered by Microsoft for optional evaluation ("Previews"). Previews are licensed to you as part of your agreement governing use of Azure, and subject to terms applicable to "Previews".
 
-Certain named Previews are subject to additional terms set forth below, if any. These Previews are made available to you pursuant to these additional terms, which supplement your agreement governing use of Azure. Capitalized terms not defined herein shall have the meaning set forth in your agreement. If you do not agree to these terms, do not use the Preview(s).<br>
+Certain named Previews are subject to additional terms set forth below, if any. These Previews are made available to you pursuant to these additional terms, which supplement your agreement governing use of Azure. Capitalized terms not defined herein shall have the meaning set forth in your agreement. If you do not agree to these terms, do not use the Preview(s).
 
 ### Register a new source
 
@@ -35,6 +35,8 @@ Scanning and Ingestion features in Microsoft Purview connect your Microsoft Purv
 
  -  Scanning captures metadata from data sources and brings it to Microsoft Purview.<br>
  -  Ingestion processes metadata and stores it in the data catalog from both:
+    
+    
      -  Data source scans - scanned metadata is added to the Microsoft Purview Data Map.
      -  Lineage connections - transformation resources add metadata about their sources, outputs, and activities to the Microsoft Purview Data Map.
 
@@ -74,25 +76,20 @@ Classification is the process of organizing data into *logical categories* that 
 
 The Microsoft Purview governance portal supports both system and custom classifications.
 
- -  System classifications: 200+ system classifications supported are out of the box.<br>
-
-    In the example in the preceding image, Person’s Name is a system classification. System classification has the thunderbolt icon along with classification name. Hovering over the classification itself provides more details on the type of classification, and more details on how it was applied<br>
-
- -  Custom classifications: You can create custom classifications when you want to classify assets based on a pattern or a specific column name that's unavailable as a system classification. Custom classification rules can be based on a regular expression pattern or dictionary.<br>
-
-    Let's say that the Employee ID column follows the EMPLOYEE\{GUID\} pattern (for example, EMPLOYEE9c55c474-9996-420c-a285-0d0fc23f1f55). You can create your own custom classification by using a regular expression, such as \\^Employee\\\[A-Za-z0-9\\\]\{8\}-\\\[A-Za-z0-9\\\]\{4\}-\\\[A-Za-z0-9\\\]\{4\}-\\\[A-Za-z0-9\\\]\{4\}-\\\[A-Za-z0-9\\\]\{12\}\\$.
+ -  System classifications: 200+ system classifications supported are out of the box.<br>In the example in the preceding image, Person’s Name is a system classification. System classification has the thunderbolt icon along with classification name. Hovering over the classification itself provides more details on the type of classification, and more details on how it was applied<br>
+ -  Custom classifications: You can create custom classifications when you want to classify assets based on a pattern or a specific column name that's unavailable as a system classification. Custom classification rules can be based on a regular expression pattern or dictionary.<br>Let's say that the Employee ID column follows the EMPLOYEE\{GUID\} pattern (for example, EMPLOYEE9c55c474-9996-420c-a285-0d0fc23f1f55). You can create your own custom classification by using a regular expression, such as \\^Employee\\\[A-Za-z0-9\\\]\{8\}-\\\[A-Za-z0-9\\\]\{4\}-\\\[A-Za-z0-9\\\]\{4\}-\\\[A-Za-z0-9\\\]\{4\}-\\\[A-Za-z0-9\\\]\{12\}\\$.
 
 > [!NOTE]
-> Sensitivity labels are different from classifications. Sensitivity labels categorize assets in the context of data security and privacy, such as *Highly Confidential*, *Restricted*, *Public*, and so on. To use sensitivity labels in the Microsoft Purview Data Map, you'll need at least one Microsoft 365 license or account within the same Microsoft Entra tenant as your Microsoft Purview Data Map.<br>
+> Sensitivity labels are different from classifications. Sensitivity labels categorize assets in the context of data security and privacy, such as *Highly Confidential*, *Restricted*, *Public*, and so on. To use sensitivity labels in the Microsoft Purview Data Map, you'll need at least one Microsoft 365 license or account within the same Microsoft Entra tenant as your Microsoft Purview Data Map.
 
 ### Labeling in the Microsoft Purview Data Map
 
 > [!IMPORTANT]
-> Labeling in the Microsoft Purview Data Map is currently in PREVIEW. The Supplemental Terms of Use for Microsoft Azure Previews include additional legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.<br>
+> Labeling in the Microsoft Purview Data Map is currently in PREVIEW. The Supplemental Terms of Use for Microsoft Azure Previews include additional legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
 
 To get work done, people in your organization collaborate with others both inside and outside the organization. Data doesn't always stay in your cloud, and often roams everywhere, across devices, apps, and services. When your data roams, you still want it to be secure in a way that meets your organization's business and compliance policies.
 
-Applying sensitivity labels to your content enables you to keep your data secure by stating how sensitive certain data is in your organization. It also abstracts the data itself, so you use labels to track the type of data, without exposing sensitive data on another platform.<br>
+Applying sensitivity labels to your content enables you to keep your data secure by stating how sensitive certain data is in your organization. It also abstracts the data itself, so you use labels to track the type of data, without exposing sensitive data on another platform.
 
 For example, applying a sensitivity label ‘highly confidential’ to a document that contains social security number and credit card numbers helps you identify the sensitivity of the document without knowing the actual data in the document.
 
@@ -109,7 +106,7 @@ Microsoft Purview allows you to apply sensitivity labels to assets, enabling you
 
 ### How to apply labels to assets in the Microsoft Purview Data Map
 
-Being able to apply labels to your asset in the data map requires you to perform the following steps:<br>
+Being able to apply labels to your asset in the data map requires you to perform the following steps:
 
 1.  Create new or apply existing sensitivity labels in the Microsoft Purview compliance portal. Creating sensitivity labels include autolabeling rules that tell us which label should be applied based on the classifications found in your data.<br>
 2.  Register and scan your asset in the Microsoft Purview Data Map.
@@ -117,7 +114,7 @@ Being able to apply labels to your asset in the data map requires you to perform
 4.  Microsoft Purview applies labels: Once classifications are found on an asset, Microsoft Purview will apply labels to the assets depending on autolabeling rules. Application of labels is done automatically by Microsoft Purview, there's no action for you as long as you have created labels with autolabeling rules in step 1.
 
 > [!NOTE]
-> **Autolabeling rules** are conditions that you specify, stating when a particular label should be applied. When these conditions are met, the label is automatically assigned to the data. When you create your labels, make sure to define autolabeling rules for both files and database columns to apply your labels automatically with each scan.<br>
+> **Autolabeling rules** are conditions that you specify, stating when a particular label should be applied. When these conditions are met, the label is automatically assigned to the data. When you create your labels, make sure to define autolabeling rules for both files and database columns to apply your labels automatically with each scan.
 
 ### Labeling for SQL databases
 

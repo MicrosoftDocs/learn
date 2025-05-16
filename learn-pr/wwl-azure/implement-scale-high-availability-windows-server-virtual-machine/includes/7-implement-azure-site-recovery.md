@@ -1,10 +1,8 @@
-
-
 Contoso can use the Azure Site Recovery to help protect access to their critical resources in Azure. After IT staff complete the disaster recovery setup, Contoso's Azure VMs continuously replicate to a secondary region. If an outage occurs, IT staff at Contoso can fail over VMs to the secondary region, and users can access those resources from the new region. After any problems are resolved and everything is running normally again, IT support staff can fail back the VMs, enabling users to continue working in the primary region.
 
 ## Prepare Azure Site Recovery
 
-Contoso staff now want to implement their BCDR plan. Let's assume they're using the East US Azure region for their existing solution, and IT staff have decided to use the Central US region for replication. The following diagram depicts this environment. 
+Contoso staff now want to implement their BCDR plan. Let's assume they're using the East US Azure region for their existing solution, and IT staff decided to use the Central US region for replication. The following diagram depicts this environment. 
 
 ![A diagram of both a source (in East US) and target (in Central US) environment. Their environment contains: In East US, in a single VNet, a storage account, storage account cache data, a availabilty set with in Subnet1 with two VMs. In Central US, in a VNet called VNet-asr, a storage account cache data and an empty availability set in Subnet1.](../media/m22-failover-2.png)
 
@@ -34,8 +32,8 @@ When you enable VM replication, Azure Site Recovery gives you the option of crea
 |Target resource|Default setting|
 |---|---|
 |**Target subscription**|This is the same as the source subscription.|
-|**Target resource group**|This is the resource group to which VMs belong after failover. It can be in any Azure region except the source region. Azure Site Recovery creates a new resource group in the target region, which has the suffix "asr".|
-|**Target VNet**|This is the VNet in which replicated VMs are located after failover. A network mapping is created between source and target VNets. Azure Site Recovery creates a new VNet and subnet with the suffix "asr".|
+|**Target resource group**|This is the resource group to which VMs belong after failover. It can be in any Azure region except the source region. Azure Site Recovery creates a new resource group in the target region, which has the suffix "asr"|
+|**Target VNet**|This is the VNet in which replicated VMs are located after failover. A network mapping is created between source and target VNets. Azure Site Recovery creates a new VNet and subnet with the suffix "asr"|
 |**Target storage account**|This is the storage account to which data is replicated. Azure Site Recovery creates a new storage account in the target region to mirror the source storage account.|
 |**Replica managed disks**|If the VM uses a managed disk, this is the managed disks to which data is replicated. Azure Site Recovery creates replica managed disks in the storage region to mirror the source.|
 |**Target availability sets**|This is the availability set in which replicating VMs are located after failover. For VMs that are located in an availability set in the source location, Azure Site Recovery creates an availability set in the target region with the suffix "asr". If an availability set exists, it's used and a new one isn't created.|
@@ -75,9 +73,6 @@ The following steps enable VM replication to a secondary location:
 1. In the Azure portal, select **Virtual machines**, and then select the VM to replicate.
 2. On the selected VM's blade, within **Operations**, select **Disaster recovery**.
 3. From **Basics**, select **Target region**, and then select the target region.
-
-   ![A screenshot of the Disaster recovery blade for the ContosoVM1 virtual machine. Central US has been selected as the Target region. A map displays with this region highlighted.](../media/m22-disaster-1.png)
-
 4. To review the replication settings, select **Review + Start replication**. If you need to change any defaults, select **Next: Advanced settings**. 
 5. To start the job that enables VM replication, select **Start replication**.
 
@@ -88,8 +83,6 @@ After the replication job finishes, you can check the replication status, modify
 1. On the Azure portal menu, select **Virtual machines**, and then select the VM that you replicated.
 2. In **Operations**, select **Disaster recovery**.
 3. To view the replication details from **Overview**, select **Essentials**. More details are available in the **Health and status**, **Failover readiness**, and the **Infrastructure view** map.
-
-![A screenshot of the Disaster recovery blade for the ContosoVM1 virtual machine. The administrator has selected Overview. The Infrastructure view displays. A topographical map displays the resources, and a geographic map highlights the selected regions. Currently, a Test Failover is in progress following initial setup.](../media/m22-disaster-2.png)
 
 ## Try it
 

@@ -1,19 +1,19 @@
-This module focuses on the essential techniques for configuring and managing threat protection exclusively with Microsoft Defender for Cloud, empowering cybersecurity specialists to strengthen the security posture of their cloud environments.
+This module focuses on configuring and managing comprehensive threat protection using Microsoft Defender for Cloud.
 
 ## Scenario
 
-Picture yourself as the primary defender of your organization's cloud assets, entrusted with implementing robust security measures using only Microsoft Defender for Cloud to safeguard against a myriad of cyber threats.
+You are an Azure security engineer responsible for strengthening your organization’s security posture. Your tasks include enabling workload protection services, securing critical infrastructure like servers, databases, and storage, implementing agentless scanning for virtual machines, managing vulnerability assessments, and configuring Microsoft Defender for Cloud DevOps Security to integrate with GitHub, Azure DevOps, and GitLab.
 
 ## Learning objectives
 
 By the end of this module, participants will be able to:
 
- -  Master the configuration of Microsoft Defender for Cloud to effectively monitor and protect cloud resources.
- -  Implement advanced threat detection strategies using Microsoft Defender for Cloud's built-in capabilities.
- -  Utilize Microsoft Defender for Cloud's threat intelligence to proactively identify and mitigate security risks.
- -  Configure and fine-tuning security policies within Microsoft Defender for Cloud to align with organizational security requirements.
- -  Develop expertise in incident response and remediation using Microsoft Defender for Cloud's integrated tools and features.
+ -  Enable and configure workload protection services in Microsoft Defender for Cloud.
+ -  Secure servers, databases, and storage using Microsoft Defender for Servers, Databases, and Storage.
+ -  Implement and manage agentless scanning for virtual machines in Microsoft Defender for Servers.
+ -  Configure and manage Microsoft Defender Vulnerability Management for Azure virtual machines.
+ -  Integrate Microsoft Defender for Cloud DevOps Security with GitHub, Azure DevOps, and GitLab.
 
 ## Goals
 
-This module aims to equip cybersecurity specialists with the knowledge and skills required to proficiently configure and manage threat protection solutions exclusively with Microsoft Defender for Cloud, thereby enhancing the resilience of their organization's cloud infrastructure against cyber threats.
+This module aims to equip Azure security engineers with the skills to implement, manage, and optimize advanced threat protection solutions across workloads and DevOps environments using Microsoft Defender for Cloud.

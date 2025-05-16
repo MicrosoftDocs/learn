@@ -1,6 +1,6 @@
 A resource is like a symbolic constant from a programming language. You define it in one place and reference it everywhere you need it. Your code is easier to read because you use a descriptive name instead of a "magic" value. If you need to change the value, you only need to update the definition. 
 
-In this module, you see how to use resources to eliminate hard-coded values from your XAML.
+In this module, you see how to use resources to eliminate hard-coded values from the Extensible Application Markup Language (XAML) that you use in .NET Multi-platform App UI (MAUI).
 
 ## What is a resource?
 
@@ -50,7 +50,7 @@ Every .NET MAUI XAML page has a property named **Resources** that can hold a **R
 Every page in your app can have its own dictionary. You use these page-specific dictionaries to store resources that are used exclusively on that page.
 
 > [!NOTE]
-> Each control on a page can also have its own resource dictionary. For example, you can add a resource directory to a **Label** control like this:
+> Each control on a page can also have its own resource dictionary. For example, you can add a resource dictionary to a **Label** control like this:
 >
 > ```xml
 > <Label Text="Hello, World!"
@@ -61,7 +61,7 @@ Every page in your app can have its own dictionary. You use these page-specific 
 ></Label>
 > ```
 >
-> Apart from layouts and views, which can hold child elements, it's not common to do this at the control level.
+> Apart from layouts and views, which can hold child elements, it's not common to  add a resource dictionary at the control level.
 
 ## Create a resource
 
@@ -103,7 +103,7 @@ The original example presented at the start of this unit sets the **TextColor** 
 <Button TextColor="Blue" FontSize="14">
 ```
 
-The **FontSize** has the type **Double**. To create a resource for this value, you use one of the XAML intrinsic types defined in the XAML specification. The XAML specification defines type names for many of the C# simple types. The following code shows example resources for each of the intrinsic types.
+The **FontSize** property has the type **Double**. To create a resource for this value, you use one of the XAML intrinsic types defined in the XAML specification. The XAML specification defines type names for many of the C# simple types. The following code shows example resources for each of the intrinsic types.
 
 ```XML
 <ContentPage.Resources>

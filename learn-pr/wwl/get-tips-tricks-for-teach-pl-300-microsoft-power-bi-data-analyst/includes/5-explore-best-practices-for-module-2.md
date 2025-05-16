@@ -12,7 +12,7 @@ This module consists of three lessons:
 - Lesson 2 – Optimize performance 
 - Lesson 3 – Resolve data errors 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5aCFO] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=d2bd2b83-62fa-4794-9ec8-5583bfa9a4ad] 
 
 Module 2 Tips and Tricks 
 

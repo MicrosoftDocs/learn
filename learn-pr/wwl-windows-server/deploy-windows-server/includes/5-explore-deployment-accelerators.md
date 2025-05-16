@@ -1,7 +1,6 @@
+Contoso's IT infrastructure staff  must consider using software tools to help them plan their upgrade and migration to Windows Server 2025. Along with guidance content to help you design and plan your Windows Server deployment, Microsoft also supplies solution accelerators to aid in the process.
 
-Contoso IT infrastructure staff  must consider using software tools to help them plan their upgrade and migration to Windows Server 2019. Along with guidance content to help you design and plan your Windows Server deployment, Microsoft also supplies solution accelerators to aid in the process.
-
-Solution accelerators are free, scenario-based guides and automations designed to help you with planning, deploying, and operating Microsoft products and technologies. Solution Accelerator scenarios focus on security and compliance, management and infrastructure, and communication and collaboration.
+Solution accelerators are free, scenario-based guides and automations designed to help you with planning, deploying, and operating Microsoft products and technologies. Solution Accelerator scenarios focus on security and compliance, management and infrastructure, and communication and collaboration. Solution accelerators are no longer under active development, but are still available from the Microsoft website. You can use solution accelerators with more recent versions of Windows Server, such as Windows Server 2025 even though more recent versions of the Windows Server operating system aren't officially supported.
 
 ## Microsoft Deployment Toolkit
 
@@ -35,17 +34,13 @@ When you follow the LTI process (which uses only the tools available in the MDT)
 1. Boot the target computer with the MDT media. This will provide the reference computer with access to the task sequence files, the task sequence, and the boot image.
 1. Run the deployment wizard to install the operating system on the target computer.
 
-
-
 ## Microsoft Assessment and Planning Toolkit
 
 The Microsoft Assessment and Planning Toolkit (MAP) is an agentless solution accelerator that analyzes the inventory of an organization’s server infrastructure, performs an assessment, and then creates reports that you can use for upgrade and migration plans.
 
-:::image type="content" source="../media/m4-map.png" alt-text="A screenshot of the Microsoft Assessment and Planning Toolkit. The administrator has selected the Overview tab. Displayed are options for a number of scenarios, including Server, currently selected.":::
+MAP can be used with Windows Server 2025, Windows 11, and for other scenarios, such as:
 
-MAP is available for Windows Server 2019, Windows 10, and for other scenarios, such as:
-
-- Assessing the environment for Microsoft 365 and Office 2019.
+- Assessing the environment for Microsoft 365.
 - Sizing your desktop virtualization needs for Virtual Desktop Infrastructure (VDI).
 - Migrating to Microsoft Azure VM.
 - Virtualizing Linux servers to Hyper-V.
@@ -57,8 +52,8 @@ Use the MAP to perform the tasks described in the following table.
 
 | Task                                                         | Explanation                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Inventory your organization’s IT infrastructure              | Based on the inventory, MAP displays a detailed report about which machines can run Windows Server 2019, which machines can run Windows Server 2019 with minimum system requirements, and which machines are not capable of running Windows Server 2019. MAP also recommends specific upgrades that ensure computers can run Windows Server 2019. |
-| Generate a report or proposal based on the Windows Server 2019 Readiness Assessment | The report or proposal is a document that contains an executive overview, assessment results, next steps, and a worksheet summarizing Windows Server 2019 readiness for computers that are running Windows Server. |
+| Inventory your organization’s IT infrastructure              | Based on the inventory, MAP displays a detailed report about which machines can run Windows Server 2025, which machines can run Windows Server 2025 with minimum system requirements, and which machines aren't capable of running Windows Server 2025. MAP also recommends specific upgrades that ensure computers can run Windows Server 2025. |
+| Generate a report or proposal based on the Windows Server 2025 Readiness Assessment | The report or proposal is a document that contains an executive overview, assessment results, next steps, and a worksheet summarizing Windows Server 2025 readiness for computers that are running Windows Server. |
 | Capture the performance metrics of the current IT infrastructure to help plan consolidation and server virtualization. | The performance assessment generates reports on performance and presents the server consolidation recommendations. |
 | Estimate server utilization based on that metric before and after the virtualization. | You can also choose which current physical servers are the best candidates for virtualization and the hosts on which you should place those VMs. |
 
@@ -70,7 +65,7 @@ MAP can discover Windows, Linux, UNIX, and VMware servers, computers, and virtua
 
 - AD DS. Requires domain credentials. You can use this method to discover all computers in all domains, or in specified domains, containers, and organization units.
 
-- Windows networking protocols, using the WIN32 LAN Manager application programming interface (API). Requires the Computer Browser service to be running on the computer, or the server running MAP. You can use this method to discover Windows workgroups and Windows NT 4.0 domains.
+- Windows networking protocols, using the Win32 LAN Manager application programming interface (API). Requires the Computer Browser service to be running on the computer, or the server running MAP. You can use this method to discover Windows workgroups and Windows NT 4.0 domains.
 
 - Configuration Manager. MAP can use Configuration Manager for discovery. For discovery, you require the primary site server name and appropriate credentials for Configuration Manager or Systems Management Server.
 

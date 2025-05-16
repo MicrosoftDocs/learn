@@ -1,5 +1,3 @@
-
-
 Microsoft Entra Connect requires a domain-joined computer to host the synchronization service. Most organizations deploy a dedicated synchronization server.
 
 ## Requirements
@@ -8,18 +6,10 @@ After you have set up Azure with an Active Directory tenant, you must complete t
 
 1. Add your AD DS domain into Azure, verify the domain, and then set the domain as the primary domain.
 2. Download and install Microsoft Entra Connect.
-
-   ![A screenshot of the Microsoft Entra Connect blade in the Microsoft Entra admin center. The administrator is about to download the Microsoft Entra Connect feature.](../media/m12-active-directory-connect-1.png)
-
 3. Run the **Microsoft Entra Connect Configuration Wizard**. (Optionally, you can configure Microsoft Entra Connect to synchronize specific OUs in the on-premises AD DS environment).
-
-   ![A screenshot of the Microsoft Entra Connect Wizard's Express Settings page. The administrator can choose Customize or Use express settings. The current AD forest is CONTOSO..](../media/m12-active-directory-connect-2.png)
-
 4. Enable optional features such as password hash sync, password writeback, and Exchange hybrid deployment.
 5. Run Microsoft Entra Connect, and let it configure the environment for directory synchronization
 6. Validate the synchronization results.
-
-   ![A screenshot of the Microsoft Entra Connect Wizard, Domain/OU Filtering tab. The administrator has selected the Sync selected domains and OU options, in addition to the various OUs from the returned Contoso.com list. ](../media/m12-active-directory-connect-3.png)
 
 After you set up Microsoft Entra Connect and perform the initial synchronization, you can reconfigure synchronization options if needed. The Microsoft Entra Connect software installation includes several applications related to directory synchronization. When you run Microsoft Entra Connect, you have the option to use Express installation settings, which sets up directory synchronization with the most commonly used settings, or you can choose to customize setup options.
 
@@ -35,7 +25,7 @@ Custom Microsoft Entra Connect installation also allows you to choose the way yo
 |ObjectSID and msExchangeMasterAccountSID|This option joins an enabled user in an account forest with a disabled user in an Exchange resource forest. In Exchange, this is also known as *linked mailbox*.|
 |sAMAccountName and mailNickname|This option joins additional attributes on locations in a directory where the login ID for the user is expected to be found.|
 |My own attribute|This option allows you to select your own attribute.|
-|Source Anchor|This is an attribute that stays immutable during the lifetime of a user object. In other words, this attribute is the primary key that links the on-premises user object with the user object in Microsoft Entra ID. Because this attribute cannot be changed later, you must carefully choose an attribute to use for this purpose. A default choice is `objectGUID`, as this attribute doesn't change unless the user account is moved between forests and domains.|
+|Source Anchor|This is an attribute that stays immutable during the lifetime of a user object. In other words, this attribute is the primary key that links the on-premises user object with the user object in Microsoft Entra ID. Because this attribute can't be changed later, you must carefully choose an attribute to use for this purpose. A default choice is `objectGUID`, as this attribute doesn't change unless the user account is moved between forests and domains.|
 
 You can configure the `UserPrincipalName` attribute in the same window. This is the attribute that users use when they sign in to Microsoft Entra ID. The domains used for this purpose, also known as the *UPN-suffix*, should be verified in Microsoft Entra ID before synchronizing the user objects.
 

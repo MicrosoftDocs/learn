@@ -4,9 +4,8 @@ title: Exercise - Perform list operations
 metadata:
   title: Exercise - Perform list operations
   description: In this exercise, you use a list operator function to calculate a card hand's value.
-  author: softchris
-  ms.author: chnoring
-  ms.manager: markl
+  author: baronfel
+  ms.author: chethusk 
   ms.date: 03/24/2023
   ms.topic: unit
   ms.custom: team=nextgen

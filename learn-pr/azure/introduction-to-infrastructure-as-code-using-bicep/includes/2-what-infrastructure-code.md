@@ -134,7 +134,7 @@ In Azure, a declarative code approach is accomplished by using *templates*. Many
 Take a look at the following example of a Bicep template that configures a storage account. The configuration of the storage account matches the Azure CLI example.
 
 ```bicep
-resource storageAccount 'Microsoft.Storage/storageAccounts@2203-05-01' = {
+resource storageAccount 'Microsoft.Storage/storageAccounts@2023-05-01' = {
   name: 'mystorageaccount'
   location: 'eastus'
   sku: {

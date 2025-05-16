@@ -2,12 +2,10 @@
 uid: learn.wwl.backup-restore-databases.exercise
 title: 'Exercise: Backup to URL'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Backup to URL'
   description: "Exercise: Backup to URL"
-  ms.date: 07/25/2023
-  author: wwlpublish
+  ms.date: 03/25/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
@@ -15,4 +13,4 @@ labId: 120594
 labModal: true
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-exercise-backup-url.md)]
+  [!include[](includes/5-exercise-backup-url.md)]

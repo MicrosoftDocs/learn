@@ -1,6 +1,6 @@
 Multiple servers are virtualized and consolidated onto fewer physical hosts to increase utilization and decrease energy costs. This improvement is helpful, but the demand for IT-related services in organizations continues to grow. The number of web-based startup companies, which have a higher proportional demand for IT equipment, also continues to grow. 
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4pXFK]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=d3873764-5bf1-49de-aff7-b578668966a4]
 
 ## Server utilization
 

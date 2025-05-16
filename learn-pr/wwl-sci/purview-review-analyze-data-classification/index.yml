@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.purview-review-analyze-data-classification
+metadata:
+  title: Review and analyze data classification and protection
+  description: "Review and analyze data classification and protection."
+  ms.date: 03/13/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: purview
+  hidden: false
+title: Review and analyze data classification and protection
+summary: Discover how Microsoft Purview helps organizations monitor and analyze data classification and protection. This module explores how security teams can track classification trends, investigate labeled content, and assess policy effectiveness using Information Protection Reports, Data explorer, Content explorer, and Activity explorer.  
+abstract: |
+  After completing this module, you'll be able to:
+  - Interpret Information Protection Reports to assess classification and protection trends.  
+  - Investigate labeled content using Data explorer and Content explorer to identify classification patterns.  
+  - Analyze user activity in Activity explorer to detect policy violations and potential security risks.  
+  - Use Microsoft Purview tools to improve data security, maintain compliance, and refine protection strategies.  
+prerequisites: |
+  - Basic understanding of data classification and protection.  
+  - Familiarity with security and compliance policies in Microsoft 365.  
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- auditor
+- administrator
+- risk-practitioner
+products:
+- microsoft-purview
+- m365
+subjects:
+- information-protection-governance
+- security
+units:
+- learn.wwl.purview-review-analyze-data-classification.introduction
+- learn.wwl.purview-review-analyze-data-classification.information-protection-reports
+- learn.wwl.purview-review-analyze-data-classification.analyze-classified-data
+- learn.wwl.purview-review-analyze-data-classification.monitor-review-actions
+- learn.wwl.purview-review-analyze-data-classification.knowledge-check
+- learn.wwl.purview-review-analyze-data-classification.summary
+
+badge:
+  uid: learn.wwl.purview-review-analyze-data-classification.badge

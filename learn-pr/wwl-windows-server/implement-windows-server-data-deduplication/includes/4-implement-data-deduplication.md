@@ -13,7 +13,7 @@ After completing your planning, use the following steps to deploy Data Deduplica
 
 ## Configure Data Deduplication
 
-The default deduplication settings are usually sufficient for most environments. However, you might need to alter the default settings in the following scenarios:
+The default deduplication settings are sufficient for most environments. However, you might need to alter the default settings in the following scenarios:
 
 - Incoming data is static or expected to be read-only, and you want to process files on the volume sooner.
 - You have directories that you don't want to deduplicate. Add a directory to the exclusion list.

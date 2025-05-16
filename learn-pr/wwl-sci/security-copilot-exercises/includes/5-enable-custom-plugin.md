@@ -21,7 +21,7 @@ This exercise should take approximately **10** minutes to complete.
 
 For this exercise, you'll be using a sample .yaml file, 'KQL_DefenderExample.yaml.'
 
-1. Select the link **[KQL_DefenderExample.yaml](https://github.com/MicrosoftLearning/SC-5006-Get-started-with-Microsoft-Copilot-for-Security/blob/master/Sample%20files/KQL_DefenderExample.yaml?azure-portal=true)** to access the sample file.
+1. Select the link **[KQL_DefenderExample.yaml](https://github.com/MicrosoftLearning/SC-5006-Enhance-security-by-Microsoft-Security-Copilot/blob/master/Sample%20files/KQL_DefenderExample.yaml?azure-portal=true)** to access the sample file.
 
 1. Select the **Download raw file ![download raw file icon](../media/raw-file-download-icon-v2.png)** icon. Save the file on your local computer, as you will need it later. 
 

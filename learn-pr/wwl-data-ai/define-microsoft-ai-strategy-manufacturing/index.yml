@@ -31,6 +31,8 @@ roles:
 - business-user
 products:
 - azure-openai
+- industry-solutions
+- mscloud-manufacturing
 subjects:
 - artificial-intelligence
 - data-management

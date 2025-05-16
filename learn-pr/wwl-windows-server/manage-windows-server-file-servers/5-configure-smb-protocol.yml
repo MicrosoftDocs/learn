@@ -4,7 +4,7 @@ title: Configure SMB protocol
 metadata:
   title: Configure SMB protocol
   description: "Configure SMB protocol"
-  ms.date: 10/20/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
@@ -20,10 +20,10 @@ quiz:
     choices:
     - content: "Windows Admin Center"
       isCorrect: true
-      explanation: "That's correct. You can use Windows Admin Center to configure SMB encryption settings."
+      explanation: "Correct. You can use Windows Admin Center to configure SMB encryption settings."
     - content: "File Server Resource Manager"
       isCorrect: false
-      explanation: "That's incorrect. File Server Resource Manager doesn't include the ability to enforce SMB encryption."
+      explanation: "Incorrect. File Server Resource Manager doesn't include the ability to enforce SMB encryption."
     - content: "fsutil"
       isCorrect: false
-      explanation: "That's incorrect. The fsutil command line tool operates on the file system level and doesn't include the ability to enforce SMB encryption."
+      explanation: "Incorrect. The fsutil command line tool operates on the file system level and doesn't include the ability to enforce SMB encryption."

@@ -1,5 +1,3 @@
-
-
 The IT staff at Contoso plan to migrate its file sharing and have asked you to investigate options for moving this shared content to Azure. You discover that Azure Storage offers four types of storage services, depending on the characteristics of data you store. The following table summarizes these storage services.
 
 |Storage service|Description|
@@ -9,7 +7,7 @@ The IT staff at Contoso plan to migrate its file sharing and have asked you to i
 |Queues|Queues offer temporary storage for messages that components of distributed applications use to asynchronously communicate with each other. For example, rather than sending a message directly to a destination component, a source component can place the message in a queue. This way, the destination component can process all messages in the queue according to its own schedule, without forcing the source component to wait for an acknowledgment.|
 |Files|Like blobs, files provide storage for unstructured data. However, their locking mechanism allows file sharing in a manner that is similar to on-premises Windows file shares.|
 
-In this unit, you'll learn about using Azure Files.
+In this unit, you learn about using Azure Files.
 
 > [!NOTE]
 > To use Azure Files, you first must create an Azure storage account.
@@ -43,11 +41,11 @@ Azure Files supports two storage tiers: premium and standard. Standard file shar
 |Storage tier|Description|
 |------------|------------------------------------------------------------|
 |Premium|Premium file shares store data on solid-state drives (SSDs), and are available only in the FileStorage storage account kind. They provide consistent high performance and low latency, and are available in LRS redundancy, with ZRS available in some regions. Not available in all Azure regions.|
-|Standard|Standard file shares store data on hard disk drives (HDDs) and deploy in the general-purpose version 2 (GPv2) storage account type. Provide performance for input/output (I/O) workloads such as general-purpose file shares and dev/test environments. They are available for LRS, ZRS, GRS, and GZRS, in all Azure regions.|
+|Standard|Standard file shares store data on hard disk drives (HDDs) and deploy in the general-purpose version 2 (GPv2) storage account type. Provide performance for input/output (I/O) workloads such as general-purpose file shares and dev/test environments. They're available for LRS, ZRS, GRS, and GZRS, in all Azure regions.|
 
 ### Common uses of Azure Files
 
-You can use Azure Files in a number of common scenarios as described in the following table.
+You can use Azure Files in many common scenarios as described in the following table.
 
 |Usage|Description|
 |----------------------------------------------|------------------------------------------------------------|

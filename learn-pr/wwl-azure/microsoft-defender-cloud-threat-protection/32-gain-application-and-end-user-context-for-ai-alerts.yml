@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.microsoft-defender-cloud-threat-protection.gain-application-and-end-user-context-for-ai-alerts
+title: Gain application and end-user context for AI alerts
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Gain application and end-user context for AI alerts
+  description: "Gain application and end-user context for AI alerts"
+  ms.date: 04/15/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: unit
+  ms.custom:
+  - references_regions
+durationInMinutes: 4
+content: |
+  [!include[](includes/32-gain-application-and-end-user-context-for-ai-alerts.md)]

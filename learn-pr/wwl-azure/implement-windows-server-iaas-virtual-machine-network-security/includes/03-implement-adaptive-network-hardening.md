@@ -1,6 +1,3 @@
-
-
-
 While planning for NSG implementation at Contoso, you need to know precisely which NSG can best secure your Microsoft Azure workloads.
 
 To achieve this goal, you can use Adaptive Network Hardening. Adaptive Network Hardening learns about the network traffic patterns in your infrastructure to and from your Azure workloads. It then makes recommendations for NSGs that can help to secure those workloads.
@@ -21,10 +18,7 @@ For example, suppose that Contoso IT had an application that required TCP port 2
 
 ## Reviewing Adaptive Network Hardening alerts and rules
 
-
-You review the Adaptive Network Hardening recommendations in the **Adaptive Network Hardening** blade within the Azure portal. To review recommendations,  in **Adaptive Network Hardening**, select **Security Center**, and then beneath **RESOURCE SECURITY HYGIENE**, select **Networking**. In the **Networking** blade, on the **Overview** tab, you can review the recommendations.
-
-[![A screenshot of the Azure portal. The administrator has selected the Networking node in Security Center, and a list of recommendations display.](../media/m19-traffic-hardening.png)](../media/m19-traffic-hardening.png#lightbox)
+You review the Adaptive Network Hardening recommendations in the **Adaptive Network Hardening** blade within the Azure portal. To review recommendations,  in **Adaptive Network Hardening**, select **Microsoft Defender for Cloud**, and then beneath **RESOURCE SECURITY HYGIENE**, select **Networking**. In the **Networking** blade, on the **Overview** tab, you can review the recommendations.
 
 When you select **Adaptive Network Hardening** in the Azure portal, VMs are displayed on one of three tabs, as depicted in the graphic.
 
@@ -32,27 +26,17 @@ When you select **Adaptive Network Hardening** in the Azure portal, VMs are disp
 - **Healthy resources**. These are VMs with no alerts or recommendations.
 - **Not applicable resources**. VMs that you cannot run Adaptive Network Hardening against display on this tab. Reasons VMs might not be able to run Adaptive Network Hardening are:
   - VMs are Classic VMs, and only Azure Resource Manager VMs are supported.
-  - Not enough data is available. To generate accurate traffic hardening recommendations, Security Center requires at least 30 days of traffic data.
-  - The VM is not protected by Azure Security Center standard: Only VMs that are set to Security Center's Standard pricing tier are eligible for this feature.
+  - Not enough data is available. To generate accurate traffic hardening recommendations, Microsoft Defender for Cloud requires at least 30 days of traffic data.
+  - The VM is not protected by Microsoft Defender for Cloud standard: Only VMs that are set to Microsoft Defender for Cloud's Standard pricing tier are eligible for this feature.
 
 > [!NOTE] 
-> You can review Security Center pricing at [Security Center pricing](https://aka.ms/pricing-details-security-center?azure-portal=true).
+> You can review Microsoft Defender for Cloud pricing at [Microsoft Defender for Cloud pricing](https://aka.ms/pricing-details-security-center?azure-portal=true).
 
-![A screenshot of the Azure portal. The administrator has selected the Healthy resources tab and 6 healthy resources are displayed.](../media/m19-unhealthy-resources.png)
-
-From the list of unhealthy VMs, you can select a specific VM and review the recommended hardening rules.
-
-[![A screenshot of the Azure portal, Manage Adaptive Network Hardening resources blade. The administrator has selected the Healthy resources tab and selected a specific VM. The recommended rules are displayed for review.](../media/m19-adaptive-network-hardening-recommendation-rules.png)](../media/m19-adaptive-network-hardening-recommendation-rules.png#lightbox)
-
-You can also review the security alerts.
-
-[![A screenshot of the Azure portal. The administrator has selected the Unhealthy resources tab and selected a specific virtual machine. Two alerts are displayed for review.](../media/m19-hardening-alerts.png)](../media/m19-hardening-alerts.png#lightbox)
+From the list of unhealthy VMs, you can select a specific VM and review the recommended hardening rules. You can also review the security alerts.
 
 ## Applying Adaptive Network Hardening recommendations
 
 Having reviewed the recommended rules and alerts, you can choose whether to modify those rules. Otherwise, simply select the rule(s) you want to apply, and then select **Enforce**.
 
-![A screenshot of the Rules tab. The administrator has selected two rules to apply.](../media/m19-enforce-hard-rule-2.png)
-
 > [!NOTE] 
-> To modify a rule, use the instructions at [Adaptive Network Hardening in Azure Security Center, Modify a rule](https://aka.ms/modify-a-rule?azure-portal=true).
+> To modify a rule, use the instructions at [Adaptive Network Hardening in Microsoft Defender for Cloud, Modify a rule](https://aka.ms/modify-a-rule?azure-portal=true).

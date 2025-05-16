@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.migrate-vcore-based-azure-cosmos-db-mongodb.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 11/24/2024
   author: wwlpublish
@@ -59,4 +57,4 @@ quiz:
     - content: "Limiting the use of Spark SQL."
       isCorrect: false
       explanation: "Incorrect. The use of Spark SQL isn't the primary method of optimization for migration performance."
-
+

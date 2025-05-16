@@ -2,8 +2,6 @@
 uid: learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.create-resource-group-azure-portal
 title: Azure resource group
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Azure resource group
   description: "Azure resource group"
   ms.date: 06/12/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-create-resource-group-azure-portal.md)]
+  [!include[](includes/2-create-resource-group-azure-portal.md)]

@@ -3,18 +3,20 @@ The Azure Activity Log is a subscription log that provides insight into subscrip
 > [!IMPORTANT]
 > Prerequisites require your user to be assigned the owner role on the relevant subscription.
 
-To deploy the *Azure Activity* connector, perform the following steps:
+## Install the solution
 
-1. In the *Microsoft Sentinel* left menu, scroll down to **Content Management** and select **Content Hub**.
+Start by installing the solution that contains the data connector. 
 
-1. In the *Content Hub* page, type *Azure Activity* into the *Search* form, and select the **Azure Activity** solution.
+1. For Microsoft Sentinel in the Azure portal, under **Content management**, select **Content hub**. <br>For Microsoft Sentinel in the Defender portal, select **Microsoft Sentinel** > **Content management** > **Content hub**.
+1. Search for and select **Azure Activity**.
+1. On the right-hand side pane, select **Install**.
+ 
+## Configure the data connector
 
-1. In the **Azure Activity** solution details pane, select **Install**.
+After the solution is installed, connect the data connector.
 
-1. In the center *Content name* column, select the **Azure Activity** Data connector.
-
-   > [!NOTE]
-   > This solution installs these Content types: 12 Analytic rules, 14 Hunting queries, 1 Workbook, and the Azure Activity Data connector.
+1. In the Microsoft Sentinel left navigation menu expand **Configuration**,  and select **Data connectors**.
+1. Select the **Azure Activity** Data connector.
 
 1. Select **Open connector page**.
 

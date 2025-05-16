@@ -4,7 +4,7 @@
 ])
 param environmentName string
 
-resource auditingSettings 'Microsoft.Sql/servers/auditingSettings@2023-08-01-preview' = if (environmentName == 'Production') {
+resource auditingSettings 'Microsoft.Sql/servers/auditingSettings@2024-05-01-preview' = if (environmentName == 'Production') {
   parent: server
   name: 'default'
   properties: {

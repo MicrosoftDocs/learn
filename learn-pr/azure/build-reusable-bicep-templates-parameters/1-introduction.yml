@@ -2,8 +2,6 @@
 uid: learn.azure.build-reusable-bicep-templates-parameters.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: introduction
   title: Introduction
   description: |
@@ -11,7 +9,7 @@ metadata:
     You'll learn about parameter decorators, which make your parameters easy to understand and work with.
     You'll also learn about the different ways that you can provide parameter values and how to protect these values when you're working with secure information.
 
-  ms.date: 09/26/2024
+  ms.date: 01/31/2025
   author: mumian
   ms.author: jgao
   ms.topic: unit
@@ -20,4 +18,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-
+

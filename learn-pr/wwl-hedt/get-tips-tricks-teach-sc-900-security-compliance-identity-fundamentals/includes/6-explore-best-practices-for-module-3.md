@@ -13,7 +13,7 @@ This module consists of four lessons:
 - Lesson 3 – Describe security capabilities of Microsoft Sentinel
 - Lesson 4 – Describe threat protection with Microsoft Defender XDR
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWXeRx]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=96f991ae-6909-4fae-9f79-7e56df2384cf]  
 
 Module 3 Tips and Tricks
 

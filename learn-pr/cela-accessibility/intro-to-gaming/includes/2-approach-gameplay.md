@@ -14,7 +14,7 @@ In this unit, you're introduced to basic gaming and disability concepts. You als
 
 The following video introduces basic concepts about gaming and disability. It introduces ways to approach the question of "how games are played" within the context of accessibility. An understanding of this approach helps you establish the foundation you need to begin your game accessibility journey.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWOfIK]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=a3d78e64-ada3-461a-a766-204eccb81725]
 
 ## Solve for one, extend to many
 

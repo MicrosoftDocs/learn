@@ -1,15 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery.6-summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
-  ms.date: 05/25/2023
+  ms.date: 01/25/2025
   author: ankitaduttaMSFT
   ms.author: ankitadutta
   ms.topic: unit
 title: Summary
 durationInMinutes: 2
 content: |
-  [!include[](includes/6-summary.md)]
+  [!include[](includes/6-summary.md)]

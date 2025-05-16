@@ -1,6 +1,3 @@
-
-
-
 Name resolution is a critical part of any network infrastructure. Contoso currently maintains an on-premises DNS solution to manage internal name resolution. Internet-facing DNS servers are deployed in the Contoso perimeter network to resolve internet name queries. It's important that any Azure networking components can provide the necessary name resolution elements.
 
 When Contoso IT staff deploys resources in Azure on VNets, these resources need to resolve FQDNs to private, internal IP addresses. There are three possible methods they could use:

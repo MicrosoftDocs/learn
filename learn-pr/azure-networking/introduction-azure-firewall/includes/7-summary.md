@@ -10,11 +10,11 @@ With your knowledge of Azure Firewall's features, rules, and deployment scenario
 
 Here are some links to more information about Azure Firewall and Azure Firewall Manager:
 
-- [Azure Firewall](https://azure.microsoft.com//services/azure-firewall/)
-- [Azure Firewall pricing](https://azure.microsoft.com/pricing/details/azure-firewall/)
-- [FQDN tags overview](/azure/firewall/fqdn-tags)
-- [Azure service tags overview](/azure/virtual-network/service-tags-overview#available-service-tags)
-- [Azure Firewall threat intelligence-based filtering](/azure/firewall/threat-intel)
+- [Azure Firewall](https://azure.microsoft.com/products/azure-firewall/?azure-portal=true)
+- [Azure Firewall pricing](https://azure.microsoft.com/pricing/details/azure-firewall/?azure-portal=true)
+- [FQDN tags overview](/azure/firewall/fqdn-tags?azure-portal=true)
+- [Azure service tags overview](/azure/virtual-network/service-tags-overview#available-service-tags?azure-portal=true)
+- [Azure Firewall threat intelligence-based filtering](/azure/firewall/threat-intel?azure-portal=true)
 - [Tutorial: Deploy and configure Azure Firewall using the Azure portal](/azure/firewall/tutorial-firewall-deploy-portal?azure-portal=true)
-- [Azure Firewall Manager deployment overview](/azure/firewall-manager/deployment-overview)
-- [Azure Firewall Premium features](/azure/firewall/premium-features)
+- [Azure Firewall Manager deployment overview](/azure/firewall-manager/deployment-overview?azure-portal=true)
+- [Azure Firewall Premium features](/azure/firewall/premium-features?azure-portal=true)

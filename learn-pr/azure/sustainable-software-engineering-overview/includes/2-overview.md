@@ -1,4 +1,4 @@
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4IlK6]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=5ccbd8f9-2088-4fe2-a233-9cde07528bdd]
 _This video's content is still valid, but the principle numbers might differ due to the Green Software Foundation's principle renumbering._
 
 ## Six principles of Sustainable Software Engineering

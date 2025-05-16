@@ -1,8 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-security-concepts-methodologies.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  hidden_question_numbers: ["6E8CE524_67","6E8CE524_83","6E8CE524_104","6E8CE524_108","6E8CE524_136"]
+  ai_generated_module_assessment: true
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 09/23/2024
   author: wwlpublish

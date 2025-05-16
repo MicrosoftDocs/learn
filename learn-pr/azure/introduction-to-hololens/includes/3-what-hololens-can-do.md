@@ -42,7 +42,7 @@ Companies in the aerospace industry are using HoloLens 2 to design and prototype
 
 Most manufacturers reduce human error by approximately 30% with HoloLens 2. Lockheed Martin has had an even greater return on investment. On one key component, the company saved $38 for each of the 57,000 fasteners in the spacecraft.  
   
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWR6ch]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7bb6ff87-cd89-42f5-b32e-dad278dec8a7]
 
 #### Engineering and construction
 

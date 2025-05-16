@@ -30,7 +30,7 @@ For these reasons, large companies such as [SAP, Hewlett Packard, and Microsoft 
 
 ## People of differing ability
 
-One in four adults in the US has some type of disability, which includes challenges with [mobility (12 percent), cognition (12 percent), hearing (6 percent), and vision (5 percent)](https://www.cdc.gov/ncbddd/disabilityandhealth/infographic-disability-impacts-all.html?azure-portal=true).
+One in four adults in the US has some type of disability, which includes challenges with [mobility (12 percent), cognition (12 percent), hearing (6 percent), and vision (5 percent)](https://www.cdc.gov/disability-and-health/articles-documents/disability-impacts-all-of-us-infographic.html?azure-portal=true).
 
 The inclusion of people with disabilities in product development has been shown to greatly improve companies' success in building products that need to be accessible by those with disabilities. Building accessible products is becoming not just desirable, but mandated in many settings. It's much easier to achieve if your team includes people with a disability.
 

@@ -34,13 +34,17 @@ You reviewed how Azure Monitor uses Logs and Metrics. Now consider how to implem
 
 - **Consider data sources and data access**. Identify what Tailwind Traders resources to monitor. Azure Monitor collects data automatically from a range of components, and the data is accessed in various ways:
 
-   :::image type="content" source="../media/data-sources.png" alt-text="Diagram that shows how Azure Monitor collects data from a range of sources." border="false":::
+   - **Windows events**. Information sent to the Windows event logging system, including sysmon events.	
 
-   - Application data relates to your custom app code.
-   - Operating system data is from the Windows or Linux virtual machines that host your app.
-   - Azure resource data is from the operations of an Azure resource, such as a web app or a load balancer.
-   - Azure subscription data is about your subscription, including information about Azure health and availability.
-   - Azure tenant data describes your Azure organization-level services, such as Microsoft Entra ID.
+   - **Performance counters**. Numerical values measuring performance of different aspects of operating system and workloads.	
+
+   - **Syslog**. Information sent to the Linux event logging system.	
+
+   - **Text Log**. Information sent to a text log file on a local disk.	
+
+   - **JSON log**. Information sent to a JSON log file on a local disk.	
+
+   - **IIS logs**. Internet Information Service (IIS) logs from the local disk of Windows machines.
 
 - **Consider queries on Logs data**. Write log queries to analyze your collected data for Tailwind Traders. For more information about log queries, see [Log queries in Azure Monitor](/azure/azure-monitor/logs/log-query-overview).
 

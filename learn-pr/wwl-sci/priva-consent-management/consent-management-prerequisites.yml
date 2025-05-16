@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.priva-consent-management.consent-management-prerequisites
+title: Configure prerequisites for consent management
+metadata:
+  title: Configure prerequisites for consent management
+  description: "Configure prerequisites for consent management"
+  ms.date: 01/24/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/consent-management-prerequisites.md)]

@@ -1,4 +1,4 @@
-SAP BTP includes several built-in analytics rules for identity management and low-code application development scenarios. These rules use the Trust and Authorization Provider and Business Application Studio (BAS) event sources in BTP.
+SAP BTP includes several built-in analytics rules for identity management and low-code application development scenarios. These rules use the Trust and Authorization Provider and Business Application Studio (BAS) event sources in SAP BTP.
 
 | Rule name | Description | Source action | Tactics |
 | --------- | --------- | --------- | --------- |

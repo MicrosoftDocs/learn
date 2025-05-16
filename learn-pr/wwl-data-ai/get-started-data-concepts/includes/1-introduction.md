@@ -1,4 +1,4 @@
-Data is generated as a by-product of our digital lifestyles and its importance has never been greater, or more exciting. Most areas of our modern lives have been touched by technology, and data is collected and stored in ever-increasing quantities. Once stored, we can begin to organize and analyze the data, and this process is where data science can help us.
+Data is generated as a by-product of our digital lifestyles and its importance has never been greater, or more exciting. Most areas of our modern lives have been touched by technology, and data is collected and stored in ever-increasing quantities. Once stored, we can begin to organize and analyze the data, and this process is where data science can help us. 
 
 Collecting data enables us to measure critical goals or milestones, and make predictions about the future. However, data is typically stored in a raw format that's not clear to read or to derive much knowledge from, especially when there are thousands or even millions of rows. When the techniques of data analysis are applied, data becomes more readable and enlightening.
   

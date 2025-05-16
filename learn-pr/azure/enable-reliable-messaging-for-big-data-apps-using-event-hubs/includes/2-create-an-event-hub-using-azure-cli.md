@@ -1,6 +1,6 @@
 Your team makes a decision to use the capabilities of Azure Event Hubs to manage and process the increasing transaction volumes coming through your system.
 
-An event hub is an Azure resource, so your first step is to create a new hub in Azure, and configure it to meet the specific requirements of your apps.
+An event hub is an Azure resource, so your first step is to create a new event hub in Azure, and configure it to meet the specific requirements of your apps.
 
 ## What is Azure Event Hubs?
 
@@ -33,7 +33,7 @@ An event hub **consumer group** represents a specific view of an event hub data 
 
 ### Pricing
 
-There are four pricing tiers for Azure Event Hubs: Basic, Standard, Premium, and Dedicated. The tiers differ in terms of supported connections, the number of available consumer groups, and throughput. When using Azure CLI to create an Event Hubs namespace, if you don't specify a pricing tier, the default **Standard** (20 Consumer groups, 1000 Brokered connections) is assigned. For the main differences between these tiers, see [Azure Event Hubs - Pricing](https://azure.microsoft.com/pricing/details/event-hubs/).
+There are four pricing tiers for Azure Event Hubs: Basic, Standard, Premium, and Dedicated. The tiers differ in terms of supported connections, the number of available consumer groups, and throughput. When using Azure CLI to create an Event Hubs namespace, if you don't specify a pricing tier, the default **Standard** (20 Consumer groups, 1,000 Brokered connections) is assigned. For the main differences between these tiers, see [Azure Event Hubs - Pricing](https://azure.microsoft.com/pricing/details/event-hubs/).
 
 ## Create and configure an event hub
 
@@ -65,7 +65,7 @@ Keep the following aspects in mind:
 
 ### Azure CLI commands to create an Event Hubs namespace
 
-To create a new Event Hubs namespace, use `az eventhubs namespace` commands. Here's a brief description of the commands we use in the exercise.
+To create a new Event Hubs namespace, use [`az eventhubs namespace`](/cli/azure/eventhubs/namespace#az-eventhubs-namespace-create) commands. Here's a brief description of the commands we use in the exercise.
 
 | Command | Description |
 |---------|-------------|
@@ -89,7 +89,7 @@ You can also optionally configure an event hub to stream data to Azure Blob Stor
 
 ### Azure CLI commands to create an event hub
 
-To create a new event hub with the Azure CLI, you run the `az eventhubs eventhub` command set. Here's a brief description of the commands we use in the exercise.
+To create a new event hub with the Azure CLI, you run the [`az eventhubs eventhub`](/cli/azure/eventhubs/eventhub) command set. Here's a brief description of the commands we use in the exercise.
 
 | Command | Description |
 |---------|-------------|

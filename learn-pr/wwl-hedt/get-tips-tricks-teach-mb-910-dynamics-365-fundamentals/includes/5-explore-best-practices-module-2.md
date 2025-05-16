@@ -11,7 +11,7 @@ This module consists of two lessons:
 - Lesson 1 – Explore Dynamics 365 Marketing
 - Lesson 2 – Explore additional marketing capabilities and apps
  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5e3aL]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=da8275c4-81ea-4240-baf0-8727043ea388]  
 
 Module 2 Tips and Tricks
 

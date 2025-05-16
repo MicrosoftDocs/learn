@@ -3,7 +3,7 @@ AI tools for developers have become increasingly popular in recent years. Compan
 To help align AI tools with development tasks and projects, this unit examines the following resources:
 
 - Azure AI services.
-- Azure AI Studio.
+- Azure AI Foundry portal.
 - AI Builder.
 - Copilot Studio.
 - Semantic Kernel SDK.
@@ -25,15 +25,15 @@ Azure AI services are intended for:
 - Organizations that need to quickly deploy AI-powered solutions without investing in specialized AI expertise.
 - Projects that require common AI capabilities like speech recognition, natural language processing, or computer vision.
 
-## Azure AI Studio
+## Azure AI Foundry portal
 
-Azure AI Studio is a web-based platform that allows developers to build, train, and deploy machine learning models using a visual interface. It provides a range of tools and templates to help developers create AI models without needing to write code. Azure AI Studio supports popular machine learning frameworks like TensorFlow and PyTorch, making it easy to work with existing models.
+Azure AI Foundry portal is a web-based platform that allows developers to build, train, and deploy machine learning models using a visual interface. It provides a range of tools and templates to help developers create AI models without needing to write code. Azure AI Foundry portal supports popular machine learning frameworks like TensorFlow and PyTorch, making it easy to work with existing models.
 
-Azure AI Studio also includes features for data preparation, model training, and model evaluation. Developers can use drag-and-drop tools to create data pipelines, experiment with different algorithms, and monitor model performance. Once a model is trained, it can be deployed as a web service or integrated into an existing application.
+Azure AI Foundry portal also includes features for data preparation, model training, and model evaluation. Developers can use drag-and-drop tools to create data pipelines, experiment with different algorithms, and monitor model performance. Once a model is trained, it can be deployed as a web service or integrated into an existing application.
 
-Azure AI Studio is ideal for developers who want to experiment with machine learning models without needing to write code or manage infrastructure. It provides a user-friendly interface for building and deploying AI models, making it accessible to a wide range of developers.
+Azure AI Foundry portal is ideal for developers who want to experiment with machine learning models without needing to write code or manage infrastructure. It provides a user-friendly interface for building and deploying AI models, making it accessible to a wide range of developers.
 
-Azure AI Studio is intended for:
+Azure AI Foundry portal is intended for:
 
 - Developers who want to experiment with machine learning models without needing to write code.
 - Data scientists who need a platform for building, training, and deploying AI models.

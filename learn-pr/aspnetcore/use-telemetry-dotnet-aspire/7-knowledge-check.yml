@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.use-telemetry-dotnet-aspire.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: "In this unit, you'll answer questions about telemetry in .NET Aspire to check the knowledge you've gained in this module."
   author: camsoper
   ms.author: casoper

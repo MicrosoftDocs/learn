@@ -1,8 +1,8 @@
 As system administrator at Contoso, you must ensure that any services hosted in Microsoft Azure with IaaS meet the company's stringent security requirements. To properly secure network traffic, you can set up NSGs.
 
-## Network security groups 
+## Network security groups
 
-An NSG filters inbound and outbound network traffic. Configuring the security rules for a NSG allows you to control network traffic by allowing or denying specific traffic types.
+An NSG filters inbound and outbound network traffic. Configuring the security rules for an NSG allows you to control network traffic by allowing or denying specific traffic types.
 
 You can assign an NSG to:
 
@@ -138,7 +138,6 @@ You can use ASGs to:
 > If an NSG applies to VMs, then security rules for the ASG also automatically apply to VMs and allow full network connectivity between VMs in the sample ASG.
 
 Without ASGs, you'd need to create a separate rule for each VM. For example, Contoso has a number of front-end servers in a VNet. IT staff decide to implement NSGs and ASGs to secure the network resources, as depicted in the following graphic.
-
 
 ![The graphic depicts a collection of web servers is protected by an NSG called **ERP - SERVERS-NSG**, as is a collection of SQL servers. This NSG has two rules: one which filters web traffic to port 80 and 8080, and a second that filters SQL traffic on port 1433. The web servers are protected by an ASG called **WEB-SVR-ASG** assigned to their NICs. The SQL servers are protected by an ASG called **SQL-SVR-ASG** which is assigned to their NICs. All resources are connected to the same VNet.](../media/m19-application-security-group.png) 
 

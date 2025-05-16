@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.manage-azure-private-5g-core.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Checks that you successfully learned the routine tasks for managing the Azure Private 5G Core service.
   ms.date: 07/29/2024
   author: lnyswonger
@@ -68,4 +66,4 @@ quiz:
       explanation: "Try again. Upgrading the AKS doesn't automatically upgrade the packet core or the ASE."
     - content: "Upgrade the ASE if necessary, and then upgrade the packet core through the **Packet Core Control Plane** resource."
       isCorrect: true
-      explanation: "Correct. You can use the **Packet Core Control Plane** resource to upgrade the relevant packet core instance."
+      explanation: "Correct. You can use the **Packet Core Control Plane** resource to upgrade the relevant packet core instance."

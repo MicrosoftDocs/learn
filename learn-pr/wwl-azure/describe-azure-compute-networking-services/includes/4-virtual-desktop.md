@@ -2,7 +2,7 @@ Another type of virtual machine is the Azure Virtual Desktop. Azure Virtual Desk
 
 The following video gives you an overview of Azure Virtual Desktop:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LRpC]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=04978efb-d8e5-4352-bcb4-45399a988a69]
 
 ## Enhance security
 

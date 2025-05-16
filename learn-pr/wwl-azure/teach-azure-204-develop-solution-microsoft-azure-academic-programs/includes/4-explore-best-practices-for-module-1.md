@@ -14,7 +14,7 @@ This module consists of four lessons:
 - Lesson 3 – Scale Apps in Azure App Service 
 - Lesson 4 – Explore Azure App Service Deployment Slots 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5apo3]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=46ca98f6-49cf-41ec-a9cb-d8f2cf5cd179]
 
 Module 1 Tips and Tricks 
 

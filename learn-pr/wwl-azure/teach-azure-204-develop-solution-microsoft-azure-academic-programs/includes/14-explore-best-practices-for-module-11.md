@@ -11,7 +11,7 @@ This module consists of one lesson:
 
 - Lesson 1 – Monitor app performance 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5aCth]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=5a7a90da-8031-402a-b6f1-094cf79399da]
 
 Module 11 Tips and Tricks 
 

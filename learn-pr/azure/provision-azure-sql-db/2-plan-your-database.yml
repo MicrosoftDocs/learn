@@ -2,15 +2,13 @@
 uid: learn.provision-azure-sql-db.2-plan-your-database
 title: Plan your Azure SQL database
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Plan your Azure SQL database
   description: Plan your Azure SQL database
-  ms.date: 10/17/2023
+  ms.date: 01/17/2025
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
   ms.topic: unit
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-plan-your-database.md)]
+  [!include[](includes/2-plan-your-database.md)]

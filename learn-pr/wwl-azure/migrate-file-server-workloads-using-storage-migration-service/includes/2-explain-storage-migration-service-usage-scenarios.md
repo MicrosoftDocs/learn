@@ -12,10 +12,7 @@ Storage Migration Service can also migrate local user accounts. This can be usef
 The general process for using Storage Migration Service is:
 
 1. Inventory source servers
-
 1. Transfer data
-
 1. Cut over identities
 
 After cutting over, the source servers are still functional but aren't accessible to users and apps at the original names and IP addresses. The files are still available to the administrators if required, and you can decommission the source servers when you're ready.
-

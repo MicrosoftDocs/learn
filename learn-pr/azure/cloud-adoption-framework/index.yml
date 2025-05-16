@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.azure.cloud-adoption-framework
+metadata:
+  title: Introduction to the Microsoft Cloud Adoption Framework
+  description: "This module covers the basics of how to use the Cloud Adoption Framework to help you align your strategy for business, people, and technology."
+  ms.date: 02/06/2025
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.service: caf
+  ms.topic: module
+title: Introduction to the Microsoft Cloud Adoption Framework
+summary: This module covers the basics of how to use the Cloud Adoption Framework, which is a set of documentation, implementation guidance, best practices, and tools that help you align your strategy for business, people, and technology.
+abstract: |
+  In this module, you will:
+  - Learn how to use the Cloud Adoption Framework to assess your current environment and develop a plan to adopt the cloud.
+  - Determine your motivations for cloud adoption, and define objectives to help you successfully reach your goals.
+  - Identify gaps in your strategy that you need to address, such as adding technology, training your team, or restructuring your environment.
+prerequisites: |
+  None
+iconUrl: /learn/achievements/microsoft-cloud-adoption-framework-for-azure.svg
+levels:
+- beginner
+roles:
+- business-user
+products:
+- azure
+subjects:
+- cloud-computing
+- knowledge-management
+units:
+- learn.azure.cloud-adoption-framework.introduction
+- learn.azure.cloud-adoption-framework.strategy
+- learn.azure.cloud-adoption-framework.plan
+- learn.azure.cloud-adoption-framework.ready
+- learn.azure.cloud-adoption-framework.migrate
+- learn.azure.cloud-adoption-framework.innovate
+- learn.azure.cloud-adoption-framework.govern
+- learn.azure.cloud-adoption-framework.manage
+- learn.azure.cloud-adoption-framework.secure
+- learn.azure.cloud-adoption-framework.knowledge-check
+- learn.azure.cloud-adoption-framework.summary
+badge:
+  uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.badge

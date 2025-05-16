@@ -1,4 +1,4 @@
-To help you understand basic ways to troubleshoot container instances, perform some basic operations like:
+To help you understand basic ways to troubleshoot container instances, you can perform some basic operations like:
 
 * Pulling container logs
 * Viewing container events
@@ -176,4 +176,6 @@ In this module, you created resources using your Azure subscription. You should 
 
 1. In the **Overview** tab of the resource group, select **Delete resource group**.
 
-1. A new dialog box opens. Enter the name of the resource group again, and select **Delete**. All of the resources we created in this module are deleted.
+1. A new dialog box opens. Enter the name of the resource group and select **Delete**.
+
+1. Select **Delete** again to confirm deletion. All of the resources we created in this module are deleted.

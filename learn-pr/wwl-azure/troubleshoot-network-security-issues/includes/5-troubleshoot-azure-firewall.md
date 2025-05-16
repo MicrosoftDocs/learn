@@ -46,7 +46,7 @@ You can view and analyze activity log data by using any of the following methods
 
 Watch this video to learn more about the monitoring abilities of Azure Firewall:
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RWI4nn?postJsllMsg=true]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=8e02f36d-855d-4bb9-ba52-277106324e85]
 
 ### View and analyze the network and application rule logs
 

@@ -4,7 +4,7 @@ You can grant access to Azure Key Vault using either role-based access control (
 
 A Key Vault access policy determines whether a user, application, or group, can perform operations on Key Vault secrets, keys, and certificates. You can assign access policies using the Azure portal, the Azure CLI, or Azure PowerShell. Key vault supports up to 1024 access policy entries, with each entry granting a distinct set of permissions to a particular security principal. Because of this limitation, we recommend assigning access policies to groups of users, where possible, rather than individual users. Using groups makes it much easier to manage permissions for multiple people in your organization.
 
-:::image type="content" source="../media/key-vault-access-policy-56f5c1df.png" alt-text="Screenshot of Key Vault access policy options that can be enabled and assigned.":::
+:::image type="content" source="../media/key-vault-access-policy-56f5c1df-56d47c52.png" alt-text="Screenshot of Key Vault access policy options that can be enabled and assigned.":::
 
 
 1.  Open **Key Vault** in the Azure portal.
@@ -13,7 +13,7 @@ A Key Vault access policy determines whether a user, application, or group, can 
 4.  Use the dialog to assign the specific permission you want service principal to have.
     
     > [!NOTE]
-    > Service principal represents the user, group, or application you're assigning the policy to.<br>
+    > Service principal represents the user, group, or application you're assigning the policy to.
 5.  Select **Add** to save and apply the access policy.
 
 You can complete this activity using a saved template, PowerShell, CLI, and the Azure portal.
@@ -26,11 +26,11 @@ There are two actions required to use roles to access data within your Key Vault
 
 1.  Enable role-based access control in your key vault.
     
-    :::image type="content" source="../media/key-vault-role-based-access-fa8cd616.png" alt-text="Screenshot of the key vault access policies screen, with the allow role-based access control selected.":::
+    :::image type="content" source="../media/key-vault-role-based-access-fa8cd616-42aa1d6b.png" alt-text="Screenshot of the key vault access policies screen, with the allow role-based access control selected.":::
     
 2.  Open key vault **Identity and Access (IAM)** from the menu. Then assign the role as you've done in other scenarios; like managed identity.
     
-    :::image type="content" source="../media/key-vault-assign-role-589cce50.png" alt-text="Screenshot of the key vault management screen with the Identity and Access (IAM) screen open.  Ready to assign a role.":::
+    :::image type="content" source="../media/key-vault-assign-role-589cce50-5e6e502d.png" alt-text="Screenshot of the key vault management screen with the Identity and Access (IAM) screen open.  Ready to assign a role.":::
     
 
 | **Built-in role**                        | **Description**                                                                                                                                                                 |

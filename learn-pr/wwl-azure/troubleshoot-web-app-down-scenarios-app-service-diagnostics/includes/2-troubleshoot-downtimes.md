@@ -11,7 +11,7 @@ App Service Diagnostics monitors the functionality of the custom apps you create
 Web App Down is a troubleshooting feature within App Service Diagnostics that runs resource specific checks on your app service to identify issues causing your app service to experience downtimes. To locate Web App Down, first navigate to the overview page of your App Service resource. Then, click on Diagnose and Solve Problems found in the left navigation menu. This will open App Service Diagnostics. Immediately, you'll be presented with different troubleshooting categories to choose from. From here, navigate to ‘Availability and Performance’ where you'll find the Web App Down feature.
 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4QU13]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=18282365-174c-4f34-8620-c62a834ab4f3]
 
 Once you're there, you can monitor your application availability and the platform availability. This will help you determine whether the issue you're experiencing is due to your application or the platform. you'll also notice several diagnostic checks have been run on your application to call out any issues. These checks are authored by domain experts and point out issues specific to your App Service in the form of insights. 
 
@@ -38,4 +38,3 @@ Application Crashes is a troubleshooting feature within App Service Diagnostics.
 Once you're there, you'll see an insight indicating the status of your application regarding application crashes in the last 24 hours. In this scenario, the issue is related to an application crash with the exception code 0xE0434352&#8212;CLR Exception. Also, paired with this information, you can see the 24-hour timeline on application crash events, helping you identify the exact time when a crash event occurred. You can also check more details on unhandled ASP.NET Exceptions table. However, if this isn't enough information, you can enable crash monitoring to capture memory dumps at the time of your application crash to collect more information to root cause your unhandled exceptions.
 
 :::image type="content" source="../media/module-troubleshoot-web-app-down-scenario-with-app-service-diagnostics-22-02.png" alt-text="Screenshot of an application crash event with exception code 0xE0434352 - CLR Exception detected.":::
-

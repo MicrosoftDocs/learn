@@ -1,0 +1,36 @@
+### YamlMime:LearningPath
+uid: learn.wwl.implement-classes-properties-and-methods
+metadata:
+  title: Implement classes, properties, and methods
+  description: Learn how to&nbsp;create classes and objects in C# and how to securely access and manage encapsulated data using class properties and methods.
+  ms.date: 02/11/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: learning-path
+title: Implement classes, properties, and methods
+prerequisites: |
+  -   Access to a Visual Studio Code environment that's configured with the C# Dev Kit extension.
+  -   The ability to develop C# console apps that implement business logic using iteration statements, selection statements, and custom methods.
+  -   The ability to perform basic C# code debugging and exception handling in a Visual Studio Code environment.
+summary: |
+  Learn how to&nbsp;create classes and objects in C# and how to securely access and manage encapsulated data using class properties and methods.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- dotnet
+- vs-code
+subjects:
+- app-development
+- custom-app-development
+modules:
+- learn.wwl.get-started-classes-objects
+- learn.wwl.implement-class-properties-methods
+- learn.wwl.manage-class-implementations
+trophy:
+  uid: learn.wwl.implement-classes-properties-and-methods.trophy

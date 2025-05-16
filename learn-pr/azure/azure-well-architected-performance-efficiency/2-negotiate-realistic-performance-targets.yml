@@ -2,13 +2,11 @@
 uid: learn.azure-well-architected-performance-efficiency.negotiate-realistic-performance-targets
 title: Negotiate realistic performance targets
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Negotiate realistic performance targets
   description: Learn how to define realistic performance targets for your workload.
   ms.date: 12/13/2023
-  author: claytonsiemens77
-  ms.author: csiemens
+  author: PageWriter-MSFT
+  ms.author: prwilk
   ms.topic: unit
 durationInMinutes: 15
 content: |
@@ -52,4 +50,3 @@ quiz:
     - content: 'False.'
       isCorrect: false
       explanation: 'Incorrect. Identifying flows and their performance targets is a more effective way to ensure that critical functions of the workload are designed appropriately.'
-

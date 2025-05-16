@@ -29,7 +29,7 @@ class User
 
 By using an object-relational mapper, you can take this initial `User` class and create a database table called `User` that has columns for the `Id` and `Username` fields in this class.
 
-SQLite-net is shipped as a NuGet package. You must add the **sqlite-net-pcl** package to your apps to use it. Use the NuGet package manager in Visual Studio. Additionally, if you want to run an app on Android, you must also add the **SQLitePCLRaw.provider.dynamic_cdecl** package.
+SQLite-net is shipped as a NuGet package. You must add the **sqlite-net-pcl** package to your apps to use it.
 
 ## How to connect to a SQLite database
 

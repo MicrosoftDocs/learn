@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.insights-sap-use-unified-analytics-ai-platform
+metadata:
+  title: Insights for SAP using unified analytics and AI platform
+  description: "In this module, you learn about accelerating business transformation with Microsoft AI and SAP integration, enhancing business processes with Microsoft Copilot Studio, Power Platform, and SAP."
+  ms.date: 03/20/2025
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: module
+  ms.service: sap-on-azure
+  ai-usage: human-only
+title: Insights for SAP using unified analytics and AI platform
+summary: In this module, you learn about accelerating business transformation with Microsoft AI and SAP integration, enhancing business processes with Microsoft Copilot Studio, Power Platform, and SAP.
+abstract: |
+  After completing this module, you’ll be able to:
+
+  -   Understand the partnership between Microsoft and SAP in integrating AI solutions into their platforms.
+
+  -   Recognize how Microsoft 365 Copilot and SAP Joule can enhance user productivity.
+
+  -   Identify how Azure OpenAI Service can be used to build custom AI capabilities.
+
+  -   Understand how Microsoft Security Copilot can enhance security in SAP systems.
+
+  -   Recognize the role of Microsoft Copilot Studio and Power Platform in transforming business processes.
+prerequisites: |
+  -   Experience using the Azure portal to create resources.
+
+  -   Basic knowledge of security concepts like identities, permissions, and encryption.
+
+  -   Basic knowledge of networking concepts like virtual networks and subnetting.
+
+  -   Basic knowledge of SAP RISE, GROW, and native.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- devops-engineer
+products:
+- azure-sap
+units:
+- learn.wwl.insights-sap-use-unified-analytics-ai-platform.introduction
+- learn.wwl.insights-sap-use-unified-analytics-ai-platform.unlock-business-transformation-microsoft-ai-sap
+- learn.wwl.insights-sap-use-unified-analytics-ai-platform.streamline-sap-processes-power-platform
+- learn.wwl.insights-sap-use-unified-analytics-ai-platform.knowledge-check
+- learn.wwl.insights-sap-use-unified-analytics-ai-platform.summary
+badge:
+  uid: learn.wwl.insights-sap-use-unified-analytics-ai-platform.badge

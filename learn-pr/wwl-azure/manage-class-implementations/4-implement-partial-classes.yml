@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-class-implementations.implement-partial-classes
+title: Implement classes using partial classes
+metadata:
+  title: Implement classes using partial classes
+  description: "Implement classes using partial classes"
+  ms.date: 02/12/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 11
+content: |
+  [!include[](includes/4-implement-partial-classes.md)]

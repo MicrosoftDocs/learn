@@ -16,7 +16,7 @@
     az group create --name learn-acr-rg --location eastus
     ```
 
-1. Define an environment variable, *ACR_NAME*, to hold your container registry name using the following command. The name must be unique within Azure and contain 5-50 alphanumeric characters. For more information, see [Naming conventions for Azure resources](/azure/architecture/best-practices/naming-conventions?azure-portal=true).
+1. Define an environment variable, *ACR_NAME*, to hold your container registry name using the following command. The name must be unique within Azure and contain 5-50 alphanumeric characters. For more information, see [Develop your naming and tagging strategy for Azure resources](/azure/architecture/best-practices/naming-conventions?azure-portal=true).
 
     ```azurecli-interactive
     ACR_NAME=your-unique-acr-name

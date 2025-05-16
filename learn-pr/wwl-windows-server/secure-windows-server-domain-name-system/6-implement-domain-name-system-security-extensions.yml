@@ -4,7 +4,7 @@ title: Implement DNSSEC
 metadata:
   title: Implement DNSSEC
   description: "Implement DNSSEC"
-  ms.date: 12/12/2023
+  ms.date: 01/12/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
@@ -18,10 +18,10 @@ quiz:
     choices:
     - content: "In Group Policy"
       isCorrect: false
-      explanation: "That's incorrect. Group Policy is used to configure client settings."
+      explanation: "Incorrect. Group Policy is used to configure client settings."
     - content: "In the DNS console in the `Contoso.com` zone"
       isCorrect: false
-      explanation: "That's incorrect. The `Contoso.com` does contain DNSEC related records, but not the DNSKEY trust records."
+      explanation: "Incorrect. The `Contoso.com` does contain DNSEC related records, but not the DNSKEY trust records."
     - content: "In the DNS console in the Trust Points folder"
       isCorrect: true
-      explanation: "That's correct. This folder contains the DNSKEY trust records."
+      explanation: "Correct. This folder contains the DNSKEY trust records."

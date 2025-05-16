@@ -4,8 +4,7 @@ In this demonstration, you'll learn to:
 - Create a DNS record.
 - Test the name resolution.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4AWvC]
-
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=5cd009df-b0e6-4fe1-b184-24ee998fccb0]
 
 ## Next steps
 

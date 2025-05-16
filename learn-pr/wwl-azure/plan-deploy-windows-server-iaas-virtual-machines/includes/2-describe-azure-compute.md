@@ -14,7 +14,7 @@ Unlike with Azure Web Apps or Cloud Services, you can use custom operating syste
 When you run Azure VMs, you pay for their compute resources on a per-second basis. The pricing depends on the VM size, the license of the operating system and any additional licensed software installed on it, and the Azure region where the VM resides. A running VM continuously requires Azure compute resources. Therefore, to avoid charges for these resources, you should place VMs in the **Stopped (Deallocated)** state whenever you're not using them.
 
 > [!TIP]
-> When you stop a VM through the Azure portal rather than through the operating system, the VM will be placed in a **Stopped (Deallocated)** state. This means you will stop paying for the VM compute costs. Shutting down an Azure VM from within the operating system results in only a **Stopped** state, which continues to incur VM compute charges.
+> When you stop a VM through the Azure portal rather than through the operating system, the VM will be placed in a **Stopped (Deallocated)** state. This means you'll stop paying for the VM compute costs. Shutting down an Azure VM from within the operating system results in only a **Stopped** state, which continues to incur VM compute charges.
 
 > [!NOTE]
 > There are additional VM-related charges associated with the cost of Azure Storage hosting VM disk files. These charges apply regardless of the state of the VM.
@@ -30,16 +30,16 @@ Deploying VMs in Azure is different from deploying them in an on-premises Hyper-
 > [!NOTE]
 > A temporary disk of an Azure VM resides on the host where the VM runs. Its operating system and data disks reside in Azure Storage.
 
-Azure offers a wide range of VM sizes to accommodate nearly any custom requirement. In addition, at any point, you can switch between different configurations, if your current configuration does not violate the constraints of the desired configuration. For example, you might need to remove an extra virtual network adapter, or a data disk attached to your VM before you scale it down to a smaller size.
+Azure offers a wide range of VM sizes to accommodate nearly any custom requirement. In addition, at any point, you can switch between different configurations, if your current configuration doesn't violate the constraints of the desired configuration. For example, you might need to remove an extra virtual network adapter, or a data disk attached to your VM before you scale it down to a smaller size.
 
 > [!NOTE]
-> If you change a VM's size, you must restart it.
+> If you change a VM's size, you must restart it to apply the new size.
 
 In addition to size, a VM's performance and capabilities also depend on its tier. There are two tiers of Azure VMs: Basic and Standard.
 
 ## Basic tier
 
-You can choose the Basic tier VMs for any non-production workloads that don't require features such as load balancing, autoscaling, or high availability, and for which you are willing to tolerate disk input/output (I/O) in the range of 300 Input/Output Operations Per Second (IOPS) per disk. In addition, the Basic tier VMs don't qualify for any Service Level Agreements (SLAs) pertaining to availability.
+You can choose the Basic tier VMs for any nonproduction workloads that don't require features such as load balancing, autoscaling, or high availability, and for which you're willing to tolerate disk input/output (I/O) in the range of 300 Input/Output Operations Per Second (IOPS) per disk. In addition, the Basic tier VMs don't qualify for any Service Level Agreements (SLAs) pertaining to availability.
 
 > [!TIP]
 > Basic tier VMs are less expensive than the Standard tier VMs.

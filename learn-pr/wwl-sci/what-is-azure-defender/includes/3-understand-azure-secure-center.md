@@ -21,7 +21,7 @@ To help you protect yourself against these challenges, Microsoft Defender for Cl
 
 Because Defender for Cloud is natively part of Azure, PaaS services in Azure - including Service Fabric, SQL Database, SQL Managed Instance, and storage accounts - are monitored and protected by Defender for Cloud without necessitating any deployment.
 
-In addition, Defender for Cloud protects non-Azure servers and virtual machines in the cloud or on-premises, for both Windows and Linux servers, by installing the Log Analytics agent on them. Azure virtual machines are autoprovisioned in Microsoft Defender for Cloud.
+Defender for Cloud protects non-Azure servers and virtual machines in the cloud or on-premises, for both Windows and Linux servers, when Azure Arc is installed on them. Azure Arc connected systems have the Azure Connected Machine agent installed on them, and when they're added to a Data Collection Rule (DCR) the Azure Monitor agent extension is also installed on them. When the Defender plan for Servers is enabled (in the Environment settings), you can configure other monitoring options.
 
 The events collected from the agents and Azure are correlated in the security analytics engine to provide you tailored recommendations (hardening tasks) that you should follow to ensure your workloads are secure. You should investigate these alerts as soon as possible to make sure malicious attacks aren't taking place on your workloads.
 

@@ -44,11 +44,8 @@ Watch this video from Judson Althoff and begin to envision what it means to be d
 
 :::column-end:::
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wDFw]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=d5bf16fc-0eff-49c6-b3ba-09d667c91cf6]
 
 :::row-end:::
 
 The role of Microsoft is to help organizations realize the benefits of their digital transformation.
-
-
-

@@ -4,7 +4,7 @@ Maybe you've been involved in the development of a degree program before, or may
 
 Academic degree programs usually don't offer industry-focused, integrated certifications. Instead, they focus on academic concepts, with appropriate academic assessment. We'll use a case study as a scenario to provide contextualized examples of academic and industry requirements when Microsoft certification is implemented in a degree program.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWK4VN]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=1fee5a7d-d8e3-445e-96a9-9c3b9617cf1f]
 
 In this module, you'll learn about the academic and industry requirements that are part of creating a new technical program that implements certifications. You'll also learn how you can modify an existing program’s courses to implement certification. And, you'll learn how Microsoft certification can help prepare students for careers that are aligned to industry digital skills and job roles. This module shows you how to get started developing a proposal to infuse certifications into a degree program at your institution.
 

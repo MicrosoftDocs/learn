@@ -11,24 +11,23 @@ For this exercise, you create an Azure OpenAI resource and provide the deploymen
 
 1. After the resource is created, select **Go to resource**.
 
+1. Under **Resource Management**, select **Keys and Endpoint**.
+
+    You use the data here in the next exercises to build your kernel. Remember to keep your keys private and secure!
+
 1. On the **Overview** page, select **Go to Azure OpenAI Studio**.
 
-:::image type="content" source="../media/model-deployments.png" alt-text="A screenshot of the Azure OpenAI deployments page.":::
+    A new window should open with the Azure AI webpage.
 
-1. Select **Create New Deployment** then **Deploy Model**.
+1. Under **Shared resources** select **Deployments**.
 
-1. Under **Select a model**, select **gpt-35-turbo-16k**.
+1. Select **Deploy Model** then select **Deploy base model**.
 
-    Use the default Model version
+1. Select the **gpt-35-turbo-16k** model and select **Confirm**.
 
-1. Enter a name for your deployment.
+1. Select **Deploy**.
 
-1. When the deployment completes, navigate back to your Azure OpenAI resource.
-
-1. Under **Resource Management**, go to **Keys and Endpoint**.
-
-    You'll use the data here in the next exercises to build your kernel
-    Remember to keep your keys private and secure!
+    The model deployment details should appear. Now you're ready to begin building your AI application!
 
 > [!IMPORTANT]
-> Be sure not to delete this resource until you've completed this learning path. You'll need it to complete the exercises.
+> Be sure not to delete this resource until you've completed this learning path. You need it to complete the exercises.

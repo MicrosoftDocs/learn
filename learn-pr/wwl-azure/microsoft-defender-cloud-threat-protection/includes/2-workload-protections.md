@@ -7,7 +7,7 @@ Defender for Cloud offers security alerts that are powered by Microsoft Threat I
 3.  Advanced protection - Defender for Cloud includes many advanced threat protection capabilities for virtual machines, Structured Query Language (SQL) databases, containers, web applications, your network, and more. In this advanced protection section, you can see the status of the resources in your selected subscriptions for each of these protections. Select any of them to go directly to the configuration area for that protection type.
 4.  Insights - This rolling pane of news, suggested reading, and high priority alerts gives Defender for Cloud's insights into pressing security matters that are relevant to you and your subscription. Whether it's a list of high severity Common Vulnerabilities and Exposures (CVEs) discovered on your VMs by a vulnerability analysis tool, or a new blog post by a member of the Defender for Cloud team, you'll find it here in the Insights panel.
 
-:::image type="content" source="../media/workload-protections-dashboard-defender-cloud-57c1405f.png" alt-text="Screenshot showing Workload protections in Defender for Cloud.":::
+:::image type="content" source="../media/workload-protections-dashboard-defender-cloud-57c1405f-ba6da595.png" alt-text="Screenshot showing Workload protections in Defender for Cloud.":::
 
 
 ## Protect cloud workloads

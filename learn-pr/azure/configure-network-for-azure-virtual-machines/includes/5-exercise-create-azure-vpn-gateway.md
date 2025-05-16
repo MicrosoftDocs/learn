@@ -6,15 +6,15 @@ You'll carry out the following process:
 
 1. Upload the public key for a root certificate for authentication purposes.
 
-1. Generate a client certificate from the root certificate, and then install the client certificate on each client computer that will connect to the virtual network for authentication purposes.
+1. Generate a client certificate from the root certificate, then install the client certificate on each client computer that will connect to the virtual network for authentication purposes.
 
 1. Create VPN client configuration files, which contain the necessary information for the client to connect to the virtual network.
 
 ## Setup
 
-To complete this module, use Azure PowerShell from your local Windows 10 computer.
+To complete this module, use Azure PowerShell from your local Windows computer.
 
-1. Open a new PowerShell session on your local Windows 10 computer where you installed the Azure PowerShell module.
+1. Open a new PowerShell session on your local Windows computer where you installed the Azure PowerShell module.
 
 1. Sign in to Azure by running the PowerShell cmdlet `Connect-AzAccount`.
 
@@ -70,7 +70,7 @@ $GWIPconfName = "gwipconf"
 1. Run the following command to request a dynamically assigned public IP address.
 
     ```PowerShell
-    $pip = New-AzPublicIpAddress -Name $GWIPName -ResourceGroupName $ResourceGroup -Location $Location -AllocationMethod Dynamic
+    $pip = New-AzPublicIpAddress -Name $GWIPName -ResourceGroupName $ResourceGroup -Location $Location -AllocationMethod Static -Sku Standard -Zone 1,2,3
     $ipconf = New-AzVirtualNetworkGatewayIpConfig -Name $GWIPconfName -Subnet $subnet -PublicIpAddress $pip
     ```
 
@@ -78,8 +78,8 @@ $GWIPconfName = "gwipconf"
 
 When creating this VPN gateway:
 
-- GatewayType must be Vpn
-- VpnType must be RouteBased
+- GatewayType must be **Vpn**.
+- VpnType must be **RouteBased**.
 
 This part of the exercise can take up to 45 minutes to complete.
 
@@ -88,7 +88,7 @@ This part of the exercise can take up to 45 minutes to complete.
     ```PowerShell
     New-AzVirtualNetworkGateway -Name $GWName -ResourceGroupName $ResourceGroup `
     -Location $Location -IpConfigurations $ipconf -GatewayType Vpn `
-    -VpnType RouteBased -EnableBgp $false -GatewaySku VpnGw1 -VpnClientProtocol "IKEv2"
+    -VpnType RouteBased -EnableBgp $false -GatewaySku VpnGw1AZ -VpnClientProtocol "IKEv2"
     ```
 
 1. Wait for the command output to appear.
@@ -106,7 +106,7 @@ This part of the exercise can take up to 45 minutes to complete.
 
 ## Generate a client certificate
 
-With the network infrastructure created on Azure, we need to create a self-signed client certificate on our local machine. This creation can be done similarly on most operating systems, but we'll cover how to generate your client certificate on Windows 10 using PowerShell with the Azure PowerShell module and the Windows **Certificate Manager** utility.
+With the network infrastructure created on Azure, we need to create a self-signed client certificate on our local machine. This creation process is similar most operating systems, but we'll cover how to generate your client certificate on Windows using PowerShell with the Azure PowerShell module and the Windows **Certificate Manager** utility.
 
 1. Our first step is to create the self-signed root certificate. Run the following command.
 
@@ -157,7 +157,7 @@ With our certificates generated, we need to export our root certificate's public
     $P2SRootCertName = "P2SRootCert.cer"
     ```
 
-1. Replace the `<cert-path>` placeholder with the export location of your root certificate, and run the following command.
+1. Replace the `<cert-path>` placeholder with the export location of your root certificate, then run the following command.
 
     ```PowerShell
     $filePathForCert = "<cert-path>\P2SRootCert.cer"
@@ -183,7 +183,7 @@ With our certificates generated, we need to export our root certificate's public
     $profile.VPNProfileSASUrl
     ```
 
-1. Copy the URL returned in the output from this command, and paste it into your browser. Your browser should start downloading a .ZIP file. Extract the archive contents and put them in a suitable location.
+1. Copy the URL returned in this command's output and paste it into your browser. Your browser should start downloading a .ZIP file. Extract the archive contents and put them in a suitable location.
 
    Some browsers will initially attempt to block downloading this ZIP file as a dangerous download. You'll need to override this in your browser to be able to extract the archive contents.
 
@@ -193,7 +193,7 @@ With our certificates generated, we need to export our root certificate's public
 
 1. Double-click the **VpnClientSetup{architecture}.exe** file, with `{architecture}` reflecting your architecture.
 
-1. In the **Windows protected your PC** screen, select **More info**, and then select **Run anyway**.
+1. In the **Windows protected your PC** screen, select **More info**, then select **Run anyway**.
 
 1. In the **User Account Control** dialog box, select **Yes**.
 
@@ -225,6 +225,6 @@ With our certificates generated, we need to export our root certificate's public
 
 1. Confirm that IP address is in the **VPNClientAddressPool range of 172.16.201.0/24**.
 
-1. You have successfully made a connection to the Azure VPN gateway.
+1. You've successfully made a connection to the Azure VPN gateway.
 
 You just set up a VPN gateway, enabling you to make an encrypted client connection to a virtual network in Azure. This approach is great with client computers and smaller site-to-site connections.

@@ -64,4 +64,4 @@ Your PR has been created, but it hasn't been submitted yet. In the next step, yo
 
 Recall that you're a software engineer with special expertise in Azure App Service. When reviewing a documentation article about App Service, you notice a detail you'd like to add that would help others use the service. You decide to share your knowledge by making your first contribution to Microsoft Learn! After signing into your GitHub account, you begin the contribution process:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW197HI] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=682c2b44-e576-496e-ad8e-851ccffdd084] 

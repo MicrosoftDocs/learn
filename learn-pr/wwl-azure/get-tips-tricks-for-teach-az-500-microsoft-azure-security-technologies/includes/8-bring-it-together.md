@@ -1,3 +1,3 @@
 As an educator, you play a pivotal role in empowering students for future success. Your journey in teaching MOC to your students will help ensure your students are prepared for future jobs across a range of disciplines and industries in need of talent with Azure skills. Further, you're preparing your students for the AZ-500: Microsoft Azure Security Technologies Certification exam. We've provided you with many learning resources that not only prepare you as an instructor but also give your students the confidence they need to tackle the exam. Now that you've all the necessary tools, you're ready to go.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE50oJe]   
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=dc65ea64-943a-4ab0-8435-a0610397d625]   

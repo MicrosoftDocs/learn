@@ -12,7 +12,7 @@ This module consists of two lessons:
 - Lesson 1 – Explore Azure Event Grid 
 - Lesson 2 – Explore Azure Event Hubs 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5aslf]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=487d3dc8-fe26-432b-853e-744f473896ae]
 
 Module 9 Tips and Tricks 
 

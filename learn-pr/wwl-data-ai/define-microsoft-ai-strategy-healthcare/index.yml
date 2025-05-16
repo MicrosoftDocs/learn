@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.define-microsoft-ai-strategy-healthcare
 metadata:
-  title: Define a Microsoft AI strategy to create business value in healthcare
+  title: Define a Microsoft AI strategy to Create Business Value in Healthcare
   description: "Discover AI use cases and scenarios for healthcare. Get familiar with Microsoft AI tools and services for healthcare. Learn from real success stories."
-  ms.date: 08/14/2024
+  ms.date: 05/06/2025
   author: wwlpublish
   ms.author: rcaper
   ms.topic: module
@@ -25,7 +25,7 @@ prerequisites: |
   -   Basic understanding of AI concepts.
 
   -   Basic understanding of healthcare concepts.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/define-microsoft-ai-strategy-healthcare.svg
 levels:
 - beginner
 roles:

@@ -1,5 +1,3 @@
-
-
 No matter which governance approach you choose, there are some good practices it should promote.
 
 |**Ways to take action for AI governance**|**Description**|

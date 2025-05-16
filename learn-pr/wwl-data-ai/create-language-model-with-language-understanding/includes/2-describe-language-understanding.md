@@ -1,3 +1,5 @@
+**Conversational language understanding** describes a set of features that can be used to build an end-to-end conversational application. In particular, the features enable you to customize natural language understanding models to predict the overall intention of an incoming phrase and extract important information from it. 
+
 To work with conversational language understanding (CLU), you need to take into account three core concepts: *utterances*, *entities*, and *intents*.
 
 ## Utterances

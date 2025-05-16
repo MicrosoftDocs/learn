@@ -1,10 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-compute-solution.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 12/06/2024
+  ms.date: 05/05/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

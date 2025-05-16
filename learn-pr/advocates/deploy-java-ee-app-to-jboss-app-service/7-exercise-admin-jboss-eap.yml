@@ -2,16 +2,18 @@
 uid: learn.azure.deploy-java-ee-app-to-app-service.7-exercise-admin-jboss-eap
 title: Exercise - Access the JBoss EAP administration tools and application logs
 metadata:
-  title: Exercise - Access the JBoss EAP administration tools and application logs
-  description: Learn how to access the JBoss EAP administration tools and application logs.
-  author: yoshioterada
-  ms.author: yoterada
-  ms.date: 05/25/2023
+  title: Exercise - Access the JBoss EAP Administration Tools and Application Logs
+  description: Exercise - Shows you how to access the JBoss EAP administration tools and application logs.
+  author: KarlErickson
+  ms.author: karler
+  ms.reviewer: yoshioterada
+  ms.date: 03/16/2025
   ms.topic: unit
   ms.custom:
     - team=cloud_advocates
-    - devx-track-extended-java
-  ms.contributors: yoterada-03082021
+    - devx-track-java
+    - devx-track-javaee-jbosseap-appsvc
+    - devx-track-javaee
 durationInMinutes: 6
 content: |
   [!include[](includes/7-exercise-admin-jboss-eap.md)]

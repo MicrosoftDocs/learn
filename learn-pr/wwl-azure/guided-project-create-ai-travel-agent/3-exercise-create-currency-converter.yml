@@ -2,17 +2,14 @@
 uid: learn.wwl.guided-project-create-ai-travel-agent.exercise-create-currency-converter
 title: Exercise - Create a currency converter
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create a currency converter
-  description: Exercise - Create a currency converter
+  description: "Exercise - Create a currency converter"
+  ms.date: 01/23/2025
   author: wwlpublish
   ms.author: buzahid
-  ms.date: 06/11/2024
   ms.topic: unit
-  ms.collection:
-    - wwl-ai-copilot
+  ms.custom:
+  - N/A
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-create-currency-converter.md)]
-

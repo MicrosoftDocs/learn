@@ -2,13 +2,11 @@
 uid: learn.wwl.responsible-ai-studio.measure-harms
 title: Measure potential harms
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Measure potential harms
-  description: Measure the presence of potential harms in a responsible AI solution.
+  description: Measure the presence of potential harm in a responsible AI solution.
   author: ivorb
   ms.author: berryivor
-  ms.date: 11/28/2024
+  ms.date: 04/16/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

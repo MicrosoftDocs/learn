@@ -13,7 +13,7 @@ Once a feature has been evaluated and tested successfully, it might be released 
 
 ## Find preview features
 
-You can discover preview features through the [preview features page](https://azure.microsoft.com/services/preview/?azure-portal=true). This page lists the preview features that are available for evaluation. To access a preview feature, select its entry on this page and learn more about how to evaluate it. You can also use the **RSS Feed** button on this page to subscribe to notifications and stay informed.
+You can discover preview features through the [preview features page](https://azure.microsoft.com/updates/?status=inpreview&filters=%5B"In+preview"%5D?azure-portal=true). This page lists the preview features that are available for evaluation. To access a preview feature, select its entry on this page and learn more about how to evaluate it. You can also use the **RSS Feed** button on this page to subscribe to notifications and stay informed.
 
 You can also find Azure preview features in the portal by searching for *Preview*, then selecting **Preview features**.
 

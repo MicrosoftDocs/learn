@@ -13,7 +13,7 @@ This module consists of four lessons:
 - Lesson 3 – Query Azure Cosmos database with Apache Spark for Azure Synapse Analytics  
 - Lesson 4 – Query Azure Cosmos database with SQL Serverless for Azure Synapse Analytics 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5akq9] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=38b88ed5-525e-43c8-bba5-5b45656ca15a] 
 
 Module 9 Tips and Tricks 
 

@@ -4,8 +4,9 @@ title: Application deployment types
 metadata:
   title: Application deployment types
   description: Learn about application deployment types for Java applications.
-  author: judubois
-  ms.author: judubois
+  author: KarlErickson
+  ms.author: karler
+  ms.reviewer: hangwan
   ms.date: 01/04/2024
   ms.topic: unit
   ms.custom:

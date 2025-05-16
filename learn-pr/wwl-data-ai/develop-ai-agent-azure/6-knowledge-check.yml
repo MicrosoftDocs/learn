@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.develop-ai-agent-azure.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: This unit contains a knowledge check, which can help learners reinforce their understanding of the material.
+  author: ivorb
+  ms.author: berryivor
+  ms.date: 04/03/2025
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "What is the first step in setting up Azure AI Agent Service?"  
+    choices:  
+      - content: "Deploy a compatible model"  
+        isCorrect: false  
+        explanation: "Incorrect. Deploying a compatible model is the second step. The first step is to create an Azure AI Foundry hub and project."  
+      - content: "Create an Azure AI Foundry hub and project"  
+        isCorrect: true  
+        explanation: "Correct. The first step in setting up Azure AI Agent Service is to create an Azure AI Foundry hub and project in your Azure subscription."  
+      - content: "Make API calls using SDKs"  
+        isCorrect: false  
+        explanation: "Incorrect. Making API calls using SDKs is the third step after deploying a compatible model."  
+  - content: "Which element of an agent definition is used to specify its behavior and restrictions?"  
+    choices:  
+      - content: "Model"  
+        isCorrect: false  
+        explanation: "Incorrect. The model is used to interpret and respond to prompts."  
+      - content: "Instructions"  
+        isCorrect: true  
+        explanation: "Correct. You use instructions to tell the agent how to behave."  
+      - content: "Tools"  
+        isCorrect: false  
+        explanation: "Incorrect. Tools are used to enable the agent to retrieve data and perform tasks."  
+  - content: "Which tool should you use to enable an agent to dynamically generate code to perform tasks or access data in files?"  
+    choices:  
+      - content: "Code Interpreter"  
+        isCorrect: true  
+        explanation: "Correct. The code interpreter tool enables agents to generate code in a sandbox."  
+      - content: "Azure Functions"  
+        isCorrect: false  
+        explanation: "Incorrect. Azure Function tools are used to enable the agent to call serveless Azure Functions."  
+      - content: "Azure AI Search"  
+        isCorrect: false  
+        explanation: "Incorrect. The Azure AI Search tool enables the agent to ground prompts using data from an index in Azure AI Search."  
+  

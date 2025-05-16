@@ -35,7 +35,7 @@ You can configure each DNS zone with security settings for dynamic updates. For 
 > When a zone isn't Active Directory-integrated, you can still allow dynamic updates, but you can't enforce security.
 
 > [!TIP]
-> Only domain-joined Windows computers that are part of the same forest can perform secure dynamic updates. To allow non-domain joined Windows clients or non-Windows devices to perform dynamic updates, you must allow nonsecure dynamic updates.
+> Only domain-joined Windows computers that are part of the same forest can perform secure dynamic updates. To allow nondomain joined Windows clients or non-Windows devices to perform dynamic updates, you must allow nonsecure dynamic updates.
 
 ### Windows PowerShell cmdlets to manage DNS zones
 
@@ -105,7 +105,7 @@ The following video demonstrates how to implement, create, and manage DNS zones 
 6. In the new zone, create a new host record.
 7. Open **Windows PowerShell**, and using the `Resolve-DnsName` cmdlet, verify name resolution is successful for the new record in the new zone.
 
- >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MjvL]
+ >[!VIDEO https://learn-video.azurefd.net/vod/player?id=f8bde883-fff2-4a7a-a35a-b10802b2a801]
 
 ---
 

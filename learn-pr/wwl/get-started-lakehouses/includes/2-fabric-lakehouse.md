@@ -17,7 +17,7 @@ Fabric lakehouses are a central element for your analytics solution. You can fol
 
 You can ingest data in many common formats from various sources, including local files, databases, or APIs. You can also create Fabric **shortcuts** to data in external sources, such as Azure Data Lake Store Gen2 or OneLake. Use the Lakehouse explorer to browse files, folders, shortcuts, and tables and view their contents within the Fabric platform.
 
-Ingested data can be transformed and then loaded using either using Apache Spark with notebooks or Dataflows Gen2. Use Data Factory pipelines to orchestrate your different ETL activities and land the prepared data into your lakehouse.
+Ingested data can be transformed and then loaded using either Apache Spark with notebooks or Dataflows Gen2. Use Data Factory pipelines to orchestrate your different ETL activities and land the prepared data into your lakehouse.
 
 > [!NOTE]
 > Dataflows Gen2 are based on Power Query - a familiar tool to data analysts using Excel or Power BI that provides visual representation of transformations as an alternative to traditional programming.

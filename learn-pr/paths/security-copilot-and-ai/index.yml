@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.security-copilot-and-ai
 metadata:
-  title: 'Get started with Microsoft Security Copilot SC-5006'
-  description: 'Get started with Microsoft Security Copilot. (SC-5006)'
-  ms.date: 11/15/2024
+  title: 'Enhance security operations by using Microsoft Security Copilot (SC-5006)'
+  description: 'Enhance security operations by using Microsoft Security Copilot (SC-5006).'
+  ms.date: 01/13/2025
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: learning-path
   ms.custom: [copilot-learning-hub]
-title: 'Get started with Microsoft Security Copilot'
+title: 'Enhance security operations by using Microsoft Security Copilot'
 prerequisites: |
   - Working knowledge of security operations and incident response
   - Working knowledge of Microsoft security products and services

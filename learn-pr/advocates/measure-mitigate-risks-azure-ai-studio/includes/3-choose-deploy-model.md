@@ -15,7 +15,7 @@ There’s various factors to consider when choosing a model such as model perfor
 
 1. Within Azure AI Foundry, navigate to the **Model Catalog**.
 1. Apply the following filters:
-    - Collections > Azure OpenAI
+    - Collections > Azure OpenAI Service
     - Inference tasks > Chat completion
 
 1. Select the **gpt-4o** model to view its model card.
@@ -47,7 +47,7 @@ While the model card provides more details about the available models, comparing
     1. gpt-4o
     1. gpt-35-turbo
 1. View how each model scores in comparison to the various datasets. Hover over a point in the graph to view the score for the model.
-1. Modify the **X-axis** and *Y-axis** options to change the comparison metrics.
+1. Modify the **X-axis** and **Y-axis** options to change the comparison metrics.
 
 Across all comparisons, for each metric, **gpt-4o** has the highest score. Therefore, let’s use **gpt-4o** as the model for the Contoso Camping Store chatbot.
 
@@ -64,7 +64,8 @@ You can deploy a model from either the model card or your project’s deployment
 1. Select the **Overview** tab.
 1. On the model card, select **Deploy**.
 1. For **Deployment name**, enter: *gpt-4o*.
-1. For **Azure OpenAI resource**, select your Azure OpenAI resource.
+1. In the **Deployment details** section, select **Customize**.
+1. Set the **Tokens per Minute Rate Limit** slider to 100K.
 1. Select **Deploy**.
 
 > [!NOTE]

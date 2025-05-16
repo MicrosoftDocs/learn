@@ -2,8 +2,6 @@
 uid: learn.wwl.examine-sap-hana-azure-large-instances-sample-architecture.examine-sample-functional-workflow
 title: Examine a sample functional workflow
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Examine a sample functional workflow
   description: "Examine a sample functional workflow"
   ms.date: 07/07/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-examine-sample-functional-workflow.md)]
+  [!include[](includes/4-examine-sample-functional-workflow.md)]

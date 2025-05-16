@@ -142,7 +142,7 @@ Now, it's time to watch your web app and Azure Functions project work together.
 
 1. In Visual Studio, right-click the **ShoppingList** solution.
 
-1. Select **Set Startup Projects**.
+1. Select **Configure Startup Projects**.
 
 1. Select the **Multiple startup projects** option.
 

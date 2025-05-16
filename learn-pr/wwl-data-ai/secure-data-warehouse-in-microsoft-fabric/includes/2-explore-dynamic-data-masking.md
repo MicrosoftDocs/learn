@@ -34,11 +34,11 @@ ALTER COLUMN Email ADD MASKED WITH (FUNCTION = 'email()');
 
 -- For PhoneNumber
 ALTER TABLE Customers
-ALTER COLUMN PhoneNumber ADD MASKED WITH (FUNCTION = 'partial(3,"XXX-XXX-",4)');
+ALTER COLUMN PhoneNumber ADD MASKED WITH (FUNCTION = 'partial(0,"XXX-XXX-",4)');
 
 -- For CreditCardNumber
 ALTER TABLE Customers
-ALTER COLUMN CreditCardNumber ADD MASKED WITH (FUNCTION = 'partial(4,"XXXX-XXXX-XXXX-",4)');
+ALTER COLUMN CreditCardNumber ADD MASKED WITH (FUNCTION = 'partial(0,"XXXX-XXXX-XXXX-",4)');
 ```
 
 ## View masked results

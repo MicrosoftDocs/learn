@@ -1,6 +1,4 @@
-
-
-Contoso IT staff want the ability to connect to their IaaS VMs in Azure from the Azure portal directly and securely. You suggest Azure Bastion, a platform as a service (PaaS) service that provides direct RDP and SSH connectivity to VMs in the Azure portal over TLS. Contoso can provision Azure Bastion inside their VNet.
+Contoso's IT staff want the ability to connect to their IaaS VMs in Azure from the Azure portal directly and securely. You suggest Azure Bastion, a platform as a service (PaaS) service that provides direct RDP and SSH connectivity to VMs in the Azure portal over TLS. Contoso can provision Azure Bastion inside their VNet.
 
 > [!TIP]
 > When you connect to your VMs via Azure Bastion, the VMs don't need a public IP address.

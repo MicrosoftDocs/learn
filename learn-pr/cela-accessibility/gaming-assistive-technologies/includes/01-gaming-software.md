@@ -24,7 +24,7 @@ In gaming, screen readers should convey what's happening visually within the gam
 
 In the following video, the player adjusts their screen narration settings at the Xbox platform level. Next, they launch the game Forza Horizon 5. The game starts with its title-provided screen reader already enabled. The user has screen narration enabled at the platform level, so the game can read and apply the user's settings to the game when it starts.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWPDLf]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=97619d1d-e3d7-4c1e-acf9-9736b5d55d47]
 
 ### Contrast settings
 

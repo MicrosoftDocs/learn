@@ -28,20 +28,18 @@ az cognitiveservices account create \
 >[!NOTE]
 >You can find the regions available for a service through the CLI command `az account list-locations`. To see how to sign into Azure and create an Azure group via the CLI, you can refer to the [documentation here](/azure/cognitive-services/openai/how-to/create-resource?pivots=cli#sign-in-to-the-cli?azure-portal=true). Azure OpenAI Service provides access to many types of models. Certain models are only available in select regions. Consult the [Azure OpenAI model availability guide](/azure/cognitive-services/openai/concepts/models#model-summary-table-and-region-availability/?azure-portal=true) for region availability. You can create two Azure OpenAI resources per region.
 
-## Use Azure OpenAI Studio
+## Use Azure OpenAI Foundry
 
-Azure AI Studio provides access to model management, deployment, experimentation, customization, and learning resources.
+Azure AI Foundry provides access to model management, deployment, experimentation, customization, and learning resources.
 
-You can access the Azure AI Studio through the Azure portal after creating a resource, or at [https://ai.azure.com/](https://ai.azure.com/) by signing in to your Azure account. During the sign-in workflow, select the appropriate directory, Azure subscription, and Azure OpenAI resource.
+You can access the Azure AI Foundry through the Azure portal after creating a resource, or at [https://ai.azure.com/](https://ai.azure.com/) by signing in to your Azure account. During the sign-in workflow, select the appropriate directory, Azure subscription, and Azure OpenAI resource.
 
-![Screenshot of the Azure AI Studio portal which can be used to access several features.](../media/studio-portal.png)
-
-When you first open Azure AI Studio, you'll want to navigate to the **Azure OpenAI** page, select your resource if you haven't already, and deploy your first model. To do so, select the **Deployments** page, from where you can deploy a base model and start experimenting with it.
+When you first open Azure AI Foundry, you'll want to navigate to the **Azure OpenAI** page (where you focus on only Azure OpenAI Service models), select your resource if you haven't already, and deploy your first model. To do so, select the **Deployments** page, from where you can deploy a base model and start experimenting with it.
 
 >[!NOTE]
 >If you are not the resource owner, you will need the following role-based access controls: 1. *Cognitive Services OpenAI User*: This role allows viewing resources and using the chat playground. 2. *Cognitive Services OpenAI Contributor*: This role allows the user to create new deployments.
 
-![Screenshot of the Azure AI Studio portal menu of pages.](../media/studio-deployment.png)
+![Screenshot of the Azure AI Foundry portal menu of pages.](../media/studio-deployment.png)
 
 ## Types of OpenAI models
 
@@ -52,26 +50,26 @@ Azure OpenAI includes several types of model:
 - **GPT-4 models** are the latest generation of *generative pretrained* (GPT) models that can generate natural language and code completions based on natural language prompts.
 - **GPT 3.5 models** can generate natural language and code completions based on natural language prompts. In particular, **GPT-35-turbo** models are optimized for chat-based interactions and work well in most generative AI scenarios.
 - **Embeddings models** convert text into numeric vectors, and are useful in language analytics scenarios such as comparing text sources for similarities.
-- **DALL-E models** are used to generate images based on natural language prompts. Currently, DALL-E models are in preview. DALL-E models aren't listed in the Azure AI Studio interface and don't need to be explicitly deployed.
+- **DALL-E models** are used to generate images based on natural language prompts. Currently, DALL-E models are in preview.
 - **Whisper models** are used to convert speech to text.
 - **Text to speech models** are used to convert text to speech.
 
 >[!NOTE]
 >Pricing is determined by tokens and by model type. Learn more about the latest [pricing here](https://azure.microsoft.com/pricing/details/cognitive-services/openai-service/).
 
-In the Azure AI Studio, the **Model Catalog** page lists the available base models and provides an option to create additional customized models by fine-tuning the base models. The models that have a *Succeeded* status mean they're successfully trained and can be selected for deployment.
+In the Azure AI Foundry portal, the **Model Catalog** page lists the available base models and provides an option to create additional customized models by fine-tuning the base models. The models that have a *Succeeded* status mean they're successfully trained and can be selected for deployment.
 
-You'll notice that there are various models beyond OpenAI available in the Model Catalog, including models from Microsoft, Meta, Mistral, and more. Azure AI Studio enables you to deploy any of these models for your use case. This module will focus on Azure OpenAI models.
+You'll notice that there are various models beyond OpenAI available in the Model Catalog, including models from Microsoft, Meta, Mistral, and more. Azure AI Foundry enables you to deploy any of these models for your use case. This module will focus on Azure OpenAI models.
 
-![Screenshot of the Azure AI Studio portal's out-of-the-box generative AI models.](../media/studio-models.png)
+![Screenshot of the Azure AI Foundry portal's out-of-the-box generative AI models.](../media/studio-models.png)
 
 ## Deploying OpenAI models
 
 You first need to deploy a model to chat with or make API calls to receive responses to prompts. When you create a new deployment, you need to indicate which base model to deploy. You can deploy any number of deployments as long as their Tokens Per Minute (TPM) stays within the deployment quota.
 
-### Deploy using Azure AI Studio
+### Deploy using Azure AI Foundry
 
-In Azure AI Studio's **Model catalog** page, you can create a new deployment by selecting a model name from the list.
+In Azure AI Foundry portal's **Model catalog** page, you can create a new deployment by selecting a model name from the list.
 
 ### Deploy using Azure CLI
 
@@ -132,12 +130,12 @@ You can start making calls to your deployed model via the REST API, Python, or C
 
 ## Use the Azure Studio playgrounds
 
-Playgrounds are useful interfaces in Azure AI Studio that you can use to experiment with your deployed models without needing to develop your own client application. Azure AI Studio offers multiple playgrounds with different parameter tuning options.  
+Playgrounds are useful interfaces in Azure AI Foundry that you can use to experiment with your deployed models without needing to develop your own client application. Azure AI Foundry portal offers multiple playgrounds with different parameter tuning options.  
 
 ### Chat playground
 
 The Chat playground is based on a conversation-in, message-out interface. You can initialize the session with a system message to set up the chat context.
 
-In the Chat playground, you're able to add *few-shot examples*. The term few-shot refers to providing a few of examples to help the model learn what it needs to do. You can think of it in contrast to zero-shot, which refers to providing no examples. 
+In the Chat playground, you're able to use prompt samples, adjust parameters, and add *few-shot examples*. The term few-shot refers to providing a few of examples to help the model learn what it needs to do. You can think of it in contrast to zero-shot, which refers to providing no examples.
 
-![Screenshot of the Azure AI Studio portal's Chat playground.](../media/studio-chat-playground.png)
+![Screenshot of the Azure AI Foundry portal's Chat playground.](../media/studio-chat-playground.png)

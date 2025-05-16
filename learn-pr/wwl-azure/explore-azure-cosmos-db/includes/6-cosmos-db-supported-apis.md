@@ -1,6 +1,6 @@
 Azure Cosmos DB offers multiple database APIs, which include NoSQL, MongoDB, PostgreSQL, Cassandra, Gremlin, and Table. By using these APIs, you can model real world data using documents, key-value, graph, and column-family data models. These APIs allow your applications to treat Azure Cosmos DB as if it were various other databases technologies, without the overhead of management, and scaling approaches. Azure Cosmos DB helps you to use the ecosystems, tools, and skills you already have for data modeling and querying with its various APIs.
 
-All the APIs offer automatic scaling of storage and throughput, flexibility, and performance guarantees. There's no one best API, and you may choose any one of the APIs to build your application
+All the APIs offer automatic scaling of storage and throughput, flexibility, and performance guarantees. There's no one best API, and you can choose any one of the APIs to build your application
 
 ## Considerations when choosing an API
 
@@ -8,7 +8,7 @@ API for NoSQL is native to Azure Cosmos DB.
 
 API for MongoDB, PostgreSQL, Cassandra, Gremlin, and Table implement the wire protocol of open-source database engines. These APIs are best suited if the following conditions are true:
 
-* If you have existing MongoDB, PostgreSQL Cassandra, or Gremlin applications
+* If you have existing MongoDB, PostgreSQL, Cassandra, or Gremlin applications
 * If you don't want to rewrite your entire data access layer
 * If you want to use the open-source developer ecosystem, client-drivers, expertise, and resources for your database
 

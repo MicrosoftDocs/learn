@@ -12,7 +12,7 @@ This module consists of three lessons:
 - Lesson 2 – DAX Context 
 - Lesson 3 – Advanced DAX 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5aJzL] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3785bdde-d648-4754-b1a7-adbc0da940b4] 
 
 Module 5 Tips and Tricks 
 

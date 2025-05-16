@@ -64,7 +64,7 @@ With rapid protection in place, an attack can be stopped on a device, other devi
 
 When endpoint detection and response (EDR) in block mode is turned on, Defender for Endpoint blocks malicious artifacts or behaviors that are observed through post-breach protection. EDR in block mode works behind the scenes to remediate malicious artifacts that are detected post-breach.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4HjW2?rel=0]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=69b80126-fa43-4f52-b89d-e4ebc3aba0a4]
 
 EDR in block mode is also integrated with threat & vulnerability management. Your organization's security team will get a security recommendation to turn EDR in block mode on if it isn't already enabled.
 

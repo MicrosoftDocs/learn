@@ -1,5 +1,3 @@
-
-
 IT operations staff at Contoso decide to test Azure Image Builder using Azure PowerShell to create a Windows VM. The high-level steps involved are broadly similar to the process discussed in the last unit. 
 
 > [!IMPORTANT]
@@ -52,9 +50,6 @@ The first thing you must do to use Azure Image Builder in public preview is to r
     ``` Azure PowerShell
    Get-AzResourceProvider -ProviderNamespace Microsoft.Compute, Microsoft.KeyVault, Microsoft.Storage, Microsoft.VirtualMachineImages | Where-Object RegistrationState -ne Registered | Register-AzResourceProvider
     ```
-
-   ![A screenshot that displays the registration state as registered for all four required components in Azure Image Builder.](../media/m6-registered-2.png)
-
 
 ## Create an image
 
@@ -137,7 +132,6 @@ The next steps will create an image, and then create the VM from the image. To c
    New-AzGalleryImageDefinition @GalleryParams
    ```
 
-
 7. Next, you must create an Azure Image Builder source object, a distributor object, and  an Image Builder customization object. Run the following PowerShell commands: 
 
    ```Azure PowerShell
@@ -219,5 +213,3 @@ The final step is to create a VM from the newly built image.
    ```
    Azure-Image-Builder-Was-Here
    ```
-
-

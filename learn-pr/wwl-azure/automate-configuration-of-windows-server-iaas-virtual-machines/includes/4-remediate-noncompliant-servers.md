@@ -1,5 +1,3 @@
-
-
 When you onboard servers with Azure Automation State Configuration, you set the configuration mode to one of the following modes:
 
 - **ApplyOnly**
@@ -39,11 +37,7 @@ There are some restrictions to using **Run Command**. Because it's designed to q
 
 ### Available PowerShell commands
 
-You can launch a number of PowerShell commands against your Windows VMs.
-
-[![A screenshot of the Run command blade for the ContosoVM4 VM. A list of PowerShell commands is listed.](../media/m2-run-script.png)](../media/m2-run-script.png#lightbox)
-
-The following table describes the list of commands available for Windows VMs.
+You can launch a number of PowerShell commands against your Windows VMs. The following table describes the list of commands available for Windows VMs.
 
 |Name|Description|
 |---|---|
@@ -79,3 +73,6 @@ You can learn more by reviewing the following documents:
 
 - [Run PowerShell scripts in your Windows VM by using Run Command](https://aka.ms/VM-windows-run-command?azure-portal=true).
 - [Update-DscConfiguration](https://aka.ms/update-dscconfiguration?azure-portal=true).
+
+> [!NOTE]
+> Azure Machine Configuration is a replacement service combines features of the DSC extension handler, Azure Automation State Configuration, and incorporates commonly requested features based on customer feedback. Azure Machine Configuration is currently in preview. Azure Automation State Configuration is still available and will be retired on September 30, 2027.

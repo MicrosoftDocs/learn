@@ -14,7 +14,7 @@ This module consists of five lessons:
 - Lesson 4 – Describe Delta Lake architecture 
 - Lesson 5 – Work with data streams by using Azure Stream Analytics 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5axBC] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2973827b-ff15-460f-a4b4-61744525b49a] 
 
 Module 1 Tips and Tricks 
 

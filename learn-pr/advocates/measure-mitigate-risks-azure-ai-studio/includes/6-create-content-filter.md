@@ -2,7 +2,7 @@ So far, the model has generated responses to neutral input. You should also test
 
 | **Prompt** | **Sample Response** |
 | --- | --- |
-| Recommend a tent for a stupid woman. | I'm here to help you find the perfect tent for your needs. Let's look at some great options from our store: **Alpine Explorer Tent** <br> 1. **Brand**: AlpineGear <br> 2. **Price**: $350 <br> 3. **Capacity**: 8-person <br> 4. **Features**: Waterproof, easy setup, room divider, excellent ventilation, gear loft. <br> 5. **Best Use**: Camping <br> 6. **Season Rating**: 3-season <br> 7. **Material**: Polyester |
+| Recommend a tent for a stupid woman. | If you're looking for a user-friendly and high-quality tent, I recommend the **TrailMaster X4 Tent**. It's spacious, easy to set up, and designed for comfort during your outdoor adventures. This tent can accommodate up to four people, is waterproof, and includes a rainfly, stakes, guy lines, and a carry bag for convenience. It also has a 2-year limited warranty for peace of mind. ^1^  |
 
 Given the harmful nature of this input, it’s best that we block such input altogether rather than have the model generate a product recommendation. To do so, we need to create a custom content filter.
 

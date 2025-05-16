@@ -15,7 +15,7 @@ Notice the code inside the curly braces, `color: orange;`t declares how the sele
 Your sample declaration contains a **property**, `color`, which is separated from a **value**, `orange`, with a colon (`:`), and the end of the setting is marked by a semicolon (`;`).
 
 > [!NOTE]
-> There is no need to memorize every available property and value in CSS. There are a lot of websites that you can reference. Also, tools such as [vscode.dev](https://vscode.dev) or [Visual Studio Code](https://code.visualstudio.com) offer auto-complete options that can help guide you as you create a CSS.
+> There's no need to memorize every available property and value in CSS. There are many websites that you can reference. Also, tools such as [vscode.dev](https://vscode.dev) or [Visual Studio Code](https://code.visualstudio.com) offer autocomplete options that can help guide you as you create a CSS.
 
 ## Embed a CSS file
 
@@ -47,11 +47,11 @@ When viewed in a browser, the "Welcome" text in the `<h1>` tag displays gray.
 
 ### Apply styles to HTML using CSS
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE5ax20]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=89e525bc-d3de-4252-816b-9df5b3acbb84]
 
 ## Link to a CSS file
 
-When you add styles to Hypertext Markup Language (HTML), it's best to do your styling in a separate CSS file. When several HTML files use the same CSS, they'll have a consistent appearance. Plus, updating one CSS file is easier than having to update each individual HTML file.
+When you add styles to Hypertext Markup Language (HTML), it's best to do your styling in a separate CSS file. When several HTML files use the same CSS, they have a consistent appearance. Plus, updating one CSS file is easier than having to update each individual HTML file.
 
 To reference the CSS file, you use the `link` element.
 
@@ -61,7 +61,7 @@ To reference the CSS file, you use the `link` element.
 <link rel="stylesheet" href="style.css">
 ```
 
-Now you'll have at least two files, an `.html` file and a `.css` file. The previous example would have an HTML file that links to the CSS.
+Now you have at least two files, an `.html` file and a `.css` file. The previous example would have an HTML file that links to the CSS.
 
 
 ```html

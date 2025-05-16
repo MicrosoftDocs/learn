@@ -81,4 +81,4 @@ If you’ve resolved all the possible connection issues, the connection troubles
 
 You can watch the following video to see all the previous steps:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4RYRS]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=d0c36bba-8fe6-42cf-aa5a-df2de2cad105]

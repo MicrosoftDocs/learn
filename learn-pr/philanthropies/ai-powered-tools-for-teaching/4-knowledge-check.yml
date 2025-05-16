@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.philanthropies.ai-powered-tools-for-teaching.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: This module contains sample activities that demonstrate how to integrate AI-powered tools into your learning environment.
   author: yoosunee
-  ms.author: andreapark
-  ms.date: 01/29/2024
+  ms.author: anruss
+  ms.date: 01/14/2025
   ms.topic: unit
   ms.collection:
     - philanthropies-ai-copilot

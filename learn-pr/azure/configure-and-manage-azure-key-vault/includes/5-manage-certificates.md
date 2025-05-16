@@ -18,7 +18,7 @@ Second, you can create an X.509 certificate signing request (CSR). This process 
 
 This approach works with any certificate issuer and provides better security than handling the CSR directly. The process is more secure because the private key is created and secured in Azure Key Vault and never revealed.
 
-Third, you can connect your Key Vault with a trusted certificate issuer (referred to as an _integrated_ CA) and create the certificate directly in Azure Key Vault. This approach requires a one-time setup to connect the certificate authority. You can then request to create a certificate and the Key Vault interacts directly with the CA to fulfill the request in a similar process to the manual CSR creation process shown previously. The full details of this process are presented in the following diagram.
+Third, you can connect your Key Vault with a trusted certificate issuer (referred to as an _integrated_ CA) and create the certificate directly in Azure Key Vault. This approach requires a one-time setup to connect the certificate authority. You can then request to create a certificate, and the Key Vault interacts directly with the CA to fulfill the request in a similar process to the manual CSR creation process shown previously. The full details of this process are presented in the following diagram.
 
 :::image type="content" source="../media/5-certificate-authority-2.png" alt-text="Diagram showing the process to create a certificate with an integrated certificate authority.":::
 
@@ -70,4 +70,3 @@ Once you have a public/private key pair certificate in your Azure Key Vault, you
     - The certificate must be an X.509 cert with a content type of `application/x-pkcs12` and can't have a password.
 
 Finally, once the certificate is in place, you want to set up a _custom domain_. There's already a built-in certificate for `*.azurewebsites.net`. You can then associate your custom domain with the certificate you've assigned so the server uses your certificate to secure the connection to the browser.
-

@@ -6,7 +6,7 @@ In this demonstration, you'll learn to:
 - Set up an assessment.
 - Review an assessment.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4zf4s]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=e281228e-2175-438d-89a8-d3916a42504f]
 
 ## Next steps
 

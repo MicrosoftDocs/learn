@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-classes-objects.exercise-create-classes-instantiate-objects
+title: Exercise - Create classes and objects in C#
+metadata:
+  title: Exercise - Create classes and objects in C#
+  description: "Exercise - Create classes and objects in C#"
+  ms.date: 02/12/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 25
+content: |
+  [!include[](includes/6-exercise-create-classes-instantiate-objects.md)]

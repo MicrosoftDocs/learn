@@ -13,7 +13,7 @@ This module consists of three lessons:
 - Lesson 2 – Manage the Azure Blob storage lifecycle 
 - Lesson 3 – Work with Azure Blob storage 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5aHCR]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=59161646-2ec0-4335-b898-ba9702f845e8]
 
 Module 3 Tips and Tricks 
 

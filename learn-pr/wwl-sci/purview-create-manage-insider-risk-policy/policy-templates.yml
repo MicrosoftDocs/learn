@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-create-manage-insider-risk-policy.policy-templates
+title: Understand Insider Risk Management policy templates
+metadata:
+  title: Understand Insider Risk Management policy templates
+  description: "Understand Insider Risk Management policy templates."
+  ms.date: 1/3/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/policy-templates.md)]

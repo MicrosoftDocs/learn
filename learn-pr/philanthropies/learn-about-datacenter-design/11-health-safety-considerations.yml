@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.philanthropies.learn-about-datacenter-design.health-safety-considerations
+title: Health and safety considerations in datacenters
+metadata:
+  title: Health and Safety Considerations in Datacenters
+  description: This content is a part of the "Learn about datacenter design, architecture, and infrastructure management" module.
+  ms.date: 05/08/2025
+  author: kiranchandratrey
+  ms.author: elenasim
+  ms.topic: unit
+durationInMinutes: 4
+content: |
+ [!include[](includes/11-health-safety-considerations.md)]

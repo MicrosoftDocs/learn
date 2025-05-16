@@ -7,6 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
+  ms.collection: wwl-ai-copilot
   ms.service: azure-cosmos-db
   ai-usage: human-only
 title: 'Guided project: Build and Deploy your own AI Copilot'

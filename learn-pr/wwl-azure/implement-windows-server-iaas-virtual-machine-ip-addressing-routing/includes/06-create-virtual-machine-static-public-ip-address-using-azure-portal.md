@@ -3,7 +3,7 @@ In this demonstration, you'll learn to:
 - Create a VM.
 - Add a static public IP address.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4AP7Z]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=a66736b5-d944-41bd-b8a1-9f626d827784]
 
 ## Next steps
 

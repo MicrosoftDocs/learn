@@ -2,7 +2,7 @@ In this step of the development process, you update the code provided in the sta
 
 ## Create the "Suggested Donation" features
 
-The added donation features require you to create `suggestedDonation` variable, and to expand the `ourAnimals` array accommodate the new donation data.  Also, you need to add the suggested donation amounts for each animal, and implement a default amount when there suggested donation information is missing.
+The added donation features require you to create `suggestedDonation` variable, and to expand the `ourAnimals` array accommodate the new donation data. Also, you need to add the suggested donation amounts for each animal, and implement a default amount when there suggested donation information is missing.
 
 ### Add support for suggested donation data
 
@@ -44,13 +44,13 @@ You need to create a new variable to hold suggested donations and expand the `ou
 
     `string[,] ourAnimals = new string[maxPets, `**`7`**`];`
 
-    You've expanded the `ourAnimals` array to support the added `suggestedDonation` data.
+    You expanded the `ourAnimals` array to support the added `suggestedDonation` data.
 
 ### Add `suggestedDonation` amounts to the sample data
 
 1. Take a minute to review `case 0:` inside the switch statement following comment #4.
 
-    The following code that defines sample data for the first pet before the `suggestedDonation` data is created.  It would fit nicely below the `animalNickname`!
+    The following code that defines sample data for the first pet before the `suggestedDonation` data is created. It would fit nicely below the `animalNickname`!
 
     ```csharp
         case 0:
@@ -104,19 +104,19 @@ You need to create a new variable to hold suggested donations and expand the `ou
     ourAnimals[i, 6] = "Suggested Donation: "  + suggestedDonation;
     ```
 
-    But, you won't add that code. In the next section you'll use another approach.
+    But, you don't add that code. In the next section, you'll use another approach.
 
 ### Data validation with `TryParse()`
 
-The variable `suggestedDonation` is intended to be a numeric value, but is collected and stored as a `string`. In the future you may have to validate `suggestedDonation` represents a decimal, and that you can convert it to a decimal so it's available to use for billing calculations. To avoid an error trying to use an entry like `twenty` you need to use `TryParse` validation.
+The variable `suggestedDonation` is intended to be a numeric value, but is collected and stored as a `string`. Consider future cases where you have to validate that `suggestedDonation` represents a decimal, and that you can convert it to a decimal so it's available to use for billing calculations. To avoid errors when users enter numbers in text format, like `twenty`, you need to use `TryParse` validation.
 
 > [!NOTE]
-> The code samples in this exercise are designed based on en-US culture settings, and use a period (`.`) as the decimal separator. Building and running the code with a culture setting that uses a different decimal separators (such as a comma `,`) may give unexpected results or errors. To fix this issue, replace the period decimal separators in the code samples with your local decimal separator (such as `,`).
-> Alternatively, to run a program using the en-US culture setting, add the following code to the top of your program: `using System.Globalization;` and after any other `using` statements add `CultureInfo.CurrentCulture = new CultureInfo("en-US");`.
+> The code samples in this exercise are designed based on en-US culture settings, and use a period (`.`) as the decimal separator. Building and running the code with a culture setting that uses a different decimal separator (such as a comma `,`) frequently gives unexpected results or errors. To fix this issue, replace the period decimal separators in the code samples with your local decimal separator (such as `,`).
+> Alternatively, to run a program using the en-US culture setting, add: `using System.Globalization;`to the top of your program. And after any other `using` statements, add `CultureInfo.CurrentCulture = new CultureInfo("en-US");`.
 
 1. Before comment #5, inside the end of the code block, add the code to validate that `suggestedDonation` can be cast as a decimal.
 
-    You add the following:
+    You add the code that follows:
 
     ```csharp
     if (!decimal.TryParse(suggestedDonation, out decimalDonation)){
@@ -124,7 +124,7 @@ The variable `suggestedDonation` is intended to be a numeric value, but is colle
     }
     ```
 
-    If the `suggestedDonation` variable can't be cast as a `decimal` the code assigns a default value `decimalDonation = 45.00m;`. If the cast is successful, the `TryParse` populates `decimalDonation`. Either way, `decimalDonation` represents a proper decimal.
+    If the `suggestedDonation` variable can't be cast as a `decimal`, then the code assigns a default value `decimalDonation = 45.00m;`. If the cast is successful, the `TryParse` populates `decimalDonation`. Either way, `decimalDonation` represents a proper decimal.
 
 1. Ensure that your validation code is in the right place!
 
@@ -149,7 +149,7 @@ The variable `suggestedDonation` is intended to be a numeric value, but is colle
 
     Finally you're ready to populate `suggestedDonation` data for each pet.
 
-1. Above comment #5, immediately after the `TryParse` closing bracket `}` you completed, add the following code:
+1. Just before comment #5, immediately after the `TryParse` closing bracket `}` you completed, add the following code:
 
     ```csharp
     ourAnimals[i, 6] = $"Suggested Donation: {decimalDonation:C2}";
@@ -159,7 +159,7 @@ The variable `suggestedDonation` is intended to be a numeric value, but is colle
 
 1. Take a minute to review how the suggested donation data finally makes it into the `ourAnimals` array.
 
-     The following code populates the `decimalAnimals` in context of the `TryParse()`:
+     The following code populates the `ourAnimals` array in context of the `TryParse()`:
 
     ```csharp  
     if (!decimal.TryParse(suggestedDonation, out decimalDonation)){
@@ -171,7 +171,7 @@ The variable `suggestedDonation` is intended to be a numeric value, but is colle
     // #5 display the top-level menu options
     ```
 
-    Notice that by using the code `{decimalDonation:C2}` the suggested donation, from `decimalDonation`, will display with the local currency symbol and two decimal places as directed by the currency formatting `:C2`.
+    Notice that by using the code `{decimalDonation:C2}` the suggested donation, from `decimalDonation`, displays with the local currency symbol and two decimal places as directed by the currency formatting `:C2`.
 
 ## Review and update where `ourAnimals` array should be used
 
@@ -181,7 +181,7 @@ The addition of the `suggestedDonation` data created need for further updates. T
 
     The inner loop "`for (int j = 0; j < `**`6`**`; j++)`" that prints the pet attributes needs to account for  `suggestedDonation` data added.
 
-2. Update the inner loop code exit condition.  Increased the exit condition by "1", so it becomes `j <`**`7`**. Check that your code matches the following:
+2. Update the inner loop code exit condition. Increased the exit condition by "1," so it becomes `j <`**`7`**. Check that your code matches the code that follows:
 
     ```csharp
     case "1":
@@ -220,7 +220,7 @@ With several code additions in place, you need to confirm your code works as exp
 
     A TERMINAL panel should open below the code Editor area.
 
-    There are several ways to open Visual Studio Code's integrated terminal. For example, the top menu provides access to the TERMINAL panel from both the **View** menu and the **Terminal** menu. You may also learn keyboard shortcuts that open the TERMINAL panel. Each method is acceptable.
+    There are several ways to open Visual Studio Code's integrated terminal. For example, the top menu provides access to the TERMINAL panel from both the **View** menu and the **Terminal** menu. Also, keyboard shortcuts that open the TERMINAL panel are a valuable option for increasing your coding efficiency. Each method is acceptable.
 
 1. Notice that the TERMINAL panel includes a command line prompt, and that the prompt shows the current folder path. For example:
 
@@ -231,11 +231,11 @@ With several code additions in place, you need to confirm your code works as exp
     You can use the TERMINAL panel to run Command Line Interface (CLI) commands, such as `dotnet build` and `dotnet run`. The `dotnet build` command compiles your code and display error and warning messages related to your code syntax.
 
     > [!IMPORTANT]
-    > You need to ensure that terminal command prompt is open to the root of your project workspace. In this case, the root of the project workspace is the Starter folder, where the Starter.csproj and Program.cs files are located. When you run commands in the terminal, the commands will try to perform actions using current folder location. If you try to run the `dotnet build` or `dotnet run` commands from a folder location that does not contain the files, the commands will generate error messages.
+    > You need to ensure that terminal command prompt is open to the root of your project workspace. In this case, the root of the project workspace is the Starter folder, where the Starter.csproj and Program.cs files are located. When you run commands in the terminal, the commands try to perform actions using current folder location. If you try to run the `dotnet build` or `dotnet run` commands from a folder location that doesn't contain the files, the commands generate error messages.
 
 1. At the TERMINAL command prompt, to build your project code, enter the following command: `dotnet build`  
 
-    After a couple seconds, you should see a message telling you that your build succeeded, and that you have 0 Warning(s) and 0 Error(s).
+    After a couple seconds, you should see a message telling you that your build succeeded, and that you have `0 Warnings and 0 Errors`.
 
     ```txt
     Determining projects to restore...
@@ -248,7 +248,7 @@ With several code additions in place, you need to confirm your code works as exp
     ```
 
     > [!NOTE]
-    > Use the above `dotnet build` and `dotnet run` steps each time you need to test your code in the exercises that follow in this module.
+    > Use the earlier `dotnet build` and `dotnet run` steps each time you need to test your code in the exercises that follow in this module.
 
 1. If you see Error or Warning messages, you need to fix them before continuing.
 
@@ -258,15 +258,15 @@ With several code additions in place, you need to confirm your code works as exp
 
     This message tells you the type of error that was detected and where to find it. In this case, the message tells you that the Program.cs file contains an error - `error CS1002: ; expected`. The `; expected` suggests that you forgot to include a `;` at the end of a statement. The `Program.cs(53,18)` portion of the message tells you the error location, on code line 53, at a position 18 characters in from the left.
 
-    A syntax error like this prevents the Build from succeeding (Build FAILED). Some Build messages provide a "Warning" instead of an "Error", which means there's something to be concerned with, but you can try running the program anyway (Build succeeded).
+    A syntax error like this prevents the Build from succeeding (Build FAILED). Some Build messages provide a "Warning" instead of an "Error," which means there's something to be concerned with, but you can try running the program anyway (Build succeeded).
 
-    Once you've fixed the issues and saved your updates, you can run the `dotnet build` command again. Continue until you have 0 Warning(s) and 0 Error(s).
+    Once you fix the issues and saved your updates, you can run the `dotnet build` command again. Continue until you have `0 Warning(s) and 0 Error(s)`.
 
-    If you have trouble resolving an issue on your own, you can examine the Program.cs code in the Final folder that's included as part of the download that you completed during Setup. The Program.cs code in the Final folder represents the conclusion of all exercises in this module, so it includes code that you haven't created yet.
+    If you encounter difficulty resolving an issue on your own, examine the Program.cs code in the Final folder included in the download completed during Setup. The Program.cs code in the Final folder represents the conclusion of all exercises in this module, so it includes code that you didn't create yet.
 
-    The solution code may look considerably different than the Program.cs code that you've developed at this point in the Guided project. However, you can try examining the Program.cs code in Final to help you isolate and fix an issue in your code if you need to.
+    The solution code often looks different than the Program.cs code that you developed to this point in the Guided project. However, you can examine the Program.cs code in Final to help you isolate and fix an issue in your code.
 
-    Try not to limit your use the solution code. Remember that you learn from mistakes and that every developer spends time finding and fixing errors.
+    Avoid relying on the solution code while developing your own solution. Remember that you learn from mistakes and that every developer spends time finding and fixing errors.
 
 1. Test the updated console app, at the TERMINAL command prompt build & run your project code with one command by entering: `dotnet run`. When the code runs two menu items display.
     - Enter "`1`" to test the "display all pets" output
@@ -308,6 +308,6 @@ With several code additions in place, you need to confirm your code works as exp
     Suggested Donation: $45.00
     ```
 
-    If everything worked as expected, congratulations! Otherwise, look for the error by checking code instruction steps involved.  If needed, start over with a new starter Project.cs file and if you still have issues check the solution folder code for this exercise.
+    If everything worked as expected, congratulations! Otherwise, look for the error by checking code instruction steps involved. If needed, start over with a new starter Project.cs file and if you still have issues check the solution folder code for this exercise.
 
 1. Type `exit`, at the app menu, to end the program and then close the terminal panel.

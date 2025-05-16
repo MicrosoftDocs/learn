@@ -2,6 +2,8 @@ You can use [Azure Private Link](/azure/private-link/private-link-overview) with
 
 This unit describes how Private Link can help you secure your Azure Virtual Desktop environment.
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=315ebcbb-1a39-45a6-9de8-911a3f7ffe80]
+
 ## How does Private Link work with Azure Virtual Desktop?
 
 Azure Virtual Desktop has three workflows with three corresponding resource types to use with private endpoints. These workflows are:

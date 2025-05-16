@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Verify your knowledge about high availability and disaster recovery options of Azure Arc-enabled SQL Managed Instance.
   ms.date: 08/06/2024
   author: MikeRayMSFT
@@ -59,4 +57,4 @@ quiz:
       isCorrect: true
       explanation: "Correct. Databases in the simple recovery model aren't supported in the automated backup."
       
-
+

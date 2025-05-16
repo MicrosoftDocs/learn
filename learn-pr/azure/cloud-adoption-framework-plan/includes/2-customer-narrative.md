@@ -1,4 +1,4 @@
-We shared the narrative for Tailwind Traders in the Getting Started module and other Learn modules for the Cloud Adoption Framework. There are two key activities specific to this module about planning for cloud adoption. The central operations and infrastructure team is preparing to migrate several workloads to the cloud. The CTO and the development team are also building new innovations using data, IoT on the edge, and mobile applications.
+We shared the narrative for Tailwind Traders in other Learn modules for the Cloud Adoption Framework. There are two key activities specific to this module about planning for cloud adoption. The central operations and infrastructure team is preparing to migrate several workloads to the cloud. The CTO and the development team are also building new innovations using data, IoT on the edge, and mobile applications.
 
 ## Plan for Tailwind Traders' migration effort
 

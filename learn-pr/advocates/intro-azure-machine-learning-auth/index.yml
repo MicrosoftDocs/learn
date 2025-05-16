@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.introduction-to-azure-machine-learning-auth
+metadata:
+  ms.author: viniap
+  author: Orin-Thomas
+  ms.date: 03/06/2025
+  title: Introduction to Azure Machine Learning authentication and authorization
+  description: Learn how to configure and manage Azure Machine Learning authentication and authorization.
+  ms.topic: module
+  moduleType: standard
+  ms.service: azure-machine-learning
+  ms.collection:
+    - ce-advocates-ai-copilot
+title: Introduction to Azure Machine Learning authentication and authorization
+summary: Overview to managing Azure Machine Learning authentication and authorization
+abstract: |
+  After completing this module, you'll be able to:
+  -	Set up authentication for Azure Machine Learning resources and workflows
+  -	Manage access to Azure Machine Learning workspaces
+  -	Set up authentication between Azure Machine Learning and other services
+prerequisites: |
+  To get the best learning experience from this module, you should have knowledge and experience of:
+  - Fundamental security concepts
+  - Fundamental AI concepts
+  - Fundamental Azure Machine Learning concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- administrator
+products:
+- azure-machine-learning
+units:
+- learn.introduction-azure-machine-learning-auth.introduction
+- learn.introduction-azure-machine-learning-auth.authentication-azure-machine-learning-workspaces
+- learn.introduction-azure-machine-learning-auth.manage-access-azure-machine-learning
+- learn.introduction-azure-machine-learning-auth.authentication-between-azure-machine-learning-other-azure-services
+- learn.introduction-azure-machine-learning-auth.knowledge-check
+- learn.introduction-azure-machine-learning-auth.summary
+badge:
+  uid: learn.introduction-to-azure-machine-learning-auth-badge

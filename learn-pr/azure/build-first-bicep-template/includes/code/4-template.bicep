@@ -10,7 +10,7 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2023-05-01' = {
   }
 }
 
-resource appServicePlan 'Microsoft.Web/serverfarms@2023-12-01' = {
+resource appServicePlan 'Microsoft.Web/serverfarms@2024-04-01' = {
   name: 'toy-product-launch-plan-starter'
   location: 'eastus'
   sku: {
@@ -18,7 +18,7 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2023-12-01' = {
   }
 }
 
-resource appServiceApp 'Microsoft.Web/sites@2023-12-01' = {
+resource appServiceApp 'Microsoft.Web/sites@2024-04-01' = {
   name: 'toy-product-launch-1'
   location: 'eastus'
   properties: {

@@ -7,7 +7,7 @@ In this demonstration, you'll learn to:
 - Schedule an update deployment programmatically.
 - Check deployment status.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4zwXz]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=c4ad0312-b44e-4be9-ab11-caa4cf770071]
 
 ## Next steps
 

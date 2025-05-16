@@ -12,7 +12,7 @@ This module consists of three lessons:
 - Lesson 2 – Real-time dashboards 
 - Lesson 3 – Enhance a dashboard 
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE5aA6e] 
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=62352ab5-1a9e-48b3-a8cd-837047d64fb8] 
 
 Module 8 Tips and Tricks 
 

@@ -28,4 +28,4 @@ Azure services that support availability zones are divided into two categories.
 | **Zone-redundant services** | For Azure services that are zone-redundant, the platform replicates automatically across all zones. | - Azure Storage that's zone-redundant <br> - Azure SQL Database |
 
 > [!Tip]
-> To achieve comprehensive business continuity on Azure, build your application architecture by using a combination of availability zones with Azure region pairs.
+> To achieve comprehensive business continuity on Azure, build your application architecture with a combination of availability zones and Azure [regional pairs](/azure/virtual-machines/regions#region-pairs).

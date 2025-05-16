@@ -5,7 +5,7 @@ As we read in earlier modules, with the advent of utility computing and better r
 The success of server virtualization at achieving resource sharing, higher utilization, and improved flexibility and elasticity has led to the advent of the idea of a software-defined datacenter (SDDC). An SDDC virtualizes all infrastructure in a manner that can be automated and easy to manage. A virtualized cluster, which includes servers, networking fabric, and storage systems, can be decoupled from the physical resources and provided as software resources that can be configured and managed. Instead of building applications using dedicated servers, storage resources, and networking resources, an SDDC offers the datacenter infrastructure as software services since all of the needed resources can be virtualized. 
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q0ew]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6d0bdebb-75f7-48bd-b839-77446046c8bd]
 
 The main technologies that enable an SDDC include:
 
@@ -15,4 +15,3 @@ The main technologies that enable an SDDC include:
 - Management and automation software 
 
 Earlier, we covered the mature server/compute virtualization technology in detail. In this module, we will briefly introduce the main ideas behind the emerging technologies of SDN and SDS. SDN and SDS can, for example, enable setting up an isolated network with dedicated bandwidth and latency requirements across multiple VMs and provisioning storage for an application with configurable bandwidth and latency requirements. As the cloud computing paradigm continues to evolve, we will see SDN and SDS play a role in enabling improved sharing, isolation, flexibility, QoS guarantees, and management of datacenter resources. 
-

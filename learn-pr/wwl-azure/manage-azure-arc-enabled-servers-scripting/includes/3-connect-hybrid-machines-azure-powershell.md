@@ -30,7 +30,7 @@ The installed extension ``Az.ConnectedMachine`` is experimental and not covered 
      -  To install the Connected Machine agent on the target machine that can directly communicate to Azure, run:
         
         ```powershell
-        Azure PowerShellCopyConnect-AzConnectedMachine -ResourceGroupName myResourceGroup -Name myMachineName -Location <region>
+        PowerShellCopyConnect-AzConnectedMachine -ResourceGroupName myResourceGroup -Name myMachineName -Location <region>
         ```
      -  To install the Connected Machine agent on the target machine that communicates through a proxy server, run:
         

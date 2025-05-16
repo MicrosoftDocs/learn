@@ -2,8 +2,6 @@
 uid: learn.execute-azure-function-with-triggers.4-create-timer-trigger
 title: Exercise - Create a timer trigger
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create a timer trigger
   description: Create a timer trigger
   ms.date: 04/09/2024
@@ -23,4 +21,4 @@ content: |
 #       type: "Microsoft.Web/sites"
 #       kind: functionapp
 #   hint: "Use the portal to create your function app and timer-triggered function using the instructions above."
-
+

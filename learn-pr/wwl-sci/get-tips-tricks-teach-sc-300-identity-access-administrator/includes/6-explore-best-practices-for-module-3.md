@@ -11,7 +11,7 @@ This module consists of four lessons:
 - Lesson 3 – Plan multifactor authentication
 - Lesson 4 – Configure multifactor authentication methods
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWXh3c]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=00a06aa8-9207-4f85-8c56-89557fbdd1d6]  
  
 Module 3 Tips and Tricks
 

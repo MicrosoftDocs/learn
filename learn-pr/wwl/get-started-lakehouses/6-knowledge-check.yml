@@ -1,19 +1,18 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-lakehouses.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  hidden_question_numbers: ["62697432_2","62697432_30","62697432_6","62697432_59","62697432_63","62697432_71","62697432_75","62697432_79","62697432_83","62697432_87","62697432_91","62697432_95","62697432_108","62697432_112","62697432_116","62697432_120","62697432_132","62697432_136","62697432_140"]
+  ai_generated_module_assessment: true
+  title: Module assessment
   description: "Knowledge check"
-  ms.date: 11/12/2024
+  ms.date: 03/19/2025
   author: angierudduck
   ms.author: anrudduc
   ms.topic: unit
-  ms.custom:
-  - build-2023
-  - build-2023-dataai
-  - build-2023-fabric
 durationInMinutes: 3
 quiz:
+  title: ""
   questions:
   - content: "What is a Microsoft Fabric lakehouse?"
     choices:

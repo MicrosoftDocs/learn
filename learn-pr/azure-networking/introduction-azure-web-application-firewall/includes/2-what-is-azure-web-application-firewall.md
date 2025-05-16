@@ -1,6 +1,6 @@
 Here, you'll learn the basics of Azure Web Application Firewall. This overview will help you evaluate whether Azure Web Application Firewall is a useful tool to add to Contoso's overall network-security strategy.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWCwkM]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b23e4db1-5007-4f42-ae55-3a564a4ab7d3]
 
 ## Overview of Azure Web Application Firewall
 
@@ -26,19 +26,18 @@ You can deploy Azure Web Application Firewall in minutes. Your web apps immediat
 
 To help you evaluate Azure Web Application Firewall, here are some of its important features:
 
-- **Managed rules**: The rules that Azure Web Application Firewall uses to detect and prevent common exploits are created, maintained, and updated by Microsoft's security team. If a rule changes, or a rule set (refer to the following description) is modified, Microsoft updates Azure Web Application Firewall automatically and seamlessly.
+- **Managed rules**: Microsoft's security team creates, maintains, and updates the rules that Azure Web Application Firewall uses to detect and prevent common exploits. If a rule changes, or a rule set (refer to the following description) is modified, Microsoft updates Azure Web Application Firewall automatically and seamlessly.
 
     > [!NOTE]
-    > You can't modify or delete the managed rules offered by Azure Web Application Firewall. However, if a particular rule is problematic for your environment (for example, it blocks legitimate traffic to your web app) you can create exclusions or disable the rule, or rule set. You can also create custom rules to overwrite the default behavior.
+    > You can't modify or delete the managed rules offered by Azure Web Application Firewall. However, if a particular rule is problematic for your environment (for example, it blocks legitimate traffic to your web app) you can create exclusions or disable the rule or rule set. You can also create custom rules to overwrite the default behavior.
 
 - **Bot rules**: The bot rules identify good bots and protect from bad bots. Bad bots are detected based on Microsoft Threat Intelligence.
-
 - **Custom rules**: If the managed rules offered by Azure Web Application Firewall don't cover a specific threat to your web application, you can create a custom rule.
-- **Modes**: Azure Web Application Firewall can operate in one of two modes: detection mode only logs requests that violate a rule, while prevention mode both logs and blocks requests that violate a rule.
+- **Modes**: Azure Web Application Firewall can operate in one of two modes. Detection mode only logs requests that violate a rule, while prevention mode both logs and blocks requests that violate a rule.
 - **Exclusion lists**: You can configure Azure Web Application Firewall to ignore specific attributes when it checks requests.
 - **Policies**: You can combine a set of managed rules, custom rules, exclusions, and other Azure Web Application Firewall settings into a single element called an Azure Web Application Firewall policy. You can then apply that policy to multiple web apps for easy management and maintenance.
 - **Request size limits**: You can configure Azure Web Application Firewall to flag requests that are either too small or too large.
-- **Alerts**: Azure Web Application Firewall integrates with Azure Monitor. This integration gives you near-real-time alerts when the WAF detects a threat.
+- **Alerts**: Azure Web Application Firewall integrates with Azure Monitor. This integration gives you near-real-time alerts when the WAF (Web Application Firewall) detects a threat.
 
 ## Common attacks prevented by Azure Web Application Firewall
 

@@ -53,7 +53,7 @@ At Microsoft, we firmly believe everyone should benefit from intelligent technol
 
 **Microsoft inclusive design principles**:
 * Recognize exclusion
-* Solve for fun, extend to many
+* Solve for one, extend to many
 * Learn from diversity
 
 To ensure inclusiveness in your AI system, you should:

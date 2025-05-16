@@ -13,7 +13,7 @@ This module consists of four lessons:
 - Lesson 3 – Work with DataFrames in Azure Databricks 
 - Lesson 4 – Work with DataFrames advanced methods in Azure Databricks 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5aCEq] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=3c85be4d-c4fd-435c-b5fa-940b7a404a0a] 
 
 Module 3 Tips and Tricks 
 

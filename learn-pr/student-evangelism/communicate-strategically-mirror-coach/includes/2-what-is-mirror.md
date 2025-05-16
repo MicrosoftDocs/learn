@@ -34,7 +34,7 @@ To approach and solve problems strategically, a crucial first step is to develop
 
 To learn more about self-regulation and self-regulated learning, watch the following short video.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ONBM]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=77b18a3a-576c-42c9-9cca-30d05ecfccc7]
 
 ## List the characteristics of a mirror role
 

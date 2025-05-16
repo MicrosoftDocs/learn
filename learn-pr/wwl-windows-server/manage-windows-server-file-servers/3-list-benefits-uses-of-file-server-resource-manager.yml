@@ -4,7 +4,7 @@ title: List the benefits and uses of File Server Resource Manager
 metadata:
   title: List the benefits and uses of File Server Resource Manager
   description: "List the benefits and uses of File Server Resource Manager"
-  ms.date: 10/20/2021
+  ms.date: 01/01/2025
   author: wwlpublish
   ms.author: tonyj
   ms.topic: unit
@@ -20,10 +20,10 @@ quiz:
     choices:
     - content: "fsutil"
       isCorrect: true
-      explanation: "That's correct. You use fsutil with the **file createnew** switches to create a file of an arbitrary size."
+      explanation: "Correct. You use fsutil with the **file createnew** switches to create a file of an arbitrary size."
     - content: "File Explorer"
       isCorrect: false
-      explanation: "That's incorrect. You can create new files with File Explorer. However, you can't set their size."
+      explanation: "Incorrect. You can create new files with File Explorer. However, you can't set their size."
     - content: "FSRM"
       isCorrect: false
-      explanation: "That's incorrect. FSRM allows you to trigger actions in response to file creation. However, not to create files of arbitrary sizes."
+      explanation: "Incorrect. FSRM allows you to trigger actions in response to file creation. However, not to create files of arbitrary sizes."

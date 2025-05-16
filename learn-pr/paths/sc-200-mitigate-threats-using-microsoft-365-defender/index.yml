@@ -36,7 +36,6 @@ modules:
 - learn-m365.m365-threat-remediate
 - learn.wwl.manage-azure-ad-identity-protection
 - learn-m365.m365-threat-safeguard
-- learn-m365.m365-threat-remediate
 - learn-m365.cloud-app-security
 trophy:
   uid: learn.wwl.sc-200-mitigate-threats-using-microsoft-365-defender.trophy

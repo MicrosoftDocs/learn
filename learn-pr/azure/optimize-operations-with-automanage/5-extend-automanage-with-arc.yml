@@ -2,13 +2,11 @@
 uid: learn.optimize-operations-with-automanage.extend-automanage-with-arc
 title: Extend Azure Automanage across non-Azure infrastructure with Azure Arc
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Extend Azure Automanage across non-Azure infrastructure with Azure Arc
+  title: Extend Azure Automanage Across Non-Azure Infrastructure with Azure Arc
   description: Learn how to extend Azure Automanage across non-Azure infrastructure using Azure Arc.
-  ms.date: 12/19/2023
-  author: johnmarco
-  ms.author: johnmarc
+  ms.date: 04/17/2025
+  author: robmcm
+  ms.author: robmcm
   ms.topic: unit
 durationInMinutes: 5
 content: |

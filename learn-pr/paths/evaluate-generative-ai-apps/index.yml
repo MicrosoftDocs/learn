@@ -33,4 +33,4 @@ modules:
   - learn.evaluate-generative-ai-apps
   - learn.run-evaluations-generate-synthetic-datasets
 trophy:
-  uid: learn.azure.evaluate-generative-ai-apps
+  uid: learn.azure.evaluate-generative-ai-apps.badge

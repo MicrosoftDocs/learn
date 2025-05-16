@@ -1,6 +1,4 @@
-
-
-The network administrator at Contoso is concerned about conflicting firewall settings between Microsoft Azure Firewall and Windows Defender Firewall with Windows Server IaaS VMs. You investigate how to set-up these two systems to work together.  
+The network administrator at Contoso is concerned about conflicting firewall settings between Microsoft Azure Firewall and Windows Defender Firewall with Windows Server IaaS VMs. You investigate how to set up these two systems to work together.  
 
 ## What is Windows Defender Firewall with Advanced Security?
 
@@ -63,5 +61,3 @@ To review more Windows PowerShell cmdlets, visit the [NetSecurity](https://aka.m
 ## Creating firewall rules when creating a VM in Azure
 
 When you create IaaS VMs running Windows Server in Azure, you must be careful to configure the firewall correctly. It's feasible to configure Windows Defender Firewall with Advanced Security to block or  allow a port that is being allowed, or blocked, by Azure Firewall. When you first create a VM in Azure, you must define the Inbound port rules. These mismatched settings can create service unavailability and confusion.
-
-![Screenshot of the Create a virtual machine wizard in the Azure portal. The administrator has enabled the RDP inbound port on the public interface. Other choices include HTTP, HTTPS, and SSH.](../media/m19-azure-virtual-machine-firewall.png)

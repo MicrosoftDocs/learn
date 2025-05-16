@@ -15,7 +15,7 @@ Our core setup has two main folders that store code:
   - Contains any files that need to be rendered
   - Stores all *.jsx* files
 
-We'll also create two files to configure our application:
+We also create two files to configure our application:
 
 - **package.json**: Contains the list of packages and scripts for our application
 - **snowpack.config.js**: Contains configuration options for Snowpack
@@ -56,7 +56,7 @@ In an empty directory, start by installing the necessary components by using npm
     ```
 
     > [!NOTE]
-    > Snowpack is a *dev dependency*. That is, it's not required for production because it generates the necessary JavaScript and HTML files during the build process.
+    > Snowpack is a *dev dependency*. It isn't required for production because it generates the necessary JavaScript and HTML files during the build process.
 
 1. Open the directory in Visual Studio Code by running the following command.
 
@@ -66,11 +66,11 @@ In an empty directory, start by installing the necessary components by using npm
 
 ## Set up Snowpack
 
-One of the advantages of a tool like Snowpack is that it's mostly self-configuring. However, we do need to indicate our code's folder structure. To indicate the folder structure, we set options in the *snowpack.config.js* file.
+One of the advantages of a tool like Snowpack is that it's mostly self-configuring. However, we do need to indicate our code's folder structure. To indicate the folder structure, we set options in the `snowpack.config.js` file.
 
 1. In Visual Studio Code, create a new file by selecting **File** > **New File**.
 
-1. Name the file *snowpack.config.js*.
+1. Name the file `snowpack.config.js`.
 
 1. In the new file, add the following code.
 
@@ -83,15 +83,15 @@ One of the advantages of a tool like Snowpack is that it's mostly self-configuri
     }
     ```
 
-This code tells Snowpack to use our *public* folder as the root of the application. It also sets the *src* directory as the virtual location for the JavaScript files and HTML files it will generate.
+This code tells Snowpack to use our *public* folder as the root of the application. It also sets the *src* directory as the virtual location for the JavaScript files and HTML files it generates.
 
 ## Create the npm scripts
 
-To support our development work, we'll use two scripts with Snowpack. The first script starts the development server. This action automatically refreshes our page when we modify our application. The second script is used when we're ready to build all our files for deployment.
+To support our development work, we use two scripts with Snowpack. The first script starts the development server. This action automatically refreshes our page when we modify our application. The second script is used when we're ready to build all our files for deployment.
 
 1. In Visual Studio Code, open the *package.json* file.
 
-1. At the bottom of the file, above the last curly bracket (`}`), add the following code. This code creates the start and build scripts.
+1. At the bottom of the file, above the last curly bracket (`}`), add the following code. This code creates the **start** and **build** scripts.
 
     ```json
     {
@@ -122,4 +122,4 @@ To support our development work, we'll use two scripts with Snowpack. The first 
 
 1. Save all files by selecting **File** > **Save all**.
 
-You have now set up your starter project! You can add *index.html*, *App.jsx*, and other files just as you did in the previous units.
+Your starter project is now set up! You can add *index.html*, *App.jsx*, and other files just as you did in the previous units.

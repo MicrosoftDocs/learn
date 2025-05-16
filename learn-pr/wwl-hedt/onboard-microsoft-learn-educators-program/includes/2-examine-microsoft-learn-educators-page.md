@@ -1,6 +1,6 @@
 The MSLE program page is the place to go for the most up-to-date information about the program. 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4U84i] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=68524b20-24e2-45b9-9c38-96599c6b61a0] 
 
 Visit the [MSLE program page](https://aka.ms/msle) for a high-level overview of the program where you can explore: 
 

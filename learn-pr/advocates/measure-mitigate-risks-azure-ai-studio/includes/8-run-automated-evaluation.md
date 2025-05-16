@@ -2,14 +2,14 @@ Automated Evaluations within Azure AI Foundry execute an AI-assisted evaluation 
 
 :::image type="content" source="../media/automated-evaluation-results.png" alt-text="A screenshot of the automated evaluation results within Azure AI Foundry. The screenshot displays the metric dashboard." lightbox="../media/automated-evaluation-results.png":::
 
-We’re able to use AI-assisted evaluation to assess both the performance and safety of your generative AI application. AI-assisted evaluations can be beneficial in scenarios where ground truth and expected answers aren't available. In many generative AI scenarios, such as open-ended question answering or creative writing, single correct answers don't exist, making it challenging to establish the ground truth or expected answers that are necessary for traditional metrics.
+We’re able to use AI-assisted evaluation to assess the performance and safety of your generative AI application. AI-assisted evaluations can be beneficial in scenarios where ground truth and expected answers aren't available. In many generative AI scenarios, such as open-ended question answering or creative writing, single correct answers don't exist, making it challenging to establish the ground truth or expected answers that are necessary for traditional metrics.
 
 In the context of the Contoso Camping Store chatbot, you’re provided with a test dataset which includes sample input, and a generated response from the model that is based on its current configuration. Let’s run an automated evaluation to assess the model’s performance and safety.
 
 ## Configure and run the automated evaluation
 
 1. In the left navigation, within the **Assess and improve** section, select **Evaluation**.
-1. Within the **Automated evaluations** tab, select **Create a evaluation**.
+1. Within the **Automated evaluations** tab, select **Create a new evaluation**.
 1. For the **What do you want to evaluate?** window, select **Dataset**.
 
 **Basic Information**
@@ -20,7 +20,7 @@ In the context of the Contoso Camping Store chatbot, you’re provided with a te
 **Configure test data**
 
 1. For the **Select the data you want to evaluate** question, select **Add your dataset**.
-1. Browse to where you saved **e2e-automated-evaluation-1.jsonl** and select the file for upload.
+1. Select **Upload file**, browse to where you saved **e2e-automated-evaluation-1.jsonl**, and select the file for upload.
 1. Select **Next**.
 
 **Select metrics**
@@ -29,14 +29,14 @@ In the context of the Contoso Camping Store chatbot, you’re provided with a te
 1. For the **Connection** field, select your AzureOpenAI connection.
 1. For the **Deployment name/Model** field, select the **gpt-4o** model.
 1. For the **Risk and safety metrics curated by Microsoft**, select all the metrics.
-1. For the **Set the threshold to calculate the defect rate**, select **Medium**.
-1. For the **How does your dataset map to the evaluation input?** section, map the following fields:
+1. For the **Set the threshold to calculate the defect rate**, select Medium.
+1. For the **How does your dataset map to the evaluation input?** section, map the following fields and select **Next**:
 
-| **Flow** | **Dataset source** |
+| **Name** | **Data source** |
 | --- | --- |
-| response | answer or ${data.answer} |
-| query | question or ${data.question} |
-| ground_truth | ground_truth or ${data.ground_truth} |
+| query | question |
+| response | answer |
+| ground_truth | ground_truth |
 
 **Review and finish**
 
@@ -67,7 +67,7 @@ Now that you have the results of the automated evaluation, you’re equipped wit
 To facilitate a comprehensive comparison between two or more runs, you can select the desired runs and initiate the comparison process within a **List** or **Dashboard** view. Let’s run another automated evaluation for the model and compare the results.
 
 > [!NOTE]
-> The **e2e-automated-evaluation-2.jsonl** file simulates a fictitious dataset where it is assumed that modifications were made to improve the model, such as modifying the system message, adjusting content filters, and/or grounding with additional data.
+> The **e2e-automated-evaluation-2.jsonl** file simulates a fictitious dataset where it is assumed that modifications were made to improve the model output, such as modifying the system message, adjusting content filters, and/or grounding with additional data.
 
 ## Dashboard view
 
@@ -77,7 +77,7 @@ To facilitate a comprehensive comparison between two or more runs, you can selec
 1. Create a new evaluation following the steps in the **Configure and run an automated evaluation** exercise and name the evaluation **automated-eval2**. Use the **e2e-automated-evaluation-2.jsonl** file as the dataset.
 1. Once the evaluation is complete, select both the **automated-eval1** and **automated-eval2** evaluation runs in the **Automated evaluations** list.
 1. Select **Compare**.
-1. Hover over the title of **automated-eval1** and select **Set as baseline**. This sets the initial evaluation as the baseline metrics across all evaluation metrics. This is helpful for comparing a baseline set of metrics to newly run evaluations.
+1. Within the **Comparison** section, hover over the title of **automated-eval1** and select **Set as baseline**. This sets the initial evaluation as the baseline metrics across all evaluation metrics. This is helpful for comparing a baseline set of metrics to newly run evaluations.
 1. Observe how the metrics might change after making adjustments to the system prompt or refining the grounded data.
 1. For a streamline view to observe differences, enable the **Show differences** toggle. This toggle modifies the table to only display the rows that differ between the baseline run **(automated-eval1)** and the compared run **(automated-eval2)**. This feature can be helpful to highlight discrepancies between runs and pinpoint where potential improvements or adjustments might be needed.
 

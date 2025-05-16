@@ -1,5 +1,3 @@
-
-
 Contoso can use the Pricing calculator to estimate costs prior to deploying Azure resources. But after deployment, it's still important for them to be able to manage their resource costs in Azure. Using a number of Azure tools, Contoso can monitor and limit Azure resource costs.
 
 ## What is Azure Advisor?
@@ -49,15 +47,8 @@ To use Azure Advisor to review cost recommendations, use the following procedure
      > [!NOTE]
      > Advisor might not return any cost recommendations, either because assessments might not have completed, or because Advisor doesn't have any.
 
-     [![Screenshot of Azure portal Advisor blade with five category boxes for recommendations: Cost, Security, Reliability, Operational excellence, and Performance.](../media/m21-advisor-recommendations.png)](../media/m21-advisor-recommendations.png#lightbox)
-
 4. Select the **Cost** tile. This action takes you to detailed recommendations from Advisor.
-
-     [![Screenshot of Azure portal Advisor recommendations blade with the cost recommendations. Currently there are two high-impact VM recommendations for using reserved instances, and right-size or shutdown of underutilized VMs.](../media/m21-advisor-cost-recommendations.png)](../media/m21-advisor-cost-recommendations.png#lightbox)
-
 5. Selecting a recommendation takes you to the details for that specific recommendation. You can then take a specific action, such as resizing VMs to reduce cost.
-
-     [![Screenshot of Azure portal Advisor with several specific VMs to resize or shut down, and their potential savings.](../media/m21-advisor-resize-virtual-machine.png)](../media/m21-advisor-resize-virtual-machine.png#lightbox)
 
 ## What is Microsoft Cost Management?
 
@@ -70,11 +61,7 @@ You can use Microsoft *Cost Management* to gain greater insights into where your
 5. In the **Date** field, select the period that you want to review.
 6. You can also choose between the types of charts you want to use to review your costs. The default is **Area**, but you can also choose **Line**, **Column**, or **Table**.
 
-[![Screenshot of Azure portal Cost analysis section of the Cost Management pane in which an area cost chart is rising steadily.](../media/m21-cost-management.png)](../media/m21-cost-management.png#lightbox)
-
 If you want to configure budgets to control spending, in the **Cost management** section, select **Budgets**. You can then create a budget for various Azure resources by selecting **+ Add**. If you also want to configure an alert for spending, select the **Set alerts** tab. From there you select the action group that is used when your action is triggered. Action groups define the appropriate action to be taken when your budget limit is approached.
-
-[![Screenshot of Azure portal Set alerts tab in the Create budget blade.](../media/m21-budget-alert.png)](../media/m21-budget-alert.png#lightbox)
 
 > [!NOTE]
 > Although you can set a budget and create alerts when spending approaches your budgetary limit, this doesn't prevent charges from being incurred. It merely alerts you to your current spending.
@@ -84,9 +71,9 @@ If you want to configure budgets to control spending, in the **Cost management**
 Some Azure subscriptions have an associated monthly credit. These include Azure trial accounts. These subscriptions have a *spending limit* that helps to ensure that you aren't charged after you've used up your credits.
 
 > [!NOTE]
-> Azure spending limits are different from subscription, service, or resource group limits and quotas. For more information, refer to [Azure subscription and service limits, quotas, and constraints](https://aka.ms/azure-subscription-and-service-limits-quotas-and-constraints?azure-portal=true).
+> Azure spending limits are different from subscription, service, or resource group limits and quotas. For more information, see [Azure subscription and service limits, quotas, and constraints](https://aka.ms/azure-subscription-and-service-limits-quotas-and-constraints?azure-portal=true).
 
-The spending limits feature can help prevent you from consuming all the credit on your account within each billing period. When your Azure usage results in charges that use all of your included monthly credit, Azure disables and turns off services that you deployed for the rest of the billing period. After a new billing period begins, and assuming you've credits available, Azure reactivates and deploys your resources.
+The spending limits feature can help prevent you from consuming all the credit on your account within each billing period. When your Azure usage results in charges that use all of your included monthly credit, Azure disables and turns off services that you deployed for the rest of the billing period. After a new billing period begins, and assuming you have credits available, Azure reactivates and deploys your resources.
 
 Azure notifies you by email when you reach the spending limit for your subscription. In addition, you can use the Azure portal to review notifications about your credit spend.
 
@@ -110,8 +97,6 @@ Oversized Azure VMs are a common but unnecessary expense, and one that you can e
 
 ## Deallocate VMs when not being used
 
-If you've VM workloads that you don't use all of the time, but you're running them constantly, you're incurring unnecessary Azure costs. Consider shutting these VMs down, and using a schedule to restart as needed. While the VM is stopped in a deallocated state, you don't pay for the compute resources for that VM.
+If you have VM workloads that you don't use all of the time, but you're running them constantly, you're incurring unnecessary Azure costs. Consider shutting down these VMs, and using a schedule to restart as needed. While the VM is stopped in a deallocated state, you don't pay for the compute resources for that VM.
 
 To deallocate a VM, from the Azure portal, locate the VM you want to configure, and in the **Operations** section, select **Auto-shutdown**. Then configure the auto-shutdown properties.
-
-![Screenshot of Azure portal Auto-shutdown section of a virtual machine pane, with a shutdown time enabled for 7:00:00 PM.](../media/m21-virtual-machine-auto-shutdown.png)

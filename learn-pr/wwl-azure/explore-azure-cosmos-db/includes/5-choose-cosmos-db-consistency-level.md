@@ -16,7 +16,7 @@ Strong consistency offers a linearizability guarantee. Linearizability refers to
 
 ### Bounded staleness consistency
 
-In bounded staleness consistency, the lag of data between any two regions is always less than a specified amount. The amount can be "K" versions (that is, "updates") of an item or by "T" time intervals, whichever is reached first. In other words, when you choose bounded staleness, the maximum "staleness" of the data in any region can be configured in two ways:
+In bounded staleness consistency, the lag of data between any two regions is always less than a specified amount. The amount can be *K* versions (that is, *updates*) of an item or by *T* time intervals, whichever is reached first. In other words, when you choose bounded staleness, the maximum "staleness" of the data in any region can be configured in two ways:
 
 *   The number of versions (*K*) of the item
 *   The time interval (*T*) reads might lag behind the writes
@@ -27,7 +27,7 @@ For a single-region account, Bounded Staleness provides the same write consisten
 
 ### Session consistency
 
-In session consistency, within a single client session, reads are guaranteed to honor the read-your-writes, and write-follows-reads guarantees. This guarantee assumes a single “writer” session or sharing the session token for multiple writers.
+In session consistency, within a single client session, reads are guaranteed to honor the read-your-writes, and write-follows-reads guarantees. This guarantee assumes a single “writer" session or sharing the session token for multiple writers.
 
 Like all consistency levels weaker than Strong, writes are replicated to a minimum of three replicas (in a four replica set) in the local region, with asynchronous replication to all other regions.
 
@@ -35,7 +35,7 @@ Like all consistency levels weaker than Strong, writes are replicated to a minim
 
 In consistent prefix, updates made as single document writes see eventual consistency. Updates made as a batch within a transaction, are returned consistent to the transaction in which they were committed. Write operations within a transaction of multiple documents are always visible together.
 
-Assume two write operations are performed on documents *Doc 1* and *Doc 2*, within transactions T1 and T2. When client does a read in any replica, the user sees either “*Doc 1* v1 and *Doc 2* v1” or “*Doc 1* v2 and *Doc 2* v2”, but never “*Doc 1* v1 and *Doc 2* v2” or “*Doc 1* v2 and *Doc 2* v1” for the same read or query operation.
+Assume two write operations are performed on documents *Doc 1* and *Doc 2*, within transactions T1 and T2. When client does a read in any replica, the user sees either "*Doc 1* v1 and *Doc 2* v1" or "*Doc 1* v2 and *Doc 2* v2," but never "*Doc 1* v1 and *Doc 2* v2" or "*Doc 1* v2 and *Doc 2* v1" for the same read or query operation.
 
 ### Eventual consistency
 

@@ -2,8 +2,6 @@
 uid: learn.wwl.teach-azure-204-develop-solution-microsoft-azure-academic-programs.objective-domains
 title: Discuss objective domains
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Discuss objective domains
   description: "Discuss objective domains"
   ms.date: 06/02/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-objective-domains.md)]
+  [!include[](includes/2-objective-domains.md)]

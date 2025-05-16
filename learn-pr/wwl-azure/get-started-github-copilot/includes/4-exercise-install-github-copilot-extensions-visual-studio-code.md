@@ -17,10 +17,17 @@ To use GitHub Copilot, you must have an active subscription for GitHub Copilot i
 
 ### Personal account
 
-You can set up a subscription to GitHub Copilot Individual with your personal GitHub account. You can select between monthly, annual, and a free 30-day trial subscription.
+You can set up a subscription to GitHub Copilot Pro with your personal GitHub account. You can select between monthly, annual, and a free 30-day trial subscription.
 
 > [!NOTE]
 > The GitHub Copilot free trial offer can be found on your personal GitHub account page. Open your GitHub account Settings page, and then select Copilot to access the trial offer or check the status of your GitHub Copilot subscription.
+
+> [!TIP]
+> GitHub Copilot offers a free tier with **2,000 code autocompletes and 50 chat messages per month**. To get started, open Visual Studio Code, click on the GitHub Copilot icon, and then click "Sign in to Use GitHub Copilot for Free". Log in to your GitHub account in the window that will open in the browser. [Learn more](https://gh.io/copilot).
+
+> [!TIP]
+> Educators, Students and select open-source maintainers can receive Copilot Pro for free, learn how at: [https://aka.ms/Copilot4Students](https://aka.ms/Copilot4Students).
+
 
 ### Member of an organization
 

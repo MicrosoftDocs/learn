@@ -28,7 +28,7 @@ Have you ever felt like you're at a breaking point? Sometimes you have a plan re
 
 How is cognitive flexibility relevant in the tech industry? To understand the relationship between cognitive flexibility and tech resilience, review the following video, which is approximately two minutes long.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ONz7]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0b3dea16-ef6d-412d-b3a3-646d3ed6586b]
 
 After you watch the video, reflect on your experience when you first started out in the CS field. Think about some topics that you found difficult or confusing when they were first introduced.
 

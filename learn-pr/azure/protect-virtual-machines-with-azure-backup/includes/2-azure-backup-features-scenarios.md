@@ -4,7 +4,7 @@ In this unit, you look at how Azure Backup works, and study some of the supporte
 
 ## What is Azure Backup?
 
-Azure Backup is a built-in Azure service that provides secure backup for all Azure-managed data assets. It uses zero-infrastructure solutions to enable self-service backups and restores, with at-scale management at a lower and predictable cost. Azure Backup currently offers specialized backup solutions for Azure and on-premises virtual machines (VMs). Azure Backup also gives workloads like SQL Server or SAP High-performance Analytic Appliance (HANA) running in Azure VMs enterprise-class backup and restore options.
+Azure Backup is a built-in Azure service that provides secure backup for all Azure-managed data assets. It uses zero-infrastructure solutions to enable self-service backups and restores, with at-scale management at a lower and predictable cost. Azure Backup currently offers specialized backup solutions for Azure and on-premises virtual machines (VMs). Azure Backup also gives workloads like SQL Server or SAP HANA (High-performance Analytic Appliance) running in Azure VMs enterprise-class backup and restore options.
 
 In contrast to traditional backup solutions that can take considerable effort to set up, Azure Backup is easily managed through the Azure portal.
 

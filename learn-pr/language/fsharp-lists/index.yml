@@ -4,9 +4,8 @@ metadata:
   title: Store and apply operations on list data in F#
   description: This module covers collections in F#, with a specific focus on lists.
   ms.date: 03/24/2023
-  author: softchris
-  ms.author: chnoring
-  manager: coxford
+  author: baronfel
+  ms.author: chethusk 
   ms.topic: module
   ms.custom: team=nextgen
   ms.devlang: fsharp

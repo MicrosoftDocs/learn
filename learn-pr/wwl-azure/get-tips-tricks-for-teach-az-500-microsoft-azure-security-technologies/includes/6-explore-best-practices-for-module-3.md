@@ -10,7 +10,7 @@ This module consists of four lessons:
 
 **Lesson 4** – Configure and manage SQL database security 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE50LQ8]  
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6d39f19c-05f7-46c2-aca4-fefdaccce8e2]  
 
 ### Module 3 Tips and Tricks 
 

@@ -2,7 +2,7 @@ You decide to follow your colleague's suggestion to learn about mindset. Remembe
 
 To learn more about how you can cultivate a growth mindset, review this video, which is about four minutes long:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OFD7]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=21897ef2-1ca9-4d28-9474-c34655ec3970]
 
 ## Reflection
 

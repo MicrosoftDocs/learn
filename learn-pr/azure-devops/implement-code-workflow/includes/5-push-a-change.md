@@ -5,12 +5,12 @@ Mara has been given the task of changing some text on the home page of the websi
 Let's briefly review the steps to follow to complete the task:
 
 > [!div class="checklist"]
-> * Synchronize your local repository with the latest `main` branch on GitHub
-> * Create a branch to hold your changes
-> * Make the code changes you need, and verify them locally
-> * Push your branch to GitHub
-> * Merge any recent changes from the `main` branch on GitHub into your local working branch, and verify that your changes still work
-> * Push up any remaining changes, watch Azure Pipelines build the application, and submit your pull request
+> * Synchronize your local repository with the latest `main` branch on GitHub.
+> * Create a branch to hold your changes.
+> * Make the code changes you need, and verify them locally.
+> * Push your branch to GitHub.
+> * Merge any recent changes from the `main` branch on GitHub into your local working branch, and verify that your changes still work.
+> * Push up any remaining changes, watch Azure Pipelines build the application, and submit your pull request.
 
 ## Fetch the latest main branch
 
@@ -71,7 +71,7 @@ You should see this:
 
 You can interact with the page, including the leaderboard. When you select a player's name, you see details about that player.
 
-When you're finished, return to the terminal window and select <kbd>Ctrl+C</kbd> to stop the running application.
+When you're finished, return to the terminal window, and select <kbd>Ctrl+C</kbd> to stop the running application.
 
 ## Create a feature branch
 
@@ -173,9 +173,9 @@ As an optional step, trace the build as it moves through the pipeline, and verif
 
 While you were busy working on your feature, changes might have been made to the remote `main` branch. Before you create a pull request, it's common practice to get the latest from the remote `main` branch.
 
-To do this, first check out, or switch to, the `main` branch, then merge the remote `main` branch with your local `main` branch.
+To do this, first check out, or switch to, the `main` branch. Then, merge the remote `main` branch with your local `main` branch.
 
-Next, check out your feature branch, then merge your feature branch with the `main` branch.
+Next, check out your feature branch, and then merge your feature branch with the `main` branch.
 
 Let's try the process now.
 

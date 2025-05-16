@@ -18,7 +18,7 @@ As soon as the copy process completes, Hyper-V starts using the destination VHD.
 
 The time required to complete a migration depends on the available bandwidth between the source and destination, storage performance at both locations, and the VHD sizes. The speed of the migration process can benefit significantly if the source and destination storage support Windows Offloaded Data Transfers.
 
-If you migrate VM storage from a non-clustered Hyper-V server, select the **Move** action in Hyper-V Manager and, in the **Move Wizard**, choose one of the following options:
+If you migrate VM storage from a nonclustered Hyper-V server, select the **Move** action in Hyper-V Manager and, in the **Move Wizard**, choose one of the following options:
 
 - Move all the virtual machine's data to a single location. This requires that you specify a single destination for VHD files, configuration, checkpoints, and smart paging.
 - Move the VM's data to different locations. This allows you to specify individual locations for each VM component.

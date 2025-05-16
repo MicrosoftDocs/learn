@@ -33,7 +33,7 @@ Most datacenters implement strict physical security procedures—for good reason
 The following video discusses various power distribution methods in datacenters:
 <br>
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4pHZL]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e04e1e66-dc92-4cc2-97ed-b357f62dd14a]
 
 Reliability/uptime is often the number-one design consideration for a datacenter. Unfortunately, the power feeding the datacenter is not 100% reliable because of events such as bad weather conditions and downed power lines. In some locations, it is possible to get feeds from multiple electrical utility suppliers, but often this is not available. To keep the IT equipment powered on during a power outage, a generator can be installed. Backup generators come in two varieties, powered by either diesel fuel or natural gas. They could power the datacenter indefinitely as long as fuel is available, but both fuel sources are significantly more expensive than electricity from the grid. Generators are typically mounted outdoors due to fumes, noise, weight, and vibration. An automatic or universal transfer switch is a device that can choose a working power source (utility 1, utility 2, or generator) and connect it to the main power input to the datacenter.
 
@@ -47,7 +47,7 @@ For AC, higher voltage (400 V and 480 V) is more efficient for distributing powe
 
 _Figure 8: (a) C13 power connector. (b) C19 power connector._ ([Source](https://en.wikipedia.org/wiki/IEC_60320))
 
-Some vendors offer DC distribution, in which the AC-to-DC conversion is done per rack, per row, or per bay, rather than converting AC to DC within every server power supply. These systems have been measured to be more efficient than their AC counterparts, but only 2% to 4% for average loads. For details, see the white paper "[Quantitative analysis of power distribution configurations for data centers (WP#16)](https://www.thegreengrid.org/en/resources/library-and-tools/393-WP#16---Quantitative-Analysis-of-Power-Distribution-Configurations-for-Data-Centers-)."<sup>[1][^1]</sup>
+Some vendors offer DC distribution, in which the AC-to-DC conversion is done per rack, per row, or per bay, rather than converting AC to DC within every server power supply. These systems have been measured to be more efficient than their AC counterparts, but only 2% to 4% for average loads. For details, see the white paper "[Quantitative analysis of power distribution configurations for data centers (WP#16)](https://www.thegreengrid.org/en/resources/library-and-tools/393-WP%2316---Quantitative-Analysis-of-Power-Distribution-Configurations-for-Data-Centers#16---Quantitative-Analysis-of-Power-Distribution-Configurations-for-Data-Centers-)."<sup>[1][^1]</sup>
 
 Because DC power supplies are not a commodity, these are only suited for large-scale deployments with custom components.
 
@@ -125,8 +125,8 @@ There should be an adequate number of well-marked emergency exits. This seems ob
 
 ### References
 
-1. _The Green Grid (2008). [Quantitative analysis of power distribution configurations for data centers (WP#16)](https://www.thegreengrid.org/en/resources/library-and-tools/393-WP#16---Quantitative-Analysis-of-Power-Distribution-Configurations-for-Data-Centers-)_
+1. _The Green Grid (2008). [Quantitative analysis of power distribution configurations for data centers (WP#16)](https://www.thegreengrid.org/en/resources/library-and-tools/393-WP%2316---Quantitative-Analysis-of-Power-Distribution-Configurations-for-Data-Centers#16---Quantitative-Analysis-of-Power-Distribution-Configurations-for-Data-Centers-)_
 
-[^1]: <https://www.thegreengrid.org/en/resources/library-and-tools/393-WP#16---Quantitative-Analysis-of-Power-Distribution-Configurations-for-Data-Centers-> "The Green Grid (2008). *Quantitative analysis of power distribution configurations for data centers (WP#16)*"
+[^1]: <https://www.thegreengrid.org/en/resources/library-and-tools/393-WP%2316---Quantitative-Analysis-of-Power-Distribution-Configurations-for-Data-Centers#16---Quantitative-Analysis-of-Power-Distribution-Configurations-for-Data-Centers-> "The Green Grid (2008). *Quantitative analysis of power distribution configurations for data centers (WP#16)*"
 
 ***

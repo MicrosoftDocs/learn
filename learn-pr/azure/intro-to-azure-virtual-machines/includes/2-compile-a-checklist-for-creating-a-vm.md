@@ -16,7 +16,7 @@ Azure creates all of these resources if necessary, or you can supply existing on
 
 ## Required resources for IaaS Virtual Machines
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWjVUg]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=df61837a-37b8-4406-928c-e0d3331ac4a0]
 
 
 Let's walk through a checklist of things to think about.

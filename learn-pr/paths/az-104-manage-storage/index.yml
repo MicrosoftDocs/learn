@@ -3,16 +3,16 @@ uid: learn.az-104-manage-storage
 metadata:
   title: 'AZ-104: Implement and manage storage in Azure'
   description: 'AZ-104: Implement and manage storage in Azure'
-  ms.date: 10/12/2022
+  ms.date: 01/20/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: learning-path
 title: 'AZ-104: Implement and manage storage in Azure'
 prerequisites: |
-  - [Microsoft Azure Fundamentals: Describe cloud concepts](/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/)
-  - [Azure Fundamentals: Describe Azure architecture and services](/training/paths/azure-fundamentals-describe-azure-architecture-services/)
-  - [Azure Fundamentals: Describe Azure management and governance](/training/paths/describe-azure-management-governance/)
-  - [AZ-104: Prerequisites for Azure administrators](/training/paths/az-104-administrator-prerequisites/)
+  -   [Microsoft Azure Fundamentals: Describe cloud concepts](/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/)
+  -   [Azure Fundamentals: Describe Azure architecture and services](/training/paths/azure-fundamentals-describe-azure-architecture-services/)
+  -   [Azure Fundamentals: Describe Azure management and governance](/training/paths/describe-azure-management-governance/)
+  -   [AZ-104: Prerequisites for Azure administrators](/training/paths/az-104-administrator-prerequisites/)
 summary: |
   Learn how to manage storage accounts, data in Azure Storage, and Azure File and Blob storage. 
   
@@ -75,7 +75,5 @@ modules:
 - learn.wwl.configure-blob-storage
 - learn.wwl.configure-storage-security
 - learn.wwl.configure-azure-files-file-sync
-- learn.create-azure-storage-account
-- learn.upload-download-and-manage-data-with-azure-storage-explorer
 trophy:
   uid: learn.az-104-manage-storage.trophy

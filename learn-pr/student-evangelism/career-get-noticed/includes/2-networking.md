@@ -1,4 +1,4 @@
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4NIMy]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0828700e-fbf3-41d4-ae9e-9ab1fa346aed]
 
 Skillful networking is one of the most important factors in jump-starting your career, yet it's often overlooked. Networking encompasses an array of elements that can be helpful in advancing your career. These elements not only provide opportunities for you to grow and learn, but also to help improve your skills in communication and teamwork.  
 
@@ -22,7 +22,7 @@ Not at all! Connecting with others online is a well-established and common way t
 
 ## How can I get started in networking?
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4NAu8]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=80a155af-554b-46a4-8b25-616f5d0fd6bb]
 
 There are numerous ways to get started with networking. The following sections present just a few of them.
 

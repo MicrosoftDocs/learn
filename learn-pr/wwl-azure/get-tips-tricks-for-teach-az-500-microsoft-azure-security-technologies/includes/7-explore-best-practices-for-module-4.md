@@ -8,7 +8,7 @@ This module consists of three lessons:
 
 **Lesson 3** – Configure and monitor Microsoft Sentinel 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE50Edl] 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=fbd52661-aa26-4998-bafb-55131493e5da] 
 
 ### Module 4 Tips and Tricks
 

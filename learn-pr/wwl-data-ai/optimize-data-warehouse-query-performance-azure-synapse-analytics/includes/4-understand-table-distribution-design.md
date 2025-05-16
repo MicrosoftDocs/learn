@@ -4,7 +4,7 @@ The design decisions around how to split and disperse this data among the nodes 
 
 There are three main table distributions available in Synapse Analytics SQL Pools that will be described below:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MerJ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=7e5dd398-8871-48b0-b2ee-2a1a58164db2]
 
 Selecting the correct table distribution can have an impact on the data load and query performance as follows:
 
@@ -75,4 +75,3 @@ Some additional items to consider when looking at creating a replicated table in
 1) The table has frequent insert, update, and delete operations. The data manipulation language (DML) operations require a rebuild of the replicated table. Rebuilding frequently can cause slower performance.
 2) The SQL pool is scaled frequently. Scaling a SQL pool changes the number of Compute nodes, which incurs rebuilding the replicated table.
 3) The table has a large number of columns, but data operations typically access only a small number of columns. In this scenario, instead of replicating the entire table, it might be more effective to distribute the table, and then create an index on the frequently accessed columns. When a query requires data movement, SQL pool only moves data for the requested columns.
-

@@ -1,12 +1,8 @@
-
-
 In this demonstration, you'll learn how to:
 
 - Deploy an AD DS instance using the Azure portal.
 
-
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ALnB]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=2d850b83-ded3-48ab-9b5b-c8601490408a]
 
 ## Next steps
 

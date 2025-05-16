@@ -2,8 +2,6 @@
 uid: learn.design-your-site-recovery-solution-in-azure.2-develop-bcdr-plan
 title: Develop a business continuity and disaster recovery plan
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Develop a business continuity and disaster recovery plan
   description: Develop a business continuity and disaster recovery plan.
   ms.date: 04/15/2024
@@ -37,4 +35,4 @@ quiz:
       explanation: Correct. Using availability zones and region pairing together increases the availability of virtual machines.
     - content: Availability points, region pairing
       isCorrect: false
-      explanation: Incorrect. Availability points don't exist in Azure. You can use availability sets and availability zones to increase the availability of virtual machines.
+      explanation: Incorrect. Availability points don't exist in Azure. You can use availability sets and availability zones to increase the availability of virtual machines.

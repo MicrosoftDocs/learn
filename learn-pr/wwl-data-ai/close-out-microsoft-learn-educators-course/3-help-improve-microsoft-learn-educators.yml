@@ -2,8 +2,6 @@
 uid: learn.wwl.close-out-microsoft-learn-educators-course.help-improve-microsoft-learn-educators
 title: Help improve Microsoft Learn for Educators
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Help improve Microsoft Learn for Educators
   description: "Help improve Microsoft Learn for Educators"
   ms.date: 07/02/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-help-improve-microsoft-learn-educators.md)]
+  [!include[](includes/3-help-improve-microsoft-learn-educators.md)]

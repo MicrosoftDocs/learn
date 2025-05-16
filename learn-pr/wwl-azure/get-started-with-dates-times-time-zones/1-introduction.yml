@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-with-dates-times-time-zones.introduction
+title: Introduction to handling date and time in C#
+metadata:
+  title: Introduction to handling date and time in C#
+  description: "Learn how to handle date and time effectively in C# applications, focusing on scheduling and logging across time zones."
+  ms.date: 03/24/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

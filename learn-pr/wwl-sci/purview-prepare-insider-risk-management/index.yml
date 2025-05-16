@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.purview-prepare-insider-risk-management
+metadata:
+  title: Prepare for Microsoft Purview Insider Risk Management
+  description: "Prepare for Microsoft Purview Insider Risk Management."
+  ms.date: 1/3/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ms.service: purview
+  hidden: false
+title: Prepare for Microsoft Purview Insider Risk Management
+summary: Discover strategies for planning and configuring Microsoft Purview Insider Risk Management to meet organizational needs and protect privacy.
+abstract: |
+  After completing this module, you'll be able to:
+  - Collaborate with stakeholders to prepare for insider risk management.
+  - Understand what's needed to meet prerequisites for implementation.
+  - Configure settings to align with compliance and privacy needs.
+  - Explore how connecting tools and data sources enhances risk management.
+prerequisites: |
+  - Understanding of insider risk concepts.
+  - Familiarity with organizational compliance and privacy practices.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- auditor
+- administrator
+- risk-practitioner
+products:
+- microsoft-purview
+- m365
+subjects:
+- information-protection-governance
+- security
+units:
+- learn.wwl.purview-prepare-insider-risk-management.introduction
+- learn.wwl.purview-prepare-insider-risk-management.plan-insider-risk-management
+- learn.wwl.purview-prepare-insider-risk-management.insider-risk-management-prerequisites
+- learn.wwl.purview-prepare-insider-risk-management.configure-insider-risk-settings
+- learn.wwl.purview-prepare-insider-risk-management.insider-risk-management-integrations
+- learn.wwl.purview-prepare-insider-risk-management.knowledge-check
+- learn.wwl.purview-prepare-insider-risk-management.summary
+
+
+badge:
+  uid: learn.wwl.purview-prepare-insider-risk-management.badge
