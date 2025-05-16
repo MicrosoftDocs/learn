@@ -6,7 +6,7 @@ Microsoft Azure provides a wide range of cloud services that you can use to deve
 | ![Azure AI Vision service icon.](../media/vision.png)<br>**Azure AI Vision**  | The Azure AI Vision service provides a set of models and APIs that you can use to implement common computer vision functionality in an application. With the AI Vision service, you can detect common objects in images, generate captions, descriptions, and tags based on image contents, and read text in images. |
 | ![Azure AI Speech service icon.](../media/speech-service.png)<br>**Azure AI Speech**  | The Azure AI Speech service provides APIs that you can use to implement *text to speech* and *speech to text* transformation, as well as specialized speech-based capabilities like speaker recognition and translation. |
 | ![Azure AI Language service icon.](../media/language.png)<br>**Azure AI Language**  | The Azure AI Language service provides models and APIs that you can use to analyze natural language text and perform tasks such as entity extraction, sentiment analysis, and summarization. The AI Language service also provides functionality to help you build conversational language models and question answering solutions. |
-| ![Azure AI Content Safety service icon.](../media/content-safety.png)<br>**Azure AI Content Safety**  | Azure AI Content Safety provides developers with access to advanced algorithms for processing images and text and flagging content that is potentially offensive, risky, or otherwise undesirable. |
+| ![Azure AI Foundry Content Safety service icon.](../media/content-safety.png)<br>**Azure AI Foundry Content Safety**  | Azure AI Foundry Content Safety provides developers with access to advanced algorithms for processing images and text and flagging content that is potentially offensive, risky, or otherwise undesirable. |
 | ![Azure AI Translator service icon.](../media/translator.png)<br>**Azure AI Translator**  | The Azure AI Translator service uses state-of-the-art language models to translate text between a large number of languages. |
 | ![Azure AI Face service icon.](../media/face.png)<br>**Azure AI Face**  | The Azure AI Face service is a specialist computer vision implementation that can detect, analyze, and recognize human faces. Because of the potential risks associated with personal identification and misuse of this capability, access to some features of the AI Face service are restricted to approved customers. |
 | ![Azure AI Custom Vision service icon.](../media/custom-vision.png)<br>**Azure AI Custom Vision**  | The Azure AI Custom Vision service enables you to train and use custom computer vision models for image classification and object detection. |
@@ -31,7 +31,7 @@ Alternatively, you can provision a multi-service **Azure AI services** resource 
 - Azure AI Speech
 - Azure AI Vision
 - Azure AI Language
-- Azure AI Content Safety
+- Azure AI Foundry Content Safety
 - Azure AI Translator
 - Azure AI Document Intelligence
 - Azure AI Content Understanding
