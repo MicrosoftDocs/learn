@@ -1,10 +1,10 @@
 Secrets are encrypted environment variables that store tokens, credentials, and other sensitive information. Your GitHub Actions workflows and actions can use these secrets when needed. Once created, secrets become accessible to workflows and actions that have permission to access the organization, repository, or environment where the secrets are defined.
 
-This section explains how to manage encrypted secrets using tools and strategies in GitHub Enterprise Cloud and GitHub Enterprise Server. You'll also learn how to use these secrets within your workflows and actions.
+This section explains how to manage encrypted secrets using tools and strategies in GitHub Enterprise Cloud and GitHub Enterprise Server. You also learn how to use these secrets within your workflows and actions.
 
 ## Manage encrypted secrets in the enterprise
 
-GitHub Actions lets you securely store and use sensitive data—such as API keys, authentication tokens, passwords, and certificates—through **encrypted secrets**. These secrets are securely stored and injected into workflows. This ensures they do not appear in logs or source code.
+GitHub Actions lets you securely store and use sensitive data—such as API keys, authentication tokens, passwords, and certificates—through **encrypted secrets**. These secrets are securely stored and injected into workflows. This design ensures they do not appear in logs or source code.
 
 In an enterprise environment, effective secret management is critical. It helps maintain security, meet compliance requirements, and support operational efficiency. GitHub allows you to manage secrets at four levels: **enterprise**, **organization**, **repository**, and **environment**.
 
@@ -17,7 +17,7 @@ Understanding the **scope** of secrets is essential for managing them securely i
 | **Enterprise-Level Secrets**   | Apply to all repositories in a GitHub Enterprise Cloud organization.                           | Enterprise owners, security administrators    | Share credentials across multiple repositories.      |
 | **Organization-Level Secrets** | Apply to all repositories in an organization; optionally limit to selected repositories.       | Organization owners, security administrators  | Access cloud services and shared databases.          |
 | **Repository-Level Secrets**   | Apply only to a single repository.                                                             | Repository administrators, workflow runners   | Secure credentials for deployment in one repository. |
-| **Environment-Level Secrets**  | Apply to specific deployment environments within a repository (e.g., `staging`, `production`). | Workflow runners in the specified environment | Separate credentials by deployment environment.      |
+| **Environment-Level Secrets**  | Apply to specific deployment environments within a repository, such as staging or production. | Workflow runners in the specified environment | Separate credentials by deployment environment.      |
 
 **Key considerations:**
 
@@ -118,7 +118,7 @@ steps:
   **Pass** the secret as an input parameter to the action. This method is commonly used when the action explicitly defines inputs in its `action.yml`.
 
 - **Use `env`:**
-  **Expose** the secret as an environment variable to the step. This is useful when the command in the step or a script inside the action expects an environment variable.
+  **Expose** the secret as an environment variable to the step. This approach is useful when the command in the step or a script inside the action expects an environment variable.
 
 ### In Actions
 
@@ -148,7 +148,7 @@ const token = core.getInput('super_secret');
 
 ## Configure security hardening for GitHub Actions
 
-Security hardening for GitHub Actions plays a role in keeping your software supply chain secure. The following sections will walk you through recommended practices to strengthen the security of the actions you use in your workflows.
+Security hardening for GitHub Actions plays a role in keeping your software supply chain secure. The following sections walk you through recommended practices to strengthen the security of the actions you use in your workflows.
 
 ### Identify best practices for mitigating script injection attacks
 
@@ -156,7 +156,7 @@ Some best practices for mitigating script injection attacks on GitHub actions in
 
 1. *Use javascript actions instead of inline scripts*: Use JavaScript actions that accept context values as arguments instead of embedding those values in inline scripts. This approach reduces the risk of script injection because the context data is not used to generate or execute shell commands directly.
 
-In the example below, passing a variable as an input to a JavaScript action helps prevent it from being used in a script injection attack.
+Passing a variable as an input to a JavaScript action helps prevent it from being used in a script injection attack.
 
    ```yml
     uses: fakeaction/checktitle@v3
@@ -164,7 +164,7 @@ In the example below, passing a variable as an input to a JavaScript action help
       title: ${{ github.event.pull_request.title }} 
    ```
 
-2. *Use intermediate environment variables in inline scripts*: When using inline scripts, evaluate variables as environment variables before using them in commands. This ensures the values are resolved before the script runs, reducing the risk of script injection.
+2. *Use intermediate environment variables in inline scripts*: When using inline scripts, evaluate variables as environment variables before using them in commands. This approach ensures the values are resolved before the script runs, reducing the risk of script injection.
 For example, using `github.event.pull_request.title` as an environment variable helps protect against injection vulnerabilities:
 
     ```yml
@@ -187,7 +187,7 @@ For example, using `github.event.pull_request.title` as an environment variable 
 3. **Leverage workflow templates to implement code scanning**:
    **Navigate** to the repository’s **Actions** tab and select the **New Workflow** button on the left pane. On the **Choose a workflow** page, **locate** the **Security** section to access and apply workflow templates.
 
-**Configure** the CodeQL scanner to run on specific events, enabling it to scan a branch's files and flag exposures (CWEs) in actions used within workflows, including vulnerabilities such as script injection.
+Configure the CodeQL scanner to run on specific events, enabling it to scan a branch's files and flag exposures CWEs(Common Weakness Enumerations) in actions used within workflows, including vulnerabilities such as script injection.
 
 :::image type="content" source="../media/manage-encrypted-secrets_newworkflow.png" alt-text="Screenshot showing the creation of a new GitHub Actions workflow for managing encrypted secrets." border="false":::
 
@@ -200,7 +200,7 @@ For example, using `github.event.pull_request.title` as an environment variable 
 Follow these best practices to safely incorporate third-party actions into your workflows:
 
 1. **Pin actions to a tag only if the author is trusted**
-   Use version tags (e.g., `@v4`) only when the action's author is verified and trusted. This helps reduce the risk of unexpected changes in future releases.
+   Use version tags such as `v1` or `v2`, only when the action's author is verified and trusted. This action helps reduce the risk of unexpected changes in future releases.
 
    ```yml
    - name: Checkout
@@ -223,7 +223,7 @@ Follow these best practices to safely incorporate third-party actions into your 
 Use trusted actions to reduce risk in your workflows.
 
 - **Look for the Verified badge:**
-  Trustworthy actions appear in the GitHub Marketplace and display a **Verified creator** badge next to the title. This means the creator has been verified by GitHub.
+  Trustworthy actions appear in the GitHub Marketplace and display a **Verified creator** badge next to the title informing you that the creator has been verified by GitHub.
 
 - **Check documentation:**
   The `action.yml` file should be well documented and clearly describe how the action works.
@@ -283,18 +283,18 @@ Applying the principle of least privilege to the token’s permissions helps red
 
 ### Managing cross-repository access
 
-When workflows require access to multiple repositories, it's important to choose credentials that minimize security risks. Below are the recommended options, listed from most to least preferred.
+When workflows require access to multiple repositories, it's important to choose credentials that minimize security risks. Some of the recommended options listed from most to least preferred include:
 
 1. **`GITHUB_TOKEN`**
 
-The `GITHUB_TOKEN` is automatically generated by GitHub for each workflow run. It is scoped to the single repository that triggers the workflow and provides permissions equivalent to a write-access user on that repository. The token is created at the start of each job and expires when the job completes.
+GitHub automatically generates the `GITHUB_TOKEN` for each workflow run. It is scoped to the single repository that triggers the workflow and provides permissions equivalent to a write-access user on that repository. The token is created at the start of each job and expires when the job completes.
 
 Use the `GITHUB_TOKEN` whenever possible for secure and scoped authentication.
 For details, see [Automatic token authentication](https://docs.github.com/en/actions/security-for-github-actions/security-guides/automatic-token-authentication).
 
 2. **Repository deploy key**
 
-Deploy keys provide read or write access to a single repository and can be used within workflows to clone or push using Git.
+To clone or push using Git within workflows, use deploy keys that provide read or write access to a single repository.
 
 However, deploy keys do not support access to GitHub's REST or GraphQL APIs. Use them only when API access is not required and Git access is sufficient.
 
@@ -315,7 +315,7 @@ Note: This approach is difficult to scale and is best avoided in favor of deploy
 
 5. **SSH keys on personal accounts**
 
-Never use SSH keys from personal accounts in workflows. Like classic PATs, they grant access to all repositories associated with the account, including personal and organizational repositories. This exposes workflows to unnecessary risk.
+Never use SSH keys from personal accounts in workflows. Like classic PATs, they grant access to all repositories associated with the account, including personal and organizational repositories. This mistake exposes workflows to unnecessary risk.
 
 If your use case involves cloning or pushing via Git, consider using deploy keys instead. They provide scoped access without exposing unrelated repositories or requiring personal credentials.
 
@@ -333,11 +333,11 @@ Artifact attestations help establish the provenance of builds, improving softwar
 
 #### What to attest
 
-With GitHub Actions, you can attest to build provenance & SBOM's for binaries and container images.
+With GitHub Actions, you can attest to build provenance & SBOM's (Software Bill of Materials) for binaries and container images.
 
 #### Generating artifact attestations for builds
 
-When you generate an artifact attestation for builds you must ensure:
+When you generate an artifact attestation for builds, you must ensure:
 
 * You have the appropriate permissions configured in the workflow
 * You have included a step in your workflow that uses the  [attest-build-provenance](https://github.com/actions/attest-build-provenance) action.
@@ -364,7 +364,7 @@ The attestation establishes build provenance. You can view attestations in the r
          subject-path: 'PATH/TO/ARTIFACT'
      ```
 
-Note that the value of the `subject-path` parameter should be set to the path to the binary you will attest.
+>Note that the value of the `subject-path` parameter is set to the path of the binary you attest.
 
 ##### Generating an attestation for the build provenance of container images
 
@@ -378,7 +378,7 @@ Note that the value of the `subject-path` parameter should be set to the path to
      packages: write
    ```
 
-2. Add this step after the container image has been built:
+2. Add this step after you build the container image:
 
    ```yml
    - name: Generate artifact attestation
@@ -395,11 +395,11 @@ Note that the value of the `subject-path` parameter should be set to the path to
 
 #### Generating attestations for SBOMs
 
-You have the ability to generate SBOM attestions for an SBOM.  To generate and attest to an SBOM you must perform the following:
+You have the ability to generate SBOM attestions for an SBOM.  To generate and attest to an SBOM you must carry out the following steps:
 
-*  Ensure you have set the appropriate permissions in the workflow (see examples below).
-*  You must generate an SBOM for the artifact in a step in the workflow.  For an example, see anchore-sbom-action in the GitHub Marketplace.
-*  Include a step in your workflow that uses the attest-sbom action (see examples below)
+- Ensure you set the appropriate permissions in the workflow, as shown in the examples.
+- You must generate an SBOM for the artifact in a step in the workflow.  For an example, see anchore-sbom-action in the GitHub Marketplace.
+- Include a step in your workflow that uses the attest-sbom action (see examples below)
 
 ##### Generating an SBOM attestation for binaries
 
@@ -504,7 +504,7 @@ Many enterprises integrate GitHub Actions with external secret management soluti
     secret: secret/data/github/my-secret
 ```
 
-### 2. AWS Secrets Manager
+### 2. AWS (Amazon Web Services) Secrets Manager
 ```yaml
 - name: Retrieve AWS Secret
   run: |
