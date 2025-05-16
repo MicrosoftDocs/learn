@@ -157,7 +157,7 @@ You can identify the trigger event in several ways :
 - If you're inspecting workflow runs programmatically (e.g., via the API), the run object includes an event property that specifies the trigger.
 - You can also find the commit SHA, actor, and timestamp to trace what caused the trigger.
 
-### Inferring the trigger from repository effects
+### Infer the trigger from repository effects
 
 Sometimes you may not have direct access to the workflow run but want to infer what triggered it based on repository activity. Here's how:
 
@@ -180,8 +180,9 @@ To identify what triggered a workflow:
 
 These practices help with debugging, auditing, and improving workflow reliability across your development and deployment pipelines.
 ## Describe a workflow's effects from reading its configuration file
-To describe a workflow's effects from reading its configuration file, you need to analyze the structure and contents of the .yml file stored in .github/workflows/. This file outlines when the workflow runs, what it does, and how it behaves under different conditions.
-### How to interpret a workflow's effects:
+To describe a workflow's effects from reading its configuration file, you need to analyze the structure and contents of the ".yml" file stored in .github/workflows/. This file outlines when the workflow runs, what it does, and how it behaves under different conditions.
+
+### Interpret a workflow's effects:
 1 . Identify the trigger (on:)
 This section tells you when the workflow is initiated. For example:
 ```yml
@@ -307,15 +308,13 @@ You'll see a link named CI Workflow in the list.
 | **Expand steps** | View detailed logs |
 | **Download logs** | For offline or team troubleshooting |
 
-
-<!-- InfoMagnus END -->
-
 ## Action logs for the build
 
 When a workflow runs, it produces a log that includes the details of what happened and any errors or test failures.
 
 If there's an error or if a test fails, you see a red rather than a green check mark in the logs. You can examine the details of the error or failure to investigate what happened.
- :::image type="content" source="../media/2-log-details.png" alt-text=" GitHub Actions log with details on a failed test." border="true":::
+
+:::image type="content" source="../media/2-log-details.png" alt-text="Screenshot of GitHub Actions log with details on a failed test." border="true":::
  
 ## Customize workflow templates
 
@@ -410,13 +409,6 @@ steps:
 
 For more information about using artifacts in workflows, see [Storing workflow data as artifacts](https://docs.github.com/en/enterprise-cloud@latest/actions/using-workflows/storing-workflow-data-as-artifacts) in the GitHub documentation.
 
-<!-- INFOMAGNUS UPDATES for sub OD 1.6.4 go here. Source Material: Infomagnus team to find source material and cite sources when they update material 
-https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/monitoring-workflows/adding-a-workflow-status-badge -->
-
-## Add a workflow status badge
-
-<!-- InfoMagnus END -->
-
 ## Automate reviews in GitHub using workflows
 
 So far, we described starting the workflow with GitHub events such as *push* or *pull-request*. We could also run a workflow on a schedule, or on some event outside of GitHub.
@@ -438,17 +430,3 @@ Another action we could take is to add a label to the pull request. In this case
 Notice the block called `env:`. This block is where you set the environment variables for this action. For example, you can set the number of approvers needed. Here, it's one. The `secrets.GITHUB_TOKEN` authentication variable is required because the action must make changes to your repository by adding a label. Finally, you supply the name of the label to add.
 
 Adding a label could be an event that starts another workflow, such as a merge. We cover this event in the next module on continuous delivery with GitHub Actions.
-
-<!-- INFOMAGNUS UPDATES for sub OD 2.2.2 go here. Source Material: Infomagnus team to find source material and cite sources when they update material -->
-
-## Contrast disabling and deleting of workflows
-
-<!-- INFOMAGNUS UPDATES for sub OD 1.3.1 ,1.3.2, and 1.4.1 go here. Source Material: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository -->
-
-## Configure Actions and workflow permissions
-
-## Setup Secrets and variables for actions
-
-## Use encrypted secrets to store sensitive information
-
-<!-- InfoMagnus END -->
