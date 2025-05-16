@@ -500,10 +500,10 @@ echo "Working dir: $GITHUB_WORKSPACE"
 ```
 ### Use troubleshooting secrets
 Enable additional logging by adding these secrets to your repository or org:
-| **Secret**              | **Description**                     |
-|--------------------------|-------------------------------------|
-| **ACTIONS_STEP_DEBUG**   | Enables debug logging              |
-| **ACTIONS_RUNNER_DEBUG** | Enables runner diagnostics         |
+| Secret                | Description              |
+|-----------------------|-------------------------|
+| ACTIONS_STEP_DEBUG    | Enables debug logging   |
+| ACTIONS_RUNNER_DEBUG  | Enables runner diagnostics |
 
 ### Best practices for Docker action debugging
 
