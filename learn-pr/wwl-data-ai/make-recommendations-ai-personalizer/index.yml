@@ -36,7 +36,6 @@ products:
   - azure
 units:
 - learn.make-recommendations-ai-personalizer.use-inference-explainability
-- learn.make-recommendations-ai-personalizer.run-evaluations
 badge:
   uid: learn.make-recommendations-ai-personalizer.badge
 
