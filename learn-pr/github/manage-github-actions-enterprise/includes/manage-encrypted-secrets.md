@@ -1,32 +1,33 @@
-Secrets are encrypted environment variables used to store tokens, credentials, and other types of sensitive information required by your GitHub Actions workflows and actions. Once created, these secrets are available to workflows and actions that have access to the organization, repository, or environment where they are defined.
+Secrets are encrypted environment variables that store tokens, credentials, and other sensitive information. Your GitHub Actions workflows and actions can use these secrets when needed. Once created, secrets become accessible to workflows and actions that have permission to access the organization, repository, or environment where the secrets are defined.
 
-This section introduces the tools and strategies available in GitHub Enterprise Cloud and GitHub Enterprise Server for managing encrypted secrets. You'll also learn how to access these secrets within your workflows and actions.
+This section explains how to manage encrypted secrets using tools and strategies in GitHub Enterprise Cloud and GitHub Enterprise Server. You'll also learn how to use these secrets within your workflows and actions.
 
 ## Manage encrypted secrets in the enterprise
 
-GitHub Actions enables you to securely store and use sensitive data—such as API keys, authentication tokens, passwords, and certificates—through **encrypted secrets**. These secrets are safely stored and injected into workflows, ensuring they are not exposed in logs or source code.
+GitHub Actions lets you securely store and use sensitive data—such as API keys, authentication tokens, passwords, and certificates—through **encrypted secrets**. These secrets are securely stored and injected into workflows. This ensures they do not appear in logs or source code.
 
-In an enterprise setting, effective secret management is essential for maintaining security, meeting compliance requirements, and supporting operational efficiency. GitHub supports secret management at multiple levels: **enterprise**, **organization**, **repository**, and **environment**.
+In an enterprise environment, effective secret management is critical. It helps maintain security, meet compliance requirements, and support operational efficiency. GitHub allows you to manage secrets at four levels: **enterprise**, **organization**, **repository**, and **environment**.
 
 ### Scope of encrypted secrets
 
 Understanding the **scope** of secrets is essential for managing them securely in an enterprise environment.
 
-| **Secret Level**               | **Scope**                                                                                                  | **Who Can Access**                             | **Common Use Cases**                                                      |
-| ------------------------------ | ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------- |
-| **Enterprise-Level Secrets**   | Available across all repositories within a GitHub Enterprise Cloud organization.                           | Enterprise owners, security administrators     | Shared API keys or service credentials used across multiple repositories. |
-| **Organization-Level Secrets** | Accessible to all repositories within a specific organization. Can be restricted to selected repositories. | Organization owners, security administrators   | Tokens for cloud services or shared database credentials.                 |
-| **Repository-Level Secrets**   | Available only to a single repository.                                                                     | Repository administrators and workflow runners | Deployment-specific API keys or database credentials.                     |
-| **Environment-Level Secrets**  | Scoped to a particular deployment environment (e.g., staging, production) within a repository.         | Workflow runners in the defined environment    | Credentials needed for environment-specific deployments.                  |
+| **Secret Level**               | **Scope**                                                                                      | **Who Can Access**                            | **Common Use Cases**                                 |
+| ------------------------------ | ---------------------------------------------------------------------------------------------- | --------------------------------------------- | ---------------------------------------------------- |
+| **Enterprise-Level Secrets**   | Apply to all repositories in a GitHub Enterprise Cloud organization.                           | Enterprise owners, security administrators    | Share credentials across multiple repositories.      |
+| **Organization-Level Secrets** | Apply to all repositories in an organization; optionally limit to selected repositories.       | Organization owners, security administrators  | Access cloud services and shared databases.          |
+| **Repository-Level Secrets**   | Apply only to a single repository.                                                             | Repository administrators, workflow runners   | Secure credentials for deployment in one repository. |
+| **Environment-Level Secrets**  | Apply to specific deployment environments within a repository (e.g., `staging`, `production`). | Workflow runners in the specified environment | Separate credentials by deployment environment.      |
 
 **Key considerations:**
-- **Enterprise secrets** are exclusive to GitHub Enterprise Cloud and offer centralized management across an organization.
-- **Organization secrets** support fine-grained access control by allowing restriction to specific repositories.
-- **Environment secrets** help prevent unintentional exposure of production credentials by limiting access to targeted workflows.
+
+* **Enterprise secrets** are exclusive to GitHub Enterprise Cloud and support centralized management across an organization.
+* **Organization secrets** offer fine-grained access control and can be limited to specific repositories.
+* **Environment secrets** help prevent unintentional exposure by restricting access to workflow environments.
 
 ## Manage encrypted secrets at organization level
 
-Creating encrypted secrets at organization level to store sensitive information is a great way to ensure the security of this information, while minimizing management overhead in your enterprise.
+Creating encrypted secrets at the organization level helps secure sensitive information while reducing the effort required to manage secrets across multiple repositories.
 
 For example, some developers writing workflows in your GitHub organization need the credentials to deploy code to production in some of their workflows. In order to avoid sharing this sensitive piece of information, you could create an encrypted secret containing the credentials at organization level. This way the credentials can be used in the workflows without being exposed.
 
@@ -60,54 +61,68 @@ You can select **Update** for more details on the configured permissions for you
   ```
 
 #### Security considerations for organization secrets
-
 - **Restrict secrets to specific repositories** rather than granting access to all repositories by default.
 - **Implement role-based access control (RBAC)** to ensure only authorized team members can create, update, or delete secrets.
 - **Monitor access logs regularly** to identify and respond to unauthorized usage or suspicious activity.
 
-## Manage encrypted secrets at the repository level
-If you need to scope a secret to a specific repository, GitHub Enterprise Cloud and GitHub Enterprise Server support creating secrets at the repository level.
+## Manage Encrypted Secrets at the Repository Level
+To scope a secret to a specific repository, use GitHub Enterprise Cloud or GitHub Enterprise Server.
 
-To create a repository-level secret:
-
-1. Navigate to the repository’s **Settings**.
-2. In the sidebar, select **Secrets and variables > Actions > New repository secret**.
-3. Enter a name and value for the secret.
+### Create a Repository-Level Secret
+1. **Navigate** to the repository’s **Settings**.
+2. **Select** **Secrets and variables > Actions**, then **New repository secret**.
+3. **Enter** a name and value for the secret.
 
 :::image type="content" source="../media/secret-repo.png" alt-text="New secret screen for repositories." border="false":::
 
 ### Manage Repository-Level Encrypted Secrets via CLI
-- **List repository secrets:**
+
+* **List repository secrets:**
+
   ```sh
   gh secret list --repo my-repo
   ```
-- **Update a repository secret:**
+
+* **Update a repository secret:**
+
   ```sh
   gh secret set SECRET_NAME --repo my-repo --body "new-secret-value"
   ```
-- **Delete a repository secret:**
+
+* **Delete a repository secret:**
+
   ```sh
   gh secret delete SECRET_NAME --repo my-repo
   ```
 
-## Access encrypted secrets within actions and workflows
 
-### In workflows
+## Access Encrypted Secrets Within Actions and Workflows
 
-To access an encrypted secret in a workflow, you must use the `secrets` context in your workflow file. For example:
+### In Workflows
+
+Access secrets using the `secrets` context. Use either `with` to pass the secret as an input, or `env` to set it as an environment variable.
 
 ```yml
 steps:
   - name: Hello world action
-    with: # Set the secret as an input
+    uses: actions/hello-world@v1
+    with:
+      # Pass the secret as an input to the action
       super_secret: ${{ secrets.SuperSecret }}
-    env: # Or as an environment variable
+    env:
+      # Set the secret as an environment variable
       super_secret: ${{ secrets.SuperSecret }}
 ```
 
-### In actions
+- **Use `with`:**
+  **Pass** the secret as an input parameter to the action. This method is commonly used when the action explicitly defines inputs in its `action.yml`.
 
-To access an encrypted secret in an action, you must specify the secret as an `input` parameter in the `action.yml` metadata file. For example:
+- **Use `env`:**
+  **Expose** the secret as an environment variable to the step. This is useful when the command in the step or a script inside the action expects an environment variable.
+
+### In Actions
+
+To use secrets inside a custom action, define them as inputs in the `action.yml` metadata file and access them as environment variables in the action code.
 
 ```yml
 inputs:
@@ -116,10 +131,20 @@ inputs:
     required: true
 ```
 
-If you need to access the encrypted secret in your action's code, the action code could read the value of the input using the `$SUPER_SECRET` environment variable.
+```js
+// Access the input using the Actions Toolkit
+const core = require('@actions/core');
+const token = core.getInput('super_secret');
+```
+
+- **Define in `action.yml`:**
+  **Specify** the secret as a required or optional input.
+
+- **Access in code:**
+  **Read** the secret using the [Actions Toolkit](https://github.com/actions/toolkit) (recommended) or by referencing environment variables if set.
 
 > [!WARNING]
-> When creating custom actions, avoid including encrypted secrets directly in the source code, as actions are designed to be shared. To handle secrets or user-supplied inputs securely, use the core module from the [Actions Toolkit](https://github.com/actions/toolkit).
+> Avoid hardcoding secrets in the action source code. To securely manage inputs and secrets, **use the Actions Toolkit** for handling values within your code logic.
 
 ## Configure security hardening for GitHub Actions
 
@@ -159,13 +184,16 @@ For example, using `github.event.pull_request.title` as an environment variable 
 
 :::image type="content" source="../media/manage-encrypted-secrets_workflow.png" alt-text="Screenshot showing a GitHub Actions workflow execution related to encrypted secrets." border="false":::
 
-3. *Leverage workflow templates to implement code scanning*: If you click on the **Actions** tab of any repository, you will be able to select the **New Workflow** button on the left side of the pane. On the **Choose a workflow** page, you'll find a **Security** section where you can select workflow templates to add to your repository. The CodeQL scanner, in particular, can be configured to run on specific events. You can configure it to trigger on an appropriate event to scan a branch's files & flag exposures (CWE's) in actions used within workflows; including vulnerabilities such as script injection.
+3. **Leverage workflow templates to implement code scanning**:
+   **Navigate** to the repository’s **Actions** tab and select the **New Workflow** button on the left pane. On the **Choose a workflow** page, **locate** the **Security** section to access and apply workflow templates.
+
+**Configure** the CodeQL scanner to run on specific events, enabling it to scan a branch's files and flag exposures (CWEs) in actions used within workflows, including vulnerabilities such as script injection.
 
 :::image type="content" source="../media/manage-encrypted-secrets_newworkflow.png" alt-text="Screenshot showing the creation of a new GitHub Actions workflow for managing encrypted secrets." border="false":::
 
 :::image type="content" source="../media/manage-encrypted-secrets_codeql.png" alt-text="Screenshot showing CodeQL configuration related to managing encrypted secrets." border="false":::
 
-4. *Restrict permissions for tokens*: Make sure to always apply the `rule of least privilege` to any created token.  In other words, ensure the token is assigned the minimum privileges to achieve the task for which it was created.
+4. *Restrict permissions for tokens*: Ensure you always apply the `rule of least privilege` to any created token.  In other words, ensure the token is assigned the minimum privileges to achieve the task for which it was created.
 
 ### Best practices for securely using third-party actions
 
@@ -190,9 +218,15 @@ Follow these best practices to safely incorporate third-party actions into your 
 3. **Audit the action’s source code**
    Review the action’s source to confirm it handles data securely and does not include unexpected or malicious behavior.
 
-### Indicators of a trustworthy third-party action
+### Indicators of a Trustworthy Third-Party Action
 
-You should have situational awareness of indicators of a trustworthy third-party action to be better able to manage risk.  The action should appear on the Github Marketplace. When you view the action's entry in the GitHub Marketplace, ensure that it shows the 'Verified creator' badge to the right of the title (highlighted red in the image below).  This indicates that the vendor has been verified by GitHub.  In addition, the `action.yml` file defining the action should be well documented.
+Use trusted actions to reduce risk in your workflows.
+
+- **Look for the Verified badge:**
+  Trustworthy actions appear in the GitHub Marketplace and display a **Verified creator** badge next to the title. This means the creator has been verified by GitHub.
+
+- **Check documentation:**
+  The `action.yml` file should be well documented and clearly describe how the action works.
 
 :::image type="content" source="../media/manage-encrypted-secrets_marketplace.png" alt-text="Screenshot showing the GitHub Marketplace interface for managing encrypted secrets." border="false":::
 
@@ -202,7 +236,7 @@ Enable Dependabot version updates to automatically keep your GitHub Actions depe
 
 ### Potential impact of a compromised runner
 
-The following sections describe possible attack vectors that could be exploited if a runner is compromised.
+This section describe possible attack vectors that could be exploited if a runner is compromised.
 
 #### Exfiltration of data from a runner
 
@@ -277,7 +311,7 @@ Avoid using classic personal access tokens in workflows. These tokens grant broa
 If you must use a personal token, create a **fine-grained PAT** tied to a dedicated organizational account. Restrict its access to only the specific repositories required by the workflow.
 Note: This approach is difficult to scale and is best avoided in favor of deploy keys or GitHub Apps.
 
-:::image type="content" source="../media/manage-encrypted-secrets\_personalaccesstoken.png" alt-text="Screenshot showing a button to generate new GitHub personal access token." border="false":::
+:::image type="content" source="../media/manage-encrypted-secrets_personalaccesstoken.png" alt-text="Screenshot showing a button to generate new GitHub personal access token." border="false":::
 
 5. **SSH keys on personal accounts**
 
