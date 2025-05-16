@@ -47598,6 +47598,11 @@
       "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/8-exercise.md",
       "redirect_url": "/credentials/certifications/azure-ai-engineer/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/9-knowledge-check.md",
+      "redirect_url": "/credentials/certifications/azure-ai-engineer/",
+      "redirect_document_id": false
     }
   ]
 }
