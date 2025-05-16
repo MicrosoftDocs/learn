@@ -18,4 +18,4 @@ Launch the exercise and follow the instructions. When you're done, be sure to re
 > To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/).
 
 [:::image type="content" source="../media/launch-exercise-button.png" alt-text="Button to launch exercise.":::
-](https://microsoftlearning.github.io/APL-1004-deploy-configure-azure-monitor/Instructions/Labs/LAB_02_exercise_deploy_log_analytics.html)
+](https://microsoftlearning.github.io/AZ-1004-deploy-configure-azure-monitor/Instructions/Labs/LAB_02_exercise_deploy_log_analytics.html)
