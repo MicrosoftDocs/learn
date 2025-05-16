@@ -18,7 +18,7 @@ quiz:
     choices:
     - content: "A programming language that compiles to JavaScript."
       isCorrect: false
-      explanation: "GitHub Script is not a programming language."
+      explanation: "GitHub Script isn't a programming language."
     - content: "An automation syntax for GitHub shell."
       isCorrect: false
       explanation: "GitHub Script is not a scripting language."
