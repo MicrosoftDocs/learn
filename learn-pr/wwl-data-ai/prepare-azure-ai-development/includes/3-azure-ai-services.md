@@ -2,7 +2,7 @@ Microsoft Azure provides a wide range of cloud services that you can use to deve
 
 | Service | Description |
 | ---- | ----------- |
-| ![Azure OpenAi service icon.](../media/open-ai.png)<br>**Azure OpenAI**  | The Azure OpenAI service provides access to OpenAI generative AI models including the GPT family of large and small language models and DALL-E image-generation models within a scalable and securable cloud service on Azure. |
+| ![Azure OpenAi service icon.](../media/open-ai.png)<br>**Azure OpenAI**  | The Azure OpenAI in Foundry Models provides access to OpenAI generative AI models including the GPT family of large and small language models and DALL-E image-generation models within a scalable and securable cloud service on Azure. |
 | ![Azure AI Vision service icon.](../media/vision.png)<br>**Azure AI Vision**  | The Azure AI Vision service provides a set of models and APIs that you can use to implement common computer vision functionality in an application. With the AI Vision service, you can detect common objects in images, generate captions, descriptions, and tags based on image contents, and read text in images. |
 | ![Azure AI Speech service icon.](../media/speech-service.png)<br>**Azure AI Speech**  | The Azure AI Speech service provides APIs that you can use to implement *text to speech* and *speech to text* transformation, as well as specialized speech-based capabilities like speaker recognition and translation. |
 | ![Azure AI Language service icon.](../media/language.png)<br>**Azure AI Language**  | The Azure AI Language service provides models and APIs that you can use to analyze natural language text and perform tasks such as entity extraction, sentiment analysis, and summarization. The AI Language service also provides functionality to help you build conversational language models and question answering solutions. |
@@ -12,7 +12,7 @@ Microsoft Azure provides a wide range of cloud services that you can use to deve
 | ![Azure AI Custom Vision service icon.](../media/custom-vision.png)<br>**Azure AI Custom Vision**  | The Azure AI Custom Vision service enables you to train and use custom computer vision models for image classification and object detection. |
 | ![Azure AI Document Intelligence service icon.](../media/document-intelligence.png)<br>**Azure AI Document Intelligence**  | With Azure AI Document Intelligence, you can use pre-built or custom models to extract fields from complex documents such as invoices, receipts, and forms. |
 | ![Azure AI Content Understanding service icon.](../media/content-understanding.png)<br>**Azure AI Content Understanding**  | The Azure AI Content Understanding service provides multi-modal content analysis capabilities that enable you to build models to extract data from forms and documents, images, videos, and audio streams. |
-| ![Azure AI Search service icon.](../media/search.png)<br>**Azure AI Search**  | The Azure AI Search service uses a pipeline of AI skills based on other Azure AI Services and custom code to extract information from content and create a searchable index. AI Search is commonly used to create vector indexes for data that can then be used to *ground* prompts submitted to generative AI language models, such as those provided in the Azure OpenAI service.|
+| ![Azure AI Search service icon.](../media/search.png)<br>**Azure AI Search**  | The Azure AI Search service uses a pipeline of AI skills based on other Azure AI Services and custom code to extract information from content and create a searchable index. AI Search is commonly used to create vector indexes for data that can then be used to *ground* prompts submitted to generative AI language models, such as those provided in Azure OpenAI.|
 
 ## Considerations for Azure AI services resources
 
@@ -48,7 +48,7 @@ Using a multi-service resource can make it easier to manage applications that us
 
 ### Regional availability
 
-Some services and models are available in only a subset of Azure regions. Consider service availability and any regional quota restrictions for your subscription when provisioning Azure AI services. Use the [product availability table](https://azure.microsoft.com/explore/global-infrastructure/products-by-region/table?azure-portal=true) to check regional availability of Azure services. Use the [model availability table](/azure/ai-services/openai/concepts/models#model-summary-table-and-region-availability?azure-portal=true) in the Azure OpenAI service documentation to determine regional availability for Azure OpenAI models.
+Some services and models are available in only a subset of Azure regions. Consider service availability and any regional quota restrictions for your subscription when provisioning Azure AI services. Use the [product availability table](https://azure.microsoft.com/explore/global-infrastructure/products-by-region/table?azure-portal=true) to check regional availability of Azure services. Use the [model availability table](/azure/ai-services/openai/concepts/models#model-summary-table-and-region-availability?azure-portal=true) in the Azure OpenAI documentation to determine regional availability for Azure OpenAI models.
 
 ### Cost
 

@@ -12,7 +12,7 @@ Azure AI Foundry Agent Service is a managed service in Azure that is designed to
 
 ## OpenAI Assistants API
 
-The OpenAI Assistants API provides a subset of the features in Foundry Agent Service, and can only be used with OpenAI models. In Azure, you can use the Assistants API with the Azure OpenAI service, though in practice the Foundry Agent Service provides greater flexibility and functionality for agent development on Azure.
+The OpenAI Assistants API provides a subset of the features in Foundry Agent Service, and can only be used with OpenAI models. In Azure, you can use the Assistants API with Azure OpenAI, though in practice the Foundry Agent Service provides greater flexibility and functionality for agent development on Azure.
 
 > [!TIP]
 > For more information about using the OpenAI Assistants API in Azure, see **[Getting started with Azure OpenAI Assistants](/azure/ai-services/openai/how-to/assistant)**.
