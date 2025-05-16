@@ -35,7 +35,6 @@ roles:
 products: 
   - azure
 units:
-- learn.make-recommendations-ai-personalizer.use-inference-explainability
 badge:
   uid: learn.make-recommendations-ai-personalizer.badge
 
