@@ -8,7 +8,7 @@ Learn more about [Azure storage services](/azure/storage/blobs/storage-blobs-ove
 
 ### Azure Table storage
 
-This service allows us to store data in a NoSQL fashion. In our project, we'll use it to store information about the Tracked Object, such as name, description, spatial anchor ID, and more.
+This service allows us to store data in a NoSQL fashion. In our project, we'll use it to store information about the Tracked Object, such as name, description, and more.
 
 In context of the demo application, you'll need two tables; one to store information about the project with information about the state of trained models (more about that in the *Integrate Azure Custom Vision* exercise later in this module), and a second table to store information about Tracked Objects.
 

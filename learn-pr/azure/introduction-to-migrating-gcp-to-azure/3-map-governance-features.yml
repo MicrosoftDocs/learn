@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-migrating-gcp-azure.map-governance-features
+title: Map governance features in Google Cloud to equivalent tools in Azure
+metadata:
+  title: Map Governance Features in Google Cloud to Equivalent Tools in Azure
+  description: "Learn how you can govern resources and information in Azure to comply with your policies and relevant legislation."
+  ms.date: 01/16/2025
+  author: carols
+  ms.author: carols
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-map-governance-features.md)]

@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-azure-kubernetes-service-azure-stack-hci.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: "Introduction"
   ms.date: 06/09/2021
@@ -13,4 +11,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/1-introduction.md)]

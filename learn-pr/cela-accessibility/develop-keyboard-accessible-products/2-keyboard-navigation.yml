@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility.develop-keyboard-accessible-products.keyboard-navigation
+title: Keyboard navigation fundamentals
+metadata:
+  title: Keyboard navigation fundamentals
+  description: This unit is a part of the \"Design keyboard accessible products\" module.
+  ms.date: 02/04/2025
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 11
+content: |
+  [!include[](includes/2-keyboard-navigation.md)]

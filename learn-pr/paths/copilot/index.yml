@@ -1,15 +1,15 @@
 ### YamlMime:LearningPath
 uid: learn.github-copilot
 metadata:
-  title: GitHub Copilot fundamentals - Understand the AI pair programmer
-  description: Empower individual developers and businesses to enhance their productivity and foster innovation through a comprehensive exploration of the fundamental concepts of GitHub Copilot. Additionally, gain valuable insights on how to initiate the implementation of GitHub Copilot within your organization, enabling you to kickstart your own transformative journey.
+  title: GitHub Copilot Fundamentals Part 1 of 2
+  description: Empower individual developers and businesses to enhance their productivity and foster innovation through a comprehensive exploration of the fundamental concepts of GitHub Copilot. Additionally, gain valuable insights on how to initiate the implementation of GitHub Copilot within your organization, enabling you to kickstart your own transformative journey. This is learning path is split into two and this is part one of two.
   brand: github
-  ms.date: 06/05/2023
-  author: a-a-ron
-  ms.author: aastewar
+  ms.date: 03/11/2025
+  author: camihmerhar
+  ms.author: camhernandez
   ms.topic: learning-path
   ms.custom: [copilot-learning-hub]
-title: GitHub Copilot Fundamentals - Understand the AI pair programmer
+title: GitHub Copilot Fundamentals Part 1 of 2
 summary: |
   Explore the fundamentals of GitHub Copilot and its potential to enhance productivity and foster innovation for both individual developers and businesses. Discover how to implement it within your organization and unleash its power for your own projects.
 
@@ -47,11 +47,5 @@ modules:
 - learn.advanced-github-copilot
 - learn.github.github-copilot-across-environments
 - learn.github.github-copilot-management-and-customizations
-- learn.github.developer-use-cases-for-ai-with-github-copilot
-- learn.wwl.develop-unit-tests-using-github-copilot-tools
-- learn.github.introduction-to-github-copilot-for-business
-- learn.github.intro-github-copilot-enterprise
-- learn.github-copilot-with-javascript
-- learn.github-copilot-with-python
 trophy:
-  uid: learn.github.trophy
+  uid: generic-badge-social.trophy

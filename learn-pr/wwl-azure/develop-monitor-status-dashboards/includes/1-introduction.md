@@ -4,13 +4,13 @@ This module explains steps to develop monitoring with Azure Dashboards, work wit
 
 After completing this module, students and professionals can:
 
- -  Configure Azure Dashboards.
- -  Work with View Designer in Azure Monitor.
- -  Create Azure Monitor Workbooks.
- -  Monitor with Power BI.
+- Configure Azure Dashboards.
+- Work with View Designer in Azure Monitor.
+- Create Azure Monitor Workbooks.
+- Monitor with Power BI.
 
 ## Prerequisites
 
- -  Understanding of what DevOps is and its concepts.
- -  Familiarity with version control principles is helpful but isn't necessary.
- -  Beneficial to have experience in an organization that delivers software.
+- Understanding of what DevOps is and its concepts.
+- Familiarity with version control principles is helpful but isn't necessary.
+- Beneficial to have experience in an organization that delivers software.

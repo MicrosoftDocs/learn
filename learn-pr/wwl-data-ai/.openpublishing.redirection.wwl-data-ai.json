@@ -4988,6 +4988,94 @@
     {
       "source_path_from_root": "/learn-pr/wwl-data-ai/create-enrichment-pipeline-azure-cognitive-search/index.yml",
       "redirect_url": "/training/modules/create-azure-ai-custom-skill/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-ai-fundamentals/2-understand-machine-learn.yml",
+      "redirect_url": "/training/modules/fundamentals-machine-learning/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-ai-fundamentals/3-understand-computer-vision.yml",
+      "redirect_url": "/training/modules/get-started-ai-fundamentals/3-computer-vision"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-ai-fundamentals/4-understand-natural-language-process.yml",
+      "redirect_url": "/training/modules/get-started-ai-fundamentals/5-natural-language-processing"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-ai-fundamentals/5-document-intelligence-knowledge-mining.yml",
+      "redirect_url": "/training/modules/get-started-ai-fundamentals/6-extract-insights"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-ai-fundamentals/6-understand-generative-ai.yml",
+      "redirect_url": "/training/modules/get-started-ai-fundamentals/2-generative-ai"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-ai-fundamentals/7-challenges-with-ai.yml",
+      "redirect_url": "/training/modules/get-started-ai-fundamentals/7-responsible-ai"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-ai-fundamentals/8a-understand-responsible-ai.yml",
+      "redirect_url": "/training/modules/get-started-ai-fundamentals/7-responsible-ai"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/get-started-ai-fundamentals/8b-knowledge-check.yml",
+      "redirect_url": "/training/modules/get-started-ai-fundamentals/8-knowledge-check"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/3-design-agent-selection-strategy.yml",
+      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution/4-design-agent-selection-strategy"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/4-define-chat-termination-strategy.yml",
+      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution/5-define-chat-termination-strategy"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/5-exercise.yml",
+      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution/6-exercise"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/6-knowledge-check.yml",
+      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution/7-knowledge-check"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/orchestrate-semantic-kernel-multi-agent-solution/7-summary.yml",
+      "redirect_url": "/training/modules/orchestrate-semantic-kernel-multi-agent-solution/8-summary"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/analyze-images/4-generate-smart-cropped-thumbnail.yml",
+      "redirect_url": "/azure/ai-services/computer-vision/overview-image-analysis"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-analyze-recognize-faces/2-identify-options-for-face-detection-analysis-identification.yml",
+      "redirect_url": "/training/modules/detect-analyze-recognize-faces/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-analyze-recognize-faces/4-detect-faces-computer-vision-service.yml",
+      "redirect_url": "/training/modules/analyze-images/"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-analyze-recognize-faces/5-understand-capabilities-of-face-service.yml",
+      "redirect_url": "/training/modules/detect-analyze-recognize-faces/2-understand-capabilities-of-face-service"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-analyze-recognize-faces/6-compare-match-detected-faces.yml",
+      "redirect_url": "/training/modules/detect-analyze-recognize-faces/4-compare-match-detected-faces"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-analyze-recognize-faces/7-implement-facial-recognition.yml",
+      "redirect_url": "/training/modules/detect-analyze-recognize-faces/4-compare-match-detected-faces"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-analyze-recognize-faces/3-understand-considerations-for-face-analysis.yml",
+      "redirect_url": "/training/modules/detect-analyze-recognize-faces/5-understand-considerations-for-face-analysis"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/classify-images/4-train-image-classifier.yml",
+      "redirect_url": "/training/modules/classify-images/4-use-trained-image-classifier"
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/detect-objects-images/4-consider-options-for-labeling-images.yml",
+      "redirect_url": "/training/modules/detect-objects-images/4-use-trained-detector"
     }
   ]
 }

@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-mysql-architecture.understand-parser-query-optimizer
 title: Understand the parser and query optimizer
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand the parser and query optimizer
   description: "Understand the parser and query optimizer"
   ms.date: 10/10/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-understand-parser-query-optimizer.md)]
+  [!include[](includes/4-understand-parser-query-optimizer.md)]

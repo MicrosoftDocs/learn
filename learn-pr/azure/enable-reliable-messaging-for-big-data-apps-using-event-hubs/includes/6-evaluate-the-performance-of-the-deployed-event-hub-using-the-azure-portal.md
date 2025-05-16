@@ -6,7 +6,7 @@ Evaluate your Event Hubs service by testing that your event hub is processing da
 
 ## How do you use the Azure portal to view your event hub activity?
 
-The Overview pane for your event hub service shows message counts, which represent the data (events) received and sent by the event hub. You can choose the timescale while viewing these events.
+The Overview pane for your event hub service shows message counts, which represent the data (events) received and sent by the event hub. You can choose the timescale while viewing these events. If you don't see the incoming and outgoing message counts, wait for a few minutes and refresh the page. 
 
 ![Screenshot of the Azure portal displaying the Event Hub namespace with message counts.](../media/6-view-messages.png)
 

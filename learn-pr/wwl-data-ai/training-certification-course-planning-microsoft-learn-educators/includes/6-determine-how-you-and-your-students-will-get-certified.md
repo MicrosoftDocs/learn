@@ -8,7 +8,7 @@ To request a certification exam voucher, log into the [Microsoft Learn for Educa
 
 You'll need to take your certification exam at the [Pearson VUE Testing Center](https://home.pearsonvue.com/Test-centers.aspx) or use the online proctoring option.
 
-For students, Microsoft offers academic pricing on Microsoft certification exams in most countries. To qualify, students must identify that they're a student during registration and verify their academic status. Once verified, students will receive a [student discount](https://aka.ms/mslestudentsdiscount) when registering for an exam. 
+For students, Microsoft offers academic pricing on Microsoft certification exams in most countries/regions. To qualify, students must identify that they're a student during registration and verify their academic status. Once verified, students will receive a [student discount](https://aka.ms/mslestudentsdiscount) when registering for an exam. 
 
 As an institution, you can offer Microsoft certification exams by purchasing exam vouchers through [Microsoft Volume Licensing Program](https://aka.ms/mslevolumelicensing), a customizable Microsoft software purchase program that grants discounted access to Microsoft Certification Solutions. Exam vouchers purchased through Microsoft Volume Licensing program can be used for Microsoft certified professional exams, including Microsoft Fundamentals and Microsoft Advanced Role Based certification exams.
 

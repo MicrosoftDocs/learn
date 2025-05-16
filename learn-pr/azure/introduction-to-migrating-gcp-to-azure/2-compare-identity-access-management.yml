@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-migrating-gcp-azure.compare-identity-access-management
+title: Compare identity and access management in Azure to Google Cloud
+metadata:
+  title: Compare Identity and Access Management in Azure to Google Cloud
+  description: "If you're hosting resources in the cloud, users need secure access to those resources to do their jobs. You must positively identify and authorize users to access information. In this unit, let's examine how authentication and authorization are done in both Google Cloud and Azure."
+  ms.date: 01/16/2025
+  author: carols
+  ms.author: carols
+  ms.topic: unit
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-compare-identity-access-management.md)]

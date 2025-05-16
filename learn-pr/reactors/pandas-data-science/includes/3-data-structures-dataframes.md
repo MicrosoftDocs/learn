@@ -46,7 +46,7 @@ The output is:
 
 As with `Series`, `DataFrames` also automatically order indices (in this case, the column indices *Area* and *Population*).
 
-So far, you've combined dictionaries together to compose a `DataFrame` (which has given our `DataFrame` a row-centric feel), but you can also create `DataFrames` in a column-wise fashion. Consider adding a *Capital* column by using our reliable old array-analog, a list:
+So far, you've combined dictionaries together to compose a `DataFrame` (which has given our `DataFrame` a row-centric feel), but you can also create `DataFrames` in a column-wise fashion. Consider adding a *Capital/Major City* column by using our reliable old array-analog, a list:
 
 ```python
 countries['Capital/Major City'] = ['Tirana', 'Paris', 'Berlin', 'Tokyo', 'Moscow']

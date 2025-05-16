@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cloud-adoption-framework.innovate
+title: Innovate
+metadata:
+  title: Innovate
+  description: "A high-level overview of the Innovate methodology in the Cloud Adoption Framework, including how to address misalignment and measure success."
+  ms.date: 02/06/2025
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: unit
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-innovate.md)]

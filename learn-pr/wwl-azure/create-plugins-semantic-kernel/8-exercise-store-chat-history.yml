@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-plugins-semantic-kernel.exercise-store-chat-history
+title: Exercise - Store chat history
+metadata:
+  title: Exercise - Store chat history
+  description: "Exercise - Store chat history"
+  ms.date: 01/24/2025
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-exercise-store-chat-history.md)]

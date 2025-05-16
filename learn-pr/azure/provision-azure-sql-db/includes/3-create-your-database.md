@@ -1,7 +1,7 @@
 
 Here, you set up your database, which includes creating your Azure SQL Database logical server, for your transportation logistics application. In practice, you choose settings that support the kind of app you're building.
 
-Over time, if you realize you need more compute power to keep up with demand, you can adjust performance options or even switch between the DTU and vCore performance models, with little or no interruption.
+Over time, if you realize you need more compute power to keep up with demand, you can adjust performance options or even switch between the DTU (Database Transaction Unit) and vCore (Virtual core) performance models, with little or no interruption.
 
 > [!NOTE]
 > This exercise requires you to use your own Azure subscription. To make sure you don't incur extra charges, clean up any resources you create after you finish this module.
@@ -12,7 +12,7 @@ Over time, if you realize you need more compute power to keep up with demand, yo
 
 1. In the **Create a resource** pane, Under **Categories**, select **Databases** and in the results, select **SQL Database**.
 
-   :::image type="content" source="../media/3-create-db.png" alt-text="Screenshot showing Create a resource pane with Databases in menu and SQL Database resource service highlighted.":::
+   :::image type="content" source="../media/3-create-db.png" alt-text="Screenshot showing the Create a resource pane with Databases in menu and SQL Database resource service highlighted.":::
 
 1. The **Create SQL Database** pane appears. 
 
@@ -69,13 +69,13 @@ Over time, if you realize you need more compute power to keep up with demand, yo
     | **Maintenance window** |
     | Maintenance window | System default (5pm to 8am) |
 
-1. In the **Tags** tab, consider assigning Azure tags to all your Azure assets. For example, create the "Owner" or "CreatedBy" tag to identify who created the resource, and the "Environment" tag to identify whether this resource is in production, development, etc. For more information, see [Develop your naming and tagging strategy for Azure resources](/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging).
+1. In the **Tags** tab, consider assigning Azure tags to all your Azure assets. For example, create the "Owner" or "CreatedBy" tag to identify who created the resource. Also, create the "Environment" tag to identify whether this resource is in production or development, etc. For more information, see [Develop your naming and tagging strategy for Azure resources](/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging).
 
 1. Select the **Review + create** tab to validate your entries and review the cost. 
 1. Select **Create** to create your Azure SQL database.
 
     > [!IMPORTANT]
-    > Remember your server name, admin login, and password for the next module.
+    > Remember your server name, admin login, and password for the next exercise.
 
 1. While deployment is in progress, **Deployment details** displays the resources that are created. When deployment completes, optionally, select **Pin to dashboard**, then select **Go to resource**. The **Overview** pane for your SQL database server appears. Your Azure SQL database is now up and running!
 
@@ -100,7 +100,7 @@ For now, let's enable your computer to access the database through the firewall.
 1. Under **Public network access**, choose **Selected networks**.
 1. Under **Firewall rules**, select **Add your client IP4 address**. This action automatically adds the IP address for your computer.
 
-    :::image type="content" source="../media/3-add-client-ip.png" alt-text="Screenshot of the Azure portal showing the SQL database Firewall settings pane with the Add client IP highlighted.":::
+    :::image type="content" source="../media/3-add-client-ip.png" alt-text="Screenshot of the Azure portal showing the SQL database Firewall settings pane with the 'Add your client IP4 address' highlighted.":::
 
 1. Select **Save**.
 

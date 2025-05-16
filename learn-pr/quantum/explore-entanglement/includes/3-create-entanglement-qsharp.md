@@ -1,6 +1,8 @@
 In the previous unit, you learned about the concept of quantum entanglement and Bell states.
 
-Now, let's create quantum entanglement using Q# and the Azure Quantum Development Kit. To create entanglement, you need to apply two quantum operations: the Hadamard gate and the Controlled-NOT (CNOT) gate.
+Now, let's create quantum entanglement using Q# and the Azure Quantum Development Kit. To create entanglement, you need to apply two quantum operations: the Hadamard operation and the Controlled-NOT (CNOT) operation.
+
+First, let's understand how these operations work and how they create entanglement.
 
 ## The Controlled-NOT (CNOT) operation
 
@@ -17,7 +19,7 @@ To create quantum entanglement, you need the multiqubit `CNOT` operation, which 
 
 In Q#, the `CNOT` operation acts on an array of two qubits, and it flips the second qubit if the first qubit is `One`.
 
-## Entanglement with a CNOT operation
+## Entanglement with Hadamard and CNOT operations
 
 By applying the **Hadamard**, `H`, operation and the **Controlled-NOT**, `CNOT`, operation, you can transform two qubits in the state $|00\rangle$ to the Bell state $\ket{\phi^+}=\frac1{\sqrt2}(|00\rangle+|11\rangle)$.
 
@@ -37,14 +39,16 @@ Here's how it works:
     $$ =\frac{1}{\sqrt2}(CNOT \ket{0_c 0_t} + CNOT \ket{1_c 0_t})= $$
     $$= \frac{1}{\sqrt2}(\ket{0_c 0_t}+\ket{1_c 1_t})$$
 
-## Create a new Q# file
+## Create quantum entanglement in Q#
+
+You start by creating a new Q# file in Visual Studio Code.
 
 1. Open Visual Studio Code.
 1. Select **File > New Text File** and save it as **Main.qs**.
 1. Select **View -> Command Palette** and type **Q#: Set the Azure Quantum QIR target profile**. Press **Enter**.
 1. Select **Q#: Unrestricted**.
 
-## Create the Bell state $\ket{\phi^+}$
+### Create the Bell state $\ket{\phi^+}$
 
 Let's start by creating the Bell state $\ket{\phi^+}=\frac1{\sqrt2}(|00\rangle+|11\rangle)$. 
 
@@ -152,7 +156,7 @@ Let's start by creating the Bell state $\ket{\phi^+}=\frac1{\sqrt2}(|00\rangle+|
 
     :::image type="content" source="../media/circuit-bellstates.png" alt-text="Screenshot of the circuit of the Bell state.":::
 
-## Create other Bell states
+## How to create other Bell states
 
 To create other Bell states, you need to apply additional Pauli $X$ and $Z$ operations to the qubits.
 
@@ -211,5 +215,6 @@ Similarly, Bell states $\ket{\psi^+}$ and $\ket{\psi^-}$ can be created by apply
 1. To run your program on the built-in simulator, click on **Run** above the `Main` operation or press **Ctrl+F5**. Your output will appear in the debug console.
 1. You can visualize the circuit diagram by clicking on **Circuit** from the list of commands above the `Main` operation. The circuit diagram shows the Hadamard gate applied to the first qubit, the Pauli $Z$ gate applied to the first qubit, and the CNOT gate applied to both qubits.
 
-In the next unit, you'll learn how to use entanglement to teleport quantum information.
+In the next unit, you'll learn how to use entanglement to send quantum information, a process known as quantum teleportation.
+
 

@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-resources-different-scopes.knowledge-check
-title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: "Knowledge check"
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 09/27/2024
   author: mumian
@@ -69,4 +67,4 @@ quiz:
         You can use Bicep files that have a `targetScope` of `managementGroup`, but you need to explicitly set the `scope` to `tenant()`.
         Also, the hierarchy of management groups doesn't depend on how they're deployed.
         You set a management group's parent as one of its properties.
-
+

@@ -1,13 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.advocates.azure-functions-and-signalr.6-host-a-static-website-using-a-storage-account
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use a storage account to host a static website
   description: Learn how an Azure Storage account is able to host static files over a secure server.
-  ms.date: 08/12/2024
-  author: craigshoemaker
-  ms.author: cshoe
+  ms.date: 04/24/2025
+  author: glenga
+  ms.author: glenga
   ms.topic: unit
 title: Use a storage account to host a static website
 durationInMinutes: 1

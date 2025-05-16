@@ -1,6 +1,6 @@
 In this module, you created your first queries using the SQL query language in Azure Cosmos DB for NoSQL. You learned how similar how to query and project fields from items into JSON results.
 
-Now that you have completed this module, you can:
+Now that you completed this module, you can:
 
 - Project fields from items into JSON results
 - Use built-in functions in your query filters and fields

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.prepare-azure-ai-development.azure-ai-foundry
+title: Azure AI Foundry
+metadata:
+  title: Azure AI Foundry
+  description: Understand when to use Azure AI Foundry.
+  author: wwlpublish
+  ms.author: gmalc
+  ms.date: 04/17/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-azure-ai-foundry.md)]
+

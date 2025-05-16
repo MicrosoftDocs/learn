@@ -12,7 +12,7 @@ param httpsOnly bool
 
 var originName = 'my-origin'
 
-resource cdnProfile 'Microsoft.Cdn/profiles@2024-02-01' = {
+resource cdnProfile 'Microsoft.Cdn/profiles@2024-09-01' = {
   name: profileName
   location: 'global'
   sku: {
@@ -20,7 +20,7 @@ resource cdnProfile 'Microsoft.Cdn/profiles@2024-02-01' = {
   }
 }
 
-resource endpoint 'Microsoft.Cdn/profiles/endpoints@2024-02-01' = {
+resource endpoint 'Microsoft.Cdn/profiles/endpoints@2024-09-01' = {
   parent: cdnProfile
   name: endpointName
   location: 'global'

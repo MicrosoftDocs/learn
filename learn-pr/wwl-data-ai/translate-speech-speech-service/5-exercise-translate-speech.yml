@@ -2,8 +2,6 @@
 uid: learn.wwl.translate-speech-speech-service.exercise-translate-speech
 title: Exercise - Translate speech
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Translate speech
   description: Exercise - Translate speech
   author: wwlpublish
@@ -17,4 +15,4 @@ labModal: true
 durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise-translate-speech.md)]
-
+

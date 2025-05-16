@@ -1,18 +1,18 @@
-You've seen how to get data from your viewmodels to your UI, and how you can use two-way binding to get data back into your viewmodels.
+You saw how to get data from your viewmodels to your UI, and how you can use two-way binding to get data back into your viewmodels.
 
-Using two-way bindings like that is the preferred way to react to changes from the UI whenever **data** changes. Many things that we would handle as **events** can be handled by using two-way bindings and MVVM. Other examples are things like `Switch.IsToggled` and `Slider.Value`, which can be reflected in our viewmodel as a boolean or integer value, without having to use events.
+Using two-way bindings like that is the preferred way to react to changes from the UI whenever **data** changes. Many things that we would handle as **events** can be handled by using two-way bindings and the Model-View-ViewModel (MVVM) pattern. Other examples are things like `Switch.IsToggled` and `Slider.Value`, which can be reflected in our viewmodel as a boolean or integer value, without having to use events.
 
 But there are some things, like a `Button` or `MenuItem` activation, that aren't directly tied to changing data. These interactions still require event-like handling. Since these UI components usually invoke some sort of logic with the data, we want that logic on the viewmodel. But we don't want to handle them as `Clicked` and `Selected` events in the code-behind, if possible. We want as much as possible to be in the viewmodel, that way it's testable.
 
 ## Use the command pattern
 
-Many of the .NET MAUI controls that have this kind of interaction support binding to a property that exposes an `ICommand` interface. This property is most likely named `Command`. The button is one example:
+Many of the .NET MAUI controls that have this kind of interaction support binding to a property that exposes an `ICommand` interface. This property is most likely named `Command`. The `Button` control is one example:
 
 ```xaml
 <Button Text="Give Bonus" Command="{Binding GiveBonusCommand}" />
 ```
 
-The control knows when to invoke the command. For example, a button invokes the command when it's pressed. The command in this example is bound to the `GiveBonusCommand` property of the viewmodel. The property type has to implement the `ICommand` interface. The code would look something like this:
+The control knows when to invoke the command. For example, a button invokes the command when pressed. The command in this example is bound to the `GiveBonus` property of the viewmodel. The property type has to implement the `ICommand` interface. The code would look something like this example:
 
 ```csharp
 public class EmployeeViewModel : INotifyPropertyChanged
@@ -22,7 +22,7 @@ public class EmployeeViewModel : INotifyPropertyChanged
 }
 ```
 
-The `ICommand` interface has an `Execute` method that's called when the button is clicked. In this way, the `ICommand.Execute` directly replaces `Button.Click` event-handling code.
+The `ICommand` interface has an `Execute` method which is called when the button is pressed. In this way, the `ICommand.Execute` directly replaces `Button.Click` event-handling code.
 
 The full `ICommand` interface has two more methods: `CanExecute` and `CanExecuteChanged` that are used to determine whether a control should appear enabled or disabled.
 
@@ -43,7 +43,7 @@ public interface ICommand
 
 This command pattern lets you maintain clean separation of UI behavior from UI implementation. But it can complicate your code if you need to create a separate class to implement each event handler.
 
-Instead of creating several custom classes that implement the interface, it's common to use `Command` or `Command<T>`. These classes implement `ICommand` but expose its behavior as properties in your viewmodel that you can set. This allows you to implement the `GiveBonusCommand` property described earlier entirely within our viewmodel class:
+Instead of creating several custom classes that implement the interface, it's common to use `Command` or `Command<T>`. These classes implement `ICommand` but expose its behavior as properties in your viewmodel that you can set. In this way, we can implement the `GiveBonus` property described earlier entirely within our viewmodel class:
 
 ```csharp
 public class EmployeeViewModel : INotifyPropertyChanged
@@ -100,9 +100,9 @@ The MVVM Toolkit also handles `async` methods, which are common in .NET programm
 
 The `ICommand` interface accepts an `object` parameter for the `CanExecute` and `Execute` methods. .NET MAUI implements this interface without any type checking through the `Command` class. The delegates you attach to the command must do their own type-checking to ensure that the correct parameter is passed. .NET MAUI also provides the `Command<T>` implementation where you set the type of parameter expected. When you create a command that accepts a single type of parameter, use `Command<T>`.
 
-.NET MAUI controls that implement the command pattern provide the `CommandParameter` property. By setting this property, you can pass a parameter to the command when it's invoked with `Execute`, or when it checks the `CanExecute` method for status.
+.NET MAUI controls that implement the command pattern provide the `CommandParameter` property. By setting this property, you can pass a parameter to the command when you invoke it with `Execute`, or when the command checks the `CanExecute` method for status.
 
-In this example, the string value 25 is sent to the command:
+In this example, the string value "25" is sent to the command:
 
 ```xaml
 <Button Text="Give Bonus" Command="{Binding GiveBonusCommand}" CommandParameter="25" />

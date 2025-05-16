@@ -5,7 +5,7 @@ metadata:
   description: Azure OpenAI Service enables engineers to build generative AI applications.
   author: ivorb
   ms.author: berryivor
-  ms.date: 11/26/2024
+  ms.date: 03/18/2025
   ms.service: azure-ai-openai
   ms.topic: module-standard-task-based
   ms.collection:

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-classes-objects.compare-structured-object-oriented-programming
+title: Compare structured and object-oriented programming
+metadata:
+  title: Compare structured and object-oriented programming
+  description: "Compare structured and object-oriented programming"
+  ms.date: 02/12/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-compare-structured-object-oriented-programming.md)]

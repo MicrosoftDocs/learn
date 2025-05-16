@@ -1,5 +1,5 @@
 > [!CAUTION]
-> This content references CentOS, a Linux distribution that is End Of Life (EOL) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
+> This content references CentOS, a Linux distribution that is End Of Service (EOS) status. Please consider your use and plan accordingly. For more information, see the [CentOS End Of Life guidance](/azure/virtual-machines/workloads/centos/centos-end-of-life).
 
 The benefits of Azure Automanage can be extended beyond virtual machines hosted on the Azure cloud through Azure Arc. Azure Arc expands support to server-based resources that run outside of Azure. A Windows Server or Linux server that's running in Contoso's on-premises datacenter can be registered with Azure Arc and use many of the capabilities available on Azure, including Azure Automanage. Contoso can also apply these capabilities to any server that's running Windows Server or Linux hosted by another cloud provider.
 
@@ -19,7 +19,7 @@ Arc-enabled servers onboarded with Automanage enjoy the same benefits and servic
 
 Automanage supports the following operating systems for Azure Arc-enabled servers:
 
-- Windows Server 2012 R2, 2016, 2019, 2022
+- Windows Server 2012 R2, 2016, 2019, 2022, 2025
 - CentOS 7.3+, 8
 - RHEL 7.4+, 8
 - Ubuntu 16.04, 18.04, 20.04

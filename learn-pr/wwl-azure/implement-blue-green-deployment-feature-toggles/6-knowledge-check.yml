@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-blue-green-deployment-feature-toggles.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 05/27/2024
   author: wwlpublish
@@ -50,4 +48,4 @@ quiz:
       explanation: "Correct. A/B Testing and Canary Release allows you to plan to slowly increase the traffic to a newer version of your site."
     - content: "Canary Release."
       isCorrect: false
-      explanation: "Incorrect. A/B Testing and Canary Release allows you to plan to slowly increase the traffic to a newer version of your site."
+      explanation: "Incorrect. A/B Testing and Canary Release allows you to plan to slowly increase the traffic to a newer version of your site."

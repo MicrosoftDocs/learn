@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-updates-azure-arc-enabled-servers.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 06/13/2024
   author: wwlpublish
@@ -42,12 +40,12 @@ quiz:
       explanation: "Correct. The duration of the maintenance window should be provided in HH:mm format."
   - content: "A system administrator needs to ensure update compliance across all machines, deploy critical updates instantly, and use flexible patching options. Which Azure service should they use?"
     choices:
-    - content: "Azure Security Center"
+    - content: "Microsoft Defender for Cloud"
       isCorrect: false
-      explanation: "Incorrect. While Azure Security Center provides unified security management and advanced threat protection, it does not directly manage updates."
+      explanation: "Incorrect. While Microsoft Defender for Cloud provides unified security management and advanced threat protection, it does not directly manage updates."
     - content: "Azure Automation"
       isCorrect: false
       explanation: "Incorrect. Azure Automation allows for the creation, deployment, monitoring, and maintenance of resources in an Azure environment, but it does not specifically manage updates."
     - content: "Update Manager in Azure"
       isCorrect: true
-      explanation: "Correct. Update Manager in Azure oversees update compliance, deploys critical updates, and offers flexible patching options."
+      explanation: "Correct. Update Manager in Azure oversees update compliance, deploys critical updates, and offers flexible patching options."

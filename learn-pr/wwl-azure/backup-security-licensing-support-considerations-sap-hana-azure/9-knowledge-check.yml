@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.backup-security-licensing-support-considerations-sap-hana-azure.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 12/08/2021
   author: wwlpublish
@@ -72,4 +70,4 @@ quiz:
       explanation: "Incorrect. Deployment of SAP HANA on Azure (Large Instances) requires a Microsoft Premier support contract."
     - content: "No support contract is required"
       isCorrect: false
-      explanation: "Incorrect. Deployment of SAP HANA on Azure (Large Instances) requires a Microsoft Premier support contract."
+      explanation: "Incorrect. Deployment of SAP HANA on Azure (Large Instances) requires a Microsoft Premier support contract."

@@ -43,7 +43,7 @@ Amazon Web Services (AWS) established the S3 standard framework, and major stora
 For more information about object storage benefits, installation, and testing, see the following storage partner documentation. For more object storage providers, see [Providers of S3-compatible object storage](/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-s3-compatible-object-storage#providers-of-s3-compatible-object-storage).
 
 - [Cloudian](https://cloudian.com/sql) HyperStore
-- [Dell](https://www.dell.com/en-us/dt/products-solutions/trial-software-download/eula/isilonsoftwaredownload.htm) Isildon OneFS
+- [Dell](https://www.dell.com/support/product-details/en-us/product/isilon-onefs) Isildon OneFS
 - [Dell](https://github.com/EMCECS/ECS-CommunityEdition) ECS Community Edition
 - [Hitachi](https://www.hitachivantara.com/en-us/pdf/white-paper/microsoft-sql-server-2022-with-hcp-backup-to-object-polybase-validation.pdf) Hitachi Content Platform (HCP)
 - [MinIO](https://min.io/solutions/sqlserver) Multi-Cloud Object Storage

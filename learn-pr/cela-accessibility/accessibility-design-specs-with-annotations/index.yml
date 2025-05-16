@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.cela-accessibility.accessibility-design-specs-with-annotations
+metadata:
+  author: erzelman
+  ms.author: erzelman
+  ms.date: 02/14/2025
+  title: Accessibility design specs with annotations
+  description: Accessibility design specs with annotations
+  ms.topic: module
+  ms.service: microsoft-365
+  moduleType: standard
+title: Accessibility design specs with annotations
+summary: |
+  Accessibility annotations are labels or comments included in designs for digital products to outline how elements should be made accessible. They offer directions to developers, designers, and testers to help ensure content is usable by individuals with disabilities. These annotations typically explain how components should function with assistive technologies like screen readers, keyboards, and magnifiers. In this module, you delve into the essential principles of accessibility annotations, specifically focusing on how to effectively annotate keyboard navigation & screen reader support your Figma mockups. Additionally, we are covering the importance of color contrast, High contrast, and reflow. Proper color contrast for text, graphics, and components is vital for readability, especially for users with visual impairments, while reflow ensures that content can be enlarged without increasing line length and without requiring scrolling in two dimensions when using zoom or magnification.
+  By the end of this module, you gain the skills necessary to create inclusive designs that cater to all users, ensuring that your digital content is accessible and user-friendly.
+abstract: |
+  By the end of this module, you are able to:
+  - Use Microsoft's [A11y Focus Order Plugin](https://www.figma.com/community/plugin/731310036968334777/a11y-focus-order) and [Fluent Accessibility Design Toolkit](https://www.figma.com/file/p9b2NqM24xivxzE1d86erh/Fluent-accessible-design-toolkit?type=design) to create accessibility annotations.
+  - Incorporate accessibility principles into mockup designs to enhance usability and inclusivity.
+prerequisites: |
+  - Basic understanding of assistive technology.
+  - Basic knowledge of accessibility principles.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- m365
+units:
+- learn.cela-accessibility.accessibility-design-specs-with-annotations.introduction
+- learn.cela-accessibility.accessibility-design-specs-with-annotations.overview-accessibility-annotation
+- learn.cela-accessibility.accessibility-design-specs-with-annotations.annotations-for-keyboard-screen-reader-navigation
+- learn.cela-accessibility.accessibility-design-specs-with-annotations.design-for-color-contrast-requirements
+- learn.cela-accessibility.accessibility-design-specs-with-annotations.knowledge-check
+- learn.cela-accessibility.accessibility-design-specs-with-annotations.summary
+badge:
+  uid: learn.cela-accessibility.accessibility-design-specs-with-annotations-badge

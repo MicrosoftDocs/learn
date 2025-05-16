@@ -11,8 +11,6 @@ Microsoft Purview's solutions in the governance portal provide a unified data go
  -  An Active Microsoft Purview account is already created in Azure portal.
  -  The user has permissions to access the Microsoft Purview governance portal.
 
-Microsoft Purview's solutions in the governance portal provide a unified data governance service that helps you manage your on-premises, multicloud, and software-as-a-service (SaaS) data.<br>
-
 ### Data Map
 
 Microsoft Purview automates data discovery by providing data scanning and classification for assets across your data estate. Metadata and descriptions of discovered data assets are integrated into a holistic map of your data estate. Microsoft Purview Data Map provides the foundation for data discovery and data governance. Microsoft Purview Data Map is a cloud native PaaS service that captures metadata about enterprise data present in analytics and operation systems on-premises and cloud. Microsoft Purview Data Map is automatically kept up to date with built-in automated scanning and classification system. Business users can configure and use the data map through an intuitive UI and developers can programmatically interact with the Data Map using open-source Apache Atlas 2.2 APIs. Microsoft Purview Data Map powers the Microsoft Purview Data Catalog, the Microsoft Purview Data Estate Insights and the Microsoft Purview Data Policy as unified experiences within the Microsoft Purview governance portal.
@@ -37,6 +35,8 @@ Microsoft Purview Data Policy is a set of central, cloud-based experiences that 
  -  Enables at-scale access provisioning.
  -  Introduces a new data-plane permission model that is external to data sources.
  -  It is seamlessly integrated with Microsoft Purview Data Map and Catalog:
+    
+    
      -  Search for data assets and grant access only to what is required via fine-grained policies.
      -  Path to support SaaS, on-premises, and multicloud data sources.
      -  Path to create policies that leverage any metadata associated to the data objects.

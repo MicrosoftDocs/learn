@@ -4,9 +4,8 @@ title: Collections and lists
 metadata:
   title: Collections and lists
   description: This unit covers collections in F#, with a focus on lists and list properties.
-  author: softchris
-  ms.author: chnoring
-  ms.manager: markl
+  author: baronfel
+  ms.author: chethusk 
   ms.date: 03/24/2023
   ms.topic: unit
   ms.custom: team=nextgen

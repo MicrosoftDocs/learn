@@ -4,9 +4,8 @@ title: Exercise - Use variables to store data
 metadata:
   title: Exercise - Use variables to store data
   description: In this exercise, you learn how to declare and print variables. You also learn how to recognize and fix an error related to formatting.
-  author: softchris
-  ms.author: chnoring
-  ms.manager: markl
+  author: baronfel
+  ms.author: chethusk 
   ms.date: 02/24/2023
   ms.topic: unit
   ms.custom: team=nextgen

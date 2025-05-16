@@ -2,8 +2,6 @@
 uid: learn.wwl.migrate-modernize-explore-azure-center-sap-solutions.exercise-install-azure-infrastructures
 title: Exercise - Deploy S/4HANA infrastructure with Azure Center for SAP solutions
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Deploy S/4HANA infrastructure with Azure Center for SAP solutions
   description: "Exercise - Deploy S/4HANA infrastructure with Azure Center for SAP solutions."
   ms.date: 01/09/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-exercise-install-azure-infrastructures.md)]
+  [!include[](includes/5-exercise-install-azure-infrastructures.md)]

@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.publish-static-web-app-and-api.12-summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
-  ms.date: 11/18/2022
+  ms.date: 03/12/2025
   author: johnpapa
   ms.author: jopapa
   ms.topic: unit
@@ -13,4 +11,4 @@ title: Summary
 durationInMinutes: 1
 content: |
   [!include[](includes/12-summary.md)]
-
+

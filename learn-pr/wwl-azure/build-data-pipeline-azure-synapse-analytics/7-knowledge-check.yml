@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.build-data-pipeline-azure-synapse-analytics.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 10/06/2023
   author: wwlpublish
@@ -45,4 +43,4 @@ quiz:
       explanation: "Correct. A trigger is used to initiate a pipeline run."
     - content: "An activity"
       isCorrect: false
-      explanation: "Incorrect. Activities are the tasks within a pipeline."
+      explanation: "Incorrect. Activities are the tasks within a pipeline."

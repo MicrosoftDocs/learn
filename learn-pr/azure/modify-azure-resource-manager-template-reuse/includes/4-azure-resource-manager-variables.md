@@ -4,11 +4,11 @@ In the previous scenario, you decided to use an expression made up of several Az
 
 An ARM template variable is a construct that holds a value for later use. Variables are best used when a value needs to be specified in several places in a template. Wherever the variable is used in the template, Resource Manager replaces it with the resolved value.
 
-For example, you have an expression that defines a value for a resource location. Several of the resources that you defined in your template require a location. You can create a variable to hold the location expression and then use the variable wherever a location is required.
+For example, you have an expression that defines a value for a resource location. Several of the resources that you defined in your template require a location. You can create a variable to hold the location expression, and then use the variable wherever a location is required.
 
 ### Advantages to using ARM template variables
 
-ARM template variables allow you to write an expression once and then use it in several places. Also, maintenance of the expression is in one place, and the template is more readable.
+ARM template variables allow you to write an expression once, and then use it in several places. Also, maintenance of the expression is in one place, and the template is more readable.
 
 ## How do I use ARM template variables?
 

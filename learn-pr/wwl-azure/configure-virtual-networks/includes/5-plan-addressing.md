@@ -4,7 +4,7 @@ You can assign IP addresses to Azure resources to communicate with other Azure r
 
 **Public IP addresses** allow your resource to communicate with the internet. You can create a public IP address to connect with Azure public-facing services.
 
-The following illustration shows a virtual machine resource that has a private IP address and a public IP address.
+The next illustration shows a virtual machine resource that has a private IP address and a public IP address.
 
 :::image type="content" source="../media/ip-addressing-54476e47.png" alt-text="Illustration of a resource with a private IP address and a public IP address." border="false":::
 

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-core-data-concepts
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore core data concepts
   description: "This content is a part of Explore core data concepts."
   ms.date: 08/28/2024
@@ -54,4 +52,4 @@ units:
 - learn.wwl.explore-core-data-concepts.knowledge-check
 - learn.wwl.explore-core-data-concepts.summary
 badge:
-  uid: learn.wwl.explore-core-data-concepts.badge
+  uid: learn.wwl.explore-core-data-concepts.badge

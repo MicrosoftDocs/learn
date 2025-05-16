@@ -9,7 +9,7 @@ This is the problem facing the infrastructure engineers at Contoso. They must de
 *Split DNS*, also known as split-horizon DNS, uses the same DNS domain name for both internet and internal domain-member resources. However, the DNS server role is assigned to separate servers: one or more servers for the internet, and the other server(s) for the AD DS domain. Deploying DNS this way requires extra steps to ensure that sensitive information found on the AD DS domain side is separated from the internet side, and to ensure that only the DNS server deployed on the internet side, that is, outside the inner firewall, can be accessed by queries from outside the firewall.
  
 > [!NOTE]
-> Because DNS is such a vital function for AD DS, the DNS server role is usually included with domain controllers when they're deployed.
+> Because DNS is such a vital function for AD DS, the DNS server role is included with domain controllers when they're deployed.
 
 You can integrate the DNS role into AD DS so that DNS records are stored as Active Directory objects and attributes. The DNS zone type in this instance is referred to as Active Directory-integrated. Active Directory-integrated zones replace DNS zone transfers with AD DS replication and can ensure secure dynamic updates of client records to the zone. In a domain, using Active Directory-integrated DNS is a best practice.
 
@@ -25,14 +25,14 @@ Although the internet-facing DNS servers have the same domain name as the Active
 > [!TIP]
 > Normally, the internet-facing DNS server zone only contains records for itself and other servers that are located in the perimeter network and need to be accessed from the internet.
 
-When a query to the internet-facing DNS server comes in from the internet requesting a resolution on any domain-level resource, such as an SRV record, the internet-facing DNS server rejects the query because it doesn't have any of the SRV records—these are only stored in the domain Active Directory-integrated DNS servers. Because it considers itself authoritative for the zone, the internet-facing DNS server does not make an iterative query to the Active Directory-integrated DNS servers.
+When a query to the internet-facing DNS server comes in from the internet requesting a resolution on any domain-level resource, such as an SRV record, the internet-facing DNS server rejects the query because it doesn't have any of the SRV records—these are only stored in the domain Active Directory-integrated DNS servers. Because it considers itself authoritative for the zone, the internet-facing DNS server doesn't make an iterative query to the Active Directory-integrated DNS servers.
 
 > [!TIP]
 > To further enhance security, you can set a firewall rule on the inside firewall, that is, the firewall between the internal and perimeter networks, to reject all DNS (TCP and UDP port 53) queries from the perimeter to the internal network, while still allowing DNS replies.
 
 ## Implement split DNS
 
-Using the same namespace internally and externally simplifies resource access from the perspective of users, but it also increases management complexity. You should not make internal DNS records available externally, but some synchronization of records for external resources typically is required. For example, both your internal and external namespaces might use the name `Contoso.com`.
+Using the same namespace internally and externally simplifies resource access from the perspective of users, but it also increases management complexity. You shouldn't make internal DNS records available externally, but some synchronization of records for external resources typically is required. For example, both your internal and external namespaces might use the name `Contoso.com`.
 
 Using unique namespaces for the internal and public namespaces provides a clear delineation between internal and external DNS, and avoids the need to synchronize records between the namespaces. However, in some cases, having multiple namespaces might lead to user confusion. For example, you might choose the external namespace of `Contoso.com` and the internal namespace of `Contoso.local`.
 
@@ -45,7 +45,7 @@ Using a subdomain of the public namespace for AD DS avoids the need to synchroni
 
 Having a matching internal and external DNS namespace can pose certain problems. However, split DNS can provide a solution to these problems. Split DNS is a configuration in which your domain has two root-server zones that contain domain-name registration information.
 
-Your internal network hosts are directed to one zone, whereas external hosts are directed to another for name resolution. For example, in a non-split DNS configuration for the domain `contoso.com`, you might have a DNS zone that looks like the example in the following table.
+Your internal network hosts are directed to one zone, whereas external hosts are directed to another for name resolution. For example, in a nonsplit DNS configuration for the domain `contoso.com`, you might have a DNS zone that looks like the example in the following table.
 
 | **Host**   | **Record type** | **IP address** |
 | ---------- | --------------- | -------------- |

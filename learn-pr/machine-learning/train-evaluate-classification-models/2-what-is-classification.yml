@@ -2,8 +2,6 @@
 uid: learn.wwl.train-evaluate-classification-models.what-is-classification
 title: What is classification?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is classification?
   description: An overview of classification and some examples
   ms.date: 08/25/2024
@@ -13,4 +11,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-what-is-classification.md)]
+  [!include[](includes/2-what-is-classification.md)]

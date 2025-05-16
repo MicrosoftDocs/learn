@@ -2,8 +2,6 @@
 uid: learn.make-recommendations-ai-personalizer.run-evaluations
 title: Run evaluations
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Run evaluations
   description: Learn how to run offline evaluations and feature evaluations.
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/7-run-evaluations.md)]
-
+

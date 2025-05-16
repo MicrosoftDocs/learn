@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.observability-continuous-improvement
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Observability and Continuous Improvement
   description: "Learners will discover the significance of observability in providing real-time insights into system performance and identifying inefficiencies. This module emphasizes the importance of continuous improvement through feedback loops, performance monitoring, and market analysis. Learners will explore strategies for adapting to market trends and fostering a culture of innovation within platform engineering teams."
   ms.date: 01/14/2025
@@ -54,13 +52,14 @@ subjects:
   - productivity
   - site-reliability-engineering
 units:
-  - learn.wwl.observability-continuous-improvement.introduction
-  - learn.wwl.observability-continuous-improvement.importance-observability-modern-platforms
-  - learn.wwl.observability-continuous-improvement.build-observability-platform-architecture
-  - learn.wwl.observability-continuous-improvement.metrics-monitoring-alerts
-  - learn.wwl.observability-continuous-improvement.automation-incident-detection-resolution
-  - learn.wwl.observability-continuous-improvement.continuous-improvement-through-feedback-loops
-  - learn.wwl.observability-continuous-improvement.knowledge-check
-  - learn.wwl.observability-continuous-improvement.summary
+- learn.wwl.observability-continuous-improvement.introduction
+- learn.wwl.observability-continuous-improvement.importance-observability-modern-platforms
+- learn.wwl.observability-continuous-improvement.build-observability-platform-architecture
+- learn.wwl.observability-continuous-improvement.metrics-monitoring-alerts
+- learn.wwl.observability-continuous-improvement.automation-incident-detection-resolution
+- learn.wwl.observability-continuous-improvement.continuous-improvement-through-feedback-loops
+- learn.wwl.observability-continuous-improvement.implementing-real-time-monitoring-with-azure-monitor
+- learn.wwl.observability-continuous-improvement.knowledge-check
+- learn.wwl.observability-continuous-improvement.summary
 badge:
-  uid: learn.wwl.observability-continuous-improvement.badge
+  uid: learn.wwl.observability-continuous-improvement.badge

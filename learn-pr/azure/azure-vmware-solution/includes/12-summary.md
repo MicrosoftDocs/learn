@@ -1,10 +1,10 @@
 ﻿Contoso needed a way to secure outbound internet connectivity from its Azure VMware Solution private cloud. Contoso also wanted to continue using their favorite NVA in Azure.
 
-Azure VMware Solution addressed both these requirements. The process involves generating and injecting a default route (0.0.0.0/0) from the NVA. Azure Route Server can be used to learn the default route from a custom or 3rd party NVAs using BGP. Azure Route Server then propagates the default route to Azure VMware Solution private cloud. Azure Firewall is used to control and inspect outbound internet traffic from Azure VMware Solution private cloud.
+Azure VMware Solution addressed both these requirements. The process involves generating and injecting a default route (0.0.0.0/0) from the NVA. Azure Route Server can be used to learn the default route from a custom or third-party NVAs using BGP. Azure Route Server then propagates the default route to Azure VMware Solution private cloud. Azure Firewall is used to control and inspect outbound internet traffic from Azure VMware Solution private cloud.
 
 Contoso was delighted with the simplicity and elegance of this solution. They felt confident to meet strict audit requirements from healthcare industry regulators.
 
-Using Azure VMware Solution provided all the flexibility Contoso needed. It included continued use of standard practices with NVAs. Contoso also took advantage of Azure native services such as Azure Route Server and Azure Firewall. Integration between Azure VMware Solution, NVA, Azure Route Server and Azure Firewall was seamless and easy to implement.
+Using Azure VMware Solution provided all the flexibility Contoso needed. It included continued use of standard practices with NVAs. Contoso also took advantage of Azure native services such as Azure Route Server and Azure Firewall. Integration between Azure VMware Solution, NVA, Azure Route Server, and Azure Firewall were seamless and easy to implement.
 
 ## References
 

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure-sql-case-studies
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Putting it all together with Azure SQL
   description: Putting it all together with Azure SQL
   ms.date: 03/15/2023
@@ -45,4 +43,4 @@ units:
 - learn.azure-sql-case-studies.7-summary
 badge:
   uid: learn.azure-sql-case-studies.badge
-
+

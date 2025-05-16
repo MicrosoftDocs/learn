@@ -27,10 +27,6 @@ You'll use [Azure Storage](https://azure.microsoft.com/services/storage/) to per
 
 With [Azure AI Custom Vision](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/) (part of the [Azure AI services](https://azure.microsoft.com/services/cognitive-services/)) you can associate a set of images to Tracked Objects, train a machine learning model on the set you created, and detect the Tracked Objects.
 
-### Azure Spatial Anchors
-
-To store a Tracked Object location and give guided directions to find it, you'll use [Azure Spatial Anchors](https://azure.microsoft.com/services/spatial-anchors/).
-
 ## Create and prepare the Unity project
 
 In this section, you'll create a new Unity project and get it ready for MRTK development.
@@ -45,8 +41,6 @@ First, follow the steps in [the HoloLens 2 learning path](/training/paths/beginn
 6. Creating and configuring the scene and give the scene a suitable name, for example, *AzureCloudServices*
 
 ## Import the tutorial assets
-
-1. Add the `AzurespatialAnchors` SDK to your project. To add the package, [follow this tutorial](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage).
 
 1. Download and import the following Unity custom packages *in the order they're listed*:
 

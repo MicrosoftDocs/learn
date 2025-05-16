@@ -67,7 +67,7 @@ For example, you might test a **Data theft by departing users** policy to identi
 Provide stakeholders with the resources they need to succeed. Share documentation on creating policies, investigating activities, and resolving cases. Important resources include:
 
 - [Create and manage insider risk management policies](/purview/insider-risk-management-policies?azure-portal=true).
-- [Investigate insider risk management activities](/insider-risk-management-activities?azure-portal=true).
+- [Investigate insider risk management activities](/purview/insider-risk-management-activities?azure-portal=true).
 - [Review data with the insider risk management content explorer](/purview/insider-risk-management-content-explorer?azure-portal=true).
 
 Providing stakeholders with these materials ensures consistency and alignment across teams.

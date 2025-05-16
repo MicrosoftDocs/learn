@@ -1,4 +1,4 @@
-You're familiar with the basic features of both Azure Firewall and Azure Firewall Manager. Now let's examine how these technologies work to provide security for your Azure resources. This information helps you evaluate whether Azure Firewall is the right tool for Contoso's network security strategy.
+Now that you're familiar with the basic features of both Azure Firewall and Azure Firewall Manager, let's examine how these technologies work to provide security for your Azure resources. This information helps you evaluate whether Azure Firewall is the right tool for Contoso's network-security strategy.
 
 ## How Azure Firewall protects an Azure virtual network
 
@@ -7,7 +7,7 @@ To understand how Azure Firewall protects your virtual network, know that there 
 - The firewall instance has a public IP address to which all inbound traffic is sent.
 - The firewall instance has a private IP address to which all outbound traffic is sent.
 
-That is, all traffic—inbound and outbound—goes through the firewall. By default, the firewall denies access to everything. Your job is to configure the firewall with the conditions under which traffic is allowed through the firewall. Each condition is called a *rule* and each rule applies one or more checks on the data. Only traffic that passes all the firewall's rules is allowed to pass through.
+That is, all traffic—inbound and outbound—goes through the firewall. By default, the firewall denies access to everything. Your job is to configure the firewall with the conditions under which traffic is allowed through the firewall. Each condition is called a *rule*, and each rule applies one or more checks on the data. Only traffic that passes all the firewall's rules is allowed to pass through.
 
 How Azure Firewall manages network traffic depends on where the traffic originates:
 
@@ -58,7 +58,7 @@ Azure Firewall offers many features designed to make it easier to create and man
 
 |Feature  |Description  |
 |---------|---------|
-|FQDN     |A domain name of a host, or one or more IP addresses. Adding an FQDN to an application rule allows access to that domain. When you use an FQDN in an application rule, you can use wild cards, such as *.google.com.        |
+|FQDN     |A domain name of a host, or one or more IP addresses. Adding an FQDN to an application rule allows access to that domain. When you use an FQDN in an application rule, you can use wildcards, such as *.google.com.        |
 |FQDN tag     |A group of well-known Microsoft FQDNs. Adding an FQDN tag to an application rule allows outbound access to the tag's FQDNs. There are FQDN tags for Windows Update, Azure Virtual Desktop, Windows diagnostics, Azure Backup, and more. Microsoft manages FQDN tags, and they can't be modified or created.       |
 |Service tag     |A group of IP address prefixes related to a specific Azure service. Adding a service tag to a network rule allows access to the service represented by the tag. There are service tags for dozens of Azure services, including Azure Backup, Azure Cosmos DB, Logic Apps, and more. Microsoft manages service tags, and they can't be modified or created.        |
 |IP groups     |A group of IP addresses, such as 10.2.0.0/16 or 10.1.0.0-10.1.0.31. You can use an IP group as the source address in a NAT or application rule, or as the source or destination address in a network rule.        |

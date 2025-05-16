@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-azure-machine-learning-auth.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Module summary
+  ms.date: 03/06/2025
+  author: Orin-Thomas
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]

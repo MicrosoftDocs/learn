@@ -2,15 +2,13 @@
 uid: learn.startups.fundamentals.failure
 title: What makes startups fail?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What makes startups fail?
   description: Learn why startups can fail. Factors include inadequate demand, competition from free products, unnecessary secrecy, and disagreement among cofounders.
-  ms.date: 01/09/2024
-  author: ryanmesches
-  ms.author: ryanmesches
+  ms.date: 03/17/2025
+  author: vahughes
+  ms.author: vahughes
   ms.topic: unit
   ms.collection: learn-startups
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-failure.md)]
+  [!include[](includes/4-failure.md)]

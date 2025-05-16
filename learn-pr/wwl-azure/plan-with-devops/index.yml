@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.plan-with-devops
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: "Plan with DevOps"
   description: "In this module you learn how to plan your software development projects agilely using GitHub Projects boards."
   ms.date: 02/06/2024
@@ -50,4 +48,4 @@ units:
 - learn.wwl.plan-with-devops.knowledge-check
 - learn.wwl.plan-with-devops.summary
 badge:
-  uid: learn.wwl.plan-with-devops.badge
+  uid: learn.wwl.plan-with-devops.badge

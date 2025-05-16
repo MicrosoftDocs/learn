@@ -4,7 +4,7 @@ This unit describes how Microsoft Sentinel helps monitor and respond to security
 
 - Get a detailed overview of your enterprise, potentially across multiple clouds and on-premises locations.
 - Avoid reliance on complex and disparate tools.
-- Use enterprise-grade AI, built by experts, to identify and handle threats across your organization.
+- Identify and handle threats across your organization by using enterprise-grade AI, built by experts.
 
 ## Connect your data sources to Microsoft Sentinel
 
@@ -75,7 +75,7 @@ If you hover over an entity, you see a list of *exploration queries* designed by
 
 :::image type="content" source="../media/7-sentinel-12.png" alt-text="Screenshot of exploration queries." lightbox="../media/7-sentinel-12.png":::
 
-The investigation map also gives you a timeline that helps you understand which event occurred at a particular time. Use the timeline feature to understand the path that a threat might have taken over time.
+The investigation map also gives you a timeline that helps you understand which event occurred at a particular time. Use the timeline feature to understand the path that a threat might take over time.
 
 :::image type="content" source="../media/7-sentinel-13.png" alt-text="Screenshot of timeline." lightbox="../media/7-sentinel-13.png":::
 

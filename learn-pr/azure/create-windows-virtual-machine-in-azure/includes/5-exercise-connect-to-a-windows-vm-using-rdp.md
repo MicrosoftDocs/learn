@@ -1,12 +1,12 @@
 We have our Windows VM deployed and running, but it's not configured to do any work.
 
-Recall that our scenario is a video-processing system. Our platform receives files through FTP. The traffic cameras upload video clips to a known URL, which is mapped to a folder on the server. The custom software on each Windows VM runs as a service and watches the folder and processes each uploaded clip. It then passes the normalized video to our algorithms running on other Azure services.
+Recall that our scenario is a video-processing system. Our platform receives files through FTP. The traffic cameras upload video clips to a known URL, which is mapped to a folder on the server. The custom software on each Windows VM runs as a service, watches the folder, and processes each uploaded clip. It then passes the normalized video to our algorithms running on other Azure services.
 
 There are a few things we'd need to configure to support this scenario:
 
-- Install FTP and open the ports it needs to communicate
-- Install the proprietary video codec unique to the city's camera system
-- Install our transcoding service that processes uploaded videos
+- Install FTP and open the ports it needs to communicate.
+- Install the proprietary video codec unique to the city's camera system.
+- Install our transcoding service that processes uploaded videos.
 
 Many of these are typical administrative tasks we won't actually cover here, and we don't have software to install. Instead, we'll walk through the steps and show you how you *could* install custom or third-party software using Remote Desktop. Let's start by getting the connection information.
 
@@ -17,7 +17,7 @@ To connect to an Azure VM with an RDP client, you'll need:
 - Public IP address of the VM (or private if the VM is configured to connect to your network)
 - Port number
 
-You can enter this information into the RDP client, or download a pre-configured **RDP** file.
+You can enter this information into the RDP client, or download a preconfigured **RDP** file.
 
 > [!NOTE]
 > An **RDP** file is a text file that contains a set of name/value pairs that define the connection parameters for an RDP client to connect to a remote computer using the Remote Desktop Protocol.
@@ -82,7 +82,7 @@ We have two approaches we can use to install software. First, this VM is connect
 
 With access to your local drive, you can copy the files for the custom software onto the VM and install the software. We won't actually do that because it's just a simulated scenario, but you can imagine how it would work.
 
-The more interesting thing to observe in the list of drives is what is *missing*. Notice that our **Data** drive is not present. Azure added a VHD, but didn't initialize it.
+The more interesting thing to observe in the list of drives is what is *missing*. Notice that our **Data** drive isn't present. Azure added a VHD, but didn't initialize it.
 
 ## Initialize data disks
 

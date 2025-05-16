@@ -8,4 +8,4 @@ By grouping and summarizing sales data, you might find that the New York store g
 
 In this video, you'll see how grouping can be applied to categorical data to create a summary within each category:
 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=1ac587bf-1888-4ac8-b07f-f7a2d2881a69]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4U38q]

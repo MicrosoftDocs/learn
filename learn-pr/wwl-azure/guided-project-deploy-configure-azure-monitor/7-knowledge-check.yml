@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.guided-project-deploy-configure-azure-monitor.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 10/06/2023
   author: wwlpublish
@@ -48,4 +46,4 @@ quiz:
       explanation: "Incorrect. Metric alerts are used to evaluate resource metrics at regular intervals."
     - content: "Log alert"
       isCorrect: false
-      explanation: "Incorrect. Log alerts are used to monitor resource logs at a set frequency. If an alert is triggered you can perform advanced logic operations on your data."
+      explanation: "Incorrect. Log alerts are used to monitor resource logs at a set frequency. If an alert is triggered you can perform advanced logic operations on your data."

@@ -2,8 +2,8 @@ Microsoft Defender for Cloud is a cloud-native application protection platform (
 
 For an interactive overview of how to Manage your cloud security posture with Microsoft Defender for Cloud, **click on the image below**.
 
-[:::image type="content" source="../media/manage-cloud-security-posture-microsoft-defender-cloud-landing-page-8605516a.png" alt-text="Screenshot of the interactive guide landing page for Manage your cloud security posture with Microsoft Defender for Cloud.":::
-](https://mslearn.cloudguides.com/guides/Manage%20your%20cloud%20security%20posture%20with%20Microsoft%20Defender%20for%20Cloud)
+[:::image type="content" source="../media/manage-cloud-security-posture-microsoft-defender-cloud-landing-page-8605516a-ae32fc61.png" alt-text="Screenshot of the interactive guide landing page for Manage your cloud security posture with Microsoft Defender for Cloud.":::
+ ](https://mslearn.cloudguides.com/guides/Manage%20your%20cloud%20security%20posture%20with%20Microsoft%20Defender%20for%20Cloud)
 
 Defender for Cloud combines the capabilities of:
 

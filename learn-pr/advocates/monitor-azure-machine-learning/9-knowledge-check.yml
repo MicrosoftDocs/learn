@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-machine-learning-monitoring.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge Check
+  description: Check your knowledge.
+  ms.date: 03/15/2025
+  author: Orin-Thomas
+  ms.author: viniap
+  ms.topic: unit
+durationInMinutes: 3
+content: Choose the best response for each question. 
+quiz:
+  questions:
+    - content: "Which monitoring operation is primarily a function of Azure Machine Learning administrators?"
+      choices:
+        - content: "Monitor Azure Machine Learning performance."
+          isCorrect: true
+          explanation: "Administrators are primarily responsible for the Azure infrastructure on which an Azure Machine Learning workspace and models run."
+        - content: "Monitor workflow problems."
+          isCorrect: false
+          explanation: "Both administrators and machine learning professionals are responsible for monitoring problems and performance related to Azure Machine Learning workspaces."
+        - content: "Monitor Azure Machine Learning models."
+          isCorrect: false
+          explanation: "Machine learning professionals and data scientists are primarily responsible for monitoring model performance."
+    - content: "You can use KQL to query the Log Analytics workspace that's associated with your Azure Machine Learning workspace. What is a necessary first step for accomplishing this goal?"
+      choices:
+        - content: "Log Analytics is configured by default."
+          isCorrect: false
+          explanation: "Only metrics are enabled by default on Azure Machine Learning. You can export logs to Log Analytics by setting up diagnostic settings."
+        - content: "Configure diagnostic settings."
+          isCorrect: true
+          explanation: "By configuring diagnostic settings, you can enable logs to be exported to a Log Analytics workspace."
+        - content: "Enable metrics for the Azure Machine Learning workspace."
+          isCorrect: false
+          explanation: "Metrics are enabled by default and appear on the Azure Machine Learning resource inside the Azure portal."
+    - content: "How can you monitor metrics for Azure Machine Learning online endpoints?"
+      choices:
+        - content: "Inside the Azure Machine Learning workspace."
+          isCorrect: false
+          explanation: "Online endpoints are deployed as separate Azure resources, and their metrics are available separately."
+        - content: "By default, as a separate Azure resource."
+          isCorrect: true
+          explanation: "Online endpoints are deployed as separate Azure resources, but metrics are enabled by default in the Azure portal."
+        - content: "By manually configuring Azure Monitor to monitor the online endpoint."
+          isCorrect: false
+          explanation: "Azure Monitor and metrics are configured by default for Azure Machine Learning online endpoints."

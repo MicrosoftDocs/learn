@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-protect-sensitive-data.manage-respond-alerts-threats
+title: Manage security alerts and respond to threats
+metadata:
+  title: Manage security alerts and respond to threats
+  description: "Manage security alerts and respond to threats."
+  ms.date: 03/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/manage-respond-alerts-threats.md)]

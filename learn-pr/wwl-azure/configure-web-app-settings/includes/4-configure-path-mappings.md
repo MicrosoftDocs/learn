@@ -27,3 +27,4 @@ You can add custom storage for your containerized app. Containerized apps includ
 * **Access key**: For advanced configuration, the access key.
 * **Mount path**: The absolute path in your container to mount the custom storage.
 * **Deployment slot setting**: When checked, the storage mount settings also apply to deployment slots.
+

@@ -27,7 +27,7 @@ As the organization's cloud environment develops, these compliance design areas 
 | [Platform automation and DevOps](/azure/cloud-adoption-framework/ready/landing-zone/design-area/platform-automation-devops) | Align the best tools and templates to deploy your landing zones and supporting resources.                                                                          | Ready                |
 
 > [!NOTE]
-> As mentioned in the customer narrative, Tailwind Traders has chosen to focus only on the environmental design areas at this time. It will address compliance design areas in a future effort. Again, this is not the recommended path for most customers because it will require more effort later in the process.
+> Tailwind Traders has chosen to focus only on the environmental design areas at this time. It will address compliance design areas in a future effort. Again, this is not the recommended path for most customers because it will require more effort later in the process.
 
 ## Process for design areas
 The design areas describe what to consider before you deploy a landing zone. Together, they establish a process to aid in exploring otherwise complex topics. These topics are typically involved in making critical decisions about your environment. Evaluate each design area to help you understand any changes that you might need to make to the implementation options for Azure landing zones.

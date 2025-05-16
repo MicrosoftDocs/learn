@@ -1,7 +1,7 @@
 The Windows Server Migration Tools copy role and feature configuration, but don't install the necessary roles and features on the destination server.
 
 > [!IMPORTANT]
-> Before you migrate a role or feature, you must install that role or feature on the destination server in preparation for the migration. 
+> Before you migrate a role or feature, you must install that role or feature on the destination server in preparation for the migration.
 
 If the destination server is prepared with the necessary roles and features, you can export the configuration from the source server and then import the configuration on the destination server.
 
@@ -26,7 +26,7 @@ The following table lists the Windows Server Migration Tools cmdlets.
 
 Before you export settings from the source server, you can run the `Get-SmigServerFeature` cmdlet to verify which feature settings can be exported. This cmdlet provides the feature names and IDs that you must specify during the export.
 
-When you run the `Export-SmigServerSetting` cmdlet on the source server, you specify which Windows features to export. You also have the option to specify that local users, local groups, and IP configuration should be exported. The migration store you create with `Export-SmigServerSetting` is encrypted and protected with a password that you specify during the export.
+When you run the `Export-SmigServerSetting` cmdlet on the source server, you specify which Windows features to export. You can also specify that local users, local groups, and IP configuration should be exported. The migration store you create with `Export-SmigServerSetting` is encrypted and protected with a password that you specify during the export.
 
 ## Import settings
 
@@ -40,4 +40,3 @@ When you run the `Import-SmigServerSetting` cmdlet on the destination server, yo
 You also must identify which Windows features should be imported. In some cases, settings for Windows features must be migrated in a specific order. To guarantee that settings apply in the correct order, import the settings separately by running `Import-SmigServerSetting` multiple times.
 
 You can choose to specify that local users, local groups, or IP configuration import from the migration store. When you import IP configuration, you must specify the hardware address of the IP configuration and the hardware address of the network card in the destination server.
-

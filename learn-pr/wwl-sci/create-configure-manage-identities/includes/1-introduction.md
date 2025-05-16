@@ -6,13 +6,13 @@ Azure helps to make these sorts of challenges easier to solve with Microsoft Ent
 
 In this module, you'll:
 
- -  Create, configure, and manage users
- -  Create, configure, and manage groups
- -  Manage licenses
- -  Explore custom security attributes and automatic provisioning
+- Create, configure, and manage users
+- Create, configure, and manage groups
+- Manage licenses
+- Explore custom security attributes and automatic provisioning
 
 ## Prerequisites
 
- -  Basic understand of identity management
- -  Some experience with Active Directory a plus
- -  Experience with Zero Trust helpful
+- Basic understand of identity management
+- Some experience with Active Directory a plus
+- Experience with Zero Trust helpful

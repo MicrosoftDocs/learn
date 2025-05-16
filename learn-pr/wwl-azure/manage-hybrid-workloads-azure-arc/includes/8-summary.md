@@ -8,6 +8,6 @@ You and the IT Team at Contoso are now prepared to use Azure Arc to use Azure’
 
 You can learn more by reviewing the following documents.
 
- -  [Azure Arc](https://aka.ms/azure-azure-arc?azure-portal=true)
- -  [What is Azure Arc for servers (preview)?](https://aka.ms/azure-arc-servers?azure-portal=true)
- -  [Understand Azure Policy's Guest Configuration](https://aka.ms/guest-configuration?azure-portal=true)
+- [Azure Arc](https://aka.ms/azure-azure-arc?azure-portal=true)
+- [What is Azure Arc for servers (preview)?](https://aka.ms/azure-arc-servers?azure-portal=true)
+- [Understand Azure Policy's Guest Configuration](https://aka.ms/guest-configuration?azure-portal=true)

@@ -1,5 +1,3 @@
-
-
 Having considered the workloads that they want to migrate, IT staff at Contoso are undertaking the implementation stage in the project. There are four main technical implementation steps involved in actually moving a server workload to an Azure VM workload using Azure Migrate:
 
 1. Prepare Azure for the Azure Migrate: Server Migration tool.
@@ -26,11 +24,11 @@ Start the imported image and configure the tool using the following high-level s
 1. Point the tool to the Azure subscription.
 1. Add any Windows-based credentials for discovery.
 
-After configuration, it will take some time for the tool to enumerate all the VMs. After the enumeration is complete, they are listed in the Azure Migrate tool in Azure for your review.
+After configuration, it will take some time for the tool to enumerate all the VMs. After the enumeration is complete, they're listed in the Azure Migrate tool in Azure for your review.
 
 **2. Prepare on-premises VMs**
 
-After migration, you will connect to the Azure VMs and allow Azure to manage the VMs. To do this, perform the following procedure before migration:
+After migration, you'll connect to the Azure VMs and allow Azure to manage the VMs. To do this, perform the following procedure before migration:
 
 - For access over the internet:
   - Enable Remote Desktop Protocol (RDP) or Secure Shell (SSH) on the on-premises VM before migration.

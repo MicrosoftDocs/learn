@@ -12,9 +12,9 @@ az group delete --name myResourceGroup --yes
 
 ## Learn more
 
-- [Overview of autoscale with Azure Virtual Machine Scale Sets](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview)
+- [Learn about autoscale with an overview of Azure Virtual Machine Scale Sets](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview)
 - [Deploy your application on Virtual Machine Scale Sets](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-deploy-app)
-- [Work with large Virtual Machine Scale Sets](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-placement-groups)
+- [Working with large Virtual Machine Scale Sets](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-placement-groups)
 - [Use the custom script extension for Windows](/azure/virtual-machines/extensions/custom-script-windows)
 - [Use the Azure custom script extension version 2 with Linux VMs](/azure/virtual-machines/extensions/custom-script-linux)
 - [Use the application health extension with Virtual Machine Scale Sets](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-health-extension)

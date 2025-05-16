@@ -2,8 +2,6 @@
 uid: learn.azure.introduction-to-red-hat-azure.when-to-use-red-hat-on-azure
 title: When to use Red Hat on Azure
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: When to use Red Hat on Azure
   description: Discusses the criteria for when to use Red Hat on Azure.
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/4-when-to-use-red-hat-on-azure.md)]
-
+

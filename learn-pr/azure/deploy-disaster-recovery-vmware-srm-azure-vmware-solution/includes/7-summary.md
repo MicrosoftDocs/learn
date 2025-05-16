@@ -5,7 +5,7 @@ Your organization runs a mix of VMware vSphere VMs both on-premises and in Azure
 
 By understanding the steps necessary to install VMware SRM, vSphere Replication and to configure site pairing in vCenter Server, you’re now better equipped to implement disaster recovery for your workloads.
 
-You can now implement protection and failback of VMware vSphere VMs and also create, test, and run a recovery plan.
+You can now implement protection and failback of VMware vSphere VMs and create, test, and run a recovery plan.
 
 #### References
 

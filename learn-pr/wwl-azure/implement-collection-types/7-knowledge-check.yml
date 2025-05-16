@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-collection-types.knowledge-check
+title: Module assessment
+metadata:
+  title: Module assessment
+  description: "Check what you've learned in this module."
+  ms.date: 03/28/2025
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the primary characteristic of a `HashSet<T>` in C#?"
+    choices:
+    - content: "It allows duplicate elements."
+      isCorrect: false
+      explanation: "Incorrect. `HashSet<T>` doesn't allow duplicate elements, making it ideal for scenarios requiring uniqueness."
+    - content: "It stores elements as key/value pairs."
+      isCorrect: false
+      explanation: "Incorrect. Storing elements as key/value pairs is a characteristic of `Dictionary<TKey, TValue>`, not `HashSet<T>`."
+    - content: "It ensures uniqueness of elements."
+      isCorrect: true
+      explanation: "Correct. `HashSet<T>` is designed to ensure that all elements are unique, which is its primary characteristic."
+  - content: "A banking application needs to store customer IDs with their associated account details for quick retrieval. Which collection should be used?"
+    choices:
+    - content: "`List<Account>`"
+      isCorrect: false
+      explanation: "Incorrect. `List<Account>` is suitable for ordered records but doesn't provide quick look-up by customer ID."
+    - content: "`Dictionary<int, Account>`"
+      isCorrect: true
+      explanation: "Correct. `Dictionary<int, Account>` is ideal for associating customer IDs with account details, enabling efficient look-up by key."
+    - content: "`HashSet<Account>`"
+      isCorrect: false
+      explanation: "Incorrect. `HashSet<Account>` ensures uniqueness but doesn't support key-based look-up, which is required in this scenario."
+  - content: "Which of these collections in C# supports dynamic resizing and access to elements by index?"
+    choices:
+    - content: "`List<T>`"
+      isCorrect: true
+      explanation: "Correct. `List<T>` supports dynamic resizing and allows access to elements by their index, making it versatile for various scenarios."
+    - content: "`Dictionary<TKey, TValue>`"
+      isCorrect: false
+      explanation: "Incorrect. `Dictionary<TKey, TValue>` stores elements as key/value pairs and doesn't provide index-based access."
+    - content: "`HashSet<T>`"
+      isCorrect: false
+      explanation: "Incorrect. `HashSet<T>` is designed for set operations and doesn't support index-based access or dynamic resizing."

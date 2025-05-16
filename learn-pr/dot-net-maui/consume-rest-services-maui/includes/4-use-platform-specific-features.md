@@ -1,14 +1,14 @@
-The **HttpClient** class provides an abstraction of the connection to the network. An app that uses this class is independent of the native platform networking stack. The .NET MAUI templates map the **HttpClient** class to code that utilizes the native networking stack of each platform. This enables an application to take advantage of platform-specific network configuration and optimization features. This is especially important when you need to configure a client application to connect securely to a REST web service.
+The **HttpClient** class provides an abstraction of the connection to the network. An app that uses this class is independent of the native platform networking stack. The .NET Multi-platform App UI (MAUI) templates map the **HttpClient** class to code that utilizes the native networking stack of each platform. This mapping enables an application to take advantage of platform-specific network configuration and optimization features. These features are especially important when you need to configure a client application to connect securely to a REST web service.
 
-In this unit, you'll learn how to configure an HTTP client application to use the network-protection capabilities the underlying platform provides.
+In this unit, you learn how to configure an HTTP client application to use the network-protection capabilities the underlying platform provides.
 
 ## Configure App Transport Security on iOS
 
-App Transport Security (ATS) is an iOS feature that requires every network communication done through the native HTTP network stack to use TLS 1.2 or above. Modern encryption algorithms won't disclose information if one of the long-term keys is compromised.
+App Transport Security (ATS) is an iOS feature that requires every network communication done through the native HTTP network stack to use Transport Layer Security (TLS) 1.2 or higher. Modern encryption algorithms don't disclose information if one of the long-term keys is compromised.
 
-If your app doesn't adhere to these rules, it will be denied network access. To fix this problem, you have two options; you can change your endpoint to adhere to the App Transport Security policy or you can opt out of App Transport Security.
+Your app is denied network access if it doesn't adhere to these rules. To fix this problem, you have two options; you can change your endpoint to adhere to the App Transport Security policy or you can opt out of App Transport Security.
 
-To opt out of App Transport Security, add a new key called `NSAppTransportSecurity` to the **Info.plist** file. You'll find the **Info.plist** file in the **iOS** folder in project's the **Platforms** folder in Solution Explorer. This key is actually a dictionary. Add another key called `NSExceptionDomains` to this dictionary. This key contains a child for each of the endpoints you want to target. Each endpoint can have its own configuration, specifying which features to allow or disallow. You can add this key either using the generic plist editor in Visual Studio, or by opening it as an XML file.
+To opt out of App Transport Security, add a new key called `NSAppTransportSecurity` to the **Info.plist** file. The **Info.plist** file is in the **iOS** folder in the project's **Platforms** folder in Solution Explorer. This key is actually a dictionary. Add another key called `NSExceptionDomains` to this dictionary. This key contains a child for each of the endpoints you want to target. Each endpoint can have its own configuration, specifying which features to allow or disallow. You can add this key either using the generic plist editor in Visual Studio, or by opening it as an XML file.
 
 :::image type="content" source="../media/4-edit-info-plist.png" alt-text="Screenshot of left context menu with the open menu item selected. On the right is the window Visual Studio, X M L (text) editor is highlighted.":::
 
@@ -54,7 +54,7 @@ There are other options that you can add to be more specific about how you want 
 
 ## Configure Android Network security
 
-Like iOS, Android has a similar security model around network communication. This model was introduced with Android 9 (API level 28). Clear text (non-HTTPS) traffic is disabled by default when your application targets Android 9 (API Level 28) or higher. This policy might affect your development cycle if your app needs to download an image or file on a server that hasn’t been configured for HTTPS. Also, you might just be trying to debug your application locally and don’t want to install development certificates. You might have strong business requirements that all web traffic on all versions of Android is always HTTPS. The Network Security Configuration feature of Android allows you to finely tune network traffic security in an app.
+Like iOS, Android has a similar security model around network communication. This model was introduced with Android 9 (API level 28). Clear text (non-HTTPS) traffic is disabled by default when your application targets Android 9 (API Level 28) or higher. This policy might affect your development cycle if your app needs to download an image or file on a server that isn't configured for HTTPS. Also, you might just be trying to debug your application locally and don’t want to install development certificates. You might have strong business requirements that all web traffic on all versions of Android is always HTTPS. The Network Security Configuration feature of Android allows you to finely tune network traffic security in an app.
 
 ### Permit clear text traffic
 
@@ -70,7 +70,7 @@ To permit clear text traffic, create a new XML file in the **Resources/xml** fol
 </network-security-config>
 ```
 
-You can strengthen your app's security by restricting clear text traffic on all versions of Android regardless of the target framework. You do this by setting the `cleartextTrafficPermitted` property of the `domain-config` element to `false`. This configuration setting blocks all non-HTTPS traffic.
+You can strengthen your app's security by restricting clear text traffic on all versions of Android regardless of the target framework. Set the `cleartextTrafficPermitted` property of the `domain-config` element to `false`. This configuration setting blocks all non-HTTPS traffic.
 
 For the app to recognize the **network_security_config.xml** file, configure the `networkSecurityConfig` property for the `application` node in the **AndroidManifest.xml** located in the **Properties** folder:
 
@@ -81,7 +81,7 @@ For the app to recognize the **network_security_config.xml** file, configure the
 </manifest>
 ```
 
-You can specify additional options if you need to be more specific about how you want to opt out of transport security.
+You can specify other options if you need to be more specific about how you want to opt out of transport security.
 
 ## Debug apps locally
 

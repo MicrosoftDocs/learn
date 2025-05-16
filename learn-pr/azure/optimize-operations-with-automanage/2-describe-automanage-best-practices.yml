@@ -2,13 +2,11 @@
 uid: learn.optimize-operations-with-automanage.describe-automanage-best-practices
 title: Describe concepts around Azure Automanage best practices
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Describe concepts around Azure Automanage best practices
+  title: Describe Concepts Around Azure Automanage Best Practices
   description: Describe the benefits and services of using Azure Automanage.
-  ms.date: 12/19/2023
-  author: johnmarco
-  ms.author: johnmarc
+  ms.date: 04/17/2025
+  author: robmcm
+  ms.author: robmcm
   ms.topic: unit
   ms.custom: linux-related-content
 durationInMinutes: 10

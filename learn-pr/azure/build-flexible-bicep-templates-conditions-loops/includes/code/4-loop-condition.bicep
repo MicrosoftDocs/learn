@@ -16,7 +16,7 @@ param sqlServerDetails array = [
   }
 ]
 
-resource sqlServers 'Microsoft.Sql/servers@2023-08-01-preview' = [for sqlServer in sqlServerDetails: if (sqlServer.environmentName == 'Production') {
+resource sqlServers 'Microsoft.Sql/servers@2024-05-01-preview' = [for sqlServer in sqlServerDetails: if (sqlServer.environmentName == 'Production') {
   name: sqlServer.name
   location: sqlServer.location
   properties: {

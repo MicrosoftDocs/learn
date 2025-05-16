@@ -60,7 +60,7 @@ In Azure RBAC, you can remove a role assignment to remove access.
 
 1. Search for and check the box for the user with the Virtual Machine Contributor role.
 
-1. Select **Remove**.
+1. Select **Delete**.
 
     :::image type="content" source="../media/5-remove-role-assignment.png" alt-text="Screenshot that shows the Remove role assignment message.":::
 

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.optimize-costs-using-azure-hybrid-benefit.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: This unit is a part of the Optimize costs by using Azure Hybrid Benefit module.
+  ms.date: 02/18/2025
+  author: skpmcdowell
+  ms.author: mariajosef
+  ms.topic: unit
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

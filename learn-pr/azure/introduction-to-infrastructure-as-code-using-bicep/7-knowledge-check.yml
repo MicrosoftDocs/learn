@@ -1,13 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.introduction-infrastructure-code-using-bicep.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: knowledge_check
-  title: Knowledge check
+  title: Module assessment
   description: Check what you learned.
-  ms.date: 10/30/2024
+  ms.date: 01/15/2025
   author: mumian
   ms.author: jgao
   ms.topic: unit
@@ -61,4 +59,4 @@ quiz:
     - content: Management group.
       isCorrect: false
       explanation: Incorrect. A management group is a logical container for grouping Azure subscriptions.
-
+

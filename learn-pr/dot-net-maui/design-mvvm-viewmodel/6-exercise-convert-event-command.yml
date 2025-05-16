@@ -4,7 +4,7 @@ title: Exercise - Convert an event handler to a command
 metadata:
   title: Exercise - Convert an event handler to a command
   description: "Use the MenuItem's command instead of its `Clicked` event."
-  ms.date: 04/21/2024
+  ms.date: 01/08/2025
   author: adegeo
   ms.author: adegeo
   ms.topic: unit

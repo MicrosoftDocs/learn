@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.combine-prompts-functions.exercise-add-filter-service-to-kernel
+title: Exercise - Add a filter service to the kernel
+metadata:
+  title: Exercise - Add a filter service to the kernel
+  description: "Exercise - Add a filter service to the kernel"
+  ms.date: 01/27/2025
+  author: wwlpublish
+  ms.author: buzahid
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-exercise-add-filter-service-to-kernel.md)]

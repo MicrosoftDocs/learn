@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-azure-container-apps.container-apps-authentication
 title: Implement authentication and authorization in Azure Container Apps
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Implement authentication and authorization in Azure Container Apps
   description: "Implement authentication and authorization in Azure Container Apps"
   ms.date: 07/16/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 5
 content: |
-  [!include[](includes/5-container-apps-authentication.md)]
+  [!include[](includes/5-container-apps-authentication.md)]

@@ -1,4 +1,3 @@
-
 In this demonstration, you'll learn how to:
 
 - Launch Cloud Shell.

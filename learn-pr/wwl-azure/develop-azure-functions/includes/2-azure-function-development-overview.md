@@ -1,7 +1,7 @@
 A function app provides an execution context in Azure in which your functions run. As such, it's the unit of deployment and management for your functions. A function app is composed of one or more individual functions that are managed, deployed, and scaled together. All of the functions in a function app share the same pricing plan, deployment method, and runtime version. Think of a function app as a way to organize and collectively manage your functions.
 
 > [!NOTE]
-> In Functions 2.x all functions in a function app must be authored in the same language. In previous versions of the Azure Functions runtime, this wasn't required.
+> In Functions 2.x, all functions in a function app must be authored in the same language. In previous versions of the Azure Functions runtime, this wasn't required.
 
 ## Develop and test Azure Functions locally
 
@@ -23,7 +23,7 @@ A Functions project directory contains the following files in the project root f
 The `host.json` metadata file contains configuration options that affect all functions in a function app instance. Other function app configuration options are managed depending on where the function app runs:
 
 * **Deployed to Azure:** in your application settings
-* **On your local computer:** in the local.settings.json file.
+* **On your local computer:** in the `local.settings.json` file.
 
 Configurations in `host.json` related to bindings are applied equally to each function in the function app. You can also override or apply settings per environment using application settings. To learn more, see the [host.json reference](/azure/azure-functions/functions-host-json). 
 

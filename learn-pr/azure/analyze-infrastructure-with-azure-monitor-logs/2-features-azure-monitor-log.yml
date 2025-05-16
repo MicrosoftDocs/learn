@@ -1,13 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.analyze-infrastructure-with-azure-monitor-logs.2-features-azure-monitor-log
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Features of Azure Monitor logs
   description: Features of Azure Monitor logs
   ms.date: 10/15/2024
-  author: guywi-ms
-  ms.author: guywild
+  author: EliotSeattle
+  ms.author: eliotgra
   ms.topic: unit
 title: Features of Azure Monitor logs
 durationInMinutes: 10

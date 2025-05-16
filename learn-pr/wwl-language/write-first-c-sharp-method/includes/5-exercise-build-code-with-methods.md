@@ -70,7 +70,7 @@ In this task, you'll identify the steps needed to solve the problem. If you look
 
 ### Develop your solution
 
-Now that you have all the placeholder methods needed to solve the problem, you can begin to focus on the details of your solution. Keep in mind that the input format of the IPv4 address will be a string consisting of digits separated by dots. Let's get stared!
+Now that you have all the placeholder methods needed to solve the problem, you can begin to focus on the details of your solution. Keep in mind that the input format of the IPv4 address will be a string consisting of digits separated by dots. Let's get started!
 
 1. At the beginning of your program, create variables to store the input and validation statuses:
 

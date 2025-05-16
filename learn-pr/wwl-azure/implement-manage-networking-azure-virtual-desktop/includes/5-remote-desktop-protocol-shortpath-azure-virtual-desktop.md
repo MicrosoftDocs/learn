@@ -20,6 +20,8 @@ The transport used for RDP Shortpath is based on the [Universal Rate Control Pro
  -  During the preview, TURN is only available for connections to session hosts in a validation host pool. To configure your host pool as a validation environment, see [Define your host pool as a validation environment](/azure/virtual-desktop/create-validation-host-pool#define-your-host-pool-as-a-validation-host-pool).
  -  RDP Shortpath for public networks with TURN is only available in the Azure public cloud.
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b5402507-68cd-4b22-a714-2a6688904e59]
+
 ## Key benefits
 
 Using RDP Shortpath has the following key benefits:

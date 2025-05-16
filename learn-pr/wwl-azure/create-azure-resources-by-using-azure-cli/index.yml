@@ -1,28 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.create-azure-resources-by-using-azure-cli
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create Azure resources by using Azure CLI
   description: "Create Azure resources by using Azure CLI"
-  ms.date: 05/22/2024
+  ms.date: 02/17/2025
   author: wwlpublish
-  ms.author: lumac
+  ms.author: dbradish
   ms.topic: module
   ms.service: azure
-  ai-usage: human-only
-title: Create Azure resources by using Azure CLI
-summary: This module explains Azure CLI to create Azure resources, run templates, and detail Azure CLI commands.
+  ai-usage: ai-assisted
+title: Create Azure resources using Azure CLI
+summary: This module explains how to use the Azure CLI to create Azure resources interactively, or by using a Bash script. Learn to install the Azure CLI and use common reference commands to log in, manage resource groups, and create storage accounts.
 abstract: |
   By the end of this module, you're able to:
-
-  -   Create Azure resources using Azure CLI.
-
-  -   Understand and work with Azure CLI.
-
-  -   Run templates using Azure CLI.
-
-  -   Explains Azure CLI commands.
+  - Install the Azure CLI on Linux, macOS, and/or Windows.
+  - Log into Azure using Azure CLI.
+  - Understand Azure CLI syntax components.
+  - Create Azure resources interactively using the Azure CLI.
+  - Create an Azure CLI script for Bash.
+  - Troubleshoot Azure CLI commands.
 prerequisites: None
 iconUrl: /learn/achievements/3-create-azure-resources-by-using-azure-cli.svg
 levels:
@@ -51,8 +47,11 @@ subjects:
 units:
 - learn.wwl.create-azure-resources-by-using-azure-cli.introduction
 - learn.wwl.create-azure-resources-by-using-azure-cli.what-azure-cli
-- learn.wwl.create-azure-resources-by-using-azure-cli.work-azure-cli
+- learn.wwl.create-azure-resources-by-using-azure-cli.install-azure-cli
+- learn.wwl.create-azure-resources-by-using-azure-cli.execute-azure-cli-interactively
+- learn.wwl.create-azure-resources-by-using-azure-cli.create-an-azure-cli-script
+- learn.wwl.create-azure-resources-by-using-azure-cli.use-azure-cli-successfully
 - learn.wwl.create-azure-resources-by-using-azure-cli.knowledge-check
 - learn.wwl.create-azure-resources-by-using-azure-cli.summary
 badge:
-  uid: learn.wwl.create-azure-resources-by-using-azure-cli.badge
+  uid: learn.wwl.create-azure-resources-by-using-azure-cli.badge

@@ -2,16 +2,14 @@
 uid: learn.wwl.introduction-language-models-databricks.key-components-llms
 title: Identify key components of LLM applications
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Identify key components of LLM applications
   description: "Identify key components of LLM applications"
-  ms.date: 08/12/2024
+  ms.date: 03/20/2025
   author: wwlpublish
-  ms.author: madiepev
+  ms.author: theresai
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 9
 content: |
-  [!include[](includes/04-key-components-llms.md)]
+  [!include[](includes/04-key-components-llms.md)]

@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-to-devops
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to DevOps
   description: "Introduction to DevOps"
   ms.date: 05/29/2024
@@ -65,4 +63,4 @@ units:
 - learn.wwl.introduction-to-devops.knowledge-check
 - learn.wwl.introduction-to-devops.summary
 badge:
-  uid: learn.wwl.introduction-to-devops.badge
+  uid: learn.wwl.introduction-to-devops.badge

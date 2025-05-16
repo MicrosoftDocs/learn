@@ -2,11 +2,9 @@
 uid: learn.wwl.plan-azure-kubernetes-service-deployment.kubernetes-pods
 title: Azure Kubernetes Service pods
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Azure Kubernetes Service pods
   description: "Azure Kubernetes Service pods"
-  ms.date: 04/23/2024
+  ms.date: 02/14/2025
   author: wwlpublish
   ms.author: bradj
   ms.topic: unit

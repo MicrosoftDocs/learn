@@ -9,6 +9,7 @@ In this module, you learned:
 
 Use the following resources to learn more about GitHub Advanced Security:
 
+- [GitHub Advanced Security Certification Exam Prep](https://github.com/orgs/community/discussions/137197)
 - [GitHub Security Overview](https://docs.github.com/en/code-security/security-overview/about-the-security-overview)
 - [Dependabot](https://docs.github.com/en/rest/dependabot) 
 - [Code scanning](https://docs.github.com/en/code-security/code-scanning)

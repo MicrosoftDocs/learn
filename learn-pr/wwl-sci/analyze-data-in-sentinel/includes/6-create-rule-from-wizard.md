@@ -1,5 +1,3 @@
-
-
 You can create a custom analytics rule to search for suspicious activities and threats at Contoso.
 
 ## Create a custom scheduled analytics rule
@@ -42,7 +40,7 @@ AzureActivity
 | make-series dcount(ResourceId)  default=0 on EventSubmissionTimestamp in range(ago(7d), now(), 1d) by Caller
 ```
 
-> [!Tip]
+> [!TIP]
 > For assistance with KQL query language, see the [Kusto Query Language (KQL) overview](/azure/kusto/query/).
 
 ### Alert enrichment (Preview)

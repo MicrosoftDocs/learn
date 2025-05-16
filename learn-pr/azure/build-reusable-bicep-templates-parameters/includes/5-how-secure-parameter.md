@@ -24,22 +24,22 @@ Notice that neither parameter has a default value specified. It's a good practic
 > [!TIP]
 > Make sure you don't create outputs for sensitive data. Output values can be accessed by anyone who has access to the deployment history. They're not appropriate for handling secrets.
 
-## Avoid using parameter files for secrets
+## Avoid using parameters files for secrets
 
-As you learned in the previous unit, parameter files are a great way to specify a set of parameter values. You'll often create parameter files for each environment you're deploying to. In general, you should avoid using parameter files to specify secret values. Parameter files are often saved to a centralized version control system, like Git. Many people might have access to it in the future. Don't save sensitive data to version control systems because they're not designed to store this sort of information.
+As you learned in the previous unit, parameters files are a great way to specify a set of parameter values. You'll often create parameters files for each environment you're deploying to. In general, you should avoid using parameters files to specify secret values. Parameters files are often saved to a centralized version control system, like Git. Many people might have access to it in the future. Don't save sensitive data to version control systems because they're not designed to store this sort of information.
 
 ## Integrate with Azure Key Vault
 
-Azure Key Vault is a service designed to store and provide access to secrets. You can integrate your Bicep templates with Key Vault by using a parameter file with a reference to a Key Vault secret.
+Azure Key Vault is a service designed to store and provide access to secrets. You can integrate your Bicep templates with Key Vault by using a parameters file with a reference to a Key Vault secret.
 
-You can use this feature by referring to the key vault and secret in your parameter file. The value is never exposed because you only reference its identifier, which by itself isn't anything secret. When you deploy the template, Azure Resource Manager will contact the key vault and retrieve the data.
+You can use this feature by referring to the key vault and secret in your parameters file. The value is never exposed because you only reference its identifier, which by itself isn't anything secret. When you deploy the template, Azure Resource Manager will contact the key vault and retrieve the data.
 
 > [!TIP]
 > You can refer to secrets in key vaults that are located in a different resource group or subscription from the one you're deploying to.
 
-:::image type="content" source="../media/5-parameter-file-key-vault.png" alt-text="Diagram that shows a parameter file reference Azure Key Vault and pass secret to Bicep template to deploy Azure resources." border="false":::
+:::image type="content" source="../media/5-parameter-file-key-vault.png" alt-text="Diagram that shows a parameters file reference Azure Key Vault and pass secret to Bicep template to deploy Azure resources." border="false":::
 
-Here's a parameter file that uses Key Vault references to look up the SQL logical server administrator login and password to use:
+Here's a parameters file that uses Key Vault references to look up the SQL logical server administrator login and password to use:
 
 :::code language="json" source="code/5-key-vault-parameters.json" highlight="6-11,14-19":::
 

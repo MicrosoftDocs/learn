@@ -2,8 +2,6 @@
 uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-remote-reboot-device
 title: Exercise - Remotely reboot Azure Sphere with Azure IoT direct methods
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Remotely reboot Azure Sphere with Azure IoT direct methods
   description: In this section, we guide the learner in how to control Azure Sphere with Azure IoT direct methods.
   ms.date: 07/10/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 10 # dummy number at present
 content: |
   [!include[](includes/12-exercise-remote-reboot-device-direct-methods.md)]
-
+

@@ -2,18 +2,18 @@
 uid: learn.containerize-deploy-java-app-aks.containerize
 title: Containerize a Java app
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: Containerize a Java app
   title: Containerize a Java app
-  description: Containerize a Java app
-  ms.date: 02/09/2024
-  author: chtrembl
-  ms.author: chtrembl
+  description: Containerize a Java app.
+  ms.date: 02/12/2025
+  author: KarlErickson
+  ms.author: karler
+  ms.reviewer: yoterada
   ms.topic: unit
   ms.custom:
+    - devx-track-java
     - devx-track-extended-java
 durationInMinutes: 10
 content: |
   [!include[](includes/3-containerize.md)]
-
+

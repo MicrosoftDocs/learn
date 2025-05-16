@@ -88,6 +88,7 @@ For example, if the result of Alice's measurement is $\ket{\phi^-}$, Bob knows t
 
 This final operation effectively teleports the state of the message qubit onto Bob’s qubit. Mission accomplished!
 
-
 > [!IMPORTANT]
 > Applying an operation to a qubit isn't the same as measuring it. When Bob applies the operation, he doesn't measure his qubit. He applies a quantum operation that changes the state of the qubit, but doesn't collapse it.
+
+In the next unit, you'll implement the quantum teleportation protocol in a Q# program.

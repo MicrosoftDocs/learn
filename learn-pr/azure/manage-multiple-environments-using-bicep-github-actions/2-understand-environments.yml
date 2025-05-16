@@ -2,8 +2,6 @@
 uid: learn.azure.manage-multiple-environments-using-bicep-github-actions.understand-environments
 title: Understand environments
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Understand environments
   description: Learn about the environments that you typically deploy your resources to. Also, learn about GitHub Actions environments and how to use them.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 8
 content: |
   [!include[](includes/2-understand-environments.md)]
-
+

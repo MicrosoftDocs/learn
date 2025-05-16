@@ -2,16 +2,14 @@
 uid: learn.wwl.describe-high-availability-disaster-recovery-strategies.describe-recovery-time-objective-recovery-point-objective
 title: Describe recovery time objective and recovery point objective
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe recovery time objective and recovery point objective
   description: "Describe recovery time objective and recovery point objective"
-  ms.date: 06/21/2023
-  author: wwlpublish
+  ms.date: 03/27/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-describe-recovery-time-objective-recovery-point-objective.md)]
+  [!include[](includes/2-describe-recovery-time-objective-recovery-point-objective.md)]

@@ -6,7 +6,7 @@ Tailwind Traders, like most businesses, must attempt to balance two competing bu
 
 :::image type="content" source="../media/balance.png" alt-text="Diagram that shows a scale balancing transformation and risk mitigation." border="false":::
 
-The *Getting started with Microsoft Cloud Adoption Framework for Azure* module describes a few objectives that Tailwind Traders included in its cloud adoption plan. Most relevant to this module is its effort to migrate out of two leased datacenters in the next 24 months and use the cloud as a replacement datacenter. 
+The *Prepare for successful cloud adoption* module describes a few objectives that Tailwind Traders included in its cloud adoption plan. Most relevant to this module is its effort to migrate out of two leased datacenters in the next 24 months and use the cloud as a replacement datacenter. 
 
 The datacenters host a large portfolio of production workloads that support in-store and e-commerce operations. One of the datacenters also hosts dev/test environments. The other datacenter hosts preproduction innovations from the retail innovation team.
 

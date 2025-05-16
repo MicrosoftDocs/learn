@@ -2,8 +2,6 @@
 uid: learn.wwl.introduction-to-devops.identify-transformation-teams
 title: Identify transformation teams
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Identify transformation teams
   description: "Identify transformation teams"
   ms.date: 05/29/2024
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 2
 content: |
-  [!include[](includes/4-identify-transformation-teams.md)]
+  [!include[](includes/4-identify-transformation-teams.md)]

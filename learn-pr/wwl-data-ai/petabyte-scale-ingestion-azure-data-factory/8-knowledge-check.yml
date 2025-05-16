@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.petabyte-scale-ingestion-azure-data-factory.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 01/05/2022
   author: wwlpublish
@@ -47,4 +45,4 @@ quiz:
       explanation: "Incorrect. The Azure Data Factory diagnostic logs are retained for 45 days."
     - content: "45 days"
       isCorrect: true
-      explanation: "Correct. The Azure Data Factory diagnostic logs are retained for 45 days."
+      explanation: "Correct. The Azure Data Factory diagnostic logs are retained for 45 days."

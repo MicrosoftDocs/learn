@@ -2,8 +2,6 @@
 uid: learn.wwl.troubleshoot-windows-server-virtual-machines-azure.troubleshoot-vm-startup
 title: Troubleshoot VM startup
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Troubleshoot VM startup
   description: "Troubleshoot VM startup"
   ms.date: 02/17/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-troubleshoot-vm-startup.md)]
+  [!include[](includes/3-troubleshoot-vm-startup.md)]

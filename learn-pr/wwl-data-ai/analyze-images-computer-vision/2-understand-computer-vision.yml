@@ -2,13 +2,11 @@
 uid: learn.wwl.analyze-images-computer-vision.understand-computer-vision
 title: Images and image processing
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Images and image processing
   description: Understand how computers process images
   author: wwlpublish
   ms.author: sheryang
-  ms.date: 07/04/2024
+  ms.date: 4/23/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

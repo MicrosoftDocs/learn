@@ -2,8 +2,6 @@
 uid: learn.wwl.introduction-to-secure-devops.explore-secure-devops-pipeline
 title: Explore Secure DevOps Pipeline
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore Secure DevOps Pipeline
   description: "Explore Secure DevOps Pipeline"
   ms.date: 05/22/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-explore-secure-devops-pipeline.md)]
+  [!include[](includes/4-explore-secure-devops-pipeline.md)]

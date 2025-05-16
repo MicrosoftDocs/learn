@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.create-hello-app-service.knowledge-check
-title: Knowledge Check
+title: Module assessment
 metadata:
   description: Knowledge Check
   author: KarlErickson
-  ms.author: ayangupta
+  ms.author: karler
+  ms.reviewer: ayangupta
   ms.date: 12/11/2024
   ms.topic: unit
   ms.custom: team=cloud_advocates, devx-track-java, devx-track-extended-java, linux-related-content
-  ms.reviewer:
   ms.assetid: HelloJavaAppService
 durationInMinutes: 3
 quiz:

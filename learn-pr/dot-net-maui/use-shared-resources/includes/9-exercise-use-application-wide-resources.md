@@ -1,4 +1,4 @@
-The goal of this exercise is to make resources available across multiple pages by moving them to a resource dictionary in the Tip Calculator Application class.
+The goal of this exercise is to make resources available across multiple pages in your .NET Multi-platform App UI (MAUI) application by moving them to a resource dictionary in the Tip Calculator Application class.
 
 This exercise is a continuation of the previous exercise. Either use your existing solution as the starting point for these steps, or open the **TipCalculator** project in the **exercise4/TipCalculator** folder in the repository that you cloned in the first exercise.
 
@@ -22,7 +22,7 @@ Let's verify that resources defined on one page aren't available on another page
 
 ## Create a dictionary for application-level resources
 
-Let's create an application-wide resource dictionary to hold resources to use on multiple pages.
+Let's create an application-wide resource dictionary for holding resources to use on multiple pages.
 
 1. Open the **App.xaml** file. Notice that this file currently contains a resource dictionary with some existing resource dictionaries and styles that are used by default for controls built into .NET MAUI. To see all the styles included by default, view the **Resources/Styles.xaml** file.
 

@@ -16,7 +16,7 @@ prerequisites: |
   - [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code
 video:
   title: "Build .NET applications with C#"
-  url: https://www.microsoft.com/videoplayer/embed/RWVEF1
+  url: https://learn-video.azurefd.net/vod/player?id=5938e13b-d889-47e9-a747-4df9a4937da7
 iconUrl: /training/achievements/build-dotnet-applications-csharp.svg
 levels:
 - beginner

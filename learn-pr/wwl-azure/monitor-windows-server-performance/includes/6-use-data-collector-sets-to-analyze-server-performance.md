@@ -19,9 +19,7 @@ After you've created a combination of data collectors that describe useful syste
 Data collector sets can use the following types of data collectors:
 
 - Performance counters. This data collector provides server performance data.
-
 - Event trace data. This data collector provides information about system activities and events, and it's often useful for troubleshooting.
-
 - System configuration information. This data collector allows you to record the current state of registry keys and to record changes to those keys.
 
 > [!TIP]

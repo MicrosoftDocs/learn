@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.observability-continuous-improvement.implementing-real-time-monitoring-with-azure-monitor
+title: Implementing Real-Time Monitoring with Azure Monitor
+metadata:
+  title: Implementing Real-Time Monitoring with Azure Monitor
+  description: "In this lab, you'll create a sample web application to Azure, configure Azure Monitor and Application Insights, set up custom dashboards, and create alerts to track application performance."
+  ms.date: 2/4/2025
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: unit
+  ai-usage: ai-assisted
+durationInMinutes: 20
+content: |
+  [!include[](includes/7-implementing-real-time-monitoring-with-azure-monitor.md)]

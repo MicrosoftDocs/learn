@@ -83,8 +83,8 @@ As you learned previously, your action needs to have a `runs` statement that def
 
 Docker container actions require the `runs` statement to configure the image the Docker action uses with the following arguments:
 
-- `using`: Needs to be set to `docker` to run a Docker container action
-- `image`: Docker image used as the container to run the action
+- `using`: Needs to be set to `docker` to run a Docker container action.
+- `image`: Docker image used as the container to run the action.
 
 ```yml
 runs:
@@ -96,8 +96,8 @@ runs:
 
 JavaScript actions require that the `runs` statement take the following two arguments:
 
-- `using`: Application used to execute the code as defined in `main`
-- `main`: File that contains the action code; the application defined in `using` executes this file
+- `using`: Application used to execute the code as defined in `main`.
+- `main`: File that contains the action code; the application defined in `using` executes this file.
 
 For example, here's a `runs` statement for a JavaScript action using Node.js:
 
@@ -111,9 +111,9 @@ runs:
 
 Composite run steps actions require that the `runs` statement take the following three arguments:
 
-- `using`: Needs to be set to `"composite"` to run a composite run step
-- `steps`: Run steps to run the action
-- `steps[*].run`: Command you want to run (can be inline or a script in your action repository)
+- `using`: Needs to be set to `"composite"` to run a composite run step.
+- `steps`: Run steps to run the action.
+- `steps[*].run`: Command you want to run (can be inline or a script in your action repository).
 
 For example, here's a `runs` statement for a composite run steps action that will run the script at filepath `/test/script/sh`:
 

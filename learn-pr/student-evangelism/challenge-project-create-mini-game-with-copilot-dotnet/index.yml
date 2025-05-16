@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.challenge-project-create-mini-game-with-copilot-dotnet
+metadata:
+  title: Challenge project - Build a minigame with GitHub Copilot and .NET
+  description: "Demonstrate your ability to analyze, create, and use different methods to develop a console minigame in .NET with GitHub Codespaces and GitHub Copilot."
+  ms.date: 01/31/2025
+  author: codemillmatt
+  ms.author: masoucou
+  ms.custom: team=cloud_advocates
+  ms.topic: module-challenge-project
+  ms.service: github
+  ms.collection: ce-advocates-ai-copilot
+title: Challenge project - Build a minigame with GitHub Copilot and .NET
+summary: Demonstrate your ability to analyze, create, and use different methods to develop a console minigame in .NET with GitHub Codespaces and GitHub Copilot.
+abstract: |
+  - Experience GitHub Codespaces as a development environment.
+  - Develop input and output routines in a .NET console application.
+  - Use GitHub Copilot as an assistant.
+prerequisites: |
+  - A GitHub account and basic knowledge of Git commands to execute the routines (`add, commit and push`).
+  - Basics of .NET to work with variables, lists, loops, conditionals and print messages on the console.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- github
+- vs-code
+- dotnet
+units:
+- learn.wwl.challenge-project-create-mini-game-with-copilot-dotnet.introduction
+- learn.wwl.challenge-project-create-mini-game-with-copilot-dotnet.prepare
+- learn.wwl.challenge-project-create-mini-game-with-copilot-dotnet.exercise-setup-codespaces-add-extensions
+- learn.wwl.challenge-project-create-mini-game-with-copilot-dotnet.exercise-create-the-game-logic
+- learn.wwl.challenge-project-create-mini-game-with-copilot-dotnet.knowledge-check
+- learn.wwl.challenge-project-create-mini-game-with-copilot-dotnet.summary
+badge:
+  uid: learn.wwl.challenge-project-create-mini-game-with-copilot-dotnet.badge

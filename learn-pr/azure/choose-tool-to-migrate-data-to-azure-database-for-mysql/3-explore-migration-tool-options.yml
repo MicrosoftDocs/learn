@@ -2,8 +2,6 @@
 uid: learn.choose-tool-to-migrate-data-to-azure-database-for-mysql.explore-migration-tool-options
 title: Explore migration tool options
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore migration tool options
   description: "This unit covers migration tool options for Azure Database for MySQL - Flexible Server. It addresses mysqldump, MySQL Workbench, MySQL binlog, mydumper, myloader, Azure Migrate, Azure Database Migration Service (DMS), and the Azure Database for MySQL Import CLI."
   ms.date: 08/28/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 6
 content: |
   [!include[](includes/3-explore-migration-tool-options.md)]
-
+

@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: "Improve how forms and validation work in Blazor web apps"
   description: "Learn how to use DOM events, forms, and validation in a Blazor app"
-  ms.date: 11/09/2023
+  ms.date: 01/09/2025
   author: csharpfritz
   ms.author: jefritz
   manager: coxford

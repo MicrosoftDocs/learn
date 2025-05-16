@@ -1,4 +1,4 @@
-:::image type="content" source="../media/entra-verified-identity-d15c9bf7-67300c67.png" alt-text="Screenshot of the Microsoft Entra ID security settings screen, with the Verifiable credentials selected.":::
+:::image type="content" source="../media/entra-verified-identity.png" alt-text="Screenshot of the Microsoft Entra ID security settings screen, with the Verifiable credentials selected.":::
 
 ### What is Entra Verified ID?
 
@@ -10,10 +10,10 @@ We use IDs in our daily lives. We have drivers licenses that we use as evidence 
 
 To deploy Microsoft Entra Verified ID, you will need:
 
- -  An Azure tenant with a subscription
- -  A Microsoft Entra ID premium license
- -  Logged in as the global administrator
- -  A configured Azure Key Vault instance
+- An Azure tenant with a subscription
+- A Microsoft Entra ID premium license
+- Logged in as the global administrator
+- A configured Azure Key Vault instance
 
 To set up Microsoft Entra Verified ID, follow these steps:
 

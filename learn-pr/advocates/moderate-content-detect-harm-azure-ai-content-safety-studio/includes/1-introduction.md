@@ -1,6 +1,6 @@
 Contoso Camping Store is developing new AI-powered features for its website to enhance user interaction and safety. As a developer, you're tasked with integrating Azure AI Content Safety features into the store's platform. 
 
-Your goal is to ensure that all customer support conversations and user-generated content, such as product reviews and images, adhere to the company's content guidelines. For testing purposes, you choose to use the moderation and safety features in Azure AI Foundry.
+Your goal is to ensure that all customer support conversations and user-generated content, such as product reviews and images, adhere to the company's content guidelines. For testing purposes, you choose to use the moderation and safety features in [Azure AI Foundry](https://ai.zure.com).
 
 ## Learning objectives
 

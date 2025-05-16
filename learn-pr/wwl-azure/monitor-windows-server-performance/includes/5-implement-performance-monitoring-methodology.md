@@ -9,7 +9,7 @@ You should consider the value of performance data carefully to ensure that it re
 By analyzing performance trends, you can predict when existing capacity is likely to be exhausted. Review historical analysis along with your business requirements, and then use this data to determine when more capacity is required. Consider that in typical scenarios, peaks in activity are likely to occur from time to time. These peaks could make a capacity increase necessary to meet the demands being imposed on your infrastructure.
 
 > [!TIP]
-> Some peaks are associated with one-time activities, such as extremely large orders. Other peaks occur on a regular basis, such as monthly payroll processing. 
+> Some peaks are associated with one-time activities, such as extremely large orders. Other peaks occur regularly, such as monthly payroll processing.
 ## Consider capacity planning
 
 Planning for future server capacity is a best practice for all organizations. Planning for business changes often requires more server capacity to meet targets. If you can align your IT strategy with your business strategy, you can better support business objectives.
@@ -19,9 +19,7 @@ Planning for future server capacity is a best practice for all organizations. Pl
 Capacity planning focuses on assessing:
 
 - Server workload
-
 - The number of users that a server can support
-
 - The ways to scale systems to support more workload and users in the future
 
 New server applications and services affect the performance of an IT infrastructure. These services could receive dedicated hardware, although they often use the same local area network (LAN) and wide area network (WAN) infrastructure. Planning for future capacity should include all hardware components and how new servers, services, and applications affect the existing infrastructure. You should consider how your servers can scale up and out to support an increased workload.
@@ -37,9 +35,7 @@ Additional capacity requirements can include:
 - Adding more servers
 
 - Adding hardware
-
 - Reducing application loads
-
 - Reducing the number of users that connect to a server
 
 ## Understand bottlenecks
@@ -49,7 +45,6 @@ A performance bottleneck occurs when a computer is unable to service requests fo
 After identifying a bottleneck, you must decide how to remove it. Your options for removing a bottleneck include:
 
 - Adding resources to the computer.
-
 - Reducing workload on the computer.
 
 A computer that suffers from a severe resource shortage might stop processing user requests.
@@ -74,10 +69,9 @@ Server hard disks store programs and data. Consequently, the throughput of hard 
 > Using SSDs eliminates the problems associated with read/write head positioning. 
 Furthermore, disk controller performance and configuration also affect overall disk performance. By selecting faster disks and using disk arrays such as Redundant Array of Independent Disks (RAID) to optimize access times, you can alleviate the potential for a disk subsystem to create a performance bottleneck.
 
-You should also remember that the data on a disk moves into memory before it's used. If there is a surplus of memory, the Windows Server operating system creates a file cache for items that were recently written to or read from the disks. Installing more memory in a server can often improve disk subsystem performance because:
+You should also remember that the data on a disk moves into memory before it's used. If there's a surplus of memory, the Windows Server operating system creates a file cache for items that were recently written to or read from the disks. Installing more memory in a server can often improve disk subsystem performance because:
 
 - Accessing the cache is faster than moving the information into memory.
-
 - Having a surplus of memory reduces the need for memory paging.
 
 > [!TIP]
@@ -90,5 +84,4 @@ Windows Server uses a memory model in which it doesn't reject memory requests by
 
 ### Network
 
-The network is a critical part for performance monitoring because many network applications depend on the performance of network communications. Poor network performance can cause slow or unresponsive applications and server functionality. Therefore, network capacity planning is very important. While planning network capacity, you must consider bandwidth capacity and the capacity of any network devices, such as router and switch capacity. In many cases, optimizing the configuration of network devices such as switches or routers improves the performance of a network and network applications.
-
+The network is a critical part for performance monitoring because many network applications depend on the performance of network communications. Poor network performance can cause slow or unresponsive applications and server functionality. Therefore, network capacity planning is important. While planning network capacity, you must consider bandwidth capacity and the capacity of any network devices, such as router and switch capacity. In many cases, optimizing the configuration of network devices such as switches or routers improves the performance of a network and network applications.

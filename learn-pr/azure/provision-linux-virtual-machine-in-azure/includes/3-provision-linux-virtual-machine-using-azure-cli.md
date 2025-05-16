@@ -5,7 +5,7 @@ You can install Azure CLI locally on Linux, macOS, and Windows operating systems
 
 To use Azure CLI interactively, launch a shell available within your operating system, such as cmd.exe in Windows, or Bash in Linux or macOS, and then issue a command at the command prompt. To automate repetitive tasks, assemble the CLI commands into a shell script using your chosen shell's script syntax, then run the script.
 
-If you want to avoid installing Azure CLI, you can use Azure Cloud Shell. Azure Cloud Shell is an interactive, authenticated shell that you can use to manage Azure resources from a web browser. Azure Cloud Shell can run Bash and Azure PowerShell, and it has the current version of Azure CLI already preinstalled. To access Azure Cloud Shell, open the [Azure Cloud Shell](https://shell.azure.com/) link in a web browser or launch it from the Azure portal by selecting the Azure Cloud Shell icon next to the global search textbox.
+If you want to avoid installing Azure CLI, you can use Azure Cloud Shell. Azure Cloud Shell is an interactive, authenticated shell that you can use to manage Azure resources from a web browser. Azure Cloud Shell can run Bash and Azure PowerShell, and it has the current version of Azure CLI already preinstalled. To access Azure Cloud Shell, open the [Azure Cloud Shell](https://shell.azure.com/) link in a web browser or launch it from the Azure portal by selecting the **Cloud Shell** icon next to the global search textbox.
 
 ![Screenshot showing the Azure Cloud Shell icon in the Azure portal.](../media/azure-portal-cloud-shell-icon.png)
 
@@ -21,7 +21,7 @@ The process of provisioning an Azure VM running Linux by using Azure CLI typical
 - Create and configure a virtual network.
 - Create an Azure VM.
 
-Depending on your existing environment and requirements, it might not be necessary to complete each of the preceding steps. For example, you might use an existing resource group or a virtual network subnet for your deployment. In addition, Azure CLI supports a wide range of default settings, which automatically apply if you decide not to explicitly assign values to some of the resource settings. For example, as with the Azure portal-based deployment, if you don't specify an existing virtual network, Azure CLI will automatically provision one for you. In this module, you'll rely on the Azure CLI default settings and skip the process of creating a virtual network.
+Depending on your existing environment and requirements, it might not be necessary to complete each of the preceding steps. For example, you might use an existing resource group or a virtual network subnet for your deployment. In addition, Azure CLI supports a wide range of default settings, which automatically apply if you decide not to explicitly assign values to some of the resource settings. For example, as with the Azure portal-based deployment, if you don't specify an existing virtual network, Azure CLI automatically provisions one for you. In this module, you'll rely on the Azure CLI default settings and skip the process of creating a virtual network.
 
 > [!NOTE]
 > For information regarding implementing virtual networks by using Azure CLI, refer to [Quickstart: Use Azure CLI to create a virtual network](/azure/virtual-network/quick-create-cli).
@@ -45,7 +45,7 @@ az vm image list-publishers --location eastus --query [].name --output tsv | gre
 ```
 
 > [!NOTE]
-> The list is quite extensive, so you should ensure that you limit the output to the available session buffer.
+> The list is quite extensive, so you should ensure that you limit the output to the available session buffer. To exit the list, you can use **CTRL** + **C** on your keyboard.
 
 Assume you chose `Canonical`. Next, identify the offers available from that publisher by running the following command:
 
@@ -79,7 +79,7 @@ In addition to image availability, you also should ensure that the VM size you i
 az vm list-sizes --location eastus --output table
 ```
 
-Identify the VM size suitable for your sample deployment from the listing and note the value in the Name column. You'll need to enter the name in the identical format when running the Azure CLI command that initiates the Azure VM provisioning. Assume you chose *Standard_F4s*.
+Identify the VM size suitable for your sample deployment from the listing and note the value in the *Name* column. You'll need to enter the name in the identical format when running the Azure CLI command that initiates the Azure VM provisioning. Assume you chose *Standard_F4s*.
 
 > [!IMPORTANT]
 > Before you proceed, verify that this VM size is available in the Azure region you're targeting, and if needed, adjust the values of parameters in the subsequent commands accordingly.

@@ -1,73 +1,35 @@
 
 
-Private DNS zones are typically hosted in the same Azure subscription where the hub VNet is deployed. This central hosting practice is recommended for cross-premises DNS name resolution. In most cases, only networking and identity administrators have permissions to manage DNS records in these zones.
+## What is Azure Private Link Service?
 
-## Azure Private Endpoint DNS configuration
+Private Link gives you private access from your Azure virtual network to PaaS services and Microsoft Partner services in Azure. But, what if your company has its own Azure services? Is it possible to offer those customers a private connection to your company's services?
 
-This diagram shows a typical high-level architecture for enterprise environments with central Domain Name Service (DNS) resolution. The name resolution for Private Link resources is done through Azure Private DNS.
+Yes, by using [Azure Private Link Service](/azure/private-link/private-link-service-overview). This service lets you offer Private Link connections to your custom Azure services. Consumers of your custom services can then access those services privately—that is, without using the internet—from their own Azure virtual networks.
+
+Azure Private Link service is the reference to your own service that is powered by Azure Private Link. Your service that is running behind Azure standard load balancer can be enabled for Private Link access so that consumers to your service can access it privately from their own VNets. Your customers can create a private endpoint inside their VNet and map it to this service. A Private Link service receives connections from multiple private endpoints. A private endpoint connects to one Private Link service.
+
+:::image type="content" source="../media/consumer-provider-endpoint.png" alt-text="Diagram of the private link service workflow." lightbox="../media/consumer-provider-endpoint.png":::
+
+## Private link and DNS integration for hub-spoke networks
+
+The following diagram shows a typical high-level architecture for enterprise environments with central DNS resolution. The network architecture is hub-spoke network with Private Link resources and Azure Private DNS.
 
 :::image type="content" source="../media/private-link-example-central-dns-73e26cad.png" alt-text="Diagram of high-level workflow of enterprise environments with central DNS resolution.":::
 
-In the previous diagram, it's important to highlight:
+In the previous diagram, it's important to highlight: 
 
- -  On-premises DNS servers have conditional forwarders configured for each Private Endpoint. 
- -  The DNS servers in the hub VNet use the Azure-provided DNS resolver as a forwarder.
- -  All Azure VNets have the DNS forwarders configured as the primary and secondary DNS servers.
- -  DNS records follow the lifecycle of the Private Endpoint.
+1. All Azure virtual networks use the DNS private resolver that is hosted in the hub virtual network.
+1. On-premises DNS servers have conditional forwarders configured for each private endpoint public DNS zone, pointing to the DNS private resolver hosted in the hub virtual network.
+1. The DNS private resolver hosted in the hub virtual network uses the Azure-provided DNS (168.63.129.16) as a forwarder. IP address 168.63.129.16 is a virtual public IP address that facilitates a communication channel to Azure platform resources. 
+1. The hub virtual network must be linked to the Private DNS zone names for Azure services, such as privatelink.blob.core.windows.net, as shown in the diagram.
 
-## Significance of IP address 168.63.129.16
-
-IP address 168.63.129.16 is a virtual public IP address that facilitates a communication channel to Azure platform resources. 
-
-- Enables the VM Agent to communicate with the Azure platform to signal that it is in a "Ready" state.
-- Enables communication with the DNS virtual server to provide filtered name resolution. This filtering ensures customers can resolve only the hostnames of their resources.
-- Enables health probes from Azure load balancer to determine the health state of virtual machines. 
-- Enables virtual machines to obtain a dynamic IP address from the DHCP service in Azure.
-- Enables heartbeat messages for the PaaS role.
-
-## DNS configuration scenarios
-
-The FQDN of the services resolves automatically to a public IP address. To resolve to the private IP address of the Private Endpoint, change your DNS configuration.
-
-DNS is a critical component to make the application work correctly by successfully resolving the Private Endpoint IP address.
-
-Based on your preferences, these scenarios are available with DNS resolution integrated.
-
- -  [Virtual network workloads without custom DNS server](/azure/private-link/private-endpoint-dns#virtual-network-workloads-without-custom-dns-server).
- -  [On-premises workloads using a DNS forwarder](/azure/private-link/private-endpoint-dns#on-premises-workloads-using-a-dns-forwarder).
- -  [Virtual network and on-premises workloads using a DNS forwarder](/azure/private-link/private-endpoint-dns#virtual-network-and-on-premises-workloads-using-a-dns-forwarder).
- -  [Private DNS zone group](/azure/private-link/private-endpoint-dns#private-dns-zone-group).
+> [!NOTE]
+> There are many other [DNS integration scenarios](/azure/cloud-adoption-framework/ready/azure-best-practices/private-link-and-dns-integration-at-scale#private-link-and-dns-integration-in-hub-and-spoke-network-architectures) to fit your organization's needs. 
 
 
-### On-premises workloads using a DNS forwarder
+### What is Azure DNS Private Resolver
 
-For on-premises workloads to resolve the FQDN of a Private Endpoint, use a DNS forwarder to resolve the Azure service public DNS zone in Azure. A DNS forwarder is a virtual machine running on the virtual network linked to the Private DNS Zone. The query must be originated from the virtual network to Azure DNS. A few options for DNS proxies are: Windows running DNS services, Linux running DNS services, Azure Firewall.
+[Azure DNS Private Resolver](/azure/dns/dns-private-resolver-overview) enables you to query Azure DNS on-premises private zones without deploying VM based DNS servers. When you use DNS Private Resolver, you don't need a DNS forwarder, and Azure DNS is able to resolve on-premises domain names.
 
-This diagram illustrates the DNS resolution sequence from an on-premises network. The configuration uses a DNS forwarder deployed in Azure. The resolution is made by a private DNS zone linked to a virtual network.
-
-:::image type="content" source="../media/on-premises-using-azure-dns-ccdbeaf1.png" alt-text="Diagram illustrating the DNS resolution sequence from an on-premises network using a DNS forwarder deployed in Azure.":::
-
-To configure this scenario, you need:
-
- -  On-premises network.
- -  Virtual network connected to on-premises.
- -  DNS forwarder deployed in Azure.
- -  Private DNS zones privatelink.database.windows.net with type A record.
- -  Private Endpoint information (FQDN record name and private IP address).
-
-
-
-
-### Virtual network and on-premises workloads using Azure DNS Private Resolver
-
-When you use DNS Private Resolver, you don't need a DNS forwarder VM, and Azure DNS is able to resolve on-premises domain names.
-
-This diagram uses DNS Private Resolver in a hub-spoke network topology. As a best practice, the Azure landing zone design pattern recommends using this type of topology. A hybrid network connection is established by using Azure ExpressRoute and Azure Firewall. This setup provides a secure hybrid network. DNS Private Resolver is deployed in the hub network.
-
-:::image type="content" source="../media/private-resolver.png" alt-text="Diagram illustrating on-premises workloads using Azure DNS Private Resolver.":::
-
-- Review the [DNS Private Resolver solution components](/azure/architecture/example-scenario/networking/azure-dns-private-resolver#dns-private-resolver-solution-components)
-- Review the [traffic flow for an on-premises DNS query](/azure/architecture/example-scenario/networking/azure-dns-private-resolver#traffic-flow-for-an-on-premises-dns-query)
-- Review the [traffic flow for a VM DNS query](/azure/architecture/example-scenario/networking/azure-dns-private-resolver#traffic-flow-for-a-vm-dns-query)
-- Review the [traffic flow for a VM DNS query via DNS Private Resolver](/azure/architecture/example-scenario/networking/azure-dns-private-resolver#traffic-flow-for-a-vm-dns-query-via-dns-private-resolver)
-- Review the [traffic flow for a VM DNS query via an on-premises DNS server](/azure/architecture/example-scenario/networking/azure-dns-private-resolver#traffic-flow-for-a-vm-dns-query-via-an-on-premises-dns-server)
+> [!TIP]
+> Learn more about Azure DNS Private Resolver in the [Intro to Azure DNS Private Resolver](/training/modules/intro-to-azure-dns-private-resolver/) module.

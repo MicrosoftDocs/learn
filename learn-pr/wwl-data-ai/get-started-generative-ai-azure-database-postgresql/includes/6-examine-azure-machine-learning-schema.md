@@ -14,8 +14,8 @@ The `inference()` function expects the following input parameters:
 | --------- | ---- | ------- | ----------- |
 | input_data | `jsonb` || A JSON object containing the `input_data` object required for interacting with Azure Machine Learning models. |
 | deployment_name | `text` | `NULL::text` | (Optional) Name of the model deployment to target at the specified Azure Machine Learning endpoint. |
-| timeout_ms | `integer` | `NULL::integer`| The timeout... |
-| throw_on_error | `boolean` | `true` | desc... |
+| timeout_ms | `integer` | `NULL::integer`| Sets the maximum time (in milliseconds) to wait for an inference operation before it times out. |
+| throw_on_error | `boolean` | `true` | Determines whether to throw an error if the inference operation encounters an issue. |
 | max_attempts | `integer` | `1` | Number of times to retry the call to Azure OpenAI service in the event of a failure. |
 | retry_delay_ms | `integer` | `1000` | Amount of time, in milliseconds, to wait before attempting to retry calling the Azure OpenAI service endpoint. |
 

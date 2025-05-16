@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.cela-accessibility.develop-keyboard-accessible-products.design-for-keyboard-accessibility
+title: Design for keyboard accessibility
+metadata:
+  title: Design for keyboard accessibility
+  description: This unit is a part of the \"Design keyboard accessible products\" module.
+  ms.date: 02/04/2025
+  author: erzelman
+  ms.author: erzelman
+  ms.topic: unit
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-design-for-keyboard-accessibility.md)]

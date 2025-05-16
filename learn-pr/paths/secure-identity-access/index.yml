@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.wwl.secure-identity-access
+metadata:
+  title: 'AZ-500: Secure identity and access'
+  description: 'AZ-500: Secure identity and access'
+  ms.date: 02/12/2025
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: learning-path
+title: 'AZ-500: Secure identity and access'
+prerequisites: |
+  -   None
+summary: |
+  Master identity and access management in Microsoft Entra ID, securing users, groups, and external identities, implementing authentication and authorization controls, and managing application access and security.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- security-engineer
+products:
+- azure
+- azure-rbac
+- entra-id
+- entra-id-protection
+- entra-identity-governance
+- entra-permissions-management
+- entra-verified-id
+subjects:
+- identity-access
+modules:
+- learn.wwl.manage-security-controls-identity-access
+- learn.wwl.manage-application-access-microsoft-entra-id
+trophy:
+  uid: learn.wwl.secure-identity-access.trophy

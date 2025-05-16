@@ -23,7 +23,7 @@ Microsoft Copilot Pro is a subscription-based service that offers all the capabi
 
 ## Microsoft 365 Copilot for organizations
 
-Microsoft 365 Copilot is an AI-powered assistant for business organizations, integrating Copilot into apps and services like Word, Excel, Outlook, PowerPoint, Teams, OneNote, and others. By connecting to your organization's data through the Microsoft Graph and providing a centralized Copilot portal through Microsoft 365 Copilot Business Chat (BizChat), Microsoft 365 Copilot makes it easy to find relevant documents and information, summarize email threads and meeting transcripts, and streamline business processes and collaboration.
+Microsoft 365 Copilot is an AI-powered assistant for business organizations, integrating Copilot into apps and services like Word, Excel, Outlook, PowerPoint, Teams, OneNote, and others. By connecting to your organization's data through the Microsoft Graph and providing a centralized Copilot portal through Microsoft 365 Copilot Chat, Microsoft 365 Copilot makes it easy to find relevant documents and information, summarize email threads and meeting transcripts, and streamline business processes and collaboration.
 
 ![Screenshot of Microsoft 365 Copilot.](../media/microsoft-365-copilot.png)
 

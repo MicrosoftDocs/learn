@@ -2,7 +2,7 @@
 
 Azure OpenAI Service is a result of the partnership between Microsoft and OpenAI. The service combines Azure's enterprise-grade capabilities with OpenAI's generative AI model capabilities. With Azure OpenAI, customers get the security capabilities of Azure while running the same models as OpenAI. Azure OpenAI offers private networking, regional availability, and responsible AI content filtering.
 
-Azure OpenAI Service provides REST API access to OpenAI's powerful language models, including the o1 series, GPT-4o series, and other legacy models such as GPT-3.5 Turbo. You can easily adapt these models to your specific task, including—but not limited to—content generation, summarization, image understanding, semantic search, and natural language-to-code translation. Users can access the service through REST APIs, Python SDK, or a web-based interface in the Azure OpenAI Studio.
+Azure OpenAI Service provides REST API access to OpenAI's powerful language models, including the o1 series, GPT-4o series, and other legacy models such as GPT-3.5 Turbo. You can easily adapt these models to your specific task, including—but not limited to—content generation, summarization, image understanding, semantic search, and natural language-to-code translation. Users can access the service through REST APIs, Python SDK, or a web-based interface in the Azure OpenAI Foundry.
 
 Azure OpenAI Service is powered by a diverse set of models with different capabilities and price points. Model availability varies by region and cloud service. Azure OpenAI Service gives customers advanced language AI with OpenAI GPT-4, GPT-3, Codex, DALL-E, Whisper, and text-to-speech models augmented with the security and enterprise features of Azure. Azure OpenAI co-develops the application program interfaces (APIs) with OpenAI, which helps ensure compatibility and a smooth transition from one product to the other.
 
@@ -27,7 +27,7 @@ A high-detail image lets the API review the image in more detail by cropping it 
 
 ## How to start with Azure OpenAI
 
-Similar to other Azure products, you can start with Azure OpenAI by creating a resource or an instance of the service in your Azure Subscription. Once you create an Azure OpenAI Resource, you must deploy a model before you can start making API calls and generating text. You can do this by using Deployment APIs, which allows you to specify the model you wish to use. In the Azure OpenAI Studio, you can build AI models and deploy them for public consumption in software applications.
+Similar to other Azure products, you can start with Azure OpenAI by creating a resource or an instance of the service in your Azure Subscription. Once you create an Azure OpenAI Resource, you must deploy a model before you can start making API calls and generating text. You can do this by using Deployment APIs, which allows you to specify the model you wish to use. In the Azure OpenAI Foundry, you can build AI models and deploy them for public consumption in software applications.
 
 ## Summary
 

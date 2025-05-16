@@ -21,7 +21,7 @@ prerequisites: |
   - Ability to navigate the Azure portal
 # video:
 #  title: "Linux on Azure video"
-#  url: https://www.microsoft.com/videoplayer/embed/RWK1dx
+#  url: https://learn-video.azurefd.net/vod/player?id=f3676a07-307c-4159-9d01-bb917c9b8ffe
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner

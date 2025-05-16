@@ -17,7 +17,7 @@ A list of the currently available settings:
     * **HTTP version**: Set to **2.0** to enable support for HTTPS/2 protocol.
 
         > [!NOTE]
-        > Most modern browsers support HTTP/2 protocol over TLS only, while non-encrypted traffic continues to use HTTP/1.1. To ensure that client browsers connect to your app with HTTP/2, secure your custom DNS name.
+        > Most modern browsers support HTTP/2 protocol over TLS only, while nonencrypted traffic continues to use HTTP/1.1. To ensure that client browsers connect to your app with HTTP/2, secure your custom DNS name.
 
     * **Web sockets**: For ASP.NET SignalR or socket.io, for example.
 

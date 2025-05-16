@@ -20,7 +20,7 @@ To add a secret to the vault, follow the steps:
 
 This process is simple. Open your key vault, then open the secret you created. Select the **Show secret value** button.
 
-:::image type="content" source="../media/key-vault-view-secret-9b36f3cf.png" alt-text="Screenshot of the Azure Key Vault, with a secret open and the show secret value selected. You can read or copy the value in plain text.":::
+:::image type="content" source="../media/key-vault-view-secret-9b36f3cf-292a8d6c.png" alt-text="Screenshot of the Azure Key Vault, with a secret open and the show secret value selected. You can read or copy the value in plain text.":::
 
 
 ### Retrieve a secret using CLI or PowerShell
@@ -33,12 +33,14 @@ You can quickly and easily grab a secret from your key vault using scripting lan
 az keyvault secret show --name "mySC300keyvaultSecret" --vault-name "<your-unique-keyvault-name>" --query "value"
 
 
+
 ```
 
 ***PowerShell***
 
 ```
 $secret = Get-AzKeyVaultSecret -VaultName "<your-unique-keyvault-name>" -Name "mySC300keyvaultSecret" -AsPlainText
+
 
 
 ```

@@ -5,9 +5,7 @@ You connect to a JEA endpoint by connecting interactively, using implicit remoti
 You can use JEA the same way you would connect with a regular PowerShell remoting session. To use JEA interactively, you need:
 
 - The remote computer name
-
 - The JEA endpoint name
-
 - An account with access to the desired endpoint
 
 For example, if you have access to the JEA endpoint named DNSOps on the local server, you can connect to the JEA endpoint using the following PowerShell command:

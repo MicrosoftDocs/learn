@@ -14,7 +14,7 @@ The process for creating a Kubernetes orchestration solution includes the follow
 1. Join worker nodes. After creating the Kubernetes master and configuring the network solution, you can join Windows Server and Linux-based worker nodes to the cluster. Joining the worker nodes consists of configuring OS-specific binaries and then connecting them to the network solution.
 
     > [!NOTE]
-    > Since the release of Kubernetes version 1.14, Windows-based nodes are supported for both worker nodes and for scheduling Windows containers. Windows-based worker nodes must be on Windows Server 2019 and Windows Server version 1809 or newer.
+    > Since the release of Kubernetes version 1.14, Windows-based nodes are supported for both worker nodes and for scheduling Windows containers. Windows-based worker nodes must be on Windows Server 2019 or newer.
 
 1. Manage Kubernetes resources. Use the `kubectl` command to deploy and manage the Kubernetes pods that hold the containers for your applications.
 

@@ -3,7 +3,7 @@ You can configure and manage Azure using a broad range of tools and platforms. T
 Tools that are commonly used for day-to-day management and interaction include:
 
 - **Azure portal** for interacting with Azure via a Graphical User Interface (GUI)
-- **Azure PowerShell** and **Azure Command-Line Interface** (CLI) for command-line and automation-based interactions with Azure
+- **Azure PowerShell** and **Azure Command-Line Interface (CLI)** for command-line and automation-based interactions with Azure
 - **Azure Cloud Shell** for a web-based command-line interface
 - **Azure mobile app** for monitoring and managing your resources from your mobile device
 
@@ -19,13 +19,13 @@ The [Azure portal](https://portal.azure.com) is a public website you can access 
 
 The Azure portal is often the best interface for carrying out single tasks, or when you want to look at configuration options in detail.
 
-Generally speaking, the portal doesn't let you automate repetitive tasks. For example, to set up multiple VMs, you would need to create them one at a time. This process might make the portal approach less ideal for complex tasks that involve repetition. For these types of tasks, Azure PowerShell and Azure CLI can be helpful.
+Generally speaking, the portal doesn't let you automate repetitive tasks. For example, to set up multiple VMs, you'd need to create them one at a time. This process might make the portal approach less ideal for complex tasks that involve repetition. For these types of tasks, Azure PowerShell and Azure CLI can be helpful.
 
 ## Azure PowerShell
 
 Azure PowerShell lets you connect to your Azure subscription and manage resources.
 
-For example, Azure PowerShell provides the `New-AzVM` command that creates a virtual machine for you inside your Azure subscription. To use it, you launch PowerShell and install the Azure PowerShell module if you haven't already done so. Then sign in to your Azure account using the command `Connect-AzAccount` and issue a command such as:
+For example, Azure PowerShell provides the `New-AzVM` command that creates a virtual machine for you inside your Azure subscription. To use it, you launch PowerShell and install the Azure PowerShell module if you haven't already done so. Then, sign in to your Azure account using the command `Connect-AzAccount` and issue a command such as:
 
 ```powershell
 New-AzVM `
@@ -39,7 +39,7 @@ New-AzVM `
 
 Azure CLI is a command-line program that connects to Azure and executes administrative commands on Azure resources. Azure CLI can run on Windows, Linux, or macOS.
 
-For example, to create a VM, you open a command prompt window and install the Azure CLI if you haven't already done so. Then sign in to Azure using the command `az login` and issue a command such as:
+For example, to create a VM, you open a command prompt window and install the Azure CLI if you haven't already done so. Then, sign in to Azure using the command `az login` and issue a command such as:
 
 ```azurecli
 az vm create \
@@ -52,7 +52,7 @@ az vm create \
 
 ## Azure Cloud Shell
 
-[Azure Cloud Shell](https://shell.azure.com/) is an interactive, authenticated, browser-accessible shell for managing Azure resources using scripting tools like Azure CLI or Azure PowerShell. The Cloud Shell also has many other developer tools available, such as text editors, source control tools, databases, and more.
+[Azure Cloud Shell](https://shell.azure.com/) is an interactive, authenticated, browser-accessible shell for managing Azure resources using scripting tools like Azure CLI or Azure PowerShell. The Cloud Shell also has many other developer tools available, such as text editors, source-control tools, databases, and more.
 
 :::image type="content" source="../media/2-cloud-shell.png" alt-text="Screenshot of an Azure Cloud Shell instance using Bash within a Microsoft Edge browser window.":::
 
@@ -72,7 +72,7 @@ Once installed, you can perform many common Azure tasks, such as:
 - Check the current status and critical metrics of your services.
 - Stay informed with notifications and alerts about important health issues.
 - Review the latest Azure alerts.
-- Start, stop and restart virtual machines or web apps.
+- Start, stop, and restart virtual machines or web apps.
 - Connect to your virtual machines.
 - Manage permissions with role-based access control (RBAC).
 - Use the Azure Cloud Shell to run saved scripts or perform administrative tasks.

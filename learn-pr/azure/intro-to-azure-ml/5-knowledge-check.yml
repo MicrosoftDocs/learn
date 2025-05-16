@@ -1,12 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-azure-ml.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Multiple-choice questions
-  ms.date: 07/20/2024
+  ms.date: 04/15/2025
   author: sdgilley
   ms.author: sgilley
   ms.topic: unit
@@ -20,18 +18,18 @@ quiz:
     choices:
     - content: "Network Security controls and overview"
       isCorrect: false
-      explanation: "Incorrect. Network security can be managed through the Azure portal and Workspace."
+      explanation: "Incorrect. You can manage network security through the Azure portal and Workspace."
     - content: "Visual canvas with drag and drop controls."
       isCorrect: true
-      explanation: "Correct. Azure Machine Learning Designer is found within the Azure Machine Learning Studio. It's suited for building ML pipelines by dragging and dropping modules to create workflows or tasks execute in a particular order."
+      explanation: "Correct. You can find Azure Machine Learning Designer within the Azure Machine Learning studio. It's suited for building ML pipelines by dragging and dropping modules to create workflows or tasks execute in a particular order."
     - content: "Model storage and versioning"
       isCorrect: false
-      explanation: "Incorrect. Model storage and versioning can be accessed via the Workspace and Notebook feature."
+      explanation: "Incorrect. You can access model storage and versioning via the Workspace and Notebook feature."
   - content: 'Which of the following descriptions accurately describes a Pipeline?'
     choices:
     - content: "A coding environment for deploying and monitoring models"
       isCorrect: false
-      explanation: "Incorrect. The coding environment can be found within a typical deployment pipeline but isn't a description of a pipeline."
+      explanation: "Incorrect. You can find the coding environment within a typical deployment pipeline, but isn't a description of a pipeline."
     - content: "A top-level resource for managing all assets you create when you use Azure Machine Learning"
       isCorrect: false
       explanation: "Incorrect. This description describes a Workspace, which is where you manage all artifacts used to train and deploy models."
@@ -40,12 +38,12 @@ quiz:
       explanation: "Correct. Pipelines can encapsulate a task such as cleaning or extracting data or a complete workflow to train and deploy models."
   - content: 'Which MLOps principled features are found in Azure Machine Learning?'
     choices:
-    - content: "Faster deployment of models"
+    - content: "Faster model deployment"
       isCorrect: false
-      explanation: "Incorrect. Yes, faster deployment is a MLOps principled feature in Azure Machine Learning, however, other features are also present within the service."
+      explanation: "Incorrect. Yes, faster deployment is a MLOps principled feature in Azure Machine Learning; however, other features are also present within the service."
     - content: "Reproducible training pipelines and environments"
       isCorrect: false
-      explanation: "Incorrect. Yes, reproducible training pipelines and environments are MLOps principled features in Azure Machine Learning, however, other features are also present within the service."
+      explanation: "Incorrect. Yes, reproducible training pipelines and environments are MLOps principled features in Azure Machine Learning; however, other features are also present within the service."
     - content: "All of the above"
       isCorrect: true
       explanation: "Correct. Azure Machine Learning incorporates all of these principles within its features to help create reproducible and reliable creation of models."

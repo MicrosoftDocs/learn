@@ -37,12 +37,12 @@ var virtualMachineImageReference = {
 }
 var virtualMachineOSDiskName = 'YOUR-OS-DISK-NAME'
 
-resource networkSecurityGroup 'Microsoft.Network/networkSecurityGroups@2022-05-01' = {
+resource networkSecurityGroup 'Microsoft.Network/networkSecurityGroups@2024-05-01' = {
   name: networkSecurityGroupName
   location: location
 }
 
-resource publicIPAddress 'Microsoft.Network/publicIPAddresses@2022-05-01' = {
+resource publicIPAddress 'Microsoft.Network/publicIPAddresses@2024-05-01' = {
   name: publicIPAddressName
   location: location
   sku: {
@@ -56,7 +56,7 @@ resource publicIPAddress 'Microsoft.Network/publicIPAddresses@2022-05-01' = {
   }
 }
 
-resource virtualMachine 'Microsoft.Compute/virtualMachines@2022-08-01' = {
+resource virtualMachine 'Microsoft.Compute/virtualMachines@2024-07-01' = {
   name: virtualMachineName
   location: location
   properties: {
@@ -110,7 +110,7 @@ resource virtualMachine 'Microsoft.Compute/virtualMachines@2022-08-01' = {
   }
 }
 
-resource virtualNetwork 'Microsoft.Network/virtualNetworks@2022-05-01' = {
+resource virtualNetwork 'Microsoft.Network/virtualNetworks@2024-05-01' = {
   name: virtualNetworkName
   location: location
   properties: {
@@ -137,7 +137,7 @@ resource virtualNetwork 'Microsoft.Network/virtualNetworks@2022-05-01' = {
   }
 }
 
-resource networkInterface 'Microsoft.Network/networkInterfaces@2022-05-01' = {
+resource networkInterface 'Microsoft.Network/networkInterfaces@2024-05-01' = {
   name: networkInterfaceName
   location: location
   properties: {

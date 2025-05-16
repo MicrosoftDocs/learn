@@ -22,6 +22,12 @@ To create a load testing resource using CLI:
     location="East US"
     ```
 
+1. Create a resource group with the `az group create` command:
+
+    ```azurecli
+    az group create -n $resourceGroup -l $location
+    ```
+
 1. Create an Azure load testing resource with the `azure load create` command:
 
     ```azurecli
@@ -40,8 +46,6 @@ There are two options to create a load test in the Azure portal:
 
 - URL-based test
 - JMeter test script (JMX)
-
-:::image type="content" source="../media/create-test-dropdown.png" alt-text="Screenshot that shows the options to create a new test in the Azure portal.":::
 
 In this unit, we focus on creating a test using a JMeter script.
 
@@ -88,7 +92,7 @@ You can use parameters to make your test plan configurable instead of hard-codin
 
 3. Add references to client certificates, backed by Azure Key Vault.
 
-    If you are load testing application endpoints that use certificate-based authentication, you can add the certificates to your Azure key vault, and add a reference to the certificate in the load test configuration. Azure Load Testing automatically injects the certificates in the web requests in your JMeter script.
+    If you're load testing application endpoints that use certificate-based authentication, you can add the certificates to your Azure key vault, and add a reference to the certificate in the load test configuration. Azure Load Testing automatically injects the certificates in the web requests in your JMeter script.
 
 4. Select the managed identity that is used for accessing your key vault for secrets or certificates.
 
@@ -125,3 +129,4 @@ You can use parameters to make your test plan configurable instead of hard-codin
     Azure Load Testing can automatically stop a load test run when the error rate surpasses a given threshold. You can enable or disable this functionality, and configure the specific error rate threshold and time window.
 
     :::image type="content" source="../media/configure-test-criteria.png" alt-text="Screenshot that shows how to configure test criteria when creating a test in the Azure portal.":::
+

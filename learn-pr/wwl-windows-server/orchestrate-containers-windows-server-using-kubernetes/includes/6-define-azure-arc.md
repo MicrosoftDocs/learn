@@ -20,9 +20,6 @@ Specific services available in Azure Arc include:
 
 You can also use Azure Arc to extend your organization's DevOps practices, Azure security policies and Azure data services to on-premises, multiple cloud, and edge environments.
 
-> [!IMPORTANT]
-> At the time of writing, Kubernetes clusters, SQL Server, data controllers, and Azure Stack HCI are all in preview in Azure Arc. Products and services in preview are not recommended for production workloads.
-
 ## Azure Arc-enabled Kubernetes
 
 Azure Arc connects your Kubernetes clusters with Azure so you can manage your clusters effectively. With Azure Arc-enabled Kubernetes, you can control your cluster configurations and workloads at scale from files that are stored in your Git repositories.

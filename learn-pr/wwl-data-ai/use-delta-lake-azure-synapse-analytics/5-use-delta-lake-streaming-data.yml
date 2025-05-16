@@ -2,8 +2,6 @@
 uid: learn.wwl.use-delta-lake-azure-synapse-analytics.use-delta-lake-streaming-data
 title: Use Delta Lake with streaming data
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use Delta Lake with streaming data
   description: "Use Delta Lake with streaming data"
   ms.date: 10/11/2023
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 6
 content: |
-  [!include[](includes/5-use-delta-lake-streaming-data.md)]
+  [!include[](includes/5-use-delta-lake-streaming-data.md)]

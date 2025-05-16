@@ -1,14 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.work-with-form-recognizer.knowledge-check-summary
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Knowledge check
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 09/05/2024
+  ms.date: 04/28/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

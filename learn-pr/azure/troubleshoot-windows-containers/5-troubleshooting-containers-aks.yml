@@ -2,8 +2,6 @@
 uid: learn.azure.troubleshoot-windows-containers.troubleshooting-aks
 title: Troubleshooting Windows containers on Azure Kubernetes Service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Troubleshooting Windows containers on Azure Kubernetes Service
   description: This content is part of the "Troubleshooting Windows Containers" module.
   ms.date: 08/13/2024
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/5-troubleshooting-containers-aks.md)]
-
+

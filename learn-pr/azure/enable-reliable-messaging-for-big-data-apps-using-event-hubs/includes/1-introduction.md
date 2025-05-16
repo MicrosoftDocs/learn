@@ -15,3 +15,8 @@ In this module, you will:
 - Create an event hub using the Azure CLI.
 - Configure apps to send or receive messages through an event hub.
 - Evaluate your event hub performance using the Azure portal.
+
+## Prerequisites
+
+- Experience using [Visual Studio Code](https://code.visualstudio.com/download) to develop, build, and run C# console applications.
+- Experience using Git repositories and Git Bash. Download [Git for Windows](https://git-scm.com/downloads/win) if you don't have it already on your computer.

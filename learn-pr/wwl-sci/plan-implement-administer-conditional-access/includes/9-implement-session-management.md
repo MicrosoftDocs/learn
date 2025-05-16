@@ -1,9 +1,9 @@
 In complex deployments, organizations might have a need to restrict authentication sessions. Some scenarios might include:
 
- -  Resource access from an unmanaged or shared device.
- -  Access to sensitive information from an external network.
- -  High priority or executive users.
- -  Critical business applications.
+ - Resource access from an unmanaged or shared device.
+ - Access to sensitive information from an external network.
+ - High priority or executive users.
+ - Critical business applications.
 
 Conditional Access controls allow you to create policies that target specific use cases within your organization without affecting all users.
 
@@ -19,15 +19,15 @@ It might sound alarming to not ask for a user to sign back in; in reality any vi
 
 The sign-in frequency setting works with apps that have implemented OAUTH2 or OIDC protocols according to the standards. Most apps for Windows, Mac, and mobile, including the following web applications, comply with the setting.
 
- -  Word, Excel, PowerPoint Online
- -  OneNote Online
- -  Office.com
- -  Microsoft 365 Admin portal
- -  Exchange Online
- -  SharePoint and OneDrive
- -  Teams web client
- -  Dynamics CRM Online
- -  Azure portal
+ - Word, Excel, PowerPoint Online
+ - OneNote Online
+ - Office.com
+ - Microsoft 365 Admin portal
+ - Exchange Online
+ - SharePoint and OneDrive
+ - Teams web client
+ - Dynamics CRM Online
+ - Azure portal
 
 The sign-in frequency setting works with SAML applications as well, as long as they don't drop their own cookies and are redirected back to Microsoft Entra ID for authentication on a regular basis.
 
@@ -35,8 +35,7 @@ The sign-in frequency setting works with SAML applications as well, as long as t
 
 Sign-in frequency previously applied only to the first factor authentication on devices that were Microsoft Entra joined, Hybrid Microsoft Entra joined, and Microsoft Entra registered. There was no easy way for our customers to re-enforce multifactor authentication (MFA) on those devices. Based on customer feedback, sign-in frequency will apply for MFA as well.
 
-:::image type="content" source="../media/conditional-access-flow-chart-2401cc8b-030310a4.png" alt-text="Diagram of multifactor authentication sign-in process with sign-in frequency.":::
-
+:::image type="content" source="../media/conditional-access-flow-chart.png" alt-text="Diagram of multifactor authentication sign-in process with sign-in frequency.":::
 
 ### User sign-in frequency and device identities
 
@@ -44,16 +43,16 @@ If you have Microsoft Entra joined, hybrid Microsoft Entra joined, or Microsoft 
 
 Example 1:
 
- -  At 00:00, a user signs in to their Windows 10 Microsoft Entra joined device and starts work on a document stored on SharePoint Online.
- -  The user continues working on the same document on their device for an hour.
- -  At 01:00, the user is prompted to sign in again based on the sign-in frequency requirement in the Conditional Access policy configured by their administrator.
+ - At 00:00, a user signs in to their Windows 10 Microsoft Entra joined device and starts work on a document stored on SharePoint Online.
+ - The user continues working on the same document on their device for an hour.
+ - At 01:00, the user is prompted to sign in again based on the sign-in frequency requirement in the Conditional Access policy configured by their administrator.
 
 Example 2:
 
- -  At 00:00, a user signs in to their Windows 10 Microsoft Entra joined device and starts work on a document stored on SharePoint Online.
- -  At 00:30, the user gets up and takes a break, locking their device.
- -  At 00:45, the user returns from their break and unlocks the device.
- -  At 01:45, the user is prompted to sign in again based on the sign-in frequency requirement in the Conditional Access policy configured by their administrator since the last sign-in happened at 00:45.
+ - At 00:00, a user signs in to their Windows 10 Microsoft Entra joined device and starts work on a document stored on SharePoint Online.
+ - At 00:30, the user gets up and takes a break, locking their device.
+ - At 00:45, the user returns from their break and unlocks the device.
+ - At 01:45, the user is prompted to sign in again based on the sign-in frequency requirement in the Conditional Access policy configured by their administrator since the last sign-in happened at 00:45.
 
 ## Persistence of browsing sessions
 
@@ -63,8 +62,7 @@ A persistent browser session allows users to remain signed in after closing and 
 
 Use the What-If tool to simulate a sign-in from the user to the target application and other conditions based on how you configured your policy. The authentication session management controls show up in the result of the tool.
 
-:::image type="content" source="../media/conditional-access-what-if-tool-result-3dc01f5c-686081c3.png" alt-text="Screenshot of the Conditional Access What If tool results.":::
-
+:::image type="content" source="../media/conditional-access-what-if-tool-result.png" alt-text="Screenshot of the Conditional Access What If tool results.":::
 
 ## Policy deployment
 

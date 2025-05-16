@@ -1,1 +1,0 @@
-In this module, you learned about some popular use cases for smart contracts. You also learned about and installed tools to help you write and test smart contracts, including Truffle and the Truffle for VS Code extension.

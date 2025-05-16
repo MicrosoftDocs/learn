@@ -1,16 +1,18 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-implement-network-monitoring.monitor-your-networks-using-azure-network-watcher
-title: Monitor your networks using Azure network watcher
+title: Monitor your networks using Azure Network Watcher
 metadata:
-  title: Monitor your networks using Azure network watcher
-  description: "Monitor your networks using Azure network watcher"
-  ms.date: 12/03/2024
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Monitor your networks using Azure Network Watcher
+  description: "Monitor your networks using Azure Network Watcher"
+  ms.date: 05/01/2025
   author: wwlpublish
-  ms.author: jileary
+  ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 14
+durationInMinutes: 9
 content: |
   [!include[](includes/4-monitor-networks-using-azure-network-watcher.md)]
 quiz:
@@ -27,14 +29,14 @@ quiz:
     - content: "Network Watcher is enabled automatically when you create a virtual network."
       isCorrect: true
       explanation: "Correct. When you create or update a virtual network, Network Watcher is automatically enabled."
-  - content: "Which is a component of Traffic Analytics?"
+  - content: "How can Azure Network Watcher help in network security?"
     choices:
-    - content: "Backend pool"
+    - content: "By managing user access and permissions."
       isCorrect: false
-      explanation: "Incorrect. A backend pool isn't required for traffic analytics."
-    - content: "Network security group flow logs"
+      explanation: "Incorrect. Azure Network Watcher doesn't manage user access and permissions."
+    - content: "By providing firewall and antivirus solutions."
+      isCorrect: false
+      explanation: "Incorrect. Firewall and antivirus aren't features of Azure Network Watcher."
+    - content: "By enabling the monitoring and diagnosing of network traffic patterns."
       isCorrect: true
-      explanation: "Correct. Flow logs include information about ingress and egress IP traffic through a network security group."
-    - content: "Availability zones"
-      isCorrect: false
-      explanation: "Incorrect. Availability zones aren't required for traffic analytics."
+      explanation: "Correct. Azure Network Watcher can help identify potential security risks by monitoring and diagnosing network traffic patterns."

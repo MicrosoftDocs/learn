@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-to-hololens.knowledge-check
-title: Check your knowledge
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Three multiple-choice questions
   ms.date: 03/01/2024
   author: qianw211
@@ -42,8 +42,6 @@ quiz:
       isCorrect: false
     - content: "Azure Virtual Rooms"
       isCorrect: true
-    - content: "Azure Spatial Anchors"
-      isCorrect: false
       explanation: "Virtual rooms is not an Azure service."
   - content: "Which application will allow HoloLens employees to collaborate in real time with remote colleagues?"
     choices:  

@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-monitor-data-warehouse-activities-azure-synapse-analytics.use-azure-advisor-to-review-recommendations
 title: Use Azure Advisor to review recommendations
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use Azure Advisor to review recommendations
   description: "Use Azure Advisor to review recommendations"
   ms.date: 06/12/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 9
 content: |
-  [!include[](includes/5-use-azure-advisor-to-review-recommendations.md)]
+  [!include[](includes/5-use-azure-advisor-to-review-recommendations.md)]

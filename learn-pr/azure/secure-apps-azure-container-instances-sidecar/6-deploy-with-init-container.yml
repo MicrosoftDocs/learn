@@ -2,8 +2,6 @@
 uid: learn.azure.azure-container-instances-sidecar.deploy-with-init-container
 title: Deploy Azure Container Instances with an initialization container
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deploy Azure Container Instances with an initialization container
   description: Deploy Azure Container Instances with an initialization container
   ms.date: 07/24/2024
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/6-deploy-with-init-container.md)]
-
+

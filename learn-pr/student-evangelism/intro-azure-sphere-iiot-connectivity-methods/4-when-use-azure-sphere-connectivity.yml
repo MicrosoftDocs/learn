@@ -2,8 +2,6 @@
 uid: learn.oxford.industrial-iot-connectivity.when-use-azure-sphere-connectivity
 title: When to use Azure Sphere connectivity
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: When to use Azure Sphere connectivity
   description: In this section, we explain whether Azure Sphere is right choice of your IoT solution.
   ms.date: 06/16/2021
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 6 # dummy number at present
 content: |
   [!include[](includes/4-when-use-azure-sphere-connectivity.md)]
-
+

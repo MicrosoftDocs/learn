@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-git-hooks.introduction-to
 title: Introduction to Git hooks
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction to Git hooks
   description: "Introduction to Git hooks"
   ms.date: 05/08/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-introduction-to.md)]
+  [!include[](includes/2-introduction-to.md)]

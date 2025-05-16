@@ -2,8 +2,6 @@
 uid: learn.azure.improve-api-performance-with-apim-caching-policy.5-exercise-configure-a-caching-policy
 title: Exercise - Configure a caching policy
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Configure a caching policy
   description: In this unit, you create a new instance of API Management and configure it to use an external API cache.
   ms.date: 07/12/2023
@@ -15,4 +13,4 @@ azureSandbox: false
 interactive: bash
 content: |
   [!include[](includes/5-exercise-configure-a-caching-policy.md)]
-
+

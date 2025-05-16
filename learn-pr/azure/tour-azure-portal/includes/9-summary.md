@@ -1,7 +1,7 @@
 We've covered a lot in this module.
 
 - You learned how to sign into Azure using an Azure account.
-- You reviewed the features of the Azure portal and its customization options.
+- You reviewed the Azure portal's features and customization options.
 - You learned how to work with panes to perform tasks like creating a new resource.
 - You created, customized, and shared a dashboard.
 

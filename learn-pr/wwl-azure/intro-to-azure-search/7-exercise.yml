@@ -2,13 +2,11 @@
 uid: learn.azure-introduction-to-azure-search.exercise
 title: Exercise - Explore an Azure AI Search index (UI)
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore an Azure AI Search index (UI)
   description: Exercise - Explore an Azure AI Search index (UI)
   author: wwlpublish
   ms.author: sheryang
-  ms.date: 07/25/2024
+  ms.date: 04/25/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

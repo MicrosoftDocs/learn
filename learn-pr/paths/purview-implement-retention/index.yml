@@ -1,0 +1,32 @@
+### YamlMime:LearningPath
+uid: learn.wwl.purview-implement-retention
+metadata:
+  title: 'Implement and manage Microsoft 365 retention and recovery (SC-401)'
+  description: 'Retention helps organizations meet compliance requirements and manage the lifecycle of data in Microsoft 365. This learning path shows how to configure retention labels and policies, apply them with adaptive scopes, and recover deleted content in Microsoft 365 workloads. It aligns with exam SC-401: Microsoft Information Security Administrator.'
+  ms.date: 05/14/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: learning-path
+title: 'Implement and manage Microsoft 365 retention and recovery'
+prerequisites: |
+  - Foundational knowledge of Microsoft security and compliance technologies
+  - Basic knowledge of Microsoft 365 data governance capabilities
+summary: |
+  Learn how to manage the data lifecycle in Microsoft 365 using retention policies and labels. Understand how to configure and apply retention settings that meet organizational requirements for preserving or deleting content across Microsoft 365 services.
+iconUrl: /training/achievements/implement-information-governance.svg
+levels:
+- intermediate
+roles:
+- auditor
+- administrator
+- ip-admin
+products:
+- microsoft-purview
+subjects:
+- security
+modules:
+- learn.wwl.purview-understand-retention
+- learn.wwl.purview-retention-recovery
+
+trophy:
+  uid: learn.wwl.purview-implement-retention.trophy

@@ -1,8 +1,12 @@
-﻿You'll use the instructions below to create and configure Azure Firewall and Route Table.
+﻿> [!IMPORTANT] 
+
+> Try our Secure Outbound Internet Connectivity click-through demo. This demo shows how to use Azure vNET with Route Server, a network virtual appliance (NVA), and Azure Firewall to inspect and manage traffic originating from Azure VMware Solution and heading to the internet. [Try now](https://regale.cloud/microsoft/play/4174/secure-outbound-internet-connectivity#/0/0)
+
+Use the following instructions to create and configure Azure Firewall and Route Table.
 
 ## Deploy Azure Firewall
 
-Follow the instructions below to create a new Azure Firewall.
+Follow the instructions to create a new Azure Firewall.
 
 ```azurecli
 az network vnet subnet create  -n AzureFirewallSubnet -g <resource-group-name> --vnet-name <vnet-name>  --address-prefix 10.0.1.0/24
@@ -18,7 +22,7 @@ az network firewall update  --name <name-of-firewall>  --resource-group <resourc
 
 ## Create route & route table
 
-Follow the steps below to create a new route table and route.
+Follow the steps to create a new route table and route.
 
 ```azurecli
 az network route-table create  --name <firewall-route-table-name>  --resource-group <resource-group-name>  --location <your-preferred-azure-region> --disable-bgp-route-propagation true
@@ -32,10 +36,10 @@ az network route-table route create --resource-group <resource-group-name>  --na
 
 ## Associate route table with the Azure Firewall's subnet
 
-Use the command below to apply Route Table and Route on the subnet, which is used to deploy Azure Firewall:
+Use the following command to apply Route Table and Route on the subnet, which is used to deploy Azure Firewall:
 
 ```azurecli
 az network vnet subnet update  --name AzureFirewallSubnet  --resource-group <resource-group-name>   --vnet-name <vnet-name>  --route-table <firewall-route-table-name>
 ```
 
-After setting up Azure Firewall, you'll look at how to generate a default route, which enables internet connectivity through Azure Firewall, in next unit.
+After setting up Azure Firewall, you'll look at how to generate a default route, which enables internet connectivity through Azure Firewall, in the next unit.

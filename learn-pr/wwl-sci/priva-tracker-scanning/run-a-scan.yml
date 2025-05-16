@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.priva-tracker-scanning.run-a-scan
+title: Run scans in Microsoft Priva Tracker Scanning
+metadata:
+  title: Run scans in Microsoft Priva Tracker Scanning
+  description: "Run scans in Microsoft Priva Tracker Scanning"
+  ms.date: 01/24/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/run-a-scan.md)]

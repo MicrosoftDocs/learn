@@ -1,8 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.install-configure-visual-studio-code.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  hidden_question_numbers: ["73D49A2F_10","73D49A2F_14","73D49A2F_22","73D49A2F_26","73D49A2F_30","73D49A2F_42","73D49A2F_46","73D49A2F_58","73D49A2F_6","73D49A2F_62","73D49A2F_66","73D49A2F_74","73D49A2F_103","73D49A2F_119","73D49A2F_79","73D49A2F_91","73D49A2F_95","73D49A2F_124","73D49A2F_136","73D49A2F_140","73D49A2F_148","73D49A2F_152","73D49A2F_156"]
+  ai_generated_module_assessment: true
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 06/03/2024
   author: wwlpublish

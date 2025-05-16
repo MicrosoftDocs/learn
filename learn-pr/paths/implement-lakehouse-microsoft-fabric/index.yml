@@ -1,10 +1,10 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-lakehouse-microsoft-fabric
 metadata:
-  title: Implement a Lakehouse with Microsoft Fabric DP-601T00
-  description: This learning path introduces the foundational components of implementing a data lakehouse with Microsoft Fabric. (DP-601T00)
-  ms.date: 12/04/2024
-  author: angierudduck
+  title: Implement a Lakehouse with Microsoft Fabric
+  description: Implement a Lakehouse with Microsoft Fabric
+  ms.date: 03/19/2025
+  author: wwlpublish
   ms.author: anrudduc
   ms.topic: learning-path
 title: Implement a Lakehouse with Microsoft Fabric
@@ -12,7 +12,7 @@ prerequisites: |
   You should be familiar with basic data concepts and terminology.
 summary: |
   This learning path introduces the foundational components of implementing a data lakehouse with Microsoft Fabric.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/implement-lakehouse-microsoft-fabric.svg
 levels:
 - intermediate
 roles:

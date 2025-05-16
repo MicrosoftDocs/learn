@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.priva-understand-microsoft-priva.priva-overview
+title: Microsoft Priva overview
+metadata:
+  title: Microsoft Priva overview
+  description: "Microsoft Priva overview"
+  ms.date: 01/17/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/priva-overview.md)]

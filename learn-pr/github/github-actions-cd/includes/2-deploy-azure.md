@@ -1,4 +1,4 @@
-This unit discusses how to use GitHub actions to deploy a container-based web app to Microsoft Azure Web Apps. It covers some options for triggering a workflow. Next, learn how to work with conditionals in the workflow. Finally, learn about how to create and delete Azure resources by using GitHub Actions.
+This unit discusses how to use GitHub actions to deploy a container-based web app to Microsoft Azure Web Apps. It covers some options for triggering a workflow. Next, you learn how to work with conditionals in the workflow. Finally, you learn about how to create and delete Azure resources by using GitHub Actions.
 
 ## Options for triggering a CD workflow
 
@@ -6,7 +6,7 @@ There are several options for starting a CD workflow. In the previous module on 
 
 One option is to trigger the workflow with *ChatOps*. ChatOps uses chat clients, chatbots, and real-time communication tools to run tasks. For example, you might leave a specific comment in a pull request that can kick off a bot. That bot might comment back with some statistics or run a workflow.
 
-Another option, and the one we use in our example, is to use labels in your pull request. Different labels can start different workflows. For example, add a *stage* label to begin a deployment workflow to your staging environment. Or, add a *spin up environment* label to run the workflow that creates the Microsoft Azure resources for you to deploy to. To use labels, your workflow looks like this:
+Another option, and the one we use in our example, is to use labels in your pull request. Different labels can start different workflows. For example, add a *stage* label to begin a deployment workflow to your staging environment, or add a *spin up environment* label to run the workflow that creates the Microsoft Azure resources for you to deploy to. To use labels, your workflow looks like this:
 
 ```yml
 on:
@@ -16,9 +16,9 @@ on:
 
 ## Control execution with a job conditional
 
-Often, you only want to run a workflow if some condition is true.
+Often, you only want to run a workflow if a certain condition is true.
 
-GitHub workflows provide the `if` conditional for this scenario. The conditional uses an [expression](https://docs.github.com/actions/learn-github-actions/expressions) that is evaluated at runtime. For example, you want to run this workflow if a *stage* label is added to the pull request.
+GitHub workflows provide the `if` conditional for this scenario. The conditional uses an [expression](https://docs.github.com/actions/learn-github-actions/expressions) that's evaluated at runtime. For example, you want to run this workflow if a *stage* label is added to the pull request.
 
 ```yml
 if: contains(github.event.pull_request.labels.*.name, 'stage')
@@ -26,13 +26,13 @@ if: contains(github.event.pull_request.labels.*.name, 'stage')
 
 ## Store credentials with GitHub Secrets
 
-You never want to expose sensitive information in the workflow file. GitHub Secrets is a secure place to store sensitive information that your workflow needs. Here's an example.
+You never want to expose sensitive information in the workflow file. GitHub Secrets is a secure place to store sensitive information that your workflow needs. Here's an example:
 
 In order to deploy to an Azure resource, the GitHub Action must have permission to access the resource. You don't want to store your Azure credentials in plain sight in the workflow file. Instead, you can store your credentials in GitHub Secrets.
 
 To store information in GitHub Secrets, create a secret on the portal.
 
-:::image type="content" source="../media/2-secrets.png" alt-text="Azure portal interface for creating a secret." border="true":::
+:::image type="content" source="../media/2-secrets.png" alt-text="Screenshot of the GitHub portal interface for creating a secret." border="true":::
 
 Then, use the name of the secret you created in your workflow wherever you need that information. For example, use the Azure credential that was stored in GitHub Secrets in the `creds:` attribute of an Azure `login` action.
 
@@ -48,14 +48,14 @@ steps:
 
 The [GitHub Marketplace](https://github.com/marketplace?type=actions&query=azure&azure-portal=true) has several actions that help you automate Azure-related tasks.
 
-:::image type="content" source="../media/2-marketplace-azure.png" alt-text="The GitHub Marketplace showing search results for Azure." border="true":::
+:::image type="content" source="../media/2-marketplace-azure.png" alt-text="Screenshot of the GitHub Marketplace showing search results for Azure." border="true":::
 
 You can also search and browse GitHub Actions directly in a repository's workflow editor. From the sidebar, you can search for a specific Action, view featured Actions, and browse featured categories.
 
 To find an Action:
 
 1. In your repository, browse to the workflow file that you want to edit.
-1. Select the **Edit** icon in the upper right corner of the file view.
+1. Select the **Edit** icon in the upper-right corner of the file view.
 1. Use the GitHub Marketplace sidebar to the right of the editor to browse Actions.
 
 Suppose you want to deploy a container-based web app to Azure Web Apps. If you search the GitHub Marketplace, you find these actions:
@@ -96,7 +96,7 @@ If you add these actions to the `Deploy-to-Azure` job, your workflow looks like 
 
 Notice that this job depends on a previous job, `Build-Docker-Image`. The previous job creates the artifact that gets deployed.
 
-The [azure/login@v1](https://github.com/Azure/login?azure-portal=true) action needs credentials to sign in to your Azure account so that it can access the Azure resources that you want to deploy to. Here, use the credentials that we stored in GitHub Secrets.
+The [azure/login@v1](https://github.com/Azure/login?azure-portal=true) action needs credentials to sign in to your Azure account so that it can access the Azure resources to which you want to deploy. Here, use the credentials that we stored in GitHub Secrets.
 
 The same is true for the [azure/docker-login@v1](https://github.com/Azure/docker-login?azure-portal=true) action. Since you're deploying a container image, you need to sign in to your private container registry.
 
@@ -104,7 +104,7 @@ The [azure/webapps-deploy@v1](https://github.com/Azure/webapps-deploy?azure-port
 
 ## Create and delete Azure resources by using GitHub Actions
 
-Because CD is an automated process, you already decided to use infrastructure as code to create and take down the environments you deploy to. GitHub Actions can automate these tasks on Azure, and you can include these actions in your workflow.
+Because CD is an automated process, you've already decided to use infrastructure as code to create and take down the environments you deploy to. GitHub Actions can automate these tasks on Azure, and you can include these actions in your workflow.
 
 > [!NOTE]
 >Remember that it's important to tear down resources that you're no longer using as soon as possible to avoid unnecessary charges.
@@ -128,7 +128,7 @@ jobs:
     ...
 ```
 
-The jobs use the Azure CLI to create and destroy the Azure resources. For more information about Azure CLI, see [Overview of Azure CLI](/cli/azure/).
+The jobs use the Azure CLI to create and destroy the Azure resources. For more information about Azure CLI, see [Overview of Azure CLI](/cli/azure/what-is-azure-cli).
 
 Here's an example of the steps in the `set-up-azure-resources` job:
 

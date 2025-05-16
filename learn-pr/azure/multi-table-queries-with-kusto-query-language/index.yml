@@ -4,13 +4,13 @@ metadata:
   moduleType: standard
   title: Write multi-table queries by using Kusto Query Language
   description: Learn how to write Kusto Query Language (KQL) queries to combine and retrieve data from two or more tables by using the `lookup`, `join`, and `union` operators.
-  ms.date: 01/03/2024
+  ms.date: 03/07/2025
   author: shsagir
   ms.author: shsagir
   ms.topic: module
   ms.service: kusto
 title: Write multi-table queries by using Kusto Query Language
-summary: Write advanced queries in Kusto Query Language to gain deeper insights by combining data from several tables. Learn how to use the table-level operators `lookup`, `join`, `union`, and `materialize`, and the new aggregation functions `arg_min` and `arg_max`. Also, learn how to communicate these results visually in charts.
+summary: Write advanced queries in Kusto Query Language and gain deeper insights by combining data from several tables. Learn how to use the table-level operators `lookup`, `join`, `union`, and `materialize`, and the new aggregation functions `arg_min` and `arg_max`. Also, learn how to communicate these results visually in charts.
 abstract: |
   By the end of this module, you're able to:
     - Use Kusto Query Language to combine and retrieve data from two or more tables by using the `lookup`, `join`, and `union` operators.

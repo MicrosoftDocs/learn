@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.provide-disaster-recovery-replicate-storage-data
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Provide disaster recovery by replicating storage data across regions and failing over to a secondary location
   description: Learn how to provide disaster recovery by replicating storage data across regions and failing over to a secondary location.
   manager: akashdubey
@@ -39,4 +37,4 @@ units:
 - learn.azure.provide-disaster-recovery-replicate-storage-data.summary
 badge:
   uid: learn.azure.provide-disaster-recovery-replicate-storage-data.badge
-
+

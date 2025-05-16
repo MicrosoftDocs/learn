@@ -197,7 +197,7 @@ After you deploy the Azure CycleCloud web application to an Azure VM, you can co
 
 ## Task 5: Add an Azure subscription to Azure CycleCloud
 
-To manage resources in your Azure subscription, Azure CycleCloud requires a certain level of permissions. The simplest option to address this requirement is to assign the Contributor role in the subscription to the Azure VM hosting the CycleCloud application. This option works if you enabled the system-assigned managed identity for that Azure VM. Because you configured this setting during the Azure VM deployment in the first task of this exercise, this is the approach you take.
+To manage resources in your Azure subscription, Azure CycleCloud requires a certain level of permissions. The simplest option is to assign the Contributor role and the Storage Blob Data Contributor role in the subscription to the system-assigned identity of the Azure VM hosting the CycleCloud application. (Alternatively, you can create a user-assigned identity, associate it with the VM, and use that identity in the steps below.)
 
 > [!NOTE]
 > CycleCloud doesn't require all permissions associated with the Contributor role. You have the option of defining a custom, more restrictive RBAC role and assigning it to the Azure VM hosting the CycleCloud application. This allows you to apply the principle of least privilege. For details, refer to [Using Managed Identities with CycleCloud](https://learn.microsoft.com/azure/cyclecloud/how-to/managed-identities?preserve-view=true&view=cyclecloud-8#create-a-custom-role-and-managed-identity-for-cyclecloud).
@@ -215,6 +215,18 @@ To manage resources in your Azure subscription, Azure CycleCloud requires a cert
     | Setting | Value |
     | --- | --- |
     | Role | Select the **Contributor** entry under **Privileged administrator roles**. |
+    | Assign access to | Select **Managed Identity**. |
+    | Select members | Select **Virtual Machine** in the **Managed Identity** dropdown and **cyclecloud-vm** under **Select**. |
+
+1. In the list of results, select the entry representing the **cyclecloud-vm** Azure VM, and then select **Save**.
+
+1. Once back on the **Access control (IAM)** page, select **+ Add**, and in the drop-down menu, select **Add role assignment** to add another role.
+
+1. In the **Add role assignment** section, configure the following settings (leave others with their default values):
+
+    | Setting | Value |
+    | --- | --- |
+    | Role | Select the **Storage Blob Data Contributor** entry under **Job function roles**. |
     | Assign access to | Select **Managed Identity**. |
     | Select members | Select **Virtual Machine** in the **Managed Identity** dropdown and **cyclecloud-vm** under **Select**. |
 

@@ -6,7 +6,4 @@ To run applications and supporting services, an AKS cluster needs at least one n
 
 AKS groups nodes of the same configuration into *node pools* of VMs that run AKS workloads. User node pools serve the primary purpose of hosting workload pods. If you want to have only one node pool in your AKS cluster, for example in a development environment, you can schedule application pods on the system node pool.
 
-:::image type="content" source="../media/node-resource-interactions-fd4c9576.png" alt-text="Diagram showing an Azure Kubernetes node.":::
-
-
 You can also create multiple user node pools to segregate different workloads on different nodes.

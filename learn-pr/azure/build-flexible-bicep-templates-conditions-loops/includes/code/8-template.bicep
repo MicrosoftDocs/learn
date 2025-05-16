@@ -44,7 +44,7 @@ module databases 'modules/database.bicep' = [for location in locations: {
   }
 }]
 
-resource virtualNetworks 'Microsoft.Network/virtualNetworks@2024-01-01' = [for location in locations: {
+resource virtualNetworks 'Microsoft.Network/virtualNetworks@2024-05-01' = [for location in locations: {
   name: 'teddybear-${location}'
   location: location
   properties:{

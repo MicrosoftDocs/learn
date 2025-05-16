@@ -1,6 +1,6 @@
-One of Azure Cosmos DB for NoSQL’s advantages as a data store, is its flexibility to store data with varying structures and shapes. As the developer crafting queries for this data, the responsibility for type checking will often fall on your queries. The SQL query language for the NoSQL API includes a suite of built-in functions to make it possible for you to check the types of properties or expressions on the fly when they are variable or unknown.
+One of Azure Cosmos DB for NoSQL’s advantages as a data store, is its flexibility to store data with varying structures and shapes. As the developer crafting queries for this data, the responsibility for type checking often falls on your queries. The SQL query language for the NoSQL API includes a suite of built-in functions to make it possible for you to check the types of properties or expressions on the fly when they're variable or unknown.
 
-Up until now, we have had a sample data structure that is well known and understood. But let’s consider some possible exceptions.
+Up until now, the sample data structure is simple and easy to understand. But let’s consider some possible exceptions.
 
 Each **product** item in the container has a property named **tags**. The tags property is an array of objects with **id** and **name** properties. The assumption, until now, is that the tags array always exists for every product in the container. But if we remove that baseline assumption, we could have a situation where a new product item is inserted into the container without a tag property such as this example:
 

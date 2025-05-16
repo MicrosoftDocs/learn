@@ -1,0 +1,19 @@
+### YamlMime:ModuleUnit
+uid: learn.java-on-azure-container-apps.4-enhance-spring-boot-application
+title: Exercise - Maintain Spring Boot application
+metadata:
+  title: Exercise - Maintain Spring Boot application
+  description: In this unit, you use the built-in Java stack to enhance your Spring Boot application on Azure Container Apps.
+  author: KarlErickson
+  ms.author: karler
+  ms.reviewer: hangwan
+  ms.date: 02/18/2025
+  ms.topic: unit
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-java
+    - devx-track-extended-java
+  ms.contributors: hangwan97
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-enhance-spring-boot-application.md)]
