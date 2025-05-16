@@ -65,17 +65,17 @@ You can select **Update** for more details on the configured permissions for you
 - **Implement role-based access control (RBAC)** to ensure only authorized team members can create, update, or delete secrets.
 - **Monitor access logs regularly** to identify and respond to unauthorized usage or suspicious activity.
 
-## Manage Encrypted Secrets at the Repository Level
+## Manage encrypted secrets at the repository level
 To scope a secret to a specific repository, use GitHub Enterprise Cloud or GitHub Enterprise Server.
 
-### Create a Repository-Level Secret
+### Create a repository-level secret
 1. **Navigate** to the repository’s **Settings**.
 2. **Select** **Secrets and variables > Actions**, then **New repository secret**.
 3. **Enter** a name and value for the secret.
 
 :::image type="content" source="../media/secret-repo.png" alt-text="New secret screen for repositories." border="false":::
 
-### Manage Repository-Level Encrypted Secrets via CLI
+### Manage repository-level encrypted secrets via CLI
 
 * **List repository secrets:**
 
@@ -96,7 +96,7 @@ To scope a secret to a specific repository, use GitHub Enterprise Cloud or GitHu
   ```
 
 
-## Access Encrypted Secrets Within Actions and Workflows
+## Access encrypted secrets within actions and workflows
 
 ### In Workflows
 
@@ -154,9 +154,9 @@ Security hardening for GitHub Actions plays a role in keeping your software supp
 
 Some best practices for mitigating script injection attacks on GitHub actions include:
 
-1. *Use javascript actions instead of inline scripts*: Use JavaScript actions that accept context values as arguments instead of embedding those values in inline scripts. This approach reduces the risk of script injection because the context data is not used to generate or execute shell commands directly.
+1. *Use Javascript actions instead of inline scripts*: Use JavaScript actions that accept context values as arguments instead of embedding those values in inline scripts. This approach reduces the risk of script injection because the context data is not used to generate or execute shell commands directly.
 
-Passing a variable as an input to a JavaScript action helps prevent it from being used in a script injection attack.
+   Passing a variable as an input to a JavaScript action helps prevent it from being used in a script injection attack.
 
    ```yml
     uses: fakeaction/checktitle@v3
@@ -165,7 +165,7 @@ Passing a variable as an input to a JavaScript action helps prevent it from bein
    ```
 
 2. *Use intermediate environment variables in inline scripts*: When using inline scripts, evaluate variables as environment variables before using them in commands. This approach ensures the values are resolved before the script runs, reducing the risk of script injection.
-For example, using `github.event.pull_request.title` as an environment variable helps protect against injection vulnerabilities:
+   For example, using `github.event.pull_request.title` as an environment variable helps protect against injection vulnerabilities:
 
     ```yml
     - name: Check PR title
@@ -180,18 +180,18 @@ For example, using `github.event.pull_request.title` as an environment variable 
           exit 1
           fi
     ```
-:::image type="content" source="../media/manage-encrypted-secrets_pr.png" alt-text="Screenshot showing a pull request interface related to managing encrypted secrets." border="false":::
+   :::image type="content" source="../media/pull-request.png" alt-text="Screenshot showing a pull request interface related to managing encrypted secrets." border="true":::
 
-:::image type="content" source="../media/manage-encrypted-secrets_workflow.png" alt-text="Screenshot showing a GitHub Actions workflow execution related to encrypted secrets." border="false":::
+   :::image type="content" source="../media/workflow.png" alt-text="Screenshot showing a GitHub Actions workflow execution related to encrypted secrets." border="true":::
 
 3. **Leverage workflow templates to implement code scanning**:
    **Navigate** to the repository’s **Actions** tab and select the **New Workflow** button on the left pane. On the **Choose a workflow** page, **locate** the **Security** section to access and apply workflow templates.
 
-Configure the CodeQL scanner to run on specific events, enabling it to scan a branch's files and flag exposures CWEs(Common Weakness Enumerations) in actions used within workflows, including vulnerabilities such as script injection.
+   Configure the CodeQL scanner to run on specific events, enabling it to scan a branch's files and flag exposures CWEs(Common Weakness Enumerations) in actions used within workflows, including vulnerabilities such as script injection.
 
-:::image type="content" source="../media/manage-encrypted-secrets_newworkflow.png" alt-text="Screenshot showing the creation of a new GitHub Actions workflow for managing encrypted secrets." border="false":::
+   :::image type="content" source="../media/new-workflow.png" alt-text="Screenshot showing the creation of a new GitHub Actions workflow for managing encrypted secrets." border="true":::
 
-:::image type="content" source="../media/manage-encrypted-secrets_codeql.png" alt-text="Screenshot showing CodeQL configuration related to managing encrypted secrets." border="false":::
+   :::image type="content" source="../media/codeql.png" alt-text="Screenshot showing CodeQL configuration related to managing encrypted secrets." border="true":::
 
 4. *Restrict permissions for tokens*: Ensure you always apply the `rule of least privilege` to any created token.  In other words, ensure the token is assigned the minimum privileges to achieve the task for which it was created.
 
@@ -228,7 +228,7 @@ Use trusted actions to reduce risk in your workflows.
 - **Check documentation:**
   The `action.yml` file should be well documented and clearly describe how the action works.
 
-:::image type="content" source="../media/manage-encrypted-secrets_marketplace.png" alt-text="Screenshot showing the GitHub Marketplace interface for managing encrypted secrets." border="false":::
+:::image type="content" source="../media/marketplace.png" alt-text="Screenshot showing the GitHub Marketplace interface for managing encrypted secrets." border="false":::
 
 ### Use Dependabot version updates to keep actions up to date
 
@@ -236,7 +236,7 @@ Enable Dependabot version updates to automatically keep your GitHub Actions depe
 
 ### Potential impact of a compromised runner
 
-This section describe possible attack vectors that could be exploited if a runner is compromised.
+This section describes possible attack vectors that could be exploited if a runner is compromised.
 
 #### Exfiltration of data from a runner
 
@@ -287,53 +287,54 @@ When workflows require access to multiple repositories, it's important to choose
 
 1. **`GITHUB_TOKEN`**
 
-GitHub automatically generates the `GITHUB_TOKEN` for each workflow run. It is scoped to the single repository that triggers the workflow and provides permissions equivalent to a write-access user on that repository. The token is created at the start of each job and expires when the job completes.
+   GitHub automatically generates the `GITHUB_TOKEN` for each workflow run. It is scoped to the single repository that triggers the workflow and provides permissions equivalent to a write-access user on that repository. The token is created at the start of each job and expires when the job completes.
 
-Use the `GITHUB_TOKEN` whenever possible for secure and scoped authentication.
-For details, see [Automatic token authentication](https://docs.github.com/en/actions/security-for-github-actions/security-guides/automatic-token-authentication).
+   Use the `GITHUB_TOKEN` whenever possible for secure and scoped authentication.
+   For details, see [Automatic token authentication](https://docs.github.com/en/actions/security-for-github-actions/security-guides/automatic-token-authentication).
 
 2. **Repository deploy key**
 
-To clone or push using Git within workflows, use deploy keys that provide read or write access to a single repository.
+   To clone or push using Git within workflows, use deploy keys that provide read or write access to a single repository.
 
 However, deploy keys do not support access to GitHub's REST or GraphQL APIs. Use them only when API access is not required and Git access is sufficient.
 
 3. **GitHub App tokens**
 
-GitHub Apps offer fine-grained permissions and can be installed on selected repositories. You can create an internal GitHub App, install it on the necessary repositories, and authenticate as the app installation within your workflow to access those repositories.
+   GitHub Apps offer fine-grained permissions and can be installed on selected repositories. You can create an internal GitHub App, install it on the necessary repositories, and authenticate as the app installation within your workflow to access those repositories.
 
 This approach provides better access control and auditing compared to personal tokens.
 
 4. **Personal access tokens (PATs)**
 
-Avoid using classic personal access tokens in workflows. These tokens grant broad access across all personal and organizational repositories associated with the user, introducing significant risk. If the workflow runs in a repository with multiple contributors, all write-access users effectively inherit that token’s privileges.
+   Avoid using classic personal access tokens in workflows. These tokens grant broad access across all personal and organizational repositories associated with the user, introducing significant risk. If the workflow runs in a repository with multiple contributors, all write-access users effectively inherit that token’s privileges.
 
 If you must use a personal token, create a **fine-grained PAT** tied to a dedicated organizational account. Restrict its access to only the specific repositories required by the workflow.
-Note: This approach is difficult to scale and is best avoided in favor of deploy keys or GitHub Apps.
+> [!NOTE]
+> This approach is difficult to scale and is best avoided in favor of deploy keys or GitHub Apps.
 
-:::image type="content" source="../media/manage-encrypted-secrets_personalaccesstoken.png" alt-text="Screenshot showing a button to generate new GitHub personal access token." border="false":::
+:::image type="content" source="../media/personal-access-token.png" alt-text="Screenshot showing a button to generate new GitHub personal access token." border="false":::
 
 5. **SSH keys on personal accounts**
 
-Never use SSH keys from personal accounts in workflows. Like classic PATs, they grant access to all repositories associated with the account, including personal and organizational repositories. This mistake exposes workflows to unnecessary risk.
+   Never use SSH keys from personal accounts in workflows. Like classic PATs, they grant access to all repositories associated with the account, including personal and organizational repositories. This mistake exposes workflows to unnecessary risk.
 
 If your use case involves cloning or pushing via Git, consider using deploy keys instead. They provide scoped access without exposing unrelated repositories or requiring personal credentials.
 
 ### Audit GitHub Action events
 
-The type of action, when it was run, and which personal account performed the action are recorded in the 'security log' and the 'audit log'.  The 'security log' records events related to your user account.  The 'audit log' records events related to your organization.  Thus by viewing both of these logs you can audit events related to github actions.
+The type of action, when it was run, and which personal account performed the action are recorded in the 'security log' and the 'audit log'.  The 'security log' records events related to your user account.  The 'audit log' records events related to your organization.  Thus by viewing both of these logs you can audit events related to Github actions.
 
 ### Using OIDC with GitHub Actions
 
 You can configure workflows to authenticate directly with a cloud provider using OIDC (OpenID Connect). In this case, there is no longer the need to store credentials as secrets.  
 
-### Artifact attestions for GitHub Actions
+### Artifact attestations for GitHub Actions
 
 Artifact attestations help establish the provenance of builds, improving software supply chain security by verifying what was built, where, and how.
 
 #### What to attest
 
-With GitHub Actions, you can attest to build provenance & SBOM's (Software Bill of Materials) for binaries and container images.
+With GitHub Actions, you can attest to build provenance & SBOM (Software Bill of Materials) for binaries and container images.
 
 #### Generating artifact attestations for builds
 
@@ -344,7 +345,7 @@ When you generate an artifact attestation for builds, you must ensure:
 
 The attestation establishes build provenance. You can view attestations in the repository's **Actions** tab. 
 
-:::image type="content" source="../media/manage-encrypted-secrets_attestations.png" alt-text="Screenshot showing attestations configuration in GitHub related to managing encrypted secrets." border="false":::
+:::image type="content" source="../media/attestations.png" alt-text="Screenshot showing attestations configuration in GitHub related to managing encrypted secrets." border="false":::
 
 ##### Generating an attestation for build provenance of binaries
 
@@ -364,7 +365,8 @@ The attestation establishes build provenance. You can view attestations in the r
          subject-path: 'PATH/TO/ARTIFACT'
      ```
 
->Note that the value of the `subject-path` parameter is set to the path of the binary you attest.
+> [!NOTE]
+> Note that the value of the `subject-path` parameter is set to the path of the binary you attest.
 
 ##### Generating an attestation for the build provenance of container images
 
@@ -388,14 +390,14 @@ The attestation establishes build provenance. You can view attestations in the r
        subject-digest: 'sha256:fedcba0...'
        push-to-registry: true
    ```
-
-> * The `subject-name` value must be a fully qualified image name, such as `ghcr.io/user/app` or `acme.azurecr.io/user/app`. Do **not** include a tag.
-> * The `subject-digest` must be a SHA256 digest of the image, in the format `sha256:HEX_DIGEST`.
-> * If your workflow uses `docker/build-push-action`, you can retrieve the digest from its output. For details, refer to [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#jobsjob_idoutputs).
+   > [!NOTE]
+   > * The `subject-name` value must be a fully qualified image name, such as `ghcr.io/user/app` or `acme.azurecr.io/user/app`. Do **not** include a tag.
+   > * The `subject-digest` must be a SHA256 digest of the image, in the format `sha256:HEX_DIGEST`.
+   > * If your workflow uses `docker/build-push-action`, you can retrieve the digest from its output. For details, refer to [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#jobsjob_idoutputs).
 
 #### Generating attestations for SBOMs
 
-You have the ability to generate SBOM attestions for an SBOM.  To generate and attest to an SBOM you must carry out the following steps:
+You have the ability to generate SBOM attestations for an SBOM.  To generate and attest to an SBOM you must carry out the following steps:
 
 - Ensure you set the appropriate permissions in the workflow, as shown in the examples.
 - You must generate an SBOM for the artifact in a step in the workflow.  For an example, see anchore-sbom-action in the GitHub Marketplace.
@@ -446,7 +448,7 @@ Note that the value of the `subject-path` parameter should be set to the path of
           push-to-registry: true
     ```
 
-Note that the value of the `subject-name` parameter specifies the fully-qualified image name. For example, `ghcr.io/user/app` or `acme.azurecr.io/user/app`. Do not include a tag as part of the image name.
+Note that the value of the `subject-name` parameter specifies the fully qualified image name. For example, `ghcr.io/user/app` or `acme.azurecr.io/user/app`. Do not include a tag as part of the image name.
 
 The value of the `subject-digest` parameter should be set to the `SHA256` digest of the subject for the attestation, in the form's `sha256:HEX_DIGEST`. If your workflow uses `docker/build-push-action`, you can use the digest output from that step to supply the value (see [build-push-action](https://github.com/docker/build-push-action?tab=readme-ov-file#outputs)). For more information on using outputs, see [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#jobsjob_idoutputs).
 
@@ -458,7 +460,6 @@ You can validate the artifact attestations outlined above using the GitHub CLI. 
 
 > [!WARNING]
 > It is important to remember that artifact attestations are not a guarantee that an artifact is secure. Instead, artifact attestations link you to the source code and the build instructions that produced them. It is up to you to define your policy criteria, evaluate that policy by evaluating the content, and make an informed risk decision when you are consuming software.
->
 
 ### Access encrypted secrets within actions and workflows
 
