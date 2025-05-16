@@ -47583,6 +47583,11 @@
       "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/4-configure-behavior.md",
       "redirect_url": "/credentials/certifications/azure-ai-engineer/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/3-configure-loop.md",
+      "redirect_url": "/credentials/certifications/azure-ai-engineer/",
+      "redirect_document_id": false
     }
   ]
 }
