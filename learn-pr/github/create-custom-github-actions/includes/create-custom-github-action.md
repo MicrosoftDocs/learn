@@ -2,7 +2,7 @@ GitHub Actions is a powerful feature that helps you to go from code to cloud, al
 
 ## Types of GitHub actions
 
-:::image type="content" source="../media/action-types.png" alt-text="Diagram that displays the three types of GitHub Actions; Docker, JavaScript, and composite run steps actions." border="false":::
+:::image type="content" source="../media/action-types.png" alt-text="Diagram of the three types of GitHub Actions; Docker, JavaScript, and composite run steps actions." border="false":::
 
 Actions are individual tasks that you can use to customize your development workflows. You can create your own actions by writing custom code that interacts with your repository to perform custom tasks, or by using actions the GitHub community shares. Navigating through various actions, you'll notice that there are three different types of actions: _Docker container actions_, _JavaScript actions_, and _composite run steps actions_. Let's take a closer look at each action type.
 
@@ -32,7 +32,6 @@ The steps to build a JavaScript action are minimal and straightforward:
 ### Composite run steps actions
 
 Composite run steps actions allow you to reuse actions by using shell scripts. You can even mix multiple shell languages within the same action. If you have many shell scripts to automate several tasks, you can now easily turn them into an action and reuse them for different workflows. Sometimes it's easier to just write a shell script than using JavaScript or wrapping your code in a Docker container.
-
 
 # Packaged composite action
 
@@ -79,7 +78,7 @@ runs:
 ```        
 **Note:** The using: **"composite"** field indicates that this action is a composite action.
 
-### 3. Using the composite action in a workflow  
+### 3. Use the composite action in a workflow  
 Once the composite action is created, it can be referenced in a GitHub Actions workflow.
 ```yaml
 jobs:
@@ -96,9 +95,9 @@ If your composite action is shared from **another repository**, reference it lik
 uses: owner/repository/.github/actions/my-composite-action@v1
 ```
 
-:::image type="content" source="../media/composite-action-in-a-workflow.png" alt-text="Composite action used in a workflow." border="false":::
+:::image type="content" source="../media/composite-action-in-a-workflow.png" alt-text="Screenshot of a composite action used in a workflow." border="false":::
 
-## Adding outputs to a composite action
+## Add outputs to a composite action
 Composite actions can define outputs that workflows can use to pass data between steps or jobs. Outputs are particularly useful for sharing results or computed values from one action to another.
 
 The following example demonstrates how to define and use an output in a composite action:
@@ -120,7 +119,7 @@ runs:
       run: echo "result=Success" >> $GITHUB_OUTPUT
       shell: bash
 ```
-:::image type="content" source="../media/define-an-output-in-action.png" alt-text="Define an output in a composite action." border="false":::
+:::image type="content" source="../media/define-an-output-in-action.png" alt-text="Screenshot of defining an output in a composite action." border="false":::
 
 #### Use the output in a workflow
 
@@ -164,7 +163,7 @@ Composite actions are a powerful way to simplify workflows by bundling multiple 
 - **Maintainability** - Reduce duplication by centralizing logic in a single action.  
 - **Modularity** - Combine multiple shell commands or other actions into a single unit. 
 
-# Develop an action to set up a CLI on GitHub Actions runners
+## Develop an action to set up a CLI on GitHub Actions runners
 Many CI/CD workflows require a **specific version of a CLI tool** to interact with cloud services, manage infrastructure, or execute scripts. While GitHub-hosted runners come preinstalled with many tools, they may not include the exact version your workflow needs, especially if it's an older or unsupported version. Instead of installing the required CLI version in every workflow, you can create a **reusable GitHub Action** that:
 
 - Ensures consistent installation of the required CLI version across jobs.  
@@ -182,7 +181,7 @@ To manually create the directory for your CLI setup action, follow these steps:
 
 1. **Navigate to your repository**  
 
-:::image type="content" source="../media/javascript-action-root-repo.png" alt-text="Root repository structure showing .github/actions/my-cli-action directory for a JavaScript action." border="false":::
+:::image type="content" source="../media/javascript-action-root-repo.png" alt-text="Screenshot of the root repository structure showing for a JavaScript action." border="false":::
 
 2. **Create a new directory for the action**  
   Create a new directory named `my-cli-action` inside the `.github/actions` folder. This ensures your action is organized and follows GitHub's recommended structure for custom actions.  
@@ -199,7 +198,7 @@ To manually create the directory for your CLI setup action, follow these steps:
   │   │   ├── my-cli-action/
   ```
 
-:::image type="content" source="../media/javascript-action-directory.png" alt-text="Directory structure for a JavaScript action inside .github/actions." border="false":::
+:::image type="content" source="../media/javascript-action-directory.png" alt-text="Screenshot of directory structure for a JavaScript action inside '.github/actions.' " border="false":::
 
 You are now ready to proceed with creating the `action.yml` file and other necessary files for your CLI setup action.
 
@@ -224,7 +223,7 @@ runs:
 Why use *using: node16?*
 This action runs JavaScript code using Node.js 16.
 
-:::image type="content" source="../media/javascript-action-yaml.png" alt-text="YAML metadata file for a JavaScript GitHub Action." border="false":::
+:::image type="content" source="../media/javascript-action-yaml.png" alt-text="Screenshot of YAML metadata file for a JavaScript GitHub Action." border="false":::
 
 ### Step 3: Create a JavaScript script to install the CLI
 In the same directory, create a file named index.js and add the following code:
@@ -250,7 +249,7 @@ run();
 ```
 The JavaScript code above uses core.getInput() to retrieve the CLI version specified as input. It then executes a curl command to download and install the CLI. If the installation process fails, the action uses core.setFailed() to mark the workflow as failed.
 
-:::image type="content" source="../media/javascript-action-index-js.png" alt-text="JavaScript code for index.js in a GitHub Action." border="false":::
+:::image type="content" source="../media/javascript-action-index-js.png" alt-text="Screenshot of JavaScript code for index.js in a GitHub Action." border="false":::
 
 ### Step 4: Test the action locally
 Before using the action in a workflow, test it on a GitHub-hosted runner.   
@@ -264,7 +263,7 @@ on:
       - main
       - feature/*
 ```
-**a. Triggering the workflow**    
+**1. Triggering the workflow**    
 The workflow is triggered on pushes to the main branch and any branch matching the feature/* pattern. You can adjust this to match your repository's branching strategy.
 
 ```yaml
@@ -275,7 +274,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 ```
-**b. Checkout the repository**   
+**2. Clone the repository**   
  The *actions/checkout@v4* action is used to clone the repository onto the runner. This ensures that the workflow has access to the repository's files.
 
 ```yaml
@@ -284,7 +283,7 @@ jobs:
         with:
           version: '1.2.3'
 ```
-**c. Run the custom action**   
+**3. Run the custom action**   
 The uses: *./.github/actions/my-cli-action* line references the custom action locally. Ensure that the action directory and action.yml file are correctly set up. The version input specifies the CLI version to install—in this case, version 1.2.3.
 
 ```yaml
@@ -293,12 +292,12 @@ The uses: *./.github/actions/my-cli-action* line references the custom action lo
           echo "Checking MyCLI version..."
           mycli --version
 ```
-**d. Verify the CLI installation**   
+**4. Verify the CLI installation**   
 This step runs a shell command to verify that the CLI was installed successfully. It checks the version of the installed CLI by running mycli --version.
 
-:::image type="content" source="../media/javascript-action-test.png" alt-text="Screenshot showing the test results of a JavaScript GitHub Action." border="false":::
+:::image type="content" source="../media/javascript-action-test.png" alt-text="Screenshot of the test results of a JavaScript GitHub Action." border="false":::
 
-### Testing locally
+### Test locally
 To test this workflow locally, use the [`act`](https://github.com/nektos/act) CLI tool:
 ```bash
 act -j test
@@ -324,7 +323,6 @@ This ensures that subsequent runs reuse the cached CLI installation, reducing se
 | **Handle Errors Properly** | Use `core.setFailed()` to exit on errors.                                   |
 | **Cache CLI Installation** | Optimize workflow performance using `actions/cache`.                       |
 | **Provide Documentation**  | Explain usage and inputs in `README.md`.                                    |
-
 
 # Troubleshoot JavaScript actions
 
@@ -363,7 +361,7 @@ To enable **runner diagnostic logs**, set:
 ACTIONS_RUNNER_DEBUG=true
 ```
 
-### How to set secrets for debugging
+### Set secrets for debugging
 1. Go to your GitHub repository.
 2. Navigate to **Settings** > **Secrets and variables** > **Actions**.
 3. Add new secrets with the following names and values:
@@ -434,9 +432,7 @@ Docker container actions are powerful for encapsulating complex tools and enviro
 ## Understand the Docker action lifecycle
 
 Before troubleshooting, it's helpful to understand how Docker container actions run.
-![
- (github-docker-workflow-blue.png)
-]
+:::image type="content" source="github-docker-workflow-blue.png" alt-text="Diagram showing how Docker container actions run in a GitHub Actions workflow." border="false":::
 
  Note: Docker container actions run in a clean, isolated environment. File system state, installed tools, and environment variables must all be defined within the Dockerfile.
 
@@ -628,7 +624,7 @@ branding:
 
 Here's an example of a Checkout action badge on the GitHub Marketplace:
 
-:::image type="content" source="../media/actions-branding.png" alt-text="Screenshot that shows an action's branding on the GitHub Marketplace.":::
+:::image type="content" source="../media/actions-branding.png" alt-text="Screenshot of an action's branding on the GitHub Marketplace.":::
 
 ## Workflow commands
 
