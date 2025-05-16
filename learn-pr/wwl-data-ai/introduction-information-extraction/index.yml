@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-information-extraction
+metadata:
+  title: Introduction to AI-powered information extraction concepts
+  description: "Introduction to AI-powered information extraction concepts"
+  ms.date: 5/9/2025
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: module
+  ai-usage: ai-assisted
+  ms.service: azure
+title: Introduction to AI-powered information extraction concepts
+summary: Introduction to AI-powered information extraction
+abstract: Learn concepts of information extraction and search. 
+prerequisites: Ability to navigate the Azure portal
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- data-scientist
+- developer
+- solution-architect
+- student
+products:
+- ai-services
+units:
+- learn.wwl.introduction-information-extraction.introduction
+- learn.wwl.introduction-information-extraction.overview
+- learn.wwl.introduction-information-extraction.vision-extraction
+- learn.wwl.introduction-information-extraction.form-extraction
+- learn.wwl.introduction-information-extraction.multimodal-extraction
+- learn.wwl.introduction-information-extraction.knowledge-mining
+- learn.wwl.introduction-information-extraction.knowledge-check
+- learn.wwl.introduction-information-extraction.summary
+badge:
+  uid: learn.wwl.introduction-content-understanding.badge
