@@ -1,6 +1,6 @@
-In this unit, you'll make sure that your Azure DevOps organization is set up to complete the rest of this module. You'll also create the Azure App Service environments that you'll deploy to.
+In this unit, make sure that your Azure DevOps organization is set up to complete the rest of this module. You also create the Azure App Service environments that you deploy to.
 
-To accomplish these goals, you'll:
+To accomplish these goals, you do these tasks:
 
 > [!div class="checklist"]
 > * Add a user to ensure Azure DevOps can connect to your Azure subscription.
@@ -15,16 +15,16 @@ To accomplish these goals, you'll:
 
 To complete this module, you need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). You can get started with Azure for free.
 
-Although you don't need an Azure subscription to work with Azure DevOps, this exercise is using Azure DevOps to deploy to Azure resources in your Azure subscription. To simplify the process, use the same Microsoft account to sign in to both your Azure subscription and your Azure DevOps organization.
+Although you don't need an Azure subscription to work with Azure DevOps, this exercise uses Azure DevOps to deploy to Azure resources in your Azure subscription. To simplify the process, use the same Microsoft account to sign in to both your Azure subscription and your Azure DevOps organization.
 
 > [!IMPORTANT]
-> If you sign in with different accounts, then you should add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true&tabs=browser). When you add the user, choose the **Basic** access level.
+> If you sign in with different accounts, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true&tabs=browser). When you add the user, choose the **Basic** access level.
 
 Then, sign out of Azure DevOps and sign in with the new user account. Use the Microsoft account that you use to sign in to your Azure subscription.
 
 ## Get the Azure DevOps project
 
-Make sure that your Azure DevOps organization is set up to complete the rest of this module. To do so, you'll run a template that creates a project in Azure DevOps.
+Make sure that your Azure DevOps organization is set up to complete the rest of this module. To do so, run a template that creates a project in Azure DevOps.
 
 The modules in this learning path form a progression as you follow the Tailspin web team through their DevOps journey. For learning purposes, each module has its own Azure DevOps project.
 
@@ -39,7 +39,7 @@ Run a template that sets up your Azure DevOps organization.
 1. Choose your authentication method. You can [set up and use a Personal Access Token (PAT)](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate#create-a-pat) or use device login.
 
     > [!NOTE]
-    > If you set up a PAT, make sure to authorize the necessary [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes). For this module, you can use **Full access**, but in a real-world situation, you should ensure you grant only the necessary scopes.
+    > If you set up a PAT, make sure to authorize the necessary [scopes](/azure/devops/integrate/get-started/authentication/oauth#scopes). For this module, you can use **Full access**, but in a real-world situation, you should grant only the necessary scopes.
 
 1. Enter your Azure DevOps organization name, then press **Enter**.
 
@@ -47,7 +47,7 @@ Run a template that sets up your Azure DevOps organization.
 
 1. Enter a project name such as *Space Game - web - Azure Functions*, then press **Enter**.
 
-1. Once your project is created, go to your Azure DevOps organization in your browser (at `https://dev.azure.com/<your-organization-name>/`) and select the project.
+1. After your project is created, go to your Azure DevOps organization in your browser (at `https://dev.azure.com/<your-organization-name>/`) and select the project.
 
 ### Fork the repository
 
@@ -60,13 +60,13 @@ If you haven't already, create a fork of the **mslearn-tailspin-spacegame-web-az
 1. Choose your GitHub account as the **Owner**, then select **Create fork**.
 
 > [!IMPORTANT]
-> The [Clean up your Azure DevOps environment](/training/modules/deploy-azure-functions/5-clean-up-environment?azure-portal=true) page in this module contains **important steps** that you must complete, even if you don't complete this module. Cleaning up helps ensure that you don't run out of free build minutes. 
+> The [Clean up your Azure DevOps environment](/training/modules/deploy-azure-functions/5-clean-up-environment?azure-portal=true) page in this module contains **important steps** that you must complete, even if you don't complete this module. Cleaning up helps ensure that you don't run out of free build minutes.
 
 [!INCLUDE [](../../shared/includes/project-visibility.md)]
 
 ## Assign a work item and move it to the Doing state
 
-Here, you'll assign a work item to yourself on Azure Boards and set the work item state to **Doing**. In practice, you and your team would create work items at the start of each *sprint*, or work iteration.
+Here, you assign a work item to yourself on Azure Boards and set the work item state to **Doing**. In practice, you and your team would create work items at the start of each *sprint*, or work iteration.
 
 This exercise creates a checklist from which to work. It gives other team members visibility into what you're working on and how much work is left. The work item also helps enforce work-in-progress (WIP) limits so that the team doesn't take on too much work at one time.
 
@@ -75,7 +75,7 @@ This exercise creates a checklist from which to work. It gives other team member
     :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="Azure DevOps showing the location of the Boards menu.":::
 
 1. Open the **Refactor leaderboard API as an Azure Function** work item by selecting the title. Assign this work item to yourself, and then select **Save & Close**.
- 
+
 1. Select the down arrow at the bottom of the card and select **Doing** *or* select the card and drag it to the Doing column.
 
     :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="Screenshot of work item card highlighting the location of the down arrow.":::
@@ -84,15 +84,15 @@ This exercise creates a checklist from which to work. It gives other team member
 
     :::image type="content" source="../media/3-azure-boards-wi1-doing.png" alt-text="Screenshot of Azure Boards highlighting the work item card in the Doing column.":::
 
-At the end of this module, you'll move the card to the **Done** column after you complete the task.
+At the end of this module, move the card to the **Done** column after you complete the task.
 
 ## Create the Azure App Service and Azure Functions environments
 
-Here, you'll create the App Service and Azure Functions app required to deploy the new version of the site and API.
+Here, you create the App Service and Azure Functions app required to deploy the new version of the site and API.
 
 In the [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true) Learn module, you brought up App Service through the Azure portal. Although the portal is a great way to explore what's available on Azure or to do basic tasks, bringing up components such as App Service can be tedious.
 
-In this module, you use the Azure CLI to bring up an App Service instance. You can access the Azure CLI from a terminal or through Visual Studio Code. Here, we'll access the Azure CLI from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
+In this module, you use the Azure CLI to bring up an App Service instance. You can access the Azure CLI from a terminal or through Visual Studio Code. Used Azure CLI from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
 
 > [!IMPORTANT]
 > You need your own Azure subscription to complete the exercises in this module.
@@ -105,7 +105,7 @@ In this module, you use the Azure CLI to bring up an App Service instance. You c
 
     :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" alt-text="A screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
 
-    A terminal opens and connects to the Azure Cloud Shell. 
+    A terminal opens and connects to the Azure Cloud Shell.
 
 1. If necessary, select **Bash** from the terminal menu.
 
@@ -116,7 +116,7 @@ In this module, you use the Azure CLI to bring up an App Service instance. You c
 
 A *region* is one or more Azure datacenters within a geographic location. East US, West US, and North Europe are examples of regions. Every Azure resource, including an App Service instance, is assigned a region.
 
-To make commands easier to run, let's start by setting a default region. After you specify the default region, commands you enter use that region until you specify a different region.
+To make commands easier to run, start by setting a default region. After you specify the default region, commands you enter use that region until you specify a different region.
 
 1. From Cloud Shell, run the following `az account list-locations` command to list the regions that are available from your Azure subscription:
 
@@ -142,9 +142,9 @@ To make commands easier to run, let's start by setting a default region. After y
 
 ### Create Bash variables
 
-Here, you'll create Bash variables to make the setup process more convenient and less error-prone. Using variables for shared text strings helps avoid accidental typos.
+Here, create Bash variables to make the setup process more convenient and less error-prone. Using variables for shared text strings helps avoid accidental typos.
 
-1. From Cloud Shell, generate a random number, which we will use to create globally unique names for certain services in the next step.
+1. From Cloud Shell, generate a random number, which you use to create globally unique names for certain services in the next step.
 
     ```bash
     resourceSuffix=$RANDOM
@@ -167,10 +167,10 @@ Here, you'll create Bash variables to make the setup process more convenient and
 
 ### Create the Azure resources required
 
-Our solution requires several Azure resources for deployment, which we'll create now.
+Your solution requires several Azure resources for deployment, which you create now.
 
    > [!NOTE]
-   > This exercise uses the default network settings, so that your site is accessible from the internet. In practice, you could configure an Azure virtual network to put your website in a network that only you and your team can access. Later, you could reconfigure your virtual network to make the website available to your users.
+   > This exercise uses the default network settings, so your site is accessible from the internet. In practice, you could configure an Azure virtual network to put your website in a network that only you and your team can access. Later, you could reconfigure your virtual network to make the website available to your users.
 
 1. Run the following `az group create` command to create a resource group using the name defined earlier:
 
@@ -232,7 +232,7 @@ Our solution requires several Azure resources for deployment, which we'll create
       --output table
     ```
 
-    Note the host name for your running service. It should look similar to the following, but the random-number identifier will differ. You'll need the web host name later when you verify your work.
+    Note the host name for your running service. It should look similar to the following, but with a different random-number. You need the web host name later when you verify your work.
 
     ```output
     HostName                                        State
@@ -249,7 +249,7 @@ Our solution requires several Azure resources for deployment, which we'll create
       --output table
     ```
 
-    Note the host name for your running service. It should look similar to the following, but the random number identifier will differ. You'll need the leaderboard host name later when you verify your work.
+    Note the host name for your running service. It should look similar to the following, but with a different random number identifier. You need the leaderboard host name later when you verify your work.
 
     ```output
     HostName                                                State
@@ -266,11 +266,11 @@ Our solution requires several Azure resources for deployment, which we'll create
 
 ## Create pipeline variables in Azure Pipelines
 
-In the [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true) module, you added a variable to your pipeline that stores the name of your web app in App Service. Here, you'll do the same. In addition, you'll add the name of your leaderboard app for the Azure Functions instance.
+In the [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true) module, you added a variable to your pipeline that stores the name of your web app in App Service. Here, do the same. Also, add the name of your leaderboard app for the Azure Functions instance.
 
-You could hard-code these names in your pipeline configuration, but if you define them as variables, your configuration will be more reusable. Plus, if the names of your instances change, you can update the variables and trigger your pipeline without modifying your configuration.
+You could hard-code these names in your pipeline configuration, but if you define them as variables, your configuration is more reusable. Plus, if the names of your instances change, you can update the variables and trigger your pipeline without modifying your configuration.
 
-Let's add a variable group to your project.
+Add a variable group to your project.
 
 1. Your **Space Game - web - Azure Functions** project should be open in Azure DevOps.
 
@@ -301,7 +301,7 @@ Let's add a variable group to your project.
 
 ## Create the spike environment
 
-In previous modules, you created environments for **dev**, **test**, and **staging** environments. Here, you'll do the same. This time, you'll create an environment named **spike**.
+In previous modules, you created environments for **dev**, **test**, and **staging** environments. Here, do the same. This time, create an environment named **spike**.
 
 1. From the Azure DevOps menu, under **Pipelines**, select **Environments**.
 
@@ -317,7 +317,7 @@ In previous modules, you created environments for **dev**, **test**, and **stagi
 
 ## Create a service connection
 
-Here, you'll create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service. You created a similar service connection in the previous module.
+Here, you create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service. You created a similar service connection in the previous module.
 
 > [!IMPORTANT]
 > Make sure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.
