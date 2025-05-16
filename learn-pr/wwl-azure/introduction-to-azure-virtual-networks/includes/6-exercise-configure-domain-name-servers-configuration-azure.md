@@ -14,10 +14,10 @@ In this lab, you configure DNS name resolution for Contoso Ltd. You create a pri
 - Verify records are present in the DNS zone.
 
 
-> [!NOTE]
+> [!IMPORTANT]
+> Estimated time: 30 minutes.
 > To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
 
 Launch the exercise, and follow the instructions. When finished, be sure to return to this page so you can continue learning.
-
 
 [![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/Instructions/Exercises/M01-Unit%206%20Configure%20DNS%20settings%20in%20Azure.html)
