@@ -1,4 +1,3 @@
-## Subsea cables and their impact on network architecture
 
 Subsea cables enable high-speed, reliable, and scalable connectivity that support the ever-growing demands of global digital infrastructure, providing high-speed, low latency connectivity across continents. This global reach is essential for multinational companies and cloud service providers.
 
