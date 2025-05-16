@@ -100,11 +100,11 @@ In this task, you start your exploration in the home menu.
 
 #### Task: Explore Prompts to try
 
-In this task, you start exploration in the center portion of the on landing page, where it says Prompts to try.
+In this task, you start exploration in the center portion of the landing page, where it says Prompts to try.
 
 1. If you previously closed the browser tab, reopen the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/7608581a-ee3a-4fe0-be03-309a58b78c60?token=045faae1-1078-4eac-bf56-e12472eddaf9&azure-portal=true)**.
 
-1. Note the options available beneath where it says Prompts to try. Here you can search for prompts or promptbooks, and based on the option you select you can filter for a specific role and/or plugin. Note: in this simulation, you can filter for role or plugin. Filtering for both role and plugin is limited to the SOC Analyst role and the Microsoft Sentinel Plugin. Also, running a prompt or promptbook is not enabled. You will run prompts and promptbooks is subsequent exercises.
+1. Note the options available beneath where it says Prompts to try. Here you can search for prompts or promptbooks, and based on the option you select you can filter for a specific role and/or plugin. In this simulation, you can filter for role or plugin. Filtering for both role and plugin is limited to the SOC Analyst role and the Microsoft Sentinel Plugin. Also, running a prompt or promptbook is not enabled. You will run prompts and promptbooks is subsequent exercises.
 1. Select **Prompts** to view available prompts. Selecting a prompt automatically updates the information displayed in the prompt bar. Select X to cancel. 
 1. Select the title or Get started button on promptbook to view the prompts included in that promptbook. To exit out of that promptbook, select Microsoft Security Copilot from the breadcrumb.
 1. Keep the browser tab open for the next task.

@@ -101,7 +101,7 @@ In the previous task, you provisioned capacity and some initial settings. Now th
         1. Select **Microsoft Security Copilot** from breadcrumb (next to the menu icon).
         1. From the prompt bar, select the **sources icon** ![sources icon](../media/sources-icon.png).
         1. Select **Show 13 more** for the Microsoft plugins.
-        1. Scroll down until to view the Microsoft Purview plugin. Note how the plugin is greyed out. Select the **information icon**.
+        1. Scroll down to view the Microsoft Purview plugin. Note how the plugin is grayed out. Select the **information icon**.
         1. Select the **X** to close the plugins window.
         1. Now repeat the steps to access the plugin settings from the home menu and enable the toggle for Accessing data from Microsoft 365 services.
         1. Return to the landing page and select the sources icon to view the status of the Microsoft Purview plugin.

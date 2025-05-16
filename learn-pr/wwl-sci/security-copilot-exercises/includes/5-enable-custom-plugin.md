@@ -25,7 +25,7 @@ For this exercise, you are using a sample .yaml file, 'KQL_DefenderExample.yaml.
 
 1. Select the **Download raw file ![download raw file icon](../media/raw-file-download-icon-v2.png)** icon. Save the file on your local computer, as you'll need it later. 
 
-   Alternatively, because this is a simulation, you can create the file named 'KQL_DefenderExample.yaml.' Because this is a simulation, the contents of the file you create doesn't matter. The system capabilities and prompt responses shown in the simulation, however, are based on the actual file.
+   Alternatively, because this is a simulation, you can create the file named 'KQL_DefenderExample.yaml.' Because this is a simulation, the contents of the file you create don't matter. The system capabilities and prompt responses shown in the simulation, however, are based on the actual file.
 
 
 #### Task: Update owner settings for custom plugins
