@@ -4,10 +4,10 @@ title: Exercise - Manage a machine learning model
 metadata:
   title: Exercise - Manage a machine learning model
   description: "Exercise - Manage a machine learning model"
-  ms.date: 07/17/2024
-  author: wwlpublish
-  ms.author: madiepev
+  ms.date: 4/24/2025
+  author: JulianePadrao
+  ms.author: jupadrao
   ms.topic: unit
 durationInMinutes: 30
 content: |
-  [!include[](includes/6-exercise.md)]
+  [!include[](includes/6-exercise.md)]

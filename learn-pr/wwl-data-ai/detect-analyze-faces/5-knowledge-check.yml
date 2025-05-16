@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 09/13/2024
+  ms.date: 04/25/2025
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit
@@ -46,4 +46,4 @@ quiz:
       explanation: "Correct: The Face resource has face detections capabilities, and can be used in Vision Studio to understand its capabilities."
     - content: "Create a Face resource, and open Azure AI Studio"
       isCorrect: false
-      explanation: "Incorrect: Azure AI Studio doesn't include face detection capabilities."
+      explanation: "Incorrect: Azure AI Studio doesn't include face detection capabilities."

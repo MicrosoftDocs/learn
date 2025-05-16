@@ -1,5 +1,6 @@
 
 
+
 ## Choose a peering scheme
 
 You can use two different peering schemes with ExpressRoute: **Private Peering** and **Microsoft Peering**. 

@@ -4,7 +4,7 @@ title: Exercise - Explore Azure AI Services
 metadata:
   title: Exercise - Explore Azure AI Services
   description: "Exercise - Explore Azure AI Services"
-  ms.date: 10/03/2024
+  ms.date: 04/25/2025
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 15
 content: |
-  [!include[](includes/6-exercise.md)]
+  [!include[](includes/6-exercise.md)]

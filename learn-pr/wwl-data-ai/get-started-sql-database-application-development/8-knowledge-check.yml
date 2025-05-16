@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 10/02/2024
+  ms.date: 4/24/2025
   author: jupadrao
   ms.author: jupadrao
   ms.topic: unit
@@ -55,4 +55,4 @@ quiz:
       explanation: Incorrect. Microsoft Copilot doesn't translate SQL queries into natural language, it translates natural language into SQL queries.
     - content: It enhances SQL management and troubleshooting by offering natural language to SQL conversion and self-help for database administration.
       isCorrect: true
-      explanation: Correct. Microsoft Copilot in Azure SQL Database boosts productivity by translating natural language into SQL and providing self-help for database administration.
+      explanation: Correct. Microsoft Copilot in Azure SQL Database boosts productivity by translating natural language into SQL and providing self-help for database administration.

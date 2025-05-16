@@ -6,7 +6,7 @@ metadata:
   description: Knowledge check
   author: ivorb
   ms.author: berryivor
-  ms.date: 09/04/2024
+  ms.date: 5/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -42,13 +42,13 @@ quiz:
       explanation: "Incorrect. The tier you use for your Azure AI Document Intelligence resource doesn't affect the accuracy of field value extraction."
   - content: "You want to call your Azure AI Document Intelligence solution from a mobile app by using an API. Which of the following programming languages is natively supported as an Azure AI Document Intelligence SDK?"
     choices:
-    - content: "Python"
+    - content: "`Python`"
       isCorrect: true
       explanation: "Correct. Microsoft publishes a Python API you can use to call Azure AI Document Intelligence services."
-    - content: "Go"
+    - content: "`Go`"
       isCorrect: false
       explanation: "Incorrect. There's no Azure AI Document Intelligence API for Go, but you can submit requests through the RESTful web service."
-    - content: "R"
+    - content: "`R`"
       isCorrect: false
       explanation: "Incorrect. There's no Azure AI Document Intelligence API for R, but you can submit requests through the RESTful web service."
   - content: "Which of the following is an Azure AI Document Intelligence prebuilt model?"
@@ -62,4 +62,4 @@ quiz:
     - content: "Receipt"
       isCorrect: true
       explanation: "Correct. The receipt model can identify commonly used fields and their values in scanned or photographed receipt documents."
-
+

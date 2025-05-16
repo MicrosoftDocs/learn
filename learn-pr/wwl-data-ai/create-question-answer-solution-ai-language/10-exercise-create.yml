@@ -4,9 +4,9 @@ title: Exercise - Create a question answering solution
 metadata:
   title: Exercise - Create a question answering solution
   description: Exercise - Create a question answering solution
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 08/25/2024
+  ms.date: 05/01/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -15,4 +15,4 @@ labId: 152405
 labModal: true
 content: |
   [!include[](includes/10-exercise-create.md)]
-
+

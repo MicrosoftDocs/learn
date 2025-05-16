@@ -5,7 +5,7 @@ metadata:
   unitType: introduction
   title: Introduction
   description: Introductory unit of the Introduction to Azure API Management module
-  ms.date: 04/07/2023
+  ms.date: 04/21/2025
   author: dlepow
   ms.author: danlep
   ms.topic: unit
@@ -13,4 +13,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction.md)]
-
+

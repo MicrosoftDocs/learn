@@ -33,6 +33,7 @@ Register the function with your agent using the Azure AI SDK:
 functions = FunctionTool(user_functions)
 toolset = ToolSet()
 toolset.add(functions)
+project_client.agents.enable_auto_function_calls(toolset=toolset)
 
 # Create your agent with the toolset
 agent = project_client.agents.create_agent(

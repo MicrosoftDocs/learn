@@ -5,7 +5,7 @@ metadata:
   description: Analyze images with the Azure AI Vision service.
   author: wwlpublish
   ms.author: sheryang
-  ms.date: 07/04/2024
+  ms.date: 4/23/2025
   ms.service: azure
   ai-usage: human-only
   ms.topic: module
@@ -38,4 +38,4 @@ units:
 - learn.wwl.analyze-images-computer-vision.summary
 badge:
   uid: learn.wwl.analyze-images-computer-vision.badge
-
+

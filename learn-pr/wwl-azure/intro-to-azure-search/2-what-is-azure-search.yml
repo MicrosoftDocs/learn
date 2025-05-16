@@ -6,7 +6,7 @@ metadata:
   description: Explore Azure Cognitive Search, its concepts and how to create a search index
   author: wwlpublish
   ms.author: sheryang
-  ms.date: 07/25/2024
+  ms.date: 04/25/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -15,4 +15,4 @@ labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/2-what-is-azure-search.md)]
-
+

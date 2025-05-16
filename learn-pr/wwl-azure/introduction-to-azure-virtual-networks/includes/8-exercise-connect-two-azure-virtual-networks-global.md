@@ -6,23 +6,19 @@ In this lab, you configure connectivity between the CoreServicesVnet and the Man
 
 :::image type="content" source="../media/8-exercise-connect-two-azure-virtual-networks-global.png" alt-text="Diagram of the lab virtual network peering.":::
 
-## Objectives
+## Job skills
 
-- **Task 1**: Deploy the infrastructure.  
-  - Use a template to create the virtual machines. You can review the [lab template](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/blob/master/Allfiles/Exercises/M01/ManufacturingVMazuredeploy.json).
-  - Use Azure PowerShell to deploy the template.
-- **Task 2**: Use RDP to connect to the test virtual machines. 
-- **Task 3**: Test the connection between the virtual machines. 
-- **Task 4**: Create VNet peerings.
-- **Task 5**: Retest the connection between the virtual machines.
+- Use a template to deploy the networking infrastructure.  
+- Use RDP to connect to the test virtual machines. 
+- Confirm the virtual machines can't communicate. 
+- Create virtual network peerings.
+- Retest and verify the virtual machines can now communicate.
 
-> [!NOTE]
-> Click on the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning.
 
 > [!NOTE]
-> You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
+> To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
 
-> [!NOTE]
-> You can view the [Connect two Azure Virtual Networks using global virtual network peering](https://microsoftlearning.github.io/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/Instructions/Exercises/M01-Unit%208%20Connect%20two%20Azure%20Virtual%20Networks%20using%20global%20virtual%20network%20peering.html) instructions directly. 
+Launch the exercise, and follow the instructions. When finished, be sure to return to this page so you can continue learning.
 
-[![Screenshot of the simulation page.](../media/simulation-peer-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Connect%20two%20Azure%20virtual%20networks%20using%20global%20virtual%20network%20peering)
+
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/Instructions/Exercises/M01-Unit%208%20Connect%20two%20Azure%20Virtual%20Networks%20using%20global%20virtual%20network%20peering.html)
