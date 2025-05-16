@@ -28,6 +28,8 @@ roles:
 - developer
 subjects:
 - artificial-intelligence
+products:
+  - ai-services
 modules:
 - learn.wwl.analyze-content-ai
 - learn.wwl.analyze-content-ai-api
