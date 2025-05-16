@@ -47613,6 +47613,11 @@
       "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/5-import-export-settings.md",
       "redirect_url": "/credentials/certifications/azure-ai-engineer/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/1-introduction.md",
+      "redirect_url": "/credentials/certifications/azure-ai-engineer/",
+      "redirect_document_id": false
     }
   ]
 }
