@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.wwl.monitor-generative-ai-app
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Analyze and debug your generative AI app with tracing
+  description: Learn how to monitor the performance of your generative AI application using Azure AI Foundry. This module teaches you to track key metrics like latency and token usage to make informed, cost-effective deployment decisions.
+  author: wwlpublish
+  ms.author: madiepev
+  ms.date: 04/30/2025
+  ms.service: azure-ai-services
+  ms.topic: module-standard-task-based
+  ms.collection:
+    - wwl-ai-copilot
+  ms.custom: ai-learning-hub
+title: Analyze and debug your generative AI app with tracing
+summary: "Learn how to monitor the performance of your generative AI application using Azure AI Foundry. This module teaches you to track key metrics like latency and token usage to make informed, cost-effective deployment decisions."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Understand why monitoring is essential when moving Gen AI apps toward production readiness.
+    - Identify and interpret key performance metrics: latency, throughput, token usage, and error rates.
+    - Use Azure Monitor together with Azure AI Foundry to observe and analyze app behavior.
+    - Apply insights to optimize performance, cost, and user experience in Gen AI solutions.
+prerequisites: |
+  Before starting this module, you should be familiar with:
+    - Basic software development concepts
+    - Basic AI concepts
+    - Basic Azure concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles: # see role taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+  - ai-engineer
+products: # see product taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+  - azure
+  - ai-services
+subjects: # see subject taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+  - artificial-intelligence
+  - app-development
+units:
+- learn.wwl.monitor-generative-ai-app.introduction
+- learn.wwl.monitor-generative-ai-app.why-monitor
+- learn.wwl.monitor-generative-ai-app.what-to-monitor
+- learn.wwl.monitor-generative-ai-app.how-to-monitor
+- learn.wwl.monitor-generative-ai-app.prepare-scripts
+- learn.wwl.monitor-generative-ai-app.informed-decisions
+- learn.wwl.monitor-generative-ai-app.exercise
+- learn.wwl.monitor-generative-ai-app.knowledge-check
+- learn.wwl.monitor-generative-ai-app.summary
+badge:
+  uid: learn.wwl.monitor-generative-ai-app.badge
+
