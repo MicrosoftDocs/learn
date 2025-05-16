@@ -158,15 +158,17 @@ You can identify the trigger event in several ways :
 - You can also find the commit SHA, actor, and timestamp to trace what caused the trigger.
 
 ### Inferring the trigger from repository effects
+
 Sometimes you may not have direct access to the workflow run but want to infer what triggered it based on repository activity. Here's how:
+
 | Observed Behavior                                       | Trigger Event           |
-|---------------------------------------------------------|------------------------|
-| A new commit pushed to `main` and workflow ran          | `push` event           |
-| A new pull request opened or updated                    | `pull_request` event   |
-| A contributor manually ran a workflow                   | `workflow_dispatch`    |
-| Workflow runs every night at a specific time            | `schedule` (cron)      |
-| Workflow ran after an external service call             | `repository_dispatch`  |
-| Workflow ran when an issue was labeled or commented on  | `issues.*` event       |
+|---------------------------------------------------------|--------------------------|
+| A new commit pushed to `main` and workflow ran          | `push` event             |
+| A new pull request opened or updated                    | `pull_request` event     |
+| A contributor manually ran a workflow                   | `workflow_dispatch`      |
+| Workflow runs every night at a specific time            | `schedule` (cron)        |
+| Workflow ran after an external service call             | `repository_dispatch`    |
+| Workflow ran when an issue was labeled or commented on  | `issues.*` event         |
 
 By reviewing timestamps, pull request activity, or commit history, you can often pinpoint what action caused the workflow to run.
 ### Summary
