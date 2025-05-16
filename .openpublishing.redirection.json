@@ -47573,6 +47573,11 @@
       "source_path": "learn-pr/azure/create-foundation-modern-apps/index.yml",
       "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/index.md",
+      "redirect_url": "/credentials/certifications/azure-ai-engineer/",
+      "redirect_document_id": false
     }
   ]
 }
