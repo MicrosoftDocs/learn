@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.purview-ediscovery-create-case
+metadata:
+  title: Create and manage eDiscovery cases
+  description: Create and manage eDiscovery cases.
+  ms.date: 05/15/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: module
+  ai-usage: ai-assisted
+  ms.service: purview
+title: Create and manage eDiscovery cases
+summary: |
+  Microsoft Purview eDiscovery provides a case-based structure for managing legal, compliance, and security investigations. Each case acts as a secure workspace for collecting, reviewing, and exporting relevant content. With configurable options for permissions, access, data sources, and analytics, cases help teams enforce control, maintain accountability, and tailor investigations to their organizational needs.
+abstract: |
+  After completing this module, you'll be able to:
+  - Configure prerequisites for using Microsoft Purview eDiscovery
+  - Create and manage eDiscovery cases for investigations
+  - Assign users and guest reviewers to cases with appropriate permissions
+  - Configure case-level settings for search, analytics, and review sets
+prerequisites: |
+  - Familiarity with the Microsoft Purview portal and role-based access control
+  - Basic understanding of organizational data governance and investigations
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- auditor
+products:
+- microsoft-purview
+- m365
+subjects:
+- security
+- compliance
+units:
+- learn.wwl.purview-ediscovery-create-case.introduction
+- learn.wwl.purview-ediscovery-create-case.ediscovery-prerequisites
+- learn.wwl.purview-ediscovery-create-case.create-manage-ediscovery-case
+- learn.wwl.purview-ediscovery-create-case.case-access-permissions
+- learn.wwl.purview-ediscovery-create-case.configure-case-settings
+- learn.wwl.purview-ediscovery-create-case.knowledge-check
+- learn.wwl.purview-ediscovery-create-case.summary
+badge:
+  uid: learn.wwl.purview-ediscovery-create-case.badge
