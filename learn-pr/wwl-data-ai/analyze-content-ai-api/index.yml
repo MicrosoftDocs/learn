@@ -23,7 +23,7 @@ prerequisites: |
   - Have some familiarity with Python and REST APIs.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
-- beginner
+- intermediate
 roles:
 - ai-engineer
 - developer
