@@ -9,13 +9,16 @@ For example, suppose you want to use the business card analyzer discussed previo
 The following Python code submits a request for analysis, and then polls the service until the operation is complete and the results are returned.
 
 ```python
-analyzer_name = "business_card_analyser"
+import json
+import requests
 
 # Read the image data
 with open("business-card.png", "rb") as file:
         image_data = file.read()
     
 ## Use a POST request to submit the image data to the analyzer
+analyzer_name = "business_card_analyser"
+
 headers = {
         "Ocp-Apim-Subscription-Key": "<YOUR_API_KEY>",
         "Content-Type": "application/octet-stream"}
@@ -203,6 +206,8 @@ Here's the complete JSON response for the business card analysis:
 Your application must typically parse the JSON to retrieve field values. For example, the following python code extracts all of the *string* values:
 
 ```python
+# (continued from previous code example)
+
 # Iterate through the fields and extract the names and type-specific values
 contents = result_json["result"]["contents"]
 for content in contents:
