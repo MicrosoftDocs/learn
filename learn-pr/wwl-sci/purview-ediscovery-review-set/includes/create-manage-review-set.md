@@ -117,4 +117,4 @@ Review sets are where investigative teams do their most detailed analysis. By or
 
 Use the **Create and manage review sets interactive guide** interactive guide to walk through creating a review set.
 
-[:::image type="content" source="../media/guide-create-manage-review-set.png" alt-text="Screenshot showing the opening page to the Create and manage review sets interactive guide." lightbox="../media/guide-create-manage-review-set.png":::](https://mslearn.cloudguides.com/guides/Create%20and%20manage%20review%20sets%20with%20Microsoft%20Purview%20eDiscovery?azure-portal=true)
+[:::image type="content" source="../media/guide-create-manage-review-set.png" alt-text="Screenshot showing the opening page to the Create and manage review sets interactive guide.":::](https://mslearn.cloudguides.com/guides/Create%20and%20manage%20review%20sets%20with%20Microsoft%20Purview%20eDiscovery?azure-portal=true)
