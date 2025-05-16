@@ -13,11 +13,11 @@ After you've provisioned an Azure AI services resource, you need the following i
 
 You can obtain these values from the Azure portal, as shown in the following image:
 
-![Screenshot of the Azure AI services settings in the Azure portal](../media/azure-portal.png)
+![Screenshot of the Azure AI services settings in the Azure portal.](../media/azure-portal.png)
 
  If you're working within an Azure AI Foundry project, you can find the endpoint and key for the associated Azure AI services resource in the Azure AI Foundry portal, as shown in the following image:
 
-![Screenshot of the Azure AI services settings in the Azure AI Foundry portal](../media/azure-ai-services.png)
+![Screenshot of the Azure AI services settings in the Azure AI Foundry portal.](../media/azure-ai-services.png)
 
 When working in an Azure AI Foundry project, you can also write code that uses the Azure AI Foundry SDK to connect to the project using Microsoft Entra ID authentication, and retrieve the connection details for the Azure AI services resource; including the endpoint and key.
 
