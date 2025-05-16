@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ai-information-extraction.azure-ai-services
+title: Azure AI services for information extraction
+metadata:
+  title: Azure AI services for information extraction
+  description: Choose the right Azure AI service for information extraction.
+  author: graememalcolm
+  ms.author: gmalc
+  ms.date: 05/11/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-azure-ai-services.md)]
+

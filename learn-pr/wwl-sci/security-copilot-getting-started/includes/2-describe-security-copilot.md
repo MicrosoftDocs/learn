@@ -26,7 +26,7 @@ These use cases represent just a few of the capabilities that Copilot delivers a
 
 You can experience Copilot through the dedicated site, also referred to as the standalone experience. Users interact with Copilot through the prompt bar. In the prompt bar, users make requests in natural language and receive response outputs as text, images, or documents.
 
-:::image type="content" source="../media/copilot-landing-page-prompt-bar.png" lightbox="../media/copilot-landing-page-prompt-bar.png" alt-text="Screenshot that shows the landing page for the Security Copilot standalone experience. The prompt bar is at the bottom center of the page.":::
+:::image type="content" source="../media/copilot-new-landing-page.png" lightbox="../media/copilot-new-landing-page.png" alt-text="Screenshot that shows the landing page for the Security Copilot standalone experience. The prompt bar is at the bottom center of the page.":::
 
 Additionally, some Microsoft security products embed Copilot capabilities directly within the products’ user interface. This experience is referred to as the embedded experience. Microsoft Defender XDR, for example, enables Copilot capabilities including summarizing incidents, analyzing scripts, generating KQL queries, and more.
 

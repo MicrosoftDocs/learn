@@ -4,7 +4,7 @@ title: Exercise - Run the UI tests locally and in the pipeline
 metadata:
   title: Exercise - Run the UI tests locally and in the pipeline
   description: Run the Selenium UI tests locally and then in the pipeline.
-  ms.date: 04/02/2024
+  ms.date: 05/07/2025
   author: steved0x
   ms.author: sdanie
   ms.custom: devdivchpfy22
@@ -12,4 +12,4 @@ metadata:
 durationInMinutes: 13
 content: |
   [!include[](includes/6-run-ui-tests.md)]
-
+
