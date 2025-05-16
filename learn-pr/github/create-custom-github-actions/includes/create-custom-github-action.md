@@ -432,9 +432,36 @@ Docker container actions are powerful for encapsulating complex tools and enviro
 ## Understand the Docker action lifecycle
 
 Before troubleshooting, it's helpful to understand how Docker container actions run.
-:::image type="content" source="github-docker-workflow-blue.png" alt-text="Diagram showing how Docker container actions run in a GitHub Actions workflow." border="false":::
 
- Note: Docker container actions run in a clean, isolated environment. File system state, installed tools, and environment variables must all be defined within the Dockerfile.
+### 1. Workflow Trigger
+
+A GitHub Actions workflow starts in response to a configured event—such as a `push`, `pull_request`, or manual `workflow_dispatch`.
+
+### 2. Runner Setup
+
+GitHub provisions a fresh virtual machine (the **runner**) to execute the workflow. The runner prepares the environment by downloading action definitions and resolving dependencies.
+
+### 3. Action Resolution
+
+If the action specifies `runs.using: docker` in its `action.yml` file, GitHub recognizes it as a Docker-based action.
+
+### 4. Image Build or Pull
+
+GitHub builds the Docker image defined in the action’s `Dockerfile` or pulls a prebuilt image if specified. This image defines the environment in which the action code runs.
+
+### 5. Container Execution
+
+The runner launches the Docker container, mounts the workspace, and injects environment variables, including secrets and inputs defined in the workflow.
+
+### 6. Entrypoint Runs
+
+GitHub executes the `entrypoint` command from the Dockerfile inside the container. This is where the custom action logic runs, typically a script or application.
+
+### 7. Result Handling
+
+Any outputs set by the container action are captured by the runner and passed along to subsequent steps in the workflow. Once complete, the container shuts down and the runner is discarded.
+
+> Note: Docker container actions run in a clean, isolated environment. File system state, installed tools, and environment variables must all be defined within the Dockerfile.
 
 ### Debugging techniques
 #### 1. Add Logging
