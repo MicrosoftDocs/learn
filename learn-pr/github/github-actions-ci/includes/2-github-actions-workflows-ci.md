@@ -78,7 +78,7 @@ Beyond individual npm commands, teams can benefit from reusable workflows to str
 <!-- InfoMagnus Starts -->
 <!-- INFOMAGNUS UPDATES for sub OD 1.5.9. Source Material: https://docs.github.com/en/actions/sharing-automations/reusing-workflows -->
 ## How to utilize reusable workflows to avoid duplication
- As teams scale and projects grow, it's common to see the same steps such as code checkout, dependency installation, testing, and deployment—repeated across multiple workflow files. This kind of duplication not only clutters your codebase but also increases maintenance time when changes are needed. Reusable workflows solve this problem by allowing you to define automation logic once and call it from other workflows. Reusable workflows are special GitHub Actions workflows that can be called by other workflows, much like functions in programming. You create them with the purpose of sharing repeated logic like build steps, testing procedures, or deployment strategies. Once created, you can reference them from any other workflow in the same repository or even across different repositories.
+ As teams scale and projects grow, it's common to see the same steps, such as code checkout, dependency installation, testing, and deployment—repeated across multiple workflow files. This kind of duplication not only clutters your codebase but also increases maintenance time when changes are needed. Reusable workflows solve this problem by allowing you to define automation logic once and call it from other workflows. Reusable workflows are special GitHub Actions workflows that can be called by other workflows, much like functions in programming. You create them to share repeated logic like build steps, testing procedures, or deployment strategies. Once created, you can reference them from any other workflow in the same repository or even across different repositories.
  
 :::image type="content" source="../media/reusable-workflow.png" alt-text="Diagram illustrating the concept of reusable workflows in GitHub Actions, showing how a central workflow can be referenced by multiple repositories or workflows." border="true":::
 
@@ -88,7 +88,7 @@ Beyond individual npm commands, teams can benefit from reusable workflows to str
 - Ease of Updates: When a process changes (e.g., a new test step), you update it in one place, and all workflows using it benefit automatically.
 - Scalability: Ideal for platform or DevOps teams managing multiple services.
 
-Let's explore how you can start using reusable workflows to improve your projects.
+Let's explore how to use reusable workflows to improve your projects.
 
 ###  How to implement reusable workflows
 To utilize reusable workflows:
@@ -139,12 +139,13 @@ A workflow trigger is an event that causes a workflow to start. GitHub supports 
 
 ### Where to identify the trigger event?
 You can identify the trigger event in several ways :  
+
 1 . From the GitHub Actions UI
 - Navigate to the Actions tab in your repository.
 - Click on a workflow run.
 - The event type (e.g., push, pull_request, workflow_dispatch) is displayed at the top of the workflow run summary.
 
-2 . Using github.event_name in Logs or Workflow
+2 . Using github.event_name in Logs or workflow
 - GitHub exposes context data during a workflow run. The github.event_name variable tells you which event triggered the workflow.
 - You can print it in a step for debugging:
 
@@ -152,7 +153,7 @@ You can identify the trigger event in several ways :
 -name: Show event trigger
   run: echo "Triggered by ${{ github.event_name }}"
 ```
-3 . Using Workflow Run Details
+3 . Using workflow Run details
 - If you're inspecting workflow runs programmatically (e.g., via the API), the run object includes an event property that specifies the trigger.
 - You can also find the commit SHA, actor, and timestamp to trace what caused the trigger.
 
@@ -179,7 +180,7 @@ These practices help with debugging, auditing, and improving workflow reliabilit
 ## Describe a workflow's effects from reading its configuration file
 To describe a workflow's effects from reading its configuration file, you need to analyze the structure and contents of the .yml file stored in .github/workflows/. This file outlines when the workflow runs, what it does, and how it behaves under different conditions.
 ### How to interpret a workflow's effects:
-1 . Identify the Trigger (on:)
+1 . Identify the trigger (on:)
 This section tells you when the workflow is initiated. For example:
 ```yml
 on:
@@ -194,7 +195,7 @@ Effect:
 - Runs when a pull request is created or updated.
 - Can also be triggered manually by a user
 
-2 . Understand the Jobs and Steps (jobs:)
+2 . Understand the jobs and steps (jobs:)
 Jobs describe what the workflow will do. For instance:
 ```yml
 jobs:
@@ -214,11 +215,11 @@ Effect:
 - Installs project dependencies.
 - Runs automated tests.
 
-3 . Evaluate the Purpose and Outcome
-By reading the configuration, you can describe the intended outcome of the workflow:
-“This workflow is a Continuous Integration (CI) pipeline. Its effect is to ensure that any new code pushed to the repository or submitted via pull request is automatically tested. If tests fail, the workflow will indicate this in the GitHub UI, helping maintain code quality.”
+3 . Evaluate the purpose and outcome
+- By reading the configuration, you can describe the intended outcome of the workflow:
+“This workflow is a Continuous Integration (CI) pipeline. It ensures that any new code pushed to the repository or submitted via pull request is automatically tested. If tests fail, the workflow will indicate this in the GitHub UI, helping maintain code quality.”
 
-4 . Optional Features Affecting Behavior
+4 . Optional features affecting behavior
 - env: sets environment variables.
 - if: adds conditional logic to run certain steps only when criteria are met.
 - timeout-minutes: or continue-on-error: influence execution behavior and error handling.
@@ -251,7 +252,7 @@ For example, a failed test might show npm ERR! Test failed. or exit code 1.
 
 ### 3. Check the workflow configuration file
 Use the .yml file to determine:
-- What each step was trying to do.
+- What was each step trying to do?
 - If there are environment variables (env:) or conditionals (if:) affecting execution.
 - If the failure is due to a missing dependency, syntax error, or misconfigured step.
 
