@@ -32,6 +32,7 @@ levels:
 roles:
 - student
 units:
+- learn.philanthropies.describe-best-practices-datacenter-operations.introduction
 - learn.philanthropies.describe-best-practices-datacenter-operations.datacenter-monitoring
 - learn.philanthropies.describe-best-practices-datacenter-operations.key-aspects-datacenter-monitoring
 - learn.philanthropies.describe-best-practices-datacenter-operations.datacenter-maintenance
