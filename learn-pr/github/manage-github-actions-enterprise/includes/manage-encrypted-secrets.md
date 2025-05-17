@@ -154,7 +154,7 @@ Security hardening for GitHub Actions plays a role in keeping your software supp
 
 Some best practices for mitigating script injection attacks on GitHub actions include:
 
-1. *Use Javascript actions instead of inline scripts*: Use JavaScript actions that accept context values as arguments instead of embedding those values in inline scripts. This approach reduces the risk of script injection because the context data is not used to generate or execute shell commands directly.
+1. *Use Javascript actions instead of inline scripts*: Use Javascript actions that accept context values as arguments instead of embedding those values in inline scripts. This approach reduces the risk of script injection because the context data is not used to generate or execute shell commands directly.
 
    Passing a variable as an input to a JavaScript action helps prevent it from being used in a script injection attack.
 
@@ -523,7 +523,7 @@ Many enterprises integrate GitHub Actions with external secret management soluti
     azureCredentials: ${{ secrets.AZURE_CREDENTIALS }}
 ```
 
-### Benefits of using third-Party vaults
+### Benefits of using third-party vaults
 - **Centralized secret management** reduces security risks.  
 - **Automated secret rotation** helps comply with security policies.  
 - **Audit logs and access control** enhance security monitoring.  
