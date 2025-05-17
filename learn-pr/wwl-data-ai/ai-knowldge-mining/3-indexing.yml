@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ai-knowledge-mining.indexing
+title: Extract data with an indexer
+metadata:
+  title: Extract data with an indexer
+  description: Use an indexer to extract and index from a data source.
+  author: graememalcolm
+  ms.author: gmalc
+  ms.date: 05/16/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-indexing.md)]
+
+
