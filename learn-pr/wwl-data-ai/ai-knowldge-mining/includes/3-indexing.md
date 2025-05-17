@@ -2,11 +2,11 @@ At the heart of Azure AI Search solutions is the creation of an *index* An index
 
 ![Diagram of an indexer extracting documents from a source and creating an index.](../media/indexer.png)
 
-The indexing process starts with a data source: the storage location of your original data artifacts; for example an Azure blob store container full of documents, a database, or some other store.
+The indexing process starts with a data source: the storage location of your original data artifacts; for example, an Azure blob store container full of documents, a database, or some other store.
 
 The Indexer automates the extraction and indexing of data *fields* through an *enrichment pipeline*, in which it applies *document cracking* to extract the contents of the source documents and applies incremental steps to create a hierarchical (JSON-based) document with the required fields for the index definition.
 
-The result is a populated index which can be queried to return specified fields from documents that match the query criteria.
+The result is a populated index, which can be queried to return specified fields from documents that match the query criteria.
 
 ## How documents are constructed during indexing
 

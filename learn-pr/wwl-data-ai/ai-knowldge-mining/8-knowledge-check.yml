@@ -29,13 +29,13 @@ quiz:
     choices:
     - content: "Azure Functions"
       isCorrect: false
-      explanation: "Incorrect. Azure Functions can be used to implement custom skills, but is not required for built-in skills."
+      explanation: "Incorrect. Azure Functions can be used to implement custom skills, but isn't required for built-in skills."
     - content: "Azure AI services"
       isCorrect: true
-      explanation: "Correct. Azure AI services is required to support built-in skills."
+      explanation: "Correct. An Azure AI services resource is required to support built-in skills."
     - content: "Azure Cosmos DB"
       isCorrect: false
-      explanation: "Incorrect. Azure Cosmos DB could be a data source fo Azure AI Search, but it is not required for built-in skills."
+      explanation: "Incorrect. Azure Cosmos DB could be a data source fo Azure AI Search, but it isn't required for built-in skills."
   - content: "Which kind of projection results in a relational data schema for extracted fields?"
     choices:
     - content: "File"
@@ -46,6 +46,6 @@ quiz:
       explanation: "Incorrect. Object projections are used to store extracted documents as JSON files."
     - content: "Table"
       isCorrect: true
-      explanation: "Correct. Use table projections to persists extracted data in a relational schema."
+      explanation: "Correct. Use table projections to persist extracted data in a relational schema."
 
 

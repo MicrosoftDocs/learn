@@ -11,11 +11,11 @@ Each index field can be configured with the following attributes:
 - **facetable**: Fields that can be used to determine values for *facets* (user interface elements used to filter the results based on a list of known field values).
 - **retrievable**: Fields that can be included in search results (*by default, all fields are retrievable unless this attribute is explicitly removed*).
 
-## Full text search
+## Full-text search
 
-While you could retrieve index entries based on simple field value matching, most search solutions use *full text search* semantics to query an index.
+While you could retrieve index entries based on simple field value matching, most search solutions use *full-text search* semantics to query an index.
 
-Full text search describes search solutions that parse text-based document contents to find query terms. Full text search queries in Azure AI Search are based on the *Lucene* query syntax, which provides a rich set of query operations for searching, filtering, and sorting data in indexes. Azure AI Search supports two variants of the Lucene syntax:
+Full-text search describes search solutions that parse text-based document contents to find query terms. Full-text search queries in Azure AI Search are based on the *Lucene* query syntax, which provides a rich set of query operations for searching, filtering, and sorting data in indexes. Azure AI Search supports two variants of the Lucene syntax:
 
 - **Simple** - An intuitive syntax that makes it easy to perform basic searches that match literal query terms submitted by a user.
 - **Full** - An extended syntax that supports complex filtering, regular expressions, and other more sophisticated queries.
