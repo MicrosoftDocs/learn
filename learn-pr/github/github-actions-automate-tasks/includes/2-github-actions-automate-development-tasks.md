@@ -193,7 +193,7 @@ jobs:
 ```
 These larger runners maintain compatibility with existing workflows by including the same preinstalled tools as standard `ubuntu-latest` runners.
 
-For more details on runner sizes for larger runners, refer to the GitHub documentation [https://docs.github.com/en/actions/using-github-hosted-runners/using-larger-runners/about-larger-runners#machine-sizes-for-larger-runners]
+For more details on runner sizes for larger runners, refer to the [GitHub documentation](https://docs.github.com/en/actions/using-github-hosted-runners/using-larger-runners/about-larger-runners#machine-sizes-for-larger-runners)
 
 
 ### Managing larger runners
