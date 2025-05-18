@@ -12,6 +12,6 @@ metadata:
     - wwl-ai-copilot
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-indexing.md)]
+  [!include[](includes/3-index.md)]
 
 
