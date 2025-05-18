@@ -131,21 +131,21 @@ Understanding what triggered a GitHub Actions workflow—whether it was a push t
 
 ###  What is a workflow trigger?
 A workflow trigger is an event that causes a workflow to start. GitHub supports various types of triggers, including:
-- push or pull_request (based on code changes)
-- workflow_dispatch (manual trigger)
+- `push` or `pull_request` (based on code changes)
+- `workflow_dispatch` (manual trigger)
 - schedule (cron jobs)
-- repository_dispatch (external systems)
+- `repository_dispatch` (external systems)
 - Issue, discussion, and PR events (e.g., issues.opened, pull_request.closed)
 
 ### Where to identify the trigger event?
-You can identify the trigger event in several ways :  
+You can identify the trigger event in several ways:  
 
-1 . From the GitHub Actions UI
+1. From the GitHub Actions UI
 - Navigate to the Actions tab in your repository.
 - Click on a workflow run.
-- The event type (e.g., push, pull_request, workflow_dispatch) is displayed at the top of the workflow run summary.
+- The event type (e.g., `push`, `pull_request`, `workflow_dispatch`) is displayed at the top of the workflow run summary.
 
-2 . Using github.event_name in Logs or workflow
+2. Using github.event_name in Logs or workflow
 - GitHub exposes context data during a workflow run. The github.event_name variable tells you which event triggered the workflow.
 - You can print it in a step for debugging:
 
@@ -153,7 +153,7 @@ You can identify the trigger event in several ways :
 -name: Show event trigger
   run: echo "Triggered by ${{ github.event_name }}"
 ```
-3 . Using workflow Run details
+3. Using workflow Run details
 - If you're inspecting workflow runs programmatically (e.g., via the API), the run object includes an event property that specifies the trigger.
 - You can also find the commit SHA, actor, and timestamp to trace what caused the trigger.
 
@@ -183,7 +183,7 @@ These practices help with debugging, auditing, and improving workflow reliabilit
 To describe a workflow's effects from reading its configuration file, you need to analyze the structure and contents of the ".yml" file stored in .github/workflows/. This file outlines when the workflow runs, what it does, and how it behaves under different conditions.
 
 ### Interpret a workflow's effects:
-1 . Identify the trigger (on:)
+1. Identify the trigger (on:)
 This section tells you when the workflow is initiated. For example:
 ```yml
 on:
@@ -198,7 +198,7 @@ Effect:
 - Runs when a pull request is created or updated.
 - Can also be triggered manually by a user
 
-2 . Understand the jobs and steps (jobs:)
+2. Understand the jobs and steps (jobs:)
 Jobs describe what the workflow will do. For instance:
 ```yml
 jobs:
@@ -218,11 +218,11 @@ Effect:
 - Installs project dependencies.
 - Runs automated tests.
 
-3 . Evaluate the purpose and outcome
+3. Evaluate the purpose and outcome
 - By reading the configuration, you can describe the intended outcome of the workflow:
 “This workflow is a Continuous Integration (CI) pipeline. It ensures that any new code pushed to the repository or submitted via pull request is automatically tested. If tests fail, the workflow will indicate this in the GitHub UI, helping maintain code quality.”
 
-4 . Optional features affecting behavior
+4. Optional features affecting behavior
 - env: sets environment variables.
 - if: adds conditional logic to run certain steps only when criteria are met.
 - timeout-minutes: or continue-on-error: influence execution behavior and error handling.
@@ -276,8 +276,7 @@ If this step failed, check:
 ### 1. Go to the repository
 Navigate to the repository that contains the workflow. 
 ### 2. Click on the Actions tab
-- Located in the top navigation bar of the repo.
-- This shows a history of all workflow runs for that repository.
+Navigate to Actions tab located in the top navigation bar of the repo. This tab shows a history of all workflow runs for that repository.
 
 ### 3. Select the workflow name
 - Choose the relevant workflow from the list.
@@ -290,7 +289,7 @@ You'll see a link named CI Workflow in the list.
 - You’ll see a list of runs with status indicators
 - Click on the timestamp or commit message of the specific run you want to inspect.
 
-### 5.  Expand each job and step
+### 5. Expand each job and step
 - The run summary page displays jobs as defined in the workflow file (e.g., build, test).
 - Click on a job to expand it.
 - Inside the job, expand individual steps (e.g., "Install dependencies", "Run tests").
