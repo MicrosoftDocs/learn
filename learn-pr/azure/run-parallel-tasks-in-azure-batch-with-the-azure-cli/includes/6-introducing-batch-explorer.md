@@ -1,6 +1,6 @@
 Many administrators prefer GUI tools, and you can use the Azure Batch Explorer to graphically analyze the status of your batch jobs.
 
-Here, you'll learn about the Azure Batch Explorer tool and how it can help you to manage your jobs.
+Here, you learn about the Azure Batch Explorer tool and how it can help you to manage your jobs.
 
 ## What is the Azure Batch Explorer?
 

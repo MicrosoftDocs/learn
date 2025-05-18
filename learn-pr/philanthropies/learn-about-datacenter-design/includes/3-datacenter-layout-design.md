@@ -1,4 +1,3 @@
-Single-story and multi-story datacenters
 
 Did you ever ask yourself why most datacenters you come across are sprawling single-story buildings or clusters of buildings, rather than towering skyscrapers? The answer lies in practicality. Single-story datacenters have been the standard for a long time due to their simpler infrastructure management, easier maintenance, and lower costs.
 
