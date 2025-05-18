@@ -1,6 +1,4 @@
-
 <!-- 1. Topic sentences ----------------------------------------------------------------------------------
-
     Goal: Orient the learner to the area covered in this module.
 
     Heading: None
@@ -12,8 +10,8 @@
 
     Detailed guidance: `https://review.learn.microsoft.com/help/learn/id-guidance-introductions?branch=main#module-introduction`
 --->
-Learning how to filter data effectively is essential for working with databases. 
-In this tutorial, you explore the `WHERE` clause in PostgreSQL, a critical component for refining query results. You explore how to apply single and multiple conditions, use operators like `IN`, `NOT IN`, `AND`, `OR`, and `LIKE` and work with ranges using `BETWEEN`. You also learn how to handle `NULL` values with `IS NULL` and `IS NOT NULL` and leverage subqueries for more advanced filtering.
+Learning how to filter data effectively is essential for working with databases.  
+In this tutorial, you explore the `WHERE` clause in PostgreSQL, a critical component for refining query results. You explore how to apply single and multiple conditions, use operators like `IN`, `NOT IN`, `AND`, `OR`, and `LIKE` and work with ranges using `BETWEEN`. You also learn how to handle `NULL` values with `IS NULL` and `IS NOT NULL` and use subqueries for more advanced filtering.
 
 <!-- 2. Motivation ---------------------------------------------------------------------------------------
 
@@ -45,8 +43,10 @@ In this tutorial, you explore the `WHERE` clause in PostgreSQL, a critical compo
     Example: "In this module, we'll formally define several cybersecurity concepts like authentication
              and authorization. Then we'll put the concepts into context by describing some common
              authentication-based attacks. We'll also define some effective authorization security techniques."
- -->
+-->
+
 ## What will you be doing?
+
 In this tutorial, you explore the fundamentals of filtering data using the `WHERE` clause in PostgreSQL. You learn how to:
 
 - Apply single and multiple conditions to refine query results
@@ -55,7 +55,6 @@ In this tutorial, you explore the fundamentals of filtering data using the `WHER
 - Filter data within a range using the `BETWEEN` operator
 - Handle `NULL` values effectively with `IS NULL` and `IS NOT NULL`
 - Apply subqueries for advanced filtering scenarios
-
 
 <!-- 5. Terminal learning objective ----------------------------------------------------------------------
 
@@ -67,7 +66,8 @@ In this tutorial, you explore the fundamentals of filtering data using the `WHER
     Heading: "## What is the main goal?"
 
     Example: "By the end of the module, you'll have a comprehensive understanding of core cybersecurity concepts."
- -->
+-->
+
 ## What is the main goal?
 
 By the end of this tutorial, you'll have a solid understanding of how to use the `WHERE` clause to extract precise and meaningful data from your database.

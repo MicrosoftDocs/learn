@@ -1,21 +1,21 @@
 The sales database is designed to simulate a typical sales environment for a company that sells various products to customers. It's structured to store information about customers, products, suppliers, orders, employees, and shipping. This database allows you to:
 
-* Track customer orders and purchase history
-* Manage product inventory and pricing
-* Analyze sales data and generate reports
-* Track which employee handled which order
-* Track which shipper was used for each order
+- Track customer orders and purchase history
+- Manage product inventory and pricing
+- Analyze sales data and generate reports
+- Track which employee handled which order
+- Track which shipper was used for each order
 
-## Key tables:
+## Key tables
 
-* customers: Stores customer details like names, addresses, and contact information
-* products: Contains product information, including names, prices, and categories
-* categories: Lists the categories to which the products belong
-* suppliers: Holds information about the companies supplying the products
-* orders: Records customer order details, including dates and customer IDs
-* order_details: Provides line-item details for each order, linking products and quantities
-* employees: Stores employee information
-* shippers: Contains details about shipping companies
+- customers: Stores customer details like names, addresses, and contact information
+- products: Contains product information, including names, prices, and categories
+- categories: Lists the categories to which the products belong
+- suppliers: Holds information about the companies supplying the products
+- orders: Records customer order details, including dates and customer IDs
+- order_details: Provides line-item details for each order, linking products and quantities
+- employees: Stores employee information
+- shippers: Contains details about shipping companies
 
 The tables are interconnected using foreign keys, allowing for comprehensive data analysis and reporting on sales activities.
 
@@ -24,20 +24,20 @@ Foreign keys are a concept in relational databases, used to establish and enforc
 ## Sample database creation script
 
 <details>
-    <summary>Click to expand</summary>
+    <summary>Select to expand</summary>
 
 ```sql
 CREATE SCHEMA Sales;
 
 CREATE TABLE Sales.Categories
-(      
+(
     CategoryID SERIAL PRIMARY KEY,
     CategoryName VARCHAR(25),
     Description VARCHAR(255)
 );
 
 CREATE TABLE Sales.Customers
-(      
+(
     CustomerID SERIAL PRIMARY KEY,
     CustomerName VARCHAR(50),
     ContactName VARCHAR(50),
@@ -81,8 +81,8 @@ CREATE TABLE Sales.Products(
     CategoryID INTEGER,
     Unit VARCHAR(25),
     Price NUMERIC,
-	FOREIGN KEY (CategoryID) REFERENCES Sales.Categories (CategoryID),
-	FOREIGN KEY (SupplierID) REFERENCES Sales.Suppliers (SupplierID)
+    FOREIGN KEY (CategoryID) REFERENCES Sales.Categories (CategoryID),
+    FOREIGN KEY (SupplierID) REFERENCES Sales.Suppliers (SupplierID)
 );
 
 CREATE TABLE Sales.Orders(
@@ -101,8 +101,8 @@ CREATE TABLE Sales.OrderDetails(
     OrderID INTEGER,
     ProductID INTEGER,
     Quantity INTEGER,
-	FOREIGN KEY (OrderID) REFERENCES Sales.Orders (OrderID),
-	FOREIGN KEY (ProductID) REFERENCES Sales.Products (ProductID)
+    FOREIGN KEY (OrderID) REFERENCES Sales.Orders (OrderID),
+    FOREIGN KEY (ProductID) REFERENCES Sales.Products (ProductID)
 );
 
 INSERT INTO Sales.Categories VALUES(1,'Beverages','Soft drinks, coffees, teas, beers, and ales');
@@ -1044,10 +1044,6 @@ INSERT INTO Sales.OrderDetails VALUES(515,10442,54,80);
 INSERT INTO Sales.OrderDetails VALUES(516,10442,66,60);
 INSERT INTO Sales.OrderDetails VALUES(517,10443,11,6);
 INSERT INTO Sales.OrderDetails VALUES(518,10443,28,12);
-
 ```
+
 </details>
-
-## Sample database diagram
-
-![Sample Database Schema](../media/sample-database.png)

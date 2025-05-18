@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl-azure.basic-sql-simple-select.sample-database-overview
-title: Sample Database Overview
+title: Sample database
 metadata:
   title: Sample Database Overview
   description: "This unit introduces the structure and purpose of the sales sample database used throughout the module. It describes the key tables, their relationships via foreign keys, and how the database supports tracking orders, inventory, and customer activity. A schema diagram and SQL script are provided to help learners explore and understand the data model."

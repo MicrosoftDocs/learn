@@ -1,4 +1,6 @@
-Instead of retrieving individual rows, you frequently need to summarize data to understand trends or patterns. Aggregate functions are designed for this purpose, allowing you to perform calculations on a group of rows and return a single result. Common examples include determining the total sales, the average price of products, or the number of orders placed. These functions are fundamental tools for data analysis in SQL.
+Instead of retrieving individual rows, you frequently need to summarize data to understand trends or patterns.
+
+Aggregate functions are designed for this purpose, allowing you to perform calculations on a group of rows and return a single result. Common examples include determining the total sales, the average price of products, or the number of orders placed. These functions are fundamental tools for data analysis in SQL.
 
 Examples of aggregate functions include `COUNT` to count rows, `SUM` to calculate totals, `AVG` for averages, `MIN` to find the smallest value, and `MAX` to find the largest value in a dataset.
 

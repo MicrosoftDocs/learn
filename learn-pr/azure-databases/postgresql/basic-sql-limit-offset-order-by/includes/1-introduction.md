@@ -1,6 +1,4 @@
-
 <!-- 1. Topic sentences ----------------------------------------------------------------------------------
-
     Goal: Orient the learner to the area covered in this module.
 
     Heading: None
@@ -43,9 +41,9 @@ Learning how to manage and organize query results is crucial when working with d
     Example: "In this module, we'll formally define several cybersecurity concepts like authentication
              and authorization. Then we'll put the concepts into context by describing some common
              authentication-based attacks. We'll also define some effective authorization security techniques."
- -->
+-->
 
- ## What to expect?
+## What to expect?
 
 In this tutorial, you explore the fundamentals of managing query results using the `LIMIT`, `OFFSET`, and `ORDER BY` clauses in PostgreSQL. You learn how to:
 
@@ -66,7 +64,8 @@ In this tutorial, you explore the fundamentals of managing query results using t
     Heading: "## What is the main goal?"
 
     Example: "By the end of the module, you'll have a comprehensive understanding of core cybersecurity concepts."
- -->
+-->
+
 ## What is the main goal?
 
 By the end of this tutorial, you'll have the ability to efficiently retrieve and organize data for your applications.

@@ -1,6 +1,4 @@
-
 <!-- 1. Topic sentences ----------------------------------------------------------------------------------
-
     Goal: Orient the learner to the area covered in this module.
 
     Heading: None
@@ -44,12 +42,13 @@ In addition to managing individual tables, the ability to join tables is a criti
     Example: "In this module, we'll formally define several cybersecurity concepts like authentication
              and authorization. Then we'll put the concepts into context by describing some common
              authentication-based attacks. We'll also define some effective authorization security techniques."
- -->
- ## What to expect?
+-->
+
+## What to expect?
 
 In this section, you learn how to combine data from multiple related tables using various types of SQL joins. You explore usage of `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN`, `FULL OUTER JOIN`, and `NATURAL JOIN` to retrieve connected data across tables. Through practical examples using the `sales` database, you gain the skills to query and interpret relationships between entities like `customers`, `orders`, and `employees`.
 
- <!-- 5. Terminal learning objective ----------------------------------------------------------------------
+<!-- 5. Terminal learning objective ----------------------------------------------------------------------
 
     Goal: Restate the module title as a complete sentence. You have more room here to convey the main goal
           than in a space-limited title. Make it outcome-focused so it describes the main skills and
@@ -59,7 +58,8 @@ In this section, you learn how to combine data from multiple related tables usin
     Heading: "## What is the main goal?"
 
     Example: "By the end of the module, you'll have a comprehensive understanding of core cybersecurity concepts."
- -->
+-->
+
 ## What is the main goal?
 
 The main goal of this section is to help you understand how to retrieve meaningful, connected data from multiple tables in a relational database using SQL joins. By understanding different types of joins and when to use them, you're able to write efficient queries that reflect real-world relationships between entities, enabling more complete and insightful data analysis.

@@ -1,6 +1,4 @@
-
 <!-- 1. Topic sentences ----------------------------------------------------------------------------------
-
     Goal: Orient the learner to the area covered in this module.
 
     Heading: None
@@ -12,9 +10,9 @@
 
     Detailed guidance: `https://review.learn.microsoft.com/help/learn/id-guidance-introductions?branch=main#module-introduction`
 --->
-Learning how to query data effectively is a fundamental skill for anyone working with databases. 
-In this tutorial, you gain hands-on experience with the `SELECT` statement in PostgreSQL, a powerful tool for retrieving and analyzing data. 
-By learning these foundational querying techniques, you're equipped to access specific information, generate meaningful insights, and lay the groundwork for more advanced database operations. 
+Learning how to query data effectively is a fundamental skill for anyone working with databases.  
+In this tutorial, you gain hands-on experience with the `SELECT` statement in PostgreSQL, a powerful tool for retrieving and analyzing data.  
+By learning these foundational querying techniques, you're equipped to access specific information, generate meaningful insights, and lay the groundwork for more advanced database operations.  
 Whether you're a beginner or looking to sharpen your skills, this tutorial helps you build confidence in working with SQL queries.
 
 <!-- 2. Motivation ---------------------------------------------------------------------------------------
@@ -47,7 +45,8 @@ Whether you're a beginner or looking to sharpen your skills, this tutorial helps
     Example: "In this module, we'll formally define several cybersecurity concepts like authentication
              and authorization. Then we'll put the concepts into context by describing some common
              authentication-based attacks. We'll also define some effective authorization security techniques."
- -->
+-->
+
 ## What will you be doing?
 
 In this tutorial, you explore the fundamentals of querying data using the `SELECT` statement in PostgreSQL. You learn how to:
@@ -57,7 +56,6 @@ In this tutorial, you explore the fundamentals of querying data using the `SELEC
 - Use the `DISTINCT` keyword to eliminate duplicate values
 - Create calculated columns to derive new insights from your data
 - Concatenate columns to combine data into a single output
-
 
 <!-- 5. Terminal learning objective ----------------------------------------------------------------------
 
@@ -69,7 +67,8 @@ In this tutorial, you explore the fundamentals of querying data using the `SELEC
     Heading: "## What is the main goal?"
 
     Example: "By the end of the module, you'll have a comprehensive understanding of core cybersecurity concepts."
- -->
+-->
+
 ## What is the main goal?
 
 By the end of this tutorial, you'll be able to confidently use the `SELECT` command to retrieve and query data from a PostgreSQL database, laying the foundation for more advanced querying techniques.
