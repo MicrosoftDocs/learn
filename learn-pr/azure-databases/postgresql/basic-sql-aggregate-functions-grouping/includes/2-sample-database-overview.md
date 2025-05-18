@@ -1044,8 +1044,9 @@ INSERT INTO Sales.OrderDetails VALUES(516,10442,66,60);
 INSERT INTO Sales.OrderDetails VALUES(517,10443,11,6);
 INSERT INTO Sales.OrderDetails VALUES(518,10443,28,12);
 ```
+
 </details>
 
 ## Sample database diagram
 
-![Sample Database Schema](../media/sample-database.png)
+:::image type="content" source="../media/sample-database.png" alt-text="Screentshot of a sample database":::
