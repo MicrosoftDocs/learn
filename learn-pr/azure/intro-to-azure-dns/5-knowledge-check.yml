@@ -25,14 +25,14 @@ quiz:
     - content: "Azure DNS Private zone."
       isCorrect: true
       explanation: "Correct. Azure DNS private zones allow you to configure automatically assigned selectively resolvable FQDNs to virtual machines on select Azure virtual networks."
-  - content: "In which of the following scenarios would you choose Azure DNS to host your organizations internet resolvable DNS zones?"
+  - content: "In which of the following scenarios would you choose Azure DNS to host your organization's internet resolvable DNS zones?"
     choices:
     - content: "You need to secure DNS records using DNSSEC."
       isCorrect: false
       explanation: "Incorrect. Azure DNS doesn't support DNSSEC."
-    - content: "You need to manage and update MX, TXT and CNAME IPv6 records for a DNS zone."
+    - content: "You need to manage and update MX, TXT, and CNAME IPv6 records for a DNS zone."
       isCorrect: true
-      explanation: "Correct. Azure DNS supports hosting MX, TXT and CNAME records."
+      explanation: "Correct. Azure DNS supports hosting MX, TXT, and CNAME records."
     - content: "You need to provide an Active Directory Integrated DNS zone for IaaS VM hosts."
       isCorrect: false
       explanation: "Incorrect. Azure DNS doesn't support Active Directory Integrated DNS zones."
@@ -40,11 +40,11 @@ quiz:
     choices:
     - content: "Azure CLI."
       isCorrect: true
-      explanation: "Correct. You can manage Azure DNS zone records using Azure CLI"
+      explanation: "Correct. You can manage Azure DNS zone records using Azure CLI."
     - content: "Windows Admin Center."
       isCorrect: false
-      explanation: "Incorrect. You can't manage Azure DNS records using Windows Admin Center. You can use Windows Admin Center to manage Windows Server DNS server records"
+      explanation: "Incorrect. You can't manage Azure DNS records using Windows Admin Center. You can use Windows Admin Center to manage Windows Server DNS server records."
     - content: "Dnscmd.exe utility."
       isCorrect: false
-      explanation: "Incorrect. You can't use dnscmd.exe to manage Azure DNS records. You can use dnscmd.exe to manage Windows Server DNS server records"
+      explanation: "Incorrect. You can't use dnscmd.exe to manage Azure DNS records. You can use dnscmd.exe to manage Windows Server DNS server records."
 
