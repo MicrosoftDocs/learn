@@ -5,9 +5,10 @@ Once you create an Azure AI service resource, you can build applications using t
 
 ## Using Azure AI Foundry portal
 
+![Screenshot of Azure AI Foundry portal home page.](../media/azure-ai-foundry-1.png)
+
 [**Azure AI Foundry portal**](https://ai.azure.com/) is a unified platform and visual interface for enterprise AI operations, model builders, and application development. Azure AI Foundry portal combines access to multiple Azure AI services and generative AI models into one user interface. 
 
-![Screenshot of Azure AI Foundry portal home page.](../media/azure-ai-foundry-1.png)
 ![Screenshot of Azure AI Foundry portal Azure AI services page.](../media/azure-ai-foundry-3.png)
 
 
