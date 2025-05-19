@@ -2,7 +2,7 @@ In this unit, you'll learn how GitHub Script enables you to automate common GitH
 
 ## What is GitHub Script?
 
-[GitHub Script](https://github.com/actions/github-script?azure-portal=true) is an action that provides an authenticated [Octokit](https://octokit.github.io/rest.js/?azure-portal=true) client and enables JavaScript to be written directly in a workflow file. It runs in [Node.js](https://nodejs.org/?azure-portal=true), so you have the power of that platform available when writing scripts.
+[GitHub Script](https://github.com/actions/github-script?azure-portal=true) is an action that provides an authenticated [Octokit](https://octokit.github.io/rest.js/?azure-portal=true) client and enables JavaScript to be written directly in a workflow file. It runs in [Node.js](https://nodejs.org/?azure-portal=true), so you have the power of that platform available when you write scripts.
 
 ## What is Octokit?
 
@@ -72,7 +72,7 @@ In this case, there's only one step: the GitHub Script action.
             })
 ```
 
-Using GitHub Actions can really help automate the events that take place in your repositories. Imagine that a repository visitor created a new issue containing information about a critical bug. You might want to thank them for bringing the bug to your attention, but this simple task can become overwhelming as your repository attracts more visitors. By automating an issue comment, you can automate the process of thanking visitors every time.
+Using GitHub Actions can really help automate the events that take place in your repositories. Imagine that a repository visitor opened a new issue containing information about a critical bug. You might want to thank them for bringing the bug to your attention, but this simple task can become overwhelming as your repository attracts more visitors. By automating an issue comment, you can automate the process of thanking visitors every time.
 
 ### Using actions/github-script@0.8.0
 
@@ -82,7 +82,7 @@ This action requires a `github-token` that's provided at runtime so that request
 
 The `script` parameter can be virtually any JavaScript that uses the octokit/rest/js client stored in `github`. In this case, it's just one line (split across multiple lines for readability) that creates a hardcoded comment.
 
-After the workflow runs, GitHub Script logs the code it ran for review on the **Actions** tab.
+After the workflow runs, GitHub Script logs the code it ran for review on the **Actions** tab:
 
 ![Screenshot of a completed GitHub Script workflow.](../media/2-completed-workflow.png)
 

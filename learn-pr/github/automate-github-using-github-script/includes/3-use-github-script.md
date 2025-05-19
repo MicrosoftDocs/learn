@@ -40,7 +40,7 @@ One advantage of breaking the current workflow into multiple steps is that it en
 
 To separate the example workflow into steps:
 
-- Name each step so that you can track it from the Actions tab.
+- Name each step so that you can track it from the **Actions** tab.
 - Use expressions to determine whether a step should run (optional).
 
 In this example, the two tasks in the original workflow file are separated into individual steps:
@@ -78,7 +78,7 @@ jobs:
             });
 ```
 
-Each step includes a descriptive `name` element that also helps you track it from the Actions tab.
+Each step includes a descriptive `name` element that also helps you track it from the **Actions** tab.
 
 The `Add issue to project board` step also includes an `if` statement that specifies that the issue should be added to the project board only if it's labeled `bug`.
 
@@ -86,7 +86,7 @@ The `Add issue to project board` step also includes an `if` statement that speci
 
 GitHub Script also grants you access to a full Node.js environment. Although we don't recommend using GitHub Script to write the logic for complex actions, you can use it to add more functionality to the octo/rest.js API.
 
-For example, you could use the Node.js to display a contribution guide whenever an issue is opened. You can use the Node.js file system to read a file and use it as the body of the issue comment. To access files within the repository, include the `actions/checkout` action as the first step in the workflow.
+For example, you could use Node.js to display a contribution guide whenever an issue is opened. You can use the Node.js file system to read a file and use it as the body of the issue comment. To access files within the repository, include the `actions/checkout` action as the first step in the workflow.
 
 The following example makes the following changes to the workflow file:
 
