@@ -1,4 +1,4 @@
-Now it's your opportunity to build an agent in Azure AI Foundry. In this exercise, you create an agent and test it in Agent playground. You'll then develop your own app that integrates with an agent through Azure AI Agent Service. 
+Now it's your opportunity to build an agent in Azure AI Foundry. In this exercise, you create an agent and test it in Agent playground. You'll then develop your own app that integrates with an agent through Foundry Agent Service. 
 
 > [!NOTE]
 > If you don't have an Azure subscription, and you want to explore Azure AI Foundry, you can [sign up for an account](https://azure.microsoft.com/free?azure-portal=true), which includes credits for the first 30 days.

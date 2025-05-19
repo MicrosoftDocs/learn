@@ -91,7 +91,7 @@ The agent can now send requests to the Azure Function via a storage queue and pr
 
 ## OpenAPI Specification
 
-OpenAPI defined tools allow agents to interact with external APIs using standardized specifications. This approach simplifies API integration and ensures compatibility with various services. Azure AI Agent Service uses OpenAPI 3.0 specified tools.
+OpenAPI defined tools allow agents to interact with external APIs using standardized specifications. This approach simplifies API integration and ensures compatibility with various services. The Foundry Agent Service uses OpenAPI 3.0 specified tools.
 
 > [!TIP]
 > Currently, three authentication types are supported with OpenAPI 3.0 tools: *anonymous*, *API key*, and *managed identity*.
@@ -167,4 +167,4 @@ The agent can now use the OpenAPI tool to fetch snowfall data dynamically.
 > [!NOTE]
 > One of the concepts related to agents and custom tools that developers often have difficulty with is the *declarative* nature of the solution. You don't need to write code that explicitly *calls* your custom tool functions - the agent itself decides to call tool functions based on messages in prompts. By providing the agent with functions that have meaningful names and well-documented parameters, the agent can "figure out" when and how to call the function all by itself!
 
-By using one of the available custom tool options (or any combination of them), you can create powerful, flexible, and intelligent agents with Azure AI Agent Service. These integrations enable seamless interaction with external systems, real-time processing, and scalable workflows, making it easier to build custom solutions tailored to your needs.
+By using one of the available custom tool options (or any combination of them), you can create powerful, flexible, and intelligent agents with Foundry Agent Service. These integrations enable seamless interaction with external systems, real-time processing, and scalable workflows, making it easier to build custom solutions tailored to your needs.
