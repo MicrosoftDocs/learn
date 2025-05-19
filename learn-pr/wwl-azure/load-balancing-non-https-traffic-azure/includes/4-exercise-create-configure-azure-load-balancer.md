@@ -14,7 +14,8 @@ In this lab, you create an internal load balancer for the fictional Contoso Ltd 
 - Create load balancer resources.
 - Test the load balancer.
 
-> [!NOTE]
+> [!IMPORTANT]
+> Estimated time: 60 minutes.
 > To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
 
 Launch the exercise, and follow the instructions. When finished, be sure to return to this page so you can continue learning.
