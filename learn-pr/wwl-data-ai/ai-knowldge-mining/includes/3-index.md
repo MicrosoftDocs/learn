@@ -69,5 +69,5 @@ The output fields from each skill can be used as inputs for other skills later i
 
 The fields in the final document structure at the end of the pipeline are mapped to index fields by the indexer in one of two ways:
 
-1. Fields extracted directly from the source data are all mapped to index fields. These mappings can be *implicit* (fields are automatically mapped to in fields with the same name in the index) or *explicit* (a mapping is defined to match a source field to an index field, often to rename the field to something more useful or to apply a function to the data value as it is mapped).
-2. Output fields from the skills in the skillset are explicitly mapped from their hierarchical location in the output to the target field in the index.
+- Fields extracted directly from the source data are all mapped to index fields. These mappings can be *implicit* (fields are automatically mapped to in fields with the same name in the index) or *explicit* (a mapping is defined to match a source field to an index field, often to rename the field to something more useful or to apply a function to the data value as it is mapped).
+- Output fields from the skills in the skillset are explicitly mapped from their hierarchical location in the output to the target field in the index.
