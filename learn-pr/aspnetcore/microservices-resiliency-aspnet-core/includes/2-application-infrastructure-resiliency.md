@@ -6,7 +6,7 @@ Because microservice environments can be volatile, design your apps to expect an
 
 In designing resilient applications, you often have to choose between failing fast and graceful degradation. Failing fast means the application will immediately throw an error or exception when something goes wrong, rather than try to recover or work around the problem. This allows issues to be identified and fixed quickly. Graceful degradation means the application will try to keep operating in a limited capacity even when some component fails.
 
-In cloud-native applications it's important for services to handle failures gracefully rather than fail fast. Since microservices are decentralized and independently deployable, partial failures are expected. Failing fast would allow a failure in one service to quickly take down dependent services, which reduce overall system resiliency. Instead, microservices should be coded to anticipate and tolerate both internal and external service failures. This graceful degradation allows the overall system to continue operating even if some services are disrupted. Critical user-facing functions can be sustained, avoiding a complete outage. Graceful failure also allows disturbed services time to recover or self-heal before impacting the rest of the system. So for microservices-based applications, graceful degradation better aligns with resiliency best practices like fault isolation and rapid recovery. It prevents local incidents from cascading across the system.
+In cloud-native applications, it's important for services to handle failures gracefully rather than fail fast. Since microservices are decentralized and independently deployable, partial failures are expected. Failing fast would allow a failure in one service to quickly take down dependent services, which reduce overall system resiliency. Instead, microservices should be coded to anticipate and tolerate both internal and external service failures. This graceful degradation allows the overall system to continue operating even if some services are disrupted. Critical user-facing functions can be sustained, avoiding a complete outage. Graceful failure also allows disturbed services time to recover or self-heal before impacting the rest of the system. So for microservices-based applications, graceful degradation better aligns with resiliency best practices like fault isolation and rapid recovery. It prevents local incidents from cascading across the system.
 
 There are two fundamental approaches to support a graceful degradation with resiliency: application and infrastructure. Each approach has benefits and drawbacks. Both approaches can be appropriate depending on the situation. This module explains how to implement both *code-based* and *infrastructure-based* resiliency.
 
@@ -28,11 +28,11 @@ A *Circuit Breaker* strategy gives a target service a break after a repeated num
 
 ### Infrastructure-based resiliency
 
-To implement infrastructure-based resiliency, you can use a *service mesh*. Aside from resiliency without changing code, a service mesh provides traffic management, policy, security, strong identity, and observability. Your app is decoupled from these operational capabilities, which are moved to the infrastructure layer. 
+To implement infrastructure-based resiliency, you can use a *service mesh*. Aside from resiliency without changing code, a service mesh provides traffic management, policy, security, strong identity, and observability. Your app is decoupled from these operational capabilities, which are moved to the infrastructure layer.
 
 #### Comparison to code-based approaches
 
-An infrastructure-based resiliency approach can use a metrics-based view that allows it to adapt dynamically to cluster conditions in real time. This approach adds another dimension to managing the cluster, but doesn't add any code.
+An infrastructure-based resiliency approach can use a metrics-based view that allows it to adapt dynamically to cluster conditions in real time. This approach adds another dimension to managing the cluster but doesn't add any code.
 
 With a code-based approach you:
 
@@ -43,4 +43,4 @@ There's no reasonable way to respond to an infrastructure failure in your app's 
 
 In contrast, infrastructure-based approaches are unaware of app internals. For example, complex database transactions are invisible to service meshes. Such transactions can only be protected from failure with a code based approach.
 
-In upcoming units, you'll implement resilience for a microservice based app  using .NET HTTP resiliency in code and a Linkerd service mesh.
+In upcoming units, you'll implement resilience for a microservice based app using .NET HTTP resiliency in code and a Linkerd service mesh.

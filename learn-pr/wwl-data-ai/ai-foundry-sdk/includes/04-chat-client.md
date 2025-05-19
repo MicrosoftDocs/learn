@@ -3,7 +3,7 @@ A common scenario in an AI application is to connect to a generative AI model an
 The specific libraries and code used to build a chat client depends on how the target model has been deployed in the Azure AI Foundry project. You can deploy models to the following model hosting solutions:
 
 - **Azure AI model inference**: A single endpoint for multiple models of different types, including OpenAI models and others from the Azure AI Foundry model catalog. Models are consumed through an **Azure AI services** resource connection in the project.
-- **Azure OpenAI service**: A single endpoint for OpenAI models hosted in Azure. Models are consumed through an **Azure OpenAI service** resource connection in the project.
+- **Azure OpenAI in Foundry Models**: A single endpoint for OpenAI models hosted in Azure. Models are consumed through an **Azure OpenAI** resource connection in the project.
 - **Serverless API**: A model-as-a-service solution in which each deployed model is accessed through a unique endpoint and hosted in the Azure AI Foundry project.
 - **Managed compute**: A model-as-a-service solution in which each deployed model is accessed through a unique endpoint hosted in custom compute.
 
@@ -119,13 +119,13 @@ namespace my_foundry_client
 
 ::: zone-end
 
-## Building a client app for Azure OpenAI service deployments
+## Building a client app for Azure OpenAI deployments
 
-When you have deployed models to the Azure OpenAI service, you can use the **AIProjectConnection** to connect to the Azure OpenAI service resource in your project and then use the Azure OpenAI SDK to chat with your models.
+When you have deployed models to Azure OpenAI, you can use the **AIProjectConnection** to connect to the Azure OpenAI resource in your project and then use the Azure OpenAI SDK to chat with your models.
 
 ::: zone pivot="python"
 
-In the Azure AI Foundry SDK for Python, the **AIProjectClient** class provides a **get_azure_openai_client()** method that you can use to create an Azure OpenAI client object. You can then use the classes and methods defined in the Azure OpenAI SDK to consume a model deployed to the Azure OpenAI service.
+In the Azure AI Foundry SDK for Python, the **AIProjectClient** class provides a **get_azure_openai_client()** method that you can use to create an Azure OpenAI client object. You can then use the classes and methods defined in the Azure OpenAI SDK to consume a model deployed to Azure OpenAI.
 
 The following Python code sample uses the Azure AI Foundry and Azure OpenAI SDKs to chat with a model deployment named **gpt-4-model**.
 
@@ -170,7 +170,7 @@ except Exception as ex:
 
 ::: zone pivot="csharp"
 
-To chat with a model that is deployed to the Azure OpenAI service in an Azure AI Foundry project from C#, use the **AIProjectClient** object to retrieve the default Azure OpenAI resource connection from the project, and then use the Azure OpenAI SDK to connect to the service and send prompts to the model.
+To chat with a model that is deployed to Azure OpenAI in an Azure AI Foundry project from C#, use the **AIProjectClient** object to retrieve the default Azure OpenAI resource connection from the project, and then use the Azure OpenAI SDK to connect to the service and send prompts to the model.
 
 The following C# code sample uses the Azure AI Foundry and Azure OpenAI SDKs to chat with a model deployment named **gpt-4-model**.
 

@@ -36,13 +36,13 @@ quiz:
       explanation: "Correct. System messages are used to customize the model's responses by specifying the tone, format, and content for each interaction."
   - content: "What deployment options for an OpenAI model incur no cost for deployment and charge for inferencing based on token-based billing?"
     choices:
-    - content: "Only Azure OpenAI Service"
+    - content: "Only Azure OpenAI"
       isCorrect: false
-      explanation: "Incorrect. Azure OpenAI Service is not the only option for the required deployment criteria."
+      explanation: "Incorrect. Azure OpenAI is not the only option for the required deployment criteria."
     - content: "Only managed compute"
       isCorrect: false
       explanation: "Incorrect. Managed compute is charged per-minute."
-    - content: "Either Azure OpenAI Service or Azure AI Model Inferencing Service"
+    - content: "Either Azure OpenAI or Azure AI Model Inferencing Service"
       isCorrect: true
-      explanation: "Correct. You can deploy OpenAI mdoels to either Azure OpenAI Service or Azure AI Model Inferencing Service."
-
+      explanation: "Correct. You can deploy OpenAI models to either Azure OpenAI service or Azure AI Model Inferencing Service."
+

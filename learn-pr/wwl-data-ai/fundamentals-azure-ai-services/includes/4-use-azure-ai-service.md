@@ -12,10 +12,7 @@ Studio interfaces provide a friendly user interface to explore Azure AI services
 ## Associate the AI service resource
 Before you can use an AI service resource, you must associate it with the studio you want to use on the Settings page. Select the resource, and then select **Use Resource**. You are then ready to explore the Azure AI service within the studio.
 
-![Screenshot of the Content Safety Studio's resource page in settings.](../media/content-safety-resource-example.png)
-
-As an example, let's look at the Azure AI Content Safety service, which identifies harmful text or images. To explore what the Content Safety service does, let's use the Content Safety Studio. First create either a multi-service Azure AI services resource, or a single-service Content Safety resource. Then, on the Content Safety Studio Settings page, select the resource, and select **Use Resource**. The AI service you created is now associated with the Content Safety Studio, and ready to be used.
+As an example, let's look at the Azure AI Foundry Content Safety service, which identifies harmful text or images. To explore what the Content Safety service does, let's use the Content Safety Studio. First create either a multi-service Azure AI services resource, or a single-service Content Safety resource. Then, on the Content Safety Studio Settings page, select the resource, and select **Use Resource**. The AI service you created is now associated with the Content Safety Studio, and ready to be used.
 
 > [!NOTE]
 > When developers incorporate an AI service into their applications, they often use a [SDK](/training/modules/create-manage-cognitive-services/5-use-sdk?azure-portal=true) or the [REST API](/training/modules/create-manage-cognitive-services/4-use-rest?azure-portal=true).
-

@@ -60,13 +60,13 @@ When you want to quickly explore prompts, you can use the chat playground in the
 
 When you're experimenting with prompts, you want to evaluate how your model performs. **Evaluators** are either built in or custom insights into your model's performance. Whereas evaluators are based on how a given dataset is processed, you can also include **tracing** to gain more insights into how your application is being executed.
 
-If your AI model occasionally provides biased or inappropriate responses, **Azure AI Content Safety** helps you identify and address these issues before they reach end users.
+If your AI model occasionally provides biased or inappropriate responses, **Azure AI Foundry Content Safety** helps you identify and address these issues before they reach end users.
 
 |Tool|Use|
 |---|---|
 |[Evaluators](/azure/ai-studio/how-to/develop/evaluate-sdk?azure-portal=true)|Tools designed to assess the quality and safety of AI outputs, helping you refine the model’s behavior and outputs.|
 |[Tracing](/azure/ai-studio/concepts/trace?azure-portal=true)|This tool helps debug AI models by tracing their actions, allowing you to understand why certain responses are generated.|
-|[Azure AI Content Safety](/azure/ai-services/content-safety/overview?azure-portal=true)|It ensures that AI models generate ethical, unbiased, and safe responses. It detects harmful outputs and helps mitigate risks associated with AI.|
+|[Azure AI Foundry Content Safety](/azure/ai-services/content-safety/overview?azure-portal=true)|It ensures that AI models generate ethical, unbiased, and safe responses. It detects harmful outputs and helps mitigate risks associated with AI.|
 
 ## Deploy your Generative AI app to production
 
