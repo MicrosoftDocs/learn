@@ -12,13 +12,8 @@ Datacenter developers and operators actively engage with local communities throu
 
 ## Examples
 
-- **Google's STEM Programs in the Netherlands:** 
-
-- Google partnered with Dutch schools to promote STEM education through workshops, lab equipment donations, and scholarships. Their goal was to create a tech-savvy workforce that could eventually support datacenter operations locally.
-
-- **Microsoft Datacenter Academy:** 
-
-- Microsoft created the Datacenter Academy, a global initiative offering training, mentorship, practical learning through Datacenter Labs, and work experience via internship and apprenticeship. Students graduate with certifications that make them highly employable in the growing industry
+- **Google's STEM Programs in the Netherlands:** Google partnered with Dutch schools to promote STEM education through workshops, lab equipment donations, and scholarships. Their goal was to create a tech-savvy workforce that could eventually support datacenter operations locally.
+- **Microsoft Datacenter Academy:** Microsoft created the Datacenter Academy, a global initiative offering training, mentorship, practical learning through Datacenter Labs, and work experience via internship and apprenticeship. Students graduate with certifications that make them highly employable in the growing industry
 
 :::image type="content" source="../media/tech-data-icons.png" alt-text="Photograph of a person typing on a laptop with digital icons representing technology and data." lightbox="../media/tech-data-icons.png":::
 
@@ -30,17 +25,9 @@ These efforts include employee volunteer programs, financial donations, communit
 
 ## Examples
 
-- **Equinix in Brazil**
-
-  - Equinix launched community outreach programs in São Paulo, supporting underprivileged youth through technology training and donating equipment to local schools.
-
-- **Amazon in South Africa**
-
-  - Amazon donated millions to rural communities near its Cape Town datacenter, supporting local clinics, clean water initiatives, and tech education.
-
-- **Microsoft in Ireland**
-
-  - Microsoft partners with Change X International to support grassroots community organizations near their datacenters. In Dublin, this collaboration has funded 66 community groups, benefiting over 4,500 people. The key goals include launching new local projects focused on environmental sustainability, creating more sustainable, livable, and inclusive communities.
+- **Equinix in Brazil:** Equinix launched community outreach programs in São Paulo, supporting underprivileged youth through technology training and donating equipment to local schools.
+- **Amazon in South Africa:** Amazon donated millions to rural communities near its Cape Town datacenter, supporting local clinics, clean water initiatives, and tech education.
+- **Microsoft in Ireland:** Microsoft partners with Change X International to support grassroots community organizations near their datacenters. In Dublin, this collaboration has funded 66 community groups, benefiting over 4,500 people. The key goals include launching new local projects focused on environmental sustainability, creating more sustainable, livable, and inclusive communities.
 
 ## Local business support
 
@@ -52,6 +39,4 @@ Datacenters serve as key technology hubs and drivers of innovation within commun
 
 ## Examples
 
-- Facebook (Meta) in New Mexico, USA
-
-  - Meta sources materials for its datacenter from local suppliers, boosting small and medium enterprises. They also supported local farmers by funding irrigation projects
+- **Facebook (Meta) in New Mexico, USA:** Meta sources materials for its datacenter from local suppliers, boosting small and medium enterprises. They also supported local farmers by funding irrigation projects
