@@ -1,0 +1,60 @@
+### YamlMime:LearningPath
+uid: learn.introduction-to-datacenter
+title: Introduction to Datacenter
+metadata:
+  title: Introduction to Datacenter
+  description: Learn the fundamentals of datacenters, their roles, components, sustainability, and career opportunities.
+  ms.date: 05/19/2025
+  author: yourname
+  ms.author: youralias
+  ms.topic: learning-path
+summary: |
+  Microsoft Datacenter Academy presents: Introduction to Datacenters learning path. 
+  
+  This learning path is designed to provide learners foundational knowledge on datacenter essentials, fostering industry awareness and career readiness beyond traditional technician roles. It euips learners with essential knowledge to explore pathways in the growing datacenter industry.
+  
+  Learners will gain insights into:
+    - Datacenter fundamentals: Understanding their purpose, evolution, and key components that support modern IT infrastructure.
+    - Datacenter design and architecture: Exploring site selection, facility layout, power and cooling systems, and network infrastructure.
+    -	Core hardware and IT infrastructure: Learning about servers, storage solutions, networking equipment, and essential IT apparatus.
+    - Datacenter operations: Covering system monitoring, maintenance, automation, reliability strategies, and disaster recovery.
+    - Sustainability in datacenters: Examining energy efficiency, renewable energy integration, innovative cooling techniques, and sustainability metrics.
+    - Community and societal impact: Understanding job creation, local partnerships, corporate social responsibility, digital equity, and emergency response roles.
+  By the end of the course, participants will have a solid understanding of datacenter infrastructure and operations, equipping them with the knowledge to pursue industry certifications and career opportunities in this rapidly evolving field.
+  
+  
+  **About this course**
+   This course equips learners with foundational knowledge on datacenter essentials, fostering industry awareness and career readiness beyond traditional technician roles.
+     - This vendor-agnostic course uses real-world examples and industry case studies to help students build business acumen and connect more personally with the datacenter industry.
+     - This general course offers broad industry insights, with technical concepts introduced in modules 3 and 4, focusing more on overall understanding than deep technical training.
+     - The course content was developed, reviewed, and refined by our datacenter operations employees to ensure it is relevant and up to date.
+       - Supported by Microsoft Datacenter Academy.
+       - Special thanks to Wesley Vermandel, Richard Ryan, Truce Major Jack, Shao Low, Barry Godschalk, Suzanna Yekkel, Nick Schoorl, Jonathan Clarke, Romita Hoff, Sarah Wilkinson, Gary McLoughlin and Elena Simonova for their invaluable contributions and expertise in making this course possible!
+
+
+
+prerequisites: |
+  Basic familiarity with computers.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- business-user
+- data-engineer
+- developer
+- higher-ed-educator
+- school-leader
+- student
+- data-scientist
+products:
+- azure
+modules:
+- learn.philanthropies.understand-purpose-evolution-datacenters
+- learn.philanthropies.learn-about-datacenter-design
+- learn.philanthropies.identify-key-hardware-and-it-infrastructure-components
+- learn.philanthropies.describe-best-practices-datacenter-operations
+- learn.philanthropies.describe-sustainability-practices-datacenters
+- learn.philanthropies.learn-contributing-local-economies-through-datacenters
+
+trophy:
+  uid: learn.introduction-to-datacenter.trophy
