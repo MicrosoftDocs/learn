@@ -13,7 +13,7 @@ prerequisites: |
   -   Strong understanding of computer networking, client security, and application concepts.
   -   Experience using Active Directory Domain Services.
 summary: |
-  This learning path will cover Azure AD join and will introduce Microsoft Endpoint Manager. We'll also discuss how to configure policies for enrolling devices to Configuration Manager and Microsoft Intune.
+  This learning path will cover Microsoft Entra join and will introduce Microsoft Endpoint Manager. We'll also discuss how to configure policies for enrolling devices to Configuration Manager and Microsoft Intune.
 iconUrl: /training/achievements/execute-device-enrollment.svg
 levels:
 - intermediate
