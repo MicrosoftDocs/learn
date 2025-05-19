@@ -2,11 +2,11 @@ GitHub is working to personalize GitHub Copilot for every team, project, and rep
 
 Together with [Microsoft's knowledge model](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/), GitHub is harnessing the reservoir of data and insights that exists in every organization to strengthen the connection between all workers and developers. These insights help every idea to go from code to reality without friction. At the same time, GitHub continues to innovate and update the heart of GitHub Copilot, the AI pair programmer that started it all.
 
-GitHub Copilot is heralding a new generation of more productive, fulfilled, and happy developers who ship better software for everyone.
+GitHub Copilot is helping developers work more efficiently and ship quality code.
 
 Now that you've finished this module, you should be able to:
 
-- Explain the GitHub Copilot features and the subscription plans (Free, Pro, Business, and Enterprise).
+- Explain the GitHub Copilot features and the subscription plans (Free, Pro, Pro+, Business, and Enterprise).
 - Get started with and configure GitHub Copilot.
 - Develop by using GitHub Copilot and VS Code.
 

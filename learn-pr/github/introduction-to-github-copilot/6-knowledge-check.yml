@@ -6,7 +6,7 @@ metadata:
   description: Check what you've learned.
   author: a-a-ron
   ms.author: aastewar
-  ms.date: 09/12/2024
+  ms.date: 05/19/2025
   ms.topic: unit
   ms.collection:
     - ce-skilling-ai-copilot
@@ -56,4 +56,18 @@ quiz:
     - content:  "GitHub Copilot Enterprise has an extra layer of security, with IP indemnity and enterprise-grade security, safety, and privacy."
       isCorrect: false
       explanation: "GitHub Copilot Business does have IP indemnity and enterprise-grade security, safety, and privacy."
+  - content: "Which plan includes all Pro features plus additional premium usage and priority infrastructure access?"
+    choices:
+    - content: "GitHub Copilot Free"
+      isCorrect: false
+      explanation: "GitHub Copilot Free does not include Pro features or premium usage."
+    - content: "GitHub Copilot Pro"
+      isCorrect: false
+      explanation: "GitHub Copilot Pro includes advanced features, but not premium usage or priority infrastructure access."
+    - content: "GitHub Copilot Pro+"
+      isCorrect: true
+      explanation: "Correct! GitHub Copilot Pro+ includes all Pro features plus additional premium usage and priority infrastructure access."
+    - content: "GitHub Copilot Enterprise"
+      isCorrect: false
+      explanation: "GitHub Copilot Enterprise is designed for organizations and includes enterprise features, but Pro+ specifically refers to premium usage and priority infrastructure access for individuals."
 
