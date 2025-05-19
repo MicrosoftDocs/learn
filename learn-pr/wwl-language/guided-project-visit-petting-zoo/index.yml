@@ -16,41 +16,23 @@ metadata:
 title: Guided project - Plan a Petting Zoo Visit
 summary: Demonstrate your ability to develop a console app that relies on methods with different parameters and return values to coordinate a visit to the petting zoo.
 abstract: |
-  -
+  -   Plan design details with pseudo-code.
 
-  Plan design details with pseudo-code
+  -   Use methods to perform specific tasks.
 
-  -
+  -   Create methods that accept require and optional parameters.
 
-  Use methods to perform specific tasks
-
-  -
-
-  Create methods that accept require and optional parameters
-
-  -
-
-  Use values returned from methods
+  -   Use values returned from methods.
 prerequisites: |
-  -
+  -   Experience using Visual Studio Code to develop, build, and run C# console applications.
 
-  Experience using Visual Studio Code to develop, build, and run C# console applications
+  -   Experience using C# data types including int, string, and arrays.
 
-  -
+  -   Experience using switch statements, if-else statements, and for loops.
 
-  Experience using C# data types including `int`, `string`, and arrays
+  -   Experience using the Random class to generate a random number.
 
-  -
-
-  Experience using `switch` statements, if-else statements, and `for` loops
-
-  -
-
-  Experience using the `Random` class to generate a random number.
-
-  -
-
-  Basic understanding of C# methods
+  -   Basic understanding of C# methods.
 iconUrl: /training/achievements/guided-project-visit-petting-zoo.svg
 levels:
 - beginner
