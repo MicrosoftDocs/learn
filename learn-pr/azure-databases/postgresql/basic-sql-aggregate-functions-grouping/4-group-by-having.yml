@@ -1,0 +1,25 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl-azure.basic-sql-aggregate-functions-grouping.group-by-having
+title: GROUP BY and HAVING
+metadata:
+  title: GROUP BY and HAVING
+  description: "This unit explains how to use the GROUP BY and HAVING clauses in PostgreSQL to categorize data and filter grouped results. Learners explore how to combine these clauses with aggregate functions to analyze trends and summarize information within distinct groups. Practical examples from the sales database illustrate how to generate meaningful reports from raw data."
+  ms.date: 05/14/2025
+  author: milenak
+  ms.author: mpopovic
+  ms.topic: unit
+###########################################################################
+###
+### If your content is related to a product or service, apply one value from
+### the ms.service allowlist.
+###
+### If your content isn't about a product or service, you can omit the ms.service field.
+###
+### For the list of approved ms.service values, go to
+### https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice.
+###
+### To request new values, go to
+### https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main.
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-group-by-having.md)]

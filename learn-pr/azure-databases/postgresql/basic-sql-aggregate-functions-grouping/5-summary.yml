@@ -1,0 +1,25 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl-azure.basic-sql-aggregate-functions-grouping.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "This unit summarizes key concepts related to aggregate functions and grouping in PostgreSQL. It reinforces the use of COUNT, SUM, AVG, MIN, MAX, and the GROUP BY and HAVING clauses to perform data analysis and generate meaningful summaries. Learners review the core techniques needed to extract insights from relational databases."
+  ms.date: 05/14/2025
+  author: milenak
+  ms.author: mpopovic
+  ms.topic: unit
+###########################################################################
+###
+### If your content is related to a product or service, apply one value from
+### the ms.service allowlist.
+###
+### If your content isn't about a product or service, you can omit the ms.service field.
+###
+### For the list of approved ms.service values, go to
+### https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice.
+###
+### To request new values, go to
+### https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main.
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-summary.md)]
