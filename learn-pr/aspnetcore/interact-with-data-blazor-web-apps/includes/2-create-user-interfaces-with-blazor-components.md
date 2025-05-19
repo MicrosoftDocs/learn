@@ -37,10 +37,10 @@ In this example, the code sets the value of a string variable, named `welcomeMes
 
 ## Create Blazor components
 
-When you create a Blazor app by using the **blazorserver** template in the **dotnet** command-line interface (CLI), several components are included by default:
+When you create a Blazor app by using the **blazor** template in the **dotnet** command-line interface (CLI), several components are included by default:
 
 ```bash
-dotnet new blazorserver -o BlazingPizzaSite
+dotnet new blazor -o BlazingPizzaSite
 ```
 
 The default components include the **Index.razor** home page and the **Counter.razor** demo component. Both of these components are placed in the **Pages** folder. You can either modify these views to fit your needs, or delete them and replace them with new components.

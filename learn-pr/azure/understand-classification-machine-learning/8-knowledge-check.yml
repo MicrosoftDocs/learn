@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: Multiple-choice questions
-  ms.date: 07/20/2024
+  ms.date: 05/12/2025
   author: s-polly
   ms.author: scottpolly
   ms.topic: unit
@@ -12,15 +12,15 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'What is the difference between classical regression and classification models?'
+  - content: "What's the difference between classical regression and classification models?"
     choices:
-    - content: "Regression models provide labels such as ‘cherry’/’banana’ but classification models calculate continuous numbers"
+    - content: "Regression models provide labels such as 'cherry/'banana' but classification models calculate continuous numbers"
       isCorrect: false
       explanation: "Incorrect."
     - content: "Classification models and linear regression models are two names for the same thing"
       isCorrect: false
       explanation: "Incorrect."
-    - content: "Classification models provide labels such as ‘cherry’/’banana’ but regression models calculate continuous numbers"
+    - content: "Classification models provide labels such as 'cherry'/'banana' but regression models calculate continuous numbers"
       isCorrect: true
       explanation: "Correct."
   - content: 'How can we improve real-world model performance?'
@@ -45,4 +45,4 @@ quiz:
     - content: "Log-loss is more permissive to model error if that error is close to correct"
       isCorrect: false
       explanation: "Incorrect."
-
+
