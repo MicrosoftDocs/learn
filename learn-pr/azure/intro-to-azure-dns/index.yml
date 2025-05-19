@@ -13,7 +13,7 @@ metadata:
 title: Introduction to Azure DNS
 summary: This module explains what Azure DNS does, how it works, and when you should choose to use Azure DNS as a solution to meet your organization’s needs.
 abstract:  |
-  In this module, you will:
+  In this module, you'll:
   - Learn what Azure DNS is and the functionality it provides.
   - Determine whether Azure DNS meets the needs of your organization.
   - Understand the difference between Azure DNS public and private zones.
