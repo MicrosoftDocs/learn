@@ -1,0 +1,25 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl-azure.basic-sql-limit-offset-order-by.order-by
+title: ORDER BY
+metadata:
+  title: ORDER BY
+  description: "This unit explains how to use the ORDER BY clause in PostgreSQL to sort query results by one or multiple columns in ascending or descending order. It includes practical examples to help you organize and prioritize data for clearer analysis."
+  ms.date: 05/14/2025
+  author: milenak
+  ms.author: mpopovic
+  ms.topic: unit
+###########################################################################
+###
+### If your content is related to a product or service, apply one value from
+### the ms.service allowlist.
+###
+### If your content isn't about a product or service, you can omit the ms.service field.
+###
+### For the list of approved ms.service values, go to
+### https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice.
+###
+### To request new values, go to
+### https://review.learn.microsoft.com/help/platform/metadata-reporting-taxonomy-requests?branch=main.
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-order-by.md)]

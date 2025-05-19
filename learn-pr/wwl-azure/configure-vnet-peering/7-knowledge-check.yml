@@ -2,9 +2,11 @@
 uid: learn.wwl.configure-vnet-peering.knowledge-check
 title: Module assessment
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 12/13/2024
+  ms.date: 05/19/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

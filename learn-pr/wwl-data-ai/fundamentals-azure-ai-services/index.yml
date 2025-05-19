@@ -21,7 +21,6 @@ abstract: |
 
   -   Understand how to use Azure AI services keys and endpoint for authentication
 
-  -   Create and use an Azure AI services resource in a Content Safety Studio setting
 prerequisites: None
 iconUrl: /training/achievements/generic-badge.svg
 levels:
