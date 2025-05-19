@@ -1,6 +1,6 @@
 :::image type="content" source="../media/digital-learning-icons.png" alt-text="Photograph of a laptop keyboard with digital learning icons projected above it." lightbox="../media/digital-learning-icons.png":::
 
-Datacenter developers and operators actively engage with local communities through partnerships and programs that support education, business growth, and local NGOs (Non-Governmental Organization is a non-profit organization that addresses various social, environmental, or community issues).
+Datacenter developers and operators actively engage with local communities through partnerships and programs that support education, business growth, and local non-gvernmental organizations (NGO).
 
 ## Educational partnerships
 
@@ -33,7 +33,7 @@ These efforts include employee volunteer programs, financial donations, communit
 
 Datacenter developments are based in local communities, with locally based workforce and support and engage with local supply chains, having a huge impact on local economies.
 
-Sourcing for datacenters relies on both global and local supply chains and suppliers to operate, however, they will typically seek sourcing from local suppliers and contractors to stimulate small business growth. 
+Sourcing for datacenters relies on both global and local supply chains and suppliers to operate, however, they'll typically seek to source from local suppliers and contractors to stimulate small business growth. 
 
 Datacenters serve as key technology hubs and drivers of innovation within communities. Many developers and operators collaborate with innovation hubs to support startups and entrepreneurs, helping them access and leverage the opportunities created by cloud regions and data center infrastructure.
 

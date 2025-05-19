@@ -1,5 +1,5 @@
 
-## Core connstruction roles
+## Core construction roles
 
 These roles are key players in building a datacenter's physical infrastructure. They oversee construction, design, and installation, ensuring the facility meets specifications, operates efficiently, and adheres to safety and performance standards.
 
@@ -26,7 +26,7 @@ Engineering plays a vital role in designing and integrating the core infrastruct
 
 ## Procurement
 
-Provurement encompasses cost estimating, supply chain management, and demand planning – detailed tasks and roles that ensure that materials, services, and resources are acquired on time and within budget, while managing the complexities of construction requirements.
+Procurement encompasses cost estimating, supply chain management, and demand planning – detailed tasks and roles that ensure that materials, services, and resources are acquired on time and within budget, while managing the complexities of construction requirements.
 
 | Roles                | Responsibilities                                                                                                                                    |
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -46,10 +46,10 @@ Project controllers play a critical role in the planning, monitoring, and execut
 
 ## Commissioning managers
 
-Commissioning managers are critical for ensuring that all systems and equipment function properly before the facility becomes operational. They are responsible for overseeing the commissioning process, which includes verifying and testing the performance of all critical systems such as power, cooling, and security to ensure they meet the design specifications and operational requirements.
+Commissioning managers are critical for ensuring that all systems and equipment function properly before the facility becomes operational. They're responsible for overseeing the commissioning process, which includes verifying and testing the performance of all critical systems such as power, cooling, and security to ensure they meet the design specifications and operational requirements.
 
 - Overseeing commissioning process: Develop and implement commissioning plans and schedules to ensure all systems are tested and meet design specifications. 
 - System testing and verification: Perform functional testing and verify that all critical infrastructure systems operate as intended under real-world conditions. 
-- Quality control and compliance: Ensure that all systems meet safety, environmental, and regulatory standards before they are approved for operation.
+- Quality control and compliance: Ensure that all systems meet safety, environmental, and regulatory standards before they're approved for operation.
 - Coordination with contractors and vendors: Collaborate with contractors and vendors to ensure proper installation and configuration of all systems prior to testing. 
 - Handover and training: Prepare the facility for handover to operations by ensuring systems are fully operational and provide necessary training to the operations team.

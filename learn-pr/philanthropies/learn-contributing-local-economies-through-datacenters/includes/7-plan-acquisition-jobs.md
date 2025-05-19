@@ -1,8 +1,8 @@
-Let's now looks at various roles in the datacenter planning and acauisition stage:
+Let's now look at various roles in the datacenter planning and acquisition stage:
 
 ## Lease and land development
 
-There are several roles that help with procesing intial land acauistion and leasing formalities for datacenter setup. Here are some important roles and respective responsibiliites"
+There are several roles that help with processing initial land acquisition and leasing formalities for datacenter setup. Here are some important roles and respective responsibilities"
 
 |Role|Responsibilities|
 |----|---|
@@ -21,7 +21,7 @@ Network acquisition, OSP telecom engineering (On Site Planning), sourcing engine
 |Network acquisition|- Secures and acquires network assets, such as fiber-optic cables, bandwidth, and peering agreements, to ensure the datacenter has high speed, reliable internet and interconnectivity.</br>- Negotiates contracts with telecom providers, internet service providers (ISPs), and cloud interconnect partners.</br>- Analyzes the network demand and capacity needs for the datacenter to plan for current and future growth.|
 |OSP telecom engineering (outside plant engineering/on-site planning)| - Designs, plans, and implements the physical network infrastructure outside the datacenter, such as underground or aerial fiber-optic cabling.</br>- Conducts site surveys to determine the best routes for fiber installation while avoiding obstacles like existing utilities, geographic challenges, or environmental restrictions.</br>- Coordinates with construction teams for trenching, conduit installation, and cable laying.</br>- Ensures compliance with local regulations, safety codes, and environmental considerations.|
 |Sourcing engineering (purchasing)|- Sources and procures network-related equipment, components, and services required to build and maintain the datacenter's connectivity.</br>- Negotiates with vendors for switches, routers, fiber-optic cables, and other telecom equipment to get the best pricing and delivery terms.|
-|Subsea operations|- Manage subsea fiber-optic cable systems, which connect datacenters across continents via undersea cables.</br>- Coordinate with global telecom providers and consortiums to acquire bandwidth on existing subsea cables or participate in new cable projects.</br>- Oversee the maintenance, repair, and operation of subsea cable systems to ensure minimal downtime and high performance.|
+|Subsea operations|- Manage subsea fiber-optic cable systems, which connect datacenters across continents via undersea cables.</br>- Coordinate with global telecom providers and consortium to acquire bandwidth on existing subsea cables or participate in new cable projects.</br>- Oversee the maintenance, repair, and operation of subsea cable systems to ensure minimal downtime and high performance.|
 |Fiber delivery engineering|- Oversees the design and deployment of fiber-optic infrastructure to deliver high-speed connectivity to and from the datacenter.</br>- Manages fiber buildouts, from construction planning to splicing and testing the fiber.</br>- Ensures the timely delivery of fiber networks by coordinating with contractors, vendors, and telecom providers.</br>- Tests and certifies fiber performance, including latency, bandwidth, and redundancy.|
 
 

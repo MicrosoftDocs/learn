@@ -1,10 +1,10 @@
 
-Datacenter operations (DCOps) includes management and maintenance of the day-to-day activities and infrastructure of a datacenter, ensuring its systems, equipment, and services operate smoothly and efficiently. From an organizational standpoint, DCOps consists of multiple teams managing different aspects of datacenter operations, from physical infrastructure to IT services. Their primary focus is maintaining uptime, ensuring efficiency, and providing continuous support to both internal and external clients.
+Datacenter operations (DCOps) include management and maintenance of the day-to-day activities and infrastructure of a datacenter, ensuring its systems, equipment, and services operate smoothly and efficiently. From an organizational standpoint, DCOps consists of multiple teams managing different aspects of datacenter operations, from physical infrastructure to IT services. Their primary focus is maintaining uptime, ensuring efficiency, and providing continuous support to both internal and external clients.
 
 **Critical environment technician, CE manager**
 
 - A critical environment in a datacenter refers to areas or conditions where specific operations, systems, or components are essential for the functionality, performance, and reliability of the datacenter. Any failure or disruption in these areas can lead to significant downtime, data loss, or service interruption. 
-- The role involves managing and maintaining critical datacenter systems and equipment, ensuring safety and performance through monitoring, maintenance, and troubleshooting. The individual leads incident response teams, performs complex repairs independently, and guides third party contractors on site. They track assets and work orders using a computerized system, prepare detailed reports, and ensure adherence to safety and security standards. Additionally, the role includes managing team performance, supporting employee development, and overseeing project execution.
+- The role involves managing and maintaining critical datacenter systems and equipment, ensuring safety and performance through monitoring, maintenance, and troubleshooting. The individual leads incident response teams perform complex repairs independently and guide third party contractors on site. They track assets and work orders using a computerized system, prepare detailed reports, and ensure adherence to safety and security standards. Additionally, the role includes managing team performance, supporting employee development, and overseeing project execution.
 
 **DC operations management** 
 
