@@ -17,7 +17,7 @@ metadata:
 title: Design and implement network security
 summary: You learn to design and implement network security solutions such as Azure DDoS, Network Security Groups, Azure Firewall, and Web Application Firewall.
 abstract: |
-  At the end of this module, you are able to:
+  At the end of this module, you're able to:
 
   -   Get network security recommendations with Microsoft Defender for Cloud
 
