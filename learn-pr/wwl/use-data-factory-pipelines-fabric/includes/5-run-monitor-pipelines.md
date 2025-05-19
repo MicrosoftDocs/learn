@@ -11,3 +11,4 @@ You can view the run history for a pipeline to see details of each run, either f
 When you view a pipeline run history from the workspace page, you can select the **Run start** value to see the details of an individual run; including the option to view the individual execution time for each activity as a Gantt chart.
 
 ![Screenshot of a pipeline run details in Microsoft Fabric.](../media/pipeline-run-details.png) <!-- Update screenshot for release -->
+
