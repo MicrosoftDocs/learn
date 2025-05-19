@@ -4,7 +4,7 @@ metadata:
   title: Develop AI information extraction solutions in Azure
   description: Use Azure AI to extract information from content.
   brand: azure
-  ms.date: 05/15/2025
+  ms.date: 05/16/2025
   author: GraemeMalcolm
   ms.author: gmalc
   ms.topic: learning-path
@@ -30,8 +30,12 @@ subjects:
 - artificial-intelligence
 products:
   - ai-services
+  - azure-cognitive-search
 modules:
 - learn.wwl.analyze-content-ai
 - learn.wwl.analyze-content-ai-api
+- learn.wwl.use-prebuilt-form-recognizer-models
+- learn.wwl.work-with-form-recognizer
+- learn.wwl.ai-knowledge-mining
 trophy:
   uid: learn.ai-extract-information.trophy
