@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.develop-ai-agent-azure.when-use-agent-service
-title: Develop agents with the Azure AI Agent Service
+title: Develop agents with the Azure AI Foundry Agent Service
 metadata:
-  title: Develop agents with the Azure AI Agent Service
-  description: This unit explains how to use Azure AI Agent Service to develop agents.
+  title: Develop agents with the Azure AI Foundry Agent Service
+  description: This unit explains how to use Azure AI Foundry Agent Service to develop agents.
   author: ivorb
   ms.author: berryivor
-  ms.date: 04/03/2025
+  ms.date: 05/16/2025
   ms.topic: unit
 durationInMinutes: 5
 content: |

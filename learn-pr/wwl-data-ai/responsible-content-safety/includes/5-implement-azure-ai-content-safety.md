@@ -1,4 +1,4 @@
-Now, it's your chance to use Azure AI Content Safety yourself.
+Now, it's your chance to use Azure AI Foundry Content Safety yourself.
 
 > [!NOTE]
 > To complete this lab, you will need an [Azure subscription](https://azure.microsoft.com/free?azure-portal=true).

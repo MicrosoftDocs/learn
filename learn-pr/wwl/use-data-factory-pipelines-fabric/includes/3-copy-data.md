@@ -28,3 +28,4 @@ If you need to apply transformations to the data as it is ingested, or merge dat
 
 > [!TIP]
 > To learn more about Dataflow (Gen2) in Microsoft Fabric to ingest data, consider completing the [Ingest Data with Dataflows Gen2 in Microsoft Fabric](/training/modules/use-dataflow-gen-2-fabric) module.
+

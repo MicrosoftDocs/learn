@@ -3,16 +3,16 @@ There are many ways that developers can create AI agents, including multiple fra
 > [!NOTE]
 > Many of the services discussed in this module are in preview. Details are subject to change.
 
-## Azure AI Agent Service
+## Azure AI Foundry Agent Service
 
-Azure AI Agent Service is a managed service in Azure that is designed to provide a framework for creating, managing, and using AI agents within Azure AI Foundry. The service is based on the OpenAI Assistants API but with increased choice of models, data integration, and enterprise security; enabling you to use both the OpenAI SDK and the Azure Foundry SDK to develop agentic solutions.
+Azure AI Foundry Agent Service is a managed service in Azure that is designed to provide a framework for creating, managing, and using AI agents within Azure AI Foundry. The service is based on the OpenAI Assistants API but with increased choice of models, data integration, and enterprise security; enabling you to use both the OpenAI SDK and the Azure Foundry SDK to develop agentic solutions.
 
 > [!TIP]
-> For more information about Azure AI Agent Service, see the **[Azure AI Agent Service documentation](/azure/ai-services/agents/)**.
+> For more information about Foundry Agent Service, see the **[Azure AI Foundry Agent Service documentation](/azure/ai-services/agents/)**.
 
 ## OpenAI Assistants API
 
-The OpenAI Assistants API provides a subset of the features in Azure AI Agent Service, and can only be used with OpenAI models. In Azure, you can use the Assistants API with the Azure OpenAI service, though in practice the Azure AI Agent Service provides greater flexibility and functionality for agent development on Azure.
+The OpenAI Assistants API provides a subset of the features in Foundry Agent Service, and can only be used with OpenAI models. In Azure, you can use the Assistants API with Azure OpenAI, though in practice the Foundry Agent Service provides greater flexibility and functionality for agent development on Azure.
 
 > [!TIP]
 > For more information about using the OpenAI Assistants API in Azure, see **[Getting started with Azure OpenAI Assistants](/azure/ai-services/openai/how-to/assistant)**.
@@ -59,8 +59,8 @@ With such a wide range of available tools and frameworks, it can be challenging 
 - For business users with little or no software development experience, Copilot Studio agent builder in Microsoft 365 Copilot Chat provides a way to create simple declarative agents that automate everyday tasks. This approach can empower users across an organization to benefit from AI agents with minimal impact on IT.
 - If business users have sufficient technical skills to build low-code solutions using Microsoft Power Platform technologies, Copilot Studio enables them to combine those skills with their business domain knowledge and build agent solutions that extend the capabilities of Microsoft 365 Copilot or add agentic functionality to common channels like Microsoft Teams, Slack, or Messenger.
 - When an organization needs more complex extensions to Microsoft 365 Copilot capabilities, professional developers can use the Microsoft 365 Agents SDK to build agents that target the same channels as Copilot Studio.
-- To develop agentic solutions that use Azure back-end services with a wide choice of models, custom storage and search services, and integration with Azure AI services, professional developers should use Azure AI Agent Service in Azure AI Foundry.
-- Start with Azure AI Agent Service to develop single, standalone agents. When you need to build multi-agent solutions, use Semantic Kernel to orchestrate the agents in your solution.
+- To develop agentic solutions that use Azure back-end services with a wide choice of models, custom storage and search services, and integration with Azure AI services, professional developers should use Foundry Agent Service.
+- Start with Foundry Agent Service to develop single, standalone agents. When you need to build multi-agent solutions, use Semantic Kernel to orchestrate the agents in your solution.
 
 > [!NOTE]
 > There's overlap between the capabilities of each agent development solution, and in some cases factors like existing familiarity with tools, programming language preferences, and other considerations will influence the decision.
