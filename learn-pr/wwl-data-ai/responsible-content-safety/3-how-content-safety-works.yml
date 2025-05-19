@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.responsible-ai-content-safety.how-content-safety-works
 
-title: How does Azure AI Content Safety work?
+title: How does Azure AI Foundry Content Safety work?
 metadata:
-  title: How does Azure AI Content Safety work?
-  description: Azure AI Content Safety harnesses the power of AI to identify harmful text or image content. 
-  ms.date: 10/17/2024
+  title: How does Azure AI Foundry Content Safety work?
+  description: Azure AI Foundry Content Safety harnesses the power of AI to identify harmful text or image content. 
+  ms.date: 05/16/2025
   author: ivorb
   ms.author: berryivor
   ms.topic: unit

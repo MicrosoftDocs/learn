@@ -2,8 +2,8 @@
 uid: learn.wwl.build-agent-with-custom-tools
 metadata:
   title: Integrate custom tools into your agent
-  description: Learn how to build an agent with custom tools using the Azure AI Agent Service.
-  ms.date: 04/03/2025
+  description: Learn how to build an agent with custom tools using the Azure AI Foundry Agent Service.
+  ms.date: 05/16/2025
   author: ivorb
   ms.author: berryivor
   ms.topic: module-standard-task-based 
@@ -14,11 +14,11 @@ abstract: |
   By the end of this module, you'll be able to:
     - Describe the benefits of using custom tools with your agent.
     - Explore the different options for custom tools.
-    - Build an agent that integrates custom tools using the Azure AI Agent Service.
+    - Build an agent that integrates custom tools using the Azure AI Foundry Agent Service.
 prerequisites: |
   - Familiarity with Azure and the Azure portal.
   - An understanding of generative AI. You can learn more with [Fundamentals of Generative AI](/training/modules/fundamentals-generative-ai/).
-  - It's highly recommended you have experience with the Azure AI Agent Service. You can learn more with [Develop an AI agent with Azure AI Agent Service](/training/modules/develop-ai-agent-azure/).
+  - It's highly recommended you have experience with the Azure AI Foundry Agent Service. You can learn more with [Develop an AI agent with Azure AI Foundry Agent Service](/training/modules/develop-ai-agent-azure/).
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
   - intermediate
