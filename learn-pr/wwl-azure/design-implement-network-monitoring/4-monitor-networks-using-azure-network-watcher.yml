@@ -6,7 +6,7 @@ metadata:
   prefetch-feature-rollout: true
   title: Monitor your networks using Azure Network Watcher
   description: "Monitor your networks using Azure Network Watcher"
-  ms.date: 05/01/2025
+  ms.date: 05/19/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
