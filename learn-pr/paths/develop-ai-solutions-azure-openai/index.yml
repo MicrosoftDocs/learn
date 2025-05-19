@@ -1,8 +1,8 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.develop-ai-solutions-azure-openai
 metadata:
-  title: Develop Generative AI solutions with Azure OpenAI Service
-  description: Develop Generative AI solutions with Azure OpenAI Service
+  title: Develop Generative AI solutions with Azure OpenAI in Foundry Models
+  description: Develop Generative AI solutions with Azure OpenAI in Foundry Models
   ms.date: 12/03/2024
   author: ivorb
   ms.author: berryivor
@@ -11,14 +11,14 @@ metadata:
     - build-2023
     - build-2023-dataai
     - ai-learning-hub
-title: Develop Generative AI solutions with Azure OpenAI Service
+title: Develop Generative AI solutions with Azure OpenAI in Foundry Models
 prerequisites: |
   Before starting this learning path, you should already have:
   *   Familiarity with Azure and the Azure portal.
   *   Experience programming with C# or Python.
   If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path before starting this one.
 summary: |
-  Azure OpenAI Service provides access to OpenAI's powerful large language models such as GPT and Embeddings models. These models enable various natural language processing (NLP) solutions to understand, converse, and generate content. Users can access the service through REST APIs, SDKs, and Azure AI Foundry.
+  Azure OpenAI in Foundry Models provides access to OpenAI's powerful large language models such as GPT and Embeddings models. These models enable various natural language processing (NLP) solutions to understand, converse, and generate content. Users can access the service through REST APIs, SDKs, and Azure AI Foundry.
 iconUrl: /training/achievements/develop-ai-solutions-azure-openai.svg
 levels:
 - intermediate

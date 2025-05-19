@@ -13,4 +13,4 @@ To create an Azure AI services resource, sign in to the [Azure portal](https://p
 
 ![Screenshot of Azure AI services in the Azure portal marketplace.](../media/azure-ai-services-marketplace.png)
 
-To create a single-service resource, search for the specific Azure AI service such as Face, Language, or Content Safety, and so on. Most AI services have a free price tier to allow you to explore their capabilities. After clicking **Create** for the resource you require, you will be prompted to complete details of your subscription, the resource group to contain the resource, the region, a unique name, and the price tier. 
+To create a single-service resource, search for the specific Azure AI service such as Face or Language. Most AI services have a free price tier to allow you to explore their capabilities. After clicking **Create** for the resource you require, you will be prompted to complete details of your subscription, the resource group to contain the resource, the region, a unique name, and the price tier. 
