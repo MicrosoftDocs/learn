@@ -200,7 +200,7 @@ Your solution requires several Azure resources for deployment, which you create 
       --name $webName \
       --resource-group $rgName \
       --plan $planName \
-      --runtime "DOTNETCORE|6.0"
+      --runtime "DOTNETCORE|8.0"
     ```
 
 1. Azure Functions requires a storage account for deployment. Run the following `az storage account create` command to create it:
