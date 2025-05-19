@@ -32,8 +32,8 @@ ORDER BY country, city;
 
 This query retrieves all columns `(*)` from the `sales.customers` table and then sorts the resulting rows.
 The sorting is done in two levels:
-    1. First, the results are sorted alphabetically by the country column. This means all customers from "Argentina" will be grouped together, followed by customers from "Austria," and so on.
-    1. Within each group of customers from the same country, the results are further sorted alphabetically by the city column. So, if you have multiple customers from "Germany," they'll be ordered by their city names (for example, "Aachen" before "Berlin").
+    - First, the results are sorted alphabetically by the country column. This means all customers from "Argentina" will be grouped together, followed by customers from "Austria," and so on.
+    - Within each group of customers from the same country, the results are further sorted alphabetically by the city column. So, if you have multiple customers from "Germany," they'll be ordered by their city names (for example, "Aachen" before "Berlin").
 
 In essence, this query provides a customer list that is organized primarily by `country` and then, within each `country`, organized by `city`. This makes it easy to find customers from a specific region.  
 Additionally, combining this approach with `ASC` or `DESC` modifiers allows full control over the sorting direction for each column.
