@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.wwl.guided-project-visit-petting-zoo
 metadata:
-  title: Guided project - Plan a Petting Zoo Visit
+  title: Guided Project - Plan a Petting Zoo Visit
   description: "Create an application that coordinates school visits to a petting zoo. This project requires the use of different methods with return types and parameters to complete the code."
-  ms.date: 03/21/2024
+  ms.date: 05/19/2025
   author: wwlpublish
   ms.author: buzahid
   ms.topic: module
@@ -16,24 +16,42 @@ metadata:
 title: Guided project - Plan a Petting Zoo Visit
 summary: Demonstrate your ability to develop a console app that relies on methods with different parameters and return values to coordinate a visit to the petting zoo.
 abstract: |
-  -   Plan design details with pseudo-code
+  -
 
-  -   Use methods to perform specific tasks
+  Plan design details with pseudo-code
 
-  -   Create methods that accept require and optional parameters
+  -
 
-  -   Use values returned from methods
+  Use methods to perform specific tasks
+
+  -
+
+  Create methods that accept require and optional parameters
+
+  -
+
+  Use values returned from methods
 prerequisites: |
-  -   Experience using Visual Studio Code to develop, build, and run C# console applications
+  -
 
-  -   Experience using C# data types including `int`, `string`, and arrays
+  Experience using Visual Studio Code to develop, build, and run C# console applications
 
-  -   Experience using `switch` statements, if-else statements, and `for` loops
+  -
 
-  -   Experience using the `Random` class to generate a random number.
+  Experience using C# data types including `int`, `string`, and arrays
 
-  -   Basic understanding of C# methods
-iconUrl: /training/achievements/generic-badge.svg
+  -
+
+  Experience using `switch` statements, if-else statements, and `for` loops
+
+  -
+
+  Experience using the `Random` class to generate a random number.
+
+  -
+
+  Basic understanding of C# methods
+iconUrl: /training/achievements/guided-project-visit-petting-zoo.svg
 levels:
 - beginner
 roles:
