@@ -2,9 +2,9 @@ In the previous unit, you learned that a debugger helps you control your program
 
 Let's start by learning how to use the Visual Studio debugger with .NET.
 
-## Getting Started with the Visual Studio Debugger
+## Getting started with the Visual Studio Debugger
 
-Launch the application with the debugger attached using the **Start** button at the top of Visual Studio, which now includes our project name. Once the app is running, more debugging tools and features become available.
+Use the **Start** button in the Visual Studio command bar to launch the application with the debugger attached. Notice that the command bar now includes our project name. Once the app is running, more debugging tools and features become available.
 
 :::image source="../media/visual-studio-debugging-controls.png" alt-text="Screenshot of Visual Studio debugging controls.":::
 
