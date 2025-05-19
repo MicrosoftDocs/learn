@@ -3,6 +3,7 @@ Let's now looks at various roles in the datacenter planning and acauisition stag
 ## Lease and land development
 
 There are several roles that help with procesing intial land acauistion and leasing formalities for datacenter setup. Here are some important roles and respective responsibiliites"
+
 |Role|Responsibilities|
 |----|---|
 |Lease strategy and execution strategy managers|These individuals are responsible for creating and implementing the strategy for leasing datacenter space. This includes:</br>- Developing leasing strategies for clients, determining the types of leases to offer (e.g., short-term, long-term, wholesale, or retail).</br>- Negotiating lease terms with tenants (e.g., colocation customers).</br>- Ensuring the financial success of the lease agreements and maximizing the profitability of the leased space.
