@@ -56,4 +56,4 @@ Better connectivity and internet access for residents, businesses, and schools i
 
   - This initiative aims to bring broadband access to rural and underserved communities in the United States. 
 
-  - This initiave partners with local internet service providers and applies the datacenter infrastructure to successfully expand high speed internet access, benefiting residents, businesses, and schools.
+  - This inititave partners with local internet service providers and applies the datacenter infrastructure to successfully expand high speed internet access, benefiting residents, businesses, and schools.

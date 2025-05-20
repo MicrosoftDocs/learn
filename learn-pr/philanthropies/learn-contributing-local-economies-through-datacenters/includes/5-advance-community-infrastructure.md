@@ -83,7 +83,7 @@ Hyperlocal datacenters are smaller facilities strategically located closer to en
 Datacenters play a crucial role in enhancing community resilience, providing vital support during emergencies or disruptions. Their presence ensures reliable energy and connectivity, helping communities stay connected and recover swiftly.
 
 - **Backup power and emergency services:**Datacenters often maintain significant energy storage and backup power capabilities, which can be redirected to support local grids or essential services during crises. Collaboration with local governments to serve as emergency operation hubs.
-  - **Example**: During Australia's bushfires, AWS provided backup power to hospitals and emergency services.
+  - **Example**: During Australia's bush fires, AWS provided backup power to hospitals and emergency services.
 
 - **Grid stabilization:**Datacenters participate in demand-response programs, scaling energy use based on grid needs to prevent outages. 
   - **Example**: Facebook in Oregon adjusts energy use during peak demand to maintain grid stability for local communities.
