@@ -111,7 +111,7 @@ You're an identity admin with Woodgrove. You're a member of the helpdesk, and ju
 
 You're an identity admin with Woodgrove. Your company has used many enterprise applications over the years, and some are no longer used. Your job is to track down unused application in your Microsoft Entra tenant, and remove them. You should research if there's any suspicious activity associated with the apps or their data as part of the work. Security Copilot in Microsoft Entra can help.
 
-1. Open the simulated environment by selecting this link: **[Microsoft Entra admin center](https://app.highlights.guide/start/fdc34222-f2a2-4eb6-a8d0-b1085754e463?token=045faae1-1078-4eac-bf56-e12472eddaf9&azure-portal=true)**.
+1. Open the simulated environment by selecting this link: **[Microsoft Entra admin center](https://app.highlights.guide/start/104c6555-1915-48d6-a05e-0783017959a0?token=045faae1-1078-4eac-bf56-e12472eddaf9&azure-portal=true)**.
 1. Review the data provided on the **Microsoft Entra dashboard**.
 1. Find the section on your **Identity Secure Score**.
 
@@ -135,7 +135,7 @@ You're an identity admin with Woodgrove. Your company has used many enterprise a
    > While this simulation doesn't actively use these steps to remove application, you can see how Security Copilot can quickly help you remove unused applications.
 
 1. Scroll up in the **Copilot window** to see the list of apps originally provided.
-1. Find the application called **Woodgrove Intranet**, and then copy the owner’s name into your clipboard: **Braden Goudy (Corp)**.
+1. Find the application called **Woodgrove Intranet**, and take note of the owner’s name: **Braden Goudy (Corp)**.
 1. Close the **Security Copilot** window for now.
 1. Select the **Favorites menu** from the menu on the left side of the screen.
 
@@ -159,7 +159,7 @@ You're an identity admin with Woodgrove. Your company has used many enterprise a
 
 You're an identity admin with Woodgrove. You have been advised that the user Rovshan Hasanli might have some strange behavior when connecting to the Woodgrove site. You want to use the Audit Logs to research the activities.
 
-1. Open the simulated environment by selecting this link: **[Microsoft Entra admin center](https://app.highlights.guide/start/104c6555-1915-48d6-a05e-0783017959a0?token=045faae1-1078-4eac-bf56-e12472eddaf9&azure-portal=true)**.
+1. Open the simulated environment by selecting this link: **[Microsoft Entra admin center](https://app.highlights.guide/start/fdc34222-f2a2-4eb6-a8d0-b1085754e463?token=045faae1-1078-4eac-bf56-e12472eddaf9&azure-portal=true)**.
 1. In the upper right side of the screen select the **Security Copilot button**.
 1. Let’s start with a simple prompt like **Tell me about user Rovshan Hasanli?**.
 1. We need to find out information about the user from the **Audit Logs**. Use the prompt **Show me Microsoft Entra audit log events initiated by that user in the last week** to find more information.
@@ -188,7 +188,7 @@ You're an identity admin with Woodgrove. You have been advised that the user Rov
 1. When the page opens select the **Add filters** button.
 1. Choose the **Initiated by (actor)** from the lost filters and enter **Rovshan**, then select **Apply**.
 
-   - There are about PIM activities performed by Rovshan.
+   - There are several PIM activities performed by Rovshan.
 
 1. Again return to the **Security Copilot window** and find the link **Sign-in events page**.
 1. Select the link **Sign-in events page**.
