@@ -18,13 +18,13 @@ quiz:
     choices:  
     - content: "Chat, Embedding, and Completion"  
       isCorrect: false  
-      explanation: "Each call to the Azure OpenAI service requires a key, endpoint, and deployment name."  
+      explanation: "Each call to Azure OpenAI requires a key, endpoint, and deployment name."  
     - content: "Key, Endpoint, and Deployment name"  
       isCorrect: true  
-      explanation: "Each call to the Azure OpenAI service requires a key, endpoint, and deployment name."  
+      explanation: "Each call to Azure OpenAI requires a key, endpoint, and deployment name."  
     - content: "Summary, Deployment name, and Endpoint"  
       isCorrect: false  
-      explanation: "Each call to the Azure OpenAI service requires a key, endpoint, and deployment name."  
+      explanation: "Each call to Azure OpenAI requires a key, endpoint, and deployment name."  
   - content: "What are the three available endpoints for interacting with a deployed Azure OpenAI model?"  
     choices:  
     - content: "Completion, ChatCompletion, and Translation"  
@@ -47,4 +47,4 @@ quiz:
     - content: "TranslateCompletion"  
       isCorrect: false  
       explanation: "The best model to use for the next response in a conversation is ChatCompletion"  
-
+

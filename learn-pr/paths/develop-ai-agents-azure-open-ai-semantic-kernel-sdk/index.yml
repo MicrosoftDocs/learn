@@ -12,7 +12,7 @@ prerequisites: |
   -   Experience programming in C#.
   -   Visual Studio Code IDE installed.
   -   Familiarity with Azure and the Azure portal.
-  -   Access to Azure OpenAI Services.
+  -   Access to Azure OpenAI.
 summary: |
   Learn how to use the Semantic Kernel SDK to build intelligent applications that automate tasks and perform natural language processing.
 iconUrl: /training/achievements/generic-trophy.svg

@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Check your knowledge of building an agent with custom tools."
-  ms.date: 04/03/2025
+  ms.date: 05/16/2025
   author: ivorb
   ms.author: berryivor
   ms.topic: unit
@@ -12,7 +12,7 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "What are custom tools, and how can they help you develop effective agents with Azure AI Agent Service?"  
+  - content: "What are custom tools, and how can they help you develop effective agents with Azure AI Foundry Agent Service?"  
     choices:  
     - content: "Callable functions that an agent can use to extend its capabilities."  
       isCorrect: true  

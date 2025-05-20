@@ -5730,3 +5730,8 @@ achievements:
   title: Data tracking and synchronization with Azure SQL Database
   summary: "This module introduces you to several data tracking, loading, and streaming tools that you can use to track or synchronize data changes from your Azure SQL Database to other destinations. More specifically, we cover: change data capture (CDC) and change tracking."
   iconUrl: /training/achievements/learn-azure-sql-replication.svg
+- uid: learn.make-recommendations-ai-personalizer.badge
+  type: badge
+  title: Make recommendations with Azure AI Personalizer
+  summary: Learn how to use Azure AI Personalizer to empower your apps with smarter decision making through improved recommendations.
+  iconUrl: /learn/achievements/generic-badge.svg
