@@ -8,7 +8,7 @@ Application Insights is designed to help you continuously improve the performanc
 
 Let's examine some characteristics of Application Insights for Azure Monitor.
 
-- Application Insights works on various platforms including .NET, Node.js and Java EE.
+- Application Insights works on various platforms including .NET, Node.js, and Java EE.
 
 - The feature can be used for configurations that are hosted on-premises, in a hybrid environment, or in any public cloud.
 
@@ -39,4 +39,4 @@ Application Insights is ideal for supporting your development team. The feature 
 - **Consider Custom events and metrics**. Write your own custom events and metric tracking algorithms as client or server code. Track business events such as number of items sold, or number of games won.
 
 > [!TIP]
-> Consider extending your learning with the [Troubleshoot solutions by using Application Insights](/training/paths/az-204-instrument-solutions-support-monitoring-logging/) training module. 
+> Consider extending your learning with the [*Troubleshoot solutions by using Application Insights*](/training/paths/az-204-instrument-solutions-support-monitoring-logging/) training module. 

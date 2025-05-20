@@ -18,7 +18,7 @@ Let's examine some of the basic configuration settings you need to create an app
 
 #### Post-creation settings
 
-After your app is created, other Configuration settings become available in the Azure portal, including app deployment options and path mapping.
+After your app is created, other **Configuration** settings become available in the Azure portal, including app deployment options and path mapping.
 
 :::image type="content" source="../media/web-app-configuration-27facdc5.png" alt-text="Screenshot that shows other configuration options for an app with the App Service in the Azure portal.":::
 
