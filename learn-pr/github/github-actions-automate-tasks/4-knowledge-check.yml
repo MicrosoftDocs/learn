@@ -55,7 +55,7 @@ quiz:
       explanation: "Event triggers use Git references, and opening an issue produces a Git reference."
   - content: "What are the two types of manual events that can trigger a GitHub Actions workflow?"
     choices:
-    - content: "workflow_run and repository_run"
+    - content: "workflow_run and push_manual"
       isCorrect: false
       explanation: "workflow_run is an event that triggers when another workflow completes, not a manual event. repository_run is not a valid GitHub Actions event."
     - content: "workflow_dispatch and repository_dispatch"
