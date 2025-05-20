@@ -4,12 +4,13 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check"
-  ms.date: 05/08/2024
+  ms.date: 05/19/2025
   author: wwlpublish
   ms.author: theresai
   ms.topic: unit
   ms.custom:
   - build-2023
+  - ignite-2024
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
