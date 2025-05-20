@@ -188,7 +188,7 @@ You're an identity admin with Woodgrove. You have been advised that the user Rov
 1. When the page opens select the **Add filters** button.
 1. Choose the **Initiated by (actor)** from the lost filters and enter **Rovshan**, then select **Apply**.
 
-   - There are about PIM activities performed by Rovshan.
+   - There are several PIM activities performed by Rovshan.
 
 1. Again return to the **Security Copilot window** and find the link **Sign-in events page**.
 1. Select the link **Sign-in events page**.
