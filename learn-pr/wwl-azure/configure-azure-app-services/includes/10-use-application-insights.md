@@ -1,6 +1,8 @@
-Azure Application Insights is a feature of Azure Monitor that lets you monitor your live applications. You can integrate Application Insights with your App Service configure to automatically detect performance anomalies in your apps. 
+[Azure Application Insights](/azure/azure-monitor/app/app-insights-overview) is a feature of Azure Monitor that lets you monitor your live applications. You can integrate Application Insights with your App Service configure to automatically detect performance anomalies in your apps. 
 
 Application Insights is designed to help you continuously improve the performance and usability of your apps. The feature offers powerful analytics tools to help you diagnose issues and understand what users actually do with your apps.
+
+:::image type="content" source="../media/app-insights-16629887.png" alt-text="Diagram that shows Azure Application Insights receiving information from web pages, client apps, and web services, which is transferred to Alerts, Power BI, and Visual Studio." border="false":::
 
 ### Things to know about Application Insights
 
@@ -13,8 +15,6 @@ Let's examine some characteristics of Application Insights for Azure Monitor.
 - Application Insights integrates with your Azure Pipeline processes, and has connection points to many development tools.
 
 - You can monitor and analyze data from mobile apps by integrating with Visual Studio App Center.
-
-:::image type="content" source="../media/app-insights-16629887.png" alt-text="Diagram that shows Azure Application Insights receiving information from web pages, client apps, and web services, which is transferred to Alerts, Power BI, and Visual Studio." border="false":::
 
 ### Things to consider when using Application Insights
 
@@ -37,3 +37,6 @@ Application Insights is ideal for supporting your development team. The feature 
 - **Consider Diagnostic trace logs**. Implement trace logs from your app to help correlate trace events with requests and diagnose issues.
 
 - **Consider Custom events and metrics**. Write your own custom events and metric tracking algorithms as client or server code. Track business events such as number of items sold, or number of games won.
+
+> [!TIP]
+> Consider extending your learning with the [Troubleshoot solutions by using Application Insights](/training/paths/az-204-instrument-solutions-support-monitoring-logging/) training module. 

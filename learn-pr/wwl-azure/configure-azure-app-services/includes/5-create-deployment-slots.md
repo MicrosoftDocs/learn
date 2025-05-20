@@ -1,5 +1,7 @@
 When you deploy your web app, web app on Linux, mobile backend, or API app to Azure App Service, you can use a separate deployment slot instead of the default production slot.
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=f88e06a9-2871-4953-920e-3fcc1f618b64]
+
 ### Things to know about deployment slots
 
 Let's take a closer look at the characteristics of deployment slots.
