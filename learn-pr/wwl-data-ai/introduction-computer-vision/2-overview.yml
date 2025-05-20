@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-images-computer-vision.overview
+title: Overview
+metadata:
+  title: Overview
+  description: Overview
+  author: wwlpublish
+  ms.author: sheryang
+  ms.date: 5/20/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-overview.md)]
