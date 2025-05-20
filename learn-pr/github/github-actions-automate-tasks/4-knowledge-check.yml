@@ -69,7 +69,7 @@ quiz:
       explanation: "workflow_trigger doesn't exist in GitHub Actions. While repository_webhook sounds similar to webhooks, the correct term for the external API-triggered event is repository_dispatch."
   - content: "What is the primary benefit of using GitHub's larger hosted runners?"
     choices:
-    - content: "They provide additional CPU and memory resources for running more demanding jobs."
+    - content: "They provide additional CPU and memory resources for running resource-intensive jobs."
       isCorrect: true
       explanation: "Larger runners offer increased CPU and memory, allowing you to run workflows that require more resources than standard runners provide."
     - content: "GitHub's larger runners are available at no additional cost beyond standard runners."
