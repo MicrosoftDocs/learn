@@ -1,6 +1,6 @@
 :::image type="content" source="../media/digital-learning-icons.png" alt-text="Photograph of a laptop keyboard with digital learning icons projected above it." lightbox="../media/digital-learning-icons.png":::
 
-Datacenter developers and operators actively engage with local communities through partnerships and programs that support education, business growth, and local non-gvernmental organizations (NGO).
+Datacenter developers and operators actively engage with local communities through partnerships and programs that support education, business growth, and local non-governmental organizations (NGO).
 
 ## Educational partnerships
 
