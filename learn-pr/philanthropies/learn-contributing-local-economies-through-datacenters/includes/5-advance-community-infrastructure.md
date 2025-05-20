@@ -82,30 +82,15 @@ Hyperlocal datacenters are smaller facilities strategically located closer to en
 
 Datacenters play a crucial role in enhancing community resilience, providing vital support during emergencies or disruptions. Their presence ensures reliable energy and connectivity, helping communities stay connected and recover swiftly.
 
-- **Backup power and emergency services:**
+- **Backup power and emergency services:**Datacenters often maintain significant energy storage and backup power capabilities, which can be redirected to support local grids or essential services during crises. Collaboration with local governments to serve as emergency operation hubs.
+  - **Example**: During Australia's bush fires, AWS provided backup power to hospitals and emergency services.
 
-  - Datacenters often maintain significant energy storage and backup power capabilities, which can be redirected to support local grids or essential services during crises. 
+- **Grid stabilization:**Datacenters participate in demand-response programs, scaling energy use based on grid needs to prevent outages. 
+  - **Example**: Facebook in Oregon adjusts energy use during peak demand to maintain grid stability for local communities.
 
-  - Collaboration with local governments to serve as emergency operation hubs.
+- **Disaster recovery and business continuity:** Ensuring that critical services like healthcare and finance remain operational during natural disasters. These systems include robust backup power solutions and seismic isolation technology to maintain operations and protect critical data.
+  - **Example**: Equinix in Japan uses advanced power systems to maintain operations during earthquakes and tsunamis. 
+  - **Example**: Microsoft partnered with Iceotope to deploy liquid cooling in its disaster-prone locations. These systems ensure data resiliency during earthquakes or extreme weather while also reducing energy costs.
 
-    - **Example**: During Australia's bushfires, AWS provided backup power to hospitals and emergency services.
-
-- **Grid stabilization:**
-
-  - Datacenters participate in demand-response programs, scaling energy use based on grid needs to prevent outages. 
-
-    - **Example**: Facebook in Oregon adjusts energy use during peak demand to maintain grid stability for local communities.
-
-- **Disaster recovery and business continuity:**
-
-  - Ensuring that critical services like healthcare and finance remain operational during natural disasters. These systems include robust backup power solutions and seismic isolation technology to maintain operations and protect critical data.
-
-    - **Example**: Equinix in Japan uses advanced power systems to maintain operations during earthquakes and tsunamis. 
-
-    - **Example**: Microsoft partnered with Iceotope to deploy liquid cooling in its disaster-prone locations. These systems ensure data resiliency during earthquakes or extreme weather while also reducing energy costs.
-
-- **Smart community integration:**
-
-  - Datacenters are becoming part of smart city projects, improving energy grids, urban planning, and public safety. 
-
-    - **Example**: Alibaba's “Smart City” initiative in China uses datacenters to optimize traffic and reduce energy consumption.
+- **Smart community integration:**Datacenters are becoming part of smart city projects, improving energy grids, urban planning, and public safety. 
+ - **Example**: Alibaba's “Smart City” initiative in China uses datacenters to optimize traffic and reduce energy consumption.
