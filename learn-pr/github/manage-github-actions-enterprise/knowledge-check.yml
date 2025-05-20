@@ -47,7 +47,7 @@ quiz:
     - content: "Encrypted secrets are encrypted environment variables you can create to store sensitive information."
       isCorrect: true
       explanation: "Correct. Once created, encrypted secrets become available for use in your workflows and actions at the level at which they were created (organization, repository, or environment)."
-  - content: "What type of credential should be avoided for accessing repositories from GitHub Actions?"
+  - content: "Which credential type poses the greatest security risk if used to access repositories from GitHub Actions??"
     choices:
     - content: "Repository deploy keys"
       isCorrect: false
