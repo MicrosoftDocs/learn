@@ -51,11 +51,11 @@ With Azure Arc-enabled servers, you can perform many operational functions, just
   * Assign [Azure machine configurations](/azure/governance/machine-configuration/overview) to audit settings inside the machine. To understand the cost of using Azure Machine Configuration policies with Arc-enabled servers, see Azure Policy [pricing guide](https://azure.microsoft.com/pricing/details/azure-policy/).
 * **Protect**:
   * Protect non-Azure servers with [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint), included through [Microsoft Defender for Cloud](/azure/security-center/defender-for-servers-introduction), for threat detection, for vulnerability management, and to proactively monitor for potential security threats. Microsoft Defender for Cloud presents the alerts and remediation suggestions from the threats detected.
-  * Use [Microsoft Sentinel](scenario-onboard-azure-sentinel.md) to collect security-related events and correlate them with other data sources.
+  * Use [Microsoft Sentinel](/azure/azure-arc/servers/scenario-onboard-azure-sentinel) to collect security-related events and correlate them with other data sources.
 * **Configure**:
   * Use [Azure Automation](/azure/automation/extension-based-hybrid-runbook-worker-install?tabs=windows) for frequent and time-consuming management tasks using PowerShell and Python [runbooks](/azure/automation/automation-runbook-execution). Assess configuration changes for installed software, Microsoft services, Windows registry and files, and Linux daemons using the Azure Monitor agent for [change tracking and inventory](/azure/automation/change-tracking/overview-monitoring-agent?tabs=win-az-vm).
   * Use [Azure Update Manager](/azure/update-manager/overview) to manage operating system updates for your Windows and Linux servers. Automate onboarding and configuration of a set of Azure services when you use [Azure Automanage](/azure/automanage/automanage-arc).
-  * Perform post-deployment configuration and automation tasks using supported [Arc-enabled servers VM extensions](manage-vm-extensions.md) for your non-Azure Windows or Linux machine.
+  * Perform post-deployment configuration and automation tasks using supported [Arc-enabled servers VM extensions](/azure/azure-arc/servers/manage-vm-extensions) for your non-Azure Windows or Linux machine.
 * **Monitor**:
   * Monitor operating system performance and discover application components to monitor processes and dependencies with other resources using [VM insights](/azure/azure-monitor/vm/vminsights-overview).
   * Collect other log data, such as performance data and events, from the operating system or workloads running on the machine with the [Azure Monitor Agent](/azure/azure-monitor/agents/azure-monitor-agent-overview). This data is stored in a [Log Analytics workspace](/azure/azure-monitor/logs/log-analytics-workspace-overview).
@@ -65,3 +65,5 @@ Log data collected and stored in a Log Analytics workspace from the hybrid machi
 Watch this video to learn more about Azure monitoring, security, and update services across hybrid and multicloud environments.
 
 > [!VIDEO https://www.youtube.com/embed/mJnmXBrU1ao]
+
+To connect your non-Azure machines with Azure Arc enabled servers [Follow this Quickstart](/azure/azure-arc/servers/learn/quick-enable-hybrid-vm).

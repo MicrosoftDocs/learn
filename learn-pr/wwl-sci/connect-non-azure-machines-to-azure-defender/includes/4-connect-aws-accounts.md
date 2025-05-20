@@ -55,11 +55,11 @@ To connect your AWS to Defender for Cloud by using a native connector:
 
 1. Select **Add environment** > **Amazon Web Services**.
 
-    :::image type="content" source="../media/add-aws-account-environment-settings.png" alt-text="Screenshot that shows connecting an AWS account to an Azure subscription." lightbox="media/quickstart-onboard-aws/add-aws-account-environment-settings.png":::
+    :::image type="content" source="../media/add-aws-account-environment-settings.png" alt-text="Screenshot that shows connecting an AWS account to an Azure subscription." lightbox="../media/add-aws-account-environment-settings.png":::
 
 1. Enter the details of the AWS account, including the location where you store the connector resource.
 
-    :::image type="content" source="../media/add-aws-account-details.png" alt-text="Screenshot that shows the tab for entering account details for an AWS account." lightbox="media/quickstart-onboard-aws/add-aws-account-details.png":::
+    :::image type="content" source="../media/add-aws-account-details.png" alt-text="Screenshot that shows the tab for entering account details for an AWS account." lightbox="../media/add-aws-account-details.png":::
 
     The **AWS regions** dropdown allows you to select the regions to which Defender for Cloud makes API calls. Every region that is deselected from the dropdown, implies that Defender for Cloud won’t make API calls to those regions.
 
