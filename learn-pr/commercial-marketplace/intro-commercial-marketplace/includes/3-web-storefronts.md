@@ -35,7 +35,7 @@ In addition to cloud solutions and services available through both the online st
 
 Microsoft AppSource offers business software that integrates with Azure, Dynamics 365, Microsoft 365, and the Power Platform. In AppSource, you can also find cloud-hosted web applications. Customers can easily filter and search for the right app or services based on category and industry.
 
-The Microsoft AppSource online store link can be found in the Resources section at the end of this module.
+The Microsoft AppSource online store link can be found in the resources section at the end of this module.
 
 :::image type="content" source="..\media\7-microsoft-appsource-homepage.png" alt-text="Screenshot of Microsoft AppSource homepage with emphasis on apps and consulting services buttons.":::
 
