@@ -47,7 +47,7 @@ quiz:
       explanation: "Correct. Azure Container Apps is a container management solution that simplifies deployment and provides orchestration."
     - content: "Container groups"
       isCorrect: false
-      explanation: "Incorrect. Container groups are not a container management solution."
+      explanation: "Incorrect. Container groups aren't a container management solution."
     - content: "Container Instances"
       isCorrect: false
       explanation: "Incorrect. Azure Container Instances doesn't provide orchestration."
