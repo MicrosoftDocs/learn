@@ -46,7 +46,7 @@ Even though Site Recovery is automated, errors can still happen. The following l
 
 #### Azure resource quota issues
 
-Site Recovery must create resources in different regions. The replication fails if your subscription isn't able to so. This error also occurs if your subscription doesn't have the right quota limits to create VMs that match the size of the source VMs.
+Site Recovery must create resources in different regions. The replication fails if your subscription isn't able to do so. This error also occurs if your subscription doesn't have the right quota limits to create VMs that match the size of the source VMs.
 
 You can correct this error by contacting Azure billing support and requesting that they create the correct size VMs in the needed target region.
 

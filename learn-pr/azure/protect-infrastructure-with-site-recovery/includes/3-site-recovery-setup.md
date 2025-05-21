@@ -9,7 +9,7 @@ Here, we explore how to take advantage of the automated features in Site Recover
 We need to set up our environment for exercises in subsequent units. Because this setup takes a few minutes to complete, let's start the process now, and then we can work through some of the theory while the configuration completes in the background.
 
 > [!NOTE]
-> If you want to complete the following setup, but you don't have an Azure subscription or prefer not to use your account. You need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+> If you want to complete the following setup, but you don't have an Azure subscription or prefer not to use your account, you need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
 Let's assume we have two virtual machines (VMs) configured in the organization. To simulate the configured VMs, let's configure the following services in the West US region.
 
@@ -17,7 +17,7 @@ Let's assume we have two virtual machines (VMs) configured in the organization. 
 - Two VMs
 - A storage account
 
-Let's also configure a resource group in the East USregion. Later, we configure Site Recovery to use the East US region as our target environment.
+Let's also configure a resource group in the East US region. Later, we configure Site Recovery to use the East US region as our target environment.
 
 Our first step is to create our exercise environment. We run a script that creates our company's infrastructure in Azure. After the script completes, we'll have a virtual network, two VMs, and a storage account that we'll use for our Recovery Services vault.
 

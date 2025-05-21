@@ -8,7 +8,7 @@ In this exercise, you use Azure Site Recovery to create and enable a Recovery Se
 
 > [!NOTE]
 > This exercise is optional, but depends on resources and an environment you created in the previous unit. If you don't have an Azure account, you can read through the instructions to understand how to use backup virtual machines with Azure Backup.
-> If you want to complete this exercise, but don't have an Azure subscription or prefer not to use your account. You need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) and first complete the exercises in the previous unit.
+> If you want to complete this exercise, but don't have an Azure subscription or prefer not to use your account, you need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) and first complete the exercises in the previous unit.
 
 ## Create a recovery services vault
 
