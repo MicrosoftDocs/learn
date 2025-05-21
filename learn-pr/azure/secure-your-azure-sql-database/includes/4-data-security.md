@@ -16,14 +16,14 @@ Take a look in the Azure portal at where TDE is configured on your _marketplaceD
 
 1. In the search bar at the top of the Azure portal, search for **marketplaceDb**, then select the database.
 
-1. In the left menu pane, under **Security**, select **Data encryption**.
+1. In the left menu pane under **Security**, select **Data encryption**.
 
 1. In the data encryption option, verify that **Data encryption** is set to **On**. You should also see an encryption status of **Encrypted**.
 
 Because new databases are encrypted by default, you can be sure that your data is encrypted on disk from as soon as you create the database.
 
 > [!NOTE]
-> Azure includes a built in service called Microsoft Defender for Cloud that gives you visibility into the security of your environment, including Azure SQL databases. Microsoft Defender for Cloud flags any databases that don't have TDE enabled on them, giving you the ability to report and take action to secure your data.
+> Azure includes a built-in service called Microsoft Defender for Cloud that gives you visibility into the security of your environment, including Azure SQL databases. Microsoft Defender for Cloud flags any databases that don't have TDE enabled on them, giving you the ability to report and take action to secure your data.
 
 ## Dynamic data masking
 
@@ -31,13 +31,13 @@ You might notice that when you ran your query in the previous unit that some of 
 
 Maybe you don't want your users to be able to see the full phone number or email address, but you still want to make a portion of the data available for customer service representatives to identify a customer. By using the dynamic data masking feature of Azure SQL Database, you can limit the data that is displayed to the user. Dynamic data masking is a policy-based security feature that hides the sensitive data in the result set of a query over designated database fields, while the data in the database isn't changed.
 
-Data masking rules consist of the column to apply the mask to, and how the data should be masked. You can create your own masking format, or use one of the standard masks, such as:
+Data masking rules consist of the column to apply the mask to and how the data should be masked. You can create your own masking format, or use one of the standard masks, such as:
 
-- Default value, which displays the default value for that data type instead.
-- Credit card value, which only shows the last four digits of the number, converting all other numbers to lower case x's.
-- Email, which hides the domain name and all but the first character of the email account name.
-- Number, which specifies a random number between a range of values. For example, on the credit card expiry month and year, you could select random months from 1 to 12 and set the year range from 2018 to 3000.
-- Custom string, which allows you to set the number of characters exposed from the start of the data, the number of characters exposed from the end of the data, and the characters to repeat for the remainder of the data.
+- **Default value**: Displays the default value for that data type instead.
+- **Credit card value**: Only shows the last four digits of the number, converting all other numbers to lower case x's.
+- **Email**: Hides the domain name and all but the first character of the email account name.
+- **Number**: Specifies a random number between a range of values. For example, on the credit card expiry month and year, you could select random months from 1 to 12 and set the year range from 2018 to 3000.
+- **Custom string**: Allows you to set the number of characters exposed from the start of the data, the number of characters exposed from the end of the data, and the characters to repeat for the remainder of the data.
 
 When database administrators query the columns, they still see the original values. Nonadministrators see the masked values. You can allow other users to see the nonmasked versions by adding them to the SQL users excluded from masking list.
 

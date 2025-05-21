@@ -1,4 +1,3 @@
-
 This guided project consists of the four exercises:
 
 - Exercise 1: Deploy Log Analytics
@@ -15,4 +14,4 @@ In Exercise 4, you configure two specific alerts: an action group to send an ema
 > To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/).
 
 [:::image type="content" source="../media/launch-exercise-button.png" alt-text="Button to launch exercise.":::
-](https://microsoftlearning.github.io/APL-1004-deploy-configure-azure-monitor/Instructions/Labs/LAB_05_exercise_configure_alerts.html)
+](https://microsoftlearning.github.io/AZ-1004-deploy-configure-azure-monitor/Instructions/Labs/LAB_05_exercise_configure_alerts.html)
