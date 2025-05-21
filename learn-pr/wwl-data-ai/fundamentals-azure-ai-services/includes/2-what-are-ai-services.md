@@ -20,7 +20,7 @@ For example, in education, Immersive Reader is being used to support students by
 
 While Azure AI services can be used without any modification, some AI services can be customized to better fit specific requirements. Customization capabilities in Azure AI Vision, Azure AI Speech, and Azure OpenAI all allow you to add data to existing models. 
 
-For example, in sport, athletes, and coaches are customizing Azure AI Vision to improve performance and reduce injury. One application allows [surfers](https://unlocked.microsoft.com/usa-surf?azure-portal=true) to upload a video and receive AI-generated insights and analysis. These insights can then be used by coaches, medics, judges, and event broadcasters.
+For example, in sport, athletes, and coaches are customizing Azure AI Vision to improve performance and reduce injury. One application allows surfers to upload a video and receive AI-generated insights and analysis. These insights can then be used by coaches, medics, judges, and event broadcasters.
 
 ## Azure AI services are accessed through APIs
 
