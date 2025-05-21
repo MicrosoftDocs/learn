@@ -7,66 +7,64 @@ Automating those tasks saves time, reduces effort and costs, and helps avoid err
 
 **Example scenario**
 
-Contoso University built a web app that’s live in Azure and supports online learning for students and faculty.
+Contoso University built a web app that's live in Azure and supports online learning for students and faculty.
 
 It's built on Azure App Service, Azure SQL Database, Microsoft Entra ID, Azure Key Vault, and Azure DevOps.
 
 ## Automate flows
 
-**Evaluate all workflows based on complexity, effort, frequency, accuracy, timeliness, and lifespan. Use that information to figure out which workflows are worth automating. Start with the workflows that’ll give you the biggest payoff. Remove any workflows that don’t serve a good purpose. Or make sure they’re actually worth the time that people spend on them.**
+**Evaluate all workflows based on complexity, effort, frequency, accuracy, timeliness, and lifespan. Use that information to figure out which workflows are worth automating. Start with the workflows that'll give you the biggest payoff. Remove any workflows that don't serve a good purpose. Or make sure they're actually worth the time that people spend on them.**
 
-By adopting this approach, you can reinvest team capacity in higher value work and increase productivity and consistency.
+By doing this approach, you free up your team to focus on higher-value work, boosting both productivity and consistency.
 
-Building an inventory of workflows ensures that you automate the right tasks. Removing redundant tasks reduces complexity and errors.
+Keeping a list of your workflows ensures that you automate the right tasks. And removing unnecessary tasks keeps things simpler and reduces the chance of mistakes.
 
 *Contoso's challenge*
 
-- Contoso University’s team is looking for ways to improve the operations process by automating manual tasks that are repetitive, time-consuming, error-prone, or low-value. This could free up some of the team's time and resources for more strategic work, improve the quality and reliability of the service, and potentially reduce cost.
+- Contoso University's team is looking for ways to improve the operations process by automating manual tasks that are repetitive, time-consuming, error-prone, or low-value. This could free up some of the team's time and resources for more strategic work, improve the quality and reliability of the service, and potentially reduce cost.
 
 *Applying the approach and outcomes*
 
-- To start this effort, the team conducted an inventory of manual operations tasks that could potentially be automated. Next, the team analyzed the list of tasks using the criteria suggested in the recommendation, such as the right level of complexity, effort, frequency, accuracy, timeliness, and lifespan, to determine the top candidates for automation. At the same time, the team also evaluated whether acquiring an automation tool or custom building the automation in-house could be better in the long term.
+- To kick things off, the team pulled together a list of manual tasks that might be good candidates for automation. Then they went through the list using criteria like how complex the task is, how often it happens, how accurate and timely it needs to be, and how long it'll be around. They figured out which tasks to tackle first. They also looked at whether it made more sense to buy an automation tool or build something custom in-house for the long run.
 
-- As a result of the analysis, they decided to focus on automating activities related to user account management. Managing user accounts (students, faculty, staff) is a common task, which includes creating new accounts upon student registration, resetting passwords, and deleting accounts when individuals leave the university.
-- By automating many of the tasks related to user account management, the team has freed up sufficient time to start on other operational excellence improvements that had been delayed previously.
+- After going through the analysis, the team decided to focus on automating user account management. It's a common task that includes setting up new accounts when students register, resetting passwords, and removing accounts when someone leaves.
+- By automating many of the user account tasks, the team freed up enough time to finally start other operational improvements that had been on hold.
 
 ## Design for automation
 
-**Design your workload components to support automation capabilities.**
+**Set up your workload components so they're ready for automation from the start.**
 
-Avoid the situation where lack of automation in your system design promotes the anti-pattern of repetitive tasks, slows down growth, and starts accumulating technical debt.
+If you skip automation when designing your system, you're setting yourself up for repetitive tasks, slower progress, and tech debt down the line.
 
 *Contoso's challenge*
 
-- The application has a rich and dynamic UI that uses many interactive elements and animations. The development team has never used automated UI testing tools since the application was originally developed and has only relied on manual testing.
+- The app has a rich, interactive UI with several animations and moving parts. But since day one, the development team has been testing everything manually. They haven't used any automated UI testing tools.
 
-- Recently, the team has been working on automating their UI testing, but have been facing many challenges. Some of the UI pages are too dynamic and unpredictable, and there’s no consistent way to identify some of the fields that the test cases need to interact with.
+- Lately, the team has been trying to automate their UI testing, but it hasn't been smooth. Some of the UI pages are too dynamic and unpredictable, and there's no reliable way to identify some of the fields that the test cases need to interact with.
 
 *Applying the approach and outcomes*
 
-- The team has decided to improve their UI implementation to make it more testable and accessible. They will make the improvements incrementally by fixing the pages as they create the test cases.
+- The team decided to make their UI easier to test and more accessible. They're taking it step by step and fixing up each page as they build out the test cases.
 
-- As they tackle each page, they make sure that every field has a unique identifier that can be used by the test automation tools. They also follow accessibility guidelines and standards, such as using semantic HTML, proper labels, and keyboard navigation. This makes their UI more user-friendly and easier to test.
-- As automated tests are completed, they are incorporated into the test suite that runs during the daily build, resulting in significant reductions in the time it takes to release new builds to production, improvements in product quality, and cost savings during development. 
+- As they work through each page, the team's making sure every field has a unique identifier so the test automation tools can find them easily. They're also following accessibility best practices, like using proper HTML tags, labels, and making sure everything works with keyboard navigation. It's making the UI easier to use and test.
+- As the automated tests get built, they're added to the daily test suite, so every new build gets checked automatically. That's helped speed up releases to production, improve quality, and reduce development costs.
 
 ## Automation should be well-architected
 
-**Treat all automation as a critical dependency of your workload. Adapt to the workload's expected growth. Your automation tooling is an integral part of your workload, and it should adhere to the five Well-Architected Framework pillars.**
+**Treat automation like a key part of your workload. It's not just a nice-to-have. Make sure it can scale as your workload grows. And since it's such a core piece, it should follow the same best practices as the rest of your system, like the five pillars of the Well-Architected Framework.**
 
-Design your automation component to withstand risks, such as security threats. With applied best practices, you can avoid implementation sprawl.
-
-The workload will continue to operate with a high-level guarantee if this dependency is kept functional and safe.
+Build your automation with security and reliability in mind. It's a key part of your setup. Following best practices helps you avoid messy, scattered implementations. As long as your automation stays functional and secure, your workload can keep running smoothly.
 
 *Contoso's challenge*
 
-- The workload has an environment dedicated to load and performance testing, with a configuration that closely mimics production. To simulate production-like conditions in the environment more closely, a fresh copy of the production database, with all user’s sensitive data anonymized and masked, is loaded into the test environment every Monday, when that environment is reset.
+- The workload has a dedicated environment just for load and performance testing that's set up to closely match production. To keep things realistic, every Monday the team resets the environment and loads in a fresh copy of the production database, with all sensitive user data anonymized and masked.
 
-- The database loading script was written by a former developer who didn’t document it well or follow other best practices. The script runs slowly and doesn’t handle errors or failures gracefully.
-- Lately, as the production database grows, the script run time has gotten increasingly longer and frequently fails. These delays and failures are impacting the team’s ability to execute the test runs and are causing delays in the development schedule.
+- The database loading script was written by a former developer who didn't document it well or follow other best practices. The script runs slowly and doesn't handle errors or failures gracefully.
+- Now that the production database has grown, the script takes even longer and fails more often. That's been holding up test runs and causing delays in the development schedule.
 
 *Applying the approach and outcomes*
 
-- The team decides the time has come to rewrite this tool so it can be at par with the standard development practices used to develop the core application codebase. The team will follow industry accepted best development practices, including proper security and adequate error handling.
+- The team decides it's time to give this tool a fresh start so it lines up with standard development practices in the main app. They'll be using reliable, modern development practices, like strong security and smart error handling.
 
-- Performance is improved and the functionality has been redesigned in such a way that it produces a predictable execution time, regardless of the size of the production dataset.
-- By treating the automation with the same rigor as the core application codebase and applying the WAF principles and recommendations, the team has optimized it for reliability, security, performance, costs, and operations.
+- Performance got a boost, and the functionality was redesigned to make sure it runs with consistent timing no matter how big the production dataset is.
+- By treating the automation with the same level of care as the core application codebase, and following the Well-Architected Framework principles and recommendations, the team made it more reliable, secure, and efficient across performance, costs, and operations.

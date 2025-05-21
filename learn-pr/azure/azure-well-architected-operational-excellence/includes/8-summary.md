@@ -1,16 +1,16 @@
-In this module, you've looked at the six key principles of the Operational Excellence pillar of the Azure Well-Architected Framework.
+In this module, you learned about the six key principles of the Operational Excellence pillar in the Azure Well-Architected Framework.
 
-The operational requirements of a workload are as important as its business requirements. Efficient processes ensure the workload achieves business outcomes within the constraints of compliance, whether that compliance is organizational or external. The key is to find repeatability with consistency.
+The operational side of a workload matters just as much as the business side. When your processes run smoothly, it’s easier to achieve your business goals while staying compliant, whether that’s with internal policies or outside regulations. The real trick is making sure processes are consistent and repeatable every time.
 
 **The goals of the Operational Excellence pillar are to do the right thing, to do it the right way, and to solve the right problems as a team.**
 
-If you meet these goals, workloads will run reliably and predictably even during times of change. Inability to fulfill operational requirements can lead to failed deployments, inconsistent user experience, and added costs that could have been avoided through proper planning and streamlined execution.
+If you meet these goals, your workloads will keep running smoothly and predictably even when changes happen. But if you miss the mark on operational requirements, you could end up with failed deployments, a clunky user experience, and extra costs that could’ve been avoided with better planning and smoother implementation.
 
 ## Learn more
 
-To learn more about workload cost optimization, review the following documentation:
+To learn more about the Well-Architected Framework and Azure services that improve operational excellence, see the following resources:
 
 - [Operational Excellence design principles](/azure/well-architected/operational-excellence/principles)
 - [Design review checklist for Operational Excellence](/azure/well-architected/operational-excellence/checklist)
-- [Operational Excellence tradeoffs](/azure/well-architected/operational-excellence/tradeoffs)
+- [Operational Excellence trade-offs](/azure/well-architected/operational-excellence/tradeoffs)
 - [Cloud design patterns that support operational excellence](/azure/well-architected/operational-excellence/design-patterns)

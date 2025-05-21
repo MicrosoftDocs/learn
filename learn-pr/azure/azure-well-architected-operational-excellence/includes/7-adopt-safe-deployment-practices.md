@@ -1,73 +1,79 @@
-| :::image type="icon" source="../media/goal.svg"::: Implement guardrails in the deployment process to minimize the effect of errors or unexpected conditions. |
+| :::image type="icon" source="../media/goal.svg"::: Put guardrails in place during the deployment process to reduce the impact of errors or unexpected conditions. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
 During the development cycle, workload artifacts go through many changes as they get implemented and tested and as bugs are fixed.
 
-The deployment process must follow a standard operating procedure. Any change must be deployed with the same level of rigor. This principle applies equally to code, configuration, and all related artifacts. The key is to apply safe practices as early as possible so that you have predictability in production. Even if errors reach the customers, you should be able to roll out recovery changes as soon as possible.
+The deployment process needs to stick to a standard operating procedure. Every change—whether it’s code, configuration, or anything related—should be deployed with the same level of care. The idea is to start using safe practices as early as possible so things stay predictable in production. And if something does slip through to customers, you should be able to roll out a fix fast.
+
+The deployment process must follow a standard operating procedure. Every change, whether it’s code, configuration, or related components, should be deployed with the same level of care. The idea is to start using safe practices as early as possible so production is predictable. And if problems slip through to customers, you should be able to roll out a fix fast.
 
 **Example scenario**
 
-Contoso Air has developed a web application that allows customer to book flights directly through the app. The app has been running in production for over a year. 
+Contoso Air has developed a web application that allows customer to book flights directly. The app has been running in production for over a year. 
 
 The app is fully deployed in Azure and is built on Azure App Service, Azure Cosmos DB, Azure Functions, Azure Logic Apps, and Azure Service Bus. 
 
 ## Codify automated deployment standards
 
-**Standardize the process to deploy any change by using automated deployment processes, such as pipelines. All environments must use pipelines.Classify assets and versions per environment to make them easily traceable and identifiable.**
+**Standardize how changes get deployed by using automated deployment processes, like pipelines. All environments must use pipelines. Ensure that assets and their versions are clearly labeled by environment so they’re easy to track and identify.**
 
-Consistent deployment methods reduce issues caused by process errors and variance and allow you to focus your effort on the workload concerns.
+Consistent deployment methods reduce problems caused by process errors and variance, so you can focus more on the actual workload. When everything’s standardized, deployments become safer, more reliable, and repeatable.
 
-Standardization ensures that the deployment is completed safely, reliably, and with repeatability.
-
-Classification makes it easy to view logs of previous deployments and issues that have occurred. You might be able to use that information to expedite rollback and roll-forward operations.
+Classification makes it easy to view logs of previous deployments and find problems that came up. That information can help speed up recovery, whether you’re rolling back or moving forward with a fix.
 
 *Contoso's challenge*
 
-- The Contoso Air workload team uses automated build and deployment pipelines, but deployments normally requires manual intervention throughout the operation to change and validate various configuration settings.
-- Because of the manual intervention, there are frequent errors in the deployment, making every release a highly stressful and disruptive event for the entire team. The manual intervention also makes it difficult to rollback when a deployment fails.
+- The Contoso Air workload team uses automated build and deployment pipelines, but they usually have to step in manually during the process to tweak and check different configuration settings.
+
+- Because of all that manual work, deployment errors happen often. Every release is a stressful, disruptive event for the whole team. And when a deployment fails, rolling back isn’t easy either.
 
 *Applying the approach and outcomes*
 
-- The team allocates time to automate the configuration changes as part of the deployment, and to integrate the added functionality into the existing deployment pipelines.
-- The configuration settings associated with each environment are externalized to respective JSON files which are saved to source control for additional traceability. Settings that are considered secrets are saved to secret vault stores, which are allocated to each environment as well.
-- All changes are now logged during the deployment, achieving full traceability to assist with troubleshooting efforts and audits. The team also adds automated tests to validate the configuration changes to the pipeline.
-- Next, the team will work on fully automating rollbacks to further optimize processes.
-- As a result of the new automation, deployments have been more reliable and predictable, and team morale has risen as well.
+- The team set aside time to automate the configuration changes as part of the deployment and to add the new functionality into the existing deployment pipelines.
+
+- Configuration settings for each environment are now stored in separate JSON files, which are saved in source control so they’re easy to track. Any settings that are considered secrets are stored in secret vaults, with one set up for each environment.
+
+- Every change is now logged during deployment, providing full traceability to help with troubleshooting and audits. The team also adds automated tests to the pipeline to check that configuration changes are working as expected.
+- Next, the team plans to fully automate rollbacks to make the process even smoother.
+- As a result of the new automation, deployments have been more reliable and predictable, and team morale has gone up too.
 
 ## Deploy often
 
-**Deploy small incremental updates at a regular cadence.**
+**Deploy small, incremental updates at a regular cadence.**
 
-Using this approach will help keep user stories and work items manageable from a project management standpoint and reduce the risk of large-scale issues when deployments fail.
+Doing this approach makes tasks and user stories easier to manage and helps avoid large problems if deployments fail.
 
 *Contoso's challenge*
 
-- The team's deployment processes historically have been to do major releases every three to four months. This practice makes it difficult to validate the release. The team has also had difficulty troubleshooting issues with so many moving parts.
-- Problematic releases that require mid-release hot-fixes or must be rolled back and abandoned have occurred several times.
-- Releases are highly stressful and have been treated as "all hands on deck" situations, which has been negatively impacting team morale.
+- The team used to do major releases every three to four months, which made it tough to validate everything properly. With so many moving parts, troubleshooting was a real challenge.
+
+- There were several rough releases that needed hot-fixes midstream or had to be rolled back entirely.
+- Each release turned into a situation that required everyone's help. They were very stressful and draining for the whole team, which really took a toll on morale.
 
 *Applying the approach and outcomes*
 
-- After the latest problematic release, stakeholders asked the team to come up with a better approach to deployments. The team decided to change their practices to favor frequent, small changes. They will limit the scope of each release to one or (at most) a few related changes 
-that are thoroughly tested as the build is promoted across the lower environments.
-- As a result, the releases have become much more efficient, and quality has increased. The releases are easier to validate and issues are simpler to troubleshoot.
-- Having a regular cadence of predictable releases has helped restore the confidence and morale of the team. Users are benefiting as well. With higher release quality, they see less disruption and get access to new features much sooner.
+- After the latest problematic release, stakeholders asked the team to rethink how they handle deployments. The team decided to shift gears and go with smaller, more frequent changes. Each release will now focus on just one, or a few closely related, updates that get thoroughly tested as they move through the lower environments.
+
+- This change has made releases more efficient, and quality has increased. It’s easier to validate each release, and tracking down problems is a lot simpler.
+- A steady rhythm of predictable releases has really helped restore team morale and confidence. Users are seeing the benefits too, with fewer disruptions and quicker access to new features.
 
 ## Use a progressive exposure approach
 
-**Roll out updates gradually, with due diligence. Use deployment models that give you the control to progressively increase the number of instances and customers until the update is safely adopted by all.**
+**Roll out updates gradually and with care. Use deployment models that let you slowly ramp up starting with just a few instances or customers, so you can make sure everything’s working smoothly before going all in.**
 
-Test each update in a controlled manner so that issues are fixed early in production. Avoid rolling out a faulty update that impacts your entire customer base.
+Test each update in a controlled way so you can catch and fix problems early in production. You can avoid pushing out a faulty update that could affect all your customers.
 
-Test whether the update is backward and forward compatible.
+Test whether the update is backward and forward compatible to see if it works well with other versions.
 
 *Contoso's challenge*
 
-- The team is seeing great benefits from switching their approach to make smaller releases. They are dedicating less time now to the releases and feel energized to continue down the path of making additional operational excellence improvements.
-- As they experiment with new features, some of the changes have not been well received by users or have caused an increase in support calls due to the steep learning curve they bring along.
-- They wonder how they can continue innovating their applications to maximize their user’s productivity, while still minimizing the impact of releasing features that may not be as popular or easy to use.
+- The team is seeing some great benefits from switching to smaller releases. They’re spending less time managing deployments and feeling motivated to keep pushing for improvements in how they run processes.
+
+- But as they try out new features, not everything has landed well. Some changes have confused users or led to more support calls because of steep learning curves.
+- Now they’re thinking about how to keep innovating in ways that really boost user productivity, without causing too much disruption when a new feature might not be as popular or easy to use.
 
 *Applying the approach and outcomes*
 
-- They decided to implement a feature release model that exposes new features to users incrementally, using Feature Flags.
-- During the planning stages for new features, a criterion is defined to select which users will be exposed to the feature first. A small group of users is selected to receive the new feature first. Depending on user feedback, the feature is deployed to successively larger groups until the entire user population is running the new version. As more users are exposed to the new features, the support team is documenting the outcome of the support cases to share internally and potentially populate the external FAQ.
+- The team decided to roll out new features gradually by using feature flags, so users get access to new features incrementally.
+
+- During planning, they define who should see the feature first. Usually a small group of users gets early access. Based on how that group responds, the team expands the rollout to more users until everyone’s on the new version. As more people start using the features, the support team tracks what comes up in support cases and shares those insights internally, and possibly in the external FAQ too.
