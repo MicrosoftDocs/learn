@@ -14,7 +14,7 @@ With the scanner in place, your organization can consistently apply Microsoft Pu
 
 - [Learn about the information protection scanner](/purview/deploy-scanner?azure-portal=true)
 - [Get started with the information protection scanner](/purview/deploy-scanner-prereqs?azure-portal=true)
-- [Configure and install the information protection scanner](/purview/deploy-scanner-configure-install?azure-portal=true)
+- [Configure and install the information protection scanner](/purview/deploy-scanner-configure-install)
 - [Running the information protection scanner](/purview/deploy-scanner-manage?azure-portal=true)
 - [Learn about the data loss prevention on-premises repositories](/purview/dlp-on-premises-scanner-learn?azure-portal=true)
 - [Get started with the data loss prevention on-premises repositories](/purview/dlp-on-premises-scanner-get-started?azure-portal=true)
