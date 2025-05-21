@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.wwl.introduction-language
 metadata:
-  title: Introduction to natural language processing
-  description: "Introduction to natural language processing"
+  title: Introduction to natural language processing concepts
+  description: "Introduction to natural language processing concepts"
   ms.date: 5/21/2025
   author: wwlpublish
   ms.author: sheryang
@@ -12,7 +12,7 @@ metadata:
   - N/A
   ms.service: azure-ai-language
   ai-usage: ai-assisted
-title: Introduction to natural language processing
+title: Introduction to natural language processing concepts
 summary: Explore natural language processing (NLP).
 abstract: Explore natural language processing (NLP).
 prerequisites: Ability to navigate the Azure portal
