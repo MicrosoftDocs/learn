@@ -1,33 +1,37 @@
-| :::image type="icon" source="../media/goal.svg"::: Optimize productivity by standardizing development practices, enforcing quality gates, and tracking progress and success through systematic change management. |
+| :::image type="icon" source="../media/goal.svg"::: Optimize productivity by setting clear development practices, enforcing quality gates, and tracking progress and success through systematic change management. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
-The development team is responsible for addressing workload issues prior to release with minimal friction. Be mindful of developer efficiency and optimize for fast turnaround cycles, from coding to testing results. Implement effective and right-sized processes that plan and standardize technical activities and also drive consensus within the team and the stakeholders.
+The development team is in charge of sorting out workload problems before release, and they aim to do it with as little friction as possible. It’s important to keep things efficient and move quickly from coding to testing. Implement effective and right-sized processes to plan technical work, keep things consistent, and make sure everyone, both the team and stakeholders, is aligned.
 
 **Example scenario**
 
-Contoso Ticketing is a small startup that provides a ticketing line of business (LOB) SAAS solution for mid-size companies. Onboarding of new customers is a complex process that requires product customizations and custom development to integrate with the customer’s environment. The implementation team uses Azure DevOps as a platform for collaboration and delivery, but it does not follow any formal development methodology.
+Contoso Ticketing is a small startup that provides a ticketing line-of-business SaaS solution for mid-sized companies. Getting new customers set up can be tricky because it often involves customizing the product and doing some custom development to fit their setup. The implementation team uses Azure DevOps to collaborate and deliver work, but they don’t follow a formal development process.
 
 ## Adopt industry standards for development
 
-**Use an industry standard software development methodology that's appropriately tuned for the needs of your workload and team size. Maintain a backlog that's shared among all roles.**
+**Use an industry standard software development methodology that fits your team and workload. Keep a shared backlog so everyone’s in sync.**
 
-Adoption of a well-known methodology sets the rhythm of the project. It removes process ambiguities by giving team members clear expectations and accountability.
+A well-known development method helps set the pace for the project and gives everyone clear roles and expectations.
 
-By tracking against a common list, tasks can be refined and prioritized with standard practices. The project will have better chances of being delivered on time.
+When the whole team tracks work from the same list, it’s easier to prioritize and stay organized, which makes it more likely that the project finishes on time.
 
-Standard methodologies help with risk management. With granular milestone reviews, developers can address potential issues before they become showstoppers.
+These methods also help manage risks. Regular milestone check-ins give developers a chance to catch and fix problems early, before they turn into bigger problems.
 
 *Contoso's challenge*
 
-- The company’s main product has been gaining popularity and the integration team is now working on more simultaneous implementation projects than ever. To keep up with the increased workload, the team has had to increase its headcount.
-- The team’s growth, paired with the lack of formal processes has led to some challenges, such as unclear communication among team members, random and unproductive meetings, and infrequent and unscheduled development cycles. Several of the onboarding projects are now behind schedule and the company’s leadership has asked the team to make the necessary changes to correct the situation. 
+- The company’s main product is getting more popular, and now the integration team is juggling more customer projects than ever. To keep up, they’ve had to grow the team.
+
+- With more people and no formal processes in place, things have gotten a bit messy. Communication isn’t always clear, meetings aren’t very productive, and development cycles are infrequent and unscheduled. Several onboarding projects are now running behind, and leadership has asked the team to make changes to get things back on track.
 
 *Applying the approach and outcomes*
 
-- To overcome these challenges, the team decides to adopt a scrum methodology, a popular agile framework for software development.
-- Scrum will help the team address some of the issues it is facing. Among other things, Scrum provides a clear and consistent structure for the development process, with predefined roles, events, artifacts, and rules. A shared backlog and a cadence of short development sprints would help the team work on a shared vision and deliver value to the customers regularly and reliably.
+- To help fix the issues they’ve been facing, the team decides to start using a Scrum methodology, a popular agile framework for software development.
+
+- Scrum gives the team a clear structure to follow, with defined roles, events, artifacts, and rules, regular check-ins, and a shared backlog. Working in short sprints helps everyone stay aligned and deliver value to customers more consistently.
 
 ## Shift left for testing
+
+Use quality assurance processes to make sure testing starts early in the development process. In your test plans, include everything, like app features, infrastructure, and data-related tasks, that's part of feature releases or updates.
 
 **Have quality assurance processes that emphasize testing early in the development lifecycle. Include all artifacts for planned test procedures, including application components, infrastructure, and data plane operations that are part of a feature release or update.**
 
@@ -39,30 +43,35 @@ Quality assurance ensures that functional and nonfunctional requirements were me
 
 *Contoso's challenge*
 
-- The workload team's functional testing strategy uses a combination of automated and manual testing. Their testing approach does not cover all aspects of the system, such as performance, security, and usability. They also do not have a consistent way of deploying their code to different environments in a fully automated manner, which introduces variability and uncertainty. 
-- The increase in the volume and complexity of the customer onboarding efforts has amplified the challenges of their testing strategy, leading to frequent bugs, rework, and customer dissatisfaction.  
+- The workload team uses both automated and manual testing, but they don’t test aspects like performance, security, and usability. Also, their code deployment isn’t fully automated across environments, which can lead to inconsistencies and surprises.
+
+- With more customers and complicated onboarding, their testing struggles have gotten worse. Bugs are occurring more often, there’s a lot of rework, and customers aren’t too happy.
 
 *Applying the approach and outcomes*
 
-- The workload team embarks on an effort to improve their testing strategy and to increase the consistency and predictability of their deployment pipelines.
-- They start by creating test plans for each feature or customization under development, covering both functional and nonfunctional requirements. They use Azure DevOps to manage their test cases, test data, and test results. They set up quality gates in their deployment pipelines that verify the quality of the code, the configuration, and the deployment before promoting the artifacts to the next environment. 
-- After implementing these improvements, the team sees a decrease in the number of failed deployments, as well as the number of bugs and incidents in production. As a result, quality, delivery speed, and customer satisfaction have increased substantially. 
+- The workload team is improving how they test and deploy code to make pipelines more reliable and consistent.
+
+- They’ve started writing test plans for each feature or customization, covering both what the feature does and how well it performs. They’re using Azure DevOps to keep track of test cases, data, and results. They also added quality checks in their deployment pipelines to verify the quality of the code, configuration, and deployment before moving code to the next environment.
+
+- Since making these changes, they’ve seen fewer failed deployments, fewer bugs in production, and happier customers. Things are running smoother and faster now.
 
 ## Measure development efficiency
 
-**Report progress and trends to measure efficiency. Track and report on trends in bugs, failed updates, time to deploy and feedback loops to drive improvements in your development practices.**
+**Report progress and trends to measure efficiency. Track and report on trends in bugs, failed updates, deployment times, and feedback loops to drive improvements in your development practices.**
 
 *Contoso's challenge*
 
-- The workload team has recently implemented several changes to enhance the quality and predictability of the customer onboarding processes. However, the company faces a challenge in measuring and reporting the impact of these changes. Unfortunately, the company does not have reliable data or metrics to show how much the quality and predictability have improved, or which changes have contributed to the improvement more than others.
-- The company needs a way to quantify and communicate the benefits of its process investments, so that it can prioritize its resources and efforts in the future. 
+- The workload team recently rolled out several changes to make customer onboarding better and more predictable. But right now, it’s tough to tell how much of a difference those changes are actually making. There’s no reliable data or metrics to show how much quality and predictability has improved, or which updates are making a real difference.
+
+- To keep making smart decisions and focus efforts where they count, the company needs a better way to measure and share the impact of these process improvements.
 
 *Applying the approach and outcomes*
 
-- The team decides to start taking advantage of the reporting capabilities in AzDO, which the team is already using, to be able to quantify improvements over time and prioritize resource allocation for future investments.
+- The team decides to start using the reporting tools in Azure DevOps, which they're already using, to help track improvements over time and figure out where to focus resources going forward.
+
 - They start by making use of several out-of-the-box reports:
     - Velocity reports
     - Cumulative flow diagrams
-    - Bug trends: how many bugs are created, resolved, and closed over time, and how they affect quality metrics.
-    - Deployment stats: how long it takes to deliver software from code to production, and how it compares to targets and benchmarks.
-- The team also plans to develop customized reports with Dashboard and Power BI Analytics reports in the near future.
+    - Bug trends, including how many bugs are created, resolved, and closed over time, and how they affect quality metrics
+    - Deployment stats, including how long it takes to deliver software from code to production and how it compares to targets and benchmarks
+- The team also plans to develop custom reports by using the Azure DevOps dashboards and Power BI Analytics in the near future.

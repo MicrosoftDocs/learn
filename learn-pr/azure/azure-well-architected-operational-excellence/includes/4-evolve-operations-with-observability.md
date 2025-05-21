@@ -1,67 +1,77 @@
-| :::image type="icon" source="../media/goal.svg"::: Gain visibility into the system, derive insight, and make data-driven decisions. |
+| :::image type="icon" source="../media/goal.svg"::: Get a clear view into the system, get insight, and make data-driven decisions. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
-Build a culture that continuously improves quality by monitoring the workload and taking all the pillars of the Azure Well-Architected Framework into consideration. Enable the team and stakeholders to make both short-term and long-term decisions across many facets by providing the necessary data, statistics, and trends. Learn from your data and drive improvements.
+Build a culture where the team is always looking to improve quality by monitoring workloads and considering all pillars of the Azure Well-Architected Framework. Give the team and stakeholders the data they need, like stats, trends, and insights, so they can make smart decisions, whether it's for quick fixes or long-term planning. Use what you learn from the data to keep getting better.
 
-Operations built for the purposes of observability are key in proactive maintenance of the application, quality and security assurance, capacity planning, and product management.
+Operations that are designed for observability help you stay ahead of problems, maintain quality and security, plan for growth, and manage the product more effectively.
 
-A crucial aspect of application monitoring is using health modeling to help you anticipate issues before they become incidents and affect customer experience. Efficient monitoring reduces reactive cycles spent on incident management.
+One key part of monitoring is health modeling, which helps you find problems before they turn into big incidents that affect customers. Efficient monitoring means less time reacting to problems and more time improving the experience.
 
 ## Example scenario
 
-Contoso developed an app for internal use called Contoso Real Estate. This web app allows new hires or existing employees that are relocating to search for and reserve short-term housing to help with their relocation. Contoso's HR department also uses the app to assist with relocations. 
+Contoso built an internal web app called Contoso Real Estate to help new hires and employees who are relocating. It lets them search for and book short-term housing during their move. The HR team also uses the app to assist with the relocation process.
 
-The app is in production and is deployed entirely in Azure. It’s built on micro-services using Azure Container Apps and also uses Azure Functions, Azure Database for PostgreSQL, Azure Blob Storage, and Azure Monitor.
+The app is live and fully hosted in Azure. It's built on microservices by using Azure Container Apps, and it also uses Azure Functions, Azure Database for PostgreSQL, Azure Blob Storage, and Azure Monitor.
 
-### Observe your workload through telemetry
+### View your workload through telemetry
 
-**Emit telemetry from application code that correlates the key points of the execution flow and gives an end-to-end view at different levels of granularity.**
+**Capture telemetry from application code that connects the key steps in how it runs, so you can see the full picture from high-level trends to detailed actions.**
 
-Prioritize actions based on the severity level, and understand the context given its verbosity. This information is crucial for troubleshooting purposes.
+Prioritize actions based on how serious the problem is, and use details to understand the context. This information is crucial for troubleshooting purposes.
 
 *Contoso's challenge*
 
-- Users are reporting that, after a recent update to the Contoso Real Estate application, they're occasionally seeing a blank page or a generic error message on the search page of the Web App.  The errors seem random, and the search functionality usually works if the users just refresh the page or resubmit the search.
-- Reviewing the logs on the search microservice, the team notices an increase in errors due to time-outs connecting to the Azure Database for PostgreSQL, but they currently have no way to tell whether an error they see in the search microservice logs corresponds to the error pages the users see or not.
+- After a recent update to the Contoso Real Estate app, users are reporting that there's a problem where the search page sometimes shows a blank screen or a generic error message. It doesn't happen every time, and usually refreshing the page or trying the search again fixes it.
+
+- When the team checked the logs for the search microservice, they noticed more errors, specifically time-outs when trying to connect to the Azure Database for PostgreSQL. But they can't tell if those errors are the same ones causing the problems that users are seeing on the front end.
 
 *Applying the approach and outcomes*
 
-- The development team has decided to expand on the information they log from both the web app and the core micro-services to dig deeper into the issue. For the search scenario, they’re making sure to capture the search terms along with other available transaction attributes like time, client ip, and the username associated with the search. This extra data should give them enough information to be able to correlate transactions across tiers.
-- This change allowed the team to confirm that database query time-outs, which weren't being properly handled in the latest update of the app, were the root cause of the failures the users were experiencing. After finding the root cause, it was straightforward for the team to implement a fix. 
-- The team is now designing a new approach, using OpenTelemetry, to implement a more comprehensive distributed tracing solution that covers all solution tiers.
+- The development team decided to expand the logging in both the web app and the core microservices to figure out what's going wrong. For the search feature specifically, they're now logging the search terms, time of the request, client IP address, and the username tied to the search. This extra information should help them connect the dots across different parts of the system.
+
+- This change helped the team confirm that the root cause of the user problems was database query time-outs that weren't being handled properly in the latest app update. After they figured that out, fixing it was pretty straightforward.
+- The team is now designing a new approach, using OpenTelemetry, to build a more complete distributed tracing solution that covers all solution tiers.
 
 ### Visualize monitoring data in dashboards
 
-**Aggregate and visualize data in dashboards to present monitoring data that's catered to audiences and keeps the business context in mind. Use situational dashboards for surfacing data to drive awareness among the stakeholders. Use operational dashboards and workbooks with drill-down capabilities for operator activities like incident response. Frequently refresh the dashboards and provide granular data.**
+**Gather and visualize data in dashboards to show monitoring data that's specific to your audience and keeps the bigger picture in mind. Use situational dashboards to highlight key information and give stakeholders insight. Use operational dashboards and workbooks that have drill-down capabilities for operator activities like incident response. Frequently refresh the dashboards and provide fine details.**
 
 With visualizations, you can analyze trends, track against business targets, and manage incidents.
 
-Dashboards that are tailored to the interest of the customer make interpretation relevant and accelerate time to detection and action.
+Dashboards that are tailored to the interest of the customer are easier to understand and help teams catch problems and take action faster.
 
 *Contoso's challenge*
 
-- The workload team aggregates telemetry data from across all solution tiers into a single Log Analytics Workspace, which can be accessed by the operation and development teams and other project stakeholders. However, interacting with the data is difficult and complex, which is frustrating to team members who need to discern background noise from actionable data.
+- The workload team gathers telemetry data from across all solution tiers into a single Log Analytics workspace that everyone can access, including development and operations teams and other stakeholders. But actually working with that data isn't easy. It's complicated and clunky, which makes it frustrating for team members who are trying to separate background noise from actionable data.
 
 *Applying the approach and outcomes*
 
-- The team embarks on an effort to aggregate and visualize data using dashboards. Each dashboard will be tailored to a specific audience:
-    - The solution stakeholder’s dashboards will be more business oriented, presenting a higher level overview of the overall health of the solution, along with business indicators like the number of users served, searches and reservations performed.
-    - Operational dashboards and workbooks will have more detailed and granular data for the operations team. These dashboards will have drill-down capabilities that allow the users to explore the data at different levels of granularity. The users will be able to use these dashboards and workbooks to perform troubleshooting and other incident response tasks.
-- The dashboards will enable users to analyze trends, track business targets, and manage incidents more effectively. The data presented on each dashboard will be more relevant to its intended audience and will be driven by their interests and needs.
+- The team embarks on an effort to gather and visualize data by using dashboards. Each dashboard will be tailored to a specific audience:
+
+  - For stakeholders, the dashboards will focus more on the big picture, like overall solution health, number of users, searches, and reservations. It provides a clear view of how the solution is performing from a business perspective.
+
+  - For the operations team, the dashboards and workbooks will go deeper, with more detailed data and the ability to drill down into specific areas. These dashboards will help with troubleshooting, incident response, and day-to-day monitoring.
+
+- The dashboards will enable users to analyze trends, track business targets, and manage incidents more effectively. Each dashboard will have data that's more relevant to its intended audience and will be driven by their interests and needs.
 
 ### Design a robust alerting strategy
 
-**Make alerts actionable by notifying the accountable roles with standardized descriptions and severity levels. Provide information that's collated from various sources and track deviations from business targets.**
+**Make alerts actionable by sending them to the right people, with clear descriptions and severity levels. Include information from different sources so it's all in one place, and track anything that doesn't align with business goals.**
 
-Trigger alerts only for incidents that require action and strive for proactive and thought-provoking alerts that initiate actions before a degraded state becomes a failure. A good alert system identifies actions and severity and provides just enough data to drive clarity and purpose. Operators can start on remediation without delay.
+Only trigger alerts when something actually needs attention, and aim for alerts that help you get ahead of problems before they turn into bigger issues. A solid alert system should tell you what's wrong, how serious it is, and give just enough info to make things clear and actionable. That way, the team can jump straight into fixing things without wasting time.
+
+Trigger alerts only for incidents that need action and aim for proactive alerts that help you fix problems before they become a total failure. A good alert system should tell you what's wrong, how serious it is, and give just enough info to make things clear and actionable. Then the team can jump straight into fixing things without wasting time.
 
 *Contoso's challenge*
 
-- Azure Monitor is used to send alerts to the operations team when something goes wrong. However, the team currently receives too many alerts that are irrelevant, unclear, or redundant. This causes alert  fatigue and is affecting the team’s productivity and causing some important alerts to go unnoticed.
-- There have also been some situations of outages that could have been prevented or minimized if an alert was sent anticipating a failure. If the team had better alerting for degradation before outages occur, these situations might have been avoided. For example, there have been  occasions in which slow-downs in the database queries processing time have resulted in outages. While troubleshooting the outages, the team notices that the query processing performance decreases slowly over time, getting worse and worse until it causes a full-blown outage.
+- Azure Monitor is used to send alerts to the operations team when something goes wrong. However, the team currently receives too many alerts that are irrelevant, unclear, or redundant. This causes alert fatigue. The team is missing important alerts and productivity is slowing down.
+
+- There have also been some situations of outages that could have been prevented or minimized if an alert gave everyone a heads up. For example, we've seen database queries slow down gradually, and by the time it gets bad enough to trigger an alert, it's already caused an outage. If the team had smarter alerts that flagged these slow-downs earlier, they might've been able to step in before things broke.
 
 *Applying the approach and outcomes*
 
-- The operation team launches an initiative to clean up all the low priority alerts causing alert fatigue. Only critical and actionable alerts are allowed to remain active. Also, the team reviews (and enhances as needed) the alerts that will remain active to make sure they contain enough context to enable them to take the necessary corrective action.
-- They also take the opportunity to define new proactive, and actionable, alerts that will enable them to take action before a failure happens. For example, they generate a new alert to notify the DBAs as soon as a consistent slowdown in database query performance appears.
-- As a next step, the team is looking into automating responses to common alerts, such as the situation with database query performance.
+- The operation team launches a cleanup effort to get rid of all the low-priority alerts that are just adding noise. Only critical and actionable alerts are allowed to remain active. They're also reviewing the remaining alerts to make sure they give enough context so that the team can fix the problem without needing more info.
+
+- They also take the opportunity to set up new proactive, actionable alerts that will enable them to take action before a failure happens. For example, they added a new alert to notify the DBAs as soon as a steady slowdown in database query performance appears.
+- Next up, they're exploring ways to automate responses to common alerts, like the database slowdown.
+
