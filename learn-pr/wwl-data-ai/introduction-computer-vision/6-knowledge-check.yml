@@ -29,21 +29,21 @@ quiz:
     choices:
     - content: "To apply visual effects to enhance image appearance."
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect."
     - content: "To extract numeric features from images for use in a neural network."
       isCorrect: true
-      explanation: ""
+      explanation: "Correct."
     - content: "To compress image size for faster processing."
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect."
   - content: "What is the primary function of a multi-modal model in computer vision?"
     choices:
     - content: "To generate random captions for unlabeled images."
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect."
     - content: "To replace CNNs entirely in all vision tasks."
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect."
     - content: "To combine image features with natural language embeddings for richer understanding."
       isCorrect: true
-      explanation: ""    
+      explanation: "Correct."    

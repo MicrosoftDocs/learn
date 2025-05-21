@@ -2,6 +2,3 @@ Computer vision is built on the analysis and manipulation of numeric pixel value
 
 While you *can* create your own machine learning models for computer vision, today's foundation models can use to analyze images, including generating a descriptive caption, extracting relevant tags, identifying objects, and others.
 
-## Learn more
-
-Apply these concepts in *Get started with computer vision on Azure*.

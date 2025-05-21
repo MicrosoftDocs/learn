@@ -76,4 +76,4 @@ Green: 255
 Blue: 0
 ```
 
-Next, let's expore how images are processed.
+Next, let's explore how images are processed.
