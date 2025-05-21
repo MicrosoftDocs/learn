@@ -16,7 +16,7 @@ Your goal is to set up a Linux virtual machine (VM) and create an activity log m
 
 1. On the **Select a resource** overlay pane in the **Resource types** dropdown list, search for and select **Virtual machines**.
 
-1. You want an alert when any virtual machine in your resource group is deleted. Select the box for the Sandbox resource group **learn-53f3da3b-946a-4d7d-974e-6ac534868856** (which you used in the previous exercise to create a VM), then select **Apply**.
+1. You want an alert when any virtual machine in your resource group is deleted. Select the box for the Sandbox resource group **learn-53f3da3b-946a-4d7d-974e-6ac534868856**, then select **Apply**.
 
     :::image type="content" source="../media/8-alert-resource.png" alt-text="Screenshot that shows the 'Select a resource' pane with the sandbox resource group selected.":::
 
