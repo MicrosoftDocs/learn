@@ -1,5 +1,7 @@
 Hardware virtualization makes it possible to run multiple isolated instances of operating systems concurrently on the same physical hardware. Containers represent the next stage in the virtualization of computing resources.
 
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=ee640e0c-b3ac-49ae-a273-6767416e1666]
+
 Container-based virtualization allows you to virtualize the operating system. This approach lets you run multiple applications within the same instance of an operating system, while maintaining isolation between the applications. The containers within a virtual machine provide functionality similar to that of virtual machines within a physical server.
 
 ### Things to know about containers versus virtual machines
