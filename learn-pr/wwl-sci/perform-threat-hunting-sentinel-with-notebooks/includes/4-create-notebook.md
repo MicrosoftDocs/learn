@@ -42,7 +42,7 @@ To get started with Notebooks, use the *Getting Started Guide For Microsoft Sent
 1. 1. In the command bar, to the right of the **Compute:**  selector, select the **+** symbol to *Create Azure ML compute* instance. **Hint:** It might be hidden inside the ellipsis icon **(...)**.
 
     > [!NOTE]
-    > You can have more screen space by hiding the Azure ML Studio left blade by selecting the *Hamburger menu* (3 horizontal lines on the top left), and by collapsing the Notebooks Files by selecting the **<<** icon.
+    > You can have more screen space by hiding the Azure ML Studio left menu selections. Select the *Hamburger menu* (3 horizontal lines on the top left), and by collapsing the Notebooks Files by selecting the **<<** icon.
 
 1. Type a unique name in the *Compute name* field. This identifies your compute instance.
 
@@ -51,12 +51,12 @@ To get started with Notebooks, use the *Getting Started Guide For Microsoft Sent
     > [!TIP]
     > Workload type: Development on Notebooks (or other IDE) and light weight testing.
 
-1. Select the **Review + Create** button at the bottom of the screen, then scroll down and select **Create**. Close any feedback window that may appear. This takes a few minutes. You see a notification (bell icon) when it's done and the *Compute instance* left icon turns from blue to green.
+1. Select the **Review + Create** button at the bottom of the screen, then scroll down and select **Create**. Close any feedback window that appears. This takes a few minutes. You see a notification (bell icon) when it completes and the *Compute instance* left icon turns from blue to green.
 
-1. Once the Compute has been created and running, verify that the kernel to use is *Python 3.10 - Pytorch and Tensorflow*.
+1. Once the Compute is created and running, verify that the kernel to use is *Python 3.10 - Pytorch and Tensorflow*.
 
     > [!TIP]
-    > This is shown in the right of the menu bar. If that kernel isn't selected, select the *Python 3.10 - Pytorch and Tensorflow* option from the drop-down list. You may need to select the **Refresh** icon on the far right to see the kernel options.
+    > This is shown in the right of the menu bar. If that kernel isn't selected, select the *Python 3.10 - Pytorch and Tensorflow* option from the drop-down list. You can select the **Refresh** icon on the far right to see the kernel options.
 
 1. Select the **Authenticate** button and wait for the authentication to complete.
 
@@ -70,13 +70,13 @@ To get started with Notebooks, use the *Getting Started Guide For Microsoft Sent
     > [!TIP]
     > Section 1.2 *Running code in notebooks* lets you practice running small lines of Python code.
 
-1. In section *2 Initializing the notebook and MSTICPy*, review the content on initalizing the notebook and installing the MSTICPy package.
+1. In section *2 Initializing the notebook and MSTICPy*, review the content on initializing the notebook and installing the MSTICPy package.
 
 1. Run the *Python code* to initialize the cell by selecting the **Run cell** button (Play icon) to the left of the code.
 
-1. It should take >30 seconds to run. Once it's done, review the output messages and *disregard any warnings about the Python kernel version* or other error messages. 
+1. It should take >30 seconds to run. Once it completes, review the output messages and *disregard any warnings about the Python kernel version* or other error messages.
 
-1. The code ran successfully if *msticpyconfig.yaml* was created in the *utils* folder in the *file explorer* pane on the left. It may take another 30 seconds for the file to appear. If it doesn't appear, select the **Refresh** icon in the *file explorer* pane.
+1. The code ran successfully if *msticpyconfig.yaml* was created in the *utils* folder in the *file explorer* pane on the left. It can take another 30 seconds for the file to appear. If it doesn't appear, select the **Refresh** icon in the *file explorer* pane.
 
     > [!TIP]
     > You can clear the output messages by selecting the ellipsis (...) on the left of the code window for the *Output menu* and selecting the *Clear output* (square with an x*) icon.
@@ -86,4 +86,4 @@ To get started with Notebooks, use the *Getting Started Guide For Microsoft Sent
 1. Proceed to section *3 Querying data with MSTICPy* and review the contents. Don't run the *Multiple Microsoft Sentinel workspaces* code cell as it fails, but the other code cells can be run successfully.
 
 > [!NOTE]
-> If you cannot complete the steps above to access the Notebook, you can follow it on its GitHub viewwer page instead. [Getting Started with Azure ML Notebooks and Microsoft Sentinel](https://nbviewer.org/github/Azure/Azure-Sentinel-Notebooks/blob/master/A%20Getting%20Started%20Guide%20For%20Azure%20Sentinel%20ML%20Notebooks.ipynb)
+> If you can't complete the steps above to access the Notebook, you can follow it on its GitHub viewer page instead. [Getting Started with Azure ML Notebooks and Microsoft Sentinel](https://nbviewer.org/github/Azure/Azure-Sentinel-Notebooks/blob/master/A%20Getting%20Started%20Guide%20For%20Azure%20Sentinel%20ML%20Notebooks.ipynb)
