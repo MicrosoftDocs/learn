@@ -3,8 +3,8 @@ uid: learn.wwl.perform-threat-hunting-sentinel-with-notebooks
 metadata:
   title: Hunt for threats using notebooks in Microsoft Sentinel
   description: "Hunt for threats using notebooks in Microsoft Sentinel"
-  ms.date: 10/12/2022
-  author: wwlpublish
+  ms.date: 5/22/2025
+  author: KenMAG
   ms.author: kelawson
   ms.topic: module
   ms.service: microsoft-sentinel
@@ -17,7 +17,8 @@ abstract: |
   - Create and use notebooks in Microsoft Sentinel
 prerequisites: |
   - Basic knowledge of operational concepts such as monitoring, logging, and alerting
-  - Basic experience with Azure services
+  - Familiarity deploying Azure services
+  - Familiarity with scripting and Python coding
 iconUrl: /training/achievements/azure-sentinel-notebooks.svg
 levels:
 - intermediate
