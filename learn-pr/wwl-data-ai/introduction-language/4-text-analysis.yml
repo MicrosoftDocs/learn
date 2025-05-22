@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-text-analysis.md)]
+  [!include[](includes/4-text-analysis.md)]
