@@ -2,11 +2,11 @@
 
 The Microsoft Threat Modeling Tool, recognized by the threat-modeling community, helps engineers create data-flow diagrams. It offers customizable templates and a threat-generation engine with threats and risk-reduction strategies.
 
-The default template is called "SDL TM Knowledge Base" and gives you a basic set of elements and threat-generation capabilities. All you need is a basic understanding of data-flow diagrams and STRIDE.
+The default template is called *SDL TM Knowledge Base* and gives you a basic set of elements and threat-generation capabilities. All you need is a basic understanding of data-flow diagrams and STRIDE.
 
 ### STRIDE
 
-STRIDE is a model that categorizes security threats to help identify. The Microsoft Threat Modeling Tool helps apply STRIDE for threat-modeling work. STRIDE is the acronym for the six major threat categories:
+STRIDE is a model that categorizes security threats to help identify them. The Microsoft Threat Modeling Tool helps apply STRIDE for threat-modeling work. STRIDE is the acronym for the six major threat categories:
 
 - **Spoofing**: Pretending to be someone or something else.
 - **Tampering**: Changing data without authorization.
@@ -15,11 +15,11 @@ STRIDE is a model that categorizes security threats to help identify. The Micros
 - **Denial of service**: Overwhelming the system.
 - **Elevation of privilege**: Having permissions I shouldn't have.
 
-You can customize the template across the areas we'll discuss next, which are stencils, threat properties, and risk reduction strategies.
+With this in mind, you can customize your template across the areas we'll discuss next in stencils, threat properties, and risk reduction strategies.
 
 ### Stencils
 
-Stencils are made up of parent stencils that include process, external interactor, data store, data-flow, and trust boundaries. They can be dragged and dropped onto your canvas to build your data-flow diagram.
+Stencils are made up of parent stencils that include process, external interactor, data store, data-flow, and trust boundaries. They can be drag-and-dropped onto your canvas to build your data-flow diagram.
 
 :::image type="content" source="../media/parentstencils.jpg" alt-text="Screenshot of Parent Stencils." loc-scope="other":::
 
@@ -67,14 +67,14 @@ Then in the User view, the Threat Modeling Tool users see changes whenever they 
 
 This section is the heart of the threat modeling tool. The threat-generation engine looks at individual and connected elements to decide which threats to generate.
 
-Step 1 specifies sources and targets. The threat-generation engine uses simple sentences to generate a threat. Examples include *target is [element name]* and *source is [element name]*. You can also use the element name on titles and descriptions. The format is *{target.Name}* or *{source.Name}*.
+**Step 1 specifies sources and targets**. The threat-generation engine uses simple sentences to generate a threat. Examples include *target is [element name]* and *source is [element name]*. You can also use the element name on titles and descriptions. The format is *{target.Name}* or *{source.Name}*.
 
-Step 2 combines sources and targets. You can be precise with the way a threat is generated. Combine targets, sources, and their individual properties with AND/OR operators. Examples include:
+**Step 2 combines sources and targets**. You can be precise with the way a threat is generated. Combine targets, sources, and their individual properties with AND/OR operators. Examples include:
 
 - target.[property name] is 'Yes' **AND** source.[property name] is 'No'
 - flow crosses [trust boundary name]
 
-Step 3 generates or ignores threats. The threat-generation engine uses two fields to generate or ignore a threat:
+**Step 3 generates or ignores threats**. The threat-generation engine uses two fields to generate or ignore a threat:
 
 - **Include**: A threat is generated if sentences added in this field are true.
 - **Exclude**: A threat isn't generated if sentences added in this field are true.

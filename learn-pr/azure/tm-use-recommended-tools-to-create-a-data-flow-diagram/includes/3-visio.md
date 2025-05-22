@@ -1,6 +1,6 @@
 Microsoft Visio is recognized for its robust set of features to help anyone create quality flowcharts and data-flow diagrams. Visio tools help you visualize how an application or systems is organized towards threat modeling.
 
-You can use to create flowcharts, basic network diagrams, Venn diagrams, block diagrams, and business matrices. All while being able to start quickly and in a collaborative manner. Let's look at some other pros to using Visio and review any cons.
+You can use Visio to create flowcharts, basic network diagrams, Venn diagrams, block diagrams, and business matrices. All while being able to start quickly and in a collaborative manner. Let's look at some other pros to using Visio and review any cons.
 
 ## Pros
 
