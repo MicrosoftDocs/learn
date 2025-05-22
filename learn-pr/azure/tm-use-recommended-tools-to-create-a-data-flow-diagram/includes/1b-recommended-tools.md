@@ -10,6 +10,6 @@ We look at the different sections, stencils, and elements to see how the differe
 
 ## Visio
 
-Our other recommended tool is Visio. It gives you a clean canvas to create data-flow diagrams. With the Visio desktop and web applications, you can view, edit, and share Visio diagrams as well. You can also save them in Sharepoint or OneDrive for Business to share with others.
+Our other recommended tool is Visio. It gives you a clean canvas to create data-flow diagrams. With the Visio desktop and web applications, you can view, edit, and share Visio diagrams as well. You can also save them in Sharepoint or OneDrive to share with others.
 
 We talk about some of the basic functionality of Visio as well as pros and cons associated with the tool.

@@ -1,4 +1,4 @@
-A data-flow diagram is a graphical representation of how your system works. It includes all data stores, processes, external entities, trust boundaries, and data-flows. Using these diagrams help all users in your organization collaborate to enhance your threat modeling work.
+A data-flow diagram is a graphical representation of how your system works. It includes all data stores, processes, external entities, trust boundaries, and data-flows. Using these diagrams helps all users in your organization collaborate to enhance your threat modeling work.
 
 ## Creating a data-flow diagram
 

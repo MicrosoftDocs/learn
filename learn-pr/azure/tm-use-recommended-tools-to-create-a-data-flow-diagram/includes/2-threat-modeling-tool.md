@@ -90,4 +90,4 @@ The Cross Site Scripting threat in this example is only generated when the proce
 :::image type="content" source="../media/IncludeExclude.JPG" alt-text="Screenshot of Include/Exclude view." loc-scope="other":::
 
 > [!NOTE]
-> Microsoft Threat Modeling Tool template creation is a complex topic and will not be fully discussed in this learning path.
+> Microsoft Threat Modeling Tool template creation is a complex topic and won't be fully discussed in this learning path.
