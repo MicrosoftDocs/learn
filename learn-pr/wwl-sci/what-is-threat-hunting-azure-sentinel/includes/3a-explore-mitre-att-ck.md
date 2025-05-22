@@ -78,7 +78,7 @@ Having a scheduled analytical rule with MITRE techniques applied running regular
   - When configuring analytics rules, select specific MITRE techniques to apply to your rule.
   - When searching for analytics rules, filter the rules displayed by technique to find your rules quicker.
   
-    image type="content" source="../media/mitre-analytic-rule-technique.png" alt-text="Screenshot of the MITRE ATT&CK analytics rules configuration." lightbox="../media/mitre-analytic-rule-technique.png":::
+    :::image type="content" source="../media/mitre-analytic-rule-technique.png" alt-text="Screenshot of the MITRE ATT&CK analytics rules configuration." lightbox="../media/mitre-analytic-rule-technique.png":::
   
 - **Incidents:**
 
