@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-computer-vision.azure-ai-vision
+title: Understand Azure AI Vision Image Analysis capabilities
+metadata:
+  title: Understand Azure AI Vision Image Analysis capabilities
+  description: Understand image analysis capabilities
+  author: wwlpublish
+  ms.author: sheryang
+  ms.date: 05/22/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-image-service.md)]
+
