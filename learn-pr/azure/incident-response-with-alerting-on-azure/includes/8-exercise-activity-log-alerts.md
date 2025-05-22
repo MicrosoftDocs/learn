@@ -18,7 +18,7 @@ Your goal is to set up a Linux virtual machine (VM) and create an activity log m
 
 1. You want an alert when any virtual machine in your resource group is deleted. Select the box for the Sandbox resource group **learn-53f3da3b-946a-4d7d-974e-6ac534868856**, then select **Apply**.
 
-    :::image type="content" source="../media/8-alert-resource.png" alt-text="Screenshot that shows the 'Select a resource' pane with the sandbox resource group selected.":::
+    :::image type="content" source="../media/8-alert-resource.png" lightbox="../media/8-alert-resource.png" alt-text="Screenshot that shows the 'Select a resource' pane with the sandbox resource group selected.":::
 
 1. Back on the **Create an alert rule** pane, the Scope target resource now shows **All Virtual machines**. Select the **Condition** tab.
 
@@ -26,7 +26,7 @@ Your goal is to set up a Linux virtual machine (VM) and create an activity log m
 
 1. On the **Select a signal** overlay pane, search for and select **Delete Virtual Machine (Virtual Machines)**, then select **Apply**
 
-    :::image type="content" source="../media/8-alert-signal.png" alt-text="Screenshot that shows the 'Select a signal' pane with 'Delete Virtual Machine (Virtual Machines)' selected.":::
+    :::image type="content" source="../media/8-alert-signal.png" lightbox="../media/8-alert-signal.png" alt-text="Screenshot that shows the 'Select a signal' pane with 'Delete Virtual Machine (Virtual Machines)' selected.":::
 
 1. You're back on the **Create an alert rule** pane. To receive alerts of all types, leave **Alert logic** settings at their default of **All selected**. Leave the **Create an alert rule** pane open for the next section.
 
@@ -52,7 +52,7 @@ For the previous Azure Monitor alert, you didn't add any actions. You just viewe
     | Action group name    | **Alert the operations team**                               |
     | Display name         | **AlertOps**                                                |
 
-    :::image type="content" source="../media/8-action-group-basics.png" alt-text="Screenshot that shows the 'Create action group' pane with all Project details and Instance details entered.":::
+    :::image type="content" source="../media/8-action-group-basics.png" lightbox="../media/8-action-group-basics.png" alt-text="Screenshot that shows the 'Create action group' pane with all Project details and Instance details entered.":::
 
 1. Select **Next: Notifications** and enter the following values for each setting.
 
@@ -65,7 +65,7 @@ For the previous Azure Monitor alert, you didn't add any actions. You just viewe
 
 1. On the **Email/SMS message/Push/Voice** overlay pane, select **Email**. Then, in the **Email** field, enter your email address and select **OK**.
 
-    :::image type="content" source="../media/8-alert-action.png" alt-text="Screenshot that shows the 'Email/SMS message/Push/Voice' pane with Email selected.":::
+    :::image type="content" source="../media/8-alert-action.png" lightbox="../media/8-alert-action.png" alt-text="Screenshot that shows the 'Email/SMS message/Push/Voice' pane with Email selected.":::
 
 1. Back on the **Create action group** pane, select **Review + create** to validate your input.
 
@@ -80,7 +80,7 @@ For the previous Azure Monitor alert, you didn't add any actions. You just viewe
 
 1. Expand the **Advanced options** section and confirm that **Enable alert rule upon creation** is selected.
 
-    :::image type="content" source="../media/8-alert-details.png" alt-text="Screenshot that shows a completed alert details section.":::
+    :::image type="content" source="../media/8-alert-details.png" lightbox="../media/8-alert-details.png" alt-text="Screenshot that shows a completed alert details section.":::
 
 1. Select **Review + create** to validate your input, then select **Create**.
 
@@ -104,7 +104,7 @@ To trigger an alert, you need to delete the Linux VM that you created in the pre
 
 1. Enter *delete* to confirm deletion and select **Delete**.
 
-    :::image type="content" source="../media/8-delete-vm.png" alt-text="Screenshot that shows the 'Delete Resources' pane with the VM selected.":::
+    :::image type="content" source="../media/8-delete-vm.png" lightbox="../media/8-delete-vm.png" alt-text="Screenshot that shows the 'Delete Resources' pane with the VM selected.":::
 
 1. In the title bar, select the **Notifications** icon and wait until **vm1** is successfully deleted.
 
@@ -114,13 +114,13 @@ In the exercise, you set up an Ubuntu VM and created an activity log rule to det
 
 1. You should receive a notification email that reads, **Important notice: Azure Monitor alert VM was deleted was activated...** If not, open your email program and look for an email from azure-noreply@microsoft.com.
 
-    :::image type="content" source="../media/8-alert-email.png" alt-text="Screenshot that shows the email you receive when an alert fires.":::
+    :::image type="content" source="../media/8-alert-email.png" lightbox="../media/8-alert-email.png" alt-text="Screenshot that shows the email you receive when an alert fires.":::
 
 1. On the Azure portal resource menu, select **Monitor**, and then select **Alerts** in the menu on the left.
 
 1. You should have three verbose alerts that were generated by deleting **vm1**.
 
-    :::image type="content" source="../media/8-alerts-pane.png" alt-text="Screenshot that shows all alerts with Name, Severity, Alert condition, User response and Fired time.":::
+    :::image type="content" source="../media/8-alerts-pane.png" lightbox="../media/8-alerts-pane.png" alt-text="Screenshot that shows all alerts with Name, Severity, Alert condition, User response and Fired time.":::
 
 1. Select the name of one of the alerts (For example, **VM was deleted**). An **Alert details** pane appears that shows more details about the event.
 
@@ -134,7 +134,7 @@ We're going to schedule a one-time, overnight, planned maintenance. It starts in
 
 1. Check the box for your sandbox resource group as the scope of the alert processing rule, then select **Apply**.
 
-    :::image type="content" source="../media/8-alert-processing-rule-resource.png" alt-text="Screenshot that shows the selected resource group for the alert processing rule.":::
+    :::image type="content" source="../media/8-alert-processing-rule-resource.png" lightbox="../media/8-alert-processing-rule-resource.png" alt-text="Screenshot that shows the selected resource group for the alert processing rule.":::
 
 1. Select **Next: Rule settings**, then select **Suppress notifications**.
 
@@ -150,7 +150,7 @@ Enter these settings for the scheduling of the alert processing rule:
     | End            | Enter tomorrow's date at 7am. |
     | Time zone      | Select the local timezone.    |
 
-    :::image type="content" source="../media/8-alert-processing-rule-schedule.png" alt-text="Screenshot of the scheduling section of an alert processing rule.":::
+    :::image type="content" source="../media/8-alert-processing-rule-schedule.png" lightbox="../media/8-alert-processing-rule-schedule.png" alt-text="Screenshot of the scheduling section of an alert processing rule.":::
 
 1. Select **Next: Details** and enter these settings:
 
