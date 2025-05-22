@@ -65,12 +65,12 @@ To get started with Notebooks, use the *Getting Started Guide For Microsoft Sent
     > [!TIP]
     > This can be found by selecting the ellipsis (...) from the menu bar.
 
-1. Review section *1 Introdution* in the notebook and proceed to section *2 Initializing the notebook and MSTICPy*.
+1. Review section *1 Introduction* in the notebook and proceed to section *2 Initializing the notebook and MSTICPy*.
 
     > [!TIP]
     > Section 1.2 *Running code in notebooks* lets you practice running small lines of Python code.
 
-1. In section *2 Initializing the notebook and MSTICPy*, review the content on initializing the notebook and installing the MSTICPy package.
+1. In section *2 Initializing the notebook and MSTICPy*, review the content on Initializing the notebook and installing the MSTICPy package.
 
 1. Run the *Python code* to initialize the cell by selecting the **Run cell** button (Play icon) to the left of the code.
 
