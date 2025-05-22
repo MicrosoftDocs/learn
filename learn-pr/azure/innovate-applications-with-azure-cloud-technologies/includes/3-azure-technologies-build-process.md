@@ -8,7 +8,7 @@ After you've started the build phase to validate your innovation hypothesis, the
 - **Quick delivery of software features**: DevOps processes and tools embrace the concept of failing fast. Building MVPs or prototypes to quickly validate whether the feature on which you're working goes in the right direction is core to the concept of DevOps.
 - **Reliable delivery of software features**: Change-averse organizations often associate quick changes with downtime. However, DevOps promises exactly the opposite: a quick change rate and a high level of reliability. This reliability is made possible by integrating testing in early stages of the development cycle, in a process called "shift to the left."
 
-  If the development of a feature across time is seen as a line from left to right. Then, a legacy development process would perform user validation and quality control at the end of the development cycle. At the "right" end of that line. DevOps advises you to test and validate as early as possible, at the "left" of that time line.
+  If the development of a feature across time is seen as a line from left to right, then a legacy development process would perform user validation and quality control at the end of the development cycle. This is at the "right" end of that line. DevOps advises you to test and validate as early as possible, at the "left" of that time line.
 
 DevOps embodies the same core concepts of a healthy innovation culture. Adopting its methodology is key to get to an agile innovation cycle.
 
@@ -18,7 +18,7 @@ Modularity is a well-known technique to reduce complexity in architecting comple
 
 If the system is modular, you can separate it into smaller subsystems that interact with each other via well-defined interfaces. Introducing changes in one of these subsystems is easier, because as long as its interface with the other modules stays constant, the overall system continues working.
 
-Microservices architectures are application patterns that exploit modularity. Applications are subdivided into separate, small components that can be developed independently from each other, potentially even using different programming languages. Each component, or microservice, can operate on its own. You can scale it as required, you can troubleshoot it as a single unit, you can modify it independently from the other microservices.
+Microservices architectures are application patterns that exploit modularity. Applications are subdivided into separate, small components that can be developed independently from each other, potentially even using different programming languages. Each component, or microservice, can operate on its own. You can scale it as required, you can troubleshoot it as a single unit, and you can modify it independently from the other microservices.
 
 A question that organizations often ask is what to do if an application is monolithic. Should the organization redesign the application into a microservices architecture before introducing innovation, or can the innovation and redesign processes run in parallel? There's no single answer to this question. It depends on the complexity and business relevance of the application under consideration.
 
@@ -32,7 +32,7 @@ The projects are to interact with each other, guided by the business value of in
 
 The technology of containerization isn't exclusive to microservices architectures, but the concepts work together. Containers are a way to encapsulate application code and its dependencies so that they can be deployed effortlessly in any platform.
 
-Traditional application deployments require the organization to install software first, such as the application runtime, programming libraries, or external components. This approach often results in the "it works on my machine" problem: it's difficult to replicate the same environment across development, test, staging, and production. Small differences in the way that the application dependencies are installed can cause the application to work fine while being tested, but fail when it's deployed into production.
+Traditional application deployments require the organization to install software first, such as the application runtime, programming libraries, or external components. This approach often results in the "it works on my machine" problem since it's difficult to replicate the same environment across development, test, staging, and production. Small differences in the way that the application dependencies are installed can cause the application to work fine while being tested but fail when it's deployed into production.
 
 Containers change the rules of the game. The application dependencies are packed along with the application code in an autonomous deployment unit called the container image. Whether the application container is deployed on a developer's laptop or in a production cluster with hundreds of nodes, the dependency handling is the same. The container works exactly the same way, so application testing is more reliable and trustworthy.
 
@@ -52,7 +52,7 @@ Running Kubernetes in Azure is easy. [Azure Kubernetes Service](/azure/aks/intro
 
 ## Azure App Service
 
-[Azure App Service](/azure/app-service/overview?azure-portal=true) is a platform where organizations can run their web-based workloads without having to manage any orchestrator or underlying operating system. The only requirement is uploading the application code to the service through one of many available deployment methods. Azure does the rest: scaling the application in and out, patching and maintaining the underlying virtual machines, and much more, without requiring the learning curve of Kubernetes.
+[Azure App Service](/azure/app-service/overview?azure-portal=true) is a platform where organizations can run their web-based workloads without having to manage any orchestrator or underlying operating system. The only requirement is uploading the application code to the service through one of many available deployment methods. Azure does the rest to include scaling the application in and out, patching and maintaining the underlying virtual machines, and much more. All this without requiring the learning curve of Kubernetes.
 
 Azure App Service supports container-based workloads, so you can upload your container image instead of the application code. It also supports Linux and Windows workloads and many different application runtimes.
 
