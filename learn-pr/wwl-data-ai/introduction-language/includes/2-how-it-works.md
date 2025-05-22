@@ -17,6 +17,7 @@ For example, consider this phrase from a famous US presidential speech: `"we cho
 
 Notice that `"to"` (token number 3) is used twice in the corpus. The phrase `"we choose to go to the moon"` can be represented by the tokens :::no-loc text="{1,2,3,4,3,5,6}":::.
 
+
 > [!NOTE]
 > We've used a simple example in which tokens are identified for each distinct word in the text. However, consider the following concepts that may apply to tokenization depending on the specific kind of NLP problem you're trying to solve:
 >

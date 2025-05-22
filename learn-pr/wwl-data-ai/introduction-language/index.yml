@@ -2,7 +2,7 @@
 uid: learn.wwl.introduction-language
 metadata:
   title: Introduction to natural language processing concepts
-  description: "Introduction to natural language processing concepts"
+  description: "Natural language processing (NLP) supports applications that can see, hear, speak with, and understand users. In this module you learn about the concepts that make NLP possible."
   ms.date: 5/21/2025
   author: wwlpublish
   ms.author: sheryang
@@ -13,7 +13,7 @@ metadata:
   ms.service: azure-ai-language
   ai-usage: ai-assisted
 title: Introduction to natural language processing concepts
-summary: Explore natural language processing (NLP).
+summary: Natural language processing (NLP) supports applications that can see, hear, speak with, and understand users. In this module you learn about the concepts that make NLP possible.
 abstract: Explore natural language processing (NLP).
 prerequisites: Ability to navigate the Azure portal
 iconUrl: /learn/achievements/analyze-text-with-text-analytics-service.svg

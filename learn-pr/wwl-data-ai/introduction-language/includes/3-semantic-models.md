@@ -29,4 +29,4 @@ Common NLP tasks supported by language models include:
 - Summarization, in which the main points of a large body of text are summarized.
 - Conversational AI solutions such as *bots* or *digital assistants* in which the language model can interpret natural language input and return an appropriate response.
 
-Next, let's learn more about the capabilities made possible by langauge models.
+Next, let's learn more about the capabilities made possible by language models.
