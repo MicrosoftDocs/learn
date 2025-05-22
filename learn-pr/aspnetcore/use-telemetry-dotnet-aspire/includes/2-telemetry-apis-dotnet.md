@@ -1,4 +1,4 @@
-How can you investigate the an app's behavior for troubleshooting or performance optimization? The more data you have about what the app did, the easier it is to diagnose problems.
+How can you investigate an app's behavior for troubleshooting or performance optimization? The more data you have about what the app did, the easier it is to diagnose problems.
 
 Imagine you work for an outdoor equipment retailer. Your teams are building their microservices and are ready for the testing phase. You want to ensure that your cloud-native app emits telemetry about its behavior so that you can diagnose problems during testing, staging, and production.
 
