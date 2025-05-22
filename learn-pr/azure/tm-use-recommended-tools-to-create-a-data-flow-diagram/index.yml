@@ -11,8 +11,8 @@ title: Use recommended tools to create a data-flow diagram
 summary: You can use any canvas, physical or virtual, to create a data-flow diagram. Engineers at Microsoft recommend a few tools to help you in your threat modeling journey.
 abstract: |
   In this module, you'll:
-  - Learn about the Threat Modeling Tool
-  - Learn more about Visio
+  - Learn about the Threat Modeling Tool.
+  - Learn more about Visio.
 prerequisites: None
 iconUrl: /training/achievements/use-recommended-tools-to-create-a-data-flow-diagram.svg
 levels:
