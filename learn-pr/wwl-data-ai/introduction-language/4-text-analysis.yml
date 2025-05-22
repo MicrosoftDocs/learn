@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-language.text-analysis
+title: Understand text analysis
+metadata:
+  title: Understand text analysis
+  description: "Understand text analysis"
+  ms.date: 5/21/2025
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-text-analysis.md)]
