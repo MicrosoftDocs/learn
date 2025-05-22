@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.orchestrate-processes-in-fabric.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 11/14/2024
+  author: jamesh
+  ms.author: jamesh
+  ms.topic: unit
+  ms.custom:
+  - DP-700
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]
