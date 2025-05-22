@@ -10,7 +10,7 @@ Text analysis includes:
 
 ## Entity recognition and linking
 
-An entity is an item of a particular type or a category; and in some cases, subtype, such as those as shown in the following table.
+An entity is an item of a particular type or a category; and in some cases, subtype. For example:
 
 |Type|SubType|Example|
 |---|---|---|
@@ -77,4 +77,4 @@ Key phrase extraction can provide some context to this review by extracting the 
 - ambiance
 - place
 
-As well as using sentiment analysis to determine that this is a positive review, you can also use the key phrase service to identify important elements of the review.
+You can use sentiment analysis to determine that this is a positive review and use the key phrase service to identify important elements of the review.

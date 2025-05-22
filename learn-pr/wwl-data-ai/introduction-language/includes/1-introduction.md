@@ -6,5 +6,5 @@ Natural language processing might be used to create:
 - A document search application that summarizes documents in a catalog.
 - An application that extracts brands and company names from text.
 
-In this module, you'll explore natural language processing. 
+In this module, let's explore natural language processing. 
 
