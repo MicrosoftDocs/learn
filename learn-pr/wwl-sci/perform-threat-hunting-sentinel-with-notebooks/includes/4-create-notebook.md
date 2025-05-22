@@ -49,7 +49,7 @@ To get started with Notebooks, use the *Getting Started Guide For Microsoft Sent
 1. Scroll down and select the first option available.
 
     > [!TIP]
-    > Workload type: Development on Notebooks (or other IDE) and light weight testing.
+    > Workload type: Development on Notebooks (or other IDE) and lightweight testing.
 
 1. Select the **Review + Create** button at the bottom of the screen, then scroll down and select **Create**. Close any feedback window that appears. This takes a few minutes. You see a notification (bell icon) when it completes and the *Compute instance* left icon turns from blue to green.
 
