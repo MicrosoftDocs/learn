@@ -34,7 +34,7 @@ For example, suppose you want to detect entities in the following restaurant rev
 
 ## Sentiment analysis and opinion mining
 
-Sentiment analysis is 
+Sentiment analysis is a technique used to determine the emotional tone or attitude expressed in a piece of text. It classifies text as positive, negative, or neutral, and often provides a score indicating the strength of each sentiment.
 
 Scores indicate how likely the provided text is a particular sentiment. 
 
@@ -48,15 +48,15 @@ and
 
 The sentiment score for the first review might be: 
 Document sentiment: positive
-Positive score: .90 
-Neutral score: .10
-Negative score: .00
+Positive score: 0.90 
+Neutral score: 0.10
+Negative score: 0.00
  
 The second review might return a response: 
 Document sentiment: negative
-Positive score: .00 
-Neutral score: .00
-Negative score: .99
+Positive score: 0.00 
+Neutral score: 0.00
+Negative score: 0.99
 
 ## Key phrase extraction
 
@@ -78,5 +78,3 @@ Key phrase extraction can provide some context to this review by extracting the 
 - place
 
 As well as using sentiment analysis to determine that this is a positive review, you can also use the key phrase service to identify important elements of the review.
-
-
