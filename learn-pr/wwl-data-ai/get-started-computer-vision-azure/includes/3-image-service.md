@@ -7,13 +7,13 @@ Azure AI Vision's image analysis capabilities can be used with or without custom
 
 ### Describing an image with captions
 
-Azure AI Vision has the ability to analyze an image, evaluate the objects that are detected, and generate a human-readable phrase or sentence that can describe what was detected in the image. For example, consider the following image:
+Azure AI Vision has the ability to analyze an image, evaluate the objects in it, and generate a human-readable description of the image. For example, consider the following image:
 
-![Diagram of a man on a skateboard.](../media/skateboard.png)
+![Diagram of a person on a skateboard.](../media/skateboard.png)
 
 Azure AI Vision returns the following caption for this image:
 
-*A man jumping on a skateboard*
+*A person jumping on a skateboard*
 
 
 ### Detecting common objects in an image
@@ -23,7 +23,7 @@ Azure AI Vision can identify thousands of common objects in images. For example,
 - *Skateboard (90.40%)*
 - *Person (95.5%)*
 
-The predictions include a *confidence score* that indicates the probability the model has calculated for the predicted objects.
+The predictions include a *confidence score* that indicates how confident the model is that what it describes is what is actually in the image.
 
 In addition to the detected object labels and their probabilities, Azure AI Vision returns *bounding box* coordinates that indicate the top, left, width, and height of the object detected. You can use these coordinates to determine where in the image each object was detected, like this:
 
@@ -31,7 +31,7 @@ In addition to the detected object labels and their probabilities, Azure AI Visi
 
 ### Tagging visual features
 
-Azure AI Vision can suggest *tags* for an image based on its contents. These tags can be associated with the image as metadata that summarizes attributes of the image and can be useful if you want to index an image along with a set of key terms that might be used to search for images with specific attributes or contents.
+Azure AI Vision can suggest *tags* for an image based on its contents. Tags are associated with images as metadata. The tags summarize attributes of the image. You can use tags to index an image along with a set of key terms for a search solution.
 
 For example, the tags returned for the skateboarder image (with associated confidence scores) include:
 
