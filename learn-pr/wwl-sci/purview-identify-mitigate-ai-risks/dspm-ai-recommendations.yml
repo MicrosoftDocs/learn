@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.purview-identify-mitigate-ai-risks.dspm-ai-recommendations
+title: Apply AI security recommendations with DSPM for AI
+metadata:
+  title: Apply AI security recommendations with DSPM for AI
+  description: "Apply AI security recommendations with DSPM for AI."
+  ms.date: 04/10/2025
+  author: wwlpublish
+  ms.author: riswinto
+  ms.topic: unit
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/dspm-ai-recommendations.md)]

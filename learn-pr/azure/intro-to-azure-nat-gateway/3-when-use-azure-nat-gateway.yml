@@ -2,8 +2,6 @@
 uid: learn.azure.intro-to-azure-nat-gateway.3-when-use-azure-nat-gateway
 title: When should you use Azure NAT Gateway?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: When should you use Azure NAT Gateway?
   description: This unit describes scenarios that are suitable for the use of Azure NAT Gateway.
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/3-when-use-azure-nat-gateway.md)]
-
+

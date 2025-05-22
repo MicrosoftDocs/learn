@@ -2,8 +2,6 @@
 uid: learn.azdo.manage-release-cadence.6-clean-up-environment
 title: Exercise - Clean up your environment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Clean up your environment
   description: Clean up your Azure DevOps project and your Azure resources.
   ms.date: 02/05/2024
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/6-clean-up-environment.md)]
-
+

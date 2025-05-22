@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.wwl.introduce-foundation-pillars-devops
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Introduce the foundation pillars of DevOps: Culture and Lean Product'
   description: 'DevOps is the union of people, process, and products to enable continuous delivery of value to our end users. Discover the first two foundation pillars of DevOps: Culture and Lean Product.'
   ms.date: 09/20/2020
@@ -49,4 +47,4 @@ units:
 - learn.wwl.introduce-foundation-pillars-devops.summary
 badge:
   uid: learn.wwl.introduce-foundation-pillars-devops.badge
-
+

@@ -1,11 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-ad.3-understand-licenses-terminology
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand Microsoft Entra ID licenses and terminology
   description: Understand Microsoft Entra ID licenses and terminology
-  ms.date: 12/18/2023
+  ms.date: 04/30/2025
   author: MicrosoftGuyJFlo
   ms.author: joflore
   ms.topic: unit

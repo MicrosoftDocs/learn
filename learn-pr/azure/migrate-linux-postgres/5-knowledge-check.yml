@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.migrate-linux-postgres.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: Check your knowledge about migrating Linux and Postgres workloads.
   ms.date: 10/17/2024
   author: asw101

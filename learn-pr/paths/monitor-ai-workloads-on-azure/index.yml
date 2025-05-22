@@ -1,0 +1,39 @@
+### YamlMime:LearningPath
+uid: learn.monitor-ai-workloads-on-azure
+title: Monitor AI workloads on Azure
+summary: This learning path is designed to help you build a strong foundation in monitoring and optimizing AI solutions deployed on Azure. You explore how to keep track of Azure AI services logs, assess the performance of AI applications using Azure Monitor, and learn the basics of monitoring AI models with Azure AI Foundry. By the end of this learning path, you gain the essential skills needed to ensure your AI applications are running efficiently and effectively, while understanding the tools available for comprehensive workload monitoring on Azure. 
+metadata:
+  title: Monitor AI workloads on Azure
+  description: Optimize your AI operations with the "Monitor AI Workloads on Azure" learning path. Through targeted modules, you learn to monitor Azure AI services, evaluate the performance of AI applications with Azure Monitor, and explore the fundamentals of monitoring AI models with Azure AI Foundry. This path equips professionals with the skills to ensure efficient, reliable, and high-performing AI workloads on Azure's robust platform. Start mastering AI monitoring strategies today!
+  ms.date: 03/20/2025
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: learning-path
+prerequisites: |
+  - Experience navigating the Azure portal 
+  - Familiarity with Microsoft Azure Monitor concepts like metrics and logs 
+  - Basic AI knowledge and familiarity with AI services on Azure 
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+- auditor
+- devops-engineer
+- identity-access-admin
+- privacy-manager
+- security-engineer
+- security-operations-analyst
+- solution-architect
+- support-engineer
+- data-scientist
+products:
+- ai-services
+- azure-monitor
+- azure-log-analytics
+modules:
+- learn.wwl.monitor-ai-services
+- learn.wwl.evaluate-models-azure-ai-studio
+- learn.introduction-to-azure-machine-learning-monitoring
+trophy:
+  uid: learn.monitor-ai-workloads-on-azure.trophy

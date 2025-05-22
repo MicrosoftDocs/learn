@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.guided-project-work-variable-data-c-sharp.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: "Check what you learn in this module."
-  ms.date: 01/08/2025
+  ms.date: 04/29/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -25,7 +25,7 @@ quiz:
     - content: "To find a substring in a larger string."
       isCorrect: false
       explanation: "Incorrect. `TryParse()` doesn't find a substring in a larger string."
-  - content: "For the code `decimal.TryParse(numberString, out myConvert))` when the type of `numberString` is a String. Which best describes the value type for `myConvert` when the `TryParse()` is successful?"
+  - content: "For the code `decimal.TryParse(numberString, out myConvert))`, when the type of `numberString` is a String. Which best describes the value type for `myConvert` when the `TryParse()` is successful?"
     choices:
     - content: "A string representing numeric digits."
       isCorrect: false

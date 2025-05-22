@@ -2,8 +2,6 @@
 uid: learn.wwl.manage-application-access-microsoft-entra-id.application-service-principal-objects-microsoft-entra-id
 title: Manage and use service principals
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Manage and use service principals
   description: "Manage and use service principals"
   ms.date: 02/12/2025

@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-hybrid-workloads-with-azure-arc.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 01/15/2025
   author: wwlpublish
@@ -39,4 +37,4 @@ quiz:
       explanation: "Correct. These are the required permissions."
     - content: "The account must be a member of the Global Administrator role."
       isCorrect: false
-      explanation: "Incorrect. The account only needs to be a member of the Azure Connected Machine Onboarding role."
+      explanation: "Incorrect. The account only needs to be a member of the Azure Connected Machine Onboarding role."

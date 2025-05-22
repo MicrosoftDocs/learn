@@ -4,6 +4,7 @@ Microsoft Security Copilot can be accessed through the dedicated site https://se
 There are some key landmarks on the Copilot landing page (portal) to which the user can navigate.
 
 - Home menu
+- Workspaces
 - Prompts to try
 - Prompt bar
 - Help
@@ -14,7 +15,7 @@ There are some key landmarks on the Copilot landing page (portal) to which the u
 
 The home menu is accessed by selecting the hamburger icon located on the top left corner of the Copilot landing page.
 
-:::image type="content" source="../media/home-menu-icon-home-menu-options.png" lightbox="../media/home-menu-icon-home-menu-options.png" alt-text="Screen capture showing the hamburger icon and the page it opens when selected.":::
+:::image type="content" source="../media/home-menu-icon-home-menu-options-agents.png" lightbox="../media/home-menu-icon-home-menu-options-agents.png" alt-text="Screen capture showing the hamburger icon and the page it opens when selected.":::
 
 From the home menu, the user can navigate as follows:
 
@@ -26,6 +27,10 @@ From the home menu, the user can navigate as follows:
 - The promptbook library, which includes promptbooks builtin and custom promptbooks. Information about each promptbook is provided, including the description, the required inputs, the number of prompts, the owner, and more. From the promptbook library you can run the selected promptbook by selecting the run icon. You can also select the ellipses for more options.
 
     :::image type="content" source="../media/promptbook-library-v2.png" lightbox="../media/promptbook-library-v2.png" alt-text="Screen capture listing the promptbook library.":::
+
+- Agents, which are AI-powered assistants built into Microsoft Security Copilot.  This page lists Microsoft and non-Microsoft agents that offer significant benefits for security teams and IT operations by automating routine tasks and freeing up valuable time for teams to concentrate on strategic initiatives and complex problem-solving.
+
+    :::image type="content" source="../media/agents-list-v2.png" lightbox="../media/agents-list-v2.png" alt-text="Screen capture showing the agents window, which lists available Microsoft and non-Microsoft agents.":::
 
 - Owner specific options, for users configured as owners:
 
@@ -68,12 +73,21 @@ From the home menu, the user can navigate as follows:
     :::image type="content" source="../media/recommended-microsoft-security-roles-origin-list-updated.png" lightbox="../media/recommended-microsoft-security-roles-origin-list-updated.png" alt-text="Screen capture showing the recommended Microsoft Security roles. These include Microsoft Entra, Microsoft Purview, and Microsoft Defender roles.":::
 
     ---
+  - Manage workspaces, where owners can create new workspaces, configure them by assigning access and permissions, and fine-tune settings such as owner roles and plugin configurations. Workspaces are described in more detail in the subsequent unit.
+  
+       :::image type="content" source="../media/workspace-manage.png" lightbox="../media/workspace-manage.png" alt-text="A screenshot of the manage workspaces page that lists the available workspaces.":::
 
-  - Usage monitoring, which provides a dashboard showing how SCUs are consumed over a period of time by your Microsoft Security Copilot workloads. The usage monitoring dashboard provides visibility into the number of units used, the specific plugins employed during sessions, and the initiators of those sessions. The dashboard also allows you to apply filters and export usage data seamlessly. The dashboard includes up to 90 days of data. When an analyst is in the middle of an investigation and the usage is nearing the provisioned capacity limit (90%), a notification is displayed to the analyst while entering the prompt. The notification informs the analyst to contact the owner to increase the capacity or limit the number of prompts to avoid disruptions. These notifications are also shown in the Security Copilot embedded experiences.
+  - Usage monitoring, which provides a dashboard showing how SCUs are consumed over a period of time by your Microsoft Security Copilot workloads. The usage monitoring dashboard provides visibility, for a selected workspace, into the number of units used, the specific plugins employed during sessions, and the initiators of those sessions. The dashboard also allows you to apply filters and export usage data seamlessly. The dashboard includes up to 90 days of data. When an analyst is in the middle of an investigation and the usage is nearing the provisioned capacity limit (90%), a notification is displayed to the analyst while entering the prompt. The notification informs the analyst to contact the owner to increase the capacity or limit the number of prompts to avoid disruptions. These notifications are also shown in the Security Copilot embedded experiences.
   
     When the provisioned capacity is crossed, the analyst sees an error message stating that due to high usage in organization, they cannot submit additional prompts. The analyst is asked to contact the owner to increase the provisioned SCUs.
 
+    # [Usage monitoring](#tab/usage-monitoring)
     :::image type="content" source="../media/usage-monitoring-dashboard-new.png" lightbox="../media/usage-monitoring-dashboard-new.png" alt-text="Screen capture showing the usage monitoring dashboard.":::
+
+    # [Usage monitoring filters](#tab/usage-monitoring-filters)
+    :::image type="content" source="../media/usage-monitoring-filters.png" lightbox="../media/usage-monitoring-filters.png" alt-text="Screen capture showing the usage monitoring filters.":::
+
+    ---
 
 - Settings, which include configurable preferences, data and privacy statements, and information about the App version.
 
@@ -94,6 +108,16 @@ From the home menu, the user can navigate as follows:
 - Tenant switcher. The tenant, which is provisioned for Copilot doesn't need to be the tenant your security analyst logs in from. In the screenshot that follows, security analyst Angus MacGregor uses a Fabrikam account to sign in. Copilot is provisioned in the Contoso tenant. By selecting the down arrow, Angus MacGregor is able to select the Contoso tenant.
 
     :::image type="content" source="../media/tenant-switcher-v3.png" lightbox="../media/tenant-switcher-v3.png" alt-text="Screen capture showing the tenant switching window, with multiple tenants listed.":::
+
+### Workspaces
+
+Copilot workspaces are separate work environments within the tenant in which your Copilot instance is operating. One way to think about Copilot workspaces is as separate rooms in a house. Each room is configured to be optimized for its function and the people that will use that room. The same is true of Copilot workspaces. Admins set up, configure, and manage individual workspaces for specific team needs.
+
+Selecting workspaces opens the drop-down menu where users can select available workspaces to which they have access and set their preferred workspace in cases where they have access to multiple workspaces. Owners will also have the option to manage workspaces, manage capacity usage, and create a new workspace.
+
+More detailed information is provided in a subsequent unit, dedicated to Copilot workspaces.
+
+:::image type="content" source="../media/workspace-anchor.png" lightbox="../media/workspace-anchor.png" alt-text="A screenshot showing workspace drop-down menu that can be selected from the main landing page.":::
 
 ### Prompts to try
 

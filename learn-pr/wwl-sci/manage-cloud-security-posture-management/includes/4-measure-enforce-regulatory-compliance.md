@@ -1,22 +1,20 @@
 Microsoft Defender for Cloud continually compares the configuration of your resources with requirements in industry standards, regulations, and benchmarks. The regulatory compliance dashboard provides insights into your compliance posture based on how you're meeting specific compliance requirements.
 
-
-:::image type="content" source="../media/compliance-dashboard.png" alt-text="Screenshot of the Regulatory compliance dashboard.":::
-
+:::image type="content" source="../media/compliance-dashboard.png" alt-text="Screenshot of the Regulatory compliance dashboard." lightbox="../media/compliance-dashboard.png":::
 
 ## How are regulatory compliance standards represented in Defender for Cloud?
+
 Industry standards, regulatory standards, and benchmarks are represented in Defender for Cloud's regulatory compliance dashboard. Each standard is an initiative defined in Azure Policy.
 
-To see compliance data mapped as assessments in your dashboard, add a compliance standard to your management group or subscription from within the Security policy page. 
+To see compliance data mapped as assessments in your dashboard, add a compliance standard to your management group or subscription from within the Security policy page.
 
-When you've assigned a standard or benchmark to your selected scope, the standard appears in your regulatory compliance dashboard with all associated compliance data mapped as assessments. You can also download summary reports for any of the standards that have been assigned.
+When you've assigned a standard or benchmark to your selected scope, the standard appears in your regulatory compliance dashboard with all associated compliance data mapped as assessments. You can also download summary reports for any of the standards that are assigned.
 
-Microsoft tracks the regulatory standards themselves and automatically improves its coverage in some of the packages over time. When Microsoft releases new content for the initiative, it will appear automatically in your dashboard as new policies mapped to controls in the standard.
-
+Microsoft tracks the regulatory standards themselves and automatically improves its coverage in some of the packages over time. When Microsoft releases new content for the initiative, it appears automatically in your dashboard as new policies mapped to controls in the standard.
 
 ## What regulatory compliance standards are available in Defender for Cloud?
-By default, every subscription has the **Azure Security Benchmark** assigned. This is the Microsoft-authored, Azure-specific guidelines for security and compliance best practices based on common compliance frameworks. 
 
+By default, every subscription has the **Microsoft Cloud Security Benchmark** assigned. This is the Microsoft-authored, Azure-specific guidelines for security, and compliance best practices based on common compliance frameworks.
 
 Available regulatory standards:
 
@@ -37,11 +35,10 @@ Available regulatory standards:
 - FedRAMP H
 - FedRAMP M
 
-
 ## Add a regulatory standard to your dashboard
 
-
 ### Prerequisites
+
 To add standards to your dashboard:
 
 - The subscription must have Defender for Cloud's enhanced security features enabled

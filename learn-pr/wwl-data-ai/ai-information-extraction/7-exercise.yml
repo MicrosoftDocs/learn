@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ai-information-extraction.exercise
+title: Exercise - Extract information
+metadata:
+  title: Exercise - Extract information
+  description: Use Azure AI to extract information from content
+  author: graememalcolm
+  ms.author: gmalc
+  ms.date: 05/11/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 30
+content: |
+  [!include[](includes/7-exercise.md)]
+

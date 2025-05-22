@@ -2,16 +2,14 @@
 uid: learn.wwl.configure-databases-for-optimal-performance.describe-automatic-tuning
 title: Describe automatic tuning
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Describe automatic tuning
   description: "Describe automatic tuning"
-  ms.date: 05/05/2022
-  author: wwlpublish
+  ms.date: 03/20/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/4-describe-automatic-tuning.md)]
+  [!include[](includes/4-describe-automatic-tuning.md)]

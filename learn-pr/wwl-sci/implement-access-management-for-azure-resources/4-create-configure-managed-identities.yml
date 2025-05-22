@@ -2,8 +2,6 @@
 uid: learn.wwl.implement-access-management-for-azure-resources.create-configure-managed-identities
 title: Create and configure managed identities
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create and configure managed identities
   description: "Create and configure managed identities"
   ms.date: 02/26/2025

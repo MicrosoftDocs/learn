@@ -2,15 +2,13 @@
 uid: learn.azure-well-architected-introduction.2-pillars
 title: Azure Well-Architected Framework pillars
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Azure Well-Architected Framework pillars
   description: Learn about the five pillars in the Azure Well-Architected Framework.
   ms.date: 04/17/2023
-  author: martinekuan
-  ms.author: martinek
+  author: PageWriter-MSFT
+  ms.author: prwilk
   ms.topic: unit
 durationInMinutes: 10
 content: |
   [!include[](includes/2-pillars.md)]
-
+

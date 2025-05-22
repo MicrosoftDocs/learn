@@ -2,8 +2,6 @@
 uid: learn.wwl.replicate-monitor-azure-cosmos-db-api-mongodb-account.troubleshoot-query-performance
 title: Monitor Azure Cosmos DB with Azure diagnostic logs
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Monitor Azure Cosmos DB with Azure diagnostic logs
   description: "Monitor Azure Cosmos DB with Azure diagnostic logs"
   ms.date: 12/12/2022
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/5-cosmos-db-azure-diagnostic-logs.md)]
+  [!include[](includes/5-cosmos-db-azure-diagnostic-logs.md)]

@@ -5,8 +5,6 @@ sandbox: true
 interactive: bash
 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Connect to an Azure Database for MySQL flexible server
   description: Connect to Azure Database for MySQL flexible server.
   author: shreyaaithal
@@ -19,4 +17,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/connect-azure-database-mysql.md)]
-
+

@@ -3,11 +3,9 @@ uid: learn.build-app-with-scale-sets.exercise-configure-virtual-machine-scale-se
 title: Exercise - Configure a Virtual Machine Scale Set
 
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Configure a Virtual Machine Scale Set
   description: Exercise - Configure a Virtual Machine Scale Set
-  ms.date: 04/03/2024
+  ms.date: 03/24/2025
   author: ju-shim
   ms.author: jushiman
   ms.reviewer: mimckitt
@@ -17,4 +15,4 @@ durationInMinutes: 10
 azureSandbox: false
 content: |
   [!include[](includes/5-exercise-configure-virtual-machine-scale-set.md)]
-
+

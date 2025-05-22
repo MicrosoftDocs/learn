@@ -2,9 +2,11 @@
 uid: learn.wwl.design-compute-solution.design-for-azure-batch-solutions
 title: Design for Azure Batch solutions
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design for Azure Batch solutions
   description: "Design for Azure Batch solutions"
-  ms.date: 12/06/2024
+  ms.date: 05/05/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-microsoft-dev-box-deployment-guidelines-best-practices.define-test-validation
+title: Define testing and validation
+metadata:
+  title: Define testing and validation
+  description: "Define testing and validation"
+  ms.date: 05/12/2025
+  author: wwlpublish
+  ms.author: fkhan
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-define-test-validation.md)]

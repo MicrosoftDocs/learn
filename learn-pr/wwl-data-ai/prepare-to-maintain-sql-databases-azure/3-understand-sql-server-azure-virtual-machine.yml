@@ -2,8 +2,6 @@
 uid: learn.wwl.prepare-to-maintain-sql-databases-azure.understand-sql-server-azure-virtual-machine
 title: Understand SQL Server in an Azure virtual machine
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand SQL Server in an Azure virtual machine
   description: "Understand SQL Server in an Azure virtual machine"
   ms.date: 2/12/2025
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-understand-sql-server-azure-virtual-machine.md)]
+  [!include[](includes/3-understand-sql-server-azure-virtual-machine.md)]

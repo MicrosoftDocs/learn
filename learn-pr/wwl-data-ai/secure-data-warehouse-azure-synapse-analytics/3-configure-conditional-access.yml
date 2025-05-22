@@ -2,8 +2,6 @@
 uid: learn.wwl.secure-data-warehouse-azure-synapse-analytics.configure-conditional-access
 title: Configure Conditional Access
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure Conditional Access
   description: "Configure Conditional Access"
   ms.date: 07/04/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-configure-conditional-access.md)]
+  [!include[](includes/3-configure-conditional-access.md)]

@@ -2,8 +2,6 @@
 uid: learn.student-evangelism.challenge-project-build-speech-translator-app.introduction
 title: Introduction
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Introduction
   description: Introduction.
   author: theoyinbooke
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction.md)]
-
+

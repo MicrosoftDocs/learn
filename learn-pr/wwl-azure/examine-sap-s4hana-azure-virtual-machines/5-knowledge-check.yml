@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.examine-sap-s4hana-azure-virtual-machines.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Check what you learn in this module."
   ms.date: 08/01/2024
   author: wwlpublish
@@ -39,4 +37,4 @@ quiz:
       explanation: "Incorrect. The application tier includes the Fiori Front-end Server pool, SAP Web Dispatcher pool, application server pool, and SAP Central Services cluster."
     - content: "SAP HANA"
       isCorrect: false
-      explanation: "Incorrect. The application tier includes the Fiori Front-end Server pool, SAP Web Dispatcher pool, application server pool, and SAP Central Services cluster."
+      explanation: "Incorrect. The application tier includes the Fiori Front-end Server pool, SAP Web Dispatcher pool, application server pool, and SAP Central Services cluster."

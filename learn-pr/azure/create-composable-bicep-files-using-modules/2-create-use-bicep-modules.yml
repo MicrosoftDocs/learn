@@ -2,8 +2,6 @@
 uid: learn.azure.create-composable-bicep-files-using-modules.create-use-bicep-modules
 title: Create and use Bicep modules
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Create and use Bicep modules
   description: Learn about the benefits of Bicep modules, and the basic syntax to create and use modules. Also, learn how modules relate to Azure deployments.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/2-create-use-bicep-modules.md)]
-
+

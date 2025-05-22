@@ -2,8 +2,6 @@
 uid: learn.azure.publish-azure-web-app-with-azure-toolkit-intellij.3-exercise-create-web-app-intellij
 title: Exercise - Build a web app in IntelliJ IDEA
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Build a web app in IntelliJ IDEA
   description: In this unit, you'll use the Azure Toolkit for IntelliJ to create a new web app project.
   ms.date: 03/18/2024
@@ -15,4 +13,4 @@ durationInMinutes: 10
 azureSandbox: true
 content: |
   [!include[](includes/3-exercise-create-web-app-intellij.md)]
-
+

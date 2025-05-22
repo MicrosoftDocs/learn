@@ -2,8 +2,6 @@
 uid: learn.azure.monitor-protection-of-workloads-in-azure-backup.configure-monitor-alerts
 title: Configure Azure Monitor alerts
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure Azure Monitor alerts
   description: Learn how to configure Azure Monitor alerts in vaults. 
   ms.date: 12/01/2023
@@ -13,4 +11,4 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/5-configure-monitor-alerts.md)]
-
+

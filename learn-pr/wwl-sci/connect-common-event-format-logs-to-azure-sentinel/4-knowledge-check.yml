@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.connect-common-event-format-cef-logs-to-azure-sentinel.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 01/19/2023
   author: wwlpublish

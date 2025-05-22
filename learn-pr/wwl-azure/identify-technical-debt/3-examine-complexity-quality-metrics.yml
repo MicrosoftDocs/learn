@@ -2,8 +2,6 @@
 uid: learn.wwl.identify-technical-debt.examine-complexity-quality-metrics
 title: Examine complexity and quality metrics
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Examine complexity and quality metrics
   description: "Examine complexity and quality metrics"
   ms.date: 05/06/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-examine-complexity-quality-metrics.md)]
+  [!include[](includes/3-examine-complexity-quality-metrics.md)]

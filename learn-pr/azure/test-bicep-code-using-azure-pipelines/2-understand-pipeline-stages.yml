@@ -2,8 +2,6 @@
 uid: learn.azure.test-bicep-code-using-azure-pipelines.understand-pipeline-stages
 title: Understand pipeline stages
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Understand pipeline stages
   description: Learn about multistage pipelines in Azure Pipelines. Also, learn about the typical deployment stages for Bicep code.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/2-understand-pipeline-stages.md)]
-
+

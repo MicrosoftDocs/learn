@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduce-foundation-pillars-devops.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 09/20/2020
   author: wwlpublish
@@ -71,4 +69,4 @@ quiz:
       explanation: "That’s correct. This is why a full stack team is needed to support the product."
     - content: "To develop specialized skillsets."
       isCorrect: false
-      explanation: "Sorry, that’s incorrect. This isn't why a full stack team is needed to support the product."
+      explanation: "Sorry, that’s incorrect. This isn't why a full stack team is needed to support the product."

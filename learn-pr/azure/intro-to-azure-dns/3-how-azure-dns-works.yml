@@ -2,8 +2,6 @@
 uid: learn.introduction-to-azure-dns.how-azure-dns-works
 title: How Azure DNS works
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: How Azure DNS works
   description: How Azure DNS works
   ms.date: 01/31/2024
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 8
 content:   |
   [!include[](includes/3-how-azure-dns-works.md)]
-
+

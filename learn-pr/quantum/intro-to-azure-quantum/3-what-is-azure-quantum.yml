@@ -2,15 +2,13 @@
 uid: learn.quantum.intro-to-azure-quantum.what-is-azure-quantum
 title: What is Azure Quantum?
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: What is Azure Quantum?
   description: Learn the components of the Azure Quantum cloud service.
   ms.date: 01/09/2024
-  author: SoniaLopezBravo
-  ms.author: sonialopez
-  manager: tedhudek
+  author: azure-quantum-content
+  ms.author: quantumdocwriters
+  
   ms.topic: unit
 durationInMinutes: 8
 content: |
-  [!include[](includes/3-what-is-azure-quantum.md)]
+  [!include[](includes/3-what-is-azure-quantum.md)]

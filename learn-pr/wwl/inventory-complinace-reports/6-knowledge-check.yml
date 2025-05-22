@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.inventory-compliance-reports.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 11/23/2023
   author: wwlpublish
@@ -37,4 +35,4 @@ quiz:
       explanation: "Correct. You can use the Intune Data Warehouse to build professional looking reports that provide insight into your enterprise mobile environment. The Data Warehouse provides you access to more information about your Intune environment than the Endpoint Manager portal. With the Intune Data Warehouse you can access: historical Intune data, data that's refreshed on a daily cadence, and a data model that uses the OData standard."
     - content: "Microsoft Graph"
       isCorrect: false
-      explanation: "Incorrect. Microsoft Graph is a Microsoft developer platform that connects multiple services and devices. Try again."
+      explanation: "Incorrect. Microsoft Graph is a Microsoft developer platform that connects multiple services and devices. Try again."

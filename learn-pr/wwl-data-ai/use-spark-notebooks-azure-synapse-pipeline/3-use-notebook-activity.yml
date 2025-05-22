@@ -2,8 +2,6 @@
 uid: learn.wwl.use-spark-notebooks-azure-synapse-pipeline.use-notebook-activity
 title: Use a Synapse notebook activity in a pipeline
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Use a Synapse notebook activity in a pipeline
   description: "Use a Synapse notebook activity in a pipeline"
   ms.date: 02/07/2023
@@ -12,4 +10,4 @@ metadata:
   ms.topic: unit
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-use-notebook-activity.md)]
+  [!include[](includes/3-use-notebook-activity.md)]

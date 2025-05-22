@@ -2,8 +2,6 @@
 uid: learn.wwl.train-models-training-mlflow-jobs.summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: In this module, you've learned how to use MLflow when you run a script in Azure Machine Learning.
   author: wwlpublish
@@ -15,4 +13,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]
-
+

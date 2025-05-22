@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-features-tools-manage-deploy-azure-resources.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 09/19/2024
   author: wwlpublish
@@ -39,4 +37,4 @@ quiz:
       explanation: "Incorrect. Bicep and ARM templates are the best choice for implementing an “infrastructure as code deployment.”"
     - content: "Azure Monitor and Azure Arc"
       isCorrect: false
-      explanation: "Incorrect. Bicep and ARM templates are the best choice for implementing an “infrastructure as code deployment.”"
+      explanation: "Incorrect. Bicep and ARM templates are the best choice for implementing an “infrastructure as code deployment.”"

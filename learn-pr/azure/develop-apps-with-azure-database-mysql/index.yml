@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.develop-apps-with-azure-database-mysql
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: standard
   title: Develop apps with Azure Database for MySQL - Flexible Server
   description: Learn to create apps that connect to and query Azure Database for MySQL - Flexible Server. Develop and deploy intelligent apps faster by integrating with Azure App Service, Azure Kubernetes Service, Azure AI Search, Azure OpenAI, Azure DevOps, or GitHub.
@@ -51,4 +49,4 @@ units:
 - learn.develop-apps-with-azure-database-mysql.summary
 badge:
   uid: learn.develop-apps-with-azure-database-mysql.badge
-
+

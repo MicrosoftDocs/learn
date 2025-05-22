@@ -2,8 +2,6 @@
 uid: learn.migrate-vmware-workloads-on-premises-azure-vmware-solution.vmware-hcx-deployment-installation
 title: Deploy and install VMware HCX
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Deploy and install VMware HCX
   description: Deploy and install VMware HCX.
@@ -41,4 +39,4 @@ quiz:
     - content: "A NAT rule isn't configured."
       isCorrect: false
       explanation: "A NAT rule isn't configured to activate the HCX Enterprise Key."
-
+

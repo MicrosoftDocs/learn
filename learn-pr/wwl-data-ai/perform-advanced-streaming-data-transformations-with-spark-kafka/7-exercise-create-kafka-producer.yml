@@ -2,8 +2,6 @@
 uid: learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka.exercise-create-kafka-producer
 title: Exercise - Create the Kafka producer
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Create the Kafka producer
   description: "Exercise - Create the Kafka producer"
   ms.date: 04/07/2024
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 7
 content: |
-  [!include[](includes/7-exercise-create-kafka-producer.md)]
+  [!include[](includes/7-exercise-create-kafka-producer.md)]

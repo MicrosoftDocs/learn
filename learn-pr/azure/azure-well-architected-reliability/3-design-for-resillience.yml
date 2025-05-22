@@ -2,13 +2,11 @@
 uid: learn.azure-well-architected-reliability.design-for-resilience
 title: Design for resilience
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Design for resilience
   description: Learn how to design your workload to be resilient to malfunction, platform outages, performance degradations and other faults.
   ms.date: 12/18/2023
-  author: claytonsiemens77
-  ms.author: csiemens
+  author: PageWriter-MSFT
+  ms.author: prwilk
   ms.topic: unit
 durationInMinutes: 20
 content: |
@@ -58,4 +56,3 @@ quiz:
       - content: "Perform a failure mode analysis."
         isCorrect: true
         explanation: "Correct. A failure mode analysis helps you understand how a DDoS attack may affect the workload."
-

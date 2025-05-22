@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.deploy-run-container-app-service
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Deploy and run a containerized web app with Azure App Service
   description: Discover how to create a Docker image and store it in the Azure Container Registry, then use Azure App Service to deploy a web application based on the image.
   ms.date: 10/15/2024
@@ -47,4 +45,4 @@ units:
 - learn.azure.deploy-run-container-app-service.8-summary
 badge:
   uid: learn.azure.deploy-run-container-app-service.badge
-
+

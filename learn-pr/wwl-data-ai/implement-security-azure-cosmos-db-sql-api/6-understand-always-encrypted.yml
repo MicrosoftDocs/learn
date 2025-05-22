@@ -2,11 +2,9 @@
 uid: learn.wwl.implement-security-azure-cosmos-db-sql-api.understand-always-encrypted
 title: Understand Always Encrypted
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Understand Always Encrypted
   description: "Understand Always Encrypted"
-  ms.date: 10/18/2022
+  ms.date: 04/02/2025
   author: wwlpublish
   ms.author: calopez
   ms.topic: unit

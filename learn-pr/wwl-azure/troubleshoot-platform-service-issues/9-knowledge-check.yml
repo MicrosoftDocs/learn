@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.troubleshoot-platform-service-issues.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 04/27/2023
   author: mistoyanwork
@@ -72,4 +70,4 @@ quiz:
       explanation: "That's incorrect. If the customer's virtual network was blocking traffic, they wouldn't be able to change any property."
     - content: "The customer's subscription doesn't support configuration changes."
       isCorrect: false
-      explanation: "That's incorrect. A customer's subscription shouldn't affect their ability to configure a delegated subnet."
+      explanation: "That's incorrect. A customer's subscription shouldn't affect their ability to configure a delegated subnet."

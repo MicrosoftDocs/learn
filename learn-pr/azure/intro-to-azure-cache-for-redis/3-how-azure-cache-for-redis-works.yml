@@ -2,8 +2,6 @@
 uid: learn.intro-to-azure-cache-for-redis.3-how-azure-cache-for-redis-works  
 title: How Azure Cache for Redis works  
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content  
   title: How Azure Cache for Redis works
   description: Review the features of Azure Cache for Redis works and how they work together to help improve app functionality.
@@ -14,4 +12,4 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/3-how-azure-cache-for-redis-works.md)]
-
+

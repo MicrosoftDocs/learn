@@ -2,8 +2,6 @@
 uid: learn.wwl.backup-security-licensing-support-considerations-sap-hana-azure.explore-large-instances-support-considerations
 title: Explore SAP HANA on Azure (Large Instances) support considerations
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Explore SAP HANA on Azure (Large Instances) support considerations
   description: "Explore SAP HANA on Azure (Large Instances) support considerations"
   ms.date: 12/08/2021
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/7-explore-hana-large-instances-support.md)]
+  [!include[](includes/7-explore-hana-large-instances-support.md)]

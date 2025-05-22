@@ -2,16 +2,14 @@
 uid: learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.configure-always-availability-groups
 title: Configure Always-on availability groups
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Configure Always-on availability groups
   description: "Configure Always-on availability groups"
-  ms.date: 05/13/2022
-  author: wwlpublish
+  ms.date: 03/27/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 13
 content: |
-  [!include[](includes/3-configure-always-availability-groups.md)]
+  [!include[](includes/3-configure-always-availability-groups.md)]

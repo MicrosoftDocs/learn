@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.microservices-architecture
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Decompose a monolithic application into a microservices architecture
   description: Improve development agility, deployment, fault tolerance, and scalability by modernizing your application with a microservices architecture.
   ms.service: azure-functions
@@ -41,4 +39,4 @@ units:
 - learn.microservices-architecture.7-summary
 badge:
   uid: learn.microservices-architecture.badge
-
+

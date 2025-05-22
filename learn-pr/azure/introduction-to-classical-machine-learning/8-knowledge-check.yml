@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.machinelearning.introduction-to-classical-machine-learning.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Multiple-choice questions.
   ms.date: 11/01/2024
   author: lgayhardt
@@ -69,4 +67,4 @@ quiz:
     - content: "Both options are correct."
       isCorrect: true
       explanation: "Correct."      
-
+

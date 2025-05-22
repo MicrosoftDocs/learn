@@ -1,8 +1,6 @@
 ### YamlMime:Module
 uid: learn.azure.authenticate-azure-deployment-workflow-workload-identities
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   moduleType: standard
   title: Authenticate your Azure deployment workflow by using workload identities
   description: Learn how to create, manage, and grant permissions to workload identities, which enable your deployment workflows to securely authenticate to Azure.
@@ -55,4 +53,4 @@ units:
   - learn.azure.authenticate-azure-deployment-workflow-workload-identities.summary
 badge:
   uid: learn.azure.authenticate-azure-deployment-workflow-workload-identities.badge
-
+

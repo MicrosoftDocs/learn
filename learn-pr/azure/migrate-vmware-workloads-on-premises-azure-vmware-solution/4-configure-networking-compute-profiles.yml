@@ -2,8 +2,6 @@
 uid: learn.migrate-vmware-workloads-on-premises-azure-vmware-solution.configure-networking-compute-profiles
 title: Configure networking and compute profiles for VMware HCX
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: Configure networking and compute profiles for VMware HCX
   description: Configure networking and compute profiles for VMware HCX.
@@ -16,4 +14,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/4-configure-networking-compute-profiles.md)]
-
+

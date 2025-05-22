@@ -2,11 +2,9 @@
 uid: learn.wwl.fundamentals-azure-ai-services.create-azure-ai-resource
 title: Create Azure AI service resources
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create Azure AI service resources
   description: "Create Azure AI service resources"
-  ms.date: 10/03/2024
+  ms.date: 04/25/2025
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit

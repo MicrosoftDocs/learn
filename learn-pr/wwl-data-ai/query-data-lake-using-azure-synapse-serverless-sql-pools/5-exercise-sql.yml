@@ -2,8 +2,6 @@
 uid: learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools.exercise-sql
 title: Exercise - Query files using a serverless SQL pool
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Query files using a serverless SQL pool
   description: "Exercise - Query files using a serverless SQL pool"
   ms.date: 09/07/2023
@@ -14,4 +12,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 40
 content: |
-  [!include[](includes/5-exercise-sql.md)]
+  [!include[](includes/5-exercise-sql.md)]

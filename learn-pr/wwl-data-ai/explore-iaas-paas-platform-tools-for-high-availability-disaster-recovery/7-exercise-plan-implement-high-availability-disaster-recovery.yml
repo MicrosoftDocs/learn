@@ -2,17 +2,15 @@
 uid: learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.exercise
 title: 'Exercise: Configure geo replication for Azure SQL Database'
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: 'Exercise: Configure geo replication for Azure SQL Database'
   description: "Exercise: Configure geo replication for Azure SQL Database"
-  ms.date: 05/13/2022
-  author: wwlpublish
+  ms.date: 03/27/2025
+  author: JulianePadrao
   ms.author: jupadrao
   ms.topic: unit
 azureSandbox: false
 labId: 120597
 labModal: true
-durationInMinutes: 10
+durationInMinutes: 30
 content: |
-  [!include[](includes/7-exercise-plan-implement-high-availability-disaster-recovery.md)]
+  [!include[](includes/7-exercise-plan-implement-high-availability-disaster-recovery.md)]

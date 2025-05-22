@@ -2,13 +2,11 @@
 uid: learn.wwl.work-with-form-recognizer.exercise-extract-data-from-custom-forms
 title: Exercise - Extract data from custom forms
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Extract data from custom forms
   description: Exercise - Extract data from custom forms
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 04/18/2024
+  ms.date: 04/28/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot

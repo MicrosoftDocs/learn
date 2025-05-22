@@ -6,13 +6,13 @@ You now have a working pipeline that deploys your Bicep file to your Azure envir
 
 A pipeline trigger is a condition that, when met, automatically runs your pipeline based on rules you create. You can set triggers to run your pipeline at scheduled intervals. You can also set triggers to run your pipeline every time a file in your repository changes. You might choose the second option because it's a good idea to run all your tests and deployment steps every time someone changes your code.
 
-If you don't use an automatic trigger, someone might make a change to a Bicep file, and even commit it and push it to the repository. But if they forget to run the pipeline, there will be a difference between the resource definitions in your Bicep file and the resources that are deployed to your Azure environment. Suppose a couple more commits and pushes are made but not deployed. If someone introduces an error or misconfiguration in the Bicep file in one of these changes, it might be hard to track down the error among the multiple commits that are later deployed at once. After a while, you won't trust that your Bicep code truly represents your infrastructure, and its value is eroded.
+If you don't use an automatic trigger, someone might make a change to a Bicep file, and even commit it and push it to the repository. But if they forget to run the pipeline, there will be a difference between the resource definitions in your Bicep file and the resources that are deployed to your Azure environment. Suppose a couple more commits and pushes are made, but not deployed. If someone introduces an error or misconfiguration in the Bicep file in one of these changes, it might be hard to track down the error among the multiple commits that are later deployed at once. After a while, you won't trust that your Bicep code truly represents your infrastructure, and its value is eroded.
 
 When you set up your pipeline to run every time you update your files, the moment your changes are pushed, your pipeline starts running. You get instant feedback on the validity of your change, and can be sure that your production environment is always up to date.
 
 ## Branch triggers
 
-A common type of trigger is a _branch trigger_, also called a _continuous integration trigger_ or _CI trigger_. When you use a branch trigger, every time you make a change to a specific branch, the pipeline runs. If you commit and push a change to a different branch, the pipeline isn't triggered and it doesn't run. It's common to use this type of trigger against your default or _main_  branch, with this code:
+A common type of trigger is a _branch trigger_, also called a _continuous integration trigger_ or _CI trigger_. When you use a branch trigger, every time you make a change to a specific branch, the pipeline runs. If you commit and push a change to a different branch, the pipeline isn't triggered and it doesn't run. It's common to use this type of trigger against your default or _main_ branch, with this code:
 
 ```yaml
 trigger:
@@ -42,14 +42,14 @@ If someone commits a change that updates only a documentation file, the pipeline
 
 ## Schedule your pipeline to run automatically
 
-You can run your pipeline on a set schedule, and not in response to a file change. For example, you might run a nightly release of your Bicep code or automatically deploy a test environment every morning. Use the `schedules` keyword instead of `trigger`, and set the frequency by using a cron expression:
+You can run your pipeline on a set schedule and not in response to a file change. For example, you might run a nightly release of your Bicep code or automatically deploy a test environment every morning. Use the `schedules` keyword instead of `trigger`, and set the frequency by using a cron expression:
 
 :::code language="yaml" source="code/7-schedule.yml" highlight="2":::
 
 > [!NOTE]
 > A _cron expression_ is a specially formatted sequence of characters that sets how often an event will happen. In this example, `0 0 * * *` means _run every day at midnight UTC_.
 
-You can also set the branch of your repository to use in the scheduled event. When the pipeline starts, it uses the most recent version of the code from the branch you set in the schedule.
+You can also set which branch of your repository to use in the scheduled event. When the pipeline starts, it uses the most recent version of the code from the branch you set in the schedule.
 
 ## Use multiple triggers
 

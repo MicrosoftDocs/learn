@@ -2,8 +2,6 @@
 uid: learn.wwl.explore-azure-automation-devops.create-automation-accounts
 title: Create automation accounts
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Create automation accounts
   description: "Create automation accounts"
   ms.date: 05/23/2024
@@ -14,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-create-automation-accounts.md)]
+  [!include[](includes/2-create-automation-accounts.md)]

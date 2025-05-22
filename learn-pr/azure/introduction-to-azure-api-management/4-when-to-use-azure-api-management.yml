@@ -2,12 +2,10 @@
 uid: learn.azure.introduction-to-azure-api-management.when-to-use-azure-api-management
 title: When to use Azure API Management
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: learning-content
   title: When to Use Azure API Management
   description: Examine criteria and use cases to help you decide whether Azure API Management is right for your organization
-  ms.date: 04/07/2023
+  ms.date: 04/21/2025
   author: dlepow
   ms.author: danlep
   ms.topic: unit

@@ -2,15 +2,13 @@
 uid: learn.azure-well-architected-introduction.8-summary
 title: Summary
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Summary
   description: Summary
   ms.date: 04/17/2023
-  author: martinekuan
-  ms.author: martinek
+  author: PageWriter-MSFT
+  ms.author: prwilk
   ms.topic: unit
 durationInMinutes: 2
 content: |
   [!include[](includes/8-summary.md)]
-
+

@@ -2,16 +2,14 @@
 uid: learn.wwl.introduction-language-models-databricks.exercise
 title: Exercise - Explore language models
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Explore language models
   description: "Exercise - Explore language models"
-  ms.date: 08/12/2024
+  ms.date: 03/20/2025
   author: wwlpublish
-  ms.author: madiepev
+  ms.author: theresai
   ms.topic: unit
 azureSandbox: false
 labModal: false
 durationInMinutes: 30
 content: |
-  [!include[](includes/06-exercise.md)]
+  [!include[](includes/06-exercise.md)]

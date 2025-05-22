@@ -1,8 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.protect-infrastructure-with-azure-site-recovery.4-exercise-site-recovery-setup
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Exercise - Set up disaster recovery with Azure Site Recovery
   description: Exercise - Set up disaster recovery with Azure Site Recovery
   ms.date: 01/25/2025
@@ -12,4 +10,4 @@ metadata:
 title: Exercise - Set up disaster recovery with Azure Site Recovery
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-exercise-site-recovery-setup.md)]
+  [!include[](includes/4-exercise-site-recovery-setup.md)]

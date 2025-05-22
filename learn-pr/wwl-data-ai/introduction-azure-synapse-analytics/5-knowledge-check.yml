@@ -1,10 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-to-azure-synapse-analytics.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: "Knowledge check"
   ms.date: 08/17/2022
   author: wwlpublish
@@ -47,4 +45,4 @@ quiz:
       explanation: "Incorrect. A serverless SQL pool can be used to run SQL code, not Python."
     - content: "A KQL script connected to a Data Explorer pool."
       isCorrect: false
-      explanation: "Incorrect. Data Explorer supports queries written in Kusto Query Language, but not Python."
+      explanation: "Incorrect. Data Explorer supports queries written in Kusto Query Language, but not Python."

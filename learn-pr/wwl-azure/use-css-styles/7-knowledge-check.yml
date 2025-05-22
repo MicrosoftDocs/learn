@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.use-css-styles.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  title: Knowledge check
+  title: Module assessment
   description: "Check what you learn in this module."
-  ms.date: 03/26/2024
+  ms.date: 04/28/2025
   author: wwlpublish
   ms.author: eric
   ms.topic: unit
@@ -14,7 +14,7 @@ durationInMinutes: 3
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
-  title: "Check Your Knowledge on CSS Concepts"
+  title: "Check your knowledge on CSS concepts"
   questions:
   - content: "To make all `h2` elements on a page bold using a single style command, what method should be used?"
     choices:

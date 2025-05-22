@@ -2,8 +2,6 @@
 uid: learn.wwl.name-resolution-issues.name-resolution-issues
 title: Azure name resolution issues
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   title: Azure name resolution issues
   description: "Azure name resolution issues"
   ms.date: 04/27/2023
@@ -15,4 +13,4 @@ labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/2-prepare-exercise-environment.md)]
-interactive: powershell
+interactive: powershell

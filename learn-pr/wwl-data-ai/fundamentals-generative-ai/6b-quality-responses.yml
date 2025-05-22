@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-generative-ai.quality-responses
+title: Evaluate for quality responses
+metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
+  title: Evaluate for quality responses
+  description: Understand the terminology and methodology for quality generative AI responses.
+  author: sherzyang
+  ms.author: sheryang
+  ms.date: 03/21/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+content: |
+  [!include[](includes/6b-quality-responses.md)]

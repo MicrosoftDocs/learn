@@ -2,8 +2,6 @@
 uid: learn.azure.manage-end-end-deployment-scenarios-using-bicep-azure-pipelines.exercise-seed-storage-account-database
 title: Exercise - Seed a storage account and database
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
   unitType: exercise
   title: Exercise - Seed a storage account and database
   description: In this unit, you update a Bicep deployment pipeline to connect to a database, deploy a DACPAC file and sample data, and upload blobs to a storage account.
@@ -17,4 +15,4 @@ metadata:
 durationInMinutes: 14
 content: |
   [!include[](includes/7-exercise-seed-storage-account-database.md)]
-
+

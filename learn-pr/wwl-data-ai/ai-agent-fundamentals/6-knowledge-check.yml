@@ -1,14 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.ai-agent-fundamentals.knowledge-check
-title: Knowledge check
+title: Module assessment
 metadata:
-  adobe-target: true
-  prefetch-feature-rollout: true
-  title: Knowledge check
+  title: Module assessment
   description: Test your knowledge of AI agents.
   author: wwlpublish
   ms.author: berryivor
-  ms.date: 02/12/2025
+  ms.date: 04/03/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
@@ -38,7 +36,7 @@ quiz:
     - content: "Microsoft 365 Copilot Chat"
       isCorrect: false
       explanation: "Incorrect. Microsoft 365 Copilot Chat doesn't offer a selection of models for agent development."
-  - content: "Whet element of an Azure AI Agent Service agent enables it to *ground* prompts with contextual data?"
+  - content: "What element of an Azure AI Agent Service agent enables it to *ground* prompts with contextual data?"
     choices:
     - content: "Model"
       isCorrect: false
