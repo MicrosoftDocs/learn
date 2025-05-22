@@ -13,6 +13,10 @@ The verb portion of a cmdlet name indicates what the cmdlet does. There's a set 
 - **Add**. Adds a resource to a container of multiple resources.
 - **Remove**. Deletes a resource from a container of multiple resources.
 
+> [!NOTE]
+>You can run the `Get-Verb` command to have the full list of approved verbs.
+
+
 This list represents just some of the verbs that cmdlets use. Additionally, some verbs perform similar functions. For example, the **Add** verb can create a resource, similar to the **New** verb. Some verbs might seem similar, but have different functions. For example, the **Read** verb retrieves information that a resource contains, such as a text file's content, whereas the **Get** verb retrieves the actual file.
 
 ## Cmdlet nouns
