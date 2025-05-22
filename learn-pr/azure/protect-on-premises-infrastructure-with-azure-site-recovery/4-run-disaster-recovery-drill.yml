@@ -30,12 +30,12 @@ quiz:
       explanation: This measurement has no impact on the RTO.
   - content: "When you monitor a recovery from the recovery services vault, which of the following statistics can be viewed on the Site Recovery dashboard?"
     choices:
-    - content: Replicated items, monitoring of test failovers, and monitoring of configuration issues
+    - content: Replicated items, monitoring of test failovers, and monitoring of configuration issues.
       isCorrect: true
       explanation: All of these items can be viewed from the Recovery Services vault dashboard.
-    - content: Replicated items, vault status, and network status
+    - content: Replicated items, vault status, and network status.
       isCorrect: false
       explanation: These items can't be viewed from the Recovery Services dashboard.
-    - content: Monitoring of configuration issues, vault status, and DHCP replication status
+    - content: Monitoring of configuration issues, vault status, and DHCP replication status.
       isCorrect: false
-      explanation: These items can't be viewed from the Recovery Services dashboard.
+      explanation: These items can't be viewed from the Recovery Services dashboard.

@@ -16,7 +16,7 @@ Site Recovery can replicate any app that runs on a supported machine:
 Site Recovery provides application-aware replication for many types of workloads or applications that run on top of the server operating system. Application replication is supported for many different workloads. Taking advantage of the integration with specific workloads has many benefits during normal replication, and also during failover. Some of the features offered include:
 
 - **Near synchronous replication**: Data is written to the primary storage and the replica almost simultaneously to allow for low recovery times.
-- **App-consistent snapshots**: Snapshots taken for recovery purposes can view information in memory and pending I/O operations, which allows for quick recovery times. The application is ready to go after switching to the replica VM.
+- **App-consistent snapshots**: Snapshots taken for recovery purposes can view information in memory and pending I/O operations, which allows for quick recovery times. The application is ready to go after switching to the replica virtual machine (VM).
 - **Integration with SQL Always On**: Always On is an enterprise-level alternative to normal database mirroring techniques.
 - **Flexible recovery plans**: The ability to recover an entire application stack with a single click. Both manual and scripted actions can be incorporated into the overall plan.
   - **Network management**: The automated ability to simplify the reservation of IP addresses, configure load balancers, and integrate with Azure Traffic Manager.
@@ -54,7 +54,7 @@ SAP NetWeaver and non-NetWeaver production application components can be replica
 
 ### IIS
 
-Protecting IIS allows for full automation of the recovery plan if you need to fail over to the replicated environment. Protection for IIS servers can be easily enabled, and IP addressing can be properly configured by mapping the primary and recovery networks prior to fail over. Scripts can be used during failover to update application dependencies and bindings. This approach enables a one-click failover for multiple web applications on the web servers and eliminates the scope for confusion if a disaster occurs.
+Protecting IIS allows for full automation of the recovery plan if you need to fail over to the replicated environment. Protection for IIS servers can be easily enabled and IP addressing can be properly configured, by mapping the primary and recovery networks before failover. Scripts can be used during failover to update application dependencies and bindings. This approach enables a one-click failover for multiple web applications on the web servers and eliminates the scope for confusion if a disaster occurs.
 
 ### Citrix XenApp and XenDesktop
 
