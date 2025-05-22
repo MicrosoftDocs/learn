@@ -4,17 +4,17 @@ As a product within Azure AI Vision, **Azure AI Face** supports specific use cas
 
 **Face detection** involves identifying regions of an image that contain a human face, typically by returning *bounding box* coordinates that form a rectangle around the face, like this:
 
-![An image with two faces highlighted in rectangles](../media/face-detection-1.png)
+![Photograph of two faces highlighted in rectangles.](../media/face-detection-1.png)
 
 With Face, facial features can be used to train machine learning models to return other information, such as facial features such as nose, eyes, eyebrows, lips, and others.
 
-![facial landmarks image showing data around face characteristics](../media/landmarks-2.png)
+![Screenshot of facial landmarks image showing data around face characteristics.](../media/landmarks-2.png)
  
 ## Facial recognition
 
 A further application of facial analysis is to train a machine learning model to identify known individuals from their facial features. This is known as *facial recognition*, and uses multiple images of an individual to train the model. This trains the model so that it can detect those individuals in new images on which it wasn't trained.
 
-![A person identified as "Wendell"](../media/facial-recognition-1.png)
+![Photograph of a person identified as "Wendell".](../media/facial-recognition-1.png)
 
 When used responsibly, facial recognition is an important and useful technology that can improve efficiency, security, and customer experiences. 
 
@@ -46,6 +46,6 @@ Anyone can use the Face service to:
 The Limited Access policy requires customers to [submit an intake form](https://aka.ms/facerecognition) to access additional Azure AI Face service capabilities including:
 * Face verification: the ability to compare faces for similarity.
 * Face identification: the ability to identify named individuals in an image. 
-* Liveness detection: the ability to detect and mitigate instances of recurring content and/or behaviors that indicate a violation of policies (eg. such as if the input video stream is real or fake).
+* Liveness detection: the ability to detect and mitigate instances of recurring content and/or behaviors that indicate a violation of policies (e.g., such as if the input video stream is real or fake).
 
 Next, let's take a look at how you can get started with Azure AI Vision.
