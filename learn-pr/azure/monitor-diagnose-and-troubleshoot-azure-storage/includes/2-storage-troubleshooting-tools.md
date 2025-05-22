@@ -39,7 +39,7 @@ Storage insights provide a unified view of your Azure Storage services performan
 
 You can process metric values by creating batch jobs in Azure CLI, PowerShell scripts, or by writing code that uses a storage client library. You can also archive transaction metrics to a storage account, and then view or process them by using these same tools.
 
-If you choose to archive transaction metrics to a storage account, metric data is collected and stored inside a single blob as a line-delimited JSON payload. You can view those blobs by opening the relevant log container in the Azure portal or by using [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/). You can also download those blobs to your local computer and process them by using tools and SDKs.
+If you choose to archive transaction metrics to a storage account, metric data is collected and stored inside a single blob as a line-delimited JSON payload. You can view those blobs by opening the relevant log container in the Azure portal or by using [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/). You can also download those blobs to your local computer and process them by using tools and Software Development Kits (SDKs).
 
 ## Tools available for reviewing log data
 
