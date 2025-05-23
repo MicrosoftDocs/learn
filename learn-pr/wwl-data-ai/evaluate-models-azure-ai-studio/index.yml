@@ -37,7 +37,6 @@ units:
 - learn.wwl.evaluate-models-azure-ai-studio.assess-models
 - learn.wwl.evaluate-models-azure-ai-studio.manual-evaluations
 - learn.wwl.evaluate-models-azure-ai-studio.automated-evaluations
-- learn.wwl.evaluate-models-azure-ai-studio.evaluation-flows
 - learn.wwl.evaluate-models-azure-ai-studio.exercise
 - learn.wwl.evaluate-models-azure-ai-studio.knowledge-check
 - learn.wwl.evaluate-models-azure-ai-studio.summary
