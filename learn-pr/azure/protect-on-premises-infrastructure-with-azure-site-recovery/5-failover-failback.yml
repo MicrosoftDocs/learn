@@ -29,10 +29,10 @@ quiz:
     choices:
     - content: Reprotect Azure virtual machines by replicating back to on-premises. Fail over to the secondary site on Azure. Fail back to the primary on-premises site. Reprotect the on-premises virtual machines by replicating to Azure.
       isCorrect: false
-      explanation: These stages are all correct, but they're in the wrong order. The correct order is&emdash&Fail over to Azure, reprotect Azure, fail back to on-premises, and reprotect on-premises.
+      explanation: "These stages are all correct, but they're in the wrong order. The correct order is: Fail over to Azure, reprotect Azure, fail back to on-premises, and reprotect on-premises."
     - content: Fail back to the primary on-premises site. Reprotect the on-premises virtual machines by replicating to Azure. Fail over to the secondary site on Azure. Reprotect the Azure virtual machines by replicating back to on-premises.
       isCorrect: false
-      explanation: These stages are all correct, but they're in the wrong order. The correct order is&emdash&Fail over to Azure, reprotect Azure, fail back to on-premises, and reprotect on-premises.
+      explanation: "These stages are all correct, but they're in the wrong order. The correct order is: Fail over to Azure, reprotect Azure, fail back to on-premises, and reprotect on-premises."
     - content: Fail over to the secondary site on Azure. Reprotect the Azure virtual machines by replicating back to on-premises. Fail back to the primary on-premises site. Reprotect the on-premises virtual machines by replicating to Azure.
       isCorrect: true
       explanation: These steps are correct and in the right order.
