@@ -3,15 +3,11 @@ uid: learn.wwl.use-apache-spark-work-files-lakehouse
 metadata:
   title: Use Apache Spark in Microsoft Fabric
   description: "Apache Spark is a core technology for large-scale data analytics. Microsoft Fabric provides support for Spark clusters, enabling you to analyze and process data at scale."
-  ms.date: 04/16/2025
-  author: wwlpublish
+  ms.date: 05/22/2025
+  author: theresa-i
   ms.author: theresai
   ms.topic: module-standard-task-based
   ms.collection: N/A
-  ms.custom:
-  - build-2023
-  - build-2023-dataai
-  - build-2023-fabric
   ms.service: fabric
   ai-usage: human-only
 title: Use Apache Spark in Microsoft Fabric
