@@ -1,9 +1,9 @@
 ### YamlMime:Module
-uid: learn.wwl-azure.basic-sql-joining-tables
+uid: learn.azure-database.postgresql.basic-sql-join-tables
 metadata:
   title: "Combining data from multiple tables: SQL Joins Explained"
   description: "Combine data across multiple PostgreSQL tables using SQL JOINs. Learn INNER, LEFT, RIGHT, FULL OUTER, and NATURAL joins with real examples."
-  ms.date: 05/14/2025
+  ms.date: 05/23/2025
   author: mpopovic
   ms.author: mpopovic
   ms.topic: module-standard-task-based
@@ -163,11 +163,11 @@ products:
 subjects:
   - databases
 units:
-- learn.wwl-azure.basic-sql-joining-tables.introduction
-- learn.wwl-azure.basic-sql-joining-tables.sample-database-overview
-- learn.wwl-azure.basic-sql-joining-tables.inner-join
-- learn.wwl-azure.basic-sql-joining-tables.left-right-join
-- learn.wwl-azure.basic-sql-joining-tables.natural-and-full-join
-- learn.wwl-azure.basic-sql-joining-tables.summary
+- learn.azure-database.postgresql.basic-sql-join-tables.introduction
+- learn.azure-database.postgresql.basic-sql-join-tables.sample-database-overview
+- learn.azure-database.postgresql.basic-sql-join-tables.inner-join
+- learn.azure-database.postgresql.basic-sql-join-tables.left-right-join
+- learn.azure-database.postgresql.basic-sql-join-tables.natural-and-full-join
+- learn.azure-database.postgresql.basic-sql-join-tables.summary
 badge:
-  uid: learn.wwl-azure.basic-sql-joining-tables.badge
+  uid: learn.azure-database.postgresql.basic-sql-joining-tables.badge

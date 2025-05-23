@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl-azure.basic-sql-limit-offset-order-by.summary
+uid: learn.azure-database.postgresql.basic-sql-limit-offset-order-by.summary
 title: Summary
 metadata:
   title: Summary
   description: "This unit summarizes how to use LIMIT, OFFSET, and ORDER BY in PostgreSQL to control, paginate, and sort query results for efficient data handling."
-  ms.date: 05/14/2025
+  ms.date: 05/23/2025
   author: milenak
   ms.author: mpopovic
   ms.topic: unit
