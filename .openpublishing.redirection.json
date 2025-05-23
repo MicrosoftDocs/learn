@@ -15967,6 +15967,26 @@
       "redirect_url": "/training/modules/python-create-run-program"
     },
     {
+      "source_path_from_root": "/learn-pr/azure/azure-well-architected-introduction/3-cost-optimization.yml",
+      "redirect_url": "/training/modules/azure-well-architected-cost-optimization"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/azure-well-architected-introduction/4-operational-excellence.yml",
+      "redirect_url": "/training/modules/azure-well-architected-operational-excellence"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/azure-well-architected-introduction/5-performance-efficiency.yml",
+      "redirect_url": "/training/modules/azure-well-architected-performance-efficiency"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/azure-well-architected-introduction/6-reliability.yml",
+      "redirect_url": "/training/modules/azure-well-architected-reliability"
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/azure-well-architected-introduction/7-security.yml",
+      "redirect_url": "/training/modules/azure-well-architected-security"
+    },
+    {
       "source_path_from_root": "/learn-pr/languages/python-datatypes-numeric-operations/1-introduction.md",
       "redirect_url": "/training/modules/python-math-operators"
     },
@@ -47387,6 +47407,226 @@
     {
       "source_path": "learn-pr/wwl-sci/deploy-message-encryption-microsoft-365/6-summary-resources.md",
       "redirect_url": "/training/modules/deploy-message-encryption-microsoft-365/summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/use-sql-server-query-tuning-assistant/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/use-sql-server-query-tuning-assistant/2-decide-qta-right.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/use-sql-server-query-tuning-assistant/3-get-started-qta.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/use-sql-server-query-tuning-assistant/4-tune-queries-qta.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/use-sql-server-query-tuning-assistant/5-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/use-sql-server-query-tuning-assistant/6-module-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/use-sql-server-query-tuning-assistant/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-replication/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-replication/2-track-data-changes-with-cdc.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-replication/3-exercise-track-data-changes-with-cdc.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-replication/4-check-if-data-changes-happened-with-change-tracking.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-replication/5-exercise-check-if-data-changes-happened-with-change-tracking.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-replication/6-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-replication/7-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/azure-sql-replication/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/backup-restore-azure-sql/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/backup-restore-azure-sql/2-protect-database-with-backup.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/backup-restore-azure-sql/3-exercise-configure-backup.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/backup-restore-azure-sql/4-long-term-retention-policies.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/backup-restore-azure-sql/5-exercise-configure-long-term-retention-policies.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/backup-restore-azure-sql/6-restore-database.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/backup-restore-azure-sql/7-exercise-restore-database.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/backup-restore-azure-sql/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/backup-restore-azure-sql/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-foundation-modern-apps/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-foundation-modern-apps/2-architect-solution.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-foundation-modern-apps/3-exercise-configure-environment.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-foundation-modern-apps/4-modern-database-requirements.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-foundation-modern-apps/5-exercise-deploy-azure-sql-database.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-foundation-modern-apps/6-ci-cd-for-azure-sql-database.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-foundation-modern-apps/7-exercise-automate-updates.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-foundation-modern-apps/8-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/create-foundation-modern-apps/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/browse/?filter-products=sql&products=azure-sql-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/index.md",
+      "redirect_url": "/credentials/certifications/azure-ai-engineer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/4-configure-behavior.md",
+      "redirect_url": "/credentials/certifications/azure-ai-engineer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/3-configure-loop.md",
+      "redirect_url": "/credentials/certifications/azure-ai-engineer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/2-create-ai-personalizer-resource.md",
+      "redirect_url": "/credentials/certifications/azure-ai-engineer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/8-exercise.md",
+      "redirect_url": "/credentials/certifications/azure-ai-engineer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/9-knowledge-check.md",
+      "redirect_url": "/credentials/certifications/azure-ai-engineer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/10-summary.md",
+      "redirect_url": "/credentials/certifications/azure-ai-engineer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/5-import-export-settings.md",
+      "redirect_url": "/credentials/certifications/azure-ai-engineer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/1-introduction.md",
+      "redirect_url": "/credentials/certifications/azure-ai-engineer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/7-run-evaluations.md",
+      "redirect_url": "/credentials/certifications/azure-ai-engineer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/make-recommendations-ai-personalizer/6-use-inference-explainability.md",
+      "redirect_url": "/credentials/certifications/azure-ai-engineer/",
       "redirect_document_id": false
     }
   ]

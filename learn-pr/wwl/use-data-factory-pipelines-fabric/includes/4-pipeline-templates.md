@@ -9,3 +9,4 @@ Selecting this option displays a selection of pipeline templates, as shown here.
 ![Screenshot of pipeline templates.](../media/pipeline-templates.png) 
 
 You can select the most appropriate template for your needs, and then edit the pipeline in the pipeline canvas to customize it to your needs.
+

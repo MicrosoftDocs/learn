@@ -6,7 +6,7 @@ metadata:
   description: Use Azure AI Document Intelligence
   author: laujan
   ms.author: lajanuar
-  ms.date: 07/30/2024
+  ms.date: 04/29/2025
   ms.topic: unit
   ms.collection:
     - ce-skilling-ai-copilot
@@ -15,4 +15,4 @@ azureSandbox: true
 interactive: bash
 content: |
   [!INCLUDE[](includes/5-use-form-recognizer.md)]
-
+

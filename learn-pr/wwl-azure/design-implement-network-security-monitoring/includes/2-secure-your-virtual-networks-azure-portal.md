@@ -1,4 +1,5 @@
 
+
 Network security covers various technologies, devices, and processes. Security provides a set of rules and configurations designed to protect the integrity, confidentiality, and accessibility of computer networks and data. Every organization, regardless of size, industry, or infrastructure, requires a degree of network security solutions. These solutions protect from the ever-growing risks of attacks.
 
 Network security provides controls to secure and protect Azure networks. These controls include securing virtual networks, establishing private connections, preventing and mitigating external attacks, and securing DNS. 

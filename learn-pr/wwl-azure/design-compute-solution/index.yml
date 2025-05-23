@@ -1,9 +1,11 @@
 ### YamlMime:Module
 uid: learn.wwl.design-compute-solution
 metadata:
+  adobe-target: true
+  prefetch-feature-rollout: true
   title: Design an Azure compute solution
   description: "Azure Architects design and recommend Azure compute solutions."
-  ms.date: 12/06/2024
+  ms.date: 05/05/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: module

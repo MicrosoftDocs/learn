@@ -6,12 +6,12 @@ metadata:
   prefetch-feature-rollout: true
   title: 'Exercise: Deploy and configure Azure Firewall using the Azure portal'
   description: "Exercise: Deploy and configure Azure Firewall using the Azure portal"
-  ms.date: 04/29/2025
+  ms.date: 05/19/2025
   author: wwlpublish
   ms.author: cynthist
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 18
+durationInMinutes: 5
 content: |
   [!include[](includes/7-exercise-deploy-configure-azure-firewall-using-azure-portal.md)]

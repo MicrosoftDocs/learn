@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Module assessment
   description: "Evaluate whether Azure Data Explorer is appropriate to process and analyze your big data."
-  ms.date: 08/21/2023
+  ms.date: 04/24/2025
   author: shsagir
   ms.author: shsagir
   ms.topic: unit
@@ -51,7 +51,7 @@ quiz:
     choices:
     - content: "Control commands can be used for maintenance and policy tasks."
       isCorrect: true
-      explanation: "Control commands include: The creation of new clusters or databases, data connections, auto scaling, cluster configurations, entities, metadata objects, and security policies."
+      explanation: "Control commands include the creation of new clusters or databases, data connections, auto scaling, cluster configurations, entities, metadata objects, and security policies."
     - content: "A query."
       isCorrect: false
       explanation: "Queries are used for interactive data analytics."
@@ -81,4 +81,4 @@ quiz:
       isCorrect: false
       explanation: "Azure Data Explorer is optimized for high query concurrency."
   
-
+

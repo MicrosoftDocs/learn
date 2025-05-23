@@ -8,8 +8,6 @@ metadata:
   author: theresa-i
   ms.author: theresai
   ms.topic: unit
-  ms.custom:
-  - build-2023
 durationInMinutes: 40
 content: |
   [!include[](includes/6-exercise-delta-tables.md)]

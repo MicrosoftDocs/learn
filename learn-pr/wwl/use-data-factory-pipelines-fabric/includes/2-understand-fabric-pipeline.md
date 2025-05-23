@@ -30,3 +30,4 @@ Using parameters increases the reusability of your pipelines, enabling you to cr
 ### Pipeline runs
 
 Each time a pipeline is executed, a *data pipeline run* is initiated. Runs can be initiated on-demand in the Fabric user interface or scheduled to start at a specific frequency. Use the unique run ID to review run details to confirm they completed successfully and investigate the specific settings used for each execution.
+

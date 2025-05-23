@@ -3,13 +3,13 @@ uid: learn.azure.authenticate-azure-deployment-pipeline-service-principals.creat
 title: Create a service principal and key
 metadata:
   unitType: learning-content
-  title: Create a service principal and key
+  title: Create a Service Principal and Key
   description: Learn how to create service principals, and how to manage keys and other credentials for service principals.
-  ms.date: 01/16/2024
+  ms.date: 04/22/2025
   author: mumian
   ms.author: jgao
   ms.topic: unit
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-create-service-principal-key.md)]
+  [!include[](includes/3-create-service-principal-key.md)]

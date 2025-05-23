@@ -4,13 +4,13 @@ title: Understand containers
 metadata:
   title: Understand containers
   description: Understand containers
-  author: wwlpublish
+  author: ivorb
   ms.author: berryivor
-  ms.date: 08/25/2024
+  ms.date: 05/02/2025
   ms.topic: unit
   ms.collection:
     - wwl-ai-copilot
 durationInMinutes: 6
 content: |
   [!include[](includes/2-understand-containers.md)]
-
+

@@ -1,5 +1,3 @@
-
-
 You can monitor the compliance status of the MAM policies that you've applied to users at the Intune app protection pane in the Azure portal. You can find information about the users affected by the MAM policies, its compliance status, and any issues that your users might be experiencing.
 
 There are three different places to monitor the compliance status:

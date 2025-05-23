@@ -5,8 +5,8 @@ metadata:
   title: Guided project - Analyze logs in Azure Monitor with KQL
   description: "Write log queries to gain insights into your business, IT operations, and performance. Use Kusto Query Language (KQL) to extract log data in Azure Monitor Log Analytics."
   ms.date: 02/11/2024
-  author: guywi-ms
-  ms.author: guywild
+  author: EliotSeattle
+  ms.author: eliotgra
   ms.topic: module-guided-project
   ms.service: azure-monitor
   ms.subservice: logs
@@ -46,4 +46,4 @@ units:
 - learn.analyze-logs-with-kql.knowledge-check
 - learn.analyze-logs-with-kql.summary
 badge:
-  uid: learn.analyze-logs-with-kql.badge
+  uid: learn.analyze-logs-with-kql.badge

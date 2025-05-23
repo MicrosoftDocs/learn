@@ -1,4 +1,4 @@
-To use Azure AI Document Intelligence, you need an Azure subscription (you can create for free) and a Document Intelligence resource. You can get both from the Azure portal. You need the key and endpoint from the resource to connect your application to the Document Intelligence API. Document Intelligence client library SDKs are available for the following programming languages and platforms:
+To use Azure AI Document Intelligence, you need an Azure subscription (you can [create one for free](https://azure.microsoft.com/free/)) and a Document Intelligence resource. You can get both from the Azure portal. You need the key and endpoint from the resource to connect your application to the Document Intelligence API. Document Intelligence client library Software Development Kits (SDKs) are available for the following programming languages and platforms:
 
 - C#/.NET
 - Python

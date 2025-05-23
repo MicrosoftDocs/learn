@@ -8,8 +8,6 @@ metadata:
   author: theresa-i
   ms.author: theresai
   ms.topic: unit
-  ms.custom:
-  - build-2023
-durationInMinutes: 60
+  durationInMinutes: 60
 content: |
   [!include[](includes/6-exercise-pipelines.md)]
