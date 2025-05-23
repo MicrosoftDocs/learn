@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.introduction-language.summary
+uid: learn.wwl.get-started-language-azure.summary
 title: Summary
 metadata:
   title: Summary
   description: "Summary"
-  ms.date: 5/23/2025
+  ms.date: 05/22/2025
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit
@@ -12,4 +12,4 @@ metadata:
   - N/A
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-summary.md)]
+  [!include[](includes/9-summary.md)]
