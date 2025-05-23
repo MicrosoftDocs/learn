@@ -36,7 +36,7 @@ quiz:
       explanation: "Incorrect. "
   - content: "Which evaluator metric uses an AI model to judge the structure and logical flow of ideas in a response?"
     choices:
-    - content: "ACoherence"
+    - content: "Coherence"
       isCorrect: true
       explanation: "Correct. "
     - content: "F1 Score"

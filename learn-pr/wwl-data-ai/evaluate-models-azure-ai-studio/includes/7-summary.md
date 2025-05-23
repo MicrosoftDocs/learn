@@ -5,4 +5,4 @@ In this module, you learned to:
 - Perform automated evaluations.
 
 > [!TIP]
-> Fr more information about evaluating models in Azure AI Foundry, see [Observability in generative AI](/azure/ai-foundry/concepts/observability).
+> For more information about evaluating models in Azure AI Foundry, see [Observability in generative AI](/azure/ai-foundry/concepts/observability).
