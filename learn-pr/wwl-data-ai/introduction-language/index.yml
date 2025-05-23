@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-language
+metadata:
+  title: Introduction to natural language processing concepts
+  description: "Natural language processing (NLP) supports applications that can see, hear, speak with, and understand users. In this module you learn about the concepts that make NLP possible."
+  ms.date: 5/21/2025
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: module
+  ms.collection: wwl-ai-copilot
+  ms.custom:
+  - N/A
+  ms.service: azure-ai-language
+  ai-usage: ai-assisted
+title: Introduction to natural language processing concepts
+summary: Natural language processing (NLP) supports applications that can see, hear, speak with, and understand users. In this module you learn about the concepts that make NLP possible.
+abstract: Explore natural language processing (NLP).
+prerequisites: Ability to navigate the Azure portal
+iconUrl: /learn/achievements/analyze-text-with-text-analytics-service.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- data-scientist
+- developer
+- solution-architect
+- student
+products:
+- ai-services
+subjects:
+- natural-language-processing
+units:
+- learn.wwl.introduction-language.introduction
+- learn.wwl.introduction-language.how-it-works
+- learn.wwl.introduction-language.semantic-models
+- learn.wwl.introduction-language.text-analysis
+- learn.wwl.introduction-language.knowledge-check
+- learn.wwl.introduction-language.summary
+badge:
+  uid: learn.wwl.introduction-language.badge
