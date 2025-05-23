@@ -27,5 +27,5 @@ You can configure a [custom domain](/azure/storage/blobs/storage-custom-domain-n
    - Azure storage account: `\<storage account>\.blob.core.windows.net`
    - Direct `CNAME` record: `contosoblobs.blob.core.windows.net`
 
-:::image type="content" source="../media/custom-domains.png" alt-text="Image of the direct mapping for a custom domain.":::
+
 
