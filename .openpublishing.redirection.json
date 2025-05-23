@@ -638,6 +638,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/introduction-language/3-semantic-models.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-language/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-data-ai/introduction-language/4-text-analysis.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-language/",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/wwl-data-ai/explore-azure-openai/1-introduction.yml",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-ai-studio/",
       "redirect_document_id": false

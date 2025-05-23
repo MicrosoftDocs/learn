@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-language.statistical-techniques
+title: Understand statistical techniques for NLP
+metadata:
+  title: Understand statistical techniques for NLP
+  description: Learn about the history of NLP by first exploring the statistical techniques that were developed.
+  author: madiepev
+  ms.author: madiepev
+  ms.date: 05/23/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-statistical-techniques.md)]

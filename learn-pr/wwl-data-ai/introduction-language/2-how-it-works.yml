@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-language.how-it-works
-title: General principles of NLP
+title: Understand how language is processed
 metadata:
-  title: General principles of NLP
-  description: "General principles of NLP"
-  ms.date: 5/21/2025
+  title: Understand how language is processed
+  description: "Understand how language is processed"
+  ms.date: 5/23/2025
   author: wwlpublish
   ms.author: sheryang
   ms.topic: unit
   ms.custom:
   - N/A
-durationInMinutes: 4
+durationInMinutes: 3
 content: |
   [!include[](includes/2-how-it-works.md)]
