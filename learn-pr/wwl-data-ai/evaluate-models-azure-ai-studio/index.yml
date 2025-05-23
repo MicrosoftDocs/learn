@@ -3,7 +3,7 @@ uid: learn.wwl.evaluate-models-azure-ai-studio
 metadata:
   title: Evaluate generative AI performance in Azure AI Foundry portal
   description: Evaluating copilots is essential to ensure your generative AI applications meet user needs, provide accurate responses, and continuously improve over time. Discover how to assess and optimize the performance of your generative AI applications using the tools and features available in the Azure AI Studio.
-  ms.date: 04/16/2025
+  ms.date: 05/23/2025
   author: madiepev
   ms.author: madiepev
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics

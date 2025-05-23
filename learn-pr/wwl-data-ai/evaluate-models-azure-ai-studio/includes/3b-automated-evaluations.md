@@ -8,8 +8,7 @@ To evaluate a model, you need a dataset of prompts and responses (and optionally
 
 ## Evaluation metrics
 
-Automated evaluation can produce the following kinds of metric:
+Automated evaluation enables you to choose which *evaluators* you want to assess your model's responses, and which metrics those evaluators should calculate. There are evaluators that help you measure:
 
-- **AI Quality (AI-assisted)**: Metrics that measure the grammatical and linguistic quality of the generated responses based on analysis by an AI model.
-- **AI Quality (NLP-based)**: Metrics that measure the alignment between the AI-generated responses and the ground truth expected responses.
-- **Risk and safety**: Metrics that evaluate the responses for content safety issues, including violence, hate, sexual content, and content related to self-harm.
+- **AI Quality**: The quality of your model's responses are measured by using AI models to evaluate them for metrics like *coherence* and *relevance* and by using standard NLP metrics like F1 score, BLEU, METEOR, and ROUGE based on ground truth (in the form of expected response text)
+- **Risk and safety**: evaluators that assess the responses for content safety issues, including violence, hate, sexual content, and content related to self-harm.
