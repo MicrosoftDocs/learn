@@ -45,19 +45,19 @@ Allow players to customize any relevant visual elements that inform gameplay. Ex
 
    :::image type="content" source="../media/enemy-outline-color.png" alt-text="Screenshot that shows the Accessibility menu in Minecraft Dungeons. Enemy Outline Color is selected and the color is set to pink.":::
 
-- **Visual assists**: Allow players to enable and disable other visual indicators that inform gameplay, like the presence of outlines around objects and enemies. The following image shows the **Settings** menu in The Outer Worlds game. Players can turn on outlines that appear around objects that can be interacted with.
+- **Visual assists**: Allow players to enable and disable other visual indicators that inform gameplay, like the presence of outlines around objects and enemies. The following image shows the **Settings** menu in the Outer Worlds game. Players can turn on outlines that appear around objects that can be interacted with.
 
    :::image type="content" source="../media/interaction-outlines.png" alt-text="Screenshot that shows the UI settings in The Outer Worlds. The Interaction Outlines checkbox is selected.":::
 
 ## Customize audio settings
 
-Audio output is another area where customization options are important in adhering to best practices. Some examples of audio customization options are discussed here.
+Audio output is another area where customization options are important for adhering to best practices. Some examples of audio customization options are discussed here.
 
 ### Volume customization
 
-Allow players to customize the volume of each audio channel separately from one another. The following image shows the grounded audio settings menu. Players can adjust **Master Volume**, **Effects Volume**, **Music Volume**, **UI Volume**, **Dialogue Volume**, and **Voice Chat Volume** individually.
+Allow players to customize the volume of each audio channel separately from one another. The following image shows the Grounded audio settings menu. Players can adjust master volume, effects volume, music volume, UI volume, dialogue volume, and voice chat volume individually.
 
-:::image type="content" source="../media/audio.png" alt-text="Screenshot that shows the Audio options menu in Grounded. Players use sliders to control the master, effects, music, UI, dialogue, and voice chat volume.":::
+:::image type="content" source="../media/audio.png" alt-text="Screenshot that shows the audio options menu in Grounded. Players use sliders to control the master, effects, music, UI, dialogue, and voice chat volume.":::
 
 ### Audio channel customization
 
@@ -71,42 +71,40 @@ Allow players to customize the difficulty of the game. Providing customization o
 
 ### Overall game difficulty
 
-By providing players the ability to adjust overall game difficulty, you can support players who prefer to minimize challenge and enjoy the storyline. In the following image of The Outer Worlds **Select Difficulty** menu, players can choose between **Story**, **Normal**, **Hard**, and **Supernova**. Each difficulty level provides a detailed description of what players can expect in terms of enemy health, damage, and other aspects of gameplay that contribute to difficulty.
+By enabling players to adjust overall game difficulty, you can support players who prefer to minimize challenge and enjoy the storyline. In the following image of the Outer Worlds **Select Difficulty** menu, players can choose between **Story**, **Normal**, **Hard**, and **Supernova**. Each difficulty level provides a description of what players can expect in terms of enemy health, damage, and other aspects of gameplay that contribute to difficulty.
 
-:::image type="content" source="../media/difficulty.png" alt-text="Screenshot that shows the difficulty settings screen in The Outer Worlds. Story is selected with a description of how it affects gameplay. It reads, Use this mode if you enjoy story more than combat. In Story Mode, enemies have less health and do less damage.":::
+:::image type="content" source="../media/difficulty.png" alt-text="Screenshot that shows the difficulty settings screen in The Outer Worlds. Story is selected, and there's a description of the selection affects gameplay.":::
 
 ### Difficulty of individual mechanics and components
 
 Individual game mechanics can also influence overall difficulty. In addition to overall game difficulty customization, players should be able to customize individual game mechanics that contribute to overall difficulty. This type of customization supports players who generally prefer a certain difficulty level but a specific mechanic or factor blocks their progress.
 
-The survival game Don't Starve, for example, imposes challenges related to gathering food and resources, protecting characters from dangerous weather, and staying safe from enemies. In the following image of the Don't Starve Together World Generation customization menu, players can customize:
+The survival game Don't Starve, for example, imposes challenges related to gathering food and resources, protecting characters from dangerous weather, and staying safe from enemies. Players can customize:
 
 - The amount of available food and resources.
 - The presence of each individual enemy in the game.
 - The length and duration of each weather "season."
 
-With customization, players can eliminate or lessen enemies so that they can focus on gathering resources or any combination of supports and challenges they prefer.
-
-:::image type="content" source="../media/dont-starve-difficulty.png" alt-text="Screenshot that shows the Custom presets menu in Don't Starve Together. The Forest tab is selected.":::
+With customization, players can eliminate or reduce the number of enemies so that they can focus on gathering resources or any combination of supports and challenges they prefer.
 
 ## Customize notifications and visual distractions
 
-Allow players to customize aspects of the experience that might cause distraction. Distractions can include notifications or popups at the game or platform level and animated content. Customizing an experience to eliminate distractions irrelevant to the player's current focus can create a more accessible experience. Examples of these types of customization include the following areas.
+Allow players to customize aspects of the experience that might cause distraction. Distractions include notifications or popups at the game or platform level and animated content. Customizing an experience to eliminate distractions that are irrelevant to the player's current focus can create a more accessible experience. The following sections provide examples of these types of customizations.
 
 ### Notification customization
 
-Allow players to customize the amount of time and location in which notifications are shown. The following images show the Xbox preferences settings for notifications. Players can choose which types of notifications they want to receive onscreen alerts for, how long those alerts remain on their screen, and the area of the screen where they appear.
+Allow players to customize the amount of time notifications are shown and location in which they're shown. The following images show the Xbox preferences settings for notifications. Players can choose which types of notifications they want to receive onscreen alerts for, how long those alerts remain on their screen, and the area of the screen where they appear.
 
 :::image type="content" source="../media/platform-notification-timing.png" alt-text="Screenshot that shows the Notification timing preferences screen on Xbox. The option Choose how long your banner notification pops up for is highlighted and 30 seconds is selected.":::
 
-:::image type="content" source="../media/notification-placement-bottom-right.png" alt-text="Screenshot that shows the notification preferences screen on Xbox. The lower-right box is highlighted and selected.":::
+:::image type="content" source="../media/notification-placement-bottom-right.png" alt-text="Screenshot that shows the notification preferences screen on Xbox. A box that sets where notifications appear is selected.":::
 
 ### Animated content
 
-Allow players to customize onscreen content that's moving, blinking, scrolling, or otherwise animated. This type of customization is important during game experiences where players are required to read text onscreen but can become distracted or disoriented by background movement. The following video capture shows the Forza Horizon 5 accessibility settings menu. Players can enable and disable background movement while they navigate their menu settings.
+Allow players to customize onscreen content that's moving, blinking, scrolling, or otherwise animated. This type of customization is important during game experiences in which players are required to read text onscreen but can become distracted or disoriented by background movement. The following video shows the Forza Horizon 5 accessibility settings menu. Players can enable and disable background movement while they navigate their menu settings.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=f36d9825-08c1-42c5-a99b-4e6f17704d8d]
 
 ## Customize other elements and mechanics
 
-The principle of customization should be applied to as many aspects of the game and platform experience as possible. Many other areas beyond the initial visual, audio, difficulty, and autoplaying content discussed in this unit benefit from customization options. Be sure to consider all aspects of the experience you're developing.
+The principle of customization should be applied to as many elements of the game and platform experience as possible. Many other areas beyond the initial visual, audio, difficulty, and notification elements discussed in this unit benefit from customization options. Be sure to consider all aspects of the experience you're developing.
