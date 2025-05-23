@@ -27,7 +27,7 @@ Your branch is a safe place to experiment with new features or fixes. If you mak
 
 In the previous unit, you added a new file into the repository by pushing a commit. Let’s briefly review what commits are.
 
-A **commit** is a change to one or more files on a branch. Each commit is tracked by a unique ID, timestamp, and contributor, whether it's made via the command line or directly in GitHub's web interface. Commits provide a clear audit trail for anyone reviewing the history of a file or linked item, such as an issue or pull request.
+A **commit** is a change to one or more files on a branch. Each commit is tracked by a unique ID, timestamp, and contributor, regardless of whether it's made via the command line or directly in GitHub's web interface. Commits provide a clear audit trail for anyone reviewing the history of a file or linked item, such as an issue or pull request.
 
 > You can create a commit using Git in your terminal with:
 > ```
@@ -109,9 +109,11 @@ Git Flow uses several long-lived and temporary branches:
 ### When to Use Git Flow
 
 - Best suited for projects with **scheduled or versioned releases**
-- Helpful if you maintain **multiple production versions**
-- Ideal for **slower, more structured development cycles**
-- Considered more "heavyweight" than GitHub Flow due to additional branch management
+- Helpful if you maintain **multiple production versions** (e.g., long-term support branches)
+- Ideal for **slower, more structured development cycles** (e.g., enterprise or regulated environments)
+- Considered more "heavyweight" than GitHub Flow due to **additional branch management**
+
+Note: Git Flow assumes merge commits for integrating branches. Using rebase or squash merges can interfere with its branch structure and history tracking.
 
 > For many teams using GitHub, GitHub Flow is simpler and faster. But if your team values predictability and needs more release planning, Git Flow may be a better fit.
 
