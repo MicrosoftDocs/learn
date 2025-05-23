@@ -15,8 +15,8 @@ summary: Learn about foundational accessibility best practice concepts that you 
 abstract: |
   After you complete this module, you'll be able to:
   - Describe the foundational best practice concepts of customization, representation through multiple sensory channels, and support of multiple ways of task completion for game and platform experiences.
-  - Demonstrate proper implementation of these concepts in development scenarios.
-  - Identify components within the Xbox Accessibility Guidelines and demonstrate how they can be used to locate best practices relevant to the experiences you develop.
+  - Demonstrate proper implementation of these concepts broadly across different types of game components and mechanics.  
+  - Identify components of the Xbox Accessibility Guidelines and describe how each component can be used as a tool for ideation and testing to help ensure gaming products are accessible to players with disabilities.
 prerequisites: |
  - You should have some basic familiarity with playing and creating video games.
  - You should have some familiarity with using game platforms like Xbox, Windows, and other common gaming console and PC platforms.

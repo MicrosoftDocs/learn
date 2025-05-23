@@ -1,6 +1,6 @@
-Determining a starting point in the implementation of best practices can prove difficult. An understanding of the foundational accessibility concepts that many specific best practices are based on can help make this process more approachable.
+Determining a starting point in the implementation of best practices can be difficult. An understanding of the foundational accessibility concepts that many specific best practices are based on can help make this process more approachable.
 
-One of those foundational concepts is customizable experiences. When customization options are provided across all aspects of a game experience, more players can enjoy the same game in a way that's optimized for their specific needs and preferences. Regardless of the general game mechanic, element, or component, the concept of customization applies throughout.
+One of those foundational concepts is *customizable experiences*. When customization options are provided across all aspects of a game experience, more players can enjoy the same game in a way that's optimized for their specific needs and preferences. Regardless of the general game mechanic, element, or component, the concept of customization applies throughout.
 
 In this unit, you're introduced to some game and platform examples where the concept of customizable experiences is implemented across:
 
@@ -13,7 +13,7 @@ In this unit, you're introduced to some game and platform examples where the con
 
 ## Customize visual elements
 
-Players should be able to customize visual aspects of their interface including the size, color, style, and placement of elements. Players can use customization to create visual experiences that support their individual needs and preferences. Examples of visual elements that benefit from player customization are discussed here.
+Players should be able to customize visual aspects of their interface, including the size, color, style, and placement of elements. Players can use customization to create visual experiences that support their individual needs and preferences. Examples of visual elements that benefit from player customization are discussed here.
 
 ### Text-based visual elements
 
@@ -23,29 +23,29 @@ Allow players to customize text displayed in menus, chat boxes, captions and sub
 
    :::image type="content" source="../media/subtitle-size.png" alt-text="Screenshot that shows the options screen from Gears 5. Subtitle Size is highlighted and is set to Large.":::
 
-- **Text color**: Provide players the ability to choose the color of text and its background. The following image of the Xbox platform captioning settings shows the provided customization options for font color, background color, and window color of subtitle text.
+- **Text color**: Provide the ability to choose the color of text and its background. The following image of the Xbox platform captioning settings shows the customization options for font color, background color, and window color of subtitle text.
 
-   :::image type="content" source="../media/caption-background-color.png" alt-text="Screenshot that shows the captioning screen on Xbox. The Background Color option is highlighted and set to Blue.":::
+   :::image type="content" source="../media/caption-background-color.png" alt-text="Screenshot that shows the captioning screen on Xbox. The Background Color option is highlighted and set to blue.":::
 
-- **Font style**: Provide players with font type customization settings. The following image shows the Xbox platform caption settings. Players can choose between eight different font style options that include serif and sans serif choices.
+- **Font style**: Provide font type customization settings. The following image shows the Xbox platform caption settings. Players can choose from eight different font style options that include serif and sans serif choices.
 
    :::image type="content" source="../media/caption-font-style.png" alt-text="Screenshot that shows the accessibility captioning settings. The Caption style menu is expanded to reveal different style options.":::
 
 ### Heads-up display elements
 
-Allow players to customize the size and position of their heads-up display. The following image from Minecraft Dungeons shows a comparison between the heads-up display scaled to 70% versus the heads-up display scaled to 150%.
+Allow players to customize the size and position of their heads-up display. The following image from Minecraft Dungeons shows a comparison between the heads-up display scaled to 70% and the heads-up display scaled to 150%.
 
-:::image type="content" source="../media/hud-size.png" alt-text="Two sets of screenshots from Minecraft Dungeons demonstrate how the Hud Scale setting can be set from 70% to 150%.":::
+:::image type="content" source="../media/hud-size.png" alt-text="Two sets of screenshots from Minecraft Dungeons demonstrate the HUD Scale setting at 70% and 150%." lightbox="../media/hud-size.png":::
 
-### Visual elements within the game environment
+### Visual elements in the game environment
 
-Allow players to customize any relevant visual elements that inform gameplay. Examples of in-game visual element customization can include:
+Allow players to customize any relevant visual elements that inform gameplay. Examples of in-game visual element customization include:
 
 - **Enemy outline color**: Allow players to customize the colors and appearance of indicators like enemy color rings. Players can choose colors that they find easiest to see. The following image shows the accessibility settings menu in Minecraft Dungeons. Players can choose the enemy outline color from a range of colors.
 
    :::image type="content" source="../media/enemy-outline-color.png" alt-text="Screenshot that shows the Accessibility menu in Minecraft Dungeons. Enemy Outline Color is selected and the color is set to pink.":::
 
-- **Visual assists**: Allow players to enable and disable other visual indicators that inform gameplay like the presence of outlines around objects and enemies. The following image shows the **Settings** menu in The Outer Worlds game. Players can turn on outlines that appear around objects that can be interacted with.
+- **Visual assists**: Allow players to enable and disable other visual indicators that inform gameplay, like the presence of outlines around objects and enemies. The following image shows the **Settings** menu in The Outer Worlds game. Players can turn on outlines that appear around objects that can be interacted with.
 
    :::image type="content" source="../media/interaction-outlines.png" alt-text="Screenshot that shows the UI settings in The Outer Worlds. The Interaction Outlines checkbox is selected.":::
 
