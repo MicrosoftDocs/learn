@@ -32,8 +32,8 @@ subjects:
 units:
 - learn.wwl.introduction-language.introduction
 - learn.wwl.introduction-language.how-it-works
+- learn.wwl.introduction-language.statistical-techniques
 - learn.wwl.introduction-language.semantic-models
-- learn.wwl.introduction-language.text-analysis
 - learn.wwl.introduction-language.knowledge-check
 - learn.wwl.introduction-language.summary
 badge:

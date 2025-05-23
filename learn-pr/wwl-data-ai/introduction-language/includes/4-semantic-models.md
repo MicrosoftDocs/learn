@@ -1,4 +1,4 @@
-As the state of the art for NLP has advanced, the ability to train models that encapsulate the semantic relationship between tokens has led to the emergence of powerful language models. At the heart of these models is the encoding of language tokens as vectors (multi-valued arrays of numbers) known as *embeddings*.
+As the state of the art for NLP has advanced, the ability to train models that encapsulate the semantic relationship between tokens has led to the emergence of powerful deep learning language models. At the heart of these models is the encoding of language tokens as vectors (multi-valued arrays of numbers) known as *embeddings*.
 
 It can be useful to think of the elements in a token embedding vector as coordinates in multidimensional space, so that each token occupies a specific "location." The closer tokens are to one another along a particular dimension, the more semantically related they are. In other words, related words are grouped closer together. As a simple example, suppose the embeddings for our tokens consist of vectors with three elements, for example:
 
@@ -22,11 +22,18 @@ A generalized view of most modern natural language processing solutions is shown
 
 ![A diagram of the process to tokenize text and train a language model that supports natural language processing tasks.](../media/language-model.png)
 
-Common NLP tasks supported by language models include:
-- Text analysis, such as extracting key terms or identifying named entities in text.
-- Sentiment analysis and opinion mining to categorize text as *positive* or *negative*.
-- Machine translation, in which text is automatically translated from one language to another.
-- Summarization, in which the main points of a large body of text are summarized.
-- Conversational AI solutions such as *bots* or *digital assistants* in which the language model can interpret natural language input and return an appropriate response.
 
-Next, let's learn more about the capabilities made possible by language models.
+## Machine learning for text classification
+
+Another useful text analysis technique is to use a classification algorithm, such as *logistic regression*, to train a machine learning model that classifies text based on a known set of categorizations. A common application of this technique is to train a model that classifies text as *positive* or *negative* in order to perform *sentiment analysis* or *opinion mining*.
+
+For example, consider the following restaurant reviews, which are already labeled as **0** (*negative*) or **1** (*positive*):
+
+```
+- *The food and service were both great*: 1
+- *A really terrible experience*: 0
+- *Mmm! tasty food and a fun vibe*: 1
+- *Slow service and substandard food*: 0
+```
+
+With enough labeled reviews, you can train a classification model using the tokenized text as *features* and the sentiment (0 or 1) a *label*. The model will encapsulate a relationship between tokens and sentiment - for example, reviews with tokens for words like `"great"`, `"tasty"`, or `"fun"` are more likely to return a sentiment of **1** (*positive*), while reviews with words like `"terrible"`, `"slow"`, and `"substandard"` are more likely to return **0** (*negative*).
