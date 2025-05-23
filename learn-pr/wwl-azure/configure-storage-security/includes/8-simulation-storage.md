@@ -1,38 +1,25 @@
 ## Lab scenario
 
-Your organization is migrating storage to Azure. As the Azure Administrator you need to:
+In this lab you learn to create storage accounts for Azure blobs and Azure files. You learn to configure and secure blob containers. You also learn to use Storage Browser to configure and secure Azure file shares.
 
-+ Evaluate the use of Azure storage for storing files. These files are currently residing in on-premises data stores. 
-+ Minimize the cost of storage by placing less frequently accessed files in lower-priced storage tiers. 
-+ Explore different protection mechanisms that Azure Storage offers, including network access, authentication, authorization, and replication. 
-+ Determine to what extent Azure Files service might be suitable for hosting your on-premises file shares.
+> [!NOTE]
+> This lab covers storage accounts, blobs, and files. As you go through the steps consider the security features you learned about. 
 
 ## Architecture diagram
 
 :::image type="content" source="../media/lab-07.png" alt-text="Architecture diagram as explained in the text.":::
 
-## Objectives
+## Job skills
 
-+ **Task 1**: Create the infrastructure environment.
-    + Use a template to create the virtual networks and virtual machines. You can review the [lab template](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/tree/master/Allfiles/Interactive%20Lab%20Simulation%20Files/07).
-    + Use Azure PowerShell to deploy the template. 
-+ **Task 2**: Create and configure Azure Storage accounts.
-    + Create a storage account.
-    + Configure the storage account to include redundancy and access tiers. 
-+ **Task 3**: Manage blob storage.
-    + Create a private Blob container.
-    + Upload a file into the container.
-+ **Task 4**: Manage authentication and authorization for Azure Storage.
-    + Generate a shared access signature (SAS) with limited time access.
-    + Verify the SAS is working correctly. 
-+ **Task 5**: Create and configure an Azure Files share.
-    + Create a file and connect to it.
-    + Use Azure PowerShell to add items to the file share. 
-+ **Task 6**: Manage network access for Azure Storage.
-    + Limit access to the Azure storage account from only specific IP addresses. 
-    + Confirm access is denied from the Cloud Shell. 
+- Create and configure a storage account.
+- Create and configure secure blob storage.
+- Create and configure secure Azure file storage.
+
 > [!NOTE]
-> Click on the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning. 
+> Estimated timing: 50 minutes. 
+> To complete this exercise, you need an [Azure subscription](https://azure.microsoft.com/free/).
 
-[![Screenshot of the simulation page.](../media/simulation-storage-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-104%20Exam%20Guide%20-%20Microsoft%20Azure%20Administrator%20Exercise%2011?azure-portal=true)
+Launch the exercise, and follow the instructions. When finished, be sure to return to this page so you can continue learning.
 
+
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/AZ-104-MicrosoftAzureAdministrator/Instructions/Labs/LAB_07-Manage_Azure_Storage.html)
