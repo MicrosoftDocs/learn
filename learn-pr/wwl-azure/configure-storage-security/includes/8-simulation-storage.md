@@ -1,9 +1,9 @@
 ## Lab scenario
 
-In this lab you learn to create storage accounts for Azure blobs and Azure files. You learn to configure and secure blob containers. You also learn to use Storage Browser to configure and secure Azure file shares.
+In this lab, you learn to create storage accounts for Azure blobs and Azure files. You learn to configure and secure blob containers. You also learn to use Storage Browser to configure and secure Azure file shares.
 
 > [!NOTE]
-> This lab covers storage accounts, blobs, and files. As you go through the steps consider the security features you learned about. 
+> This lab covers storage accounts, blobs, and files. As you go through the steps, consider the security features you learned about. 
 
 ## Architecture diagram
 

@@ -2,7 +2,8 @@ Administrators use different strategies to ensure their data is secure. Common a
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=f0ef7956-ecdf-43cb-82e5-d0f9cb34bf3c]
 
-> [!NOTE] The video refers to Active Directory, which is now branded as Microsoft Entra ID. 
+> [!NOTE] 
+> The video refers to Active Directory, which is now branded as Microsoft Entra ID. 
 
 ### Things to know about Azure Storage security strategies
 

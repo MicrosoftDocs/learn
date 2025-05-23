@@ -28,7 +28,7 @@ quiz:
       explanation: "Incorrect. Storage access keys should be encrypted with limited access."
     - content: "Hard code access keys in your application code."
       isCorrect: false
-      explanation: "Incorrect. Hard-coding access keys in an application isn't a good best practice."
+      explanation: "Incorrect. Hard-coding access keys in an application isn't a best practice."
   - content: "What is the recommended way to authorize access to data in Azure Storage?"
     choices:
     - content: "Using either Microsoft Entra ID or a shared access signature SAS."
@@ -36,7 +36,7 @@ quiz:
       explanation: "Correct. Entra ID and SAS are great ways to access storage."
     - content: "Using Shared Key authorization."
       isCorrect: false
-      explanation: "Incorrect. Shared key authorization is not a best practice."
+      explanation: "Incorrect. Shared key authorization isn't a best practice."
     - content: "Using access keys and connection strings for all apps accessing production or sensitive data."
       isCorrect: false
       explanation: "Incorrect. Entra ID and SAS are better ways to authorize access."
