@@ -4,7 +4,7 @@ title: Module assessment
 metadata:
   title: Module assessment
   description: "Knowledge check to test your knowledge on evaluating models and applications."
-  ms.date: 04/16/2025
+  ms.date: 05/23/2025
   author: madiepev
   ms.author: madiepev
   ms.topic: unit
@@ -23,26 +23,26 @@ quiz:
     - content: "Automated evaluations"
       isCorrect: false
       explanation: "Incorrect. "
-  - content: "You want to compare generated responses to ground truth based on standard metrics. What kind of metrics should you specify for automated evaluations?"
+  - content: "Which evaluator compares generated responses to ground truth based on standard metrics?"
     choices:
-    - content: "AI quality (AI-assisted)"
+    - content: "Coherence"
       isCorrect: false
       explanation: "Incorrect. "
-    - content: "AI quality (NLP)"
+    - content: "F1 Score"
       isCorrect: true
       explanation: "Correct. "
-    - content: "Risk and safety"
+    - content: "Protected material"
       isCorrect: false
       explanation: "Incorrect. "
-  - content: "You want to evaluate the grammatical and linguistic quality of responses. What kind of metrics should you specify for automated evaluations?"
+  - content: "Which evaluator metric uses an AI model to judge the structure and logical flow of ideas in a response?"
     choices:
-    - content: "AI quality (AI-assisted)"
+    - content: "Coherence"
       isCorrect: true
       explanation: "Correct. "
-    - content: "AI quality (NLP)"
+    - content: "F1 Score"
       isCorrect: false
       explanation: "Incorrect. "
-    - content: "Risk and safety"
+    - content: "protected material"
       isCorrect: false
       explanation: "Incorrect. "
 

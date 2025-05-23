@@ -2,5 +2,7 @@ In this module, you learned to:
 
 - Understand model benchmarks.
 - Perform manual evaluations.
-- Assess your app with AI-assisted metrics.
-- Configure evaluation flows in the Azure AI Foundry portal.
+- Perform automated evaluations.
+
+> [!TIP]
+> For more information about evaluating models in Azure AI Foundry, see [Observability in generative AI](/azure/ai-foundry/concepts/observability).
