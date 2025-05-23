@@ -8,9 +8,6 @@ metadata:
   author: theresa-i
   ms.author: theresai
   ms.topic: unit
-  ms.custom:
-  - build-2023
-  - ignite-2024
 durationInMinutes: 6
 content: |
   [!include[](includes/2-understand-fabric-pipeline.md)]
