@@ -43,7 +43,7 @@ In the next section, we’ll review Discussions and how to best utilize the feat
 
 ## Discussions
 
-Discussions are designed for conversations that should be accessible to everyone and are not necessarily tied to code. They allow for open, ongoing communication within a public forum.
+Discussions are designed for conversations that aren’t necessarily tied to code—such as Q&A, ideas, or general feedback. They support open, ongoing communication within a shared forum and can be public or private, depending on the repository's visibility.
 
 In this section, you'll learn how to:
 
