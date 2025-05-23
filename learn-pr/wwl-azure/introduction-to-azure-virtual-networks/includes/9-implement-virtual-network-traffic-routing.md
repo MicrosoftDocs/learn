@@ -44,6 +44,9 @@ Azure adds default system routes for any Azure capabilities that you enable. Dep
 
 ## User defined routes
 
+
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=cdcb25bb-d79c-4fbb-8389-09ad07293679]
+
 You can override the default routes that Azure creates with [user-defined routes (UDR)](/azure/virtual-network/virtual-networks-udr-overview). This technique can be useful when you want to ensure that traffic between two subnets passes through a firewall appliance. These custom routes override Azure's default system routes. In Azure, each subnet can have zero or one associated route table. When you create a route table and associate it to a subnet, the routes within it are combined with, or override, the default routes Azure adds to a subnet.
 
 You can specify the following next hop types when creating a user-defined route:
@@ -54,14 +57,11 @@ You can specify the following next hop types when creating a user-defined route:
 - **Virtual network**: Specify when you want to override the default routing within a virtual network.
 - **Internet:** Specify when you want to explicitly route traffic destined to an address prefix to the Internet.
 
-### Cases for user defined routes (video)
 
-This video reviews different usage cases for custom routes. 
-> [!VIDEO https://learn-video.azurefd.net/vod/player?id=cdcb25bb-d79c-4fbb-8389-09ad07293679]
 
 ## Consider Azure Route Server
 
-[Azure Route Server](/azure/route-server/quickstart-configure-route-server-portal)simplifies dynamic routing between your network virtual appliance (NVA) and your virtual network. Azure Route Server is a fully managed service and is configured with high availability. Azure Route Server simplifies configuration, management, and deployment of your NVA in your virtual network.
+[Azure Route Server](/azure/route-server/quickstart-configure-route-server-portal) simplifies dynamic routing between your network virtual appliance (NVA) and your virtual network. Azure Route Server is a fully managed service and is configured with high availability. Azure Route Server simplifies configuration, management, and deployment of your NVA in your virtual network.
 
 - You no longer need to manually update the routing table on your NVA whenever your virtual network addresses are updated.
 - You no longer need to update user defined routes manually whenever your NVA announces new routes or withdraws old ones.
@@ -74,5 +74,3 @@ This video reviews different usage cases for custom routes.
 Imagine your attempts to connect to a specific virtual machine (VM) in your Azure virtual network consistently fail. You can diagnose a routing problem by viewing the effective for a virtual machine network interface. You can view the [effective routes](/azure/virtual-network/diagnose-network-routing-problem#diagnose-using-azure-portal) for each network interface by using the Azure portal.
 
 :::image type="content" source="../media/view-nics-a9fe039b.png" alt-text="Screenshot of the Azure portal NIC.":::
-
-Choose the best response for each question.

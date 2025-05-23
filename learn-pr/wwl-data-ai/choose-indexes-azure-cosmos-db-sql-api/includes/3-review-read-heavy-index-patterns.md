@@ -84,3 +84,4 @@ Alternatively, you can exclude all paths and only selectively include the **name
 
 > [!TIP]
 > The preferred approach is to index everything by default and selectively exclude specific paths. Changes to the index policy require an index rebuild. Applying this preferred approach allows your application to adapt to schema changes making new properties available for queries immediately.
+

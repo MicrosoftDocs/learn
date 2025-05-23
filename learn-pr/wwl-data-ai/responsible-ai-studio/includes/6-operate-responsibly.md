@@ -21,13 +21,13 @@ A successful release requires some planning and preparation. Consider the follow
 - Implement a way for users to provide feedback and report issues. In particular, enable users to report generated content as "inaccurate", "incomplete", "harmful", "offensive", or otherwise problematic.
 - Track telemetry data that enables you to determine user satisfaction and identify functional gaps or usability challenges. Telemetry collected should comply with privacy laws and your own organization's policies and commitments to user privacy.
 
-## Utilize Azure AI Content Safety
+## Utilize Azure AI Foundry Content Safety
 
 Several Azure AI resources provide built-in analysis of the content they work with, including Language, Vision, and Azure OpenAI by using content filters.
 
-Azure AI Content Safety provides more features focusing on keeping AI and copilots safe from risk. These features include detecting inappropriate or offensive language, both from input or generated, and detecting risky or inappropriate inputs.
+Azure AI Foundry Content Safety provides more features focusing on keeping AI and copilots safe from risk. These features include detecting inappropriate or offensive language, both from input or generated, and detecting risky or inappropriate inputs.
 
-Features in Azure AI Content Safety include:
+Features in Foundry Content Safety include:
 
 |Feature|Functionality|
 |---|---|
@@ -36,4 +36,4 @@ Features in Azure AI Content Safety include:
 |Protected material detection|Scans for known copyrighted content|
 |Custom categories|Define custom categories for any new or emerging patterns|
 
-Details and quickstarts for using Azure AI Content Safety can be found on the [documentation pages](/azure/ai-services/content-safety/overview) for the service.
+Details and quickstarts for using Foundry Content Safety can be found on the [documentation pages](/azure/ai-services/content-safety/overview) for the service.

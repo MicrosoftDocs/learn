@@ -6,20 +6,20 @@ metadata:
   description: This unit contains a knowledge check, which can help learners reinforce their understanding of the material.
   author: ivorb
   ms.author: berryivor
-  ms.date: 04/03/2025
+  ms.date: 05/16/2025
   ms.topic: unit
 durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "What is the first step in setting up Azure AI Agent Service?"  
+  - content: "What is the first step in setting up Azure AI Foundry Agent Service?"  
     choices:  
       - content: "Deploy a compatible model"  
         isCorrect: false  
         explanation: "Incorrect. Deploying a compatible model is the second step. The first step is to create an Azure AI Foundry hub and project."  
       - content: "Create an Azure AI Foundry hub and project"  
         isCorrect: true  
-        explanation: "Correct. The first step in setting up Azure AI Agent Service is to create an Azure AI Foundry hub and project in your Azure subscription."  
+        explanation: "Correct. The first step in setting up Azure AI Foundry Agent Service is to create an Azure AI Foundry hub and project in your Azure subscription."  
       - content: "Make API calls using SDKs"  
         isCorrect: false  
         explanation: "Incorrect. Making API calls using SDKs is the third step after deploying a compatible model."  

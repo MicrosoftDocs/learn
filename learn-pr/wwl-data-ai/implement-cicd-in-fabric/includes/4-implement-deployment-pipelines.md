@@ -1,6 +1,6 @@
 Pipelines enable a continuous integration/continuous deployment (CI/CD) approach that ensures content is updated, tested, and regularly refreshed. Pipelines are a way to automate the movement of content through the development, test, and production stages of the content development lifecycle.
 
-## What are deployment pipelines
+## What are deployment pipelines?
 
 Fabric deployment pipelines help you deploy your Fabric items across different environments like development, test, and production. They let you develop and test content in Fabric before it reaches end users.
 
@@ -24,7 +24,7 @@ Follow these steps to create a deployment pipeline:
 ## Deploy content to a pipeline stage
 The deployment process lets you clone content from one stage in the pipeline to another, typically from development to test, and from test to production.
 
-To deploy content between stages, select the stage to deploy to, and then select the stage in the **Deploy from** drop down box, and then select the **Deploy** button. The deployment process copies all of the workspace content into the target stage. In the following image, there's a data pipeline that only exists in the development stage that will be moved to the test stage when **Deploy** is selected in the development stage.
+To deploy content between stages, select the stage to deploy to, and then select the stage in the **Deploy from** drop-down box, and then select the **Deploy** button. The deployment process copies all of the workspace content into the target stage. In the following image, there's a data pipeline that only exists in the development stage that will be moved to the test stage when **Deploy** is selected in the development stage.
 
 :::image type="content" source="../media/deploy-content.png" alt-text="Screenshot of content deployment interface." :::
 

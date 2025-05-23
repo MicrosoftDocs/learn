@@ -3,10 +3,10 @@ uid: learn.wwl.develop-ai-agent-with-semantic-kernel.summary
 title: Summary
 metadata:
   title: Summary
-  description: This unit summarizes the key concepts covered in the module, including key features and how to use Azure AI Agent Service.
+  description: This unit summarizes the key concepts covered in the module, including key features and how to use Azure AI Foundry Agent Service.
   author: buzahid
   ms.author: buzahid
-  ms.date: 03/25/2025
+  ms.date: 05/16/2025
   ms.topic: unit
 durationInMinutes: 2
 content: |

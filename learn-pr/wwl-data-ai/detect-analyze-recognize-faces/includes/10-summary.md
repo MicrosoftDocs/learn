@@ -1,11 +1,4 @@
-In this module, you have learned how to detect, analyze, and recognize faces.
+In this module, you have learned how to detect, analyze, and recognize faces. Facial analysis and recognition solutions can help you address business requirements for security and authorization, digital asset management, and other scenarios. However, you should be mindful of the need to use biometric data such as facial imaging responsibly.
 
-Now that you've completed this module, you can:
-
-- Identify options for face detection analysis.
-- Describe considerations for face analysis.
-- Detect people with the Azure AI Vision service.
-- Describe the capabilities of the Face service.
-- Understand facial recognition.
-
-To find out more about face detection with the Azure AI Vision service, see the [Azure AI Vision documentation](/azure/cognitive-services/computer-vision/concept-detecting-faces). To find out more about the Face service, see the [Face documentation](/azure/cognitive-services/face/).
+> [!TIP]
+> To find out more about the Azure AI Vision Face service, see the **[Face documentation](/azure/ai-services/computer-vision/overview-identity)**.

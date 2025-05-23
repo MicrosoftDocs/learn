@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-computer-vision.azure-ai-foundry
+title: Get started in Azure AI Foundry portal
+metadata:
+  title: Get started in Azure AI Foundry portal
+  description: Get started in Azure AI Foundry portal
+  author: wwlpublish
+  ms.author: sheryang
+  ms.date: 05/12/2025
+  ms.topic: unit
+  ms.collection:
+    - wwl-ai-copilot
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-azure-ai-foundry.md)]
