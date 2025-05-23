@@ -3,8 +3,8 @@ uid: learn.wwl.use-data-factory-pipelines-fabric
 metadata:
   title: Orchestrate processes and data movement with Microsoft Fabric
   description: "Use Data Factory pipelines in Microsoft Fabric"
-  ms.date: 05/08/2024
-  author: wwlpublish
+  ms.date: 05/23/2025
+  author: theresa-i
   ms.author: theresai
   ms.topic: module
   ms.custom:
