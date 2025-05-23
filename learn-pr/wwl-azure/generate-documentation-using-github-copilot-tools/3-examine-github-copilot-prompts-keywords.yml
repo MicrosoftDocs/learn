@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generate-documentation-using-github-copilot-tools.examine-github-copilot-prompts-keywords
+title: Examine GitHub Copilot prompts and keywords
+metadata:
+  title: Examine GitHub Copilot prompts and keywords
+  description: "Examine GitHub Copilot prompts and keywords"
+  ms.date: 05/23/2025
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: unit
+  ms.custom:
+  - N/A
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-examine-github-copilot-prompts-keywords.md)]

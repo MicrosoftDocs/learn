@@ -3,7 +3,7 @@ uid: learn.wwl.generate-documentation-using-github-copilot-tools
 metadata:
   title: Generate documentation using GitHub Copilot tools
   description: "This module explores the generation of code explanations, project documentation, and inline code comment documentation using the GitHub Copilot Chat extension for Visual Studio Code."
-  ms.date: 11/14/2024
+  ms.date: 05/23/2025
   author: wwlpublish
   ms.author: cahowd
   ms.topic: module-standard-task-based
@@ -33,7 +33,6 @@ prerequisites: |
   -   Awareness of the GitHub Copilot free trial conditions: if you choose the free trial offer for GitHub Copilot, a form of payment is requested at sign-up. Charges aren't applied until the trial is over, unless you cancel before the conclusion of the 30-day period.
 
   -   A basic understanding of the features provided by the GitHub Copilot extensions for Visual Studio Code.
-
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
@@ -47,11 +46,11 @@ subjects:
 units:
 - learn.wwl.generate-documentation-using-github-copilot-tools.introduction
 - learn.wwl.generate-documentation-using-github-copilot-tools.examine-explain-document-features-github-copilot
-- learn.wwl.generate-documentation-using-github-copilot-tools.exercise-generate-explanations-using-github-copilot-chat
-- learn.wwl.generate-documentation-using-github-copilot-tools.exercise-generate-project-documentation-using-github-copilot-chat
-- learn.wwl.generate-documentation-using-github-copilot-tools.exercise-generate-code-documentation-using-github-copilot
-- learn.wwl.generate-documentation-using-github-copilot-tools.exercise-complete-code-documentation-challenge
-- learn.wwl.generate-documentation-using-github-copilot-tools.review-code-documentation-solution
+- learn.wwl.generate-documentation-using-github-copilot-tools.examine-github-copilot-prompts-keywords
+- learn.wwl.generate-documentation-using-github-copilot-tools.analyze-explain-code-using-github-copilot
+- learn.wwl.generate-documentation-using-github-copilot-tools.generate-project-documentation-using-github-copilot
+- learn.wwl.generate-documentation-using-github-copilot-tools.generate-inline-code-documentation-using-github-copilot
+- learn.wwl.generate-documentation-using-github-copilot-tools.exercise-analyze-document-code-github-copilot
 - learn.wwl.generate-documentation-using-github-copilot-tools.knowledge-check
 - learn.wwl.generate-documentation-using-github-copilot-tools.summary
 badge:
