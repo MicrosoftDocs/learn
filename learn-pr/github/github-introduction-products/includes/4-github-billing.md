@@ -1,15 +1,15 @@
 Now let's review billing and payments for your GitHub account.
 
-GitHub issues separate bills for each account type (personal, organization, or enterprise). You receive a separate bill for your personal account and for each organization or enterprise account you own.
+GitHub bills accounts based on type—personal, organization, or enterprise. Personal accounts and most organizations receive separate bills, while enterprise accounts can consolidate billing across multiple organizations or route charges to different cost centers based on internal configuration.
 
-The bill for each account is a combination of charges for your subscriptions and usage-based billing.
+Each bill reflects a combination of subscriptions and usage-based charges:
 
-- **Subscriptions** include your account's plan, such as GitHub Pro or GitHub Team, and paid products that have a consistent monthly cost, such as GitHub Copilot and apps from GitHub Marketplace.
-- **Usage-based billing** applies when the cost of a paid product depends on how much you use the product. For example, the cost of GitHub Actions depends on how many minutes your jobs spend running and how much storage your artifacts use.
+- **Subscriptions** include your account’s plan (such as GitHub Pro or GitHub Team) and fixed monthly costs for products like GitHub Copilot or Marketplace apps.
+- **Usage-based billing** applies to products where cost scales with use—such as GitHub Actions (based on runtime minutes and artifact storage) or GitHub Packages.
   > [!NOTE]
-  > Your plan might come with included amounts of usage-based products. For example, with GitHub Pro, your personal account gets 3,000 minutes of GitHub Actions usage for free each month. You can control usage beyond the included amounts by setting spending limits.
+  > Most plans include a set amount of usage for free. For example, GitHub Pro includes 3,000 free GitHub Actions minutes per month. You can manage overages by setting spending limits.
 
-Understanding GitHub's billing structures is crucial for effective administration and cost management. This document focuses on differentiating how GitHub products are billed, including seat licenses, GitHub Actions, GitHub Packages, and the new billing platform's capabilities.
+Understanding GitHub’s billing model helps you plan budgets, track usage, and manage costs across accounts. This section will clarify how seat licenses, GitHub Actions, GitHub Packages, and the billing platform work together.
 
 ## Pricing for GitHub Actions
 
