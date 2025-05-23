@@ -33,7 +33,7 @@ quiz:
     - content: "Azure AI hub based project."
       isCorrect: false
       explanation: "Incorrect. An Azure AI hub-based project includes unnecessary services for this scenario."
-    - content: "AAzure AI Custom Vision project."
+    - content: "Azure AI Custom Vision project."
       isCorrect: false
       explanation: "Incorrect. An Azure AI Custom Vision project would not help in this scenario."
   - content: "Which SDK enables you to connect to resources in a project?"
