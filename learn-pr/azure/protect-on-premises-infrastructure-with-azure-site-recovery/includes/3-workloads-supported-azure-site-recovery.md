@@ -24,7 +24,7 @@ Site Recovery provides application-aware replication for many types of workloads
 
 ### Active Directory and DNS
 
-Active Directory and DNS can be configured for an automated failover. Typically, they're completed first in the scope of the overall recovery plan. In this way, the Active Directory instance and DNS name resolution are available for when the other applications are failed over. You can have Active Directory up and running in a few minutes. Site Recovery protects the virtual machine that hosts your domain controller and DNS.
+Active Directory and DNS can be configured for an automated failover. Typically, they're completed first in the scope of the overall recovery plan. In this way, the Active Directory instance and Domain Name System (DNS) name resolution are available for when the other applications are failed over. You can have Active Directory up and running in a few minutes. Site Recovery protects the virtual machine that hosts your domain controller and DNS.
 
 ### SQL Server
 

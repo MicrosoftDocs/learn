@@ -18,7 +18,7 @@ As part of your BCDR plan, identify the recovery time objectives (RTOs) and reco
 
 ### Recovery time objective
 
-An RTO is a measure of the maximum amount of time your business can survive after a disaster until normal service must be restored in order to avoid unacceptable consequences associated with a break in continuity. Let's assume your RTO is 12 hours, which means that operations can continue for 12 hours without the business's core services functioning. If the downtime is any longer, your business would be seriously harmed.
+An RTO is a measure of the maximum amount of time your business can survive after a disaster until normal service must be restored to avoid any unacceptable consequences resulting from the break in continuity. Let's assume your RTO is 12 hours, which means that operations can continue for 12 hours without the business's core services functioning. If the downtime is any longer, your business would be seriously harmed.
 
 ### Recovery point objective
 
@@ -75,4 +75,4 @@ The status of the recovery job and the replicated virtual machine is accessed vi
 - **Warning**: There's an issue that could impact replication.
 - **Critical**: A critical replication error was detected.
 
-If all goes well, the replicated VM status is set to *Performed successfully*. If a test wasn't done, the status is set to *Test recommended*. The VM is also set to *Test recommended* if it's been more than six months since the last test.
+If all goes well, the replicated VM status is set to *Performed successfully*. If a test wasn't done, the status is set to *Test recommended*. The VM is also set to *Test recommended* if the last test was more than six months ago.

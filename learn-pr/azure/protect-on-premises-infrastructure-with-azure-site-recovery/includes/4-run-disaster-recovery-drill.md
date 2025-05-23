@@ -6,7 +6,7 @@ In this unit, you gain an understanding of recovery time and recovery point obje
 
 ## Disaster recovery drill
 
-With Site Recovery, you can do a full disaster recovery test without affecting your existing live environment. Recovery plans are created within Site Recovery to allow the automation of recovery tasks and to model an app around its dependencies. Such as, the need for Active Directory or DNS to function. BCDR plans also allow you to test your disaster recovery.
+With Site Recovery, you can do a full disaster recovery test without affecting your existing live environment. Recovery plans are created within Site Recovery to allow the automation of recovery tasks and to model an app around its dependencies. Such as, the need for Active Directory or the Domain Name System (DNS) to function. BCDR plans also allow you to test your disaster recovery.
 
 After a BCDR plan is created in the Azure portal, it can be executed for test purposes. Follow these steps:
 
@@ -30,7 +30,7 @@ In the dashboard, you can monitor replicated items and test failovers. Each repl
 
 **(2) Replicated items** - **Healthy**: Replication is running normally with no warnings. **Warning** means that one or more issues were identified that could affect replication. **Critical** means that one or more critical replication errors were identified.
 
-**(3) Failover test success** - **Test recommended**: Specific machines haven't had a failover since Site Recovery protection was enabled. **Performed successfully** means that one or more machines replicated successfully. **Not applicable** means that machines aren't currently eligible for a test failover.
+**(3) Failover test success** - **Test recommended**: Indicates a machine that hasn't had a failover since Site Recovery protection was enabled. **Performed successfully** means that one or more machines replicated successfully. **Not applicable** means that machines aren't currently eligible for a test failover.
 
 **(4) Configuration issues** - **Missing configurations**: A necessary setting is missing. **Missing resources** means that a specified resource can't be found or isn't available. An example is a deleted resource such as a virtual network. **Subscription quota** shows the amount of resource available for your subscription and whether there's enough to do a failover. **Software updates** shows the availability of new software updates and information about out-of-date software.
 
