@@ -4,6 +4,7 @@ In this unit, we're reviewing the following components of the GitHub flow:
 - Commits
 - Pull Requests
 - The GitHub Flow
+- Git Flow
 
 ## Components of GitHub Flow
 
@@ -117,6 +118,6 @@ Note: Git Flow assumes merge commits for integrating branches. Using rebase or s
 
 > For many teams using GitHub, GitHub Flow is simpler and faster. But if your team values predictability and needs more release planning, Git Flow may be a better fit.
 
-Congratulations, you’ve completed a full GitHub Flow cycle!
+Congratulations! You’ve just walked through the full GitHub Flow—and explored how Git Flow offers a structured alternative for release-driven projects.
 
 Let’s move onto the next section where we’ll cover the differences between issues and discussions.
