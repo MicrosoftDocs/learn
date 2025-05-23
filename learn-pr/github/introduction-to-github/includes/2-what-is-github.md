@@ -37,7 +37,7 @@ Productivity is accelerated with automation that the GitHub Enterprise Platform 
 
 GitHub integrates security directly into the development process from the very beginning and at every stage. GitHub Enterprise includes native, first-party features like **CodeQL**, **secret scanning**, **Dependabot**, and **security overview** to minimize risks. Code remains private, while still benefiting from integrated security checks.
 
-GitHub has continued to make investments to ensure that our features are enterprise-ready. Microsoft and highly regulated industries trust GitHub, and we meet global compliance requirements.
+GitHub continues to invest in enterprise-grade security and compliance. Trusted by Microsoft and organizations in highly regulated industries, GitHub adheres to global compliance standards, making it a reliable choice for secure development at scale.
 
 ### Scale
 
