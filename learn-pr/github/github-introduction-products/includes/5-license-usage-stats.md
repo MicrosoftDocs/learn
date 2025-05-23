@@ -1,6 +1,8 @@
 In this unit, you'll learn how to track and manage GitHub Enterprise license usage across organizations, enterprise accounts, and server instances using the admin console, APIs, and best practices for optimizing license allocation and cost.
 
-As a **GitHub Enterprise administrator**, tracking **license usage** is crucial for managing costs, optimizing resources, and ensuring compliance. GitHub provides various methods for obtaining license statistics at **organization, enterprise, and instance levels**.
+As a **GitHub Enterprise administrator**, tracking **license usage** is crucial for managing costs, optimizing resources, and staying compliant. GitHub provides several ways to track seat usage across organizations, enterprise accounts, and GitHub Enterprise Server instances.
+
+Note: For pre-paid (subscription-based) plans, you'll see a set number of available licenses. For Pay-As-You-Go (PAYG) plans—the default for new Enterprise customers—there is no concept of “available licenses.” Billing is based on actual usage (active seats), and you are charged accordingly each month.
 
 ## Finding License Usage for a Specific Organization
 
@@ -14,8 +16,8 @@ To find **license usage statistics** for a single **GitHub organization**:
 4. View details such as:
     - Total seats assigned
     - Active seats in use
-    - Available licenses
     - Pending invitations
+    - Available licenses (only shown for pre-paid accounts)
 
 #### Command-Line Alternative (GraphQL API)
 
