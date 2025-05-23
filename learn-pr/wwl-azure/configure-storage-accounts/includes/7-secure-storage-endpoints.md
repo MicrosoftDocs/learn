@@ -23,4 +23,4 @@ Here are some points to consider about configuring service access settings:
 > Be sure to test the service endpoint and verify the endpoint limits access as expected.
 
 > [!TIP]
-> Learn more with the [*Secure and isolate access to Azure resources by using network security groups and service endpoints](/training/modules/secure-and-isolate-with-nsg-and-service-endpoints/) training module. This module has a sandbox where you can restrict access to Azure Storage by using service endpoints.
+> Learn more with the [*Secure and isolate access to Azure resources by using network security groups and service endpoints*](/training/modules/secure-and-isolate-with-nsg-and-service-endpoints/) training module. This module has a sandbox where you can restrict access to Azure Storage by using service endpoints.

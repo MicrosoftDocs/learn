@@ -20,7 +20,7 @@ General purpose Azure storage accounts have two basic [types](/azure/storage/com
 | [**Premium** __page blobs__](/azure/storage/blobs/storage-blob-pageblob-overview)| Page blobs only | Premium high-performance storage account for page blobs only. Page blobs are ideal for storing index-based and sparse data structures, such as operating systems, data disks for virtual machines, and databases. |
 
 > [!TIP]
-> Before continuing, consider working through the [*Create a storage account**](/training/modules/create-azure-storage-account/) training module. This module has a sandbox where you can create a storage account. 
+> Before continuing, consider working through the [*Create a storage account*](/training/modules/create-azure-storage-account/) training module. This module has a sandbox where you can create a storage account. 
 
 
 
