@@ -14,6 +14,69 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
+
+  - content: "What actions can you take at enterprise level to manage the use of GitHub Actions in your enterprise instance?"
+    choices:
+    - content: "Create workflow templates"
+      isCorrect: false
+      explanation: "Incorrect. Workflow templates are created at organizational level."
+    - content: "Configure a GitHub Actions use policy"
+      isCorrect: true
+      explanation: "Correct. GitHub Actions use policies enable you to restrict access to GitHub Actions to specific organizations in your instance."
+    - content: "Manually sync public actions in Enterprise Cloud"
+      isCorrect: false
+      explanation: "Incorrect. Public actions are automatically synced in Enterprise Cloud. Only with Enterprise Server do you have the possibility to manually sync public actions instead of automatically."
+  - content: "What actions can you take to configure self-hosted runners for your enterprise use?"
+    choices:
+    - content: "Create and add custom labels to your runners"
+      isCorrect: true
+      explanation: "Correct. Custom labels can be used when you need to run jobs on runners that have specific capabilities."
+    - content: "Add proxy configurations to your runners after they start."
+      isCorrect: false
+      explanation: "Incorrect. If you need a self-hosted runner to communicate with GitHub via a proxy server, you must add all proxy configurations to your runner before starting it."
+    - content: "Add the IP address or IP address range of your runners at repository level."
+      isCorrect: false
+      explanation: "Incorrect. If your organization has configured an IP allowlist, you must add the IP address or IP address range of your self-hosted runners to the IP allowlist. IP allowlists are found in an organization's Settings."
+  - content: "What are encrypted secrets?"
+    choices:
+    - content: "Encrypted secrets are authentication tokens you can generate in your account settings."
+      isCorrect: false
+      explanation: "Incorrect. The authentication tokens you can create in your account settings are personal access tokens (PATs)."
+    - content: "Encrypted secrets are the equivalent of SSH keys in GitHub."
+      isCorrect: false
+      explanation: "Incorrect. SSH keys are also called SSH keys in GitHub."
+    - content: "Encrypted secrets are encrypted environment variables you can create to store sensitive information."
+      isCorrect: true
+      explanation: "Correct. Once created, encrypted secrets become available for use in your workflows and actions at the level at which they were created (organization, repository, or environment)."
+  - content: "Which credential type poses the greatest security risk if used to access repositories from GitHub Actions??"
+    choices:
+    - content: "Repository deploy keys"
+      isCorrect: false
+      explanation: "Incorrect. Repository deploy keys are actually recommended as they grant access only to a single repository."
+    - content: "Personal access token (classic)"
+      isCorrect: true
+      explanation: "Correct. Personal access tokens (classic) grant broad access to all repositories you have access to, creating unnecessary security risks."
+    - content: "GitHub App tokens"
+      isCorrect: false
+      explanation: "Incorrect. GitHub App tokens provide granular permissions and are recommended for cross-repository access."
+    - content: "GITHUB_TOKEN"
+      isCorrect: false
+      explanation: "Incorrect. GITHUB_TOKEN is not recommended as it's intentionally scoped to a single repository."
+  - content: "Which feature in GitHub allows you to enforce that automated tests must pass before code can be merged to the main branch?"
+    choices:
+    - content: "Organization secrets"
+      isCorrect: false
+      explanation: "Incorrect. Organization secrets store sensitive information like API keys and credentials for use in GitHub Actions workflows. While important for security, they don't enforce automated test requirements before merging code."
+    - content: "Repository rule sets"
+      isCorrect: true
+      explanation: "Correct. Repository rule sets allow you to enforce policies across branches, including requiring status checks (which represent automated tests) to pass before merging. As stated in the content: \"Rule Sets can enforce that certain Actions (e.g., tests) must pass before merges\" and under Components of Rule Sets, it mentions \"Require status checks to pass before merging\" as a Pull Request Requirement."
+    - content: "Workflow templates"
+      isCorrect: false
+      explanation: "Incorrect. Workflow templates help standardize automation across an organization by providing predefined workflow structures, but they don't enforce that those workflows must pass before merging. They simply make it easier to create consistent workflows."
+    - content: "Runner groups"
+      isCorrect: false
+      explanation: "Incorrect. Runner groups organize self-hosted runners in GitHub Actions, allowing you to control which repositories can use specific runners. They don't enforce test requirements before merging code."
+
     - content: "Which of the following is a feature unique to GitHub Enterprise Cloud (GHEC)?"
       choices:
         - content: "Requires on-premises deployment and infrastructure management"
@@ -109,4 +172,5 @@ quiz:
         - content: Store secrets in the GitHub Actions log archive
           isCorrect: false
           explanation: Storing secrets in logs is unsafe and not a recommended practice.
+
 
