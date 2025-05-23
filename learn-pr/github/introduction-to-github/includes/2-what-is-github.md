@@ -21,7 +21,7 @@ As we learned earlier, GitHub provides an AI powered developer platform to build
 
 ### AI
 
-Generative AI is dramatically transforming software development. The GitHub Enterprise platform **enhances collaboration** through AI-powered pull requests and issues, productivity through Copilot, **Copilot Chat**, and **Copilot Agents**, and security by automating security checks faster.
+Generative AI is dramatically transforming software development. The GitHub Enterprise platform **enhances collaboration** through AI-powered pull requests and issues, productivity through Copilot, **Copilot Chat**, and **Copilot Agents**, and security by providing quicker feedback to improve security.
 
 ### Collaboration
 
@@ -31,17 +31,17 @@ Repositories, Issues, Pull Requests, and other tools help to support faster coll
 
 ### Productivity
 
-Productivity is accelerated with automation that the GitHub Enterprise Platform provides. With built-in CI/CD (Continuous Integration and Continuous Delivery) tools directly integrated into the workflow, the platform lets users automate repetitive tasks and speed up daily work. This allows developers to focus more on coding and solving problems.
+Productivity is accelerated with automation that the GitHub Enterprise Platform provides. With built-in CI/CD (Continuous Integration and Continuous Delivery) tools directly integrated into the development process, the platform lets users automate repetitive tasks and speed up daily work. This allows developers to focus more on coding and solving problems.
 
 ### Security
 
-GitHub integrates security directly into the development process from the start. GitHub Enterprise includes native, first-party features like **CodeQL**, **secret scanning**, **Dependabot**, and **security overview** to minimize risks. Code remains private, while still benefiting from integrated security checks.
+GitHub integrates security directly into the development process from the very beginning and at every stage. GitHub Enterprise includes native, first-party features like **CodeQL**, **secret scanning**, **Dependabot**, and **security overview** to minimize risks. Code remains private, while still benefiting from integrated security checks.
 
 GitHub has continued to make investments to ensure that our features are enterprise-ready. Microsoft and highly regulated industries trust GitHub, and we meet global compliance requirements.
 
 ### Scale
 
-GitHub is the largest developer community of its kind with real-time data on over 100M+ developers, 330M+ repositories, and countless deployments. This scale helps GitHub stay aligned with developer needs and trends.
+GitHub is the largest developer community of its kind, with real-time data from over 100 million developers, 420 million repositories, and countless deployments. GitHub continuously learns and evolves its products. Its large user base provides a diverse perspective on what developers need, driving ongoing innovation to meet those needs. At the same time, GitHub is an extensible platform—open source developers from around the world contribute to and enhance the very features that make GitHub exceptional.
 
 This has translated into an incredible scale that is unmatched and unparalleled by any other company on the planet. Insights from this large developer base help GitHub continuously evolve the platform.
 
