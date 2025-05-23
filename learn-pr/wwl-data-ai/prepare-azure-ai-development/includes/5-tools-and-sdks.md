@@ -6,7 +6,7 @@ There are many development tools and environments available, and developers shou
 
 ### The Azure AI Foundry VS Code container image
 
-As an alternative to installing and configuring your own development environment, within Azure AI Foundry portal, you can create compute and use it to host a container image for VS Code (installed locally or as a hosted web application in a browser). The benefit of using the container image is that it includes the latest versions of the SDK packages you're most likely to work with when building AI applications with Azure AI Foundry.
+As an alternative to installing and configuring your own development environment, when working in a hub-based project in Azure AI Foundry portal, you can create compute and use it to host a container image for VS Code (installed locally or as a hosted web application in a browser). The benefit of using the container image is that it includes the latest versions of the SDK packages you're most likely to work with when building AI applications with Azure AI Foundry.
 
 ![Screenshot of a Visual Studio Code container running in a web browser.](../media/vs-code.png)
 
