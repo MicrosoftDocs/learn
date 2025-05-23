@@ -2,7 +2,7 @@ Semantic ranking is a capability within Azure AI Search that aims to improve the
 
 ## BM25 ranking function
 
-Azure AI Search uses the BM25 ranking function, by default. The BM25 ranking function ranks search results based on the frequency that the search term appears within a document. The BM25 ranking function will often achieve excellent ranking results, because a document that frequently includes a search term is often the most relevant, however, this isn't always the case. BM25 ranking doesn't place any relevance on the semantics of the query and ranking can sometimes be improved by adding language understanding.
+Azure AI Search uses the BM25 ranking function, by default. The BM25 ranking function ranks search results based on the frequency that the search term appears within a document. The BM25 ranking function often achieves excellent ranking results, because a document that frequently includes a search term is often the most relevant, however, this isn't always the case. BM25 ranking doesn't place any relevance on the semantics of the query and ranking can sometimes be improved by adding language understanding.
 
 ## Semantic ranking
 
@@ -22,7 +22,7 @@ Semantic answers is an optional additional feature of semantic ranking that prov
 
 Semantic ranking takes the top 50 results from the BM25 ranking results. The results are split into multiple fields as defined by a semantic configuration. The fields are converted into text strings and trimmed to 256 unique tokens. A token is roughly equivalent to a word in the document.
 
-Once the strings are prepared, they are passed to machine reading comprehension models to find the phrases and sentences that best match the query. The results of this summarization phrase is a semantic caption and, optionally, a semantic answer.
+Once the strings are prepared, they're passed to machine reading comprehension models to find the phrases and sentences that best match the query. The results of this summarization phrase is a semantic caption and, optionally, a semantic answer.
 
 The semantic captions are now ranked based on the semantic relevance of the caption. The results are then returned in descending order of relevance.
 
@@ -36,12 +36,12 @@ See the following video for an overview of the capabilities of AI Search:
 
 Semantic ranking has two key advantages over traditional search results:
 
-* Semantic ranking can rank results to more closely match the semantics of the original query. This can make it more likely hat the most useful documents appear at the top of the search results.
+* Semantic ranking can rank results to more closely match the semantics of the original query. This ranking can make it more likely that the most useful documents appear at the top of the search results.
 * Semantic ranking can find strings within the results to render as a caption on the search results page and to provide an answer to a question.
 
 ## Semantic ranking limitations
 
-Semantic ranking is applied to results returned from the BM25 ranking function. Although semantic ranking can re-rank the results provided by the BM25 ranking function, it will not provide any additional documents that weren't returned by the BM25 ranking function.
+Semantic ranking is applied to results returned from the BM25 ranking function. Although semantic ranking can re-rank the results provided by the BM25 ranking function, it doesn't provide any additional documents that weren't returned by the BM25 ranking function.
 
 Semantic ranking uses the top 50 results from the BM25 ranking function. If more than 50 results are returned, only the top 50 results are considered.
 
@@ -49,6 +49,6 @@ Semantic ranking uses the top 50 results from the BM25 ranking function. If more
 
 Up to 1000 semantic ranking queries a month are available free of charge.
 
-For more than 1000 queries a month, you should choose standard pricing. The cost of standard pricing is based on the volume of searches, the type of searches, and the region of the search.
+For more than 1,000 queries a month, you should choose standard pricing. The cost of standard pricing is based on the volume of searches, the type of searches, and the region of the search.
 
 For more information on semantic ranking pricing, see [Azure AI Search pricing](https://azure.microsoft.com/pricing/details/search/)
