@@ -14,7 +14,7 @@ To assess your operational health, start with these questions:
 - Can customers use the system in a stable and expected way?
 - Are you learning from experience and data to keep getting better?
 
-When no one clearly owns or leads workload operations, things can get messy fast. Teams might fall back on high-effort, low-impact methods that don’t deliver great results. And that approach usually leads to a poor user experience. These quick fixes might work for now, but real long-term improvements come from regularly reviewing how things are going and making smart, strategic changes.
+When no one clearly owns or leads workload operations, things can get messy fast. Teams might fall back on high-effort, low-impact methods that don't deliver great results. And that approach usually leads to a poor user experience. These quick fixes might work for now, but real long-term improvements come from regularly reviewing how things are going and making smart, strategic changes.
 
 The concepts described in this module aren't all-inclusive of operational excellence in a workload, but they represent the core principles and some of their key approaches. For a complete overview of the Well-Architected Framework pillars, check out the [Azure Well-Architected Framework](/azure/well-architected) as you start planning and designing your architecture.
 

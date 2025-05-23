@@ -2,7 +2,7 @@
 uid: learn.azure-well-architected-operational-excellence.adopt-safe-deployment-practices
 title: Adopt safe deployment practices
 metadata:
-  title: Adopt safe deployment practices
+  title: Adopt Safe Deployment Practices
   description: Learn how to adopt safe deployment practices to improve your operational excellence.
   ms.date: 05/21/2025
   author: PageWriter-MSFT
@@ -25,9 +25,9 @@ quiz:
     - content: "Only deployments to production should be automated."
       isCorrect: false
       explanation: "Incorrect. All deployments should be automated, not just those to production. This ensures that deployments are consistent and repeatable."
-    - content: "Only deployments to non-production environments should be automated."
+    - content: "Only deployments to nonproduction environments should be automated."
       isCorrect: false
-      explanation: "Incorrect. All deployments should be automated, not just those to non-production environments. This ensures that deployments are consistent and repeatable."
+      explanation: "Incorrect. All deployments should be automated, not just those to nonproduction environments. This ensures that deployments are consistent and repeatable."
   - content: "Which of the following is a recommended deployment strategy?"
     choices:
     - content: "Prefer large, infrequent deployments."

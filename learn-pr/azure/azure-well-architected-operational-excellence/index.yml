@@ -12,7 +12,7 @@ title: Microsoft Azure Well-Architected Framework - Operational Excellence
 summary: Learn how to design an Azure architecture that uses modern practices and gives you full visibility into what's happening in your environment.
 abstract:  | 
 
- By the end of this module, you'll be more familiar with the five principles of the Operational Excellence pillar and learn three approaches for each pillar. You'll learn how to:
+ By the end of this module, you'll be more familiar with the six principles of the Operational Excellence pillar and learn three approaches for each principle. You'll learn how to:
 
    - Use DevOps practices to build a strong team culture that encourages collaboration, accountability, and ownership.
 
@@ -20,7 +20,7 @@ abstract:  |
    - Build a robust observability platform to improve your operations practices.
    - Build a secure, reliable, and high-performing workload supply chain that builds trust in your deployments.
    - Automate routine tasks to reduce manual work and boost security, reliability, and performance.
-   - Follow consistent standards for rolling out changes, and treat every deployment with care.By the end of this module, you're able to:
+   - Follow consistent standards for rolling out changes, and treat every deployment with care.
 prerequisites: |
  - Experience with core infrastructure technologies such as data storage, computing, and networking.
  - Experience building or operating technology systems to solve business problems.

@@ -1,17 +1,17 @@
 | :::image type="icon" source="../media/goal.svg"::: Help development and operations teams work better together by encouraging collaboration, shared responsibility, and ownership, so they can keep improving how their systems and processes run. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
-DevOps is all about teamwork, bringing together people with different skills and perspectives to work toward a shared goal. Instead of keeping knowledge siloed, teams should create a space where everyone learns from each other. Sharing tools and responsibilities can also help stretch limited resources further.
+DevOps is all about bringing together people that have different skills and perspectives to work toward a shared goal. Instead of keeping knowledge siloed, teams should create a space where everyone learns from each other. Sharing tools and responsibilities can also help stretch limited resources further.
 
 A strong DevOps culture thrives on shared responsibility. Development and operations teams should be on the same page about goals and priorities, and always keep the customer in mind. Development teams should involve the operations team in the feedback loop so other teams can also benefit from improvements. And in return, operations teams should support development teams by sharing helpful insights and resources that make it easier to reach business goals.
 
-DevOps helps make everyday operations smoother and less stressful. To get the most out of DevOps, teams should use tech to streamline their processes and create a culture where open communication is the norm.
+DevOps helps make everyday operations smoother and less stressful. To get the most out of DevOps, teams should use technology to streamline their processes and create a culture where open communication is the norm.
 
-At the same time, DevOps makes it clear who's responsible for what. No matter where the app runs, the workload team is responsible for it.
+DevOps makes it clear who's responsible for what. No matter where the app runs, the workload team is responsible for its performance and reliability.
 
 **Example scenario**
 
-Contoso's human resources (HR) department is kicking off a project to develop a new line-of-business (LOB) app for their department's internal use. The app is currently in the planning phase, no design or implementation work has started yet.
+Contoso's human resources (HR) department is kicking off a project to develop a new line-of-business (LOB) app for their department's internal use. The app is currently in the planning phase. No design or implementation work has started yet.
 
 ## Collaborate efficiently
 
@@ -25,10 +25,10 @@ A shared backlog clearly lays out the next task, such as working on new features
 
 *Contoso's challenge*
 
-- Contoso has three technical teams, development, test, and operations, to development and maintain the new app. Right now, they all use different tools to communicate and track work.
+- Contoso has three technical teams, development, test, and operations teams, to development and maintain the new app. Right now, they all use different tools to communicate and track work.
 
-- Historically, each team has been able to select their tools of choice. For internal messaging, some use Slack or Microsoft Teams. To track tasks, some use Azure DevOps or Excel. Each team uses a different document repository to share knowledge and incident response procedures. 
-- In past projects, the overall technical organization had a tough time communicating and working together because everyone was using different tools. Moving forward, Contoso HR wants to boost productivity and avoid the kinds of slowdowns they've seen before.
+- Historically, each team has selected their tools of choice. For internal messaging, some teams use Slack or Microsoft Teams. To track tasks, some teams use Azure DevOps or Excel. Each team uses a different document repository to share knowledge and incident response procedures. 
+- In past projects, the overall technical organization had a tough time communicating and working together because everyone was using different tools. Moving forward, Contoso HR wants to boost productivity and avoid the kinds of slowdowns that they've seen before.
 
 *Applying the approach and outcomes*
 
@@ -41,7 +41,7 @@ A shared backlog clearly lays out the next task, such as working on new features
 
 **Encourage a mindset of continuous learning and experimentation throughout the development cycle. Make it easy for teams to share knowledge and keep documentation handy for future use. And when something goes wrong, hold a blameless review to understand what happened and how to improve.**
 
-Trying experiments, like A/B testing or building proofs of concept, is a great way to spark new ideas without spending a lot. 
+Trying experiments, like A/B testing or building proofs of concept, is a great way to spark new ideas without spending a lot.
 
 Share knowledge through collaboration to help the team get better at design approaches, tooling, and processes.
 
@@ -59,14 +59,14 @@ And after a project wraps up, doing a quick retrospective helps spot ways to imp
 
 - The team sets up a wiki in Azure DevOps to keep everything in one place, including design specs, operational procedures, incident response plans, and retrospective outcomes.
 
-- After each incident or development cycle, they do a blameless retrospective and add what they learned to the wiki. It's been a great way to spot areas to improve and give the team a chance to celebrate success.
+- After each incident or development cycle, they do a blameless retrospective and add what they learned to the wiki. It's been a great way to find areas to improve and reflect on the progress that they've made.
 - For the new app's user experience, the team is taking an exploratory approach. They're using A/B testing to try out different ideas from the UX consultants and using real user feedback to make smart, data-driven choices.
 
 ## Codify development and operations procedures
 
 **Set clear standards for how development and operations should be done, and check in on them regularly to make sure they still make sense. These procedure should include everyday tasks, emergency plans, tool choices, monitoring, training, and even communication with stakeholders and customers. Be clear and intentional about the decisions you make.**
 
-Clear standards makes things run more smoothly and helps the team scale. Reviewing them regularly is a great way to figure out what could be better.
+Clear standards make things run more smoothly and help the team scale. Reviewing them regularly is a great way to figure out what could be better.
 
 Run regular emergency drills so the team's ready for emergencies and recovery.
 
@@ -81,6 +81,6 @@ Focus on doing things right and having good checks in place to catch problems ea
 
 *Applying the approach and outcomes*
 
-- During the development cycle, the team gets together to agree on a set of coding standards. They'll write down their decisions and start using them in code reviews and tools. They're focusing on things like formatting, naming, error handling, version control, and security. They plan to pay close attention to quality metrics and reports in Azure DevOps to see how these changes affect productivity and code quality. They can show the value of these DevOps improvements to leadership.
+- During the development cycle, the team gets together to agree on a set of coding standards. They write down their decisions and start using them in code reviews and tools. They're focusing on things like formatting, naming, error handling, version control, and security. They plan to pay close attention to quality metrics and reports in Azure DevOps to see how these changes affect productivity and code quality. They can show the value of these DevOps improvements to leadership.
 
-- The operations team is also using this time to update and expand their documentation about how they handle day-to-day tasks and troubleshooting. They're putting everything in the team wiki so it's easy to find and everyone's working from the same place. This should save time and reduce confusion going forward.
+- The operations team is also using this time to update and expand their documentation about how they handle day-to-day tasks and troubleshooting. They're putting everything in the team wiki so it's easy to find and everyone's working from the same place. This practice should save time and reduce confusion going forward.

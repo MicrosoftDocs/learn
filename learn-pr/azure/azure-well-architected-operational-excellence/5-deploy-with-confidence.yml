@@ -2,7 +2,7 @@
 uid: learn.azure-well-architected-operational-excellence.deploy-with-confidence
 title: Deploy with confidence
 metadata:
-  title: Deploy with confidence
+  title: Deploy with Confidence
   description: Learn how to deploy with confidence to improve your operational excellence.
   ms.date: 05/21/2025
   author: PageWriter-MSFT
@@ -16,16 +16,16 @@ quiz:
   questions:
   - content: "How can deploying IaC help you deploy with confidence?"
     choices:
-    - content: "Infrastructure that's deployed as code doesn't have to be patched."
+    - content: "IaC doesn't have to be patched."
       isCorrect: false
       explanation: "Incorrect. IaC is still subject to the same patching requirements as any other infrastructure."
-    - content: "Infrastructure that's deployed as code can be consistently and repeatedly deployed."
+    - content: "IaC can be consistently and repeatedly deployed."
       isCorrect: true
       explanation: "Correct. Deploying IaC allows you to consistently and repeatedly deploy your workload, cutting down the risk of human error."
-    - content: "Infrastructure that's deployed as code is less prone to security vulnerabilities."
+    - content: "IaC is less prone to security vulnerabilities."
       isCorrect: false
       explanation: "Incorrect. IaC is still vulnerable to the same security vulnerabilities as any other infrastructure."
-    - content: "Infrastructure that's deployed as code relieves compliance requirements."
+    - content: "IaC relieves compliance requirements."
       isCorrect: false
       explanation: "Incorrect. IaC is still subject to the same compliance requirements as any other infrastructure."
   - content: "How did moving the IaC code to the same repository as the application code help the Contoso team deploy with confidence?"
@@ -36,6 +36,9 @@ quiz:
     - content: "It allowed them to remove large portions of their IaC code because of overlap with the application code."
       isCorrect: false
       explanation: "Incorrect. Moving the IaC code to the same repository as the application code didn't affect the amount of code that needed to be maintained."
+    - content: "It allowed them to skip version control for the IaC code."
+      isCorrect: false
+      explanation: "Incorrect. Version control is still essential even when IaC is stored in the same repository as application code."
     - content: "It allowed them to apply the same governance and security standards across both codebases."
       isCorrect: true
       explanation: "Correct. By moving the IaC code to the same repository as the application code, the Contoso team cut down the risk of security or governance problems by applying the same standards across both codebases."

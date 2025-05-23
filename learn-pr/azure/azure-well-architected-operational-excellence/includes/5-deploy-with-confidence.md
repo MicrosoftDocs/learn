@@ -1,7 +1,7 @@
-| :::image type="icon" source="../media/goal.svg"::: Reach the desired state of deployment with predictability. |
+| :::image type="icon" source="../media/goal.svg"::: Reach your desired state of deployment with predictability. |
 | :----------------------------------------------------------------------------------------------------------------------------- |
 
-Build a workload supply chain that helps you keep all your environments predictable, whether it's apps, data, configurations, or hosting platforms. Your deployment process should be automated, testable, trackable, and easy to monitor. Think modular and flexible, not one big, clunky end-to-end setup. The goal isn't necessarily to go faster. It's about being consistent and making sure everything is clear and repeatable every time you run it.
+Build a workload supply chain that helps keep all your environments predictable, whether it's apps, data, configurations, or hosting platforms. Your deployment process should be automated, testable, trackable, and easy to monitor. Think modular and flexible, not one big, clunky end-to-end setup. The goal isn't necessarily to go faster. It's about being consistent and making sure everything is clear and repeatable every time you run it.
 
 The workload team owns their part of the supply chain and is responsible for keeping it running smoothly.
 
@@ -15,7 +15,7 @@ Contoso Manufacturing built a Java app to help monitor and improve their manufac
 
 Declarative IaC tools are built to make automation and reuse easy. They let you shift infrastructure setup from individuals to tools, so actions get done the same way every time, with fewer mistakes.
 
-Fewer technology options also reduces variance in tooling, makes it easier to see configuration drift, and simplifies maintenance. And if you pick tools that match your team's existing skills, it's easier for everyone to get on board.
+Fewer technology options also reduce variance in tooling, make it easier to see configuration drift, and simplify maintenance. If you pick tools that match your team's existing skills, it's easier for everyone to get on board.
 
 *Contoso's challenge*
 
@@ -35,7 +35,7 @@ Fewer technology options also reduces variance in tooling, makes it easier to se
 
 **Deployment pieces like app binaries, IaC templates, and parameters are all part of your attack surface. So they need to be treated with care. Make sure they're safe by using secret management, access controls, and other principles of the Security pillar.**
 
-Treat deployment artifacts with the same care you give your actual application code. Peer reviews and testing help give you confidence in deployment.
+Treat deployment artifacts with the same care that you give your actual application code. Peer reviews and testing help give you confidence in deployment.
 
 Using a layered approach also makes things easier to manage and helps define who's responsible for what.
 
@@ -43,7 +43,7 @@ And don't forget security. Adding the right controls to artifacts helps keep you
 
 *Contoso's challenge*
 
-- At the start of the migration effort, the project had a generous budget, so the team brought in some experienced contractors who delivered high-quality work quickly. They worked out of a separate repo during development, but unlike the main app repo, that one hasn't been regularly checked for security.
+- At the start of the migration effort, the project had a generous budget, so the team brought in some experienced contractors who delivered high-quality work quickly. They worked out of a separate repo during development, but unlike the main app repo, the new one hasn't been regularly checked for security.
 
 - The team is gearing up to roll out a major redesign, and the deployment code needs a lot of updates. Development resources are scarce, so two interns have been handling the latest changes. When one of the senior developers jumped in to help, they found several commits that aren't on par the team's standards, including some hardcoded secrets like API keys right in the code.
 
@@ -57,7 +57,7 @@ And don't forget security. Adding the right controls to artifacts helps keep you
 
 **Create a shared deployment manifest that works across all environments. Use it as the go-to setup for new projects, updates, or disaster recovery.**
 
-This approach saves you the hassle of maintaining multiple assets. And if something goes wrong, recovery is easy because you already have a reliable, proven manifest ready to go instead of scrambling to build a proper environment.
+This approach saves you the hassle of maintaining multiple assets. And if problems occur, recovery is easy because you already have a reliable, proven manifest ready to go instead of scrambling to build a proper environment.
 
 *Contoso's challenge*
 
@@ -67,6 +67,6 @@ This approach saves you the hassle of maintaining multiple assets. And if someth
 
 *Applying the approach and outcomes*
 
-- The team works around the problems in the secondary region by swapping out some resources for similar ones that are available in both places, and by making a few settings flexible so they could use valid alternatives if needed.
+- The team works around the problems in the secondary region by swapping out some resources for similar ones that are available in both places. And they make a few settings flexible so they could use valid alternatives if needed.
 
 - After running through the exercise, they're feeling a lot more confident about bouncing back from major infrastructure failures.
