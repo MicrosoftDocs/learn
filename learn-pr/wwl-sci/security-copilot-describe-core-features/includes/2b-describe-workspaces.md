@@ -74,6 +74,9 @@ From the main landing page, users can select the current workspace, which opens 
 
 Once in a workspace, users can start using promptbooks, enter prompts directly in the prompt bar, and all the features of Copilot for which they have permissions.
 
+> [!NOTE]
+>If users have been doing work with Copilot in one of the Security product portals (for example Defender, Intune, Entra, or Purview) and they switch their preferred workspace, they will need to reload or log out & log in to the portals to continue working with Copilot in those portals. If they don’t, they will encounter an error.
+
 # [Workspace](#tab/workspace)
 :::image type="content" source="../media/landing-page-workspace-small.png" lightbox="../media/landing-page-workspace-small.png" alt-text="A screenshot highlighting the current workspace, on the Copilot landing page.":::
 
