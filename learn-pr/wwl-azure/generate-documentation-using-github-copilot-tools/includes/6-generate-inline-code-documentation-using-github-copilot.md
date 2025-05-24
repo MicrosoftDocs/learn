@@ -102,7 +102,7 @@ The Chat view in Agent mode can be used to generate inline code documentation fo
 
     ![Screenshot showing the Chat view in Agent mode showing status messages.](../media/chat-view-agent-mode-inline-docs-may-2025-status.png)
 
-    The agent may also request additional context or ask for assistance to complete the requested tasks. For example, the agent may ask for permission before running a command in the terminal.
+    The agent may also request more context or ask for assistance to complete the requested tasks. For example, the agent may ask for permission before running a command in the terminal.
 
 1. Wait for the agent to complete the requested documentation tasks, then review the updated files the editor.
 

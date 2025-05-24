@@ -20,9 +20,9 @@ The following GitHub Copilot features can be used to generate inline code docume
 
 - Edit mode: Use the edit mode to suggest inline code documentation for a code file, class, or method. Review the suggested documentation in the editor, navigating between suggested updates. Accept or reject individual suggestions, or modify suggestions as needed.
 
-- Agent mode: Use the agent mode to autonomously generate inline code documentation for specified code projects, files, classes, or methods. Have the agent perform additional tasks during or after the documentation process. Accept or reject the updates when the agent has completed the assigned tasks.
+- Agent mode: Use the agent mode to autonomously generate inline code documentation for specified code projects, files, classes, or methods. Have the agent perform other tasks during or after the documentation process. Accept or reject the updates when the agent has completed the assigned tasks.
 
-- Inline chat - Use an inline chat session to work directly in the code editor. The inline chat is useful when you want to document specific code (classes, methods, or code blocks) without leaving the editor. You can provide specific instructions in the prompt or use the `/doc` slash command without additional information if you want. Updates are displayed in the code editor and can be accepted or rejected. You can also choose the option to rerun the prompt with or without updates.
+- Inline chat - Use an inline chat session to work directly in the code editor. The inline chat is useful when you want to document specific code (classes, methods, or code blocks) without leaving the editor. You can provide specific instructions in the prompt or use the `/doc` slash command without specific information if you want. Updates are displayed in the code editor and can be accepted or rejected. You can also choose the option to rerun the prompt with or without updates.
 
 - Generate Docs smart action: Use the Generate Docs smart action to generate inline code documentation for a selected class, method, or code block. The Generate Docs smart action is useful when you don't have specific requirements that would require a prompt. Updates are displayed in the code editor and can be accepted or rejected. You can also rerun the smart action.
 
@@ -30,15 +30,15 @@ The following GitHub Copilot features can be used to generate inline code docume
 
 The following GitHub Copilot features can be used to generate project documentation:
 
-- Chat view in ask mode: Use the ask mode to analyze the codebase and gain an understanding of the code projects, files, and classes. Use ask mode to preview suggested project documentation. Review suggestions and request updates or additional details as needed. Insert the suggested documentation into a project documentation file (README.md).
+- Chat view in ask mode: Use the ask mode to analyze the codebase and gain an understanding of the code projects, files, and classes. Use ask mode to preview suggested project documentation. Review suggestions and request updates or other details as needed. Insert the suggested documentation into a project documentation file (README.md).
 
 - Chat view in Edit mode: Generate a project documentation file (README.md).
 
 - Chat view in agent mode: Generate a collection of project documentation files: create/update the README.md, create/update the UsageExamples.md, and create/update the ChangeLog.md. Include links between the documentation files, cross-reference classes and methods, and ensure consistency across docs.
 
 > [!IMPORTANT]
-> When you use the Chat view in agent mode, GitHub Copilot may make multiple premium requests to complete a single task. This includes both user-initiated prompts and follow-up actions Copilot takes on your behalf. The total premium requests used will depend on the complexity of the task, the number of steps involved, and the model selected.
+> When you use the Chat view in agent mode, GitHub Copilot may make multiple premium requests to complete a single task. Premium requests can be used by user-initiated prompts and follow-up actions Copilot takes on your behalf. The total premium requests used will depend on the complexity of the task, the number of steps involved, and the model selected.
 
 ## Summary
 
-GitHub Copilot helps you analyze and document your code quickly and accurately. The chat view, inline chat, quick chat, and smart action features provides various levels of interaction directly within the Visual Studio Code environment.
+GitHub Copilot helps you analyze and document your code quickly and accurately. The chat view, inline chat, quick chat, and smart action features provide various levels of interaction directly within the Visual Studio Code environment.

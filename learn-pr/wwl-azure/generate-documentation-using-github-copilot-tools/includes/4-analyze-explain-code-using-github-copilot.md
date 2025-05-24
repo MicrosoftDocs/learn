@@ -31,7 +31,7 @@ The ask mode supports the following interface features:
 
 - Add Context button: The Add Context button is located in bottom section of the Chat view. You can use this button search for resources that add context to Chat session. The resources can be anything from internal project files to public repositories on GitHub that are external to your organization.
 
-- Ask Copilot: The Ask Copilot text box is where you enter your prompts. When using the ask mode, prompts can include chat participants, slash commands, and chat variables.
+- Ask Copilot: The Ask Copilot text box is where you enter your prompts. When you're using ask mode, prompts can include chat participants, slash commands, and chat variables.
 
     In ask mode, you can use chat participants to specify the context of your questions. For example, you can use `@workspace` to indicate that the context is your workspace files.
 
@@ -61,7 +61,7 @@ You can use the inline chat to inquire about general coding topics, but it's bes
 
 The inline chat supports the following features:
 
-- Ask Copilot: The Ask Copilot text box is where you enter your prompts. When using the inline chat, prompts can include slash commands and chat variables, but chat participants aren't supported.
+- Ask Copilot: The Ask Copilot text box is where you enter your prompts. When you're using the inline chat, prompts can include slash commands and chat variables, but chat participants aren't supported.
 
 - Chat with Extension button: The Chat with Extension button is located below the Ask Copilot textbox. GitHub Copilot Extensions are a type of GitHub App that integrates the power of external tools into GitHub Copilot Chat. You can use this button to select from a list of Copilot Extensions. The default extensions provide a combination of Chat participants and Slash commands that provide context for your prompts.
 

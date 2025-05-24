@@ -5,7 +5,7 @@ GitHub Copilot's Chat view is an ideal tool for generating project documentation
 You can use each of the Chat view modes (Ask, Edit, or Agent) to generate project documentation. Each mode has its own strengths and weaknesses. Project specifications and other constraints affect which mode should be used.
 
 > [!IMPORTANT]
-> When you use the Chat view in agent mode, GitHub Copilot may make multiple premium requests to complete a single task. This includes both user-initiated prompts and follow-up actions Copilot takes on your behalf. The total premium requests used depends on the complexity of the task, the number of steps involved, and the model selected.
+> When you use the Chat view in agent mode, GitHub Copilot may make multiple premium requests to complete a single task. Premium requests can be used by user-initiated prompts and follow-up actions Copilot takes on your behalf. The total premium requests used depends on the complexity of the task, the number of steps involved, and the model selected.
 
 ## Establish project documentation requirements
 
@@ -36,7 +36,7 @@ Use the following process to generate project documentation using the ask mode:
 
 1. Identify the documentation requirements and supporting resources.
 
-    - Identify the documentation requirements for your project. Identify the types of documentation as well as the required document sections.
+    - Identify the documentation requirements for your project. Identify the types of documentation and the required document sections.
 
     - Identify the resources required to generate the documentation. Your code workspace could be the only required resource. However, you may need to add context to the chat for sections like "Contributing", "Credits", and "Contact".
 
@@ -55,7 +55,7 @@ Use the following process to generate project documentation using the ask mode:
 
 1. Enter a prompt that asks for suggested project documentation, listing the required sections that you identified in the first step.
 
-    For example: "`@workspace /explain` I need need help creating a README file that can be used in the GitHub repository for this workspace. The file should be formatted as markdown. The README file needs to include the following sections: Project Title, Description, Table of Contents, Installation, Usage, Features, Configuration, and License."
+    For example: "`@workspace /explain I need help creating a README file that can be used in the GitHub repository for this workspace. The file should be formatted as markdown. The README file needs to include the following sections: Project Title, Description, Table of Contents, Installation, Usage, Features, Configuration, and License.`"
 
 1. Review the suggested project documentation, and refine the results using new prompts if necessary.
 
