@@ -1,5 +1,5 @@
 > [!IMPORTANT]
-> To complete this exercise, you need an active GitHub account and a Visual Studio Code environment configured for C# development. For help configuring your lab environment, see [Configure lab environment for GitHub Copilot Labs](https://go.microsoft.com/fwlink/?linkid=2320147&azure-portal=true). For help enabling GitHub Copilot in Visual Studio Code, see [Enable GitHub Copilot in Visual Studio Code](https://go.microsoft.com/fwlink/?linkid=2320158&azure-portal=true).
+> To complete this exercise, you need an active GitHub account and a Visual Studio Code environment configured for C# development. For help with configuring your lab environment, see [Configure lab environment for GitHub Copilot Labs](https://go.microsoft.com/fwlink/?linkid=2320147&azure-portal=true). For help with enabling GitHub Copilot in Visual Studio Code, see [Enable GitHub Copilot in Visual Studio Code](https://go.microsoft.com/fwlink/?linkid=2320158&azure-portal=true).
 
 In this exercise, you use GitHub Copilot to analyze an unfamiliar codebase and generate documentation for the project. Tasks include:
 

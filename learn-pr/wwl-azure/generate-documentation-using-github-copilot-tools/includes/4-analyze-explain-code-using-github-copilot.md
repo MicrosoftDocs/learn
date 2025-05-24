@@ -7,23 +7,23 @@ Each of the following GitHub Copilot features can be used to analyze or explain 
 - Smart actions: Run the Explain smart action to explain selected code without even having to write a prompt.
 - Quick Chat: Ask a quick question and get back into what you're doing.
 
-## Use the Chat view in Ask mode to analyze and explain code
+## Use the Chat view in ask mode to analyze and explain code
 
 The Chat view in Visual Studio Code is used to manage chat conversations between you and the AI pair programmer. By default, the Chat view is located in the Secondary Side Bar on the right side of the Visual Studio Code window. When you submit a prompt, the AI pair programmer responds with natural language descriptions, code snippets, and other relevant information. Responses are displayed in the Chat view.
 
-To access the Chat view, you can select the **Toggle Chat** button (Copilot icon), select **Open Chat** from the GitHub Copilot menu, or use the **Ctrl+Alt+I** keyboard shortcut. The Chat view defaults to Ask mode, but retains the most recently selected mode when you toggle between open and hidden.
+To access the Chat view, you can select the **Toggle Chat** button (Copilot icon), select **Open Chat** from the GitHub Copilot menu, or use the **Ctrl+Alt+I** keyboard shortcut. The Chat view defaults to ask mode, but retains the most recently selected mode when you toggle between open and hidden.
 
-You can use the Chat view in Ask mode for a wide range of topics. For example:
+You can use the Chat view in ask mode for a wide range of topics. For example:
 
-- Ask questions about coding and technology concepts ("What is a linked list?", "top 10 popular web frameworks")
-- Brainstorm ideas on how to best solve a coding problem ("How to add auth to my project?")
-- Explain a block of code ("@workspace /explain", "What does this code do?")
-- Propose code fixes ("@workspace /fix", "This method gives a FileNotFoundException")
-- Ask about VS Code settings (@vscode how do I disable the minimap?)
+- Ask questions about coding and technology concepts ("`What is a linked list?`", "`top 10 popular web frameworks`")
+- Brainstorm ideas on how to best solve a coding problem ("`How to add auth to my project?`")
+- Explain a block of code ("`@workspace /explain`", "`What does this code do?`")
+- Propose code fixes ("`@workspace /fix`", "`This method gives a FileNotFoundException`")
+- Ask about VS Code settings ("`@vscode how do I disable the minimap?`")
 
 ![Screenshot showing the Chat view asking about the Singleton pattern.](../media/explain-chat-view-workspace-explain-singleton-pattern.png)
 
-The Ask mode supports the following interface features:
+The ask mode supports the following interface features:
 
 - Chat view toolbar: The Chat view toolbar is located in the top right corner of the Chat view. You can use the toolbar to manage the chat history, start a new chat, open the Chat view in another location, or hide the Chat view. Hover your mouse pointer over the toolbar button icons to see a description.
 
@@ -31,9 +31,9 @@ The Ask mode supports the following interface features:
 
 - Add Context button: The Add Context button is located in bottom section of the Chat view. You can use this button search for resources that add context to Chat session. The resources can be anything from internal project files to public repositories on GitHub that are external to your organization.
 
-- Ask Copilot: The Ask Copilot text box is where you enter your prompts. When using the Ask mode, prompts can include chat participants, slash commands, and chat variables.
+- Ask Copilot: The Ask Copilot text box is where you enter your prompts. When using the ask mode, prompts can include chat participants, slash commands, and chat variables.
 
-    In Ask mode, you can use chat participants to specify the context of your questions. For example, you can use `@workspace` to indicate that the context is your workspace files.
+    In ask mode, you can use chat participants to specify the context of your questions. For example, you can use `@workspace` to indicate that the context is your workspace files.
 
 - Chat with Extension button: The Chat with Extension button is located below the Ask Copilot textbox. GitHub Copilot Extensions are a type of GitHub App that integrates the power of external tools into GitHub Copilot Chat. You can use this button to select from a list of Copilot Extensions. The default extensions provide a combination of Chat participants and Slash commands that provide context for your prompts.
 
@@ -53,15 +53,15 @@ To access the inline chat, you can select **Editor Inline Chat** from the GitHub
 
 You can use the inline chat to inquire about general coding topics, but it's best suited for asking questions to the code in the active editor. For example:
 
-- Explain a block of code ("/explain How are the parameters of the XYZ method used?", "/explain #selection")
-- Examine an issue ("/explain Why does this code throw an exception?", "/explain How can I fix this issue?")
-- Ask questions about coding or technology concepts ("/explain Can LINQ be used to improve readability?")
+- Explain a block of code ("`/explain How are the parameters of the XYZ method used?`", "`/explain #selection`")
+- Examine an issue ("`/explain Why does this code throw an exception?`", "`/explain How can I fix this issue?`")
+- Ask questions about coding or technology concepts ("`/explain Can LINQ be used to improve readability?`")
 
 ![Screenshot showing the inline chat asking about selected code.](../media/explain-inline-chat-explain-selected.png)
 
 The inline chat supports the following features:
 
-- Ask Copilot: The Ask Copilot text box is where you enter your prompts. When using the inline chat, prompts can include slash commands and chat variables, but chat participants are not supported.
+- Ask Copilot: The Ask Copilot text box is where you enter your prompts. When using the inline chat, prompts can include slash commands and chat variables, but chat participants aren't supported.
 
 - Chat with Extension button: The Chat with Extension button is located below the Ask Copilot textbox. GitHub Copilot Extensions are a type of GitHub App that integrates the power of external tools into GitHub Copilot Chat. You can use this button to select from a list of Copilot Extensions. The default extensions provide a combination of Chat participants and Slash commands that provide context for your prompts.
 
@@ -85,11 +85,11 @@ The Quick Chat feature allows you to ask a quick question and get back into what
 
 To access the Quick Chat window, you can select **Quick Chat** from the GitHub Copilot menu, or use the **Ctrl+Shift+Alt+L** keyboard shortcut.
 
-The Quick Chat windows supports the same Context features provided by the Chat view in Ask mode, but it doesn't provide a way to manage the chat history. The Quick Chat window is designed for quick questions and answers, so it doesn't include all of the features provided by the Chat view.
+The Quick Chat windows supports the same Context features provided by the Chat view in ask mode, but it doesn't provide a way to manage the chat history. The Quick Chat window is designed for quick questions and answers, so it doesn't include all of the features provided by the Chat view.
 
 ![Screenshot showing the Quick Chat window.](../media/explain-quick-chat-explain-issue.png)
 
-You can use the Quick Chat for the same types of questions as the Chat view in Ask mode. However, the Quick Chat is best suited for quick questions that aren't part of a larger conversation.
+You can use the Quick Chat for the same types of questions as the Chat view in ask mode. However, the Quick Chat is best suited for quick questions that aren't part of a larger conversation.
 
 ## Summary
 

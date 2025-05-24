@@ -8,7 +8,7 @@ When you write prompts for GitHub Copilot, consider the following guidelines to 
 
 - When you need to write a longer prompt, the prompt should be written using several short sentences. Start with an overview that describes your goal and then provide specific details.
 
-- Consider breaking complex prompts into smaller, more manageable parts. This helps the AI to understand your intent and provide more accurate responses. Subsequent prompts can build on the previous ones, allowing you to refine your request and get more specific answers. Working with the peer programmer is similar to working with a person. It's better to frame your conversation first, and then describe the specific details rather than sending everything in a single request that may be misinterpreted.
+- Consider breaking complex prompts into smaller, more manageable parts. Breaking down complex prompts helps the AI to understand your intent and provide more accurate responses. Subsequent prompts can build on the previous ones, allowing you to refine your request and get more specific answers. Working with the peer programmer is similar to working with a person. It's better to frame your conversation first, and then describe the specific details rather than sending everything in a single request that may be misinterpreted.
 
 ## Use prompt keywords
 
@@ -24,7 +24,7 @@ GitHub Copilot uses the following keywords to help you specify the context and i
 
 ### Chat participants
 
-GitHub Copilot Chat provides better responses when it understands the context that you're interested in and can apply the best resources. You can help GitHub Copilot Chat generate better responses by adding a Chat participants to your prompts. Chat participants are like experts in a specific field that provide better responses. Chat participants are specified using the `@` symbol.
+GitHub Copilot Chat provides better responses when it understands the context that you're interested in and can apply the best resources. You can help GitHub Copilot Chat generate better responses by adding a Chat participant to your prompts. Chat participants are like experts in a specific field that provide better responses. Chat participants are specified using the `@` symbol.
 
 Currently, Copilot Chat supports the following built-in chat participants:
 
@@ -68,7 +68,7 @@ Examples of built-in slash commands:
 - `/new`: Scaffold code for a new workspace. Only the chat prompt is used as context.
 - `/newNotebook`: Create a new Jupyter Notebook. Only the chat prompt is used as context.
 
-Examples using Chat participants combined with slash commands:
+Examples using chat participants combined with slash commands:
 
 - `@workspace /explain`: Generate an explanation of the full workspace.
 - `@workspace /fix` (or `/fix`): Propose a fix for the problems in the selected code.
@@ -100,20 +100,20 @@ Conceptually, both `@workspace` and `#codebase` enable you to ask questions abou
 
 About the `@workspace` keyword:
 
-- Chat participant, dedicated to answering questions about your codebase.
-- Takes control of the user prompt and uses the codebase to provide an answer.
-- Can't invoke other tools.
-- Can only be used in Ask mode.
-- Example: "@workspace how can I validate a date?"
+- The `@workspace` keyword is a chat participant that's dedicated to answering questions about your codebase.
+- The `@workspace` keyword takes control of the user prompt and uses the codebase to provide an answer.
+- The `@workspace` keyword can't invoke other tools.
+- The `@workspace` keyword can only be used when you're using the ask mode.
+- Example: "`@workspace how can I validate a date?`"
 
 About the `#codebase` keyword:
 
-- Tool that performs a codebase search based on the user prompt and adds the relevant code as context to the chat prompt.
-- The LLM remains in control and can combine it with other tools for editing scenarios.
-- Can be used in all chat modes (Ask, Edit, and Agent).
+- The `#codebase` keyword is a tool that performs a codebase search based on the user prompt and adds the relevant code as context to the chat prompt.
+- When you use the `#codebase` keyword, the language model remains in control and can combine `#codebase` with other tools for editing scenarios.
+- The `#codebase` keyword can be used in all chat modes (Ask, Edit, and Agent).
 - Examples: "`add a tooltip to this button, consistent with other button #codebase`", "`add unit tests and run them #codebase`"
 
-It's recommended to use `#codebase` in your chat prompts, as it provides more flexibility.
+GitHub recommends using `#codebase` in your chat prompts, as it provides more flexibility.
 
 ## Summary
 
