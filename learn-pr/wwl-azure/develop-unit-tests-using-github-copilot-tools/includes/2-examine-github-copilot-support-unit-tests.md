@@ -5,17 +5,66 @@ GitHub Copilot Chat uses your code's context and semantics to suggest assertions
 > [!IMPORTANT]
 > Generated test cases may not cover all possible scenarios. Manual testing and code reviews are necessary to ensure the quality of your code.
 
-## GitHub Copilot tools in Visual Studio Code
+## GitHub Copilot support for unit testing
 
-Visual Studio Code provides easy access to the following GitHub Copilot and GitHub Copilot Chat features:
+Copilot can help with the following testing tasks:
 
-- **Code line completions**: Use code line completions to write code more efficiently.
-- **Inline chat**: Start an inline chat conversation directly from the editor for help while you're coding.
-- **Chat view**: Open an AI assistant on the side that can help you at any time.
-- **Quick Chat**: Ask a quick question and get back into what you're doing.
-- **Smart actions**: Run smart actions to complete certain tasks without even having to write a prompt.
+- Set up testing frameworks: get help configuring the right testing framework and VS Code extensions for your project and language.
+- Generate test code: create unit tests, integration tests, and end-to-end tests that cover your application code.
+- Handle edge cases: generate comprehensive test suites to cover edge cases and error conditions.
+- Fix failing tests: receive suggestions for fixing test failures.
+- Maintain consistency: personalize Copilot to generate tests that follow your project's coding practices.
 
-The GitHub Copilot extensions accelerate code development and keep you inside the Visual Studio Code environment.
+### Set up your testing framework
+
+To accelerate your testing workflow, Copilot can help set up the testing framework and VS Code extensions for your project. Copilot suggests appropriate testing frameworks based on your project type.
+
+1. Open the Chat view.
+
+1. Enter the `/setupTests` command in the chat input field.
+
+1. Follow GitHub Copilot's guidance to configure your project.
+
+### Write unit tests with GitHub Copilot
+
+GitHub Copilot can help you write tests for your application code by generating test code that covers your codebase. This includes unit tests, end-to-end tests, and tests for edge cases.
+
+You can generate unit tests using the following GitHub Copilot tools:
+
+- **Chat view**: Use the Chat view generate unit tests for a project, class, or method using Ask, Edit, or Agent mode.
+- **Inline Chat**: Use Inline Chat to generate unit tests for selected classes or methods.
+- **Smart actions**: Use the Generate Tests smart action to generate unit tests for selected code without writing a prompt.
+- **Code line completions**: Use code line completions to suggest addition unit tests for an existing test case.
+
+### Fix failing tests
+
+Copilot integrates with the Test Explorer in Visual Studio Code and can help with fixing failing tests.
+
+1. In the Test Explorer, hover over a failing test.
+
+1. Select the **Fix Test Failure** button (sparkle icon)
+
+1. Review and apply Copilot's suggested fix.
+
+Alternatively, you can:
+
+1. Open the Chat view.
+
+1. Enter the `/fixTestFailure` slash command.
+
+1. Follow Copilot's suggestions to fix the test
+
+> [!TIP]
+> Agent mode monitors the test output when running tests, and automatically attempts to fix and rerun failing tests.
+
+### Maintain consistency
+
+If your organization has specific testing requirements, you can customize how Copilot generates tests to ensure they meet your standards. You can personalize how Copilot generates tests by providing custom instructions. For example:
+
+- Specify preferred testing frameworks
+- Define naming conventions for tests
+- Set code structure preferences
+- Request specific test patterns or methodologies
 
 ## Visual Studio Code support for unit tests
 
@@ -150,4 +199,6 @@ Visual Studio Code and the C# Dev Kit provide a rich set of features to help you
 
 ## Summary
 
-In this section, you learned how to use GitHub Copilot Chat to generate unit test cases for your C# projects. You learned how to create a test project for your C# project, generate unit test cases using Copilot Chat, and run and manage your unit tests in Visual Studio Code. By combining the power of Visual Studio Code and GitHub Copilot Chat, you can create and run unit tests more efficiently and effectively, helping you ensure the quality and reliability of your codebase.
+GitHub Copilot Chat can be used to suggest unit tests based on the code you specify. For example, if you specify a method signature and body, GitHub Copilot Chat can suggest test cases that cover input parameters and expected output values. Once your test project contains a few test cases, you can use GitHub Copilot to generate code completion suggestions for additional test cases. Using code line completions to generate unit tests reduces the repetitive process and helps to ensure that your code is thoroughly tested.
+
+GitHub Copilot Chat uses your code's context and semantics to suggest assertions that ensure the function is working correctly. It also helps you write test cases for edge cases and boundary conditions that might be difficult to identify manually. For example, GitHub Copilot Chat can suggest test cases for error handling, null values, or unexpected input types.
