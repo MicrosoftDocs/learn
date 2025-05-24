@@ -1,4 +1,4 @@
-In this unit, you'll learn how to monitor and manage billing for GitHub’s metered products, including Actions minutes, storage, licenses, and advanced features like Copilot and GHAS.
+In this unit, you'll learn how to monitor and manage billing for GitHub’s metered products, including Actions minutes, storage, licenses, and advanced features like Copilot and GitHub Advanced Security (GHAS).
 
 GitHub provides detailed billing and consumption reports to track the usage of **metered products**. These reports help administrators monitor costs, allocate resources efficiently, and ensure compliance with organizational policies.
 
