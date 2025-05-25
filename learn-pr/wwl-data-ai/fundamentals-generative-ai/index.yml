@@ -3,7 +3,7 @@ uid: learn.wwl.fundamentals-generative-ai
 metadata:
   adobe-target: true
   prefetch-feature-rollout: true
-  title: Introduction to generative AI
+  title: Introduction to generative AI concepts
   description: Learn about how language models using transformer architecture form the foundation of generative AI applications.
   author: sherzyang
   ms.author: sheryang
@@ -13,7 +13,7 @@ metadata:
   ms.collection:
     - wwl-ai-copilot
   ms.custom: copilot-learning-hub, ai-learning-hub
-title: Introduction to generative AI
+title: Introduction to generative AI concepts
 summary: "In this module, you explore the way in which language models enable AI applications and services to generate original content based on natural language input."
 abstract: |
   By the end of this module, you are able to:
@@ -43,9 +43,7 @@ units:
 - learn.wwl.fundamentals-generative-ai.transformers
 - learn.wwl.fundamentals-generative-ai.use-language-models
 - learn.wwl.fundamentals-generative-ai.writing-prompts
-- learn.wwl.fundamentals-generative-ai.quality-responses
 - learn.wwl.fundamentals-generative-ai.responsible-generative-ai
-- learn.wwl.fundamentals-generative-ai.exercise
 - learn.wwl.fundamentals-generative-ai.knowledge-check
 - learn.wwl.fundamentals-generative-ai.summary
 badge:
