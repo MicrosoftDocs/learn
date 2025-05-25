@@ -15,4 +15,4 @@ In most cases, an agent doesn't just send your prompt as-is to the language mode
 - The conversation history for the current session, including past prompts and responses. The history enables you to refine the response iteratively while maintaining the context of the conversation.
 - The current prompt – potentially optimized by the agent to reword it appropriately for the model or to add more grounding data to scope the response.
 
-The term *prompt engineering* describes the process of prompt improvement. Both developers who design applications and consumers who use those applications can improve the quality of responses from generative AI by considering prompt engineering. Next, take a look at other methods that are utilized by developers to improve the quality of responses.  
+The term *prompt engineering* describes the process of prompt improvement. Both developers who design applications and consumers who use those applications can improve the quality of responses from generative AI by considering prompt engineering. 

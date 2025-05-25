@@ -1,18 +1,6 @@
-Different models exist today which mostly differ by the specific data they've been trained on, or by how they implement attention within their architectures. 
+Today, importantly, developers do not need to train models from scratch. To build a generative AI application, you can use pre-trained models. Some language models are open-source and publicly available. Others are offered in proprietary catalogs. Different models exist today which mostly differ by the specific data they've been trained on, or by how they implement attention within their architectures. Language models power the 'app logic' component of the interaction between users and generative AI applications. 
 
-Today, importantly, developers do not need to train models from scratch. To build a generative AI application, you can use pre-trained models. Some language models are open-source and publicly available through communities like Hugging Face. Others are offered in proprietary catalogs. For example, Azure offers the most commonly used language models as *foundation models* in the Azure AI Foundry *model catalog*. Foundation models are pretrained on large texts and can be fine-tuned for specific tasks with a relatively small dataset.
-
-You can deploy a foundation model to an endpoint without any extra training. If you want the model to be specialized in a task, or perform better on domain-specific knowledge, you can also choose to fine-tune a foundation model.
-
-Foundation models can be used for various tasks, including:
-
-- Text classification
-- Token classification
-- Question answering
-- Summarization
-- Translation
-
-To choose the foundation model that best fits your needs, you can test out different models. You can also review the data the models are trained on and possible biases and risks a model may have.
+![Diagram of an application.](../media/application-logic-image.png)
 
 ## Large and small language models
 In general, language models can be considered in two categories: *Large Language Models* (LLMs) and *Small Language models* (SLMs).
