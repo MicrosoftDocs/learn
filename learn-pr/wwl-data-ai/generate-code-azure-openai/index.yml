@@ -37,7 +37,6 @@ subjects:
   - cloud-computing
 units:
 - learn.wwl.generate-code-azure-openai.introduction
-- learn.wwl.generate-code-azure-openai.fix-bugs-improve-code
 - learn.wwl.generate-code-azure-openai.knowledge-check
 - learn.wwl.generate-code-azure-openai.summary
 badge:
