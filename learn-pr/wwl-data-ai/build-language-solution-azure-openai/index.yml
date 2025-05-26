@@ -37,7 +37,6 @@ subjects:
   - cloud-computing
 units:
 - learn.wwl.build-language-solution-azure-openai.introduction
-- learn.wwl.build-language-solution-azure-openai.integrate-azure-openai-into-app
 - learn.wwl.build-language-solution-azure-openai.use-openai-rest
 - learn.wwl.build-language-solution-azure-openai.use-openai-sdk
 - learn.wwl.build-language-solution-azure-openai.knowledge-check
