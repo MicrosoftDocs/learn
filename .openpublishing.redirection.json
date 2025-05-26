@@ -47673,6 +47673,11 @@
       "source_path": "learn-pr/wwl-data-ai/apply-prompt-engineering-azure-openai/6-knowledge-check.md",
       "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/apply-prompt-engineering-azure-openai/4-provide-context-to-improve-accuracy.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
     }
   ]
 }
