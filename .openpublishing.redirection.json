@@ -47758,6 +47758,11 @@
       "source_path": "learn-pr/wwl-data-ai/generate-code-azure-openai/4-fix-bugs-improve-code.md",
       "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/generate-code-azure-openai/1-introduction.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
     }
   ]
 }
