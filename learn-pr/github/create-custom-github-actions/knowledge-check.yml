@@ -51,10 +51,10 @@ quiz:
       explanation: "This syntax is correct for this workflow command."
     - content: "echo error=This is an error message"
       isCorrect: false
-      explanation: "This syntax is incorrect for a workflow command. Also, it lacks a proper noun after 'this'."
+      explanation: "This syntax is incorrect for a workflow command."
     - content: "echo ::error::message=This is an error message"
       isCorrect: false
-      explanation: "This syntax is incorrect for a workflow command. Clarify what 'this' refers to."
+      explanation: "This syntax is incorrect for a workflow command."
     - content: "echo ::error::This is an error message::"
       isCorrect: false
       explanation: "This syntax is incorrect for a workflow command."
