@@ -36,7 +36,6 @@ products:
 subjects: 
   - cloud-computing
 units:
-- learn.wwl.generate-code-azure-openai.knowledge-check
 - learn.wwl.generate-code-azure-openai.summary
 badge:
   uid: learn.wwl.generate-code-azure-openai.badge
