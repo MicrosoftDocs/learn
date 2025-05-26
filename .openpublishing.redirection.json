@@ -47708,6 +47708,11 @@
       "source_path": "learn-pr/wwl-data-ai/build-language-solution-azure-openai/2-integrate-azure-openai-into-app.md",
       "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-language-solution-azure-openai/1-introduction.md",
+      "redirect_url": "/training/paths/develop-ai-solutions-azure-openai/",
+      "redirect_document_id": false
     }
   ]
 }
